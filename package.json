@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite --port=3000 --host=0.0.0.0",
-    "build": "node scripts/generate-seo.js && vite build && node scripts/inject-seo-assets.js",
+    "build": "node scripts/generate-seo.js && vite build && node scripts/generate-radarr-feeds.js && node scripts/inject-seo-assets.js",
     "preview": "vite preview",
     "clean": "rm -rf dist",
     "lint": "tsc --noEmit",
