@@ -15,6 +15,7 @@
 
 import { calculateActorAge, normalizeSearchText, getActorProfileImageUrl, PLACEHOLDER_ACTOR_PHOTO } from './actor-utils.js';
 import { getActorUrl, getMovieUrl } from './movie-url.js';
+import { getPublicMovies } from './public-movies.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   const moviesGrid = document.getElementById('movies-grid');
@@ -220,6 +221,10 @@ document.addEventListener('DOMContentLoaded', () => {
     .then(data => {
       upcomingMovies = Array.isArray(data) ? data : [];
       renderUpcomingMovies();
+      if (currentActorFilter) {
+        updateActorBanner();
+        applyFiltersAndSort();
+      }
     })
     .catch(err => {
       console.warn('Could not load upcoming.json:', err);
@@ -451,7 +456,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const matchingMovies = getMoviesForActor(currentActorFilter);
     const count = matchingMovies.length;
     if (activeActorCountBadge) {
-      activeActorCountBadge.textContent = `${count} ${count === 1 ? 'movie' : 'movies'} in collection`;
+      activeActorCountBadge.textContent = `${count} public ${count === 1 ? 'movie' : 'movies'}`;
     }
 
     if (activeActorMeta) {
@@ -490,14 +495,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // =========================================================================
   // Actor Movie Intersect Logic
-  // Movies in movies.json ONLY, matched by TMDB Person ID
+  // Public movies matched by TMDB Person ID
   // =========================================================================
   function getMoviesForActor(personIdentifier) {
-    if (!personIdentifier || !allMovies || allMovies.length === 0) return [];
+    const publicMovies = getPublicMovies(allMovies, upcomingMovies);
+    if (!personIdentifier || publicMovies.length === 0) return [];
     const targetId = Number(personIdentifier);
 
     if (!isNaN(targetId) && targetId > 0) {
-      return allMovies.filter(movie => {
+      return publicMovies.filter(movie => {
         const mId = String(movie.tmdbId || movie.tmdb_id);
         const cast = (castData && castData.castByMovieId && castData.castByMovieId[mId])
           || (castData && castData.movieCast && castData.movieCast[mId])
@@ -507,7 +513,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     const normName = String(personIdentifier).toLowerCase().trim();
-    return allMovies.filter(movie => {
+    return publicMovies.filter(movie => {
       const mId = String(movie.tmdbId || movie.tmdb_id);
       const cast = (castData && castData.castByMovieId && castData.castByMovieId[mId])
         || (castData && castData.movieCast && castData.movieCast[mId])
@@ -563,7 +569,8 @@ document.addEventListener('DOMContentLoaded', () => {
       }
 
       btn.textContent = actorObj.name;
-      btn.title = `Show movies starring ${actorObj.name} (${actorObj.count} in collection)`;
+      const publicActorMovieCount = getMoviesForActor(actorObj.id).length;
+      btn.title = `Show movies starring ${actorObj.name} (${publicActorMovieCount} public ${publicActorMovieCount === 1 ? 'movie' : 'movies'})`;
 
       btn.addEventListener('click', () => {
         if (isSelected) {

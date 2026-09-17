@@ -131,7 +131,7 @@ export function saveMoviesAndSync(movies) {
   // 6. Automatically regenerate cast.json whenever movie collection changes
   syncScheduledUpcomingMovies(scheduled);
   const castData = regenerateCastJson();
-  generateRadarrFeeds(sorted, castData);
+  generateRadarrFeeds(sorted, castData, getUpcomingMovies());
 
   return {
     count: sorted.length,
@@ -310,6 +310,7 @@ export function saveUpcomingMovies(upcomingList) {
     fs.writeFileSync(DIST_UPCOMING_JSON_PATH, content, 'utf8');
   }
 
+  generateRadarrFeeds(getMovies(), getCastData(), sorted);
   return sorted;
 }
 
@@ -423,7 +424,7 @@ export function saveCastData(castData) {
   if (fs.existsSync(distDir)) {
     fs.writeFileSync(DIST_CAST_JSON_PATH, content, 'utf8');
   }
-  generateRadarrFeeds(getMovies(), castData);
+  generateRadarrFeeds(getMovies(), castData, getUpcomingMovies());
   return castData;
 }
 

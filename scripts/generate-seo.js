@@ -2,6 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { getActorUrl, getMovieUrl } from '../movie-url.js';
+import { getPublicMovies } from '../public-movies.js';
 import { generateRadarrFeeds } from './generate-radarr-feeds.js';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -13,12 +14,28 @@ for (const generatedDir of ['movie', 'actor', 'year', 'actors', 'radarr']) {
 const movies = JSON.parse(fs.readFileSync(path.join(ROOT, 'movies.json'), 'utf8'));
 const upcomingMovies = JSON.parse(fs.readFileSync(path.join(ROOT, 'upcoming.json'), 'utf8'));
 const castData = JSON.parse(fs.readFileSync(path.join(ROOT, 'cast.json'), 'utf8'));
-generateRadarrFeeds(movies, castData);
-const actors = (castData.actors || []).filter(actor => actor?.id && actor?.name && actor.count > 0);
+const personCache = JSON.parse(fs.readFileSync(path.join(ROOT, 'person-cache.json'), 'utf8'));
+const castForMovie = movie => {
+  const id = String(movie.tmdbId || movie.tmdb_id);
+  return castData.castByMovieId?.[id] || castData.movieCast?.[id] || movie.cast || [];
+};
+generateRadarrFeeds(movies, castData, upcomingMovies);
+const publicMovies = getPublicMovies(movies, upcomingMovies);
+const actorsById = new Map((castData.actors || [])
+  .filter(actor => actor?.id && actor?.name && actor.count > 0)
+  .map(actor => [String(actor.id), actor]));
+for (const movie of publicMovies) {
+  for (const person of castForMovie(movie)) {
+    if (!person?.id || !person?.name) continue;
+    const id = String(person.id);
+    const existing = actorsById.get(id) || personCache[id] || {};
+    actorsById.set(id, { ...existing, ...person, id: person.id, name: person.name });
+  }
+}
+const actors = [...actorsById.values()];
 const actorById = new Map(actors.map(actor => [String(actor.id), actor]));
 const actorNameCounts = new Map(actors.map(actor => [actor.name.toLowerCase(), actors.filter(item => item.name.toLowerCase() === actor.name.toLowerCase()).length]));
-const movieById = new Map(movies.map(movie => [String(movie.tmdbId || movie.tmdb_id), movie]));
-const moviePages = [...movies, ...upcomingMovies.filter(movie => movie.tmdbId || movie.tmdb_id)];
+const moviePages = publicMovies;
 
 const escapeHtml = value => String(value ?? '')
   .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
@@ -28,11 +45,6 @@ const escapeJson = value => JSON.stringify(value).replace(/</g, '\\u003c');
 const movieUrl = movie => getMovieUrl(movie);
 const actorUrl = actor => getActorUrl(actor);
 const absolute = url => `${BASE_URL}${url}`;
-const castForMovie = movie => {
-  const id = String(movie.tmdbId || movie.tmdb_id);
-  return castData.castByMovieId?.[id] || castData.movieCast?.[id] || movie.cast || [];
-};
-
 function headerHtml() {
   return `<header id="site-header" class="site-header homepage-hero">
     <div class="hero-branch hero-branch-left" aria-hidden="true"></div>
@@ -69,7 +81,7 @@ for (const movie of moviePages) {
     const actor = actorById.get(String(person.id)) || person;
     return `<li><a href="${escapeHtml(actorUrl(actor))}">${escapeHtml(person.name || actor.name)}</a>${person.character ? ` as ${escapeHtml(person.character)}` : ''}</li>`;
   }).join('');
-  const isUpcoming = upcomingMovies.some(item => String(item.tmdbId || item.tmdb_id) === String(id));
+  const isUpcoming = movie.status === 'upcoming';
   const description = isUpcoming
     ? `Explore ${movie.title}${movie.year ? ` (${movie.year})` : ''}, including its upcoming release date, synopsis and cast. This title is coming soon and is not yet in the XmasDB collection.`
     : `Explore ${movie.title}${movie.year ? ` (${movie.year})` : ''}, including the movie synopsis, cast, actors and its place in our Hallmark Christmas movie collection.`;
@@ -86,11 +98,11 @@ for (const actor of actors) {
   const route = actorUrl(actor);
   const actorLabel = actorNameCounts.get(actor.name.toLowerCase()) > 1 ? `${actor.name} (TMDB ${actor.id})` : actor.name;
   generatedActorRoutes.add(route);
-  const actorMovies = movies.filter(movie => castForMovie(movie).some(person => Number(person.id) === Number(actor.id)));
+  const actorMovies = publicMovies.filter(movie => castForMovie(movie).some(person => Number(person.id) === Number(actor.id)));
   const description = `Explore ${actorLabel} and the Hallmark Christmas movies in our collection featuring the actor, including roles, movie years and cast information.`;
   const profile = actor.profile || actor.profile_path || '';
   const schema = { '@context': 'https://schema.org', '@type': 'Person', name: actor.name, image: profile || undefined, birthDate: actor.birthday || undefined, url: absolute(route), sameAs: [`https://www.themoviedb.org/person/${actor.id}`] };
-  const movieLinks = actorMovies.sort((a, b) => Number(b.year || 0) - Number(a.year || 0)).map(movie => `<li><a href="${escapeHtml(movieUrl(movie))}">${escapeHtml(movie.title)}</a>${movie.year ? ` (${movie.year})` : ''}</li>`).join('');
+  const movieLinks = actorMovies.sort((a, b) => Number(b.year || 0) - Number(a.year || 0)).map(movie => `<li><a href="${escapeHtml(movieUrl(movie))}">${escapeHtml(movie.title)}</a>${movie.year ? ` (${movie.year})` : ''}${movie.status === 'upcoming' ? ' <span class="detail-badge detail-badge-upcoming">UPCOMING</span>' : ''}</li>`).join('');
   const body = `<main class="actor-page-container"><nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span aria-hidden="true">&gt;</span> <a href="/actors">Actors</a> <span aria-hidden="true">&gt;</span> <span>${escapeHtml(actor.name)}</span></nav><article class="actor-content static-seo-content"><div class="actor-hero-section">${profile ? `<div class="actor-photo-col"><img class="actor-profile-photo" src="${escapeHtml(profile)}" alt="${escapeHtml(actor.name)} profile photo"></div>` : ''}<div class="actor-details-col"><h1 class="actor-name">${escapeHtml(actor.name)}</h1>${actor.birthday ? `<p>Born ${escapeHtml(actor.birthday)}</p>` : ''}<p>${escapeHtml(actor.name)} appears in ${actorMovies.length} Hallmark Christmas ${actorMovies.length === 1 ? 'movie' : 'movies'} in this collection.</p><a class="external-btn actor-json-btn" href="/json/actors/${actor.id}.json" target="_blank" rel="noopener noreferrer">RADARR / JSON LIST</a><p class="actor-json-help">Hallmark Christmas movies in this collection featuring ${escapeHtml(actor.name)}. This is not the actor's complete filmography.</p></div></div><section class="actor-filmography-section"><h2>XmasDB.com in this collection</h2><ul class="static-filmography-list">${movieLinks}</ul></section></article></main>`;
   writePage(route, shell({ title: `${actorLabel} - XmasDB.com, Roles & Cast Guide`, description, canonical: route, type: 'profile', image: profile, schema, body, style: 'actor.css' }));
 }

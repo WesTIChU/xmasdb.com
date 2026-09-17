@@ -7,6 +7,7 @@
 import { calculateActorAge, getActorProfileImageUrl, PLACEHOLDER_ACTOR_PHOTO } from './actor-utils.js';
 import { updateLayoutCounts } from './js/site-layout.js';
 import { getMovieUrl } from './movie-url.js';
+import { getPublicMovies } from './public-movies.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   const params = new URLSearchParams(window.location.search);
@@ -59,14 +60,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
   async function loadActorData(actorParam) {
     try {
-      // 1. Fetch movies and cast data in parallel
-      const [moviesRes, castRes, cacheRes] = await Promise.all([
+      // 1. Fetch public movie, cast, and actor data in parallel
+      const [moviesRes, upcomingRes, castRes, cacheRes] = await Promise.all([
         fetch('/movies.json').then(r => r.ok ? r.json() : []),
+        fetch('/upcoming.json').then(r => r.ok ? r.json() : []),
         fetch('/cast.json').then(r => r.ok ? r.json() : null).catch(() => null),
         fetch('/person-cache.json').then(r => r.ok ? r.json() : {}).catch(() => ({}))
       ]);
 
-       allMovies = Array.isArray(moviesRes) ? moviesRes : [];
+      const collectionMovies = Array.isArray(moviesRes) ? moviesRes : [];
+      const upcomingMovies = Array.isArray(upcomingRes) ? upcomingRes : [];
+      allMovies = getPublicMovies(collectionMovies, upcomingMovies);
       const castData = castRes || { actors: [], castByMovieId: {}, movieCast: {} };
       const personCache = cacheRes || {};
 
@@ -403,6 +407,13 @@ document.addEventListener('DOMContentLoaded', () => {
         overviewEl.className = 'filmography-movie-overview';
         overviewEl.textContent = movie.overview;
         infoWrap.appendChild(overviewEl);
+      }
+
+      if (movie.status === 'upcoming') {
+        const upcomingBadge = document.createElement('span');
+        upcomingBadge.className = 'filmography-upcoming-badge';
+        upcomingBadge.textContent = 'UPCOMING';
+        posterWrap.appendChild(upcomingBadge);
       }
 
       card.appendChild(posterWrap);

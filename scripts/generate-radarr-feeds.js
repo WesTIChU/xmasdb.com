@@ -11,7 +11,7 @@ const IMDB_PATTERN = /^tt\d+$/i;
 
 const movieId = movie => String(movie?.tmdbId || movie?.tmdb_id || '');
 const imdbId = movie => String(movie?.imdbId || movie?.imdb_id || '').trim();
-const feedEntry = movie => ({
+export const toRadarrEntry = movie => ({
   title: `${movie.title}${movie.year ? ` (${movie.year})` : ''}`,
   imdb_id: imdbId(movie),
 });
@@ -28,7 +28,7 @@ function uniqueRadarrMovies(movies, skipped) {
       continue;
     }
     seen.add(id);
-    result.push(feedEntry(movie));
+    result.push(toRadarrEntry(movie));
   }
   return result;
 }
@@ -56,25 +56,48 @@ function validateFeed(entries, label) {
   }
 }
 
-export function generateRadarrFeeds(movies, castData) {
-  const skipped = new Set();
-  const sortedMovies = [...movies].sort((a, b) => Number(b.year || 0) - Number(a.year || 0) || String(a.title || '').localeCompare(String(b.title || '')));
-  const allEntries = uniqueRadarrMovies(sortedMovies, skipped);
-  const years = [...new Set(sortedMovies.map(movie => Number(movie.year)).filter(Boolean))].sort((a, b) => b - a);
-  const yearEntries = new Map(years.map(year => [year, uniqueRadarrMovies(sortedMovies.filter(movie => Number(movie.year) === year), skipped)]));
+export function getRadarrEligibleMovies(collectionMovies = [], comingSoonMovies = []) {
+  const byTmdbId = new Map();
+  for (const movie of [...collectionMovies, ...comingSoonMovies]) {
+    const id = movieId(movie);
+    if (id && !byTmdbId.has(id)) byTmdbId.set(id, movie);
+  }
+  return [...byTmdbId.values()];
+}
 
-  const movieById = new Map(sortedMovies.map(movie => [movieId(movie), movie]));
+export function getRadarrActorMovieIds(movies, castData, comingSoonMovies = [], collectionMovies = []) {
+  const movieById = new Map(movies.map(movie => [movieId(movie), movie]));
   const actorMovieIds = new Map();
-  const castByMovie = castData?.castByMovieId || castData?.movieCast || {};
-  for (const [id, cast] of Object.entries(castByMovie)) {
-    if (!movieById.has(id) || !Array.isArray(cast)) continue;
+  const addCast = (id, cast) => {
+    if (!movieById.has(id) || !Array.isArray(cast)) return;
     for (const person of cast) {
       const actorId = String(person?.id || '');
       if (!/^\d+$/.test(actorId)) continue;
       if (!actorMovieIds.has(actorId)) actorMovieIds.set(actorId, new Set());
       actorMovieIds.get(actorId).add(id);
     }
+  };
+
+  const castByMovie = castData?.castByMovieId || castData?.movieCast || {};
+  for (const [id, cast] of Object.entries(castByMovie)) addCast(id, cast);
+  const collectionIds = new Set(collectionMovies.map(movieId).filter(Boolean));
+  for (const movie of comingSoonMovies) {
+    const id = movieId(movie);
+    if (!collectionIds.has(id)) addCast(id, movie.cast);
   }
+  return actorMovieIds;
+}
+
+export function generateRadarrFeeds(movies, castData, comingSoonMovies = []) {
+  const skipped = new Set();
+  const eligibleMovies = getRadarrEligibleMovies(movies, comingSoonMovies);
+  const sortedMovies = eligibleMovies.sort((a, b) => Number(b.year || 0) - Number(a.year || 0) || String(a.title || '').localeCompare(String(b.title || '')));
+  const allEntries = uniqueRadarrMovies(sortedMovies, skipped);
+  const years = [...new Set(sortedMovies.map(movie => Number(movie.year)).filter(Boolean))].sort((a, b) => b - a);
+  const yearEntries = new Map(years.map(year => [year, uniqueRadarrMovies(sortedMovies.filter(movie => Number(movie.year) === year), skipped)]));
+
+  const movieById = new Map(sortedMovies.map(movie => [movieId(movie), movie]));
+  const actorMovieIds = getRadarrActorMovieIds(sortedMovies, castData, comingSoonMovies, movies);
 
   const expectedYears = new Set(years.map(year => `${year}.json`));
   const expectedActors = new Set();
