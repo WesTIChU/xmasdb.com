@@ -53,7 +53,9 @@ for (const movie of refreshTargets) {
       tagline: data.tagline || movie.tagline || null,
       runtime: data.runtime || movie.runtime || null,
       genres: Array.isArray(data.genres) ? data.genres : (movie.genres || []),
-      videos: (data.videos?.results || []).filter(video => video.site === 'YouTube' && video.key).slice(0, 5)
+      videos: (data.videos?.results || []).filter(video => video.site === 'YouTube' && video.key).slice(0, 5).length > 0
+        ? (data.videos.results || []).filter(video => video.site === 'YouTube' && video.key).slice(0, 5)
+        : (movie.videos || [])
     });
     if (upcoming.includes(movie) && data.release_date) {
       movie.premiereDate = data.release_date;

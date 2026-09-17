@@ -14,6 +14,7 @@
     "cast:refresh": "node scripts/enrich-cast.js --refresh",
     "assets:migrate": "node scripts/migrate-local-assets.js",
     "catalog:refresh": "node scripts/refresh-catalog.js",
+    "trailers:recover": "node scripts/recover-trailers.js",
     "test": "node --test scripts/*.test.js"
   },
   "dependencies": {

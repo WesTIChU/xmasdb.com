@@ -88,6 +88,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         poster: matchedMovie.poster,
         vote_average: matchedMovie.vote_average,
         vote_count: matchedMovie.vote_count,
+        videos: Array.isArray(matchedMovie.videos) ? matchedMovie.videos : [],
         imdb_id: matchedMovie.imdbId || matchedMovie.imdb_id,
         cast: [],
         crew: [],

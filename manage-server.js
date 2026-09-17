@@ -349,7 +349,7 @@ app.post('/api/manage/refresh-movie', async (req, res) => {
     const current = getMovies();
     const index = current.findIndex(movie => Number(movie.tmdbId || movie.tmdb_id) === Number(tmdbId));
     if (index < 0) return res.status(404).json({ success: false, error: 'Movie is not in the local catalog.' });
-    const { data } = await fetchFromTmdb(`movie/${tmdbId}`, { append_to_response: 'external_ids,credits' }, token);
+    const { data } = await fetchFromTmdb(`movie/${tmdbId}`, { append_to_response: 'external_ids,credits,videos' }, token);
     const existing = current[index];
     const poster = await ensureCachedImage({ kind: 'poster', id: data.id, filePath: data.poster_path, rootDir: __dirname, force: true });
     current[index] = {
@@ -362,7 +362,10 @@ app.post('/api/manage/refresh-movie', async (req, res) => {
       overview: data.overview || existing.overview || '',
       vote_average: Number.isFinite(Number(data.vote_average)) ? Number(data.vote_average) : null,
       vote_count: Number.isFinite(Number(data.vote_count)) ? Number(data.vote_count) : null,
-      poster: poster.path || null
+      poster: poster.path || null,
+      videos: (data.videos?.results || []).filter(video => video.site === 'YouTube' && video.key).slice(0, 5).length > 0
+        ? (data.videos.results || []).filter(video => video.site === 'YouTube' && video.key).slice(0, 5)
+        : (existing.videos || [])
     };
     saveMoviesAndSync(current);
     const personCache = loadPersonCache();
@@ -383,7 +386,7 @@ app.post('/api/manage/refresh-movie', async (req, res) => {
 });
 
 async function addMovieFromTmdb(tmdbId, token) {
-  const fullRes = await fetchFromTmdb(`movie/${tmdbId}`, { append_to_response: 'external_ids,credits' }, token);
+  const fullRes = await fetchFromTmdb(`movie/${tmdbId}`, { append_to_response: 'external_ids,credits,videos' }, token);
   const fullData = fullRes.data;
   const releaseYear = fullData.release_date ? parseInt(fullData.release_date.split('-')[0], 10) : null;
   const rawCast = fullData.credits?.cast || [];
@@ -430,7 +433,8 @@ async function addMovieFromTmdb(tmdbId, token) {
     poster: null,
     overview: fullData.overview || '',
     vote_average: Number.isFinite(Number(fullData.vote_average)) ? Number(fullData.vote_average) : null,
-    vote_count: Number.isFinite(Number(fullData.vote_count)) ? Number(fullData.vote_count) : null
+    vote_count: Number.isFinite(Number(fullData.vote_count)) ? Number(fullData.vote_count) : null,
+    videos: (fullData.videos?.results || []).filter(video => video.site === 'YouTube' && video.key).slice(0, 5)
   };
   const poster = await ensureCachedImage({ kind: 'poster', id: fullData.id, filePath: fullData.poster_path, rootDir: __dirname });
   if (poster.path) movie.poster = poster.path;
