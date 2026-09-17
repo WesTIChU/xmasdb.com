@@ -16,7 +16,6 @@
 import { calculateActorAge, normalizeSearchText, getActorProfileImageUrl, PLACEHOLDER_ACTOR_PHOTO } from './actor-utils.js';
 import { getActorUrl, getMovieUrl } from './movie-url.js';
 import { getPublicMovies } from './public-movies.js';
-import { getBirthdayAge, getBirthdayGroups, getPublicActors } from './birthday-utils.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   const moviesGrid = document.getElementById('movies-grid');
@@ -36,18 +35,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const activeActorMeta = document.getElementById('active-actor-meta');
   const btnClearActor = document.getElementById('btn-clear-actor');
 
-  // Birthdays Today Elements
-  const birthdaysSection = document.getElementById('birthdays-section');
-  const birthdaysToggleBtn = document.getElementById('birthdays-toggle-btn');
-  const birthdaysToggleTitle = document.getElementById('birthdays-toggle-title');
-  const birthdaysToggleCount = document.getElementById('birthdays-toggle-count');
-  const birthdaysToggleArrow = document.getElementById('birthdays-toggle-arrow');
-  const birthdaysPanel = document.getElementById('birthdays-panel');
-  const birthdaysTodayGroup = document.getElementById('birthdays-today-group');
-  const birthdaysTodayList = document.getElementById('birthdays-today-list');
-  const birthdaysUpcomingList = document.getElementById('birthdays-upcoming-list');
-  const birthdaysMoreBtn = document.getElementById('birthdays-more-btn');
-
   // Upcoming Section Elements
   const upcomingSection = document.getElementById('upcoming-section');
   const upcomingGrid = document.getElementById('upcoming-grid');
@@ -56,8 +43,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const upcomingCountText = document.getElementById('upcoming-count-text');
   const upcomingToggleArrow = document.getElementById('upcoming-toggle-arrow');
   let isUpcomingPanelOpen = false;
-  let isBirthdaysPanelOpen = false;
-  let birthdaysShowAll = false;
 
   // Search Elements
   const globalSearchContainer = document.getElementById('global-search-container');
@@ -232,7 +217,6 @@ document.addEventListener('DOMContentLoaded', () => {
     .then(data => {
       upcomingMovies = Array.isArray(data) ? data : [];
       renderUpcomingMovies();
-      renderBirthdaysToday();
       if (currentActorFilter) {
         updateActorBanner();
         applyFiltersAndSort();
@@ -250,7 +234,6 @@ document.addEventListener('DOMContentLoaded', () => {
       castData = data;
       buildSearchIndex();
       renderPopularActors();
-      renderBirthdaysToday();
       if (currentActorFilter) {
         updateActorBanner();
         applyFiltersAndSort();
@@ -301,7 +284,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
       updateActorBanner();
       renderPopularActors();
-      renderBirthdaysToday();
     })
     .catch((error) => {
       console.error('Error loading movies.json:', error);
@@ -613,82 +595,6 @@ document.addEventListener('DOMContentLoaded', () => {
       });
       popularActorsList.appendChild(moreBtn);
     }
-  }
-
-  // =========================================================================
-  // Birthdays Section
-  // =========================================================================
-  function renderBirthdaysToday() {
-    if (!birthdaysSection || !birthdaysTodayList || !birthdaysUpcomingList || !castData) return;
-    const actors = getPublicActors(allMovies, upcomingMovies, castData).filter(actor => actor.birthday);
-    const groups = getBirthdayGroups(actors, new Date());
-    const today = new Date();
-    birthdaysTodayList.innerHTML = '';
-    birthdaysUpcomingList.innerHTML = '';
-    birthdaysTodayGroup.style.display = groups.today.length ? 'block' : 'none';
-    birthdaysSection.style.display = groups.today.length || groups.upcoming.length ? 'block' : 'none';
-    if (!groups.today.length && !groups.upcoming.length) return;
-
-    if (groups.today.length) {
-      birthdaysToggleTitle.textContent = 'BIRTHDAYS TODAY';
-      birthdaysToggleCount.textContent = `${groups.today.length} today · Upcoming birthdays`;
-      groups.today.forEach(actor => birthdaysTodayList.appendChild(renderBirthdayActor(actor, today, true)));
-    } else {
-      const next = groups.upcoming[0].date;
-      const days = Math.round((next - new Date(today.getFullYear(), today.getMonth(), today.getDate())) / 86400000);
-      birthdaysToggleTitle.textContent = 'UPCOMING BIRTHDAYS';
-      birthdaysToggleCount.textContent = `Next birthday in ${days} ${days === 1 ? 'day' : 'days'}`;
-    }
-    const visibleUpcomingGroups = birthdaysShowAll ? groups.upcoming : groups.upcoming.slice(0, 3);
-    visibleUpcomingGroups.forEach(group => {
-      const dateHeading = document.createElement('h3');
-      dateHeading.className = 'birthday-date-heading';
-      dateHeading.textContent = group.date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
-      birthdaysUpcomingList.appendChild(dateHeading);
-      const actorList = document.createElement('div');
-      actorList.className = 'birthday-actor-list';
-      group.actors.forEach(actor => actorList.appendChild(renderBirthdayActor(actor, group.date, false)));
-      birthdaysUpcomingList.appendChild(actorList);
-    });
-    if (birthdaysMoreBtn) {
-      birthdaysMoreBtn.hidden = groups.upcoming.length <= 3;
-      birthdaysMoreBtn.textContent = birthdaysShowAll ? 'Show fewer birthdays ↑' : 'Show more birthdays ↓';
-      birthdaysMoreBtn.onclick = () => {
-        birthdaysShowAll = !birthdaysShowAll;
-        renderBirthdaysToday();
-      };
-    }
-    birthdaysToggleBtn.onclick = () => {
-      isBirthdaysPanelOpen = !isBirthdaysPanelOpen;
-      birthdaysToggleBtn.setAttribute('aria-expanded', String(isBirthdaysPanelOpen));
-      birthdaysPanel.setAttribute('aria-hidden', String(!isBirthdaysPanelOpen));
-      birthdaysPanel.style.display = isBirthdaysPanelOpen ? 'block' : 'none';
-      birthdaysToggleArrow.textContent = isBirthdaysPanelOpen ? '▲' : '▼';
-      birthdaysToggleBtn.classList.toggle('is-active', isBirthdaysPanelOpen);
-    };
-  }
-
-  function renderBirthdayActor(actor, date, isToday) {
-    const link = document.createElement('a');
-    link.className = 'birthday-actor';
-    link.href = getActorUrl(actor);
-    const photo = document.createElement('img');
-    photo.src = getActorProfileImageUrl(actor.profile_path || actor.profile);
-    photo.alt = actor.name;
-    photo.loading = 'lazy';
-    photo.onerror = function() { this.onerror = null; this.src = PLACEHOLDER_ACTOR_PHOTO; };
-    const details = document.createElement('span');
-    details.className = 'birthday-actor-details';
-    const name = document.createElement('strong');
-    name.textContent = actor.name;
-    const summary = document.createElement('span');
-    const age = getBirthdayAge(actor.birthday, date.getFullYear());
-    summary.textContent = actor.deathday
-      ? 'Born on this day'
-      : `${isToday ? `Turns ${age} today` : `Turns ${age}`}`;
-    details.append(name, summary);
-    link.append(photo, details);
-    return link;
   }
 
   // =========================================================================
