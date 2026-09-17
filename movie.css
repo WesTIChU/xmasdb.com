@@ -158,6 +158,13 @@
   border: 1px solid #cce5d7;
 }
 
+.detail-badge-upcoming {
+  background: #fff7ed;
+  color: #9a3412;
+  border: 1px solid #fed7aa;
+  letter-spacing: 0.04em;
+}
+
 .detail-badge-rating {
   background: #fef3c7;
   color: #92400e;

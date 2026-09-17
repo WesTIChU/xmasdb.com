@@ -40,15 +40,17 @@ function movieBody(seoHtml) {
   const overview = matchValue(seoHtml, /<p class="detail-overview">([\s\S]*?)<\/p>/);
   const year = matchValue(seoHtml, /<span class="detail-badge detail-badge-year">([\s\S]*?)<\/span>/);
   const rating = matchValue(seoHtml, /<span class="detail-badge detail-badge-rating">([\s\S]*?)<\/span>/);
+  const status = matchValue(seoHtml, /<span class="detail-badge detail-badge-upcoming">([\s\S]*?)<\/span>/);
   const cast = matchValue(seoHtml, /<ul class="static-cast-list">([\s\S]*?)<\/ul>/);
   const castLinks = cast.replace(/<li>([\s\S]*?)<\/li>/g, '<span>$1</span>');
   const breadcrumb = `<nav class="breadcrumbs" aria-label="Breadcrumb" style="display:none"><a href="/">Home</a> <span aria-hidden="true">&gt;</span> <a href="/year/${year}">${year || 'Movies'}</a> <span aria-hidden="true">&gt;</span> <span>${title}</span></nav>`;
 
   return body
-    .replace('<a href="./" class="back-link" id="back-link">&larr; Back to Movies</a>', `<a href="./" class="back-link" id="back-link">&larr; Back to Movies</a>${breadcrumb}`)
+    .replace('<a href="/" class="back-link" id="back-link">&larr; Back to Movies</a>', `<a href="/" class="back-link" id="back-link">&larr; Back to Movies</a>${breadcrumb}`)
     .replace('<h1 id="detail-title" class="detail-title">Title</h1>', `<h1 id="detail-title" class="detail-title">${title}</h1>`)
     .replace('<img id="detail-poster" class="detail-poster" src="" alt="Movie Poster" />', `<img id="detail-poster" class="detail-poster" src="${poster}" alt="${title} movie poster" />`)
     .replace('<span id="detail-year" class="detail-badge detail-badge-year"></span>', `<span id="detail-year" class="detail-badge detail-badge-year">${year}</span>`)
+    .replace('<span id="detail-status" class="detail-badge detail-badge-upcoming" style="display: none;">UPCOMING</span>', `<span id="detail-status" class="detail-badge detail-badge-upcoming"${status ? '' : ' style="display: none;"'}>${status || 'UPCOMING'}</span>`)
     .replace('<span id="detail-rating" class="detail-badge detail-badge-rating"></span>', `<span id="detail-rating" class="detail-badge detail-badge-rating">${rating}</span>`)
     .replace('<p id="detail-overview" class="detail-overview"></p>', `<p id="detail-overview" class="detail-overview">${overview}</p>`)
     .replace('<div id="cast-grid" class="cast-grid"></div>', `<div id="cast-grid" class="cast-grid"><div class="seo-initial-cast">${castLinks}</div></div>`);

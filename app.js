@@ -933,6 +933,76 @@ document.addEventListener('DOMContentLoaded', () => {
   // =========================================================================
   // Movie Grid Rendering
   // =========================================================================
+  function renderMovieCard(movie, isUpcoming = false) {
+    const card = document.createElement('article');
+    card.className = 'movie-card';
+    card.id = `movie-${movie.tmdbId || movie.tmdb_id || movie.title.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`;
+
+    const movieUrl = getMovieUrl(movie);
+    const posterLink = document.createElement('a');
+    posterLink.className = 'poster-wrap';
+    posterLink.href = movieUrl;
+    posterLink.setAttribute('aria-label', `View details for ${movie.title} (${movie.year || ''})`);
+
+    const img = document.createElement('img');
+    img.className = 'movie-poster';
+    img.alt = `${movie.title} Poster`;
+    img.loading = 'lazy';
+    img.referrerPolicy = 'no-referrer';
+    img.src = movie.poster || 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="300" height="450" viewBox="0 0 300 450"><rect width="300" height="450" fill="%23e5e5e5"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="sans-serif" font-size="16" fill="%23888888">No Poster</text></svg>';
+    img.onerror = () => {
+      img.onerror = null;
+      img.src = 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="300" height="450" viewBox="0 0 300 450"><rect width="300" height="450" fill="%23e5e5e5"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="sans-serif" font-size="16" fill="%23888888">No Poster</text></svg>';
+    };
+    posterLink.appendChild(img);
+    card.appendChild(posterLink);
+
+    const info = document.createElement('div');
+    info.className = 'movie-info';
+    if (isUpcoming) {
+      const badge = document.createElement('span');
+      badge.className = 'upcoming-badge';
+      badge.textContent = 'UPCOMING';
+      info.appendChild(badge);
+    }
+
+    const titleEl = document.createElement('h2');
+    titleEl.className = 'movie-title';
+    const titleLink = document.createElement('a');
+    titleLink.href = movieUrl;
+    titleLink.textContent = movie.title;
+    titleLink.className = 'movie-title-link';
+    titleEl.appendChild(titleLink);
+    info.appendChild(titleEl);
+
+    const yearEl = document.createElement('div');
+    yearEl.className = 'movie-year';
+    yearEl.textContent = isUpcoming ? (movie.premiereDate || movie.release_date || movie.year || '') : (movie.year || '');
+    info.appendChild(yearEl);
+
+    if (Number(movie.vote_average) > 0) {
+      const ratingEl = document.createElement('div');
+      ratingEl.className = 'movie-rating';
+      ratingEl.textContent = `★ ${Number(movie.vote_average).toFixed(1)} / 10`;
+      info.appendChild(ratingEl);
+    }
+
+    card.appendChild(info);
+    if (isUpcoming) {
+      card.tabIndex = 0;
+      card.addEventListener('click', event => {
+        if (!event.target.closest('a')) window.location.href = movieUrl;
+      });
+      card.addEventListener('keydown', event => {
+        if ((event.key === 'Enter' || event.key === ' ') && !event.target.closest('a')) {
+          event.preventDefault();
+          window.location.href = movieUrl;
+        }
+      });
+    }
+    return card;
+  }
+
   function renderMovies(movies) {
     if (!moviesGrid) return;
     moviesGrid.innerHTML = '';
@@ -948,62 +1018,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const fragment = document.createDocumentFragment();
 
-    movies.forEach((movie) => {
-      const card = document.createElement('article');
-      card.className = 'movie-card';
-      card.id = `movie-${movie.tmdbId || movie.tmdb_id || movie.title.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`;
-
-      // 1. Poster Link (Navigates to pretty movie URL)
-      const posterLink = document.createElement('a');
-      posterLink.className = 'poster-wrap';
-      posterLink.href = getMovieUrl(movie);
-      posterLink.setAttribute('aria-label', `View details for ${movie.title} (${movie.year || ''})`);
-
-      const img = document.createElement('img');
-      img.className = 'movie-poster';
-      img.alt = `${movie.title} Poster`;
-      img.loading = 'lazy';
-      img.referrerPolicy = 'no-referrer';
-      img.src = movie.poster || 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="300" height="450" viewBox="0 0 300 450"><rect width="300" height="450" fill="%23e5e5e5"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="sans-serif" font-size="16" fill="%23888888">No Poster</text></svg>';
-
-      img.onerror = () => {
-        img.onerror = null;
-        img.src = 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="300" height="450" viewBox="0 0 300 450"><rect width="300" height="450" fill="%23e5e5e5"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="sans-serif" font-size="16" fill="%23888888">No Poster</text></svg>';
-      };
-
-      posterLink.appendChild(img);
-      card.appendChild(posterLink);
-
-      // 2. Movie Info
-      const info = document.createElement('div');
-      info.className = 'movie-info';
-
-      const titleEl = document.createElement('h2');
-      titleEl.className = 'movie-title';
-
-      const titleLink = document.createElement('a');
-      titleLink.href = getMovieUrl(movie);
-      titleLink.textContent = movie.title;
-      titleLink.className = 'movie-title-link';
-      titleEl.appendChild(titleLink);
-
-      const yearEl = document.createElement('div');
-      yearEl.className = 'movie-year';
-      yearEl.textContent = movie.year || '';
-
-      info.appendChild(titleEl);
-      info.appendChild(yearEl);
-
-      if (Number(movie.vote_average) > 0) {
-        const ratingEl = document.createElement('div');
-        ratingEl.className = 'movie-rating';
-        ratingEl.textContent = `★ ${Number(movie.vote_average).toFixed(1)} / 10`;
-        info.appendChild(ratingEl);
-      }
-
-      card.appendChild(info);
-      fragment.appendChild(card);
-    });
+    movies.forEach(movie => fragment.appendChild(renderMovieCard(movie)));
 
     moviesGrid.appendChild(fragment);
   }
@@ -1025,42 +1040,9 @@ document.addEventListener('DOMContentLoaded', () => {
       upcomingCountText.textContent = `${count} upcoming ${count === 1 ? 'movie' : 'movies'}`;
     }
 
+    upcomingGrid.className = 'movies-grid';
     upcomingGrid.innerHTML = '';
-    upcomingMovies.forEach((m) => {
-      const card = document.createElement('article');
-      card.className = 'upcoming-card';
-
-      const poster = document.createElement('img');
-      poster.className = 'upcoming-poster';
-      poster.alt = m.title;
-      poster.loading = 'lazy';
-      poster.src = m.poster || 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="300" viewBox="0 0 200 300"><rect width="200" height="300" fill="%23e5e5e5"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="sans-serif" font-size="14" fill="%23888">Coming Soon</text></svg>';
-
-      const info = document.createElement('div');
-      info.className = 'upcoming-card-info';
-
-      const tag = document.createElement('span');
-      tag.className = 'upcoming-card-tag';
-      tag.textContent = m.premiereDate || 'COMING SOON';
-
-      const title = document.createElement('h3');
-      title.className = 'upcoming-card-title';
-      title.textContent = m.title;
-
-      info.appendChild(tag);
-      info.appendChild(title);
-
-      if (m.castSummary) {
-        const cast = document.createElement('p');
-        cast.className = 'upcoming-card-cast';
-        cast.textContent = `Starring: ${m.castSummary}`;
-        info.appendChild(cast);
-      }
-
-      card.appendChild(poster);
-      card.appendChild(info);
-      upcomingGrid.appendChild(card);
-    });
+    upcomingMovies.forEach(movie => upcomingGrid.appendChild(renderMovieCard(movie, true)));
 
     if (upcomingToggleBtn) {
       upcomingToggleBtn.addEventListener('click', () => {

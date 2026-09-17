@@ -3,6 +3,7 @@ import path from 'node:path';
 
 const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname), '..');
 const MOVIES_FILE = path.join(ROOT, 'movies.json');
+const UPCOMING_FILE = path.join(ROOT, 'upcoming.json');
 const CAST_FILE = path.join(ROOT, 'cast.json');
 const FEED_DIRS = [path.join(ROOT, 'json'), path.join(ROOT, 'public', 'json'), path.join(ROOT, 'dist', 'json')];
 const ACTOR_DIRS = FEED_DIRS.map(dir => path.join(dir, 'actors'));
@@ -109,5 +110,6 @@ export function generateRadarrFeeds(movies, castData) {
 if (process.argv[1] === new URL(import.meta.url).pathname) {
   const movies = JSON.parse(fs.readFileSync(MOVIES_FILE, 'utf8'));
   const castData = JSON.parse(fs.readFileSync(CAST_FILE, 'utf8'));
-  generateRadarrFeeds(movies, castData);
+  const upcoming = fs.existsSync(UPCOMING_FILE) ? JSON.parse(fs.readFileSync(UPCOMING_FILE, 'utf8')) : [];
+  generateRadarrFeeds(movies, castData, upcoming);
 }

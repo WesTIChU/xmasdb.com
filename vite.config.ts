@@ -38,10 +38,9 @@ function localManagementPlugin(): Plugin {
         const pathname = urlObj.pathname;
 
         // 1. Old URL compatibility: /movie.html?id=1535221 -> redirect 301 to /movie/1535221/{slug}
-        if (pathname === '/movie.html' && urlObj.searchParams.has('id')) {
-          const id = urlObj.searchParams.get('id');
-          const movies = getMovies();
-          const found = movies.find((m: any) => String(m.tmdbId || m.tmdb_id) === String(id));
+          if (pathname === '/movie.html' && urlObj.searchParams.has('id')) {
+            const id = urlObj.searchParams.get('id');
+            const found = [...getMovies(), ...getUpcomingMovies()].find((m: any) => String(m.tmdbId || m.tmdb_id) === String(id));
           if (found) {
             const slug = slugify(found.title);
             res.statusCode = 301;
@@ -56,8 +55,7 @@ function localManagementPlugin(): Plugin {
         if (movieMatch) {
           const id = movieMatch[1];
           const givenSlug = movieMatch[2] || '';
-          const movies = getMovies();
-          const found = movies.find((m: any) => String(m.tmdbId || m.tmdb_id) === String(id));
+          const found = [...getMovies(), ...getUpcomingMovies()].find((m: any) => String(m.tmdbId || m.tmdb_id) === String(id));
           if (found) {
             const correctSlug = slugify(found.title);
             // If wrong slug or missing slug, canonicalize with 301 redirect
@@ -394,6 +392,7 @@ function localManagementPlugin(): Plugin {
             const movieToAdd = {
               title: fullData.title,
               year: releaseYear,
+              release_date: fullData.release_date || null,
               tmdbId: fullData.id,
               imdbId: fullData.external_ids?.imdb_id || null,
               tmdb_id: fullData.id,
@@ -495,11 +494,37 @@ function localManagementPlugin(): Plugin {
 
           if (pathname === '/api/manage/upcoming/add' && req.method === 'POST') {
             const body = await getBody();
-            const added = addUpcomingMovie(body);
+            const input = body.movie || body;
+            let movie = { ...input };
+
+            // Use TMDB as the source of truth whenever an upcoming title has a match.
+            if (movie.tmdbId && /^\d+$/.test(String(movie.tmdbId))) {
+              const { data } = await fetchTmdb(`movie/${movie.tmdbId}`, { append_to_response: 'external_ids,credits' }, body.token || '');
+              const cast = (data.credits?.cast || []).map((credit: any, index: number) => ({
+                id: credit.id,
+                name: credit.name,
+                character: credit.character || '',
+                order: credit.order ?? index,
+                profile_path: normalizeProfilePath(credit.profile_path)
+              }));
+              movie = {
+                ...movie,
+                title: data.title || movie.title,
+                year: data.release_date ? Number(data.release_date.slice(0, 4)) : movie.year,
+                premiereDate: data.release_date || movie.premiereDate || null,
+                release_date: data.release_date || movie.release_date || null,
+                imdbId: data.external_ids?.imdb_id || movie.imdbId || null,
+                poster: data.poster_path ? `https://image.tmdb.org/t/p/w500${data.poster_path}` : movie.poster,
+                overview: data.overview || movie.overview || '',
+                cast,
+                castSummary: cast.slice(0, 8).map((credit: any) => credit.name).join(', ')
+              };
+            }
+            const added = addUpcomingMovie(movie);
             res.statusCode = 200;
             res.end(JSON.stringify({
               success: true,
-              message: `Added "${body.title || body.hallmarkTitle}" to upcoming movies.`,
+              message: `Added "${movie.title || movie.hallmarkTitle}" to upcoming movies.`,
               movies: added
             }));
             return;
@@ -563,6 +588,7 @@ function localManagementPlugin(): Plugin {
                   ...enrichedMovie,
                   title: fullData.title || enrichedMovie.title,
                   year: fullData.release_date ? parseInt(fullData.release_date.split('-')[0], 10) : enrichedMovie.year,
+                  release_date: fullData.release_date || enrichedMovie.release_date || null,
                   tmdbId: fullData.id,
                   imdbId: fullData.external_ids?.imdb_id || enrichedMovie.imdbId,
                   poster: fullData.poster_path ? `https://image.tmdb.org/t/p/w500${fullData.poster_path}` : enrichedMovie.poster,

@@ -133,7 +133,8 @@ async function generate() {
 
       movies.push({
         title: details.title || title,
-        year: releaseYear,
+      year: releaseYear,
+      release_date: details.release_date || null,
         tmdbId: details.id,
         imdbId: imdbId,
         tmdb_id: details.id,

@@ -52,8 +52,12 @@ export function getMovies() {
  * Saves movies array and automatically regenerates all yearly JSON files
  */
 export function saveMoviesAndSync(movies) {
+  const today = new Date().toISOString().slice(0, 10);
+  const scheduled = movies.filter(movie => String(movie.release_date || '').slice(0, 10) > today);
+  const catalogMovies = movies.filter(movie => !scheduled.includes(movie));
+
   // Sort movies by year descending, then title ascending
-  const sorted = [...movies].sort((a, b) => {
+  const sorted = [...catalogMovies].sort((a, b) => {
     const yearA = a.year || 0;
     const yearB = b.year || 0;
     if (yearB !== yearA) return yearB - yearA;
@@ -125,6 +129,7 @@ export function saveMoviesAndSync(movies) {
   });
 
   // 6. Automatically regenerate cast.json whenever movie collection changes
+  syncScheduledUpcomingMovies(scheduled);
   const castData = regenerateCastJson();
   generateRadarrFeeds(sorted, castData);
 
@@ -163,6 +168,7 @@ export function addMovie(newMovie, castArray = null) {
     imdbId: newMovie.imdbId || newMovie.imdb_id || null,
     tmdb_id: newMovie.tmdbId ? Number(newMovie.tmdbId) : (newMovie.tmdb_id ? Number(newMovie.tmdb_id) : null),
     imdb_id: newMovie.imdbId || newMovie.imdb_id || null,
+    release_date: newMovie.release_date || newMovie.releaseDate || null,
     poster: newMovie.poster || null,
     overview: newMovie.overview || '',
     vote_average: Number.isFinite(Number(newMovie.vote_average)) ? Number(newMovie.vote_average) : null,
@@ -184,6 +190,58 @@ export function addMovie(newMovie, castArray = null) {
   }
 
   return syncResult;
+}
+
+export function syncScheduledUpcomingMovies(movies = getMovies()) {
+  const today = new Date().toISOString().slice(0, 10);
+  const current = getUpcomingMovies();
+  const byTmdbId = new Map(current.filter(movie => movie.tmdbId).map(movie => [String(movie.tmdbId), movie]));
+  let changed = false;
+
+  for (const movie of movies) {
+    const id = Number(movie.tmdbId || movie.tmdb_id);
+    const releaseDate = String(movie.release_date || '').slice(0, 10);
+    if (!Number.isSafeInteger(id) || !releaseDate || releaseDate <= today) continue;
+
+    const existing = byTmdbId.get(String(id));
+    if (existing) {
+      if (existing.premiereDate !== releaseDate || existing.release_date !== releaseDate) {
+        existing.premiereDate = releaseDate;
+        existing.release_date = releaseDate;
+        changed = true;
+      }
+      continue;
+    }
+
+    const upcoming = {
+      id: `tmdb-${id}`,
+      title: movie.title,
+      hallmarkTitle: movie.title,
+      year: Number(movie.year) || Number(releaseDate.slice(0, 4)),
+      premiereDate: releaseDate,
+      release_date: releaseDate,
+      announcementDate: 'TMDB release date',
+      tmdbId: id,
+      imdbId: movie.imdbId || movie.imdb_id || null,
+      imdb_id: movie.imdbId || movie.imdb_id || null,
+      poster: movie.poster || null,
+      overview: movie.overview || '',
+      cast: Array.isArray(movie.cast) ? movie.cast : [],
+      castSummary: movie.castSummary || '',
+      backdrop: movie.backdrop || null,
+      tagline: movie.tagline || null,
+      runtime: movie.runtime || null,
+      genres: Array.isArray(movie.genres) ? movie.genres : [],
+      videos: Array.isArray(movie.videos) ? movie.videos : [],
+      hallmarkUrl: null,
+      dateAdded: new Date().toISOString(),
+    };
+    current.push(upcoming);
+    byTmdbId.set(String(id), upcoming);
+    changed = true;
+  }
+
+  return changed ? saveUpcomingMovies(current) : current;
 }
 
 /**
@@ -279,11 +337,14 @@ export function addUpcomingMovie(movie) {
     hallmarkTitle: movie.hallmarkTitle || movie.title || '',
     year: movie.year ? parseInt(movie.year, 10) : new Date().getFullYear(),
     premiereDate: movie.premiereDate || null,
+    release_date: movie.release_date || null,
     announcementDate: movie.announcementDate || 'Recently Announced',
     tmdbId: targetId,
     imdbId: movie.imdbId || null,
     poster: movie.poster || null,
     overview: movie.overview || movie.description || '',
+    cast: Array.isArray(movie.cast) ? movie.cast : [],
+    castSummary: movie.castSummary || '',
     hallmarkUrl: movie.hallmarkUrl || movie.pageUrl || null,
     dateAdded: new Date().toISOString()
   };

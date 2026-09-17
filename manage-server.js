@@ -356,6 +356,7 @@ app.post('/api/manage/refresh-movie', async (req, res) => {
       ...existing,
       title: data.title || existing.title,
       year: data.release_date ? parseInt(data.release_date.slice(0, 4), 10) : existing.year,
+      release_date: data.release_date || existing.release_date || null,
       imdbId: data.external_ids?.imdb_id || existing.imdbId || null,
       imdb_id: data.external_ids?.imdb_id || existing.imdb_id || null,
       overview: data.overview || existing.overview || '',
@@ -421,6 +422,7 @@ async function addMovieFromTmdb(tmdbId, token) {
   const movie = {
     title: fullData.title,
     year: releaseYear,
+    release_date: fullData.release_date || null,
     tmdbId: fullData.id,
     imdbId: fullData.external_ids?.imdb_id || null,
     tmdb_id: fullData.id,

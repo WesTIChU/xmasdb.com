@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-17T15:00:49.891Z",
+  "generatedAt": "2026-09-17T18:20:58.410Z",
   "totalActors": 3056,
-  "totalMovies": 269,
+  "totalMovies": 270,
   "actors": [
     {
       "id": 22082,
@@ -22752,7 +22752,7 @@
       "slug": "jaime-m-callica",
       "profile_path": "/images/people/1476624.webp",
       "profile": "/images/people/1476624.webp",
-      "birthday": null,
+      "birthday": "1985-11-03",
       "deathday": null,
       "movieTmdbIds": [
         1180746
@@ -73883,7 +73883,7 @@
         "name": "Jaime M. Callica",
         "character": "Fletcher",
         "order": 2,
-        "birthday": null,
+        "birthday": "1985-11-03",
         "deathday": null,
         "profile_path": "/images/people/1476624.webp",
         "profile": "/images/people/1476624.webp"
@@ -85428,7 +85428,8 @@
         "profile_path": "/images/people/4726275.webp",
         "profile": "/images/people/4726275.webp"
       }
-    ]
+    ],
+    "1772765": []
   },
   "movieCast": {
     "35830": [
@@ -118263,7 +118264,7 @@
         "name": "Jaime M. Callica",
         "character": "Fletcher",
         "order": 2,
-        "birthday": null,
+        "birthday": "1985-11-03",
         "deathday": null,
         "profile_path": "/images/people/1476624.webp",
         "profile": "/images/people/1476624.webp"
@@ -129808,6 +129809,7 @@
         "profile_path": "/images/people/4726275.webp",
         "profile": "/images/people/4726275.webp"
       }
-    ]
+    ],
+    "1772765": []
   }
 }

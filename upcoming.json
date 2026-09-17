@@ -1,1 +1,479 @@
-[]
+[
+  {
+    "id": "tmdb-1729134",
+    "title": "Holiday Touchdown: A Bears Love Story",
+    "hallmarkTitle": "Holiday Touchdown: A Bears Love Story",
+    "year": 2026,
+    "premiereDate": "2026-10-17",
+    "release_date": "2026-10-17",
+    "announcementDate": "TMDB release date",
+    "tmdbId": 1729134,
+    "imdbId": "tt43662087",
+    "poster": null,
+    "overview": "Third installment of Hallmark's \"Holliday Touchdown\" franchise. plot TBA.",
+    "hallmarkUrl": null,
+    "dateAdded": "2026-09-17T17:59:13.239Z",
+    "cast": [
+      {
+        "id": 96792,
+        "name": "Robert Buckley",
+        "character": "Matt",
+        "order": 0,
+        "birthday": "1981-05-02",
+        "deathday": null,
+        "profile_path": "/images/people/96792.webp",
+        "profile": "/images/people/96792.webp"
+      },
+      {
+        "id": 65640,
+        "name": "Khary Payton",
+        "character": "Ron",
+        "order": 1,
+        "birthday": "1972-05-16",
+        "deathday": null,
+        "profile_path": "/images/people/65640.webp",
+        "profile": "/images/people/65640.webp"
+      },
+      {
+        "id": 19131,
+        "name": "Marsha Mason",
+        "character": "Darlene",
+        "order": 2,
+        "birthday": "1942-04-03",
+        "deathday": null,
+        "profile_path": "/images/people/19131.webp",
+        "profile": "/images/people/19131.webp"
+      },
+      {
+        "id": 116882,
+        "name": "Lyndsy Fonseca",
+        "character": "Avery",
+        "order": 3,
+        "birthday": "1987-01-07",
+        "deathday": null,
+        "profile_path": "/images/people/116882.webp",
+        "profile": "/images/people/116882.webp"
+      },
+      {
+        "id": 6338426,
+        "name": "Jasmine Baker",
+        "character": "Chicago Bears Team Reporter",
+        "order": 4,
+        "birthday": null,
+        "deathday": null,
+        "profile_path": null,
+        "profile": null
+      },
+      {
+        "id": 44033,
+        "name": "Barbara Alyn Woods",
+        "character": "Jody",
+        "order": 5,
+        "birthday": "1962-03-11",
+        "deathday": null,
+        "profile_path": "/images/people/44033.webp",
+        "profile": "/images/people/44033.webp"
+      },
+      {
+        "id": 580567,
+        "name": "Tony Domino",
+        "character": "Fan",
+        "order": 6,
+        "birthday": null,
+        "deathday": null,
+        "profile_path": "/images/people/580567.webp",
+        "profile": "/images/people/580567.webp"
+      }
+    ],
+    "castSummary": "Robert Buckley, Khary Payton, Marsha Mason, Lyndsy Fonseca, Jasmine Baker, Barbara Alyn Woods, Tony Domino",
+    "imdb_id": "tt43662087",
+    "backdrop": null,
+    "tagline": null,
+    "runtime": null,
+    "genres": [
+      {
+        "id": 18,
+        "name": "Drama"
+      },
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      },
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "videos": [
+      {
+        "iso_639_1": "en",
+        "iso_3166_1": "US",
+        "name": "Meet the Cast of Holiday Touchdown: A Bears Love Story | Coming This Countdown to Christmas!",
+        "key": "LyvDaw-xOus",
+        "site": "YouTube",
+        "size": 1080,
+        "type": "Behind the Scenes",
+        "official": true,
+        "id": "6a509407d0c10a8569e4a7ae",
+        "published_at": "2026-07-09T19:18:33.000Z"
+      },
+      {
+        "iso_639_1": "en",
+        "iso_3166_1": "US",
+        "name": "NEW! Holiday Touchdown: A Bears Love Story | Coming to Hallmark Channel This Countdown to Christmas!",
+        "key": "SI1nHaJCLPw",
+        "site": "YouTube",
+        "size": 1080,
+        "type": "Teaser",
+        "official": true,
+        "id": "6a506f43f833d4659a910c46",
+        "published_at": "2026-07-09T01:04:26.000Z"
+      }
+    ]
+  },
+  {
+    "id": "tmdb-1594516",
+    "title": "Holiday Ever After: A Disney World Wish Come True",
+    "hallmarkTitle": "Holiday Ever After: A Disney World Wish Come True",
+    "year": 2026,
+    "premiereDate": "2026-11-28",
+    "release_date": "2026-11-28",
+    "announcementDate": "TMDB release date",
+    "tmdbId": 1594516,
+    "imdbId": "tt39126701",
+    "poster": "https://image.tmdb.org/t/p/w500/z46rnl68nYfacEcaRxbPBR2yhgb.jpg",
+    "overview": "Lindsey and her extended family head to Walt Disney World to spend a magical Christmas together, but the dream of a jolly holiday gets quickly dashed when Lindsey discovers her room is next door to Philip, a disastrous first date she recently had, who’s also there on a family trip. As Lindsey and Philip’s paths cross throughout their stay, the frost starts to thaw as they learn they’re not so different from each other after all. Thanks to some Walt Disney World magic, the holiday wish Lindsey made in Cinderella Fountain just might turn their rivalry into romance.",
+    "hallmarkUrl": null,
+    "dateAdded": "2026-09-17T17:59:13.239Z",
+    "cast": [
+      {
+        "id": 22082,
+        "name": "Lacey Chabert",
+        "character": "Lindsey",
+        "order": 0,
+        "birthday": "1982-09-30",
+        "deathday": null,
+        "profile_path": "/images/people/22082.webp",
+        "profile": "/images/people/22082.webp"
+      },
+      {
+        "id": 74290,
+        "name": "Travis Van Winkle",
+        "character": "Philip",
+        "order": 1,
+        "birthday": "1982-11-04",
+        "deathday": null,
+        "profile_path": "/images/people/74290.webp",
+        "profile": "/images/people/74290.webp"
+      },
+      {
+        "id": 21125,
+        "name": "Richard Kind",
+        "character": "",
+        "order": 2,
+        "birthday": "1956-11-22",
+        "deathday": null,
+        "profile_path": "/images/people/21125.webp",
+        "profile": "/images/people/21125.webp"
+      },
+      {
+        "id": 76241,
+        "name": "Christy Carlson Romano",
+        "character": "Nicole",
+        "order": 3,
+        "birthday": "1984-03-20",
+        "deathday": null,
+        "profile_path": "/images/people/76241.webp",
+        "profile": "/images/people/76241.webp"
+      },
+      {
+        "id": 930977,
+        "name": "Bryce Durfee",
+        "character": "",
+        "order": 4,
+        "birthday": null,
+        "deathday": null,
+        "profile_path": "/images/people/930977.webp",
+        "profile": "/images/people/930977.webp"
+      },
+      {
+        "id": 1819796,
+        "name": "Taegen Burns",
+        "character": "",
+        "order": 5,
+        "birthday": "2007-04-21",
+        "deathday": null,
+        "profile_path": "/images/people/1819796.webp",
+        "profile": "/images/people/1819796.webp"
+      },
+      {
+        "id": 5101444,
+        "name": "Asher Alexander",
+        "character": "",
+        "order": 6,
+        "birthday": "2015-03-21",
+        "deathday": null,
+        "profile_path": "/images/people/5101444.webp",
+        "profile": "/images/people/5101444.webp"
+      },
+      {
+        "id": 69740,
+        "name": "Patrick Renna",
+        "character": "",
+        "order": 7,
+        "birthday": "1979-03-03",
+        "deathday": null,
+        "profile_path": "/images/people/69740.webp",
+        "profile": "/images/people/69740.webp"
+      },
+      {
+        "id": 5890130,
+        "name": "John Taylor",
+        "character": "",
+        "order": 8,
+        "birthday": "2001-04-25",
+        "deathday": null,
+        "profile_path": "/images/people/5890130.webp",
+        "profile": "/images/people/5890130.webp"
+      },
+      {
+        "id": 3704157,
+        "name": "Jillian Barrie",
+        "character": "Secretary",
+        "order": 9,
+        "birthday": null,
+        "deathday": null,
+        "profile_path": "/images/people/3704157.webp",
+        "profile": "/images/people/3704157.webp"
+      },
+      {
+        "id": 6010335,
+        "name": "Levi Sternshein",
+        "character": "",
+        "order": 10,
+        "birthday": null,
+        "deathday": null,
+        "profile_path": null,
+        "profile": null
+      }
+    ],
+    "castSummary": "Lacey Chabert, Travis Van Winkle, Richard Kind, Christy Carlson Romano, Bryce Durfee, Taegen Burns, Asher Alexander, Patrick Renna",
+    "imdb_id": "tt39126701",
+    "backdrop": null,
+    "tagline": null,
+    "runtime": null,
+    "genres": [
+      {
+        "id": 10749,
+        "name": "Romance"
+      },
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 10751,
+        "name": "Family"
+      },
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      }
+    ],
+    "videos": [
+      {
+        "iso_639_1": "en",
+        "iso_3166_1": "US",
+        "name": "Holiday Ever After: A Disney World Wish Come True - Coming to Hallmark Channel in 2026",
+        "key": "atUrrfylupo",
+        "site": "YouTube",
+        "size": 1080,
+        "type": "Teaser",
+        "official": true,
+        "id": "69928ee2ef7efe7a8895916d",
+        "published_at": "2025-12-07T03:34:37.000Z"
+      }
+    ]
+  },
+  {
+    "id": "tmdb-1602653",
+    "title": "A Grand Biltmore Christmas",
+    "hallmarkTitle": "A Grand Biltmore Christmas",
+    "year": 2026,
+    "premiereDate": "2026-12-05",
+    "release_date": "2026-12-05",
+    "announcementDate": "TMDB release date",
+    "tmdbId": 1602653,
+    "imdbId": "tt39380754",
+    "poster": null,
+    "overview": "In 1895, Elizabeth meets Michael, a teen trespasser at Biltmore House who vanishes. When he returns 20 years later, a magic hourglass pulls her to the present. She must return home before being found and before love alters her destiny.",
+    "hallmarkUrl": null,
+    "dateAdded": "2026-09-17T17:59:13.239Z",
+    "cast": [
+      {
+        "id": 208782,
+        "name": "Holland Roden",
+        "character": "",
+        "order": 0,
+        "birthday": "1986-10-07",
+        "deathday": null,
+        "profile_path": "/images/people/208782.webp",
+        "profile": "/images/people/208782.webp"
+      },
+      {
+        "id": 1230713,
+        "name": "Niall Matter",
+        "character": "",
+        "order": 1,
+        "birthday": "1980-10-20",
+        "deathday": null,
+        "profile_path": "/images/people/1230713.webp",
+        "profile": "/images/people/1230713.webp"
+      },
+      {
+        "id": 2388,
+        "name": "Jonathan Frakes",
+        "character": "Winston",
+        "order": 2,
+        "birthday": "1952-08-19",
+        "deathday": null,
+        "profile_path": "/images/people/2388.webp",
+        "profile": "/images/people/2388.webp"
+      },
+      {
+        "id": 1533,
+        "name": "Andie MacDowell",
+        "character": "",
+        "order": 3,
+        "birthday": "1958-04-21",
+        "deathday": null,
+        "profile_path": "/images/people/1533.webp",
+        "profile": "/images/people/1533.webp"
+      },
+      {
+        "id": 96624,
+        "name": "Rachel Boston",
+        "character": "",
+        "order": 4,
+        "birthday": "1982-05-09",
+        "deathday": null,
+        "profile_path": "/images/people/96624.webp",
+        "profile": "/images/people/96624.webp"
+      },
+      {
+        "id": 589182,
+        "name": "Wes Brown",
+        "character": "",
+        "order": 5,
+        "birthday": "1982-01-26",
+        "deathday": null,
+        "profile_path": "/images/people/589182.webp",
+        "profile": "/images/people/589182.webp"
+      },
+      {
+        "id": 30697,
+        "name": "Jim Meskimen",
+        "character": "",
+        "order": 6,
+        "birthday": "1959-09-10",
+        "deathday": null,
+        "profile_path": "/images/people/30697.webp",
+        "profile": "/images/people/30697.webp"
+      },
+      {
+        "id": 90683,
+        "name": "Georgina Reilly",
+        "character": "",
+        "order": 7,
+        "birthday": "1986-02-12",
+        "deathday": null,
+        "profile_path": "/images/people/90683.webp",
+        "profile": "/images/people/90683.webp"
+      },
+      {
+        "id": 111196,
+        "name": "David O'Donnell",
+        "character": "",
+        "order": 8,
+        "birthday": "1974-11-20",
+        "deathday": null,
+        "profile_path": "/images/people/111196.webp",
+        "profile": "/images/people/111196.webp"
+      },
+      {
+        "id": 1310342,
+        "name": "James Trevena",
+        "character": "James Clarke",
+        "order": 9,
+        "birthday": "1986-09-16",
+        "deathday": null,
+        "profile_path": "/images/people/1310342.webp",
+        "profile": "/images/people/1310342.webp"
+      },
+      {
+        "id": 1757689,
+        "name": "Holly A. Morris",
+        "character": "",
+        "order": 10,
+        "birthday": "1965-09-30",
+        "deathday": null,
+        "profile_path": "/images/people/1757689.webp",
+        "profile": "/images/people/1757689.webp"
+      },
+      {
+        "id": 6392750,
+        "name": "Chris Girotto",
+        "character": "",
+        "order": 11,
+        "birthday": null,
+        "deathday": null,
+        "profile_path": null,
+        "profile": null
+      },
+      {
+        "id": 6392751,
+        "name": "Callie Reynolds",
+        "character": "Young Elizabeth",
+        "order": 12,
+        "birthday": null,
+        "deathday": null,
+        "profile_path": null,
+        "profile": null
+      },
+      {
+        "id": 1807675,
+        "name": "Grayson Powell",
+        "character": "",
+        "order": 13,
+        "birthday": null,
+        "deathday": null,
+        "profile_path": "/images/people/1807675.webp",
+        "profile": "/images/people/1807675.webp"
+      }
+    ],
+    "castSummary": "Holland Roden, Niall Matter, Jonathan Frakes, Andie MacDowell, Rachel Boston, Wes Brown, Jim Meskimen, Georgina Reilly",
+    "imdb_id": "tt39380754",
+    "backdrop": null,
+    "tagline": null,
+    "runtime": null,
+    "genres": [
+      {
+        "id": 10749,
+        "name": "Romance"
+      },
+      {
+        "id": 14,
+        "name": "Fantasy"
+      },
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      }
+    ],
+    "videos": []
+  }
+]

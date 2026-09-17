@@ -194,7 +194,10 @@ function writeCastData(castData, rootDir) {
 }
 
 export function enrichCastData(providedMovieCast = null, existingPersonCache = null, rootDir = ROOT_DIR) {
-  const movies = readJson(path.join(rootDir, 'movies.json'), []);
+  const movies = [
+    ...readJson(path.join(rootDir, 'movies.json'), []),
+    ...readJson(path.join(rootDir, 'upcoming.json'), [])
+  ];
   const existing = readJson(path.join(rootDir, 'cast.json'), {});
   const seeds = readJson(path.join(rootDir, 'cast-seed.json'), {});
   const rawMovieCast = { ...seeds, ...existing.movieCast, ...existing.castByMovieId, ...providedMovieCast };

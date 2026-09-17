@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       const refUrl = new URL(document.referrer);
       const year = refUrl.searchParams.get('year');
       if (year) {
-        backLink.href = `./?year=${encodeURIComponent(year)}`;
+        backLink.href = '/';
         backLink.innerHTML = `&larr; Back to ${year} Movies`;
       }
     } catch {
@@ -53,13 +53,15 @@ document.addEventListener('DOMContentLoaded', async () => {
   }
 
   try {
-    // 1. Fetch static datasets (movies.json and cast.json) in parallel
-    const [moviesRes, castRes] = await Promise.all([
+    // Collection and approved upcoming data share this detail page.
+    const [moviesRes, upcomingRes, castRes] = await Promise.all([
       fetch('/movies.json').then(r => r.ok ? r.json() : []),
+      fetch('/upcoming.json').then(r => r.ok ? r.json() : []),
       fetch('/cast.json').then(r => r.ok ? r.json() : null)
     ]);
 
     allMovies = Array.isArray(moviesRes) ? moviesRes : [];
+    const upcomingMovies = Array.isArray(upcomingRes) ? upcomingRes : [];
     castData = castRes || { actors: [], castByMovieId: {}, movieCast: {} };
 
     // Find movie in our collection
@@ -68,15 +70,20 @@ document.addEventListener('DOMContentLoaded', async () => {
       String(m.tmdb_id) === String(movieId) || 
       (m.title && m.title.toLowerCase() === decodeURIComponent(movieId || '').toLowerCase())
     );
+    const matchedUpcoming = upcomingMovies.find(m =>
+      String(m.tmdbId) === String(movieId) || String(m.tmdb_id) === String(movieId)
+    );
 
     // Public pages use the locally generated catalog only. TMDB is private ingestion data.
     let movieData = null;
     if (!movieData && matchedMovie) {
       movieData = {
+        status: 'collection',
         id: matchedMovie.tmdbId || matchedMovie.tmdb_id,
         title: matchedMovie.title,
         originalTitle: matchedMovie.originalTitle || matchedMovie.original_title,
         year: matchedMovie.year,
+        release_date: matchedMovie.release_date,
         overview: matchedMovie.overview,
         poster: matchedMovie.poster,
         vote_average: matchedMovie.vote_average,
@@ -85,6 +92,16 @@ document.addEventListener('DOMContentLoaded', async () => {
         cast: [],
         crew: [],
         genres: [{ name: 'Holiday' }, { name: 'Romance' }]
+      };
+    } else if (!movieData && matchedUpcoming) {
+      movieData = {
+        ...matchedUpcoming,
+        id: matchedUpcoming.tmdbId || matchedUpcoming.tmdb_id,
+        imdb_id: matchedUpcoming.imdbId || matchedUpcoming.imdb_id,
+        status: 'upcoming',
+        cast: Array.isArray(matchedUpcoming.cast) ? matchedUpcoming.cast : [],
+        crew: matchedUpcoming.crew || [],
+        genres: matchedUpcoming.genres || []
       };
     } else if (movieData && matchedMovie) {
       // Ensure originalTitle from collection is preserved
@@ -248,6 +265,9 @@ document.addEventListener('DOMContentLoaded', async () => {
     } else {
       releaseEl.style.display = 'none';
     }
+
+    const statusEl = document.getElementById('detail-status');
+    if (statusEl) statusEl.style.display = m.status === 'upcoming' ? 'inline-flex' : 'none';
 
     // Genres
     const genresEl = document.getElementById('detail-genres');

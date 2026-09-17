@@ -11,12 +11,14 @@ for (const generatedDir of ['movie', 'actor', 'year', 'actors', 'radarr']) {
   fs.rmSync(path.join(PUBLIC, generatedDir), { recursive: true, force: true });
 }
 const movies = JSON.parse(fs.readFileSync(path.join(ROOT, 'movies.json'), 'utf8'));
+const upcomingMovies = JSON.parse(fs.readFileSync(path.join(ROOT, 'upcoming.json'), 'utf8'));
 const castData = JSON.parse(fs.readFileSync(path.join(ROOT, 'cast.json'), 'utf8'));
 generateRadarrFeeds(movies, castData);
 const actors = (castData.actors || []).filter(actor => actor?.id && actor?.name && actor.count > 0);
 const actorById = new Map(actors.map(actor => [String(actor.id), actor]));
 const actorNameCounts = new Map(actors.map(actor => [actor.name.toLowerCase(), actors.filter(item => item.name.toLowerCase() === actor.name.toLowerCase()).length]));
 const movieById = new Map(movies.map(movie => [String(movie.tmdbId || movie.tmdb_id), movie]));
+const moviePages = [...movies, ...upcomingMovies.filter(movie => movie.tmdbId || movie.tmdb_id)];
 
 const escapeHtml = value => String(value ?? '')
   .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
@@ -28,7 +30,7 @@ const actorUrl = actor => getActorUrl(actor);
 const absolute = url => `${BASE_URL}${url}`;
 const castForMovie = movie => {
   const id = String(movie.tmdbId || movie.tmdb_id);
-  return castData.castByMovieId?.[id] || castData.movieCast?.[id] || [];
+  return castData.castByMovieId?.[id] || castData.movieCast?.[id] || movie.cast || [];
 };
 
 function headerHtml() {
@@ -57,7 +59,7 @@ const generatedMovieRoutes = new Set();
 const generatedActorRoutes = new Set();
 const errors = [];
 
-for (const movie of movies) {
+for (const movie of moviePages) {
   const id = movie.tmdbId || movie.tmdb_id;
   if (!id || !movie.title) continue;
   const route = movieUrl(movie);
@@ -67,13 +69,16 @@ for (const movie of movies) {
     const actor = actorById.get(String(person.id)) || person;
     return `<li><a href="${escapeHtml(actorUrl(actor))}">${escapeHtml(person.name || actor.name)}</a>${person.character ? ` as ${escapeHtml(person.character)}` : ''}</li>`;
   }).join('');
-  const description = `Explore ${movie.title}${movie.year ? ` (${movie.year})` : ''}, including the movie synopsis, cast, actors and its place in our Hallmark Christmas movie collection.`;
+  const isUpcoming = upcomingMovies.some(item => String(item.tmdbId || item.tmdb_id) === String(id));
+  const description = isUpcoming
+    ? `Explore ${movie.title}${movie.year ? ` (${movie.year})` : ''}, including its upcoming release date, synopsis and cast. This title is coming soon and is not yet in the XmasDB collection.`
+    : `Explore ${movie.title}${movie.year ? ` (${movie.year})` : ''}, including the movie synopsis, cast, actors and its place in our Hallmark Christmas movie collection.`;
   const sameAs = [`https://www.themoviedb.org/movie/${id}`];
   if (movie.imdbId || movie.imdb_id) sameAs.push(`https://www.imdb.com/title/${movie.imdbId || movie.imdb_id}/`);
   const rating = Number.isFinite(Number(movie.vote_average)) && Number(movie.vote_average) > 0 ? Number(movie.vote_average) : null;
-  const schema = { '@context': 'https://schema.org', '@type': 'Movie', name: movie.title, description: movie.overview || description, image: movie.poster || undefined, url: absolute(route), dateCreated: movie.year ? String(movie.year) : undefined, sameAs, actor: cast.filter(person => person.id && person.name).map(person => ({ '@type': 'Person', name: person.name, url: absolute(actorUrl(actorById.get(String(person.id)) || person)) })), aggregateRating: rating ? { '@type': 'AggregateRating', ratingValue: rating.toFixed(1), bestRating: '10', worstRating: '0', ratingCount: Number(movie.vote_count) > 0 ? Number(movie.vote_count) : undefined } : undefined };
+  const schema = { '@context': 'https://schema.org', '@type': 'Movie', name: movie.title, description: movie.overview || description, image: movie.poster || undefined, url: absolute(route), datePublished: movie.release_date || undefined, dateCreated: !movie.release_date && movie.year ? String(movie.year) : undefined, sameAs, actor: cast.filter(person => person.id && person.name).map(person => ({ '@type': 'Person', name: person.name, url: absolute(actorUrl(actorById.get(String(person.id)) || person)) })), aggregateRating: rating ? { '@type': 'AggregateRating', ratingValue: rating.toFixed(1), bestRating: '10', worstRating: '0', ratingCount: Number(movie.vote_count) > 0 ? Number(movie.vote_count) : undefined } : undefined };
   const ratingBadge = rating ? `<span class="detail-badge detail-badge-rating">★ ${rating.toFixed(1)} / 10 on TMDB</span>` : '';
-  const body = `<main class="movie-page-container"><nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span aria-hidden="true">&gt;</span> <a href="/year/${movie.year}">${movie.year || 'Movies'}</a> <span aria-hidden="true">&gt;</span> <span>${escapeHtml(movie.title)}</span></nav><article class="movie-content static-seo-content"><div class="movie-header-details"><div class="movie-poster-col">${movie.poster ? `<img class="detail-poster" src="${escapeHtml(movie.poster)}" alt="${escapeHtml(movie.title)}${movie.year ? ` (${movie.year})` : ''} movie poster">` : ''}</div><div class="movie-meta-col"><h1 class="detail-title">${escapeHtml(movie.title)}</h1><div class="detail-badges-row">${movie.year ? `<span class="detail-badge detail-badge-year">${movie.year}</span>` : ''}${ratingBadge}</div><div class="detail-synopsis-wrap"><h2>Synopsis</h2><p class="detail-overview">${escapeHtml(movie.overview || 'No synopsis available for this Hallmark movie.')}</p></div></div></div><section class="detail-section"><h2>Cast &amp; Characters</h2><ul class="static-cast-list">${castLinks || '<li>Cast information is not available in the collection data.</li>'}</ul></section></article></main>`;
+  const body = `<main class="movie-page-container"><nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span aria-hidden="true">&gt;</span> <span>${escapeHtml(movie.title)}</span></nav><article class="movie-content static-seo-content"><div class="movie-header-details"><div class="movie-poster-col">${movie.poster ? `<img class="detail-poster" src="${escapeHtml(movie.poster)}" alt="${escapeHtml(movie.title)}${movie.year ? ` (${movie.year})` : ''} movie poster">` : ''}</div><div class="movie-meta-col"><h1 class="detail-title">${escapeHtml(movie.title)}</h1><div class="detail-badges-row">${isUpcoming ? '<span class="detail-badge detail-badge-upcoming">UPCOMING</span>' : ''}${movie.year ? `<span class="detail-badge detail-badge-year">${movie.year}</span>` : ''}${movie.release_date ? `<span class="detail-badge">Premiered: ${escapeHtml(movie.release_date)}</span>` : ''}${ratingBadge}</div><div class="detail-synopsis-wrap"><h2>Synopsis</h2><p class="detail-overview">${escapeHtml(movie.overview || 'No synopsis available for this Hallmark movie.')}</p></div></div></div><section class="detail-section"><h2>Cast &amp; Characters</h2><ul class="static-cast-list">${castLinks || '<li>Cast information is not available in the collection data.</li>'}</ul></section></article></main>`;
   writePage(route, shell({ title: `${movie.title}${movie.year ? ` (${movie.year})` : ''} - Cast, Movie Details & Hallmark Guide`, description, canonical: route, type: 'video.movie', image: movie.poster, schema, body, style: 'movie.css' }));
 }
 
