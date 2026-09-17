@@ -16,6 +16,7 @@
 import { calculateActorAge, normalizeSearchText, getActorProfileImageUrl, PLACEHOLDER_ACTOR_PHOTO } from './actor-utils.js';
 import { getActorUrl, getMovieUrl } from './movie-url.js';
 import { getPublicMovies } from './public-movies.js';
+import { getBirthdayAge, getBirthdayGroups, getPublicActors } from './birthday-utils.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   const moviesGrid = document.getElementById('movies-grid');
@@ -36,8 +37,16 @@ document.addEventListener('DOMContentLoaded', () => {
   const btnClearActor = document.getElementById('btn-clear-actor');
 
   // Birthdays Today Elements
-  const birthdaysTodaySection = document.getElementById('birthdays-today-section');
+  const birthdaysSection = document.getElementById('birthdays-section');
+  const birthdaysToggleBtn = document.getElementById('birthdays-toggle-btn');
+  const birthdaysToggleTitle = document.getElementById('birthdays-toggle-title');
+  const birthdaysToggleCount = document.getElementById('birthdays-toggle-count');
+  const birthdaysToggleArrow = document.getElementById('birthdays-toggle-arrow');
+  const birthdaysPanel = document.getElementById('birthdays-panel');
+  const birthdaysTodayGroup = document.getElementById('birthdays-today-group');
   const birthdaysTodayList = document.getElementById('birthdays-today-list');
+  const birthdaysUpcomingList = document.getElementById('birthdays-upcoming-list');
+  const birthdaysMoreBtn = document.getElementById('birthdays-more-btn');
 
   // Upcoming Section Elements
   const upcomingSection = document.getElementById('upcoming-section');
@@ -47,6 +56,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const upcomingCountText = document.getElementById('upcoming-count-text');
   const upcomingToggleArrow = document.getElementById('upcoming-toggle-arrow');
   let isUpcomingPanelOpen = false;
+  let isBirthdaysPanelOpen = false;
+  let birthdaysShowAll = false;
 
   // Search Elements
   const globalSearchContainer = document.getElementById('global-search-container');
@@ -221,6 +232,7 @@ document.addEventListener('DOMContentLoaded', () => {
     .then(data => {
       upcomingMovies = Array.isArray(data) ? data : [];
       renderUpcomingMovies();
+      renderBirthdaysToday();
       if (currentActorFilter) {
         updateActorBanner();
         applyFiltersAndSort();
@@ -604,123 +616,79 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // =========================================================================
-  // Birthdays Today Section
+  // Birthdays Section
   // =========================================================================
   function renderBirthdaysToday() {
-    if (!birthdaysTodaySection || !birthdaysTodayList || !castData || !castData.actors) return;
-
+    if (!birthdaysSection || !birthdaysTodayList || !birthdaysUpcomingList || !castData) return;
+    const actors = getPublicActors(allMovies, upcomingMovies, castData).filter(actor => actor.birthday);
+    const groups = getBirthdayGroups(actors, new Date());
+    const today = new Date();
     birthdaysTodayList.innerHTML = '';
+    birthdaysUpcomingList.innerHTML = '';
+    birthdaysTodayGroup.style.display = groups.today.length ? 'block' : 'none';
+    birthdaysSection.style.display = groups.today.length || groups.upcoming.length ? 'block' : 'none';
+    if (!groups.today.length && !groups.upcoming.length) return;
 
-    const now = new Date();
-    const currentMonth = String(now.getMonth() + 1).padStart(2, '0');
-    const currentDay = String(now.getDate()).padStart(2, '0');
-
-    // Build a Set of TMDB movie IDs currently present in movies.json
-    const validMovieTmdbIds = new Set(allMovies.map(m => Number(m.tmdbId || m.tmdb_id)).filter(Boolean));
-
-    // Only consider genuine actors referenced by movies currently in movies.json
-    const collectionActors = (castData.actors || []).filter(actor => {
-      if (!actor || !actor.id || !actor.name) return false;
-      const inCollection = actor.count > 0 && Array.isArray(actor.movieTmdbIds) &&
-        actor.movieTmdbIds.some(id => validMovieTmdbIds.has(Number(id)));
-      return inCollection;
-    });
-
-    // Actors with birthday data
-    const actorsWithBirthday = collectionActors.filter(actor => Boolean(actor.birthday));
-
-    // Find actors in collection with birthday today (local month + day)
-    const birthdayActors = actorsWithBirthday.filter(actor => {
-      const parts = String(actor.birthday).split('-');
-      if (parts.length < 3) return false;
-      const bMonth = parts[1];
-      const bDay = parts[2];
-      return bMonth === currentMonth && bDay === currentDay;
-    });
-
-    if (birthdayActors.length === 0) {
-      birthdaysTodaySection.style.display = 'none';
-      return;
+    if (groups.today.length) {
+      birthdaysToggleTitle.textContent = 'BIRTHDAYS TODAY';
+      birthdaysToggleCount.textContent = `${groups.today.length} today · Upcoming birthdays`;
+      groups.today.forEach(actor => birthdaysTodayList.appendChild(renderBirthdayActor(actor, today, true)));
+    } else {
+      const next = groups.upcoming[0].date;
+      const days = Math.round((next - new Date(today.getFullYear(), today.getMonth(), today.getDate())) / 86400000);
+      birthdaysToggleTitle.textContent = 'UPCOMING BIRTHDAYS';
+      birthdaysToggleCount.textContent = `Next birthday in ${days} ${days === 1 ? 'day' : 'days'}`;
     }
-
-    birthdaysTodaySection.style.display = 'block';
-
-    if (birthdayActors.length === 0) {
-      const emptyNotice = document.createElement('div');
-      emptyNotice.className = 'birthday-today-empty';
-      emptyNotice.textContent = 'No collection birthdays today.';
-      birthdaysTodayList.appendChild(emptyNotice);
-      return;
-    }
-
-    birthdayActors.forEach(actor => {
-      const card = document.createElement('div');
-      card.className = 'birthday-actor-card';
-      card.setAttribute('role', 'button');
-      card.setAttribute('tabindex', '0');
-      card.setAttribute('aria-label', `View Hallmark movies starring ${actor.name}`);
-      card.title = `Click to filter movies starring ${actor.name}`;
-
-      const photo = document.createElement('img');
-      photo.className = 'birthday-actor-photo';
-      photo.alt = actor.name;
-      photo.loading = 'lazy';
-      photo.src = getActorProfileImageUrl(actor.profile_path);
-      photo.onerror = function() {
-        this.onerror = null;
-        this.src = PLACEHOLDER_ACTOR_PHOTO;
-      };
-
-      const info = document.createElement('div');
-      info.className = 'birthday-actor-info';
-
-      const nameRow = document.createElement('div');
-      nameRow.className = 'birthday-actor-name-row';
-
-      const nameEl = document.createElement('strong');
-      nameEl.className = 'birthday-actor-name';
-      nameEl.textContent = actor.name;
-
-      const badge = document.createElement('span');
-      badge.className = 'birthday-actor-badge';
-
-      const birthYear = parseInt(actor.birthday.split('-')[0], 10);
-      const isDeceased = Boolean(actor.deathday);
-
-      if (isDeceased) {
-        badge.textContent = 'Born on this day';
-      } else {
-        const age = now.getFullYear() - birthYear;
-        badge.textContent = `Turns ${age} today`;
-      }
-
-      nameRow.appendChild(nameEl);
-      nameRow.appendChild(badge);
-
-      const countEl = document.createElement('span');
-      countEl.className = 'birthday-actor-count';
-      countEl.textContent = ` · ${actor.count} ${actor.count === 1 ? 'movie' : 'movies'} in this collection`;
-
-      info.appendChild(nameRow);
-      info.appendChild(countEl);
-
-      card.appendChild(photo);
-      card.appendChild(info);
-
-      const triggerFilter = () => {
-        showActor(actor.id, true);
-      };
-
-      card.addEventListener('click', triggerFilter);
-      card.addEventListener('keydown', (e) => {
-        if (e.key === 'Enter' || e.key === ' ') {
-          e.preventDefault();
-          triggerFilter();
-        }
-      });
-
-      birthdaysTodayList.appendChild(card);
+    const visibleUpcomingGroups = birthdaysShowAll ? groups.upcoming : groups.upcoming.slice(0, 3);
+    visibleUpcomingGroups.forEach(group => {
+      const dateHeading = document.createElement('h3');
+      dateHeading.className = 'birthday-date-heading';
+      dateHeading.textContent = group.date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+      birthdaysUpcomingList.appendChild(dateHeading);
+      const actorList = document.createElement('div');
+      actorList.className = 'birthday-actor-list';
+      group.actors.forEach(actor => actorList.appendChild(renderBirthdayActor(actor, group.date, false)));
+      birthdaysUpcomingList.appendChild(actorList);
     });
+    if (birthdaysMoreBtn) {
+      birthdaysMoreBtn.hidden = groups.upcoming.length <= 3;
+      birthdaysMoreBtn.textContent = birthdaysShowAll ? 'Show fewer birthdays ↑' : 'Show more birthdays ↓';
+      birthdaysMoreBtn.onclick = () => {
+        birthdaysShowAll = !birthdaysShowAll;
+        renderBirthdaysToday();
+      };
+    }
+    birthdaysToggleBtn.onclick = () => {
+      isBirthdaysPanelOpen = !isBirthdaysPanelOpen;
+      birthdaysToggleBtn.setAttribute('aria-expanded', String(isBirthdaysPanelOpen));
+      birthdaysPanel.setAttribute('aria-hidden', String(!isBirthdaysPanelOpen));
+      birthdaysPanel.style.display = isBirthdaysPanelOpen ? 'block' : 'none';
+      birthdaysToggleArrow.textContent = isBirthdaysPanelOpen ? '▲' : '▼';
+      birthdaysToggleBtn.classList.toggle('is-active', isBirthdaysPanelOpen);
+    };
+  }
+
+  function renderBirthdayActor(actor, date, isToday) {
+    const link = document.createElement('a');
+    link.className = 'birthday-actor';
+    link.href = getActorUrl(actor);
+    const photo = document.createElement('img');
+    photo.src = getActorProfileImageUrl(actor.profile_path || actor.profile);
+    photo.alt = actor.name;
+    photo.loading = 'lazy';
+    photo.onerror = function() { this.onerror = null; this.src = PLACEHOLDER_ACTOR_PHOTO; };
+    const details = document.createElement('span');
+    details.className = 'birthday-actor-details';
+    const name = document.createElement('strong');
+    name.textContent = actor.name;
+    const summary = document.createElement('span');
+    const age = getBirthdayAge(actor.birthday, date.getFullYear());
+    summary.textContent = actor.deathday
+      ? 'Born on this day'
+      : `${isToday ? `Turns ${age} today` : `Turns ${age}`}`;
+    details.append(name, summary);
+    link.append(photo, details);
+    return link;
   }
 
   // =========================================================================

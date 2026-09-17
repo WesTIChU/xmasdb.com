@@ -87,16 +87,6 @@
         <div class="popular-actors-inner">
           <span id="popular-actors-heading" class="popular-actors-label">POPULAR ACTORS</span>
           <div id="popular-actors-list" class="popular-actors-list" aria-label="Filter by popular actor">
-            <!-- Dynamically populated from cast.json -->
-          </div>
-        </div>
-      </section>
-
-      <section id="birthdays-today-section" class="birthdays-today-section" style="display: none;" aria-labelledby="birthdays-today-heading">
-        <div class="birthdays-today-inner">
-          <span id="birthdays-today-heading" class="birthdays-today-label">🎂 BIRTHDAYS TODAY</span>
-          <div id="birthdays-today-list" class="birthdays-today-list" aria-label="Actors celebrating birthdays today">
-            <!-- Dynamically populated from cast.json -->
           </div>
         </div>
       </section>
@@ -162,6 +152,30 @@
       </section>
 
       <main id="main-content">
+        <section id="birthdays-section" class="upcoming-collapsible-section birthdays-collapsible-section" style="display: none;" aria-labelledby="birthdays-toggle-btn">
+          <button type="button" id="birthdays-toggle-btn" class="upcoming-toggle-btn birthdays-toggle-btn" aria-expanded="false" aria-controls="birthdays-panel">
+            <div class="upcoming-toggle-left">
+              <span class="birthdays-cake-icon" aria-hidden="true">🎂</span>
+              <span id="birthdays-toggle-title" class="upcoming-toggle-title">UPCOMING BIRTHDAYS</span>
+              <span class="upcoming-toggle-dot" aria-hidden="true">·</span>
+              <span id="birthdays-toggle-count" class="upcoming-toggle-count">Next birthday in 0 days</span>
+            </div>
+            <span id="birthdays-toggle-arrow" class="upcoming-toggle-arrow" aria-hidden="true">▼</span>
+          </button>
+          <div id="birthdays-panel" class="upcoming-panel birthdays-panel" style="display: none;" aria-hidden="true">
+            <div class="birthdays-panel-inner">
+              <section id="birthdays-today-group" class="birthday-group" style="display: none;" aria-labelledby="birthdays-today-heading">
+                <h2 id="birthdays-today-heading" class="birthday-group-title">🎂 TODAY</h2>
+                <div id="birthdays-today-list" class="birthday-actor-list"></div>
+              </section>
+              <section class="birthday-group" aria-labelledby="birthdays-upcoming-heading">
+                <h2 id="birthdays-upcoming-heading" class="birthday-group-title">UPCOMING</h2>
+                <div id="birthdays-upcoming-list" class="birthday-upcoming-groups"></div>
+                <button type="button" id="birthdays-more-btn" class="birthday-more-control" hidden>Show more birthdays ↓</button>
+              </section>
+            </div>
+          </div>
+        </section>
         <section id="upcoming-section" class="upcoming-collapsible-section" style="display: none;" aria-labelledby="upcoming-toggle-btn">
           <button type="button" id="upcoming-toggle-btn" class="upcoming-toggle-btn" aria-expanded="false" aria-controls="upcoming-panel">
             <div class="upcoming-toggle-left">
