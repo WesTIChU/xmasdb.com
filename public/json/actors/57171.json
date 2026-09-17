@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Christmas Under the Stars",
+    "year": 2019,
+    "tmdbId": 629985,
+    "imdbId": "tt10922658",
+    "tmdb_id": 629985,
+    "imdb_id": "tt10922658",
+    "poster": "/images/posters/629985.webp",
+    "overview": "When Nick is fired from his high-powered investment firm at Christmastime, he takes a job at a Christmas tree lot. There, he meets Julie, an astronomy teacher who’s always looked to the stars for hope. As the Christmas spirit washes over him—and he begins falling for Julie—the once self-centered Nick discovers the joy of helping others.",
+    "vote_average": 6.5,
+    "vote_count": 55
+  },
+  {
+    "title": "Christmas Next Door",
+    "year": 2017,
+    "tmdbId": 490146,
+    "imdbId": "tt7616668",
+    "tmdb_id": 490146,
+    "imdb_id": "tt7616668",
+    "poster": "/images/posters/490146.webp",
+    "overview": "Eric Randall, an author of bachelor lifestyle books, is left in charge of his young niece and nephew for the holidays. Eric turns to his neighbor April, a lover of all things Christmas, for help.",
+    "vote_average": 6.062,
+    "vote_count": 81
+  }
+]

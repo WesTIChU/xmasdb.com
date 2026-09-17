@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Christmas Town",
+    "year": 2019,
+    "tmdbId": 626318,
+    "imdbId": "tt10344986",
+    "tmdb_id": 626318,
+    "imdb_id": "tt10344986",
+    "poster": "/images/posters/626318.webp",
+    "overview": "Lauren Gabriel leaves everything behind in Boston to embark on a new chapter in her life and career. But an unforeseen detour to the charming town of Grandon Falls has her discover unexpected new chapters - of the heart and of family - helping her to embrace, once again, the magic of Christmas.",
+    "vote_average": 7.2,
+    "vote_count": 50
+  },
+  {
+    "title": "A December Bride",
+    "year": 2016,
+    "tmdbId": 427045,
+    "imdbId": "tt5739680",
+    "tmdb_id": 427045,
+    "imdb_id": "tt5739680",
+    "poster": "/images/posters/427045.webp",
+    "overview": "Aspiring interior designer Layla is dreading the Christmastime wedding of her cousin who’s marrying Layla’s ex-fiancé. Although Seth is the one responsible for introducing the bride and groom, she begrudgingly accepts his offer to be her date as she’s out of options. Seth gets carried away at the reception and announces they’re engaged, forcing a mortified Layla to keep up the pretense.",
+    "vote_average": 7.1,
+    "vote_count": 163
+  },
+  {
+    "title": "Christmas Cookies",
+    "year": 2016,
+    "tmdbId": 410317,
+    "imdbId": "tt5675936",
+    "tmdb_id": 410317,
+    "imdb_id": "tt5675936",
+    "poster": "/images/posters/410317.webp",
+    "overview": "Aunt Sally's Christmas Cookie Company is sold to a large conglomerate and executive Hannah must seal the deal and shut down the factory, which is the small town of Cookie Jar's lifeblood. What was supposed to be a simple assignment for Hannah becomes complicated when she meets Jake, the factory owner who's determined to keep the factory in town. Despite not being a fan of the holiday, the Christmas spirit in this small town is infectious and she gets swept up in the joy of the season while also falling in love with Jake.",
+    "vote_average": 5.969,
+    "vote_count": 80
+  }
+]

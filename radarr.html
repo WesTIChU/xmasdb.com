@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <title>Add XmasDB.com to Radarr</title>
+    <meta name="description" content="Follow these steps to add Hallmark Christmas movie feeds to Radarr, including the full collection, individual years, and actor-specific collection lists." />
+    <link rel="canonical" href="https://xmasdb.com/radarr.html" />
+    <meta property="og:title" content="Add XmasDB.com to Radarr" />
+    <meta property="og:description" content="Follow these steps to add Hallmark Christmas movie feeds to Radarr, including the full collection, individual years, and actor-specific collection lists." />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://xmasdb.com/radarr.html" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Add XmasDB.com to Radarr" />
+    <meta name="twitter:description" content="Guide for importing XmasDB.com into Radarr automatically." />
+    <link rel="stylesheet" href="./style.css" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "How to Add XmasDB.com to Radarr",
+      "description": "Step-by-step guide to subscribe to XmasDB.com in Radarr using custom JSON lists.",
+      "url": "https://xmasdb.com/radarr.html"
+    }
+    </script>
+  </head>
+  <body>
+    <header id="site-header" class="site-header homepage-hero">
+      <div class="hero-branch hero-branch-left" aria-hidden="true"></div>
+      <div class="hero-branch hero-branch-right" aria-hidden="true"></div>
+      <div class="hero-lights" aria-hidden="true">
+        <span class="hero-light hero-light-one"></span>
+        <span class="hero-light hero-light-two"></span>
+        <span class="hero-light hero-light-three"></span>
+        <span class="hero-light hero-light-four"></span>
+        <span class="hero-light hero-light-five"></span>
+        <span class="hero-light hero-light-six"></span>
+      </div>
+      <div class="header-inner">
+        <div class="header-top-row">
+          <a href="/" class="header-title-wrap header-brand-link" id="header-brand-link" aria-label="XmasDB.com Home">
+            <span class="title-lockup">
+              <span class="title-ornament" aria-hidden="true"><span></span></span>
+              <span class="title-rule" aria-hidden="true"></span>
+              <h1 id="site-title" class="site-title">XmasDB.com</h1>
+              <span class="title-rule" aria-hidden="true"></span>
+            </span>
+          </a>
+        </div>
+        <p id="site-description" class="site-description">A curated collection of Hallmark Christmas movies.</p>
+        <p id="header-festive-message" class="header-festive-message" aria-live="polite">
+          <span class="festive-main-message"></span>
+          <span id="header-movie-count" class="header-movie-count" aria-live="polite">... Hallmark Christmas movies ready and waiting.</span>
+        </p>
+      </div>
+      <div class="hero-snowbank" aria-hidden="true"></div>
+    </header>
+
+    <!-- Main Content Area -->
+    <div id="app-container" class="container radarr-page-container">
+      <!-- Back Link -->
+      <div class="radarr-nav-bar">
+        <a href="./" class="back-link" id="back-to-movies">&larr; Back to Movies</a>
+      </div>
+
+      <!-- Hero Header -->
+      <section class="radarr-intro-section" aria-labelledby="radarr-heading">
+        <div class="radarr-title-row">
+          <div class="radarr-badge-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+            </svg>
+          </div>
+          <h1 id="radarr-heading" class="radarr-heading">Add XmasDB.com to Radarr</h1>
+        </div>
+        <p class="radarr-intro-text">
+           Follow these steps to add Hallmark Christmas movie feeds to Radarr. Choose the complete collection, an individual year, or use an actor-specific feed from that actor's page.
+        </p>
+      </section>
+
+      <!-- URL Generator Card -->
+      <section class="radarr-card url-generator-card" aria-labelledby="url-generator-title">
+        <h2 id="url-generator-title" class="card-subtitle">Choose Your Feed</h2>
+         <p class="card-helper-text">Select whether you want every movie or a single specific release year. Actor-specific feeds are available from the relevant actor page.</p>
+
+        <!-- Feed Choice Buttons -->
+        <div id="radarr-feed-choices" class="feed-choice-buttons" role="toolbar" aria-label="Select collection or year">
+          <button type="button" class="btn-feed-choice active" data-feed="ALL" id="choice-all">FULL COLLECTION</button>
+          <!-- Yearly buttons inserted dynamically -->
+        </div>
+
+        <!-- Code-Style URL Box -->
+        <div class="url-box-container">
+          <label for="radarr-feed-url" class="url-box-label">Radarr List URL</label>
+          <div class="url-box-wrap">
+            <input type="text" id="radarr-feed-url" class="url-input" readonly value="" aria-label="Generated Radarr list feed URL" />
+            <button type="button" id="copy-url-btn" class="btn-copy" aria-label="Copy list URL to clipboard">
+              <svg class="copy-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+              <span id="copy-btn-text">Copy URL</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="actor-feed-search" aria-labelledby="actor-feed-search-label">
+          <label id="actor-feed-search-label" class="url-box-label" for="actor-feed-search-input">Actor-specific feed</label>
+          <input type="search" id="actor-feed-search-input" class="url-input actor-feed-search-input" placeholder="Search actor name..." autocomplete="off" />
+          <div id="actor-feed-search-results" class="actor-feed-search-results" aria-live="polite"></div>
+          <div id="actor-feed-url-result" class="actor-feed-url-result" hidden>
+            <p id="actor-feed-url-label" class="card-helper-text"></p>
+            <div class="url-box-wrap">
+              <input type="text" id="actor-feed-url" class="url-input" readonly aria-label="Actor-specific Radarr list feed URL" />
+              <button type="button" id="copy-actor-url-btn" class="btn-copy">Copy URL</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Year List Explanation Highlight Box -->
+      <section class="info-callout" aria-labelledby="explanation-heading">
+        <div class="info-callout-header">
+          <svg class="info-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="12" y1="16" x2="12" y2="12"></line>
+            <line x1="12" y1="8" x2="12.01" y2="8"></line>
+          </svg>
+          <h2 id="explanation-heading" class="info-heading">Which list should you choose?</h2>
+        </div>
+        <div class="info-callout-body">
+          <div class="info-rule">
+            <p class="info-question">"Want every Hallmark Christmas movie?"</p>
+            <p class="info-answer">Select <strong>FULL COLLECTION</strong> and use <code>/movies.json</code>.</p>
+          </div>
+          <div class="info-rule">
+            <p class="info-question">"Only want movies from a particular year?"</p>
+            <p class="info-answer">Select that year and use its individual JSON list (e.g. <code>/json/2025.json</code>).</p>
+          </div>
+          <div class="info-rule">
+            <p class="info-question">"Want movies featuring a particular actor?"</p>
+            <p class="info-answer">Use the actor-specific JSON list shown on that actor's page. It contains only matching movies from this collection.</p>
+          </div>
+
+          <div class="info-breakdown">
+            <p><strong>FULL COLLECTION</strong> = every movie in the catalogue</p>
+            <p><strong>ACTOR LISTS</strong> = only collection movies featuring that actor</p>
+            <div id="dynamic-year-breakdown" class="year-breakdown-list">
+              <!-- Dynamically populated year explanations -->
+              <p><strong>2026</strong> = only 2026 movies</p>
+              <p><strong>2025</strong> = only 2025 movies</p>
+              <p><strong>2024</strong> = only 2024 movies</p>
+            </div>
+          </div>
+
+          <div class="info-notice">
+            <span class="notice-badge">Important note</span>
+            <p>
+              If someone subscribes Radarr to a specific year JSON file, future movies added to other years will <strong>not</strong> be included in that Radarr list.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Numbered Radarr Tutorial Steps -->
+      <section class="tutorial-section" aria-labelledby="tutorial-heading">
+        <h2 id="tutorial-heading" class="tutorial-heading">Step-by-Step Radarr Setup Guide</h2>
+        <ol class="steps-list">
+          <!-- Step 1 -->
+          <li class="step-card">
+            <div class="step-badge" aria-hidden="true">1</div>
+            <div class="step-content">
+              <h3 class="step-title">Open Radarr</h3>
+              <p class="step-desc">Launch and open your Radarr web interface in your browser.</p>
+            </div>
+          </li>
+
+          <!-- Step 2 -->
+          <li class="step-card">
+            <div class="step-badge" aria-hidden="true">2</div>
+            <div class="step-content">
+              <h3 class="step-title">Navigate to Import Lists</h3>
+              <p class="step-desc">In the left navigation menu, go to: <strong>Settings</strong> &rarr; <strong>Import Lists</strong>.</p>
+            </div>
+          </li>
+
+          <!-- Step 3 -->
+          <li class="step-card">
+            <div class="step-badge" aria-hidden="true">3</div>
+            <div class="step-content">
+              <h3 class="step-title">Add a New List</h3>
+              <p class="step-desc">Click the large <strong>+</strong> (Plus) button to open the list selector modal.</p>
+            </div>
+          </li>
+
+          <!-- Step 4 -->
+          <li class="step-card">
+            <div class="step-badge" aria-hidden="true">4</div>
+            <div class="step-content">
+              <h3 class="step-title">Select Custom List Type</h3>
+              <p class="step-desc">
+                Select the appropriate custom list type that supports a StevenLu-compatible JSON list (typically labeled <strong>Custom List</strong> or <strong>StevenLu Custom List</strong> in current Radarr releases).
+              </p>
+            </div>
+          </li>
+
+          <!-- Step 5 -->
+          <li class="step-card">
+            <div class="step-badge" aria-hidden="true">5</div>
+            <div class="step-content">
+              <h3 class="step-title">Name Your List</h3>
+              <p class="step-desc">
+                Give the list a clear, recognizable name, for example: <code>XmasDB.com</code> (or <code>XmasDB.com 2025</code> if using a specific year).
+              </p>
+            </div>
+          </li>
+
+          <!-- Step 6 -->
+          <li class="step-card">
+            <div class="step-badge" aria-hidden="true">6</div>
+            <div class="step-content">
+              <h3 class="step-title">Paste the List URL</h3>
+              <p class="step-desc">
+                Paste the copied XmasDB.com JSON URL into the <strong>List URL</strong> field.
+              </p>
+            </div>
+          </li>
+
+          <!-- Step 7 -->
+          <li class="step-card">
+            <div class="step-badge" aria-hidden="true">7</div>
+            <div class="step-content">
+              <h3 class="step-title">Configure Your Preferred Radarr Options</h3>
+              <p class="step-desc">
+                Configure your import settings according to your media server setup. Users should choose their own preferred Radarr settings rather than hard-coding them:
+              </p>
+              <ul class="step-sublist">
+                <li><strong>Quality Profile:</strong> Select your desired release resolution (e.g. Any, 1080p, 720p).</li>
+                <li><strong>Root Folder:</strong> Select your target movies directory or holiday library folder.</li>
+                <li><strong>Monitor:</strong> Choose how Radarr should monitor newly imported movies (e.g. Movie Only, None).</li>
+                <li><strong>Tags:</strong> Optionally add a tag like <code>hallmark</code> or <code>christmas</code> for easy organization.</li>
+              </ul>
+            </div>
+          </li>
+
+          <!-- Step 8 -->
+          <li class="step-card">
+            <div class="step-badge" aria-hidden="true">8</div>
+            <div class="step-content">
+              <h3 class="step-title">Test the Connection</h3>
+              <p class="step-desc">
+                Click the <strong>Test</strong> button. Radarr will fetch the JSON feed and confirm valid communication with a green checkmark.
+              </p>
+            </div>
+          </li>
+
+          <!-- Step 9 -->
+          <li class="step-card">
+            <div class="step-badge" aria-hidden="true">9</div>
+            <div class="step-content">
+              <h3 class="step-title">Save the List</h3>
+              <p class="step-desc">
+                Click <strong>Save</strong> to store the new import list configuration.
+              </p>
+            </div>
+          </li>
+
+          <!-- Step 10 -->
+          <li class="step-card">
+            <div class="step-badge" aria-hidden="true">10</div>
+            <div class="step-content">
+              <h3 class="step-title">Radarr Syncs Automatically</h3>
+              <p class="step-desc">
+                Radarr can then import movies from the selected Hallmark Christmas list according to your configured Import List schedule and settings.
+              </p>
+            </div>
+          </li>
+        </ol>
+      </section>
+    </div>
+
+    <!-- Dark Evergreen Christmas Footer (Identical to Main Site) -->
+    <footer id="site-footer" class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-main">
+          <h2 class="footer-title">XmasDB.com</h2>
+          <p class="footer-subtitle">A curated collection of Hallmark Christmas movies.</p>
+          <nav class="footer-nav" aria-label="Footer navigation">
+            <a id="footer-all-link" href="./" class="footer-link">Movies</a>
+            <span class="footer-sep" aria-hidden="true">&bull;</span>
+            <a id="footer-radarr-link" href="radarr.html" class="footer-link">Radarr / JSON Lists</a>
+            <span class="footer-sep" aria-hidden="true">&bull;</span>
+            <a id="footer-tmdb-link" href="https://www.themoviedb.org/" target="_blank" rel="noopener noreferrer" class="footer-link">TMDB</a>
+          </nav>
+        </div>
+
+        <div class="footer-bottom">
+          <hr class="footer-divider" />
+          <div class="footer-notes">
+            <p id="tmdb-disclaimer" class="footer-note">This product uses the TMDB API but is not endorsed or certified by TMDB.</p>
+            <p class="footer-note">XmasDB.com is an independent fan-curated movie database and is not affiliated with or endorsed by Hallmark.</p>
+            <p class="footer-note">Privacy: We don't collect your data. No tracking. No analytics. No ads.</p>
+            <p class="footer-copyright">&copy; <span id="footer-copyright-year">2026</span> XmasDB.com</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="./snow.js"></script>
+    <script type="module" src="./js/site-layout.js"></script>
+    <script type="module" src="./radarr.js"></script>
+  </body>
+</html>

@@ -1,0 +1,62 @@
+[
+  {
+    "title": "Inventing the Christmas Prince",
+    "year": 2022,
+    "tmdbId": 1028223,
+    "imdbId": "tt20892688",
+    "tmdb_id": 1028223,
+    "imdb_id": "tt20892688",
+    "poster": "/images/posters/1028223.webp",
+    "overview": "Shelby is about to quit her job as a rocket engineer when her daughter becomes convinced that her Scrooge-like boss, Evan, is the Christmas Prince from a story Shelby invented years ago.",
+    "vote_average": 6.8,
+    "vote_count": 13
+  },
+  {
+    "title": "The Christmas Cottage",
+    "year": 2017,
+    "tmdbId": 480626,
+    "imdbId": "tt5997848",
+    "tmdb_id": 480626,
+    "imdb_id": "tt5997848",
+    "poster": "/images/posters/480626.webp",
+    "overview": "When Lacey takes a rare break from work for her friend Ava's Christmas Eve wedding, she reconnects with her former flame, Ean. The two decorate the cottage where the newlyweds will spend their honeymoon – a cottage said to bring true love to anyone who stays there – and feel their chemistry return.",
+    "vote_average": 6.221,
+    "vote_count": 61
+  },
+  {
+    "title": "A Wish for Christmas",
+    "year": 2016,
+    "tmdbId": 410314,
+    "imdbId": "tt5676118",
+    "tmdb_id": 410314,
+    "imdb_id": "tt5676118",
+    "poster": "/images/posters/410314.webp",
+    "overview": "Sara Shaw is the type of woman who prefers to sit on the sidelines at work, but when her big idea for a Christmas initiative is stolen, she makes a wish to Santa that she'll finally have the courage to stand up for herself. Santa grants her wish, but only gives her 48 hours. As the clock ticks, Sara will discover how to channel the Christmas magic and speak her mind all on her own.",
+    "vote_average": 5.907,
+    "vote_count": 264
+  },
+  {
+    "title": "Every Christmas Has a Story",
+    "year": 2016,
+    "tmdbId": 415959,
+    "imdbId": "tt6215212",
+    "tmdb_id": 415959,
+    "imdb_id": "tt6215212",
+    "poster": "/images/posters/415959.webp",
+    "overview": "A TV personality has an on-air snafu and admits she hates Christmas. Following the debacle, she is invited to the Most Christmas-y town in America to try and repair her image. Forced to work with her ex-boyfriend Jack, the show’s producer, the magic of Christmas and this special town will change the way she views Christmas and her life.",
+    "vote_average": 5.2,
+    "vote_count": 81
+  },
+  {
+    "title": "Ice Sculpture Christmas",
+    "year": 2015,
+    "tmdbId": 360604,
+    "imdbId": "tt5031014",
+    "tmdb_id": 360604,
+    "imdb_id": "tt5031014",
+    "poster": "/images/posters/360604.webp",
+    "overview": "After starting her first job at a country club restaurant, Callie’s passions for cooking and ice sculpting are met with romance and Christmas spirit when a childhood friend enters her into the club’s annual Christmas ice sculpting competition without her knowledge.",
+    "vote_average": 6.1,
+    "vote_count": 87
+  }
+]

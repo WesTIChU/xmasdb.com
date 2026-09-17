@@ -1,0 +1,26 @@
+[
+  {
+    "title": "We Met in December",
+    "year": 2025,
+    "tmdbId": 1547918,
+    "imdbId": "tt38354934",
+    "tmdb_id": 1547918,
+    "imdb_id": "tt38354934",
+    "poster": "/images/posters/1547918.webp",
+    "overview": "Two strangers meet on a layover and fall for one another — but forget to exchange numbers. The next day, they fly to Chicago separately, just miss each other, and “embark on separate quests to find one another.\"",
+    "vote_average": 6.864,
+    "vote_count": 22
+  },
+  {
+    "title": "'Twas the Night Before Christmas",
+    "year": 2022,
+    "tmdbId": 1028547,
+    "imdbId": "tt22307338",
+    "tmdb_id": 1028547,
+    "imdb_id": "tt22307338",
+    "poster": "/images/posters/1028547.webp",
+    "overview": "A former actress trying to break into directing tests her skills with a town’s annual Christmas Eve courtroom production in which the true authorship of the famous poem “A Visit from St. Nick” is debated.",
+    "vote_average": 6.208,
+    "vote_count": 36
+  }
+]

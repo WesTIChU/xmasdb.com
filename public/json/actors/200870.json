@@ -1,0 +1,50 @@
+[
+  {
+    "title": "A Cozy Christmas Inn",
+    "year": 2022,
+    "tmdbId": 1012072,
+    "imdbId": "tt19394150",
+    "tmdb_id": 1012072,
+    "imdb_id": "tt19394150",
+    "poster": "/images/posters/1012072.webp",
+    "overview": "Real estate exec, Erika, travels to Alaska during Christmastime to acquire a bed and breakfast, only to discover that it’s owned by her ex. While there, she finds herself falling in love with the town and quite possibly him.",
+    "vote_average": 5.714,
+    "vote_count": 21
+  },
+  {
+    "title": "Enchanted Christmas",
+    "year": 2017,
+    "tmdbId": 474978,
+    "imdbId": "tt7030416",
+    "tmdb_id": 474978,
+    "imdb_id": "tt7030416",
+    "poster": "/images/posters/474978.webp",
+    "overview": "Weeks before Christmas, interior designer Laura is sent to her hometown of Santa Fe, New Mexico to remodel a landmark hotel. As Laura is kept busy with the renovations, her 8-year-old daughter Nicole is introduced to the art of salsa dancing at a local dance studio. Laura is surprised to find that the studio’s owner is Ricardo, her old high school sweetheart and former salsa dance partner. When Laura and Ricardo reconnect, sparks fly on and off the dance floor. The beautiful Christmas traditions of New Mexico become the backdrop for spirited dancing and unexpected romance.",
+    "vote_average": 6.3,
+    "vote_count": 53
+  },
+  {
+    "title": "Sharing Christmas",
+    "year": 2017,
+    "tmdbId": 483558,
+    "imdbId": "tt7697712",
+    "tmdb_id": 483558,
+    "imdb_id": "tt7697712",
+    "poster": "/images/posters/483558.webp",
+    "overview": "A real estate developer is given the opportunity of his career to transform an old shopping complex into a prime location. Unfortunately, there is one tenant who is holding out—the Christmas shop owner he met by happenstance just days ago.",
+    "vote_average": 6.2,
+    "vote_count": 57
+  },
+  {
+    "title": "12 Gifts of Christmas",
+    "year": 2015,
+    "tmdbId": 363483,
+    "imdbId": "tt5133810",
+    "tmdb_id": 363483,
+    "imdb_id": "tt5133810",
+    "poster": "/images/posters/363483.webp",
+    "overview": "When Anna Parisi, an unemployed fine arts painter, is unable to make ends meet, she is hired to become a personal Christmas shopper for Marc, an uptight corporate exec.  As they begin working together, Marc learns that Christmas giving has less to do with the amount of money spent and more to do with the importance of the gift, while Anna discovers she might find success as an artist in a way she never expected.  The best gift of all of course is the love they discover with one another.",
+    "vote_average": 6.039,
+    "vote_count": 246
+  }
+]

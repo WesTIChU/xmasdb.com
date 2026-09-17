@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Scouting for Christmas",
+    "year": 2024,
+    "tmdbId": 1359800,
+    "imdbId": "tt33428925",
+    "tmdb_id": 1359800,
+    "imdb_id": "tt33428925",
+    "poster": "/images/posters/1359800.webp",
+    "overview": "Busy realtor and single mom Angela meets bakery owner William after her daughter tries to set them up by having him cater her scout troop’s holiday event.",
+    "vote_average": 6.9,
+    "vote_count": 13
+  },
+  {
+    "title": "Christmas in Evergreen: Bells Are Ringing",
+    "year": 2020,
+    "tmdbId": 746047,
+    "imdbId": "tt13194940",
+    "tmdb_id": 746047,
+    "imdb_id": "tt13194940",
+    "poster": "/images/posters/746047.webp",
+    "overview": "As Michelle’s wedding approaches, Hannah steps up to help finish the launch of the new Evergreen museum while questioning her relationship and future with Elliot.",
+    "vote_average": 5.7,
+    "vote_count": 32
+  },
+  {
+    "title": "Christmas Cookies",
+    "year": 2016,
+    "tmdbId": 410317,
+    "imdbId": "tt5675936",
+    "tmdb_id": 410317,
+    "imdb_id": "tt5675936",
+    "poster": "/images/posters/410317.webp",
+    "overview": "Aunt Sally's Christmas Cookie Company is sold to a large conglomerate and executive Hannah must seal the deal and shut down the factory, which is the small town of Cookie Jar's lifeblood. What was supposed to be a simple assignment for Hannah becomes complicated when she meets Jake, the factory owner who's determined to keep the factory in town. Despite not being a fan of the holiday, the Christmas spirit in this small town is infectious and she gets swept up in the joy of the season while also falling in love with Jake.",
+    "vote_average": 5.969,
+    "vote_count": 80
+  },
+  {
+    "title": "Looks Like Christmas",
+    "year": 2016,
+    "tmdbId": 421622,
+    "imdbId": "tt6217490",
+    "tmdb_id": 421622,
+    "imdb_id": "tt6217490",
+    "poster": "/images/posters/421622.webp",
+    "overview": "When two type-A single parents battle it out for control of the Christmas holiday at their kid’s middle school, they get more than they bargained for when they learn a little something about the true meaning of Christmas, while opening themselves up for the possibility of a new romance.",
+    "vote_average": 5.3,
+    "vote_count": 35
+  }
+]

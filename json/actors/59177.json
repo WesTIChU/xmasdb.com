@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Where Are You, Christmas?",
+    "year": 2023,
+    "tmdbId": 1132390,
+    "imdbId": "tt27496114",
+    "tmdb_id": 1132390,
+    "imdb_id": "tt27496114",
+    "poster": "/images/posters/1132390.webp",
+    "overview": "After Addy wishes for a year without Christmas, she wakes up in a black and white world and works with the town mechanic to restore Christmas.",
+    "vote_average": 6.286,
+    "vote_count": 28
+  },
+  {
+    "title": "Christmas at Pemberley Manor",
+    "year": 2018,
+    "tmdbId": 549301,
+    "imdbId": "tt8498184",
+    "tmdb_id": 549301,
+    "imdb_id": "tt8498184",
+    "poster": "/images/posters/549301.webp",
+    "overview": "As Christmas approaches, Elizabeth Bennett, a New York event planner is sent to a quaint, small town to organize a holiday festival. When she arrives, she finds William Darcy, a high-profile billionaire lacking in holiday spirit, in the process of selling the charming estate she hoped to use as a venue. Elizabeth persuades the reluctant Darcy to let her hold the festival on the historical estate and, before long, the unlikely pair begins falling for each other.",
+    "vote_average": 6.228,
+    "vote_count": 92
+  },
+  {
+    "title": "Christmas in Homestead",
+    "year": 2016,
+    "tmdbId": 421620,
+    "imdbId": "tt6273004",
+    "tmdb_id": 421620,
+    "imdb_id": "tt6273004",
+    "poster": "/images/posters/421620.webp",
+    "overview": "Jessica is one of the most famous actresses in the world, leading a glamorous – if tabloid worthy – life. But all that is thrown for a loop when she goes on location to shoot a holiday themed film in the Christmas-obsessed town of Homestead, Iowa. While a romance brews between her and Matt, a local inn keeper who is a single dad, she also gets a taste of small-town life and rediscovers the true meaning of Christmas.",
+    "vote_average": 6.1,
+    "vote_count": 92
+  }
+]

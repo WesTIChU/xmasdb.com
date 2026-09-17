@@ -1,0 +1,38 @@
+[
+  {
+    "title": "A Keller Christmas Vacation",
+    "year": 2025,
+    "tmdbId": 1547913,
+    "imdbId": "tt38353730",
+    "tmdb_id": 1547913,
+    "imdb_id": "tt38353730",
+    "poster": "/images/posters/1547913.webp",
+    "overview": "The Keller family, including the parents and their three adult children, decide to take a European river cruise touring the Christmas Markets over the holidays, and each sibling is going through their own life challenge.",
+    "vote_average": 5.909,
+    "vote_count": 11
+  },
+  {
+    "title": "The Nine Kittens of Christmas",
+    "year": 2021,
+    "tmdbId": 876119,
+    "imdbId": "tt15226096",
+    "tmdb_id": 876119,
+    "imdb_id": "tt15226096",
+    "poster": "/images/posters/876119.webp",
+    "overview": "Cat lovers Zachary and Marilee are thrown back together at Christmas when they're tasked with finding homes for a litter of adorable kittens.",
+    "vote_average": 6.9,
+    "vote_count": 40
+  },
+  {
+    "title": "The Nine Lives of Christmas",
+    "year": 2014,
+    "tmdbId": 299576,
+    "imdbId": "tt3889642",
+    "tmdb_id": 299576,
+    "imdb_id": "tt3889642",
+    "poster": "/images/posters/299576.webp",
+    "overview": "With Christmas approaching, a handsome fireman afraid of commitment adopts a stray cat and meets a beautiful veterinary student who challenges his decision to remain a confirmed bachelor.",
+    "vote_average": 6.716,
+    "vote_count": 111
+  }
+]

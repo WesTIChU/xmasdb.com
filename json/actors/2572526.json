@@ -1,0 +1,38 @@
+[
+  {
+    "title": "A Fabled Holiday",
+    "year": 2022,
+    "tmdbId": 1028548,
+    "imdbId": "tt22295836",
+    "tmdb_id": 1028548,
+    "imdb_id": "tt22295836",
+    "poster": "/images/posters/1028548.webp",
+    "overview": "Talia and her childhood best friend Anderson unexpectedly reunite in a curiously familiar looking town full of Christmas spirit that restores its visitors when they need it most.",
+    "vote_average": 6.219,
+    "vote_count": 33
+  },
+  {
+    "title": "Christmas with the Darlings",
+    "year": 2020,
+    "tmdbId": 746032,
+    "imdbId": "tt13381368",
+    "tmdb_id": 746032,
+    "imdb_id": "tt13381368",
+    "poster": "/images/posters/746032.webp",
+    "overview": "Just before the holidays Jessica Lew is ending her tenure as the assistant to her wealthy boss to use her recently earned law degree within his company, but offers to help his charming, younger brother as he looks after his orphaned nieces and nephew over Christmas.",
+    "vote_average": 6.958,
+    "vote_count": 36
+  },
+  {
+    "title": "Love, Lights, Hanukkah!",
+    "year": 2020,
+    "tmdbId": 746062,
+    "imdbId": "tt13342190",
+    "tmdb_id": 746062,
+    "imdb_id": "tt13342190",
+    "poster": "/images/posters/746062.webp",
+    "overview": "As Christina prepares her restaurant for its busiest time of year, she gets back a DNA test revealing that she’s Jewish. The discovery leads her to a new family and an unlikely romance over eight nights.",
+    "vote_average": 6.8,
+    "vote_count": 25
+  }
+]

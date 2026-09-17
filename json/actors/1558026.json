@@ -1,0 +1,50 @@
+[
+  {
+    "title": "She's Making a List",
+    "year": 2025,
+    "tmdbId": 1516208,
+    "imdbId": "tt38354965",
+    "tmdb_id": 1516208,
+    "imdb_id": "tt38354965",
+    "poster": "/images/posters/1516208.webp",
+    "overview": "Naughty or Nice inspector Isabel Haynes doesn’t anticipate anything out of the ordinary when she’s assigned to evaluate 11-year-old Charlie Duncan. However, soon, Isabel falls for Charlie’s widowed father Jason, which makes her question the rigid rules of her job. As Christmas approaches, Isabel must choose between following the holiday algorithm or following her heart.",
+    "vote_average": 6.824,
+    "vote_count": 17
+  },
+  {
+    "title": "Christmas in Evergreen: Bells Are Ringing",
+    "year": 2020,
+    "tmdbId": 746047,
+    "imdbId": "tt13194940",
+    "tmdb_id": 746047,
+    "imdb_id": "tt13194940",
+    "poster": "/images/posters/746047.webp",
+    "overview": "As Michelle’s wedding approaches, Hannah steps up to help finish the launch of the new Evergreen museum while questioning her relationship and future with Elliot.",
+    "vote_average": 5.7,
+    "vote_count": 32
+  },
+  {
+    "title": "Christmas In Evergreen: Tidings of Joy",
+    "year": 2019,
+    "tmdbId": 630921,
+    "imdbId": "tt10925460",
+    "tmdb_id": 630921,
+    "imdb_id": "tt10925460",
+    "poster": "/images/posters/630921.webp",
+    "overview": "A skeptical writer shows up in Evergreen to get the scoop on the town's famed passion for Christmas during a search for a long-lost time capsule.",
+    "vote_average": 6.827,
+    "vote_count": 52
+  },
+  {
+    "title": "Jingle Around the Clock",
+    "year": 2018,
+    "tmdbId": 551701,
+    "imdbId": "tt9168384",
+    "tmdb_id": 551701,
+    "imdb_id": "tt9168384",
+    "poster": "/images/posters/551701.webp",
+    "overview": "Elle decides to reunite her college friends for Christmas, but her plans are thwarted by an opportunity at work to spearhead a Christmas campaign relaunch. She's forced to team up with ad campaign \"fixer\" Max, who has a completely different take on the holidays. As the two work together, they find themselves falling for each other. With the help of a little Christmas magic, will Elle pull off the perfect Christmas reunion and find the love she’s been searching for?",
+    "vote_average": 6.75,
+    "vote_count": 46
+  }
+]

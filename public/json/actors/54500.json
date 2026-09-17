@@ -1,0 +1,50 @@
+[
+  {
+    "title": "A Merry Scottish Christmas",
+    "year": 2023,
+    "tmdbId": 1145635,
+    "imdbId": "tt28237077",
+    "tmdb_id": 1145635,
+    "imdb_id": "tt28237077",
+    "poster": "/images/posters/1145635.webp",
+    "overview": "When estranged siblings Lindsay and Brad travel to Scotland at Christmas to reunite with their mother Jo, a big family secret is revealed.",
+    "vote_average": 6.222,
+    "vote_count": 54
+  },
+  {
+    "title": "A Not So Royal Christmas",
+    "year": 2023,
+    "tmdbId": 1180747,
+    "imdbId": "tt29593677",
+    "tmdb_id": 1180747,
+    "imdb_id": "tt29593677",
+    "poster": "/images/posters/1180747.webp",
+    "overview": "When tabloid journalist Charlotte requests an interview with a famously private Count — not knowing he fled town years ago — the royal family convinces their groundskeeper to pose as him.",
+    "vote_average": 6.04,
+    "vote_count": 25
+  },
+  {
+    "title": "Jolly Good Christmas",
+    "year": 2022,
+    "tmdbId": 974213,
+    "imdbId": "tt18077672",
+    "tmdb_id": 974213,
+    "imdb_id": "tt18077672",
+    "poster": "/images/posters/974213.webp",
+    "overview": "David is an American architect who relocates across the pond to take up a job at a prestigious London firm. As the clock counts down to Christmas Day, David is running out of time to buy his girlfriend – who also happens to be his boss’s daughter – a thoughtful present so he resorts to buying her a somewhat uninspired gift card.",
+    "vote_average": 6.755,
+    "vote_count": 53
+  },
+  {
+    "title": "Christmas Waltz",
+    "year": 2020,
+    "tmdbId": 733032,
+    "imdbId": "tt11585200",
+    "tmdb_id": 733032,
+    "imdb_id": "tt11585200",
+    "poster": "/images/posters/733032.webp",
+    "overview": "After Avery’s storybook Christmas wedding is canceled unexpectedly, dance instructor Roman helps her rebuild her dreams.",
+    "vote_average": 7,
+    "vote_count": 64
+  }
+]

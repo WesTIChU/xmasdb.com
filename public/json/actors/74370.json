@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Round and Round",
+    "year": 2023,
+    "tmdbId": 1180682,
+    "imdbId": "tt29244163",
+    "tmdb_id": 1180682,
+    "imdb_id": "tt29244163",
+    "poster": "/images/posters/1180682.webp",
+    "overview": "While Rachel is stuck in a time loop, reliving the night of her parents' Hanukkah party, she leans on the boy her grandmother is trying to set her up with to make it out.",
+    "vote_average": 6.658,
+    "vote_count": 19
+  },
+  {
+    "title": "Good Morning Christmas!",
+    "year": 2020,
+    "tmdbId": 746043,
+    "imdbId": "tt13109730",
+    "tmdb_id": 746043,
+    "imdb_id": "tt13109730",
+    "poster": "/images/posters/746043.webp",
+    "overview": "Two competing TV hosts are sent to a festive small town over Christmas. While pretending to get along for the sake of appearances, they discover that there’s more to each other than they thought.",
+    "vote_average": 6.302,
+    "vote_count": 48
+  },
+  {
+    "title": "Picture a Perfect Christmas",
+    "year": 2019,
+    "tmdbId": 626323,
+    "imdbId": "tt10553910",
+    "tmdb_id": 626323,
+    "imdb_id": "tt10553910",
+    "poster": "/images/posters/626323.webp",
+    "overview": "An extreme-sports photographer returns home for the holiday to take care of her grandmother, only to have a neighbor grab her attention as he needs assistance watching his young nephew.",
+    "vote_average": 6.17,
+    "vote_count": 47
+  },
+  {
+    "title": "A Gift to Remember",
+    "year": 2017,
+    "tmdbId": 480614,
+    "imdbId": "tt7006938",
+    "tmdb_id": 480614,
+    "imdb_id": "tt7006938",
+    "poster": "/images/posters/480614.webp",
+    "overview": "After colliding with a pedestrian on her bicycle who loses his memory following the accident, Darcy Archer becomes determined to help the handsome guy figure out who he is. In the process, she finds out a lot more about who she is, what she wants from life, and how this too-good-to-be-true guy might just be the man she’s been waiting to bump into all her life.",
+    "vote_average": 6.021,
+    "vote_count": 71
+  }
+]

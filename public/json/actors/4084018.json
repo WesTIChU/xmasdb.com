@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Mystic Christmas",
+    "year": 2023,
+    "tmdbId": 1142715,
+    "imdbId": "tt27813285",
+    "tmdb_id": 1142715,
+    "imdb_id": "tt27813285",
+    "poster": "/images/posters/1142715.webp",
+    "overview": "During the holidays, Juniper reconnects with the owner of the pizza shop in to Mystic, Connecticut, where she's working at the rehabilitation center and aquarium.",
+    "vote_average": 5.578,
+    "vote_count": 32
+  },
+  {
+    "title": "Where Are You, Christmas?",
+    "year": 2023,
+    "tmdbId": 1132390,
+    "imdbId": "tt27496114",
+    "tmdb_id": 1132390,
+    "imdb_id": "tt27496114",
+    "poster": "/images/posters/1132390.webp",
+    "overview": "After Addy wishes for a year without Christmas, she wakes up in a black and white world and works with the town mechanic to restore Christmas.",
+    "vote_average": 6.286,
+    "vote_count": 28
+  }
+]

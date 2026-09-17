@@ -1,0 +1,50 @@
+[
+  {
+    "title": "A Royal Montana Christmas",
+    "year": 2025,
+    "tmdbId": 1535223,
+    "imdbId": "tt36364046",
+    "tmdb_id": 1535223,
+    "imdb_id": "tt36364046",
+    "poster": "/images/posters/1535223.webp",
+    "overview": "A princess looking to decompress before the holidays heads to a Montana ranch and meets a charming guide.",
+    "vote_average": 7.636,
+    "vote_count": 11
+  },
+  {
+    "title": "Eight Gifts of Hanukkah",
+    "year": 2021,
+    "tmdbId": 888488,
+    "imdbId": "tt16282114",
+    "tmdb_id": 888488,
+    "imdb_id": "tt16282114",
+    "poster": "/images/posters/888488.webp",
+    "overview": "An anonymous suitor sends optometrist Sara a gift for each night of Hanukkah. On her journey to find her secret admirer, she learns her one true love might be someone she never expected.",
+    "vote_average": 7.05,
+    "vote_count": 20
+  },
+  {
+    "title": "The Santa Stakeout",
+    "year": 2021,
+    "tmdbId": 874238,
+    "imdbId": "tt15737510",
+    "tmdb_id": 874238,
+    "imdb_id": "tt15737510",
+    "poster": "/images/posters/874238.webp",
+    "overview": "Tanya is a police detective who is reluctantly partnered with fellow detective Ryan to solve a recent string of heists taking place during high-profile holiday parties around town.",
+    "vote_average": 6.1,
+    "vote_count": 22
+  },
+  {
+    "title": "Love, Lights, Hanukkah!",
+    "year": 2020,
+    "tmdbId": 746062,
+    "imdbId": "tt13342190",
+    "tmdb_id": 746062,
+    "imdb_id": "tt13342190",
+    "poster": "/images/posters/746062.webp",
+    "overview": "As Christina prepares her restaurant for its busiest time of year, she gets back a DNA test revealing that she’s Jewish. The discovery leads her to a new family and an unlikely romance over eight nights.",
+    "vote_average": 6.8,
+    "vote_count": 25
+  }
+]

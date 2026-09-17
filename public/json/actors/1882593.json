@@ -1,0 +1,26 @@
+[
+  {
+    "title": "She's Making a List",
+    "year": 2025,
+    "tmdbId": 1516208,
+    "imdbId": "tt38354965",
+    "tmdb_id": 1516208,
+    "imdb_id": "tt38354965",
+    "poster": "/images/posters/1516208.webp",
+    "overview": "Naughty or Nice inspector Isabel Haynes doesn’t anticipate anything out of the ordinary when she’s assigned to evaluate 11-year-old Charlie Duncan. However, soon, Isabel falls for Charlie’s widowed father Jason, which makes her question the rigid rules of her job. As Christmas approaches, Isabel must choose between following the holiday algorithm or following her heart.",
+    "vote_average": 6.824,
+    "vote_count": 17
+  },
+  {
+    "title": "Once Upon A Holiday",
+    "year": 2015,
+    "tmdbId": 363482,
+    "imdbId": "tt5033114",
+    "tmdb_id": 363482,
+    "imdb_id": "tt5033114",
+    "poster": "/images/posters/363482.webp",
+    "overview": "When an actual, honest-to-goodness royal princess runs off from her official obligations and duties for a couple of days to see how the other half lives, she winds up falling for a good Samaritan who is unaware of her real identity during the holiday season. Will her true love still feel the same way once he learns the truth?",
+    "vote_average": 5.976,
+    "vote_count": 124
+  }
+]

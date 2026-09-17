@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Sealed with a List",
+    "year": 2023,
+    "tmdbId": 1180688,
+    "imdbId": "tt29233395",
+    "tmdb_id": 1180688,
+    "imdb_id": "tt29233395",
+    "poster": "/images/posters/1180688.webp",
+    "overview": "Carley is determined to get through her list of abandoned resolutions from last year and enlists the help of coworker Wyatt.",
+    "vote_average": 6.413,
+    "vote_count": 23
+  },
+  {
+    "title": "Never Kiss a Man in a Christmas Sweater",
+    "year": 2020,
+    "tmdbId": 746034,
+    "imdbId": "tt13192538",
+    "tmdb_id": 746034,
+    "imdb_id": "tt13192538",
+    "poster": "/images/posters/746034.webp",
+    "overview": "Single mom Maggie is facing Christmas alone until Lucas crashes into her life and becomes an unexpected house guest. Together they overcome Christmas while finding comfort in their growing bond.",
+    "vote_average": 6.483,
+    "vote_count": 58
+  },
+  {
+    "title": "Homegrown Christmas",
+    "year": 2018,
+    "tmdbId": 550030,
+    "imdbId": "tt9032562",
+    "tmdb_id": 550030,
+    "imdb_id": "tt9032562",
+    "poster": "/images/posters/550030.webp",
+    "overview": "After stepping down as CEO of her dream job, Maddie heads home for the holidays to gain perspective. She finds herself running into her old high school sweetheart Carter, and tensions quickly arise. When forced to put together a Christmas dance for the local high school, Carter and Maddie find themselves putting their differences aside and rediscover what made them fall in love all those years ago.",
+    "vote_average": 4.833,
+    "vote_count": 38
+  },
+  {
+    "title": "It's Christmas, Eve",
+    "year": 2018,
+    "tmdbId": 535807,
+    "imdbId": "tt8300786",
+    "tmdb_id": 535807,
+    "imdb_id": "tt8300786",
+    "poster": "/images/posters/535807.webp",
+    "overview": "Interim school superintendent Eve Morgan finds herself in a tough spot when she is assigned to shut down a school's failing music program and must come to terms with her musical past.",
+    "vote_average": 6.2,
+    "vote_count": 43
+  }
+]

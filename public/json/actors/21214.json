@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Three Wise Men and a Baby",
+    "year": 2022,
+    "tmdbId": 1028541,
+    "imdbId": "tt22247482",
+    "tmdb_id": 1028541,
+    "imdb_id": "tt22247482",
+    "poster": "/images/posters/1028541.webp",
+    "overview": "Three brothers get the surprise of their lives when they are forced to work together to care for a baby over the holidays. As they slowly get the hang of things, they find themselves on unexpected journeys of self-discovery and begin to rebuild their relationships as brothers, as well as the damaged romantic and professional relationships in their respective lives…all while rediscovering their love of Christmas.",
+    "vote_average": 7.5,
+    "vote_count": 64
+  },
+  {
+    "title": "The Christmas Train",
+    "year": 2017,
+    "tmdbId": 474982,
+    "imdbId": "tt7370936",
+    "tmdb_id": 474982,
+    "imdb_id": "tt7370936",
+    "poster": "/images/posters/474982.webp",
+    "overview": "Forced to take the intercontinental trip to Los Angeles by train, and determined to chronicle his adventure, disillusioned journalist Tom Langdon finds himself westbound with a variety of characters. While all passengers on the Christmas train appear to be headed for the same destination, Tom has no idea that the rugged locomotives taking him across America will instead detour straight into his heart.",
+    "vote_average": 6.4,
+    "vote_count": 131
+  }
+]

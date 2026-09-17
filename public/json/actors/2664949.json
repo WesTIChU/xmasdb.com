@@ -1,0 +1,26 @@
+[
+  {
+    "title": "The Most Colorful Time of the Year",
+    "year": 2022,
+    "tmdbId": 1028561,
+    "imdbId": "tt22207622",
+    "tmdb_id": 1028561,
+    "imdb_id": "tt22207622",
+    "poster": "/images/posters/1028561.webp",
+    "overview": "Ryan is an elementary school teacher, who learns that he is colorblind. Michelle, an optometrist, and mother of one of his students, helps bring color into his life in time for the holidays.",
+    "vote_average": 5.7,
+    "vote_count": 26
+  },
+  {
+    "title": "Christmas CEO",
+    "year": 2021,
+    "tmdbId": 874193,
+    "imdbId": "tt15691922",
+    "tmdb_id": 874193,
+    "imdb_id": "tt15691922",
+    "poster": "/images/posters/874193.webp",
+    "overview": "A small toy company CEO gets a once in a lifetime offer to merge with a mega toy company but will need her estranged ex-business partner's signature to seal the deal. What he helps her rediscover will change both of their lives.",
+    "vote_average": 5.6,
+    "vote_count": 30
+  }
+]

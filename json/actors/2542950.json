@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Santa Tell Me",
+    "year": 2024,
+    "tmdbId": 1325888,
+    "imdbId": "tt33829315",
+    "tmdb_id": 1325888,
+    "imdb_id": "tt33829315",
+    "poster": "/images/posters/1325888.webp",
+    "overview": "When Olivia, a successful interior designer, finds an old letter from Santa promising she’ll meet the love of her life by Christmas Eve — and that his name will be Nick — she’s stunned to meet not one, but three guys named Nick.” In addition to navigating three holiday romances, she finds herself drawn to a co-worker.",
+    "vote_average": 7.155,
+    "vote_count": 30
+  },
+  {
+    "title": "Magic in Mistletoe",
+    "year": 2023,
+    "tmdbId": 1180743,
+    "imdbId": "tt29233549",
+    "tmdb_id": 1180743,
+    "imdb_id": "tt29233549",
+    "poster": "/images/posters/1180743.webp",
+    "overview": "Successful yet recluse author Harrington returns to his hometown for an annual Christmas festival, where he must face his publicist there for damage control.",
+    "vote_average": 6,
+    "vote_count": 25
+  },
+  {
+    "title": "Christmas at the Golden Dragon",
+    "year": 2022,
+    "tmdbId": 1028186,
+    "imdbId": "tt13937754",
+    "tmdb_id": 1028186,
+    "imdb_id": "tt13937754",
+    "poster": "/images/posters/1028186.webp",
+    "overview": "When Romy and Rick’s parents surprise them with the news that they will be closing the Chinese restaurant they have owned and operated for decades, the siblings each find themselves reevaluating their futures. Also impacted by the news are the landmark restaurant’s loyal patrons and staff, who have all come to depend on the restaurant over the holidays.",
+    "vote_average": 6.304,
+    "vote_count": 23
+  }
+]

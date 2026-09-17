@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Our Holiday Story",
+    "year": 2024,
+    "tmdbId": 1360780,
+    "imdbId": "tt33437460",
+    "tmdb_id": 1360780,
+    "imdb_id": "tt33437460",
+    "poster": "/images/posters/1360780.webp",
+    "overview": "Dave and Nell recount the Christmas where they unknowingly fell in love while working as rivals on a town festival, as their daughter’s boyfriend struggles to navigate his own relationship.",
+    "vote_average": 6,
+    "vote_count": 30
+  },
+  {
+    "title": "Reunited at Christmas",
+    "year": 2018,
+    "tmdbId": 550084,
+    "imdbId": "tt9033646",
+    "tmdb_id": 550084,
+    "imdb_id": "tt9033646",
+    "poster": "/images/posters/550084.webp",
+    "overview": "Frazzled and struggling with writer’s block, novelist Samantha, along with her boyfriend, heads home to her late grandmother’s home to spend Christmas. While at home with family, her grandmother’s wise words reveal the true meaning of Christmas with Samantha at a time when she most needs encouragement.",
+    "vote_average": 5.346,
+    "vote_count": 39
+  },
+  {
+    "title": "A Dream of Christmas",
+    "year": 2016,
+    "tmdbId": 421761,
+    "imdbId": "tt6279602",
+    "tmdb_id": 421761,
+    "imdb_id": "tt6279602",
+    "poster": "/images/posters/421761.webp",
+    "overview": "When a restless young married woman is granted a wish by a Christmas Angel to be single again, she soon discovers her new life isn't what she bargained for, and embarks on a quest to win her husband back.",
+    "vote_average": 6.297,
+    "vote_count": 91
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "title": "A Carol for Two",
+    "year": 2024,
+    "tmdbId": 1360779,
+    "imdbId": "tt31438256",
+    "tmdb_id": 1360779,
+    "imdb_id": "tt31438256",
+    "poster": "/images/posters/1360779.webp",
+    "overview": "Violette dreams of Broadway, but lands a singing waitress gig at Fiore's. Her Christmas Eve duet with Alex, who resents her connections, could be her big break. As they rehearse, Alex's cousin Brad, with Alex's secret help, woos Violette. Alex develops feelings too, creating a messy love triangle that jeopardizes their shot at stardom.",
+    "vote_average": 6.2,
+    "vote_count": 9
+  },
+  {
+    "title": "The Christmas Club",
+    "year": 2019,
+    "tmdbId": 628332,
+    "imdbId": "tt10667026",
+    "tmdb_id": 628332,
+    "imdb_id": "tt10667026",
+    "poster": "/images/posters/628332.webp",
+    "overview": "Two busy strangers meet when they help an elderly woman find her lost Christmas savings. Thanks to fate and Christmas magic, they also find something they were both missing: true love.",
+    "vote_average": 6.3,
+    "vote_count": 35
+  }
+]

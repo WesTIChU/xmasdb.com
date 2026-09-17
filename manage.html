@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <title>Hallmark Movies Manager (Local Utility)</title>
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="stylesheet" href="./manage.css" />
+  </head>
+  <body>
+    <div class="manager-container">
+      <!-- Header -->
+      <header class="manager-header">
+        <div class="header-top">
+          <div class="brand">
+            <span class="tree-icon">🎄</span>
+            <div>
+              <h1>Hallmark Movies Catalog Manager</h1>
+              <p class="subtitle">Private Local Utility &bull; Automatically updates <code>movies.json</code> and all <code>/json/*.json</code> feeds</p>
+            </div>
+          </div>
+          <div class="header-actions">
+            <span id="collection-count-badge" class="badge">Loading collection...</span>
+            <a href="index.html" class="btn btn-secondary">View Public Site &rarr;</a>
+          </div>
+        </div>
+      </header>
+
+      <main class="manager-main">
+        <!-- TMDB API Token Card -->
+        <section class="card token-card">
+          <div class="card-header">
+            <h2>1. TMDB API Configuration</h2>
+            <span class="security-note">🔒 Private &bull; Stored only in your local browser</span>
+          </div>
+          <p class="card-desc">Enter your TMDB API Read Access Token (v4 Bearer token) or API Key (v3). Get one free at <a href="https://www.themoviedb.org/settings/api" target="_blank" rel="noopener noreferrer">themoviedb.org/settings/api</a>.</p>
+          <div class="token-input-row">
+            <input type="password" id="tmdb-token-input" placeholder="Paste your TMDB Bearer Token or API Key..." autocomplete="off" />
+            <button id="save-token-btn" class="btn btn-primary" type="button">Save Token</button>
+            <span id="token-status" class="token-status"></span>
+          </div>
+        </section>
+
+        <!-- Import from Hallmark Section -->
+        <section class="card hallmark-import-card">
+          <div class="card-header">
+            <div>
+              <h2>2. Import from Hallmark</h2>
+              <span class="hallmark-authority-badge">🎄 Hallmark Official Source</span>
+            </div>
+          </div>
+          <p class="card-desc">
+            Hallmark's official <em>Countdown to Christmas</em> preview page determines candidate titles. TMDB is only used to pull metadata.
+              Review candidates below manually, or use the strict bulk importer to scan 2008 through 2025 and add only unique exact title and year matches. Ambiguous matches, series, and unavailable years are skipped.
+          </p>
+
+          <div class="hallmark-fetch-bar">
+            <div class="hallmark-year-group">
+              <label for="hallmark-year-select"><strong>Year:</strong></label>
+              <select id="hallmark-year-select" class="year-select">
+                <option value="2026">2026</option>
+                <option value="2025" selected>2025</option>
+                <option value="2024">2024</option>
+                <option value="2023">2023</option>
+                <option value="2022">2022</option>
+                <option value="2021">2021</option>
+              </select>
+            </div>
+            <button type="button" id="btn-fetch-hallmark" class="btn btn-primary btn-hallmark-fetch">
+              FETCH HALLMARK MOVIES
+            </button>
+            <button type="button" id="btn-import-all-hallmark" class="btn btn-primary btn-hallmark-fetch" style="background:#166534;border-color:#166534;">
+              IMPORT ALL VERIFIED YEARS
+            </button>
+            <span class="hallmark-source-url" id="hallmark-source-preview">Source: https://www.hallmarkchannel.com/christmas/countdown-to-christmas-2025-preview/</span>
+          </div>
+
+          <div id="hallmark-fetch-feedback" class="feedback"></div>
+
+          <!-- Hallmark Candidates Container -->
+          <div id="hallmark-candidates-panel" class="hallmark-candidates-panel" style="display: none;">
+            <div class="candidates-header-row">
+              <div class="candidates-title-wrap">
+                <h3 id="candidates-header-title">Hallmark Candidates</h3>
+                <span id="candidates-count-pill" class="count-pill">0 Candidates</span>
+              </div>
+              <div class="candidates-controls">
+                <label class="filter-chk-label">
+                  <input type="checkbox" id="hide-in-collection-chk" /> Hide already in collection
+                </label>
+                <label class="filter-chk-label">
+                  <input type="checkbox" id="hide-ignored-chk" checked /> Hide ignored (<span id="ignored-count-label">0</span>)
+                </label>
+              </div>
+            </div>
+
+            <div id="candidates-grid" class="candidates-grid"></div>
+          </div>
+        </section>
+
+        <!-- 3. Upcoming Hallmark Movies & News -->
+        <section class="card upcoming-manage-card">
+          <div class="card-header">
+            <div>
+              <h2>3. Upcoming Hallmark Movies &amp; Movie News</h2>
+              <span class="hallmark-authority-badge" style="background:#0284c7;color:#fff;">📰 Official Hallmark News</span>
+            </div>
+            <span id="upcoming-count-badge" class="badge" style="background:#e0f2fe;color:#0369a1;border-color:#bae6fd;">0 Upcoming Movies</span>
+          </div>
+          <p class="card-desc">
+            Check Hallmark's official movie news announcements for upcoming <em>Countdown to Christmas</em> titles.
+            Review candidates, match metadata via TMDB, and add approved titles to <code>upcoming.json</code>.
+            Once a movie has aired and is available, you can easily promote it directly into your released collection!
+          </p>
+
+          <div class="hallmark-fetch-bar">
+            <button type="button" id="btn-fetch-news" class="btn btn-primary" style="background:#0284c7;border-color:#0284c7;">
+              CHECK FOR UPCOMING MOVIES
+            </button>
+            <span class="hallmark-source-url">Source: https://www.hallmarkchannel.com/christmas/countdown-to-christmas-movie-news</span>
+          </div>
+
+          <div id="news-fetch-feedback" class="feedback"></div>
+
+          <!-- Hallmark News Candidates Panel -->
+          <div id="news-candidates-panel" class="hallmark-candidates-panel" style="display: none; margin-top: 20px;">
+            <div class="candidates-header-row">
+              <div class="candidates-title-wrap">
+                <h3>Hallmark News Announcements</h3>
+                <span id="news-candidates-count-pill" class="count-pill">0 Candidates</span>
+              </div>
+              <div class="candidates-controls">
+                <label class="filter-chk-label">
+                  <input type="checkbox" id="news-hide-known-chk" /> Hide already known
+                </label>
+                <label class="filter-chk-label">
+                  <input type="checkbox" id="news-hide-ignored-chk" checked /> Hide ignored (<span id="news-ignored-count-label">0</span>)
+                </label>
+              </div>
+            </div>
+
+            <div id="news-candidates-grid" class="candidates-grid"></div>
+          </div>
+
+          <!-- Approved Upcoming Movies Panel -->
+          <div id="approved-upcoming-panel" class="approved-upcoming-panel" style="margin-top: 28px;">
+            <div class="approved-upcoming-header">
+              <div>
+                <h3 style="font-size: 1.05rem; font-weight: 600; color: var(--text-main);">Approved Upcoming Movies (upcoming.json)</h3>
+                <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 2px;">These movies are displayed in the "Upcoming XmasDB.com" section on the public site.</p>
+              </div>
+              <button type="button" id="btn-refresh-upcoming" class="btn btn-secondary" style="font-size: 0.8rem; padding: 4px 10px;">Refresh</button>
+            </div>
+            <div id="approved-upcoming-loading" class="loading-state" style="display: none;">Loading upcoming movies...</div>
+            <div id="approved-upcoming-list" class="collection-list" style="margin-top: 12px;"></div>
+          </div>
+        </section>
+
+        <!-- Search & Add Section -->
+        <section class="card search-card">
+          <div class="card-header">
+            <h2>4. Manual Search &amp; Add Movie (TMDB)</h2>
+          </div>
+          <p class="card-desc">Search TMDB by movie title (e.g. <em>"A Biltmore Christmas"</em>) or enter a direct TMDB Movie ID (e.g. <em>1064137</em>).</p>
+
+          <form id="search-form" class="search-form">
+            <input type="text" id="search-query-input" placeholder="Movie title or numeric TMDB ID..." required />
+            <button type="submit" id="search-btn" class="btn btn-primary">Search TMDB</button>
+          </form>
+
+          <div id="search-feedback" class="feedback"></div>
+
+          <!-- Temporary TMDB Debug Section -->
+          <div id="search-debug-panel" class="debug-panel" style="display: none;">
+            <div class="debug-header">
+              <div class="debug-title-wrap">
+                <span class="debug-badge">DEBUG INFO</span>
+                <span class="debug-subtext">Temporary diagnostic panel for TMDB API search</span>
+              </div>
+              <span id="debug-time" class="debug-time"></span>
+            </div>
+            <div class="debug-grid">
+              <div class="debug-item">
+                <span class="debug-label">HTTP Status:</span>
+                <span id="debug-status" class="debug-val">-</span>
+              </div>
+              <div class="debug-item">
+                <span class="debug-label">TMDB total_results:</span>
+                <span id="debug-total-results" class="debug-val">-</span>
+              </div>
+              <div class="debug-item">
+                <span class="debug-label">Results Received:</span>
+                <span id="debug-results-count" class="debug-val">-</span>
+              </div>
+              <div class="debug-item debug-item-full">
+                <span class="debug-label">TMDB Request Endpoint:</span>
+                <code id="debug-endpoint" class="debug-endpoint">-</code>
+              </div>
+            </div>
+            <details id="debug-raw-details" class="debug-raw-details">
+              <summary>View Raw TMDB JSON Response</summary>
+              <pre id="debug-raw-json" class="debug-raw-json">-</pre>
+            </details>
+            <div class="debug-console-note">
+              <span>💡 Full raw TMDB JSON response has also been logged to the browser console (<kbd>F12</kbd> &rarr; Console).</span>
+            </div>
+          </div>
+
+          <!-- Search Results Container -->
+          <div id="search-results" class="search-results" style="display: none;">
+            <div class="results-header">
+              <h3>Search Results</h3>
+              <span id="results-count"></span>
+            </div>
+            <div id="results-grid" class="results-grid"></div>
+          </div>
+        </section>
+
+        <!-- Current Collection Section -->
+        <section class="card collection-card">
+          <div class="card-header collection-header">
+            <div>
+              <h2>5. Current Hallmark Collection</h2>
+              <p class="card-desc">All movies currently saved in <code>movies.json</code>. Adding or removing items instantly updates all static year feeds.</p>
+            </div>
+            <div class="collection-filter-wrap">
+              <input type="search" id="collection-search-input" placeholder="Filter current movies..." />
+            </div>
+          </div>
+
+          <div id="collection-loading" class="loading-state">Loading movies...</div>
+          <div id="collection-list" class="collection-list"></div>
+        </section>
+
+        <!-- 6. Cast & Actor Metadata (TMDB Person API) Section -->
+        <section class="card cast-manage-card" id="cast-enrichment-card">
+          <div class="card-header">
+            <div>
+              <h2>6. Cast &amp; Actor Metadata (TMDB Person API)</h2>
+              <span class="hallmark-authority-badge" style="background:#4f46e5;color:#fff;">TMDB Person Enrichment</span>
+            </div>
+            <span id="cast-actors-count-badge" class="badge" style="background:#eef2ff;color:#4338ca;border-color:#c7d2fe;">Loading actors...</span>
+          </div>
+          <p class="card-desc">
+            Enrich every actor in <code>cast.json</code> from TMDB's Person API (<code>/3/person/{person_id}</code>). Updates real birthdays, deathdays, and profile photos (with fallback to <code>/person/{id}/images</code>) while preserving each movie's specific character. Uses an intelligent person cache to avoid redundant API requests.
+          </p>
+
+          <div class="cast-refresh-bar" style="display: flex; align-items: center; gap: 14px; flex-wrap: wrap; margin-top: 8px;">
+            <button type="button" id="btn-refresh-cast" class="btn btn-primary" style="background:#4f46e5;border-color:#4f46e5;font-weight:600;display:inline-flex;align-items:center;gap:8px;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/></svg>
+              <span>REFRESH ACTOR DATA FROM TMDB</span>
+            </button>
+            <span id="cast-refresh-status" class="cast-refresh-status" style="font-size: 0.9rem; color: var(--text-muted);"></span>
+          </div>
+
+          <div id="cast-refresh-feedback" class="feedback" style="display: none; margin-top: 14px;"></div>
+
+          <!-- Progress container -->
+          <div id="cast-progress-container" class="cast-progress-container" style="display: none; margin-top: 18px; padding: 14px 16px; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+              <div id="cast-progress-text" style="font-size: 0.9rem; color: #1e293b; font-weight: 600;">
+                Refreshing actors...
+              </div>
+              <div id="cast-progress-percent" style="font-size: 0.88rem; color: #4f46e5; font-weight: 700;">
+                0%
+              </div>
+            </div>
+            <div class="cast-progress-bar-wrap" style="background: #e2e8f0; border-radius: 9999px; height: 10px; overflow: hidden;">
+              <div id="cast-progress-bar" style="background: linear-gradient(90deg, #4f46e5, #6366f1); height: 100%; width: 0%; border-radius: 9999px; transition: width 0.2s ease;"></div>
+            </div>
+          </div>
+
+          <!-- Summary Panel -->
+          <div id="cast-summary-panel" class="cast-summary-panel" style="display: none; margin-top: 16px; padding: 16px; background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 8px;">
+            <h4 style="margin: 0 0 6px 0; font-size: 1rem; color: #166534; font-weight: 700;">Actor refresh complete</h4>
+            <div id="cast-summary-stats" style="font-size: 0.9rem; color: #15803d; line-height: 1.6;"></div>
+          </div>
+        </section>
+      </main>
+
+      <!-- Status Toast -->
+      <div id="toast" class="toast" role="alert" aria-live="assertive"></div>
+    </div>
+
+    <script type="module" src="./manage.js"></script>
+  </body>
+</html>

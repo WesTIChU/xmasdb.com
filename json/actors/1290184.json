@@ -1,0 +1,26 @@
+[
+  {
+    "title": "The Christmas Cottage",
+    "year": 2017,
+    "tmdbId": 480626,
+    "imdbId": "tt5997848",
+    "tmdb_id": 480626,
+    "imdb_id": "tt5997848",
+    "poster": "/images/posters/480626.webp",
+    "overview": "When Lacey takes a rare break from work for her friend Ava's Christmas Eve wedding, she reconnects with her former flame, Ean. The two decorate the cottage where the newlyweds will spend their honeymoon – a cottage said to bring true love to anyone who stays there – and feel their chemistry return.",
+    "vote_average": 6.221,
+    "vote_count": 61
+  },
+  {
+    "title": "Christmas Incorporated",
+    "year": 2015,
+    "tmdbId": 363480,
+    "imdbId": "tt5204384",
+    "tmdb_id": 363480,
+    "imdb_id": "tt5204384",
+    "poster": "/images/posters/363480.webp",
+    "overview": "Sometimes, life just seems to hand you exactly what you need – particularly at Christmastime. Riley is scraping bottom when she miraculously lands a job with a wealthy New York City entrepreneur. He’s a bad-boy socialite type who is poised to play Scrooge by closing one of his factories just before Christmas, which would devastate an entire town. It’s left to Riley to talk him out of it and turn him into a man of virtue rather than shame.",
+    "vote_average": 6.3,
+    "vote_count": 85
+  }
+]

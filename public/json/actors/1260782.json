@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Believe in Christmas",
+    "year": 2024,
+    "tmdbId": 1361215,
+    "imdbId": "tt31987262",
+    "tmdb_id": 1361215,
+    "imdb_id": "tt31987262",
+    "poster": "/images/posters/1361215.webp",
+    "overview": "Two best friends travel to Christmasland, a place filled with hope and miracles.",
+    "vote_average": 5.848,
+    "vote_count": 23
+  },
+  {
+    "title": "A Majestic Christmas",
+    "year": 2018,
+    "tmdbId": 550028,
+    "imdbId": "tt9033636",
+    "tmdb_id": 550028,
+    "imdb_id": "tt9033636",
+    "poster": "/images/posters/550028.webp",
+    "overview": "Christmas in the charming town of Briar Falls will be bittersweet this year when architect Nell goes back to her hometown having been given the job of turning the historic Majestic Playhouse into a modern multiplex, much to the town’s objections. The Playhouse has been home to their annual Christmas tableaux, which will now have to end after a long and historic tradition to the town. This job is Nell’s first promotion, and one she wishes she hadn’t been chosen for, especially when she meets the new owner of the theater, Connor, whose vision and ideas clash with Nell’s. Since Connor hasn’t had much experience celebrating Christmas, Nell hopes that if she can give him a crash course in Christmas during the town’s Twelve Day Festival, that he might just change his mind about modernizing the Majestic.",
+    "vote_average": 5,
+    "vote_count": 17
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "title": "The Christmas Baby",
+    "year": 2025,
+    "tmdbId": 1547929,
+    "imdbId": "tt36963465",
+    "tmdb_id": 1547929,
+    "imdb_id": "tt36963465",
+    "poster": "/images/posters/1547929.webp",
+    "overview": "When a baby boy shows up on their doorstep days before Christmas with a note written specially for them, Erin and Kelly must learn how to navigate their new relationship and career dynamics while unexpectedly caring for a newborn.",
+    "vote_average": 6.7,
+    "vote_count": 8
+  },
+  {
+    "title": "Nantucket Noel",
+    "year": 2021,
+    "tmdbId": 874122,
+    "imdbId": "tt15691228",
+    "tmdb_id": 874122,
+    "imdb_id": "tt15691228",
+    "poster": "/images/posters/874122.webp",
+    "overview": "During the Seaside Noel celebrations, Christin learns of a developer who is planning to tear down the wharf that is home to her toy store. Tensions rise as she falls for the developer's son, Andy.",
+    "vote_average": 6.3,
+    "vote_count": 27
+  }
+]

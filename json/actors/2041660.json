@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Christmas Sail",
+    "year": 2021,
+    "tmdbId": 874228,
+    "imdbId": "tt15758364",
+    "tmdb_id": 874228,
+    "imdb_id": "tt15758364",
+    "poster": "/images/posters/874228.webp",
+    "overview": "When Liz returns home to take care of her estranged father, she is determined to give her daughter a perfect Christmas and reconnects with her best friend.",
+    "vote_average": 5.7,
+    "vote_count": 21
+  },
+  {
+    "title": "Eight Gifts of Hanukkah",
+    "year": 2021,
+    "tmdbId": 888488,
+    "imdbId": "tt16282114",
+    "tmdb_id": 888488,
+    "imdb_id": "tt16282114",
+    "poster": "/images/posters/888488.webp",
+    "overview": "An anonymous suitor sends optometrist Sara a gift for each night of Hanukkah. On her journey to find her secret admirer, she learns her one true love might be someone she never expected.",
+    "vote_average": 7.05,
+    "vote_count": 20
+  },
+  {
+    "title": "Cherished Memories: A Gift to Remember 2",
+    "year": 2019,
+    "tmdbId": 631428,
+    "imdbId": "tt8416396",
+    "tmdb_id": 631428,
+    "imdb_id": "tt8416396",
+    "poster": "/images/posters/631428.webp",
+    "overview": "As Darcy and Aiden prepare to celebrate their second Christmas together, an unexpected guest and a fight to save the beloved community center unites everyone for an unforgettable holiday.",
+    "vote_average": 5.42,
+    "vote_count": 25
+  }
+]

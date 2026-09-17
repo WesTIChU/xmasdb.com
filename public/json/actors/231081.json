@@ -1,0 +1,26 @@
+[
+  {
+    "title": "A Christmas Treasure",
+    "year": 2021,
+    "tmdbId": 866660,
+    "imdbId": "tt15042590",
+    "tmdb_id": 866660,
+    "imdb_id": "tt15042590",
+    "poster": "/images/posters/866660.webp",
+    "overview": "After opening a 100-year-old time capsule and finding her grandfather’s old journal, Lou questions whether she should move to New York after Christmas to further her writing career or stay in Pine Grove to carry on her family’s local newspaper. Charming chef, Kyle, is also at a crossroads, visiting Pine Grove for the holidays.",
+    "vote_average": 6,
+    "vote_count": 18
+  },
+  {
+    "title": "The Nine Kittens of Christmas",
+    "year": 2021,
+    "tmdbId": 876119,
+    "imdbId": "tt15226096",
+    "tmdb_id": 876119,
+    "imdb_id": "tt15226096",
+    "poster": "/images/posters/876119.webp",
+    "overview": "Cat lovers Zachary and Marilee are thrown back together at Christmas when they're tasked with finding homes for a litter of adorable kittens.",
+    "vote_average": 6.9,
+    "vote_count": 40
+  }
+]

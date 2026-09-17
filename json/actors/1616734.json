@@ -1,0 +1,26 @@
+[
+  {
+    "title": "The Christmas Baby",
+    "year": 2025,
+    "tmdbId": 1547929,
+    "imdbId": "tt36963465",
+    "tmdb_id": 1547929,
+    "imdb_id": "tt36963465",
+    "poster": "/images/posters/1547929.webp",
+    "overview": "When a baby boy shows up on their doorstep days before Christmas with a note written specially for them, Erin and Kelly must learn how to navigate their new relationship and career dynamics while unexpectedly caring for a newborn.",
+    "vote_average": 6.7,
+    "vote_count": 8
+  },
+  {
+    "title": "Undercover Holiday",
+    "year": 2022,
+    "tmdbId": 1028544,
+    "imdbId": "tt22295902",
+    "tmdb_id": 1028544,
+    "imdb_id": "tt22295902",
+    "poster": "/images/posters/1028544.webp",
+    "overview": "When returning home for the holidays, newly minted pop star Jaylen tells her protective family that Matt is her new beau, when in reality, he’s her overzealous security guard.",
+    "vote_average": 6.167,
+    "vote_count": 15
+  }
+]

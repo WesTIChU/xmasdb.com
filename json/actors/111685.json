@@ -1,0 +1,26 @@
+[
+  {
+    "title": "A Cozy Christmas Inn",
+    "year": 2022,
+    "tmdbId": 1012072,
+    "imdbId": "tt19394150",
+    "tmdb_id": 1012072,
+    "imdb_id": "tt19394150",
+    "poster": "/images/posters/1012072.webp",
+    "overview": "Real estate exec, Erika, travels to Alaska during Christmastime to acquire a bed and breakfast, only to discover that it’s owned by her ex. While there, she finds herself falling in love with the town and quite possibly him.",
+    "vote_average": 5.714,
+    "vote_count": 21
+  },
+  {
+    "title": "Christmas Scavenger Hunt",
+    "year": 2019,
+    "tmdbId": 627489,
+    "imdbId": "tt10768278",
+    "tmdb_id": 627489,
+    "imdb_id": "tt10768278",
+    "poster": "/images/posters/627489.webp",
+    "overview": "When Belinda heads back to her hometown for the holidays, things get complicated when she is forced to team up with her ex at the town's annual Christmas scavenger hunt.",
+    "vote_average": 6.2,
+    "vote_count": 34
+  }
+]

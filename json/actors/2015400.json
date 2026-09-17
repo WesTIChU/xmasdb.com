@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Christmas on Cherry Lane",
+    "year": 2023,
+    "tmdbId": 1180665,
+    "imdbId": "tt28287106",
+    "tmdb_id": 1180665,
+    "imdb_id": "tt28287106",
+    "poster": "/images/posters/1180665.webp",
+    "overview": "Three couples at different parts of life navigate big turning points in their lives over the holidays.",
+    "vote_average": 6.224,
+    "vote_count": 29
+  },
+  {
+    "title": "Lights, Camera, Christmas!",
+    "year": 2022,
+    "tmdbId": 1027439,
+    "imdbId": "tt22246560",
+    "tmdb_id": 1027439,
+    "imdb_id": "tt22246560",
+    "poster": "/images/posters/1027439.webp",
+    "overview": "When a holiday rom-com movie shooting in her town needs a costume designer, Kerry, a local shop owner, steps into the role. While working on the movie, she rediscovers her passion for costume design and finds herself falling for Brad, the film’s famous leading man.",
+    "vote_average": 6.3,
+    "vote_count": 25
+  }
+]

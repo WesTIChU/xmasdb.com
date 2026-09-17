@@ -1,0 +1,38 @@
+[
+  {
+    "title": "The 5-Year Christmas Party",
+    "year": 2024,
+    "tmdbId": 1359868,
+    "imdbId": "tt33503201",
+    "tmdb_id": 1359868,
+    "imdb_id": "tt33503201",
+    "poster": "/images/posters/1359868.webp",
+    "overview": "Over five years, Alice and her old theater school rival, Max, reunite each holiday season to work at a Chicago catering company's Christmas parties.  While their undeniable chemistry grows, the timing is never right for romance - until the company's final season pushes them to confront their true feelings.",
+    "vote_average": 5.111,
+    "vote_count": 8
+  },
+  {
+    "title": "Christmas with the Darlings",
+    "year": 2020,
+    "tmdbId": 746032,
+    "imdbId": "tt13381368",
+    "tmdb_id": 746032,
+    "imdb_id": "tt13381368",
+    "poster": "/images/posters/746032.webp",
+    "overview": "Just before the holidays Jessica Lew is ending her tenure as the assistant to her wealthy boss to use her recently earned law degree within his company, but offers to help his charming, younger brother as he looks after his orphaned nieces and nephew over Christmas.",
+    "vote_average": 6.958,
+    "vote_count": 36
+  },
+  {
+    "title": "With Love, Christmas",
+    "year": 2017,
+    "tmdbId": 474976,
+    "imdbId": "tt7647000",
+    "tmdb_id": 474976,
+    "imdb_id": "tt7647000",
+    "poster": "/images/posters/474976.webp",
+    "overview": "Advertising execs Melanie Welsh and Donovan Goodwin disagree on a cellphone Christmas commercial they’re pitching. He says his sleek design will win over the client but she knows it lacks holiday spirit.",
+    "vote_average": 6.877,
+    "vote_count": 61
+  }
+]

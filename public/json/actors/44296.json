@@ -1,0 +1,62 @@
+[
+  {
+    "title": "A Royal Montana Christmas",
+    "year": 2025,
+    "tmdbId": 1535223,
+    "imdbId": "tt36364046",
+    "tmdb_id": 1535223,
+    "imdb_id": "tt36364046",
+    "poster": "/images/posters/1535223.webp",
+    "overview": "A princess looking to decompress before the holidays heads to a Montana ranch and meets a charming guide.",
+    "vote_average": 7.636,
+    "vote_count": 11
+  },
+  {
+    "title": "Homegrown Christmas",
+    "year": 2018,
+    "tmdbId": 550030,
+    "imdbId": "tt9032562",
+    "tmdb_id": 550030,
+    "imdb_id": "tt9032562",
+    "poster": "/images/posters/550030.webp",
+    "overview": "After stepping down as CEO of her dream job, Maddie heads home for the holidays to gain perspective. She finds herself running into her old high school sweetheart Carter, and tensions quickly arise. When forced to put together a Christmas dance for the local high school, Carter and Maddie find themselves putting their differences aside and rediscover what made them fall in love all those years ago.",
+    "vote_average": 4.833,
+    "vote_count": 38
+  },
+  {
+    "title": "It's Christmas, Eve",
+    "year": 2018,
+    "tmdbId": 535807,
+    "imdbId": "tt8300786",
+    "tmdb_id": 535807,
+    "imdb_id": "tt8300786",
+    "poster": "/images/posters/535807.webp",
+    "overview": "Interim school superintendent Eve Morgan finds herself in a tough spot when she is assigned to shut down a school's failing music program and must come to terms with her musical past.",
+    "vote_average": 6.2,
+    "vote_count": 43
+  },
+  {
+    "title": "Journey Back to Christmas",
+    "year": 2016,
+    "tmdbId": 421758,
+    "imdbId": "tt6269192",
+    "tmdb_id": 421758,
+    "imdb_id": "tt6269192",
+    "poster": "/images/posters/421758.webp",
+    "overview": "WWII has ended and Hanna is still grieving over her husband's disappearance. When the Christmas Comet appears for the first time in 70 years, Hanna is caught in a terrible storm and knocked unconscious. When she wakes up, she's in 2016.",
+    "vote_average": 6.5,
+    "vote_count": 95
+  },
+  {
+    "title": "'Tis the Season for Love",
+    "year": 2015,
+    "tmdbId": 362886,
+    "imdbId": "tt5056034",
+    "tmdb_id": 362886,
+    "imdb_id": "tt5056034",
+    "poster": "/images/posters/362886.webp",
+    "overview": "An out-of-work New York City actress returns home to the quaint small town she escaped 10 years before and finds a place far different than the hamlet she left. She suddenly finds performing possibilities and even romance that kind of blow her away.",
+    "vote_average": 5.787,
+    "vote_count": 61
+  }
+]

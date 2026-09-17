@@ -1,0 +1,26 @@
+[
+  {
+    "title": "A Christmas Together With You",
+    "year": 2021,
+    "tmdbId": 876103,
+    "imdbId": "tt15420960",
+    "tmdb_id": 876103,
+    "imdb_id": "tt15420960",
+    "poster": "/images/posters/876103.webp",
+    "overview": "During the Christmas season, Megan and her father-figure Frank head out on a road trip to find his long-lost love. Along the way, Megan finds the love of her own life.",
+    "vote_average": 6.063,
+    "vote_count": 24
+  },
+  {
+    "title": "With Love, Christmas",
+    "year": 2017,
+    "tmdbId": 474976,
+    "imdbId": "tt7647000",
+    "tmdb_id": 474976,
+    "imdb_id": "tt7647000",
+    "poster": "/images/posters/474976.webp",
+    "overview": "Advertising execs Melanie Welsh and Donovan Goodwin disagree on a cellphone Christmas commercial they’re pitching. He says his sleek design will win over the client but she knows it lacks holiday spirit.",
+    "vote_average": 6.877,
+    "vote_count": 61
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Christmas CEO",
+    "year": 2021,
+    "tmdbId": 874193,
+    "imdbId": "tt15691922",
+    "tmdb_id": 874193,
+    "imdb_id": "tt15691922",
+    "poster": "/images/posters/874193.webp",
+    "overview": "A small toy company CEO gets a once in a lifetime offer to merge with a mega toy company but will need her estranged ex-business partner's signature to seal the deal. What he helps her rediscover will change both of their lives.",
+    "vote_average": 5.6,
+    "vote_count": 30
+  },
+  {
+    "title": "Christmas In Evergreen: Tidings of Joy",
+    "year": 2019,
+    "tmdbId": 630921,
+    "imdbId": "tt10925460",
+    "tmdb_id": 630921,
+    "imdb_id": "tt10925460",
+    "poster": "/images/posters/630921.webp",
+    "overview": "A skeptical writer shows up in Evergreen to get the scoop on the town's famed passion for Christmas during a search for a long-lost time capsule.",
+    "vote_average": 6.827,
+    "vote_count": 52
+  },
+  {
+    "title": "A Wish for Christmas",
+    "year": 2016,
+    "tmdbId": 410314,
+    "imdbId": "tt5676118",
+    "tmdb_id": 410314,
+    "imdb_id": "tt5676118",
+    "poster": "/images/posters/410314.webp",
+    "overview": "Sara Shaw is the type of woman who prefers to sit on the sidelines at work, but when her big idea for a Christmas initiative is stolen, she makes a wish to Santa that she'll finally have the courage to stand up for herself. Santa grants her wish, but only gives her 48 hours. As the clock ticks, Sara will discover how to channel the Christmas magic and speak her mind all on her own.",
+    "vote_average": 5.907,
+    "vote_count": 264
+  },
+  {
+    "title": "A Christmas Detour",
+    "year": 2015,
+    "tmdbId": 348634,
+    "imdbId": "tt4767950",
+    "tmdb_id": 348634,
+    "imdb_id": "tt4767950",
+    "poster": "/images/posters/348634.webp",
+    "overview": "A bubbly bride-to-be’s Christmas plans take an unexpected turn when her holiday flight to New York is detoured and she encounters a cynical bar manager who has lost his faith in love. As she scrambles to make it back east for Christmas—and plan her upcoming wedding—she begins wondering if she’s marrying the right man, and learns a surprising lesson about love.",
+    "vote_average": 6.057,
+    "vote_count": 106
+  }
+]

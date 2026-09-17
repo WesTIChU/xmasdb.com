@@ -1,0 +1,62 @@
+[
+  {
+    "title": "A Royal Montana Christmas",
+    "year": 2025,
+    "tmdbId": 1535223,
+    "imdbId": "tt36364046",
+    "tmdb_id": 1535223,
+    "imdb_id": "tt36364046",
+    "poster": "/images/posters/1535223.webp",
+    "overview": "A princess looking to decompress before the holidays heads to a Montana ranch and meets a charming guide.",
+    "vote_average": 7.636,
+    "vote_count": 11
+  },
+  {
+    "title": "Our Holiday Story",
+    "year": 2024,
+    "tmdbId": 1360780,
+    "imdbId": "tt33437460",
+    "tmdb_id": 1360780,
+    "imdb_id": "tt33437460",
+    "poster": "/images/posters/1360780.webp",
+    "overview": "Dave and Nell recount the Christmas where they unknowingly fell in love while working as rivals on a town festival, as their daughter’s boyfriend struggles to navigate his own relationship.",
+    "vote_average": 6,
+    "vote_count": 30
+  },
+  {
+    "title": "Holiday Road",
+    "year": 2023,
+    "tmdbId": 1180791,
+    "imdbId": "tt29233535",
+    "tmdb_id": 1180791,
+    "imdb_id": "tt29233535",
+    "poster": "/images/posters/1180791.webp",
+    "overview": "A travel writer, a tech entrepreneur, a devoted mother and more strangers are stranded at the airport for the holidays, they rent a van for an unexpected road trip.",
+    "vote_average": 7.2,
+    "vote_count": 23
+  },
+  {
+    "title": "If I Only Had Christmas",
+    "year": 2020,
+    "tmdbId": 737766,
+    "imdbId": "tt12766346",
+    "tmdb_id": 737766,
+    "imdb_id": "tt12766346",
+    "poster": "/images/posters/737766.webp",
+    "overview": "At Christmas, a cheerful publicist teams up with a cynical business owner and his team to help a charity in need.",
+    "vote_average": 6.6,
+    "vote_count": 46
+  },
+  {
+    "title": "The Most Wonderful Time of the Year",
+    "year": 2008,
+    "tmdbId": 35830,
+    "imdbId": "tt1327788",
+    "tmdb_id": 35830,
+    "imdb_id": "tt1327788",
+    "poster": "/images/posters/35830.webp",
+    "overview": "Five-time Emmy nominee and Golden Globe winner Henry Winkler stars in The Most Wonderful Time of the Year, the story of what happens when you open your heart to the power of Christmas. Disenchanted single mom Jennifer Cullen (Brooke Burns) is a Scroogette when it comes to anything Christmas. In fact, even her six-year-old son, Brian, is having trouble believing in Santa Claus. But when her Uncle Ralph (Henry Winkler) visits and brings a fellow passenger from his flight named Morgan Derby (Warren Christie), Jennifer s dubious heart awakens to the possibility that perhaps Christmas really does hold miracles. It s uplifting and laugh-packed and a story that will inspire the whole family to believe.",
+    "vote_average": 6.408,
+    "vote_count": 71
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "title": "The More the Merrier",
+    "year": 2025,
+    "tmdbId": 1546001,
+    "imdbId": "tt38354960",
+    "tmdb_id": 1546001,
+    "imdb_id": "tt38354960",
+    "poster": "/images/posters/1546001.webp",
+    "overview": "An overwhelmed doctor is left to look after and care for three very pregnant women by herself during a storm on Christmas Eve, until she is joined by an intriguing colleague.",
+    "vote_average": 6.273,
+    "vote_count": 11
+  },
+  {
+    "title": "Road to Christmas",
+    "year": 2018,
+    "tmdbId": 550017,
+    "imdbId": "tt8732914",
+    "tmdb_id": 550017,
+    "imdb_id": "tt8732914",
+    "poster": "/images/posters/550017.webp",
+    "overview": "Los Angeles television producer Maggie Baker unwittingly falls for Danny Wise, the son and former producer of his mother’s popular annual Christmas special Julia Wise Lifestyle. When Maggie’s secret plan to reunite Danny and his two brothers with Julia during the live broadcast in Vermont goes awry, Maggie is reminded that above all, it is the love for family and friends that makes the merriest of Christmas.",
+    "vote_average": 6.274,
+    "vote_count": 113
+  }
+]

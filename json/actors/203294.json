@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Three Wisest Men",
+    "year": 2025,
+    "tmdbId": 1537084,
+    "imdbId": "tt38353919",
+    "tmdb_id": 1537084,
+    "imdb_id": "tt38353919",
+    "poster": "/images/posters/1537084.webp",
+    "overview": "Luke is expecting twins, Taylor is debating a life-changing job, and Stephan is planning a wedding — all while their mom is planning to put the family home up for sale.",
+    "vote_average": 7.308,
+    "vote_count": 13
+  },
+  {
+    "title": "You, Me and the Christmas Trees",
+    "year": 2021,
+    "tmdbId": 877692,
+    "imdbId": "tt15484422",
+    "tmdb_id": 877692,
+    "imdb_id": "tt15484422",
+    "poster": "/images/posters/877692.webp",
+    "overview": "An arborist helps a fourth generation Christmas tree farmer whose evergreens are dying just before the holiday. As she tries to get to the root of the problem before the town tree lighting, they begin to fall in love.",
+    "vote_average": 6.6,
+    "vote_count": 35
+  },
+  {
+    "title": "The Sweetest Christmas",
+    "year": 2017,
+    "tmdbId": 474972,
+    "imdbId": "tt7030432",
+    "tmdb_id": 474972,
+    "imdb_id": "tt7030432",
+    "poster": "/images/posters/474972.webp",
+    "overview": "After breaking up with her long-term boyfriend just before the holidays, passionate baker Kylie reconnects with her high school sweetheart, Nick. Thanks to their newly rekindled friendship, Kylie uses Nick’s restaurant to prepare for a gingerbread baking competition with a large cash prize that would help her open her own bakery.",
+    "vote_average": 6.395,
+    "vote_count": 86
+  }
+]

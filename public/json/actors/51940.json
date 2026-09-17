@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Christmas in Tahoe",
+    "year": 2021,
+    "tmdbId": 874226,
+    "imdbId": "tt15739494",
+    "tmdb_id": 874226,
+    "imdb_id": "tt15739494",
+    "poster": "/images/posters/874226.webp",
+    "overview": "To save her family hotel's Christmas show, talent booker Claire must ask for help from her ex-boyfriend Ryan, the lead guitarist of a now-famous band that fired her as their manager years ago.",
+    "vote_average": 6.06,
+    "vote_count": 25
+  },
+  {
+    "title": "Christmas Comes Twice",
+    "year": 2020,
+    "tmdbId": 737782,
+    "imdbId": "tt13342004",
+    "tmdb_id": 737782,
+    "imdb_id": "tt13342004",
+    "poster": "/images/posters/737782.webp",
+    "overview": "When Cheryl visits the Christmas carnival in her hometown, she gets a second chance in life when she is transported to Christmas five years in the past.",
+    "vote_average": 6.3,
+    "vote_count": 17
+  },
+  {
+    "title": "Cherished Memories: A Gift to Remember 2",
+    "year": 2019,
+    "tmdbId": 631428,
+    "imdbId": "tt8416396",
+    "tmdb_id": 631428,
+    "imdb_id": "tt8416396",
+    "poster": "/images/posters/631428.webp",
+    "overview": "As Darcy and Aiden prepare to celebrate their second Christmas together, an unexpected guest and a fight to save the beloved community center unites everyone for an unforgettable holiday.",
+    "vote_average": 5.42,
+    "vote_count": 25
+  },
+  {
+    "title": "The Mistletoe Promise",
+    "year": 2016,
+    "tmdbId": 410315,
+    "imdbId": "tt5921218",
+    "tmdb_id": 410315,
+    "imdb_id": "tt5921218",
+    "poster": "/images/posters/410315.webp",
+    "overview": "A chance meeting between two strangers who share a disdain for Christmas results in The Mistletoe Promise, a pact to help them navigate their holiday complications - together. But as they spend more time with each other and experience the magic of Christmas the phony couple discovers there may be more to their contract than business.",
+    "vote_average": 6.3,
+    "vote_count": 95
+  }
+]

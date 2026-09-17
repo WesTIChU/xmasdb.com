@@ -1,0 +1,50 @@
+[
+  {
+    "title": "The More the Merrier",
+    "year": 2025,
+    "tmdbId": 1546001,
+    "imdbId": "tt38354960",
+    "tmdb_id": 1546001,
+    "imdb_id": "tt38354960",
+    "poster": "/images/posters/1546001.webp",
+    "overview": "An overwhelmed doctor is left to look after and care for three very pregnant women by herself during a storm on Christmas Eve, until she is joined by an intriguing colleague.",
+    "vote_average": 6.273,
+    "vote_count": 11
+  },
+  {
+    "title": "Christmas in Tahoe",
+    "year": 2021,
+    "tmdbId": 874226,
+    "imdbId": "tt15739494",
+    "tmdb_id": 874226,
+    "imdb_id": "tt15739494",
+    "poster": "/images/posters/874226.webp",
+    "overview": "To save her family hotel's Christmas show, talent booker Claire must ask for help from her ex-boyfriend Ryan, the lead guitarist of a now-famous band that fired her as their manager years ago.",
+    "vote_average": 6.06,
+    "vote_count": 25
+  },
+  {
+    "title": "Love, Lights, Hanukkah!",
+    "year": 2020,
+    "tmdbId": 746062,
+    "imdbId": "tt13342190",
+    "tmdb_id": 746062,
+    "imdb_id": "tt13342190",
+    "poster": "/images/posters/746062.webp",
+    "overview": "As Christina prepares her restaurant for its busiest time of year, she gets back a DNA test revealing that she’s Jewish. The discovery leads her to a new family and an unlikely romance over eight nights.",
+    "vote_average": 6.8,
+    "vote_count": 25
+  },
+  {
+    "title": "The Christmas Train",
+    "year": 2017,
+    "tmdbId": 474982,
+    "imdbId": "tt7370936",
+    "tmdb_id": 474982,
+    "imdb_id": "tt7370936",
+    "poster": "/images/posters/474982.webp",
+    "overview": "Forced to take the intercontinental trip to Los Angeles by train, and determined to chronicle his adventure, disillusioned journalist Tom Langdon finds himself westbound with a variety of characters. While all passengers on the Christmas train appear to be headed for the same destination, Tom has no idea that the rugged locomotives taking him across America will instead detour straight into his heart.",
+    "vote_average": 6.4,
+    "vote_count": 131
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "title": "A Merry Scottish Christmas",
+    "year": 2023,
+    "tmdbId": 1145635,
+    "imdbId": "tt28237077",
+    "tmdb_id": 1145635,
+    "imdb_id": "tt28237077",
+    "poster": "/images/posters/1145635.webp",
+    "overview": "When estranged siblings Lindsay and Brad travel to Scotland at Christmas to reunite with their mother Jo, a big family secret is revealed.",
+    "vote_average": 6.222,
+    "vote_count": 54
+  },
+  {
+    "title": "A Christmas Love Story",
+    "year": 2019,
+    "tmdbId": 626313,
+    "imdbId": "tt9747440",
+    "tmdb_id": 626313,
+    "imdb_id": "tt9747440",
+    "poster": "/images/posters/626313.webp",
+    "overview": "A youth choir director needs to write a big song for the Christmas Eve show but finds herself distracted when a boy with a golden voice joins her choir, which will come as news to his widowed father.",
+    "vote_average": 6.6,
+    "vote_count": 37
+  }
+]

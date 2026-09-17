@@ -1,0 +1,62 @@
+[
+  {
+    "title": "Open by Christmas",
+    "year": 2021,
+    "tmdbId": 874161,
+    "imdbId": "tt15758400",
+    "tmdb_id": 874161,
+    "imdb_id": "tt15758400",
+    "poster": "/images/posters/874161.webp",
+    "overview": "When Nicky finds an unopened Christmas card from a high school secret admirer, she and her best friend Simone search to find and thank the anonymous author.",
+    "vote_average": 6.2,
+    "vote_count": 30
+  },
+  {
+    "title": "Christmas in Vienna",
+    "year": 2020,
+    "tmdbId": 726523,
+    "imdbId": "tt13341400",
+    "tmdb_id": 726523,
+    "imdb_id": "tt13341400",
+    "poster": "/images/posters/726523.webp",
+    "overview": "Jess, a concert violinist whose heart just isn’t in it anymore, goes to Vienna for a performance. While there, she finds the inspiration she has been missing, and a new love.",
+    "vote_average": 6.4,
+    "vote_count": 32
+  },
+  {
+    "title": "Christmas at Grand Valley",
+    "year": 2018,
+    "tmdbId": 550024,
+    "imdbId": "tt9028784",
+    "tmdb_id": 550024,
+    "imdb_id": "tt9028784",
+    "poster": "/images/posters/550024.webp",
+    "overview": "Burned out from the hubbub of the Chicago gallery world, artist Kelly returns home to the picturesque Grand Valley just in time for Christmas. Leo, businessman and all-star dad to his children, struggles to balance his time this holiday season. When he is assigned to review a hotel in Grand Valley for its value, he sees this as the perfect opportunity for a Christmas family vacation. It isn’t long until Kelly and Leo’s worlds collide.",
+    "vote_average": 6.4,
+    "vote_count": 60
+  },
+  {
+    "title": "Love You Like Christmas",
+    "year": 2016,
+    "tmdbId": 421624,
+    "imdbId": "tt6131148",
+    "tmdb_id": 421624,
+    "imdb_id": "tt6131148",
+    "poster": "/images/posters/421624.webp",
+    "overview": "Maddie, a high-powered marketing executive, is on her way to a client’s wedding but her plans are derailed by car trouble. When a fork in the road leads her to Christmas Valley, a town in love with Christmas, an unexpected encounter and a group of strangers that start to feel like family will have her questioning what she’s really been missing in life.",
+    "vote_average": 6.3,
+    "vote_count": 63
+  },
+  {
+    "title": "A Christmas Melody",
+    "year": 2015,
+    "tmdbId": 366018,
+    "imdbId": "tt4587740",
+    "tmdb_id": 366018,
+    "imdb_id": "tt4587740",
+    "poster": "/images/posters/366018.webp",
+    "overview": "Kristin has just had to close her small Manhattan clothing boutique to return to her Ohio home town and live in her parents' former home. It's an adjustment for Kristin and her young daughter— especially when she runs into her former high school rival. Kristen and Emily struggle to find their new normal with the help of the hunky local music teacher.",
+    "vote_average": 6,
+    "vote_count": 118
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Gingerbread Miracle",
+    "year": 2021,
+    "tmdbId": 874244,
+    "imdbId": "tt15821582",
+    "tmdb_id": 874244,
+    "imdb_id": "tt15821582",
+    "poster": "/images/posters/874244.webp",
+    "overview": "Maya and Alex, old friends from high school, work together over Christmas to sell his uncle’s Mexican bakery famous for its gingerbread cookies that the patrons believe grants wishes.",
+    "vote_average": 6,
+    "vote_count": 30
+  },
+  {
+    "title": "Never Kiss a Man in a Christmas Sweater",
+    "year": 2020,
+    "tmdbId": 746034,
+    "imdbId": "tt13192538",
+    "tmdb_id": 746034,
+    "imdb_id": "tt13192538",
+    "poster": "/images/posters/746034.webp",
+    "overview": "Single mom Maggie is facing Christmas alone until Lucas crashes into her life and becomes an unexpected house guest. Together they overcome Christmas while finding comfort in their growing bond.",
+    "vote_average": 6.483,
+    "vote_count": 58
+  }
+]

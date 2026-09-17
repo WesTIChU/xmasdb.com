@@ -1,0 +1,62 @@
+[
+  {
+    "title": "Holiday Crashers",
+    "year": 2024,
+    "tmdbId": 1358987,
+    "imdbId": "tt32011999",
+    "tmdb_id": 1358987,
+    "imdb_id": "tt32011999",
+    "poster": "/images/posters/1358987.webp",
+    "overview": "Best friends Toni and Bri, working at a card print shop, decide to crash the amazing Christmas parties from some of the shop's confidential invitations for a bit of harmless fun. Harmless that is, until Toni is mistaken for a lawyer and they get whisked away to a fancy corporate Christmas retreat in the snowy Vermont mountains by handsome business mogul.",
+    "vote_average": 6.5,
+    "vote_count": 23
+  },
+  {
+    "title": "A Christmas Treasure",
+    "year": 2021,
+    "tmdbId": 866660,
+    "imdbId": "tt15042590",
+    "tmdb_id": 866660,
+    "imdb_id": "tt15042590",
+    "poster": "/images/posters/866660.webp",
+    "overview": "After opening a 100-year-old time capsule and finding her grandfather’s old journal, Lou questions whether she should move to New York after Christmas to further her writing career or stay in Pine Grove to carry on her family’s local newspaper. Charming chef, Kyle, is also at a crossroads, visiting Pine Grove for the holidays.",
+    "vote_average": 6,
+    "vote_count": 18
+  },
+  {
+    "title": "Nantucket Noel",
+    "year": 2021,
+    "tmdbId": 874122,
+    "imdbId": "tt15691228",
+    "tmdb_id": 874122,
+    "imdb_id": "tt15691228",
+    "poster": "/images/posters/874122.webp",
+    "overview": "During the Seaside Noel celebrations, Christin learns of a developer who is planning to tear down the wharf that is home to her toy store. Tensions rise as she falls for the developer's son, Andy.",
+    "vote_average": 6.3,
+    "vote_count": 27
+  },
+  {
+    "title": "Holiday Date",
+    "year": 2019,
+    "tmdbId": 630924,
+    "imdbId": "tt10768456",
+    "tmdb_id": 630924,
+    "imdb_id": "tt10768456",
+    "poster": "/images/posters/630924.webp",
+    "overview": "When Brooke’s boyfriend, Ethan, breaks up with her just before the holidays, she agrees to go home with Joel, an actor who will pose as her boyfriend.",
+    "vote_average": 6.4,
+    "vote_count": 48
+  },
+  {
+    "title": "A Gingerbread Romance",
+    "year": 2018,
+    "tmdbId": 550033,
+    "imdbId": "tt9028866",
+    "tmdb_id": 550033,
+    "imdb_id": "tt9028866",
+    "poster": "/images/posters/550033.webp",
+    "overview": "Successful architect Taylor Scott is poised for a promotion and a move to Paris but before that’s decided, her boss tasks her with creating a life-sized gingerbread house for a holiday competition. She partners with pastry chef Adam Dale, and though their styles are different, they form a deep connection working together.",
+    "vote_average": 5.083,
+    "vote_count": 30
+  }
+]

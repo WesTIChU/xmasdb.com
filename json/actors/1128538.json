@@ -1,0 +1,74 @@
+[
+  {
+    "title": "A Carol for Two",
+    "year": 2024,
+    "tmdbId": 1360779,
+    "imdbId": "tt31438256",
+    "tmdb_id": 1360779,
+    "imdb_id": "tt31438256",
+    "poster": "/images/posters/1360779.webp",
+    "overview": "Violette dreams of Broadway, but lands a singing waitress gig at Fiore's. Her Christmas Eve duet with Alex, who resents her connections, could be her big break. As they rehearse, Alex's cousin Brad, with Alex's secret help, woos Violette. Alex develops feelings too, creating a messy love triangle that jeopardizes their shot at stardom.",
+    "vote_average": 6.2,
+    "vote_count": 9
+  },
+  {
+    "title": "Christmas On Call",
+    "year": 2024,
+    "tmdbId": 1361154,
+    "imdbId": "tt33829451",
+    "tmdb_id": 1361154,
+    "imdb_id": "tt33829451",
+    "poster": "/images/posters/1361154.webp",
+    "overview": "The lives of first responders in Philadelphia intersect over the holiday season while juggling work, personal lives, and their dedication to protect and serve their city.",
+    "vote_average": 7.1,
+    "vote_count": 25
+  },
+  {
+    "title": "A Christmas Cookie Catastrophe",
+    "year": 2022,
+    "tmdbId": 1028552,
+    "imdbId": "tt22207828",
+    "tmdb_id": 1028552,
+    "imdb_id": "tt22207828",
+    "poster": "/images/posters/1028552.webp",
+    "overview": "Annie Cooper has big shoes to fill when she takes over as CEO of her late grandmother’s small-town cookie company and is doing her best to help their struggling business get back on track. That task gets more daunting when her grandmother’s secret recipe is stolen during the Christmas party. As Annie tries to crack the case and uncover the culprit she works with Sam, the owner of a local bakery, to recreate the recipe in the hope of saving the company and her job.  As Annie and Sam bake batch after batch in pursuit of the perfect one, they begin to learn that their lives go together like milk and cookies.",
+    "vote_average": 5.635,
+    "vote_count": 37
+  },
+  {
+    "title": "'Tis the Season to be Merry",
+    "year": 2021,
+    "tmdbId": 888500,
+    "imdbId": "tt15739902",
+    "tmdb_id": 888500,
+    "imdb_id": "tt15739902",
+    "poster": "/images/posters/888500.webp",
+    "overview": "Looking for a fresh angle to her book on relationships, Merry heads to snow-covered Vermont. She finds a new perspective and Christmas cheer with charismatic aid worker Chris.",
+    "vote_average": 6.093,
+    "vote_count": 54
+  },
+  {
+    "title": "Merry & Bright",
+    "year": 2019,
+    "tmdbId": 626307,
+    "imdbId": "tt10345022",
+    "tmdb_id": 626307,
+    "imdb_id": "tt10345022",
+    "poster": "/images/posters/626307.webp",
+    "overview": "Cate, CEO of the Merry and Bright Candy Cane Company, meets Gabe during the busy Christmas season. She assumes Gabe is the suitor her well-meaning mother is trying to set her up with when in reality, he works for Empire Corporate Recovery, which has been hired to take a closer look at Merry and Bright's operation and find ways to make the company more profitable. As Cate and Gabe begin to work together, they find ways to elevate the business and find that they have more in common than savvy business sense.",
+    "vote_average": 6.2,
+    "vote_count": 52
+  },
+  {
+    "title": "The Christmas Club",
+    "year": 2019,
+    "tmdbId": 628332,
+    "imdbId": "tt10667026",
+    "tmdb_id": 628332,
+    "imdb_id": "tt10667026",
+    "poster": "/images/posters/628332.webp",
+    "overview": "Two busy strangers meet when they help an elderly woman find her lost Christmas savings. Thanks to fate and Christmas magic, they also find something they were both missing: true love.",
+    "vote_average": 6.3,
+    "vote_count": 35
+  }
+]

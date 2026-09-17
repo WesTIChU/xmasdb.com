@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Christmas Waltz",
+    "year": 2020,
+    "tmdbId": 733032,
+    "imdbId": "tt11585200",
+    "tmdb_id": 733032,
+    "imdb_id": "tt11585200",
+    "poster": "/images/posters/733032.webp",
+    "overview": "After Avery’s storybook Christmas wedding is canceled unexpectedly, dance instructor Roman helps her rebuild her dreams.",
+    "vote_average": 7,
+    "vote_count": 64
+  },
+  {
+    "title": "A Christmas Duet",
+    "year": 2019,
+    "tmdbId": 631417,
+    "imdbId": "tt10768208",
+    "tmdb_id": 631417,
+    "imdb_id": "tt10768208",
+    "poster": "/images/posters/631417.webp",
+    "overview": "Former couple and pop music duo Averie and Jesse unexpectedly reunite at her inn during the holidays. As they spend time together, they rediscover long-buried feelings and must decide if they are meant to live their lives solo or in harmony together.",
+    "vote_average": 6.2,
+    "vote_count": 26
+  },
+  {
+    "title": "The Sweetest Christmas",
+    "year": 2017,
+    "tmdbId": 474972,
+    "imdbId": "tt7030432",
+    "tmdb_id": 474972,
+    "imdb_id": "tt7030432",
+    "poster": "/images/posters/474972.webp",
+    "overview": "After breaking up with her long-term boyfriend just before the holidays, passionate baker Kylie reconnects with her high school sweetheart, Nick. Thanks to their newly rekindled friendship, Kylie uses Nick’s restaurant to prepare for a gingerbread baking competition with a large cash prize that would help her open her own bakery.",
+    "vote_average": 6.395,
+    "vote_count": 86
+  }
+]

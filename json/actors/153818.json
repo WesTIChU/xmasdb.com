@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Christmas Above the Clouds",
+    "year": 2025,
+    "tmdbId": 1537081,
+    "imdbId": "tt38183872",
+    "tmdb_id": 1537081,
+    "imdb_id": "tt38183872",
+    "poster": "/images/posters/1537081.webp",
+    "overview": "When a workaholic CEO tries to skip Christmas by flying to Australia, she’s in for the flight of her life. Haunted by her past, present, and future, she’s forced to confront the choices that led to her success yet left her flying solo. With the help of three quirky spirits and a surprise reunion with her ex, she might just rediscover the magic of Christmas—and the love she thought she’d lost.",
+    "vote_average": 7.2,
+    "vote_count": 12
+  },
+  {
+    "title": "Holiday Date",
+    "year": 2019,
+    "tmdbId": 630924,
+    "imdbId": "tt10768456",
+    "tmdb_id": 630924,
+    "imdb_id": "tt10768456",
+    "poster": "/images/posters/630924.webp",
+    "overview": "When Brooke’s boyfriend, Ethan, breaks up with her just before the holidays, she agrees to go home with Joel, an actor who will pose as her boyfriend.",
+    "vote_average": 6.4,
+    "vote_count": 48
+  },
+  {
+    "title": "Christmas List",
+    "year": 2016,
+    "tmdbId": 416251,
+    "imdbId": "tt5902138",
+    "tmdb_id": 416251,
+    "imdb_id": "tt5902138",
+    "poster": "/images/posters/416251.webp",
+    "overview": "Isobel Gray plans a storybook Christmas with her boyfriend, including a snow-covered cottage in the Northwest, and a carefully composed bucket list of classic holiday traditions. But when the boyfriend goes AWOL, the list proves challenging and a tempting new romance turns her life upside down. Will Isobel have a White Christmas ending under the mistletoe?",
+    "vote_average": 5.5,
+    "vote_count": 64
+  }
+]

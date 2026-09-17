@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Christmas Comes Twice",
+    "year": 2020,
+    "tmdbId": 737782,
+    "imdbId": "tt13342004",
+    "tmdb_id": 737782,
+    "imdb_id": "tt13342004",
+    "poster": "/images/posters/737782.webp",
+    "overview": "When Cheryl visits the Christmas carnival in her hometown, she gets a second chance in life when she is transported to Christmas five years in the past.",
+    "vote_average": 6.3,
+    "vote_count": 17
+  },
+  {
+    "title": "Christmas Under the Stars",
+    "year": 2019,
+    "tmdbId": 629985,
+    "imdbId": "tt10922658",
+    "tmdb_id": 629985,
+    "imdb_id": "tt10922658",
+    "poster": "/images/posters/629985.webp",
+    "overview": "When Nick is fired from his high-powered investment firm at Christmastime, he takes a job at a Christmas tree lot. There, he meets Julie, an astronomy teacher who’s always looked to the stars for hope. As the Christmas spirit washes over him—and he begins falling for Julie—the once self-centered Nick discovers the joy of helping others.",
+    "vote_average": 6.5,
+    "vote_count": 55
+  }
+]

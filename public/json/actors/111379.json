@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Magic in Mistletoe",
+    "year": 2023,
+    "tmdbId": 1180743,
+    "imdbId": "tt29233549",
+    "tmdb_id": 1180743,
+    "imdb_id": "tt29233549",
+    "poster": "/images/posters/1180743.webp",
+    "overview": "Successful yet recluse author Harrington returns to his hometown for an annual Christmas festival, where he must face his publicist there for damage control.",
+    "vote_average": 6,
+    "vote_count": 25
+  },
+  {
+    "title": "Gingerbread Miracle",
+    "year": 2021,
+    "tmdbId": 874244,
+    "imdbId": "tt15821582",
+    "tmdb_id": 874244,
+    "imdb_id": "tt15821582",
+    "poster": "/images/posters/874244.webp",
+    "overview": "Maya and Alex, old friends from high school, work together over Christmas to sell his uncle’s Mexican bakery famous for its gingerbread cookies that the patrons believe grants wishes.",
+    "vote_average": 6,
+    "vote_count": 30
+  },
+  {
+    "title": "The Santa Stakeout",
+    "year": 2021,
+    "tmdbId": 874238,
+    "imdbId": "tt15737510",
+    "tmdb_id": 874238,
+    "imdb_id": "tt15737510",
+    "poster": "/images/posters/874238.webp",
+    "overview": "Tanya is a police detective who is reluctantly partnered with fellow detective Ryan to solve a recent string of heists taking place during high-profile holiday parties around town.",
+    "vote_average": 6.1,
+    "vote_count": 22
+  },
+  {
+    "title": "Once Upon A Holiday",
+    "year": 2015,
+    "tmdbId": 363482,
+    "imdbId": "tt5033114",
+    "tmdb_id": 363482,
+    "imdb_id": "tt5033114",
+    "poster": "/images/posters/363482.webp",
+    "overview": "When an actual, honest-to-goodness royal princess runs off from her official obligations and duties for a couple of days to see how the other half lives, she winds up falling for a good Samaritan who is unaware of her real identity during the holiday season. Will her true love still feel the same way once he learns the truth?",
+    "vote_average": 5.976,
+    "vote_count": 124
+  }
+]

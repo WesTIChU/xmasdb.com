@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Single on the 25th",
+    "year": 2025,
+    "tmdbId": 1545997,
+    "imdbId": "tt38347292",
+    "tmdb_id": 1545997,
+    "imdb_id": "tt38347292",
+    "poster": "/images/posters/1545997.webp",
+    "overview": "After Nell’s family cancels holiday plans at the last minute, she decides to spend the week of Christmas having fun on her own — and crosses paths with her neighbor, who is “happily unattached.”",
+    "vote_average": 7.7,
+    "vote_count": 10
+  },
+  {
+    "title": "Holiday Crashers",
+    "year": 2024,
+    "tmdbId": 1358987,
+    "imdbId": "tt32011999",
+    "tmdb_id": 1358987,
+    "imdb_id": "tt32011999",
+    "poster": "/images/posters/1358987.webp",
+    "overview": "Best friends Toni and Bri, working at a card print shop, decide to crash the amazing Christmas parties from some of the shop's confidential invitations for a bit of harmless fun. Harmless that is, until Toni is mistaken for a lawyer and they get whisked away to a fancy corporate Christmas retreat in the snowy Vermont mountains by handsome business mogul.",
+    "vote_average": 6.5,
+    "vote_count": 23
+  },
+  {
+    "title": "Where Are You, Christmas?",
+    "year": 2023,
+    "tmdbId": 1132390,
+    "imdbId": "tt27496114",
+    "tmdb_id": 1132390,
+    "imdb_id": "tt27496114",
+    "poster": "/images/posters/1132390.webp",
+    "overview": "After Addy wishes for a year without Christmas, she wakes up in a black and white world and works with the town mechanic to restore Christmas.",
+    "vote_average": 6.286,
+    "vote_count": 28
+  },
+  {
+    "title": "Next Stop, Christmas",
+    "year": 2021,
+    "tmdbId": 877004,
+    "imdbId": "tt15412176",
+    "tmdb_id": 877004,
+    "imdb_id": "tt15412176",
+    "poster": "/images/posters/877004.webp",
+    "overview": "Angie wonders what her life would be like if she had married a former boyfriend who became a famous sportscaster. She takes the train home to spend Christmas with her family and inexplicably finds herself 10 years in the past. With the advice of the train's enigmatic conductor, Angie has the chance to revisit that Christmas and learn what — and who — is truly important to her.",
+    "vote_average": 6.4,
+    "vote_count": 91
+  }
+]

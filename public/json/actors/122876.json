@@ -1,0 +1,26 @@
+[
+  {
+    "title": "A Christmas Tree Grows in Colorado",
+    "year": 2020,
+    "tmdbId": 737764,
+    "imdbId": "tt12557978",
+    "tmdb_id": 737764,
+    "imdb_id": "tt12557978",
+    "poster": "/images/posters/737764.webp",
+    "overview": "Erin is planning the town’s Christmas celebration and must win over firefighter Kevin in order to obtain the beautiful spruce tree from his property for the celebration.",
+    "vote_average": 5.7,
+    "vote_count": 16
+  },
+  {
+    "title": "A Wish for Christmas",
+    "year": 2016,
+    "tmdbId": 410314,
+    "imdbId": "tt5676118",
+    "tmdb_id": 410314,
+    "imdb_id": "tt5676118",
+    "poster": "/images/posters/410314.webp",
+    "overview": "Sara Shaw is the type of woman who prefers to sit on the sidelines at work, but when her big idea for a Christmas initiative is stolen, she makes a wish to Santa that she'll finally have the courage to stand up for herself. Santa grants her wish, but only gives her 48 hours. As the clock ticks, Sara will discover how to channel the Christmas magic and speak her mind all on her own.",
+    "vote_average": 5.907,
+    "vote_count": 264
+  }
+]

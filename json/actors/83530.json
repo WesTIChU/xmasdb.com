@@ -1,0 +1,26 @@
+[
+  {
+    "title": "The Christmas Charade",
+    "year": 2024,
+    "tmdbId": 1359867,
+    "imdbId": "tt33039603",
+    "tmdb_id": 1359867,
+    "imdb_id": "tt33039603",
+    "poster": "/images/posters/1359867.webp",
+    "overview": "A cautious librarian raised by home security experts finds herself in a real-life adventure when a blind date mix-up leads her into an undercover FBI operation. Forced to pose as the girlfriend of Special Agent Josh, she helps him track down an art thief targeting the Saint Nicholas Ruby at a Christmas Eve charity ball.",
+    "vote_average": 6.682,
+    "vote_count": 33
+  },
+  {
+    "title": "Christmas Island",
+    "year": 2023,
+    "tmdbId": 1180841,
+    "imdbId": "tt29378386",
+    "tmdb_id": 1180841,
+    "imdb_id": "tt29378386",
+    "poster": "/images/posters/1180841.webp",
+    "overview": "When a snowstorm diverts Kate's first private flight bound for Switzerland, to Christmas Island in Nova Scotia, she must team up with an air traffic controller to secure her dream job as the family's pilot.",
+    "vote_average": 6.606,
+    "vote_count": 33
+  }
+]

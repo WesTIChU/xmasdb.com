@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Hanukkah on Rye",
+    "year": 2022,
+    "tmdbId": 1028555,
+    "imdbId": "tt22307422",
+    "tmdb_id": 1028555,
+    "imdb_id": "tt22307422",
+    "poster": "/images/posters/1028555.webp",
+    "overview": "A matchmaker connects Molly and Jacob, but their new romance is put to the test when they realize that they are competing deli owners. Will a Hanukkah miracle keep them together?",
+    "vote_average": 6.154,
+    "vote_count": 26
+  },
+  {
+    "title": "Christmas by Starlight",
+    "year": 2020,
+    "tmdbId": 746045,
+    "imdbId": "tt13206476",
+    "tmdb_id": 746045,
+    "imdb_id": "tt13206476",
+    "poster": "/images/posters/746045.webp",
+    "overview": "Annie, a lawyer, must help her loved ones this holiday season. Her family’s restaurant, The Starlight Café, is slated for demolition. The heir to the development firm responsible, William, makes her an unlikely proposition: he’ll spare the café if Annie spends the week “appearing” as the legal counsel his father is demanding he hire in the wake of some costly mistakes.",
+    "vote_average": 6.8,
+    "vote_count": 55
+  }
+]

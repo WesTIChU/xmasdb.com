@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Undercover Holiday",
+    "year": 2022,
+    "tmdbId": 1028544,
+    "imdbId": "tt22295902",
+    "tmdb_id": 1028544,
+    "imdb_id": "tt22295902",
+    "poster": "/images/posters/1028544.webp",
+    "overview": "When returning home for the holidays, newly minted pop star Jaylen tells her protective family that Matt is her new beau, when in reality, he’s her overzealous security guard.",
+    "vote_average": 6.167,
+    "vote_count": 15
+  },
+  {
+    "title": "Christmas CEO",
+    "year": 2021,
+    "tmdbId": 874193,
+    "imdbId": "tt15691922",
+    "tmdb_id": 874193,
+    "imdb_id": "tt15691922",
+    "poster": "/images/posters/874193.webp",
+    "overview": "A small toy company CEO gets a once in a lifetime offer to merge with a mega toy company but will need her estranged ex-business partner's signature to seal the deal. What he helps her rediscover will change both of their lives.",
+    "vote_average": 5.6,
+    "vote_count": 30
+  }
+]

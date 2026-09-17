@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Tidings for the Season",
+    "year": 2025,
+    "tmdbId": 1547915,
+    "imdbId": "tt38353925",
+    "tmdb_id": 1547915,
+    "imdb_id": "tt38353925",
+    "poster": "/images/posters/1547915.webp",
+    "overview": "A local newscaster’s life changes when he meets a 10-year-old fan — and his single mother — during the holidays.",
+    "vote_average": 5.2,
+    "vote_count": 4
+  },
+  {
+    "title": "Sealed with a List",
+    "year": 2023,
+    "tmdbId": 1180688,
+    "imdbId": "tt29233395",
+    "tmdb_id": 1180688,
+    "imdb_id": "tt29233395",
+    "poster": "/images/posters/1180688.webp",
+    "overview": "Carley is determined to get through her list of abandoned resolutions from last year and enlists the help of coworker Wyatt.",
+    "vote_average": 6.413,
+    "vote_count": 23
+  },
+  {
+    "title": "My Christmas Family Tree",
+    "year": 2021,
+    "tmdbId": 874194,
+    "imdbId": "tt15508150",
+    "tmdb_id": 874194,
+    "imdb_id": "tt15508150",
+    "poster": "/images/posters/874194.webp",
+    "overview": "When Vanessa receives the results from her Family Tree DNA test, she discovers a family she didn't know existed and travels to their home for Christmas.",
+    "vote_average": 7.19,
+    "vote_count": 42
+  }
+]

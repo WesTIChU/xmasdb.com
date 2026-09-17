@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Our Holiday Story",
+    "year": 2024,
+    "tmdbId": 1360780,
+    "imdbId": "tt33437460",
+    "tmdb_id": 1360780,
+    "imdb_id": "tt33437460",
+    "poster": "/images/posters/1360780.webp",
+    "overview": "Dave and Nell recount the Christmas where they unknowingly fell in love while working as rivals on a town festival, as their daughter’s boyfriend struggles to navigate his own relationship.",
+    "vote_average": 6,
+    "vote_count": 30
+  },
+  {
+    "title": "Checkin' It Twice",
+    "year": 2023,
+    "tmdbId": 1166012,
+    "imdbId": "tt29352965",
+    "tmdb_id": 1166012,
+    "imdb_id": "tt29352965",
+    "poster": "/images/posters/1166012.webp",
+    "overview": "A journeyman hockey player falls for a real estate agent in a career crisis when he's traded to her hometown and moves into the cottage in her hockey-loving family's backyard.",
+    "vote_average": 6.5,
+    "vote_count": 34
+  }
+]

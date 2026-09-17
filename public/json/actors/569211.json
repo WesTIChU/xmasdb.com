@@ -1,0 +1,50 @@
+[
+  {
+    "title": "The Mistletoe Secret",
+    "year": 2019,
+    "tmdbId": 631420,
+    "imdbId": "tt10768348",
+    "tmdb_id": 631420,
+    "imdb_id": "tt10768348",
+    "poster": "/images/posters/631420.webp",
+    "overview": "Aria Eubank convinces a famous travel writer to do a feature story on her beloved hometown, however, when the travel guru and his ghostwriter both show up, Aria finds her heart torn between Sterling Masters and Alex Barlett, the man who has genuinely fallen for her.",
+    "vote_average": 6.7,
+    "vote_count": 27
+  },
+  {
+    "title": "A Gingerbread Romance",
+    "year": 2018,
+    "tmdbId": 550033,
+    "imdbId": "tt9028866",
+    "tmdb_id": 550033,
+    "imdb_id": "tt9028866",
+    "poster": "/images/posters/550033.webp",
+    "overview": "Successful architect Taylor Scott is poised for a promotion and a move to Paris but before that’s decided, her boss tasks her with creating a life-sized gingerbread house for a holiday competition. She partners with pastry chef Adam Dale, and though their styles are different, they form a deep connection working together.",
+    "vote_average": 5.083,
+    "vote_count": 30
+  },
+  {
+    "title": "With Love, Christmas",
+    "year": 2017,
+    "tmdbId": 474976,
+    "imdbId": "tt7647000",
+    "tmdb_id": 474976,
+    "imdb_id": "tt7647000",
+    "poster": "/images/posters/474976.webp",
+    "overview": "Advertising execs Melanie Welsh and Donovan Goodwin disagree on a cellphone Christmas commercial they’re pitching. He says his sleek design will win over the client but she knows it lacks holiday spirit.",
+    "vote_average": 6.877,
+    "vote_count": 61
+  },
+  {
+    "title": "Every Christmas Has a Story",
+    "year": 2016,
+    "tmdbId": 415959,
+    "imdbId": "tt6215212",
+    "tmdb_id": 415959,
+    "imdb_id": "tt6215212",
+    "poster": "/images/posters/415959.webp",
+    "overview": "A TV personality has an on-air snafu and admits she hates Christmas. Following the debacle, she is invited to the Most Christmas-y town in America to try and repair her image. Forced to work with her ex-boyfriend Jack, the show’s producer, the magic of Christmas and this special town will change the way she views Christmas and her life.",
+    "vote_average": 5.2,
+    "vote_count": 81
+  }
+]

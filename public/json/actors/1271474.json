@@ -1,0 +1,50 @@
+[
+  {
+    "title": "My Christmas Family Tree",
+    "year": 2021,
+    "tmdbId": 874194,
+    "imdbId": "tt15508150",
+    "tmdb_id": 874194,
+    "imdb_id": "tt15508150",
+    "poster": "/images/posters/874194.webp",
+    "overview": "When Vanessa receives the results from her Family Tree DNA test, she discovers a family she didn't know existed and travels to their home for Christmas.",
+    "vote_average": 7.19,
+    "vote_count": 42
+  },
+  {
+    "title": "Christmas She Wrote",
+    "year": 2020,
+    "tmdbId": 746048,
+    "imdbId": "tt13097858",
+    "tmdb_id": 746048,
+    "imdb_id": "tt13097858",
+    "poster": "/images/posters/746048.webp",
+    "overview": "When Kayleigh, a romance writer, has her column cancelled right before Christmas, she heads home to reconnect with her family. Kayleigh gets an unexpected visit from the man who cancelled her column who fights not only to bring her back to the publisher but also for her heart.",
+    "vote_average": 6.1,
+    "vote_count": 34
+  },
+  {
+    "title": "Finding Santa",
+    "year": 2017,
+    "tmdbId": 474985,
+    "imdbId": "tt7385392",
+    "tmdb_id": 474985,
+    "imdb_id": "tt7385392",
+    "poster": "/images/posters/474985.webp",
+    "overview": "Christmas is a busy, busy time for the residents of Green River, particularly for Grace Long, the third generation of her family to steward the New England town’s signature Christmas Eve parade. This year’s audience for the parade promises to be in the millions, thanks to a national morning show that has chosen Green River as the site of its Christmas Eve day program.",
+    "vote_average": 6.668,
+    "vote_count": 98
+  },
+  {
+    "title": "Northpole: Open for Christmas",
+    "year": 2015,
+    "tmdbId": 339543,
+    "imdbId": "tt4843046",
+    "tmdb_id": 339543,
+    "imdb_id": "tt4843046",
+    "poster": "/images/posters/339543.webp",
+    "overview": "A successful businesswoman, Mackenzie, inherits her beloved aunt's inn, and chooses to restore the hotel to its original grandeur only to sell it right before Christmas. Unbeknownst to Mackenzie, she receives some unexpected help from a team of elves headed by the cheerful Clementine, who helps Mackenzie rediscover the true meaning of Christmas.",
+    "vote_average": 5.823,
+    "vote_count": 99
+  }
+]

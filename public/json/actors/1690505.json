@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Christmas Getaway",
+    "year": 2017,
+    "tmdbId": 480623,
+    "imdbId": "tt7688990",
+    "tmdb_id": 480623,
+    "imdb_id": "tt7688990",
+    "poster": "/images/posters/480623.webp",
+    "overview": "When a reservation mix-up at a mountain resort forces a newly-single travel writer to share a cabin with a handsome widower and his precocious daughter over the holidays, their lives are transformed by the magic of Christmas and the unexpected power of love.",
+    "vote_average": 6.961,
+    "vote_count": 153
+  },
+  {
+    "title": "Journey Back to Christmas",
+    "year": 2016,
+    "tmdbId": 421758,
+    "imdbId": "tt6269192",
+    "tmdb_id": 421758,
+    "imdb_id": "tt6269192",
+    "poster": "/images/posters/421758.webp",
+    "overview": "WWII has ended and Hanna is still grieving over her husband's disappearance. When the Christmas Comet appears for the first time in 70 years, Hanna is caught in a terrible storm and knocked unconscious. When she wakes up, she's in 2016.",
+    "vote_average": 6.5,
+    "vote_count": 95
+  }
+]

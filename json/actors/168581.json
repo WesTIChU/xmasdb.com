@@ -1,0 +1,74 @@
+[
+  {
+    "title": "Holiday Heritage",
+    "year": 2022,
+    "tmdbId": 1028560,
+    "imdbId": "tt22307204",
+    "tmdb_id": 1028560,
+    "imdb_id": "tt22307204",
+    "poster": "/images/posters/1028560.webp",
+    "overview": "Ella returns to her hometown to mend fences with her fractured family. With the help of Griffin, her ex-boyfriend, she encourages her family to celebrate Christmas and Kwanzaa and to heal their past wounds before it’s too late.",
+    "vote_average": 4.111,
+    "vote_count": 9
+  },
+  {
+    "title": "Christmas in Evergreen: Bells Are Ringing",
+    "year": 2020,
+    "tmdbId": 746047,
+    "imdbId": "tt13194940",
+    "tmdb_id": 746047,
+    "imdb_id": "tt13194940",
+    "poster": "/images/posters/746047.webp",
+    "overview": "As Michelle’s wedding approaches, Hannah steps up to help finish the launch of the new Evergreen museum while questioning her relationship and future with Elliot.",
+    "vote_average": 5.7,
+    "vote_count": 32
+  },
+  {
+    "title": "Christmas In Evergreen: Tidings of Joy",
+    "year": 2019,
+    "tmdbId": 630921,
+    "imdbId": "tt10925460",
+    "tmdb_id": 630921,
+    "imdb_id": "tt10925460",
+    "poster": "/images/posters/630921.webp",
+    "overview": "A skeptical writer shows up in Evergreen to get the scoop on the town's famed passion for Christmas during a search for a long-lost time capsule.",
+    "vote_average": 6.827,
+    "vote_count": 52
+  },
+  {
+    "title": "Christmas in Evergreen: Letters to Santa",
+    "year": 2018,
+    "tmdbId": 550025,
+    "imdbId": "tt9033634",
+    "tmdb_id": 550025,
+    "imdb_id": "tt9033634",
+    "poster": "/images/posters/550025.webp",
+    "overview": "Lisa's trip home to Evergreen for the holidays finds her shepherding an effort to save the town's beloved general store, fulfilling the wishes of a Christmas past and finding a romance full of Christmas magic.",
+    "vote_average": 6.8,
+    "vote_count": 62
+  },
+  {
+    "title": "Christmas in Evergreen",
+    "year": 2017,
+    "tmdbId": 474977,
+    "imdbId": "tt7440948",
+    "tmdb_id": 474977,
+    "imdb_id": "tt7440948",
+    "poster": "/images/posters/474977.webp",
+    "overview": "Allie, a veterinarian in Evergreen, reluctantly will spend Christmas with her long-distance boyfriend. Bound for the airport, she has engine trouble, and Ryan, headed to Florida with his daughter Zoe, stops to help. Sure they won’t meet again, they ignore their attraction, and part ways. At the diner, Zoe wishes on a snow globe, and a storm seems to grant her wish.",
+    "vote_average": 6.4,
+    "vote_count": 111
+  },
+  {
+    "title": "Angel of Christmas",
+    "year": 2015,
+    "tmdbId": 363484,
+    "imdbId": "tt5097970",
+    "tmdb_id": 363484,
+    "imdb_id": "tt5097970",
+    "poster": "/images/posters/363484.webp",
+    "overview": "Susan is a newspaper staffer who decides to generate some Christmas spirit by writing an article about her family’s storied 100-year-old, hand-carved, heirloom Christmas angel. This leads her to accidentally meet Brady, a cute, upbeat artist who insists that he and Susan become fast friends (at least). It turns out that this angel also has the spiritual power to bring people together – as it seems to be doing with Susan and Brady. What’s behind this enchanted ornament? As time moves on, more about this captivating artifact is revealed.",
+    "vote_average": 6.058,
+    "vote_count": 77
+  }
+]

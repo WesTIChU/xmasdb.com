@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Christmas on Cherry Lane",
+    "year": 2023,
+    "tmdbId": 1180665,
+    "imdbId": "tt28287106",
+    "tmdb_id": 1180665,
+    "imdb_id": "tt28287106",
+    "poster": "/images/posters/1180665.webp",
+    "overview": "Three couples at different parts of life navigate big turning points in their lives over the holidays.",
+    "vote_average": 6.224,
+    "vote_count": 29
+  },
+  {
+    "title": "Never Kiss a Man in a Christmas Sweater",
+    "year": 2020,
+    "tmdbId": 746034,
+    "imdbId": "tt13192538",
+    "tmdb_id": 746034,
+    "imdb_id": "tt13192538",
+    "poster": "/images/posters/746034.webp",
+    "overview": "Single mom Maggie is facing Christmas alone until Lucas crashes into her life and becomes an unexpected house guest. Together they overcome Christmas while finding comfort in their growing bond.",
+    "vote_average": 6.483,
+    "vote_count": 58
+  }
+]

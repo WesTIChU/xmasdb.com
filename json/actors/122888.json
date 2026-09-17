@@ -1,0 +1,110 @@
+[
+  {
+    "title": "An Alpine Holiday",
+    "year": 2025,
+    "tmdbId": 1547921,
+    "imdbId": "tt36836189",
+    "tmdb_id": 1547921,
+    "imdb_id": "tt36836189",
+    "poster": "/images/posters/1547921.webp",
+    "overview": "Two estranged sisters reunite as their grandmother’s last wish to travel to the French Alps for Christmas to recreate her first trip there with their grandfather. While bonding as sisters, they also make room for romance with between one sister and their French mountaineer guide.",
+    "vote_average": 6.818,
+    "vote_count": 12
+  },
+  {
+    "title": "Jingle Bell Run",
+    "year": 2024,
+    "tmdbId": 1361135,
+    "imdbId": "tt32432584",
+    "tmdb_id": 1361135,
+    "imdb_id": "tt32432584",
+    "poster": "/images/posters/1361135.webp",
+    "overview": "Self-described bookworm Avery is paired with retired hockey star Wes to compete in a holiday race across America. The team struggles through themed challenges until romance runs its course.",
+    "vote_average": 6.021,
+    "vote_count": 23
+  },
+  {
+    "title": "Sister Swap: A Hometown Holiday",
+    "year": 2021,
+    "tmdbId": 866665,
+    "imdbId": "tt6540706",
+    "tmdb_id": 866665,
+    "imdb_id": "tt6540706",
+    "poster": "/images/posters/866665.webp",
+    "overview": "Jennifer and Meg Swift are two sisters who are very close despite living far apart. Jennifer is in Salt Lake City, running a successful restaurant she started with her late husband and raising her teenaged son Simon, Meg stayed in their hometown of Hazelwood, helping their parents run the local bakery.",
+    "vote_average": 5.7,
+    "vote_count": 31
+  },
+  {
+    "title": "Sister Swap: Christmas in the City",
+    "year": 2021,
+    "tmdbId": 866669,
+    "imdbId": "tt6540724",
+    "tmdb_id": 866669,
+    "imdb_id": "tt6540724",
+    "poster": "/images/posters/866669.webp",
+    "overview": "Jennifer and Meg Swift are two sisters who are very close despite living far apart. Jennifer is in Salt Lake City, running a successful restaurant she started with her late husband and raising her teenaged son Simon, Meg stayed in their hometown of Hazelwood, helping their parents run the local bakery.",
+    "vote_average": 6.1,
+    "vote_count": 25
+  },
+  {
+    "title": "Christmas in Evergreen: Bells Are Ringing",
+    "year": 2020,
+    "tmdbId": 746047,
+    "imdbId": "tt13194940",
+    "tmdb_id": 746047,
+    "imdb_id": "tt13194940",
+    "poster": "/images/posters/746047.webp",
+    "overview": "As Michelle’s wedding approaches, Hannah steps up to help finish the launch of the new Evergreen museum while questioning her relationship and future with Elliot.",
+    "vote_average": 5.7,
+    "vote_count": 32
+  },
+  {
+    "title": "Never Kiss a Man in a Christmas Sweater",
+    "year": 2020,
+    "tmdbId": 746034,
+    "imdbId": "tt13192538",
+    "tmdb_id": 746034,
+    "imdb_id": "tt13192538",
+    "poster": "/images/posters/746034.webp",
+    "overview": "Single mom Maggie is facing Christmas alone until Lucas crashes into her life and becomes an unexpected house guest. Together they overcome Christmas while finding comfort in their growing bond.",
+    "vote_average": 6.483,
+    "vote_count": 58
+  },
+  {
+    "title": "Christmas In Evergreen: Tidings of Joy",
+    "year": 2019,
+    "tmdbId": 630921,
+    "imdbId": "tt10925460",
+    "tmdb_id": 630921,
+    "imdb_id": "tt10925460",
+    "poster": "/images/posters/630921.webp",
+    "overview": "A skeptical writer shows up in Evergreen to get the scoop on the town's famed passion for Christmas during a search for a long-lost time capsule.",
+    "vote_average": 6.827,
+    "vote_count": 52
+  },
+  {
+    "title": "Christmas in Evergreen: Letters to Santa",
+    "year": 2018,
+    "tmdbId": 550025,
+    "imdbId": "tt9033634",
+    "tmdb_id": 550025,
+    "imdb_id": "tt9033634",
+    "poster": "/images/posters/550025.webp",
+    "overview": "Lisa's trip home to Evergreen for the holidays finds her shepherding an effort to save the town's beloved general store, fulfilling the wishes of a Christmas past and finding a romance full of Christmas magic.",
+    "vote_average": 6.8,
+    "vote_count": 62
+  },
+  {
+    "title": "Christmas in Evergreen",
+    "year": 2017,
+    "tmdbId": 474977,
+    "imdbId": "tt7440948",
+    "tmdb_id": 474977,
+    "imdb_id": "tt7440948",
+    "poster": "/images/posters/474977.webp",
+    "overview": "Allie, a veterinarian in Evergreen, reluctantly will spend Christmas with her long-distance boyfriend. Bound for the airport, she has engine trouble, and Ryan, headed to Florida with his daughter Zoe, stops to help. Sure they won’t meet again, they ignore their attraction, and part ways. At the diner, Zoe wishes on a snow globe, and a storm seems to grant her wish.",
+    "vote_average": 6.4,
+    "vote_count": 111
+  }
+]

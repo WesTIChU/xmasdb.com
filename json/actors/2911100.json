@@ -1,0 +1,38 @@
+[
+  {
+    "title": "The Holiday Sitter",
+    "year": 2022,
+    "tmdbId": 1027324,
+    "imdbId": "tt22296044",
+    "tmdb_id": 1027324,
+    "imdb_id": "tt22296044",
+    "poster": "/images/posters/1027324.webp",
+    "overview": "Sam is a workaholic bachelor who babysits his niece and nephew before the holidays when his sister and her husband have to go out of town. Completely out of his element, he recruits help from their handsome neighbor Jason and finds himself in an unexpected romance.",
+    "vote_average": 6.659,
+    "vote_count": 44
+  },
+  {
+    "title": "Three Wise Men and a Baby",
+    "year": 2022,
+    "tmdbId": 1028541,
+    "imdbId": "tt22247482",
+    "tmdb_id": 1028541,
+    "imdb_id": "tt22247482",
+    "poster": "/images/posters/1028541.webp",
+    "overview": "Three brothers get the surprise of their lives when they are forced to work together to care for a baby over the holidays. As they slowly get the hang of things, they find themselves on unexpected journeys of self-discovery and begin to rebuild their relationships as brothers, as well as the damaged romantic and professional relationships in their respective lives…all while rediscovering their love of Christmas.",
+    "vote_average": 7.5,
+    "vote_count": 64
+  },
+  {
+    "title": "The Christmas House",
+    "year": 2020,
+    "tmdbId": 746042,
+    "imdbId": "tt12950902",
+    "tmdb_id": 746042,
+    "imdb_id": "tt12950902",
+    "poster": "/images/posters/746042.webp",
+    "overview": "Working through some difficult decisions, Mitchell family matriarch Phylis and patriarch Bill, have summoned their two grown sons – TV stars Mike Mitchell and Brandon Mitchell – home for the holidays. It is their hope that bringing the family together to recreate the Christmas house, will help them find resolution and make a memorable holiday for the entire family and community.",
+    "vote_average": 5.927,
+    "vote_count": 55
+  }
+]

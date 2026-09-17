@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Hanukkah on Rye",
+    "year": 2022,
+    "tmdbId": 1028555,
+    "imdbId": "tt22307422",
+    "tmdb_id": 1028555,
+    "imdb_id": "tt22307422",
+    "poster": "/images/posters/1028555.webp",
+    "overview": "A matchmaker connects Molly and Jacob, but their new romance is put to the test when they realize that they are competing deli owners. Will a Hanukkah miracle keep them together?",
+    "vote_average": 6.154,
+    "vote_count": 26
+  },
+  {
+    "title": "Christmas by Starlight",
+    "year": 2020,
+    "tmdbId": 746045,
+    "imdbId": "tt13206476",
+    "tmdb_id": 746045,
+    "imdb_id": "tt13206476",
+    "poster": "/images/posters/746045.webp",
+    "overview": "Annie, a lawyer, must help her loved ones this holiday season. Her family’s restaurant, The Starlight Café, is slated for demolition. The heir to the development firm responsible, William, makes her an unlikely proposition: he’ll spare the café if Annie spends the week “appearing” as the legal counsel his father is demanding he hire in the wake of some costly mistakes.",
+    "vote_average": 6.8,
+    "vote_count": 55
+  },
+  {
+    "title": "Merry & Bright",
+    "year": 2019,
+    "tmdbId": 626307,
+    "imdbId": "tt10345022",
+    "tmdb_id": 626307,
+    "imdb_id": "tt10345022",
+    "poster": "/images/posters/626307.webp",
+    "overview": "Cate, CEO of the Merry and Bright Candy Cane Company, meets Gabe during the busy Christmas season. She assumes Gabe is the suitor her well-meaning mother is trying to set her up with when in reality, he works for Empire Corporate Recovery, which has been hired to take a closer look at Merry and Bright's operation and find ways to make the company more profitable. As Cate and Gabe begin to work together, they find ways to elevate the business and find that they have more in common than savvy business sense.",
+    "vote_average": 6.2,
+    "vote_count": 52
+  }
+]

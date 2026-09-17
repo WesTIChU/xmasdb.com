@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Following Yonder Star",
+    "year": 2024,
+    "tmdbId": 1360794,
+    "imdbId": "tt33903431",
+    "tmdb_id": 1360794,
+    "imdb_id": "tt33903431",
+    "poster": "/images/posters/1360794.webp",
+    "overview": "When a scandal upends a famous TV mother’s life ahead of the holidays, she heads to a luxury Vermont resort for Christmas. Upon arriving, a booking error leads her to a quaint B&B owned by an astronomy teacher.",
+    "vote_average": 5.8,
+    "vote_count": 18
+  },
+  {
+    "title": "Hanukkah on the Rocks",
+    "year": 2024,
+    "tmdbId": 1361222,
+    "imdbId": "tt33478583",
+    "tmdb_id": 1361222,
+    "imdb_id": "tt33478583",
+    "poster": "/images/posters/1361222.webp",
+    "overview": "A week before Hanukkah, recently unemployed lawyer Tory embarks on a journey to find Hanukkah candles, leading her to a Chicago bar where she transforms the holiday spirit, discovers love, and finds the courage to pursue a new path in life.",
+    "vote_average": 5,
+    "vote_count": 7
+  },
+  {
+    "title": "The Christmas Club",
+    "year": 2019,
+    "tmdbId": 628332,
+    "imdbId": "tt10667026",
+    "tmdb_id": 628332,
+    "imdb_id": "tt10667026",
+    "poster": "/images/posters/628332.webp",
+    "overview": "Two busy strangers meet when they help an elderly woman find her lost Christmas savings. Thanks to fate and Christmas magic, they also find something they were both missing: true love.",
+    "vote_average": 6.3,
+    "vote_count": 35
+  }
+]

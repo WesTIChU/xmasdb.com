@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Chateau Christmas",
+    "year": 2020,
+    "tmdbId": 737779,
+    "imdbId": "tt13350688",
+    "tmdb_id": 737779,
+    "imdb_id": "tt13350688",
+    "poster": "/images/posters/737779.webp",
+    "overview": "Margot, a world-renowned pianist, returns to Chateau Newhaus to spend the holidays with her family and is reunited with an ex who helps her rediscover her passion for music.",
+    "vote_average": 6.16,
+    "vote_count": 50
+  },
+  {
+    "title": "Christmas Comes Twice",
+    "year": 2020,
+    "tmdbId": 737782,
+    "imdbId": "tt13342004",
+    "tmdb_id": 737782,
+    "imdb_id": "tt13342004",
+    "poster": "/images/posters/737782.webp",
+    "overview": "When Cheryl visits the Christmas carnival in her hometown, she gets a second chance in life when she is transported to Christmas five years in the past.",
+    "vote_average": 6.3,
+    "vote_count": 17
+  }
+]

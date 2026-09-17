@@ -1,0 +1,38 @@
+[
+  {
+    "title": "A Make or Break Holiday",
+    "year": 2025,
+    "tmdbId": 1547927,
+    "imdbId": "tt38354998",
+    "tmdb_id": 1547927,
+    "imdb_id": "tt38354998",
+    "poster": "/images/posters/1547927.webp",
+    "overview": "Despite recently going on a break, couple Liv and Daniel had planned to host their families together for Christmas. So, they decide to keep their original plans and pretend to still be together for the holidays.",
+    "vote_average": 7.667,
+    "vote_count": 12
+  },
+  {
+    "title": "The Christmas Cup",
+    "year": 2025,
+    "tmdbId": 1547922,
+    "imdbId": "tt38354991",
+    "tmdb_id": 1547922,
+    "imdb_id": "tt38354991",
+    "poster": "/images/posters/1547922.webp",
+    "overview": "After an injury, Staff Sergeant Kelly Brandt returns home for the holidays and her family pushes her to get involved in the annual Christmas Cup against the rival town; with that, she teams up with Fire Captain Quinn Stokley.",
+    "vote_average": 5.167,
+    "vote_count": 6
+  },
+  {
+    "title": "A Kismet Christmas",
+    "year": 2022,
+    "tmdbId": 1027351,
+    "imdbId": "tt22196454",
+    "tmdb_id": 1027351,
+    "imdb_id": "tt22196454",
+    "poster": "/images/posters/1027351.webp",
+    "overview": "Sarah is a children’s book author who returns to her hometown, where she reconnects with her family and Travis, her teenage crush. She soon discovers that a long-held family legend might actually be true.",
+    "vote_average": 6.333,
+    "vote_count": 18
+  }
+]

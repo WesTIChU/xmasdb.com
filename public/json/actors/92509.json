@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Homegrown Christmas",
+    "year": 2018,
+    "tmdbId": 550030,
+    "imdbId": "tt9032562",
+    "tmdb_id": 550030,
+    "imdb_id": "tt9032562",
+    "poster": "/images/posters/550030.webp",
+    "overview": "After stepping down as CEO of her dream job, Maddie heads home for the holidays to gain perspective. She finds herself running into her old high school sweetheart Carter, and tensions quickly arise. When forced to put together a Christmas dance for the local high school, Carter and Maddie find themselves putting their differences aside and rediscover what made them fall in love all those years ago.",
+    "vote_average": 4.833,
+    "vote_count": 38
+  },
+  {
+    "title": "Every Christmas Has a Story",
+    "year": 2016,
+    "tmdbId": 415959,
+    "imdbId": "tt6215212",
+    "tmdb_id": 415959,
+    "imdb_id": "tt6215212",
+    "poster": "/images/posters/415959.webp",
+    "overview": "A TV personality has an on-air snafu and admits she hates Christmas. Following the debacle, she is invited to the Most Christmas-y town in America to try and repair her image. Forced to work with her ex-boyfriend Jack, the show’s producer, the magic of Christmas and this special town will change the way she views Christmas and her life.",
+    "vote_average": 5.2,
+    "vote_count": 81
+  },
+  {
+    "title": "Northpole: Open for Christmas",
+    "year": 2015,
+    "tmdbId": 339543,
+    "imdbId": "tt4843046",
+    "tmdb_id": 339543,
+    "imdb_id": "tt4843046",
+    "poster": "/images/posters/339543.webp",
+    "overview": "A successful businesswoman, Mackenzie, inherits her beloved aunt's inn, and chooses to restore the hotel to its original grandeur only to sell it right before Christmas. Unbeknownst to Mackenzie, she receives some unexpected help from a team of elves headed by the cheerful Clementine, who helps Mackenzie rediscover the true meaning of Christmas.",
+    "vote_average": 5.823,
+    "vote_count": 99
+  }
+]

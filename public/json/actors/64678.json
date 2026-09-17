@@ -1,0 +1,38 @@
+[
+  {
+    "title": "A Make or Break Holiday",
+    "year": 2025,
+    "tmdbId": 1547927,
+    "imdbId": "tt38354998",
+    "tmdb_id": 1547927,
+    "imdb_id": "tt38354998",
+    "poster": "/images/posters/1547927.webp",
+    "overview": "Despite recently going on a break, couple Liv and Daniel had planned to host their families together for Christmas. So, they decide to keep their original plans and pretend to still be together for the holidays.",
+    "vote_average": 7.667,
+    "vote_count": 12
+  },
+  {
+    "title": "Hanukkah on Rye",
+    "year": 2022,
+    "tmdbId": 1028555,
+    "imdbId": "tt22307422",
+    "tmdb_id": 1028555,
+    "imdb_id": "tt22307422",
+    "poster": "/images/posters/1028555.webp",
+    "overview": "A matchmaker connects Molly and Jacob, but their new romance is put to the test when they realize that they are competing deli owners. Will a Hanukkah miracle keep them together?",
+    "vote_average": 6.154,
+    "vote_count": 26
+  },
+  {
+    "title": "You, Me and the Christmas Trees",
+    "year": 2021,
+    "tmdbId": 877692,
+    "imdbId": "tt15484422",
+    "tmdb_id": 877692,
+    "imdb_id": "tt15484422",
+    "poster": "/images/posters/877692.webp",
+    "overview": "An arborist helps a fourth generation Christmas tree farmer whose evergreens are dying just before the holiday. As she tries to get to the root of the problem before the town tree lighting, they begin to fall in love.",
+    "vote_average": 6.6,
+    "vote_count": 35
+  }
+]

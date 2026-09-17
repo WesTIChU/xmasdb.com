@@ -1,0 +1,38 @@
+[
+  {
+    "title": "A Big Fat Family Christmas",
+    "year": 2022,
+    "tmdbId": 1028559,
+    "imdbId": "tt22262600",
+    "tmdb_id": 1028559,
+    "imdb_id": "tt22262600",
+    "poster": "/images/posters/1028559.webp",
+    "overview": "Liv is a photojournalist eager to make it on her own. To get a dream assignment – shooting the Chang family’s annual holiday party for a cover story – she doesn’t reveal that they are in fact, her family. When she finds herself growing close to Henry, the coworker covering the story with her, she wants to confide in him but doesn’t want to jeopardize her big break.",
+    "vote_average": 5.3,
+    "vote_count": 11
+  },
+  {
+    "title": "Jingle Bell Bride",
+    "year": 2020,
+    "tmdbId": 737763,
+    "imdbId": "tt12877642",
+    "tmdb_id": 737763,
+    "imdb_id": "tt12877642",
+    "poster": "/images/posters/737763.webp",
+    "overview": "Wedding planner Jessica Perez travels to a remote town in Alaska to find a rare flower for a celebrity client and is charmed by the small town during Christmas, as well as the handsome local helping her.",
+    "vote_average": 6.4,
+    "vote_count": 32
+  },
+  {
+    "title": "A Midnight Kiss",
+    "year": 2018,
+    "tmdbId": 550036,
+    "imdbId": "tt9028890",
+    "tmdb_id": 550036,
+    "imdb_id": "tt9028890",
+    "poster": "/images/posters/550036.webp",
+    "overview": "With only one week to prepare, Mia Pearson and her family of party planners are given the biggest job in their company’s history: a New Year’s Eve party for tech entrepreneur Kate Clark. But when her brother breaks his leg and her parents head off on a planned vacation, Lisa must reluctantly enlist the help of her brother’s visiting college buddy, David Campos, to help her pull off the event which just so happens to fall on her favorite day of the year. But what Lisa didn’t plan on was falling in love in the process.",
+    "vote_average": 6,
+    "vote_count": 42
+  }
+]

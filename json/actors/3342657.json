@@ -1,0 +1,50 @@
+[
+  {
+    "title": "A Suite Holiday Romance",
+    "year": 2025,
+    "tmdbId": 1547925,
+    "imdbId": "tt38354975",
+    "tmdb_id": 1547925,
+    "imdb_id": "tt38354975",
+    "poster": "/images/posters/1547925.webp",
+    "overview": "During Christmas week, Sabrina jumps at the opportunity to ghostwrite a memoir for a famous art dealer at the iconic Grand Fairbanks Hotel in New York City. The week gets complicated when she meets a handsome British visitor at the hotel bar; she thinks he’s a member of the British aristocracy, and he thinks she’s a wealthy hotel guest.",
+    "vote_average": 6.889,
+    "vote_count": 9
+  },
+  {
+    "title": "A Carol for Two",
+    "year": 2024,
+    "tmdbId": 1360779,
+    "imdbId": "tt31438256",
+    "tmdb_id": 1360779,
+    "imdb_id": "tt31438256",
+    "poster": "/images/posters/1360779.webp",
+    "overview": "Violette dreams of Broadway, but lands a singing waitress gig at Fiore's. Her Christmas Eve duet with Alex, who resents her connections, could be her big break. As they rehearse, Alex's cousin Brad, with Alex's secret help, woos Violette. Alex develops feelings too, creating a messy love triangle that jeopardizes their shot at stardom.",
+    "vote_average": 6.2,
+    "vote_count": 9
+  },
+  {
+    "title": "A Christmas Cookie Catastrophe",
+    "year": 2022,
+    "tmdbId": 1028552,
+    "imdbId": "tt22207828",
+    "tmdb_id": 1028552,
+    "imdb_id": "tt22207828",
+    "poster": "/images/posters/1028552.webp",
+    "overview": "Annie Cooper has big shoes to fill when she takes over as CEO of her late grandmother’s small-town cookie company and is doing her best to help their struggling business get back on track. That task gets more daunting when her grandmother’s secret recipe is stolen during the Christmas party. As Annie tries to crack the case and uncover the culprit she works with Sam, the owner of a local bakery, to recreate the recipe in the hope of saving the company and her job.  As Annie and Sam bake batch after batch in pursuit of the perfect one, they begin to learn that their lives go together like milk and cookies.",
+    "vote_average": 5.635,
+    "vote_count": 37
+  },
+  {
+    "title": "'Tis the Season to be Merry",
+    "year": 2021,
+    "tmdbId": 888500,
+    "imdbId": "tt15739902",
+    "tmdb_id": 888500,
+    "imdb_id": "tt15739902",
+    "poster": "/images/posters/888500.webp",
+    "overview": "Looking for a fresh angle to her book on relationships, Merry heads to snow-covered Vermont. She finds a new perspective and Christmas cheer with charismatic aid worker Chris.",
+    "vote_average": 6.093,
+    "vote_count": 54
+  }
+]

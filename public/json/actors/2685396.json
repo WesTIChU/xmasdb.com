@@ -1,0 +1,38 @@
+[
+  {
+    "title": "You, Me and the Christmas Trees",
+    "year": 2021,
+    "tmdbId": 877692,
+    "imdbId": "tt15484422",
+    "tmdb_id": 877692,
+    "imdb_id": "tt15484422",
+    "poster": "/images/posters/877692.webp",
+    "overview": "An arborist helps a fourth generation Christmas tree farmer whose evergreens are dying just before the holiday. As she tries to get to the root of the problem before the town tree lighting, they begin to fall in love.",
+    "vote_average": 6.6,
+    "vote_count": 35
+  },
+  {
+    "title": "Five Star Christmas",
+    "year": 2020,
+    "tmdbId": 746060,
+    "imdbId": "tt13320784",
+    "tmdb_id": 746060,
+    "imdb_id": "tt13320784",
+    "poster": "/images/posters/746060.webp",
+    "overview": "After moving back to her hometown, Lisa (Lenz) plots with her siblings and grandparents to help her father's bed and breakfast get a five-star review from an incognito travel critic (Webster), but ends up falling for him, not knowing he is the real critic.",
+    "vote_average": 6.865,
+    "vote_count": 48
+  },
+  {
+    "title": "A Gingerbread Romance",
+    "year": 2018,
+    "tmdbId": 550033,
+    "imdbId": "tt9028866",
+    "tmdb_id": 550033,
+    "imdb_id": "tt9028866",
+    "poster": "/images/posters/550033.webp",
+    "overview": "Successful architect Taylor Scott is poised for a promotion and a move to Paris but before that’s decided, her boss tasks her with creating a life-sized gingerbread house for a holiday competition. She partners with pastry chef Adam Dale, and though their styles are different, they form a deep connection working together.",
+    "vote_average": 5.083,
+    "vote_count": 30
+  }
+]

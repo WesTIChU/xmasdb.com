@@ -1,0 +1,26 @@
+[
+  {
+    "title": "The Santa Stakeout",
+    "year": 2021,
+    "tmdbId": 874238,
+    "imdbId": "tt15737510",
+    "tmdb_id": 874238,
+    "imdb_id": "tt15737510",
+    "poster": "/images/posters/874238.webp",
+    "overview": "Tanya is a police detective who is reluctantly partnered with fellow detective Ryan to solve a recent string of heists taking place during high-profile holiday parties around town.",
+    "vote_average": 6.1,
+    "vote_count": 22
+  },
+  {
+    "title": "It's Beginning to Look a Lot Like Christmas",
+    "year": 2019,
+    "tmdbId": 630923,
+    "imdbId": "tt10952042",
+    "tmdb_id": 630923,
+    "imdb_id": "tt10952042",
+    "poster": "/images/posters/630923.webp",
+    "overview": "When a New England Christmas decorating competition searches for the town with the most Christmas spirit, the Mayors of East and West Riverton go all out to get their towns to the top of the holiday heap.",
+    "vote_average": 6.2,
+    "vote_count": 40
+  }
+]

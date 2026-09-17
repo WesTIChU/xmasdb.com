@@ -1,0 +1,26 @@
+[
+  {
+    "title": "A Keller Christmas Vacation",
+    "year": 2025,
+    "tmdbId": 1547913,
+    "imdbId": "tt38353730",
+    "tmdb_id": 1547913,
+    "imdb_id": "tt38353730",
+    "poster": "/images/posters/1547913.webp",
+    "overview": "The Keller family, including the parents and their three adult children, decide to take a European river cruise touring the Christmas Markets over the holidays, and each sibling is going through their own life challenge.",
+    "vote_average": 5.909,
+    "vote_count": 11
+  },
+  {
+    "title": "A Heidelberg Holiday",
+    "year": 2023,
+    "tmdbId": 1074788,
+    "imdbId": "tt29231347",
+    "tmdb_id": 1074788,
+    "imdb_id": "tt29231347",
+    "poster": "/images/posters/1074788.webp",
+    "overview": "Heidi heads to the Heidelberg Christmas market to sell her hand-painted ornaments. While there, she falls for a local artisan who helps her reconnect with her lost heritage.",
+    "vote_average": 6.176,
+    "vote_count": 37
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "title": "#Xmas",
+    "year": 2022,
+    "tmdbId": 1028550,
+    "imdbId": "tt9892854",
+    "tmdb_id": 1028550,
+    "imdb_id": "tt9892854",
+    "poster": "/images/posters/1028550.webp",
+    "overview": "When Jen gets the chance to enter a brand’s design contest, she poses as a family influencer, enlisting the help of her best friend, Max, and her baby nephew. When her video is selected as a finalist, Jen is torn on whether to go on with her perfect “family” or reveal the truth.",
+    "vote_average": 5.357,
+    "vote_count": 42
+  },
+  {
+    "title": "You, Me and the Christmas Trees",
+    "year": 2021,
+    "tmdbId": 877692,
+    "imdbId": "tt15484422",
+    "tmdb_id": 877692,
+    "imdb_id": "tt15484422",
+    "poster": "/images/posters/877692.webp",
+    "overview": "An arborist helps a fourth generation Christmas tree farmer whose evergreens are dying just before the holiday. As she tries to get to the root of the problem before the town tree lighting, they begin to fall in love.",
+    "vote_average": 6.6,
+    "vote_count": 35
+  },
+  {
+    "title": "A Timeless Christmas",
+    "year": 2020,
+    "tmdbId": 746039,
+    "imdbId": "tt13341414",
+    "tmdb_id": 746039,
+    "imdb_id": "tt13341414",
+    "poster": "/images/posters/746039.webp",
+    "overview": "Charles Whitley travels from 1903 to 2020 where he meets Megan Turner, a tour guide at his historic mansion, and experiences a 21st Century Christmas.",
+    "vote_average": 6.421,
+    "vote_count": 82
+  },
+  {
+    "title": "Christmas She Wrote",
+    "year": 2020,
+    "tmdbId": 746048,
+    "imdbId": "tt13097858",
+    "tmdb_id": 746048,
+    "imdb_id": "tt13097858",
+    "poster": "/images/posters/746048.webp",
+    "overview": "When Kayleigh, a romance writer, has her column cancelled right before Christmas, she heads home to reconnect with her family. Kayleigh gets an unexpected visit from the man who cancelled her column who fights not only to bring her back to the publisher but also for her heart.",
+    "vote_average": 6.1,
+    "vote_count": 34
+  },
+  {
+    "title": "Finding Santa",
+    "year": 2017,
+    "tmdbId": 474985,
+    "imdbId": "tt7385392",
+    "tmdb_id": 474985,
+    "imdb_id": "tt7385392",
+    "poster": "/images/posters/474985.webp",
+    "overview": "Christmas is a busy, busy time for the residents of Green River, particularly for Grace Long, the third generation of her family to steward the New England town’s signature Christmas Eve parade. This year’s audience for the parade promises to be in the millions, thanks to a national morning show that has chosen Green River as the site of its Christmas Eve day program.",
+    "vote_average": 6.668,
+    "vote_count": 98
+  },
+  {
+    "title": "A December Bride",
+    "year": 2016,
+    "tmdbId": 427045,
+    "imdbId": "tt5739680",
+    "tmdb_id": 427045,
+    "imdb_id": "tt5739680",
+    "poster": "/images/posters/427045.webp",
+    "overview": "Aspiring interior designer Layla is dreading the Christmastime wedding of her cousin who’s marrying Layla’s ex-fiancé. Although Seth is the one responsible for introducing the bride and groom, she begrudgingly accepts his offer to be her date as she’s out of options. Seth gets carried away at the reception and announces they’re engaged, forcing a mortified Layla to keep up the pretense.",
+    "vote_average": 7.1,
+    "vote_count": 163
+  }
+]

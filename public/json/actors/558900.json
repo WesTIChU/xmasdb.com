@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Melt My Heart This Christmas",
+    "year": 2025,
+    "tmdbId": 1547917,
+    "imdbId": "tt37333639",
+    "tmdb_id": 1547917,
+    "imdb_id": "tt37333639",
+    "poster": "/images/posters/1547917.webp",
+    "overview": "Holly, a passionate glassblower, has big dreams of showcasing her art at the local fair, but keeps getting rejected. So, she jumps at the opportunity to help a legendary glassblower while also helping Jack, the man who oversees the entries. Things get complicated when Holly starts secretly displaying her own art under a pseudonym — and it becomes a hit — but she also starts getting closer to Jack.",
+    "vote_average": 5.818,
+    "vote_count": 10
+  },
+  {
+    "title": "Navigating Christmas",
+    "year": 2023,
+    "tmdbId": 1180814,
+    "imdbId": "tt29499132",
+    "tmdb_id": 1180814,
+    "imdb_id": "tt29499132",
+    "poster": "/images/posters/1180814.webp",
+    "overview": "Recently divorced Melanie brings her son to a remote island for Christmas, where she connects with a lighthouse owner.",
+    "vote_average": 6,
+    "vote_count": 30
+  },
+  {
+    "title": "Undercover Holiday",
+    "year": 2022,
+    "tmdbId": 1028544,
+    "imdbId": "tt22295902",
+    "tmdb_id": 1028544,
+    "imdb_id": "tt22295902",
+    "poster": "/images/posters/1028544.webp",
+    "overview": "When returning home for the holidays, newly minted pop star Jaylen tells her protective family that Matt is her new beau, when in reality, he’s her overzealous security guard.",
+    "vote_average": 6.167,
+    "vote_count": 15
+  }
+]

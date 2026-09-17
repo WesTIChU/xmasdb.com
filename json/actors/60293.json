@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Christmas Waltz",
+    "year": 2020,
+    "tmdbId": 733032,
+    "imdbId": "tt11585200",
+    "tmdb_id": 733032,
+    "imdb_id": "tt11585200",
+    "poster": "/images/posters/733032.webp",
+    "overview": "After Avery’s storybook Christmas wedding is canceled unexpectedly, dance instructor Roman helps her rebuild her dreams.",
+    "vote_average": 7,
+    "vote_count": 64
+  },
+  {
+    "title": "Jingle Around the Clock",
+    "year": 2018,
+    "tmdbId": 551701,
+    "imdbId": "tt9168384",
+    "tmdb_id": 551701,
+    "imdb_id": "tt9168384",
+    "poster": "/images/posters/551701.webp",
+    "overview": "Elle decides to reunite her college friends for Christmas, but her plans are thwarted by an opportunity at work to spearhead a Christmas campaign relaunch. She's forced to team up with ad campaign \"fixer\" Max, who has a completely different take on the holidays. As the two work together, they find themselves falling for each other. With the help of a little Christmas magic, will Elle pull off the perfect Christmas reunion and find the love she’s been searching for?",
+    "vote_average": 6.75,
+    "vote_count": 46
+  }
+]

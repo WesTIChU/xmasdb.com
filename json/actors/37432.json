@@ -1,0 +1,38 @@
+[
+  {
+    "title": "The Christmas Baby",
+    "year": 2025,
+    "tmdbId": 1547929,
+    "imdbId": "tt36963465",
+    "tmdb_id": 1547929,
+    "imdb_id": "tt36963465",
+    "poster": "/images/posters/1547929.webp",
+    "overview": "When a baby boy shows up on their doorstep days before Christmas with a note written specially for them, Erin and Kelly must learn how to navigate their new relationship and career dynamics while unexpectedly caring for a newborn.",
+    "vote_average": 6.7,
+    "vote_count": 8
+  },
+  {
+    "title": "Gingerbread Miracle",
+    "year": 2021,
+    "tmdbId": 874244,
+    "imdbId": "tt15821582",
+    "tmdb_id": 874244,
+    "imdb_id": "tt15821582",
+    "poster": "/images/posters/874244.webp",
+    "overview": "Maya and Alex, old friends from high school, work together over Christmas to sell his uncle’s Mexican bakery famous for its gingerbread cookies that the patrons believe grants wishes.",
+    "vote_average": 6,
+    "vote_count": 30
+  },
+  {
+    "title": "Five Star Christmas",
+    "year": 2020,
+    "tmdbId": 746060,
+    "imdbId": "tt13320784",
+    "tmdb_id": 746060,
+    "imdb_id": "tt13320784",
+    "poster": "/images/posters/746060.webp",
+    "overview": "After moving back to her hometown, Lisa (Lenz) plots with her siblings and grandparents to help her father's bed and breakfast get a five-star review from an incognito travel critic (Webster), but ends up falling for him, not knowing he is the real critic.",
+    "vote_average": 6.865,
+    "vote_count": 48
+  }
+]

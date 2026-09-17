@@ -1,0 +1,38 @@
+[
+  {
+    "title": "The Snow Must Go On",
+    "year": 2025,
+    "tmdbId": 1547920,
+    "imdbId": "tt38354943",
+    "tmdb_id": 1547920,
+    "imdb_id": "tt38354943",
+    "poster": "/images/posters/1547920.webp",
+    "overview": "Nearly a decade after appearing on Broadway, Isaiah visits his family in upstate New York for the holidays and is unexpectedly put back on stage — this time to save his niece’s Christmas show. To make things more complicated, he learns that “an influential Broadway producer’s daughter is in the school production.”",
+    "vote_average": 5.125,
+    "vote_count": 8
+  },
+  {
+    "title": "Christmas On Call",
+    "year": 2024,
+    "tmdbId": 1361154,
+    "imdbId": "tt33829451",
+    "tmdb_id": 1361154,
+    "imdb_id": "tt33829451",
+    "poster": "/images/posters/1361154.webp",
+    "overview": "The lives of first responders in Philadelphia intersect over the holiday season while juggling work, personal lives, and their dedication to protect and serve their city.",
+    "vote_average": 7.1,
+    "vote_count": 25
+  },
+  {
+    "title": "The Santa Summit",
+    "year": 2023,
+    "tmdbId": 1142712,
+    "imdbId": "tt29381717",
+    "tmdb_id": 1142712,
+    "imdb_id": "tt29381717",
+    "poster": "/images/posters/1142712.webp",
+    "overview": "Amidst a sea of Santas at their town's annual Christmas celebration, three friends all find what they’re looking for: Christmas spirit, potential romance, and a strengthened bond of friendship.",
+    "vote_average": 6.517,
+    "vote_count": 29
+  }
+]

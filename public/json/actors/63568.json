@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Holiday Crashers",
+    "year": 2024,
+    "tmdbId": 1358987,
+    "imdbId": "tt32011999",
+    "tmdb_id": 1358987,
+    "imdb_id": "tt32011999",
+    "poster": "/images/posters/1358987.webp",
+    "overview": "Best friends Toni and Bri, working at a card print shop, decide to crash the amazing Christmas parties from some of the shop's confidential invitations for a bit of harmless fun. Harmless that is, until Toni is mistaken for a lawyer and they get whisked away to a fancy corporate Christmas retreat in the snowy Vermont mountains by handsome business mogul.",
+    "vote_average": 6.5,
+    "vote_count": 23
+  },
+  {
+    "title": "Friends & Family Christmas",
+    "year": 2023,
+    "tmdbId": 1180706,
+    "imdbId": "tt29684873",
+    "tmdb_id": 1180706,
+    "imdb_id": "tt29684873",
+    "poster": "/images/posters/1180706.webp",
+    "overview": "Daniella has recently moved to New York to pursue an art career and decides to stay in town to share the holidays with her circle of artist friends, instead of going home to see her sweet, if overbearing, parents. Amelia is a talented entertainment lawyer trying to stay focused on her work after a broken engagement. When Daniella and Amelia are set up by their parents, they agree to pretend that they are dating, to appease them for the holidays. However, as they spend time in each other’s worlds, they soon build a connection that is deeper than either of them could have hoped for.",
+    "vote_average": 6.5,
+    "vote_count": 30
+  },
+  {
+    "title": "A Fabled Holiday",
+    "year": 2022,
+    "tmdbId": 1028548,
+    "imdbId": "tt22295836",
+    "tmdb_id": 1028548,
+    "imdb_id": "tt22295836",
+    "poster": "/images/posters/1028548.webp",
+    "overview": "Talia and her childhood best friend Anderson unexpectedly reunite in a curiously familiar looking town full of Christmas spirit that restores its visitors when they need it most.",
+    "vote_average": 6.219,
+    "vote_count": 33
+  }
+]

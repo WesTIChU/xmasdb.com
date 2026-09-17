@@ -1,0 +1,38 @@
+[
+  {
+    "title": "A Newport Christmas",
+    "year": 2025,
+    "tmdbId": 1537560,
+    "imdbId": "tt36491858",
+    "tmdb_id": 1537560,
+    "imdb_id": "tt36491858",
+    "poster": "/images/posters/1537560.webp",
+    "overview": "A charitable and spirited Newport socialite in 1905 finds out her father intends for her to become engaged to a man she’s never met at the upcoming Christmas Eve ball. When she wishes for a different life, a man appears — and she somehow time-travels to 2025.",
+    "vote_average": 8.5,
+    "vote_count": 13
+  },
+  {
+    "title": "A Cozy Christmas Inn",
+    "year": 2022,
+    "tmdbId": 1012072,
+    "imdbId": "tt19394150",
+    "tmdb_id": 1012072,
+    "imdb_id": "tt19394150",
+    "poster": "/images/posters/1012072.webp",
+    "overview": "Real estate exec, Erika, travels to Alaska during Christmastime to acquire a bed and breakfast, only to discover that it’s owned by her ex. While there, she finds herself falling in love with the town and quite possibly him.",
+    "vote_average": 5.714,
+    "vote_count": 21
+  },
+  {
+    "title": "Christmas Under Wraps",
+    "year": 2014,
+    "tmdbId": 299584,
+    "imdbId": "tt4180032",
+    "tmdb_id": 299584,
+    "imdb_id": "tt4180032",
+    "poster": "/images/posters/299584.webp",
+    "overview": "When a driven doctor doesn't get the prestigious position she planned for, she unexpectedly finds herself moving to a remote Alaskan town. While she meets the locals and even starts a new romance, she has to learn to let the life she planned for give way to a love she never could have imagined, and finds this festive small town is hiding one big holiday secret.",
+    "vote_average": 5.867,
+    "vote_count": 206
+  }
+]

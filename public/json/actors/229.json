@@ -1,0 +1,38 @@
+[
+  {
+    "title": "A '90s Christmas",
+    "year": 2024,
+    "tmdbId": 1361210,
+    "imdbId": "tt16270280",
+    "tmdb_id": 1361210,
+    "imdb_id": "tt16270280",
+    "poster": "/images/posters/1361210.webp",
+    "overview": "Workaholic lawyer Lucy Clark is celebrating her promotion alone on Christmas Eve when a mysterious rideshare experience transports her back to 1999. Reliving the holiday with her mom, sister and best friend - not to mention her high school crush - Lucy gets a second chance to understand where her relationships went wrong. Will this magical journey help her rewrite her future or leave her destined to be alone?",
+    "vote_average": 6.385,
+    "vote_count": 26
+  },
+  {
+    "title": "Christmas Island",
+    "year": 2023,
+    "tmdbId": 1180841,
+    "imdbId": "tt29378386",
+    "tmdb_id": 1180841,
+    "imdb_id": "tt29378386",
+    "poster": "/images/posters/1180841.webp",
+    "overview": "When a snowstorm diverts Kate's first private flight bound for Switzerland, to Christmas Island in Nova Scotia, she must team up with an air traffic controller to secure her dream job as the family's pilot.",
+    "vote_average": 6.606,
+    "vote_count": 33
+  },
+  {
+    "title": "Flipping for Christmas",
+    "year": 2023,
+    "tmdbId": 1180394,
+    "imdbId": "tt27911907",
+    "tmdb_id": 1180394,
+    "imdb_id": "tt27911907",
+    "poster": "/images/posters/1180394.webp",
+    "overview": "Right before Christmas, realtor Abigail agrees to help her sister with what she believes will be an easy flip of an inherited home. Things get tricky when the co-beneficiary Bo has a different idea.",
+    "vote_average": 6.233,
+    "vote_count": 14
+  }
+]

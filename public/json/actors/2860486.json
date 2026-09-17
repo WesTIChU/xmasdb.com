@@ -1,0 +1,38 @@
+[
+  {
+    "title": "The Christmas Baby",
+    "year": 2025,
+    "tmdbId": 1547929,
+    "imdbId": "tt36963465",
+    "tmdb_id": 1547929,
+    "imdb_id": "tt36963465",
+    "poster": "/images/posters/1547929.webp",
+    "overview": "When a baby boy shows up on their doorstep days before Christmas with a note written specially for them, Erin and Kelly must learn how to navigate their new relationship and career dynamics while unexpectedly caring for a newborn.",
+    "vote_average": 6.7,
+    "vote_count": 8
+  },
+  {
+    "title": "The 5-Year Christmas Party",
+    "year": 2024,
+    "tmdbId": 1359868,
+    "imdbId": "tt33503201",
+    "tmdb_id": 1359868,
+    "imdb_id": "tt33503201",
+    "poster": "/images/posters/1359868.webp",
+    "overview": "Over five years, Alice and her old theater school rival, Max, reunite each holiday season to work at a Chicago catering company's Christmas parties.  While their undeniable chemistry grows, the timing is never right for romance - until the company's final season pushes them to confront their true feelings.",
+    "vote_average": 5.111,
+    "vote_count": 8
+  },
+  {
+    "title": "Christmas Waltz",
+    "year": 2020,
+    "tmdbId": 733032,
+    "imdbId": "tt11585200",
+    "tmdb_id": 733032,
+    "imdb_id": "tt11585200",
+    "poster": "/images/posters/733032.webp",
+    "overview": "After Avery’s storybook Christmas wedding is canceled unexpectedly, dance instructor Roman helps her rebuild her dreams.",
+    "vote_average": 7,
+    "vote_count": 64
+  }
+]

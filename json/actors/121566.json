@@ -1,0 +1,50 @@
+[
+  {
+    "title": "A Grand Ole Opry Christmas",
+    "year": 2025,
+    "tmdbId": 1535221,
+    "imdbId": "tt37891014",
+    "tmdb_id": 1535221,
+    "imdb_id": "tt37891014",
+    "poster": "/images/posters/1535221.webp",
+    "overview": "Gentry Woods, who gave up music after her father's death decades ago, must confront her past when Nashville's Grand Ole Opry invites her to honor her late country star dad at their Christmas celebration.",
+    "vote_average": 7.5,
+    "vote_count": 11
+  },
+  {
+    "title": "The Christmas House 2: Deck Those Halls",
+    "year": 2021,
+    "tmdbId": 874196,
+    "imdbId": "tt16365840",
+    "tmdb_id": 874196,
+    "imdb_id": "tt16365840",
+    "poster": "/images/posters/874196.webp",
+    "overview": "The Mitchell brothers compete to see who can create the best Christmas House.",
+    "vote_average": 5.328,
+    "vote_count": 29
+  },
+  {
+    "title": "The Christmas House",
+    "year": 2020,
+    "tmdbId": 746042,
+    "imdbId": "tt12950902",
+    "tmdb_id": 746042,
+    "imdb_id": "tt12950902",
+    "poster": "/images/posters/746042.webp",
+    "overview": "Working through some difficult decisions, Mitchell family matriarch Phylis and patriarch Bill, have summoned their two grown sons – TV stars Mike Mitchell and Brandon Mitchell – home for the holidays. It is their hope that bringing the family together to recreate the Christmas house, will help them find resolution and make a memorable holiday for the entire family and community.",
+    "vote_average": 5.927,
+    "vote_count": 55
+  },
+  {
+    "title": "Merry & Bright",
+    "year": 2019,
+    "tmdbId": 626307,
+    "imdbId": "tt10345022",
+    "tmdb_id": 626307,
+    "imdb_id": "tt10345022",
+    "poster": "/images/posters/626307.webp",
+    "overview": "Cate, CEO of the Merry and Bright Candy Cane Company, meets Gabe during the busy Christmas season. She assumes Gabe is the suitor her well-meaning mother is trying to set her up with when in reality, he works for Empire Corporate Recovery, which has been hired to take a closer look at Merry and Bright's operation and find ways to make the company more profitable. As Cate and Gabe begin to work together, they find ways to elevate the business and find that they have more in common than savvy business sense.",
+    "vote_average": 6.2,
+    "vote_count": 52
+  }
+]

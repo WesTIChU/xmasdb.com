@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Christmas with the Singhs",
+    "year": 2024,
+    "tmdbId": 1361132,
+    "imdbId": "tt32730893",
+    "tmdb_id": 1361132,
+    "imdb_id": "tt32730893",
+    "poster": "/images/posters/1361132.webp",
+    "overview": "Newly engaged Asha Singh and Jake O'Brien are excited to spend Christmas together, but their relationship is tested when their families' cultural and holiday traditions clash.",
+    "vote_average": 5.857,
+    "vote_count": 14
+  },
+  {
+    "title": "Just in Time for Christmas",
+    "year": 2015,
+    "tmdbId": 363486,
+    "imdbId": "tt5014528",
+    "tmdb_id": 363486,
+    "imdb_id": "tt5014528",
+    "poster": "/images/posters/363486.webp",
+    "overview": "Lindsay is faced with a life-altering decision as Christmas approaches: Stay in her tiny hometown and marry boyfriend Jason or accept a coveted post teaching at an Ivy League college on the other side of the country. What to do? Fortunately for Lindsay, she has some big-time help in the form of a magical messenger who is able to transport her three years into the future to see how it would all turn out.",
+    "vote_average": 6.186,
+    "vote_count": 105
+  },
+  {
+    "title": "The Nine Lives of Christmas",
+    "year": 2014,
+    "tmdbId": 299576,
+    "imdbId": "tt3889642",
+    "tmdb_id": 299576,
+    "imdb_id": "tt3889642",
+    "poster": "/images/posters/299576.webp",
+    "overview": "With Christmas approaching, a handsome fireman afraid of commitment adopts a stray cat and meets a beautiful veterinary student who challenges his decision to remain a confirmed bachelor.",
+    "vote_average": 6.716,
+    "vote_count": 111
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Jingle Bell Bride",
+    "year": 2020,
+    "tmdbId": 737763,
+    "imdbId": "tt12877642",
+    "tmdb_id": 737763,
+    "imdb_id": "tt12877642",
+    "poster": "/images/posters/737763.webp",
+    "overview": "Wedding planner Jessica Perez travels to a remote town in Alaska to find a rare flower for a celebrity client and is charmed by the small town during Christmas, as well as the handsome local helping her.",
+    "vote_average": 6.4,
+    "vote_count": 32
+  },
+  {
+    "title": "A Midnight Kiss",
+    "year": 2018,
+    "tmdbId": 550036,
+    "imdbId": "tt9028890",
+    "tmdb_id": 550036,
+    "imdb_id": "tt9028890",
+    "poster": "/images/posters/550036.webp",
+    "overview": "With only one week to prepare, Mia Pearson and her family of party planners are given the biggest job in their company’s history: a New Year’s Eve party for tech entrepreneur Kate Clark. But when her brother breaks his leg and her parents head off on a planned vacation, Lisa must reluctantly enlist the help of her brother’s visiting college buddy, David Campos, to help her pull off the event which just so happens to fall on her favorite day of the year. But what Lisa didn’t plan on was falling in love in the process.",
+    "vote_average": 6,
+    "vote_count": 42
+  },
+  {
+    "title": "Christmas Cookies",
+    "year": 2016,
+    "tmdbId": 410317,
+    "imdbId": "tt5675936",
+    "tmdb_id": 410317,
+    "imdb_id": "tt5675936",
+    "poster": "/images/posters/410317.webp",
+    "overview": "Aunt Sally's Christmas Cookie Company is sold to a large conglomerate and executive Hannah must seal the deal and shut down the factory, which is the small town of Cookie Jar's lifeblood. What was supposed to be a simple assignment for Hannah becomes complicated when she meets Jake, the factory owner who's determined to keep the factory in town. Despite not being a fan of the holiday, the Christmas spirit in this small town is infectious and she gets swept up in the joy of the season while also falling in love with Jake.",
+    "vote_average": 5.969,
+    "vote_count": 80
+  },
+  {
+    "title": "The Mistletoe Promise",
+    "year": 2016,
+    "tmdbId": 410315,
+    "imdbId": "tt5921218",
+    "tmdb_id": 410315,
+    "imdb_id": "tt5921218",
+    "poster": "/images/posters/410315.webp",
+    "overview": "A chance meeting between two strangers who share a disdain for Christmas results in The Mistletoe Promise, a pact to help them navigate their holiday complications - together. But as they spend more time with each other and experience the magic of Christmas the phony couple discovers there may be more to their contract than business.",
+    "vote_average": 6.3,
+    "vote_count": 95
+  }
+]

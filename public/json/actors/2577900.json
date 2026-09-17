@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Christmas with the Singhs",
+    "year": 2024,
+    "tmdbId": 1361132,
+    "imdbId": "tt32730893",
+    "tmdb_id": 1361132,
+    "imdb_id": "tt32730893",
+    "poster": "/images/posters/1361132.webp",
+    "overview": "Newly engaged Asha Singh and Jake O'Brien are excited to spend Christmas together, but their relationship is tested when their families' cultural and holiday traditions clash.",
+    "vote_average": 5.857,
+    "vote_count": 14
+  },
+  {
+    "title": "Holiday Crashers",
+    "year": 2024,
+    "tmdbId": 1358987,
+    "imdbId": "tt32011999",
+    "tmdb_id": 1358987,
+    "imdb_id": "tt32011999",
+    "poster": "/images/posters/1358987.webp",
+    "overview": "Best friends Toni and Bri, working at a card print shop, decide to crash the amazing Christmas parties from some of the shop's confidential invitations for a bit of harmless fun. Harmless that is, until Toni is mistaken for a lawyer and they get whisked away to a fancy corporate Christmas retreat in the snowy Vermont mountains by handsome business mogul.",
+    "vote_average": 6.5,
+    "vote_count": 23
+  },
+  {
+    "title": "Sealed with a List",
+    "year": 2023,
+    "tmdbId": 1180688,
+    "imdbId": "tt29233395",
+    "tmdb_id": 1180688,
+    "imdb_id": "tt29233395",
+    "poster": "/images/posters/1180688.webp",
+    "overview": "Carley is determined to get through her list of abandoned resolutions from last year and enlists the help of coworker Wyatt.",
+    "vote_average": 6.413,
+    "vote_count": 23
+  },
+  {
+    "title": "Coyote Creek Christmas",
+    "year": 2021,
+    "tmdbId": 874127,
+    "imdbId": "tt15205430",
+    "tmdb_id": 874127,
+    "imdb_id": "tt15205430",
+    "poster": "/images/posters/874127.webp",
+    "overview": "While throwing a \"Christmas Around the World\" party at her family's inn, an event planner discovers Christmas magic with a charming father-son duo whose presence brings about tension and joy.",
+    "vote_average": 6.1,
+    "vote_count": 46
+  }
+]

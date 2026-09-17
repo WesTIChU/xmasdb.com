@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Christmas in Evergreen: Letters to Santa",
+    "year": 2018,
+    "tmdbId": 550025,
+    "imdbId": "tt9033634",
+    "tmdb_id": 550025,
+    "imdb_id": "tt9033634",
+    "poster": "/images/posters/550025.webp",
+    "overview": "Lisa's trip home to Evergreen for the holidays finds her shepherding an effort to save the town's beloved general store, fulfilling the wishes of a Christmas past and finding a romance full of Christmas magic.",
+    "vote_average": 6.8,
+    "vote_count": 62
+  },
+  {
+    "title": "Christmas in Evergreen",
+    "year": 2017,
+    "tmdbId": 474977,
+    "imdbId": "tt7440948",
+    "tmdb_id": 474977,
+    "imdb_id": "tt7440948",
+    "poster": "/images/posters/474977.webp",
+    "overview": "Allie, a veterinarian in Evergreen, reluctantly will spend Christmas with her long-distance boyfriend. Bound for the airport, she has engine trouble, and Ryan, headed to Florida with his daughter Zoe, stops to help. Sure they won’t meet again, they ignore their attraction, and part ways. At the diner, Zoe wishes on a snow globe, and a storm seems to grant her wish.",
+    "vote_average": 6.4,
+    "vote_count": 111
+  },
+  {
+    "title": "The Nine Lives of Christmas",
+    "year": 2014,
+    "tmdbId": 299576,
+    "imdbId": "tt3889642",
+    "tmdb_id": 299576,
+    "imdb_id": "tt3889642",
+    "poster": "/images/posters/299576.webp",
+    "overview": "With Christmas approaching, a handsome fireman afraid of commitment adopts a stray cat and meets a beautiful veterinary student who challenges his decision to remain a confirmed bachelor.",
+    "vote_average": 6.716,
+    "vote_count": 111
+  }
+]

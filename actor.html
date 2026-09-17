@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <title id="page-title">Hallmark Christmas Actor Details</title>
+    <meta name="description" id="meta-description" content="View actor biography and Hallmark Christmas movie filmography." />
+    <link rel="canonical" id="canonical-link" href="https://xmasdb.com/actor.html" />
+    <meta property="og:title" id="og-title" content="Hallmark Christmas Actor Details" />
+    <meta property="og:description" id="og-description" content="View actor biography and Hallmark Christmas movie filmography." />
+    <meta property="og:type" content="profile" />
+    <meta property="og:image" id="og-image" content="" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" id="twitter-title" content="Hallmark Christmas Actor Details" />
+    <meta name="twitter:description" id="twitter-description" content="View actor biography and Hallmark Christmas movie filmography." />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/actor.css" />
+    <script type="application/ld+json" id="actor-schema"></script>
+  </head>
+  <body>
+    <!-- Dark Evergreen Christmas Header -->
+    <header id="site-header" class="site-header">
+      <div class="header-inner">
+        <div class="header-top-row">
+          <a href="/" class="header-title-wrap header-brand-link" id="header-brand-link" aria-label="XmasDB.com Home">
+            <svg class="holiday-icon" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="12" y1="2" x2="12" y2="22"></line>
+              <line x1="2" y1="12" x2="22" y2="12"></line>
+              <line x1="4.93" y1="4.93" x2="19.07" y2="19.07"></line>
+              <line x1="19.07" y1="4.93" x2="4.93" y2="19.07"></line>
+              <polyline points="10 4 12 2 14 4"></polyline>
+              <polyline points="10 20 12 22 14 20"></polyline>
+              <polyline points="4 10 2 12 4 14"></polyline>
+              <polyline points="20 10 22 12 20 14"></polyline>
+              <polyline points="7 5 5 5 5 7"></polyline>
+              <polyline points="17 19 19 19 19 17"></polyline>
+              <polyline points="19 7 19 5 17 5"></polyline>
+              <polyline points="5 17 5 19 7 19"></polyline>
+            </svg>
+            <span id="site-title" class="site-title">XmasDB.com</span>
+          </a>
+          <span id="header-movie-count" class="header-movie-count" aria-live="polite">... Movies</span>
+        </div>
+        <p id="site-description" class="site-description">A curated collection of Hallmark Christmas movies.</p>
+        <p id="header-festive-message" class="header-festive-message" aria-live="polite"></p>
+      </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main id="main-content" class="actor-page-container">
+      <!-- Nav back bar -->
+      <div class="actor-nav-bar">
+        <a href="./" class="back-link" id="actor-back-link">&larr; Back to Catalog</a>
+      </div>
+
+      <!-- Loading State -->
+      <div id="actor-loading" class="actor-loading-state">
+        <div class="spinner"></div>
+        <p>Loading actor details &amp; filmography...</p>
+      </div>
+
+      <!-- Error State -->
+      <div id="actor-error" class="actor-error-state" style="display: none;">
+        <h2>Actor Not Found</h2>
+        <p id="actor-error-msg">Could not locate the requested actor in the Hallmark Christmas collection.</p>
+        <a href="./" class="btn btn-primary" style="margin-top: 16px; display: inline-block;">Return to Catalog</a>
+      </div>
+
+      <!-- Actor Content Area (shown when data is loaded) -->
+      <article id="actor-content" class="actor-content" style="display: none;">
+        <!-- Actor Profile Hero Banner -->
+        <div class="actor-hero-section">
+          <div class="actor-photo-col">
+            <img id="actor-profile-photo" class="actor-profile-photo" src="" alt="Actor Photo" />
+          </div>
+
+          <div class="actor-details-col">
+            <h1 id="actor-name" class="actor-name">Actor Name</h1>
+
+            <div class="actor-badges-row">
+              <span id="actor-dept-badge" class="actor-badge actor-badge-dept">Acting</span>
+              <span id="actor-movie-count-badge" class="actor-badge actor-badge-count">0 Movies in Collection</span>
+            </div>
+
+            <div id="actor-bio-meta-row" class="actor-bio-meta-row">
+              <!-- Born, Died, Dynamic Age, Birthplace -->
+            </div>
+
+            <div id="actor-biography-wrap" class="actor-biography-wrap" style="display: none;">
+              <h3>Biography</h3>
+              <p id="actor-biography" class="actor-biography"></p>
+              <button type="button" id="btn-bio-toggle" class="btn-bio-toggle" style="display: none;">Read more</button>
+            </div>
+
+            <div class="actor-external-links" id="actor-external-links">
+              <a id="actor-json-link" href="#" target="_blank" rel="noopener noreferrer" class="external-btn actor-json-btn" style="display: none;">
+                RADARR / JSON LIST
+              </a>
+              <a id="actor-tmdb-link" href="#" target="_blank" rel="noopener noreferrer" class="external-btn tmdb-btn" style="display: none;">
+                View on TMDB
+              </a>
+              <a id="actor-imdb-link" href="#" target="_blank" rel="noopener noreferrer" class="external-btn imdb-btn" style="display: none;">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M23.2 5H.8C.4 5 0 5.4 0 5.8v12.4c0 .4.4.8.8.8h22.4c.4 0 .8-.4.8-.8V5.8c0-.4-.4-.8-.8-.8zM4.6 15.6H2.8V8.4h1.8v7.2zm4.5 0H7.3V8.4h1.8l1.4 4.3 1.4-4.3h1.8v7.2h-1.8v-4.5L10.3 15h-.8l-1.6-3.9v4.5zm8.1-1.3c0 .8-.6 1.3-1.4 1.3h-2.3V8.4h2.3c.8 0 1.4.5 1.4 1.3v4.6zm-1.8-3.4h-.6v4.6h.6c.3 0 .5-.2.5-.5V11.4c0-.3-.2-.5-.5-.5zm4.8 4.7h-1.8v-7.2h1.8v7.2z"/></svg>
+                IMDb
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Filmography Section: Movies starring this actor in the Hallmark collection -->
+        <section class="actor-filmography-section">
+          <div class="filmography-header">
+            <h2>
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-primary, #165b33);">
+                <rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"></rect>
+                <line x1="7" y1="2" x2="7" y2="22"></line>
+                <line x1="17" y1="2" x2="17" y2="22"></line>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+                <line x1="2" y1="7" x2="7" y2="7"></line>
+                <line x1="2" y1="17" x2="7" y2="17"></line>
+                <line x1="17" y1="17" x2="22" y2="17"></line>
+                <line x1="17" y1="7" x2="22" y2="7"></line>
+              </svg>
+              Hallmark Christmas Filmography
+            </h2>
+            <span id="filmography-subheading" class="filmography-subheading"></span>
+          </div>
+
+          <div id="actor-filmography-grid" class="actor-filmography-grid">
+            <!-- Movie cards dynamically generated -->
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <!-- Evergreen Footer with TMDB Attribution & Disclaimer -->
+    <footer id="site-footer" class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-main">
+          <h2 class="footer-title">XmasDB.com</h2>
+          <p class="footer-subtitle">A curated collection of Hallmark Christmas movies.</p>
+          <nav class="footer-nav" aria-label="Footer navigation">
+            <a id="footer-all-link" href="/" class="footer-link">Movies</a>
+            <span class="footer-sep" aria-hidden="true">&bull;</span>
+            <a id="footer-radarr-link" href="radarr.html" class="footer-link">Radarr / JSON Lists</a>
+            <span class="footer-sep" aria-hidden="true">&bull;</span>
+            <a id="footer-tmdb-link" href="https://www.themoviedb.org/" target="_blank" rel="noopener noreferrer" class="footer-link">TMDB</a>
+            <span class="footer-sep" aria-hidden="true">&bull;</span>
+          </nav>
+        </div>
+
+        <div class="footer-bottom">
+          <hr class="footer-divider" />
+          <div class="footer-notes">
+            <p id="tmdb-disclaimer" class="footer-note">This product uses the TMDB API but is not endorsed or certified by TMDB.</p>
+            <p class="footer-note">XmasDB.com is an independent fan-curated movie database and is not affiliated with or endorsed by Hallmark.</p>
+            <p class="footer-note">Privacy: We don't collect your data. No tracking. No analytics. No ads.</p>
+            <p class="footer-copyright">&copy; <span id="footer-copyright-year">2026</span> XmasDB.com</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/snow.js"></script>
+    <script type="module" src="/js/site-layout.js"></script>
+    <script type="module" src="/actor.js"></script>
+  </body>
+</html>

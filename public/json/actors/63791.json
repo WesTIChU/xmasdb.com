@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Five Star Christmas",
+    "year": 2020,
+    "tmdbId": 746060,
+    "imdbId": "tt13320784",
+    "tmdb_id": 746060,
+    "imdb_id": "tt13320784",
+    "poster": "/images/posters/746060.webp",
+    "overview": "After moving back to her hometown, Lisa (Lenz) plots with her siblings and grandparents to help her father's bed and breakfast get a five-star review from an incognito travel critic (Webster), but ends up falling for him, not knowing he is the real critic.",
+    "vote_average": 6.865,
+    "vote_count": 48
+  },
+  {
+    "title": "Good Morning Christmas!",
+    "year": 2020,
+    "tmdbId": 746043,
+    "imdbId": "tt13109730",
+    "tmdb_id": 746043,
+    "imdb_id": "tt13109730",
+    "poster": "/images/posters/746043.webp",
+    "overview": "Two competing TV hosts are sent to a festive small town over Christmas. While pretending to get along for the sake of appearances, they discover that there’s more to each other than they thought.",
+    "vote_average": 6.302,
+    "vote_count": 48
+  },
+  {
+    "title": "Finding Santa",
+    "year": 2017,
+    "tmdbId": 474985,
+    "imdbId": "tt7385392",
+    "tmdb_id": 474985,
+    "imdb_id": "tt7385392",
+    "poster": "/images/posters/474985.webp",
+    "overview": "Christmas is a busy, busy time for the residents of Green River, particularly for Grace Long, the third generation of her family to steward the New England town’s signature Christmas Eve parade. This year’s audience for the parade promises to be in the millions, thanks to a national morning show that has chosen Green River as the site of its Christmas Eve day program.",
+    "vote_average": 6.668,
+    "vote_count": 98
+  },
+  {
+    "title": "Once Upon A Holiday",
+    "year": 2015,
+    "tmdbId": 363482,
+    "imdbId": "tt5033114",
+    "tmdb_id": 363482,
+    "imdb_id": "tt5033114",
+    "poster": "/images/posters/363482.webp",
+    "overview": "When an actual, honest-to-goodness royal princess runs off from her official obligations and duties for a couple of days to see how the other half lives, she winds up falling for a good Samaritan who is unaware of her real identity during the holiday season. Will her true love still feel the same way once he learns the truth?",
+    "vote_average": 5.976,
+    "vote_count": 124
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "title": "An Unexpected Christmas",
+    "year": 2021,
+    "tmdbId": 874124,
+    "imdbId": "tt15766640",
+    "tmdb_id": 874124,
+    "imdb_id": "tt15766640",
+    "poster": "/images/posters/874124.webp",
+    "overview": "Jamie hasn’t told his family that he and his now ex-girlfriend Emily broke up. After an inopportune run-in with Emily at the train station in his hometown, Jamie convinces her to pretend they’re still a couple to avoid ruining Christmas for his family.",
+    "vote_average": 6.25,
+    "vote_count": 60
+  },
+  {
+    "title": "Christmas in Tahoe",
+    "year": 2021,
+    "tmdbId": 874226,
+    "imdbId": "tt15739494",
+    "tmdb_id": 874226,
+    "imdb_id": "tt15739494",
+    "poster": "/images/posters/874226.webp",
+    "overview": "To save her family hotel's Christmas show, talent booker Claire must ask for help from her ex-boyfriend Ryan, the lead guitarist of a now-famous band that fired her as their manager years ago.",
+    "vote_average": 6.06,
+    "vote_count": 25
+  },
+  {
+    "title": "Ice Sculpture Christmas",
+    "year": 2015,
+    "tmdbId": 360604,
+    "imdbId": "tt5031014",
+    "tmdb_id": 360604,
+    "imdb_id": "tt5031014",
+    "poster": "/images/posters/360604.webp",
+    "overview": "After starting her first job at a country club restaurant, Callie’s passions for cooking and ice sculpting are met with romance and Christmas spirit when a childhood friend enters her into the club’s annual Christmas ice sculpting competition without her knowledge.",
+    "vote_average": 6.1,
+    "vote_count": 87
+  }
+]

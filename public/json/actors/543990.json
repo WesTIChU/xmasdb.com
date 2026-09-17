@@ -1,0 +1,62 @@
+[
+  {
+    "title": "Gingerbread Miracle",
+    "year": 2021,
+    "tmdbId": 874244,
+    "imdbId": "tt15821582",
+    "tmdb_id": 874244,
+    "imdb_id": "tt15821582",
+    "poster": "/images/posters/874244.webp",
+    "overview": "Maya and Alex, old friends from high school, work together over Christmas to sell his uncle’s Mexican bakery famous for its gingerbread cookies that the patrons believe grants wishes.",
+    "vote_average": 6,
+    "vote_count": 30
+  },
+  {
+    "title": "Chateau Christmas",
+    "year": 2020,
+    "tmdbId": 737779,
+    "imdbId": "tt13350688",
+    "tmdb_id": 737779,
+    "imdb_id": "tt13350688",
+    "poster": "/images/posters/737779.webp",
+    "overview": "Margot, a world-renowned pianist, returns to Chateau Newhaus to spend the holidays with her family and is reunited with an ex who helps her rediscover her passion for music.",
+    "vote_average": 6.16,
+    "vote_count": 50
+  },
+  {
+    "title": "Picture a Perfect Christmas",
+    "year": 2019,
+    "tmdbId": 626323,
+    "imdbId": "tt10553910",
+    "tmdb_id": 626323,
+    "imdb_id": "tt10553910",
+    "poster": "/images/posters/626323.webp",
+    "overview": "An extreme-sports photographer returns home for the holiday to take care of her grandmother, only to have a neighbor grab her attention as he needs assistance watching his young nephew.",
+    "vote_average": 6.17,
+    "vote_count": 47
+  },
+  {
+    "title": "Christmas at the Palace",
+    "year": 2018,
+    "tmdbId": 550023,
+    "imdbId": "tt9033632",
+    "tmdb_id": 550023,
+    "imdb_id": "tt9033632",
+    "poster": "/images/posters/550023.webp",
+    "overview": "Katie, a former professional ice skater, is hired by the king of San Senova, Alexander, to help his daughter in a Christmas ice skating performance. As Katie spends time in the castle and with the king, she and Alex begin to develop feelings for each other and ultimately fall in love. But will the tradition-loving people of San Senova allow their king to make a foreigner their queen?",
+    "vote_average": 6.422,
+    "vote_count": 122
+  },
+  {
+    "title": "The Christmas Cottage",
+    "year": 2017,
+    "tmdbId": 480626,
+    "imdbId": "tt5997848",
+    "tmdb_id": 480626,
+    "imdb_id": "tt5997848",
+    "poster": "/images/posters/480626.webp",
+    "overview": "When Lacey takes a rare break from work for her friend Ava's Christmas Eve wedding, she reconnects with her former flame, Ean. The two decorate the cottage where the newlyweds will spend their honeymoon – a cottage said to bring true love to anyone who stays there – and feel their chemistry return.",
+    "vote_average": 6.221,
+    "vote_count": 61
+  }
+]

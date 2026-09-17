@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Christmas with a Kiss",
+    "year": 2023,
+    "tmdbId": 1180746,
+    "imdbId": "tt29593706",
+    "tmdb_id": 1180746,
+    "imdb_id": "tt29593706",
+    "poster": "/images/posters/1180746.webp",
+    "overview": "This Mahogany film follows a woman who returns home for her family’s Christmas Carnival, unexpectedly meeting a photo journalist.",
+    "vote_average": 5.667,
+    "vote_count": 15
+  },
+  {
+    "title": "Inventing the Christmas Prince",
+    "year": 2022,
+    "tmdbId": 1028223,
+    "imdbId": "tt20892688",
+    "tmdb_id": 1028223,
+    "imdb_id": "tt20892688",
+    "poster": "/images/posters/1028223.webp",
+    "overview": "Shelby is about to quit her job as a rocket engineer when her daughter becomes convinced that her Scrooge-like boss, Evan, is the Christmas Prince from a story Shelby invented years ago.",
+    "vote_average": 6.8,
+    "vote_count": 13
+  },
+  {
+    "title": "Jingle Bell Bride",
+    "year": 2020,
+    "tmdbId": 737763,
+    "imdbId": "tt12877642",
+    "tmdb_id": 737763,
+    "imdb_id": "tt12877642",
+    "poster": "/images/posters/737763.webp",
+    "overview": "Wedding planner Jessica Perez travels to a remote town in Alaska to find a rare flower for a celebrity client and is charmed by the small town during Christmas, as well as the handsome local helping her.",
+    "vote_average": 6.4,
+    "vote_count": 32
+  }
+]

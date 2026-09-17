@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Three Wise Men and a Baby",
+    "year": 2022,
+    "tmdbId": 1028541,
+    "imdbId": "tt22247482",
+    "tmdb_id": 1028541,
+    "imdb_id": "tt22247482",
+    "poster": "/images/posters/1028541.webp",
+    "overview": "Three brothers get the surprise of their lives when they are forced to work together to care for a baby over the holidays. As they slowly get the hang of things, they find themselves on unexpected journeys of self-discovery and begin to rebuild their relationships as brothers, as well as the damaged romantic and professional relationships in their respective lives…all while rediscovering their love of Christmas.",
+    "vote_average": 7.5,
+    "vote_count": 64
+  },
+  {
+    "title": "Open by Christmas",
+    "year": 2021,
+    "tmdbId": 874161,
+    "imdbId": "tt15758400",
+    "tmdb_id": 874161,
+    "imdb_id": "tt15758400",
+    "poster": "/images/posters/874161.webp",
+    "overview": "When Nicky finds an unopened Christmas card from a high school secret admirer, she and her best friend Simone search to find and thank the anonymous author.",
+    "vote_average": 6.2,
+    "vote_count": 30
+  }
+]

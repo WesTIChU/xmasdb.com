@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Christmas by Design",
+    "year": 2023,
+    "tmdbId": 1132358,
+    "imdbId": "tt29392874",
+    "tmdb_id": 1132358,
+    "imdb_id": "tt29392874",
+    "poster": "/images/posters/1132358.webp",
+    "overview": "During a Christmas challenge to create a holiday-theme clothing line, a designer looks closer at most important in life.",
+    "vote_average": 6.05,
+    "vote_count": 20
+  },
+  {
+    "title": "Noel Next Door",
+    "year": 2022,
+    "tmdbId": 1027329,
+    "imdbId": "tt22207602",
+    "tmdb_id": 1027329,
+    "imdb_id": "tt22207602",
+    "poster": "/images/posters/1027329.webp",
+    "overview": "A hard-working, single mom gets into a war of words with a neighbor who she feels is ruining Christmas, only to find that this misunderstood grouch just may steal her heart.",
+    "vote_average": 7,
+    "vote_count": 37
+  },
+  {
+    "title": "The Most Colorful Time of the Year",
+    "year": 2022,
+    "tmdbId": 1028561,
+    "imdbId": "tt22207622",
+    "tmdb_id": 1028561,
+    "imdb_id": "tt22207622",
+    "poster": "/images/posters/1028561.webp",
+    "overview": "Ryan is an elementary school teacher, who learns that he is colorblind. Michelle, an optometrist, and mother of one of his students, helps bring color into his life in time for the holidays.",
+    "vote_average": 5.7,
+    "vote_count": 26
+  }
+]

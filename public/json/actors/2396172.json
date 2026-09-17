@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Checkin' It Twice",
+    "year": 2023,
+    "tmdbId": 1166012,
+    "imdbId": "tt29352965",
+    "tmdb_id": 1166012,
+    "imdb_id": "tt29352965",
+    "poster": "/images/posters/1166012.webp",
+    "overview": "A journeyman hockey player falls for a real estate agent in a career crisis when he's traded to her hometown and moves into the cottage in her hockey-loving family's backyard.",
+    "vote_average": 6.5,
+    "vote_count": 34
+  },
+  {
+    "title": "Gingerbread Miracle",
+    "year": 2021,
+    "tmdbId": 874244,
+    "imdbId": "tt15821582",
+    "tmdb_id": 874244,
+    "imdb_id": "tt15821582",
+    "poster": "/images/posters/874244.webp",
+    "overview": "Maya and Alex, old friends from high school, work together over Christmas to sell his uncle’s Mexican bakery famous for its gingerbread cookies that the patrons believe grants wishes.",
+    "vote_average": 6,
+    "vote_count": 30
+  }
+]

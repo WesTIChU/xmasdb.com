@@ -1,0 +1,26 @@
+[
+  {
+    "title": "A Suite Holiday Romance",
+    "year": 2025,
+    "tmdbId": 1547925,
+    "imdbId": "tt38354975",
+    "tmdb_id": 1547925,
+    "imdb_id": "tt38354975",
+    "poster": "/images/posters/1547925.webp",
+    "overview": "During Christmas week, Sabrina jumps at the opportunity to ghostwrite a memoir for a famous art dealer at the iconic Grand Fairbanks Hotel in New York City. The week gets complicated when she meets a handsome British visitor at the hotel bar; she thinks he’s a member of the British aristocracy, and he thinks she’s a wealthy hotel guest.",
+    "vote_average": 6.889,
+    "vote_count": 9
+  },
+  {
+    "title": "Christmas On Call",
+    "year": 2024,
+    "tmdbId": 1361154,
+    "imdbId": "tt33829451",
+    "tmdb_id": 1361154,
+    "imdb_id": "tt33829451",
+    "poster": "/images/posters/1361154.webp",
+    "overview": "The lives of first responders in Philadelphia intersect over the holiday season while juggling work, personal lives, and their dedication to protect and serve their city.",
+    "vote_average": 7.1,
+    "vote_count": 25
+  }
+]

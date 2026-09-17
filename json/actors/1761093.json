@@ -1,0 +1,38 @@
+[
+  {
+    "title": "The More the Merrier",
+    "year": 2025,
+    "tmdbId": 1546001,
+    "imdbId": "tt38354960",
+    "tmdb_id": 1546001,
+    "imdb_id": "tt38354960",
+    "poster": "/images/posters/1546001.webp",
+    "overview": "An overwhelmed doctor is left to look after and care for three very pregnant women by herself during a storm on Christmas Eve, until she is joined by an intriguing colleague.",
+    "vote_average": 6.273,
+    "vote_count": 11
+  },
+  {
+    "title": "Jingle Bell Bride",
+    "year": 2020,
+    "tmdbId": 737763,
+    "imdbId": "tt12877642",
+    "tmdb_id": 737763,
+    "imdb_id": "tt12877642",
+    "poster": "/images/posters/737763.webp",
+    "overview": "Wedding planner Jessica Perez travels to a remote town in Alaska to find a rare flower for a celebrity client and is charmed by the small town during Christmas, as well as the handsome local helping her.",
+    "vote_average": 6.4,
+    "vote_count": 32
+  },
+  {
+    "title": "A Wish for Christmas",
+    "year": 2016,
+    "tmdbId": 410314,
+    "imdbId": "tt5676118",
+    "tmdb_id": 410314,
+    "imdb_id": "tt5676118",
+    "poster": "/images/posters/410314.webp",
+    "overview": "Sara Shaw is the type of woman who prefers to sit on the sidelines at work, but when her big idea for a Christmas initiative is stolen, she makes a wish to Santa that she'll finally have the courage to stand up for herself. Santa grants her wish, but only gives her 48 hours. As the clock ticks, Sara will discover how to channel the Christmas magic and speak her mind all on her own.",
+    "vote_average": 5.907,
+    "vote_count": 264
+  }
+]

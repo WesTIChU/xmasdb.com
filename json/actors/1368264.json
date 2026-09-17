@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Christmas Above the Clouds",
+    "year": 2025,
+    "tmdbId": 1537081,
+    "imdbId": "tt38183872",
+    "tmdb_id": 1537081,
+    "imdb_id": "tt38183872",
+    "poster": "/images/posters/1537081.webp",
+    "overview": "When a workaholic CEO tries to skip Christmas by flying to Australia, she’s in for the flight of her life. Haunted by her past, present, and future, she’s forced to confront the choices that led to her success yet left her flying solo. With the help of three quirky spirits and a surprise reunion with her ex, she might just rediscover the magic of Christmas—and the love she thought she’d lost.",
+    "vote_average": 7.2,
+    "vote_count": 12
+  },
+  {
+    "title": "Round and Round",
+    "year": 2023,
+    "tmdbId": 1180682,
+    "imdbId": "tt29244163",
+    "tmdb_id": 1180682,
+    "imdb_id": "tt29244163",
+    "poster": "/images/posters/1180682.webp",
+    "overview": "While Rachel is stuck in a time loop, reliving the night of her parents' Hanukkah party, she leans on the boy her grandmother is trying to set her up with to make it out.",
+    "vote_average": 6.658,
+    "vote_count": 19
+  },
+  {
+    "title": "A Fabled Holiday",
+    "year": 2022,
+    "tmdbId": 1028548,
+    "imdbId": "tt22295836",
+    "tmdb_id": 1028548,
+    "imdb_id": "tt22295836",
+    "poster": "/images/posters/1028548.webp",
+    "overview": "Talia and her childhood best friend Anderson unexpectedly reunite in a curiously familiar looking town full of Christmas spirit that restores its visitors when they need it most.",
+    "vote_average": 6.219,
+    "vote_count": 33
+  }
+]

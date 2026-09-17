@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Christmas in Notting Hill",
+    "year": 2023,
+    "tmdbId": 1142710,
+    "imdbId": "tt29233347",
+    "tmdb_id": 1142710,
+    "imdb_id": "tt29233347",
+    "poster": "/images/posters/1142710.webp",
+    "overview": "Football star, Graham Savoy, has always been too busy for love, but when he comes home to Notting Hill for Christmas, he changes his mind after meeting the one person who has no idea who he is.",
+    "vote_average": 6,
+    "vote_count": 45
+  },
+  {
+    "title": "Christmas at Castle Hart",
+    "year": 2021,
+    "tmdbId": 874166,
+    "imdbId": "tt15943556",
+    "tmdb_id": 874166,
+    "imdb_id": "tt15943556",
+    "poster": "/images/posters/874166.webp",
+    "overview": "Brooke Bennett goes to Ireland for Christmas to search for her Irish roots. While there, she meets Aiden Hart, Earl of Glaslough. Mistaken for an elite event planner, she’s hired to host his castle’s epic Christmas party.",
+    "vote_average": 6.3,
+    "vote_count": 49
+  }
+]

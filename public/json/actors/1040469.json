@@ -1,0 +1,38 @@
+[
+  {
+    "title": "The Finnish Line",
+    "year": 2024,
+    "tmdbId": 1325917,
+    "imdbId": "tt31841975",
+    "tmdb_id": 1325917,
+    "imdb_id": "tt31841975",
+    "poster": "/images/posters/1325917.webp",
+    "overview": "Anya follows her father's footsteps in sled dog racing. In Finland, she enters his last race but her lead dog is injured. Teaming with Cole's dog, she battles her father's rival Monty while learning to trust her new canine partner to win.",
+    "vote_average": 6.037,
+    "vote_count": 27
+  },
+  {
+    "title": "Checkin' It Twice",
+    "year": 2023,
+    "tmdbId": 1166012,
+    "imdbId": "tt29352965",
+    "tmdb_id": 1166012,
+    "imdb_id": "tt29352965",
+    "poster": "/images/posters/1166012.webp",
+    "overview": "A journeyman hockey player falls for a real estate agent in a career crisis when he's traded to her hometown and moves into the cottage in her hockey-loving family's backyard.",
+    "vote_average": 6.5,
+    "vote_count": 34
+  },
+  {
+    "title": "Ghosts of Christmas Always",
+    "year": 2022,
+    "tmdbId": 1027392,
+    "imdbId": "tt20193354",
+    "tmdb_id": 1027392,
+    "imdb_id": "tt20193354",
+    "poster": "/images/posters/1027392.webp",
+    "overview": "Katherine is a Ghost of Christmas Present and she must help one soul, Peter, rediscover his Christmas spirit. But this year has something unusual in store.",
+    "vote_average": 6.8,
+    "vote_count": 39
+  }
+]

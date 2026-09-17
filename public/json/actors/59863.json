@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Five Star Christmas",
+    "year": 2020,
+    "tmdbId": 746060,
+    "imdbId": "tt13320784",
+    "tmdb_id": 746060,
+    "imdb_id": "tt13320784",
+    "poster": "/images/posters/746060.webp",
+    "overview": "After moving back to her hometown, Lisa (Lenz) plots with her siblings and grandparents to help her father's bed and breakfast get a five-star review from an incognito travel critic (Webster), but ends up falling for him, not knowing he is the real critic.",
+    "vote_average": 6.865,
+    "vote_count": 48
+  },
+  {
+    "title": "Welcome to Christmas",
+    "year": 2018,
+    "tmdbId": 550075,
+    "imdbId": "tt9033308",
+    "tmdb_id": 550075,
+    "imdb_id": "tt9033308",
+    "poster": "/images/posters/550075.webp",
+    "overview": "Resort developer Madison Lane is tasked with finding a location for a new ski resort. Her boss tells her to take a trip to Christmas, Colorado, to consider the location. On her way into town, Madison has a minor fender-bender with the town’s welcome sign. Town Sheriff Gage McBride gives Madison a ride into town so she can attend her meeting with the mayor while the car is towed and repaired. Little does Madison know that the town is on a mission to convince Madison that Christmas is the best place for the new ski resort.",
+    "vote_average": 5.9,
+    "vote_count": 49
+  }
+]

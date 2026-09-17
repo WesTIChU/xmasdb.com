@@ -1,0 +1,50 @@
+[
+  {
+    "title": "A Suite Holiday Romance",
+    "year": 2025,
+    "tmdbId": 1547925,
+    "imdbId": "tt38354975",
+    "tmdb_id": 1547925,
+    "imdb_id": "tt38354975",
+    "poster": "/images/posters/1547925.webp",
+    "overview": "During Christmas week, Sabrina jumps at the opportunity to ghostwrite a memoir for a famous art dealer at the iconic Grand Fairbanks Hotel in New York City. The week gets complicated when she meets a handsome British visitor at the hotel bar; she thinks he’s a member of the British aristocracy, and he thinks she’s a wealthy hotel guest.",
+    "vote_average": 6.889,
+    "vote_count": 9
+  },
+  {
+    "title": "Hanukkah on the Rocks",
+    "year": 2024,
+    "tmdbId": 1361222,
+    "imdbId": "tt33478583",
+    "tmdb_id": 1361222,
+    "imdb_id": "tt33478583",
+    "poster": "/images/posters/1361222.webp",
+    "overview": "A week before Hanukkah, recently unemployed lawyer Tory embarks on a journey to find Hanukkah candles, leading her to a Chicago bar where she transforms the holiday spirit, discovers love, and finds the courage to pursue a new path in life.",
+    "vote_average": 5,
+    "vote_count": 7
+  },
+  {
+    "title": "Holiday Hotline",
+    "year": 2023,
+    "tmdbId": 1180811,
+    "imdbId": "tt29499210",
+    "tmdb_id": 1180811,
+    "imdb_id": "tt29499210",
+    "poster": "/images/posters/1180811.webp",
+    "overview": "Upon leaving London and working at a cooking hotline, Abby connects with an anonymous caller — a single dad who Abby unknowingly is also smitten with in real life.",
+    "vote_average": 6.848,
+    "vote_count": 32
+  },
+  {
+    "title": "We Wish You a Married Christmas",
+    "year": 2022,
+    "tmdbId": 1027338,
+    "imdbId": "tt20876910",
+    "tmdb_id": 1027338,
+    "imdb_id": "tt20876910",
+    "poster": "/images/posters/1027338.webp",
+    "overview": "Becca and Robby are a married couple having a hard time connecting with each other as the holidays approach. Just before Christmas, they head to a cozy Vermont inn at the advice of their marriage coach so they can recharge. Their weekend away gets unexpectedly extended when a mishap puts their car out of commission and just may put them on the road to a very happily married Christmas.",
+    "vote_average": 5.162,
+    "vote_count": 37
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "title": "A Cozy Christmas Inn",
+    "year": 2022,
+    "tmdbId": 1012072,
+    "imdbId": "tt19394150",
+    "tmdb_id": 1012072,
+    "imdb_id": "tt19394150",
+    "poster": "/images/posters/1012072.webp",
+    "overview": "Real estate exec, Erika, travels to Alaska during Christmastime to acquire a bed and breakfast, only to discover that it’s owned by her ex. While there, she finds herself falling in love with the town and quite possibly him.",
+    "vote_average": 5.714,
+    "vote_count": 21
+  },
+  {
+    "title": "Merry & Bright",
+    "year": 2019,
+    "tmdbId": 626307,
+    "imdbId": "tt10345022",
+    "tmdb_id": 626307,
+    "imdb_id": "tt10345022",
+    "poster": "/images/posters/626307.webp",
+    "overview": "Cate, CEO of the Merry and Bright Candy Cane Company, meets Gabe during the busy Christmas season. She assumes Gabe is the suitor her well-meaning mother is trying to set her up with when in reality, he works for Empire Corporate Recovery, which has been hired to take a closer look at Merry and Bright's operation and find ways to make the company more profitable. As Cate and Gabe begin to work together, they find ways to elevate the business and find that they have more in common than savvy business sense.",
+    "vote_average": 6.2,
+    "vote_count": 52
+  },
+  {
+    "title": "Entertaining Christmas",
+    "year": 2018,
+    "tmdbId": 550034,
+    "imdbId": "tt9028872",
+    "tmdb_id": 550034,
+    "imdb_id": "tt9028872",
+    "poster": "/images/posters/550034.webp",
+    "overview": "Candace, daughter of lifestyle mogul Liz Livingstone, has never lived up to her mother’s standards. When a young girl posts a video begging Liz to help arrange a special Christmas party, Candace is sent in her place. As she struggles to prove herself worthy of running the company, Candace meets—and begins falling for—the girl’s uncle, a reporter writing an expose on her.",
+    "vote_average": 6.1,
+    "vote_count": 38
+  },
+  {
+    "title": "Finding Santa",
+    "year": 2017,
+    "tmdbId": 474985,
+    "imdbId": "tt7385392",
+    "tmdb_id": 474985,
+    "imdb_id": "tt7385392",
+    "poster": "/images/posters/474985.webp",
+    "overview": "Christmas is a busy, busy time for the residents of Green River, particularly for Grace Long, the third generation of her family to steward the New England town’s signature Christmas Eve parade. This year’s audience for the parade promises to be in the millions, thanks to a national morning show that has chosen Green River as the site of its Christmas Eve day program.",
+    "vote_average": 6.668,
+    "vote_count": 98
+  }
+]

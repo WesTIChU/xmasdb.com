@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Leah's Perfect Gift",
+    "year": 2024,
+    "tmdbId": 1361221,
+    "imdbId": "tt33901924",
+    "tmdb_id": 1361221,
+    "imdb_id": "tt33901924",
+    "poster": "/images/posters/1361221.webp",
+    "overview": "Leah Meyer, a Jewish woman who has always dreamed of experiencing a traditional Christmas, faces unexpected challenges when she spends the holidays with her boyfriend's uptight Connecticut family.",
+    "vote_average": 6.182,
+    "vote_count": 11
+  },
+  {
+    "title": "Eight Gifts of Hanukkah",
+    "year": 2021,
+    "tmdbId": 888488,
+    "imdbId": "tt16282114",
+    "tmdb_id": 888488,
+    "imdb_id": "tt16282114",
+    "poster": "/images/posters/888488.webp",
+    "overview": "An anonymous suitor sends optometrist Sara a gift for each night of Hanukkah. On her journey to find her secret admirer, she learns her one true love might be someone she never expected.",
+    "vote_average": 7.05,
+    "vote_count": 20
+  },
+  {
+    "title": "Christmas at Dollywood",
+    "year": 2019,
+    "tmdbId": 626309,
+    "imdbId": "tt10627564",
+    "tmdb_id": 626309,
+    "imdb_id": "tt10627564",
+    "poster": "/images/posters/626309.webp",
+    "overview": "Event planner Rachel lands her biggest job yet – Dollywood's 30th Smoky Mountain Christmas celebration, where she’s teamed with operations director Luke to plan an event as glamorous as Dolly Parton herself. Sparks fly, but it takes matchmaking by Dolly to help them find their way.",
+    "vote_average": 6.7,
+    "vote_count": 40
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "title": "A Very Merry Bridesmaid",
+    "year": 2021,
+    "tmdbId": 876104,
+    "imdbId": "tt15403980",
+    "tmdb_id": 876104,
+    "imdb_id": "tt15403980",
+    "poster": "/images/posters/876104.webp",
+    "overview": "Leah's 30th birthday is on Christmas Eve, the same day as her brother's wedding. Her childhood crush is back in town for the wedding and he is determined to make sure her birthday does not go by the wayside.",
+    "vote_average": 6.296,
+    "vote_count": 49
+  },
+  {
+    "title": "Cross Country Christmas",
+    "year": 2020,
+    "tmdbId": 737780,
+    "imdbId": "tt13040330",
+    "tmdb_id": 737780,
+    "imdb_id": "tt13040330",
+    "poster": "/images/posters/737780.webp",
+    "overview": "Former classmates Lina and Max are traveling home for the holidays, until a storm hits and they have to work together to make it home in time, no matter the mode of transportation.",
+    "vote_average": 6.784,
+    "vote_count": 51
+  }
+]

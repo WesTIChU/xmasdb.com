@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Christmas Under the Stars",
+    "year": 2019,
+    "tmdbId": 629985,
+    "imdbId": "tt10922658",
+    "tmdb_id": 629985,
+    "imdb_id": "tt10922658",
+    "poster": "/images/posters/629985.webp",
+    "overview": "When Nick is fired from his high-powered investment firm at Christmastime, he takes a job at a Christmas tree lot. There, he meets Julie, an astronomy teacher who’s always looked to the stars for hope. As the Christmas spirit washes over him—and he begins falling for Julie—the once self-centered Nick discovers the joy of helping others.",
+    "vote_average": 6.5,
+    "vote_count": 55
+  },
+  {
+    "title": "A Gift to Remember",
+    "year": 2017,
+    "tmdbId": 480614,
+    "imdbId": "tt7006938",
+    "tmdb_id": 480614,
+    "imdb_id": "tt7006938",
+    "poster": "/images/posters/480614.webp",
+    "overview": "After colliding with a pedestrian on her bicycle who loses his memory following the accident, Darcy Archer becomes determined to help the handsome guy figure out who he is. In the process, she finds out a lot more about who she is, what she wants from life, and how this too-good-to-be-true guy might just be the man she’s been waiting to bump into all her life.",
+    "vote_average": 6.021,
+    "vote_count": 71
+  },
+  {
+    "title": "Ice Sculpture Christmas",
+    "year": 2015,
+    "tmdbId": 360604,
+    "imdbId": "tt5031014",
+    "tmdb_id": 360604,
+    "imdb_id": "tt5031014",
+    "poster": "/images/posters/360604.webp",
+    "overview": "After starting her first job at a country club restaurant, Callie’s passions for cooking and ice sculpting are met with romance and Christmas spirit when a childhood friend enters her into the club’s annual Christmas ice sculpting competition without her knowledge.",
+    "vote_average": 6.1,
+    "vote_count": 87
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Christmas Sail",
+    "year": 2021,
+    "tmdbId": 874228,
+    "imdbId": "tt15758364",
+    "tmdb_id": 874228,
+    "imdb_id": "tt15758364",
+    "poster": "/images/posters/874228.webp",
+    "overview": "When Liz returns home to take care of her estranged father, she is determined to give her daughter a perfect Christmas and reconnects with her best friend.",
+    "vote_average": 5.7,
+    "vote_count": 21
+  },
+  {
+    "title": "Cherished Memories: A Gift to Remember 2",
+    "year": 2019,
+    "tmdbId": 631428,
+    "imdbId": "tt8416396",
+    "tmdb_id": 631428,
+    "imdb_id": "tt8416396",
+    "poster": "/images/posters/631428.webp",
+    "overview": "As Darcy and Aiden prepare to celebrate their second Christmas together, an unexpected guest and a fight to save the beloved community center unites everyone for an unforgettable holiday.",
+    "vote_average": 5.42,
+    "vote_count": 25
+  },
+  {
+    "title": "Write Before Christmas",
+    "year": 2019,
+    "tmdbId": 626319,
+    "imdbId": "tt10345008",
+    "tmdb_id": 626319,
+    "imdb_id": "tt10345008",
+    "poster": "/images/posters/626319.webp",
+    "overview": "A recently single Jessica sends Christmas cards to people who have impacted her life—the aunt who raised her, her younger brother in the military, a popstar who was part of the soundtrack of her life, the music teacher who inspired her, and the best friend who always tells the truth.",
+    "vote_average": 6.9,
+    "vote_count": 115
+  }
+]

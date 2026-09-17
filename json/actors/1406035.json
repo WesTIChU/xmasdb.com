@@ -1,0 +1,38 @@
+[
+  {
+    "title": "A Gingerbread Romance",
+    "year": 2018,
+    "tmdbId": 550033,
+    "imdbId": "tt9028866",
+    "tmdb_id": 550033,
+    "imdb_id": "tt9028866",
+    "poster": "/images/posters/550033.webp",
+    "overview": "Successful architect Taylor Scott is poised for a promotion and a move to Paris but before that’s decided, her boss tasks her with creating a life-sized gingerbread house for a holiday competition. She partners with pastry chef Adam Dale, and though their styles are different, they form a deep connection working together.",
+    "vote_average": 5.083,
+    "vote_count": 30
+  },
+  {
+    "title": "It's Christmas, Eve",
+    "year": 2018,
+    "tmdbId": 535807,
+    "imdbId": "tt8300786",
+    "tmdb_id": 535807,
+    "imdb_id": "tt8300786",
+    "poster": "/images/posters/535807.webp",
+    "overview": "Interim school superintendent Eve Morgan finds herself in a tough spot when she is assigned to shut down a school's failing music program and must come to terms with her musical past.",
+    "vote_average": 6.2,
+    "vote_count": 43
+  },
+  {
+    "title": "The Nine Lives of Christmas",
+    "year": 2014,
+    "tmdbId": 299576,
+    "imdbId": "tt3889642",
+    "tmdb_id": 299576,
+    "imdb_id": "tt3889642",
+    "poster": "/images/posters/299576.webp",
+    "overview": "With Christmas approaching, a handsome fireman afraid of commitment adopts a stray cat and meets a beautiful veterinary student who challenges his decision to remain a confirmed bachelor.",
+    "vote_average": 6.716,
+    "vote_count": 111
+  }
+]

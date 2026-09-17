@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Confessions of a Christmas Letter",
+    "year": 2024,
+    "tmdbId": 1361141,
+    "imdbId": "tt33401152",
+    "tmdb_id": 1361141,
+    "imdb_id": "tt33401152",
+    "poster": "/images/posters/1361141.webp",
+    "overview": "Settie Rose, an eccentric matriarch, hires struggling novelist Juan to write her holiday contest entry. A mixup sparks gossip of Juan's engagement to Settie's daughter Lily, leading the family to play along humorously.",
+    "vote_average": 5.6,
+    "vote_count": 14
+  },
+  {
+    "title": "The 5-Year Christmas Party",
+    "year": 2024,
+    "tmdbId": 1359868,
+    "imdbId": "tt33503201",
+    "tmdb_id": 1359868,
+    "imdb_id": "tt33503201",
+    "poster": "/images/posters/1359868.webp",
+    "overview": "Over five years, Alice and her old theater school rival, Max, reunite each holiday season to work at a Chicago catering company's Christmas parties.  While their undeniable chemistry grows, the timing is never right for romance - until the company's final season pushes them to confront their true feelings.",
+    "vote_average": 5.111,
+    "vote_count": 8
+  },
+  {
+    "title": "Christmas by Starlight",
+    "year": 2020,
+    "tmdbId": 746045,
+    "imdbId": "tt13206476",
+    "tmdb_id": 746045,
+    "imdb_id": "tt13206476",
+    "poster": "/images/posters/746045.webp",
+    "overview": "Annie, a lawyer, must help her loved ones this holiday season. Her family’s restaurant, The Starlight Café, is slated for demolition. The heir to the development firm responsible, William, makes her an unlikely proposition: he’ll spare the café if Annie spends the week “appearing” as the legal counsel his father is demanding he hire in the wake of some costly mistakes.",
+    "vote_average": 6.8,
+    "vote_count": 55
+  }
+]

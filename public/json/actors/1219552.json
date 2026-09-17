@@ -1,0 +1,38 @@
+[
+  {
+    "title": "The More the Merrier",
+    "year": 2025,
+    "tmdbId": 1546001,
+    "imdbId": "tt38354960",
+    "tmdb_id": 1546001,
+    "imdb_id": "tt38354960",
+    "poster": "/images/posters/1546001.webp",
+    "overview": "An overwhelmed doctor is left to look after and care for three very pregnant women by herself during a storm on Christmas Eve, until she is joined by an intriguing colleague.",
+    "vote_average": 6.273,
+    "vote_count": 11
+  },
+  {
+    "title": "A Very Merry Bridesmaid",
+    "year": 2021,
+    "tmdbId": 876104,
+    "imdbId": "tt15403980",
+    "tmdb_id": 876104,
+    "imdb_id": "tt15403980",
+    "poster": "/images/posters/876104.webp",
+    "overview": "Leah's 30th birthday is on Christmas Eve, the same day as her brother's wedding. Her childhood crush is back in town for the wedding and he is determined to make sure her birthday does not go by the wayside.",
+    "vote_average": 6.296,
+    "vote_count": 49
+  },
+  {
+    "title": "Open by Christmas",
+    "year": 2021,
+    "tmdbId": 874161,
+    "imdbId": "tt15758400",
+    "tmdb_id": 874161,
+    "imdb_id": "tt15758400",
+    "poster": "/images/posters/874161.webp",
+    "overview": "When Nicky finds an unopened Christmas card from a high school secret admirer, she and her best friend Simone search to find and thank the anonymous author.",
+    "vote_average": 6.2,
+    "vote_count": 30
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Sugarplummed",
+    "year": 2024,
+    "tmdbId": 1359060,
+    "imdbId": "tt33900751",
+    "tmdb_id": 1359060,
+    "imdb_id": "tt33900751",
+    "poster": "/images/posters/1359060.webp",
+    "overview": "Emily's wish for a picture-perfect Christmas comes true when a magical, optimistic movie character steps off the screen to help, but as things spiral out of control, she learns that true holiday perfection might look very different from what she imagined.",
+    "vote_average": 7.024,
+    "vote_count": 21
+  },
+  {
+    "title": "A Tale of Two Christmases",
+    "year": 2022,
+    "tmdbId": 1028546,
+    "imdbId": "tt22247650",
+    "tmdb_id": 1028546,
+    "imdb_id": "tt22247650",
+    "poster": "/images/posters/1028546.webp",
+    "overview": "Thanks to some Christmas magic, Emma gets to experience two different Christmases – one where she stays in the city and celebrates with a new crush and his friends, and one where she returns home for all the traditions with her family…and Drew, a longtime friend who may have feelings for her. Emma’s double holiday ultimately helps her discover what will truly make her happy in life as well as in love.",
+    "vote_average": 5.58,
+    "vote_count": 25
+  },
+  {
+    "title": "Lights, Camera, Christmas!",
+    "year": 2022,
+    "tmdbId": 1027439,
+    "imdbId": "tt22246560",
+    "tmdb_id": 1027439,
+    "imdb_id": "tt22246560",
+    "poster": "/images/posters/1027439.webp",
+    "overview": "When a holiday rom-com movie shooting in her town needs a costume designer, Kerry, a local shop owner, steps into the role. While working on the movie, she rediscovers her passion for costume design and finds herself falling for Brad, the film’s famous leading man.",
+    "vote_average": 6.3,
+    "vote_count": 25
+  }
+]

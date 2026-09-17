@@ -1,0 +1,38 @@
+[
+  {
+    "title": "A Christmas Duet",
+    "year": 2019,
+    "tmdbId": 631417,
+    "imdbId": "tt10768208",
+    "tmdb_id": 631417,
+    "imdb_id": "tt10768208",
+    "poster": "/images/posters/631417.webp",
+    "overview": "Former couple and pop music duo Averie and Jesse unexpectedly reunite at her inn during the holidays. As they spend time together, they rediscover long-buried feelings and must decide if they are meant to live their lives solo or in harmony together.",
+    "vote_average": 6.2,
+    "vote_count": 26
+  },
+  {
+    "title": "Write Before Christmas",
+    "year": 2019,
+    "tmdbId": 626319,
+    "imdbId": "tt10345008",
+    "tmdb_id": 626319,
+    "imdb_id": "tt10345008",
+    "poster": "/images/posters/626319.webp",
+    "overview": "A recently single Jessica sends Christmas cards to people who have impacted her life—the aunt who raised her, her younger brother in the military, a popstar who was part of the soundtrack of her life, the music teacher who inspired her, and the best friend who always tells the truth.",
+    "vote_average": 6.9,
+    "vote_count": 115
+  },
+  {
+    "title": "A December Bride",
+    "year": 2016,
+    "tmdbId": 427045,
+    "imdbId": "tt5739680",
+    "tmdb_id": 427045,
+    "imdb_id": "tt5739680",
+    "poster": "/images/posters/427045.webp",
+    "overview": "Aspiring interior designer Layla is dreading the Christmastime wedding of her cousin who’s marrying Layla’s ex-fiancé. Although Seth is the one responsible for introducing the bride and groom, she begrudgingly accepts his offer to be her date as she’s out of options. Seth gets carried away at the reception and announces they’re engaged, forcing a mortified Layla to keep up the pretense.",
+    "vote_average": 7.1,
+    "vote_count": 163
+  }
+]

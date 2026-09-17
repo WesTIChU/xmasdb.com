@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Heart of the Holidays",
+    "year": 2020,
+    "tmdbId": 756727,
+    "imdbId": "tt13286622",
+    "tmdb_id": 756727,
+    "imdb_id": "tt13286622",
+    "poster": "/images/posters/756727.webp",
+    "overview": "After her life in New York unexpectedly falls apart, powerhouse stockbroker Sam Wallace returns to her small town for the holidays and reconnects with her high school sweetheart who helps reignite her humanitarian spirit just in time to help their community on Christmas.",
+    "vote_average": 6.38,
+    "vote_count": 25
+  },
+  {
+    "title": "A Shoe Addict's Christmas",
+    "year": 2018,
+    "tmdbId": 535809,
+    "imdbId": "tt8634202",
+    "tmdb_id": 535809,
+    "imdb_id": "tt8634202",
+    "poster": "/images/posters/535809.webp",
+    "overview": "As Christmas approaches, a department store worker whose life lacks fulfillment meets her guardian angel, who offers her a chance to change her circumstances by magically transporting her to Christmases past whenever she tries on a new pair of shoes.",
+    "vote_average": 6.165,
+    "vote_count": 79
+  },
+  {
+    "title": "Christmas Incorporated",
+    "year": 2015,
+    "tmdbId": 363480,
+    "imdbId": "tt5204384",
+    "tmdb_id": 363480,
+    "imdb_id": "tt5204384",
+    "poster": "/images/posters/363480.webp",
+    "overview": "Sometimes, life just seems to hand you exactly what you need – particularly at Christmastime. Riley is scraping bottom when she miraculously lands a job with a wealthy New York City entrepreneur. He’s a bad-boy socialite type who is poised to play Scrooge by closing one of his factories just before Christmas, which would devastate an entire town. It’s left to Riley to talk him out of it and turn him into a man of virtue rather than shame.",
+    "vote_average": 6.3,
+    "vote_count": 85
+  }
+]

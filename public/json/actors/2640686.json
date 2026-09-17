@@ -1,0 +1,50 @@
+[
+  {
+    "title": "A Timeless Christmas",
+    "year": 2020,
+    "tmdbId": 746039,
+    "imdbId": "tt13341414",
+    "tmdb_id": 746039,
+    "imdb_id": "tt13341414",
+    "poster": "/images/posters/746039.webp",
+    "overview": "Charles Whitley travels from 1903 to 2020 where he meets Megan Turner, a tour guide at his historic mansion, and experiences a 21st Century Christmas.",
+    "vote_average": 6.421,
+    "vote_count": 82
+  },
+  {
+    "title": "Jingle Bell Bride",
+    "year": 2020,
+    "tmdbId": 737763,
+    "imdbId": "tt12877642",
+    "tmdb_id": 737763,
+    "imdb_id": "tt12877642",
+    "poster": "/images/posters/737763.webp",
+    "overview": "Wedding planner Jessica Perez travels to a remote town in Alaska to find a rare flower for a celebrity client and is charmed by the small town during Christmas, as well as the handsome local helping her.",
+    "vote_average": 6.4,
+    "vote_count": 32
+  },
+  {
+    "title": "Write Before Christmas",
+    "year": 2019,
+    "tmdbId": 626319,
+    "imdbId": "tt10345008",
+    "tmdb_id": 626319,
+    "imdb_id": "tt10345008",
+    "poster": "/images/posters/626319.webp",
+    "overview": "A recently single Jessica sends Christmas cards to people who have impacted her life—the aunt who raised her, her younger brother in the military, a popstar who was part of the soundtrack of her life, the music teacher who inspired her, and the best friend who always tells the truth.",
+    "vote_average": 6.9,
+    "vote_count": 115
+  },
+  {
+    "title": "The Most Wonderful Time of the Year",
+    "year": 2008,
+    "tmdbId": 35830,
+    "imdbId": "tt1327788",
+    "tmdb_id": 35830,
+    "imdb_id": "tt1327788",
+    "poster": "/images/posters/35830.webp",
+    "overview": "Five-time Emmy nominee and Golden Globe winner Henry Winkler stars in The Most Wonderful Time of the Year, the story of what happens when you open your heart to the power of Christmas. Disenchanted single mom Jennifer Cullen (Brooke Burns) is a Scroogette when it comes to anything Christmas. In fact, even her six-year-old son, Brian, is having trouble believing in Santa Claus. But when her Uncle Ralph (Henry Winkler) visits and brings a fellow passenger from his flight named Morgan Derby (Warren Christie), Jennifer s dubious heart awakens to the possibility that perhaps Christmas really does hold miracles. It s uplifting and laugh-packed and a story that will inspire the whole family to believe.",
+    "vote_average": 6.408,
+    "vote_count": 71
+  }
+]

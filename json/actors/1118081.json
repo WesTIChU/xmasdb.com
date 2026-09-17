@@ -1,0 +1,38 @@
+[
+  {
+    "title": "A Biltmore Christmas",
+    "year": 2023,
+    "tmdbId": 1064137,
+    "imdbId": "tt24822574",
+    "tmdb_id": 1064137,
+    "imdb_id": "tt24822574",
+    "poster": "/images/posters/1064137.webp",
+    "overview": "Contemporary screenwriter Lucy Hardgrove is hired to pen the remake of the holiday classic His Merry Wife!, which was shot at the renowned Biltmore Estate. Taking a tour of the grounds, she accidentally knocks over an hourglass, transporting her back in time to 1946, right when His Merry Wife! is being filmed.",
+    "vote_average": 6.951,
+    "vote_count": 72
+  },
+  {
+    "title": "An Unexpected Christmas",
+    "year": 2021,
+    "tmdbId": 874124,
+    "imdbId": "tt15766640",
+    "tmdb_id": 874124,
+    "imdb_id": "tt15766640",
+    "poster": "/images/posters/874124.webp",
+    "overview": "Jamie hasn’t told his family that he and his now ex-girlfriend Emily broke up. After an inopportune run-in with Emily at the train station in his hometown, Jamie convinces her to pretend they’re still a couple to avoid ruining Christmas for his family.",
+    "vote_average": 6.25,
+    "vote_count": 60
+  },
+  {
+    "title": "Five Star Christmas",
+    "year": 2020,
+    "tmdbId": 746060,
+    "imdbId": "tt13320784",
+    "tmdb_id": 746060,
+    "imdb_id": "tt13320784",
+    "poster": "/images/posters/746060.webp",
+    "overview": "After moving back to her hometown, Lisa (Lenz) plots with her siblings and grandparents to help her father's bed and breakfast get a five-star review from an incognito travel critic (Webster), but ends up falling for him, not knowing he is the real critic.",
+    "vote_average": 6.865,
+    "vote_count": 48
+  }
+]

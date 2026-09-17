@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Holiday Road",
+    "year": 2023,
+    "tmdbId": 1180791,
+    "imdbId": "tt29233535",
+    "tmdb_id": 1180791,
+    "imdb_id": "tt29233535",
+    "poster": "/images/posters/1180791.webp",
+    "overview": "A travel writer, a tech entrepreneur, a devoted mother and more strangers are stranded at the airport for the holidays, they rent a van for an unexpected road trip.",
+    "vote_average": 7.2,
+    "vote_count": 23
+  },
+  {
+    "title": "A Midnight Kiss",
+    "year": 2018,
+    "tmdbId": 550036,
+    "imdbId": "tt9028890",
+    "tmdb_id": 550036,
+    "imdb_id": "tt9028890",
+    "poster": "/images/posters/550036.webp",
+    "overview": "With only one week to prepare, Mia Pearson and her family of party planners are given the biggest job in their company’s history: a New Year’s Eve party for tech entrepreneur Kate Clark. But when her brother breaks his leg and her parents head off on a planned vacation, Lisa must reluctantly enlist the help of her brother’s visiting college buddy, David Campos, to help her pull off the event which just so happens to fall on her favorite day of the year. But what Lisa didn’t plan on was falling in love in the process.",
+    "vote_average": 6,
+    "vote_count": 42
+  },
+  {
+    "title": "The Mistletoe Inn",
+    "year": 2017,
+    "tmdbId": 475829,
+    "imdbId": "tt7647010",
+    "tmdb_id": 475829,
+    "imdb_id": "tt7647010",
+    "poster": "/images/posters/475829.webp",
+    "overview": "When aspiring romance novelist Kim Rossi is unceremoniously dumped by her soon-to-be-published romance novelist boyfriend, Kim takes stock and decides to take a leap. She signs up for a romance writing retreat at a quaint Vermont Inn shortly before Christmas, where a top romance novelist is scheduled to attend and read the work of one lucky writer. Shortly after arriving, she crosses paths with Zeke, whom she initially finds to be intrusive and, naturally, ends up being her assignment partner. Worse yet, her ex is also at the retreat. Despite these bumps in the road, Kim steps outside her comfort zone and plunges into the writing exercises, surprising herself. Equally unexpected is the attraction that seems to be building between her and Zeke that promises to take her down a road she never imagined traveling. Based on the book by Richard Paul Evans.",
+    "vote_average": 6,
+    "vote_count": 63
+  },
+  {
+    "title": "Christmas Cookies",
+    "year": 2016,
+    "tmdbId": 410317,
+    "imdbId": "tt5675936",
+    "tmdb_id": 410317,
+    "imdb_id": "tt5675936",
+    "poster": "/images/posters/410317.webp",
+    "overview": "Aunt Sally's Christmas Cookie Company is sold to a large conglomerate and executive Hannah must seal the deal and shut down the factory, which is the small town of Cookie Jar's lifeblood. What was supposed to be a simple assignment for Hannah becomes complicated when she meets Jake, the factory owner who's determined to keep the factory in town. Despite not being a fan of the holiday, the Christmas spirit in this small town is infectious and she gets swept up in the joy of the season while also falling in love with Jake.",
+    "vote_average": 5.969,
+    "vote_count": 80
+  }
+]

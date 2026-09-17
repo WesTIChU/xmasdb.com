@@ -1,0 +1,74 @@
+[
+  {
+    "title": "A Royal Montana Christmas",
+    "year": 2025,
+    "tmdbId": 1535223,
+    "imdbId": "tt36364046",
+    "tmdb_id": 1535223,
+    "imdb_id": "tt36364046",
+    "poster": "/images/posters/1535223.webp",
+    "overview": "A princess looking to decompress before the holidays heads to a Montana ranch and meets a charming guide.",
+    "vote_average": 7.636,
+    "vote_count": 11
+  },
+  {
+    "title": "Happy Howlidays",
+    "year": 2024,
+    "tmdbId": 1361232,
+    "imdbId": "tt33908123",
+    "tmdb_id": 1361232,
+    "imdb_id": "tt33908123",
+    "poster": "/images/posters/1361232.webp",
+    "overview": "A webpage editor spending the holidays alone is drawn into an unusual encounter when she encounters a stray dog.",
+    "vote_average": 5.5,
+    "vote_count": 12
+  },
+  {
+    "title": "Christmas on Cherry Lane",
+    "year": 2023,
+    "tmdbId": 1180665,
+    "imdbId": "tt28287106",
+    "tmdb_id": 1180665,
+    "imdb_id": "tt28287106",
+    "poster": "/images/posters/1180665.webp",
+    "overview": "Three couples at different parts of life navigate big turning points in their lives over the holidays.",
+    "vote_average": 6.224,
+    "vote_count": 29
+  },
+  {
+    "title": "An Unexpected Christmas",
+    "year": 2021,
+    "tmdbId": 874124,
+    "imdbId": "tt15766640",
+    "tmdb_id": 874124,
+    "imdb_id": "tt15766640",
+    "poster": "/images/posters/874124.webp",
+    "overview": "Jamie hasn’t told his family that he and his now ex-girlfriend Emily broke up. After an inopportune run-in with Emily at the train station in his hometown, Jamie convinces her to pretend they’re still a couple to avoid ruining Christmas for his family.",
+    "vote_average": 6.25,
+    "vote_count": 60
+  },
+  {
+    "title": "Christmas in Tahoe",
+    "year": 2021,
+    "tmdbId": 874226,
+    "imdbId": "tt15739494",
+    "tmdb_id": 874226,
+    "imdb_id": "tt15739494",
+    "poster": "/images/posters/874226.webp",
+    "overview": "To save her family hotel's Christmas show, talent booker Claire must ask for help from her ex-boyfriend Ryan, the lead guitarist of a now-famous band that fired her as their manager years ago.",
+    "vote_average": 6.06,
+    "vote_count": 25
+  },
+  {
+    "title": "Christmas in Evergreen",
+    "year": 2017,
+    "tmdbId": 474977,
+    "imdbId": "tt7440948",
+    "tmdb_id": 474977,
+    "imdb_id": "tt7440948",
+    "poster": "/images/posters/474977.webp",
+    "overview": "Allie, a veterinarian in Evergreen, reluctantly will spend Christmas with her long-distance boyfriend. Bound for the airport, she has engine trouble, and Ryan, headed to Florida with his daughter Zoe, stops to help. Sure they won’t meet again, they ignore their attraction, and part ways. At the diner, Zoe wishes on a snow globe, and a storm seems to grant her wish.",
+    "vote_average": 6.4,
+    "vote_count": 111
+  }
+]

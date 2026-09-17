@@ -1,0 +1,38 @@
+[
+  {
+    "title": "A Tale of Two Christmases",
+    "year": 2022,
+    "tmdbId": 1028546,
+    "imdbId": "tt22247650",
+    "tmdb_id": 1028546,
+    "imdb_id": "tt22247650",
+    "poster": "/images/posters/1028546.webp",
+    "overview": "Thanks to some Christmas magic, Emma gets to experience two different Christmases – one where she stays in the city and celebrates with a new crush and his friends, and one where she returns home for all the traditions with her family…and Drew, a longtime friend who may have feelings for her. Emma’s double holiday ultimately helps her discover what will truly make her happy in life as well as in love.",
+    "vote_average": 5.58,
+    "vote_count": 25
+  },
+  {
+    "title": "The Christmas Contest",
+    "year": 2021,
+    "tmdbId": 874144,
+    "imdbId": "tt15316422",
+    "tmdb_id": 874144,
+    "imdb_id": "tt15316422",
+    "poster": "/images/posters/874144.webp",
+    "overview": "Exes Lara and Ben compete in a Christmas contest to win money for the charity of their choosing. The city watches them battle and choose what is more important, victory or love.",
+    "vote_average": 5.897,
+    "vote_count": 39
+  },
+  {
+    "title": "The Nine Lives of Christmas",
+    "year": 2014,
+    "tmdbId": 299576,
+    "imdbId": "tt3889642",
+    "tmdb_id": 299576,
+    "imdb_id": "tt3889642",
+    "poster": "/images/posters/299576.webp",
+    "overview": "With Christmas approaching, a handsome fireman afraid of commitment adopts a stray cat and meets a beautiful veterinary student who challenges his decision to remain a confirmed bachelor.",
+    "vote_average": 6.716,
+    "vote_count": 111
+  }
+]

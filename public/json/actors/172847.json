@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Nantucket Noel",
+    "year": 2021,
+    "tmdbId": 874122,
+    "imdbId": "tt15691228",
+    "tmdb_id": 874122,
+    "imdb_id": "tt15691228",
+    "poster": "/images/posters/874122.webp",
+    "overview": "During the Seaside Noel celebrations, Christin learns of a developer who is planning to tear down the wharf that is home to her toy store. Tensions rise as she falls for the developer's son, Andy.",
+    "vote_average": 6.3,
+    "vote_count": 27
+  },
+  {
+    "title": "Christmas by Starlight",
+    "year": 2020,
+    "tmdbId": 746045,
+    "imdbId": "tt13206476",
+    "tmdb_id": 746045,
+    "imdb_id": "tt13206476",
+    "poster": "/images/posters/746045.webp",
+    "overview": "Annie, a lawyer, must help her loved ones this holiday season. Her family’s restaurant, The Starlight Café, is slated for demolition. The heir to the development firm responsible, William, makes her an unlikely proposition: he’ll spare the café if Annie spends the week “appearing” as the legal counsel his father is demanding he hire in the wake of some costly mistakes.",
+    "vote_average": 6.8,
+    "vote_count": 55
+  },
+  {
+    "title": "My Christmas Dream",
+    "year": 2016,
+    "tmdbId": 415962,
+    "imdbId": "tt5949946",
+    "tmdb_id": 415962,
+    "imdb_id": "tt5949946",
+    "poster": "/images/posters/415962.webp",
+    "overview": "A department store manager sets out to create an amazing holiday display window to impress the owner. She asks a recently-fired employee to help her make the display, and as they work together, they start to fall in love.",
+    "vote_average": 5.8,
+    "vote_count": 79
+  }
+]

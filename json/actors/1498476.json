@@ -1,0 +1,38 @@
+[
+  {
+    "title": "The Christmas Cup",
+    "year": 2025,
+    "tmdbId": 1547922,
+    "imdbId": "tt38354991",
+    "tmdb_id": 1547922,
+    "imdb_id": "tt38354991",
+    "poster": "/images/posters/1547922.webp",
+    "overview": "After an injury, Staff Sergeant Kelly Brandt returns home for the holidays and her family pushes her to get involved in the annual Christmas Cup against the rival town; with that, she teams up with Fire Captain Quinn Stokley.",
+    "vote_average": 5.167,
+    "vote_count": 6
+  },
+  {
+    "title": "Christmas in Evergreen: Bells Are Ringing",
+    "year": 2020,
+    "tmdbId": 746047,
+    "imdbId": "tt13194940",
+    "tmdb_id": 746047,
+    "imdb_id": "tt13194940",
+    "poster": "/images/posters/746047.webp",
+    "overview": "As Michelle’s wedding approaches, Hannah steps up to help finish the launch of the new Evergreen museum while questioning her relationship and future with Elliot.",
+    "vote_average": 5.7,
+    "vote_count": 32
+  },
+  {
+    "title": "Christmas in Evergreen",
+    "year": 2017,
+    "tmdbId": 474977,
+    "imdbId": "tt7440948",
+    "tmdb_id": 474977,
+    "imdb_id": "tt7440948",
+    "poster": "/images/posters/474977.webp",
+    "overview": "Allie, a veterinarian in Evergreen, reluctantly will spend Christmas with her long-distance boyfriend. Bound for the airport, she has engine trouble, and Ryan, headed to Florida with his daughter Zoe, stops to help. Sure they won’t meet again, they ignore their attraction, and part ways. At the diner, Zoe wishes on a snow globe, and a storm seems to grant her wish.",
+    "vote_average": 6.4,
+    "vote_count": 111
+  }
+]

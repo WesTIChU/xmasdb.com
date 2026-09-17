@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Holiday Road",
+    "year": 2023,
+    "tmdbId": 1180791,
+    "imdbId": "tt29233535",
+    "tmdb_id": 1180791,
+    "imdb_id": "tt29233535",
+    "poster": "/images/posters/1180791.webp",
+    "overview": "A travel writer, a tech entrepreneur, a devoted mother and more strangers are stranded at the airport for the holidays, they rent a van for an unexpected road trip.",
+    "vote_average": 7.2,
+    "vote_count": 23
+  },
+  {
+    "title": "Christmas Getaway",
+    "year": 2017,
+    "tmdbId": 480623,
+    "imdbId": "tt7688990",
+    "tmdb_id": 480623,
+    "imdb_id": "tt7688990",
+    "poster": "/images/posters/480623.webp",
+    "overview": "When a reservation mix-up at a mountain resort forces a newly-single travel writer to share a cabin with a handsome widower and his precocious daughter over the holidays, their lives are transformed by the magic of Christmas and the unexpected power of love.",
+    "vote_average": 6.961,
+    "vote_count": 153
+  }
+]

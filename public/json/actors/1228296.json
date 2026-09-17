@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Operation Nutcracker",
+    "year": 2024,
+    "tmdbId": 1298476,
+    "imdbId": "tt30487216",
+    "tmdb_id": 1298476,
+    "imdb_id": "tt30487216",
+    "poster": "/images/posters/1298476.webp",
+    "overview": "When an antique nutcracker set to be auctioned at the Warby family Christmas charity goes missing, a demanding event planner and the heir to the Warby dynasty try to track it down.",
+    "vote_average": 6.725,
+    "vote_count": 19
+  },
+  {
+    "title": "Flipping for Christmas",
+    "year": 2023,
+    "tmdbId": 1180394,
+    "imdbId": "tt27911907",
+    "tmdb_id": 1180394,
+    "imdb_id": "tt27911907",
+    "poster": "/images/posters/1180394.webp",
+    "overview": "Right before Christmas, realtor Abigail agrees to help her sister with what she believes will be an easy flip of an inherited home. Things get tricky when the co-beneficiary Bo has a different idea.",
+    "vote_average": 6.233,
+    "vote_count": 14
+  }
+]

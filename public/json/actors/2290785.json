@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Gingerbread Miracle",
+    "year": 2021,
+    "tmdbId": 874244,
+    "imdbId": "tt15821582",
+    "tmdb_id": 874244,
+    "imdb_id": "tt15821582",
+    "poster": "/images/posters/874244.webp",
+    "overview": "Maya and Alex, old friends from high school, work together over Christmas to sell his uncle’s Mexican bakery famous for its gingerbread cookies that the patrons believe grants wishes.",
+    "vote_average": 6,
+    "vote_count": 30
+  },
+  {
+    "title": "Cross Country Christmas",
+    "year": 2020,
+    "tmdbId": 737780,
+    "imdbId": "tt13040330",
+    "tmdb_id": 737780,
+    "imdb_id": "tt13040330",
+    "poster": "/images/posters/737780.webp",
+    "overview": "Former classmates Lina and Max are traveling home for the holidays, until a storm hits and they have to work together to make it home in time, no matter the mode of transportation.",
+    "vote_average": 6.784,
+    "vote_count": 51
+  }
+]

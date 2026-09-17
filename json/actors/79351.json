@@ -1,0 +1,62 @@
+[
+  {
+    "title": "Happy Howlidays",
+    "year": 2024,
+    "tmdbId": 1361232,
+    "imdbId": "tt33908123",
+    "tmdb_id": 1361232,
+    "imdb_id": "tt33908123",
+    "poster": "/images/posters/1361232.webp",
+    "overview": "A webpage editor spending the holidays alone is drawn into an unusual encounter when she encounters a stray dog.",
+    "vote_average": 5.5,
+    "vote_count": 12
+  },
+  {
+    "title": "If I Only Had Christmas",
+    "year": 2020,
+    "tmdbId": 737766,
+    "imdbId": "tt12766346",
+    "tmdb_id": 737766,
+    "imdb_id": "tt12766346",
+    "poster": "/images/posters/737766.webp",
+    "overview": "At Christmas, a cheerful publicist teams up with a cynical business owner and his team to help a charity in need.",
+    "vote_average": 6.6,
+    "vote_count": 46
+  },
+  {
+    "title": "Jingle Bell Bride",
+    "year": 2020,
+    "tmdbId": 737763,
+    "imdbId": "tt12877642",
+    "tmdb_id": 737763,
+    "imdb_id": "tt12877642",
+    "poster": "/images/posters/737763.webp",
+    "overview": "Wedding planner Jessica Perez travels to a remote town in Alaska to find a rare flower for a celebrity client and is charmed by the small town during Christmas, as well as the handsome local helping her.",
+    "vote_average": 6.4,
+    "vote_count": 32
+  },
+  {
+    "title": "It's Christmas, Eve",
+    "year": 2018,
+    "tmdbId": 535807,
+    "imdbId": "tt8300786",
+    "tmdb_id": 535807,
+    "imdb_id": "tt8300786",
+    "poster": "/images/posters/535807.webp",
+    "overview": "Interim school superintendent Eve Morgan finds herself in a tough spot when she is assigned to shut down a school's failing music program and must come to terms with her musical past.",
+    "vote_average": 6.2,
+    "vote_count": 43
+  },
+  {
+    "title": "The Nine Lives of Christmas",
+    "year": 2014,
+    "tmdbId": 299576,
+    "imdbId": "tt3889642",
+    "tmdb_id": 299576,
+    "imdb_id": "tt3889642",
+    "poster": "/images/posters/299576.webp",
+    "overview": "With Christmas approaching, a handsome fireman afraid of commitment adopts a stray cat and meets a beautiful veterinary student who challenges his decision to remain a confirmed bachelor.",
+    "vote_average": 6.716,
+    "vote_count": 111
+  }
+]

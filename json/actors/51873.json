@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Sugarplummed",
+    "year": 2024,
+    "tmdbId": 1359060,
+    "imdbId": "tt33900751",
+    "tmdb_id": 1359060,
+    "imdb_id": "tt33900751",
+    "poster": "/images/posters/1359060.webp",
+    "overview": "Emily's wish for a picture-perfect Christmas comes true when a magical, optimistic movie character steps off the screen to help, but as things spiral out of control, she learns that true holiday perfection might look very different from what she imagined.",
+    "vote_average": 7.024,
+    "vote_count": 21
+  },
+  {
+    "title": "Christmas In Evergreen: Tidings of Joy",
+    "year": 2019,
+    "tmdbId": 630921,
+    "imdbId": "tt10925460",
+    "tmdb_id": 630921,
+    "imdb_id": "tt10925460",
+    "poster": "/images/posters/630921.webp",
+    "overview": "A skeptical writer shows up in Evergreen to get the scoop on the town's famed passion for Christmas during a search for a long-lost time capsule.",
+    "vote_average": 6.827,
+    "vote_count": 52
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Cherished Memories: A Gift to Remember 2",
+    "year": 2019,
+    "tmdbId": 631428,
+    "imdbId": "tt8416396",
+    "tmdb_id": 631428,
+    "imdb_id": "tt8416396",
+    "poster": "/images/posters/631428.webp",
+    "overview": "As Darcy and Aiden prepare to celebrate their second Christmas together, an unexpected guest and a fight to save the beloved community center unites everyone for an unforgettable holiday.",
+    "vote_average": 5.42,
+    "vote_count": 25
+  },
+  {
+    "title": "Christmas at Dollywood",
+    "year": 2019,
+    "tmdbId": 626309,
+    "imdbId": "tt10627564",
+    "tmdb_id": 626309,
+    "imdb_id": "tt10627564",
+    "poster": "/images/posters/626309.webp",
+    "overview": "Event planner Rachel lands her biggest job yet – Dollywood's 30th Smoky Mountain Christmas celebration, where she’s teamed with operations director Luke to plan an event as glamorous as Dolly Parton herself. Sparks fly, but it takes matchmaking by Dolly to help them find their way.",
+    "vote_average": 6.7,
+    "vote_count": 40
+  },
+  {
+    "title": "Christmas at Holly Lodge",
+    "year": 2017,
+    "tmdbId": 480622,
+    "imdbId": "tt7557728",
+    "tmdb_id": 480622,
+    "imdb_id": "tt7557728",
+    "poster": "/images/posters/480622.webp",
+    "overview": "Sophie Bennett begins a new holiday tradition of spending every holiday at the Evergreen Inn and Ski Lodge, which she inherited from her parents. Evergreen Inn is a special place filled with people who cannot make it home for the holidays or who have had such wonderful experiences that it has become their home-away-from-holiday-home. This Christmas, Sophie will meet an unforgettable family, and her own life will be forever changed.",
+    "vote_average": 5.9,
+    "vote_count": 56
+  }
+]

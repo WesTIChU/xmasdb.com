@@ -1,0 +1,50 @@
+[
+  {
+    "title": "All Saints Christmas",
+    "year": 2022,
+    "tmdbId": 1028176,
+    "imdbId": "tt22166882",
+    "tmdb_id": 1028176,
+    "imdb_id": "tt22166882",
+    "poster": "/images/posters/1028176.webp",
+    "overview": "Lisette is a popular R&B singer who’s getting ready to travel home to New Orleans for Christmas. When the media mistake a photo of her with her music producer ex as an engagement announcement, her family insists that he join her on the trip.",
+    "vote_average": 6.3,
+    "vote_count": 6
+  },
+  {
+    "title": "Christmas Sail",
+    "year": 2021,
+    "tmdbId": 874228,
+    "imdbId": "tt15758364",
+    "tmdb_id": 874228,
+    "imdb_id": "tt15758364",
+    "poster": "/images/posters/874228.webp",
+    "overview": "When Liz returns home to take care of her estranged father, she is determined to give her daughter a perfect Christmas and reconnects with her best friend.",
+    "vote_average": 5.7,
+    "vote_count": 21
+  },
+  {
+    "title": "Jingle Around the Clock",
+    "year": 2018,
+    "tmdbId": 551701,
+    "imdbId": "tt9168384",
+    "tmdb_id": 551701,
+    "imdb_id": "tt9168384",
+    "poster": "/images/posters/551701.webp",
+    "overview": "Elle decides to reunite her college friends for Christmas, but her plans are thwarted by an opportunity at work to spearhead a Christmas campaign relaunch. She's forced to team up with ad campaign \"fixer\" Max, who has a completely different take on the holidays. As the two work together, they find themselves falling for each other. With the help of a little Christmas magic, will Elle pull off the perfect Christmas reunion and find the love she’s been searching for?",
+    "vote_average": 6.75,
+    "vote_count": 46
+  },
+  {
+    "title": "Coming Home for Christmas",
+    "year": 2017,
+    "tmdbId": 474983,
+    "imdbId": "tt7038614",
+    "tmdb_id": 474983,
+    "imdb_id": "tt7038614",
+    "poster": "/images/posters/474983.webp",
+    "overview": "Lizzie Richfield is at a crossroads when she lands a job as house manager for the exquisite Ashford Estate in the Virginia countryside. While planning one final Christmas Eve gala for the Marley family, Lizzie finds herself drawn to Robert—even as Kip pursues her.",
+    "vote_average": 6.6,
+    "vote_count": 63
+  }
+]
