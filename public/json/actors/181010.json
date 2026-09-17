@@ -1,14 +1,6 @@
 [
   {
-    "title": "'Twas the Night Before Christmas",
-    "year": 2022,
-    "tmdbId": 1028547,
-    "imdbId": "tt22307338",
-    "tmdb_id": 1028547,
-    "imdb_id": "tt22307338",
-    "poster": "/images/posters/1028547.webp",
-    "overview": "A former actress trying to break into directing tests her skills with a town’s annual Christmas Eve courtroom production in which the true authorship of the famous poem “A Visit from St. Nick” is debated.",
-    "vote_average": 6.208,
-    "vote_count": 36
+    "title": "'Twas the Night Before Christmas (2022)",
+    "imdb_id": "tt22307338"
   }
 ]

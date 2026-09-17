@@ -1,38 +1,14 @@
 [
   {
-    "title": "Jingle Bell Run",
-    "year": 2024,
-    "tmdbId": 1361135,
-    "imdbId": "tt32432584",
-    "tmdb_id": 1361135,
-    "imdb_id": "tt32432584",
-    "poster": "/images/posters/1361135.webp",
-    "overview": "Self-described bookworm Avery is paired with retired hockey star Wes to compete in a holiday race across America. The team struggles through themed challenges until romance runs its course.",
-    "vote_average": 6.021,
-    "vote_count": 23
+    "title": "The Christmas House (2020)",
+    "imdb_id": "tt12950902"
   },
   {
-    "title": "The Christmas House 2: Deck Those Halls",
-    "year": 2021,
-    "tmdbId": 874196,
-    "imdbId": "tt16365840",
-    "tmdb_id": 874196,
-    "imdb_id": "tt16365840",
-    "poster": "/images/posters/874196.webp",
-    "overview": "The Mitchell brothers compete to see who can create the best Christmas House.",
-    "vote_average": 5.328,
-    "vote_count": 29
+    "title": "The Christmas House 2: Deck Those Halls (2021)",
+    "imdb_id": "tt16365840"
   },
   {
-    "title": "The Christmas House",
-    "year": 2020,
-    "tmdbId": 746042,
-    "imdbId": "tt12950902",
-    "tmdb_id": 746042,
-    "imdb_id": "tt12950902",
-    "poster": "/images/posters/746042.webp",
-    "overview": "Working through some difficult decisions, Mitchell family matriarch Phylis and patriarch Bill, have summoned their two grown sons – TV stars Mike Mitchell and Brandon Mitchell – home for the holidays. It is their hope that bringing the family together to recreate the Christmas house, will help them find resolution and make a memorable holiday for the entire family and community.",
-    "vote_average": 5.927,
-    "vote_count": 55
+    "title": "Jingle Bell Run (2024)",
+    "imdb_id": "tt32432584"
   }
 ]

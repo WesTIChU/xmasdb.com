@@ -1,26 +1,10 @@
 [
   {
-    "title": "Inventing the Christmas Prince",
-    "year": 2022,
-    "tmdbId": 1028223,
-    "imdbId": "tt20892688",
-    "tmdb_id": 1028223,
-    "imdb_id": "tt20892688",
-    "poster": "/images/posters/1028223.webp",
-    "overview": "Shelby is about to quit her job as a rocket engineer when her daughter becomes convinced that her Scrooge-like boss, Evan, is the Christmas Prince from a story Shelby invented years ago.",
-    "vote_average": 6.8,
-    "vote_count": 13
+    "title": "Christmas Town (2019)",
+    "imdb_id": "tt10344986"
   },
   {
-    "title": "Christmas Town",
-    "year": 2019,
-    "tmdbId": 626318,
-    "imdbId": "tt10344986",
-    "tmdb_id": 626318,
-    "imdb_id": "tt10344986",
-    "poster": "/images/posters/626318.webp",
-    "overview": "Lauren Gabriel leaves everything behind in Boston to embark on a new chapter in her life and career. But an unforeseen detour to the charming town of Grandon Falls has her discover unexpected new chapters - of the heart and of family - helping her to embrace, once again, the magic of Christmas.",
-    "vote_average": 7.2,
-    "vote_count": 50
+    "title": "Inventing the Christmas Prince (2022)",
+    "imdb_id": "tt20892688"
   }
 ]

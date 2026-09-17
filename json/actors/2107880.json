@@ -1,26 +1,10 @@
 [
   {
-    "title": "Merry & Bright",
-    "year": 2019,
-    "tmdbId": 626307,
-    "imdbId": "tt10345022",
-    "tmdb_id": 626307,
-    "imdb_id": "tt10345022",
-    "poster": "/images/posters/626307.webp",
-    "overview": "Cate, CEO of the Merry and Bright Candy Cane Company, meets Gabe during the busy Christmas season. She assumes Gabe is the suitor her well-meaning mother is trying to set her up with when in reality, he works for Empire Corporate Recovery, which has been hired to take a closer look at Merry and Bright's operation and find ways to make the company more profitable. As Cate and Gabe begin to work together, they find ways to elevate the business and find that they have more in common than savvy business sense.",
-    "vote_average": 6.2,
-    "vote_count": 52
+    "title": "Christmas Connection (2017)",
+    "imdb_id": "tt7630836"
   },
   {
-    "title": "Christmas Connection",
-    "year": 2017,
-    "tmdbId": 474994,
-    "imdbId": "tt7630836",
-    "tmdb_id": 474994,
-    "imdb_id": "tt7630836",
-    "poster": "/images/posters/474994.webp",
-    "overview": "Adventurous flight attendant Sydney’s plans for a tropical Christmas get delayed when she helps an unaccompanied minor get home to Chicago to her dad Jonathan, a handsome widower and investigative reporter. Faced with a shortage of out-going flights, Sydney is marooned for several days in the Windy City – once her home as a small girl — and tags along with Jonathan, his daughter, and their exuberantly festive family until she can find a connecting flight. Jonathan makes her a deal: he helps her chase down the story of how her late parents met, and she helps him to write the perfect Christmas story and keep his job, and along the way, sparks form between them.",
-    "vote_average": 5.982,
-    "vote_count": 57
+    "title": "Merry & Bright (2019)",
+    "imdb_id": "tt10345022"
   }
 ]

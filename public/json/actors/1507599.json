@@ -1,14 +1,6 @@
 [
   {
-    "title": "A Gingerbread Romance",
-    "year": 2018,
-    "tmdbId": 550033,
-    "imdbId": "tt9028866",
-    "tmdb_id": 550033,
-    "imdb_id": "tt9028866",
-    "poster": "/images/posters/550033.webp",
-    "overview": "Successful architect Taylor Scott is poised for a promotion and a move to Paris but before that’s decided, her boss tasks her with creating a life-sized gingerbread house for a holiday competition. She partners with pastry chef Adam Dale, and though their styles are different, they form a deep connection working together.",
-    "vote_average": 5.083,
-    "vote_count": 30
+    "title": "A Gingerbread Romance (2018)",
+    "imdb_id": "tt9028866"
   }
 ]

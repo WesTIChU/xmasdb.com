@@ -1,26 +1,10 @@
 [
   {
-    "title": "Christmas Under the Stars",
-    "year": 2019,
-    "tmdbId": 629985,
-    "imdbId": "tt10922658",
-    "tmdb_id": 629985,
-    "imdb_id": "tt10922658",
-    "poster": "/images/posters/629985.webp",
-    "overview": "When Nick is fired from his high-powered investment firm at Christmastime, he takes a job at a Christmas tree lot. There, he meets Julie, an astronomy teacher who’s always looked to the stars for hope. As the Christmas spirit washes over him—and he begins falling for Julie—the once self-centered Nick discovers the joy of helping others.",
-    "vote_average": 6.5,
-    "vote_count": 55
+    "title": "A Midnight Kiss (2018)",
+    "imdb_id": "tt9028890"
   },
   {
-    "title": "A Midnight Kiss",
-    "year": 2018,
-    "tmdbId": 550036,
-    "imdbId": "tt9028890",
-    "tmdb_id": 550036,
-    "imdb_id": "tt9028890",
-    "poster": "/images/posters/550036.webp",
-    "overview": "With only one week to prepare, Mia Pearson and her family of party planners are given the biggest job in their company’s history: a New Year’s Eve party for tech entrepreneur Kate Clark. But when her brother breaks his leg and her parents head off on a planned vacation, Lisa must reluctantly enlist the help of her brother’s visiting college buddy, David Campos, to help her pull off the event which just so happens to fall on her favorite day of the year. But what Lisa didn’t plan on was falling in love in the process.",
-    "vote_average": 6,
-    "vote_count": 42
+    "title": "Christmas Under the Stars (2019)",
+    "imdb_id": "tt10922658"
   }
 ]

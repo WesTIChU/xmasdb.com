@@ -1,38 +1,14 @@
 [
   {
-    "title": "A Grand Ole Opry Christmas",
-    "year": 2025,
-    "tmdbId": 1535221,
-    "imdbId": "tt37891014",
-    "tmdb_id": 1535221,
-    "imdb_id": "tt37891014",
-    "poster": "/images/posters/1535221.webp",
-    "overview": "Gentry Woods, who gave up music after her father's death decades ago, must confront her past when Nashville's Grand Ole Opry invites her to honor her late country star dad at their Christmas celebration.",
-    "vote_average": 7.5,
-    "vote_count": 11
+    "title": "A Kiss Before Christmas (2021)",
+    "imdb_id": "tt15565510"
   },
   {
-    "title": "Christmas on Cherry Lane",
-    "year": 2023,
-    "tmdbId": 1180665,
-    "imdbId": "tt28287106",
-    "tmdb_id": 1180665,
-    "imdb_id": "tt28287106",
-    "poster": "/images/posters/1180665.webp",
-    "overview": "Three couples at different parts of life navigate big turning points in their lives over the holidays.",
-    "vote_average": 6.224,
-    "vote_count": 29
+    "title": "Christmas on Cherry Lane (2023)",
+    "imdb_id": "tt28287106"
   },
   {
-    "title": "A Kiss Before Christmas",
-    "year": 2021,
-    "tmdbId": 874260,
-    "imdbId": "tt15565510",
-    "tmdb_id": 874260,
-    "imdb_id": "tt15565510",
-    "poster": "/images/posters/874260.webp",
-    "overview": "Ethan, always the nice guy, wakes up in a new reality at Christmas. Initially, he is enthralled with his new life but soon realizes that it's not what he thought it would be.",
-    "vote_average": 6.044,
-    "vote_count": 68
+    "title": "A Grand Ole Opry Christmas (2025)",
+    "imdb_id": "tt37891014"
   }
 ]

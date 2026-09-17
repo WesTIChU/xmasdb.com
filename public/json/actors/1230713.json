@@ -1,86 +1,30 @@
 [
   {
-    "title": "We Met in December",
-    "year": 2025,
-    "tmdbId": 1547918,
-    "imdbId": "tt38354934",
-    "tmdb_id": 1547918,
-    "imdb_id": "tt38354934",
-    "poster": "/images/posters/1547918.webp",
-    "overview": "Two strangers meet on a layover and fall for one another — but forget to exchange numbers. The next day, they fly to Chicago separately, just miss each other, and “embark on separate quests to find one another.\"",
-    "vote_average": 6.864,
-    "vote_count": 22
+    "title": "Christmas at Dollywood (2019)",
+    "imdb_id": "tt10627564"
   },
   {
-    "title": "Holiday Hotline",
-    "year": 2023,
-    "tmdbId": 1180811,
-    "imdbId": "tt29499210",
-    "tmdb_id": 1180811,
-    "imdb_id": "tt29499210",
-    "poster": "/images/posters/1180811.webp",
-    "overview": "Upon leaving London and working at a cooking hotline, Abby connects with an anonymous caller — a single dad who Abby unknowingly is also smitten with in real life.",
-    "vote_average": 6.848,
-    "vote_count": 32
+    "title": "Never Kiss a Man in a Christmas Sweater (2020)",
+    "imdb_id": "tt13192538"
   },
   {
-    "title": "The Santa Summit",
-    "year": 2023,
-    "tmdbId": 1142712,
-    "imdbId": "tt29381717",
-    "tmdb_id": 1142712,
-    "imdb_id": "tt29381717",
-    "poster": "/images/posters/1142712.webp",
-    "overview": "Amidst a sea of Santas at their town's annual Christmas celebration, three friends all find what they’re looking for: Christmas spirit, potential romance, and a strengthened bond of friendship.",
-    "vote_average": 6.517,
-    "vote_count": 29
+    "title": "A Christmas Together With You (2021)",
+    "imdb_id": "tt15420960"
   },
   {
-    "title": "When I Think of Christmas",
-    "year": 2022,
-    "tmdbId": 1028543,
-    "imdbId": "tt22247502",
-    "tmdb_id": 1028543,
-    "imdb_id": "tt22247502",
-    "poster": "/images/posters/1028543.webp",
-    "overview": "Sara Thompson returns to her hometown to help her mother move and is surprised to find her ex-boyfriend Josh Hartman is back home. The two had once planned a life in music together but Sara left to study law. The former flames slowly reconnect and try to heal wounds, both old and new. When Sara makes a surprising discovery, she and Josh forge a bold plan for the upcoming Christmas concert that will lead them all back to their musical roots and make this a holiday to remember.",
-    "vote_average": 6.2,
-    "vote_count": 19
+    "title": "When I Think of Christmas (2022)",
+    "imdb_id": "tt22247502"
   },
   {
-    "title": "A Christmas Together With You",
-    "year": 2021,
-    "tmdbId": 876103,
-    "imdbId": "tt15420960",
-    "tmdb_id": 876103,
-    "imdb_id": "tt15420960",
-    "poster": "/images/posters/876103.webp",
-    "overview": "During the Christmas season, Megan and her father-figure Frank head out on a road trip to find his long-lost love. Along the way, Megan finds the love of her own life.",
-    "vote_average": 6.063,
-    "vote_count": 24
+    "title": "The Santa Summit (2023)",
+    "imdb_id": "tt29381717"
   },
   {
-    "title": "Never Kiss a Man in a Christmas Sweater",
-    "year": 2020,
-    "tmdbId": 746034,
-    "imdbId": "tt13192538",
-    "tmdb_id": 746034,
-    "imdb_id": "tt13192538",
-    "poster": "/images/posters/746034.webp",
-    "overview": "Single mom Maggie is facing Christmas alone until Lucas crashes into her life and becomes an unexpected house guest. Together they overcome Christmas while finding comfort in their growing bond.",
-    "vote_average": 6.483,
-    "vote_count": 58
+    "title": "Holiday Hotline (2023)",
+    "imdb_id": "tt29499210"
   },
   {
-    "title": "Christmas at Dollywood",
-    "year": 2019,
-    "tmdbId": 626309,
-    "imdbId": "tt10627564",
-    "tmdb_id": 626309,
-    "imdb_id": "tt10627564",
-    "poster": "/images/posters/626309.webp",
-    "overview": "Event planner Rachel lands her biggest job yet – Dollywood's 30th Smoky Mountain Christmas celebration, where she’s teamed with operations director Luke to plan an event as glamorous as Dolly Parton herself. Sparks fly, but it takes matchmaking by Dolly to help them find their way.",
-    "vote_average": 6.7,
-    "vote_count": 40
+    "title": "We Met in December (2025)",
+    "imdb_id": "tt38354934"
   }
 ]

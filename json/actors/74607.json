@@ -1,26 +1,10 @@
 [
   {
-    "title": "We Met in December",
-    "year": 2025,
-    "tmdbId": 1547918,
-    "imdbId": "tt38354934",
-    "tmdb_id": 1547918,
-    "imdb_id": "tt38354934",
-    "poster": "/images/posters/1547918.webp",
-    "overview": "Two strangers meet on a layover and fall for one another — but forget to exchange numbers. The next day, they fly to Chicago separately, just miss each other, and “embark on separate quests to find one another.\"",
-    "vote_average": 6.864,
-    "vote_count": 22
+    "title": "Christmas Under the Stars (2019)",
+    "imdb_id": "tt10922658"
   },
   {
-    "title": "Christmas Under the Stars",
-    "year": 2019,
-    "tmdbId": 629985,
-    "imdbId": "tt10922658",
-    "tmdb_id": 629985,
-    "imdb_id": "tt10922658",
-    "poster": "/images/posters/629985.webp",
-    "overview": "When Nick is fired from his high-powered investment firm at Christmastime, he takes a job at a Christmas tree lot. There, he meets Julie, an astronomy teacher who’s always looked to the stars for hope. As the Christmas spirit washes over him—and he begins falling for Julie—the once self-centered Nick discovers the joy of helping others.",
-    "vote_average": 6.5,
-    "vote_count": 55
+    "title": "We Met in December (2025)",
+    "imdb_id": "tt38354934"
   }
 ]

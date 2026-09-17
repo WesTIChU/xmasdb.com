@@ -1,26 +1,10 @@
 [
   {
-    "title": "A Merry Scottish Christmas",
-    "year": 2023,
-    "tmdbId": 1145635,
-    "imdbId": "tt28237077",
-    "tmdb_id": 1145635,
-    "imdb_id": "tt28237077",
-    "poster": "/images/posters/1145635.webp",
-    "overview": "When estranged siblings Lindsay and Brad travel to Scotland at Christmas to reunite with their mother Jo, a big family secret is revealed.",
-    "vote_average": 6.222,
-    "vote_count": 54
+    "title": "Christmas at Castle Hart (2021)",
+    "imdb_id": "tt15943556"
   },
   {
-    "title": "Christmas at Castle Hart",
-    "year": 2021,
-    "tmdbId": 874166,
-    "imdbId": "tt15943556",
-    "tmdb_id": 874166,
-    "imdb_id": "tt15943556",
-    "poster": "/images/posters/874166.webp",
-    "overview": "Brooke Bennett goes to Ireland for Christmas to search for her Irish roots. While there, she meets Aiden Hart, Earl of Glaslough. Mistaken for an elite event planner, she’s hired to host his castle’s epic Christmas party.",
-    "vote_average": 6.3,
-    "vote_count": 49
+    "title": "A Merry Scottish Christmas (2023)",
+    "imdb_id": "tt28237077"
   }
 ]

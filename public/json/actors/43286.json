@@ -1,26 +1,10 @@
 [
   {
-    "title": "Melt My Heart This Christmas",
-    "year": 2025,
-    "tmdbId": 1547917,
-    "imdbId": "tt37333639",
-    "tmdb_id": 1547917,
-    "imdb_id": "tt37333639",
-    "poster": "/images/posters/1547917.webp",
-    "overview": "Holly, a passionate glassblower, has big dreams of showcasing her art at the local fair, but keeps getting rejected. So, she jumps at the opportunity to help a legendary glassblower while also helping Jack, the man who oversees the entries. Things get complicated when Holly starts secretly displaying her own art under a pseudonym — and it becomes a hit — but she also starts getting closer to Jack.",
-    "vote_average": 5.818,
-    "vote_count": 10
+    "title": "A Christmas Together With You (2021)",
+    "imdb_id": "tt15420960"
   },
   {
-    "title": "A Christmas Together With You",
-    "year": 2021,
-    "tmdbId": 876103,
-    "imdbId": "tt15420960",
-    "tmdb_id": 876103,
-    "imdb_id": "tt15420960",
-    "poster": "/images/posters/876103.webp",
-    "overview": "During the Christmas season, Megan and her father-figure Frank head out on a road trip to find his long-lost love. Along the way, Megan finds the love of her own life.",
-    "vote_average": 6.063,
-    "vote_count": 24
+    "title": "Melt My Heart This Christmas (2025)",
+    "imdb_id": "tt37333639"
   }
 ]

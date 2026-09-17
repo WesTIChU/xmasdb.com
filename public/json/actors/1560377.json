@@ -1,50 +1,18 @@
 [
   {
-    "title": "Holiday Date",
-    "year": 2019,
-    "tmdbId": 630924,
-    "imdbId": "tt10768456",
-    "tmdb_id": 630924,
-    "imdb_id": "tt10768456",
-    "poster": "/images/posters/630924.webp",
-    "overview": "When Brooke’s boyfriend, Ethan, breaks up with her just before the holidays, she agrees to go home with Joel, an actor who will pose as her boyfriend.",
-    "vote_average": 6.4,
-    "vote_count": 48
+    "title": "The Sweetest Christmas (2017)",
+    "imdb_id": "tt7030432"
   },
   {
-    "title": "A Midnight Kiss",
-    "year": 2018,
-    "tmdbId": 550036,
-    "imdbId": "tt9028890",
-    "tmdb_id": 550036,
-    "imdb_id": "tt9028890",
-    "poster": "/images/posters/550036.webp",
-    "overview": "With only one week to prepare, Mia Pearson and her family of party planners are given the biggest job in their company’s history: a New Year’s Eve party for tech entrepreneur Kate Clark. But when her brother breaks his leg and her parents head off on a planned vacation, Lisa must reluctantly enlist the help of her brother’s visiting college buddy, David Campos, to help her pull off the event which just so happens to fall on her favorite day of the year. But what Lisa didn’t plan on was falling in love in the process.",
-    "vote_average": 6,
-    "vote_count": 42
+    "title": "Mingle All the Way (2018)",
+    "imdb_id": "tt9033628"
   },
   {
-    "title": "Mingle All the Way",
-    "year": 2018,
-    "tmdbId": 550022,
-    "imdbId": "tt9033628",
-    "tmdb_id": 550022,
-    "imdb_id": "tt9033628",
-    "poster": "/images/posters/550022.webp",
-    "overview": "Molly is determined to prove to her family that her new networking app—designed to pair busy professionals together for upcoming events, without long-term romance—is a success. When Molly joins Mingle All the Way and is matched with Jeff, they are both horrified to realize they’ve already had not one, but two disastrous previous encounters.",
-    "vote_average": 7.079,
-    "vote_count": 158
+    "title": "A Midnight Kiss (2018)",
+    "imdb_id": "tt9028890"
   },
   {
-    "title": "The Sweetest Christmas",
-    "year": 2017,
-    "tmdbId": 474972,
-    "imdbId": "tt7030432",
-    "tmdb_id": 474972,
-    "imdb_id": "tt7030432",
-    "poster": "/images/posters/474972.webp",
-    "overview": "After breaking up with her long-term boyfriend just before the holidays, passionate baker Kylie reconnects with her high school sweetheart, Nick. Thanks to their newly rekindled friendship, Kylie uses Nick’s restaurant to prepare for a gingerbread baking competition with a large cash prize that would help her open her own bakery.",
-    "vote_average": 6.395,
-    "vote_count": 86
+    "title": "Holiday Date (2019)",
+    "imdb_id": "tt10768456"
   }
 ]

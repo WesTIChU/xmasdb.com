@@ -1,62 +1,22 @@
 [
   {
-    "title": "Tidings for the Season",
-    "year": 2025,
-    "tmdbId": 1547915,
-    "imdbId": "tt38353925",
-    "tmdb_id": 1547915,
-    "imdb_id": "tt38353925",
-    "poster": "/images/posters/1547915.webp",
-    "overview": "A local newscaster’s life changes when he meets a 10-year-old fan — and his single mother — during the holidays.",
-    "vote_average": 5.2,
-    "vote_count": 4
+    "title": "Good Morning Christmas! (2020)",
+    "imdb_id": "tt13109730"
   },
   {
-    "title": "Debbie Macomber’s Joyful Mrs. Miracle",
-    "year": 2024,
-    "tmdbId": 1361199,
-    "imdbId": "tt33669124",
-    "tmdb_id": 1361199,
-    "imdb_id": "tt33669124",
-    "poster": "/images/posters/1361199.webp",
-    "overview": "Three siblings return home at Christmas to honor their late grandmother's wishes, and with the help of Mrs. Miracle's magic, they work through family conflicts while one rekindles a past romance.",
-    "vote_average": 6.548,
-    "vote_count": 21
+    "title": "The Christmas House 2: Deck Those Halls (2021)",
+    "imdb_id": "tt16365840"
   },
   {
-    "title": "The Holiday Sitter",
-    "year": 2022,
-    "tmdbId": 1027324,
-    "imdbId": "tt22296044",
-    "tmdb_id": 1027324,
-    "imdb_id": "tt22296044",
-    "poster": "/images/posters/1027324.webp",
-    "overview": "Sam is a workaholic bachelor who babysits his niece and nephew before the holidays when his sister and her husband have to go out of town. Completely out of his element, he recruits help from their handsome neighbor Jason and finds himself in an unexpected romance.",
-    "vote_average": 6.659,
-    "vote_count": 44
+    "title": "The Holiday Sitter (2022)",
+    "imdb_id": "tt22296044"
   },
   {
-    "title": "The Christmas House 2: Deck Those Halls",
-    "year": 2021,
-    "tmdbId": 874196,
-    "imdbId": "tt16365840",
-    "tmdb_id": 874196,
-    "imdb_id": "tt16365840",
-    "poster": "/images/posters/874196.webp",
-    "overview": "The Mitchell brothers compete to see who can create the best Christmas House.",
-    "vote_average": 5.328,
-    "vote_count": 29
+    "title": "Debbie Macomber’s Joyful Mrs. Miracle (2024)",
+    "imdb_id": "tt33669124"
   },
   {
-    "title": "Good Morning Christmas!",
-    "year": 2020,
-    "tmdbId": 746043,
-    "imdbId": "tt13109730",
-    "tmdb_id": 746043,
-    "imdb_id": "tt13109730",
-    "poster": "/images/posters/746043.webp",
-    "overview": "Two competing TV hosts are sent to a festive small town over Christmas. While pretending to get along for the sake of appearances, they discover that there’s more to each other than they thought.",
-    "vote_average": 6.302,
-    "vote_count": 48
+    "title": "Tidings for the Season (2025)",
+    "imdb_id": "tt38353925"
   }
 ]

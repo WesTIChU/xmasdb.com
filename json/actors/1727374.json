@@ -1,110 +1,38 @@
 [
   {
-    "title": "The 5-Year Christmas Party",
-    "year": 2024,
-    "tmdbId": 1359868,
-    "imdbId": "tt33503201",
-    "tmdb_id": 1359868,
-    "imdb_id": "tt33503201",
-    "poster": "/images/posters/1359868.webp",
-    "overview": "Over five years, Alice and her old theater school rival, Max, reunite each holiday season to work at a Chicago catering company's Christmas parties.  While their undeniable chemistry grows, the timing is never right for romance - until the company's final season pushes them to confront their true feelings.",
-    "vote_average": 5.111,
-    "vote_count": 8
+    "title": "Sleigh Bells Ring (2016)",
+    "imdb_id": "tt6349282"
   },
   {
-    "title": "Magic in Mistletoe",
-    "year": 2023,
-    "tmdbId": 1180743,
-    "imdbId": "tt29233549",
-    "tmdb_id": 1180743,
-    "imdb_id": "tt29233549",
-    "poster": "/images/posters/1180743.webp",
-    "overview": "Successful yet recluse author Harrington returns to his hometown for an annual Christmas festival, where he must face his publicist there for damage control.",
-    "vote_average": 6,
-    "vote_count": 25
+    "title": "Christmas at Holly Lodge (2017)",
+    "imdb_id": "tt7557728"
   },
   {
-    "title": "Christmas at the Golden Dragon",
-    "year": 2022,
-    "tmdbId": 1028186,
-    "imdbId": "tt13937754",
-    "tmdb_id": 1028186,
-    "imdb_id": "tt13937754",
-    "poster": "/images/posters/1028186.webp",
-    "overview": "When Romy and Rick’s parents surprise them with the news that they will be closing the Chinese restaurant they have owned and operated for decades, the siblings each find themselves reevaluating their futures. Also impacted by the news are the landmark restaurant’s loyal patrons and staff, who have all come to depend on the restaurant over the holidays.",
-    "vote_average": 6.304,
-    "vote_count": 23
+    "title": "Cross Country Christmas (2020)",
+    "imdb_id": "tt13040330"
   },
   {
-    "title": "A Christmas Treasure",
-    "year": 2021,
-    "tmdbId": 866660,
-    "imdbId": "tt15042590",
-    "tmdb_id": 866660,
-    "imdb_id": "tt15042590",
-    "poster": "/images/posters/866660.webp",
-    "overview": "After opening a 100-year-old time capsule and finding her grandfather’s old journal, Lou questions whether she should move to New York after Christmas to further her writing career or stay in Pine Grove to carry on her family’s local newspaper. Charming chef, Kyle, is also at a crossroads, visiting Pine Grove for the holidays.",
-    "vote_average": 6,
-    "vote_count": 18
+    "title": "Christmas with the Darlings (2020)",
+    "imdb_id": "tt13381368"
   },
   {
-    "title": "The Nine Kittens of Christmas",
-    "year": 2021,
-    "tmdbId": 876119,
-    "imdbId": "tt15226096",
-    "tmdb_id": 876119,
-    "imdb_id": "tt15226096",
-    "poster": "/images/posters/876119.webp",
-    "overview": "Cat lovers Zachary and Marilee are thrown back together at Christmas when they're tasked with finding homes for a litter of adorable kittens.",
-    "vote_average": 6.9,
-    "vote_count": 40
+    "title": "A Christmas Treasure (2021)",
+    "imdb_id": "tt15042590"
   },
   {
-    "title": "Christmas with the Darlings",
-    "year": 2020,
-    "tmdbId": 746032,
-    "imdbId": "tt13381368",
-    "tmdb_id": 746032,
-    "imdb_id": "tt13381368",
-    "poster": "/images/posters/746032.webp",
-    "overview": "Just before the holidays Jessica Lew is ending her tenure as the assistant to her wealthy boss to use her recently earned law degree within his company, but offers to help his charming, younger brother as he looks after his orphaned nieces and nephew over Christmas.",
-    "vote_average": 6.958,
-    "vote_count": 36
+    "title": "The Nine Kittens of Christmas (2021)",
+    "imdb_id": "tt15226096"
   },
   {
-    "title": "Cross Country Christmas",
-    "year": 2020,
-    "tmdbId": 737780,
-    "imdbId": "tt13040330",
-    "tmdb_id": 737780,
-    "imdb_id": "tt13040330",
-    "poster": "/images/posters/737780.webp",
-    "overview": "Former classmates Lina and Max are traveling home for the holidays, until a storm hits and they have to work together to make it home in time, no matter the mode of transportation.",
-    "vote_average": 6.784,
-    "vote_count": 51
+    "title": "Christmas at the Golden Dragon (2022)",
+    "imdb_id": "tt13937754"
   },
   {
-    "title": "Christmas at Holly Lodge",
-    "year": 2017,
-    "tmdbId": 480622,
-    "imdbId": "tt7557728",
-    "tmdb_id": 480622,
-    "imdb_id": "tt7557728",
-    "poster": "/images/posters/480622.webp",
-    "overview": "Sophie Bennett begins a new holiday tradition of spending every holiday at the Evergreen Inn and Ski Lodge, which she inherited from her parents. Evergreen Inn is a special place filled with people who cannot make it home for the holidays or who have had such wonderful experiences that it has become their home-away-from-holiday-home. This Christmas, Sophie will meet an unforgettable family, and her own life will be forever changed.",
-    "vote_average": 5.9,
-    "vote_count": 56
+    "title": "Magic in Mistletoe (2023)",
+    "imdb_id": "tt29233549"
   },
   {
-    "title": "Sleigh Bells Ring",
-    "year": 2016,
-    "tmdbId": 421626,
-    "imdbId": "tt6349282",
-    "tmdb_id": 421626,
-    "imdb_id": "tt6349282",
-    "poster": "/images/posters/421626.webp",
-    "overview": "Recently divorced, Laurel struggles to get into the holiday spirit while heading up her hometown Christmas parade. With the help of a Christmas sleigh and a handsome woodworker, Laurel is destined to turn her luck around, rekindle her holiday spirit and even find time for love.",
-    "vote_average": 5.9,
-    "vote_count": 49
+    "title": "The 5-Year Christmas Party (2024)",
+    "imdb_id": "tt33503201"
   }
 ]

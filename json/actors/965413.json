@@ -1,38 +1,14 @@
 [
   {
-    "title": "Christmas at Dollywood",
-    "year": 2019,
-    "tmdbId": 626309,
-    "imdbId": "tt10627564",
-    "tmdb_id": 626309,
-    "imdb_id": "tt10627564",
-    "poster": "/images/posters/626309.webp",
-    "overview": "Event planner Rachel lands her biggest job yet – Dollywood's 30th Smoky Mountain Christmas celebration, where she’s teamed with operations director Luke to plan an event as glamorous as Dolly Parton herself. Sparks fly, but it takes matchmaking by Dolly to help them find their way.",
-    "vote_average": 6.7,
-    "vote_count": 40
+    "title": "A Midnight Kiss (2018)",
+    "imdb_id": "tt9028890"
   },
   {
-    "title": "Christmas Town",
-    "year": 2019,
-    "tmdbId": 626318,
-    "imdbId": "tt10344986",
-    "tmdb_id": 626318,
-    "imdb_id": "tt10344986",
-    "poster": "/images/posters/626318.webp",
-    "overview": "Lauren Gabriel leaves everything behind in Boston to embark on a new chapter in her life and career. But an unforeseen detour to the charming town of Grandon Falls has her discover unexpected new chapters - of the heart and of family - helping her to embrace, once again, the magic of Christmas.",
-    "vote_average": 7.2,
-    "vote_count": 50
+    "title": "Christmas at Dollywood (2019)",
+    "imdb_id": "tt10627564"
   },
   {
-    "title": "A Midnight Kiss",
-    "year": 2018,
-    "tmdbId": 550036,
-    "imdbId": "tt9028890",
-    "tmdb_id": 550036,
-    "imdb_id": "tt9028890",
-    "poster": "/images/posters/550036.webp",
-    "overview": "With only one week to prepare, Mia Pearson and her family of party planners are given the biggest job in their company’s history: a New Year’s Eve party for tech entrepreneur Kate Clark. But when her brother breaks his leg and her parents head off on a planned vacation, Lisa must reluctantly enlist the help of her brother’s visiting college buddy, David Campos, to help her pull off the event which just so happens to fall on her favorite day of the year. But what Lisa didn’t plan on was falling in love in the process.",
-    "vote_average": 6,
-    "vote_count": 42
+    "title": "Christmas Town (2019)",
+    "imdb_id": "tt10344986"
   }
 ]

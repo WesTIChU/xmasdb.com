@@ -1,74 +1,26 @@
 [
   {
-    "title": "A Grand Ole Opry Christmas",
-    "year": 2025,
-    "tmdbId": 1535221,
-    "imdbId": "tt37891014",
-    "tmdb_id": 1535221,
-    "imdb_id": "tt37891014",
-    "poster": "/images/posters/1535221.webp",
-    "overview": "Gentry Woods, who gave up music after her father's death decades ago, must confront her past when Nashville's Grand Ole Opry invites her to honor her late country star dad at their Christmas celebration.",
-    "vote_average": 7.5,
-    "vote_count": 11
+    "title": "Sleigh Bells Ring (2016)",
+    "imdb_id": "tt6349282"
   },
   {
-    "title": "Christmas at the Catnip Café",
-    "year": 2025,
-    "tmdbId": 1545999,
-    "imdbId": "tt37985000",
-    "tmdb_id": 1545999,
-    "imdb_id": "tt37985000",
-    "poster": "/images/posters/1545999.webp",
-    "overview": "When a marketing executive learns she’s short on the down payment for her dream condo, she’s informed that her great aunt left her half of a cat café in upstate New York. Hoping to sell it before the holidays, she then meets Dr. Ben Kane, the veterinarian who owns the other half, and has no intention of closing.",
-    "vote_average": 6.885,
-    "vote_count": 14
+    "title": "A Timeless Christmas (2020)",
+    "imdb_id": "tt13341414"
   },
   {
-    "title": "The Christmas Quest",
-    "year": 2024,
-    "tmdbId": 1325912,
-    "imdbId": "tt32140747",
-    "tmdb_id": 1325912,
-    "imdb_id": "tt32140747",
-    "poster": "/images/posters/1325912.webp",
-    "overview": "An archaeologist, her ex-husband who is a Norse language expert, search for legendary treasure in Iceland during Christmas. Others join the hunt, leading to a thrilling race to secure the treasure before the wrong people obtain it.",
-    "vote_average": 6.8,
-    "vote_count": 30
+    "title": "Christmas on Cherry Lane (2023)",
+    "imdb_id": "tt28287106"
   },
   {
-    "title": "Christmas on Cherry Lane",
-    "year": 2023,
-    "tmdbId": 1180665,
-    "imdbId": "tt28287106",
-    "tmdb_id": 1180665,
-    "imdb_id": "tt28287106",
-    "poster": "/images/posters/1180665.webp",
-    "overview": "Three couples at different parts of life navigate big turning points in their lives over the holidays.",
-    "vote_average": 6.224,
-    "vote_count": 29
+    "title": "The Christmas Quest (2024)",
+    "imdb_id": "tt32140747"
   },
   {
-    "title": "A Timeless Christmas",
-    "year": 2020,
-    "tmdbId": 746039,
-    "imdbId": "tt13341414",
-    "tmdb_id": 746039,
-    "imdb_id": "tt13341414",
-    "poster": "/images/posters/746039.webp",
-    "overview": "Charles Whitley travels from 1903 to 2020 where he meets Megan Turner, a tour guide at his historic mansion, and experiences a 21st Century Christmas.",
-    "vote_average": 6.421,
-    "vote_count": 82
+    "title": "A Grand Ole Opry Christmas (2025)",
+    "imdb_id": "tt37891014"
   },
   {
-    "title": "Sleigh Bells Ring",
-    "year": 2016,
-    "tmdbId": 421626,
-    "imdbId": "tt6349282",
-    "tmdb_id": 421626,
-    "imdb_id": "tt6349282",
-    "poster": "/images/posters/421626.webp",
-    "overview": "Recently divorced, Laurel struggles to get into the holiday spirit while heading up her hometown Christmas parade. With the help of a Christmas sleigh and a handsome woodworker, Laurel is destined to turn her luck around, rekindle her holiday spirit and even find time for love.",
-    "vote_average": 5.9,
-    "vote_count": 49
+    "title": "Christmas at the Catnip Café (2025)",
+    "imdb_id": "tt37985000"
   }
 ]

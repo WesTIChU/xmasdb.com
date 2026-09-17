@@ -1,26 +1,10 @@
 [
   {
-    "title": "Entertaining Christmas",
-    "year": 2018,
-    "tmdbId": 550034,
-    "imdbId": "tt9028872",
-    "tmdb_id": 550034,
-    "imdb_id": "tt9028872",
-    "poster": "/images/posters/550034.webp",
-    "overview": "Candace, daughter of lifestyle mogul Liz Livingstone, has never lived up to her mother’s standards. When a young girl posts a video begging Liz to help arrange a special Christmas party, Candace is sent in her place. As she struggles to prove herself worthy of running the company, Candace meets—and begins falling for—the girl’s uncle, a reporter writing an expose on her.",
-    "vote_average": 6.1,
-    "vote_count": 38
+    "title": "Christmas Incorporated (2015)",
+    "imdb_id": "tt5204384"
   },
   {
-    "title": "Christmas Incorporated",
-    "year": 2015,
-    "tmdbId": 363480,
-    "imdbId": "tt5204384",
-    "tmdb_id": 363480,
-    "imdb_id": "tt5204384",
-    "poster": "/images/posters/363480.webp",
-    "overview": "Sometimes, life just seems to hand you exactly what you need – particularly at Christmastime. Riley is scraping bottom when she miraculously lands a job with a wealthy New York City entrepreneur. He’s a bad-boy socialite type who is poised to play Scrooge by closing one of his factories just before Christmas, which would devastate an entire town. It’s left to Riley to talk him out of it and turn him into a man of virtue rather than shame.",
-    "vote_average": 6.3,
-    "vote_count": 85
+    "title": "Entertaining Christmas (2018)",
+    "imdb_id": "tt9028872"
   }
 ]

@@ -1,38 +1,14 @@
 [
   {
-    "title": "Sugarplummed",
-    "year": 2024,
-    "tmdbId": 1359060,
-    "imdbId": "tt33900751",
-    "tmdb_id": 1359060,
-    "imdb_id": "tt33900751",
-    "poster": "/images/posters/1359060.webp",
-    "overview": "Emily's wish for a picture-perfect Christmas comes true when a magical, optimistic movie character steps off the screen to help, but as things spiral out of control, she learns that true holiday perfection might look very different from what she imagined.",
-    "vote_average": 7.024,
-    "vote_count": 21
+    "title": "A Gingerbread Romance (2018)",
+    "imdb_id": "tt9028866"
   },
   {
-    "title": "Gingerbread Miracle",
-    "year": 2021,
-    "tmdbId": 874244,
-    "imdbId": "tt15821582",
-    "tmdb_id": 874244,
-    "imdb_id": "tt15821582",
-    "poster": "/images/posters/874244.webp",
-    "overview": "Maya and Alex, old friends from high school, work together over Christmas to sell his uncle’s Mexican bakery famous for its gingerbread cookies that the patrons believe grants wishes.",
-    "vote_average": 6,
-    "vote_count": 30
+    "title": "Gingerbread Miracle (2021)",
+    "imdb_id": "tt15821582"
   },
   {
-    "title": "A Gingerbread Romance",
-    "year": 2018,
-    "tmdbId": 550033,
-    "imdbId": "tt9028866",
-    "tmdb_id": 550033,
-    "imdb_id": "tt9028866",
-    "poster": "/images/posters/550033.webp",
-    "overview": "Successful architect Taylor Scott is poised for a promotion and a move to Paris but before that’s decided, her boss tasks her with creating a life-sized gingerbread house for a holiday competition. She partners with pastry chef Adam Dale, and though their styles are different, they form a deep connection working together.",
-    "vote_average": 5.083,
-    "vote_count": 30
+    "title": "Sugarplummed (2024)",
+    "imdb_id": "tt33900751"
   }
 ]

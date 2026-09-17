@@ -1,38 +1,14 @@
 [
   {
-    "title": "A Very Merry Bridesmaid",
-    "year": 2021,
-    "tmdbId": 876104,
-    "imdbId": "tt15403980",
-    "tmdb_id": 876104,
-    "imdb_id": "tt15403980",
-    "poster": "/images/posters/876104.webp",
-    "overview": "Leah's 30th birthday is on Christmas Eve, the same day as her brother's wedding. Her childhood crush is back in town for the wedding and he is determined to make sure her birthday does not go by the wayside.",
-    "vote_average": 6.296,
-    "vote_count": 49
+    "title": "Christmas Joy (2018)",
+    "imdb_id": "tt8587650"
   },
   {
-    "title": "My Christmas Family Tree",
-    "year": 2021,
-    "tmdbId": 874194,
-    "imdbId": "tt15508150",
-    "tmdb_id": 874194,
-    "imdb_id": "tt15508150",
-    "poster": "/images/posters/874194.webp",
-    "overview": "When Vanessa receives the results from her Family Tree DNA test, she discovers a family she didn't know existed and travels to their home for Christmas.",
-    "vote_average": 7.19,
-    "vote_count": 42
+    "title": "My Christmas Family Tree (2021)",
+    "imdb_id": "tt15508150"
   },
   {
-    "title": "Christmas Joy",
-    "year": 2018,
-    "tmdbId": 535812,
-    "imdbId": "tt8587650",
-    "tmdb_id": 535812,
-    "imdb_id": "tt8587650",
-    "poster": "/images/posters/535812.webp",
-    "overview": "Joy Holbrook, is a corporate market researcher, gunning for a promotion within her firm. Just as her company's CEO is taking notice, Joy finds out her Aunt Ruby has broken her ankle and will be undergoing surgery. Despite the less than opportune timing, Joy makes her way back home to Crystal Falls, NC to be with her Aunt. Stars seem to be aligned as Joy sees her former crush, Ben Andrews, while at the hospital. At first, Joy is focused solely on helping her Aunt heal; even taking over her position as chair of the local Cookie Crawl competition. Eventually, she begins to let Ben in and remembers there's no place like home for the holidays. The pair work together on the Cookie Crawl to make the event a success.",
-    "vote_average": 6.5,
-    "vote_count": 70
+    "title": "A Very Merry Bridesmaid (2021)",
+    "imdb_id": "tt15403980"
   }
 ]

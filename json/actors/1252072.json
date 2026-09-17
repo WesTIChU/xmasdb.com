@@ -1,26 +1,10 @@
 [
   {
-    "title": "Magic in Mistletoe",
-    "year": 2023,
-    "tmdbId": 1180743,
-    "imdbId": "tt29233549",
-    "tmdb_id": 1180743,
-    "imdb_id": "tt29233549",
-    "poster": "/images/posters/1180743.webp",
-    "overview": "Successful yet recluse author Harrington returns to his hometown for an annual Christmas festival, where he must face his publicist there for damage control.",
-    "vote_average": 6,
-    "vote_count": 25
+    "title": "Holiday Heritage (2022)",
+    "imdb_id": "tt22307204"
   },
   {
-    "title": "Holiday Heritage",
-    "year": 2022,
-    "tmdbId": 1028560,
-    "imdbId": "tt22307204",
-    "tmdb_id": 1028560,
-    "imdb_id": "tt22307204",
-    "poster": "/images/posters/1028560.webp",
-    "overview": "Ella returns to her hometown to mend fences with her fractured family. With the help of Griffin, her ex-boyfriend, she encourages her family to celebrate Christmas and Kwanzaa and to heal their past wounds before it’s too late.",
-    "vote_average": 4.111,
-    "vote_count": 9
+    "title": "Magic in Mistletoe (2023)",
+    "imdb_id": "tt29233549"
   }
 ]

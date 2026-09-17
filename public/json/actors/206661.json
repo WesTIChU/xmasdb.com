@@ -1,26 +1,10 @@
 [
   {
-    "title": "Miss Christmas",
-    "year": 2017,
-    "tmdbId": 474974,
-    "imdbId": "tt7588798",
-    "tmdb_id": 474974,
-    "imdb_id": "tt7588798",
-    "poster": "/images/posters/474974.webp",
-    "overview": "Holly Khun, known to Chicago as “Miss Christmas,” always finds a beautiful tree for the plaza, but this year’s was damaged, and the lighting ceremony is in 10 days. Hoping for a miracle, she combs through fan mail, and finds Joey McNary of Klaus, Wisconsin, has the perfect tree. Off she goes to Klaus, where she meets Joey’s handsome dad Sam.",
-    "vote_average": 6.226,
-    "vote_count": 82
+    "title": "Miss Christmas (2017)",
+    "imdb_id": "tt7588798"
   },
   {
-    "title": "Royal New Year's Eve",
-    "year": 2017,
-    "tmdbId": 474979,
-    "imdbId": "tt7654082",
-    "tmdb_id": 474979,
-    "imdb_id": "tt7654082",
-    "poster": "/images/posters/474979.webp",
-    "overview": "An aspiring fashion designer falls in love with her socialite client's prospective fiance, Prince Jeffrey.",
-    "vote_average": 6.132,
-    "vote_count": 102
+    "title": "Royal New Year's Eve (2017)",
+    "imdb_id": "tt7654082"
   }
 ]

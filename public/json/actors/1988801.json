@@ -1,26 +1,10 @@
 [
   {
-    "title": "Confessions of a Christmas Letter",
-    "year": 2024,
-    "tmdbId": 1361141,
-    "imdbId": "tt33401152",
-    "tmdb_id": 1361141,
-    "imdb_id": "tt33401152",
-    "poster": "/images/posters/1361141.webp",
-    "overview": "Settie Rose, an eccentric matriarch, hires struggling novelist Juan to write her holiday contest entry. A mixup sparks gossip of Juan's engagement to Settie's daughter Lily, leading the family to play along humorously.",
-    "vote_average": 5.6,
-    "vote_count": 14
+    "title": "#Xmas (2022)",
+    "imdb_id": "tt9892854"
   },
   {
-    "title": "#Xmas",
-    "year": 2022,
-    "tmdbId": 1028550,
-    "imdbId": "tt9892854",
-    "tmdb_id": 1028550,
-    "imdb_id": "tt9892854",
-    "poster": "/images/posters/1028550.webp",
-    "overview": "When Jen gets the chance to enter a brand’s design contest, she poses as a family influencer, enlisting the help of her best friend, Max, and her baby nephew. When her video is selected as a finalist, Jen is torn on whether to go on with her perfect “family” or reveal the truth.",
-    "vote_average": 5.357,
-    "vote_count": 42
+    "title": "Confessions of a Christmas Letter (2024)",
+    "imdb_id": "tt33401152"
   }
 ]

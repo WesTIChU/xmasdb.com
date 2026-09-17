@@ -1,50 +1,18 @@
 [
   {
-    "title": "Happy Howlidays",
-    "year": 2024,
-    "tmdbId": 1361232,
-    "imdbId": "tt33908123",
-    "tmdb_id": 1361232,
-    "imdb_id": "tt33908123",
-    "poster": "/images/posters/1361232.webp",
-    "overview": "A webpage editor spending the holidays alone is drawn into an unusual encounter when she encounters a stray dog.",
-    "vote_average": 5.5,
-    "vote_count": 12
+    "title": "Merry Matrimony (2015)",
+    "imdb_id": "tt5210048"
   },
   {
-    "title": "Christmas at Pemberley Manor",
-    "year": 2018,
-    "tmdbId": 549301,
-    "imdbId": "tt8498184",
-    "tmdb_id": 549301,
-    "imdb_id": "tt8498184",
-    "poster": "/images/posters/549301.webp",
-    "overview": "As Christmas approaches, Elizabeth Bennett, a New York event planner is sent to a quaint, small town to organize a holiday festival. When she arrives, she finds William Darcy, a high-profile billionaire lacking in holiday spirit, in the process of selling the charming estate she hoped to use as a venue. Elizabeth persuades the reluctant Darcy to let her hold the festival on the historical estate and, before long, the unlikely pair begins falling for each other.",
-    "vote_average": 6.228,
-    "vote_count": 92
+    "title": "A December Bride (2016)",
+    "imdb_id": "tt5739680"
   },
   {
-    "title": "A December Bride",
-    "year": 2016,
-    "tmdbId": 427045,
-    "imdbId": "tt5739680",
-    "tmdb_id": 427045,
-    "imdb_id": "tt5739680",
-    "poster": "/images/posters/427045.webp",
-    "overview": "Aspiring interior designer Layla is dreading the Christmastime wedding of her cousin who’s marrying Layla’s ex-fiancé. Although Seth is the one responsible for introducing the bride and groom, she begrudgingly accepts his offer to be her date as she’s out of options. Seth gets carried away at the reception and announces they’re engaged, forcing a mortified Layla to keep up the pretense.",
-    "vote_average": 7.1,
-    "vote_count": 163
+    "title": "Christmas at Pemberley Manor (2018)",
+    "imdb_id": "tt8498184"
   },
   {
-    "title": "Merry Matrimony",
-    "year": 2015,
-    "tmdbId": 363479,
-    "imdbId": "tt5210048",
-    "tmdb_id": 363479,
-    "imdb_id": "tt5210048",
-    "poster": "/images/posters/363479.webp",
-    "overview": "Brie Traverston is up for partner at her firm if she can successfully coordinate a Christmas wedding reshoot and ignore all the feelings that come with working with the one-that-got-away Eddie Chapman and his possibly new girlfriend Isabella.",
-    "vote_average": 5.8,
-    "vote_count": 63
+    "title": "Happy Howlidays (2024)",
+    "imdb_id": "tt33908123"
   }
 ]

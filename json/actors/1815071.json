@@ -1,38 +1,14 @@
 [
   {
-    "title": "Three Wisest Men",
-    "year": 2025,
-    "tmdbId": 1537084,
-    "imdbId": "tt38353919",
-    "tmdb_id": 1537084,
-    "imdb_id": "tt38353919",
-    "poster": "/images/posters/1537084.webp",
-    "overview": "Luke is expecting twins, Taylor is debating a life-changing job, and Stephan is planning a wedding — all while their mom is planning to put the family home up for sale.",
-    "vote_average": 7.308,
-    "vote_count": 13
+    "title": "If I Only Had Christmas (2020)",
+    "imdb_id": "tt12766346"
   },
   {
-    "title": "Christmas in Tahoe",
-    "year": 2021,
-    "tmdbId": 874226,
-    "imdbId": "tt15739494",
-    "tmdb_id": 874226,
-    "imdb_id": "tt15739494",
-    "poster": "/images/posters/874226.webp",
-    "overview": "To save her family hotel's Christmas show, talent booker Claire must ask for help from her ex-boyfriend Ryan, the lead guitarist of a now-famous band that fired her as their manager years ago.",
-    "vote_average": 6.06,
-    "vote_count": 25
+    "title": "Christmas in Tahoe (2021)",
+    "imdb_id": "tt15739494"
   },
   {
-    "title": "If I Only Had Christmas",
-    "year": 2020,
-    "tmdbId": 737766,
-    "imdbId": "tt12766346",
-    "tmdb_id": 737766,
-    "imdb_id": "tt12766346",
-    "poster": "/images/posters/737766.webp",
-    "overview": "At Christmas, a cheerful publicist teams up with a cynical business owner and his team to help a charity in need.",
-    "vote_average": 6.6,
-    "vote_count": 46
+    "title": "Three Wisest Men (2025)",
+    "imdb_id": "tt38353919"
   }
 ]

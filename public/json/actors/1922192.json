@@ -1,26 +1,10 @@
 [
   {
-    "title": "A Christmas Tree Grows in Colorado",
-    "year": 2020,
-    "tmdbId": 737764,
-    "imdbId": "tt12557978",
-    "tmdb_id": 737764,
-    "imdb_id": "tt12557978",
-    "poster": "/images/posters/737764.webp",
-    "overview": "Erin is planning the town’s Christmas celebration and must win over firefighter Kevin in order to obtain the beautiful spruce tree from his property for the celebration.",
-    "vote_average": 5.7,
-    "vote_count": 16
+    "title": "The Mistletoe Secret (2019)",
+    "imdb_id": "tt10768348"
   },
   {
-    "title": "The Mistletoe Secret",
-    "year": 2019,
-    "tmdbId": 631420,
-    "imdbId": "tt10768348",
-    "tmdb_id": 631420,
-    "imdb_id": "tt10768348",
-    "poster": "/images/posters/631420.webp",
-    "overview": "Aria Eubank convinces a famous travel writer to do a feature story on her beloved hometown, however, when the travel guru and his ghostwriter both show up, Aria finds her heart torn between Sterling Masters and Alex Barlett, the man who has genuinely fallen for her.",
-    "vote_average": 6.7,
-    "vote_count": 27
+    "title": "A Christmas Tree Grows in Colorado (2020)",
+    "imdb_id": "tt12557978"
   }
 ]

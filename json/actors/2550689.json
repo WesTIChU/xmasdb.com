@@ -1,14 +1,6 @@
 [
   {
-    "title": "Christmas List",
-    "year": 2016,
-    "tmdbId": 416251,
-    "imdbId": "tt5902138",
-    "tmdb_id": 416251,
-    "imdb_id": "tt5902138",
-    "poster": "/images/posters/416251.webp",
-    "overview": "Isobel Gray plans a storybook Christmas with her boyfriend, including a snow-covered cottage in the Northwest, and a carefully composed bucket list of classic holiday traditions. But when the boyfriend goes AWOL, the list proves challenging and a tempting new romance turns her life upside down. Will Isobel have a White Christmas ending under the mistletoe?",
-    "vote_average": 5.5,
-    "vote_count": 64
+    "title": "Christmas List (2016)",
+    "imdb_id": "tt5902138"
   }
 ]

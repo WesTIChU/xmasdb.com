@@ -1,38 +1,14 @@
 [
   {
-    "title": "Holiday Road",
-    "year": 2023,
-    "tmdbId": 1180791,
-    "imdbId": "tt29233535",
-    "tmdb_id": 1180791,
-    "imdb_id": "tt29233535",
-    "poster": "/images/posters/1180791.webp",
-    "overview": "A travel writer, a tech entrepreneur, a devoted mother and more strangers are stranded at the airport for the holidays, they rent a van for an unexpected road trip.",
-    "vote_average": 7.2,
-    "vote_count": 23
+    "title": "Christmas List (2016)",
+    "imdb_id": "tt5902138"
   },
   {
-    "title": "Finding Santa",
-    "year": 2017,
-    "tmdbId": 474985,
-    "imdbId": "tt7385392",
-    "tmdb_id": 474985,
-    "imdb_id": "tt7385392",
-    "poster": "/images/posters/474985.webp",
-    "overview": "Christmas is a busy, busy time for the residents of Green River, particularly for Grace Long, the third generation of her family to steward the New England town’s signature Christmas Eve parade. This year’s audience for the parade promises to be in the millions, thanks to a national morning show that has chosen Green River as the site of its Christmas Eve day program.",
-    "vote_average": 6.668,
-    "vote_count": 98
+    "title": "Finding Santa (2017)",
+    "imdb_id": "tt7385392"
   },
   {
-    "title": "Christmas List",
-    "year": 2016,
-    "tmdbId": 416251,
-    "imdbId": "tt5902138",
-    "tmdb_id": 416251,
-    "imdb_id": "tt5902138",
-    "poster": "/images/posters/416251.webp",
-    "overview": "Isobel Gray plans a storybook Christmas with her boyfriend, including a snow-covered cottage in the Northwest, and a carefully composed bucket list of classic holiday traditions. But when the boyfriend goes AWOL, the list proves challenging and a tempting new romance turns her life upside down. Will Isobel have a White Christmas ending under the mistletoe?",
-    "vote_average": 5.5,
-    "vote_count": 64
+    "title": "Holiday Road (2023)",
+    "imdb_id": "tt29233535"
   }
 ]

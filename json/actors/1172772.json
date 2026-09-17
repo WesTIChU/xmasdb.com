@@ -1,26 +1,10 @@
 [
   {
-    "title": "Debbie Macomber’s Joyful Mrs. Miracle",
-    "year": 2024,
-    "tmdbId": 1361199,
-    "imdbId": "tt33669124",
-    "tmdb_id": 1361199,
-    "imdb_id": "tt33669124",
-    "poster": "/images/posters/1361199.webp",
-    "overview": "Three siblings return home at Christmas to honor their late grandmother's wishes, and with the help of Mrs. Miracle's magic, they work through family conflicts while one rekindles a past romance.",
-    "vote_average": 6.548,
-    "vote_count": 21
+    "title": "Christmas Class Reunion (2022)",
+    "imdb_id": "tt18884832"
   },
   {
-    "title": "Christmas Class Reunion",
-    "year": 2022,
-    "tmdbId": 1028537,
-    "imdbId": "tt18884832",
-    "tmdb_id": 1028537,
-    "imdb_id": "tt18884832",
-    "poster": "/images/posters/1028537.webp",
-    "overview": "High school classmates, who once dubbed themselves the “cursed class,” reconnect at Christmas for their 15-year reunion. Over the course of their time reconnecting, the classmates challenge each other to remember who they were, who they are, and who they want to be.",
-    "vote_average": 5.739,
-    "vote_count": 24
+    "title": "Debbie Macomber’s Joyful Mrs. Miracle (2024)",
+    "imdb_id": "tt33669124"
   }
 ]

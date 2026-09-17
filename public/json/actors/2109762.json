@@ -1,38 +1,14 @@
 [
   {
-    "title": "The Snow Must Go On",
-    "year": 2025,
-    "tmdbId": 1547920,
-    "imdbId": "tt38354943",
-    "tmdb_id": 1547920,
-    "imdb_id": "tt38354943",
-    "poster": "/images/posters/1547920.webp",
-    "overview": "Nearly a decade after appearing on Broadway, Isaiah visits his family in upstate New York for the holidays and is unexpectedly put back on stage — this time to save his niece’s Christmas show. To make things more complicated, he learns that “an influential Broadway producer’s daughter is in the school production.”",
-    "vote_average": 5.125,
-    "vote_count": 8
+    "title": "Christmas by Starlight (2020)",
+    "imdb_id": "tt13206476"
   },
   {
-    "title": "The Santa Summit",
-    "year": 2023,
-    "tmdbId": 1142712,
-    "imdbId": "tt29381717",
-    "tmdb_id": 1142712,
-    "imdb_id": "tt29381717",
-    "poster": "/images/posters/1142712.webp",
-    "overview": "Amidst a sea of Santas at their town's annual Christmas celebration, three friends all find what they’re looking for: Christmas spirit, potential romance, and a strengthened bond of friendship.",
-    "vote_average": 6.517,
-    "vote_count": 29
+    "title": "The Santa Summit (2023)",
+    "imdb_id": "tt29381717"
   },
   {
-    "title": "Christmas by Starlight",
-    "year": 2020,
-    "tmdbId": 746045,
-    "imdbId": "tt13206476",
-    "tmdb_id": 746045,
-    "imdb_id": "tt13206476",
-    "poster": "/images/posters/746045.webp",
-    "overview": "Annie, a lawyer, must help her loved ones this holiday season. Her family’s restaurant, The Starlight Café, is slated for demolition. The heir to the development firm responsible, William, makes her an unlikely proposition: he’ll spare the café if Annie spends the week “appearing” as the legal counsel his father is demanding he hire in the wake of some costly mistakes.",
-    "vote_average": 6.8,
-    "vote_count": 55
+    "title": "The Snow Must Go On (2025)",
+    "imdb_id": "tt38354943"
   }
 ]

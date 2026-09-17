@@ -1,50 +1,18 @@
 [
   {
-    "title": "Holiday Hotline",
-    "year": 2023,
-    "tmdbId": 1180811,
-    "imdbId": "tt29499210",
-    "tmdb_id": 1180811,
-    "imdb_id": "tt29499210",
-    "poster": "/images/posters/1180811.webp",
-    "overview": "Upon leaving London and working at a cooking hotline, Abby connects with an anonymous caller — a single dad who Abby unknowingly is also smitten with in real life.",
-    "vote_average": 6.848,
-    "vote_count": 32
+    "title": "Christmas Connection (2017)",
+    "imdb_id": "tt7630836"
   },
   {
-    "title": "On the 12th Date of Christmas",
-    "year": 2020,
-    "tmdbId": 737778,
-    "imdbId": "tt12822926",
-    "tmdb_id": 737778,
-    "imdb_id": "tt12822926",
-    "poster": "/images/posters/737778.webp",
-    "overview": "Two seemingly incompatible game designers team up to create a romantic, city-wide scavenger hunt themed for the \"12 Days of Christmas.\"",
-    "vote_average": 7.173,
-    "vote_count": 49
+    "title": "A Shoe Addict's Christmas (2018)",
+    "imdb_id": "tt8634202"
   },
   {
-    "title": "A Shoe Addict's Christmas",
-    "year": 2018,
-    "tmdbId": 535809,
-    "imdbId": "tt8634202",
-    "tmdb_id": 535809,
-    "imdb_id": "tt8634202",
-    "poster": "/images/posters/535809.webp",
-    "overview": "As Christmas approaches, a department store worker whose life lacks fulfillment meets her guardian angel, who offers her a chance to change her circumstances by magically transporting her to Christmases past whenever she tries on a new pair of shoes.",
-    "vote_average": 6.165,
-    "vote_count": 79
+    "title": "On the 12th Date of Christmas (2020)",
+    "imdb_id": "tt12822926"
   },
   {
-    "title": "Christmas Connection",
-    "year": 2017,
-    "tmdbId": 474994,
-    "imdbId": "tt7630836",
-    "tmdb_id": 474994,
-    "imdb_id": "tt7630836",
-    "poster": "/images/posters/474994.webp",
-    "overview": "Adventurous flight attendant Sydney’s plans for a tropical Christmas get delayed when she helps an unaccompanied minor get home to Chicago to her dad Jonathan, a handsome widower and investigative reporter. Faced with a shortage of out-going flights, Sydney is marooned for several days in the Windy City – once her home as a small girl — and tags along with Jonathan, his daughter, and their exuberantly festive family until she can find a connecting flight. Jonathan makes her a deal: he helps her chase down the story of how her late parents met, and she helps him to write the perfect Christmas story and keep his job, and along the way, sparks form between them.",
-    "vote_average": 5.982,
-    "vote_count": 57
+    "title": "Holiday Hotline (2023)",
+    "imdb_id": "tt29499210"
   }
 ]

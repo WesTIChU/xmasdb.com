@@ -1,38 +1,14 @@
 [
   {
-    "title": "Christmas at the Plaza",
-    "year": 2019,
-    "tmdbId": 630916,
-    "imdbId": "tt10921042",
-    "tmdb_id": 630916,
-    "imdb_id": "tt10921042",
-    "poster": "/images/posters/630916.webp",
-    "overview": "With Christmas approaching in New York City, historian Jessica is hired to create an exhibition honoring the history of Christmas at The Plaza Hotel. When she is paired with Nick, a handsome decorator, they wind up enjoying a host of holiday traditions together and find themselves falling for each other.",
-    "vote_average": 6.398,
-    "vote_count": 122
+    "title": "Angel of Christmas (2015)",
+    "imdb_id": "tt5097970"
   },
   {
-    "title": "Christmas List",
-    "year": 2016,
-    "tmdbId": 416251,
-    "imdbId": "tt5902138",
-    "tmdb_id": 416251,
-    "imdb_id": "tt5902138",
-    "poster": "/images/posters/416251.webp",
-    "overview": "Isobel Gray plans a storybook Christmas with her boyfriend, including a snow-covered cottage in the Northwest, and a carefully composed bucket list of classic holiday traditions. But when the boyfriend goes AWOL, the list proves challenging and a tempting new romance turns her life upside down. Will Isobel have a White Christmas ending under the mistletoe?",
-    "vote_average": 5.5,
-    "vote_count": 64
+    "title": "Christmas List (2016)",
+    "imdb_id": "tt5902138"
   },
   {
-    "title": "Angel of Christmas",
-    "year": 2015,
-    "tmdbId": 363484,
-    "imdbId": "tt5097970",
-    "tmdb_id": 363484,
-    "imdb_id": "tt5097970",
-    "poster": "/images/posters/363484.webp",
-    "overview": "Susan is a newspaper staffer who decides to generate some Christmas spirit by writing an article about her family’s storied 100-year-old, hand-carved, heirloom Christmas angel. This leads her to accidentally meet Brady, a cute, upbeat artist who insists that he and Susan become fast friends (at least). It turns out that this angel also has the spiritual power to bring people together – as it seems to be doing with Susan and Brady. What’s behind this enchanted ornament? As time moves on, more about this captivating artifact is revealed.",
-    "vote_average": 6.058,
-    "vote_count": 77
+    "title": "Christmas at the Plaza (2019)",
+    "imdb_id": "tt10921042"
   }
 ]

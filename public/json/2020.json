@@ -1,278 +1,94 @@
 [
   {
-    "title": "A Christmas Carousel",
-    "year": 2020,
-    "tmdbId": 746061,
-    "imdbId": "tt13273744",
-    "tmdb_id": 746061,
-    "imdb_id": "tt13273744",
-    "poster": "/images/posters/746061.webp",
-    "overview": "When Lila is hired by the Royal Family of Ancadia to repair a carousel, she must work with the Prince to complete it by Christmas.",
-    "vote_average": 6.817,
-    "vote_count": 30
+    "title": "A Christmas Carousel (2020)",
+    "imdb_id": "tt13273744"
   },
   {
-    "title": "A Christmas Tree Grows in Colorado",
-    "year": 2020,
-    "tmdbId": 737764,
-    "imdbId": "tt12557978",
-    "tmdb_id": 737764,
-    "imdb_id": "tt12557978",
-    "poster": "/images/posters/737764.webp",
-    "overview": "Erin is planning the town’s Christmas celebration and must win over firefighter Kevin in order to obtain the beautiful spruce tree from his property for the celebration.",
-    "vote_average": 5.7,
-    "vote_count": 16
+    "title": "A Christmas Tree Grows in Colorado (2020)",
+    "imdb_id": "tt12557978"
   },
   {
-    "title": "A Nashville Christmas Carol",
-    "year": 2020,
-    "tmdbId": 746041,
-    "imdbId": "tt13341432",
-    "tmdb_id": 746041,
-    "imdb_id": "tt13341432",
-    "poster": "/images/posters/746041.webp",
-    "overview": "A workaholic television producer receives a visit from her recently deceased mentor, who warns her that her current path leads to a dark future.",
-    "vote_average": 6.7,
-    "vote_count": 37
+    "title": "A Nashville Christmas Carol (2020)",
+    "imdb_id": "tt13341432"
   },
   {
-    "title": "A Timeless Christmas",
-    "year": 2020,
-    "tmdbId": 746039,
-    "imdbId": "tt13341414",
-    "tmdb_id": 746039,
-    "imdb_id": "tt13341414",
-    "poster": "/images/posters/746039.webp",
-    "overview": "Charles Whitley travels from 1903 to 2020 where he meets Megan Turner, a tour guide at his historic mansion, and experiences a 21st Century Christmas.",
-    "vote_average": 6.421,
-    "vote_count": 82
+    "title": "A Timeless Christmas (2020)",
+    "imdb_id": "tt13341414"
   },
   {
-    "title": "Chateau Christmas",
-    "year": 2020,
-    "tmdbId": 737779,
-    "imdbId": "tt13350688",
-    "tmdb_id": 737779,
-    "imdb_id": "tt13350688",
-    "poster": "/images/posters/737779.webp",
-    "overview": "Margot, a world-renowned pianist, returns to Chateau Newhaus to spend the holidays with her family and is reunited with an ex who helps her rediscover her passion for music.",
-    "vote_average": 6.16,
-    "vote_count": 50
+    "title": "Chateau Christmas (2020)",
+    "imdb_id": "tt13350688"
   },
   {
-    "title": "Christmas by Starlight",
-    "year": 2020,
-    "tmdbId": 746045,
-    "imdbId": "tt13206476",
-    "tmdb_id": 746045,
-    "imdb_id": "tt13206476",
-    "poster": "/images/posters/746045.webp",
-    "overview": "Annie, a lawyer, must help her loved ones this holiday season. Her family’s restaurant, The Starlight Café, is slated for demolition. The heir to the development firm responsible, William, makes her an unlikely proposition: he’ll spare the café if Annie spends the week “appearing” as the legal counsel his father is demanding he hire in the wake of some costly mistakes.",
-    "vote_average": 6.8,
-    "vote_count": 55
+    "title": "Christmas by Starlight (2020)",
+    "imdb_id": "tt13206476"
   },
   {
-    "title": "Christmas Comes Twice",
-    "year": 2020,
-    "tmdbId": 737782,
-    "imdbId": "tt13342004",
-    "tmdb_id": 737782,
-    "imdb_id": "tt13342004",
-    "poster": "/images/posters/737782.webp",
-    "overview": "When Cheryl visits the Christmas carnival in her hometown, she gets a second chance in life when she is transported to Christmas five years in the past.",
-    "vote_average": 6.3,
-    "vote_count": 17
+    "title": "Christmas Comes Twice (2020)",
+    "imdb_id": "tt13342004"
   },
   {
-    "title": "Christmas in Evergreen: Bells Are Ringing",
-    "year": 2020,
-    "tmdbId": 746047,
-    "imdbId": "tt13194940",
-    "tmdb_id": 746047,
-    "imdb_id": "tt13194940",
-    "poster": "/images/posters/746047.webp",
-    "overview": "As Michelle’s wedding approaches, Hannah steps up to help finish the launch of the new Evergreen museum while questioning her relationship and future with Elliot.",
-    "vote_average": 5.7,
-    "vote_count": 32
+    "title": "Christmas in Evergreen: Bells Are Ringing (2020)",
+    "imdb_id": "tt13194940"
   },
   {
-    "title": "Christmas in Vienna",
-    "year": 2020,
-    "tmdbId": 726523,
-    "imdbId": "tt13341400",
-    "tmdb_id": 726523,
-    "imdb_id": "tt13341400",
-    "poster": "/images/posters/726523.webp",
-    "overview": "Jess, a concert violinist whose heart just isn’t in it anymore, goes to Vienna for a performance. While there, she finds the inspiration she has been missing, and a new love.",
-    "vote_average": 6.4,
-    "vote_count": 32
+    "title": "Christmas in Vienna (2020)",
+    "imdb_id": "tt13341400"
   },
   {
-    "title": "Christmas She Wrote",
-    "year": 2020,
-    "tmdbId": 746048,
-    "imdbId": "tt13097858",
-    "tmdb_id": 746048,
-    "imdb_id": "tt13097858",
-    "poster": "/images/posters/746048.webp",
-    "overview": "When Kayleigh, a romance writer, has her column cancelled right before Christmas, she heads home to reconnect with her family. Kayleigh gets an unexpected visit from the man who cancelled her column who fights not only to bring her back to the publisher but also for her heart.",
-    "vote_average": 6.1,
-    "vote_count": 34
+    "title": "Christmas She Wrote (2020)",
+    "imdb_id": "tt13097858"
   },
   {
-    "title": "Christmas Waltz",
-    "year": 2020,
-    "tmdbId": 733032,
-    "imdbId": "tt11585200",
-    "tmdb_id": 733032,
-    "imdb_id": "tt11585200",
-    "poster": "/images/posters/733032.webp",
-    "overview": "After Avery’s storybook Christmas wedding is canceled unexpectedly, dance instructor Roman helps her rebuild her dreams.",
-    "vote_average": 7,
-    "vote_count": 64
+    "title": "Christmas Waltz (2020)",
+    "imdb_id": "tt11585200"
   },
   {
-    "title": "Christmas with the Darlings",
-    "year": 2020,
-    "tmdbId": 746032,
-    "imdbId": "tt13381368",
-    "tmdb_id": 746032,
-    "imdb_id": "tt13381368",
-    "poster": "/images/posters/746032.webp",
-    "overview": "Just before the holidays Jessica Lew is ending her tenure as the assistant to her wealthy boss to use her recently earned law degree within his company, but offers to help his charming, younger brother as he looks after his orphaned nieces and nephew over Christmas.",
-    "vote_average": 6.958,
-    "vote_count": 36
+    "title": "Christmas with the Darlings (2020)",
+    "imdb_id": "tt13381368"
   },
   {
-    "title": "Cross Country Christmas",
-    "year": 2020,
-    "tmdbId": 737780,
-    "imdbId": "tt13040330",
-    "tmdb_id": 737780,
-    "imdb_id": "tt13040330",
-    "poster": "/images/posters/737780.webp",
-    "overview": "Former classmates Lina and Max are traveling home for the holidays, until a storm hits and they have to work together to make it home in time, no matter the mode of transportation.",
-    "vote_average": 6.784,
-    "vote_count": 51
+    "title": "Cross Country Christmas (2020)",
+    "imdb_id": "tt13040330"
   },
   {
-    "title": "Five Star Christmas",
-    "year": 2020,
-    "tmdbId": 746060,
-    "imdbId": "tt13320784",
-    "tmdb_id": 746060,
-    "imdb_id": "tt13320784",
-    "poster": "/images/posters/746060.webp",
-    "overview": "After moving back to her hometown, Lisa (Lenz) plots with her siblings and grandparents to help her father's bed and breakfast get a five-star review from an incognito travel critic (Webster), but ends up falling for him, not knowing he is the real critic.",
-    "vote_average": 6.865,
-    "vote_count": 48
+    "title": "Five Star Christmas (2020)",
+    "imdb_id": "tt13320784"
   },
   {
-    "title": "Good Morning Christmas!",
-    "year": 2020,
-    "tmdbId": 746043,
-    "imdbId": "tt13109730",
-    "tmdb_id": 746043,
-    "imdb_id": "tt13109730",
-    "poster": "/images/posters/746043.webp",
-    "overview": "Two competing TV hosts are sent to a festive small town over Christmas. While pretending to get along for the sake of appearances, they discover that there’s more to each other than they thought.",
-    "vote_average": 6.302,
-    "vote_count": 48
+    "title": "Good Morning Christmas! (2020)",
+    "imdb_id": "tt13109730"
   },
   {
-    "title": "Heart of the Holidays",
-    "year": 2020,
-    "tmdbId": 756727,
-    "imdbId": "tt13286622",
-    "tmdb_id": 756727,
-    "imdb_id": "tt13286622",
-    "poster": "/images/posters/756727.webp",
-    "overview": "After her life in New York unexpectedly falls apart, powerhouse stockbroker Sam Wallace returns to her small town for the holidays and reconnects with her high school sweetheart who helps reignite her humanitarian spirit just in time to help their community on Christmas.",
-    "vote_average": 6.38,
-    "vote_count": 25
+    "title": "Heart of the Holidays (2020)",
+    "imdb_id": "tt13286622"
   },
   {
-    "title": "If I Only Had Christmas",
-    "year": 2020,
-    "tmdbId": 737766,
-    "imdbId": "tt12766346",
-    "tmdb_id": 737766,
-    "imdb_id": "tt12766346",
-    "poster": "/images/posters/737766.webp",
-    "overview": "At Christmas, a cheerful publicist teams up with a cynical business owner and his team to help a charity in need.",
-    "vote_average": 6.6,
-    "vote_count": 46
+    "title": "If I Only Had Christmas (2020)",
+    "imdb_id": "tt12766346"
   },
   {
-    "title": "Jingle Bell Bride",
-    "year": 2020,
-    "tmdbId": 737763,
-    "imdbId": "tt12877642",
-    "tmdb_id": 737763,
-    "imdb_id": "tt12877642",
-    "poster": "/images/posters/737763.webp",
-    "overview": "Wedding planner Jessica Perez travels to a remote town in Alaska to find a rare flower for a celebrity client and is charmed by the small town during Christmas, as well as the handsome local helping her.",
-    "vote_average": 6.4,
-    "vote_count": 32
+    "title": "Jingle Bell Bride (2020)",
+    "imdb_id": "tt12877642"
   },
   {
-    "title": "Love, Lights, Hanukkah!",
-    "year": 2020,
-    "tmdbId": 746062,
-    "imdbId": "tt13342190",
-    "tmdb_id": 746062,
-    "imdb_id": "tt13342190",
-    "poster": "/images/posters/746062.webp",
-    "overview": "As Christina prepares her restaurant for its busiest time of year, she gets back a DNA test revealing that she’s Jewish. The discovery leads her to a new family and an unlikely romance over eight nights.",
-    "vote_average": 6.8,
-    "vote_count": 25
+    "title": "Love, Lights, Hanukkah! (2020)",
+    "imdb_id": "tt13342190"
   },
   {
-    "title": "Never Kiss a Man in a Christmas Sweater",
-    "year": 2020,
-    "tmdbId": 746034,
-    "imdbId": "tt13192538",
-    "tmdb_id": 746034,
-    "imdb_id": "tt13192538",
-    "poster": "/images/posters/746034.webp",
-    "overview": "Single mom Maggie is facing Christmas alone until Lucas crashes into her life and becomes an unexpected house guest. Together they overcome Christmas while finding comfort in their growing bond.",
-    "vote_average": 6.483,
-    "vote_count": 58
+    "title": "Never Kiss a Man in a Christmas Sweater (2020)",
+    "imdb_id": "tt13192538"
   },
   {
-    "title": "On the 12th Date of Christmas",
-    "year": 2020,
-    "tmdbId": 737778,
-    "imdbId": "tt12822926",
-    "tmdb_id": 737778,
-    "imdb_id": "tt12822926",
-    "poster": "/images/posters/737778.webp",
-    "overview": "Two seemingly incompatible game designers team up to create a romantic, city-wide scavenger hunt themed for the \"12 Days of Christmas.\"",
-    "vote_average": 7.173,
-    "vote_count": 49
+    "title": "On the 12th Date of Christmas (2020)",
+    "imdb_id": "tt12822926"
   },
   {
-    "title": "One Royal Holiday",
-    "year": 2020,
-    "tmdbId": 737762,
-    "imdbId": "tt12773628",
-    "tmdb_id": 737762,
-    "imdb_id": "tt12773628",
-    "poster": "/images/posters/737762.webp",
-    "overview": "When Anna offers a stranded mother and son shelter in a blizzard, she learns that they are the Royal Family of Galwick. Anna shows the Prince how they do Christmas in her hometown, encouraging him to open his heart and be true to himself.",
-    "vote_average": 6.7,
-    "vote_count": 46
+    "title": "One Royal Holiday (2020)",
+    "imdb_id": "tt12773628"
   },
   {
-    "title": "The Christmas House",
-    "year": 2020,
-    "tmdbId": 746042,
-    "imdbId": "tt12950902",
-    "tmdb_id": 746042,
-    "imdb_id": "tt12950902",
-    "poster": "/images/posters/746042.webp",
-    "overview": "Working through some difficult decisions, Mitchell family matriarch Phylis and patriarch Bill, have summoned their two grown sons – TV stars Mike Mitchell and Brandon Mitchell – home for the holidays. It is their hope that bringing the family together to recreate the Christmas house, will help them find resolution and make a memorable holiday for the entire family and community.",
-    "vote_average": 5.927,
-    "vote_count": 55
+    "title": "The Christmas House (2020)",
+    "imdb_id": "tt12950902"
   }
 ]

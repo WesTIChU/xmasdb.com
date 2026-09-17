@@ -1,50 +1,18 @@
 [
   {
-    "title": "Christmas at the Catnip Café",
-    "year": 2025,
-    "tmdbId": 1545999,
-    "imdbId": "tt37985000",
-    "tmdb_id": 1545999,
-    "imdb_id": "tt37985000",
-    "poster": "/images/posters/1545999.webp",
-    "overview": "When a marketing executive learns she’s short on the down payment for her dream condo, she’s informed that her great aunt left her half of a cat café in upstate New York. Hoping to sell it before the holidays, she then meets Dr. Ben Kane, the veterinarian who owns the other half, and has no intention of closing.",
-    "vote_average": 6.885,
-    "vote_count": 14
+    "title": "Ice Sculpture Christmas (2015)",
+    "imdb_id": "tt5031014"
   },
   {
-    "title": "Never Kiss a Man in a Christmas Sweater",
-    "year": 2020,
-    "tmdbId": 746034,
-    "imdbId": "tt13192538",
-    "tmdb_id": 746034,
-    "imdb_id": "tt13192538",
-    "poster": "/images/posters/746034.webp",
-    "overview": "Single mom Maggie is facing Christmas alone until Lucas crashes into her life and becomes an unexpected house guest. Together they overcome Christmas while finding comfort in their growing bond.",
-    "vote_average": 6.483,
-    "vote_count": 58
+    "title": "Picture a Perfect Christmas (2019)",
+    "imdb_id": "tt10553910"
   },
   {
-    "title": "Picture a Perfect Christmas",
-    "year": 2019,
-    "tmdbId": 626323,
-    "imdbId": "tt10553910",
-    "tmdb_id": 626323,
-    "imdb_id": "tt10553910",
-    "poster": "/images/posters/626323.webp",
-    "overview": "An extreme-sports photographer returns home for the holiday to take care of her grandmother, only to have a neighbor grab her attention as he needs assistance watching his young nephew.",
-    "vote_average": 6.17,
-    "vote_count": 47
+    "title": "Never Kiss a Man in a Christmas Sweater (2020)",
+    "imdb_id": "tt13192538"
   },
   {
-    "title": "Ice Sculpture Christmas",
-    "year": 2015,
-    "tmdbId": 360604,
-    "imdbId": "tt5031014",
-    "tmdb_id": 360604,
-    "imdb_id": "tt5031014",
-    "poster": "/images/posters/360604.webp",
-    "overview": "After starting her first job at a country club restaurant, Callie’s passions for cooking and ice sculpting are met with romance and Christmas spirit when a childhood friend enters her into the club’s annual Christmas ice sculpting competition without her knowledge.",
-    "vote_average": 6.1,
-    "vote_count": 87
+    "title": "Christmas at the Catnip Café (2025)",
+    "imdb_id": "tt37985000"
   }
 ]

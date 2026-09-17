@@ -1,38 +1,14 @@
 [
   {
-    "title": "Christmas On Call",
-    "year": 2024,
-    "tmdbId": 1361154,
-    "imdbId": "tt33829451",
-    "tmdb_id": 1361154,
-    "imdb_id": "tt33829451",
-    "poster": "/images/posters/1361154.webp",
-    "overview": "The lives of first responders in Philadelphia intersect over the holiday season while juggling work, personal lives, and their dedication to protect and serve their city.",
-    "vote_average": 7.1,
-    "vote_count": 25
+    "title": "Entertaining Christmas (2018)",
+    "imdb_id": "tt9028872"
   },
   {
-    "title": "The Christmas Charade",
-    "year": 2024,
-    "tmdbId": 1359867,
-    "imdbId": "tt33039603",
-    "tmdb_id": 1359867,
-    "imdb_id": "tt33039603",
-    "poster": "/images/posters/1359867.webp",
-    "overview": "A cautious librarian raised by home security experts finds herself in a real-life adventure when a blind date mix-up leads her into an undercover FBI operation. Forced to pose as the girlfriend of Special Agent Josh, she helps him track down an art thief targeting the Saint Nicholas Ruby at a Christmas Eve charity ball.",
-    "vote_average": 6.682,
-    "vote_count": 33
+    "title": "The Christmas Charade (2024)",
+    "imdb_id": "tt33039603"
   },
   {
-    "title": "Entertaining Christmas",
-    "year": 2018,
-    "tmdbId": 550034,
-    "imdbId": "tt9028872",
-    "tmdb_id": 550034,
-    "imdb_id": "tt9028872",
-    "poster": "/images/posters/550034.webp",
-    "overview": "Candace, daughter of lifestyle mogul Liz Livingstone, has never lived up to her mother’s standards. When a young girl posts a video begging Liz to help arrange a special Christmas party, Candace is sent in her place. As she struggles to prove herself worthy of running the company, Candace meets—and begins falling for—the girl’s uncle, a reporter writing an expose on her.",
-    "vote_average": 6.1,
-    "vote_count": 38
+    "title": "Christmas On Call (2024)",
+    "imdb_id": "tt33829451"
   }
 ]

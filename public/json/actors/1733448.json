@@ -1,38 +1,14 @@
 [
   {
-    "title": "A Carol for Two",
-    "year": 2024,
-    "tmdbId": 1360779,
-    "imdbId": "tt31438256",
-    "tmdb_id": 1360779,
-    "imdb_id": "tt31438256",
-    "poster": "/images/posters/1360779.webp",
-    "overview": "Violette dreams of Broadway, but lands a singing waitress gig at Fiore's. Her Christmas Eve duet with Alex, who resents her connections, could be her big break. As they rehearse, Alex's cousin Brad, with Alex's secret help, woos Violette. Alex develops feelings too, creating a messy love triangle that jeopardizes their shot at stardom.",
-    "vote_average": 6.2,
-    "vote_count": 9
+    "title": "Christmas Connection (2017)",
+    "imdb_id": "tt7630836"
   },
   {
-    "title": "Never Been Chris'd",
-    "year": 2023,
-    "tmdbId": 1180663,
-    "imdbId": "tt29258217",
-    "tmdb_id": 1180663,
-    "imdb_id": "tt29258217",
-    "poster": "/images/posters/1180663.webp",
-    "overview": "Best friends Naomi and Liz return home for the holidays and simultaneously enter a love triangle when they both reconnect with their high school crush Chris Silver.",
-    "vote_average": 5.212,
-    "vote_count": 32
+    "title": "Never Been Chris'd (2023)",
+    "imdb_id": "tt29258217"
   },
   {
-    "title": "Christmas Connection",
-    "year": 2017,
-    "tmdbId": 474994,
-    "imdbId": "tt7630836",
-    "tmdb_id": 474994,
-    "imdb_id": "tt7630836",
-    "poster": "/images/posters/474994.webp",
-    "overview": "Adventurous flight attendant Sydney’s plans for a tropical Christmas get delayed when she helps an unaccompanied minor get home to Chicago to her dad Jonathan, a handsome widower and investigative reporter. Faced with a shortage of out-going flights, Sydney is marooned for several days in the Windy City – once her home as a small girl — and tags along with Jonathan, his daughter, and their exuberantly festive family until she can find a connecting flight. Jonathan makes her a deal: he helps her chase down the story of how her late parents met, and she helps him to write the perfect Christmas story and keep his job, and along the way, sparks form between them.",
-    "vote_average": 5.982,
-    "vote_count": 57
+    "title": "A Carol for Two (2024)",
+    "imdb_id": "tt31438256"
   }
 ]

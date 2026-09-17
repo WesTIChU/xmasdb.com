@@ -19,6 +19,7 @@
 
 import fs from 'fs';
 import path from 'path';
+import { generateRadarrFeeds } from './scripts/generate-radarr-feeds.js';
 import { fileURLToPath } from 'url';
 import { ensureCachedImage } from './scripts/local-assets.js';
 
@@ -178,6 +179,11 @@ async function generate() {
     fs.writeFileSync(path.join(jsonDir, `${year}.json`), yearJson, 'utf8');
     fs.writeFileSync(path.join(publicJsonDir, `${year}.json`), yearJson, 'utf8');
   });
+
+  const castPath = path.join(__dirname, 'cast.json');
+  if (fs.existsSync(castPath)) {
+    generateRadarrFeeds(movies, JSON.parse(fs.readFileSync(castPath, 'utf8')));
+  }
 
   console.log(`Successfully generated ${years.length} year JSON files in /json and /public/json: ${years.join(', ')}`);
 

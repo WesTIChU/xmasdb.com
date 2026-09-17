@@ -1,26 +1,10 @@
 [
   {
-    "title": "Under the Christmas Sky",
-    "year": 2023,
-    "tmdbId": 1180651,
-    "imdbId": "tt29258080",
-    "tmdb_id": 1180651,
-    "imdb_id": "tt29258080",
-    "poster": "/images/posters/1180651.webp",
-    "overview": "Esteemed astrophysicist Kat, scheduled for her first trip into space but sidelined due to an accident, meets a new man at the local planetarium. Together, they must work hard to open a new exhibit by Christmas.",
-    "vote_average": 5.2,
-    "vote_count": 23
+    "title": "Heart of the Holidays (2020)",
+    "imdb_id": "tt13286622"
   },
   {
-    "title": "Heart of the Holidays",
-    "year": 2020,
-    "tmdbId": 756727,
-    "imdbId": "tt13286622",
-    "tmdb_id": 756727,
-    "imdb_id": "tt13286622",
-    "poster": "/images/posters/756727.webp",
-    "overview": "After her life in New York unexpectedly falls apart, powerhouse stockbroker Sam Wallace returns to her small town for the holidays and reconnects with her high school sweetheart who helps reignite her humanitarian spirit just in time to help their community on Christmas.",
-    "vote_average": 6.38,
-    "vote_count": 25
+    "title": "Under the Christmas Sky (2023)",
+    "imdb_id": "tt29258080"
   }
 ]

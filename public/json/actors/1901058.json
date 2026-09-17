@@ -1,26 +1,10 @@
 [
   {
-    "title": "Christmas Getaway",
-    "year": 2017,
-    "tmdbId": 480623,
-    "imdbId": "tt7688990",
-    "tmdb_id": 480623,
-    "imdb_id": "tt7688990",
-    "poster": "/images/posters/480623.webp",
-    "overview": "When a reservation mix-up at a mountain resort forces a newly-single travel writer to share a cabin with a handsome widower and his precocious daughter over the holidays, their lives are transformed by the magic of Christmas and the unexpected power of love.",
-    "vote_average": 6.961,
-    "vote_count": 153
+    "title": "The Christmas Train (2017)",
+    "imdb_id": "tt7370936"
   },
   {
-    "title": "The Christmas Train",
-    "year": 2017,
-    "tmdbId": 474982,
-    "imdbId": "tt7370936",
-    "tmdb_id": 474982,
-    "imdb_id": "tt7370936",
-    "poster": "/images/posters/474982.webp",
-    "overview": "Forced to take the intercontinental trip to Los Angeles by train, and determined to chronicle his adventure, disillusioned journalist Tom Langdon finds himself westbound with a variety of characters. While all passengers on the Christmas train appear to be headed for the same destination, Tom has no idea that the rugged locomotives taking him across America will instead detour straight into his heart.",
-    "vote_average": 6.4,
-    "vote_count": 131
+    "title": "Christmas Getaway (2017)",
+    "imdb_id": "tt7688990"
   }
 ]

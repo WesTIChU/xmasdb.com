@@ -1,26 +1,10 @@
 [
   {
-    "title": "A Gingerbread Romance",
-    "year": 2018,
-    "tmdbId": 550033,
-    "imdbId": "tt9028866",
-    "tmdb_id": 550033,
-    "imdb_id": "tt9028866",
-    "poster": "/images/posters/550033.webp",
-    "overview": "Successful architect Taylor Scott is poised for a promotion and a move to Paris but before that’s decided, her boss tasks her with creating a life-sized gingerbread house for a holiday competition. She partners with pastry chef Adam Dale, and though their styles are different, they form a deep connection working together.",
-    "vote_average": 5.083,
-    "vote_count": 30
+    "title": "With Love, Christmas (2017)",
+    "imdb_id": "tt7647000"
   },
   {
-    "title": "With Love, Christmas",
-    "year": 2017,
-    "tmdbId": 474976,
-    "imdbId": "tt7647000",
-    "tmdb_id": 474976,
-    "imdb_id": "tt7647000",
-    "poster": "/images/posters/474976.webp",
-    "overview": "Advertising execs Melanie Welsh and Donovan Goodwin disagree on a cellphone Christmas commercial they’re pitching. He says his sleek design will win over the client but she knows it lacks holiday spirit.",
-    "vote_average": 6.877,
-    "vote_count": 61
+    "title": "A Gingerbread Romance (2018)",
+    "imdb_id": "tt9028866"
   }
 ]

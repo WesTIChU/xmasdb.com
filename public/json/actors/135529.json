@@ -1,62 +1,22 @@
 [
   {
-    "title": "A Cozy Christmas Inn",
-    "year": 2022,
-    "tmdbId": 1012072,
-    "imdbId": "tt19394150",
-    "tmdb_id": 1012072,
-    "imdb_id": "tt19394150",
-    "poster": "/images/posters/1012072.webp",
-    "overview": "Real estate exec, Erika, travels to Alaska during Christmastime to acquire a bed and breakfast, only to discover that it’s owned by her ex. While there, she finds herself falling in love with the town and quite possibly him.",
-    "vote_average": 5.714,
-    "vote_count": 21
+    "title": "My Christmas Love (2016)",
+    "imdb_id": "tt6104760"
   },
   {
-    "title": "Sister Swap: A Hometown Holiday",
-    "year": 2021,
-    "tmdbId": 866665,
-    "imdbId": "tt6540706",
-    "tmdb_id": 866665,
-    "imdb_id": "tt6540706",
-    "poster": "/images/posters/866665.webp",
-    "overview": "Jennifer and Meg Swift are two sisters who are very close despite living far apart. Jennifer is in Salt Lake City, running a successful restaurant she started with her late husband and raising her teenaged son Simon, Meg stayed in their hometown of Hazelwood, helping their parents run the local bakery.",
-    "vote_average": 5.7,
-    "vote_count": 31
+    "title": "Check Inn to Christmas (2019)",
+    "imdb_id": "tt10768312"
   },
   {
-    "title": "Sister Swap: Christmas in the City",
-    "year": 2021,
-    "tmdbId": 866669,
-    "imdbId": "tt6540724",
-    "tmdb_id": 866669,
-    "imdb_id": "tt6540724",
-    "poster": "/images/posters/866669.webp",
-    "overview": "Jennifer and Meg Swift are two sisters who are very close despite living far apart. Jennifer is in Salt Lake City, running a successful restaurant she started with her late husband and raising her teenaged son Simon, Meg stayed in their hometown of Hazelwood, helping their parents run the local bakery.",
-    "vote_average": 6.1,
-    "vote_count": 25
+    "title": "Sister Swap: A Hometown Holiday (2021)",
+    "imdb_id": "tt6540706"
   },
   {
-    "title": "Check Inn to Christmas",
-    "year": 2019,
-    "tmdbId": 630915,
-    "imdbId": "tt10768312",
-    "tmdb_id": 630915,
-    "imdb_id": "tt10768312",
-    "poster": "/images/posters/630915.webp",
-    "overview": "Julia Crawley and Ryan Mason must unite their families during Crestridge's Centennial Christmas celebration in order to save their family inns from a chain resort.",
-    "vote_average": 6.689,
-    "vote_count": 45
+    "title": "Sister Swap: Christmas in the City (2021)",
+    "imdb_id": "tt6540724"
   },
   {
-    "title": "My Christmas Love",
-    "year": 2016,
-    "tmdbId": 421625,
-    "imdbId": "tt6104760",
-    "tmdb_id": 421625,
-    "imdb_id": "tt6104760",
-    "poster": "/images/posters/421625.webp",
-    "overview": "A hopeless romantic who can’t ever seem to give a guy a real chance begins receiving each of the \"12 Days of Christmas” as gifts anonymously at her door. As she tries to figure out who is sending the gifts, she begins to believe that the mystery suitor could finally live up to her expectations.",
-    "vote_average": 6.208,
-    "vote_count": 77
+    "title": "A Cozy Christmas Inn (2022)",
+    "imdb_id": "tt19394150"
   }
 ]

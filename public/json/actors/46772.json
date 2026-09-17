@@ -1,26 +1,10 @@
 [
   {
-    "title": "Good Morning Christmas!",
-    "year": 2020,
-    "tmdbId": 746043,
-    "imdbId": "tt13109730",
-    "tmdb_id": 746043,
-    "imdb_id": "tt13109730",
-    "poster": "/images/posters/746043.webp",
-    "overview": "Two competing TV hosts are sent to a festive small town over Christmas. While pretending to get along for the sake of appearances, they discover that there’s more to each other than they thought.",
-    "vote_average": 6.302,
-    "vote_count": 48
+    "title": "Miss Christmas (2017)",
+    "imdb_id": "tt7588798"
   },
   {
-    "title": "Miss Christmas",
-    "year": 2017,
-    "tmdbId": 474974,
-    "imdbId": "tt7588798",
-    "tmdb_id": 474974,
-    "imdb_id": "tt7588798",
-    "poster": "/images/posters/474974.webp",
-    "overview": "Holly Khun, known to Chicago as “Miss Christmas,” always finds a beautiful tree for the plaza, but this year’s was damaged, and the lighting ceremony is in 10 days. Hoping for a miracle, she combs through fan mail, and finds Joey McNary of Klaus, Wisconsin, has the perfect tree. Off she goes to Klaus, where she meets Joey’s handsome dad Sam.",
-    "vote_average": 6.226,
-    "vote_count": 82
+    "title": "Good Morning Christmas! (2020)",
+    "imdb_id": "tt13109730"
   }
 ]

@@ -9,6 +9,7 @@ import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { enrichCastData } from './scripts/enrich-cast.js';
+import { generateRadarrFeeds } from './scripts/generate-radarr-feeds.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -125,7 +126,7 @@ export function saveMoviesAndSync(movies) {
 
   // 6. Automatically regenerate cast.json whenever movie collection changes
   const castData = regenerateCastJson();
-  generateActorJsonFeeds(sorted, castData);
+  generateRadarrFeeds(sorted, castData);
 
   return {
     count: sorted.length,
@@ -361,7 +362,7 @@ export function saveCastData(castData) {
   if (fs.existsSync(distDir)) {
     fs.writeFileSync(DIST_CAST_JSON_PATH, content, 'utf8');
   }
-  generateActorJsonFeeds(getMovies(), castData);
+  generateRadarrFeeds(getMovies(), castData);
   return castData;
 }
 

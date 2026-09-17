@@ -75,15 +75,15 @@
           </div>
           <h1 id="radarr-heading" class="radarr-heading">Add XmasDB.com to Radarr</h1>
         </div>
-        <p class="radarr-intro-text">
-           Follow these steps to add Hallmark Christmas movie feeds to Radarr. Choose the complete collection, an individual year, or use an actor-specific feed from that actor's page.
+         <p class="radarr-intro-text">
+            XmasDB lists can be added directly to Radarr so movies from the collection can be automatically added to your library.
         </p>
       </section>
 
       <!-- URL Generator Card -->
       <section class="radarr-card url-generator-card" aria-labelledby="url-generator-title">
-        <h2 id="url-generator-title" class="card-subtitle">Choose Your Feed</h2>
-         <p class="card-helper-text">Select whether you want every movie or a single specific release year. Actor-specific feeds are available from the relevant actor page.</p>
+         <h2 id="url-generator-title" class="card-subtitle">AVAILABLE LISTS</h2>
+          <p class="card-helper-text">XmasDB Radarr feeds use a StevenLu-compatible JSON format containing movie identifiers suitable for Radarr.</p>
 
         <!-- Feed Choice Buttons -->
         <div id="radarr-feed-choices" class="feed-choice-buttons" role="toolbar" aria-label="Select collection or year">
@@ -132,20 +132,21 @@
         </div>
         <div class="info-callout-body">
           <div class="info-rule">
-            <p class="info-question">"Want every Hallmark Christmas movie?"</p>
-            <p class="info-answer">Select <strong>FULL COLLECTION</strong> and use <code>/movies.json</code>.</p>
+            <p class="info-question"><strong>FULL COLLECTION</strong></p>
+            <p class="info-answer">Adds and monitors movies from the complete curated XmasDB Hallmark Christmas collection. Select <strong>FULL COLLECTION</strong> and use <code>/json/all.json</code>.</p>
           </div>
           <div class="info-rule">
-            <p class="info-question">"Only want movies from a particular year?"</p>
-            <p class="info-answer">Select that year and use its individual JSON list (e.g. <code>/json/2025.json</code>).</p>
+            <p class="info-question"><strong>YEAR LISTS</strong></p>
+            <p class="info-answer">Follow only movies from a particular year by selecting that year and using its JSON list, for example <code>/json/2025.json</code>.</p>
           </div>
           <div class="info-rule">
-            <p class="info-question">"Want movies featuring a particular actor?"</p>
-            <p class="info-answer">Use the actor-specific JSON list shown on that actor's page. It contains only matching movies from this collection.</p>
+            <p class="info-question"><strong>ACTOR LISTS</strong></p>
+            <p class="info-answer">Actor-specific Radarr feeds are available from individual actor pages. They contain only movies featuring that actor from the curated XmasDB collection, not the actor's complete filmography.</p>
           </div>
 
           <div class="info-breakdown">
-            <p><strong>FULL COLLECTION</strong> = every movie in the catalogue</p>
+            <p><strong>FULL COLLECTION</strong> = every movie in the curated collection</p>
+            <p><strong>YEAR LISTS</strong> = only movies from the selected year</p>
             <p><strong>ACTOR LISTS</strong> = only collection movies featuring that actor</p>
             <div id="dynamic-year-breakdown" class="year-breakdown-list">
               <!-- Dynamically populated year explanations -->
@@ -166,93 +167,81 @@
 
       <!-- Numbered Radarr Tutorial Steps -->
       <section class="tutorial-section" aria-labelledby="tutorial-heading">
-        <h2 id="tutorial-heading" class="tutorial-heading">Step-by-Step Radarr Setup Guide</h2>
+        <h2 id="tutorial-heading" class="tutorial-heading">RADARR SETUP</h2>
+        <div class="info-notice radarr-type-warning">
+          <span class="notice-badge">Important</span>
+          <p><strong>Use StevenLu Custom in Radarr &mdash; NOT Custom Lists.</strong></p>
+        </div>
         <ol class="steps-list">
           <!-- Step 1 -->
           <li class="step-card">
             <div class="step-badge" aria-hidden="true">1</div>
             <div class="step-content">
               <h3 class="step-title">Open Radarr</h3>
-              <p class="step-desc">Launch and open your Radarr web interface in your browser.</p>
+              <p class="step-desc">Open your Radarr web interface.</p>
             </div>
           </li>
 
           <!-- Step 2 -->
           <li class="step-card">
-            <div class="step-badge" aria-hidden="true">2</div>
+              <div class="step-badge" aria-hidden="true">2</div>
             <div class="step-content">
-              <h3 class="step-title">Navigate to Import Lists</h3>
-              <p class="step-desc">In the left navigation menu, go to: <strong>Settings</strong> &rarr; <strong>Import Lists</strong>.</p>
+              <h3 class="step-title">Go to Import Lists</h3>
+              <p class="step-desc">Go to: <strong>Settings</strong> &rarr; <strong>Import Lists</strong>.</p>
             </div>
           </li>
 
           <!-- Step 3 -->
           <li class="step-card">
-            <div class="step-badge" aria-hidden="true">3</div>
+              <div class="step-badge" aria-hidden="true">3</div>
             <div class="step-content">
-              <h3 class="step-title">Add a New List</h3>
-              <p class="step-desc">Click the large <strong>+</strong> (Plus) button to open the list selector modal.</p>
+              <h3 class="step-title">Add an Import List</h3>
+              <p class="step-desc">Click <strong>+ Add Import List</strong>.</p>
             </div>
           </li>
 
           <!-- Step 4 -->
           <li class="step-card">
-            <div class="step-badge" aria-hidden="true">4</div>
+              <div class="step-badge" aria-hidden="true">4</div>
             <div class="step-content">
-              <h3 class="step-title">Select Custom List Type</h3>
-              <p class="step-desc">
-                Select the appropriate custom list type that supports a StevenLu-compatible JSON list (typically labeled <strong>Custom List</strong> or <strong>StevenLu Custom List</strong> in current Radarr releases).
-              </p>
+              <h3 class="step-title">Choose StevenLu Custom</h3>
+              <p class="step-desc">Under <strong>Advanced List</strong>, select <strong>StevenLu Custom</strong>. Do <strong>NOT</strong> choose <strong>Custom Lists</strong>.</p>
             </div>
           </li>
 
           <!-- Step 5 -->
           <li class="step-card">
-            <div class="step-badge" aria-hidden="true">5</div>
+              <div class="step-badge" aria-hidden="true">5</div>
             <div class="step-content">
               <h3 class="step-title">Name Your List</h3>
-              <p class="step-desc">
-                Give the list a clear, recognizable name, for example: <code>XmasDB.com</code> (or <code>XmasDB.com 2025</code> if using a specific year).
-              </p>
+              <p class="step-desc">Give the list a name, for example: <code>XmasDB &ndash; Hallmark Christmas Movies</code>.</p>
             </div>
           </li>
 
           <!-- Step 6 -->
           <li class="step-card">
-            <div class="step-badge" aria-hidden="true">6</div>
+              <div class="step-badge" aria-hidden="true">6</div>
             <div class="step-content">
-              <h3 class="step-title">Paste the List URL</h3>
-              <p class="step-desc">
-                Paste the copied XmasDB.com JSON URL into the <strong>List URL</strong> field.
-              </p>
+              <h3 class="step-title">Configure Your Preferences</h3>
+              <p class="step-desc">Select your preferred <strong>Quality Profile</strong>, <strong>Root Folder</strong>, <strong>Monitor</strong> setting, and <strong>Minimum Availability</strong>.</p>
             </div>
           </li>
 
           <!-- Step 7 -->
           <li class="step-card">
-            <div class="step-badge" aria-hidden="true">7</div>
+              <div class="step-badge" aria-hidden="true">7</div>
             <div class="step-content">
-              <h3 class="step-title">Configure Your Preferred Radarr Options</h3>
-              <p class="step-desc">
-                Configure your import settings according to your media server setup. Users should choose their own preferred Radarr settings rather than hard-coding them:
-              </p>
-              <ul class="step-sublist">
-                <li><strong>Quality Profile:</strong> Select your desired release resolution (e.g. Any, 1080p, 720p).</li>
-                <li><strong>Root Folder:</strong> Select your target movies directory or holiday library folder.</li>
-                <li><strong>Monitor:</strong> Choose how Radarr should monitor newly imported movies (e.g. Movie Only, None).</li>
-                <li><strong>Tags:</strong> Optionally add a tag like <code>hallmark</code> or <code>christmas</code> for easy organization.</li>
-              </ul>
+              <h3 class="step-title">Paste the Feed URL</h3>
+              <p class="step-desc">Paste the chosen XmasDB JSON URL into <strong>List URL</strong>.</p>
             </div>
           </li>
 
           <!-- Step 8 -->
           <li class="step-card">
-            <div class="step-badge" aria-hidden="true">8</div>
+              <div class="step-badge" aria-hidden="true">8</div>
             <div class="step-content">
-              <h3 class="step-title">Test the Connection</h3>
-              <p class="step-desc">
-                Click the <strong>Test</strong> button. Radarr will fetch the JSON feed and confirm valid communication with a green checkmark.
-              </p>
+              <h3 class="step-title">Test the List</h3>
+              <p class="step-desc">Click <strong>Test</strong>. Radarr should report that movies were returned.</p>
             </div>
           </li>
 
@@ -260,23 +249,11 @@
           <li class="step-card">
             <div class="step-badge" aria-hidden="true">9</div>
             <div class="step-content">
-              <h3 class="step-title">Save the List</h3>
-              <p class="step-desc">
-                Click <strong>Save</strong> to store the new import list configuration.
-              </p>
+              <h3 class="step-title">Enable and Save</h3>
+              <p class="step-desc">Enable the list and click <strong>Save</strong>. Optionally enable <strong>Search on Add</strong> if you want Radarr to immediately search for newly added movies.</p>
             </div>
           </li>
 
-          <!-- Step 10 -->
-          <li class="step-card">
-            <div class="step-badge" aria-hidden="true">10</div>
-            <div class="step-content">
-              <h3 class="step-title">Radarr Syncs Automatically</h3>
-              <p class="step-desc">
-                Radarr can then import movies from the selected Hallmark Christmas list according to your configured Import List schedule and settings.
-              </p>
-            </div>
-          </li>
         </ol>
       </section>
     </div>

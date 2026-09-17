@@ -1,26 +1,10 @@
 [
   {
-    "title": "Christmas Wishes & Mistletoe Kisses",
-    "year": 2019,
-    "tmdbId": 604553,
-    "imdbId": "tt10136898",
-    "tmdb_id": 604553,
-    "imdb_id": "tt10136898",
-    "poster": "/images/posters/604553.webp",
-    "overview": "Single mom Abbey takes a leap of faith to pursue her passion for interior design. When she gets hired to decorate the estate of local businessman Nick, Abbey must complete the job by Christmas Eve. With the holidays fast approaching, Abbey must figure out how to break down the wall between her and Nick, as this could be the opportunity that jump-starts her career.",
-    "vote_average": 6.4,
-    "vote_count": 61
+    "title": "12 Gifts of Christmas (2015)",
+    "imdb_id": "tt5133810"
   },
   {
-    "title": "12 Gifts of Christmas",
-    "year": 2015,
-    "tmdbId": 363483,
-    "imdbId": "tt5133810",
-    "tmdb_id": 363483,
-    "imdb_id": "tt5133810",
-    "poster": "/images/posters/363483.webp",
-    "overview": "When Anna Parisi, an unemployed fine arts painter, is unable to make ends meet, she is hired to become a personal Christmas shopper for Marc, an uptight corporate exec.  As they begin working together, Marc learns that Christmas giving has less to do with the amount of money spent and more to do with the importance of the gift, while Anna discovers she might find success as an artist in a way she never expected.  The best gift of all of course is the love they discover with one another.",
-    "vote_average": 6.039,
-    "vote_count": 246
+    "title": "Christmas Wishes & Mistletoe Kisses (2019)",
+    "imdb_id": "tt10136898"
   }
 ]

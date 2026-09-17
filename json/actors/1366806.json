@@ -1,26 +1,10 @@
 [
   {
-    "title": "Holiday Road",
-    "year": 2023,
-    "tmdbId": 1180791,
-    "imdbId": "tt29233535",
-    "tmdb_id": 1180791,
-    "imdb_id": "tt29233535",
-    "poster": "/images/posters/1180791.webp",
-    "overview": "A travel writer, a tech entrepreneur, a devoted mother and more strangers are stranded at the airport for the holidays, they rent a van for an unexpected road trip.",
-    "vote_average": 7.2,
-    "vote_count": 23
+    "title": "Making Spirits Bright (2021)",
+    "imdb_id": "tt15102772"
   },
   {
-    "title": "Making Spirits Bright",
-    "year": 2021,
-    "tmdbId": 874140,
-    "imdbId": "tt15102772",
-    "tmdb_id": 874140,
-    "imdb_id": "tt15102772",
-    "poster": "/images/posters/874140.webp",
-    "overview": "Grace and Tony are from two separate families who are in the business of decorating homes for Christmas. Unfortunately they have also been in feud for as long as anyone can remember. But this holiday season they must try to find a way to get everyone to work together in order to win a town competition that could save their livelihoods.",
-    "vote_average": 6.3,
-    "vote_count": 17
+    "title": "Holiday Road (2023)",
+    "imdb_id": "tt29233535"
   }
 ]

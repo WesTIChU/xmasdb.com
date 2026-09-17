@@ -1,38 +1,14 @@
 [
   {
-    "title": "Three Wisest Men",
-    "year": 2025,
-    "tmdbId": 1537084,
-    "imdbId": "tt38353919",
-    "tmdb_id": 1537084,
-    "imdb_id": "tt38353919",
-    "poster": "/images/posters/1537084.webp",
-    "overview": "Luke is expecting twins, Taylor is debating a life-changing job, and Stephan is planning a wedding — all while their mom is planning to put the family home up for sale.",
-    "vote_average": 7.308,
-    "vote_count": 13
+    "title": "Three Wise Men and a Baby (2022)",
+    "imdb_id": "tt22247482"
   },
   {
-    "title": "Three Wiser Men and a Boy",
-    "year": 2024,
-    "tmdbId": 1293279,
-    "imdbId": "tt32306650",
-    "tmdb_id": 1293279,
-    "imdb_id": "tt32306650",
-    "poster": "/images/posters/1293279.webp",
-    "overview": "Five years after the events of the first film, Christmas is once again just around the corner. In a crazy turn of events, possibly brought on accidently by the brothers themselves, the director of Luke’s son Thomas’ school holiday musical steps down. Luke, desperate to make his son’s stage dreams come true, enlists the help of his brothers Taylor and Stephan. The trio also find themselves meeting their mother's new boyfriend and the brothers grapple with their own feelings about this relationship. In true Brenner brother fashion, they are all in for a Christmas they will never forget.",
-    "vote_average": 7.071,
-    "vote_count": 22
+    "title": "Three Wiser Men and a Boy (2024)",
+    "imdb_id": "tt32306650"
   },
   {
-    "title": "Three Wise Men and a Baby",
-    "year": 2022,
-    "tmdbId": 1028541,
-    "imdbId": "tt22247482",
-    "tmdb_id": 1028541,
-    "imdb_id": "tt22247482",
-    "poster": "/images/posters/1028541.webp",
-    "overview": "Three brothers get the surprise of their lives when they are forced to work together to care for a baby over the holidays. As they slowly get the hang of things, they find themselves on unexpected journeys of self-discovery and begin to rebuild their relationships as brothers, as well as the damaged romantic and professional relationships in their respective lives…all while rediscovering their love of Christmas.",
-    "vote_average": 7.5,
-    "vote_count": 64
+    "title": "Three Wisest Men (2025)",
+    "imdb_id": "tt38353919"
   }
 ]

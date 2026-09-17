@@ -1,38 +1,14 @@
 [
   {
-    "title": "A Carol for Two",
-    "year": 2024,
-    "tmdbId": 1360779,
-    "imdbId": "tt31438256",
-    "tmdb_id": 1360779,
-    "imdb_id": "tt31438256",
-    "poster": "/images/posters/1360779.webp",
-    "overview": "Violette dreams of Broadway, but lands a singing waitress gig at Fiore's. Her Christmas Eve duet with Alex, who resents her connections, could be her big break. As they rehearse, Alex's cousin Brad, with Alex's secret help, woos Violette. Alex develops feelings too, creating a messy love triangle that jeopardizes their shot at stardom.",
-    "vote_average": 6.2,
-    "vote_count": 9
+    "title": "Christmas by Starlight (2020)",
+    "imdb_id": "tt13206476"
   },
   {
-    "title": "'Tis the Season to be Merry",
-    "year": 2021,
-    "tmdbId": 888500,
-    "imdbId": "tt15739902",
-    "tmdb_id": 888500,
-    "imdb_id": "tt15739902",
-    "poster": "/images/posters/888500.webp",
-    "overview": "Looking for a fresh angle to her book on relationships, Merry heads to snow-covered Vermont. She finds a new perspective and Christmas cheer with charismatic aid worker Chris.",
-    "vote_average": 6.093,
-    "vote_count": 54
+    "title": "'Tis the Season to be Merry (2021)",
+    "imdb_id": "tt15739902"
   },
   {
-    "title": "Christmas by Starlight",
-    "year": 2020,
-    "tmdbId": 746045,
-    "imdbId": "tt13206476",
-    "tmdb_id": 746045,
-    "imdb_id": "tt13206476",
-    "poster": "/images/posters/746045.webp",
-    "overview": "Annie, a lawyer, must help her loved ones this holiday season. Her family’s restaurant, The Starlight Café, is slated for demolition. The heir to the development firm responsible, William, makes her an unlikely proposition: he’ll spare the café if Annie spends the week “appearing” as the legal counsel his father is demanding he hire in the wake of some costly mistakes.",
-    "vote_average": 6.8,
-    "vote_count": 55
+    "title": "A Carol for Two (2024)",
+    "imdb_id": "tt31438256"
   }
 ]

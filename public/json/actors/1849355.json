@@ -1,26 +1,10 @@
 [
   {
-    "title": "'Twas the Date Before Christmas",
-    "year": 2024,
-    "tmdbId": 1359717,
-    "imdbId": "tt33503181",
-    "tmdb_id": 1359717,
-    "imdb_id": "tt33503181",
-    "poster": "/images/posters/1359717.webp",
-    "overview": "To prevent her family from canceling the \"Chamberlain Family Christmas Olympics,\" Jessie lies and says she's inviting a date to the long-standing holiday tradition. She meets Bryan on a dating app, and he agrees to spend the holiday with her and her family. As Jessie and Bryan engage in eccentric activities like the search for the Christmas tree star, gift wrapping contest and snowball fight, they start to develop real feelings for each other. Soon her family begins to catch on to their secret and Bryan suspects she may be hiding the real reason for her unusual Christmas date request. As the celebrations continue, Jessie must work to keep all her stories straight and save her date with Bryan.",
-    "vote_average": 7.026,
-    "vote_count": 19
+    "title": "Undercover Holiday (2022)",
+    "imdb_id": "tt22295902"
   },
   {
-    "title": "Undercover Holiday",
-    "year": 2022,
-    "tmdbId": 1028544,
-    "imdbId": "tt22295902",
-    "tmdb_id": 1028544,
-    "imdb_id": "tt22295902",
-    "poster": "/images/posters/1028544.webp",
-    "overview": "When returning home for the holidays, newly minted pop star Jaylen tells her protective family that Matt is her new beau, when in reality, he’s her overzealous security guard.",
-    "vote_average": 6.167,
-    "vote_count": 15
+    "title": "'Twas the Date Before Christmas (2024)",
+    "imdb_id": "tt33503181"
   }
 ]

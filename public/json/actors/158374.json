@@ -1,62 +1,22 @@
 [
   {
-    "title": "Christmas on Cherry Lane",
-    "year": 2023,
-    "tmdbId": 1180665,
-    "imdbId": "tt28287106",
-    "tmdb_id": 1180665,
-    "imdb_id": "tt28287106",
-    "poster": "/images/posters/1180665.webp",
-    "overview": "Three couples at different parts of life navigate big turning points in their lives over the holidays.",
-    "vote_average": 6.224,
-    "vote_count": 29
+    "title": "Christmas Joy (2018)",
+    "imdb_id": "tt8587650"
   },
   {
-    "title": "Open by Christmas",
-    "year": 2021,
-    "tmdbId": 874161,
-    "imdbId": "tt15758400",
-    "tmdb_id": 874161,
-    "imdb_id": "tt15758400",
-    "poster": "/images/posters/874161.webp",
-    "overview": "When Nicky finds an unopened Christmas card from a high school secret admirer, she and her best friend Simone search to find and thank the anonymous author.",
-    "vote_average": 6.2,
-    "vote_count": 30
+    "title": "Christmas Waltz (2020)",
+    "imdb_id": "tt11585200"
   },
   {
-    "title": "You, Me and the Christmas Trees",
-    "year": 2021,
-    "tmdbId": 877692,
-    "imdbId": "tt15484422",
-    "tmdb_id": 877692,
-    "imdb_id": "tt15484422",
-    "poster": "/images/posters/877692.webp",
-    "overview": "An arborist helps a fourth generation Christmas tree farmer whose evergreens are dying just before the holiday. As she tries to get to the root of the problem before the town tree lighting, they begin to fall in love.",
-    "vote_average": 6.6,
-    "vote_count": 35
+    "title": "Open by Christmas (2021)",
+    "imdb_id": "tt15758400"
   },
   {
-    "title": "Christmas Waltz",
-    "year": 2020,
-    "tmdbId": 733032,
-    "imdbId": "tt11585200",
-    "tmdb_id": 733032,
-    "imdb_id": "tt11585200",
-    "poster": "/images/posters/733032.webp",
-    "overview": "After Avery’s storybook Christmas wedding is canceled unexpectedly, dance instructor Roman helps her rebuild her dreams.",
-    "vote_average": 7,
-    "vote_count": 64
+    "title": "You, Me and the Christmas Trees (2021)",
+    "imdb_id": "tt15484422"
   },
   {
-    "title": "Christmas Joy",
-    "year": 2018,
-    "tmdbId": 535812,
-    "imdbId": "tt8587650",
-    "tmdb_id": 535812,
-    "imdb_id": "tt8587650",
-    "poster": "/images/posters/535812.webp",
-    "overview": "Joy Holbrook, is a corporate market researcher, gunning for a promotion within her firm. Just as her company's CEO is taking notice, Joy finds out her Aunt Ruby has broken her ankle and will be undergoing surgery. Despite the less than opportune timing, Joy makes her way back home to Crystal Falls, NC to be with her Aunt. Stars seem to be aligned as Joy sees her former crush, Ben Andrews, while at the hospital. At first, Joy is focused solely on helping her Aunt heal; even taking over her position as chair of the local Cookie Crawl competition. Eventually, she begins to let Ben in and remembers there's no place like home for the holidays. The pair work together on the Cookie Crawl to make the event a success.",
-    "vote_average": 6.5,
-    "vote_count": 70
+    "title": "Christmas on Cherry Lane (2023)",
+    "imdb_id": "tt28287106"
   }
 ]

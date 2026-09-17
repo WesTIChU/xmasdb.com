@@ -1,26 +1,10 @@
 [
   {
-    "title": "Navigating Christmas",
-    "year": 2023,
-    "tmdbId": 1180814,
-    "imdbId": "tt29499132",
-    "tmdb_id": 1180814,
-    "imdb_id": "tt29499132",
-    "poster": "/images/posters/1180814.webp",
-    "overview": "Recently divorced Melanie brings her son to a remote island for Christmas, where she connects with a lighthouse owner.",
-    "vote_average": 6,
-    "vote_count": 30
+    "title": "Jingle Bell Bride (2020)",
+    "imdb_id": "tt12877642"
   },
   {
-    "title": "Jingle Bell Bride",
-    "year": 2020,
-    "tmdbId": 737763,
-    "imdbId": "tt12877642",
-    "tmdb_id": 737763,
-    "imdb_id": "tt12877642",
-    "poster": "/images/posters/737763.webp",
-    "overview": "Wedding planner Jessica Perez travels to a remote town in Alaska to find a rare flower for a celebrity client and is charmed by the small town during Christmas, as well as the handsome local helping her.",
-    "vote_average": 6.4,
-    "vote_count": 32
+    "title": "Navigating Christmas (2023)",
+    "imdb_id": "tt29499132"
   }
 ]

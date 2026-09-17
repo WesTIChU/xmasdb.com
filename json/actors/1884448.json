@@ -1,38 +1,14 @@
 [
   {
-    "title": "Three Wise Men and a Baby",
-    "year": 2022,
-    "tmdbId": 1028541,
-    "imdbId": "tt22247482",
-    "tmdb_id": 1028541,
-    "imdb_id": "tt22247482",
-    "poster": "/images/posters/1028541.webp",
-    "overview": "Three brothers get the surprise of their lives when they are forced to work together to care for a baby over the holidays. As they slowly get the hang of things, they find themselves on unexpected journeys of self-discovery and begin to rebuild their relationships as brothers, as well as the damaged romantic and professional relationships in their respective lives…all while rediscovering their love of Christmas.",
-    "vote_average": 7.5,
-    "vote_count": 64
+    "title": "Mingle All the Way (2018)",
+    "imdb_id": "tt9033628"
   },
   {
-    "title": "Gingerbread Miracle",
-    "year": 2021,
-    "tmdbId": 874244,
-    "imdbId": "tt15821582",
-    "tmdb_id": 874244,
-    "imdb_id": "tt15821582",
-    "poster": "/images/posters/874244.webp",
-    "overview": "Maya and Alex, old friends from high school, work together over Christmas to sell his uncle’s Mexican bakery famous for its gingerbread cookies that the patrons believe grants wishes.",
-    "vote_average": 6,
-    "vote_count": 30
+    "title": "Gingerbread Miracle (2021)",
+    "imdb_id": "tt15821582"
   },
   {
-    "title": "Mingle All the Way",
-    "year": 2018,
-    "tmdbId": 550022,
-    "imdbId": "tt9033628",
-    "tmdb_id": 550022,
-    "imdb_id": "tt9033628",
-    "poster": "/images/posters/550022.webp",
-    "overview": "Molly is determined to prove to her family that her new networking app—designed to pair busy professionals together for upcoming events, without long-term romance—is a success. When Molly joins Mingle All the Way and is matched with Jeff, they are both horrified to realize they’ve already had not one, but two disastrous previous encounters.",
-    "vote_average": 7.079,
-    "vote_count": 158
+    "title": "Three Wise Men and a Baby (2022)",
+    "imdb_id": "tt22247482"
   }
 ]

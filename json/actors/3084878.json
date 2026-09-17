@@ -1,26 +1,10 @@
 [
   {
-    "title": "Navigating Christmas",
-    "year": 2023,
-    "tmdbId": 1180814,
-    "imdbId": "tt29499132",
-    "tmdb_id": 1180814,
-    "imdb_id": "tt29499132",
-    "poster": "/images/posters/1180814.webp",
-    "overview": "Recently divorced Melanie brings her son to a remote island for Christmas, where she connects with a lighthouse owner.",
-    "vote_average": 6,
-    "vote_count": 30
+    "title": "The Holiday Sitter (2022)",
+    "imdb_id": "tt22296044"
   },
   {
-    "title": "The Holiday Sitter",
-    "year": 2022,
-    "tmdbId": 1027324,
-    "imdbId": "tt22296044",
-    "tmdb_id": 1027324,
-    "imdb_id": "tt22296044",
-    "poster": "/images/posters/1027324.webp",
-    "overview": "Sam is a workaholic bachelor who babysits his niece and nephew before the holidays when his sister and her husband have to go out of town. Completely out of his element, he recruits help from their handsome neighbor Jason and finds himself in an unexpected romance.",
-    "vote_average": 6.659,
-    "vote_count": 44
+    "title": "Navigating Christmas (2023)",
+    "imdb_id": "tt29499132"
   }
 ]

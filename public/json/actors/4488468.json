@@ -1,26 +1,10 @@
 [
   {
-    "title": "Christmas On Call",
-    "year": 2024,
-    "tmdbId": 1361154,
-    "imdbId": "tt33829451",
-    "tmdb_id": 1361154,
-    "imdb_id": "tt33829451",
-    "poster": "/images/posters/1361154.webp",
-    "overview": "The lives of first responders in Philadelphia intersect over the holiday season while juggling work, personal lives, and their dedication to protect and serve their city.",
-    "vote_average": 7.1,
-    "vote_count": 25
+    "title": "Following Yonder Star (2024)",
+    "imdb_id": "tt33903431"
   },
   {
-    "title": "Following Yonder Star",
-    "year": 2024,
-    "tmdbId": 1360794,
-    "imdbId": "tt33903431",
-    "tmdb_id": 1360794,
-    "imdb_id": "tt33903431",
-    "poster": "/images/posters/1360794.webp",
-    "overview": "When a scandal upends a famous TV mother’s life ahead of the holidays, she heads to a luxury Vermont resort for Christmas. Upon arriving, a booking error leads her to a quaint B&B owned by an astronomy teacher.",
-    "vote_average": 5.8,
-    "vote_count": 18
+    "title": "Christmas On Call (2024)",
+    "imdb_id": "tt33829451"
   }
 ]

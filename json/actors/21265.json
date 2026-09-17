@@ -1,26 +1,10 @@
 [
   {
-    "title": "Homegrown Christmas",
-    "year": 2018,
-    "tmdbId": 550030,
-    "imdbId": "tt9032562",
-    "tmdb_id": 550030,
-    "imdb_id": "tt9032562",
-    "poster": "/images/posters/550030.webp",
-    "overview": "After stepping down as CEO of her dream job, Maddie heads home for the holidays to gain perspective. She finds herself running into her old high school sweetheart Carter, and tensions quickly arise. When forced to put together a Christmas dance for the local high school, Carter and Maddie find themselves putting their differences aside and rediscover what made them fall in love all those years ago.",
-    "vote_average": 4.833,
-    "vote_count": 38
+    "title": "A December Bride (2016)",
+    "imdb_id": "tt5739680"
   },
   {
-    "title": "A December Bride",
-    "year": 2016,
-    "tmdbId": 427045,
-    "imdbId": "tt5739680",
-    "tmdb_id": 427045,
-    "imdb_id": "tt5739680",
-    "poster": "/images/posters/427045.webp",
-    "overview": "Aspiring interior designer Layla is dreading the Christmastime wedding of her cousin who’s marrying Layla’s ex-fiancé. Although Seth is the one responsible for introducing the bride and groom, she begrudgingly accepts his offer to be her date as she’s out of options. Seth gets carried away at the reception and announces they’re engaged, forcing a mortified Layla to keep up the pretense.",
-    "vote_average": 7.1,
-    "vote_count": 163
+    "title": "Homegrown Christmas (2018)",
+    "imdb_id": "tt9032562"
   }
 ]

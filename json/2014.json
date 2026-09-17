@@ -1,26 +1,10 @@
 [
   {
-    "title": "Christmas Under Wraps",
-    "year": 2014,
-    "tmdbId": 299584,
-    "imdbId": "tt4180032",
-    "tmdb_id": 299584,
-    "imdb_id": "tt4180032",
-    "poster": "/images/posters/299584.webp",
-    "overview": "When a driven doctor doesn't get the prestigious position she planned for, she unexpectedly finds herself moving to a remote Alaskan town. While she meets the locals and even starts a new romance, she has to learn to let the life she planned for give way to a love she never could have imagined, and finds this festive small town is hiding one big holiday secret.",
-    "vote_average": 5.867,
-    "vote_count": 206
+    "title": "Christmas Under Wraps (2014)",
+    "imdb_id": "tt4180032"
   },
   {
-    "title": "The Nine Lives of Christmas",
-    "year": 2014,
-    "tmdbId": 299576,
-    "imdbId": "tt3889642",
-    "tmdb_id": 299576,
-    "imdb_id": "tt3889642",
-    "poster": "/images/posters/299576.webp",
-    "overview": "With Christmas approaching, a handsome fireman afraid of commitment adopts a stray cat and meets a beautiful veterinary student who challenges his decision to remain a confirmed bachelor.",
-    "vote_average": 6.716,
-    "vote_count": 111
+    "title": "The Nine Lives of Christmas (2014)",
+    "imdb_id": "tt3889642"
   }
 ]

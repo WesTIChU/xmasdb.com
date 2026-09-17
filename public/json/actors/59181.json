@@ -1,38 +1,14 @@
 [
   {
-    "title": "Christmas Above the Clouds",
-    "year": 2025,
-    "tmdbId": 1537081,
-    "imdbId": "tt38183872",
-    "tmdb_id": 1537081,
-    "imdb_id": "tt38183872",
-    "poster": "/images/posters/1537081.webp",
-    "overview": "When a workaholic CEO tries to skip Christmas by flying to Australia, she’s in for the flight of her life. Haunted by her past, present, and future, she’s forced to confront the choices that led to her success yet left her flying solo. With the help of three quirky spirits and a surprise reunion with her ex, she might just rediscover the magic of Christmas—and the love she thought she’d lost.",
-    "vote_average": 7.2,
-    "vote_count": 12
+    "title": "Marry Me at Christmas (2017)",
+    "imdb_id": "tt6791000"
   },
   {
-    "title": "Holiday Hotline",
-    "year": 2023,
-    "tmdbId": 1180811,
-    "imdbId": "tt29499210",
-    "tmdb_id": 1180811,
-    "imdb_id": "tt29499210",
-    "poster": "/images/posters/1180811.webp",
-    "overview": "Upon leaving London and working at a cooking hotline, Abby connects with an anonymous caller — a single dad who Abby unknowingly is also smitten with in real life.",
-    "vote_average": 6.848,
-    "vote_count": 32
+    "title": "Holiday Hotline (2023)",
+    "imdb_id": "tt29499210"
   },
   {
-    "title": "Marry Me at Christmas",
-    "year": 2017,
-    "tmdbId": 474987,
-    "imdbId": "tt6791000",
-    "tmdb_id": 474987,
-    "imdb_id": "tt6791000",
-    "poster": "/images/posters/474987.webp",
-    "overview": "Organizing a Christmas wedding is a true treat for bridal boutique owner Madeline Krug. She loves the challenge of finding the perfect dress for the bride and orchestrating an exquisite event. What Madeline didn’t expect was to be swept off her feet by the bride’s gorgeous brother, movie star, Jonny Blaze. Jonny came to the quirky town of Fool’s Gold to support his sister -- not to fall in love. Yet Madeline is the most extraordinary woman he’s ever met, and she finds the real Jonny even more captivating than her celebrity crush. Will the action star be brave enough to take on the role of a lifetime?",
-    "vote_average": 6.4,
-    "vote_count": 67
+    "title": "Christmas Above the Clouds (2025)",
+    "imdb_id": "tt38183872"
   }
 ]

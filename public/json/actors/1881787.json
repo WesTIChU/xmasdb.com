@@ -1,26 +1,10 @@
 [
   {
-    "title": "A '90s Christmas",
-    "year": 2024,
-    "tmdbId": 1361210,
-    "imdbId": "tt16270280",
-    "tmdb_id": 1361210,
-    "imdb_id": "tt16270280",
-    "poster": "/images/posters/1361210.webp",
-    "overview": "Workaholic lawyer Lucy Clark is celebrating her promotion alone on Christmas Eve when a mysterious rideshare experience transports her back to 1999. Reliving the holiday with her mom, sister and best friend - not to mention her high school crush - Lucy gets a second chance to understand where her relationships went wrong. Will this magical journey help her rewrite her future or leave her destined to be alone?",
-    "vote_average": 6.385,
-    "vote_count": 26
+    "title": "A Nutcracker Christmas (2016)",
+    "imdb_id": "tt6132948"
   },
   {
-    "title": "A Nutcracker Christmas",
-    "year": 2016,
-    "tmdbId": 421623,
-    "imdbId": "tt6132948",
-    "tmdb_id": 421623,
-    "imdb_id": "tt6132948",
-    "poster": "/images/posters/421623.webp",
-    "overview": "When her niece is cast in The Philadelphia Ballet’s production of the Nutcracker, a jaded ex-ballerina is forced to come to terms with the life and love she left behind.",
-    "vote_average": 6.311,
-    "vote_count": 66
+    "title": "A '90s Christmas (2024)",
+    "imdb_id": "tt16270280"
   }
 ]

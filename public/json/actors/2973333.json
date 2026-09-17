@@ -1,26 +1,10 @@
 [
   {
-    "title": "A Royal Montana Christmas",
-    "year": 2025,
-    "tmdbId": 1535223,
-    "imdbId": "tt36364046",
-    "tmdb_id": 1535223,
-    "imdb_id": "tt36364046",
-    "poster": "/images/posters/1535223.webp",
-    "overview": "A princess looking to decompress before the holidays heads to a Montana ranch and meets a charming guide.",
-    "vote_average": 7.636,
-    "vote_count": 11
+    "title": "Christmas on Cherry Lane (2023)",
+    "imdb_id": "tt28287106"
   },
   {
-    "title": "Christmas on Cherry Lane",
-    "year": 2023,
-    "tmdbId": 1180665,
-    "imdbId": "tt28287106",
-    "tmdb_id": 1180665,
-    "imdb_id": "tt28287106",
-    "poster": "/images/posters/1180665.webp",
-    "overview": "Three couples at different parts of life navigate big turning points in their lives over the holidays.",
-    "vote_average": 6.224,
-    "vote_count": 29
+    "title": "A Royal Montana Christmas (2025)",
+    "imdb_id": "tt36364046"
   }
 ]

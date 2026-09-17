@@ -1,26 +1,10 @@
 [
   {
-    "title": "A Christmas Carousel",
-    "year": 2020,
-    "tmdbId": 746061,
-    "imdbId": "tt13273744",
-    "tmdb_id": 746061,
-    "imdb_id": "tt13273744",
-    "poster": "/images/posters/746061.webp",
-    "overview": "When Lila is hired by the Royal Family of Ancadia to repair a carousel, she must work with the Prince to complete it by Christmas.",
-    "vote_average": 6.817,
-    "vote_count": 30
+    "title": "Coming Home for Christmas (2017)",
+    "imdb_id": "tt7038614"
   },
   {
-    "title": "Coming Home for Christmas",
-    "year": 2017,
-    "tmdbId": 474983,
-    "imdbId": "tt7038614",
-    "tmdb_id": 474983,
-    "imdb_id": "tt7038614",
-    "poster": "/images/posters/474983.webp",
-    "overview": "Lizzie Richfield is at a crossroads when she lands a job as house manager for the exquisite Ashford Estate in the Virginia countryside. While planning one final Christmas Eve gala for the Marley family, Lizzie finds herself drawn to Robert—even as Kip pursues her.",
-    "vote_average": 6.6,
-    "vote_count": 63
+    "title": "A Christmas Carousel (2020)",
+    "imdb_id": "tt13273744"
   }
 ]

@@ -1,26 +1,10 @@
 [
   {
-    "title": "Chateau Christmas",
-    "year": 2020,
-    "tmdbId": 737779,
-    "imdbId": "tt13350688",
-    "tmdb_id": 737779,
-    "imdb_id": "tt13350688",
-    "poster": "/images/posters/737779.webp",
-    "overview": "Margot, a world-renowned pianist, returns to Chateau Newhaus to spend the holidays with her family and is reunited with an ex who helps her rediscover her passion for music.",
-    "vote_average": 6.16,
-    "vote_count": 50
+    "title": "Reunited at Christmas (2018)",
+    "imdb_id": "tt9033646"
   },
   {
-    "title": "Reunited at Christmas",
-    "year": 2018,
-    "tmdbId": 550084,
-    "imdbId": "tt9033646",
-    "tmdb_id": 550084,
-    "imdb_id": "tt9033646",
-    "poster": "/images/posters/550084.webp",
-    "overview": "Frazzled and struggling with writer’s block, novelist Samantha, along with her boyfriend, heads home to her late grandmother’s home to spend Christmas. While at home with family, her grandmother’s wise words reveal the true meaning of Christmas with Samantha at a time when she most needs encouragement.",
-    "vote_average": 5.346,
-    "vote_count": 39
+    "title": "Chateau Christmas (2020)",
+    "imdb_id": "tt13350688"
   }
 ]

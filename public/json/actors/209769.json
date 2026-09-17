@@ -1,38 +1,14 @@
 [
   {
-    "title": "A Cheerful Christmas",
-    "year": 2019,
-    "tmdbId": 642333,
-    "imdbId": "tt11241514",
-    "tmdb_id": 642333,
-    "imdb_id": "tt11241514",
-    "poster": "/images/posters/642333.webp",
-    "overview": "Lauren and her best friend Colleen think they have landed their dream job – giving people the best and most magical Christmas ever as their personal ‘Christmas Coaches.’ This holiday season promises to be their biggest ever when they land a royal client, the Anderson family, who has moved from England. When Lauren meets James, the eldest son, he wants nothing to do with planning Christmas as he’s busy negotiating a big acquisition for his father’s company. But Lauren won’t be thwarted in helping this royal family embrace the true spirit of Christmas. The more she prods James about their family holiday traditions the more he opens up. Sparks start to fly but she faces competition in the form of an old childhood friend and business colleague of James. Now Lauren must win his heart while giving the Andersons their best Christmas ever.",
-    "vote_average": 5.6,
-    "vote_count": 24
+    "title": "Christmas at Grand Valley (2018)",
+    "imdb_id": "tt9028784"
   },
   {
-    "title": "Double Holiday",
-    "year": 2019,
-    "tmdbId": 630913,
-    "imdbId": "tt10768328",
-    "tmdb_id": 630913,
-    "imdb_id": "tt10768328",
-    "poster": "/images/posters/630913.webp",
-    "overview": "Rebecca must throw the company holiday party with office rival, Chris. It coincides with Hanukkah, so she must juggle her work, family traditions, and nemesis to make the party a success.",
-    "vote_average": 7,
-    "vote_count": 41
+    "title": "Double Holiday (2019)",
+    "imdb_id": "tt10768328"
   },
   {
-    "title": "Christmas at Grand Valley",
-    "year": 2018,
-    "tmdbId": 550024,
-    "imdbId": "tt9028784",
-    "tmdb_id": 550024,
-    "imdb_id": "tt9028784",
-    "poster": "/images/posters/550024.webp",
-    "overview": "Burned out from the hubbub of the Chicago gallery world, artist Kelly returns home to the picturesque Grand Valley just in time for Christmas. Leo, businessman and all-star dad to his children, struggles to balance his time this holiday season. When he is assigned to review a hotel in Grand Valley for its value, he sees this as the perfect opportunity for a Christmas family vacation. It isn’t long until Kelly and Leo’s worlds collide.",
-    "vote_average": 6.4,
-    "vote_count": 60
+    "title": "A Cheerful Christmas (2019)",
+    "imdb_id": "tt11241514"
   }
 ]

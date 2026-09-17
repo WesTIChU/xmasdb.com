@@ -1,38 +1,14 @@
 [
   {
-    "title": "Jingle Around the Clock",
-    "year": 2018,
-    "tmdbId": 551701,
-    "imdbId": "tt9168384",
-    "tmdb_id": 551701,
-    "imdb_id": "tt9168384",
-    "poster": "/images/posters/551701.webp",
-    "overview": "Elle decides to reunite her college friends for Christmas, but her plans are thwarted by an opportunity at work to spearhead a Christmas campaign relaunch. She's forced to team up with ad campaign \"fixer\" Max, who has a completely different take on the holidays. As the two work together, they find themselves falling for each other. With the help of a little Christmas magic, will Elle pull off the perfect Christmas reunion and find the love she’s been searching for?",
-    "vote_average": 6.75,
-    "vote_count": 46
+    "title": "On the Twelfth Day of Christmas (2015)",
+    "imdb_id": "tt5210078"
   },
   {
-    "title": "Journey Back to Christmas",
-    "year": 2016,
-    "tmdbId": 421758,
-    "imdbId": "tt6269192",
-    "tmdb_id": 421758,
-    "imdb_id": "tt6269192",
-    "poster": "/images/posters/421758.webp",
-    "overview": "WWII has ended and Hanna is still grieving over her husband's disappearance. When the Christmas Comet appears for the first time in 70 years, Hanna is caught in a terrible storm and knocked unconscious. When she wakes up, she's in 2016.",
-    "vote_average": 6.5,
-    "vote_count": 95
+    "title": "Journey Back to Christmas (2016)",
+    "imdb_id": "tt6269192"
   },
   {
-    "title": "On the Twelfth Day of Christmas",
-    "year": 2015,
-    "tmdbId": 366631,
-    "imdbId": "tt5210078",
-    "tmdb_id": 366631,
-    "imdb_id": "tt5210078",
-    "poster": "/images/posters/366631.webp",
-    "overview": "Maggie Chalke is torn between her journalistic integrity and helping her long time crush Mitch O'Grady when her boss orders her to write a story for the paper about the Secret Santa gifts she's been sending Mitch to help him relearn his love for Christmas.",
-    "vote_average": 6.4,
-    "vote_count": 64
+    "title": "Jingle Around the Clock (2018)",
+    "imdb_id": "tt9168384"
   }
 ]

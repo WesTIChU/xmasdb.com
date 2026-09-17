@@ -1,26 +1,10 @@
 [
   {
-    "title": "A Tale of Two Christmases",
-    "year": 2022,
-    "tmdbId": 1028546,
-    "imdbId": "tt22247650",
-    "tmdb_id": 1028546,
-    "imdb_id": "tt22247650",
-    "poster": "/images/posters/1028546.webp",
-    "overview": "Thanks to some Christmas magic, Emma gets to experience two different Christmases – one where she stays in the city and celebrates with a new crush and his friends, and one where she returns home for all the traditions with her family…and Drew, a longtime friend who may have feelings for her. Emma’s double holiday ultimately helps her discover what will truly make her happy in life as well as in love.",
-    "vote_average": 5.58,
-    "vote_count": 25
+    "title": "A Gift to Remember (2017)",
+    "imdb_id": "tt7006938"
   },
   {
-    "title": "A Gift to Remember",
-    "year": 2017,
-    "tmdbId": 480614,
-    "imdbId": "tt7006938",
-    "tmdb_id": 480614,
-    "imdb_id": "tt7006938",
-    "poster": "/images/posters/480614.webp",
-    "overview": "After colliding with a pedestrian on her bicycle who loses his memory following the accident, Darcy Archer becomes determined to help the handsome guy figure out who he is. In the process, she finds out a lot more about who she is, what she wants from life, and how this too-good-to-be-true guy might just be the man she’s been waiting to bump into all her life.",
-    "vote_average": 6.021,
-    "vote_count": 71
+    "title": "A Tale of Two Christmases (2022)",
+    "imdb_id": "tt22247650"
   }
 ]

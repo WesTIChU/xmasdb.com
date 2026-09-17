@@ -1,26 +1,10 @@
 [
   {
-    "title": "Christmas Class Reunion",
-    "year": 2022,
-    "tmdbId": 1028537,
-    "imdbId": "tt18884832",
-    "tmdb_id": 1028537,
-    "imdb_id": "tt18884832",
-    "poster": "/images/posters/1028537.webp",
-    "overview": "High school classmates, who once dubbed themselves the “cursed class,” reconnect at Christmas for their 15-year reunion. Over the course of their time reconnecting, the classmates challenge each other to remember who they were, who they are, and who they want to be.",
-    "vote_average": 5.739,
-    "vote_count": 24
+    "title": "My Christmas Family Tree (2021)",
+    "imdb_id": "tt15508150"
   },
   {
-    "title": "My Christmas Family Tree",
-    "year": 2021,
-    "tmdbId": 874194,
-    "imdbId": "tt15508150",
-    "tmdb_id": 874194,
-    "imdb_id": "tt15508150",
-    "poster": "/images/posters/874194.webp",
-    "overview": "When Vanessa receives the results from her Family Tree DNA test, she discovers a family she didn't know existed and travels to their home for Christmas.",
-    "vote_average": 7.19,
-    "vote_count": 42
+    "title": "Christmas Class Reunion (2022)",
+    "imdb_id": "tt18884832"
   }
 ]

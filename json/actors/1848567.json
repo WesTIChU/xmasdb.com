@@ -1,38 +1,14 @@
 [
   {
-    "title": "Cross Country Christmas",
-    "year": 2020,
-    "tmdbId": 737780,
-    "imdbId": "tt13040330",
-    "tmdb_id": 737780,
-    "imdb_id": "tt13040330",
-    "poster": "/images/posters/737780.webp",
-    "overview": "Former classmates Lina and Max are traveling home for the holidays, until a storm hits and they have to work together to make it home in time, no matter the mode of transportation.",
-    "vote_average": 6.784,
-    "vote_count": 51
+    "title": "Miss Christmas (2017)",
+    "imdb_id": "tt7588798"
   },
   {
-    "title": "Picture a Perfect Christmas",
-    "year": 2019,
-    "tmdbId": 626323,
-    "imdbId": "tt10553910",
-    "tmdb_id": 626323,
-    "imdb_id": "tt10553910",
-    "poster": "/images/posters/626323.webp",
-    "overview": "An extreme-sports photographer returns home for the holiday to take care of her grandmother, only to have a neighbor grab her attention as he needs assistance watching his young nephew.",
-    "vote_average": 6.17,
-    "vote_count": 47
+    "title": "Picture a Perfect Christmas (2019)",
+    "imdb_id": "tt10553910"
   },
   {
-    "title": "Miss Christmas",
-    "year": 2017,
-    "tmdbId": 474974,
-    "imdbId": "tt7588798",
-    "tmdb_id": 474974,
-    "imdb_id": "tt7588798",
-    "poster": "/images/posters/474974.webp",
-    "overview": "Holly Khun, known to Chicago as “Miss Christmas,” always finds a beautiful tree for the plaza, but this year’s was damaged, and the lighting ceremony is in 10 days. Hoping for a miracle, she combs through fan mail, and finds Joey McNary of Klaus, Wisconsin, has the perfect tree. Off she goes to Klaus, where she meets Joey’s handsome dad Sam.",
-    "vote_average": 6.226,
-    "vote_count": 82
+    "title": "Cross Country Christmas (2020)",
+    "imdb_id": "tt13040330"
   }
 ]

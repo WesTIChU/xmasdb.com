@@ -1,38 +1,14 @@
 [
   {
-    "title": "The Christmas Baby",
-    "year": 2025,
-    "tmdbId": 1547929,
-    "imdbId": "tt36963465",
-    "tmdb_id": 1547929,
-    "imdb_id": "tt36963465",
-    "poster": "/images/posters/1547929.webp",
-    "overview": "When a baby boy shows up on their doorstep days before Christmas with a note written specially for them, Erin and Kelly must learn how to navigate their new relationship and career dynamics while unexpectedly caring for a newborn.",
-    "vote_average": 6.7,
-    "vote_count": 8
+    "title": "Checkin' It Twice (2023)",
+    "imdb_id": "tt29352965"
   },
   {
-    "title": "Santa Tell Me",
-    "year": 2024,
-    "tmdbId": 1325888,
-    "imdbId": "tt33829315",
-    "tmdb_id": 1325888,
-    "imdb_id": "tt33829315",
-    "poster": "/images/posters/1325888.webp",
-    "overview": "When Olivia, a successful interior designer, finds an old letter from Santa promising she’ll meet the love of her life by Christmas Eve — and that his name will be Nick — she’s stunned to meet not one, but three guys named Nick.” In addition to navigating three holiday romances, she finds herself drawn to a co-worker.",
-    "vote_average": 7.155,
-    "vote_count": 30
+    "title": "Santa Tell Me (2024)",
+    "imdb_id": "tt33829315"
   },
   {
-    "title": "Checkin' It Twice",
-    "year": 2023,
-    "tmdbId": 1166012,
-    "imdbId": "tt29352965",
-    "tmdb_id": 1166012,
-    "imdb_id": "tt29352965",
-    "poster": "/images/posters/1166012.webp",
-    "overview": "A journeyman hockey player falls for a real estate agent in a career crisis when he's traded to her hometown and moves into the cottage in her hockey-loving family's backyard.",
-    "vote_average": 6.5,
-    "vote_count": 34
+    "title": "The Christmas Baby (2025)",
+    "imdb_id": "tt36963465"
   }
 ]

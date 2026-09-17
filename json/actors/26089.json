@@ -1,38 +1,14 @@
 [
   {
-    "title": "Confessions of a Christmas Letter",
-    "year": 2024,
-    "tmdbId": 1361141,
-    "imdbId": "tt33401152",
-    "tmdb_id": 1361141,
-    "imdb_id": "tt33401152",
-    "poster": "/images/posters/1361141.webp",
-    "overview": "Settie Rose, an eccentric matriarch, hires struggling novelist Juan to write her holiday contest entry. A mixup sparks gossip of Juan's engagement to Settie's daughter Lily, leading the family to play along humorously.",
-    "vote_average": 5.6,
-    "vote_count": 14
+    "title": "'Tis the Season for Love (2015)",
+    "imdb_id": "tt5056034"
   },
   {
-    "title": "Making Spirits Bright",
-    "year": 2021,
-    "tmdbId": 874140,
-    "imdbId": "tt15102772",
-    "tmdb_id": 874140,
-    "imdb_id": "tt15102772",
-    "poster": "/images/posters/874140.webp",
-    "overview": "Grace and Tony are from two separate families who are in the business of decorating homes for Christmas. Unfortunately they have also been in feud for as long as anyone can remember. But this holiday season they must try to find a way to get everyone to work together in order to win a town competition that could save their livelihoods.",
-    "vote_average": 6.3,
-    "vote_count": 17
+    "title": "Making Spirits Bright (2021)",
+    "imdb_id": "tt15102772"
   },
   {
-    "title": "'Tis the Season for Love",
-    "year": 2015,
-    "tmdbId": 362886,
-    "imdbId": "tt5056034",
-    "tmdb_id": 362886,
-    "imdb_id": "tt5056034",
-    "poster": "/images/posters/362886.webp",
-    "overview": "An out-of-work New York City actress returns home to the quaint small town she escaped 10 years before and finds a place far different than the hamlet she left. She suddenly finds performing possibilities and even romance that kind of blow her away.",
-    "vote_average": 5.787,
-    "vote_count": 61
+    "title": "Confessions of a Christmas Letter (2024)",
+    "imdb_id": "tt33401152"
   }
 ]

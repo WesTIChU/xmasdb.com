@@ -1,14 +1,6 @@
 [
   {
-    "title": "Holiday Date",
-    "year": 2019,
-    "tmdbId": 630924,
-    "imdbId": "tt10768456",
-    "tmdb_id": 630924,
-    "imdb_id": "tt10768456",
-    "poster": "/images/posters/630924.webp",
-    "overview": "When Brooke’s boyfriend, Ethan, breaks up with her just before the holidays, she agrees to go home with Joel, an actor who will pose as her boyfriend.",
-    "vote_average": 6.4,
-    "vote_count": 48
+    "title": "Holiday Date (2019)",
+    "imdb_id": "tt10768456"
   }
 ]

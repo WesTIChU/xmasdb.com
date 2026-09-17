@@ -1,26 +1,10 @@
 [
   {
-    "title": "Private Princess Christmas",
-    "year": 2024,
-    "tmdbId": 1361220,
-    "imdbId": "tt33400340",
-    "tmdb_id": 1361220,
-    "imdb_id": "tt33400340",
-    "poster": "/images/posters/1361220.webp",
-    "overview": "Princess Violet of Wingravia must complete a tough leadership boot camp in Colorado or risk losing her throne to her uncle.",
-    "vote_average": 6.385,
-    "vote_count": 13
+    "title": "Open by Christmas (2021)",
+    "imdb_id": "tt15758400"
   },
   {
-    "title": "Open by Christmas",
-    "year": 2021,
-    "tmdbId": 874161,
-    "imdbId": "tt15758400",
-    "tmdb_id": 874161,
-    "imdb_id": "tt15758400",
-    "poster": "/images/posters/874161.webp",
-    "overview": "When Nicky finds an unopened Christmas card from a high school secret admirer, she and her best friend Simone search to find and thank the anonymous author.",
-    "vote_average": 6.2,
-    "vote_count": 30
+    "title": "Private Princess Christmas (2024)",
+    "imdb_id": "tt33400340"
   }
 ]

@@ -1,50 +1,18 @@
 [
   {
-    "title": "Sister Swap: A Hometown Holiday",
-    "year": 2021,
-    "tmdbId": 866665,
-    "imdbId": "tt6540706",
-    "tmdb_id": 866665,
-    "imdb_id": "tt6540706",
-    "poster": "/images/posters/866665.webp",
-    "overview": "Jennifer and Meg Swift are two sisters who are very close despite living far apart. Jennifer is in Salt Lake City, running a successful restaurant she started with her late husband and raising her teenaged son Simon, Meg stayed in their hometown of Hazelwood, helping their parents run the local bakery.",
-    "vote_average": 5.7,
-    "vote_count": 31
+    "title": "The Christmas Train (2017)",
+    "imdb_id": "tt7370936"
   },
   {
-    "title": "Sister Swap: Christmas in the City",
-    "year": 2021,
-    "tmdbId": 866669,
-    "imdbId": "tt6540724",
-    "tmdb_id": 866669,
-    "imdb_id": "tt6540724",
-    "poster": "/images/posters/866669.webp",
-    "overview": "Jennifer and Meg Swift are two sisters who are very close despite living far apart. Jennifer is in Salt Lake City, running a successful restaurant she started with her late husband and raising her teenaged son Simon, Meg stayed in their hometown of Hazelwood, helping their parents run the local bakery.",
-    "vote_average": 6.1,
-    "vote_count": 25
+    "title": "A Nashville Christmas Carol (2020)",
+    "imdb_id": "tt13341432"
   },
   {
-    "title": "A Nashville Christmas Carol",
-    "year": 2020,
-    "tmdbId": 746041,
-    "imdbId": "tt13341432",
-    "tmdb_id": 746041,
-    "imdb_id": "tt13341432",
-    "poster": "/images/posters/746041.webp",
-    "overview": "A workaholic television producer receives a visit from her recently deceased mentor, who warns her that her current path leads to a dark future.",
-    "vote_average": 6.7,
-    "vote_count": 37
+    "title": "Sister Swap: A Hometown Holiday (2021)",
+    "imdb_id": "tt6540706"
   },
   {
-    "title": "The Christmas Train",
-    "year": 2017,
-    "tmdbId": 474982,
-    "imdbId": "tt7370936",
-    "tmdb_id": 474982,
-    "imdb_id": "tt7370936",
-    "poster": "/images/posters/474982.webp",
-    "overview": "Forced to take the intercontinental trip to Los Angeles by train, and determined to chronicle his adventure, disillusioned journalist Tom Langdon finds himself westbound with a variety of characters. While all passengers on the Christmas train appear to be headed for the same destination, Tom has no idea that the rugged locomotives taking him across America will instead detour straight into his heart.",
-    "vote_average": 6.4,
-    "vote_count": 131
+    "title": "Sister Swap: Christmas in the City (2021)",
+    "imdb_id": "tt6540724"
   }
 ]

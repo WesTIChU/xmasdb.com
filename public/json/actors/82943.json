@@ -1,50 +1,18 @@
 [
   {
-    "title": "Christmas In Evergreen: Tidings of Joy",
-    "year": 2019,
-    "tmdbId": 630921,
-    "imdbId": "tt10925460",
-    "tmdb_id": 630921,
-    "imdb_id": "tt10925460",
-    "poster": "/images/posters/630921.webp",
-    "overview": "A skeptical writer shows up in Evergreen to get the scoop on the town's famed passion for Christmas during a search for a long-lost time capsule.",
-    "vote_average": 6.827,
-    "vote_count": 52
+    "title": "Christmas Cookies (2016)",
+    "imdb_id": "tt5675936"
   },
   {
-    "title": "Christmas Wishes & Mistletoe Kisses",
-    "year": 2019,
-    "tmdbId": 604553,
-    "imdbId": "tt10136898",
-    "tmdb_id": 604553,
-    "imdb_id": "tt10136898",
-    "poster": "/images/posters/604553.webp",
-    "overview": "Single mom Abbey takes a leap of faith to pursue her passion for interior design. When she gets hired to decorate the estate of local businessman Nick, Abbey must complete the job by Christmas Eve. With the holidays fast approaching, Abbey must figure out how to break down the wall between her and Nick, as this could be the opportunity that jump-starts her career.",
-    "vote_average": 6.4,
-    "vote_count": 61
+    "title": "Christmas in Evergreen: Letters to Santa (2018)",
+    "imdb_id": "tt9033634"
   },
   {
-    "title": "Christmas in Evergreen: Letters to Santa",
-    "year": 2018,
-    "tmdbId": 550025,
-    "imdbId": "tt9033634",
-    "tmdb_id": 550025,
-    "imdb_id": "tt9033634",
-    "poster": "/images/posters/550025.webp",
-    "overview": "Lisa's trip home to Evergreen for the holidays finds her shepherding an effort to save the town's beloved general store, fulfilling the wishes of a Christmas past and finding a romance full of Christmas magic.",
-    "vote_average": 6.8,
-    "vote_count": 62
+    "title": "Christmas Wishes & Mistletoe Kisses (2019)",
+    "imdb_id": "tt10136898"
   },
   {
-    "title": "Christmas Cookies",
-    "year": 2016,
-    "tmdbId": 410317,
-    "imdbId": "tt5675936",
-    "tmdb_id": 410317,
-    "imdb_id": "tt5675936",
-    "poster": "/images/posters/410317.webp",
-    "overview": "Aunt Sally's Christmas Cookie Company is sold to a large conglomerate and executive Hannah must seal the deal and shut down the factory, which is the small town of Cookie Jar's lifeblood. What was supposed to be a simple assignment for Hannah becomes complicated when she meets Jake, the factory owner who's determined to keep the factory in town. Despite not being a fan of the holiday, the Christmas spirit in this small town is infectious and she gets swept up in the joy of the season while also falling in love with Jake.",
-    "vote_average": 5.969,
-    "vote_count": 80
+    "title": "Christmas In Evergreen: Tidings of Joy (2019)",
+    "imdb_id": "tt10925460"
   }
 ]

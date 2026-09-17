@@ -1,50 +1,18 @@
 [
   {
-    "title": "A Timeless Christmas",
-    "year": 2020,
-    "tmdbId": 746039,
-    "imdbId": "tt13341414",
-    "tmdb_id": 746039,
-    "imdb_id": "tt13341414",
-    "poster": "/images/posters/746039.webp",
-    "overview": "Charles Whitley travels from 1903 to 2020 where he meets Megan Turner, a tour guide at his historic mansion, and experiences a 21st Century Christmas.",
-    "vote_average": 6.421,
-    "vote_count": 82
+    "title": "A Christmas Detour (2015)",
+    "imdb_id": "tt4767950"
   },
   {
-    "title": "With Love, Christmas",
-    "year": 2017,
-    "tmdbId": 474976,
-    "imdbId": "tt7647000",
-    "tmdb_id": 474976,
-    "imdb_id": "tt7647000",
-    "poster": "/images/posters/474976.webp",
-    "overview": "Advertising execs Melanie Welsh and Donovan Goodwin disagree on a cellphone Christmas commercial they’re pitching. He says his sleek design will win over the client but she knows it lacks holiday spirit.",
-    "vote_average": 6.877,
-    "vote_count": 61
+    "title": "Every Christmas Has a Story (2016)",
+    "imdb_id": "tt6215212"
   },
   {
-    "title": "Every Christmas Has a Story",
-    "year": 2016,
-    "tmdbId": 415959,
-    "imdbId": "tt6215212",
-    "tmdb_id": 415959,
-    "imdb_id": "tt6215212",
-    "poster": "/images/posters/415959.webp",
-    "overview": "A TV personality has an on-air snafu and admits she hates Christmas. Following the debacle, she is invited to the Most Christmas-y town in America to try and repair her image. Forced to work with her ex-boyfriend Jack, the show’s producer, the magic of Christmas and this special town will change the way she views Christmas and her life.",
-    "vote_average": 5.2,
-    "vote_count": 81
+    "title": "With Love, Christmas (2017)",
+    "imdb_id": "tt7647000"
   },
   {
-    "title": "A Christmas Detour",
-    "year": 2015,
-    "tmdbId": 348634,
-    "imdbId": "tt4767950",
-    "tmdb_id": 348634,
-    "imdb_id": "tt4767950",
-    "poster": "/images/posters/348634.webp",
-    "overview": "A bubbly bride-to-be’s Christmas plans take an unexpected turn when her holiday flight to New York is detoured and she encounters a cynical bar manager who has lost his faith in love. As she scrambles to make it back east for Christmas—and plan her upcoming wedding—she begins wondering if she’s marrying the right man, and learns a surprising lesson about love.",
-    "vote_average": 6.057,
-    "vote_count": 106
+    "title": "A Timeless Christmas (2020)",
+    "imdb_id": "tt13341414"
   }
 ]

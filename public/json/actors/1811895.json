@@ -1,26 +1,10 @@
 [
   {
-    "title": "The Christmas Baby",
-    "year": 2025,
-    "tmdbId": 1547929,
-    "imdbId": "tt36963465",
-    "tmdb_id": 1547929,
-    "imdb_id": "tt36963465",
-    "poster": "/images/posters/1547929.webp",
-    "overview": "When a baby boy shows up on their doorstep days before Christmas with a note written specially for them, Erin and Kelly must learn how to navigate their new relationship and career dynamics while unexpectedly caring for a newborn.",
-    "vote_average": 6.7,
-    "vote_count": 8
+    "title": "Our Holiday Story (2024)",
+    "imdb_id": "tt33437460"
   },
   {
-    "title": "Our Holiday Story",
-    "year": 2024,
-    "tmdbId": 1360780,
-    "imdbId": "tt33437460",
-    "tmdb_id": 1360780,
-    "imdb_id": "tt33437460",
-    "poster": "/images/posters/1360780.webp",
-    "overview": "Dave and Nell recount the Christmas where they unknowingly fell in love while working as rivals on a town festival, as their daughter’s boyfriend struggles to navigate his own relationship.",
-    "vote_average": 6,
-    "vote_count": 30
+    "title": "The Christmas Baby (2025)",
+    "imdb_id": "tt36963465"
   }
 ]

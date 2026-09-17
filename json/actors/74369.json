@@ -1,26 +1,10 @@
 [
   {
-    "title": "A Make or Break Holiday",
-    "year": 2025,
-    "tmdbId": 1547927,
-    "imdbId": "tt38354998",
-    "tmdb_id": 1547927,
-    "imdb_id": "tt38354998",
-    "poster": "/images/posters/1547927.webp",
-    "overview": "Despite recently going on a break, couple Liv and Daniel had planned to host their families together for Christmas. So, they decide to keep their original plans and pretend to still be together for the holidays.",
-    "vote_average": 7.667,
-    "vote_count": 12
+    "title": "The Christmas Cottage (2017)",
+    "imdb_id": "tt5997848"
   },
   {
-    "title": "The Christmas Cottage",
-    "year": 2017,
-    "tmdbId": 480626,
-    "imdbId": "tt5997848",
-    "tmdb_id": 480626,
-    "imdb_id": "tt5997848",
-    "poster": "/images/posters/480626.webp",
-    "overview": "When Lacey takes a rare break from work for her friend Ava's Christmas Eve wedding, she reconnects with her former flame, Ean. The two decorate the cottage where the newlyweds will spend their honeymoon – a cottage said to bring true love to anyone who stays there – and feel their chemistry return.",
-    "vote_average": 6.221,
-    "vote_count": 61
+    "title": "A Make or Break Holiday (2025)",
+    "imdb_id": "tt38354998"
   }
 ]

@@ -1,50 +1,18 @@
 [
   {
-    "title": "Single on the 25th",
-    "year": 2025,
-    "tmdbId": 1545997,
-    "imdbId": "tt38347292",
-    "tmdb_id": 1545997,
-    "imdb_id": "tt38347292",
-    "poster": "/images/posters/1545997.webp",
-    "overview": "After Nell’s family cancels holiday plans at the last minute, she decides to spend the week of Christmas having fun on her own — and crosses paths with her neighbor, who is “happily unattached.”",
-    "vote_average": 7.7,
-    "vote_count": 10
+    "title": "A December Bride (2016)",
+    "imdb_id": "tt5739680"
   },
   {
-    "title": "Santa Tell Me",
-    "year": 2024,
-    "tmdbId": 1325888,
-    "imdbId": "tt33829315",
-    "tmdb_id": 1325888,
-    "imdb_id": "tt33829315",
-    "poster": "/images/posters/1325888.webp",
-    "overview": "When Olivia, a successful interior designer, finds an old letter from Santa promising she’ll meet the love of her life by Christmas Eve — and that his name will be Nick — she’s stunned to meet not one, but three guys named Nick.” In addition to navigating three holiday romances, she finds herself drawn to a co-worker.",
-    "vote_average": 7.155,
-    "vote_count": 30
+    "title": "Christmas in Love (2018)",
+    "imdb_id": "tt9033712"
   },
   {
-    "title": "Christmas in Love",
-    "year": 2018,
-    "tmdbId": 550020,
-    "imdbId": "tt9033712",
-    "tmdb_id": 550020,
-    "imdb_id": "tt9033712",
-    "poster": "/images/posters/550020.webp",
-    "overview": "Ellie Hartman is an aspiring crafter working in her small town’s bakery making famous Christmas Kringles. When the new, big-city CEO Nick Carlingson visits the bakery, he arrives filled with modernization ideas destined to lay off many employees.",
-    "vote_average": 5.985,
-    "vote_count": 67
+    "title": "Santa Tell Me (2024)",
+    "imdb_id": "tt33829315"
   },
   {
-    "title": "A December Bride",
-    "year": 2016,
-    "tmdbId": 427045,
-    "imdbId": "tt5739680",
-    "tmdb_id": 427045,
-    "imdb_id": "tt5739680",
-    "poster": "/images/posters/427045.webp",
-    "overview": "Aspiring interior designer Layla is dreading the Christmastime wedding of her cousin who’s marrying Layla’s ex-fiancé. Although Seth is the one responsible for introducing the bride and groom, she begrudgingly accepts his offer to be her date as she’s out of options. Seth gets carried away at the reception and announces they’re engaged, forcing a mortified Layla to keep up the pretense.",
-    "vote_average": 7.1,
-    "vote_count": 163
+    "title": "Single on the 25th (2025)",
+    "imdb_id": "tt38347292"
   }
 ]

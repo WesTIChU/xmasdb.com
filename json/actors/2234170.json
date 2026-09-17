@@ -1,38 +1,14 @@
 [
   {
-    "title": "Holiday Road",
-    "year": 2023,
-    "tmdbId": 1180791,
-    "imdbId": "tt29233535",
-    "tmdb_id": 1180791,
-    "imdb_id": "tt29233535",
-    "poster": "/images/posters/1180791.webp",
-    "overview": "A travel writer, a tech entrepreneur, a devoted mother and more strangers are stranded at the airport for the holidays, they rent a van for an unexpected road trip.",
-    "vote_average": 7.2,
-    "vote_count": 23
+    "title": "My Christmas Family Tree (2021)",
+    "imdb_id": "tt15508150"
   },
   {
-    "title": "In Merry Measure",
-    "year": 2022,
-    "tmdbId": 1028180,
-    "imdbId": "tt22246626",
-    "tmdb_id": 1028180,
-    "imdb_id": "tt22246626",
-    "poster": "/images/posters/1028180.webp",
-    "overview": "When pop star Darcy returns home to spend Christmas with her sister and niece, she unexpectedly finds herself coaching the high school choir with her onetime rival, Adam.",
-    "vote_average": 6.7,
-    "vote_count": 15
+    "title": "In Merry Measure (2022)",
+    "imdb_id": "tt22246626"
   },
   {
-    "title": "My Christmas Family Tree",
-    "year": 2021,
-    "tmdbId": 874194,
-    "imdbId": "tt15508150",
-    "tmdb_id": 874194,
-    "imdb_id": "tt15508150",
-    "poster": "/images/posters/874194.webp",
-    "overview": "When Vanessa receives the results from her Family Tree DNA test, she discovers a family she didn't know existed and travels to their home for Christmas.",
-    "vote_average": 7.19,
-    "vote_count": 42
+    "title": "Holiday Road (2023)",
+    "imdb_id": "tt29233535"
   }
 ]

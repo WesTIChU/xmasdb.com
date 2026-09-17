@@ -1,26 +1,10 @@
 [
   {
-    "title": "Christmas She Wrote",
-    "year": 2020,
-    "tmdbId": 746048,
-    "imdbId": "tt13097858",
-    "tmdb_id": 746048,
-    "imdb_id": "tt13097858",
-    "poster": "/images/posters/746048.webp",
-    "overview": "When Kayleigh, a romance writer, has her column cancelled right before Christmas, she heads home to reconnect with her family. Kayleigh gets an unexpected visit from the man who cancelled her column who fights not only to bring her back to the publisher but also for her heart.",
-    "vote_average": 6.1,
-    "vote_count": 34
+    "title": "Christmas in Evergreen (2017)",
+    "imdb_id": "tt7440948"
   },
   {
-    "title": "Christmas in Evergreen",
-    "year": 2017,
-    "tmdbId": 474977,
-    "imdbId": "tt7440948",
-    "tmdb_id": 474977,
-    "imdb_id": "tt7440948",
-    "poster": "/images/posters/474977.webp",
-    "overview": "Allie, a veterinarian in Evergreen, reluctantly will spend Christmas with her long-distance boyfriend. Bound for the airport, she has engine trouble, and Ryan, headed to Florida with his daughter Zoe, stops to help. Sure they won’t meet again, they ignore their attraction, and part ways. At the diner, Zoe wishes on a snow globe, and a storm seems to grant her wish.",
-    "vote_average": 6.4,
-    "vote_count": 111
+    "title": "Christmas She Wrote (2020)",
+    "imdb_id": "tt13097858"
   }
 ]

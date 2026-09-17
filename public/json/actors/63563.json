@@ -1,26 +1,10 @@
 [
   {
-    "title": "Reunited at Christmas",
-    "year": 2018,
-    "tmdbId": 550084,
-    "imdbId": "tt9033646",
-    "tmdb_id": 550084,
-    "imdb_id": "tt9033646",
-    "poster": "/images/posters/550084.webp",
-    "overview": "Frazzled and struggling with writer’s block, novelist Samantha, along with her boyfriend, heads home to her late grandmother’s home to spend Christmas. While at home with family, her grandmother’s wise words reveal the true meaning of Christmas with Samantha at a time when she most needs encouragement.",
-    "vote_average": 5.346,
-    "vote_count": 39
+    "title": "Just in Time for Christmas (2015)",
+    "imdb_id": "tt5014528"
   },
   {
-    "title": "Just in Time for Christmas",
-    "year": 2015,
-    "tmdbId": 363486,
-    "imdbId": "tt5014528",
-    "tmdb_id": 363486,
-    "imdb_id": "tt5014528",
-    "poster": "/images/posters/363486.webp",
-    "overview": "Lindsay is faced with a life-altering decision as Christmas approaches: Stay in her tiny hometown and marry boyfriend Jason or accept a coveted post teaching at an Ivy League college on the other side of the country. What to do? Fortunately for Lindsay, she has some big-time help in the form of a magical messenger who is able to transport her three years into the future to see how it would all turn out.",
-    "vote_average": 6.186,
-    "vote_count": 105
+    "title": "Reunited at Christmas (2018)",
+    "imdb_id": "tt9033646"
   }
 ]

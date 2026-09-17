@@ -1,26 +1,10 @@
 [
   {
-    "title": "A Kismet Christmas",
-    "year": 2022,
-    "tmdbId": 1027351,
-    "imdbId": "tt22196454",
-    "tmdb_id": 1027351,
-    "imdb_id": "tt22196454",
-    "poster": "/images/posters/1027351.webp",
-    "overview": "Sarah is a children’s book author who returns to her hometown, where she reconnects with her family and Travis, her teenage crush. She soon discovers that a long-held family legend might actually be true.",
-    "vote_average": 6.333,
-    "vote_count": 18
+    "title": "A Timeless Christmas (2020)",
+    "imdb_id": "tt13341414"
   },
   {
-    "title": "A Timeless Christmas",
-    "year": 2020,
-    "tmdbId": 746039,
-    "imdbId": "tt13341414",
-    "tmdb_id": 746039,
-    "imdb_id": "tt13341414",
-    "poster": "/images/posters/746039.webp",
-    "overview": "Charles Whitley travels from 1903 to 2020 where he meets Megan Turner, a tour guide at his historic mansion, and experiences a 21st Century Christmas.",
-    "vote_average": 6.421,
-    "vote_count": 82
+    "title": "A Kismet Christmas (2022)",
+    "imdb_id": "tt22196454"
   }
 ]

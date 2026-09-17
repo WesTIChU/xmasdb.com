@@ -1,38 +1,14 @@
 [
   {
-    "title": "With Love, Christmas",
-    "year": 2017,
-    "tmdbId": 474976,
-    "imdbId": "tt7647000",
-    "tmdb_id": 474976,
-    "imdb_id": "tt7647000",
-    "poster": "/images/posters/474976.webp",
-    "overview": "Advertising execs Melanie Welsh and Donovan Goodwin disagree on a cellphone Christmas commercial they’re pitching. He says his sleek design will win over the client but she knows it lacks holiday spirit.",
-    "vote_average": 6.877,
-    "vote_count": 61
+    "title": "12 Gifts of Christmas (2015)",
+    "imdb_id": "tt5133810"
   },
   {
-    "title": "My Christmas Love",
-    "year": 2016,
-    "tmdbId": 421625,
-    "imdbId": "tt6104760",
-    "tmdb_id": 421625,
-    "imdb_id": "tt6104760",
-    "poster": "/images/posters/421625.webp",
-    "overview": "A hopeless romantic who can’t ever seem to give a guy a real chance begins receiving each of the \"12 Days of Christmas” as gifts anonymously at her door. As she tries to figure out who is sending the gifts, she begins to believe that the mystery suitor could finally live up to her expectations.",
-    "vote_average": 6.208,
-    "vote_count": 77
+    "title": "My Christmas Love (2016)",
+    "imdb_id": "tt6104760"
   },
   {
-    "title": "12 Gifts of Christmas",
-    "year": 2015,
-    "tmdbId": 363483,
-    "imdbId": "tt5133810",
-    "tmdb_id": 363483,
-    "imdb_id": "tt5133810",
-    "poster": "/images/posters/363483.webp",
-    "overview": "When Anna Parisi, an unemployed fine arts painter, is unable to make ends meet, she is hired to become a personal Christmas shopper for Marc, an uptight corporate exec.  As they begin working together, Marc learns that Christmas giving has less to do with the amount of money spent and more to do with the importance of the gift, while Anna discovers she might find success as an artist in a way she never expected.  The best gift of all of course is the love they discover with one another.",
-    "vote_average": 6.039,
-    "vote_count": 246
+    "title": "With Love, Christmas (2017)",
+    "imdb_id": "tt7647000"
   }
 ]

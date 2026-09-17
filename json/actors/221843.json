@@ -1,38 +1,14 @@
 [
   {
-    "title": "A Big Fat Family Christmas",
-    "year": 2022,
-    "tmdbId": 1028559,
-    "imdbId": "tt22262600",
-    "tmdb_id": 1028559,
-    "imdb_id": "tt22262600",
-    "poster": "/images/posters/1028559.webp",
-    "overview": "Liv is a photojournalist eager to make it on her own. To get a dream assignment – shooting the Chang family’s annual holiday party for a cover story – she doesn’t reveal that they are in fact, her family. When she finds herself growing close to Henry, the coworker covering the story with her, she wants to confide in him but doesn’t want to jeopardize her big break.",
-    "vote_average": 5.3,
-    "vote_count": 11
+    "title": "Christmas Joy (2018)",
+    "imdb_id": "tt8587650"
   },
   {
-    "title": "Holiday Date",
-    "year": 2019,
-    "tmdbId": 630924,
-    "imdbId": "tt10768456",
-    "tmdb_id": 630924,
-    "imdb_id": "tt10768456",
-    "poster": "/images/posters/630924.webp",
-    "overview": "When Brooke’s boyfriend, Ethan, breaks up with her just before the holidays, she agrees to go home with Joel, an actor who will pose as her boyfriend.",
-    "vote_average": 6.4,
-    "vote_count": 48
+    "title": "Holiday Date (2019)",
+    "imdb_id": "tt10768456"
   },
   {
-    "title": "Christmas Joy",
-    "year": 2018,
-    "tmdbId": 535812,
-    "imdbId": "tt8587650",
-    "tmdb_id": 535812,
-    "imdb_id": "tt8587650",
-    "poster": "/images/posters/535812.webp",
-    "overview": "Joy Holbrook, is a corporate market researcher, gunning for a promotion within her firm. Just as her company's CEO is taking notice, Joy finds out her Aunt Ruby has broken her ankle and will be undergoing surgery. Despite the less than opportune timing, Joy makes her way back home to Crystal Falls, NC to be with her Aunt. Stars seem to be aligned as Joy sees her former crush, Ben Andrews, while at the hospital. At first, Joy is focused solely on helping her Aunt heal; even taking over her position as chair of the local Cookie Crawl competition. Eventually, she begins to let Ben in and remembers there's no place like home for the holidays. The pair work together on the Cookie Crawl to make the event a success.",
-    "vote_average": 6.5,
-    "vote_count": 70
+    "title": "A Big Fat Family Christmas (2022)",
+    "imdb_id": "tt22262600"
   }
 ]

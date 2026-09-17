@@ -1,26 +1,10 @@
 [
   {
-    "title": "A Carol for Two",
-    "year": 2024,
-    "tmdbId": 1360779,
-    "imdbId": "tt31438256",
-    "tmdb_id": 1360779,
-    "imdb_id": "tt31438256",
-    "poster": "/images/posters/1360779.webp",
-    "overview": "Violette dreams of Broadway, but lands a singing waitress gig at Fiore's. Her Christmas Eve duet with Alex, who resents her connections, could be her big break. As they rehearse, Alex's cousin Brad, with Alex's secret help, woos Violette. Alex develops feelings too, creating a messy love triangle that jeopardizes their shot at stardom.",
-    "vote_average": 6.2,
-    "vote_count": 9
+    "title": "The Santa Summit (2023)",
+    "imdb_id": "tt29381717"
   },
   {
-    "title": "The Santa Summit",
-    "year": 2023,
-    "tmdbId": 1142712,
-    "imdbId": "tt29381717",
-    "tmdb_id": 1142712,
-    "imdb_id": "tt29381717",
-    "poster": "/images/posters/1142712.webp",
-    "overview": "Amidst a sea of Santas at their town's annual Christmas celebration, three friends all find what they’re looking for: Christmas spirit, potential romance, and a strengthened bond of friendship.",
-    "vote_average": 6.517,
-    "vote_count": 29
+    "title": "A Carol for Two (2024)",
+    "imdb_id": "tt31438256"
   }
 ]

@@ -1,50 +1,18 @@
 [
   {
-    "title": "'Twas the Date Before Christmas",
-    "year": 2024,
-    "tmdbId": 1359717,
-    "imdbId": "tt33503181",
-    "tmdb_id": 1359717,
-    "imdb_id": "tt33503181",
-    "poster": "/images/posters/1359717.webp",
-    "overview": "To prevent her family from canceling the \"Chamberlain Family Christmas Olympics,\" Jessie lies and says she's inviting a date to the long-standing holiday tradition. She meets Bryan on a dating app, and he agrees to spend the holiday with her and her family. As Jessie and Bryan engage in eccentric activities like the search for the Christmas tree star, gift wrapping contest and snowball fight, they start to develop real feelings for each other. Soon her family begins to catch on to their secret and Bryan suspects she may be hiding the real reason for her unusual Christmas date request. As the celebrations continue, Jessie must work to keep all her stories straight and save her date with Bryan.",
-    "vote_average": 7.026,
-    "vote_count": 19
+    "title": "'Tis the Season to be Merry (2021)",
+    "imdb_id": "tt15739902"
   },
   {
-    "title": "The Santa Summit",
-    "year": 2023,
-    "tmdbId": 1142712,
-    "imdbId": "tt29381717",
-    "tmdb_id": 1142712,
-    "imdb_id": "tt29381717",
-    "poster": "/images/posters/1142712.webp",
-    "overview": "Amidst a sea of Santas at their town's annual Christmas celebration, three friends all find what they’re looking for: Christmas spirit, potential romance, and a strengthened bond of friendship.",
-    "vote_average": 6.517,
-    "vote_count": 29
+    "title": "We Wish You a Married Christmas (2022)",
+    "imdb_id": "tt20876910"
   },
   {
-    "title": "We Wish You a Married Christmas",
-    "year": 2022,
-    "tmdbId": 1027338,
-    "imdbId": "tt20876910",
-    "tmdb_id": 1027338,
-    "imdb_id": "tt20876910",
-    "poster": "/images/posters/1027338.webp",
-    "overview": "Becca and Robby are a married couple having a hard time connecting with each other as the holidays approach. Just before Christmas, they head to a cozy Vermont inn at the advice of their marriage coach so they can recharge. Their weekend away gets unexpectedly extended when a mishap puts their car out of commission and just may put them on the road to a very happily married Christmas.",
-    "vote_average": 5.162,
-    "vote_count": 37
+    "title": "The Santa Summit (2023)",
+    "imdb_id": "tt29381717"
   },
   {
-    "title": "'Tis the Season to be Merry",
-    "year": 2021,
-    "tmdbId": 888500,
-    "imdbId": "tt15739902",
-    "tmdb_id": 888500,
-    "imdb_id": "tt15739902",
-    "poster": "/images/posters/888500.webp",
-    "overview": "Looking for a fresh angle to her book on relationships, Merry heads to snow-covered Vermont. She finds a new perspective and Christmas cheer with charismatic aid worker Chris.",
-    "vote_average": 6.093,
-    "vote_count": 54
+    "title": "'Twas the Date Before Christmas (2024)",
+    "imdb_id": "tt33503181"
   }
 ]

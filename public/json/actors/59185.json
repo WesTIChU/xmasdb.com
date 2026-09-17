@@ -1,26 +1,10 @@
 [
   {
-    "title": "My Christmas Family Tree",
-    "year": 2021,
-    "tmdbId": 874194,
-    "imdbId": "tt15508150",
-    "tmdb_id": 874194,
-    "imdb_id": "tt15508150",
-    "poster": "/images/posters/874194.webp",
-    "overview": "When Vanessa receives the results from her Family Tree DNA test, she discovers a family she didn't know existed and travels to their home for Christmas.",
-    "vote_average": 7.19,
-    "vote_count": 42
+    "title": "A Wish for Christmas (2016)",
+    "imdb_id": "tt5676118"
   },
   {
-    "title": "A Wish for Christmas",
-    "year": 2016,
-    "tmdbId": 410314,
-    "imdbId": "tt5676118",
-    "tmdb_id": 410314,
-    "imdb_id": "tt5676118",
-    "poster": "/images/posters/410314.webp",
-    "overview": "Sara Shaw is the type of woman who prefers to sit on the sidelines at work, but when her big idea for a Christmas initiative is stolen, she makes a wish to Santa that she'll finally have the courage to stand up for herself. Santa grants her wish, but only gives her 48 hours. As the clock ticks, Sara will discover how to channel the Christmas magic and speak her mind all on her own.",
-    "vote_average": 5.907,
-    "vote_count": 264
+    "title": "My Christmas Family Tree (2021)",
+    "imdb_id": "tt15508150"
   }
 ]

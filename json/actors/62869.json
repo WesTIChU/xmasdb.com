@@ -1,38 +1,14 @@
 [
   {
-    "title": "Road to Christmas",
-    "year": 2018,
-    "tmdbId": 550017,
-    "imdbId": "tt8732914",
-    "tmdb_id": 550017,
-    "imdb_id": "tt8732914",
-    "poster": "/images/posters/550017.webp",
-    "overview": "Los Angeles television producer Maggie Baker unwittingly falls for Danny Wise, the son and former producer of his mother’s popular annual Christmas special Julia Wise Lifestyle. When Maggie’s secret plan to reunite Danny and his two brothers with Julia during the live broadcast in Vermont goes awry, Maggie is reminded that above all, it is the love for family and friends that makes the merriest of Christmas.",
-    "vote_average": 6.274,
-    "vote_count": 113
+    "title": "The Mistletoe Promise (2016)",
+    "imdb_id": "tt5921218"
   },
   {
-    "title": "Christmas Getaway",
-    "year": 2017,
-    "tmdbId": 480623,
-    "imdbId": "tt7688990",
-    "tmdb_id": 480623,
-    "imdb_id": "tt7688990",
-    "poster": "/images/posters/480623.webp",
-    "overview": "When a reservation mix-up at a mountain resort forces a newly-single travel writer to share a cabin with a handsome widower and his precocious daughter over the holidays, their lives are transformed by the magic of Christmas and the unexpected power of love.",
-    "vote_average": 6.961,
-    "vote_count": 153
+    "title": "Christmas Getaway (2017)",
+    "imdb_id": "tt7688990"
   },
   {
-    "title": "The Mistletoe Promise",
-    "year": 2016,
-    "tmdbId": 410315,
-    "imdbId": "tt5921218",
-    "tmdb_id": 410315,
-    "imdb_id": "tt5921218",
-    "poster": "/images/posters/410315.webp",
-    "overview": "A chance meeting between two strangers who share a disdain for Christmas results in The Mistletoe Promise, a pact to help them navigate their holiday complications - together. But as they spend more time with each other and experience the magic of Christmas the phony couple discovers there may be more to their contract than business.",
-    "vote_average": 6.3,
-    "vote_count": 95
+    "title": "Road to Christmas (2018)",
+    "imdb_id": "tt8732914"
   }
 ]

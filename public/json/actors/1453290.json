@@ -1,38 +1,14 @@
 [
   {
-    "title": "A Keller Christmas Vacation",
-    "year": 2025,
-    "tmdbId": 1547913,
-    "imdbId": "tt38353730",
-    "tmdb_id": 1547913,
-    "imdb_id": "tt38353730",
-    "poster": "/images/posters/1547913.webp",
-    "overview": "The Keller family, including the parents and their three adult children, decide to take a European river cruise touring the Christmas Markets over the holidays, and each sibling is going through their own life challenge.",
-    "vote_average": 5.909,
-    "vote_count": 11
+    "title": "Joyeux Noel (2023)",
+    "imdb_id": "tt29353013"
   },
   {
-    "title": "An Alpine Holiday",
-    "year": 2025,
-    "tmdbId": 1547921,
-    "imdbId": "tt36836189",
-    "tmdb_id": 1547921,
-    "imdb_id": "tt36836189",
-    "poster": "/images/posters/1547921.webp",
-    "overview": "Two estranged sisters reunite as their grandmother’s last wish to travel to the French Alps for Christmas to recreate her first trip there with their grandfather. While bonding as sisters, they also make room for romance with between one sister and their French mountaineer guide.",
-    "vote_average": 6.818,
-    "vote_count": 12
+    "title": "A Keller Christmas Vacation (2025)",
+    "imdb_id": "tt38353730"
   },
   {
-    "title": "Joyeux Noel",
-    "year": 2023,
-    "tmdbId": 1180660,
-    "imdbId": "tt29353013",
-    "tmdb_id": 1180660,
-    "imdb_id": "tt29353013",
-    "poster": "/images/posters/1180660.webp",
-    "overview": "Copy editor Lea and pragmatic reporter Mark head to France to learn about a mysterious artist behind a romantic Christmas painting.",
-    "vote_average": 5.688,
-    "vote_count": 16
+    "title": "An Alpine Holiday (2025)",
+    "imdb_id": "tt36836189"
   }
 ]

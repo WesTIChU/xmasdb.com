@@ -1,50 +1,18 @@
 [
   {
-    "title": "The 5-Year Christmas Party",
-    "year": 2024,
-    "tmdbId": 1359868,
-    "imdbId": "tt33503201",
-    "tmdb_id": 1359868,
-    "imdb_id": "tt33503201",
-    "poster": "/images/posters/1359868.webp",
-    "overview": "Over five years, Alice and her old theater school rival, Max, reunite each holiday season to work at a Chicago catering company's Christmas parties.  While their undeniable chemistry grows, the timing is never right for romance - until the company's final season pushes them to confront their true feelings.",
-    "vote_average": 5.111,
-    "vote_count": 8
+    "title": "A Christmas Tree Grows in Colorado (2020)",
+    "imdb_id": "tt12557978"
   },
   {
-    "title": "A Christmas Together With You",
-    "year": 2021,
-    "tmdbId": 876103,
-    "imdbId": "tt15420960",
-    "tmdb_id": 876103,
-    "imdb_id": "tt15420960",
-    "poster": "/images/posters/876103.webp",
-    "overview": "During the Christmas season, Megan and her father-figure Frank head out on a road trip to find his long-lost love. Along the way, Megan finds the love of her own life.",
-    "vote_average": 6.063,
-    "vote_count": 24
+    "title": "The Santa Stakeout (2021)",
+    "imdb_id": "tt15737510"
   },
   {
-    "title": "The Santa Stakeout",
-    "year": 2021,
-    "tmdbId": 874238,
-    "imdbId": "tt15737510",
-    "tmdb_id": 874238,
-    "imdb_id": "tt15737510",
-    "poster": "/images/posters/874238.webp",
-    "overview": "Tanya is a police detective who is reluctantly partnered with fellow detective Ryan to solve a recent string of heists taking place during high-profile holiday parties around town.",
-    "vote_average": 6.1,
-    "vote_count": 22
+    "title": "A Christmas Together With You (2021)",
+    "imdb_id": "tt15420960"
   },
   {
-    "title": "A Christmas Tree Grows in Colorado",
-    "year": 2020,
-    "tmdbId": 737764,
-    "imdbId": "tt12557978",
-    "tmdb_id": 737764,
-    "imdb_id": "tt12557978",
-    "poster": "/images/posters/737764.webp",
-    "overview": "Erin is planning the town’s Christmas celebration and must win over firefighter Kevin in order to obtain the beautiful spruce tree from his property for the celebration.",
-    "vote_average": 5.7,
-    "vote_count": 16
+    "title": "The 5-Year Christmas Party (2024)",
+    "imdb_id": "tt33503201"
   }
 ]

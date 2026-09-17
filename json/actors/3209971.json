@@ -1,26 +1,10 @@
 [
   {
-    "title": "'Twas the Night Before Christmas",
-    "year": 2022,
-    "tmdbId": 1028547,
-    "imdbId": "tt22307338",
-    "tmdb_id": 1028547,
-    "imdb_id": "tt22307338",
-    "poster": "/images/posters/1028547.webp",
-    "overview": "A former actress trying to break into directing tests her skills with a town’s annual Christmas Eve courtroom production in which the true authorship of the famous poem “A Visit from St. Nick” is debated.",
-    "vote_average": 6.208,
-    "vote_count": 36
+    "title": "'Twas the Night Before Christmas (2022)",
+    "imdb_id": "tt22307338"
   },
   {
-    "title": "The Most Colorful Time of the Year",
-    "year": 2022,
-    "tmdbId": 1028561,
-    "imdbId": "tt22207622",
-    "tmdb_id": 1028561,
-    "imdb_id": "tt22207622",
-    "poster": "/images/posters/1028561.webp",
-    "overview": "Ryan is an elementary school teacher, who learns that he is colorblind. Michelle, an optometrist, and mother of one of his students, helps bring color into his life in time for the holidays.",
-    "vote_average": 5.7,
-    "vote_count": 26
+    "title": "The Most Colorful Time of the Year (2022)",
+    "imdb_id": "tt22207622"
   }
 ]

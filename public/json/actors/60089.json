@@ -1,38 +1,14 @@
 [
   {
-    "title": "The Mistletoe Inn",
-    "year": 2017,
-    "tmdbId": 475829,
-    "imdbId": "tt7647010",
-    "tmdb_id": 475829,
-    "imdb_id": "tt7647010",
-    "poster": "/images/posters/475829.webp",
-    "overview": "When aspiring romance novelist Kim Rossi is unceremoniously dumped by her soon-to-be-published romance novelist boyfriend, Kim takes stock and decides to take a leap. She signs up for a romance writing retreat at a quaint Vermont Inn shortly before Christmas, where a top romance novelist is scheduled to attend and read the work of one lucky writer. Shortly after arriving, she crosses paths with Zeke, whom she initially finds to be intrusive and, naturally, ends up being her assignment partner. Worse yet, her ex is also at the retreat. Despite these bumps in the road, Kim steps outside her comfort zone and plunges into the writing exercises, surprising herself. Equally unexpected is the attraction that seems to be building between her and Zeke that promises to take her down a road she never imagined traveling. Based on the book by Richard Paul Evans.",
-    "vote_average": 6,
-    "vote_count": 63
+    "title": "Ice Sculpture Christmas (2015)",
+    "imdb_id": "tt5031014"
   },
   {
-    "title": "Sleigh Bells Ring",
-    "year": 2016,
-    "tmdbId": 421626,
-    "imdbId": "tt6349282",
-    "tmdb_id": 421626,
-    "imdb_id": "tt6349282",
-    "poster": "/images/posters/421626.webp",
-    "overview": "Recently divorced, Laurel struggles to get into the holiday spirit while heading up her hometown Christmas parade. With the help of a Christmas sleigh and a handsome woodworker, Laurel is destined to turn her luck around, rekindle her holiday spirit and even find time for love.",
-    "vote_average": 5.9,
-    "vote_count": 49
+    "title": "Sleigh Bells Ring (2016)",
+    "imdb_id": "tt6349282"
   },
   {
-    "title": "Ice Sculpture Christmas",
-    "year": 2015,
-    "tmdbId": 360604,
-    "imdbId": "tt5031014",
-    "tmdb_id": 360604,
-    "imdb_id": "tt5031014",
-    "poster": "/images/posters/360604.webp",
-    "overview": "After starting her first job at a country club restaurant, Callie’s passions for cooking and ice sculpting are met with romance and Christmas spirit when a childhood friend enters her into the club’s annual Christmas ice sculpting competition without her knowledge.",
-    "vote_average": 6.1,
-    "vote_count": 87
+    "title": "The Mistletoe Inn (2017)",
+    "imdb_id": "tt7647010"
   }
 ]

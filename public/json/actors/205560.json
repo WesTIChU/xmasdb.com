@@ -1,38 +1,14 @@
 [
   {
-    "title": "Christmas Above the Clouds",
-    "year": 2025,
-    "tmdbId": 1537081,
-    "imdbId": "tt38183872",
-    "tmdb_id": 1537081,
-    "imdb_id": "tt38183872",
-    "poster": "/images/posters/1537081.webp",
-    "overview": "When a workaholic CEO tries to skip Christmas by flying to Australia, she’s in for the flight of her life. Haunted by her past, present, and future, she’s forced to confront the choices that led to her success yet left her flying solo. With the help of three quirky spirits and a surprise reunion with her ex, she might just rediscover the magic of Christmas—and the love she thought she’d lost.",
-    "vote_average": 7.2,
-    "vote_count": 12
+    "title": "Every Christmas Has a Story (2016)",
+    "imdb_id": "tt6215212"
   },
   {
-    "title": "Homegrown Christmas",
-    "year": 2018,
-    "tmdbId": 550030,
-    "imdbId": "tt9032562",
-    "tmdb_id": 550030,
-    "imdb_id": "tt9032562",
-    "poster": "/images/posters/550030.webp",
-    "overview": "After stepping down as CEO of her dream job, Maddie heads home for the holidays to gain perspective. She finds herself running into her old high school sweetheart Carter, and tensions quickly arise. When forced to put together a Christmas dance for the local high school, Carter and Maddie find themselves putting their differences aside and rediscover what made them fall in love all those years ago.",
-    "vote_average": 4.833,
-    "vote_count": 38
+    "title": "Homegrown Christmas (2018)",
+    "imdb_id": "tt9032562"
   },
   {
-    "title": "Every Christmas Has a Story",
-    "year": 2016,
-    "tmdbId": 415959,
-    "imdbId": "tt6215212",
-    "tmdb_id": 415959,
-    "imdb_id": "tt6215212",
-    "poster": "/images/posters/415959.webp",
-    "overview": "A TV personality has an on-air snafu and admits she hates Christmas. Following the debacle, she is invited to the Most Christmas-y town in America to try and repair her image. Forced to work with her ex-boyfriend Jack, the show’s producer, the magic of Christmas and this special town will change the way she views Christmas and her life.",
-    "vote_average": 5.2,
-    "vote_count": 81
+    "title": "Christmas Above the Clouds (2025)",
+    "imdb_id": "tt38183872"
   }
 ]

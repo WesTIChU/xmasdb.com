@@ -1,26 +1,10 @@
 [
   {
-    "title": "Single on the 25th",
-    "year": 2025,
-    "tmdbId": 1545997,
-    "imdbId": "tt38347292",
-    "tmdb_id": 1545997,
-    "imdb_id": "tt38347292",
-    "poster": "/images/posters/1545997.webp",
-    "overview": "After Nell’s family cancels holiday plans at the last minute, she decides to spend the week of Christmas having fun on her own — and crosses paths with her neighbor, who is “happily unattached.”",
-    "vote_average": 7.7,
-    "vote_count": 10
+    "title": "Northpole: Open for Christmas (2015)",
+    "imdb_id": "tt4843046"
   },
   {
-    "title": "Northpole: Open for Christmas",
-    "year": 2015,
-    "tmdbId": 339543,
-    "imdbId": "tt4843046",
-    "tmdb_id": 339543,
-    "imdb_id": "tt4843046",
-    "poster": "/images/posters/339543.webp",
-    "overview": "A successful businesswoman, Mackenzie, inherits her beloved aunt's inn, and chooses to restore the hotel to its original grandeur only to sell it right before Christmas. Unbeknownst to Mackenzie, she receives some unexpected help from a team of elves headed by the cheerful Clementine, who helps Mackenzie rediscover the true meaning of Christmas.",
-    "vote_average": 5.823,
-    "vote_count": 99
+    "title": "Single on the 25th (2025)",
+    "imdb_id": "tt38347292"
   }
 ]

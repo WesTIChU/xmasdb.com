@@ -1,26 +1,10 @@
 [
   {
-    "title": "Christmas Above the Clouds",
-    "year": 2025,
-    "tmdbId": 1537081,
-    "imdbId": "tt38183872",
-    "tmdb_id": 1537081,
-    "imdb_id": "tt38183872",
-    "poster": "/images/posters/1537081.webp",
-    "overview": "When a workaholic CEO tries to skip Christmas by flying to Australia, she’s in for the flight of her life. Haunted by her past, present, and future, she’s forced to confront the choices that led to her success yet left her flying solo. With the help of three quirky spirits and a surprise reunion with her ex, she might just rediscover the magic of Christmas—and the love she thought she’d lost.",
-    "vote_average": 7.2,
-    "vote_count": 12
+    "title": "A Big Fat Family Christmas (2022)",
+    "imdb_id": "tt22262600"
   },
   {
-    "title": "A Big Fat Family Christmas",
-    "year": 2022,
-    "tmdbId": 1028559,
-    "imdbId": "tt22262600",
-    "tmdb_id": 1028559,
-    "imdb_id": "tt22262600",
-    "poster": "/images/posters/1028559.webp",
-    "overview": "Liv is a photojournalist eager to make it on her own. To get a dream assignment – shooting the Chang family’s annual holiday party for a cover story – she doesn’t reveal that they are in fact, her family. When she finds herself growing close to Henry, the coworker covering the story with her, she wants to confide in him but doesn’t want to jeopardize her big break.",
-    "vote_average": 5.3,
-    "vote_count": 11
+    "title": "Christmas Above the Clouds (2025)",
+    "imdb_id": "tt38183872"
   }
 ]

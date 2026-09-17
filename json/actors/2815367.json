@@ -1,26 +1,10 @@
 [
   {
-    "title": "Christmas On Call",
-    "year": 2024,
-    "tmdbId": 1361154,
-    "imdbId": "tt33829451",
-    "tmdb_id": 1361154,
-    "imdb_id": "tt33829451",
-    "poster": "/images/posters/1361154.webp",
-    "overview": "The lives of first responders in Philadelphia intersect over the holiday season while juggling work, personal lives, and their dedication to protect and serve their city.",
-    "vote_average": 7.1,
-    "vote_count": 25
+    "title": "Holiday Hotline (2023)",
+    "imdb_id": "tt29499210"
   },
   {
-    "title": "Holiday Hotline",
-    "year": 2023,
-    "tmdbId": 1180811,
-    "imdbId": "tt29499210",
-    "tmdb_id": 1180811,
-    "imdb_id": "tt29499210",
-    "poster": "/images/posters/1180811.webp",
-    "overview": "Upon leaving London and working at a cooking hotline, Abby connects with an anonymous caller — a single dad who Abby unknowingly is also smitten with in real life.",
-    "vote_average": 6.848,
-    "vote_count": 32
+    "title": "Christmas On Call (2024)",
+    "imdb_id": "tt33829451"
   }
 ]

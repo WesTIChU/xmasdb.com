@@ -1,38 +1,14 @@
 [
   {
-    "title": "Christmas On Call",
-    "year": 2024,
-    "tmdbId": 1361154,
-    "imdbId": "tt33829451",
-    "tmdb_id": 1361154,
-    "imdb_id": "tt33829451",
-    "poster": "/images/posters/1361154.webp",
-    "overview": "The lives of first responders in Philadelphia intersect over the holiday season while juggling work, personal lives, and their dedication to protect and serve their city.",
-    "vote_average": 7.1,
-    "vote_count": 25
+    "title": "Christmas at the Golden Dragon (2022)",
+    "imdb_id": "tt13937754"
   },
   {
-    "title": "Holiday Road",
-    "year": 2023,
-    "tmdbId": 1180791,
-    "imdbId": "tt29233535",
-    "tmdb_id": 1180791,
-    "imdb_id": "tt29233535",
-    "poster": "/images/posters/1180791.webp",
-    "overview": "A travel writer, a tech entrepreneur, a devoted mother and more strangers are stranded at the airport for the holidays, they rent a van for an unexpected road trip.",
-    "vote_average": 7.2,
-    "vote_count": 23
+    "title": "Holiday Road (2023)",
+    "imdb_id": "tt29233535"
   },
   {
-    "title": "Christmas at the Golden Dragon",
-    "year": 2022,
-    "tmdbId": 1028186,
-    "imdbId": "tt13937754",
-    "tmdb_id": 1028186,
-    "imdb_id": "tt13937754",
-    "poster": "/images/posters/1028186.webp",
-    "overview": "When Romy and Rick’s parents surprise them with the news that they will be closing the Chinese restaurant they have owned and operated for decades, the siblings each find themselves reevaluating their futures. Also impacted by the news are the landmark restaurant’s loyal patrons and staff, who have all come to depend on the restaurant over the holidays.",
-    "vote_average": 6.304,
-    "vote_count": 23
+    "title": "Christmas On Call (2024)",
+    "imdb_id": "tt33829451"
   }
 ]

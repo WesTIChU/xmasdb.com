@@ -1,38 +1,14 @@
 [
   {
-    "title": "Eight Gifts of Hanukkah",
-    "year": 2021,
-    "tmdbId": 888488,
-    "imdbId": "tt16282114",
-    "tmdb_id": 888488,
-    "imdb_id": "tt16282114",
-    "poster": "/images/posters/888488.webp",
-    "overview": "An anonymous suitor sends optometrist Sara a gift for each night of Hanukkah. On her journey to find her secret admirer, she learns her one true love might be someone she never expected.",
-    "vote_average": 7.05,
-    "vote_count": 20
+    "title": "Looks Like Christmas (2016)",
+    "imdb_id": "tt6217490"
   },
   {
-    "title": "Christmas Under the Stars",
-    "year": 2019,
-    "tmdbId": 629985,
-    "imdbId": "tt10922658",
-    "tmdb_id": 629985,
-    "imdb_id": "tt10922658",
-    "poster": "/images/posters/629985.webp",
-    "overview": "When Nick is fired from his high-powered investment firm at Christmastime, he takes a job at a Christmas tree lot. There, he meets Julie, an astronomy teacher who’s always looked to the stars for hope. As the Christmas spirit washes over him—and he begins falling for Julie—the once self-centered Nick discovers the joy of helping others.",
-    "vote_average": 6.5,
-    "vote_count": 55
+    "title": "Christmas Under the Stars (2019)",
+    "imdb_id": "tt10922658"
   },
   {
-    "title": "Looks Like Christmas",
-    "year": 2016,
-    "tmdbId": 421622,
-    "imdbId": "tt6217490",
-    "tmdb_id": 421622,
-    "imdb_id": "tt6217490",
-    "poster": "/images/posters/421622.webp",
-    "overview": "When two type-A single parents battle it out for control of the Christmas holiday at their kid’s middle school, they get more than they bargained for when they learn a little something about the true meaning of Christmas, while opening themselves up for the possibility of a new romance.",
-    "vote_average": 5.3,
-    "vote_count": 35
+    "title": "Eight Gifts of Hanukkah (2021)",
+    "imdb_id": "tt16282114"
   }
 ]

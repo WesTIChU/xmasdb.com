@@ -1,26 +1,10 @@
 [
   {
-    "title": "Holiday Road",
-    "year": 2023,
-    "tmdbId": 1180791,
-    "imdbId": "tt29233535",
-    "tmdb_id": 1180791,
-    "imdb_id": "tt29233535",
-    "poster": "/images/posters/1180791.webp",
-    "overview": "A travel writer, a tech entrepreneur, a devoted mother and more strangers are stranded at the airport for the holidays, they rent a van for an unexpected road trip.",
-    "vote_average": 7.2,
-    "vote_count": 23
+    "title": "A Kismet Christmas (2022)",
+    "imdb_id": "tt22196454"
   },
   {
-    "title": "A Kismet Christmas",
-    "year": 2022,
-    "tmdbId": 1027351,
-    "imdbId": "tt22196454",
-    "tmdb_id": 1027351,
-    "imdb_id": "tt22196454",
-    "poster": "/images/posters/1027351.webp",
-    "overview": "Sarah is a children’s book author who returns to her hometown, where she reconnects with her family and Travis, her teenage crush. She soon discovers that a long-held family legend might actually be true.",
-    "vote_average": 6.333,
-    "vote_count": 18
+    "title": "Holiday Road (2023)",
+    "imdb_id": "tt29233535"
   }
 ]

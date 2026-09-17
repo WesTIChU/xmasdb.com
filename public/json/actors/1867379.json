@@ -1,38 +1,14 @@
 [
   {
-    "title": "Sister Swap: A Hometown Holiday",
-    "year": 2021,
-    "tmdbId": 866665,
-    "imdbId": "tt6540706",
-    "tmdb_id": 866665,
-    "imdb_id": "tt6540706",
-    "poster": "/images/posters/866665.webp",
-    "overview": "Jennifer and Meg Swift are two sisters who are very close despite living far apart. Jennifer is in Salt Lake City, running a successful restaurant she started with her late husband and raising her teenaged son Simon, Meg stayed in their hometown of Hazelwood, helping their parents run the local bakery.",
-    "vote_average": 5.7,
-    "vote_count": 31
+    "title": "Check Inn to Christmas (2019)",
+    "imdb_id": "tt10768312"
   },
   {
-    "title": "Sister Swap: Christmas in the City",
-    "year": 2021,
-    "tmdbId": 866669,
-    "imdbId": "tt6540724",
-    "tmdb_id": 866669,
-    "imdb_id": "tt6540724",
-    "poster": "/images/posters/866669.webp",
-    "overview": "Jennifer and Meg Swift are two sisters who are very close despite living far apart. Jennifer is in Salt Lake City, running a successful restaurant she started with her late husband and raising her teenaged son Simon, Meg stayed in their hometown of Hazelwood, helping their parents run the local bakery.",
-    "vote_average": 6.1,
-    "vote_count": 25
+    "title": "Sister Swap: A Hometown Holiday (2021)",
+    "imdb_id": "tt6540706"
   },
   {
-    "title": "Check Inn to Christmas",
-    "year": 2019,
-    "tmdbId": 630915,
-    "imdbId": "tt10768312",
-    "tmdb_id": 630915,
-    "imdb_id": "tt10768312",
-    "poster": "/images/posters/630915.webp",
-    "overview": "Julia Crawley and Ryan Mason must unite their families during Crestridge's Centennial Christmas celebration in order to save their family inns from a chain resort.",
-    "vote_average": 6.689,
-    "vote_count": 45
+    "title": "Sister Swap: Christmas in the City (2021)",
+    "imdb_id": "tt6540724"
   }
 ]

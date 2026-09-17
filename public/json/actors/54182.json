@@ -1,38 +1,14 @@
 [
   {
-    "title": "Making Spirits Bright",
-    "year": 2021,
-    "tmdbId": 874140,
-    "imdbId": "tt15102772",
-    "tmdb_id": 874140,
-    "imdb_id": "tt15102772",
-    "poster": "/images/posters/874140.webp",
-    "overview": "Grace and Tony are from two separate families who are in the business of decorating homes for Christmas. Unfortunately they have also been in feud for as long as anyone can remember. But this holiday season they must try to find a way to get everyone to work together in order to win a town competition that could save their livelihoods.",
-    "vote_average": 6.3,
-    "vote_count": 17
+    "title": "Christmas in Homestead (2016)",
+    "imdb_id": "tt6273004"
   },
   {
-    "title": "Christmas Festival of Ice",
-    "year": 2017,
-    "tmdbId": 474990,
-    "imdbId": "tt7038632",
-    "tmdb_id": 474990,
-    "imdb_id": "tt7038632",
-    "poster": "/images/posters/474990.webp",
-    "overview": "A young woman faces her future as a lawyer in a small New England town where the annual Christmas ice sculpting competition in which she and her father have always competed has been cancelled. Working to save the festival, she meets a reluctant sculptor who reignites her passion, in more ways than one.",
-    "vote_average": 5.4,
-    "vote_count": 36
+    "title": "Christmas Festival of Ice (2017)",
+    "imdb_id": "tt7038632"
   },
   {
-    "title": "Christmas in Homestead",
-    "year": 2016,
-    "tmdbId": 421620,
-    "imdbId": "tt6273004",
-    "tmdb_id": 421620,
-    "imdb_id": "tt6273004",
-    "poster": "/images/posters/421620.webp",
-    "overview": "Jessica is one of the most famous actresses in the world, leading a glamorous – if tabloid worthy – life. But all that is thrown for a loop when she goes on location to shoot a holiday themed film in the Christmas-obsessed town of Homestead, Iowa. While a romance brews between her and Matt, a local inn keeper who is a single dad, she also gets a taste of small-town life and rediscovers the true meaning of Christmas.",
-    "vote_average": 6.1,
-    "vote_count": 92
+    "title": "Making Spirits Bright (2021)",
+    "imdb_id": "tt15102772"
   }
 ]

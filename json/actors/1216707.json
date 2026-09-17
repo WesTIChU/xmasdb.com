@@ -1,50 +1,18 @@
 [
   {
-    "title": "She's Making a List",
-    "year": 2025,
-    "tmdbId": 1516208,
-    "imdbId": "tt38354965",
-    "tmdb_id": 1516208,
-    "imdb_id": "tt38354965",
-    "poster": "/images/posters/1516208.webp",
-    "overview": "Naughty or Nice inspector Isabel Haynes doesn’t anticipate anything out of the ordinary when she’s assigned to evaluate 11-year-old Charlie Duncan. However, soon, Isabel falls for Charlie’s widowed father Jason, which makes her question the rigid rules of her job. As Christmas approaches, Isabel must choose between following the holiday algorithm or following her heart.",
-    "vote_average": 6.824,
-    "vote_count": 17
+    "title": "In Merry Measure (2022)",
+    "imdb_id": "tt22246626"
   },
   {
-    "title": "Three Wisest Men",
-    "year": 2025,
-    "tmdbId": 1537084,
-    "imdbId": "tt38353919",
-    "tmdb_id": 1537084,
-    "imdb_id": "tt38353919",
-    "poster": "/images/posters/1537084.webp",
-    "overview": "Luke is expecting twins, Taylor is debating a life-changing job, and Stephan is planning a wedding — all while their mom is planning to put the family home up for sale.",
-    "vote_average": 7.308,
-    "vote_count": 13
+    "title": "Three Wiser Men and a Boy (2024)",
+    "imdb_id": "tt32306650"
   },
   {
-    "title": "Three Wiser Men and a Boy",
-    "year": 2024,
-    "tmdbId": 1293279,
-    "imdbId": "tt32306650",
-    "tmdb_id": 1293279,
-    "imdb_id": "tt32306650",
-    "poster": "/images/posters/1293279.webp",
-    "overview": "Five years after the events of the first film, Christmas is once again just around the corner. In a crazy turn of events, possibly brought on accidently by the brothers themselves, the director of Luke’s son Thomas’ school holiday musical steps down. Luke, desperate to make his son’s stage dreams come true, enlists the help of his brothers Taylor and Stephan. The trio also find themselves meeting their mother's new boyfriend and the brothers grapple with their own feelings about this relationship. In true Brenner brother fashion, they are all in for a Christmas they will never forget.",
-    "vote_average": 7.071,
-    "vote_count": 22
+    "title": "She's Making a List (2025)",
+    "imdb_id": "tt38354965"
   },
   {
-    "title": "In Merry Measure",
-    "year": 2022,
-    "tmdbId": 1028180,
-    "imdbId": "tt22246626",
-    "tmdb_id": 1028180,
-    "imdb_id": "tt22246626",
-    "poster": "/images/posters/1028180.webp",
-    "overview": "When pop star Darcy returns home to spend Christmas with her sister and niece, she unexpectedly finds herself coaching the high school choir with her onetime rival, Adam.",
-    "vote_average": 6.7,
-    "vote_count": 15
+    "title": "Three Wisest Men (2025)",
+    "imdb_id": "tt38353919"
   }
 ]

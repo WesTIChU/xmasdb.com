@@ -1,50 +1,18 @@
 [
   {
-    "title": "Holiday Road",
-    "year": 2023,
-    "tmdbId": 1180791,
-    "imdbId": "tt29233535",
-    "tmdb_id": 1180791,
-    "imdb_id": "tt29233535",
-    "poster": "/images/posters/1180791.webp",
-    "overview": "A travel writer, a tech entrepreneur, a devoted mother and more strangers are stranded at the airport for the holidays, they rent a van for an unexpected road trip.",
-    "vote_average": 7.2,
-    "vote_count": 23
+    "title": "Love, Lights, Hanukkah! (2020)",
+    "imdb_id": "tt13342190"
   },
   {
-    "title": "A Big Fat Family Christmas",
-    "year": 2022,
-    "tmdbId": 1028559,
-    "imdbId": "tt22262600",
-    "tmdb_id": 1028559,
-    "imdb_id": "tt22262600",
-    "poster": "/images/posters/1028559.webp",
-    "overview": "Liv is a photojournalist eager to make it on her own. To get a dream assignment – shooting the Chang family’s annual holiday party for a cover story – she doesn’t reveal that they are in fact, her family. When she finds herself growing close to Henry, the coworker covering the story with her, she wants to confide in him but doesn’t want to jeopardize her big break.",
-    "vote_average": 5.3,
-    "vote_count": 11
+    "title": "A Magical Christmas Village (2022)",
+    "imdb_id": "tt22246514"
   },
   {
-    "title": "A Magical Christmas Village",
-    "year": 2022,
-    "tmdbId": 1026605,
-    "imdbId": "tt22246514",
-    "tmdb_id": 1026605,
-    "imdb_id": "tt22246514",
-    "poster": "/images/posters/1026605.webp",
-    "overview": "When Summer’s mother Vivian moves in with her and her young daughter Chloe, her orderly existence is upended. Upon arrival, Vivian sets up an heirloom, miniature Christmas village resembling their town, and tells Chloe it grants Christmas wishes. As Chloe begins setting up the figurines, real-life events seem to mimic the scenes she creates. With a little help from the magic of the Christmas village, the family will be brought closer together and just maybe, Summer will learn to open her heart to love again.",
-    "vote_average": 6.321,
-    "vote_count": 28
+    "title": "A Big Fat Family Christmas (2022)",
+    "imdb_id": "tt22262600"
   },
   {
-    "title": "Love, Lights, Hanukkah!",
-    "year": 2020,
-    "tmdbId": 746062,
-    "imdbId": "tt13342190",
-    "tmdb_id": 746062,
-    "imdb_id": "tt13342190",
-    "poster": "/images/posters/746062.webp",
-    "overview": "As Christina prepares her restaurant for its busiest time of year, she gets back a DNA test revealing that she’s Jewish. The discovery leads her to a new family and an unlikely romance over eight nights.",
-    "vote_average": 6.8,
-    "vote_count": 25
+    "title": "Holiday Road (2023)",
+    "imdb_id": "tt29233535"
   }
 ]

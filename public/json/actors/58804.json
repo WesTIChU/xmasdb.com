@@ -1,38 +1,14 @@
 [
   {
-    "title": "Christmas Above the Clouds",
-    "year": 2025,
-    "tmdbId": 1537081,
-    "imdbId": "tt38183872",
-    "tmdb_id": 1537081,
-    "imdb_id": "tt38183872",
-    "poster": "/images/posters/1537081.webp",
-    "overview": "When a workaholic CEO tries to skip Christmas by flying to Australia, she’s in for the flight of her life. Haunted by her past, present, and future, she’s forced to confront the choices that led to her success yet left her flying solo. With the help of three quirky spirits and a surprise reunion with her ex, she might just rediscover the magic of Christmas—and the love she thought she’d lost.",
-    "vote_average": 7.2,
-    "vote_count": 12
+    "title": "Christmas Joy (2018)",
+    "imdb_id": "tt8587650"
   },
   {
-    "title": "The Christmas Club",
-    "year": 2019,
-    "tmdbId": 628332,
-    "imdbId": "tt10667026",
-    "tmdb_id": 628332,
-    "imdb_id": "tt10667026",
-    "poster": "/images/posters/628332.webp",
-    "overview": "Two busy strangers meet when they help an elderly woman find her lost Christmas savings. Thanks to fate and Christmas magic, they also find something they were both missing: true love.",
-    "vote_average": 6.3,
-    "vote_count": 35
+    "title": "The Christmas Club (2019)",
+    "imdb_id": "tt10667026"
   },
   {
-    "title": "Christmas Joy",
-    "year": 2018,
-    "tmdbId": 535812,
-    "imdbId": "tt8587650",
-    "tmdb_id": 535812,
-    "imdb_id": "tt8587650",
-    "poster": "/images/posters/535812.webp",
-    "overview": "Joy Holbrook, is a corporate market researcher, gunning for a promotion within her firm. Just as her company's CEO is taking notice, Joy finds out her Aunt Ruby has broken her ankle and will be undergoing surgery. Despite the less than opportune timing, Joy makes her way back home to Crystal Falls, NC to be with her Aunt. Stars seem to be aligned as Joy sees her former crush, Ben Andrews, while at the hospital. At first, Joy is focused solely on helping her Aunt heal; even taking over her position as chair of the local Cookie Crawl competition. Eventually, she begins to let Ben in and remembers there's no place like home for the holidays. The pair work together on the Cookie Crawl to make the event a success.",
-    "vote_average": 6.5,
-    "vote_count": 70
+    "title": "Christmas Above the Clouds (2025)",
+    "imdb_id": "tt38183872"
   }
 ]

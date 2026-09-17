@@ -1,98 +1,34 @@
 [
   {
-    "title": "Christmas Above the Clouds",
-    "year": 2025,
-    "tmdbId": 1537081,
-    "imdbId": "tt38183872",
-    "tmdb_id": 1537081,
-    "imdb_id": "tt38183872",
-    "poster": "/images/posters/1537081.webp",
-    "overview": "When a workaholic CEO tries to skip Christmas by flying to Australia, she’s in for the flight of her life. Haunted by her past, present, and future, she’s forced to confront the choices that led to her success yet left her flying solo. With the help of three quirky spirits and a surprise reunion with her ex, she might just rediscover the magic of Christmas—and the love she thought she’d lost.",
-    "vote_average": 7.2,
-    "vote_count": 12
+    "title": "Once Upon A Holiday (2015)",
+    "imdb_id": "tt5033114"
   },
   {
-    "title": "Friends & Family Christmas",
-    "year": 2023,
-    "tmdbId": 1180706,
-    "imdbId": "tt29684873",
-    "tmdb_id": 1180706,
-    "imdb_id": "tt29684873",
-    "poster": "/images/posters/1180706.webp",
-    "overview": "Daniella has recently moved to New York to pursue an art career and decides to stay in town to share the holidays with her circle of artist friends, instead of going home to see her sweet, if overbearing, parents. Amelia is a talented entertainment lawyer trying to stay focused on her work after a broken engagement. When Daniella and Amelia are set up by their parents, they agree to pretend that they are dating, to appease them for the holidays. However, as they spend time in each other’s worlds, they soon build a connection that is deeper than either of them could have hoped for.",
-    "vote_average": 6.5,
-    "vote_count": 30
+    "title": "Homegrown Christmas (2018)",
+    "imdb_id": "tt9032562"
   },
   {
-    "title": "A Tale of Two Christmases",
-    "year": 2022,
-    "tmdbId": 1028546,
-    "imdbId": "tt22247650",
-    "tmdb_id": 1028546,
-    "imdb_id": "tt22247650",
-    "poster": "/images/posters/1028546.webp",
-    "overview": "Thanks to some Christmas magic, Emma gets to experience two different Christmases – one where she stays in the city and celebrates with a new crush and his friends, and one where she returns home for all the traditions with her family…and Drew, a longtime friend who may have feelings for her. Emma’s double holiday ultimately helps her discover what will truly make her happy in life as well as in love.",
-    "vote_average": 5.58,
-    "vote_count": 25
+    "title": "Christmas Town (2019)",
+    "imdb_id": "tt10344986"
   },
   {
-    "title": "Christmas Sail",
-    "year": 2021,
-    "tmdbId": 874228,
-    "imdbId": "tt15758364",
-    "tmdb_id": 874228,
-    "imdb_id": "tt15758364",
-    "poster": "/images/posters/874228.webp",
-    "overview": "When Liz returns home to take care of her estranged father, she is determined to give her daughter a perfect Christmas and reconnects with her best friend.",
-    "vote_average": 5.7,
-    "vote_count": 21
+    "title": "Christmas Sail (2021)",
+    "imdb_id": "tt15758364"
   },
   {
-    "title": "Gingerbread Miracle",
-    "year": 2021,
-    "tmdbId": 874244,
-    "imdbId": "tt15821582",
-    "tmdb_id": 874244,
-    "imdb_id": "tt15821582",
-    "poster": "/images/posters/874244.webp",
-    "overview": "Maya and Alex, old friends from high school, work together over Christmas to sell his uncle’s Mexican bakery famous for its gingerbread cookies that the patrons believe grants wishes.",
-    "vote_average": 6,
-    "vote_count": 30
+    "title": "Gingerbread Miracle (2021)",
+    "imdb_id": "tt15821582"
   },
   {
-    "title": "Christmas Town",
-    "year": 2019,
-    "tmdbId": 626318,
-    "imdbId": "tt10344986",
-    "tmdb_id": 626318,
-    "imdb_id": "tt10344986",
-    "poster": "/images/posters/626318.webp",
-    "overview": "Lauren Gabriel leaves everything behind in Boston to embark on a new chapter in her life and career. But an unforeseen detour to the charming town of Grandon Falls has her discover unexpected new chapters - of the heart and of family - helping her to embrace, once again, the magic of Christmas.",
-    "vote_average": 7.2,
-    "vote_count": 50
+    "title": "A Tale of Two Christmases (2022)",
+    "imdb_id": "tt22247650"
   },
   {
-    "title": "Homegrown Christmas",
-    "year": 2018,
-    "tmdbId": 550030,
-    "imdbId": "tt9032562",
-    "tmdb_id": 550030,
-    "imdb_id": "tt9032562",
-    "poster": "/images/posters/550030.webp",
-    "overview": "After stepping down as CEO of her dream job, Maddie heads home for the holidays to gain perspective. She finds herself running into her old high school sweetheart Carter, and tensions quickly arise. When forced to put together a Christmas dance for the local high school, Carter and Maddie find themselves putting their differences aside and rediscover what made them fall in love all those years ago.",
-    "vote_average": 4.833,
-    "vote_count": 38
+    "title": "Friends & Family Christmas (2023)",
+    "imdb_id": "tt29684873"
   },
   {
-    "title": "Once Upon A Holiday",
-    "year": 2015,
-    "tmdbId": 363482,
-    "imdbId": "tt5033114",
-    "tmdb_id": 363482,
-    "imdb_id": "tt5033114",
-    "poster": "/images/posters/363482.webp",
-    "overview": "When an actual, honest-to-goodness royal princess runs off from her official obligations and duties for a couple of days to see how the other half lives, she winds up falling for a good Samaritan who is unaware of her real identity during the holiday season. Will her true love still feel the same way once he learns the truth?",
-    "vote_average": 5.976,
-    "vote_count": 124
+    "title": "Christmas Above the Clouds (2025)",
+    "imdb_id": "tt38183872"
   }
 ]

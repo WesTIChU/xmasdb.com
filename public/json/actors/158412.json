@@ -1,26 +1,10 @@
 [
   {
-    "title": "Sugarplummed",
-    "year": 2024,
-    "tmdbId": 1359060,
-    "imdbId": "tt33900751",
-    "tmdb_id": 1359060,
-    "imdb_id": "tt33900751",
-    "poster": "/images/posters/1359060.webp",
-    "overview": "Emily's wish for a picture-perfect Christmas comes true when a magical, optimistic movie character steps off the screen to help, but as things spiral out of control, she learns that true holiday perfection might look very different from what she imagined.",
-    "vote_average": 7.024,
-    "vote_count": 21
+    "title": "Christmas with the Darlings (2020)",
+    "imdb_id": "tt13381368"
   },
   {
-    "title": "Christmas with the Darlings",
-    "year": 2020,
-    "tmdbId": 746032,
-    "imdbId": "tt13381368",
-    "tmdb_id": 746032,
-    "imdb_id": "tt13381368",
-    "poster": "/images/posters/746032.webp",
-    "overview": "Just before the holidays Jessica Lew is ending her tenure as the assistant to her wealthy boss to use her recently earned law degree within his company, but offers to help his charming, younger brother as he looks after his orphaned nieces and nephew over Christmas.",
-    "vote_average": 6.958,
-    "vote_count": 36
+    "title": "Sugarplummed (2024)",
+    "imdb_id": "tt33900751"
   }
 ]

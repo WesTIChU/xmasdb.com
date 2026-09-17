@@ -2,7 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { getActorUrl, getMovieUrl } from '../movie-url.js';
-import { generateActorJsonFeeds } from '../movie-storage.js';
+import { generateRadarrFeeds } from './generate-radarr-feeds.js';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const PUBLIC = path.join(ROOT, 'public');
@@ -12,7 +12,7 @@ for (const generatedDir of ['movie', 'actor', 'year', 'actors', 'radarr']) {
 }
 const movies = JSON.parse(fs.readFileSync(path.join(ROOT, 'movies.json'), 'utf8'));
 const castData = JSON.parse(fs.readFileSync(path.join(ROOT, 'cast.json'), 'utf8'));
-generateActorJsonFeeds(movies, castData);
+generateRadarrFeeds(movies, castData);
 const actors = (castData.actors || []).filter(actor => actor?.id && actor?.name && actor.count > 0);
 const actorById = new Map(actors.map(actor => [String(actor.id), actor]));
 const actorNameCounts = new Map(actors.map(actor => [actor.name.toLowerCase(), actors.filter(item => item.name.toLowerCase() === actor.name.toLowerCase()).length]));

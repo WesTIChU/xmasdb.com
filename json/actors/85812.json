@@ -1,26 +1,10 @@
 [
   {
-    "title": "A Royal Montana Christmas",
-    "year": 2025,
-    "tmdbId": 1535223,
-    "imdbId": "tt36364046",
-    "tmdb_id": 1535223,
-    "imdb_id": "tt36364046",
-    "poster": "/images/posters/1535223.webp",
-    "overview": "A princess looking to decompress before the holidays heads to a Montana ranch and meets a charming guide.",
-    "vote_average": 7.636,
-    "vote_count": 11
+    "title": "Holiday Crashers (2024)",
+    "imdb_id": "tt32011999"
   },
   {
-    "title": "Holiday Crashers",
-    "year": 2024,
-    "tmdbId": 1358987,
-    "imdbId": "tt32011999",
-    "tmdb_id": 1358987,
-    "imdb_id": "tt32011999",
-    "poster": "/images/posters/1358987.webp",
-    "overview": "Best friends Toni and Bri, working at a card print shop, decide to crash the amazing Christmas parties from some of the shop's confidential invitations for a bit of harmless fun. Harmless that is, until Toni is mistaken for a lawyer and they get whisked away to a fancy corporate Christmas retreat in the snowy Vermont mountains by handsome business mogul.",
-    "vote_average": 6.5,
-    "vote_count": 23
+    "title": "A Royal Montana Christmas (2025)",
+    "imdb_id": "tt36364046"
   }
 ]

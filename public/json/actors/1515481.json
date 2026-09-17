@@ -1,26 +1,10 @@
 [
   {
-    "title": "Checkin' It Twice",
-    "year": 2023,
-    "tmdbId": 1166012,
-    "imdbId": "tt29352965",
-    "tmdb_id": 1166012,
-    "imdb_id": "tt29352965",
-    "poster": "/images/posters/1166012.webp",
-    "overview": "A journeyman hockey player falls for a real estate agent in a career crisis when he's traded to her hometown and moves into the cottage in her hockey-loving family's backyard.",
-    "vote_average": 6.5,
-    "vote_count": 34
+    "title": "Christmas Scavenger Hunt (2019)",
+    "imdb_id": "tt10768278"
   },
   {
-    "title": "Christmas Scavenger Hunt",
-    "year": 2019,
-    "tmdbId": 627489,
-    "imdbId": "tt10768278",
-    "tmdb_id": 627489,
-    "imdb_id": "tt10768278",
-    "poster": "/images/posters/627489.webp",
-    "overview": "When Belinda heads back to her hometown for the holidays, things get complicated when she is forced to team up with her ex at the town's annual Christmas scavenger hunt.",
-    "vote_average": 6.2,
-    "vote_count": 34
+    "title": "Checkin' It Twice (2023)",
+    "imdb_id": "tt29352965"
   }
 ]

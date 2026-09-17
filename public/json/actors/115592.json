@@ -1,38 +1,14 @@
 [
   {
-    "title": "Single on the 25th",
-    "year": 2025,
-    "tmdbId": 1545997,
-    "imdbId": "tt38347292",
-    "tmdb_id": 1545997,
-    "imdb_id": "tt38347292",
-    "poster": "/images/posters/1545997.webp",
-    "overview": "After Nell’s family cancels holiday plans at the last minute, she decides to spend the week of Christmas having fun on her own — and crosses paths with her neighbor, who is “happily unattached.”",
-    "vote_average": 7.7,
-    "vote_count": 10
+    "title": "A Majestic Christmas (2018)",
+    "imdb_id": "tt9033636"
   },
   {
-    "title": "Double Holiday",
-    "year": 2019,
-    "tmdbId": 630913,
-    "imdbId": "tt10768328",
-    "tmdb_id": 630913,
-    "imdb_id": "tt10768328",
-    "poster": "/images/posters/630913.webp",
-    "overview": "Rebecca must throw the company holiday party with office rival, Chris. It coincides with Hanukkah, so she must juggle her work, family traditions, and nemesis to make the party a success.",
-    "vote_average": 7,
-    "vote_count": 41
+    "title": "Double Holiday (2019)",
+    "imdb_id": "tt10768328"
   },
   {
-    "title": "A Majestic Christmas",
-    "year": 2018,
-    "tmdbId": 550028,
-    "imdbId": "tt9033636",
-    "tmdb_id": 550028,
-    "imdb_id": "tt9033636",
-    "poster": "/images/posters/550028.webp",
-    "overview": "Christmas in the charming town of Briar Falls will be bittersweet this year when architect Nell goes back to her hometown having been given the job of turning the historic Majestic Playhouse into a modern multiplex, much to the town’s objections. The Playhouse has been home to their annual Christmas tableaux, which will now have to end after a long and historic tradition to the town. This job is Nell’s first promotion, and one she wishes she hadn’t been chosen for, especially when she meets the new owner of the theater, Connor, whose vision and ideas clash with Nell’s. Since Connor hasn’t had much experience celebrating Christmas, Nell hopes that if she can give him a crash course in Christmas during the town’s Twelve Day Festival, that he might just change his mind about modernizing the Majestic.",
-    "vote_average": 5,
-    "vote_count": 17
+    "title": "Single on the 25th (2025)",
+    "imdb_id": "tt38347292"
   }
 ]

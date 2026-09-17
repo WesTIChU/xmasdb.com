@@ -1,38 +1,14 @@
 [
   {
-    "title": "Jingle Around the Clock",
-    "year": 2018,
-    "tmdbId": 551701,
-    "imdbId": "tt9168384",
-    "tmdb_id": 551701,
-    "imdb_id": "tt9168384",
-    "poster": "/images/posters/551701.webp",
-    "overview": "Elle decides to reunite her college friends for Christmas, but her plans are thwarted by an opportunity at work to spearhead a Christmas campaign relaunch. She's forced to team up with ad campaign \"fixer\" Max, who has a completely different take on the holidays. As the two work together, they find themselves falling for each other. With the help of a little Christmas magic, will Elle pull off the perfect Christmas reunion and find the love she’s been searching for?",
-    "vote_average": 6.75,
-    "vote_count": 46
+    "title": "Christmas at Holly Lodge (2017)",
+    "imdb_id": "tt7557728"
   },
   {
-    "title": "Road to Christmas",
-    "year": 2018,
-    "tmdbId": 550017,
-    "imdbId": "tt8732914",
-    "tmdb_id": 550017,
-    "imdb_id": "tt8732914",
-    "poster": "/images/posters/550017.webp",
-    "overview": "Los Angeles television producer Maggie Baker unwittingly falls for Danny Wise, the son and former producer of his mother’s popular annual Christmas special Julia Wise Lifestyle. When Maggie’s secret plan to reunite Danny and his two brothers with Julia during the live broadcast in Vermont goes awry, Maggie is reminded that above all, it is the love for family and friends that makes the merriest of Christmas.",
-    "vote_average": 6.274,
-    "vote_count": 113
+    "title": "Road to Christmas (2018)",
+    "imdb_id": "tt8732914"
   },
   {
-    "title": "Christmas at Holly Lodge",
-    "year": 2017,
-    "tmdbId": 480622,
-    "imdbId": "tt7557728",
-    "tmdb_id": 480622,
-    "imdb_id": "tt7557728",
-    "poster": "/images/posters/480622.webp",
-    "overview": "Sophie Bennett begins a new holiday tradition of spending every holiday at the Evergreen Inn and Ski Lodge, which she inherited from her parents. Evergreen Inn is a special place filled with people who cannot make it home for the holidays or who have had such wonderful experiences that it has become their home-away-from-holiday-home. This Christmas, Sophie will meet an unforgettable family, and her own life will be forever changed.",
-    "vote_average": 5.9,
-    "vote_count": 56
+    "title": "Jingle Around the Clock (2018)",
+    "imdb_id": "tt9168384"
   }
 ]

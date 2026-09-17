@@ -1,26 +1,10 @@
 [
   {
-    "title": "The 5-Year Christmas Party",
-    "year": 2024,
-    "tmdbId": 1359868,
-    "imdbId": "tt33503201",
-    "tmdb_id": 1359868,
-    "imdb_id": "tt33503201",
-    "poster": "/images/posters/1359868.webp",
-    "overview": "Over five years, Alice and her old theater school rival, Max, reunite each holiday season to work at a Chicago catering company's Christmas parties.  While their undeniable chemistry grows, the timing is never right for romance - until the company's final season pushes them to confront their true feelings.",
-    "vote_average": 5.111,
-    "vote_count": 8
+    "title": "Sealed with a List (2023)",
+    "imdb_id": "tt29233395"
   },
   {
-    "title": "Sealed with a List",
-    "year": 2023,
-    "tmdbId": 1180688,
-    "imdbId": "tt29233395",
-    "tmdb_id": 1180688,
-    "imdb_id": "tt29233395",
-    "poster": "/images/posters/1180688.webp",
-    "overview": "Carley is determined to get through her list of abandoned resolutions from last year and enlists the help of coworker Wyatt.",
-    "vote_average": 6.413,
-    "vote_count": 23
+    "title": "The 5-Year Christmas Party (2024)",
+    "imdb_id": "tt33503201"
   }
 ]

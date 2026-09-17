@@ -1,26 +1,10 @@
 [
   {
-    "title": "The Christmas Cup",
-    "year": 2025,
-    "tmdbId": 1547922,
-    "imdbId": "tt38354991",
-    "tmdb_id": 1547922,
-    "imdb_id": "tt38354991",
-    "poster": "/images/posters/1547922.webp",
-    "overview": "After an injury, Staff Sergeant Kelly Brandt returns home for the holidays and her family pushes her to get involved in the annual Christmas Cup against the rival town; with that, she teams up with Fire Captain Quinn Stokley.",
-    "vote_average": 5.167,
-    "vote_count": 6
+    "title": "My Norwegian Holiday (2023)",
+    "imdb_id": "tt29233518"
   },
   {
-    "title": "My Norwegian Holiday",
-    "year": 2023,
-    "tmdbId": 1180750,
-    "imdbId": "tt29233518",
-    "tmdb_id": 1180750,
-    "imdb_id": "tt29233518",
-    "poster": "/images/posters/1180750.webp",
-    "overview": "JJ, grieving the loss of her grandmother, jumps at the chance to join a new friend, Henrik, on a trip to Norway to discover her grandmother’s history and look into how she landed a troll figurine from his hometown.",
-    "vote_average": 6.674,
-    "vote_count": 23
+    "title": "The Christmas Cup (2025)",
+    "imdb_id": "tt38354991"
   }
 ]

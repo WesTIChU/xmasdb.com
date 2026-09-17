@@ -1,26 +1,10 @@
 [
   {
-    "title": "The Santa Stakeout",
-    "year": 2021,
-    "tmdbId": 874238,
-    "imdbId": "tt15737510",
-    "tmdb_id": 874238,
-    "imdb_id": "tt15737510",
-    "poster": "/images/posters/874238.webp",
-    "overview": "Tanya is a police detective who is reluctantly partnered with fellow detective Ryan to solve a recent string of heists taking place during high-profile holiday parties around town.",
-    "vote_average": 6.1,
-    "vote_count": 22
+    "title": "Finding Santa (2017)",
+    "imdb_id": "tt7385392"
   },
   {
-    "title": "Finding Santa",
-    "year": 2017,
-    "tmdbId": 474985,
-    "imdbId": "tt7385392",
-    "tmdb_id": 474985,
-    "imdb_id": "tt7385392",
-    "poster": "/images/posters/474985.webp",
-    "overview": "Christmas is a busy, busy time for the residents of Green River, particularly for Grace Long, the third generation of her family to steward the New England town’s signature Christmas Eve parade. This year’s audience for the parade promises to be in the millions, thanks to a national morning show that has chosen Green River as the site of its Christmas Eve day program.",
-    "vote_average": 6.668,
-    "vote_count": 98
+    "title": "The Santa Stakeout (2021)",
+    "imdb_id": "tt15737510"
   }
 ]

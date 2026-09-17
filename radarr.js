@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const baseDir = pathname.substring(0, pathname.lastIndexOf('/') + 1);
 
     if (feed === 'ALL') {
-      return `${origin}${baseDir}movies.json`;
+      return `${origin}${baseDir}json/all.json`;
     }
     return `${origin}${baseDir}json/${feed}.json`;
   }
@@ -104,7 +104,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     if (footerJsonLink) {
-      footerJsonLink.href = feed === 'ALL' ? 'movies.json' : `json/${feed}.json`;
+      footerJsonLink.href = feed === 'ALL' ? 'json/all.json' : `json/${feed}.json`;
     }
 
     // Update active state on choice buttons

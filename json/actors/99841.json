@@ -1,62 +1,22 @@
 [
   {
-    "title": "Round and Round",
-    "year": 2023,
-    "tmdbId": 1180682,
-    "imdbId": "tt29244163",
-    "tmdb_id": 1180682,
-    "imdb_id": "tt29244163",
-    "poster": "/images/posters/1180682.webp",
-    "overview": "While Rachel is stuck in a time loop, reliving the night of her parents' Hanukkah party, she leans on the boy her grandmother is trying to set her up with to make it out.",
-    "vote_average": 6.658,
-    "vote_count": 19
+    "title": "Coming Home for Christmas (2017)",
+    "imdb_id": "tt7038614"
   },
   {
-    "title": "Hanukkah on Rye",
-    "year": 2022,
-    "tmdbId": 1028555,
-    "imdbId": "tt22307422",
-    "tmdb_id": 1028555,
-    "imdb_id": "tt22307422",
-    "poster": "/images/posters/1028555.webp",
-    "overview": "A matchmaker connects Molly and Jacob, but their new romance is put to the test when they realize that they are competing deli owners. Will a Hanukkah miracle keep them together?",
-    "vote_average": 6.154,
-    "vote_count": 26
+    "title": "Picture a Perfect Christmas (2019)",
+    "imdb_id": "tt10553910"
   },
   {
-    "title": "Five Star Christmas",
-    "year": 2020,
-    "tmdbId": 746060,
-    "imdbId": "tt13320784",
-    "tmdb_id": 746060,
-    "imdb_id": "tt13320784",
-    "poster": "/images/posters/746060.webp",
-    "overview": "After moving back to her hometown, Lisa (Lenz) plots with her siblings and grandparents to help her father's bed and breakfast get a five-star review from an incognito travel critic (Webster), but ends up falling for him, not knowing he is the real critic.",
-    "vote_average": 6.865,
-    "vote_count": 48
+    "title": "Five Star Christmas (2020)",
+    "imdb_id": "tt13320784"
   },
   {
-    "title": "Picture a Perfect Christmas",
-    "year": 2019,
-    "tmdbId": 626323,
-    "imdbId": "tt10553910",
-    "tmdb_id": 626323,
-    "imdb_id": "tt10553910",
-    "poster": "/images/posters/626323.webp",
-    "overview": "An extreme-sports photographer returns home for the holiday to take care of her grandmother, only to have a neighbor grab her attention as he needs assistance watching his young nephew.",
-    "vote_average": 6.17,
-    "vote_count": 47
+    "title": "Hanukkah on Rye (2022)",
+    "imdb_id": "tt22307422"
   },
   {
-    "title": "Coming Home for Christmas",
-    "year": 2017,
-    "tmdbId": 474983,
-    "imdbId": "tt7038614",
-    "tmdb_id": 474983,
-    "imdb_id": "tt7038614",
-    "poster": "/images/posters/474983.webp",
-    "overview": "Lizzie Richfield is at a crossroads when she lands a job as house manager for the exquisite Ashford Estate in the Virginia countryside. While planning one final Christmas Eve gala for the Marley family, Lizzie finds herself drawn to Robert—even as Kip pursues her.",
-    "vote_average": 6.6,
-    "vote_count": 63
+    "title": "Round and Round (2023)",
+    "imdb_id": "tt29244163"
   }
 ]

@@ -1,62 +1,22 @@
 [
   {
-    "title": "Christmas On Call",
-    "year": 2024,
-    "tmdbId": 1361154,
-    "imdbId": "tt33829451",
-    "tmdb_id": 1361154,
-    "imdb_id": "tt33829451",
-    "poster": "/images/posters/1361154.webp",
-    "overview": "The lives of first responders in Philadelphia intersect over the holiday season while juggling work, personal lives, and their dedication to protect and serve their city.",
-    "vote_average": 7.1,
-    "vote_count": 25
+    "title": "Christmas Connection (2017)",
+    "imdb_id": "tt7630836"
   },
   {
-    "title": "Holiday Hotline",
-    "year": 2023,
-    "tmdbId": 1180811,
-    "imdbId": "tt29499210",
-    "tmdb_id": 1180811,
-    "imdb_id": "tt29499210",
-    "poster": "/images/posters/1180811.webp",
-    "overview": "Upon leaving London and working at a cooking hotline, Abby connects with an anonymous caller — a single dad who Abby unknowingly is also smitten with in real life.",
-    "vote_average": 6.848,
-    "vote_count": 32
+    "title": "A Christmas Cookie Catastrophe (2022)",
+    "imdb_id": "tt22207828"
   },
   {
-    "title": "The Santa Summit",
-    "year": 2023,
-    "tmdbId": 1142712,
-    "imdbId": "tt29381717",
-    "tmdb_id": 1142712,
-    "imdb_id": "tt29381717",
-    "poster": "/images/posters/1142712.webp",
-    "overview": "Amidst a sea of Santas at their town's annual Christmas celebration, three friends all find what they’re looking for: Christmas spirit, potential romance, and a strengthened bond of friendship.",
-    "vote_average": 6.517,
-    "vote_count": 29
+    "title": "The Santa Summit (2023)",
+    "imdb_id": "tt29381717"
   },
   {
-    "title": "A Christmas Cookie Catastrophe",
-    "year": 2022,
-    "tmdbId": 1028552,
-    "imdbId": "tt22207828",
-    "tmdb_id": 1028552,
-    "imdb_id": "tt22207828",
-    "poster": "/images/posters/1028552.webp",
-    "overview": "Annie Cooper has big shoes to fill when she takes over as CEO of her late grandmother’s small-town cookie company and is doing her best to help their struggling business get back on track. That task gets more daunting when her grandmother’s secret recipe is stolen during the Christmas party. As Annie tries to crack the case and uncover the culprit she works with Sam, the owner of a local bakery, to recreate the recipe in the hope of saving the company and her job.  As Annie and Sam bake batch after batch in pursuit of the perfect one, they begin to learn that their lives go together like milk and cookies.",
-    "vote_average": 5.635,
-    "vote_count": 37
+    "title": "Holiday Hotline (2023)",
+    "imdb_id": "tt29499210"
   },
   {
-    "title": "Christmas Connection",
-    "year": 2017,
-    "tmdbId": 474994,
-    "imdbId": "tt7630836",
-    "tmdb_id": 474994,
-    "imdb_id": "tt7630836",
-    "poster": "/images/posters/474994.webp",
-    "overview": "Adventurous flight attendant Sydney’s plans for a tropical Christmas get delayed when she helps an unaccompanied minor get home to Chicago to her dad Jonathan, a handsome widower and investigative reporter. Faced with a shortage of out-going flights, Sydney is marooned for several days in the Windy City – once her home as a small girl — and tags along with Jonathan, his daughter, and their exuberantly festive family until she can find a connecting flight. Jonathan makes her a deal: he helps her chase down the story of how her late parents met, and she helps him to write the perfect Christmas story and keep his job, and along the way, sparks form between them.",
-    "vote_average": 5.982,
-    "vote_count": 57
+    "title": "Christmas On Call (2024)",
+    "imdb_id": "tt33829451"
   }
 ]

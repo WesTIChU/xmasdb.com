@@ -1,14 +1,6 @@
 [
   {
-    "title": "My Christmas Dream",
-    "year": 2016,
-    "tmdbId": 415962,
-    "imdbId": "tt5949946",
-    "tmdb_id": 415962,
-    "imdb_id": "tt5949946",
-    "poster": "/images/posters/415962.webp",
-    "overview": "A department store manager sets out to create an amazing holiday display window to impress the owner. She asks a recently-fired employee to help her make the display, and as they work together, they start to fall in love.",
-    "vote_average": 5.8,
-    "vote_count": 79
+    "title": "My Christmas Dream (2016)",
+    "imdb_id": "tt5949946"
   }
 ]

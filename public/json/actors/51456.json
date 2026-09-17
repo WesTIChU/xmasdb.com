@@ -1,26 +1,10 @@
 [
   {
-    "title": "Christmas at Graceland",
-    "year": 2018,
-    "tmdbId": 535808,
-    "imdbId": "tt8694374",
-    "tmdb_id": 535808,
-    "imdb_id": "tt8694374",
-    "poster": "/images/posters/535808.webp",
-    "overview": "Laurel, a Chicago-based business executive, travels to Memphis to secure one of the city's oldest family-owned banks. While in Memphis, Laurel reunites with old flame Clay, a local music promoter with loftier aspirations. Though Laurel tries to keep her eye on the prize of the business acquisition, Clay is very persuasive reminding her of the days when they were a performing duo on the brink of stardom. Now Laurel's focus turns to the home of the Blues and dreams of making music again.",
-    "vote_average": 5.8,
-    "vote_count": 56
+    "title": "Christmas in Homestead (2016)",
+    "imdb_id": "tt6273004"
   },
   {
-    "title": "Christmas in Homestead",
-    "year": 2016,
-    "tmdbId": 421620,
-    "imdbId": "tt6273004",
-    "tmdb_id": 421620,
-    "imdb_id": "tt6273004",
-    "poster": "/images/posters/421620.webp",
-    "overview": "Jessica is one of the most famous actresses in the world, leading a glamorous – if tabloid worthy – life. But all that is thrown for a loop when she goes on location to shoot a holiday themed film in the Christmas-obsessed town of Homestead, Iowa. While a romance brews between her and Matt, a local inn keeper who is a single dad, she also gets a taste of small-town life and rediscovers the true meaning of Christmas.",
-    "vote_average": 6.1,
-    "vote_count": 92
+    "title": "Christmas at Graceland (2018)",
+    "imdb_id": "tt8694374"
   }
 ]

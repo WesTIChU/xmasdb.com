@@ -1,38 +1,14 @@
 [
   {
-    "title": "We Wish You a Married Christmas",
-    "year": 2022,
-    "tmdbId": 1027338,
-    "imdbId": "tt20876910",
-    "tmdb_id": 1027338,
-    "imdb_id": "tt20876910",
-    "poster": "/images/posters/1027338.webp",
-    "overview": "Becca and Robby are a married couple having a hard time connecting with each other as the holidays approach. Just before Christmas, they head to a cozy Vermont inn at the advice of their marriage coach so they can recharge. Their weekend away gets unexpectedly extended when a mishap puts their car out of commission and just may put them on the road to a very happily married Christmas.",
-    "vote_average": 5.162,
-    "vote_count": 37
+    "title": "The Christmas Club (2019)",
+    "imdb_id": "tt10667026"
   },
   {
-    "title": "Christmas at the Plaza",
-    "year": 2019,
-    "tmdbId": 630916,
-    "imdbId": "tt10921042",
-    "tmdb_id": 630916,
-    "imdb_id": "tt10921042",
-    "poster": "/images/posters/630916.webp",
-    "overview": "With Christmas approaching in New York City, historian Jessica is hired to create an exhibition honoring the history of Christmas at The Plaza Hotel. When she is paired with Nick, a handsome decorator, they wind up enjoying a host of holiday traditions together and find themselves falling for each other.",
-    "vote_average": 6.398,
-    "vote_count": 122
+    "title": "Christmas at the Plaza (2019)",
+    "imdb_id": "tt10921042"
   },
   {
-    "title": "The Christmas Club",
-    "year": 2019,
-    "tmdbId": 628332,
-    "imdbId": "tt10667026",
-    "tmdb_id": 628332,
-    "imdb_id": "tt10667026",
-    "poster": "/images/posters/628332.webp",
-    "overview": "Two busy strangers meet when they help an elderly woman find her lost Christmas savings. Thanks to fate and Christmas magic, they also find something they were both missing: true love.",
-    "vote_average": 6.3,
-    "vote_count": 35
+    "title": "We Wish You a Married Christmas (2022)",
+    "imdb_id": "tt20876910"
   }
 ]

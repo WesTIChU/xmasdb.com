@@ -1,26 +1,10 @@
 [
   {
-    "title": "A Dickens of a Holiday!",
-    "year": 2021,
-    "tmdbId": 877828,
-    "imdbId": "tt15235708",
-    "tmdb_id": 877828,
-    "imdb_id": "tt15235708",
-    "poster": "/images/posters/877828.webp",
-    "overview": "To make the 100th anniversary of her hometown's Victorian festival a success, Cassie invites action movie star and former high school classmate Jake to play Scrooge in A Christmas Carol.",
-    "vote_average": 6.8,
-    "vote_count": 28
+    "title": "Write Before Christmas (2019)",
+    "imdb_id": "tt10345008"
   },
   {
-    "title": "Write Before Christmas",
-    "year": 2019,
-    "tmdbId": 626319,
-    "imdbId": "tt10345008",
-    "tmdb_id": 626319,
-    "imdb_id": "tt10345008",
-    "poster": "/images/posters/626319.webp",
-    "overview": "A recently single Jessica sends Christmas cards to people who have impacted her life—the aunt who raised her, her younger brother in the military, a popstar who was part of the soundtrack of her life, the music teacher who inspired her, and the best friend who always tells the truth.",
-    "vote_average": 6.9,
-    "vote_count": 115
+    "title": "A Dickens of a Holiday! (2021)",
+    "imdb_id": "tt15235708"
   }
 ]

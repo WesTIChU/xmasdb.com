@@ -1,26 +1,10 @@
 [
   {
-    "title": "The Snow Must Go On",
-    "year": 2025,
-    "tmdbId": 1547920,
-    "imdbId": "tt38354943",
-    "tmdb_id": 1547920,
-    "imdb_id": "tt38354943",
-    "poster": "/images/posters/1547920.webp",
-    "overview": "Nearly a decade after appearing on Broadway, Isaiah visits his family in upstate New York for the holidays and is unexpectedly put back on stage — this time to save his niece’s Christmas show. To make things more complicated, he learns that “an influential Broadway producer’s daughter is in the school production.”",
-    "vote_average": 5.125,
-    "vote_count": 8
+    "title": "A Big Fat Family Christmas (2022)",
+    "imdb_id": "tt22262600"
   },
   {
-    "title": "A Big Fat Family Christmas",
-    "year": 2022,
-    "tmdbId": 1028559,
-    "imdbId": "tt22262600",
-    "tmdb_id": 1028559,
-    "imdb_id": "tt22262600",
-    "poster": "/images/posters/1028559.webp",
-    "overview": "Liv is a photojournalist eager to make it on her own. To get a dream assignment – shooting the Chang family’s annual holiday party for a cover story – she doesn’t reveal that they are in fact, her family. When she finds herself growing close to Henry, the coworker covering the story with her, she wants to confide in him but doesn’t want to jeopardize her big break.",
-    "vote_average": 5.3,
-    "vote_count": 11
+    "title": "The Snow Must Go On (2025)",
+    "imdb_id": "tt38354943"
   }
 ]

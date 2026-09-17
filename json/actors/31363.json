@@ -1,98 +1,34 @@
 [
   {
-    "title": "The Christmas Contest",
-    "year": 2021,
-    "tmdbId": 874144,
-    "imdbId": "tt15316422",
-    "tmdb_id": 874144,
-    "imdb_id": "tt15316422",
-    "poster": "/images/posters/874144.webp",
-    "overview": "Exes Lara and Ben compete in a Christmas contest to win money for the charity of their choosing. The city watches them battle and choose what is more important, victory or love.",
-    "vote_average": 5.897,
-    "vote_count": 39
+    "title": "Christmas Under Wraps (2014)",
+    "imdb_id": "tt4180032"
   },
   {
-    "title": "If I Only Had Christmas",
-    "year": 2020,
-    "tmdbId": 737766,
-    "imdbId": "tt12766346",
-    "tmdb_id": 737766,
-    "imdb_id": "tt12766346",
-    "poster": "/images/posters/737766.webp",
-    "overview": "At Christmas, a cheerful publicist teams up with a cynical business owner and his team to help a charity in need.",
-    "vote_average": 6.6,
-    "vote_count": 46
+    "title": "A Christmas Detour (2015)",
+    "imdb_id": "tt4767950"
   },
   {
-    "title": "Christmas Town",
-    "year": 2019,
-    "tmdbId": 626318,
-    "imdbId": "tt10344986",
-    "tmdb_id": 626318,
-    "imdb_id": "tt10344986",
-    "poster": "/images/posters/626318.webp",
-    "overview": "Lauren Gabriel leaves everything behind in Boston to embark on a new chapter in her life and career. But an unforeseen detour to the charming town of Grandon Falls has her discover unexpected new chapters - of the heart and of family - helping her to embrace, once again, the magic of Christmas.",
-    "vote_average": 7.2,
-    "vote_count": 50
+    "title": "Journey Back to Christmas (2016)",
+    "imdb_id": "tt6269192"
   },
   {
-    "title": "A Shoe Addict's Christmas",
-    "year": 2018,
-    "tmdbId": 535809,
-    "imdbId": "tt8634202",
-    "tmdb_id": 535809,
-    "imdb_id": "tt8634202",
-    "poster": "/images/posters/535809.webp",
-    "overview": "As Christmas approaches, a department store worker whose life lacks fulfillment meets her guardian angel, who offers her a chance to change her circumstances by magically transporting her to Christmases past whenever she tries on a new pair of shoes.",
-    "vote_average": 6.165,
-    "vote_count": 79
+    "title": "Switched for Christmas (2017)",
+    "imdb_id": "tt7038606"
   },
   {
-    "title": "Switched for Christmas",
-    "year": 2017,
-    "tmdbId": 475830,
-    "imdbId": "tt7038606",
-    "tmdb_id": 475830,
-    "imdb_id": "tt7038606",
-    "poster": "/images/posters/475830.webp",
-    "overview": "Identical twins Kate and Chris Lockhart plot to be the other sister – at Kate’s office and Chris’ school – and take on planning their sister’s Christmas events. One rule, though: no romance.",
-    "vote_average": 6.495,
-    "vote_count": 103
+    "title": "A Shoe Addict's Christmas (2018)",
+    "imdb_id": "tt8634202"
   },
   {
-    "title": "Journey Back to Christmas",
-    "year": 2016,
-    "tmdbId": 421758,
-    "imdbId": "tt6269192",
-    "tmdb_id": 421758,
-    "imdb_id": "tt6269192",
-    "poster": "/images/posters/421758.webp",
-    "overview": "WWII has ended and Hanna is still grieving over her husband's disappearance. When the Christmas Comet appears for the first time in 70 years, Hanna is caught in a terrible storm and knocked unconscious. When she wakes up, she's in 2016.",
-    "vote_average": 6.5,
-    "vote_count": 95
+    "title": "Christmas Town (2019)",
+    "imdb_id": "tt10344986"
   },
   {
-    "title": "A Christmas Detour",
-    "year": 2015,
-    "tmdbId": 348634,
-    "imdbId": "tt4767950",
-    "tmdb_id": 348634,
-    "imdb_id": "tt4767950",
-    "poster": "/images/posters/348634.webp",
-    "overview": "A bubbly bride-to-be’s Christmas plans take an unexpected turn when her holiday flight to New York is detoured and she encounters a cynical bar manager who has lost his faith in love. As she scrambles to make it back east for Christmas—and plan her upcoming wedding—she begins wondering if she’s marrying the right man, and learns a surprising lesson about love.",
-    "vote_average": 6.057,
-    "vote_count": 106
+    "title": "If I Only Had Christmas (2020)",
+    "imdb_id": "tt12766346"
   },
   {
-    "title": "Christmas Under Wraps",
-    "year": 2014,
-    "tmdbId": 299584,
-    "imdbId": "tt4180032",
-    "tmdb_id": 299584,
-    "imdb_id": "tt4180032",
-    "poster": "/images/posters/299584.webp",
-    "overview": "When a driven doctor doesn't get the prestigious position she planned for, she unexpectedly finds herself moving to a remote Alaskan town. While she meets the locals and even starts a new romance, she has to learn to let the life she planned for give way to a love she never could have imagined, and finds this festive small town is hiding one big holiday secret.",
-    "vote_average": 5.867,
-    "vote_count": 206
+    "title": "The Christmas Contest (2021)",
+    "imdb_id": "tt15316422"
   }
 ]

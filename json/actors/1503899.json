@@ -1,26 +1,10 @@
 [
   {
-    "title": "Hanukkah on Rye",
-    "year": 2022,
-    "tmdbId": 1028555,
-    "imdbId": "tt22307422",
-    "tmdb_id": 1028555,
-    "imdb_id": "tt22307422",
-    "poster": "/images/posters/1028555.webp",
-    "overview": "A matchmaker connects Molly and Jacob, but their new romance is put to the test when they realize that they are competing deli owners. Will a Hanukkah miracle keep them together?",
-    "vote_average": 6.154,
-    "vote_count": 26
+    "title": "We Wish You a Married Christmas (2022)",
+    "imdb_id": "tt20876910"
   },
   {
-    "title": "We Wish You a Married Christmas",
-    "year": 2022,
-    "tmdbId": 1027338,
-    "imdbId": "tt20876910",
-    "tmdb_id": 1027338,
-    "imdb_id": "tt20876910",
-    "poster": "/images/posters/1027338.webp",
-    "overview": "Becca and Robby are a married couple having a hard time connecting with each other as the holidays approach. Just before Christmas, they head to a cozy Vermont inn at the advice of their marriage coach so they can recharge. Their weekend away gets unexpectedly extended when a mishap puts their car out of commission and just may put them on the road to a very happily married Christmas.",
-    "vote_average": 5.162,
-    "vote_count": 37
+    "title": "Hanukkah on Rye (2022)",
+    "imdb_id": "tt22307422"
   }
 ]

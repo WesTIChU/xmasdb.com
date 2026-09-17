@@ -1,62 +1,22 @@
 [
   {
-    "title": "A Suite Holiday Romance",
-    "year": 2025,
-    "tmdbId": 1547925,
-    "imdbId": "tt38354975",
-    "tmdb_id": 1547925,
-    "imdb_id": "tt38354975",
-    "poster": "/images/posters/1547925.webp",
-    "overview": "During Christmas week, Sabrina jumps at the opportunity to ghostwrite a memoir for a famous art dealer at the iconic Grand Fairbanks Hotel in New York City. The week gets complicated when she meets a handsome British visitor at the hotel bar; she thinks he’s a member of the British aristocracy, and he thinks she’s a wealthy hotel guest.",
-    "vote_average": 6.889,
-    "vote_count": 9
+    "title": "Royal New Year's Eve (2017)",
+    "imdb_id": "tt7654082"
   },
   {
-    "title": "Mystic Christmas",
-    "year": 2023,
-    "tmdbId": 1142715,
-    "imdbId": "tt27813285",
-    "tmdb_id": 1142715,
-    "imdb_id": "tt27813285",
-    "poster": "/images/posters/1142715.webp",
-    "overview": "During the holidays, Juniper reconnects with the owner of the pizza shop in to Mystic, Connecticut, where she's working at the rehabilitation center and aquarium.",
-    "vote_average": 5.578,
-    "vote_count": 32
+    "title": "Road to Christmas (2018)",
+    "imdb_id": "tt8732914"
   },
   {
-    "title": "A Nashville Christmas Carol",
-    "year": 2020,
-    "tmdbId": 746041,
-    "imdbId": "tt13341432",
-    "tmdb_id": 746041,
-    "imdb_id": "tt13341432",
-    "poster": "/images/posters/746041.webp",
-    "overview": "A workaholic television producer receives a visit from her recently deceased mentor, who warns her that her current path leads to a dark future.",
-    "vote_average": 6.7,
-    "vote_count": 37
+    "title": "A Nashville Christmas Carol (2020)",
+    "imdb_id": "tt13341432"
   },
   {
-    "title": "Road to Christmas",
-    "year": 2018,
-    "tmdbId": 550017,
-    "imdbId": "tt8732914",
-    "tmdb_id": 550017,
-    "imdb_id": "tt8732914",
-    "poster": "/images/posters/550017.webp",
-    "overview": "Los Angeles television producer Maggie Baker unwittingly falls for Danny Wise, the son and former producer of his mother’s popular annual Christmas special Julia Wise Lifestyle. When Maggie’s secret plan to reunite Danny and his two brothers with Julia during the live broadcast in Vermont goes awry, Maggie is reminded that above all, it is the love for family and friends that makes the merriest of Christmas.",
-    "vote_average": 6.274,
-    "vote_count": 113
+    "title": "Mystic Christmas (2023)",
+    "imdb_id": "tt27813285"
   },
   {
-    "title": "Royal New Year's Eve",
-    "year": 2017,
-    "tmdbId": 474979,
-    "imdbId": "tt7654082",
-    "tmdb_id": 474979,
-    "imdb_id": "tt7654082",
-    "poster": "/images/posters/474979.webp",
-    "overview": "An aspiring fashion designer falls in love with her socialite client's prospective fiance, Prince Jeffrey.",
-    "vote_average": 6.132,
-    "vote_count": 102
+    "title": "A Suite Holiday Romance (2025)",
+    "imdb_id": "tt38354975"
   }
 ]

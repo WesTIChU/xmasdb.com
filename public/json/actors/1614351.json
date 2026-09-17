@@ -1,26 +1,10 @@
 [
   {
-    "title": "A Merry Scottish Christmas",
-    "year": 2023,
-    "tmdbId": 1145635,
-    "imdbId": "tt28237077",
-    "tmdb_id": 1145635,
-    "imdb_id": "tt28237077",
-    "poster": "/images/posters/1145635.webp",
-    "overview": "When estranged siblings Lindsay and Brad travel to Scotland at Christmas to reunite with their mother Jo, a big family secret is revealed.",
-    "vote_average": 6.222,
-    "vote_count": 54
+    "title": "A Merry Scottish Christmas (2023)",
+    "imdb_id": "tt28237077"
   },
   {
-    "title": "My Norwegian Holiday",
-    "year": 2023,
-    "tmdbId": 1180750,
-    "imdbId": "tt29233518",
-    "tmdb_id": 1180750,
-    "imdb_id": "tt29233518",
-    "poster": "/images/posters/1180750.webp",
-    "overview": "JJ, grieving the loss of her grandmother, jumps at the chance to join a new friend, Henrik, on a trip to Norway to discover her grandmother’s history and look into how she landed a troll figurine from his hometown.",
-    "vote_average": 6.674,
-    "vote_count": 23
+    "title": "My Norwegian Holiday (2023)",
+    "imdb_id": "tt29233518"
   }
 ]

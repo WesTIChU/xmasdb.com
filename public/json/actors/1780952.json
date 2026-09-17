@@ -1,50 +1,18 @@
 [
   {
-    "title": "A Suite Holiday Romance",
-    "year": 2025,
-    "tmdbId": 1547925,
-    "imdbId": "tt38354975",
-    "tmdb_id": 1547925,
-    "imdb_id": "tt38354975",
-    "poster": "/images/posters/1547925.webp",
-    "overview": "During Christmas week, Sabrina jumps at the opportunity to ghostwrite a memoir for a famous art dealer at the iconic Grand Fairbanks Hotel in New York City. The week gets complicated when she meets a handsome British visitor at the hotel bar; she thinks he’s a member of the British aristocracy, and he thinks she’s a wealthy hotel guest.",
-    "vote_average": 6.889,
-    "vote_count": 9
+    "title": "Christmas Connection (2017)",
+    "imdb_id": "tt7630836"
   },
   {
-    "title": "A Carol for Two",
-    "year": 2024,
-    "tmdbId": 1360779,
-    "imdbId": "tt31438256",
-    "tmdb_id": 1360779,
-    "imdb_id": "tt31438256",
-    "poster": "/images/posters/1360779.webp",
-    "overview": "Violette dreams of Broadway, but lands a singing waitress gig at Fiore's. Her Christmas Eve duet with Alex, who resents her connections, could be her big break. As they rehearse, Alex's cousin Brad, with Alex's secret help, woos Violette. Alex develops feelings too, creating a messy love triangle that jeopardizes their shot at stardom.",
-    "vote_average": 6.2,
-    "vote_count": 9
+    "title": "A Kiss Before Christmas (2021)",
+    "imdb_id": "tt15565510"
   },
   {
-    "title": "A Kiss Before Christmas",
-    "year": 2021,
-    "tmdbId": 874260,
-    "imdbId": "tt15565510",
-    "tmdb_id": 874260,
-    "imdb_id": "tt15565510",
-    "poster": "/images/posters/874260.webp",
-    "overview": "Ethan, always the nice guy, wakes up in a new reality at Christmas. Initially, he is enthralled with his new life but soon realizes that it's not what he thought it would be.",
-    "vote_average": 6.044,
-    "vote_count": 68
+    "title": "A Carol for Two (2024)",
+    "imdb_id": "tt31438256"
   },
   {
-    "title": "Christmas Connection",
-    "year": 2017,
-    "tmdbId": 474994,
-    "imdbId": "tt7630836",
-    "tmdb_id": 474994,
-    "imdb_id": "tt7630836",
-    "poster": "/images/posters/474994.webp",
-    "overview": "Adventurous flight attendant Sydney’s plans for a tropical Christmas get delayed when she helps an unaccompanied minor get home to Chicago to her dad Jonathan, a handsome widower and investigative reporter. Faced with a shortage of out-going flights, Sydney is marooned for several days in the Windy City – once her home as a small girl — and tags along with Jonathan, his daughter, and their exuberantly festive family until she can find a connecting flight. Jonathan makes her a deal: he helps her chase down the story of how her late parents met, and she helps him to write the perfect Christmas story and keep his job, and along the way, sparks form between them.",
-    "vote_average": 5.982,
-    "vote_count": 57
+    "title": "A Suite Holiday Romance (2025)",
+    "imdb_id": "tt38354975"
   }
 ]

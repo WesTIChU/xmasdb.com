@@ -1,26 +1,10 @@
 [
   {
-    "title": "We Met in December",
-    "year": 2025,
-    "tmdbId": 1547918,
-    "imdbId": "tt38354934",
-    "tmdb_id": 1547918,
-    "imdb_id": "tt38354934",
-    "poster": "/images/posters/1547918.webp",
-    "overview": "Two strangers meet on a layover and fall for one another — but forget to exchange numbers. The next day, they fly to Chicago separately, just miss each other, and “embark on separate quests to find one another.\"",
-    "vote_average": 6.864,
-    "vote_count": 22
+    "title": "Operation Nutcracker (2024)",
+    "imdb_id": "tt30487216"
   },
   {
-    "title": "Operation Nutcracker",
-    "year": 2024,
-    "tmdbId": 1298476,
-    "imdbId": "tt30487216",
-    "tmdb_id": 1298476,
-    "imdb_id": "tt30487216",
-    "poster": "/images/posters/1298476.webp",
-    "overview": "When an antique nutcracker set to be auctioned at the Warby family Christmas charity goes missing, a demanding event planner and the heir to the Warby dynasty try to track it down.",
-    "vote_average": 6.725,
-    "vote_count": 19
+    "title": "We Met in December (2025)",
+    "imdb_id": "tt38354934"
   }
 ]

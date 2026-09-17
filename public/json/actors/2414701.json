@@ -1,26 +1,10 @@
 [
   {
-    "title": "Tidings for the Season",
-    "year": 2025,
-    "tmdbId": 1547915,
-    "imdbId": "tt38353925",
-    "tmdb_id": 1547915,
-    "imdb_id": "tt38353925",
-    "poster": "/images/posters/1547915.webp",
-    "overview": "A local newscaster’s life changes when he meets a 10-year-old fan — and his single mother — during the holidays.",
-    "vote_average": 5.2,
-    "vote_count": 4
+    "title": "Round and Round (2023)",
+    "imdb_id": "tt29244163"
   },
   {
-    "title": "Round and Round",
-    "year": 2023,
-    "tmdbId": 1180682,
-    "imdbId": "tt29244163",
-    "tmdb_id": 1180682,
-    "imdb_id": "tt29244163",
-    "poster": "/images/posters/1180682.webp",
-    "overview": "While Rachel is stuck in a time loop, reliving the night of her parents' Hanukkah party, she leans on the boy her grandmother is trying to set her up with to make it out.",
-    "vote_average": 6.658,
-    "vote_count": 19
+    "title": "Tidings for the Season (2025)",
+    "imdb_id": "tt38353925"
   }
 ]

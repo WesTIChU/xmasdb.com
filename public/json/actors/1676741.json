@@ -1,26 +1,10 @@
 [
   {
-    "title": "The Christmas Train",
-    "year": 2017,
-    "tmdbId": 474982,
-    "imdbId": "tt7370936",
-    "tmdb_id": 474982,
-    "imdb_id": "tt7370936",
-    "poster": "/images/posters/474982.webp",
-    "overview": "Forced to take the intercontinental trip to Los Angeles by train, and determined to chronicle his adventure, disillusioned journalist Tom Langdon finds himself westbound with a variety of characters. While all passengers on the Christmas train appear to be headed for the same destination, Tom has no idea that the rugged locomotives taking him across America will instead detour straight into his heart.",
-    "vote_average": 6.4,
-    "vote_count": 131
+    "title": "A Wish for Christmas (2016)",
+    "imdb_id": "tt5676118"
   },
   {
-    "title": "A Wish for Christmas",
-    "year": 2016,
-    "tmdbId": 410314,
-    "imdbId": "tt5676118",
-    "tmdb_id": 410314,
-    "imdb_id": "tt5676118",
-    "poster": "/images/posters/410314.webp",
-    "overview": "Sara Shaw is the type of woman who prefers to sit on the sidelines at work, but when her big idea for a Christmas initiative is stolen, she makes a wish to Santa that she'll finally have the courage to stand up for herself. Santa grants her wish, but only gives her 48 hours. As the clock ticks, Sara will discover how to channel the Christmas magic and speak her mind all on her own.",
-    "vote_average": 5.907,
-    "vote_count": 264
+    "title": "The Christmas Train (2017)",
+    "imdb_id": "tt7370936"
   }
 ]

@@ -1,62 +1,22 @@
 [
   {
-    "title": "Coyote Creek Christmas",
-    "year": 2021,
-    "tmdbId": 874127,
-    "imdbId": "tt15205430",
-    "tmdb_id": 874127,
-    "imdb_id": "tt15205430",
-    "poster": "/images/posters/874127.webp",
-    "overview": "While throwing a \"Christmas Around the World\" party at her family's inn, an event planner discovers Christmas magic with a charming father-son duo whose presence brings about tension and joy.",
-    "vote_average": 6.1,
-    "vote_count": 46
+    "title": "Finding Santa (2017)",
+    "imdb_id": "tt7385392"
   },
   {
-    "title": "A Christmas Tree Grows in Colorado",
-    "year": 2020,
-    "tmdbId": 737764,
-    "imdbId": "tt12557978",
-    "tmdb_id": 737764,
-    "imdb_id": "tt12557978",
-    "poster": "/images/posters/737764.webp",
-    "overview": "Erin is planning the town’s Christmas celebration and must win over firefighter Kevin in order to obtain the beautiful spruce tree from his property for the celebration.",
-    "vote_average": 5.7,
-    "vote_count": 16
+    "title": "Marry Me at Christmas (2017)",
+    "imdb_id": "tt6791000"
   },
   {
-    "title": "It's Christmas, Eve",
-    "year": 2018,
-    "tmdbId": 535807,
-    "imdbId": "tt8300786",
-    "tmdb_id": 535807,
-    "imdb_id": "tt8300786",
-    "poster": "/images/posters/535807.webp",
-    "overview": "Interim school superintendent Eve Morgan finds herself in a tough spot when she is assigned to shut down a school's failing music program and must come to terms with her musical past.",
-    "vote_average": 6.2,
-    "vote_count": 43
+    "title": "It's Christmas, Eve (2018)",
+    "imdb_id": "tt8300786"
   },
   {
-    "title": "Finding Santa",
-    "year": 2017,
-    "tmdbId": 474985,
-    "imdbId": "tt7385392",
-    "tmdb_id": 474985,
-    "imdb_id": "tt7385392",
-    "poster": "/images/posters/474985.webp",
-    "overview": "Christmas is a busy, busy time for the residents of Green River, particularly for Grace Long, the third generation of her family to steward the New England town’s signature Christmas Eve parade. This year’s audience for the parade promises to be in the millions, thanks to a national morning show that has chosen Green River as the site of its Christmas Eve day program.",
-    "vote_average": 6.668,
-    "vote_count": 98
+    "title": "A Christmas Tree Grows in Colorado (2020)",
+    "imdb_id": "tt12557978"
   },
   {
-    "title": "Marry Me at Christmas",
-    "year": 2017,
-    "tmdbId": 474987,
-    "imdbId": "tt6791000",
-    "tmdb_id": 474987,
-    "imdb_id": "tt6791000",
-    "poster": "/images/posters/474987.webp",
-    "overview": "Organizing a Christmas wedding is a true treat for bridal boutique owner Madeline Krug. She loves the challenge of finding the perfect dress for the bride and orchestrating an exquisite event. What Madeline didn’t expect was to be swept off her feet by the bride’s gorgeous brother, movie star, Jonny Blaze. Jonny came to the quirky town of Fool’s Gold to support his sister -- not to fall in love. Yet Madeline is the most extraordinary woman he’s ever met, and she finds the real Jonny even more captivating than her celebrity crush. Will the action star be brave enough to take on the role of a lifetime?",
-    "vote_average": 6.4,
-    "vote_count": 67
+    "title": "Coyote Creek Christmas (2021)",
+    "imdb_id": "tt15205430"
   }
 ]

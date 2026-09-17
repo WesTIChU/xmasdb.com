@@ -1,38 +1,14 @@
 [
   {
-    "title": "The Snow Must Go On",
-    "year": 2025,
-    "tmdbId": 1547920,
-    "imdbId": "tt38354943",
-    "tmdb_id": 1547920,
-    "imdb_id": "tt38354943",
-    "poster": "/images/posters/1547920.webp",
-    "overview": "Nearly a decade after appearing on Broadway, Isaiah visits his family in upstate New York for the holidays and is unexpectedly put back on stage — this time to save his niece’s Christmas show. To make things more complicated, he learns that “an influential Broadway producer’s daughter is in the school production.”",
-    "vote_average": 5.125,
-    "vote_count": 8
+    "title": "Hanukkah on Rye (2022)",
+    "imdb_id": "tt22307422"
   },
   {
-    "title": "A Carol for Two",
-    "year": 2024,
-    "tmdbId": 1360779,
-    "imdbId": "tt31438256",
-    "tmdb_id": 1360779,
-    "imdb_id": "tt31438256",
-    "poster": "/images/posters/1360779.webp",
-    "overview": "Violette dreams of Broadway, but lands a singing waitress gig at Fiore's. Her Christmas Eve duet with Alex, who resents her connections, could be her big break. As they rehearse, Alex's cousin Brad, with Alex's secret help, woos Violette. Alex develops feelings too, creating a messy love triangle that jeopardizes their shot at stardom.",
-    "vote_average": 6.2,
-    "vote_count": 9
+    "title": "A Carol for Two (2024)",
+    "imdb_id": "tt31438256"
   },
   {
-    "title": "Hanukkah on Rye",
-    "year": 2022,
-    "tmdbId": 1028555,
-    "imdbId": "tt22307422",
-    "tmdb_id": 1028555,
-    "imdb_id": "tt22307422",
-    "poster": "/images/posters/1028555.webp",
-    "overview": "A matchmaker connects Molly and Jacob, but their new romance is put to the test when they realize that they are competing deli owners. Will a Hanukkah miracle keep them together?",
-    "vote_average": 6.154,
-    "vote_count": 26
+    "title": "The Snow Must Go On (2025)",
+    "imdb_id": "tt38354943"
   }
 ]

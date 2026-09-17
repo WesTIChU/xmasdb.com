@@ -1,86 +1,30 @@
 [
   {
-    "title": "You, Me and the Christmas Trees",
-    "year": 2021,
-    "tmdbId": 877692,
-    "imdbId": "tt15484422",
-    "tmdb_id": 877692,
-    "imdb_id": "tt15484422",
-    "poster": "/images/posters/877692.webp",
-    "overview": "An arborist helps a fourth generation Christmas tree farmer whose evergreens are dying just before the holiday. As she tries to get to the root of the problem before the town tree lighting, they begin to fall in love.",
-    "vote_average": 6.6,
-    "vote_count": 35
+    "title": "Crown for Christmas (2015)",
+    "imdb_id": "tt5133572"
   },
   {
-    "title": "Christmas She Wrote",
-    "year": 2020,
-    "tmdbId": 746048,
-    "imdbId": "tt13097858",
-    "tmdb_id": 746048,
-    "imdb_id": "tt13097858",
-    "poster": "/images/posters/746048.webp",
-    "overview": "When Kayleigh, a romance writer, has her column cancelled right before Christmas, she heads home to reconnect with her family. Kayleigh gets an unexpected visit from the man who cancelled her column who fights not only to bring her back to the publisher but also for her heart.",
-    "vote_average": 6.1,
-    "vote_count": 34
+    "title": "My Christmas Dream (2016)",
+    "imdb_id": "tt5949946"
   },
   {
-    "title": "Christmas at Dollywood",
-    "year": 2019,
-    "tmdbId": 626309,
-    "imdbId": "tt10627564",
-    "tmdb_id": 626309,
-    "imdb_id": "tt10627564",
-    "poster": "/images/posters/626309.webp",
-    "overview": "Event planner Rachel lands her biggest job yet – Dollywood's 30th Smoky Mountain Christmas celebration, where she’s teamed with operations director Luke to plan an event as glamorous as Dolly Parton herself. Sparks fly, but it takes matchmaking by Dolly to help them find their way.",
-    "vote_average": 6.7,
-    "vote_count": 40
+    "title": "Coming Home for Christmas (2017)",
+    "imdb_id": "tt7038614"
   },
   {
-    "title": "Christmas at Grand Valley",
-    "year": 2018,
-    "tmdbId": 550024,
-    "imdbId": "tt9028784",
-    "tmdb_id": 550024,
-    "imdb_id": "tt9028784",
-    "poster": "/images/posters/550024.webp",
-    "overview": "Burned out from the hubbub of the Chicago gallery world, artist Kelly returns home to the picturesque Grand Valley just in time for Christmas. Leo, businessman and all-star dad to his children, struggles to balance his time this holiday season. When he is assigned to review a hotel in Grand Valley for its value, he sees this as the perfect opportunity for a Christmas family vacation. It isn’t long until Kelly and Leo’s worlds collide.",
-    "vote_average": 6.4,
-    "vote_count": 60
+    "title": "Christmas at Grand Valley (2018)",
+    "imdb_id": "tt9028784"
   },
   {
-    "title": "Coming Home for Christmas",
-    "year": 2017,
-    "tmdbId": 474983,
-    "imdbId": "tt7038614",
-    "tmdb_id": 474983,
-    "imdb_id": "tt7038614",
-    "poster": "/images/posters/474983.webp",
-    "overview": "Lizzie Richfield is at a crossroads when she lands a job as house manager for the exquisite Ashford Estate in the Virginia countryside. While planning one final Christmas Eve gala for the Marley family, Lizzie finds herself drawn to Robert—even as Kip pursues her.",
-    "vote_average": 6.6,
-    "vote_count": 63
+    "title": "Christmas at Dollywood (2019)",
+    "imdb_id": "tt10627564"
   },
   {
-    "title": "My Christmas Dream",
-    "year": 2016,
-    "tmdbId": 415962,
-    "imdbId": "tt5949946",
-    "tmdb_id": 415962,
-    "imdb_id": "tt5949946",
-    "poster": "/images/posters/415962.webp",
-    "overview": "A department store manager sets out to create an amazing holiday display window to impress the owner. She asks a recently-fired employee to help her make the display, and as they work together, they start to fall in love.",
-    "vote_average": 5.8,
-    "vote_count": 79
+    "title": "Christmas She Wrote (2020)",
+    "imdb_id": "tt13097858"
   },
   {
-    "title": "Crown for Christmas",
-    "year": 2015,
-    "tmdbId": 360603,
-    "imdbId": "tt5133572",
-    "tmdb_id": 360603,
-    "imdb_id": "tt5133572",
-    "poster": "/images/posters/360603.webp",
-    "overview": "Allie Foster, a struggling New York artist, reluctantly accepts to act as a governess to a rebellious Princess Theodora of Winshire. When Allie forms an unlikely bond with the princess, she attracts the attention of the handsome King Maximillian, who’s facing an arranged marriage against his heart’s wishes. As Christmas Eve draws near, Allie finds herself swept up in romance, royalty and the spirit of the holidays.",
-    "vote_average": 6.947,
-    "vote_count": 206
+    "title": "You, Me and the Christmas Trees (2021)",
+    "imdb_id": "tt15484422"
   }
 ]
