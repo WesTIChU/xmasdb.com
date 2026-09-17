@@ -19,7 +19,6 @@
     <script type="application/ld+json" id="actor-schema"></script>
   </head>
   <body>
-    <!-- Dark Evergreen Christmas Header -->
     <header id="site-header" class="site-header">
       <div class="header-inner">
         <div class="header-top-row">
@@ -47,29 +46,23 @@
       </div>
     </header>
 
-    <!-- Main Content Area -->
     <main id="main-content" class="actor-page-container">
-      <!-- Nav back bar -->
       <div class="actor-nav-bar">
         <a href="./" class="back-link" id="actor-back-link">&larr; Back to Catalog</a>
       </div>
 
-      <!-- Loading State -->
       <div id="actor-loading" class="actor-loading-state">
         <div class="spinner"></div>
         <p>Loading actor details &amp; filmography...</p>
       </div>
 
-      <!-- Error State -->
       <div id="actor-error" class="actor-error-state" style="display: none;">
         <h2>Actor Not Found</h2>
         <p id="actor-error-msg">Could not locate the requested actor in the Hallmark Christmas collection.</p>
         <a href="./" class="btn btn-primary" style="margin-top: 16px; display: inline-block;">Return to Catalog</a>
       </div>
 
-      <!-- Actor Content Area (shown when data is loaded) -->
       <article id="actor-content" class="actor-content" style="display: none;">
-        <!-- Actor Profile Hero Banner -->
         <div class="actor-hero-section">
           <div class="actor-photo-col">
             <img id="actor-profile-photo" class="actor-profile-photo" src="" alt="Actor Photo" />
@@ -108,7 +101,6 @@
           </div>
         </div>
 
-        <!-- Filmography Section: Movies starring this actor in the Hallmark collection -->
         <section class="actor-filmography-section">
           <div class="filmography-header">
             <h2>
@@ -134,7 +126,6 @@
       </article>
     </main>
 
-    <!-- Evergreen Footer with TMDB Attribution & Disclaimer -->
     <footer id="site-footer" class="site-footer">
       <div class="footer-inner">
         <div class="footer-main">

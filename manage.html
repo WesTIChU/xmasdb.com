@@ -10,7 +10,6 @@
   </head>
   <body>
     <div class="manager-container">
-      <!-- Header -->
       <header class="manager-header">
         <div class="header-top">
           <div class="brand">
@@ -28,7 +27,6 @@
       </header>
 
       <main class="manager-main">
-        <!-- TMDB API Token Card -->
         <section class="card token-card">
           <div class="card-header">
             <h2>1. TMDB API Configuration</h2>
@@ -42,7 +40,6 @@
           </div>
         </section>
 
-        <!-- Import from Hallmark Section -->
         <section class="card hallmark-import-card">
           <div class="card-header">
             <div>
@@ -78,7 +75,6 @@
 
           <div id="hallmark-fetch-feedback" class="feedback"></div>
 
-          <!-- Hallmark Candidates Container -->
           <div id="hallmark-candidates-panel" class="hallmark-candidates-panel" style="display: none;">
             <div class="candidates-header-row">
               <div class="candidates-title-wrap">
@@ -99,7 +95,6 @@
           </div>
         </section>
 
-        <!-- 3. Upcoming Hallmark Movies & News -->
         <section class="card upcoming-manage-card">
           <div class="card-header">
             <div>
@@ -123,7 +118,6 @@
 
           <div id="news-fetch-feedback" class="feedback"></div>
 
-          <!-- Hallmark News Candidates Panel -->
           <div id="news-candidates-panel" class="hallmark-candidates-panel" style="display: none; margin-top: 20px;">
             <div class="candidates-header-row">
               <div class="candidates-title-wrap">
@@ -143,7 +137,6 @@
             <div id="news-candidates-grid" class="candidates-grid"></div>
           </div>
 
-          <!-- Approved Upcoming Movies Panel -->
           <div id="approved-upcoming-panel" class="approved-upcoming-panel" style="margin-top: 28px;">
             <div class="approved-upcoming-header">
               <div>
@@ -157,7 +150,6 @@
           </div>
         </section>
 
-        <!-- Search & Add Section -->
         <section class="card search-card">
           <div class="card-header">
             <h2>4. Manual Search &amp; Add Movie (TMDB)</h2>
@@ -207,7 +199,6 @@
             </div>
           </div>
 
-          <!-- Search Results Container -->
           <div id="search-results" class="search-results" style="display: none;">
             <div class="results-header">
               <h3>Search Results</h3>
@@ -217,7 +208,6 @@
           </div>
         </section>
 
-        <!-- Current Collection Section -->
         <section class="card collection-card">
           <div class="card-header collection-header">
             <div>
@@ -233,7 +223,6 @@
           <div id="collection-list" class="collection-list"></div>
         </section>
 
-        <!-- 6. Cast & Actor Metadata (TMDB Person API) Section -->
         <section class="card cast-manage-card" id="cast-enrichment-card">
           <div class="card-header">
             <div>
@@ -256,7 +245,6 @@
 
           <div id="cast-refresh-feedback" class="feedback" style="display: none; margin-top: 14px;"></div>
 
-          <!-- Progress container -->
           <div id="cast-progress-container" class="cast-progress-container" style="display: none; margin-top: 18px; padding: 14px 16px; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px;">
             <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
               <div id="cast-progress-text" style="font-size: 0.9rem; color: #1e293b; font-weight: 600;">
@@ -271,7 +259,6 @@
             </div>
           </div>
 
-          <!-- Summary Panel -->
           <div id="cast-summary-panel" class="cast-summary-panel" style="display: none; margin-top: 16px; padding: 16px; background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 8px;">
             <h4 style="margin: 0 0 6px 0; font-size: 1rem; color: #166534; font-weight: 700;">Actor refresh complete</h4>
             <div id="cast-summary-stats" style="font-size: 0.9rem; color: #15803d; line-height: 1.6;"></div>
@@ -279,7 +266,6 @@
         </section>
       </main>
 
-      <!-- Status Toast -->
       <div id="toast" class="toast" role="alert" aria-live="assertive"></div>
     </div>
 

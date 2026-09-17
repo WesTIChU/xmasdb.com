@@ -21,7 +21,6 @@
     <script type="application/ld+json" id="movie-schema"></script>
   </head>
   <body>
-    <!-- Dark Evergreen Christmas Header -->
     <header id="site-header" class="site-header">
       <div class="header-inner">
         <div class="header-top-row">
@@ -49,29 +48,23 @@
       </div>
     </header>
 
-    <!-- Main Content Area -->
     <main id="main-content" class="movie-page-container">
-      <!-- Nav back link -->
       <div class="movie-nav-bar">
         <a href="./" class="back-link" id="back-link">&larr; Back to Movies</a>
       </div>
 
-      <!-- Loading State -->
       <div id="movie-loading" class="movie-loading-state">
         <div class="spinner"></div>
         <p>Loading movie details...</p>
       </div>
 
-      <!-- Error State -->
       <div id="movie-error" class="movie-error-state" style="display: none;">
         <h2>Movie Not Found</h2>
         <p id="movie-error-msg">Could not locate the requested Hallmark movie details.</p>
         <a href="./" class="btn btn-primary" style="margin-top: 16px; display: inline-block;">Return to Catalog</a>
       </div>
 
-      <!-- Movie Content (Populated by JS) -->
       <article id="movie-content" class="movie-content" style="display: none;">
-        <!-- Backdrop Banner with Overlay -->
         <div id="movie-backdrop" class="movie-backdrop">
           <div class="backdrop-gradient"></div>
         </div>
@@ -112,19 +105,16 @@
           </div>
         </div>
 
-        <!-- Cast & Actors Section -->
         <section id="cast-section" class="detail-section">
           <h2>Cast &amp; Characters</h2>
           <div id="cast-grid" class="cast-grid"></div>
         </section>
 
-        <!-- Crew Section -->
         <section id="crew-section" class="detail-section" style="display: none;">
           <h2>Crew</h2>
           <div id="crew-list" class="crew-list"></div>
         </section>
 
-        <!-- Trailer Video Section -->
         <section id="trailer-section" class="detail-section" style="display: none;">
           <h2>Official Trailer</h2>
           <div id="trailer-embed-wrap" class="trailer-embed-wrap"></div>
@@ -132,7 +122,6 @@
       </article>
     </main>
 
-    <!-- Evergreen Footer with TMDB Attribution & Disclaimer -->
     <footer id="site-footer" class="site-footer">
       <div class="footer-inner">
         <div class="footer-main">
