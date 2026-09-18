@@ -31,6 +31,7 @@ import {
 import { enrichMovieCast } from './scripts/enrich-movie-cast.js';
 import { slugify } from './movie-url.js';
 import { ensureCachedImage } from './scripts/local-assets.js';
+import { selectTrailerVideos } from './scripts/trailer-utils.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -364,8 +365,8 @@ app.post('/api/manage/refresh-movie', async (req, res) => {
       vote_average: Number.isFinite(Number(data.vote_average)) ? Number(data.vote_average) : null,
       vote_count: Number.isFinite(Number(data.vote_count)) ? Number(data.vote_count) : null,
       poster: poster.path || null,
-      videos: (data.videos?.results || []).filter(video => video.site === 'YouTube' && video.key).slice(0, 5).length > 0
-        ? (data.videos.results || []).filter(video => video.site === 'YouTube' && video.key).slice(0, 5)
+      videos: selectTrailerVideos(data.videos?.results).slice(0, 5).length > 0
+        ? selectTrailerVideos(data.videos?.results).slice(0, 5)
         : (existing.videos || [])
     };
     saveMoviesAndSync(current);
@@ -409,7 +410,7 @@ async function addMovieFromTmdb(tmdbId, token) {
     vote_count: Number.isFinite(Number(fullData.vote_count)) ? Number(fullData.vote_count) : null,
     cast: enrichedCastForMovie,
     castSummary: enrichedCastForMovie.slice(0, 8).map(credit => credit.name).join(', '),
-    videos: (fullData.videos?.results || []).filter(video => video.site === 'YouTube' && video.key).slice(0, 5)
+    videos: selectTrailerVideos(fullData.videos?.results).slice(0, 5)
   };
   const poster = await ensureCachedImage({ kind: 'poster', id: fullData.id, filePath: fullData.poster_path, rootDir: __dirname });
   if (poster.path) movie.poster = poster.path;
@@ -745,7 +746,7 @@ app.get('/api/movie-details', async (req, res) => {
               profile_path: c.profile_path ? `https://image.tmdb.org/t/p/w185${c.profile_path}` : null
             })),
             crew: (data.credits?.crew || []).filter(c => ['Director', 'Writer', 'Screenplay'].includes(c.job)).slice(0, 8),
-            videos: (data.videos?.results || []).filter(v => v.site === 'YouTube' && ['Trailer', 'Teaser'].includes(v.type))
+            videos: selectTrailerVideos(data.videos?.results)
           }
         });
       } catch (tmdbErr) {

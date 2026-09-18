@@ -5746,6 +5746,108 @@
     ]
   },
   {
+    "title": "Holiday Hearts",
+    "year": 2019,
+    "tmdbId": 638806,
+    "imdbId": "tt10925434",
+    "tmdb_id": 638806,
+    "imdb_id": "tt10925434",
+    "release_date": "2019-11-23",
+    "poster": "https://image.tmdb.org/t/p/w500/2Nryi61rn5hAIZlKWl6qw6mHsb1.jpg",
+    "overview": "While planning an annual Christmas party, Peyton is forced together with Ben to care for a friend's daughter. While finding their Christmas spirit, will there be some romance along the way?",
+    "cast": [
+      {
+        "id": 122888,
+        "name": "Ashley Williams",
+        "character": "Peyton Canaday",
+        "order": 0,
+        "profile_path": "/images/people/122888.webp",
+        "birthday": "1978-11-12",
+        "deathday": null
+      },
+      {
+        "id": 62909,
+        "name": "Paul Campbell",
+        "character": "Ben Tyler",
+        "order": 1,
+        "profile_path": "/images/people/62909.webp",
+        "birthday": "1979-06-22",
+        "deathday": null
+      },
+      {
+        "id": 1966451,
+        "name": "Payton Lepinski",
+        "character": "Lily",
+        "order": 2,
+        "profile_path": "/images/people/1966451.webp",
+        "birthday": null,
+        "deathday": null
+      },
+      {
+        "id": 1201386,
+        "name": "Matt Hamilton",
+        "character": "Ford",
+        "order": 3,
+        "profile_path": "/images/people/1201386.webp",
+        "birthday": null,
+        "deathday": null
+      },
+      {
+        "id": 101247,
+        "name": "Adrian Petriw",
+        "character": "Freddy",
+        "order": 4,
+        "profile_path": "/images/people/101247.webp",
+        "birthday": "1987-08-05",
+        "deathday": null
+      },
+      {
+        "id": 1436305,
+        "name": "Graeme McComb",
+        "character": "Miles Kowski",
+        "order": 5,
+        "profile_path": "/93KiqyNdWQd5Jt6ktrV27kyXWLx.jpg",
+        "birthday": null,
+        "deathday": null
+      },
+      {
+        "id": 1366867,
+        "name": "James Rha",
+        "character": "Dr. James Park",
+        "order": 6,
+        "profile_path": "/images/people/1366867.webp",
+        "birthday": null,
+        "deathday": null
+      },
+      {
+        "id": 1840725,
+        "name": "Michelle Choi-Lee",
+        "character": "Nurse Louise",
+        "order": 7,
+        "profile_path": "/images/people/1840725.webp",
+        "birthday": null,
+        "deathday": null
+      }
+    ],
+    "castSummary": "Ashley Williams, Paul Campbell, Payton Lepinski, Matt Hamilton, Adrian Petriw, Graeme McComb, James Rha, Michelle Choi-Lee",
+    "vote_average": null,
+    "vote_count": null,
+    "videos": [
+      {
+        "iso_639_1": "en",
+        "iso_3166_1": "US",
+        "name": "Holiday Hearts Trailer | Countdown to Christmas",
+        "key": "IJWOTp9ta6c",
+        "site": "YouTube",
+        "size": 720,
+        "type": "Trailer",
+        "official": true,
+        "id": "61af7f50a6c1040041bf7273",
+        "published_at": "2019-11-18T20:16:00.000Z"
+      }
+    ]
+  },
+  {
     "title": "It's Beginning to Look a Lot Like Christmas",
     "year": 2019,
     "tmdbId": 630923,
@@ -6086,7 +6188,21 @@
     ],
     "castSummary": "Kimberley Sustad, Paul Campbell, Kathie Lee Gifford, Natalie Sharp, Giles Panton, Ryan Alexander McDonald, Dolores Drake, Kat Ruston",
     "vote_average": null,
-    "vote_count": null
+    "vote_count": null,
+    "videos": [
+      {
+        "iso_639_1": "en",
+        "iso_3166_1": "US",
+        "name": "Preview - A Godwink Christmas - Hallmark Movies & Mysteries",
+        "key": "F_PaV2BobT0",
+        "site": "YouTube",
+        "size": 1080,
+        "type": "Trailer",
+        "official": true,
+        "id": "5bf5ebef0e0a2639d60558da",
+        "published_at": "2018-11-15T03:09:06.000Z"
+      }
+    ]
   },
   {
     "title": "A Majestic Christmas",
@@ -6487,6 +6603,153 @@
         "official": true,
         "id": "5c0f8b13c3a36825200d9a96",
         "published_at": "2018-12-08T01:56:20.000Z"
+      }
+    ]
+  },
+  {
+    "title": "Hope at Christmas",
+    "year": 2018,
+    "tmdbId": 550073,
+    "imdbId": "tt9033640",
+    "tmdb_id": 550073,
+    "imdb_id": "tt9033640",
+    "release_date": "2018-11-20",
+    "poster": "https://image.tmdb.org/t/p/w500/ylrt2AjyunjjsU4ZQQeTNaJH41H.jpg",
+    "overview": "Sydney Ragsdale, recently divorced, decides to spend Christmas in a house she inherited with her young daughter. As Sydney begins to spend more time at the local bookstore, she meets a teacher, Mac, who also fills in for the town Santa. Mac tries to make Christmas wishes come true, and this year Sydney is at the top of his ‘nice’ list. As a new opportunity with the bookstore unfolds, Mac helps Sydney open herself up to life, love, and believing in the spirit of Christmas again.",
+    "cast": [
+      {
+        "id": 128628,
+        "name": "Scottie Thompson",
+        "character": "Sydney Ragsdale",
+        "order": 0,
+        "profile_path": "/fx7b87WwORTZxzq8qWvPZS78phg.jpg",
+        "birthday": "1981-11-09",
+        "deathday": null
+      },
+      {
+        "id": 1554734,
+        "name": "Ryan Paevey",
+        "character": "Mac",
+        "order": 1,
+        "profile_path": "/images/people/1554734.webp",
+        "birthday": "1984-09-24",
+        "deathday": null
+      },
+      {
+        "id": 1560380,
+        "name": "Erica Tremblay",
+        "character": "Rayanne",
+        "order": 2,
+        "profile_path": "/pUoqzce8NcRIUbDXZwmXYs3m7qr.jpg",
+        "birthday": "2009-08-16",
+        "deathday": null
+      },
+      {
+        "id": 158400,
+        "name": "Colleen Winton",
+        "character": "Bea",
+        "order": 3,
+        "profile_path": "/images/people/158400.webp",
+        "birthday": null,
+        "deathday": null
+      },
+      {
+        "id": 1252128,
+        "name": "Jan Bos",
+        "character": "Mayor Gray",
+        "order": 4,
+        "profile_path": "/t7t8oNcyskEvAOPnuDFAJ3gnQkf.jpg",
+        "birthday": "1962-10-30",
+        "deathday": null
+      },
+      {
+        "id": 1090397,
+        "name": "Juliana Wimbles",
+        "character": "Diane",
+        "order": 5,
+        "profile_path": "/images/people/1090397.webp",
+        "birthday": null,
+        "deathday": null
+      },
+      {
+        "id": 198615,
+        "name": "Chris Shields",
+        "character": "Lou",
+        "order": 6,
+        "profile_path": "/images/people/198615.webp",
+        "birthday": null,
+        "deathday": null
+      },
+      {
+        "id": 1306566,
+        "name": "Dakota Guppy",
+        "character": "Sarah",
+        "order": 7,
+        "profile_path": "/images/people/1306566.webp",
+        "birthday": "2006-02-18",
+        "deathday": null
+      },
+      {
+        "id": 997197,
+        "name": "Nelson Wong",
+        "character": "Kenny",
+        "order": 8,
+        "profile_path": "/images/people/997197.webp",
+        "birthday": null,
+        "deathday": null
+      },
+      {
+        "id": 1922806,
+        "name": "Katey Hoffman",
+        "character": "Susan",
+        "order": 9,
+        "profile_path": "/images/people/1922806.webp",
+        "birthday": null,
+        "deathday": null
+      },
+      {
+        "id": 46898,
+        "name": "Peter Graham-Gaudreau",
+        "character": "Rev. Oliver",
+        "order": 10,
+        "profile_path": "/images/people/46898.webp",
+        "birthday": null,
+        "deathday": null
+      },
+      {
+        "id": 2492169,
+        "name": "Shelby Armstrong",
+        "character": "Hannah",
+        "order": 11,
+        "profile_path": "/ksw7d3v2pnnm2qBRj9XW8zSi8qy.jpg",
+        "birthday": null,
+        "deathday": null
+      },
+      {
+        "id": 2630461,
+        "name": "Malia Baker",
+        "character": "Malia Weir",
+        "order": 12,
+        "profile_path": "/sHaoKRA4VGmmd8b4fTEwrBr9x3m.jpg",
+        "birthday": "2006-12-18",
+        "deathday": null
+      }
+    ],
+    "castSummary": "Scottie Thompson, Ryan Paevey, Erica Tremblay, Colleen Winton, Jan Bos, Juliana Wimbles, Chris Shields, Dakota Guppy",
+    "vote_average": null,
+    "vote_count": null,
+    "videos": [
+      {
+        "iso_639_1": "en",
+        "iso_3166_1": "US",
+        "name": "Preview - Hope at Christmas - Hallmark Movies & Mysteries",
+        "key": "GzDZqxVQWgg",
+        "site": "YouTube",
+        "size": 1080,
+        "type": "Trailer",
+        "official": true,
+        "id": "6183f8eaa13533004415c6da",
+        "published_at": "2018-11-15T03:08:32.000Z"
       }
     ]
   },

@@ -4,6 +4,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { fetchTmdb } from './enrich-cast.js';
+import { selectTrailerVideos } from './trailer-utils.js';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const MOVIES_FILE = path.join(ROOT, 'movies.json');
@@ -18,12 +19,6 @@ if (!token) {
 
 const readJson = file => JSON.parse(fs.readFileSync(file, 'utf8'));
 const movieId = movie => Number(movie.tmdbId || movie.tmdb_id);
-
-function selectTrailerVideos(results) {
-  return (Array.isArray(results) ? results : [])
-    .filter(video => video?.site === 'YouTube' && video.key && ['Trailer', 'Teaser'].includes(video.type))
-    .sort((a, b) => Number(b.type === 'Trailer') - Number(a.type === 'Trailer') || Number(b.official) - Number(a.official));
-}
 
 function writeAtomically(file, content) {
   const temporary = `${file}.tmp`;

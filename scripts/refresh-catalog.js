@@ -11,6 +11,7 @@ import {
 } from './enrich-cast.js';
 import { ensureCachedImage } from './local-assets.js';
 import { saveMoviesAndSync, saveUpcomingMovies, saveCastData } from '../movie-storage.js';
+import { selectTrailerVideos } from './trailer-utils.js';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const token = (process.env.TMDB_API_KEY || process.env.TMDB_TOKEN || process.env.TMDB_KEY || process.env.TMDB_BEARER_TOKEN || '').trim();
@@ -53,9 +54,9 @@ for (const movie of refreshTargets) {
       tagline: data.tagline || movie.tagline || null,
       runtime: data.runtime || movie.runtime || null,
       genres: Array.isArray(data.genres) ? data.genres : (movie.genres || []),
-      videos: (data.videos?.results || []).filter(video => video.site === 'YouTube' && video.key).slice(0, 5).length > 0
-        ? (data.videos.results || []).filter(video => video.site === 'YouTube' && video.key).slice(0, 5)
-        : (movie.videos || [])
+       videos: selectTrailerVideos(data.videos?.results).slice(0, 5).length > 0
+         ? selectTrailerVideos(data.videos?.results).slice(0, 5)
+         : (movie.videos || [])
     });
     if (upcoming.includes(movie) && data.release_date) {
       movie.premiereDate = data.release_date;

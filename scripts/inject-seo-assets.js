@@ -42,6 +42,7 @@ function movieBody(seoHtml) {
   const rating = matchValue(seoHtml, /<span class="detail-badge detail-badge-rating">([\s\S]*?)<\/span>/);
   const status = matchValue(seoHtml, /<span class="detail-badge detail-badge-upcoming">([\s\S]*?)<\/span>/);
   const cast = matchValue(seoHtml, /<ul class="static-cast-list">([\s\S]*?)<\/ul>/);
+  const trailerEmbed = seoHtml.match(/<div class="trailer-embed-wrap">([\s\S]*?)<\/div>/)?.[1] || '';
   const castLinks = cast.replace(/<li>([\s\S]*?)<\/li>/g, '<span>$1</span>');
   const breadcrumb = `<nav class="breadcrumbs" aria-label="Breadcrumb" style="display:none"><a href="/">Home</a> <span aria-hidden="true">&gt;</span> <a href="/year/${year}">${year || 'Movies'}</a> <span aria-hidden="true">&gt;</span> <span>${title}</span></nav>`;
 
@@ -53,7 +54,8 @@ function movieBody(seoHtml) {
     .replace('<span id="detail-status" class="detail-badge detail-badge-upcoming" style="display: none;">UPCOMING</span>', `<span id="detail-status" class="detail-badge detail-badge-upcoming"${status ? '' : ' style="display: none;"'}>${status || 'UPCOMING'}</span>`)
     .replace('<span id="detail-rating" class="detail-badge detail-badge-rating"></span>', `<span id="detail-rating" class="detail-badge detail-badge-rating">${rating}</span>`)
     .replace('<p id="detail-overview" class="detail-overview"></p>', `<p id="detail-overview" class="detail-overview">${overview}</p>`)
-    .replace('<div id="cast-grid" class="cast-grid"></div>', `<div id="cast-grid" class="cast-grid"><div class="seo-initial-cast">${castLinks}</div></div>`);
+    .replace('<div id="cast-grid" class="cast-grid"></div>', `<div id="cast-grid" class="cast-grid"><div class="seo-initial-cast">${castLinks}</div></div>`)
+    .replace('<section id="trailer-section" class="detail-section" style="display: none;">\n          <h2>Official Trailer</h2>\n          <div id="trailer-embed-wrap" class="trailer-embed-wrap"></div>\n        </section>', `<section id="trailer-section" class="detail-section"${trailerEmbed ? '' : ' style="display: none;"'}>\n          <h2>Official Trailer</h2>\n          <div id="trailer-embed-wrap" class="trailer-embed-wrap">${trailerEmbed}</div>\n        </section>`);
 }
 
 function actorBody(seoHtml) {

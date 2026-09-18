@@ -161,21 +161,7 @@ export function addMovie(newMovie, castArray = null) {
   }
 
   // Standardize movie format
-  const movieToAdd = {
-    title: newMovie.title,
-    year: newMovie.year ? parseInt(newMovie.year, 10) : null,
-    tmdbId: newMovie.tmdbId ? Number(newMovie.tmdbId) : (newMovie.tmdb_id ? Number(newMovie.tmdb_id) : null),
-    imdbId: newMovie.imdbId || newMovie.imdb_id || null,
-    tmdb_id: newMovie.tmdbId ? Number(newMovie.tmdbId) : (newMovie.tmdb_id ? Number(newMovie.tmdb_id) : null),
-    imdb_id: newMovie.imdbId || newMovie.imdb_id || null,
-    release_date: newMovie.release_date || newMovie.releaseDate || null,
-    poster: newMovie.poster || null,
-    overview: newMovie.overview || '',
-    cast: Array.isArray(castArray) ? castArray : [],
-    castSummary: Array.isArray(castArray) ? castArray.slice(0, 8).map(person => person.name).join(', ') : '',
-    vote_average: Number.isFinite(Number(newMovie.vote_average)) ? Number(newMovie.vote_average) : null,
-    vote_count: Number.isFinite(Number(newMovie.vote_count)) ? Number(newMovie.vote_count) : null
-  };
+  const movieToAdd = normalizeCollectionMovie(newMovie, castArray);
 
   if (newMovie.originalTitle || newMovie.original_title) {
     const orig = (newMovie.originalTitle || newMovie.original_title).trim();
@@ -192,6 +178,25 @@ export function addMovie(newMovie, castArray = null) {
   }
 
   return syncResult;
+}
+
+export function normalizeCollectionMovie(newMovie, castArray = null) {
+  return {
+    title: newMovie.title,
+    year: newMovie.year ? parseInt(newMovie.year, 10) : null,
+    tmdbId: newMovie.tmdbId ? Number(newMovie.tmdbId) : (newMovie.tmdb_id ? Number(newMovie.tmdb_id) : null),
+    imdbId: newMovie.imdbId || newMovie.imdb_id || null,
+    tmdb_id: newMovie.tmdbId ? Number(newMovie.tmdbId) : (newMovie.tmdb_id ? Number(newMovie.tmdb_id) : null),
+    imdb_id: newMovie.imdbId || newMovie.imdb_id || null,
+    release_date: newMovie.release_date || newMovie.releaseDate || null,
+    poster: newMovie.poster || null,
+    overview: newMovie.overview || '',
+    videos: Array.isArray(newMovie.videos) ? newMovie.videos : [],
+    cast: Array.isArray(castArray) ? castArray : [],
+    castSummary: Array.isArray(castArray) ? castArray.slice(0, 8).map(person => person.name).join(', ') : '',
+    vote_average: Number.isFinite(Number(newMovie.vote_average)) ? Number(newMovie.vote_average) : null,
+    vote_count: Number.isFinite(Number(newMovie.vote_count)) ? Number(newMovie.vote_count) : null
+  };
 }
 
 export function syncScheduledUpcomingMovies(movies = getMovies()) {

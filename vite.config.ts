@@ -29,6 +29,7 @@ import {
 } from './hallmark-service.js';
 import { slugify } from './movie-url.js';
 import { refreshSeoOutput } from './scripts/refresh-seo.js';
+import { selectTrailerVideos } from './scripts/trailer-utils.js';
 
 function localManagementPlugin(): Plugin {
   return {
@@ -361,8 +362,8 @@ function localManagementPlugin(): Plugin {
               return;
             }
 
-            // Fetch complete info including external_ids for IMDb ID and credits for cast
-            const fullRes = await fetchTmdb(`movie/${tmdbId}`, { append_to_response: 'external_ids,credits' }, token);
+            // Fetch complete info including external IDs, credits, and videos.
+            const fullRes = await fetchTmdb(`movie/${tmdbId}`, { append_to_response: 'external_ids,credits,videos' }, token);
             const fullData = fullRes.data;
             const releaseYear = fullData.release_date ? parseInt(fullData.release_date.split('-')[0], 10) : null;
             
@@ -399,7 +400,8 @@ function localManagementPlugin(): Plugin {
               tmdb_id: fullData.id,
               imdb_id: fullData.external_ids?.imdb_id || null,
               poster: fullData.poster_path ? `https://image.tmdb.org/t/p/w500${fullData.poster_path}` : null,
-              overview: fullData.overview || ''
+              overview: fullData.overview || '',
+              videos: selectTrailerVideos(fullData.videos?.results).slice(0, 5)
             };
 
             const syncResult = addMovie(movieToAdd, enrichedCastForMovie);
