@@ -15,6 +15,7 @@
     "assets:migrate": "node scripts/migrate-local-assets.js",
     "catalog:refresh": "node scripts/refresh-catalog.js",
     "trailers:recover": "node scripts/recover-trailers.js",
+    "cast:repair-upcoming": "node scripts/repair-upcoming-cast.js",
     "test": "node --test scripts/*.test.js"
   },
   "dependencies": {

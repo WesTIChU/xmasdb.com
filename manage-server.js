@@ -19,7 +19,7 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import { getMovies, addMovie, removeMovie, getCastData, saveMoviesAndSync, updateMovieCast } from './movie-storage.js';
 import { fetchHallmarkHtml, extractHallmarkCandidates, matchCandidateWithTmdb } from './hallmark-service.js';
-import { 
+import {
   getUniquePersonIdsFromCast, 
   fetchTmdbPerson, 
   loadPersonCache, 
@@ -28,6 +28,7 @@ import {
   enrichCastData, 
   normalizeProfilePath 
 } from './scripts/enrich-cast.js';
+import { enrichMovieCast } from './scripts/enrich-movie-cast.js';
 import { slugify } from './movie-url.js';
 import { ensureCachedImage } from './scripts/local-assets.js';
 
@@ -391,35 +392,7 @@ async function addMovieFromTmdb(tmdbId, token) {
   const releaseYear = fullData.release_date ? parseInt(fullData.release_date.split('-')[0], 10) : null;
   const rawCast = fullData.credits?.cast || [];
   const personCache = loadPersonCache();
-  const enrichedCastForMovie = [];
-  const cachedPeople = new Map();
-
-  for (const c of rawCast) {
-    let personRecord = null;
-    if (token && c.id) {
-      try {
-        personRecord = await fetchTmdbPerson(c.id, token, personCache, false);
-        if (!cachedPeople.has(Number(c.id))) {
-          const image = await ensureCachedImage({ kind: 'person', id: c.id, filePath: personRecord?.profile_path || c.profile_path, rootDir: __dirname });
-          cachedPeople.set(Number(c.id), image);
-          if (image.path) {
-            personRecord.profile_path = image.path;
-            personRecord.profile = image.path;
-          }
-        }
-      } catch {}
-    }
-    enrichedCastForMovie.push({
-      id: c.id,
-      name: personRecord?.name || c.name,
-      character: c.character,
-      order: c.order,
-      profile_path: cachedPeople.get(Number(c.id))?.path || normalizeProfilePath(personRecord?.profile_path) || normalizeProfilePath(c.profile_path),
-      profile: cachedPeople.get(Number(c.id))?.path || normalizeProfilePath(personRecord?.profile_path) || normalizeProfilePath(c.profile_path),
-      birthday: personRecord ? personRecord.birthday : null,
-      deathday: personRecord ? personRecord.deathday : null
-    });
-  }
+  const enrichedCastForMovie = await enrichMovieCast(rawCast, { token, personCache, rootDir: __dirname });
   savePersonCache(personCache);
 
   const movie = {
@@ -434,6 +407,8 @@ async function addMovieFromTmdb(tmdbId, token) {
     overview: fullData.overview || '',
     vote_average: Number.isFinite(Number(fullData.vote_average)) ? Number(fullData.vote_average) : null,
     vote_count: Number.isFinite(Number(fullData.vote_count)) ? Number(fullData.vote_count) : null,
+    cast: enrichedCastForMovie,
+    castSummary: enrichedCastForMovie.slice(0, 8).map(credit => credit.name).join(', '),
     videos: (fullData.videos?.results || []).filter(video => video.site === 'YouTube' && video.key).slice(0, 5)
   };
   const poster = await ensureCachedImage({ kind: 'poster', id: fullData.id, filePath: fullData.poster_path, rootDir: __dirname });

@@ -171,6 +171,8 @@ export function addMovie(newMovie, castArray = null) {
     release_date: newMovie.release_date || newMovie.releaseDate || null,
     poster: newMovie.poster || null,
     overview: newMovie.overview || '',
+    cast: Array.isArray(castArray) ? castArray : [],
+    castSummary: Array.isArray(castArray) ? castArray.slice(0, 8).map(person => person.name).join(', ') : '',
     vote_average: Number.isFinite(Number(newMovie.vote_average)) ? Number(newMovie.vote_average) : null,
     vote_count: Number.isFinite(Number(newMovie.vote_count)) ? Number(newMovie.vote_count) : null
   };
@@ -208,6 +210,11 @@ export function syncScheduledUpcomingMovies(movies = getMovies()) {
       if (existing.premiereDate !== releaseDate || existing.release_date !== releaseDate) {
         existing.premiereDate = releaseDate;
         existing.release_date = releaseDate;
+        changed = true;
+      }
+      if (Array.isArray(movie.cast) && movie.cast.length > (Array.isArray(existing.cast) ? existing.cast.length : 0)) {
+        existing.cast = movie.cast;
+        existing.castSummary = movie.castSummary || movie.cast.slice(0, 8).map(person => person.name).join(', ');
         changed = true;
       }
       continue;

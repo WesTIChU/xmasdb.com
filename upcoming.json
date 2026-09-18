@@ -19,70 +19,70 @@
         "name": "Robert Buckley",
         "character": "Matt",
         "order": 0,
-        "birthday": "1981-05-02",
-        "deathday": null,
         "profile_path": "/images/people/96792.webp",
-        "profile": "/images/people/96792.webp"
+        "profile": "/images/people/96792.webp",
+        "birthday": "1981-05-02",
+        "deathday": null
       },
       {
         "id": 65640,
         "name": "Khary Payton",
         "character": "Ron",
         "order": 1,
-        "birthday": "1972-05-16",
-        "deathday": null,
         "profile_path": "/images/people/65640.webp",
-        "profile": "/images/people/65640.webp"
+        "profile": "/images/people/65640.webp",
+        "birthday": "1972-05-16",
+        "deathday": null
       },
       {
         "id": 19131,
         "name": "Marsha Mason",
         "character": "Darlene",
         "order": 2,
-        "birthday": "1942-04-03",
-        "deathday": null,
         "profile_path": "/images/people/19131.webp",
-        "profile": "/images/people/19131.webp"
+        "profile": "/images/people/19131.webp",
+        "birthday": "1942-04-03",
+        "deathday": null
       },
       {
         "id": 116882,
         "name": "Lyndsy Fonseca",
         "character": "Avery",
         "order": 3,
-        "birthday": "1987-01-07",
-        "deathday": null,
         "profile_path": "/images/people/116882.webp",
-        "profile": "/images/people/116882.webp"
+        "profile": "/images/people/116882.webp",
+        "birthday": "1987-01-07",
+        "deathday": null
       },
       {
         "id": 6338426,
         "name": "Jasmine Baker",
         "character": "Chicago Bears Team Reporter",
         "order": 4,
-        "birthday": null,
-        "deathday": null,
         "profile_path": null,
-        "profile": null
+        "profile": null,
+        "birthday": null,
+        "deathday": null
       },
       {
         "id": 44033,
         "name": "Barbara Alyn Woods",
         "character": "Jody",
         "order": 5,
-        "birthday": "1962-03-11",
-        "deathday": null,
         "profile_path": "/images/people/44033.webp",
-        "profile": "/images/people/44033.webp"
+        "profile": "/images/people/44033.webp",
+        "birthday": "1962-03-11",
+        "deathday": null
       },
       {
         "id": 580567,
         "name": "Tony Domino",
         "character": "Fan",
         "order": 6,
-        "birthday": null,
-        "deathday": null,
         "profile_path": "/images/people/580567.webp",
-        "profile": "/images/people/580567.webp"
+        "profile": "/images/people/580567.webp",
+        "birthday": null,
+        "deathday": null
       }
     ],
     "castSummary": "Robert Buckley, Khary Payton, Marsha Mason, Lyndsy Fonseca, Jasmine Baker, Barbara Alyn Woods, Tony Domino",
@@ -148,8 +148,29 @@
     "imdb_id": "tt46070651",
     "poster": null,
     "overview": "Taylor Lewis (Penny), a single father and expert in holiday displays, moves to the picturesque town of Pineway with his two children just weeks before Christmas. While the family adjusts to a new home and school, Taylor also faces the realization that his teenage daughter may be growing out of some of their treasured Christmas traditions.  When Taylor becomes involved in reviving Pineway's Christmas Market, he's paired with Sophie Shaw (Hutton), a practical accountant eager to prove herself as a potential leader. Their different approaches soon complement each other, bringing new life and festive spirit to the town.  As Taylor tries to hold onto the Christmas traditions his family once shared, he discovers that meaningful moments can't simply be recreated. Growing closer to Sophie along the way, he begins to see that embracing change can lead to new traditions, new memories, and perhaps an unexpected new beginning.",
-    "cast": [],
-    "castSummary": "",
+    "cast": [
+      {
+        "id": 129298,
+        "name": "Brendan Penny",
+        "character": "Taylor Lewis",
+        "order": 0,
+        "profile_path": "/images/people/129298.webp",
+        "profile": "/images/people/129298.webp",
+        "birthday": "1978-11-09",
+        "deathday": null
+      },
+      {
+        "id": 64917,
+        "name": "Pascale Hutton",
+        "character": "Sophie Shaw",
+        "order": 1,
+        "profile_path": "/images/people/64917.webp",
+        "profile": "/images/people/64917.webp",
+        "birthday": "1979-06-14",
+        "deathday": null
+      }
+    ],
+    "castSummary": "Brendan Penny, Pascale Hutton",
     "backdrop": null,
     "tagline": null,
     "runtime": null,
@@ -171,8 +192,29 @@
     "imdb_id": "tt46076498",
     "poster": null,
     "overview": "Decades after a childhood letter to Santa goes unanswered, Jake has grown into a practical adult who no longer believes in Christmas magic. When Santa finally discovers the lost letter and begins granting Jake’s long-forgotten wishes, his orderly life is thrown into chaos. With his childhood best friend Julie unexpectedly back in town, the two work together to manage each new wish while growing closer along the way.",
-    "cast": [],
-    "castSummary": "",
+    "cast": [
+      {
+        "id": 62909,
+        "name": "Paul Campbell",
+        "character": "Jake",
+        "order": 0,
+        "profile_path": "/images/people/62909.webp",
+        "profile": "/images/people/62909.webp",
+        "birthday": "1979-06-22",
+        "deathday": null
+      },
+      {
+        "id": 96624,
+        "name": "Rachel Boston",
+        "character": "Julie",
+        "order": 1,
+        "profile_path": "/images/people/96624.webp",
+        "profile": "/images/people/96624.webp",
+        "birthday": "1982-05-09",
+        "deathday": null
+      }
+    ],
+    "castSummary": "Paul Campbell, Rachel Boston",
     "backdrop": null,
     "tagline": null,
     "runtime": null,
@@ -201,110 +243,110 @@
         "name": "Lacey Chabert",
         "character": "Lindsey",
         "order": 0,
-        "birthday": "1982-09-30",
-        "deathday": null,
         "profile_path": "/images/people/22082.webp",
-        "profile": "/images/people/22082.webp"
+        "profile": "/images/people/22082.webp",
+        "birthday": "1982-09-30",
+        "deathday": null
       },
       {
         "id": 74290,
         "name": "Travis Van Winkle",
         "character": "Philip",
         "order": 1,
-        "birthday": "1982-11-04",
-        "deathday": null,
         "profile_path": "/images/people/74290.webp",
-        "profile": "/images/people/74290.webp"
+        "profile": "/images/people/74290.webp",
+        "birthday": "1982-11-04",
+        "deathday": null
       },
       {
         "id": 21125,
         "name": "Richard Kind",
         "character": "",
         "order": 2,
-        "birthday": "1956-11-22",
-        "deathday": null,
         "profile_path": "/images/people/21125.webp",
-        "profile": "/images/people/21125.webp"
+        "profile": "/images/people/21125.webp",
+        "birthday": "1956-11-22",
+        "deathday": null
       },
       {
         "id": 76241,
         "name": "Christy Carlson Romano",
         "character": "Nicole",
         "order": 3,
-        "birthday": "1984-03-20",
-        "deathday": null,
         "profile_path": "/images/people/76241.webp",
-        "profile": "/images/people/76241.webp"
+        "profile": "/images/people/76241.webp",
+        "birthday": "1984-03-20",
+        "deathday": null
       },
       {
         "id": 930977,
         "name": "Bryce Durfee",
         "character": "",
         "order": 4,
-        "birthday": null,
-        "deathday": null,
         "profile_path": "/images/people/930977.webp",
-        "profile": "/images/people/930977.webp"
+        "profile": "/images/people/930977.webp",
+        "birthday": null,
+        "deathday": null
       },
       {
         "id": 1819796,
         "name": "Taegen Burns",
         "character": "",
         "order": 5,
-        "birthday": "2007-04-21",
-        "deathday": null,
         "profile_path": "/images/people/1819796.webp",
-        "profile": "/images/people/1819796.webp"
+        "profile": "/images/people/1819796.webp",
+        "birthday": "2007-04-21",
+        "deathday": null
       },
       {
         "id": 5101444,
         "name": "Asher Alexander",
         "character": "",
         "order": 6,
-        "birthday": "2015-03-21",
-        "deathday": null,
         "profile_path": "/images/people/5101444.webp",
-        "profile": "/images/people/5101444.webp"
+        "profile": "/images/people/5101444.webp",
+        "birthday": "2015-03-21",
+        "deathday": null
       },
       {
         "id": 69740,
         "name": "Patrick Renna",
         "character": "",
         "order": 7,
-        "birthday": "1979-03-03",
-        "deathday": null,
         "profile_path": "/images/people/69740.webp",
-        "profile": "/images/people/69740.webp"
+        "profile": "/images/people/69740.webp",
+        "birthday": "1979-03-03",
+        "deathday": null
       },
       {
         "id": 5890130,
         "name": "John Taylor",
         "character": "",
         "order": 8,
-        "birthday": "2001-04-25",
-        "deathday": null,
         "profile_path": "/images/people/5890130.webp",
-        "profile": "/images/people/5890130.webp"
+        "profile": "/images/people/5890130.webp",
+        "birthday": "2001-04-25",
+        "deathday": null
       },
       {
         "id": 3704157,
         "name": "Jillian Barrie",
         "character": "Secretary",
         "order": 9,
-        "birthday": null,
-        "deathday": null,
         "profile_path": "/images/people/3704157.webp",
-        "profile": "/images/people/3704157.webp"
+        "profile": "/images/people/3704157.webp",
+        "birthday": null,
+        "deathday": null
       },
       {
         "id": 6010335,
         "name": "Levi Sternshein",
         "character": "",
         "order": 10,
-        "birthday": null,
-        "deathday": null,
         "profile_path": null,
-        "profile": null
+        "profile": null,
+        "birthday": null,
+        "deathday": null
       }
     ],
     "castSummary": "Lacey Chabert, Travis Van Winkle, Richard Kind, Christy Carlson Romano, Bryce Durfee, Taegen Burns, Asher Alexander, Patrick Renna",
@@ -365,140 +407,140 @@
         "name": "Holland Roden",
         "character": "",
         "order": 0,
-        "birthday": "1986-10-07",
-        "deathday": null,
         "profile_path": "/images/people/208782.webp",
-        "profile": "/images/people/208782.webp"
+        "profile": "/images/people/208782.webp",
+        "birthday": "1986-10-07",
+        "deathday": null
       },
       {
         "id": 1230713,
         "name": "Niall Matter",
         "character": "",
         "order": 1,
-        "birthday": "1980-10-20",
-        "deathday": null,
         "profile_path": "/images/people/1230713.webp",
-        "profile": "/images/people/1230713.webp"
+        "profile": "/images/people/1230713.webp",
+        "birthday": "1980-10-20",
+        "deathday": null
       },
       {
         "id": 2388,
         "name": "Jonathan Frakes",
         "character": "Winston",
         "order": 2,
-        "birthday": "1952-08-19",
-        "deathday": null,
         "profile_path": "/images/people/2388.webp",
-        "profile": "/images/people/2388.webp"
+        "profile": "/images/people/2388.webp",
+        "birthday": "1952-08-19",
+        "deathday": null
       },
       {
         "id": 1533,
         "name": "Andie MacDowell",
         "character": "",
         "order": 3,
-        "birthday": "1958-04-21",
-        "deathday": null,
         "profile_path": "/images/people/1533.webp",
-        "profile": "/images/people/1533.webp"
+        "profile": "/images/people/1533.webp",
+        "birthday": "1958-04-21",
+        "deathday": null
       },
       {
         "id": 96624,
         "name": "Rachel Boston",
         "character": "",
         "order": 4,
-        "birthday": "1982-05-09",
-        "deathday": null,
         "profile_path": "/images/people/96624.webp",
-        "profile": "/images/people/96624.webp"
+        "profile": "/images/people/96624.webp",
+        "birthday": "1982-05-09",
+        "deathday": null
       },
       {
         "id": 589182,
         "name": "Wes Brown",
         "character": "",
         "order": 5,
-        "birthday": "1982-01-26",
-        "deathday": null,
         "profile_path": "/images/people/589182.webp",
-        "profile": "/images/people/589182.webp"
+        "profile": "/images/people/589182.webp",
+        "birthday": "1982-01-26",
+        "deathday": null
       },
       {
         "id": 30697,
         "name": "Jim Meskimen",
         "character": "",
         "order": 6,
-        "birthday": "1959-09-10",
-        "deathday": null,
         "profile_path": "/images/people/30697.webp",
-        "profile": "/images/people/30697.webp"
+        "profile": "/images/people/30697.webp",
+        "birthday": "1959-09-10",
+        "deathday": null
       },
       {
         "id": 90683,
         "name": "Georgina Reilly",
         "character": "",
         "order": 7,
-        "birthday": "1986-02-12",
-        "deathday": null,
         "profile_path": "/images/people/90683.webp",
-        "profile": "/images/people/90683.webp"
+        "profile": "/images/people/90683.webp",
+        "birthday": "1986-02-12",
+        "deathday": null
       },
       {
         "id": 111196,
         "name": "David O'Donnell",
         "character": "",
         "order": 8,
-        "birthday": "1974-11-20",
-        "deathday": null,
         "profile_path": "/images/people/111196.webp",
-        "profile": "/images/people/111196.webp"
+        "profile": "/images/people/111196.webp",
+        "birthday": "1974-11-20",
+        "deathday": null
       },
       {
         "id": 1310342,
         "name": "James Trevena",
         "character": "James Clarke",
         "order": 9,
-        "birthday": "1986-09-16",
-        "deathday": null,
         "profile_path": "/images/people/1310342.webp",
-        "profile": "/images/people/1310342.webp"
+        "profile": "/images/people/1310342.webp",
+        "birthday": "1986-09-16",
+        "deathday": null
       },
       {
         "id": 1757689,
         "name": "Holly A. Morris",
         "character": "",
         "order": 10,
-        "birthday": "1965-09-30",
-        "deathday": null,
         "profile_path": "/images/people/1757689.webp",
-        "profile": "/images/people/1757689.webp"
+        "profile": "/images/people/1757689.webp",
+        "birthday": "1965-09-30",
+        "deathday": null
       },
       {
         "id": 6392750,
         "name": "Chris Girotto",
         "character": "",
         "order": 11,
-        "birthday": null,
-        "deathday": null,
         "profile_path": null,
-        "profile": null
+        "profile": null,
+        "birthday": null,
+        "deathday": null
       },
       {
         "id": 6392751,
         "name": "Callie Reynolds",
         "character": "Young Elizabeth",
         "order": 12,
-        "birthday": null,
-        "deathday": null,
         "profile_path": null,
-        "profile": null
+        "profile": null,
+        "birthday": null,
+        "deathday": null
       },
       {
         "id": 1807675,
         "name": "Grayson Powell",
         "character": "",
         "order": 13,
-        "birthday": null,
-        "deathday": null,
         "profile_path": "/images/people/1807675.webp",
-        "profile": "/images/people/1807675.webp"
+        "profile": "/images/people/1807675.webp",
+        "birthday": null,
+        "deathday": null
       }
     ],
     "castSummary": "Holland Roden, Niall Matter, Jonathan Frakes, Andie MacDowell, Rachel Boston, Wes Brown, Jim Meskimen, Georgina Reilly",
@@ -535,8 +577,29 @@
     "imdb_id": "tt41783274",
     "poster": null,
     "overview": "Emily Church joins her sister Zoe and Zoe’s longtime boyfriend on a Christmas getaway to Pine Grove, a town famous for its romantic holiday traditions. While helping with Zoe’s proposal plans, Emily is paired with skeptical journalist Bert Baxter. As they are drawn into the town’s festive celebrations, unexpected feelings begin to challenge what they both thought they knew about love, family and Christmas.",
-    "cast": [],
-    "castSummary": "",
+    "cast": [
+      {
+        "id": 1292329,
+        "name": "Kimberley Sustad",
+        "character": "Emily Church",
+        "order": 0,
+        "profile_path": "/images/people/1292329.webp",
+        "profile": "/images/people/1292329.webp",
+        "birthday": "1987-05-27",
+        "deathday": null
+      },
+      {
+        "id": 110945,
+        "name": "Scott Michael Foster",
+        "character": "Bert Baxter",
+        "order": 1,
+        "profile_path": "/images/people/110945.webp",
+        "profile": "/images/people/110945.webp",
+        "birthday": "1985-03-04",
+        "deathday": null
+      }
+    ],
+    "castSummary": "Kimberley Sustad, Scott Michael Foster",
     "backdrop": null,
     "tagline": null,
     "runtime": null,
