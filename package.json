@@ -14,6 +14,8 @@
     "cast:refresh": "node scripts/enrich-cast.js --refresh",
     "assets:migrate": "node scripts/migrate-local-assets.js",
     "catalog:refresh": "node scripts/refresh-catalog.js",
+    "catalog:manifest:check": "node scripts/sync-catalog-manifest.js --validate-only",
+    "catalog:manifest:sync": "node scripts/sync-catalog-manifest.js",
     "seo:refresh": "node scripts/generate-seo.js",
     "test": "node --test scripts/*.test.js"
   },
