@@ -1,10 +1,14 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import path from 'node:path';
 import {
   getRadarrActorMovieIds,
   getRadarrEligibleMovies,
   toRadarrEntry
 } from './generate-radarr-feeds.js';
+
+const generatorSource = fs.readFileSync(path.join(process.cwd(), 'scripts', 'generate-radarr-feeds.js'), 'utf8');
 
 const collectionMovie = (id, title = 'Collection Movie', year = 2025) => ({
   tmdbId: id,
@@ -59,4 +63,8 @@ test('moving Coming Soon to Collection preserves one Radarr identity and schema'
 
   assert.deepEqual(before.map(movie => movie.tmdbId), after.map(movie => movie.tmdbId));
   assert.deepEqual(Object.keys(toRadarrEntry(upcoming)).sort(), ['imdb_id', 'title']);
+});
+
+test('year feed entries are materialized before mapping for Node 20 compatibility', () => {
+  assert.match(generatorSource, /\.\.\.\[\.\.\.yearEntries\.entries\(\)\]\.map/);
 });

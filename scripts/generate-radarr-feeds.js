@@ -103,7 +103,7 @@ export function generateRadarrFeeds(movies, castData, comingSoonMovies = []) {
   const expectedActors = new Set();
   const outputs = [
     { file: 'all.json', entries: allEntries },
-    ...yearEntries.entries().map(([year, entries]) => ({ file: `${year}.json`, entries })),
+    ...[...yearEntries.entries()].map(([year, entries]) => ({ file: `${year}.json`, entries })),
   ];
   for (const { file, entries } of outputs) {
     validateFeed(entries, file);
