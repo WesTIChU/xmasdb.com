@@ -7,3 +7,5 @@ coverage/
 .env*
 !.env.example
 /manage.html
+/*.before-tmdb-refresh
+/*.before-trailer-recovery.json
