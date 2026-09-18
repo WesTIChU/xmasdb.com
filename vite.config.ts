@@ -28,6 +28,7 @@ import {
   extractHallmarkNewsCandidates 
 } from './hallmark-service.js';
 import { slugify } from './movie-url.js';
+import { refreshSeoOutput } from './scripts/refresh-seo.js';
 
 function localManagementPlugin(): Plugin {
   return {
@@ -402,6 +403,7 @@ function localManagementPlugin(): Plugin {
             };
 
             const syncResult = addMovie(movieToAdd, enrichedCastForMovie);
+            await refreshSeoOutput();
             res.statusCode = 200;
             res.end(JSON.stringify({
               success: true,
@@ -424,6 +426,7 @@ function localManagementPlugin(): Plugin {
             }
 
             const syncResult = removeMovie(tmdbId);
+            await refreshSeoOutput();
             res.statusCode = 200;
             res.end(JSON.stringify({
               success: true,
@@ -521,6 +524,7 @@ function localManagementPlugin(): Plugin {
               };
             }
             const added = addUpcomingMovie(movie);
+            await refreshSeoOutput();
             res.statusCode = 200;
             res.end(JSON.stringify({
               success: true,
@@ -539,6 +543,7 @@ function localManagementPlugin(): Plugin {
               return;
             }
             const updated = removeUpcomingMovie(id);
+            await refreshSeoOutput();
             res.statusCode = 200;
             res.end(JSON.stringify({
               success: true,
@@ -557,6 +562,7 @@ function localManagementPlugin(): Plugin {
               return;
             }
             const updated = updateUpcomingMovie(id, updates || {});
+            await refreshSeoOutput();
             res.statusCode = 200;
             res.end(JSON.stringify({
               success: true,
@@ -623,6 +629,7 @@ function localManagementPlugin(): Plugin {
             }
 
             const syncResult = promoteUpcomingToCollection(id, enrichedMovie, castList);
+            await refreshSeoOutput();
             res.statusCode = 200;
             res.end(JSON.stringify({
               success: true,
@@ -722,6 +729,7 @@ function localManagementPlugin(): Plugin {
           if (pathname === '/api/manage/cast/save-enriched' && req.method === 'POST') {
             const personCache = loadPersonCache();
             const castData = enrichCastData(null, personCache);
+            await refreshSeoOutput();
             res.statusCode = 200;
             res.end(JSON.stringify({
               success: true,
@@ -748,6 +756,7 @@ function localManagementPlugin(): Plugin {
                 token,
                 log: message => console.log(`[cast-rebuild] ${message}`)
               } as any);
+              await refreshSeoOutput();
               res.statusCode = 200;
               res.end(JSON.stringify(result));
             } catch (err: any) {

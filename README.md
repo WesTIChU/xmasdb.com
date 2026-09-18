@@ -53,6 +53,7 @@ production site in `dist/`. Deploy the contents of `dist/` to a static host.
 | `npm run cast:rebuild` | Rebuild cast data from TMDB |
 | `npm run cast:refresh` | Refresh cached cast data |
 | `npm run assets:migrate` | Migrate local image assets |
+| `npm run seo:refresh` | Regenerate static SEO pages, sitemaps, and feeds |
 
 ## Catalog Refresh
 
@@ -66,6 +67,9 @@ TMDB_API_KEY="your-key" npm run catalog:refresh
 The refresh updates stored movie metadata, ratings, vote counts, cast data,
 and related public JSON files. See [MONTHLY_REFRESH.md](MONTHLY_REFRESH.md)
 for the scheduled monthly workflow.
+
+Movie-management changes regenerate the static SEO pages automatically. Run
+`npm run seo:refresh` manually after editing catalog JSON files directly.
 
 ## Generated Files
 
