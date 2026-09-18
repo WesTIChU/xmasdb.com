@@ -683,6 +683,94 @@
     "status": "upcoming"
   },
   {
+    "title": "Holiday Unplugged",
+    "originalTitle": "Holiday Unplugged",
+    "year": 2026,
+    "release_date": "2026-11-07",
+    "premiereDate": "2026-11-07",
+    "tmdbId": 1773357,
+    "tmdb_id": 1773357,
+    "imdbId": "tt46075500",
+    "imdb_id": "tt46075500",
+    "overview": "Sally (DeLoach), an art teacher, has spent the last 10 years honoring the memory of her late husband, Jake, while raising their children, Keegan (Brandon Ironside) and Boo (Remy Marthaller). Feeling like she’s finally ready for love, she joins a dating app and is matched with Damon (Di Pace), her former colleague who taught her kids’ kindergarten class. Jake had co-founded a web platform that preserved family home videos. When a server migration wipes out Sally’s treasured videos of him – and her phone containing backup copies accidentally shatters – the only hope is finding the original tapes. She doesn’t want Keegan and Boo to know about the missing videos so to buy time until they’re recovered, Sally institutes a screen-free Christmas for her family while secretly searching for the tapes.",
+    "vote_average": 0,
+    "vote_count": 0,
+    "runtime": 0,
+    "genres": [
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "release_dates": [
+      {
+        "country": "US",
+        "release_date": "2026-11-07T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": ""
+      }
+    ],
+    "crew": [
+      {
+        "id": 1767300,
+        "name": "Zac Hug",
+        "job": "Writer",
+        "credit_id": "6aacef7e18a02d25675bd1ed"
+      }
+    ],
+    "cast": [
+      {
+        "id": 59750,
+        "name": "Nikki DeLoach",
+        "character": "Sally",
+        "order": 0,
+        "profile_path": "/images/people/59750.webp",
+        "birthday": "1979-09-09",
+        "deathday": null
+      },
+      {
+        "id": 58970,
+        "name": "Juan Pablo Di Pace",
+        "character": "Damon",
+        "order": 1,
+        "profile_path": "/images/people/58970.webp",
+        "birthday": "1979-07-25",
+        "deathday": null
+      },
+      {
+        "id": 4327757,
+        "name": "Brandon Ironside",
+        "character": "Keegan",
+        "order": 2,
+        "profile_path": "/images/people/4327757.webp",
+        "birthday": null,
+        "deathday": null
+      },
+      {
+        "id": 3272175,
+        "name": "Remy Marthaller",
+        "character": "Boo",
+        "order": 3,
+        "profile_path": "/images/people/3272175.webp",
+        "birthday": null,
+        "deathday": null
+      },
+      {
+        "id": 1658287,
+        "name": "Brock Morgan",
+        "character": "Jake",
+        "order": 4,
+        "profile_path": "/images/people/1658287.webp",
+        "birthday": null,
+        "deathday": null
+      }
+    ],
+    "castSummary": "Nikki DeLoach, Juan Pablo Di Pace, Brandon Ironside, Remy Marthaller, Brock Morgan",
+    "videos": [],
+    "status": "upcoming"
+  },
+  {
     "id": "tmdb-1773353",
     "title": "A Season of Promises",
     "hallmarkTitle": "A Season of Promises",
@@ -759,6 +847,192 @@
         "note": ""
       }
     ],
+    "status": "upcoming"
+  },
+  {
+    "title": "My Christmas Cowboy",
+    "originalTitle": "My Christmas Cowboy",
+    "year": 2026,
+    "release_date": "2026-11-13",
+    "premiereDate": "2026-11-13",
+    "tmdbId": 1773350,
+    "tmdb_id": 1773350,
+    "imdbId": "tt46075976",
+    "imdb_id": "tt46075976",
+    "overview": "Meg set aside her newscaster aspirations after a disastrous audition experience in college and has been happy as a news producer in her small town of Fern, Texas. Billy Kane, her former college crush and audition partner, is a well-known celebrity host in Hollywood on the brink of losing his career after an on-camera gaffe. At the advice of his publicist, Billy begrudgingly returns to Texas to lay low and spend the holidays with his sister and her family. When Meg and Billy cross paths he’s happy to see her but her feelings are on the frostier side: she’s still upset he took advantage of her failed audition to get the gig himself. Meg finds herself seeing Billy more than she’d like since his nephew Graham is in the horse therapy program her dad runs at their ranch. With the annual Reindeer Roundup holiday event coming up, Meg’s dad gets sidelined after an injury and enlists Billy to serve has its host, much to Meg’s chagrin.",
+    "vote_average": 0,
+    "vote_count": 0,
+    "runtime": 0,
+    "genres": [
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "release_dates": [
+      {
+        "country": "US",
+        "release_date": "2026-11-13T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": ""
+      }
+    ],
+    "cast": [
+      {
+        "id": 81133,
+        "name": "Amy Acker",
+        "character": "Meg",
+        "order": 0,
+        "profile_path": "/images/people/81133.webp",
+        "birthday": "1976-12-05",
+        "deathday": null
+      },
+      {
+        "id": 432040,
+        "name": "Luke Macfarlane",
+        "character": "Billy Kane",
+        "order": 1,
+        "profile_path": "/images/people/432040.webp",
+        "birthday": "1980-01-19",
+        "deathday": null
+      },
+      {
+        "id": 221840,
+        "name": "Sara Canning",
+        "character": "",
+        "order": 2,
+        "profile_path": "/images/people/221840.webp",
+        "birthday": "1987-07-14",
+        "deathday": null
+      },
+      {
+        "id": 3487782,
+        "name": "Isaiah Haegert",
+        "character": "Graham",
+        "order": 3,
+        "profile_path": null,
+        "birthday": null,
+        "deathday": null
+      }
+    ],
+    "castSummary": "Amy Acker, Luke Macfarlane, Sara Canning, Isaiah Haegert",
+    "videos": [],
+    "status": "upcoming"
+  },
+  {
+    "title": "The Nights Before Christmas",
+    "originalTitle": "The Nights Before Christmas",
+    "year": 2026,
+    "release_date": "2026-11-14",
+    "premiereDate": "2026-11-14",
+    "tmdbId": 1773345,
+    "tmdb_id": 1773345,
+    "imdbId": "tt46076002",
+    "imdb_id": "tt46076002",
+    "overview": "One Christmas Eve, Marty (Hynes), whose life is in a bit of a rut, finds himself wishing he had more time. Thanks to some holiday magic, he awakes the next morning to discover it's Christmas Eve – again. Confused at first, Marty learns to embrace his new normal and begins to truly appreciate the sights, sounds and people of New York City that previously went unnoticed. With this gift of time, he expands his world by learning how to play a new instrument, picking up new languages and reading...every single book. But when Marty meets Chloe (Mailey), a newly out-of-work journalist having a tough day, he falls hard for her. The only problem is that when the morning of December 24 comes once again, she doesn't know who he is. As the Christmas Eves continue to repeat themselves, Marty makes it his mission to win her over and, in the process, figure out what he needs to do to finally make his way to Christmas Day — hopefully with Chloe by his side.",
+    "vote_average": 0,
+    "vote_count": 0,
+    "runtime": 0,
+    "genres": [
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "release_dates": [
+      {
+        "country": "US",
+        "release_date": "2026-11-14T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": ""
+      }
+    ],
+    "cast": [
+      {
+        "id": 218923,
+        "name": "Tyler Hynes",
+        "character": "Marty",
+        "order": 0,
+        "profile_path": "/images/people/218923.webp",
+        "birthday": "1986-05-06",
+        "deathday": null
+      },
+      {
+        "id": 1037844,
+        "name": "Laci J. Mailey",
+        "character": "Chloe",
+        "order": 1,
+        "profile_path": "/images/people/1037844.webp",
+        "birthday": "1990-11-15",
+        "deathday": null
+      }
+    ],
+    "castSummary": "Tyler Hynes, Laci J. Mailey",
+    "videos": [],
+    "status": "upcoming"
+  },
+  {
+    "title": "Mistletoe and Mimosas",
+    "originalTitle": "Mistletoe and Mimosas",
+    "year": 2026,
+    "release_date": "2026-11-15",
+    "premiereDate": "2026-11-15",
+    "tmdbId": 1773340,
+    "tmdb_id": 1773340,
+    "imdbId": "tt46076026",
+    "imdb_id": "tt46076026",
+    "overview": "Claire Bennett is a successful business consultant in Manhattan who unexpectedly inherits her beloved Uncle Lou's Christmas-themed bar, The Tipsy Reindeer, in upstate New York. When she returns, Claire discovers the bar comes with high debt – her Uncle Lou was overly generous to people in town while the booming business of Algorithm, an upscale and trendy new club, added insult to injury. She intends to turn things around before Christmas and sell to someone who will preserve her uncle's legacy and then return to her life in the city. Claire meets Zach, Algorithm's part owner and manager, who tells her they want to buy The Tipsy Reindeer so they can expand. Claire bristles at the proposition and they agree to face off in a 12 Days of Christmas-inspired series of festive events to see who can bring in the most business. If Claire wins, Zach will use his contacts to find the right buyer, but if Zach emerges victorious, Claire agrees to consider Algorithm's offer.",
+    "vote_average": 0,
+    "vote_count": 0,
+    "runtime": 0,
+    "genres": [
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "release_dates": [
+      {
+        "country": "US",
+        "release_date": "2026-11-15T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": ""
+      }
+    ],
+    "cast": [
+      {
+        "id": 87570,
+        "name": "Tamera Mowry-Housley",
+        "character": "Claire Bennett",
+        "order": 0,
+        "profile_path": "/images/people/87570.webp",
+        "birthday": "1978-07-06",
+        "deathday": null
+      },
+      {
+        "id": 87571,
+        "name": "Jennifer Robertson",
+        "character": "",
+        "order": 1,
+        "profile_path": "/images/people/87571.webp",
+        "birthday": "1971-11-24",
+        "deathday": null
+      },
+      {
+        "id": 159386,
+        "name": "Kristoffer Polaha",
+        "character": "Zach",
+        "order": 2,
+        "profile_path": "/images/people/159386.webp",
+        "birthday": "1977-02-18",
+        "deathday": null
+      }
+    ],
+    "castSummary": "Tamera Mowry-Housley, Jennifer Robertson, Kristoffer Polaha",
+    "videos": [],
     "status": "upcoming"
   },
   {
@@ -1627,6 +1901,193 @@
         "credit_id": "6aacda4232fd499b3e3cc3c5"
       }
     ],
+    "status": "upcoming"
+  },
+  {
+    "title": "Miles to Christmas",
+    "originalTitle": "Miles to Christmas",
+    "year": 2026,
+    "release_date": "2026-11-29",
+    "premiereDate": "2026-11-29",
+    "tmdbId": 1773293,
+    "tmdb_id": 1773293,
+    "imdbId": "tt40629979",
+    "imdb_id": "tt40629979",
+    "overview": "When an early snowstorm sweeps through the Midwest, punctual, straight-laced \"suit\" Cassidy Fields is forced to hitch a ride with free spirited, music loving Johanna \"Jo\" Woods in her bother Chase's 18-wheeler to the nearest airport to catch another flight. However, when Jo's flight successfully takes off and Cassidy's is cancelled again at the last minute, she joins Chase on the road back to Tennessee from Chicago to make it home in time to spend Christmas with her father. Quickly, Cassidy and Chase's connection begins to spark. Through losing the car keys, stopping to partake in a Mrs. Claus parade and a surprise run-in with Jo, whose plane got grounded mid-flight due to weather, Cassidy builds bonds with both siblings as they all challenge one another's life philosophies. As the trio pushes past every obstacle, they work to embrace their differences and find that the fastest way home is when they lean on one another for help.",
+    "vote_average": 0,
+    "vote_count": 0,
+    "runtime": 0,
+    "genres": [
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "release_dates": [
+      {
+        "country": "US",
+        "release_date": "2026-11-29T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": ""
+      }
+    ],
+    "crew": [
+      {
+        "id": 1846454,
+        "name": "Alejandro Alcoba",
+        "job": "Writer",
+        "credit_id": "6aacd9045f585dd5f10c1765"
+      }
+    ],
+    "cast": [
+      {
+        "id": 122888,
+        "name": "Ashley Williams",
+        "character": "Cassidy Fields",
+        "order": 0,
+        "profile_path": "/images/people/122888.webp",
+        "birthday": "1978-11-12",
+        "deathday": null
+      },
+      {
+        "id": 1212016,
+        "name": "Alison Sweeney",
+        "character": "Johanna 'Jo' Woods",
+        "order": 1,
+        "profile_path": "/images/people/1212016.webp",
+        "birthday": "1976-09-19",
+        "deathday": null
+      },
+      {
+        "id": 1290184,
+        "name": "Steve Lund",
+        "character": "Chase",
+        "order": 2,
+        "profile_path": "/images/people/1290184.webp",
+        "birthday": "1989-01-09",
+        "deathday": null
+      },
+      {
+        "id": 1669343,
+        "name": "Francesca Bianchi",
+        "character": "",
+        "order": 3,
+        "profile_path": "/images/people/1669343.webp",
+        "birthday": null,
+        "deathday": null
+      },
+      {
+        "id": 2391228,
+        "name": "Matthew James Dowden",
+        "character": "",
+        "order": 4,
+        "profile_path": "/images/people/2391228.webp",
+        "birthday": null,
+        "deathday": null
+      },
+      {
+        "id": 1234354,
+        "name": "Sarah Hayward",
+        "character": "",
+        "order": 5,
+        "profile_path": "/images/people/1234354.webp",
+        "birthday": null,
+        "deathday": null
+      },
+      {
+        "id": 185330,
+        "name": "Greg Rogers",
+        "character": "",
+        "order": 6,
+        "profile_path": "/images/people/185330.webp",
+        "birthday": null,
+        "deathday": null
+      },
+      {
+        "id": 2802803,
+        "name": "Shyinne Anastacio",
+        "character": "",
+        "order": 7,
+        "profile_path": "/images/people/2802803.webp",
+        "birthday": null,
+        "deathday": null
+      },
+      {
+        "id": 1079959,
+        "name": "Sari Mercer",
+        "character": "",
+        "order": 8,
+        "profile_path": "/images/people/1079959.webp",
+        "birthday": null,
+        "deathday": null
+      },
+      {
+        "id": 1770250,
+        "name": "Shiraine Haas",
+        "character": "",
+        "order": 9,
+        "profile_path": "/images/people/1770250.webp",
+        "birthday": null,
+        "deathday": null
+      },
+      {
+        "id": 1225999,
+        "name": "Andy Nez",
+        "character": "",
+        "order": 10,
+        "profile_path": "/images/people/1225999.webp",
+        "birthday": null,
+        "deathday": null
+      },
+      {
+        "id": 1327457,
+        "name": "Arpad Balogh",
+        "character": "",
+        "order": 11,
+        "profile_path": "/images/people/1327457.webp",
+        "birthday": null,
+        "deathday": null
+      },
+      {
+        "id": 5015775,
+        "name": "Amara Sanoy",
+        "character": "",
+        "order": 12,
+        "profile_path": null,
+        "birthday": null,
+        "deathday": null
+      },
+      {
+        "id": 3768634,
+        "name": "Andrea Scozzafava",
+        "character": "Simone",
+        "order": 13,
+        "profile_path": "/images/people/3768634.webp",
+        "birthday": null,
+        "deathday": null
+      },
+      {
+        "id": 5120435,
+        "name": "Leah Belle MacDonald",
+        "character": "",
+        "order": 14,
+        "profile_path": "/images/people/5120435.webp",
+        "birthday": null,
+        "deathday": null
+      },
+      {
+        "id": 3445074,
+        "name": "Jody Quine",
+        "character": "",
+        "order": 15,
+        "profile_path": "/images/people/3445074.webp",
+        "birthday": null,
+        "deathday": null
+      }
+    ],
+    "castSummary": "Ashley Williams, Alison Sweeney, Steve Lund, Francesca Bianchi, Matthew James Dowden, Sarah Hayward, Greg Rogers, Shyinne Anastacio",
+    "videos": [],
     "status": "upcoming"
   },
   {

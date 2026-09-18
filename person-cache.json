@@ -3511,6 +3511,20 @@
     "lastUpdated": "2026-09-18T14:33:51.513Z",
     "profile": "/images/people/58902.webp"
   },
+  "58970": {
+    "id": 58970,
+    "name": "Juan Pablo Di Pace",
+    "birthday": "1979-07-25",
+    "deathday": null,
+    "profile_path": "/images/people/58970.webp",
+    "known_for_department": "Acting",
+    "fetchedFromTmdb": true,
+    "enrichmentVersion": 2,
+    "imagesChecked": false,
+    "photoRecoveredFromImages": false,
+    "lastUpdated": "2026-09-18T16:24:34.670Z",
+    "profile": "/images/people/58970.webp"
+  },
   "59177": {
     "id": 59177,
     "name": "Michael Rady",
@@ -3676,7 +3690,7 @@
     "enrichmentVersion": 2,
     "imagesChecked": false,
     "photoRecoveredFromImages": false,
-    "lastUpdated": "2026-09-18T14:32:13.895Z",
+    "lastUpdated": "2026-09-18T16:24:34.606Z",
     "profile": "/images/people/59750.webp"
   },
   "59794": {
@@ -5635,7 +5649,7 @@
     "enrichmentVersion": 2,
     "imagesChecked": false,
     "photoRecoveredFromImages": false,
-    "lastUpdated": "2026-09-18T14:35:05.180Z",
+    "lastUpdated": "2026-09-18T16:24:35.716Z",
     "profile": "/images/people/81133.webp"
   },
   "81217": {
@@ -6097,7 +6111,7 @@
     "enrichmentVersion": 2,
     "imagesChecked": false,
     "photoRecoveredFromImages": false,
-    "lastUpdated": "2026-09-18T14:32:53.453Z",
+    "lastUpdated": "2026-09-18T16:24:36.316Z",
     "profile": "/images/people/87570.webp"
   },
   "87571": {
@@ -6111,7 +6125,7 @@
     "enrichmentVersion": 2,
     "imagesChecked": false,
     "photoRecoveredFromImages": false,
-    "lastUpdated": "2026-09-18T14:33:59.431Z",
+    "lastUpdated": "2026-09-18T16:24:36.379Z",
     "profile": "/images/people/87571.webp"
   },
   "87765": {
@@ -7826,7 +7840,7 @@
     "enrichmentVersion": 2,
     "imagesChecked": false,
     "photoRecoveredFromImages": false,
-    "lastUpdated": "2026-09-18T14:32:18.755Z",
+    "lastUpdated": "2026-09-18T16:24:36.571Z",
     "profile": "/images/people/122888.webp"
   },
   "123148": {
@@ -8941,7 +8955,7 @@
     "enrichmentVersion": 2,
     "imagesChecked": false,
     "photoRecoveredFromImages": false,
-    "lastUpdated": "2026-09-18T14:32:13.926Z",
+    "lastUpdated": "2026-09-18T16:24:36.442Z",
     "profile": "/images/people/159386.webp"
   },
   "159575": {
@@ -10030,7 +10044,7 @@
     "enrichmentVersion": 2,
     "imagesChecked": false,
     "photoRecoveredFromImages": false,
-    "lastUpdated": "2026-09-18T14:33:07.783Z",
+    "lastUpdated": "2026-09-18T16:24:37.026Z",
     "profile": "/images/people/185330.webp"
   },
   "186502": {
@@ -10976,7 +10990,7 @@
     "enrichmentVersion": 2,
     "imagesChecked": false,
     "photoRecoveredFromImages": false,
-    "lastUpdated": "2026-09-18T14:32:19.203Z",
+    "lastUpdated": "2026-09-18T16:24:36.087Z",
     "profile": "/images/people/218923.webp"
   },
   "219998": {
@@ -11032,7 +11046,7 @@
     "enrichmentVersion": 2,
     "imagesChecked": false,
     "photoRecoveredFromImages": false,
-    "lastUpdated": "2026-09-18T14:33:07.004Z",
+    "lastUpdated": "2026-09-18T16:24:35.840Z",
     "profile": "/images/people/221840.webp"
   },
   "221843": {
@@ -11436,7 +11450,7 @@
     "enrichmentVersion": 2,
     "imagesChecked": false,
     "photoRecoveredFromImages": false,
-    "lastUpdated": "2026-09-18T14:33:31.635Z",
+    "lastUpdated": "2026-09-18T16:24:35.780Z",
     "profile": "/images/people/432040.webp"
   },
   "440439": {
@@ -12633,7 +12647,7 @@
     "enrichmentVersion": 2,
     "imagesChecked": false,
     "photoRecoveredFromImages": false,
-    "lastUpdated": "2026-09-18T14:32:18.777Z",
+    "lastUpdated": "2026-09-18T16:24:36.147Z",
     "profile": "/images/people/1037844.webp"
   },
   "1040469": {
@@ -12871,6 +12885,20 @@
     "photoRecoveredFromImages": false,
     "lastUpdated": "2026-09-18T14:34:24.991Z",
     "profile": "/images/people/1077805.webp"
+  },
+  "1079959": {
+    "id": 1079959,
+    "name": "Sari Mercer",
+    "birthday": null,
+    "deathday": null,
+    "profile_path": "/images/people/1079959.webp",
+    "known_for_department": "Acting",
+    "fetchedFromTmdb": true,
+    "enrichmentVersion": 2,
+    "imagesChecked": false,
+    "photoRecoveredFromImages": false,
+    "lastUpdated": "2026-09-18T16:24:37.211Z",
+    "profile": "/images/people/1079959.webp"
   },
   "1083115": {
     "id": 1083115,
@@ -13939,7 +13967,7 @@
     "enrichmentVersion": 2,
     "imagesChecked": false,
     "photoRecoveredFromImages": false,
-    "lastUpdated": "2026-09-18T14:33:54.470Z",
+    "lastUpdated": "2026-09-18T16:24:36.635Z",
     "profile": "/images/people/1212016.webp"
   },
   "1212317": {
@@ -14553,7 +14581,7 @@
     "enrichmentVersion": 2,
     "imagesChecked": false,
     "photoRecoveredFromImages": false,
-    "lastUpdated": "2026-09-18T14:33:20.613Z",
+    "lastUpdated": "2026-09-18T16:24:37.386Z",
     "profile": "/images/people/1225999.webp"
   },
   "1226195": {
@@ -14874,7 +14902,7 @@
     "enrichmentVersion": 2,
     "imagesChecked": false,
     "photoRecoveredFromImages": false,
-    "lastUpdated": "2026-09-18T14:34:25.274Z",
+    "lastUpdated": "2026-09-18T16:24:36.962Z",
     "profile": "/images/people/1234354.webp"
   },
   "1234355": {
@@ -15971,7 +15999,7 @@
     "enrichmentVersion": 2,
     "imagesChecked": false,
     "photoRecoveredFromImages": false,
-    "lastUpdated": "2026-09-18T14:35:03.073Z",
+    "lastUpdated": "2026-09-18T16:24:36.699Z",
     "profile": "/images/people/1290184.webp"
   },
   "1292329": {
@@ -16317,7 +16345,7 @@
     "enrichmentVersion": 2,
     "imagesChecked": false,
     "photoRecoveredFromImages": false,
-    "lastUpdated": "2026-09-18T14:34:59.131Z",
+    "lastUpdated": "2026-09-18T16:24:37.452Z",
     "profile": "/images/people/1327457.webp"
   },
   "1328786": {
@@ -20947,7 +20975,7 @@
     "enrichmentVersion": 2,
     "imagesChecked": false,
     "photoRecoveredFromImages": false,
-    "lastUpdated": "2026-09-18T14:32:18.015Z",
+    "lastUpdated": "2026-09-18T16:24:35.576Z",
     "profile": "/images/people/1658287.webp"
   },
   "1660984": {
@@ -20977,6 +21005,20 @@
     "photoRecoveredFromImages": false,
     "lastUpdated": "2026-09-18T14:33:29.288Z",
     "profile": "/images/people/1669201.webp"
+  },
+  "1669343": {
+    "id": 1669343,
+    "name": "Francesca Bianchi",
+    "birthday": null,
+    "deathday": null,
+    "profile_path": "/images/people/1669343.webp",
+    "known_for_department": "Acting",
+    "fetchedFromTmdb": true,
+    "enrichmentVersion": 2,
+    "imagesChecked": false,
+    "photoRecoveredFromImages": false,
+    "lastUpdated": "2026-09-18T16:24:36.761Z",
+    "profile": "/images/people/1669343.webp"
   },
   "1670066": {
     "id": 1670066,
@@ -22139,7 +22181,7 @@
     "enrichmentVersion": 2,
     "imagesChecked": false,
     "photoRecoveredFromImages": false,
-    "lastUpdated": "2026-09-18T14:33:24.958Z",
+    "lastUpdated": "2026-09-18T16:24:37.322Z",
     "profile": "/images/people/1770250.webp"
   },
   "1771542": {
@@ -28280,7 +28322,7 @@
     "enrichmentVersion": 2,
     "imagesChecked": false,
     "photoRecoveredFromImages": false,
-    "lastUpdated": "2026-09-18T14:32:53.569Z",
+    "lastUpdated": "2026-09-18T16:24:36.901Z",
     "profile": "/images/people/2391228.webp"
   },
   "2393639": {
@@ -31636,6 +31678,20 @@
     "photoRecoveredFromImages": false,
     "lastUpdated": "2026-09-18T14:34:09.891Z"
   },
+  "2802803": {
+    "id": 2802803,
+    "name": "Shyinne Anastacio",
+    "birthday": null,
+    "deathday": null,
+    "profile_path": "/images/people/2802803.webp",
+    "known_for_department": "Acting",
+    "fetchedFromTmdb": true,
+    "enrichmentVersion": 2,
+    "imagesChecked": false,
+    "photoRecoveredFromImages": false,
+    "lastUpdated": "2026-09-18T16:24:37.089Z",
+    "profile": "/images/people/2802803.webp"
+  },
   "2813550": {
     "id": 2813550,
     "name": "Julie Lamberton",
@@ -34880,7 +34936,7 @@
     "enrichmentVersion": 2,
     "imagesChecked": false,
     "photoRecoveredFromImages": false,
-    "lastUpdated": "2026-09-18T14:32:17.923Z",
+    "lastUpdated": "2026-09-18T16:24:35.461Z",
     "profile": "/images/people/3272175.webp"
   },
   "3272192": {
@@ -35603,7 +35659,7 @@
     "enrichmentVersion": 2,
     "imagesChecked": false,
     "photoRecoveredFromImages": false,
-    "lastUpdated": "2026-09-18T14:32:39.190Z",
+    "lastUpdated": "2026-09-18T16:24:38.156Z",
     "profile": "/images/people/3445074.webp"
   },
   "3459885": {
@@ -35632,6 +35688,19 @@
     "photoRecoveredFromImages": false,
     "lastUpdated": "2026-09-18T14:32:18.109Z",
     "profile": "/images/people/3459904.webp"
+  },
+  "3487782": {
+    "id": 3487782,
+    "name": "Isaiah Haegert",
+    "birthday": null,
+    "deathday": null,
+    "profile_path": null,
+    "known_for_department": "Acting",
+    "fetchedFromTmdb": true,
+    "enrichmentVersion": 2,
+    "imagesChecked": true,
+    "photoRecoveredFromImages": false,
+    "lastUpdated": "2026-09-18T16:24:35.963Z"
   },
   "3493105": {
     "id": 3493105,
@@ -36632,6 +36701,20 @@
     "imagesChecked": true,
     "photoRecoveredFromImages": false,
     "lastUpdated": "2026-09-18T14:34:00.771Z"
+  },
+  "3768634": {
+    "id": 3768634,
+    "name": "Andrea Scozzafava",
+    "birthday": null,
+    "deathday": null,
+    "profile_path": "/images/people/3768634.webp",
+    "known_for_department": "Acting",
+    "fetchedFromTmdb": true,
+    "enrichmentVersion": 2,
+    "imagesChecked": false,
+    "photoRecoveredFromImages": false,
+    "lastUpdated": "2026-09-18T16:24:37.652Z",
+    "profile": "/images/people/3768634.webp"
   },
   "3771340": {
     "id": 3771340,
@@ -38406,6 +38489,20 @@
     "photoRecoveredFromImages": false,
     "lastUpdated": "2026-09-18T14:33:34.613Z"
   },
+  "4327757": {
+    "id": 4327757,
+    "name": "Brandon Ironside",
+    "birthday": null,
+    "deathday": null,
+    "profile_path": "/images/people/4327757.webp",
+    "known_for_department": "Acting",
+    "fetchedFromTmdb": true,
+    "enrichmentVersion": 2,
+    "imagesChecked": false,
+    "photoRecoveredFromImages": false,
+    "lastUpdated": "2026-09-18T16:24:35.114Z",
+    "profile": "/images/people/4327757.webp"
+  },
   "4329587": {
     "id": 4329587,
     "name": "Kevin Daigneault",
@@ -39743,6 +39840,19 @@
     "photoRecoveredFromImages": false,
     "lastUpdated": "2026-09-18T14:33:24.698Z"
   },
+  "5015775": {
+    "id": 5015775,
+    "name": "Amara Sanoy",
+    "birthday": null,
+    "deathday": null,
+    "profile_path": null,
+    "known_for_department": "Acting",
+    "fetchedFromTmdb": true,
+    "enrichmentVersion": 2,
+    "imagesChecked": true,
+    "photoRecoveredFromImages": false,
+    "lastUpdated": "2026-09-18T16:24:37.590Z"
+  },
   "5024369": {
     "id": 5024369,
     "name": "Isla McRae",
@@ -40024,6 +40134,20 @@
     "imagesChecked": true,
     "photoRecoveredFromImages": false,
     "lastUpdated": "2026-09-18T14:33:09.218Z"
+  },
+  "5120435": {
+    "id": 5120435,
+    "name": "Leah Belle MacDonald",
+    "birthday": null,
+    "deathday": null,
+    "profile_path": "/images/people/5120435.webp",
+    "known_for_department": "Acting",
+    "fetchedFromTmdb": true,
+    "enrichmentVersion": 2,
+    "imagesChecked": false,
+    "photoRecoveredFromImages": false,
+    "lastUpdated": "2026-09-18T16:24:37.902Z",
+    "profile": "/images/people/5120435.webp"
   },
   "5135017": {
     "id": 5135017,
