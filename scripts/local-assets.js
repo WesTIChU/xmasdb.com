@@ -3,8 +3,8 @@ import path from 'node:path';
 import sharp from 'sharp';
 
 const IMAGE_BASE_URL = 'https://image.tmdb.org/t/p';
-const IMAGE_DIRS = { poster: 'posters', person: 'people' };
-const IMAGE_WIDTHS = { poster: 900, person: 800 };
+const IMAGE_DIRS = { poster: 'posters', backdrop: 'backdrops', person: 'people' };
+const IMAGE_WIDTHS = { poster: 900, backdrop: 1280, person: 800 };
 
 function imageId(id) {
   const value = Number(id);

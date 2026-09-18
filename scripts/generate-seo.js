@@ -1,8 +1,8 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { getActorUrl, getMovieUrl } from '../movie-url.js';
-import { getPublicMovies } from '../public-movies.js';
+import { getActorUrl, getMovieUrl } from '../src/js/movie-url.js';
+import { getPublicMovies } from '../src/js/public-movies.js';
 import { generateRadarrFeeds } from './generate-radarr-feeds.js';
 import { selectTrailerVideos } from './trailer-utils.js';
 
@@ -18,7 +18,8 @@ const castData = JSON.parse(fs.readFileSync(path.join(ROOT, 'cast.json'), 'utf8'
 const personCache = JSON.parse(fs.readFileSync(path.join(ROOT, 'person-cache.json'), 'utf8'));
 const castForMovie = movie => {
   const id = String(movie.tmdbId || movie.tmdb_id);
-  return castData.castByMovieId?.[id] || castData.movieCast?.[id] || movie.cast || [];
+  const derived = castData.castByMovieId?.[id] || castData.movieCast?.[id];
+  return Array.isArray(derived) && derived.length ? derived : (movie.cast || []);
 };
 generateRadarrFeeds(movies, castData, upcomingMovies);
 const publicMovies = getPublicMovies(movies, upcomingMovies);
@@ -59,7 +60,7 @@ function headerHtml() {
 function shell({ title, description, canonical, type, image, schema, body, style = 'style.css' }) {
   const ogImage = image ? `<meta property="og:image" content="${escapeHtml(image)}">` : '';
   const twitterImage = image ? `<meta name="twitter:image" content="${escapeHtml(image)}">` : '';
-  return `<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>${escapeHtml(title)}</title><meta name="description" content="${escapeHtml(description)}"><link rel="canonical" href="${escapeHtml(absolute(canonical))}"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><meta property="og:type" content="${type}"><meta property="og:title" content="${escapeHtml(title)}"><meta property="og:description" content="${escapeHtml(description)}"><meta property="og:url" content="${escapeHtml(absolute(canonical))}">${ogImage}<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="${escapeHtml(title)}"><meta name="twitter:description" content="${escapeHtml(description)}">${twitterImage}<link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="/${style}"><script type="application/ld+json">${escapeJson(schema)}</script></head><body>${headerHtml()}${body}<footer id="site-footer" class="site-footer"></footer><script type="module" src="/snow.js"></script><script type="module" src="/js/site-layout.js"></script></body></html>`;
+  return `<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>${escapeHtml(title)}</title><meta name="description" content="${escapeHtml(description)}"><link rel="canonical" href="${escapeHtml(absolute(canonical))}"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><meta property="og:type" content="${type}"><meta property="og:title" content="${escapeHtml(title)}"><meta property="og:description" content="${escapeHtml(description)}"><meta property="og:url" content="${escapeHtml(absolute(canonical))}">${ogImage}<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="${escapeHtml(title)}"><meta name="twitter:description" content="${escapeHtml(description)}">${twitterImage}<link rel="stylesheet" href="/src/css/style.css"><link rel="stylesheet" href="/src/css/${style}"><script type="application/ld+json">${escapeJson(schema)}</script></head><body>${headerHtml()}${body}<footer id="site-footer" class="site-footer"></footer><script type="module" src="/src/js/snow.js"></script><script type="module" src="/src/js/site-layout.js"></script></body></html>`;
 }
 
 function writePage(route, html) {
@@ -103,7 +104,7 @@ for (const actor of actors) {
   generatedActorRoutes.add(route);
   const actorMovies = publicMovies.filter(movie => castForMovie(movie).some(person => Number(person.id) === Number(actor.id)));
   const description = `Explore ${actorLabel} and the Hallmark Christmas movies in our collection featuring the actor, including roles, movie years and cast information.`;
-  const profile = actor.profile || actor.profile_path || '';
+  const profile = actor.profile_path || actor.profile || '';
   const schema = { '@context': 'https://schema.org', '@type': 'Person', name: actor.name, image: profile || undefined, birthDate: actor.birthday || undefined, url: absolute(route), sameAs: [`https://www.themoviedb.org/person/${actor.id}`] };
   const movieLinks = actorMovies.sort((a, b) => Number(b.year || 0) - Number(a.year || 0)).map(movie => `<li><a href="${escapeHtml(movieUrl(movie))}">${escapeHtml(movie.title)}</a>${movie.year ? ` (${movie.year})` : ''}${movie.status === 'upcoming' ? ' <span class="detail-badge detail-badge-upcoming">UPCOMING</span>' : ''}</li>`).join('');
   const body = `<main class="actor-page-container"><nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span aria-hidden="true">&gt;</span> <a href="/actors">Actors</a> <span aria-hidden="true">&gt;</span> <span>${escapeHtml(actor.name)}</span></nav><article class="actor-content static-seo-content"><div class="actor-hero-section">${profile ? `<div class="actor-photo-col"><img class="actor-profile-photo" src="${escapeHtml(profile)}" alt="${escapeHtml(actor.name)} profile photo"></div>` : ''}<div class="actor-details-col"><h1 class="actor-name">${escapeHtml(actor.name)}</h1>${actor.birthday ? `<p>Born ${escapeHtml(actor.birthday)}</p>` : ''}<p>${escapeHtml(actor.name)} appears in ${actorMovies.length} Hallmark Christmas ${actorMovies.length === 1 ? 'movie' : 'movies'} in this collection.</p><a class="external-btn actor-json-btn" href="/json/actors/${actor.id}.json" target="_blank" rel="noopener noreferrer">RADARR / JSON LIST</a><p class="actor-json-help">Hallmark Christmas movies in this collection featuring ${escapeHtml(actor.name)}. This is not the actor's complete filmography.</p></div></div><section class="actor-filmography-section"><h2>XmasDB.com in this collection</h2><ul class="static-filmography-list">${movieLinks}</ul></section></article></main>`;

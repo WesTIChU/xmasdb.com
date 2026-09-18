@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { getPublicMovies } from '../public-movies.js';
+import { getPublicMovies } from '../src/js/public-movies.js';
 
 test('public movies keeps collection records ahead of Coming Soon duplicates', () => {
   const collection = [{ tmdbId: 10, title: 'Collected' }];

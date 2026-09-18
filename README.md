@@ -86,11 +86,11 @@ Generated build output is not committed; it is recreated during deployment.
 
 ## Project Structure
 
-- `index.html`, `app.js`: movie catalog and homepage
-- `movie.html`, `movie.js`, `movie.css`: dynamic movie detail page
-- `actor.html`, `actor.js`, `actor.css`: dynamic actor page
-- `radarr.html`, `radarr.js`: Radarr and JSON feed tools
-- `js/site-layout.js`: shared header, footer, disclaimer modal, and top button
+- `index.html`, `src/js/app.js`: movie catalog and homepage
+- `movie.html`, `src/js/movie.js`, `src/css/movie.css`: dynamic movie detail page
+- `actor.html`, `src/js/actor.js`, `src/css/actor.css`: dynamic actor page
+- `radarr.html`, `src/js/radarr.js`: Radarr and JSON feed tools
+- `src/js/site-layout.js`: shared header, footer, disclaimer modal, and top button
 - `scripts/generate-seo.js`: static SEO page and sitemap generation
 - `scripts/enrich-cast.js`: cast and actor data pipeline
 - `movie-storage.js`: local catalog and feed storage

@@ -5,7 +5,7 @@ import os from 'node:os';
 import path from 'node:path';
 import vm from 'node:vm';
 import { buildCastData, enrichCastData, fetchTmdbPerson, inspectMovieCast, rebuildAllCastFromTmdb, refreshActorsFromTmdb } from './enrich-cast.js';
-import { getActorUrl } from '../movie-url.js';
+import { getActorUrl } from '../src/js/movie-url.js';
 
 const credits = Array.from({ length: 22 }, (_, index) => ({
   id: index + 1,
@@ -21,7 +21,8 @@ function fixture(t) {
   fs.mkdirSync(path.join(rootDir, 'public'));
   fs.mkdirSync(path.join(rootDir, 'dist'));
   const write = (name, data) => fs.writeFileSync(path.join(rootDir, name), JSON.stringify(data));
-  write('movies.json', [{ tmdbId: 1545999, tmdb_id: 1545999, title: 'Christmas at the Catnip Café' }, { tmdb_id: 42, title: 'Second Movie' }]);
+  write('movies.json', [{ tmdbId: 1545999, tmdb_id: 1545999, title: 'Christmas at the Catnip Café', cast: credits.slice(0, 2) }, { tmdb_id: 42, title: 'Second Movie', cast: [credits[0]] }]);
+  write('upcoming.json', []);
   write('cast.json', { actors: [], castByMovieId: { 1545999: credits.slice(0, 2) }, movieCast: { 1545999: [credits[0]] } });
   write('cast-seed.json', { 1545999: ['Wrong seed'] });
   write('person-cache.json', { 1: { id: 1, name: 'Stale', profile_path: null, fetchedFromTmdb: true } });
@@ -57,15 +58,70 @@ test('retains every credit, empty roles, repeated appearances, order and distinc
   assert.equal(result.actors.find(p => p.id === 2).name, 'Same Name');
 });
 
-test('canonical saved membership overrides seeds and subsequent regeneration retains supplied credits', t => {
+test('canonical movie.cast is the source for subsequent regeneration', t => {
   const f = fixture(t);
   const initial = enrichCastData(null, {}, f.rootDir);
   assert.equal(initial.castByMovieId[1545999].length, 2);
   enrichCastData({ 1545999: credits }, {}, f.rootDir);
   const result = enrichCastData(null, {}, f.rootDir);
-  assert.equal(result.castByMovieId[1545999].length, 23);
+  assert.equal(result.castByMovieId[1545999].length, 2);
   assert.deepEqual(f.read('public/cast.json'), result);
   assert.deepEqual(f.read('dist/cast.json'), result);
+});
+
+function canonicalFixture(t, { movies = [], upcoming = [], cache = {}, staleCast = {} } = {}) {
+  const rootDir = fs.mkdtempSync(path.join(os.tmpdir(), 'canonical-cast-'));
+  fs.mkdirSync(path.join(rootDir, 'public'));
+  fs.mkdirSync(path.join(rootDir, 'dist'));
+  const write = (name, data) => fs.writeFileSync(path.join(rootDir, name), JSON.stringify(data));
+  write('movies.json', movies);
+  write('upcoming.json', upcoming);
+  write('cast.json', { actors: [], castByMovieId: staleCast, movieCast: staleCast });
+  write('cast-seed.json', {});
+  write('person-cache.json', cache);
+  t.after(() => fs.rmSync(rootDir, { recursive: true, force: true }));
+  return rootDir;
+}
+
+test('Collection movie.cast appears in generated cast data', t => {
+  const rootDir = canonicalFixture(t, { movies: [{ tmdbId: 1, title: 'Collection Movie', cast: [{ id: 10, name: 'Collection Actor', character: 'Lead', order: 0 }] }] });
+  const data = enrichCastData(null, {}, rootDir);
+  assert.deepEqual(data.castByMovieId['1'].map(person => person.id), [10]);
+  assert.equal(data.actors[0].movieTmdbIds[0], 1);
+});
+
+test('approved Coming Soon movie.cast appears in generated cast data', t => {
+  const rootDir = canonicalFixture(t, { upcoming: [{ tmdbId: 2, title: 'Coming Soon Movie', cast: [{ id: 20, name: 'Coming Actor', character: 'Lead', order: 0 }] }] });
+  const data = enrichCastData(null, {}, rootDir);
+  assert.deepEqual(data.castByMovieId['2'].map(person => person.id), [20]);
+  assert.equal(data.actors[0].movieTmdbIds[0], 2);
+});
+
+test('an actor existing only in approved Coming Soon is not dropped', t => {
+  const rootDir = canonicalFixture(t, { upcoming: [{ tmdbId: 3, title: 'Upcoming Only', cast: [{ id: 30, name: 'Upcoming Only Actor' }] }] });
+  const data = enrichCastData(null, {}, rootDir);
+  assert.equal(data.actors.find(actor => actor.id === 30).count, 1);
+});
+
+test('Coming Soon to Collection deduplicates one actor filmography entry', t => {
+  const movie = { tmdbId: 4, title: 'Moved Movie', cast: [{ id: 40, name: 'Moved Actor' }] };
+  const rootDir = canonicalFixture(t, { movies: [movie], upcoming: [{ ...movie, status: 'upcoming' }] });
+  const data = enrichCastData(null, {}, rootDir);
+  assert.deepEqual(data.actors.find(actor => actor.id === 40).movieTmdbIds, [4]);
+  assert.equal(data.totalMovies, 1);
+});
+
+test('stale cast.json omission is restored from canonical movie.cast', t => {
+  const rootDir = canonicalFixture(t, { movies: [{ tmdbId: 5, title: 'Restored Movie', cast: [{ id: 50, name: 'Restored Actor' }] }], staleCast: { 5: [] } });
+  const data = enrichCastData(null, {}, rootDir);
+  assert.equal(data.castByMovieId['5'][0].id, 50);
+  assert.equal(data.actors[0].id, 50);
+});
+
+test('person-cache actors without current public movie references are excluded', t => {
+  const rootDir = canonicalFixture(t, { movies: [{ tmdbId: 6, title: 'Other Movie', cast: [] }], cache: { 60: { id: 60, name: 'Cached Only Actor', profile_path: '/images/people/60.webp' } } });
+  const data = enrichCastData(null, {}, rootDir);
+  assert.equal(data.actors.some(actor => actor.id === 60), false);
 });
 
 test('raw inspection logs every record and all missing IDs without writing', async t => {
@@ -144,7 +200,7 @@ test('canonical IDs are validated instead of joining titles, positions or slugs'
 });
 
 test('existing movie renderer produces one linked card per credit including no-photo and empty-character records', () => {
-  const source = fs.readFileSync(new URL('../movie.js', import.meta.url), 'utf8');
+  const source = fs.readFileSync(new URL('../src/js/movie.js', import.meta.url), 'utf8');
   const start = source.indexOf('  function renderCastGrid(');
   const end = source.indexOf('\n  // Helper:', start);
   assert.ok(start > 0 && end > start);

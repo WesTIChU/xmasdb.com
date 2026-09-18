@@ -17,7 +17,7 @@ import 'dotenv/config';
 import express from 'express';
 import path from 'path';
 import { fileURLToPath } from 'url';
-import { getMovies, addMovie, removeMovie, getCastData, saveMoviesAndSync, updateMovieCast } from './movie-storage.js';
+import { getMovies, addMovie, removeMovie, getCastData, saveMoviesAndSync } from './movie-storage.js';
 import { fetchHallmarkHtml, extractHallmarkCandidates, matchCandidateWithTmdb } from './hallmark-service.js';
 import {
   getUniquePersonIdsFromCast, 
@@ -28,10 +28,10 @@ import {
   enrichCastData, 
   normalizeProfilePath 
 } from './scripts/enrich-cast.js';
-import { enrichMovieCast } from './scripts/enrich-movie-cast.js';
-import { slugify } from './movie-url.js';
+import { slugify } from './src/js/movie-url.js';
 import { ensureCachedImage } from './scripts/local-assets.js';
 import { selectTrailerVideos } from './scripts/trailer-utils.js';
+import { ingestTmdbMovie, validateTmdbMovieImport } from './scripts/tmdb-movie.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -351,71 +351,40 @@ app.post('/api/manage/refresh-movie', async (req, res) => {
     const current = getMovies();
     const index = current.findIndex(movie => Number(movie.tmdbId || movie.tmdb_id) === Number(tmdbId));
     if (index < 0) return res.status(404).json({ success: false, error: 'Movie is not in the local catalog.' });
-    const { data } = await fetchFromTmdb(`movie/${tmdbId}`, { append_to_response: 'external_ids,credits,videos' }, token);
     const existing = current[index];
-    const poster = await ensureCachedImage({ kind: 'poster', id: data.id, filePath: data.poster_path, rootDir: __dirname, force: true });
-    current[index] = {
-      ...existing,
-      title: data.title || existing.title,
-      year: data.release_date ? parseInt(data.release_date.slice(0, 4), 10) : existing.year,
-      release_date: data.release_date || existing.release_date || null,
-      imdbId: data.external_ids?.imdb_id || existing.imdbId || null,
-      imdb_id: data.external_ids?.imdb_id || existing.imdb_id || null,
-      overview: data.overview || existing.overview || '',
-      vote_average: Number.isFinite(Number(data.vote_average)) ? Number(data.vote_average) : null,
-      vote_count: Number.isFinite(Number(data.vote_count)) ? Number(data.vote_count) : null,
-      poster: poster.path || null,
-      videos: selectTrailerVideos(data.videos?.results).slice(0, 5).length > 0
-        ? selectTrailerVideos(data.videos?.results).slice(0, 5)
-        : (existing.videos || [])
-    };
-    saveMoviesAndSync(current);
     const personCache = loadPersonCache();
-    const refreshedCast = [];
-    for (const credit of data.credits?.cast || []) {
-      let person = null;
-      try { person = await fetchTmdbPerson(credit.id, token, personCache, true); } catch {}
-      const image = await ensureCachedImage({ kind: 'person', id: credit.id, filePath: person?.profile_path || credit.profile_path, rootDir: __dirname, force: true });
-      if (person && image.path) { person.profile_path = image.path; person.profile = image.path; }
-      refreshedCast.push({ ...credit, profile_path: image.path || person?.profile_path || null, profile: image.path || person?.profile_path || null });
-    }
+    const imported = await ingestTmdbMovie(tmdbId, {
+      token,
+      existing,
+      personCache,
+      rootDir: __dirname,
+      status: existing.status || 'collection',
+      refreshPeople: true
+    });
+    validateTmdbMovieImport(imported.data, imported.movie, tmdbId);
+    current[index] = imported.movie;
     savePersonCache(personCache);
-    updateMovieCast(data.id, refreshedCast);
-    res.json({ success: true, movie: current[index], castCount: refreshedCast.length });
+    saveMoviesAndSync(current);
+    const savedMovie = getMovies().find(movie => Number(movie.tmdbId || movie.tmdb_id) === Number(tmdbId)) || current[index];
+    res.json({ success: true, movie: savedMovie, castCount: savedMovie.cast?.length || 0 });
   } catch (err) {
     res.status(err.status === 401 || err.status === 403 ? 401 : 500).json({ success: false, error: err.message });
   }
 });
 
 async function addMovieFromTmdb(tmdbId, token) {
-  const fullRes = await fetchFromTmdb(`movie/${tmdbId}`, { append_to_response: 'external_ids,credits,videos' }, token);
-  const fullData = fullRes.data;
-  const releaseYear = fullData.release_date ? parseInt(fullData.release_date.split('-')[0], 10) : null;
-  const rawCast = fullData.credits?.cast || [];
   const personCache = loadPersonCache();
-  const enrichedCastForMovie = await enrichMovieCast(rawCast, { token, personCache, rootDir: __dirname });
+  const imported = await ingestTmdbMovie(tmdbId, {
+    token,
+    existing: {},
+    personCache,
+    rootDir: __dirname,
+    status: 'collection'
+  });
+  validateTmdbMovieImport(imported.data, imported.movie, tmdbId);
+  const syncResult = addMovie(imported.movie, imported.movie.cast);
   savePersonCache(personCache);
-
-  const movie = {
-    title: fullData.title,
-    year: releaseYear,
-    release_date: fullData.release_date || null,
-    tmdbId: fullData.id,
-    imdbId: fullData.external_ids?.imdb_id || null,
-    tmdb_id: fullData.id,
-    imdb_id: fullData.external_ids?.imdb_id || null,
-    poster: null,
-    overview: fullData.overview || '',
-    vote_average: Number.isFinite(Number(fullData.vote_average)) ? Number(fullData.vote_average) : null,
-    vote_count: Number.isFinite(Number(fullData.vote_count)) ? Number(fullData.vote_count) : null,
-    cast: enrichedCastForMovie,
-    castSummary: enrichedCastForMovie.slice(0, 8).map(credit => credit.name).join(', '),
-    videos: selectTrailerVideos(fullData.videos?.results).slice(0, 5)
-  };
-  const poster = await ensureCachedImage({ kind: 'poster', id: fullData.id, filePath: fullData.poster_path, rootDir: __dirname });
-  if (poster.path) movie.poster = poster.path;
-  const syncResult = addMovie(movie, enrichedCastForMovie);
-  return { ...syncResult, movie };
+  return { ...syncResult, movie: imported.movie, report: imported.report };
 }
 
 app.post('/api/manage/hallmark-import-all', async (req, res) => {

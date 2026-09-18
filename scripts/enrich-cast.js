@@ -29,7 +29,12 @@ export function loadPersonCache(rootDir = ROOT_DIR) {
 }
 
 export function savePersonCache(cache, rootDir = ROOT_DIR) {
-  fs.writeFileSync(path.join(rootDir, 'person-cache.json'), JSON.stringify(cache, null, 2), 'utf8');
+  const file = path.join(rootDir, 'person-cache.json');
+  const output = JSON.stringify(cache, null, 2);
+  if (fs.existsSync(file) && fs.readFileSync(file, 'utf8') === output) return false;
+  fs.writeFileSync(`${file}.tmp`, output, 'utf8');
+  fs.renameSync(`${file}.tmp`, file);
+  return true;
 }
 
 export async function fetchTmdb(endpoint, params = {}, token = '') {
@@ -90,18 +95,25 @@ export async function fetchTmdbPerson(personId, token, personCache = {}, forceRe
     photoRecoveredFromImages = Boolean(profilePath);
   }
   const record = {
+    ...(cached || {}),
     id,
     name: person.name.trim(),
-    birthday: person.birthday || null,
-    deathday: person.deathday || null,
-    profile_path: profilePath,
+    birthday: person.birthday || cached?.birthday || null,
+    deathday: person.deathday || cached?.deathday || null,
+    profile_path: profilePath || cached?.profile_path || null,
     known_for_department: person.known_for_department || 'Acting',
     fetchedFromTmdb: true,
     enrichmentVersion: 2,
     imagesChecked,
     photoRecoveredFromImages,
-    lastUpdated: new Date().toISOString()
+    lastUpdated: cached?.lastUpdated || null
   };
+  const comparable = value => {
+    const { lastUpdated, ...rest } = value || {};
+    return rest;
+  };
+  if (cached && JSON.stringify(comparable(cached)) === JSON.stringify(comparable(record))) return cached;
+  record.lastUpdated = new Date().toISOString();
   personCache[String(id)] = record;
   return record;
 }
@@ -194,13 +206,19 @@ function writeCastData(castData, rootDir) {
 }
 
 export function enrichCastData(providedMovieCast = null, existingPersonCache = null, rootDir = ROOT_DIR) {
-  const movies = [
-    ...readJson(path.join(rootDir, 'movies.json'), []),
-    ...readJson(path.join(rootDir, 'upcoming.json'), [])
-  ];
-  const existing = readJson(path.join(rootDir, 'cast.json'), {});
-  const seeds = readJson(path.join(rootDir, 'cast-seed.json'), {});
-  const rawMovieCast = { ...seeds, ...existing.movieCast, ...existing.castByMovieId, ...providedMovieCast };
+  const collection = readJson(path.join(rootDir, 'movies.json'), []);
+  const upcoming = readJson(path.join(rootDir, 'upcoming.json'), []);
+  const byTmdbId = new Map();
+  for (const movie of [...collection, ...upcoming]) {
+    const id = String(movie.tmdbId || movie.tmdb_id || '');
+    if (id && !byTmdbId.has(id)) byTmdbId.set(id, movie);
+  }
+  const movies = [...byTmdbId.values()];
+  const rawMovieCast = Object.fromEntries(movies.map(movie => [
+    String(movie.tmdbId || movie.tmdb_id),
+    Array.isArray(movie.cast) ? movie.cast : []
+  ]));
+  if (providedMovieCast) Object.assign(rawMovieCast, providedMovieCast);
   const data = buildCastData(movies, rawMovieCast, existingPersonCache || loadPersonCache(rootDir));
   writeCastData(data, rootDir);
   return data;

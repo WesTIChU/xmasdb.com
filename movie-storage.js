@@ -10,6 +10,7 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import { enrichCastData } from './scripts/enrich-cast.js';
 import { generateRadarrFeeds } from './scripts/generate-radarr-feeds.js';
+import { normalizeMovieCast, normalizeMovieCrew, normalizeMovieReleaseDates, normalizeMovieVideos } from './scripts/tmdb-movie.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -51,7 +52,7 @@ export function getMovies() {
 /**
  * Saves movies array and automatically regenerates all yearly JSON files
  */
-export function saveMoviesAndSync(movies) {
+export function saveMoviesAndSync(movies, { regenerateDerived = true, syncUpcoming = true } = {}) {
   const today = new Date().toISOString().slice(0, 10);
   const scheduled = movies.filter(movie => String(movie.release_date || '').slice(0, 10) > today);
   const catalogMovies = movies.filter(movie => !scheduled.includes(movie));
@@ -129,9 +130,11 @@ export function saveMoviesAndSync(movies) {
   });
 
   // 6. Automatically regenerate cast.json whenever movie collection changes
-  syncScheduledUpcomingMovies(scheduled);
-  const castData = regenerateCastJson();
-  generateRadarrFeeds(sorted, castData, getUpcomingMovies());
+  if (syncUpcoming) syncScheduledUpcomingMovies(scheduled);
+  if (regenerateDerived) {
+    const castData = regenerateCastJson();
+    generateRadarrFeeds(sorted, castData, getUpcomingMovies());
+  }
 
   return {
     count: sorted.length,
@@ -183,16 +186,24 @@ export function addMovie(newMovie, castArray = null) {
 export function normalizeCollectionMovie(newMovie, castArray = null) {
   return {
     title: newMovie.title,
+    originalTitle: newMovie.originalTitle || newMovie.original_title || newMovie.title || null,
     year: newMovie.year ? parseInt(newMovie.year, 10) : null,
+    status: newMovie.status || 'collection',
     tmdbId: newMovie.tmdbId ? Number(newMovie.tmdbId) : (newMovie.tmdb_id ? Number(newMovie.tmdb_id) : null),
     imdbId: newMovie.imdbId || newMovie.imdb_id || null,
     tmdb_id: newMovie.tmdbId ? Number(newMovie.tmdbId) : (newMovie.tmdb_id ? Number(newMovie.tmdb_id) : null),
     imdb_id: newMovie.imdbId || newMovie.imdb_id || null,
     release_date: newMovie.release_date || newMovie.releaseDate || null,
+    release_dates: normalizeMovieReleaseDates(newMovie.release_dates),
     poster: newMovie.poster || null,
+    backdrop: newMovie.backdrop || null,
     overview: newMovie.overview || '',
-    videos: Array.isArray(newMovie.videos) ? newMovie.videos : [],
-    cast: Array.isArray(castArray) ? castArray : [],
+    videos: normalizeMovieVideos(newMovie.videos),
+    crew: normalizeMovieCrew(newMovie.crew),
+    genres: Array.isArray(newMovie.genres) ? newMovie.genres : [],
+    tagline: newMovie.tagline || null,
+    runtime: newMovie.runtime || null,
+    cast: normalizeMovieCast(castArray),
     castSummary: Array.isArray(castArray) ? castArray.slice(0, 8).map(person => person.name).join(', ') : '',
     vote_average: Number.isFinite(Number(newMovie.vote_average)) ? Number(newMovie.vote_average) : null,
     vote_count: Number.isFinite(Number(newMovie.vote_count)) ? Number(newMovie.vote_count) : null
@@ -292,7 +303,7 @@ export function getUpcomingMovies() {
   }
 }
 
-export function saveUpcomingMovies(upcomingList) {
+export function saveUpcomingMovies(upcomingList, { regenerateDerived = true } = {}) {
   // Sort upcoming movies: confirmed premiere date first (earliest first), then TBA
   const sorted = [...upcomingList].sort((a, b) => {
     const dateA = a.premiereDate || a.release_date || '';
@@ -322,8 +333,17 @@ export function saveUpcomingMovies(upcomingList) {
     fs.writeFileSync(DIST_UPCOMING_JSON_PATH, content, 'utf8');
   }
 
-  generateRadarrFeeds(getMovies(), getCastData(), sorted);
+  if (regenerateDerived) generateRadarrFeeds(getMovies(), getCastData(), sorted);
   return sorted;
+}
+
+export function saveCatalogSources(movies, upcoming) {
+  const collectionResult = saveMoviesAndSync(movies, { regenerateDerived: false, syncUpcoming: false });
+  const upcomingResult = saveUpcomingMovies(upcoming, { regenerateDerived: false });
+  const castData = regenerateCastJson();
+  generateActorJsonFeeds(collectionResult.movies, castData, upcomingResult);
+  generateRadarrFeeds(collectionResult.movies, castData, upcomingResult);
+  return { ...collectionResult, upcoming: upcomingResult, castData };
 }
 
 export function addUpcomingMovie(movie) {
@@ -354,9 +374,17 @@ export function addUpcomingMovie(movie) {
     announcementDate: movie.announcementDate || 'Recently Announced',
     tmdbId: targetId,
     imdbId: movie.imdbId || null,
+    imdb_id: movie.imdb_id || movie.imdbId || null,
     poster: movie.poster || null,
+    backdrop: movie.backdrop || null,
     overview: movie.overview || movie.description || '',
-    cast: Array.isArray(movie.cast) ? movie.cast : [],
+    release_dates: normalizeMovieReleaseDates(movie.release_dates),
+    videos: normalizeMovieVideos(movie.videos),
+    crew: normalizeMovieCrew(movie.crew),
+    genres: Array.isArray(movie.genres) ? movie.genres : [],
+    tagline: movie.tagline || null,
+    runtime: movie.runtime || null,
+    cast: normalizeMovieCast(movie.cast),
     castSummary: movie.castSummary || '',
     hallmarkUrl: movie.hallmarkUrl || movie.pageUrl || null,
     dateAdded: new Date().toISOString()
@@ -382,31 +410,43 @@ export function updateUpcomingMovie(id, updates) {
   return saveUpcomingMovies(current);
 }
 
-export function promoteUpcomingToCollection(id, movieData = null, castArray = null) {
-  const currentUpcoming = getUpcomingMovies();
+export function promoteUpcomingToCollection(id, movieData = null, castArray = null, operations = {}) {
+  const getUpcoming = operations.getUpcoming || getUpcomingMovies;
+  const add = operations.add || addMovie;
+  const saveUpcoming = operations.saveUpcoming || saveUpcomingMovies;
+  const remove = operations.remove || removeMovie;
+  const currentUpcoming = getUpcoming();
   const index = currentUpcoming.findIndex(m => String(m.id) === String(id) || String(m.tmdbId) === String(id));
   
   let movieToPromote = movieData;
+  let upcomingItem = null;
   if (index !== -1) {
-    const upcomingItem = currentUpcoming[index];
+    upcomingItem = currentUpcoming[index];
     movieToPromote = {
-      title: upcomingItem.title,
-      year: upcomingItem.year,
-      tmdbId: upcomingItem.tmdbId,
-      imdbId: upcomingItem.imdbId,
-      poster: upcomingItem.poster,
-      overview: upcomingItem.overview,
+      ...upcomingItem,
       ...movieData
     };
-    currentUpcoming.splice(index, 1);
-    saveUpcomingMovies(currentUpcoming);
   }
 
   if (!movieToPromote || !movieToPromote.title) {
     throw new Error('Movie data is required to promote to collection.');
   }
 
-  return addMovie(movieToPromote, castArray);
+  const syncResult = add(movieToPromote, castArray || movieToPromote.cast || []);
+  if (upcomingItem) {
+    try {
+      currentUpcoming.splice(index, 1);
+      saveUpcoming(currentUpcoming);
+    } catch (error) {
+      try {
+        remove(movieToPromote.tmdbId || movieToPromote.tmdb_id);
+      } catch (rollbackError) {
+        error.message = `${error.message}; collection rollback failed: ${rollbackError.message}`;
+      }
+      throw error;
+    }
+  }
+  return syncResult;
 }
 
 // ============================================================================
@@ -424,26 +464,16 @@ export function getCastData() {
   }
 }
 
-export function saveCastData(castData) {
-  const content = JSON.stringify(castData, null, 2);
-  fs.writeFileSync(CAST_JSON_PATH, content, 'utf8');
-
-  const publicDir = path.join(ROOT_DIR, 'public');
-  if (fs.existsSync(publicDir)) {
-    fs.writeFileSync(PUBLIC_CAST_JSON_PATH, content, 'utf8');
-  }
-  const distDir = path.join(ROOT_DIR, 'dist');
-  if (fs.existsSync(distDir)) {
-    fs.writeFileSync(DIST_CAST_JSON_PATH, content, 'utf8');
-  }
-  generateRadarrFeeds(getMovies(), castData, getUpcomingMovies());
-  return castData;
-}
-
 /**
  * Generates collection-only movie feeds keyed by TMDB person ID.
  */
-export function generateActorJsonFeeds(movies = getMovies(), castData = getCastData()) {
+export function generateActorJsonFeeds(movies = getMovies(), castData = getCastData(), upcomingMovies = getUpcomingMovies()) {
+  const byTmdbId = new Map();
+  for (const movie of [...movies, ...upcomingMovies]) {
+    const id = String(movie.tmdbId || movie.tmdb_id || '');
+    if (id && !byTmdbId.has(id)) byTmdbId.set(id, movie);
+  }
+  movies = [...byTmdbId.values()];
   const movieById = new Map();
   for (const movie of movies) {
     const id = Number(movie.tmdbId || movie.tmdb_id);

@@ -76,7 +76,7 @@ function inject(file, kind) {
   if (kind === 'actor') html = html.replace(/<body>[\s\S]*<\/body>/, `<body>${actorBody(html)}</body>`);
   html = html.replace(/<link rel="stylesheet"[^>]+>\s*/g, '');
   html = html.replace(/<script type="module" crossorigin src="\/assets\/site-layout-[^"]+"><\/script>\s*/g, '');
-  html = html.replace(/<script type="module" src="\/(?:snow\.js|movie\.js|actor\.js|js\/site-layout\.js)"><\/script>\s*/g, '');
+  html = html.replace(/<script type="module" src="\/src\/js\/(?:snow|movie|actor|manage|radarr|site-layout)\.js"><\/script>\s*/g, '');
   html = html.replace('</head>', `${[...sharedStyles, ...(pageStyles[kind] || [])].join('')}\n</head>`);
   const script = appScripts[kind] || siteLayoutScript;
   html = html.replace('</body>', `${script}\n</body>`);

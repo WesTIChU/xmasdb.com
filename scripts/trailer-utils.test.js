@@ -1,6 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { normalizeCollectionMovie } from '../movie-storage.js';
+import { normalizeMovieVideos } from './tmdb-movie.js';
 import { selectTrailerVideos } from './trailer-utils.js';
 
 test('new collection records retain the selected TMDB trailer through normalization', () => {
@@ -16,7 +17,7 @@ test('new collection records retain the selected TMDB trailer through normalizat
   });
 
   assert.equal(videos[0].key, 'IJWOTp9ta6c');
-  assert.deepEqual(movie.videos, videos);
+  assert.deepEqual(movie.videos, normalizeMovieVideos(videos));
 });
 
 test('trailer selection ignores unusable videos and prefers official trailers', () => {

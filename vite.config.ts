@@ -27,9 +27,10 @@ import {
   fetchHallmarkNewsHtml, 
   extractHallmarkNewsCandidates 
 } from './hallmark-service.js';
-import { slugify } from './movie-url.js';
+import { slugify } from './src/js/movie-url.js';
 import { refreshSeoOutput } from './scripts/refresh-seo.js';
 import { selectTrailerVideos } from './scripts/trailer-utils.js';
+import { ingestTmdbMovie, validateTmdbMovieImport } from './scripts/tmdb-movie.js';
 
 function localManagementPlugin(): Plugin {
   return {
@@ -362,55 +363,27 @@ function localManagementPlugin(): Plugin {
               return;
             }
 
-            // Fetch complete info including external IDs, credits, and videos.
-            const fullRes = await fetchTmdb(`movie/${tmdbId}`, { append_to_response: 'external_ids,credits,videos' }, token);
-            const fullData = fullRes.data;
-            const releaseYear = fullData.release_date ? parseInt(fullData.release_date.split('-')[0], 10) : null;
-            
-            // TMDB PERSON API WORKFLOW: Enrich cast members using TMDB Person API and cache
-            const rawCast = (fullData.credits?.cast || []);
             const personCache = loadPersonCache();
-            const enrichedCastForMovie: any[] = [];
-
-            for (const c of rawCast) {
-              let personRecord: any = null;
-              if (token && c.id) {
-                try {
-                  personRecord = await fetchTmdbPerson(c.id, token, personCache, false);
-                } catch {}
-              }
-              enrichedCastForMovie.push({
-                id: c.id,
-                name: personRecord?.name || c.name,
-                character: c.character,
-                order: c.order,
-                profile_path: normalizeProfilePath(personRecord?.profile_path) || normalizeProfilePath(c.profile_path),
-                birthday: personRecord ? personRecord.birthday : null,
-                deathday: personRecord ? personRecord.deathday : null
-              });
-            }
+            const imported = await ingestTmdbMovie(tmdbId, {
+              token,
+              personCache,
+              rootDir: process.cwd(),
+              status: 'collection'
+            });
+            validateTmdbMovieImport(imported.data, imported.movie, tmdbId);
+            const syncResult = addMovie(imported.movie, imported.movie.cast);
             savePersonCache(personCache);
-
-            const movieToAdd = {
-              title: fullData.title,
-              year: releaseYear,
-              release_date: fullData.release_date || null,
-              tmdbId: fullData.id,
-              imdbId: fullData.external_ids?.imdb_id || null,
-              tmdb_id: fullData.id,
-              imdb_id: fullData.external_ids?.imdb_id || null,
-              poster: fullData.poster_path ? `https://image.tmdb.org/t/p/w500${fullData.poster_path}` : null,
-              overview: fullData.overview || '',
-              videos: selectTrailerVideos(fullData.videos?.results).slice(0, 5)
-            };
-
-            const syncResult = addMovie(movieToAdd, enrichedCastForMovie);
+            const savedMovie = getMovies().find(movie => Number(movie.tmdbId || movie.tmdb_id) === Number(tmdbId));
+            if (imported.report.videosFromTmdb > 0 && !(savedMovie?.videos?.length > 0)) {
+              throw new Error(`TMDB returned videos for ${tmdbId}, but the collection record saved none.`);
+            }
             await refreshSeoOutput();
             res.statusCode = 200;
             res.end(JSON.stringify({
               success: true,
-              message: `Added "${movieToAdd.title}" (${movieToAdd.year}) to collection with enriched cast.`,
-              movie: movieToAdd,
+              message: `Added "${imported.movie.title}" (${imported.movie.year}) to collection through the shared TMDB pipeline.`,
+              movie: imported.movie,
+              report: imported.report,
               totalMovies: syncResult.count,
               years: syncResult.years
             }));
@@ -501,31 +474,25 @@ function localManagementPlugin(): Plugin {
             const body = await getBody();
             const input = body.movie || body;
             let movie = { ...input };
+            const personCache = loadPersonCache();
 
-            // Use TMDB as the source of truth whenever an upcoming title has a match.
             if (movie.tmdbId && /^\d+$/.test(String(movie.tmdbId))) {
-              const { data } = await fetchTmdb(`movie/${movie.tmdbId}`, { append_to_response: 'external_ids,credits' }, body.token || '');
-              const cast = (data.credits?.cast || []).map((credit: any, index: number) => ({
-                id: credit.id,
-                name: credit.name,
-                character: credit.character || '',
-                order: credit.order ?? index,
-                profile_path: normalizeProfilePath(credit.profile_path)
-              }));
-              movie = {
-                ...movie,
-                title: data.title || movie.title,
-                year: data.release_date ? Number(data.release_date.slice(0, 4)) : movie.year,
-                premiereDate: data.release_date || movie.premiereDate || null,
-                release_date: data.release_date || movie.release_date || null,
-                imdbId: data.external_ids?.imdb_id || movie.imdbId || null,
-                poster: data.poster_path ? `https://image.tmdb.org/t/p/w500${data.poster_path}` : movie.poster,
-                overview: data.overview || movie.overview || '',
-                cast,
-                castSummary: cast.slice(0, 8).map((credit: any) => credit.name).join(', ')
-              };
+              const imported = await ingestTmdbMovie(movie.tmdbId, {
+                token: body.token || '',
+                personCache,
+                existing: movie,
+                rootDir: process.cwd(),
+                status: 'upcoming'
+              });
+              validateTmdbMovieImport(imported.data, imported.movie, movie.tmdbId);
+              movie = imported.movie;
             }
             const added = addUpcomingMovie(movie);
+            savePersonCache(personCache);
+            const savedMovie = added.find(item => Number(item.tmdbId || item.tmdb_id) === Number(movie.tmdbId));
+            if (movie.tmdbId && movie.videos?.length && !(savedMovie?.videos?.length > 0)) {
+              throw new Error(`TMDB returned videos for ${movie.tmdbId}, but the Coming Soon record saved none.`);
+            }
             await refreshSeoOutput();
             res.statusCode = 200;
             res.end(JSON.stringify({
@@ -584,53 +551,25 @@ function localManagementPlugin(): Plugin {
             }
 
             let enrichedMovie = movieData || {};
-            let castList: string[] = [];
-
-            // If tmdbId exists, attempt to fetch latest info & credits
+            let castList: any[] = [];
+            const personCache = loadPersonCache();
             const targetTmdbId = enrichedMovie.tmdbId || id;
             if (targetTmdbId && /^\d+$/.test(String(targetTmdbId))) {
-              try {
-                const fullRes = await fetchTmdb(`movie/${targetTmdbId}`, { append_to_response: 'external_ids,credits' }, token || '');
-                const fullData = fullRes.data;
-                enrichedMovie = {
-                  ...enrichedMovie,
-                  title: fullData.title || enrichedMovie.title,
-                  year: fullData.release_date ? parseInt(fullData.release_date.split('-')[0], 10) : enrichedMovie.year,
-                  release_date: fullData.release_date || enrichedMovie.release_date || null,
-                  tmdbId: fullData.id,
-                  imdbId: fullData.external_ids?.imdb_id || enrichedMovie.imdbId,
-                  poster: fullData.poster_path ? `https://image.tmdb.org/t/p/w500${fullData.poster_path}` : enrichedMovie.poster,
-                  overview: fullData.overview || enrichedMovie.overview
-                };
-
-                const rawCast = (fullData.credits?.cast || []);
-                const personCache = loadPersonCache();
-                const enrichedCastForMovie: any[] = [];
-                for (const c of rawCast) {
-                  let personRecord: any = null;
-                  if (token && c.id) {
-                    try {
-                      personRecord = await fetchTmdbPerson(c.id, token, personCache, false);
-                    } catch {}
-                  }
-                  enrichedCastForMovie.push({
-                    id: c.id,
-                    name: personRecord?.name || c.name,
-                    character: c.character,
-                    order: c.order,
-                    profile_path: normalizeProfilePath(personRecord?.profile_path) || normalizeProfilePath(c.profile_path),
-                    birthday: personRecord ? personRecord.birthday : null,
-                    deathday: personRecord ? personRecord.deathday : null
-                  });
-                }
-                savePersonCache(personCache);
-                castList = enrichedCastForMovie;
-              } catch {
-                // If TMDB lookup fails, use provided movieData
-              }
+              const current = getUpcomingMovies().find(movie => String(movie.id) === String(id) || String(movie.tmdbId) === String(id));
+              const imported = await ingestTmdbMovie(targetTmdbId, {
+                token: token || '',
+                personCache,
+                existing: { ...(current || {}), ...enrichedMovie },
+                rootDir: process.cwd(),
+                status: 'collection'
+              });
+              validateTmdbMovieImport(imported.data, imported.movie, targetTmdbId);
+              enrichedMovie = imported.movie;
+              castList = imported.movie.cast || [];
             }
 
             const syncResult = promoteUpcomingToCollection(id, enrichedMovie, castList);
+            savePersonCache(personCache);
             await refreshSeoOutput();
             res.statusCode = 200;
             res.end(JSON.stringify({
