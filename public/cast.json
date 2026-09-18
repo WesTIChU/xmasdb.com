@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-17T18:40:23.586Z",
+  "generatedAt": "2026-09-18T07:27:31.811Z",
   "totalActors": 3056,
-  "totalMovies": 270,
+  "totalMovies": 269,
   "actors": [
     {
       "id": 22082,
@@ -38775,6 +38775,19 @@
       ]
     },
     {
+      "id": 2860564,
+      "name": "TheBarneyDesk",
+      "count": 1,
+      "slug": "thebarneydesk",
+      "profile_path": "/images/people/2860564.webp",
+      "profile": "/images/people/2860564.webp",
+      "birthday": null,
+      "deathday": null,
+      "movieTmdbIds": [
+        746061
+      ]
+    },
+    {
       "id": 6362339,
       "name": "Theo turner",
       "count": 1,
@@ -39747,19 +39760,6 @@
       "deathday": null,
       "movieTmdbIds": [
         1180663
-      ]
-    },
-    {
-      "id": 2860564,
-      "name": "Tyson Kirk",
-      "count": 1,
-      "slug": "tyson-kirk",
-      "profile_path": "/images/people/2860564.webp",
-      "profile": "/images/people/2860564.webp",
-      "birthday": null,
-      "deathday": null,
-      "movieTmdbIds": [
-        746061
       ]
     },
     {
@@ -60132,7 +60132,7 @@
       },
       {
         "id": 2860564,
-        "name": "Tyson Kirk",
+        "name": "TheBarneyDesk",
         "character": "Young Man / Teen Painter",
         "order": 8,
         "birthday": null,
@@ -85428,8 +85428,7 @@
         "profile_path": "/images/people/4726275.webp",
         "profile": "/images/people/4726275.webp"
       }
-    ],
-    "1772765": []
+    ]
   },
   "movieCast": {
     "35830": [
@@ -104513,7 +104512,7 @@
       },
       {
         "id": 2860564,
-        "name": "Tyson Kirk",
+        "name": "TheBarneyDesk",
         "character": "Young Man / Teen Painter",
         "order": 8,
         "birthday": null,
@@ -129809,7 +129808,6 @@
         "profile_path": "/images/people/4726275.webp",
         "profile": "/images/people/4726275.webp"
       }
-    ],
-    "1772765": []
+    ]
   }
 }
