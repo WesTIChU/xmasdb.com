@@ -65,7 +65,7 @@ function actorBody(seoHtml) {
   return body
     .replace('<h1 id="actor-name" class="actor-name">Actor Name</h1>', `<h1 id="actor-name" class="actor-name">${name}</h1>`)
     .replace('<img id="actor-profile-photo" class="actor-profile-photo" src="" alt="Actor Photo" />', `<img id="actor-profile-photo" class="actor-profile-photo" src="${photo}" alt="${name} profile photo" />`)
-    .replace('<div id="actor-filmography-grid" class="actor-filmography-grid">\n            <!-- Movie cards dynamically generated -->\n          </div>', `<div id="actor-filmography-grid" class="actor-filmography-grid"><div class="seo-initial-filmography">${filmography}</div></div>`);
+    .replace('<div id="actor-filmography-grid" class="actor-filmography-grid">\n          </div>', `<div id="actor-filmography-grid" class="actor-filmography-grid"><div class="seo-initial-filmography">${filmography}</div></div>`);
 }
 
 function inject(file, kind) {
