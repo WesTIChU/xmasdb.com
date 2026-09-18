@@ -62,7 +62,7 @@
     "castSummary": "Amanda Schull, Victor Webster, Barbara Niven, Verity Marks, John B. Lowe",
     "backdrop": null,
     "tagline": null,
-    "runtime": null,
+    "runtime": 0,
     "genres": [
       {
         "id": 10749,
@@ -75,7 +75,21 @@
     ],
     "videos": [],
     "hallmarkUrl": null,
-    "dateAdded": "2026-09-18T14:32:23.645Z"
+    "dateAdded": "2026-09-18T14:32:23.645Z",
+    "originalTitle": "'Tis the Season for Setups",
+    "tmdb_id": 1772765,
+    "vote_average": 0,
+    "vote_count": 0,
+    "release_dates": [
+      {
+        "country": "US",
+        "release_date": "2026-10-16T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": ""
+      }
+    ],
+    "status": "upcoming"
   },
   {
     "id": "tmdb-1729134",
@@ -380,11 +394,25 @@
     "castSummary": "Franco Lo Presti, Ashley Newbrough",
     "backdrop": null,
     "tagline": null,
-    "runtime": null,
+    "runtime": 0,
     "genres": [],
     "videos": [],
     "hallmarkUrl": null,
-    "dateAdded": "2026-09-18T14:32:41.003Z"
+    "dateAdded": "2026-09-18T14:32:41.003Z",
+    "originalTitle": "Winter Wonderlanes",
+    "tmdb_id": 1773195,
+    "vote_average": 0,
+    "vote_count": 0,
+    "release_dates": [
+      {
+        "country": "US",
+        "release_date": "2026-10-23T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": ""
+      }
+    ],
+    "status": "upcoming"
   },
   {
     "id": "tmdb-1773382",
@@ -403,7 +431,7 @@
     "castSummary": "",
     "backdrop": null,
     "tagline": null,
-    "runtime": null,
+    "runtime": 0,
     "genres": [
       {
         "id": 10749,
@@ -412,7 +440,12 @@
     ],
     "videos": [],
     "hallmarkUrl": null,
-    "dateAdded": "2026-09-18T14:32:56.191Z"
+    "dateAdded": "2026-09-18T14:32:56.191Z",
+    "originalTitle": "Forgotten Holiday",
+    "tmdb_id": 1773382,
+    "vote_average": 0,
+    "vote_count": 0,
+    "status": "upcoming"
   },
   {
     "id": "tmdb-1773380",
@@ -431,7 +464,7 @@
     "castSummary": "",
     "backdrop": null,
     "tagline": null,
-    "runtime": null,
+    "runtime": 0,
     "genres": [
       {
         "id": 10749,
@@ -440,7 +473,12 @@
     ],
     "videos": [],
     "hallmarkUrl": null,
-    "dateAdded": "2026-09-18T14:33:09.768Z"
+    "dateAdded": "2026-09-18T14:33:09.768Z",
+    "originalTitle": "What If Christmas",
+    "tmdb_id": 1773380,
+    "vote_average": 0,
+    "vote_count": 0,
+    "status": "upcoming"
   },
   {
     "id": "tmdb-1773374",
@@ -459,7 +497,7 @@
     "castSummary": "",
     "backdrop": null,
     "tagline": null,
-    "runtime": null,
+    "runtime": 0,
     "genres": [
       {
         "id": 10749,
@@ -468,7 +506,21 @@
     ],
     "videos": [],
     "hallmarkUrl": null,
-    "dateAdded": "2026-09-18T14:33:44.620Z"
+    "dateAdded": "2026-09-18T14:33:44.620Z",
+    "originalTitle": "Adopting St. Nick",
+    "tmdb_id": 1773374,
+    "vote_average": 0,
+    "vote_count": 0,
+    "release_dates": [
+      {
+        "country": "US",
+        "release_date": "2026-10-31T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": ""
+      }
+    ],
+    "status": "upcoming"
   },
   {
     "id": "tmdb-1773368",
@@ -506,7 +558,7 @@
     "castSummary": "Emilie Ullerup, Corey Sevier",
     "backdrop": null,
     "tagline": null,
-    "runtime": null,
+    "runtime": 0,
     "genres": [
       {
         "id": 10749,
@@ -515,7 +567,26 @@
     ],
     "videos": [],
     "hallmarkUrl": null,
-    "dateAdded": "2026-09-18T14:34:02.602Z"
+    "dateAdded": "2026-09-18T14:34:02.602Z",
+    "originalTitle": "A Danish Christmas",
+    "tmdb_id": 1773368,
+    "vote_average": 0,
+    "vote_count": 0,
+    "crew": [
+      {
+        "id": 130050,
+        "name": "Colin Theys",
+        "job": "Director",
+        "credit_id": "6aacf1574572aa7622a5c18a"
+      },
+      {
+        "id": 1090397,
+        "name": "Juliana Wimbles",
+        "job": "Writer",
+        "credit_id": "6aacf14a41fefd504db4486d"
+      }
+    ],
+    "status": "upcoming"
   },
   {
     "id": "tmdb-1773353",
@@ -571,7 +642,7 @@
     "castSummary": "Brooke D'Orsay, Ali Liebert, James Denton, Jill Morrison",
     "backdrop": null,
     "tagline": null,
-    "runtime": null,
+    "runtime": 0,
     "genres": [
       {
         "id": 10749,
@@ -580,7 +651,21 @@
     ],
     "videos": [],
     "hallmarkUrl": null,
-    "dateAdded": "2026-09-18T14:34:42.830Z"
+    "dateAdded": "2026-09-18T14:34:42.830Z",
+    "originalTitle": "A Season of Promises",
+    "tmdb_id": 1773353,
+    "vote_average": 0,
+    "vote_count": 0,
+    "release_dates": [
+      {
+        "country": "US",
+        "release_date": "2026-11-08T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": ""
+      }
+    ],
+    "status": "upcoming"
   },
   {
     "id": "tmdb-1773334",
@@ -599,7 +684,7 @@
     "castSummary": "",
     "backdrop": null,
     "tagline": null,
-    "runtime": null,
+    "runtime": 0,
     "genres": [
       {
         "id": 10749,
@@ -608,7 +693,12 @@
     ],
     "videos": [],
     "hallmarkUrl": null,
-    "dateAdded": "2026-09-18T14:35:46.468Z"
+    "dateAdded": "2026-09-18T14:35:46.468Z",
+    "originalTitle": "Our Holiday Playbook",
+    "tmdb_id": 1773334,
+    "vote_average": 0,
+    "vote_count": 0,
+    "status": "upcoming"
   },
   {
     "id": "tmdb-1773329",
@@ -655,7 +745,7 @@
     "castSummary": "Rachael Leigh Cook, Stephen Hagan, Owain Yeoman",
     "backdrop": null,
     "tagline": null,
-    "runtime": null,
+    "runtime": 0,
     "genres": [
       {
         "id": 10749,
@@ -664,7 +754,29 @@
     ],
     "videos": [],
     "hallmarkUrl": null,
-    "dateAdded": "2026-09-18T14:36:00.545Z"
+    "dateAdded": "2026-09-18T14:36:00.545Z",
+    "originalTitle": "Double Booked for the Holidays",
+    "tmdb_id": 1773329,
+    "vote_average": 0,
+    "vote_count": 0,
+    "release_dates": [
+      {
+        "country": "US",
+        "release_date": "2026-11-22T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": ""
+      }
+    ],
+    "crew": [
+      {
+        "id": 1085740,
+        "name": "Clare Niederpruem",
+        "job": "Director",
+        "credit_id": "6aace8369b45d8fb4fb447a8"
+      }
+    ],
+    "status": "upcoming"
   },
   {
     "id": "tmdb-1773322",
@@ -683,7 +795,7 @@
     "castSummary": "",
     "backdrop": null,
     "tagline": null,
-    "runtime": null,
+    "runtime": 0,
     "genres": [
       {
         "id": 10749,
@@ -692,7 +804,12 @@
     ],
     "videos": [],
     "hallmarkUrl": null,
-    "dateAdded": "2026-09-18T14:36:13.720Z"
+    "dateAdded": "2026-09-18T14:36:13.720Z",
+    "originalTitle": "Christmas Delivered",
+    "tmdb_id": 1773322,
+    "vote_average": 0,
+    "vote_count": 0,
+    "status": "upcoming"
   },
   {
     "id": "tmdb-1773042",
@@ -866,7 +983,7 @@
     "castSummary": "Daniella Monet, Kevin McGarry, Toni Ellwand, Maria Syrgiannis, Francesco Filice, Katherine Cappellacci, Vania Giusto, Gerry Mendicino",
     "backdrop": null,
     "tagline": null,
-    "runtime": null,
+    "runtime": 0,
     "genres": [
       {
         "id": 10749,
@@ -875,7 +992,26 @@
     ],
     "videos": [],
     "hallmarkUrl": null,
-    "dateAdded": "2026-09-18T14:36:37.701Z"
+    "dateAdded": "2026-09-18T14:36:37.701Z",
+    "originalTitle": "The Christmas Eve Feast",
+    "tmdb_id": 1773318,
+    "vote_average": 0,
+    "vote_count": 0,
+    "crew": [
+      {
+        "id": 1211830,
+        "name": "Stefan Scaini",
+        "job": "Director",
+        "credit_id": "6aace2da90d6d406907326d5"
+      },
+      {
+        "id": 1256815,
+        "name": "James LaRosa",
+        "job": "Writer",
+        "credit_id": "6aace2e7e14178d0bb5bd278"
+      }
+    ],
+    "status": "upcoming"
   },
   {
     "id": "tmdb-1594516",
@@ -1197,7 +1333,7 @@
     "castSummary": "Peter Porte, Tammin Sursok",
     "backdrop": null,
     "tagline": null,
-    "runtime": null,
+    "runtime": 0,
     "genres": [
       {
         "id": 10749,
@@ -1206,7 +1342,21 @@
     ],
     "videos": [],
     "hallmarkUrl": null,
-    "dateAdded": "2026-09-18T14:36:53.285Z"
+    "dateAdded": "2026-09-18T14:36:53.285Z",
+    "originalTitle": "The Most Wonderful Secret",
+    "tmdb_id": 1773316,
+    "vote_average": 0,
+    "vote_count": 0,
+    "release_dates": [
+      {
+        "country": "US",
+        "release_date": "2026-11-28T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": ""
+      }
+    ],
+    "status": "upcoming"
   },
   {
     "id": "tmdb-1773298",
@@ -1352,7 +1502,7 @@
     "castSummary": "Hunter King, Dan Jeannotte, Lauren Collins, Nicole Power, Darrin Baker, Gabriel Burrafato, Tina Jung, Felicia Shulman",
     "backdrop": null,
     "tagline": null,
-    "runtime": null,
+    "runtime": 0,
     "genres": [
       {
         "id": 10749,
@@ -1361,7 +1511,29 @@
     ],
     "videos": [],
     "hallmarkUrl": null,
-    "dateAdded": "2026-09-18T14:37:09.651Z"
+    "dateAdded": "2026-09-18T14:37:09.651Z",
+    "originalTitle": "Eight Nights for Love",
+    "tmdb_id": 1773298,
+    "vote_average": 0,
+    "vote_count": 0,
+    "release_dates": [
+      {
+        "country": "US",
+        "release_date": "2026-11-29T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": ""
+      }
+    ],
+    "crew": [
+      {
+        "id": 1107266,
+        "name": "Max McGuire",
+        "job": "Director",
+        "credit_id": "6aacda4232fd499b3e3cc3c5"
+      }
+    ],
+    "status": "upcoming"
   },
   {
     "id": "tmdb-1773286",
@@ -1399,7 +1571,7 @@
     "castSummary": "Heather Hemmens, Mark Ghanimé",
     "backdrop": null,
     "tagline": null,
-    "runtime": null,
+    "runtime": 0,
     "genres": [
       {
         "id": 10749,
@@ -1408,7 +1580,12 @@
     ],
     "videos": [],
     "hallmarkUrl": null,
-    "dateAdded": "2026-09-18T14:37:37.086Z"
+    "dateAdded": "2026-09-18T14:37:37.086Z",
+    "originalTitle": "The Snowflake Effect",
+    "tmdb_id": 1773286,
+    "vote_average": 0,
+    "vote_count": 0,
+    "status": "upcoming"
   },
   {
     "id": "tmdb-1602653",
@@ -1661,7 +1838,7 @@
     "castSummary": "Fiona Gubelmann, Marco Grazzini, Nancy Robertson, Siobhan Williams",
     "backdrop": null,
     "tagline": null,
-    "runtime": null,
+    "runtime": 0,
     "genres": [
       {
         "id": 10749,
@@ -1670,7 +1847,21 @@
     ],
     "videos": [],
     "hallmarkUrl": null,
-    "dateAdded": "2026-09-18T14:37:55.702Z"
+    "dateAdded": "2026-09-18T14:37:55.702Z",
+    "originalTitle": "An Angel in My Stocking",
+    "tmdb_id": 1773280,
+    "vote_average": 0,
+    "vote_count": 0,
+    "release_dates": [
+      {
+        "country": "US",
+        "release_date": "2026-12-06T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": ""
+      }
+    ],
+    "status": "upcoming"
   },
   {
     "id": "tmdb-1773035",
@@ -1794,7 +1985,7 @@
     "castSummary": "Benjamin Ayres, Torrey DeVitto, Kaelyn Yoon-MacRae",
     "backdrop": null,
     "tagline": null,
-    "runtime": null,
+    "runtime": 0,
     "genres": [
       {
         "id": 10749,
@@ -1803,7 +1994,21 @@
     ],
     "videos": [],
     "hallmarkUrl": null,
-    "dateAdded": "2026-09-18T14:38:07.810Z"
+    "dateAdded": "2026-09-18T14:38:07.810Z",
+    "originalTitle": "Noelle Nomads",
+    "tmdb_id": 1773275,
+    "vote_average": 0,
+    "vote_count": 0,
+    "release_dates": [
+      {
+        "country": "US",
+        "release_date": "2026-12-13T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": ""
+      }
+    ],
+    "status": "upcoming"
   },
   {
     "id": "tmdb-1773265",
@@ -1841,7 +2046,7 @@
     "castSummary": "Jonathan Bennett, Italia Ricci",
     "backdrop": null,
     "tagline": null,
-    "runtime": null,
+    "runtime": 0,
     "genres": [
       {
         "id": 10749,
@@ -1850,6 +2055,20 @@
     ],
     "videos": [],
     "hallmarkUrl": null,
-    "dateAdded": "2026-09-18T14:38:20.337Z"
+    "dateAdded": "2026-09-18T14:38:20.337Z",
+    "originalTitle": "Save the Date for Christmas",
+    "tmdb_id": 1773265,
+    "vote_average": 0,
+    "vote_count": 0,
+    "release_dates": [
+      {
+        "country": "US",
+        "release_date": "2026-12-20T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": ""
+      }
+    ],
+    "status": "upcoming"
   }
 ]

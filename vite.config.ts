@@ -476,17 +476,21 @@ function localManagementPlugin(): Plugin {
             let movie = { ...input };
             const personCache = loadPersonCache();
 
-            if (movie.tmdbId && /^\d+$/.test(String(movie.tmdbId))) {
-              const imported = await ingestTmdbMovie(movie.tmdbId, {
-                token: body.token || '',
-                personCache,
-                existing: movie,
-                rootDir: process.cwd(),
-                status: 'upcoming'
-              });
-              validateTmdbMovieImport(imported.data, imported.movie, movie.tmdbId);
-              movie = imported.movie;
+            if (!/^\d+$/.test(String(movie.tmdbId || ''))) {
+              res.statusCode = 400;
+              res.end(JSON.stringify({ success: false, error: 'A numeric tmdbId is required for Coming Soon imports.' }));
+              return;
             }
+
+            const imported = await ingestTmdbMovie(movie.tmdbId, {
+              token: body.token || '',
+              personCache,
+              existing: movie,
+              rootDir: process.cwd(),
+              status: 'upcoming'
+            });
+            validateTmdbMovieImport(imported.data, imported.movie, movie.tmdbId);
+            movie = imported.movie;
             const added = addUpcomingMovie(movie);
             savePersonCache(personCache);
             const savedMovie = added.find(item => Number(item.tmdbId || item.tmdb_id) === Number(movie.tmdbId));
@@ -953,7 +957,6 @@ export default defineConfig({
       input: {
         main: './index.html',
         radarr: './radarr.html',
-        manage: './manage.html',
         movie: './movie.html',
         actor: './actor.html',
         notFound: './404.html',

@@ -206,6 +206,29 @@ test('manager refresh delegates to shared ingestion and preserves manual movie f
   assert.equal(result.movie.cast.length, 1);
 });
 
+test('Coming Soon adds require the shared TMDB importer before persistence', async () => {
+  const source = await readFile(new URL('../vite.config.ts', import.meta.url), 'utf8');
+  const start = source.indexOf("if (pathname === '/api/manage/upcoming/add'");
+  const end = source.indexOf("if (pathname === '/api/manage/upcoming/remove'", start);
+  const endpoint = source.slice(start, end);
+  assert.match(endpoint, /numeric tmdbId is required/);
+  assert.match(endpoint, /ingestTmdbMovie\(movie\.tmdbId/);
+  assert.match(endpoint, /validateTmdbMovieImport\(imported\.data, imported\.movie/);
+  assert.match(endpoint, /const added = addUpcomingMovie\(movie\)/);
+  assert.ok(endpoint.indexOf('ingestTmdbMovie') < endpoint.indexOf('addUpcomingMovie'));
+
+  const data = holidayHeartsResponse();
+  const imported = await ingestTmdbMovie(638806, {
+    token: 'fixture-token',
+    status: 'upcoming',
+    fetcher: async () => ({ data }),
+    castEnricher: async cast => cast,
+    imageEnsurer: async ({ kind, id }) => ({ status: 'cached', path: `/images/${kind}s/${id}.webp` })
+  });
+  assert.equal(imported.movie.status, 'upcoming');
+  assert.deepEqual(imported.movie.cast.map(person => person.name), ['Sample Actor']);
+});
+
 test('person-cache save is a no-op when serialized data is unchanged', async () => {
   const root = await mkdtemp(path.join(os.tmpdir(), 'xmasdb-person-cache-'));
   const cache = { '101': { id: 101, name: 'Sample Actor', fetchedFromTmdb: true } };
