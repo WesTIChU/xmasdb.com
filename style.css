@@ -2103,6 +2103,17 @@ body {
   flex-direction: column;
 }
 
+.upcoming-radarr-note {
+  margin: 0 0 16px;
+  padding: 7px 10px;
+  background: #f1f5f3;
+  border: 1px solid #dbe7e0;
+  border-radius: 6px;
+  color: #496457;
+  font-size: 0.78rem;
+  line-height: 1.45;
+}
+
 .upcoming-header {
   margin-bottom: 20px;
 }
