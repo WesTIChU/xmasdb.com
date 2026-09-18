@@ -651,6 +651,38 @@
     "status": "upcoming"
   },
   {
+    "title": "Merry Memories",
+    "originalTitle": "Merry Memories",
+    "year": 2026,
+    "release_date": "2026-11-06",
+    "premiereDate": "2026-11-06",
+    "tmdbId": 1773363,
+    "tmdb_id": 1773363,
+    "imdbId": "tt46075438",
+    "imdb_id": "tt46075438",
+    "overview": "Michaela (Lindura) is a rigid accountant who steps in to help her brother care for his young son Danny (Omi Fitzpatrick-Gonzales) while Danny's military mom is deployed over Christmas. When Danny is assigned to create a holiday scrapbook for his mom, Michaela reluctantly accepts help from his free-spirited substitute teacher, Bryan (Morgan), whose creativity clashes with her need for preciseness and control. As they set out to capture festive moments for the scrapbook, unexpected mishaps turn into meaningful traditions – and sparks begin to fly. Through Danny's project, Michaela learns to embrace imperfection and open her heart, while Bryan rethinks his future as a traveling substitute teacher.",
+    "vote_average": 0,
+    "vote_count": 0,
+    "runtime": 0,
+    "genres": [
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "release_dates": [
+      {
+        "country": "US",
+        "release_date": "2026-11-06T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": ""
+      }
+    ],
+    "videos": [],
+    "status": "upcoming"
+  },
+  {
     "id": "tmdb-1773353",
     "title": "A Season of Promises",
     "hallmarkTitle": "A Season of Promises",

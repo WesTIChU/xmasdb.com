@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-18T16:13:26.829Z",
+  "generatedAt": "2026-09-18T16:19:12.821Z",
   "totalActors": 3123,
-  "totalMovies": 297,
+  "totalMovies": 298,
   "actors": [
     {
       "id": 22082,
@@ -87866,6 +87866,7 @@
         "profile": "/images/people/203294.webp"
       }
     ],
+    "1773363": [],
     "1773368": [
       {
         "id": 211685,
@@ -133787,6 +133788,7 @@
         "profile": "/images/people/203294.webp"
       }
     ],
+    "1773363": [],
     "1773368": [
       {
         "id": 211685,
