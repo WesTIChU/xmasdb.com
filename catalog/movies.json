@@ -1187,8 +1187,28 @@
     "tmdbId": 1773378,
     "status": "coming-soon"
   },
-{
-  "tmdbId": 1773363,
-  "status": "coming-soon"
-}
-]
+  {
+    "tmdbId": 1773363,
+    "status": "coming-soon"
+  },
+  {
+    "tmdbId": 1773357,
+    "status": "coming-soon"
+  },
+  {
+    "tmdbId": 1773350,
+    "status": "coming-soon"
+  },
+  {
+    "tmdbId": 1773345,
+    "status": "coming-soon"
+  },
+  {
+    "tmdbId": 1773340,
+    "status": "coming-soon"
+  },
+  {
+    "tmdbId": 1773293,
+    "status": "coming-soon"
+  }
+  ]
