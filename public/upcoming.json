@@ -481,6 +481,68 @@
     "status": "upcoming"
   },
   {
+    "title": "Who's Coming for Christmas?",
+    "originalTitle": "Who's Coming for Christmas?",
+    "year": 2026,
+    "release_date": "2026-10-30",
+    "premiereDate": "2026-10-30",
+    "tmdbId": 1773378,
+    "tmdb_id": 1773378,
+    "imdbId": "tt46075371",
+    "imdb_id": "tt46075371",
+    "overview": "Having recently relocated, Julie (Fish) is setting up her new home using pieces she inherited from her late grandmother, including a beautiful dining room table she plans to use on Christmas Eve when she hosts dinner for the first time. Though she doesn't have her guest list set just yet Julie takes inspiration from her grandmother and has faith that her holiday table for eight will be filled. Julie's warm, friendly nature leads her to quickly become part of the community and make friends, including her neighbor Mark (Foy) and his young daughter Vanessa (Morgan). Mark suggests that he and his family could join her, making Julie's dream of dinner for eight come true. But when bad weather keeps them from making the trip it looks like it will be a silent night with just the three of them unless a small Christmas miracle – or series of miracles – fills her holiday table.",
+    "vote_average": 0,
+    "vote_count": 0,
+    "runtime": 0,
+    "genres": [
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "release_dates": [
+      {
+        "country": "US",
+        "release_date": "2026-10-30T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": ""
+      }
+    ],
+    "cast": [
+      {
+        "id": 1245745,
+        "name": "Rhiannon Fish",
+        "character": "Julie",
+        "order": 0,
+        "profile_path": "/images/people/1245745.webp",
+        "birthday": "1991-03-14",
+        "deathday": null
+      },
+      {
+        "id": 1287589,
+        "name": "Jake Foy",
+        "character": "Mark",
+        "order": 1,
+        "profile_path": "/images/people/1287589.webp",
+        "birthday": "1990-11-01",
+        "deathday": null
+      },
+      {
+        "id": 2430180,
+        "name": "Mila Morgan",
+        "character": "Vanessa",
+        "order": 2,
+        "profile_path": "/images/people/2430180.webp",
+        "birthday": null,
+        "deathday": null
+      }
+    ],
+    "castSummary": "Rhiannon Fish, Jake Foy, Mila Morgan",
+    "videos": [],
+    "status": "upcoming"
+  },
+  {
     "id": "tmdb-1773374",
     "title": "Adopting St. Nick",
     "hallmarkTitle": "Adopting St. Nick",
