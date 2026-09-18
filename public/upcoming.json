@@ -1069,6 +1069,59 @@
     "status": "upcoming"
   },
   {
+    "title": "Christmas in Blue Dog Valley",
+    "originalTitle": "Christmas in Blue Dog Valley",
+    "year": 2026,
+    "release_date": "2026-11-21",
+    "premiereDate": "2026-11-21",
+    "tmdbId": 1773330,
+    "tmdb_id": 1773330,
+    "imdbId": "tt46076055",
+    "imdb_id": "tt46076055",
+    "overview": "On-set veterinarian Goldie MacKenzie (Cahill) leaves the glamour of Hollywood behind to buy a family-run veterinary clinic in tight-knit Blue Dog Valley, arriving just in time for the town's cherished Christmas season. When Dr. Gable, the clinic's longtime owner, unexpectedly ends up out of town, Goldie is hosted by his handsome son Cohen (Walker), the black sheep of the family because he decided to forego their expectation of becoming a vet. Cohen and Goldie get off on the wrong foot, but when the folks of Blue Dog Valley cold shoulder \"the newcomer,\" Cohen teams up with Goldie to win over even the frostiest of community members. Goldie is also aided by the mysterious canine she dubs Blue whose spontaneous appearances always seem to guide Goldie to exactly where she needs to be. As Goldie works hard to prove herself to the townspeople when furry and Christmas crises arise, she finds herself pulled towards the very heart of her new-found home... and a certain black sheep.",
+    "vote_average": 0,
+    "vote_count": 0,
+    "runtime": 0,
+    "genres": [
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "release_dates": [
+      {
+        "country": "US",
+        "release_date": "2026-11-21T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": ""
+      }
+    ],
+    "cast": [
+      {
+        "id": 134673,
+        "name": "Andrew W. Walker",
+        "character": "Cohen",
+        "order": 0,
+        "profile_path": "/images/people/134673.webp",
+        "birthday": "1979-06-09",
+        "deathday": null
+      },
+      {
+        "id": 78044,
+        "name": "Erin Cahill",
+        "character": "Goldie MacKenzie",
+        "order": 1,
+        "profile_path": "/images/people/78044.webp",
+        "birthday": "1980-01-04",
+        "deathday": null
+      }
+    ],
+    "castSummary": "Andrew W. Walker, Erin Cahill",
+    "videos": [],
+    "status": "upcoming"
+  },
+  {
     "id": "tmdb-1773329",
     "title": "Double Booked for the Holidays",
     "hallmarkTitle": "Double Booked for the Holidays",
@@ -2419,6 +2472,80 @@
     "status": "upcoming"
   },
   {
+    "title": "Christmas in Canterbury",
+    "originalTitle": "Christmas in Canterbury",
+    "year": 2026,
+    "release_date": "2026-12-11",
+    "premiereDate": "2026-12-11",
+    "tmdbId": 1733866,
+    "tmdb_id": 1733866,
+    "overview": "A festive romance film",
+    "vote_average": 0,
+    "vote_count": 0,
+    "runtime": 0,
+    "genres": [
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "release_dates": [
+      {
+        "country": "US",
+        "release_date": "2026-12-11T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": ""
+      }
+    ],
+    "crew": [
+      {
+        "id": 107753,
+        "name": "Shamim Sarif",
+        "job": "Director",
+        "credit_id": "6a5c8348c37e39a28675008b"
+      },
+      {
+        "id": 1882374,
+        "name": "Michelle Ricci",
+        "job": "Writer",
+        "credit_id": "6aac9b2aefd39c12c7a5be57"
+      }
+    ],
+    "cast": [
+      {
+        "id": 54500,
+        "name": "Will Kemp",
+        "character": "Harrison",
+        "order": 0,
+        "profile_path": "/images/people/54500.webp",
+        "birthday": "1977-06-29",
+        "deathday": null
+      },
+      {
+        "id": 26974,
+        "name": "Jessy Schram",
+        "character": "Rose",
+        "order": 1,
+        "profile_path": "/images/people/26974.webp",
+        "birthday": "1986-01-15",
+        "deathday": null
+      },
+      {
+        "id": 1891226,
+        "name": "Sohm Kapila",
+        "character": "Asha",
+        "order": 2,
+        "profile_path": "/images/people/1891226.webp",
+        "birthday": null,
+        "deathday": null
+      }
+    ],
+    "castSummary": "Will Kemp, Jessy Schram, Sohm Kapila",
+    "videos": [],
+    "status": "upcoming"
+  },
+  {
     "id": "tmdb-1773035",
     "title": "Snow Globe Town",
     "hallmarkTitle": "Snow Globe Town",
@@ -2563,6 +2690,121 @@
         "note": ""
       }
     ],
+    "status": "upcoming"
+  },
+  {
+    "title": "Hearts All Aglow",
+    "originalTitle": "Hearts All Aglow",
+    "year": 2026,
+    "release_date": "2026-12-18",
+    "premiereDate": "2026-12-18",
+    "tmdbId": 1773270,
+    "tmdb_id": 1773270,
+    "imdbId": "tt46076903",
+    "imdb_id": "tt46076903",
+    "overview": "Mari is a fiercely intelligent music historian who manages to get an invite to the annual Christmas gala for the local music museum and has one goal: secure an interview with Tasha the legendary Grammy award-winning singer, record producer, and museum’s founder. Mari has to summon the courage to ask the mogul who rarely does interviews these days for this favor, which proves more difficult than anticipated. Also crashing the gala is Julian, a polished and perpetually busy New York attorney on a mission of his own: his late mother received the autograph of Nat King Cole on a piece of sheet music when she was a young girl and he regrettably donated this treasured piece of family history to the DuPree Museum while emotionally numb in the aftermath of his mother’s death. Now his sister tells him she wants to give the framed sheet music to her daughter/his niece, who inherited her grandmother’s musical talent, for Christmas, and Julian is determined to bring it back home.",
+    "vote_average": 0,
+    "vote_count": 0,
+    "runtime": 0,
+    "genres": [
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "release_dates": [
+      {
+        "country": "US",
+        "release_date": "2026-12-18T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": ""
+      }
+    ],
+    "cast": [
+      {
+        "id": 545344,
+        "name": "Mishael Morgan",
+        "character": "Mari",
+        "order": 0,
+        "profile_path": "/images/people/545344.webp",
+        "birthday": "1986-07-15",
+        "deathday": null
+      },
+      {
+        "id": 1214865,
+        "name": "B.J. Britt",
+        "character": "Julian",
+        "order": 1,
+        "profile_path": "/images/people/1214865.webp",
+        "birthday": "1982-05-07",
+        "deathday": null
+      },
+      {
+        "id": 168581,
+        "name": "Holly Robinson Peete",
+        "character": "Tasha",
+        "order": 2,
+        "profile_path": "/images/people/168581.webp",
+        "birthday": "1964-09-18",
+        "deathday": null
+      }
+    ],
+    "castSummary": "Mishael Morgan, B.J. Britt, Holly Robinson Peete",
+    "videos": [],
+    "status": "upcoming"
+  },
+  {
+    "title": "Barking All the Way",
+    "originalTitle": "Barking All the Way",
+    "year": 2026,
+    "release_date": "2026-12-19",
+    "premiereDate": "2026-12-19",
+    "tmdbId": 1773266,
+    "tmdb_id": 1773266,
+    "imdbId": "tt46076921",
+    "imdb_id": "tt46076921",
+    "overview": "Billie (Anderson) is a workaholic realtor who heads home for Christmas but her journey is derailed after a loveable but chaotic canine named Yappy almost causes her car to crash. After talking to Yappy's owner, the mysterious yet oddly familiar Mrs. C, Billie agrees to watch Yappy while she visits her grandchildren for the holidays. Yappy ends up playing the role of matchmaker and new best friend, pulling Billie towards her traveling contractor ex-boyfriend from high school, Hutch (Harding). Eager to move on, she's determined to leave Hutch in the past, but when her mother hires him to work on their shed, she finds herself spending more time with him than she ever expected. As the holidays draw closer, Billie begins to question whether chasing her dream of becoming her firm's number one seller is truly what she wants. When the mysterious Mrs. C leaves her cabin for Billie and Hutch to breathe new life into, her answer may come sooner than expected.",
+    "vote_average": 0,
+    "vote_count": 0,
+    "runtime": 0,
+    "genres": [
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "release_dates": [
+      {
+        "country": "US",
+        "release_date": "2026-12-19T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": ""
+      }
+    ],
+    "cast": [
+      {
+        "id": 222089,
+        "name": "Ian Harding",
+        "character": "Hutch",
+        "order": 0,
+        "profile_path": "/images/people/222089.webp",
+        "birthday": "1986-09-16",
+        "deathday": null
+      },
+      {
+        "id": 1339147,
+        "name": "Tori Anderson",
+        "character": "Billie",
+        "order": 1,
+        "profile_path": "/images/people/1339147.webp",
+        "birthday": "1988-12-29",
+        "deathday": null
+      }
+    ],
+    "castSummary": "Ian Harding, Tori Anderson",
+    "videos": [],
     "status": "upcoming"
   },
   {

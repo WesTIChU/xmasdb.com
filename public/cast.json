@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-18T16:24:38.234Z",
-  "totalActors": 3132,
-  "totalMovies": 303,
+  "generatedAt": "2026-09-18T16:38:05.967Z",
+  "totalActors": 3134,
+  "totalMovies": 307,
   "actors": [
     {
       "id": 22082,
@@ -54,6 +54,30 @@
       ]
     },
     {
+      "id": 134673,
+      "name": "Andrew W. Walker",
+      "count": 12,
+      "slug": "andrew-w-walker",
+      "profile_path": "/images/people/134673.webp",
+      "profile": "/images/people/134673.webp",
+      "birthday": "1979-06-09",
+      "deathday": null,
+      "movieTmdbIds": [
+        1485002,
+        1516208,
+        1537084,
+        1361135,
+        1293279,
+        1180841,
+        1028541,
+        874124,
+        874194,
+        626307,
+        421761,
+        1773330
+      ]
+    },
+    {
       "id": 62909,
       "name": "Paul Campbell",
       "count": 12,
@@ -99,29 +123,6 @@
         535808,
         410317,
         1602653
-      ]
-    },
-    {
-      "id": 134673,
-      "name": "Andrew W. Walker",
-      "count": 11,
-      "slug": "andrew-w-walker",
-      "profile_path": "/images/people/134673.webp",
-      "profile": "/images/people/134673.webp",
-      "birthday": "1979-06-09",
-      "deathday": null,
-      "movieTmdbIds": [
-        1485002,
-        1516208,
-        1537084,
-        1361135,
-        1293279,
-        1180841,
-        1028541,
-        874124,
-        874194,
-        626307,
-        421761
       ]
     },
     {
@@ -534,6 +535,44 @@
       ]
     },
     {
+      "id": 78044,
+      "name": "Erin Cahill",
+      "count": 7,
+      "slug": "erin-cahill",
+      "profile_path": "/images/people/78044.webp",
+      "profile": "/images/people/78044.webp",
+      "birthday": "1980-01-04",
+      "deathday": null,
+      "movieTmdbIds": [
+        1535221,
+        1545999,
+        1325912,
+        1180665,
+        746039,
+        421626,
+        1773330
+      ]
+    },
+    {
+      "id": 168581,
+      "name": "Holly Robinson Peete",
+      "count": 7,
+      "slug": "holly-robinson-peete",
+      "profile_path": "/images/people/168581.webp",
+      "profile": "/images/people/168581.webp",
+      "birthday": "1964-09-18",
+      "deathday": null,
+      "movieTmdbIds": [
+        1028560,
+        746047,
+        630921,
+        550025,
+        474977,
+        363484,
+        1773270
+      ]
+    },
+    {
       "id": 80405,
       "name": "Karen Holness",
       "count": 7,
@@ -737,24 +776,6 @@
       ]
     },
     {
-      "id": 78044,
-      "name": "Erin Cahill",
-      "count": 6,
-      "slug": "erin-cahill",
-      "profile_path": "/images/people/78044.webp",
-      "profile": "/images/people/78044.webp",
-      "birthday": "1980-01-04",
-      "deathday": null,
-      "movieTmdbIds": [
-        1535221,
-        1545999,
-        1325912,
-        1180665,
-        746039,
-        421626
-      ]
-    },
-    {
       "id": 1397812,
       "name": "Fiona Vroom",
       "count": 6,
@@ -773,24 +794,6 @@
       ]
     },
     {
-      "id": 168581,
-      "name": "Holly Robinson Peete",
-      "count": 6,
-      "slug": "holly-robinson-peete",
-      "profile_path": "/images/people/168581.webp",
-      "profile": "/images/people/168581.webp",
-      "birthday": "1964-09-18",
-      "deathday": null,
-      "movieTmdbIds": [
-        1028560,
-        746047,
-        630921,
-        550025,
-        474977,
-        363484
-      ]
-    },
-    {
       "id": 1446320,
       "name": "Hunter King",
       "count": 6,
@@ -806,6 +809,24 @@
         1142712,
         1028553,
         1773298
+      ]
+    },
+    {
+      "id": 26974,
+      "name": "Jessy Schram",
+      "count": 6,
+      "slug": "jessy-schram",
+      "profile_path": "/images/people/26974.webp",
+      "profile": "/images/people/26974.webp",
+      "birthday": "1986-01-15",
+      "deathday": null,
+      "movieTmdbIds": [
+        1547925,
+        1142715,
+        746041,
+        550017,
+        474979,
+        1733866
       ]
     },
     {
@@ -1347,23 +1368,6 @@
       ]
     },
     {
-      "id": 26974,
-      "name": "Jessy Schram",
-      "count": 5,
-      "slug": "jessy-schram",
-      "profile_path": "/images/people/26974.webp",
-      "profile": "/images/people/26974.webp",
-      "birthday": "1986-01-15",
-      "deathday": null,
-      "movieTmdbIds": [
-        1547925,
-        1142715,
-        746041,
-        550017,
-        474979
-      ]
-    },
-    {
       "id": 1475939,
       "name": "Katherine Barrell",
       "count": 5,
@@ -1565,6 +1569,23 @@
         1180791,
         737766,
         35830
+      ]
+    },
+    {
+      "id": 54500,
+      "name": "Will Kemp",
+      "count": 5,
+      "slug": "will-kemp",
+      "profile_path": "/images/people/54500.webp",
+      "profile": "/images/people/54500.webp",
+      "birthday": "1977-06-29",
+      "deathday": null,
+      "movieTmdbIds": [
+        1145635,
+        1180747,
+        974213,
+        733032,
+        1733866
       ]
     },
     {
@@ -2814,22 +2835,6 @@
         1028556,
         475830,
         363478
-      ]
-    },
-    {
-      "id": 54500,
-      "name": "Will Kemp",
-      "count": 4,
-      "slug": "will-kemp",
-      "profile_path": "/images/people/54500.webp",
-      "profile": "/images/people/54500.webp",
-      "birthday": "1977-06-29",
-      "deathday": null,
-      "movieTmdbIds": [
-        1145635,
-        1180747,
-        974213,
-        733032
       ]
     },
     {
@@ -5987,6 +5992,20 @@
       ]
     },
     {
+      "id": 1214865,
+      "name": "B.J. Britt",
+      "count": 2,
+      "slug": "b-j-britt",
+      "profile_path": "/images/people/1214865.webp",
+      "profile": "/images/people/1214865.webp",
+      "birthday": "1982-05-07",
+      "deathday": null,
+      "movieTmdbIds": [
+        1547915,
+        1773270
+      ]
+    },
+    {
       "id": 157146,
       "name": "Barbara Eve Harris",
       "count": 2,
@@ -7524,6 +7543,20 @@
       "movieTmdbIds": [
         1485002,
         1602653
+      ]
+    },
+    {
+      "id": 222089,
+      "name": "Ian Harding",
+      "count": 2,
+      "slug": "ian-harding",
+      "profile_path": "/images/people/222089.webp",
+      "profile": "/images/people/222089.webp",
+      "birthday": "1986-09-16",
+      "deathday": null,
+      "movieTmdbIds": [
+        1027392,
+        1773266
       ]
     },
     {
@@ -9232,6 +9265,20 @@
       "movieTmdbIds": [
         550033,
         474976
+      ]
+    },
+    {
+      "id": 545344,
+      "name": "Mishael Morgan",
+      "count": 2,
+      "slug": "mishael-morgan",
+      "profile_path": "/images/people/545344.webp",
+      "profile": "/images/people/545344.webp",
+      "birthday": "1986-07-15",
+      "deathday": null,
+      "movieTmdbIds": [
+        1180746,
+        1773270
       ]
     },
     {
@@ -13551,19 +13598,6 @@
       "deathday": null,
       "movieTmdbIds": [
         874127
-      ]
-    },
-    {
-      "id": 1214865,
-      "name": "B.J. Britt",
-      "count": 1,
-      "slug": "b-j-britt",
-      "profile_path": "/images/people/1214865.webp",
-      "profile": "/images/people/1214865.webp",
-      "birthday": "1982-05-07",
-      "deathday": null,
-      "movieTmdbIds": [
-        1547915
       ]
     },
     {
@@ -22846,19 +22880,6 @@
       "deathday": null,
       "movieTmdbIds": [
         1142710
-      ]
-    },
-    {
-      "id": 222089,
-      "name": "Ian Harding",
-      "count": 1,
-      "slug": "ian-harding",
-      "profile_path": "/images/people/222089.webp",
-      "profile": "/images/people/222089.webp",
-      "birthday": "1986-09-16",
-      "deathday": null,
-      "movieTmdbIds": [
-        1027392
       ]
     },
     {
@@ -32833,19 +32854,6 @@
       ]
     },
     {
-      "id": 545344,
-      "name": "Mishael Morgan",
-      "count": 1,
-      "slug": "mishael-morgan",
-      "profile_path": "/images/people/545344.webp",
-      "profile": "/images/people/545344.webp",
-      "birthday": "1986-07-15",
-      "deathday": null,
-      "movieTmdbIds": [
-        1180746
-      ]
-    },
-    {
       "id": 1838549,
       "name": "Mishka Thébaud",
       "count": 1,
@@ -38345,6 +38353,19 @@
       ]
     },
     {
+      "id": 1891226,
+      "name": "Sohm Kapila",
+      "count": 1,
+      "slug": "sohm-kapila",
+      "profile_path": "/images/people/1891226.webp",
+      "profile": "/images/people/1891226.webp",
+      "birthday": null,
+      "deathday": null,
+      "movieTmdbIds": [
+        1733866
+      ]
+    },
+    {
       "id": 41168,
       "name": "Sólveig Arnarsdóttir",
       "count": 1,
@@ -40500,6 +40521,19 @@
       "deathday": null,
       "movieTmdbIds": [
         299576
+      ]
+    },
+    {
+      "id": 1339147,
+      "name": "Tori Anderson",
+      "count": 1,
+      "slug": "tori-anderson",
+      "profile_path": "/images/people/1339147.webp",
+      "profile": "/images/people/1339147.webp",
+      "birthday": "1988-12-29",
+      "deathday": null,
+      "movieTmdbIds": [
+        1773266
       ]
     },
     {
@@ -87414,6 +87448,38 @@
         "profile": "/images/people/580567.webp"
       }
     ],
+    "1733866": [
+      {
+        "id": 54500,
+        "name": "Will Kemp",
+        "character": "Harrison",
+        "order": 0,
+        "birthday": "1977-06-29",
+        "deathday": null,
+        "profile_path": "/images/people/54500.webp",
+        "profile": "/images/people/54500.webp"
+      },
+      {
+        "id": 26974,
+        "name": "Jessy Schram",
+        "character": "Rose",
+        "order": 1,
+        "birthday": "1986-01-15",
+        "deathday": null,
+        "profile_path": "/images/people/26974.webp",
+        "profile": "/images/people/26974.webp"
+      },
+      {
+        "id": 1891226,
+        "name": "Sohm Kapila",
+        "character": "Asha",
+        "order": 2,
+        "birthday": null,
+        "deathday": null,
+        "profile_path": "/images/people/1891226.webp",
+        "profile": "/images/people/1891226.webp"
+      }
+    ],
     "1772765": [
       {
         "id": 65871,
@@ -87574,6 +87640,60 @@
         "deathday": null,
         "profile_path": "/images/people/212429.webp",
         "profile": "/images/people/212429.webp"
+      }
+    ],
+    "1773266": [
+      {
+        "id": 222089,
+        "name": "Ian Harding",
+        "character": "Hutch",
+        "order": 0,
+        "birthday": "1986-09-16",
+        "deathday": null,
+        "profile_path": "/images/people/222089.webp",
+        "profile": "/images/people/222089.webp"
+      },
+      {
+        "id": 1339147,
+        "name": "Tori Anderson",
+        "character": "Billie",
+        "order": 1,
+        "birthday": "1988-12-29",
+        "deathday": null,
+        "profile_path": "/images/people/1339147.webp",
+        "profile": "/images/people/1339147.webp"
+      }
+    ],
+    "1773270": [
+      {
+        "id": 545344,
+        "name": "Mishael Morgan",
+        "character": "Mari",
+        "order": 0,
+        "birthday": "1986-07-15",
+        "deathday": null,
+        "profile_path": "/images/people/545344.webp",
+        "profile": "/images/people/545344.webp"
+      },
+      {
+        "id": 1214865,
+        "name": "B.J. Britt",
+        "character": "Julian",
+        "order": 1,
+        "birthday": "1982-05-07",
+        "deathday": null,
+        "profile_path": "/images/people/1214865.webp",
+        "profile": "/images/people/1214865.webp"
+      },
+      {
+        "id": 168581,
+        "name": "Holly Robinson Peete",
+        "character": "Tasha",
+        "order": 2,
+        "birthday": "1964-09-18",
+        "deathday": null,
+        "profile_path": "/images/people/168581.webp",
+        "profile": "/images/people/168581.webp"
       }
     ],
     "1773275": [
@@ -88121,6 +88241,28 @@
         "deathday": null,
         "profile_path": "/images/people/61527.webp",
         "profile": "/images/people/61527.webp"
+      }
+    ],
+    "1773330": [
+      {
+        "id": 134673,
+        "name": "Andrew W. Walker",
+        "character": "Cohen",
+        "order": 0,
+        "birthday": "1979-06-09",
+        "deathday": null,
+        "profile_path": "/images/people/134673.webp",
+        "profile": "/images/people/134673.webp"
+      },
+      {
+        "id": 78044,
+        "name": "Erin Cahill",
+        "character": "Goldie MacKenzie",
+        "order": 1,
+        "birthday": "1980-01-04",
+        "deathday": null,
+        "profile_path": "/images/people/78044.webp",
+        "profile": "/images/people/78044.webp"
       }
     ],
     "1773334": [],
@@ -133646,6 +133788,38 @@
         "profile": "/images/people/580567.webp"
       }
     ],
+    "1733866": [
+      {
+        "id": 54500,
+        "name": "Will Kemp",
+        "character": "Harrison",
+        "order": 0,
+        "birthday": "1977-06-29",
+        "deathday": null,
+        "profile_path": "/images/people/54500.webp",
+        "profile": "/images/people/54500.webp"
+      },
+      {
+        "id": 26974,
+        "name": "Jessy Schram",
+        "character": "Rose",
+        "order": 1,
+        "birthday": "1986-01-15",
+        "deathday": null,
+        "profile_path": "/images/people/26974.webp",
+        "profile": "/images/people/26974.webp"
+      },
+      {
+        "id": 1891226,
+        "name": "Sohm Kapila",
+        "character": "Asha",
+        "order": 2,
+        "birthday": null,
+        "deathday": null,
+        "profile_path": "/images/people/1891226.webp",
+        "profile": "/images/people/1891226.webp"
+      }
+    ],
     "1772765": [
       {
         "id": 65871,
@@ -133806,6 +133980,60 @@
         "deathday": null,
         "profile_path": "/images/people/212429.webp",
         "profile": "/images/people/212429.webp"
+      }
+    ],
+    "1773266": [
+      {
+        "id": 222089,
+        "name": "Ian Harding",
+        "character": "Hutch",
+        "order": 0,
+        "birthday": "1986-09-16",
+        "deathday": null,
+        "profile_path": "/images/people/222089.webp",
+        "profile": "/images/people/222089.webp"
+      },
+      {
+        "id": 1339147,
+        "name": "Tori Anderson",
+        "character": "Billie",
+        "order": 1,
+        "birthday": "1988-12-29",
+        "deathday": null,
+        "profile_path": "/images/people/1339147.webp",
+        "profile": "/images/people/1339147.webp"
+      }
+    ],
+    "1773270": [
+      {
+        "id": 545344,
+        "name": "Mishael Morgan",
+        "character": "Mari",
+        "order": 0,
+        "birthday": "1986-07-15",
+        "deathday": null,
+        "profile_path": "/images/people/545344.webp",
+        "profile": "/images/people/545344.webp"
+      },
+      {
+        "id": 1214865,
+        "name": "B.J. Britt",
+        "character": "Julian",
+        "order": 1,
+        "birthday": "1982-05-07",
+        "deathday": null,
+        "profile_path": "/images/people/1214865.webp",
+        "profile": "/images/people/1214865.webp"
+      },
+      {
+        "id": 168581,
+        "name": "Holly Robinson Peete",
+        "character": "Tasha",
+        "order": 2,
+        "birthday": "1964-09-18",
+        "deathday": null,
+        "profile_path": "/images/people/168581.webp",
+        "profile": "/images/people/168581.webp"
       }
     ],
     "1773275": [
@@ -134353,6 +134581,28 @@
         "deathday": null,
         "profile_path": "/images/people/61527.webp",
         "profile": "/images/people/61527.webp"
+      }
+    ],
+    "1773330": [
+      {
+        "id": 134673,
+        "name": "Andrew W. Walker",
+        "character": "Cohen",
+        "order": 0,
+        "birthday": "1979-06-09",
+        "deathday": null,
+        "profile_path": "/images/people/134673.webp",
+        "profile": "/images/people/134673.webp"
+      },
+      {
+        "id": 78044,
+        "name": "Erin Cahill",
+        "character": "Goldie MacKenzie",
+        "order": 1,
+        "birthday": "1980-01-04",
+        "deathday": null,
+        "profile_path": "/images/people/78044.webp",
+        "profile": "/images/people/78044.webp"
       }
     ],
     "1773334": [],

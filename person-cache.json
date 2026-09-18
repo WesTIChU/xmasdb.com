@@ -1452,7 +1452,7 @@
     "enrichmentVersion": 2,
     "imagesChecked": false,
     "photoRecoveredFromImages": false,
-    "lastUpdated": "2026-09-18T14:32:18.267Z",
+    "lastUpdated": "2026-09-18T16:38:05.110Z",
     "profile": "/images/people/26974.webp"
   },
   "27004": {
@@ -3186,7 +3186,7 @@
     "enrichmentVersion": 2,
     "imagesChecked": false,
     "photoRecoveredFromImages": false,
-    "lastUpdated": "2026-09-18T14:33:30.808Z",
+    "lastUpdated": "2026-09-18T16:38:05.067Z",
     "profile": "/images/people/54500.webp"
   },
   "54650": {
@@ -5383,7 +5383,7 @@
     "enrichmentVersion": 2,
     "imagesChecked": false,
     "photoRecoveredFromImages": false,
-    "lastUpdated": "2026-09-18T14:32:14.064Z",
+    "lastUpdated": "2026-09-18T16:38:04.946Z",
     "profile": "/images/people/78044.webp"
   },
   "78141": {
@@ -8216,7 +8216,7 @@
     "enrichmentVersion": 2,
     "imagesChecked": false,
     "photoRecoveredFromImages": false,
-    "lastUpdated": "2026-09-18T14:32:22.232Z",
+    "lastUpdated": "2026-09-18T16:38:04.903Z",
     "profile": "/images/people/134673.webp"
   },
   "134859": {
@@ -9179,7 +9179,7 @@
     "enrichmentVersion": 2,
     "imagesChecked": false,
     "photoRecoveredFromImages": false,
-    "lastUpdated": "2026-09-18T14:33:58.817Z",
+    "lastUpdated": "2026-09-18T16:38:05.630Z",
     "profile": "/images/people/168581.webp"
   },
   "168615": {
@@ -11074,7 +11074,7 @@
     "enrichmentVersion": 2,
     "imagesChecked": false,
     "photoRecoveredFromImages": false,
-    "lastUpdated": "2026-09-18T14:33:57.082Z",
+    "lastUpdated": "2026-09-18T16:38:05.725Z",
     "profile": "/images/people/222089.webp"
   },
   "222130": {
@@ -11618,7 +11618,7 @@
     "enrichmentVersion": 2,
     "imagesChecked": false,
     "photoRecoveredFromImages": false,
-    "lastUpdated": "2026-09-18T14:33:34.932Z",
+    "lastUpdated": "2026-09-18T16:38:05.545Z",
     "profile": "/images/people/545344.webp"
   },
   "550550": {
@@ -14093,7 +14093,7 @@
     "enrichmentVersion": 2,
     "imagesChecked": false,
     "photoRecoveredFromImages": false,
-    "lastUpdated": "2026-09-18T14:32:53.473Z",
+    "lastUpdated": "2026-09-18T16:38:05.587Z",
     "profile": "/images/people/1214865.webp"
   },
   "1215144": {
@@ -16417,6 +16417,20 @@
     "photoRecoveredFromImages": false,
     "lastUpdated": "2026-09-18T14:35:05.644Z",
     "profile": "/images/people/1335530.webp"
+  },
+  "1339147": {
+    "id": 1339147,
+    "name": "Tori Anderson",
+    "birthday": "1988-12-29",
+    "deathday": null,
+    "profile_path": "/images/people/1339147.webp",
+    "known_for_department": "Acting",
+    "fetchedFromTmdb": true,
+    "enrichmentVersion": 2,
+    "imagesChecked": false,
+    "photoRecoveredFromImages": false,
+    "lastUpdated": "2026-09-18T16:38:05.769Z",
+    "profile": "/images/people/1339147.webp"
   },
   "1339929": {
     "id": 1339929,
@@ -24105,6 +24119,20 @@
     "photoRecoveredFromImages": false,
     "lastUpdated": "2026-09-18T14:34:42.028Z",
     "profile": "/images/people/1890914.webp"
+  },
+  "1891226": {
+    "id": 1891226,
+    "name": "Sohm Kapila",
+    "birthday": null,
+    "deathday": null,
+    "profile_path": "/images/people/1891226.webp",
+    "known_for_department": "Acting",
+    "fetchedFromTmdb": true,
+    "enrichmentVersion": 2,
+    "imagesChecked": false,
+    "photoRecoveredFromImages": false,
+    "lastUpdated": "2026-09-18T16:38:05.154Z",
+    "profile": "/images/people/1891226.webp"
   },
   "1891666": {
     "id": 1891666,
