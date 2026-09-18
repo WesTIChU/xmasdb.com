@@ -5947,6 +5947,148 @@
     ]
   },
   {
+    "title": "A Godwink Christmas",
+    "year": 2018,
+    "tmdbId": 549313,
+    "imdbId": "tt8974850",
+    "tmdb_id": 549313,
+    "imdb_id": "tt8974850",
+    "release_date": "2018-11-17",
+    "poster": "https://image.tmdb.org/t/p/w500/j9Nor1fZI2DLrlCKhEUVLqa9MfO.jpg",
+    "overview": "As Christmas approaches, Paula, a St. Louis antique appraiser, reluctantly accepts a marriage proposal from her boyfriend, Daniel, a career-focused attorney. When her Aunt Jane senses she has mixed emotions over the engagement, she invites Paula to her Nantucket home. Upon her arrival, Paula plans a trip to the nearby island of Martha's Vineyard where she meets a charming inn owner.",
+    "cast": [
+      {
+        "id": 1292329,
+        "name": "Kimberley Sustad",
+        "character": "Paula Mayer",
+        "order": 0,
+        "profile_path": "/images/people/1292329.webp",
+        "birthday": "1987-05-27",
+        "deathday": null
+      },
+      {
+        "id": 62909,
+        "name": "Paul Campbell",
+        "character": "Gery Conover",
+        "order": 1,
+        "profile_path": "/images/people/62909.webp",
+        "birthday": "1979-06-22",
+        "deathday": null
+      },
+      {
+        "id": 162783,
+        "name": "Kathie Lee Gifford",
+        "character": "Aunt Jane",
+        "order": 2,
+        "profile_path": "/omz2rFxQjf7ozuu6l4svGRJlQK.jpg",
+        "birthday": "1953-08-16",
+        "deathday": null
+      },
+      {
+        "id": 1883370,
+        "name": "Natalie Sharp",
+        "character": "Jenn O'Brien",
+        "order": 3,
+        "profile_path": "/doHNNIAVfzL6CRU7Tn7Snj8n5hY.jpg",
+        "birthday": null,
+        "deathday": null
+      },
+      {
+        "id": 1406035,
+        "name": "Giles Panton",
+        "character": "Daniel O'Brian",
+        "order": 4,
+        "profile_path": "/images/people/1406035.webp",
+        "birthday": "1982-09-13",
+        "deathday": null
+      },
+      {
+        "id": 1475838,
+        "name": "Ryan Alexander McDonald",
+        "character": "Buddy Bambrick",
+        "order": 5,
+        "profile_path": "/51QpOEtfigQdLWcAcjE4Uzw7izZ.jpg",
+        "birthday": null,
+        "deathday": null
+      },
+      {
+        "id": 126223,
+        "name": "Dolores Drake",
+        "character": "Dorothy Keller",
+        "order": 6,
+        "profile_path": "/images/people/126223.webp",
+        "birthday": null,
+        "deathday": null
+      },
+      {
+        "id": 2321679,
+        "name": "Kat Ruston",
+        "character": "Betsy Warren",
+        "order": 7,
+        "profile_path": "/images/people/2321679.webp",
+        "birthday": "1988-03-18",
+        "deathday": null
+      },
+      {
+        "id": 39360,
+        "name": "Lucia Walters",
+        "character": "Susanna Berry",
+        "order": 8,
+        "profile_path": "/images/people/39360.webp",
+        "birthday": null,
+        "deathday": null
+      },
+      {
+        "id": 228893,
+        "name": "Jag Bal",
+        "character": "Kenny Singer",
+        "order": 9,
+        "profile_path": "/images/people/228893.webp",
+        "birthday": null,
+        "deathday": null
+      },
+      {
+        "id": 2559107,
+        "name": "Kelly Richard Nelson",
+        "character": "Robert O'Brian",
+        "order": 10,
+        "profile_path": null,
+        "birthday": null,
+        "deathday": null
+      },
+      {
+        "id": 1313387,
+        "name": "Lucia Frangione",
+        "character": "Catherine O'Brian",
+        "order": 11,
+        "profile_path": null,
+        "birthday": "1969-07-23",
+        "deathday": null
+      },
+      {
+        "id": 2346251,
+        "name": "Grace Sunar",
+        "character": "Katie Warren",
+        "order": 12,
+        "profile_path": "/images/people/2346251.webp",
+        "birthday": null,
+        "deathday": null
+      },
+      {
+        "id": 2454643,
+        "name": "Talana Watt Madu",
+        "character": "Airport Passenger (uncredited)",
+        "order": 13,
+        "profile_path": null,
+        "birthday": null,
+        "deathday": null
+      }
+    ],
+    "castSummary": "Kimberley Sustad, Paul Campbell, Kathie Lee Gifford, Natalie Sharp, Giles Panton, Ryan Alexander McDonald, Dolores Drake, Kat Ruston",
+    "vote_average": null,
+    "vote_count": null
+  },
+  {
     "title": "A Majestic Christmas",
     "year": 2018,
     "tmdbId": 550028,
