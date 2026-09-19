@@ -8,12 +8,15 @@ import { PopularActorsSection } from './PopularActorsSection';
 import { formatMoviePremiereDate } from '../utils/catalogue-lifecycle';
 
 interface HomePageProps {
-  payload: HomePayload;
+  payload: Partial<HomePayload>;
   onNavigate: (path: string) => void;
 }
 
 export const HomePage: React.FC<HomePageProps> = ({ payload, onNavigate }) => {
-  const { comingSoon, discovery, totalMovies, popularActors } = payload;
+  const comingSoon = Array.isArray(payload?.comingSoon) ? payload.comingSoon : [];
+  const discovery = Array.isArray(payload?.discovery) ? payload.discovery : [];
+  const popularActors = Array.isArray(payload?.popularActors) ? payload.popularActors : [];
+  const totalMovies = typeof payload?.totalMovies === 'number' ? payload.totalMovies : 0;
   return (
     <div className="pt-0 pb-6 sm:pb-8" id="home-view">
       <PopularActorsSection groups={popularActors} onNavigate={onNavigate} />

@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import type { MetaBrand } from '../api/types';
-import { catalogueUrl, fetchCatalogue } from '../api/client';
+import { fetchCatalogue } from '../api/client';
 
 interface BrandPrefetchProps {
   /** Populated brands from catalogue metadata. */
@@ -29,7 +29,7 @@ export const BrandPrefetch: React.FC<BrandPrefetchProps> = ({ brands, activeBran
       if (cancelled || typeof window === 'undefined') return;
       for (const brand of brands) {
         if (brand.id === activeBrandId) continue;
-        fetchCatalogue(catalogueUrl(`?brand=${brand.slug}`))
+        fetchCatalogue(`?brand=${brand.slug}`)
           .then((listing) => {
             if (cancelled) return;
             const posters = listing.movies

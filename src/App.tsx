@@ -231,11 +231,13 @@ export default function App() {
   useEffect(() => {
     if (view.status !== 'ready' || typeof window === 'undefined') return;
     if (descriptor.type === 'movie') {
-      const movie = (view.payload as MovieDetailPayload).movie;
+      const movie = (view.payload as Partial<MovieDetailPayload>).movie;
+      if (!movie) return;
       const canonical = getMoviePath(movie.tmdbId, movie.slug);
       if (window.location.pathname !== canonical) window.history.replaceState({}, '', canonical);
     } else if (descriptor.type === 'actor') {
-      const actor = (view.payload as ActorDetailPayload).actor;
+      const actor = (view.payload as Partial<ActorDetailPayload>).actor;
+      if (!actor) return;
       const canonical = getActorPath(actor.tmdbPersonId, actor.slug);
       if (window.location.pathname !== canonical) window.history.replaceState({}, '', canonical);
     }
@@ -311,7 +313,8 @@ export default function App() {
       });
     } else if (descriptor.type === 'movie') {
       if (view.status !== 'ready') return;
-      const m = (view.payload as MovieDetailPayload).movie;
+      const m = (view.payload as Partial<MovieDetailPayload>).movie;
+      if (!m) return;
       const canonical = getMoviePath(m.tmdbId, m.slug);
       updateSeoTags({
         title: `${m.title} (${m.year}) — XmasDB.com`,
@@ -336,7 +339,8 @@ export default function App() {
       });
     } else if (descriptor.type === 'actor') {
       if (view.status !== 'ready') return;
-      const a = (view.payload as ActorDetailPayload).actor;
+      const a = (view.payload as Partial<ActorDetailPayload>).actor;
+      if (!a) return;
       const canonical = getActorPath(a.tmdbPersonId, a.slug);
       updateSeoTags({
         title: `${a.name} Christmas Movies & Filmography — XmasDB.com`,
@@ -639,17 +643,19 @@ export default function App() {
             })()}
 
             {descriptor.type === 'movie' && view.status === 'ready' && (() => {
-              const payload = view.payload as MovieDetailPayload;
-              return <MovieDetail movie={payload.movie} related={payload.related} onNavigate={navigate} />;
+              const payload = view.payload as Partial<MovieDetailPayload>;
+              if (!payload.movie) return <NotFoundPage onNavigate={navigate} />;
+              return <MovieDetail movie={payload.movie} related={Array.isArray(payload.related) ? payload.related : []} onNavigate={navigate} />;
             })()}
 
             {descriptor.type === 'actor' && view.status === 'ready' && (() => {
-              const payload = view.payload as ActorDetailPayload;
+              const payload = view.payload as Partial<ActorDetailPayload>;
+              if (!payload.actor) return <NotFoundPage onNavigate={navigate} />;
               return (
                 <ActorDetail
                   actor={payload.actor}
-                  filmography={payload.filmography}
-                  backdropUrl={payload.backdropUrl}
+                  filmography={Array.isArray(payload.filmography) ? payload.filmography : []}
+                  backdropUrl={payload.backdropUrl ?? null}
                   onNavigate={navigate}
                   onSelectMovie={selectMovie}
                 />

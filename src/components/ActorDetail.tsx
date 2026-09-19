@@ -34,6 +34,7 @@ export const ActorDetail: React.FC<ActorDetailProps> = ({
   onNavigate,
   onSelectMovie,
 }) => {
+  const safeFilmography = Array.isArray(filmography) ? filmography : [];
   const [selectedBrandFilter, setSelectedBrandFilter] = useState<string>('all');
   const [imageError, setImageError] = useState<boolean>(false);
   const [backdropError, setBackdropError] = useState<boolean>(false);
@@ -47,7 +48,7 @@ export const ActorDetail: React.FC<ActorDetailProps> = ({
   // Derive unique brands in this actor's XmasDB filmography
   const brandStats = useMemo(() => {
     const map = new Map<string, number>();
-    for (const m of filmography) {
+    for (const m of safeFilmography) {
       map.set(m.brandId, (map.get(m.brandId) || 0) + 1);
     }
     return Array.from(map.entries()).map(([brandId, count]) => {
@@ -59,15 +60,15 @@ export const ActorDetail: React.FC<ActorDetailProps> = ({
         count,
       };
     });
-  }, [filmography]);
+  }, [safeFilmography]);
 
   // Filter movies based on selected brand
   const filteredMovies = useMemo(() => {
     const selectedMovies = selectedBrandFilter === 'all'
-      ? filmography
-      : filmography.filter((m) => m.brandId === selectedBrandFilter);
+      ? safeFilmography
+      : safeFilmography.filter((m) => m.brandId === selectedBrandFilter);
     return [...selectedMovies].sort((a, b) => b.year - a.year || b.releaseDate.localeCompare(a.releaseDate));
-  }, [filmography, selectedBrandFilter]);
+  }, [safeFilmography, selectedBrandFilter]);
 
   // Age calculations
   const isDeceased = isValidActorDate(actor.deathday);
@@ -173,7 +174,7 @@ export const ActorDetail: React.FC<ActorDetailProps> = ({
 
             {/* XmasDB Catalogue Summary */}
             <div className="mt-2 text-sm font-medium text-[#1A3D2F] tracking-wide">
-              {filmography.length} {filmography.length === 1 ? 'Christmas Movie' : 'Christmas Movies'} in XmasDB
+              {safeFilmography.length} {safeFilmography.length === 1 ? 'Christmas Movie' : 'Christmas Movies'} in XmasDB
             </div>
 
             {/* Brand Breakdown */}
@@ -284,7 +285,7 @@ export const ActorDetail: React.FC<ActorDetailProps> = ({
               Holiday Filmography
             </h2>
             <p className="text-sm sm:text-base text-[#736B63] font-body mt-1">
-              {filmography.length} {filmography.length === 1 ? 'Christmas movie' : 'Christmas movies'} featuring {actor.name} in XmasDB
+              {safeFilmography.length} {safeFilmography.length === 1 ? 'Christmas movie' : 'Christmas movies'} featuring {actor.name} in XmasDB
             </p>
           </div>
 
