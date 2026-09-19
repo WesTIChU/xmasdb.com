@@ -1,0 +1,20 @@
+{
+  "imported": 203,
+  "collisions": [
+    {
+      "title": "Hot Chocolate Holiday",
+      "tmdbId": 777405,
+      "existingBrand": "gaf"
+    }
+  ],
+  "finalCounts": {
+    "hallmark": 273,
+    "lifetime": 210,
+    "gaf": 89,
+    "total": 572,
+    "lifetimeCollection": 210,
+    "lifetimeComingSoon": 0,
+    "lifetimeFeed": 210,
+    "allFeed": 570
+  }
+}

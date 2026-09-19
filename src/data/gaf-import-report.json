@@ -1,0 +1,217 @@
+{
+  "sourceUrl": "https://www.greatamericanfamily.com/celebrations/",
+  "discovered": 101,
+  "uniqueTitles": 101,
+  "totalEntriesDiscovered": 101,
+  "successfullyMatched": 89,
+  "importedAsGaf": 89,
+  "noTmdbMatch": 11,
+  "titlesByYear": {
+    "2021": 13,
+    "2022": 19,
+    "2023": 21,
+    "2024": 18,
+    "2025": 18,
+    "2026": 11
+  },
+  "confidentlyMatched": 89,
+  "alreadyPresent": 85,
+  "updatedExisting": 0,
+  "newlyImported": 4,
+  "ambiguous": [],
+  "unmatched": [
+    {
+      "title": "A Christmas Rescue",
+      "year": 2026,
+      "candidates": []
+    },
+    {
+      "title": "A Sweet Christmas Anniversary",
+      "year": 2026,
+      "candidates": []
+    },
+    {
+      "title": "A Christmas Prayer Tradition",
+      "year": 2026,
+      "candidates": []
+    },
+    {
+      "title": "Christmas at the Starlight",
+      "year": 2026,
+      "candidates": []
+    },
+    {
+      "title": "Silver Bells at Christmas",
+      "year": 2026,
+      "candidates": []
+    },
+    {
+      "title": "The Trouble with Christmas Mistletoe",
+      "year": 2026,
+      "candidates": [
+        {
+          "id": 1702313,
+          "title": "The Trouble With Mistletoe",
+          "releaseDate": "2026-07-02"
+        }
+      ]
+    },
+    {
+      "title": "An Accidental Arctic Christmas",
+      "year": 2026,
+      "candidates": []
+    },
+    {
+      "title": "A Very Evergreen Christmas",
+      "year": 2026,
+      "candidates": []
+    },
+    {
+      "title": "A Second Chance Christmas",
+      "year": 2026,
+      "candidates": []
+    },
+    {
+      "title": "A Very Curious Christmas",
+      "year": 2025,
+      "candidates": [
+        {
+          "id": 1191059,
+          "title": "Merry Mystery Christmas",
+          "releaseDate": "2023-11-08"
+        }
+      ]
+    },
+    {
+      "title": "Christmas Sweethearts",
+      "year": 2022,
+      "candidates": [
+        {
+          "id": 649520,
+          "title": "My Best Friend's Christmas",
+          "releaseDate": "2019-12-01"
+        }
+      ]
+    }
+  ],
+  "collisions": [],
+  "skipped": [],
+  "collection": 4,
+  "comingSoon": 0,
+  "futureWithoutExactDate": 10,
+  "imageFailures": [
+    {
+      "title": "Christmas Wrapped in Love",
+      "tmdbId": 1754947,
+      "poster": false,
+      "backdrop": false
+    },
+    {
+      "title": "Christmas at Moose Lake",
+      "tmdbId": 1665375,
+      "poster": false,
+      "backdrop": false
+    }
+  ],
+  "parseFailures": [
+    {
+      "title": "Candace Cameron Bure 2023 Christmas Movie",
+      "sourceUrl": "https://www.greatamericanfamily.com/movie/candace-cameron-bure-2023-christmas-movie/",
+      "reason": "Could not determine GAF year from the card filter"
+    }
+  ],
+  "duplicates": [],
+  "notImported": [
+    {
+      "title": "Candace Cameron Bure 2023 Christmas Movie",
+      "reason": "Could not determine GAF year from the card filter"
+    },
+    {
+      "title": "A Christmas Rescue",
+      "year": 2026,
+      "candidates": [],
+      "reason": "No confident TMDB title/year match"
+    },
+    {
+      "title": "A Sweet Christmas Anniversary",
+      "year": 2026,
+      "candidates": [],
+      "reason": "No confident TMDB title/year match"
+    },
+    {
+      "title": "A Christmas Prayer Tradition",
+      "year": 2026,
+      "candidates": [],
+      "reason": "No confident TMDB title/year match"
+    },
+    {
+      "title": "Christmas at the Starlight",
+      "year": 2026,
+      "candidates": [],
+      "reason": "No confident TMDB title/year match"
+    },
+    {
+      "title": "Silver Bells at Christmas",
+      "year": 2026,
+      "candidates": [],
+      "reason": "No confident TMDB title/year match"
+    },
+    {
+      "title": "The Trouble with Christmas Mistletoe",
+      "year": 2026,
+      "candidates": [
+        {
+          "id": 1702313,
+          "title": "The Trouble With Mistletoe",
+          "releaseDate": "2026-07-02"
+        }
+      ],
+      "reason": "No confident TMDB title/year match"
+    },
+    {
+      "title": "An Accidental Arctic Christmas",
+      "year": 2026,
+      "candidates": [],
+      "reason": "No confident TMDB title/year match"
+    },
+    {
+      "title": "A Very Evergreen Christmas",
+      "year": 2026,
+      "candidates": [],
+      "reason": "No confident TMDB title/year match"
+    },
+    {
+      "title": "A Second Chance Christmas",
+      "year": 2026,
+      "candidates": [],
+      "reason": "No confident TMDB title/year match"
+    },
+    {
+      "title": "A Very Curious Christmas",
+      "year": 2025,
+      "candidates": [
+        {
+          "id": 1191059,
+          "title": "Merry Mystery Christmas",
+          "releaseDate": "2023-11-08"
+        }
+      ],
+      "reason": "No confident TMDB title/year match"
+    },
+    {
+      "title": "Christmas Sweethearts",
+      "year": 2022,
+      "candidates": [
+        {
+          "id": 649520,
+          "title": "My Best Friend's Christmas",
+          "releaseDate": "2019-12-01"
+        }
+      ],
+      "reason": "No confident TMDB title/year match"
+    }
+  ],
+  "sourceErrors": [
+    "Candace Cameron Bure 2023 Christmas Movie: Could not determine GAF year from the card filter"
+  ]
+}

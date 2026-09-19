@@ -1,0 +1,52 @@
+name: XmasDB metadata refresh
+
+on:
+  schedule:
+    # Quiet UTC time on the 1st and 15th of every month.
+    - cron: '17 3 1,15 * *'
+  workflow_dispatch:
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+
+    steps:
+      - name: Check out XmasDB
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Refresh local TMDB metadata and images
+        env:
+          TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
+        run: npm run refresh:tmdb
+
+      - name: Discover and import GAF Christmas catalogue
+        env:
+          TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
+        run: npm run import:gaf
+
+      - name: Validate local data
+        run: |
+          npm run audit:local
+          npm test
+          npm run lint
+
+      - name: Upload generated local site
+        uses: actions/upload-artifact@v4
+        with:
+          name: xmasdb-refresh-${{ github.run_number }}
+          path: |
+            dist
+            src/data/movies.ts
+            src/data/actors.json
+            public/images

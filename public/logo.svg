@@ -1,0 +1,499 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 1150 320"
+  width="1150"
+  height="320"
+  fill="none"
+>
+  <defs>
+    <linearGradient id="pirateSantaRed" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#E22626" />
+      <stop offset="100%" stop-color="#A71414" />
+    </linearGradient>
+
+    <linearGradient id="pirateSofaGreen" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1A5336" />
+      <stop offset="50%" stop-color="#13432B" />
+      <stop offset="100%" stop-color="#0B2B1B" />
+    </linearGradient>
+
+    <linearGradient id="pirateGoldText" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FCE588" />
+      <stop offset="50%" stop-color="#DFB135" />
+      <stop offset="100%" stop-color="#B2841E" />
+    </linearGradient>
+
+    <linearGradient id="pirateTextGreen" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#185133" />
+      <stop offset="60%" stop-color="#0F3822" />
+      <stop offset="100%" stop-color="#072214" />
+    </linearGradient>
+
+    <linearGradient id="disneyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0E2148" />
+      <stop offset="100%" stop-color="#071228" />
+    </linearGradient>
+
+    <linearGradient id="primeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00A8E1" />
+      <stop offset="100%" stop-color="#007EB9" />
+    </linearGradient>
+
+    <linearGradient id="hboGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5822B4" />
+      <stop offset="100%" stop-color="#2B0E68" />
+    </linearGradient>
+
+    <filter id="pirateGoldGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="1" stdDeviation="2" flood-color="#D4AF37" flood-opacity="0.9" />
+    </filter>
+
+    <filter id="pirateSoftShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="2" dy="4" stdDeviation="3" flood-color="#000000" flood-opacity="0.25" />
+    </filter>
+  </defs>
+
+  <g id="illustration-group" transform="translate(10, 15)">
+    <!-- Sofa Back & Arms -->
+    <path d="M 30 140 C 10 140 0 170 0 210 C 0 245 15 270 45 275 C 65 278 85 260 85 230 C 85 180 70 140 30 140 Z" fill="url(#pirateSofaGreen)" stroke="#092014" stroke-width="3" />
+    <path d="M 60 110 C 60 75 140 65 240 65 C 340 65 410 75 425 110 C 435 135 440 185 440 230 C 440 260 410 270 380 270 L 70 270 C 40 270 40 210 60 110 Z" fill="url(#pirateSofaGreen)" stroke="#092014" stroke-width="3" />
+    <circle cx="160" cy="115" r="5" fill="#092014" />
+    <circle cx="240" cy="110" r="5" fill="#092014" />
+    <circle cx="320" cy="115" r="5" fill="#092014" />
+    <path d="M 405 150 C 435 150 455 175 455 210 C 455 245 440 270 410 275 C 385 278 375 255 375 225 C 375 185 390 150 405 150 Z" fill="url(#pirateSofaGreen)" stroke="#092014" stroke-width="3" />
+
+    <!-- SANTA CLAUS -->
+    <path d="M 80 180 C 70 210 70 250 85 275 L 140 275 L 155 230 L 190 230 C 200 230 210 200 210 170 C 210 140 180 130 145 130 C 110 130 90 150 80 180 Z" fill="url(#pirateSantaRed)" stroke="#111" stroke-width="3" />
+    <path d="M 85 210 C 120 218 160 218 200 208 L 200 225 C 160 235 120 235 85 225 Z" fill="#1A1A1A" stroke="#000" stroke-width="2" />
+    <rect x="135" y="208" width="28" height="24" rx="3" fill="#F5B82E" stroke="#111" stroke-width="2.5" />
+    <rect x="142" y="214" width="14" height="12" rx="1" fill="#1A1A1A" />
+    <path d="M 80 260 C 80 255 150 252 205 258 C 205 272 195 278 150 278 C 95 278 80 272 80 260 Z" fill="#FFFFFF" stroke="#D1CCC2" stroke-width="2" />
+    <path d="M 75 260 C 70 270 50 280 40 282 C 30 284 30 295 50 295 C 80 295 100 295 105 285 L 105 265 Z" fill="#1C1C1C" stroke="#000" stroke-width="2.5" />
+    <path d="M 125 265 L 125 285 C 130 295 145 295 165 295 C 175 295 175 285 165 282 C 150 278 140 268 135 265 Z" fill="#1C1C1C" stroke="#000" stroke-width="2.5" />
+
+    <!-- Santa Arm holding remote -->
+    <path d="M 85 160 C 65 145 45 140 30 150 C 20 160 30 180 50 190 L 85 195 Z" fill="url(#pirateSantaRed)" stroke="#111" stroke-width="3" />
+    <ellipse cx="45" cy="155" rx="14" ry="10" fill="#FFFFFF" stroke="#DDD7CC" stroke-width="2" transform="rotate(-30 45 155)" />
+    <ellipse cx="38" cy="140" rx="9" ry="8" fill="#FDD6BA" stroke="#111" stroke-width="2" />
+
+    <!-- Remote Control in Santa's hand -->
+    <g transform="translate(18, 98) rotate(-35)">
+      <rect x="0" y="0" width="18" height="42" rx="4" fill="#242424" stroke="#000000" stroke-width="2.5" />
+      <circle cx="5" cy="7" r="2.5" fill="#E53935" />
+      <circle cx="12" cy="7" r="2" fill="#E0E0E0" />
+      <circle cx="5" cy="15" r="2" fill="#BDBDBD" />
+      <circle cx="12" cy="15" r="2" fill="#BDBDBD" />
+      <circle cx="5" cy="22" r="2" fill="#BDBDBD" />
+      <circle cx="12" cy="22" r="2" fill="#BDBDBD" />
+      <rect x="4" y="28" width="10" height="8" rx="2" fill="#757575" />
+      <path d="M 4 -5 C 9 -10 14 -5 14 -5" stroke="#F5B82E" stroke-width="2" stroke-linecap="round" fill="none" />
+      <path d="M 1 -10 C 9 -18 17 -10 17 -10" stroke="#F5B82E" stroke-width="2" stroke-linecap="round" fill="none" />
+    </g>
+
+    <!-- Santa Head & Face -->
+    <ellipse cx="145" cy="115" rx="28" ry="24" fill="#FDD6BA" stroke="#111" stroke-width="2" />
+    <circle cx="130" cy="118" r="8" fill="#F49090" opacity="0.6" />
+    <circle cx="162" cy="118" r="8" fill="#F49090" opacity="0.6" />
+    <path d="M 126 108 C 128 104 134 104 136 108" stroke="#111" stroke-width="3" stroke-linecap="round" fill="none" />
+    <path d="M 154 108 C 156 104 162 104 164 108" stroke="#111" stroke-width="3" stroke-linecap="round" fill="none" />
+    <path d="M 123 103 C 127 98 135 100 137 103" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" fill="none" />
+    <path d="M 153 103 C 155 100 163 98 167 103" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" fill="none" />
+    <ellipse cx="145" cy="114" rx="7" ry="5" fill="#F7A899" stroke="#111" stroke-width="1.5" />
+    <path d="M 136 122 C 140 132 150 132 154 122 Z" fill="#881212" stroke="#111" stroke-width="2" />
+    <path d="M 141 127 C 143 130 147 130 149 127" fill="#F49090" />
+    <path d="M 115 110 C 95 125 100 165 110 185 C 120 205 145 215 160 210 C 180 205 195 180 190 150 C 190 130 180 115 175 110 C 165 125 155 130 145 130 C 135 130 125 125 115 110 Z" fill="#FFFFFF" stroke="#DDD7CC" stroke-width="2.5" />
+    <path d="M 145 120 C 135 112 118 118 112 128 C 122 135 138 130 145 124 C 152 130 168 135 178 128 C 172 118 155 112 145 120 Z" fill="#FFFFFF" stroke="#DDD7CC" stroke-width="2" />
+    <path d="M 118 100 C 120 70 140 50 170 45 C 200 40 220 60 225 85 C 228 100 215 115 200 120 C 190 122 185 105 180 95 C 160 90 140 92 125 100 Z" fill="url(#pirateSantaRed)" stroke="#111" stroke-width="3" />
+    <path d="M 115 100 C 125 90 175 90 185 100 C 190 108 180 115 175 115 C 160 110 135 110 120 115 C 115 115 110 108 115 100 Z" fill="#FFFFFF" stroke="#DDD7CC" stroke-width="3" />
+    <circle cx="218" cy="118" r="14" fill="#FFFFFF" stroke="#DDD7CC" stroke-width="2.5" />
+
+    <!-- PIRATE SNOWMAN -->
+    <ellipse cx="285" cy="205" rx="55" ry="50" fill="#FFFFFF" stroke="#C8D6DF" stroke-width="3" />
+    <circle cx="270" cy="200" r="4.5" fill="#1C1C1C" />
+    <circle cx="275" cy="218" r="5" fill="#1C1C1C" />
+
+    <circle cx="275" cy="125" r="38" fill="#FFFFFF" stroke="#C8D6DF" stroke-width="3" />
+    <circle cx="290" cy="115" r="4.5" fill="#1C1C1C" />
+    <path d="M 264 118 C 267 112 274 112 277 118" stroke="#1C1C1C" stroke-width="3.5" stroke-linecap="round" fill="none" />
+
+    <!-- Carrot Nose -->
+    <path d="M 278 122 L 245 110 C 242 114 246 120 250 122 L 278 128 Z" fill="#FF7043" stroke="#D84315" stroke-width="2" />
+    <path d="M 260 116 L 258 121" stroke="#BF360C" stroke-width="1.5" />
+    <path d="M 268 119 L 266 124" stroke="#BF360C" stroke-width="1.5" />
+
+    <!-- Coal Smile -->
+    <circle cx="265" cy="135" r="2.5" fill="#1C1C1C" />
+    <circle cx="272" cy="139" r="2.5" fill="#1C1C1C" />
+    <circle cx="280" cy="140" r="2.5" fill="#1C1C1C" />
+    <circle cx="288" cy="138" r="2.5" fill="#1C1C1C" />
+    <circle cx="295" cy="133" r="2.5" fill="#1C1C1C" />
+
+    <!-- Red Pirate Bandana under hat -->
+    <path d="M 244 98 C 255 92 295 90 308 97 C 310 103 304 107 290 106 C 275 105 250 106 244 101 Z" fill="#D32F2F" stroke="#9A1B1B" stroke-width="1.5" />
+    <path d="M 244 100 C 235 105 232 115 235 125 C 238 122 242 112 245 106 Z" fill="#D32F2F" />
+
+    <!-- Pirate Tricorn Hat with Skull and Crossbones -->
+    <g id="pirate-hat" transform="translate(282, 60)">
+      <path
+        d="M -50 35 C -45 5 -20 -15 0 -22 C 20 -15 45 5 50 35 C 25 28 0 30 -50 35 Z"
+        fill="#1E1E1E"
+        stroke="#0A0A0A"
+        stroke-width="3"
+      />
+      <path
+        d="M -52 35 C -25 45 25 45 52 35 C 35 25 -35 25 -52 35 Z"
+        fill="#2A2A2A"
+        stroke="#D4AF37"
+        stroke-width="2.5"
+      />
+      <g id="skull-crossbones" transform="translate(0, 10)">
+        <path d="M -14 -8 L 14 8 M -14 8 L 14 -8" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" />
+        <circle cx="-14" cy="-8" r="2" fill="#FFFFFF" />
+        <circle cx="14" cy="8" r="2" fill="#FFFFFF" />
+        <circle cx="-14" cy="8" r="2" fill="#FFFFFF" />
+        <circle cx="14" cy="-8" r="2" fill="#FFFFFF" />
+        <ellipse cx="0" cy="-2" rx="7" ry="6" fill="#FFFFFF" />
+        <rect x="-4" y="3" width="8" height="4" rx="1" fill="#FFFFFF" />
+        <circle cx="-2.5" cy="-2" r="1.5" fill="#1C1C1C" />
+        <circle cx="2.5" cy="-2" r="1.5" fill="#1C1C1C" />
+        <polygon points="0,-0.5 -1,1 1,1" fill="#1C1C1C" />
+      </g>
+    </g>
+
+    <!-- Snowman Scarf (Red & Green Striped) -->
+    <path d="M 245 150 C 255 142 295 142 305 150 C 310 156 305 168 290 168 C 275 168 250 168 245 158 Z" fill="#C62828" stroke="#111" stroke-width="2.5" />
+    <path d="M 255 146 L 253 166" stroke="#2E7D32" stroke-width="5" />
+    <path d="M 270 145 L 268 168" stroke="#2E7D32" stroke-width="5" />
+    <path d="M 285 146 L 283 167" stroke="#2E7D32" stroke-width="5" />
+    <path d="M 298 149 L 296 163" stroke="#2E7D32" stroke-width="5" />
+    <path d="M 250 160 C 248 180 245 205 242 215 C 250 217 262 217 268 214 C 265 195 260 175 258 160 Z" fill="#C62828" stroke="#111" stroke-width="2" />
+    <line x1="244" y1="180" x2="265" y2="180" stroke="#2E7D32" stroke-width="5" />
+    <line x1="243" y1="198" x2="266" y2="198" stroke="#2E7D32" stroke-width="5" />
+    <path d="M 242 215 L 241 223 M 248 216 L 248 225 M 255 216 L 255 225 M 262 215 L 263 224 M 268 214 L 270 222" stroke="#1A1A1A" stroke-width="2" />
+
+    <!-- RADARR SIGN IN SNOWMAN HANDS -->
+    <g transform="translate(295, 140)">
+      <rect x="0" y="0" width="75" height="75" rx="4" fill="#FFFFFF" stroke="#1C1C1C" stroke-width="3" filter="url(#pirateSoftShadow)" />
+      <circle cx="37.5" cy="32" r="19" fill="#232323" />
+      <circle cx="37.5" cy="32" r="12" fill="#FFFFFF" />
+      <circle cx="37.5" cy="32" r="9" fill="#232323" />
+      <polygon points="34,25 45,32 34,39" fill="#FFA000" />
+      <text x="37.5" y="62" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="900" fill="#1C1C1C" text-anchor="middle" letter-spacing="1">
+        RADARR
+      </text>
+      <circle cx="-2" cy="35" r="8" fill="#FFFFFF" stroke="#C8D6DF" stroke-width="2" />
+      <circle cx="77" cy="35" r="8" fill="#FFFFFF" stroke="#C8D6DF" stroke-width="2" />
+    </g>
+
+    <!-- POPCORN NETWORK CARDS (Hallmark, Lifetime, GAF, UPtv) -->
+    <!-- 1. Hallmark Card (Top Left, Ivory paper with Hallmark Red Crown & Script) -->
+    <g transform="translate(155, 128) rotate(-9)">
+      <rect x="0" y="0" width="45" height="58" rx="4" fill="#FFFDF5" stroke="#1A1A1A" stroke-width="2" filter="url(#pirateSoftShadow)" />
+      <!-- Hallmark 5-Point Crown -->
+      <g id="hallmark-crown" transform="translate(22.5, 16)">
+        <path d="M -13 6 L -15 -2 L -8 1 L 0 -7 L 8 1 L 15 -2 L 13 6 Z" fill="#BA1222" stroke="#8E0814" stroke-width="0.8" />
+        <path d="M -13 6 Q 0 8 13 6 Q 0 4 -13 6 Z" fill="#BA1222" />
+        <!-- Crown jewel dots -->
+        <circle cx="-15" cy="-2.5" r="1.5" fill="#BA1222" />
+        <circle cx="-8" cy="0.5" r="1.5" fill="#BA1222" />
+        <circle cx="0" cy="-7.5" r="1.8" fill="#BA1222" />
+        <circle cx="8" cy="0.5" r="1.5" fill="#BA1222" />
+        <circle cx="15" cy="-2.5" r="1.5" fill="#BA1222" />
+        <circle cx="-6" cy="6" r="1" fill="#FFFDF5" />
+        <circle cx="0" cy="6" r="1" fill="#FFFDF5" />
+        <circle cx="6" cy="6" r="1" fill="#FFFDF5" />
+      </g>
+      <!-- Hallmark Script Text -->
+      <text x="22.5" y="32" font-family="'Brush Script MT', 'Dancing Script', 'Snell Roundhand', 'Georgia', cursive, serif" font-size="11" font-weight="bold" font-style="italic" fill="#BA1222" text-anchor="middle">
+        Hallmark
+      </text>
+      <!-- Decorative festive holly in bottom-left corner of card -->
+      <g transform="translate(9, 46)">
+        <path d="M 0 0 C -3 -3 -5 1 -2 4 C -5 6 -2 8 1 7 C 4 8 7 5 5 2 C 7 -1 3 -3 0 0 Z" fill="#18633B" />
+        <circle cx="2" cy="3" r="1.4" fill="#BA1222" />
+        <circle cx="5" cy="4" r="1.2" fill="#BA1222" />
+      </g>
+    </g>
+
+    <!-- 2. Lifetime Card (Top Right, Bold Lifetime Red with White Wordmark) -->
+    <g transform="translate(202, 130) rotate(6)">
+      <rect x="0" y="0" width="46" height="54" rx="4" fill="#D31D24" stroke="#1A1A1A" stroke-width="2" filter="url(#pirateSoftShadow)" />
+      <!-- Subtle top inner highlight -->
+      <line x1="4" y1="4" x2="42" y2="4" stroke="#FF6B72" stroke-width="1.2" stroke-linecap="round" />
+      <!-- Lifetime Bold Wordmark -->
+      <text x="23" y="30" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="900" fill="#FFFFFF" text-anchor="middle" letter-spacing="0.2">
+        Lifetime
+      </text>
+    </g>
+
+    <!-- 3. GAF Card (Great American Family - Front Left, Deep Forest Green with White Pine Tree) -->
+    <g transform="translate(162, 168) rotate(-5)">
+      <rect x="0" y="0" width="47" height="52" rx="4" fill="#0E3D1F" stroke="#05190D" stroke-width="2.2" filter="url(#pirateSoftShadow)" />
+      <!-- GAF Text -->
+      <text x="23.5" y="18" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="900" fill="#FFFFFF" text-anchor="middle" letter-spacing="0.5">
+        GAF
+      </text>
+      <!-- Crisp White Christmas Tree Silhouette -->
+      <g id="gaf-tree" transform="translate(23.5, 23)">
+        <polygon points="0,0 -5,6 5,6" fill="#FFFFFF" />
+        <polygon points="0,4 -7,11 7,11" fill="#FFFFFF" />
+        <polygon points="0,9 -9,17 9,17" fill="#FFFFFF" />
+        <rect x="-2" y="17" width="4" height="4" fill="#FFFFFF" />
+      </g>
+    </g>
+
+    <!-- 4. UPtv Card (Front Right, Linen/Cream with Green Holiday Pine Tree & Ornaments) -->
+    <g transform="translate(216, 166) rotate(8)">
+      <rect x="0" y="0" width="46" height="52" rx="4" fill="#FAF8EE" stroke="#1A1A1A" stroke-width="2.2" filter="url(#pirateSoftShadow)" />
+      <!-- UPtv Text -->
+      <text x="23" y="18" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="900" fill="#0C2B18" text-anchor="middle" letter-spacing="-0.2">
+        UPtv
+      </text>
+      <!-- Green Christmas Pine Tree with Ornaments -->
+      <g id="uptv-tree" transform="translate(23, 23)">
+        <polygon points="0,0 -5,6 5,6" fill="#13542E" />
+        <polygon points="0,4 -7,11 7,11" fill="#13542E" />
+        <polygon points="0,9 -9,17 9,17" fill="#13542E" />
+        <rect x="-1.8" y="17" width="3.6" height="4" fill="#5A3A1B" />
+        <!-- Festive Red Ornaments on Tree -->
+        <circle cx="-3" cy="9" r="1.2" fill="#D32F2F" />
+        <circle cx="3.5" cy="13" r="1.2" fill="#D32F2F" />
+        <circle cx="-5" cy="15" r="1.2" fill="#D32F2F" />
+        <circle cx="0" cy="-1.5" r="1.5" fill="#FFA000" />
+      </g>
+    </g>
+
+    <!-- POPCORN BOWL WITH WHITE SNOWFLAKE EMBLEM -->
+    <g transform="translate(155, 195)">
+      <!-- Popcorn Kernels Clusters -->
+      <circle cx="25" cy="18" r="9" fill="#FFFDF0" stroke="#E5DEC9" stroke-width="1.5" />
+      <circle cx="28" cy="15" r="4.5" fill="#FDD835" />
+      <circle cx="38" cy="14" r="10" fill="#FFFDF0" stroke="#E5DEC9" stroke-width="1.5" />
+      <circle cx="40" cy="12" r="5" fill="#FDD835" />
+      <circle cx="56" cy="15" r="9" fill="#FFFDF0" stroke="#E5DEC9" stroke-width="1.5" />
+      <circle cx="54" cy="12" r="4" fill="#FBC02D" />
+      <circle cx="75" cy="16" r="9" fill="#FFFDF0" stroke="#E5DEC9" stroke-width="1.5" />
+      <circle cx="72" cy="14" r="4.5" fill="#FDD835" />
+      <circle cx="95" cy="18" r="9" fill="#FFFDF0" stroke="#E5DEC9" stroke-width="1.5" />
+      <circle cx="92" cy="15" r="4.5" fill="#FDD835" />
+      <circle cx="45" cy="6" r="10" fill="#FFFDF0" stroke="#E5DEC9" stroke-width="1.5" />
+      <circle cx="46" cy="4" r="5" fill="#FDD835" />
+      <circle cx="68" cy="7" r="9" fill="#FFFDF0" stroke="#E5DEC9" stroke-width="1.5" />
+
+      <!-- Red Ceramic Bowl -->
+      <path d="M 12 30 C 18 78 102 78 108 30 L 114 22 C 114 16 6 16 6 22 Z" fill="#D32F2F" stroke="#9A1B1B" stroke-width="3.5" />
+      <ellipse cx="60" cy="22" rx="54" ry="12" fill="#B71C1C" stroke="#7F0000" stroke-width="2" />
+
+      <!-- Popcorn spilling over rim -->
+      <circle cx="30" cy="24" r="7" fill="#FFFDF0" stroke="#E5DEC9" stroke-width="1" />
+      <circle cx="48" cy="22" r="8" fill="#FFFDF0" stroke="#E5DEC9" stroke-width="1" />
+      <circle cx="72" cy="23" r="7.5" fill="#FFFDF0" stroke="#E5DEC9" stroke-width="1" />
+      <circle cx="90" cy="25" r="6.5" fill="#FFFDF0" stroke="#E5DEC9" stroke-width="1" />
+
+      <!-- Snowflake Emblem on Front of Red Bowl -->
+      <g id="bowl-snowflake" transform="translate(56, 52)">
+        <line x1="0" y1="-14" x2="0" y2="14" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" />
+        <line x1="-12" y1="-7" x2="12" y2="7" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" />
+        <line x1="-12" y1="7" x2="12" y2="-7" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" />
+        <path d="M -4 -10 L 0 -7 L 4 -10" stroke="#FFFFFF" stroke-width="1.8" fill="none" stroke-linecap="round" />
+        <path d="M -4 10 L 0 7 L 4 10" stroke="#FFFFFF" stroke-width="1.8" fill="none" stroke-linecap="round" />
+        <path d="M -9 -2 L -6 -4 L -7 -8" stroke="#FFFFFF" stroke-width="1.8" fill="none" stroke-linecap="round" />
+        <path d="M 9 2 L 6 4 L 7 8" stroke="#FFFFFF" stroke-width="1.8" fill="none" stroke-linecap="round" />
+        <path d="M -9 2 L -6 4 L -7 8" stroke="#FFFFFF" stroke-width="1.8" fill="none" stroke-linecap="round" />
+        <path d="M 9 -2 L 6 -4 L 7 -8" stroke="#FFFFFF" stroke-width="1.8" fill="none" stroke-linecap="round" />
+        <circle cx="0" cy="0" r="2.5" fill="#FFFFFF" />
+      </g>
+
+      <!-- Festive Holly Sprig & Berries Beside Snowflake -->
+      <g id="bowl-holly" transform="translate(73, 58)">
+        <path d="M 0 0 C 4 -6 10 -4 9 2 C 12 5 8 9 2 8 Z" fill="#145A32" stroke="#0A331B" stroke-width="1" />
+        <path d="M 3 6 C 8 3 12 8 8 12 C 4 14 1 10 3 6 Z" fill="#1B6F3E" stroke="#0A331B" stroke-width="1" />
+        <circle cx="0" cy="4" r="2.8" fill="#E53935" stroke="#9A1B1B" stroke-width="0.8" />
+        <circle cx="4" cy="2" r="2.5" fill="#D32F2F" stroke="#9A1B1B" stroke-width="0.8" />
+        <circle cx="4" cy="7" r="2.2" fill="#E53935" stroke="#9A1B1B" stroke-width="0.8" />
+      </g>
+
+      <!-- Spilled Popcorn on Couch -->
+      <circle cx="0" cy="55" r="6" fill="#FFFDF0" stroke="#E5DEC9" stroke-width="1.5" />
+      <circle cx="120" cy="54" r="5.5" fill="#FFFDF0" stroke="#E5DEC9" stroke-width="1.5" />
+      <circle cx="126" cy="62" r="4.5" fill="#FFFDF0" stroke="#E5DEC9" stroke-width="1.5" />
+    </g>
+  </g>
+
+  <!-- RIGHT SIDE: TYPOGRAPHY & GOLDEN STARS -->
+  <g id="text-group" transform="translate(485, 5)">
+    <!-- THREE FESTIVE GOLDEN STARS ABOVE TITLE -->
+    <g transform="translate(170, 95) rotate(-15)">
+      <path d="M 0 -19 Q 2 -4 15 0 Q 2 4 0 19 Q -2 4 -15 0 Q -2 -4 0 -19 Z" fill="#F5B82E" stroke="#111" stroke-width="2.5" />
+      <circle cx="0" cy="0" r="2.5" fill="#FFF7C2" />
+    </g>
+
+    <g transform="translate(250, 72)">
+      <path d="M 0 -28 Q 3 -7 24 0 Q 3 7 0 28 Q -3 7 -24 0 Q -3 -7 0 -28 Z" fill="#F5B82E" stroke="#111" stroke-width="3" filter="url(#pirateGoldGlow)" />
+      <circle cx="0" cy="0" r="4" fill="#FFFBE6" />
+    </g>
+
+    <circle cx="295" cy="80" r="6" fill="#14462C" stroke="#082013" stroke-width="2" />
+
+    <g transform="translate(340, 90) rotate(12)">
+      <path d="M 0 -18 Q 2 -4 14 0 Q 2 4 0 18 Q -2 4 -14 0 Q -2 -4 0 -18 Z" fill="#F5B82E" stroke="#111" stroke-width="2.5" />
+      <circle cx="0" cy="0" r="2.5" fill="#FFF7C2" />
+    </g>
+
+    <circle cx="376" cy="98" r="5.5" fill="#C62828" stroke="#7A0000" stroke-width="2" />
+
+    <!-- MAIN LOGO TEXT: XmasDB.COM -->
+    <text
+      x="0"
+      y="185"
+      font-family="'Cinzel', 'Lora', 'Georgia', 'Times New Roman', serif"
+      font-size="92"
+      font-weight="700"
+      letter-spacing="-0.5"
+      fill="#D4AF37"
+      stroke="#0D0D0D"
+      stroke-width="14"
+      stroke-linejoin="round"
+      stroke-linecap="round"
+    >
+      XmasDB.COM
+    </text>
+
+    <text
+      x="0"
+      y="185"
+      font-family="'Cinzel', 'Lora', 'Georgia', 'Times New Roman', serif"
+      font-size="92"
+      font-weight="700"
+      letter-spacing="-0.5"
+      fill="#D4AF37"
+      stroke="#F5B82E"
+      stroke-width="7"
+      stroke-linejoin="round"
+    >
+      XmasDB.COM
+    </text>
+
+    <text
+      x="0"
+      y="185"
+      font-family="'Cinzel', 'Lora', 'Georgia', 'Times New Roman', serif"
+      font-size="92"
+      font-weight="700"
+      letter-spacing="-0.5"
+      fill="url(#pirateTextGreen)"
+    >
+      XmasDB.COM
+    </text>
+
+    <!-- FESTIVE PUFFY SNOW CAPS & ICICLE DRIPS ON XmasDB.COM -->
+    <g id="letter-snowcaps">
+      <!-- 1. Snow on X - Left Arm -->
+      <g id="snow-x-left">
+        <path d="M -8 118 C -10 108 -1 101 15 102 C 29 103 36 109 33 118 C 30 126 23 129 18 123 C 15 119 12 132 6 133 C 0 134 -2 125 -5 123 C -7 121 -8 125 -8 118 Z" fill="#C5DCEF" stroke="#09141F" stroke-width="2.2" stroke-linejoin="round" />
+        <path d="M -7 117 C -9 109 0 102 15 103 C 28 104 34 110 32 117 C 29 123 23 125 18 120 C 15 117 11 129 6 130 C 1 131 -1 123 -4 121 C -6 119 -7 122 -7 117 Z" fill="#FFFFFF" />
+        <path d="M -2 109 C 5 105 16 105 26 109" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" fill="none" />
+      </g>
+
+      <!-- 2. Snow on X - Right Arm -->
+      <g id="snow-x-right">
+        <path d="M 45 116 C 44 107 55 101 67 102 C 78 103 86 109 83 118 C 81 125 74 129 68 123 C 64 119 60 128 55 128 C 50 128 48 122 45 116 Z" fill="#C5DCEF" stroke="#09141F" stroke-width="2.2" stroke-linejoin="round" />
+        <path d="M 46 115 C 45 108 55 102 66 103 C 76 104 84 110 81 117 C 79 122 73 126 68 120 C 64 117 60 125 55 125 C 51 125 49 120 46 115 Z" fill="#FFFFFF" />
+        <path d="M 52 108 C 58 105 69 105 76 109" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" fill="none" />
+      </g>
+
+      <!-- 3. Snow on m -->
+      <g id="snow-m">
+        <path d="M 85 133 C 84 124 94 119 106 120 C 117 121 124 127 122 134 C 120 139 116 143 111 138 C 107 134 104 142 98 142 C 92 142 89 136 85 133 Z" fill="#C5DCEF" stroke="#09141F" stroke-width="2.2" stroke-linejoin="round" />
+        <path d="M 86 132 C 85 125 94 120 105 121 C 115 122 122 127 120 133 C 118 136 115 140 110 136 C 107 133 103 139 98 139 C 93 139 90 134 86 132 Z" fill="#FFFFFF" />
+
+        <path d="M 125 134 C 124 124 134 119 146 120 C 158 121 166 127 164 135 C 162 141 157 144 151 139 C 147 134 144 142 138 142 C 132 142 129 137 125 134 Z" fill="#C5DCEF" stroke="#09141F" stroke-width="2.2" stroke-linejoin="round" />
+        <path d="M 126 133 C 125 125 134 120 145 121 C 156 122 164 127 162 134 C 160 138 156 141 150 137 C 147 133 143 139 138 139 C 133 139 130 135 126 133 Z" fill="#FFFFFF" />
+      </g>
+
+      <!-- 4. Snow on a -->
+      <g id="snow-a">
+        <path d="M 172 134 C 171 125 181 120 193 120 C 205 121 214 127 212 135 C 210 141 205 143 200 138 C 195 133 191 141 185 141 C 179 141 176 137 172 134 Z" fill="#C5DCEF" stroke="#09141F" stroke-width="2.2" stroke-linejoin="round" />
+        <path d="M 173 133 C 172 126 181 121 192 121 C 203 122 212 127 210 134 C 208 138 204 140 199 136 C 195 132 191 138 185 138 C 180 138 177 135 173 133 Z" fill="#FFFFFF" />
+      </g>
+
+      <!-- 5. Snow on s -->
+      <g id="snow-s">
+        <path d="M 221 134 C 220 124 231 119 243 120 C 255 121 264 127 261 135 C 259 140 254 143 249 138 C 244 133 239 141 233 141 C 227 141 224 137 221 134 Z" fill="#C5DCEF" stroke="#09141F" stroke-width="2.2" stroke-linejoin="round" />
+        <path d="M 222 133 C 221 125 231 120 242 121 C 253 122 262 127 259 134 C 257 138 253 140 248 136 C 243 132 239 138 233 138 C 228 138 225 135 222 133 Z" fill="#FFFFFF" />
+      </g>
+
+      <!-- 6. Snow on D -->
+      <g id="snow-d">
+        <path d="M 264 117 C 263 103 282 97 308 98 C 330 99 351 105 348 118 C 346 127 338 135 332 127 C 327 121 322 132 312 133 C 304 134 299 125 292 123 C 286 122 281 136 273 135 C 267 134 265 125 264 117 Z" fill="#C5DCEF" stroke="#09141F" stroke-width="2.5" stroke-linejoin="round" />
+        <path d="M 266 116 C 265 105 283 99 307 100 C 328 101 347 106 345 117 C 343 124 336 131 331 125 C 326 119 321 129 312 129 C 304 130 299 123 293 121 C 287 119 282 132 274 131 C 268 130 267 123 266 116 Z" fill="#FFFFFF" />
+        <path d="M 275 106 C 290 102 315 103 336 109" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" fill="none" />
+      </g>
+
+      <!-- 7. Snow on B -->
+      <g id="snow-b">
+        <path d="M 350 117 C 349 104 366 97 390 98 C 410 99 426 105 424 118 C 422 127 415 133 409 126 C 404 121 398 131 390 131 C 383 131 379 123 373 122 C 367 121 363 133 357 133 C 352 133 350 125 350 117 Z" fill="#C5DCEF" stroke="#09141F" stroke-width="2.5" stroke-linejoin="round" />
+        <path d="M 352 116 C 351 106 367 99 389 100 C 408 101 423 106 421 117 C 419 124 413 129 408 124 C 403 119 398 128 390 128 C 383 128 379 121 373 120 C 368 119 364 129 358 129 C 354 129 352 123 352 116 Z" fill="#FFFFFF" />
+        <path d="M 362 106 C 375 102 395 103 413 109" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" fill="none" />
+      </g>
+
+      <!-- 8. Snow on Dot -->
+      <g id="snow-dot">
+        <path d="M 431 172 C 430 167 437 164 444 164 C 449 164 452 168 450 173 C 448 176 443 177 440 175 C 437 173 434 176 431 172 Z" fill="#C5DCEF" stroke="#09141F" stroke-width="1.8" stroke-linejoin="round" />
+        <path d="M 432 171 C 431 168 437 165 443 165 C 448 165 450 168 449 172 C 447 174 443 175 440 173 C 437 172 434 174 432 171 Z" fill="#FFFFFF" />
+      </g>
+
+      <!-- 9. Snow on C -->
+      <g id="snow-c">
+        <path d="M 454 118 C 452 104 472 97 494 98 C 514 99 528 106 526 119 C 524 127 517 132 511 126 C 506 121 500 131 492 131 C 484 131 480 123 474 122 C 468 121 465 133 459 133 C 455 133 454 125 454 118 Z" fill="#C5DCEF" stroke="#09141F" stroke-width="2.5" stroke-linejoin="round" />
+        <path d="M 456 117 C 454 106 473 99 493 100 C 512 101 525 107 523 118 C 521 124 515 129 510 124 C 505 119 500 128 492 128 C 484 128 480 121 474 120 C 469 119 466 129 460 129 C 457 129 456 123 456 117 Z" fill="#FFFFFF" />
+        <path d="M 466 106 C 480 102 500 103 517 109" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" fill="none" />
+      </g>
+
+      <!-- 10. Snow on O -->
+      <g id="snow-o">
+        <path d="M 536 118 C 534 104 553 97 571 98 C 590 99 604 106 602 119 C 600 127 594 132 588 126 C 583 121 578 131 570 131 C 563 131 559 123 553 122 C 548 121 545 133 540 133 C 537 133 536 125 536 118 Z" fill="#C5DCEF" stroke="#09141F" stroke-width="2.5" stroke-linejoin="round" />
+        <path d="M 538 117 C 536 106 554 99 570 100 C 588 101 601 107 599 118 C 597 124 592 129 587 124 C 582 119 578 128 570 128 C 563 128 559 121 553 120 C 549 119 546 129 541 129 C 538 129 538 123 538 117 Z" fill="#FFFFFF" />
+        <path d="M 546 106 C 559 102 577 103 593 109" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" fill="none" />
+      </g>
+
+      <!-- 11. Snow on M -->
+      <g id="snow-m-cap">
+        <path d="M 610 118 C 608 104 624 97 638 98 C 648 99 655 105 657 113 C 660 104 670 98 684 98 C 697 99 706 106 704 119 C 702 126 695 131 690 125 C 685 120 679 130 672 130 C 666 130 663 121 658 120 C 653 120 648 129 642 129 C 636 129 632 121 627 121 C 622 121 619 132 614 132 C 611 132 610 125 610 118 Z" fill="#C5DCEF" stroke="#09141F" stroke-width="2.5" stroke-linejoin="round" />
+        <path d="M 612 117 C 610 106 625 99 637 100 C 646 101 654 106 656 112 C 659 105 669 99 683 100 C 695 101 703 107 701 118 C 699 123 693 128 689 123 C 684 118 679 127 672 127 C 666 127 663 119 658 118 C 653 118 648 126 642 126 C 637 126 633 119 628 119 C 623 119 620 129 615 129 C 613 129 612 123 612 117 Z" fill="#FFFFFF" />
+        <path d="M 618 106 C 626 103 635 103 644 107" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" fill="none" />
+        <path d="M 668 106 C 678 103 689 103 698 108" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" fill="none" />
+      </g>
+    </g>
+
+    <!-- SUBTITLE: A curated collection of Christmas movies. (Crisp white with dark drop-shadow border) -->
+    <text
+      x="4"
+      y="236"
+      font-family="'Lora', 'Georgia', 'Times New Roman', serif"
+      font-size="34"
+      font-style="italic"
+      font-weight="700"
+      fill="#0A0A0A"
+      stroke="#0A0A0A"
+      stroke-width="7"
+      stroke-linejoin="round"
+      stroke-linecap="round"
+      letter-spacing="0.2"
+    >
+      A curated collection of Christmas movies.
+    </text>
+    <text
+      x="4"
+      y="236"
+      font-family="'Lora', 'Georgia', 'Times New Roman', serif"
+      font-size="34"
+      font-style="italic"
+      font-weight="700"
+      fill="#FFFFFF"
+      letter-spacing="0.2"
+    >
+      A curated collection of Christmas movies.
+    </text>
+  </g>
+</svg>

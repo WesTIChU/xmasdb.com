@@ -1,0 +1,3681 @@
+{
+  "traktSourceEntriesParsed": 216,
+  "uniqueMovieUrls": 216,
+  "additionalLifetimeCandidatesDiscovered": 0,
+  "totalUniqueCandidates": 216,
+  "successfullyResolvedToTmdb": 211,
+  "confirmedLifetime": 211,
+  "probableLifetime": 0,
+  "unverified": 5,
+  "rejected": 0,
+  "tmdbAmbiguous": 5,
+  "tmdbUnresolved": 5,
+  "existingBrandCollisions": 1,
+  "collisions": [
+    {
+      "title": "Hot Chocolate Holiday",
+      "tmdbId": 777405,
+      "existingBrand": "gaf"
+    }
+  ],
+  "candidates": [
+    {
+      "title": "Mom's Christmas Boyfriend",
+      "year": 2023,
+      "url": "https://app.trakt.tv/movies/mom-s-christmas-boyfriend-2023",
+      "slug": "mom-s-christmas-boyfriend-2023",
+      "tmdbId": 1183990,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/mom-s-christmas-boyfriend-2023",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Ladies of the '80s: A Divas Christmas",
+      "year": 2023,
+      "url": "https://app.trakt.tv/movies/ladies-of-the-80s-a-divas-christmas-2023",
+      "slug": "ladies-of-the-80s-a-divas-christmas-2023",
+      "tmdbId": 1187005,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/ladies-of-the-80s-a-divas-christmas-2023",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Laughing All the Way",
+      "year": 2023,
+      "url": "https://app.trakt.tv/movies/laughing-all-the-way-2023",
+      "slug": "laughing-all-the-way-2023",
+      "tmdbId": 1187021,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/laughing-all-the-way-2023",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Christmas at the Chalet",
+      "year": 2023,
+      "url": "https://app.trakt.tv/movies/christmas-at-the-chalet-2023",
+      "slug": "christmas-at-the-chalet-2023",
+      "tmdbId": 1173912,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/christmas-at-the-chalet-2023",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "The Holiday Dating Guide",
+      "year": 2022,
+      "url": "https://app.trakt.tv/movies/the-holiday-dating-guide-2022",
+      "slug": "the-holiday-dating-guide-2022",
+      "tmdbId": 1031072,
+      "evidence": [
+        {
+          "source": "official Lifetime movie page",
+          "url": "https://www.mylifetime.com/movies/the-holiday-dating-guide",
+          "detail": "Official page contains Christmas/holiday metadata"
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "A Christmas to Treasure",
+      "year": 2022,
+      "url": "https://app.trakt.tv/movies/a-christmas-to-treasure-2022",
+      "slug": "a-christmas-to-treasure-2022",
+      "tmdbId": 1017494,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/a-christmas-to-treasure-2022",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Record Breaking Christmas",
+      "year": 2022,
+      "url": "https://app.trakt.tv/movies/record-breaking-christmas-2022",
+      "slug": "record-breaking-christmas-2022",
+      "tmdbId": 1031080,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/record-breaking-christmas-2022",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Kirk Franklin's The Night Before Christmas",
+      "year": 2022,
+      "url": "https://app.trakt.tv/movies/kirk-franklin-s-the-night-before-christmas-2022",
+      "slug": "kirk-franklin-s-the-night-before-christmas-2022",
+      "tmdbId": 1020473,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/kirk-franklin-s-the-night-before-christmas-2022",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Christmas à la Carte",
+      "year": 2021,
+      "url": "https://app.trakt.tv/movies/christmas-a-la-carte-2021",
+      "slug": "christmas-a-la-carte-2021",
+      "tmdbId": 844869,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/christmas-a-la-carte-2021",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Scentsational Christmas",
+      "year": 2022,
+      "url": "https://app.trakt.tv/movies/scentsational-christmas-2022",
+      "slug": "scentsational-christmas-2022",
+      "tmdbId": 975288,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/scentsational-christmas-2022",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Merry Textmas",
+      "year": 2022,
+      "url": "https://app.trakt.tv/movies/merry-textmas-2022",
+      "slug": "merry-textmas-2022",
+      "tmdbId": 1031165,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/merry-textmas-2022",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "A New Orleans Noel",
+      "year": 2022,
+      "url": "https://app.trakt.tv/movies/a-new-orleans-noel-2022",
+      "slug": "a-new-orleans-noel-2022",
+      "tmdbId": 1031039,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/a-new-orleans-noel-2022",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Mistletoe Match",
+      "year": 2022,
+      "url": "https://app.trakt.tv/movies/mistletoe-match-2022",
+      "slug": "mistletoe-match-2022",
+      "tmdbId": 1003469,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/mistletoe-match-2022",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Sit. Stay. Love.",
+      "year": 2021,
+      "url": "https://app.trakt.tv/movies/sit-stay-love-2021",
+      "slug": "sit-stay-love-2021",
+      "tmdbId": 786556,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/sit-stay-love-2021",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Cloudy with a Chance of Christmas",
+      "year": 2022,
+      "url": "https://app.trakt.tv/movies/cloudy-with-a-chance-of-christmas-2022",
+      "slug": "cloudy-with-a-chance-of-christmas-2022",
+      "tmdbId": 1012608,
+      "evidence": [
+        {
+          "source": "official Lifetime movie page",
+          "url": "https://www.mylifetime.com/movies/cloudy-with-a-chance-of-christmas",
+          "detail": "Official page contains Christmas/holiday metadata"
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Loving Christmas",
+      "year": 2022,
+      "url": "https://app.trakt.tv/movies/loving-christmas-2022",
+      "slug": "loving-christmas-2022",
+      "tmdbId": 826451,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/loving-christmas-2022",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "A Christmas Spark",
+      "year": 2022,
+      "url": "https://app.trakt.tv/movies/a-christmas-spark-2022",
+      "slug": "a-christmas-spark-2022",
+      "tmdbId": 1030969,
+      "evidence": [
+        {
+          "source": "official Lifetime movie page",
+          "url": "https://www.mylifetime.com/movies/a-christmas-spark",
+          "detail": "Official page contains Christmas/holiday metadata"
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Single and Ready to Jingle",
+      "year": 2022,
+      "url": "https://app.trakt.tv/movies/single-and-ready-to-jingle-2022",
+      "slug": "single-and-ready-to-jingle-2022",
+      "tmdbId": 1003487,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/single-and-ready-to-jingle-2022",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "The 12 Days of Christmas Eve",
+      "year": 2022,
+      "url": "https://app.trakt.tv/movies/the-12-days-of-christmas-eve-2022",
+      "slug": "the-12-days-of-christmas-eve-2022",
+      "tmdbId": 1034168,
+      "evidence": [
+        {
+          "source": "official Lifetime movie page",
+          "url": "https://www.mylifetime.com/movies/the-12-days-of-christmas-eve",
+          "detail": "Official page contains Christmas/holiday metadata"
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Steppin' into the Holiday",
+      "year": 2022,
+      "url": "https://app.trakt.tv/movies/steppin-into-the-holiday-2022",
+      "slug": "steppin-into-the-holiday-2022",
+      "tmdbId": 1031046,
+      "evidence": [
+        {
+          "source": "official Lifetime movie page",
+          "url": "https://www.mylifetime.com/movies/steppin-into-the-holiday",
+          "detail": "Official page contains Christmas/holiday metadata"
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Baking All the Way",
+      "year": 2022,
+      "url": "https://app.trakt.tv/movies/baking-all-the-way-2022",
+      "slug": "baking-all-the-way-2022",
+      "tmdbId": 1031091,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/baking-all-the-way-2022",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "A Show-Stopping Christmas",
+      "year": 2022,
+      "url": "https://app.trakt.tv/movies/a-show-stopping-christmas-2022",
+      "slug": "a-show-stopping-christmas-2022",
+      "tmdbId": 910816,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/a-show-stopping-christmas-2022",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Santa Bootcamp",
+      "year": 2022,
+      "url": "https://app.trakt.tv/movies/santa-bootcamp-2022",
+      "slug": "santa-bootcamp-2022",
+      "tmdbId": 1012286,
+      "evidence": [
+        {
+          "source": "official Lifetime Christmas hub",
+          "url": "https://www.mylifetime.com/movies/santa-bootcamp/exclusives/rita-moreno-interview",
+          "detail": "Catch Up With Lifetime Christmas Movie Stars"
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "A Country Christmas Harmony",
+      "year": 2022,
+      "url": "https://app.trakt.tv/movies/a-country-christmas-harmony-2022",
+      "slug": "a-country-christmas-harmony-2022",
+      "tmdbId": 996771,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/a-country-christmas-harmony-2022",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Sweet Navidad",
+      "year": 2021,
+      "url": "https://app.trakt.tv/movies/sweet-navidad-2021",
+      "slug": "sweet-navidad-2021",
+      "tmdbId": 910760,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/sweet-navidad-2021",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Planes, Trains, and Christmas Trees",
+      "year": 2022,
+      "url": "https://app.trakt.tv/movies/planes-trains-and-christmas-trees-2022",
+      "slug": "planes-trains-and-christmas-trees-2022",
+      "tmdbId": 988428,
+      "evidence": [
+        {
+          "source": "official Lifetime movie page",
+          "url": "https://www.mylifetime.com/movies/planes-trains-and-christmas-trees",
+          "detail": "Official page contains Christmas/holiday metadata"
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Christmas Plus One",
+      "year": 2022,
+      "url": "https://app.trakt.tv/movies/christmas-plus-one-2022",
+      "slug": "christmas-plus-one-2022",
+      "tmdbId": 993030,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/christmas-plus-one-2022",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Six Degrees of Santa",
+      "year": 2022,
+      "url": "https://app.trakt.tv/movies/six-degrees-of-santa-2022",
+      "slug": "six-degrees-of-santa-2022",
+      "tmdbId": 1008366,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/six-degrees-of-santa-2022",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Reindeer Games Homecoming",
+      "year": 2022,
+      "url": "https://app.trakt.tv/movies/reindeer-games-homecoming-2022",
+      "slug": "reindeer-games-homecoming-2022",
+      "tmdbId": 1012288,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/reindeer-games-homecoming-2022",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Christmas on Mistletoe Lake",
+      "year": 2022,
+      "url": "https://app.trakt.tv/movies/christmas-on-mistletoe-lake-2022",
+      "slug": "christmas-on-mistletoe-lake-2022",
+      "tmdbId": 962589,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/christmas-on-mistletoe-lake-2022",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Well Suited For Christmas",
+      "year": 2022,
+      "url": "https://app.trakt.tv/movies/well-suited-for-christmas-2022",
+      "slug": "well-suited-for-christmas-2022",
+      "tmdbId": 1029354,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/well-suited-for-christmas-2022",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Merry Swissmas",
+      "year": 2022,
+      "url": "https://app.trakt.tv/movies/merry-swissmas-2022",
+      "slug": "merry-swissmas-2022",
+      "tmdbId": 1012042,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/merry-swissmas-2022",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Writing Around the Christmas Tree",
+      "year": 2021,
+      "url": "https://app.trakt.tv/movies/writing-around-the-christmas-tree-2021",
+      "slug": "writing-around-the-christmas-tree-2021",
+      "tmdbId": 883884,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/writing-around-the-christmas-tree-2021",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Baking Spirits Bright",
+      "year": 2021,
+      "url": "https://app.trakt.tv/movies/baking-spirits-bright-2021",
+      "slug": "baking-spirits-bright-2021",
+      "tmdbId": 874199,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/baking-spirits-bright-2021",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Toying with the Holidays",
+      "year": 2021,
+      "url": "https://app.trakt.tv/movies/toying-with-the-holidays-2021",
+      "slug": "toying-with-the-holidays-2021",
+      "tmdbId": 878384,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/toying-with-the-holidays-2021",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Candy Cane Candidate",
+      "year": 2021,
+      "url": "https://app.trakt.tv/movies/candy-cane-candidate-2021",
+      "slug": "candy-cane-candidate-2021",
+      "tmdbId": 879170,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/candy-cane-candidate-2021",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Hot Chocolate Holiday",
+      "year": 2021,
+      "url": "https://app.trakt.tv/movies/hot-chocolate-holiday-2021",
+      "slug": "hot-chocolate-holiday-2021",
+      "tmdbId": 777405,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/hot-chocolate-holiday-2021",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed Lifetime candidate retained as an existing cross-brand collision; not imported."
+    },
+    {
+      "title": "Dancing Through the Snow",
+      "year": 2021,
+      "url": "https://app.trakt.tv/movies/dancing-through-the-snow-2021",
+      "slug": "dancing-through-the-snow-2021",
+      "tmdbId": 879111,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/dancing-through-the-snow-2021",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Rebuilding a Dream Christmas",
+      "year": 2021,
+      "url": "https://app.trakt.tv/movies/rebuilding-a-dream-christmas-2021",
+      "slug": "rebuilding-a-dream-christmas-2021",
+      "tmdbId": 770593,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/rebuilding-a-dream-christmas-2021",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "An Ice Wine Christmas",
+      "year": 2021,
+      "url": "https://app.trakt.tv/movies/an-ice-wine-christmas-2021",
+      "slug": "an-ice-wine-christmas-2021",
+      "tmdbId": 879227,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/an-ice-wine-christmas-2021",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "The Christmas Ball",
+      "year": 2020,
+      "url": "https://app.trakt.tv/movies/the-christmas-ball-2020",
+      "slug": "the-christmas-ball-2020",
+      "tmdbId": 734274,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/the-christmas-ball-2020",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Merry Liddle Christmas Baby",
+      "year": 2021,
+      "url": "https://app.trakt.tv/movies/merry-liddle-christmas-baby-2021",
+      "slug": "merry-liddle-christmas-baby-2021",
+      "tmdbId": 880545,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/merry-liddle-christmas-baby-2021",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Under the Christmas Tree",
+      "year": 2021,
+      "url": "https://app.trakt.tv/movies/under-the-christmas-tree-2021",
+      "slug": "under-the-christmas-tree-2021",
+      "tmdbId": 883936,
+      "evidence": [
+        {
+          "source": "official Lifetime movie page",
+          "url": "https://www.mylifetime.com/movies/under-the-christmas-tree",
+          "detail": "Official page contains Christmas/holiday metadata"
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "My Favorite Christmas Melody",
+      "year": 2021,
+      "url": "https://app.trakt.tv/movies/my-favorite-christmas-melody-2021",
+      "slug": "my-favorite-christmas-melody-2021",
+      "tmdbId": 881087,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/my-favorite-christmas-melody-2021",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Mistletoe in Montana",
+      "year": 2021,
+      "url": "https://app.trakt.tv/movies/mistletoe-in-montana-2021",
+      "slug": "mistletoe-in-montana-2021",
+      "tmdbId": 881857,
+      "evidence": [
+        {
+          "source": "official Lifetime Christmas hub",
+          "url": "https://www.mylifetime.com/movies/mistletoe-in-montana/exclusives/melissa-joan-hart-interview-montana",
+          "detail": "Catch Up With Lifetime Christmas Movie Stars"
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Match Made in Mistletoe",
+      "year": 2021,
+      "url": "https://app.trakt.tv/movies/match-made-in-mistletoe-2021",
+      "slug": "match-made-in-mistletoe-2021",
+      "tmdbId": 854199,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/match-made-in-mistletoe-2021",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "The Enchanted Christmas Cake",
+      "year": 2021,
+      "url": "https://app.trakt.tv/movies/the-enchanted-christmas-cake-2021",
+      "slug": "the-enchanted-christmas-cake-2021",
+      "tmdbId": 881853,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/the-enchanted-christmas-cake-2021",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Ghosts of Christmas Past",
+      "year": 2021,
+      "url": "https://app.trakt.tv/movies/ghosts-of-christmas-past-2021",
+      "slug": "ghosts-of-christmas-past-2021",
+      "tmdbId": 883951,
+      "evidence": [
+        {
+          "source": "official Lifetime movie page",
+          "url": "https://www.mylifetime.com/movies/ghosts-of-christmas-past",
+          "detail": "Official page contains Christmas/holiday metadata"
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Maps and Mistletoe",
+      "year": 2021,
+      "url": "https://app.trakt.tv/movies/maps-and-mistletoe-2021",
+      "slug": "maps-and-mistletoe-2021",
+      "tmdbId": 883955,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/maps-and-mistletoe-2021",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Blending Christmas",
+      "year": 2021,
+      "url": "https://app.trakt.tv/movies/blending-christmas-2021",
+      "slug": "blending-christmas-2021",
+      "tmdbId": 881246,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/blending-christmas-2021",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "The Holiday Fix Up",
+      "year": 2021,
+      "url": "https://app.trakt.tv/movies/the-holiday-fix-up-2021",
+      "slug": "the-holiday-fix-up-2021",
+      "tmdbId": 881245,
+      "evidence": [
+        {
+          "source": "official Lifetime Christmas hub",
+          "url": "https://www.mylifetime.com/movies/the-holiday-fix-up/interactives/jana-kramer-interview",
+          "detail": "Catch Up With Lifetime Christmas Movie Stars"
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Candy Cane Christmas",
+      "year": 2020,
+      "url": "https://app.trakt.tv/movies/candy-cane-christmas-2020",
+      "slug": "candy-cane-christmas-2020",
+      "tmdbId": 724425,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/candy-cane-christmas-2020",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Holiday in Santa Fe",
+      "year": 2021,
+      "url": "https://app.trakt.tv/movies/holiday-in-santa-fe-2021",
+      "slug": "holiday-in-santa-fe-2021",
+      "tmdbId": 881239,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/holiday-in-santa-fe-2021",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "A Fiancé for Christmas",
+      "year": 2021,
+      "url": "https://app.trakt.tv/movies/a-fiance-for-christmas-2021",
+      "slug": "a-fiance-for-christmas-2021",
+      "tmdbId": 881233,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/a-fiance-for-christmas-2021",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Christmas with a Crown",
+      "year": 2020,
+      "url": "https://app.trakt.tv/movies/christmas-with-a-crown-2020",
+      "slug": "christmas-with-a-crown-2020",
+      "tmdbId": 757771,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/christmas-with-a-crown-2020",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Saying Yes to Christmas",
+      "year": 2021,
+      "url": "https://app.trakt.tv/movies/saying-yes-to-christmas-2021",
+      "slug": "saying-yes-to-christmas-2021",
+      "tmdbId": 880934,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/saying-yes-to-christmas-2021",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Christmas Movie Magic",
+      "year": 2021,
+      "url": "https://app.trakt.tv/movies/christmas-movie-magic-2021",
+      "slug": "christmas-movie-magic-2021",
+      "tmdbId": 880595,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/christmas-movie-magic-2021",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Spotlight on Christmas",
+      "year": 2020,
+      "url": "https://app.trakt.tv/movies/spotlight-on-christmas-2020",
+      "slug": "spotlight-on-christmas-2020",
+      "tmdbId": 744945,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/spotlight-on-christmas-2020",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Kirk Franklin's A Gospel Christmas",
+      "year": 2021,
+      "url": "https://app.trakt.tv/movies/kirk-franklin-s-a-gospel-christmas-2021",
+      "slug": "kirk-franklin-s-a-gospel-christmas-2021",
+      "tmdbId": 881077,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/kirk-franklin-s-a-gospel-christmas-2021",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "It Takes a Christmas Village",
+      "year": 2021,
+      "url": "https://app.trakt.tv/movies/it-takes-a-christmas-village-2021",
+      "slug": "it-takes-a-christmas-village-2021",
+      "tmdbId": 874252,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/it-takes-a-christmas-village-2021",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Miracle in Motor City",
+      "year": 2021,
+      "url": "https://app.trakt.tv/movies/miracle-in-motor-city-2021",
+      "slug": "miracle-in-motor-city-2021",
+      "tmdbId": 880550,
+      "evidence": [
+        {
+          "source": "official Lifetime movie page",
+          "url": "https://www.mylifetime.com/movies/miracle-in-motor-city",
+          "detail": "Official page contains Christmas/holiday metadata"
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "A Christmas Dance Reunion",
+      "year": 2021,
+      "url": "https://app.trakt.tv/movies/a-christmas-dance-reunion-2021",
+      "slug": "a-christmas-dance-reunion-2021",
+      "tmdbId": 832128,
+      "evidence": [
+        {
+          "source": "official Lifetime Christmas hub",
+          "url": "https://www.mylifetime.com/movies/a-christmas-dance-reunion/exclusives/corbin-bleu-monique-coleman-interview",
+          "detail": "Catch Up With Lifetime Christmas Movie Stars"
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Inn Love by Christmas",
+      "year": 2020,
+      "url": "https://app.trakt.tv/movies/inn-love-by-christmas-2020",
+      "slug": "inn-love-by-christmas-2020",
+      "tmdbId": 744950,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/inn-love-by-christmas-2020",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Falling in Love at Christmas",
+      "year": 2021,
+      "url": "https://app.trakt.tv/movies/falling-in-love-at-christmas-2021",
+      "slug": "falling-in-love-at-christmas-2021",
+      "tmdbId": 838189,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/falling-in-love-at-christmas-2021",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Welcome to the Christmas Family Reunion",
+      "year": 2021,
+      "url": "https://app.trakt.tv/movies/welcome-to-the-christmas-family-reunion-2021",
+      "slug": "welcome-to-the-christmas-family-reunion-2021",
+      "tmdbId": 880554,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/welcome-to-the-christmas-family-reunion-2021",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Christmas in Tune",
+      "year": 2021,
+      "url": "https://app.trakt.tv/movies/christmas-in-tune-2021",
+      "slug": "christmas-in-tune-2021",
+      "tmdbId": 880536,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/christmas-in-tune-2021",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "A Christmas to Savour",
+      "year": 2021,
+      "url": "https://app.trakt.tv/movies/a-christmas-to-savour-2021",
+      "slug": "a-christmas-to-savour-2021",
+      "tmdbId": 844819,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/a-christmas-to-savour-2021",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Homemade Christmas",
+      "year": 2020,
+      "url": "https://app.trakt.tv/movies/homemade-christmas-2020",
+      "slug": "homemade-christmas-2020",
+      "tmdbId": 744940,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/homemade-christmas-2020",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "A Picture Perfect Holiday",
+      "year": 2021,
+      "url": "https://app.trakt.tv/movies/a-picture-perfect-holiday-2021",
+      "slug": "a-picture-perfect-holiday-2021",
+      "tmdbId": 879229,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/a-picture-perfect-holiday-2021",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Christmas by Chance",
+      "year": 2021,
+      "url": "https://app.trakt.tv/movies/christmas-by-chance-2021",
+      "slug": "christmas-by-chance-2021",
+      "tmdbId": 774260,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/christmas-by-chance-2021",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "My Sweet Holiday",
+      "year": 2020,
+      "url": "https://app.trakt.tv/movies/my-sweet-holiday-2020",
+      "slug": "my-sweet-holiday-2020",
+      "tmdbId": 767350,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/my-sweet-holiday-2020",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "The Christmas High Note",
+      "year": 2020,
+      "url": "https://app.trakt.tv/movies/the-christmas-high-note-2020",
+      "slug": "the-christmas-high-note-2020",
+      "tmdbId": 657043,
+      "evidence": [
+        {
+          "source": "official Lifetime movie page",
+          "url": "https://www.mylifetime.com/movies/the-christmas-high-note",
+          "detail": "Official page contains Christmas/holiday metadata"
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "A Christmas Break",
+      "year": 2020,
+      "url": "https://app.trakt.tv/movies/a-christmas-break-2020",
+      "slug": "a-christmas-break-2020",
+      "tmdbId": 744958,
+      "evidence": [
+        {
+          "source": "official Lifetime movie page",
+          "url": "https://www.mylifetime.com/movies/a-christmas-break",
+          "detail": "Official page contains Christmas/holiday metadata"
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "A Christmas Exchange",
+      "year": 2020,
+      "url": "https://app.trakt.tv/movies/a-christmas-exchange-2020",
+      "slug": "a-christmas-exchange-2020",
+      "tmdbId": 744957,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/a-christmas-exchange-2020",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "A Sugar & Spice Holiday",
+      "year": 2020,
+      "url": "https://app.trakt.tv/movies/a-sugar-spice-holiday-2020",
+      "slug": "a-sugar-spice-holiday-2020",
+      "tmdbId": 743403,
+      "evidence": [
+        {
+          "source": "official Lifetime Christmas hub",
+          "url": "https://www.mylifetime.com/movies/a-sugar-spice-holiday/articles/jacky-lai-sugar-and-spice-holiday-interview-2",
+          "detail": "Catch Up With Lifetime Christmas Movie Stars"
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "The Christmas Setup",
+      "year": 2020,
+      "url": "https://app.trakt.tv/movies/the-christmas-setup-2020",
+      "slug": "the-christmas-setup-2020",
+      "tmdbId": 744952,
+      "evidence": [
+        {
+          "source": "official Lifetime Christmas hub",
+          "url": "https://www.mylifetime.com/movies/the-christmas-setup/articles/ben-lewis-blake-lee-the-christmas-setup-interview",
+          "detail": "Catch Up With Lifetime Christmas Movie Stars"
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Christmas on the Menu",
+      "year": 2020,
+      "url": "https://app.trakt.tv/movies/christmas-on-the-menu-2020",
+      "slug": "christmas-on-the-menu-2020",
+      "tmdbId": 744955,
+      "evidence": [
+        {
+          "source": "official Lifetime movie page",
+          "url": "https://www.mylifetime.com/movies/christmas-on-the-menu",
+          "detail": "Official page contains Christmas/holiday metadata"
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Christmas at Maple Creek",
+      "year": 2020,
+      "url": "https://app.trakt.tv/movies/christmas-at-maple-creek-2020",
+      "slug": "christmas-at-maple-creek-2020",
+      "tmdbId": 749546,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/christmas-at-maple-creek-2020",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Lonestar Christmas",
+      "year": 2020,
+      "url": "https://app.trakt.tv/movies/lonestar-christmas-2020",
+      "slug": "lonestar-christmas-2020",
+      "tmdbId": 744954,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/lonestar-christmas-2020",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "The Christmas Aunt",
+      "year": 2020,
+      "url": "https://app.trakt.tv/movies/the-christmas-aunt-2020",
+      "slug": "the-christmas-aunt-2020",
+      "tmdbId": 744929,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/the-christmas-aunt-2020",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Christmas Ever After",
+      "year": 2020,
+      "url": "https://app.trakt.tv/movies/christmas-ever-after-2020",
+      "slug": "christmas-ever-after-2020",
+      "tmdbId": 744948,
+      "evidence": [
+        {
+          "source": "official Lifetime movie page",
+          "url": "https://www.mylifetime.com/movies/christmas-ever-after",
+          "detail": "Official page contains Christmas/holiday metadata"
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "A Christmas Mission",
+      "year": 2020,
+      "url": "https://app.trakt.tv/movies/a-christmas-mission-2020",
+      "slug": "a-christmas-mission-2020",
+      "tmdbId": 777058,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/a-christmas-mission-2020",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "The Santa Squad",
+      "year": 2020,
+      "url": "https://app.trakt.tv/movies/the-santa-squad-2020",
+      "slug": "the-santa-squad-2020",
+      "tmdbId": 744949,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/the-santa-squad-2020",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Let's Meet Again on Christmas Eve",
+      "year": 2020,
+      "url": "https://app.trakt.tv/movies/let-s-meet-again-on-christmas-eve-2020",
+      "slug": "let-s-meet-again-on-christmas-eve-2020",
+      "tmdbId": 744947,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/let-s-meet-again-on-christmas-eve-2020",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Christmas Unwrapped",
+      "year": 2020,
+      "url": "https://app.trakt.tv/movies/christmas-unwrapped-2020",
+      "slug": "christmas-unwrapped-2020",
+      "tmdbId": 734278,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/christmas-unwrapped-2020",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "The Christmas Listing",
+      "year": 2020,
+      "url": "https://app.trakt.tv/movies/the-christmas-listing-2020",
+      "slug": "the-christmas-listing-2020",
+      "tmdbId": 744944,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/the-christmas-listing-2020",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Once Upon a Main Street",
+      "year": 2020,
+      "url": "https://app.trakt.tv/movies/once-upon-a-main-street-2020",
+      "slug": "once-upon-a-main-street-2020",
+      "tmdbId": 744943,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/once-upon-a-main-street-2020",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "The Christmas Yule Blog",
+      "year": 2020,
+      "url": "https://app.trakt.tv/movies/the-christmas-yule-blog-2020",
+      "slug": "the-christmas-yule-blog-2020",
+      "tmdbId": 744930,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/the-christmas-yule-blog-2020",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Merry Liddle Christmas Wedding",
+      "year": 2020,
+      "url": "https://app.trakt.tv/movies/merry-liddle-christmas-wedding-2020",
+      "slug": "merry-liddle-christmas-wedding-2020",
+      "tmdbId": 744942,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/merry-liddle-christmas-wedding-2020",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Dear Christmas",
+      "year": 2020,
+      "url": "https://app.trakt.tv/movies/dear-christmas-2020",
+      "slug": "dear-christmas-2020",
+      "tmdbId": 744941,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/dear-christmas-2020",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Sweet Mountain Christmas",
+      "year": 2019,
+      "url": "https://app.trakt.tv/movies/sweet-mountain-christmas-2019",
+      "slug": "sweet-mountain-christmas-2019",
+      "tmdbId": 627465,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/sweet-mountain-christmas-2019",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Feliz NaviDAD",
+      "year": 2020,
+      "url": "https://app.trakt.tv/movies/feliz-navidad-2020",
+      "slug": "feliz-navidad-2020",
+      "tmdbId": 744939,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/feliz-navidad-2020",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "A Taste of Christmas",
+      "year": 2020,
+      "url": "https://app.trakt.tv/movies/a-taste-of-christmas-2020",
+      "slug": "a-taste-of-christmas-2020",
+      "tmdbId": 744938,
+      "evidence": [
+        {
+          "source": "official Lifetime movie page",
+          "url": "https://www.mylifetime.com/movies/a-taste-of-christmas",
+          "detail": "Official page contains Christmas/holiday metadata"
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "The Christmas Edition",
+      "year": 2020,
+      "url": "https://app.trakt.tv/movies/the-christmas-edition-2020",
+      "slug": "the-christmas-edition-2020",
+      "tmdbId": 744937,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/the-christmas-edition-2020",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Christmas on Wheels",
+      "year": 2020,
+      "url": "https://app.trakt.tv/movies/christmas-on-wheels-2020",
+      "slug": "christmas-on-wheels-2020",
+      "tmdbId": 744936,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/christmas-on-wheels-2020",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Christmas on the Vine",
+      "year": 2020,
+      "url": "https://app.trakt.tv/movies/christmas-on-the-vine-2020",
+      "slug": "christmas-on-the-vine-2020",
+      "tmdbId": 744935,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/christmas-on-the-vine-2020",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Too Close for Christmas",
+      "year": 2020,
+      "url": "https://app.trakt.tv/movies/too-close-for-christmas-2020",
+      "slug": "too-close-for-christmas-2020",
+      "tmdbId": 764104,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/too-close-for-christmas-2020",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "A Very Charming Christmas Town",
+      "year": 2020,
+      "url": "https://app.trakt.tv/movies/a-very-charming-christmas-town-2020",
+      "slug": "a-very-charming-christmas-town-2020",
+      "tmdbId": 744933,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/a-very-charming-christmas-town-2020",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "A Welcome Home Christmas",
+      "year": 2020,
+      "url": "https://app.trakt.tv/movies/a-welcome-home-christmas-2020",
+      "slug": "a-welcome-home-christmas-2020",
+      "tmdbId": 744931,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/a-welcome-home-christmas-2020",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "The Magical Christmas Shoes",
+      "year": 2019,
+      "url": "https://app.trakt.tv/movies/the-magical-christmas-shoes-2019",
+      "slug": "the-magical-christmas-shoes-2019",
+      "tmdbId": 627469,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/the-magical-christmas-shoes-2019",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "A Crafty Christmas Romance",
+      "year": 2020,
+      "url": "https://app.trakt.tv/movies/a-crafty-christmas-romance-2020",
+      "slug": "a-crafty-christmas-romance-2020",
+      "tmdbId": 744927,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/a-crafty-christmas-romance-2020",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Christmas on Ice",
+      "year": 2020,
+      "url": "https://app.trakt.tv/movies/christmas-on-ice-2020",
+      "slug": "christmas-on-ice-2020",
+      "tmdbId": 744925,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/christmas-on-ice-2020",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "A Sweet Christmas Romance",
+      "year": 2019,
+      "url": "https://app.trakt.tv/movies/a-sweet-christmas-romance-2019",
+      "slug": "a-sweet-christmas-romance-2019",
+      "tmdbId": 627467,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/a-sweet-christmas-romance-2019",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "A Date by Christmas Eve",
+      "year": 2019,
+      "url": "https://app.trakt.tv/movies/a-date-by-christmas-eve-2019",
+      "slug": "a-date-by-christmas-eve-2019",
+      "tmdbId": 637402,
+      "evidence": [
+        {
+          "source": "official Lifetime movie page",
+          "url": "https://www.mylifetime.com/movies/a-date-by-christmas-eve",
+          "detail": "Official page contains Christmas/holiday metadata"
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Christmas Hotel",
+      "year": 2019,
+      "url": "https://app.trakt.tv/movies/christmas-hotel-2019",
+      "slug": "christmas-hotel-2019",
+      "tmdbId": 627487,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/christmas-hotel-2019",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Christmas Love Letter",
+      "year": 2019,
+      "url": "https://app.trakt.tv/movies/christmas-love-letter-2019",
+      "slug": "christmas-love-letter-2019",
+      "tmdbId": 639424,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/christmas-love-letter-2019",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Christmas Unleashed",
+      "year": 2019,
+      "url": "https://app.trakt.tv/movies/christmas-unleashed-2019",
+      "slug": "christmas-unleashed-2019",
+      "tmdbId": 627477,
+      "evidence": [
+        {
+          "source": "official Lifetime movie page",
+          "url": "https://www.mylifetime.com/movies/christmas-unleashed",
+          "detail": "Official page contains Christmas/holiday metadata"
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "The Christmas Temp",
+      "year": 2019,
+      "url": "https://app.trakt.tv/movies/the-christmas-temp-2019",
+      "slug": "the-christmas-temp-2019",
+      "tmdbId": 627485,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/the-christmas-temp-2019",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Christmas in the Highlands",
+      "year": 2019,
+      "url": "https://app.trakt.tv/movies/christmas-in-the-highlands-2019",
+      "slug": "christmas-in-the-highlands-2019",
+      "tmdbId": 653752,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/christmas-in-the-highlands-2019",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Rediscovering Christmas",
+      "year": 2019,
+      "url": "https://app.trakt.tv/movies/rediscovering-christmas-2019",
+      "slug": "rediscovering-christmas-2019",
+      "tmdbId": 627483,
+      "evidence": [
+        {
+          "source": "official Lifetime movie page",
+          "url": "https://www.mylifetime.com/movies/rediscovering-christmas",
+          "detail": "Official page contains Christmas/holiday metadata"
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "A Christmas Winter Song",
+      "year": 2019,
+      "url": "https://app.trakt.tv/movies/a-christmas-winter-song-2019",
+      "slug": "a-christmas-winter-song-2019",
+      "tmdbId": 643936,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/a-christmas-winter-song-2019",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Matchmaker Christmas",
+      "year": 2019,
+      "url": "https://app.trakt.tv/movies/matchmaker-christmas-2019",
+      "slug": "matchmaker-christmas-2019",
+      "tmdbId": 626301,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/matchmaker-christmas-2019",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "A Very Vintage Christmas",
+      "year": 2019,
+      "url": "https://app.trakt.tv/movies/a-very-vintage-christmas-2019",
+      "slug": "a-very-vintage-christmas-2019",
+      "tmdbId": 626282,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/a-very-vintage-christmas-2019",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Christmas Stars",
+      "year": 2019,
+      "url": "https://app.trakt.tv/movies/christmas-stars-2019",
+      "slug": "christmas-stars-2019",
+      "tmdbId": 627479,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/christmas-stars-2019",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Random Acts of Christmas",
+      "year": 2019,
+      "url": "https://app.trakt.tv/movies/random-acts-of-christmas-2019",
+      "slug": "random-acts-of-christmas-2019",
+      "tmdbId": 626300,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/random-acts-of-christmas-2019",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Grounded for Christmas",
+      "year": 2019,
+      "url": "https://app.trakt.tv/movies/grounded-for-christmas-2019",
+      "slug": "grounded-for-christmas-2019",
+      "tmdbId": 627478,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/grounded-for-christmas-2019",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Mistletoe & Menorahs",
+      "year": 2019,
+      "url": "https://app.trakt.tv/movies/mistletoe-menorahs-2019",
+      "slug": "mistletoe-menorahs-2019",
+      "tmdbId": 643938,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/mistletoe-menorahs-2019",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "A Storybook Christmas",
+      "year": 2019,
+      "url": "https://app.trakt.tv/movies/a-storybook-christmas-2019",
+      "slug": "a-storybook-christmas-2019",
+      "tmdbId": 615585,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/a-storybook-christmas-2019",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "No Time Like Christmas",
+      "year": 2019,
+      "url": "https://app.trakt.tv/movies/no-time-like-christmas-2019",
+      "slug": "no-time-like-christmas-2019",
+      "tmdbId": 626296,
+      "evidence": [
+        {
+          "source": "official Lifetime movie page",
+          "url": "https://www.mylifetime.com/movies/no-time-like-christmas",
+          "detail": "Official page contains Christmas/holiday metadata"
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "You Light Up My Christmas",
+      "year": 2019,
+      "url": "https://app.trakt.tv/movies/you-light-up-my-christmas-2019",
+      "slug": "you-light-up-my-christmas-2019",
+      "tmdbId": 627482,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/you-light-up-my-christmas-2019",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Merry Liddle Christmas",
+      "year": 2019,
+      "url": "https://app.trakt.tv/movies/merry-liddle-christmas-2019",
+      "slug": "merry-liddle-christmas-2019",
+      "tmdbId": 627475,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/merry-liddle-christmas-2019",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Staging Christmas",
+      "year": 2019,
+      "url": "https://app.trakt.tv/movies/staging-christmas-2019",
+      "slug": "staging-christmas-2019",
+      "tmdbId": 627474,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/staging-christmas-2019",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "A Christmas Wish",
+      "year": 2019,
+      "url": "https://app.trakt.tv/movies/a-christmas-wish-2019",
+      "slug": "a-christmas-wish-2019",
+      "tmdbId": 626285,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/a-christmas-wish-2019",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Christmas 9 to 5",
+      "year": 2019,
+      "url": "https://app.trakt.tv/movies/christmas-9-to-5-2019",
+      "slug": "christmas-9-to-5-2019",
+      "tmdbId": 627471,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/christmas-9-to-5-2019",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Twinkle All the Way",
+      "year": 2019,
+      "url": "https://app.trakt.tv/movies/twinkle-all-the-way-2019",
+      "slug": "twinkle-all-the-way-2019",
+      "tmdbId": 627470,
+      "evidence": [
+        {
+          "source": "official Lifetime movie page",
+          "url": "https://www.mylifetime.com/movies/twinkle-all-the-way",
+          "detail": "Official page contains Christmas/holiday metadata"
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Christmas in Louisiana",
+      "year": 2019,
+      "url": "https://app.trakt.tv/movies/christmas-in-louisiana-2019",
+      "slug": "christmas-in-louisiana-2019",
+      "tmdbId": 627468,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/christmas-in-louisiana-2019",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Christmas a la Mode",
+      "year": 2019,
+      "url": "https://app.trakt.tv/movies/christmas-a-la-mode-2019",
+      "slug": "christmas-a-la-mode-2019",
+      "tmdbId": 626299,
+      "evidence": [
+        {
+          "source": "official Lifetime movie page",
+          "url": "https://www.mylifetime.com/movies/christmas-a-la-mode",
+          "detail": "Official page contains Christmas/holiday metadata"
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Radio Christmas",
+      "year": 2019,
+      "url": "https://app.trakt.tv/movies/radio-christmas-2019",
+      "slug": "radio-christmas-2019",
+      "tmdbId": 626280,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/radio-christmas-2019",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Always and Forever Christmas",
+      "year": 2019,
+      "url": "https://app.trakt.tv/movies/always-and-forever-christmas-2019",
+      "slug": "always-and-forever-christmas-2019",
+      "tmdbId": 627466,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/always-and-forever-christmas-2019",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Christmas Reservations",
+      "year": 2019,
+      "url": "https://app.trakt.tv/movies/christmas-reservations-2019",
+      "slug": "christmas-reservations-2019",
+      "tmdbId": 626276,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/christmas-reservations-2019",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "The Road Home for Christmas",
+      "year": 2019,
+      "url": "https://app.trakt.tv/movies/the-road-home-for-christmas-2019",
+      "slug": "the-road-home-for-christmas-2019",
+      "tmdbId": 626273,
+      "evidence": [
+        {
+          "source": "official Lifetime movie page",
+          "url": "https://www.mylifetime.com/movies/the-road-home-for-christmas",
+          "detail": "Official page contains Christmas/holiday metadata"
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Hometown Christmas",
+      "year": 2018,
+      "url": "https://app.trakt.tv/movies/hometown-christmas-2018",
+      "slug": "hometown-christmas-2018",
+      "tmdbId": 554294,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/hometown-christmas-2018",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Christmas Pen Pals",
+      "year": 2018,
+      "url": "https://app.trakt.tv/movies/christmas-pen-pals-2018",
+      "slug": "christmas-pen-pals-2018",
+      "tmdbId": 550648,
+      "evidence": [
+        {
+          "source": "official Lifetime movie page",
+          "url": "https://www.mylifetime.com/movies/christmas-pen-pals",
+          "detail": "Official page contains Christmas/holiday metadata"
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Christmas Around the Corner",
+      "year": 2018,
+      "url": "https://app.trakt.tv/movies/christmas-around-the-corner-2018",
+      "slug": "christmas-around-the-corner-2018",
+      "tmdbId": 552017,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/christmas-around-the-corner-2018",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "A Christmas in Tennessee",
+      "year": 2018,
+      "url": "https://app.trakt.tv/movies/a-christmas-in-tennessee-2018",
+      "slug": "a-christmas-in-tennessee-2018",
+      "tmdbId": 552016,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/a-christmas-in-tennessee-2018",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Santa's Boots",
+      "year": 2018,
+      "url": "https://app.trakt.tv/movies/santa-s-boots-2018",
+      "slug": "santa-s-boots-2018",
+      "tmdbId": 550649,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/santa-s-boots-2018",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Christmas Lost and Found",
+      "year": 2018,
+      "url": "https://app.trakt.tv/movies/christmas-lost-and-found-2018",
+      "slug": "christmas-lost-and-found-2018",
+      "tmdbId": 552013,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/christmas-lost-and-found-2018",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "The Christmas Pact",
+      "year": 2018,
+      "url": "https://app.trakt.tv/movies/the-christmas-pact-2018",
+      "slug": "the-christmas-pact-2018",
+      "tmdbId": 552012,
+      "evidence": [
+        {
+          "source": "official Lifetime movie page",
+          "url": "https://www.mylifetime.com/movies/the-christmas-pact",
+          "detail": "Official page contains Christmas/holiday metadata"
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "A Twist of Christmas",
+      "year": 2018,
+      "url": "https://app.trakt.tv/movies/a-twist-of-christmas-2018",
+      "slug": "a-twist-of-christmas-2018",
+      "tmdbId": 550650,
+      "evidence": [
+        {
+          "source": "official Lifetime Christmas hub",
+          "url": "https://www.mylifetime.com/movies/a-twist-of-christmas/exclusives/vanessa-lachey-interview",
+          "detail": "Catch Up With Lifetime Christmas Movie Stars"
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "A Very Nutty Christmas",
+      "year": 2018,
+      "url": "https://app.trakt.tv/movies/a-very-nutty-christmas-2018",
+      "slug": "a-very-nutty-christmas-2018",
+      "tmdbId": 550651,
+      "evidence": [
+        {
+          "source": "official Lifetime movie page",
+          "url": "https://www.mylifetime.com/movies/a-very-nutty-christmas",
+          "detail": "Official page contains Christmas/holiday metadata"
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Jingle Belle",
+      "year": 2018,
+      "url": "https://app.trakt.tv/movies/jingle-belle-2018",
+      "slug": "jingle-belle-2018",
+      "tmdbId": 552011,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/jingle-belle-2018",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Christmas Perfection",
+      "year": 2018,
+      "url": "https://app.trakt.tv/movies/christmas-perfection-2018",
+      "slug": "christmas-perfection-2018",
+      "tmdbId": 550652,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/christmas-perfection-2018",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Poinsettias for Christmas",
+      "year": 2018,
+      "url": "https://app.trakt.tv/movies/poinsettias-for-christmas-2018",
+      "slug": "poinsettias-for-christmas-2018",
+      "tmdbId": 542602,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/poinsettias-for-christmas-2018",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Every Day Is Christmas",
+      "year": 2018,
+      "url": "https://app.trakt.tv/movies/every-day-is-christmas-2018",
+      "slug": "every-day-is-christmas-2018",
+      "tmdbId": 554288,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/every-day-is-christmas-2018",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Christmas Harmony",
+      "year": 2018,
+      "url": "https://app.trakt.tv/movies/christmas-harmony-2018",
+      "slug": "christmas-harmony-2018",
+      "tmdbId": 525020,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/christmas-harmony-2018",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Every Other Holiday",
+      "year": 2018,
+      "url": "https://app.trakt.tv/movies/every-other-holiday-2018",
+      "slug": "every-other-holiday-2018",
+      "tmdbId": 550654,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/every-other-holiday-2018",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "The Christmas Contract",
+      "year": 2018,
+      "url": "https://app.trakt.tv/movies/the-christmas-contract-2018",
+      "slug": "the-christmas-contract-2018",
+      "tmdbId": 550655,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/the-christmas-contract-2018",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "My Christmas Inn",
+      "year": 2018,
+      "url": "https://app.trakt.tv/movies/my-christmas-inn-2018",
+      "slug": "my-christmas-inn-2018",
+      "tmdbId": 551603,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/my-christmas-inn-2018",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "A Christmas Arrangement",
+      "year": 2018,
+      "url": "https://app.trakt.tv/movies/a-christmas-arrangement-2018",
+      "slug": "a-christmas-arrangement-2018",
+      "tmdbId": 550656,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/a-christmas-arrangement-2018",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Mr. 365",
+      "year": 2018,
+      "url": "https://app.trakt.tv/movies/mr-365-2018",
+      "slug": "mr-365-2018",
+      "tmdbId": 569982,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/mr-365-2018",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Snowed Inn Christmas",
+      "year": 2017,
+      "url": "https://app.trakt.tv/movies/snowed-inn-christmas-2017",
+      "slug": "snowed-inn-christmas-2017",
+      "tmdbId": 492141,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/snowed-inn-christmas-2017",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Christmas in Mississippi",
+      "year": 2017,
+      "url": "https://app.trakt.tv/movies/christmas-in-mississippi-2017",
+      "slug": "christmas-in-mississippi-2017",
+      "tmdbId": 486865,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/christmas-in-mississippi-2017",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "My Christmas Prince",
+      "year": 2017,
+      "url": "https://app.trakt.tv/movies/my-christmas-prince-2017",
+      "slug": "my-christmas-prince-2017",
+      "tmdbId": 488063,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/my-christmas-prince-2017",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Delivering Christmas",
+      "year": 2017,
+      "url": "https://app.trakt.tv/movies/delivering-christmas-2017",
+      "slug": "delivering-christmas-2017",
+      "tmdbId": 490817,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/delivering-christmas-2017",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Four Christmases and a Wedding",
+      "year": 2017,
+      "url": "https://app.trakt.tv/movies/four-christmases-and-a-wedding-2017",
+      "slug": "four-christmases-and-a-wedding-2017",
+      "tmdbId": 489204,
+      "evidence": [
+        {
+          "source": "official Lifetime movie page",
+          "url": "https://www.mylifetime.com/movies/four-christmases-and-a-wedding",
+          "detail": "Official page contains Christmas/holiday metadata"
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "A Very Merry Toy Store",
+      "year": 2017,
+      "url": "https://app.trakt.tv/movies/a-very-merry-toy-store-2017",
+      "slug": "a-very-merry-toy-store-2017",
+      "tmdbId": 485034,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/a-very-merry-toy-store-2017",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Wrapped Up In Christmas",
+      "year": 2017,
+      "url": "https://app.trakt.tv/movies/wrapped-up-in-christmas-2017",
+      "slug": "wrapped-up-in-christmas-2017",
+      "tmdbId": 486820,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/wrapped-up-in-christmas-2017",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "The Spirit of Christmas",
+      "year": 2015,
+      "url": "https://app.trakt.tv/movies/the-spirit-of-christmas-2015",
+      "slug": "the-spirit-of-christmas-2015",
+      "tmdbId": 367544,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/the-spirit-of-christmas-2015",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "A Christmas Reunion",
+      "year": 2015,
+      "url": "https://app.trakt.tv/movies/a-christmas-reunion-2015",
+      "slug": "a-christmas-reunion-2015",
+      "tmdbId": 369061,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/a-christmas-reunion-2015",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Wish Upon a Christmas",
+      "year": 2015,
+      "url": "https://app.trakt.tv/movies/wish-upon-a-christmas-2015",
+      "slug": "wish-upon-a-christmas-2015",
+      "tmdbId": 367543,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/wish-upon-a-christmas-2015",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Becoming Santa",
+      "year": 2015,
+      "url": "https://app.trakt.tv/movies/becoming-santa-2015",
+      "slug": "becoming-santa-2015",
+      "tmdbId": 367541,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/becoming-santa-2015",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Last Chance for Christmas",
+      "year": 2015,
+      "url": "https://app.trakt.tv/movies/last-chance-for-christmas-2015",
+      "slug": "last-chance-for-christmas-2015",
+      "tmdbId": 367540,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/last-chance-for-christmas-2015",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "The Flight Before Christmas",
+      "year": 2015,
+      "url": "https://app.trakt.tv/movies/the-flight-before-christmas-2015",
+      "slug": "the-flight-before-christmas-2015",
+      "tmdbId": 367538,
+      "evidence": [
+        {
+          "source": "official Lifetime movie page",
+          "url": "https://www.mylifetime.com/movies/the-flight-before-christmas",
+          "detail": "Official page contains Christmas/holiday metadata"
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "The Christmas Gift",
+      "year": 2015,
+      "url": "https://app.trakt.tv/movies/the-christmas-gift-2015",
+      "slug": "the-christmas-gift-2015",
+      "tmdbId": 367537,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/the-christmas-gift-2015",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "A Gift Wrapped Christmas",
+      "year": 2015,
+      "url": "https://app.trakt.tv/movies/a-gift-wrapped-christmas-2015",
+      "slug": "a-gift-wrapped-christmas-2015",
+      "tmdbId": 367536,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/a-gift-wrapped-christmas-2015",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "The Santa Con",
+      "year": 2014,
+      "url": "https://app.trakt.tv/movies/the-santa-con-2014",
+      "slug": "the-santa-con-2014",
+      "tmdbId": 311765,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/the-santa-con-2014",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Grumpy Cat's Worst Christmas Ever",
+      "year": 2014,
+      "url": "https://app.trakt.tv/movies/grumpy-cat-s-worst-christmas-ever-2014",
+      "slug": "grumpy-cat-s-worst-christmas-ever-2014",
+      "tmdbId": 300441,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/grumpy-cat-s-worst-christmas-ever-2014",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Seasons of Love",
+      "year": 2014,
+      "url": "https://app.trakt.tv/movies/seasons-of-love-2014",
+      "slug": "seasons-of-love-2014",
+      "tmdbId": 312034,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/seasons-of-love-2014",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Wishin' and Hopin'",
+      "year": 2014,
+      "url": "https://app.trakt.tv/movies/wishin-and-hopin-2014",
+      "slug": "wishin-and-hopin-2014",
+      "tmdbId": 308919,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/wishin-and-hopin-2014",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "An En Vogue Christmas",
+      "year": 2014,
+      "url": "https://app.trakt.tv/movies/an-en-vogue-christmas-2014",
+      "slug": "an-en-vogue-christmas-2014",
+      "tmdbId": 308688,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/an-en-vogue-christmas-2014",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Christmas in the City",
+      "year": 2013,
+      "url": "https://app.trakt.tv/movies/christmas-in-the-city-2013",
+      "slug": "christmas-in-the-city-2013",
+      "tmdbId": 245508,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/christmas-in-the-city-2013",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "All I Want for Christmas",
+      "year": 2013,
+      "url": "https://app.trakt.tv/movies/all-i-want-for-christmas-2013",
+      "slug": "all-i-want-for-christmas-2013",
+      "tmdbId": 249042,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/all-i-want-for-christmas-2013",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Christmas on the Bayou",
+      "year": 2013,
+      "url": "https://app.trakt.tv/movies/christmas-on-the-bayou-2013",
+      "slug": "christmas-on-the-bayou-2013",
+      "tmdbId": 249062,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/christmas-on-the-bayou-2013",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "A Snow Globe Christmas",
+      "year": 2013,
+      "url": "https://app.trakt.tv/movies/a-snow-globe-christmas-2013",
+      "slug": "a-snow-globe-christmas-2013",
+      "tmdbId": 249060,
+      "evidence": [
+        {
+          "source": "official Lifetime movie page",
+          "url": "https://www.mylifetime.com/movies/a-snow-globe-christmas",
+          "detail": "Official page contains Christmas/holiday metadata"
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Dear Secret Santa",
+      "year": 2013,
+      "url": "https://app.trakt.tv/movies/dear-secret-santa-2013",
+      "slug": "dear-secret-santa-2013",
+      "tmdbId": 240357,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/dear-secret-santa-2013",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Kristin's Christmas Past",
+      "year": 2013,
+      "url": "https://app.trakt.tv/movies/kristin-s-christmas-past-2013",
+      "slug": "kristin-s-christmas-past-2013",
+      "tmdbId": 239347,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/kristin-s-christmas-past-2013",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "The Twelve Trees of Christmas",
+      "year": 2013,
+      "url": "https://app.trakt.tv/movies/the-twelve-trees-of-christmas-2013",
+      "slug": "the-twelve-trees-of-christmas-2013",
+      "tmdbId": 237709,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/the-twelve-trees-of-christmas-2013",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "A Country Christmas Story",
+      "year": 2013,
+      "url": "https://app.trakt.tv/movies/a-country-christmas-story-2013",
+      "slug": "a-country-christmas-story-2013",
+      "tmdbId": 235494,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/a-country-christmas-story-2013",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "A Christmas Wedding",
+      "year": 2013,
+      "url": "https://app.trakt.tv/movies/a-christmas-wedding-2013",
+      "slug": "a-christmas-wedding-2013",
+      "tmdbId": 273905,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/a-christmas-wedding-2013",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "The Real St. Nick",
+      "year": 2012,
+      "url": "https://app.trakt.tv/movies/the-real-st-nick-2012",
+      "slug": "the-real-st-nick-2012",
+      "tmdbId": 150669,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/the-real-st-nick-2012",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "All About Christmas Eve",
+      "year": 2012,
+      "url": "https://app.trakt.tv/movies/all-about-christmas-eve-2012",
+      "slug": "all-about-christmas-eve-2012",
+      "tmdbId": 149490,
+      "evidence": [
+        {
+          "source": "official Lifetime movie page",
+          "url": "https://www.mylifetime.com/movies/all-about-christmas-eve",
+          "detail": "Official page contains Christmas/holiday metadata"
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Holly's Holiday",
+      "year": 2012,
+      "url": "https://app.trakt.tv/movies/holly-s-holiday-2012",
+      "slug": "holly-s-holiday-2012",
+      "tmdbId": 231385,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/holly-s-holiday-2012",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Merry In-Laws",
+      "year": 2012,
+      "url": "https://app.trakt.tv/movies/merry-in-laws-2012",
+      "slug": "merry-in-laws-2012",
+      "tmdbId": 150657,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/merry-in-laws-2012",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Finding Mrs. Claus",
+      "year": 2012,
+      "url": "https://app.trakt.tv/movies/finding-mrs-claus-2012",
+      "slug": "finding-mrs-claus-2012",
+      "tmdbId": 150654,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/finding-mrs-claus-2012",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "A Christmas Wedding Date",
+      "year": 2012,
+      "url": "https://app.trakt.tv/movies/a-christmas-wedding-date-2012",
+      "slug": "a-christmas-wedding-date-2012",
+      "tmdbId": 150670,
+      "evidence": [
+        {
+          "source": "official Lifetime movie page",
+          "url": "https://www.mylifetime.com/movies/a-christmas-wedding-date",
+          "detail": "Official page contains Christmas/holiday metadata"
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "A Star for Christmas",
+      "year": 2013,
+      "url": "https://app.trakt.tv/movies/a-star-for-christmas-2013",
+      "slug": "a-star-for-christmas-2013",
+      "tmdbId": 241999,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/a-star-for-christmas-2013",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Love at the Christmas Table",
+      "year": 2012,
+      "url": "https://app.trakt.tv/movies/love-at-the-christmas-table-2012",
+      "slug": "love-at-the-christmas-table-2012",
+      "tmdbId": 150015,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/love-at-the-christmas-table-2012",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "The March Sisters at Christmas",
+      "year": 2012,
+      "url": "https://app.trakt.tv/movies/the-march-sisters-at-christmas-2012",
+      "slug": "the-march-sisters-at-christmas-2012",
+      "tmdbId": 239351,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/the-march-sisters-at-christmas-2012",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Holiday Spin",
+      "year": 2012,
+      "url": "https://app.trakt.tv/movies/holiday-spin-2012",
+      "slug": "holiday-spin-2012",
+      "tmdbId": 149206,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/holiday-spin-2012",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "The Christmas Consultant",
+      "year": 2013,
+      "url": "https://app.trakt.tv/movies/the-christmas-consultant-2013",
+      "slug": "the-christmas-consultant-2013",
+      "tmdbId": 150709,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/the-christmas-consultant-2013",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "12 Wishes of Christmas",
+      "year": 2011,
+      "url": "https://app.trakt.tv/movies/12-wishes-of-christmas-2011",
+      "slug": "12-wishes-of-christmas-2011",
+      "tmdbId": 145186,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/12-wishes-of-christmas-2011",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Dear Santa",
+      "year": 2011,
+      "url": "https://app.trakt.tv/movies/dear-santa-2011",
+      "slug": "dear-santa-2011",
+      "tmdbId": 145312,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/dear-santa-2011",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "A Nanny for Christmas",
+      "year": 2010,
+      "url": "https://app.trakt.tv/movies/a-nanny-for-christmas-2010",
+      "slug": "a-nanny-for-christmas-2010",
+      "tmdbId": 50652,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/a-nanny-for-christmas-2010",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "The Christmas Hope",
+      "year": 2009,
+      "url": "https://app.trakt.tv/movies/the-christmas-hope-2009",
+      "slug": "the-christmas-hope-2009",
+      "tmdbId": 51505,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/the-christmas-hope-2009",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "12 Men of Christmas",
+      "year": 2009,
+      "url": "https://app.trakt.tv/movies/12-men-of-christmas-2009",
+      "slug": "12-men-of-christmas-2009",
+      "tmdbId": 42556,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/12-men-of-christmas-2009",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Christmas Angel",
+      "year": 2009,
+      "url": "https://app.trakt.tv/movies/christmas-angel-2009",
+      "slug": "christmas-angel-2009",
+      "tmdbId": 50454,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/christmas-angel-2009",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "A Christmas Proposal",
+      "year": 2008,
+      "url": "https://app.trakt.tv/movies/a-christmas-proposal-2008",
+      "slug": "a-christmas-proposal-2008",
+      "tmdbId": 42854,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/a-christmas-proposal-2008",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "A Very Merry Daughter of the Bride",
+      "year": 2008,
+      "url": "https://app.trakt.tv/movies/a-very-merry-daughter-of-the-bride-2008",
+      "slug": "a-very-merry-daughter-of-the-bride-2008",
+      "tmdbId": 75474,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/a-very-merry-daughter-of-the-bride-2008",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Will You Merry Me?",
+      "year": 2008,
+      "url": "https://app.trakt.tv/movies/will-you-merry-me-2008",
+      "slug": "will-you-merry-me-2008",
+      "tmdbId": 72858,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/will-you-merry-me-2008",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Christmas in Paradise",
+      "year": 2007,
+      "url": "https://app.trakt.tv/movies/christmas-in-paradise-2007",
+      "slug": "christmas-in-paradise-2007",
+      "tmdbId": 197857,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/christmas-in-paradise-2007",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "An Accidental Christmas",
+      "year": 2007,
+      "url": "https://app.trakt.tv/movies/an-accidental-christmas-2007",
+      "slug": "an-accidental-christmas-2007",
+      "tmdbId": 67589,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/an-accidental-christmas-2007",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Lost Holiday: The Jim & Suzanne Shemwell Story",
+      "year": 2007,
+      "url": "https://app.trakt.tv/movies/lost-holiday-the-jim-suzanne-shemwell-story-2007",
+      "slug": "lost-holiday-the-jim-suzanne-shemwell-story-2007",
+      "tmdbId": 142077,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/lost-holiday-the-jim-suzanne-shemwell-story-2007",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Home by Christmas",
+      "year": 2006,
+      "url": "https://app.trakt.tv/movies/home-by-christmas-2006",
+      "slug": "home-by-christmas-2006",
+      "tmdbId": 82097,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/home-by-christmas-2006",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "All She Wants for Christmas",
+      "year": 2006,
+      "url": "https://app.trakt.tv/movies/all-she-wants-for-christmas-2006",
+      "slug": "all-she-wants-for-christmas-2006",
+      "tmdbId": 30351,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/all-she-wants-for-christmas-2006",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "The Road to Christmas",
+      "year": 2006,
+      "url": "https://app.trakt.tv/movies/the-road-to-christmas-2006",
+      "slug": "the-road-to-christmas-2006",
+      "tmdbId": 51790,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/the-road-to-christmas-2006",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "A Christmas Wedding",
+      "year": 2006,
+      "url": "https://app.trakt.tv/movies/a-christmas-wedding-2006",
+      "slug": "a-christmas-wedding-2006",
+      "tmdbId": 42559,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/a-christmas-wedding-2006",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Christmas on Chestnut Street",
+      "year": 2006,
+      "url": "https://app.trakt.tv/movies/christmas-on-chestnut-street-2006",
+      "slug": "christmas-on-chestnut-street-2006",
+      "tmdbId": 358879,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/christmas-on-chestnut-street-2006",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Under the Mistletoe",
+      "year": 2006,
+      "url": "https://app.trakt.tv/movies/under-the-mistletoe-2006",
+      "slug": "under-the-mistletoe-2006",
+      "tmdbId": 77848,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/under-the-mistletoe-2006",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "His and Her Christmas",
+      "year": 2005,
+      "url": "https://app.trakt.tv/movies/his-and-her-christmas-2005",
+      "slug": "his-and-her-christmas-2005",
+      "tmdbId": 82376,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/his-and-her-christmas-2005",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Recipe for a Perfect Christmas",
+      "year": 2005,
+      "url": "https://app.trakt.tv/movies/recipe-for-a-perfect-christmas-2005",
+      "slug": "recipe-for-a-perfect-christmas-2005",
+      "tmdbId": 52925,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/recipe-for-a-perfect-christmas-2005",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "Deck the Halls",
+      "year": 2005,
+      "url": "https://app.trakt.tv/movies/deck-the-halls-2005",
+      "slug": "deck-the-halls-2005",
+      "evidence": [],
+      "classification": "UNVERIFIED",
+      "confidence": "none",
+      "reason": "TMDB identity remains unresolved or ambiguous; no ID guessed."
+    },
+    {
+      "title": "Comfort and Joy",
+      "year": 2003,
+      "url": "https://app.trakt.tv/movies/comfort-and-joy-2003",
+      "slug": "comfort-and-joy-2003",
+      "tmdbId": 59711,
+      "evidence": [
+        {
+          "source": "reviewed historical Lifetime Christmas schedule",
+          "url": "https://app.trakt.tv/movies/comfort-and-joy-2003",
+          "detail": "Candidate accepted from the supplied Lifetime-specific slate and matching TMDB identity."
+        }
+      ],
+      "classification": "CONFIRMED_LIFETIME",
+      "confidence": "high",
+      "reason": "Confirmed by reviewed historical Lifetime Christmas schedule and matching TMDB identity."
+    },
+    {
+      "title": "If You Believe (1999)",
+      "url": "https://app.trakt.tv/movies/if-you-believe-1999",
+      "slug": "if-you-believe-1999",
+      "evidence": [],
+      "classification": "UNVERIFIED",
+      "confidence": "none",
+      "reason": "TMDB identity remains unresolved or ambiguous; no ID guessed."
+    },
+    {
+      "title": "A Chance of Snow (1998)",
+      "url": "https://app.trakt.tv/movies/a-chance-of-snow-1998",
+      "slug": "a-chance-of-snow-1998",
+      "evidence": [],
+      "classification": "UNVERIFIED",
+      "confidence": "none",
+      "reason": "TMDB identity remains unresolved or ambiguous; no ID guessed."
+    },
+    {
+      "title": "On the 2nd Day of Christmas (1997)",
+      "url": "https://app.trakt.tv/movies/on-the-2nd-day-of-christmas-1997",
+      "slug": "on-the-2nd-day-of-christmas-1997",
+      "evidence": [],
+      "classification": "UNVERIFIED",
+      "confidence": "none",
+      "reason": "TMDB identity remains unresolved or ambiguous; no ID guessed."
+    },
+    {
+      "title": "Tis the Season",
+      "url": "https://app.trakt.tv/movies/tis-the-season",
+      "slug": "tis-the-season",
+      "evidence": [],
+      "classification": "UNVERIFIED",
+      "confidence": "none",
+      "reason": "TMDB identity remains unresolved or ambiguous; no ID guessed."
+    }
+  ],
+  "newlyImportedLifetime": 203,
+  "importCollisions": [
+    {
+      "title": "Hot Chocolate Holiday",
+      "tmdbId": 777405,
+      "existingBrand": "gaf"
+    }
+  ],
+  "finalCounts": {
+    "hallmark": 273,
+    "lifetime": 210,
+    "gaf": 89,
+    "total": 572,
+    "lifetimeCollection": 210,
+    "lifetimeComingSoon": 0,
+    "lifetimeFeed": 210,
+    "allFeed": 570
+  },
+  "secondPass": {
+    "completedAt": "2026-09-19T18:49:56.028Z",
+    "method": "DuckDuckGo historical search plus conservative TMDB title/year fallback",
+    "searchAvailability": "unavailable; no negative inference made",
+    "processedPending": 209
+  },
+  "reviewPolicy": "Manual historical Lifetime slate review supplied by project owner; existing TMDB identities preserved."
+}

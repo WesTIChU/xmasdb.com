@@ -1,0 +1,753 @@
+{
+  "generatedAt": "2026-09-19T17:20:14.417Z",
+  "pending": [
+    {
+      "gafTitle": "A Christmas Rescue",
+      "gafYear": 2026,
+      "sourceUrl": "https://www.greatamericanfamily.com/movie/a-christmas-rescue/",
+      "confidence": "unresolved",
+      "reason": "TMDB candidates did not establish an exact title/year match",
+      "candidates": [
+        {
+          "id": 1774011,
+          "title": "A Christmas Rescue",
+          "releaseDate": "",
+          "query": "A Christmas Rescue"
+        },
+        {
+          "id": 249033,
+          "title": "A Country Christmas",
+          "releaseDate": "2013-11-30",
+          "query": "A Christmas Rescue"
+        },
+        {
+          "id": 135675,
+          "title": "12 Dogs of Christmas: Great Puppy Rescue",
+          "releaseDate": "2012-10-09",
+          "query": "A Christmas Rescue"
+        },
+        {
+          "id": 137769,
+          "title": "The Magic Crystal",
+          "releaseDate": "2011-11-18",
+          "query": "A Christmas Rescue"
+        }
+      ]
+    },
+    {
+      "gafTitle": "A Sweet Christmas Anniversary",
+      "gafYear": 2026,
+      "sourceUrl": "https://www.greatamericanfamily.com/movie/sweet-christmas-anniversary/",
+      "confidence": "unresolved",
+      "reason": "no confident TMDB match",
+      "candidates": []
+    },
+    {
+      "gafTitle": "A Christmas Prayer II",
+      "gafYear": 2026,
+      "sourceUrl": "https://www.greatamericanfamily.com/movie/a-christmas-prayer-ii/",
+      "confidence": "unresolved",
+      "reason": "no confident TMDB match",
+      "candidates": []
+    },
+    {
+      "gafTitle": "Christmas at the Starlight",
+      "gafYear": 2026,
+      "sourceUrl": "https://www.greatamericanfamily.com/movie/christmas-at-the-starlight/",
+      "confidence": "unresolved",
+      "reason": "TMDB candidates did not establish an exact title/year match",
+      "candidates": [
+        {
+          "id": 1684294,
+          "title": "Christmas at The Starlight",
+          "releaseDate": "",
+          "query": "Christmas at the Starlight"
+        }
+      ]
+    },
+    {
+      "gafTitle": "Silver Bells at Christmas",
+      "gafYear": 2026,
+      "sourceUrl": "https://www.greatamericanfamily.com/movie/silver-bells-at-christmas/",
+      "confidence": "unresolved",
+      "reason": "TMDB candidates did not establish an exact title/year match",
+      "candidates": [
+        {
+          "id": 1701085,
+          "title": "Silver Bells at Christmas",
+          "releaseDate": "",
+          "query": "Silver Bells at Christmas"
+        }
+      ]
+    },
+    {
+      "gafTitle": "The Trouble with Christmas Mistletoe",
+      "gafYear": 2026,
+      "sourceUrl": "https://www.greatamericanfamily.com/movie/the-trouble-with-mistletoe/",
+      "confidence": "unresolved",
+      "reason": "TMDB candidates did not establish an exact title/year match",
+      "candidates": [
+        {
+          "id": 1702313,
+          "title": "The Trouble With Mistletoe",
+          "releaseDate": "2026-07-02",
+          "query": "The Trouble with Christmas Mistletoe"
+        }
+      ]
+    },
+    {
+      "gafTitle": "An Accidental Arctic Christmas",
+      "gafYear": 2026,
+      "sourceUrl": "https://www.greatamericanfamily.com/movie/an-accidental-arctic-christmas/",
+      "confidence": "unresolved",
+      "reason": "TMDB candidates did not establish an exact title/year match",
+      "candidates": [
+        {
+          "id": 1664264,
+          "title": "An Accidental Arctic Christmas",
+          "releaseDate": "",
+          "query": "An Accidental Arctic Christmas"
+        }
+      ]
+    },
+    {
+      "gafTitle": "A Very Evergreen Christmas",
+      "gafYear": 2026,
+      "sourceUrl": "https://www.greatamericanfamily.com/movie/a-very-evergreen-christmas/",
+      "confidence": "unresolved",
+      "reason": "TMDB candidates did not establish an exact title/year match",
+      "candidates": [
+        {
+          "id": 1702318,
+          "title": "A Very Evergreen Christmas",
+          "releaseDate": "",
+          "query": "A Very Evergreen Christmas"
+        }
+      ]
+    },
+    {
+      "gafTitle": "A Second Chance Christmas",
+      "gafYear": 2026,
+      "sourceUrl": "https://www.greatamericanfamily.com/movie/one-more-christmas/",
+      "confidence": "unresolved",
+      "reason": "TMDB candidates did not establish an exact title/year match",
+      "candidates": [
+        {
+          "id": 1652348,
+          "title": "A Second Chance Christmas",
+          "releaseDate": "",
+          "query": "A Second Chance Christmas"
+        },
+        {
+          "id": 746051,
+          "title": "A Godwink Christmas: Second Chance, First Love",
+          "releaseDate": "2020-11-22",
+          "query": "A Second Chance Christmas"
+        },
+        {
+          "id": 1416084,
+          "title": "A Second Chance at Christmas",
+          "releaseDate": "2011-12-17",
+          "query": "A Second Chance Christmas"
+        },
+        {
+          "id": 137475,
+          "title": "3 Holiday Tails",
+          "releaseDate": "2011-11-15",
+          "query": "A Second Chance Christmas"
+        },
+        {
+          "id": 485614,
+          "title": "Second Chance Christmas",
+          "releaseDate": "2017-11-05",
+          "query": "A Second Chance Christmas"
+        }
+      ]
+    },
+    {
+      "gafTitle": "A Very Curious Christmas",
+      "gafYear": 2025,
+      "sourceUrl": "https://www.greatamericanfamily.com/movie/a-very-curious-christmas/",
+      "confidence": "unresolved",
+      "reason": "TMDB candidates did not establish an exact title/year match",
+      "candidates": [
+        {
+          "id": 263945,
+          "title": "Curious George: A Very Monkey Christmas",
+          "releaseDate": "2009-11-10",
+          "query": "A Very Curious Christmas"
+        },
+        {
+          "id": 1191059,
+          "title": "Merry Mystery Christmas",
+          "releaseDate": "2023-11-08",
+          "query": "A Very Curious Christmas"
+        }
+      ]
+    },
+    {
+      "gafTitle": "Candace Cameron Bure 2023 Christmas Movie",
+      "sourceUrl": "https://www.greatamericanfamily.com/movie/candace-cameron-bure-2023-christmas-movie/",
+      "confidence": "unresolved",
+      "reason": "no confident TMDB match",
+      "candidates": []
+    },
+    {
+      "gafTitle": "Christmas Sweethearts",
+      "gafYear": 2022,
+      "sourceUrl": "https://www.greatamericanfamily.com/movie/my-best-friends-christmas/",
+      "confidence": "unresolved",
+      "reason": "TMDB candidates did not establish an exact title/year match",
+      "candidates": [
+        {
+          "id": 649520,
+          "title": "My Best Friend's Christmas",
+          "releaseDate": "2019-12-01",
+          "query": "My Best Friend's Christmas"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "gafTitle": "A Christmas Rescue",
+      "gafYear": 2026,
+      "sourceUrl": "https://www.greatamericanfamily.com/movie/a-christmas-rescue/",
+      "confidence": "unresolved",
+      "reason": "TMDB candidates did not establish an exact title/year match",
+      "candidates": [
+        {
+          "id": 1774011,
+          "title": "A Christmas Rescue",
+          "releaseDate": "",
+          "query": "A Christmas Rescue"
+        },
+        {
+          "id": 249033,
+          "title": "A Country Christmas",
+          "releaseDate": "2013-11-30",
+          "query": "A Christmas Rescue"
+        },
+        {
+          "id": 135675,
+          "title": "12 Dogs of Christmas: Great Puppy Rescue",
+          "releaseDate": "2012-10-09",
+          "query": "A Christmas Rescue"
+        },
+        {
+          "id": 137769,
+          "title": "The Magic Crystal",
+          "releaseDate": "2011-11-18",
+          "query": "A Christmas Rescue"
+        }
+      ]
+    },
+    {
+      "gafTitle": "A Sweet Christmas Anniversary",
+      "gafYear": 2026,
+      "sourceUrl": "https://www.greatamericanfamily.com/movie/sweet-christmas-anniversary/",
+      "confidence": "unresolved",
+      "reason": "no confident TMDB match",
+      "candidates": []
+    },
+    {
+      "gafTitle": "A Christmas Prayer II",
+      "gafYear": 2026,
+      "sourceUrl": "https://www.greatamericanfamily.com/movie/a-christmas-prayer-ii/",
+      "confidence": "unresolved",
+      "reason": "no confident TMDB match",
+      "candidates": []
+    },
+    {
+      "gafTitle": "Christmas at the Starlight",
+      "gafYear": 2026,
+      "sourceUrl": "https://www.greatamericanfamily.com/movie/christmas-at-the-starlight/",
+      "confidence": "unresolved",
+      "reason": "TMDB candidates did not establish an exact title/year match",
+      "candidates": [
+        {
+          "id": 1684294,
+          "title": "Christmas at The Starlight",
+          "releaseDate": "",
+          "query": "Christmas at the Starlight"
+        }
+      ]
+    },
+    {
+      "gafTitle": "Silver Bells at Christmas",
+      "gafYear": 2026,
+      "sourceUrl": "https://www.greatamericanfamily.com/movie/silver-bells-at-christmas/",
+      "confidence": "unresolved",
+      "reason": "TMDB candidates did not establish an exact title/year match",
+      "candidates": [
+        {
+          "id": 1701085,
+          "title": "Silver Bells at Christmas",
+          "releaseDate": "",
+          "query": "Silver Bells at Christmas"
+        }
+      ]
+    },
+    {
+      "gafTitle": "The Trouble with Christmas Mistletoe",
+      "gafYear": 2026,
+      "sourceUrl": "https://www.greatamericanfamily.com/movie/the-trouble-with-mistletoe/",
+      "confidence": "unresolved",
+      "reason": "TMDB candidates did not establish an exact title/year match",
+      "candidates": [
+        {
+          "id": 1702313,
+          "title": "The Trouble With Mistletoe",
+          "releaseDate": "2026-07-02",
+          "query": "The Trouble with Christmas Mistletoe"
+        }
+      ]
+    },
+    {
+      "gafTitle": "An Accidental Arctic Christmas",
+      "gafYear": 2026,
+      "sourceUrl": "https://www.greatamericanfamily.com/movie/an-accidental-arctic-christmas/",
+      "confidence": "unresolved",
+      "reason": "TMDB candidates did not establish an exact title/year match",
+      "candidates": [
+        {
+          "id": 1664264,
+          "title": "An Accidental Arctic Christmas",
+          "releaseDate": "",
+          "query": "An Accidental Arctic Christmas"
+        }
+      ]
+    },
+    {
+      "gafTitle": "A Very Evergreen Christmas",
+      "gafYear": 2026,
+      "sourceUrl": "https://www.greatamericanfamily.com/movie/a-very-evergreen-christmas/",
+      "confidence": "unresolved",
+      "reason": "TMDB candidates did not establish an exact title/year match",
+      "candidates": [
+        {
+          "id": 1702318,
+          "title": "A Very Evergreen Christmas",
+          "releaseDate": "",
+          "query": "A Very Evergreen Christmas"
+        }
+      ]
+    },
+    {
+      "gafTitle": "A Second Chance Christmas",
+      "gafYear": 2026,
+      "sourceUrl": "https://www.greatamericanfamily.com/movie/one-more-christmas/",
+      "confidence": "unresolved",
+      "reason": "TMDB candidates did not establish an exact title/year match",
+      "candidates": [
+        {
+          "id": 1652348,
+          "title": "A Second Chance Christmas",
+          "releaseDate": "",
+          "query": "A Second Chance Christmas"
+        },
+        {
+          "id": 746051,
+          "title": "A Godwink Christmas: Second Chance, First Love",
+          "releaseDate": "2020-11-22",
+          "query": "A Second Chance Christmas"
+        },
+        {
+          "id": 1416084,
+          "title": "A Second Chance at Christmas",
+          "releaseDate": "2011-12-17",
+          "query": "A Second Chance Christmas"
+        },
+        {
+          "id": 137475,
+          "title": "3 Holiday Tails",
+          "releaseDate": "2011-11-15",
+          "query": "A Second Chance Christmas"
+        },
+        {
+          "id": 485614,
+          "title": "Second Chance Christmas",
+          "releaseDate": "2017-11-05",
+          "query": "A Second Chance Christmas"
+        }
+      ]
+    },
+    {
+      "gafTitle": "Pencil Me In For Christmas",
+      "gafYear": 2025,
+      "sourceUrl": "https://www.greatamericanfamily.com/movie/pencil-me-in-for-christmas/",
+      "tmdbTitle": "Creating Christmas",
+      "tmdbId": 1129782,
+      "releaseYear": 2023,
+      "confidence": "confident",
+      "reason": "explicit approved alternate-title mapping: Creating Christmas",
+      "castSample": "Greer Grammer, Jason Cermak, Briana Buckmaster, Jim Martens, David-Paul Grove",
+      "candidates": [
+        {
+          "id": 1129782,
+          "title": "Creating Christmas",
+          "releaseDate": "2023-12-14",
+          "query": "Creating Christmas"
+        }
+      ]
+    },
+    {
+      "gafTitle": "A Very Curious Christmas",
+      "gafYear": 2025,
+      "sourceUrl": "https://www.greatamericanfamily.com/movie/a-very-curious-christmas/",
+      "confidence": "unresolved",
+      "reason": "TMDB candidates did not establish an exact title/year match",
+      "candidates": [
+        {
+          "id": 263945,
+          "title": "Curious George: A Very Monkey Christmas",
+          "releaseDate": "2009-11-10",
+          "query": "A Very Curious Christmas"
+        },
+        {
+          "id": 1191059,
+          "title": "Merry Mystery Christmas",
+          "releaseDate": "2023-11-08",
+          "query": "A Very Curious Christmas"
+        }
+      ]
+    },
+    {
+      "gafTitle": "A Royal Icing Christmas",
+      "gafYear": 2025,
+      "sourceUrl": "https://www.greatamericanfamily.com/movie/once-upon-a-christmas-crown-wt/",
+      "tmdbTitle": "Once Upon a Christmas Crown",
+      "tmdbId": 1491727,
+      "releaseYear": 2025,
+      "confidence": "confident",
+      "reason": "unique alternate title and release year via Once Upon a Christmas Crown",
+      "castSample": "Ellise Roth, Sebastien Darcel-Sinclair, Bryn Brouwers, Callum Buckley, Aliyah Cilurzo-Oliveira",
+      "candidates": [
+        {
+          "id": 1491727,
+          "title": "Once Upon a Christmas Crown",
+          "releaseDate": "2025-10-23",
+          "query": "Once Upon a Christmas Crown"
+        }
+      ]
+    },
+    {
+      "gafTitle": "Chasing Christmas",
+      "gafYear": 2025,
+      "sourceUrl": "https://www.greatamericanfamily.com/movie/mission-merry-christmas/",
+      "tmdbTitle": "Mario Lopez Presents: Chasing Christmas",
+      "tmdbId": 1553895,
+      "releaseYear": 2025,
+      "confidence": "confident",
+      "reason": "direct TMDB identity confirmed by requested cast/crew/overview comparison",
+      "castSample": "Trevor Donovan, Jillian Murray, Dominic Lopez, Cleary Herzlinger",
+      "candidates": [
+        {
+          "id": 16412,
+          "title": "Chasing Christmas",
+          "releaseDate": "2005-12-04",
+          "query": "Chasing Christmas"
+        },
+        {
+          "id": 1553895,
+          "title": "Mario Lopez Presents: Chasing Christmas",
+          "releaseDate": "2025-12-21",
+          "query": "Chasing Christmas"
+        },
+        {
+          "id": 993030,
+          "title": "Christmas Plus One",
+          "releaseDate": "2022-11-15",
+          "query": "Chasing Christmas"
+        }
+      ]
+    },
+    {
+      "gafTitle": "Let It Snow",
+      "gafYear": 2024,
+      "sourceUrl": "https://www.greatamericanfamily.com/movie/let-it-snow/",
+      "tmdbTitle": "Let It Snow",
+      "tmdbId": 240906,
+      "releaseYear": 2013,
+      "confidence": "confident",
+      "reason": "direct TMDB identity confirmed by requested cast/crew/overview comparison",
+      "castSample": "Candace Cameron Bure, Jesse Hutch, Alan Thicke, Gabrielle Rose, Dan Willmott",
+      "candidates": [
+        {
+          "id": 295151,
+          "title": "Let It Snow",
+          "releaseDate": "2019-11-08",
+          "query": "Let It Snow"
+        },
+        {
+          "id": 720395,
+          "title": "Let It Snow",
+          "releaseDate": "2020-10-09",
+          "query": "Let It Snow"
+        },
+        {
+          "id": 240906,
+          "title": "Let It Snow",
+          "releaseDate": "2013-11-30",
+          "query": "Let It Snow"
+        },
+        {
+          "id": 750047,
+          "title": "Let it Snow!",
+          "releaseDate": "2008-01-01",
+          "query": "Let It Snow"
+        },
+        {
+          "id": 443401,
+          "title": "Let It Snow",
+          "releaseDate": "2017-12-13",
+          "query": "Let It Snow"
+        },
+        {
+          "id": 47596,
+          "title": "Let It Snow",
+          "releaseDate": "1999-10-01",
+          "query": "Let It Snow"
+        },
+        {
+          "id": 1689625,
+          "title": "Let It Snow",
+          "releaseDate": "2026-05-12",
+          "query": "Let It Snow"
+        },
+        {
+          "id": 1410368,
+          "title": "Kipper: Let it Snow!",
+          "releaseDate": "2003-09-30",
+          "query": "Let It Snow"
+        },
+        {
+          "id": 361824,
+          "title": "Fireman Sam - Let It Snow",
+          "releaseDate": "2005-11-07",
+          "query": "Let It Snow"
+        },
+        {
+          "id": 1707785,
+          "title": "Andre Rieu's 2026 Christmas Concert Let It Snow",
+          "releaseDate": "2026-12-05",
+          "query": "Let It Snow"
+        },
+        {
+          "id": 1055825,
+          "title": "Modern Love: Don't Let It Snow",
+          "releaseDate": "2013-12-19",
+          "query": "Let It Snow"
+        },
+        {
+          "id": 874122,
+          "title": "Nantucket Noel",
+          "releaseDate": "2021-11-19",
+          "query": "Let It Snow"
+        },
+        {
+          "id": 333348,
+          "title": "Love the Coopers",
+          "releaseDate": "2015-11-12",
+          "query": "Let It Snow"
+        }
+      ]
+    },
+    {
+      "gafTitle": "A Cozy Christmas Quilt",
+      "gafYear": 2024,
+      "sourceUrl": "https://www.greatamericanfamily.com/movie/fabric-of-christmas/",
+      "tmdbTitle": "The Fabric of Christmas",
+      "tmdbId": 1131992,
+      "releaseYear": 2023,
+      "confidence": "confident",
+      "reason": "exact TMDB title plus matching official GAF cast; GAF year label differs from TMDB release year",
+      "castSample": "Ferelith Young, Harmon Walsh, Alia DeSantis, Kyana Teresa, David Chinchilla",
+      "candidates": [
+        {
+          "id": 1131992,
+          "title": "The Fabric of Christmas",
+          "releaseDate": "2023-11-01",
+          "query": "The Fabric of Christmas"
+        }
+      ]
+    },
+    {
+      "gafTitle": "Christmas Castle Proposal",
+      "tmdbTitle": "A Christmas Castle Proposal: A Royal in Paradise II",
+      "tmdbId": 1231623,
+      "releaseYear": 2024,
+      "confidence": "confident",
+      "reason": "unique alternate title and release year via A Christmas Castle Proposal: A Royal in Paradise II",
+      "castSample": "Rhiannon Fish, Mitchell Bourke, Andrea Moor, Kym Jackson, David Hooley",
+      "candidates": [
+        {
+          "id": 1231623,
+          "title": "A Christmas Castle Proposal: A Royal in Paradise II",
+          "releaseDate": "2024-10-26",
+          "query": "A Christmas Castle Proposal: A Royal in Paradise II"
+        }
+      ]
+    },
+    {
+      "gafTitle": "Destined 2: Christmas Once More",
+      "gafYear": 2022,
+      "sourceUrl": "https://www.greatamericanfamily.com/movie/destined-2-christmas-once-more/",
+      "tmdbTitle": "Destined 2: Christmas Once More",
+      "tmdbId": 1137856,
+      "releaseYear": 2023,
+      "confidence": "confident",
+      "reason": "direct TMDB identity confirmed by requested cast/crew/overview comparison",
+      "castSample": "Shae Robins, Casey Elliott, Weixin Le, Noah Kershisnik",
+      "candidates": [
+        {
+          "id": 1137856,
+          "title": "Destined 2: Christmas Once More",
+          "releaseDate": "2023-10-14",
+          "query": "Destined 2: Christmas Once More"
+        }
+      ]
+    },
+    {
+      "gafTitle": "The Jingle Bell Jubilee",
+      "gafYear": 2023,
+      "sourceUrl": "https://www.greatamericanfamily.com/movie/the-jinglebell-jubilee/",
+      "tmdbTitle": "The Jinglebell Jubilee",
+      "tmdbId": 1180367,
+      "releaseYear": 2023,
+      "confidence": "confident",
+      "reason": "unique alternate title and release year via The Jinglebell Jubilee",
+      "castSample": "Erin Agostino, Marshall Williams, Samantha Kendrick, Kristian Jordan, John B. Lowe",
+      "candidates": [
+        {
+          "id": 1180367,
+          "title": "The Jinglebell Jubilee",
+          "releaseDate": "2023-12-03",
+          "query": "The Jinglebell Jubilee"
+        }
+      ]
+    },
+    {
+      "gafTitle": "A Paris Christmas Waltz",
+      "gafYear": 2023,
+      "sourceUrl": "https://www.greatamericanfamily.com/movie/a-paris-christmas-waltz/",
+      "tmdbTitle": "Paris Christmas Waltz",
+      "tmdbId": 1127936,
+      "releaseYear": 2023,
+      "confidence": "confident",
+      "reason": "unique alternate title and release year via Paris Christmas Waltz",
+      "castSample": "Jen Lilley, Matthew Morrison, Paul Freeman, Debbie Matenopoulos, Stephanie Siadatan",
+      "candidates": [
+        {
+          "id": 1127936,
+          "title": "Paris Christmas Waltz",
+          "releaseDate": "2023-11-19",
+          "query": "Paris Christmas Waltz"
+        }
+      ]
+    },
+    {
+      "gafTitle": "A Christmas Blessing",
+      "gafYear": 2023,
+      "sourceUrl": "https://www.greatamericanfamily.com/movie/a-christmas-blessing/",
+      "tmdbTitle": "A Christmas Blessing",
+      "tmdbId": 1142044,
+      "releaseYear": 2023,
+      "confidence": "confident",
+      "reason": "direct TMDB identity confirmed by requested cast/crew/overview comparison",
+      "castSample": "Lori Loughlin, James Tupper, Jesse Hutch, Jason Cermak, Karen Holness",
+      "candidates": [
+        {
+          "id": 1142044,
+          "title": "A Christmas Blessing",
+          "releaseDate": "2023-11-12",
+          "query": "A Christmas Blessing"
+        },
+        {
+          "id": 496896,
+          "title": "A Christmas Blessing",
+          "releaseDate": "2013-12-07",
+          "query": "A Christmas Blessing"
+        },
+        {
+          "id": 1192390,
+          "title": "A Christmas Blessing",
+          "releaseDate": "2023-10-16",
+          "query": "A Christmas Blessing"
+        },
+        {
+          "id": 619148,
+          "title": "A Christmas Journey: About the Blessings God Gives",
+          "releaseDate": "2006-10-20",
+          "query": "A Christmas Blessing"
+        }
+      ]
+    },
+    {
+      "gafTitle": "Candace Cameron Bure 2023 Christmas Movie",
+      "sourceUrl": "https://www.greatamericanfamily.com/movie/candace-cameron-bure-2023-christmas-movie/",
+      "confidence": "unresolved",
+      "reason": "no confident TMDB match",
+      "candidates": []
+    },
+    {
+      "gafTitle": "Christmas Lovers Anonymous",
+      "gafYear": 2022,
+      "sourceUrl": "https://www.greatamericanfamily.com/movie/christmas-lovers-anonymous/",
+      "tmdbTitle": "Christmas Lovers Anonymous",
+      "tmdbId": 883901,
+      "releaseYear": 2021,
+      "confidence": "confident",
+      "reason": "exact TMDB title plus matching official GAF cast; GAF year label differs from TMDB release year",
+      "castSample": "Brooke Burfitt, Houston Rhines, Bridget Fitzgerald, Lexi Giovagnoli, Hannah Whiteoak",
+      "candidates": [
+        {
+          "id": 883901,
+          "title": "Christmas Lovers Anonymous",
+          "releaseDate": "2021-10-30",
+          "query": "Christmas Lovers Anonymous"
+        }
+      ]
+    },
+    {
+      "gafTitle": "Christmas Sweethearts",
+      "gafYear": 2022,
+      "sourceUrl": "https://www.greatamericanfamily.com/movie/my-best-friends-christmas/",
+      "confidence": "unresolved",
+      "reason": "TMDB candidates did not establish an exact title/year match",
+      "candidates": [
+        {
+          "id": 649520,
+          "title": "My Best Friend's Christmas",
+          "releaseDate": "2019-12-01",
+          "query": "My Best Friend's Christmas"
+        }
+      ]
+    },
+    {
+      "gafTitle": "A Hot Cocoa Christmas",
+      "gafYear": 2021,
+      "sourceUrl": "https://www.greatamericanfamily.com/movie/a-hot-cocoa-christmas/",
+      "tmdbTitle": "Hot Chocolate Holiday",
+      "tmdbId": 777405,
+      "releaseYear": 2021,
+      "confidence": "confident",
+      "reason": "unique alternate title and release year via Hot Chocolate Holiday",
+      "castSample": "Aubrey Reynolds, Jonny Swenson, Kelsie Elena, Susan Phelan, Madison Savoie",
+      "candidates": [
+        {
+          "id": 777405,
+          "title": "Hot Chocolate Holiday",
+          "releaseDate": "2021-12-24",
+          "query": "Hot Chocolate Holiday"
+        },
+        {
+          "id": 878410,
+          "title": "Much Ado About Christmas",
+          "releaseDate": "2021-10-30",
+          "query": "A Hot Cocoa Christmas"
+        }
+      ]
+    }
+  ]
+}

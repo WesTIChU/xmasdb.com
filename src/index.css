@@ -1,0 +1,129 @@
+@import "tailwindcss";
+
+:root {
+  --bg-cream: #FAF7F2;
+  --text-dark: #23211E;
+  --green-deep: #1A3D2F;
+  --green-forest: #143626;
+  --red-deep: #841818;
+  --red-crimson: #9B1C1C;
+  --gold-warm: #B8860B;
+  --gold-accent: #C29236;
+  --border-warm: #E6DFD5;
+}
+
+body {
+  background-color: #FAF7F2;
+  color: #23211E;
+  font-family: 'Lora', Georgia, Cambria, serif;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  padding: 0;
+}
+
+.font-heading {
+  font-family: 'Cinzel', 'Lora', Georgia, serif;
+  letter-spacing: 0.02em;
+}
+
+.font-body {
+  font-family: 'Lora', Georgia, Cambria, serif;
+}
+
+.font-sans-clean {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* XmasDB Main Navigation Hand-Drawn Wavy Squiggle */
+.nav-link-item {
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.25rem 0.625rem;
+  text-decoration: none;
+  border-radius: 0.25rem;
+}
+
+.xmas-nav-link {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.xmas-nav-link .nav-squiggle {
+  bottom: -4px;
+}
+
+.xmas-nav-arrow {
+  display: inline-block;
+  transition: transform 0.22s ease;
+}
+
+.xmas-nav-link:hover .xmas-nav-arrow {
+  transform: translateX(0.2rem);
+}
+
+/* Keep the shared stats-strip squiggle visible inside its horizontal scroller. */
+.catalogue-stats-strip {
+  overflow: visible;
+}
+
+.catalogue-stats-brands {
+  padding-bottom: 6px;
+  margin-bottom: -6px;
+}
+
+.nav-squiggle {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  pointer-events: none;
+  overflow: visible;
+  clip-path: inset(0 100% 0 0);
+  opacity: 0;
+  transition: clip-path 0.22s cubic-bezier(0.25, 1, 0.5, 1), opacity 0.18s ease;
+}
+
+.nav-link-item:hover .nav-squiggle,
+.group:hover .nav-squiggle,
+.xmas-nav-link:hover .nav-squiggle {
+  clip-path: inset(0 0 0 0);
+  opacity: 0.95;
+}
+
+/* Active navigation page: subtle static version visible */
+.nav-link-item.is-active .nav-squiggle,
+.nav-squiggle.is-active {
+  clip-path: inset(0 0 0 0);
+  opacity: 0.85;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .nav-squiggle {
+    transition: opacity 0.15s ease !important;
+    clip-path: inset(0 0 0 0) !important;
+    opacity: 0;
+  }
+  .nav-link-item:hover .nav-squiggle,
+  .group:hover .nav-squiggle,
+  .xmas-nav-link:hover .nav-squiggle,
+  .nav-link-item.is-active .nav-squiggle,
+  .nav-squiggle.is-active {
+    opacity: 0.85 !important;
+  }
+
+  .xmas-nav-arrow {
+    transition: none;
+  }
+}

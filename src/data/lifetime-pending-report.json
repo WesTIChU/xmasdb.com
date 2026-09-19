@@ -1,0 +1,108 @@
+{
+  "probableLifetime": [],
+  "unverified": [
+    {
+      "title": "Deck the Halls",
+      "year": 2005,
+      "url": "https://app.trakt.tv/movies/deck-the-halls-2005",
+      "slug": "deck-the-halls-2005",
+      "evidence": [],
+      "classification": "UNVERIFIED",
+      "confidence": "none",
+      "reason": "TMDB identity remains unresolved or ambiguous; no ID guessed."
+    },
+    {
+      "title": "If You Believe (1999)",
+      "url": "https://app.trakt.tv/movies/if-you-believe-1999",
+      "slug": "if-you-believe-1999",
+      "evidence": [],
+      "classification": "UNVERIFIED",
+      "confidence": "none",
+      "reason": "TMDB identity remains unresolved or ambiguous; no ID guessed."
+    },
+    {
+      "title": "A Chance of Snow (1998)",
+      "url": "https://app.trakt.tv/movies/a-chance-of-snow-1998",
+      "slug": "a-chance-of-snow-1998",
+      "evidence": [],
+      "classification": "UNVERIFIED",
+      "confidence": "none",
+      "reason": "TMDB identity remains unresolved or ambiguous; no ID guessed."
+    },
+    {
+      "title": "On the 2nd Day of Christmas (1997)",
+      "url": "https://app.trakt.tv/movies/on-the-2nd-day-of-christmas-1997",
+      "slug": "on-the-2nd-day-of-christmas-1997",
+      "evidence": [],
+      "classification": "UNVERIFIED",
+      "confidence": "none",
+      "reason": "TMDB identity remains unresolved or ambiguous; no ID guessed."
+    },
+    {
+      "title": "Tis the Season",
+      "url": "https://app.trakt.tv/movies/tis-the-season",
+      "slug": "tis-the-season",
+      "evidence": [],
+      "classification": "UNVERIFIED",
+      "confidence": "none",
+      "reason": "TMDB identity remains unresolved or ambiguous; no ID guessed."
+    }
+  ],
+  "rejected": [],
+  "tmdbUnresolved": [
+    {
+      "title": "Deck the Halls",
+      "year": 2005,
+      "url": "https://app.trakt.tv/movies/deck-the-halls-2005",
+      "slug": "deck-the-halls-2005",
+      "evidence": [],
+      "classification": "UNVERIFIED",
+      "confidence": "none",
+      "reason": "TMDB identity remains unresolved or ambiguous; no ID guessed."
+    },
+    {
+      "title": "If You Believe (1999)",
+      "url": "https://app.trakt.tv/movies/if-you-believe-1999",
+      "slug": "if-you-believe-1999",
+      "evidence": [],
+      "classification": "UNVERIFIED",
+      "confidence": "none",
+      "reason": "TMDB identity remains unresolved or ambiguous; no ID guessed."
+    },
+    {
+      "title": "A Chance of Snow (1998)",
+      "url": "https://app.trakt.tv/movies/a-chance-of-snow-1998",
+      "slug": "a-chance-of-snow-1998",
+      "evidence": [],
+      "classification": "UNVERIFIED",
+      "confidence": "none",
+      "reason": "TMDB identity remains unresolved or ambiguous; no ID guessed."
+    },
+    {
+      "title": "On the 2nd Day of Christmas (1997)",
+      "url": "https://app.trakt.tv/movies/on-the-2nd-day-of-christmas-1997",
+      "slug": "on-the-2nd-day-of-christmas-1997",
+      "evidence": [],
+      "classification": "UNVERIFIED",
+      "confidence": "none",
+      "reason": "TMDB identity remains unresolved or ambiguous; no ID guessed."
+    },
+    {
+      "title": "Tis the Season",
+      "url": "https://app.trakt.tv/movies/tis-the-season",
+      "slug": "tis-the-season",
+      "evidence": [],
+      "classification": "UNVERIFIED",
+      "confidence": "none",
+      "reason": "TMDB identity remains unresolved or ambiguous; no ID guessed."
+    }
+  ],
+  "collisions": [
+    {
+      "title": "Hot Chocolate Holiday",
+      "tmdbId": 777405,
+      "existingBrand": "gaf"
+    }
+  ],
+  "reason": "TMDB identity remains unresolved or ambiguous; no ID guessed."
+}
