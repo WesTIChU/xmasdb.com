@@ -41,14 +41,12 @@ export function validateManifest(manifest, { movies = [], upcoming = [] } = {}) 
     seen.add(entry.tmdbId);
   }
 
-  const currentIds = new Set([...movies, ...upcoming].map(movieId));
-  const missing = [...currentIds].filter(id => !seen.has(id));
-  if (missing.length) throw new Error(`Manifest is missing current TMDB IDs: ${missing.join(', ')}.`);
   return manifest;
 }
 
 export function createSyncPlan(manifest, movies, upcoming) {
   validateManifest(manifest, { movies, upcoming });
+  const manifestIds = new Set(manifest.map(entry => entry.tmdbId));
   const collectionById = new Map();
   const upcomingById = new Map();
   for (const movie of movies) collectionById.set(movieId(movie), movie);
@@ -62,9 +60,12 @@ export function createSyncPlan(manifest, movies, upcoming) {
     if (!currentStatus) additions.push(entry);
     else if (currentStatus !== entry.status) statusChanges.push({ ...entry, from: currentStatus });
   }
+  const removedIds = [...new Set([...movies, ...upcoming].map(movieId))]
+    .filter(id => !manifestIds.has(id));
   return {
     additions,
     statusChanges,
+    removedIds,
     duplicateUpcomingIds: upcoming.filter(movie => collectionById.has(movieId(movie))).map(movieId)
   };
 }
@@ -72,9 +73,10 @@ export function createSyncPlan(manifest, movies, upcoming) {
 export function prepareCatalogLists(movies, upcoming, plan) {
   const collectionIds = new Set(movies.map(movieId));
   const statusChangeIds = new Set(plan.statusChanges.map(entry => entry.tmdbId));
+  const removedIds = new Set(plan.removedIds);
   return {
-    movies: movies.filter(movie => !plan.duplicateUpcomingIds.includes(movieId(movie)) && !statusChangeIds.has(movieId(movie))).map(clone),
-    upcoming: upcoming.filter(movie => !collectionIds.has(movieId(movie)) && !statusChangeIds.has(movieId(movie))).map(clone)
+    movies: movies.filter(movie => !removedIds.has(movieId(movie)) && !plan.duplicateUpcomingIds.includes(movieId(movie)) && !statusChangeIds.has(movieId(movie))).map(clone),
+    upcoming: upcoming.filter(movie => !removedIds.has(movieId(movie)) && !collectionIds.has(movieId(movie)) && !statusChangeIds.has(movieId(movie))).map(clone)
   };
 }
 
@@ -94,13 +96,16 @@ async function syncManifest({ token = tokenFromEnvironment(), dryRun = false } =
   console.log(`Manifest: ${manifest.length} entries`);
   console.log(`Additions: ${plan.additions.length}`);
   console.log(`Status changes: ${plan.statusChanges.length}`);
+  console.log(`Removals: ${plan.removedIds.length}`);
   console.log(`Duplicate upcoming records removed in canonical output: ${plan.duplicateUpcomingIds.length}`);
   if (dryRun) return plan;
-  if (plan.additions.length + plan.statusChanges.length === 0 && plan.duplicateUpcomingIds.length === 0) {
+  if (plan.additions.length + plan.statusChanges.length === 0 && plan.removedIds.length === 0 && plan.duplicateUpcomingIds.length === 0) {
     console.log('No catalog changes required.');
     return plan;
   }
-  if (!token) throw new Error('No TMDB_API_KEY configured.');
+  if (plan.additions.length + plan.statusChanges.length > 0 && !token) {
+    throw new Error('No TMDB_API_KEY configured.');
+  }
 
   const personCache = loadPersonCache(ROOT);
   const currentById = new Map(movies.map(movie => [movieId(movie), movie]));

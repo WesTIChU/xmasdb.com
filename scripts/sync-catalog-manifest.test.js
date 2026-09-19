@@ -14,7 +14,6 @@ test('manifest validation accepts only unique IDs and allowed statuses', () => {
   assert.doesNotThrow(() => validateManifest(manifest, { movies: collection, upcoming }));
   assert.throws(() => validateManifest([{ tmdbId: 1, status: 'private' }], { movies: collection, upcoming }), /invalid status/);
   assert.throws(() => validateManifest([{ tmdbId: 1, status: 'collection' }, { tmdbId: 1, status: 'collection' }], { movies: collection, upcoming }), /duplicate TMDB ID/);
-  assert.throws(() => validateManifest([{ tmdbId: 1, status: 'collection' }], { movies: collection, upcoming }), /missing current/);
 });
 
 test('manifest planning detects additions and promotions without contacting TMDB', () => {
@@ -42,5 +41,15 @@ test('status changes remove the old record before the imported record is appende
   ], collection, upcoming);
   const prepared = prepareCatalogLists(collection, upcoming, plan);
   assert.deepEqual(prepared.movies, collection);
+  assert.deepEqual(prepared.upcoming, []);
+});
+
+test('removing TMDB ID 1744203 from the manifest removes its canonical record cleanly', () => {
+  const removedMovie = { tmdbId: 1744203, title: 'Removed Movie' };
+  const plan = createSyncPlan([{ tmdbId: 1, status: 'collection' }], [removedMovie], []);
+  const prepared = prepareCatalogLists([removedMovie], [], plan);
+
+  assert.deepEqual(plan.removedIds, [1744203]);
+  assert.deepEqual(prepared.movies, []);
   assert.deepEqual(prepared.upcoming, []);
 });
