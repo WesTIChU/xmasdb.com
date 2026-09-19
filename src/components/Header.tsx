@@ -56,13 +56,7 @@ export const Header: React.FC<HeaderProps> = ({
               title="XmasDB.com — Home"
             >
               <img
-                src="/logo-new.png"
-                onError={(e) => {
-                  const target = e.currentTarget;
-                  if (target.src.endsWith('/logo-new.png')) {
-                    target.src = '/logo.png';
-                  }
-                }}
+                src="/logo.png"
                 alt="XmasDB.com — A curated collection of Christmas movies"
                 className="h-20 sm:h-28 md:h-36 lg:h-44 max-w-full w-auto object-contain mx-auto drop-shadow-xs"
                 referrerPolicy="no-referrer"

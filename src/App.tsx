@@ -67,6 +67,39 @@ type ViewStatus = 'loading' | 'ready' | 'not-found' | 'error';
 
 const EMPTY_BRANDS: MetaBrand[] = [];
 
+function isRecord(value: unknown): value is Record<string, unknown> {
+  return typeof value === 'object' && value !== null;
+}
+
+/** Rejects stale or malformed API/cache data before components render it. */
+function isRoutePayloadValid(descriptor: RouteDescriptor, payload: unknown): boolean {
+  if (!isRecord(payload)) return false;
+
+  switch (descriptor.type) {
+    case 'home':
+      return Array.isArray(payload.comingSoon)
+        && Array.isArray(payload.discovery)
+        && Array.isArray(payload.popularActors)
+        && payload.popularActors.every((group) => isRecord(group) && Array.isArray(group.actors));
+    case 'movies':
+    case 'year-archive':
+    case 'brand':
+      return Array.isArray(payload.movies) && Array.isArray(payload.years);
+    case 'movie':
+      return isRecord(payload.movie)
+        && Array.isArray(payload.movie.cast)
+        && Array.isArray(payload.related);
+    case 'actor':
+      return isRecord(payload.actor) && Array.isArray(payload.filmography);
+    case 'feeds':
+      return Array.isArray(payload.years)
+        && Array.isArray(payload.populatedBrands)
+        && isRecord(payload.counts);
+    default:
+      return false;
+  }
+}
+
 function parseRoute(currentPath: string): RouteDescriptor {
   const rawPath = currentPath.split('?')[0].trim();
   const clean = rawPath.replace(/^\/+|\/+$/g, '');
@@ -193,9 +226,9 @@ export default function App() {
   const [view, setView] = useState<{ url: string; status: ViewStatus; payload: unknown }>(() => {
     if (!requestUrl) return { url: '', status: 'not-found', payload: undefined };
     const cached = peekResolved<unknown>(requestUrl);
-    return cached !== undefined
+    return cached !== undefined && isRoutePayloadValid(descriptor, cached)
       ? { url: requestUrl, status: 'ready', payload: cached }
-      : { url: requestUrl, status: 'loading', payload: undefined };
+      : { url: requestUrl, status: cached === undefined ? 'loading' : 'error', payload: undefined };
   });
 
   useEffect(() => {
@@ -206,7 +239,11 @@ export default function App() {
 
     const cached = peekResolved<unknown>(requestUrl);
     if (cached !== undefined) {
-      setView({ url: requestUrl, status: 'ready', payload: cached });
+      setView({
+        url: requestUrl,
+        status: isRoutePayloadValid(descriptor, cached) ? 'ready' : 'error',
+        payload: isRoutePayloadValid(descriptor, cached) ? cached : undefined,
+      });
       return;
     }
 
@@ -214,6 +251,9 @@ export default function App() {
     setView({ url: requestUrl, status: 'loading', payload: undefined });
     fetchUrl<unknown>(requestUrl)
       .then((payload) => {
+        if (!isRoutePayloadValid(descriptor, payload)) {
+          throw new Error(`Invalid API payload for ${requestUrl}`);
+        }
         if (active) setView({ url: requestUrl, status: 'ready', payload });
       })
       .catch((error) => {
@@ -227,9 +267,14 @@ export default function App() {
     };
   }, [requestUrl]);
 
+  // A navigation changes requestUrl before the loading effect runs. Do not
+  // render the previous route's ready payload as the new route's data.
+  const isCurrentView = view.url === requestUrl;
+  const currentViewStatus: ViewStatus = isCurrentView ? view.status : 'loading';
+
   // Keep legacy movie/actor URLs canonical after the entity resolves.
   useEffect(() => {
-    if (view.status !== 'ready' || typeof window === 'undefined') return;
+    if (!isCurrentView || view.status !== 'ready' || typeof window === 'undefined') return;
     if (descriptor.type === 'movie') {
       const movie = (view.payload as Partial<MovieDetailPayload>).movie;
       if (!movie) return;
@@ -241,10 +286,11 @@ export default function App() {
       const canonical = getActorPath(actor.tmdbPersonId, actor.slug);
       if (window.location.pathname !== canonical) window.history.replaceState({}, '', canonical);
     }
-  }, [descriptor, view]);
+  }, [descriptor, view, isCurrentView]);
 
   // Dynamic SEO and Structured Data updates on route change
   useEffect(() => {
+    if (!isCurrentView) return;
     if (descriptor.type === 'not-found' || view.status === 'not-found') {
       updateSeoTags({
         title: 'Page Not Found | XmasDB',
@@ -363,10 +409,11 @@ export default function App() {
         canonicalPath: getFeedsPath(),
       });
     }
-  }, [descriptor, view, meta]);
+  }, [descriptor, view, meta, isCurrentView]);
 
   // Correct out-of-range page / unsupported perPage values after the server resolves.
   const listingPayload =
+    isCurrentView &&
     view.status === 'ready' &&
     (descriptor.type === 'movies' || descriptor.type === 'year-archive' || descriptor.type === 'brand')
       ? (view.payload as CatalogueListing)
@@ -497,11 +544,11 @@ export default function App() {
               />
             )}
           </div>
-        ) : view.status === 'loading' ? (
+        ) : currentViewStatus === 'loading' ? (
           <div className="py-24 text-center text-[#736B63] font-body" aria-live="polite">
             Loading&hellip;
           </div>
-        ) : view.status === 'error' ? (
+        ) : currentViewStatus === 'error' ? (
           <div className="py-24 text-center font-body text-[#736B63]">
             <p className="mb-3">Something went wrong loading this page.</p>
             <button
@@ -512,7 +559,7 @@ export default function App() {
               Reload
             </button>
           </div>
-        ) : view.status === 'not-found' || descriptor.type === 'not-found' ? (
+        ) : currentViewStatus === 'not-found' || descriptor.type === 'not-found' ? (
           <NotFoundPage onNavigate={navigate} />
         ) : (
           <>
@@ -529,7 +576,7 @@ export default function App() {
                 </div>
 
                 <YearFilter
-                  years={listingPayload.years}
+                  years={listingPayload.years ?? []}
                   selectedYear={null}
                   onSelectYear={(year) => navigate(year ? getYearPath(year) : getMoviesPath())}
                 />
@@ -565,7 +612,7 @@ export default function App() {
                 </div>
 
                 <YearFilter
-                  years={listingPayload.years}
+                  years={listingPayload.years ?? []}
                   selectedYear={descriptor.year}
                   onSelectYear={(year) => navigate(year ? getYearPath(year) : getMoviesPath())}
                 />
@@ -608,7 +655,7 @@ export default function App() {
                   </div>
 
                   <YearFilter
-                    years={listingPayload.years}
+                    years={listingPayload.years ?? []}
                     selectedYear={descriptor.year}
                     brandSlug={brand.slug}
                     onSelectYear={(year) => navigate(getNetworkPath(brand.slug, year))}
@@ -642,13 +689,13 @@ export default function App() {
               );
             })()}
 
-            {descriptor.type === 'movie' && view.status === 'ready' && (() => {
+            {descriptor.type === 'movie' && currentViewStatus === 'ready' && (() => {
               const payload = view.payload as Partial<MovieDetailPayload>;
               if (!payload.movie) return <NotFoundPage onNavigate={navigate} />;
               return <MovieDetail movie={payload.movie} related={Array.isArray(payload.related) ? payload.related : []} onNavigate={navigate} />;
             })()}
 
-            {descriptor.type === 'actor' && view.status === 'ready' && (() => {
+            {descriptor.type === 'actor' && currentViewStatus === 'ready' && (() => {
               const payload = view.payload as Partial<ActorDetailPayload>;
               if (!payload.actor) return <NotFoundPage onNavigate={navigate} />;
               return (
@@ -662,7 +709,7 @@ export default function App() {
               );
             })()}
 
-            {descriptor.type === 'feeds' && view.status === 'ready' && (
+            {descriptor.type === 'feeds' && currentViewStatus === 'ready' && (
               <FeedsPage meta={view.payload as FeedsMetaPayload} />
             )}
           </>

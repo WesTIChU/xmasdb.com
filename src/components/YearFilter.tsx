@@ -10,7 +10,7 @@ interface YearFilterProps {
 }
 
 export const YearFilter: React.FC<YearFilterProps> = ({
-  years,
+  years = [],
   selectedYear,
   onSelectYear,
   brandSlug,
