@@ -6,6 +6,7 @@
 
 import { calculateActorAge, formatCastCardSubtitle, getActorProfileImageUrl, PLACEHOLDER_ACTOR_PHOTO } from './actor-utils.js';
 import { getActorUrl, getMovieUrl } from './movie-url.js';
+import { DETAIL_GENERIC_POSTER, getPosterFallback } from './poster-utils.js';
 
 document.addEventListener('DOMContentLoaded', async () => {
   const params = new URLSearchParams(window.location.search);
@@ -204,7 +205,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     // Poster
     const posterEl = document.getElementById('detail-poster');
-    posterEl.src = m.poster || 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="300" height="450" viewBox="0 0 300 450"><rect width="300" height="450" fill="%23e5e5e5"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="sans-serif" font-size="16" fill="%23888888">No Poster Available</text></svg>';
+    posterEl.src = m.poster || getPosterFallback(m, false, DETAIL_GENERIC_POSTER);
     posterEl.alt = `${m.title} Poster`;
 
     // Update Canonical URL and Address Bar

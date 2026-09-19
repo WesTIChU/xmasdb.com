@@ -205,6 +205,11 @@
   flex-wrap: wrap;
 }
 
+.movie-poster-col .detail-links-row {
+  justify-content: center;
+  margin-top: 12px;
+}
+
 .external-btn {
   display: inline-flex;
   align-items: center;

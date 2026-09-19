@@ -16,6 +16,7 @@
 import { calculateActorAge, normalizeSearchText, getActorProfileImageUrl, PLACEHOLDER_ACTOR_PHOTO } from './actor-utils.js';
 import { getActorUrl, getMovieUrl } from './movie-url.js';
 import { getPublicMovies } from './public-movies.js';
+import { CARD_GENERIC_POSTER, getPosterFallback } from './poster-utils.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   const moviesGrid = document.getElementById('movies-grid');
@@ -830,7 +831,7 @@ document.addEventListener('DOMContentLoaded', () => {
     img.alt = `${movie.title} Poster`;
     img.loading = 'lazy';
     img.referrerPolicy = 'no-referrer';
-    const fallbackPoster = isUpcoming ? '/images/upcoming-placeholder.webp' : 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="300" height="450" viewBox="0 0 300 450"><rect width="300" height="450" fill="%23e5e5e5"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="sans-serif" font-size="16" fill="%23888888">No Poster</text></svg>';
+    const fallbackPoster = getPosterFallback(movie, isUpcoming, CARD_GENERIC_POSTER);
     img.src = movie.poster || fallbackPoster;
     img.onerror = () => {
       img.onerror = null;
