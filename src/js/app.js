@@ -830,10 +830,11 @@ document.addEventListener('DOMContentLoaded', () => {
     img.alt = `${movie.title} Poster`;
     img.loading = 'lazy';
     img.referrerPolicy = 'no-referrer';
-    img.src = movie.poster || 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="300" height="450" viewBox="0 0 300 450"><rect width="300" height="450" fill="%23e5e5e5"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="sans-serif" font-size="16" fill="%23888888">No Poster</text></svg>';
+    const fallbackPoster = isUpcoming ? '/images/upcoming-placeholder.webp' : 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="300" height="450" viewBox="0 0 300 450"><rect width="300" height="450" fill="%23e5e5e5"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="sans-serif" font-size="16" fill="%23888888">No Poster</text></svg>';
+    img.src = movie.poster || fallbackPoster;
     img.onerror = () => {
       img.onerror = null;
-      img.src = 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="300" height="450" viewBox="0 0 300 450"><rect width="300" height="450" fill="%23e5e5e5"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="sans-serif" font-size="16" fill="%23888888">No Poster</text></svg>';
+      img.src = fallbackPoster;
     };
     posterLink.appendChild(img);
     card.appendChild(posterLink);
