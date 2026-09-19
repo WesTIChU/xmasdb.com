@@ -1,10 +1,13 @@
 import React, { useState, useEffect, useRef, useMemo } from 'react';
 import { Search, X, Film, User } from 'lucide-react';
-import { MOVIES } from '../data/movies';
-import { getAllActors } from '../data/actors';
+import type {
+  SearchIndexPayload,
+  SearchMovieEntry,
+  SearchPersonEntry,
+} from '../api/types';
+import { SEARCH_INDEX_URL, fetchSearchIndex, peekResolved } from '../api/client';
 import { getBrandById } from '../data/brands';
 import { getMoviePath, getActorPath } from '../utils/urls';
-import { Movie, Actor } from '../types';
 import { getMoviePoster } from '../utils/posters';
 
 interface SearchAutocompleteProps {
@@ -14,8 +17,8 @@ interface SearchAutocompleteProps {
 }
 
 type AutocompleteItem =
-  | { type: 'movie'; movie: Movie }
-  | { type: 'actor'; actor: Actor; movieCount: number }
+  | { type: 'movie'; movie: SearchMovieEntry }
+  | { type: 'actor'; actor: SearchPersonEntry; movieCount: number }
   | { type: 'view-all'; total: number };
 
 // Helper to subtly highlight matched query substring
@@ -45,7 +48,7 @@ function highlightMatch(text: string, query: string) {
 }
 
 // Fallback image item for movies with error handling
-const MoviePosterThumbnail: React.FC<{ movie: Movie; brandName?: string }> = ({
+const MoviePosterThumbnail: React.FC<{ movie: SearchMovieEntry; brandName?: string }> = ({
   movie,
   brandName,
 }) => {
@@ -78,9 +81,9 @@ const MoviePosterThumbnail: React.FC<{ movie: Movie; brandName?: string }> = ({
 };
 
 // Fallback image item for actors with error handling
-const ActorProfileThumbnail: React.FC<{ actor: Actor }> = ({ actor }) => {
+const ActorProfileThumbnail: React.FC<{ actor: SearchPersonEntry }> = ({ actor }) => {
   const [imgError, setImgError] = useState(false);
-  const photo = actor.profileUrl || actor.photoUrl;
+  const photo = actor.photoUrl;
 
   if (imgError || !photo) {
     return (
@@ -111,53 +114,59 @@ export const SearchAutocomplete: React.FC<SearchAutocompleteProps> = ({
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedIndex, setSelectedIndex] = useState(-1);
+  const [searchIndex, setSearchIndex] = useState<SearchIndexPayload | null>(
+    () => peekResolved<SearchIndexPayload>(SEARCH_INDEX_URL) ?? null
+  );
   const containerRef = useRef<HTMLDivElement | null>(null);
   const inputRef = useRef<HTMLInputElement | null>(null);
-
-  // Precompute actor Christmas movie counts in XmasDB
-  const actorMovieCounts = useMemo(() => {
-    const map = new Map<string, number>();
-    for (const movie of MOVIES) {
-      for (const member of movie.cast) {
-        const slug = member.slug.toLowerCase().trim();
-        map.set(slug, (map.get(slug) || 0) + 1);
-      }
-    }
-    return map;
-  }, []);
-
-  const allActors = useMemo(() => getAllActors(), []);
 
   // Filter movies and actors locally with instant response
   const query = searchQuery.trim().toLowerCase();
   const shouldSearch = query.length >= 2;
+  const isLoadingIndex = shouldSearch && searchIndex === null;
+
+  // Load the compact autocomplete index lazily — once, on first real search.
+  useEffect(() => {
+    if (!shouldSearch || searchIndex) return;
+    let active = true;
+    fetchSearchIndex()
+      .then((index) => {
+        if (active) setSearchIndex(index);
+      })
+      .catch(() => undefined);
+    return () => {
+      active = false;
+    };
+  }, [shouldSearch, searchIndex]);
 
   const { matchingMovies, matchingActors } = useMemo(() => {
-    if (!shouldSearch) {
-      return { matchingMovies: [], matchingActors: [] };
+    if (!shouldSearch || !searchIndex) {
+      return { matchingMovies: [] as SearchMovieEntry[], matchingActors: [] as SearchPersonEntry[] };
     }
 
-    // Match movies: title matches take priority, then synopsis and cast
-    const movies = MOVIES.filter((m) => {
-      const titleMatch = m.title.toLowerCase().includes(query);
-      const castMatch = m.cast.some((c) => c.name.toLowerCase().includes(query));
-      return titleMatch || castMatch;
-    }).sort((a, b) => {
-      const aTitleMatch = a.title.toLowerCase().includes(query);
-      const bTitleMatch = b.title.toLowerCase().includes(query);
-      if (aTitleMatch && !bTitleMatch) return -1;
-      if (!aTitleMatch && bTitleMatch) return 1;
-      return b.year - a.year;
-    });
+    // Match movies: title matches take priority, then cast-name terms.
+    const movies = searchIndex.movies
+      .filter((m) => {
+        const titleMatch = m.title.toLowerCase().includes(query);
+        const castMatch = m.terms.includes(query);
+        return titleMatch || castMatch;
+      })
+      .sort((a, b) => {
+        const aTitleMatch = a.title.toLowerCase().includes(query);
+        const bTitleMatch = b.title.toLowerCase().includes(query);
+        if (aTitleMatch && !bTitleMatch) return -1;
+        if (!aTitleMatch && bTitleMatch) return 1;
+        return b.year - a.year;
+      });
 
     // Match actors: name matches
-    const actors = allActors.filter((a) => a.name.toLowerCase().includes(query));
+    const actors = searchIndex.people.filter((a) => a.name.toLowerCase().includes(query));
 
     return {
       matchingMovies: movies,
       matchingActors: actors,
     };
-  }, [query, shouldSearch, allActors]);
+  }, [query, shouldSearch, searchIndex]);
 
   const displayedMovies = useMemo(() => matchingMovies.slice(0, 5), [matchingMovies]);
   const displayedActors = useMemo(() => matchingActors.slice(0, 5), [matchingActors]);
@@ -178,8 +187,7 @@ export const SearchAutocomplete: React.FC<SearchAutocompleteProps> = ({
     });
 
     displayedActors.forEach((actor) => {
-      const count = actorMovieCounts.get(actor.slug.toLowerCase()) || 0;
-      items.push({ type: 'actor', actor, movieCount: count });
+      items.push({ type: 'actor', actor, movieCount: actor.movieCount });
     });
 
     if (hasAdditionalResults) {
@@ -191,7 +199,6 @@ export const SearchAutocomplete: React.FC<SearchAutocompleteProps> = ({
     shouldSearch,
     displayedMovies,
     displayedActors,
-    actorMovieCounts,
     hasAdditionalResults,
     totalResultsCount,
   ]);
@@ -321,7 +328,11 @@ export const SearchAutocomplete: React.FC<SearchAutocompleteProps> = ({
           role="listbox"
           className="absolute top-full left-0 right-0 mt-1.5 z-50 bg-[#FFFDF9] border border-[#DCD3C7] rounded-lg shadow-lg overflow-hidden max-h-[72vh] overflow-y-auto text-left"
         >
-          {selectableItems.length === 0 ? (
+          {isLoadingIndex ? (
+            <div className="p-4 text-center text-xs sm:text-sm text-[#736B63] font-body">
+              Searching&hellip;
+            </div>
+          ) : selectableItems.length === 0 ? (
             <div className="p-4 text-center text-xs sm:text-sm text-[#736B63] font-body">
               No Christmas movies or actors found matching &ldquo;{searchQuery}&rdquo;.
             </div>
@@ -385,7 +396,7 @@ export const SearchAutocomplete: React.FC<SearchAutocompleteProps> = ({
                     {displayedActors.map((actor, idx) => {
                       const itemIndex = displayedMovies.length + idx;
                       const isSelected = selectedIndex === itemIndex;
-                      const count = actorMovieCounts.get(actor.slug.toLowerCase()) || 0;
+                      const count = actor.movieCount;
                       const movieCountText = `${count} ${count === 1 ? 'Christmas movie' : 'Christmas movies'}`;
                       const path = getActorPath(actor.tmdbPersonId, actor.slug);
 

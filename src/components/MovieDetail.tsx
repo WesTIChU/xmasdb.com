@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
-import { ExternalLink, Calendar, Clock, Tv, Film, Play } from 'lucide-react';
-import { Movie, Trailer } from '../types';
+import { ExternalLink, Calendar, Clock, Tv, Film, Play, Star, Clapperboard } from 'lucide-react';
+import type { ListingMovie, MovieDetailMovie } from '../api/types';
+import { Trailer } from '../types';
 import { getBrandById } from '../data/brands';
-import { getActorBySlug, getTmdbPersonIdForSlug } from '../data/actors';
-import { getMoviesByBrand, getMovieBySlug, getMovieByTmdbId } from '../data/movies';
 import { getNetworkPath, getMoviesPath, getActorPath, getMoviePath } from '../utils/urls';
 import { ComingSoonPoster } from './ComingSoonPoster';
 import { formatMoviePremiereDate } from '../utils/catalogue-lifecycle';
@@ -13,11 +12,12 @@ import { BackNavigation } from './BackNavigation';
 import { getMoviePoster } from '../utils/posters';
 
 interface MovieDetailProps {
-  movie: Movie;
+  movie: MovieDetailMovie;
+  related: ListingMovie[];
   onNavigate: (path: string) => void;
 }
 
-export const MovieDetail: React.FC<MovieDetailProps> = ({ movie, onNavigate }) => {
+export const MovieDetail: React.FC<MovieDetailProps> = ({ movie, related, onNavigate }) => {
   const brand = getBrandById(movie.brandId);
 
   // Collect available trailers
@@ -47,13 +47,6 @@ export const MovieDetail: React.FC<MovieDetailProps> = ({ movie, onNavigate }) =
   const hasValidTmdbId = typeof movie.tmdbId === 'number' && movie.tmdbId > 0;
 
   const showComingSoon = hasImageError || !poster;
-
-  // Related movies from the same brand (up to 4, excluding current movie)
-  const relatedMovies = React.useMemo(() => {
-    return getMoviesByBrand(movie.brandId)
-      .filter((m) => m.id !== movie.id && m.slug !== movie.slug)
-      .slice(0, 4);
-  }, [movie.brandId, movie.id, movie.slug]);
 
   return (
     <div id="movie-detail-view" className="py-6 sm:py-10 max-w-4xl mx-auto">
@@ -95,6 +88,7 @@ export const MovieDetail: React.FC<MovieDetailProps> = ({ movie, onNavigate }) =
                 src={poster}
                 alt={movie.title}
                 referrerPolicy="no-referrer"
+                fetchPriority="high"
                 className="w-full h-full object-cover"
                 onError={() => {
                   setHasImageError(true);
@@ -163,7 +157,9 @@ export const MovieDetail: React.FC<MovieDetailProps> = ({ movie, onNavigate }) =
 
             {typeof movie.voteAverage === 'number' && movie.voteAverage > 0 && (
               <div className="flex items-center justify-between">
-                <span className="text-[#8C8379]">Rating</span>
+                <span className="text-[#8C8379] flex items-center gap-1.5">
+                  <Star className="w-3.5 h-3.5" /> Rating
+                </span>
                 <span className="font-medium text-[#23211E] px-1.5 py-0.5 rounded bg-[#EFE9DF] text-xs">
                   ★ {movie.voteAverage.toFixed(1)}
                 </span>
@@ -172,7 +168,9 @@ export const MovieDetail: React.FC<MovieDetailProps> = ({ movie, onNavigate }) =
 
             {movie.director && (
               <div className="flex items-center justify-between">
-                <span className="text-[#8C8379]">Director</span>
+                <span className="text-[#8C8379] flex items-center gap-1.5">
+                  <Clapperboard className="w-3.5 h-3.5" /> Director
+                </span>
                 <span className="font-medium text-[#23211E]">{movie.director}</span>
               </div>
             )}
@@ -222,10 +220,9 @@ export const MovieDetail: React.FC<MovieDetailProps> = ({ movie, onNavigate }) =
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4" id="movie-cast-list">
               {movie.cast.map((member) => {
-                const actorTmdbId = member.tmdbPersonId || getTmdbPersonIdForSlug(member.slug);
+                const actorTmdbId = member.resolvedTmdbPersonId ?? member.tmdbPersonId ?? 0;
                 const actorPath = getActorPath(actorTmdbId, member.slug);
-                const knownActor = getActorBySlug(member.slug);
-                const photoSrc = knownActor?.photoUrl || member.profileUrl;
+                const photoSrc = member.resolvedProfileUrl || member.profileUrl;
 
                 return (
                   <div
@@ -364,7 +361,7 @@ export const MovieDetail: React.FC<MovieDetailProps> = ({ movie, onNavigate }) =
       </div>
 
       {/* MORE FROM {BRAND} Section */}
-      {brand && relatedMovies.length > 0 && (
+      {brand && related.length > 0 && (
         <section
           id="related-brand-movies-section"
           aria-labelledby="related-brand-movies-heading"
@@ -384,15 +381,12 @@ export const MovieDetail: React.FC<MovieDetailProps> = ({ movie, onNavigate }) =
             id="related-brand-movies-grid"
             className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6"
           >
-            {relatedMovies.map((relMovie) => (
+            {related.map((relMovie) => (
               <MovieCard
                 key={relMovie.id}
                 movie={relMovie}
                 onSelectMovie={(slug, tmdbId) => {
-                  const target = tmdbId ? getMovieByTmdbId(tmdbId) : getMovieBySlug(slug);
-                  if (target) {
-                    onNavigate(getMoviePath(target.tmdbId, target.slug));
-                  }
+                  onNavigate(getMoviePath(tmdbId || relMovie.tmdbId, slug));
                 }}
               />
             ))}

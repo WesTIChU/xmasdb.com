@@ -1,12 +1,6 @@
 import React, { useState } from 'react';
 import { Check, Copy, ExternalLink, Film } from 'lucide-react';
-import {
-  getRadarrAllFeedJson,
-  getRadarrNetworkFeedJson,
-  getRadarrYearFeedJson,
-} from '../utils/feeds';
-import { MOVIES, getAllYearsForBrand } from '../data/movies';
-import { BRANDS, getBrandById, getPopulatedBrands } from '../data/brands';
+import type { FeedsMetaPayload } from '../api/types';
 import { SITE_ORIGIN } from '../utils/urls';
 
 interface FeedCardProps {
@@ -78,13 +72,13 @@ function FeedCard({
   );
 }
 
-export const FeedsPage: React.FC = () => {
+export const FeedsPage: React.FC<{ meta: FeedsMetaPayload }> = ({ meta }) => {
   const [copiedId, setCopiedId] = useState<string | null>(null);
-  const [selectedYear, setSelectedYear] = useState<number>(2025);
+  const [selectedYear, setSelectedYear] = useState<number>(() =>
+    meta.years.includes(2025) ? 2025 : meta.years[0] ?? 2025
+  );
   const origin = typeof window !== 'undefined' ? window.location.origin : SITE_ORIGIN;
-  const availableYears = getAllYearsForBrand();
-  const populatedBrandIds = new Set(getPopulatedBrands(MOVIES).map((brand) => brand.id));
-  const configuredBrandIds = BRANDS.map((brand) => brand.id);
+  const availableYears = meta.years;
 
   const copyUrl = async (id: string, url: string) => {
     try {
@@ -96,23 +90,20 @@ export const FeedsPage: React.FC = () => {
     }
   };
 
-  const brandFeeds = configuredBrandIds
-    .filter((brandId) => populatedBrandIds.has(brandId))
-    .map((brandId) => {
-      const brand = getBrandById(brandId)!;
-      const endpoint = `/json/${brand.slug}.json`;
-      const count = JSON.parse(getRadarrNetworkFeedJson(brand.id)).length;
-      return {
-        id: `radarr-${brand.id}`,
-        title: brand.shortName.toUpperCase(),
-        description: feedDescriptions[brand.id],
-        endpoint,
-        count,
-      };
-    });
+  const brandFeeds = meta.populatedBrands.map((brand) => {
+    const endpoint = `/json/${brand.slug}.json`;
+    const count = meta.counts.brands[brand.id] ?? 0;
+    return {
+      id: `radarr-${brand.id}`,
+      title: brand.shortName.toUpperCase(),
+      description: feedDescriptions[brand.id] ?? `${brand.name} Christmas movies in XmasDB.`,
+      endpoint,
+      count,
+    };
+  });
 
   const yearEndpoint = `/json/year/${selectedYear}.json`;
-  const yearCount = JSON.parse(getRadarrYearFeedJson(selectedYear)).length;
+  const yearCount = meta.counts.years[String(selectedYear)] ?? 0;
 
   return (
     <div id="feeds-page" className="mx-auto max-w-4xl px-0 py-7 text-left sm:py-10">
@@ -141,7 +132,7 @@ export const FeedsPage: React.FC = () => {
       <section className="mb-8" aria-labelledby="collections-heading">
         <div className="mb-3 flex items-center justify-between border-b border-[#E7DFD5] pb-2">
           <h2 id="collections-heading" className="font-heading text-xl font-semibold text-[#1A3D2F]">CHOOSE A COLLECTION</h2>
-          <span className="font-sans-clean text-xs text-[#736B63]">{JSON.parse(getRadarrAllFeedJson()).length} total movies</span>
+          <span className="font-sans-clean text-xs text-[#736B63]">{meta.counts.all} total movies</span>
         </div>
         <div className="grid gap-3 sm:grid-cols-2">
           <FeedCard
@@ -149,7 +140,7 @@ export const FeedsPage: React.FC = () => {
             title="ALL MOVIES"
             description="Every eligible Christmas movie in XmasDB."
             endpoint="/json/all.json"
-            count={JSON.parse(getRadarrAllFeedJson()).length}
+            count={meta.counts.all}
             origin={origin}
             copiedId={copiedId}
             onCopy={copyUrl}

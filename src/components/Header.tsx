@@ -1,7 +1,6 @@
 import React from 'react';
+import type { MetaBrand } from '../api/types';
 import { getMoviesPath, getNetworkPath, getFeedsPath } from '../utils/urls';
-import { MOVIES } from '../data/movies';
-import { getPopulatedBrands } from '../data/brands';
 import { SearchAutocomplete } from './SearchAutocomplete';
 import { NavSquiggle } from './NavigationLink';
 
@@ -10,6 +9,7 @@ interface HeaderProps {
   onNavigate: (path: string) => void;
   searchQuery: string;
   onSearchChange: (query: string) => void;
+  populatedBrands: MetaBrand[];
 }
 
 export const Header: React.FC<HeaderProps> = ({
@@ -17,6 +17,7 @@ export const Header: React.FC<HeaderProps> = ({
   onNavigate,
   searchQuery,
   onSearchChange,
+  populatedBrands,
 }) => {
   // Normalize current path
   const normalizedPath = (currentPath.replace(/\/+$/, '') || '/') + '/';
@@ -76,7 +77,7 @@ export const Header: React.FC<HeaderProps> = ({
           className="flex flex-wrap items-center justify-center gap-x-1 sm:gap-x-2 gap-y-1.5 text-sm sm:text-[17px] font-body font-medium mb-3 text-[#4A433B]"
           aria-label="Main Navigation"
         >
-          {getPopulatedBrands(MOVIES).map((brand, index) => {
+          {populatedBrands.map((brand, index) => {
             const isActive = isBrandActive(brand.slug);
             return (
               <React.Fragment key={brand.id}>

@@ -1,16 +1,18 @@
 import React, { useState } from 'react';
-import { Movie } from '../types';
+import type { ListingMovie } from '../api/types';
 import { ComingSoonPoster } from './ComingSoonPoster';
 import { getBrandById } from '../data/brands';
 import { getMoviePath } from '../utils/urls';
 import { getMoviePoster } from '../utils/posters';
 
 interface MovieCardProps {
-  movie: Movie;
+  movie: ListingMovie;
   onSelectMovie: (slug: string, tmdbId?: number) => void;
+  /** Eagerly loads this card's poster at high priority (use for above-the-fold cards). */
+  priority?: boolean;
 }
 
-export const MovieCard: React.FC<MovieCardProps> = ({ movie, onSelectMovie }) => {
+export const MovieCard: React.FC<MovieCardProps> = ({ movie, onSelectMovie, priority = false }) => {
   const [hasImageError, setHasImageError] = useState(false);
   const brand = getBrandById(movie.brandId);
   const canonicalPath = getMoviePath(movie.tmdbId, movie.slug);
@@ -40,7 +42,9 @@ export const MovieCard: React.FC<MovieCardProps> = ({ movie, onSelectMovie }) =>
             <img
               src={poster}
               alt={`Poster for ${movie.title}`}
-              loading="lazy"
+              loading={priority ? 'eager' : 'lazy'}
+              fetchPriority={priority ? 'high' : undefined}
+              decoding="async"
               referrerPolicy="no-referrer"
               className="h-full w-full object-cover object-center group-hover:scale-101 transition-transform duration-300"
               onError={() => {

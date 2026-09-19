@@ -1,5 +1,6 @@
 import 'dotenv/config';
 import express from 'express';
+import compression from 'compression';
 import path from 'path';
 import fs from 'fs';
 import { createServer as createViteServer } from 'vite';
@@ -18,6 +19,17 @@ import {
   getRssFeedXml,
   getSitemapXml,
 } from './src/utils/feeds';
+import { parseCatalogueQuery } from './src/utils/catalogue-pagination';
+import {
+  buildCatalogueMeta,
+  buildCatalogueListing,
+  buildHomePayload,
+  buildMovieDetail,
+  buildActorDetail,
+  buildSearchIndex,
+  buildSearchResults,
+  buildFeedsMeta,
+} from './src/server/catalogue-api';
 
 function isKnownPagePath(rawPath: string): boolean {
   const clean = rawPath.replace(/^\/+|\/+$/g, '');
@@ -67,6 +79,10 @@ async function startServer() {
     next();
   });
 
+  // Compress text-like responses (HTML, CSS, JS, JSON, XML, SVG) with gzip.
+  // Images (JPEG/PNG/WebP) are already compressed and left untouched.
+  app.use(compression());
+
   // Health check
   app.get('/api/health', (_req, res) => {
     res.json({ status: 'ok', service: 'XmasDB.com' });
@@ -77,6 +93,7 @@ async function startServer() {
     const pngPath = path.join(process.cwd(), 'public', 'logo.png');
     if (fs.existsSync(pngPath)) {
       res.setHeader('Content-Type', 'image/png');
+      res.setHeader('Cache-Control', 'public, max-age=604800');
       return res.sendFile(pngPath);
     }
     next();
@@ -86,6 +103,7 @@ async function startServer() {
     const svgPath = path.join(process.cwd(), 'public', 'logo.svg');
     if (fs.existsSync(svgPath)) {
       res.setHeader('Content-Type', 'image/svg+xml');
+      res.setHeader('Cache-Control', 'public, max-age=604800');
       return res.sendFile(svgPath);
     }
     next();
@@ -205,6 +223,83 @@ async function startServer() {
     res.send(getRssFeedXml(brand));
   });
 
+  // =========================================================================
+  // LIGHTWEIGHT CLIENT DATA API
+  //
+  // The browser no longer bundles the full catalogue. These endpoints derive
+  // compact, per-page payloads from the same canonical MOVIES / actors data.
+  // =========================================================================
+
+  const sendJson = (res: express.Response, payload: unknown, status = 200) => {
+    res.status(status).setHeader('Content-Type', 'application/json; charset=utf-8');
+    // Catalogue data can be re-seeded without a frontend rebuild, so allow the
+    // browser to reuse responses briefly while revalidating in the background.
+    res.setHeader('Cache-Control', 'public, max-age=300, stale-while-revalidate=86400');
+    res.send(JSON.stringify(payload));
+  };
+
+  const toCatalogueSearch = (query: express.Request['query']): string => {
+    const params = new URLSearchParams();
+    for (const [key, value] of Object.entries(query)) {
+      if (typeof value === 'string') params.set(key, value);
+    }
+    const search = params.toString();
+    return search ? `?${search}` : '';
+  };
+
+  // Global catalogue metadata (header, footer, stats strip).
+  app.get('/api/meta', (_req, res) => sendJson(res, buildCatalogueMeta()));
+
+  // Homepage sections.
+  app.get('/api/home', (_req, res) => sendJson(res, buildHomePayload()));
+
+  // Catalogue listing (all movies, brand pages, year archives).
+  app.get('/api/catalogue', (req, res) => {
+    const catalogueQuery = parseCatalogueQuery(toCatalogueSearch(req.query));
+    const brandSlug = typeof req.query.brand === 'string' ? req.query.brand : undefined;
+    const yearValue = typeof req.query.year === 'string' ? Number(req.query.year) : undefined;
+    const lockedYear = Number.isInteger(yearValue) && (yearValue as number) > 0 ? yearValue : undefined;
+    const listing = buildCatalogueListing(catalogueQuery, brandSlug, lockedYear);
+    if (!listing) return sendJson(res, { error: 'Brand not found' }, 404);
+    return sendJson(res, listing);
+  });
+
+  // Single movie detail (canonical /movie/{tmdbId}/{slug}/ or legacy forms).
+  app.get('/api/movie/:tmdbId/:slug', (req, res) => {
+    const payload = buildMovieDetail(req.params.tmdbId, req.params.slug);
+    if (!payload) return sendJson(res, { error: 'Movie not found' }, 404);
+    return sendJson(res, payload);
+  });
+  app.get('/api/movie/:identifier', (req, res) => {
+    const payload = buildMovieDetail(req.params.identifier);
+    if (!payload) return sendJson(res, { error: 'Movie not found' }, 404);
+    return sendJson(res, payload);
+  });
+
+  // Single actor detail (canonical /actor/{tmdbPersonId}/{slug}/ or legacy forms).
+  app.get('/api/actor/:tmdbPersonId/:slug', (req, res) => {
+    const payload = buildActorDetail(req.params.tmdbPersonId, req.params.slug);
+    if (!payload) return sendJson(res, { error: 'Actor not found' }, 404);
+    return sendJson(res, payload);
+  });
+  app.get('/api/actor/:identifier', (req, res) => {
+    const payload = buildActorDetail(req.params.identifier);
+    if (!payload) return sendJson(res, { error: 'Actor not found' }, 404);
+    return sendJson(res, payload);
+  });
+
+  // Compact autocomplete index (no biographies, synopses or structured cast).
+  app.get(['/api/search-index.json', '/api/search-index'], (_req, res) => sendJson(res, buildSearchIndex()));
+
+  // Full search results for the results view.
+  app.get('/api/search', (req, res) => {
+    const query = typeof req.query.q === 'string' ? req.query.q : '';
+    sendJson(res, buildSearchResults(query));
+  });
+
+  // Feeds page counts.
+  app.get('/api/feeds/meta', (_req, res) => sendJson(res, buildFeedsMeta()));
+
   // Vite middleware for development vs static build for production
   if (process.env.NODE_ENV !== 'production') {
     app.use((req, res, next) => {
@@ -220,10 +315,65 @@ async function startServer() {
     app.use(vite.middlewares);
   } else {
     const distPath = path.join(process.cwd(), 'dist');
-    app.use(express.static(distPath));
+    const indexPath = path.join(distPath, 'index.html');
+
+    // Bootstrap metadata is injected into every HTML response so the header,
+    // footer and stats strip render accurate counts on the very first frame
+    // without a separate request. This is data, not server-rendered markup.
+    const metaBootstrap = `<script>window.__XMASDB_META__=${JSON.stringify(buildCatalogueMeta()).replace(/</g, '\\u003c')};</script>`;
+    const indexHtml = fs
+      .readFileSync(indexPath, 'utf-8')
+      .replace('</head>', `    ${metaBootstrap}\n  </head>`);
+
+    const sendIndexHtml = (res: express.Response, status = 200) => {
+      res.status(status);
+      res.setHeader('Content-Type', 'text/html; charset=utf-8');
+      res.setHeader('Cache-Control', 'no-cache');
+      res.send(indexHtml);
+    };
+
+    // Content-hashed build assets (/assets/*) are immutable by URL and can be cached for a year.
+    app.use('/assets', express.static(path.join(distPath, 'assets'), {
+      maxAge: '1y',
+      immutable: true,
+      fallthrough: true,
+    }));
+
+    // Locally cached artwork (posters, backdrops, people) may be re-seeded in place under a
+    // stable URL, so cache for a week and rely on ETag revalidation rather than immutable.
+    app.use('/images', express.static(path.join(distPath, 'images'), {
+      maxAge: '7d',
+      fallthrough: true,
+    }));
+
+    // Serve ONLY explicitly public root files. The dist directory also contains
+    // the compiled server bundle and its source map, which must never be
+    // reachable over HTTP, so the whole directory is not exposed statically.
+    const publicRootFiles = new Set([
+      'favicon.png',
+      'logo.png',
+      'logo.svg',
+      'logo-all.png',
+      'robots.txt',
+      'site.webmanifest',
+      'manifest.webmanifest',
+    ]);
+    for (const fileName of publicRootFiles) {
+      const filePath = path.join(distPath, fileName);
+      app.get(`/${fileName}`, (_req, res, next) => {
+        if (!fs.existsSync(filePath)) return next();
+        res.setHeader('Cache-Control', 'public, max-age=604800');
+        return res.sendFile(filePath);
+      });
+    }
+
+    // HTML entry points (always revalidated so new deploys reach browsers promptly).
+    app.get(['/', '/index.html'], (_req, res) => sendIndexHtml(res));
+
+    // SEO-friendly deep links: known catalogue paths render the app shell,
+    // unknown paths return a real 404 status.
     app.get('*', (req, res) => {
-      if (!isKnownPagePath(req.path)) res.status(404);
-      res.sendFile(path.join(distPath, 'index.html'));
+      sendIndexHtml(res, isKnownPagePath(req.path) ? 200 : 404);
     });
   }
 

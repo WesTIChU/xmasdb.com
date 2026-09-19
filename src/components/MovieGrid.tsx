@@ -1,9 +1,9 @@
 import React from 'react';
-import { Movie } from '../types';
+import type { ListingMovie } from '../api/types';
 import { MovieCard } from './MovieCard';
 
 interface MovieGridProps {
-  movies: Movie[];
+  movies: ListingMovie[];
   onSelectMovie: (slug: string, tmdbId?: number) => void;
   emptyMessage?: string;
 }
@@ -26,11 +26,12 @@ export const MovieGrid: React.FC<MovieGridProps> = ({
       id="movie-grid"
       className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 max-w-4xl mx-auto"
     >
-      {movies.map((movie) => (
+      {movies.map((movie, index) => (
         <MovieCard
           key={movie.id}
           movie={movie}
           onSelectMovie={onSelectMovie}
+          priority={index < 3}
         />
       ))}
     </div>

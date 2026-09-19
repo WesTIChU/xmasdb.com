@@ -1,20 +1,26 @@
 import React, { useState } from 'react';
-import { BRANDS } from '../data/brands';
-import { getPopularActorsByBrand, BrandActorStat } from '../data/actors';
+import type { PopularActorsGroup } from '../api/types';
+import { getBrandById } from '../data/brands';
 import { getActorPath } from '../utils/urls';
 import { NavigationTab } from './NavigationLink';
 
-interface PopularActorsSectionProps { onNavigate: (path: string) => void; }
+interface PopularActorsSectionProps {
+  groups: PopularActorsGroup[];
+  onNavigate: (path: string) => void;
+}
 
-const ActorCircularPortrait: React.FC<{ actor: BrandActorStat['actor'] }> = ({ actor }) => {
+const ActorCircularPortrait: React.FC<{ actor: PopularActorsGroup['actors'][number] }> = ({ actor }) => {
   const [imgError, setImgError] = useState(false);
-  const photo = actor.profileUrl || actor.photoUrl;
+  const photo = actor.photoUrl;
   if (imgError || !photo) return <div className="w-[108px] h-[108px] rounded-full mx-auto flex items-center justify-center bg-[#EFE9DF] border border-[#DDD3C6] text-[#1A3D2F] font-heading text-3xl" aria-hidden="true">{actor.name.charAt(0)}</div>;
   return <div className="w-[108px] h-[108px] rounded-full mx-auto overflow-hidden bg-[#EFE9DF] border border-[#DDD3C6]"><img src={photo} alt={actor.name} loading="lazy" referrerPolicy="no-referrer" onError={() => setImgError(true)} className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300" /></div>;
 };
 
-export const PopularActorsSection: React.FC<PopularActorsSectionProps> = ({ onNavigate }) => {
-  const availableBrands = BRANDS.map((brand) => ({ brand, actors: getPopularActorsByBrand(brand.id, 6) })).filter(({ actors }) => actors.length > 0);
+export const PopularActorsSection: React.FC<PopularActorsSectionProps> = ({ groups, onNavigate }) => {
+  const availableBrands = groups
+    .map((group) => ({ brand: getBrandById(group.brandId), actors: group.actors }))
+    .filter((entry): entry is { brand: NonNullable<ReturnType<typeof getBrandById>>; actors: PopularActorsGroup['actors'] } => Boolean(entry.brand) && entry.actors.length > 0);
+
   const [selectedBrandId, setSelectedBrandId] = useState(availableBrands[0]?.brand.id || '');
   const selected = availableBrands.find(({ brand }) => brand.id === selectedBrandId) || availableBrands[0];
   if (!selected) return null;
@@ -38,12 +44,12 @@ export const PopularActorsSection: React.FC<PopularActorsSectionProps> = ({ onNa
         </div>
       </div>
       <div className="flex md:grid md:grid-cols-6 gap-5 sm:gap-6 overflow-x-auto md:overflow-visible pb-2 md:pb-0 -mx-4 px-4 sm:mx-0 sm:px-0 no-scrollbar">
-        {selected.actors.map(({ actor, movieCount }) => {
+        {selected.actors.map((actor) => {
           const actorPath = getActorPath(actor.tmdbPersonId, actor.slug);
           return <article key={actor.slug} className="w-[120px] md:w-full shrink-0 text-center"><a href={actorPath} onClick={(event) => { event.preventDefault(); onNavigate(actorPath); }} className="group block text-center">
             <ActorCircularPortrait actor={actor} />
             <h3 className="mt-3 font-heading text-sm text-[#1A3D2F] group-hover:text-[#841818] leading-snug">{actor.name}</h3>
-            <p className="mt-1 text-xs text-[#736B63] font-body">{movieCount} {movieCount === 1 ? 'Christmas movie' : 'Christmas movies'}</p>
+            <p className="mt-1 text-xs text-[#736B63] font-body">{actor.movieCount} {actor.movieCount === 1 ? 'Christmas movie' : 'Christmas movies'}</p>
           </a></article>;
         })}
       </div>

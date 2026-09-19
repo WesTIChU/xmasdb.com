@@ -1,15 +1,15 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { X } from 'lucide-react';
-import { getPopulatedBrands } from '../data/brands';
-import { MOVIES } from '../data/movies';
+import type { MetaBrand } from '../api/types';
 import { getNetworkPath, getMoviesPath, getFeedsPath } from '../utils/urls';
 import { NavigationLink, NavSquiggle } from './NavigationLink';
 
 interface FooterProps {
   onNavigate: (path: string) => void;
+  populatedBrands: MetaBrand[];
 }
 
-export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
+export const Footer: React.FC<FooterProps> = ({ onNavigate, populatedBrands }) => {
   const [isPrivacyOpen, setIsPrivacyOpen] = useState(false);
   const privacyTriggerRef = useRef<HTMLButtonElement | null>(null);
   const privacyCloseRef = useRef<HTMLButtonElement | null>(null);
@@ -86,7 +86,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
           <span className="text-[#C8BFB3] select-none">·</span>
           <NavigationLink href={getMoviesPath()} onNavigate={onNavigate} className="text-[#1A3D2F] hover:text-[#B8860B] transition-colors">All Movies</NavigationLink>
           <span className="text-[#C8BFB3] select-none">·</span>
-          {getPopulatedBrands(MOVIES).map((b) => (
+          {populatedBrands.map((b) => (
             <React.Fragment key={b.id}>
               <NavigationLink href={getNetworkPath(b.slug)} onNavigate={onNavigate} className="text-[#1A3D2F] hover:text-[#B8860B] transition-colors">
                 {b.shortName}
@@ -163,6 +163,10 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                   <h3 className="font-heading text-base font-semibold text-[#1A3D2F]">The movie collection is curated</h3>
                   <p className="mt-1.5">The XmasDB catalogue has taken considerable time to research, compile and verify. Movies are gathered and checked from multiple sources.</p>
                   <p className="mt-2">Movie information, artwork and identifiers may come from third-party sources such as TMDB, while XmasDB&apos;s selection, organisation and brand classification are maintained as part of the site&apos;s curated catalogue.</p>
+                </section>
+                <section>
+                  <h3 className="font-heading text-base font-semibold text-[#1A3D2F]">AI assistance</h3>
+                  <p className="mt-1.5">AI tools are used to assist with the development and maintenance of XmasDB, including coding, research and data processing. The movie catalogue itself is human-curated and reviewed.</p>
                 </section>
               </div>
           </div>

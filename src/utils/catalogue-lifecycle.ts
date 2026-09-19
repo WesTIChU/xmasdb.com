@@ -1,10 +1,17 @@
 import { Movie } from '../types';
 
+/** Minimal lifecycle fields shared by full movies and lightweight listing records. */
+export interface MovieLifecycleFields {
+  status?: string;
+  premiereDate?: string;
+  releaseDate?: string;
+}
+
 function utcDateKey(date: Date): string {
   return `${date.getUTCFullYear()}-${String(date.getUTCMonth() + 1).padStart(2, '0')}-${String(date.getUTCDate()).padStart(2, '0')}`;
 }
 
-export function getMoviePremiereDateKey(movie: Movie): string | null {
+export function getMoviePremiereDateKey(movie: MovieLifecycleFields): string | null {
   if (movie.status?.toLowerCase() === 'coming-soon' && !movie.premiereDate) return null;
   const value = movie.premiereDate || movie.releaseDate;
   if (!value || typeof value !== 'string') return null;
@@ -15,12 +22,12 @@ export function getMoviePremiereDateKey(movie: Movie): string | null {
   return utcDateKey(new Date(parsed));
 }
 
-export function isMoviePremierePast(movie: Movie, now: Date = new Date()): boolean {
+export function isMoviePremierePast(movie: MovieLifecycleFields, now: Date = new Date()): boolean {
   const premiereDate = getMoviePremiereDateKey(movie);
   return premiereDate !== null && premiereDate < utcDateKey(now);
 }
 
-export function isFutureComingSoonMovie(movie: Movie, now: Date = new Date()): boolean {
+export function isFutureComingSoonMovie(movie: MovieLifecycleFields, now: Date = new Date()): boolean {
   const premiereDate = getMoviePremiereDateKey(movie);
   return movie.status?.toLowerCase() === 'coming-soon' && (premiereDate === null || premiereDate >= utcDateKey(now));
 }
@@ -32,7 +39,7 @@ export function reconcileMovieLifecycle(movie: Movie, now: Date = new Date()): M
   return movie;
 }
 
-export function formatMoviePremiereDate(movie: Movie): string | null {
+export function formatMoviePremiereDate(movie: MovieLifecycleFields): string | null {
   const dateKey = getMoviePremiereDateKey(movie);
   if (!dateKey) return null;
   const [year, month, day] = dateKey.split('-').map(Number);

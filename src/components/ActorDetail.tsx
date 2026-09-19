@@ -1,6 +1,7 @@
 import React, { useState, useMemo, useRef } from 'react';
 import { ExternalLink, Instagram, Facebook } from 'lucide-react';
-import { Actor, Movie } from '../types';
+import type { ActorFilmographyItem } from '../api/types';
+import { Actor } from '../types';
 import { getMoviesPath, getMoviePath, getActorFeedPath } from '../utils/urls';
 import { BackNavigation } from './BackNavigation';
 import { NavigationLink, NavigationTab } from './NavigationLink';
@@ -8,11 +9,11 @@ import { getMoviePoster } from '../utils/posters';
 import { getBrandById } from '../data/brands';
 import { calculateAge, calculateAgeAtDeath, formatActorDate, isValidActorDate, sanitizeBiography } from '../utils/actor-dates';
 import { ComingSoonPoster } from './ComingSoonPoster';
-import { getActorBackdrop } from '../utils/backdrops';
 
 interface ActorDetailProps {
   actor: Actor;
-  movies: Movie[];
+  filmography: ActorFilmographyItem[];
+  backdropUrl: string | null;
   onNavigate: (path: string) => void;
   onSelectMovie: (slug: string, tmdbId?: number) => void;
 }
@@ -28,7 +29,8 @@ function getSentencePreview(text: string): string {
 
 export const ActorDetail: React.FC<ActorDetailProps> = ({
   actor,
-  movies,
+  filmography,
+  backdropUrl,
   onNavigate,
   onSelectMovie,
 }) => {
@@ -37,12 +39,15 @@ export const ActorDetail: React.FC<ActorDetailProps> = ({
   const [backdropError, setBackdropError] = useState<boolean>(false);
   const [biographyExpanded, setBiographyExpanded] = useState(false);
   const biographyRef = useRef<HTMLDivElement>(null);
-  const actorBackdrop = useMemo(() => getActorBackdrop(movies, actor.tmdbPersonId), [movies, actor.tmdbPersonId]);
+  const actorBackdrop = useMemo(
+    () => (backdropUrl ? { url: backdropUrl } : null),
+    [backdropUrl]
+  );
 
   // Derive unique brands in this actor's XmasDB filmography
   const brandStats = useMemo(() => {
     const map = new Map<string, number>();
-    for (const m of movies) {
+    for (const m of filmography) {
       map.set(m.brandId, (map.get(m.brandId) || 0) + 1);
     }
     return Array.from(map.entries()).map(([brandId, count]) => {
@@ -54,15 +59,15 @@ export const ActorDetail: React.FC<ActorDetailProps> = ({
         count,
       };
     });
-  }, [movies]);
+  }, [filmography]);
 
   // Filter movies based on selected brand
   const filteredMovies = useMemo(() => {
     const selectedMovies = selectedBrandFilter === 'all'
-      ? movies
-      : movies.filter((m) => m.brandId === selectedBrandFilter);
+      ? filmography
+      : filmography.filter((m) => m.brandId === selectedBrandFilter);
     return [...selectedMovies].sort((a, b) => b.year - a.year || b.releaseDate.localeCompare(a.releaseDate));
-  }, [movies, selectedBrandFilter]);
+  }, [filmography, selectedBrandFilter]);
 
   // Age calculations
   const isDeceased = isValidActorDate(actor.deathday);
@@ -116,6 +121,7 @@ export const ActorDetail: React.FC<ActorDetailProps> = ({
                   src={portraitUrl}
                   alt={actor.name}
                   referrerPolicy="no-referrer"
+                  fetchPriority="high"
                   className="w-full h-full object-cover object-center"
                   onError={() => setImageError(true)}
                 />
@@ -167,7 +173,7 @@ export const ActorDetail: React.FC<ActorDetailProps> = ({
 
             {/* XmasDB Catalogue Summary */}
             <div className="mt-2 text-sm font-medium text-[#1A3D2F] tracking-wide">
-              {movies.length} {movies.length === 1 ? 'Christmas Movie' : 'Christmas Movies'} in XmasDB
+              {filmography.length} {filmography.length === 1 ? 'Christmas Movie' : 'Christmas Movies'} in XmasDB
             </div>
 
             {/* Brand Breakdown */}
@@ -278,7 +284,7 @@ export const ActorDetail: React.FC<ActorDetailProps> = ({
               Holiday Filmography
             </h2>
             <p className="text-sm sm:text-base text-[#736B63] font-body mt-1">
-              {movies.length} {movies.length === 1 ? 'Christmas movie' : 'Christmas movies'} featuring {actor.name} in XmasDB
+              {filmography.length} {filmography.length === 1 ? 'Christmas movie' : 'Christmas movies'} featuring {actor.name} in XmasDB
             </p>
           </div>
 
@@ -337,9 +343,7 @@ export const ActorDetail: React.FC<ActorDetailProps> = ({
             {filteredMovies.map((movie) => {
               const brand = getBrandById(movie.brandId);
               const canonicalPath = getMoviePath(movie.tmdbId, movie.slug);
-              const characterInfo = movie.cast.find(
-                (c) => c.slug.toLowerCase() === actor.slug.toLowerCase()
-              );
+              const characterName = movie.character;
               const poster = getMoviePoster(movie);
 
               return (
@@ -383,9 +387,9 @@ export const ActorDetail: React.FC<ActorDetailProps> = ({
                       <p className="text-xs text-[#736B63] mt-0.5 font-body">
                         {movie.year}{brand && <span className="text-[#A3998D] font-sans-clean ml-1.5">· {brand.shortName}</span>}
                       </p>
-                      {characterInfo?.character && (
+                      {characterName && (
                         <p className="text-[11px] text-[#841818] font-sans-clean mt-0.5 truncate italic">
-                          as {characterInfo.character}
+                          as {characterName}
                         </p>
                       )}
                     </div>
