@@ -1,5 +1,77 @@
 [
   {
+    "title": "A Knight to Remember",
+    "originalTitle": "A Knight to Remember",
+    "year": 2026,
+    "release_date": "2026-10-03",
+    "premiereDate": "2026-10-03",
+    "tmdbId": 1744203,
+    "tmdb_id": 1744203,
+    "imdbId": "tt44536647",
+    "imdb_id": "tt44536647",
+    "overview": "A statue of an English knight arrives in Chicago for an art exhibit. While cleaning the statue, museum conservator Emily impulsively kisses the statue, bringing him to life.",
+    "vote_average": 0,
+    "vote_count": 0,
+    "runtime": 0,
+    "genres": [
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "release_dates": [
+      {
+        "country": "US",
+        "release_date": "2026-10-03T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": ""
+      }
+    ],
+    "poster": "/images/posters/1744203.webp",
+    "backdrop": "/images/backdrops/1744203.webp",
+    "crew": [
+      {
+        "id": 6393432,
+        "name": "Bryn Donovan",
+        "job": "Original Story",
+        "credit_id": "6a73ea536884ea47b6ac6b87"
+      }
+    ],
+    "cast": [
+      {
+        "id": 68769,
+        "name": "Julie Gonzalo",
+        "character": "",
+        "order": 0,
+        "profile_path": "/images/people/68769.webp",
+        "birthday": "1981-09-09",
+        "deathday": null
+      },
+      {
+        "id": 1310342,
+        "name": "James Trevena",
+        "character": "",
+        "order": 1,
+        "profile_path": "/images/people/1310342.webp",
+        "birthday": "1986-09-16",
+        "deathday": null
+      },
+      {
+        "id": 1459111,
+        "name": "Chris McNally",
+        "character": "",
+        "order": 2,
+        "profile_path": "/images/people/1459111.webp",
+        "birthday": "1988-11-08",
+        "deathday": null
+      }
+    ],
+    "castSummary": "Julie Gonzalo, James Trevena, Chris McNally",
+    "videos": [],
+    "status": "upcoming"
+  },
+  {
     "id": "tmdb-1772765",
     "title": "'Tis the Season for Setups",
     "hallmarkTitle": "'Tis the Season for Setups",
