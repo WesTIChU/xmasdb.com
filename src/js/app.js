@@ -13,7 +13,7 @@
  * - Updates JSON LIST links dynamically (/movies.json vs /json/YYYY.json)
  */
 
-import { calculateActorAge, normalizeSearchText, getActorProfileImageUrl, PLACEHOLDER_ACTOR_PHOTO } from './actor-utils.js';
+import { calculateActorAge, getActorProfileImageUrl } from './actor-utils.js';
 import { getActorUrl, getMovieUrl } from './movie-url.js';
 import { getPublicMovies } from './public-movies.js';
 import { CARD_GENERIC_POSTER, getPosterFallback } from './poster-utils.js';
@@ -45,17 +45,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const upcomingToggleArrow = document.getElementById('upcoming-toggle-arrow');
   let isUpcomingPanelOpen = false;
 
-  // Search Elements
-  const globalSearchContainer = document.getElementById('global-search-container');
-  const globalSearchInput = document.getElementById('global-search-input');
-  const searchClearBtn = document.getElementById('search-clear-btn');
-  const autocompleteDropdown = document.getElementById('search-autocomplete-dropdown');
-  const autocompleteList = document.getElementById('search-autocomplete-list');
-
   // Header & Footer Elements
   const headerMovieCount = document.getElementById('header-movie-count');
-  const headerFestiveMessage = document.getElementById('header-festive-message');
-  const headerFestiveText = headerFestiveMessage?.querySelector('.festive-main-message');
   const footerMovieCount = document.getElementById('footer-movie-count');
   const footerCopyrightYear = document.getElementById('footer-copyright-year');
   const footerJsonLink = document.getElementById('footer-json-link');
@@ -63,9 +54,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   let allMovies = [];
   let castData = null;
-  let searchIndex = [];
-  let currentAutocompleteResults = [];
-  let selectedAutocompleteIndex = -1;
   let upcomingMovies = [];
 
   // State
@@ -126,54 +114,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // =========================================================================
-  // Dynamic Festive Christmas Header Message
-  // =========================================================================
-  function getChristmasMessage(now = new Date()) {
-    const localYear = now.getFullYear();
-    const month = now.getMonth(); // 0 = Jan, 11 = Dec
-    const day = now.getDate();
-
-    if (month === 11) {
-      if (day === 24) return "✨ It's Christmas Eve - one more movie?";
-      if (day === 25) return '🎄 Merry Christmas!';
-      if (day === 26) return "🎁 Christmas isn't over yet…";
-      if (day >= 27 && day <= 30) return '✨ Keep the festive feeling going.';
-      if (day === 31) return "🥂 Happy New Year's Eve!";
-    } else if (month === 0) {
-      if (day === 1) return '🎆 Happy New Year!';
-    }
-
-    let targetYear = localYear;
-    if (month === 11 && day > 25) {
-      targetYear = localYear + 1;
-    }
-
-    const utcToday = Date.UTC(localYear, month, day);
-    const utcTarget = Date.UTC(targetYear, 11, 25);
-    const diffDays = Math.round((utcTarget - utcToday) / 86400000);
-
-    if (diffDays <= 7) {
-      const sleepWord = diffDays === 1 ? 'sleep' : 'sleeps';
-      return `🎄 Only ${diffDays} ${sleepWord} until Christmas!`;
-    }
-    if (diffDays <= 24) return `${diffDays} days until Christmas - Christmas movie season is in full swing. 🎬`;
-    if (diffDays <= 49) return `${diffDays} days until Christmas - Hallmark season is officially underway. 🎄`;
-    if (diffDays <= 99) return `${diffDays} days until Christmas — time for a little festive magic. ✨`;
-    return "Too early for Christmas movies? We don't think so. 🎄";
-  }
-
-  function updateFestiveMessage() {
-    if (headerFestiveText) {
-      headerFestiveText.textContent = getChristmasMessage();
-    } else if (headerFestiveMessage) {
-      headerFestiveMessage.textContent = getChristmasMessage();
-    }
-  }
-
-  updateFestiveMessage();
-  setInterval(updateFestiveMessage, 60000);
-
   // Read URL query params on initial load
   const urlParams = new URLSearchParams(window.location.search);
   const initialYearParam = urlParams.get('year');
@@ -233,7 +173,6 @@ document.addEventListener('DOMContentLoaded', () => {
     .then(res => res.ok ? res.json() : null)
     .then(data => {
       castData = data;
-      buildSearchIndex();
       renderPopularActors();
       if (currentActorFilter) {
         updateActorBanner();
@@ -260,8 +199,6 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
       }
       allMovies = movies;
-      buildSearchIndex();
-
       if (headerMovieCount) {
         headerMovieCount.textContent = `${allMovies.length} Hallmark Christmas movies ready and waiting.`;
       }
@@ -938,326 +875,5 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }
   }
-
-  // =========================================================================
-  // Live Local Autocomplete Search (Movies & Actors)
-  // =========================================================================
-  function buildSearchIndex() {
-    const items = [];
-
-    if (Array.isArray(allMovies)) {
-      allMovies.forEach((m) => {
-        if (m && m.title) {
-          const orig = m.originalTitle || m.original_title || '';
-          items.push({
-            type: 'movie',
-            title: m.title,
-            originalTitle: orig,
-            year: m.year,
-            poster: m.poster,
-            tmdbId: m.tmdbId || m.tmdb_id,
-            normTitle: normalizeSearchText(m.title),
-            normOriginalTitle: orig ? normalizeSearchText(orig) : ''
-          });
-        }
-      });
-    }
-
-    if (castData && Array.isArray(castData.actors)) {
-      castData.actors.forEach((a) => {
-        if (a && a.name) {
-          const count = typeof a.count === 'number'
-            ? a.count
-            : (Array.isArray(a.movieTmdbIds) ? a.movieTmdbIds.length : 0);
-          items.push({
-            type: 'actor',
-            id: a.id,
-            name: a.name,
-            profile_path: a.profile_path,
-            birthday: a.birthday,
-            deathday: a.deathday,
-            count: count,
-            movieTmdbIds: a.movieTmdbIds || [],
-            normName: normalizeSearchText(a.name)
-          });
-        }
-      });
-    }
-
-    searchIndex = items;
-  }
-
-  function rankItem(normQuery, item) {
-    if (item.type === 'movie') {
-      const t = item.normTitle;
-      if (t.startsWith(normQuery)) return 1;
-      const words = t.split(' ');
-      if (words.some(w => w.startsWith(normQuery))) return 2;
-      if (t.includes(normQuery)) return 3;
-
-      if (item.normOriginalTitle) {
-        const ot = item.normOriginalTitle;
-        if (ot.startsWith(normQuery)) return 2;
-        const otWords = ot.split(' ');
-        if (otWords.some(w => w.startsWith(normQuery))) return 3;
-        if (ot.includes(normQuery)) return 4;
-      }
-    } else if (item.type === 'actor') {
-      const a = item.normName;
-      if (a.startsWith(normQuery)) return 1;
-      const aWords = a.split(' ');
-      if (aWords.some(w => w.startsWith(normQuery))) return 2;
-      if (a.includes(normQuery)) return 3;
-    }
-    return null;
-  }
-
-  function handleAutocompleteSearch(query) {
-    const norm = normalizeSearchText(query);
-    if (!norm) {
-      closeAutocomplete();
-      return;
-    }
-
-    if (searchIndex.length === 0) {
-      buildSearchIndex();
-    }
-
-    const matches = [];
-    for (const item of searchIndex) {
-      const rank = rankItem(norm, item);
-      if (rank !== null) {
-        matches.push({ item, rank });
-      }
-    }
-
-    matches.sort((a, b) => {
-      if (a.rank !== b.rank) return a.rank - b.rank;
-      if (a.item.type === 'actor' && b.item.type === 'actor') {
-        return (b.item.count || 0) - (a.item.count || 0);
-      }
-      if (a.item.type === 'movie' && b.item.type === 'movie') {
-        if (a.item.year !== b.item.year) return (b.item.year || 0) - (a.item.year || 0);
-        return a.item.title.localeCompare(b.item.title);
-      }
-      return 0;
-    });
-
-    currentAutocompleteResults = matches.slice(0, 10);
-    selectedAutocompleteIndex = -1;
-    renderAutocompleteDropdown(query.trim(), currentAutocompleteResults);
-  }
-
-  function renderAutocompleteDropdown(query, results) {
-    if (!autocompleteDropdown || !autocompleteList) return;
-    autocompleteList.innerHTML = '';
-
-    if (results.length === 0) {
-      const li = document.createElement('li');
-      li.className = 'autocomplete-no-results';
-      li.textContent = `No movies or actors found matching "${query}".`;
-      autocompleteList.appendChild(li);
-    } else {
-      results.forEach(({ item }, idx) => {
-        const li = document.createElement('li');
-        li.className = 'autocomplete-item';
-        li.id = `autocomplete-item-${idx}`;
-        li.setAttribute('role', 'option');
-        li.setAttribute('aria-selected', 'false');
-
-        const mainWrap = document.createElement('div');
-        mainWrap.className = 'autocomplete-item-main';
-
-        if (item.type === 'movie') {
-          const img = document.createElement('img');
-          img.className = 'autocomplete-poster-thumb';
-          img.alt = item.title;
-          img.referrerPolicy = 'no-referrer';
-          img.src = item.poster || 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="26" height="39" viewBox="0 0 26 39"><rect width="26" height="39" fill="%23e2e8f0"/></svg>';
-          img.onerror = () => {
-            img.onerror = null;
-            img.src = 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="26" height="39" viewBox="0 0 26 39"><rect width="26" height="39" fill="%23e2e8f0"/></svg>';
-          };
-          mainWrap.appendChild(img);
-
-          const textWrap = document.createElement('div');
-          textWrap.className = 'autocomplete-text-wrap';
-
-          const titleSpan = document.createElement('span');
-          titleSpan.className = 'autocomplete-title';
-          titleSpan.textContent = item.title;
-          textWrap.appendChild(titleSpan);
-
-          const subSpan = document.createElement('span');
-          subSpan.className = 'autocomplete-sub';
-          if (item.originalTitle && item.originalTitle.toLowerCase() !== item.title.toLowerCase()) {
-            subSpan.textContent = `${item.year || ''} · Orig: "${item.originalTitle}"`;
-          } else {
-            subSpan.textContent = item.year ? `${item.year} Release` : 'Movie';
-          }
-          textWrap.appendChild(subSpan);
-
-          mainWrap.appendChild(textWrap);
-
-          const badge = document.createElement('span');
-          badge.className = 'autocomplete-badge badge-type-movie';
-          badge.textContent = 'Movie';
-
-          li.appendChild(mainWrap);
-          li.appendChild(badge);
-        } else if (item.type === 'actor') {
-          const photo = document.createElement('img');
-          photo.className = 'autocomplete-poster-thumb';
-          photo.alt = item.name;
-          photo.src = getActorProfileImageUrl(item.profile_path || item.profile);
-          photo.onerror = () => {
-            photo.onerror = null;
-            photo.src = PLACEHOLDER_ACTOR_PHOTO;
-          };
-          mainWrap.appendChild(photo);
-
-          const textWrap = document.createElement('div');
-          textWrap.className = 'autocomplete-text-wrap';
-
-          const nameSpan = document.createElement('span');
-          nameSpan.className = 'autocomplete-title';
-          nameSpan.textContent = item.name;
-          textWrap.appendChild(nameSpan);
-
-          const subSpan = document.createElement('span');
-          subSpan.className = 'autocomplete-sub';
-          const count = item.count || 0;
-          subSpan.textContent = `${count} ${count === 1 ? 'movie' : 'movies'} in collection`;
-          textWrap.appendChild(subSpan);
-
-          mainWrap.appendChild(textWrap);
-
-          const badge = document.createElement('span');
-          badge.className = 'autocomplete-badge badge-type-actor';
-          badge.textContent = 'Actor';
-
-          li.appendChild(mainWrap);
-          li.appendChild(badge);
-        }
-
-        li.addEventListener('mouseenter', () => {
-          setSelectedAutocompleteIndex(idx);
-        });
-
-        li.addEventListener('click', () => {
-          executeAutocompleteItem(item);
-        });
-
-        autocompleteList.appendChild(li);
-      });
-    }
-
-    autocompleteDropdown.style.display = 'block';
-    if (globalSearchInput) {
-      globalSearchInput.setAttribute('aria-expanded', 'true');
-    }
-  }
-
-  function setSelectedAutocompleteIndex(idx) {
-    selectedAutocompleteIndex = idx;
-    const items = autocompleteList.querySelectorAll('.autocomplete-item');
-    items.forEach((el, i) => {
-      if (i === idx) {
-        el.classList.add('is-selected');
-        el.setAttribute('aria-selected', 'true');
-        el.scrollIntoView({ block: 'nearest' });
-      } else {
-        el.classList.remove('is-selected');
-        el.setAttribute('aria-selected', 'false');
-      }
-    });
-  }
-
-  function executeAutocompleteItem(item) {
-    closeAutocomplete();
-    if (globalSearchInput) globalSearchInput.value = '';
-    if (searchClearBtn) searchClearBtn.style.display = 'none';
-
-    if (item.type === 'movie') {
-      window.location.href = getMovieUrl(item);
-    } else if (item.type === 'actor') {
-      window.location.href = getActorUrl({ id: item.id, name: item.name });
-    }
-  }
-
-  function closeAutocomplete() {
-    if (autocompleteDropdown) autocompleteDropdown.style.display = 'none';
-    if (globalSearchInput) {
-      globalSearchInput.setAttribute('aria-expanded', 'false');
-      globalSearchInput.removeAttribute('aria-activedescendant');
-    }
-    selectedAutocompleteIndex = -1;
-  }
-
-  if (globalSearchInput) {
-    globalSearchInput.addEventListener('input', (e) => {
-      const val = e.target.value;
-      if (searchClearBtn) {
-        searchClearBtn.style.display = val.length > 0 ? 'flex' : 'none';
-      }
-      handleAutocompleteSearch(val);
-    });
-
-    globalSearchInput.addEventListener('keydown', (e) => {
-      if (!autocompleteDropdown || autocompleteDropdown.style.display === 'none') {
-        if (e.key === 'Enter') {
-          e.preventDefault();
-          handleAutocompleteSearch(globalSearchInput.value);
-        }
-        return;
-      }
-
-      if (e.key === 'ArrowDown') {
-        e.preventDefault();
-        const next = selectedAutocompleteIndex + 1;
-        if (next < currentAutocompleteResults.length) {
-          setSelectedAutocompleteIndex(next);
-        }
-      } else if (e.key === 'ArrowUp') {
-        e.preventDefault();
-        const prev = selectedAutocompleteIndex - 1;
-        if (prev >= 0) {
-          setSelectedAutocompleteIndex(prev);
-        }
-      } else if (e.key === 'Enter') {
-        e.preventDefault();
-        if (selectedAutocompleteIndex >= 0 && selectedAutocompleteIndex < currentAutocompleteResults.length) {
-          executeAutocompleteItem(currentAutocompleteResults[selectedAutocompleteIndex].item);
-        } else if (currentAutocompleteResults.length > 0) {
-          executeAutocompleteItem(currentAutocompleteResults[0].item);
-        }
-      } else if (e.key === 'Escape') {
-        closeAutocomplete();
-      }
-    });
-  }
-
-  if (searchClearBtn) {
-    searchClearBtn.addEventListener('click', () => {
-      if (globalSearchInput) {
-        globalSearchInput.value = '';
-        globalSearchInput.focus();
-      }
-      searchClearBtn.style.display = 'none';
-      closeAutocomplete();
-    });
-  }
-
-  document.addEventListener('click', (e) => {
-    if (globalSearchContainer && !globalSearchContainer.contains(e.target)) {
-      closeAutocomplete();
-    }
-  });
-
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') {
-      closeAutocomplete();
-    }
-  });
 
 });

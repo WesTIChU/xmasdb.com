@@ -1,11 +1,8 @@
 name: Sync Catalog Manifest
 
 on:
-  push:
-    paths:
-      - catalog/movies.json
-      - .github/workflows/catalog-sync.yml
   schedule:
+    - cron: '*/15 * * * *'
     - cron: '0 2 * * *'
     - cron: '0 3 1 * *'
   workflow_dispatch:
@@ -31,9 +28,7 @@ jobs:
   sync:
     if: >-
       github.actor != 'github-actions[bot]' &&
-      (github.event_name == 'push' ||
-       (github.event_name == 'workflow_dispatch' && inputs.operation == 'manifest') ||
-       github.event_name == 'schedule')
+      (github.event_name == 'workflow_dispatch' || github.event_name == 'schedule')
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
@@ -56,10 +51,12 @@ jobs:
       - name: Run catalog operation through shared TMDB importer
         env:
           TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
+          CATALOG_OPERATION: ${{ inputs.operation }}
+          CATALOG_SCHEDULE: ${{ github.event.schedule }}
         run: |
-          if [[ "${{ github.event_name }}" == "push" || "${{ inputs.operation }}" == "manifest" ]]; then
+          if [[ "$CATALOG_OPERATION" == "manifest" || "$CATALOG_SCHEDULE" == "*/15 * * * *" ]]; then
             npm run catalog:manifest:sync
-          elif [[ "${{ github.event.schedule }}" == "0 2 * * *" || "${{ inputs.operation }}" == "coming-soon" ]]; then
+          elif [[ "$CATALOG_SCHEDULE" == "0 2 * * *" || "$CATALOG_OPERATION" == "coming-soon" ]]; then
             npm run catalog:refresh -- --coming-soon-only
           else
             npm run catalog:refresh -- --collection-only

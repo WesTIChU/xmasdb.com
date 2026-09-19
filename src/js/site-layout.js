@@ -9,16 +9,21 @@
  * Preserves the exact master design from the homepage (index.html).
  */
 
+import { initSiteSearch } from './site-search.js';
+
 export const HEADER_HTML = `
-  <div class="hero-branch hero-branch-left" aria-hidden="true"></div>
-  <div class="hero-branch hero-branch-right" aria-hidden="true"></div>
-  <div class="hero-lights" aria-hidden="true">
-    <span class="hero-light hero-light-one"></span>
-    <span class="hero-light hero-light-two"></span>
-    <span class="hero-light hero-light-three"></span>
-    <span class="hero-light hero-light-four"></span>
-    <span class="hero-light hero-light-five"></span>
-    <span class="hero-light hero-light-six"></span>
+  <div class="hero-decoration-layer" aria-hidden="true">
+    <div class="hero-branch hero-branch-left"></div>
+    <div class="hero-branch hero-branch-right"></div>
+    <div class="hero-lights">
+      <span class="hero-light hero-light-one"></span>
+      <span class="hero-light hero-light-two"></span>
+      <span class="hero-light hero-light-three"></span>
+      <span class="hero-light hero-light-four"></span>
+      <span class="hero-light hero-light-five"></span>
+      <span class="hero-light hero-light-six"></span>
+    </div>
+    <div class="hero-snowbank"></div>
   </div>
   <div class="header-inner">
     <div class="header-top-row">
@@ -29,15 +34,22 @@ export const HEADER_HTML = `
           <h1 id="site-title" class="site-title">XmasDB.com</h1>
           <span class="title-rule" aria-hidden="true"></span>
         </span>
-      </a>
-    </div>
-    <p id="site-description" class="site-description">A curated collection of Hallmark Christmas movies.</p>
-    <p id="header-festive-message" class="header-festive-message" aria-live="polite">
-      <span class="festive-main-message"></span>
-      <span id="header-movie-count" class="header-movie-count" aria-live="polite">... Hallmark Christmas movies ready and waiting.</span>
-    </p>
+     </a>
+     </div>
+     <p id="site-description" class="site-description">A curated collection of Hallmark Christmas movies.</p>
+     <div id="top-controls-row" class="top-controls-row header-controls-row">
+       <div id="global-search-container" class="global-search-container" role="search">
+         <div class="search-input-wrap">
+           <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+           <input type="text" id="global-search-input" class="global-search-input" placeholder="Search movies or actors..." autocomplete="off" spellcheck="false" aria-label="Search movies or actors" aria-autocomplete="list" aria-controls="search-autocomplete-list" aria-expanded="false" />
+           <button type="button" id="search-clear-btn" class="search-clear-btn" aria-label="Clear search" style="display: none;">&times;</button>
+         </div>
+         <div id="search-autocomplete-dropdown" class="search-autocomplete-dropdown" style="display: none;" role="listbox" aria-label="Search suggestions"><ul id="search-autocomplete-list" class="search-autocomplete-list" role="presentation"></ul></div>
+       </div>
+       <a id="radarr-btn" class="btn-radarr" href="/radarr.html">RADARR / JSON LISTS</a>
+     </div>
+     <p id="header-festive-message" class="header-festive-message" aria-live="polite"><span id="header-countdown-text"></span><span aria-hidden="true"> · </span><span id="header-movie-count" class="header-movie-count" aria-live="polite">... movies</span></p>
   </div>
-  <div class="hero-snowbank" aria-hidden="true"></div>
 `;
 
 export const FOOTER_HTML = `
@@ -160,9 +172,7 @@ export function updateLayoutCounts(count) {
 
   const headerCountEl = document.getElementById('header-movie-count');
   if (headerCountEl) {
-    headerCountEl.textContent = document.getElementById('site-header')?.classList.contains('homepage-hero')
-      ? `${num} Hallmark Christmas movies ready and waiting.`
-      : `${num} Movies`;
+    headerCountEl.textContent = `${num} movies`;
   }
 
   const footerCountEl = document.getElementById('footer-movie-count');
@@ -171,25 +181,13 @@ export function updateLayoutCounts(count) {
   }
 }
 
-function getChristmasMessage(now = new Date()) {
+function getChristmasCountdown(now = new Date()) {
   const year = now.getFullYear();
   const month = now.getMonth();
   const day = now.getDate();
-    if (month === 11) {
-    if (day === 24) return "✨ It's Christmas Eve - one more movie?";
-    if (day === 25) return '🎄 Merry Christmas!';
-    if (day === 26) return "🎁 Christmas isn't over yet…";
-    if (day >= 27 && day <= 30) return '✨ Keep the festive feeling going.';
-    if (day === 31) return "🥂 Happy New Year's Eve!";
-  }
-  if (month === 0 && day === 1) return '🎆 Happy New Year!';
   const targetYear = month === 11 && day > 25 ? year + 1 : year;
   const days = Math.round((Date.UTC(targetYear, 11, 25) - Date.UTC(year, month, day)) / 86400000);
-  if (days <= 7) return `🎄 Only ${days} ${days === 1 ? 'sleep' : 'sleeps'} until Christmas!`;
-  if (days <= 24) return `${days} days until Christmas - Christmas movie season is in full swing. 🎬`;
-  if (days <= 49) return `${days} days until Christmas - Hallmark season is officially underway. 🎄`;
-  if (days <= 99) return `${days} days until Christmas — time for a little festive magic. ✨`;
-  return "Too early for Christmas movies? We don't think so. 🎄";
+  return `🎄 ${days} days until Christmas`;
 }
 
 let layoutInitialized = false;
@@ -227,9 +225,11 @@ export function initSiteLayout() {
   layoutInitialized = true;
 
   const header = document.getElementById('site-header');
-  if (header) {
-    renderSiteHeader(header);
-  }
+   if (header) {
+     renderSiteHeader(header);
+   }
+
+   initSiteSearch();
 
   const footer = document.getElementById('site-footer');
   if (footer) {
@@ -242,13 +242,11 @@ export function initSiteLayout() {
     yearEl.textContent = String(new Date().getFullYear());
   }
 
-  const festiveMessage = document.getElementById('header-festive-message');
-  const festiveText = festiveMessage?.querySelector('.festive-main-message');
-  if (festiveText) {
-    festiveText.textContent = getChristmasMessage();
-  } else if (festiveMessage) {
-    festiveMessage.textContent = getChristmasMessage();
-  }
+  const countdownText = document.getElementById('header-countdown-text');
+  if (countdownText) countdownText.textContent = getChristmasCountdown();
+  setInterval(() => {
+    if (countdownText) countdownText.textContent = getChristmasCountdown();
+  }, 60000);
 
   autoPopulateCounts();
   initScrollToTop();

@@ -42,7 +42,8 @@ body {
 .homepage-hero {
   position: relative;
   isolation: isolate;
-  overflow: hidden;
+  overflow: visible;
+  z-index: 10;
   background:
     radial-gradient(circle at 50% 36%, rgba(42, 91, 65, 0.32), transparent 42%),
     radial-gradient(circle at 18% 20%, rgba(190, 145, 59, 0.12), transparent 22%),
@@ -69,6 +70,14 @@ body {
 
 .homepage-hero::before { top: 24%; left: 27%; }
 .homepage-hero::after { top: 58%; right: 24%; width: 7px; height: 7px; }
+
+.hero-decoration-layer {
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
 
 .homepage-hero .header-inner {
   position: relative;
@@ -211,7 +220,6 @@ body {
 
 .hero-branch {
   position: absolute;
-  z-index: 1;
   top: -28px;
   width: 310px;
   height: 180px;
@@ -223,8 +231,8 @@ body {
   filter: drop-shadow(0 8px 9px rgba(0, 0, 0, 0.2));
 }
 
-.hero-branch-left { left: -62px; transform: rotate(-12deg); border-radius: 0 0 80% 0; }
-.hero-branch-right { right: -62px; transform: scaleX(-1) rotate(-12deg); border-radius: 0 0 80% 0; }
+.hero-branch-left { left: -62px; clip-path: inset(0 0 0 62px); transform: rotate(-12deg); border-radius: 0 0 80% 0; }
+.hero-branch-right { right: -62px; clip-path: inset(0 62px 0 0); transform: scaleX(-1) rotate(-12deg); border-radius: 0 0 80% 0; }
 
 .hero-branch::after {
   content: "";
@@ -240,7 +248,6 @@ body {
 
 .hero-lights {
   position: absolute;
-  z-index: 1;
   top: 20px;
   left: 4%;
   right: 4%;
@@ -270,11 +277,11 @@ body {
 
 .hero-snowbank {
   position: absolute;
-  z-index: 1;
   right: -4%;
   bottom: -36px;
   left: -4%;
   height: 60px;
+  clip-path: inset(0 4% 0 4%);
   background: radial-gradient(ellipse at center, rgba(247, 246, 231, 0.9) 0 35%, rgba(214, 225, 214, 0.68) 58%, transparent 72%);
   filter: blur(4px);
   pointer-events: none;
@@ -297,6 +304,17 @@ body {
   gap: 16px;
   flex-wrap: wrap;
   margin-bottom: 16px;
+}
+
+.header-controls-row {
+  justify-content: center;
+  max-width: 720px;
+  margin: 18px auto 0;
+}
+
+.header-controls-row .global-search-container {
+  flex: 0 0 350px;
+  max-width: 350px;
 }
 
 .global-search-container {
@@ -1455,6 +1473,22 @@ body {
     font-size: 0.86rem;
   }
 
+  .header-controls-row {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+    margin-top: 16px;
+  }
+
+  .header-controls-row .global-search-container {
+    flex-basis: auto;
+    max-width: none;
+  }
+
+  .header-controls-row .btn-radarr {
+    text-align: center;
+  }
+
   .hero-branch {
     top: -18px;
     width: 150px;
@@ -1462,8 +1496,8 @@ body {
     opacity: 0.43;
   }
 
-  .hero-branch-left { left: -82px; }
-  .hero-branch-right { right: -82px; }
+  .hero-branch-left { left: -82px; clip-path: inset(0 0 0 82px); }
+  .hero-branch-right { right: -82px; clip-path: inset(0 82px 0 0); }
 
   .hero-lights {
     left: -8%;
@@ -1474,6 +1508,7 @@ body {
   .hero-snowbank {
     bottom: -43px;
     height: 50px;
+    clip-path: inset(0 8% 0 8%);
   }
 
   .container {
