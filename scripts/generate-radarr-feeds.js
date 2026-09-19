@@ -8,6 +8,7 @@ const CAST_FILE = path.join(ROOT, 'cast.json');
 const FEED_DIRS = [path.join(ROOT, 'json'), path.join(ROOT, 'public', 'json'), path.join(ROOT, 'dist', 'json')];
 const ACTOR_DIRS = FEED_DIRS.map(dir => path.join(dir, 'actors'));
 const IMDB_PATTERN = /^tt\d+$/i;
+const RADARR_LEAD_DAYS = 7;
 
 const movieId = movie => String(movie?.tmdbId || movie?.tmdb_id || '');
 const imdbId = movie => String(movie?.imdbId || movie?.imdb_id || '').trim();
@@ -65,6 +66,32 @@ export function getRadarrEligibleMovies(collectionMovies = [], comingSoonMovies 
   return [...byTmdbId.values()];
 }
 
+export function getRadarrEligibilityDate(premiereDate) {
+  const value = String(premiereDate || '').trim();
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(value)) return null;
+  const [year, month, day] = value.split('-').map(Number);
+  const premiere = Date.UTC(year, month - 1, day);
+  if (new Date(premiere).toISOString().slice(0, 10) !== value) return null;
+  return new Date(premiere - RADARR_LEAD_DAYS * 24 * 60 * 60 * 1000).toISOString().slice(0, 10);
+}
+
+export function filterRadarrReadyMovies(collectionMovies = [], comingSoonMovies = [], { now = new Date() } = {}) {
+  const collectionIds = new Set(collectionMovies.map(movieId));
+  const today = now instanceof Date ? now.toISOString().slice(0, 10) : String(now).slice(0, 10);
+  const ready = [];
+  const withheld = [];
+  for (const movie of getRadarrEligibleMovies(collectionMovies, comingSoonMovies)) {
+    if (collectionIds.has(movieId(movie))) {
+      ready.push(movie);
+      continue;
+    }
+    const eligibilityDate = getRadarrEligibilityDate(movie.premiereDate);
+    if (eligibilityDate && today >= eligibilityDate) ready.push(movie);
+    else withheld.push({ movie, eligibilityDate, reason: eligibilityDate ? `eligible from ${eligibilityDate}` : 'missing or invalid premiere date' });
+  }
+  return { ready, withheld };
+}
+
 export function getRadarrActorMovieIds(movies, castData, comingSoonMovies = [], collectionMovies = []) {
   const movieById = new Map(movies.map(movie => [movieId(movie), movie]));
   const actorMovieIds = new Map();
@@ -88,9 +115,10 @@ export function getRadarrActorMovieIds(movies, castData, comingSoonMovies = [], 
   return actorMovieIds;
 }
 
-export function generateRadarrFeeds(movies, castData, comingSoonMovies = []) {
+export function generateRadarrFeeds(movies, castData, comingSoonMovies = [], options = {}) {
   const skipped = new Set();
-  const eligibleMovies = getRadarrEligibleMovies(movies, comingSoonMovies);
+  const readiness = filterRadarrReadyMovies(movies, comingSoonMovies, options);
+  const eligibleMovies = readiness.ready;
   const sortedMovies = eligibleMovies.sort((a, b) => Number(b.year || 0) - Number(a.year || 0) || String(a.title || '').localeCompare(String(b.title || '')));
   const allEntries = uniqueRadarrMovies(sortedMovies, skipped);
   const years = [...new Set(sortedMovies.map(movie => Number(movie.year)).filter(Boolean))].sort((a, b) => b - a);
@@ -125,6 +153,8 @@ export function generateRadarrFeeds(movies, castData, comingSoonMovies = []) {
     console.warn(`[radarr-feeds] Skipped ${skipped.size} catalogue movies without a valid IMDb ID:`);
     for (const item of skipped) console.warn(`[radarr-feeds] ${item}`);
   }
+  console.log(`Radarr readiness: ${readiness.ready.length} ready, ${readiness.withheld.length} withheld`);
+  for (const { movie, reason } of readiness.withheld) console.warn(`[radarr-feeds] Withheld: ${movie.title} — ${reason}`);
   console.log(`[radarr-feeds] Generated full feed, ${yearEntries.size} year feeds, and ${expectedActors.size} actor feeds.`);
   console.log(`[radarr-feeds] Skipped movies: ${skipped.size}`);
   return { full: allEntries.length, years: yearEntries.size, actors: expectedActors.size, skipped: [...skipped] };

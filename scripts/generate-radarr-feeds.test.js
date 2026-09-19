@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
 import {
+  filterRadarrReadyMovies,
   getRadarrActorMovieIds,
   getRadarrEligibleMovies,
   toRadarrEntry
@@ -67,4 +68,40 @@ test('moving Coming Soon to Collection preserves one Radarr identity and schema'
 
 test('year feed entries are materialized before mapping for Node 20 compatibility', () => {
   assert.match(generatorSource, /\.\.\.\[\.\.\.yearEntries\.entries\(\)\]\.map/);
+});
+
+test('Coming Soon movies are withheld before the seven-day Radarr window', () => {
+  const movie = { ...comingSoonMovie(1), premiereDate: '2026-12-12' };
+  const result = filterRadarrReadyMovies([], [movie], { now: '2026-12-04' });
+  assert.deepEqual(result.ready, []);
+  assert.equal(result.withheld[0].eligibilityDate, '2026-12-05');
+});
+
+test('Coming Soon movies become Radarr-ready exactly seven days before premiere', () => {
+  const movie = { ...comingSoonMovie(1), premiereDate: '2026-12-12' };
+  const result = filterRadarrReadyMovies([], [movie], { now: '2026-12-05' });
+  assert.deepEqual(result.ready.map(item => item.tmdbId), [1]);
+  assert.deepEqual(result.withheld, []);
+});
+
+test('Coming Soon movies remain Radarr-ready after the eligibility date', () => {
+  const movie = { ...comingSoonMovie(1), premiereDate: '2026-12-12' };
+  const result = filterRadarrReadyMovies([], [movie], { now: '2026-12-20' });
+  assert.deepEqual(result.ready.map(item => item.tmdbId), [1]);
+});
+
+test('Coming Soon movies without a valid premiere date are withheld', () => {
+  const result = filterRadarrReadyMovies([], [
+    { ...comingSoonMovie(1), premiereDate: null },
+    { ...comingSoonMovie(2), premiereDate: '2026-02-30' }
+  ], { now: '2026-12-20' });
+  assert.equal(result.ready.length, 0);
+  assert.equal(result.withheld.length, 2);
+  assert.equal(result.withheld[0].eligibilityDate, null);
+});
+
+test('Collection movies remain included regardless of premiere date', () => {
+  const result = filterRadarrReadyMovies([{ ...collectionMovie(1), premiereDate: null }], [], { now: '2026-01-01' });
+  assert.deepEqual(result.ready.map(item => item.tmdbId), [1]);
+  assert.deepEqual(result.withheld, []);
 });

@@ -5,7 +5,20 @@ on:
     paths:
       - catalog/movies.json
       - .github/workflows/catalog-sync.yml
+  schedule:
+    - cron: '0 2 * * *'
+    - cron: '0 3 1 * *'
   workflow_dispatch:
+    inputs:
+      operation:
+        description: Catalog operation
+        required: true
+        default: manifest
+        type: choice
+        options:
+          - manifest
+          - coming-soon
+          - collection
 
 permissions:
   contents: write
@@ -16,7 +29,11 @@ concurrency:
 
 jobs:
   sync:
-    if: github.actor != 'github-actions[bot]'
+    if: >-
+      github.actor != 'github-actions[bot]' &&
+      (github.event_name == 'push' ||
+       (github.event_name == 'workflow_dispatch' && inputs.operation == 'manifest') ||
+       github.event_name == 'schedule')
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
@@ -36,10 +53,17 @@ jobs:
       - name: Validate catalog manifest
         run: npm run catalog:manifest:check
 
-      - name: Sync catalog through shared TMDB importer
+      - name: Run catalog operation through shared TMDB importer
         env:
           TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
-        run: npm run catalog:manifest:sync
+        run: |
+          if [[ "${{ github.event_name }}" == "push" || "${{ inputs.operation }}" == "manifest" ]]; then
+            npm run catalog:manifest:sync
+          elif [[ "${{ github.event.schedule }}" == "0 2 * * *" || "${{ inputs.operation }}" == "coming-soon" ]]; then
+            npm run catalog:refresh -- --coming-soon-only
+          else
+            npm run catalog:refresh -- --collection-only
+          fi
 
       - name: Test
         run: npm test

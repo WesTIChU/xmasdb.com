@@ -9,6 +9,7 @@ import { ingestTmdbMovie, normalizeMovieCrew, validateTmdbMovieImport } from './
 import { refreshSeoOutput } from './refresh-seo.js';
 import { getRadarrEligibleMovies, toRadarrEntry } from './generate-radarr-feeds.js';
 import { localImagePath } from './local-assets.js';
+import { getRefreshTargets } from './refresh-scope.js';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const token = (process.env.TMDB_API_KEY || process.env.TMDB_TOKEN || process.env.TMDB_KEY || process.env.TMDB_BEARER_TOKEN || '').trim();
@@ -18,6 +19,10 @@ const requestedIds = idsArg
   ? new Set(idsArg.slice('--ids='.length).split(',').map(Number).filter(Number.isSafeInteger))
   : null;
 const dryRun = args.has('--dry-run');
+const comingSoonOnly = args.has('--coming-soon-only');
+const collectionOnly = args.has('--collection-only');
+
+if (comingSoonOnly && collectionOnly) throw new Error('Choose only one refresh scope.');
 
 if (!token) throw new Error('No TMDB credential configured. Set TMDB_API_KEY or TMDB_TOKEN.');
 
@@ -135,10 +140,10 @@ const movies = readJson('movies.json', []);
 const upcoming = readJson('upcoming.json', []);
 const personCache = loadPersonCache(ROOT);
 const originalPersonCache = clone(personCache);
-const targets = [
-  ...movies.map(movie => ({ collection: true, list: movies, movie })),
-  ...upcoming.map(movie => ({ collection: false, list: upcoming, movie }))
-].filter(({ movie }) => !requestedIds || requestedIds.has(movieId(movie)));
+const targets = getRefreshTargets(movies, upcoming, {
+  scope: comingSoonOnly ? 'coming-soon' : collectionOnly ? 'collection' : 'all',
+  requestedIds
+});
 const report = {
   moviesChecked: targets.length,
   updated: 0,
@@ -156,7 +161,8 @@ const report = {
   trailerRecovery: [],
   comingSoon: [],
   collectionCount: movies.length,
-  comingSoonCount: upcoming.length
+  comingSoonCount: upcoming.length,
+  refreshScope: comingSoonOnly ? 'coming-soon' : collectionOnly ? 'collection' : 'all'
 };
 
 if (!dryRun) createSourceBackups(ROOT);
