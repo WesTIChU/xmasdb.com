@@ -317,6 +317,11 @@ body {
   max-width: 350px;
 }
 
+.header-controls-row .btn-radarr {
+  padding: 6px 13px;
+  font-size: 0.74rem;
+}
+
 .global-search-container {
   position: relative;
   flex: 1;
