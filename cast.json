@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-19T06:18:27.848Z",
+  "generatedAt": "2026-09-19T08:57:37.919Z",
   "totalActors": 3134,
-  "totalMovies": 308,
+  "totalMovies": 307,
   "actors": [
     {
       "id": 22082,
@@ -6482,20 +6482,6 @@
       ]
     },
     {
-      "id": 1459111,
-      "name": "Chris McNally",
-      "count": 2,
-      "slug": "chris-mcnally",
-      "profile_path": "/images/people/1459111.webp",
-      "profile": "/images/people/1459111.webp",
-      "birthday": "1988-11-08",
-      "deathday": null,
-      "movieTmdbIds": [
-        1358987,
-        1744203
-      ]
-    },
-    {
       "id": 168554,
       "name": "Christie Laing",
       "count": 2,
@@ -7728,20 +7714,6 @@
       ]
     },
     {
-      "id": 1310342,
-      "name": "James Trevena",
-      "count": 2,
-      "slug": "james-trevena",
-      "profile_path": "/images/people/1310342.webp",
-      "profile": "/images/people/1310342.webp",
-      "birthday": "1986-09-16",
-      "deathday": null,
-      "movieTmdbIds": [
-        1744203,
-        1602653
-      ]
-    },
-    {
       "id": 1362948,
       "name": "Jane Moffat",
       "count": 2,
@@ -8229,20 +8201,6 @@
       "movieTmdbIds": [
         550073,
         480614
-      ]
-    },
-    {
-      "id": 68769,
-      "name": "Julie Gonzalo",
-      "count": 2,
-      "slug": "julie-gonzalo",
-      "profile_path": "/images/people/68769.webp",
-      "profile": "/images/people/68769.webp",
-      "birthday": "1981-09-09",
-      "deathday": null,
-      "movieTmdbIds": [
-        737763,
-        1744203
       ]
     },
     {
@@ -16659,6 +16617,19 @@
       ]
     },
     {
+      "id": 1459111,
+      "name": "Chris McNally",
+      "count": 1,
+      "slug": "chris-mcnally",
+      "profile_path": "/images/people/1459111.webp",
+      "profile": "/images/people/1459111.webp",
+      "birthday": "1988-11-08",
+      "deathday": null,
+      "movieTmdbIds": [
+        1358987
+      ]
+    },
+    {
       "id": 124748,
       "name": "Chris Renaud",
       "count": 1,
@@ -23731,6 +23702,19 @@
       ]
     },
     {
+      "id": 1310342,
+      "name": "James Trevena",
+      "count": 1,
+      "slug": "james-trevena",
+      "profile_path": "/images/people/1310342.webp",
+      "profile": "/images/people/1310342.webp",
+      "birthday": "1986-09-16",
+      "deathday": null,
+      "movieTmdbIds": [
+        1602653
+      ]
+    },
+    {
       "id": 119807,
       "name": "James Tupper",
       "count": 1,
@@ -26575,6 +26559,19 @@
       "deathday": null,
       "movieTmdbIds": [
         363476
+      ]
+    },
+    {
+      "id": 68769,
+      "name": "Julie Gonzalo",
+      "count": 1,
+      "slug": "julie-gonzalo",
+      "profile_path": "/images/people/68769.webp",
+      "profile": "/images/people/68769.webp",
+      "birthday": "1981-09-09",
+      "deathday": null,
+      "movieTmdbIds": [
+        737763
       ]
     },
     {
@@ -87483,38 +87480,6 @@
         "profile": "/images/people/1891226.webp"
       }
     ],
-    "1744203": [
-      {
-        "id": 68769,
-        "name": "Julie Gonzalo",
-        "character": "",
-        "order": 0,
-        "birthday": "1981-09-09",
-        "deathday": null,
-        "profile_path": "/images/people/68769.webp",
-        "profile": "/images/people/68769.webp"
-      },
-      {
-        "id": 1310342,
-        "name": "James Trevena",
-        "character": "",
-        "order": 1,
-        "birthday": "1986-09-16",
-        "deathday": null,
-        "profile_path": "/images/people/1310342.webp",
-        "profile": "/images/people/1310342.webp"
-      },
-      {
-        "id": 1459111,
-        "name": "Chris McNally",
-        "character": "",
-        "order": 2,
-        "birthday": "1988-11-08",
-        "deathday": null,
-        "profile_path": "/images/people/1459111.webp",
-        "profile": "/images/people/1459111.webp"
-      }
-    ],
     "1772765": [
       {
         "id": 65871,
@@ -133853,38 +133818,6 @@
         "deathday": null,
         "profile_path": "/images/people/1891226.webp",
         "profile": "/images/people/1891226.webp"
-      }
-    ],
-    "1744203": [
-      {
-        "id": 68769,
-        "name": "Julie Gonzalo",
-        "character": "",
-        "order": 0,
-        "birthday": "1981-09-09",
-        "deathday": null,
-        "profile_path": "/images/people/68769.webp",
-        "profile": "/images/people/68769.webp"
-      },
-      {
-        "id": 1310342,
-        "name": "James Trevena",
-        "character": "",
-        "order": 1,
-        "birthday": "1986-09-16",
-        "deathday": null,
-        "profile_path": "/images/people/1310342.webp",
-        "profile": "/images/people/1310342.webp"
-      },
-      {
-        "id": 1459111,
-        "name": "Chris McNally",
-        "character": "",
-        "order": 2,
-        "birthday": "1988-11-08",
-        "deathday": null,
-        "profile_path": "/images/people/1459111.webp",
-        "profile": "/images/people/1459111.webp"
       }
     ],
     "1772765": [
