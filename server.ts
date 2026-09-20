@@ -31,11 +31,12 @@ import {
   buildSearchResults,
   buildFeedsMeta,
 } from './src/server/catalogue-api';
+import { ContactRateLimiter, ensureContactStorage, getContactDataDir, storeContactSubmission, validateContactSubmission } from './src/server/contact';
 import { getCanonicalRedirect, getRobotsTxt, getServerSeo, injectSeoIntoHtml } from './src/server/seo';
 
 function isKnownPagePath(rawPath: string): boolean {
   const clean = rawPath.replace(/^\/+|\/+$/g, '');
-  if (!clean || clean === 'movies' || clean === 'all' || clean === 'feeds' || clean === 'about' || clean === 'privacy') return true;
+  if (!clean || clean === 'movies' || clean === 'all' || clean === 'feeds' || clean === 'about' || clean === 'privacy' || clean === 'contact') return true;
   if (/^year\/\d+$/i.test(clean)) return true;
 
   const movie = clean.match(/^movie\/(.+)$/i);
@@ -69,6 +70,10 @@ function isKnownPagePath(rawPath: string): boolean {
 async function startServer() {
   const app = express();
   const PORT = Number(process.env.PORT || 3000);
+  const contactRateLimiter = new ContactRateLimiter();
+  const contactDataDir = getContactDataDir();
+  await ensureContactStorage(contactDataDir);
+  console.log(`Contact submissions directory: ${contactDataDir}`);
 
   // Enable CORS headers for feeds so external tools like Radarr or curl can fetch without friction
   app.use((req, res, next) => {
@@ -262,6 +267,31 @@ async function startServer() {
   app.get('/api/about', (_req, res) => sendJson(res, buildAboutPayload()));
   app.get('/api/privacy', (_req, res) => sendJson(res, {}));
 
+  app.post('/api/contact', express.json({ limit: '16kb' }), async (req, res) => {
+    const ip = req.ip || req.socket.remoteAddress || 'unknown';
+    if (!contactRateLimiter.allow(ip)) {
+      return res.status(429).json({ error: 'Too many messages from this address. Please try again later.' });
+    }
+
+    const result = validateContactSubmission(req.body);
+    if (!result.ok) {
+      if (result.code === 'honeypot') return res.status(200).json({ ok: true });
+      return res.status(400).json({ error: result.message });
+    }
+
+    try {
+      await storeContactSubmission(result.submission, contactDataDir);
+      return res.status(201).json({ ok: true });
+    } catch {
+      return res.status(500).json({ error: 'We could not save your message. Please try again.' });
+    }
+  });
+
+  app.use('/api/contact', (error: unknown, _req: express.Request, res: express.Response, _next: express.NextFunction) => {
+    const status = typeof error === 'object' && error !== null && 'status' in error && error.status === 413 ? 413 : 400;
+    return res.status(status).json({ error: 'Please check your submission and try again.' });
+  });
+
   // Catalogue listing (all movies, brand pages, year archives).
   app.get('/api/catalogue', (req, res) => {
     const catalogueQuery = parseCatalogueQuery(toCatalogueSearch(req.query));
@@ -312,6 +342,9 @@ async function startServer() {
   // Vite middleware for development vs static build for production
   if (process.env.NODE_ENV !== 'production') {
     app.use((req, res, next) => {
+      if (req.path === '/api/contact' && req.method === 'GET') {
+        return res.status(404).json({ error: 'Not found' });
+      }
       if ((req.headers.accept || '').includes('text/html') && !isKnownPagePath(req.path)) {
         res.statusCode = 404;
       }

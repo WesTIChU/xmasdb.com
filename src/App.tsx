@@ -11,6 +11,7 @@ import { ScrollToTopButton } from './components/ScrollToTopButton';
 import { CatalogueStatsStrip } from './components/CatalogueStatsStrip';
 import { BrandPrefetch } from './components/BrandPrefetch';
 import { NotFoundPage } from './components/NotFoundPage';
+import { ContactPage } from './components/ContactPage';
 import type {
   CatalogueMeta,
   MetaBrand,
@@ -19,6 +20,7 @@ import type {
 import {
   isActorDetailPayload,
   isAboutPayload,
+  isContactPayload,
   isCatalogueListingPayload,
   isFeedsMetaPayload,
   isHomePayload,
@@ -50,6 +52,7 @@ import {
 import {
   buildActorSeo,
   buildAboutSeo,
+  buildContactSeo,
   buildPrivacySeo,
   buildBrandSeo,
   buildFeedsSeo,
@@ -77,6 +80,7 @@ type RouteDescriptor =
   | { type: 'feeds' }
   | { type: 'about' }
   | { type: 'privacy' }
+  | { type: 'contact' }
   | { type: 'not-found' };
 
 type ViewStatus = 'loading' | 'ready' | 'not-found' | 'error';
@@ -144,12 +148,14 @@ function isRoutePayloadValid(descriptor: RouteDescriptor, payload: unknown): boo
       return isAboutPayload(payload);
     case 'privacy':
       return isPrivacyPayload(payload);
+    case 'contact':
+      return isContactPayload(payload);
     default:
       return false;
   }
 }
 
-function parseRoute(currentPath: string): RouteDescriptor {
+export function parseRoute(currentPath: string): RouteDescriptor {
   const rawPath = currentPath.split('?')[0].trim();
   const clean = rawPath.replace(/^\/+|\/+$/g, '');
 
@@ -158,6 +164,7 @@ function parseRoute(currentPath: string): RouteDescriptor {
   if (clean === 'feeds') return { type: 'feeds' };
   if (clean === 'about') return { type: 'about' };
   if (clean === 'privacy') return { type: 'privacy' };
+  if (clean === 'contact') return { type: 'contact' };
 
   const yearArchiveMatch = clean.match(/^year\/(\d+)$/i);
   if (yearArchiveMatch) {
@@ -181,9 +188,13 @@ function parseRoute(currentPath: string): RouteDescriptor {
   }
 
   const brandParts = clean.split('/').filter(Boolean);
-  if (brandParts.length === 1) return { type: 'brand', slug: brandParts[0], year: null };
+  if (brandParts.length === 1) {
+    return getBrandBySlug(brandParts[0])
+      ? { type: 'brand', slug: brandParts[0], year: null }
+      : { type: 'not-found' };
+  }
   if (brandParts.length === 2) {
-    if (!/^\d+$/.test(brandParts[1])) return { type: 'not-found' };
+    if (!getBrandBySlug(brandParts[0]) || !/^\d+$/.test(brandParts[1])) return { type: 'not-found' };
     return { type: 'brand', slug: brandParts[0], year: parseInt(brandParts[1], 10) };
   }
 
@@ -220,6 +231,8 @@ function requestFor(descriptor: RouteDescriptor, catalogueSearch: string): strin
       return ABOUT_URL;
     case 'privacy':
       return PRIVACY_URL;
+    case 'contact':
+      return null;
     default:
       return null;
   }
@@ -271,14 +284,20 @@ export default function App() {
     window.scrollTo(0, 0);
   };
 
+  const focusSearch = () => {
+    document.getElementById('search-input')?.focus();
+  };
+
   const descriptor = useMemo(() => parseRoute(currentPath), [currentPath]);
   const cataloguePathname = currentPath.split('?')[0] || '/';
   const catalogueSearch = currentPath.includes('?') ? currentPath.slice(currentPath.indexOf('?')) : '';
   const catalogueQuery = useMemo(() => parseCatalogueQuery(catalogueSearch), [catalogueSearch]);
   const requestUrl = useMemo(() => requestFor(descriptor, catalogueSearch), [descriptor, catalogueSearch]);
+  const isStaticContactRoute = descriptor.type === 'contact';
 
   // Resolve the current route's data from the shared client cache / API.
   const [view, setView] = useState<{ url: string; status: ViewStatus; payload: unknown }>(() => {
+    if (isStaticContactRoute) return { url: '', status: 'ready', payload: {} };
     if (!requestUrl) return { url: '', status: 'not-found', payload: undefined };
     const cached = peekResolved<unknown>(requestUrl);
     return cached !== undefined && isRoutePayloadValid(descriptor, cached)
@@ -288,7 +307,7 @@ export default function App() {
 
   useEffect(() => {
     if (!requestUrl) {
-      setView({ url: '', status: 'not-found', payload: undefined });
+      setView({ url: '', status: isStaticContactRoute ? 'ready' : 'not-found', payload: isStaticContactRoute ? {} : undefined });
       return;
     }
 
@@ -320,12 +339,12 @@ export default function App() {
     return () => {
       active = false;
     };
-  }, [requestUrl]);
+  }, [requestUrl, isStaticContactRoute]);
 
   // A navigation changes requestUrl before the loading effect runs. Do not
   // render the previous route's ready payload as the new route's data.
   const isCurrentView = requestUrl === null
-    ? false
+    ? view.url === ''
     : view.url === requestUrl;
   const currentViewStatus: ViewStatus = isCurrentView ? view.status : 'loading';
 
@@ -379,6 +398,8 @@ export default function App() {
       updateSeoTags(buildAboutSeo());
     } else if (descriptor.type === 'privacy') {
       updateSeoTags(buildPrivacySeo());
+    } else if (descriptor.type === 'contact') {
+      updateSeoTags(buildContactSeo());
     }
   }, [descriptor, view, meta, isCurrentView]);
 
@@ -541,7 +562,7 @@ export default function App() {
             </button>
           </div>
         ) : currentViewStatus === 'not-found' || descriptor.type === 'not-found' ? (
-          <NotFoundPage onNavigate={navigate} />
+           <NotFoundPage onNavigate={navigate} onSearch={focusSearch} />
         ) : (
           <Suspense fallback={<div className="py-24 text-center text-[#736B63] font-body" aria-live="polite">Loading&hellip;</div>}>
             <>
@@ -552,6 +573,8 @@ export default function App() {
             {descriptor.type === 'about' && isAboutPayload(view.payload) && <AboutPage payload={view.payload} onNavigate={navigate} />}
 
             {descriptor.type === 'privacy' && isPrivacyPayload(view.payload) && <PrivacyPage />}
+
+            {descriptor.type === 'contact' && isContactPayload(view.payload) && <ContactPage />}
 
             {descriptor.type === 'movies' && listingPayload && (
               <div className="py-6 sm:py-8" id="all-movies-view">
@@ -676,12 +699,12 @@ export default function App() {
             })()}
 
             {descriptor.type === 'movie' && currentViewStatus === 'ready' && (() => {
-              if (!isMovieDetailPayload(view.payload)) return <NotFoundPage onNavigate={navigate} />;
+              if (!isMovieDetailPayload(view.payload)) return <NotFoundPage onNavigate={navigate} onSearch={focusSearch} />;
               return <MovieDetail movie={view.payload.movie} related={view.payload.related} onNavigate={navigate} />;
             })()}
 
             {descriptor.type === 'actor' && currentViewStatus === 'ready' && (() => {
-              if (!isActorDetailPayload(view.payload)) return <NotFoundPage onNavigate={navigate} />;
+              if (!isActorDetailPayload(view.payload)) return <NotFoundPage onNavigate={navigate} onSearch={focusSearch} />;
               return (
                 <ActorDetail
                   actor={view.payload.actor}

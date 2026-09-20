@@ -22,7 +22,7 @@
     "audit:local": "tsx scripts/audit-local.ts",
     "reconcile:lifecycle": "tsx scripts/reconcile-lifecycle.ts",
     "import:xmasdb": "tsx scripts/import-xmasdb.ts",
-    "test": "tsx test/actors.test.ts && tsx test/catalogue.test.ts && tsx test/feeds.test.ts && tsx test/hallmark-2026.test.ts && tsx test/seo.test.ts && tsx test/search.test.ts",
+    "test": "tsx test/actors.test.ts && tsx test/catalogue.test.ts && tsx test/contact.test.ts && tsx test/feeds.test.ts && tsx test/hallmark-2026.test.ts && tsx test/seo.test.ts && tsx test/search.test.ts",
     "lint": "tsc --noEmit"
   },
   "dependencies": {

@@ -118,6 +118,17 @@ body {
   margin-bottom: -6px;
 }
 
+@keyframes stats-countdown-hour-pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  45% { opacity: 0.55; transform: scale(1.06); }
+}
+
+.stats-countdown-time:hover,
+.stats-countdown-hour-pulse {
+  animation: stats-countdown-hour-pulse 600ms ease-out;
+  transform-origin: center;
+}
+
 .nav-squiggle {
   position: absolute;
   bottom: -2px;
@@ -161,5 +172,10 @@ body {
 
   .xmas-nav-arrow {
     transition: none;
+  }
+
+  .stats-countdown-time:hover,
+  .stats-countdown-hour-pulse {
+    animation: none;
   }
 }

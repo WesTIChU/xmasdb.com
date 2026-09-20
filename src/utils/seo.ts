@@ -236,6 +236,14 @@ export function buildPrivacySeo(): SeoDocument {
   };
 }
 
+export function buildContactSeo(): SeoDocument {
+  return {
+    title: 'Contact XmasDB | Corrections & Missing Movies',
+    description: 'Send a correction, report a missing Christmas movie or get in touch with XmasDB.',
+    canonicalPath: '/contact/',
+  };
+}
+
 export function buildNotFoundSeo(): SeoDocument {
   return {
     title: 'Page Not Found | XmasDB',

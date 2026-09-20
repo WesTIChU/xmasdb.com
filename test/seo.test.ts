@@ -5,6 +5,7 @@ import { getFeedsPath, getMoviePath, getActorPath } from '../src/utils/urls';
 import { getSitemapXml } from '../src/utils/feeds';
 import {
   buildAboutSeo,
+  buildContactSeo,
   buildPrivacySeo,
   buildActorSeo,
   buildBrandSeo,
@@ -20,6 +21,7 @@ import { buildActorDetail } from '../src/server/catalogue-api';
 import { isCatalogueListingPayload } from '../src/api/guards';
 import { parseCatalogueQuery } from '../src/utils/catalogue-pagination';
 import { buildCatalogueListing } from '../src/server/catalogue-api';
+import { parseRoute } from '../src/App';
 
 const movie = MOVIES[0];
 const actor = getAllActors()[0];
@@ -43,6 +45,8 @@ for (const brand of ['hallmark', 'lifetime', 'gaf']) {
 }
 assert.match(buildAboutSeo().title, /Why I Built the Christmas Movie Database/);
 assert.equal(buildAboutSeo().canonicalPath, '/about/');
+assert.match(buildContactSeo().title, /Contact XmasDB/);
+assert.equal(buildContactSeo().canonicalPath, '/contact/');
 assert.match(buildPrivacySeo().title, /Privacy & AI/);
 assert.equal(buildPrivacySeo().canonicalPath, '/privacy/');
 
@@ -60,6 +64,15 @@ assert.equal(getServerSeo('/about/').canonicalPath, '/about/');
 assert.equal(getCanonicalRedirect('/about'), '/about/');
 assert.equal(getServerSeo('/privacy/').canonicalPath, '/privacy/');
 assert.equal(getCanonicalRedirect('/privacy'), '/privacy/');
+assert.equal(getServerSeo('/contact/').canonicalPath, '/contact/');
+assert.equal(getCanonicalRedirect('/contact'), '/contact/');
+
+for (const path of ['/', '/movies/', '/hallmark/', '/lifetime/', '/gaf/', '/feeds/', '/about/', '/privacy/', '/contact/']) {
+  assert.notEqual(parseRoute(path).type, 'not-found', `${path} should resolve to a known route`);
+}
+assert.equal(parseRoute('/contact/').type, 'contact');
+assert.equal(parseRoute('/contact').type, 'contact');
+assert.equal(parseRoute('/this-page-does-not-exist/').type, 'not-found');
 
 const html = injectSeoIntoHtml('<!doctype html><html><head><title>old</title></head><body></body></html>', movieSeo);
 assert.match(html, new RegExp(`<title>${movie.title}`));
@@ -75,6 +88,7 @@ assert.match(sitemap, /https:\/\/xmasdb\.com\/year\/2025\//);
 assert.match(sitemap, new RegExp(`https://xmasdb\\.com${getFeedsPath()}`));
 assert.match(sitemap, /https:\/\/xmasdb\.com\/about\//);
 assert.match(sitemap, /https:\/\/xmasdb\.com\/privacy\//);
+assert.match(sitemap, /https:\/\/xmasdb\.com\/contact\//);
 assert.doesNotMatch(sitemap, /\/json\//);
 assert.doesNotMatch(sitemap, /[?&](page|search|sort|perPage)=/);
 assert.match(sitemap, /<loc>https:\/\/xmasdb\.com\//);

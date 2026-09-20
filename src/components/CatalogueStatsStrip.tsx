@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import type { CatalogueMeta } from '../api/types';
 import { getMoviesPath, getNetworkPath } from '../utils/urls';
 import { NavigationLink } from './NavigationLink';
@@ -23,10 +23,30 @@ function getChristmasCountdown(now: Date) {
 
 export const CatalogueStatsStrip: React.FC<CatalogueStatsStripProps> = ({ meta, onNavigate }) => {
   const [countdown, setCountdown] = useState(() => getChristmasCountdown(new Date()));
+  const [isHourPulseActive, setIsHourPulseActive] = useState(false);
+  const previousHourRef = useRef(countdown.hours);
+  const pulseTimeoutRef = useRef<number | null>(null);
 
   useEffect(() => {
-    const timer = window.setInterval(() => setCountdown(getChristmasCountdown(new Date())), 60000);
-    return () => window.clearInterval(timer);
+    const timer = window.setInterval(() => {
+      const nextCountdown = getChristmasCountdown(new Date());
+      if (nextCountdown.hours !== previousHourRef.current) {
+        previousHourRef.current = nextCountdown.hours;
+        if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+          setIsHourPulseActive(true);
+          if (pulseTimeoutRef.current !== null) window.clearTimeout(pulseTimeoutRef.current);
+          pulseTimeoutRef.current = window.setTimeout(() => {
+            setIsHourPulseActive(false);
+            pulseTimeoutRef.current = null;
+          }, 600);
+        }
+      }
+      setCountdown(nextCountdown);
+    }, 60000);
+    return () => {
+      window.clearInterval(timer);
+      if (pulseTimeoutRef.current !== null) window.clearTimeout(pulseTimeoutRef.current);
+    };
   }, []);
 
   const totalMovies = meta?.totalMovies ?? 0;
@@ -59,7 +79,7 @@ export const CatalogueStatsStrip: React.FC<CatalogueStatsStripProps> = ({ meta, 
       </div>
       <span className="text-[#C59A3F] select-none" aria-hidden="true">✦</span>
       <span className="shrink-0 font-semibold text-[#FAF7F2]/90" aria-label={`${countdown.days} days, ${countdown.hours} hours, ${countdown.minutes} minutes and ${countdown.seconds} seconds until Christmas`}>
-        CHRISTMAS IN <span className="text-[#E9D8AE]">{countdown.days}D {String(countdown.hours).padStart(2, '0')}H {String(countdown.minutes).padStart(2, '0')}M</span>
+         CHRISTMAS IN <span className={`stats-countdown-time inline-block text-[#E9D8AE]${isHourPulseActive ? ' stats-countdown-hour-pulse' : ''}`}>{countdown.days}D {String(countdown.hours).padStart(2, '0')}H {String(countdown.minutes).padStart(2, '0')}M</span>
       </span>
     </div>
   </aside>

@@ -55,6 +55,8 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, populatedBrands }) =
           </a>
           <span className="text-[#C8BFB3] select-none">·</span>
            <NavigationLink href="/privacy/" onNavigate={onNavigate} className="text-[#1A3D2F] hover:text-[#B8860B] transition-colors">Privacy &amp; AI</NavigationLink>
+           <span className="text-[#C8BFB3] select-none">·</span>
+           <NavigationLink href="/contact/" onNavigate={onNavigate} className="text-[#1A3D2F] hover:text-[#B8860B] transition-colors">Contact</NavigationLink>
         </nav>
 
         <p className="text-xs text-[#6F675E] font-sans-clean max-w-lg mx-auto">

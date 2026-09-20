@@ -383,6 +383,7 @@ export function getSitemapXml(): string {
   urls.push({ loc: `${SITE_ORIGIN}/`, changefreq: 'daily', priority: '1.0' });
   urls.push({ loc: `${SITE_ORIGIN}/about/`, changefreq: 'monthly', priority: '0.5' });
   urls.push({ loc: `${SITE_ORIGIN}/privacy/`, changefreq: 'monthly', priority: '0.5' });
+  urls.push({ loc: `${SITE_ORIGIN}/contact/`, changefreq: 'monthly', priority: '0.5' });
   urls.push({ loc: `${SITE_ORIGIN}${getMoviesPath()}`, changefreq: 'daily', priority: '0.9' });
 
   // 2. Network catalogues

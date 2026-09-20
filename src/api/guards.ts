@@ -2,6 +2,7 @@ import type {
   ActorDetailPayload,
   AboutPayload,
   PrivacyPayload,
+  ContactPayload,
   CatalogueListing,
   FeedsMetaPayload,
   HomePayload,
@@ -63,6 +64,10 @@ export function isAboutPayload(value: unknown): value is AboutPayload {
 }
 
 export function isPrivacyPayload(value: unknown): value is PrivacyPayload {
+  return isRecord(value);
+}
+
+export function isContactPayload(value: unknown): value is ContactPayload {
   return isRecord(value);
 }
 

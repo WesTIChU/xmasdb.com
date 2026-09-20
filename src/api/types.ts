@@ -82,6 +82,7 @@ export interface AboutPayload {
 }
 
 export interface PrivacyPayload {}
+export interface ContactPayload {}
 
 /** Full movie detail plus lightweight related cards from the same brand. */
 export type MovieDetailMovie = Omit<Movie, 'cast'> & {

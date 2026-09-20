@@ -11,6 +11,7 @@ import type {
 
 export const ABOUT_URL = '/api/about';
 export const PRIVACY_URL = '/api/privacy';
+export const CONTACT_URL = '/api/contact';
 
 declare global {
   interface Window {
@@ -142,4 +143,14 @@ export async function fetchSearchResults(query: string): Promise<SearchResultsPa
   });
   if (!response.ok) throw new ApiError(`Search failed with status ${response.status}`, response.status);
   return (await response.json()) as SearchResultsPayload;
+}
+
+export async function submitContact(values: Record<string, string>): Promise<void> {
+  const response = await fetch(CONTACT_URL, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(values),
+  });
+  const payload = await response.json().catch(() => ({})) as { error?: string };
+  if (!response.ok) throw new Error(payload.error || 'Something went wrong. Please try again.');
 }

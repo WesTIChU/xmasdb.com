@@ -6,3 +6,5 @@ coverage/
 *.log
 .env*
 !.env.example
+data/contact-submissions.json
+data/.*.tmp
