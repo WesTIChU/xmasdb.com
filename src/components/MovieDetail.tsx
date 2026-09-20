@@ -134,7 +134,7 @@ export const MovieDetail: React.FC<MovieDetailProps> = ({ movie, related, onNavi
             {brand && (
               <div className="flex items-center justify-between">
                 <span className="text-[#6F675E] flex items-center gap-1.5">
-                  <Tv className="w-3.5 h-3.5" /> Brand
+                  <Tv className="w-3.5 h-3.5" /> Network
                 </span>
                 <NavigationLink href={`/${brand.slug}`} onNavigate={onNavigate} className="font-medium text-[#1A3D2F] hover:text-[#143626] cursor-pointer">
                   {brand.shortName}
