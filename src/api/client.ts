@@ -16,6 +16,7 @@ export const CONTACT_URL = '/api/contact';
 declare global {
   interface Window {
     __XMASDB_META__?: CatalogueMeta;
+    __XMASDB_ROUTE__?: { url?: string; payload?: unknown };
   }
 }
 
@@ -43,6 +44,10 @@ function remember(url: string, value: unknown) {
     if (oldest === undefined) break;
     resolved.delete(oldest);
   }
+}
+
+if (typeof window !== 'undefined' && window.__XMASDB_ROUTE__?.url && window.__XMASDB_ROUTE__.payload !== undefined) {
+  remember(window.__XMASDB_ROUTE__.url, window.__XMASDB_ROUTE__.payload);
 }
 
 function request<T>(url: string): Promise<T> {

@@ -98,6 +98,8 @@ assert.match(actorHtml, /href="\/movie\/\d+\/[^\"]+"/);
 assert.match(actorHtml, /name="robots" content="index,follow"/);
 assert.ok(actorHtml.includes(`rel="canonical" href="https://xmasdb.com${danicaPath}"`));
 assert.match(actorHtml, /application\/ld\+json/);
+assert.match(actorHtml, /__XMASDB_ROUTE__/);
+assert.match(actorHtml, /\/api\/actor\/65220\/danica-mckellar/);
 assert.doesNotMatch(actorHtml, /Actor not found|Loading\.\.\.|No actor found/);
 
 const moviePath = getMoviePath(movie.tmdbId, movie.slug);
@@ -106,6 +108,8 @@ assert.ok(movieHtml.includes(`<h1>${movie.title}</h1>`));
 assert.match(movieHtml, /<h2>Cast<\/h2>/);
 assert.match(movieHtml, /name="robots" content="index,follow"/);
 assert.ok(movieHtml.includes(`rel="canonical" href="https://xmasdb.com${moviePath}"`));
+assert.match(movieHtml, /__XMASDB_ROUTE__/);
+assert.match(movieHtml, /\/api\/movie\/\d+\/[^"<]+/);
 
 const htmlServer = createServer((request, response) => {
   const pathname = new URL(request.url || '/', 'http://localhost').pathname;

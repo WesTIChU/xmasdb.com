@@ -11,6 +11,7 @@
     "clean": "rm -rf dist server.js",
     "refresh:actors": "tsx scripts/refresh-actors.ts",
     "refresh:tmdb": "tsx scripts/refresh-tmdb.ts",
+    "test:browser": "tsx scripts/test-production-browser.ts",
     "discover:gaf": "tsx scripts/gaf-catalogue.ts --discover",
     "import:gaf": "tsx scripts/gaf-catalogue.ts --import",
     "discover:lifetime": "tsx scripts/lifetime-catalogue.ts",

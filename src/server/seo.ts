@@ -151,6 +151,21 @@ export function renderServerContent(pathname: string): string {
   return renderActorContent(pathname) || renderMovieContent(pathname);
 }
 
+function getServerRouteBootstrap(pathname: string): { url: string; payload: unknown } | null {
+  const clean = routePath(pathname);
+  const actorMatch = clean.match(/^actor\/([^/]+)(?:\/([^/]+))?$/i);
+  if (actorMatch) {
+    const payload = buildActorDetail(actorMatch[1], actorMatch[2]);
+    if (payload) return { url: `/api/actor/${actorMatch[1]}${actorMatch[2] ? `/${actorMatch[2]}` : ''}`, payload };
+  }
+  const movieMatch = clean.match(/^movie\/([^/]+)(?:\/([^/]+))?$/i);
+  if (movieMatch) {
+    const payload = buildMovieDetail(movieMatch[1], movieMatch[2]);
+    if (payload) return { url: `/api/movie/${movieMatch[1]}${movieMatch[2] ? `/${movieMatch[2]}` : ''}`, payload };
+  }
+  return null;
+}
+
 function renderMeta(name: string, content: string, property = false): string {
   return `<meta ${property ? 'property' : 'name'}="${name}" content="${escapeHtml(content)}" />`;
 }
@@ -181,7 +196,12 @@ export function injectSeoIntoHtml(html: string, seo: SeoDocument): string {
 }
 
 export function renderServerHtml(indexHtml: string, pathname: string, search = ''): string {
+  const routeBootstrap = getServerRouteBootstrap(pathname);
   const content = renderServerContent(pathname);
   const html = content ? indexHtml.replace('<div id="root"></div>', `<div id="root">${content}</div>`) : indexHtml;
-  return injectSeoIntoHtml(html, getServerSeo(pathname, search));
+  const bootstrap = routeBootstrap
+    ? `<script>window.__XMASDB_ROUTE__=${JSON.stringify(routeBootstrap).replace(/</g, '\\u003c')};</script>`
+    : '';
+  const withBootstrap = bootstrap ? html.replace('</head>', `    ${bootstrap}\n  </head>`) : html;
+  return injectSeoIntoHtml(withBootstrap, getServerSeo(pathname, search));
 }
