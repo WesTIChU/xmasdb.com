@@ -14,6 +14,7 @@ import { ScrollToTopButton } from './components/ScrollToTopButton';
 import { CatalogueStatsStrip } from './components/CatalogueStatsStrip';
 import { BrandPrefetch } from './components/BrandPrefetch';
 import { NotFoundPage } from './components/NotFoundPage';
+import { AboutPage } from './components/AboutPage';
 import type {
   ActorDetailPayload,
   CatalogueListing,
@@ -38,15 +39,24 @@ import {
 } from './api/client';
 import { getBrandBySlug } from './data/brands';
 import {
-  SITE_ORIGIN,
   getMoviePath,
   getActorPath,
   getNetworkPath,
   getYearPath,
   getMoviesPath,
-  getFeedsPath,
 } from './utils/urls';
-import { updateSeoTags } from './utils/seo';
+import {
+  buildActorSeo,
+  buildAboutSeo,
+  buildBrandSeo,
+  buildFeedsSeo,
+  buildHomeSeo,
+  buildMoviesSeo,
+  buildMovieSeo,
+  buildNotFoundSeo,
+  buildYearSeo,
+  updateSeoTags,
+} from './utils/seo';
 import { buildCatalogueUrl, parseCatalogueQuery } from './utils/catalogue-pagination';
 
 /**
@@ -61,6 +71,7 @@ type RouteDescriptor =
   | { type: 'movie'; identifier: string; slug?: string }
   | { type: 'actor'; identifier: string; slug?: string }
   | { type: 'feeds' }
+  | { type: 'about' }
   | { type: 'not-found' };
 
 type ViewStatus = 'loading' | 'ready' | 'not-found' | 'error';
@@ -95,6 +106,8 @@ function isRoutePayloadValid(descriptor: RouteDescriptor, payload: unknown): boo
       return Array.isArray(payload.years)
         && Array.isArray(payload.populatedBrands)
         && isRecord(payload.counts);
+    case 'about':
+      return true;
     default:
       return false;
   }
@@ -107,6 +120,7 @@ function parseRoute(currentPath: string): RouteDescriptor {
   if (!clean) return { type: 'home' };
   if (clean === 'movies' || clean === 'all') return { type: 'movies' };
   if (clean === 'feeds') return { type: 'feeds' };
+  if (clean === 'about') return { type: 'about' };
 
   const yearArchiveMatch = clean.match(/^year\/(\d+)$/i);
   if (yearArchiveMatch) {
@@ -165,6 +179,8 @@ function requestFor(descriptor: RouteDescriptor, catalogueSearch: string): strin
       return actorUrl(descriptor.slug ? [descriptor.identifier, descriptor.slug] : [descriptor.identifier]);
     case 'feeds':
       return FEEDS_META_URL;
+    case 'about':
+      return null;
     default:
       return null;
   }
@@ -224,7 +240,9 @@ export default function App() {
 
   // Resolve the current route's data from the shared client cache / API.
   const [view, setView] = useState<{ url: string; status: ViewStatus; payload: unknown }>(() => {
-    if (!requestUrl) return { url: '', status: 'not-found', payload: undefined };
+    if (!requestUrl) return descriptor.type === 'about'
+      ? { url: '', status: 'ready', payload: {} }
+      : { url: '', status: 'not-found', payload: undefined };
     const cached = peekResolved<unknown>(requestUrl);
     return cached !== undefined && isRoutePayloadValid(descriptor, cached)
       ? { url: requestUrl, status: 'ready', payload: cached }
@@ -233,7 +251,9 @@ export default function App() {
 
   useEffect(() => {
     if (!requestUrl) {
-      setView({ url: '', status: 'not-found', payload: undefined });
+      setView(descriptor.type === 'about'
+        ? { url: '', status: 'ready', payload: {} }
+        : { url: '', status: 'not-found', payload: undefined });
       return;
     }
 
@@ -269,7 +289,9 @@ export default function App() {
 
   // A navigation changes requestUrl before the loading effect runs. Do not
   // render the previous route's ready payload as the new route's data.
-  const isCurrentView = view.url === requestUrl;
+  const isCurrentView = requestUrl === null
+    ? descriptor.type === 'about' && view.status === 'ready'
+    : view.url === requestUrl;
   const currentViewStatus: ViewStatus = isCurrentView ? view.status : 'loading';
 
   // Keep legacy movie/actor URLs canonical after the entity resolves.
@@ -292,122 +314,34 @@ export default function App() {
   useEffect(() => {
     if (!isCurrentView) return;
     if (descriptor.type === 'not-found' || view.status === 'not-found') {
-      updateSeoTags({
-        title: 'Page Not Found | XmasDB',
-        description: 'The Christmas movie page you are looking for could not be found on XmasDB.',
-        noIndex: true,
-      });
+      updateSeoTags(buildNotFoundSeo());
       return;
     }
 
     if (descriptor.type === 'home') {
-      updateSeoTags({
-        title: 'XmasDB.com — A curated collection of Christmas movies',
-        description: 'A curated collection of Hallmark, Lifetime, and TV Christmas movies with cast, air dates, trailers, and data feeds.',
-        canonicalPath: '/',
-        schema: {
-          '@context': 'https://schema.org',
-          '@type': 'WebSite',
-          name: 'XmasDB.com',
-          url: `${SITE_ORIGIN}/`,
-          description: 'A curated collection of Christmas movies.',
-        },
-      });
+      updateSeoTags(buildHomeSeo(meta?.totalMovies));
     } else if (descriptor.type === 'movies') {
-      const total = meta?.totalMovies;
-      updateSeoTags({
-        title: 'All Christmas Movies — XmasDB.com',
-        description: total
-          ? `Explore all ${total} Christmas movies in the XmasDB archive across Hallmark, Lifetime, and holiday networks.`
-          : 'Explore the XmasDB archive of Christmas movies across Hallmark, Lifetime, and holiday networks.',
-        canonicalPath: getMoviesPath(),
-        schema: {
-          '@context': 'https://schema.org',
-          '@type': 'CollectionPage',
-          name: 'All Christmas Movies',
-          url: `${SITE_ORIGIN}${getMoviesPath()}`,
-          description: 'Complete catalogue of holiday films.',
-        },
-      });
+      updateSeoTags({ ...buildMoviesSeo(meta?.totalMovies), noIndex: Boolean(catalogueSearch) });
     } else if (descriptor.type === 'year-archive') {
-      updateSeoTags({
-        title: `Christmas Movies Released in ${descriptor.year} — XmasDB.com`,
-        description: `Discover all Hallmark, Lifetime, and TV Christmas movies released in ${descriptor.year}.`,
-        canonicalPath: getYearPath(descriptor.year),
-        schema: {
-          '@context': 'https://schema.org',
-          '@type': 'CollectionPage',
-          name: `Christmas Movies of ${descriptor.year}`,
-          url: `${SITE_ORIGIN}${getYearPath(descriptor.year)}`,
-        },
-      });
+      updateSeoTags({ ...buildYearSeo(descriptor.year, (view.payload as Partial<CatalogueListing>).total), noIndex: Boolean(catalogueSearch) });
     } else if (descriptor.type === 'brand') {
       const brand = getBrandBySlug(descriptor.slug);
       if (!brand) return;
-      const yearSuffix = descriptor.year ? ` (${descriptor.year})` : '';
-      const canonical = getNetworkPath(brand.slug, descriptor.year);
-      updateSeoTags({
-        title: `${brand.name}${yearSuffix} — XmasDB.com`,
-        description: `${brand.description}${descriptor.year ? ` Holiday lineup for ${descriptor.year}.` : ''}`,
-        canonicalPath: canonical,
-        schema: {
-          '@context': 'https://schema.org',
-          '@type': 'CollectionPage',
-          name: `${brand.name}${yearSuffix}`,
-          url: `${SITE_ORIGIN}${canonical}`,
-        },
-      });
+      updateSeoTags({ ...buildBrandSeo(brand, descriptor.year, (view.payload as Partial<CatalogueListing>).total), noIndex: Boolean(catalogueSearch) });
     } else if (descriptor.type === 'movie') {
       if (view.status !== 'ready') return;
       const m = (view.payload as Partial<MovieDetailPayload>).movie;
       if (!m) return;
-      const canonical = getMoviePath(m.tmdbId, m.slug);
-      updateSeoTags({
-        title: `${m.title} (${m.year}) — XmasDB.com`,
-        description: m.synopsis,
-        canonicalPath: canonical,
-        image: m.posterUrl,
-        schema: {
-          '@context': 'https://schema.org',
-          '@type': 'Movie',
-          name: m.title,
-          url: `${SITE_ORIGIN}${canonical}`,
-          description: m.synopsis,
-          image: m.posterUrl,
-          datePublished: `${m.year}`,
-          director: m.director ? { '@type': 'Person', name: m.director } : undefined,
-          actor: m.cast.map((c) => ({
-            '@type': 'Person',
-            name: c.name,
-            url: `${SITE_ORIGIN}${getActorPath(c.resolvedTmdbPersonId ?? c.tmdbPersonId ?? 0, c.slug)}`,
-          })),
-        },
-      });
+      updateSeoTags(buildMovieSeo(m));
     } else if (descriptor.type === 'actor') {
       if (view.status !== 'ready') return;
       const a = (view.payload as Partial<ActorDetailPayload>).actor;
       if (!a) return;
-      const canonical = getActorPath(a.tmdbPersonId, a.slug);
-      updateSeoTags({
-        title: `${a.name} Christmas Movies & Filmography — XmasDB.com`,
-        description: `${a.name}'s complete holiday movie archive and credits on XmasDB.com. ${a.notableRoles || ''}`,
-        canonicalPath: canonical,
-        image: a.photoUrl,
-        schema: {
-          '@context': 'https://schema.org',
-          '@type': 'Person',
-          name: a.name,
-          url: `${SITE_ORIGIN}${canonical}`,
-          image: a.photoUrl,
-          jobTitle: 'Actor',
-        },
-      });
+      updateSeoTags(buildActorSeo(a, (view.payload as ActorDetailPayload).filmography));
     } else if (descriptor.type === 'feeds') {
-      updateSeoTags({
-        title: 'Radarr Feeds — XmasDB.com',
-        description: 'Add XmasDB Christmas movie collections directly to Radarr with updated collection feeds.',
-        canonicalPath: getFeedsPath(),
-      });
+      updateSeoTags(buildFeedsSeo());
+    } else if (descriptor.type === 'about') {
+      updateSeoTags(buildAboutSeo());
     }
   }, [descriptor, view, meta, isCurrentView]);
 
@@ -567,12 +501,14 @@ export default function App() {
               <HomePage payload={view.payload as HomePayload} onNavigate={navigate} />
             )}
 
+            {descriptor.type === 'about' && <AboutPage />}
+
             {descriptor.type === 'movies' && listingPayload && (
               <div className="py-6 sm:py-8" id="all-movies-view">
                 <div className="text-center mb-2">
-                  <h2 className="text-2xl sm:text-3xl font-heading font-semibold text-[#1A3D2F]">
+                  <h1 className="text-2xl sm:text-3xl font-heading font-semibold text-[#1A3D2F]">
                     All Christmas Movies
-                  </h2>
+                  </h1>
                 </div>
 
                 <YearFilter
@@ -603,9 +539,9 @@ export default function App() {
             {descriptor.type === 'year-archive' && listingPayload && (
               <div className="py-6 sm:py-8" id={`year-view-${descriptor.year}`}>
                 <div className="text-center mb-2">
-                  <h2 className="text-2xl sm:text-3xl font-heading font-semibold text-[#1A3D2F]">
+                  <h1 className="text-2xl sm:text-3xl font-heading font-semibold text-[#1A3D2F]">
                     Christmas Movies of {descriptor.year}
-                  </h2>
+                  </h1>
                   <p className="text-sm text-[#736B63] font-body mt-1">
                     All holiday releases and TV premieres from {descriptor.year}.
                   </p>
@@ -646,9 +582,9 @@ export default function App() {
               return (
                 <div className="py-6 sm:py-8" id={`brand-view-${brand.slug}`}>
                   <div className="text-center mb-2">
-                    <h2 className="text-2xl sm:text-3xl font-heading font-semibold text-[#1A3D2F]">
+                    <h1 className="text-2xl sm:text-3xl font-heading font-semibold text-[#1A3D2F]">
                       {brand.name} {descriptor.year ? `(${descriptor.year})` : ''}
-                    </h2>
+                    </h1>
                     <p className="text-sm text-[#736B63] font-body mt-1">
                       {brand.description}
                     </p>

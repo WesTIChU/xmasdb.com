@@ -82,9 +82,11 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, populatedBrands }) =
           className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-sm text-[#1A3D2F]"
           aria-label="Footer Links"
         >
-          <NavigationLink href="/" onNavigate={onNavigate} className="text-[#1A3D2F] hover:text-[#B8860B] transition-colors">Home</NavigationLink>
-          <span className="text-[#C8BFB3] select-none">·</span>
-          <NavigationLink href={getMoviesPath()} onNavigate={onNavigate} className="text-[#1A3D2F] hover:text-[#B8860B] transition-colors">All Movies</NavigationLink>
+           <NavigationLink href="/" onNavigate={onNavigate} className="text-[#1A3D2F] hover:text-[#B8860B] transition-colors">Home</NavigationLink>
+           <span className="text-[#C8BFB3] select-none">·</span>
+           <NavigationLink href="/about/" onNavigate={onNavigate} className="text-[#1A3D2F] hover:text-[#B8860B] transition-colors">About</NavigationLink>
+           <span className="text-[#C8BFB3] select-none">·</span>
+           <NavigationLink href={getMoviesPath()} onNavigate={onNavigate} className="text-[#1A3D2F] hover:text-[#B8860B] transition-colors">All Movies</NavigationLink>
           <span className="text-[#C8BFB3] select-none">·</span>
           {populatedBrands.map((b) => (
             <React.Fragment key={b.id}>
@@ -113,7 +115,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, populatedBrands }) =
             aria-haspopup="dialog"
             aria-expanded={isPrivacyOpen}
           >
-            <span className="relative inline-block leading-normal">Privacy &amp; Site Notes<NavSquiggle /></span>
+            <span className="relative inline-block leading-normal">Privacy &amp; AI<NavSquiggle /></span>
           </button>
         </nav>
 
@@ -136,7 +138,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, populatedBrands }) =
             ref={privacyDialogRef}
             role="dialog"
             aria-modal="true"
-            aria-labelledby="privacy-site-notes-heading"
+             aria-labelledby="privacy-ai-heading"
             className="relative w-full max-w-[520px] max-h-[calc(100vh-3rem)] overflow-y-auto rounded-xl border border-[#E0D5C7] bg-[#FFFDF9] p-6 sm:p-8 text-left shadow-xl"
           >
             <button
@@ -144,14 +146,14 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, populatedBrands }) =
               type="button"
               onClick={closePrivacy}
               className="absolute right-4 top-4 inline-flex h-8 w-8 items-center justify-center rounded-full text-[#736B63] hover:bg-[#F5EFE6] hover:text-[#1A3D2F] transition-colors cursor-pointer"
-               aria-label="Close Privacy & Site Notes dialog"
+                aria-label="Close Privacy & AI dialog"
             >
               <X className="h-4 w-4" aria-hidden="true" />
             </button>
 
               <div className="pr-8">
                 <p className="font-sans-clean text-[10px] font-semibold uppercase tracking-[0.2em] text-[#B8860B]">XmasDB</p>
-                <h2 id="privacy-site-notes-heading" className="mt-1 font-heading text-2xl font-semibold text-[#1A3D2F]">Privacy &amp; Site Notes</h2>
+                <h2 id="privacy-ai-heading" className="mt-1 font-heading text-2xl font-semibold text-[#1A3D2F]">Privacy &amp; AI</h2>
               </div>
 
               <div className="mt-5 space-y-5 font-body text-sm leading-relaxed text-[#4A433B]">

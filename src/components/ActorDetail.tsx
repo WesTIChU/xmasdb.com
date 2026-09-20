@@ -361,9 +361,8 @@ export const ActorDetail: React.FC<ActorDetailProps> = ({
                     <div className="relative aspect-2/3 w-full overflow-hidden rounded-sm bg-[#EBE4DA] border border-[#E0D7CC] group-hover:border-[#B8860B]/50 transition-colors">
                       {!poster ? (
                         <ComingSoonPoster
-                          title={movie.title}
                           year={movie.year}
-                          networkName={brand ? brand.name : undefined}
+                          networkName={brand ? brand.shortName : undefined}
                         />
                       ) : (
                         <img

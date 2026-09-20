@@ -30,10 +30,11 @@ import {
   buildSearchResults,
   buildFeedsMeta,
 } from './src/server/catalogue-api';
+import { getCanonicalRedirect, getRobotsTxt, getServerSeo, injectSeoIntoHtml } from './src/server/seo';
 
 function isKnownPagePath(rawPath: string): boolean {
   const clean = rawPath.replace(/^\/+|\/+$/g, '');
-  if (!clean || clean === 'movies' || clean === 'all' || clean === 'feeds') return true;
+  if (!clean || clean === 'movies' || clean === 'all' || clean === 'feeds' || clean === 'about') return true;
   if (/^year\/\d+$/i.test(clean)) return true;
 
   const movie = clean.match(/^movie\/(.+)$/i);
@@ -113,6 +114,10 @@ async function startServer() {
   app.get('/sitemap.xml', (_req, res) => {
     res.setHeader('Content-Type', 'application/xml; charset=utf-8');
     res.send(getSitemapXml());
+  });
+
+  app.get('/robots.txt', (_req, res) => {
+    res.type('text/plain').send(getRobotsTxt());
   });
 
   // =========================================================================
@@ -317,6 +322,19 @@ async function startServer() {
     const distPath = path.join(process.cwd(), 'dist');
     const indexPath = path.join(distPath, 'index.html');
 
+    // Keep public HTML on the canonical host and protocol without redirecting
+    // machine-readable API and feed endpoints.
+    app.use((req, res, next) => {
+      const acceptsHtml = (req.headers.accept || '').includes('text/html');
+      const forwardedProtocol = String(req.headers['x-forwarded-proto'] || '').split(',')[0].trim();
+      const needsRedirect = acceptsHtml && (
+        req.hostname === 'www.xmasdb.com' ||
+        (req.hostname === 'xmasdb.com' && forwardedProtocol === 'http')
+      );
+      if (!needsRedirect) return next();
+      return res.redirect(301, `https://xmasdb.com${req.originalUrl}`);
+    });
+
     // Bootstrap metadata is injected into every HTML response so the header,
     // footer and stats strip render accurate counts on the very first frame
     // without a separate request. This is data, not server-rendered markup.
@@ -325,11 +343,12 @@ async function startServer() {
       .readFileSync(indexPath, 'utf-8')
       .replace('</head>', `    ${metaBootstrap}\n  </head>`);
 
-    const sendIndexHtml = (res: express.Response, status = 200) => {
+    const sendIndexHtml = (req: express.Request, res: express.Response, status = 200) => {
       res.status(status);
       res.setHeader('Content-Type', 'text/html; charset=utf-8');
       res.setHeader('Cache-Control', 'no-cache');
-      res.send(indexHtml);
+      const seo = getServerSeo(req.path, req.originalUrl.includes('?') ? req.originalUrl.slice(req.originalUrl.indexOf('?')) : '');
+      res.send(injectSeoIntoHtml(indexHtml, seo));
     };
 
     // Content-hashed build assets (/assets/*) are immutable by URL and can be cached for a year.
@@ -368,12 +387,18 @@ async function startServer() {
     }
 
     // HTML entry points (always revalidated so new deploys reach browsers promptly).
-    app.get(['/', '/index.html'], (_req, res) => sendIndexHtml(res));
+    app.get('*', (req, res, next) => {
+      const redirect = getCanonicalRedirect(req.path);
+      if (redirect) return res.redirect(301, redirect);
+      next();
+    });
+
+    app.get(['/', '/index.html'], (req, res) => sendIndexHtml(req, res));
 
     // SEO-friendly deep links: known catalogue paths render the app shell,
     // unknown paths return a real 404 status.
     app.get('*', (req, res) => {
-      sendIndexHtml(res, isKnownPagePath(req.path) ? 200 : 404);
+      sendIndexHtml(req, res, isKnownPagePath(req.path) ? 200 : 404);
     });
   }
 

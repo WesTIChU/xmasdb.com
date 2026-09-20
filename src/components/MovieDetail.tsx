@@ -79,9 +79,8 @@ export const MovieDetail: React.FC<MovieDetailProps> = ({ movie, related, onNavi
           <div className="aspect-2/3 w-full max-w-xs mx-auto rounded-md overflow-hidden bg-[#EBE4DA] shadow-md border border-[#E4DDD3]">
             {showComingSoon ? (
               <ComingSoonPoster
-                title={movie.title}
                 year={movie.year}
-                networkName={brand ? brand.name : undefined}
+                networkName={brand ? brand.shortName : undefined}
               />
             ) : (
               <img
@@ -189,9 +188,9 @@ export const MovieDetail: React.FC<MovieDetailProps> = ({ movie, related, onNavi
                 {brand.shortName}
               </span>
             )}
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-semibold text-[#1A3D2F] tracking-tight">
+            <h1 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-semibold text-[#1A3D2F] tracking-tight">
               {movie.title}
-            </h2>
+            </h1>
             <p className="text-lg text-[#841818] font-body mt-1">
               {movie.year}
             </p>

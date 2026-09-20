@@ -108,7 +108,7 @@ export const FeedsPage: React.FC<{ meta: FeedsMetaPayload }> = ({ meta }) => {
   return (
     <div id="feeds-page" className="mx-auto max-w-4xl px-0 py-7 text-left sm:py-10">
       <header className="mb-7 border-b border-[#E7DFD5] pb-6">
-        <h1 className="font-heading text-2xl font-semibold text-[#1A3D2F] sm:text-3xl">RADARR FEEDS</h1>
+        <h1 className="font-heading text-2xl font-semibold text-[#1A3D2F] sm:text-3xl">Christmas Movie Radarr &amp; JSON Feeds</h1>
         <p className="mt-2 max-w-xl font-body text-base leading-relaxed text-[#59524A]">
           Add XmasDB Christmas movie collections directly to Radarr. Choose a collection below and copy its feed URL.
         </p>

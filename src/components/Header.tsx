@@ -40,7 +40,7 @@ export const Header: React.FC<HeaderProps> = ({
   };
 
   return (
-      <header className="border-b border-[#E7DFD5] bg-[#FAF7F2] py-4 pb-6 sm:pt-6 sm:pb-6 px-4 sm:px-6 relative z-30">
+      <header className="border-b border-[#E7DFD5] bg-[#FAF7F2] py-4 pb-4 sm:pt-6 sm:pb-4 px-4 sm:px-6 relative z-30">
       <div className="max-w-4xl mx-auto text-center">
         {/* 1. Branding: XmasDB.com Logo */}
         <div className="mb-3 sm:mb-4">

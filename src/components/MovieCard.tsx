@@ -10,9 +10,13 @@ interface MovieCardProps {
   onSelectMovie: (slug: string, tmdbId?: number) => void;
   /** Eagerly loads this card's poster at high priority (use for above-the-fold cards). */
   priority?: boolean;
+  /** Allows contextual rows to provide their own metadata beneath the title. */
+  metadata?: React.ReactNode;
+  /** Hides the default year and brand metadata when a row supplies none. */
+  showYearBrandMetadata?: boolean;
 }
 
-export const MovieCard: React.FC<MovieCardProps> = ({ movie, onSelectMovie, priority = false }) => {
+export const MovieCard: React.FC<MovieCardProps> = ({ movie, onSelectMovie, priority = false, metadata, showYearBrandMetadata = true }) => {
   const [hasImageError, setHasImageError] = useState(false);
   const brand = getBrandById(movie.brandId);
   const canonicalPath = getMoviePath(movie.tmdbId, movie.slug);
@@ -21,22 +25,21 @@ export const MovieCard: React.FC<MovieCardProps> = ({ movie, onSelectMovie, prio
   const showComingSoon = hasImageError || !poster;
 
   return (
-    <article id={`movie-card-${movie.slug}`}>
+    <article id={`movie-card-${movie.slug}`} className="min-w-0">
       <a
         href={canonicalPath}
         onClick={(e) => {
           e.preventDefault();
           onSelectMovie(movie.slug, movie.tmdbId);
         }}
-        className="group flex flex-col transition-all duration-200 block text-inherit no-underline"
+        className="group flex min-w-0 flex-col transition-all duration-200 block text-inherit no-underline"
       >
         {/* Poster container with proper 2:3 movie-poster proportions - main visual focus */}
         <div className="relative aspect-2/3 w-full overflow-hidden rounded-md bg-[#EBE4DA] shadow-xs group-hover:shadow-md transition-shadow border border-[#E0D7CC] group-hover:border-[#B8860B]/50">
           {showComingSoon ? (
             <ComingSoonPoster
-              title={movie.title}
               year={movie.year}
-              networkName={brand ? brand.name : undefined}
+              networkName={brand ? brand.shortName : undefined}
             />
           ) : (
             <img
@@ -66,19 +69,19 @@ export const MovieCard: React.FC<MovieCardProps> = ({ movie, onSelectMovie, prio
         {/* Movie Title & Year directly beneath poster */}
         <div className="pt-2.5 pb-1 text-center">
           <h3
-            className="font-heading text-base sm:text-lg font-semibold text-[#1A3D2F] group-hover:text-[#841818] transition-colors leading-snug line-clamp-2"
+            className="min-h-[2.75rem] min-w-0 overflow-hidden px-1 font-heading text-base sm:text-base lg:text-lg font-semibold text-[#1A3D2F] group-hover:text-[#841818] transition-colors leading-snug line-clamp-2 break-words"
             title={movie.title}
           >
             {movie.title}
           </h3>
-          <p className="text-xs sm:text-sm text-[#736B63] mt-0.5 font-body">
-            {movie.year}
-            {brand && (
-              <span className="text-[#A3998D] text-xs font-sans-clean ml-1.5">
-                · {brand.shortName}
-              </span>
-            )}
-          </p>
+          {(metadata !== undefined || showYearBrandMetadata) && (
+            <p className="text-xs sm:text-sm text-[#736B63] mt-0.5 font-body">
+              {metadata !== undefined ? metadata : movie.year}
+              {metadata === undefined && brand && (
+                <span className="text-[#A3998D] text-xs font-sans-clean ml-1.5">· {brand.shortName}</span>
+              )}
+            </p>
+          )}
         </div>
       </a>
     </article>

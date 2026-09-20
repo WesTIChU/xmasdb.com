@@ -381,6 +381,7 @@ export function getSitemapXml(): string {
 
   // 1. Home / All Movies
   urls.push({ loc: `${SITE_ORIGIN}/`, changefreq: 'daily', priority: '1.0' });
+  urls.push({ loc: `${SITE_ORIGIN}/about/`, changefreq: 'monthly', priority: '0.5' });
   urls.push({ loc: `${SITE_ORIGIN}${getMoviesPath()}`, changefreq: 'daily', priority: '0.9' });
 
   // 2. Network catalogues
@@ -436,16 +437,16 @@ export function getSitemapXml(): string {
   // 7. Feeds
   urls.push({ loc: `${SITE_ORIGIN}${getFeedsPath()}`, changefreq: 'monthly', priority: '0.5' });
 
-  // 8. Public Radarr Feeds
-  urls.push({ loc: `${SITE_ORIGIN}/json/all.json`, changefreq: 'daily', priority: '0.8' });
-  urls.push({ loc: `${SITE_ORIGIN}/json/hallmark.json`, changefreq: 'daily', priority: '0.8' });
-  urls.push({ loc: `${SITE_ORIGIN}/json/lifetime.json`, changefreq: 'daily', priority: '0.8' });
-  urls.push({ loc: `${SITE_ORIGIN}/json/gaf.json`, changefreq: 'daily', priority: '0.8' });
-
+  const escapeXml = (value: string): string => value
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&apos;');
   const urlElements = urls
     .map(
       (u) => `  <url>
-    <loc>${u.loc}</loc>
+    <loc>${escapeXml(u.loc)}</loc>
     <changefreq>${u.changefreq}</changefreq>
     <priority>${u.priority}</priority>
   </url>`
