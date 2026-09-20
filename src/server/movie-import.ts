@@ -63,9 +63,19 @@ export function generateMoviesModule(movies: Movie[]): string {
   return `import { Movie } from '../types';\n\nexport const MOVIES: Movie[] = ${JSON.stringify(movies, null, 2)};\n\nexport function getMovieBySlug(slug: string): Movie | undefined { return MOVIES.find((m) => m.slug.toLowerCase() === slug.toLowerCase()); }\nexport function getMovieByTmdbId(tmdbId: number): Movie | undefined { return MOVIES.find((m) => m.tmdbId === tmdbId); }\nexport function getMovieByTmdbIdAndSlug(tmdbId: number, slug?: string): Movie | undefined { return getMovieByTmdbId(tmdbId) || (slug ? getMovieBySlug(slug) : undefined); }\nexport function getMovieByIdentifier(identifier: string | number): Movie | undefined { const value = String(identifier).trim(); return /^\\d+$/.test(value) ? getMovieByTmdbId(Number(value)) || getMovieBySlug(value) : getMovieBySlug(value); }\nexport function getMoviesByBrand(brandId: string): Movie[] { return MOVIES.filter((m) => m.brandId.toLowerCase() === brandId.toLowerCase()); }\nexport function getMoviesByActorSlug(actorSlug: string): Movie[] { return MOVIES.filter((m) => m.cast.some((c) => c.slug.toLowerCase() === actorSlug.toLowerCase())); }\nexport function getAllYearsForBrand(brandId?: string): number[] { const filtered = brandId ? getMoviesByBrand(brandId) : MOVIES; return Array.from(new Set(filtered.map((m) => m.year))).sort((a, b) => b - a); }\n`;
 }
 
-export function parseMoviesModule(source: string): Movie[] {
+export function parseMoviesModule(source: string, origin = 'unknown'): Movie[] {
   const match = source.match(/export\s+const\s+MOVIES\s*:\s*Movie\[\]\s*=\s*([\s\S]*?)\s*;\s*(?:export\s+function|$)/);
-  if (!match) throw new Error('Canonical movies module has an unexpected format.');
+  if (!match) {
+    console.error('[Catalogue Parser] Canonical source structure mismatch', JSON.stringify({
+      origin,
+      bytes: Buffer.byteLength(source, 'utf8'),
+      hasMoviesExport: /export\s+const\s+MOVIES/.test(source),
+      hasMoviesToken: source.includes('MOVIES'),
+      hasArrayAssignment: /export\s+const\s+MOVIES\s*:\s*Movie\[\]\s*=/.test(source),
+      hasHelperExport: /export\s+function/.test(source),
+    }));
+    throw new Error('Canonical movies module has an unexpected format.');
+  }
   let parsed: unknown;
   try {
     parsed = JSON.parse(match[1]);

@@ -35,13 +35,15 @@ assert.throws(() => parseMoviesModule('export const MOVIES: Movie[] = nope;'), /
 
 const originalFetch = globalThis.fetch;
 const source = canonicalSource;
+const encodedSource = Buffer.from(source, 'utf8').toString('base64');
 let commitCreateCalls = 0;
 globalThis.fetch = async (input, init) => {
   const url = String(input);
   const method = init?.method || 'GET';
   if (url.endsWith('/git/ref/heads/main')) return new Response(JSON.stringify({ object: { sha: 'base-sha' } }), { status: 200 });
   if (url.includes('/git/commits/base-sha')) return new Response(JSON.stringify({ tree: { sha: 'tree-sha' } }), { status: 200 });
-  if (url.includes('/contents/src/data/movies.ts')) return new Response(JSON.stringify({ content: Buffer.from(source).toString('base64') }), { status: 200 });
+  if (method === 'GET' && url.includes('/git/trees/tree-sha?recursive=1')) return new Response(JSON.stringify({ tree: [{ path: 'src/data/movies.ts', type: 'blob', sha: 'movies-blob-sha' }] }), { status: 200 });
+  if (method === 'GET' && url.endsWith('/git/blobs/movies-blob-sha')) return new Response(JSON.stringify({ content: encodedSource, encoding: 'base64' }), { status: 200 });
   if (method === 'POST' && url.endsWith('/git/commits')) { commitCreateCalls += 1; return new Response(JSON.stringify({ sha: 'new-commit' }), { status: 201 }); }
   if (method === 'POST' && url.endsWith('/git/blobs')) return new Response(JSON.stringify({ sha: 'blob-sha' }), { status: 201 });
   if (method === 'POST' && url.endsWith('/git/trees')) return new Response(JSON.stringify({ sha: 'new-tree' }), { status: 201 });

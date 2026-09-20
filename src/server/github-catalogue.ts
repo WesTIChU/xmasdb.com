@@ -17,6 +17,16 @@ interface BranchState {
   movies: Movie[];
 }
 
+interface GitTreeResponse {
+  truncated?: boolean;
+  tree?: Array<{ path?: string; type?: string; sha?: string }>;
+}
+
+interface GitBlobResponse {
+  content?: string;
+  encoding?: string;
+}
+
 function configFromEnv(): GitHubConfig {
   return {
     token: process.env.XMASDB_GITHUB_TOKEN,
@@ -49,7 +59,10 @@ async function githubRequest<T>(config: GitHubConfig, suffix: string, init?: Req
       ...(init?.headers || {}),
     },
   });
-  if (!response.ok) throw new Error(`GitHub request failed with status ${response.status}.`);
+  if (!response.ok) {
+    console.error('[GitHub Catalogue] API request failed', JSON.stringify({ status: response.status, endpoint: suffix }));
+    throw new Error(`GitHub request failed with status ${response.status}.`);
+  }
   if (response.status === 204) return undefined as T;
   return await response.json() as T;
 }
@@ -84,9 +97,33 @@ export async function dispatchComingSoonRefresh(config = configFromEnv()): Promi
 export async function readGitHubBranch(config = configFromEnv()): Promise<BranchState> {
   const ref = await githubRequest<{ object: { sha: string } }>(config, `/git/ref/heads/${encodeURIComponent(config.branch!)}`);
   const commit = await githubRequest<{ tree: { sha: string } }>(config, `/git/commits/${ref.object.sha}`);
-  const file = await githubRequest<{ content: string }>(config, `/contents/${MOVIES_PATH}?ref=${encodeURIComponent(ref.object.sha)}`);
-  const source = Buffer.from(file.content.replace(/\n/g, ''), 'base64').toString('utf8');
-  return { commitSha: ref.object.sha, treeSha: commit.tree.sha, movies: parseMoviesModule(source) };
+  const tree = await githubRequest<GitTreeResponse>(config, `/git/trees/${encodeURIComponent(commit.tree.sha)}?recursive=1`);
+  const file = tree.tree?.find((entry) => entry.path === MOVIES_PATH && entry.type === 'blob' && entry.sha);
+  if (!file?.sha) {
+    console.error('[GitHub Catalogue] Canonical file was not found in Git tree', JSON.stringify({
+      repository: `${config.owner}/${config.repo}`,
+      branch: config.branch,
+      path: MOVIES_PATH,
+      treeSha: commit.tree.sha,
+      truncated: tree.truncated === true,
+    }));
+    throw new Error('Canonical movies file was not found in the GitHub tree.');
+  }
+  const blob = await githubRequest<GitBlobResponse>(config, `/git/blobs/${encodeURIComponent(file.sha)}`);
+  const encodedContent = blob.content || '';
+  const source = blob.encoding === 'base64'
+    ? Buffer.from(encodedContent.replace(/\s/g, ''), 'base64').toString('utf8')
+    : encodedContent;
+  console.info('[GitHub Catalogue] Loaded canonical source', JSON.stringify({
+    repository: `${config.owner}/${config.repo}`,
+    branch: config.branch,
+    path: MOVIES_PATH,
+    blobSha: file.sha,
+    encoding: blob.encoding || 'missing',
+    encodedBytes: Buffer.byteLength(encodedContent, 'utf8'),
+    decodedBytes: Buffer.byteLength(source, 'utf8'),
+  }));
+  return { commitSha: ref.object.sha, treeSha: commit.tree.sha, movies: parseMoviesModule(source, `GitHub Git Blob ${file.sha}`) };
 }
 
 export async function commitMoviesToGitHub(
