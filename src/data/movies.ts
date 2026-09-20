@@ -185644,6 +185644,229 @@ export const MOVIES: Movie[] = [
     },
     "premiereDate": "2026-12-20",
     "tmdbUpdatedAt": "2026-09-20T16:16:31.563Z"
+  },
+  {
+    "id": "lifetime-2025-a-runaway-bride-for-christmas",
+    "slug": "a-runaway-bride-for-christmas",
+    "title": "A Runaway Bride for Christmas",
+    "year": 2025,
+    "brandId": "lifetime",
+    "releaseDate": "2025-12-12",
+    "synopsis": "When runaway bride, Emma seeks refuge in the only town she's ever called home, she unexpectedly falls for her former high school crush, Mitch — who's hiding his own heartbreak",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/mdcR28Fz386zkWeiYSZ5xFd6c2j.jpg",
+    "backdropUrl": "https://image.tmdb.org/t/p/w1280/kDrXMZwtXpBVfpG85F32YIcjmI5.jpg",
+    "cast": [
+      {
+        "actorId": "1563905",
+        "name": "Nischelle Turner",
+        "character": "Emma",
+        "slug": "nischelle-turner",
+        "tmdbPersonId": 1563905,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/58IQ8xk7IUxoRBjezJkkPhU43IV.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "1261371",
+        "name": "Mark Ghanimé",
+        "character": "Mitch Holden",
+        "slug": "mark-ghanim",
+        "tmdbPersonId": 1261371,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/rdk7i7vL6MV7gvLG4J6SxN9dTcD.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "5757869",
+        "name": "Jacqueline Ashton",
+        "character": "Cashier Anne",
+        "slug": "jacqueline-ashton",
+        "tmdbPersonId": 5757869,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/65lh5yF8rLUwd3Yp38TjIUt0Tgi.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "5111945",
+        "name": "Tom Hearn",
+        "character": "Jerrod",
+        "slug": "tom-hearn",
+        "tmdbPersonId": 5111945,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/ayS4VkV1EPJI0oT38GDUAq0NNTZ.jpg",
+        "order": 3
+      },
+      {
+        "actorId": "3026149",
+        "name": "Luxton Handspiker",
+        "character": "Lucas Holden",
+        "slug": "luxton-handspiker",
+        "tmdbPersonId": 3026149,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/yF4nysPSwmlnJ5NqjYJDVdWnfkm.jpg",
+        "order": 4
+      },
+      {
+        "actorId": "1612663",
+        "name": "Darryl Hinds",
+        "character": "Scout",
+        "slug": "darryl-hinds",
+        "tmdbPersonId": 1612663,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/3mobIh375tjW91xCOQTPnjlMNoC.jpg",
+        "order": 5
+      },
+      {
+        "actorId": "563643",
+        "name": "Kaitlyn Leeb",
+        "character": "Nikki Foster",
+        "slug": "kaitlyn-leeb",
+        "tmdbPersonId": 563643,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/cvvRNlbgFlEvorYDoVqBXGcQFaC.jpg",
+        "order": 6
+      },
+      {
+        "actorId": "1620180",
+        "name": "Matt Wells",
+        "character": "Ryan",
+        "slug": "matt-wells",
+        "tmdbPersonId": 1620180,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/sInDKzuCot4PbZHEhyDBo0vVMJH.jpg",
+        "order": 7
+      }
+    ],
+    "director": "Marco Deufemia",
+    "tmdbId": 1575393,
+    "imdbId": "tt38713850",
+    "isComingSoon": false,
+    "status": "collection",
+    "originalTitle": "A Runaway Bride for Christmas",
+    "runtimeMinutes": 88,
+    "genres": [
+      {
+        "id": 10749,
+        "name": "Romance"
+      },
+      {
+        "id": 18,
+        "name": "Drama"
+      },
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "US",
+        "releaseDate": "2025-12-12T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": ""
+      }
+    ],
+    "crew": [
+      {
+        "id": 1911937,
+        "name": "Marco Deufemia",
+        "job": "Director",
+        "creditId": "690ba4b70ae91bba28d73328"
+      },
+      {
+        "id": 1519236,
+        "name": "Erica Deutschman",
+        "job": "Writer",
+        "creditId": "690ba4bef4bc2e9e82b69568"
+      },
+      {
+        "id": 1935319,
+        "name": "Jessica Reis",
+        "job": "Producer",
+        "creditId": "6926fa11ab55daf8dd3716a5"
+      },
+      {
+        "id": 1883235,
+        "name": "Sebastian Battro",
+        "job": "Executive Producer",
+        "creditId": "6926fa197e7d6aedcc371670"
+      },
+      {
+        "id": 1108734,
+        "name": "Timothy O. Johnson",
+        "job": "Executive Producer",
+        "creditId": "6926fa25c699acb1d7248aff"
+      },
+      {
+        "id": 5762729,
+        "name": "Shannon Minogue",
+        "job": "Executive Producer",
+        "creditId": "6926fa35e2582f4674d9cb78"
+      },
+      {
+        "id": 2201063,
+        "name": "Claire Benoit",
+        "job": "Executive Producer",
+        "creditId": "6926fa48a63269fd1f30cd34"
+      },
+      {
+        "id": 2117334,
+        "name": "Nataline Rodrigues",
+        "job": "Executive Producer",
+        "creditId": "6926fa69181196092f3715e1"
+      },
+      {
+        "id": 1237896,
+        "name": "Beth Stevenson",
+        "job": "Executive Producer",
+        "creditId": "6926fa707e7d6aedcc37167b"
+      },
+      {
+        "id": 2103858,
+        "name": "Nancy Yeaman",
+        "job": "Executive Producer",
+        "creditId": "6926fa7b1ddc82e41cd9caf6"
+      },
+      {
+        "id": 2442256,
+        "name": "Antonio Naranjo",
+        "job": "Music",
+        "creditId": "6926fa8698bc74bb14ea9df0"
+      },
+      {
+        "id": 4558456,
+        "name": "Ramsha Nasir",
+        "job": "Editor",
+        "creditId": "6926fa901d24adb687ea9ed5"
+      },
+      {
+        "id": 5840216,
+        "name": "Jack Gordie",
+        "job": "Director of Photography",
+        "creditId": "6926fa97df1ecfb3b2371604"
+      },
+      {
+        "id": 1927361,
+        "name": "Kenda Hoggan",
+        "job": "Costume Design",
+        "creditId": "6926faa3abfaa75736ea9f8b"
+      },
+      {
+        "id": 4072553,
+        "name": "Jasmine Anguah",
+        "job": "Production Design",
+        "creditId": "6926faaa7e7d6aedcc371683"
+      },
+      {
+        "id": 5477244,
+        "name": "Anastastiia Parfonova",
+        "job": "Key Makeup Artist",
+        "creditId": "6926fab5995b42381930cd06"
+      },
+      {
+        "id": 4472539,
+        "name": "Eamon Hillis",
+        "job": "Gaffer",
+        "creditId": "6926fad5a8eeb62a2cc1200e"
+      }
+    ],
+    "trailers": [],
+    "voteAverage": 6,
+    "voteCount": 1,
+    "tmdbUpdatedAt": "2026-09-20T17:19:29.737Z"
   }
 ];
 
