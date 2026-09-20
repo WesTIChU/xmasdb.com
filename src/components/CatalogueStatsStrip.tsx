@@ -25,7 +25,7 @@ export const CatalogueStatsStrip: React.FC<CatalogueStatsStripProps> = ({ meta, 
   const [countdown, setCountdown] = useState(() => getChristmasCountdown(new Date()));
 
   useEffect(() => {
-    const timer = window.setInterval(() => setCountdown(getChristmasCountdown(new Date())), 1000);
+    const timer = window.setInterval(() => setCountdown(getChristmasCountdown(new Date())), 60000);
     return () => window.clearInterval(timer);
   }, []);
 

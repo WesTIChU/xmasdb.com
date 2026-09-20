@@ -1,12 +1,9 @@
-import { useState, useEffect, useMemo } from 'react';
+import { lazy, Suspense, useState, useEffect, useMemo } from 'react';
 import { Header } from './components/Header';
 import { YearFilter } from './components/YearFilter';
 import { MovieGrid } from './components/MovieGrid';
 import { CatalogueControls } from './components/CatalogueControls';
 import { CataloguePagination } from './components/CataloguePagination';
-import { MovieDetail } from './components/MovieDetail';
-import { ActorDetail } from './components/ActorDetail';
-import { FeedsPage } from './components/FeedsPage';
 import { HomePage } from './components/HomePage';
 import { Footer } from './components/Footer';
 import { SnowEffect } from './components/SnowEffect';
@@ -14,8 +11,6 @@ import { ScrollToTopButton } from './components/ScrollToTopButton';
 import { CatalogueStatsStrip } from './components/CatalogueStatsStrip';
 import { BrandPrefetch } from './components/BrandPrefetch';
 import { NotFoundPage } from './components/NotFoundPage';
-import { AboutPage } from './components/AboutPage';
-import { PrivacyPage } from './components/PrivacyPage';
 import type {
   CatalogueMeta,
   MetaBrand,
@@ -87,6 +82,12 @@ type RouteDescriptor =
 type ViewStatus = 'loading' | 'ready' | 'not-found' | 'error';
 
 const EMPTY_BRANDS: MetaBrand[] = [];
+
+const MovieDetail = lazy(() => import('./components/MovieDetail').then(({ MovieDetail: component }) => ({ default: component })));
+const ActorDetail = lazy(() => import('./components/ActorDetail').then(({ ActorDetail: component }) => ({ default: component })));
+const FeedsPage = lazy(() => import('./components/FeedsPage').then(({ FeedsPage: component }) => ({ default: component })));
+const AboutPage = lazy(() => import('./components/AboutPage').then(({ AboutPage: component }) => ({ default: component })));
+const PrivacyPage = lazy(() => import('./components/PrivacyPage').then(({ PrivacyPage: component }) => ({ default: component })));
 
 function HomeLoadingSkeleton() {
   return (
@@ -522,7 +523,7 @@ export default function App() {
 
             {searchActorsFirst ? <>{actorSearchSection}{movieSearchSection}</> : <>{movieSearchSection}{actorSearchSection}</>}
           </div>
-        ) : currentViewStatus === 'loading' ? (
+          ) : currentViewStatus === 'loading' ? (
           descriptor.type === 'home' ? <HomeLoadingSkeleton /> : (
             <div className="py-24 text-center text-[#736B63] font-body" aria-live="polite">
               Loading&hellip;
@@ -542,7 +543,8 @@ export default function App() {
         ) : currentViewStatus === 'not-found' || descriptor.type === 'not-found' ? (
           <NotFoundPage onNavigate={navigate} />
         ) : (
-          <>
+          <Suspense fallback={<div className="py-24 text-center text-[#736B63] font-body" aria-live="polite">Loading&hellip;</div>}>
+            <>
             {descriptor.type === 'home' && isHomePayload(view.payload) && (
               <HomePage payload={view.payload} onNavigate={navigate} />
             )}
@@ -694,7 +696,8 @@ export default function App() {
             {descriptor.type === 'feeds' && currentViewStatus === 'ready' && isFeedsMetaPayload(view.payload) && (
               <FeedsPage meta={view.payload} />
             )}
-          </>
+            </>
+          </Suspense>
         )}
       </main>
 

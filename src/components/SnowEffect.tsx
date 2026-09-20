@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
 interface Snowflake {
   x: number;
@@ -13,8 +13,31 @@ interface Snowflake {
 
 export const SnowEffect: React.FC = () => {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
+  const [isReady, setIsReady] = useState(false);
 
   useEffect(() => {
+    type IdleWindow = Window & {
+      requestIdleCallback?: (callback: () => void, options?: { timeout: number }) => number;
+      cancelIdleCallback?: (handle: number) => void;
+    };
+    const idleWindow = window as IdleWindow;
+    const usedIdleCallback = typeof idleWindow.requestIdleCallback === 'function';
+    const handle = usedIdleCallback
+      ? idleWindow.requestIdleCallback(() => setIsReady(true), { timeout: 2000 })
+      : window.setTimeout(() => setIsReady(true), 1200);
+
+    return () => {
+      if (usedIdleCallback) {
+        idleWindow.cancelIdleCallback(handle);
+      } else {
+        window.clearTimeout(handle);
+      }
+    };
+  }, []);
+
+  useEffect(() => {
+    if (!isReady) return;
+
     // Respect prefers-reduced-motion: disable animation completely if requested
     const motionQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
     if (motionQuery.matches) {
@@ -32,7 +55,8 @@ export const SnowEffect: React.FC = () => {
 
     // Adjust particle count: sparse, restrained holiday snowfall (not a blizzard)
     const isMobile = window.innerWidth < 640;
-    const flakeCount = isMobile ? 16 : 28;
+    const flakeCount = isMobile ? 12 : 28;
+    const shouldAnimate = !isMobile;
 
     let width = (canvas.width = window.innerWidth);
     let height = (canvas.height = window.innerHeight);
@@ -53,6 +77,7 @@ export const SnowEffect: React.FC = () => {
       if (!canvas) return;
       width = canvas.width = window.innerWidth;
       height = canvas.height = window.innerHeight;
+      if (!shouldAnimate) render();
     };
 
     window.addEventListener('resize', handleResize, { passive: true });
@@ -85,19 +110,20 @@ export const SnowEffect: React.FC = () => {
         f.driftAngle += f.driftSpeed;
         const currentX = f.x + Math.sin(f.driftAngle) * f.driftAmp;
 
-        ctx.save();
         ctx.beginPath();
         ctx.arc(currentX, f.y, f.radius, 0, Math.PI * 2);
 
         // Subtle cool grey/muted dark-green shadow so white flakes are clearly visible against warm cream
-        ctx.shadowColor = 'rgba(26, 61, 47, 0.22)';
-        ctx.shadowBlur = 2.5;
-        ctx.shadowOffsetX = 0;
-        ctx.shadowOffsetY = 1;
+        if (shouldAnimate) {
+          ctx.shadowColor = 'rgba(26, 61, 47, 0.22)';
+          ctx.shadowBlur = 2.5;
+          ctx.shadowOffsetX = 0;
+          ctx.shadowOffsetY = 1;
+        }
 
         ctx.fillStyle = `rgba(255, 255, 255, ${f.opacity})`;
         ctx.fill();
-        ctx.restore();
+        if (shouldAnimate) ctx.shadowBlur = 0;
 
         // Advance vertical movement
         f.y += f.speedY;
@@ -116,10 +142,11 @@ export const SnowEffect: React.FC = () => {
         }
       }
 
-      animationFrameId = requestAnimationFrame(render);
+      if (shouldAnimate) animationFrameId = requestAnimationFrame(render);
     };
 
-    animationFrameId = requestAnimationFrame(render);
+    if (shouldAnimate) animationFrameId = requestAnimationFrame(render);
+    else render();
 
     return () => {
       isRunning = false;
@@ -127,7 +154,9 @@ export const SnowEffect: React.FC = () => {
       window.removeEventListener('resize', handleResize);
       document.removeEventListener('visibilitychange', handleVisibilityChange);
     };
-  }, []);
+  }, [isReady]);
+
+  if (!isReady) return null;
 
   return (
     <canvas

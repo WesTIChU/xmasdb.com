@@ -58,14 +58,14 @@ export const BrandPrefetch: React.FC<BrandPrefetchProps> = ({ brands, activeBran
     const idleWindow = window as IdleWindow;
 
     if (typeof idleWindow.requestIdleCallback === 'function') {
-      const handle = idleWindow.requestIdleCallback(warm, { timeout: 3000 });
+      const handle = idleWindow.requestIdleCallback(warm, { timeout: 8000 });
       return () => {
         cancelled = true;
         idleWindow.cancelIdleCallback?.(handle);
       };
     }
 
-    const timer = window.setTimeout(warm, 1500);
+    const timer = window.setTimeout(warm, 5000);
     return () => {
       cancelled = true;
       window.clearTimeout(timer);
