@@ -27,7 +27,7 @@ export const HomePage: React.FC<HomePageProps> = ({ payload, onNavigate }) => {
       <PopularActorsSection groups={popularActors} onNavigate={onNavigate} />
 
       <section className="py-7 sm:py-9 border-b border-[#E7DFD5]" aria-labelledby="coming-soon-heading">
-        <div className="w-full flex items-end justify-between gap-4 mb-5">
+        <div className="w-full flex items-end justify-between gap-4 mb-5 lg:pr-4">
           <div>
             <p className="font-sans-clean text-xs font-semibold uppercase tracking-[0.18em] text-[#841818]">New on the horizon</p>
             <h2 id="coming-soon-heading" className="mt-1 font-heading text-xl sm:text-2xl font-semibold text-[#1A3D2F]">Coming Soon</h2>

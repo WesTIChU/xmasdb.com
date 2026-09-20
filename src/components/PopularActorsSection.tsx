@@ -44,7 +44,7 @@ export const PopularActorsSection: React.FC<PopularActorsSectionProps> = ({ grou
           ))}
         </div>
       </div>
-      <div className="flex gap-4 sm:gap-5 overflow-x-auto pb-2 no-scrollbar -mx-4 px-4 sm:mx-0 sm:px-0 md:grid md:grid-cols-4 md:overflow-visible md:pb-0 xl:grid-cols-8 xl:gap-3">
+      <div className="flex gap-4 sm:gap-5 overflow-x-auto pb-2 no-scrollbar -mx-4 px-4 sm:mx-0 sm:px-0 md:grid md:grid-cols-4 md:overflow-visible md:pb-0 xl:grid-cols-8 xl:gap-2 xl:px-2">
         {selected.actors.map((actor) => {
           const actorPath = getActorPath(actor.tmdbPersonId, actor.slug);
           return <article key={actor.slug} className="w-[120px] shrink-0 text-center md:w-full"><a href={actorPath} onClick={(event) => { event.preventDefault(); onNavigate(actorPath); }} className="group block text-center">
