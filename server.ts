@@ -33,7 +33,7 @@ import {
 } from './src/server/catalogue-api';
 import { ContactRateLimiter, ensureContactStorage, getContactDataDir, readContactSubmissions, storeContactSubmission, updateContactSubmissions, validateContactSubmission } from './src/server/contact';
 import { ADMIN_SESSION_COOKIE, AdminAuth, AdminLoginRateLimiter, AdminMutationRateLimiter, clearCookieOptions, cookieOptions, isSameOriginMutation } from './src/server/admin-auth';
-import { commitMoviesToGitHub, isGitHubConfigured, readGitHubBranch } from './src/server/github-catalogue';
+import { commitMoviesToGitHub, dispatchComingSoonRefresh, isGitHubConfigured, readGitHubBranch, WorkflowDispatchCooldown } from './src/server/github-catalogue';
 import { buildMovieFromTmdb, normalizeBrand, normalizeStatus, parseBulkMovieInput } from './src/server/movie-import';
 import { fetchTmdbMovie, requireTmdbApiKey } from './src/utils/tmdb';
 import { getCanonicalRedirect, getRobotsTxt, getServerSeo, injectSeoIntoHtml } from './src/server/seo';
@@ -110,6 +110,7 @@ async function startServer() {
   });
   const adminLoginRateLimiter = new AdminLoginRateLimiter();
   const adminMutationRateLimiter = new AdminMutationRateLimiter();
+  const comingSoonRefreshCooldown = new WorkflowDispatchCooldown();
   if (!adminAuth.isConfigured()) console.warn('Admin authentication is unavailable: XMASDB_ADMIN_PASSWORD and XMASDB_SESSION_SECRET are required.');
   const isProduction = process.env.NODE_ENV === 'production';
   const requireAdmin = (req: express.Request, res: express.Response, next: express.NextFunction) => {
@@ -355,6 +356,29 @@ async function startServer() {
     adminAuth.revoke(getCookieValue(req, ADMIN_SESSION_COOKIE));
     res.setHeader('Set-Cookie', `${ADMIN_SESSION_COOKIE}=; ${clearCookieOptions(isProduction)}`);
     return res.status(204).end();
+  });
+
+  app.post('/api/admin/refresh-coming-soon', requireAdmin, requireSameOrigin, async (req, res) => {
+    const ip = req.ip || req.socket.remoteAddress || 'unknown';
+    if (!adminMutationRateLimiter.allow(ip)) return res.status(429).json({ error: 'Too many admin requests. Please try again later.' });
+    if (!comingSoonRefreshCooldown.canDispatch()) {
+      return res.status(429).json({
+        status: 'cooldown',
+        message: 'A Coming Soon refresh was requested recently. Please try again shortly.',
+        retryAfterSeconds: Math.ceil(comingSoonRefreshCooldown.remainingMs() / 1000),
+      });
+    }
+    try {
+      await dispatchComingSoonRefresh();
+      comingSoonRefreshCooldown.record();
+      return res.json({
+        status: 'started',
+        message: 'Coming Soon refresh started. Any TMDb changes will be committed automatically and deployed by Coolify.',
+      });
+    } catch (error) {
+      console.error(`[Admin Coming Soon Refresh] ${error instanceof Error ? error.message : 'GitHub dispatch failed'}`);
+      return res.status(502).json({ error: 'Could not start the refresh. Please try again.' });
+    }
   });
 
   app.get('/api/admin/submissions', requireAdmin, async (_req, res) => {

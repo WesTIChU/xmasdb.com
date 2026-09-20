@@ -2,6 +2,7 @@ import type { Movie } from '../types';
 import { generateMoviesModule } from './movie-import';
 
 const MOVIES_PATH = 'src/data/movies.ts';
+export const COMING_SOON_WORKFLOW = 'nightly-coming-soon-refresh.yml';
 
 export interface GitHubConfig {
   token?: string;
@@ -49,7 +50,35 @@ async function githubRequest<T>(config: GitHubConfig, suffix: string, init?: Req
     },
   });
   if (!response.ok) throw new Error(`GitHub request failed with status ${response.status}.`);
+  if (response.status === 204) return undefined as T;
   return await response.json() as T;
+}
+
+export class WorkflowDispatchCooldown {
+  private lastDispatchAt = 0;
+
+  constructor(private readonly cooldownMs = 5 * 60 * 1000) {}
+
+  canDispatch(now = Date.now()): boolean {
+    return now - this.lastDispatchAt >= this.cooldownMs;
+  }
+
+  record(now = Date.now()): void {
+    this.lastDispatchAt = now;
+  }
+
+  remainingMs(now = Date.now()): number {
+    return Math.max(0, this.cooldownMs - (now - this.lastDispatchAt));
+  }
+}
+
+/** Starts the fixed Coming Soon workflow; callers cannot select another repository or workflow. */
+export async function dispatchComingSoonRefresh(config = configFromEnv()): Promise<void> {
+  await githubRequest<void>(config, `/actions/workflows/${COMING_SOON_WORKFLOW}/dispatches`, {
+    method: 'POST',
+    body: JSON.stringify({ ref: config.branch }),
+    headers: { 'Content-Type': 'application/json' },
+  });
 }
 
 function parseMoviesModule(source: string): Movie[] {

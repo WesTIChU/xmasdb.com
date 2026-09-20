@@ -8,7 +8,7 @@ import { fetchTmdbMovie, requireTmdbApiKey } from '../src/utils/tmdb';
 import { enrichCataloguePeople } from '../src/utils/person-enrichment';
 import { reconcileMovieLifecycle } from '../src/utils/catalogue-lifecycle';
 import { writeFileAtomically } from '../src/utils/atomic-file';
-import { cacheLocalImage } from '../src/utils/local-images';
+import { refreshTmdbMovie } from '../src/utils/tmdb-refresh';
 
 const moviesPath = path.join(process.cwd(), 'src/data/movies.ts');
 const refreshReportPath = path.join(process.cwd(), 'src/data/refresh-report.json');
@@ -19,44 +19,8 @@ function parseOption(name: string): string | undefined {
   return index >= 0 ? process.argv[index + 1] : undefined;
 }
 
-function localAssetPath(kind: 'posters' | 'backdrops' | 'people', id: number): string {
-  return `/images/${kind}/${id}.jpg`;
-}
-
-function mergeMovie(movie: Movie, refreshed: Partial<Movie>, posterUrl?: string, backdropUrl?: string): Movie {
-  const safeMetadata = Object.fromEntries(
-    Object.entries(refreshed).filter(([, value]) => (
-      value !== undefined && value !== null &&
-      !(typeof value === 'string' && value.trim() === '') &&
-      !(Array.isArray(value) && value.length === 0)
-    ))
-  );
-  return {
-    ...movie,
-    ...safeMetadata,
-    id: movie.id,
-    slug: movie.slug,
-    brandId: movie.brandId,
-    status: movie.status,
-    isComingSoon: movie.isComingSoon,
-    premiereDate: movie.premiereDate,
-    releaseDate: movie.premiereDate || movie.releaseDate,
-    posterUrl: posterUrl || movie.posterUrl,
-    backdropUrl: backdropUrl || movie.backdropUrl,
-    tmdbUpdatedAt: new Date().toISOString(),
-  };
-}
-
 function generatedMoviesModule(movies: Movie[]): string {
   return `import { Movie } from '../types';\n\nexport const MOVIES: Movie[] = ${JSON.stringify(movies, null, 2)};\n\nexport function getMovieBySlug(slug: string): Movie | undefined { return MOVIES.find((m) => m.slug.toLowerCase() === slug.toLowerCase()); }\nexport function getMovieByTmdbId(tmdbId: number): Movie | undefined { return MOVIES.find((m) => m.tmdbId === tmdbId); }\nexport function getMovieByTmdbIdAndSlug(tmdbId: number, slug?: string): Movie | undefined { return getMovieByTmdbId(tmdbId) || (slug ? getMovieBySlug(slug) : undefined); }\nexport function getMovieByIdentifier(identifier: string | number): Movie | undefined { const value = String(identifier).trim(); return /^\\d+$/.test(value) ? getMovieByTmdbId(Number(value)) || getMovieBySlug(value) : getMovieBySlug(value); }\nexport function getMoviesByBrand(brandId: string): Movie[] { return MOVIES.filter((m) => m.brandId.toLowerCase() === brandId.toLowerCase()); }\nexport function getMoviesByActorSlug(actorSlug: string): Movie[] { return MOVIES.filter((m) => m.cast.some((c) => c.slug.toLowerCase() === actorSlug.toLowerCase())); }\nexport function getAllYearsForBrand(brandId?: string): number[] { const filtered = brandId ? getMoviesByBrand(brandId) : MOVIES; return Array.from(new Set(filtered.map((m) => m.year))).sort((a, b) => b - a); }\n`;
-}
-
-async function refreshMovie(movie: Movie, apiKey: string): Promise<Movie> {
-  const refreshed = await fetchTmdbMovie(movie.tmdbId, apiKey);
-  if (!refreshed) throw new Error(`TMDB returned no movie data for ${movie.tmdbId}`);
-  const posterUrl = await cacheLocalImage(refreshed.posterUrl, localAssetPath('posters', movie.tmdbId));
-  const backdropUrl = await cacheLocalImage(refreshed.backdropUrl, localAssetPath('backdrops', movie.tmdbId));
-  return mergeMovie(movie, refreshed, posterUrl, backdropUrl);
 }
 
 async function main() {
@@ -64,9 +28,11 @@ async function main() {
   const requestedId = parseOption('--movie') || parseOption('--tmdb-id');
   const checkOnly = process.argv.includes('--check');
   const skipBuild = process.argv.includes('--skip-build');
+  const comingSoonOnly = process.argv.includes('--coming-soon-only');
+  const candidateMovies = comingSoonOnly ? MOVIES.filter((movie) => movie.isComingSoon) : MOVIES;
   const targets = requestedId
-    ? MOVIES.filter((movie) => movie.tmdbId === Number(requestedId))
-    : MOVIES;
+    ? candidateMovies.filter((movie) => movie.tmdbId === Number(requestedId))
+    : candidateMovies;
 
   if (requestedId && targets.length === 0) throw new Error(`No local movie found with TMDB ID ${requestedId}.`);
   if (checkOnly) {
@@ -82,7 +48,7 @@ async function main() {
   const failures: Array<{ tmdbId: number; title: string; message: string }> = [];
   for (const movie of targets) {
     try {
-      const refreshed = await refreshMovie(movie, apiKey);
+      const refreshed = await refreshTmdbMovie(movie, apiKey);
       refreshedMovies.push(refreshed);
       console.log(`Refreshed movie ${movie.tmdbId}: ${movie.title}`);
     } catch (error) {

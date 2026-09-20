@@ -1,9 +1,8 @@
-name: XmasDB metadata refresh
+name: XmasDB Coming Soon refresh
 
 on:
   schedule:
-    # Quiet UTC time on the 1st and 15th of every month.
-    - cron: '17 3 1,15 * *'
+    - cron: '23 */6 * * *'
   workflow_dispatch:
 
 jobs:
@@ -25,15 +24,10 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Refresh local TMDB metadata and images
+      - name: Refresh Coming Soon metadata and images
         env:
           TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
-        run: npm run refresh:tmdb
-
-      - name: Discover and import GAF Christmas catalogue
-        env:
-          TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
-        run: npm run import:gaf
+        run: npm run refresh:tmdb -- --coming-soon-only
 
       - name: Validate local data
         run: |
@@ -47,8 +41,8 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add src/data/movies.ts src/data/actors.json public/images
           if git diff --cached --quiet; then
-            echo "No TMDB metadata or artwork changes to commit."
+            echo "No Coming Soon metadata or artwork changes to commit."
           else
-            git commit -m "Refresh TMDB metadata"
+            git commit -m "Refresh Coming Soon TMDB metadata"
             git push
           fi

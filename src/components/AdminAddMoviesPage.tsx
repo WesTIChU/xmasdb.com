@@ -19,6 +19,7 @@ export const AdminAddMoviesPage: React.FC<AdminAddMoviesPageProps> = ({ onNaviga
   const [error, setError] = useState('');
   const [message, setMessage] = useState('');
   const [busy, setBusy] = useState(false);
+  const [refreshState, setRefreshState] = useState<'idle' | 'starting' | 'started' | 'cooldown'>('idle');
 
   const preview = async () => {
     setBusy(true); setError(''); setMessage(''); setItems([]);
@@ -48,6 +49,17 @@ export const AdminAddMoviesPage: React.FC<AdminAddMoviesPageProps> = ({ onNaviga
   };
 
   const readyCount = useMemo(() => items.filter((item) => item.state === 'ready' && item.selected).length, [items]);
+  const refreshComingSoon = async () => {
+    setRefreshState('starting'); setError(''); setMessage('');
+    try {
+      const response = await fetch('/api/admin/refresh-coming-soon', { method: 'POST', credentials: 'same-origin' });
+      const payload = await response.json().catch(() => ({})) as { error?: string; message?: string; status?: 'started' | 'cooldown' };
+      if (response.status === 401) return onNavigate('/admin/login/');
+      if (payload.status === 'cooldown') { setRefreshState('cooldown'); setMessage(payload.message || 'A Coming Soon refresh was requested recently. Please try again shortly.'); return; }
+      if (!response.ok) throw new Error(payload.error || 'Could not start the refresh. Please try again.');
+      setRefreshState('started'); setMessage(payload.message || 'Coming Soon refresh started. Any TMDb changes will be committed automatically and deployed by Coolify.');
+    } catch (refreshError) { setRefreshState('idle'); setError(refreshError instanceof Error ? refreshError.message : 'Could not start the refresh. Please try again.'); }
+  };
   const setItem = (index: number, change: Partial<PreviewItem>) => setItems((current) => current.map((item, itemIndex) => itemIndex === index ? { ...item, ...change } : item));
   const logout = async () => { await fetch('/api/admin/logout', { method: 'POST', credentials: 'same-origin' }); onNavigate('/admin/login/'); };
 
@@ -61,5 +73,6 @@ export const AdminAddMoviesPage: React.FC<AdminAddMoviesPageProps> = ({ onNaviga
     </div>
     {items.length > 0 && <div className="mt-9 divide-y divide-[#E7DFD5] border-t border-[#E7DFD5]">{items.map((item, index) => <article key={`${item.line}-${item.tmdbId || 'invalid'}`} className="py-6"><p className={`font-sans-clean text-xs font-semibold tracking-wide ${item.state === 'ready' ? 'text-[#1A3D2F]' : item.state === 'existing' ? 'text-[#B8860B]' : 'text-[#841818]'}`}>{item.state === 'ready' ? 'READY TO ADD' : item.state === 'existing' ? 'ALREADY IN XMASDB' : item.state === 'not-found' ? 'NOT FOUND' : 'INVALID INPUT'}</p><div className="mt-2 flex gap-4">{item.posterUrl && <img src={item.posterUrl} alt="" width={64} height={96} loading="lazy" className="h-24 w-16 rounded object-cover" /> }<div>{item.title && <h2 className="font-heading text-lg font-semibold text-[#1A3D2F]">{item.title}</h2>}<p className="mt-1 text-sm text-[#736B63]">{item.tmdbId ? `TMDb ${item.tmdbId}` : `Line ${item.line}`}{item.year ? ` · ${item.year}` : ''}{item.releaseDate ? ` · ${item.releaseDate}` : ''}</p>{item.originalTitle && item.originalTitle !== item.title && <p className="mt-1 text-xs text-[#736B63]">Original title: {item.originalTitle}</p>}{item.imdbId && <p className="mt-1 text-xs text-[#736B63]">IMDb: {item.imdbId}{item.runtimeMinutes ? ` · ${item.runtimeMinutes} min` : ''}</p>}</div></div>{item.overview && <p className="mt-3 max-w-2xl text-sm leading-6 text-[#4A433B]">{item.overview}</p>}{item.error && <p className="mt-2 text-sm text-[#841818]">{item.error}</p>}{item.state === 'existing' && <p className="mt-2 text-sm text-[#736B63]">{item.existingBrand} · {item.existingStatus}</p>}{item.state === 'ready' && <div className="mt-4 flex flex-wrap items-center gap-3 text-sm"><label><input type="checkbox" checked={item.selected !== false} onChange={(event) => setItem(index, { selected: event.target.checked })} className="mr-2" />Add</label><select value={item.brand} onChange={(event) => setItem(index, { brand: event.target.value as Brand })} className="rounded border border-[#DCD3C7] bg-[#FFFDF9] px-2 py-1.5">{(Object.keys(brandLabels) as Brand[]).map((brand) => <option key={brand} value={brand}>{brandLabels[brand]}</option>)}</select><select value={item.status} onChange={(event) => setItem(index, { status: event.target.value as Status })} className="rounded border border-[#DCD3C7] bg-[#FFFDF9] px-2 py-1.5">{(Object.keys(statusLabels) as Status[]).map((status) => <option key={status} value={status}>{statusLabels[status]}</option>)}</select></div>}</article>)}</div>}
     {readyCount > 0 && <button type="button" disabled={busy} onClick={() => void commit()} className="mt-7 rounded border border-[#1A3D2F] bg-[#1A3D2F] px-5 py-3 text-sm font-semibold tracking-wide text-[#FAF7F2] disabled:opacity-50">ADD {readyCount} MOVIE{readyCount === 1 ? '' : 'S'}</button>}
-  </div></section>;
+   <div className="mt-10 border-t border-[#E7DFD5] pt-7" aria-labelledby="coming-soon-refresh-heading"><h2 id="coming-soon-refresh-heading" className="font-heading text-lg font-semibold tracking-wide text-[#1A3D2F]">COMING SOON REFRESH</h2><p className="mt-2 max-w-xl text-sm leading-6 text-[#736B63]">Check all Coming Soon movies for updated TMDb metadata and artwork.</p><button type="button" disabled={refreshState === 'starting' || refreshState === 'started'} onClick={() => void refreshComingSoon()} className="mt-4 rounded border border-[#841818] px-5 py-3 text-sm font-semibold tracking-wide text-[#841818] disabled:opacity-50">{refreshState === 'starting' ? 'STARTING REFRESH...' : refreshState === 'started' ? 'REFRESH STARTED' : 'REFRESH COMING SOON'}</button></div>
+   </div></section>;
 };

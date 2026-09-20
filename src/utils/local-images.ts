@@ -1,13 +1,13 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
+import { createHash } from 'node:crypto';
 import { writeFileAtomically } from './atomic-file';
 
 const publicPath = path.join(process.cwd(), 'public');
-const manifestPath = path.join(publicPath, 'images/.cache-manifest.json');
 type ImageManifest = Record<string, string>;
 let manifestWriteQueue: Promise<void> = Promise.resolve();
 
-async function readManifest(): Promise<ImageManifest> {
+async function readManifest(manifestPath = defaultManifestPath()): Promise<ImageManifest> {
   try {
     return JSON.parse(await fs.readFile(manifestPath, 'utf8')) as ImageManifest;
   } catch {
@@ -15,9 +15,13 @@ async function readManifest(): Promise<ImageManifest> {
   }
 }
 
-async function recordManifestEntry(localPath: string, remoteUrl: string): Promise<void> {
+function defaultManifestPath(): string {
+  return path.join(publicPath, 'images/.cache-manifest.json');
+}
+
+async function recordManifestEntry(localPath: string, remoteUrl: string, manifestPath = defaultManifestPath()): Promise<void> {
   const write = manifestWriteQueue.then(async () => {
-    const manifest = await readManifest();
+    const manifest = await readManifest(manifestPath);
     manifest[localPath] = remoteUrl;
     await writeFileAtomically(manifestPath, JSON.stringify(manifest, null, 2));
   });
@@ -25,21 +29,42 @@ async function recordManifestEntry(localPath: string, remoteUrl: string): Promis
   await write;
 }
 
-/** Caches a remote image at a stable local path and skips downloads for the same source URL. */
-export async function cacheLocalImage(remoteUrl: string | undefined, localPath: string): Promise<string | undefined> {
+export interface LocalImageCacheOptions {
+  publicRoot?: string;
+  manifestPath?: string;
+}
+
+function versionedImagePath(localPath: string, remoteUrl: string): string {
+  const dot = localPath.lastIndexOf('.');
+  const suffix = createHash('sha256').update(remoteUrl).digest('hex').slice(0, 12);
+  return dot > localPath.lastIndexOf('/')
+    ? `${localPath.slice(0, dot)}-${suffix}${localPath.slice(dot)}`
+    : `${localPath}-${suffix}`;
+}
+
+/** Caches a remote image, changing its local identity only when the source URL changes. */
+export async function cacheLocalImage(remoteUrl: string | undefined, localPath: string, options: LocalImageCacheOptions = {}): Promise<string | undefined> {
   if (!remoteUrl) return undefined;
-  const destination = path.join(publicPath, localPath.replace(/^\//, ''));
-  const manifest = await readManifest();
+  const root = options.publicRoot || publicPath;
+  const manifestPath = options.manifestPath || path.join(root, 'images/.cache-manifest.json');
+  const manifest = await readManifest(manifestPath);
+  let resolvedPath = localPath;
+  const destination = () => path.join(root, resolvedPath.replace(/^\//, ''));
 
   try {
-    await fs.access(destination);
+    await fs.access(destination());
     if (manifest[localPath] === remoteUrl) return localPath;
+    resolvedPath = versionedImagePath(localPath, remoteUrl);
+    if (manifest[resolvedPath] === remoteUrl) {
+      await fs.access(destination());
+      return resolvedPath;
+    }
   } catch {
     // The image is missing and must be downloaded.
   }
 
   try {
-    await fs.mkdir(path.dirname(destination), { recursive: true });
+    await fs.mkdir(path.dirname(destination()), { recursive: true });
     let bytes: Buffer | undefined;
     let lastError: unknown;
     for (let attempt = 0; attempt < 3; attempt++) {
@@ -54,13 +79,13 @@ export async function cacheLocalImage(remoteUrl: string | undefined, localPath: 
       }
     }
     if (!bytes) throw lastError || new Error('image download failed');
-    const temporaryPath = `${destination}.${process.pid}.tmp`;
+    const temporaryPath = `${destination()}.${process.pid}.tmp`;
     await fs.writeFile(temporaryPath, bytes);
-    await fs.rename(temporaryPath, destination);
-    await recordManifestEntry(localPath, remoteUrl);
-    return localPath;
+    await fs.rename(temporaryPath, destination());
+    await recordManifestEntry(resolvedPath, remoteUrl, manifestPath);
+    return resolvedPath;
   } catch (error) {
-    console.error(`[Image Cache] Failed for ${localPath}: ${error instanceof Error ? error.message : String(error)}`);
+    console.error(`[Image Cache] Failed for ${resolvedPath}: ${error instanceof Error ? error.message : String(error)}`);
     return undefined;
   }
 }
