@@ -61,6 +61,8 @@ export const MovieDetail: React.FC<MovieDetailProps> = ({ movie, related, onNavi
           <img
             src={movie.backdropUrl}
             alt={`${movie.title} scene`}
+            width={1280}
+            height={360}
             referrerPolicy="no-referrer"
             className="w-full h-full object-cover object-center"
             onError={(e) => {
@@ -86,6 +88,8 @@ export const MovieDetail: React.FC<MovieDetailProps> = ({ movie, related, onNavi
               <img
                 src={poster}
                 alt={movie.title}
+                width={500}
+                height={750}
                 referrerPolicy="no-referrer"
                 fetchPriority="high"
                 className="w-full h-full object-cover"
@@ -129,7 +133,7 @@ export const MovieDetail: React.FC<MovieDetailProps> = ({ movie, related, onNavi
           <div className="mt-6 text-sm text-[#59524A] space-y-2.5 font-sans-clean border-t border-[#E7DFD5] pt-4">
             {brand && (
               <div className="flex items-center justify-between">
-                <span className="text-[#8C8379] flex items-center gap-1.5">
+                <span className="text-[#6F675E] flex items-center gap-1.5">
                   <Tv className="w-3.5 h-3.5" /> Brand
                 </span>
                 <NavigationLink href={`/${brand.slug}`} onNavigate={onNavigate} className="font-medium text-[#1A3D2F] hover:text-[#143626] cursor-pointer">
@@ -139,7 +143,7 @@ export const MovieDetail: React.FC<MovieDetailProps> = ({ movie, related, onNavi
             )}
 
             <div className="flex items-center justify-between">
-              <span className="text-[#8C8379] flex items-center gap-1.5">
+              <span className="text-[#6F675E] flex items-center gap-1.5">
                 <Calendar className="w-3.5 h-3.5" /> Release Date
               </span>
                <span className="font-medium text-[#23211E]">{formatMoviePremiereDate(movie) || 'Premiere date TBA'}</span>
@@ -147,7 +151,7 @@ export const MovieDetail: React.FC<MovieDetailProps> = ({ movie, related, onNavi
 
             {movie.runtimeMinutes && (
               <div className="flex items-center justify-between">
-                <span className="text-[#8C8379] flex items-center gap-1.5">
+                <span className="text-[#6F675E] flex items-center gap-1.5">
                   <Clock className="w-3.5 h-3.5" /> Runtime
                 </span>
                 <span className="font-medium text-[#23211E]">{movie.runtimeMinutes} min</span>
@@ -156,7 +160,7 @@ export const MovieDetail: React.FC<MovieDetailProps> = ({ movie, related, onNavi
 
             {typeof movie.voteAverage === 'number' && movie.voteAverage > 0 && (
               <div className="flex items-center justify-between">
-                <span className="text-[#8C8379] flex items-center gap-1.5">
+                <span className="text-[#6F675E] flex items-center gap-1.5">
                   <Star className="w-3.5 h-3.5" /> Rating
                 </span>
                 <span className="font-medium text-[#23211E] px-1.5 py-0.5 rounded bg-[#EFE9DF] text-xs">
@@ -167,7 +171,7 @@ export const MovieDetail: React.FC<MovieDetailProps> = ({ movie, related, onNavi
 
             {movie.director && (
               <div className="flex items-center justify-between">
-                <span className="text-[#8C8379] flex items-center gap-1.5">
+                <span className="text-[#6F675E] flex items-center gap-1.5">
                   <Clapperboard className="w-3.5 h-3.5" /> Director
                 </span>
                 <span className="font-medium text-[#23211E]">{movie.director}</span>
@@ -212,7 +216,7 @@ export const MovieDetail: React.FC<MovieDetailProps> = ({ movie, related, onNavi
               <h3 id="cast-heading" className="text-base font-heading font-semibold text-[#1A3D2F]">
                 Starring Cast
               </h3>
-              <span className="text-xs text-[#8C8379] font-sans-clean">
+              <span className="text-xs text-[#6F675E] font-sans-clean">
                 {movie.cast.length} {movie.cast.length === 1 ? 'member' : 'members'}
               </span>
             </div>
@@ -241,6 +245,8 @@ export const MovieDetail: React.FC<MovieDetailProps> = ({ movie, related, onNavi
                         <img
                           src={photoSrc}
                           alt={member.name}
+                          width={500}
+                          height={750}
                           referrerPolicy="no-referrer"
                           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-200"
                           onError={(e) => {

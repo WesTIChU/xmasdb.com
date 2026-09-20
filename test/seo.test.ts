@@ -5,6 +5,7 @@ import { getFeedsPath, getMoviePath, getActorPath } from '../src/utils/urls';
 import { getSitemapXml } from '../src/utils/feeds';
 import {
   buildAboutSeo,
+  buildPrivacySeo,
   buildActorSeo,
   buildBrandSeo,
   buildFeedsSeo,
@@ -42,6 +43,8 @@ for (const brand of ['hallmark', 'lifetime', 'gaf']) {
 }
 assert.match(buildAboutSeo().title, /Why I Built the Christmas Movie Database/);
 assert.equal(buildAboutSeo().canonicalPath, '/about/');
+assert.match(buildPrivacySeo().title, /Privacy & AI/);
+assert.equal(buildPrivacySeo().canonicalPath, '/privacy/');
 
 const movieSeo = getServerSeo(getMoviePath(movie.tmdbId, movie.slug));
 assert.equal(movieSeo.canonicalPath, getMoviePath(movie.tmdbId, movie.slug));
@@ -55,6 +58,8 @@ assert.equal(getServerSeo('/movies/', '?page=2').noIndex, true);
 assert.equal(getServerSeo('/definitely-not-real/').noIndex, true);
 assert.equal(getServerSeo('/about/').canonicalPath, '/about/');
 assert.equal(getCanonicalRedirect('/about'), '/about/');
+assert.equal(getServerSeo('/privacy/').canonicalPath, '/privacy/');
+assert.equal(getCanonicalRedirect('/privacy'), '/privacy/');
 
 const html = injectSeoIntoHtml('<!doctype html><html><head><title>old</title></head><body></body></html>', movieSeo);
 assert.match(html, new RegExp(`<title>${movie.title}`));
@@ -69,6 +74,7 @@ assert.match(sitemap, /https:\/\/xmasdb\.com\/hallmark\//);
 assert.match(sitemap, /https:\/\/xmasdb\.com\/year\/2025\//);
 assert.match(sitemap, new RegExp(`https://xmasdb\\.com${getFeedsPath()}`));
 assert.match(sitemap, /https:\/\/xmasdb\.com\/about\//);
+assert.match(sitemap, /https:\/\/xmasdb\.com\/privacy\//);
 assert.doesNotMatch(sitemap, /\/json\//);
 assert.doesNotMatch(sitemap, /[?&](page|search|sort|perPage)=/);
 assert.match(sitemap, /<loc>https:\/\/xmasdb\.com\//);

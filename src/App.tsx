@@ -15,6 +15,7 @@ import { CatalogueStatsStrip } from './components/CatalogueStatsStrip';
 import { BrandPrefetch } from './components/BrandPrefetch';
 import { NotFoundPage } from './components/NotFoundPage';
 import { AboutPage } from './components/AboutPage';
+import { PrivacyPage } from './components/PrivacyPage';
 import type {
   CatalogueMeta,
   MetaBrand,
@@ -27,11 +28,13 @@ import {
   isFeedsMetaPayload,
   isHomePayload,
   isMovieDetailPayload,
+  isPrivacyPayload,
 } from './api/guards';
 import {
   ApiError,
   FEEDS_META_URL,
   ABOUT_URL,
+  PRIVACY_URL,
   actorUrl,
   catalogueUrl,
   fetchSearchResults,
@@ -52,6 +55,7 @@ import {
 import {
   buildActorSeo,
   buildAboutSeo,
+  buildPrivacySeo,
   buildBrandSeo,
   buildFeedsSeo,
   buildHomeSeo,
@@ -77,11 +81,48 @@ type RouteDescriptor =
   | { type: 'actor'; identifier: string; slug?: string }
   | { type: 'feeds' }
   | { type: 'about' }
+  | { type: 'privacy' }
   | { type: 'not-found' };
 
 type ViewStatus = 'loading' | 'ready' | 'not-found' | 'error';
 
 const EMPTY_BRANDS: MetaBrand[] = [];
+
+function HomeLoadingSkeleton() {
+  return (
+    <div id="home-view-loading" className="pb-6 sm:pb-8" aria-busy="true" aria-label="Loading XmasDB homepage">
+      <section className="h-[300px] border-b border-[#E7DFD5] py-8 sm:h-[290px] sm:py-10">
+        <div className="mb-6 space-y-2">
+          <div className="h-3 w-48 animate-pulse rounded bg-[#EFE8DD]" />
+          <div className="h-7 w-64 animate-pulse rounded bg-[#EFE8DD]" />
+        </div>
+        <div className="flex gap-4 overflow-hidden">
+          {Array.from({ length: 6 }, (_, index) => <div key={index} className="h-28 w-28 shrink-0 animate-pulse rounded-full bg-[#EFE8DD]" />)}
+        </div>
+      </section>
+      {["coming-soon", "discovery"].map((section) => (
+        <section key={section} className="h-[400px] border-b border-[#E7DFD5] py-7 sm:h-[360px] sm:py-9">
+          <div className="mb-5 space-y-2">
+            <div className="h-3 w-40 animate-pulse rounded bg-[#EFE8DD]" />
+            <div className="h-7 w-72 animate-pulse rounded bg-[#EFE8DD]" />
+          </div>
+          <div className="flex gap-4 overflow-hidden sm:grid sm:grid-cols-6">
+            {Array.from({ length: 6 }, (_, index) => <div key={index} className="h-64 w-[140px] shrink-0 animate-pulse rounded-md bg-[#EFE8DD] sm:h-56 sm:w-auto" />)}
+          </div>
+        </section>
+      ))}
+      <section className="h-[260px] py-7 sm:py-9">
+        <div className="mb-5 space-y-2">
+          <div className="h-3 w-40 animate-pulse rounded bg-[#EFE8DD]" />
+          <div className="h-7 w-80 animate-pulse rounded bg-[#EFE8DD]" />
+        </div>
+        <div className="grid grid-cols-2 gap-3 sm:grid-cols-6">
+          {Array.from({ length: 6 }, (_, index) => <div key={index} className="h-24 animate-pulse rounded-md bg-[#EFE8DD]" />)}
+        </div>
+      </section>
+    </div>
+  );
+}
 
 /** Rejects stale or malformed API/cache data before components render it. */
 function isRoutePayloadValid(descriptor: RouteDescriptor, payload: unknown): boolean {
@@ -100,6 +141,8 @@ function isRoutePayloadValid(descriptor: RouteDescriptor, payload: unknown): boo
       return isFeedsMetaPayload(payload);
     case 'about':
       return isAboutPayload(payload);
+    case 'privacy':
+      return isPrivacyPayload(payload);
     default:
       return false;
   }
@@ -113,6 +156,7 @@ function parseRoute(currentPath: string): RouteDescriptor {
   if (clean === 'movies' || clean === 'all') return { type: 'movies' };
   if (clean === 'feeds') return { type: 'feeds' };
   if (clean === 'about') return { type: 'about' };
+  if (clean === 'privacy') return { type: 'privacy' };
 
   const yearArchiveMatch = clean.match(/^year\/(\d+)$/i);
   if (yearArchiveMatch) {
@@ -173,6 +217,8 @@ function requestFor(descriptor: RouteDescriptor, catalogueSearch: string): strin
       return FEEDS_META_URL;
     case 'about':
       return ABOUT_URL;
+    case 'privacy':
+      return PRIVACY_URL;
     default:
       return null;
   }
@@ -330,6 +376,8 @@ export default function App() {
       updateSeoTags(buildFeedsSeo());
     } else if (descriptor.type === 'about') {
       updateSeoTags(buildAboutSeo());
+    } else if (descriptor.type === 'privacy') {
+      updateSeoTags(buildPrivacySeo());
     }
   }, [descriptor, view, meta, isCurrentView]);
 
@@ -453,7 +501,7 @@ export default function App() {
         populatedBrands={populatedBrands}
       />
 
-      <main className="flex-1 max-w-4xl w-full mx-auto px-4 sm:px-6">
+      <main className={`flex-1 max-w-4xl w-full mx-auto px-4 sm:px-6 ${descriptor.type === 'home' && !hasSearchQuery ? 'min-h-[1300px]' : ''}`}>
         {hasSearchQuery ? (
           <div className="py-6 sm:py-8" id="search-results-section">
             <div className="border-b border-[#E7DFD5] pb-4 mb-6">
@@ -475,9 +523,11 @@ export default function App() {
             {searchActorsFirst ? <>{actorSearchSection}{movieSearchSection}</> : <>{movieSearchSection}{actorSearchSection}</>}
           </div>
         ) : currentViewStatus === 'loading' ? (
-          <div className="py-24 text-center text-[#736B63] font-body" aria-live="polite">
-            Loading&hellip;
-          </div>
+          descriptor.type === 'home' ? <HomeLoadingSkeleton /> : (
+            <div className="py-24 text-center text-[#736B63] font-body" aria-live="polite">
+              Loading&hellip;
+            </div>
+          )
         ) : currentViewStatus === 'error' ? (
           <div className="py-24 text-center font-body text-[#736B63]">
             <p className="mb-3">Something went wrong loading this page.</p>
@@ -498,6 +548,8 @@ export default function App() {
             )}
 
             {descriptor.type === 'about' && isAboutPayload(view.payload) && <AboutPage payload={view.payload} onNavigate={navigate} />}
+
+            {descriptor.type === 'privacy' && isPrivacyPayload(view.payload) && <PrivacyPage />}
 
             {descriptor.type === 'movies' && listingPayload && (
               <div className="py-6 sm:py-8" id="all-movies-view">

@@ -10,6 +10,7 @@ import type {
 } from './types';
 
 export const ABOUT_URL = '/api/about';
+export const PRIVACY_URL = '/api/privacy';
 
 declare global {
   interface Window {

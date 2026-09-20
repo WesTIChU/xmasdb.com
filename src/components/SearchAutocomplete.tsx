@@ -64,7 +64,7 @@ const MoviePosterThumbnail: React.FC<{ movie: SearchMovieEntry; brandName?: stri
   if (imgError || !poster) {
     return (
       <div className="w-10 h-[60px] shrink-0 rounded bg-[#EAE2D7] border border-[#DDD3C6] flex flex-col items-center justify-center p-1 text-center shadow-2xs">
-        <Film className="w-4 h-4 text-[#8C8379] opacity-70 mb-0.5" />
+        <Film className="w-4 h-4 text-[#6F675E] opacity-70 mb-0.5" />
         <span className="text-[9px] font-sans-clean font-semibold uppercase tracking-wider text-[#736B63] line-clamp-1 leading-none">
           {brandName || 'Xmas'}
         </span>
@@ -77,6 +77,8 @@ const MoviePosterThumbnail: React.FC<{ movie: SearchMovieEntry; brandName?: stri
       <img
         src={poster}
         alt={movie.title}
+        width={500}
+        height={750}
         loading="lazy"
         referrerPolicy="no-referrer"
         onError={() => setImgError(true)}
@@ -94,7 +96,7 @@ const ActorProfileThumbnail: React.FC<{ actor: SearchPersonEntry }> = ({ actor }
   if (imgError || !photo) {
     return (
       <div className="w-10 h-[50px] shrink-0 rounded bg-[#EAE2D7] border border-[#DDD3C6] flex flex-col items-center justify-center text-center shadow-2xs">
-        <User className="w-4 h-4 text-[#8C8379] opacity-70" />
+        <User className="w-4 h-4 text-[#6F675E] opacity-70" />
       </div>
     );
   }
@@ -104,6 +106,8 @@ const ActorProfileThumbnail: React.FC<{ actor: SearchPersonEntry }> = ({ actor }
       <img
         src={photo}
         alt={actor.name}
+        width={500}
+        height={750}
         loading="lazy"
         referrerPolicy="no-referrer"
         onError={() => setImgError(true)}
@@ -378,7 +382,7 @@ export const SearchAutocomplete: React.FC<SearchAutocompleteProps> = ({
       {/* Search Input Field */}
       <div className="relative flex items-center">
         <Search
-          className="absolute left-3 w-4 h-4 text-[#8C8379] pointer-events-none"
+          className="absolute left-3 w-4 h-4 text-[#6F675E] pointer-events-none"
           aria-hidden="true"
         />
         <input
@@ -399,7 +403,7 @@ export const SearchAutocomplete: React.FC<SearchAutocompleteProps> = ({
           aria-expanded={isOpen}
           aria-autocomplete="list"
           aria-controls="search-autocomplete-listbox"
-          className="w-full pl-9 pr-9 py-1.5 rounded bg-[#FFFDF9] border border-[#DCD3C7] text-[#23211E] placeholder-[#8C8379] text-sm focus:outline-none focus:ring-1 focus:ring-[#1A3D2F] focus:border-[#1A3D2F] shadow-2xs font-sans-clean transition-colors"
+          className="w-full pl-9 pr-9 py-1.5 rounded bg-[#FFFDF9] border border-[#DCD3C7] text-[#23211E] placeholder-[#6F675E] text-sm focus:outline-none focus:ring-1 focus:ring-[#1A3D2F] focus:border-[#1A3D2F] shadow-2xs font-sans-clean transition-colors"
         />
         {searchQuery && (
           <button
@@ -410,7 +414,7 @@ export const SearchAutocomplete: React.FC<SearchAutocompleteProps> = ({
               setIsOpen(false);
               inputRef.current?.focus();
             }}
-            className="absolute right-2.5 p-1 text-[#8C8379] hover:text-[#23211E] rounded transition-colors cursor-pointer"
+            className="absolute right-2.5 p-1 text-[#6F675E] hover:text-[#23211E] rounded transition-colors cursor-pointer"
             title="Clear search"
             aria-label="Clear search"
           >

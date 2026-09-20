@@ -1,6 +1,7 @@
 import type {
   ActorDetailPayload,
   AboutPayload,
+  PrivacyPayload,
   CatalogueListing,
   FeedsMetaPayload,
   HomePayload,
@@ -59,6 +60,10 @@ export function isAboutPayload(value: unknown): value is AboutPayload {
       && isString(actor.name)
       && isString(actor.slug)
       && isNumber(actor.tmdbPersonId));
+}
+
+export function isPrivacyPayload(value: unknown): value is PrivacyPayload {
+  return isRecord(value);
 }
 
 export function isMovieDetailPayload(value: unknown): value is MovieDetailPayload {

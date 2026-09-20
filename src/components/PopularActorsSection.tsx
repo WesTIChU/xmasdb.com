@@ -3,6 +3,7 @@ import type { PopularActorsGroup } from '../api/types';
 import { getBrandById } from '../data/brands';
 import { getActorPath } from '../utils/urls';
 import { NavigationTab } from './NavigationLink';
+import { getHomepageActorSrcSet } from '../utils/homepage-images';
 
 interface PopularActorsSectionProps {
   groups: PopularActorsGroup[];
@@ -13,7 +14,7 @@ const ActorCircularPortrait: React.FC<{ actor: PopularActorsGroup['actors'][numb
   const [imgError, setImgError] = useState(false);
   const photo = actor.photoUrl;
   if (imgError || !photo) return <div className="w-[108px] h-[108px] xl:w-[96px] xl:h-[96px] rounded-full mx-auto flex items-center justify-center bg-[#EFE9DF] border border-[#DDD3C6] text-[#1A3D2F] font-heading text-3xl" aria-hidden="true">{actor.name.charAt(0)}</div>;
-  return <div className="w-[108px] h-[108px] xl:w-[96px] xl:h-[96px] rounded-full mx-auto overflow-hidden bg-[#EFE9DF] border border-[#DDD3C6]"><img src={photo} alt={actor.name} loading="lazy" referrerPolicy="no-referrer" onError={() => setImgError(true)} className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300" /></div>;
+  return <div className="w-[108px] h-[108px] xl:w-[96px] xl:h-[96px] rounded-full mx-auto overflow-hidden bg-[#EFE9DF] border border-[#DDD3C6]"><img src={photo} srcSet={getHomepageActorSrcSet(photo)} sizes="(min-width: 1280px) 96px, 108px" alt={actor.name} loading="lazy" decoding="async" width={216} height={216} referrerPolicy="no-referrer" onError={() => setImgError(true)} className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300" /></div>;
 };
 
 export const PopularActorsSection: React.FC<PopularActorsSectionProps> = ({ groups, onNavigate }) => {
@@ -36,7 +37,7 @@ export const PopularActorsSection: React.FC<PopularActorsSectionProps> = ({ grou
           {availableBrands.map(({ brand }, index) => (
             <React.Fragment key={brand.id}>
               {index > 0 && <span className="text-[#C8BFB3] select-none">·</span>}
-              <NavigationTab role="tab" aria-selected={selected.brand.id === brand.id} isActive={selected.brand.id === brand.id} onClick={() => setSelectedBrandId(brand.id)} className={`cursor-pointer pb-1 transition-colors ${selected.brand.id === brand.id ? 'font-semibold' : 'text-[#8C8379] hover:text-[#1A3D2F]'}`}>
+              <NavigationTab role="tab" aria-selected={selected.brand.id === brand.id} isActive={selected.brand.id === brand.id} onClick={() => setSelectedBrandId(brand.id)} className={`cursor-pointer pb-1 transition-colors ${selected.brand.id === brand.id ? 'font-semibold' : 'text-[#6F675E] hover:text-[#1A3D2F]'}`}>
                 {brand.shortName}
               </NavigationTab>
             </React.Fragment>

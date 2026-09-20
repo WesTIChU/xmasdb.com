@@ -3,7 +3,7 @@ import { getMovieBySlug, getMovieByTmdbId } from '../data/movies';
 import { getBrandBySlug } from '../data/brands';
 import { buildActorDetail, buildCatalogueListing, buildCatalogueMeta } from './catalogue-api';
 import { parseCatalogueQuery } from '../utils/catalogue-pagination';
-import { buildAboutSeo, buildActorSeo, buildBrandSeo, buildFeedsSeo, buildHomeSeo, buildMoviesSeo, buildMovieSeo, buildNotFoundSeo, buildYearSeo, type SeoDocument } from '../utils/seo';
+import { buildAboutSeo, buildActorSeo, buildBrandSeo, buildFeedsSeo, buildHomeSeo, buildMoviesSeo, buildMovieSeo, buildNotFoundSeo, buildPrivacySeo, buildYearSeo, type SeoDocument } from '../utils/seo';
 import { toCanonicalUrl } from '../utils/urls';
 
 export function getRobotsTxt(): string {
@@ -30,6 +30,7 @@ export function getServerSeo(pathname: string, search = ''): SeoDocument {
   }
   if (clean === 'feeds') return buildFeedsSeo();
   if (clean === 'about') return buildAboutSeo();
+  if (clean === 'privacy') return buildPrivacySeo();
 
   const yearMatch = clean.match(/^year\/(\d+)$/i);
   if (yearMatch) {
@@ -84,6 +85,7 @@ export function getCanonicalRedirect(pathname: string): string | null {
   if (clean === 'movies' || clean === 'all') return pathname === '/movies/' ? null : '/movies/';
   if (clean === 'feeds') return pathname === '/feeds/' ? null : '/feeds/';
   if (clean === 'about') return pathname === '/about/' ? null : '/about/';
+  if (clean === 'privacy') return pathname === '/privacy/' ? null : '/privacy/';
   if (/^year\/\d+$/i.test(clean)) return pathname === `/${clean}/` ? null : `/${clean}/`;
   const brandMatch = clean.match(/^([^/]+)(?:\/(\d+))?$/i);
   if (brandMatch && getBrandBySlug(brandMatch[1])) return pathname === `/${clean.toLowerCase()}/` ? null : `/${clean.toLowerCase()}/`;

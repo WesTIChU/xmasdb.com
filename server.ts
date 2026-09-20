@@ -35,7 +35,7 @@ import { getCanonicalRedirect, getRobotsTxt, getServerSeo, injectSeoIntoHtml } f
 
 function isKnownPagePath(rawPath: string): boolean {
   const clean = rawPath.replace(/^\/+|\/+$/g, '');
-  if (!clean || clean === 'movies' || clean === 'all' || clean === 'feeds' || clean === 'about') return true;
+  if (!clean || clean === 'movies' || clean === 'all' || clean === 'feeds' || clean === 'about' || clean === 'privacy') return true;
   if (/^year\/\d+$/i.test(clean)) return true;
 
   const movie = clean.match(/^movie\/(.+)$/i);
@@ -260,6 +260,7 @@ async function startServer() {
   app.get('/api/home', (_req, res) => sendJson(res, buildHomePayload()));
 
   app.get('/api/about', (_req, res) => sendJson(res, buildAboutPayload()));
+  app.get('/api/privacy', (_req, res) => sendJson(res, {}));
 
   // Catalogue listing (all movies, brand pages, year archives).
   app.get('/api/catalogue', (req, res) => {
@@ -361,6 +362,19 @@ async function startServer() {
       fallthrough: true,
     }));
 
+    // Generated image derivatives have stable content-specific paths and can be cached independently.
+    app.use('/images/optimized', express.static(path.join(distPath, 'images', 'optimized'), {
+      maxAge: '1y',
+      immutable: true,
+      fallthrough: true,
+    }));
+
+    app.use('/fonts', express.static(path.join(distPath, 'fonts'), {
+      maxAge: '1y',
+      immutable: true,
+      fallthrough: true,
+    }));
+
     // Locally cached artwork (posters, backdrops, people) may be re-seeded in place under a
     // stable URL, so cache for a week and rely on ETag revalidation rather than immutable.
     app.use('/images', express.static(path.join(distPath, 'images'), {
@@ -373,18 +387,24 @@ async function startServer() {
     // reachable over HTTP, so the whole directory is not exposed statically.
     const publicRootFiles = new Set([
       'favicon.png',
+      'favicon-64.png',
       'logo.png',
+      'logo-550.webp',
+      'logo-1100.webp',
       'logo.svg',
       'logo-all.png',
       'robots.txt',
       'site.webmanifest',
       'manifest.webmanifest',
     ]);
+    const immutableRootFiles = new Set(['favicon-64.png', 'logo-550.webp', 'logo-1100.webp']);
     for (const fileName of publicRootFiles) {
       const filePath = path.join(distPath, fileName);
       app.get(`/${fileName}`, (_req, res, next) => {
         if (!fs.existsSync(filePath)) return next();
-        res.setHeader('Cache-Control', 'public, max-age=604800');
+        res.setHeader('Cache-Control', immutableRootFiles.has(fileName)
+          ? 'public, max-age=31536000, immutable'
+          : 'public, max-age=604800');
         return res.sendFile(filePath);
       });
     }

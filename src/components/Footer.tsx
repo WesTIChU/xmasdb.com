@@ -1,5 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
-import { X } from 'lucide-react';
+import React from 'react';
 import type { MetaBrand } from '../api/types';
 import { getNetworkPath, getMoviesPath, getFeedsPath } from '../utils/urls';
 import { NavigationLink, NavSquiggle } from './NavigationLink';
@@ -10,58 +9,6 @@ interface FooterProps {
 }
 
 export const Footer: React.FC<FooterProps> = ({ onNavigate, populatedBrands }) => {
-  const [isPrivacyOpen, setIsPrivacyOpen] = useState(false);
-  const privacyTriggerRef = useRef<HTMLButtonElement | null>(null);
-  const privacyCloseRef = useRef<HTMLButtonElement | null>(null);
-  const privacyDialogRef = useRef<HTMLDivElement | null>(null);
-
-  useEffect(() => {
-    if (!isPrivacyOpen) return;
-
-    const previousOverflow = document.body.style.overflow;
-    document.body.style.overflow = 'hidden';
-    const focusFrame = window.requestAnimationFrame(() => privacyCloseRef.current?.focus());
-
-    const handleKeyDown = (event: KeyboardEvent) => {
-      if (event.key === 'Escape') {
-        event.preventDefault();
-        setIsPrivacyOpen(false);
-        privacyTriggerRef.current?.focus();
-        return;
-      }
-
-      if (event.key !== 'Tab' || !privacyDialogRef.current) return;
-      const focusable = Array.from(
-        privacyDialogRef.current.querySelectorAll<HTMLElement>(
-          'button, a, input, select, textarea, [tabindex]:not([tabindex="-1"])'
-        )
-      ).filter((element) => !element.hasAttribute('disabled'));
-      if (focusable.length === 0) return;
-
-      const first = focusable[0];
-      const last = focusable[focusable.length - 1];
-      if (event.shiftKey && document.activeElement === first) {
-        event.preventDefault();
-        last.focus();
-      } else if (!event.shiftKey && document.activeElement === last) {
-        event.preventDefault();
-        first.focus();
-      }
-    };
-
-    document.addEventListener('keydown', handleKeyDown);
-    return () => {
-      window.cancelAnimationFrame(focusFrame);
-      document.body.style.overflow = previousOverflow;
-      document.removeEventListener('keydown', handleKeyDown);
-    };
-  }, [isPrivacyOpen]);
-
-  const closePrivacy = () => {
-    setIsPrivacyOpen(false);
-    window.requestAnimationFrame(() => privacyTriggerRef.current?.focus());
-  };
-
   return (
     <footer className="border-t border-[#E7DFD5] bg-[#F7F2EB] py-10 px-4 mt-16 text-center text-sm text-[#736B63] font-body">
       <div className="max-w-4xl mx-auto space-y-4">
@@ -107,73 +54,16 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, populatedBrands }) =
             <span className="relative inline-block leading-normal">Sitemap<NavSquiggle /></span>
           </a>
           <span className="text-[#C8BFB3] select-none">·</span>
-          <button
-            ref={privacyTriggerRef}
-            type="button"
-            onClick={() => setIsPrivacyOpen(true)}
-            className="xmas-nav-link text-xs font-sans-clean text-[#1A3D2F] hover:text-[#B8860B] transition-colors cursor-pointer"
-            aria-haspopup="dialog"
-            aria-expanded={isPrivacyOpen}
-          >
-            <span className="relative inline-block leading-normal">Privacy &amp; AI<NavSquiggle /></span>
-          </button>
+           <NavigationLink href="/privacy/" onNavigate={onNavigate} className="text-[#1A3D2F] hover:text-[#B8860B] transition-colors">Privacy &amp; AI</NavigationLink>
         </nav>
 
-        <p className="text-xs text-[#8C8379] font-sans-clean max-w-lg mx-auto">
+        <p className="text-xs text-[#6F675E] font-sans-clean max-w-lg mx-auto">
           <strong className="font-semibold text-[#1A3D2F]">XmasDB.com</strong> — A curated collection of Christmas movies.
           Posters and metadata sourced from TMDB. Not affiliated with Hallmark Channel or Lifetime.
         </p>
-        <p className="text-[11px] text-[#A3998D] font-sans-clean">&copy; {new Date().getFullYear()} XmasDB.com</p>
+        <p className="text-[11px] text-[#756B60] font-sans-clean">&copy; {new Date().getFullYear()} XmasDB.com</p>
       </div>
 
-      {isPrivacyOpen && (
-        <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-[#18231F]/60 px-4 py-6"
-          role="presentation"
-          onMouseDown={(event) => {
-            if (event.target === event.currentTarget) closePrivacy();
-          }}
-        >
-          <div
-            ref={privacyDialogRef}
-            role="dialog"
-            aria-modal="true"
-             aria-labelledby="privacy-ai-heading"
-            className="relative w-full max-w-[520px] max-h-[calc(100vh-3rem)] overflow-y-auto rounded-xl border border-[#E0D5C7] bg-[#FFFDF9] p-6 sm:p-8 text-left shadow-xl"
-          >
-            <button
-              ref={privacyCloseRef}
-              type="button"
-              onClick={closePrivacy}
-              className="absolute right-4 top-4 inline-flex h-8 w-8 items-center justify-center rounded-full text-[#736B63] hover:bg-[#F5EFE6] hover:text-[#1A3D2F] transition-colors cursor-pointer"
-                aria-label="Close Privacy & AI dialog"
-            >
-              <X className="h-4 w-4" aria-hidden="true" />
-            </button>
-
-              <div className="pr-8">
-                <p className="font-sans-clean text-[10px] font-semibold uppercase tracking-[0.2em] text-[#B8860B]">XmasDB</p>
-                <h2 id="privacy-ai-heading" className="mt-1 font-heading text-2xl font-semibold text-[#1A3D2F]">Privacy &amp; AI</h2>
-              </div>
-
-              <div className="mt-5 space-y-5 font-body text-sm leading-relaxed text-[#4A433B]">
-                <section>
-                  <h3 className="font-heading text-base font-semibold text-[#1A3D2F]">Your privacy</h3>
-                  <p className="mt-1.5">XmasDB does not use advertising, analytics or visitor tracking. We don&apos;t build profiles of visitors or sell personal information. Like most websites, basic technical request information may be processed by the server or hosting provider to deliver the site and keep it running.</p>
-                </section>
-                <section>
-                  <h3 className="font-heading text-base font-semibold text-[#1A3D2F]">The movie collection is curated</h3>
-                  <p className="mt-1.5">The XmasDB catalogue has taken considerable time to research, compile and verify. Movies are gathered and checked from multiple sources.</p>
-                  <p className="mt-2">Movie information, artwork and identifiers may come from third-party sources such as TMDB, while XmasDB&apos;s selection, organisation and brand classification are maintained as part of the site&apos;s curated catalogue.</p>
-                </section>
-                <section>
-                  <h3 className="font-heading text-base font-semibold text-[#1A3D2F]">AI assistance</h3>
-                  <p className="mt-1.5">AI tools are used to assist with the development and maintenance of XmasDB, including coding, research and data processing. The movie catalogue itself is human-curated and reviewed.</p>
-                </section>
-              </div>
-          </div>
-        </div>
-      )}
     </footer>
   );
 };

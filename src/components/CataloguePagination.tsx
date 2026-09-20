@@ -30,7 +30,7 @@ export const CataloguePagination: React.FC<CataloguePaginationProps> = ({ pathna
       {page > 1 && <NavigationLink href={goTo(page - 1)} onNavigate={onNavigate} className="shrink-0 text-[#1A3D2F] hover:text-[#143626]">← Previous</NavigationLink>}
       <div className="hidden sm:flex items-center gap-3">
         {pageWindow(page, totalPages).map((item, index) => item === 'ellipsis' ? (
-          <span key={`ellipsis-${index}`} className="text-[#8C8379]">…</span>
+          <span key={`ellipsis-${index}`} className="text-[#6F675E]">…</span>
         ) : (
           <NavigationLink
             key={item}

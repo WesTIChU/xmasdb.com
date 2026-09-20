@@ -81,6 +81,8 @@ export interface AboutPayload {
   favouriteActors: AboutActorEntry[];
 }
 
+export interface PrivacyPayload {}
+
 /** Full movie detail plus lightweight related cards from the same brand. */
 export type MovieDetailMovie = Omit<Movie, 'cast'> & {
   cast: Array<

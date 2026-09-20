@@ -41,7 +41,8 @@ export const HomePage: React.FC<HomePageProps> = ({ payload, onNavigate }) => {
               return <div key={movie.id} className="w-[140px] sm:w-auto shrink-0 snap-start">
                 <MovieCard
                   movie={movie}
-                  metadata={<>{formatMoviePremiereDate(movie) || 'Coming Soon'}{brand && <span className="text-[#A3998D] text-xs font-sans-clean ml-1.5">· {brand.shortName}</span>}</>}
+                  optimizeHomepageImage
+                  metadata={<>{formatMoviePremiereDate(movie) || 'Coming Soon'}{brand && <span className="text-[#756B60] text-xs font-sans-clean ml-1.5">· {brand.shortName}</span>}</>}
                   onSelectMovie={(slug, tmdbId) => onNavigate(getMoviePath(tmdbId || movie.tmdbId, slug))}
                 />
               </div>;
@@ -60,7 +61,7 @@ export const HomePage: React.FC<HomePageProps> = ({ payload, onNavigate }) => {
         </div>
         <div className={homepageMovieGridOuterClass}>
           <div className={homepageMovieGridClass}>
-            {discovery.map((movie) => <div key={movie.id} className="w-[140px] sm:w-auto shrink-0 snap-start"><MovieCard movie={movie} onSelectMovie={(slug, tmdbId) => onNavigate(getMoviePath(tmdbId || movie.tmdbId, slug))} /></div>)}
+            {discovery.map((movie) => <div key={movie.id} className="w-[140px] sm:w-auto shrink-0 snap-start"><MovieCard movie={movie} optimizeHomepageImage onSelectMovie={(slug, tmdbId) => onNavigate(getMoviePath(tmdbId || movie.tmdbId, slug))} /></div>)}
           </div>
         </div>
       </section>
@@ -68,7 +69,7 @@ export const HomePage: React.FC<HomePageProps> = ({ payload, onNavigate }) => {
       {archiveYears.length > 0 && (
         <section className="py-7 sm:py-9" aria-labelledby="archive-years-heading">
           <div className="w-full mb-5">
-            <p className="font-sans-clean text-xs font-semibold uppercase tracking-[0.18em] text-[#B8860B]">Explore the archive</p>
+            <p className="font-sans-clean text-xs font-semibold uppercase tracking-[0.18em] text-[#8A6800]">Explore the archive</p>
             <h2 id="archive-years-heading" className="mt-1 font-heading text-xl sm:text-2xl font-semibold text-[#1A3D2F]">Christmas Through the Years</h2>
           </div>
           <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4 lg:grid-cols-6">

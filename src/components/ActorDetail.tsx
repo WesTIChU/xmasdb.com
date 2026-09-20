@@ -102,6 +102,8 @@ export const ActorDetail: React.FC<ActorDetailProps> = ({
            <img
             src={actorBackdrop.url}
             alt=""
+            width={1280}
+            height={360}
             className="w-full h-full object-cover object-center"
             onError={() => setBackdropError(true)}
           />
@@ -121,6 +123,8 @@ export const ActorDetail: React.FC<ActorDetailProps> = ({
                 <img
                   src={portraitUrl}
                   alt={actor.name}
+                  width={500}
+                  height={750}
                   referrerPolicy="no-referrer"
                   fetchPriority="high"
                   className="w-full h-full object-cover object-center"
@@ -304,7 +308,7 @@ export const ActorDetail: React.FC<ActorDetailProps> = ({
                 id="actor-filmography-filter"
                 className="flex items-center flex-wrap gap-x-3 gap-y-1 text-sm font-body"
               >
-                <span className="text-[#8C8379] select-none">Filter:</span>
+                <span className="text-[#6F675E] select-none">Filter:</span>
                 <NavigationTab
                   id="filter-brand-all"
                   onClick={() => setSelectedBrandFilter('all')}
@@ -368,6 +372,8 @@ export const ActorDetail: React.FC<ActorDetailProps> = ({
                         <img
                           src={poster}
                           alt={movie.title}
+                          width={500}
+                          height={750}
                           loading="lazy"
                           referrerPolicy="no-referrer"
                           className="h-full w-full object-cover object-center group-hover:scale-101 transition-transform duration-300"
@@ -385,7 +391,7 @@ export const ActorDetail: React.FC<ActorDetailProps> = ({
                         {movie.title}
                       </h3>
                       <p className="text-xs text-[#736B63] mt-0.5 font-body">
-                        {movie.year}{brand && <span className="text-[#A3998D] font-sans-clean ml-1.5">· {brand.shortName}</span>}
+                        {movie.year}{brand && <span className="text-[#756B60] font-sans-clean ml-1.5">· {brand.shortName}</span>}
                       </p>
                       {characterName && (
                         <p className="text-[11px] text-[#841818] font-sans-clean mt-0.5 truncate italic">

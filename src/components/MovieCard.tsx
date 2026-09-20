@@ -4,6 +4,7 @@ import { ComingSoonPoster } from './ComingSoonPoster';
 import { getBrandById } from '../data/brands';
 import { getMoviePath } from '../utils/urls';
 import { getMoviePoster } from '../utils/posters';
+import { getHomepagePosterSrcSet } from '../utils/homepage-images';
 
 interface MovieCardProps {
   movie: ListingMovie;
@@ -14,9 +15,11 @@ interface MovieCardProps {
   metadata?: React.ReactNode;
   /** Hides the default year and brand metadata when a row supplies none. */
   showYearBrandMetadata?: boolean;
+  /** Uses derivatives generated for the homepage's current image set. */
+  optimizeHomepageImage?: boolean;
 }
 
-export const MovieCard: React.FC<MovieCardProps> = ({ movie, onSelectMovie, priority = false, metadata, showYearBrandMetadata = true }) => {
+export const MovieCard: React.FC<MovieCardProps> = ({ movie, onSelectMovie, priority = false, metadata, showYearBrandMetadata = true, optimizeHomepageImage = false }) => {
   const [hasImageError, setHasImageError] = useState(false);
   const brand = getBrandById(movie.brandId);
   const canonicalPath = getMoviePath(movie.tmdbId, movie.slug);
@@ -44,10 +47,14 @@ export const MovieCard: React.FC<MovieCardProps> = ({ movie, onSelectMovie, prio
           ) : (
             <img
               src={poster}
+              srcSet={optimizeHomepageImage ? getHomepagePosterSrcSet(poster) : undefined}
+              sizes={optimizeHomepageImage ? '(min-width: 1024px) 143px, (min-width: 640px) 30vw, 140px' : undefined}
               alt={`Poster for ${movie.title}`}
               loading={priority ? 'eager' : 'lazy'}
               fetchPriority={priority ? 'high' : undefined}
               decoding="async"
+              width={500}
+              height={750}
               referrerPolicy="no-referrer"
               className="h-full w-full object-cover object-center group-hover:scale-101 transition-transform duration-300"
               onError={() => {
@@ -78,7 +85,7 @@ export const MovieCard: React.FC<MovieCardProps> = ({ movie, onSelectMovie, prio
             <p className="text-xs sm:text-sm text-[#736B63] mt-0.5 font-body">
               {metadata !== undefined ? metadata : movie.year}
               {metadata === undefined && brand && (
-                <span className="text-[#A3998D] text-xs font-sans-clean ml-1.5">· {brand.shortName}</span>
+                <span className="text-[#756B60] text-xs font-sans-clean ml-1.5">· {brand.shortName}</span>
               )}
             </p>
           )}

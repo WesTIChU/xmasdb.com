@@ -52,7 +52,7 @@ export function buildHomeSeo(totalMovies?: number): SeoDocument {
     title: 'XmasDB - Christmas Movie Database | Hallmark, Lifetime & GAF',
     description,
     canonicalPath: '/',
-    image: '/logo.png',
+    image: '/logo-1100.webp',
     schema: {
       '@context': 'https://schema.org',
       '@type': 'WebSite',
@@ -70,7 +70,7 @@ export function buildMoviesSeo(totalMovies?: number): SeoDocument {
       ? `Browse ${totalMovies} Christmas movies in the XmasDB catalogue, including Hallmark, Lifetime, GAF and other holiday network collections.`
       : 'Browse the XmasDB catalogue of Christmas movies, including Hallmark, Lifetime, GAF and other holiday network collections.',
     canonicalPath: getMoviesPath(),
-    image: '/logo.png',
+    image: '/logo-1100.webp',
     schema: {
       '@context': 'https://schema.org',
       '@type': 'CollectionPage',
@@ -90,7 +90,7 @@ export function buildBrandSeo(brand: Brand, year?: number | null, movieCount?: n
     title: `${name} | XmasDB`,
     description: cleanText(description),
     canonicalPath: path,
-    image: '/logo.png',
+    image: '/logo-1100.webp',
     schema: {
       '@context': 'https://schema.org',
       '@type': 'CollectionPage',
@@ -107,7 +107,7 @@ export function buildYearSeo(year: number, movieCount?: number): SeoDocument {
     title: `Christmas Movies from ${year} | XmasDB`,
     description: cleanText(description),
     canonicalPath: getYearPath(year),
-    image: '/logo.png',
+    image: '/logo-1100.webp',
     schema: {
       '@context': 'https://schema.org',
       '@type': 'CollectionPage',
@@ -198,7 +198,7 @@ export function buildFeedsSeo(): SeoDocument {
     title: 'Christmas Movie Radarr Lists & StevenLu JSON Feeds | XmasDB',
     description,
     canonicalPath: getFeedsPath(),
-    image: '/logo.png',
+    image: '/logo-1100.webp',
     schema: {
       '@context': 'https://schema.org',
       '@type': 'WebPage',
@@ -215,7 +215,7 @@ export function buildAboutSeo(): SeoDocument {
     title: 'About XmasDB - Why I Built the Christmas Movie Database | XmasDB',
     description,
     canonicalPath: '/about/',
-    image: '/logo.png',
+    image: '/logo-1100.webp',
     schema: {
       '@context': 'https://schema.org',
       '@type': 'AboutPage',
@@ -223,6 +223,16 @@ export function buildAboutSeo(): SeoDocument {
       url: toCanonicalUrl('/about/'),
       description,
     },
+  };
+}
+
+export function buildPrivacySeo(): SeoDocument {
+  const description = 'Learn how XmasDB handles privacy, data and the use of AI in building this independent Christmas movie database.';
+  return {
+    title: 'Privacy & AI | XmasDB',
+    description,
+    canonicalPath: '/privacy/',
+    image: '/logo-1100.webp',
   };
 }
 
