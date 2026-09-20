@@ -216,7 +216,12 @@ export function buildActorDetail(identifier: string, slug?: string): ActorDetail
 
   const backdrop = getActorBackdrop(movies, actor.tmdbPersonId);
 
-  return { actor, filmography, backdropUrl: backdrop ? backdrop.url : null };
+  return {
+    actor,
+    filmography,
+    backdropUrl: backdrop ? backdrop.url : null,
+    titleDisambiguator: getActorTitleDisambiguator(actor),
+  };
 }
 
 // ---------------------------------------------------------------------------
@@ -224,6 +229,26 @@ export function buildActorDetail(identifier: string, slug?: string): ActorDetail
 // ---------------------------------------------------------------------------
 
 let searchIndexCache: SearchIndexPayload | null = null;
+
+let actorTitleDisambiguators: Map<string, string> | null = null;
+
+function getActorTitleDisambiguator(actor: ReturnType<typeof getActorBySlug>): string | undefined {
+  if (!actor) return undefined;
+  if (!actorTitleDisambiguators) {
+    const nameCounts = new Map<string, number>();
+    const actors = getAllActors();
+    for (const candidate of actors) {
+      const name = candidate.name.trim().toLowerCase();
+      nameCounts.set(name, (nameCounts.get(name) || 0) + 1);
+    }
+    actorTitleDisambiguators = new Map(
+      actors
+        .filter((candidate) => (nameCounts.get(candidate.name.trim().toLowerCase()) || 0) > 1)
+        .map((candidate) => [candidate.slug, String(candidate.tmdbPersonId)])
+    );
+  }
+  return actorTitleDisambiguators.get(actor.slug);
+}
 
 function buildActorMovieCounts(): Map<string, number> {
   const map = new Map<string, number>();

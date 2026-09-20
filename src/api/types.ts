@@ -108,6 +108,8 @@ export interface ActorDetailPayload {
   actor: Actor;
   filmography: ActorFilmographyItem[];
   backdropUrl: string | null;
+  /** Present only when multiple catalogue actors share the same display name. */
+  titleDisambiguator?: string;
 }
 
 /** Compact autocomplete index. No biographies, synopses or structured cast. */

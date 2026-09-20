@@ -55,7 +55,7 @@ export function getServerSeo(pathname: string, search = ''): SeoDocument {
     const actor = Number.isInteger(Number(actorMatch[1])) ? getActorByTmdbId(Number(actorMatch[1])) : getActorBySlug(actorMatch[1]);
     if (!actor) return buildNotFoundSeo();
     const payload = buildActorDetail(String(actor.tmdbPersonId));
-    return buildActorSeo(actor, payload?.filmography || []);
+    return buildActorSeo(actor, payload?.filmography || [], payload?.titleDisambiguator);
   }
 
   const brandMatch = clean.match(/^([^/]+)(?:\/(\d+))?$/i);

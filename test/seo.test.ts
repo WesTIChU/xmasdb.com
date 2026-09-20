@@ -133,6 +133,25 @@ try {
 }
 
 const sitemap = getSitemapXml();
+const sitemapPaths = [...sitemap.matchAll(/<loc>https:\/\/xmasdb\.com([^<]+)<\/loc>/g)].map((match) => match[1]);
+assert.equal(new Set(sitemapPaths).size, sitemapPaths.length, 'sitemap must not contain duplicate URLs');
+assert.ok(sitemapPaths.every((path) => !/[?&]/.test(path)), 'sitemap must contain canonical paths without query strings');
+assert.equal(sitemapPaths.filter((path) => path.startsWith('/movie/')).length, MOVIES.length);
+assert.equal(sitemapPaths.filter((path) => path.startsWith('/actor/')).length, getAllActors().length);
+assert.ok(sitemapPaths.every((path) => {
+  const seo = getServerSeo(path);
+  const html = renderServerHtml(serverShell, path);
+  const expectedRobots = seo.noIndex ? 'noindex,follow' : 'index,follow';
+  return html.includes(`<title>${seo.title.replace(/&/g, '&amp;')}</title>`)
+    && html.includes(`name="description"`)
+    && html.includes(`rel="canonical" href="https://xmasdb.com${seo.canonicalPath}"`)
+    && html.includes(`name="robots" content="${expectedRobots}"`)
+    && /<h1>/.test(html)
+    && !html.includes('Something went wrong loading this page.')
+    && !html.includes('Loading...');
+}), 'every sitemap URL must have complete server metadata and visible content');
+const sitemapTitles = sitemapPaths.map((path) => getServerSeo(path).title);
+assert.equal(new Set(sitemapTitles).size, sitemapTitles.length, 'every indexable URL must have a unique title');
 assert.match(sitemap, new RegExp(`https://xmasdb\\.com${getMoviePath(movie.tmdbId, movie.slug)}`));
 assert.match(sitemap, new RegExp(`https://xmasdb\\.com${getActorPath(actor.tmdbPersonId, actor.slug)}`));
 assert.match(sitemap, /https:\/\/xmasdb\.com\/hallmark\//);

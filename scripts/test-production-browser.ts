@@ -90,6 +90,7 @@ async function main(): Promise<void> {
   try {
     await waitForServer();
     socket = await connectMarionette();
+    const browserSocket = socket;
     const iterator = socket[Symbol.asyncIterator]();
     const pending = { value: Buffer.alloc(0) };
     await readFrame(iterator, pending); // Marionette greeting.
@@ -97,22 +98,71 @@ async function main(): Promise<void> {
     const sessionId = session[3]?.sessionId;
     if (!sessionId) throw new Error('Firefox did not create a browser session.');
 
-    for (const route of routes) {
-      const navigation = await command(iterator, socket, pending, 2, 'WebDriver:Navigate', { sessionId, url: `http://127.0.0.1:${port}${route.path}` });
-      if (navigation[2]) throw new Error(`Could not navigate to ${route.path}: ${navigation[2].message}`);
-      await wait(1500);
-      const result = await command(iterator, socket, pending, 3, 'WebDriver:ExecuteScript', {
+    let commandId = 2;
+    const inspect = async (route: { path: string; text: string }) => {
+      const result = await command(iterator, browserSocket, pending, commandId++, 'WebDriver:ExecuteScript', {
         sessionId,
-        script: 'return { text: document.body.innerText, title: document.title, canonical: document.querySelector("link[rel=canonical]")?.getAttribute("href"), robots: document.querySelector("meta[name=robots]")?.getAttribute("content"), links: document.querySelectorAll("a[href]").length, resources: performance.getEntriesByType("resource").map((entry) => entry.name) };',
+        script: 'return { text: document.body.innerText, title: document.title, canonical: document.querySelector("link[rel=canonical]")?.getAttribute("href"), robots: document.querySelector("meta[name=robots]")?.getAttribute("content"), links: document.querySelectorAll("a[href]").length, errors: window.__xmasdbBrowserErrors || [], resources: performance.getEntriesByType("resource").map((entry) => entry.name) };',
         args: [],
       });
-      const value = result[3]?.value as { text?: string; title?: string; canonical?: string; robots?: string; links?: number; resources?: string[] } | undefined;
-      if (!value?.text?.includes(route.text)) throw new Error(`${route.path} did not render ${route.text}.`);
-      if (value.text.includes('Something went wrong loading this page.')) throw new Error(`${route.path} rendered the generic error state.`);
-      if (!value.title || !value.canonical || value.robots !== 'index,follow' || !value.links) throw new Error(`${route.path} did not produce complete indexable page metadata.`);
+      const value = result[3]?.value as { text?: string; title?: string; canonical?: string; robots?: string; links?: number; errors?: string[]; resources?: string[] } | undefined;
+      if (!value?.text?.includes(route.text)) throw new Error(`${route.path} did not render ${route.text}. DOM=${JSON.stringify(value)}`);
+      if (value.text.includes('Something went wrong loading this page.') || value.text.includes('XmasDB needs a refresh')) throw new Error(`${route.path} rendered a generic error state. DOM=${JSON.stringify(value)}`);
+      if (value.errors?.length) throw new Error(`${route.path} recorded browser errors: ${value.errors.join(' | ')}`);
+      if (!value.title || !value.canonical || value.robots !== 'index,follow' || !value.links) throw new Error(`${route.path} did not produce complete indexable page metadata. DOM=${JSON.stringify(value)}`);
       if (value.resources?.some((resource) => resource.includes(`/api/${route.path.split('/')[1]}/`))) throw new Error(`${route.path} unexpectedly fetched its entity API after bootstrapping.`);
+    };
+
+    const installErrorCapture = async () => {
+      await command(iterator, browserSocket, pending, commandId++, 'WebDriver:ExecuteScript', {
+        sessionId,
+        script: 'window.__xmasdbBrowserErrors=[]; window.addEventListener("error", event => window.__xmasdbBrowserErrors.push(event.message || String(event.error))); window.addEventListener("unhandledrejection", event => window.__xmasdbBrowserErrors.push(String(event.reason)));',
+        args: [],
+      });
+    };
+
+    for (const route of routes) {
+      const navigation = await command(iterator, browserSocket, pending, commandId++, 'WebDriver:Navigate', { sessionId, url: `http://127.0.0.1:${port}${route.path}` });
+      if (navigation[2]) throw new Error(`Could not navigate to ${route.path}: ${navigation[2].message}`);
+      await wait(1500);
+      await installErrorCapture();
+      await inspect(route);
     }
-    await command(iterator, socket, pending, 4, 'WebDriver:DeleteSession', { sessionId });
+
+    const transitions = ['/hallmark/', '/lifetime/', '/gaf/', '/hallmark/', '/gaf/', '/lifetime/', '/hallmark/', '/movies/', '/hallmark/'];
+    const transitionText = new Map<string, string>(routes.map((route) => [route.path, route.text]));
+    for (const target of transitions) {
+      const click = await command(iterator, browserSocket, pending, commandId++, 'WebDriver:ExecuteScript', {
+        sessionId,
+        script: 'const target = arguments[0]; const link = Array.from(document.querySelectorAll("a[href]")).find((candidate) => candidate.getAttribute("href") === target); if (!link) return false; link.click(); return true;',
+        args: [target],
+      });
+      if (click[3]?.value !== true) throw new Error(`Could not click navigation link for ${target}.`);
+      await wait(1000);
+      await inspect({ path: target, text: transitionText.get(target) || target });
+    }
+
+    const homeNavigation = await command(iterator, browserSocket, pending, commandId++, 'WebDriver:Navigate', { sessionId, url: `http://127.0.0.1:${port}/` });
+    if (homeNavigation[2]) throw new Error(`Could not navigate to / for search test: ${homeNavigation[2].message}`);
+    await wait(1000);
+    await installErrorCapture();
+    const searchInput = await command(iterator, browserSocket, pending, commandId++, 'WebDriver:ExecuteScript', {
+      sessionId,
+      script: 'const input = document.querySelector("#search-input"); if (!input) return false; const setter = Object.getOwnPropertyDescriptor(HTMLInputElement.prototype, "value").set; setter.call(input, "danica"); input.dispatchEvent(new Event("input", { bubbles: true })); return true;',
+      args: [],
+    });
+    if (searchInput[3]?.value !== true) throw new Error('Search input was not available.');
+    await wait(1500);
+    const searchResult = await command(iterator, browserSocket, pending, commandId++, 'WebDriver:ExecuteScript', {
+      sessionId,
+      script: 'return { text: document.body.innerText, errors: window.__xmasdbBrowserErrors || [] };',
+      args: [],
+    });
+    const searchValue = searchResult[3]?.value as { text?: string; errors?: string[] } | undefined;
+    if (!searchValue?.text?.includes('Search results for')) throw new Error(`Search results did not render. DOM=${JSON.stringify(searchValue)}`);
+    if (searchValue.errors?.length) throw new Error(`Search recorded browser errors: ${searchValue.errors.join(' | ')}`);
+
+    await command(iterator, browserSocket, pending, commandId++, 'WebDriver:DeleteSession', { sessionId });
     console.log('Production browser route tests passed.');
   } finally {
     socket?.destroy();

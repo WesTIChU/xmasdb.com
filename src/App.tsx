@@ -404,7 +404,7 @@ export default function App() {
     } else if (descriptor.type === 'actor') {
       if (view.status !== 'ready') return;
       if (!isActorDetailPayload(view.payload)) return;
-      updateSeoTags(buildActorSeo(view.payload.actor, view.payload.filmography));
+      updateSeoTags(buildActorSeo(view.payload.actor, view.payload.filmography, view.payload.titleDisambiguator));
     } else if (descriptor.type === 'feeds') {
       updateSeoTags(buildFeedsSeo());
     } else if (descriptor.type === 'about') {

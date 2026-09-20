@@ -81,13 +81,16 @@ export function buildMoviesSeo(totalMovies?: number): SeoDocument {
 }
 
 export function buildBrandSeo(brand: Brand, year?: number | null, movieCount?: number): SeoDocument {
-  const name = year ? `${brand.name} ${year}` : brand.name;
+  const networkName = brand.id === 'gaf'
+    ? 'Great American Family Christmas Movies'
+    : `${brand.shortName} Christmas Movies`;
+  const name = year ? `${networkName} ${year}` : networkName;
   const description = year
-    ? `Browse ${movieCount ?? ''}${movieCount !== undefined ? ' ' : ''}${brand.name} from ${year} in the XmasDB collection.`
-    : `Browse the XmasDB collection of ${brand.name}, with movies, cast and release details.`;
+    ? `Browse ${movieCount ?? ''}${movieCount !== undefined ? ' ' : ''}${networkName} from ${year} in the XmasDB collection.`
+    : `Browse the XmasDB collection of ${networkName}, with movies, cast and release details.`;
   const path = getNetworkPath(brand.slug, year);
   return {
-    title: `${name} | XmasDB`,
+    title: `${name} - ${year ? 'Complete List' : 'Complete Movie List'} | XmasDB`,
     description: cleanText(description),
     canonicalPath: path,
     image: '/logo-1100.webp',
@@ -159,10 +162,11 @@ export function buildMovieSeo(movie: Movie | MovieDetailMovie): SeoDocument {
   };
 }
 
-export function buildActorSeo(actor: Actor, filmography: ActorFilmographyItem[] | Movie[] = []): SeoDocument {
+export function buildActorSeo(actor: Actor, filmography: ActorFilmographyItem[] | Movie[] = [], titleDisambiguator?: string): SeoDocument {
   const count = filmography.length;
   const brands = [...new Set(filmography.map((movie) => getBrandById(movie.brandId)?.shortName || movie.brandId))].join(', ');
-  const description = `${actor.name} has ${count} Christmas ${count === 1 ? 'movie' : 'movies'} in the XmasDB filmography${brands ? ` across ${brands}` : ''}. Explore roles, release years and movie details.`;
+  const biography = actor.biography ? ` ${truncateDescription(actor.biography, 100)}` : '';
+  const description = `${actor.name} has ${count} Christmas ${count === 1 ? 'movie' : 'movies'} in the XmasDB filmography${brands ? ` across ${brands}` : ''}. Explore roles, release years and movie details.${biography}`;
   const canonicalPath = getActorPath(actor.tmdbPersonId, actor.slug);
   const sameAs = [
     actor.imdbPersonId ? `https://www.imdb.com/name/${actor.imdbPersonId}/` : undefined,
@@ -180,7 +184,7 @@ export function buildActorSeo(actor: Actor, filmography: ActorFilmographyItem[] 
     sameAs,
   };
   return {
-    title: `${actor.name} Christmas Movies - Movies & Filmography | XmasDB`,
+    title: `${actor.name} Christmas Movies - Movies & Filmography${titleDisambiguator ? ` (${titleDisambiguator})` : ''} | XmasDB`,
     description: truncateDescription(description),
     canonicalPath,
     image: actor.profileUrl || actor.photoUrl,
@@ -233,14 +237,29 @@ export function buildPrivacySeo(): SeoDocument {
     description,
     canonicalPath: '/privacy/',
     image: '/logo-1100.webp',
+    schema: {
+      '@context': 'https://schema.org',
+      '@type': 'WebPage',
+      name: 'Privacy & AI',
+      url: toCanonicalUrl('/privacy/'),
+      description,
+    },
   };
 }
 
 export function buildContactSeo(): SeoDocument {
+  const description = 'Send a correction, report a missing Christmas movie or get in touch with XmasDB.';
   return {
     title: 'Contact XmasDB | Corrections & Missing Movies',
-    description: 'Send a correction, report a missing Christmas movie or get in touch with XmasDB.',
+    description,
     canonicalPath: '/contact/',
+    schema: {
+      '@context': 'https://schema.org',
+      '@type': 'ContactPage',
+      name: 'Contact XmasDB',
+      url: toCanonicalUrl('/contact/'),
+      description,
+    },
   };
 }
 
