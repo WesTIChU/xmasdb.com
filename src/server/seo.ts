@@ -1,10 +1,11 @@
 import { getActorBySlug, getActorByTmdbId } from '../data/actors';
 import { getMovieBySlug, getMovieByTmdbId } from '../data/movies';
 import { getBrandBySlug } from '../data/brands';
-import { buildActorDetail, buildCatalogueListing, buildCatalogueMeta } from './catalogue-api';
+import { buildActorDetail, buildCatalogueListing, buildCatalogueMeta, buildMovieDetail } from './catalogue-api';
+import { getBrandById } from '../data/brands';
 import { parseCatalogueQuery } from '../utils/catalogue-pagination';
 import { buildAboutSeo, buildActorSeo, buildBrandSeo, buildContactSeo, buildFeedsSeo, buildHomeSeo, buildMoviesSeo, buildMovieSeo, buildNotFoundSeo, buildPrivacySeo, buildYearSeo, type SeoDocument } from '../utils/seo';
-import { toCanonicalUrl } from '../utils/urls';
+import { getActorPath, getMoviePath, toCanonicalUrl } from '../utils/urls';
 
 export function getRobotsTxt(): string {
   return [
@@ -104,6 +105,52 @@ function escapeHtml(value: string): string {
   return value.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 }
 
+function renderText(value: string | undefined): string {
+  return escapeHtml(value || '').replace(/\r?\n/g, '<br />');
+}
+
+function renderMovieContent(pathname: string): string {
+  const match = routePath(pathname).match(/^movie\/([^/]+)(?:\/([^/]+))?$/i);
+  if (!match) return '';
+  const payload = buildMovieDetail(match[1], match[2]);
+  if (!payload) return '';
+  const { movie } = payload;
+  const brand = getBrandById(movie.brandId)?.shortName || movie.brandId;
+  const cast = movie.cast.map((member) => {
+    const href = member.tmdbPersonId ? getActorPath(member.tmdbPersonId, member.slug) : undefined;
+    const name = escapeHtml(member.name);
+    return href ? `<li><a href="${escapeHtml(href)}">${name}</a>${member.character ? ` as ${escapeHtml(member.character)}` : ''}</li>` : `<li>${name}</li>`;
+  }).join('');
+  const facts = [
+    `<dt>Network</dt><dd>${escapeHtml(brand)}</dd>`,
+    `<dt>Release Date</dt><dd>${escapeHtml(movie.releaseDate || String(movie.year))}</dd>`,
+    movie.runtimeMinutes ? `<dt>Runtime</dt><dd>${movie.runtimeMinutes} min</dd>` : '',
+    movie.director ? `<dt>Director</dt><dd>${escapeHtml(movie.director)}</dd>` : '',
+    movie.voteAverage ? `<dt>Rating</dt><dd>${movie.voteAverage.toFixed(1)}</dd>` : '',
+  ].filter(Boolean).join('');
+  return `<main id="server-rendered-content"><article><h1>${escapeHtml(movie.title)}</h1><p>${renderText(movie.synopsis)}</p><dl>${facts}</dl><h2>Cast</h2><ul>${cast}</ul></article></main>`;
+}
+
+function renderActorContent(pathname: string): string {
+  const match = routePath(pathname).match(/^actor\/([^/]+)(?:\/([^/]+))?$/i);
+  if (!match) return '';
+  const payload = buildActorDetail(match[1], match[2]);
+  if (!payload) return '';
+  const { actor, filmography } = payload;
+  const facts = [
+    actor.birthday ? `<dt>Born</dt><dd>${escapeHtml(actor.birthday)}</dd>` : '',
+    actor.deathday ? `<dt>Died</dt><dd>${escapeHtml(actor.deathday)}</dd>` : '',
+    actor.placeOfBirth ? `<dt>Place of birth</dt><dd>${escapeHtml(actor.placeOfBirth)}</dd>` : '',
+    actor.knownForDepartment ? `<dt>Known for</dt><dd>${escapeHtml(actor.knownForDepartment)}</dd>` : '',
+  ].filter(Boolean).join('');
+  const movies = filmography.map((movie) => `<li><a href="${escapeHtml(getMoviePath(movie.tmdbId, movie.slug))}">${escapeHtml(movie.title)}</a> (${movie.year})${movie.character ? ` as ${escapeHtml(movie.character)}` : ''}</li>`).join('');
+  return `<main id="server-rendered-content"><article><h1>${escapeHtml(actor.name)}</h1>${actor.biography ? `<p>${renderText(actor.biography)}</p>` : ''}<dl>${facts}</dl><h2>Christmas movie filmography</h2><ul>${movies}</ul></article></main>`;
+}
+
+export function renderServerContent(pathname: string): string {
+  return renderActorContent(pathname) || renderMovieContent(pathname);
+}
+
 function renderMeta(name: string, content: string, property = false): string {
   return `<meta ${property ? 'property' : 'name'}="${name}" content="${escapeHtml(content)}" />`;
 }
@@ -131,4 +178,10 @@ export function injectSeoIntoHtml(html: string, seo: SeoDocument): string {
     jsonLd ? `<script id="schema-json-ld" type="application/ld+json">${jsonLd}</script>` : '',
   ].filter(Boolean).join('\n    ');
   return cleaned.replace('</head>', `    ${tags}\n  </head>`);
+}
+
+export function renderServerHtml(indexHtml: string, pathname: string, search = ''): string {
+  const content = renderServerContent(pathname);
+  const html = content ? indexHtml.replace('<div id="root"></div>', `<div id="root">${content}</div>`) : indexHtml;
+  return injectSeoIntoHtml(html, getServerSeo(pathname, search));
 }

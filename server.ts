@@ -36,7 +36,7 @@ import { ADMIN_SESSION_COOKIE, AdminAuth, AdminLoginRateLimiter, AdminMutationRa
 import { commitMoviesToGitHub, dispatchComingSoonRefresh, isGitHubConfigured, readGitHubBranch, WorkflowDispatchCooldown } from './src/server/github-catalogue';
 import { buildMovieFromTmdb, normalizeBrand, normalizeStatus, parseBulkMovieInput } from './src/server/movie-import';
 import { fetchTmdbMovie, requireTmdbApiKey } from './src/utils/tmdb';
-import { getCanonicalRedirect, getRobotsTxt, getServerSeo, injectSeoIntoHtml } from './src/server/seo';
+import { getCanonicalRedirect, getRobotsTxt, renderServerHtml } from './src/server/seo';
 
 function isKnownPagePath(rawPath: string): boolean {
   const clean = rawPath.replace(/^\/+|\/+$/g, '');
@@ -599,8 +599,8 @@ async function startServer() {
       res.status(status);
       res.setHeader('Content-Type', 'text/html; charset=utf-8');
       res.setHeader('Cache-Control', 'no-cache');
-      const seo = getServerSeo(req.path, req.originalUrl.includes('?') ? req.originalUrl.slice(req.originalUrl.indexOf('?')) : '');
-      res.send(injectSeoIntoHtml(indexHtml, seo));
+      const search = req.originalUrl.includes('?') ? req.originalUrl.slice(req.originalUrl.indexOf('?')) : '';
+      res.send(renderServerHtml(indexHtml, req.path, search));
     };
 
     // Content-hashed build assets (/assets/*) are immutable by URL and can be cached for a year.

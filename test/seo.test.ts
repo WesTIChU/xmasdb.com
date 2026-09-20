@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict';
+import { createServer } from 'node:http';
 import { MOVIES } from '../src/data/movies';
-import { getAllActors } from '../src/data/actors';
+import { getActorByTmdbId, getAllActors } from '../src/data/actors';
 import { getFeedsPath, getMoviePath, getActorPath } from '../src/utils/urls';
 import { getSitemapXml } from '../src/utils/feeds';
 import {
@@ -15,7 +16,7 @@ import {
   buildMovieSeo,
   buildYearSeo,
 } from '../src/utils/seo';
-import { getCanonicalRedirect, getRobotsTxt, getServerSeo, injectSeoIntoHtml } from '../src/server/seo';
+import { getCanonicalRedirect, getRobotsTxt, getServerSeo, injectSeoIntoHtml, renderServerHtml } from '../src/server/seo';
 import { getBrandBySlug } from '../src/data/brands';
 import { buildActorDetail } from '../src/server/catalogue-api';
 import { isCatalogueListingPayload } from '../src/api/guards';
@@ -84,6 +85,48 @@ assert.match(html, new RegExp(`<title>${movie.title}`));
 assert.match(html, /rel="canonical"/);
 assert.match(html, /og:title/);
 assert.match(html, /application\/ld\+json/);
+
+// Direct HTML responses must contain entity content before React executes.
+const danica = getActorByTmdbId(65220)!;
+const danicaPath = getActorPath(danica.tmdbPersonId, danica.slug);
+const serverShell = '<!doctype html><html><head></head><body><div id="root"></div></body></html>';
+const actorHtml = renderServerHtml(serverShell, danicaPath);
+assert.match(actorHtml, /<h1>Danica McKellar<\/h1>/);
+assert.match(actorHtml, /Danica Mae McKellar/);
+assert.match(actorHtml, /Christmas movie filmography/);
+assert.match(actorHtml, /href="\/movie\/\d+\/[^\"]+"/);
+assert.match(actorHtml, /name="robots" content="index,follow"/);
+assert.ok(actorHtml.includes(`rel="canonical" href="https://xmasdb.com${danicaPath}"`));
+assert.match(actorHtml, /application\/ld\+json/);
+assert.doesNotMatch(actorHtml, /Actor not found|Loading\.\.\.|No actor found/);
+
+const moviePath = getMoviePath(movie.tmdbId, movie.slug);
+const movieHtml = renderServerHtml(serverShell, moviePath);
+assert.ok(movieHtml.includes(`<h1>${movie.title}</h1>`));
+assert.match(movieHtml, /<h2>Cast<\/h2>/);
+assert.match(movieHtml, /name="robots" content="index,follow"/);
+assert.ok(movieHtml.includes(`rel="canonical" href="https://xmasdb.com${moviePath}"`));
+
+const htmlServer = createServer((request, response) => {
+  const pathname = new URL(request.url || '/', 'http://localhost').pathname;
+  response.statusCode = pathname === danicaPath || pathname === moviePath ? 200 : 404;
+  response.setHeader('Content-Type', 'text/html; charset=utf-8');
+  response.end(response.statusCode === 200 ? renderServerHtml(serverShell, pathname) : 'Not found');
+});
+await new Promise<void>((resolve) => htmlServer.listen(0, '127.0.0.1', resolve));
+const address = htmlServer.address();
+assert.ok(address && typeof address === 'object');
+const baseUrl = `http://127.0.0.1:${address.port}`;
+try {
+  for (const [path, expectedText] of [[danicaPath, 'Danica McKellar'], [moviePath, movie.title]] as const) {
+    const response = await fetch(`${baseUrl}${path}`);
+    const body = await response.text();
+    assert.equal(response.status, 200, `${path} should be indexable over HTTP`);
+    assert.match(body, new RegExp(`<h1>${expectedText.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}<\\/h1>`));
+  }
+} finally {
+  await new Promise<void>((resolve, reject) => htmlServer.close((error) => error ? reject(error) : resolve()));
+}
 
 const sitemap = getSitemapXml();
 assert.match(sitemap, new RegExp(`https://xmasdb\\.com${getMoviePath(movie.tmdbId, movie.slug)}`));
