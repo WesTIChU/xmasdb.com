@@ -16,6 +16,9 @@ import {
 import { getCanonicalRedirect, getRobotsTxt, getServerSeo, injectSeoIntoHtml } from '../src/server/seo';
 import { getBrandBySlug } from '../src/data/brands';
 import { buildActorDetail } from '../src/server/catalogue-api';
+import { isCatalogueListingPayload } from '../src/api/guards';
+import { parseCatalogueQuery } from '../src/utils/catalogue-pagination';
+import { buildCatalogueListing } from '../src/server/catalogue-api';
 
 const movie = MOVIES[0];
 const actor = getAllActors()[0];
@@ -28,6 +31,15 @@ assert.match(buildActorSeo(actor, actorDetail?.filmography || []).title, new Reg
 assert.match(buildBrandSeo(getBrandBySlug('hallmark')!, 2025).title, /Hallmark/);
 assert.match(buildYearSeo(2025).title, /2025/);
 assert.match(buildFeedsSeo().title, /StevenLu/);
+
+// A route starts with an intentionally empty payload while its request is in
+// flight. Listing consumers must reject that state rather than reading fields
+// from it, while real brand/year responses must satisfy the complete shape.
+assert.equal(isCatalogueListingPayload(undefined), false);
+assert.equal(isCatalogueListingPayload({ movies: [], years: [] }), false);
+for (const brand of ['hallmark', 'lifetime', 'gaf']) {
+  assert.equal(isCatalogueListingPayload(buildCatalogueListing(parseCatalogueQuery(''), brand, 2025)), true, `${brand}/2025 listing shape`);
+}
 assert.match(buildAboutSeo().title, /Why I Built the Christmas Movie Database/);
 assert.equal(buildAboutSeo().canonicalPath, '/about/');
 

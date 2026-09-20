@@ -21,6 +21,7 @@ import { getActorBackdrop } from '../utils/backdrops';
 import { buildRadarrFeed } from '../utils/feeds';
 import type {
   ActorDetailPayload,
+  AboutPayload,
   ActorFilmographyItem,
   CatalogueListing,
   CatalogueMeta,
@@ -36,6 +37,17 @@ import type {
   SearchResultsPayload,
 } from '../api/types';
 
+const FAVOURITE_MOVIE_TITLES = [
+  'Christmas by Starlight',
+  'A Godwink Christmas',
+  'Once Upon a Holiday',
+  'Coyote Creek Christmas',
+  'Christmas at the Plaza',
+  'A Timeless Christmas',
+] as const;
+
+const FAVOURITE_ACTOR_NAMES = ['Paul Campbell', 'Kimberley Sustad', 'Ryan Paevey'] as const;
+
 /** Converts a canonical movie into the compact listing shape used by cards. */
 export function toListingMovie(movie: Movie): ListingMovie {
   return {
@@ -50,6 +62,20 @@ export function toListingMovie(movie: Movie): ListingMovie {
     premiereDate: movie.premiereDate,
     status: movie.status,
   };
+}
+
+export function buildAboutPayload(): AboutPayload {
+  const favouriteMovies = FAVOURITE_MOVIE_TITLES.map((title) => {
+    const movie = MOVIES.find((candidate) => candidate.title.toLowerCase() === title.toLowerCase());
+    if (!movie) throw new Error(`Favourite movie not found: ${title}`);
+    return toListingMovie(movie);
+  });
+  const favouriteActors = FAVOURITE_ACTOR_NAMES.map((name) => {
+    const actor = getAllActors().find((candidate) => candidate.name.toLowerCase() === name.toLowerCase());
+    if (!actor) throw new Error(`Favourite actor not found: ${name}`);
+    return { name: actor.name, slug: actor.slug, tmdbPersonId: actor.tmdbPersonId };
+  });
+  return { favouriteMovies, favouriteActors };
 }
 
 function toMetaBrand(brandId: string): MetaBrand | null {

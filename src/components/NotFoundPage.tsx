@@ -6,12 +6,7 @@ interface NotFoundPageProps {
 
 export const NotFoundPage: React.FC<NotFoundPageProps> = ({ onNavigate }) => (
   <section className="flex flex-col items-center py-10 text-center sm:py-14" aria-labelledby="not-found-heading">
-    <img
-      src="/images/404.png"
-      alt="XmasDB Christmas download failed"
-      className="h-auto w-full max-w-[760px] object-contain"
-    />
-    <h1 id="not-found-heading" className="mt-8 font-heading text-2xl font-semibold text-[#1A3D2F] sm:text-3xl">
+    <h1 id="not-found-heading" className="font-heading text-2xl font-semibold text-[#1A3D2F] sm:text-3xl">
       Well, this is awkward...
     </h1>
     <p className="mt-3 max-w-md font-body text-base leading-relaxed text-[#736B63] sm:text-lg">

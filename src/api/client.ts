@@ -1,5 +1,6 @@
 import type {
   ActorDetailPayload,
+  AboutPayload,
   CatalogueListing,
   CatalogueMeta,
   FeedsMetaPayload,
@@ -8,6 +9,8 @@ import type {
   SearchIndexPayload,
   SearchResultsPayload,
 } from './types';
+
+export const ABOUT_URL = '/api/about';
 
 declare global {
   interface Window {

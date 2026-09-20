@@ -1,28 +1,75 @@
 import React from 'react';
+import type { AboutPayload } from '../api/types';
+import { MovieCard } from './MovieCard';
+import { getActorPath, getMoviePath } from '../utils/urls';
 
-export const AboutPage: React.FC = () => (
-  <article className="mx-auto max-w-2xl py-10 sm:py-14" aria-labelledby="about-heading">
-    <header className="border-b border-[#E7DFD5] pb-6 text-center">
-      <h1 id="about-heading" className="font-heading text-3xl font-semibold text-[#1A3D2F] sm:text-4xl">Why XmasDB Exists</h1>
-    </header>
+interface AboutPageProps {
+  payload: AboutPayload;
+  onNavigate: (path: string) => void;
+}
 
-    <div className="mt-8 space-y-5 font-body text-base leading-relaxed text-[#4A433B] sm:text-lg">
-      <p>XmasDB started because I wanted a reliable way to feed Hallmark and Lifetime Christmas movies into Radarr.</p>
-      <p>I was originally using Trakt lists for this, but changes to Trakt&apos;s website made the setup increasingly unreliable for my particular use and setup.</p>
-      <p>So I built my own.</p>
-      <p>XmasDB is mainly a project I made for myself: a curated Christmas movie database with reliable Radarr-compatible JSON feeds covering Hallmark, Lifetime and Great American Family.</p>
-      <p>The site grew from there into something a bit bigger, with movie pages, actors, upcoming releases, archives and other ways to browse the collection.</p>
-      <p>And yes, AI was used to help me build the site. I don&apos;t particularly care about hiding that. This isn&apos;t a company or some massive commercial project. It&apos;s something I wanted to exist and built for my own use.</p>
-      <p>If other people find it useful, brilliant.</p>
-      <p>If you like it, you like it. If you don&apos;t, you don&apos;t.</p>
-      <p>That&apos;s pretty much it.</p>
-    </div>
+export const AboutPage: React.FC<AboutPageProps> = ({ payload, onNavigate }) => {
+  const today = new Date();
+  const birthday = new Date(today.getFullYear(), 2, 1);
+  const age = today.getFullYear() - 1984 - (today < birthday ? 1 : 0);
+  const actorLink = (actorIndex: number) => {
+    const actor = payload.favouriteActors[actorIndex];
+    const path = getActorPath(actor.tmdbPersonId, actor.slug);
+    return (
+      <a
+        href={path}
+        onClick={(event) => {
+          event.preventDefault();
+          onNavigate(path);
+        }}
+        className="text-[#841818] underline decoration-[#C8BFB3] underline-offset-2 hover:text-[#1A3D2F]"
+      >
+        {actor.name}
+      </a>
+    );
+  };
 
-    <section className="mt-10 border-t border-[#E7DFD5] pt-6" aria-labelledby="about-purpose-heading">
-      <h2 id="about-purpose-heading" className="font-heading text-xl font-semibold text-[#1A3D2F]">What it&apos;s for</h2>
-      <p className="mt-3 font-body text-base leading-relaxed text-[#4A433B] sm:text-lg">
-        A curated Christmas movie database for browsing Hallmark, Lifetime and Great American Family films, finding movies and actors, keeping up with upcoming Christmas releases, and using Radarr-compatible JSON feeds.
-      </p>
-    </section>
-  </article>
-);
+  return (
+    <article className="mx-auto max-w-2xl py-10 sm:py-14" aria-labelledby="about-heading">
+      <header className="border-b border-[#E7DFD5] pb-6 text-center">
+        <h1 id="about-heading" className="font-heading text-3xl font-semibold text-[#1A3D2F] sm:text-4xl">Why XmasDB Exists</h1>
+      </header>
+
+      <div className="mt-8 space-y-5 font-body text-base leading-relaxed text-[#4A433B] sm:text-lg">
+        <p className="font-heading text-2xl font-semibold text-[#1A3D2F] sm:text-3xl">Hi, I&apos;m Paul.</p>
+        <p>I&apos;m from Scotland, I&apos;m {age}, and I ain&apos;t gonna lie, I love a wee Christmas movie throughout the year. I&apos;ve never really understood why we&apos;re supposed to save them all for December. Sometimes you just want a ridiculously festive film in the middle of March.</p>
+        <p>XmasDB actually started because of Radarr. I wanted a reliable way to keep track of Hallmark and Lifetime Christmas movies and feed them straight into my collection. I used Trakt for a while, but after changes to their site it just stopped being as reliable as I wanted for my setup.</p>
+        <p>Eventually I thought, sod it. I&apos;ll make my own.</p>
+        <p>It started off as something pretty simple for myself, but, as these things tend to do, it grew arms and legs. Now there are hundreds of movies, thousands of actors, upcoming releases, yearly archives and feeds for Hallmark, Lifetime and Great American Family.</p>
+        <p>I still mainly build XmasDB for myself. There&apos;s no big company behind it and I&apos;m not trying to turn it into some massive commercial thing. I just wanted a Christmas movie database and Radarr feed that worked the way I wanted it to work.</p>
+        <p>And yes, I used AI to help me build parts of it. I&apos;m not going to pretend I didn&apos;t or hide it. It helped me turn an idea I had into something that actually works, and I&apos;m perfectly happy with that.</p>
+        <p>If you&apos;ve stumbled across XmasDB and it helps you find a film, keep your own Christmas collection up to date, or just waste half an hour looking through Christmas movies in July, brilliant.</p>
+        <p>If you like it, you like it. If you don&apos;t, you don&apos;t.</p>
+        <p>Paul</p>
+      </div>
+
+      <section className="mt-12 border-t border-[#E7DFD5] pt-8" aria-labelledby="favourites-heading">
+        <p className="font-sans-clean text-xs font-semibold uppercase tracking-[0.18em] text-[#841818]">A FEW OF MY FAVOURITES</p>
+        <h2 id="favourites-heading" className="mt-1 font-heading text-2xl font-semibold text-[#1A3D2F] sm:text-3xl">Christmas Movies I Love</h2>
+        <p className="mt-3 font-body text-base leading-relaxed text-[#4A433B] sm:text-lg">
+          I couldn&apos;t have a Christmas movie site without mentioning a few of my own favourites. There are a handful of Christmas movies I can happily go back to again and again.
+        </p>
+
+        <div className="mt-7 grid grid-cols-2 gap-x-3 gap-y-6 sm:grid-cols-3 sm:gap-x-4" aria-label="Paul's favourite Christmas movies">
+          {payload.favouriteMovies.map((movie) => (
+            <MovieCard key={movie.id} movie={movie} onSelectMovie={(slug, tmdbId) => onNavigate(getMoviePath(tmdbId || movie.tmdbId, slug))} />
+          ))}
+        </div>
+
+        <div className="mt-8 space-y-3 font-body text-base leading-relaxed text-[#4A433B] sm:text-lg">
+          <p>Once Upon a Holiday is probably the big one for me. Definitely one of my favourites.</p>
+          <p>I&apos;m a big {actorLink(0)} fan, and Christmas by Starlight is one I can happily watch again.</p>
+          <p>I love {actorLink(1)} too.</p>
+          <p>Coyote Creek Christmas is another favourite, with{' '}
+            {actorLink(2)}.
+          </p>
+        </div>
+      </section>
+    </article>
+  );
+};

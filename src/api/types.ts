@@ -64,6 +64,17 @@ export interface HomePayload {
   popularActors: PopularActorsGroup[];
 }
 
+export interface AboutActorEntry {
+  name: string;
+  slug: string;
+  tmdbPersonId: number;
+}
+
+export interface AboutPayload {
+  favouriteMovies: ListingMovie[];
+  favouriteActors: AboutActorEntry[];
+}
+
 /** Full movie detail plus lightweight related cards from the same brand. */
 export type MovieDetailMovie = Omit<Movie, 'cast'> & {
   cast: Array<

@@ -24,6 +24,7 @@ import {
   buildCatalogueMeta,
   buildCatalogueListing,
   buildHomePayload,
+  buildAboutPayload,
   buildMovieDetail,
   buildActorDetail,
   buildSearchIndex,
@@ -257,6 +258,8 @@ async function startServer() {
 
   // Homepage sections.
   app.get('/api/home', (_req, res) => sendJson(res, buildHomePayload()));
+
+  app.get('/api/about', (_req, res) => sendJson(res, buildAboutPayload()));
 
   // Catalogue listing (all movies, brand pages, year archives).
   app.get('/api/catalogue', (req, res) => {

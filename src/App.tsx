@@ -16,18 +16,22 @@ import { BrandPrefetch } from './components/BrandPrefetch';
 import { NotFoundPage } from './components/NotFoundPage';
 import { AboutPage } from './components/AboutPage';
 import type {
-  ActorDetailPayload,
-  CatalogueListing,
   CatalogueMeta,
-  FeedsMetaPayload,
-  HomePayload,
   MetaBrand,
-  MovieDetailPayload,
   SearchResultsPayload,
 } from './api/types';
 import {
+  isActorDetailPayload,
+  isAboutPayload,
+  isCatalogueListingPayload,
+  isFeedsMetaPayload,
+  isHomePayload,
+  isMovieDetailPayload,
+} from './api/guards';
+import {
   ApiError,
   FEEDS_META_URL,
+  ABOUT_URL,
   actorUrl,
   catalogueUrl,
   fetchSearchResults,
@@ -78,36 +82,23 @@ type ViewStatus = 'loading' | 'ready' | 'not-found' | 'error';
 
 const EMPTY_BRANDS: MetaBrand[] = [];
 
-function isRecord(value: unknown): value is Record<string, unknown> {
-  return typeof value === 'object' && value !== null;
-}
-
 /** Rejects stale or malformed API/cache data before components render it. */
 function isRoutePayloadValid(descriptor: RouteDescriptor, payload: unknown): boolean {
-  if (!isRecord(payload)) return false;
-
   switch (descriptor.type) {
     case 'home':
-      return Array.isArray(payload.comingSoon)
-        && Array.isArray(payload.discovery)
-        && Array.isArray(payload.popularActors)
-        && payload.popularActors.every((group) => isRecord(group) && Array.isArray(group.actors));
+      return isHomePayload(payload);
     case 'movies':
     case 'year-archive':
     case 'brand':
-      return Array.isArray(payload.movies) && Array.isArray(payload.years);
+      return isCatalogueListingPayload(payload);
     case 'movie':
-      return isRecord(payload.movie)
-        && Array.isArray(payload.movie.cast)
-        && Array.isArray(payload.related);
+      return isMovieDetailPayload(payload);
     case 'actor':
-      return isRecord(payload.actor) && Array.isArray(payload.filmography);
+      return isActorDetailPayload(payload);
     case 'feeds':
-      return Array.isArray(payload.years)
-        && Array.isArray(payload.populatedBrands)
-        && isRecord(payload.counts);
+      return isFeedsMetaPayload(payload);
     case 'about':
-      return true;
+      return isAboutPayload(payload);
     default:
       return false;
   }
@@ -180,7 +171,7 @@ function requestFor(descriptor: RouteDescriptor, catalogueSearch: string): strin
     case 'feeds':
       return FEEDS_META_URL;
     case 'about':
-      return null;
+      return ABOUT_URL;
     default:
       return null;
   }
@@ -240,9 +231,7 @@ export default function App() {
 
   // Resolve the current route's data from the shared client cache / API.
   const [view, setView] = useState<{ url: string; status: ViewStatus; payload: unknown }>(() => {
-    if (!requestUrl) return descriptor.type === 'about'
-      ? { url: '', status: 'ready', payload: {} }
-      : { url: '', status: 'not-found', payload: undefined };
+    if (!requestUrl) return { url: '', status: 'not-found', payload: undefined };
     const cached = peekResolved<unknown>(requestUrl);
     return cached !== undefined && isRoutePayloadValid(descriptor, cached)
       ? { url: requestUrl, status: 'ready', payload: cached }
@@ -251,9 +240,7 @@ export default function App() {
 
   useEffect(() => {
     if (!requestUrl) {
-      setView(descriptor.type === 'about'
-        ? { url: '', status: 'ready', payload: {} }
-        : { url: '', status: 'not-found', payload: undefined });
+      setView({ url: '', status: 'not-found', payload: undefined });
       return;
     }
 
@@ -290,7 +277,7 @@ export default function App() {
   // A navigation changes requestUrl before the loading effect runs. Do not
   // render the previous route's ready payload as the new route's data.
   const isCurrentView = requestUrl === null
-    ? descriptor.type === 'about' && view.status === 'ready'
+    ? false
     : view.url === requestUrl;
   const currentViewStatus: ViewStatus = isCurrentView ? view.status : 'loading';
 
@@ -298,13 +285,13 @@ export default function App() {
   useEffect(() => {
     if (!isCurrentView || view.status !== 'ready' || typeof window === 'undefined') return;
     if (descriptor.type === 'movie') {
-      const movie = (view.payload as Partial<MovieDetailPayload>).movie;
-      if (!movie) return;
+      if (!isMovieDetailPayload(view.payload)) return;
+      const movie = view.payload.movie;
       const canonical = getMoviePath(movie.tmdbId, movie.slug);
       if (window.location.pathname !== canonical) window.history.replaceState({}, '', canonical);
     } else if (descriptor.type === 'actor') {
-      const actor = (view.payload as Partial<ActorDetailPayload>).actor;
-      if (!actor) return;
+      if (!isActorDetailPayload(view.payload)) return;
+      const actor = view.payload.actor;
       const canonical = getActorPath(actor.tmdbPersonId, actor.slug);
       if (window.location.pathname !== canonical) window.history.replaceState({}, '', canonical);
     }
@@ -323,21 +310,21 @@ export default function App() {
     } else if (descriptor.type === 'movies') {
       updateSeoTags({ ...buildMoviesSeo(meta?.totalMovies), noIndex: Boolean(catalogueSearch) });
     } else if (descriptor.type === 'year-archive') {
-      updateSeoTags({ ...buildYearSeo(descriptor.year, (view.payload as Partial<CatalogueListing>).total), noIndex: Boolean(catalogueSearch) });
+      if (!isCatalogueListingPayload(view.payload)) return;
+      updateSeoTags({ ...buildYearSeo(descriptor.year, view.payload.total), noIndex: Boolean(catalogueSearch) });
     } else if (descriptor.type === 'brand') {
       const brand = getBrandBySlug(descriptor.slug);
       if (!brand) return;
-      updateSeoTags({ ...buildBrandSeo(brand, descriptor.year, (view.payload as Partial<CatalogueListing>).total), noIndex: Boolean(catalogueSearch) });
+      if (!isCatalogueListingPayload(view.payload)) return;
+      updateSeoTags({ ...buildBrandSeo(brand, descriptor.year, view.payload.total), noIndex: Boolean(catalogueSearch) });
     } else if (descriptor.type === 'movie') {
       if (view.status !== 'ready') return;
-      const m = (view.payload as Partial<MovieDetailPayload>).movie;
-      if (!m) return;
-      updateSeoTags(buildMovieSeo(m));
+      if (!isMovieDetailPayload(view.payload)) return;
+      updateSeoTags(buildMovieSeo(view.payload.movie));
     } else if (descriptor.type === 'actor') {
       if (view.status !== 'ready') return;
-      const a = (view.payload as Partial<ActorDetailPayload>).actor;
-      if (!a) return;
-      updateSeoTags(buildActorSeo(a, (view.payload as ActorDetailPayload).filmography));
+      if (!isActorDetailPayload(view.payload)) return;
+      updateSeoTags(buildActorSeo(view.payload.actor, view.payload.filmography));
     } else if (descriptor.type === 'feeds') {
       updateSeoTags(buildFeedsSeo());
     } else if (descriptor.type === 'about') {
@@ -350,7 +337,8 @@ export default function App() {
     isCurrentView &&
     view.status === 'ready' &&
     (descriptor.type === 'movies' || descriptor.type === 'year-archive' || descriptor.type === 'brand')
-      ? (view.payload as CatalogueListing)
+      && isCatalogueListingPayload(view.payload)
+      ? view.payload
       : null;
 
   useEffect(() => {
@@ -497,11 +485,11 @@ export default function App() {
           <NotFoundPage onNavigate={navigate} />
         ) : (
           <>
-            {descriptor.type === 'home' && (
-              <HomePage payload={view.payload as HomePayload} onNavigate={navigate} />
+            {descriptor.type === 'home' && isHomePayload(view.payload) && (
+              <HomePage payload={view.payload} onNavigate={navigate} />
             )}
 
-            {descriptor.type === 'about' && <AboutPage />}
+            {descriptor.type === 'about' && isAboutPayload(view.payload) && <AboutPage payload={view.payload} onNavigate={navigate} />}
 
             {descriptor.type === 'movies' && listingPayload && (
               <div className="py-6 sm:py-8" id="all-movies-view">
@@ -626,27 +614,25 @@ export default function App() {
             })()}
 
             {descriptor.type === 'movie' && currentViewStatus === 'ready' && (() => {
-              const payload = view.payload as Partial<MovieDetailPayload>;
-              if (!payload.movie) return <NotFoundPage onNavigate={navigate} />;
-              return <MovieDetail movie={payload.movie} related={Array.isArray(payload.related) ? payload.related : []} onNavigate={navigate} />;
+              if (!isMovieDetailPayload(view.payload)) return <NotFoundPage onNavigate={navigate} />;
+              return <MovieDetail movie={view.payload.movie} related={view.payload.related} onNavigate={navigate} />;
             })()}
 
             {descriptor.type === 'actor' && currentViewStatus === 'ready' && (() => {
-              const payload = view.payload as Partial<ActorDetailPayload>;
-              if (!payload.actor) return <NotFoundPage onNavigate={navigate} />;
+              if (!isActorDetailPayload(view.payload)) return <NotFoundPage onNavigate={navigate} />;
               return (
                 <ActorDetail
-                  actor={payload.actor}
-                  filmography={Array.isArray(payload.filmography) ? payload.filmography : []}
-                  backdropUrl={payload.backdropUrl ?? null}
+                  actor={view.payload.actor}
+                  filmography={view.payload.filmography}
+                  backdropUrl={view.payload.backdropUrl}
                   onNavigate={navigate}
                   onSelectMovie={selectMovie}
                 />
               );
             })()}
 
-            {descriptor.type === 'feeds' && currentViewStatus === 'ready' && (
-              <FeedsPage meta={view.payload as FeedsMetaPayload} />
+            {descriptor.type === 'feeds' && currentViewStatus === 'ready' && isFeedsMetaPayload(view.payload) && (
+              <FeedsPage meta={view.payload} />
             )}
           </>
         )}
