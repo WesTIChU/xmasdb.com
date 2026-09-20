@@ -3,7 +3,7 @@ import fs from 'node:fs/promises';
 import os from 'node:os';
 import path from 'node:path';
 import { Movie } from '../src/types';
-import { mergeTmdbMovie } from '../src/utils/tmdb-refresh';
+import { mergeTmdbMovie, selectPeopleRefreshMovies } from '../src/utils/tmdb-refresh';
 import { cacheLocalImage } from '../src/utils/local-images';
 
 console.log('Running TMDB refresh tests...');
@@ -38,6 +38,21 @@ assert.strictEqual(merged.status, 'coming-soon');
 assert.strictEqual(merged.isComingSoon, true);
 const unchanged = mergeTmdbMovie(movie, { releaseDate: movie.releaseDate, synopsis: movie.synopsis }, movie.posterUrl);
 assert.strictEqual(unchanged, movie, 'unchanged TMDB data does not update the timestamp');
+
+const castMember = (tmdbPersonId: number, name: string) => ({
+  actorId: String(tmdbPersonId), name, character: '', slug: name.toLowerCase().replaceAll(' ', '-'), tmdbPersonId,
+});
+const unrelatedMovie = { ...movie, tmdbId: 10, slug: 'unrelated', title: 'Unrelated', isComingSoon: false, cast: [castMember(100, 'Unrelated Actor')] } satisfies Movie;
+const refreshedComingSoonMovie = { ...movie, cast: [castMember(200, 'Known Actor'), castMember(300, 'New Actor')] } satisfies Movie;
+const comingSoonPeopleMovies = selectPeopleRefreshMovies([unrelatedMovie, refreshedComingSoonMovie], [refreshedComingSoonMovie], { comingSoonOnly: true });
+assert.deepStrictEqual(comingSoonPeopleMovies.map((entry) => entry.tmdbId), [movie.tmdbId]);
+assert.deepStrictEqual(
+  [...new Set(comingSoonPeopleMovies.flatMap((entry) => entry.cast.map((cast) => cast.tmdbPersonId)))],
+  [200, 300],
+  'Coming Soon people include newly discovered cast and exclude unrelated movies',
+);
+const fullPeopleMovies = selectPeopleRefreshMovies([unrelatedMovie, refreshedComingSoonMovie], [refreshedComingSoonMovie], { comingSoonOnly: false });
+assert.deepStrictEqual(fullPeopleMovies.map((entry) => entry.tmdbId), [unrelatedMovie.tmdbId, movie.tmdbId], 'Full refresh still checks the complete movie catalogue');
 
 const root = await fs.mkdtemp(path.join(os.tmpdir(), 'xmasdb-refresh-'));
 const manifestPath = path.join(root, 'images/.cache-manifest.json');

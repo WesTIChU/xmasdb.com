@@ -6,6 +6,19 @@ function localAssetPath(kind: 'posters' | 'backdrops', id: number): string {
   return `/images/${kind}/${id}.jpg`;
 }
 
+export function selectPeopleRefreshMovies(
+  movies: Movie[],
+  targetMovies: Movie[],
+  options: { comingSoonOnly: boolean; requestedId?: number },
+): Movie[] {
+  if (options.comingSoonOnly) {
+    const targetIds = new Set(targetMovies.map((movie) => movie.tmdbId));
+    return movies.filter((movie) => targetIds.has(movie.tmdbId));
+  }
+  if (options.requestedId) return movies.filter((movie) => movie.tmdbId === options.requestedId);
+  return movies;
+}
+
 export function mergeTmdbMovie(movie: Movie, refreshed: Partial<Movie>, posterUrl?: string, backdropUrl?: string): Movie {
   const safeMetadata = Object.fromEntries(Object.entries(refreshed).filter(([, value]) => (
     value !== undefined && value !== null &&

@@ -8,7 +8,7 @@ import { fetchTmdbMovie, requireTmdbApiKey } from '../src/utils/tmdb';
 import { enrichCataloguePeople } from '../src/utils/person-enrichment';
 import { reconcileMovieLifecycle } from '../src/utils/catalogue-lifecycle';
 import { writeFileAtomically } from '../src/utils/atomic-file';
-import { refreshTmdbMovie } from '../src/utils/tmdb-refresh';
+import { refreshTmdbMovie, selectPeopleRefreshMovies } from '../src/utils/tmdb-refresh';
 
 const moviesPath = path.join(process.cwd(), 'src/data/movies.ts');
 const refreshReportPath = path.join(process.cwd(), 'src/data/refresh-report.json');
@@ -61,7 +61,10 @@ async function main() {
 
   const refreshedById = new Map(refreshedMovies.map((movie) => [movie.tmdbId, movie]));
   const mergedMovies = MOVIES.map((movie) => reconcileMovieLifecycle(refreshedById.get(movie.tmdbId) || movie));
-  const peopleMovies = requestedId ? mergedMovies.filter((movie) => movie.tmdbId === Number(requestedId)) : mergedMovies;
+  const peopleMovies = selectPeopleRefreshMovies(mergedMovies, refreshedMovies, {
+    comingSoonOnly,
+    requestedId: requestedId ? Number(requestedId) : undefined,
+  });
   const peopleResult = await enrichCataloguePeople(peopleMovies, apiKey, undefined, (current, total, person) => {
     console.log(`[TMDB Person] ${current}/${total} ${person.name} (${person.tmdbPersonId})`);
   });
