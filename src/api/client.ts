@@ -1,6 +1,5 @@
 import type {
   ActorDetailPayload,
-  AboutPayload,
   CatalogueListing,
   CatalogueMeta,
   FeedsMetaPayload,

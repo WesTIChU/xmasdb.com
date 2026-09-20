@@ -6,6 +6,7 @@ import { MovieCard } from './MovieCard';
 import { NavigationLink } from './NavigationLink';
 import { PopularActorsSection } from './PopularActorsSection';
 import { formatMoviePremiereDate } from '../utils/catalogue-lifecycle';
+import { getYearPath } from '../utils/urls';
 
 interface HomePageProps {
   payload: Partial<HomePayload>;
@@ -20,6 +21,7 @@ export const HomePage: React.FC<HomePageProps> = ({ payload, onNavigate }) => {
   const discovery = Array.isArray(payload?.discovery) ? payload.discovery : [];
   const popularActors = Array.isArray(payload?.popularActors) ? payload.popularActors : [];
   const totalMovies = typeof payload?.totalMovies === 'number' ? payload.totalMovies : 0;
+  const archiveYears = Array.isArray(payload?.archiveYears) ? payload.archiveYears : [];
   return (
     <div className="pt-0 pb-6 sm:pb-8" id="home-view">
       <PopularActorsSection groups={popularActors} onNavigate={onNavigate} />
@@ -62,6 +64,35 @@ export const HomePage: React.FC<HomePageProps> = ({ payload, onNavigate }) => {
           </div>
         </div>
       </section>
+
+      {archiveYears.length > 0 && (
+        <section className="py-7 sm:py-9" aria-labelledby="archive-years-heading">
+          <div className="w-full mb-5">
+            <p className="font-sans-clean text-xs font-semibold uppercase tracking-[0.18em] text-[#B8860B]">Explore the archive</p>
+            <h2 id="archive-years-heading" className="mt-1 font-heading text-xl sm:text-2xl font-semibold text-[#1A3D2F]">Christmas Through the Years</h2>
+          </div>
+          <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4 lg:grid-cols-6">
+            {archiveYears.map(({ year, movieCount }) => {
+              const yearPath = getYearPath(year);
+              return (
+                <a
+                  key={year}
+                  href={yearPath}
+                  onClick={(event) => {
+                    event.preventDefault();
+                    onNavigate(yearPath);
+                  }}
+                  className="group relative rounded-md border border-[#DED4C8] bg-[#FFFDF9] px-3 py-4 text-center transition-colors hover:border-[#B8860B]/60 hover:bg-[#F5EFE6] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#841818]"
+                >
+                  <span className="absolute right-2 top-2 text-[10px] text-[#B8860B]" aria-hidden="true">✦</span>
+                  <span className="block font-heading text-2xl font-semibold text-[#1A3D2F] transition-colors group-hover:text-[#841818] sm:text-3xl">{year}</span>
+                  <span className="mt-1 block px-1 font-body text-[10px] leading-tight text-[#736B63] sm:whitespace-nowrap sm:text-[11px] lg:text-[10px]">{movieCount} Christmas {movieCount === 1 ? 'movie' : 'movies'}</span>
+                </a>
+              );
+            })}
+          </div>
+        </section>
+      )}
 
     </div>
   );

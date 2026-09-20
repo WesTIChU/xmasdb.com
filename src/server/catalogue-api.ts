@@ -16,7 +16,7 @@ import {
 } from '../data/actors';
 import { getBrandBySlug, getPopulatedBrands } from '../data/brands';
 import { getCataloguePage, type CatalogueQuery } from '../utils/catalogue-pagination';
-import { getMoviePremiereDateKey, isFutureComingSoonMovie } from '../utils/catalogue-lifecycle';
+import { getMoviePremiereDateKey, isFutureComingSoonMovie, isMoviePremierePast } from '../utils/catalogue-lifecycle';
 import { getActorBackdrop } from '../utils/backdrops';
 import { buildRadarrFeed } from '../utils/feeds';
 import type {
@@ -36,6 +36,7 @@ import type {
   SearchPersonEntry,
   SearchResultsPayload,
 } from '../api/types';
+import { scoreActorSearchResult, scoreMovieSearchFields } from '../utils/search-relevance';
 
 const FAVOURITE_MOVIE_TITLES = [
   'Christmas by Starlight',
@@ -260,6 +261,7 @@ export function buildSearchIndex(): SearchIndexPayload {
         year: movie.year,
         brandId: movie.brandId,
         posterUrl: movie.posterUrl,
+        originalTitle: movie.originalTitle,
         // Join names with a NUL separator so substring matching can never span
         // across two different cast members (preserving per-name matching).
         terms: movie.cast.map((member) => member.name).join('\u0000').toLowerCase(),
@@ -271,20 +273,29 @@ export function buildSearchIndex(): SearchIndexPayload {
 }
 
 export function buildSearchResults(rawQuery: string): SearchResultsPayload {
-  const query = rawQuery.trim().toLowerCase();
+  const query = rawQuery.trim();
   if (!query) return { movies: [], actors: [] };
 
-  const movies = MOVIES.filter(
-    (movie) =>
-      movie.title.toLowerCase().includes(query) ||
-      movie.synopsis.toLowerCase().includes(query) ||
-      movie.cast.some((member) => member.name.toLowerCase().includes(query))
-  ).map(toListingMovie);
+  const movies = MOVIES
+    .map((movie) => ({
+      movie,
+      score: scoreMovieSearchFields({
+        title: movie.title,
+        originalTitle: movie.originalTitle,
+        secondaryText: `${movie.synopsis} ${movie.cast.map((member) => member.name).join(' ')}`,
+      }, query),
+    }))
+    .filter((result) => result.score > 0)
+    .sort((a, b) => b.score - a.score)
+    .map(({ movie }) => toListingMovie(movie));
 
   const counts = buildActorMovieCounts();
   const actors = getAllActors()
-    .filter((actor) => actor.name.toLowerCase().includes(query))
-    .map((actor) => toPersonEntry(actor, counts));
+    .map((actor) => toPersonEntry(actor, counts))
+    .map((actor) => ({ actor, score: scoreActorSearchResult(actor, query) }))
+    .filter((result) => result.score > 0)
+    .sort((a, b) => b.score - a.score || b.actor.movieCount - a.actor.movieCount)
+    .map(({ actor }) => actor);
 
   return { movies, actors };
 }
@@ -293,13 +304,90 @@ export function buildSearchResults(rawQuery: string): SearchResultsPayload {
 // Homepage
 // ---------------------------------------------------------------------------
 
-let homeCache: HomePayload | null = null;
+let homeCache: { dateKey: string; payload: HomePayload } | null = null;
 
-export function buildHomePayload(): HomePayload {
-  if (homeCache) return homeCache;
+const DISCOVERY_BRAND_IDS = ['hallmark', 'lifetime', 'gaf'] as const;
+
+function getUtcDateKey(date: Date): string {
+  return date.toISOString().slice(0, 10);
+}
+
+function dailyMovieHash(value: string): number {
+  let hash = 2166136261;
+  for (let index = 0; index < value.length; index += 1) {
+    hash ^= value.charCodeAt(index);
+    hash = Math.imul(hash, 16777619);
+  }
+  return hash >>> 0;
+}
+
+function isValidDiscoverMovie(movie: Movie, now: Date, excludedIds: Set<string>): boolean {
+  return !excludedIds.has(movie.id)
+    && movie.status?.toLowerCase() === 'collection'
+    && !isFutureComingSoonMovie(movie, now)
+    && isMoviePremierePast(movie, now)
+    && typeof movie.id === 'string'
+    && typeof movie.slug === 'string'
+    && typeof movie.title === 'string'
+    && Number.isInteger(movie.year)
+    && typeof movie.brandId === 'string'
+    && Number.isInteger(movie.tmdbId)
+    && typeof movie.posterUrl === 'string'
+    && typeof movie.releaseDate === 'string';
+}
+
+export function selectDiscoverMovies(
+  movies: Movie[],
+  now: Date = new Date(),
+  excludedIds: Set<string> = new Set(),
+): Movie[] {
+  const dateKey = getUtcDateKey(now);
+  const eligible = movies.filter((movie) => isValidDiscoverMovie(movie, now, excludedIds));
+  const sortForDay = (left: Movie, right: Movie) => {
+    const leftHash = dailyMovieHash(`${dateKey}:${left.id}`);
+    const rightHash = dailyMovieHash(`${dateKey}:${right.id}`);
+    return leftHash - rightHash || left.id.localeCompare(right.id);
+  };
+  const selectedByBrand = new Map<string, Movie[]>();
+
+  for (const brandId of DISCOVERY_BRAND_IDS) {
+    selectedByBrand.set(
+      brandId,
+      eligible.filter((movie) => movie.brandId.toLowerCase() === brandId).sort(sortForDay).slice(0, 2),
+    );
+  }
+
+  const selected: Movie[] = [];
+  const selectedIds = new Set<string>();
+  for (let slot = 0; slot < 2; slot += 1) {
+    for (const brandId of DISCOVERY_BRAND_IDS) {
+      const movie = selectedByBrand.get(brandId)?.[slot];
+      if (movie && !selectedIds.has(movie.id)) {
+        selected.push(movie);
+        selectedIds.add(movie.id);
+      }
+    }
+  }
+
+  if (selected.length < 6) {
+    for (const movie of eligible.sort(sortForDay)) {
+      if (selected.length >= 6) break;
+      if (!selectedIds.has(movie.id)) {
+        selected.push(movie);
+        selectedIds.add(movie.id);
+      }
+    }
+  }
+
+  return selected.slice(0, 6);
+}
+
+export function buildHomePayload(now: Date = new Date()): HomePayload {
+  const dateKey = getUtcDateKey(now);
+  if (homeCache?.dateKey === dateKey) return homeCache.payload;
 
   const comingSoon = [...MOVIES]
-    .filter((movie) => isFutureComingSoonMovie(movie) && getMoviePremiereDateKey(movie) !== null)
+     .filter((movie) => isFutureComingSoonMovie(movie, now) && getMoviePremiereDateKey(movie) !== null)
     .sort((a, b) => {
       const aDate = getMoviePremiereDateKey(a);
       const bDate = getMoviePremiereDateKey(b);
@@ -311,9 +399,15 @@ export function buildHomePayload(): HomePayload {
     .map(toListingMovie);
 
   const comingSoonIds = new Set(comingSoon.map((movie) => movie.id));
-  const discovery = MOVIES.filter((movie) => !comingSoonIds.has(movie.id))
-    .slice(0, 6)
+  const discovery = selectDiscoverMovies(MOVIES, now, comingSoonIds)
     .map(toListingMovie);
+
+  const archiveYears = getAllYearsForBrand()
+    .slice(0, 6)
+    .map((year) => ({
+      year,
+      movieCount: MOVIES.filter((movie) => movie.year === year).length,
+    }));
 
   const popularActors: PopularActorsGroup[] = [];
   for (const brand of getPopulatedBrands(MOVIES)) {
@@ -327,13 +421,15 @@ export function buildHomePayload(): HomePayload {
     if (actors.length > 0) popularActors.push({ brandId: brand.id, actors });
   }
 
-  homeCache = {
+  const payload = {
     totalMovies: MOVIES.length,
     comingSoon,
     discovery,
     popularActors,
+    archiveYears,
   };
-  return homeCache;
+  homeCache = { dateKey, payload };
+  return payload;
 }
 
 // ---------------------------------------------------------------------------

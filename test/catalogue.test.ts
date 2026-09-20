@@ -4,6 +4,7 @@ import { getActorBackdrop } from '../src/utils/backdrops';
 import { getPopulatedBrands } from '../src/data/brands';
 import { getRadarrAllFeedJson, getRadarrNetworkFeedJson, getSitemapXml, isMovieEligibleForRadarr } from '../src/utils/feeds';
 import { buildCatalogueUrl, getCataloguePage, parseCatalogueQuery } from '../src/utils/catalogue-pagination';
+import { selectDiscoverMovies } from '../src/server/catalogue-api';
 
 console.log('Running catalogue pagination and local backdrop tests...');
 
@@ -69,5 +70,41 @@ assert.ok(lifetimeFeed.length > 0);
 assert.ok(JSON.parse(getRadarrAllFeedJson()).length >= gafFeed.length + hallmarkFeed.length);
 assert.ok(getSitemapXml().includes('/gaf/'));
 assert.ok(getSitemapXml().includes('/lifetime/'));
+
+const discoverDate = new Date('2026-09-20T12:00:00Z');
+const discover = selectDiscoverMovies(MOVIES, discoverDate);
+assert.ok(discover.length <= 6);
+assert.strictEqual(discover.filter((movie) => movie.brandId === 'hallmark').length, 2);
+assert.strictEqual(discover.filter((movie) => movie.brandId === 'lifetime').length, 2);
+assert.strictEqual(discover.filter((movie) => movie.brandId === 'gaf').length, 2);
+assert.strictEqual(new Set(discover.map((movie) => movie.id)).size, discover.length);
+assert.ok(discover.every((movie) => movie.status === 'collection'));
+assert.strictEqual(
+  JSON.stringify(selectDiscoverMovies(MOVIES, discoverDate).map((movie) => movie.id)),
+  JSON.stringify(discover.map((movie) => movie.id)),
+);
+assert.notStrictEqual(
+  JSON.stringify(selectDiscoverMovies(MOVIES, new Date('2026-09-21T12:00:00Z')).map((movie) => movie.id)),
+  JSON.stringify(discover.map((movie) => movie.id)),
+);
+assert.deepStrictEqual(
+  selectDiscoverMovies([...MOVIES].reverse(), discoverDate).map((movie) => movie.id),
+  discover.map((movie) => movie.id),
+);
+assert.ok(discover.some((movie) => movie.year < 2025));
+
+const oneHallmarkMovie = MOVIES.find((movie) => movie.brandId === 'hallmark' && movie.status === 'collection')!;
+const fallbackDiscover = selectDiscoverMovies(
+  [oneHallmarkMovie, ...MOVIES.filter((movie) => movie.brandId !== 'hallmark')],
+  discoverDate,
+);
+assert.ok(fallbackDiscover.length <= 6);
+assert.strictEqual(fallbackDiscover.filter((movie) => movie.brandId === 'hallmark').length, 1);
+assert.strictEqual(new Set(fallbackDiscover.map((movie) => movie.id)).size, fallbackDiscover.length);
+
+const comingSoonFixture = { ...oneHallmarkMovie, id: 'fixture-coming-soon', status: 'coming-soon', premiereDate: '2026-12-01' };
+assert.ok(!selectDiscoverMovies([comingSoonFixture, oneHallmarkMovie], discoverDate).some((movie) => movie.id === comingSoonFixture.id));
+const futureCollectionFixture = { ...oneHallmarkMovie, id: 'fixture-future-collection', status: 'collection', releaseDate: '2027-01-01', premiereDate: '2027-01-01' };
+assert.ok(!selectDiscoverMovies([futureCollectionFixture, oneHallmarkMovie], discoverDate).some((movie) => movie.id === futureCollectionFixture.id));
 
 console.log('Catalogue pagination and local backdrop tests passed.');

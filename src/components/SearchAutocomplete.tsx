@@ -9,6 +9,12 @@ import { SEARCH_INDEX_URL, fetchSearchIndex, peekResolved } from '../api/client'
 import { getBrandById } from '../data/brands';
 import { getMoviePath, getActorPath } from '../utils/urls';
 import { getMoviePoster } from '../utils/posters';
+import {
+  compareScoredResults,
+  scoreActorSearchResult,
+  scoreMovieSearchEntry,
+  scoreListingMovieTitle,
+} from '../utils/search-relevance';
 
 interface SearchAutocompleteProps {
   searchQuery: string;
@@ -32,7 +38,7 @@ function highlightMatch(text: string, query: string) {
   return (
     <>
       {parts.map((part, index) =>
-        regex.test(part) ? (
+        index % 2 === 1 ? (
           <span
             key={index}
             className="font-bold text-[#841818] underline decoration-[#841818]/30 decoration-1"
@@ -144,23 +150,17 @@ export const SearchAutocomplete: React.FC<SearchAutocompleteProps> = ({
       return { matchingMovies: [] as SearchMovieEntry[], matchingActors: [] as SearchPersonEntry[] };
     }
 
-    // Match movies: title matches take priority, then cast-name terms.
     const movies = searchIndex.movies
-      .filter((m) => {
-        const titleMatch = m.title.toLowerCase().includes(query);
-        const castMatch = m.terms.includes(query);
-        return titleMatch || castMatch;
-      })
-      .sort((a, b) => {
-        const aTitleMatch = a.title.toLowerCase().includes(query);
-        const bTitleMatch = b.title.toLowerCase().includes(query);
-        if (aTitleMatch && !bTitleMatch) return -1;
-        if (!aTitleMatch && bTitleMatch) return 1;
-        return b.year - a.year;
-      });
+      .map((movie) => ({ item: movie, score: scoreMovieSearchEntry(movie, query) }))
+      .filter((result) => result.score > 0)
+      .sort(compareScoredResults)
+      .map(({ item }) => item);
 
-    // Match actors: name matches
-    const actors = searchIndex.people.filter((a) => a.name.toLowerCase().includes(query));
+    const actors = searchIndex.people
+      .map((actor) => ({ item: actor, score: scoreActorSearchResult(actor, query) }))
+      .filter((result) => result.score > 0)
+      .sort((a, b) => compareScoredResults(a, b) || b.item.movieCount - a.item.movieCount)
+      .map(({ item }) => item);
 
     return {
       matchingMovies: movies,
@@ -177,18 +177,24 @@ export const SearchAutocomplete: React.FC<SearchAutocompleteProps> = ({
 
   const totalResultsCount = matchingMovies.length + matchingActors.length;
 
+  const actorsFirst = displayedActors.length > 0
+    && (displayedMovies.length === 0
+      || scoreActorSearchResult(displayedActors[0], query) > scoreListingMovieTitle(displayedMovies[0], query));
+
   // Flatten selectable items for clean keyboard navigation
   const selectableItems = useMemo<AutocompleteItem[]>(() => {
     if (!shouldSearch) return [];
     const items: AutocompleteItem[] = [];
 
-    displayedMovies.forEach((movie) => {
-      items.push({ type: 'movie', movie });
-    });
-
-    displayedActors.forEach((actor) => {
-      items.push({ type: 'actor', actor, movieCount: actor.movieCount });
-    });
+    const addMovies = () => displayedMovies.forEach((movie) => items.push({ type: 'movie', movie }));
+    const addActors = () => displayedActors.forEach((actor) => items.push({ type: 'actor', actor, movieCount: actor.movieCount }));
+    if (actorsFirst) {
+      addActors();
+      addMovies();
+    } else {
+      addMovies();
+      addActors();
+    }
 
     if (hasAdditionalResults) {
       items.push({ type: 'view-all', total: totalResultsCount });
@@ -201,6 +207,7 @@ export const SearchAutocomplete: React.FC<SearchAutocompleteProps> = ({
     displayedActors,
     hasAdditionalResults,
     totalResultsCount,
+    actorsFirst,
   ]);
 
   // Reset selectedIndex whenever suggestions change
@@ -275,6 +282,97 @@ export const SearchAutocomplete: React.FC<SearchAutocompleteProps> = ({
     }
   };
 
+  const renderMovieSection = (itemOffset: number) => displayedMovies.length > 0 ? (
+    <div id="autocomplete-movies-section">
+      <div className="px-3.5 pt-2 pb-1 text-[11px] font-sans-clean font-semibold uppercase tracking-wider text-[#736B63] bg-[#FAF7F2]/80 sticky top-0 z-10 border-b border-[#EFE8DD]">
+        Movies
+      </div>
+      <div>
+        {displayedMovies.map((movie, idx) => {
+          const itemIndex = itemOffset + idx;
+          const isSelected = selectedIndex === itemIndex;
+          const brand = getBrandById(movie.brandId);
+          const brandName = brand ? brand.shortName : movie.brandId.toUpperCase();
+          const path = getMoviePath(movie.tmdbId, movie.slug);
+
+          return (
+            <a
+              key={`movie-${movie.id}`}
+              href={path}
+              role="option"
+              aria-selected={isSelected}
+              id={`autocomplete-movie-${movie.slug}`}
+              onClick={(e) => {
+                e.preventDefault();
+                handleSelectItem({ type: 'movie', movie });
+              }}
+              onMouseEnter={() => setSelectedIndex(itemIndex)}
+              className={`flex items-center gap-3 px-3.5 py-2 transition-colors cursor-pointer text-inherit no-underline ${
+                isSelected ? 'bg-[#F2ECE3]' : 'hover:bg-[#F8F4EE]'
+              }`}
+            >
+              <MoviePosterThumbnail movie={movie} brandName={brandName} />
+              <div className="min-w-0 flex-1">
+                <div className="font-heading text-sm font-semibold text-[#1A3D2F] line-clamp-1 leading-snug">
+                  {highlightMatch(movie.title, searchQuery)}
+                </div>
+                <div className="text-xs text-[#736B63] font-body mt-0.5 flex items-center gap-1">
+                  <span>{movie.year}</span>
+                  <span className="text-[#C4BCB1]">·</span>
+                  <span className="text-[#59524A] font-medium">{brandName}</span>
+                </div>
+              </div>
+            </a>
+          );
+        })}
+      </div>
+    </div>
+  ) : null;
+
+  const renderActorSection = (itemOffset: number) => displayedActors.length > 0 ? (
+    <div id="autocomplete-actors-section">
+      <div className="px-3.5 pt-2 pb-1 text-[11px] font-sans-clean font-semibold uppercase tracking-wider text-[#736B63] bg-[#FAF7F2]/80 sticky top-0 z-10 border-b border-[#EFE8DD]">
+        Actors
+      </div>
+      <div>
+        {displayedActors.map((actor, idx) => {
+          const itemIndex = itemOffset + idx;
+          const isSelected = selectedIndex === itemIndex;
+          const count = actor.movieCount;
+          const path = getActorPath(actor.tmdbPersonId, actor.slug);
+
+          return (
+            <a
+              key={`actor-${actor.slug}`}
+              href={path}
+              role="option"
+              aria-selected={isSelected}
+              id={`autocomplete-actor-${actor.slug}`}
+              onClick={(e) => {
+                e.preventDefault();
+                handleSelectItem({ type: 'actor', actor, movieCount: count });
+              }}
+              onMouseEnter={() => setSelectedIndex(itemIndex)}
+              className={`flex items-center gap-3 px-3.5 py-2 transition-colors cursor-pointer text-inherit no-underline ${
+                isSelected ? 'bg-[#F2ECE3]' : 'hover:bg-[#F8F4EE]'
+              }`}
+            >
+              <ActorProfileThumbnail actor={actor} />
+              <div className="min-w-0 flex-1">
+                <div className="font-heading text-sm font-semibold text-[#1A3D2F] line-clamp-1 leading-snug">
+                  {highlightMatch(actor.name, searchQuery)}
+                </div>
+                <div className="text-xs text-[#841818] font-body mt-0.5">
+                  {count} {count === 1 ? 'Christmas movie' : 'Christmas movies'}
+                </div>
+              </div>
+            </a>
+          );
+        })}
+      </div>
+    </div>
+  ) : null;
+
   return (
     <div ref={containerRef} className="max-w-md mx-auto relative w-full">
       {/* Search Input Field */}
@@ -338,99 +436,7 @@ export const SearchAutocomplete: React.FC<SearchAutocompleteProps> = ({
             </div>
           ) : (
             <div className="py-1 divide-y divide-[#EFE8DD]">
-              {/* MOVIES SECTION */}
-              {displayedMovies.length > 0 && (
-                <div id="autocomplete-movies-section">
-                  <div className="px-3.5 pt-2 pb-1 text-[11px] font-sans-clean font-semibold uppercase tracking-wider text-[#736B63] bg-[#FAF7F2]/80 sticky top-0 z-10 border-b border-[#EFE8DD]">
-                    Movies
-                  </div>
-                  <div>
-                    {displayedMovies.map((movie, idx) => {
-                      const itemIndex = idx;
-                      const isSelected = selectedIndex === itemIndex;
-                      const brand = getBrandById(movie.brandId);
-                      const brandName = brand ? brand.shortName : movie.brandId.toUpperCase();
-                      const path = getMoviePath(movie.tmdbId, movie.slug);
-
-                      return (
-                        <a
-                          key={`movie-${movie.id}`}
-                          href={path}
-                          role="option"
-                          aria-selected={isSelected}
-                          id={`autocomplete-movie-${movie.slug}`}
-                          onClick={(e) => {
-                            e.preventDefault();
-                            handleSelectItem({ type: 'movie', movie });
-                          }}
-                          onMouseEnter={() => setSelectedIndex(itemIndex)}
-                          className={`flex items-center gap-3 px-3.5 py-2 transition-colors cursor-pointer text-inherit no-underline ${
-                            isSelected ? 'bg-[#F2ECE3]' : 'hover:bg-[#F8F4EE]'
-                          }`}
-                        >
-                          <MoviePosterThumbnail movie={movie} brandName={brandName} />
-                          <div className="min-w-0 flex-1">
-                            <div className="font-heading text-sm font-semibold text-[#1A3D2F] line-clamp-1 leading-snug">
-                              {highlightMatch(movie.title, searchQuery)}
-                            </div>
-                            <div className="text-xs text-[#736B63] font-body mt-0.5 flex items-center gap-1">
-                              <span>{movie.year}</span>
-                              <span className="text-[#C4BCB1]">·</span>
-                              <span className="text-[#59524A] font-medium">{brandName}</span>
-                            </div>
-                          </div>
-                        </a>
-                      );
-                    })}
-                  </div>
-                </div>
-              )}
-
-              {/* ACTORS SECTION */}
-              {displayedActors.length > 0 && (
-                <div id="autocomplete-actors-section">
-                  <div className="px-3.5 pt-2 pb-1 text-[11px] font-sans-clean font-semibold uppercase tracking-wider text-[#736B63] bg-[#FAF7F2]/80 sticky top-0 z-10 border-b border-[#EFE8DD]">
-                    Actors
-                  </div>
-                  <div>
-                    {displayedActors.map((actor, idx) => {
-                      const itemIndex = displayedMovies.length + idx;
-                      const isSelected = selectedIndex === itemIndex;
-                      const count = actor.movieCount;
-                      const movieCountText = `${count} ${count === 1 ? 'Christmas movie' : 'Christmas movies'}`;
-                      const path = getActorPath(actor.tmdbPersonId, actor.slug);
-
-                      return (
-                        <a
-                          key={`actor-${actor.slug}`}
-                          href={path}
-                          role="option"
-                          aria-selected={isSelected}
-                          id={`autocomplete-actor-${actor.slug}`}
-                          onClick={(e) => {
-                            e.preventDefault();
-                            handleSelectItem({ type: 'actor', actor, movieCount: count });
-                          }}
-                          onMouseEnter={() => setSelectedIndex(itemIndex)}
-                          className={`flex items-center gap-3 px-3.5 py-2 transition-colors cursor-pointer text-inherit no-underline ${
-                            isSelected ? 'bg-[#F2ECE3]' : 'hover:bg-[#F8F4EE]'
-                          }`}
-                        >
-                          <ActorProfileThumbnail actor={actor} />
-                          <div className="min-w-0 flex-1">
-                            <div className="font-heading text-sm font-semibold text-[#1A3D2F] line-clamp-1 leading-snug">
-                              {highlightMatch(actor.name, searchQuery)}
-                            </div>
-                            <div className="text-xs text-[#841818] font-body mt-0.5">
-                              {movieCountText}
-                            </div>
-                          </div>
-                        </a>
-                      );
-                    })}
-                  </div>
-                </div>
-              )}
+              {actorsFirst ? <>{renderActorSection(0)}{renderMovieSection(displayedActors.length)}</> : <>{renderMovieSection(0)}{renderActorSection(displayedMovies.length)}</>}
 
               {/* VIEW ALL RESULTS OPTION (if additional results exist) */}
               {hasAdditionalResults && (

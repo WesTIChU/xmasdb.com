@@ -56,12 +56,18 @@ export interface PopularActorsGroup {
   actors: PopularActorEntry[];
 }
 
+export interface ArchiveYearEntry {
+  year: number;
+  movieCount: number;
+}
+
 /** Homepage payload: only what the visible sections need. */
 export interface HomePayload {
   totalMovies: number;
   comingSoon: ListingMovie[];
   discovery: ListingMovie[];
   popularActors: PopularActorsGroup[];
+  archiveYears: ArchiveYearEntry[];
 }
 
 export interface AboutActorEntry {
@@ -110,6 +116,7 @@ export interface SearchMovieEntry {
   year: number;
   brandId: string;
   posterUrl: string;
+  originalTitle?: string;
   /** Lowercased searchable text (cast names) used for autocomplete matching. */
   terms: string;
 }

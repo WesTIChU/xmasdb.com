@@ -62,6 +62,7 @@ import {
   updateSeoTags,
 } from './utils/seo';
 import { buildCatalogueUrl, parseCatalogueQuery } from './utils/catalogue-pagination';
+import { scoreActorSearchResult, scoreListingMovieTitle } from './utils/search-relevance';
 
 /**
  * Route identity only — no catalogue data. Data is resolved separately from the
@@ -235,7 +236,7 @@ export default function App() {
     const cached = peekResolved<unknown>(requestUrl);
     return cached !== undefined && isRoutePayloadValid(descriptor, cached)
       ? { url: requestUrl, status: 'ready', payload: cached }
-      : { url: requestUrl, status: cached === undefined ? 'loading' : 'error', payload: undefined };
+      : { url: requestUrl, status: 'loading', payload: undefined };
   });
 
   useEffect(() => {
@@ -245,11 +246,11 @@ export default function App() {
     }
 
     const cached = peekResolved<unknown>(requestUrl);
-    if (cached !== undefined) {
+    if (cached !== undefined && isRoutePayloadValid(descriptor, cached)) {
       setView({
         url: requestUrl,
-        status: isRoutePayloadValid(descriptor, cached) ? 'ready' : 'error',
-        payload: isRoutePayloadValid(descriptor, cached) ? cached : undefined,
+        status: 'ready',
+        payload: cached,
       });
       return;
     }
@@ -403,6 +404,42 @@ export default function App() {
     navigate(tmdbId ? getMoviePath(tmdbId, slug) : `/movie/${slug}/`);
   };
 
+  const searchActorsFirst = Boolean(
+    searchResults?.actors.length
+      && (!searchResults.movies.length
+        || scoreActorSearchResult(searchResults.actors[0], searchQuery) > scoreListingMovieTitle(searchResults.movies[0], searchQuery))
+  );
+  const actorSearchSection = searchResults && searchResults.actors.length > 0 ? (
+    <div className="mb-8 p-4 rounded-lg bg-[#F5EFE6] border border-[#DDD4C6]">
+      <h3 className="text-sm font-heading font-semibold text-[#1A3D2F] uppercase tracking-wider mb-2">Actors</h3>
+      <div className="flex flex-wrap gap-2">
+        {searchResults.actors.map((actor) => (
+          <a
+            key={actor.slug}
+            href={getActorPath(actor.tmdbPersonId, actor.slug)}
+            onClick={(e) => {
+              e.preventDefault();
+              navigate(getActorPath(actor.tmdbPersonId, actor.slug));
+            }}
+            className="cursor-pointer px-3 py-1 rounded bg-[#FFFDF9] hover:bg-[#FAF7F2] text-[#841818] font-body text-sm border border-[#DCD3C7] transition-colors"
+          >
+            {actor.name}
+          </a>
+        ))}
+      </div>
+    </div>
+  ) : null;
+  const movieSearchSection = searchResults ? (
+    <section aria-labelledby="search-movies-heading" className="mb-8">
+      <h3 id="search-movies-heading" className="mb-2 text-sm font-heading font-semibold text-[#1A3D2F] uppercase tracking-wider">Movies</h3>
+      <MovieGrid
+        movies={searchResults.movies}
+        onSelectMovie={selectMovie}
+        emptyMessage={`No movies found matching "${searchQuery}".`}
+      />
+    </section>
+  ) : null;
+
   return (
     <div className="min-h-screen flex flex-col bg-[#FAF7F2] text-[#23211E] relative">
       <SnowEffect />
@@ -435,36 +472,7 @@ export default function App() {
               </p>
             </div>
 
-            {searchResults && searchResults.actors.length > 0 && (
-              <div className="mb-8 p-4 rounded-lg bg-[#F5EFE6] border border-[#DDD4C6]">
-                <h3 className="text-sm font-heading font-semibold text-[#1A3D2F] uppercase tracking-wider mb-2">
-                  Actors
-                </h3>
-                <div className="flex flex-wrap gap-2">
-                  {searchResults.actors.map((actor) => (
-                    <a
-                      key={actor.slug}
-                      href={getActorPath(actor.tmdbPersonId, actor.slug)}
-                      onClick={(e) => {
-                        e.preventDefault();
-                        navigate(getActorPath(actor.tmdbPersonId, actor.slug));
-                      }}
-                      className="cursor-pointer px-3 py-1 rounded bg-[#FFFDF9] hover:bg-[#FAF7F2] text-[#841818] font-body text-sm border border-[#DCD3C7] transition-colors"
-                    >
-                      {actor.name}
-                    </a>
-                  ))}
-                </div>
-              </div>
-            )}
-
-            {searchResults && (
-              <MovieGrid
-                movies={searchResults.movies}
-                onSelectMovie={selectMovie}
-                emptyMessage={`No movies found matching "${searchQuery}".`}
-              />
-            )}
+            {searchActorsFirst ? <>{actorSearchSection}{movieSearchSection}</> : <>{movieSearchSection}{actorSearchSection}</>}
           </div>
         ) : currentViewStatus === 'loading' ? (
           <div className="py-24 text-center text-[#736B63] font-body" aria-live="polite">

@@ -48,6 +48,7 @@ export function isHomePayload(value: unknown): value is HomePayload {
     && Array.isArray(value.comingSoon)
     && Array.isArray(value.discovery)
     && Array.isArray(value.popularActors)
+    && Array.isArray(value.archiveYears)
     && value.popularActors.every((group) => isRecord(group) && Array.isArray(group.actors));
 }
 
