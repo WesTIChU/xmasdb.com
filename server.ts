@@ -290,9 +290,10 @@ async function startServer() {
 
   const sendJson = (res: express.Response, payload: unknown, status = 200) => {
     res.status(status).setHeader('Content-Type', 'application/json; charset=utf-8');
-    // Catalogue data can be re-seeded without a frontend rebuild, so allow the
-    // browser to reuse responses briefly while revalidating in the background.
-    res.setHeader('Cache-Control', 'public, max-age=300, stale-while-revalidate=86400');
+    // Catalogue data can be re-seeded without a frontend rebuild. Cached JSON
+    // must revalidate before use so a refreshed poster cannot remain stale on a
+    // query-specific route such as /api/catalogue?brand=hallmark.
+    res.setHeader('Cache-Control', 'public, max-age=0, must-revalidate');
     res.send(JSON.stringify(payload));
   };
 

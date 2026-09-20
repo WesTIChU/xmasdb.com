@@ -4,7 +4,8 @@ import { getActorBackdrop } from '../src/utils/backdrops';
 import { getPopulatedBrands } from '../src/data/brands';
 import { getRadarrAllFeedJson, getRadarrNetworkFeedJson, getSitemapXml, isMovieEligibleForRadarr } from '../src/utils/feeds';
 import { buildCatalogueUrl, getCataloguePage, parseCatalogueQuery } from '../src/utils/catalogue-pagination';
-import { selectDiscoverMovies } from '../src/server/catalogue-api';
+import { buildCatalogueListing, selectDiscoverMovies } from '../src/server/catalogue-api';
+import { getMoviePoster } from '../src/utils/posters';
 
 console.log('Running catalogue pagination and local backdrop tests...');
 
@@ -47,6 +48,35 @@ assert.ok(filtered.movies.every((movie) => movie.brandId === 'hallmark' && movie
 assert.strictEqual(buildCatalogueUrl('/movies/', '?brand=hallmark&perPage=48&page=4', { page: 2 }, false), '/movies/?brand=hallmark&perPage=48&page=2');
 assert.strictEqual(parseCatalogueQuery('?page=abc&perPage=50000').page, 1);
 assert.strictEqual(parseCatalogueQuery('?page=abc&perPage=50000').perPage, 24);
+
+const routeArtworkCases: Array<{ brand: string; title?: string; movie?: typeof MOVIES[number] }> = [
+  { brand: 'hallmark', title: 'Double Booked for the Holidays' },
+  { brand: 'lifetime', movie: MOVIES.find((movie) => movie.brandId === 'lifetime') },
+  { brand: 'gaf', movie: MOVIES.find((movie) => movie.brandId === 'gaf') },
+];
+for (const routeCase of routeArtworkCases) {
+  const movie = routeCase.movie || MOVIES.find((candidate) => candidate.title === routeCase.title);
+  assert.ok(movie, `${routeCase.brand} artwork fixture should exist`);
+  const search = `?search=${encodeURIComponent(movie!.title)}`;
+  const allListing = buildCatalogueListing(parseCatalogueQuery(search), undefined);
+  const brandListing = buildCatalogueListing(parseCatalogueQuery(`${search}&brand=${routeCase.brand}`), routeCase.brand);
+  const yearListing = buildCatalogueListing(parseCatalogueQuery(search), undefined, movie!.year);
+  const allMovie = allListing?.movies.find((candidate) => candidate.tmdbId === movie!.tmdbId);
+  const brandMovie = brandListing?.movies.find((candidate) => candidate.tmdbId === movie!.tmdbId);
+  const yearMovie = yearListing?.movies.find((candidate) => candidate.tmdbId === movie!.tmdbId);
+  assert.ok(allMovie, `${routeCase.brand} movie should be present on /movies/`);
+  assert.ok(brandMovie, `${routeCase.brand} movie should be present on /${routeCase.brand}/`);
+  assert.ok(yearMovie, `${routeCase.brand} movie should be present in its year archive`);
+  assert.strictEqual(brandMovie!.posterUrl, allMovie!.posterUrl, `${routeCase.brand} routes must share canonical artwork`);
+  assert.strictEqual(yearMovie!.posterUrl, allMovie!.posterUrl, `${routeCase.brand} year archive must share canonical artwork`);
+}
+
+const refreshedArtwork = { ...MOVIES[0], posterUrl: '/images/posters/fixture-a1b2c3d4.jpg' };
+assert.strictEqual(getMoviePoster(refreshedArtwork), refreshedArtwork.posterUrl, 'cache-busted local poster paths must be respected');
+const comingSoonWithArtwork = { ...MOVIES.find((movie) => movie.status === 'coming-soon')!, posterUrl: '/images/posters/coming-soon-refreshed.jpg' };
+const comingSoonWithoutArtwork = { ...comingSoonWithArtwork, posterUrl: '' };
+assert.strictEqual(getMoviePoster(comingSoonWithArtwork), comingSoonWithArtwork.posterUrl, 'Coming Soon movies with artwork use the real poster');
+assert.strictEqual(getMoviePoster(comingSoonWithoutArtwork), null, 'Coming Soon movies without artwork use the placeholder');
 
 const nikkiMovies = MOVIES.filter((movie) => movie.cast.some((cast) => cast.tmdbPersonId === 59750));
 const paulMovies = MOVIES.filter((movie) => movie.cast.some((cast) => cast.tmdbPersonId === 62909));
