@@ -1,7 +1,7 @@
 import { getActorBySlug, getActorByTmdbId } from '../data/actors';
 import { getMovieBySlug, getMovieByTmdbId } from '../data/movies';
 import { getBrandBySlug } from '../data/brands';
-import { buildActorDetail, buildCatalogueListing, buildCatalogueMeta, buildMovieDetail } from './catalogue-api';
+import { buildAboutPayload, buildActorDetail, buildCatalogueListing, buildCatalogueMeta, buildFeedsMeta, buildHomePayload, buildMovieDetail } from './catalogue-api';
 import { getBrandById } from '../data/brands';
 import { parseCatalogueQuery } from '../utils/catalogue-pagination';
 import { buildAboutSeo, buildActorSeo, buildBrandSeo, buildContactSeo, buildFeedsSeo, buildHomeSeo, buildMoviesSeo, buildMovieSeo, buildNotFoundSeo, buildPrivacySeo, buildYearSeo, type SeoDocument } from '../utils/seo';
@@ -147,11 +147,14 @@ function renderActorContent(pathname: string): string {
   return `<main id="server-rendered-content"><article><h1>${escapeHtml(actor.name)}</h1>${actor.biography ? `<p>${renderText(actor.biography)}</p>` : ''}<dl>${facts}</dl><h2>Christmas movie filmography</h2><ul>${movies}</ul></article></main>`;
 }
 
-export function renderServerContent(pathname: string): string {
-  return renderActorContent(pathname) || renderMovieContent(pathname);
+function withQueryValues(search: string, values: Record<string, string>): string {
+  const params = new URLSearchParams(search);
+  Object.entries(values).forEach(([key, value]) => params.set(key, value));
+  const query = params.toString();
+  return query ? `?${query}` : '';
 }
 
-function getServerRouteBootstrap(pathname: string): { url: string; payload: unknown } | null {
+function getServerRouteBootstrap(pathname: string, search = ''): { url: string; payload: unknown } | null {
   const clean = routePath(pathname);
   const actorMatch = clean.match(/^actor\/([^/]+)(?:\/([^/]+))?$/i);
   if (actorMatch) {
@@ -163,7 +166,48 @@ function getServerRouteBootstrap(pathname: string): { url: string; payload: unkn
     const payload = buildMovieDetail(movieMatch[1], movieMatch[2]);
     if (payload) return { url: `/api/movie/${movieMatch[1]}${movieMatch[2] ? `/${movieMatch[2]}` : ''}`, payload };
   }
+  if (!clean) return { url: '/api/home', payload: buildHomePayload() };
+  if (clean === 'movies' || clean === 'all') return { url: `/api/catalogue${search}`, payload: buildCatalogueListing(parseCatalogueQuery(search)) };
+  const yearMatch = clean.match(/^year\/(\d+)$/i);
+  if (yearMatch) {
+    const query = withQueryValues(search, { year: yearMatch[1] });
+    return { url: `/api/catalogue${query}`, payload: buildCatalogueListing(parseCatalogueQuery(query), undefined, Number(yearMatch[1])) };
+  }
+  const brandMatch = clean.match(/^([^/]+)(?:\/(\d+))?$/i);
+  if (brandMatch && getBrandBySlug(brandMatch[1])) {
+    const values: Record<string, string> = { brand: brandMatch[1] };
+    if (brandMatch[2]) values.year = brandMatch[2];
+    const query = withQueryValues(search, values);
+    return { url: `/api/catalogue${query}`, payload: buildCatalogueListing(parseCatalogueQuery(query), brandMatch[1], brandMatch[2] ? Number(brandMatch[2]) : undefined) };
+  }
+  if (clean === 'feeds') return { url: '/api/feeds/meta', payload: buildFeedsMeta() };
+  if (clean === 'about') return { url: '/api/about', payload: buildAboutPayload() };
+  if (clean === 'privacy') return { url: '/api/privacy', payload: {} };
   return null;
+}
+
+function renderListingContent(pathname: string, payload: unknown): string {
+  if (!payload || typeof payload !== 'object' || !('movies' in payload) || !Array.isArray(payload.movies)) return '';
+  const data = payload as { movies: Array<{ title: string; year: number; slug: string; tmdbId: number }>; brand?: { name: string }; total?: number };
+  const clean = routePath(pathname);
+  const title = data.brand?.name || (clean.startsWith('year/') ? `Christmas Movies from ${clean.slice(5)}` : clean === 'movies' || clean === 'all' ? 'All Christmas Movies' : 'Christmas Movies');
+  const movies = data.movies.slice(0, 24).map((movie) => `<li><a href="${escapeHtml(getMoviePath(movie.tmdbId, movie.slug))}">${escapeHtml(movie.title)}</a> (${movie.year})</li>`).join('');
+  return `<main id="server-rendered-content"><article><h1>${escapeHtml(title)}</h1><p>${data.total || 0} Christmas movies in the catalogue.</p><ul>${movies}</ul></article></main>`;
+}
+
+function renderRouteContent(pathname: string, payload: unknown): string {
+  const clean = routePath(pathname);
+  if (!clean) return '<main id="server-rendered-content"><article><h1>Christmas Movie Database</h1><p>Browse Christmas movies, actors and holiday filmographies from Hallmark, Lifetime and GAF.</p></article></main>';
+  if (clean === 'movies' || clean === 'all' || /^year\/\d+$/i.test(clean) || getBrandBySlug(clean.split('/')[0])) return renderListingContent(pathname, payload);
+  if (clean === 'feeds') return '<main id="server-rendered-content"><article><h1>Christmas Movie Feeds</h1><p>Use XmasDB Radarr and JSON feeds to browse Christmas movies by network, year and actor.</p><h2>Available feeds</h2><ul><li>All movies</li><li>Hallmark, Lifetime and GAF networks</li><li>Year and actor feeds</li></ul></article></main>';
+  if (clean === 'about') return '<main id="server-rendered-content"><article><h1>Why I Built the Christmas Movie Database</h1><p>XmasDB is a curated Christmas movie database covering holiday films, networks and actors.</p></article></main>';
+  if (clean === 'privacy') return '<main id="server-rendered-content"><article><h1>Privacy &amp; AI</h1><p>XmasDB explains how this site handles privacy, analytics and AI-assisted catalogue work.</p></article></main>';
+  if (clean === 'contact') return '<main id="server-rendered-content"><article><h1>Contact XmasDB</h1><p>Send questions, corrections and Christmas movie catalogue suggestions to XmasDB.</p></article></main>';
+  return '';
+}
+
+export function renderServerContent(pathname: string): string {
+  return renderActorContent(pathname) || renderMovieContent(pathname);
 }
 
 function renderMeta(name: string, content: string, property = false): string {
@@ -196,8 +240,8 @@ export function injectSeoIntoHtml(html: string, seo: SeoDocument): string {
 }
 
 export function renderServerHtml(indexHtml: string, pathname: string, search = ''): string {
-  const routeBootstrap = getServerRouteBootstrap(pathname);
-  const content = renderServerContent(pathname);
+  const routeBootstrap = getServerRouteBootstrap(pathname, search);
+  const content = renderServerContent(pathname) || renderRouteContent(pathname, routeBootstrap?.payload);
   const html = content ? indexHtml.replace('<div id="root"></div>', `<div id="root">${content}</div>`) : indexHtml;
   const bootstrap = routeBootstrap
     ? `<script>window.__XMASDB_ROUTE__=${JSON.stringify(routeBootstrap).replace(/</g, '\\u003c')};</script>`

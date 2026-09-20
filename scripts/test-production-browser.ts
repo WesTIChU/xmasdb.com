@@ -7,6 +7,17 @@ import path from 'node:path';
 const port = 3150;
 const marionettePort = 2828;
 const routes = [
+  { path: '/', text: 'Discover Christmas Movies' },
+  { path: '/movies/', text: 'All Christmas Movies' },
+  { path: '/hallmark/', text: 'Hallmark Christmas Movies' },
+  { path: '/lifetime/', text: 'Lifetime Christmas Movies' },
+  { path: '/gaf/', text: 'GAF Christmas Movies' },
+  { path: '/hallmark/2025/', text: 'Hallmark Christmas Movies' },
+  { path: '/feeds/', text: 'Christmas Movie Radarr & JSON Feeds' },
+  { path: '/about/', text: 'Why XmasDB Exists' },
+  { path: '/privacy/', text: 'PRIVACY & AI' },
+  { path: '/contact/', text: 'CONTACT XMASDB' },
+  { path: '/year/2025/', text: 'Christmas Movies of 2025' },
   { path: '/movie/1773035/snow-globe-town/', text: 'Snow Globe Town' },
   { path: '/actor/65220/danica-mckellar/', text: 'Danica McKellar' },
 ] as const;
@@ -92,12 +103,13 @@ async function main(): Promise<void> {
       await wait(1500);
       const result = await command(iterator, socket, pending, 3, 'WebDriver:ExecuteScript', {
         sessionId,
-        script: 'return { text: document.body.innerText, resources: performance.getEntriesByType("resource").map((entry) => entry.name) };',
+        script: 'return { text: document.body.innerText, title: document.title, canonical: document.querySelector("link[rel=canonical]")?.getAttribute("href"), robots: document.querySelector("meta[name=robots]")?.getAttribute("content"), links: document.querySelectorAll("a[href]").length, resources: performance.getEntriesByType("resource").map((entry) => entry.name) };',
         args: [],
       });
-      const value = result[3]?.value as { text?: string; resources?: string[] } | undefined;
+      const value = result[3]?.value as { text?: string; title?: string; canonical?: string; robots?: string; links?: number; resources?: string[] } | undefined;
       if (!value?.text?.includes(route.text)) throw new Error(`${route.path} did not render ${route.text}.`);
       if (value.text.includes('Something went wrong loading this page.')) throw new Error(`${route.path} rendered the generic error state.`);
+      if (!value.title || !value.canonical || value.robots !== 'index,follow' || !value.links) throw new Error(`${route.path} did not produce complete indexable page metadata.`);
       if (value.resources?.some((resource) => resource.includes(`/api/${route.path.split('/')[1]}/`))) throw new Error(`${route.path} unexpectedly fetched its entity API after bootstrapping.`);
     }
     await command(iterator, socket, pending, 4, 'WebDriver:DeleteSession', { sessionId });
