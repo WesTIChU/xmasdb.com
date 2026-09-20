@@ -4,7 +4,7 @@ import compression from 'compression';
 import path from 'path';
 import fs from 'fs';
 import { createServer as createViteServer } from 'vite';
-import { getMovieByTmdbId, getMovieBySlug, getMovieByTmdbIdAndSlug } from './src/data/movies';
+import { MOVIES, getMovieByTmdbId, getMovieBySlug, getMovieByTmdbIdAndSlug } from './src/data/movies';
 import { getActorByTmdbId, getActorBySlug } from './src/data/actors';
 import { getBrandBySlug } from './src/data/brands';
 import {
@@ -32,13 +32,16 @@ import {
   buildFeedsMeta,
 } from './src/server/catalogue-api';
 import { ContactRateLimiter, ensureContactStorage, getContactDataDir, readContactSubmissions, storeContactSubmission, updateContactSubmissions, validateContactSubmission } from './src/server/contact';
-import { ADMIN_SESSION_COOKIE, AdminAuth, AdminLoginRateLimiter, clearCookieOptions, cookieOptions, isSameOriginMutation } from './src/server/admin-auth';
+import { ADMIN_SESSION_COOKIE, AdminAuth, AdminLoginRateLimiter, AdminMutationRateLimiter, clearCookieOptions, cookieOptions, isSameOriginMutation } from './src/server/admin-auth';
+import { commitMoviesToGitHub, isGitHubConfigured, readGitHubBranch } from './src/server/github-catalogue';
+import { buildMovieFromTmdb, normalizeBrand, normalizeStatus, parseBulkMovieInput } from './src/server/movie-import';
+import { fetchTmdbMovie, requireTmdbApiKey } from './src/utils/tmdb';
 import { getCanonicalRedirect, getRobotsTxt, getServerSeo, injectSeoIntoHtml } from './src/server/seo';
 
 function isKnownPagePath(rawPath: string): boolean {
   const clean = rawPath.replace(/^\/+|\/+$/g, '');
   if (!clean || clean === 'movies' || clean === 'all' || clean === 'feeds' || clean === 'about' || clean === 'privacy' || clean === 'contact') return true;
-  if (clean === 'admin/login' || clean === 'admin/submissions') return true;
+  if (clean === 'admin/login' || clean === 'admin/submissions' || clean === 'admin/movies/add') return true;
   if (/^year\/\d+$/i.test(clean)) return true;
 
   const movie = clean.match(/^movie\/(.+)$/i);
@@ -81,6 +84,19 @@ function getCookieValue(req: express.Request, name: string): string | undefined 
   }
 }
 
+async function mapWithConcurrency<T, R>(items: T[], limit: number, worker: (item: T) => Promise<R>): Promise<R[]> {
+  const results: R[] = new Array(items.length);
+  let next = 0;
+  const run = async () => {
+    while (next < items.length) {
+      const index = next++;
+      results[index] = await worker(items[index]);
+    }
+  };
+  await Promise.all(Array.from({ length: Math.min(limit, items.length) }, run));
+  return results;
+}
+
 async function startServer() {
   const app = express();
   const PORT = Number(process.env.PORT || 3000);
@@ -93,6 +109,7 @@ async function startServer() {
     secret: process.env.XMASDB_SESSION_SECRET,
   });
   const adminLoginRateLimiter = new AdminLoginRateLimiter();
+  const adminMutationRateLimiter = new AdminMutationRateLimiter();
   if (!adminAuth.isConfigured()) console.warn('Admin authentication is unavailable: XMASDB_ADMIN_PASSWORD and XMASDB_SESSION_SECRET are required.');
   const isProduction = process.env.NODE_ENV === 'production';
   const requireAdmin = (req: express.Request, res: express.Response, next: express.NextFunction) => {
@@ -384,6 +401,80 @@ async function startServer() {
       return found ? res.status(204).end() : res.status(404).json({ error: 'Submission not found.' });
     } catch {
       return res.status(500).json({ error: 'Submission could not be deleted safely.' });
+    }
+  });
+
+  app.post('/api/admin/movies/preview', requireAdmin, requireSameOrigin, express.json({ limit: '16kb' }), async (req, res) => {
+    try {
+      if (!isGitHubConfigured()) return res.status(503).json({ error: 'GitHub catalogue integration is not configured.' });
+      const mode = req.body?.mode === 'single' ? 'single' : req.body?.mode === 'bulk' ? 'bulk' : null;
+      const defaultBrand = typeof req.body?.defaultBrand === 'string' ? req.body.defaultBrand : 'hallmark';
+      const defaultStatus = typeof req.body?.defaultStatus === 'string' ? req.body.defaultStatus : 'collection';
+      const source = mode === 'single' ? String(req.body?.input || '') : String(req.body?.input || '');
+      const parsed = parseBulkMovieInput(source, defaultBrand, defaultStatus, 50);
+      if (parsed.error) return res.status(400).json({ error: parsed.error });
+      const github = await readGitHubBranch();
+      const validItems = parsed.items.filter((item) => item.tmdbId && !item.error);
+      const apiKey = requireTmdbApiKey();
+      const previews = await mapWithConcurrency(validItems, 3, async (item) => {
+        const existing = MOVIES.find((movie) => movie.tmdbId === item.tmdbId) || github.movies.find((movie) => movie.tmdbId === item.tmdbId);
+        if (existing) return { ...item, state: 'existing', title: existing.title, existingBrand: existing.brandId, existingStatus: existing.status || (existing.isComingSoon ? 'coming-soon' : 'collection') };
+        const metadata = await fetchTmdbMovie(item.tmdbId!, apiKey);
+        if (!metadata) return { ...item, state: 'not-found' };
+        return {
+          ...item,
+          state: 'ready',
+          title: metadata.title || metadata.originalTitle || `TMDB movie ${item.tmdbId}`,
+          originalTitle: metadata.originalTitle,
+          year: metadata.releaseDate?.slice(0, 4),
+          releaseDate: metadata.releaseDate,
+          imdbId: metadata.imdbId,
+          runtimeMinutes: metadata.runtimeMinutes,
+          overview: metadata.synopsis,
+          posterUrl: metadata.posterUrl,
+        };
+      });
+      const invalid = parsed.items.filter((item) => item.error);
+      return res.json({ baseSha: github.commitSha, items: [...invalid.map((item) => ({ ...item, state: 'invalid' })), ...previews] });
+    } catch (error) {
+      console.error(`[Admin Movies Preview] ${error instanceof Error ? error.message : 'request failed'}`);
+      return res.status(400).json({ error: 'Movies could not be previewed. Check the IDs and server configuration.' });
+    }
+  });
+
+  app.post('/api/admin/movies/commit', requireAdmin, requireSameOrigin, express.json({ limit: '16kb' }), async (req, res) => {
+    const ip = req.ip || req.socket.remoteAddress || 'unknown';
+    if (!adminMutationRateLimiter.allow(ip)) return res.status(429).json({ error: 'Too many catalogue changes. Please try again later.' });
+    try {
+      const selected = req.body?.items;
+      const baseSha = typeof req.body?.baseSha === 'string' ? req.body.baseSha : '';
+      if (!Array.isArray(selected) || selected.length === 0 || selected.length > 50 || !baseSha) return res.status(400).json({ error: 'Choose at least one valid movie and preview it again.' });
+      const ids = new Set<number>();
+      const choices = selected.map((item: unknown) => {
+        const value = item as Record<string, unknown>;
+        const tmdbId = Number(value.tmdbId);
+        const brand = typeof value.brand === 'string' ? normalizeBrand(value.brand) : undefined;
+        const status = typeof value.status === 'string' ? normalizeStatus(value.status) : undefined;
+        if (!Number.isInteger(tmdbId) || tmdbId <= 0 || !brand || !status || ids.has(tmdbId)) throw new Error('Invalid movie selection.');
+        ids.add(tmdbId);
+        return { tmdbId, brand, status };
+      });
+      const github = await readGitHubBranch();
+      if (github.commitSha !== baseSha) return res.status(409).json({ error: 'The XmasDB repository changed while you were reviewing these movies. Refresh the preview and try again.' });
+      if (choices.some(({ tmdbId }) => github.movies.some((movie) => movie.tmdbId === tmdbId))) return res.status(409).json({ error: 'One or more selected movies is already in the catalogue. Refresh the preview and try again.' });
+      const apiKey = requireTmdbApiKey();
+      const fetched = await mapWithConcurrency(choices, 3, async (choice) => {
+        const metadata = await fetchTmdbMovie(choice.tmdbId, apiKey);
+        if (!metadata) throw new Error(`TMDB movie ${choice.tmdbId} could not be fetched.`);
+        return buildMovieFromTmdb(choice.tmdbId, metadata, choice.brand, choice.status);
+      });
+      const movies = [...github.movies, ...fetched];
+      if (new Set(movies.map((movie) => movie.tmdbId)).size !== movies.length) throw new Error('The proposed catalogue contains duplicate TMDB IDs.');
+      const commit = await commitMoviesToGitHub(movies, baseSha, fetched.length === 1 ? `Add Christmas movie: ${fetched[0].title}` : `Add ${fetched.length} Christmas movies`);
+      return res.json({ added: fetched.length, commitSha: commit.commitSha, message: 'Added to catalogue. Deployment pending.' });
+    } catch (error) {
+      console.error(`[Admin Movies Commit] ${error instanceof Error ? error.message : 'request failed'}`);
+      return res.status(400).json({ error: error instanceof Error && error.message.startsWith('The XmasDB repository changed') ? error.message : 'Catalogue update failed. No GitHub commit was created.' });
     }
   });
 

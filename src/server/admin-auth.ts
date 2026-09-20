@@ -92,6 +92,21 @@ export class AdminLoginRateLimiter {
   }
 }
 
+export class AdminMutationRateLimiter {
+  private readonly attempts = new Map<string, number[]>();
+
+  allow(ip: string, now = Date.now()): boolean {
+    const recent = (this.attempts.get(ip) || []).filter((timestamp) => now - timestamp < ADMIN_LOGIN_WINDOW_MS);
+    if (recent.length >= ADMIN_LOGIN_LIMIT) {
+      this.attempts.set(ip, recent);
+      return false;
+    }
+    recent.push(now);
+    this.attempts.set(ip, recent);
+    return true;
+  }
+}
+
 export function cookieOptions(isProduction: boolean): string {
   return `Path=/; Max-Age=${ADMIN_SESSION_TTL_MS / 1000}; HttpOnly; SameSite=Lax${isProduction ? '; Secure' : ''}`;
 }

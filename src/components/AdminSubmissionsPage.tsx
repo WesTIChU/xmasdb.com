@@ -123,7 +123,11 @@ export const AdminSubmissionsPage: React.FC<AdminSubmissionsPageProps> = ({ onNa
             <h1 id="admin-submissions-heading" className="font-heading text-2xl font-semibold tracking-wide text-[#1A3D2F] sm:text-3xl">XMASDB SUBMISSIONS</h1>
             <p className="mt-3 font-sans-clean text-xs tracking-wide text-[#736B63]">NEW · {payload.counts.new} &nbsp;&nbsp; RESOLVED · {payload.counts.resolved} &nbsp;&nbsp; TOTAL · {payload.counts.total}</p>
           </div>
-          <button type="button" onClick={() => void logout()} className="text-xs font-semibold tracking-wide text-[#1A3D2F] underline decoration-[#C8BFB3] underline-offset-4 hover:text-[#841818]">LOG OUT</button>
+          <nav className="flex gap-4 text-xs font-semibold tracking-wide" aria-label="Admin navigation">
+            <button type="button" onClick={() => onNavigate('/admin/submissions/')} className="text-[#841818] underline underline-offset-4">SUBMISSIONS</button>
+            <button type="button" onClick={() => onNavigate('/admin/movies/add/')} className="text-[#1A3D2F] underline decoration-[#C8BFB3] underline-offset-4 hover:text-[#841818]">ADD MOVIES</button>
+            <button type="button" onClick={() => void logout()} className="text-[#1A3D2F] underline decoration-[#C8BFB3] underline-offset-4 hover:text-[#841818]">LOG OUT</button>
+          </nav>
         </div>
 
         <div className="flex gap-4 border-b border-[#E7DFD5] py-4 text-sm font-semibold text-[#1A3D2F]" role="group" aria-label="Submission filters">

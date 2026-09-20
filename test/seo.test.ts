@@ -74,6 +74,7 @@ assert.equal(parseRoute('/contact/').type, 'contact');
 assert.equal(parseRoute('/contact').type, 'contact');
 assert.equal(parseRoute('/admin/login/').type, 'admin-login');
 assert.equal(parseRoute('/admin/submissions/').type, 'admin-submissions');
+assert.equal(parseRoute('/admin/movies/add/').type, 'admin-add-movies');
 assert.equal(parseRoute('/this-page-does-not-exist/').type, 'not-found');
 assert.equal(getServerSeo('/admin/login/').noIndex, true);
 assert.equal(getCanonicalRedirect('/admin/submissions'), '/admin/submissions/');

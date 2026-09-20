@@ -34,6 +34,7 @@ export function getServerSeo(pathname: string, search = ''): SeoDocument {
   if (clean === 'contact') return buildContactSeo();
   if (clean === 'admin/login') return { title: 'Admin Login | XmasDB', description: 'Private XmasDB administration.', canonicalPath: '/admin/login/', noIndex: true };
   if (clean === 'admin/submissions') return { title: 'Submissions | XmasDB', description: 'Private XmasDB administration.', canonicalPath: '/admin/submissions/', noIndex: true };
+  if (clean === 'admin/movies/add') return { title: 'Add Movies | XmasDB', description: 'Private XmasDB administration.', canonicalPath: '/admin/movies/add/', noIndex: true };
 
   const yearMatch = clean.match(/^year\/(\d+)$/i);
   if (yearMatch) {
@@ -92,6 +93,7 @@ export function getCanonicalRedirect(pathname: string): string | null {
   if (clean === 'contact') return pathname === '/contact/' ? null : '/contact/';
   if (clean === 'admin/login') return pathname === '/admin/login/' ? null : '/admin/login/';
   if (clean === 'admin/submissions') return pathname === '/admin/submissions/' ? null : '/admin/submissions/';
+  if (clean === 'admin/movies/add') return pathname === '/admin/movies/add/' ? null : '/admin/movies/add/';
   if (/^year\/\d+$/i.test(clean)) return pathname === `/${clean}/` ? null : `/${clean}/`;
   const brandMatch = clean.match(/^([^/]+)(?:\/(\d+))?$/i);
   if (brandMatch && getBrandBySlug(brandMatch[1])) return pathname === `/${clean.toLowerCase()}/` ? null : `/${clean.toLowerCase()}/`;
