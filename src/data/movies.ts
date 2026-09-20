@@ -185867,6 +185867,534 @@ export const MOVIES: Movie[] = [
     "voteAverage": 6,
     "voteCount": 1,
     "tmdbUpdatedAt": "2026-09-20T17:19:29.737Z"
+  },
+  {
+    "id": "lifetime-2025-rodeo-christmas-romance",
+    "slug": "rodeo-christmas-romance",
+    "title": "Rodeo Christmas Romance",
+    "year": 2025,
+    "brandId": "lifetime",
+    "releaseDate": "2025-10-31",
+    "synopsis": "When fiercely independent equestrian Emma finds herself ranch-sitting for a friend while caring for her injured horse over Christmas, she clashes with brooding veteran Noal — only to discover that the magic of the season may be what they need to heal their hearts.",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/mP9JtC1d3gySB7Lqw8lKUYOTNg1.jpg",
+    "backdropUrl": "https://image.tmdb.org/t/p/w1280/vSxmN8c7fLeWq209UfYJNvEiWf8.jpg",
+    "cast": [
+      {
+        "actorId": "1355149",
+        "name": "Rebecca Dalton",
+        "character": "Emma Barrett",
+        "slug": "rebecca-dalton",
+        "tmdbPersonId": 1355149,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/dTsw3WJImhlgsajfzQvkIxqyYD7.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "43265",
+        "name": "Corey Sevier",
+        "character": "Noal Holliday",
+        "slug": "corey-sevier",
+        "tmdbPersonId": 43265,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/wKt1pHZ5Q6kgkmZsNz53lNPzLR3.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "1460685",
+        "name": "Jim Watson",
+        "character": "Bill Holliday",
+        "slug": "jim-watson",
+        "tmdbPersonId": 1460685,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/2ZVVbf2c72OLShp6U4nYAy15kab.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "1472778",
+        "name": "Ann Pirvu",
+        "character": "Kathleen Parks",
+        "slug": "ann-pirvu",
+        "tmdbPersonId": 1472778,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/nYEX6WTw6fgv4hm88I4mMkbOJYt.jpg",
+        "order": 3
+      },
+      {
+        "actorId": "1529984",
+        "name": "Brandon Oakes",
+        "character": "Justin",
+        "slug": "brandon-oakes",
+        "tmdbPersonId": 1529984,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/iiEiwcEaOObQXHoOitU1wstZmMF.jpg",
+        "order": 4
+      },
+      {
+        "actorId": "164433",
+        "name": "Lanette Ware",
+        "character": "Grace Mackenzie",
+        "slug": "lanette-ware",
+        "tmdbPersonId": 164433,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/8nJlQZ1z63fHUrLVxwbLpjPbMlx.jpg",
+        "order": 5
+      },
+      {
+        "actorId": "3170451",
+        "name": "Lindura",
+        "character": "Maya Taylor",
+        "slug": "lindura",
+        "tmdbPersonId": 3170451,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/3aG4ZRA3LNPbQ7DBNDqzYAH57XJ.jpg",
+        "order": 6
+      },
+      {
+        "actorId": "1918876",
+        "name": "Lisa Michelle Cornelius",
+        "character": "Dr. Felicity Miller",
+        "slug": "lisa-michelle-cornelius",
+        "tmdbPersonId": 1918876,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/n3VDmiiZHxvoGgFXicbx8u8IILT.jpg",
+        "order": 7
+      },
+      {
+        "actorId": "20180",
+        "name": "Stephanie Belding",
+        "character": "Dr. Winshaw",
+        "slug": "stephanie-belding",
+        "tmdbPersonId": 20180,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/4WIJ20f0v2EJ6SurBaMA6qecCE5.jpg",
+        "order": 8
+      },
+      {
+        "actorId": "964337",
+        "name": "Nicki Whitely",
+        "character": "Elizabeth",
+        "slug": "nicki-whitely",
+        "tmdbPersonId": 964337,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/dAUMTDmvAPWXFMg8Dm9lU24YINW.jpg",
+        "order": 9
+      }
+    ],
+    "director": "Mike Donis",
+    "tmdbId": 1564004,
+    "imdbId": "tt38271985",
+    "isComingSoon": false,
+    "status": "collection",
+    "originalTitle": "Rodeo Christmas Romance",
+    "runtimeMinutes": 87,
+    "genres": [
+      {
+        "id": 10749,
+        "name": "Romance"
+      },
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "CA",
+        "releaseDate": "2025-10-31T00:00:00.000Z",
+        "type": 1,
+        "certification": "",
+        "note": "Premiered on W Network"
+      },
+      {
+        "country": "US",
+        "releaseDate": "2025-12-13T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "Lifetime"
+      }
+    ],
+    "crew": [
+      {
+        "id": 1569320,
+        "name": "Mike Donis",
+        "job": "Director",
+        "creditId": "68f17de7b81d2ba4fb74f59a"
+      },
+      {
+        "id": 3264705,
+        "name": "Jennifer Snow",
+        "job": "Writer",
+        "creditId": "68f17df0de6c9fd842ec5735"
+      },
+      {
+        "id": 1393825,
+        "name": "Sean Nimmons-Paterson",
+        "job": "Original Music Composer",
+        "creditId": "68f17e0cbb06a999fb77d857"
+      },
+      {
+        "id": 1935319,
+        "name": "Jessica Reis",
+        "job": "Producer",
+        "creditId": "68f17e18f852acba4d590f58"
+      },
+      {
+        "id": 3262554,
+        "name": "Aldo Quirván",
+        "job": "Director of Photography",
+        "creditId": "68f17e1dde6c9fd842ec5738"
+      },
+      {
+        "id": 1883235,
+        "name": "Sebastian Battro",
+        "job": "Executive Producer",
+        "creditId": "6922143449f0ca2869186d0e"
+      },
+      {
+        "id": 2201063,
+        "name": "Claire Benoit",
+        "job": "Executive Producer",
+        "creditId": "6922143c5565466cbf0ba282"
+      },
+      {
+        "id": 2442225,
+        "name": "Stan Hum",
+        "job": "Executive Producer",
+        "creditId": "69221442d459701bd2b740f7"
+      },
+      {
+        "id": 1108734,
+        "name": "Timothy O. Johnson",
+        "job": "Executive Producer",
+        "creditId": "69221449c655a73f687686f0"
+      },
+      {
+        "id": 5762729,
+        "name": "Shannon Minogue",
+        "job": "Executive Producer",
+        "creditId": "69221450fcf14f38aa768749"
+      },
+      {
+        "id": 2117334,
+        "name": "Nataline Rodrigues",
+        "job": "Executive Producer",
+        "creditId": "69221461dd6de3a1a2b741ab"
+      },
+      {
+        "id": 1237896,
+        "name": "Beth Stevenson",
+        "job": "Executive Producer",
+        "creditId": "692214683804047d37b74213"
+      },
+      {
+        "id": 4558429,
+        "name": "Donald Teuma-Castelletti",
+        "job": "Line Producer",
+        "creditId": "6922147166214e55250ba301"
+      },
+      {
+        "id": 2103858,
+        "name": "Nancy Yeaman",
+        "job": "Executive Producer",
+        "creditId": "69221478d1634a93a5a3aeca"
+      },
+      {
+        "id": 3016878,
+        "name": "Peter Durst",
+        "job": "First Assistant Director",
+        "creditId": "692785ec172f2114a7c12195"
+      },
+      {
+        "id": 3014952,
+        "name": "Fiona Isaacson",
+        "job": "Second Assistant Director",
+        "creditId": "692785f3222e5a1e2e371720"
+      },
+      {
+        "id": 5477244,
+        "name": "Anastastiia Parfonova",
+        "job": "Key Makeup Artist",
+        "creditId": "692785fffe92dbc9a7eaa20d"
+      },
+      {
+        "id": 1927361,
+        "name": "Kenda Hoggan",
+        "job": "Costume Design",
+        "creditId": "69278611a63269fd1f30d042"
+      },
+      {
+        "id": 2434486,
+        "name": "Ann Foo",
+        "job": "Editor",
+        "creditId": "6927863947e951ad7ca75b5f"
+      },
+      {
+        "id": 4558457,
+        "name": "Dustin Hitchcock",
+        "job": "Visual Effects Supervisor",
+        "creditId": "6927864c744371e84ba759b4"
+      },
+      {
+        "id": 2063971,
+        "name": "Ed Hannaford",
+        "job": "Gaffer",
+        "creditId": "69278657b4852ca096a759e7"
+      }
+    ],
+    "trailers": [],
+    "voteAverage": 6,
+    "voteCount": 5,
+    "tmdbUpdatedAt": "2026-09-20T17:26:15.560Z"
+  },
+  {
+    "id": "lifetime-2025-a-pickleball-christmas",
+    "slug": "a-pickleball-christmas",
+    "title": "A Pickleball Christmas",
+    "year": 2025,
+    "brandId": "lifetime",
+    "releaseDate": "2025-12-14",
+    "synopsis": "Fresh off the biggest win of his career, tennis star Luke Hollis heads home to Florida for Christmas, only to discover his family’s racquet club is on the verge of being sold. Teaming up with Caroline, the club’s pickleball coach, Luke reluctantly agrees to compete in a high-stakes holiday tournament that could save the club. As sparks fly both on and off the court, Luke realizes the greatest victory might just be love, family, and a new chapter at home.",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/qjOTs9DoeUDFHIeV8W9kavMwQNW.jpg",
+    "backdropUrl": "https://image.tmdb.org/t/p/w1280/7e0uvpPmrXnM28Z3hBybNOToiqm.jpg",
+    "cast": [
+      {
+        "actorId": "98050",
+        "name": "James Lafferty",
+        "character": "Luke Hollis",
+        "slug": "james-lafferty",
+        "tmdbPersonId": 98050,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/lvUyG8wwYPUl8x5byd1g5Y2A0ia.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "204239",
+        "name": "Zibby Allen",
+        "character": "Caroline",
+        "slug": "zibby-allen",
+        "tmdbPersonId": 204239,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/uPvugIWF4tqpt99MXVcnBnw4fRv.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "12055",
+        "name": "John Cassini",
+        "character": "Burt",
+        "slug": "john-cassini",
+        "tmdbPersonId": 12055,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/kn2Rtn0I8ivCR7ydZTY74XUBh1K.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "1942733",
+        "name": "Thomas Darya",
+        "character": "Keith Hoffman",
+        "slug": "thomas-darya",
+        "tmdbPersonId": 1942733,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/goLrGoXK7qGBjY9EHyrxYvLd8ie.jpg",
+        "order": 3
+      },
+      {
+        "actorId": "440439",
+        "name": "Matty Finochio",
+        "character": "Tobey Thicke",
+        "slug": "matty-finochio",
+        "tmdbPersonId": 440439,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/7I2iawz7YHZDbH15V4Om0Tdep9c.jpg",
+        "order": 4
+      },
+      {
+        "actorId": "1079959",
+        "name": "Sari Mercer",
+        "character": "Tinley Grace Thicke",
+        "slug": "sari-mercer",
+        "tmdbPersonId": 1079959,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/5EJIXoaowLLrB5kWjXsEEVo2PLS.jpg",
+        "order": 5
+      },
+      {
+        "actorId": "45428",
+        "name": "April Telek",
+        "character": "Phyllis",
+        "slug": "april-telek",
+        "tmdbPersonId": 45428,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/p9PRP9vAek5rBlX4hcuaV2dKNIv.jpg",
+        "order": 6
+      },
+      {
+        "actorId": "1882561",
+        "name": "Ashley Alexander",
+        "character": "Amy",
+        "slug": "ashley-alexander",
+        "tmdbPersonId": 1882561,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/kyhgNa7ngKRx1FBgbsmildKK1aC.jpg",
+        "order": 7
+      },
+      {
+        "actorId": "227841",
+        "name": "Tess Atkins",
+        "character": "Jordan",
+        "slug": "tess-atkins",
+        "tmdbPersonId": 227841,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/wDTjFSt9p7S9bzGChDVziyUYQwn.jpg",
+        "order": 8
+      },
+      {
+        "actorId": "20188",
+        "name": "Lynda Boyd",
+        "character": "Donna",
+        "slug": "lynda-boyd",
+        "tmdbPersonId": 20188,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/5mPaot3TlnlZBzf9VY0fBYWuJgm.jpg",
+        "order": 9
+      },
+      {
+        "actorId": "1975739",
+        "name": "Mason McKenzie",
+        "character": "Isaac",
+        "slug": "mason-mckenzie",
+        "tmdbPersonId": 1975739,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/m53K5fmai6ieR2J0PxAlEP5jlCm.jpg",
+        "order": 10
+      }
+    ],
+    "director": "Monika Mitchell",
+    "tmdbId": 1567250,
+    "imdbId": "tt38712686",
+    "isComingSoon": false,
+    "status": "collection",
+    "originalTitle": "A Pickleball Christmas",
+    "runtimeMinutes": 88,
+    "genres": [
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      },
+      {
+        "id": 35,
+        "name": "Comedy"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "CA",
+        "releaseDate": "2025-12-14T00:00:00.000Z",
+        "type": 6,
+        "certification": "PG",
+        "note": "CTV Life"
+      },
+      {
+        "country": "US",
+        "releaseDate": "2025-12-20T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": ""
+      }
+    ],
+    "crew": [
+      {
+        "id": 2721469,
+        "name": "Kathleen Fowlstone",
+        "job": "Makeup Department Head",
+        "creditId": "690df3d541b0b93d78a0bc08"
+      },
+      {
+        "id": 1224778,
+        "name": "Monika Mitchell",
+        "job": "Director",
+        "creditId": "690df477583f19f6ae9ab3b0"
+      },
+      {
+        "id": 2713408,
+        "name": "Blake Rutledge",
+        "job": "Writer",
+        "creditId": "690df482c5c5faff3aa0bbf8"
+      },
+      {
+        "id": 1624461,
+        "name": "Navid Soofi",
+        "job": "Producer",
+        "creditId": "690df48a4ad087595b874258"
+      },
+      {
+        "id": 1108734,
+        "name": "Timothy O. Johnson",
+        "job": "Executive Producer",
+        "creditId": "690df4944ef72b612e31a443"
+      },
+      {
+        "id": 2929144,
+        "name": "Selena Taylor",
+        "job": "Hair Department Head",
+        "creditId": "690df49f64907fabe331a4d9"
+      },
+      {
+        "id": 2270614,
+        "name": "Karen Glass",
+        "job": "Executive Producer",
+        "creditId": "694e83b3eec302ec7c2fba4d"
+      },
+      {
+        "id": 1491521,
+        "name": "Oliver De Caigny",
+        "job": "Executive Producer",
+        "creditId": "698e9b1f244ad19c7d370ee9"
+      },
+      {
+        "id": 1883235,
+        "name": "Sebastian Battro",
+        "job": "Executive Producer",
+        "creditId": "698e9b25bb407a52542f2fdb"
+      },
+      {
+        "id": 5762729,
+        "name": "Shannon Minogue",
+        "job": "Executive Producer",
+        "creditId": "698e9b359164ecb38b305a2b"
+      },
+      {
+        "id": 3336275,
+        "name": "Meghan Hooper White",
+        "job": "Executive Producer",
+        "creditId": "698e9b3dade98943dd59131d"
+      },
+      {
+        "id": 2593272,
+        "name": "Devin Taylor",
+        "job": "Editor",
+        "creditId": "698e9b4dd35d3d86bb59137e"
+      },
+      {
+        "id": 1566409,
+        "name": "Mario Vaira",
+        "job": "Music",
+        "creditId": "698e9b520b9992d410b689de"
+      },
+      {
+        "id": 4866679,
+        "name": "Babak Golkar",
+        "job": "Production Design",
+        "creditId": "698e9b5b55ab617415109c68"
+      },
+      {
+        "id": 1676107,
+        "name": "Jeff Croft",
+        "job": "First Assistant Director",
+        "creditId": "698e9b66a894fbf989b68a00"
+      },
+      {
+        "id": 4297616,
+        "name": "Richard Maddock",
+        "job": "Sound Re-Recording Mixer",
+        "creditId": "698e9b727d9107d4655913bf"
+      }
+    ],
+    "trailers": [
+      {
+        "key": "XkTX-MY2lYo",
+        "site": "YouTube",
+        "type": "Teaser",
+        "name": "[Promo] Lifetime Asia •A PICKLEBALL Christmas",
+        "official": false
+      }
+    ],
+    "trailerYoutubeKey": "XkTX-MY2lYo",
+    "voteAverage": 5.25,
+    "voteCount": 4,
+    "tmdbUpdatedAt": "2026-09-20T17:26:15.551Z"
   }
 ];
 
