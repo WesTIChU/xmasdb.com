@@ -30,7 +30,6 @@ export const PopularActorsSection: React.FC<PopularActorsSectionProps> = ({ grou
     <section id="popular-christmas-stars-section" className="py-8 sm:py-10 border-b border-[#E7DFD5]" aria-labelledby="popular-christmas-stars-heading">
       <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-6">
         <div>
-          <p className="font-sans-clean text-xs font-semibold uppercase tracking-[0.18em] text-[#736B63]">The people behind the stories</p>
           <h2 id="popular-christmas-stars-heading" className="mt-1 font-heading text-xl sm:text-2xl font-semibold text-[#1A3D2F]">Popular Christmas Stars</h2>
         </div>
         <div className="flex flex-wrap gap-x-3 gap-y-1 text-sm font-body" role="tablist" aria-label="Popular stars by brand">
