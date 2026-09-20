@@ -22,7 +22,7 @@ export const BRANDS: Brand[] = [
     name: 'GAF Christmas Movies',
     shortName: 'GAF',
     slug: 'gaf',
-    description: 'Great American Family Great American Christmas holiday movie collection.',
+    description: 'Christmas movies from Great American Family.',
     accentColor: '#B8860B',
   },
   {

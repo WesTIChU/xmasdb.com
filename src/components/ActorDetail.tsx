@@ -143,8 +143,10 @@ export const ActorDetail: React.FC<ActorDetailProps> = ({
               </div>
             </div>
 
-            {(actor.imdbPersonId || actor.tmdbPersonId) && (
-              <div id="actor-external-links" className="mt-3 w-full flex items-center gap-2">
+            {(actor.imdbPersonId || actor.tmdbPersonId || actor.instagramId || actor.twitterId || actor.facebookId) && (
+              <div id="actor-external-links" className="mt-3 w-full flex flex-col items-stretch gap-2">
+                {(actor.imdbPersonId || actor.tmdbPersonId) && (
+                  <div className="flex w-full items-center gap-2">
                 {actor.imdbPersonId && (
                   <a href={`https://www.imdb.com/name/${encodeURIComponent(actor.imdbPersonId)}/`} target="_blank" rel="noopener noreferrer" id="actor-imdb-link" className="flex-1 justify-center py-1.5 px-2.5 rounded bg-[#FAF7F2] hover:bg-[#EFE8DD] border border-[#DDD4C6] hover:border-[#1A3D2F] text-[#1A3D2F] text-xs font-sans-clean font-medium inline-flex items-center gap-1.5 transition-colors shadow-2xs group" title={`View ${actor.name} on IMDb`}>
                     <span>IMDb</span><ExternalLink className="w-3 h-3 text-[#1A3D2F] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
@@ -153,12 +155,14 @@ export const ActorDetail: React.FC<ActorDetailProps> = ({
                  {actor.tmdbPersonId && (
                   <a href={`https://www.themoviedb.org/person/${actor.tmdbPersonId}`} target="_blank" rel="noopener noreferrer" id="actor-tmdb-link" className="flex-1 justify-center py-1.5 px-2.5 rounded bg-[#FAF7F2] hover:bg-[#EFE8DD] border border-[#DDD4C6] hover:border-[#1A3D2F] text-[#1A3D2F] text-xs font-sans-clean font-medium inline-flex items-center gap-1.5 transition-colors shadow-2xs group" title={`View ${actor.name} on TMDb`}>
                     <span>TMDb</span><ExternalLink className="w-3 h-3 text-[#1A3D2F] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
-                  </a>
-                 )}
+                   </a>
+                  )}
+                  </div>
+                )}
                 {(actor.instagramId || actor.facebookId || actor.twitterId) && (
-                  <div className="flex items-center gap-2 ml-1">
-                    {actor.instagramId && <a href={`https://www.instagram.com/${encodeURIComponent(actor.instagramId)}/`} target="_blank" rel="noopener noreferrer" className="text-[#1A3D2F] hover:text-[#841818]" aria-label={`${actor.name} on Instagram`}><Instagram className="w-3.5 h-3.5" /></a>}
-                    {actor.twitterId && <a href={`https://twitter.com/${encodeURIComponent(actor.twitterId)}`} target="_blank" rel="noopener noreferrer" className="text-[#1A3D2F] hover:text-[#841818]" aria-label={`${actor.name} on Twitter`}><span className="text-xs font-semibold">X</span></a>}
+                  <div className="flex items-center gap-3">
+                    {actor.instagramId && <a href={`https://www.instagram.com/${encodeURIComponent(actor.instagramId)}/`} target="_blank" rel="noopener noreferrer" className="text-[#1A3D2F] hover:text-[#841818]" aria-label={`${actor.name} on Instagram`}><Instagram className="h-[18px] w-[18px]" /></a>}
+                    {actor.twitterId && <a href={`https://twitter.com/${encodeURIComponent(actor.twitterId)}`} target="_blank" rel="noopener noreferrer" className="text-[#1A3D2F] hover:text-[#841818]" aria-label={`${actor.name} on Twitter`}><span className="text-[18px] font-semibold leading-none">X</span></a>}
                     {actor.facebookId && <a href={`https://www.facebook.com/${encodeURIComponent(actor.facebookId)}`} target="_blank" rel="noopener noreferrer" className="text-[#1A3D2F] hover:text-[#841818]" aria-label={`${actor.name} on Facebook`}><Facebook className="w-3.5 h-3.5" /></a>}
                   </div>
                 )}
