@@ -186395,6 +186395,151 @@ export const MOVIES: Movie[] = [
     "voteAverage": 5.25,
     "voteCount": 4,
     "tmdbUpdatedAt": "2026-09-20T17:26:15.551Z"
+  },
+  {
+    "id": "lifetime-2025-the-christmas-campaign",
+    "slug": "the-christmas-campaign",
+    "title": "The Christmas Campaign",
+    "year": 2025,
+    "brandId": "lifetime",
+    "releaseDate": "2025-11-29",
+    "synopsis": "Sparks fly when an executive and a strategist are paired together to work on a sales pitch. As they battle it out, their personal lives collide with their professional ambitions, and neither expects that the key to success might just be each other.",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/1TQYECLUCoTVQBNrj5UloI78TGj.jpg",
+    "cast": [
+      {
+        "actorId": "3379228",
+        "name": "Chelsea Rose Cook",
+        "character": "Kayleigh Brooks",
+        "slug": "chelsea-rose-cook",
+        "tmdbPersonId": 3379228,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/8p7Y0nz1Gye36xsrIA7bhh4rloJ.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "3205241",
+        "name": "Austen Jaye",
+        "character": "Darren Morgan",
+        "slug": "austen-jaye",
+        "tmdbPersonId": 3205241,
+        "order": 1
+      },
+      {
+        "actorId": "2535",
+        "name": "Vivica A. Fox",
+        "character": "Monique",
+        "slug": "vivica-a-fox",
+        "tmdbPersonId": 2535,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/oIzevp0dqjIxqRQ2VoSzjiDCBt.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "78740",
+        "name": "Jackée Harry",
+        "character": "Denise Brooks",
+        "slug": "jack-e-harry",
+        "tmdbPersonId": 78740,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/h3DpIDfOrIdRx4EPKbuFc5LJzjC.jpg",
+        "order": 3
+      },
+      {
+        "actorId": "4215621",
+        "name": "Yulia Belyaeva",
+        "character": "Jillian",
+        "slug": "yulia-belyaeva",
+        "tmdbPersonId": 4215621,
+        "order": 4
+      },
+      {
+        "actorId": "5753934",
+        "name": "Gregory Couch",
+        "character": "Paul",
+        "slug": "gregory-couch",
+        "tmdbPersonId": 5753934,
+        "order": 5
+      },
+      {
+        "actorId": "4665021",
+        "name": "Daniela Couso",
+        "character": "Laura",
+        "slug": "daniela-couso",
+        "tmdbPersonId": 4665021,
+        "order": 6
+      },
+      {
+        "actorId": "131738",
+        "name": "Michael Gaglio",
+        "character": "Hank",
+        "slug": "michael-gaglio",
+        "tmdbPersonId": 131738,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/BKoAXx5UEOauDxoMAJkgzTcSfy.jpg",
+        "order": 7
+      },
+      {
+        "actorId": "5753938",
+        "name": "Brandon Gillard",
+        "character": "Ray",
+        "slug": "brandon-gillard",
+        "tmdbPersonId": 5753938,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/6NlAJSUwKna1v4qapHVxBJ6aMiX.jpg",
+        "order": 8
+      },
+      {
+        "actorId": "5341281",
+        "name": "Vicente Perdomo",
+        "character": "Jax",
+        "slug": "vicente-perdomo",
+        "tmdbPersonId": 5341281,
+        "order": 9
+      }
+    ],
+    "director": "David DeCoteau",
+    "tmdbId": 874192,
+    "imdbId": "tt38047083",
+    "isComingSoon": false,
+    "status": "collection",
+    "originalTitle": "The Christmas Campaign",
+    "runtimeMinutes": 84,
+    "genres": [
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      },
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "US",
+        "releaseDate": "2025-11-29T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "Lifetime"
+      }
+    ],
+    "crew": [
+      {
+        "id": 97618,
+        "name": "David DeCoteau",
+        "job": "Director",
+        "creditId": "68f178dd6e3ef162605a50ef"
+      },
+      {
+        "id": 551912,
+        "name": "Adam Rockoff",
+        "job": "Writer",
+        "creditId": "68f178e78c5b8a17aab22ef5"
+      }
+    ],
+    "trailers": [],
+    "voteAverage": 6,
+    "voteCount": 1,
+    "tmdbUpdatedAt": "2026-09-20T17:31:15.409Z"
   }
 ];
 
