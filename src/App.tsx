@@ -81,6 +81,8 @@ type RouteDescriptor =
   | { type: 'about' }
   | { type: 'privacy' }
   | { type: 'contact' }
+  | { type: 'admin-login' }
+  | { type: 'admin-submissions' }
   | { type: 'not-found' };
 
 type ViewStatus = 'loading' | 'ready' | 'not-found' | 'error';
@@ -92,6 +94,8 @@ const ActorDetail = lazy(() => import('./components/ActorDetail').then(({ ActorD
 const FeedsPage = lazy(() => import('./components/FeedsPage').then(({ FeedsPage: component }) => ({ default: component })));
 const AboutPage = lazy(() => import('./components/AboutPage').then(({ AboutPage: component }) => ({ default: component })));
 const PrivacyPage = lazy(() => import('./components/PrivacyPage').then(({ PrivacyPage: component }) => ({ default: component })));
+const AdminLoginPage = lazy(() => import('./components/AdminLoginPage').then(({ AdminLoginPage: component }) => ({ default: component })));
+const AdminSubmissionsPage = lazy(() => import('./components/AdminSubmissionsPage').then(({ AdminSubmissionsPage: component }) => ({ default: component })));
 
 function HomeLoadingSkeleton() {
   return (
@@ -165,6 +169,8 @@ export function parseRoute(currentPath: string): RouteDescriptor {
   if (clean === 'about') return { type: 'about' };
   if (clean === 'privacy') return { type: 'privacy' };
   if (clean === 'contact') return { type: 'contact' };
+  if (clean === 'admin/login') return { type: 'admin-login' };
+  if (clean === 'admin/submissions') return { type: 'admin-submissions' };
 
   const yearArchiveMatch = clean.match(/^year\/(\d+)$/i);
   if (yearArchiveMatch) {
@@ -233,6 +239,9 @@ function requestFor(descriptor: RouteDescriptor, catalogueSearch: string): strin
       return PRIVACY_URL;
     case 'contact':
       return null;
+    case 'admin-login':
+    case 'admin-submissions':
+      return null;
     default:
       return null;
   }
@@ -293,11 +302,11 @@ export default function App() {
   const catalogueSearch = currentPath.includes('?') ? currentPath.slice(currentPath.indexOf('?')) : '';
   const catalogueQuery = useMemo(() => parseCatalogueQuery(catalogueSearch), [catalogueSearch]);
   const requestUrl = useMemo(() => requestFor(descriptor, catalogueSearch), [descriptor, catalogueSearch]);
-  const isStaticContactRoute = descriptor.type === 'contact';
+  const isStaticRoute = descriptor.type === 'contact' || descriptor.type === 'admin-login' || descriptor.type === 'admin-submissions';
 
   // Resolve the current route's data from the shared client cache / API.
   const [view, setView] = useState<{ url: string; status: ViewStatus; payload: unknown }>(() => {
-    if (isStaticContactRoute) return { url: '', status: 'ready', payload: {} };
+    if (isStaticRoute) return { url: '', status: 'ready', payload: {} };
     if (!requestUrl) return { url: '', status: 'not-found', payload: undefined };
     const cached = peekResolved<unknown>(requestUrl);
     return cached !== undefined && isRoutePayloadValid(descriptor, cached)
@@ -307,7 +316,7 @@ export default function App() {
 
   useEffect(() => {
     if (!requestUrl) {
-      setView({ url: '', status: isStaticContactRoute ? 'ready' : 'not-found', payload: isStaticContactRoute ? {} : undefined });
+      setView({ url: '', status: isStaticRoute ? 'ready' : 'not-found', payload: isStaticRoute ? {} : undefined });
       return;
     }
 
@@ -339,7 +348,7 @@ export default function App() {
     return () => {
       active = false;
     };
-  }, [requestUrl, isStaticContactRoute]);
+  }, [requestUrl, isStaticRoute]);
 
   // A navigation changes requestUrl before the loading effect runs. Do not
   // render the previous route's ready payload as the new route's data.
@@ -400,6 +409,13 @@ export default function App() {
       updateSeoTags(buildPrivacySeo());
     } else if (descriptor.type === 'contact') {
       updateSeoTags(buildContactSeo());
+    } else if (descriptor.type === 'admin-login' || descriptor.type === 'admin-submissions') {
+      updateSeoTags({
+        title: 'Admin | XmasDB',
+        description: 'Private XmasDB administration.',
+        canonicalPath: `/admin/${descriptor.type === 'admin-login' ? 'login' : 'submissions'}/`,
+        noIndex: true,
+      });
     }
   }, [descriptor, view, meta, isCurrentView]);
 
@@ -575,6 +591,10 @@ export default function App() {
             {descriptor.type === 'privacy' && isPrivacyPayload(view.payload) && <PrivacyPage />}
 
             {descriptor.type === 'contact' && isContactPayload(view.payload) && <ContactPage />}
+
+            {descriptor.type === 'admin-login' && <AdminLoginPage onAuthenticated={() => navigate('/admin/submissions/')} />}
+
+            {descriptor.type === 'admin-submissions' && <AdminSubmissionsPage onNavigate={navigate} />}
 
             {descriptor.type === 'movies' && listingPayload && (
               <div className="py-6 sm:py-8" id="all-movies-view">

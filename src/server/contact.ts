@@ -139,6 +139,10 @@ async function readStoredSubmissions(filePath: string): Promise<StoredContactSub
   }
 }
 
+export function readContactSubmissions(dataDir = getContactDataDir()): Promise<StoredContactSubmission[]> {
+  return readStoredSubmissions(getContactSubmissionsPath(dataDir));
+}
+
 /** Creates the runtime store without replacing an existing malformed file. */
 export async function ensureContactStorage(dataDir = getContactDataDir()): Promise<void> {
   const filePath = getContactSubmissionsPath(dataDir);
@@ -157,15 +161,23 @@ export async function ensureContactStorage(dataDir = getContactDataDir()): Promi
   }
 }
 
-/** Appends a submission using serialized, same-directory atomic replacement. */
-export function storeContactSubmission(submission: StoredContactSubmission, dataDir = getContactDataDir()): Promise<void> {
+/** Updates the canonical store using serialized, same-directory atomic replacement. */
+export function updateContactSubmissions(
+  updater: (submissions: StoredContactSubmission[]) => StoredContactSubmission[],
+  dataDir = getContactDataDir(),
+): Promise<StoredContactSubmission[]> {
   const filePath = getContactSubmissionsPath(dataDir);
   const operation = writeQueue.then(async () => {
     await fs.mkdir(dataDir, { recursive: true });
     const submissions = await readStoredSubmissions(filePath);
-    submissions.push(submission);
-    await writeFileAtomically(filePath, JSON.stringify(submissions, null, 2) + '\n');
+    const updated = updater(submissions);
+    await writeFileAtomically(filePath, JSON.stringify(updated, null, 2) + '\n');
+    return updated;
   });
-  writeQueue = operation.catch(() => undefined);
+  writeQueue = operation.then(() => undefined, () => undefined);
   return operation;
+}
+
+export function storeContactSubmission(submission: StoredContactSubmission, dataDir = getContactDataDir()): Promise<StoredContactSubmission[]> {
+  return updateContactSubmissions((submissions) => [...submissions, submission], dataDir);
 }

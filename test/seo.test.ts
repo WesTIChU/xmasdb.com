@@ -72,7 +72,11 @@ for (const path of ['/', '/movies/', '/hallmark/', '/lifetime/', '/gaf/', '/feed
 }
 assert.equal(parseRoute('/contact/').type, 'contact');
 assert.equal(parseRoute('/contact').type, 'contact');
+assert.equal(parseRoute('/admin/login/').type, 'admin-login');
+assert.equal(parseRoute('/admin/submissions/').type, 'admin-submissions');
 assert.equal(parseRoute('/this-page-does-not-exist/').type, 'not-found');
+assert.equal(getServerSeo('/admin/login/').noIndex, true);
+assert.equal(getCanonicalRedirect('/admin/submissions'), '/admin/submissions/');
 
 const html = injectSeoIntoHtml('<!doctype html><html><head><title>old</title></head><body></body></html>', movieSeo);
 assert.match(html, new RegExp(`<title>${movie.title}`));
@@ -89,6 +93,7 @@ assert.match(sitemap, new RegExp(`https://xmasdb\\.com${getFeedsPath()}`));
 assert.match(sitemap, /https:\/\/xmasdb\.com\/about\//);
 assert.match(sitemap, /https:\/\/xmasdb\.com\/privacy\//);
 assert.match(sitemap, /https:\/\/xmasdb\.com\/contact\//);
+assert.doesNotMatch(sitemap, /\/admin\//);
 assert.doesNotMatch(sitemap, /\/json\//);
 assert.doesNotMatch(sitemap, /[?&](page|search|sort|perPage)=/);
 assert.match(sitemap, /<loc>https:\/\/xmasdb\.com\//);

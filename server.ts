@@ -31,12 +31,14 @@ import {
   buildSearchResults,
   buildFeedsMeta,
 } from './src/server/catalogue-api';
-import { ContactRateLimiter, ensureContactStorage, getContactDataDir, storeContactSubmission, validateContactSubmission } from './src/server/contact';
+import { ContactRateLimiter, ensureContactStorage, getContactDataDir, readContactSubmissions, storeContactSubmission, updateContactSubmissions, validateContactSubmission } from './src/server/contact';
+import { ADMIN_SESSION_COOKIE, AdminAuth, AdminLoginRateLimiter, clearCookieOptions, cookieOptions, isSameOriginMutation } from './src/server/admin-auth';
 import { getCanonicalRedirect, getRobotsTxt, getServerSeo, injectSeoIntoHtml } from './src/server/seo';
 
 function isKnownPagePath(rawPath: string): boolean {
   const clean = rawPath.replace(/^\/+|\/+$/g, '');
   if (!clean || clean === 'movies' || clean === 'all' || clean === 'feeds' || clean === 'about' || clean === 'privacy' || clean === 'contact') return true;
+  if (clean === 'admin/login' || clean === 'admin/submissions') return true;
   if (/^year\/\d+$/i.test(clean)) return true;
 
   const movie = clean.match(/^movie\/(.+)$/i);
@@ -67,6 +69,18 @@ function isKnownPagePath(rawPath: string): boolean {
   return false;
 }
 
+function getCookieValue(req: express.Request, name: string): string | undefined {
+  const cookies = req.headers.cookie?.split(';') || [];
+  const prefix = `${name}=`;
+  const value = cookies.find((cookie) => cookie.trim().startsWith(prefix));
+  if (!value) return undefined;
+  try {
+    return decodeURIComponent(value.trim().slice(prefix.length));
+  } catch {
+    return undefined;
+  }
+}
+
 async function startServer() {
   const app = express();
   const PORT = Number(process.env.PORT || 3000);
@@ -74,6 +88,21 @@ async function startServer() {
   const contactDataDir = getContactDataDir();
   await ensureContactStorage(contactDataDir);
   console.log(`Contact submissions directory: ${contactDataDir}`);
+  const adminAuth = new AdminAuth({
+    password: process.env.XMASDB_ADMIN_PASSWORD,
+    secret: process.env.XMASDB_SESSION_SECRET,
+  });
+  const adminLoginRateLimiter = new AdminLoginRateLimiter();
+  if (!adminAuth.isConfigured()) console.warn('Admin authentication is unavailable: XMASDB_ADMIN_PASSWORD and XMASDB_SESSION_SECRET are required.');
+  const isProduction = process.env.NODE_ENV === 'production';
+  const requireAdmin = (req: express.Request, res: express.Response, next: express.NextFunction) => {
+    if (!adminAuth.authenticate(getCookieValue(req, ADMIN_SESSION_COOKIE))) return res.status(401).json({ error: 'Unauthorized' });
+    return next();
+  };
+  const requireSameOrigin = (req: express.Request, res: express.Response, next: express.NextFunction) => {
+    if (!isSameOriginMutation(req)) return res.status(403).json({ error: 'Forbidden' });
+    return next();
+  };
 
   // Enable CORS headers for feeds so external tools like Radarr or curl can fetch without friction
   app.use((req, res, next) => {
@@ -290,6 +319,76 @@ async function startServer() {
   app.use('/api/contact', (error: unknown, _req: express.Request, res: express.Response, _next: express.NextFunction) => {
     const status = typeof error === 'object' && error !== null && 'status' in error && error.status === 413 ? 413 : 400;
     return res.status(status).json({ error: 'Please check your submission and try again.' });
+  });
+
+  app.post('/api/admin/login', requireSameOrigin, express.json({ limit: '4kb' }), (req, res) => {
+    if (!adminAuth.isConfigured()) return res.status(503).json({ error: 'Admin login is not configured.' });
+    const ip = req.ip || req.socket.remoteAddress || 'unknown';
+    if (!adminLoginRateLimiter.allow(ip)) return res.status(429).json({ error: 'Too many login attempts. Please try again later.' });
+    if (!adminAuth.verifyPassword(req.body?.password)) {
+      adminLoginRateLimiter.recordFailure(ip);
+      return res.status(401).json({ error: 'Incorrect password.' });
+    }
+    adminLoginRateLimiter.clear(ip);
+    res.setHeader('Set-Cookie', `${ADMIN_SESSION_COOKIE}=${encodeURIComponent(adminAuth.createCookie())}; ${cookieOptions(isProduction)}`);
+    return res.json({ authenticated: true });
+  });
+
+  app.post('/api/admin/logout', requireSameOrigin, (req, res) => {
+    adminAuth.revoke(getCookieValue(req, ADMIN_SESSION_COOKIE));
+    res.setHeader('Set-Cookie', `${ADMIN_SESSION_COOKIE}=; ${clearCookieOptions(isProduction)}`);
+    return res.status(204).end();
+  });
+
+  app.get('/api/admin/submissions', requireAdmin, async (_req, res) => {
+    try {
+      const submissions = (await readContactSubmissions(contactDataDir)).sort((left, right) => right.createdAt.localeCompare(left.createdAt));
+      return res.setHeader('Cache-Control', 'no-store').json({
+        submissions,
+        counts: {
+          new: submissions.filter((submission) => submission.status === 'new').length,
+          resolved: submissions.filter((submission) => submission.status === 'resolved').length,
+          total: submissions.length,
+        },
+      });
+    } catch {
+      return res.status(500).json({ error: 'Submissions could not be read safely.' });
+    }
+  });
+
+  app.patch('/api/admin/submissions/:id', requireAdmin, requireSameOrigin, express.json({ limit: '2kb' }), async (req, res) => {
+    const status = req.body?.status;
+    if (status !== 'new' && status !== 'resolved') return res.status(400).json({ error: 'Invalid status.' });
+    try {
+      let found = false;
+      const submissions = await updateContactSubmissions((current) => current.map((submission) => {
+        if (submission.id !== req.params.id) return submission;
+        found = true;
+        return { ...submission, status };
+      }), contactDataDir);
+      if (!found) return res.status(404).json({ error: 'Submission not found.' });
+      return res.json({ submission: submissions.find((submission) => submission.id === req.params.id) });
+    } catch {
+      return res.status(500).json({ error: 'Submission could not be updated safely.' });
+    }
+  });
+
+  app.delete('/api/admin/submissions/:id', requireAdmin, requireSameOrigin, async (req, res) => {
+    try {
+      let found = false;
+      await updateContactSubmissions((current) => current.filter((submission) => {
+        if (submission.id !== req.params.id) return true;
+        found = true;
+        return false;
+      }), contactDataDir);
+      return found ? res.status(204).end() : res.status(404).json({ error: 'Submission not found.' });
+    } catch {
+      return res.status(500).json({ error: 'Submission could not be deleted safely.' });
+    }
+  });
+
+  app.use('/api/admin', (error: unknown, _req: express.Request, res: express.Response, _next: express.NextFunction) => {
+    return res.status(400).json({ error: 'Please check the request and try again.' });
   });
 
   // Catalogue listing (all movies, brand pages, year archives).

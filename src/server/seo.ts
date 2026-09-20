@@ -32,6 +32,8 @@ export function getServerSeo(pathname: string, search = ''): SeoDocument {
   if (clean === 'about') return buildAboutSeo();
   if (clean === 'privacy') return buildPrivacySeo();
   if (clean === 'contact') return buildContactSeo();
+  if (clean === 'admin/login') return { title: 'Admin Login | XmasDB', description: 'Private XmasDB administration.', canonicalPath: '/admin/login/', noIndex: true };
+  if (clean === 'admin/submissions') return { title: 'Submissions | XmasDB', description: 'Private XmasDB administration.', canonicalPath: '/admin/submissions/', noIndex: true };
 
   const yearMatch = clean.match(/^year\/(\d+)$/i);
   if (yearMatch) {
@@ -88,6 +90,8 @@ export function getCanonicalRedirect(pathname: string): string | null {
   if (clean === 'about') return pathname === '/about/' ? null : '/about/';
   if (clean === 'privacy') return pathname === '/privacy/' ? null : '/privacy/';
   if (clean === 'contact') return pathname === '/contact/' ? null : '/contact/';
+  if (clean === 'admin/login') return pathname === '/admin/login/' ? null : '/admin/login/';
+  if (clean === 'admin/submissions') return pathname === '/admin/submissions/' ? null : '/admin/submissions/';
   if (/^year\/\d+$/i.test(clean)) return pathname === `/${clean}/` ? null : `/${clean}/`;
   const brandMatch = clean.match(/^([^/]+)(?:\/(\d+))?$/i);
   if (brandMatch && getBrandBySlug(brandMatch[1])) return pathname === `/${clean.toLowerCase()}/` ? null : `/${clean.toLowerCase()}/`;
