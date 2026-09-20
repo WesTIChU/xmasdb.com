@@ -12,8 +12,8 @@ interface PopularActorsSectionProps {
 const ActorCircularPortrait: React.FC<{ actor: PopularActorsGroup['actors'][number] }> = ({ actor }) => {
   const [imgError, setImgError] = useState(false);
   const photo = actor.photoUrl;
-  if (imgError || !photo) return <div className="w-[108px] h-[108px] rounded-full mx-auto flex items-center justify-center bg-[#EFE9DF] border border-[#DDD3C6] text-[#1A3D2F] font-heading text-3xl" aria-hidden="true">{actor.name.charAt(0)}</div>;
-  return <div className="w-[108px] h-[108px] rounded-full mx-auto overflow-hidden bg-[#EFE9DF] border border-[#DDD3C6]"><img src={photo} alt={actor.name} loading="lazy" referrerPolicy="no-referrer" onError={() => setImgError(true)} className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300" /></div>;
+  if (imgError || !photo) return <div className="w-[108px] h-[108px] xl:w-[96px] xl:h-[96px] rounded-full mx-auto flex items-center justify-center bg-[#EFE9DF] border border-[#DDD3C6] text-[#1A3D2F] font-heading text-3xl" aria-hidden="true">{actor.name.charAt(0)}</div>;
+  return <div className="w-[108px] h-[108px] xl:w-[96px] xl:h-[96px] rounded-full mx-auto overflow-hidden bg-[#EFE9DF] border border-[#DDD3C6]"><img src={photo} alt={actor.name} loading="lazy" referrerPolicy="no-referrer" onError={() => setImgError(true)} className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300" /></div>;
 };
 
 export const PopularActorsSection: React.FC<PopularActorsSectionProps> = ({ groups, onNavigate }) => {
@@ -43,10 +43,10 @@ export const PopularActorsSection: React.FC<PopularActorsSectionProps> = ({ grou
           ))}
         </div>
       </div>
-      <div className="flex md:grid md:grid-cols-6 gap-5 sm:gap-6 overflow-x-auto md:overflow-visible pb-2 md:pb-0 -mx-4 px-4 sm:mx-0 sm:px-0 no-scrollbar">
+      <div className="flex gap-4 sm:gap-5 overflow-x-auto pb-2 no-scrollbar -mx-4 px-4 sm:mx-0 sm:px-0 md:grid md:grid-cols-4 md:overflow-visible md:pb-0 xl:grid-cols-8 xl:gap-3">
         {selected.actors.map((actor) => {
           const actorPath = getActorPath(actor.tmdbPersonId, actor.slug);
-          return <article key={actor.slug} className="w-[120px] md:w-full shrink-0 text-center"><a href={actorPath} onClick={(event) => { event.preventDefault(); onNavigate(actorPath); }} className="group block text-center">
+          return <article key={actor.slug} className="w-[120px] shrink-0 text-center md:w-full"><a href={actorPath} onClick={(event) => { event.preventDefault(); onNavigate(actorPath); }} className="group block text-center">
             <ActorCircularPortrait actor={actor} />
             <h3 className="mt-3 font-heading text-sm text-[#1A3D2F] group-hover:text-[#841818] leading-snug">{actor.name}</h3>
             <p className="mt-1 text-xs text-[#736B63] font-body">{actor.movieCount} {actor.movieCount === 1 ? 'Christmas movie' : 'Christmas movies'}</p>

@@ -317,7 +317,7 @@ export function buildHomePayload(): HomePayload {
 
   const popularActors: PopularActorsGroup[] = [];
   for (const brand of getPopulatedBrands(MOVIES)) {
-    const actors = getPopularActorsByBrand(brand.id, 6).map(({ actor, movieCount }) => ({
+    const actors = getPopularActorsByBrand(brand.id, 8).map(({ actor, movieCount }) => ({
       slug: actor.slug,
       name: actor.name,
       tmdbPersonId: actor.tmdbPersonId,
