@@ -186540,6 +186540,500 @@ export const MOVIES: Movie[] = [
     "voteAverage": 6,
     "voteCount": 1,
     "tmdbUpdatedAt": "2026-09-20T17:31:15.409Z"
+  },
+  {
+    "id": "gaf-2023-merry-mystery-christmas",
+    "slug": "merry-mystery-christmas",
+    "title": "Merry Mystery Christmas",
+    "year": 2023,
+    "brandId": "gaf",
+    "releaseDate": "2023-11-08",
+    "synopsis": "When Leslie, a rising star reporter inadvertently botches her investigative piece about a powerful City Council member, her boss decides she needs to pivot to something more seasonal. Her next assignment is to uncover the identity of a local late-night bandit who has been stealing beautiful home Christmas displays across the city. She’s not the only one on the case though, Preston, local detective and Christmas enthusiast has made it his mission to identify the culprit and restore the town’s holiday spirit. As they spend more time together, they discover more than just clues pointing them to their culprit, they also discover that their undeniable chemistry might actually be true love.",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/9Rl5zQ78x2l9s7JvD5yIi2lSJPt.jpg",
+    "backdropUrl": "https://image.tmdb.org/t/p/w1280/8SDXVHJkZ0AQ5Fl6A5247bioX3e.jpg",
+    "cast": [
+      {
+        "actorId": "1050328",
+        "name": "Brittany Bristow",
+        "character": "Krista Danser",
+        "slug": "brittany-bristow",
+        "tmdbPersonId": 1050328,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/e0eJSoJ2ntcCmf3PaTtCa0D8a4H.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "1799766",
+        "name": "Olivier Renaud",
+        "character": "Ryan Bridger",
+        "slug": "olivier-renaud",
+        "tmdbPersonId": 1799766,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/r1PKI00FM4kovA2AQfnWhC1BU13.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "208230",
+        "name": "Elisa King",
+        "character": "Ally Willard",
+        "slug": "elisa-king",
+        "tmdbPersonId": 208230,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/j3PXHwAAWXfOhCbVZhGhZ3RYLl9.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "3829124",
+        "name": "Justin Nurse",
+        "character": "Stu",
+        "slug": "justin-nurse",
+        "tmdbPersonId": 3829124,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/wzydPe1MnzsPRe2G7R7B5UHCsci.jpg",
+        "order": 3
+      },
+      {
+        "actorId": "1102783",
+        "name": "Jillian Rees-Brown",
+        "character": "Joyce Bridger",
+        "slug": "jillian-rees-brown",
+        "tmdbPersonId": 1102783,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/9WaAs8FMfTSjOVWWlE23lRNEvX8.jpg",
+        "order": 4
+      },
+      {
+        "actorId": "4208689",
+        "name": "Colin Furlong",
+        "character": "Gordon Howard",
+        "slug": "colin-furlong",
+        "tmdbPersonId": 4208689,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/q3W0MY3ukDOl9TUnqWhz9zQB9ps.jpg",
+        "order": 5
+      },
+      {
+        "actorId": "4426567",
+        "name": "Tarun Subramanian",
+        "character": "Young Man",
+        "slug": "tarun-subramanian",
+        "tmdbPersonId": 4426567,
+        "order": 6
+      },
+      {
+        "actorId": "1239590",
+        "name": "Nicole Underhay",
+        "character": "Captain Mast",
+        "slug": "nicole-underhay",
+        "tmdbPersonId": 1239590,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/1YcPzRyTifX2BCDejv0uYkHZk2V.jpg",
+        "order": 7
+      },
+      {
+        "actorId": "3855939",
+        "name": "Eliza King",
+        "character": "Ally Willard",
+        "slug": "eliza-king",
+        "tmdbPersonId": 3855939,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/gXHHuEKqimtE3ZVE6bu9vCG5JNk.jpg",
+        "order": 8
+      }
+    ],
+    "director": "Michelle Ouellet",
+    "tmdbId": 1191059,
+    "imdbId": "tt29904237",
+    "isComingSoon": false,
+    "status": "collection",
+    "originalTitle": "Merry Mystery Christmas",
+    "runtimeMinutes": 84,
+    "genres": [
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      },
+      {
+        "id": 18,
+        "name": "Drama"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "CA",
+        "releaseDate": "2023-11-08T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "W Network"
+      },
+      {
+        "country": "FR",
+        "releaseDate": "2024-11-23T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "C8"
+      },
+      {
+        "country": "US",
+        "releaseDate": "2025-11-08T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "Great American Family"
+      }
+    ],
+    "crew": [
+      {
+        "id": 1077440,
+        "name": "Juan Carlos Montalvo",
+        "job": "Director of Photography",
+        "creditId": "652a8ce7024ec800aecb2fe0"
+      },
+      {
+        "id": 1011745,
+        "name": "Michelle Ouellet",
+        "job": "Director",
+        "creditId": "652a8bd50cb33516fd4974a4"
+      },
+      {
+        "id": 1852253,
+        "name": "Taralee Gerhard",
+        "job": "Producer",
+        "creditId": "6578bb3f564ec7011b209b82"
+      },
+      {
+        "id": 1709133,
+        "name": "Catalin Marin",
+        "job": "Music",
+        "creditId": "6578bb4935a61e013ac22827"
+      },
+      {
+        "id": 4214125,
+        "name": "Mallory Horsman",
+        "job": "Third Assistant Director",
+        "creditId": "6578bb5ef04d01011e0fbca5"
+      },
+      {
+        "id": 4214125,
+        "name": "Mallory Horsman",
+        "job": "Casting Associate",
+        "creditId": "6578bb66564ec700feb5c6df"
+      },
+      {
+        "id": 1357879,
+        "name": "Bryar Freed",
+        "job": "Writer",
+        "creditId": "6578bb30ec8a4300e09a87ee"
+      },
+      {
+        "id": 3829121,
+        "name": "Morgan Todd",
+        "job": "Costume Design",
+        "creditId": "6578bb53ec8a4300e09a8801"
+      },
+      {
+        "id": 3482413,
+        "name": "Logan A. Wagner",
+        "job": "Production Accountant",
+        "creditId": "6578bb70f04d0101009c7b4d"
+      },
+      {
+        "id": 5046317,
+        "name": "Michael Lawlor",
+        "job": "Property Master",
+        "creditId": "672d5157be76b0644b3deaa1"
+      },
+      {
+        "id": 5046317,
+        "name": "Michael Lawlor",
+        "job": "Graphic Designer",
+        "creditId": "672d515fcaf727f3748aaa52"
+      },
+      {
+        "id": 239783,
+        "name": "David Golden",
+        "job": "Executive Producer",
+        "creditId": "6764caa5330bce6ec990bffa"
+      },
+      {
+        "id": 4214130,
+        "name": "Stephen Butler",
+        "job": "Art Direction",
+        "creditId": "6764cab98f10c2746b90be00"
+      },
+      {
+        "id": 4209189,
+        "name": "Dave Whitty",
+        "job": "Production Design",
+        "creditId": "6764cac18f10c2746b90be08"
+      },
+      {
+        "id": 4214131,
+        "name": "Kobe Dillon",
+        "job": "Set Decoration",
+        "creditId": "6764cae5774ac5a28574895e"
+      },
+      {
+        "id": 4214156,
+        "name": "Zack Clarke",
+        "job": "Key Hair Stylist",
+        "creditId": "6764cafb6ceba829b9748892"
+      },
+      {
+        "id": 4209187,
+        "name": "Lauren Snow",
+        "job": "Key Makeup Artist",
+        "creditId": "6764cb028f10c2746b90be1c"
+      },
+      {
+        "id": 2534305,
+        "name": "Shara Désirée King",
+        "job": "First Assistant Director",
+        "creditId": "6764cb160b2fbb9dea5de221"
+      },
+      {
+        "id": 5182100,
+        "name": "Dee Riggs",
+        "job": "Set Dresser",
+        "creditId": "67886ddc94d95839f3ad12c7"
+      },
+      {
+        "id": 5182104,
+        "name": "Cameron Courtney",
+        "job": "Location Production Assistant",
+        "creditId": "67886f1c45f296f6011d2ad4"
+      },
+      {
+        "id": 5182109,
+        "name": "Robert Alexander Pike",
+        "job": "Best Boy Electric",
+        "creditId": "6788706e8677bdfadfad0b7a"
+      },
+      {
+        "id": 5182121,
+        "name": "Dan Gill",
+        "job": "Location Production Assistant",
+        "creditId": "6788747ea64feb16c91d34a4"
+      },
+      {
+        "id": 3482413,
+        "name": "Logan A. Wagner",
+        "job": "Associate Producer",
+        "creditId": "678874ba8677bdfadfad0bdb"
+      },
+      {
+        "id": 2418603,
+        "name": "Richard Mandin",
+        "job": "Editor",
+        "creditId": "678874e8a64feb16c91d34f6"
+      },
+      {
+        "id": 1721998,
+        "name": "Ron Leach",
+        "job": "Casting",
+        "creditId": "678874f31d4c91f6ac976cf0"
+      },
+      {
+        "id": 4214155,
+        "name": "Samantha Kosub",
+        "job": "Assistant Makeup Artist",
+        "creditId": "678875291d4c91f6ac976d25"
+      },
+      {
+        "id": 4214155,
+        "name": "Samantha Kosub",
+        "job": "Hair Assistant",
+        "creditId": "67887531a64feb16c91d353b"
+      },
+      {
+        "id": 4214154,
+        "name": "Megan Gregory",
+        "job": "First Assistant Makeup Artist",
+        "creditId": "67887543a64feb16c91d3544"
+      },
+      {
+        "id": 5182126,
+        "name": "Cynthia Greenland",
+        "job": "Hairstylist",
+        "creditId": "6788754c8677bdfadfad0c59"
+      },
+      {
+        "id": 4361242,
+        "name": "Rachel Deal",
+        "job": "Second Assistant Director",
+        "creditId": "6788759ce98081f58297668e"
+      },
+      {
+        "id": 4214155,
+        "name": "Samantha Kosub",
+        "job": "Swing",
+        "creditId": "678875ada64feb16c91d3585"
+      },
+      {
+        "id": 4214154,
+        "name": "Megan Gregory",
+        "job": "Swing",
+        "creditId": "678875b538920393ad1d2d03"
+      },
+      {
+        "id": 4424975,
+        "name": "Stephen Pond",
+        "job": "Boom Operator",
+        "creditId": "678875bf38920393ad1d2d1b"
+      },
+      {
+        "id": 4214146,
+        "name": "Alex Topolniski",
+        "job": "Boom Operator",
+        "creditId": "678875c78677bdfadfad0ce1"
+      },
+      {
+        "id": 3630929,
+        "name": "Diego Medina",
+        "job": "Sound Mixer",
+        "creditId": "678875cf79cf13ee41ad148c"
+      },
+      {
+        "id": 1828371,
+        "name": "Olivia Kolakowski",
+        "job": "Sound Effects Editor",
+        "creditId": "678875db79cf13ee41ad1494"
+      },
+      {
+        "id": 4214135,
+        "name": "Nick Edgar Dunne",
+        "job": "Second Assistant Camera",
+        "creditId": "678876071d4c91f6ac976db4"
+      },
+      {
+        "id": 4833642,
+        "name": "Matthew Fitzgerald",
+        "job": "Camera Trainee",
+        "creditId": "678876131d4c91f6ac976dc6"
+      },
+      {
+        "id": 5182110,
+        "name": "Andrew Hammond",
+        "job": "Key Grip",
+        "creditId": "6788761e1d4c91f6ac976dd4"
+      },
+      {
+        "id": 17231,
+        "name": "Chris Hanley",
+        "job": "Grip",
+        "creditId": "6788762838920393ad1d2d70"
+      },
+      {
+        "id": 4214137,
+        "name": "Riley Harnett",
+        "job": "Second Assistant Camera",
+        "creditId": "678876321d4c91f6ac976de4"
+      },
+      {
+        "id": 5181976,
+        "name": "James Harris",
+        "job": "Grip",
+        "creditId": "6788764338920393ad1d2d97"
+      },
+      {
+        "id": 4426547,
+        "name": "Jimmy Kean",
+        "job": "Best Boy Electric",
+        "creditId": "6788764c38920393ad1d2da6"
+      },
+      {
+        "id": 2112762,
+        "name": "Adam Penney",
+        "job": "Camera Operator",
+        "creditId": "67887659e98081f5829766b5"
+      },
+      {
+        "id": 4215880,
+        "name": "Liam Small",
+        "job": "Best Boy Grip",
+        "creditId": "6788766b38920393ad1d2da9"
+      },
+      {
+        "id": 4999796,
+        "name": "Alex Tucker",
+        "job": "Gaffer",
+        "creditId": "6788767aa64feb16c91d35d0"
+      },
+      {
+        "id": 4214134,
+        "name": "Kelsey Maye",
+        "job": "Wardrobe Assistant",
+        "creditId": "678876d379cf13ee41ad14f8"
+      },
+      {
+        "id": 4340765,
+        "name": "Avalon Power James",
+        "job": "Location Production Assistant",
+        "creditId": "678876f1a64feb16c91d35fe"
+      },
+      {
+        "id": 5016475,
+        "name": "Alex Pierce",
+        "job": "Assistant Location Manager",
+        "creditId": "678876fca64feb16c91d360d"
+      },
+      {
+        "id": 4214134,
+        "name": "Kelsey Maye",
+        "job": "Location Scout",
+        "creditId": "6788770406809ab236ad1444"
+      },
+      {
+        "id": 4214146,
+        "name": "Alex Topolniski",
+        "job": "Location Production Assistant",
+        "creditId": "6788770e38920393ad1d2db2"
+      },
+      {
+        "id": 4649200,
+        "name": "Dave Connor",
+        "job": "Script Supervisor",
+        "creditId": "6788772679cf13ee41ad151e"
+      },
+      {
+        "id": 4364747,
+        "name": "Zoe Balsom",
+        "job": "Production Coordinator",
+        "creditId": "6788772f79cf13ee41ad1522"
+      },
+      {
+        "id": 5299805,
+        "name": "Nathalie Javault",
+        "job": "Art Department Production Assistant",
+        "creditId": "67d19b2b42c0ccc3ca1e336f"
+      },
+      {
+        "id": 4649201,
+        "name": "Daniel Noseworthy",
+        "job": "Location Manager",
+        "creditId": "691d601bdd972105a32d4210"
+      },
+      {
+        "id": 6432572,
+        "name": "David Fleming",
+        "job": "Swing",
+        "creditId": "6a8bd7197c081be21cf684b3"
+      },
+      {
+        "id": 6432572,
+        "name": "David Fleming",
+        "job": "Grip",
+        "creditId": "6a8bd722917d9ce9da0dc7f5"
+      }
+    ],
+    "trailers": [
+      {
+        "key": "DYOXfGyrsZc",
+        "site": "YouTube",
+        "type": "Trailer",
+        "name": "Merry Mystery Christmas | New 2023 Holiday Movie",
+        "official": true
+      }
+    ],
+    "trailerYoutubeKey": "DYOXfGyrsZc",
+    "voteAverage": 6.2,
+    "voteCount": 5,
+    "tmdbUpdatedAt": "2026-09-20T17:37:36.998Z"
   }
 ];
 
