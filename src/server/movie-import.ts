@@ -63,6 +63,19 @@ export function generateMoviesModule(movies: Movie[]): string {
   return `import { Movie } from '../types';\n\nexport const MOVIES: Movie[] = ${JSON.stringify(movies, null, 2)};\n\nexport function getMovieBySlug(slug: string): Movie | undefined { return MOVIES.find((m) => m.slug.toLowerCase() === slug.toLowerCase()); }\nexport function getMovieByTmdbId(tmdbId: number): Movie | undefined { return MOVIES.find((m) => m.tmdbId === tmdbId); }\nexport function getMovieByTmdbIdAndSlug(tmdbId: number, slug?: string): Movie | undefined { return getMovieByTmdbId(tmdbId) || (slug ? getMovieBySlug(slug) : undefined); }\nexport function getMovieByIdentifier(identifier: string | number): Movie | undefined { const value = String(identifier).trim(); return /^\\d+$/.test(value) ? getMovieByTmdbId(Number(value)) || getMovieBySlug(value) : getMovieBySlug(value); }\nexport function getMoviesByBrand(brandId: string): Movie[] { return MOVIES.filter((m) => m.brandId.toLowerCase() === brandId.toLowerCase()); }\nexport function getMoviesByActorSlug(actorSlug: string): Movie[] { return MOVIES.filter((m) => m.cast.some((c) => c.slug.toLowerCase() === actorSlug.toLowerCase())); }\nexport function getAllYearsForBrand(brandId?: string): number[] { const filtered = brandId ? getMoviesByBrand(brandId) : MOVIES; return Array.from(new Set(filtered.map((m) => m.year))).sort((a, b) => b - a); }\n`;
 }
 
+export function parseMoviesModule(source: string): Movie[] {
+  const match = source.match(/export\s+const\s+MOVIES\s*:\s*Movie\[\]\s*=\s*([\s\S]*?)\s*;\s*(?:export\s+function|$)/);
+  if (!match) throw new Error('Canonical movies module has an unexpected format.');
+  let parsed: unknown;
+  try {
+    parsed = JSON.parse(match[1]);
+  } catch {
+    throw new Error('Canonical movies module contains invalid movie data.');
+  }
+  if (!Array.isArray(parsed)) throw new Error('Canonical movies module does not contain an array.');
+  return parsed as Movie[];
+}
+
 export function buildMovieFromTmdb(tmdbId: number, metadata: Partial<Movie>, brandId: MovieBrand, status: MovieStatus): Movie {
   const title = metadata.title || metadata.originalTitle || `TMDB movie ${tmdbId}`;
   const slug = title.toLowerCase().trim().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') || `tmdb-${tmdbId}`;

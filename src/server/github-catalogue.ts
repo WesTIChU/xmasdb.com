@@ -1,5 +1,5 @@
 import type { Movie } from '../types';
-import { generateMoviesModule } from './movie-import';
+import { generateMoviesModule, parseMoviesModule } from './movie-import';
 
 const MOVIES_PATH = 'src/data/movies.ts';
 export const COMING_SOON_WORKFLOW = 'nightly-coming-soon-refresh.yml';
@@ -79,14 +79,6 @@ export async function dispatchComingSoonRefresh(config = configFromEnv()): Promi
     body: JSON.stringify({ ref: config.branch }),
     headers: { 'Content-Type': 'application/json' },
   });
-}
-
-function parseMoviesModule(source: string): Movie[] {
-  const match = source.match(/export const MOVIES: Movie\[\] = ([\s\S]*?);\n\nexport function/);
-  if (!match) throw new Error('Canonical movies module has an unexpected format.');
-  const parsed: unknown = JSON.parse(match[1]);
-  if (!Array.isArray(parsed)) throw new Error('Canonical movies module does not contain an array.');
-  return parsed as Movie[];
 }
 
 export async function readGitHubBranch(config = configFromEnv()): Promise<BranchState> {

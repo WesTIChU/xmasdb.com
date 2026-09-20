@@ -1,6 +1,9 @@
 import assert from 'node:assert/strict';
-import { buildMovieFromTmdb, extractTmdbId, generateMoviesModule, normalizeBrand, normalizeStatus, parseBulkMovieInput } from '../src/server/movie-import';
-import { commitMoviesToGitHub } from '../src/server/github-catalogue';
+import { buildMovieFromTmdb, extractTmdbId, generateMoviesModule, normalizeBrand, normalizeStatus, parseBulkMovieInput, parseMoviesModule } from '../src/server/movie-import';
+import { commitMoviesToGitHub, readGitHubBranch } from '../src/server/github-catalogue';
+import { fetchTmdbMovie } from '../src/utils/tmdb';
+import fs from 'node:fs/promises';
+import path from 'node:path';
 
 assert.equal(extractTmdbId('1547913'), 1547913);
 assert.equal(extractTmdbId('https://www.themoviedb.org/movie/1547913-some-movie'), 1547913);
@@ -24,9 +27,14 @@ assert.equal(movie.brandId, 'hallmark');
 assert.equal(movie.status, 'coming-soon');
 assert.equal(movie.isComingSoon, true);
 assert.match(generateMoviesModule([movie]), /A Preview Christmas/);
+const canonicalSource = await fs.readFile(path.join(process.cwd(), 'src/data/movies.ts'), 'utf8');
+const canonicalMovies = parseMoviesModule(canonicalSource);
+assert.ok(canonicalMovies.length > 0, 'The canonical movies.ts export should load in the shared parser');
+assert.equal(canonicalMovies.find((entry) => entry.tmdbId === 1575393), undefined);
+assert.throws(() => parseMoviesModule('export const MOVIES: Movie[] = nope;'), /unexpected format|invalid movie data/);
 
 const originalFetch = globalThis.fetch;
-const source = generateMoviesModule([]);
+const source = canonicalSource;
 let commitCreateCalls = 0;
 globalThis.fetch = async (input, init) => {
   const url = String(input);
@@ -38,8 +46,15 @@ globalThis.fetch = async (input, init) => {
   if (method === 'POST' && url.endsWith('/git/blobs')) return new Response(JSON.stringify({ sha: 'blob-sha' }), { status: 201 });
   if (method === 'POST' && url.endsWith('/git/trees')) return new Response(JSON.stringify({ sha: 'new-tree' }), { status: 201 });
   if (method === 'PATCH' && url.includes('/git/refs/heads/main')) return new Response('{}', { status: 200 });
+  if (url.includes('/movie/1575393?')) return new Response(JSON.stringify({ id: 1575393, title: 'A Runaway Bride for Christmas', release_date: '2025-12-01' }), { status: 200 });
   return new Response('{}', { status: 404 });
 };
+const branch = await readGitHubBranch({ token: 'token', owner: 'owner', repo: 'repo', branch: 'main' });
+assert.equal(branch.movies.length, canonicalMovies.length, 'Production-compatible branch loading should parse canonical movies.ts');
+assert.ok(branch.movies.some((entry) => entry.tmdbId === 1575393) === false, 'Preview ID should be new to the catalogue fixture');
+const preview = await fetchTmdbMovie(1575393, 'tmdb-key');
+assert.equal(preview?.title, 'A Runaway Bride for Christmas', 'A valid new TMDB ID should proceed to TMDB preview');
+assert.equal(branch.movies.some((entry) => entry.tmdbId === canonicalMovies[0].tmdbId), true, 'Existing TMDB IDs remain available for duplicate detection');
 const commitResult = await commitMoviesToGitHub([movie], 'base-sha', 'Add Christmas movie: A Preview Christmas', { token: 'token', owner: 'owner', repo: 'repo', branch: 'main' });
 assert.equal(commitResult.commitSha, 'new-commit');
 assert.equal(commitCreateCalls, 1, 'one batch creates one GitHub commit');
