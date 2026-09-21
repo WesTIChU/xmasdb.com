@@ -125,6 +125,7 @@ export const AdminSubmissionsPage: React.FC<AdminSubmissionsPageProps> = ({ onNa
           </div>
           <nav className="flex gap-4 text-xs font-semibold tracking-wide" aria-label="Admin navigation">
             <button type="button" onClick={() => onNavigate('/admin/submissions/')} className="text-[#841818] underline underline-offset-4">SUBMISSIONS</button>
+            <button type="button" onClick={() => onNavigate('/admin/feed-statistics/')} className="text-[#1A3D2F] underline decoration-[#C8BFB3] underline-offset-4 hover:text-[#841818]">FEED STATISTICS</button>
             <button type="button" onClick={() => onNavigate('/admin/movies/add/')} className="text-[#1A3D2F] underline decoration-[#C8BFB3] underline-offset-4 hover:text-[#841818]">ADD MOVIES</button>
             <button type="button" onClick={() => void logout()} className="text-[#1A3D2F] underline decoration-[#C8BFB3] underline-offset-4 hover:text-[#841818]">LOG OUT</button>
           </nav>

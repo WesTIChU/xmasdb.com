@@ -1,6 +1,6 @@
 import type { Movie } from '../types';
 
-export const MOVIE_BRANDS = ['hallmark', 'lifetime', 'gaf'] as const;
+export const MOVIE_BRANDS = ['hallmark', 'lifetime', 'gaf', 'uptv'] as const;
 export const MOVIE_STATUSES = ['collection', 'coming-soon'] as const;
 export type MovieBrand = typeof MOVIE_BRANDS[number];
 export type MovieStatus = typeof MOVIE_STATUSES[number];
@@ -18,6 +18,7 @@ export function normalizeBrand(value: string): MovieBrand | undefined {
   if (normalized === 'hallmark') return 'hallmark';
   if (normalized === 'lifetime') return 'lifetime';
   if (normalized === 'gaf' || normalized === 'great-american-family') return 'gaf';
+  if (normalized === 'uptv' || normalized === 'up-tv') return 'uptv';
   return undefined;
 }
 

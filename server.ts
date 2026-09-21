@@ -37,11 +37,14 @@ import { commitMoviesToGitHub, dispatchComingSoonRefresh, isGitHubConfigured, re
 import { buildMovieFromTmdb, normalizeBrand, normalizeStatus, parseBulkMovieInput } from './src/server/movie-import';
 import { fetchTmdbMovie, requireTmdbApiKey } from './src/utils/tmdb';
 import { getCanonicalRedirect, getRobotsTxt, renderServerHtml } from './src/server/seo';
+import { ensureFeedStatisticsStorage, getActorFeedDefinition, getFeedStatistics, getMetadataFeedDefinition, getYearFeedDefinition } from './src/server/feed-statistics';
+import { trackSuccessfulFeedResponse } from './src/server/feed-route';
+import { isTrustedProxyAddress, PublicFeedRateLimiter } from './src/server/feed-rate-limit';
 
 function isKnownPagePath(rawPath: string): boolean {
   const clean = rawPath.replace(/^\/+|\/+$/g, '');
   if (!clean || clean === 'movies' || clean === 'all' || clean === 'feeds' || clean === 'about' || clean === 'privacy' || clean === 'contact') return true;
-  if (clean === 'admin/login' || clean === 'admin/submissions' || clean === 'admin/movies/add') return true;
+  if (clean === 'admin/login' || clean === 'admin/submissions' || clean === 'admin/feed-statistics' || clean === 'admin/movies/add') return true;
   if (/^year\/\d+$/i.test(clean)) return true;
 
   const movie = clean.match(/^movie\/(.+)$/i);
@@ -84,6 +87,15 @@ function getCookieValue(req: express.Request, name: string): string | undefined 
   }
 }
 
+function getRequestClientIp(req: express.Request): string {
+  const peerAddress = req.socket.remoteAddress;
+  const cloudflareClientIp = req.headers['cf-connecting-ip'];
+  if (isTrustedProxyAddress(peerAddress) && typeof cloudflareClientIp === 'string' && cloudflareClientIp.trim()) {
+    return cloudflareClientIp.trim();
+  }
+  return req.ip || peerAddress || 'unknown';
+}
+
 async function mapWithConcurrency<T, R>(items: T[], limit: number, worker: (item: T) => Promise<R>): Promise<R[]> {
   const results: R[] = new Array(items.length);
   let next = 0;
@@ -99,10 +111,12 @@ async function mapWithConcurrency<T, R>(items: T[], limit: number, worker: (item
 
 async function startServer() {
   const app = express();
+  app.set('trust proxy', isTrustedProxyAddress);
   const PORT = Number(process.env.PORT || 3000);
   const contactRateLimiter = new ContactRateLimiter();
   const contactDataDir = getContactDataDir();
   await ensureContactStorage(contactDataDir);
+  await ensureFeedStatisticsStorage(contactDataDir);
   console.log(`Contact submissions directory: ${contactDataDir}`);
   const adminAuth = new AdminAuth({
     password: process.env.XMASDB_ADMIN_PASSWORD,
@@ -110,6 +124,7 @@ async function startServer() {
   });
   const adminLoginRateLimiter = new AdminLoginRateLimiter();
   const adminMutationRateLimiter = new AdminMutationRateLimiter();
+  const publicFeedRateLimiter = new PublicFeedRateLimiter();
   const comingSoonRefreshCooldown = new WorkflowDispatchCooldown();
   if (!adminAuth.isConfigured()) console.warn('Admin authentication is unavailable: XMASDB_ADMIN_PASSWORD and XMASDB_SESSION_SECRET are required.');
   const isProduction = process.env.NODE_ENV === 'production';
@@ -120,6 +135,19 @@ async function startServer() {
   const requireSameOrigin = (req: express.Request, res: express.Response, next: express.NextFunction) => {
     if (!isSameOriginMutation(req)) return res.status(403).json({ error: 'Forbidden' });
     return next();
+  };
+
+  const sendTrackedJsonFeed = (req: express.Request, res: express.Response, definition: Parameters<typeof trackSuccessfulFeedResponse>[1], body: string, rateLimit = true) => {
+    if (rateLimit) {
+      const decision = publicFeedRateLimiter.reserve(getRequestClientIp(req), definition.id);
+      if (!decision.reservation) {
+        return res.status(429).setHeader('Retry-After', String(decision.retryAfterSeconds)).json({ error: 'Too many feed requests. Please try again later.' });
+      }
+      res.once('finish', () => decision.reservation!.complete(res.statusCode));
+    }
+    res.setHeader('Content-Type', 'application/json; charset=utf-8');
+    trackSuccessfulFeedResponse(res, definition, contactDataDir);
+    return res.send(body);
   };
 
   // Enable CORS headers for feeds so external tools like Radarr or curl can fetch without friction
@@ -184,33 +212,28 @@ async function startServer() {
   // =========================================================================
 
   // All Networks Radarr Feed
-  app.get(['/json/all.json', '/api/feeds/all.json', '/api/feeds/radarr.json'], (_req, res) => {
-    res.setHeader('Content-Type', 'application/json; charset=utf-8');
-    res.send(getRadarrAllFeedJson());
+  app.get(['/json/all.json', '/api/feeds/all.json', '/api/feeds/radarr.json'], (req, res) => {
+    return sendTrackedJsonFeed(req, res, { id: 'collection:all', name: 'All Movies', type: 'collection' }, getRadarrAllFeedJson());
   });
 
   // Hallmark Radarr Feed
-  app.get(['/json/hallmark.json', '/api/feeds/hallmark.json'], (_req, res) => {
-    res.setHeader('Content-Type', 'application/json; charset=utf-8');
-    res.send(getRadarrNetworkFeedJson('hallmark'));
+  app.get(['/json/hallmark.json', '/api/feeds/hallmark.json'], (req, res) => {
+    return sendTrackedJsonFeed(req, res, { id: 'collection:hallmark', name: 'Hallmark', type: 'collection' }, getRadarrNetworkFeedJson('hallmark'));
   });
 
   // Lifetime Radarr Feed
-  app.get(['/json/lifetime.json', '/api/feeds/lifetime.json'], (_req, res) => {
-    res.setHeader('Content-Type', 'application/json; charset=utf-8');
-    res.send(getRadarrNetworkFeedJson('lifetime'));
+  app.get(['/json/lifetime.json', '/api/feeds/lifetime.json'], (req, res) => {
+    return sendTrackedJsonFeed(req, res, { id: 'collection:lifetime', name: 'Lifetime', type: 'collection' }, getRadarrNetworkFeedJson('lifetime'));
   });
 
   // GAF Radarr Feed
-  app.get(['/json/gaf.json', '/api/feeds/gaf.json'], (_req, res) => {
-    res.setHeader('Content-Type', 'application/json; charset=utf-8');
-    res.send(getRadarrNetworkFeedJson('gaf'));
+  app.get(['/json/gaf.json', '/api/feeds/gaf.json'], (req, res) => {
+    return sendTrackedJsonFeed(req, res, { id: 'collection:gaf', name: 'GAF', type: 'collection' }, getRadarrNetworkFeedJson('gaf'));
   });
 
   // UPtv Radarr Feed
-  app.get(['/json/uptv.json', '/api/feeds/uptv.json'], (_req, res) => {
-    res.setHeader('Content-Type', 'application/json; charset=utf-8');
-    res.send(getRadarrNetworkFeedJson('uptv'));
+  app.get(['/json/uptv.json', '/api/feeds/uptv.json'], (req, res) => {
+    return sendTrackedJsonFeed(req, res, { id: 'collection:uptv', name: 'UPtv', type: 'collection' }, getRadarrNetworkFeedJson('uptv'));
   });
 
   // Per-Year Radarr Feed
@@ -219,8 +242,7 @@ async function startServer() {
     if (isNaN(year)) {
       return res.status(400).json({ error: 'Invalid year specified' });
     }
-    res.setHeader('Content-Type', 'application/json; charset=utf-8');
-    res.send(getRadarrYearFeedJson(year));
+    return sendTrackedJsonFeed(req, res, getYearFeedDefinition(year), getRadarrYearFeedJson(year));
   });
 
   // Per-Actor Radarr Feed by TMDB Person ID
@@ -233,32 +255,33 @@ async function startServer() {
     if (!data) {
       return res.status(404).json({ error: 'Actor not found' });
     }
-    res.setHeader('Content-Type', 'application/json; charset=utf-8');
-    res.send(data);
+    const definition = getActorFeedDefinition(tmdbPersonId);
+    if (!definition) return res.status(404).json({ error: 'Actor not found' });
+    return sendTrackedJsonFeed(req, res, definition, data);
   });
 
   // =========================================================================
   // INTERNAL CANONICAL RICH METADATA ENDPOINTS
   // =========================================================================
 
-  app.get(['/api/metadata/all.json', '/json/metadata/all.json'], (_req, res) => {
-    res.setHeader('Content-Type', 'application/json; charset=utf-8');
-    res.send(getFullDatabaseJson());
+  app.get(['/api/metadata/all.json', '/json/metadata/all.json'], (req, res) => {
+    return sendTrackedJsonFeed(req, res, getMetadataFeedDefinition('all', 'All Metadata'), getFullDatabaseJson(), false);
   });
 
-  app.get(['/api/metadata/hallmark.json'], (_req, res) => {
-    res.setHeader('Content-Type', 'application/json; charset=utf-8');
-    res.send(getBrandMoviesRichJson('hallmark'));
+  app.get(['/api/metadata/hallmark.json'], (req, res) => {
+    return sendTrackedJsonFeed(req, res, getMetadataFeedDefinition('hallmark', 'Hallmark Metadata'), getBrandMoviesRichJson('hallmark'), false);
   });
 
-  app.get(['/api/metadata/lifetime.json'], (_req, res) => {
-    res.setHeader('Content-Type', 'application/json; charset=utf-8');
-    res.send(getBrandMoviesRichJson('lifetime'));
+  app.get(['/api/metadata/lifetime.json'], (req, res) => {
+    return sendTrackedJsonFeed(req, res, getMetadataFeedDefinition('lifetime', 'Lifetime Metadata'), getBrandMoviesRichJson('lifetime'), false);
   });
 
-  app.get(['/json/actors.json', '/api/metadata/actors.json', '/api/feeds/actors.json'], (_req, res) => {
-    res.setHeader('Content-Type', 'application/json; charset=utf-8');
-    res.send(getActorsRichJson());
+  app.get(['/api/metadata/uptv.json'], (req, res) => {
+    return sendTrackedJsonFeed(req, res, getMetadataFeedDefinition('uptv', 'UPtv Metadata'), getBrandMoviesRichJson('uptv'), false);
+  });
+
+  app.get(['/json/actors.json', '/api/metadata/actors.json', '/api/feeds/actors.json'], (req, res) => {
+    return sendTrackedJsonFeed(req, res, getMetadataFeedDefinition('actors', 'Actor Metadata'), getActorsRichJson(), false);
   });
 
   app.get(['/json/actors/:tmdbPersonId/metadata.json', '/api/metadata/actors/:tmdbPersonId.json'], (req, res) => {
@@ -270,8 +293,9 @@ async function startServer() {
     if (!data) {
       return res.status(404).json({ error: 'Actor not found' });
     }
-    res.setHeader('Content-Type', 'application/json; charset=utf-8');
-    res.send(data);
+    const actor = getActorFeedDefinition(tmdbPersonId);
+    if (!actor) return res.status(404).json({ error: 'Actor not found' });
+    return sendTrackedJsonFeed(req, res, getMetadataFeedDefinition(`actor:${tmdbPersonId}`, `${actor.name} Metadata`), data, false);
   });
 
   // RSS Feed XML
@@ -395,6 +419,15 @@ async function startServer() {
       });
     } catch {
       return res.status(500).json({ error: 'Submissions could not be read safely.' });
+    }
+  });
+
+  app.get('/api/admin/feed-statistics', requireAdmin, async (_req, res) => {
+    try {
+      return res.setHeader('Cache-Control', 'no-store').json(await getFeedStatistics(new Date(), contactDataDir));
+    } catch (error) {
+      console.error(`[Admin Feed Statistics] ${error instanceof Error ? error.message : 'statistics could not be read'}`);
+      return res.status(500).json({ error: 'Feed statistics could not be read safely.' });
     }
   });
 

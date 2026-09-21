@@ -10,7 +10,7 @@ export const PrivacyPage: React.FC = () => (
       <section>
         <h2 className="font-heading text-xl font-semibold text-[#1A3D2F]">Your privacy</h2>
         <p className="mt-2">XmasDB is a small personal Christmas movie database, not a commercial tracking platform. The site does not require user accounts, collect personal information through forms, sell personal data, use advertising trackers or build advertising profiles.</p>
-        <p className="mt-3">That does not mean no technical information exists anywhere in the delivery of the site. Hosting, CDN or other infrastructure may process normal request information such as IP addresses, browser details and server logs to deliver, secure and keep the site running. That is different from XmasDB deliberately collecting personal information for its own database or advertising.</p>
+        <p className="mt-3">That does not mean no technical information exists anywhere in the delivery of the site. Hosting, CDN or other infrastructure may process normal request information such as IP addresses, browser details and server logs to deliver, secure and keep the site running. Public feed IP addresses may also be used temporarily to enforce feed rate limits; raw IP addresses are not written to XmasDB feed statistics. That is different from XmasDB deliberately collecting personal information for its own database or advertising.</p>
       </section>
       <section>
         <h2 className="font-heading text-xl font-semibold text-[#1A3D2F]">The catalogue is curated</h2>

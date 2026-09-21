@@ -35,6 +35,7 @@ export function getServerSeo(pathname: string, search = ''): SeoDocument {
   if (clean === 'contact') return buildContactSeo();
   if (clean === 'admin/login') return { title: 'Admin Login | XmasDB', description: 'Private XmasDB administration.', canonicalPath: '/admin/login/', noIndex: true };
   if (clean === 'admin/submissions') return { title: 'Submissions | XmasDB', description: 'Private XmasDB administration.', canonicalPath: '/admin/submissions/', noIndex: true };
+  if (clean === 'admin/feed-statistics') return { title: 'Feed Statistics | XmasDB', description: 'Private XmasDB administration.', canonicalPath: '/admin/feed-statistics/', noIndex: true };
   if (clean === 'admin/movies/add') return { title: 'Add Movies | XmasDB', description: 'Private XmasDB administration.', canonicalPath: '/admin/movies/add/', noIndex: true };
 
   const yearMatch = clean.match(/^year\/(\d+)$/i);
@@ -94,6 +95,7 @@ export function getCanonicalRedirect(pathname: string): string | null {
   if (clean === 'contact') return pathname === '/contact/' ? null : '/contact/';
   if (clean === 'admin/login') return pathname === '/admin/login/' ? null : '/admin/login/';
   if (clean === 'admin/submissions') return pathname === '/admin/submissions/' ? null : '/admin/submissions/';
+  if (clean === 'admin/feed-statistics') return pathname === '/admin/feed-statistics/' ? null : '/admin/feed-statistics/';
   if (clean === 'admin/movies/add') return pathname === '/admin/movies/add/' ? null : '/admin/movies/add/';
   if (/^year\/\d+$/i.test(clean)) return pathname === `/${clean}/` ? null : `/${clean}/`;
   const brandMatch = clean.match(/^([^/]+)(?:\/(\d+))?$/i);
@@ -201,9 +203,9 @@ function renderListingContent(pathname: string, payload: unknown): string {
 
 function renderRouteContent(pathname: string, payload: unknown): string {
   const clean = routePath(pathname);
-  if (!clean) return '<main id="server-rendered-content"><article><h1>Christmas Movie Database</h1><p>Browse Christmas movies, actors and holiday filmographies from Hallmark, Lifetime and GAF.</p></article></main>';
+  if (!clean) return '<main id="server-rendered-content"><article><h1>Christmas Movie Database</h1><p>Browse Christmas movies, actors and holiday filmographies from Hallmark, Lifetime, GAF and UPtv.</p></article></main>';
   if (clean === 'movies' || clean === 'all' || /^year\/\d+$/i.test(clean) || getBrandBySlug(clean.split('/')[0])) return renderListingContent(pathname, payload);
-  if (clean === 'feeds') return '<main id="server-rendered-content"><article><h1>Christmas Movie Feeds</h1><p>Use XmasDB Radarr and JSON feeds to browse Christmas movies by network, year and actor.</p><h2>Available feeds</h2><ul><li>All movies</li><li>Hallmark, Lifetime and GAF networks</li><li>Year and actor feeds</li></ul></article></main>';
+  if (clean === 'feeds') return '<main id="server-rendered-content"><article><h1>Christmas Movie Feeds</h1><p>Use XmasDB Radarr and JSON feeds to browse Christmas movies by network, year and actor.</p><h2>Available feeds</h2><ul><li>All movies</li><li>Hallmark, Lifetime, GAF and UPtv networks</li><li>Year and actor feeds</li></ul></article></main>';
   if (clean === 'about') return '<main id="server-rendered-content"><article><h1>Why I Built the Christmas Movie Database</h1><p>XmasDB is a curated Christmas movie database covering holiday films, networks and actors.</p></article></main>';
   if (clean === 'privacy') return '<main id="server-rendered-content"><article><h1>Privacy &amp; AI</h1><p>XmasDB explains how this site handles privacy, analytics and AI-assisted catalogue work.</p></article></main>';
   if (clean === 'contact') return '<main id="server-rendered-content"><article><h1>Contact XmasDB</h1><p>Send questions, corrections and Christmas movie catalogue suggestions to XmasDB.</p></article></main>';

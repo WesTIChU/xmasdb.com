@@ -6,6 +6,7 @@ import { MOVIES } from '../src/data/movies';
 import { BRANDS } from '../src/data/brands';
 import { writeFileAtomically } from '../src/utils/atomic-file';
 import { buildMovieFromTmdb, generateMoviesModule, type MovieBrand, type MovieStatus } from '../src/server/movie-import';
+import { fetchTmdbMovie, requireTmdbApiKey } from '../src/utils/tmdb';
 
 const moviesPath = path.join(process.cwd(), 'src/data/movies.ts');
 const execFileAsync = promisify(execFile);
@@ -25,7 +26,9 @@ async function main() {
   if (!['collection', 'coming-soon'].includes(status)) throw new Error('--status must be collection or coming-soon.');
   if (MOVIES.some((movie) => movie.tmdbId === tmdbId)) throw new Error(`Movie ${tmdbId} is already in the local catalogue.`);
 
-  const movie = buildMovieFromTmdb(tmdbId, { title: `TMDB movie ${tmdbId}` }, brandId as MovieBrand, status as MovieStatus);
+  const metadata = await fetchTmdbMovie(tmdbId, requireTmdbApiKey());
+  if (!metadata) throw new Error(`TMDB returned no movie data for ${tmdbId}.`);
+  const movie = buildMovieFromTmdb(tmdbId, metadata, brandId as MovieBrand, status as MovieStatus);
   if (slug !== `tmdb-${tmdbId}`) movie.slug = slug;
   await writeFileAtomically(moviesPath, generateMoviesModule([...MOVIES, movie]));
   console.log(`Added local catalogue movie ${tmdbId} as ${brandId}; fetching TMDB metadata immediately.`);

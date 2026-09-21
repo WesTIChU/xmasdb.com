@@ -83,6 +83,7 @@ type RouteDescriptor =
   | { type: 'contact' }
   | { type: 'admin-login' }
   | { type: 'admin-submissions' }
+  | { type: 'admin-feed-statistics' }
   | { type: 'admin-add-movies' }
   | { type: 'not-found' };
 
@@ -97,6 +98,7 @@ const AboutPage = lazy(() => import('./components/AboutPage').then(({ AboutPage:
 const PrivacyPage = lazy(() => import('./components/PrivacyPage').then(({ PrivacyPage: component }) => ({ default: component })));
 const AdminLoginPage = lazy(() => import('./components/AdminLoginPage').then(({ AdminLoginPage: component }) => ({ default: component })));
 const AdminSubmissionsPage = lazy(() => import('./components/AdminSubmissionsPage').then(({ AdminSubmissionsPage: component }) => ({ default: component })));
+const AdminFeedStatisticsPage = lazy(() => import('./components/AdminFeedStatisticsPage').then(({ AdminFeedStatisticsPage: component }) => ({ default: component })));
 const AdminAddMoviesPage = lazy(() => import('./components/AdminAddMoviesPage').then(({ AdminAddMoviesPage: component }) => ({ default: component })));
 
 function HomeLoadingSkeleton() {
@@ -173,6 +175,7 @@ export function parseRoute(currentPath: string): RouteDescriptor {
   if (clean === 'contact') return { type: 'contact' };
   if (clean === 'admin/login') return { type: 'admin-login' };
   if (clean === 'admin/submissions') return { type: 'admin-submissions' };
+  if (clean === 'admin/feed-statistics') return { type: 'admin-feed-statistics' };
   if (clean === 'admin/movies/add') return { type: 'admin-add-movies' };
 
   const yearArchiveMatch = clean.match(/^year\/(\d+)$/i);
@@ -244,6 +247,7 @@ function requestFor(descriptor: RouteDescriptor, catalogueSearch: string): strin
       return null;
     case 'admin-login':
     case 'admin-submissions':
+    case 'admin-feed-statistics':
     case 'admin-add-movies':
       return null;
     default:
@@ -306,7 +310,7 @@ export default function App() {
   const catalogueSearch = currentPath.includes('?') ? currentPath.slice(currentPath.indexOf('?')) : '';
   const catalogueQuery = useMemo(() => parseCatalogueQuery(catalogueSearch), [catalogueSearch]);
   const requestUrl = useMemo(() => requestFor(descriptor, catalogueSearch), [descriptor, catalogueSearch]);
-  const isStaticRoute = descriptor.type === 'contact' || descriptor.type === 'admin-login' || descriptor.type === 'admin-submissions' || descriptor.type === 'admin-add-movies';
+  const isStaticRoute = descriptor.type === 'contact' || descriptor.type === 'admin-login' || descriptor.type === 'admin-submissions' || descriptor.type === 'admin-feed-statistics' || descriptor.type === 'admin-add-movies';
 
   // Resolve the current route's data from the shared client cache / API.
   const [view, setView] = useState<{ url: string; status: ViewStatus; payload: unknown }>(() => {
@@ -413,11 +417,11 @@ export default function App() {
       updateSeoTags(buildPrivacySeo());
     } else if (descriptor.type === 'contact') {
       updateSeoTags(buildContactSeo());
-    } else if (descriptor.type === 'admin-login' || descriptor.type === 'admin-submissions' || descriptor.type === 'admin-add-movies') {
+    } else if (descriptor.type === 'admin-login' || descriptor.type === 'admin-submissions' || descriptor.type === 'admin-feed-statistics' || descriptor.type === 'admin-add-movies') {
       updateSeoTags({
         title: 'Admin | XmasDB',
         description: 'Private XmasDB administration.',
-        canonicalPath: descriptor.type === 'admin-login' ? '/admin/login/' : descriptor.type === 'admin-submissions' ? '/admin/submissions/' : '/admin/movies/add/',
+        canonicalPath: descriptor.type === 'admin-login' ? '/admin/login/' : descriptor.type === 'admin-submissions' ? '/admin/submissions/' : descriptor.type === 'admin-feed-statistics' ? '/admin/feed-statistics/' : '/admin/movies/add/',
         noIndex: true,
       });
     }
@@ -599,6 +603,8 @@ export default function App() {
             {descriptor.type === 'admin-login' && <AdminLoginPage onAuthenticated={() => navigate('/admin/submissions/')} />}
 
             {descriptor.type === 'admin-submissions' && <AdminSubmissionsPage onNavigate={navigate} />}
+
+            {descriptor.type === 'admin-feed-statistics' && <AdminFeedStatisticsPage onNavigate={navigate} />}
 
             {descriptor.type === 'admin-add-movies' && <AdminAddMoviesPage onNavigate={navigate} />}
 

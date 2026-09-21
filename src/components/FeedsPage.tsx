@@ -19,6 +19,7 @@ const feedDescriptions: Record<string, string> = {
   hallmark: 'Hallmark Christmas movies in XmasDB.',
   lifetime: 'Lifetime Christmas movies in XmasDB.',
   gaf: 'Great American Family Christmas movies in XmasDB.',
+  uptv: 'UPtv Christmas movies in XmasDB.',
 };
 
 function CopyFeedAction({
@@ -152,21 +153,40 @@ export const FeedsPage: React.FC<{ meta: FeedsMetaPayload }> = ({ meta }) => {
           <NavigationLink href="#feeds-collections" squiggleColor="#DCCB9C" className="text-[#FAF7F2] hover:text-[#DCCB9C] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#DCCB9C]">Collections</NavigationLink>
           <span className="text-[#B8860B]" aria-hidden="true">·</span>
           <NavigationLink href="#feeds-years" squiggleColor="#DCCB9C" className="text-[#FAF7F2] hover:text-[#DCCB9C] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#DCCB9C]">Years</NavigationLink>
-          <span className="text-[#B8860B]" aria-hidden="true">·</span>
-          <NavigationLink href="#feeds-actors" squiggleColor="#DCCB9C" className="text-[#FAF7F2] hover:text-[#DCCB9C] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#DCCB9C]">Actor Feeds</NavigationLink>
+           <span className="text-[#B8860B]" aria-hidden="true">·</span>
+           <NavigationLink href="#feeds-actors" squiggleColor="#DCCB9C" className="text-[#FAF7F2] hover:text-[#DCCB9C] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#DCCB9C]">Actor Feeds</NavigationLink>
+           <span className="text-[#B8860B]" aria-hidden="true">·</span>
+           <NavigationLink href="#feeds-faq" squiggleColor="#DCCB9C" className="text-[#FAF7F2] hover:text-[#DCCB9C] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#DCCB9C]">FAQ</NavigationLink>
         </nav>
       </header>
 
         <section id="feeds-setup" className="scroll-mt-6 pt-6 sm:scroll-mt-8 sm:pt-7" aria-labelledby="radarr-setup-heading">
         <MajorSectionHeading id="radarr-setup-heading">HOW TO ADD TO RADARR</MajorSectionHeading>
-        <div className="mt-4 max-w-2xl space-y-2 font-body text-sm leading-relaxed text-[#59524A]">
-          <p>In Radarr go to:</p>
-          <p className="font-semibold text-[#1A3D2F]">Settings → Import Lists → + → Advanced List → StevenLu Custom</p>
-          <p>Paste one of the XmasDB feed URLs below and save.</p>
+        <div className="mt-5 grid gap-5 sm:grid-cols-3 sm:gap-0">
+          <div className="sm:border-r sm:border-[#E7DFD5] sm:pr-5">
+            <div className="flex items-center gap-2">
+              <span className="font-sans-clean text-sm font-semibold text-[#B8860B]">1</span>
+              <h3 className="font-sans-clean text-xs font-semibold uppercase tracking-[0.12em] text-[#1A3D2F]">ADD AN IMPORT LIST</h3>
+            </div>
+            <p className="mt-2 font-body text-sm leading-relaxed text-[#59524A]">Settings → Import Lists → + → Advanced List → StevenLu Custom</p>
+          </div>
+          <div className="sm:border-r sm:border-[#E7DFD5] sm:px-5">
+            <div className="flex items-center gap-2">
+              <span className="font-sans-clean text-sm font-semibold text-[#B8860B]">2</span>
+              <h3 className="font-sans-clean text-xs font-semibold uppercase tracking-[0.12em] text-[#1A3D2F]">PASTE THE FEED URL</h3>
+            </div>
+            <p className="mt-2 font-body text-sm leading-relaxed text-[#59524A]">Copy any XmasDB feed below and paste its URL into Radarr.</p>
+          </div>
+          <div className="sm:pl-5">
+            <div className="flex items-center gap-2">
+              <span className="font-sans-clean text-sm font-semibold text-[#B8860B]">3</span>
+              <h3 className="font-sans-clean text-xs font-semibold uppercase tracking-[0.12em] text-[#1A3D2F]">SAVE</h3>
+            </div>
+            <p className="mt-2 font-body text-sm leading-relaxed text-[#59524A]">That's it — XmasDB keeps the list updated automatically.</p>
+          </div>
         </div>
-        <div className="mt-4 space-y-1 font-sans-clean text-xs text-[#6B6258]">
-          <p>XmasDB automatically keeps these lists updated.</p>
-           <p>Upcoming movies become eligible <span className="font-semibold">7 days</span> before their premiere. New releases often appear in XmasDB while their metadata is still incomplete, so this short delay gives details such as posters, cast, runtime and other movie information time to be updated before the movie is sent to Radarr.</p>
+        <div className="mt-5 space-y-2 font-sans-clean text-xs leading-relaxed text-[#736B63]">
+          <p>Upcoming movies become feed-eligible <span className="font-semibold">7 days</span> before their premiere, giving posters, cast, runtime and other movie information time to be updated before they&apos;re sent to Radarr.</p>
         </div>
       </section>
 
@@ -175,7 +195,7 @@ export const FeedsPage: React.FC<{ meta: FeedsMetaPayload }> = ({ meta }) => {
           <div className="min-w-0">
             <h2 id="radarr-tags-tip-heading" className="font-sans-clean text-xs font-semibold uppercase tracking-[0.16em] text-[#1A3D2F]">RADARR TIP: USE TAGS</h2>
             <div className="mt-2 space-y-2 font-body text-sm leading-relaxed text-[#59524A]">
-              <p>When adding an XmasDB import list to Radarr, give the list its own tag, for example <code className="rounded bg-[#F2E8CF] px-1 py-0.5 font-mono text-xs text-[#403A34]">xmasdb-hallmark</code>, <code className="rounded bg-[#F2E8CF] px-1 py-0.5 font-mono text-xs text-[#403A34]">xmasdb-lifetime</code>, or <code className="rounded bg-[#F2E8CF] px-1 py-0.5 font-mono text-xs text-[#403A34]">xmasdb-gaf</code>.</p>
+              <p>When adding an XmasDB import list to Radarr, give the list its own tag, for example <code className="rounded bg-[#F2E8CF] px-1 py-0.5 font-mono text-xs text-[#403A34]">xmasdb-hallmark</code>, <code className="rounded bg-[#F2E8CF] px-1 py-0.5 font-mono text-xs text-[#403A34]">xmasdb-lifetime</code>, <code className="rounded bg-[#F2E8CF] px-1 py-0.5 font-mono text-xs text-[#403A34]">xmasdb-gaf</code>, or <code className="rounded bg-[#F2E8CF] px-1 py-0.5 font-mono text-xs text-[#403A34]">xmasdb-uptv</code>.</p>
               <p>Tags make it much easier to identify and filter movies added by XmasDB later, especially if your Radarr library also contains regular movies.</p>
               <p>Example: Hallmark feed → <code className="rounded bg-[#F2E8CF] px-1 py-0.5 font-mono text-xs text-[#403A34]">xmasdb-hallmark</code></p>
               <p>Setting this up from the start makes managing a large Christmas collection much easier.</p>
@@ -190,10 +210,7 @@ export const FeedsPage: React.FC<{ meta: FeedsMetaPayload }> = ({ meta }) => {
          <div className="mb-2">
            <MajorSectionHeading id="collections-heading">CHOOSE A COLLECTION</MajorSectionHeading>
          </div>
-         <p className="mb-5 mt-3 max-w-2xl font-sans-clean text-xs leading-relaxed text-[#736B63] sm:text-sm">
-           <span className="font-semibold text-[#59524A]">Why are these numbers different?</span> Feed counts may be lower than the main XmasDB catalogue totals. Upcoming movies are added to XmasDB as soon as we discover them, but they do not become eligible for Radarr feeds until 7 days before their premiere. This gives their metadata time to fill out before they are sent to Radarr.
-         </p>
-         <div className="grid gap-x-6 gap-y-6 sm:grid-cols-2 sm:[&>article:nth-last-child(-n+2)]:border-b-0">
+          <div className="grid gap-x-6 gap-y-6 sm:grid-cols-2 sm:[&>article:nth-last-child(-n+2)]:border-b-0">
           <FeedCard
             id="radarr-all"
             title="ALL MOVIES"
@@ -247,7 +264,51 @@ export const FeedsPage: React.FC<{ meta: FeedsMetaPayload }> = ({ meta }) => {
           Every actor in XmasDB has their own Radarr feed containing their eligible Christmas movies. Open an actor page and choose the JSON Feed link to copy their personal feed URL.
         </p>
         <code className="mt-3 block break-all font-mono text-xs leading-relaxed text-[#6B6258]">/json/actors/&#123;tmdbPersonId&#125;.json</code>
-      </section>
-    </div>
+       </section>
+
+       <HollyDivider className="my-8 sm:my-10" lineClassName="w-6 sm:w-8" ornamentClassName="h-4 w-12 sm:h-5 sm:w-14" />
+
+       <section id="feeds-faq" className="scroll-mt-6 sm:scroll-mt-8" aria-labelledby="feeds-faq-heading">
+         <MajorSectionHeading id="feeds-faq-heading">FREQUENTLY ASKED QUESTIONS</MajorSectionHeading>
+         <div className="mt-4 divide-y divide-[#E7DFD5] border-y border-[#E7DFD5]">
+           <details className="group">
+             <summary className="flex cursor-pointer list-none items-center justify-between gap-4 py-4 font-sans-clean text-sm font-semibold text-[#1A3D2F] marker:hidden focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#B8860B] [&::-webkit-details-marker]:hidden">Why is the feed movie count lower than the XmasDB catalogue count?<span className="shrink-0 text-lg font-normal text-[#B8860B] transition-transform group-open:rotate-45" aria-hidden="true">+</span></summary>
+             <p className="max-w-2xl pb-4 pr-8 font-body text-sm leading-relaxed text-[#736B63]">Upcoming movies can be added to the XmasDB catalogue as soon as they&apos;re discovered, but they don&apos;t become eligible for Radarr feeds until 7 days before their premiere. This gives metadata such as posters, cast and runtime time to populate.</p>
+           </details>
+           <details className="group">
+             <summary className="flex cursor-pointer list-none items-center justify-between gap-4 py-4 font-sans-clean text-sm font-semibold text-[#1A3D2F] marker:hidden focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#B8860B] [&::-webkit-details-marker]:hidden">Do the XmasDB feeds update automatically?<span className="shrink-0 text-lg font-normal text-[#B8860B] transition-transform group-open:rotate-45" aria-hidden="true">+</span></summary>
+             <p className="max-w-2xl pb-4 pr-8 font-body text-sm leading-relaxed text-[#736B63]">Yes. Once the feed URL is added to Radarr, the URL stays the same and XmasDB keeps the contents updated automatically.</p>
+           </details>
+           <details className="group">
+             <summary className="flex cursor-pointer list-none items-center justify-between gap-4 py-4 font-sans-clean text-sm font-semibold text-[#1A3D2F] marker:hidden focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#B8860B] [&::-webkit-details-marker]:hidden">How often can Radarr check an XmasDB feed?<span className="shrink-0 text-lg font-normal text-[#B8860B] transition-transform group-open:rotate-45" aria-hidden="true">+</span></summary>
+             <p className="max-w-2xl pb-4 pr-8 font-body text-sm leading-relaxed text-[#736B63]">Each individual feed allows up to 60 requests per hour per client. Normal Radarr polling is comfortably within this limit, so you should not need to change anything.</p>
+           </details>
+           <details className="group">
+             <summary className="flex cursor-pointer list-none items-center justify-between gap-4 py-4 font-sans-clean text-sm font-semibold text-[#1A3D2F] marker:hidden focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#B8860B] [&::-webkit-details-marker]:hidden">Why am I getting HTTP 429 Too Many Requests?<span className="shrink-0 text-lg font-normal text-[#B8860B] transition-transform group-open:rotate-45" aria-hidden="true">+</span></summary>
+             <p className="max-w-2xl pb-4 pr-8 font-body text-sm leading-relaxed text-[#736B63]">The same feed has been requested unusually frequently. XmasDB returns a Retry-After value telling the client when it can try again. Normal Radarr polling should not normally trigger this.</p>
+           </details>
+           <details className="group">
+             <summary className="flex cursor-pointer list-none items-center justify-between gap-4 py-4 font-sans-clean text-sm font-semibold text-[#1A3D2F] marker:hidden focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#B8860B] [&::-webkit-details-marker]:hidden">Should I use Radarr tags with XmasDB feeds?<span className="shrink-0 text-lg font-normal text-[#B8860B] transition-transform group-open:rotate-45" aria-hidden="true">+</span></summary>
+             <div className="max-w-2xl pb-4 pr-8 font-body text-sm leading-relaxed text-[#736B63]">
+               <p>Yes. Separate tags make movies imported through XmasDB easier to identify and filter later.</p>
+               <ul className="mt-2 space-y-1 pl-5 font-mono text-xs text-[#59524A]">
+                 <li><code>xmasdb-hallmark</code></li>
+                 <li><code>xmasdb-lifetime</code></li>
+                 <li><code>xmasdb-gaf</code></li>
+                 <li><code>xmasdb-uptv</code></li>
+               </ul>
+             </div>
+           </details>
+           <details className="group">
+             <summary className="flex cursor-pointer list-none items-center justify-between gap-4 py-4 font-sans-clean text-sm font-semibold text-[#1A3D2F] marker:hidden focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#B8860B] [&::-webkit-details-marker]:hidden">Can I use more than one XmasDB feed?<span className="shrink-0 text-lg font-normal text-[#B8860B] transition-transform group-open:rotate-45" aria-hidden="true">+</span></summary>
+             <p className="max-w-2xl pb-4 pr-8 font-body text-sm leading-relaxed text-[#736B63]">Yes. Hallmark, Lifetime, GAF, UPtv, year and other supported feeds can be added separately. Each feed has its own URL and its own rate-limit allowance.</p>
+           </details>
+           <details className="group">
+             <summary className="flex cursor-pointer list-none items-center justify-between gap-4 py-4 font-sans-clean text-sm font-semibold text-[#1A3D2F] marker:hidden focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#B8860B] [&::-webkit-details-marker]:hidden">What happens when a new Christmas movie is announced?<span className="shrink-0 text-lg font-normal text-[#B8860B] transition-transform group-open:rotate-45" aria-hidden="true">+</span></summary>
+             <p className="max-w-2xl pb-4 pr-8 font-body text-sm leading-relaxed text-[#736B63]">XmasDB can add the movie to the catalogue when it&apos;s discovered. If its premiere is still in the future it follows the existing Coming Soon behaviour, and it becomes Radarr-feed eligible 7 days before its premiere.</p>
+           </details>
+         </div>
+       </section>
+     </div>
   );
 };

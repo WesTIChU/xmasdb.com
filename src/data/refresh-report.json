@@ -1,12 +1,12 @@
 {
-  "refreshedAt": "2026-09-19T17:17:04.029Z",
-  "catalogueMovies": 358,
-  "moviesWithTmdbIds": 358,
-  "moviesSuccessfullyRefreshed": 358,
+  "refreshedAt": "2026-09-21T14:35:36.703Z",
+  "catalogueMovies": 684,
+  "moviesWithTmdbIds": 684,
+  "moviesSuccessfullyRefreshed": 1,
   "movieFailures": [],
-  "moviesWithTmdbRating": 356,
-  "moviesWithoutTmdbRating": 2,
-  "uniqueCatalogueActors": 3656,
-  "actorsSuccessfullyRefreshed": 3656,
+  "moviesWithTmdbRating": 647,
+  "moviesWithoutTmdbRating": 37,
+  "uniqueCatalogueActors": 17,
+  "actorsSuccessfullyRefreshed": 17,
   "actorFailures": []
 }

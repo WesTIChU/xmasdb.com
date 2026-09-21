@@ -1,6 +1,6 @@
 # XmasDB
 
-XmasDB.com is a curated Christmas movie database and archive covering Hallmark, Lifetime, Great American Family (GAF), and other holiday networks.
+XmasDB.com is a curated Christmas movie database and archive covering Hallmark, Lifetime, Great American Family (GAF), UPtv, and other holiday networks.
 
 The site provides:
 
@@ -56,6 +56,6 @@ The repository includes scripts for refreshing TMDB and actor data, importing or
 
 ## Feeds
 
-The web app exposes public JSON feeds under `/json/`, including the full catalogue, brand feeds such as `/json/hallmark.json`, and year feeds such as `/json/year/2025.json`. These feeds are compatible with Radarr's StevenLu Custom list provider.
+The web app exposes public JSON feeds under `/json/`, including the full catalogue, brand feeds such as `/json/hallmark.json` and `/json/uptv.json`, and year feeds such as `/json/year/2025.json`. These feeds are compatible with Radarr's StevenLu Custom list provider.
 
 Movie information and artwork may be sourced from third-party services including TMDB. XmasDB's catalogue selection and organisation are maintained as a curated archive.

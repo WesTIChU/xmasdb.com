@@ -46,10 +46,10 @@ function withBreadcrumbs(schema: Record<string, unknown>, items: Array<{ name: s
 
 export function buildHomeSeo(totalMovies?: number): SeoDocument {
   const description = totalMovies
-    ? `Browse ${totalMovies} Christmas movies from Hallmark, Lifetime, GAF and other holiday networks on XmasDB, with cast, release details and movie feeds.`
-    : 'Browse Christmas movies from Hallmark, Lifetime, GAF and other holiday networks on XmasDB, with cast, release details and movie feeds.';
+    ? `Browse ${totalMovies} Christmas movies from Hallmark, Lifetime, GAF, UPtv and other holiday networks on XmasDB, with cast, release details and movie feeds.`
+    : 'Browse Christmas movies from Hallmark, Lifetime, GAF, UPtv and other holiday networks on XmasDB, with cast, release details and movie feeds.';
   return {
-    title: 'XmasDB - Christmas Movie Database | Hallmark, Lifetime & GAF',
+    title: 'XmasDB - Christmas Movie Database | Hallmark, Lifetime, GAF & UPtv',
     description,
     canonicalPath: '/',
     image: '/logo-1100.webp',
@@ -65,10 +65,10 @@ export function buildHomeSeo(totalMovies?: number): SeoDocument {
 
 export function buildMoviesSeo(totalMovies?: number): SeoDocument {
   return {
-    title: 'Christmas Movie Database - Hallmark, Lifetime & GAF Movies | XmasDB',
+    title: 'Christmas Movie Database - Hallmark, Lifetime, GAF & UPtv Movies | XmasDB',
     description: totalMovies
-      ? `Browse ${totalMovies} Christmas movies in the XmasDB catalogue, including Hallmark, Lifetime, GAF and other holiday network collections.`
-      : 'Browse the XmasDB catalogue of Christmas movies, including Hallmark, Lifetime, GAF and other holiday network collections.',
+      ? `Browse ${totalMovies} Christmas movies in the XmasDB catalogue, including Hallmark, Lifetime, GAF, UPtv and other holiday network collections.`
+      : 'Browse the XmasDB catalogue of Christmas movies, including Hallmark, Lifetime, GAF, UPtv and other holiday network collections.',
     canonicalPath: getMoviesPath(),
     image: '/logo-1100.webp',
     schema: {
@@ -214,7 +214,7 @@ export function buildActorSeo(actor: Actor, filmography: ActorFilmographyItem[] 
 }
 
 export function buildFeedsSeo(): SeoDocument {
-  const description = 'Use XmasDB JSON feeds with Radarr and compatible StevenLu custom list tools to browse Hallmark, Lifetime, GAF and other Christmas movie collections.';
+  const description = 'Use XmasDB JSON feeds with Radarr and compatible StevenLu custom list tools to browse Hallmark, Lifetime, GAF, UPtv and other Christmas movie collections.';
   return {
     title: 'Christmas Movie Radarr Lists & StevenLu JSON Feeds | XmasDB',
     description,
@@ -231,7 +231,7 @@ export function buildFeedsSeo(): SeoDocument {
 }
 
 export function buildAboutSeo(): SeoDocument {
-  const description = 'Why XmasDB exists: a personal, curated Christmas movie database with Hallmark, Lifetime and Great American Family movies, actor browsing and Radarr-compatible JSON feeds.';
+  const description = 'Why XmasDB exists: a personal, curated Christmas movie database with Hallmark, Lifetime, Great American Family, and UPtv movies, actor browsing and Radarr-compatible JSON feeds.';
   return {
     title: 'About XmasDB - Why I Built the Christmas Movie Database | XmasDB',
     description,

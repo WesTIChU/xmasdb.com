@@ -41,7 +41,7 @@ assert.match(buildFeedsSeo().title, /StevenLu/);
 // from it, while real brand/year responses must satisfy the complete shape.
 assert.equal(isCatalogueListingPayload(undefined), false);
 assert.equal(isCatalogueListingPayload({ movies: [], years: [] }), false);
-for (const brand of ['hallmark', 'lifetime', 'gaf']) {
+for (const brand of ['hallmark', 'lifetime', 'gaf', 'uptv']) {
   assert.equal(isCatalogueListingPayload(buildCatalogueListing(parseCatalogueQuery(''), brand, 2025)), true, `${brand}/2025 listing shape`);
 }
 assert.match(buildAboutSeo().title, /Why I Built the Christmas Movie Database/);
@@ -68,7 +68,7 @@ assert.equal(getCanonicalRedirect('/privacy'), '/privacy/');
 assert.equal(getServerSeo('/contact/').canonicalPath, '/contact/');
 assert.equal(getCanonicalRedirect('/contact'), '/contact/');
 
-for (const path of ['/', '/movies/', '/hallmark/', '/lifetime/', '/gaf/', '/feeds/', '/about/', '/privacy/', '/contact/']) {
+for (const path of ['/', '/movies/', '/hallmark/', '/lifetime/', '/gaf/', '/uptv/', '/feeds/', '/about/', '/privacy/', '/contact/']) {
   assert.notEqual(parseRoute(path).type, 'not-found', `${path} should resolve to a known route`);
 }
 assert.equal(parseRoute('/contact/').type, 'contact');
@@ -76,6 +76,7 @@ assert.equal(parseRoute('/contact').type, 'contact');
 assert.equal(parseRoute('/admin/login/').type, 'admin-login');
 assert.equal(parseRoute('/admin/submissions/').type, 'admin-submissions');
 assert.equal(parseRoute('/admin/movies/add/').type, 'admin-add-movies');
+assert.equal(parseRoute('/admin/feed-statistics/').type, 'admin-feed-statistics');
 assert.equal(parseRoute('/this-page-does-not-exist/').type, 'not-found');
 assert.equal(getServerSeo('/admin/login/').noIndex, true);
 assert.equal(getCanonicalRedirect('/admin/submissions'), '/admin/submissions/');

@@ -84,6 +84,30 @@ export interface AboutPayload {
 export interface PrivacyPayload {}
 export interface ContactPayload {}
 
+export type FeedStatisticsType = 'collection' | 'year' | 'actor' | 'metadata';
+
+export interface FeedStatisticsRow {
+  id: string;
+  name: string;
+  type: FeedStatisticsType;
+  totalPulls: number;
+  pullsToday: number;
+  pullsLast7Days: number;
+  pullsLast30Days: number;
+  lastPulledAt?: string;
+}
+
+export interface FeedStatisticsPayload {
+  generatedAt: string;
+  summary: {
+    totalPulls: number;
+    pullsToday: number;
+    pullsLast7Days: number;
+    pullsLast30Days: number;
+  };
+  feeds: FeedStatisticsRow[];
+}
+
 /** Full movie detail plus lightweight related cards from the same brand. */
 export interface MovieCrewCredit {
   tmdbPersonId: number;

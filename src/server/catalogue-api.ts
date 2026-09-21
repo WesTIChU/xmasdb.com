@@ -398,7 +398,7 @@ export function buildSearchResults(rawQuery: string): SearchResultsPayload {
 
 let homeCache: { dateKey: string; payload: HomePayload } | null = null;
 
-const DISCOVERY_BRAND_IDS = ['hallmark', 'lifetime', 'gaf'] as const;
+const DISCOVERY_BRAND_IDS = ['hallmark', 'lifetime', 'gaf', 'uptv'] as const;
 
 function getUtcDateKey(date: Date): string {
   return date.toISOString().slice(0, 10);

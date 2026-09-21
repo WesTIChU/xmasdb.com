@@ -9,6 +9,7 @@ assert.equal(extractTmdbId('1547913'), 1547913);
 assert.equal(extractTmdbId('https://www.themoviedb.org/movie/1547913-some-movie'), 1547913);
 assert.equal(extractTmdbId('not-a-movie'), undefined);
 assert.equal(normalizeBrand('Great American Family'), 'gaf');
+assert.equal(normalizeBrand('UPtv'), 'uptv');
 assert.equal(normalizeStatus('COMING-SOON'), 'coming-soon');
 
 const parsed = parseBulkMovieInput('1547913\n\n1064137 | lifetime | collection\n1234567 | GAF | coming-soon', 'hallmark', 'coming-soon');
@@ -16,6 +17,7 @@ assert.equal(parsed.items.length, 3, 'blank lines are ignored');
 assert.deepEqual(parsed.items[0], { line: 1, tmdbId: 1547913, brand: 'hallmark', status: 'coming-soon' });
 assert.deepEqual(parsed.items[1], { line: 3, tmdbId: 1064137, brand: 'lifetime', status: 'collection' });
 assert.deepEqual(parsed.items[2], { line: 4, tmdbId: 1234567, brand: 'gaf', status: 'coming-soon' });
+assert.deepEqual(parseBulkMovieInput('488262 | UPtv | collection', 'hallmark', 'coming-soon').items[0], { line: 1, tmdbId: 488262, brand: 'uptv', status: 'collection' });
 assert.equal(parseBulkMovieInput('1\n1', 'hallmark', 'collection').items[1].error?.includes('duplicate'), true);
 assert.equal(parseBulkMovieInput('1 | invalid | collection', 'hallmark', 'collection').items[0].error?.includes('unsupported brand'), true);
 assert.equal(parseBulkMovieInput('1 | hallmark | invalid', 'hallmark', 'collection').items[0].error?.includes('status'), true);
