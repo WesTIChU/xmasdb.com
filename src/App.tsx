@@ -1,4 +1,4 @@
-import { lazy, Suspense, useState, useEffect, useMemo } from 'react';
+import { lazy, Suspense, useState, useEffect, useMemo, useRef } from 'react';
 import { Header } from './components/Header';
 import { YearFilter } from './components/YearFilter';
 import { MovieGrid } from './components/MovieGrid';
@@ -65,6 +65,7 @@ import {
 } from './utils/seo';
 import { buildCatalogueUrl, parseCatalogueQuery } from './utils/catalogue-pagination';
 import { scoreActorSearchResult, scoreListingMovieTitle } from './utils/search-relevance';
+import { getGoatCounterPagePath, isGoatCounterRouteAllowed, trackGoatCounterPageView } from './utils/analytics';
 
 /**
  * Route identity only — no catalogue data. Data is resolved separately from the
@@ -265,6 +266,7 @@ export default function App() {
 
   const [searchQuery, setSearchQuery] = useState<string>('');
   const [meta, setMeta] = useState<CatalogueMeta | null>(() => getCatalogueMetaSnapshot());
+  const lastAnalyticsRoute = useRef<string | null>(null);
 
   // Sync state with browser popstate
   useEffect(() => {
@@ -426,6 +428,21 @@ export default function App() {
       });
     }
   }, [descriptor, view, meta, isCurrentView]);
+
+  // GoatCounter is loaded only for resolved public routes; its initial automatic
+  // count is disabled so this effect owns both the first view and SPA navigations.
+  useEffect(() => {
+    if (typeof window === 'undefined' || !isCurrentView) return;
+    if (!isGoatCounterRouteAllowed(descriptor.type, window.location.pathname)) {
+      lastAnalyticsRoute.current = null;
+      return;
+    }
+    if (view.status !== 'ready' && view.status !== 'not-found') return;
+    const path = getGoatCounterPagePath(window.location.pathname, window.location.search);
+    if (lastAnalyticsRoute.current === currentPath) return;
+    lastAnalyticsRoute.current = currentPath;
+    void trackGoatCounterPageView(path, document.title);
+  }, [currentPath, descriptor, view.status, isCurrentView]);
 
   // Correct out-of-range page / unsupported perPage values after the server resolves.
   const listingPayload =
