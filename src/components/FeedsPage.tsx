@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import type { FeedsMetaPayload } from '../api/types';
 import { SITE_ORIGIN } from '../utils/urls';
-import { NavSquiggle } from './NavigationLink';
+import { NavigationLink, NavSquiggle } from './NavigationLink';
 import { HollyDivider } from './HollyDivider';
 
 interface FeedCardProps {
@@ -144,11 +144,20 @@ export const FeedsPage: React.FC<{ meta: FeedsMetaPayload }> = ({ meta }) => {
         <p className="mt-2 max-w-xl font-body text-base leading-relaxed text-[#59524A]">
           Add XmasDB Christmas movie collections directly to Radarr. Choose a collection below and copy its feed URL.
         </p>
+        <nav className="quick-links-nav mt-5 flex flex-wrap items-center justify-center gap-x-2.5 gap-y-1.5 rounded-md bg-[#1A3D2F] px-3.5 py-2.5 font-sans-clean text-xs text-[#FAF7F2] sm:mt-6 sm:px-4 sm:py-3 sm:text-sm" aria-label="Quick links">
+          <span className="font-semibold tracking-[0.16em]">QUICK LINKS</span>
+          <span className="quick-links-sparkle text-[#DCCB9C]" aria-hidden="true">✦</span>
+          <NavigationLink href="#feeds-setup" squiggleColor="#DCCB9C" className="text-[#FAF7F2] hover:text-[#DCCB9C] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#DCCB9C]">Setup</NavigationLink>
+          <span className="text-[#B8860B]" aria-hidden="true">·</span>
+          <NavigationLink href="#feeds-collections" squiggleColor="#DCCB9C" className="text-[#FAF7F2] hover:text-[#DCCB9C] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#DCCB9C]">Collections</NavigationLink>
+          <span className="text-[#B8860B]" aria-hidden="true">·</span>
+          <NavigationLink href="#feeds-years" squiggleColor="#DCCB9C" className="text-[#FAF7F2] hover:text-[#DCCB9C] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#DCCB9C]">Years</NavigationLink>
+          <span className="text-[#B8860B]" aria-hidden="true">·</span>
+          <NavigationLink href="#feeds-actors" squiggleColor="#DCCB9C" className="text-[#FAF7F2] hover:text-[#DCCB9C] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#DCCB9C]">Actor Feeds</NavigationLink>
+        </nav>
       </header>
 
-       <HollyDivider className="mt-5 mb-5 sm:mt-6 sm:mb-6" lineClassName="w-6 sm:w-8" ornamentClassName="h-4 w-12 sm:h-5 sm:w-14" />
-
-        <section className="pt-5 sm:pt-6" aria-labelledby="radarr-setup-heading">
+        <section id="feeds-setup" className="scroll-mt-6 pt-6 sm:scroll-mt-8 sm:pt-7" aria-labelledby="radarr-setup-heading">
         <MajorSectionHeading id="radarr-setup-heading">HOW TO ADD TO RADARR</MajorSectionHeading>
         <div className="mt-4 max-w-2xl space-y-2 font-body text-sm leading-relaxed text-[#59524A]">
           <p>In Radarr go to:</p>
@@ -177,7 +186,7 @@ export const FeedsPage: React.FC<{ meta: FeedsMetaPayload }> = ({ meta }) => {
 
        <HollyDivider className="my-8 sm:my-10" lineClassName="w-6 sm:w-8" ornamentClassName="h-4 w-12 sm:h-5 sm:w-14" />
 
-       <section aria-labelledby="collections-heading">
+       <section id="feeds-collections" className="scroll-mt-6 sm:scroll-mt-8" aria-labelledby="collections-heading">
          <div className="mb-2">
            <MajorSectionHeading id="collections-heading">CHOOSE A COLLECTION</MajorSectionHeading>
          </div>
@@ -203,7 +212,7 @@ export const FeedsPage: React.FC<{ meta: FeedsMetaPayload }> = ({ meta }) => {
 
        <HollyDivider className="my-8 sm:my-10" lineClassName="w-6 sm:w-8" ornamentClassName="h-4 w-12 sm:h-5 sm:w-14" />
 
-       <section aria-labelledby="year-heading">
+       <section id="feeds-years" className="scroll-mt-6 sm:scroll-mt-8" aria-labelledby="year-heading">
         <MajorSectionHeading id="year-heading">BROWSE BY YEAR</MajorSectionHeading>
         <div className="mt-4 flex flex-wrap items-center gap-x-2 gap-y-1 font-body text-sm sm:text-base" aria-label="Choose a year feed">
           {availableYears.map((year, index) => (
@@ -232,7 +241,7 @@ export const FeedsPage: React.FC<{ meta: FeedsMetaPayload }> = ({ meta }) => {
 
        <HollyDivider className="my-8 sm:my-10" lineClassName="w-6 sm:w-8" ornamentClassName="h-4 w-12 sm:h-5 sm:w-14" />
 
-       <section aria-labelledby="actor-feeds-heading">
+       <section id="feeds-actors" className="scroll-mt-6 sm:scroll-mt-8" aria-labelledby="actor-feeds-heading">
          <MajorSectionHeading id="actor-feeds-heading">ACTOR FEEDS</MajorSectionHeading>
         <p className="mt-3 max-w-2xl font-body text-sm leading-relaxed text-[#59524A]">
           Every actor in XmasDB has their own Radarr feed containing their eligible Christmas movies. Open an actor page and choose the JSON Feed link to copy their personal feed URL.

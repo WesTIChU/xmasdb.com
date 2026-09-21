@@ -99,6 +99,21 @@ body {
   bottom: -4px;
 }
 
+.quick-links-nav .xmas-nav-link:focus-visible .nav-squiggle {
+  clip-path: inset(0 0 0 0);
+  opacity: 0.95;
+}
+
+@keyframes quick-links-sparkle-pulse {
+  0%, 100% { opacity: 0.82; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.15); }
+}
+
+.quick-links-sparkle {
+  animation: quick-links-sparkle-pulse 2.8s ease-in-out infinite;
+  transform-origin: center;
+}
+
 .xmas-nav-arrow {
   display: inline-block;
   transition: transform 0.22s ease;
@@ -157,6 +172,10 @@ body {
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .quick-links-sparkle {
+    animation: none;
+  }
+
   .nav-squiggle {
     transition: opacity 0.15s ease !important;
     clip-path: inset(0 0 0 0) !important;
