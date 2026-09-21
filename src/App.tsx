@@ -529,6 +529,7 @@ export default function App() {
       <MovieGrid
         movies={searchResults.movies}
         onSelectMovie={selectMovie}
+        naturalTitleHeight
         emptyMessage={`No movies found matching "${searchQuery}".`}
       />
     </section>
