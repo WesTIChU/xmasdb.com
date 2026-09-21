@@ -19,6 +19,7 @@ interface MovieDetailProps {
 
 export const MovieDetail: React.FC<MovieDetailProps> = ({ movie, related, onNavigate }) => {
   const brand = getBrandById(movie.brandId);
+  const [isCastExpanded, setIsCastExpanded] = useState(false);
 
   // Collect available trailers
   const trailers: Trailer[] = React.useMemo(() => {
@@ -47,6 +48,8 @@ export const MovieDetail: React.FC<MovieDetailProps> = ({ movie, related, onNavi
   const hasValidTmdbId = typeof movie.tmdbId === 'number' && movie.tmdbId > 0;
 
   const showComingSoon = hasImageError || !poster;
+  const visibleCast = isCastExpanded ? movie.cast : movie.cast.slice(0, 12);
+  const hasAdditionalCast = movie.cast.length > 12;
 
   return (
     <div id="movie-detail-view" className="py-6 sm:py-10 max-w-4xl mx-auto">
@@ -222,7 +225,7 @@ export const MovieDetail: React.FC<MovieDetailProps> = ({ movie, related, onNavi
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4" id="movie-cast-list">
-              {movie.cast.map((member) => {
+              {visibleCast.map((member) => {
                 const actorTmdbId = member.resolvedTmdbPersonId ?? member.tmdbPersonId ?? 0;
                 const actorPath = getActorPath(actorTmdbId, member.slug);
                 const photoSrc = member.resolvedProfileUrl || member.profileUrl;
@@ -287,6 +290,17 @@ export const MovieDetail: React.FC<MovieDetailProps> = ({ movie, related, onNavi
                 );
               })}
             </div>
+            {hasAdditionalCast && (
+              <button
+                type="button"
+                aria-expanded={isCastExpanded}
+                aria-controls="movie-cast-list"
+                onClick={() => setIsCastExpanded((expanded) => !expanded)}
+                className="mt-4 text-xs sm:text-sm font-sans-clean font-medium text-[#1A3D2F] hover:text-[#143626]"
+              >
+                {isCastExpanded ? 'Show fewer ↑' : `View all ${movie.cast.length} cast members ↓`}
+              </button>
+            )}
           </section>
 
           {/* Trailers & Previews Section */}

@@ -4,7 +4,6 @@ import {
   getMovieBySlug,
   getMovieByTmdbId,
   getMovieByTmdbIdAndSlug,
-  getMoviesByBrand,
   getAllYearsForBrand,
 } from '../data/movies';
 import {
@@ -157,6 +156,42 @@ function resolveMovie(identifier: string, slug?: string): Movie | undefined {
   return getMovieBySlug(identifier);
 }
 
+function castIdentity(member: Movie['cast'][number]): string {
+  return member.tmdbPersonId ? `tmdb:${member.tmdbPersonId}` : `slug:${member.slug.toLowerCase()}`;
+}
+
+function principalCast(movie: Movie): Set<string> {
+  return new Set(
+    [...movie.cast]
+      .sort((a, b) => (a.order ?? Number.MAX_SAFE_INTEGER) - (b.order ?? Number.MAX_SAFE_INTEGER))
+      .slice(0, 12)
+      .map(castIdentity),
+  );
+}
+
+export function selectRelatedMovies(movie: Movie, movies: Movie[] = MOVIES): ListingMovie[] {
+  const movieCast = principalCast(movie);
+  const candidates = new Map(
+    movies
+      .filter((candidate) => candidate.brandId === movie.brandId && candidate.id !== movie.id && candidate.slug !== movie.slug)
+      .map((candidate) => [candidate.id, candidate]),
+  );
+
+  return [...candidates.values()]
+    .map((candidate) => {
+      const sharedCast = [...principalCast(candidate)].filter((member) => movieCast.has(member)).length;
+      return { candidate, sharedCast, yearDistance: Math.abs(candidate.year - movie.year) };
+    })
+    .sort((a, b) =>
+      (b.sharedCast - a.sharedCast)
+      || (a.yearDistance - b.yearDistance)
+      || (b.candidate.year - a.candidate.year)
+      || a.candidate.id.localeCompare(b.candidate.id),
+    )
+    .slice(0, 4)
+    .map(({ candidate }) => toListingMovie(candidate));
+}
+
 export function buildMovieDetail(identifier: string, slug?: string): MovieDetailPayload | null {
   const movie = resolveMovie(identifier, slug);
   if (!movie) return null;
@@ -170,10 +205,7 @@ export function buildMovieDetail(identifier: string, slug?: string): MovieDetail
     })),
   };
 
-  const related = getMoviesByBrand(movie.brandId)
-    .filter((candidate) => candidate.id !== movie.id && candidate.slug !== movie.slug)
-    .slice(0, 4)
-    .map(toListingMovie);
+  const related = selectRelatedMovies(movie);
 
   return { movie: movieWithResolvedCast, related };
 }

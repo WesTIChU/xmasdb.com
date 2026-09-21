@@ -4,7 +4,7 @@ import { getActorBackdrop } from '../src/utils/backdrops';
 import { getPopulatedBrands } from '../src/data/brands';
 import { getRadarrAllFeedJson, getRadarrNetworkFeedJson, getSitemapXml, isMovieEligibleForRadarr } from '../src/utils/feeds';
 import { buildCatalogueUrl, getCataloguePage, parseCatalogueQuery } from '../src/utils/catalogue-pagination';
-import { buildCatalogueListing, selectDiscoverMovies } from '../src/server/catalogue-api';
+import { buildCatalogueListing, selectDiscoverMovies, selectRelatedMovies } from '../src/server/catalogue-api';
 import { getMoviePoster } from '../src/utils/posters';
 
 console.log('Running catalogue pagination and local backdrop tests...');
@@ -136,5 +136,20 @@ const comingSoonFixture = { ...oneHallmarkMovie, id: 'fixture-coming-soon', stat
 assert.ok(!selectDiscoverMovies([comingSoonFixture, oneHallmarkMovie], discoverDate).some((movie) => movie.id === comingSoonFixture.id));
 const futureCollectionFixture = { ...oneHallmarkMovie, id: 'fixture-future-collection', status: 'collection', releaseDate: '2027-01-01', premiereDate: '2027-01-01' };
 assert.ok(!selectDiscoverMovies([futureCollectionFixture, oneHallmarkMovie], discoverDate).some((movie) => movie.id === futureCollectionFixture.id));
+
+const sisterSwap = MOVIES.find((movie) => movie.title === 'Sister Swap: A Hometown Holiday');
+assert.ok(sisterSwap, 'Sister Swap fixture should exist');
+assert.ok(sisterSwap!.cast.length > 12, 'Sister Swap should exercise the large cast behaviour');
+const sisterRecommendations = selectRelatedMovies(sisterSwap!);
+assert.equal(sisterRecommendations.length, 4);
+assert.ok(sisterRecommendations.every((movie) => movie.brandId === sisterSwap!.brandId));
+assert.ok(!sisterRecommendations.some((movie) => movie.id === sisterSwap!.id));
+assert.equal(new Set(sisterRecommendations.map((movie) => movie.id)).size, sisterRecommendations.length);
+const sisterCast = new Set(sisterSwap!.cast.slice().sort((a, b) => (a.order ?? Number.MAX_SAFE_INTEGER) - (b.order ?? Number.MAX_SAFE_INTEGER)).slice(0, 12).map((member) => member.tmdbPersonId || member.slug));
+const sharedCastRecommendation = sisterRecommendations.find((recommendation) => {
+  const candidate = MOVIES.find((movie) => movie.id === recommendation.id)!;
+  return candidate.cast.slice().sort((a, b) => (a.order ?? Number.MAX_SAFE_INTEGER) - (b.order ?? Number.MAX_SAFE_INTEGER)).slice(0, 12).some((member) => sisterCast.has(member.tmdbPersonId || member.slug));
+});
+assert.ok(sharedCastRecommendation, 'Sister Swap recommendations should prefer shared principal cast');
 
 console.log('Catalogue pagination and local backdrop tests passed.');

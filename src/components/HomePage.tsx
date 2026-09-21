@@ -66,9 +66,12 @@ export const HomePage: React.FC<HomePageProps> = ({ payload, onNavigate }) => {
 
       {archiveYears.length > 0 && (
         <section className="py-7 sm:py-9" aria-labelledby="archive-years-heading">
-          <div className="w-full mb-5">
-            <p className="font-sans-clean text-xs font-semibold uppercase tracking-[0.18em] text-[#8A6800]">Explore the archive</p>
-            <h2 id="archive-years-heading" className="mt-1 font-heading text-xl sm:text-2xl font-semibold text-[#1A3D2F]">Christmas Through the Years</h2>
+          <div className="w-full flex items-end justify-between gap-4 mb-5">
+            <div>
+              <p className="font-sans-clean text-xs font-semibold uppercase tracking-[0.18em] text-[#8A6800]">Explore the archive</p>
+              <h2 id="archive-years-heading" className="mt-1 font-heading text-xl sm:text-2xl font-semibold text-[#1A3D2F]">Christmas Through the Years</h2>
+            </div>
+            <NavigationLink href={getMoviesPath()} onNavigate={onNavigate} className="shrink-0 text-xs sm:text-sm font-sans-clean font-medium text-[#1A3D2F] hover:text-[#143626]">View all years <span className="xmas-nav-arrow">→</span></NavigationLink>
           </div>
           <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4 lg:grid-cols-6">
             {archiveYears.map(({ year, movieCount }) => {

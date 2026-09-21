@@ -18,6 +18,7 @@ const routes = [
   { path: '/privacy/', text: 'PRIVACY & AI' },
   { path: '/contact/', text: 'CONTACT XMASDB' },
   { path: '/year/2025/', text: 'Christmas Movies of 2025' },
+  { path: '/movie/866665/sister-swap-a-hometown-holiday/', text: 'Sister Swap: A Hometown Holiday' },
   { path: '/movie/1773035/snow-globe-town/', text: 'Snow Globe Town' },
   { path: '/actor/65220/danica-mckellar/', text: 'Danica McKellar' },
 ] as const;
@@ -128,6 +129,49 @@ async function main(): Promise<void> {
       await installErrorCapture();
       await inspect(route);
     }
+
+    const sisterNavigation = await command(iterator, browserSocket, pending, commandId++, 'WebDriver:Navigate', { sessionId, url: `http://127.0.0.1:${port}/movie/866665/sister-swap-a-hometown-holiday/` });
+    if (sisterNavigation[2]) throw new Error(`Could not navigate to Sister Swap: ${sisterNavigation[2].message}`);
+    await wait(1000);
+    await installErrorCapture();
+    await inspect({ path: '/movie/866665/sister-swap-a-hometown-holiday/', text: 'Sister Swap: A Hometown Holiday' });
+
+    const castState = await command(iterator, browserSocket, pending, commandId++, 'WebDriver:ExecuteScript', {
+      sessionId,
+      script: 'const list = document.querySelector("#movie-cast-list"); const button = document.querySelector("button[aria-controls=movie-cast-list]"); return { count: list?.children.length || 0, buttonText: button?.textContent?.trim() || "", expanded: button?.getAttribute("aria-expanded"), actorLinks: list ? list.querySelectorAll("a[href^=\\"/actor/\\"]").length : 0, related: document.querySelector("#related-brand-movies-grid")?.textContent || "" };',
+      args: [],
+    });
+    const initialCast = castState[3]?.value as { count?: number; buttonText?: string; expanded?: string; actorLinks?: number; related?: string } | undefined;
+    if (initialCast?.count !== 12 || initialCast.buttonText !== 'View all 26 cast members ↓' || initialCast.expanded !== 'false' || initialCast.actorLinks !== 24) throw new Error(`Large cast did not start collapsed correctly: ${JSON.stringify(initialCast)}`);
+    if (initialCast.related?.includes('Sister Swap: A Hometown Holiday')) throw new Error(`Related movie recommendations included the current movie: ${initialCast.related}`);
+    const expandCast = await command(iterator, browserSocket, pending, commandId++, 'WebDriver:ExecuteScript', {
+      sessionId,
+      script: 'const button = document.querySelector("button[aria-controls=movie-cast-list]"); if (!button) return false; button.click(); return true;',
+      args: [],
+    });
+    if (expandCast[3]?.value !== true) throw new Error('Large cast expand control was unavailable.');
+    await wait(100);
+    const expandedCast = await command(iterator, browserSocket, pending, commandId++, 'WebDriver:ExecuteScript', {
+      sessionId,
+      script: 'const list = document.querySelector("#movie-cast-list"); const button = document.querySelector("button[aria-controls=movie-cast-list]"); return { count: list?.children.length || 0, buttonText: button?.textContent?.trim() || "", expanded: button?.getAttribute("aria-expanded"), actorLinks: list ? list.querySelectorAll("a[href^=\\"/actor/\\"]").length : 0 };',
+      args: [],
+    });
+    const expandedValue = expandedCast[3]?.value as { count?: number; buttonText?: string; expanded?: string; actorLinks?: number } | undefined;
+    if (expandedValue?.count !== 26 || expandedValue.buttonText !== 'Show fewer ↑' || expandedValue.expanded !== 'true' || expandedValue.actorLinks !== 52) throw new Error(`Large cast did not expand correctly: ${JSON.stringify(expandedValue)}`);
+    const collapseCast = await command(iterator, browserSocket, pending, commandId++, 'WebDriver:ExecuteScript', {
+      sessionId,
+      script: 'const button = document.querySelector("button[aria-controls=movie-cast-list]"); if (!button) return false; button.click(); return true;',
+      args: [],
+    });
+    if (collapseCast[3]?.value !== true) throw new Error('Large cast collapse control was unavailable.');
+    await wait(100);
+    const collapsedCast = await command(iterator, browserSocket, pending, commandId++, 'WebDriver:ExecuteScript', {
+      sessionId,
+      script: 'return { count: document.querySelector("#movie-cast-list")?.children.length || 0, expanded: document.querySelector("button[aria-controls=movie-cast-list]")?.getAttribute("aria-expanded") };',
+      args: [],
+    });
+    const collapsedValue = collapsedCast[3]?.value as { count?: number; expanded?: string } | undefined;
+    if (collapsedValue?.count !== 12 || collapsedValue.expanded !== 'false') throw new Error(`Large cast did not collapse correctly: ${JSON.stringify(collapsedValue)}`);
 
     const transitions = ['/hallmark/', '/lifetime/', '/gaf/', '/hallmark/', '/gaf/', '/lifetime/', '/hallmark/', '/movies/', '/hallmark/'];
     const transitionText = new Map<string, string>(routes.map((route) => [route.path, route.text]));
