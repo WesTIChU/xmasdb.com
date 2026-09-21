@@ -1,4 +1,5 @@
 import assert from 'node:assert/strict';
+import { readFile } from 'node:fs/promises';
 import { createServer } from 'node:http';
 import { MOVIES } from '../src/data/movies';
 import { getActorByTmdbId, getAllActors } from '../src/data/actors';
@@ -28,7 +29,9 @@ const movie = MOVIES[0];
 const actor = getAllActors()[0];
 const actorDetail = buildActorDetail(String(actor.tmdbPersonId));
 
-assert.match(buildHomeSeo(MOVIES.length).title, /XmasDB/);
+const homeSeo = buildHomeSeo(MOVIES.length);
+assert.equal(homeSeo.title, 'XmasDB - Christmas Movie Database | Hallmark, Lifetime, GAF & UPtv');
+assert.match(homeSeo.description, /Hallmark, Lifetime, GAF, UPtv/);
 assert.match(buildMoviesSeo(MOVIES.length).description, new RegExp(String(MOVIES.length)));
 assert.match(buildMovieSeo(movie).title, new RegExp(movie.title.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')));
 assert.match(buildActorSeo(actor, actorDetail?.filmography || []).title, new RegExp(actor.name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')));
@@ -91,6 +94,11 @@ assert.match(html, /application\/ld\+json/);
 const danica = getActorByTmdbId(65220)!;
 const danicaPath = getActorPath(danica.tmdbPersonId, danica.slug);
 const serverShell = '<!doctype html><html><head></head><body><div id="root"></div></body></html>';
+const homepageHtml = renderServerHtml(await readFile('index.html', 'utf8'), '/');
+assert.match(homepageHtml, /<title>XmasDB - Christmas Movie Database \| Hallmark, Lifetime, GAF &amp; UPtv<\/title>/);
+assert.match(homepageHtml, /property="og:title" content="XmasDB - Christmas Movie Database \| Hallmark, Lifetime, GAF &amp; UPtv"/);
+assert.match(homepageHtml, /name="twitter:title" content="XmasDB - Christmas Movie Database \| Hallmark, Lifetime, GAF &amp; UPtv"/);
+assert.match(homepageHtml, /name="description" content="Browse (?:\d+ )?Christmas movies from Hallmark, Lifetime, GAF, UPtv/);
 const actorHtml = renderServerHtml(serverShell, danicaPath);
 assert.match(actorHtml, /<h1>Danica McKellar<\/h1>/);
 assert.match(actorHtml, /Danica Mae McKellar/);
