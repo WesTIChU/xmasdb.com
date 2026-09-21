@@ -114,7 +114,7 @@ export const ActorDetail: React.FC<ActorDetailProps> = ({
                   <h3 className="font-heading text-sm sm:text-base font-semibold text-[#1A3D2F] group-hover:text-[#841818] transition-colors leading-snug line-clamp-2" title={movie.title}>{movie.title}</h3>
                   <p className="text-xs text-[#736B63] mt-0.5 font-body">{movie.year}{brand && <span className="text-[#756B60] font-sans-clean ml-1.5">· {brand.shortName}</span>}</p>
                   {movie.character && <p className="text-[11px] text-[#841818] font-sans-clean mt-0.5 truncate italic">as {movie.character}</p>}
-                  {movie.crewJobs?.length && <p className="text-[11px] text-[#841818] font-sans-clean mt-0.5 truncate">{movie.crewJobs.join(' · ')}</p>}
+                  {movie.crewJobs && movie.crewJobs.length > 0 && <p className="text-[11px] text-[#841818] font-sans-clean mt-0.5 truncate">{movie.crewJobs.join(' · ')}</p>}
                 </div>
               </a>
             </article>
@@ -283,7 +283,7 @@ export const ActorDetail: React.FC<ActorDetailProps> = ({
                 {actor.knownForDepartment && <div id="actor-meta-known-for"><span className="font-semibold text-[#1A3D2F]">Known for:</span>{' '}<span>{actor.knownForDepartment}</span></div>}
                 {actor.gender && <div id="actor-meta-gender"><span className="font-semibold text-[#1A3D2F]">Gender:</span>{' '}<span>{actor.gender}</span></div>}
                 {actor.knownCredits !== undefined && <div id="actor-meta-known-credits"><span className="font-semibold text-[#1A3D2F]">Known credits:</span>{' '}<span>{actor.knownCredits}</span></div>}
-                {actor.alsoKnownAs?.length && <div id="actor-meta-aliases" className="sm:col-span-2"><span className="font-semibold text-[#1A3D2F]">Also known as:</span>{' '}<span>{actor.alsoKnownAs.join(', ')}</span></div>}
+                {actor.alsoKnownAs && actor.alsoKnownAs.length > 0 && <div id="actor-meta-aliases" className="sm:col-span-2"><span className="font-semibold text-[#1A3D2F]">Also known as:</span>{' '}<span>{actor.alsoKnownAs.join(', ')}</span></div>}
               </div>
             )}
 

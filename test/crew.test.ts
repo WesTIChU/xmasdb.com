@@ -1,4 +1,6 @@
 import assert from 'node:assert/strict';
+import React from 'react';
+import { renderToStaticMarkup } from 'react-dom/server';
 import { MOVIES } from '../src/data/movies';
 import { getActorByTmdbId, getAllActors } from '../src/data/actors';
 import { buildActorDetail, buildMovieDetail } from '../src/server/catalogue-api';
@@ -6,6 +8,7 @@ import { buildActorSeo } from '../src/utils/seo';
 import { getCreativeCrew } from '../src/utils/creative-crew';
 import { renderServerContent } from '../src/server/seo';
 import { fetchTmdbMovie } from '../src/utils/tmdb';
+import { ActorDetail } from '../src/components/ActorDetail';
 
 const sisterSwap = MOVIES.find((movie) => movie.tmdbId === 866665);
 assert.ok(sisterSwap, 'Sister Swap: A Hometown Holiday should exist in the catalogue');
@@ -77,5 +80,31 @@ assert.match(sisterSwapHtml, /\/actor\/129952\/sean-mcnamara\//);
 const seanHtml = renderServerContent(`/actor/129952/${sean!.slug}/`);
 assert.match(seanHtml, /<h2>Directing<\/h2>/);
 assert.match(seanHtml, /Christmas movie filmography/);
+
+const roleFixture = (overrides: Record<string, unknown> = {}) => ({
+  id: 'role-fixture',
+  slug: 'role-fixture',
+  title: 'Role Fixture',
+  year: 2024,
+  brandId: 'hallmark',
+  tmdbId: 999002,
+  posterUrl: '',
+  releaseDate: '2024-12-01',
+  ...overrides,
+});
+const roleFixtureHtml = renderToStaticMarkup(React.createElement(ActorDetail, {
+  actor: { id: 'fixture', slug: 'fixture', name: 'Fixture Person', tmdbPersonId: 999003 },
+  filmography: [roleFixture({ character: 'Mason', crewJobs: [] }), roleFixture({ id: 'crew-only', slug: 'crew-only', character: undefined, crewJobs: ['Director'] }), roleFixture({ id: 'both', slug: 'both', character: 'Alex', crewJobs: ['Writer'] }), roleFixture({ id: 'none', slug: 'none', character: undefined, crewJobs: [] })],
+  actingFilmography: [roleFixture({ character: 'Mason', crewJobs: [] }), roleFixture({ id: 'both', slug: 'both', character: 'Alex', crewJobs: ['Writer'] })],
+  directingFilmography: [roleFixture({ id: 'crew-only', slug: 'crew-only', character: undefined, crewJobs: ['Director'] })],
+  writingFilmography: [],
+  backdropUrl: null,
+  onNavigate: () => undefined,
+  onSelectMovie: () => undefined,
+}));
+assert.match(roleFixtureHtml, /as Mason/);
+assert.match(roleFixtureHtml, />Director</);
+assert.match(roleFixtureHtml, />Writer</);
+assert.doesNotMatch(roleFixtureHtml, /as Mason<\/p>0/);
 
 console.log('Crew ingestion, shared person identity, categorized credits, and Sister Swap regression tests passed.');
