@@ -1,6 +1,6 @@
 import React from 'react';
 import type { MetaBrand } from '../api/types';
-import { getNetworkPath, getMoviesPath, getFeedsPath } from '../utils/urls';
+import { getMoviesPath, getFeedsPath } from '../utils/urls';
 import { NavigationLink, NavSquiggle } from './NavigationLink';
 import { HollyDivider } from './HollyDivider';
 
@@ -9,7 +9,7 @@ interface FooterProps {
   populatedBrands: MetaBrand[];
 }
 
-export const Footer: React.FC<FooterProps> = ({ onNavigate, populatedBrands }) => {
+export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
   return (
     <footer className="border-t border-[#E7DFD5] bg-[#F7F2EB] py-10 px-4 mt-16 text-center text-sm text-[#736B63] font-body">
       <div className="max-w-4xl mx-auto space-y-4">
@@ -25,15 +25,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, populatedBrands }) =
            <span className="text-[#C8BFB3] select-none">·</span>
            <NavigationLink href={getMoviesPath()} onNavigate={onNavigate} className="text-[#1A3D2F] hover:text-[#B8860B] transition-colors">All Movies</NavigationLink>
           <span className="text-[#C8BFB3] select-none">·</span>
-          {populatedBrands.map((b) => (
-            <React.Fragment key={b.id}>
-              <NavigationLink href={getNetworkPath(b.slug)} onNavigate={onNavigate} className="text-[#1A3D2F] hover:text-[#B8860B] transition-colors">
-                {b.shortName}
-              </NavigationLink>
-              <span className="text-[#C8BFB3] select-none">·</span>
-            </React.Fragment>
-          ))}
-          <NavigationLink href={getFeedsPath()} onNavigate={onNavigate} className="text-[#1A3D2F] hover:text-[#B8860B] transition-colors">Feeds &amp; Radarr</NavigationLink>
+           <NavigationLink href={getFeedsPath()} onNavigate={onNavigate} className="text-[#1A3D2F] hover:text-[#B8860B] transition-colors">Feeds &amp; Radarr</NavigationLink>
           <span className="text-[#C8BFB3] select-none">·</span>
           <a
             href="/sitemap.xml"
