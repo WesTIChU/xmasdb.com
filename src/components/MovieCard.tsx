@@ -80,7 +80,7 @@ export const MovieCard: React.FC<MovieCardProps> = ({ movie, onSelectMovie, prio
         {/* Movie Title & Year directly beneath poster */}
         <div className="pt-2.5 pb-1 text-center">
           <h3
-            className={`min-w-0 overflow-hidden font-heading text-base sm:text-base lg:text-lg font-semibold text-[#1A3D2F] group-hover:text-[#841818] transition-colors leading-snug break-words ${titleLines === 3 ? 'line-clamp-3' : 'min-h-[2.75rem] line-clamp-2 px-1 text-pretty'}`}
+            className={`min-w-0 overflow-hidden font-heading text-base sm:text-base lg:text-lg font-semibold text-[#1A3D2F] group-hover:text-[#841818] transition-colors leading-snug ${titleLines === 3 ? 'line-clamp-3 break-normal' : 'min-h-[2.75rem] line-clamp-2 break-words px-1 text-pretty'}`}
             title={movie.title}
           >
             {movie.title}
