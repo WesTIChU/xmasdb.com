@@ -1,9 +1,10 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
-import { Actor, CastMember, Movie } from '../types';
+import { Actor, Movie } from '../types';
 import { fetchTmdbPerson } from './tmdb';
 import { writeFileAtomically } from './atomic-file';
 import { cacheLocalImage } from './local-images';
+import { getCreativeCrew, getPersonSlug } from './creative-crew';
 
 const actorsPath = path.join(process.cwd(), 'src/data/actors.json');
 
@@ -13,6 +14,14 @@ export interface PersonEnrichmentResult {
   failures: Array<{ tmdbPersonId: number; name: string; message: string }>;
   actor?: Actor;
   actors: Actor[];
+}
+
+interface CataloguePersonSeed {
+  tmdbPersonId: number;
+  name: string;
+  slug: string;
+  id: string;
+  profileUrl?: string;
 }
 
 async function readActors(): Promise<Map<number, Actor>> {
@@ -28,11 +37,30 @@ async function cacheProfile(url: string | undefined, tmdbPersonId: number): Prom
   return cacheLocalImage(url, `/images/people/${tmdbPersonId}.webp`);
 }
 
-function cataloguePeople(movies: Movie[]): Map<number, CastMember> {
-  const people = new Map<number, CastMember>();
+function cataloguePeople(movies: Movie[]): Map<number, CataloguePersonSeed> {
+  const people = new Map<number, CataloguePersonSeed>();
   for (const movie of movies) {
     for (const cast of movie.cast) {
-      if (cast.tmdbPersonId && !people.has(cast.tmdbPersonId)) people.set(cast.tmdbPersonId, cast);
+      if (cast.tmdbPersonId && !people.has(cast.tmdbPersonId)) {
+        people.set(cast.tmdbPersonId, {
+          tmdbPersonId: cast.tmdbPersonId,
+          name: cast.name,
+          slug: cast.slug,
+          id: cast.actorId,
+          profileUrl: cast.profileUrl,
+        });
+      }
+    }
+    for (const crew of getCreativeCrew(movie.crew)) {
+      if (!people.has(crew.id)) {
+        people.set(crew.id, {
+          tmdbPersonId: crew.id,
+          name: crew.name,
+          slug: getPersonSlug(crew.name),
+          id: String(crew.id),
+          profileUrl: crew.profileUrl,
+        });
+      }
     }
   }
   return people;
@@ -42,7 +70,7 @@ export async function enrichCataloguePeople(
   movies: Movie[],
   apiKey: string,
   personId?: number,
-  onProgress?: (current: number, total: number, person: CastMember) => void
+  onProgress?: (current: number, total: number, person: CataloguePersonSeed) => void
 ): Promise<PersonEnrichmentResult> {
   const people = cataloguePeople(movies);
   const target = personId ? new Map([[personId, people.get(personId)!]]) : people;
@@ -62,23 +90,23 @@ export async function enrichCataloguePeople(
     while (nextIndex < entries.length) {
       const entry = entries[nextIndex++];
       if (!entry) return;
-      const [tmdbPersonId, cast] = entry;
+      const [tmdbPersonId, person] = entry;
       current++;
-      onProgress?.(current, target.size, cast);
+      onProgress?.(current, target.size, person);
       try {
         const existing = actorsById.get(tmdbPersonId);
         const fetched = await fetchTmdbPerson(tmdbPersonId, apiKey);
         if (!fetched) throw new Error('TMDB returned no person data');
         const profileUrl = await cacheProfile(fetched.profileUrl, tmdbPersonId);
         const actor: Actor = {
-          id: existing?.id || cast.slug,
-          slug: existing?.slug || cast.slug,
-          name: fetched.name || existing?.name || cast.name,
+          id: existing?.id || person.id,
+          slug: existing?.slug || person.slug,
+          name: fetched.name || existing?.name || person.name,
           tmdbPersonId,
-          photoUrl: profileUrl || existing?.photoUrl || cast.profileUrl,
-          profileUrl: profileUrl || existing?.profileUrl || cast.profileUrl,
-          birthday: fetched.birthday ?? existing?.birthday ?? cast.birthday,
-          deathday: fetched.deathday ?? existing?.deathday ?? cast.deathday,
+          photoUrl: profileUrl || existing?.photoUrl || person.profileUrl,
+          profileUrl: profileUrl || existing?.profileUrl || person.profileUrl,
+          birthday: fetched.birthday ?? existing?.birthday,
+          deathday: fetched.deathday ?? existing?.deathday,
           placeOfBirth: fetched.placeOfBirth ?? existing?.placeOfBirth,
           biography: fetched.biography ?? existing?.biography,
           imdbPersonId: fetched.imdbPersonId ?? existing?.imdbPersonId,
@@ -95,7 +123,7 @@ export async function enrichCataloguePeople(
         lastActor = actor;
         updated++;
       } catch (error) {
-        failures.push({ tmdbPersonId, name: cast.name, message: error instanceof Error ? error.message : String(error) });
+        failures.push({ tmdbPersonId, name: person.name, message: error instanceof Error ? error.message : String(error) });
       }
       if (nextIndex < entries.length) await new Promise((resolve) => setTimeout(resolve, 150));
     }

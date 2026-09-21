@@ -85,6 +85,15 @@ export interface PrivacyPayload {}
 export interface ContactPayload {}
 
 /** Full movie detail plus lightweight related cards from the same brand. */
+export interface MovieCrewCredit {
+  tmdbPersonId: number;
+  name: string;
+  slug: string;
+  job: string;
+  department?: string;
+  profileUrl?: string;
+}
+
 export type MovieDetailMovie = Omit<Movie, 'cast'> & {
   cast: Array<
     CastMember & {
@@ -92,6 +101,8 @@ export type MovieDetailMovie = Omit<Movie, 'cast'> & {
       resolvedTmdbPersonId?: number;
     }
   >;
+  directorCredit?: MovieCrewCredit;
+  writingCredits: MovieCrewCredit[];
 };
 
 export interface MovieDetailPayload {
@@ -102,11 +113,15 @@ export interface MovieDetailPayload {
 export interface ActorFilmographyItem extends ListingMovie {
   backdropUrl?: string;
   character?: string;
+  crewJobs?: string[];
 }
 
 export interface ActorDetailPayload {
   actor: Actor;
   filmography: ActorFilmographyItem[];
+  actingFilmography: ActorFilmographyItem[];
+  directingFilmography: ActorFilmographyItem[];
+  writingFilmography: ActorFilmographyItem[];
   backdropUrl: string | null;
   /** Present only when multiple catalogue actors share the same display name. */
   titleDisambiguator?: string;

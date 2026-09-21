@@ -75,13 +75,17 @@ export function isMovieDetailPayload(value: unknown): value is MovieDetailPayloa
   return isRecord(value)
     && isRecord(value.movie)
     && Array.isArray(value.movie.cast)
+    && Array.isArray(value.movie.writingCredits)
     && Array.isArray(value.related);
 }
 
 export function isActorDetailPayload(value: unknown): value is ActorDetailPayload {
   return isRecord(value)
     && isRecord(value.actor)
-    && Array.isArray(value.filmography);
+    && Array.isArray(value.filmography)
+    && Array.isArray(value.actingFilmography)
+    && Array.isArray(value.directingFilmography)
+    && Array.isArray(value.writingFilmography);
 }
 
 export function isFeedsMetaPayload(value: unknown): value is FeedsMetaPayload {

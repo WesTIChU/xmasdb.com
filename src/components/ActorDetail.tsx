@@ -13,6 +13,9 @@ import { ComingSoonPoster } from './ComingSoonPoster';
 interface ActorDetailProps {
   actor: Actor;
   filmography: ActorFilmographyItem[];
+  actingFilmography: ActorFilmographyItem[];
+  directingFilmography: ActorFilmographyItem[];
+  writingFilmography: ActorFilmographyItem[];
   backdropUrl: string | null;
   onNavigate: (path: string) => void;
   onSelectMovie: (slug: string, tmdbId?: number) => void;
@@ -30,11 +33,17 @@ function getSentencePreview(text: string): string {
 export const ActorDetail: React.FC<ActorDetailProps> = ({
   actor,
   filmography,
+  actingFilmography,
+  directingFilmography,
+  writingFilmography,
   backdropUrl,
   onNavigate,
   onSelectMovie,
 }) => {
   const safeFilmography = Array.isArray(filmography) ? filmography : [];
+  const safeActingFilmography = Array.isArray(actingFilmography) ? actingFilmography : safeFilmography.filter((movie) => !movie.crewJobs?.length);
+  const safeDirectingFilmography = Array.isArray(directingFilmography) ? directingFilmography : [];
+  const safeWritingFilmography = Array.isArray(writingFilmography) ? writingFilmography : [];
   const [selectedBrandFilter, setSelectedBrandFilter] = useState<string>('all');
   const [imageError, setImageError] = useState<boolean>(false);
   const [backdropError, setBackdropError] = useState<boolean>(false);
@@ -62,14 +71,6 @@ export const ActorDetail: React.FC<ActorDetailProps> = ({
     });
   }, [safeFilmography]);
 
-  // Filter movies based on selected brand
-  const filteredMovies = useMemo(() => {
-    const selectedMovies = selectedBrandFilter === 'all'
-      ? safeFilmography
-      : safeFilmography.filter((m) => m.brandId === selectedBrandFilter);
-    return [...selectedMovies].sort((a, b) => b.year - a.year || b.releaseDate.localeCompare(a.releaseDate));
-  }, [safeFilmography, selectedBrandFilter]);
-
   // Age calculations
   const isDeceased = isValidActorDate(actor.deathday);
   const currentAge = !isDeceased && actor.birthday ? calculateAge(actor.birthday) : null;
@@ -89,6 +90,39 @@ export const ActorDetail: React.FC<ActorDetailProps> = ({
 
   // Photo URL (with fallback to profileUrl or photoUrl)
   const portraitUrl = actor.profileUrl || actor.photoUrl;
+
+  const renderFilmographyGrid = (movies: ActorFilmographyItem[]) => {
+    const selectedMovies = selectedBrandFilter === 'all'
+      ? movies
+      : movies.filter((m) => m.brandId === selectedBrandFilter);
+    if (selectedMovies.length === 0) return <div className="text-center py-8 text-[#736B63] font-body">No holiday movies found for this filter.</div>;
+    return (
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-x-4 gap-y-8 sm:gap-x-5 sm:gap-y-10">
+        {selectedMovies.map((movie) => {
+          const brand = getBrandById(movie.brandId);
+          const canonicalPath = getMoviePath(movie.tmdbId, movie.slug);
+          const poster = getMoviePoster(movie);
+          return (
+            <article key={`${movie.id}-${movie.crewJobs?.join('-') || 'acting'}`} id={`actor-movie-${movie.slug}`}>
+              <a href={canonicalPath} onClick={(e) => { e.preventDefault(); onSelectMovie(movie.slug, movie.tmdbId); }} className="group flex flex-col transition-all duration-200 block text-inherit no-underline">
+                <div className="relative aspect-2/3 w-full overflow-hidden rounded-sm bg-[#EBE4DA] border border-[#E0D7CC] group-hover:border-[#B8860B]/50 transition-colors">
+                  {!poster ? <ComingSoonPoster year={movie.year} networkName={brand ? brand.shortName : undefined} /> : (
+                    <img src={poster} alt={movie.title} width={500} height={750} loading="lazy" referrerPolicy="no-referrer" className="h-full w-full object-cover object-center group-hover:scale-101 transition-transform duration-300" />
+                  )}
+                </div>
+                <div className="pt-2.5 pb-1 text-center">
+                  <h3 className="font-heading text-sm sm:text-base font-semibold text-[#1A3D2F] group-hover:text-[#841818] transition-colors leading-snug line-clamp-2" title={movie.title}>{movie.title}</h3>
+                  <p className="text-xs text-[#736B63] mt-0.5 font-body">{movie.year}{brand && <span className="text-[#756B60] font-sans-clean ml-1.5">· {brand.shortName}</span>}</p>
+                  {movie.character && <p className="text-[11px] text-[#841818] font-sans-clean mt-0.5 truncate italic">as {movie.character}</p>}
+                  {movie.crewJobs?.length && <p className="text-[11px] text-[#841818] font-sans-clean mt-0.5 truncate">{movie.crewJobs.join(' · ')}</p>}
+                </div>
+              </a>
+            </article>
+          );
+        })}
+      </div>
+    );
+  };
 
   return (
     <div id={`actor-detail-${actor.slug}`} className="py-6 sm:py-10 max-w-5xl mx-auto px-4 sm:px-6">
@@ -339,76 +373,9 @@ export const ActorDetail: React.FC<ActorDetailProps> = ({
         </div>
         </div>
 
-        {/* Filmography Grid */}
-        {filteredMovies.length === 0 ? (
-          <div className="text-center py-12 text-[#736B63] font-body">
-            No holiday movies found for this filter.
-          </div>
-        ) : (
-          <div
-            id="actor-movies-grid"
-            className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-x-4 gap-y-8 sm:gap-x-5 sm:gap-y-10"
-          >
-            {filteredMovies.map((movie) => {
-              const brand = getBrandById(movie.brandId);
-              const canonicalPath = getMoviePath(movie.tmdbId, movie.slug);
-              const characterName = movie.character;
-              const poster = getMoviePoster(movie);
-
-              return (
-                <article key={movie.id} id={`actor-movie-${movie.slug}`}>
-                  <a
-                    href={canonicalPath}
-                    onClick={(e) => {
-                      e.preventDefault();
-                      onSelectMovie(movie.slug, movie.tmdbId);
-                    }}
-                    className="group flex flex-col transition-all duration-200 block text-inherit no-underline"
-                  >
-                    {/* Poster Card */}
-                    <div className="relative aspect-2/3 w-full overflow-hidden rounded-sm bg-[#EBE4DA] border border-[#E0D7CC] group-hover:border-[#B8860B]/50 transition-colors">
-                      {!poster ? (
-                        <ComingSoonPoster
-                          year={movie.year}
-                          networkName={brand ? brand.shortName : undefined}
-                        />
-                      ) : (
-                        <img
-                          src={poster}
-                          alt={movie.title}
-                          width={500}
-                          height={750}
-                          loading="lazy"
-                          referrerPolicy="no-referrer"
-                          className="h-full w-full object-cover object-center group-hover:scale-101 transition-transform duration-300"
-                        />
-                      )}
-
-                    </div>
-
-                    {/* Movie Title, Year & Character Role */}
-                    <div className="pt-2.5 pb-1 text-center">
-                      <h3
-                        className="font-heading text-sm sm:text-base font-semibold text-[#1A3D2F] group-hover:text-[#841818] transition-colors leading-snug line-clamp-2"
-                        title={movie.title}
-                      >
-                        {movie.title}
-                      </h3>
-                      <p className="text-xs text-[#736B63] mt-0.5 font-body">
-                        {movie.year}{brand && <span className="text-[#756B60] font-sans-clean ml-1.5">· {brand.shortName}</span>}
-                      </p>
-                      {characterName && (
-                        <p className="text-[11px] text-[#841818] font-sans-clean mt-0.5 truncate italic">
-                          as {characterName}
-                        </p>
-                      )}
-                    </div>
-                  </a>
-                </article>
-              );
-            })}
-          </div>
-        )}
+        {safeActingFilmography.length > 0 && <section aria-labelledby="acting-heading"><h3 id="acting-heading" className="mb-4 text-base font-heading font-semibold text-[#1A3D2F]">Acting</h3>{renderFilmographyGrid(safeActingFilmography)}</section>}
+        {safeDirectingFilmography.length > 0 && <section className="mt-10" aria-labelledby="directing-heading"><h3 id="directing-heading" className="mb-4 text-base font-heading font-semibold text-[#1A3D2F]">Directing</h3>{renderFilmographyGrid(safeDirectingFilmography)}</section>}
+        {safeWritingFilmography.length > 0 && <section className="mt-10" aria-labelledby="writing-heading"><h3 id="writing-heading" className="mb-4 text-base font-heading font-semibold text-[#1A3D2F]">Writing</h3>{renderFilmographyGrid(safeWritingFilmography)}</section>}
       </section>
     </div>
   );

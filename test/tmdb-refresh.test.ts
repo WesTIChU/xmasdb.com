@@ -43,13 +43,20 @@ const castMember = (tmdbPersonId: number, name: string) => ({
   actorId: String(tmdbPersonId), name, character: '', slug: name.toLowerCase().replaceAll(' ', '-'), tmdbPersonId,
 });
 const unrelatedMovie = { ...movie, tmdbId: 10, slug: 'unrelated', title: 'Unrelated', isComingSoon: false, cast: [castMember(100, 'Unrelated Actor')] } satisfies Movie;
-const refreshedComingSoonMovie = { ...movie, cast: [castMember(200, 'Known Actor'), castMember(300, 'New Actor')] } satisfies Movie;
+const refreshedComingSoonMovie = {
+  ...movie,
+  cast: [castMember(200, 'Known Actor'), castMember(300, 'New Actor')],
+  crew: [{ id: 400, name: 'New Director', job: 'Director', department: 'Directing', profileUrl: 'https://image.tmdb.org/director.jpg' }],
+} satisfies Movie;
 const comingSoonPeopleMovies = selectPeopleRefreshMovies([unrelatedMovie, refreshedComingSoonMovie], [refreshedComingSoonMovie], { comingSoonOnly: true });
 assert.deepStrictEqual(comingSoonPeopleMovies.map((entry) => entry.tmdbId), [movie.tmdbId]);
 assert.deepStrictEqual(
-  [...new Set(comingSoonPeopleMovies.flatMap((entry) => entry.cast.map((cast) => cast.tmdbPersonId)))],
-  [200, 300],
-  'Coming Soon people include newly discovered cast and exclude unrelated movies',
+  [...new Set([
+    ...comingSoonPeopleMovies.flatMap((entry) => entry.cast.map((cast) => cast.tmdbPersonId)),
+    ...comingSoonPeopleMovies.flatMap((entry) => (entry.crew || []).map((crew) => crew.id)),
+  ])],
+  [200, 300, 400],
+  'Coming Soon people include newly discovered cast and creative crew and exclude unrelated movies',
 );
 const fullPeopleMovies = selectPeopleRefreshMovies([unrelatedMovie, refreshedComingSoonMovie], [refreshedComingSoonMovie], { comingSoonOnly: false });
 assert.deepStrictEqual(fullPeopleMovies.map((entry) => entry.tmdbId), [unrelatedMovie.tmdbId, movie.tmdbId], 'Full refresh still checks the complete movie catalogue');

@@ -735,6 +735,9 @@ export default function App() {
                 <ActorDetail
                   actor={view.payload.actor}
                   filmography={view.payload.filmography}
+                  actingFilmography={view.payload.actingFilmography}
+                  directingFilmography={view.payload.directingFilmography}
+                  writingFilmography={view.payload.writingFilmography}
                   backdropUrl={view.payload.backdropUrl}
                   onNavigate={navigate}
                   onSelectMovie={selectMovie}

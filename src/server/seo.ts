@@ -125,7 +125,8 @@ function renderMovieContent(pathname: string): string {
     `<dt>Network</dt><dd>${escapeHtml(brand)}</dd>`,
     `<dt>Release Date</dt><dd>${escapeHtml(movie.releaseDate || String(movie.year))}</dd>`,
     movie.runtimeMinutes ? `<dt>Runtime</dt><dd>${movie.runtimeMinutes} min</dd>` : '',
-    movie.director ? `<dt>Director</dt><dd>${escapeHtml(movie.director)}</dd>` : '',
+    (movie.director || movie.directorCredit) ? `<dt>Director</dt><dd>${movie.directorCredit ? `<a href="${escapeHtml(getActorPath(movie.directorCredit.tmdbPersonId, movie.directorCredit.slug))}">${escapeHtml(movie.directorCredit.name)}</a>` : escapeHtml(movie.director || '')}</dd>` : '',
+    movie.writingCredits.length ? `<dt>Writers</dt><dd>${movie.writingCredits.map((writer) => `<a href="${escapeHtml(getActorPath(writer.tmdbPersonId, writer.slug))}">${escapeHtml(writer.name)}</a>`).join(' · ')}</dd>` : '',
     movie.voteAverage ? `<dt>Rating</dt><dd>${movie.voteAverage.toFixed(1)}</dd>` : '',
   ].filter(Boolean).join('');
   return `<main id="server-rendered-content"><article><h1>${escapeHtml(movie.title)}</h1><p>${renderText(movie.synopsis)}</p><dl>${facts}</dl><h2>Cast</h2><ul>${cast}</ul></article></main>`;
@@ -144,7 +145,10 @@ function renderActorContent(pathname: string): string {
     actor.knownForDepartment ? `<dt>Known for</dt><dd>${escapeHtml(actor.knownForDepartment)}</dd>` : '',
   ].filter(Boolean).join('');
   const movies = filmography.map((movie) => `<li><a href="${escapeHtml(getMoviePath(movie.tmdbId, movie.slug))}">${escapeHtml(movie.title)}</a> (${movie.year})${movie.character ? ` as ${escapeHtml(movie.character)}` : ''}</li>`).join('');
-  return `<main id="server-rendered-content"><article><h1>${escapeHtml(actor.name)}</h1>${actor.biography ? `<p>${renderText(actor.biography)}</p>` : ''}<dl>${facts}</dl><h2>Christmas movie filmography</h2><ul>${movies}</ul></article></main>`;
+  const renderCredits = (heading: string, entries: typeof filmography) => entries.length > 0
+    ? `<h2>${heading}</h2><ul>${entries.map((movie) => `<li><a href="${escapeHtml(getMoviePath(movie.tmdbId, movie.slug))}">${escapeHtml(movie.title)}</a> (${movie.year})${movie.character ? ` as ${escapeHtml(movie.character)}` : ''}${movie.crewJobs?.length ? ` — ${escapeHtml(movie.crewJobs.join(' · '))}` : ''}</li>`).join('')}</ul>`
+    : '';
+  return `<main id="server-rendered-content"><article><h1>${escapeHtml(actor.name)}</h1>${actor.biography ? `<p>${renderText(actor.biography)}</p>` : ''}<dl>${facts}</dl><h2>Christmas movie filmography</h2>${renderCredits('Acting', payload.actingFilmography)}${renderCredits('Directing', payload.directingFilmography)}${renderCredits('Writing', payload.writingFilmography)}</article></main>`;
 }
 
 function withQueryValues(search: string, values: Record<string, string>): string {

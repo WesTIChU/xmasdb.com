@@ -172,12 +172,48 @@ export const MovieDetail: React.FC<MovieDetailProps> = ({ movie, related, onNavi
               </div>
             )}
 
-            {movie.director && (
+            {(movie.director || movie.directorCredit) && (
               <div className="flex items-center justify-between">
                 <span className="text-[#6F675E] flex items-center gap-1.5">
                   <Clapperboard className="w-3.5 h-3.5" /> Director
                 </span>
-                <span className="font-medium text-[#23211E]">{movie.director}</span>
+                {movie.directorCredit ? (
+                  <a
+                    href={getActorPath(movie.directorCredit.tmdbPersonId, movie.directorCredit.slug)}
+                    onClick={(event) => {
+                      event.preventDefault();
+                      onNavigate(getActorPath(movie.directorCredit!.tmdbPersonId, movie.directorCredit!.slug));
+                    }}
+                    className="font-medium text-[#23211E] hover:text-[#841818] hover:underline"
+                  >
+                    {movie.directorCredit.name}
+                  </a>
+                ) : <span className="font-medium text-[#23211E]">{movie.director}</span>}
+              </div>
+            )}
+
+            {movie.writingCredits.length > 0 && (
+              <div className="flex items-start justify-between gap-4">
+                <span className="text-[#6F675E] flex items-center gap-1.5 shrink-0">
+                  <Clapperboard className="w-3.5 h-3.5" /> Writers
+                </span>
+                <span className="font-medium text-[#23211E] text-right">
+                  {movie.writingCredits.map((writer, index) => (
+                    <React.Fragment key={`${writer.tmdbPersonId}-${writer.job}`}>
+                      {index > 0 && <span className="text-[#A3998D]"> · </span>}
+                      <a
+                        href={getActorPath(writer.tmdbPersonId, writer.slug)}
+                        onClick={(event) => {
+                          event.preventDefault();
+                          onNavigate(getActorPath(writer.tmdbPersonId, writer.slug));
+                        }}
+                        className="hover:text-[#841818] hover:underline"
+                      >
+                        {writer.name}
+                      </a>
+                    </React.Fragment>
+                  ))}
+                </span>
               </div>
             )}
           </div>

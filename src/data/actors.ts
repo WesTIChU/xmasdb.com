@@ -1,6 +1,7 @@
 import { Actor } from '../types';
 import { MOVIES } from './movies';
 import ACTORS_DATA from './actors.json';
+import { getCreativeCrew, getPersonSlug } from '../utils/creative-crew';
 
 // Master TMDB Person ID lookup dictionary
 export const ACTOR_TMDB_LOOKUP: Record<string, number> = {
@@ -114,42 +115,13 @@ export function getActorBySlug(slug: string): Actor | undefined {
   const clean = slug.toLowerCase().trim();
   const existing = ACTORS.find((a) => a.slug.toLowerCase() === clean);
   if (existing) return existing;
-
-  // Derive from movies if not explicitly in static ACTORS array
-  for (const movie of MOVIES) {
-    const castMatch = movie.cast.find((c) => c.slug.toLowerCase() === clean);
-    if (castMatch) {
-      return {
-        id: castMatch.actorId,
-        slug: castMatch.slug,
-        name: castMatch.name,
-        tmdbPersonId: getTmdbPersonIdForSlug(castMatch.slug),
-        photoUrl: castMatch.profileUrl,
-      };
-    }
-  }
-  return undefined;
+  return getAllActors().find((actor) => actor.slug.toLowerCase() === clean);
 }
 
 export function getActorByTmdbId(tmdbPersonId: number): Actor | undefined {
   const existing = ACTORS.find((a) => a.tmdbPersonId === tmdbPersonId);
   if (existing) return existing;
-
-  for (const movie of MOVIES) {
-    const castMatch = movie.cast.find(
-      (c) => getTmdbPersonIdForSlug(c.slug) === tmdbPersonId
-    );
-    if (castMatch) {
-      return {
-        id: castMatch.actorId,
-        slug: castMatch.slug,
-        name: castMatch.name,
-        tmdbPersonId,
-        photoUrl: castMatch.profileUrl,
-      };
-    }
-  }
-  return undefined;
+  return getAllActors().find((actor) => actor.tmdbPersonId === tmdbPersonId);
 }
 
 export function getActorByIdentifier(identifier: string | number): Actor | undefined {
@@ -161,21 +133,26 @@ export function getActorByIdentifier(identifier: string | number): Actor | undef
 }
 
 export function getAllActors(): Actor[] {
-  const map = new Map<string, Actor>();
+  const map = new Map<number, Actor>();
   for (const a of ACTORS) {
-    map.set(a.slug, a);
+    map.set(a.tmdbPersonId, a);
   }
+
+  const mergeMoviePerson = (personId: number, name: string, slug: string, photoUrl: string | undefined, id: string) => {
+    const existing = map.get(personId);
+    if (!existing) {
+      map.set(personId, { id, slug, name, tmdbPersonId: personId, photoUrl });
+      return;
+    }
+    if (!existing.photoUrl && photoUrl) map.set(personId, { ...existing, photoUrl, profileUrl: existing.profileUrl || photoUrl });
+  };
+
   for (const m of MOVIES) {
     for (const c of m.cast) {
-      if (!map.has(c.slug)) {
-        map.set(c.slug, {
-          id: c.actorId,
-          slug: c.slug,
-          name: c.name,
-          tmdbPersonId: getTmdbPersonIdForSlug(c.slug),
-          photoUrl: c.profileUrl,
-        });
-      }
+      mergeMoviePerson(c.tmdbPersonId || getTmdbPersonIdForSlug(c.slug), c.name, c.slug, c.profileUrl, c.actorId);
+    }
+    for (const c of getCreativeCrew(m.crew)) {
+      mergeMoviePerson(c.id, c.name, getPersonSlug(c.name), c.profileUrl, String(c.id));
     }
   }
   return Array.from(map.values()).sort((a, b) => a.name.localeCompare(b.name));

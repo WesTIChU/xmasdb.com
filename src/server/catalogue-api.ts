@@ -29,6 +29,7 @@ import type {
   ListingMovie,
   MetaBrand,
   MovieDetailPayload,
+  MovieCrewCredit,
   PopularActorsGroup,
   SearchIndexPayload,
   SearchMovieEntry,
@@ -36,6 +37,7 @@ import type {
   SearchResultsPayload,
 } from '../api/types';
 import { scoreActorSearchResult, scoreMovieSearchFields } from '../utils/search-relevance';
+import { getCreativeCrew, getPersonSlug, isCreativeCrewJob } from '../utils/creative-crew';
 
 const FAVOURITE_MOVIE_TITLES = [
   'Christmas by Starlight',
@@ -169,6 +171,17 @@ function principalCast(movie: Movie): Set<string> {
   );
 }
 
+function toMovieCrewCredit(member: NonNullable<Movie['crew']>[number]): MovieCrewCredit {
+  return {
+    tmdbPersonId: member.id,
+    name: member.name,
+    slug: getPersonSlug(member.name),
+    job: member.job,
+    department: member.department,
+    profileUrl: member.profileUrl,
+  };
+}
+
 export function selectRelatedMovies(movie: Movie, movies: Movie[] = MOVIES): ListingMovie[] {
   const movieCast = principalCast(movie);
   const candidates = new Map(
@@ -203,6 +216,12 @@ export function buildMovieDetail(identifier: string, slug?: string): MovieDetail
       resolvedProfileUrl: getActorBySlug(member.slug)?.photoUrl,
       resolvedTmdbPersonId: member.tmdbPersonId || getTmdbPersonIdForSlug(member.slug),
     })),
+    directorCredit: getCreativeCrew(movie.crew).find((member) => member.job === 'Director')
+      ? toMovieCrewCredit(getCreativeCrew(movie.crew).find((member) => member.job === 'Director')!)
+      : undefined,
+    writingCredits: getCreativeCrew(movie.crew)
+      .filter((member) => ['Writer', 'Screenplay', 'Story'].includes(member.job))
+      .map(toMovieCrewCredit),
   };
 
   const related = selectRelatedMovies(movie);
@@ -236,21 +255,34 @@ export function buildActorDetail(identifier: string, slug?: string): ActorDetail
   if (!actor) return null;
 
   const actorSlug = actor.slug.toLowerCase();
-  const movies = MOVIES.filter((movie) =>
-    movie.cast.some((member) => member.tmdbPersonId === actor.tmdbPersonId)
-  );
+  const movies = MOVIES.filter((movie) => {
+    const acts = movie.cast.some((member) => member.tmdbPersonId === actor.tmdbPersonId
+      || (!member.tmdbPersonId && getTmdbPersonIdForSlug(member.slug) === actor.tmdbPersonId));
+    const crew = getCreativeCrew(movie.crew).some((member) => member.id === actor.tmdbPersonId);
+    return acts || crew;
+  });
 
   const filmography: ActorFilmographyItem[] = movies.map((movie) => ({
     ...toListingMovie(movie),
     backdropUrl: movie.backdropUrl,
     character: movie.cast.find((member) => member.slug.toLowerCase() === actorSlug)?.character,
+    crewJobs: getCreativeCrew(movie.crew)
+      .filter((member) => member.id === actor.tmdbPersonId && isCreativeCrewJob(member.job))
+      .map((member) => member.job),
   }));
+
+  const actingFilmography = filmography.filter((movie) => movie.character !== undefined);
+  const directingFilmography = filmography.filter((movie) => movie.crewJobs?.includes('Director'));
+  const writingFilmography = filmography.filter((movie) => movie.crewJobs?.some((job) => ['Writer', 'Screenplay', 'Story'].includes(job)));
 
   const backdrop = getActorBackdrop(movies, actor.tmdbPersonId);
 
   return {
     actor,
     filmography,
+    actingFilmography,
+    directingFilmography,
+    writingFilmography,
     backdropUrl: backdrop ? backdrop.url : null,
     titleDisambiguator: getActorTitleDisambiguator(actor),
   };
@@ -262,7 +294,7 @@ export function buildActorDetail(identifier: string, slug?: string): ActorDetail
 
 let searchIndexCache: SearchIndexPayload | null = null;
 
-let actorTitleDisambiguators: Map<string, string> | null = null;
+let actorTitleDisambiguators: Map<number, string> | null = null;
 
 function getActorTitleDisambiguator(actor: ReturnType<typeof getActorBySlug>): string | undefined {
   if (!actor) return undefined;
@@ -276,18 +308,21 @@ function getActorTitleDisambiguator(actor: ReturnType<typeof getActorBySlug>): s
     actorTitleDisambiguators = new Map(
       actors
         .filter((candidate) => (nameCounts.get(candidate.name.trim().toLowerCase()) || 0) > 1)
-        .map((candidate) => [candidate.slug, String(candidate.tmdbPersonId)])
+        .map((candidate) => [candidate.tmdbPersonId, String(candidate.tmdbPersonId)] as const)
     );
   }
-  return actorTitleDisambiguators.get(actor.slug);
+  return actorTitleDisambiguators.get(actor.tmdbPersonId);
 }
 
-function buildActorMovieCounts(): Map<string, number> {
-  const map = new Map<string, number>();
+function buildActorMovieCounts(): Map<number, number> {
+  const map = new Map<number, number>();
   for (const movie of MOVIES) {
     for (const member of movie.cast) {
-      const slug = member.slug.toLowerCase().trim();
-      map.set(slug, (map.get(slug) || 0) + 1);
+      const personId = member.tmdbPersonId || getTmdbPersonIdForSlug(member.slug);
+      map.set(personId, (map.get(personId) || 0) + 1);
+    }
+    for (const member of getCreativeCrew(movie.crew)) {
+      map.set(member.id, (map.get(member.id) || 0) + 1);
     }
   }
   return map;
@@ -295,14 +330,14 @@ function buildActorMovieCounts(): Map<string, number> {
 
 function toPersonEntry(
   actor: ReturnType<typeof getAllActors>[number],
-  counts: Map<string, number>
+  counts: Map<number, number>
 ): SearchPersonEntry {
   return {
     name: actor.name,
     slug: actor.slug,
     tmdbPersonId: actor.tmdbPersonId,
     photoUrl: actor.profileUrl || actor.photoUrl,
-    movieCount: counts.get(actor.slug.toLowerCase()) || 0,
+    movieCount: counts.get(actor.tmdbPersonId) || 0,
   };
 }
 
@@ -321,7 +356,7 @@ export function buildSearchIndex(): SearchIndexPayload {
         originalTitle: movie.originalTitle,
         // Join names with a NUL separator so substring matching can never span
         // across two different cast members (preserving per-name matching).
-        terms: movie.cast.map((member) => member.name).join('\u0000').toLowerCase(),
+        terms: [...movie.cast.map((member) => member.name), ...getCreativeCrew(movie.crew).map((member) => member.name)].join('\u0000').toLowerCase(),
       })),
       people: getAllActors().map((actor) => toPersonEntry(actor, counts)),
     };

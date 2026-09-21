@@ -132,6 +132,8 @@ export function buildMovieSeo(movie: Movie | MovieDetailMovie): SeoDocument {
   ].filter(Boolean).join('. ');
   const canonicalPath = getMoviePath(movie.tmdbId, movie.slug);
   const sameAs = [movie.links?.tmdb, movie.links?.imdb].filter((value): value is string => Boolean(value));
+  const detailMovie = 'writingCredits' in movie ? movie : undefined;
+  const director = detailMovie?.directorCredit || (movie.director ? { name: movie.director } : undefined);
   const movieSchema: Record<string, unknown> = {
     '@context': 'https://schema.org',
     '@type': 'Movie',
@@ -140,7 +142,16 @@ export function buildMovieSeo(movie: Movie | MovieDetailMovie): SeoDocument {
     description: cleanText(movie.synopsis),
     image: absoluteUrl(movie.posterUrl),
     datePublished: movie.releaseDate || undefined,
-    director: movie.director ? { '@type': 'Person', name: movie.director } : undefined,
+    director: director ? {
+      '@type': 'Person',
+      name: director.name,
+      ...('tmdbPersonId' in director ? { url: toCanonicalUrl(getActorPath(director.tmdbPersonId, director.slug)) } : {}),
+    } : undefined,
+    author: detailMovie?.writingCredits.length ? detailMovie.writingCredits.map((writer) => ({
+      '@type': 'Person',
+      name: writer.name,
+      url: toCanonicalUrl(getActorPath(writer.tmdbPersonId, writer.slug)),
+    })) : undefined,
     actor: movie.cast.map((member) => ({
       '@type': 'Person',
       name: member.name,
@@ -164,6 +175,7 @@ export function buildMovieSeo(movie: Movie | MovieDetailMovie): SeoDocument {
 
 export function buildActorSeo(actor: Actor, filmography: ActorFilmographyItem[] | Movie[] = [], titleDisambiguator?: string): SeoDocument {
   const count = filmography.length;
+  const creditFilmography = filmography as ActorFilmographyItem[];
   const brands = [...new Set(filmography.map((movie) => getBrandById(movie.brandId)?.shortName || movie.brandId))].join(', ');
   const biography = actor.biography ? ` ${truncateDescription(actor.biography, 100)}` : '';
   const description = `${actor.name} has ${count} Christmas ${count === 1 ? 'movie' : 'movies'} in the XmasDB filmography${brands ? ` across ${brands}` : ''}. Explore roles, release years and movie details.${biography}`;
@@ -181,6 +193,11 @@ export function buildActorSeo(actor: Actor, filmography: ActorFilmographyItem[] 
     description: actor.biography ? truncateDescription(actor.biography, 300) : undefined,
     birthDate: actor.birthday || undefined,
     deathDate: actor.deathday || undefined,
+    jobTitle: [...new Set(creditFilmography.flatMap((movie) => [
+      ...(movie.character !== undefined ? ['Actor'] : []),
+      ...(movie.crewJobs?.includes('Director') ? ['Director'] : []),
+      ...(movie.crewJobs?.some((job) => ['Writer', 'Screenplay', 'Story'].includes(job)) ? ['Writer'] : []),
+    ]))].join(', ') || undefined,
     sameAs,
   };
   return {

@@ -1,6 +1,7 @@
 import { Actor, CastMember, CrewMember, Genre, Movie, ReleaseDateInfo, Trailer } from '../types';
 import { MOVIES } from '../data/movies';
 import { getTmdbPersonIdForSlug } from '../data/actors';
+import { getCreativeCrew } from './creative-crew';
 
 export { calculateAge, calculateAgeAtDeath, formatActorDate } from './actor-dates';
 
@@ -58,7 +59,7 @@ export interface TmdbMovieApiResponse {
   release_dates?: { results?: Array<{ iso_3166_1: string; release_dates?: Array<{ release_date: string; type?: number; certification?: string; note?: string }> }> };
   credits?: {
     cast?: Array<{ id: number; name: string; character?: string; order?: number; profile_path?: string | null }>;
-    crew?: Array<{ id: number; name: string; job: string; credit_id?: string }>;
+    crew?: Array<{ id: number; name: string; job: string; department?: string; profile_path?: string | null; credit_id?: string }>;
   };
 }
 
@@ -141,12 +142,14 @@ export async function fetchTmdbMovie(tmdbId: number, apiKey?: string): Promise<P
       profileUrl: tmdbImageUrl(member.profile_path),
       order: member.order,
     }));
-    const crew: CrewMember[] | undefined = data.credits?.crew?.map((member) => ({
+    const crew: CrewMember[] | undefined = getCreativeCrew(data.credits?.crew?.map((member) => ({
       id: member.id,
       name: member.name,
       job: member.job,
+      department: member.department,
+      profileUrl: tmdbImageUrl(member.profile_path),
       creditId: member.credit_id,
-    }));
+    })));
     const releaseDates: ReleaseDateInfo[] | undefined = data.release_dates?.results?.flatMap((country) =>
       (country.release_dates || []).map((release) => ({
         country: country.iso_3166_1,
@@ -279,6 +282,16 @@ export function getCatalogueUniqueActors(): { tmdbPersonId: number; slug: string
         map.set(personId, {
           tmdbPersonId: personId,
           slug: member.slug,
+          name: member.name,
+          profileUrl: member.profileUrl,
+        });
+      }
+    }
+    for (const member of getCreativeCrew(movie.crew)) {
+      if (!map.has(member.id)) {
+        map.set(member.id, {
+          tmdbPersonId: member.id,
+          slug: member.name.toLowerCase().trim().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, ''),
           name: member.name,
           profileUrl: member.profileUrl,
         });
