@@ -13,7 +13,7 @@ const routes = [
   { path: '/lifetime/', text: 'Lifetime Christmas Movies' },
   { path: '/gaf/', text: 'GAF Christmas Movies' },
   { path: '/hallmark/2025/', text: 'Hallmark Christmas Movies' },
-  { path: '/feeds/', text: 'Christmas Movie Radarr & JSON Feeds' },
+  { path: '/feeds/', text: 'RADARR TIP: USE TAGS' },
   { path: '/about/', text: 'Why XmasDB Exists' },
   { path: '/privacy/', text: 'PRIVACY & AI' },
   { path: '/contact/', text: 'CONTACT XMASDB' },

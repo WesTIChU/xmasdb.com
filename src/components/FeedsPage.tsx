@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import type { FeedsMetaPayload } from '../api/types';
 import { SITE_ORIGIN } from '../utils/urls';
 import { NavSquiggle } from './NavigationLink';
+import { HollyDivider } from './HollyDivider';
 
 interface FeedCardProps {
   id: string;
@@ -71,6 +72,15 @@ function FeedUrlLink({ url, className = 'mt-3' }: { url: string; className?: str
   );
 }
 
+function MajorSectionHeading({ id, children }: { id: string; children: React.ReactNode }) {
+  return (
+    <div className="flex flex-col items-start">
+      <h2 id={id} className="shrink-0 font-heading text-xl font-semibold tracking-[0.015em] text-[#1A3D2F] sm:text-2xl">{children}</h2>
+      <span className="mt-1.5 h-px w-16 bg-[#DCCB9C]" aria-hidden="true" />
+    </div>
+  );
+}
+
 function FeedCard({
   id,
   title,
@@ -83,8 +93,8 @@ function FeedCard({
 }: FeedCardProps) {
   const url = `${origin}${endpoint}`;
   return (
-    <article className="border-b border-[#E7DFD5] py-4 first:pt-0 sm:pr-5">
-      <h3 className="font-heading text-lg font-semibold text-[#1A3D2F]">{title}</h3>
+      <article className="border-b border-[#E7DFD5] py-4 first:pt-0 sm:pr-5">
+      <h3 className="font-heading text-base font-semibold text-[#1A3D2F] sm:text-lg">{title}</h3>
       <p className="mt-0.5 font-sans-clean text-xs text-[#736B63]"><span className="font-semibold">{count}</span> eligible Christmas {count === 1 ? 'movie' : 'movies'}</p>
       <p className="mt-1.5 font-body text-sm leading-relaxed text-[#6B6258]">{description}</p>
       <FeedUrlLink url={url} />
@@ -130,14 +140,14 @@ export const FeedsPage: React.FC<{ meta: FeedsMetaPayload }> = ({ meta }) => {
   return (
     <div id="feeds-page" className="mx-auto max-w-4xl px-0 py-7 text-left sm:py-10">
       <header className="mb-8 border-b border-[#E7DFD5] pb-7">
-        <h1 className="font-heading text-2xl font-semibold text-[#1A3D2F] sm:text-3xl">Christmas Movie Radarr &amp; JSON Feeds</h1>
+        <h1 className="font-heading text-2xl font-semibold text-[#1A3D2F] sm:text-3xl">Radarr &amp; JSON Feeds</h1>
         <p className="mt-2 max-w-xl font-body text-base leading-relaxed text-[#59524A]">
           Add XmasDB Christmas movie collections directly to Radarr. Choose a collection below and copy its feed URL.
         </p>
       </header>
 
-      <section className="mb-9 border-b border-[#E7DFD5] pb-8" aria-labelledby="radarr-setup-heading">
-        <h2 id="radarr-setup-heading" className="font-heading text-xl font-semibold text-[#1A3D2F]">HOW TO ADD TO RADARR</h2>
+       <section className="pt-6 sm:pt-9" aria-labelledby="radarr-setup-heading">
+        <MajorSectionHeading id="radarr-setup-heading">HOW TO ADD TO RADARR</MajorSectionHeading>
         <div className="mt-4 max-w-2xl space-y-2 font-body text-sm leading-relaxed text-[#59524A]">
           <p>In Radarr go to:</p>
           <p className="font-semibold text-[#1A3D2F]">Settings → Import Lists → + → Advanced List → StevenLu Custom</p>
@@ -145,15 +155,34 @@ export const FeedsPage: React.FC<{ meta: FeedsMetaPayload }> = ({ meta }) => {
         </div>
         <div className="mt-4 space-y-1 font-sans-clean text-xs text-[#6B6258]">
           <p>XmasDB automatically keeps these lists updated.</p>
-          <p>Upcoming movies become eligible <span className="font-semibold">7 days</span> before their premiere.</p>
+           <p>Upcoming movies become eligible <span className="font-semibold">7 days</span> before their premiere. New releases often appear in XmasDB while their metadata is still incomplete, so this short delay gives details such as posters, cast, runtime and other movie information time to be updated before the movie is sent to Radarr.</p>
         </div>
       </section>
 
-      <section className="mb-9 border-b border-[#E7DFD5] pb-8" aria-labelledby="collections-heading">
-        <div className="mb-2">
-          <h2 id="collections-heading" className="font-heading text-xl font-semibold text-[#1A3D2F]">CHOOSE A COLLECTION</h2>
+        <aside className="mt-8 rounded-md border border-[#DCCB9C] bg-[#FBF5E8] px-4 py-3.5 sm:px-5" aria-labelledby="radarr-tags-tip-heading">
+        <div className="flex items-start gap-3">
+          <div className="min-w-0">
+            <h2 id="radarr-tags-tip-heading" className="font-sans-clean text-xs font-semibold uppercase tracking-[0.16em] text-[#1A3D2F]">RADARR TIP: USE TAGS</h2>
+            <div className="mt-2 space-y-2 font-body text-sm leading-relaxed text-[#59524A]">
+              <p>When adding an XmasDB import list to Radarr, give the list its own tag, for example <code className="rounded bg-[#F2E8CF] px-1 py-0.5 font-mono text-xs text-[#403A34]">xmasdb-hallmark</code>, <code className="rounded bg-[#F2E8CF] px-1 py-0.5 font-mono text-xs text-[#403A34]">xmasdb-lifetime</code>, or <code className="rounded bg-[#F2E8CF] px-1 py-0.5 font-mono text-xs text-[#403A34]">xmasdb-gaf</code>.</p>
+              <p>Tags make it much easier to identify and filter movies added by XmasDB later, especially if your Radarr library also contains regular movies.</p>
+              <p>Example: Hallmark feed → <code className="rounded bg-[#F2E8CF] px-1 py-0.5 font-mono text-xs text-[#403A34]">xmasdb-hallmark</code></p>
+              <p>Setting this up from the start makes managing a large Christmas collection much easier.</p>
+            </div>
+          </div>
         </div>
-        <div className="grid gap-x-6 sm:grid-cols-2">
+       </aside>
+
+       <HollyDivider className="my-8 sm:my-10" lineClassName="w-6 sm:w-8" ornamentClassName="h-4 w-12 sm:h-5 sm:w-14" />
+
+       <section aria-labelledby="collections-heading">
+         <div className="mb-2">
+           <MajorSectionHeading id="collections-heading">CHOOSE A COLLECTION</MajorSectionHeading>
+         </div>
+         <p className="mb-5 mt-3 max-w-2xl font-sans-clean text-xs leading-relaxed text-[#736B63] sm:text-sm">
+           <span className="font-semibold text-[#59524A]">Why are these numbers different?</span> Feed counts may be lower than the main XmasDB catalogue totals. Upcoming movies are added to XmasDB as soon as we discover them, but they do not become eligible for Radarr feeds until 7 days before their premiere. This gives their metadata time to fill out before they are sent to Radarr.
+         </p>
+         <div className="grid gap-x-6 gap-y-6 sm:grid-cols-2 sm:[&>article:nth-last-child(-n+2)]:border-b-0">
           <FeedCard
             id="radarr-all"
             title="ALL MOVIES"
@@ -170,8 +199,10 @@ export const FeedsPage: React.FC<{ meta: FeedsMetaPayload }> = ({ meta }) => {
         </div>
       </section>
 
-      <section className="mb-9 border-b border-[#E7DFD5] pb-8 pt-2" aria-labelledby="year-heading">
-        <h2 id="year-heading" className="font-heading text-xl font-semibold text-[#1A3D2F]">BROWSE BY YEAR</h2>
+       <HollyDivider className="my-8 sm:my-10" lineClassName="w-6 sm:w-8" ornamentClassName="h-4 w-12 sm:h-5 sm:w-14" />
+
+       <section aria-labelledby="year-heading">
+        <MajorSectionHeading id="year-heading">BROWSE BY YEAR</MajorSectionHeading>
         <div className="mt-4 flex flex-wrap items-center gap-x-2 gap-y-1 font-body text-sm sm:text-base" aria-label="Choose a year feed">
           {availableYears.map((year, index) => (
             <React.Fragment key={year}>
@@ -197,8 +228,10 @@ export const FeedsPage: React.FC<{ meta: FeedsMetaPayload }> = ({ meta }) => {
         </div>
       </section>
 
-      <section aria-labelledby="actor-feeds-heading">
-        <h2 id="actor-feeds-heading" className="font-heading text-xl font-semibold text-[#1A3D2F]">ACTOR FEEDS</h2>
+       <HollyDivider className="my-8 sm:my-10" lineClassName="w-6 sm:w-8" ornamentClassName="h-4 w-12 sm:h-5 sm:w-14" />
+
+       <section aria-labelledby="actor-feeds-heading">
+         <MajorSectionHeading id="actor-feeds-heading">ACTOR FEEDS</MajorSectionHeading>
         <p className="mt-3 max-w-2xl font-body text-sm leading-relaxed text-[#59524A]">
           Every actor in XmasDB has their own Radarr feed containing their eligible Christmas movies. Open an actor page and choose the JSON Feed link to copy their personal feed URL.
         </p>
