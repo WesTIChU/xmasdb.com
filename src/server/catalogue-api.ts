@@ -182,7 +182,7 @@ function toMovieCrewCredit(member: NonNullable<Movie['crew']>[number]): MovieCre
   };
 }
 
-export function selectRelatedMovies(movie: Movie, movies: Movie[] = MOVIES): ListingMovie[] {
+export function selectRelatedMovies(movie: Movie, movies: Movie[] = MOVIES, random: () => number = Math.random): ListingMovie[] {
   const movieCast = principalCast(movie);
   const candidates = new Map(
     movies
@@ -190,19 +190,14 @@ export function selectRelatedMovies(movie: Movie, movies: Movie[] = MOVIES): Lis
       .map((candidate) => [candidate.id, candidate]),
   );
 
-  return [...candidates.values()]
-    .map((candidate) => {
-      const sharedCast = [...principalCast(candidate)].filter((member) => movieCast.has(member)).length;
-      return { candidate, sharedCast, yearDistance: Math.abs(candidate.year - movie.year) };
-    })
-    .sort((a, b) =>
-      (b.sharedCast - a.sharedCast)
-      || (a.yearDistance - b.yearDistance)
-      || (b.candidate.year - a.candidate.year)
-      || a.candidate.id.localeCompare(b.candidate.id),
-    )
+  const shuffled = [...candidates.values()];
+  for (let index = shuffled.length - 1; index > 0; index -= 1) {
+    const swapIndex = Math.floor(random() * (index + 1));
+    [shuffled[index], shuffled[swapIndex]] = [shuffled[swapIndex], shuffled[index]];
+  }
+  return shuffled
     .slice(0, 4)
-    .map(({ candidate }) => toListingMovie(candidate));
+    .map(toListingMovie);
 }
 
 export function buildMovieDetail(identifier: string, slug?: string): MovieDetailPayload | null {
