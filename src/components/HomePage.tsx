@@ -40,7 +40,6 @@ export const HomePage: React.FC<HomePageProps> = ({ payload, onNavigate }) => {
                   movie={movie}
                   optimizeHomepageImage
                   titleLines={3}
-                  showBrandInMetadata={false}
                   metadata={formatMoviePremiereDate(movie) || 'Coming Soon'}
                   onSelectMovie={(slug, tmdbId) => onNavigate(getMoviePath(tmdbId || movie.tmdbId, slug))}
                 />
@@ -59,7 +58,7 @@ export const HomePage: React.FC<HomePageProps> = ({ payload, onNavigate }) => {
         </div>
         <div className={homepageMovieGridOuterClass}>
           <div className={homepageMovieGridClass}>
-            {discovery.map((movie) => <div key={movie.id} className="w-[140px] sm:w-auto shrink-0 snap-start"><MovieCard movie={movie} optimizeHomepageImage titleLines={3} showBrandInMetadata={false} onSelectMovie={(slug, tmdbId) => onNavigate(getMoviePath(tmdbId || movie.tmdbId, slug))} /></div>)}
+            {discovery.map((movie) => <div key={movie.id} className="w-[140px] sm:w-auto shrink-0 snap-start"><MovieCard movie={movie} optimizeHomepageImage titleLines={3} onSelectMovie={(slug, tmdbId) => onNavigate(getMoviePath(tmdbId || movie.tmdbId, slug))} /></div>)}
           </div>
         </div>
       </section>

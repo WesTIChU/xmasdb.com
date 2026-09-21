@@ -630,7 +630,7 @@ export default function App() {
                   page={listingPayload.page}
                   onNavigate={navigate}
                 />
-                <MovieGrid movies={listingPayload.movies} onSelectMovie={selectMovie} />
+                <MovieGrid movies={listingPayload.movies} onSelectMovie={selectMovie} naturalTitleHeight />
                 <CataloguePagination
                   pathname={cataloguePathname}
                   search={catalogueSearch}
@@ -669,6 +669,7 @@ export default function App() {
                 <MovieGrid
                   movies={listingPayload.movies}
                   onSelectMovie={selectMovie}
+                  naturalTitleHeight
                   emptyMessage={`No Christmas movies listed for ${descriptor.year}.`}
                 />
                 <CataloguePagination
@@ -713,6 +714,7 @@ export default function App() {
                   <MovieGrid
                     movies={listingPayload.movies}
                     onSelectMovie={selectMovie}
+                    naturalTitleHeight
                     emptyMessage={
                       descriptor.year
                         ? `No ${brand.shortName} Christmas movies listed for ${descriptor.year}.`

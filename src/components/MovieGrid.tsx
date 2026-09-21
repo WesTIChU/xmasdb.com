@@ -6,12 +6,14 @@ interface MovieGridProps {
   movies: ListingMovie[];
   onSelectMovie: (slug: string, tmdbId?: number) => void;
   emptyMessage?: string;
+  naturalTitleHeight?: boolean;
 }
 
 export const MovieGrid: React.FC<MovieGridProps> = ({
   movies,
   onSelectMovie,
   emptyMessage = 'No movies found.',
+  naturalTitleHeight = false,
 }) => {
   if (movies.length === 0) {
     return (
@@ -32,6 +34,7 @@ export const MovieGrid: React.FC<MovieGridProps> = ({
           movie={movie}
           onSelectMovie={onSelectMovie}
           priority={index < 3}
+          reserveTitleHeight={!naturalTitleHeight}
         />
       ))}
     </div>

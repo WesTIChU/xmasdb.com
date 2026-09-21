@@ -440,6 +440,7 @@ export const MovieDetail: React.FC<MovieDetailProps> = ({ movie, related, onNavi
               <MovieCard
                 key={relMovie.id}
                 movie={relMovie}
+                reserveTitleHeight={false}
                 onSelectMovie={(slug, tmdbId) => {
                   onNavigate(getMoviePath(tmdbId || relMovie.tmdbId, slug));
                 }}

@@ -13,17 +13,17 @@ interface MovieCardProps {
   priority?: boolean;
   /** Allows contextual rows to provide their own metadata beneath the title. */
   metadata?: React.ReactNode;
-  /** Hides the default year and brand metadata when a row supplies none. */
+  /** Hides the default year metadata when a row supplies none. */
   showYearBrandMetadata?: boolean;
-  /** Controls whether the default metadata includes the movie's network. */
-  showBrandInMetadata?: boolean;
   /** Uses derivatives generated for the homepage's current image set. */
   optimizeHomepageImage?: boolean;
   /** Controls the reserved title height for contexts with a different card width. */
   titleLines?: 2 | 3;
+  /** Allows archive grids to let metadata follow the title's natural height. */
+  reserveTitleHeight?: boolean;
 }
 
-export const MovieCard: React.FC<MovieCardProps> = ({ movie, onSelectMovie, priority = false, metadata, showYearBrandMetadata = true, showBrandInMetadata = true, optimizeHomepageImage = false, titleLines = 2 }) => {
+export const MovieCard: React.FC<MovieCardProps> = ({ movie, onSelectMovie, priority = false, metadata, showYearBrandMetadata = true, optimizeHomepageImage = false, titleLines = 2, reserveTitleHeight = true }) => {
   const [hasImageError, setHasImageError] = useState(false);
   const brand = getBrandById(movie.brandId);
   const canonicalPath = getMoviePath(movie.tmdbId, movie.slug);
@@ -80,7 +80,7 @@ export const MovieCard: React.FC<MovieCardProps> = ({ movie, onSelectMovie, prio
         {/* Movie Title & Year directly beneath poster */}
         <div className="pt-2.5 pb-1 text-center">
           <h3
-            className={`min-w-0 overflow-hidden font-heading text-base sm:text-base lg:text-lg font-semibold text-[#1A3D2F] group-hover:text-[#841818] transition-colors leading-snug ${titleLines === 3 ? 'line-clamp-3 break-normal' : 'min-h-[2.75rem] line-clamp-2 break-words px-1 text-pretty'}`}
+            className={`min-w-0 overflow-hidden font-heading text-base sm:text-base lg:text-lg font-semibold text-[#1A3D2F] group-hover:text-[#841818] transition-colors leading-snug ${titleLines === 3 ? 'line-clamp-3 break-normal' : `${reserveTitleHeight ? 'min-h-[2.75rem] ' : ''}line-clamp-2 break-words px-1 text-pretty`}`}
             title={movie.title}
           >
             {movie.title}
@@ -88,9 +88,6 @@ export const MovieCard: React.FC<MovieCardProps> = ({ movie, onSelectMovie, prio
           {(metadata !== undefined || showYearBrandMetadata) && (
             <p className="text-xs sm:text-sm text-[#736B63] mt-0.5 font-body">
               {metadata !== undefined ? metadata : movie.year}
-              {metadata === undefined && showBrandInMetadata && brand && (
-                <span className="text-[#756B60] text-xs font-sans-clean ml-1.5">· {brand.shortName}</span>
-              )}
             </p>
           )}
         </div>
