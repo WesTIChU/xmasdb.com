@@ -139,10 +139,12 @@ export const FeedsPage: React.FC<{ meta: FeedsMetaPayload }> = ({ meta }) => {
   const yearUrl = `${origin}${yearEndpoint}`;
 
   return (
-    <div id="feeds-page" className="mx-auto max-w-4xl px-0 py-7 text-left sm:py-10">
+    <div id="feeds-page" className="mx-auto max-w-4xl px-0 py-6 text-left sm:py-8">
       <header className="mb-0 pb-5 sm:pb-6">
-        <h1 className="font-heading text-2xl font-semibold text-[#1A3D2F] sm:text-3xl">Radarr &amp; JSON Feeds</h1>
-        <p className="mt-2 max-w-xl font-body text-base leading-relaxed text-[#59524A]">
+        <div className="mb-2 text-center">
+          <h1 className="text-2xl font-heading font-semibold text-[#1A3D2F] sm:text-3xl">Radarr &amp; JSON Feeds</h1>
+        </div>
+        <p className="mx-auto mt-1 max-w-xl text-center font-body text-base leading-relaxed text-[#59524A]">
           Add XmasDB Christmas movie collections directly to Radarr. Choose a collection below and copy its feed URL.
         </p>
         <nav className="quick-links-nav mt-5 flex flex-wrap items-center justify-center gap-x-2.5 gap-y-1.5 rounded-md bg-[#1A3D2F] px-3.5 py-2.5 font-sans-clean text-xs text-[#FAF7F2] sm:mt-6 sm:px-4 sm:py-3 sm:text-sm" aria-label="Quick links">
