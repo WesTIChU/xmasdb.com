@@ -15,7 +15,7 @@ import {
 } from '../data/actors';
 import { getBrandBySlug, getPopulatedBrands } from '../data/brands';
 import { getCataloguePage, type CatalogueQuery } from '../utils/catalogue-pagination';
-import { getMoviePremiereDateKey, isFutureComingSoonMovie, isMoviePremierePast } from '../utils/catalogue-lifecycle';
+import { getMoviePremiereDateKey, isFutureComingSoonMovie, isMoviePremierePast, sortMoviesByLifecycle } from '../utils/catalogue-lifecycle';
 import { getActorBackdrop } from '../utils/backdrops';
 import { buildRadarrFeed } from '../utils/feeds';
 import type {
@@ -250,7 +250,7 @@ function resolveActor(identifier: string, slug?: string): ReturnType<typeof getA
   return getActorBySlug(identifier);
 }
 
-export function buildActorDetail(identifier: string, slug?: string): ActorDetailPayload | null {
+export function buildActorDetail(identifier: string, slug?: string, now: Date = new Date()): ActorDetailPayload | null {
   const actor = resolveActor(identifier, slug);
   if (!actor) return null;
 
@@ -262,7 +262,7 @@ export function buildActorDetail(identifier: string, slug?: string): ActorDetail
     return acts || crew;
   });
 
-  const filmography: ActorFilmographyItem[] = movies.map((movie) => ({
+  const filmography: ActorFilmographyItem[] = sortMoviesByLifecycle(movies, now).map((movie) => ({
     ...toListingMovie(movie),
     backdropUrl: movie.backdropUrl,
     character: movie.cast.find((member) => member.slug.toLowerCase() === actorSlug)?.character,

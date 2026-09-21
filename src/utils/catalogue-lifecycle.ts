@@ -7,6 +7,10 @@ export interface MovieLifecycleFields {
   releaseDate?: string;
 }
 
+export interface SortableMovieLifecycleFields extends MovieLifecycleFields {
+  tmdbId: number;
+}
+
 function utcDateKey(date: Date): string {
   return `${date.getUTCFullYear()}-${String(date.getUTCMonth() + 1).padStart(2, '0')}-${String(date.getUTCDate()).padStart(2, '0')}`;
 }
@@ -30,6 +34,23 @@ export function isMoviePremierePast(movie: MovieLifecycleFields, now: Date = new
 export function isFutureComingSoonMovie(movie: MovieLifecycleFields, now: Date = new Date()): boolean {
   const premiereDate = getMoviePremiereDateKey(movie);
   return movie.status?.toLowerCase() === 'coming-soon' && (premiereDate === null || premiereDate >= utcDateKey(now));
+}
+
+export function sortMoviesByLifecycle<T extends SortableMovieLifecycleFields>(movies: T[], now: Date = new Date()): T[] {
+  return [...movies].sort((left, right) => {
+    const leftUpcoming = isFutureComingSoonMovie(left, now);
+    const rightUpcoming = isFutureComingSoonMovie(right, now);
+    if (leftUpcoming !== rightUpcoming) return leftUpcoming ? -1 : 1;
+
+    const leftDate = getMoviePremiereDateKey(left);
+    const rightDate = getMoviePremiereDateKey(right);
+    if (leftDate !== rightDate) {
+      if (!leftDate) return 1;
+      if (!rightDate) return -1;
+      return leftUpcoming ? leftDate.localeCompare(rightDate) : rightDate.localeCompare(leftDate);
+    }
+    return left.tmdbId - right.tmdbId;
+  });
 }
 
 export function reconcileMovieLifecycle(movie: Movie, now: Date = new Date()): Movie {
