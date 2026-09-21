@@ -94221,5 +94221,226 @@
     "knownForDepartment": "Acting",
     "knownCredits": 1,
     "tmdbUpdatedAt": "2026-09-20T16:19:40.732Z"
+  },
+  {
+    "id": "1846454",
+    "slug": "alejandro-alcoba",
+    "name": "Alejandro Alcoba",
+    "tmdbPersonId": 1846454,
+    "photoUrl": "/images/people/1846454.webp",
+    "profileUrl": "/images/people/1846454.webp",
+    "placeOfBirth": "Mississauga, Ontario, Canada",
+    "biography": "Alejandro Alcoba is a Canadian film and television writer and story editor. He holds a BA in Radio and Television Arts from Ryerson University, Toronto, Ontario, Canada.",
+    "imdbPersonId": "nm3697320",
+    "gender": "Male",
+    "knownForDepartment": "Writing",
+    "knownCredits": 5,
+    "alsoKnownAs": [
+      "Alex Alcoba"
+    ],
+    "twitterId": "alcobatron",
+    "facebookId": "alcoba.alex",
+    "tmdbUpdatedAt": "2026-09-21T13:04:23.659Z"
+  },
+  {
+    "id": "1085740",
+    "slug": "clare-niederpruem",
+    "name": "Clare Niederpruem",
+    "tmdbPersonId": 1085740,
+    "photoUrl": "/images/people/1085740.webp",
+    "profileUrl": "/images/people/1085740.webp",
+    "imdbPersonId": "nm3743828",
+    "gender": "Female",
+    "knownForDepartment": "Directing",
+    "knownCredits": 39,
+    "alsoKnownAs": [
+      "Clare Nelson",
+      "Clare Christine Niederpruem"
+    ],
+    "instagramId": "clare_niederpruem",
+    "tmdbUpdatedAt": "2026-09-21T13:04:20.687Z"
+  },
+  {
+    "id": "130050",
+    "slug": "colin-theys",
+    "name": "Colin Theys",
+    "tmdbPersonId": 130050,
+    "photoUrl": "/images/people/130050.webp",
+    "profileUrl": "/images/people/130050.webp",
+    "birthday": "1985-06-09",
+    "placeOfBirth": "Danbury, Connecticut, USA",
+    "biography": "Colin turned a love of movies, obsession with technical geekery, and acting hobby into a career making films. As a student, he made several award-winning CGI animations and VFX-driven short films. Since graduating from Wesleyan University in 2007, he has been working with Connecticut-based independent production company Synthetic Cinema International.\n\nIn 2011, Colin directed Steve Niles' Remains, the first original feature for NBCUniversal's Chiller Network. He has since directed two additional features for the network: Dead Souls and Deep in the Darkness, both based on novels by Michael Laimo. His next film will be Wishin' and Hopin', a Christmas story about a 10 year old boy in 1964 based on the New York Times bestselling novel by Wally Lamb.\n\nIn addition to directing, Colin produces for SCI and also supervises post production and VFX, delivering films on time and on budget.\n\nHe believes that a good director should know what everyone on set does and how they do it, setting the tone for the cast & crew with his energy. You'll usually find Colin standing by camera, close to the performance.",
+    "imdbPersonId": "nm2572627",
+    "gender": "Male",
+    "knownForDepartment": "Directing",
+    "knownCredits": 47,
+    "tmdbUpdatedAt": "2026-09-21T13:04:19.051Z"
+  },
+  {
+    "id": "548599",
+    "slug": "dustin-rikert",
+    "name": "Dustin Rikert",
+    "tmdbPersonId": 548599,
+    "photoUrl": "/images/people/548599.webp",
+    "profileUrl": "/images/people/548599.webp",
+    "birthday": "1974-08-01",
+    "placeOfBirth": "Randolph, Vermont, USA",
+    "imdbPersonId": "nm1046566",
+    "gender": "Male",
+    "knownForDepartment": "Directing",
+    "knownCredits": 47,
+    "tmdbUpdatedAt": "2026-09-21T13:04:18.366Z"
+  },
+  {
+    "id": "1256815",
+    "slug": "james-larosa",
+    "name": "James LaRosa",
+    "tmdbPersonId": 1256815,
+    "imdbPersonId": "nm0488484",
+    "knownForDepartment": "Writing",
+    "knownCredits": 5,
+    "tmdbUpdatedAt": "2026-09-21T13:04:21.359Z"
+  },
+  {
+    "id": "85204",
+    "slug": "jeff-beesley",
+    "name": "Jeff Beesley",
+    "tmdbPersonId": 85204,
+    "photoUrl": "/images/people/85204.webp",
+    "profileUrl": "/images/people/85204.webp",
+    "imdbPersonId": "nm0066580",
+    "gender": "Male",
+    "knownForDepartment": "Directing",
+    "knownCredits": 42,
+    "tmdbUpdatedAt": "2026-09-21T13:04:18.841Z"
+  },
+  {
+    "id": "1809131",
+    "slug": "jennifer-tadlock",
+    "name": "Jennifer Tadlock",
+    "tmdbPersonId": 1809131,
+    "knownForDepartment": "Directing",
+    "knownCredits": 3,
+    "tmdbUpdatedAt": "2026-09-21T13:04:17.241Z"
+  },
+  {
+    "id": "2235868",
+    "slug": "john-distefano",
+    "name": "John DiStefano",
+    "tmdbPersonId": 2235868,
+    "knownForDepartment": "Directing",
+    "knownCredits": 3,
+    "tmdbUpdatedAt": "2026-09-21T13:04:17.229Z"
+  },
+  {
+    "id": "934326",
+    "slug": "marcy-holland",
+    "name": "Marcy Holland",
+    "tmdbPersonId": 934326,
+    "imdbPersonId": "nm3239239",
+    "gender": "Female",
+    "knownForDepartment": "Writing",
+    "knownCredits": 52,
+    "tmdbUpdatedAt": "2026-09-21T13:04:24.499Z"
+  },
+  {
+    "id": "2840952",
+    "slug": "mark-distefano",
+    "name": "Mark DiStefano",
+    "tmdbPersonId": 2840952,
+    "knownForDepartment": "Visual Effects",
+    "knownCredits": 4,
+    "tmdbUpdatedAt": "2026-09-21T13:04:17.229Z"
+  },
+  {
+    "id": "1107266",
+    "slug": "max-mcguire",
+    "name": "Max McGuire",
+    "tmdbPersonId": 1107266,
+    "photoUrl": "/images/people/1107266.webp",
+    "profileUrl": "/images/people/1107266.webp",
+    "birthday": "1981-05-16",
+    "imdbPersonId": "nm0536609",
+    "gender": "Male",
+    "knownForDepartment": "Directing",
+    "knownCredits": 39,
+    "alsoKnownAs": [
+      "Maxwell McGuire"
+    ],
+    "tmdbUpdatedAt": "2026-09-21T13:04:22.891Z"
+  },
+  {
+    "id": "1882374",
+    "slug": "michelle-ricci",
+    "name": "Michelle Ricci",
+    "tmdbPersonId": 1882374,
+    "knownForDepartment": "Writing",
+    "knownCredits": 16,
+    "tmdbUpdatedAt": "2026-09-21T13:04:24.989Z"
+  },
+  {
+    "id": "1131877",
+    "slug": "ryan-landels",
+    "name": "Ryan Landels",
+    "tmdbPersonId": 1131877,
+    "photoUrl": "/images/people/1131877.webp",
+    "profileUrl": "/images/people/1131877.webp",
+    "imdbPersonId": "nm1293285",
+    "knownForDepartment": "Writing",
+    "knownCredits": 8,
+    "tmdbUpdatedAt": "2026-09-21T13:04:22.013Z"
+  },
+  {
+    "id": "107753",
+    "slug": "shamim-sarif",
+    "name": "Shamim Sarif",
+    "tmdbPersonId": 107753,
+    "photoUrl": "/images/people/107753.webp",
+    "profileUrl": "/images/people/107753.webp",
+    "birthday": "1969-09-24",
+    "placeOfBirth": "London, England, UK",
+    "biography": "Shamim Sarif is a British Canadian screenwriter, director and novelist of South Asian and South African heritage, and the co-director of London-based production company Enlightenment Productions.",
+    "imdbPersonId": "nm2328765",
+    "gender": "Female",
+    "knownForDepartment": "Directing",
+    "knownCredits": 13,
+    "tmdbUpdatedAt": "2026-09-21T13:04:24.970Z"
+  },
+  {
+    "id": "1211830",
+    "slug": "stefan-scaini",
+    "name": "Stefan Scaini",
+    "tmdbPersonId": 1211830,
+    "imdbPersonId": "nm0768737",
+    "gender": "Male",
+    "knownForDepartment": "Directing",
+    "knownCredits": 46,
+    "tmdbUpdatedAt": "2026-09-21T13:04:21.298Z"
+  },
+  {
+    "id": "1461219",
+    "slug": "susan-brightbill",
+    "name": "Susan Brightbill",
+    "tmdbPersonId": 1461219,
+    "imdbPersonId": "nm0109199",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 6,
+    "tmdbUpdatedAt": "2026-09-21T13:04:18.785Z"
+  },
+  {
+    "id": "1767300",
+    "slug": "zac-hug",
+    "name": "Zac Hug",
+    "tmdbPersonId": 1767300,
+    "photoUrl": "/images/people/1767300.webp",
+    "profileUrl": "/images/people/1767300.webp",
+    "gender": "Male",
+    "knownForDepartment": "Writing",
+    "knownCredits": 16,
+    "alsoKnownAs": [
+      "Хак Хаг"
+    ],
+    "tmdbUpdatedAt": "2026-09-21T13:04:19.451Z"
   }
 ]
