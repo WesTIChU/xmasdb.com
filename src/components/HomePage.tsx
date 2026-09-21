@@ -1,6 +1,5 @@
 import React from 'react';
 import type { HomePayload } from '../api/types';
-import { getBrandById } from '../data/brands';
 import { getMoviePath, getMoviesPath } from '../utils/urls';
 import { MovieCard } from './MovieCard';
 import { NavigationLink } from './NavigationLink';
@@ -36,12 +35,13 @@ export const HomePage: React.FC<HomePageProps> = ({ payload, onNavigate }) => {
         <div className={homepageMovieGridOuterClass}>
           <div className={homepageMovieGridClass}>
             {comingSoon.map((movie) => {
-              const brand = getBrandById(movie.brandId);
               return <div key={movie.id} className="w-[140px] sm:w-auto shrink-0 snap-start">
                 <MovieCard
                   movie={movie}
                   optimizeHomepageImage
-                  metadata={<>{formatMoviePremiereDate(movie) || 'Coming Soon'}{brand && <span className="text-[#756B60] text-xs font-sans-clean ml-1.5">· {brand.shortName}</span>}</>}
+                  titleLines={3}
+                  showBrandInMetadata={false}
+                  metadata={formatMoviePremiereDate(movie) || 'Coming Soon'}
                   onSelectMovie={(slug, tmdbId) => onNavigate(getMoviePath(tmdbId || movie.tmdbId, slug))}
                 />
               </div>;
@@ -59,7 +59,7 @@ export const HomePage: React.FC<HomePageProps> = ({ payload, onNavigate }) => {
         </div>
         <div className={homepageMovieGridOuterClass}>
           <div className={homepageMovieGridClass}>
-            {discovery.map((movie) => <div key={movie.id} className="w-[140px] sm:w-auto shrink-0 snap-start"><MovieCard movie={movie} optimizeHomepageImage onSelectMovie={(slug, tmdbId) => onNavigate(getMoviePath(tmdbId || movie.tmdbId, slug))} /></div>)}
+            {discovery.map((movie) => <div key={movie.id} className="w-[140px] sm:w-auto shrink-0 snap-start"><MovieCard movie={movie} optimizeHomepageImage titleLines={3} showBrandInMetadata={false} onSelectMovie={(slug, tmdbId) => onNavigate(getMoviePath(tmdbId || movie.tmdbId, slug))} /></div>)}
           </div>
         </div>
       </section>

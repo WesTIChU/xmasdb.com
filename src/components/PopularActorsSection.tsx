@@ -49,7 +49,7 @@ export const PopularActorsSection: React.FC<PopularActorsSectionProps> = ({ grou
           return <article key={actor.slug} className="w-[120px] shrink-0 text-center md:w-full"><a href={actorPath} onClick={(event) => { event.preventDefault(); onNavigate(actorPath); }} className="group block text-center">
             <ActorCircularPortrait actor={actor} />
             <h3 className="mt-3 font-heading text-sm text-[#1A3D2F] group-hover:text-[#841818] leading-snug">{actor.name}</h3>
-            <p className="mt-1 text-xs text-[#736B63] font-body">{actor.movieCount} {actor.movieCount === 1 ? 'Christmas movie' : 'Christmas movies'}</p>
+            <p className="mt-1 text-xs text-[#736B63] font-body">{actor.movieCount} {actor.movieCount === 1 ? 'movie' : 'movies'}</p>
           </a></article>;
         })}
       </div>
