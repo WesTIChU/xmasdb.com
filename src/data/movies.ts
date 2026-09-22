@@ -204974,6 +204974,175 @@ export const MOVIES: Movie[] = [
     "voteAverage": 6.772,
     "voteCount": 46,
     "tmdbUpdatedAt": "2026-09-22T05:28:57.308Z"
+  },
+  {
+    "id": "hallmark-2012-a-bride-for-christmas",
+    "slug": "a-bride-for-christmas",
+    "title": "A Bride for Christmas",
+    "year": 2012,
+    "brandId": "hallmark",
+    "releaseDate": "2012-12-01",
+    "synopsis": "Bride-to-be Jessie Patterson calls off her third engagement - during the ceremony! She swears off serious relationships, until she meets and is pursued by Aiden MacTiernan. Aiden, on the other hand, has bet his friends he is marriage material, and can find a fiancé in the four weeks leading up to Christmas. When Jessie and Aiden begin to fall for each other, Jessie must decide if she is ready for serious love, and Aiden must decide if his bet is worth risking his relationship with Jessie.",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/d5oFtJZI0PREMTft27lgW4nr7JV.jpg",
+    "backdropUrl": "https://image.tmdb.org/t/p/w1280/7btCSdbZ01URLMvahgZnsc78NEJ.jpg",
+    "cast": [
+      {
+        "actorId": "20373",
+        "name": "Arielle Kebbel",
+        "character": "Jessie",
+        "slug": "arielle-kebbel",
+        "tmdbPersonId": 20373,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/c98cwlydVsihduXnq6VLW4fQFC.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "62913",
+        "name": "Sage Brocklebank",
+        "character": "Mike",
+        "slug": "sage-brocklebank",
+        "tmdbPersonId": 62913,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/7BFFanLsfc2m4FU7Hvw8GDTGOEt.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "5009",
+        "name": "Peter Benson",
+        "character": "Matt",
+        "slug": "peter-benson",
+        "tmdbPersonId": 5009,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/btcuZXvGZcO1AyCQXcAeWWLf0jI.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "1043662",
+        "name": "Jordana Largy",
+        "character": "Marcie",
+        "slug": "jordana-largy",
+        "tmdbPersonId": 1043662,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/a6NAez2SywVsklnNzbkquFEmcST.jpg",
+        "order": 3
+      },
+      {
+        "actorId": "1073525",
+        "name": "Chelsey Reist",
+        "character": "Patty",
+        "slug": "chelsey-reist",
+        "tmdbPersonId": 1073525,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/4t8Ax6fuRsSkOsJc8A0BCeACmst.jpg",
+        "order": 4
+      },
+      {
+        "actorId": "134673",
+        "name": "Andrew W. Walker",
+        "character": "Aiden",
+        "slug": "andrew-w-walker",
+        "tmdbPersonId": 134673,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/iff2n02XlPjZKJrjIoocWcTec7y.jpg",
+        "order": 5
+      },
+      {
+        "actorId": "1292329",
+        "name": "Kimberley Sustad",
+        "character": "Vivian Patterston",
+        "slug": "kimberley-sustad",
+        "tmdbPersonId": 1292329,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/hLYx9wEcJkN1JnXiZyYxExNHmWn.jpg",
+        "order": 6
+      },
+      {
+        "actorId": "1228590",
+        "name": "Julian Bailey",
+        "character": "Oliver",
+        "slug": "julian-bailey",
+        "tmdbPersonId": 1228590,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/5NCHbYQlbGiSOxXUfoOTy2iD6sp.jpg",
+        "order": 7
+      },
+      {
+        "actorId": "2250",
+        "name": "Eric Keenleyside",
+        "character": "Hank Patterston",
+        "slug": "eric-keenleyside",
+        "tmdbPersonId": 2250,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/n7CFXU0redDCSHuLIPIKg45M0Do.jpg",
+        "order": 8
+      }
+    ],
+    "director": "Gary Yates",
+    "tmdbId": 147132,
+    "imdbId": "tt2415112",
+    "isComingSoon": false,
+    "status": "collection",
+    "originalTitle": "A Bride for Christmas",
+    "runtimeMinutes": 90,
+    "genres": [
+      {
+        "id": 10749,
+        "name": "Romance"
+      },
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "DE",
+        "releaseDate": "2013-12-25T00:00:00.000Z",
+        "type": 6,
+        "certification": "0",
+        "note": "Vox"
+      },
+      {
+        "country": "FR",
+        "releaseDate": "2013-12-16T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "TF1"
+      },
+      {
+        "country": "US",
+        "releaseDate": "2012-12-01T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "Hallmark Channel"
+      }
+    ],
+    "crew": [
+      {
+        "id": 103699,
+        "name": "Gary Yates",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/e5gR7CLu0uu2z5TKV7mGY06pdxR.jpg",
+        "creditId": "581497ff9251414f9b02f370"
+      },
+      {
+        "id": 928670,
+        "name": "Barbara Kymlicka",
+        "job": "Writer",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/5uAmw6fTni4V9UNiU5CdGqxkbbw.jpg",
+        "creditId": "5d470693a0be280811a11882"
+      }
+    ],
+    "trailers": [
+      {
+        "key": "BVF-PJiyGo4",
+        "site": "YouTube",
+        "type": "Trailer",
+        "name": "A Bride For Christmas - Starring Andrew W. Walker and Arielle Kebbel",
+        "official": true
+      }
+    ],
+    "trailerYoutubeKey": "BVF-PJiyGo4",
+    "voteAverage": 6.268,
+    "voteCount": 125,
+    "tmdbUpdatedAt": "2026-09-22T05:29:39.163Z"
   }
 ];
 
