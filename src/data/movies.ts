@@ -98094,7 +98094,7 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1754947",
       "imdb": "https://www.imdb.com/title/tt43674919/"
     },
-    "tmdbUpdatedAt": "2026-09-22T17:14:19.967Z",
+    "tmdbUpdatedAt": "2026-09-22T21:31:17.367Z",
     "premiereDate": "2026-10-31"
   },
   {
@@ -98228,7 +98228,7 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1665375",
       "imdb": "https://www.imdb.com/title/tt41054296/"
     },
-    "tmdbUpdatedAt": "2026-09-22T17:14:20.159Z",
+    "tmdbUpdatedAt": "2026-09-22T21:31:17.604Z",
     "premiereDate": "2026-10-17"
   },
   {
@@ -182362,7 +182362,7 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1772765",
       "imdb": "https://www.imdb.com/title/tt46069464/"
     },
-    "tmdbUpdatedAt": "2026-09-22T17:14:20.352Z"
+    "tmdbUpdatedAt": "2026-09-22T21:31:17.846Z"
   },
   {
     "id": "hallmark-2026-holiday-touchdown-a-bears-love-story",
@@ -182509,7 +182509,7 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1729134",
       "imdb": "https://www.imdb.com/title/tt43662087/"
     },
-    "tmdbUpdatedAt": "2026-09-22T17:14:20.544Z"
+    "tmdbUpdatedAt": "2026-09-22T21:31:18.091Z"
   },
   {
     "id": "hallmark-2026-mr-mrs-christmas",
@@ -182594,7 +182594,7 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773006",
       "imdb": "https://www.imdb.com/title/tt46070651/"
     },
-    "tmdbUpdatedAt": "2026-09-22T17:14:20.739Z"
+    "tmdbUpdatedAt": "2026-09-22T21:31:18.356Z"
   },
   {
     "id": "hallmark-2026-winter-wonderlanes",
@@ -182672,7 +182672,7 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773195",
       "imdb": "https://www.imdb.com/title/tt46071555/"
     },
-    "tmdbUpdatedAt": "2026-09-22T17:14:20.945Z",
+    "tmdbUpdatedAt": "2026-09-22T21:31:18.599Z",
     "backdropUrl": "/images/backdrops/1773195.jpg"
   },
   {
@@ -182735,7 +182735,7 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773382",
       "imdb": "https://www.imdb.com/title/tt46071998/"
     },
-    "tmdbUpdatedAt": "2026-09-22T17:14:21.137Z"
+    "tmdbUpdatedAt": "2026-09-22T21:31:18.835Z"
   },
   {
     "id": "hallmark-2026-what-if-christmas",
@@ -182797,7 +182797,7 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773380",
       "imdb": "https://www.imdb.com/title/tt46072491/"
     },
-    "tmdbUpdatedAt": "2026-09-22T17:14:21.331Z"
+    "tmdbUpdatedAt": "2026-09-22T21:31:19.073Z"
   },
   {
     "id": "hallmark-2026-who-s-coming-for-christmas",
@@ -182868,7 +182868,7 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773378",
       "imdb": "https://www.imdb.com/title/tt46075371/"
     },
-    "tmdbUpdatedAt": "2026-09-22T17:14:21.522Z"
+    "tmdbUpdatedAt": "2026-09-22T21:31:19.320Z"
   },
   {
     "id": "hallmark-2026-adopting-st-nick",
@@ -182955,7 +182955,7 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773374",
       "imdb": "https://www.imdb.com/title/tt43749818/"
     },
-    "tmdbUpdatedAt": "2026-09-22T17:14:21.714Z"
+    "tmdbUpdatedAt": "2026-09-22T21:31:19.560Z"
   },
   {
     "id": "hallmark-2026-a-danish-christmas",
@@ -183046,7 +183046,7 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773368",
       "imdb": "https://www.imdb.com/title/tt46066911/"
     },
-    "tmdbUpdatedAt": "2026-09-22T17:14:21.914Z",
+    "tmdbUpdatedAt": "2026-09-22T21:31:19.807Z",
     "runtimeMinutes": 84,
     "backdropUrl": "/images/backdrops/1773368.jpg"
   },
@@ -183116,7 +183116,7 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773363",
       "imdb": "https://www.imdb.com/title/tt46075438/"
     },
-    "tmdbUpdatedAt": "2026-09-22T17:14:22.107Z"
+    "tmdbUpdatedAt": "2026-09-22T21:31:20.045Z"
   },
   {
     "id": "hallmark-2026-holiday-unplugged",
@@ -183214,7 +183214,7 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773357",
       "imdb": "https://www.imdb.com/title/tt46075500/"
     },
-    "tmdbUpdatedAt": "2026-09-22T17:14:22.301Z"
+    "tmdbUpdatedAt": "2026-09-22T21:31:20.282Z"
   },
   {
     "id": "hallmark-2026-a-season-of-promises",
@@ -183295,7 +183295,7 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773353",
       "imdb": "https://www.imdb.com/title/tt46075510/"
     },
-    "tmdbUpdatedAt": "2026-09-22T17:14:22.495Z"
+    "tmdbUpdatedAt": "2026-09-22T21:31:20.519Z"
   },
   {
     "id": "hallmark-2026-my-christmas-cowboy",
@@ -183375,7 +183375,7 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773350",
       "imdb": "https://www.imdb.com/title/tt46075976/"
     },
-    "tmdbUpdatedAt": "2026-09-22T17:14:22.686Z"
+    "tmdbUpdatedAt": "2026-09-22T21:31:20.754Z"
   },
   {
     "id": "hallmark-2026-the-nights-before-christmas",
@@ -183437,7 +183437,7 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773345",
       "imdb": "https://www.imdb.com/title/tt46076002/"
     },
-    "tmdbUpdatedAt": "2026-09-22T17:14:22.887Z",
+    "tmdbUpdatedAt": "2026-09-22T21:31:20.998Z",
     "backdropUrl": "/images/backdrops/1773345.jpg"
   },
   {
@@ -183510,7 +183510,7 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773340",
       "imdb": "https://www.imdb.com/title/tt46076026/"
     },
-    "tmdbUpdatedAt": "2026-09-22T17:14:23.076Z"
+    "tmdbUpdatedAt": "2026-09-22T21:31:21.227Z"
   },
   {
     "id": "hallmark-2026-our-holiday-playbook",
@@ -183572,7 +183572,7 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773334",
       "imdb": "https://www.imdb.com/title/tt46076042/"
     },
-    "tmdbUpdatedAt": "2026-09-22T17:14:23.269Z"
+    "tmdbUpdatedAt": "2026-09-22T21:31:21.467Z"
   },
   {
     "id": "hallmark-2026-christmas-in-blue-dog-valley",
@@ -183634,7 +183634,7 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773330",
       "imdb": "https://www.imdb.com/title/tt46076055/"
     },
-    "tmdbUpdatedAt": "2026-09-22T17:14:23.469Z"
+    "tmdbUpdatedAt": "2026-09-22T21:31:21.718Z"
   },
   {
     "id": "hallmark-2026-double-booked-for-the-holidays",
@@ -183717,7 +183717,7 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt46064711/"
     },
     "backdropUrl": "/images/backdrops/1773329.jpg",
-    "tmdbUpdatedAt": "2026-09-22T17:14:23.668Z"
+    "tmdbUpdatedAt": "2026-09-22T21:31:21.960Z"
   },
   {
     "id": "hallmark-2026-christmas-delivered",
@@ -183808,7 +183808,7 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773322",
       "imdb": "https://www.imdb.com/title/tt41442843/"
     },
-    "tmdbUpdatedAt": "2026-09-22T17:14:23.865Z",
+    "tmdbUpdatedAt": "2026-09-22T21:31:22.200Z",
     "backdropUrl": "/images/backdrops/1773322.jpg"
   },
   {
@@ -183883,7 +183883,7 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773042",
       "imdb": "https://www.imdb.com/title/tt46076498/"
     },
-    "tmdbUpdatedAt": "2026-09-22T17:14:24.054Z"
+    "tmdbUpdatedAt": "2026-09-22T21:31:22.441Z"
   },
   {
     "id": "hallmark-2026-the-christmas-eve-feast",
@@ -184023,7 +184023,7 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773318",
       "imdb": "https://www.imdb.com/title/tt43655245/"
     },
-    "tmdbUpdatedAt": "2026-09-22T17:14:24.245Z"
+    "tmdbUpdatedAt": "2026-09-22T21:31:22.680Z"
   },
   {
     "id": "hallmark-2026-holiday-ever-after-a-disney-world-wish-come-true",
@@ -184211,7 +184211,7 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt39126701/"
     },
     "backdropUrl": "/images/backdrops/1594516.jpg",
-    "tmdbUpdatedAt": "2026-09-22T17:14:24.449Z"
+    "tmdbUpdatedAt": "2026-09-22T21:31:22.929Z"
   },
   {
     "id": "hallmark-2026-the-most-wonderful-secret",
@@ -184273,7 +184273,7 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773316",
       "imdb": "https://www.imdb.com/title/tt46076602/"
     },
-    "tmdbUpdatedAt": "2026-09-22T17:14:24.643Z"
+    "tmdbUpdatedAt": "2026-09-22T21:31:23.170Z"
   },
   {
     "id": "hallmark-2026-eight-nights-for-love",
@@ -184457,7 +184457,7 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773298",
       "imdb": "https://www.imdb.com/title/tt43746550/"
     },
-    "tmdbUpdatedAt": "2026-09-22T17:14:24.837Z"
+    "tmdbUpdatedAt": "2026-09-22T21:31:23.411Z"
   },
   {
     "id": "hallmark-2026-miles-to-christmas",
@@ -184654,7 +184654,7 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773293",
       "imdb": "https://www.imdb.com/title/tt40629979/"
     },
-    "tmdbUpdatedAt": "2026-09-22T17:14:25.032Z"
+    "tmdbUpdatedAt": "2026-09-22T21:31:23.649Z"
   },
   {
     "id": "hallmark-2026-the-snowflake-effect",
@@ -184716,7 +184716,7 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773286",
       "imdb": "https://www.imdb.com/title/tt46076619/"
     },
-    "tmdbUpdatedAt": "2026-09-22T17:14:25.222Z"
+    "tmdbUpdatedAt": "2026-09-22T21:31:23.898Z"
   },
   {
     "id": "hallmark-2026-a-grand-biltmore-christmas",
@@ -184918,7 +184918,7 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1602653",
       "imdb": "https://www.imdb.com/title/tt39380754/"
     },
-    "tmdbUpdatedAt": "2026-09-22T17:14:25.422Z",
+    "tmdbUpdatedAt": "2026-09-22T21:31:24.145Z",
     "backdropUrl": "/images/backdrops/1602653.jpg"
   },
   {
@@ -185001,7 +185001,7 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773280",
       "imdb": "https://www.imdb.com/title/tt46064715/"
     },
-    "tmdbUpdatedAt": "2026-09-22T17:14:25.615Z"
+    "tmdbUpdatedAt": "2026-09-22T21:31:24.389Z"
   },
   {
     "id": "hallmark-2026-christmas-in-canterbury",
@@ -185087,7 +185087,7 @@ export const MOVIES: Movie[] = [
     "links": {
       "tmdb": "https://www.themoviedb.org/movie/1733866"
     },
-    "tmdbUpdatedAt": "2026-09-22T17:14:25.808Z",
+    "tmdbUpdatedAt": "2026-09-22T21:31:24.620Z",
     "imdbId": "tt43750204"
   },
   {
@@ -185168,7 +185168,7 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773035",
       "imdb": "https://www.imdb.com/title/tt41783274/"
     },
-    "tmdbUpdatedAt": "2026-09-22T17:14:26.016Z"
+    "tmdbUpdatedAt": "2026-09-22T21:31:24.859Z"
   },
   {
     "id": "hallmark-2026-noelle-nomads",
@@ -185238,7 +185238,7 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773275",
       "imdb": "https://www.imdb.com/title/tt46076883/"
     },
-    "tmdbUpdatedAt": "2026-09-22T17:14:26.206Z"
+    "tmdbUpdatedAt": "2026-09-22T21:31:25.091Z"
   },
   {
     "id": "hallmark-2026-hearts-all-aglow",
@@ -185310,7 +185310,7 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773270",
       "imdb": "https://www.imdb.com/title/tt46076903/"
     },
-    "tmdbUpdatedAt": "2026-09-22T17:14:26.398Z"
+    "tmdbUpdatedAt": "2026-09-22T21:31:25.328Z"
   },
   {
     "id": "hallmark-2026-barking-all-the-way",
@@ -185372,7 +185372,7 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773266",
       "imdb": "https://www.imdb.com/title/tt46076921/"
     },
-    "tmdbUpdatedAt": "2026-09-22T17:14:26.590Z"
+    "tmdbUpdatedAt": "2026-09-22T21:31:25.571Z"
   },
   {
     "id": "hallmark-2026-save-the-date-for-christmas",
@@ -185434,7 +185434,7 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt46076940/"
     },
     "premiereDate": "2026-12-20",
-    "tmdbUpdatedAt": "2026-09-22T17:14:26.782Z"
+    "tmdbUpdatedAt": "2026-09-22T21:31:25.808Z"
   },
   {
     "id": "lifetime-2025-a-runaway-bride-for-christmas",
@@ -185453,8 +185453,9 @@ export const MOVIES: Movie[] = [
         "character": "Emma",
         "slug": "nischelle-turner",
         "tmdbPersonId": 1563905,
-        "profileUrl": "https://image.tmdb.org/t/p/w500/58IQ8xk7IUxoRBjezJkkPhU43IV.jpg",
-        "order": 0
+        "profileUrl": "/images/people/1563905.webp",
+        "order": 0,
+        "birthday": "1975-02-11"
       },
       {
         "actorId": "1261371",
@@ -185472,7 +185473,7 @@ export const MOVIES: Movie[] = [
         "character": "Cashier Anne",
         "slug": "jacqueline-ashton",
         "tmdbPersonId": 5757869,
-        "profileUrl": "https://image.tmdb.org/t/p/w500/65lh5yF8rLUwd3Yp38TjIUt0Tgi.jpg",
+        "profileUrl": "/images/people/5757869.webp",
         "order": 2
       },
       {
@@ -185491,8 +185492,9 @@ export const MOVIES: Movie[] = [
         "character": "Lucas Holden",
         "slug": "luxton-handspiker",
         "tmdbPersonId": 3026149,
-        "profileUrl": "https://image.tmdb.org/t/p/w500/yF4nysPSwmlnJ5NqjYJDVdWnfkm.jpg",
-        "order": 4
+        "profileUrl": "/images/people/3026149.webp",
+        "order": 4,
+        "birthday": "2010-06-23"
       },
       {
         "actorId": "1612663",
@@ -185699,7 +185701,7 @@ export const MOVIES: Movie[] = [
         "character": "Bill Holliday",
         "slug": "jim-watson",
         "tmdbPersonId": 1460685,
-        "profileUrl": "https://image.tmdb.org/t/p/w500/2ZVVbf2c72OLShp6U4nYAy15kab.jpg",
+        "profileUrl": "/images/people/1460685.webp",
         "order": 2
       },
       {
@@ -185718,8 +185720,9 @@ export const MOVIES: Movie[] = [
         "character": "Justin",
         "slug": "brandon-oakes",
         "tmdbPersonId": 1529984,
-        "profileUrl": "https://image.tmdb.org/t/p/w500/iiEiwcEaOObQXHoOitU1wstZmMF.jpg",
-        "order": 4
+        "profileUrl": "/images/people/1529984.webp",
+        "order": 4,
+        "birthday": "1972-07-03"
       },
       {
         "actorId": "164433",
@@ -185953,8 +185956,9 @@ export const MOVIES: Movie[] = [
         "character": "Luke Hollis",
         "slug": "james-lafferty",
         "tmdbPersonId": 98050,
-        "profileUrl": "https://image.tmdb.org/t/p/w500/lvUyG8wwYPUl8x5byd1g5Y2A0ia.jpg",
-        "order": 0
+        "profileUrl": "/images/people/98050.webp",
+        "order": 0,
+        "birthday": "1985-07-25"
       },
       {
         "actorId": "204239",
@@ -185962,8 +185966,9 @@ export const MOVIES: Movie[] = [
         "character": "Caroline",
         "slug": "zibby-allen",
         "tmdbPersonId": 204239,
-        "profileUrl": "https://image.tmdb.org/t/p/w500/uPvugIWF4tqpt99MXVcnBnw4fRv.jpg",
-        "order": 1
+        "profileUrl": "/images/people/204239.webp",
+        "order": 1,
+        "birthday": "1980-09-29"
       },
       {
         "actorId": "12055",
@@ -185980,7 +185985,7 @@ export const MOVIES: Movie[] = [
         "character": "Keith Hoffman",
         "slug": "thomas-darya",
         "tmdbPersonId": 1942733,
-        "profileUrl": "https://image.tmdb.org/t/p/w500/goLrGoXK7qGBjY9EHyrxYvLd8ie.jpg",
+        "profileUrl": "/images/people/1942733.webp",
         "order": 3
       },
       {
@@ -186048,8 +186053,9 @@ export const MOVIES: Movie[] = [
         "character": "Isaac",
         "slug": "mason-mckenzie",
         "tmdbPersonId": 1975739,
-        "profileUrl": "https://image.tmdb.org/t/p/w500/m53K5fmai6ieR2J0PxAlEP5jlCm.jpg",
-        "order": 10
+        "profileUrl": "/images/people/1975739.webp",
+        "order": 10,
+        "birthday": "2005-07-25"
       }
     ],
     "director": "Monika Mitchell",
@@ -186217,7 +186223,7 @@ export const MOVIES: Movie[] = [
         "character": "Kayleigh Brooks",
         "slug": "chelsea-rose-cook",
         "tmdbPersonId": 3379228,
-        "profileUrl": "https://image.tmdb.org/t/p/w500/8p7Y0nz1Gye36xsrIA7bhh4rloJ.jpg",
+        "profileUrl": "/images/people/3379228.webp",
         "order": 0
       },
       {
@@ -186287,7 +186293,7 @@ export const MOVIES: Movie[] = [
         "character": "Ray",
         "slug": "brandon-gillard",
         "tmdbPersonId": 5753938,
-        "profileUrl": "https://image.tmdb.org/t/p/w500/6NlAJSUwKna1v4qapHVxBJ6aMiX.jpg",
+        "profileUrl": "/images/people/5753938.webp",
         "order": 8
       },
       {
@@ -186385,7 +186391,7 @@ export const MOVIES: Movie[] = [
         "character": "Ally Willard",
         "slug": "elisa-king",
         "tmdbPersonId": 208230,
-        "profileUrl": "https://image.tmdb.org/t/p/w500/j3PXHwAAWXfOhCbVZhGhZ3RYLl9.jpg",
+        "profileUrl": "/images/people/208230.webp",
         "order": 2
       },
       {
@@ -186394,7 +186400,7 @@ export const MOVIES: Movie[] = [
         "character": "Stu",
         "slug": "justin-nurse",
         "tmdbPersonId": 3829124,
-        "profileUrl": "https://image.tmdb.org/t/p/w500/wzydPe1MnzsPRe2G7R7B5UHCsci.jpg",
+        "profileUrl": "/images/people/3829124.webp",
         "order": 3
       },
       {
@@ -186403,7 +186409,7 @@ export const MOVIES: Movie[] = [
         "character": "Joyce Bridger",
         "slug": "jillian-rees-brown",
         "tmdbPersonId": 1102783,
-        "profileUrl": "https://image.tmdb.org/t/p/w500/9WaAs8FMfTSjOVWWlE23lRNEvX8.jpg",
+        "profileUrl": "/images/people/1102783.webp",
         "order": 4
       },
       {
@@ -186412,7 +186418,7 @@ export const MOVIES: Movie[] = [
         "character": "Gordon Howard",
         "slug": "colin-furlong",
         "tmdbPersonId": 4208689,
-        "profileUrl": "https://image.tmdb.org/t/p/w500/q3W0MY3ukDOl9TUnqWhz9zQB9ps.jpg",
+        "profileUrl": "/images/people/4208689.webp",
         "order": 5
       },
       {
@@ -186429,8 +186435,9 @@ export const MOVIES: Movie[] = [
         "character": "Captain Mast",
         "slug": "nicole-underhay",
         "tmdbPersonId": 1239590,
-        "profileUrl": "https://image.tmdb.org/t/p/w500/1YcPzRyTifX2BCDejv0uYkHZk2V.jpg",
-        "order": 7
+        "profileUrl": "/images/people/1239590.webp",
+        "order": 7,
+        "birthday": "1974-12-28"
       },
       {
         "actorId": "3855939",
@@ -186438,8 +186445,9 @@ export const MOVIES: Movie[] = [
         "character": "Ally Willard",
         "slug": "eliza-king",
         "tmdbPersonId": 3855939,
-        "profileUrl": "https://image.tmdb.org/t/p/w500/gXHHuEKqimtE3ZVE6bu9vCG5JNk.jpg",
-        "order": 8
+        "profileUrl": "/images/people/3855939.webp",
+        "order": 8,
+        "birthday": "1994-05-17"
       }
     ],
     "director": "Michelle Ouellet",
@@ -202149,7 +202157,7 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-09-22T17:14:26.977Z",
+    "tmdbUpdatedAt": "2026-09-22T21:31:26.047Z",
     "premiereDate": "2026-11-12"
   },
   {
@@ -202301,7 +202309,7 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "o9dyk5v_ybQ",
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-09-22T17:14:27.176Z",
+    "tmdbUpdatedAt": "2026-09-22T21:31:26.322Z",
     "premiereDate": "2026-11-19"
   },
   {
@@ -202470,8 +202478,9 @@ export const MOVIES: Movie[] = [
         "character": "Jane",
         "slug": "amanda-fuller",
         "tmdbPersonId": 133401,
-        "profileUrl": "https://image.tmdb.org/t/p/w500/yRZk0c8NMcAiOg9KQqbss96Sbn9.jpg",
-        "order": 0
+        "profileUrl": "/images/people/133401.webp",
+        "order": 0,
+        "birthday": "1984-08-27"
       },
       {
         "actorId": "51750",
@@ -202479,8 +202488,9 @@ export const MOVIES: Movie[] = [
         "character": "Justin",
         "slug": "joey-lawrence",
         "tmdbPersonId": 51750,
-        "profileUrl": "https://image.tmdb.org/t/p/w500/scmaFpaElhetPwubERvd1mdkERg.jpg",
-        "order": 1
+        "profileUrl": "/images/people/51750.webp",
+        "order": 1,
+        "birthday": "1976-04-20"
       },
       {
         "actorId": "2369060",
@@ -202488,7 +202498,7 @@ export const MOVIES: Movie[] = [
         "character": "Alejandro",
         "slug": "ricardo-ch-vez",
         "tmdbPersonId": 2369060,
-        "profileUrl": "https://image.tmdb.org/t/p/w500/qpe8onzjemChvVWcJg1IWWAMNCF.jpg",
+        "profileUrl": "/images/people/2369060.webp",
         "order": 2
       },
       {
@@ -202589,8 +202599,9 @@ export const MOVIES: Movie[] = [
         "character": "Christopher Hughes",
         "slug": "cameron-arnett",
         "tmdbPersonId": 169396,
-        "profileUrl": "https://image.tmdb.org/t/p/w500/r9JFN7CyYzybehriG8vB0F7280n.jpg",
-        "order": 2
+        "profileUrl": "/images/people/169396.webp",
+        "order": 2,
+        "birthday": "1960-10-14"
       },
       {
         "actorId": "4105292",
@@ -202606,8 +202617,9 @@ export const MOVIES: Movie[] = [
         "character": "Commander Sergeant",
         "slug": "kevin-porter",
         "tmdbPersonId": 1016433,
-        "profileUrl": "https://image.tmdb.org/t/p/w500/wEgU4DLvR3DNClIJPTXkcOc7D57.jpg",
-        "order": 4
+        "profileUrl": "/images/people/1016433.webp",
+        "order": 4,
+        "birthday": "1969-07-29"
       },
       {
         "actorId": "2137504",
@@ -202786,8 +202798,9 @@ export const MOVIES: Movie[] = [
         "character": "Alexander",
         "slug": "kirk-barker",
         "tmdbPersonId": 1455179,
-        "profileUrl": "https://image.tmdb.org/t/p/w500/iUKT3s2fjBhmk0qELYF9fNsDays.jpg",
-        "order": 0
+        "profileUrl": "/images/people/1455179.webp",
+        "order": 0,
+        "birthday": "1983-04-26"
       },
       {
         "actorId": "3729076",
@@ -202795,8 +202808,9 @@ export const MOVIES: Movie[] = [
         "character": "Katie",
         "slug": "brianna-cohen",
         "tmdbPersonId": 3729076,
-        "profileUrl": "https://image.tmdb.org/t/p/w500/w3lhUQGeeamDG0ncS0r1BzIFPtR.jpg",
-        "order": 1
+        "profileUrl": "/images/people/3729076.webp",
+        "order": 1,
+        "birthday": "1988-03-24"
       },
       {
         "actorId": "25730",
@@ -202804,8 +202818,9 @@ export const MOVIES: Movie[] = [
         "character": "Mr. Norton",
         "slug": "brian-caspe",
         "tmdbPersonId": 25730,
-        "profileUrl": "https://image.tmdb.org/t/p/w500/orGBrMh5z8Ao7jopzjgbxk0qDAn.jpg",
-        "order": 2
+        "profileUrl": "/images/people/25730.webp",
+        "order": 2,
+        "birthday": "1975-05-11"
       },
       {
         "actorId": "3909217",
@@ -202813,8 +202828,9 @@ export const MOVIES: Movie[] = [
         "character": "Muriel",
         "slug": "jessica-balmer",
         "tmdbPersonId": 3909217,
-        "profileUrl": "https://image.tmdb.org/t/p/w500/fhb5Oj719yH7z5f2lYU2r8Lyu46.jpg",
-        "order": 3
+        "profileUrl": "/images/people/3909217.webp",
+        "order": 3,
+        "birthday": "1998-06-01"
       },
       {
         "actorId": "3662495",
@@ -202830,7 +202846,7 @@ export const MOVIES: Movie[] = [
         "character": "King Jeffrey",
         "slug": "andrew-forbes",
         "tmdbPersonId": 1230653,
-        "profileUrl": "https://image.tmdb.org/t/p/w500/iEAbDDqIDzwSs9YLLREjqOFEYki.jpg",
+        "profileUrl": "/images/people/1230653.webp",
         "order": 5
       },
       {
@@ -202839,7 +202855,7 @@ export const MOVIES: Movie[] = [
         "character": "Jim Miller",
         "slug": "steven-barwick",
         "tmdbPersonId": 2525654,
-        "profileUrl": "https://image.tmdb.org/t/p/w500/uoPjzoYH3jtB3uMs9gMLAMEXIXy.jpg",
+        "profileUrl": "/images/people/2525654.webp",
         "order": 6
       },
       {
@@ -202935,8 +202951,9 @@ export const MOVIES: Movie[] = [
         "character": "Carrie Williams",
         "slug": "brianna-cohen",
         "tmdbPersonId": 3729076,
-        "profileUrl": "https://image.tmdb.org/t/p/w500/w3lhUQGeeamDG0ncS0r1BzIFPtR.jpg",
-        "order": 0
+        "profileUrl": "/images/people/3729076.webp",
+        "order": 0,
+        "birthday": "1988-03-24"
       },
       {
         "actorId": "1751311",
@@ -202962,7 +202979,7 @@ export const MOVIES: Movie[] = [
         "character": "Rose Williams",
         "slug": "nina-surbaugh",
         "tmdbPersonId": 5670629,
-        "profileUrl": "https://image.tmdb.org/t/p/w500/wA6dKL9gc5wZhQdghyiVStc22Mj.jpg",
+        "profileUrl": "/images/people/5670629.webp",
         "order": 3
       },
       {
@@ -202971,7 +202988,7 @@ export const MOVIES: Movie[] = [
         "character": "George",
         "slug": "george-r-hildebrand",
         "tmdbPersonId": 2747506,
-        "profileUrl": "https://image.tmdb.org/t/p/w500/qe7LzXvrLIN67BdkgNo1mIs5JcM.jpg",
+        "profileUrl": "/images/people/2747506.webp",
         "order": 4
       },
       {
@@ -202980,7 +202997,7 @@ export const MOVIES: Movie[] = [
         "character": "Conor",
         "slug": "logan-shephard",
         "tmdbPersonId": 3147780,
-        "profileUrl": "https://image.tmdb.org/t/p/w500/wUH0QZPDbHAUiw455BiRgpb11GP.jpg",
+        "profileUrl": "/images/people/3147780.webp",
         "order": 5
       },
       {
@@ -202989,7 +203006,7 @@ export const MOVIES: Movie[] = [
         "character": "Kurt Townsend",
         "slug": "ryan-wesley-gilreath",
         "tmdbPersonId": 1545515,
-        "profileUrl": "https://image.tmdb.org/t/p/w500/eWtPOyzCBFuS3VpsrjYBuQEaNId.jpg",
+        "profileUrl": "/images/people/1545515.webp",
         "order": 6
       }
     ],
@@ -203066,7 +203083,7 @@ export const MOVIES: Movie[] = [
         "character": "Julia Carter",
         "slug": "jenna-michno",
         "tmdbPersonId": 1948436,
-        "profileUrl": "https://image.tmdb.org/t/p/w500/51URs3ZSlFjHnIcJ952dEdsUV9h.jpg",
+        "profileUrl": "/images/people/1948436.webp",
         "order": 0
       },
       {
@@ -203075,8 +203092,9 @@ export const MOVIES: Movie[] = [
         "character": "Prince Christopher",
         "slug": "robert-adamson",
         "tmdbPersonId": 105187,
-        "profileUrl": "https://image.tmdb.org/t/p/w500/qNBcYHiBe4WwUzDSgiMzT2tlqI.jpg",
-        "order": 1
+        "profileUrl": "/images/people/105187.webp",
+        "order": 1,
+        "birthday": "1985-07-11"
       },
       {
         "actorId": "1936485",
@@ -203084,7 +203102,7 @@ export const MOVIES: Movie[] = [
         "character": "Alexis",
         "slug": "kayla-fields",
         "tmdbPersonId": 1936485,
-        "profileUrl": "https://image.tmdb.org/t/p/w500/sDukIYZ7ISb6AEM06hX6IbJX61c.jpg",
+        "profileUrl": "/images/people/1936485.webp",
         "order": 2
       },
       {
@@ -203093,7 +203111,7 @@ export const MOVIES: Movie[] = [
         "character": "Malcolm",
         "slug": "butch-klein",
         "tmdbPersonId": 154747,
-        "profileUrl": "https://image.tmdb.org/t/p/w500/29Dlf3Z81sVtN5JGFKqH5rq5scg.jpg",
+        "profileUrl": "/images/people/154747.webp",
         "order": 3
       },
       {
@@ -203112,8 +203130,9 @@ export const MOVIES: Movie[] = [
         "character": "Father",
         "slug": "james-hyde",
         "tmdbPersonId": 1214717,
-        "profileUrl": "https://image.tmdb.org/t/p/w500/yXVBAL5h339cnSkjlZykS2Qsc9v.jpg",
-        "order": 5
+        "profileUrl": "/images/people/1214717.webp",
+        "order": 5,
+        "birthday": "1962-10-09"
       },
       {
         "actorId": "3704265",
@@ -203121,8 +203140,9 @@ export const MOVIES: Movie[] = [
         "character": "Christmas Gift Wrapper",
         "slug": "paul-michael-starnes",
         "tmdbPersonId": 3704265,
-        "profileUrl": "https://image.tmdb.org/t/p/w500/hYrjz2YmH0wBBVpvk4v9VhWhd7M.jpg",
-        "order": 6
+        "profileUrl": "/images/people/3704265.webp",
+        "order": 6,
+        "birthday": "2010-01-01"
       }
     ],
     "director": "Nadeem Soumah",
@@ -203195,7 +203215,7 @@ export const MOVIES: Movie[] = [
         "character": "Jack",
         "slug": "jason-tobias",
         "tmdbPersonId": 1482541,
-        "profileUrl": "https://image.tmdb.org/t/p/w500/68Aij3GKfMZig33dfXIIIIUXKKy.jpg",
+        "profileUrl": "/images/people/1482541.webp",
         "order": 1
       },
       {
@@ -203204,7 +203224,7 @@ export const MOVIES: Movie[] = [
         "character": "Eli",
         "slug": "daniel-bateman",
         "tmdbPersonId": 3061459,
-        "profileUrl": "https://image.tmdb.org/t/p/w500/9bcBGEvAWEaS0388O7fmtAnhQ87.jpg",
+        "profileUrl": "/images/people/3061459.webp",
         "order": 2
       },
       {
@@ -203229,7 +203249,7 @@ export const MOVIES: Movie[] = [
         "character": "Miriam Stollman",
         "slug": "sissy-robberts",
         "tmdbPersonId": 5624103,
-        "profileUrl": "https://image.tmdb.org/t/p/w500/ouPQMLIdNL8lk58BGeO1RVGALZL.jpg",
+        "profileUrl": "/images/people/5624103.webp",
         "order": 5
       }
     ],
@@ -203293,7 +203313,7 @@ export const MOVIES: Movie[] = [
         "character": "Vera Vexley",
         "slug": "morgan-bradley",
         "tmdbPersonId": 1780596,
-        "profileUrl": "https://image.tmdb.org/t/p/w500/kGKMBEme0mZClv7YJuy1IGezkdx.jpg",
+        "profileUrl": "/images/people/1780596.webp",
         "order": 0
       },
       {
@@ -203312,8 +203332,9 @@ export const MOVIES: Movie[] = [
         "character": "Jan",
         "slug": "jamie-bernadette",
         "tmdbPersonId": 138860,
-        "profileUrl": "https://image.tmdb.org/t/p/w500/hSKDAGunkF2E4btXXEo0ELF8GqY.jpg",
-        "order": 2
+        "profileUrl": "/images/people/138860.webp",
+        "order": 2,
+        "birthday": "1987-12-14"
       },
       {
         "actorId": "1411462",
@@ -203321,8 +203342,9 @@ export const MOVIES: Movie[] = [
         "character": "Michael Sterling",
         "slug": "randy-jay-burrell",
         "tmdbPersonId": 1411462,
-        "profileUrl": "https://image.tmdb.org/t/p/w500/cdxm6v0LpqH1KWSnO7SpZzO4nuP.jpg",
-        "order": 3
+        "profileUrl": "/images/people/1411462.webp",
+        "order": 3,
+        "birthday": "1986-08-16"
       },
       {
         "actorId": "1229191",
@@ -203350,7 +203372,7 @@ export const MOVIES: Movie[] = [
         "character": "News Reporter",
         "slug": "melissa-falcone",
         "tmdbPersonId": 6141991,
-        "profileUrl": "https://image.tmdb.org/t/p/w500/ogADrpN5tBDRJxzIkxbDNPHMkQu.jpg",
+        "profileUrl": "/images/people/6141991.webp",
         "order": 6
       }
     ],
@@ -203490,8 +203512,9 @@ export const MOVIES: Movie[] = [
         "character": "",
         "slug": "james-hinchcliffe",
         "tmdbPersonId": 2008810,
-        "profileUrl": "https://image.tmdb.org/t/p/w500/vDkiHA0kV7sP772YGAOsOhc3uK8.jpg",
-        "order": 6
+        "profileUrl": "/images/people/2008810.webp",
+        "order": 6,
+        "birthday": "1986-12-05"
       },
       {
         "actorId": "2863703",
@@ -203594,7 +203617,7 @@ export const MOVIES: Movie[] = [
         "character": "Sadie Hunt",
         "slug": "evelyn-grace-kite",
         "tmdbPersonId": 5619857,
-        "profileUrl": "https://image.tmdb.org/t/p/w500/9TnMZzs7AerLP9sCnYbxsXV7Js6.jpg",
+        "profileUrl": "/images/people/5619857.webp",
         "order": 2
       },
       {
@@ -203603,8 +203626,9 @@ export const MOVIES: Movie[] = [
         "character": "Self",
         "slug": "mark-wills",
         "tmdbPersonId": 57805,
-        "profileUrl": "https://image.tmdb.org/t/p/w500/7vmYLrTgtmupgpzAB1ui5jXujJN.jpg",
-        "order": 3
+        "profileUrl": "/images/people/57805.webp",
+        "order": 3,
+        "birthday": "1973-08-08"
       },
       {
         "actorId": "1724503",
@@ -203612,8 +203636,9 @@ export const MOVIES: Movie[] = [
         "character": "Mrs. Neely",
         "slug": "rhonda-vincent",
         "tmdbPersonId": 1724503,
-        "profileUrl": "https://image.tmdb.org/t/p/w500/pxg9Ptm11BGwKqEUzCFeNKJ5II3.jpg",
-        "order": 4
+        "profileUrl": "/images/people/1724503.webp",
+        "order": 4,
+        "birthday": "1962-07-13"
       },
       {
         "actorId": "5630376",
@@ -203621,7 +203646,7 @@ export const MOVIES: Movie[] = [
         "character": "Mary (as Juliana Ferreira)",
         "slug": "juliana-danielle-ferreira",
         "tmdbPersonId": 5630376,
-        "profileUrl": "https://image.tmdb.org/t/p/w500/2YgrwKx8RUg7UlIRS6UbXnd0Icn.jpg",
+        "profileUrl": "/images/people/5630376.webp",
         "order": 5
       },
       {
@@ -203630,7 +203655,7 @@ export const MOVIES: Movie[] = [
         "character": "Steven",
         "slug": "siaka-massaquoi",
         "tmdbPersonId": 557576,
-        "profileUrl": "https://image.tmdb.org/t/p/w500/vo2o1Qf76G2zGuEtIcppJyPWnSC.jpg",
+        "profileUrl": "/images/people/557576.webp",
         "order": 6
       },
       {
@@ -203812,8 +203837,9 @@ export const MOVIES: Movie[] = [
         "character": "Zoe",
         "slug": "carina-battrick",
         "tmdbPersonId": 2442234,
-        "profileUrl": "https://image.tmdb.org/t/p/w500/pVpmyGnkTCUuUNMRbHpdqOpSZK6.jpg",
-        "order": 7
+        "profileUrl": "/images/people/2442234.webp",
+        "order": 7,
+        "birthday": "2012-07-09"
       },
       {
         "actorId": "1357223",
@@ -203857,7 +203883,8 @@ export const MOVIES: Movie[] = [
         "character": "Coach Brown",
         "slug": "andrew-mackay",
         "tmdbPersonId": 2950873,
-        "order": 12
+        "order": 12,
+        "birthday": "1989-10-01"
       },
       {
         "actorId": "3750139",
@@ -203865,7 +203892,7 @@ export const MOVIES: Movie[] = [
         "character": "Andrew",
         "slug": "sean-cage",
         "tmdbPersonId": 3750139,
-        "profileUrl": "https://image.tmdb.org/t/p/w500/2i6ifChdsjmpYywqk6yZbQzSnz9.jpg",
+        "profileUrl": "/images/people/3750139.webp",
         "order": 13
       },
       {
@@ -203883,7 +203910,7 @@ export const MOVIES: Movie[] = [
         "character": "Driver",
         "slug": "will-ennis",
         "tmdbPersonId": 2310132,
-        "profileUrl": "https://image.tmdb.org/t/p/w500/5v9E25bGveP263c8fw32ngDh0X1.jpg",
+        "profileUrl": "/images/people/2310132.webp",
         "order": 15
       }
     ],
@@ -203984,7 +204011,7 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-09-22T17:14:27.365Z"
+    "tmdbUpdatedAt": "2026-09-22T21:31:26.554Z"
   },
   {
     "id": "gaf-2026-an-accidental-arctic-christmas",
@@ -204066,7 +204093,7 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-09-22T17:14:27.561Z"
+    "tmdbUpdatedAt": "2026-09-22T21:31:26.805Z"
   },
   {
     "id": "gaf-2026-a-christmas-rescue",
@@ -204119,7 +204146,7 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-09-22T17:14:27.755Z"
+    "tmdbUpdatedAt": "2026-09-22T21:31:27.049Z"
   },
   {
     "id": "gaf-2026-a-very-evergreen-christmas",
@@ -204273,7 +204300,7 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-09-22T17:14:27.948Z"
+    "tmdbUpdatedAt": "2026-09-22T21:31:27.285Z"
   },
   {
     "id": "gaf-2026-a-second-chance-christmas",
@@ -204330,7 +204357,7 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-09-22T17:14:28.141Z"
+    "tmdbUpdatedAt": "2026-09-22T21:31:27.517Z"
   },
   {
     "id": "gaf-2026-the-ornament-library",
@@ -204421,7 +204448,7 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-09-22T17:14:28.334Z",
+    "tmdbUpdatedAt": "2026-09-22T21:31:27.750Z",
     "premiereDate": "2026-12-03"
   },
   {
@@ -204441,8 +204468,9 @@ export const MOVIES: Movie[] = [
         "character": "Sloan Van Doren",
         "slug": "chyler-leigh",
         "tmdbPersonId": 69210,
-        "profileUrl": "https://image.tmdb.org/t/p/w500/yoL8HbWhnoTVugTV5qLJP8gVpIq.jpg",
-        "order": 0
+        "profileUrl": "/images/people/69210.webp",
+        "order": 0,
+        "birthday": "1982-04-10"
       },
       {
         "actorId": "62909",
@@ -204460,8 +204488,10 @@ export const MOVIES: Movie[] = [
         "character": "Rita",
         "slug": "naomi-judd",
         "tmdbPersonId": 172221,
-        "profileUrl": "https://image.tmdb.org/t/p/w500/5nixlnezp8Te2GMmPxmsjL6KtB6.jpg",
-        "order": 2
+        "profileUrl": "/images/people/172221.webp",
+        "order": 2,
+        "birthday": "1946-01-11",
+        "deathday": "2022-04-30"
       },
       {
         "actorId": "33669",
@@ -204639,7 +204669,7 @@ export const MOVIES: Movie[] = [
         "character": "Madison",
         "slug": "ayla-rose-evans",
         "tmdbPersonId": 4314981,
-        "profileUrl": "https://image.tmdb.org/t/p/w500/haKHdQpCLUVi491mGri1VFo8RGD.jpg",
+        "profileUrl": "/images/people/4314981.webp",
         "order": 4
       },
       {
@@ -204648,7 +204678,7 @@ export const MOVIES: Movie[] = [
         "character": "Ryan",
         "slug": "trevor-leyenhorst",
         "tmdbPersonId": 4378842,
-        "profileUrl": "https://image.tmdb.org/t/p/w500/6CFQY3tor6OO0HH0BMQqx6Arm7r.jpg",
+        "profileUrl": "/images/people/4378842.webp",
         "order": 5
       },
       {
@@ -204857,7 +204887,7 @@ export const MOVIES: Movie[] = [
         "character": "Thomas",
         "slug": "keon-boateng",
         "tmdbPersonId": 2671251,
-        "profileUrl": "https://image.tmdb.org/t/p/w500/5n98klHwX7blLPQAz6bUXBoax8m.jpg",
+        "profileUrl": "/images/people/2671251.webp",
         "order": 8
       },
       {
@@ -204866,7 +204896,7 @@ export const MOVIES: Movie[] = [
         "character": "Vivienne",
         "slug": "deborah-ramsay",
         "tmdbPersonId": 2034415,
-        "profileUrl": "https://image.tmdb.org/t/p/w500/g3uzjAPJrPVtwtmRxn9VbuNpEAn.jpg",
+        "profileUrl": "/images/people/2034415.webp",
         "order": 9
       },
       {
@@ -204875,7 +204905,7 @@ export const MOVIES: Movie[] = [
         "character": "Jacques",
         "slug": "ron-chartier",
         "tmdbPersonId": 185209,
-        "profileUrl": "https://image.tmdb.org/t/p/w500/xjXQxKU6qDGajkQ9Nb6TBU6pK8b.jpg",
+        "profileUrl": "/images/people/185209.webp",
         "order": 10
       },
       {
@@ -204911,7 +204941,7 @@ export const MOVIES: Movie[] = [
         "character": "Mrs. Hoffman",
         "slug": "michelle-brezinski",
         "tmdbPersonId": 90402,
-        "profileUrl": "https://image.tmdb.org/t/p/w500/m4lrG3tJEqNoHVuszXi5p3FCKRy.jpg",
+        "profileUrl": "/images/people/90402.webp",
         "order": 14
       },
       {
@@ -204937,7 +204967,7 @@ export const MOVIES: Movie[] = [
         "character": "Stanley Green",
         "slug": "gary-peterman",
         "tmdbPersonId": 986516,
-        "profileUrl": "https://image.tmdb.org/t/p/w500/bOjcEBlH2txxqOnDAcOH3k048LJ.jpg",
+        "profileUrl": "/images/people/986516.webp",
         "order": 17
       },
       {
@@ -204946,7 +204976,7 @@ export const MOVIES: Movie[] = [
         "character": "Ferris Employee",
         "slug": "lee-shan-gibson",
         "tmdbPersonId": 1874345,
-        "profileUrl": "https://image.tmdb.org/t/p/w500/jU9lEXTYwgFScS9spsTn4izanyI.jpg",
+        "profileUrl": "/images/people/1874345.webp",
         "order": 18
       },
       {
@@ -205075,8 +205105,9 @@ export const MOVIES: Movie[] = [
         "character": "Mike",
         "slug": "sage-brocklebank",
         "tmdbPersonId": 62913,
-        "profileUrl": "https://image.tmdb.org/t/p/w500/7BFFanLsfc2m4FU7Hvw8GDTGOEt.jpg",
-        "order": 1
+        "profileUrl": "/images/people/62913.webp",
+        "order": 1,
+        "birthday": "1978-01-14"
       },
       {
         "actorId": "5009",
@@ -205133,8 +205164,9 @@ export const MOVIES: Movie[] = [
         "character": "Oliver",
         "slug": "julian-bailey",
         "tmdbPersonId": 1228590,
-        "profileUrl": "https://image.tmdb.org/t/p/w500/5NCHbYQlbGiSOxXUfoOTy2iD6sp.jpg",
-        "order": 7
+        "profileUrl": "/images/people/1228590.webp",
+        "order": 7,
+        "birthday": "1977-05-25"
       },
       {
         "actorId": "2250",
@@ -205280,8 +205312,9 @@ export const MOVIES: Movie[] = [
         "character": "Stanley Morgan",
         "slug": "richard-kline",
         "tmdbPersonId": 97065,
-        "profileUrl": "https://image.tmdb.org/t/p/w500/erIjCE1eC2OyM9mO2PxtxsYeQXD.jpg",
-        "order": 4
+        "profileUrl": "/images/people/97065.webp",
+        "order": 4,
+        "birthday": "1944-04-29"
       },
       {
         "actorId": "1489818",
@@ -205289,7 +205322,7 @@ export const MOVIES: Movie[] = [
         "character": "Abby",
         "slug": "krista-braun",
         "tmdbPersonId": 1489818,
-        "profileUrl": "https://image.tmdb.org/t/p/w500/6cVv8pd1RQzEgO7Zo9rO1YdeW23.jpg",
+        "profileUrl": "/images/people/1489818.webp",
         "order": 5
       },
       {
@@ -205298,7 +205331,7 @@ export const MOVIES: Movie[] = [
         "character": "Jimmy Eubanks",
         "slug": "todd-litzinger",
         "tmdbPersonId": 1389160,
-        "profileUrl": "https://image.tmdb.org/t/p/w500/waj8wKxo7fhhpaWWU2aWRr56dBY.jpg",
+        "profileUrl": "/images/people/1389160.webp",
         "order": 6
       },
       {
