@@ -204019,6 +204019,352 @@ export const MOVIES: Movie[] = [
     "voteAverage": 0,
     "voteCount": 0,
     "tmdbUpdatedAt": "2026-09-22T04:28:13.644Z"
+  },
+  {
+    "id": "gaf-2026-a-christmas-rescue",
+    "slug": "a-christmas-rescue",
+    "title": "A Christmas Rescue",
+    "year": 2026,
+    "brandId": "gaf",
+    "releaseDate": "2026-09-22",
+    "synopsis": "Set in the charming town of Cedar Ridge, A Christmas Rescue follows dedicated physician Emma Ross (Bennett) who along with her dog, Shep (Niffy), is determined to make her beloved community’s annual Christmas Cares celebration the most meaningful yet. When traveling veterinarian, Dr. Matthew McGuire (Donovan) arrives to temporarily take over the local animal clinic, he proposes adding a Christmas pet adoption event to the festivities. As they work side by side to bring people – and rescue animals – together for the holidays, Emma and Matthew discover that the greatest Christmas miracle may be finding a place where both hearts and shelter pets finally belong.",
+    "posterUrl": "",
+    "cast": [
+      {
+        "actorId": "1233560",
+        "name": "Trevor Donovan",
+        "character": "Matt McGuire",
+        "slug": "trevor-donovan",
+        "tmdbPersonId": 1233560,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/z3uSJrYfYZuCFYZsCz8OKa4JWmR.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "1926630",
+        "name": "Stephanie Bennett",
+        "character": "Emma Ross",
+        "slug": "stephanie-bennett",
+        "tmdbPersonId": 1926630,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/qOrtOLOtkOyIJNmT7B5E8w4kPmU.jpg",
+        "order": 1
+      }
+    ],
+    "director": "Nicholas Humphries",
+    "tmdbId": 1774011,
+    "imdbId": "tt43768739",
+    "isComingSoon": true,
+    "status": "coming-soon",
+    "originalTitle": "A Christmas Rescue",
+    "genres": [],
+    "releaseDates": [],
+    "crew": [
+      {
+        "id": 1197196,
+        "name": "Nicholas Humphries",
+        "job": "Director",
+        "department": "Directing",
+        "creditId": "6aadea457d78cf7d7666ee88"
+      }
+    ],
+    "trailers": [],
+    "voteAverage": 0,
+    "voteCount": 0,
+    "tmdbUpdatedAt": "2026-09-22T04:34:32.650Z"
+  },
+  {
+    "id": "gaf-2026-a-very-evergreen-christmas",
+    "slug": "a-very-evergreen-christmas",
+    "title": "A Very Evergreen Christmas",
+    "year": 2026,
+    "brandId": "gaf",
+    "releaseDate": "2026-09-22",
+    "synopsis": "Abby inherits her aunt's tree farm under the condition she spends two weeks working there. With the help from Ethan, the farm's longtime caretaker and Abby's best childhood friend, Abby learns that the farm is much more than just a place.",
+    "posterUrl": "",
+    "cast": [
+      {
+        "actorId": "543990",
+        "name": "Merritt Patterson",
+        "character": "",
+        "slug": "merritt-patterson",
+        "tmdbPersonId": 543990,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/JD4MNBtHjT2D43eUrBvNifhNpK.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "934219",
+        "name": "Liam McIntyre",
+        "character": "",
+        "slug": "liam-mcintyre",
+        "tmdbPersonId": 934219,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/vTw11F1awNW8AlxInljEsK96cNB.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "175583",
+        "name": "Charlene Amoia",
+        "character": "Giselle",
+        "slug": "charlene-amoia",
+        "tmdbPersonId": 175583,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/8hJNPw3XCErifcZZPOfd20JmiTC.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "169620",
+        "name": "Marisa Brown",
+        "character": "Lyla Brant",
+        "slug": "marisa-brown",
+        "tmdbPersonId": 169620,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/ecFMfRo35DAfUmnZXLMJ6tuSdm9.jpg",
+        "order": 3
+      },
+      {
+        "actorId": "4373175",
+        "name": "Austin Valli",
+        "character": "Sam Swift",
+        "slug": "austin-valli",
+        "tmdbPersonId": 4373175,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/fFxF2dOWYnJyCQtQ6exSlYM59Oz.jpg",
+        "order": 4
+      },
+      {
+        "actorId": "161898",
+        "name": "Tamara Fay",
+        "character": "Claire Shapiro",
+        "slug": "tamara-fay",
+        "tmdbPersonId": 161898,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/jDcReLeF0WwDTxKY7mveYLurvDG.jpg",
+        "order": 5
+      },
+      {
+        "actorId": "1992591",
+        "name": "Ashley Szczerbacki",
+        "character": "Kendall",
+        "slug": "ashley-szczerbacki",
+        "tmdbPersonId": 1992591,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/5lKBTA6vLjWISFOUuZiy7A5xNKh.jpg",
+        "order": 6
+      },
+      {
+        "actorId": "1188244",
+        "name": "Edward Lewis French",
+        "character": "Clive",
+        "slug": "edward-lewis-french",
+        "tmdbPersonId": 1188244,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/d06qKSvCF4mQjy4Br6ZzWrzJdzO.jpg",
+        "order": 7
+      },
+      {
+        "actorId": "6240367",
+        "name": "Lisa Tracy",
+        "character": "Mrs. Pendleton",
+        "slug": "lisa-tracy",
+        "tmdbPersonId": 6240367,
+        "order": 8
+      },
+      {
+        "actorId": "6066318",
+        "name": "Sean Greenhouse",
+        "character": "Coffee Shop Patron",
+        "slug": "sean-greenhouse",
+        "tmdbPersonId": 6066318,
+        "order": 9
+      },
+      {
+        "actorId": "4278657",
+        "name": "Christine Hulton",
+        "character": "Publisher Employee",
+        "slug": "christine-hulton",
+        "tmdbPersonId": 4278657,
+        "order": 10
+      }
+    ],
+    "director": "Kelly Edwards",
+    "tmdbId": 1702318,
+    "imdbId": "tt38973069",
+    "isComingSoon": true,
+    "status": "coming-soon",
+    "originalTitle": "A Very Evergreen Christmas",
+    "runtimeMinutes": 84,
+    "genres": [
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      },
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "releaseDates": [],
+    "crew": [
+      {
+        "id": 6240370,
+        "name": "Kelly Edwards",
+        "job": "Director",
+        "department": "Directing",
+        "creditId": "6a14e9a0fbb3c9d733546026"
+      },
+      {
+        "id": 181841,
+        "name": "Riley Weston",
+        "job": "Writer",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/NBXbkM57RlnwmabCTOtdVrmHKc.jpg",
+        "creditId": "6a14e9a830b4cb876e39595f"
+      }
+    ],
+    "trailers": [],
+    "voteAverage": 0,
+    "voteCount": 0,
+    "tmdbUpdatedAt": "2026-09-22T04:34:32.670Z"
+  },
+  {
+    "id": "gaf-2026-a-second-chance-christmas",
+    "slug": "a-second-chance-christmas",
+    "title": "A Second Chance Christmas",
+    "year": 2026,
+    "brandId": "gaf",
+    "releaseDate": "2026-09-22",
+    "synopsis": "Anna and James Campbell have been divorced for five years, their once-happy union now a carefully managed truce for the sake of their children. When their daughter invites the entire family to meet her serious boyfriend over Christmas at her grandparents’ rustic Smoky Mountain cabin, the former couple reluctantly agrees. Arriving a day early to avoid awkwardness, Anna is surprised to find James has the same idea. But when the worst ice storm in a decade traps them in the mountains with no way out, the exes are forced to confront the history they share – and the possibility that their story may not be finished after all.",
+    "posterUrl": "",
+    "cast": [
+      {
+        "actorId": "31363",
+        "name": "Candace Cameron Bure",
+        "character": "Anna Campbell",
+        "slug": "candace-cameron-bure",
+        "tmdbPersonId": 31363,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/sDNFyYgyVmE5AGFCeLR0DVDzCji.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "152831",
+        "name": "Jonathan Scarfe",
+        "character": "James Campbell",
+        "slug": "jonathan-scarfe",
+        "tmdbPersonId": 152831,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/vVkvdi33vVCc2nkGbqXqCzQFl34.jpg",
+        "order": 1
+      }
+    ],
+    "tmdbId": 1652348,
+    "isComingSoon": true,
+    "status": "coming-soon",
+    "originalTitle": "A Second Chance Christmas",
+    "runtimeMinutes": 84,
+    "genres": [
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      },
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "releaseDates": [],
+    "crew": [],
+    "trailers": [],
+    "voteAverage": 0,
+    "voteCount": 0,
+    "tmdbUpdatedAt": "2026-09-22T04:34:32.686Z"
+  },
+  {
+    "id": "gaf-2026-the-ornament-library",
+    "slug": "the-ornament-library",
+    "title": "The Ornament Library",
+    "year": 2026,
+    "brandId": "gaf",
+    "releaseDate": "2026-12-03",
+    "synopsis": "The meticulous librarian Alice Montgomery and newspaper reporter Noah Conrad discover a forgotten room hidden beneath their town's historic library, filled with hundreds of Christmas ornaments containing handwritten memories from generations past. As they set out to reunite each treasured keepsake with its rightful family, the pair rekindles a cherished Christmas tradition, strengthen an entire community, and discover that the greatest gifts of the season are the stories – and people – we carry in our hearts.",
+    "posterUrl": "",
+    "cast": [
+      {
+        "actorId": "543990",
+        "name": "Merritt Patterson",
+        "character": "Alice Montgomery",
+        "slug": "merritt-patterson",
+        "tmdbPersonId": 543990,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/JD4MNBtHjT2D43eUrBvNifhNpK.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "1554734",
+        "name": "Ryan Paevey",
+        "character": "Noah Conrad",
+        "slug": "ryan-paevey",
+        "tmdbPersonId": 1554734,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/sHBKqrGRayUyjmHs2BiUPUIoAiB.jpg",
+        "order": 1
+      }
+    ],
+    "director": "Mars Horodyski",
+    "tmdbId": 1768108,
+    "imdbId": "tt44127243",
+    "isComingSoon": true,
+    "status": "coming-soon",
+    "originalTitle": "The Ornament Library",
+    "runtimeMinutes": 84,
+    "genres": [
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      },
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "US",
+        "releaseDate": "2026-12-03T00:00:00.000Z",
+        "type": 4,
+        "certification": "G",
+        "note": "Great American Pure Flix"
+      },
+      {
+        "country": "US",
+        "releaseDate": "2026-12-05T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "Great American Family"
+      }
+    ],
+    "crew": [
+      {
+        "id": 1447198,
+        "name": "Mars Horodyski",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/2Ni0etKpzo1plDMrWvuUlBUql9P.jpg",
+        "creditId": "6aa34a62d499d652f44a642c"
+      },
+      {
+        "id": 1694961,
+        "name": "Ansley Gordon",
+        "job": "Writer",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/ri0s9fvhxZ6jiQad9h2gESH7D5H.jpg",
+        "creditId": "6aa34a68da6573399e2893f3"
+      }
+    ],
+    "trailers": [],
+    "voteAverage": 0,
+    "voteCount": 0,
+    "tmdbUpdatedAt": "2026-09-22T04:34:32.761Z"
   }
 ];
 
