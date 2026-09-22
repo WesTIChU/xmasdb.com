@@ -203939,6 +203939,86 @@ export const MOVIES: Movie[] = [
     "voteAverage": 0,
     "voteCount": 0,
     "tmdbUpdatedAt": "2026-09-22T04:25:28.062Z"
+  },
+  {
+    "id": "gaf-2026-an-accidental-arctic-christmas",
+    "slug": "an-accidental-arctic-christmas",
+    "title": "An Accidental Arctic Christmas",
+    "year": 2026,
+    "brandId": "gaf",
+    "releaseDate": "2026-09-22",
+    "synopsis": "Single dad Jim and his spirited, science-minded 20-year-old daughter, Isla, share a tradition of alternating who decides how they spend Christmas each year. Jim, a former major league baseball player turned broadcaster, never misses hosting his annual Christmas Eve show from Times Square – until Isla persuades him to take a once-in-a-lifetime Arctic cruise, promising they will return in time for his broadcast.",
+    "posterUrl": "",
+    "cast": [
+      {
+        "actorId": "33669",
+        "name": "Cameron Mathison",
+        "character": "Jim",
+        "slug": "cameron-mathison",
+        "tmdbPersonId": 33669,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/eJQPwuq2Hpcn6GySKpgpbGwZT4.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "6120215",
+        "name": "Maya Rose Skabar",
+        "character": "Isla",
+        "slug": "maya-rose-skabar",
+        "tmdbPersonId": 6120215,
+        "order": 1
+      },
+      {
+        "actorId": "82943",
+        "name": "Jill Wagner",
+        "character": "Jane",
+        "slug": "jill-wagner",
+        "tmdbPersonId": 82943,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/gFtPDkS14CoDqNGnHsxNmaXZcGj.jpg",
+        "order": 2
+      }
+    ],
+    "tmdbId": 1664264,
+    "isComingSoon": true,
+    "status": "coming-soon",
+    "originalTitle": "An Accidental Arctic Christmas",
+    "runtimeMinutes": 84,
+    "genres": [
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      },
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "releaseDates": [],
+    "crew": [
+      {
+        "id": 43426,
+        "name": "Robin Dunne",
+        "job": "Writer",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/4TW7bd7yyRB1hjQdn0Ej3XAKVnu.jpg",
+        "creditId": "69d29b8857f65683aaad94b3"
+      },
+      {
+        "id": 2088925,
+        "name": "Arcade Riley",
+        "job": "Writer",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/aZnqaqK6NiXIdgi4PeeteZHWo4j.jpg",
+        "creditId": "69d29b91acf4a38c84ad94a2"
+      }
+    ],
+    "trailers": [],
+    "voteAverage": 0,
+    "voteCount": 0,
+    "tmdbUpdatedAt": "2026-09-22T04:28:13.644Z"
   }
 ];
 
