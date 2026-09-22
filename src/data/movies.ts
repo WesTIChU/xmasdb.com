@@ -205397,6 +205397,171 @@ export const MOVIES: Movie[] = [
     "voteAverage": 5.688,
     "voteCount": 80,
     "tmdbUpdatedAt": "2026-09-22T05:39:12.499Z"
+  },
+  {
+    "id": "gaf-2021-much-ado-about-christmas",
+    "slug": "much-ado-about-christmas",
+    "title": "Much Ado About Christmas",
+    "year": 2021,
+    "brandId": "gaf",
+    "releaseDate": "2021-10-30",
+    "synopsis": "Haley is a wealthy heiress known for her acts of kindness. Haley meets hopeless romantic Claud, and she keeps her wealthy family a secret. When Claud pitches an ad campaign to Haley's mom and Haley's secrets are revealed, things get...complicated.",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/xK8H6giNmGTKBR1xC6Mg2Lnns3Q.jpg",
+    "backdropUrl": "https://image.tmdb.org/t/p/w1280/hIrnrdhZYh4x8uyyDDUAlu4zoX0.jpg",
+    "cast": [
+      {
+        "actorId": "495827",
+        "name": "Torrance Coombs",
+        "character": "Claud Miller",
+        "slug": "torrance-coombs",
+        "tmdbPersonId": 495827,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/dH7yVysmkbCMxkKYkdSGT3neSZQ.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "108696",
+        "name": "Susie Abromeit",
+        "character": "Haley Lloyd",
+        "slug": "susie-abromeit",
+        "tmdbPersonId": 108696,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/7tMmET3hW1q1l78jDvQJd4XQGlo.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "29871",
+        "name": "Jacinta Mulcahy",
+        "character": "Leona Lloyd",
+        "slug": "jacinta-mulcahy",
+        "tmdbPersonId": 29871,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/k8iGmXKiUcpTz2bEnPbWGLGpPMq.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "1694986",
+        "name": "James Rottger",
+        "character": "Ben",
+        "slug": "james-rottger",
+        "tmdbPersonId": 1694986,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/bpSgqB2CqXTHEtYvHvJj1Ifbjq5.jpg",
+        "order": 3
+      },
+      {
+        "actorId": "1084852",
+        "name": "Jimmy Townsend",
+        "character": "Walter",
+        "slug": "jimmy-townsend",
+        "tmdbPersonId": 1084852,
+        "order": 4
+      },
+      {
+        "actorId": "3111538",
+        "name": "Sakura Sykes",
+        "character": "Bea",
+        "slug": "sakura-sykes",
+        "tmdbPersonId": 3111538,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/8tKVgcgrNqHo7LuKlA4RguGRVmc.jpg",
+        "order": 5
+      },
+      {
+        "actorId": "1320851",
+        "name": "Olivier Raynal",
+        "character": "Don",
+        "slug": "olivier-raynal",
+        "tmdbPersonId": 1320851,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/zgKTo9x5RNdtzR8bFkRQ1MojOMK.jpg",
+        "order": 6
+      }
+    ],
+    "director": "Michael Damian",
+    "tmdbId": 878410,
+    "imdbId": "tt11585172",
+    "isComingSoon": false,
+    "status": "collection",
+    "originalTitle": "Much Ado About Christmas",
+    "runtimeMinutes": 85,
+    "genres": [
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      },
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "CA",
+        "releaseDate": "2021-11-14T00:00:00.000Z",
+        "type": 6,
+        "certification": "14A",
+        "note": "CTV Drama Channel"
+      },
+      {
+        "country": "DE",
+        "releaseDate": "2022-11-14T00:00:00.000Z",
+        "type": 6,
+        "certification": "12",
+        "note": "EPG-Freigabe"
+      },
+      {
+        "country": "SE",
+        "releaseDate": "2021-10-30T00:00:00.000Z",
+        "type": 3,
+        "certification": "11",
+        "note": ""
+      },
+      {
+        "country": "US",
+        "releaseDate": "2021-10-30T00:00:00.000Z",
+        "type": 6,
+        "certification": "G",
+        "note": "GAC Family"
+      }
+    ],
+    "crew": [
+      {
+        "id": 62081,
+        "name": "Michael Damian",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/toPk7n6y8T8Vgz3NIdFdZGEb1l1.jpg",
+        "creditId": "6150e5be67dcc90043dcf972"
+      },
+      {
+        "id": 62079,
+        "name": "Janeen Damian",
+        "job": "Writer",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/ygC5V5zwdkiW2PMIxayVv9ue0zw.jpg",
+        "creditId": "6150e5c572d8550029c9f4f6"
+      },
+      {
+        "id": 62081,
+        "name": "Michael Damian",
+        "job": "Writer",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/toPk7n6y8T8Vgz3NIdFdZGEb1l1.jpg",
+        "creditId": "6150e5d01c635b002a0efd02"
+      }
+    ],
+    "trailers": [
+      {
+        "key": "YG-1x8IIj-Y",
+        "site": "YouTube",
+        "type": "Trailer",
+        "name": "Preview",
+        "official": true
+      }
+    ],
+    "trailerYoutubeKey": "YG-1x8IIj-Y",
+    "voteAverage": 6,
+    "voteCount": 27,
+    "tmdbUpdatedAt": "2026-09-22T15:32:24.085Z"
   }
 ];
 
