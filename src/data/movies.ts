@@ -205143,6 +205143,177 @@ export const MOVIES: Movie[] = [
     "voteAverage": 6.268,
     "voteCount": 125,
     "tmdbUpdatedAt": "2026-09-22T05:29:39.163Z"
+  },
+  {
+    "id": "hallmark-2016-broadcasting-christmas",
+    "slug": "broadcasting-christmas",
+    "title": "Broadcasting Christmas",
+    "year": 2016,
+    "brandId": "hallmark",
+    "releaseDate": "2016-11-23",
+    "synopsis": "When the opportunity to co-host a talk show with the fabulous talk show diva Veronika presents itself two weeks before Christmas, Emily thinks this is her big break. To her surprise, she discovers she has stiff competition with Charlie, the local TV anchor who is her near equal on another station. With such interest and support for both reporters, a contest is created: for the two weeks leading up to Christmas, who can cover the best and most meaningful Christmas stories on the local news?",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/c8VrxCL42EejLOWbzSfkLoLix5Q.jpg",
+    "backdropUrl": "https://image.tmdb.org/t/p/w1280/aAhOB50wfXdTQ00Uzm0dUVLDUGj.jpg",
+    "cast": [
+      {
+        "actorId": "78501",
+        "name": "Melissa Joan Hart",
+        "character": "Emily Morgan",
+        "slug": "melissa-joan-hart",
+        "tmdbPersonId": 78501,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/slpAK9Ak1Bvi4FJCLeCdtwPZc3D.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "21721",
+        "name": "Dean Cain",
+        "character": "Charlie Fisher",
+        "slug": "dean-cain",
+        "tmdbPersonId": 21721,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/vVBqgo0BJQVreLZaIW8tHI8hXYZ.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "47882",
+        "name": "Cynthia Gibb",
+        "character": "Patrice Montgomery",
+        "slug": "cynthia-gibb",
+        "tmdbPersonId": 47882,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/ctIkvIE2F0bnDBHvmIVP1NK6nJq.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "78740",
+        "name": "Jackée Harry",
+        "character": "Veronika Daniels",
+        "slug": "jack-e-harry",
+        "tmdbPersonId": 78740,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/h3DpIDfOrIdRx4EPKbuFc5LJzjC.jpg",
+        "order": 3
+      },
+      {
+        "actorId": "97065",
+        "name": "Richard Kline",
+        "character": "Stanley Morgan",
+        "slug": "richard-kline",
+        "tmdbPersonId": 97065,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/erIjCE1eC2OyM9mO2PxtxsYeQXD.jpg",
+        "order": 4
+      },
+      {
+        "actorId": "1489818",
+        "name": "Krista Braun",
+        "character": "Abby",
+        "slug": "krista-braun",
+        "tmdbPersonId": 1489818,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/6cVv8pd1RQzEgO7Zo9rO1YdeW23.jpg",
+        "order": 5
+      },
+      {
+        "actorId": "1389160",
+        "name": "Todd Litzinger",
+        "character": "Jimmy Eubanks",
+        "slug": "todd-litzinger",
+        "tmdbPersonId": 1389160,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/waj8wKxo7fhhpaWWU2aWRr56dBY.jpg",
+        "order": 6
+      },
+      {
+        "actorId": "1918852",
+        "name": "Josiah Harvey",
+        "character": "Eddie (uncredited)",
+        "slug": "josiah-harvey",
+        "tmdbPersonId": 1918852,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/xz8qVBDs1hcYQjJz45Rqv9Yu1dJ.jpg",
+        "order": 7
+      }
+    ],
+    "director": "Peter Sullivan",
+    "tmdbId": 421759,
+    "imdbId": "tt6167116",
+    "isComingSoon": false,
+    "status": "collection",
+    "originalTitle": "Broadcasting Christmas",
+    "runtimeMinutes": 84,
+    "genres": [
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      },
+      {
+        "id": 18,
+        "name": "Drama"
+      },
+      {
+        "id": 35,
+        "name": "Comedy"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "DE",
+        "releaseDate": "2020-11-16T00:00:00.000Z",
+        "type": 6,
+        "certification": "12",
+        "note": ""
+      },
+      {
+        "country": "FR",
+        "releaseDate": "2025-11-27T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "AB1"
+      },
+      {
+        "country": "US",
+        "releaseDate": "2016-11-23T00:00:00.000Z",
+        "type": 6,
+        "certification": "G",
+        "note": "Hallmark Channel"
+      }
+    ],
+    "crew": [
+      {
+        "id": 92591,
+        "name": "Peter Sullivan",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/hXFy4ygelHJovKvMx37EJeHwvbm.jpg",
+        "creditId": "581fb7c192514168b9006e03"
+      },
+      {
+        "id": 1466098,
+        "name": "Michael Varrati",
+        "job": "Story",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/sojJqXMTw7JWLWGcQYeenDFpY2A.jpg",
+        "creditId": "581fb81592514168b600680c"
+      },
+      {
+        "id": 1705238,
+        "name": "Topher Payne",
+        "job": "Screenplay",
+        "department": "Writing",
+        "creditId": "581fb824c3a3685563005935"
+      }
+    ],
+    "trailers": [
+      {
+        "key": "YwIXZLEki_Q",
+        "site": "YouTube",
+        "type": "Trailer",
+        "name": "Trailer",
+        "official": true
+      }
+    ],
+    "trailerYoutubeKey": "YwIXZLEki_Q",
+    "voteAverage": 5.688,
+    "voteCount": 80,
+    "tmdbUpdatedAt": "2026-09-22T05:39:12.499Z"
   }
 ];
 
