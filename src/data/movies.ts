@@ -204365,6 +204365,159 @@ export const MOVIES: Movie[] = [
     "voteAverage": 0,
     "voteCount": 0,
     "tmdbUpdatedAt": "2026-09-22T04:34:32.761Z"
+  },
+  {
+    "id": "hallmark-2013-window-wonderland",
+    "slug": "window-wonderland",
+    "title": "Window Wonderland",
+    "year": 2013,
+    "brandId": "hallmark",
+    "releaseDate": "2013-11-23",
+    "synopsis": "With the Christmas season fast approaching, department store window decorator Sloan Van Doren is hoping to take over the recently-vacated head window designer spot but finds she has to prove herself by going up against rival Jake Dooley. As the two compete they find they may have more in common than they think. Stars Chyler Leigh and Naomi Judd.",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/b3zHaTJZPYr2AI4lOWY6uDLMPcL.jpg",
+    "backdropUrl": "https://image.tmdb.org/t/p/w1280/EuAudZjqQyBhHQp7wxRxH8sMxh.jpg",
+    "cast": [
+      {
+        "actorId": "69210",
+        "name": "Chyler Leigh",
+        "character": "Sloan Van Doren",
+        "slug": "chyler-leigh",
+        "tmdbPersonId": 69210,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/yoL8HbWhnoTVugTV5qLJP8gVpIq.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "62909",
+        "name": "Paul Campbell",
+        "character": "Jake Dooley",
+        "slug": "paul-campbell",
+        "tmdbPersonId": 62909,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/yPxGQwgl1VAMU0Hzck3dJSoYkMB.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "172221",
+        "name": "Naomi Judd",
+        "character": "Rita",
+        "slug": "naomi-judd",
+        "tmdbPersonId": 172221,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/5nixlnezp8Te2GMmPxmsjL6KtB6.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "33669",
+        "name": "Cameron Mathison",
+        "character": "Kenneth",
+        "slug": "cameron-mathison",
+        "tmdbPersonId": 33669,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/eJQPwuq2Hpcn6GySKpgpbGwZT4.jpg",
+        "order": 3
+      },
+      {
+        "actorId": "440439",
+        "name": "Matty Finochio",
+        "character": "Fitch",
+        "slug": "matty-finochio",
+        "tmdbPersonId": 440439,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/7I2iawz7YHZDbH15V4Om0Tdep9c.jpg",
+        "order": 4
+      },
+      {
+        "actorId": "2250",
+        "name": "Eric Keenleyside",
+        "character": "Uncle Jimmy",
+        "slug": "eric-keenleyside",
+        "tmdbPersonId": 2250,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/n7CFXU0redDCSHuLIPIKg45M0Do.jpg",
+        "order": 5
+      },
+      {
+        "actorId": "27112",
+        "name": "Terence Kelly",
+        "character": "Mac",
+        "slug": "terence-kelly",
+        "tmdbPersonId": 27112,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/2DGJYwQSZbbVvN4H65sTUe4zJ9b.jpg",
+        "order": 6
+      },
+      {
+        "actorId": "168554",
+        "name": "Christie Laing",
+        "character": "Megan",
+        "slug": "christie-laing",
+        "tmdbPersonId": 168554,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/wmyje5oGIo9HJP6oST9CfsG3jYC.jpg",
+        "order": 7
+      }
+    ],
+    "director": "Michael M. Scott",
+    "tmdbId": 239180,
+    "imdbId": "tt2994382",
+    "isComingSoon": false,
+    "status": "collection",
+    "originalTitle": "Window Wonderland",
+    "runtimeMinutes": 90,
+    "genres": [
+      {
+        "id": 10749,
+        "name": "Romance"
+      },
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "US",
+        "releaseDate": "2013-11-23T00:00:00.000Z",
+        "type": 6,
+        "certification": "G",
+        "note": "Hallmark"
+      }
+    ],
+    "crew": [
+      {
+        "id": 36129,
+        "name": "Neal H. Dobrofsky",
+        "job": "Writer",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/bTrJcjQuyqbqOaHOwqqQVWtF9UN.jpg",
+        "creditId": "54537b030e0a2648c20012b1"
+      },
+      {
+        "id": 225586,
+        "name": "Michael M. Scott",
+        "job": "Director",
+        "department": "Directing",
+        "creditId": "545379d70e0a2648d60011ae"
+      },
+      {
+        "id": 36130,
+        "name": "Tippi Dobrofsky",
+        "job": "Writer",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/qVecDr8L3iEefOXspuzNcBcPQtR.jpg",
+        "creditId": "54537af70e0a2648c800121a"
+      }
+    ],
+    "trailers": [
+      {
+        "key": "jcirB6jSbkU",
+        "site": "YouTube",
+        "type": "Trailer",
+        "name": "Hallmark Channel - Window Wonderland - Premiere Promo",
+        "official": true
+      }
+    ],
+    "trailerYoutubeKey": "jcirB6jSbkU",
+    "voteAverage": 5.641,
+    "voteCount": 71,
+    "tmdbUpdatedAt": "2026-09-22T05:21:22.757Z"
   }
 ];
 
