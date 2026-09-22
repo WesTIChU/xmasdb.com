@@ -2,7 +2,7 @@ import { Movie } from '../types';
 import { getMoviePremiereDateKey } from './catalogue-lifecycle';
 
 export const SUPPORTED_PER_PAGE = [24, 48, 96] as const;
-export type CatalogueSort = 'catalogue' | 'newest' | 'oldest' | 'title';
+export type CatalogueSort = 'catalogue' | 'newest' | 'oldest' | 'title' | 'title-desc';
 
 export interface CatalogueQuery {
   page: number;
@@ -29,9 +29,9 @@ export function parseCatalogueQuery(search: string): CatalogueQuery {
   const yearValue = Number(params.get('year'));
   const sortValue = params.get('sort');
   const status = params.get('status')?.trim().toLowerCase() || undefined;
-  const sort: CatalogueSort = sortValue === 'newest' || sortValue === 'oldest' || sortValue === 'title'
+  const sort: CatalogueSort = sortValue === 'newest' || sortValue === 'oldest' || sortValue === 'title' || sortValue === 'title-desc'
     ? sortValue
-    : 'catalogue';
+    : 'newest';
 
   return {
     page: Number.isInteger(pageValue) && pageValue > 0 ? pageValue : 1,
@@ -45,6 +45,9 @@ export function parseCatalogueQuery(search: string): CatalogueQuery {
 }
 
 export function getCataloguePage(movies: Movie[], query: CatalogueQuery, lockedBrand?: string, lockedYear?: number): PaginatedMovies {
+  const sort = lockedYear === undefined && query.year === undefined && query.sort === 'catalogue'
+    ? 'newest'
+    : query.sort;
   let filtered = movies.filter((movie) => {
     const brand = lockedBrand || query.brand;
     const year = lockedYear || query.year;
@@ -61,7 +64,7 @@ export function getCataloguePage(movies: Movie[], query: CatalogueQuery, lockedB
     return true;
   });
 
-  if (query.sort === 'catalogue') {
+  if (sort === 'catalogue') {
     const comingSoon = filtered
       .filter((movie) => movie.status?.toLowerCase() === 'coming-soon')
       .sort((a, b) => {
@@ -74,12 +77,28 @@ export function getCataloguePage(movies: Movie[], query: CatalogueQuery, lockedB
       });
     const collection = filtered.filter((movie) => movie.status?.toLowerCase() !== 'coming-soon');
     filtered = [...comingSoon, ...collection];
-  } else if (query.sort === 'newest') {
-    filtered = [...filtered].sort((a, b) => b.year - a.year || b.releaseDate.localeCompare(a.releaseDate));
-  } else if (query.sort === 'oldest') {
-    filtered = [...filtered].sort((a, b) => a.year - b.year || a.releaseDate.localeCompare(b.releaseDate));
-  } else if (query.sort === 'title') {
+  } else if (sort === 'newest') {
+    filtered = [...filtered].sort((a, b) => {
+      const aDate = getMoviePremiereDateKey(a);
+      const bDate = getMoviePremiereDateKey(b);
+      if (aDate === null && bDate === null) return 0;
+      if (aDate === null) return 1;
+      if (bDate === null) return -1;
+      return bDate.localeCompare(aDate);
+    });
+  } else if (sort === 'oldest') {
+    filtered = [...filtered].sort((a, b) => {
+      const aDate = getMoviePremiereDateKey(a);
+      const bDate = getMoviePremiereDateKey(b);
+      if (aDate === null && bDate === null) return 0;
+      if (aDate === null) return 1;
+      if (bDate === null) return -1;
+      return aDate.localeCompare(bDate);
+    });
+  } else if (sort === 'title') {
     filtered = [...filtered].sort((a, b) => a.title.localeCompare(b.title));
+  } else if (sort === 'title-desc') {
+    filtered = [...filtered].sort((a, b) => b.title.localeCompare(a.title));
   }
 
   const total = filtered.length;

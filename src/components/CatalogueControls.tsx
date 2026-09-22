@@ -34,14 +34,14 @@ export const CatalogueControls: React.FC<CatalogueControlsProps> = ({ pathname, 
           <span>Sort</span>
           <select
             value={query.sort}
-            onChange={(event) => update({ sort: event.target.value === 'catalogue' ? undefined : event.target.value })}
+             onChange={(event) => update({ sort: event.target.value })}
             className="rounded border border-[#DCD3C7] bg-[#FFFDF9] px-2 py-1 text-[#1A3D2F] shadow-2xs focus:outline-none focus:ring-1 focus:ring-[#1A3D2F]"
             aria-label="Sort movies"
           >
-            <option value="catalogue">Catalogue order</option>
             <option value="newest">Newest first</option>
             <option value="oldest">Oldest first</option>
             <option value="title">Title A–Z</option>
+            <option value="title-desc">Title Z–A</option>
           </select>
         </label>
       </div>
