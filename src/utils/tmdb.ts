@@ -323,7 +323,7 @@ export async function refreshActorsFromTmdbPipeline(apiKey?: string): Promise<{
   return {
     totalCatalogueActors: catalogueActors.length,
     updated: result.updated,
-    skipped: 0,
+    skipped: result.skipped,
     errors: result.failures.length,
   };
 }

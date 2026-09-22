@@ -44,7 +44,10 @@ async function main() {
     console.log(`Local XmasDB movies: ${MOVIES.filter((movie) => movie.cast.some((cast) => cast.tmdbPersonId === personId)).length}`);
   }
 
-  console.log(`Updated people: ${result.updated}/${result.total}`);
+  console.log(`Catalogue people examined: ${result.total}`);
+  console.log(`Incomplete people targeted: ${result.incomplete}`);
+  console.log(`Already enriched and skipped: ${result.skipped}`);
+  console.log(`Updated people: ${result.updated}`);
   if (result.failures.length > 0) {
     console.error('TMDB person failures:');
     result.failures.forEach((failure) => console.error(`- ${failure.tmdbPersonId} ${failure.name}: ${failure.message}`));
@@ -56,6 +59,8 @@ async function main() {
     ...report,
     refreshedAt: new Date().toISOString(),
     uniqueCatalogueActors: result.total,
+    incompleteCatalogueActors: result.incomplete,
+    enrichedActorsSkipped: result.skipped,
     actorsSuccessfullyRefreshed: result.updated,
     actorFailures: result.failures,
   }, null, 2));

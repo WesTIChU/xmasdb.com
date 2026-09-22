@@ -10,6 +10,8 @@ const actorsPath = path.join(process.cwd(), 'src/data/actors.json');
 
 export interface PersonEnrichmentResult {
   total: number;
+  incomplete: number;
+  skipped: number;
   updated: number;
   failures: Array<{ tmdbPersonId: number; name: string; message: string }>;
   actor?: Actor;
@@ -22,6 +24,10 @@ interface CataloguePersonSeed {
   slug: string;
   id: string;
   profileUrl?: string;
+}
+
+export function isActorEnriched(actor: Pick<Actor, 'tmdbUpdatedAt'> | undefined): boolean {
+  return Boolean(actor?.tmdbUpdatedAt);
 }
 
 async function readActors(): Promise<Map<number, Actor>> {
@@ -37,7 +43,7 @@ async function cacheProfile(url: string | undefined, tmdbPersonId: number): Prom
   return cacheLocalImage(url, `/images/people/${tmdbPersonId}.webp`);
 }
 
-function cataloguePeople(movies: Movie[]): Map<number, CataloguePersonSeed> {
+export function cataloguePeople(movies: Movie[]): Map<number, CataloguePersonSeed> {
   const people = new Map<number, CataloguePersonSeed>();
   for (const movie of movies) {
     for (const cast of movie.cast) {
@@ -66,6 +72,15 @@ function cataloguePeople(movies: Movie[]): Map<number, CataloguePersonSeed> {
   return people;
 }
 
+export function findIncompleteCataloguePeople(movies: Movie[], existingActors: Map<number, Actor> | Actor[]): CataloguePersonSeed[] {
+  const actorsById = existingActors instanceof Map
+    ? existingActors
+    : new Map(existingActors.map((actor) => [actor.tmdbPersonId, actor]));
+  return [...cataloguePeople(movies).entries()]
+    .filter(([tmdbPersonId]) => !isActorEnriched(actorsById.get(tmdbPersonId)))
+    .map(([, person]) => person);
+}
+
 export async function enrichCataloguePeople(
   movies: Movie[],
   apiKey: string,
@@ -73,18 +88,22 @@ export async function enrichCataloguePeople(
   onProgress?: (current: number, total: number, person: CataloguePersonSeed) => void
 ): Promise<PersonEnrichmentResult> {
   const people = cataloguePeople(movies);
-  const target = personId ? new Map([[personId, people.get(personId)!]]) : people;
-  if (personId && !target.get(personId)) {
+  const person = personId ? people.get(personId) : undefined;
+  if (personId && !person) {
     throw new Error(`TMDB person ${personId} is not represented in the local XmasDB catalogue.`);
   }
 
   const actorsById = await readActors();
+  const target = personId
+    ? new Map([[personId, person!]])
+    : new Map(findIncompleteCataloguePeople(movies, actorsById).map((entry) => [entry.tmdbPersonId, entry]));
   const failures: PersonEnrichmentResult['failures'] = [];
   let updated = 0;
   let current = 0;
   let lastActor: Actor | undefined;
 
   const entries = [...target.entries()];
+  const total = personId ? 1 : people.size;
   let nextIndex = 0;
   const refreshWorker = async () => {
     while (nextIndex < entries.length) {
@@ -92,7 +111,7 @@ export async function enrichCataloguePeople(
       if (!entry) return;
       const [tmdbPersonId, person] = entry;
       current++;
-      onProgress?.(current, target.size, person);
+    onProgress?.(current, entries.length, person);
       try {
         const existing = actorsById.get(tmdbPersonId);
         const fetched = await fetchTmdbPerson(tmdbPersonId, apiKey);
@@ -131,5 +150,13 @@ export async function enrichCataloguePeople(
   await Promise.all(Array.from({ length: Math.min(5, entries.length) }, () => refreshWorker()));
 
   await writeFileAtomically(actorsPath, JSON.stringify([...actorsById.values()].sort((a, b) => a.name.localeCompare(b.name)), null, 2));
-  return { total: target.size, updated, failures, actor: lastActor, actors: [...actorsById.values()] };
+  return {
+    total,
+    incomplete: entries.length,
+    skipped: total - entries.length,
+    updated,
+    failures,
+    actor: lastActor,
+    actors: [...actorsById.values()],
+  };
 }
