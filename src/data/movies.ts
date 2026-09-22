@@ -201961,6 +201961,190 @@ export const MOVIES: Movie[] = [
     "voteCount": 72,
     "tmdbUpdatedAt": "2026-09-21T14:35:35.322Z",
     "premiereDate": "2010-12-04"
+  },
+  {
+    "id": "uptv-2026-a-royal-stables-christmas",
+    "slug": "a-royal-stables-christmas",
+    "title": "A Royal Stables Christmas",
+    "year": 2026,
+    "brandId": "uptv",
+    "releaseDate": "2026-11-12",
+    "synopsis": "At a prestigious equestrian training center, Ella forms a connection with a charming horseman who understands her desire to escape family expectations and forge her own path. But when his surprising royal secret is revealed, Ella must decide whether their Christmas romance can overcome the obstacles standing between them.",
+    "posterUrl": "",
+    "cast": [
+      {
+        "actorId": "106725",
+        "name": "Kathryn Davis",
+        "character": "Ella Portmundt",
+        "slug": "kathryn-davis",
+        "tmdbPersonId": 106725,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/hs3fjziV9U4cmw4Px92KRbfE1Ea.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "2180575",
+        "name": "Franco Lo Presti",
+        "character": "",
+        "slug": "franco-lo-presti",
+        "tmdbPersonId": 2180575,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/ueLxUo5jvGpHlnR5qd8P9ZcFi0o.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "2051992",
+        "name": "Tara Elizabeth",
+        "character": "Rose Portmundt",
+        "slug": "tara-elizabeth",
+        "tmdbPersonId": 2051992,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/b6I6wKumKvurLBub9CcOv444118.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "105299",
+        "name": "Jennifer Dale",
+        "character": "Jane Portmundt",
+        "slug": "jennifer-dale",
+        "tmdbPersonId": 105299,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/adl9ZaLienQe8c9jMuYgPuNpOR3.jpg",
+        "order": 3
+      },
+      {
+        "actorId": "6216304",
+        "name": "Charlie Jean Boyke",
+        "character": "Brittany",
+        "slug": "charlie-jean-boyke",
+        "tmdbPersonId": 6216304,
+        "order": 4
+      },
+      {
+        "actorId": "2243363",
+        "name": "Bobby Daniels",
+        "character": "Ron",
+        "slug": "bobby-daniels",
+        "tmdbPersonId": 2243363,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/ysYtomufApvk7B4AaTkwmv0hBa5.jpg",
+        "order": 5
+      },
+      {
+        "actorId": "74125",
+        "name": "Marianthi Evans",
+        "character": "Roberta",
+        "slug": "marianthi-evans",
+        "tmdbPersonId": 74125,
+        "order": 6
+      },
+      {
+        "actorId": "1228013",
+        "name": "Jill Frappier",
+        "character": "Kristella",
+        "slug": "jill-frappier",
+        "tmdbPersonId": 1228013,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/946TPr7589zniVfNGU8Fe3x3fKc.jpg",
+        "order": 7
+      },
+      {
+        "actorId": "4158283",
+        "name": "Angelo Grey",
+        "character": "Arthur",
+        "slug": "angelo-grey",
+        "tmdbPersonId": 4158283,
+        "order": 8
+      },
+      {
+        "actorId": "1776255",
+        "name": "Tina Jung",
+        "character": "Harmony Veracruz",
+        "slug": "tina-jung",
+        "tmdbPersonId": 1776255,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/eQG7U6ZMys4wJ0RhPGq72t3VcpC.jpg",
+        "order": 9
+      },
+      {
+        "actorId": "2663765",
+        "name": "Joey Kirchner",
+        "character": "Prince Henri",
+        "slug": "joey-kirchner",
+        "tmdbPersonId": 2663765,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/vewZKCYoMZi60lFsDueQIrZ6gqa.jpg",
+        "order": 10
+      },
+      {
+        "actorId": "1862833",
+        "name": "Kate MacLellan",
+        "character": "Marg",
+        "slug": "kate-maclellan",
+        "tmdbPersonId": 1862833,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/1hDyQe8ficGg9XYMg7zhi6HxeCD.jpg",
+        "order": 11
+      },
+      {
+        "actorId": "4273521",
+        "name": "Klé McKoy",
+        "character": "Driver",
+        "slug": "kl-mckoy",
+        "tmdbPersonId": 4273521,
+        "order": 12
+      },
+      {
+        "actorId": "2664011",
+        "name": "Jorge Molina",
+        "character": "King Edvard",
+        "slug": "jorge-molina",
+        "tmdbPersonId": 2664011,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/qxLI6m5If2u78RCsIltmNCxhRit.jpg",
+        "order": 13
+      },
+      {
+        "actorId": "4162901",
+        "name": "Nick Whiteley",
+        "character": "Julie",
+        "slug": "nick-whiteley",
+        "tmdbPersonId": 4162901,
+        "order": 14
+      }
+    ],
+    "director": "Marco Deufemia",
+    "tmdbId": 1695819,
+    "imdbId": "tt41634269",
+    "isComingSoon": true,
+    "status": "coming-soon",
+    "originalTitle": "A Royal Stables Christmas",
+    "genres": [
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "US",
+        "releaseDate": "2026-11-12T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": ""
+      }
+    ],
+    "crew": [
+      {
+        "id": 1911937,
+        "name": "Marco Deufemia",
+        "job": "Director",
+        "department": "Directing",
+        "creditId": "6a07715261856ae302634c0e"
+      },
+      {
+        "id": 2481591,
+        "name": "Paula Tiberius",
+        "job": "Writer",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/8wLE6K5PsjETr9a98qpLGi11iLR.jpg",
+        "creditId": "6a07715f585d519070634c07"
+      }
+    ],
+    "trailers": [],
+    "voteAverage": 0,
+    "voteCount": 0,
+    "tmdbUpdatedAt": "2026-09-22T04:09:35.726Z"
   }
 ];
 
