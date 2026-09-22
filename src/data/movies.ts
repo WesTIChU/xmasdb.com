@@ -204694,6 +204694,286 @@ export const MOVIES: Movie[] = [
     "voteAverage": 6.672,
     "voteCount": 31,
     "tmdbUpdatedAt": "2026-09-22T05:27:41.073Z"
+  },
+  {
+    "id": "hallmark-2019-sense-sensibility-snowmen",
+    "slug": "sense-sensibility-snowmen",
+    "title": "Sense, Sensibility & Snowmen",
+    "year": 2019,
+    "brandId": "hallmark",
+    "releaseDate": "2019-12-21",
+    "synopsis": "Christmas enthusiast party planners Ella  and her sister, Marianne, clash with their client, Edward, who is a not-so-jolly toy company CEO.",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/57WPZHvKzcPvzJn5Ar5DrYuH3QS.jpg",
+    "backdropUrl": "https://image.tmdb.org/t/p/w1280/lFdAiLuRclyRz1TfY6N4PPCpMC3.jpg",
+    "cast": [
+      {
+        "actorId": "1143960",
+        "name": "Erin Krakow",
+        "character": "Ella Dashwood",
+        "slug": "erin-krakow",
+        "tmdbPersonId": 1143960,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/8euXiEHmBwzV6NdwQ8dfwzFa7C7.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "432040",
+        "name": "Luke Macfarlane",
+        "character": "Edward Ferris",
+        "slug": "luke-macfarlane",
+        "tmdbPersonId": 432040,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/yEpXM2sEFtZSwoLtI0rYZJERzvZ.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "1292329",
+        "name": "Kimberley Sustad",
+        "character": "Marianne Dashwood",
+        "slug": "kimberley-sustad",
+        "tmdbPersonId": 1292329,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/hLYx9wEcJkN1JnXiZyYxExNHmWn.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "169781",
+        "name": "Jason McKinnon",
+        "character": "Brandon Williams",
+        "slug": "jason-mckinnon",
+        "tmdbPersonId": 169781,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/iM7a7N7jP4xT6P8pNlnLkqJy7pC.jpg",
+        "order": 3
+      },
+      {
+        "actorId": "290112",
+        "name": "Anna Van Hooft",
+        "character": "Lucy",
+        "slug": "anna-van-hooft",
+        "tmdbPersonId": 290112,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/jD0bUXxziGHav2E4ZpinKuicirt.jpg",
+        "order": 4
+      },
+      {
+        "actorId": "1252128",
+        "name": "Jan Bos",
+        "character": "Lloyd",
+        "slug": "jan-bos",
+        "tmdbPersonId": 1252128,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/t7t8oNcyskEvAOPnuDFAJ3gnQkf.jpg",
+        "order": 5
+      },
+      {
+        "actorId": "126224",
+        "name": "Ellen Kennedy",
+        "character": "Evelyn",
+        "slug": "ellen-kennedy",
+        "tmdbPersonId": 126224,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/GMbnND7ZOi7J9Dnk2hVI3Rqzlc.jpg",
+        "order": 6
+      },
+      {
+        "actorId": "1770250",
+        "name": "Shiraine Haas",
+        "character": "Charlotte",
+        "slug": "shiraine-haas",
+        "tmdbPersonId": 1770250,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/n6lV54PSgG5C1Cse0hhL0op9rcv.jpg",
+        "order": 7
+      },
+      {
+        "actorId": "2671251",
+        "name": "Keon Boateng",
+        "character": "Thomas",
+        "slug": "keon-boateng",
+        "tmdbPersonId": 2671251,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/5n98klHwX7blLPQAz6bUXBoax8m.jpg",
+        "order": 8
+      },
+      {
+        "actorId": "2034415",
+        "name": "Deborah Ramsay",
+        "character": "Vivienne",
+        "slug": "deborah-ramsay",
+        "tmdbPersonId": 2034415,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/g3uzjAPJrPVtwtmRxn9VbuNpEAn.jpg",
+        "order": 9
+      },
+      {
+        "actorId": "185209",
+        "name": "Ron Chartier",
+        "character": "Jacques",
+        "slug": "ron-chartier",
+        "tmdbPersonId": 185209,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/xjXQxKU6qDGajkQ9Nb6TBU6pK8b.jpg",
+        "order": 10
+      },
+      {
+        "actorId": "1265340",
+        "name": "Matt Mazur",
+        "character": "John",
+        "slug": "matt-mazur",
+        "tmdbPersonId": 1265340,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/hKk2H6CD4V4o5EUZntzIU8i1Qmt.jpg",
+        "order": 11
+      },
+      {
+        "actorId": "1274528",
+        "name": "Anesha Bailey",
+        "character": "Margaret",
+        "slug": "anesha-bailey",
+        "tmdbPersonId": 1274528,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/kMuEZEvppyRzsNV8uxpqfmOXdMY.jpg",
+        "order": 12
+      },
+      {
+        "actorId": "1545671",
+        "name": "Emma Pedersen",
+        "character": "Sophia",
+        "slug": "emma-pedersen",
+        "tmdbPersonId": 1545671,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/zscyF1WWHqIU8S8xLAYCH9GfGI5.jpg",
+        "order": 13
+      },
+      {
+        "actorId": "90402",
+        "name": "Michelle Brezinski",
+        "character": "Mrs. Hoffman",
+        "slug": "michelle-brezinski",
+        "tmdbPersonId": 90402,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/m4lrG3tJEqNoHVuszXi5p3FCKRy.jpg",
+        "order": 14
+      },
+      {
+        "actorId": "2911748",
+        "name": "Gerry Dai",
+        "character": "Barista",
+        "slug": "gerry-dai",
+        "tmdbPersonId": 2911748,
+        "order": 15
+      },
+      {
+        "actorId": "1825645",
+        "name": "Janet Glassford",
+        "character": "Vendor",
+        "slug": "janet-glassford",
+        "tmdbPersonId": 1825645,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/10WCLB13ps9G8dWwty3yfcw33I8.jpg",
+        "order": 16
+      },
+      {
+        "actorId": "986516",
+        "name": "Gary Peterman",
+        "character": "Stanley Green",
+        "slug": "gary-peterman",
+        "tmdbPersonId": 986516,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/bOjcEBlH2txxqOnDAcOH3k048LJ.jpg",
+        "order": 17
+      },
+      {
+        "actorId": "1874345",
+        "name": "Lee Shan Gibson",
+        "character": "Ferris Employee",
+        "slug": "lee-shan-gibson",
+        "tmdbPersonId": 1874345,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/jU9lEXTYwgFScS9spsTn4izanyI.jpg",
+        "order": 18
+      },
+      {
+        "actorId": "1946702",
+        "name": "Amber Taylor",
+        "character": "Little Girl",
+        "slug": "amber-taylor",
+        "tmdbPersonId": 1946702,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/vo1gMBd15lbGpE64OzPLiuvwsjI.jpg",
+        "order": 19
+      },
+      {
+        "actorId": "4984508",
+        "name": "Bill Chandler",
+        "character": "Santa",
+        "slug": "bill-chandler",
+        "tmdbPersonId": 4984508,
+        "order": 20
+      },
+      {
+        "actorId": "6022452",
+        "name": "Jamie Payton",
+        "character": "Carriage Driver #1",
+        "slug": "jamie-payton",
+        "tmdbPersonId": 6022452,
+        "order": 21
+      },
+      {
+        "actorId": "1829065",
+        "name": "T.J. Bews",
+        "character": "Carriage Driver #2",
+        "slug": "t-j-bews",
+        "tmdbPersonId": 1829065,
+        "order": 22
+      }
+    ],
+    "director": "David Winning",
+    "tmdbId": 627491,
+    "imdbId": "tt10650610",
+    "isComingSoon": false,
+    "status": "collection",
+    "originalTitle": "Sense, Sensibility & Snowmen",
+    "runtimeMinutes": 80,
+    "genres": [
+      {
+        "id": 10749,
+        "name": "Romance"
+      },
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "DE",
+        "releaseDate": "2019-12-21T00:00:00.000Z",
+        "type": 3,
+        "certification": "0",
+        "note": ""
+      },
+      {
+        "country": "US",
+        "releaseDate": "2019-11-30T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "Hallmark Movies & Mysteries"
+      }
+    ],
+    "crew": [
+      {
+        "id": 52044,
+        "name": "David Winning",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/pQXcLaJ05OVmQuK5uM6Uqeuk1Ce.jpg",
+        "creditId": "5dad4228fea6e30013ad484d"
+      },
+      {
+        "id": 1182319,
+        "name": "Samantha Herman",
+        "job": "Writer",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/s5JRPP3U8ouRhthp6Dy22jyygNE.jpg",
+        "creditId": "5dad42344350110019477dc6"
+      }
+    ],
+    "trailers": [
+      {
+        "key": "bdxEE0QZTE0",
+        "site": "YouTube",
+        "type": "Trailer",
+        "name": "Preview + Sneak Peek - Sense, Sensibility & Snowmen starring Erin Krakow and Luke Macfarlane",
+        "official": true
+      }
+    ],
+    "trailerYoutubeKey": "bdxEE0QZTE0",
+    "voteAverage": 6.772,
+    "voteCount": 46,
+    "tmdbUpdatedAt": "2026-09-22T05:28:57.308Z"
   }
 ];
 
