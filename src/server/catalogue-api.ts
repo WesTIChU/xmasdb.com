@@ -283,6 +283,10 @@ export function buildActorDetail(identifier: string, slug?: string, now: Date = 
   };
 }
 
+export function getActorActingFilmographyCount(identifier: string): number {
+  return buildActorDetail(identifier)?.actingFilmography.length || 0;
+}
+
 // ---------------------------------------------------------------------------
 // Search
 // ---------------------------------------------------------------------------
@@ -503,7 +507,7 @@ export function buildHomePayload(now: Date = new Date()): HomePayload {
       name: actor.name,
       tmdbPersonId: actor.tmdbPersonId,
       photoUrl: actor.profileUrl || actor.photoUrl,
-      movieCount,
+      movieCount: actor.tmdbPersonId ? getActorActingFilmographyCount(String(actor.tmdbPersonId)) : movieCount,
     }));
     if (actors.length > 0) popularActors.push({ brandId: brand.id, actors });
   }

@@ -327,7 +327,7 @@ export const ActorDetail: React.FC<ActorDetailProps> = ({
               Holiday Filmography
             </h2>
             <p className="text-sm sm:text-base text-[#736B63] font-body mt-1">
-              {safeFilmography.length} {safeFilmography.length === 1 ? 'Christmas movie' : 'Christmas movies'} featuring {actor.name} in XmasDB
+              {safeActingFilmography.length} {safeActingFilmography.length === 1 ? 'Christmas movie' : 'Christmas movies'} featuring {actor.name} in XmasDB
             </p>
           </div>
 
