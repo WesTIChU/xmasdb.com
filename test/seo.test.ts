@@ -1,8 +1,11 @@
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 import { createServer } from 'node:http';
+import React from 'react';
+import { renderToStaticMarkup } from 'react-dom/server';
 import { MOVIES } from '../src/data/movies';
 import { getActorByTmdbId, getAllActors } from '../src/data/actors';
+import { Header } from '../src/components/Header';
 import { getFeedsPath, getMoviePath, getActorPath } from '../src/utils/urls';
 import { getSitemapXml } from '../src/utils/feeds';
 import {
@@ -57,6 +60,7 @@ assert.equal(buildPrivacySeo().canonicalPath, '/privacy/');
 const movieSeo = getServerSeo(getMoviePath(movie.tmdbId, movie.slug));
 assert.equal(movieSeo.canonicalPath, getMoviePath(movie.tmdbId, movie.slug));
 assert.equal(movieSeo.noIndex, undefined);
+assert.equal(movieSeo.title, `${movie.title} (${movie.year}) | XmasDB`);
 assert.equal(getCanonicalRedirect(`/movie/${movie.tmdbId}/${movie.slug}`), getMoviePath(movie.tmdbId, movie.slug));
 assert.equal(getCanonicalRedirect(`/movie/${movie.tmdbId}/wrong-slug/`), getMoviePath(movie.tmdbId, movie.slug));
 
@@ -70,6 +74,8 @@ assert.equal(getServerSeo('/privacy/').canonicalPath, '/privacy/');
 assert.equal(getCanonicalRedirect('/privacy'), '/privacy/');
 assert.equal(getServerSeo('/contact/').canonicalPath, '/contact/');
 assert.equal(getCanonicalRedirect('/contact'), '/contact/');
+assert.equal(getServerSeo('/year/9999/').noIndex, true);
+assert.equal(getServerSeo('/hallmark/9999/').noIndex, true);
 
 for (const path of ['/', '/movies/', '/hallmark/', '/lifetime/', '/gaf/', '/uptv/', '/feeds/', '/about/', '/privacy/', '/contact/']) {
   assert.notEqual(parseRoute(path).type, 'not-found', `${path} should resolve to a known route`);
@@ -115,6 +121,7 @@ const moviePath = getMoviePath(movie.tmdbId, movie.slug);
 const movieHtml = renderServerHtml(serverShell, moviePath);
 assert.ok(movieHtml.includes(`<h1>${movie.title}</h1>`));
 assert.match(movieHtml, /<h2>Cast<\/h2>/);
+assert.equal((movieHtml.match(/<h1\b/g) || []).length, 1);
 assert.match(movieHtml, /name="robots" content="index,follow"/);
 assert.ok(movieHtml.includes(`rel="canonical" href="https://xmasdb.com${moviePath}"`));
 assert.match(movieHtml, /__XMASDB_ROUTE__/);
@@ -139,6 +146,35 @@ try {
   }
 } finally {
   await new Promise<void>((resolve, reject) => htmlServer.close((error) => error ? reject(error) : resolve()));
+}
+
+const headerProps = {
+  currentPath: '/',
+  onNavigate: () => {},
+  searchQuery: '',
+  onSearchChange: () => {},
+  populatedBrands: [],
+};
+const homeHeader = renderToStaticMarkup(React.createElement(Header, headerProps));
+const innerHeader = renderToStaticMarkup(React.createElement(Header, { ...headerProps, currentPath: moviePath }));
+assert.equal((homeHeader.match(/<h1\b/g) || []).length, 1, 'homepage branding should provide its single H1');
+assert.equal((innerHeader.match(/<h1\b/g) || []).length, 0, 'inner-page branding must not create a second H1');
+
+const representativeSeoPaths = [
+  '/',
+  moviePath,
+  danicaPath,
+  '/hallmark/',
+  '/year/2025/',
+  '/movies/',
+  '/feeds/',
+  '/about/',
+  '/contact/',
+  '/privacy/',
+];
+for (const path of representativeSeoPaths) {
+  const pageHtml = renderServerHtml(serverShell, path);
+  assert.equal((pageHtml.match(/<h1\b/g) || []).length, 1, `${path} should server-render exactly one H1`);
 }
 
 const sitemap = getSitemapXml();

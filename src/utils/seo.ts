@@ -160,7 +160,7 @@ export function buildMovieSeo(movie: Movie | MovieDetailMovie): SeoDocument {
     sameAs: sameAs.length ? sameAs : undefined,
   };
   return {
-    title: `${movie.title} (${movie.year}) - Cast, Release & Movie Details | XmasDB`,
+    title: `${movie.title} (${movie.year}) | XmasDB`,
     description: truncateDescription(facts),
     canonicalPath,
     image: movie.posterUrl,

@@ -241,9 +241,9 @@ export const MovieDetail: React.FC<MovieDetailProps> = ({ movie, related, onNavi
 
           {/* Synopsis */}
           <section aria-labelledby="synopsis-heading">
-            <h3 id="synopsis-heading" className="text-base font-heading font-semibold text-[#1A3D2F] mb-2">
+            <h2 id="synopsis-heading" className="text-base font-heading font-semibold text-[#1A3D2F] mb-2">
               Synopsis
-            </h3>
+            </h2>
             <p className="text-[#3A332B] font-body text-base leading-relaxed">
               {movie.synopsis}
             </p>
@@ -252,9 +252,9 @@ export const MovieDetail: React.FC<MovieDetailProps> = ({ movie, related, onNavi
           {/* Starring Cast with Editorial Profile Photos */}
           <section aria-labelledby="cast-heading">
             <div className="flex items-center justify-between mb-4">
-              <h3 id="cast-heading" className="text-base font-heading font-semibold text-[#1A3D2F]">
+              <h2 id="cast-heading" className="text-base font-heading font-semibold text-[#1A3D2F]">
                 Starring Cast
-              </h3>
+              </h2>
               <span className="text-xs text-[#6F675E] font-sans-clean">
                 {movie.cast.length} {movie.cast.length === 1 ? 'member' : 'members'}
               </span>
@@ -342,10 +342,10 @@ export const MovieDetail: React.FC<MovieDetailProps> = ({ movie, related, onNavi
           {/* Trailers & Previews Section */}
           <section aria-labelledby="trailers-heading" className="border-t border-[#E7DFD5] pt-6">
             <div className="flex items-center justify-between mb-3">
-              <h3 id="trailers-heading" className="text-base font-heading font-semibold text-[#1A3D2F] flex items-center gap-2">
+              <h2 id="trailers-heading" className="text-base font-heading font-semibold text-[#1A3D2F] flex items-center gap-2">
                 <Film className="w-4 h-4 text-[#841818]" />
                 <span>Trailer & Video Previews</span>
-              </h3>
+              </h2>
               {activeTrailer && (
                 <a
                   href={`https://www.youtube.com/watch?v=${activeTrailer.key}`}
@@ -423,12 +423,12 @@ export const MovieDetail: React.FC<MovieDetailProps> = ({ movie, related, onNavi
           className="mt-12 sm:mt-16 pt-8 sm:pt-10 border-t border-[#E7DFD5]"
         >
           <div className="flex items-center justify-between mb-6">
-            <h3
+            <h2
               id="related-brand-movies-heading"
               className="text-base sm:text-lg md:text-xl font-heading font-semibold uppercase tracking-wider text-[#1A3D2F]"
             >
               More from {brand.shortName}
-            </h3>
+            </h2>
             <NavigationLink href={getNetworkPath(brand.slug)} onNavigate={onNavigate} className="text-xs sm:text-sm font-sans-clean font-medium hover:text-[#143626] transition-colors">View all <span className="xmas-nav-arrow">→</span></NavigationLink>
           </div>
 

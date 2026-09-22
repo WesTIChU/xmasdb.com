@@ -20,7 +20,7 @@ export const Header: React.FC<HeaderProps> = ({
   populatedBrands,
 }) => {
   // Normalize current path
-  const normalizedPath = (currentPath.replace(/\/+$/, '') || '/') + '/';
+  const normalizedPath = currentPath === '/' ? '/' : (currentPath.replace(/\/+$/, '') || '/') + '/';
 
   const isBrandActive = (brandSlug: string) => {
     return normalizedPath.startsWith(`/${brandSlug}/`);
@@ -39,12 +39,14 @@ export const Header: React.FC<HeaderProps> = ({
     return normalizedPath.startsWith('/feeds/');
   };
 
+  const BrandingTag = normalizedPath === '/' ? 'h1' : 'div';
+
   return (
       <header className="border-b border-[#E7DFD5] bg-[#FAF7F2] py-4 pb-4 sm:pt-6 sm:pb-4 px-4 sm:px-6 relative z-30">
       <div className="max-w-4xl mx-auto text-center">
         {/* 1. Branding: XmasDB.com Logo */}
         <div className="mb-3 sm:mb-4">
-          <h1 className="m-0 leading-none">
+          <BrandingTag className="m-0 leading-none">
             <a
               href="/"
               onClick={(e) => {
@@ -69,7 +71,7 @@ export const Header: React.FC<HeaderProps> = ({
               />
               <span className="sr-only">XmasDB.com — A curated collection of Christmas movies.</span>
             </a>
-          </h1>
+          </BrandingTag>
         </div>
 
         {/* 2. Network Navigation directly beneath branding with hand-drawn wavy dark-green squiggle */}

@@ -42,6 +42,7 @@ export function getServerSeo(pathname: string, search = ''): SeoDocument {
   if (yearMatch) {
     const year = Number(yearMatch[1]);
     const listing = buildCatalogueListing(parseCatalogueQuery(''), undefined, year);
+    if (!listing?.total) return buildNotFoundSeo();
     return { ...buildYearSeo(year, listing?.total), noIndex: Boolean(search) };
   }
 
@@ -65,6 +66,7 @@ export function getServerSeo(pathname: string, search = ''): SeoDocument {
     if (!brand) return buildNotFoundSeo();
     const year = brandMatch[2] ? Number(brandMatch[2]) : null;
     const listing = buildCatalogueListing(parseCatalogueQuery(''), brand.slug, year || undefined);
+    if (year && !listing?.total) return buildNotFoundSeo();
     return { ...buildBrandSeo(brand, year, listing?.total), noIndex: Boolean(search) };
   }
   return buildNotFoundSeo();
@@ -131,7 +133,7 @@ function renderMovieContent(pathname: string): string {
     movie.writingCredits.length ? `<dt>Writers</dt><dd>${movie.writingCredits.map((writer) => `<a href="${escapeHtml(getActorPath(writer.tmdbPersonId, writer.slug))}">${escapeHtml(writer.name)}</a>`).join(' · ')}</dd>` : '',
     movie.voteAverage ? `<dt>Rating</dt><dd>${movie.voteAverage.toFixed(1)}</dd>` : '',
   ].filter(Boolean).join('');
-  return `<main id="server-rendered-content"><article><h1>${escapeHtml(movie.title)}</h1><p>${renderText(movie.synopsis)}</p><dl>${facts}</dl><h2>Cast</h2><ul>${cast}</ul></article></main>`;
+  return `<main id="server-rendered-content"><article><h1>${escapeHtml(movie.title)}</h1><h2>Synopsis</h2><p>${renderText(movie.synopsis)}</p><dl>${facts}</dl><h2>Cast</h2><ul>${cast}</ul></article></main>`;
 }
 
 function renderActorContent(pathname: string): string {

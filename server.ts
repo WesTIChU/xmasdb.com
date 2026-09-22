@@ -45,7 +45,10 @@ function isKnownPagePath(rawPath: string): boolean {
   const clean = rawPath.replace(/^\/+|\/+$/g, '');
   if (!clean || clean === 'movies' || clean === 'all' || clean === 'feeds' || clean === 'about' || clean === 'privacy' || clean === 'contact') return true;
   if (clean === 'admin/login' || clean === 'admin/submissions' || clean === 'admin/feed-statistics' || clean === 'admin/movies/add') return true;
-  if (/^year\/\d+$/i.test(clean)) return true;
+  const yearMatch = clean.match(/^year\/(\d+)$/i);
+  if (yearMatch) {
+    return Boolean(buildCatalogueListing(parseCatalogueQuery(''), undefined, Number(yearMatch[1]))?.total);
+  }
 
   const movie = clean.match(/^movie\/(.+)$/i);
   if (movie) {
@@ -71,7 +74,10 @@ function isKnownPagePath(rawPath: string): boolean {
 
   const parts = clean.split('/').filter(Boolean);
   if (parts.length === 1) return Boolean(getBrandBySlug(parts[0]));
-  if (parts.length === 2) return Boolean(getBrandBySlug(parts[0]) && /^\d+$/.test(parts[1]));
+  if (parts.length === 2) {
+    const brand = getBrandBySlug(parts[0]);
+    return Boolean(brand && /^\d+$/.test(parts[1]) && buildCatalogueListing(parseCatalogueQuery(''), brand.slug, Number(parts[1]))?.total);
+  }
   return false;
 }
 
