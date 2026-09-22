@@ -205563,6 +205563,275 @@ export const MOVIES: Movie[] = [
     "voteAverage": 6,
     "voteCount": 27,
     "tmdbUpdatedAt": "2026-09-22T15:32:24.085Z"
+  },
+  {
+    "id": "gaf-2019-my-best-friend-s-christmas",
+    "slug": "my-best-friend-s-christmas",
+    "title": "My Best Friend's Christmas",
+    "year": 2019,
+    "brandId": "gaf",
+    "releaseDate": "2019-12-01",
+    "synopsis": "When Ashley Seever returns home for the holidays hoping to reconnect with her high school sweetheart Grant, she soon meets his new girlfriend. In an attempt to escape the embarrassment, she and her best friend Liam fake their own holiday romance…but when her fake feelings for Liam start to turn real, Ashley will have to choose what her heart really wants this Christmas.",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/gIZWYSTpgTIGGnp7ytgqUECxHat.jpg",
+    "backdropUrl": "https://image.tmdb.org/t/p/w1280/eTKIxd2nSldJHqjjaId4Kyv3Fpl.jpg",
+    "cast": [
+      {
+        "actorId": "1494506",
+        "name": "Breanne Hill",
+        "character": "Ashley Seever",
+        "slug": "breanne-hill",
+        "tmdbPersonId": 1494506,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/vPepNisMvgt5Sn9MA32YZ1LJ5mZ.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "2189320",
+        "name": "Colton Little",
+        "character": "Liam Marsh",
+        "slug": "colton-little",
+        "tmdbPersonId": 2189320,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/xv4a3YUDfHfrx7gtVK5TB0PtQon.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "1172772",
+        "name": "Tanner Novlan",
+        "character": "Grant Hines",
+        "slug": "tanner-novlan",
+        "tmdbPersonId": 1172772,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/rdGDe5twPhWAnXZNOp3U0uXUaNa.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "281985",
+        "name": "Masiela Lusha",
+        "character": "Bella Vega",
+        "slug": "masiela-lusha",
+        "tmdbPersonId": 281985,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/xkXvuHjydPXRgwbXS1SxHVeiaX7.jpg",
+        "order": 3
+      },
+      {
+        "actorId": "45391",
+        "name": "Beth Broderick",
+        "character": "Sheila Seever",
+        "slug": "beth-broderick",
+        "tmdbPersonId": 45391,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/aXgETSCjZlvlzdhAiOjhepMdxqR.jpg",
+        "order": 4
+      },
+      {
+        "actorId": "29407",
+        "name": "Trevor Eve",
+        "character": "Winston Seever",
+        "slug": "trevor-eve",
+        "tmdbPersonId": 29407,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/tfXY6ilnTEkpPN3PpqxhMhHb3z7.jpg",
+        "order": 5
+      },
+      {
+        "actorId": "523979",
+        "name": "Autumn Federici",
+        "character": "Gwen",
+        "slug": "autumn-federici",
+        "tmdbPersonId": 523979,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/nYA7E8XcoynUmoXUbACwpoL0x04.jpg",
+        "order": 6
+      },
+      {
+        "actorId": "1479957",
+        "name": "Josh Cowdery",
+        "character": "Martin",
+        "slug": "josh-cowdery",
+        "tmdbPersonId": 1479957,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/pUzcdhyUNnFgVj4KgIDunLfTh4j.jpg",
+        "order": 7
+      },
+      {
+        "actorId": "2462667",
+        "name": "Sophia Stephens",
+        "character": "Deborah",
+        "slug": "sophia-stephens",
+        "tmdbPersonId": 2462667,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/aJPXsgJH363phcvaqr6gciJqL3r.jpg",
+        "order": 8
+      },
+      {
+        "actorId": "1788486",
+        "name": "John D. Hickman",
+        "character": "Vinnie the DJ Santa",
+        "slug": "john-d-hickman",
+        "tmdbPersonId": 1788486,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/um4ptUtpUBZoHTZlr1EaCdJRoH2.jpg",
+        "order": 9
+      },
+      {
+        "actorId": "2023636",
+        "name": "Leslie Stratton",
+        "character": "Katrina",
+        "slug": "leslie-stratton",
+        "tmdbPersonId": 2023636,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/mTurXJyzWOVcEdxV0Q4SJViXPBs.jpg",
+        "order": 10
+      },
+      {
+        "actorId": "1744768",
+        "name": "Mike Capozzi",
+        "character": "Frank the Delivery Guy",
+        "slug": "mike-capozzi",
+        "tmdbPersonId": 1744768,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/ieYNIYDKTIhvo55mSAImWM6mOte.jpg",
+        "order": 11
+      },
+      {
+        "actorId": "1904791",
+        "name": "Dawn McCoy",
+        "character": "Roxy the Cafe Singer",
+        "slug": "dawn-mccoy",
+        "tmdbPersonId": 1904791,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/jiZ8o7x8LyD5mC9SRVZuuxycFBo.jpg",
+        "order": 12
+      },
+      {
+        "actorId": "6161977",
+        "name": "Vada Ashley",
+        "character": "",
+        "slug": "vada-ashley",
+        "tmdbPersonId": 6161977,
+        "order": 13
+      },
+      {
+        "actorId": "1093517",
+        "name": "Jess Adams",
+        "character": "Influencer (Uncredited)",
+        "slug": "jess-adams",
+        "tmdbPersonId": 1093517,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/9wW35teY5FaRV4Rta0F3bMTGvzD.jpg",
+        "order": 14
+      },
+      {
+        "actorId": "3614192",
+        "name": "Rosie Okumura",
+        "character": "Influencer (Uncredited)",
+        "slug": "rosie-okumura",
+        "tmdbPersonId": 3614192,
+        "order": 15
+      }
+    ],
+    "director": "Jake Helgren",
+    "tmdbId": 649520,
+    "imdbId": "tt11230402",
+    "isComingSoon": false,
+    "status": "collection",
+    "originalTitle": "My Best Friend's Christmas",
+    "runtimeMinutes": 90,
+    "genres": [
+      {
+        "id": 10749,
+        "name": "Romance"
+      },
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "CH",
+        "releaseDate": "2019-12-02T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "RTS Un"
+      },
+      {
+        "country": "FR",
+        "releaseDate": "2019-12-03T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "M6"
+      },
+      {
+        "country": "SE",
+        "releaseDate": "2019-12-01T00:00:00.000Z",
+        "type": 3,
+        "certification": "7",
+        "note": ""
+      },
+      {
+        "country": "US",
+        "releaseDate": "2019-12-01T00:00:00.000Z",
+        "type": 4,
+        "certification": "",
+        "note": "Showtime Anytime"
+      },
+      {
+        "country": "US",
+        "releaseDate": "2019-12-03T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": " Showtime Women"
+      },
+      {
+        "country": "US",
+        "releaseDate": "2019-12-07T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "TMC"
+      },
+      {
+        "country": "US",
+        "releaseDate": "2022-11-13T00:00:00.000Z",
+        "type": 6,
+        "certification": "G",
+        "note": "Great American Family"
+      }
+    ],
+    "crew": [
+      {
+        "id": 1536497,
+        "name": "Blaine Chiappetta",
+        "job": "Screenplay",
+        "department": "Writing",
+        "creditId": "5dd542d73faba00019f47687"
+      },
+      {
+        "id": 589410,
+        "name": "Jake Helgren",
+        "job": "Story",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/virgDMoUS8fwCZXcoFchTYdiLgL.jpg",
+        "creditId": "5dd5432228723c00144fbfbd"
+      },
+      {
+        "id": 589410,
+        "name": "Jake Helgren",
+        "job": "Screenplay",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/virgDMoUS8fwCZXcoFchTYdiLgL.jpg",
+        "creditId": "5dd543112634620016b784a3"
+      },
+      {
+        "id": 589410,
+        "name": "Jake Helgren",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/virgDMoUS8fwCZXcoFchTYdiLgL.jpg",
+        "creditId": "5f2a50241bf26600374b2eab"
+      }
+    ],
+    "trailers": [
+      {
+        "key": "r8UWSpguNLk",
+        "site": "YouTube",
+        "type": "Teaser",
+        "name": "Preview",
+        "official": true
+      }
+    ],
+    "trailerYoutubeKey": "r8UWSpguNLk",
+    "voteAverage": 5.7,
+    "voteCount": 19,
+    "tmdbUpdatedAt": "2026-09-22T16:03:27.524Z"
   }
 ];
 

@@ -10882,6 +10882,20 @@
     "tmdbUpdatedAt": "2026-09-20T16:18:45.013Z"
   },
   {
+    "tmdbPersonId": 1536497,
+    "name": "Blaine Chiappetta",
+    "gender": "Male",
+    "knownForDepartment": "Writing",
+    "alsoKnownAs": [
+      "Blaine Chiapetta"
+    ],
+    "knownCredits": 33,
+    "imdbPersonId": "nm5526583",
+    "id": "1536497",
+    "slug": "blaine-chiappetta",
+    "tmdbUpdatedAt": "2026-09-22T16:03:27.822Z"
+  },
+  {
     "id": "blair-baker",
     "slug": "blair-baker",
     "name": "Blair Baker",
@@ -11842,6 +11856,24 @@
     "knownForDepartment": "Acting",
     "knownCredits": 1,
     "tmdbUpdatedAt": "2026-09-20T16:20:48.472Z"
+  },
+  {
+    "tmdbPersonId": 1494506,
+    "name": "Breanne Hill",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "alsoKnownAs": [
+      "برن هیل"
+    ],
+    "knownCredits": 9,
+    "birthday": "1990-03-10",
+    "placeOfBirth": "Salem, New Hampshire, USA",
+    "profileUrl": "https://image.tmdb.org/t/p/w500/vPepNisMvgt5Sn9MA32YZ1LJ5mZ.jpg",
+    "imdbPersonId": "nm3667760",
+    "id": "1494506",
+    "slug": "breanne-hill",
+    "photoUrl": "https://image.tmdb.org/t/p/w500/vPepNisMvgt5Sn9MA32YZ1LJ5mZ.jpg",
+    "tmdbUpdatedAt": "2026-09-22T16:03:27.655Z"
   },
   {
     "id": "breanne-williamson",
@@ -43472,6 +43504,26 @@
     "tmdbUpdatedAt": "2026-09-21T13:13:53.726Z"
   },
   {
+    "tmdbPersonId": 1093517,
+    "name": "Jess Adams",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "alsoKnownAs": [
+      "Jess Ariel Adams"
+    ],
+    "knownCredits": 19,
+    "birthday": "1991-04-22",
+    "placeOfBirth": "Columbus, Ohio, USA",
+    "biography": "Jess Adams was born in Columbus, Ohio, USA. She is an actress, known for Community (2009), The Nine Lives of Chloe King (2011) and Beyond Our End (2025).",
+    "profileUrl": "https://image.tmdb.org/t/p/w500/9wW35teY5FaRV4Rta0F3bMTGvzD.jpg",
+    "imdbPersonId": "nm3967921",
+    "instagramId": "thejessadams",
+    "id": "1093517",
+    "slug": "jess-adams",
+    "photoUrl": "https://image.tmdb.org/t/p/w500/9wW35teY5FaRV4Rta0F3bMTGvzD.jpg",
+    "tmdbUpdatedAt": "2026-09-22T16:03:27.790Z"
+  },
+  {
     "id": "jess-brown",
     "slug": "jess-brown",
     "name": "Jess Brown",
@@ -47392,6 +47444,23 @@
     "knownForDepartment": "Acting",
     "knownCredits": 14,
     "tmdbUpdatedAt": "2026-09-20T16:19:21.245Z"
+  },
+  {
+    "tmdbPersonId": 1479957,
+    "name": "Josh Cowdery",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "alsoKnownAs": [],
+    "knownCredits": 17,
+    "birthday": "1978-12-23",
+    "placeOfBirth": "Little Rock, Arkansas, USA",
+    "biography": "Josh Cowdery (born December 23, 1978) is an American actor. He is known in film for Fantastic Beasts and Where to Find Them (2016) and in television for Agents of S.H.I.E.L.D. (2013) and Legends (2014).",
+    "profileUrl": "https://image.tmdb.org/t/p/w500/pUzcdhyUNnFgVj4KgIDunLfTh4j.jpg",
+    "imdbPersonId": "nm3912910",
+    "id": "1479957",
+    "slug": "josh-cowdery",
+    "photoUrl": "https://image.tmdb.org/t/p/w500/pUzcdhyUNnFgVj4KgIDunLfTh4j.jpg",
+    "tmdbUpdatedAt": "2026-09-22T16:03:27.730Z"
   },
   {
     "id": "josh-crippen",
@@ -56308,6 +56377,24 @@
     "tmdbUpdatedAt": "2026-09-20T16:20:15.653Z"
   },
   {
+    "tmdbPersonId": 2023636,
+    "name": "Leslie Stratton",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "alsoKnownAs": [],
+    "knownCredits": 20,
+    "placeOfBirth": "Bryan, Ohio, USA",
+    "biography": "Leslie Stratton is an American actress who grew up in the small town of Bryan, Ohio. She fell in love with the art of acting at a young age and continued to pursue it through plays and musicals in high school. After moving to Los Angeles to forward her career, Leslie has been seen in Blumhouse's \"Truth or Dare\", a national Pizza Hut commercial alongside Kristen Wiig, and various other indie feature films.",
+    "profileUrl": "https://image.tmdb.org/t/p/w500/mTurXJyzWOVcEdxV0Q4SJViXPBs.jpg",
+    "imdbPersonId": "nm5721118",
+    "instagramId": "lesliestratton",
+    "twitterId": "LeslieAStratton",
+    "id": "2023636",
+    "slug": "leslie-stratton",
+    "photoUrl": "https://image.tmdb.org/t/p/w500/mTurXJyzWOVcEdxV0Q4SJViXPBs.jpg",
+    "tmdbUpdatedAt": "2026-09-22T16:03:27.750Z"
+  },
+  {
     "id": "3678654",
     "slug": "leta-tavares",
     "name": "Leta Tavares",
@@ -62946,6 +63033,26 @@
     "tmdbUpdatedAt": "2026-09-20T16:17:10.649Z"
   },
   {
+    "tmdbPersonId": 281985,
+    "name": "Masiela Lusha",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "alsoKnownAs": [],
+    "knownCredits": 22,
+    "birthday": "1985-10-23",
+    "placeOfBirth": "Tirana, Albania",
+    "biography": "From Wikipedia, the free encyclopedia\n\nMasiela Lusha (born October 23, 1985) is an Albanian American actress, author, producer and humanitarian. Lusha gained worldwide recognition for playing her first major role as Carmen Consuela Lopez on the globally syndicated ABC sitcom George Lopez, a role which earned her two consecutive Young Artist Awards for Leading Young Actress in a Comedy or Drama. After transitioning into film, she had her breakout role in Sony Picture's Blood: The Last Vampire. Lusha also starred alongside David Hasselhoff and Ian Zeiring in SyFy's television movie Sharknado: The 4th Awakens.",
+    "profileUrl": "https://image.tmdb.org/t/p/w500/xkXvuHjydPXRgwbXS1SxHVeiaX7.jpg",
+    "imdbPersonId": "nm1126641",
+    "instagramId": "masielalusha",
+    "twitterId": "masiela",
+    "facebookId": "masielalusha",
+    "id": "281985",
+    "slug": "masiela-lusha",
+    "photoUrl": "https://image.tmdb.org/t/p/w500/xkXvuHjydPXRgwbXS1SxHVeiaX7.jpg",
+    "tmdbUpdatedAt": "2026-09-22T16:03:27.704Z"
+  },
+  {
     "id": "mason-d-davis",
     "slug": "mason-d-davis",
     "name": "Mason D. Davis",
@@ -67449,6 +67556,25 @@
       "Michael Bell"
     ],
     "tmdbUpdatedAt": "2026-09-20T16:20:45.322Z"
+  },
+  {
+    "tmdbPersonId": 1744768,
+    "name": "Mike Capozzi",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "alsoKnownAs": [],
+    "knownCredits": 24,
+    "birthday": "1978-04-10",
+    "placeOfBirth": "Bronx, New York, USA",
+    "biography": "Mike Capozzi is an actor and producer.",
+    "profileUrl": "https://image.tmdb.org/t/p/w500/ieYNIYDKTIhvo55mSAImWM6mOte.jpg",
+    "imdbPersonId": "nm2336481",
+    "instagramId": "mikecapozzi",
+    "twitterId": "mikecapozzi",
+    "id": "1744768",
+    "slug": "mike-capozzi",
+    "photoUrl": "https://image.tmdb.org/t/p/w500/ieYNIYDKTIhvo55mSAImWM6mOte.jpg",
+    "tmdbUpdatedAt": "2026-09-22T16:03:27.758Z"
   },
   {
     "id": "mike-carpenter",
@@ -79177,6 +79303,16 @@
     "tmdbUpdatedAt": "2026-09-20T16:16:57.925Z"
   },
   {
+    "tmdbPersonId": 3614192,
+    "name": "Rosie Okumura",
+    "knownForDepartment": "Acting",
+    "alsoKnownAs": [],
+    "knownCredits": 4,
+    "id": "3614192",
+    "slug": "rosie-okumura",
+    "tmdbUpdatedAt": "2026-09-22T16:03:27.808Z"
+  },
+  {
     "id": "ross-jirgl",
     "slug": "ross-jirgl",
     "name": "Ross Jirgl",
@@ -84825,6 +84961,19 @@
     "knownCredits": 11,
     "instagramId": "sophiareidgantzert",
     "tmdbUpdatedAt": "2026-09-20T16:18:54.491Z"
+  },
+  {
+    "tmdbPersonId": 2462667,
+    "name": "Sophia Stephens",
+    "knownForDepartment": "Acting",
+    "alsoKnownAs": [],
+    "knownCredits": 6,
+    "profileUrl": "https://image.tmdb.org/t/p/w500/aJPXsgJH363phcvaqr6gciJqL3r.jpg",
+    "imdbPersonId": "nm7645944",
+    "id": "2462667",
+    "slug": "sophia-stephens",
+    "photoUrl": "https://image.tmdb.org/t/p/w500/aJPXsgJH363phcvaqr6gciJqL3r.jpg",
+    "tmdbUpdatedAt": "2026-09-22T16:03:27.749Z"
   },
   {
     "id": "sophie-bastelle",
@@ -91096,6 +91245,23 @@
     "tmdbUpdatedAt": "2026-09-22T15:37:36.192Z"
   },
   {
+    "tmdbPersonId": 29407,
+    "name": "Trevor Eve",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "alsoKnownAs": [],
+    "knownCredits": 63,
+    "birthday": "1951-07-01",
+    "placeOfBirth": "Sutton Coldfield, Warwickshire, England, UK",
+    "biography": "From Wikipedia, the free encyclopedia.  Trevor John Eve (born 1 July 1951) is a British film and television actor. In 1979 he gained fame as the eponymous lead in the detective series Shoestring, and is also known for his role as Detective Superintendent Peter Boyd in BBC television drama Waking the Dead.\n\nDescription above from the Wikipedia article Trevor Eve , licensed under CC-BY-SA,full list of contributors on Wikipedia.  ​",
+    "profileUrl": "https://image.tmdb.org/t/p/w500/tfXY6ilnTEkpPN3PpqxhMhHb3z7.jpg",
+    "imdbPersonId": "nm0263368",
+    "id": "29407",
+    "slug": "trevor-eve",
+    "photoUrl": "https://image.tmdb.org/t/p/w500/tfXY6ilnTEkpPN3PpqxhMhHb3z7.jpg",
+    "tmdbUpdatedAt": "2026-09-22T16:03:27.685Z"
+  },
+  {
     "id": "trevor-hayes",
     "slug": "trevor-hayes",
     "name": "Trevor Hayes",
@@ -91804,6 +91970,16 @@
     "knownForDepartment": "Acting",
     "knownCredits": 1,
     "tmdbUpdatedAt": "2026-09-20T16:17:14.526Z"
+  },
+  {
+    "tmdbPersonId": 6161977,
+    "name": "Vada Ashley",
+    "knownForDepartment": "Acting",
+    "alsoKnownAs": [],
+    "knownCredits": 1,
+    "id": "6161977",
+    "slug": "vada-ashley",
+    "tmdbUpdatedAt": "2026-09-22T16:03:27.752Z"
   },
   {
     "id": "val-pearson",
