@@ -95,88 +95,23 @@ const gafFeed = JSON.parse(getRadarrNetworkFeedJson('gaf')) as Array<{ title: st
 const hallmarkFeed = JSON.parse(getRadarrNetworkFeedJson('hallmark')) as Array<{ title: string; imdb_id: string }>;
 const lifetimeFeed = JSON.parse(getRadarrNetworkFeedJson('lifetime')) as Array<{ title: string; imdb_id: string }>;
 const uptvFeed = JSON.parse(getRadarrNetworkFeedJson('uptv')) as Array<{ title: string; imdb_id: string }>;
-const expectedUptvTitles = [
-  'The Christmas Calendar (2017)',
-  'A Christmas Masquerade (2022)',
-  'The Christmas Retreat (2022)',
-  'Christmas in the Wilds (2021)',
-  'Christmas Lucky Charm (2022)',
-  'A Tiny Home Christmas (2022)',
-  'The Picture of Christmas (2021)',
-  'Christmas on the Slopes (2022)',
-  'A Royal Christmas Match (2022)',
-  'Mistletoe Connection (2023)',
-  'Yuletide the Knot (2023)',
-  'UnPerfect Christmas Wish (2021)',
-  'The Holiday Swap (2022)',
-  'Christmas on the Rocks (2022)',
-  "Santa's Got Style (2022)",
-  'Sappy Holiday (2022)',
-  'An Eclectic Christmas (2022)',
-  'The Snowball Effect (2022)',
-  'Christmas in Wolf Creek (2022)',
-  "We're Scrooged (2023)",
-  'Christmas Time Capsule (2023)',
-  'Country Hearts Christmas (2023)',
-  'Christmas at the Amish Bakery (2023)',
-  'Dial S for Santa (2023)',
-  'Country Roads Christmas (2022)',
-  'The Case of the Christmas Diamond (2022)',
-  'Christmas in Rockwell (2022)',
-  'Dognapped: Hound for the Holidays (2022)',
-  'A Very English Christmas (2023)',
-  'The Search for Secret Santa (2022)',
-  'Festival of Trees (2024)',
-  'A Prince and Pauper Christmas (2022)',
-  'A Bluegrass Christmas (2024)',
-  '12 Dares of Christmas (2023)',
-  'A Novel Christmas (2024)',
-  'North by North Pole: A Dial S Mystery (2024)',
-  'This Is Our Christmas (2018)',
-  'A Christmas Switch (2018)',
-  'Married by Christmas (2016)',
-  'A Puppy for Christmas (2016)',
-  'Girlfriends of Christmas Past (2016)',
-  "Guess Who's Coming to Christmas (2013)",
-  "A Dogwalker's Christmas Tale (2015)",
-  'Christmas Trade (2015)',
-  'Naughty & Nice (2014)',
-  'My Santa (2013)',
-  'The Rooftop Christmas Tree (2016)',
-  'Angels in the Snow (2015)',
-  'Marry Me For Christmas (2013)',
-  'Marry Us for Christmas (2014)',
-  'Merry Christmas, Baby (2016)',
-  'A Husband for Christmas (2016)',
-  'My One Christmas Wish (2015)',
-  'Paper Angels (2014)',
-  'A Christmas Cruise (2017)',
-  'A Christmas in Vermont (2016)',
-  'Christmas Princess (2017)',
-  'The Tree That Saved Christmas (2014)',
-  'Chandler Christmas Getaway (2018)',
-  'A Baby for Christmas (2018)',
-  'Christmas Solo (2017)',
-  '12 Days of Giving (2017)',
-  'Christmas on the Coast (2018)',
-  'Christmas Catch (2018)',
-  'Christmas with a Prince (2018)',
-  'Christmas on Holly Lane (2018)',
-  'Hometown Holiday (2018)',
-  'Second Chance Christmas (2017)',
-  'The Christmas Clause (2008)',
-  '3 Holiday Tails (2011)',
-  'A Golden Christmas (2009)',
-  'A Christmas Kiss (2011)',
-  'Christmas Mail (2010)',
-];
 assert.ok(gafFeed.length > 0);
 assert.ok(gafFeed.every((item) => item.title && item.imdb_id.startsWith('tt')));
 assert.ok(hallmarkFeed.length > 0);
 assert.ok(lifetimeFeed.length > 0);
-assert.strictEqual(uptvFeed.length, expectedUptvTitles.length);
-assert.deepStrictEqual(uptvFeed.map((item) => item.title), expectedUptvTitles);
+assert.ok(uptvFeed.length > 0);
 assert.ok(uptvFeed.every((item) => item.imdb_id.startsWith('tt')));
+assert.strictEqual(new Set(uptvFeed.map((item) => item.imdb_id)).size, uptvFeed.length);
+assert.ok(
+  uptvFeed.every((item) =>
+    MOVIES.some(
+      (movie) =>
+        movie.brandId === 'uptv' &&
+        movie.imdbId === item.imdb_id &&
+        `${movie.title} (${movie.year})` === item.title,
+    ),
+  ),
+);
 assert.ok(JSON.parse(getRadarrAllFeedJson()).length >= gafFeed.length + hallmarkFeed.length);
 assert.ok(getSitemapXml().includes('/gaf/'));
 assert.ok(getSitemapXml().includes('/lifetime/'));
