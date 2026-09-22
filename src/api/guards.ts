@@ -96,7 +96,8 @@ export function isFeedsMetaPayload(value: unknown): value is FeedsMetaPayload {
     && isRecord(value.counts)
     && isNumber(value.counts.all)
     && isRecord(value.counts.brands)
-    && isRecord(value.counts.years);
+    && isRecord(value.counts.years)
+    && isRecord(value.counts.actors);
 }
 
 export function isFeedStatisticsPayload(value: unknown): value is FeedStatisticsPayload {

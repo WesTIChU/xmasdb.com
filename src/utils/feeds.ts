@@ -163,21 +163,31 @@ export function getRadarrYearFeedJson(year: number): string {
  * /json/actors/:tmdbPersonId.json
  * Contains eligible Christmas movies featuring that actor, regardless of network
  */
-export function getRadarrActorFeedJson(tmdbPersonId: number): string | null {
+function getRadarrActorMovies(tmdbPersonId: number): Movie[] | null {
   const actor = getActorByTmdbId(tmdbPersonId);
   if (!actor) return null;
 
-  const actorMovies = MOVIES.filter((m) =>
+  return MOVIES.filter((m) =>
     m.cast.some(
       (c) =>
         (c.tmdbPersonId && c.tmdbPersonId === tmdbPersonId) ||
         c.slug.toLowerCase() === actor.slug.toLowerCase() ||
         c.name.toLowerCase() === actor.name.toLowerCase()
-    )
+      )
   );
+}
+
+export function getRadarrActorFeedJson(tmdbPersonId: number): string | null {
+  const actorMovies = getRadarrActorMovies(tmdbPersonId);
+  if (!actorMovies) return null;
 
   const feed = buildRadarrFeed(actorMovies);
   return JSON.stringify(feed, null, 2);
+}
+
+export function getRadarrActorFeedCount(tmdbPersonId: number): number {
+  const actorMovies = getRadarrActorMovies(tmdbPersonId);
+  return actorMovies ? buildRadarrFeed(actorMovies).length : 0;
 }
 
 // ---------------- INTERNAL RICH DATA ENDPOINTS ----------------

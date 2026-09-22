@@ -17,7 +17,7 @@ import { getBrandBySlug, getPopulatedBrands } from '../data/brands';
 import { getCataloguePage, type CatalogueQuery } from '../utils/catalogue-pagination';
 import { getMoviePremiereDateKey, isFutureComingSoonMovie, isMoviePremierePast, sortMoviesByLifecycle } from '../utils/catalogue-lifecycle';
 import { getActorBackdrop } from '../utils/backdrops';
-import { buildRadarrFeed } from '../utils/feeds';
+import { buildRadarrFeed, getRadarrActorFeedCount } from '../utils/feeds';
 import type {
   ActorDetailPayload,
   AboutPayload,
@@ -545,6 +545,10 @@ export function buildFeedsMeta(): FeedsMetaPayload {
   for (const year of years) {
     yearCounts[String(year)] = buildRadarrFeed(MOVIES.filter((movie) => movie.year === year)).length;
   }
+  const actorCounts: Record<string, number> = {};
+  for (const actor of getAllActors()) {
+    actorCounts[String(actor.tmdbPersonId)] = getRadarrActorFeedCount(actor.tmdbPersonId);
+  }
 
   feedsMetaCache = {
     years,
@@ -553,6 +557,7 @@ export function buildFeedsMeta(): FeedsMetaPayload {
       all: buildRadarrFeed(MOVIES).length,
       brands: brandCounts,
       years: yearCounts,
+      actors: actorCounts,
     },
   };
   return feedsMetaCache;

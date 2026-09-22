@@ -190,5 +190,6 @@ export interface FeedsMetaPayload {
     all: number;
     brands: Record<string, number>;
     years: Record<string, number>;
+    actors: Record<string, number>;
   };
 }
