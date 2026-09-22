@@ -1,7 +1,8 @@
-import type { Movie } from '../types';
+import type { Actor, Movie } from '../types';
 import { generateMoviesModule, parseMoviesModule } from './movie-import';
 
 const MOVIES_PATH = 'src/data/movies.ts';
+const ACTORS_PATH = 'src/data/actors.json';
 export const COMING_SOON_WORKFLOW = 'nightly-coming-soon-refresh.yml';
 
 export interface GitHubConfig {
@@ -15,6 +16,7 @@ interface BranchState {
   commitSha: string;
   treeSha: string;
   movies: Movie[];
+  actors?: Actor[];
 }
 
 interface GitTreeResponse {
@@ -99,6 +101,7 @@ export async function readGitHubBranch(config = configFromEnv()): Promise<Branch
   const commit = await githubRequest<{ tree: { sha: string } }>(config, `/git/commits/${ref.object.sha}`);
   const tree = await githubRequest<GitTreeResponse>(config, `/git/trees/${encodeURIComponent(commit.tree.sha)}?recursive=1`);
   const file = tree.tree?.find((entry) => entry.path === MOVIES_PATH && entry.type === 'blob' && entry.sha);
+  const actorsFile = tree.tree?.find((entry) => entry.path === ACTORS_PATH && entry.type === 'blob' && entry.sha);
   if (!file?.sha) {
     console.error('[GitHub Catalogue] Canonical file was not found in Git tree', JSON.stringify({
       repository: `${config.owner}/${config.repo}`,
@@ -114,6 +117,19 @@ export async function readGitHubBranch(config = configFromEnv()): Promise<Branch
   const source = blob.encoding === 'base64'
     ? Buffer.from(encodedContent.replace(/\s/g, ''), 'base64').toString('utf8')
     : encodedContent;
+  let actors: Actor[] | undefined;
+  if (actorsFile?.sha) {
+    const actorsBlob = await githubRequest<GitBlobResponse>(config, `/git/blobs/${encodeURIComponent(actorsFile.sha)}`);
+    const encodedActors = actorsBlob.content || '';
+    const actorsSource = actorsBlob.encoding === 'base64'
+      ? Buffer.from(encodedActors.replace(/\s/g, ''), 'base64').toString('utf8')
+      : encodedActors;
+    try {
+      actors = JSON.parse(actorsSource) as Actor[];
+    } catch {
+      throw new Error('Canonical actors file contains invalid JSON.');
+    }
+  }
   console.info('[GitHub Catalogue] Loaded canonical source', JSON.stringify({
     repository: `${config.owner}/${config.repo}`,
     branch: config.branch,
@@ -123,7 +139,7 @@ export async function readGitHubBranch(config = configFromEnv()): Promise<Branch
     encodedBytes: Buffer.byteLength(encodedContent, 'utf8'),
     decodedBytes: Buffer.byteLength(source, 'utf8'),
   }));
-  return { commitSha: ref.object.sha, treeSha: commit.tree.sha, movies: parseMoviesModule(source, `GitHub Git Blob ${file.sha}`) };
+  return { commitSha: ref.object.sha, treeSha: commit.tree.sha, movies: parseMoviesModule(source, `GitHub Git Blob ${file.sha}`), actors };
 }
 
 export async function commitMoviesToGitHub(
@@ -131,6 +147,7 @@ export async function commitMoviesToGitHub(
   baseSha: string,
   message: string,
   config = configFromEnv(),
+  actors?: Actor[],
 ): Promise<{ commitSha: string }> {
   const current = await readGitHubBranch(config);
   if (current.commitSha !== baseSha) throw new Error('The XmasDB repository changed while you were reviewing these movies. Refresh the preview and try again.');
@@ -139,9 +156,22 @@ export async function commitMoviesToGitHub(
     body: JSON.stringify({ content: generateMoviesModule(movies), encoding: 'utf-8' }),
     headers: { 'Content-Type': 'application/json' },
   });
+  const actorBlob = actors
+    ? await githubRequest<{ sha: string }>(config, '/git/blobs', {
+      method: 'POST',
+      body: JSON.stringify({ content: JSON.stringify(actors, null, 2), encoding: 'utf-8' }),
+      headers: { 'Content-Type': 'application/json' },
+    })
+    : undefined;
   const tree = await githubRequest<{ sha: string }>(config, '/git/trees', {
     method: 'POST',
-    body: JSON.stringify({ base_tree: current.treeSha, tree: [{ path: MOVIES_PATH, mode: '100644', type: 'blob', sha: blob.sha }] }),
+    body: JSON.stringify({
+      base_tree: current.treeSha,
+      tree: [
+        { path: MOVIES_PATH, mode: '100644', type: 'blob', sha: blob.sha },
+        ...(actorBlob ? [{ path: ACTORS_PATH, mode: '100644', type: 'blob', sha: actorBlob.sha }] : []),
+      ],
+    }),
     headers: { 'Content-Type': 'application/json' },
   });
   const commit = await githubRequest<{ sha: string }>(config, '/git/commits', {

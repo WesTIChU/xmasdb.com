@@ -40,6 +40,7 @@ import { getCanonicalRedirect, getRobotsTxt, renderServerHtml } from './src/serv
 import { ensureFeedStatisticsStorage, getActorFeedDefinition, getFeedStatistics, getMetadataFeedDefinition, getYearFeedDefinition } from './src/server/feed-statistics';
 import { trackSuccessfulFeedResponse } from './src/server/feed-route';
 import { isTrustedProxyAddress, PublicFeedRateLimiter } from './src/server/feed-rate-limit';
+import { enrichNewCatalogueActors } from './src/server/actor-import';
 import { notifyFlarumMovieAdded } from './src/server/flarum';
 
 function isKnownPagePath(rawPath: string): boolean {
@@ -535,7 +536,21 @@ async function startServer() {
       });
       const movies = [...github.movies, ...fetched];
       if (new Set(movies.map((movie) => movie.tmdbId)).size !== movies.length) throw new Error('The proposed catalogue contains duplicate TMDB IDs.');
-      const commit = await commitMoviesToGitHub(movies, baseSha, fetched.length === 1 ? `Add Christmas movie: ${fetched[0].title}` : `Add ${fetched.length} Christmas movies`);
+      let actors: Awaited<ReturnType<typeof enrichNewCatalogueActors>> | undefined;
+      if (github.actors) {
+        try {
+          actors = await enrichNewCatalogueActors(fetched, github.actors, apiKey);
+        } catch (error) {
+          console.warn(`[Admin Movies Commit] New actor enrichment failed: ${error instanceof Error ? error.message : 'request failed'}`);
+        }
+      }
+      const commit = await commitMoviesToGitHub(
+        movies,
+        baseSha,
+        fetched.length === 1 ? `Add Christmas movie: ${fetched[0].title}` : `Add ${fetched.length} Christmas movies`,
+        undefined,
+        actors,
+      );
       for (const movie of fetched) void notifyFlarumMovieAdded(movie);
       return res.json({ added: fetched.length, commitSha: commit.commitSha, message: 'Added to catalogue. Deployment pending.' });
     } catch (error) {
