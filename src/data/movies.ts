@@ -202431,6 +202431,1465 @@ export const MOVIES: Movie[] = [
     "voteAverage": 7.5,
     "voteCount": 2,
     "tmdbUpdatedAt": "2026-09-22T04:14:11.539Z"
+  },
+  {
+    "id": "uptv-2025-the-great-christmas-snow-in",
+    "slug": "the-great-christmas-snow-in",
+    "title": "The Great Christmas Snow-In",
+    "year": 2025,
+    "brandId": "uptv",
+    "releaseDate": "2025-11-02",
+    "synopsis": "After his engagement is called off, Justin retreats to a secluded cabin meant for his honeymoon, only to be snowed in with Jane, his ex-fiancée’s cousin. As tension builds, a spark forms between them, but when Justin’s ex shows up with her new boyfriend, things get even more complicated. In the close quarters of the cabin, secrets unravel, leading to unexpected discoveries about love and second chances.",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/msyROXudqlpDHiowBEvpxJbEKDN.jpg",
+    "backdropUrl": "https://image.tmdb.org/t/p/w1280/zkGLha4n4vQkA1KWQUS1fHKbJqs.jpg",
+    "cast": [
+      {
+        "actorId": "133401",
+        "name": "Amanda Fuller",
+        "character": "Jane",
+        "slug": "amanda-fuller",
+        "tmdbPersonId": 133401,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/yRZk0c8NMcAiOg9KQqbss96Sbn9.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "51750",
+        "name": "Joey Lawrence",
+        "character": "Justin",
+        "slug": "joey-lawrence",
+        "tmdbPersonId": 51750,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/scmaFpaElhetPwubERvd1mdkERg.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "2369060",
+        "name": "Ricardo Chávez",
+        "character": "Alejandro",
+        "slug": "ricardo-ch-vez",
+        "tmdbPersonId": 2369060,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/qpe8onzjemChvVWcJg1IWWAMNCF.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "5670612",
+        "name": "Melina Alves",
+        "character": "Addy",
+        "slug": "melina-alves",
+        "tmdbPersonId": 5670612,
+        "order": 3
+      }
+    ],
+    "director": "Damian X. Fulton",
+    "tmdbId": 1474878,
+    "imdbId": "tt31520670",
+    "isComingSoon": false,
+    "status": "collection",
+    "originalTitle": "The Great Christmas Snow-In",
+    "runtimeMinutes": 86,
+    "genres": [
+      {
+        "id": 10749,
+        "name": "Romance"
+      },
+      {
+        "id": 35,
+        "name": "Comedy"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "US",
+        "releaseDate": "2025-11-02T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": ""
+      }
+    ],
+    "crew": [
+      {
+        "id": 5670612,
+        "name": "Melina Alves",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "68b9bc8fe3d9f6469098adcf"
+      },
+      {
+        "id": 1916442,
+        "name": "Damian X. Fulton",
+        "job": "Director",
+        "department": "Directing",
+        "creditId": "68b9bc97efa96fc7f71f4106"
+      }
+    ],
+    "trailers": [
+      {
+        "key": "e04xQvRDrjk",
+        "site": "YouTube",
+        "type": "Trailer",
+        "name": "The Great Christmas Snow-In | Trailer | Nicely Entertainment",
+        "official": true
+      }
+    ],
+    "trailerYoutubeKey": "e04xQvRDrjk",
+    "voteAverage": 6.8,
+    "voteCount": 5,
+    "tmdbUpdatedAt": "2026-09-22T04:19:24.891Z"
+  },
+  {
+    "id": "uptv-2024-a-soldier-for-christmas",
+    "slug": "a-soldier-for-christmas",
+    "title": "A Soldier for Christmas",
+    "year": 2024,
+    "brandId": "uptv",
+    "releaseDate": "2024-11-01",
+    "synopsis": "Hannah, a military widow, and her young daughter rediscover the joy of Christmas in a world forever changed while fighting for healing and love.",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/lXdvqXv8SJ2khhvOgE5CHRiy1Ix.jpg",
+    "backdropUrl": "https://image.tmdb.org/t/p/w1280/bgpEKHtfXVxq71ITfP3OupFt0Qt.jpg",
+    "cast": [
+      {
+        "actorId": "5051679",
+        "name": "Renay Rayes",
+        "character": "Hannah Jacobs",
+        "slug": "renay-rayes",
+        "tmdbPersonId": 5051679,
+        "order": 0
+      },
+      {
+        "actorId": "3687624",
+        "name": "Joe Barra",
+        "character": "Ryan Barnes",
+        "slug": "joe-barra",
+        "tmdbPersonId": 3687624,
+        "order": 1
+      },
+      {
+        "actorId": "169396",
+        "name": "Cameron Arnett",
+        "character": "Christopher Hughes",
+        "slug": "cameron-arnett",
+        "tmdbPersonId": 169396,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/r9JFN7CyYzybehriG8vB0F7280n.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "4105292",
+        "name": "Mercedes Marcial",
+        "character": "Melissa Phillips",
+        "slug": "mercedes-marcial",
+        "tmdbPersonId": 4105292,
+        "order": 3
+      },
+      {
+        "actorId": "1016433",
+        "name": "Kevin Porter",
+        "character": "Commander Sergeant",
+        "slug": "kevin-porter",
+        "tmdbPersonId": 1016433,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/wEgU4DLvR3DNClIJPTXkcOc7D57.jpg",
+        "order": 4
+      },
+      {
+        "actorId": "2137504",
+        "name": "Liz Merriman",
+        "character": "Jackie Krauss",
+        "slug": "liz-merriman",
+        "tmdbPersonId": 2137504,
+        "order": 5
+      },
+      {
+        "actorId": "5051684",
+        "name": "Mitchell Doerr",
+        "character": "Joshua Levi",
+        "slug": "mitchell-doerr",
+        "tmdbPersonId": 5051684,
+        "order": 6
+      },
+      {
+        "actorId": "5051686",
+        "name": "Davia Inns",
+        "character": "Carmen Jacobs",
+        "slug": "davia-inns",
+        "tmdbPersonId": 5051686,
+        "order": 7
+      },
+      {
+        "actorId": "4105294",
+        "name": "Don Knill",
+        "character": "Andrew Jacobs",
+        "slug": "don-knill",
+        "tmdbPersonId": 4105294,
+        "order": 8
+      },
+      {
+        "actorId": "4105288",
+        "name": "Frederick Wims",
+        "character": "Drunk #1",
+        "slug": "frederick-wims",
+        "tmdbPersonId": 4105288,
+        "order": 9
+      },
+      {
+        "actorId": "5051689",
+        "name": "Martin K. Jones",
+        "character": "Drunk #2",
+        "slug": "martin-k-jones",
+        "tmdbPersonId": 5051689,
+        "order": 10
+      },
+      {
+        "actorId": "5051693",
+        "name": "Timothy Kou",
+        "character": "Plaza",
+        "slug": "timothy-kou",
+        "tmdbPersonId": 5051693,
+        "order": 11
+      },
+      {
+        "actorId": "5051696",
+        "name": "Quentin Patterson",
+        "character": "Muscle Date",
+        "slug": "quentin-patterson",
+        "tmdbPersonId": 5051696,
+        "order": 12
+      },
+      {
+        "actorId": "5051699",
+        "name": "Zach Thomas",
+        "character": "Trader Date",
+        "slug": "zach-thomas",
+        "tmdbPersonId": 5051699,
+        "order": 13
+      },
+      {
+        "actorId": "5051700",
+        "name": "Connor Elliott",
+        "character": "Player Date",
+        "slug": "connor-elliott",
+        "tmdbPersonId": 5051700,
+        "order": 14
+      },
+      {
+        "actorId": "5051703",
+        "name": "Joseph Ramos",
+        "character": "Suit Date",
+        "slug": "joseph-ramos",
+        "tmdbPersonId": 5051703,
+        "order": 15
+      },
+      {
+        "actorId": "5051704",
+        "name": "Sam Wassink",
+        "character": "First Date",
+        "slug": "sam-wassink",
+        "tmdbPersonId": 5051704,
+        "order": 16
+      },
+      {
+        "actorId": "5051705",
+        "name": "Dante Grey",
+        "character": "Bar Date",
+        "slug": "dante-grey",
+        "tmdbPersonId": 5051705,
+        "order": 17
+      }
+    ],
+    "director": "Aaron Greer",
+    "tmdbId": 1385762,
+    "imdbId": "tt32889756",
+    "isComingSoon": false,
+    "status": "collection",
+    "originalTitle": "A Soldier for Christmas",
+    "runtimeMinutes": 91,
+    "genres": [
+      {
+        "id": 18,
+        "name": "Drama"
+      },
+      {
+        "id": 10751,
+        "name": "Family"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "US",
+        "releaseDate": "2024-11-01T00:00:00.000Z",
+        "type": 2,
+        "certification": "",
+        "note": ""
+      }
+    ],
+    "crew": [
+      {
+        "id": 4105258,
+        "name": "Aaron Greer",
+        "job": "Director",
+        "department": "Directing",
+        "creditId": "67312cbc3de68be94d68c4af"
+      },
+      {
+        "id": 4105258,
+        "name": "Aaron Greer",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "67312ccb418eaf7877fa981d"
+      },
+      {
+        "id": 3437990,
+        "name": "Joshua K. Carpenter",
+        "job": "Writer",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/lcoOdTcNNwFyvaEGM0El43HYFNS.jpg",
+        "creditId": "67312cd6418eaf7877fa9820"
+      }
+    ],
+    "trailers": [],
+    "voteAverage": 5,
+    "voteCount": 1,
+    "tmdbUpdatedAt": "2026-09-22T04:19:24.883Z"
+  },
+  {
+    "id": "uptv-2025-a-royal-christmas-manor",
+    "slug": "a-royal-christmas-manor",
+    "title": "A Royal Christmas Manor",
+    "year": 2025,
+    "brandId": "uptv",
+    "releaseDate": "2025-11-09",
+    "synopsis": "Prince Alexander of Fredonia escapes to a cozy inn hoping to experience a traditional American Christmas. Katie, who runs the inn, falls for him, completely unaware of his true royal identity.",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/hdme04bjVBwDtIYKqryDJpOUp3w.jpg",
+    "backdropUrl": "https://image.tmdb.org/t/p/w1280/vmHI6vdzKNrJVA1MlEmvDoVAmKi.jpg",
+    "cast": [
+      {
+        "actorId": "1455179",
+        "name": "Kirk Barker",
+        "character": "Alexander",
+        "slug": "kirk-barker",
+        "tmdbPersonId": 1455179,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/iUKT3s2fjBhmk0qELYF9fNsDays.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "3729076",
+        "name": "Brianna Cohen",
+        "character": "Katie",
+        "slug": "brianna-cohen",
+        "tmdbPersonId": 3729076,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/w3lhUQGeeamDG0ncS0r1BzIFPtR.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "25730",
+        "name": "Brian Caspe",
+        "character": "Mr. Norton",
+        "slug": "brian-caspe",
+        "tmdbPersonId": 25730,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/orGBrMh5z8Ao7jopzjgbxk0qDAn.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "3909217",
+        "name": "Jessica Balmer",
+        "character": "Muriel",
+        "slug": "jessica-balmer",
+        "tmdbPersonId": 3909217,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/fhb5Oj719yH7z5f2lYU2r8Lyu46.jpg",
+        "order": 3
+      },
+      {
+        "actorId": "3662495",
+        "name": "Jennifer McKinley-van der Zee",
+        "character": "Linda",
+        "slug": "jennifer-mckinley-van-der-zee",
+        "tmdbPersonId": 3662495,
+        "order": 4
+      },
+      {
+        "actorId": "1230653",
+        "name": "Andrew Forbes",
+        "character": "King Jeffrey",
+        "slug": "andrew-forbes",
+        "tmdbPersonId": 1230653,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/iEAbDDqIDzwSs9YLLREjqOFEYki.jpg",
+        "order": 5
+      },
+      {
+        "actorId": "2525654",
+        "name": "Steven Barwick",
+        "character": "Jim Miller",
+        "slug": "steven-barwick",
+        "tmdbPersonId": 2525654,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/uoPjzoYH3jtB3uMs9gMLAMEXIXy.jpg",
+        "order": 6
+      },
+      {
+        "actorId": "4642043",
+        "name": "Jake Bryan-Amaning",
+        "character": "Jackson Reynolds",
+        "slug": "jake-bryan-amaning",
+        "tmdbPersonId": 4642043,
+        "order": 7
+      },
+      {
+        "actorId": "5182545",
+        "name": "Julie Fox",
+        "character": "Queen Sophia",
+        "slug": "julie-fox",
+        "tmdbPersonId": 5182545,
+        "order": 8
+      }
+    ],
+    "director": "Richard Switzer",
+    "tmdbId": 1418422,
+    "imdbId": "tt30797225",
+    "isComingSoon": false,
+    "status": "collection",
+    "originalTitle": "A Royal Christmas Manor",
+    "runtimeMinutes": 81,
+    "genres": [
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "US",
+        "releaseDate": "2025-11-09T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": ""
+      }
+    ],
+    "crew": [
+      {
+        "id": 1634529,
+        "name": "Richard Switzer",
+        "job": "Director",
+        "department": "Directing",
+        "creditId": "6788c9eda64feb16c91d3e40"
+      },
+      {
+        "id": 3103067,
+        "name": "Amy Irons",
+        "job": "Screenplay",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/7smNwWwSXNcRrOEh1yuGjcbecTu.jpg",
+        "creditId": "6788c9f906809ab236ad1d4a"
+      },
+      {
+        "id": 1634529,
+        "name": "Richard Switzer",
+        "job": "Story",
+        "department": "Writing",
+        "creditId": "6788ca0155e49bed5e977897"
+      },
+      {
+        "id": 3103067,
+        "name": "Amy Irons",
+        "job": "Story",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/7smNwWwSXNcRrOEh1yuGjcbecTu.jpg",
+        "creditId": "6788ca0d79cf13ee41ad1b2c"
+      }
+    ],
+    "trailers": [],
+    "voteAverage": 7,
+    "voteCount": 3,
+    "tmdbUpdatedAt": "2026-09-22T04:19:24.887Z"
+  },
+  {
+    "id": "uptv-2025-saving-the-christmas-ranch",
+    "slug": "saving-the-christmas-ranch",
+    "title": "Saving the Christmas Ranch",
+    "year": 2025,
+    "brandId": "uptv",
+    "releaseDate": "2025-11-16",
+    "synopsis": "When the accountant for Carrie Williams’ family’s Christmas lodge makes off with all their money, Carrie has just two days to come up with nine months of missing mortgage payments or be foreclosed upon. Charming developer John Dunn has been calling Carrie from afar for a while, and now he’s here in person to make an offer on the ranch she can hardly refuse. Can Carrie raise enough funds before the deadline to save her home? Or will she be forced to sell to John, who hasn’t been entirely truthful about how he came to be there.",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/vjcw1Np7ECu3jDXFramt5b8JuC5.jpg",
+    "backdropUrl": "https://image.tmdb.org/t/p/w1280/mesAiJmKXjzaybzX1aNrAfIoh0U.jpg",
+    "cast": [
+      {
+        "actorId": "3729076",
+        "name": "Brianna Cohen",
+        "character": "Carrie Williams",
+        "slug": "brianna-cohen",
+        "tmdbPersonId": 3729076,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/w3lhUQGeeamDG0ncS0r1BzIFPtR.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "1751311",
+        "name": "Jonathan Stoddard",
+        "character": "John Dunn",
+        "slug": "jonathan-stoddard",
+        "tmdbPersonId": 1751311,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/ct64PRjZpTFphgdlezQ7c2lMIrC.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "5049150",
+        "name": "Kirby Schwarber",
+        "character": "Hannah",
+        "slug": "kirby-schwarber",
+        "tmdbPersonId": 5049150,
+        "order": 2
+      },
+      {
+        "actorId": "5670629",
+        "name": "Nina Surbaugh",
+        "character": "Rose Williams",
+        "slug": "nina-surbaugh",
+        "tmdbPersonId": 5670629,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/wA6dKL9gc5wZhQdghyiVStc22Mj.jpg",
+        "order": 3
+      },
+      {
+        "actorId": "2747506",
+        "name": "George R. Hildebrand",
+        "character": "George",
+        "slug": "george-r-hildebrand",
+        "tmdbPersonId": 2747506,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/qe7LzXvrLIN67BdkgNo1mIs5JcM.jpg",
+        "order": 4
+      },
+      {
+        "actorId": "3147780",
+        "name": "Logan Shephard",
+        "character": "Conor",
+        "slug": "logan-shephard",
+        "tmdbPersonId": 3147780,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/wUH0QZPDbHAUiw455BiRgpb11GP.jpg",
+        "order": 5
+      },
+      {
+        "actorId": "1545515",
+        "name": "Ryan Wesley Gilreath",
+        "character": "Kurt Townsend",
+        "slug": "ryan-wesley-gilreath",
+        "tmdbPersonId": 1545515,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/eWtPOyzCBFuS3VpsrjYBuQEaNId.jpg",
+        "order": 6
+      }
+    ],
+    "director": "Kevan Otto",
+    "tmdbId": 1541405,
+    "imdbId": "tt32261455",
+    "isComingSoon": false,
+    "status": "collection",
+    "originalTitle": "Saving the Christmas Ranch",
+    "runtimeMinutes": 94,
+    "genres": [
+      {
+        "id": 10749,
+        "name": "Romance"
+      },
+      {
+        "id": 35,
+        "name": "Comedy"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "US",
+        "releaseDate": "2025-11-16T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": ""
+      }
+    ],
+    "crew": [
+      {
+        "id": 939496,
+        "name": "Kevan Otto",
+        "job": "Director",
+        "department": "Directing",
+        "creditId": "68b9be3532854f06dc9bf4ed"
+      },
+      {
+        "id": 3372258,
+        "name": "Lori Canevaro",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "68b9be4398c17ea86d068edd"
+      }
+    ],
+    "trailers": [
+      {
+        "key": "WRzP-LDUFJY",
+        "site": "YouTube",
+        "type": "Trailer",
+        "name": "Trailer",
+        "official": true
+      }
+    ],
+    "trailerYoutubeKey": "WRzP-LDUFJY",
+    "voteAverage": 7,
+    "voteCount": 4,
+    "tmdbUpdatedAt": "2026-09-22T04:19:24.894Z"
+  },
+  {
+    "id": "uptv-2025-a-royal-christmas-hope",
+    "slug": "a-royal-christmas-hope",
+    "title": "A Royal Christmas Hope",
+    "year": 2025,
+    "brandId": "uptv",
+    "releaseDate": "2025-11-23",
+    "synopsis": "Julia Carter, the director of a nonprofit called Hope For All, prepares for the busy Christmas season. Despite financial challenges, Julia is determined to keep the holiday spirit alive for families in need. Prince Christopher of St. Monica, seeking a break from royal duties, travels to America for a different Christmas experience. He meets Julia, and, under the guise of a tech executive, volunteers at her nonprofit. As he becomes more involved in her world, an unlikely romance blossoms between Julia and Christopher.",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/dQZ0ZtDY4tVSXgTR1Gr1GJuEg9T.jpg",
+    "backdropUrl": "https://image.tmdb.org/t/p/w1280/2pUIMBaMZbE6z27B8JbFALpDWD3.jpg",
+    "cast": [
+      {
+        "actorId": "1948436",
+        "name": "Jenna Michno",
+        "character": "Julia Carter",
+        "slug": "jenna-michno",
+        "tmdbPersonId": 1948436,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/51URs3ZSlFjHnIcJ952dEdsUV9h.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "105187",
+        "name": "Robert Adamson",
+        "character": "Prince Christopher",
+        "slug": "robert-adamson",
+        "tmdbPersonId": 105187,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/qNBcYHiBe4WwUzDSgiMzT2tlqI.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "1936485",
+        "name": "Kayla Fields",
+        "character": "Alexis",
+        "slug": "kayla-fields",
+        "tmdbPersonId": 1936485,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/sDukIYZ7ISb6AEM06hX6IbJX61c.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "154747",
+        "name": "Butch Klein",
+        "character": "Malcolm",
+        "slug": "butch-klein",
+        "tmdbPersonId": 154747,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/29Dlf3Z81sVtN5JGFKqH5rq5scg.jpg",
+        "order": 3
+      },
+      {
+        "actorId": "142604",
+        "name": "René Ashton",
+        "character": "Mother",
+        "slug": "ren-ashton",
+        "tmdbPersonId": 142604,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/jTMXz8MmAMeuBTxORXoSXILzhAr.jpg",
+        "order": 4
+      },
+      {
+        "actorId": "1214717",
+        "name": "James Hyde",
+        "character": "Father",
+        "slug": "james-hyde",
+        "tmdbPersonId": 1214717,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/yXVBAL5h339cnSkjlZykS2Qsc9v.jpg",
+        "order": 5
+      },
+      {
+        "actorId": "3704265",
+        "name": "Paul Michael Starnes",
+        "character": "Christmas Gift Wrapper",
+        "slug": "paul-michael-starnes",
+        "tmdbPersonId": 3704265,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/hYrjz2YmH0wBBVpvk4v9VhWhd7M.jpg",
+        "order": 6
+      }
+    ],
+    "director": "Nadeem Soumah",
+    "tmdbId": 1533838,
+    "imdbId": "tt36751850",
+    "isComingSoon": false,
+    "status": "collection",
+    "originalTitle": "A Royal Christmas Hope",
+    "runtimeMinutes": 87,
+    "genres": [
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "US",
+        "releaseDate": "2025-11-23T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": ""
+      }
+    ],
+    "crew": [
+      {
+        "id": 1481000,
+        "name": "Nadeem Soumah",
+        "job": "Director",
+        "department": "Directing",
+        "creditId": "68a7f92503239f89d9c56e45"
+      },
+      {
+        "id": 551912,
+        "name": "Adam Rockoff",
+        "job": "Writer",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/s9Ab4pXryzG3CI1GnBM8HTdA3ye.jpg",
+        "creditId": "68a7f92e4d323bb1488eda8d"
+      }
+    ],
+    "trailers": [],
+    "voteAverage": 7,
+    "voteCount": 2,
+    "tmdbUpdatedAt": "2026-09-22T04:19:24.896Z"
+  },
+  {
+    "id": "uptv-2025-christmas-in-amish-country",
+    "slug": "christmas-in-amish-country",
+    "title": "Christmas in Amish Country",
+    "year": 2025,
+    "brandId": "uptv",
+    "releaseDate": "2025-11-30",
+    "synopsis": "When a rising chef’s career implodes after a harsh review, she returns to her Amish roots in rural Pennsylvania only to find healing through slow-cooking techniques and the comforts of home, including rekindling a friendship with the sweet Amish farmer she left behind.",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/bLhGncH4IuxF0pIGO1T3RnncgQd.jpg",
+    "cast": [
+      {
+        "actorId": "1836396",
+        "name": "Ella Cannon",
+        "character": "Claire",
+        "slug": "ella-cannon",
+        "tmdbPersonId": 1836396,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/jAOLgtfrLfIumapTteHHJwDJ2Nd.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "1482541",
+        "name": "Jason Tobias",
+        "character": "Jack",
+        "slug": "jason-tobias",
+        "tmdbPersonId": 1482541,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/68Aij3GKfMZig33dfXIIIIUXKKy.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "3061459",
+        "name": "Daniel Bateman",
+        "character": "Eli",
+        "slug": "daniel-bateman",
+        "tmdbPersonId": 3061459,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/9bcBGEvAWEaS0388O7fmtAnhQ87.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "2217295",
+        "name": "Jordan Block",
+        "character": "Sarah",
+        "slug": "jordan-block",
+        "tmdbPersonId": 2217295,
+        "order": 3
+      },
+      {
+        "actorId": "5670643",
+        "name": "Addison Landes",
+        "character": "Naomi",
+        "slug": "addison-landes",
+        "tmdbPersonId": 5670643,
+        "order": 4
+      },
+      {
+        "actorId": "5624103",
+        "name": "Sissy Robberts",
+        "character": "Miriam Stollman",
+        "slug": "sissy-robberts",
+        "tmdbPersonId": 5624103,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/ouPQMLIdNL8lk58BGeO1RVGALZL.jpg",
+        "order": 5
+      }
+    ],
+    "director": "Vincenzo Conrorio",
+    "tmdbId": 1541407,
+    "imdbId": "tt37540683",
+    "isComingSoon": false,
+    "status": "collection",
+    "originalTitle": "Christmas in Amish Country",
+    "runtimeMinutes": 90,
+    "genres": [
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "US",
+        "releaseDate": "2025-11-30T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": ""
+      }
+    ],
+    "crew": [
+      {
+        "id": 3372258,
+        "name": "Lori Canevaro",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "68b9bf02450c5c74fd1bb5b5"
+      },
+      {
+        "id": 4278807,
+        "name": "Vincenzo Conrorio",
+        "job": "Director",
+        "department": "Directing",
+        "creditId": "68b9bf0abdb8f736629bb65a"
+      }
+    ],
+    "trailers": [],
+    "voteAverage": 7,
+    "voteCount": 1,
+    "tmdbUpdatedAt": "2026-09-22T04:19:24.907Z"
+  },
+  {
+    "id": "uptv-2025-a-christmas-murder-mystery",
+    "slug": "a-christmas-murder-mystery",
+    "title": "A Christmas Murder Mystery",
+    "year": 2025,
+    "brandId": "uptv",
+    "releaseDate": "2025-12-07",
+    "synopsis": "Vera Vexley is the editor of the Metropolitan Ledger’s puzzle section, and a part-time consulting detective for the local sheriff’s office. This year, she has been invited to spend the holidays with family friends, the Sterlings, a wealthy family who appears to be hiding enough secrets to stuff a sleigh. Vera soon finds herself helming a murder investigation when someone is found dead on Christmas morning, putting her at odds with the quick-tempered and distraught family members. Can Vera find the culprit before the holidays turn even more deadly?",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/rotc7GM3PMdvHs1a9yQVtvDb55W.jpg",
+    "backdropUrl": "https://image.tmdb.org/t/p/w1280/ewtPu1qSYVDl5Mv5SP6Du08XQHN.jpg",
+    "cast": [
+      {
+        "actorId": "1780596",
+        "name": "Morgan Bradley",
+        "character": "Vera Vexley",
+        "slug": "morgan-bradley",
+        "tmdbPersonId": 1780596,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/kGKMBEme0mZClv7YJuy1IGezkdx.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "110909",
+        "name": "Rob Mayes",
+        "character": "Troy Sterling",
+        "slug": "rob-mayes",
+        "tmdbPersonId": 110909,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/4j4v5AYSHqtNSe427I0g7sMZhrX.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "138860",
+        "name": "Jamie Bernadette",
+        "character": "Jan",
+        "slug": "jamie-bernadette",
+        "tmdbPersonId": 138860,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/hSKDAGunkF2E4btXXEo0ELF8GqY.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "1411462",
+        "name": "Randy Jay Burrell",
+        "character": "Michael Sterling",
+        "slug": "randy-jay-burrell",
+        "tmdbPersonId": 1411462,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/cdxm6v0LpqH1KWSnO7SpZzO4nuP.jpg",
+        "order": 3
+      },
+      {
+        "actorId": "1229191",
+        "name": "Caryn Richman",
+        "character": "Ellen Sterling",
+        "slug": "caryn-richman",
+        "tmdbPersonId": 1229191,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/hSfLt7nT4Lwr4jjtDiwHv3LstN4.jpg",
+        "order": 4
+      },
+      {
+        "actorId": "98658",
+        "name": "Jason-Shane Scott",
+        "character": "Darren Caldwell",
+        "slug": "jason-shane-scott",
+        "tmdbPersonId": 98658,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/pOcUrkdJQaq3FddzcNLnID0RlDI.jpg",
+        "order": 5
+      },
+      {
+        "actorId": "6141991",
+        "name": "Melissa Falcone",
+        "character": "News Reporter",
+        "slug": "melissa-falcone",
+        "tmdbPersonId": 6141991,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/ogADrpN5tBDRJxzIkxbDNPHMkQu.jpg",
+        "order": 6
+      }
+    ],
+    "director": "Peter Sullivan",
+    "tmdbId": 1541413,
+    "imdbId": "tt37542974",
+    "isComingSoon": false,
+    "status": "collection",
+    "originalTitle": "A Christmas Murder Mystery",
+    "genres": [
+      {
+        "id": 9648,
+        "name": "Mystery"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "US",
+        "releaseDate": "2025-12-07T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": ""
+      }
+    ],
+    "crew": [
+      {
+        "id": 92591,
+        "name": "Peter Sullivan",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/hXFy4ygelHJovKvMx37EJeHwvbm.jpg",
+        "creditId": "68b9bffb10647f072c1bb7aa"
+      },
+      {
+        "id": 92591,
+        "name": "Peter Sullivan",
+        "job": "Writer",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/hXFy4ygelHJovKvMx37EJeHwvbm.jpg",
+        "creditId": "68b9c0072382a0330b9bf46d"
+      },
+      {
+        "id": 92591,
+        "name": "Peter Sullivan",
+        "job": "Story",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/hXFy4ygelHJovKvMx37EJeHwvbm.jpg",
+        "creditId": "6926f8f8c26d3846c726be41"
+      },
+      {
+        "id": 128979,
+        "name": "Jeffrey Schenck",
+        "job": "Story",
+        "department": "Writing",
+        "creditId": "6926f900293a672a5124554e"
+      }
+    ],
+    "trailers": [],
+    "voteAverage": 7,
+    "voteCount": 2,
+    "tmdbUpdatedAt": "2026-09-22T04:19:24.909Z"
+  },
+  {
+    "id": "uptv-2023-christmas-in-big-sky-country",
+    "slug": "christmas-in-big-sky-country",
+    "title": "Christmas in Big Sky Country",
+    "year": 2023,
+    "brandId": "uptv",
+    "releaseDate": "2023-11-07",
+    "synopsis": "When an incident occurs on an Alaskan oil rig, Becca Collins must work with the oil company's new PR rep, Logan Johnston, to bring her brother-in-law safely home for the holidays. Becca begins to fall for the handsome stranger, but can she trust Logan's motives?",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/2XuJAeIkU6UX4ljjc4uQq6TfskF.jpg",
+    "backdropUrl": "https://image.tmdb.org/t/p/w1280/5eQQOzsNAFMsxtEh0XCSmLR4jUh.jpg",
+    "cast": [
+      {
+        "actorId": "1355149",
+        "name": "Rebecca Dalton",
+        "character": "Becca Collins",
+        "slug": "rebecca-dalton",
+        "tmdbPersonId": 1355149,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/dTsw3WJImhlgsajfzQvkIxqyYD7.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "1799766",
+        "name": "Olivier Renaud",
+        "character": "Logan Johnston",
+        "slug": "olivier-renaud",
+        "tmdbPersonId": 1799766,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/r1PKI00FM4kovA2AQfnWhC1BU13.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "1323878",
+        "name": "Tamara Duarte",
+        "character": "",
+        "slug": "tamara-duarte",
+        "tmdbPersonId": 1323878,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/9y1zlD6ZUTIYztBk13Lhqx4tYZp.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "117431",
+        "name": "Shaun Johnston",
+        "character": "",
+        "slug": "shaun-johnston",
+        "tmdbPersonId": 117431,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/8QeE3VvD3Gin7xSkfc24iqcs716.jpg",
+        "order": 3
+      },
+      {
+        "actorId": "43263",
+        "name": "Conrad Coates",
+        "character": "",
+        "slug": "conrad-coates",
+        "tmdbPersonId": 43263,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/synctEI6SoicViRJxHupyQgs6zv.jpg",
+        "order": 4
+      },
+      {
+        "actorId": "1261371",
+        "name": "Mark Ghanimé",
+        "character": "",
+        "slug": "mark-ghanim",
+        "tmdbPersonId": 1261371,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/rdk7i7vL6MV7gvLG4J6SxN9dTcD.jpg",
+        "order": 5
+      },
+      {
+        "actorId": "2008810",
+        "name": "James Hinchcliffe",
+        "character": "",
+        "slug": "james-hinchcliffe",
+        "tmdbPersonId": 2008810,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/vDkiHA0kV7sP772YGAOsOhc3uK8.jpg",
+        "order": 6
+      },
+      {
+        "actorId": "2863703",
+        "name": "Maya Misaljevic",
+        "character": "Emma Miller",
+        "slug": "maya-misaljevic",
+        "tmdbPersonId": 2863703,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/6IwB52j0sCAq55Y2vqJA8ATJuZk.jpg",
+        "order": 7
+      }
+    ],
+    "director": "Marco Deufemia",
+    "tmdbId": 1027454,
+    "imdbId": "tt21373908",
+    "isComingSoon": false,
+    "status": "collection",
+    "originalTitle": "Christmas in Big Sky Country",
+    "runtimeMinutes": 85,
+    "genres": [
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      },
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 18,
+        "name": "Drama"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "CA",
+        "releaseDate": "2024-11-01T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "Super Channel"
+      },
+      {
+        "country": "US",
+        "releaseDate": "2023-11-07T00:00:00.000Z",
+        "type": 6,
+        "certification": "NR",
+        "note": "FOX"
+      }
+    ],
+    "crew": [
+      {
+        "id": 1911937,
+        "name": "Marco Deufemia",
+        "job": "Director",
+        "department": "Directing",
+        "creditId": "632d0896fcec2e0084eedc8a"
+      }
+    ],
+    "trailers": [],
+    "voteAverage": 5.9,
+    "voteCount": 7,
+    "tmdbUpdatedAt": "2026-09-22T04:19:24.910Z"
+  },
+  {
+    "id": "uptv-2023-the-best-thing-about-christmas",
+    "slug": "the-best-thing-about-christmas",
+    "title": "The Best Thing About Christmas",
+    "year": 2023,
+    "brandId": "uptv",
+    "releaseDate": "2023-12-25",
+    "synopsis": "Struggling singer-songwriter, Dylan, thinks he’s finally made it when he and his band, Rivers Deep, sign a contract with a big-time Nashville Record Label and he moves his family to Music City.  But, when his talented teenage daughter, Molly, is killed in an accident on Christmas Eve, Dylan’s world comes crashing down. Seeing her dad self-destructing and on the verge of losing everything, Molly, now an angel, intervenes in Dylan’s life, eventually, helping him create a Christmas miracle no one will ever forget.",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/7eDJjAXtIxuVi6TkdLntUaV34AW.jpg",
+    "cast": [
+      {
+        "actorId": "2798669",
+        "name": "Megan Alexander",
+        "character": "Kara Hunt",
+        "slug": "megan-alexander",
+        "tmdbPersonId": 2798669,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/x3iv3O5Qh6hWn3J4liKjlCabr3d.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "2300628",
+        "name": "Micah Lynn Hanson",
+        "character": "Jenna",
+        "slug": "micah-lynn-hanson",
+        "tmdbPersonId": 2300628,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/8c9EOM6SlHSlUWO2YIdNRz7K7of.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "5619857",
+        "name": "Evelyn Grace Kite",
+        "character": "Sadie Hunt",
+        "slug": "evelyn-grace-kite",
+        "tmdbPersonId": 5619857,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/9TnMZzs7AerLP9sCnYbxsXV7Js6.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "57805",
+        "name": "Mark Wills",
+        "character": "Self",
+        "slug": "mark-wills",
+        "tmdbPersonId": 57805,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/7vmYLrTgtmupgpzAB1ui5jXujJN.jpg",
+        "order": 3
+      },
+      {
+        "actorId": "1724503",
+        "name": "Rhonda Vincent",
+        "character": "Mrs. Neely",
+        "slug": "rhonda-vincent",
+        "tmdbPersonId": 1724503,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/pxg9Ptm11BGwKqEUzCFeNKJ5II3.jpg",
+        "order": 4
+      },
+      {
+        "actorId": "5630376",
+        "name": "Juliana Danielle Ferreira",
+        "character": "Mary (as Juliana Ferreira)",
+        "slug": "juliana-danielle-ferreira",
+        "tmdbPersonId": 5630376,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/2YgrwKx8RUg7UlIRS6UbXnd0Icn.jpg",
+        "order": 5
+      },
+      {
+        "actorId": "557576",
+        "name": "Siaka Massaquoi",
+        "character": "Steven",
+        "slug": "siaka-massaquoi",
+        "tmdbPersonId": 557576,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/vo2o1Qf76G2zGuEtIcppJyPWnSC.jpg",
+        "order": 6
+      },
+      {
+        "actorId": "6384866",
+        "name": "Cheyenne Grace",
+        "character": "Molly",
+        "slug": "cheyenne-grace",
+        "tmdbPersonId": 6384866,
+        "order": 7
+      },
+      {
+        "actorId": "6384870",
+        "name": "Samuel Waugh",
+        "character": "Zane (as Sam Waugh)",
+        "slug": "samuel-waugh",
+        "tmdbPersonId": 6384870,
+        "order": 8
+      },
+      {
+        "actorId": "5218913",
+        "name": "James D. Johnson",
+        "character": "Christopher",
+        "slug": "james-d-johnson",
+        "tmdbPersonId": 5218913,
+        "order": 9
+      },
+      {
+        "actorId": "2531321",
+        "name": "Alan Peterson",
+        "character": "Pastor John",
+        "slug": "alan-peterson",
+        "tmdbPersonId": 2531321,
+        "order": 10
+      },
+      {
+        "actorId": "6384876",
+        "name": "Nick Letlow",
+        "character": "Tommy",
+        "slug": "nick-letlow",
+        "tmdbPersonId": 6384876,
+        "order": 11
+      },
+      {
+        "actorId": "6384878",
+        "name": "Graham L. Sexton",
+        "character": "Zeke Hunt (as Graham Sexton)",
+        "slug": "graham-l-sexton",
+        "tmdbPersonId": 6384878,
+        "order": 12
+      }
+    ],
+    "director": "Alan Peterson",
+    "tmdbId": 1528552,
+    "imdbId": "tt36778421",
+    "isComingSoon": false,
+    "status": "collection",
+    "originalTitle": "The Best Thing About Christmas",
+    "runtimeMinutes": 101,
+    "genres": [
+      {
+        "id": 10402,
+        "name": "Music"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "US",
+        "releaseDate": "2023-12-25T00:00:00.000Z",
+        "type": 3,
+        "certification": "",
+        "note": ""
+      }
+    ],
+    "crew": [
+      {
+        "id": 5619868,
+        "name": "Derek Hinckley",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "689a1ea64848151129b70368"
+      },
+      {
+        "id": 5619876,
+        "name": "Alan Peterson",
+        "job": "Director",
+        "department": "Directing",
+        "creditId": "689a1ee8fe728cb8626d7164"
+      }
+    ],
+    "trailers": [],
+    "voteAverage": 6,
+    "voteCount": 1,
+    "tmdbUpdatedAt": "2026-09-22T04:19:24.921Z"
+  },
+  {
+    "id": "uptv-2023-christmas-with-the-knightlys",
+    "slug": "christmas-with-the-knightlys",
+    "title": "Christmas with the Knightlys",
+    "year": 2023,
+    "brandId": "uptv",
+    "releaseDate": "2023-11-07",
+    "synopsis": "Following a breakup, schoolteacher Georgia Jackson finds herself in a fake relationship with wealthy playboy Chase Knight a week before Christmas. As they spend time together to outwit the paparazzi, Chase seems to find Georgia’s simpler life and traditions more appealing than his bachelor ways. Is it all a romantic ruse, or are Chase and Georgia really falling in love?",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/8u4d9zH4yJ9u7FPP4XKfggKeY7J.jpg",
+    "backdropUrl": "https://image.tmdb.org/t/p/w1280/dPJGKInVBuGa7TRBkVRFL7Ri22g.jpg",
+    "cast": [
+      {
+        "actorId": "1817018",
+        "name": "Celeste Desjardins",
+        "character": "Georgia Jackson",
+        "slug": "celeste-desjardins",
+        "tmdbPersonId": 1817018,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/hSu1hRAEwAVPDBEOKofo23IqkbC.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "1557986",
+        "name": "Joey Scarpellino",
+        "character": "Chase Knightly",
+        "slug": "joey-scarpellino",
+        "tmdbPersonId": 1557986,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/w9SVj62OAXBpKHU7eQUStgRyYV1.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "1411181",
+        "name": "Brian Cook",
+        "character": "Brayden",
+        "slug": "brian-cook",
+        "tmdbPersonId": 1411181,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/xEjnWP7di5cOaKRwxw8ErDiv9r1.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "1656972",
+        "name": "Kym Johnson",
+        "character": "Evie Knightly",
+        "slug": "kym-johnson",
+        "tmdbPersonId": 1656972,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/jtcQsS6QMpf6c2OOn9zOuGbBchE.jpg",
+        "order": 3
+      },
+      {
+        "actorId": "1848595",
+        "name": "Randy Thomas",
+        "character": "Barrington Knightly",
+        "slug": "randy-thomas",
+        "tmdbPersonId": 1848595,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/wpHQA1Kcge3YrM8nEVTLeDrnSTE.jpg",
+        "order": 4
+      },
+      {
+        "actorId": "1324591",
+        "name": "Lily Gao",
+        "character": "Nikki",
+        "slug": "lily-gao",
+        "tmdbPersonId": 1324591,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/qCNsTSz3g70M9PNaNxWw5uRepQy.jpg",
+        "order": 5
+      },
+      {
+        "actorId": "1226195",
+        "name": "Rob Stewart",
+        "character": "Mr.Fortune",
+        "slug": "rob-stewart",
+        "tmdbPersonId": 1226195,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/trovYCjXppTKZjvVznYKTaLf0Q.jpg",
+        "order": 6
+      },
+      {
+        "actorId": "2442234",
+        "name": "Carina Battrick",
+        "character": "Zoe",
+        "slug": "carina-battrick",
+        "tmdbPersonId": 2442234,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/pVpmyGnkTCUuUNMRbHpdqOpSZK6.jpg",
+        "order": 7
+      },
+      {
+        "actorId": "1357223",
+        "name": "Mike Shara",
+        "character": "David Jackson",
+        "slug": "mike-shara",
+        "tmdbPersonId": 1357223,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/tZAGNwrfP1sRGvoYZtaVNvIIXtP.jpg",
+        "order": 8
+      },
+      {
+        "actorId": "2364548",
+        "name": "Jennifer Foster",
+        "character": "Sandy Jackson",
+        "slug": "jennifer-foster",
+        "tmdbPersonId": 2364548,
+        "order": 9
+      },
+      {
+        "actorId": "201049",
+        "name": "Roy Lewis",
+        "character": "Randall",
+        "slug": "roy-lewis",
+        "tmdbPersonId": 201049,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/5QOGzehKi2sk7JhovyybyqPIfo9.jpg",
+        "order": 10
+      },
+      {
+        "actorId": "1216712",
+        "name": "Lara Amersey",
+        "character": "Brooke",
+        "slug": "lara-amersey",
+        "tmdbPersonId": 1216712,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/mxEERu6yIqLSmsGijxn80Vu8sTM.jpg",
+        "order": 11
+      },
+      {
+        "actorId": "2950873",
+        "name": "Andrew MacKay",
+        "character": "Coach Brown",
+        "slug": "andrew-mackay",
+        "tmdbPersonId": 2950873,
+        "order": 12
+      },
+      {
+        "actorId": "3750139",
+        "name": "Sean Cage",
+        "character": "Andrew",
+        "slug": "sean-cage",
+        "tmdbPersonId": 3750139,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/2i6ifChdsjmpYywqk6yZbQzSnz9.jpg",
+        "order": 13
+      },
+      {
+        "actorId": "2510890",
+        "name": "Samantha Helt",
+        "character": "Megan",
+        "slug": "samantha-helt",
+        "tmdbPersonId": 2510890,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/c3fWWqKtbGbvg7WMbArXREY3fcW.jpg",
+        "order": 14
+      },
+      {
+        "actorId": "2310132",
+        "name": "Will Ennis",
+        "character": "Driver",
+        "slug": "will-ennis",
+        "tmdbPersonId": 2310132,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/5v9E25bGveP263c8fw32ngDh0X1.jpg",
+        "order": 15
+      }
+    ],
+    "director": "Marco Deufemia",
+    "tmdbId": 1195469,
+    "imdbId": "tt27373349",
+    "isComingSoon": false,
+    "status": "collection",
+    "originalTitle": "Christmas with the Knightlys",
+    "runtimeMinutes": 85,
+    "genres": [
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "US",
+        "releaseDate": "2023-11-07T00:00:00.000Z",
+        "type": 5,
+        "certification": "NR",
+        "note": ""
+      }
+    ],
+    "crew": [
+      {
+        "id": 1911937,
+        "name": "Marco Deufemia",
+        "job": "Director",
+        "department": "Directing",
+        "creditId": "67915165ba46990f54e00915"
+      },
+      {
+        "id": 1644649,
+        "name": "Nastasha Baron",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "6791519d3479c48ccb28d9db"
+      }
+    ],
+    "trailers": [],
+    "voteAverage": 7.85,
+    "voteCount": 10,
+    "tmdbUpdatedAt": "2026-09-22T04:19:24.919Z"
   }
 ];
 
