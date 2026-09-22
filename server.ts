@@ -40,6 +40,7 @@ import { getCanonicalRedirect, getRobotsTxt, renderServerHtml } from './src/serv
 import { ensureFeedStatisticsStorage, getActorFeedDefinition, getFeedStatistics, getMetadataFeedDefinition, getYearFeedDefinition } from './src/server/feed-statistics';
 import { trackSuccessfulFeedResponse } from './src/server/feed-route';
 import { isTrustedProxyAddress, PublicFeedRateLimiter } from './src/server/feed-rate-limit';
+import { notifyFlarumMovieAdded } from './src/server/flarum';
 
 function isKnownPagePath(rawPath: string): boolean {
   const clean = rawPath.replace(/^\/+|\/+$/g, '');
@@ -535,6 +536,7 @@ async function startServer() {
       const movies = [...github.movies, ...fetched];
       if (new Set(movies.map((movie) => movie.tmdbId)).size !== movies.length) throw new Error('The proposed catalogue contains duplicate TMDB IDs.');
       const commit = await commitMoviesToGitHub(movies, baseSha, fetched.length === 1 ? `Add Christmas movie: ${fetched[0].title}` : `Add ${fetched.length} Christmas movies`);
+      for (const movie of fetched) void notifyFlarumMovieAdded(movie);
       return res.json({ added: fetched.length, commitSha: commit.commitSha, message: 'Added to catalogue. Deployment pending.' });
     } catch (error) {
       console.error(`[Admin Movies Commit] ${error instanceof Error ? error.message : 'request failed'}`);

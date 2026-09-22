@@ -30,6 +30,7 @@ Set the values in `.env` as needed:
 
 - `APP_URL` — the public site URL.
 - `TMDB_API_KEY` — required by the TMDB refresh and catalogue scripts.
+- `FLARUM_API_TOKEN` — optional server-only Flarum API token for automatic movie announcements in the XmasDB community.
 
 Start the local server with:
 
