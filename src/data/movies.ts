@@ -202145,6 +202145,292 @@ export const MOVIES: Movie[] = [
     "voteAverage": 0,
     "voteCount": 0,
     "tmdbUpdatedAt": "2026-09-22T04:09:35.726Z"
+  },
+  {
+    "id": "uptv-2026-christmas-en-pointe",
+    "slug": "christmas-en-pointe",
+    "title": "Christmas En Pointe",
+    "year": 2026,
+    "brandId": "uptv",
+    "releaseDate": "2026-09-22",
+    "synopsis": "Years after breaking off their engagement, a small-town dance teacher and an ambitious senator returning home for Christmas are thrown back together to save her struggling studio, rekindling the love they once lost.",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/sgLWEkXBp9oLvdTUlNklrSySfOE.jpg",
+    "cast": [
+      {
+        "actorId": "1569519",
+        "name": "Lexie Contursi",
+        "character": "Clarissa",
+        "slug": "lexie-contursi",
+        "tmdbPersonId": 1569519,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/gGUMFXbkkOicpueLOCVecbrxJU8.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "1751311",
+        "name": "Jonathan Stoddard",
+        "character": "Zach Wentworth",
+        "slug": "jonathan-stoddard",
+        "tmdbPersonId": 1751311,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/ct64PRjZpTFphgdlezQ7c2lMIrC.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "2792949",
+        "name": "Ashley BeLoat",
+        "character": "Louisa",
+        "slug": "ashley-beloat",
+        "tmdbPersonId": 2792949,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/egggDMvXbrPCiTLhcnUWp3MDjhu.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "1502543",
+        "name": "James Choi",
+        "character": "Bill",
+        "slug": "james-choi",
+        "tmdbPersonId": 1502543,
+        "order": 3
+      },
+      {
+        "actorId": "3628746",
+        "name": "Janet Decker",
+        "character": "Grace",
+        "slug": "janet-decker",
+        "tmdbPersonId": 3628746,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/3u3NjheTUGjGPy24oAePcvSo5qG.jpg",
+        "order": 4
+      },
+      {
+        "actorId": "3268910",
+        "name": "Liza Giovagnoli",
+        "character": "Audry",
+        "slug": "liza-giovagnoli",
+        "tmdbPersonId": 3268910,
+        "order": 5
+      },
+      {
+        "actorId": "6225645",
+        "name": "Anmarie Gorman",
+        "character": "Congratulations Party Attendee",
+        "slug": "anmarie-gorman",
+        "tmdbPersonId": 6225645,
+        "order": 6
+      },
+      {
+        "actorId": "5617553",
+        "name": "Ava McKay",
+        "character": "Skylar",
+        "slug": "ava-mckay",
+        "tmdbPersonId": 5617553,
+        "order": 7
+      },
+      {
+        "actorId": "3934388",
+        "name": "Monaye Moyes",
+        "character": "Mary",
+        "slug": "monaye-moyes",
+        "tmdbPersonId": 3934388,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/3quDFEIsVH0RldD7EwIby9eNgo9.jpg",
+        "order": 8
+      },
+      {
+        "actorId": "216205",
+        "name": "Tim Perez-Ross",
+        "character": "Robert",
+        "slug": "tim-perez-ross",
+        "tmdbPersonId": 216205,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/263ai73MPUUY07YJfjPmQ2edR8i.jpg",
+        "order": 9
+      }
+    ],
+    "director": "Lexi Giovagnoli",
+    "tmdbId": 1698629,
+    "imdbId": "tt40203915",
+    "isComingSoon": true,
+    "status": "coming-soon",
+    "originalTitle": "Christmas En Pointe",
+    "genres": [
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "releaseDates": [],
+    "crew": [
+      {
+        "id": 1085816,
+        "name": "Lexi Giovagnoli",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/uYKpg1QMgk1A2UOor2i1bdJwIYo.jpg",
+        "creditId": "6a0cb4d939a7bef654832e66"
+      },
+      {
+        "id": 1213934,
+        "name": "Elizabeth Snyder",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "6a0cb4ea1eed2443ca069a77"
+      }
+    ],
+    "trailers": [
+      {
+        "key": "o9dyk5v_ybQ",
+        "site": "YouTube",
+        "type": "Trailer",
+        "name": "Christmas En Pointe | Nicely Entertainment | Trailer",
+        "official": true
+      }
+    ],
+    "trailerYoutubeKey": "o9dyk5v_ybQ",
+    "voteAverage": 0,
+    "voteCount": 0,
+    "tmdbUpdatedAt": "2026-09-22T04:14:11.538Z"
+  },
+  {
+    "id": "uptv-2025-christmas-in-the-ballroom",
+    "slug": "christmas-in-the-ballroom",
+    "title": "Christmas in the Ballroom",
+    "year": 2025,
+    "brandId": "uptv",
+    "releaseDate": "2025-11-01",
+    "synopsis": "When Bella Fox’s dramatic exit from a hit dance competition show goes viral, her best friend Hannah whisks her away from the chaos to a cozy community ballroom studio in upstate New York. Bella expects peace and quiet—but instead finds herself intrigued by Will, the charming, down-to-earth property manager who’s secretly a gifted (if untrained) dancer. With a holiday showcase fast approaching, Bella and Will step into rehearsals and begin to rediscover their love for dance, life, and maybe each other. As Bella adjusts to life off-camera and faces a crossroads about her future, she learns that sometimes the right partner makes all the difference.",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/qil22HmqdcomBqvxRRcd87BTwM8.jpg",
+    "backdropUrl": "https://image.tmdb.org/t/p/w1280/gJuks5iBlUJP16mOV9yozqcLc3m.jpg",
+    "cast": [
+      {
+        "actorId": "1656972",
+        "name": "Kym Johnson",
+        "character": "Bella Fox",
+        "slug": "kym-johnson",
+        "tmdbPersonId": 1656972,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/jtcQsS6QMpf6c2OOn9zOuGbBchE.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "58723",
+        "name": "Gilles Marini",
+        "character": "Will Jones",
+        "slug": "gilles-marini",
+        "tmdbPersonId": 58723,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/sbe1rtvd0DhLy2MW3FT6SvMsPTe.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "1215451",
+        "name": "Carson Kressley",
+        "character": "Simon Leman",
+        "slug": "carson-kressley",
+        "tmdbPersonId": 1215451,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/dC1DQR0b9yFUSSs8i6BDAmf0Su1.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "4579943",
+        "name": "Trent Whiddon",
+        "character": "Ben Sparks",
+        "slug": "trent-whiddon",
+        "tmdbPersonId": 4579943,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/iqC0aCUiSRhesKq3i0lO6VWERZD.jpg",
+        "order": 3
+      },
+      {
+        "actorId": "4388216",
+        "name": "Tatiana Ashton",
+        "character": "Antonia Baker",
+        "slug": "tatiana-ashton",
+        "tmdbPersonId": 4388216,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/k5J4WXdlP81x90o2sr11uK9tnrw.jpg",
+        "order": 4
+      },
+      {
+        "actorId": "3774082",
+        "name": "Zaahira Joseph",
+        "character": "Daria",
+        "slug": "zaahira-joseph",
+        "tmdbPersonId": 3774082,
+        "order": 5
+      },
+      {
+        "actorId": "2878006",
+        "name": "Vienna Brandstatter",
+        "character": "Maureen",
+        "slug": "vienna-brandstatter",
+        "tmdbPersonId": 2878006,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/uVsHAXq3TDMsp38osksHfdcQt7u.jpg",
+        "order": 6
+      },
+      {
+        "actorId": "5819162",
+        "name": "Ethan Keyes",
+        "character": "Marcus",
+        "slug": "ethan-keyes",
+        "tmdbPersonId": 5819162,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/hcxDsdDRnvXIQsdOvyJjiXXsxDh.jpg",
+        "order": 7
+      },
+      {
+        "actorId": "1650568",
+        "name": "Sarah Higgins",
+        "character": "Hannah Kyle",
+        "slug": "sarah-higgins",
+        "tmdbPersonId": 1650568,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/f0tVDV62lZ56CmbfUqkxUvj28Fx.jpg",
+        "order": 8
+      }
+    ],
+    "director": "Marco Deufemia",
+    "tmdbId": 1549507,
+    "imdbId": "tt37991625",
+    "isComingSoon": true,
+    "status": "coming-soon",
+    "originalTitle": "Christmas in the Ballroom",
+    "runtimeMinutes": 84,
+    "genres": [
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "US",
+        "releaseDate": "2025-11-01T00:00:00.000Z",
+        "type": 4,
+        "certification": "",
+        "note": ""
+      }
+    ],
+    "crew": [
+      {
+        "id": 1911937,
+        "name": "Marco Deufemia",
+        "job": "Director",
+        "department": "Directing",
+        "creditId": "68cef93314789c92b3d413b5"
+      },
+      {
+        "id": 2481591,
+        "name": "Paula Tiberius",
+        "job": "Writer",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/8wLE6K5PsjETr9a98qpLGi11iLR.jpg",
+        "creditId": "68cef9419cd23d1be7cc30a8"
+      }
+    ],
+    "trailers": [
+      {
+        "key": "quINYRZftNo",
+        "site": "YouTube",
+        "type": "Trailer",
+        "name": "Trailer",
+        "official": true
+      }
+    ],
+    "trailerYoutubeKey": "quINYRZftNo",
+    "voteAverage": 7.5,
+    "voteCount": 2,
+    "tmdbUpdatedAt": "2026-09-22T04:14:11.539Z"
   }
 ];
 
