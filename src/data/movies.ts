@@ -203890,6 +203890,55 @@ export const MOVIES: Movie[] = [
     "voteAverage": 7.85,
     "voteCount": 10,
     "tmdbUpdatedAt": "2026-09-22T04:19:24.919Z"
+  },
+  {
+    "id": "gaf-2026-christmas-at-the-starlight",
+    "slug": "christmas-at-the-starlight",
+    "title": "Christmas at The Starlight",
+    "year": 2026,
+    "brandId": "gaf",
+    "releaseDate": "2026-09-22",
+    "synopsis": "Set in a close-knit American town, Christmas at The Starlight centers on The Starlight, a beloved local supper club and longtime community gathering place where generations have come together to celebrate music, family, and Christmas traditions. Frank (Tony Danza)—a legendary song-and-dance man—prepares to sell the family’s beloved restaurant lounge after 40 years. With the future of The Starlight in question, three generations of family are drawn into an emotional journey that reminds them what is worth preserving — and how faith, family, and home can quietly lead us back to where we belong.",
+    "posterUrl": "",
+    "cast": [
+      {
+        "actorId": "19185",
+        "name": "Mario López",
+        "character": "",
+        "slug": "mario-l-pez",
+        "tmdbPersonId": 19185,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/b9bGymfTx7Zgv26fp44mHnlPnZT.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "18298",
+        "name": "Tony Danza",
+        "character": "",
+        "slug": "tony-danza",
+        "tmdbPersonId": 18298,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/qoUp1mtEFvrWHG3kEM35coysf5y.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "5717140",
+        "name": "Dominic Lopez",
+        "character": "",
+        "slug": "dominic-lopez",
+        "tmdbPersonId": 5717140,
+        "order": 2
+      }
+    ],
+    "tmdbId": 1684294,
+    "isComingSoon": true,
+    "status": "coming-soon",
+    "originalTitle": "Christmas at The Starlight",
+    "genres": [],
+    "releaseDates": [],
+    "crew": [],
+    "trailers": [],
+    "voteAverage": 0,
+    "voteCount": 0,
+    "tmdbUpdatedAt": "2026-09-22T04:25:28.062Z"
   }
 ];
 
