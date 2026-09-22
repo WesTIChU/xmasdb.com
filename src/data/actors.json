@@ -38424,6 +38424,21 @@
     "tmdbUpdatedAt": "2026-09-20T16:21:11.070Z"
   },
   {
+    "id": "29871",
+    "slug": "jacinta-mulcahy",
+    "name": "Jacinta Mulcahy",
+    "tmdbPersonId": 29871,
+    "photoUrl": "/images/people/29871.webp",
+    "profileUrl": "/images/people/29871.webp",
+    "birthday": "1982-01-01",
+    "placeOfBirth": "Irlanda",
+    "imdbPersonId": "nm0611672",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 15,
+    "tmdbUpdatedAt": "2026-09-22T15:54:09.386Z"
+  },
+  {
     "id": "jack-berger",
     "slug": "jack-berger",
     "name": "Jack Berger",
@@ -39936,6 +39951,19 @@
     "tmdbUpdatedAt": "2026-09-20T16:17:18.633Z"
   },
   {
+    "id": "1694986",
+    "slug": "james-rottger",
+    "name": "James Rottger",
+    "tmdbPersonId": 1694986,
+    "photoUrl": "/images/people/1694986.webp",
+    "profileUrl": "/images/people/1694986.webp",
+    "imdbPersonId": "nm5323589",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 9,
+    "tmdbUpdatedAt": "2026-09-22T15:54:10.494Z"
+  },
+  {
     "id": "4621744",
     "slug": "james-s-mcknight",
     "name": "James S. McKnight",
@@ -40552,6 +40580,29 @@
     "knownForDepartment": "Acting",
     "knownCredits": 63,
     "tmdbUpdatedAt": "2026-09-20T16:17:56.612Z"
+  },
+  {
+    "id": "62079",
+    "slug": "janeen-damian",
+    "name": "Janeen Damian",
+    "tmdbPersonId": 62079,
+    "photoUrl": "/images/people/62079.webp",
+    "profileUrl": "/images/people/62079.webp",
+    "birthday": "1961-07-17",
+    "placeOfBirth": "Los Angeles, California, USA",
+    "biography": "Janeen Damian was born in Los Angeles, California, USA. She is a producer and writer, known for The Wrong Paris (2025), Irish Wish (2024) and Falling for Christmas (2022).",
+    "imdbPersonId": "nm0078943",
+    "gender": "Female",
+    "knownForDepartment": "Writing",
+    "knownCredits": 23,
+    "alsoKnownAs": [
+      "Janeen Best",
+      "Janeen Beat",
+      "Janeen Best II"
+    ],
+    "instagramId": "janeendamian",
+    "twitterId": "JaneenDamian",
+    "tmdbUpdatedAt": "2026-09-22T15:54:14.690Z"
   },
   {
     "id": "janel-parrish",
@@ -44469,7 +44520,7 @@
     "alsoKnownAs": [
       "James Townsend"
     ],
-    "tmdbUpdatedAt": "2026-09-20T16:18:56.607Z"
+    "tmdbUpdatedAt": "2026-09-22T15:54:11.401Z"
   },
   {
     "id": "jimmy-wayne",
@@ -71774,6 +71825,19 @@
     "tmdbUpdatedAt": "2026-09-20T16:17:55.042Z"
   },
   {
+    "id": "1320851",
+    "slug": "olivier-raynal",
+    "name": "Olivier Raynal",
+    "tmdbPersonId": 1320851,
+    "photoUrl": "/images/people/1320851.webp",
+    "profileUrl": "/images/people/1320851.webp",
+    "imdbPersonId": "nm1176415",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 9,
+    "tmdbUpdatedAt": "2026-09-22T15:54:13.560Z"
+  },
+  {
     "id": "olivier-renaud",
     "slug": "olivier-renaud",
     "name": "Olivier Renaud",
@@ -79988,6 +80052,22 @@
     "knownForDepartment": "Acting",
     "knownCredits": 1,
     "tmdbUpdatedAt": "2026-09-20T16:20:30.955Z"
+  },
+  {
+    "id": "3111538",
+    "slug": "sakura-sykes",
+    "name": "Sakura Sykes",
+    "tmdbPersonId": 3111538,
+    "photoUrl": "/images/people/3111538.webp",
+    "profileUrl": "/images/people/3111538.webp",
+    "imdbPersonId": "nm12626490",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 9,
+    "alsoKnownAs": [
+      "Emma Colling"
+    ],
+    "tmdbUpdatedAt": "2026-09-22T15:54:12.472Z"
   },
   {
     "id": "6123833",
