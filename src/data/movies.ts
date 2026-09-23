@@ -206243,6 +206243,92 @@ export const MOVIES: Movie[] = [
     "voteAverage": 6.667,
     "voteCount": 6,
     "tmdbUpdatedAt": "2026-09-23T16:42:22.598Z"
+  },
+  {
+    "id": "gaf-2026-an-ozark-mountain-christmas",
+    "slug": "an-ozark-mountain-christmas",
+    "title": "An Ozark Mountain Christmas",
+    "year": 2026,
+    "brandId": "gaf",
+    "releaseDate": "2026-11-08",
+    "synopsis": "​In An Ozark Mountain Christmas, when a dedicated young designer (Cohen) at a crossroads reluctantly follows her sister home to the nostalgic heart of the Ozarks for Christmas, she finds herself rediscovering not only her family’s legacy for commitment to craft, but also the quiet faith and purpose she has lost in the rush of modern life. With the help of Paul (Stoddard), Clara will reconnect with work rooted in care and community.",
+    "posterUrl": "",
+    "cast": [
+      {
+        "actorId": "1751311",
+        "name": "Jonathan Stoddard",
+        "character": "Paul",
+        "slug": "jonathan-stoddard",
+        "tmdbPersonId": 1751311,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/ct64PRjZpTFphgdlezQ7c2lMIrC.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "3729076",
+        "name": "Brianna Cohen",
+        "character": "Clara",
+        "slug": "brianna-cohen",
+        "tmdbPersonId": 3729076,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/w3lhUQGeeamDG0ncS0r1BzIFPtR.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "2834200",
+        "name": "Joey Heyworth",
+        "character": "Oliver",
+        "slug": "joey-heyworth",
+        "tmdbPersonId": 2834200,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/wzGEbNaQ6cVovdJuqqhkszcfZDa.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "1930891",
+        "name": "Julia Reilly",
+        "character": "Meg",
+        "slug": "julia-reilly",
+        "tmdbPersonId": 1930891,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/w93nJskkwVQsfsrd85aGe3HRTdN.jpg",
+        "order": 3
+      },
+      {
+        "actorId": "126487",
+        "name": "Shelley Waggener",
+        "character": "Deborah Walker",
+        "slug": "shelley-waggener",
+        "tmdbPersonId": 126487,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/9GiYzgh1YwwjLbycwuvHYf8FaRB.jpg",
+        "order": 4
+      }
+    ],
+    "director": "Vincenzo Conrorio",
+    "tmdbId": 1776532,
+    "imdbId": "tt39295565",
+    "isComingSoon": true,
+    "status": "coming-soon",
+    "originalTitle": "An Ozark Mountain Christmas",
+    "genres": [],
+    "releaseDates": [
+      {
+        "country": "US",
+        "releaseDate": "2026-11-08T00:00:00.000Z",
+        "type": 4,
+        "certification": "",
+        "note": ""
+      }
+    ],
+    "crew": [
+      {
+        "id": 4278807,
+        "name": "Vincenzo Conrorio",
+        "job": "Director",
+        "department": "Directing",
+        "creditId": "6ab2a966ffe6b8bf69711ed7"
+      }
+    ],
+    "trailers": [],
+    "voteAverage": 0,
+    "voteCount": 0,
+    "tmdbUpdatedAt": "2026-09-23T16:46:37.120Z"
   }
 ];
 

@@ -91220,6 +91220,21 @@
     "tmdbUpdatedAt": "2026-09-20T16:17:23.731Z"
   },
   {
+    "id": "126487",
+    "slug": "shelley-waggener",
+    "name": "Shelley Waggener",
+    "tmdbPersonId": 126487,
+    "photoUrl": "/images/people/126487.webp",
+    "profileUrl": "/images/people/126487.webp",
+    "birthday": "1964-09-30",
+    "placeOfBirth": "St. Joseph - Missouri - USA",
+    "imdbPersonId": "nm3388331",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 3,
+    "tmdbUpdatedAt": "2026-09-23T16:46:37.397Z"
+  },
+  {
     "id": "shelly-townsend",
     "slug": "shelly-townsend",
     "name": "Shelly Townsend",
