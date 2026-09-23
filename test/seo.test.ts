@@ -40,7 +40,10 @@ assert.match(buildMovieSeo(movie).title, new RegExp(movie.title.replace(/[.*+?^$
 assert.match(buildActorSeo(actor, actorDetail?.filmography || []).title, new RegExp(actor.name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')));
 assert.match(buildBrandSeo(getBrandBySlug('hallmark')!, 2025).title, /Hallmark/);
 assert.match(buildYearSeo(2025).title, /2025/);
-assert.match(buildFeedsSeo().title, /StevenLu/);
+assert.equal(buildFeedsSeo().title, 'Christmas Movie Feeds for Radarr | XmasDB');
+assert.match(buildFeedsSeo().description, /Christmas movie JSON feeds for Radarr/);
+assert.ok(Array.isArray(buildFeedsSeo().schema));
+assert.match(JSON.stringify(buildFeedsSeo().schema), /Does this work with NZBGet or SABnzbd\?/);
 
 // A route starts with an intentionally empty payload while its request is in
 // flight. Listing consumers must reject that state rather than reading fields

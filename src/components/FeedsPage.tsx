@@ -331,17 +331,17 @@ export const FeedsPage: React.FC<{ meta: FeedsMetaPayload }> = ({ meta }) => {
     <div id="feeds-page" className="mx-auto max-w-5xl px-0 py-6 text-left sm:py-8">
       <header className="pb-5 sm:pb-6">
         <div className="text-center">
-          <h1 className="font-heading text-2xl font-semibold tracking-[0.015em] text-[#1A3D2F] sm:text-3xl">JSON FEEDS</h1>
+          <h1 className="font-heading text-2xl font-semibold tracking-[0.015em] text-[#1A3D2F] sm:text-3xl">CHRISTMAS MOVIE FEEDS FOR RADARR</h1>
           <p className="mt-2 font-body text-base text-[#1A3D2F]">Direct JSON feeds for Radarr and other tools.</p>
           <p className="mx-auto mt-1 max-w-xl font-body text-sm leading-relaxed text-[#59524A]">
-            Add XmasDB Christmas movie collections directly to Radarr. Choose a collection below and copy its feed URL.
+            Curated Christmas movie JSON feeds for Radarr, including Hallmark, Lifetime, Great American Family and UPtv. Choose a collection below and copy its feed URL.
           </p>
           <HollyDivider className="my-5 sm:my-6" lineClassName="w-6 sm:w-8" ornamentClassName="h-4 w-12 sm:h-5 sm:w-14" />
         </div>
       </header>
 
       <section id="feeds-setup" className="scroll-mt-6 pt-1 sm:scroll-mt-8" aria-labelledby="radarr-setup-heading">
-        <MajorSectionHeading id="radarr-setup-heading">HOW TO ADD TO RADARR</MajorSectionHeading>
+        <MajorSectionHeading id="radarr-setup-heading">HOW TO ADD A FEED TO RADARR</MajorSectionHeading>
         <div className="mt-5 grid gap-5 sm:grid-cols-3 sm:gap-0">
           <div className="sm:border-r sm:border-[#E7DFD5] sm:pr-5">
             <div className="flex items-center gap-2">
@@ -369,7 +369,7 @@ export const FeedsPage: React.FC<{ meta: FeedsMetaPayload }> = ({ meta }) => {
       </section>
 
       <section id="feeds-collections" className="mt-10 scroll-mt-6 sm:mt-12 sm:scroll-mt-8" aria-labelledby="collections-heading">
-        <MajorSectionHeading id="collections-heading">CHOOSE A COLLECTION</MajorSectionHeading>
+        <MajorSectionHeading id="collections-heading">CHRISTMAS MOVIE JSON FEEDS</MajorSectionHeading>
         <div className="relative mt-5 rounded-md border border-[#DCD3C7] bg-[#FFFDF9] shadow-[0_8px_24px_rgba(26,61,47,0.04)]">
           <div className={`hidden gap-4 rounded-t-md bg-[#1A3D2F] px-5 py-3 text-center font-sans-clean text-[11px] font-semibold uppercase tracking-[0.12em] text-[#DCCB9C] ${feedGridColumns} md:grid`}>
             <span className="block min-w-0 w-full text-center">Collection</span>
@@ -444,6 +444,10 @@ export const FeedsPage: React.FC<{ meta: FeedsMetaPayload }> = ({ meta }) => {
           <details className="group">
             <summary className="flex cursor-pointer list-none items-center justify-between gap-4 py-4 font-sans-clean text-sm font-semibold text-[#1A3D2F] marker:hidden focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#B8860B] [&::-webkit-details-marker]:hidden">Can I use more than one XmasDB feed?<span className="shrink-0 text-lg font-normal text-[#B8860B] transition-transform group-open:rotate-45" aria-hidden="true">+</span></summary>
             <p className="max-w-2xl pb-4 pr-8 font-body text-sm leading-relaxed text-[#736B63]">Yes. Hallmark, Lifetime, GAF, UPtv, year and other supported feeds can be added separately. Each feed has its own URL and its own rate-limit allowance.</p>
+          </details>
+          <details className="group">
+            <summary className="flex cursor-pointer list-none items-center justify-between gap-4 py-4 font-sans-clean text-sm font-semibold text-[#1A3D2F] marker:hidden focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#B8860B] [&::-webkit-details-marker]:hidden">Does this work with NZBGet or SABnzbd?<span className="shrink-0 text-lg font-normal text-[#B8860B] transition-transform group-open:rotate-45" aria-hidden="true">+</span></summary>
+            <p className="max-w-2xl pb-4 pr-8 font-body text-sm leading-relaxed text-[#736B63]">XmasDB feeds are added to Radarr. Radarr then uses the download client configured in your self-hosted media setup, such as NZBGet or SABnzbd. XmasDB does not communicate directly with either client; completed movies can then be organized in Plex or Jellyfin.</p>
           </details>
           <details className="group">
             <summary className="flex cursor-pointer list-none items-center justify-between gap-4 py-4 font-sans-clean text-sm font-semibold text-[#1A3D2F] marker:hidden focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#B8860B] [&::-webkit-details-marker]:hidden">What happens when a new Christmas movie is announced?<span className="shrink-0 text-lg font-normal text-[#B8860B] transition-transform group-open:rotate-45" aria-hidden="true">+</span></summary>

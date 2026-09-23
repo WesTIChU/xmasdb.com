@@ -214,19 +214,35 @@ export function buildActorSeo(actor: Actor, filmography: ActorFilmographyItem[] 
 }
 
 export function buildFeedsSeo(): SeoDocument {
-  const description = 'Use XmasDB JSON feeds with Radarr and compatible StevenLu custom list tools to browse Hallmark, Lifetime, GAF, UPtv and other Christmas movie collections.';
+  const description = 'Curated Christmas movie JSON feeds for Radarr, including Hallmark, Lifetime, GAF and UPtv, for easy import into your Christmas movie library.';
+  const faqQuestion = 'Does this work with NZBGet or SABnzbd?';
+  const faqAnswer = 'XmasDB feeds are added to Radarr. Radarr then uses the download client configured in your self-hosted media setup, such as NZBGet or SABnzbd. XmasDB does not communicate directly with either client; completed movies can then be organized in Plex or Jellyfin.';
   return {
-    title: 'Christmas Movie Radarr Lists & StevenLu JSON Feeds | XmasDB',
+    title: 'Christmas Movie Feeds for Radarr | XmasDB',
     description,
     canonicalPath: getFeedsPath(),
     image: '/logo-1100.webp',
-    schema: {
-      '@context': 'https://schema.org',
-      '@type': 'WebPage',
-      name: 'Christmas Movie Radarr Lists & JSON Feeds',
-      url: toCanonicalUrl(getFeedsPath()),
-      description,
-    },
+    schema: [
+      {
+        '@context': 'https://schema.org',
+        '@type': 'WebPage',
+        name: 'Christmas Movie Feeds for Radarr',
+        url: toCanonicalUrl(getFeedsPath()),
+        description,
+      },
+      {
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: [{
+          '@type': 'Question',
+          name: faqQuestion,
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: faqAnswer,
+          },
+        }],
+      },
+    ],
   };
 }
 
