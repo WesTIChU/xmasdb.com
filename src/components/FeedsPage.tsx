@@ -332,9 +332,9 @@ export const FeedsPage: React.FC<{ meta: FeedsMetaPayload }> = ({ meta }) => {
       <header className="pb-5 sm:pb-6">
         <div className="text-center">
           <h1 className="font-heading text-2xl font-semibold tracking-[0.015em] text-[#1A3D2F] sm:text-3xl">CHRISTMAS MOVIE FEEDS FOR RADARR</h1>
-          <p className="mt-2 font-body text-base text-[#1A3D2F]">Direct JSON feeds for Radarr and other tools.</p>
+          <p className="mt-2 font-body text-base text-[#1A3D2F]">Direct JSON feeds for Radarr.</p>
           <p className="mx-auto mt-1 max-w-xl font-body text-sm leading-relaxed text-[#59524A]">
-            Curated Christmas movie JSON feeds for Radarr, including Hallmark, Lifetime, Great American Family and UPtv. Choose a collection below and copy its feed URL.
+            Hallmark · Lifetime · Great American Family · UPtv
           </p>
           <HollyDivider className="my-5 sm:my-6" lineClassName="w-6 sm:w-8" ornamentClassName="h-4 w-12 sm:h-5 sm:w-14" />
         </div>
