@@ -17,7 +17,7 @@ import { getBrandBySlug, getPopulatedBrands } from '../data/brands';
 import { getCataloguePage, type CatalogueQuery } from '../utils/catalogue-pagination';
 import { getMoviePremiereDateKey, isFutureComingSoonMovie, isMoviePremierePast, sortMoviesByLifecycle } from '../utils/catalogue-lifecycle';
 import { getActorBackdrop } from '../utils/backdrops';
-import { buildRadarrFeed, getRadarrActorFeedCount } from '../utils/feeds';
+import { buildRadarrFeed, isMovieEligibleForRadarr } from '../utils/feeds';
 import type {
   ActorDetailPayload,
   AboutPayload,
@@ -538,9 +538,40 @@ function getActorFeedCounts(referenceDate: Date): Record<string, number> {
   const dateKey = referenceDate.toISOString().slice(0, 10);
   if (actorFeedCountsCache?.dateKey === dateKey) return actorFeedCountsCache.counts;
 
+  const actors = getAllActors();
   const counts: Record<string, number> = {};
-  for (const actor of getAllActors()) {
-    counts[String(actor.tmdbPersonId)] = getRadarrActorFeedCount(actor.tmdbPersonId, referenceDate);
+  const actorsById = new Map<number, number>();
+  const actorsBySlug = new Map<string, number[]>();
+  const actorsByName = new Map<string, number[]>();
+  const seenImdbIds = new Map<number, Set<string>>();
+
+  for (const actor of actors) {
+    const actorId = actor.tmdbPersonId;
+    counts[String(actorId)] = 0;
+    actorsById.set(actorId, actorId);
+    seenImdbIds.set(actorId, new Set());
+
+    const slug = actor.slug.toLowerCase();
+    actorsBySlug.set(slug, [...(actorsBySlug.get(slug) || []), actorId]);
+    const name = actor.name.toLowerCase();
+    actorsByName.set(name, [...(actorsByName.get(name) || []), actorId]);
+  }
+
+  const eligibleMovies = MOVIES.filter((movie) => isMovieEligibleForRadarr(movie, referenceDate));
+  for (const movie of eligibleMovies) {
+    const actorIds = new Set<number>();
+    for (const cast of movie.cast) {
+      if (cast.tmdbPersonId && actorsById.has(cast.tmdbPersonId)) actorIds.add(cast.tmdbPersonId);
+      for (const actorId of actorsBySlug.get(cast.slug.toLowerCase()) || []) actorIds.add(actorId);
+      for (const actorId of actorsByName.get(cast.name.toLowerCase()) || []) actorIds.add(actorId);
+    }
+
+    for (const actorId of actorIds) {
+      const actorSeenImdbIds = seenImdbIds.get(actorId)!;
+      if (actorSeenImdbIds.has(movie.imdbId!)) continue;
+      actorSeenImdbIds.add(movie.imdbId!);
+      counts[String(actorId)] += 1;
+    }
   }
 
   actorFeedCountsCache = { dateKey, counts };

@@ -1,9 +1,10 @@
 import assert from 'assert';
 import { MOVIES } from '../src/data/movies';
-import { getActorByTmdbId } from '../src/data/actors';
+import { getActorByTmdbId, getAllActors } from '../src/data/actors';
 import { buildFeedsMeta } from '../src/server/catalogue-api';
 import {
   buildRadarrFeed,
+  getRadarrActorFeedCount,
   getRadarrActorFeedJson,
   getRadarrAllFeedJson,
   getRadarrFeedAudit,
@@ -66,6 +67,11 @@ assert.notStrictEqual(
   beforeGafEligibilityWindow.counts.actors[String(dateSensitiveActorId)],
   afterGafEligibilityWindow.counts.actors[String(dateSensitiveActorId)]
 );
+const actorCountMismatches = getAllActors().filter((actor) => (
+  beforeGafEligibilityWindow.counts.actors[String(actor.tmdbPersonId)]
+  !== getRadarrActorFeedCount(actor.tmdbPersonId, feedsMetaReferenceDate)
+));
+assert.deepStrictEqual(actorCountMismatches, []);
 
 const year = lifetimeMovie.year;
 const yearFeed = JSON.parse(getRadarrYearFeedJson(year)) as { title: string; imdb_id: string }[];
