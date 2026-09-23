@@ -206370,6 +206370,150 @@ export const MOVIES: Movie[] = [
     "voteAverage": 0,
     "voteCount": 0,
     "tmdbUpdatedAt": "2026-09-23T16:50:40.211Z"
+  },
+  {
+    "id": "gaf-2026-letters-this-christmas",
+    "slug": "letters-this-christmas",
+    "title": "Letters This Christmas",
+    "year": 2026,
+    "brandId": "gaf",
+    "releaseDate": "2026-09-23",
+    "synopsis": "A young romance author leaves New York City after her novel is panned, hoping to write a redemption novel from home in Alaska. Finding inspiration in her former lover, and the mysterious Christmas cards left at her keys, newfound success has her making the difficult choice between returning to New York for a career of fictional romance, and her real romance in Alaska.",
+    "posterUrl": "",
+    "cast": [
+      {
+        "actorId": "169469",
+        "name": "Jesse Hutch",
+        "character": "",
+        "slug": "jesse-hutch",
+        "tmdbPersonId": 169469,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/3tQsDlnoEVT73mV7OFs0D9EYn5f.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "1228296",
+        "name": "Ashley Newbrough",
+        "character": "",
+        "slug": "ashley-newbrough",
+        "tmdbPersonId": 1228296,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/pGisrI1H9CP69CUnJWlE1VKVK30.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "1216712",
+        "name": "Lara Amersey",
+        "character": "Tamsin Brooks",
+        "slug": "lara-amersey",
+        "tmdbPersonId": 1216712,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/mxEERu6yIqLSmsGijxn80Vu8sTM.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "2442234",
+        "name": "Carina Battrick",
+        "character": "Victoria Monroe",
+        "slug": "carina-battrick",
+        "tmdbPersonId": 2442234,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/pVpmyGnkTCUuUNMRbHpdqOpSZK6.jpg",
+        "order": 3
+      },
+      {
+        "actorId": "109376",
+        "name": "Sean Francis",
+        "character": "Train Staff",
+        "slug": "sean-francis",
+        "tmdbPersonId": 109376,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/6bymz9PaOE3I2sZKsAGGS40Tihx.jpg",
+        "order": 4
+      },
+      {
+        "actorId": "166496",
+        "name": "Fiona Highet",
+        "character": "Lisa Carter",
+        "slug": "fiona-highet",
+        "tmdbPersonId": 166496,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/amMUf8IQyyFTUxnhxEbWf0BBdJp.jpg",
+        "order": 5
+      },
+      {
+        "actorId": "185429",
+        "name": "Paris Jefferson",
+        "character": "Penny Monroe",
+        "slug": "paris-jefferson",
+        "tmdbPersonId": 185429,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/oTM37Gfg89EPNj1RD4zkIhKerx4.jpg",
+        "order": 6
+      },
+      {
+        "actorId": "550522",
+        "name": "Kimberly-Sue Murray",
+        "character": "Maggie Monroe",
+        "slug": "kimberly-sue-murray",
+        "tmdbPersonId": 550522,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/wgv04noc4D0L1UIBa5Lvdy5xJ4Q.jpg",
+        "order": 7
+      },
+      {
+        "actorId": "5921",
+        "name": "Martin Roach",
+        "character": "Principal Watson",
+        "slug": "martin-roach",
+        "tmdbPersonId": 5921,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/tTyxAqRDIhyfqRQjM2Opeo42ESc.jpg",
+        "order": 8
+      }
+    ],
+    "director": "Amy Force",
+    "tmdbId": 1650093,
+    "imdbId": "tt42025545",
+    "isComingSoon": true,
+    "status": "coming-soon",
+    "originalTitle": "Letters This Christmas",
+    "runtimeMinutes": 84,
+    "genres": [
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      },
+      {
+        "id": 18,
+        "name": "Drama"
+      },
+      {
+        "id": 9648,
+        "name": "Mystery"
+      }
+    ],
+    "releaseDates": [],
+    "crew": [
+      {
+        "id": 2797683,
+        "name": "Amy Force",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/rx4OBU31CpZPxySFX3x0DtWK6QQ.jpg",
+        "creditId": "69ee319b8512be5feb936647"
+      },
+      {
+        "id": 1519236,
+        "name": "Erica Deutschman",
+        "job": "Writer",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/dentb8VJpk00AzNqeS51Bs0GMMM.jpg",
+        "creditId": "69ee31aa8512be5feb93664a"
+      },
+      {
+        "id": 6169538,
+        "name": "Steven McCorkell",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "69ee31bb63c5469ebe93658f"
+      }
+    ],
+    "trailers": [],
+    "voteAverage": 0,
+    "voteCount": 0,
+    "tmdbUpdatedAt": "2026-09-23T16:57:01.695Z"
   }
 ];
 

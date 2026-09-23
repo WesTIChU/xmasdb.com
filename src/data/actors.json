@@ -57523,6 +57523,26 @@
     "tmdbUpdatedAt": "2026-09-21T12:59:33.494Z"
   },
   {
+    "id": "550522",
+    "slug": "kimberly-sue-murray",
+    "name": "Kimberly-Sue Murray",
+    "tmdbPersonId": 550522,
+    "photoUrl": "/images/people/550522.webp",
+    "profileUrl": "/images/people/550522.webp",
+    "birthday": "1988-11-03",
+    "placeOfBirth": "Canada",
+    "biography": "Kimberly-Sue Murray is Canadian actress and producer, known for Shadowhunters (2016), V-Wars (2019) and The Lizzie Borden Chronicles (2015).",
+    "imdbPersonId": "nm3980050",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 55,
+    "alsoKnownAs": [
+      "کیمبرلی-سو موری"
+    ],
+    "instagramId": "ksuemurray",
+    "tmdbUpdatedAt": "2026-09-23T16:57:02.019Z"
+  },
+  {
     "id": "kimbriel-louis",
     "slug": "kimbriel-louis",
     "name": "Kimbriel Louis",
@@ -78657,6 +78677,21 @@
     "tmdbUpdatedAt": "2026-09-21T13:01:35.649Z"
   },
   {
+    "id": "185429",
+    "slug": "paris-jefferson",
+    "name": "Paris Jefferson",
+    "tmdbPersonId": 185429,
+    "photoUrl": "/images/people/185429.webp",
+    "profileUrl": "/images/people/185429.webp",
+    "birthday": "1970-03-06",
+    "placeOfBirth": "London, England, UK",
+    "imdbPersonId": "nm0420219",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 35,
+    "tmdbUpdatedAt": "2026-09-23T16:57:01.982Z"
+  },
+  {
     "id": "190304",
     "slug": "paris-tanaka",
     "name": "Paris Tanaka",
@@ -89585,6 +89620,19 @@
     "tmdbUpdatedAt": "2026-09-21T12:46:26.742Z"
   },
   {
+    "id": "109376",
+    "slug": "sean-francis",
+    "name": "Sean Francis",
+    "tmdbPersonId": 109376,
+    "photoUrl": "/images/people/109376.webp",
+    "profileUrl": "/images/people/109376.webp",
+    "biography": "Sean Francis is an English actor and writer who portrayed the character of Sir Pellinore in the episode Excalibur of the BBC series Merlin.",
+    "imdbPersonId": "nm0290320",
+    "knownForDepartment": "Acting",
+    "knownCredits": 18,
+    "tmdbUpdatedAt": "2026-09-23T16:57:01.996Z"
+  },
+  {
     "id": "2078845",
     "slug": "sean-geraughty",
     "name": "Sean Geraughty",
@@ -93777,6 +93825,15 @@
     "knownForDepartment": "Acting",
     "knownCredits": 13,
     "tmdbUpdatedAt": "2026-09-20T16:18:58.096Z"
+  },
+  {
+    "id": "6169538",
+    "slug": "steven-mccorkell",
+    "name": "Steven McCorkell",
+    "tmdbPersonId": 6169538,
+    "knownForDepartment": "Writing",
+    "knownCredits": 1,
+    "tmdbUpdatedAt": "2026-09-23T16:57:01.907Z"
   },
   {
     "id": "582317",
