@@ -206514,6 +206514,89 @@ export const MOVIES: Movie[] = [
     "voteAverage": 0,
     "voteCount": 0,
     "tmdbUpdatedAt": "2026-09-23T16:57:01.695Z"
+  },
+  {
+    "id": "gaf-2026-a-sweet-christmas-anniversary",
+    "slug": "a-sweet-christmas-anniversary",
+    "title": "A Sweet Christmas Anniversary",
+    "year": 2026,
+    "brandId": "gaf",
+    "releaseDate": "2026-11-24",
+    "synopsis": "In this enchanting third story in the Home Sweet Christmas franchise, Sophie and Sam embark to celebrate their first anniversary in picturesque Salzburg, a sprawling Christmas postcard town adorned with decorations and lights, a place one can almost smell the scents of mulled wine and gingerbread. What begins as a romantic first-year getaway quickly transforms into a lavish royal mystery when a charismatic hotelier draws the couple into a world of festive surprises. As Sophie uncovers a hidden connection to a beloved Christmas song, she and Sam must navigate the host’s surprising twists to safeguard their love – and to rediscover the true spirit of Christmas.",
+    "posterUrl": "",
+    "cast": [
+      {
+        "actorId": "31363",
+        "name": "Candace Cameron Bure",
+        "character": "Sophie",
+        "slug": "candace-cameron-bure",
+        "tmdbPersonId": 31363,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/sDNFyYgyVmE5AGFCeLR0DVDzCji.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "33669",
+        "name": "Cameron Mathison",
+        "character": "Sam",
+        "slug": "cameron-mathison",
+        "tmdbPersonId": 33669,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/eJQPwuq2Hpcn6GySKpgpbGwZT4.jpg",
+        "order": 1
+      }
+    ],
+    "director": "Paula Elle",
+    "tmdbId": 1776668,
+    "imdbId": "tt42576641",
+    "isComingSoon": true,
+    "status": "coming-soon",
+    "originalTitle": "A Sweet Christmas Anniversary",
+    "genres": [],
+    "releaseDates": [
+      {
+        "country": "US",
+        "releaseDate": "2026-11-24T00:00:00.000Z",
+        "type": 1,
+        "certification": "",
+        "note": ""
+      }
+    ],
+    "crew": [
+      {
+        "id": 1632115,
+        "name": "Paula Elle",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/qmIRvO67FAcgtX5F5y8nCnCdtLS.jpg",
+        "creditId": "6ab2df751c232d2d9d68e77b"
+      },
+      {
+        "id": 4519493,
+        "name": "Robin Dunne",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "6ab2dfa0a7454a77be1a5c10"
+      },
+      {
+        "id": 2088925,
+        "name": "Arcade Riley",
+        "job": "Writer",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/aZnqaqK6NiXIdgi4PeeteZHWo4j.jpg",
+        "creditId": "6ab2dfaa72f1e47bcce1f104"
+      },
+      {
+        "id": 1214381,
+        "name": "Martin Wood",
+        "job": "Writer",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/45imLzo7mXQY3ifrn7BVcRzw4XE.jpg",
+        "creditId": "6ab2dfbb4d65651d0d964d8b"
+      }
+    ],
+    "trailers": [],
+    "voteAverage": 0,
+    "voteCount": 0,
+    "tmdbUpdatedAt": "2026-09-23T17:01:11.354Z"
   }
 ];
 
