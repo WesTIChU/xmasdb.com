@@ -20597,6 +20597,18 @@
     "tmdbUpdatedAt": "2026-09-21T13:00:45.381Z"
   },
   {
+    "id": "3336426",
+    "slug": "chuck-wicks",
+    "name": "Chuck Wicks",
+    "tmdbPersonId": 3336426,
+    "photoUrl": "/images/people/3336426.webp",
+    "profileUrl": "/images/people/3336426.webp",
+    "imdbPersonId": "nm2772523",
+    "knownForDepartment": "Acting",
+    "knownCredits": 3,
+    "tmdbUpdatedAt": "2026-09-23T16:35:37.516Z"
+  },
+  {
     "id": "69210",
     "slug": "chyler-leigh",
     "name": "Chyler Leigh",
@@ -22968,6 +22980,28 @@
     "knownForDepartment": "Acting",
     "knownCredits": 60,
     "tmdbUpdatedAt": "2026-09-20T16:21:12.741Z"
+  },
+  {
+    "id": "61962",
+    "slug": "d-b-sweeney",
+    "name": "D. B. Sweeney",
+    "tmdbPersonId": 61962,
+    "photoUrl": "/images/people/61962.webp",
+    "profileUrl": "/images/people/61962.webp",
+    "birthday": "1961-11-14",
+    "placeOfBirth": "Shoreham, Long Island, New York, USA",
+    "biography": "Daniel Bernard \"D. B.\" Sweeney (born November 14, 1961) is an American actor. Some of his best-known roles include Jackie Willow in Francis Ford Coppola's Gardens of Stone (1987), Lt. Phil Lowenthal in Memphis Belle (1990), and Travis Walton in Fire in the Sky (1993). He also starred in The Cutting Edge (1992), Eight Men Out (1988), Dinosaur (2000), and Brother Bear (2003).",
+    "imdbPersonId": "nm0000665",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 103,
+    "alsoKnownAs": [
+      "Daniel Bernard Sweeney",
+      "D. B. Sweeney",
+      "دی. بی. سویینی",
+      "DB Sweeney"
+    ],
+    "tmdbUpdatedAt": "2026-09-23T16:35:37.484Z"
   },
   {
     "id": "2523189",
@@ -42254,6 +42288,21 @@
     "tmdbUpdatedAt": "2026-09-20T16:19:07.450Z"
   },
   {
+    "id": "2993647",
+    "slug": "jake-nuttall",
+    "name": "Jake Nuttall",
+    "tmdbPersonId": 2993647,
+    "photoUrl": "/images/people/2993647.webp",
+    "profileUrl": "/images/people/2993647.webp",
+    "imdbPersonId": "nm9451669",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 4,
+    "instagramId": "jake_ryan_nuttall",
+    "facebookId": "jakeryannuttall",
+    "tmdbUpdatedAt": "2026-09-23T16:35:37.544Z"
+  },
+  {
     "id": "jake-raymond",
     "slug": "jake-raymond",
     "name": "Jake Raymond",
@@ -47134,6 +47183,15 @@
     "knownCredits": 8,
     "twitterId": "Jessica__Balmer",
     "tmdbUpdatedAt": "2026-09-22T20:53:48.240Z"
+  },
+  {
+    "id": "6235040",
+    "slug": "jessica-baughman",
+    "name": "Jessica Baughman",
+    "tmdbPersonId": 6235040,
+    "knownForDepartment": "Writing",
+    "knownCredits": 1,
+    "tmdbUpdatedAt": "2026-09-23T16:35:37.420Z"
   },
   {
     "id": "jessica-cori",
@@ -81816,6 +81874,17 @@
     "instagramId": "rachieskarsten",
     "twitterId": "RachieSkarsten",
     "tmdbUpdatedAt": "2026-09-20T16:17:12.506Z"
+  },
+  {
+    "id": "6038417",
+    "slug": "rachel-stitt",
+    "name": "Rachel Stitt",
+    "tmdbPersonId": 6038417,
+    "photoUrl": "/images/people/6038417.webp",
+    "profileUrl": "/images/people/6038417.webp",
+    "knownForDepartment": "Acting",
+    "knownCredits": 2,
+    "tmdbUpdatedAt": "2026-09-23T16:35:38.149Z"
   },
   {
     "id": "151016",

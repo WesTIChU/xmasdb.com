@@ -205913,6 +205913,148 @@ export const MOVIES: Movie[] = [
     "voteAverage": 5.7,
     "voteCount": 19,
     "tmdbUpdatedAt": "2026-09-22T16:03:27.524Z"
+  },
+  {
+    "id": "gaf-2026-silver-bells-at-christmas",
+    "slug": "silver-bells-at-christmas",
+    "title": "Silver Bells at Christmas",
+    "year": 2026,
+    "brandId": "gaf",
+    "releaseDate": "2026-09-23",
+    "synopsis": "In Comfort, Kentucky, Ginny Nolan tries to keep her family's Christmas shop afloat as coffee-chain owner Nick Day offers to buy it. Meanwhile, Ginny's ex-flame and former songwriting partner Tyler Benton returns to town, seeking her help.",
+    "posterUrl": "",
+    "cast": [
+      {
+        "actorId": "1033094",
+        "name": "Laura Osnes",
+        "character": "Ginny Nolan",
+        "slug": "laura-osnes",
+        "tmdbPersonId": 1033094,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/gczbNoTcQ3Y5E1nOlWp5YnyMVap.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "93031",
+        "name": "Ryan McPartlin",
+        "character": "Nick Day",
+        "slug": "ryan-mcpartlin",
+        "tmdbPersonId": 93031,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/v0vKYfoSVLBEGBZ2ldjm3cHJwf3.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "61962",
+        "name": "D. B. Sweeney",
+        "character": "Walter Day",
+        "slug": "d-b-sweeney",
+        "tmdbPersonId": 61962,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/enY28APVRWfyHjGAkh6VCkYCWOA.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "3336426",
+        "name": "Chuck Wicks",
+        "character": "Tyler Benton",
+        "slug": "chuck-wicks",
+        "tmdbPersonId": 3336426,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/wQxSMM9ss47rg5TKIifB1vZwz5X.jpg",
+        "order": 3
+      },
+      {
+        "actorId": "1661265",
+        "name": "Taylor Kalupa",
+        "character": "Bekah Nolan",
+        "slug": "taylor-kalupa",
+        "tmdbPersonId": 1661265,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/jGvR7CxN9BlOzdfBZ77WoKCm6uB.jpg",
+        "order": 4
+      },
+      {
+        "actorId": "1265329",
+        "name": "Tanya Christiansen",
+        "character": "Millie Martin",
+        "slug": "tanya-christiansen",
+        "tmdbPersonId": 1265329,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/ciifmUGctpO3zPcazaaAlD8QvJ9.jpg",
+        "order": 5
+      },
+      {
+        "actorId": "6038417",
+        "name": "Rachel Stitt",
+        "character": "Piper Nolan",
+        "slug": "rachel-stitt",
+        "tmdbPersonId": 6038417,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/jUdY4SkhSmchc4UWWhM5w4nHnwx.jpg",
+        "order": 6
+      },
+      {
+        "actorId": "1930891",
+        "name": "Julia Reilly",
+        "character": "Andi Watson",
+        "slug": "julia-reilly",
+        "tmdbPersonId": 1930891,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/w93nJskkwVQsfsrd85aGe3HRTdN.jpg",
+        "order": 7
+      },
+      {
+        "actorId": "2993647",
+        "name": "Jake Nuttall",
+        "character": "Cole Harrington",
+        "slug": "jake-nuttall",
+        "tmdbPersonId": 2993647,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/wzyf056J8NLIUiQeQuCJ8sCl9rs.jpg",
+        "order": 8
+      }
+    ],
+    "director": "Brandon Clark",
+    "tmdbId": 1701085,
+    "imdbId": "tt41835771",
+    "isComingSoon": true,
+    "status": "coming-soon",
+    "originalTitle": "Silver Bells at Christmas",
+    "runtimeMinutes": 84,
+    "genres": [
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      },
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "releaseDates": [],
+    "crew": [
+      {
+        "id": 5668040,
+        "name": "Brandon Clark",
+        "job": "Director",
+        "department": "Directing",
+        "creditId": "6a11fea2585e24839de371ba"
+      },
+      {
+        "id": 6235040,
+        "name": "Jessica Baughman",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "6a11feaf93653dc996e37202"
+      },
+      {
+        "id": 3361780,
+        "name": "Taylor Bird",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "6a11feb4cecea133374029a5"
+      }
+    ],
+    "trailers": [],
+    "voteAverage": 0,
+    "voteCount": 0,
+    "tmdbUpdatedAt": "2026-09-23T16:35:37.192Z"
   }
 ];
 
