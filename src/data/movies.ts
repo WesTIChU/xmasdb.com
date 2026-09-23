@@ -206597,6 +206597,55 @@ export const MOVIES: Movie[] = [
     "voteAverage": 0,
     "voteCount": 0,
     "tmdbUpdatedAt": "2026-09-23T17:01:11.354Z"
+  },
+  {
+    "id": "gaf-2026-the-greatest-christmas-gift",
+    "slug": "the-greatest-christmas-gift",
+    "title": "The Greatest Christmas Gift",
+    "year": 2026,
+    "brandId": "gaf",
+    "releaseDate": "2026-11-29",
+    "synopsis": "In The Greatest Christmas Gift, gifted music teacher Emma Harper (McKellar) and her fiancé Caleb Bennett (Marsden) are preparing for a cherished Christmas wedding when an unexpected setback threatens the future they’ve carefully planned. As their small-town rallies around them and Christmas draws near, the couple discovers that the greatest gifts are not found in perfect circumstances, but in steadfast faith, selfless love, and a community that reminds them hope is always worth believing in.",
+    "posterUrl": "",
+    "cast": [
+      {
+        "actorId": "65220",
+        "name": "Danica McKellar",
+        "character": "Emma Harper",
+        "slug": "danica-mckellar",
+        "tmdbPersonId": 65220,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/qVasJ8uKtvrntIXaPylneLW3ykf.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "12793",
+        "name": "Matthew Marsden",
+        "character": "Caleb Bennett",
+        "slug": "matthew-marsden",
+        "tmdbPersonId": 12793,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/qejtyAt9dQdOS9AbXxSOwbw82E.jpg",
+        "order": 1
+      }
+    ],
+    "tmdbId": 1776670,
+    "isComingSoon": true,
+    "status": "coming-soon",
+    "originalTitle": "The Greatest Christmas Gift",
+    "genres": [],
+    "releaseDates": [
+      {
+        "country": "US",
+        "releaseDate": "2026-11-29T00:00:00.000Z",
+        "type": 1,
+        "certification": "",
+        "note": ""
+      }
+    ],
+    "crew": [],
+    "trailers": [],
+    "voteAverage": 0,
+    "voteCount": 0,
+    "tmdbUpdatedAt": "2026-09-23T17:03:11.500Z"
   }
 ];
 
