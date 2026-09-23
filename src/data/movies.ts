@@ -206055,6 +206055,194 @@ export const MOVIES: Movie[] = [
     "voteAverage": 0,
     "voteCount": 0,
     "tmdbUpdatedAt": "2026-09-23T16:35:37.192Z"
+  },
+  {
+    "id": "gaf-2025-karen-kingsbury-s-the-christmas-ring",
+    "slug": "karen-kingsbury-s-the-christmas-ring",
+    "title": "Karen Kingsbury's The Christmas Ring",
+    "year": 2025,
+    "brandId": "gaf",
+    "releaseDate": "2025-11-06",
+    "synopsis": "At a 'Christmas in July' sale, military widow Vanessa Mayfield crosses paths with antiques dealer Ben Miller. As Ben works in Vanessa’s hometown, their friendship begins to grow into something more. But trouble brews when Ben’s father unknowingly acquires a box of antiques containing Vanessa’s missing heirloom Christmas ring - a priceless piece of her family’s past. Planning to sell it, he has no idea of its true meaning. It will take a Christmas miracle for love, family, and the ring to come together.",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/p3iQWFq2RwqM0vuzx9sqtTeYMhX.jpg",
+    "backdropUrl": "https://image.tmdb.org/t/p/w1280/vKPfmhFLcFDZF3bCRpqEzF8RoIv.jpg",
+    "cast": [
+      {
+        "actorId": "92856",
+        "name": "Jana Kramer",
+        "character": "Vanessa Mayfield",
+        "slug": "jana-kramer",
+        "tmdbPersonId": 92856,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/9fW6Sx5OjCm7vhHR0u1zYgWEAgO.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "77865",
+        "name": "Benjamin Hollingsworth",
+        "character": "Ben Miller",
+        "slug": "benjamin-hollingsworth",
+        "tmdbPersonId": 77865,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/5dR2AbGdWHUsOu1HkW3x5fsTebw.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "1883215",
+        "name": "Jessie James Decker",
+        "character": "Leigh",
+        "slug": "jessie-james-decker",
+        "tmdbPersonId": 1883215,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/3lNdVdjs0IwYPxbIAdNhNvowDJZ.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "7090",
+        "name": "Kelsey Grammer",
+        "character": "Mr. Miller",
+        "slug": "kelsey-grammer",
+        "tmdbPersonId": 7090,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/5zik4VJim6YTSWDjC7tkp13wxUp.jpg",
+        "order": 3
+      },
+      {
+        "actorId": "2010776",
+        "name": "Megan Ashley Brown",
+        "character": "Sadie Mayfield",
+        "slug": "megan-ashley-brown",
+        "tmdbPersonId": 2010776,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/ub7StjYBbY9qOrLrEumLvN1jYDA.jpg",
+        "order": 4
+      },
+      {
+        "actorId": "3739138",
+        "name": "Daniel Considine",
+        "character": "Isaac",
+        "slug": "daniel-considine",
+        "tmdbPersonId": 3739138,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/e4NXRhKSvs9bDBZt0X62xTK19XH.jpg",
+        "order": 5
+      },
+      {
+        "actorId": "2129919",
+        "name": "Austin Robert Russell",
+        "character": "Hudson Rogers",
+        "slug": "austin-robert-russell",
+        "tmdbPersonId": 2129919,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/jXCtqyjoSG6piyAYDfhJ9vgMNUJ.jpg",
+        "order": 6
+      },
+      {
+        "actorId": "5584500",
+        "name": "Emma Naumovska",
+        "character": "Ella",
+        "slug": "emma-naumovska",
+        "tmdbPersonId": 5584500,
+        "order": 7
+      },
+      {
+        "actorId": "5584501",
+        "name": "Megan Murphy Chambers",
+        "character": "Meredith",
+        "slug": "megan-murphy-chambers",
+        "tmdbPersonId": 5584501,
+        "order": 8
+      },
+      {
+        "actorId": "5659375",
+        "name": "Debbie Winans",
+        "character": "Maria",
+        "slug": "debbie-winans",
+        "tmdbPersonId": 5659375,
+        "order": 9
+      },
+      {
+        "actorId": "5659376",
+        "name": "Alex Maddux",
+        "character": "Alex",
+        "slug": "alex-maddux",
+        "tmdbPersonId": 5659376,
+        "order": 10
+      },
+      {
+        "actorId": "1771542",
+        "name": "Reegus Flenory",
+        "character": "Mr. Benson",
+        "slug": "reegus-flenory",
+        "tmdbPersonId": 1771542,
+        "order": 11
+      }
+    ],
+    "director": "Tyler Russell",
+    "tmdbId": 1518521,
+    "imdbId": "tt37282369",
+    "isComingSoon": false,
+    "status": "collection",
+    "originalTitle": "Karen Kingsbury's The Christmas Ring",
+    "runtimeMinutes": 103,
+    "genres": [
+      {
+        "id": 10749,
+        "name": "Romance"
+      },
+      {
+        "id": 18,
+        "name": "Drama"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "US",
+        "releaseDate": "2025-11-06T00:00:00.000Z",
+        "type": 3,
+        "certification": "NR",
+        "note": ""
+      },
+      {
+        "country": "US",
+        "releaseDate": "2025-11-28T00:00:00.000Z",
+        "type": 4,
+        "certification": "",
+        "note": ""
+      }
+    ],
+    "crew": [
+      {
+        "id": 1941789,
+        "name": "Tyler Russell",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/8yFVGfS3Lnfdm0vUXVQZ8CN4TRO.jpg",
+        "creditId": "689ab338773f01c2345d17d5"
+      },
+      {
+        "id": 1941789,
+        "name": "Tyler Russell",
+        "job": "Screenplay",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/8yFVGfS3Lnfdm0vUXVQZ8CN4TRO.jpg",
+        "creditId": "689ab3503b2be8256b8eb396"
+      }
+    ],
+    "trailers": [
+      {
+        "key": "CYXlCr54-Ps",
+        "site": "YouTube",
+        "type": "Trailer",
+        "name": "Karen Kingsbury's The Christmas Ring - Rent & Buy AT HOME starting Black Friday",
+        "official": true
+      },
+      {
+        "key": "u3PmNwiu_EE",
+        "site": "YouTube",
+        "type": "Trailer",
+        "name": "Karen Kingsbury's The Christmas Ring - Official Trailer - Jana Kramer & Benjamin Hollingsworth",
+        "official": true
+      }
+    ],
+    "trailerYoutubeKey": "CYXlCr54-Ps",
+    "tagline": "Where your treasure is, there your heart will be too.",
+    "voteAverage": 6.667,
+    "voteCount": 6,
+    "tmdbUpdatedAt": "2026-09-23T16:42:22.598Z"
   }
 ];
 

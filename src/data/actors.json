@@ -2264,6 +2264,15 @@
     "tmdbUpdatedAt": "2026-09-20T16:18:43.217Z"
   },
   {
+    "id": "5659376",
+    "slug": "alex-maddux",
+    "name": "Alex Maddux",
+    "tmdbPersonId": 5659376,
+    "knownForDepartment": "Acting",
+    "knownCredits": 1,
+    "tmdbUpdatedAt": "2026-09-23T16:42:23.025Z"
+  },
+  {
     "id": "alex-paxton-beesley",
     "slug": "alex-paxton-beesley",
     "name": "Alex Paxton-Beesley",
@@ -9141,6 +9150,22 @@
     "knownForDepartment": "Acting",
     "knownCredits": 3,
     "tmdbUpdatedAt": "2026-09-20T16:16:46.671Z"
+  },
+  {
+    "id": "2129919",
+    "slug": "austin-robert-russell",
+    "name": "Austin Robert Russell",
+    "tmdbPersonId": 2129919,
+    "photoUrl": "/images/people/2129919.webp",
+    "profileUrl": "/images/people/2129919.webp",
+    "imdbPersonId": "nm8944542",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 6,
+    "alsoKnownAs": [
+      "Austin Russell"
+    ],
+    "tmdbUpdatedAt": "2026-09-23T16:42:22.926Z"
   },
   {
     "id": "austin-schoenfeld",
@@ -23731,6 +23756,19 @@
     "tmdbUpdatedAt": "2026-09-20T16:20:46.520Z"
   },
   {
+    "id": "3739138",
+    "slug": "daniel-considine",
+    "name": "Daniel Considine",
+    "tmdbPersonId": 3739138,
+    "photoUrl": "/images/people/3739138.webp",
+    "profileUrl": "/images/people/3739138.webp",
+    "imdbPersonId": "nm11028391",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 10,
+    "tmdbUpdatedAt": "2026-09-23T16:42:22.944Z"
+  },
+  {
     "id": "daniel-desanto",
     "slug": "daniel-desanto",
     "name": "Daniel DeSanto",
@@ -26727,6 +26765,15 @@
     "knownForDepartment": "Acting",
     "knownCredits": 8,
     "tmdbUpdatedAt": "2026-09-21T13:00:53.803Z"
+  },
+  {
+    "id": "5659375",
+    "slug": "debbie-winans",
+    "name": "Debbie Winans",
+    "tmdbPersonId": 5659375,
+    "knownForDepartment": "Acting",
+    "knownCredits": 2,
+    "tmdbUpdatedAt": "2026-09-23T16:42:23.006Z"
   },
   {
     "id": "debby-ryan",
@@ -32397,6 +32444,15 @@
     ],
     "instagramId": "ememyers",
     "tmdbUpdatedAt": "2026-09-20T16:20:16.224Z"
+  },
+  {
+    "id": "5584500",
+    "slug": "emma-naumovska",
+    "name": "Emma Naumovska",
+    "tmdbPersonId": 5584500,
+    "knownForDepartment": "Acting",
+    "knownCredits": 2,
+    "tmdbUpdatedAt": "2026-09-23T16:42:22.819Z"
   },
   {
     "id": "emma-oliver",
@@ -47526,6 +47582,24 @@
       "Jessica Tsang"
     ],
     "tmdbUpdatedAt": "2026-09-20T16:21:03.507Z"
+  },
+  {
+    "id": "1883215",
+    "slug": "jessie-james-decker",
+    "name": "Jessie James Decker",
+    "tmdbPersonId": 1883215,
+    "photoUrl": "/images/people/1883215.webp",
+    "profileUrl": "/images/people/1883215.webp",
+    "birthday": "1988-04-12",
+    "placeOfBirth": "Vicenza, Italy",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 8,
+    "alsoKnownAs": [
+      "Jessie James"
+    ],
+    "instagramId": "jessiejamesdecker",
+    "tmdbUpdatedAt": "2026-09-23T16:42:22.882Z"
   },
   {
     "id": "jessie-liang",
@@ -69735,6 +69809,19 @@
     "tmdbUpdatedAt": "2026-09-20T16:20:07.893Z"
   },
   {
+    "id": "2010776",
+    "slug": "megan-ashley-brown",
+    "name": "Megan Ashley Brown",
+    "tmdbPersonId": 2010776,
+    "photoUrl": "/images/people/2010776.webp",
+    "profileUrl": "/images/people/2010776.webp",
+    "imdbPersonId": "nm4281905",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 13,
+    "tmdbUpdatedAt": "2026-09-23T16:42:22.904Z"
+  },
+  {
     "id": "megan-best",
     "slug": "megan-best",
     "name": "Megan Best",
@@ -69900,6 +69987,15 @@
     "twitterId": "_megmoroney",
     "facebookId": "megmoroneymusic",
     "tmdbUpdatedAt": "2026-09-20T16:16:33.398Z"
+  },
+  {
+    "id": "5584501",
+    "slug": "megan-murphy-chambers",
+    "name": "Megan Murphy Chambers",
+    "tmdbPersonId": 5584501,
+    "knownForDepartment": "Acting",
+    "knownCredits": 2,
+    "tmdbUpdatedAt": "2026-09-23T16:42:22.947Z"
   },
   {
     "id": "megan-park",
@@ -99582,6 +99678,19 @@
     "knownForDepartment": "Acting",
     "knownCredits": 5,
     "tmdbUpdatedAt": "2026-09-20T16:17:14.636Z"
+  },
+  {
+    "id": "1941789",
+    "slug": "tyler-russell",
+    "name": "Tyler Russell",
+    "tmdbPersonId": 1941789,
+    "photoUrl": "/images/people/1941789.webp",
+    "profileUrl": "/images/people/1941789.webp",
+    "imdbPersonId": "nm7623887",
+    "gender": "Male",
+    "knownForDepartment": "Writing",
+    "knownCredits": 4,
+    "tmdbUpdatedAt": "2026-09-23T16:42:23.107Z"
   },
   {
     "id": "tyreah-herbert",
