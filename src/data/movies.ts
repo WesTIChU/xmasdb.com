@@ -206646,6 +206646,47 @@ export const MOVIES: Movie[] = [
     "voteAverage": 0,
     "voteCount": 0,
     "tmdbUpdatedAt": "2026-09-23T17:03:11.500Z"
+  },
+  {
+    "id": "gaf-2026-making-christmas-bright",
+    "slug": "making-christmas-bright",
+    "title": "Making Christmas Bright",
+    "year": 2026,
+    "brandId": "gaf",
+    "releaseDate": "2026-09-23",
+    "synopsis": "​In Making Christmas Bright, Kay (Jillian Murray), is a devoted middle school teacher in the close-knit Kentucky town of White Grove who believes God has opened the door to an exciting new career and a new life in the city. With Christmas approaching, Kay is preparing to leave behind her father, lifelong friends, students and the community she has always called home. But when she volunteers for her small-town church’s “Christmas Angel Tree” project, and is paired with Joshua, a newly arrived police officer looking for a fresh start of his own, an act of service begins changing both of their lives.",
+    "posterUrl": "",
+    "cast": [
+      {
+        "actorId": "118362",
+        "name": "Jillian Murray",
+        "character": "Kay",
+        "slug": "jillian-murray",
+        "tmdbPersonId": 118362,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/zkt2X0vAGX0qqcRlJJnUkprNQ3k.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "934219",
+        "name": "Liam McIntyre",
+        "character": "Joshua",
+        "slug": "liam-mcintyre",
+        "tmdbPersonId": 934219,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/vTw11F1awNW8AlxInljEsK96cNB.jpg",
+        "order": 1
+      }
+    ],
+    "tmdbId": 1776687,
+    "isComingSoon": true,
+    "status": "coming-soon",
+    "originalTitle": "Making Christmas Bright",
+    "genres": [],
+    "releaseDates": [],
+    "crew": [],
+    "trailers": [],
+    "voteAverage": 0,
+    "voteCount": 0,
+    "tmdbUpdatedAt": "2026-09-23T17:12:30.808Z"
   }
 ];
 
