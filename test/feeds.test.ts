@@ -1,6 +1,7 @@
 import assert from 'assert';
 import { MOVIES } from '../src/data/movies';
 import { getActorByTmdbId } from '../src/data/actors';
+import { buildFeedsMeta } from '../src/server/catalogue-api';
 import {
   buildRadarrFeed,
   getRadarrActorFeedJson,
@@ -12,6 +13,7 @@ import {
 } from '../src/utils/feeds';
 
 const referenceDate = new Date('2026-09-19T00:00:00.000Z');
+const feedsMetaReferenceDate = new Date('2026-09-23T18:02:29.000Z');
 const lifetimeMovie = MOVIES.find((movie) => movie.brandId === 'lifetime' && movie.imdbId);
 const hallmarkMovie = MOVIES.find((movie) => movie.brandId === 'hallmark' && movie.imdbId);
 const gafMovie = MOVIES.find((movie) => movie.brandId === 'gaf' && movie.imdbId);
@@ -44,6 +46,26 @@ assert.strictEqual(isMovieEligibleForRadarr({ ...lifetimeMovie, releaseDate: '20
 const duplicateFeed = buildRadarrFeed([lifetimeMovie, lifetimeMovie], referenceDate);
 assert.strictEqual(duplicateFeed.length, 1);
 assert.strictEqual(new Set(duplicateFeed.map((item) => item.imdb_id)).size, duplicateFeed.length);
+
+const beforeGafEligibilityWindow = buildFeedsMeta(feedsMetaReferenceDate);
+const afterGafEligibilityWindow = buildFeedsMeta(new Date('2026-11-15T00:00:00.000Z'));
+for (const brandId of ['hallmark', 'lifetime', 'gaf', 'uptv']) {
+  const expected = buildRadarrFeed(
+    MOVIES.filter((movie) => movie.brandId === brandId),
+    feedsMetaReferenceDate
+  ).length;
+  assert.strictEqual(beforeGafEligibilityWindow.counts.brands[brandId], expected);
+}
+assert.notStrictEqual(
+  beforeGafEligibilityWindow.counts.brands.gaf,
+  afterGafEligibilityWindow.counts.brands.gaf
+);
+const dateSensitiveActorId = MOVIES.find((movie) => movie.tmdbId === 1754947)?.cast[0]?.tmdbPersonId;
+assert.ok(dateSensitiveActorId, 'Date-sensitive actor fixture should exist');
+assert.notStrictEqual(
+  beforeGafEligibilityWindow.counts.actors[String(dateSensitiveActorId)],
+  afterGafEligibilityWindow.counts.actors[String(dateSensitiveActorId)]
+);
 
 const year = lifetimeMovie.year;
 const yearFeed = JSON.parse(getRadarrYearFeedJson(year)) as { title: string; imdb_id: string }[];

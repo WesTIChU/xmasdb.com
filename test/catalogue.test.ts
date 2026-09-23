@@ -45,6 +45,22 @@ assert.ok(ninetySix.movies.length > 0);
 const filtered = getCataloguePage(MOVIES, parseCatalogueQuery('?brand=hallmark&year=2025&sort=newest&perPage=24'));
 assert.ok(filtered.total < MOVIES.length);
 assert.ok(filtered.movies.every((movie) => movie.brandId === 'hallmark' && movie.year === 2025));
+
+const allCatalogueScopes = ['gaf', 'hallmark', 'lifetime', 'uptv'];
+for (const brand of allCatalogueScopes) {
+  const all = getCataloguePage(MOVIES, parseCatalogueQuery('?sort=newest&perPage=96'), brand);
+  const year = getCataloguePage(MOVIES, parseCatalogueQuery('?sort=newest&perPage=96'), brand, 2026);
+  const allIds = new Set(all.movies.map((movie) => movie.tmdbId));
+  assert.ok(year.movies.every((movie) => allIds.has(movie.tmdbId)), `${brand} year movies must be present in its All dataset`);
+  const futureDates = all.movies
+    .filter((movie) => movie.year === 2026)
+    .map((movie) => movie.premiereDate || movie.releaseDate);
+  assert.ok(futureDates.every((date, index) => index === 0 || date <= futureDates[index - 1]), `${brand} All results sort 2026 movies by release/premiere date`);
+}
+
+const allMovies = getCataloguePage(MOVIES, parseCatalogueQuery('?sort=newest&perPage=96'));
+const allMovieDates = allMovies.movies.map((movie) => movie.premiereDate || movie.releaseDate);
+assert.ok(allMovieDates.every((date, index) => index === 0 || date <= allMovieDates[index - 1]), 'All Movies sorts newest results before pagination');
 assert.strictEqual(buildCatalogueUrl('/movies/', '?brand=hallmark&perPage=48&page=4', { page: 2 }, false), '/movies/?brand=hallmark&perPage=48&page=2');
 assert.strictEqual(parseCatalogueQuery('?page=abc&perPage=50000').page, 1);
 assert.strictEqual(parseCatalogueQuery('?page=abc&perPage=50000').perPage, 24);

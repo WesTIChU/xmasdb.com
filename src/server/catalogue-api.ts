@@ -527,38 +527,52 @@ export function buildHomePayload(now: Date = new Date()): HomePayload {
 // Feeds page metadata
 // ---------------------------------------------------------------------------
 
-let feedsMetaCache: FeedsMetaPayload | null = null;
+type ActorFeedCountsCache = {
+  dateKey: string;
+  counts: Record<string, number>;
+};
 
-export function buildFeedsMeta(): FeedsMetaPayload {
-  if (feedsMetaCache) return feedsMetaCache;
+let actorFeedCountsCache: ActorFeedCountsCache | null = null;
 
+function getActorFeedCounts(referenceDate: Date): Record<string, number> {
+  const dateKey = referenceDate.toISOString().slice(0, 10);
+  if (actorFeedCountsCache?.dateKey === dateKey) return actorFeedCountsCache.counts;
+
+  const counts: Record<string, number> = {};
+  for (const actor of getAllActors()) {
+    counts[String(actor.tmdbPersonId)] = getRadarrActorFeedCount(actor.tmdbPersonId, referenceDate);
+  }
+
+  actorFeedCountsCache = { dateKey, counts };
+  return counts;
+}
+
+export function buildFeedsMeta(referenceDate: Date = new Date()): FeedsMetaPayload {
   const populatedBrands = buildCatalogueMeta().populatedBrands;
   const brandCounts: Record<string, number> = {};
   for (const brand of populatedBrands) {
     brandCounts[brand.id] = buildRadarrFeed(
-      MOVIES.filter((movie) => movie.brandId === brand.id)
+      MOVIES.filter((movie) => movie.brandId === brand.id),
+      referenceDate
     ).length;
   }
 
   const years = getAllYearsForBrand();
   const yearCounts: Record<string, number> = {};
   for (const year of years) {
-    yearCounts[String(year)] = buildRadarrFeed(MOVIES.filter((movie) => movie.year === year)).length;
+    yearCounts[String(year)] = buildRadarrFeed(
+      MOVIES.filter((movie) => movie.year === year),
+      referenceDate
+    ).length;
   }
-  const actorCounts: Record<string, number> = {};
-  for (const actor of getAllActors()) {
-    actorCounts[String(actor.tmdbPersonId)] = getRadarrActorFeedCount(actor.tmdbPersonId);
-  }
-
-  feedsMetaCache = {
+  return {
     years,
     populatedBrands,
     counts: {
-      all: buildRadarrFeed(MOVIES).length,
+      all: buildRadarrFeed(MOVIES, referenceDate).length,
       brands: brandCounts,
       years: yearCounts,
-      actors: actorCounts,
+      actors: getActorFeedCounts(referenceDate),
     },
   };
-  return feedsMetaCache;
 }

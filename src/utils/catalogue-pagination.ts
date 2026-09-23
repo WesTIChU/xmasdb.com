@@ -22,6 +22,12 @@ export interface PaginatedMovies {
   perPage: number;
 }
 
+function getCatalogueSortDateKey(movie: Movie): string | null {
+  const premiereDate = getMoviePremiereDateKey(movie);
+  if (premiereDate) return premiereDate;
+  return movie.releaseDate?.match(/^\d{4}-\d{2}-\d{2}/)?.[0] || null;
+}
+
 export function parseCatalogueQuery(search: string): CatalogueQuery {
   const params = new URLSearchParams(search);
   const pageValue = Number(params.get('page'));
@@ -79,8 +85,8 @@ export function getCataloguePage(movies: Movie[], query: CatalogueQuery, lockedB
     filtered = [...comingSoon, ...collection];
   } else if (sort === 'newest') {
     filtered = [...filtered].sort((a, b) => {
-      const aDate = getMoviePremiereDateKey(a);
-      const bDate = getMoviePremiereDateKey(b);
+      const aDate = getCatalogueSortDateKey(a);
+      const bDate = getCatalogueSortDateKey(b);
       if (aDate === null && bDate === null) return 0;
       if (aDate === null) return 1;
       if (bDate === null) return -1;
@@ -88,8 +94,8 @@ export function getCataloguePage(movies: Movie[], query: CatalogueQuery, lockedB
     });
   } else if (sort === 'oldest') {
     filtered = [...filtered].sort((a, b) => {
-      const aDate = getMoviePremiereDateKey(a);
-      const bDate = getMoviePremiereDateKey(b);
+      const aDate = getCatalogueSortDateKey(a);
+      const bDate = getCatalogueSortDateKey(b);
       if (aDate === null && bDate === null) return 0;
       if (aDate === null) return 1;
       if (bDate === null) return -1;

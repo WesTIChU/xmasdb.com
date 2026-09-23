@@ -185,9 +185,9 @@ export function getRadarrActorFeedJson(tmdbPersonId: number): string | null {
   return JSON.stringify(feed, null, 2);
 }
 
-export function getRadarrActorFeedCount(tmdbPersonId: number): number {
+export function getRadarrActorFeedCount(tmdbPersonId: number, referenceDate: Date = new Date()): number {
   const actorMovies = getRadarrActorMovies(tmdbPersonId);
-  return actorMovies ? buildRadarrFeed(actorMovies).length : 0;
+  return actorMovies ? buildRadarrFeed(actorMovies, referenceDate).length : 0;
 }
 
 // ---------------- INTERNAL RICH DATA ENDPOINTS ----------------
