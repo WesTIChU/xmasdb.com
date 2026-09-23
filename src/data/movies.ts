@@ -206329,6 +206329,47 @@ export const MOVIES: Movie[] = [
     "voteAverage": 0,
     "voteCount": 0,
     "tmdbUpdatedAt": "2026-09-23T16:46:37.120Z"
+  },
+  {
+    "id": "gaf-2026-the-christmas-yes-list",
+    "slug": "the-christmas-yes-list",
+    "title": "The Christmas Yes List",
+    "year": 2026,
+    "brandId": "gaf",
+    "releaseDate": "2026-09-23",
+    "synopsis": "In The Christmas Yes List, Chloe Hollis (McKellar), an ambitious New York professional whose habit of putting everyone else first has left her overlooked for the promotion she desperately wants, returns home to Maple Hills, West Virginia, for Christmas. Determined to change her people-pleasing ways, Chloe embarks on an unconventional holiday challenge to overcome her fear of rejection. But when she meets James Stone (Page), a successful executive spending Christmas with family in town, Chloe discovers some of life’s greatest gifts arrive when we stop fearing the answer and start embracing the journey.",
+    "posterUrl": "",
+    "cast": [
+      {
+        "actorId": "65220",
+        "name": "Danica McKellar",
+        "character": "Chloe Hollis",
+        "slug": "danica-mckellar",
+        "tmdbPersonId": 65220,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/qVasJ8uKtvrntIXaPylneLW3ykf.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "21429",
+        "name": "Sam Page",
+        "character": "James Stone",
+        "slug": "sam-page",
+        "tmdbPersonId": 21429,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/6yza06QDrRoOXWxGd2AmYZw9e1u.jpg",
+        "order": 1
+      }
+    ],
+    "tmdbId": 1776645,
+    "isComingSoon": true,
+    "status": "coming-soon",
+    "originalTitle": "The Christmas Yes List",
+    "genres": [],
+    "releaseDates": [],
+    "crew": [],
+    "trailers": [],
+    "voteAverage": 0,
+    "voteCount": 0,
+    "tmdbUpdatedAt": "2026-09-23T16:50:40.211Z"
   }
 ];
 
