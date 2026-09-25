@@ -151,6 +151,7 @@ function isRoutePayloadValid(descriptor: RouteDescriptor, payload: unknown): boo
     case 'movies':
     case 'year-archive':
     case 'brand':
+      return isCatalogueListingPayload(payload);
     case 'fingerprint':
       return isFingerprintListingPayload(payload);
     case 'movie':
