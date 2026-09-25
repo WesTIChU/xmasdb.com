@@ -1,7 +1,7 @@
 import { createHmac, randomBytes, timingSafeEqual } from 'node:crypto';
 
 export const ADMIN_SESSION_COOKIE = 'xmasdb_admin_session';
-export const ADMIN_SESSION_TTL_MS = 12 * 60 * 60 * 1000;
+export const ADMIN_SESSION_TTL_MS = 7 * 24 * 60 * 60 * 1000;
 export const ADMIN_LOGIN_LIMIT = 5;
 export const ADMIN_LOGIN_WINDOW_MS = 15 * 60 * 1000;
 

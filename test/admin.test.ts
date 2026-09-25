@@ -8,6 +8,7 @@ import {
   AdminLoginRateLimiter,
   isAdminConfigured,
   isSameOriginMutation,
+  cookieOptions,
 } from '../src/server/admin-auth';
 import {
   ensureContactStorage,
@@ -26,10 +27,21 @@ const cookie = auth.createCookie(1000);
 assert.equal(cookie.includes('correct-password'), false, 'session cookie does not contain the password');
 assert.equal(auth.authenticate(cookie, 1000 + ADMIN_SESSION_TTL_MS - 1), true, 'session is valid before expiry');
 assert.equal(auth.authenticate(cookie, 1000 + ADMIN_SESSION_TTL_MS), false, 'session expires');
+assert.equal(ADMIN_SESSION_TTL_MS, 7 * 24 * 60 * 60 * 1000, 'session lifetime is seven days');
+assert.match(cookieOptions(false), /Max-Age=604800/, 'development cookie has a seven-day lifetime');
+assert.match(cookieOptions(false), /HttpOnly/, 'admin cookie is HttpOnly');
+assert.match(cookieOptions(false), /SameSite=Lax/, 'admin cookie uses SameSite=Lax');
+assert.doesNotMatch(cookieOptions(false), /Secure/, 'development cookie does not require Secure');
+assert.match(cookieOptions(true), /Secure/, 'production cookie is Secure');
 const activeCookie = auth.createCookie();
 assert.equal(auth.authenticate(activeCookie), true);
 auth.revoke(activeCookie);
 assert.equal(auth.authenticate(activeCookie), false, 'logout revokes the session');
+
+const navigationFlowCookie = auth.createCookie(2000);
+for (const path of ['/api/admin/submissions', '/', '/admin/', '/admin/feed-statistics/', '/', '/admin/feed-statistics/']) {
+  assert.equal(auth.authenticate(navigationFlowCookie, 2000 + 1), true, `session survives navigation through ${path}`);
+}
 
 const limiter = new AdminLoginRateLimiter();
 for (let attempt = 0; attempt < 5; attempt += 1) {
