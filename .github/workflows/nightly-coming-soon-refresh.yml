@@ -5,6 +5,10 @@ on:
     - cron: '23 */6 * * *'
   workflow_dispatch:
 
+concurrency:
+  group: generated-main-writes
+  cancel-in-progress: false
+
 jobs:
   refresh:
     runs-on: ubuntu-latest
@@ -14,6 +18,8 @@ jobs:
     steps:
       - name: Check out XmasDB
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
@@ -44,5 +50,5 @@ jobs:
             echo "No Coming Soon metadata or artwork changes to commit."
           else
             git commit -m "Refresh Coming Soon TMDB metadata"
-            git push
+            .github/scripts/push-generated-commit.sh origin main
           fi
