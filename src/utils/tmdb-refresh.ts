@@ -1,6 +1,6 @@
 import type { Movie } from '../types';
 import { fetchTmdbMovie } from './tmdb';
-import { cacheLocalImage } from './local-images';
+import { cacheLocalImage, type ImageRefreshBudget } from './local-images';
 
 function localAssetPath(kind: 'posters' | 'backdrops', id: number): string {
   return `/images/${kind}/${id}.jpg`;
@@ -39,17 +39,21 @@ export function mergeTmdbMovie(movie: Movie, refreshed: Partial<Movie>, posterUr
     backdropUrl: backdropUrl || movie.backdropUrl,
   };
   const changed = Object.keys(merged).some((key) => JSON.stringify(merged[key as keyof Movie]) !== JSON.stringify(movie[key as keyof Movie]));
-  return changed ? { ...merged, tmdbUpdatedAt: new Date().toISOString() } : movie;
+  const tmdbFetchedAt = new Date().toISOString();
+  return changed
+    ? { ...merged, tmdbUpdatedAt: tmdbFetchedAt, tmdbFetchedAt }
+    : { ...movie, tmdbFetchedAt };
 }
 
 export async function refreshTmdbMovie(
   movie: Movie,
   apiKey: string,
   cacheImage: typeof cacheLocalImage = cacheLocalImage,
+  imageBudget?: ImageRefreshBudget,
 ): Promise<Movie> {
   const refreshed = await fetchTmdbMovie(movie.tmdbId, apiKey);
   if (!refreshed) throw new Error(`TMDB returned no movie data for ${movie.tmdbId}`);
-  const posterUrl = await cacheImage(refreshed.posterUrl, localAssetPath('posters', movie.tmdbId));
-  const backdropUrl = await cacheImage(refreshed.backdropUrl, localAssetPath('backdrops', movie.tmdbId));
+  const posterUrl = await cacheImage(refreshed.posterUrl, localAssetPath('posters', movie.tmdbId), { refreshBudget: imageBudget });
+  const backdropUrl = await cacheImage(refreshed.backdropUrl, localAssetPath('backdrops', movie.tmdbId), { refreshBudget: imageBudget });
   return mergeTmdbMovie(movie, refreshed, posterUrl, backdropUrl);
 }

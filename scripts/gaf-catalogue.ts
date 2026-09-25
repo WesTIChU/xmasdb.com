@@ -337,9 +337,10 @@ async function importGaf(discovery: GafDiscovery): Promise<void> {
       genres: metadata.genres,
       releaseDates: metadata.releaseDates,
       crew: metadata.crew,
-      voteAverage: metadata.voteAverage,
-      voteCount: metadata.voteCount,
-      status,
+       voteAverage: metadata.voteAverage,
+       voteCount: metadata.voteCount,
+       tmdbFetchedAt: new Date().toISOString(),
+       status,
       isComingSoon: status === 'coming-soon',
       links: {
         tmdb: `https://www.themoviedb.org/movie/${match.id}`,

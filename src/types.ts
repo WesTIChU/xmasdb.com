@@ -83,6 +83,7 @@ export interface Movie {
   voteCount?: number;
   status?: string;
   tmdbUpdatedAt?: string;
+  tmdbFetchedAt?: string;
 }
 
 export interface Actor {
@@ -106,4 +107,5 @@ export interface Actor {
   facebookId?: string;
   notableRoles?: string;
   tmdbUpdatedAt?: string;
+  tmdbFetchedAt?: string;
 }

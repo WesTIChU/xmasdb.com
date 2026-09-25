@@ -7,9 +7,12 @@ import { MOVIES } from '../src/data/movies';
 import { enrichCataloguePeople } from '../src/utils/person-enrichment';
 import { requireTmdbApiKey } from '../src/utils/tmdb';
 import { writeFileAtomically } from '../src/utils/atomic-file';
+import { createImageRefreshBudget, getImageCacheFreshnessStats } from '../src/utils/local-images';
+import { completeRefreshRun, createRefreshRun, startRefreshRun } from '../src/server/tmdb-refresh-health';
 
 const execFileAsync = promisify(execFile);
 const refreshReportPath = path.join(process.cwd(), 'src/data/refresh-report.json');
+let activeRun: Awaited<ReturnType<typeof createRefreshRun>> | undefined;
 
 function personIdOption(): number | undefined {
   const index = process.argv.indexOf('--person');
@@ -19,12 +22,17 @@ function personIdOption(): number | undefined {
 }
 
 async function main() {
+  const run = createRefreshRun('manual');
+  activeRun = run;
+  await startRefreshRun(run);
+  const imageBudget = createImageRefreshBudget();
+  const imageStatsBefore = await getImageCacheFreshnessStats();
   const apiKey = requireTmdbApiKey();
   const personId = personIdOption();
   const skipBuild = process.argv.includes('--skip-build');
   const result = await enrichCataloguePeople(MOVIES, apiKey, personId, (current, total, person) => {
     console.log(`[TMDB Person] ${current}/${total} ${person.name} (${person.tmdbPersonId})`);
-  });
+  }, { imageBudget });
 
   if (personId && result.actor) {
     console.log(`TMDB person ID: ${result.actor.tmdbPersonId}`);
@@ -68,9 +76,29 @@ async function main() {
     console.log('Regenerating the local production bundle...');
     await execFileAsync('npm', ['run', 'build'], { cwd: process.cwd() });
   }
+  const imageStats = await getImageCacheFreshnessStats();
+  await completeRefreshRun(run.id, {
+    status: result.failures.length || imageBudget.failed ? 'PARTIAL' : 'SUCCESS',
+    counters: { ...run.counters, actorsAttempted: result.incomplete, actorsSuccessful: result.updated, actorsFailed: result.failures.length, actorsSkippedFresh: result.total - result.incomplete, imagesAttempted: imageBudget.attempted, imagesSuccessful: imageBudget.succeeded, imagesFailed: imageBudget.failed, posterImagesSuccessful: imageBudget.byType.posters.succeeded, backdropImagesSuccessful: imageBudget.byType.backdrops.succeeded, peopleImagesSuccessful: imageBudget.byType.people.succeeded, posterImagesFailed: imageBudget.byType.posters.failed, backdropImagesFailed: imageBudget.byType.backdrops.failed, peopleImagesFailed: imageBudget.byType.people.failed },
+    failures: [
+      ...result.failures.map((failure) => ({ key: `actor:${failure.tmdbPersonId}`, kind: 'actor' as const, operation: 'fetch person metadata', tmdbId: failure.tmdbPersonId, message: failure.message, timestamp: new Date().toISOString() })),
+      ...imageBudget.failureDetails.map((failure) => ({ key: `image:${failure.localPath}`, kind: 'image' as const, operation: 'download/revalidate image', message: failure.message, timestamp: new Date().toISOString() })),
+    ],
+    successKeys: result.attemptedIds.filter((id) => !result.failures.some((failure) => failure.tmdbPersonId === id)).map((id) => `actor:${id}`),
+    freshness: { freshMovies: 0, staleMovies: 0, freshActors: result.actors.filter((actor) => actor.tmdbFetchedAt).length, staleActors: 0, legacyActors: result.actors.filter((actor) => !actor.tmdbFetchedAt).length, freshImages: imageStats.freshImages, staleImages: imageStats.staleImages, legacyImages: imageStats.legacyImages, oldestSuccessfulFetchAt: imageStats.oldestSuccessfulFetchAt },
+    legacyActorsBefore: result.actors.length - result.updated,
+    legacyActorsProcessed: result.updated,
+    legacyImagesBefore: imageStatsBefore.legacyImages,
+    legacyImagesProcessed: Math.max(0, imageStatsBefore.legacyImages - imageStats.legacyImages),
+  });
+  activeRun = undefined;
 }
 
-main().catch((error) => {
+main().catch(async (error) => {
   console.error(`[TMDB Person] ${error instanceof Error ? error.message : String(error)}`);
+  if (activeRun) {
+    await completeRefreshRun(activeRun.id, { status: 'FAILED', counters: activeRun.counters, failures: [{ key: `system:${activeRun.id}`, kind: 'system', operation: 'refresh process', message: error instanceof Error ? error.message : String(error), timestamp: new Date().toISOString() }], successKeys: [] }).catch(() => undefined);
+    activeRun = undefined;
+  }
   process.exitCode = 1;
 });

@@ -217,6 +217,7 @@ function applyTmdbMovieRefresh(movie: Movie, refreshed: Partial<Movie>): Movie {
     brandId: 'hallmark',
     status: movie.status,
     isComingSoon: movie.isComingSoon,
+    tmdbFetchedAt: new Date().toISOString(),
   };
 }
 
@@ -300,7 +301,8 @@ async function importCatalogue() {
         if (refreshed) {
           const profile = refreshed.profileUrl ? localAssetPath(refreshed.profileUrl, 'people', cast.tmdbPersonId) : undefined;
           if (refreshed.profileUrl && profile) await cacheImage(refreshed.profileUrl, profile);
-          actor = { ...actor, ...refreshed, photoUrl: profile || actor.photoUrl, profileUrl: profile || actor.profileUrl, id: actor.id, slug: actor.slug, tmdbPersonId: cast.tmdbPersonId };
+           const fetchedAt = new Date().toISOString();
+           actor = { ...actor, ...refreshed, photoUrl: profile || actor.photoUrl, profileUrl: profile || actor.profileUrl, id: actor.id, slug: actor.slug, tmdbPersonId: cast.tmdbPersonId, tmdbFetchedAt: fetchedAt, tmdbUpdatedAt: fetchedAt };
         } else {
           report.refreshFailures++;
         }

@@ -151,9 +151,10 @@ async function main() {
       genres: metadata.genres,
       releaseDates: metadata.releaseDates,
       crew: metadata.crew,
-      voteAverage: metadata.voteAverage,
-      voteCount: metadata.voteCount,
-      status: 'coming-soon',
+       voteAverage: metadata.voteAverage,
+       voteCount: metadata.voteCount,
+       tmdbFetchedAt: new Date().toISOString(),
+       status: 'coming-soon',
       isComingSoon: true,
       links: {
         tmdb: `https://www.themoviedb.org/movie/${approved.tmdbId}`,

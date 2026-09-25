@@ -4,7 +4,7 @@ import os from 'node:os';
 import path from 'node:path';
 import { Movie } from '../src/types';
 import { mergeTmdbMovie, selectPeopleRefreshMovies } from '../src/utils/tmdb-refresh';
-import { cacheLocalImage } from '../src/utils/local-images';
+import { cacheLocalImage, createImageRefreshBudget } from '../src/utils/local-images';
 
 console.log('Running TMDB refresh tests...');
 
@@ -37,7 +37,9 @@ assert.strictEqual(merged.brandId, 'hallmark');
 assert.strictEqual(merged.status, 'coming-soon');
 assert.strictEqual(merged.isComingSoon, true);
 const unchanged = mergeTmdbMovie(movie, { releaseDate: movie.releaseDate, synopsis: movie.synopsis }, movie.posterUrl);
-assert.strictEqual(unchanged, movie, 'unchanged TMDB data does not update the timestamp');
+assert.notStrictEqual(unchanged, movie, 'successful unchanged TMDB data records a fetch timestamp');
+assert.ok(unchanged.tmdbFetchedAt, 'unchanged TMDB data records tmdbFetchedAt');
+assert.equal(unchanged.tmdbUpdatedAt, undefined, 'unchanged TMDB data preserves update semantics');
 
 const castMember = (tmdbPersonId: number, name: string) => ({
   actorId: String(tmdbPersonId), name, character: '', slug: name.toLowerCase().replaceAll(' ', '-'), tmdbPersonId,
@@ -77,7 +79,43 @@ try {
   assert.ok(second && second !== first);
   assert.strictEqual(third, second);
   assert.strictEqual(downloads, 2);
+
+  const freshManifestPath = path.join(root, 'images/fresh-manifest.json');
+  const freshLocalPath = path.join(root, 'images/posters/fresh.jpg');
+  await fs.mkdir(path.dirname(freshLocalPath), { recursive: true });
+  await fs.writeFile(freshLocalPath, 'fresh-local');
+  await fs.writeFile(freshManifestPath, JSON.stringify({
+    '/images/posters/fresh.jpg': { remoteUrl: 'https://image.tmdb.org/fresh.jpg', fetchedAt: new Date().toISOString() },
+  }));
+  await cacheLocalImage('https://image.tmdb.org/fresh.jpg', '/images/posters/fresh.jpg', { publicRoot: root, manifestPath: freshManifestPath });
+  assert.strictEqual(downloads, 2, 'fresh image is reused without downloading');
+
+  const staleManifestPath = path.join(root, 'images/stale-manifest.json');
+  const staleLocalPath = path.join(root, 'images/posters/stale.jpg');
+  await fs.writeFile(staleLocalPath, 'stale-local');
+  await fs.writeFile(staleManifestPath, JSON.stringify({
+    '/images/posters/stale.jpg': { remoteUrl: 'https://image.tmdb.org/stale.jpg', fetchedAt: '2025-01-01T00:00:00.000Z' },
+  }));
+  await cacheLocalImage('https://image.tmdb.org/stale.jpg', '/images/posters/stale.jpg', { publicRoot: root, manifestPath: staleManifestPath, refreshBudget: createImageRefreshBudget(1) });
+  assert.strictEqual(downloads, 3, 'stale image is revalidated');
+
+  const legacyManifestPath = path.join(root, 'images/legacy-manifest.json');
+  const legacyOne = path.join(root, 'images/posters/legacy-one.jpg');
+  const legacyTwo = path.join(root, 'images/posters/legacy-two.jpg');
+  await fs.writeFile(legacyOne, 'legacy-one');
+  await fs.writeFile(legacyTwo, 'legacy-two');
+  await fs.writeFile(legacyManifestPath, JSON.stringify({
+    '/images/posters/legacy-one.jpg': 'https://image.tmdb.org/legacy-one.jpg',
+    '/images/posters/legacy-two.jpg': 'https://image.tmdb.org/legacy-two.jpg',
+  }));
+  const legacyBudget = createImageRefreshBudget(1);
+  await cacheLocalImage('https://image.tmdb.org/legacy-one.jpg', '/images/posters/legacy-one.jpg', { publicRoot: root, manifestPath: legacyManifestPath, refreshBudget: legacyBudget });
+  await cacheLocalImage('https://image.tmdb.org/legacy-two.jpg', '/images/posters/legacy-two.jpg', { publicRoot: root, manifestPath: legacyManifestPath, refreshBudget: legacyBudget });
+  assert.strictEqual(downloads, 4, 'legacy image migration is bounded');
 } finally {
   globalThis.fetch = originalFetch;
   await fs.rm(root, { recursive: true, force: true });
 }
+
+console.log('TMDB metadata, actor freshness, image freshness, and bounded migration tests passed.');
+process.exit(0);

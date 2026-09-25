@@ -108,6 +108,46 @@ export interface FeedStatisticsPayload {
   feeds: FeedStatisticsRow[];
 }
 
+export interface TmdbRefreshRun {
+  id: string;
+  type: 'full' | 'coming-soon' | 'manual' | 'import';
+  startedAt: string;
+  finishedAt?: string;
+  durationMs?: number;
+  status: 'RUNNING' | 'SUCCESS' | 'PARTIAL' | 'FAILED';
+  counters: Record<string, number>;
+  freshness?: Record<string, number | string | undefined>;
+  legacyActorsBefore?: number;
+  legacyActorsProcessed?: number;
+  legacyImagesBefore?: number;
+  legacyImagesProcessed?: number;
+  failures: TmdbRefreshFailure[];
+}
+
+export interface TmdbRefreshFailure {
+  key: string;
+  kind: 'movie' | 'actor' | 'image' | 'system';
+  operation: string;
+  tmdbId?: number;
+  message: string;
+  httpStatus?: number;
+  timestamp: string;
+  recoveredAt?: string;
+}
+
+export interface TmdbRefreshHealthPayload {
+  current: { status: 'HEALTHY' | 'ATTENTION NEEDED'; reasons: string[]; unresolvedFailures: number; overdueRecords: number };
+  schedule: { nextFull: string; nextComingSoon: string };
+  lastFull?: TmdbRefreshRun;
+  lastComingSoon?: TmdbRefreshRun;
+  latestRun?: TmdbRefreshRun;
+  movies: { total: number; checked: number; changed: number; unchanged: number; failed: number; fresh: number; stale: number; neverFetched: number; oldestSuccessfulFetch?: string };
+  actors: { total: number; fresh: number; stale: number; legacy: number; attempted: number; successful: number; failed: number; skippedFresh: number; oldestSuccessfulFetch?: string; legacyInitially?: number; processedThisRun?: number; remaining: number };
+  images: Record<'posters' | 'backdrops' | 'people', { total: number; fresh: number; stale: number; legacy: number; refreshedThisRun: number; failedThisRun: number; oldestSuccessfulFetch?: string }>;
+  history: TmdbRefreshRun[];
+  unresolvedFailureDetails: TmdbRefreshFailure[];
+}
+
 /** Full movie detail plus lightweight related cards from the same brand. */
 export interface MovieCrewCredit {
   tmdbPersonId: number;

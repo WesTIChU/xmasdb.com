@@ -42,6 +42,7 @@ import { trackSuccessfulFeedResponse } from './src/server/feed-route';
 import { isTrustedProxyAddress, PublicFeedRateLimiter } from './src/server/feed-rate-limit';
 import { enrichNewCatalogueActors } from './src/server/actor-import';
 import { notifyFlarumMovieAdded } from './src/server/flarum';
+import { getTmdbRefreshHealth } from './src/server/tmdb-refresh-health';
 
 function isKnownPagePath(rawPath: string): boolean {
   const clean = rawPath.replace(/^\/+|\/+$/g, '');
@@ -436,6 +437,15 @@ async function startServer() {
     } catch (error) {
       console.error(`[Admin Feed Statistics] ${error instanceof Error ? error.message : 'statistics could not be read'}`);
       return res.status(500).json({ error: 'Feed statistics could not be read safely.' });
+    }
+  });
+
+  app.get('/api/admin/tmdb-refresh-health', requireAdmin, async (_req, res) => {
+    try {
+      return res.setHeader('Cache-Control', 'no-store').json(await getTmdbRefreshHealth(new Date(), contactDataDir));
+    } catch (error) {
+      console.error(`[Admin TMDB Health] ${error instanceof Error ? error.message : String(error)}`);
+      return res.status(500).json({ error: 'TMDB refresh health could not be loaded.' });
     }
   });
 

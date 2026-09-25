@@ -151,7 +151,7 @@ async function importConfirmed(report: { candidates: Candidate[]; collisions: Ar
       slug: slugify(metadata.title), title: metadata.title, year: candidate.year || Number(metadata.releaseDate.slice(0, 4)), brandId: 'lifetime',
       releaseDate: metadata.releaseDate, premiereDate: metadata.releaseDate, runtimeMinutes: metadata.runtimeMinutes, synopsis: metadata.synopsis || '', posterUrl: posterUrl || '', backdropUrl,
       cast: metadata.cast, director: metadata.director, tmdbId: candidate.tmdbId!, imdbId: metadata.imdbId, trailers: metadata.trailers, trailerYoutubeKey: metadata.trailerYoutubeKey,
-      originalTitle: metadata.originalTitle, tagline: metadata.tagline, genres: metadata.genres, releaseDates: metadata.releaseDates, crew: metadata.crew, voteAverage: metadata.voteAverage, voteCount: metadata.voteCount,
+       originalTitle: metadata.originalTitle, tagline: metadata.tagline, genres: metadata.genres, releaseDates: metadata.releaseDates, crew: metadata.crew, voteAverage: metadata.voteAverage, voteCount: metadata.voteCount, tmdbFetchedAt: new Date().toISOString(),
       status: 'collection', isComingSoon: false, links: { tmdb: `https://www.themoviedb.org/movie/${candidate.tmdbId}`, imdb: metadata.imdbId ? `https://www.imdb.com/title/${metadata.imdbId}/` : undefined },
     }));
   }

@@ -3,16 +3,21 @@ import path from 'node:path';
 import { execFile } from 'node:child_process';
 import { promisify } from 'node:util';
 import { MOVIES } from '../src/data/movies';
+import { ACTORS } from '../src/data/actors';
 import { Movie } from '../src/types';
 import { fetchTmdbMovie, requireTmdbApiKey } from '../src/utils/tmdb';
 import { enrichCataloguePeople } from '../src/utils/person-enrichment';
 import { reconcileMovieLifecycle } from '../src/utils/catalogue-lifecycle';
 import { writeFileAtomically } from '../src/utils/atomic-file';
 import { refreshTmdbMovie, selectPeopleRefreshMovies } from '../src/utils/tmdb-refresh';
+import { createImageRefreshBudget, getImageCacheFreshnessStats } from '../src/utils/local-images';
+import { isTmdbFresh, timestampAgeDays } from '../src/utils/tmdb-freshness';
+import { completeRefreshRun, createRefreshRun, startRefreshRun, type RefreshFailure, type RefreshRun } from '../src/server/tmdb-refresh-health';
 
 const moviesPath = path.join(process.cwd(), 'src/data/movies.ts');
 const refreshReportPath = path.join(process.cwd(), 'src/data/refresh-report.json');
 const execFileAsync = promisify(execFile);
+let activeRun: RefreshRun | undefined;
 
 function parseOption(name: string): string | undefined {
   const index = process.argv.indexOf(name);
@@ -24,11 +29,18 @@ function generatedMoviesModule(movies: Movie[]): string {
 }
 
 async function main() {
-  const apiKey = requireTmdbApiKey();
   const requestedId = parseOption('--movie') || parseOption('--tmdb-id');
   const checkOnly = process.argv.includes('--check');
   const skipBuild = process.argv.includes('--skip-build');
   const comingSoonOnly = process.argv.includes('--coming-soon-only');
+  const scheduledRun = process.env.GITHUB_EVENT_NAME === 'schedule';
+  const runType = scheduledRun ? (comingSoonOnly ? 'coming-soon' : 'full') : 'manual' as const;
+  activeRun = createRefreshRun(runType);
+  await startRefreshRun(activeRun);
+  const imageBudget = createImageRefreshBudget();
+  const imageStatsBefore = await getImageCacheFreshnessStats();
+  const legacyActorsBefore = ACTORS.filter((actor) => !actor.tmdbFetchedAt).length;
+  const apiKey = requireTmdbApiKey();
   const candidateMovies = comingSoonOnly ? MOVIES.filter((movie) => movie.isComingSoon) : MOVIES;
   const targets = requestedId
     ? candidateMovies.filter((movie) => movie.tmdbId === Number(requestedId))
@@ -40,6 +52,13 @@ async function main() {
     if (!target) throw new Error('No local movies are available for an authentication check.');
     const result = await fetchTmdbMovie(target.tmdbId, apiKey);
     if (!result) throw new Error(`TMDB authentication check failed for movie ${target.tmdbId}.`);
+    await completeRefreshRun(activeRun.id, {
+      status: 'SUCCESS',
+      counters: { ...activeRun.counters, moviesAttempted: 1, moviesSuccessful: 1, moviesUnchanged: 1 },
+      failures: [],
+      successKeys: [`movie:${target.tmdbId}`],
+    });
+    activeRun = undefined;
     console.log(`TMDB authentication succeeded using local movie ${target.tmdbId}.`);
     return;
   }
@@ -48,7 +67,7 @@ async function main() {
   const failures: Array<{ tmdbId: number; title: string; message: string }> = [];
   for (const movie of targets) {
     try {
-      const refreshed = await refreshTmdbMovie(movie, apiKey);
+      const refreshed = await refreshTmdbMovie(movie, apiKey, undefined, imageBudget);
       refreshedMovies.push(refreshed);
       console.log(`Refreshed movie ${movie.tmdbId}: ${movie.title}`);
     } catch (error) {
@@ -67,7 +86,7 @@ async function main() {
   });
   const peopleResult = await enrichCataloguePeople(peopleMovies, apiKey, undefined, (current, total, person) => {
     console.log(`[TMDB Person] ${current}/${total} ${person.name} (${person.tmdbPersonId})`);
-  });
+  }, { imageBudget });
   const actorsById = new Map(peopleResult.actors.map((actor) => [actor.tmdbPersonId, actor]));
   const localMovies = mergedMovies.map((movie) => ({
     ...movie,
@@ -81,6 +100,63 @@ async function main() {
       } : cast;
     }),
   }));
+  const now = new Date();
+  const imageStats = await getImageCacheFreshnessStats(undefined, now);
+  const freshMovies = localMovies.filter((movie) => isTmdbFresh(movie.tmdbFetchedAt, now)).length;
+  const staleMovies = localMovies.length - freshMovies;
+  const freshActors = peopleResult.actors.filter((actor) => isTmdbFresh(actor.tmdbFetchedAt, now)).length;
+  const legacyActors = peopleResult.actors.filter((actor) => !actor.tmdbFetchedAt).length;
+  const staleActors = peopleResult.actors.length - freshActors - legacyActors;
+  const successfulFetches = [
+    ...localMovies.map((movie) => movie.tmdbFetchedAt),
+    ...peopleResult.actors.map((actor) => actor.tmdbFetchedAt),
+    imageStats.oldestSuccessfulFetchAt,
+  ].filter((timestamp): timestamp is string => Boolean(timestamp));
+  const oldestSuccessfulFetchAt = successfulFetches.sort((a, b) => Date.parse(a) - Date.parse(b))[0];
+  const runFailures: RefreshFailure[] = [
+    ...failures.map((failure) => ({ key: `movie:${failure.tmdbId}`, kind: 'movie' as const, operation: 'fetch movie metadata', tmdbId: failure.tmdbId, message: failure.message, timestamp: now.toISOString() })),
+    ...peopleResult.failures.map((failure) => ({ key: `actor:${failure.tmdbPersonId}`, kind: 'actor' as const, operation: 'fetch person metadata', tmdbId: failure.tmdbPersonId, message: failure.message, timestamp: now.toISOString() })),
+    ...imageBudget.failureDetails.map((failure) => ({ key: `image:${failure.localPath}`, kind: 'image' as const, operation: 'download/revalidate image', message: failure.message, timestamp: now.toISOString() })),
+  ];
+  const failedMovieIds = new Set(failures.map((failure) => failure.tmdbId));
+  const successfulMovies = refreshedMovies.filter((movie) => !failedMovieIds.has(movie.tmdbId));
+  const changedMovies = successfulMovies.filter((movie) => movie.tmdbUpdatedAt !== MOVIES.find((original) => original.tmdbId === movie.tmdbId)?.tmdbUpdatedAt);
+  const successfulKeys = [
+    ...successfulMovies.map((movie) => `movie:${movie.tmdbId}`),
+    ...peopleResult.attemptedIds.filter((personId) => !peopleResult.failures.some((failure) => failure.tmdbPersonId === personId)).map((personId) => `actor:${personId}`),
+  ];
+  if (activeRun) {
+    await completeRefreshRun(activeRun.id, {
+      status: runFailures.length > 0 ? 'PARTIAL' : 'SUCCESS',
+      counters: {
+        moviesAttempted: targets.length,
+        moviesSuccessful: targets.length - failures.length,
+        moviesChanged: changedMovies.length,
+        moviesUnchanged: successfulMovies.length - changedMovies.length,
+        moviesFailed: failures.length,
+        actorsAttempted: peopleResult.incomplete,
+        actorsSuccessful: peopleResult.updated,
+        actorsFailed: peopleResult.failures.length,
+        actorsSkippedFresh: Math.max(0, peopleResult.total - peopleResult.incomplete),
+        imagesAttempted: imageBudget.attempted,
+        imagesSuccessful: imageBudget.succeeded,
+        imagesFailed: imageBudget.failed,
+        posterImagesSuccessful: imageBudget.byType.posters.succeeded,
+        backdropImagesSuccessful: imageBudget.byType.backdrops.succeeded,
+        peopleImagesSuccessful: imageBudget.byType.people.succeeded,
+        posterImagesFailed: imageBudget.byType.posters.failed,
+        backdropImagesFailed: imageBudget.byType.backdrops.failed,
+        peopleImagesFailed: imageBudget.byType.people.failed,
+      },
+      failures: runFailures,
+      successKeys: successfulKeys,
+      freshness: { freshMovies, staleMovies, freshActors, staleActors, legacyActors, freshImages: imageStats.freshImages, staleImages: imageStats.staleImages, legacyImages: imageStats.legacyImages, oldestSuccessfulFetchAt },
+      legacyActorsBefore,
+      legacyActorsProcessed: Math.max(0, legacyActorsBefore - legacyActors),
+      legacyImagesBefore: imageStatsBefore.legacyImages,
+      legacyImagesProcessed: Math.max(0, imageStatsBefore.legacyImages - imageStats.legacyImages),
+    });
+  }
   await writeFileAtomically(moviesPath, generatedMoviesModule(localMovies));
   console.log(`Catalogue movies: ${MOVIES.length}`);
   console.log(`Movies with TMDB IDs: ${MOVIES.filter((movie) => movie.tmdbId > 0).length}`);
@@ -104,15 +180,35 @@ async function main() {
     uniqueCatalogueActors: peopleResult.total,
     actorsSuccessfullyRefreshed: peopleResult.updated,
     actorFailures: peopleResult.failures,
+    freshMovieRecords: freshMovies,
+    staleMovieRecords: staleMovies,
+    freshActors,
+    staleActors,
+    legacyActorsAwaitingFreshnessTimestamp: legacyActors,
+    freshImages: imageStats.freshImages,
+    staleImages: imageStats.staleImages,
+    legacyImagesAwaitingFreshnessTimestamp: imageStats.legacyImages,
+    oldestSuccessfulFetchAt,
+    oldestSuccessfulFetchAgeDays: timestampAgeDays(oldestSuccessfulFetchAt, now),
   }, null, 2));
   if (!skipBuild) {
     console.log('Regenerating the local production bundle...');
     await execFileAsync('npm', ['run', 'build'], { cwd: process.cwd() });
   }
+  activeRun = undefined;
   if (failures.length > 0 || peopleResult.failures.length > 0) process.exitCode = 1;
 }
 
-main().catch((error) => {
+main().catch(async (error) => {
   console.error(`[TMDB Refresh] ${error instanceof Error ? error.message : String(error)}`);
+  if (activeRun) {
+    await completeRefreshRun(activeRun.id, {
+      status: 'FAILED',
+      counters: activeRun.counters,
+      failures: [{ key: `system:${activeRun.id}`, kind: 'system', operation: 'refresh process', message: error instanceof Error ? error.message : String(error), timestamp: new Date().toISOString() }],
+      successKeys: [],
+    }).catch(() => undefined);
+    activeRun = undefined;
+  }
   process.exitCode = 1;
 });

@@ -78,9 +78,10 @@ export async function enrichNewCatalogueActors(
           alsoKnownAs: fetched.alsoKnownAs?.length ? fetched.alsoKnownAs : existing?.alsoKnownAs,
           instagramId: fetched.instagramId ?? existing?.instagramId,
           twitterId: fetched.twitterId ?? existing?.twitterId,
-          facebookId: fetched.facebookId ?? existing?.facebookId,
-          tmdbUpdatedAt: new Date().toISOString(),
-        };
+           facebookId: fetched.facebookId ?? existing?.facebookId,
+           tmdbUpdatedAt: new Date().toISOString(),
+           tmdbFetchedAt: new Date().toISOString(),
+         };
         actorsById.set(person.tmdbPersonId, actor);
       } catch (error) {
         console.error(`[Actor Enrichment] Failed for ${person.name} (${person.tmdbPersonId}): ${error instanceof Error ? error.message : String(error)}`);

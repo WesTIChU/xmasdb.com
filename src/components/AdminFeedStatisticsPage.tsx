@@ -1,5 +1,6 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import type { FeedStatisticsPayload, FeedStatisticsRow } from '../api/types';
+import { AdminTmdbRefreshHealth } from './AdminTmdbRefreshHealth';
 
 interface AdminFeedStatisticsPageProps {
   onNavigate: (path: string) => void;
@@ -114,6 +115,8 @@ export const AdminFeedStatisticsPage: React.FC<AdminFeedStatisticsPageProps> = (
           </div>
           <AdminNavigation onNavigate={onNavigate} onLogout={() => void logout()} />
         </div>
+
+        <AdminTmdbRefreshHealth onNavigate={onNavigate} />
 
         <div className="mt-7 grid grid-cols-2 gap-3 sm:grid-cols-4 sm:gap-4">
           {summaryCards.map(([label, value]) => (

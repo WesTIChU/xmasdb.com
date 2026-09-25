@@ -5,6 +5,8 @@ import { fetchTmdbPerson } from './tmdb';
 import { writeFileAtomically } from './atomic-file';
 import { cacheLocalImage } from './local-images';
 import { getCreativeCrew, getPersonSlug } from './creative-crew';
+import { isTmdbFresh, TMDB_MIGRATION_BATCH_SIZE } from './tmdb-freshness';
+import type { ImageRefreshBudget } from './local-images';
 
 const actorsPath = path.join(process.cwd(), 'src/data/actors.json');
 
@@ -14,6 +16,7 @@ export interface PersonEnrichmentResult {
   skipped: number;
   updated: number;
   failures: Array<{ tmdbPersonId: number; name: string; message: string }>;
+  attemptedIds: number[];
   actor?: Actor;
   actors: Actor[];
 }
@@ -26,8 +29,8 @@ interface CataloguePersonSeed {
   profileUrl?: string;
 }
 
-export function isActorEnriched(actor: Pick<Actor, 'tmdbUpdatedAt'> | undefined): boolean {
-  return Boolean(actor?.tmdbUpdatedAt);
+export function isActorEnriched(actor: Pick<Actor, 'tmdbFetchedAt'> | undefined, now: Date = new Date()): boolean {
+  return isTmdbFresh(actor?.tmdbFetchedAt, now);
 }
 
 async function readActors(): Promise<Map<number, Actor>> {
@@ -39,8 +42,8 @@ async function readActors(): Promise<Map<number, Actor>> {
   }
 }
 
-async function cacheProfile(url: string | undefined, tmdbPersonId: number): Promise<string | undefined> {
-  return cacheLocalImage(url, `/images/people/${tmdbPersonId}.webp`);
+async function cacheProfile(url: string | undefined, tmdbPersonId: number, imageBudget?: ImageRefreshBudget): Promise<string | undefined> {
+  return cacheLocalImage(url, `/images/people/${tmdbPersonId}.webp`, { refreshBudget: imageBudget });
 }
 
 export function cataloguePeople(movies: Movie[]): Map<number, CataloguePersonSeed> {
@@ -85,7 +88,8 @@ export async function enrichCataloguePeople(
   movies: Movie[],
   apiKey: string,
   personId?: number,
-  onProgress?: (current: number, total: number, person: CataloguePersonSeed) => void
+  onProgress?: (current: number, total: number, person: CataloguePersonSeed) => void,
+  options: { maxPeople?: number; imageBudget?: ImageRefreshBudget } = {},
 ): Promise<PersonEnrichmentResult> {
   const people = cataloguePeople(movies);
   const person = personId ? people.get(personId) : undefined;
@@ -94,10 +98,15 @@ export async function enrichCataloguePeople(
   }
 
   const actorsById = await readActors();
-  const target = personId
+  const candidates = personId
     ? new Map([[personId, person!]])
     : new Map(findIncompleteCataloguePeople(movies, actorsById).map((entry) => [entry.tmdbPersonId, entry]));
+  const maxPeople = options.maxPeople ?? TMDB_MIGRATION_BATCH_SIZE;
+  const target = personId
+    ? candidates
+    : new Map([...candidates.entries()].slice(0, maxPeople));
   const failures: PersonEnrichmentResult['failures'] = [];
+  const attemptedIds: number[] = [];
   let updated = 0;
   let current = 0;
   let lastActor: Actor | undefined;
@@ -109,15 +118,17 @@ export async function enrichCataloguePeople(
     while (nextIndex < entries.length) {
       const entry = entries[nextIndex++];
       if (!entry) return;
-      const [tmdbPersonId, person] = entry;
+       const [tmdbPersonId, person] = entry;
+       attemptedIds.push(tmdbPersonId);
       current++;
     onProgress?.(current, entries.length, person);
       try {
         const existing = actorsById.get(tmdbPersonId);
         const fetched = await fetchTmdbPerson(tmdbPersonId, apiKey);
         if (!fetched) throw new Error('TMDB returned no person data');
-        const profileUrl = await cacheProfile(fetched.profileUrl, tmdbPersonId);
-        const actor: Actor = {
+        const profileUrl = await cacheProfile(fetched.profileUrl, tmdbPersonId, options.imageBudget);
+         const fetchedAt = new Date().toISOString();
+         const actor: Actor = {
           id: existing?.id || person.id,
           slug: existing?.slug || person.slug,
           name: fetched.name || existing?.name || person.name,
@@ -135,9 +146,10 @@ export async function enrichCataloguePeople(
           alsoKnownAs: fetched.alsoKnownAs?.length ? fetched.alsoKnownAs : existing?.alsoKnownAs,
           instagramId: fetched.instagramId ?? existing?.instagramId,
           twitterId: fetched.twitterId ?? existing?.twitterId,
-          facebookId: fetched.facebookId ?? existing?.facebookId,
-          tmdbUpdatedAt: new Date().toISOString(),
-        };
+           facebookId: fetched.facebookId ?? existing?.facebookId,
+           tmdbUpdatedAt: fetchedAt,
+           tmdbFetchedAt: fetchedAt,
+         };
         actorsById.set(tmdbPersonId, actor);
         lastActor = actor;
         updated++;
@@ -156,6 +168,7 @@ export async function enrichCataloguePeople(
     skipped: total - entries.length,
     updated,
     failures,
+    attemptedIds,
     actor: lastActor,
     actors: [...actorsById.values()],
   };

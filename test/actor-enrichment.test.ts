@@ -25,13 +25,18 @@ function movie(id: string, people: Array<{ id: number; name: string }>): Movie {
   };
 }
 
-function actor(id: number, name: string, enriched = false): Actor {
+function actor(id: number, name: string, freshness: 'fresh' | 'old' | 'none' = 'none'): Actor {
+  const tmdbFetchedAt = freshness === 'fresh'
+    ? new Date().toISOString()
+    : freshness === 'old'
+      ? '2025-01-01T00:00:00.000Z'
+      : undefined;
   return {
     id: String(id),
     slug: name.toLowerCase().replaceAll(' ', '-'),
     name,
     tmdbPersonId: id,
-    ...(enriched ? { tmdbUpdatedAt: 'already-refreshed' } : {}),
+    ...(tmdbFetchedAt ? { tmdbFetchedAt, tmdbUpdatedAt: 'already-refreshed' } : {}),
   };
 }
 
@@ -64,12 +69,13 @@ try {
     movie('movie-1', [{ id: 101, name: 'First Person' }, { id: 102, name: 'Second Person' }]),
     movie('movie-2', [{ id: 101, name: 'First Person' }, { id: 103, name: 'Failed Person' }]),
   ];
-  const complete = actor(101, 'First Person', true);
+  const complete = actor(101, 'First Person', 'fresh');
   const incomplete = actor(102, 'Second Person');
   const detected = findIncompleteCataloguePeople(movies, [complete, incomplete]);
   assert.deepEqual(detected.map((person) => person.tmdbPersonId).sort((a, b) => a - b), [102, 103]);
   assert.equal(isActorEnriched(complete), true);
   assert.equal(isActorEnriched(incomplete), false);
+  assert.equal(isActorEnriched(actor(9999999, 'Old Person', 'old')), false, 'old actors require refresh');
 
   failures.add(103);
   const firstBatch = await enrichNewCatalogueActors(movies, [complete, incomplete], 'tmdb-key');
@@ -87,6 +93,12 @@ try {
 
   const importedPeople = getNewPeople(movies, new Map(secondBatch.map((candidate) => [candidate.tmdbPersonId, candidate])));
   assert.equal(importedPeople.length, 0, 'a successful multi-movie import leaves no seed-only people');
+
+  const oldActor = actor(9999999, 'Old Person', 'old');
+  const refreshedPeople = await enrichNewCatalogueActors([movie('movie-4', [{ id: 9999999, name: 'Old Person' }])], [oldActor], 'tmdb-key');
+  assert.equal(requests.get(9999999), 1, 'old actor is refreshed');
+  assert.ok(refreshedPeople.find((candidate) => candidate.tmdbPersonId === 9999999)?.tmdbFetchedAt, 'successful actor refresh records fetched timestamp');
+  assert.ok(oldActor.tmdbFetchedAt, 'old actor fixture has a prior fetch timestamp');
 } finally {
   globalThis.fetch = originalFetch;
 }

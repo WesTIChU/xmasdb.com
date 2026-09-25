@@ -119,5 +119,6 @@ export function buildMovieFromTmdb(tmdbId: number, metadata: Partial<Movie>, bra
     voteAverage: metadata.voteAverage,
     voteCount: metadata.voteCount,
     tmdbUpdatedAt: new Date().toISOString(),
+    tmdbFetchedAt: new Date().toISOString(),
   };
 }
