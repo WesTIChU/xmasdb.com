@@ -206917,6 +206917,108 @@ export const MOVIES: Movie[] = [
     "voteCount": 0,
     "tmdbUpdatedAt": "2026-09-25T12:01:51.149Z",
     "premiereDate": "2026-12-12"
+  },
+  {
+    "id": "gaf-2026-a-christmas-prayer-tradition",
+    "slug": "a-christmas-prayer-tradition",
+    "title": "A Christmas Prayer Tradition",
+    "year": 2026,
+    "brandId": "gaf",
+    "releaseDate": "2026-10-24",
+    "synopsis": "Natalie prepares for the launch of her debut children’s book, Adeline the Angel, while Wes continues to deepen his faith journey. When Caroline quietly begins a mission to answer the prayers and needs of those around her community, the family discovers that some of God’s greatest works are accomplished through simple acts of kindness. As Christmas approaches, Bellford Falls once again becomes a place where hope is restored, prayers are answered, and hearts are drawn closer to the reason for the season.",
+    "posterUrl": "",
+    "cast": [
+      {
+        "actorId": "2538604",
+        "name": "Shae Robins",
+        "character": "Natalie Sands",
+        "slug": "shae-robins",
+        "tmdbPersonId": 2538604,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/vfOLdbrzCzKQgMQNU6wMDbSAMi5.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "151975",
+        "name": "Christopher Russell",
+        "character": "Wes Thornton",
+        "slug": "christopher-russell",
+        "tmdbPersonId": 151975,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/hD2wchFBarE1tFYBGORwidEL7pT.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "6431425",
+        "name": "Scott Angus",
+        "character": "Mark",
+        "slug": "scott-angus",
+        "tmdbPersonId": 6431425,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/vO6ImmTF6QD1qStnU89yxetsvjI.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "3882813",
+        "name": "Madeleine Cox",
+        "character": "Caroline",
+        "slug": "madeleine-cox",
+        "tmdbPersonId": 3882813,
+        "order": 3
+      },
+      {
+        "actorId": "4794837",
+        "name": "Zachary Cox",
+        "character": "Drew",
+        "slug": "zachary-cox",
+        "tmdbPersonId": 4794837,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/pWrNfn2muV3uMlNjdEYFItgYOi2.jpg",
+        "order": 4
+      },
+      {
+        "actorId": "5648182",
+        "name": "Rhiann Duncan",
+        "character": "Hannah",
+        "slug": "rhiann-duncan",
+        "tmdbPersonId": 5648182,
+        "order": 5
+      },
+      {
+        "actorId": "3875039",
+        "name": "Andrea Greening",
+        "character": "Bridget",
+        "slug": "andrea-greening",
+        "tmdbPersonId": 3875039,
+        "order": 6
+      }
+    ],
+    "tmdbId": 1754943,
+    "imdbId": "tt43596122",
+    "isComingSoon": true,
+    "status": "coming-soon",
+    "originalTitle": "A Christmas Prayer Tradition",
+    "runtimeMinutes": 84,
+    "genres": [
+      {
+        "id": 10749,
+        "name": "Romance"
+      },
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "US",
+        "releaseDate": "2026-10-24T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "Great American Family"
+      }
+    ],
+    "crew": [],
+    "trailers": [],
+    "voteAverage": 0,
+    "voteCount": 0,
+    "tmdbUpdatedAt": "2026-09-25T15:40:59.983Z"
   }
 ];
 

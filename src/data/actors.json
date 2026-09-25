@@ -5279,6 +5279,15 @@
     "tmdbUpdatedAt": "2026-09-20T16:17:28.791Z"
   },
   {
+    "id": "3875039",
+    "slug": "andrea-greening",
+    "name": "Andrea Greening",
+    "tmdbPersonId": 3875039,
+    "knownForDepartment": "Acting",
+    "knownCredits": 3,
+    "tmdbUpdatedAt": "2026-09-25T15:41:00.150Z"
+  },
+  {
     "id": "590281",
     "slug": "andrea-gyertson-nasfell",
     "name": "Andrea Gyertson Nasfell",
@@ -89050,6 +89059,18 @@
     "knownForDepartment": "Acting",
     "knownCredits": 17,
     "tmdbUpdatedAt": "2026-09-20T16:20:28.770Z"
+  },
+  {
+    "id": "6431425",
+    "slug": "scott-angus",
+    "name": "Scott Angus",
+    "tmdbPersonId": 6431425,
+    "photoUrl": "/images/people/6431425.webp",
+    "profileUrl": "/images/people/6431425.webp",
+    "imdbPersonId": "nm17778649",
+    "knownForDepartment": "Acting",
+    "knownCredits": 2,
+    "tmdbUpdatedAt": "2026-09-25T15:41:00.224Z"
   },
   {
     "id": "3755743",
