@@ -13938,6 +13938,29 @@
     "tmdbUpdatedAt": "2026-09-20T16:17:23.505Z"
   },
   {
+    "id": "52018",
+    "slug": "britt-robertson",
+    "name": "Britt Robertson",
+    "tmdbPersonId": 52018,
+    "photoUrl": "/images/people/52018.webp",
+    "profileUrl": "/images/people/52018.webp",
+    "birthday": "1990-04-18",
+    "placeOfBirth": "Charlotte, North Carolina, USA",
+    "biography": "Brittany Leanna Robertson (born April 18, 1990) is an American actress. She is known for playing the lead role in Tomorrowland, as well as for film roles in The Space Between Us and A Dog's Purpose. Robertson also starred in the 2018 television series For the People. Wikipedia",
+    "imdbPersonId": "nm1429380",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 66,
+    "alsoKnownAs": [
+      "Brittany Robertson",
+      "Brittany Leanna Robertson",
+      "Brittany Leanna Robertson-Floyd"
+    ],
+    "instagramId": "brittlrobertson",
+    "twitterId": "RealBritt_Rob",
+    "tmdbUpdatedAt": "2026-09-25T07:18:13.886Z"
+  },
+  {
     "id": "491560",
     "slug": "brittany-adams",
     "name": "Brittany Adams",
@@ -56795,6 +56818,23 @@
     "tmdbUpdatedAt": "2026-09-20T16:17:35.305Z"
   },
   {
+    "id": "6863",
+    "slug": "kevin-dillon",
+    "name": "Kevin Dillon",
+    "tmdbPersonId": 6863,
+    "photoUrl": "/images/people/6863.webp",
+    "profileUrl": "/images/people/6863.webp",
+    "birthday": "1965-08-19",
+    "placeOfBirth": "Mamaroneck, New York, USA",
+    "biography": "Kevin Brady Dillon (born August 19, 1965) is an American actor. He is best known for portraying Johnny \"Drama\" Chase on the HBO comedy series Entourage, Bunny in the war film Platoon, and John Densmore in the musical biopic The Doors. He was nominated for three Primetime Emmy Awards and a Golden Globe Award for his performance on Entourage.\n\nDescription above from the Wikipedia article Kevin Dillon, licensed under CC-BY-SA, full list of contributors on Wikipedia.",
+    "imdbPersonId": "nm0001143",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 66,
+    "instagramId": "kevindillonofficial",
+    "tmdbUpdatedAt": "2026-09-25T07:18:13.874Z"
+  },
+  {
     "id": "1362798",
     "slug": "kevin-fair",
     "name": "Kevin Fair",
@@ -75341,6 +75381,29 @@
       "Natasha Estelle Williams"
     ],
     "tmdbUpdatedAt": "2026-09-20T16:18:27.788Z"
+  },
+  {
+    "id": "57395",
+    "slug": "natasha-henstridge",
+    "name": "Natasha Henstridge",
+    "tmdbPersonId": 57395,
+    "photoUrl": "/images/people/57395.webp",
+    "profileUrl": "/images/people/57395.webp",
+    "birthday": "1974-08-15",
+    "placeOfBirth": "Springdale, Newfoundland and Labrador, Canada",
+    "biography": "Natasha Henstridge (born August 15, 1974) is a Canadian fashion model turned actress. Her most notable on-screen roles include Species, The Whole Nine Yards, It Had To Be You, and the Canadian TV mini-series Would Be Kings, for which she won the Gemini Award for best actress. Her most recent regular role was as Taylor Wethersby in the TV series Eli Stone.",
+    "imdbPersonId": "nm0000449",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 94,
+    "alsoKnownAs": [
+      "Natasha Tonya Henstridge",
+      "Natasha T. Henstridge",
+      "ناتاشا هنستریج"
+    ],
+    "instagramId": "natashahenstridge",
+    "twitterId": "nathenstridge",
+    "tmdbUpdatedAt": "2026-09-25T07:18:13.868Z"
   },
   {
     "id": "natasha-wilson",

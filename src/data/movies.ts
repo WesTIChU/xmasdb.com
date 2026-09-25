@@ -97978,7 +97978,7 @@ export const MOVIES: Movie[] = [
     "title": "Christmas Wrapped in Love",
     "year": 2026,
     "brandId": "gaf",
-    "releaseDate": "2026-10-31",
+    "releaseDate": "2026-12-19",
     "runtimeMinutes": 84,
     "synopsis": "Natasha Lloyd has built a unique business helping clients locate thoughtful, one-of-a-kind gifts for the people they love. When overworked surgeon Ryan Bartlett finds himself tasked with purchasing meaningful Christmas gifts for his entire family, he hires Natasha for help. To uncover the perfect presents, Natasha agrees to pose as Ryan’s girlfriend and spend the holiday season getting to know his family. What begins as a professional arrangement soon becomes something much more as Natasha discovers the true meaning of family, belonging, and love at Christmas.",
     "posterUrl": "",
@@ -98071,7 +98071,7 @@ export const MOVIES: Movie[] = [
     "releaseDates": [
       {
         "country": "US",
-        "releaseDate": "2026-10-31T00:00:00.000Z",
+        "releaseDate": "2026-12-19T00:00:00.000Z",
         "type": 6,
         "certification": "G",
         "note": "Great American Family"
@@ -98094,8 +98094,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1754947",
       "imdb": "https://www.imdb.com/title/tt43674919/"
     },
-    "tmdbUpdatedAt": "2026-09-24T17:26:24.669Z",
-    "premiereDate": "2026-10-31"
+    "tmdbUpdatedAt": "2026-09-25T07:18:02.513Z",
+    "premiereDate": "2026-12-19"
   },
   {
     "id": "gaf-2026-christmas-at-moose-lake",
@@ -98103,10 +98103,59 @@ export const MOVIES: Movie[] = [
     "title": "Christmas at Moose Lake",
     "year": 2026,
     "brandId": "gaf",
-    "releaseDate": "2026-10-17",
+    "releaseDate": "2026-11-15",
     "synopsis": "",
     "posterUrl": "",
     "cast": [
+      {
+        "actorId": "52018",
+        "name": "Britt Robertson",
+        "character": "Alyssa Dawson",
+        "slug": "britt-robertson",
+        "tmdbPersonId": 52018,
+        "profileUrl": "/images/people/52018.webp",
+        "order": 0,
+        "birthday": "1990-04-18"
+      },
+      {
+        "actorId": "1554734",
+        "name": "Ryan Paevey",
+        "character": "Sean",
+        "slug": "ryan-paevey",
+        "tmdbPersonId": 1554734,
+        "profileUrl": "/images/people/1554734.webp",
+        "order": 1,
+        "birthday": "1984-09-24"
+      },
+      {
+        "actorId": "57395",
+        "name": "Natasha Henstridge",
+        "character": "Donna Lawrence",
+        "slug": "natasha-henstridge",
+        "tmdbPersonId": 57395,
+        "profileUrl": "/images/people/57395.webp",
+        "order": 2,
+        "birthday": "1974-08-15"
+      },
+      {
+        "actorId": "6863",
+        "name": "Kevin Dillon",
+        "character": "Patrick Dawson",
+        "slug": "kevin-dillon",
+        "tmdbPersonId": 6863,
+        "profileUrl": "/images/people/6863.webp",
+        "order": 3,
+        "birthday": "1965-08-19"
+      },
+      {
+        "actorId": "2010776",
+        "name": "Megan Ashley Brown",
+        "character": "Laura Dawson",
+        "slug": "megan-ashley-brown",
+        "tmdbPersonId": 2010776,
+        "profileUrl": "/images/people/2010776.webp",
+        "order": 4
+      },
       {
         "actorId": "1502312",
         "name": "Zane Stephens",
@@ -98114,7 +98163,7 @@ export const MOVIES: Movie[] = [
         "slug": "zane-stephens",
         "tmdbPersonId": 1502312,
         "profileUrl": "/images/people/1502312.webp",
-        "order": 0
+        "order": 5
       },
       {
         "actorId": "3700921",
@@ -98123,7 +98172,7 @@ export const MOVIES: Movie[] = [
         "slug": "christian-shupe",
         "tmdbPersonId": 3700921,
         "profileUrl": "/images/people/3700921.webp",
-        "order": 1
+        "order": 6
       },
       {
         "actorId": "2380307",
@@ -98132,7 +98181,7 @@ export const MOVIES: Movie[] = [
         "slug": "monroe-cline",
         "tmdbPersonId": 2380307,
         "profileUrl": "/images/people/2380307.webp",
-        "order": 2
+        "order": 7
       },
       {
         "actorId": "6124935",
@@ -98140,7 +98189,7 @@ export const MOVIES: Movie[] = [
         "character": "Betsy",
         "slug": "sheri-winkelmann",
         "tmdbPersonId": 6124935,
-        "order": 3
+        "order": 8
       },
       {
         "actorId": "6124942",
@@ -98148,7 +98197,7 @@ export const MOVIES: Movie[] = [
         "character": "Mr. Wong",
         "slug": "jason-tait",
         "tmdbPersonId": 6124942,
-        "order": 4
+        "order": 9
       },
       {
         "actorId": "6124944",
@@ -98156,7 +98205,7 @@ export const MOVIES: Movie[] = [
         "character": "Mrs. Wong",
         "slug": "amy-finniss",
         "tmdbPersonId": 6124944,
-        "order": 5
+        "order": 10
       },
       {
         "actorId": "1628085",
@@ -98165,7 +98214,7 @@ export const MOVIES: Movie[] = [
         "slug": "paul-ryden",
         "tmdbPersonId": 1628085,
         "profileUrl": "/images/people/1628085.webp",
-        "order": 6,
+        "order": 11,
         "birthday": "1953-02-12"
       }
     ],
@@ -98191,7 +98240,7 @@ export const MOVIES: Movie[] = [
     "releaseDates": [
       {
         "country": "US",
-        "releaseDate": "2026-10-17T00:00:00.000Z",
+        "releaseDate": "2026-11-15T00:00:00.000Z",
         "type": 6,
         "certification": "G",
         "note": "Great American Family"
@@ -98228,8 +98277,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1665375",
       "imdb": "https://www.imdb.com/title/tt41054296/"
     },
-    "tmdbUpdatedAt": "2026-09-24T17:26:24.933Z",
-    "premiereDate": "2026-10-17"
+    "tmdbUpdatedAt": "2026-09-25T07:18:02.728Z",
+    "premiereDate": "2026-11-15"
   },
   {
     "id": "gaf-2025-another-sweet-christmas",
@@ -182362,7 +182411,7 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1772765",
       "imdb": "https://www.imdb.com/title/tt46069464/"
     },
-    "tmdbUpdatedAt": "2026-09-24T17:26:25.197Z"
+    "tmdbUpdatedAt": "2026-09-25T07:18:02.943Z"
   },
   {
     "id": "hallmark-2026-holiday-touchdown-a-bears-love-story",
@@ -182539,7 +182588,7 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1729134",
       "imdb": "https://www.imdb.com/title/tt43662087/"
     },
-    "tmdbUpdatedAt": "2026-09-24T17:26:25.858Z",
+    "tmdbUpdatedAt": "2026-09-25T07:18:03.166Z",
     "backdropUrl": "/images/backdrops/1729134.jpg"
   },
   {
@@ -182625,7 +182674,7 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773006",
       "imdb": "https://www.imdb.com/title/tt46070651/"
     },
-    "tmdbUpdatedAt": "2026-09-24T17:26:26.117Z"
+    "tmdbUpdatedAt": "2026-09-25T07:18:03.378Z"
   },
   {
     "id": "hallmark-2026-winter-wonderlanes",
@@ -182703,7 +182752,7 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773195",
       "imdb": "https://www.imdb.com/title/tt46071555/"
     },
-    "tmdbUpdatedAt": "2026-09-24T17:26:27.220Z",
+    "tmdbUpdatedAt": "2026-09-25T07:18:03.599Z",
     "backdropUrl": "/images/backdrops/1773195-53609f84f311.jpg"
   },
   {
@@ -182766,7 +182815,7 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773382",
       "imdb": "https://www.imdb.com/title/tt46071998/"
     },
-    "tmdbUpdatedAt": "2026-09-24T17:26:27.466Z"
+    "tmdbUpdatedAt": "2026-09-25T07:18:03.810Z"
   },
   {
     "id": "hallmark-2026-what-if-christmas",
@@ -182828,7 +182877,7 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773380",
       "imdb": "https://www.imdb.com/title/tt46072491/"
     },
-    "tmdbUpdatedAt": "2026-09-24T17:26:27.718Z"
+    "tmdbUpdatedAt": "2026-09-25T07:18:04.043Z"
   },
   {
     "id": "hallmark-2026-who-s-coming-for-christmas",
@@ -182899,7 +182948,7 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773378",
       "imdb": "https://www.imdb.com/title/tt46075371/"
     },
-    "tmdbUpdatedAt": "2026-09-24T17:26:28.011Z"
+    "tmdbUpdatedAt": "2026-09-25T07:18:04.259Z"
   },
   {
     "id": "hallmark-2026-adopting-st-nick",
@@ -182986,7 +183035,7 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773374",
       "imdb": "https://www.imdb.com/title/tt43749818/"
     },
-    "tmdbUpdatedAt": "2026-09-24T17:26:28.263Z"
+    "tmdbUpdatedAt": "2026-09-25T07:18:04.469Z"
   },
   {
     "id": "hallmark-2026-a-danish-christmas",
@@ -183077,7 +183126,7 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773368",
       "imdb": "https://www.imdb.com/title/tt46066911/"
     },
-    "tmdbUpdatedAt": "2026-09-24T17:26:28.548Z",
+    "tmdbUpdatedAt": "2026-09-25T07:18:04.691Z",
     "runtimeMinutes": 84,
     "backdropUrl": "/images/backdrops/1773368.jpg"
   },
@@ -183147,7 +183196,7 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773363",
       "imdb": "https://www.imdb.com/title/tt46075438/"
     },
-    "tmdbUpdatedAt": "2026-09-24T17:26:28.798Z"
+    "tmdbUpdatedAt": "2026-09-25T07:18:04.903Z"
   },
   {
     "id": "hallmark-2026-holiday-unplugged",
@@ -183245,7 +183294,7 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773357",
       "imdb": "https://www.imdb.com/title/tt46075500/"
     },
-    "tmdbUpdatedAt": "2026-09-24T17:26:29.049Z"
+    "tmdbUpdatedAt": "2026-09-25T07:18:05.118Z"
   },
   {
     "id": "hallmark-2026-a-season-of-promises",
@@ -183326,7 +183375,7 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773353",
       "imdb": "https://www.imdb.com/title/tt46075510/"
     },
-    "tmdbUpdatedAt": "2026-09-24T17:26:29.305Z"
+    "tmdbUpdatedAt": "2026-09-25T07:18:05.333Z"
   },
   {
     "id": "hallmark-2026-my-christmas-cowboy",
@@ -183406,7 +183455,7 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773350",
       "imdb": "https://www.imdb.com/title/tt46075976/"
     },
-    "tmdbUpdatedAt": "2026-09-24T17:26:29.550Z"
+    "tmdbUpdatedAt": "2026-09-25T07:18:05.550Z"
   },
   {
     "id": "hallmark-2026-the-nights-before-christmas",
@@ -183468,7 +183517,7 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773345",
       "imdb": "https://www.imdb.com/title/tt46076002/"
     },
-    "tmdbUpdatedAt": "2026-09-24T17:26:29.803Z",
+    "tmdbUpdatedAt": "2026-09-25T07:18:05.771Z",
     "backdropUrl": "/images/backdrops/1773345.jpg"
   },
   {
@@ -183541,7 +183590,7 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773340",
       "imdb": "https://www.imdb.com/title/tt46076026/"
     },
-    "tmdbUpdatedAt": "2026-09-24T17:26:30.046Z"
+    "tmdbUpdatedAt": "2026-09-25T07:18:05.980Z"
   },
   {
     "id": "hallmark-2026-our-holiday-playbook",
@@ -183603,7 +183652,7 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773334",
       "imdb": "https://www.imdb.com/title/tt46076042/"
     },
-    "tmdbUpdatedAt": "2026-09-24T17:26:30.303Z"
+    "tmdbUpdatedAt": "2026-09-25T07:18:06.195Z"
   },
   {
     "id": "hallmark-2026-christmas-in-blue-dog-valley",
@@ -183665,7 +183714,7 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773330",
       "imdb": "https://www.imdb.com/title/tt46076055/"
     },
-    "tmdbUpdatedAt": "2026-09-24T17:26:30.553Z"
+    "tmdbUpdatedAt": "2026-09-25T07:18:06.410Z"
   },
   {
     "id": "hallmark-2026-double-booked-for-the-holidays",
@@ -183748,7 +183797,7 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt46064711/"
     },
     "backdropUrl": "/images/backdrops/1773329.jpg",
-    "tmdbUpdatedAt": "2026-09-24T17:26:30.803Z"
+    "tmdbUpdatedAt": "2026-09-25T07:18:06.641Z"
   },
   {
     "id": "hallmark-2026-christmas-delivered",
@@ -183839,7 +183888,7 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773322",
       "imdb": "https://www.imdb.com/title/tt41442843/"
     },
-    "tmdbUpdatedAt": "2026-09-24T17:26:31.068Z",
+    "tmdbUpdatedAt": "2026-09-25T07:18:06.863Z",
     "backdropUrl": "/images/backdrops/1773322.jpg"
   },
   {
@@ -183914,7 +183963,7 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773042",
       "imdb": "https://www.imdb.com/title/tt46076498/"
     },
-    "tmdbUpdatedAt": "2026-09-24T17:26:31.316Z"
+    "tmdbUpdatedAt": "2026-09-25T07:18:07.072Z"
   },
   {
     "id": "hallmark-2026-the-christmas-eve-feast",
@@ -184054,7 +184103,7 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773318",
       "imdb": "https://www.imdb.com/title/tt43655245/"
     },
-    "tmdbUpdatedAt": "2026-09-24T17:26:31.560Z"
+    "tmdbUpdatedAt": "2026-09-25T07:18:07.285Z"
   },
   {
     "id": "hallmark-2026-holiday-ever-after-a-disney-world-wish-come-true",
@@ -184242,7 +184291,7 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt39126701/"
     },
     "backdropUrl": "/images/backdrops/1594516.jpg",
-    "tmdbUpdatedAt": "2026-09-24T17:26:31.809Z"
+    "tmdbUpdatedAt": "2026-09-25T07:18:07.503Z"
   },
   {
     "id": "hallmark-2026-the-most-wonderful-secret",
@@ -184304,7 +184353,7 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773316",
       "imdb": "https://www.imdb.com/title/tt46076602/"
     },
-    "tmdbUpdatedAt": "2026-09-24T17:26:32.060Z"
+    "tmdbUpdatedAt": "2026-09-25T07:18:07.726Z"
   },
   {
     "id": "hallmark-2026-eight-nights-for-love",
@@ -184488,7 +184537,7 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773298",
       "imdb": "https://www.imdb.com/title/tt43746550/"
     },
-    "tmdbUpdatedAt": "2026-09-24T17:26:32.303Z"
+    "tmdbUpdatedAt": "2026-09-25T07:18:07.937Z"
   },
   {
     "id": "hallmark-2026-miles-to-christmas",
@@ -184685,7 +184734,7 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773293",
       "imdb": "https://www.imdb.com/title/tt40629979/"
     },
-    "tmdbUpdatedAt": "2026-09-24T17:26:32.588Z"
+    "tmdbUpdatedAt": "2026-09-25T07:18:08.146Z"
   },
   {
     "id": "hallmark-2026-the-snowflake-effect",
@@ -184747,7 +184796,7 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773286",
       "imdb": "https://www.imdb.com/title/tt46076619/"
     },
-    "tmdbUpdatedAt": "2026-09-24T17:26:32.832Z"
+    "tmdbUpdatedAt": "2026-09-25T07:18:08.358Z"
   },
   {
     "id": "hallmark-2026-a-grand-biltmore-christmas",
@@ -184949,7 +184998,7 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1602653",
       "imdb": "https://www.imdb.com/title/tt39380754/"
     },
-    "tmdbUpdatedAt": "2026-09-24T17:26:33.086Z",
+    "tmdbUpdatedAt": "2026-09-25T07:18:08.575Z",
     "backdropUrl": "/images/backdrops/1602653.jpg"
   },
   {
@@ -185032,7 +185081,7 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773280",
       "imdb": "https://www.imdb.com/title/tt46064715/"
     },
-    "tmdbUpdatedAt": "2026-09-24T17:26:33.332Z"
+    "tmdbUpdatedAt": "2026-09-25T07:18:08.790Z"
   },
   {
     "id": "hallmark-2026-christmas-in-canterbury",
@@ -185118,7 +185167,7 @@ export const MOVIES: Movie[] = [
     "links": {
       "tmdb": "https://www.themoviedb.org/movie/1733866"
     },
-    "tmdbUpdatedAt": "2026-09-24T17:26:33.586Z",
+    "tmdbUpdatedAt": "2026-09-25T07:18:09.004Z",
     "imdbId": "tt43750204"
   },
   {
@@ -185199,7 +185248,7 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773035",
       "imdb": "https://www.imdb.com/title/tt41783274/"
     },
-    "tmdbUpdatedAt": "2026-09-24T17:26:33.832Z"
+    "tmdbUpdatedAt": "2026-09-25T07:18:09.219Z"
   },
   {
     "id": "hallmark-2026-noelle-nomads",
@@ -185292,7 +185341,7 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773275",
       "imdb": "https://www.imdb.com/title/tt46076883/"
     },
-    "tmdbUpdatedAt": "2026-09-24T17:26:34.089Z",
+    "tmdbUpdatedAt": "2026-09-25T07:18:09.431Z",
     "director": "Jeff Beesley"
   },
   {
@@ -185365,7 +185414,7 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773270",
       "imdb": "https://www.imdb.com/title/tt46076903/"
     },
-    "tmdbUpdatedAt": "2026-09-24T17:26:34.339Z"
+    "tmdbUpdatedAt": "2026-09-25T07:18:09.643Z"
   },
   {
     "id": "hallmark-2026-barking-all-the-way",
@@ -185435,7 +185484,7 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773266",
       "imdb": "https://www.imdb.com/title/tt46076921/"
     },
-    "tmdbUpdatedAt": "2026-09-24T17:26:34.586Z"
+    "tmdbUpdatedAt": "2026-09-25T07:18:09.849Z"
   },
   {
     "id": "hallmark-2026-save-the-date-for-christmas",
@@ -185497,7 +185546,7 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt46076940/"
     },
     "premiereDate": "2026-12-20",
-    "tmdbUpdatedAt": "2026-09-24T17:26:34.834Z"
+    "tmdbUpdatedAt": "2026-09-25T07:18:10.062Z"
   },
   {
     "id": "lifetime-2025-a-runaway-bride-for-christmas",
@@ -202220,7 +202269,7 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-09-24T17:26:35.083Z",
+    "tmdbUpdatedAt": "2026-09-25T07:18:10.274Z",
     "premiereDate": "2026-11-12"
   },
   {
@@ -202372,7 +202421,7 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "o9dyk5v_ybQ",
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-09-24T17:26:35.338Z",
+    "tmdbUpdatedAt": "2026-09-25T07:18:10.489Z",
     "premiereDate": "2026-11-19"
   },
   {
@@ -204027,10 +204076,10 @@ export const MOVIES: Movie[] = [
   {
     "id": "gaf-2026-christmas-at-the-starlight",
     "slug": "christmas-at-the-starlight",
-    "title": "Christmas at The Starlight",
+    "title": "Three Generations, One Christmas",
     "year": 2026,
     "brandId": "gaf",
-    "releaseDate": "2026-09-22",
+    "releaseDate": "2026-11-21",
     "synopsis": "Set in a close-knit American town, Christmas at The Starlight centers on The Starlight, a beloved local supper club and longtime community gathering place where generations have come together to celebrate music, family, and Christmas traditions. Frank (Tony Danza)—a legendary song-and-dance man—prepares to sell the family’s beloved restaurant lounge after 40 years. With the future of The Starlight in question, three generations of family are drawn into an emotional journey that reminds them what is worth preserving — and how faith, family, and home can quietly lead us back to where we belong.",
     "posterUrl": "",
     "cast": [
@@ -204067,22 +204116,31 @@ export const MOVIES: Movie[] = [
     "tmdbId": 1684294,
     "isComingSoon": true,
     "status": "coming-soon",
-    "originalTitle": "Christmas at The Starlight",
+    "originalTitle": "Three Generations, One Christmas",
     "genres": [],
-    "releaseDates": [],
+    "releaseDates": [
+      {
+        "country": "US",
+        "releaseDate": "2026-11-21T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "Great American Family"
+      }
+    ],
     "crew": [],
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-09-24T17:26:35.624Z"
+    "tmdbUpdatedAt": "2026-09-25T07:18:10.703Z",
+    "premiereDate": "2026-11-21"
   },
   {
     "id": "gaf-2026-an-accidental-arctic-christmas",
     "slug": "an-accidental-arctic-christmas",
-    "title": "An Accidental Arctic Christmas",
+    "title": "A Very Arctic Christmas",
     "year": 2026,
     "brandId": "gaf",
-    "releaseDate": "2026-09-22",
+    "releaseDate": "2026-10-31",
     "synopsis": "Single dad Jim and his spirited, science-minded 20-year-old daughter, Isla, share a tradition of alternating who decides how they spend Christmas each year. Jim, a former major league baseball player turned broadcaster, never misses hosting his annual Christmas Eve show from Times Square – until Isla persuades him to take a once-in-a-lifetime Arctic cruise, promising they will return in time for his broadcast.",
     "posterUrl": "",
     "cast": [
@@ -204118,7 +204176,7 @@ export const MOVIES: Movie[] = [
     "tmdbId": 1664264,
     "isComingSoon": true,
     "status": "coming-soon",
-    "originalTitle": "An Accidental Arctic Christmas",
+    "originalTitle": "A Very Arctic Christmas",
     "runtimeMinutes": 84,
     "genres": [
       {
@@ -204134,7 +204192,15 @@ export const MOVIES: Movie[] = [
         "name": "Romance"
       }
     ],
-    "releaseDates": [],
+    "releaseDates": [
+      {
+        "country": "US",
+        "releaseDate": "2026-10-31T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "Great American Family"
+      }
+    ],
     "crew": [
       {
         "id": 43426,
@@ -204156,7 +204222,8 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-09-24T17:26:35.876Z"
+    "tmdbUpdatedAt": "2026-09-25T07:18:10.926Z",
+    "premiereDate": "2026-10-31"
   },
   {
     "id": "gaf-2026-a-christmas-rescue",
@@ -204164,7 +204231,7 @@ export const MOVIES: Movie[] = [
     "title": "A Christmas Rescue",
     "year": 2026,
     "brandId": "gaf",
-    "releaseDate": "2026-09-22",
+    "releaseDate": "2026-11-28",
     "synopsis": "Set in the charming town of Cedar Ridge, A Christmas Rescue follows dedicated physician Emma Ross (Bennett) who along with her dog, Shep (Niffy), is determined to make her beloved community’s annual Christmas Cares celebration the most meaningful yet. When traveling veterinarian, Dr. Matthew McGuire (Donovan) arrives to temporarily take over the local animal clinic, he proposes adding a Christmas pet adoption event to the festivities. As they work side by side to bring people – and rescue animals – together for the holidays, Emma and Matthew discover that the greatest Christmas miracle may be finding a place where both hearts and shelter pets finally belong.",
     "posterUrl": "",
     "cast": [
@@ -204196,7 +204263,15 @@ export const MOVIES: Movie[] = [
     "status": "coming-soon",
     "originalTitle": "A Christmas Rescue",
     "genres": [],
-    "releaseDates": [],
+    "releaseDates": [
+      {
+        "country": "US",
+        "releaseDate": "2026-11-28T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "Great American Family"
+      }
+    ],
     "crew": [
       {
         "id": 1197196,
@@ -204209,7 +204284,8 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-09-24T17:26:36.126Z"
+    "tmdbUpdatedAt": "2026-09-25T07:18:11.137Z",
+    "premiereDate": "2026-11-28"
   },
   {
     "id": "gaf-2026-a-very-evergreen-christmas",
@@ -204217,7 +204293,7 @@ export const MOVIES: Movie[] = [
     "title": "A Very Evergreen Christmas",
     "year": 2026,
     "brandId": "gaf",
-    "releaseDate": "2026-09-22",
+    "releaseDate": "2026-12-13",
     "synopsis": "Abby inherits her aunt's tree farm under the condition she spends two weeks working there. With the help from Ethan, the farm's longtime caretaker and Abby's best childhood friend, Abby learns that the farm is much more than just a place.",
     "posterUrl": "",
     "cast": [
@@ -204342,7 +204418,15 @@ export const MOVIES: Movie[] = [
         "name": "Romance"
       }
     ],
-    "releaseDates": [],
+    "releaseDates": [
+      {
+        "country": "BR",
+        "releaseDate": "2026-12-13T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "Great American Family"
+      }
+    ],
     "crew": [
       {
         "id": 6240370,
@@ -204363,7 +204447,8 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-09-24T17:26:36.375Z"
+    "tmdbUpdatedAt": "2026-09-25T07:18:11.349Z",
+    "premiereDate": "2026-12-13"
   },
   {
     "id": "gaf-2026-a-second-chance-christmas",
@@ -204371,7 +204456,7 @@ export const MOVIES: Movie[] = [
     "title": "A Second Chance Christmas",
     "year": 2026,
     "brandId": "gaf",
-    "releaseDate": "2026-09-22",
+    "releaseDate": "2026-10-10",
     "synopsis": "Anna and James Campbell have been divorced for five years, their once-happy union now a carefully managed truce for the sake of their children. When their daughter invites the entire family to meet her serious boyfriend over Christmas at her grandparents’ rustic Smoky Mountain cabin, the former couple reluctantly agrees. Arriving a day early to avoid awkwardness, Anna is surprised to find James has the same idea. But when the worst ice storm in a decade traps them in the mountains with no way out, the exes are forced to confront the history they share – and the possibility that their story may not be finished after all.",
     "posterUrl": "",
     "cast": [
@@ -204415,17 +204500,26 @@ export const MOVIES: Movie[] = [
         "name": "Romance"
       }
     ],
-    "releaseDates": [],
+    "releaseDates": [
+      {
+        "country": "US",
+        "releaseDate": "2026-10-10T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "Great American Family"
+      }
+    ],
     "crew": [],
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-09-24T17:26:36.624Z"
+    "tmdbUpdatedAt": "2026-09-25T07:18:11.559Z",
+    "premiereDate": "2026-10-10"
   },
   {
     "id": "gaf-2026-the-ornament-library",
     "slug": "the-ornament-library",
-    "title": "The Ornament Library",
+    "title": "The Christmas Ornament Library",
     "year": 2026,
     "brandId": "gaf",
     "releaseDate": "2026-12-03",
@@ -204458,7 +204552,7 @@ export const MOVIES: Movie[] = [
     "imdbId": "tt44127243",
     "isComingSoon": true,
     "status": "coming-soon",
-    "originalTitle": "The Ornament Library",
+    "originalTitle": "The Christmas Ornament Library",
     "runtimeMinutes": 84,
     "genres": [
       {
@@ -204511,7 +204605,7 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-09-24T17:26:36.872Z",
+    "tmdbUpdatedAt": "2026-09-25T07:18:11.770Z",
     "premiereDate": "2026-12-03"
   },
   {
@@ -205945,7 +206039,7 @@ export const MOVIES: Movie[] = [
     "title": "Silver Bells at Christmas",
     "year": 2026,
     "brandId": "gaf",
-    "releaseDate": "2026-09-23",
+    "releaseDate": "2026-10-17",
     "synopsis": "In Comfort, Kentucky, Ginny Nolan tries to keep her family's Christmas shop afloat as coffee-chain owner Nick Day offers to buy it. Meanwhile, Ginny's ex-flame and former songwriting partner Tyler Benton returns to town, seeking her help.",
     "posterUrl": "",
     "cast": [
@@ -206056,7 +206150,15 @@ export const MOVIES: Movie[] = [
         "name": "Romance"
       }
     ],
-    "releaseDates": [],
+    "releaseDates": [
+      {
+        "country": "US",
+        "releaseDate": "2026-10-17T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "Great American Family"
+      }
+    ],
     "crew": [
       {
         "id": 5668040,
@@ -206083,7 +206185,8 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-09-24T17:26:37.114Z"
+    "tmdbUpdatedAt": "2026-09-25T07:18:11.983Z",
+    "premiereDate": "2026-10-17"
   },
   {
     "id": "gaf-2025-karen-kingsbury-s-the-christmas-ring",
@@ -206342,7 +206445,20 @@ export const MOVIES: Movie[] = [
     "isComingSoon": true,
     "status": "coming-soon",
     "originalTitle": "An Ozark Mountain Christmas",
-    "genres": [],
+    "genres": [
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      },
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      }
+    ],
     "releaseDates": [
       {
         "country": "US",
@@ -206364,7 +206480,7 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-09-24T17:26:37.358Z",
+    "tmdbUpdatedAt": "2026-09-25T07:18:12.196Z",
     "premiereDate": "2026-11-08"
   },
   {
@@ -206373,8 +206489,8 @@ export const MOVIES: Movie[] = [
     "title": "The Christmas Yes List",
     "year": 2026,
     "brandId": "gaf",
-    "releaseDate": "2026-09-23",
-    "synopsis": "In The Christmas Yes List, Chloe Hollis (McKellar), an ambitious New York professional whose habit of putting everyone else first has left her overlooked for the promotion she desperately wants, returns home to Maple Hills, West Virginia, for Christmas. Determined to change her people-pleasing ways, Chloe embarks on an unconventional holiday challenge to overcome her fear of rejection. But when she meets James Stone (Page), a successful executive spending Christmas with family in town, Chloe discovers some of life’s greatest gifts arrive when we stop fearing the answer and start embracing the journey.",
+    "releaseDate": "2026-11-14",
+    "synopsis": "Chloe Hollis, an ambitious New York professional whose habit of putting everyone else first has left her overlooked for the promotion she desperately wants, returns home to Maple Hills, West Virginia, for Christmas. Determined to change her people-pleasing ways, Chloe embarks on an unconventional holiday challenge to overcome her fear of rejection. But when she meets James Stone, a successful executive spending Christmas with family in town, Chloe discovers some of life’s greatest gifts arrive when we stop fearing the answer and start embracing the journey.",
     "posterUrl": "",
     "cast": [
       {
@@ -206402,13 +206518,35 @@ export const MOVIES: Movie[] = [
     "isComingSoon": true,
     "status": "coming-soon",
     "originalTitle": "The Christmas Yes List",
-    "genres": [],
-    "releaseDates": [],
+    "genres": [
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      },
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "BR",
+        "releaseDate": "2026-11-14T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "Great American Family"
+      }
+    ],
     "crew": [],
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-09-24T17:26:37.603Z"
+    "tmdbUpdatedAt": "2026-09-25T07:18:12.422Z",
+    "premiereDate": "2026-11-14"
   },
   {
     "id": "gaf-2026-letters-this-christmas",
@@ -206416,7 +206554,7 @@ export const MOVIES: Movie[] = [
     "title": "Letters This Christmas",
     "year": 2026,
     "brandId": "gaf",
-    "releaseDate": "2026-09-23",
+    "releaseDate": "2026-11-22",
     "synopsis": "A young romance author leaves New York City after her novel is panned, hoping to write a redemption novel from home in Alaska. Finding inspiration in her former lover, and the mysterious Christmas cards left at her keys, newfound success has her making the difficult choice between returning to New York for a career of fictional romance, and her real romance in Alaska.",
     "posterUrl": "",
     "cast": [
@@ -206530,7 +206668,15 @@ export const MOVIES: Movie[] = [
         "name": "Mystery"
       }
     ],
-    "releaseDates": [],
+    "releaseDates": [
+      {
+        "country": "BR",
+        "releaseDate": "2026-11-22T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "Great American Family"
+      }
+    ],
     "crew": [
       {
         "id": 2797683,
@@ -206559,7 +206705,8 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-09-24T17:26:37.847Z"
+    "tmdbUpdatedAt": "2026-09-25T07:18:12.637Z",
+    "premiereDate": "2026-11-22"
   },
   {
     "id": "gaf-2026-a-sweet-christmas-anniversary",
@@ -206598,7 +206745,20 @@ export const MOVIES: Movie[] = [
     "isComingSoon": true,
     "status": "coming-soon",
     "originalTitle": "A Sweet Christmas Anniversary",
-    "genres": [],
+    "genres": [
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      },
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      }
+    ],
     "releaseDates": [
       {
         "country": "US",
@@ -206606,6 +206766,13 @@ export const MOVIES: Movie[] = [
         "type": 1,
         "certification": "",
         "note": ""
+      },
+      {
+        "country": "US",
+        "releaseDate": "2026-11-27T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "Great American Family"
       }
     ],
     "crew": [
@@ -206644,7 +206811,7 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-09-24T17:26:38.091Z",
+    "tmdbUpdatedAt": "2026-09-25T07:18:12.848Z",
     "premiereDate": "2026-11-24"
   },
   {
@@ -206654,7 +206821,7 @@ export const MOVIES: Movie[] = [
     "year": 2026,
     "brandId": "gaf",
     "releaseDate": "2026-11-29",
-    "synopsis": "In The Greatest Christmas Gift, gifted music teacher Emma Harper (McKellar) and her fiancé Caleb Bennett (Marsden) are preparing for a cherished Christmas wedding when an unexpected setback threatens the future they’ve carefully planned. As their small-town rallies around them and Christmas draws near, the couple discovers that the greatest gifts are not found in perfect circumstances, but in steadfast faith, selfless love, and a community that reminds them hope is always worth believing in.",
+    "synopsis": "When an unexpected setback threatens their Christmas wedding, Emma and Caleb discover that the greatest gifts are found in faith, selfless love and a community that reminds them to keep believing.",
     "posterUrl": "",
     "cast": [
       {
@@ -206687,7 +206854,7 @@ export const MOVIES: Movie[] = [
       {
         "country": "US",
         "releaseDate": "2026-11-29T00:00:00.000Z",
-        "type": 1,
+        "type": 6,
         "certification": "",
         "note": ""
       }
@@ -206696,7 +206863,7 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-09-24T17:26:38.340Z",
+    "tmdbUpdatedAt": "2026-09-25T07:18:13.061Z",
     "premiereDate": "2026-11-29"
   },
   {
@@ -206705,7 +206872,7 @@ export const MOVIES: Movie[] = [
     "title": "Making Christmas Bright",
     "year": 2026,
     "brandId": "gaf",
-    "releaseDate": "2026-09-23",
+    "releaseDate": "2026-12-12",
     "synopsis": "​In Making Christmas Bright, Kay (Jillian Murray), is a devoted middle school teacher in the close-knit Kentucky town of White Grove who believes God has opened the door to an exciting new career and a new life in the city. With Christmas approaching, Kay is preparing to leave behind her father, lifelong friends, students and the community she has always called home. But when she volunteers for her small-town church’s “Christmas Angel Tree” project, and is paired with Joshua, a newly arrived police officer looking for a fresh start of his own, an act of service begins changing both of their lives.",
     "posterUrl": "",
     "cast": [
@@ -206735,12 +206902,21 @@ export const MOVIES: Movie[] = [
     "status": "coming-soon",
     "originalTitle": "Making Christmas Bright",
     "genres": [],
-    "releaseDates": [],
+    "releaseDates": [
+      {
+        "country": "BR",
+        "releaseDate": "2026-12-12T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "Great American Family"
+      }
+    ],
     "crew": [],
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-09-24T17:26:38.584Z"
+    "tmdbUpdatedAt": "2026-09-25T07:18:13.272Z",
+    "premiereDate": "2026-12-12"
   }
 ];
 
