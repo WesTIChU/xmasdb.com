@@ -22,15 +22,25 @@ function statusClass(status?: string): string {
 
 function statusLabel(status?: string): string { return status || 'UNKNOWN'; }
 
-function StatCard({ label, value }: { label: string; value: string | number }) {
-  return <div className="rounded-md border border-[#DCD3C7] bg-[#FFFDF9] px-4 py-4">
+type CardDecoration = 'holly' | 'star' | 'snow';
+
+function CardDetail({ variant }: { variant: CardDecoration }) {
+  if (variant === 'holly') return <span aria-hidden="true" className="pointer-events-none absolute right-3 top-3 opacity-35"><span className="absolute -left-1 top-0 h-1.5 w-2.5 -rotate-[25deg] rounded-full bg-[#1A3D2F]" /><span className="absolute left-1 top-1 h-1.5 w-2.5 rotate-[25deg] rounded-full bg-[#1A3D2F]" /><span className="absolute left-3 top-0 h-1.5 w-1.5 rounded-full bg-[#841818]" /><span className="absolute left-4 top-2 h-1.5 w-1.5 rounded-full bg-[#841818]" /></span>;
+  if (variant === 'star') return <span aria-hidden="true" className="pointer-events-none absolute right-3 top-3 h-2 w-2 rotate-45 border border-[#B8860B] opacity-45" />;
+  return <span aria-hidden="true" className="pointer-events-none absolute right-3 top-3 h-1 w-1 rounded-full bg-[#C8BFB3] opacity-70 shadow-[5px_3px_0_#DCD3C7,1px_7px_0_#DCD3C7]" />;
+}
+
+function StatCard({ label, value, variant = 'snow' }: { label: string; value: string | number; variant?: CardDecoration }) {
+  return <div className="relative overflow-hidden rounded-md border border-[#DCD3C7] bg-[#FFFDF9] px-4 py-4">
+    <CardDetail variant={variant} />
     <p className="font-sans-clean text-[10px] font-semibold tracking-[0.14em] text-[#736B63]">{label}</p>
     <p className="mt-2 font-heading text-2xl font-semibold text-[#1A3D2F]">{typeof value === 'number' ? value.toLocaleString() : value}</p>
   </div>;
 }
 
-function RefreshSummary({ label, run, date }: { label: string; run?: TmdbRefreshRun; date?: string }) {
-  return <div className="rounded-md border border-[#DCD3C7] bg-[#FFFDF9] px-4 py-4">
+function RefreshSummary({ label, run, date, variant = 'snow' }: { label: string; run?: TmdbRefreshRun; date?: string; variant?: CardDecoration }) {
+  return <div className="relative overflow-hidden rounded-md border border-[#DCD3C7] bg-[#FFFDF9] px-4 py-4">
+    <CardDetail variant={variant} />
     <p className="font-sans-clean text-[10px] font-semibold tracking-[0.14em] text-[#736B63]">{label}</p>
     {run ? <><p className={`mt-2 text-sm font-semibold ${statusClass(run.status)}`}>{statusLabel(run.status)}</p><p className="mt-1 text-xs text-[#736B63]">{dateTime(run.finishedAt || run.startedAt)}</p></> : <p className="mt-2 text-xs text-[#736B63]">{dateTime(date)}</p>}
   </div>;
@@ -82,21 +92,21 @@ export const AdminTmdbRefreshHealth: React.FC<Props> = ({ onNavigate }) => {
     {payload.current.reasons.length > 0 && <p className="mt-4 border-l-2 border-[#B8860B] bg-[#F7F2EB] px-4 py-3 text-xs text-[#736B63]">{payload.current.reasons.join(' · ')}</p>}
 
     <div className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-4 sm:gap-4">
-      <RefreshSummary label="LAST FULL REFRESH" run={payload.lastFull} />
-      <RefreshSummary label="LAST COMING SOON REFRESH" run={payload.lastComingSoon} />
-      <RefreshSummary label="NEXT FULL REFRESH" date={payload.schedule.nextFull} />
-      <RefreshSummary label="NEXT COMING SOON" date={payload.schedule.nextComingSoon} />
+      <RefreshSummary label="LAST FULL REFRESH" run={payload.lastFull} variant="holly" />
+      <RefreshSummary label="LAST COMING SOON REFRESH" run={payload.lastComingSoon} variant="star" />
+      <RefreshSummary label="NEXT FULL REFRESH" date={payload.schedule.nextFull} variant="snow" />
+      <RefreshSummary label="NEXT COMING SOON" date={payload.schedule.nextComingSoon} variant="holly" />
     </div>
 
     <section className="mt-7" aria-labelledby="tmdb-movies-health-heading">
       <h3 id="tmdb-movies-health-heading" className="font-heading text-xl font-semibold text-[#1A3D2F]">MOVIES</h3>
-      <div className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-4 sm:gap-4"><StatCard label="TOTAL" value={payload.movies.total} /><StatCard label="FRESH" value={payload.movies.fresh} /><StatCard label="STALE" value={payload.movies.stale} /><StatCard label="FAILED" value={payload.movies.failed} /></div>
+      <div className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-4 sm:gap-4"><StatCard label="TOTAL" value={payload.movies.total} variant="holly" /><StatCard label="FRESH" value={payload.movies.fresh} variant="star" /><StatCard label="STALE" value={payload.movies.stale} variant="snow" /><StatCard label="FAILED" value={payload.movies.failed} variant="holly" /></div>
       <SecondaryLine items={[[ 'Checked', payload.movies.checked ], [ 'Changed', payload.movies.changed ], [ 'Unchanged', payload.movies.unchanged ], [ 'Oldest successful fetch', dateTime(payload.movies.oldestSuccessfulFetch) ], [ 'Never fetched', payload.movies.neverFetched ]]}/>
     </section>
 
     <section className="mt-7" aria-labelledby="tmdb-actors-health-heading">
       <h3 id="tmdb-actors-health-heading" className="font-heading text-xl font-semibold text-[#1A3D2F]">ACTORS / PEOPLE</h3>
-      <div className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-4 sm:gap-4"><StatCard label="TOTAL" value={payload.actors.total} /><StatCard label="FRESH" value={payload.actors.fresh} /><StatCard label="STALE" value={payload.actors.stale} /><StatCard label="LEGACY" value={payload.actors.legacy} /></div>
+      <div className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-4 sm:gap-4"><StatCard label="TOTAL" value={payload.actors.total} variant="snow" /><StatCard label="FRESH" value={payload.actors.fresh} variant="star" /><StatCard label="STALE" value={payload.actors.stale} variant="snow" /><StatCard label="LEGACY" value={payload.actors.legacy} variant="holly" /></div>
       <SecondaryLine items={[[ 'Attempted', payload.actors.attempted ], [ 'Refreshed', payload.actors.successful ], [ 'Failed', payload.actors.failed ], [ 'Skipped fresh', payload.actors.skippedFresh ], [ 'Oldest successful fetch', dateTime(payload.actors.oldestSuccessfulFetch) ]]}/>
       <p className="mt-3 font-sans-clean text-xs text-[#736B63]">Actor migration: <strong className="text-[#403A34]">{actorMigration}</strong></p>
     </section>

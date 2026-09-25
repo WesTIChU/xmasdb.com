@@ -62,6 +62,12 @@ function StatisticsTable({ rows, emptyMessage }: { rows: FeedStatisticsRow[]; em
   );
 }
 
+function FeedCardDetail({ variant }: { variant: 'holly' | 'star' | 'snow' }) {
+  if (variant === 'holly') return <span aria-hidden="true" className="pointer-events-none absolute right-3 top-3 opacity-35"><span className="absolute -left-1 top-0 h-1.5 w-2.5 -rotate-[25deg] rounded-full bg-[#1A3D2F]" /><span className="absolute left-1 top-1 h-1.5 w-2.5 rotate-[25deg] rounded-full bg-[#1A3D2F]" /><span className="absolute left-3 top-0 h-1.5 w-1.5 rounded-full bg-[#841818]" /><span className="absolute left-4 top-2 h-1.5 w-1.5 rounded-full bg-[#841818]" /></span>;
+  if (variant === 'star') return <span aria-hidden="true" className="pointer-events-none absolute right-3 top-3 h-2 w-2 rotate-45 border border-[#B8860B] opacity-45" />;
+  return <span aria-hidden="true" className="pointer-events-none absolute right-3 top-3 h-1 w-1 rounded-full bg-[#C8BFB3] opacity-70 shadow-[5px_3px_0_#DCD3C7,1px_7px_0_#DCD3C7]" />;
+}
+
 export const AdminFeedStatisticsPage: React.FC<AdminFeedStatisticsPageProps> = ({ onNavigate }) => {
   const [payload, setPayload] = useState<FeedStatisticsPayload | null>(null);
   const [actorSearch, setActorSearch] = useState('');
@@ -119,8 +125,9 @@ export const AdminFeedStatisticsPage: React.FC<AdminFeedStatisticsPageProps> = (
         <AdminTmdbRefreshHealth onNavigate={onNavigate} />
 
         <div className="mt-7 grid grid-cols-2 gap-3 sm:grid-cols-4 sm:gap-4">
-          {summaryCards.map(([label, value]) => (
-            <div key={label} className="rounded-md border border-[#DCD3C7] bg-[#FFFDF9] px-4 py-4">
+          {summaryCards.map(([label, value], index) => (
+            <div key={label} className="relative overflow-hidden rounded-md border border-[#DCD3C7] bg-[#FFFDF9] px-4 py-4">
+              <FeedCardDetail variant={index === 0 ? 'holly' : index === 1 ? 'star' : index === 2 ? 'snow' : 'holly'} />
               <p className="font-sans-clean text-[10px] font-semibold tracking-[0.14em] text-[#736B63]">{label}</p>
               <p className="mt-2 font-heading text-2xl font-semibold text-[#1A3D2F]">{value.toLocaleString()}</p>
             </div>
