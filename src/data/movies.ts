@@ -207218,6 +207218,29 @@ export const MOVIES: Movie[] = [
     "voteAverage": 0,
     "voteCount": 0,
     "tmdbUpdatedAt": "2026-09-25T16:04:01.985Z"
+  },
+  {
+    "id": "uptv-2026-chocolate-for-christmas",
+    "slug": "chocolate-for-christmas",
+    "title": "Chocolate for Christmas",
+    "year": 2026,
+    "brandId": "uptv",
+    "releaseDate": "2026-09-25",
+    "synopsis": "",
+    "posterUrl": "",
+    "cast": [],
+    "tmdbId": 1780067,
+    "imdbId": "tt32840680",
+    "isComingSoon": true,
+    "status": "coming-soon",
+    "originalTitle": "Chocolate for Christmas",
+    "genres": [],
+    "releaseDates": [],
+    "crew": [],
+    "trailers": [],
+    "voteAverage": 0,
+    "voteCount": 0,
+    "tmdbUpdatedAt": "2026-09-25T16:11:33.928Z"
   }
 ];
 
