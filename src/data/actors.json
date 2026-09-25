@@ -919,7 +919,8 @@
     "gender": "Female",
     "knownForDepartment": "Acting",
     "knownCredits": 4,
-    "tmdbUpdatedAt": "2026-09-22T17:14:33.455Z"
+    "tmdbUpdatedAt": "2026-09-25T20:54:33.436Z",
+    "tmdbFetchedAt": "2026-09-25T20:54:33.436Z"
   },
   {
     "id": "adelaide-kane",
@@ -2014,7 +2015,8 @@
     ],
     "twitterId": "alcobatron",
     "facebookId": "alcoba.alex",
-    "tmdbUpdatedAt": "2026-09-22T17:14:35.881Z"
+    "tmdbUpdatedAt": "2026-09-25T20:54:36.096Z",
+    "tmdbFetchedAt": "2026-09-25T20:54:36.096Z"
   },
   {
     "id": "aleks-paunovic",
@@ -3344,7 +3346,8 @@
     "instagramId": "alisweeney",
     "twitterId": "ali_sweeney",
     "facebookId": "alisweeneyofficial",
-    "tmdbUpdatedAt": "2026-09-22T17:14:35.740Z"
+    "tmdbUpdatedAt": "2026-09-25T20:54:35.242Z",
+    "tmdbFetchedAt": "2026-09-25T20:54:35.242Z"
   },
   {
     "id": "alison-thornton",
@@ -4373,7 +4376,8 @@
     "tmdbPersonId": 5015775,
     "knownForDepartment": "Acting",
     "knownCredits": 5,
-    "tmdbUpdatedAt": "2026-09-22T17:14:35.682Z"
+    "tmdbUpdatedAt": "2026-09-25T20:54:35.735Z",
+    "tmdbFetchedAt": "2026-09-25T20:54:35.735Z"
   },
   {
     "id": "amariah-faulkner",
@@ -5049,13 +5053,14 @@
     "imdbPersonId": "nm0000510",
     "gender": "Female",
     "knownForDepartment": "Acting",
-    "knownCredits": 128,
+    "knownCredits": 127,
     "alsoKnownAs": [
       "Rosalie Anderson MacDowell",
       "Розали Андерсон Макдауэлл"
     ],
     "instagramId": "andiemacdowell",
-    "tmdbUpdatedAt": "2026-09-22T17:14:36.140Z"
+    "tmdbUpdatedAt": "2026-09-25T20:54:36.537Z",
+    "tmdbFetchedAt": "2026-09-25T20:54:36.537Z"
   },
   {
     "id": "andre-be-dard",
@@ -5433,7 +5438,8 @@
     "gender": "Female",
     "knownForDepartment": "Acting",
     "knownCredits": 4,
-    "tmdbUpdatedAt": "2026-09-22T17:14:35.773Z"
+    "tmdbUpdatedAt": "2026-09-25T20:54:36.377Z",
+    "tmdbFetchedAt": "2026-09-25T20:54:36.377Z"
   },
   {
     "id": "2277287",
@@ -6020,7 +6026,8 @@
     "gender": "Male",
     "knownForDepartment": "Acting",
     "knownCredits": 38,
-    "tmdbUpdatedAt": "2026-09-22T17:14:35.630Z"
+    "tmdbUpdatedAt": "2026-09-25T20:54:35.736Z",
+    "tmdbFetchedAt": "2026-09-25T20:54:35.736Z"
   },
   {
     "id": "andy-peppiette",
@@ -6347,7 +6354,8 @@
     "gender": "Male",
     "knownForDepartment": "Acting",
     "knownCredits": 2,
-    "tmdbUpdatedAt": "2026-09-22T17:14:39.259Z"
+    "tmdbUpdatedAt": "2026-09-25T20:54:38.517Z",
+    "tmdbFetchedAt": "2026-09-25T20:54:38.517Z"
   },
   {
     "id": "angelo-salvatore-restaino",
@@ -8209,7 +8217,8 @@
     "gender": "Male",
     "knownForDepartment": "Acting",
     "knownCredits": 28,
-    "tmdbUpdatedAt": "2026-09-22T17:14:35.633Z"
+    "tmdbUpdatedAt": "2026-09-25T20:54:35.761Z",
+    "tmdbFetchedAt": "2026-09-25T20:54:35.761Z"
   },
   {
     "id": "arran-henn",
@@ -8410,7 +8419,8 @@
     "knownForDepartment": "Acting",
     "knownCredits": 8,
     "instagramId": "asheralexanderactor",
-    "tmdbUpdatedAt": "2026-09-22T17:14:34.061Z"
+    "tmdbUpdatedAt": "2026-09-25T20:54:33.842Z",
+    "tmdbFetchedAt": "2026-09-25T20:54:33.842Z"
   },
   {
     "id": "asher-waxman",
@@ -8771,7 +8781,8 @@
     ],
     "instagramId": "ashleywilliamsandcompany",
     "twitterId": "imthesmash",
-    "tmdbUpdatedAt": "2026-09-22T17:14:34.904Z"
+    "tmdbUpdatedAt": "2026-09-25T20:54:35.219Z",
+    "tmdbFetchedAt": "2026-09-25T20:54:35.219Z"
   },
   {
     "id": "1091513",
@@ -9723,7 +9734,8 @@
     ],
     "instagramId": "iambjbritt",
     "twitterId": "iambjbritt",
-    "tmdbUpdatedAt": "2026-09-22T17:14:37.456Z"
+    "tmdbUpdatedAt": "2026-09-25T20:54:37.893Z",
+    "tmdbFetchedAt": "2026-09-25T20:54:37.893Z"
   },
   {
     "id": "baeyen-hoffman",
@@ -10657,7 +10669,8 @@
     ],
     "instagramId": "benjaminayres",
     "twitterId": "BenjaminAyres",
-    "tmdbUpdatedAt": "2026-09-22T17:14:37.301Z"
+    "tmdbUpdatedAt": "2026-09-25T20:54:37.667Z",
+    "tmdbFetchedAt": "2026-09-25T20:54:37.667Z"
   },
   {
     "id": "benjamin-crawley",
@@ -11949,7 +11962,8 @@
     "instagramId": "iambjdaniels",
     "twitterId": "iambjdaniels",
     "facebookId": "bobby.daniels.actor",
-    "tmdbUpdatedAt": "2026-09-22T17:14:38.633Z"
+    "tmdbUpdatedAt": "2026-09-25T20:54:38.571Z",
+    "tmdbFetchedAt": "2026-09-25T20:54:38.571Z"
   },
   {
     "id": "bobby-magee",
@@ -14841,7 +14855,8 @@
     "gender": "Male",
     "knownForDepartment": "Acting",
     "knownCredits": 18,
-    "tmdbUpdatedAt": "2026-09-22T17:14:33.927Z"
+    "tmdbUpdatedAt": "2026-09-25T20:54:33.711Z",
+    "tmdbFetchedAt": "2026-09-25T20:54:33.711Z"
   },
   {
     "id": "bryce-fernelius",
@@ -15419,7 +15434,8 @@
     "tmdbPersonId": 6392751,
     "knownForDepartment": "Acting",
     "knownCredits": 1,
-    "tmdbUpdatedAt": "2026-09-22T17:14:36.678Z"
+    "tmdbUpdatedAt": "2026-09-25T20:54:36.816Z",
+    "tmdbFetchedAt": "2026-09-25T20:54:36.816Z"
   },
   {
     "id": "callum-alexander",
@@ -18299,7 +18315,8 @@
     "tmdbPersonId": 6216304,
     "knownForDepartment": "Acting",
     "knownCredits": 1,
-    "tmdbUpdatedAt": "2026-09-22T17:14:37.817Z"
+    "tmdbUpdatedAt": "2026-09-25T20:54:38.349Z",
+    "tmdbFetchedAt": "2026-09-25T20:54:38.349Z"
   },
   {
     "id": "charlie-mcelveen",
@@ -19363,7 +19380,8 @@
     "tmdbPersonId": 6392750,
     "knownForDepartment": "Acting",
     "knownCredits": 1,
-    "tmdbUpdatedAt": "2026-09-22T17:14:36.635Z"
+    "tmdbUpdatedAt": "2026-09-25T20:54:36.801Z",
+    "tmdbFetchedAt": "2026-09-25T20:54:36.801Z"
   },
   {
     "id": "chris-glenat",
@@ -20622,7 +20640,8 @@
     ],
     "instagramId": "thechristycarlsonromano",
     "twitterId": "ChristyRomano",
-    "tmdbUpdatedAt": "2026-09-22T17:14:33.869Z"
+    "tmdbUpdatedAt": "2026-09-25T20:54:33.680Z",
+    "tmdbFetchedAt": "2026-09-25T20:54:33.680Z"
   },
   {
     "id": "christy-greene",
@@ -23489,7 +23508,8 @@
     "instagramId": "littlespoonman",
     "twitterId": "dan_jeannotte",
     "facebookId": "imdanjeannotte",
-    "tmdbUpdatedAt": "2026-09-22T17:14:34.318Z"
+    "tmdbUpdatedAt": "2026-09-25T20:54:34.347Z",
+    "tmdbFetchedAt": "2026-09-25T20:54:34.347Z"
   },
   {
     "id": "dan-joffre",
@@ -24875,7 +24895,8 @@
     "knownForDepartment": "Acting",
     "knownCredits": 64,
     "instagramId": "darrinbakerofficial",
-    "tmdbUpdatedAt": "2026-09-22T17:14:34.505Z"
+    "tmdbUpdatedAt": "2026-09-25T20:54:34.587Z",
+    "tmdbFetchedAt": "2026-09-25T20:54:34.587Z"
   },
   {
     "id": "darrin-maharaj",
@@ -25471,7 +25492,8 @@
     "gender": "Male",
     "knownForDepartment": "Acting",
     "knownCredits": 41,
-    "tmdbUpdatedAt": "2026-09-22T17:14:34.703Z"
+    "tmdbUpdatedAt": "2026-09-25T20:54:34.939Z",
+    "tmdbFetchedAt": "2026-09-25T20:54:34.939Z"
   },
   {
     "id": "david-elsendoorn",
@@ -26064,7 +26086,8 @@
     "gender": "Male",
     "knownForDepartment": "Acting",
     "knownCredits": 51,
-    "tmdbUpdatedAt": "2026-09-22T17:14:36.486Z"
+    "tmdbUpdatedAt": "2026-09-25T20:54:36.633Z",
+    "tmdbFetchedAt": "2026-09-25T20:54:36.633Z"
   },
   {
     "id": "david-pinard",
@@ -31899,7 +31922,8 @@
     "tmdbPersonId": 6163382,
     "knownForDepartment": "Acting",
     "knownCredits": 2,
-    "tmdbUpdatedAt": "2026-09-22T17:14:34.712Z"
+    "tmdbUpdatedAt": "2026-09-25T20:54:34.938Z",
+    "tmdbFetchedAt": "2026-09-25T20:54:34.938Z"
   },
   {
     "id": "emilea-wilson",
@@ -34580,7 +34604,8 @@
       "Felicia Schulman",
       "Félicia Shulman"
     ],
-    "tmdbUpdatedAt": "2026-09-22T17:14:34.658Z"
+    "tmdbUpdatedAt": "2026-09-25T20:54:34.779Z",
+    "tmdbFetchedAt": "2026-09-25T20:54:34.779Z"
   },
   {
     "id": "felicia-simone",
@@ -34721,7 +34746,8 @@
     ],
     "instagramId": "fionagubelmann",
     "twitterId": "FionaGubelmann",
-    "tmdbUpdatedAt": "2026-09-22T17:14:36.832Z"
+    "tmdbUpdatedAt": "2026-09-25T20:54:37.029Z",
+    "tmdbFetchedAt": "2026-09-25T20:54:37.029Z"
   },
   {
     "id": "fiona-highet",
@@ -34958,7 +34984,8 @@
     "gender": "Female",
     "knownForDepartment": "Acting",
     "knownCredits": 18,
-    "tmdbUpdatedAt": "2026-09-22T17:14:35.096Z"
+    "tmdbUpdatedAt": "2026-09-25T20:54:35.398Z",
+    "tmdbFetchedAt": "2026-09-25T20:54:35.398Z"
   },
   {
     "id": "francesca-de-martini",
@@ -34993,7 +35020,8 @@
     "knownForDepartment": "Acting",
     "knownCredits": 10,
     "instagramId": "francescofilice__",
-    "tmdbUpdatedAt": "2026-09-22T17:14:32.888Z"
+    "tmdbUpdatedAt": "2026-09-25T20:54:33.251Z",
+    "tmdbFetchedAt": "2026-09-25T20:54:33.251Z"
   },
   {
     "id": "franchesca-fojas",
@@ -35587,7 +35615,8 @@
     "instagramId": "gabrielburrafato",
     "twitterId": "gburrafato",
     "facebookId": "Burrafato",
-    "tmdbUpdatedAt": "2026-09-22T17:14:34.513Z"
+    "tmdbUpdatedAt": "2026-09-25T20:54:34.598Z",
+    "tmdbFetchedAt": "2026-09-25T20:54:34.598Z"
   },
   {
     "id": "gabriel-darku",
@@ -36862,7 +36891,8 @@
     "knownCredits": 26,
     "instagramId": "georginareilly",
     "twitterId": "georginareilly",
-    "tmdbUpdatedAt": "2026-09-22T17:14:36.340Z"
+    "tmdbUpdatedAt": "2026-09-25T20:54:36.613Z",
+    "tmdbFetchedAt": "2026-09-25T20:54:36.613Z"
   },
   {
     "id": "gerald-webb",
@@ -37056,7 +37086,8 @@
       "Gerry Mendocino",
       "Gerry Mendecino"
     ],
-    "tmdbUpdatedAt": "2026-09-22T17:14:33.281Z"
+    "tmdbUpdatedAt": "2026-09-25T20:54:33.305Z",
+    "tmdbFetchedAt": "2026-09-25T20:54:33.305Z"
   },
   {
     "id": "gerry-o-brien",
@@ -37937,7 +37968,8 @@
     "gender": "Male",
     "knownForDepartment": "Acting",
     "knownCredits": 10,
-    "tmdbUpdatedAt": "2026-09-22T17:14:36.731Z"
+    "tmdbUpdatedAt": "2026-09-25T20:54:36.970Z",
+    "tmdbFetchedAt": "2026-09-25T20:54:36.970Z"
   },
   {
     "id": "graziano-di-prima",
@@ -38121,7 +38153,8 @@
     "gender": "Male",
     "knownForDepartment": "Acting",
     "knownCredits": 39,
-    "tmdbUpdatedAt": "2026-09-22T17:14:35.379Z"
+    "tmdbUpdatedAt": "2026-09-25T20:54:35.535Z",
+    "tmdbFetchedAt": "2026-09-25T20:54:35.535Z"
   },
   {
     "id": "1620039",
@@ -39386,7 +39419,8 @@
     ],
     "instagramId": "heatherhemmens",
     "twitterId": "heatherhemmens",
-    "tmdbUpdatedAt": "2026-09-22T17:14:35.933Z"
+    "tmdbUpdatedAt": "2026-09-25T20:54:36.124Z",
+    "tmdbFetchedAt": "2026-09-25T20:54:36.124Z"
   },
   {
     "id": "heather-james",
@@ -39598,7 +39632,8 @@
     "gender": "Female",
     "knownForDepartment": "Acting",
     "knownCredits": 5,
-    "tmdbUpdatedAt": "2026-09-22T17:14:35.182Z"
+    "tmdbUpdatedAt": "2026-09-25T20:54:35.229Z",
+    "tmdbFetchedAt": "2026-09-25T20:54:35.229Z"
   },
   {
     "id": "helena-marie",
@@ -40032,14 +40067,15 @@
     "imdbPersonId": "nm1555699",
     "gender": "Female",
     "knownForDepartment": "Acting",
-    "knownCredits": 32,
+    "knownCredits": 33,
     "alsoKnownAs": [
       "Holland Marie Roden"
     ],
     "instagramId": "hollandroden",
     "twitterId": "hollandroden",
     "facebookId": "HollandRoden",
-    "tmdbUpdatedAt": "2026-09-22T17:14:36.440Z"
+    "tmdbUpdatedAt": "2026-09-25T20:54:36.329Z",
+    "tmdbFetchedAt": "2026-09-25T20:54:36.329Z"
   },
   {
     "id": "holly-a-morris",
@@ -40059,7 +40095,8 @@
       "Holly Anne Morris",
       "Holly Morris"
     ],
-    "tmdbUpdatedAt": "2026-09-22T17:14:36.546Z"
+    "tmdbUpdatedAt": "2026-09-25T20:54:36.781Z",
+    "tmdbFetchedAt": "2026-09-25T20:54:36.781Z"
   },
   {
     "id": "holly-butler-dance",
@@ -40183,7 +40220,8 @@
     "instagramId": "hollyrpeete",
     "twitterId": "hollyrpeete",
     "facebookId": "HollyRPeete",
-    "tmdbUpdatedAt": "2026-09-22T17:14:37.500Z"
+    "tmdbUpdatedAt": "2026-09-25T20:54:37.943Z",
+    "tmdbFetchedAt": "2026-09-25T20:54:37.943Z"
   },
   {
     "id": "2188234",
@@ -40453,7 +40491,8 @@
     ],
     "instagramId": "hunterking",
     "twitterId": "hunterhaleyking",
-    "tmdbUpdatedAt": "2026-09-22T17:14:34.327Z"
+    "tmdbUpdatedAt": "2026-09-25T20:54:34.333Z",
+    "tmdbFetchedAt": "2026-09-25T20:54:34.333Z"
   },
   {
     "id": "iain-roberts",
@@ -40528,7 +40567,8 @@
     "instagramId": "ianmharding",
     "twitterId": "IANMHARDING",
     "facebookId": "ianmharding",
-    "tmdbUpdatedAt": "2026-09-22T17:14:37.504Z"
+    "tmdbUpdatedAt": "2026-09-25T20:54:38.004Z",
+    "tmdbFetchedAt": "2026-09-25T20:54:38.004Z"
   },
   {
     "id": "ian-harrison",
@@ -41309,7 +41349,8 @@
     "instagramId": "italiaricci",
     "twitterId": "italiaricci",
     "facebookId": "missitaliaricci",
-    "tmdbUpdatedAt": "2026-09-22T17:14:38.190Z"
+    "tmdbUpdatedAt": "2026-09-25T20:54:38.191Z",
+    "tmdbFetchedAt": "2026-09-25T20:54:38.191Z"
   },
   {
     "id": "ivan-walters",
@@ -43042,7 +43083,8 @@
     "imdbPersonId": "nm0488484",
     "knownForDepartment": "Writing",
     "knownCredits": 5,
-    "tmdbUpdatedAt": "2026-09-22T17:14:33.651Z"
+    "tmdbUpdatedAt": "2026-09-25T20:54:33.448Z",
+    "tmdbFetchedAt": "2026-09-25T20:54:33.448Z"
   },
   {
     "id": "james-m-jenkinson",
@@ -43266,7 +43308,8 @@
       "James Trevena",
       "James Trevena-Brown"
     ],
-    "tmdbUpdatedAt": "2026-09-22T17:14:36.535Z"
+    "tmdbUpdatedAt": "2026-09-25T20:54:36.649Z",
+    "tmdbFetchedAt": "2026-09-25T20:54:36.649Z"
   },
   {
     "id": "james-tupper",
@@ -46084,7 +46127,8 @@
     "alsoKnownAs": [
       "Jennifer Ciurluini"
     ],
-    "tmdbUpdatedAt": "2026-09-22T17:14:37.730Z"
+    "tmdbUpdatedAt": "2026-09-25T20:54:38.318Z",
+    "tmdbFetchedAt": "2026-09-25T20:54:38.318Z"
   },
   {
     "id": "jennifer-de-lucia",
@@ -47826,7 +47870,8 @@
     "instagramId": "jschramer",
     "twitterId": "jschramer",
     "facebookId": "officialjessyschram",
-    "tmdbUpdatedAt": "2026-09-22T17:14:37.028Z"
+    "tmdbUpdatedAt": "2026-09-25T20:54:37.281Z",
+    "tmdbFetchedAt": "2026-09-25T20:54:37.281Z"
   },
   {
     "id": "jett-klyne",
@@ -47914,7 +47959,8 @@
     "alsoKnownAs": [
       "질 프라피에"
     ],
-    "tmdbUpdatedAt": "2026-09-22T17:14:38.905Z"
+    "tmdbUpdatedAt": "2026-09-25T20:54:38.533Z",
+    "tmdbFetchedAt": "2026-09-25T20:54:38.533Z"
   },
   {
     "id": "jill-knox",
@@ -48025,7 +48071,8 @@
     "imdbPersonId": "nm10076145",
     "knownForDepartment": "Acting",
     "knownCredits": 2,
-    "tmdbUpdatedAt": "2026-09-22T17:14:34.118Z"
+    "tmdbUpdatedAt": "2026-09-25T20:54:34.077Z",
+    "tmdbFetchedAt": "2026-09-25T20:54:34.077Z"
   },
   {
     "id": "jillian-murray",
@@ -48246,7 +48293,8 @@
     "instagramId": "jimpressions",
     "twitterId": "jimrossmeskimen",
     "facebookId": "jim.meskimen",
-    "tmdbUpdatedAt": "2026-09-22T17:14:36.287Z"
+    "tmdbUpdatedAt": "2026-09-25T20:54:36.604Z",
+    "tmdbFetchedAt": "2026-09-25T20:54:36.604Z"
   },
   {
     "id": "jim-o-heir",
@@ -48712,7 +48760,8 @@
     "gender": "Female",
     "knownForDepartment": "Acting",
     "knownCredits": 9,
-    "tmdbUpdatedAt": "2026-09-22T17:14:35.826Z"
+    "tmdbUpdatedAt": "2026-09-25T20:54:36.002Z",
+    "tmdbFetchedAt": "2026-09-25T20:54:36.002Z"
   },
   {
     "id": "joe-angeles",
@@ -50035,7 +50084,8 @@
     "gender": "Male",
     "knownForDepartment": "Directing",
     "knownCredits": 2,
-    "tmdbUpdatedAt": "2026-09-22T17:14:34.110Z"
+    "tmdbUpdatedAt": "2026-09-25T20:54:34.629Z",
+    "tmdbFetchedAt": "2026-09-25T20:54:34.629Z"
   },
   {
     "id": "27143",
@@ -50552,7 +50602,8 @@
     "knownCredits": 98,
     "instagramId": "jonathandbennett",
     "facebookId": "RealJonathanBennett",
-    "tmdbUpdatedAt": "2026-09-22T17:14:37.618Z"
+    "tmdbUpdatedAt": "2026-09-25T20:54:38.151Z",
+    "tmdbFetchedAt": "2026-09-25T20:54:38.151Z"
   },
   {
     "id": "jonathan-billions",
@@ -50599,7 +50650,8 @@
     ],
     "instagramId": "jonathansfrakes",
     "twitterId": "jonathansfrakes",
-    "tmdbUpdatedAt": "2026-09-22T17:14:36.085Z"
+    "tmdbUpdatedAt": "2026-09-25T20:54:36.386Z",
+    "tmdbFetchedAt": "2026-09-25T20:54:36.386Z"
   },
   {
     "id": "jonathan-keltz",
@@ -53406,7 +53458,8 @@
     "gender": "Female",
     "knownForDepartment": "Acting",
     "knownCredits": 3,
-    "tmdbUpdatedAt": "2026-09-22T17:14:37.323Z"
+    "tmdbUpdatedAt": "2026-09-25T20:54:37.741Z",
+    "tmdbFetchedAt": "2026-09-25T20:54:37.741Z"
   },
   {
     "id": "kai-findley",
@@ -54693,7 +54746,8 @@
     "imdbPersonId": "nm10971606",
     "knownForDepartment": "Acting",
     "knownCredits": 2,
-    "tmdbUpdatedAt": "2026-09-22T17:14:33.082Z"
+    "tmdbUpdatedAt": "2026-09-25T20:54:33.065Z",
+    "tmdbFetchedAt": "2026-09-25T20:54:33.065Z"
   },
   {
     "id": "katherine-haysbert",
@@ -54833,7 +54887,8 @@
     "knownForDepartment": "Acting",
     "knownCredits": 29,
     "instagramId": "the_kathryn_davis",
-    "tmdbUpdatedAt": "2026-09-22T17:14:37.715Z"
+    "tmdbUpdatedAt": "2026-09-25T20:54:38.257Z",
+    "tmdbFetchedAt": "2026-09-25T20:54:38.257Z"
   },
   {
     "id": "kathryn-kirkpatrick",
@@ -57569,7 +57624,8 @@
     ],
     "instagramId": "kimberleysustad",
     "twitterId": "KimberleySustad",
-    "tmdbUpdatedAt": "2026-09-22T17:14:37.133Z"
+    "tmdbUpdatedAt": "2026-09-25T20:54:37.539Z",
+    "tmdbFetchedAt": "2026-09-25T20:54:37.539Z"
   },
   {
     "id": "1559421",
@@ -59098,7 +59154,8 @@
     ],
     "instagramId": "thereallacey",
     "twitterId": "IamLaceyChabert",
-    "tmdbUpdatedAt": "2026-09-22T17:14:33.678Z"
+    "tmdbUpdatedAt": "2026-09-25T20:54:33.532Z",
+    "tmdbFetchedAt": "2026-09-25T20:54:33.532Z"
   },
   {
     "id": "lacey-katena",
@@ -60166,7 +60223,8 @@
     ],
     "instagramId": "laurenfcollins",
     "twitterId": "Lauren_Collins",
-    "tmdbUpdatedAt": "2026-09-22T17:14:34.488Z"
+    "tmdbUpdatedAt": "2026-09-25T20:54:34.441Z",
+    "tmdbFetchedAt": "2026-09-25T20:54:34.441Z"
   },
   {
     "id": "lauren-dewey",
@@ -60608,7 +60666,8 @@
     "profileUrl": "/images/people/5120435.webp",
     "knownForDepartment": "Acting",
     "knownCredits": 3,
-    "tmdbUpdatedAt": "2026-09-22T17:14:35.823Z"
+    "tmdbUpdatedAt": "2026-09-25T20:54:36.081Z",
+    "tmdbFetchedAt": "2026-09-25T20:54:36.081Z"
   },
   {
     "id": "4621750",
@@ -61331,7 +61390,8 @@
     "tmdbPersonId": 6010335,
     "knownForDepartment": "Acting",
     "knownCredits": 2,
-    "tmdbUpdatedAt": "2026-09-22T17:14:34.120Z"
+    "tmdbUpdatedAt": "2026-09-25T20:54:34.014Z",
+    "tmdbFetchedAt": "2026-09-25T20:54:34.014Z"
   },
   {
     "id": "3987222",
@@ -62688,7 +62748,8 @@
     "gender": "Female",
     "knownForDepartment": "Acting",
     "knownCredits": 5,
-    "tmdbUpdatedAt": "2026-09-22T17:14:34.699Z"
+    "tmdbUpdatedAt": "2026-09-25T20:54:34.876Z",
+    "tmdbFetchedAt": "2026-09-25T20:54:34.876Z"
   },
   {
     "id": "liviu-rain",
@@ -65653,7 +65714,8 @@
     "instagramId": "themarcograzzini",
     "twitterId": "marcograzzini",
     "facebookId": "OfficialMarcoGrazzini",
-    "tmdbUpdatedAt": "2026-09-22T17:14:36.870Z"
+    "tmdbUpdatedAt": "2026-09-25T20:54:37.082Z",
+    "tmdbFetchedAt": "2026-09-25T20:54:37.082Z"
   },
   {
     "id": "marco-scapillato",
@@ -65801,7 +65863,8 @@
     "gender": "Female",
     "knownForDepartment": "Writing",
     "knownCredits": 52,
-    "tmdbUpdatedAt": "2026-09-22T17:14:36.736Z"
+    "tmdbUpdatedAt": "2026-09-25T20:54:36.867Z",
+    "tmdbFetchedAt": "2026-09-25T20:54:36.867Z"
   },
   {
     "id": "1721076",
@@ -66138,7 +66201,8 @@
     "gender": "Female",
     "knownForDepartment": "Acting",
     "knownCredits": 22,
-    "tmdbUpdatedAt": "2026-09-22T17:14:33.924Z"
+    "tmdbUpdatedAt": "2026-09-25T20:54:33.262Z",
+    "tmdbFetchedAt": "2026-09-25T20:54:33.262Z"
   },
   {
     "id": "maria-yanagisawa",
@@ -66260,7 +66324,8 @@
     "alsoKnownAs": [
       "Marianthi Pitsadiotis"
     ],
-    "tmdbUpdatedAt": "2026-09-22T17:14:37.907Z"
+    "tmdbUpdatedAt": "2026-09-25T20:54:38.454Z",
+    "tmdbFetchedAt": "2026-09-25T20:54:38.454Z"
   },
   {
     "id": "2352571",
@@ -66971,7 +67036,8 @@
     "instagramId": "themarkghanime",
     "twitterId": "markghanime",
     "facebookId": "MarkGhanimeOfficial",
-    "tmdbUpdatedAt": "2026-09-22T17:14:36.355Z"
+    "tmdbUpdatedAt": "2026-09-25T20:54:36.252Z",
+    "tmdbFetchedAt": "2026-09-25T20:54:36.252Z"
   },
   {
     "id": "2033865",
@@ -69065,7 +69131,8 @@
     ],
     "instagramId": "matthew_james_dowden",
     "twitterId": "matthew_dowden",
-    "tmdbUpdatedAt": "2026-09-22T17:14:35.245Z"
+    "tmdbUpdatedAt": "2026-09-25T20:54:35.470Z",
+    "tmdbFetchedAt": "2026-09-25T20:54:35.470Z"
   },
   {
     "id": "98117",
@@ -69360,7 +69427,8 @@
     "gender": "Male",
     "knownForDepartment": "Acting",
     "knownCredits": 26,
-    "tmdbUpdatedAt": "2026-09-22T17:14:34.708Z"
+    "tmdbUpdatedAt": "2026-09-25T20:54:34.885Z",
+    "tmdbFetchedAt": "2026-09-25T20:54:34.885Z"
   },
   {
     "id": "matthias-falvai",
@@ -69580,7 +69648,8 @@
     "alsoKnownAs": [
       "Maxwell McGuire"
     ],
-    "tmdbUpdatedAt": "2026-09-22T17:14:35.429Z"
+    "tmdbUpdatedAt": "2026-09-25T20:54:35.147Z",
+    "tmdbFetchedAt": "2026-09-25T20:54:35.147Z"
   },
   {
     "id": "max-topplin",
@@ -73239,7 +73308,8 @@
     "tmdbPersonId": 1882374,
     "knownForDepartment": "Writing",
     "knownCredits": 16,
-    "tmdbUpdatedAt": "2026-09-22T17:14:37.119Z"
+    "tmdbUpdatedAt": "2026-09-25T20:54:37.416Z",
+    "tmdbFetchedAt": "2026-09-25T20:54:37.416Z"
   },
   {
     "id": "michelle-sperazz",
@@ -74098,7 +74168,8 @@
     ],
     "instagramId": "mishaelmorgan",
     "twitterId": "MishaelMorgan1",
-    "tmdbUpdatedAt": "2026-09-22T17:14:37.424Z"
+    "tmdbUpdatedAt": "2026-09-25T20:54:37.845Z",
+    "tmdbFetchedAt": "2026-09-25T20:54:37.845Z"
   },
   {
     "id": "mishka-the-baud",
@@ -75130,7 +75201,8 @@
     "gender": "Female",
     "knownForDepartment": "Acting",
     "knownCredits": 16,
-    "tmdbUpdatedAt": "2026-09-22T17:14:36.906Z"
+    "tmdbUpdatedAt": "2026-09-25T20:54:37.528Z",
+    "tmdbFetchedAt": "2026-09-25T20:54:37.528Z"
   },
   {
     "id": "nancy-sorel",
@@ -76211,7 +76283,8 @@
     "gender": "Male",
     "knownForDepartment": "Acting",
     "knownCredits": 59,
-    "tmdbUpdatedAt": "2026-09-22T17:14:36.713Z"
+    "tmdbUpdatedAt": "2026-09-25T20:54:36.353Z",
+    "tmdbFetchedAt": "2026-09-25T20:54:36.353Z"
   },
   {
     "id": "niamh-carolan",
@@ -77152,7 +77225,8 @@
     "knownCredits": 10,
     "instagramId": "nicoleppower",
     "twitterId": "nicolepower3",
-    "tmdbUpdatedAt": "2026-09-22T17:14:34.456Z"
+    "tmdbUpdatedAt": "2026-09-25T20:54:34.525Z",
+    "tmdbFetchedAt": "2026-09-25T20:54:34.525Z"
   },
   {
     "id": "1239590",
@@ -79616,7 +79690,8 @@
     "gender": "Male",
     "knownForDepartment": "Acting",
     "knownCredits": 50,
-    "tmdbUpdatedAt": "2026-09-22T17:14:34.065Z"
+    "tmdbUpdatedAt": "2026-09-25T20:54:33.857Z",
+    "tmdbFetchedAt": "2026-09-25T20:54:33.857Z"
   },
   {
     "id": "patrick-rinehart",
@@ -80073,7 +80148,8 @@
     "tmdbPersonId": 6278261,
     "knownForDepartment": "Acting",
     "knownCredits": 3,
-    "tmdbUpdatedAt": "2026-09-22T17:14:34.850Z"
+    "tmdbUpdatedAt": "2026-09-25T20:54:34.984Z",
+    "tmdbFetchedAt": "2026-09-25T20:54:34.984Z"
   },
   {
     "id": "paul-mcgillion",
@@ -80725,7 +80801,8 @@
       "پیتر بنسون"
     ],
     "twitterId": "p_jbenson",
-    "tmdbUpdatedAt": "2026-09-22T17:14:37.264Z"
+    "tmdbUpdatedAt": "2026-09-25T20:54:37.646Z",
+    "tmdbFetchedAt": "2026-09-25T20:54:37.646Z"
   },
   {
     "id": "peter-bou-ghannam",
@@ -81154,7 +81231,8 @@
     "alsoKnownAs": [
       "Peter J. Porte"
     ],
-    "tmdbUpdatedAt": "2026-09-22T17:14:34.261Z"
+    "tmdbUpdatedAt": "2026-09-25T20:54:34.113Z",
+    "tmdbFetchedAt": "2026-09-25T20:54:34.113Z"
   },
   {
     "id": "peter-rothwell",
@@ -84180,7 +84258,7 @@
     "imdbPersonId": "nm0454236",
     "gender": "Male",
     "knownForDepartment": "Acting",
-    "knownCredits": 255,
+    "knownCredits": 256,
     "alsoKnownAs": [
       "Richard Bruce Kind",
       "ریچارد کایند"
@@ -84188,7 +84266,8 @@
     "instagramId": "realrichardkind",
     "twitterId": "RealRichardKind",
     "facebookId": "realrichardkind",
-    "tmdbUpdatedAt": "2026-09-22T17:14:33.858Z"
+    "tmdbUpdatedAt": "2026-09-25T20:54:33.596Z",
+    "tmdbFetchedAt": "2026-09-25T20:54:33.596Z"
   },
   {
     "id": "97065",
@@ -86899,7 +86978,8 @@
     "imdbPersonId": "nm1293285",
     "knownForDepartment": "Writing",
     "knownCredits": 8,
-    "tmdbUpdatedAt": "2026-09-22T17:14:34.258Z"
+    "tmdbUpdatedAt": "2026-09-25T20:54:34.097Z",
+    "tmdbFetchedAt": "2026-09-25T20:54:34.097Z"
   },
   {
     "id": "ryan-lino",
@@ -88559,7 +88639,8 @@
     "alsoKnownAs": [
       "Sarah Ann Hayward"
     ],
-    "tmdbUpdatedAt": "2026-09-22T17:14:35.291Z"
+    "tmdbUpdatedAt": "2026-09-25T20:54:35.483Z",
+    "tmdbFetchedAt": "2026-09-25T20:54:35.483Z"
   },
   {
     "id": "sarah-helbringer",
@@ -88948,7 +89029,8 @@
     "gender": "Female",
     "knownForDepartment": "Acting",
     "knownCredits": 15,
-    "tmdbUpdatedAt": "2026-09-22T17:14:35.486Z"
+    "tmdbUpdatedAt": "2026-09-25T20:54:35.658Z",
+    "tmdbFetchedAt": "2026-09-25T20:54:35.658Z"
   },
   {
     "id": "sarita-van-dyke",
@@ -89490,7 +89572,8 @@
     ],
     "instagramId": "scottmfoster",
     "twitterId": "scottmfoster",
-    "tmdbUpdatedAt": "2026-09-22T17:14:37.226Z"
+    "tmdbUpdatedAt": "2026-09-25T20:54:37.586Z",
+    "tmdbFetchedAt": "2026-09-25T20:54:37.586Z"
   },
   {
     "id": "scott-mooney",
@@ -90575,7 +90658,8 @@
     "gender": "Female",
     "knownForDepartment": "Directing",
     "knownCredits": 13,
-    "tmdbUpdatedAt": "2026-09-22T17:14:37.103Z"
+    "tmdbUpdatedAt": "2026-09-25T20:54:37.380Z",
+    "tmdbFetchedAt": "2026-09-25T20:54:37.380Z"
   },
   {
     "id": "shane-lennon",
@@ -91785,7 +91869,8 @@
     "alsoKnownAs": [
       "Shiraine Haas-Blake"
     ],
-    "tmdbUpdatedAt": "2026-09-22T17:14:35.578Z"
+    "tmdbUpdatedAt": "2026-09-25T20:54:35.716Z",
+    "tmdbFetchedAt": "2026-09-25T20:54:35.716Z"
   },
   {
     "id": "shirell-ferguson-coleman",
@@ -91879,7 +91964,8 @@
     "gender": "Female",
     "knownForDepartment": "Acting",
     "knownCredits": 11,
-    "tmdbUpdatedAt": "2026-09-22T17:14:35.441Z"
+    "tmdbUpdatedAt": "2026-09-25T20:54:35.498Z",
+    "tmdbFetchedAt": "2026-09-25T20:54:35.498Z"
   },
   {
     "id": "sia-foryoh",
@@ -92213,7 +92299,8 @@
     ],
     "instagramId": "siobhan",
     "twitterId": "siobhanw_",
-    "tmdbUpdatedAt": "2026-09-22T17:14:36.928Z"
+    "tmdbUpdatedAt": "2026-09-25T20:54:37.125Z",
+    "tmdbFetchedAt": "2026-09-25T20:54:37.125Z"
   },
   {
     "id": "5624103",
@@ -92357,7 +92444,8 @@
     "instagramId": "sohmkapila",
     "twitterId": "sohmey",
     "facebookId": "sohmey",
-    "tmdbUpdatedAt": "2026-09-22T17:14:37.062Z"
+    "tmdbUpdatedAt": "2026-09-25T20:54:37.334Z",
+    "tmdbFetchedAt": "2026-09-25T20:54:37.334Z"
   },
   {
     "id": "solange-sookram",
@@ -92703,8 +92791,9 @@
     "imdbPersonId": "nm5137545",
     "gender": "Male",
     "knownForDepartment": "Writing",
-    "knownCredits": 12,
-    "tmdbUpdatedAt": "2026-09-21T13:16:48.902Z"
+    "knownCredits": 13,
+    "tmdbUpdatedAt": "2026-09-25T20:54:38.058Z",
+    "tmdbFetchedAt": "2026-09-25T20:54:38.058Z"
   },
   {
     "id": "stacey-ann-turner",
@@ -92992,7 +93081,8 @@
     "gender": "Male",
     "knownForDepartment": "Directing",
     "knownCredits": 46,
-    "tmdbUpdatedAt": "2026-09-22T17:14:33.471Z"
+    "tmdbUpdatedAt": "2026-09-25T20:54:33.288Z",
+    "tmdbFetchedAt": "2026-09-25T20:54:33.288Z"
   },
   {
     "id": "stefania-indelicato",
@@ -93872,7 +93962,8 @@
     "instagramId": "leven_stund",
     "twitterId": "leven_stund",
     "facebookId": "OfficialSteveLund",
-    "tmdbUpdatedAt": "2026-09-22T17:14:35.047Z"
+    "tmdbUpdatedAt": "2026-09-25T20:54:35.251Z",
+    "tmdbFetchedAt": "2026-09-25T20:54:35.251Z"
   },
   {
     "id": "steve-monroe",
@@ -95036,7 +95127,8 @@
     "alsoKnownAs": [
       "泰根・伯恩斯"
     ],
-    "tmdbUpdatedAt": "2026-09-22T17:14:33.915Z"
+    "tmdbUpdatedAt": "2026-09-25T20:54:33.777Z",
+    "tmdbFetchedAt": "2026-09-25T20:54:33.777Z"
   },
   {
     "id": "tahmoh-penikett",
@@ -95365,7 +95457,8 @@
     ],
     "instagramId": "tamminsursok",
     "twitterId": "TamminSursok",
-    "tmdbUpdatedAt": "2026-09-22T17:14:34.308Z"
+    "tmdbUpdatedAt": "2026-09-25T20:54:34.275Z",
+    "tmdbFetchedAt": "2026-09-25T20:54:34.275Z"
   },
   {
     "id": "tammy-gillis",
@@ -95668,7 +95761,8 @@
     "alsoKnownAs": [
       "Tara Elizabeth O'Brien"
     ],
-    "tmdbUpdatedAt": "2026-09-22T17:14:37.708Z"
+    "tmdbUpdatedAt": "2026-09-25T20:54:38.290Z",
+    "tmdbFetchedAt": "2026-09-25T20:54:38.290Z"
   },
   {
     "id": "1433022",
@@ -98011,7 +98105,8 @@
     "knownCredits": 22,
     "instagramId": "tina_jung",
     "twitterId": "tinayjung",
-    "tmdbUpdatedAt": "2026-09-22T17:14:34.523Z"
+    "tmdbUpdatedAt": "2026-09-25T20:54:34.720Z",
+    "tmdbFetchedAt": "2026-09-25T20:54:34.720Z"
   },
   {
     "id": "tina-lifford",
@@ -98880,7 +98975,8 @@
     ],
     "instagramId": "tortorra_",
     "twitterId": "torianderson",
-    "tmdbUpdatedAt": "2026-09-22T17:14:37.525Z"
+    "tmdbUpdatedAt": "2026-09-25T20:54:38.028Z",
+    "tmdbFetchedAt": "2026-09-25T20:54:38.028Z"
   },
   {
     "id": "tori-barban",
@@ -98960,7 +99056,8 @@
     "instagramId": "torreydevitto",
     "twitterId": "TorreyDeVitto",
     "facebookId": "Torrey-DeVitto-288041481320332",
-    "tmdbUpdatedAt": "2026-09-22T17:14:37.313Z"
+    "tmdbUpdatedAt": "2026-09-25T20:54:37.779Z",
+    "tmdbFetchedAt": "2026-09-25T20:54:37.779Z"
   },
   {
     "id": "torsten-johnson",
@@ -99303,7 +99400,8 @@
     "knownCredits": 51,
     "instagramId": "travisvanwinkle",
     "twitterId": "TVdub",
-    "tmdbUpdatedAt": "2026-09-22T17:14:33.724Z"
+    "tmdbUpdatedAt": "2026-09-25T20:54:33.567Z",
+    "tmdbFetchedAt": "2026-09-25T20:54:33.567Z"
   },
   {
     "id": "treat-williams",
@@ -100625,7 +100723,8 @@
     "gender": "Female",
     "knownForDepartment": "Acting",
     "knownCredits": 7,
-    "tmdbUpdatedAt": "2026-09-22T17:14:33.259Z"
+    "tmdbUpdatedAt": "2026-09-25T20:54:33.065Z",
+    "tmdbFetchedAt": "2026-09-25T20:54:33.065Z"
   },
   {
     "id": "varun-saranga",
@@ -102052,7 +102151,8 @@
     "alsoKnownAs": [
       "윌 켐프"
     ],
-    "tmdbUpdatedAt": "2026-09-22T17:14:36.934Z"
+    "tmdbUpdatedAt": "2026-09-25T20:54:37.219Z",
+    "tmdbFetchedAt": "2026-09-25T20:54:37.219Z"
   },
   {
     "id": "will-lyman",
