@@ -1,4 +1,5 @@
 import type { Actor, Brand, CastMember, Movie } from '../types';
+import type { FingerprintDefinition } from '../data/fingerprints';
 
 /**
  * Lightweight movie shape used by catalogue listings, home sections, related
@@ -28,6 +29,11 @@ export interface CatalogueListing {
   /** Years available for the active scope (brand years or all catalogue years). */
   years: number[];
   brand?: Brand;
+}
+
+export interface FingerprintListing extends CatalogueListing {
+  fingerprint: { id: string; label: string; category: string };
+  relatedFingerprints: FingerprintDefinition[];
 }
 
 /** A populated brand plus its catalogue count. */

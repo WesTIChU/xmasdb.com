@@ -73,6 +73,10 @@ export function getFeedsPath(): string {
   return `/feeds/`;
 }
 
+export function getFingerprintPath(fingerprintId: string): string {
+  return `/fingerprint/${fingerprintId.toLowerCase()}/`;
+}
+
 /**
  * Convert relative canonical path to absolute canonical URL
  */

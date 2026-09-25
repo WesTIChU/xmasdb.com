@@ -30,7 +30,9 @@ import {
   buildSearchIndex,
   buildSearchResults,
   buildFeedsMeta,
+  buildFingerprintListing,
 } from './src/server/catalogue-api';
+import { getFingerprintById } from './src/data/fingerprints';
 import { ContactRateLimiter, ensureContactStorage, getContactDataDir, readContactSubmissions, storeContactSubmission, updateContactSubmissions, validateContactSubmission } from './src/server/contact';
 import { ADMIN_SESSION_COOKIE, AdminAuth, AdminLoginRateLimiter, AdminMutationRateLimiter, clearCookieOptions, cookieOptions, getAdminLoginRedirect, isSameOriginMutation } from './src/server/admin-auth';
 import { commitMoviesToGitHub, dispatchComingSoonRefresh, isGitHubConfigured, readGitHubBranch, WorkflowDispatchCooldown } from './src/server/github-catalogue';
@@ -49,6 +51,8 @@ function isKnownPagePath(rawPath: string): boolean {
   const clean = rawPath.replace(/^\/+|\/+$/g, '');
   if (!clean || clean === 'movies' || clean === 'all' || clean === 'feeds' || clean === 'about' || clean === 'privacy' || clean === 'contact') return true;
   if (clean === 'admin/login' || clean === 'admin/submissions' || clean === 'admin/feed-statistics' || clean === 'admin/movies/add') return true;
+  const fingerprintMatch = clean.match(/^fingerprint\/([^/]+)$/i);
+  if (fingerprintMatch) return Boolean(getFingerprintById(fingerprintMatch[1]));
   const yearMatch = clean.match(/^year\/(\d+)$/i);
   if (yearMatch) {
     return Boolean(buildCatalogueListing(parseCatalogueQuery(''), undefined, Number(yearMatch[1]))?.total);
@@ -593,6 +597,12 @@ async function startServer() {
     const lockedYear = Number.isInteger(yearValue) && (yearValue as number) > 0 ? yearValue : undefined;
     const listing = buildCatalogueListing(catalogueQuery, brandSlug, lockedYear);
     if (!listing) return sendJson(res, { error: 'Brand not found' }, 404);
+    return sendJson(res, listing);
+  });
+
+  app.get('/api/fingerprint/:slug', (req, res) => {
+    const listing = buildFingerprintListing(parseCatalogueQuery(toCatalogueSearch(req.query)), req.params.slug);
+    if (!listing) return sendJson(res, { error: 'Fingerprint not found' }, 404);
     return sendJson(res, listing);
   });
 

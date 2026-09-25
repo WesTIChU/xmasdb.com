@@ -82,6 +82,7 @@ export interface Movie {
   voteAverage?: number;
   voteCount?: number;
   status?: string;
+  fingerprints?: string[];
   tmdbUpdatedAt?: string;
   tmdbFetchedAt?: string;
 }

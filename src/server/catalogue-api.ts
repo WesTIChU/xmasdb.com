@@ -23,6 +23,7 @@ import type {
   AboutPayload,
   ActorFilmographyItem,
   CatalogueListing,
+  FingerprintListing,
   CatalogueMeta,
   FeedsMetaPayload,
   HomePayload,
@@ -38,6 +39,8 @@ import type {
 } from '../api/types';
 import { scoreActorSearchResult, scoreMovieSearchFields } from '../utils/search-relevance';
 import { getCreativeCrew, getPersonSlug, isCreativeCrewJob } from '../utils/creative-crew';
+import { getFingerprintById } from '../data/fingerprints';
+import { getMovieFingerprints, getRelatedMovieFingerprints, movieHasFingerprint } from '../data/movie-fingerprints';
 
 const FAVOURITE_MOVIE_TITLES = [
   'Christmas by Starlight',
@@ -140,6 +143,23 @@ export function buildCatalogueListing(
   };
 }
 
+export function buildFingerprintListing(query: CatalogueQuery, fingerprintSlug: string): FingerprintListing | null {
+  const fingerprint = getFingerprintById(fingerprintSlug);
+  if (!fingerprint) return null;
+  const matchingMovies = MOVIES.filter((movie) => movieHasFingerprint(movie, fingerprint.id));
+  const page = getCataloguePage(matchingMovies, query);
+  return {
+    movies: page.movies.map(toListingMovie),
+    total: page.total,
+    totalPages: page.totalPages,
+    page: page.page,
+    perPage: page.perPage,
+    years: [],
+    fingerprint,
+    relatedFingerprints: getRelatedMovieFingerprints(matchingMovies, fingerprint.id),
+  };
+}
+
 // ---------------------------------------------------------------------------
 // Movie detail
 // ---------------------------------------------------------------------------
@@ -206,6 +226,7 @@ export function buildMovieDetail(identifier: string, slug?: string): MovieDetail
 
   const movieWithResolvedCast = {
     ...movie,
+    fingerprints: getMovieFingerprints(movie).map((fingerprint) => fingerprint.id),
     cast: movie.cast.map((member) => ({
       ...member,
       resolvedProfileUrl: getActorBySlug(member.slug)?.photoUrl,

@@ -8,9 +8,10 @@ interface CatalogueControlsProps {
   total: number;
   page: number;
   onNavigate: (path: string) => void;
+  showPerPage?: boolean;
 }
 
-export const CatalogueControls: React.FC<CatalogueControlsProps> = ({ pathname, search, query, total, page, onNavigate }) => {
+export const CatalogueControls: React.FC<CatalogueControlsProps> = ({ pathname, search, query, total, page, onNavigate, showPerPage = true }) => {
   const update = (changes: Record<string, string | number | undefined>) => onNavigate(buildCatalogueUrl(pathname, search, changes));
   const start = total === 0 ? 0 : (page - 1) * query.perPage + 1;
   const end = Math.min(page * query.perPage, total);
@@ -18,7 +19,7 @@ export const CatalogueControls: React.FC<CatalogueControlsProps> = ({ pathname, 
     <div className="mt-4 mb-5 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 text-sm font-sans-clean">
       <p className="text-[#736B63]">{total === 0 ? 'No movies found' : `Showing ${start}–${end} of ${total} ${total === 1 ? 'movie' : 'movies'}`}</p>
       <div className="flex flex-wrap items-center gap-3 text-[#1A3D2F]">
-        <label className="inline-flex items-center gap-2">
+        {showPerPage && <label className="inline-flex items-center gap-2">
           <span>Show</span>
           <select
             value={query.perPage}
@@ -29,7 +30,7 @@ export const CatalogueControls: React.FC<CatalogueControlsProps> = ({ pathname, 
             {SUPPORTED_PER_PAGE.map((value) => <option key={value} value={value}>{value}</option>)}
           </select>
           <span>per page</span>
-        </label>
+        </label>}
         <label className="inline-flex items-center gap-2">
           <span>Sort</span>
           <select

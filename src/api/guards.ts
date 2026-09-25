@@ -4,6 +4,7 @@ import type {
   PrivacyPayload,
   ContactPayload,
   CatalogueListing,
+  FingerprintListing,
   FeedsMetaPayload,
   HomePayload,
   MovieDetailPayload,
@@ -43,6 +44,15 @@ export function isCatalogueListingPayload(value: unknown): value is CatalogueLis
     && isNumber(value.totalPages)
     && isNumber(value.page)
     && isNumber(value.perPage);
+}
+
+export function isFingerprintListingPayload(value: unknown): value is FingerprintListing {
+  if (!isRecord(value) || !isCatalogueListingPayload(value)) return false;
+  return isRecord(value.fingerprint)
+    && isString(value.fingerprint.id)
+    && isString(value.fingerprint.label)
+    && isString(value.fingerprint.category)
+    && Array.isArray(value.relatedFingerprints);
 }
 
 export function isHomePayload(value: unknown): value is HomePayload {

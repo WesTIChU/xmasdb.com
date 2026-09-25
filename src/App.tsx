@@ -22,6 +22,7 @@ import {
   isAboutPayload,
   isContactPayload,
   isCatalogueListingPayload,
+  isFingerprintListingPayload,
   isFeedsMetaPayload,
   isHomePayload,
   isMovieDetailPayload,
@@ -42,12 +43,15 @@ import {
   peekResolved,
 } from './api/client';
 import { getBrandBySlug } from './data/brands';
+import { getFingerprintById } from './data/fingerprints';
+import { FingerprintChips } from './components/FingerprintChips';
 import {
   getMoviePath,
   getActorPath,
   getNetworkPath,
   getYearPath,
   getMoviesPath,
+  getFingerprintPath,
 } from './utils/urls';
 import {
   buildActorSeo,
@@ -76,6 +80,7 @@ type RouteDescriptor =
   | { type: 'movies' }
   | { type: 'year-archive'; year: number }
   | { type: 'brand'; slug: string; year: number | null }
+  | { type: 'fingerprint'; slug: string }
   | { type: 'movie'; identifier: string; slug?: string }
   | { type: 'actor'; identifier: string; slug?: string }
   | { type: 'feeds' }
@@ -146,7 +151,8 @@ function isRoutePayloadValid(descriptor: RouteDescriptor, payload: unknown): boo
     case 'movies':
     case 'year-archive':
     case 'brand':
-      return isCatalogueListingPayload(payload);
+    case 'fingerprint':
+      return isFingerprintListingPayload(payload);
     case 'movie':
       return isMovieDetailPayload(payload);
     case 'actor':
@@ -178,6 +184,11 @@ export function parseRoute(currentPath: string): RouteDescriptor {
   if (clean === 'admin/submissions') return { type: 'admin-submissions' };
   if (clean === 'admin/feed-statistics') return { type: 'admin-feed-statistics' };
   if (clean === 'admin/movies/add') return { type: 'admin-add-movies' };
+
+  const fingerprintMatch = clean.match(/^fingerprint\/([^/]+)$/i);
+  if (fingerprintMatch) {
+    return getFingerprintById(fingerprintMatch[1]) ? { type: 'fingerprint', slug: fingerprintMatch[1] } : { type: 'not-found' };
+  }
 
   const yearArchiveMatch = clean.match(/^year\/(\d+)$/i);
   if (yearArchiveMatch) {
@@ -234,6 +245,8 @@ function requestFor(descriptor: RouteDescriptor, catalogueSearch: string): strin
       if (descriptor.year) extra.year = String(descriptor.year);
       return catalogueUrl(buildListingSearch(catalogueSearch, extra));
     }
+    case 'fingerprint':
+      return `/api/fingerprint/${encodeURIComponent(descriptor.slug)}${catalogueSearch}`;
     case 'movie':
       return movieUrl(descriptor.slug ? [descriptor.identifier, descriptor.slug] : [descriptor.identifier]);
     case 'actor':
@@ -445,13 +458,14 @@ export default function App() {
   }, [currentPath, descriptor, view.status, isCurrentView]);
 
   // Correct out-of-range page / unsupported perPage values after the server resolves.
-  const listingPayload =
-    isCurrentView &&
-    view.status === 'ready' &&
-    (descriptor.type === 'movies' || descriptor.type === 'year-archive' || descriptor.type === 'brand')
-      && isCatalogueListingPayload(view.payload)
-      ? view.payload
-      : null;
+  const listingPayload = (() => {
+    if (!isCurrentView || view.status !== 'ready') return null;
+    if (descriptor.type === 'fingerprint') return isFingerprintListingPayload(view.payload) ? view.payload : null;
+    if (descriptor.type === 'movies' || descriptor.type === 'year-archive' || descriptor.type === 'brand') {
+      return isCatalogueListingPayload(view.payload) ? view.payload : null;
+    }
+    return null;
+  })();
 
   useEffect(() => {
     if (!listingPayload || typeof window === 'undefined') return;
@@ -746,6 +760,44 @@ export default function App() {
                     totalPages={listingPayload.totalPages}
                     onNavigate={navigate}
                   />
+                </div>
+              );
+            })()}
+
+            {descriptor.type === 'fingerprint' && listingPayload && (() => {
+              const fingerprint = getFingerprintById(descriptor.slug);
+              if (!fingerprint) return <NotFoundPage onNavigate={navigate} onSearch={focusSearch} />;
+              const relatedFingerprints = isFingerprintListingPayload(listingPayload) ? listingPayload.relatedFingerprints : [];
+              return (
+                <div className="py-6 sm:py-8" id={`fingerprint-view-${fingerprint.id}`}>
+                  <div className="mb-8 text-center">
+                    <p className="text-xs font-sans-clean font-semibold uppercase tracking-widest text-[#841818]">Fingerprint</p>
+                    <h1 className="mt-1 text-2xl sm:text-3xl font-heading font-semibold text-[#1A3D2F]">Christmas movies with: {fingerprint.label}</h1>
+                    <p className="text-sm text-[#736B63] font-body mt-1">{listingPayload.total} matching {listingPayload.total === 1 ? 'movie' : 'movies'}.</p>
+                  </div>
+                  <CatalogueControls
+                    pathname={cataloguePathname}
+                    search={catalogueSearch}
+                    query={catalogueQuery}
+                    total={listingPayload.total}
+                    page={listingPayload.page}
+                    onNavigate={navigate}
+                    showPerPage={listingPayload.totalPages > 1}
+                  />
+                  <MovieGrid movies={listingPayload.movies} onSelectMovie={selectMovie} naturalTitleHeight emptyMessage={`No movies found with the fingerprint “${fingerprint.label}”.`} />
+                  {listingPayload.totalPages > 1 && <CataloguePagination
+                    pathname={cataloguePathname}
+                    search={catalogueSearch}
+                    page={listingPayload.page}
+                    totalPages={listingPayload.totalPages}
+                    onNavigate={navigate}
+                  />}
+                  {relatedFingerprints.length > 0 && (
+                    <section className="mt-10 border-t border-[#E7DFD5] pt-7" aria-labelledby="related-fingerprints-heading">
+                      <h2 id="related-fingerprints-heading" className="text-base font-heading font-semibold text-[#1A3D2F]">Explore related fingerprints</h2>
+                      <div className="mt-3"><FingerprintChips fingerprints={relatedFingerprints} onNavigate={navigate} /></div>
+                    </section>
+                  )}
                 </div>
               );
             })()}

@@ -10,6 +10,8 @@ import { MovieCard } from './MovieCard';
 import { NavigationLink } from './NavigationLink';
 import { BackNavigation } from './BackNavigation';
 import { getMoviePoster } from '../utils/posters';
+import { getFingerprintById } from '../data/fingerprints';
+import { FingerprintChips } from './FingerprintChips';
 
 interface MovieDetailProps {
   movie: MovieDetailMovie;
@@ -50,6 +52,7 @@ export const MovieDetail: React.FC<MovieDetailProps> = ({ movie, related, onNavi
   const showComingSoon = hasImageError || !poster;
   const visibleCast = isCastExpanded ? movie.cast : movie.cast.slice(0, 12);
   const hasAdditionalCast = movie.cast.length > 12;
+  const fingerprints = (movie.fingerprints || []).map((id) => getFingerprintById(id)).filter((fingerprint): fingerprint is NonNullable<typeof fingerprint> => Boolean(fingerprint));
 
   return (
     <div id="movie-detail-view" className="py-6 sm:py-10 max-w-4xl mx-auto">
@@ -248,6 +251,13 @@ export const MovieDetail: React.FC<MovieDetailProps> = ({ movie, related, onNavi
               {movie.synopsis}
             </p>
           </section>
+
+          {fingerprints.length > 0 && (
+            <section aria-labelledby="movie-fingerprint-heading">
+              <h2 id="movie-fingerprint-heading" className="text-base font-heading font-semibold text-[#1A3D2F] mb-3">Movie Fingerprints</h2>
+              <FingerprintChips fingerprints={fingerprints} onNavigate={onNavigate} />
+            </section>
+          )}
 
           {/* Starring Cast with Editorial Profile Photos */}
           <section aria-labelledby="cast-heading">

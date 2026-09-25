@@ -5,7 +5,9 @@ import { buildAboutPayload, buildActorDetail, buildCatalogueListing, buildCatalo
 import { getBrandById } from '../data/brands';
 import { parseCatalogueQuery } from '../utils/catalogue-pagination';
 import { buildAboutSeo, buildActorSeo, buildBrandSeo, buildContactSeo, buildFeedsSeo, buildHomeSeo, buildMoviesSeo, buildMovieSeo, buildNotFoundSeo, buildPrivacySeo, buildYearSeo, type SeoDocument } from '../utils/seo';
-import { getActorPath, getMoviePath, toCanonicalUrl } from '../utils/urls';
+import { getActorPath, getFingerprintPath, getMoviePath, toCanonicalUrl } from '../utils/urls';
+import { getFingerprintById } from '../data/fingerprints';
+import { buildFingerprintListing } from './catalogue-api';
 
 export function getRobotsTxt(): string {
   return [
@@ -37,6 +39,18 @@ export function getServerSeo(pathname: string, search = ''): SeoDocument {
   if (clean === 'admin/submissions') return { title: 'Submissions | XmasDB', description: 'Private XmasDB administration.', canonicalPath: '/admin/submissions/', noIndex: true };
   if (clean === 'admin/feed-statistics') return { title: 'Feed Statistics | XmasDB', description: 'Private XmasDB administration.', canonicalPath: '/admin/feed-statistics/', noIndex: true };
   if (clean === 'admin/movies/add') return { title: 'Add Movies | XmasDB', description: 'Private XmasDB administration.', canonicalPath: '/admin/movies/add/', noIndex: true };
+  const fingerprintMatch = clean.match(/^fingerprint\/([^/]+)$/i);
+  if (fingerprintMatch) {
+    const fingerprint = getFingerprintById(fingerprintMatch[1]);
+    const listing = fingerprint ? buildFingerprintListing(parseCatalogueQuery(search), fingerprint.id) : null;
+    if (fingerprint && listing) {
+      return {
+        title: `Christmas Movies with ${fingerprint.label} | XmasDB`,
+        description: `Browse ${listing.total} Christmas ${listing.total === 1 ? 'movie' : 'movies'} with the ${fingerprint.label} fingerprint in the XmasDB catalogue.`,
+        canonicalPath: getFingerprintPath(fingerprint.id),
+      };
+    }
+  }
 
   const yearMatch = clean.match(/^year\/(\d+)$/i);
   if (yearMatch) {
@@ -95,6 +109,11 @@ export function getCanonicalRedirect(pathname: string): string | null {
   if (clean === 'about') return pathname === '/about/' ? null : '/about/';
   if (clean === 'privacy') return pathname === '/privacy/' ? null : '/privacy/';
   if (clean === 'contact') return pathname === '/contact/' ? null : '/contact/';
+  const fingerprintMatch = clean.match(/^fingerprint\/([^/]+)$/i);
+  if (fingerprintMatch && getFingerprintById(fingerprintMatch[1])) {
+    const canonical = getFingerprintPath(fingerprintMatch[1]);
+    return pathname === canonical ? null : canonical;
+  }
   if (clean === 'admin/login') return pathname === '/admin/login/' ? null : '/admin/login/';
   if (clean === 'admin/submissions') return pathname === '/admin/submissions/' ? null : '/admin/submissions/';
   if (clean === 'admin/feed-statistics') return pathname === '/admin/feed-statistics/' ? null : '/admin/feed-statistics/';
@@ -181,6 +200,14 @@ function getServerRouteBootstrap(pathname: string, search = ''): { url: string; 
     const query = withQueryValues(search, { year: yearMatch[1] });
     return { url: `/api/catalogue${query}`, payload: buildCatalogueListing(parseCatalogueQuery(query), undefined, Number(yearMatch[1])) };
   }
+  const fingerprintMatch = clean.match(/^fingerprint\/([^/]+)$/i);
+  if (fingerprintMatch) {
+    const fingerprint = getFingerprintById(fingerprintMatch[1]);
+    if (fingerprint) {
+      const payload = buildFingerprintListing(parseCatalogueQuery(search), fingerprint.id);
+      if (payload) return { url: `/api/fingerprint/${fingerprint.id}${search}`, payload };
+    }
+  }
   const brandMatch = clean.match(/^([^/]+)(?:\/(\d+))?$/i);
   if (brandMatch && getBrandBySlug(brandMatch[1])) {
     const values: Record<string, string> = { brand: brandMatch[1] };
@@ -207,6 +234,12 @@ function renderRouteContent(pathname: string, payload: unknown): string {
   const clean = routePath(pathname);
   if (!clean) return '<main id="server-rendered-content"><article><h1>Christmas Movie Database</h1><p>Browse Christmas movies, actors and holiday filmographies from Hallmark, Lifetime, GAF and UPtv.</p></article></main>';
   if (clean === 'movies' || clean === 'all' || /^year\/\d+$/i.test(clean) || getBrandBySlug(clean.split('/')[0])) return renderListingContent(pathname, payload);
+  const fingerprint = getFingerprintById(clean.match(/^fingerprint\/([^/]+)$/i)?.[1] || '');
+  if (fingerprint && payload && typeof payload === 'object' && 'movies' in payload && Array.isArray(payload.movies)) {
+    const data = payload as { movies: Array<{ title: string; year: number; slug: string; tmdbId: number }>; total?: number };
+    const movies = data.movies.slice(0, 24).map((movie) => `<li><a href="${escapeHtml(getMoviePath(movie.tmdbId, movie.slug))}">${escapeHtml(movie.title)}</a> (${movie.year})</li>`).join('');
+    return `<main id="server-rendered-content"><article><h1>Christmas movies with: ${escapeHtml(fingerprint.label)}</h1><p>${data.total || 0} matching Christmas movies.</p><ul>${movies}</ul></article></main>`;
+  }
   if (clean === 'feeds') return '<main id="server-rendered-content"><article><h1>Christmas Movie Feeds for Radarr</h1><p>Curated Christmas movie JSON feeds for Radarr, including Hallmark, Lifetime, Great American Family and UPtv.</p><h2>Christmas Movie JSON Feeds</h2><ul><li>All movies</li><li>Hallmark, Lifetime, GAF and UPtv networks</li><li>Year and actor feeds</li></ul></article></main>';
   if (clean === 'about') return '<main id="server-rendered-content"><article><h1>Why I Built the Christmas Movie Database</h1><p>XmasDB is a curated Christmas movie database covering holiday films, networks and actors.</p></article></main>';
   if (clean === 'privacy') return '<main id="server-rendered-content"><article><h1>Privacy &amp; AI</h1><p>XmasDB explains how this site handles privacy, analytics and AI-assisted catalogue work.</p></article></main>';
