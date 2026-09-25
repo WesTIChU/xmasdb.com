@@ -43,9 +43,31 @@ abort_rebase_with_error() {
   exit 1
 }
 
+verify_clean_worktree() {
+  local status
+  echo "Checking generated working tree before rebase."
+  echo "git status --short:"
+  git status --short
+  echo "git diff --name-only:"
+  git diff --name-only
+  echo "git diff --cached --name-only:"
+  git diff --cached --name-only
+  status=$(git status --porcelain)
+  if [[ -n "$status" ]]; then
+    echo "Generated refresh stopped: working tree is dirty before rebase." >&2
+    echo "Dirty paths:" >&2
+    while IFS= read -r line; do
+      [[ -n "$line" ]] && echo "  - $line" >&2
+    done <<< "$status"
+    echo "No rebase or cleanup was attempted; generated output was preserved." >&2
+    exit 1
+  fi
+}
+
 for ((attempt = 1; attempt <= max_attempts; attempt++)); do
   echo "Integrating generated commit with $remote/$branch (attempt $attempt/$max_attempts)."
   git fetch "$remote" "$branch"
+  verify_clean_worktree
 
   rebase_in_progress=1
   if ! GIT_EDITOR=true git rebase "$remote/$branch"; then
