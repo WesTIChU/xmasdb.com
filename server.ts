@@ -32,7 +32,7 @@ import {
   buildFeedsMeta,
 } from './src/server/catalogue-api';
 import { ContactRateLimiter, ensureContactStorage, getContactDataDir, readContactSubmissions, storeContactSubmission, updateContactSubmissions, validateContactSubmission } from './src/server/contact';
-import { ADMIN_SESSION_COOKIE, AdminAuth, AdminLoginRateLimiter, AdminMutationRateLimiter, clearCookieOptions, cookieOptions, isSameOriginMutation } from './src/server/admin-auth';
+import { ADMIN_SESSION_COOKIE, AdminAuth, AdminLoginRateLimiter, AdminMutationRateLimiter, clearCookieOptions, cookieOptions, getAdminLoginRedirect, isSameOriginMutation } from './src/server/admin-auth';
 import { commitMoviesToGitHub, dispatchComingSoonRefresh, isGitHubConfigured, readGitHubBranch, WorkflowDispatchCooldown } from './src/server/github-catalogue';
 import { buildMovieFromTmdb, normalizeBrand, normalizeStatus, parseBulkMovieInput } from './src/server/movie-import';
 import { fetchTmdbMovie, requireTmdbApiKey } from './src/utils/tmdb';
@@ -43,6 +43,7 @@ import { isTrustedProxyAddress, PublicFeedRateLimiter } from './src/server/feed-
 import { enrichNewCatalogueActors } from './src/server/actor-import';
 import { notifyFlarumMovieAdded } from './src/server/flarum';
 import { getTmdbRefreshHealth } from './src/server/tmdb-refresh-health';
+import { getSecurityHeaders } from './src/server/security-headers';
 
 function isKnownPagePath(rawPath: string): boolean {
   const clean = rawPath.replace(/^\/+|\/+$/g, '');
@@ -137,6 +138,11 @@ async function startServer() {
   const comingSoonRefreshCooldown = new WorkflowDispatchCooldown();
   if (!adminAuth.isConfigured()) console.warn('Admin authentication is unavailable: XMASDB_ADMIN_PASSWORD and XMASDB_SESSION_SECRET are required.');
   const isProduction = process.env.NODE_ENV === 'production';
+  const securityHeaders = getSecurityHeaders(isProduction);
+  app.use((_req, res, next) => {
+    Object.entries(securityHeaders).forEach(([name, value]) => res.setHeader(name, value));
+    next();
+  });
   const requireAdmin = (req: express.Request, res: express.Response, next: express.NextFunction) => {
     if (!adminAuth.authenticate(getCookieValue(req, ADMIN_SESSION_COOKIE))) return res.status(401).json({ error: 'Unauthorized' });
     return next();
@@ -145,6 +151,12 @@ async function startServer() {
     if (!isSameOriginMutation(req)) return res.status(403).json({ error: 'Forbidden' });
     return next();
   };
+
+  app.get(['/admin/login', '/admin/login/'], (req, res, next) => {
+    const redirect = getAdminLoginRedirect(adminAuth, getCookieValue(req, ADMIN_SESSION_COOKIE));
+    if (redirect) return res.redirect(302, redirect);
+    return next();
+  });
 
   const sendTrackedJsonFeed = (req: express.Request, res: express.Response, definition: Parameters<typeof trackSuccessfulFeedResponse>[1], body: string, rateLimit = true) => {
     if (rateLimit) {

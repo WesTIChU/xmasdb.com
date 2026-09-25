@@ -115,16 +115,27 @@ export function clearCookieOptions(isProduction: boolean): string {
   return `Path=/; Max-Age=0; HttpOnly; SameSite=Lax${isProduction ? '; Secure' : ''}`;
 }
 
+export function getAdminLoginRedirect(auth: AdminAuth, cookieValue: string | undefined): string | undefined {
+  return auth.authenticate(cookieValue) ? '/admin/submissions/' : undefined;
+}
+
 export function isSameOriginMutation(req: { headers: Record<string, string | string[] | undefined>; protocol: string; get(name: string): string | undefined }): boolean {
   const origin = req.headers.origin;
-  if (!origin) return true;
-  if (Array.isArray(origin)) return false;
-  try {
-    const parsed = new URL(origin);
-    const forwardedProtocol = String(req.headers['x-forwarded-proto'] || '').split(',')[0].trim();
-    const protocol = forwardedProtocol || req.protocol;
-    return parsed.host === req.get('host') && parsed.protocol === `${protocol}:`;
-  } catch {
-    return false;
-  }
+  const forwardedProtocol = String(req.headers['x-forwarded-proto'] || '').split(',')[0].trim();
+  const protocol = forwardedProtocol || req.protocol;
+  const host = req.get('host');
+  if (!host || (protocol !== 'http' && protocol !== 'https')) return false;
+
+  const matchesExpectedOrigin = (value: string): boolean => {
+    try {
+      const parsed = new URL(value);
+      return parsed.host === host && parsed.protocol === `${protocol}:`;
+    } catch {
+      return false;
+    }
+  };
+
+  if (origin !== undefined) return typeof origin === 'string' && matchesExpectedOrigin(origin);
+  const referer = req.headers.referer;
+  return typeof referer === 'string' && matchesExpectedOrigin(referer);
 }
