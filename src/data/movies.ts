@@ -207194,6 +207194,30 @@ export const MOVIES: Movie[] = [
     "voteAverage": 0,
     "voteCount": 0,
     "tmdbUpdatedAt": "2026-09-25T15:52:29.581Z"
+  },
+  {
+    "id": "uptv-2026-snowbody-like-you",
+    "slug": "snowbody-like-you",
+    "title": "Snowbody Like You",
+    "year": 2026,
+    "brandId": "uptv",
+    "releaseDate": "2026-09-25",
+    "synopsis": "A holiday first date ends in a frosty misunderstanding, leaving Peyton and Ethan to go their separate ways. Years later, a Christmas blizzard brings them back together, giving them one more chance to discover if the magic between them was meant to last.",
+    "posterUrl": "",
+    "cast": [],
+    "tmdbId": 1780060,
+    "imdbId": "tt44568283",
+    "isComingSoon": true,
+    "status": "coming-soon",
+    "originalTitle": "Snowbody Like You",
+    "runtimeMinutes": 91,
+    "genres": [],
+    "releaseDates": [],
+    "crew": [],
+    "trailers": [],
+    "voteAverage": 0,
+    "voteCount": 0,
+    "tmdbUpdatedAt": "2026-09-25T16:04:01.985Z"
   }
 ];
 
