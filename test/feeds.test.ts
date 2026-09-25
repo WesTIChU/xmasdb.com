@@ -49,7 +49,8 @@ assert.strictEqual(duplicateFeed.length, 1);
 assert.strictEqual(new Set(duplicateFeed.map((item) => item.imdb_id)).size, duplicateFeed.length);
 
 const beforeGafEligibilityWindow = buildFeedsMeta(feedsMetaReferenceDate);
-const afterGafEligibilityWindow = buildFeedsMeta(new Date('2026-11-15T00:00:00.000Z'));
+const afterGafEligibilityWindowDate = new Date('2026-11-15T00:00:00.000Z');
+const afterGafEligibilityWindow = buildFeedsMeta(afterGafEligibilityWindowDate);
 for (const brandId of ['hallmark', 'lifetime', 'gaf', 'uptv']) {
   const expected = buildRadarrFeed(
     MOVIES.filter((movie) => movie.brandId === brandId),
@@ -61,8 +62,12 @@ assert.notStrictEqual(
   beforeGafEligibilityWindow.counts.brands.gaf,
   afterGafEligibilityWindow.counts.brands.gaf
 );
-const dateSensitiveActorId = MOVIES.find((movie) => movie.tmdbId === 1754947)?.cast[0]?.tmdbPersonId;
-assert.ok(dateSensitiveActorId, 'Date-sensitive actor fixture should exist');
+const dateSensitiveActor = getAllActors().find((actor) => (
+  getRadarrActorFeedCount(actor.tmdbPersonId, feedsMetaReferenceDate)
+  !== getRadarrActorFeedCount(actor.tmdbPersonId, afterGafEligibilityWindowDate)
+));
+assert.ok(dateSensitiveActor, 'Date-sensitive actor fixture should exist');
+const dateSensitiveActorId = dateSensitiveActor.tmdbPersonId;
 assert.notStrictEqual(
   beforeGafEligibilityWindow.counts.actors[String(dateSensitiveActorId)],
   afterGafEligibilityWindow.counts.actors[String(dateSensitiveActorId)]
