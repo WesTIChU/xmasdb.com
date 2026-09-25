@@ -6942,6 +6942,15 @@
     "tmdbUpdatedAt": "2026-09-20T16:17:17.046Z"
   },
   {
+    "id": "6169549",
+    "slug": "annabelle-mauchline",
+    "name": "Annabelle Mauchline",
+    "tmdbPersonId": 6169549,
+    "knownForDepartment": "Acting",
+    "knownCredits": 1,
+    "tmdbUpdatedAt": "2026-09-25T15:52:29.897Z"
+  },
+  {
     "id": "annalynne-mccord",
     "slug": "annalynne-mccord",
     "name": "AnnaLynne McCord",
@@ -18772,6 +18781,20 @@
     "knownForDepartment": "Acting",
     "knownCredits": 4,
     "tmdbUpdatedAt": "2026-09-20T16:19:01.710Z"
+  },
+  {
+    "id": "2572555",
+    "slug": "chelsey-mark",
+    "name": "Chelsey Mark",
+    "tmdbPersonId": 2572555,
+    "photoUrl": "/images/people/2572555.webp",
+    "profileUrl": "/images/people/2572555.webp",
+    "placeOfBirth": "Canada",
+    "imdbPersonId": "nm3254630",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 7,
+    "tmdbUpdatedAt": "2026-09-25T15:52:29.971Z"
   },
   {
     "id": "chelsey-reist",
@@ -37581,6 +37604,19 @@
     "tmdbUpdatedAt": "2026-09-22T20:53:39.491Z"
   },
   {
+    "id": "4631740",
+    "slug": "grace-pan",
+    "name": "Grace Pan",
+    "tmdbPersonId": 4631740,
+    "photoUrl": "/images/people/4631740.webp",
+    "profileUrl": "/images/people/4631740.webp",
+    "imdbPersonId": "nm15623503",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 4,
+    "tmdbUpdatedAt": "2026-09-25T15:52:29.917Z"
+  },
+  {
     "id": "grace-reilly",
     "slug": "grace-reilly",
     "name": "Grace Reilly",
@@ -40071,6 +40107,16 @@
     "tmdbUpdatedAt": "2026-09-22T20:53:35.363Z"
   },
   {
+    "id": "1441639",
+    "slug": "holly-illis",
+    "name": "Holly Illis",
+    "tmdbPersonId": 1441639,
+    "imdbPersonId": "nm4483147",
+    "knownForDepartment": "Acting",
+    "knownCredits": 2,
+    "tmdbUpdatedAt": "2026-09-25T15:52:29.772Z"
+  },
+  {
     "id": "holly-jade-balmer",
     "slug": "holly-jade-balmer",
     "name": "Holly Jade Balmer",
@@ -40632,6 +40678,20 @@
     "knownCredits": 2,
     "instagramId": "ilamariaofficial",
     "tmdbUpdatedAt": "2026-09-21T13:18:51.511Z"
+  },
+  {
+    "id": "3219676",
+    "slug": "ilan-o-driscoll",
+    "name": "Ilan O'Driscoll",
+    "tmdbPersonId": 3219676,
+    "photoUrl": "/images/people/3219676.webp",
+    "profileUrl": "/images/people/3219676.webp",
+    "imdbPersonId": "nm10264112",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 5,
+    "instagramId": "ilanodriscoll",
+    "tmdbUpdatedAt": "2026-09-25T15:52:29.899Z"
   },
   {
     "id": "4621721",
@@ -41419,6 +41479,20 @@
     "knownCredits": 2,
     "instagramId": "jackcarterbarton",
     "tmdbUpdatedAt": "2026-09-20T16:17:43.307Z"
+  },
+  {
+    "id": "4287287",
+    "slug": "jack-greig",
+    "name": "Jack Greig",
+    "tmdbPersonId": 4287287,
+    "imdbPersonId": "nm14327421",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 8,
+    "alsoKnownAs": [
+      "Jack Dylan Greig"
+    ],
+    "tmdbUpdatedAt": "2026-09-25T15:52:29.710Z"
   },
   {
     "id": "jack-griffo",
@@ -75270,6 +75344,19 @@
     "knownForDepartment": "Acting",
     "knownCredits": 10,
     "tmdbUpdatedAt": "2026-09-20T16:17:59.028Z"
+  },
+  {
+    "id": "1027220",
+    "slug": "natalie-roy",
+    "name": "Natalie Roy",
+    "tmdbPersonId": 1027220,
+    "photoUrl": "/images/people/1027220.webp",
+    "profileUrl": "/images/people/1027220.webp",
+    "imdbPersonId": "nm1478881",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 16,
+    "tmdbUpdatedAt": "2026-09-25T15:52:29.883Z"
   },
   {
     "id": "natalie-ruffino-wilson",

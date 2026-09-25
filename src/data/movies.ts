@@ -207019,6 +207019,181 @@ export const MOVIES: Movie[] = [
     "voteAverage": 0,
     "voteCount": 0,
     "tmdbUpdatedAt": "2026-09-25T15:40:59.983Z"
+  },
+  {
+    "id": "gaf-2026-christmas-by-the-spoonful",
+    "slug": "christmas-by-the-spoonful",
+    "title": "Christmas by the Spoonful",
+    "year": 2026,
+    "brandId": "gaf",
+    "releaseDate": "2026-12-06",
+    "synopsis": "When a food critic with no culinary abilities of her own is tasked with preparing her family's first Christmas dinner since the passing of their beloved matriarch, she is forced to enlist the help of a local French food truck owner whom she nearly put out of business with a bad review.",
+    "posterUrl": "",
+    "cast": [
+      {
+        "actorId": "43286",
+        "name": "Laura Vandervoort",
+        "character": "Lorraine Boulanger",
+        "slug": "laura-vandervoort",
+        "tmdbPersonId": 43286,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/y3geQGnFG8Sbr7smthUTa84fv9v.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "1620180",
+        "name": "Matt Wells",
+        "character": "Alexandre",
+        "slug": "matt-wells",
+        "tmdbPersonId": 1620180,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/sInDKzuCot4PbZHEhyDBo0vVMJH.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "1799766",
+        "name": "Olivier Renaud",
+        "character": "Pierre Dubois",
+        "slug": "olivier-renaud",
+        "tmdbPersonId": 1799766,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/r1PKI00FM4kovA2AQfnWhC1BU13.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "2017232",
+        "name": "Stephanie Herrera",
+        "character": "Linda",
+        "slug": "stephanie-herrera",
+        "tmdbPersonId": 2017232,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/zQ7VPbgp1A2hwZslRo7QXWKFjFS.jpg",
+        "order": 3
+      },
+      {
+        "actorId": "4287287",
+        "name": "Jack Greig",
+        "character": "Vincent",
+        "slug": "jack-greig",
+        "tmdbPersonId": 4287287,
+        "order": 4
+      },
+      {
+        "actorId": "3219676",
+        "name": "Ilan O'Driscoll",
+        "character": "Melanie Boulanger",
+        "slug": "ilan-o-driscoll",
+        "tmdbPersonId": 3219676,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/5UBAhzUH50rSQcntYS6eQ7JFXxg.jpg",
+        "order": 5
+      },
+      {
+        "actorId": "1027220",
+        "name": "Natalie Roy",
+        "character": "Anita",
+        "slug": "natalie-roy",
+        "tmdbPersonId": 1027220,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/iQZkciScwg5O0vJS6CTcZr48BFv.jpg",
+        "order": 6
+      },
+      {
+        "actorId": "4631740",
+        "name": "Grace Pan",
+        "character": "Young Woman",
+        "slug": "grace-pan",
+        "tmdbPersonId": 4631740,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/n7Bjea7J8FsryqdC2qt2yhP7NRI.jpg",
+        "order": 7
+      },
+      {
+        "actorId": "1441639",
+        "name": "Holly Illis",
+        "character": "Young Colette",
+        "slug": "holly-illis",
+        "tmdbPersonId": 1441639,
+        "order": 8
+      },
+      {
+        "actorId": "6169548",
+        "name": "Isabelle Boulton",
+        "character": "Rose",
+        "slug": "isabelle-boulton",
+        "tmdbPersonId": 6169548,
+        "order": 9
+      },
+      {
+        "actorId": "2572555",
+        "name": "Chelsey Mark",
+        "character": "Elliot",
+        "slug": "chelsey-mark",
+        "tmdbPersonId": 2572555,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/hxbVevGH3cotKYcsHlKQmvpZ2Dk.jpg",
+        "order": 10
+      },
+      {
+        "actorId": "6169549",
+        "name": "Annabelle Mauchline",
+        "character": "Young Lorraine",
+        "slug": "annabelle-mauchline",
+        "tmdbPersonId": 6169549,
+        "order": 11
+      }
+    ],
+    "director": "Max McGuire",
+    "tmdbId": 1682440,
+    "imdbId": "tt38228065",
+    "isComingSoon": true,
+    "status": "coming-soon",
+    "originalTitle": "Christmas by the Spoonful",
+    "genres": [
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      },
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "US",
+        "releaseDate": "2026-12-06T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "Great American Family"
+      }
+    ],
+    "crew": [
+      {
+        "id": 1107266,
+        "name": "Max McGuire",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/5QOpuZ3ZgoWb7EVvJudtewKqSUJ.jpg",
+        "creditId": "69ee32bac341c2591ad4911b"
+      },
+      {
+        "id": 1384357,
+        "name": "Katy Breier",
+        "job": "Writer",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/aBKNCZTsDyWnMkmb296Rj1iJj06.jpg",
+        "creditId": "69ee32c6a0d7cb45f0d490fa"
+      },
+      {
+        "id": 1519236,
+        "name": "Erica Deutschman",
+        "job": "Writer",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/dentb8VJpk00AzNqeS51Bs0GMMM.jpg",
+        "creditId": "69ee32cd51a5ee4ca6dc88fb"
+      }
+    ],
+    "trailers": [],
+    "voteAverage": 0,
+    "voteCount": 0,
+    "tmdbUpdatedAt": "2026-09-25T15:52:29.581Z"
   }
 ];
 
