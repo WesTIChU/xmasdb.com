@@ -57,6 +57,7 @@ import {
   buildActorSeo,
   buildAboutSeo,
   buildContactSeo,
+  buildApiSeo,
   buildPrivacySeo,
   buildBrandSeo,
   buildFeedsSeo,
@@ -87,6 +88,7 @@ type RouteDescriptor =
   | { type: 'about' }
   | { type: 'privacy' }
   | { type: 'contact' }
+  | { type: 'api' }
   | { type: 'admin-login' }
   | { type: 'admin-submissions' }
   | { type: 'admin-feed-statistics' }
@@ -106,6 +108,7 @@ const AdminLoginPage = lazy(() => import('./components/AdminLoginPage').then(({ 
 const AdminSubmissionsPage = lazy(() => import('./components/AdminSubmissionsPage').then(({ AdminSubmissionsPage: component }) => ({ default: component })));
 const AdminFeedStatisticsPage = lazy(() => import('./components/AdminFeedStatisticsPage').then(({ AdminFeedStatisticsPage: component }) => ({ default: component })));
 const AdminAddMoviesPage = lazy(() => import('./components/AdminAddMoviesPage').then(({ AdminAddMoviesPage: component }) => ({ default: component })));
+const ApiPage = lazy(() => import('./components/ApiPage').then(({ ApiPage: component }) => ({ default: component })));
 
 function HomeLoadingSkeleton() {
   return (
@@ -181,6 +184,7 @@ export function parseRoute(currentPath: string): RouteDescriptor {
   if (clean === 'about') return { type: 'about' };
   if (clean === 'privacy') return { type: 'privacy' };
   if (clean === 'contact') return { type: 'contact' };
+  if (clean === 'api') return { type: 'api' };
   if (clean === 'admin/login') return { type: 'admin-login' };
   if (clean === 'admin/submissions') return { type: 'admin-submissions' };
   if (clean === 'admin/feed-statistics') return { type: 'admin-feed-statistics' };
@@ -260,6 +264,8 @@ function requestFor(descriptor: RouteDescriptor, catalogueSearch: string): strin
       return PRIVACY_URL;
     case 'contact':
       return null;
+    case 'api':
+      return null;
     case 'admin-login':
     case 'admin-submissions':
     case 'admin-feed-statistics':
@@ -326,7 +332,7 @@ export default function App() {
   const catalogueSearch = currentPath.includes('?') ? currentPath.slice(currentPath.indexOf('?')) : '';
   const catalogueQuery = useMemo(() => parseCatalogueQuery(catalogueSearch), [catalogueSearch]);
   const requestUrl = useMemo(() => requestFor(descriptor, catalogueSearch), [descriptor, catalogueSearch]);
-  const isStaticRoute = descriptor.type === 'contact' || descriptor.type === 'admin-login' || descriptor.type === 'admin-submissions' || descriptor.type === 'admin-feed-statistics' || descriptor.type === 'admin-add-movies';
+  const isStaticRoute = descriptor.type === 'contact' || descriptor.type === 'api' || descriptor.type === 'admin-login' || descriptor.type === 'admin-submissions' || descriptor.type === 'admin-feed-statistics' || descriptor.type === 'admin-add-movies';
 
   // Resolve the current route's data from the shared client cache / API.
   const [view, setView] = useState<{ url: string; status: ViewStatus; payload: unknown }>(() => {
@@ -433,6 +439,8 @@ export default function App() {
       updateSeoTags(buildPrivacySeo());
     } else if (descriptor.type === 'contact') {
       updateSeoTags(buildContactSeo());
+    } else if (descriptor.type === 'api') {
+      updateSeoTags(buildApiSeo());
     } else if (descriptor.type === 'admin-login' || descriptor.type === 'admin-submissions' || descriptor.type === 'admin-feed-statistics' || descriptor.type === 'admin-add-movies') {
       updateSeoTags({
         title: 'Admin | XmasDB',
@@ -827,6 +835,7 @@ export default function App() {
             {descriptor.type === 'feeds' && currentViewStatus === 'ready' && isFeedsMetaPayload(view.payload) && (
               <FeedsPage meta={view.payload} />
             )}
+            {descriptor.type === 'api' && <ApiPage />}
             </>
           </Suspense>
         )}

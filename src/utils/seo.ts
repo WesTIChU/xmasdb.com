@@ -296,6 +296,14 @@ export function buildContactSeo(): SeoDocument {
   };
 }
 
+export function buildApiSeo(): SeoDocument {
+  return {
+    title: 'XmasDB API - Christmas Movie Data for Developers',
+    description: 'Use the free read-only XmasDB API to access curated Christmas movie, actor, network and Christmas Ingredient data.',
+    canonicalPath: '/api/',
+  };
+}
+
 export function buildNotFoundSeo(): SeoDocument {
   return {
     title: 'Page Not Found | XmasDB',

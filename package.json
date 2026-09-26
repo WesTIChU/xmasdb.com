@@ -28,7 +28,7 @@
     "fingerprints:classify": "tsx scripts/fingerprints-classify.ts",
     "fingerprints:review": "tsx scripts/fingerprints-review.ts",
     "fingerprints:apply": "tsx scripts/fingerprints-apply.ts",
-    "test": "tsx test/actors.test.ts && tsx test/actor-ordering.test.ts && tsx test/actor-enrichment.test.ts && tsx test/admin-movies.test.ts && tsx test/admin-refresh.test.ts && tsx test/admin.test.ts && tsx test/analytics.test.ts && tsx test/catalogue.test.ts && tsx test/contact.test.ts && tsx test/crew.test.ts && tsx test/feed-statistics.test.ts && tsx test/feeds.test.ts && tsx test/fingerprints.test.ts && tsx test/fingerprint-classification-pipeline.test.ts && tsx test/flarum.test.ts && tsx test/feed-rate-limit.test.ts && tsx test/hallmark-2026.test.ts && tsx test/popular-actors.test.ts && tsx test/seo.test.ts && tsx test/search.test.ts && tsx test/tmdb-refresh.test.ts && tsx test/tmdb-refresh-health.test.ts",
+    "test": "tsx test/actors.test.ts && tsx test/actor-ordering.test.ts && tsx test/actor-enrichment.test.ts && tsx test/admin-movies.test.ts && tsx test/admin-refresh.test.ts && tsx test/admin.test.ts && tsx test/analytics.test.ts && tsx test/catalogue.test.ts && tsx test/contact.test.ts && tsx test/crew.test.ts && tsx test/feed-statistics.test.ts && tsx test/feeds.test.ts && tsx test/fingerprints.test.ts && tsx test/fingerprint-classification-pipeline.test.ts && tsx test/flarum.test.ts && tsx test/feed-rate-limit.test.ts && tsx test/hallmark-2026.test.ts && tsx test/popular-actors.test.ts && tsx test/public-movies-api.test.ts && tsx test/seo.test.ts && tsx test/search.test.ts && tsx test/tmdb-refresh.test.ts && tsx test/tmdb-refresh-health.test.ts",
     "lint": "tsc --noEmit"
   },
   "dependencies": {
