@@ -27,6 +27,11 @@ export function getMoviePath(tmdbId: number | string, slug: string): string {
   return `/movie/${tmdbId}/${cleanSlug}/`;
 }
 
+export function getThisWeekPath(startDateKey: string, endDateKey: string): string {
+  const params = new URLSearchParams({ releaseWeekStart: startDateKey.slice(5), releaseWeekEnd: endDateKey.slice(5), sort: 'oldest' });
+  return `/movies/?${params.toString()}`;
+}
+
 /**
  * Generate canonical actor path: /actor/{tmdbPersonId}/{slug}/
  */

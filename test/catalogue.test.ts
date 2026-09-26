@@ -4,7 +4,7 @@ import { getActorBackdrop } from '../src/utils/backdrops';
 import { getPopulatedBrands } from '../src/data/brands';
 import { getRadarrAllFeedJson, getRadarrNetworkFeedJson, getSitemapXml, isMovieEligibleForRadarr } from '../src/utils/feeds';
 import { buildCatalogueUrl, getCataloguePage, parseCatalogueQuery } from '../src/utils/catalogue-pagination';
-import { buildCatalogueListing, selectDiscoverMovies, selectRelatedMovies } from '../src/server/catalogue-api';
+import { buildCatalogueListing, selectDiscoverMovies, selectThisWeekMovies, selectRelatedMovies } from '../src/server/catalogue-api';
 import { getMoviePoster } from '../src/utils/posters';
 
 console.log('Running catalogue pagination and local backdrop tests...');
@@ -18,6 +18,27 @@ const comingSoonMovie = MOVIES.find((movie) => movie.status === 'coming-soon' &&
 assert.ok(comingSoonMovie, 'canonical catalogue should contain a Coming Soon movie');
 const catalogueMovieCount = MOVIES.filter((movie) => movie.status === 'collection' || movie.status === 'coming-soon').length;
 assert.strictEqual(defaultPage.total, catalogueMovieCount);
+
+const thisWeekBase = { ...MOVIES[0], status: 'collection' as const, premiereDate: undefined, releaseDate: '2020-09-21' };
+const thisWeekMovie = (id: string, releaseDate: string, status: 'collection' | 'coming-soon' = 'collection') => ({ ...thisWeekBase, id, releaseDate, status });
+assert.equal(selectThisWeekMovies([thisWeekMovie('week-none', '2020-09-20'), thisWeekMovie('week-none-2', '2020-09-28')], new Date('2026-09-23T12:00:00Z')), null, 'empty weeks render nothing');
+const fewerThisWeek = selectThisWeekMovies([thisWeekMovie('week-one', '2020-09-21'), thisWeekMovie('week-two', '2020-09-24')], new Date('2026-09-23T12:00:00Z'));
+assert.equal(fewerThisWeek?.total, 2);
+assert.equal(fewerThisWeek?.weekLabel, '21–27 September');
+assert.equal(fewerThisWeek?.path, '/movies/?releaseWeekStart=09-21&releaseWeekEnd=09-27&sort=oldest');
+const exactlyFourThisWeek = Array.from({ length: 4 }, (_, index) => thisWeekMovie(`week-four-${index}`, `${2018 + index}-09-${String(21 + index).padStart(2, '0')}`));
+assert.equal(selectThisWeekMovies(exactlyFourThisWeek, new Date('2026-09-23T12:00:00Z'))?.movies.length, 4);
+assert.equal(selectThisWeekMovies(exactlyFourThisWeek, new Date('2026-09-23T12:00:00Z'))?.total, 4);
+const moreThanFourThisWeek = [...exactlyFourThisWeek, thisWeekMovie('week-five', '2022-09-25')];
+assert.equal(selectThisWeekMovies(moreThanFourThisWeek, new Date('2026-09-23T12:00:00Z'))?.movies.length, 4);
+assert.equal(selectThisWeekMovies(moreThanFourThisWeek, new Date('2026-09-23T12:00:00Z'))?.total, 5);
+const monthBoundaryWeek = selectThisWeekMovies([thisWeekMovie('week-september', '2020-09-28'), thisWeekMovie('week-october', '2020-10-01')], new Date('2026-09-30T12:00:00Z'));
+assert.equal(monthBoundaryWeek?.total, 2);
+assert.equal(monthBoundaryWeek?.weekLabel, '28 September–4 October');
+const newYearWeek = selectThisWeekMovies([thisWeekMovie('week-december', '2020-12-29'), thisWeekMovie('week-january', '2021-01-02')], new Date('2026-12-30T12:00:00Z'));
+assert.equal(newYearWeek?.total, 2);
+assert.equal(newYearWeek?.weekLabel, '28 December–3 January');
+assert.equal(selectThisWeekMovies([thisWeekMovie('week-future', '2027-09-22'), thisWeekMovie('week-coming-soon', '2027-09-23', 'coming-soon')], new Date('2026-09-23T12:00:00Z')), null, 'future releases are excluded');
 const catalogueOrder = getCataloguePage(MOVIES, parseCatalogueQuery('?perPage=96')).movies;
 const firstCollectionIndex = catalogueOrder.findIndex((movie) => movie.status !== 'coming-soon');
 assert.ok(firstCollectionIndex > 0);

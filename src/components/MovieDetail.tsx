@@ -222,8 +222,8 @@ export const MovieDetail: React.FC<MovieDetailProps> = ({ movie, related, onNavi
           </div>
 
           {fingerprints.length > 0 && (
-            <section aria-labelledby="movie-dna-heading" className="mt-5 border-t border-[#E7DFD5] pt-5">
-              <h2 id="movie-dna-heading" className="text-base font-heading font-semibold text-[#1A3D2F] mb-3">Movie DNA</h2>
+            <section aria-labelledby="christmas-ingredients-heading" className="mt-5 border-t border-[#E7DFD5] pt-5">
+              <h2 id="christmas-ingredients-heading" className="text-base font-heading font-semibold text-[#1A3D2F] mb-3">Christmas Ingredients</h2>
               <FingerprintChips fingerprints={fingerprints} onNavigate={onNavigate} />
             </section>
           )}

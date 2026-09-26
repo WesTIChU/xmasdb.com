@@ -772,7 +772,7 @@ export default function App() {
               return (
                 <div className="py-6 sm:py-8" id={`fingerprint-view-${fingerprint.id}`}>
                   <div className="mb-8 text-center">
-                    <p className="text-xs font-sans-clean font-semibold uppercase tracking-widest text-[#841818]">Fingerprint</p>
+                    <p className="text-xs font-sans-clean font-semibold uppercase tracking-widest text-[#841818]">Christmas Ingredient</p>
                     <h1 className="mt-1 text-2xl sm:text-3xl font-heading font-semibold text-[#1A3D2F]">Christmas movies with: {fingerprint.label}</h1>
                     <p className="text-sm text-[#736B63] font-body mt-1">{listingPayload.total} matching {listingPayload.total === 1 ? 'movie' : 'movies'}.</p>
                   </div>
@@ -785,7 +785,7 @@ export default function App() {
                     onNavigate={navigate}
                     showPerPage={listingPayload.totalPages > 1}
                   />
-                  <MovieGrid movies={listingPayload.movies} onSelectMovie={selectMovie} naturalTitleHeight emptyMessage={`No movies found with the fingerprint “${fingerprint.label}”.`} />
+                  <MovieGrid movies={listingPayload.movies} onSelectMovie={selectMovie} naturalTitleHeight emptyMessage={`No movies found with the Christmas ingredient “${fingerprint.label}”.`} />
                   {listingPayload.totalPages > 1 && <CataloguePagination
                     pathname={cataloguePathname}
                     search={catalogueSearch}
@@ -794,8 +794,8 @@ export default function App() {
                     onNavigate={navigate}
                   />}
                   {relatedFingerprints.length > 0 && (
-                    <section className="mt-10 border-t border-[#E7DFD5] pt-7" aria-labelledby="related-fingerprints-heading">
-                      <h2 id="related-fingerprints-heading" className="text-base font-heading font-semibold text-[#1A3D2F]">Explore related fingerprints</h2>
+                    <section className="mt-10 border-t border-[#E7DFD5] pt-7" aria-labelledby="related-ingredients-heading">
+                      <h2 id="related-ingredients-heading" className="text-base font-heading font-semibold text-[#1A3D2F]">Explore related Christmas ingredients</h2>
                       <div className="mt-3"><FingerprintChips fingerprints={relatedFingerprints} onNavigate={navigate} /></div>
                     </section>
                   )}

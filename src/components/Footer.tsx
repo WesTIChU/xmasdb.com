@@ -43,23 +43,8 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
 
         <p className="text-xs text-[#6F675E] font-sans-clean max-w-lg mx-auto">
            <strong className="font-semibold text-[#1A3D2F]">XmasDB.com</strong>. A curated collection of Christmas movies.
-           Posters and metadata sourced from TMDB. Not affiliated with Hallmark Channel or Lifetime.
+           Not affiliated with Hallmark Channel or Lifetime.
          </p>
-         <div className="relative -top-2.5 flex items-center justify-center gap-2 text-[10px] leading-snug text-[#756B60] font-sans-clean">
-           <a
-             href="https://www.themoviedb.org/"
-             target="_blank"
-             rel="noopener noreferrer"
-             aria-label="Visit TMDB"
-           >
-             <img
-               src="https://www.themoviedb.org/assets/v4/logos/v2/blue_long_2-9665a76b1ae401a510ec1e0ca40ddcb3b0cfe45f1d51b77a308fea0845885648.svg"
-               alt="TMDB"
-               className="h-auto w-[120px] max-w-[125px]"
-             />
-           </a>
-           <span className="min-w-0 text-center">This product uses the TMDB API but is not endorsed or certified by TMDB.</span>
-         </div>
          <p className="text-[11px] text-[#756B60] font-sans-clean">&copy; {new Date().getFullYear()} XmasDB.com</p>
       </div>
 

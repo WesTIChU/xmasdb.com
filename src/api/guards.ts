@@ -60,6 +60,11 @@ export function isHomePayload(value: unknown): value is HomePayload {
     && isNumber(value.totalMovies)
     && Array.isArray(value.comingSoon)
     && Array.isArray(value.discovery)
+    && (value.thisWeek === null || (isRecord(value.thisWeek)
+      && isString(value.thisWeek.weekLabel)
+      && isString(value.thisWeek.path)
+      && isNumber(value.thisWeek.total)
+      && Array.isArray(value.thisWeek.movies)))
     && Array.isArray(value.popularActors)
     && Array.isArray(value.archiveYears)
     && value.popularActors.every((group) => isRecord(group) && Array.isArray(group.actors));

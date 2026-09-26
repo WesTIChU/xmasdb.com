@@ -46,7 +46,7 @@ export function getServerSeo(pathname: string, search = ''): SeoDocument {
     if (fingerprint && listing) {
       return {
         title: `Christmas Movies with ${fingerprint.label} | XmasDB`,
-        description: `Browse ${listing.total} Christmas ${listing.total === 1 ? 'movie' : 'movies'} with the ${fingerprint.label} fingerprint in the XmasDB catalogue.`,
+        description: `Browse ${listing.total} Christmas ${listing.total === 1 ? 'movie' : 'movies'} with the ${fingerprint.label} Christmas ingredient in the XmasDB catalogue.`,
         canonicalPath: getFingerprintPath(fingerprint.id),
       };
     }

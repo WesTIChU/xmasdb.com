@@ -6,6 +6,7 @@ import { NavigationLink } from './NavigationLink';
 import { PopularActorsSection } from './PopularActorsSection';
 import { formatMoviePremiereDate } from '../utils/catalogue-lifecycle';
 import { getYearPath } from '../utils/urls';
+import { ThisWeekSection } from './ThisWeekSection';
 
 interface HomePageProps {
   payload: Partial<HomePayload>;
@@ -18,6 +19,7 @@ const homepageMovieGridClass = 'flex gap-4 sm:gap-5 overflow-x-auto pb-2 no-scro
 export const HomePage: React.FC<HomePageProps> = ({ payload, onNavigate }) => {
   const comingSoon = Array.isArray(payload?.comingSoon) ? payload.comingSoon : [];
   const discovery = Array.isArray(payload?.discovery) ? payload.discovery : [];
+  const thisWeek = payload?.thisWeek || null;
   const popularActors = Array.isArray(payload?.popularActors) ? payload.popularActors : [];
   const totalMovies = typeof payload?.totalMovies === 'number' ? payload.totalMovies : 0;
   const archiveYears = Array.isArray(payload?.archiveYears) ? payload.archiveYears : [];
@@ -48,6 +50,8 @@ export const HomePage: React.FC<HomePageProps> = ({ payload, onNavigate }) => {
           </div>
         </div>
       </section>
+
+      {thisWeek && <ThisWeekSection payload={thisWeek} onNavigate={onNavigate} />}
 
       <section className="py-7 sm:py-9 border-b border-[#E7DFD5]" aria-labelledby="discovery-heading">
         <div className="w-full flex items-end justify-between gap-4 mb-5">

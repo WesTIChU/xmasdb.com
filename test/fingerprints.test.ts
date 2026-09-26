@@ -33,7 +33,7 @@ const fingerprintMovie = MOVIES.find((movie) => movie.id === 'uptv-2026-christma
 const fingerprintPayload = buildMovieDetail(String(fingerprintMovie.tmdbId), fingerprintMovie.slug)!;
 assert.deepEqual(fingerprintPayload.movie.fingerprints, ['small-town', 'returns-home', 'old-flame', 'second-chance', 'save-the-business']);
 const fingerprintHtml = ReactDOMServer.renderToStaticMarkup(React.createElement(MovieDetail, { movie: fingerprintPayload.movie, related: [], onNavigate: () => undefined }));
-assert.match(fingerprintHtml, /Movie DNA/);
+assert.match(fingerprintHtml, /Christmas Ingredients/);
 assert.match(fingerprintHtml, /Small Town/);
 assert.equal(fingerprintHtml.includes(getFingerprintPath('small-town')), true);
 const related = getRelatedMovieFingerprints([
@@ -46,6 +46,6 @@ assert.deepEqual(related.map((fingerprint) => fingerprint.id), ['bakery', 'retur
 const plainMovie = MOVIES.find((movie) => getMovieFingerprintIds(movie).length === 0)!;
 const plainPayload = buildMovieDetail(String(plainMovie.tmdbId), plainMovie.slug)!;
 const plainHtml = ReactDOMServer.renderToStaticMarkup(React.createElement(MovieDetail, { movie: plainPayload.movie, related: [], onNavigate: () => undefined }));
-assert.equal(plainHtml.includes('Movie Fingerprint'), false, 'movies without fingerprints do not render an empty section');
+assert.equal(plainHtml.includes('Christmas Ingredients'), false, 'movies without Christmas ingredients do not render an empty section');
 
 console.log('Movie fingerprint vocabulary, filtering, routes, SEO, and rendering tests passed.');

@@ -15,6 +15,32 @@ function utcDateKey(date: Date): string {
   return `${date.getUTCFullYear()}-${String(date.getUTCMonth() + 1).padStart(2, '0')}-${String(date.getUTCDate()).padStart(2, '0')}`;
 }
 
+export interface CalendarWeekDateKeys {
+  startDateKey: string;
+  endDateKey: string;
+}
+
+/** Returns the current Monday–Sunday week using UTC calendar dates. */
+export function getCalendarWeekDateKeys(now: Date = new Date()): CalendarWeekDateKeys {
+  const start = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate()));
+  const daysFromMonday = (start.getUTCDay() + 6) % 7;
+  start.setUTCDate(start.getUTCDate() - daysFromMonday);
+  const end = new Date(start);
+  end.setUTCDate(end.getUTCDate() + 6);
+  return { startDateKey: utcDateKey(start), endDateKey: utcDateKey(end) };
+}
+
+/** Matches a movie date's month/day against a Monday–Sunday calendar week. */
+export function isDateKeyInCalendarWeek(dateKey: string, week: CalendarWeekDateKeys): boolean {
+  const monthDay = dateKey.slice(5);
+  const startMonthDay = week.startDateKey.slice(5);
+  const endMonthDay = week.endDateKey.slice(5);
+  return startMonthDay <= endMonthDay
+    ? monthDay >= startMonthDay && monthDay <= endMonthDay
+    : monthDay >= startMonthDay || monthDay <= endMonthDay;
+}
+
+
 export function getMoviePremiereDateKey(movie: MovieLifecycleFields): string | null {
   if (movie.status?.toLowerCase() === 'coming-soon' && !movie.premiereDate) return null;
   const value = movie.premiereDate || movie.releaseDate;

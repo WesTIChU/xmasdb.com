@@ -1,5 +1,5 @@
 import { Movie } from '../types';
-import { getMoviePremiereDateKey } from './catalogue-lifecycle';
+import { getMoviePremiereDateKey, isDateKeyInCalendarWeek, isMoviePremierePast } from './catalogue-lifecycle';
 
 export const SUPPORTED_PER_PAGE = [24, 48, 96] as const;
 export type CatalogueSort = 'catalogue' | 'newest' | 'oldest' | 'title' | 'title-desc';
@@ -12,6 +12,8 @@ export interface CatalogueQuery {
   year?: number;
   status?: string;
   search?: string;
+  releaseWeekStart?: string;
+  releaseWeekEnd?: string;
 }
 
 export interface PaginatedMovies {
@@ -35,6 +37,8 @@ export function parseCatalogueQuery(search: string): CatalogueQuery {
   const yearValue = Number(params.get('year'));
   const sortValue = params.get('sort');
   const status = params.get('status')?.trim().toLowerCase() || undefined;
+  const releaseWeekStartValue = params.get('releaseWeekStart')?.match(/^\d{2}-\d{2}$/)?.[0];
+  const releaseWeekEndValue = params.get('releaseWeekEnd')?.match(/^\d{2}-\d{2}$/)?.[0];
   const sort: CatalogueSort = sortValue === 'newest' || sortValue === 'oldest' || sortValue === 'title' || sortValue === 'title-desc'
     ? sortValue
     : 'newest';
@@ -47,6 +51,8 @@ export function parseCatalogueQuery(search: string): CatalogueQuery {
     year: Number.isInteger(yearValue) && yearValue > 0 ? yearValue : undefined,
     status,
     search: params.get('search')?.trim().toLowerCase() || undefined,
+    releaseWeekStart: releaseWeekStartValue,
+    releaseWeekEnd: releaseWeekEndValue,
   };
 }
 
@@ -65,6 +71,13 @@ export function getCataloguePage(movies: Movie[], query: CatalogueQuery, lockedB
       movie.synopsis.toLowerCase().includes(query.search) ||
       movie.cast.some((cast) => cast.name.toLowerCase().includes(query.search!))
     )) return false;
+    if (query.releaseWeekStart && query.releaseWeekEnd) {
+      const dateKey = getMoviePremiereDateKey(movie);
+      if (!dateKey || !isMoviePremierePast(movie) || !isDateKeyInCalendarWeek(dateKey, {
+        startDateKey: `2000-${query.releaseWeekStart}`,
+        endDateKey: `2000-${query.releaseWeekEnd}`,
+      })) return false;
+    }
     const status = movie.status?.toLowerCase();
     if (status !== 'collection' && status !== 'coming-soon') return false;
     return true;
