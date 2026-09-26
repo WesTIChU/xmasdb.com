@@ -2648,7 +2648,8 @@
     "remoteUrl": "https://image.tmdb.org/t/p/w500/wdzam5aHZyWwPSbxQz8iL9wIpR7.jpg"
   },
   "/images/people/2189320.webp": {
-    "remoteUrl": "https://image.tmdb.org/t/p/w500/xv4a3YUDfHfrx7gtVK5TB0PtQon.jpg"
+    "remoteUrl": "https://image.tmdb.org/t/p/w500/xv4a3YUDfHfrx7gtVK5TB0PtQon.jpg",
+    "fetchedAt": "2026-09-26T05:12:01.991Z"
   },
   "/images/people/3783614.webp": {
     "remoteUrl": "https://image.tmdb.org/t/p/w500/zP5mXKxxenYI0ysef7102mmauIn.jpg"
@@ -5764,7 +5765,8 @@
     "remoteUrl": "https://image.tmdb.org/t/p/w500/rZt3AECla90BSJRKyAJnzK1WLWK.jpg"
   },
   "/images/people/1195506.webp": {
-    "remoteUrl": "https://image.tmdb.org/t/p/w500/e83y3veRipTcV4YGwaN1Dmwrqcw.jpg"
+    "remoteUrl": "https://image.tmdb.org/t/p/w500/e83y3veRipTcV4YGwaN1Dmwrqcw.jpg",
+    "fetchedAt": "2026-09-26T05:12:01.902Z"
   },
   "/images/people/198615.webp": {
     "remoteUrl": "https://image.tmdb.org/t/p/w500/wMi2k3l9lyuJJchQLh87RAUiVWl.jpg"
@@ -12982,7 +12984,8 @@
     "remoteUrl": "https://image.tmdb.org/t/p/w500/93ZdDah4gA8gwQCMG2BcOiivFmc.jpg"
   },
   "/images/people/3132.webp": {
-    "remoteUrl": "https://image.tmdb.org/t/p/w500/foE5SoQgMPrHqY0ER5ZyC53OQDf.jpg"
+    "remoteUrl": "https://image.tmdb.org/t/p/w500/foE5SoQgMPrHqY0ER5ZyC53OQDf.jpg",
+    "fetchedAt": "2026-09-26T05:12:02.015Z"
   },
   "/images/people/1427480.webp": {
     "remoteUrl": "https://image.tmdb.org/t/p/w500/wJAunukenv5FlfrnxVgVLscIfQf.jpg"
@@ -13263,7 +13266,8 @@
     "remoteUrl": "https://image.tmdb.org/t/p/w500/kmNbOTrimbimQNb1mETCl42G2De.jpg"
   },
   "/images/people/1107298.webp": {
-    "remoteUrl": "https://image.tmdb.org/t/p/w500/9MNbvHB0Xik92TzcTgEDNwnZlkh.jpg"
+    "remoteUrl": "https://image.tmdb.org/t/p/w500/9MNbvHB0Xik92TzcTgEDNwnZlkh.jpg",
+    "fetchedAt": "2026-09-26T05:12:01.872Z"
   },
   "/images/people/972893.webp": {
     "remoteUrl": "https://image.tmdb.org/t/p/w500/csyRyskdxDqlmioJBDOIJLC6mWt.jpg"
@@ -16166,7 +16170,8 @@
     "remoteUrl": "https://image.tmdb.org/t/p/w500/AjSqmuJDAfBtNv29ekskbr555Aw.jpg"
   },
   "/images/people/1087708.webp": {
-    "remoteUrl": "https://image.tmdb.org/t/p/w500/aYSnkNwZHKZEBQFCHIA5mcJkPTO.jpg"
+    "remoteUrl": "https://image.tmdb.org/t/p/w500/aYSnkNwZHKZEBQFCHIA5mcJkPTO.jpg",
+    "fetchedAt": "2026-09-26T05:12:02.164Z"
   },
   "/images/people/2949505.webp": {
     "remoteUrl": "https://image.tmdb.org/t/p/w500/wSYCBGTnMxu3KZicbG37cBQwrvy.jpg"
@@ -18663,5 +18668,17 @@
   "/images/people/2572555.webp": {
     "remoteUrl": "https://image.tmdb.org/t/p/w500/hxbVevGH3cotKYcsHlKQmvpZ2Dk.jpg",
     "fetchedAt": "2026-09-25T21:37:17.612Z"
+  },
+  "/images/posters/1780067.jpg": {
+    "remoteUrl": "https://image.tmdb.org/t/p/w500/6s8wVCNNLgzlaqIaSwF3m2hpkQ3.jpg",
+    "fetchedAt": "2026-09-26T05:12:01.593Z"
+  },
+  "/images/people/1821947.webp": {
+    "remoteUrl": "https://image.tmdb.org/t/p/w500/dStUQtrUDG10HBFkHScyO1fIoog.jpg",
+    "fetchedAt": "2026-09-26T05:12:02.242Z"
+  },
+  "/images/people/2099968.webp": {
+    "remoteUrl": "https://image.tmdb.org/t/p/w500/nCCd0WS86jFiSa7rSnX0lKSyGl9.jpg",
+    "fetchedAt": "2026-09-26T05:12:02.335Z"
   }
 }

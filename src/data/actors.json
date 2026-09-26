@@ -6192,6 +6192,24 @@
     "tmdbUpdatedAt": "2026-09-22T20:53:18.538Z"
   },
   {
+    "id": "1821947",
+    "slug": "angela-cole",
+    "name": "Angela Cole",
+    "tmdbPersonId": 1821947,
+    "photoUrl": "/images/people/1821947.webp",
+    "profileUrl": "/images/people/1821947.webp",
+    "birthday": "1994-06-23",
+    "placeOfBirth": "USA",
+    "biography": "Angela Cole was born on June 23, 1994 in the USA. She is an actress and writer, known for Time Pirates (2022), Love in the Limelight (2022) and Triple Threat (2022).",
+    "imdbPersonId": "nm7527949",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 21,
+    "instagramId": "angelacoleofficial",
+    "tmdbUpdatedAt": "2026-09-26T05:12:02.250Z",
+    "tmdbFetchedAt": "2026-09-26T05:12:02.250Z"
+  },
+  {
     "id": "angela-fox",
     "slug": "angela-fox",
     "name": "Angela Fox",
@@ -17522,6 +17540,17 @@
     "tmdbUpdatedAt": "2026-09-20T16:17:00.743Z"
   },
   {
+    "id": "1379511",
+    "slug": "cathy-lynn-yonek",
+    "name": "Cathy Lynn Yonek",
+    "tmdbPersonId": 1379511,
+    "imdbPersonId": "nm4684116",
+    "knownForDepartment": "Acting",
+    "knownCredits": 3,
+    "tmdbUpdatedAt": "2026-09-26T05:12:02.375Z",
+    "tmdbFetchedAt": "2026-09-26T05:12:02.375Z"
+  },
+  {
     "id": "cathy-tidwell",
     "slug": "cathy-tidwell",
     "name": "Cathy Tidwell",
@@ -21976,10 +22005,11 @@
     "imdbPersonId": "nm7110014",
     "gender": "Male",
     "knownForDepartment": "Acting",
-    "knownCredits": 12,
+    "knownCredits": 13,
     "instagramId": "littlecolton",
     "twitterId": "mrcoltonlittle",
-    "tmdbUpdatedAt": "2026-09-20T16:17:16.986Z"
+    "tmdbUpdatedAt": "2026-09-26T05:12:02.001Z",
+    "tmdbFetchedAt": "2026-09-26T05:12:02.001Z"
   },
   {
     "id": "colton-royce",
@@ -49075,6 +49105,16 @@
     "tmdbUpdatedAt": "2026-09-20T16:19:28.069Z"
   },
   {
+    "id": "1711520",
+    "slug": "joel-berg",
+    "name": "Joel Berg",
+    "tmdbPersonId": 1711520,
+    "knownForDepartment": "Acting",
+    "knownCredits": 8,
+    "tmdbUpdatedAt": "2026-09-26T05:12:02.184Z",
+    "tmdbFetchedAt": "2026-09-26T05:12:02.184Z"
+  },
+  {
     "id": "1873026",
     "slug": "joel-canfield",
     "name": "Joel Canfield",
@@ -55939,14 +55979,15 @@
     "imdbPersonId": "nm4275908",
     "gender": "Female",
     "knownForDepartment": "Acting",
-    "knownCredits": 22,
+    "knownCredits": 23,
     "alsoKnownAs": [
       "Kelley Alice Jakle",
       "Κέλλυ Τζακλ"
     ],
     "instagramId": "kelleyjakle",
     "twitterId": "kelleyjakle",
-    "tmdbUpdatedAt": "2026-09-21T12:52:22.597Z"
+    "tmdbUpdatedAt": "2026-09-26T05:12:01.903Z",
+    "tmdbFetchedAt": "2026-09-26T05:12:01.903Z"
   },
   {
     "id": "kelli-ogmundson",
@@ -58547,6 +58588,16 @@
     "tmdbUpdatedAt": "2026-09-20T16:19:43.350Z"
   },
   {
+    "id": "5322200",
+    "slug": "kristine-beckett",
+    "name": "Kristine Beckett",
+    "tmdbPersonId": 5322200,
+    "knownForDepartment": "Acting",
+    "knownCredits": 4,
+    "tmdbUpdatedAt": "2026-09-26T05:12:02.218Z",
+    "tmdbFetchedAt": "2026-09-26T05:12:02.218Z"
+  },
+  {
     "id": "kristine-cofsky",
     "slug": "kristine-cofsky",
     "name": "Kristine Cofsky",
@@ -59382,10 +59433,11 @@
     "imdbPersonId": "nm0572001",
     "gender": "Female",
     "knownForDepartment": "Acting",
-    "knownCredits": 30,
+    "knownCredits": 32,
     "instagramId": "lanamckissack",
     "twitterId": "lanamckissack",
-    "tmdbUpdatedAt": "2026-09-20T16:20:11.257Z"
+    "tmdbUpdatedAt": "2026-09-26T05:12:02.025Z",
+    "tmdbFetchedAt": "2026-09-26T05:12:02.025Z"
   },
   {
     "id": "lana-westaway",
@@ -65974,6 +66026,16 @@
       "Maxine O'Brien"
     ],
     "tmdbUpdatedAt": "2026-09-21T13:13:38.958Z"
+  },
+  {
+    "id": "1828891",
+    "slug": "margarita-grillis",
+    "name": "Margarita Grillis",
+    "tmdbPersonId": 1828891,
+    "knownForDepartment": "Acting",
+    "knownCredits": 3,
+    "tmdbUpdatedAt": "2026-09-26T05:12:02.367Z",
+    "tmdbFetchedAt": "2026-09-26T05:12:02.367Z"
   },
   {
     "id": "2414168",
@@ -75301,10 +75363,11 @@
     "imdbPersonId": "nm0594476",
     "gender": "Female",
     "knownForDepartment": "Directing",
-    "knownCredits": 15,
+    "knownCredits": 16,
     "instagramId": "naneamiyata",
     "twitterId": "NaneaMiyata",
-    "tmdbUpdatedAt": "2026-09-21T12:52:23.506Z"
+    "tmdbUpdatedAt": "2026-09-26T05:12:02.173Z",
+    "tmdbFetchedAt": "2026-09-26T05:12:02.173Z"
   },
   {
     "id": "172221",
@@ -80653,11 +80716,12 @@
     "imdbPersonId": "nm3748325",
     "gender": "Female",
     "knownForDepartment": "Acting",
-    "knownCredits": 24,
+    "knownCredits": 25,
     "alsoKnownAs": [
       "Pauline Veronica Egan"
     ],
-    "tmdbUpdatedAt": "2026-09-20T16:18:25.746Z"
+    "tmdbUpdatedAt": "2026-09-26T05:12:01.979Z",
+    "tmdbFetchedAt": "2026-09-26T05:12:01.979Z"
   },
   {
     "id": "paulino-nunes",
@@ -81434,6 +81498,16 @@
     "instagramId": "peytonmcdavitt",
     "twitterId": "peytonmcdavitt",
     "tmdbUpdatedAt": "2026-09-22T20:53:25.228Z"
+  },
+  {
+    "id": "5870603",
+    "slug": "phil-elam",
+    "name": "Phil Elam",
+    "tmdbPersonId": 5870603,
+    "knownForDepartment": "Acting",
+    "knownCredits": 4,
+    "tmdbUpdatedAt": "2026-09-26T05:12:02.105Z",
+    "tmdbFetchedAt": "2026-09-26T05:12:02.105Z"
   },
   {
     "id": "phil-petranto",
@@ -94135,6 +94209,19 @@
     "knownForDepartment": "Acting",
     "knownCredits": 6,
     "tmdbUpdatedAt": "2026-09-20T16:19:14.022Z"
+  },
+  {
+    "id": "2099968",
+    "slug": "steve-shermett",
+    "name": "Steve Shermett",
+    "tmdbPersonId": 2099968,
+    "photoUrl": "/images/people/2099968.webp",
+    "profileUrl": "/images/people/2099968.webp",
+    "imdbPersonId": "nm9006627",
+    "knownForDepartment": "Acting",
+    "knownCredits": 6,
+    "tmdbUpdatedAt": "2026-09-26T05:12:02.343Z",
+    "tmdbFetchedAt": "2026-09-26T05:12:02.343Z"
   },
   {
     "id": "steve-tasker",
