@@ -46,10 +46,12 @@ import { enrichNewCatalogueActors } from './src/server/actor-import';
 import { notifyFlarumMovieAdded } from './src/server/flarum';
 import { getTmdbRefreshHealth } from './src/server/tmdb-refresh-health';
 import { getSecurityHeaders } from './src/server/security-headers';
+import { buildPublicActorResponse, buildPublicActorsResponse, buildPublicIngredientResponse, buildPublicIngredientsResponse, buildPublicMoviesResponse } from './src/server/public-movies-api';
+import { PUBLIC_API_ENABLED } from './src/server/public-api-config';
 
 function isKnownPagePath(rawPath: string): boolean {
   const clean = rawPath.replace(/^\/+|\/+$/g, '');
-  if (!clean || clean === 'movies' || clean === 'all' || clean === 'feeds' || clean === 'about' || clean === 'privacy' || clean === 'contact') return true;
+  if (!clean || clean === 'movies' || clean === 'all' || clean === 'feeds' || clean === 'about' || clean === 'privacy' || clean === 'contact' || (clean === 'api' && PUBLIC_API_ENABLED)) return true;
   if (clean === 'admin/login' || clean === 'admin/submissions' || clean === 'admin/feed-statistics' || clean === 'admin/movies/add') return true;
   const fingerprintMatch = clean.match(/^fingerprint\/([^/]+)$/i);
   if (fingerprintMatch) return Boolean(getFingerprintById(fingerprintMatch[1]));
@@ -189,6 +191,11 @@ async function startServer() {
   // Compress text-like responses (HTML, CSS, JS, JSON, XML, SVG) with gzip.
   // Images (JPEG/PNG/WebP) are already compressed and left untouched.
   app.use(compression());
+
+  app.use('/api/v1', (_req, res, next) => {
+    if (!PUBLIC_API_ENABLED) return res.sendStatus(404);
+    return next();
+  });
 
   // Health check
   app.get('/api/health', (_req, res) => {
@@ -363,6 +370,28 @@ async function startServer() {
 
   app.get('/api/about', (_req, res) => sendJson(res, buildAboutPayload()));
   app.get('/api/privacy', (_req, res) => sendJson(res, {}));
+
+  app.get('/api/v1/movies', (req, res) => {
+    const payload = buildPublicMoviesResponse(req.query);
+    if ('error' in payload) return sendJson(res, payload, 400);
+    return sendJson(res, payload);
+  });
+
+  app.get('/api/v1/actors', (_req, res) => sendJson(res, buildPublicActorsResponse()));
+  app.get('/api/v1/actors/:id', (req, res) => {
+    const payload = buildPublicActorResponse(req.params.id);
+    if (!payload) return sendJson(res, { error: 'Actor not found.' }, 404);
+    if ('error' in payload) return sendJson(res, payload, 400);
+    return sendJson(res, payload);
+  });
+
+  app.get('/api/v1/ingredients', (_req, res) => sendJson(res, buildPublicIngredientsResponse()));
+  app.get('/api/v1/ingredients/:id', (req, res) => {
+    const payload = buildPublicIngredientResponse(req.params.id);
+    if (!payload) return sendJson(res, { error: 'Ingredient not found.' }, 404);
+    if ('error' in payload) return sendJson(res, payload, 400);
+    return sendJson(res, payload);
+  });
 
   app.post('/api/contact', express.json({ limit: '16kb' }), async (req, res) => {
     const ip = req.ip || req.socket.remoteAddress || 'unknown';

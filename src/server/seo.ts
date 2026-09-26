@@ -4,10 +4,11 @@ import { getBrandBySlug } from '../data/brands';
 import { buildAboutPayload, buildActorDetail, buildCatalogueListing, buildCatalogueMeta, buildFeedsMeta, buildHomePayload, buildMovieDetail } from './catalogue-api';
 import { getBrandById } from '../data/brands';
 import { parseCatalogueQuery } from '../utils/catalogue-pagination';
-import { buildAboutSeo, buildActorSeo, buildBrandSeo, buildContactSeo, buildFeedsSeo, buildHomeSeo, buildMoviesSeo, buildMovieSeo, buildNotFoundSeo, buildPrivacySeo, buildYearSeo, type SeoDocument } from '../utils/seo';
+import { buildAboutSeo, buildActorSeo, buildApiSeo, buildBrandSeo, buildContactSeo, buildFeedsSeo, buildHomeSeo, buildMoviesSeo, buildMovieSeo, buildNotFoundSeo, buildPrivacySeo, buildYearSeo, type SeoDocument } from '../utils/seo';
 import { getActorPath, getFingerprintPath, getMoviePath, toCanonicalUrl } from '../utils/urls';
 import { getFingerprintById } from '../data/fingerprints';
 import { buildFingerprintListing } from './catalogue-api';
+import { PUBLIC_API_ENABLED } from './public-api-config';
 
 export function getRobotsTxt(): string {
   return [
@@ -35,6 +36,7 @@ export function getServerSeo(pathname: string, search = ''): SeoDocument {
   if (clean === 'about') return buildAboutSeo();
   if (clean === 'privacy') return buildPrivacySeo();
   if (clean === 'contact') return buildContactSeo();
+  if (clean === 'api' && PUBLIC_API_ENABLED) return buildApiSeo();
   if (clean === 'admin/login') return { title: 'Admin Login | XmasDB', description: 'Private XmasDB administration.', canonicalPath: '/admin/login/', noIndex: true };
   if (clean === 'admin/submissions') return { title: 'Submissions | XmasDB', description: 'Private XmasDB administration.', canonicalPath: '/admin/submissions/', noIndex: true };
   if (clean === 'admin/feed-statistics') return { title: 'Feed Statistics | XmasDB', description: 'Private XmasDB administration.', canonicalPath: '/admin/feed-statistics/', noIndex: true };
@@ -109,6 +111,7 @@ export function getCanonicalRedirect(pathname: string): string | null {
   if (clean === 'about') return pathname === '/about/' ? null : '/about/';
   if (clean === 'privacy') return pathname === '/privacy/' ? null : '/privacy/';
   if (clean === 'contact') return pathname === '/contact/' ? null : '/contact/';
+  if (clean === 'api' && PUBLIC_API_ENABLED) return pathname === '/api/' ? null : '/api/';
   const fingerprintMatch = clean.match(/^fingerprint\/([^/]+)$/i);
   if (fingerprintMatch && getFingerprintById(fingerprintMatch[1])) {
     const canonical = getFingerprintPath(fingerprintMatch[1]);
@@ -244,6 +247,7 @@ function renderRouteContent(pathname: string, payload: unknown): string {
   if (clean === 'about') return '<main id="server-rendered-content"><article><h1>Why I Built the Christmas Movie Database</h1><p>XmasDB is a curated Christmas movie database covering holiday films, networks and actors.</p></article></main>';
   if (clean === 'privacy') return '<main id="server-rendered-content"><article><h1>Privacy &amp; AI</h1><p>XmasDB explains how this site handles privacy, analytics and AI-assisted catalogue work.</p></article></main>';
   if (clean === 'contact') return '<main id="server-rendered-content"><article><h1>Contact XmasDB</h1><p>Send questions, corrections and Christmas movie catalogue suggestions to XmasDB.</p></article></main>';
+  if (clean === 'api' && PUBLIC_API_ENABLED) return '<main id="server-rendered-content"><article><h1>XmasDB API</h1><p>Use XmasDB\'s curated Christmas movie data in your own apps, automations and projects.</p><h2>Quick Start</h2><p>Base URL: https://xmasdb.com/api/v1/</p></article></main>';
   return '';
 }
 

@@ -26,8 +26,8 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
            <NavigationLink href={getMoviesPath()} onNavigate={onNavigate} className="text-[#1A3D2F] hover:text-[#B8860B] transition-colors">All Movies</NavigationLink>
           <span className="text-[#C8BFB3] select-none">·</span>
            <NavigationLink href={getFeedsPath()} onNavigate={onNavigate} className="text-[#1A3D2F] hover:text-[#B8860B] transition-colors">Feeds &amp; Radarr</NavigationLink>
-          <span className="text-[#C8BFB3] select-none">·</span>
-          <a
+           <span className="text-[#C8BFB3] select-none">·</span>
+           <a
             href="/sitemap.xml"
             target="_blank"
             rel="noopener noreferrer"
