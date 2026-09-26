@@ -42,9 +42,10 @@ export const AboutPage: React.FC<AboutPageProps> = ({ payload, onNavigate }) => 
         <p>Eventually I thought, sod it. I&apos;ll make my own.</p>
         <p>It started off as something pretty simple for myself, but, as these things tend to do, it grew arms and legs. Now there are hundreds of movies, thousands of actors, upcoming releases, yearly archives and feeds for Hallmark, Lifetime, Great American Family and UPtv.</p>
         <p>I still mainly build XmasDB for myself. There&apos;s no big company behind it and I&apos;m not trying to turn it into some massive commercial thing. I just wanted a Christmas movie database and Radarr feed that worked the way I wanted it to work.</p>
-        <p>And yes, I used AI to help me build parts of it. I&apos;m not going to pretend I didn&apos;t or hide it. It helped me turn an idea I had into something that actually works, and I&apos;m perfectly happy with that.</p>
+        <p>I used to love web design back in the day. FrontPage, Dreamweaver, spending hours messing around with websites just because I enjoyed building them.</p>
+        <p>These days, with a family and everything else that comes with life, I don&apos;t have the same amount of time to sit and code for hours on end. That&apos;s where AI has been genuinely useful. It&apos;s given me a way to bring the creative ideas in my head to life without needing all that spare time I once had.</p>
+        <p>So yes, AI has helped me build parts of XmasDB, and I&apos;m perfectly happy to say that. The ideas, decisions and countless little changes are still mine. AI has simply given me the tools to turn those ideas into something that actually works.</p>
         <p>If you&apos;ve stumbled across XmasDB and it helps you find a film, keep your own Christmas collection up to date, or just waste half an hour looking through Christmas movies in July, brilliant.</p>
-        <p>If you like it, you like it. If you don&apos;t, you don&apos;t.</p>
         <p>Paul</p>
       </div>
 

@@ -1,11 +1,4 @@
-const optimizedHomepagePosterIds = new Set([
-  '480626',
-  '249060',
-  '1127936',
-  '737793',
-  '235494',
-  '971464',
-]);
+import homepagePosterIds from '../data/homepage-poster-ids';
 
 const optimizedHomepageActorIds = new Set([
   '22082',
@@ -35,8 +28,8 @@ const optimizedHomepageActorIds = new Set([
 ]);
 
 export function getHomepagePosterSrcSet(url: string): string | undefined {
-  const match = url.match(/^\/images\/posters\/(\d+)\.jpg$/);
-  if (!match || !optimizedHomepagePosterIds.has(match[1])) return undefined;
+  const match = url.match(/^\/images\/posters\/(\d+)(?:-[^/]+)?\.jpg$/);
+  if (!match || !homepagePosterIds.has(match[1])) return undefined;
   return `/images/optimized/posters/${match[1]}-320.webp 320w, ${url} 500w`;
 }
 
