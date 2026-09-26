@@ -30,12 +30,12 @@ export const AboutPage: React.FC<AboutPageProps> = ({ payload, onNavigate }) => 
   };
 
   return (
-    <article className="mx-auto max-w-2xl py-10 sm:py-14" aria-labelledby="about-heading">
-      <header className="border-b border-[#E7DFD5] pb-6 text-center">
-        <h1 id="about-heading" className="font-heading text-3xl font-semibold text-[#1A3D2F] sm:text-4xl">Why XmasDB Exists</h1>
-      </header>
+    <div className="py-6 sm:py-8" aria-labelledby="about-heading">
+      <div className="text-center mb-2">
+        <h1 id="about-heading" className="text-2xl sm:text-3xl font-heading font-semibold text-[#1A3D2F]">Why XmasDB Exists</h1>
+      </div>
 
-      <div className="mt-8 space-y-5 font-body text-base leading-relaxed text-[#4A433B] sm:text-lg">
+      <div className="mx-auto mt-8 max-w-2xl space-y-5 font-body text-base leading-relaxed text-[#4A433B] sm:text-lg">
         <p className="font-heading text-2xl font-semibold text-[#1A3D2F] sm:text-3xl">Hi, I&apos;m Paul.</p>
         <p>I&apos;m from Scotland, I&apos;m {age}, and I ain&apos;t gonna lie, I love a wee Christmas movie throughout the year. I&apos;ve never really understood why we&apos;re supposed to save them all for December. Sometimes you just want a ridiculously festive film in the middle of March.</p>
         <p>XmasDB actually started because of Radarr. I wanted a reliable way to keep track of Hallmark and Lifetime Christmas movies and feed them straight into my collection. I used Trakt for a while, but after changes to their site it just stopped being as reliable as I wanted for my setup.</p>
@@ -85,6 +85,6 @@ export const AboutPage: React.FC<AboutPageProps> = ({ payload, onNavigate }) => 
           <p>This product uses the TMDB API but is not endorsed or certified by TMDB.</p>
         </div>
       </section>
-    </article>
+    </div>
   );
 };

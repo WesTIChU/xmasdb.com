@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { ShieldCheck } from 'lucide-react';
 import { CONTACT_URL, submitContact } from '../api/client';
 
 type FormValues = {
@@ -57,17 +58,26 @@ export const ContactPage: React.FC = () => {
   };
 
   return (
-    <section className="py-10 sm:py-14" aria-labelledby="contact-heading">
-      <div className="mx-auto max-w-2xl">
-        <div className="border-b border-[#E7DFD5] pb-6">
-          <h1 id="contact-heading" className="font-heading text-2xl font-semibold tracking-wide text-[#1A3D2F] sm:text-3xl">CONTACT XMASDB</h1>
-          <p className="mt-3 max-w-xl text-base leading-7 text-[#736B63]">Found something wrong or spotted a Christmas movie we've missed? Send it over and I'll take a look.</p>
-        </div>
+    <div className="py-6 sm:py-8" aria-labelledby="contact-heading">
+      <div className="text-center mb-2">
+        <h1 id="contact-heading" className="text-2xl sm:text-3xl font-heading font-semibold text-[#1A3D2F]">CONTACT XMASDB</h1>
+        <p className="mx-auto mt-1 max-w-xl text-base leading-7 text-[#736B63]">Found something wrong or spotted a Christmas movie we've missed? Send it over and I'll take a look.</p>
+      </div>
 
+      <div className="mx-auto max-w-2xl">
         {sent ? (
           <p className="border-b border-[#E7DFD5] py-8 font-body text-lg text-[#1A3D2F]" role="status">Thanks. Your message has been sent.</p>
         ) : (
-          <form className="space-y-6 pt-8" onSubmit={handleSubmit} action={CONTACT_URL} noValidate>
+          <>
+            <div className="mt-6 flex w-full gap-3 rounded border border-[#E7DFD5] bg-[#F4F0E8] px-4 py-3">
+              <ShieldCheck aria-hidden="true" className="mt-0.5 h-4 w-4 shrink-0 text-[#1A3D2F]" strokeWidth={1.7} />
+              <div>
+                <h2 className="text-sm font-semibold text-[#1A3D2F]">Privacy</h2>
+                <p className="mt-1 text-xs leading-5 text-[#736B63]">Your IP address is not stored with your message. Only use a real email address if you'd like a reply.</p>
+                <p className="text-xs leading-5 text-[#736B63]">No reply needed? Feel free to use a placeholder email.</p>
+              </div>
+            </div>
+            <form className="space-y-6 pt-6" onSubmit={handleSubmit} action={CONTACT_URL} noValidate>
             {error && <p className="border-l-2 border-[#841818] bg-[#F7F2EB] px-4 py-3 text-sm text-[#841818]" role="alert">{error}</p>}
 
             <div>
@@ -112,10 +122,11 @@ export const ContactPage: React.FC = () => {
               <input id="contact-website" name="website" type="text" tabIndex={-1} autoComplete="off" value={values.website} onChange={(event) => updateValue('website', event.target.value)} />
             </div>
 
-            <button type="submit" disabled={isSending} className="rounded border border-[#1A3D2F] bg-[#1A3D2F] px-5 py-3 text-sm font-semibold tracking-wide text-[#FAF7F2] transition-colors hover:bg-[#143626] disabled:cursor-wait disabled:opacity-60">{isSending ? 'SENDING...' : 'SEND MESSAGE'}</button>
-          </form>
+            <button type="submit" disabled={isSending} className="rounded border border-[#1A3D2F] bg-[#1A3D2F] px-5 py-3 text-sm font-semibold tracking-wide text-[#FAF7F2] shadow-[0_2px_0_#C29236] transition-colors hover:bg-[#143626] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#C29236]/60 focus-visible:ring-offset-2 disabled:cursor-wait disabled:opacity-60">{isSending ? 'SENDING...' : 'SEND MESSAGE'}</button>
+            </form>
+          </>
         )}
       </div>
-    </section>
+    </div>
   );
 };
