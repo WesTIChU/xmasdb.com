@@ -21,8 +21,18 @@ for (const url of posterUrls) {
 
 mkdirSync(outputDirectory, { recursive: true });
 
-for (const fileName of readdirSync(outputDirectory)) {
-  if (/^\d+-320\.webp$/.test(fileName)) unlinkSync(path.join(outputDirectory, fileName));
+let imageMagickAvailable = true;
+try {
+  execFileSync('magick', ['-version'], { stdio: 'ignore' });
+} catch {
+  imageMagickAvailable = false;
+  console.warn('[homepage-posters] ImageMagick unavailable; keeping existing derivatives and using original posters when needed.');
+}
+
+if (imageMagickAvailable) {
+  for (const fileName of readdirSync(outputDirectory)) {
+    if (/^\d+-320\.webp$/.test(fileName)) unlinkSync(path.join(outputDirectory, fileName));
+  }
 }
 
 const generatedIds: string[] = [];
@@ -34,8 +44,11 @@ for (const [id, url] of posters) {
     continue;
   }
 
-  execFileSync('magick', [sourcePath, '-resize', '320x480', '-strip', '-quality', '82', outputPath], { stdio: 'inherit' });
-  generatedIds.push(id);
+  if (imageMagickAvailable) {
+    execFileSync('magick', [sourcePath, '-resize', '320x480', '-strip', '-quality', '82', outputPath], { stdio: 'inherit' });
+  }
+
+  if (existsSync(outputPath)) generatedIds.push(id);
 }
 
 generatedIds.sort((a, b) => Number(a) - Number(b));
