@@ -9,3 +9,4 @@ coverage/
 # Runtime state is supplied by XMASDB_DATA_DIR and must not enter Git.
 data/*.json
 data/.*.tmp
+AGENTS.md
