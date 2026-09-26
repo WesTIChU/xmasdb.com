@@ -33,7 +33,7 @@ const fingerprintMovie = MOVIES.find((movie) => movie.id === 'uptv-2026-christma
 const fingerprintPayload = buildMovieDetail(String(fingerprintMovie.tmdbId), fingerprintMovie.slug)!;
 assert.deepEqual(fingerprintPayload.movie.fingerprints, ['small-town', 'returns-home', 'old-flame', 'second-chance', 'save-the-business']);
 const fingerprintHtml = ReactDOMServer.renderToStaticMarkup(React.createElement(MovieDetail, { movie: fingerprintPayload.movie, related: [], onNavigate: () => undefined }));
-assert.match(fingerprintHtml, /Movie Fingerprints/);
+assert.match(fingerprintHtml, /Movie DNA/);
 assert.match(fingerprintHtml, /Small Town/);
 assert.equal(fingerprintHtml.includes(getFingerprintPath('small-town')), true);
 const related = getRelatedMovieFingerprints([

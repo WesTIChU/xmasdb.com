@@ -220,6 +220,13 @@ export const MovieDetail: React.FC<MovieDetailProps> = ({ movie, related, onNavi
               </div>
             )}
           </div>
+
+          {fingerprints.length > 0 && (
+            <section aria-labelledby="movie-dna-heading" className="mt-5 border-t border-[#E7DFD5] pt-5">
+              <h2 id="movie-dna-heading" className="text-base font-heading font-semibold text-[#1A3D2F] mb-3">Movie DNA</h2>
+              <FingerprintChips fingerprints={fingerprints} onNavigate={onNavigate} />
+            </section>
+          )}
         </div>
 
         {/* Right column: Title, Synopsis, Cast, Trailers, External Links */}
@@ -251,13 +258,6 @@ export const MovieDetail: React.FC<MovieDetailProps> = ({ movie, related, onNavi
               {movie.synopsis}
             </p>
           </section>
-
-          {fingerprints.length > 0 && (
-            <section aria-labelledby="movie-fingerprint-heading">
-              <h2 id="movie-fingerprint-heading" className="text-base font-heading font-semibold text-[#1A3D2F] mb-3">Movie Fingerprints</h2>
-              <FingerprintChips fingerprints={fingerprints} onNavigate={onNavigate} />
-            </section>
-          )}
 
           {/* Starring Cast with Editorial Profile Photos */}
           <section aria-labelledby="cast-heading">
