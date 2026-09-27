@@ -4,12 +4,6 @@
  * stay in sync in local development and after deployment.
  */
 const homepagePosterIds = new Set<string>([
-  '150709',
-  '737778',
-  '744929',
-  '1032140',
-  '1132182',
-  '1361154',
   '1729134',
   '1773195',
 ]);
