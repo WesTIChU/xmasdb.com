@@ -18680,5 +18680,9 @@
   "/images/people/2099968.webp": {
     "remoteUrl": "https://image.tmdb.org/t/p/w500/nCCd0WS86jFiSa7rSnX0lKSyGl9.jpg",
     "fetchedAt": "2026-09-26T05:12:02.335Z"
+  },
+  "/images/posters/1773006.jpg": {
+    "remoteUrl": "https://image.tmdb.org/t/p/w500/b95FOpWZbtUIoSbCAPlT4PCAGJ8.jpg",
+    "fetchedAt": "2026-09-29T22:27:07.060Z"
   }
 }
