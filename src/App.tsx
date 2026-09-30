@@ -576,7 +576,7 @@ export default function App() {
   ) : null;
 
   return (
-    <div className="min-h-screen flex flex-col bg-[#FAF7F2] text-[#23211E] relative">
+    <div className="page-shell min-h-screen flex flex-col relative">
       <SnowEffect />
       <BrandPrefetch brands={populatedBrands} activeBrandId={activeBrandId} />
       <CatalogueStatsStrip meta={meta} onNavigate={navigate} />

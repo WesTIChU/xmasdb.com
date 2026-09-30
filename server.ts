@@ -46,8 +46,8 @@ import { enrichNewCatalogueActors } from './src/server/actor-import';
 import { notifyFlarumMovieAdded } from './src/server/flarum';
 import { getTmdbRefreshHealth } from './src/server/tmdb-refresh-health';
 import { getSecurityHeaders } from './src/server/security-headers';
-import { buildPublicActorResponse, buildPublicActorsResponse, buildPublicIngredientResponse, buildPublicIngredientsResponse, buildPublicMoviesResponse } from './src/server/public-movies-api';
 import { PUBLIC_API_ENABLED } from './src/server/public-api-config';
+import { registerPublicApiRoutes } from './src/server/public-api-routes';
 
 function isKnownPagePath(rawPath: string): boolean {
   const clean = rawPath.replace(/^\/+|\/+$/g, '');
@@ -371,27 +371,7 @@ async function startServer() {
   app.get('/api/about', (_req, res) => sendJson(res, buildAboutPayload()));
   app.get('/api/privacy', (_req, res) => sendJson(res, {}));
 
-  app.get('/api/v1/movies', (req, res) => {
-    const payload = buildPublicMoviesResponse(req.query);
-    if ('error' in payload) return sendJson(res, payload, 400);
-    return sendJson(res, payload);
-  });
-
-  app.get('/api/v1/actors', (_req, res) => sendJson(res, buildPublicActorsResponse()));
-  app.get('/api/v1/actors/:id', (req, res) => {
-    const payload = buildPublicActorResponse(req.params.id);
-    if (!payload) return sendJson(res, { error: 'Actor not found.' }, 404);
-    if ('error' in payload) return sendJson(res, payload, 400);
-    return sendJson(res, payload);
-  });
-
-  app.get('/api/v1/ingredients', (_req, res) => sendJson(res, buildPublicIngredientsResponse()));
-  app.get('/api/v1/ingredients/:id', (req, res) => {
-    const payload = buildPublicIngredientResponse(req.params.id);
-    if (!payload) return sendJson(res, { error: 'Ingredient not found.' }, 404);
-    if ('error' in payload) return sendJson(res, payload, 400);
-    return sendJson(res, payload);
-  });
+  registerPublicApiRoutes(app, sendJson);
 
   app.post('/api/contact', express.json({ limit: '16kb' }), async (req, res) => {
     const ip = req.ip || req.socket.remoteAddress || 'unknown';

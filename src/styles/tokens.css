@@ -1,0 +1,17 @@
+:root {
+  --bg-cream: #F2EDE3;
+  --text-dark: #23211E;
+  --text-muted: #736B63;
+  --green-deep: #1A3D2F;
+  --green-forest: #143626;
+  --red-deep: #841818;
+  --red-crimson: #9B1C1C;
+  --gold-warm: #B8860B;
+  --gold-accent: #C29236;
+  --border-warm: #E6DFD5;
+  --border-default: #DCD3C7;
+  --surface-light: #FFFDF9;
+  --site-canvas-width: 1280px;
+  --catalogue-grid-gap: 1.5rem;
+  --catalogue-grid-gap-sm: 2rem;
+}

@@ -13,6 +13,7 @@
     "refresh:actors": "tsx scripts/refresh-actors.ts",
     "refresh:tmdb": "tsx scripts/refresh-tmdb.ts",
     "test:browser": "tsx scripts/test-production-browser.ts",
+    "check": "npm run lint && npm test && npm run build && npm run test:browser && git diff --check",
     "discover:gaf": "tsx scripts/gaf-catalogue.ts --discover",
     "import:gaf": "tsx scripts/gaf-catalogue.ts --import",
     "discover:lifetime": "tsx scripts/lifetime-catalogue.ts",
