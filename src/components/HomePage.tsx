@@ -7,6 +7,7 @@ import { PopularActorsSection } from './PopularActorsSection';
 import { formatMoviePremiereDate } from '../utils/catalogue-lifecycle';
 import { getYearPath } from '../utils/urls';
 import { ThisWeekSection } from './ThisWeekSection';
+import { HollyDivider } from './HollyDivider';
 
 interface HomePageProps {
   payload: Partial<HomePayload>;
@@ -27,12 +28,14 @@ export const HomePage: React.FC<HomePageProps> = ({ payload, onNavigate }) => {
     <div className="pt-0 pb-6 sm:pb-8" id="home-view">
       <PopularActorsSection groups={popularActors} onNavigate={onNavigate} />
 
-      <section className="py-7 sm:py-9 border-b border-[#E7DFD5]" aria-labelledby="coming-soon-heading">
-        <div className="w-full flex items-end justify-between gap-4 mb-5 lg:pr-4">
-          <div>
-            <h2 id="coming-soon-heading" className="font-heading text-xl sm:text-2xl font-semibold text-[#1A3D2F]">Coming Soon</h2>
+      <section className="py-7 sm:py-9" aria-labelledby="coming-soon-heading">
+        <div className={homepageMovieGridOuterClass}>
+          <div className="w-full flex items-end justify-between gap-4 mb-5">
+            <div>
+              <h2 id="coming-soon-heading" className="font-heading text-xl sm:text-2xl font-semibold text-[#1A3D2F]">Coming Soon</h2>
+            </div>
+            <NavigationLink href={getMoviesPath()} onNavigate={onNavigate} className="ml-auto shrink-0 translate-y-1 text-xs sm:text-sm font-sans-clean font-medium text-[#1A3D2F] hover:text-[#143626]">View all coming soon <span className="xmas-nav-arrow">→</span></NavigationLink>
           </div>
-          <NavigationLink href={getMoviesPath()} onNavigate={onNavigate} className="shrink-0 translate-y-1 text-xs sm:text-sm font-sans-clean font-medium text-[#1A3D2F] hover:text-[#143626]">View all coming soon <span className="xmas-nav-arrow">→</span></NavigationLink>
         </div>
         <div className={homepageMovieGridOuterClass}>
           <div className={homepageMovieGridClass}>
@@ -49,22 +52,26 @@ export const HomePage: React.FC<HomePageProps> = ({ payload, onNavigate }) => {
             })}
           </div>
         </div>
+        <HollyDivider className="mt-4 -mb-4 sm:mt-5 sm:-mb-5" lineClassName="w-6 sm:w-8" ornamentClassName="h-4 w-12 sm:h-5 sm:w-14" />
       </section>
 
       {thisWeek && <ThisWeekSection payload={thisWeek} onNavigate={onNavigate} />}
 
-      <section className="py-7 sm:py-9 border-b border-[#E7DFD5]" aria-labelledby="discovery-heading">
-        <div className="w-full flex items-end justify-between gap-4 mb-5">
-          <div>
-            <h2 id="discovery-heading" className="font-heading text-xl sm:text-2xl font-semibold text-[#1A3D2F]">Discover Christmas Movies</h2>
+      <section className="py-7 sm:py-9" aria-labelledby="discovery-heading">
+        <div className={homepageMovieGridOuterClass}>
+          <div className="w-full flex items-end justify-between gap-4 mb-5">
+            <div>
+              <h2 id="discovery-heading" className="font-heading text-xl sm:text-2xl font-semibold text-[#1A3D2F]">Discover Christmas Movies</h2>
+            </div>
+            <NavigationLink href={getMoviesPath()} onNavigate={onNavigate} className="ml-auto shrink-0 text-xs sm:text-sm font-sans-clean font-medium text-[#1A3D2F] hover:text-[#143626]">View all {totalMovies} movies <span className="xmas-nav-arrow">→</span></NavigationLink>
           </div>
-          <NavigationLink href={getMoviesPath()} onNavigate={onNavigate} className="shrink-0 text-xs sm:text-sm font-sans-clean font-medium text-[#1A3D2F] hover:text-[#143626]">View all {totalMovies} movies <span className="xmas-nav-arrow">→</span></NavigationLink>
         </div>
         <div className={homepageMovieGridOuterClass}>
           <div className={homepageMovieGridClass}>
             {discovery.map((movie) => <div key={movie.id} className="w-[140px] sm:w-auto shrink-0 snap-start"><MovieCard movie={movie} optimizeHomepageImage titleLines={3} onSelectMovie={(slug, tmdbId) => onNavigate(getMoviePath(tmdbId || movie.tmdbId, slug))} /></div>)}
           </div>
         </div>
+        <HollyDivider className="mt-4 -mb-4 sm:mt-5 sm:-mb-5" lineClassName="w-6 sm:w-8" ornamentClassName="h-4 w-12 sm:h-5 sm:w-14" />
       </section>
 
       {archiveYears.length > 0 && (
@@ -74,7 +81,7 @@ export const HomePage: React.FC<HomePageProps> = ({ payload, onNavigate }) => {
               <p className="font-sans-clean text-xs font-semibold uppercase tracking-[0.18em] text-[#8A6800]">Explore the archive</p>
               <h2 id="archive-years-heading" className="mt-1 font-heading text-xl sm:text-2xl font-semibold text-[#1A3D2F]">Christmas Through the Years</h2>
             </div>
-            <NavigationLink href={getMoviesPath()} onNavigate={onNavigate} className="shrink-0 text-xs sm:text-sm font-sans-clean font-medium text-[#1A3D2F] hover:text-[#143626]">View all years <span className="xmas-nav-arrow">→</span></NavigationLink>
+            <NavigationLink href={getMoviesPath()} onNavigate={onNavigate} className="ml-auto shrink-0 text-xs sm:text-sm font-sans-clean font-medium text-[#1A3D2F] hover:text-[#143626]">View all years <span className="xmas-nav-arrow">→</span></NavigationLink>
           </div>
           <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4 lg:grid-cols-6">
             {archiveYears.map(({ year, movieCount }) => {

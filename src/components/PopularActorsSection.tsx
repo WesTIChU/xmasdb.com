@@ -4,6 +4,7 @@ import { getBrandById } from '../data/brands';
 import { getActorPath } from '../utils/urls';
 import { NavigationTab } from './NavigationLink';
 import { getHomepageActorSrcSet } from '../utils/homepage-images';
+import { HollyDivider } from './HollyDivider';
 
 interface PopularActorsSectionProps {
   groups: PopularActorsGroup[];
@@ -27,7 +28,7 @@ export const PopularActorsSection: React.FC<PopularActorsSectionProps> = ({ grou
   if (!selected) return null;
 
   return (
-    <section id="popular-christmas-stars-section" className="py-8 sm:py-10 border-b border-[#E7DFD5]" aria-labelledby="popular-christmas-stars-heading">
+    <section id="popular-christmas-stars-section" className="py-8 sm:py-10" aria-labelledby="popular-christmas-stars-heading">
       <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-6">
         <div>
           <h2 id="popular-christmas-stars-heading" className="mt-1 font-heading text-xl sm:text-2xl font-semibold text-[#1A3D2F]">Popular Christmas Stars</h2>
@@ -53,6 +54,7 @@ export const PopularActorsSection: React.FC<PopularActorsSectionProps> = ({ grou
           </a></article>;
         })}
       </div>
+      <HollyDivider className="mt-4 -mb-4 sm:mt-5 sm:-mb-5" lineClassName="w-6 sm:w-8" ornamentClassName="h-4 w-12 sm:h-5 sm:w-14" />
     </section>
   );
 };
