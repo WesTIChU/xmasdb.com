@@ -817,22 +817,24 @@ export default function App() {
 
             {descriptor.type === 'movie' && currentViewStatus === 'ready' && (() => {
               if (!isMovieDetailPayload(view.payload)) return <NotFoundPage onNavigate={navigate} onSearch={focusSearch} />;
-              return <MovieDetail movie={view.payload.movie} related={view.payload.related} onNavigate={navigate} />;
+              return <div className="py-6 sm:py-10"><MovieDetail movie={view.payload.movie} related={view.payload.related} onNavigate={navigate} /></div>;
             })()}
 
             {descriptor.type === 'actor' && currentViewStatus === 'ready' && (() => {
               if (!isActorDetailPayload(view.payload)) return <NotFoundPage onNavigate={navigate} onSearch={focusSearch} />;
               return (
-                <ActorDetail
-                  actor={view.payload.actor}
-                  filmography={view.payload.filmography}
-                  actingFilmography={view.payload.actingFilmography}
-                  directingFilmography={view.payload.directingFilmography}
-                  writingFilmography={view.payload.writingFilmography}
-                  backdropUrl={view.payload.backdropUrl}
-                  onNavigate={navigate}
-                  onSelectMovie={selectMovie}
-                />
+                <div className="py-6 sm:py-10">
+                  <ActorDetail
+                    actor={view.payload.actor}
+                    filmography={view.payload.filmography}
+                    actingFilmography={view.payload.actingFilmography}
+                    directingFilmography={view.payload.directingFilmography}
+                    writingFilmography={view.payload.writingFilmography}
+                    backdropUrl={view.payload.backdropUrl}
+                    onNavigate={navigate}
+                    onSelectMovie={selectMovie}
+                  />
+                </div>
               );
             })()}
 

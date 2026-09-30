@@ -58,13 +58,13 @@ export const ContactPage: React.FC = () => {
   };
 
   return (
-    <div className="py-6 sm:py-8" aria-labelledby="contact-heading">
+    <div className="page-container--standard py-6 sm:py-8" aria-labelledby="contact-heading">
       <div className="text-center mb-2">
         <h1 id="contact-heading" className="text-2xl sm:text-3xl font-heading font-semibold text-[#1A3D2F]">CONTACT XMASDB</h1>
         <p className="mx-auto mt-1 max-w-xl text-base leading-7 text-[#736B63]">Found something wrong or spotted a Christmas movie we've missed? Send it over and I'll take a look.</p>
       </div>
 
-      <div className="page-container--readable mx-auto">
+      <div>
         {sent ? (
           <p className="border-b border-[#E7DFD5] py-8 font-body text-lg text-[#1A3D2F]" role="status">Thanks. Your message has been sent.</p>
         ) : (

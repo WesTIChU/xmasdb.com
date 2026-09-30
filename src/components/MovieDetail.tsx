@@ -55,7 +55,7 @@ export const MovieDetail: React.FC<MovieDetailProps> = ({ movie, related, onNavi
   const fingerprints = (movie.fingerprints || []).map((id) => getFingerprintById(id)).filter((fingerprint): fingerprint is NonNullable<typeof fingerprint> => Boolean(fingerprint));
 
   return (
-    <div id="movie-detail-view" className="py-6 sm:py-10 max-w-4xl mx-auto">
+    <div id="movie-detail-view" className="w-full">
       {/* Back navigation - festive XmasDB signature */}
       <div className="mb-6">
         <BackNavigation href={brand ? getNetworkPath(brand.slug) : getMoviesPath()} id="back-to-brand-btn" label={`Back to ${brand ? brand.name : 'All Movies'}`} title={`Back to ${brand ? brand.name : 'All Movies'}`} onNavigate={onNavigate} />

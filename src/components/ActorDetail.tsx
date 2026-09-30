@@ -125,7 +125,7 @@ export const ActorDetail: React.FC<ActorDetailProps> = ({
   };
 
   return (
-    <div id={`actor-detail-${actor.slug}`} className="py-6 sm:py-10 max-w-5xl mx-auto px-4 sm:px-6">
+    <div id={`actor-detail-${actor.slug}`} className="w-full">
       {/* Back to Catalogue Navigation */}
       <div className="mb-5 sm:mb-6">
         <BackNavigation href={getMoviesPath()} id="back-from-actor-btn" label="Back to All Movies" title="Back to All Movies" onNavigate={onNavigate} />
