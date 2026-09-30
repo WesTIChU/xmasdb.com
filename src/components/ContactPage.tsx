@@ -64,7 +64,7 @@ export const ContactPage: React.FC = () => {
         <p className="mx-auto mt-1 max-w-xl text-base leading-7 text-[#736B63]">Found something wrong or spotted a Christmas movie we've missed? Send it over and I'll take a look.</p>
       </div>
 
-      <div className="mx-auto max-w-2xl">
+      <div className="page-container--readable mx-auto">
         {sent ? (
           <p className="border-b border-[#E7DFD5] py-8 font-body text-lg text-[#1A3D2F]" role="status">Thanks. Your message has been sent.</p>
         ) : (

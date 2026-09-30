@@ -11,7 +11,12 @@
   --border-warm: #E6DFD5;
   --border-default: #DCD3C7;
   --surface-light: #FFFDF9;
-  --site-canvas-width: 1280px;
+  --layout-readable: 672px;
+  --layout-standard: 896px;
+  --layout-wide: 1280px;
+  --layout-gutter: 1rem;
+  --layout-gutter-sm: 1.5rem;
+  --site-canvas-width: var(--layout-wide);
   --catalogue-grid-gap: 1.5rem;
   --catalogue-grid-gap-sm: 2rem;
 }

@@ -56,11 +56,26 @@ body {
   color: var(--text-dark);
 }
 
-.site-page-container {
+.page-container {
   width: 100%;
-  max-width: var(--site-canvas-width);
   margin-inline: auto;
-  padding-inline: 1rem;
+  padding-inline: var(--layout-gutter);
+}
+
+.page-container--readable {
+  max-width: var(--layout-readable);
+}
+
+.page-container--standard {
+  max-width: var(--layout-standard);
+}
+
+.page-container--wide {
+  max-width: var(--layout-wide);
+}
+
+.page-container--no-gutter {
+  padding-inline: 0;
 }
 
 .catalogue-grid {
@@ -71,8 +86,8 @@ body {
 }
 
 @media (min-width: 640px) {
-  .site-page-container {
-    padding-inline: 1.5rem;
+  .page-container {
+    padding-inline: var(--layout-gutter-sm);
   }
 
   .catalogue-grid {

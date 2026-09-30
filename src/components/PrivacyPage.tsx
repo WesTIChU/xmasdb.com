@@ -1,7 +1,7 @@
 import React from 'react';
 
 export const PrivacyPage: React.FC = () => (
-  <article className="mx-auto max-w-2xl py-10 sm:py-14" aria-labelledby="privacy-heading">
+  <article className="page-container--readable mx-auto py-10 sm:py-14" aria-labelledby="privacy-heading">
     <header className="border-b border-[#E7DFD5] pb-6 text-center">
       <h1 id="privacy-heading" className="font-heading text-3xl font-semibold text-[#1A3D2F] sm:text-4xl">PRIVACY &amp; AI</h1>
     </header>

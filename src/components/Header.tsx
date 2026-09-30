@@ -43,7 +43,7 @@ export const Header: React.FC<HeaderProps> = ({
 
   return (
       <header className="page-background border-b border-[#E7DFD5] py-4 pb-4 sm:pt-6 sm:pb-4 px-4 sm:px-6 relative z-30">
-      <div className="max-w-4xl mx-auto text-center">
+      <div className="page-container page-container--standard page-container--no-gutter text-center">
         {/* 1. Branding: XmasDB.com Logo */}
         <div className="mb-3 sm:mb-4">
           <BrandingTag className="m-0 leading-none">

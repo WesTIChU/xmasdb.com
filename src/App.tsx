@@ -592,7 +592,7 @@ export default function App() {
         populatedBrands={populatedBrands}
       />
 
-      <main className={`flex-1 ${isCatalogueRoute ? 'site-page-container' : 'max-w-4xl w-full mx-auto px-4 sm:px-6'} ${descriptor.type === 'home' && !hasSearchQuery ? 'min-h-[1300px]' : ''}`}>
+      <main className={`flex-1 ${isCatalogueRoute ? 'page-container page-container--wide' : 'page-container page-container--standard'} ${descriptor.type === 'home' && !hasSearchQuery ? 'min-h-[1300px]' : ''}`}>
         {hasSearchQuery ? (
           <div className="py-6 sm:py-8" id="search-results-section">
             <div className="border-b border-[#E7DFD5] pb-4 mb-6">
