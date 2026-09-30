@@ -98094,9 +98094,9 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1754947",
       "imdb": "https://www.imdb.com/title/tt43674919/"
     },
-    "tmdbUpdatedAt": "2026-09-30T12:50:18.352Z",
+    "tmdbUpdatedAt": "2026-09-30T14:38:00.206Z",
     "premiereDate": "2026-12-19",
-    "tmdbFetchedAt": "2026-09-30T12:50:18.352Z"
+    "tmdbFetchedAt": "2026-09-30T14:38:00.206Z"
   },
   {
     "id": "gaf-2026-christmas-at-moose-lake",
@@ -98278,9 +98278,9 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1665375",
       "imdb": "https://www.imdb.com/title/tt41054296/"
     },
-    "tmdbUpdatedAt": "2026-09-30T12:50:18.572Z",
+    "tmdbUpdatedAt": "2026-09-30T14:38:00.441Z",
     "premiereDate": "2026-11-15",
-    "tmdbFetchedAt": "2026-09-30T12:50:18.572Z"
+    "tmdbFetchedAt": "2026-09-30T14:38:00.441Z"
   },
   {
     "id": "gaf-2025-another-sweet-christmas",
@@ -182413,8 +182413,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1772765",
       "imdb": "https://www.imdb.com/title/tt46069464/"
     },
-    "tmdbUpdatedAt": "2026-09-30T12:50:19.442Z",
-    "tmdbFetchedAt": "2026-09-30T12:50:19.442Z",
+    "tmdbUpdatedAt": "2026-09-30T14:38:00.669Z",
+    "tmdbFetchedAt": "2026-09-30T14:38:00.669Z",
     "backdropUrl": "/images/backdrops/1772765.jpg"
   },
   {
@@ -182592,9 +182592,9 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1729134",
       "imdb": "https://www.imdb.com/title/tt43662087/"
     },
-    "tmdbUpdatedAt": "2026-09-30T12:50:19.671Z",
+    "tmdbUpdatedAt": "2026-09-30T14:38:00.914Z",
     "backdropUrl": "/images/backdrops/1729134.jpg",
-    "tmdbFetchedAt": "2026-09-30T12:50:19.671Z"
+    "tmdbFetchedAt": "2026-09-30T14:38:00.914Z"
   },
   {
     "id": "hallmark-2026-mr-mrs-christmas",
@@ -182679,8 +182679,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773006",
       "imdb": "https://www.imdb.com/title/tt46070651/"
     },
-    "tmdbUpdatedAt": "2026-09-30T12:50:19.949Z",
-    "tmdbFetchedAt": "2026-09-30T12:50:19.949Z"
+    "tmdbUpdatedAt": "2026-09-30T14:38:01.108Z",
+    "tmdbFetchedAt": "2026-09-30T14:38:01.108Z"
   },
   {
     "id": "hallmark-2026-winter-wonderlanes",
@@ -182758,9 +182758,9 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773195",
       "imdb": "https://www.imdb.com/title/tt46071555/"
     },
-    "tmdbUpdatedAt": "2026-09-30T12:50:20.184Z",
+    "tmdbUpdatedAt": "2026-09-30T14:38:01.310Z",
     "backdropUrl": "/images/backdrops/1773195-53609f84f311.jpg",
-    "tmdbFetchedAt": "2026-09-30T12:50:20.184Z"
+    "tmdbFetchedAt": "2026-09-30T14:38:01.310Z"
   },
   {
     "id": "hallmark-2026-forgotten-holiday",
@@ -182822,8 +182822,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773382",
       "imdb": "https://www.imdb.com/title/tt46071998/"
     },
-    "tmdbUpdatedAt": "2026-09-30T12:50:20.411Z",
-    "tmdbFetchedAt": "2026-09-30T12:50:20.411Z"
+    "tmdbUpdatedAt": "2026-09-30T14:38:01.527Z",
+    "tmdbFetchedAt": "2026-09-30T14:38:01.527Z"
   },
   {
     "id": "hallmark-2026-what-if-christmas",
@@ -182885,8 +182885,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773380",
       "imdb": "https://www.imdb.com/title/tt46072491/"
     },
-    "tmdbUpdatedAt": "2026-09-30T12:50:20.650Z",
-    "tmdbFetchedAt": "2026-09-30T12:50:20.650Z"
+    "tmdbUpdatedAt": "2026-09-30T14:38:01.753Z",
+    "tmdbFetchedAt": "2026-09-30T14:38:01.753Z"
   },
   {
     "id": "hallmark-2026-who-s-coming-for-christmas",
@@ -182957,8 +182957,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773378",
       "imdb": "https://www.imdb.com/title/tt46075371/"
     },
-    "tmdbUpdatedAt": "2026-09-30T12:50:20.869Z",
-    "tmdbFetchedAt": "2026-09-30T12:50:20.869Z"
+    "tmdbUpdatedAt": "2026-09-30T14:38:01.939Z",
+    "tmdbFetchedAt": "2026-09-30T14:38:01.939Z"
   },
   {
     "id": "hallmark-2026-adopting-st-nick",
@@ -183045,8 +183045,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773374",
       "imdb": "https://www.imdb.com/title/tt43749818/"
     },
-    "tmdbUpdatedAt": "2026-09-30T12:50:21.087Z",
-    "tmdbFetchedAt": "2026-09-30T12:50:21.087Z"
+    "tmdbUpdatedAt": "2026-09-30T14:38:02.125Z",
+    "tmdbFetchedAt": "2026-09-30T14:38:02.125Z"
   },
   {
     "id": "hallmark-2026-a-danish-christmas",
@@ -183137,10 +183137,10 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773368",
       "imdb": "https://www.imdb.com/title/tt46066911/"
     },
-    "tmdbUpdatedAt": "2026-09-30T12:50:21.329Z",
+    "tmdbUpdatedAt": "2026-09-30T14:38:02.353Z",
     "runtimeMinutes": 84,
     "backdropUrl": "/images/backdrops/1773368.jpg",
-    "tmdbFetchedAt": "2026-09-30T12:50:21.329Z"
+    "tmdbFetchedAt": "2026-09-30T14:38:02.353Z"
   },
   {
     "id": "hallmark-2026-merry-memories",
@@ -183208,8 +183208,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773363",
       "imdb": "https://www.imdb.com/title/tt46075438/"
     },
-    "tmdbUpdatedAt": "2026-09-30T12:50:21.544Z",
-    "tmdbFetchedAt": "2026-09-30T12:50:21.544Z"
+    "tmdbUpdatedAt": "2026-09-30T14:38:02.561Z",
+    "tmdbFetchedAt": "2026-09-30T14:38:02.561Z"
   },
   {
     "id": "hallmark-2026-holiday-unplugged",
@@ -183307,8 +183307,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773357",
       "imdb": "https://www.imdb.com/title/tt46075500/"
     },
-    "tmdbUpdatedAt": "2026-09-30T12:50:21.762Z",
-    "tmdbFetchedAt": "2026-09-30T12:50:21.762Z"
+    "tmdbUpdatedAt": "2026-09-30T14:38:02.799Z",
+    "tmdbFetchedAt": "2026-09-30T14:38:02.799Z"
   },
   {
     "id": "hallmark-2026-a-season-of-promises",
@@ -183389,8 +183389,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773353",
       "imdb": "https://www.imdb.com/title/tt46075510/"
     },
-    "tmdbUpdatedAt": "2026-09-30T12:50:21.987Z",
-    "tmdbFetchedAt": "2026-09-30T12:50:21.987Z"
+    "tmdbUpdatedAt": "2026-09-30T14:38:02.985Z",
+    "tmdbFetchedAt": "2026-09-30T14:38:02.985Z"
   },
   {
     "id": "hallmark-2026-my-christmas-cowboy",
@@ -183470,8 +183470,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773350",
       "imdb": "https://www.imdb.com/title/tt46075976/"
     },
-    "tmdbUpdatedAt": "2026-09-30T12:50:22.210Z",
-    "tmdbFetchedAt": "2026-09-30T12:50:22.210Z"
+    "tmdbUpdatedAt": "2026-09-30T14:38:03.194Z",
+    "tmdbFetchedAt": "2026-09-30T14:38:03.194Z"
   },
   {
     "id": "hallmark-2026-the-nights-before-christmas",
@@ -183533,9 +183533,9 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773345",
       "imdb": "https://www.imdb.com/title/tt46076002/"
     },
-    "tmdbUpdatedAt": "2026-09-30T12:50:22.440Z",
+    "tmdbUpdatedAt": "2026-09-30T14:38:03.393Z",
     "backdropUrl": "/images/backdrops/1773345.jpg",
-    "tmdbFetchedAt": "2026-09-30T12:50:22.440Z"
+    "tmdbFetchedAt": "2026-09-30T14:38:03.393Z"
   },
   {
     "id": "hallmark-2026-mistletoe-and-mimosas",
@@ -183607,8 +183607,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773340",
       "imdb": "https://www.imdb.com/title/tt46076026/"
     },
-    "tmdbUpdatedAt": "2026-09-30T12:50:22.654Z",
-    "tmdbFetchedAt": "2026-09-30T12:50:22.654Z"
+    "tmdbUpdatedAt": "2026-09-30T14:38:03.619Z",
+    "tmdbFetchedAt": "2026-09-30T14:38:03.619Z"
   },
   {
     "id": "hallmark-2026-our-holiday-playbook",
@@ -183670,8 +183670,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773334",
       "imdb": "https://www.imdb.com/title/tt46076042/"
     },
-    "tmdbUpdatedAt": "2026-09-30T12:50:22.875Z",
-    "tmdbFetchedAt": "2026-09-30T12:50:22.875Z"
+    "tmdbUpdatedAt": "2026-09-30T14:38:03.804Z",
+    "tmdbFetchedAt": "2026-09-30T14:38:03.804Z"
   },
   {
     "id": "hallmark-2026-christmas-in-blue-dog-valley",
@@ -183733,8 +183733,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773330",
       "imdb": "https://www.imdb.com/title/tt46076055/"
     },
-    "tmdbUpdatedAt": "2026-09-30T12:50:23.094Z",
-    "tmdbFetchedAt": "2026-09-30T12:50:23.094Z"
+    "tmdbUpdatedAt": "2026-09-30T14:38:03.990Z",
+    "tmdbFetchedAt": "2026-09-30T14:38:03.990Z"
   },
   {
     "id": "hallmark-2026-double-booked-for-the-holidays",
@@ -183817,8 +183817,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt46064711/"
     },
     "backdropUrl": "/images/backdrops/1773329.jpg",
-    "tmdbUpdatedAt": "2026-09-30T12:50:23.335Z",
-    "tmdbFetchedAt": "2026-09-30T12:50:23.335Z"
+    "tmdbUpdatedAt": "2026-09-30T14:38:04.191Z",
+    "tmdbFetchedAt": "2026-09-30T14:38:04.191Z"
   },
   {
     "id": "hallmark-2026-christmas-delivered",
@@ -183909,9 +183909,9 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773322",
       "imdb": "https://www.imdb.com/title/tt41442843/"
     },
-    "tmdbUpdatedAt": "2026-09-30T12:50:23.594Z",
+    "tmdbUpdatedAt": "2026-09-30T14:38:04.414Z",
     "backdropUrl": "/images/backdrops/1773322.jpg",
-    "tmdbFetchedAt": "2026-09-30T12:50:23.594Z"
+    "tmdbFetchedAt": "2026-09-30T14:38:04.414Z"
   },
   {
     "id": "hallmark-2026-return-to-santa",
@@ -183985,8 +183985,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773042",
       "imdb": "https://www.imdb.com/title/tt46076498/"
     },
-    "tmdbUpdatedAt": "2026-09-30T12:50:23.813Z",
-    "tmdbFetchedAt": "2026-09-30T12:50:23.813Z"
+    "tmdbUpdatedAt": "2026-09-30T14:38:04.599Z",
+    "tmdbFetchedAt": "2026-09-30T14:38:04.599Z"
   },
   {
     "id": "hallmark-2026-the-christmas-eve-feast",
@@ -184126,8 +184126,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773318",
       "imdb": "https://www.imdb.com/title/tt43655245/"
     },
-    "tmdbUpdatedAt": "2026-09-30T12:50:24.028Z",
-    "tmdbFetchedAt": "2026-09-30T12:50:24.028Z"
+    "tmdbUpdatedAt": "2026-09-30T14:38:04.822Z",
+    "tmdbFetchedAt": "2026-09-30T14:38:04.822Z"
   },
   {
     "id": "hallmark-2026-holiday-ever-after-a-disney-world-wish-come-true",
@@ -184315,8 +184315,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt39126701/"
     },
     "backdropUrl": "/images/backdrops/1594516.jpg",
-    "tmdbUpdatedAt": "2026-09-30T12:50:24.261Z",
-    "tmdbFetchedAt": "2026-09-30T12:50:24.261Z"
+    "tmdbUpdatedAt": "2026-09-30T14:38:05.047Z",
+    "tmdbFetchedAt": "2026-09-30T14:38:05.047Z"
   },
   {
     "id": "hallmark-2026-the-most-wonderful-secret",
@@ -184378,8 +184378,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773316",
       "imdb": "https://www.imdb.com/title/tt46076602/"
     },
-    "tmdbUpdatedAt": "2026-09-30T12:50:24.530Z",
-    "tmdbFetchedAt": "2026-09-30T12:50:24.530Z"
+    "tmdbUpdatedAt": "2026-09-30T14:38:05.256Z",
+    "tmdbFetchedAt": "2026-09-30T14:38:05.256Z"
   },
   {
     "id": "hallmark-2026-eight-nights-for-love",
@@ -184563,8 +184563,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773298",
       "imdb": "https://www.imdb.com/title/tt43746550/"
     },
-    "tmdbUpdatedAt": "2026-09-30T12:50:24.749Z",
-    "tmdbFetchedAt": "2026-09-30T12:50:24.749Z"
+    "tmdbUpdatedAt": "2026-09-30T14:38:05.482Z",
+    "tmdbFetchedAt": "2026-09-30T14:38:05.482Z"
   },
   {
     "id": "hallmark-2026-miles-to-christmas",
@@ -184761,8 +184761,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773293",
       "imdb": "https://www.imdb.com/title/tt40629979/"
     },
-    "tmdbUpdatedAt": "2026-09-30T12:50:25.002Z",
-    "tmdbFetchedAt": "2026-09-30T12:50:25.002Z"
+    "tmdbUpdatedAt": "2026-09-30T14:38:05.693Z",
+    "tmdbFetchedAt": "2026-09-30T14:38:05.693Z"
   },
   {
     "id": "hallmark-2026-the-snowflake-effect",
@@ -184824,8 +184824,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773286",
       "imdb": "https://www.imdb.com/title/tt46076619/"
     },
-    "tmdbUpdatedAt": "2026-09-30T12:50:25.228Z",
-    "tmdbFetchedAt": "2026-09-30T12:50:25.228Z"
+    "tmdbUpdatedAt": "2026-09-30T14:38:05.903Z",
+    "tmdbFetchedAt": "2026-09-30T14:38:05.903Z"
   },
   {
     "id": "hallmark-2026-a-grand-biltmore-christmas",
@@ -185027,9 +185027,9 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1602653",
       "imdb": "https://www.imdb.com/title/tt39380754/"
     },
-    "tmdbUpdatedAt": "2026-09-30T12:50:25.459Z",
+    "tmdbUpdatedAt": "2026-09-30T14:38:06.127Z",
     "backdropUrl": "/images/backdrops/1602653.jpg",
-    "tmdbFetchedAt": "2026-09-30T12:50:25.459Z"
+    "tmdbFetchedAt": "2026-09-30T14:38:06.127Z"
   },
   {
     "id": "hallmark-2026-an-angel-in-my-stocking",
@@ -185111,8 +185111,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773280",
       "imdb": "https://www.imdb.com/title/tt46064715/"
     },
-    "tmdbUpdatedAt": "2026-09-30T12:50:25.724Z",
-    "tmdbFetchedAt": "2026-09-30T12:50:25.724Z"
+    "tmdbUpdatedAt": "2026-09-30T14:38:06.337Z",
+    "tmdbFetchedAt": "2026-09-30T14:38:06.337Z"
   },
   {
     "id": "hallmark-2026-christmas-in-canterbury",
@@ -185198,9 +185198,9 @@ export const MOVIES: Movie[] = [
     "links": {
       "tmdb": "https://www.themoviedb.org/movie/1733866"
     },
-    "tmdbUpdatedAt": "2026-09-30T12:50:25.941Z",
+    "tmdbUpdatedAt": "2026-09-30T14:38:06.547Z",
     "imdbId": "tt43750204",
-    "tmdbFetchedAt": "2026-09-30T12:50:25.941Z"
+    "tmdbFetchedAt": "2026-09-30T14:38:06.547Z"
   },
   {
     "id": "hallmark-2026-snow-globe-town",
@@ -185280,8 +185280,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773035",
       "imdb": "https://www.imdb.com/title/tt41783274/"
     },
-    "tmdbUpdatedAt": "2026-09-30T12:50:26.158Z",
-    "tmdbFetchedAt": "2026-09-30T12:50:26.158Z"
+    "tmdbUpdatedAt": "2026-09-30T14:38:06.786Z",
+    "tmdbFetchedAt": "2026-09-30T14:38:06.786Z"
   },
   {
     "id": "hallmark-2026-noelle-nomads",
@@ -185374,9 +185374,9 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773275",
       "imdb": "https://www.imdb.com/title/tt46076883/"
     },
-    "tmdbUpdatedAt": "2026-09-30T12:50:26.375Z",
+    "tmdbUpdatedAt": "2026-09-30T14:38:06.996Z",
     "director": "Jeff Beesley",
-    "tmdbFetchedAt": "2026-09-30T12:50:26.375Z"
+    "tmdbFetchedAt": "2026-09-30T14:38:06.996Z"
   },
   {
     "id": "hallmark-2026-hearts-all-aglow",
@@ -185448,8 +185448,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773270",
       "imdb": "https://www.imdb.com/title/tt46076903/"
     },
-    "tmdbUpdatedAt": "2026-09-30T12:50:26.598Z",
-    "tmdbFetchedAt": "2026-09-30T12:50:26.598Z"
+    "tmdbUpdatedAt": "2026-09-30T14:38:07.206Z",
+    "tmdbFetchedAt": "2026-09-30T14:38:07.206Z"
   },
   {
     "id": "hallmark-2026-barking-all-the-way",
@@ -185519,8 +185519,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773266",
       "imdb": "https://www.imdb.com/title/tt46076921/"
     },
-    "tmdbUpdatedAt": "2026-09-30T12:50:26.818Z",
-    "tmdbFetchedAt": "2026-09-30T12:50:26.818Z"
+    "tmdbUpdatedAt": "2026-09-30T14:38:07.414Z",
+    "tmdbFetchedAt": "2026-09-30T14:38:07.414Z"
   },
   {
     "id": "hallmark-2026-save-the-date-for-christmas",
@@ -185582,8 +185582,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt46076940/"
     },
     "premiereDate": "2026-12-20",
-    "tmdbUpdatedAt": "2026-09-30T12:50:27.036Z",
-    "tmdbFetchedAt": "2026-09-30T12:50:27.036Z"
+    "tmdbUpdatedAt": "2026-09-30T14:38:07.623Z",
+    "tmdbFetchedAt": "2026-09-30T14:38:07.623Z"
   },
   {
     "id": "lifetime-2025-a-runaway-bride-for-christmas",
@@ -202306,9 +202306,9 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-09-30T12:50:27.256Z",
+    "tmdbUpdatedAt": "2026-09-30T14:38:07.832Z",
     "premiereDate": "2026-11-12",
-    "tmdbFetchedAt": "2026-09-30T12:50:27.256Z"
+    "tmdbFetchedAt": "2026-09-30T14:38:07.832Z"
   },
   {
     "id": "uptv-2026-christmas-en-pointe",
@@ -202459,9 +202459,9 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "o9dyk5v_ybQ",
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-09-30T12:50:27.481Z",
+    "tmdbUpdatedAt": "2026-09-30T14:38:08.024Z",
     "premiereDate": "2026-11-19",
-    "tmdbFetchedAt": "2026-09-30T12:50:27.481Z"
+    "tmdbFetchedAt": "2026-09-30T14:38:08.024Z"
   },
   {
     "id": "uptv-2025-christmas-in-the-ballroom",
@@ -204170,9 +204170,9 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-09-30T12:50:27.701Z",
+    "tmdbUpdatedAt": "2026-09-30T14:38:08.235Z",
     "premiereDate": "2026-11-21",
-    "tmdbFetchedAt": "2026-09-30T12:50:27.701Z",
+    "tmdbFetchedAt": "2026-09-30T14:38:08.235Z",
     "imdbId": "tt46666760"
   },
   {
@@ -204263,9 +204263,9 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-09-30T12:50:27.917Z",
+    "tmdbUpdatedAt": "2026-09-30T14:38:08.470Z",
     "premiereDate": "2026-10-31",
-    "tmdbFetchedAt": "2026-09-30T12:50:27.917Z",
+    "tmdbFetchedAt": "2026-09-30T14:38:08.470Z",
     "imdbId": "tt46668554"
   },
   {
@@ -204327,9 +204327,9 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-09-30T12:50:28.135Z",
+    "tmdbUpdatedAt": "2026-09-30T14:38:08.678Z",
     "premiereDate": "2026-11-28",
-    "tmdbFetchedAt": "2026-09-30T12:50:28.135Z"
+    "tmdbFetchedAt": "2026-09-30T14:38:08.678Z"
   },
   {
     "id": "gaf-2026-a-very-evergreen-christmas",
@@ -204491,9 +204491,9 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-09-30T12:50:28.354Z",
+    "tmdbUpdatedAt": "2026-09-30T14:38:08.914Z",
     "premiereDate": "2026-12-13",
-    "tmdbFetchedAt": "2026-09-30T12:50:28.354Z"
+    "tmdbFetchedAt": "2026-09-30T14:38:08.914Z"
   },
   {
     "id": "gaf-2026-a-second-chance-christmas",
@@ -204558,9 +204558,9 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-09-30T12:50:28.583Z",
+    "tmdbUpdatedAt": "2026-09-30T14:38:09.099Z",
     "premiereDate": "2026-10-10",
-    "tmdbFetchedAt": "2026-09-30T12:50:28.583Z",
+    "tmdbFetchedAt": "2026-09-30T14:38:09.099Z",
     "imdbId": "tt46668520"
   },
   {
@@ -204652,9 +204652,9 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-09-30T12:50:28.810Z",
+    "tmdbUpdatedAt": "2026-09-30T14:38:09.285Z",
     "premiereDate": "2026-12-03",
-    "tmdbFetchedAt": "2026-09-30T12:50:28.810Z"
+    "tmdbFetchedAt": "2026-09-30T14:38:09.285Z"
   },
   {
     "id": "hallmark-2013-window-wonderland",
@@ -206233,9 +206233,9 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-09-30T12:50:29.026Z",
+    "tmdbUpdatedAt": "2026-09-30T14:38:09.493Z",
     "premiereDate": "2026-10-17",
-    "tmdbFetchedAt": "2026-09-30T12:50:29.026Z"
+    "tmdbFetchedAt": "2026-09-30T14:38:09.493Z"
   },
   {
     "id": "gaf-2025-karen-kingsbury-s-the-christmas-ring",
@@ -206529,9 +206529,9 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-09-30T12:50:29.244Z",
+    "tmdbUpdatedAt": "2026-09-30T14:38:09.703Z",
     "premiereDate": "2026-11-08",
-    "tmdbFetchedAt": "2026-09-30T12:50:29.244Z"
+    "tmdbFetchedAt": "2026-09-30T14:38:09.703Z"
   },
   {
     "id": "gaf-2026-the-christmas-yes-list",
@@ -206595,9 +206595,9 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-09-30T12:50:29.461Z",
+    "tmdbUpdatedAt": "2026-09-30T14:38:09.913Z",
     "premiereDate": "2026-11-14",
-    "tmdbFetchedAt": "2026-09-30T12:50:29.461Z",
+    "tmdbFetchedAt": "2026-09-30T14:38:09.913Z",
     "imdbId": "tt46668453"
   },
   {
@@ -206757,9 +206757,9 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-09-30T12:50:29.681Z",
+    "tmdbUpdatedAt": "2026-09-30T14:38:10.171Z",
     "premiereDate": "2026-11-22",
-    "tmdbFetchedAt": "2026-09-30T12:50:29.681Z"
+    "tmdbFetchedAt": "2026-09-30T14:38:10.171Z"
   },
   {
     "id": "gaf-2026-a-sweet-christmas-anniversary",
@@ -206864,9 +206864,9 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-09-30T12:50:29.897Z",
+    "tmdbUpdatedAt": "2026-09-30T14:38:10.407Z",
     "premiereDate": "2026-11-24",
-    "tmdbFetchedAt": "2026-09-30T12:50:29.897Z"
+    "tmdbFetchedAt": "2026-09-30T14:38:10.407Z"
   },
   {
     "id": "gaf-2026-the-greatest-christmas-gift",
@@ -206917,9 +206917,9 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-09-30T12:50:30.116Z",
+    "tmdbUpdatedAt": "2026-09-30T14:38:10.617Z",
     "premiereDate": "2026-11-29",
-    "tmdbFetchedAt": "2026-09-30T12:50:30.116Z",
+    "tmdbFetchedAt": "2026-09-30T14:38:10.617Z",
     "imdbId": "tt44127266"
   },
   {
@@ -206971,9 +206971,9 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-09-30T12:50:30.345Z",
+    "tmdbUpdatedAt": "2026-09-30T14:38:10.828Z",
     "premiereDate": "2026-12-12",
-    "tmdbFetchedAt": "2026-09-30T12:50:30.345Z",
+    "tmdbFetchedAt": "2026-09-30T14:38:10.828Z",
     "imdbId": "tt46668597"
   },
   {
@@ -207077,9 +207077,9 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-09-30T12:50:30.582Z",
+    "tmdbUpdatedAt": "2026-09-30T14:38:11.087Z",
     "premiereDate": "2026-10-24",
-    "tmdbFetchedAt": "2026-09-30T12:50:30.582Z"
+    "tmdbFetchedAt": "2026-09-30T14:38:11.087Z"
   },
   {
     "id": "gaf-2026-christmas-by-the-spoonful",
@@ -207256,9 +207256,9 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-09-30T12:50:30.834Z",
+    "tmdbUpdatedAt": "2026-09-30T14:38:11.344Z",
     "premiereDate": "2026-12-06",
-    "tmdbFetchedAt": "2026-09-30T12:50:30.834Z"
+    "tmdbFetchedAt": "2026-09-30T14:38:11.344Z"
   },
   {
     "id": "uptv-2026-snowbody-like-you",
@@ -207352,8 +207352,8 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-09-30T12:50:31.102Z",
-    "tmdbFetchedAt": "2026-09-30T12:50:31.102Z",
+    "tmdbUpdatedAt": "2026-09-30T14:38:11.539Z",
+    "tmdbFetchedAt": "2026-09-30T14:38:11.539Z",
     "premiereDate": "2026-11-05",
     "director": "Nanea Miyata"
   },
@@ -207458,8 +207458,8 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-09-30T12:50:31.330Z",
-    "tmdbFetchedAt": "2026-09-30T12:50:31.330Z",
+    "tmdbUpdatedAt": "2026-09-30T14:38:11.813Z",
+    "tmdbFetchedAt": "2026-09-30T14:38:11.813Z",
     "director": "Cathy Lynn Yonek",
     "premiereDate": "2026-11-06"
   }
