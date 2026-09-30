@@ -164,6 +164,8 @@ async function startServer() {
     return next();
   });
 
+  app.get(['/admin', '/admin/'], (_req, res) => res.redirect(302, '/admin/submissions/'));
+
   const sendTrackedJsonFeed = (req: express.Request, res: express.Response, definition: Parameters<typeof trackSuccessfulFeedResponse>[1], body: string, rateLimit = true) => {
     if (rateLimit) {
       const decision = publicFeedRateLimiter.reserve(getRequestClientIp(req), definition.id);

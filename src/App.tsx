@@ -578,21 +578,27 @@ export default function App() {
     || descriptor.type === 'year-archive'
     || descriptor.type === 'brand'
     || descriptor.type === 'fingerprint';
+  const isAdminRoute = descriptor.type === 'admin-login'
+    || descriptor.type === 'admin-submissions'
+    || descriptor.type === 'admin-feed-statistics'
+    || descriptor.type === 'admin-add-movies';
 
   return (
-    <div className="page-shell min-h-screen flex flex-col relative">
-      <SnowEffect />
-      <BrandPrefetch brands={populatedBrands} activeBrandId={activeBrandId} />
-      <CatalogueStatsStrip meta={meta} onNavigate={navigate} />
-      <Header
-        currentPath={currentPath}
-        onNavigate={navigate}
-        searchQuery={searchQuery}
-        onSearchChange={setSearchQuery}
-        populatedBrands={populatedBrands}
-      />
+    <div className={isAdminRoute ? 'admin-shell min-h-screen flex flex-col' : 'page-shell min-h-screen flex flex-col relative'}>
+      {!isAdminRoute && <SnowEffect />}
+      {!isAdminRoute && <BrandPrefetch brands={populatedBrands} activeBrandId={activeBrandId} />}
+      {!isAdminRoute && <CatalogueStatsStrip meta={meta} onNavigate={navigate} />}
+      {!isAdminRoute && (
+        <Header
+          currentPath={currentPath}
+          onNavigate={navigate}
+          searchQuery={searchQuery}
+          onSearchChange={setSearchQuery}
+          populatedBrands={populatedBrands}
+        />
+      )}
 
-      <main className={`flex-1 ${isCatalogueRoute ? 'page-container page-container--wide' : 'page-container page-container--standard'} ${descriptor.type === 'home' && !hasSearchQuery ? 'min-h-[1300px]' : ''}`}>
+      <main className={`flex-1 ${isAdminRoute ? '' : `${isCatalogueRoute ? 'page-container page-container--wide' : 'page-container page-container--standard'} ${descriptor.type === 'home' && !hasSearchQuery ? 'min-h-[1300px]' : ''}`}`}>
         {hasSearchQuery ? (
           <div className="py-6 sm:py-8" id="search-results-section">
             <div className="border-b border-[#E7DFD5] pb-4 mb-6">
@@ -847,8 +853,8 @@ export default function App() {
         )}
       </main>
 
-      <Footer onNavigate={navigate} populatedBrands={populatedBrands} />
-      <ScrollToTopButton />
+      {!isAdminRoute && <Footer onNavigate={navigate} populatedBrands={populatedBrands} />}
+      {!isAdminRoute && <ScrollToTopButton />}
     </div>
   );
 }
