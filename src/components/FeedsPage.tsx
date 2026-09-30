@@ -359,16 +359,16 @@ export const FeedsPage: React.FC<{ meta: FeedsMetaPayload }> = ({ meta }) => {
           <div className="sm:border-r sm:border-[#E7DFD5] sm:px-5">
             <div className="flex items-center gap-2">
               <span className="font-sans-clean text-sm font-semibold text-[#B8860B]">2</span>
-              <h3 className="font-sans-clean text-xs font-semibold uppercase tracking-[0.12em] text-[#1A3D2F]">PASTE THE FEED URL</h3>
+              <h3 className="font-sans-clean text-xs font-semibold uppercase tracking-[0.12em] text-[#1A3D2F]">REPLACE THE DEFAULT URL</h3>
             </div>
-            <p className="mt-2 font-body text-sm leading-relaxed text-[#59524A]">Copy any XmasDB feed above and paste its URL into Radarr.</p>
+            <p className="mt-2 font-body text-sm leading-relaxed text-[#59524A]">StevenLu Custom comes with a feed URL already entered. Delete that URL, then paste the XmasDB feed URL.</p>
           </div>
           <div className="sm:pl-5">
             <div className="flex items-center gap-2">
               <span className="font-sans-clean text-sm font-semibold text-[#B8860B]">3</span>
               <h3 className="font-sans-clean text-xs font-semibold uppercase tracking-[0.12em] text-[#1A3D2F]">SAVE</h3>
             </div>
-            <p className="mt-2 font-body text-sm leading-relaxed text-[#59524A]">That&apos;s it — XmasDB keeps the list updated automatically.</p>
+            <p className="mt-2 font-body text-sm leading-relaxed text-[#59524A]">That&apos;s it. XmasDB keeps the list updated automatically.</p>
           </div>
         </div>
         <p className="mt-4 max-w-4xl font-sans-clean text-xs leading-relaxed text-[#736B63]"><span className="font-semibold text-[#1A3D2F]">Tip:</span> Give each XmasDB import list its own tag, such as <code className="rounded bg-[#F2E8CF] px-1 py-0.5 font-mono text-xs text-[#403A34]">xmasdb-hallmark</code>, to make imported movies easier to identify. Upcoming movies become feed-eligible <span className="font-semibold">7 days</span> before their premiere.</p>
