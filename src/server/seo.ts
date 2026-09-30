@@ -9,6 +9,7 @@ import { getActorPath, getFingerprintPath, getMoviePath, toCanonicalUrl } from '
 import { getFingerprintById } from '../data/fingerprints';
 import { buildFingerprintListing } from './catalogue-api';
 import { PUBLIC_API_ENABLED } from './public-api-config';
+import { getMoviePoster } from '../utils/posters';
 
 export function getRobotsTxt(): string {
   return [
@@ -141,6 +142,7 @@ function renderMovieContent(pathname: string): string {
   const payload = buildMovieDetail(match[1], match[2]);
   if (!payload) return '';
   const { movie } = payload;
+  const poster = getMoviePoster(movie);
   const brand = getBrandById(movie.brandId)?.shortName || movie.brandId;
   const cast = movie.cast.map((member) => {
     const href = member.tmdbPersonId ? getActorPath(member.tmdbPersonId, member.slug) : undefined;
@@ -155,7 +157,10 @@ function renderMovieContent(pathname: string): string {
     movie.writingCredits.length ? `<dt>Writers</dt><dd>${movie.writingCredits.map((writer) => `<a href="${escapeHtml(getActorPath(writer.tmdbPersonId, writer.slug))}">${escapeHtml(writer.name)}</a>`).join(' · ')}</dd>` : '',
     movie.voteAverage ? `<dt>Rating</dt><dd>${movie.voteAverage.toFixed(1)}</dd>` : '',
   ].filter(Boolean).join('');
-  return `<main id="server-rendered-content"><article><h1>${escapeHtml(movie.title)}</h1><h2>Synopsis</h2><p>${renderText(movie.synopsis)}</p><dl>${facts}</dl><h2>Cast</h2><ul>${cast}</ul></article></main>`;
+  const posterMarkup = poster
+    ? `<img src="${escapeHtml(poster)}" alt="${escapeHtml(movie.title)}" width="500" height="750" />`
+    : '';
+  return `<main id="server-rendered-content"><article><h1>${escapeHtml(movie.title)}</h1>${posterMarkup}<h2>Synopsis</h2><p>${renderText(movie.synopsis)}</p><dl>${facts}</dl><h2>Cast</h2><ul>${cast}</ul></article></main>`;
 }
 
 function renderActorContent(pathname: string): string {
@@ -267,7 +272,7 @@ export function injectSeoIntoHtml(html: string, seo: SeoDocument): string {
   const tags = [
     `<title>${escapeHtml(seo.title)}</title>`,
     renderMeta('description', seo.description),
-    renderMeta('robots', seo.noIndex ? 'noindex,follow' : 'index,follow'),
+    renderMeta('robots', seo.noIndex ? 'noindex,follow' : 'index,follow,max-image-preview:large'),
     canonical ? `<link rel="canonical" href="${escapeHtml(canonical)}" />` : '',
     renderMeta('og:type', seo.ogType || 'website', true),
     renderMeta('og:site_name', 'XmasDB', true),

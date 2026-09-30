@@ -331,7 +331,7 @@ export function updateSeoTags(seo: SeoDocument): void {
   const canonical = seo.canonicalPath ? toCanonicalUrl(seo.canonicalPath) : undefined;
   document.title = seo.title;
   setMeta(document, 'meta[name="description"]', 'name', seo.description);
-  setMeta(document, 'meta[name="robots"]', 'name', seo.noIndex ? 'noindex,follow' : 'index,follow');
+  setMeta(document, 'meta[name="robots"]', 'name', seo.noIndex ? 'noindex,follow' : 'index,follow,max-image-preview:large');
   setMeta(document, 'meta[property="og:type"]', 'property', seo.ogType || 'website');
   setMeta(document, 'meta[property="og:site_name"]', 'property', 'XmasDB');
   setMeta(document, 'meta[property="og:title"]', 'property', seo.title);

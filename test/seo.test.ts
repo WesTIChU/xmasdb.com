@@ -113,7 +113,7 @@ assert.match(actorHtml, /<h1>Danica McKellar<\/h1>/);
 assert.match(actorHtml, /Danica Mae McKellar/);
 assert.match(actorHtml, /Christmas movie filmography/);
 assert.match(actorHtml, /href="\/movie\/\d+\/[^\"]+"/);
-assert.match(actorHtml, /name="robots" content="index,follow"/);
+assert.match(actorHtml, /name="robots" content="index,follow,max-image-preview:large"/);
 assert.ok(actorHtml.includes(`rel="canonical" href="https://xmasdb.com${danicaPath}"`));
 assert.match(actorHtml, /application\/ld\+json/);
 assert.match(actorHtml, /__XMASDB_ROUTE__/);
@@ -125,7 +125,15 @@ const movieHtml = renderServerHtml(serverShell, moviePath);
 assert.ok(movieHtml.includes(`<h1>${movie.title}</h1>`));
 assert.match(movieHtml, /<h2>Cast<\/h2>/);
 assert.equal((movieHtml.match(/<h1\b/g) || []).length, 1);
-assert.match(movieHtml, /name="robots" content="index,follow"/);
+assert.match(movieHtml, /name="robots" content="index,follow,max-image-preview:large"/);
+assert.match(movieHtml, new RegExp(`<img src="${movie.posterUrl}" alt="${movie.title}" width="500" height="750" \/>`));
+assert.equal((movieHtml.match(/<img\b/g) || []).length, 1);
+assert.match(movieHtml, new RegExp(`property="og:image" content="https://xmasdb\\.com${movie.posterUrl}"`));
+assert.match(movieHtml, new RegExp(`name="twitter:image" content="https://xmasdb\\.com${movie.posterUrl}"`));
+assert.match(movieHtml, new RegExp(`"@type":"Movie"[^<]+"image":"https://xmasdb\\.com${movie.posterUrl}"`));
+const adminHtml = renderServerHtml(serverShell, '/admin/login/');
+assert.match(adminHtml, /name="robots" content="noindex,follow"/);
+assert.doesNotMatch(adminHtml, /max-image-preview:large/);
 assert.ok(movieHtml.includes(`rel="canonical" href="https://xmasdb.com${moviePath}"`));
 assert.match(movieHtml, /__XMASDB_ROUTE__/);
 assert.match(movieHtml, /\/api\/movie\/\d+\/[^"<]+/);
@@ -189,7 +197,7 @@ assert.equal(sitemapPaths.filter((path) => path.startsWith('/actor/')).length, g
 assert.ok(sitemapPaths.every((path) => {
   const seo = getServerSeo(path);
   const html = renderServerHtml(serverShell, path);
-  const expectedRobots = seo.noIndex ? 'noindex,follow' : 'index,follow';
+  const expectedRobots = seo.noIndex ? 'noindex,follow' : 'index,follow,max-image-preview:large';
   return html.includes(`<title>${seo.title.replace(/&/g, '&amp;')}</title>`)
     && html.includes(`name="description"`)
     && html.includes(`rel="canonical" href="https://xmasdb.com${seo.canonicalPath}"`)

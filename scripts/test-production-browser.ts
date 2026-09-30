@@ -11,7 +11,7 @@ const routes = [
   { path: '/movies/', text: 'All Christmas Movies' },
   { path: '/hallmark/', text: 'Hallmark Christmas Movies' },
   { path: '/lifetime/', text: 'Lifetime Christmas Movies' },
-  { path: '/gaf/', text: 'GAF Christmas Movies' },
+  { path: '/gaf/', text: 'Great American Family Christmas Movies' },
   { path: '/uptv/', text: 'UPtv Christmas Movies' },
   { path: '/hallmark/2025/', text: 'Hallmark Christmas Movies' },
   { path: '/uptv/2017/', text: 'UPtv Christmas Movies' },
@@ -112,7 +112,7 @@ async function main(): Promise<void> {
       if (!value?.text?.includes(route.text)) throw new Error(`${route.path} did not render ${route.text}. DOM=${JSON.stringify(value)}`);
       if (value.text.includes('Something went wrong loading this page.') || value.text.includes('XmasDB needs a refresh')) throw new Error(`${route.path} rendered a generic error state. DOM=${JSON.stringify(value)}`);
       if (value.errors?.length) throw new Error(`${route.path} recorded browser errors: ${value.errors.join(' | ')}`);
-      if (!value.title || !value.canonical || value.robots !== 'index,follow' || !value.links) throw new Error(`${route.path} did not produce complete indexable page metadata. DOM=${JSON.stringify(value)}`);
+      if (!value.title || !value.canonical || value.robots !== 'index,follow,max-image-preview:large' || !value.links) throw new Error(`${route.path} did not produce complete indexable page metadata. DOM=${JSON.stringify(value)}`);
       if (value.resources?.some((resource) => resource.includes(`/api/${route.path.split('/')[1]}/`))) throw new Error(`${route.path} unexpectedly fetched its entity API after bootstrapping.`);
     };
 
@@ -137,6 +137,14 @@ async function main(): Promise<void> {
     await wait(1000);
     await installErrorCapture();
     await inspect({ path: '/movie/866665/sister-swap-a-hometown-holiday/', text: 'Sister Swap: A Hometown Holiday' });
+
+    const posterState = await command(iterator, browserSocket, pending, commandId++, 'WebDriver:ExecuteScript', {
+      sessionId,
+      script: 'const title = "Sister Swap: A Hometown Holiday"; const posters = Array.from(document.querySelectorAll("#movie-detail-view img")).filter((image) => image.getAttribute("alt") === title); return { count: posters.length, visible: posters.filter((image) => { const style = getComputedStyle(image); return style.display !== "none" && style.visibility !== "hidden"; }).length };',
+      args: [],
+    });
+    const hydratedPosterState = posterState[3]?.value as { count?: number; visible?: number } | undefined;
+    if (hydratedPosterState?.count !== 1 || hydratedPosterState.visible !== 1) throw new Error(`Movie hydration did not leave exactly one visible poster: ${JSON.stringify(hydratedPosterState)}`);
 
     const castState = await command(iterator, browserSocket, pending, commandId++, 'WebDriver:ExecuteScript', {
       sessionId,
