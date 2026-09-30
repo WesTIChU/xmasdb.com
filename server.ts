@@ -127,6 +127,7 @@ async function mapWithConcurrency<T, R>(items: T[], limit: number, worker: (item
 
 async function startServer() {
   const app = express();
+  app.disable('x-powered-by');
   app.set('trust proxy', isTrustedProxyAddress);
   const PORT = Number(process.env.PORT || 3000);
   const contactRateLimiter = new ContactRateLimiter();
@@ -179,8 +180,24 @@ async function startServer() {
     return res.send(body);
   };
 
-  // Enable CORS headers for feeds so external tools like Radarr or curl can fetch without friction
+  // Enable CORS only for public machine-readable endpoints used by external tools.
+  const supportsPublicCrossOriginGet = (pathname: string): boolean => (
+    pathname === '/rss.xml'
+    || /^\/(?:json|api\/feeds)\/(?:all|hallmark|lifetime|gaf|uptv)\.json$/.test(pathname)
+    || /^\/(?:json|api\/feeds)\/year\/\d+\.json$/.test(pathname)
+    || /^\/json\/actors\.json$/.test(pathname)
+    || pathname === '/json/metadata/all.json'
+    || /^\/json\/actors\/[^/]+\/metadata\.json$/.test(pathname)
+    || /^\/api\/feeds\/actors\/\d+\.json$/.test(pathname)
+    || pathname === '/api/feeds/actors.json'
+    || /^\/api\/feeds\/rss(?:\.xml)?$/.test(pathname)
+    || /^\/api\/metadata\/(?:all|hallmark|lifetime|uptv|actors)\.json$/.test(pathname)
+    || /^\/api\/metadata\/actors\/\d+\.json$/.test(pathname)
+    || /^\/api\/v1\/(?:movies|actors(?:\/[^/]+)?|ingredients(?:\/[^/]+)?)$/.test(pathname)
+  );
+
   app.use((req, res, next) => {
+    if (!supportsPublicCrossOriginGet(req.path)) return next();
     res.header('Access-Control-Allow-Origin', '*');
     res.header('Access-Control-Allow-Methods', 'GET, OPTIONS');
     res.header('Access-Control-Allow-Headers', 'Content-Type');

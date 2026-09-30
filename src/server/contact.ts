@@ -42,6 +42,7 @@ export type ContactValidationResult = ContactValidationSuccess | ContactValidati
 
 export const CONTACT_RATE_LIMIT = 5;
 export const CONTACT_RATE_WINDOW_MS = 15 * 60 * 1000;
+export const CONTACT_SUBMISSION_RETENTION_LIMIT = 1000;
 
 const MAX_LENGTHS = {
   name: 100,
@@ -171,8 +172,11 @@ export function updateContactSubmissions(
     await fs.mkdir(dataDir, { recursive: true });
     const submissions = await readStoredSubmissions(filePath);
     const updated = updater(submissions);
-    await writeFileAtomically(filePath, JSON.stringify(updated, null, 2) + '\n');
-    return updated;
+    const retained = updated.length > CONTACT_SUBMISSION_RETENTION_LIMIT
+      ? updated.slice(-CONTACT_SUBMISSION_RETENTION_LIMIT)
+      : updated;
+    await writeFileAtomically(filePath, JSON.stringify(retained, null, 2) + '\n');
+    return retained;
   });
   writeQueue = operation.then(() => undefined, () => undefined);
   return operation;

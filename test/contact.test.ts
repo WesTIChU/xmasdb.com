@@ -6,8 +6,10 @@ import { MOVIES } from '../src/data/movies';
 import { buildCatalogueMeta } from '../src/server/catalogue-api';
 import {
   ContactRateLimiter,
+  CONTACT_SUBMISSION_RETENTION_LIMIT,
   ensureContactStorage,
   getContactSubmissionsPath,
+  updateContactSubmissions,
   storeContactSubmission,
   validateContactSubmission,
 } from '../src/server/contact';
@@ -67,6 +69,18 @@ await Promise.all(concurrentResults.map((result) => storeContactSubmission(resul
 stored = JSON.parse(await fs.readFile(getContactSubmissionsPath(concurrentDir), 'utf8'));
 assert.equal(stored.length, 20, 'concurrent submissions are serialized without overwriting');
 assert.equal(new Set(stored.map((submission) => String(submission.id))).size, 20, 'stored IDs are unique');
+
+const retentionDir = await fs.mkdtemp(path.join(os.tmpdir(), 'xmasdb-contact-retention-'));
+await ensureContactStorage(retentionDir);
+await updateContactSubmissions(() => Array.from({ length: CONTACT_SUBMISSION_RETENTION_LIMIT }, (_, index) => ({
+  ...validResult.submission,
+  id: `retained-${index}`,
+})), retentionDir);
+await storeContactSubmission({ ...validResult.submission, id: 'retained-newest' }, retentionDir);
+stored = JSON.parse(await fs.readFile(getContactSubmissionsPath(retentionDir), 'utf8'));
+assert.equal(stored.length, CONTACT_SUBMISSION_RETENTION_LIMIT, 'contact retention keeps at most 1,000 submissions');
+assert.equal(stored[0].id, 'retained-1', 'retention discards the oldest submission first');
+assert.equal(stored.at(-1)?.id, 'retained-newest', 'retention keeps the newest submission');
 
 const malformedDir = await fs.mkdtemp(path.join(os.tmpdir(), 'xmasdb-contact-malformed-'));
 const malformedPath = getContactSubmissionsPath(malformedDir);
