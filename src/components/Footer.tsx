@@ -11,7 +11,7 @@ interface FooterProps {
 
 export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
   return (
-    <footer className="border-t border-[#E7DFD5] bg-[#F7F2EB] py-10 px-4 mt-16 text-center text-sm text-[#736B63] font-body">
+    <footer className="border-t border-[#E7DFD5] bg-[#F7F2EB] py-10 px-4 mt-8 text-center text-sm text-[#736B63] font-body">
       <div className="max-w-4xl mx-auto space-y-4">
         <HollyDivider />
 
