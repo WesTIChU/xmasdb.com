@@ -54,6 +54,8 @@ function highlightMatch(text: string, query: string) {
 }
 
 // Fallback image item for movies with error handling
+const movieThumbnailClass = 'w-10 aspect-[2/3] shrink-0 overflow-hidden rounded bg-[#EAE2D7] border border-[#DDD3C6] shadow-2xs';
+
 const MoviePosterThumbnail: React.FC<{ movie: SearchMovieEntry; brandName?: string }> = ({
   movie,
   brandName,
@@ -63,9 +65,9 @@ const MoviePosterThumbnail: React.FC<{ movie: SearchMovieEntry; brandName?: stri
 
   if (imgError || !poster) {
     return (
-      <div className="w-10 h-[60px] shrink-0 rounded bg-[#EAE2D7] border border-[#DDD3C6] flex flex-col items-center justify-center p-1 text-center shadow-2xs">
+      <div className={`${movieThumbnailClass} flex flex-col items-center justify-center p-0.5 text-center`}>
         <Film className="w-4 h-4 text-[#6F675E] opacity-70 mb-0.5" />
-        <span className="text-[9px] font-sans-clean font-semibold uppercase tracking-wider text-[#736B63] line-clamp-1 leading-none">
+        <span className="min-w-0 max-w-full overflow-hidden text-ellipsis whitespace-nowrap text-[7px] font-sans-clean font-semibold uppercase tracking-[0.05em] text-[#736B63] leading-none">
           {brandName || 'Xmas'}
         </span>
       </div>
@@ -73,7 +75,7 @@ const MoviePosterThumbnail: React.FC<{ movie: SearchMovieEntry; brandName?: stri
   }
 
   return (
-    <div className="w-10 h-[60px] shrink-0 rounded overflow-hidden bg-[#EAE2D7] border border-[#DDD3C6] shadow-2xs">
+    <div className={movieThumbnailClass}>
       <img
         src={poster}
         alt={movie.title}
