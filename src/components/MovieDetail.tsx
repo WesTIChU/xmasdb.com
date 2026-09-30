@@ -288,7 +288,7 @@ export const MovieDetail: React.FC<MovieDetailProps> = ({ movie, related, onNavi
                         e.preventDefault();
                         onNavigate(actorPath);
                       }}
-                      className="w-14 h-14 sm:w-15 sm:h-15 rounded-lg overflow-hidden bg-[#ECE4D8] shrink-0 border border-[#E0D7CC] group-hover:border-[#841818]/60 transition-colors flex items-center justify-center focus:outline-none"
+                      className="w-15 h-15 sm:w-15 sm:h-15 rounded-lg overflow-hidden bg-[#ECE4D8] shrink-0 border border-[#E0D7CC] group-hover:border-[#841818]/60 transition-colors flex items-center justify-center focus:outline-none"
                     >
                       {photoSrc ? (
                         <img
@@ -324,7 +324,7 @@ export const MovieDetail: React.FC<MovieDetailProps> = ({ movie, related, onNavi
                           e.preventDefault();
                           onNavigate(actorPath);
                         }}
-                        className="text-left block font-heading font-medium text-[#1A3D2F] group-hover:text-[#841818] transition-colors truncate text-sm sm:text-base leading-snug"
+                        className="text-left block font-heading font-medium text-[#1A3D2F] group-hover:text-[#841818] transition-colors truncate text-[15px] sm:text-[17px] leading-snug"
                       >
                         {member.name}
                       </a>
@@ -437,7 +437,7 @@ export const MovieDetail: React.FC<MovieDetailProps> = ({ movie, related, onNavi
               id="related-brand-movies-heading"
               className="text-base sm:text-lg md:text-xl font-heading font-semibold uppercase tracking-wider text-[#1A3D2F]"
             >
-              More from {brand.shortName}
+              More from {brand.id === 'gaf' ? 'Great American Family' : brand.shortName}
             </h2>
             <NavigationLink href={getNetworkPath(brand.slug)} onNavigate={onNavigate} className="text-xs sm:text-sm font-sans-clean font-medium hover:text-[#143626] transition-colors">View all <span className="xmas-nav-arrow">→</span></NavigationLink>
           </div>
