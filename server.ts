@@ -12,10 +12,6 @@ import {
   getRadarrNetworkFeedJson,
   getRadarrYearFeedJson,
   getRadarrActorFeedJson,
-  getFullDatabaseJson,
-  getBrandMoviesRichJson,
-  getActorsRichJson,
-  getActorSingleRichJson,
   getRssFeedXml,
   getSitemapXml,
 } from './src/utils/feeds';
@@ -39,7 +35,7 @@ import { commitMoviesToGitHub, dispatchComingSoonRefresh, isGitHubConfigured, re
 import { buildMovieFromTmdb, normalizeBrand, normalizeStatus, parseBulkMovieInput } from './src/server/movie-import';
 import { fetchTmdbMovie, requireTmdbApiKey } from './src/utils/tmdb';
 import { getCanonicalRedirect, getRobotsTxt, renderServerHtml } from './src/server/seo';
-import { ensureFeedStatisticsStorage, getActorFeedDefinition, getFeedStatistics, getMetadataFeedDefinition, getYearFeedDefinition } from './src/server/feed-statistics';
+import { ensureFeedStatisticsStorage, getActorFeedDefinition, getFeedStatistics, getYearFeedDefinition } from './src/server/feed-statistics';
 import { trackSuccessfulFeedResponse } from './src/server/feed-route';
 import { isTrustedProxyAddress, PublicFeedRateLimiter } from './src/server/feed-rate-limit';
 import { enrichNewCatalogueActors } from './src/server/actor-import';
@@ -185,14 +181,8 @@ async function startServer() {
     pathname === '/rss.xml'
     || /^\/(?:json|api\/feeds)\/(?:all|hallmark|lifetime|gaf|uptv)\.json$/.test(pathname)
     || /^\/(?:json|api\/feeds)\/year\/\d+\.json$/.test(pathname)
-    || /^\/json\/actors\.json$/.test(pathname)
-    || pathname === '/json/metadata/all.json'
-    || /^\/json\/actors\/[^/]+\/metadata\.json$/.test(pathname)
     || /^\/api\/feeds\/actors\/\d+\.json$/.test(pathname)
-    || pathname === '/api/feeds/actors.json'
     || /^\/api\/feeds\/rss(?:\.xml)?$/.test(pathname)
-    || /^\/api\/metadata\/(?:all|hallmark|lifetime|uptv|actors)\.json$/.test(pathname)
-    || /^\/api\/metadata\/actors\/\d+\.json$/.test(pathname)
     || /^\/api\/v1\/(?:movies|actors(?:\/[^/]+)?|ingredients(?:\/[^/]+)?)$/.test(pathname)
   );
 
@@ -309,44 +299,6 @@ async function startServer() {
     const definition = getActorFeedDefinition(tmdbPersonId);
     if (!definition) return res.status(404).json({ error: 'Actor not found' });
     return sendTrackedJsonFeed(req, res, definition, data);
-  });
-
-  // =========================================================================
-  // INTERNAL CANONICAL RICH METADATA ENDPOINTS
-  // =========================================================================
-
-  app.get(['/api/metadata/all.json', '/json/metadata/all.json'], (req, res) => {
-    return sendTrackedJsonFeed(req, res, getMetadataFeedDefinition('all', 'All Metadata'), getFullDatabaseJson(), false);
-  });
-
-  app.get(['/api/metadata/hallmark.json'], (req, res) => {
-    return sendTrackedJsonFeed(req, res, getMetadataFeedDefinition('hallmark', 'Hallmark Metadata'), getBrandMoviesRichJson('hallmark'), false);
-  });
-
-  app.get(['/api/metadata/lifetime.json'], (req, res) => {
-    return sendTrackedJsonFeed(req, res, getMetadataFeedDefinition('lifetime', 'Lifetime Metadata'), getBrandMoviesRichJson('lifetime'), false);
-  });
-
-  app.get(['/api/metadata/uptv.json'], (req, res) => {
-    return sendTrackedJsonFeed(req, res, getMetadataFeedDefinition('uptv', 'UPtv Metadata'), getBrandMoviesRichJson('uptv'), false);
-  });
-
-  app.get(['/json/actors.json', '/api/metadata/actors.json', '/api/feeds/actors.json'], (req, res) => {
-    return sendTrackedJsonFeed(req, res, getMetadataFeedDefinition('actors', 'Actor Metadata'), getActorsRichJson(), false);
-  });
-
-  app.get(['/json/actors/:tmdbPersonId/metadata.json', '/api/metadata/actors/:tmdbPersonId.json'], (req, res) => {
-    const tmdbPersonId = parseInt(req.params.tmdbPersonId, 10);
-    if (isNaN(tmdbPersonId)) {
-      return res.status(400).json({ error: 'Invalid TMDB Person ID' });
-    }
-    const data = getActorSingleRichJson(tmdbPersonId);
-    if (!data) {
-      return res.status(404).json({ error: 'Actor not found' });
-    }
-    const actor = getActorFeedDefinition(tmdbPersonId);
-    if (!actor) return res.status(404).json({ error: 'Actor not found' });
-    return sendTrackedJsonFeed(req, res, getMetadataFeedDefinition(`actor:${tmdbPersonId}`, `${actor.name} Metadata`), data, false);
   });
 
   // RSS Feed XML
