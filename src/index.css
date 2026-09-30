@@ -196,6 +196,72 @@ body {
   transform-origin: center;
 }
 
+/* Local, one-shot snow flurry for homepage actor portraits. */
+.popular-actor-portrait {
+  isolation: isolate;
+  overflow: visible;
+  transition: transform 180ms ease, border-color 180ms ease;
+}
+
+.popular-actor-portrait:hover {
+  border-color: var(--popular-actor-accent, #B8860B);
+  transform: translateY(-1px);
+}
+
+.popular-actor-snow {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.popular-actor-snow > span {
+  position: absolute;
+  display: block;
+  color: #FFFDF9;
+  font-family: Georgia, serif;
+  font-size: 0.55rem;
+  line-height: 1;
+  opacity: 0;
+  text-shadow: 0 1px 2px rgba(26, 61, 47, 0.22);
+  transform: translate3d(0, 0, 0);
+}
+
+.popular-actor-snow > span:nth-child(1) { left: -0.4rem; top: 0.7rem; --flake-drift: -0.35rem; }
+.popular-actor-snow > span:nth-child(2) { left: 0.35rem; top: -0.35rem; --flake-drift: -0.15rem; }
+.popular-actor-snow > span:nth-child(3) { right: 0.1rem; top: 0.25rem; --flake-drift: 0.3rem; }
+.popular-actor-snow > span:nth-child(4) { right: -0.45rem; top: 2.2rem; --flake-drift: 0.4rem; }
+.popular-actor-snow > span:nth-child(5) { left: -0.3rem; top: 3.9rem; --flake-drift: -0.25rem; }
+.popular-actor-snow > span:nth-child(6) { left: 1.45rem; bottom: -0.35rem; --flake-drift: -0.15rem; }
+.popular-actor-snow > span:nth-child(7) { right: 1.35rem; bottom: -0.35rem; --flake-drift: 0.2rem; }
+.popular-actor-snow > span:nth-child(8) { right: 2.2rem; top: -0.3rem; --flake-drift: 0.15rem; }
+
+.popular-actor-portrait:hover .popular-actor-snow > span {
+  animation: popular-actor-snow-flurry 900ms ease-out both;
+}
+
+.popular-actor-portrait:hover .popular-actor-snow > span:nth-child(2) { animation-delay: 40ms; }
+.popular-actor-portrait:hover .popular-actor-snow > span:nth-child(3) { animation-delay: 80ms; }
+.popular-actor-portrait:hover .popular-actor-snow > span:nth-child(4) { animation-delay: 120ms; }
+.popular-actor-portrait:hover .popular-actor-snow > span:nth-child(5) { animation-delay: 60ms; }
+.popular-actor-portrait:hover .popular-actor-snow > span:nth-child(6) { animation-delay: 100ms; }
+.popular-actor-portrait:hover .popular-actor-snow > span:nth-child(7) { animation-delay: 140ms; }
+.popular-actor-portrait:hover .popular-actor-snow > span:nth-child(8) { animation-delay: 30ms; }
+
+@keyframes popular-actor-snow-flurry {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -0.15rem, 0) scale(0.8);
+  }
+  22% {
+    opacity: 0.85;
+  }
+  100% {
+    opacity: 0;
+    transform: translate3d(var(--flake-drift), 1.2rem, 0) scale(0.95);
+  }
+}
+
 .nav-squiggle {
   position: absolute;
   bottom: -2px;
@@ -226,6 +292,15 @@ body {
 @media (prefers-reduced-motion: reduce) {
   .quick-links-sparkle {
     animation: none;
+  }
+
+  .popular-actor-portrait:hover {
+    transform: none;
+  }
+
+  .popular-actor-snow > span {
+    animation: none !important;
+    opacity: 0;
   }
 
   .nav-squiggle {

@@ -11,11 +11,33 @@ interface PopularActorsSectionProps {
   onNavigate: (path: string) => void;
 }
 
-const ActorCircularPortrait: React.FC<{ actor: PopularActorsGroup['actors'][number] }> = ({ actor }) => {
+const ACTOR_SNOW_PARTICLES = ['❄', '·', '·', '❄', '·', '·', '❄', '·'];
+
+const ActorCircularPortrait: React.FC<{
+  actor: PopularActorsGroup['actors'][number];
+  accentColor: string;
+}> = ({ actor, accentColor }) => {
   const [imgError, setImgError] = useState(false);
   const photo = actor.photoUrl;
-  if (imgError || !photo) return <div className="w-[108px] h-[108px] xl:w-[96px] xl:h-[96px] rounded-full mx-auto flex items-center justify-center bg-[#EFE9DF] border border-[#DDD3C6] text-[#1A3D2F] font-heading text-3xl" aria-hidden="true">{actor.name.charAt(0)}</div>;
-  return <div className="w-[108px] h-[108px] xl:w-[96px] xl:h-[96px] rounded-full mx-auto overflow-hidden bg-[#EFE9DF] border border-[#DDD3C6]"><img src={photo} srcSet={getHomepageActorSrcSet(photo)} sizes="(min-width: 1280px) 96px, 108px" alt={actor.name} loading="lazy" decoding="async" width={216} height={216} referrerPolicy="no-referrer" onError={() => setImgError(true)} className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300" /></div>;
+  const portraitPhoto = photo && !imgError ? photo : null;
+
+  return (
+    <div
+      className="popular-actor-portrait relative mx-auto h-[108px] w-[108px] rounded-full border border-[#DDD3C6] bg-[#EFE9DF] xl:h-[96px] xl:w-[96px]"
+      style={{ '--popular-actor-accent': accentColor } as React.CSSProperties}
+    >
+      <div className="relative z-0 h-full w-full overflow-hidden rounded-full">
+        {portraitPhoto ? (
+          <img src={portraitPhoto} srcSet={getHomepageActorSrcSet(portraitPhoto)} sizes="(min-width: 1280px) 96px, 108px" alt={actor.name} loading="lazy" decoding="async" width={216} height={216} referrerPolicy="no-referrer" onError={() => setImgError(true)} className="h-full w-full object-cover object-center group-hover:scale-105 transition-transform duration-300" />
+        ) : (
+          <div className="flex h-full w-full items-center justify-center text-3xl font-heading text-[#1A3D2F]" aria-hidden="true">{actor.name.charAt(0)}</div>
+        )}
+      </div>
+      <span className="popular-actor-snow" aria-hidden="true">
+        {ACTOR_SNOW_PARTICLES.map((particle, index) => <span key={index}>{particle}</span>)}
+      </span>
+    </div>
+  );
 };
 
 export const PopularActorsSection: React.FC<PopularActorsSectionProps> = ({ groups, onNavigate }) => {
@@ -48,7 +70,7 @@ export const PopularActorsSection: React.FC<PopularActorsSectionProps> = ({ grou
         {selected.actors.map((actor) => {
           const actorPath = getActorPath(actor.tmdbPersonId, actor.slug);
           return <article key={actor.slug} className="w-[120px] shrink-0 text-center md:w-full"><a href={actorPath} onClick={(event) => { event.preventDefault(); onNavigate(actorPath); }} className="group block text-center">
-            <ActorCircularPortrait actor={actor} />
+            <ActorCircularPortrait actor={actor} accentColor={selected.brand.accentColor || '#B8860B'} />
             <h3 className="mt-3 font-heading text-sm text-[#1A3D2F] group-hover:text-[#841818] leading-snug">{actor.name}</h3>
             <p className="mt-1 text-xs text-[#736B63] font-body">{actor.movieCount} {actor.movieCount === 1 ? 'movie' : 'movies'}</p>
           </a></article>;
