@@ -1,7 +1,7 @@
 const DEFAULT_PUBLIC_IMAGE_BASE_URL = 'https://images.xmasdb.com';
 const MANAGED_IMAGE_PATH = /^\/images\/(?:posters|backdrops|people|optimized\/posters|optimized\/people)\//;
 
-function configuredPublicImageBaseUrl(): string {
+export function configuredPublicImageBaseUrl(): string {
   const serverBaseUrl = typeof process !== 'undefined' ? process.env?.R2_PUBLIC_BASE_URL : undefined;
   return (serverBaseUrl || DEFAULT_PUBLIC_IMAGE_BASE_URL).replace(/\/$/, '');
 }

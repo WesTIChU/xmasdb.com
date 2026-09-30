@@ -1,12 +1,15 @@
 import 'dotenv/config';
 import fs from 'node:fs/promises';
 import path from 'node:path';
+import { pathToFileURL } from 'node:url';
 import { MOVIES } from '../src/data/movies';
 import { Actor, CastMember, CrewMember, Movie, ReleaseDateInfo, Trailer } from '../src/types';
 import { fetchTmdbMovie, fetchTmdbPerson } from '../src/utils/tmdb';
 import { reconcileMovieLifecycle } from '../src/utils/catalogue-lifecycle';
 import { writeFileAtomically } from '../src/utils/atomic-file';
 import { ingestManagedImage } from '../src/server/managed-images';
+import { convertImageToWebp } from '../src/server/image-processing';
+import { isManagedCanonicalPath } from '../src/server/r2-storage';
 
 const SOURCE_URL = 'https://xmasdb.com/movies.json';
 const SOURCE_ORIGIN = 'https://xmasdb.com';
@@ -93,16 +96,17 @@ function sourceImdbId(movie: SourceMovie): string | undefined {
   return movie.imdbId || movie.imdb_id || undefined;
 }
 
-function localAssetPath(relativePath: string, kind: 'posters' | 'backdrops' | 'people', id: number): string {
+export function localAssetPath(relativePath: string, kind: 'posters' | 'backdrops' | 'people', id: number): string {
+  if (kind === 'people') return `/images/people/${id}.webp`;
   const extension = path.extname(relativePath) || '.webp';
   return `/images/${kind}/${id}${extension}`;
 }
 
-async function cacheImage(source: string | null | undefined, destination: string): Promise<boolean> {
+async function cacheImage(source: string | null | undefined, destination: string, convertToWebp = false): Promise<boolean> {
   if (!source) return false;
   try {
     const url = source.startsWith('http') ? source : `${SOURCE_ORIGIN}${source.startsWith('/') ? '' : '/'}${source}`;
-    await ingestManagedImage(url, destination);
+    await ingestManagedImage(url, destination, convertToWebp ? { processImage: convertImageToWebp } : undefined);
     report.images++;
     return true;
   } catch (error) {
@@ -164,7 +168,7 @@ async function normalizeMovie(source: SourceMovie, existing?: Movie): Promise<Mo
   for (const member of source.cast || []) {
     if (member.id && member.profile_path) {
       const profilePath = localAssetPath(member.profile_path, 'people', member.id);
-      if (await cacheImage(member.profile_path, profilePath)) cachedCastProfiles.set(member.id, profilePath);
+       if (await cacheImage(member.profile_path, profilePath, true)) cachedCastProfiles.set(member.id, profilePath);
     }
   }
   const sourceCast = (source.cast || []).map((member) => normalizeCastMember(member, member.id ? cachedCastProfiles.get(member.id) : undefined)).filter((member): member is CastMember => Boolean(member));
@@ -205,9 +209,10 @@ async function normalizeMovie(source: SourceMovie, existing?: Movie): Promise<Mo
 }
 
 function applyTmdbMovieRefresh(movie: Movie, refreshed: Partial<Movie>): Movie {
+  const { posterUrl: _posterUrl, backdropUrl: _backdropUrl, ...safeRefreshed } = refreshed;
   return {
     ...movie,
-    ...refreshed,
+    ...safeRefreshed,
     brandId: 'hallmark',
     status: movie.status,
     isComingSoon: movie.isComingSoon,
@@ -247,10 +252,10 @@ async function importCatalogue() {
         const refreshed = await fetchTmdbMovie(tmdbId, process.env.TMDB_API_KEY);
         if (refreshed) {
           movie = reconcileMovieLifecycle(applyTmdbMovieRefresh(movie, refreshed));
-          if (refreshed.posterUrl) {
-            const cached = localAssetPath(rawMovie.poster || '', 'posters', tmdbId);
-            if (await cacheImage(refreshed.posterUrl, cached)) movie.posterUrl = cached;
-          }
+           if (refreshed.posterUrl) {
+             const cached = localAssetPath(rawMovie.poster || '', 'posters', tmdbId);
+             if (await cacheImage(refreshed.posterUrl, cached)) movie.posterUrl = cached;
+           }
           if (refreshed.backdropUrl) {
             const cached = localAssetPath(rawMovie.backdrop || '', 'backdrops', tmdbId);
             if (await cacheImage(refreshed.backdropUrl, cached)) movie.backdropUrl = cached;
@@ -285,16 +290,16 @@ async function importCatalogue() {
         slug: existing?.slug || cast.slug,
         name: existing?.name || cast.name,
         tmdbPersonId: cast.tmdbPersonId,
-        photoUrl: existing?.photoUrl || cast.profileUrl,
-        profileUrl: existing?.profileUrl || cast.profileUrl,
+         photoUrl: isManagedCanonicalPath(existing?.photoUrl) ? existing?.photoUrl : cast.profileUrl,
+         profileUrl: isManagedCanonicalPath(existing?.profileUrl) ? existing?.profileUrl : cast.profileUrl,
         birthday: existing?.birthday || cast.birthday,
         deathday: existing?.deathday || cast.deathday,
       };
       if (process.env.TMDB_API_KEY) {
         const refreshed = await fetchTmdbPerson(cast.tmdbPersonId, process.env.TMDB_API_KEY);
         if (refreshed) {
-          const profile = refreshed.profileUrl ? localAssetPath(refreshed.profileUrl, 'people', cast.tmdbPersonId) : undefined;
-          if (refreshed.profileUrl && profile) await cacheImage(refreshed.profileUrl, profile);
+           const profilePath = refreshed.profileUrl ? localAssetPath(refreshed.profileUrl, 'people', cast.tmdbPersonId) : undefined;
+           const profile = refreshed.profileUrl && profilePath && await cacheImage(refreshed.profileUrl, profilePath, true) ? profilePath : undefined;
            const fetchedAt = new Date().toISOString();
            actor = { ...actor, ...refreshed, photoUrl: profile || actor.photoUrl, profileUrl: profile || actor.profileUrl, id: actor.id, slug: actor.slug, tmdbPersonId: cast.tmdbPersonId, tmdbFetchedAt: fetchedAt, tmdbUpdatedAt: fetchedAt };
         } else {
@@ -328,7 +333,9 @@ function statusIsComingSoon(status?: string): boolean {
   return status?.toLowerCase() === 'coming-soon';
 }
 
-importCatalogue().catch((error) => {
-  console.error(`[XmasDB Import] Fatal: ${error instanceof Error ? error.message : String(error)}`);
-  process.exitCode = 1;
-});
+if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
+  importCatalogue().catch((error) => {
+    console.error(`[XmasDB Import] Fatal: ${error instanceof Error ? error.message : String(error)}`);
+    process.exitCode = 1;
+  });
+}

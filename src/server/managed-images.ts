@@ -29,6 +29,7 @@ export interface ManagedImageIngestionOptions extends LocalImageCacheOptions {
   publicRoot?: string;
   storage?: Pick<R2Storage, 'ensureUploadedAndVerified'>;
   cacheImage?: typeof cacheLocalImage;
+  processImage?: (absolutePath: string) => Promise<void>;
 }
 
 /** Downloads/caches, publishes, and verifies a managed image before returning its canonical path. */
@@ -40,7 +41,9 @@ export async function ingestManagedImage(remoteUrl: string | undefined, canonica
   const localPath = await cacheImage(remoteUrl, canonicalPath, options);
   if (!localPath) throw new ManagedImageIngestionError('Local image processing/cache failed.', canonicalPath);
   try {
-    const bytes = await fs.readFile(path.join(publicRoot, localPath.replace(/^\//, '')));
+    const absolutePath = path.join(publicRoot, localPath.replace(/^\//, ''));
+    await options.processImage?.(absolutePath);
+    const bytes = await fs.readFile(absolutePath);
     await (options.storage || createR2Storage()).ensureUploadedAndVerified(objectKey, bytes, contentTypeForImagePath(localPath));
     return localPath;
   } catch (error) {

@@ -34,6 +34,11 @@ export function isActorEnriched(actor: Pick<Actor, 'tmdbFetchedAt'> | undefined,
   return isTmdbFresh(actor?.tmdbFetchedAt, now);
 }
 
+/** Only verified managed images may become canonical person artwork. */
+export function resolveManagedPersonImage(published: string | undefined, existing: string | undefined): string | undefined {
+  return published || (isManagedCanonicalPath(existing) ? existing : undefined);
+}
+
 async function readActors(): Promise<Map<number, Actor>> {
   try {
     const actors = JSON.parse(await fs.readFile(actorsPath, 'utf8')) as Actor[];
@@ -141,8 +146,8 @@ export async function enrichCataloguePeople(
           slug: existing?.slug || person.slug,
           name: fetched.name || existing?.name || person.name,
           tmdbPersonId,
-           photoUrl: profileUrl || existing?.photoUrl || (isManagedCanonicalPath(person.profileUrl) ? undefined : person.profileUrl),
-           profileUrl: profileUrl || existing?.profileUrl || (isManagedCanonicalPath(person.profileUrl) ? undefined : person.profileUrl),
+           photoUrl: resolveManagedPersonImage(profileUrl, existing?.photoUrl),
+           profileUrl: resolveManagedPersonImage(profileUrl, existing?.profileUrl),
           birthday: fetched.birthday ?? existing?.birthday,
           deathday: fetched.deathday ?? existing?.deathday,
           placeOfBirth: fetched.placeOfBirth ?? existing?.placeOfBirth,

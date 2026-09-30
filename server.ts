@@ -45,6 +45,7 @@ import { getTmdbRefreshHealth } from './src/server/tmdb-refresh-health';
 import { getSecurityHeaders } from './src/server/security-headers';
 import { PUBLIC_API_ENABLED } from './src/server/public-api-config';
 import { registerPublicApiRoutes } from './src/server/public-api-routes';
+import { registerLegacyImageRedirects } from './src/server/legacy-image-redirect';
 
 function isKnownPagePath(rawPath: string): boolean {
   const clean = rawPath.replace(/^\/+|\/+$/g, '');
@@ -201,6 +202,9 @@ async function startServer() {
   // Compress text-like responses (HTML, CSS, JS, JSON, XML, SVG) with gzip.
   // Images (JPEG/PNG/WebP) are already compressed and left untouched.
   app.use(compression());
+
+  // Preserve historical managed artwork URLs even when the old local files are absent.
+  registerLegacyImageRedirects(app);
 
   app.use('/api/v1', (_req, res, next) => {
     if (!PUBLIC_API_ENABLED) return res.sendStatus(404);

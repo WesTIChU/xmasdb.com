@@ -3,8 +3,7 @@ import { fetchTmdbPerson } from '../utils/tmdb';
 import { getTmdbPersonIdForSlug } from '../data/actors';
 import { getCreativeCrew, getPersonSlug } from '../utils/creative-crew';
 import { ingestManagedImage } from './managed-images';
-import { isManagedCanonicalPath } from './r2-storage';
-import { isActorEnriched } from '../utils/person-enrichment';
+import { isActorEnriched, resolveManagedPersonImage } from '../utils/person-enrichment';
 
 interface PersonSeed {
   tmdbPersonId: number;
@@ -46,6 +45,7 @@ export async function enrichNewCatalogueActors(
   movies: Movie[],
   existingActors: Actor[],
   apiKey: string,
+  imageIngestor: typeof ingestManagedImage = ingestManagedImage,
 ): Promise<Actor[]> {
   const actorsById = new Map(existingActors.map((actor) => [actor.tmdbPersonId, actor]));
   const people = getNewPeople(movies, actorsById);
@@ -62,7 +62,7 @@ export async function enrichNewCatalogueActors(
         let profileUrl: string | undefined;
         if (fetched.profileUrl) {
           try {
-            profileUrl = await ingestManagedImage(fetched.profileUrl, `/images/people/${person.tmdbPersonId}.webp`);
+            profileUrl = await imageIngestor(fetched.profileUrl, `/images/people/${person.tmdbPersonId}.webp`);
           } catch (error) {
             console.error(`[Actor Enrichment] Image ingestion failed for ${person.tmdbPersonId}: ${error instanceof Error ? error.message : String(error)}`);
           }
@@ -73,8 +73,8 @@ export async function enrichNewCatalogueActors(
           slug: existing?.slug || person.slug,
           name: fetched.name || existing?.name || person.name,
           tmdbPersonId: person.tmdbPersonId,
-          photoUrl: profileUrl || existing?.photoUrl || (isManagedCanonicalPath(person.profileUrl) ? undefined : person.profileUrl),
-          profileUrl: profileUrl || existing?.profileUrl || (isManagedCanonicalPath(person.profileUrl) ? undefined : person.profileUrl),
+           photoUrl: resolveManagedPersonImage(profileUrl, existing?.photoUrl),
+           profileUrl: resolveManagedPersonImage(profileUrl, existing?.profileUrl),
           birthday: fetched.birthday ?? existing?.birthday,
           deathday: fetched.deathday ?? existing?.deathday,
           placeOfBirth: fetched.placeOfBirth ?? existing?.placeOfBirth,

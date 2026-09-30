@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import type { Actor, Movie } from '../src/types';
 import { enrichNewCatalogueActors, getNewPeople } from '../src/server/actor-import';
-import { findIncompleteCataloguePeople, isActorEnriched } from '../src/utils/person-enrichment';
+import { findIncompleteCataloguePeople, isActorEnriched, resolveManagedPersonImage } from '../src/utils/person-enrichment';
 
 function movie(id: string, people: Array<{ id: number; name: string }>): Movie {
   return {
@@ -60,7 +60,8 @@ globalThis.fetch = (async (input) => {
     gender: 2,
     known_for_department: 'Acting',
     external_ids: { imdb_id: `nm${id}` },
-    combined_credits: { cast: [{ id: id * 10 }], crew: [{ id: id * 10 + 1 }] },
+   combined_credits: { cast: [{ id: id * 10 }], crew: [{ id: id * 10 + 1 }] },
+     ...(id >= 200 && id <= 202 ? { profile_path: '/profile.jpg' } : {}),
   }), { status: 200 });
 }) as typeof fetch;
 
@@ -76,6 +77,9 @@ try {
   assert.equal(isActorEnriched(complete), true);
   assert.equal(isActorEnriched(incomplete), false);
   assert.equal(isActorEnriched(actor(9999999, 'Old Person', 'old')), false, 'old actors require refresh');
+  assert.equal(resolveManagedPersonImage(undefined, '/images/people/300.webp'), '/images/people/300.webp');
+  assert.equal(resolveManagedPersonImage(undefined, 'https://image.tmdb.org/t/p/w500/300.jpg'), undefined);
+  assert.equal(resolveManagedPersonImage('/images/people/301.webp', 'https://image.tmdb.org/t/p/w500/301.jpg'), '/images/people/301.webp');
 
   failures.add(103);
   const firstBatch = await enrichNewCatalogueActors(movies, [complete, incomplete], 'tmdb-key');
@@ -99,6 +103,21 @@ try {
   assert.equal(requests.get(9999999), 1, 'old actor is refreshed');
   assert.ok(refreshedPeople.find((candidate) => candidate.tmdbPersonId === 9999999)?.tmdbFetchedAt, 'successful actor refresh records fetched timestamp');
   assert.ok(oldActor.tmdbFetchedAt, 'old actor fixture has a prior fetch timestamp');
+
+  const managedExisting = actor(200, 'Managed Existing');
+  managedExisting.photoUrl = '/images/people/200.webp';
+  managedExisting.profileUrl = '/images/people/200.webp';
+  const failureIngestor = async () => { throw new Error('R2 unavailable'); };
+  const preserved = await enrichNewCatalogueActors([movie('movie-5', [{ id: 200, name: 'Managed Existing' }])], [managedExisting], 'tmdb-key', failureIngestor);
+  assert.equal(preserved.find((candidate) => candidate.tmdbPersonId === 200)?.profileUrl, '/images/people/200.webp');
+
+  const newPerson = await enrichNewCatalogueActors([movie('movie-6', [{ id: 201, name: 'New Person' }])], [], 'tmdb-key', failureIngestor);
+  const failedNewPerson = newPerson.find((candidate) => candidate.tmdbPersonId === 201);
+  assert.equal(failedNewPerson?.profileUrl, undefined, 'new person with failed publication must not retain a TMDB URL');
+  assert.equal(failedNewPerson?.photoUrl, undefined, 'new person with failed publication must not retain a TMDB URL');
+
+  const published = await enrichNewCatalogueActors([movie('movie-7', [{ id: 202, name: 'Published Person' }])], [], 'tmdb-key', async (_source, destination) => destination);
+  assert.equal(published.find((candidate) => candidate.tmdbPersonId === 202)?.profileUrl, '/images/people/202.webp');
 } finally {
   globalThis.fetch = originalFetch;
 }
