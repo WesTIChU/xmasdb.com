@@ -15,7 +15,7 @@ const routes = [
   { path: '/uptv/', text: 'UPtv Christmas Movies' },
   { path: '/hallmark/2025/', text: 'Hallmark Christmas Movies' },
   { path: '/uptv/2017/', text: 'UPtv Christmas Movies' },
-  { path: '/feeds/', text: 'RADARR TIP: USE TAGS' },
+  { path: '/feeds/', text: 'CHRISTMAS MOVIE JSON FEEDS' },
   { path: '/about/', text: 'Why XmasDB Exists' },
   { path: '/privacy/', text: 'PRIVACY & AI' },
   { path: '/contact/', text: 'CONTACT XMASDB' },
