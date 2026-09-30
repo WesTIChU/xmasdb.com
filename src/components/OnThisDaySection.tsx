@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
-import type { ListingMovie, ThisWeekPayload } from '../api/types';
+import type { ListingMovie, OnThisDayPayload } from '../api/types';
 import { getMoviePath } from '../utils/urls';
 import { getBrandById } from '../data/brands';
 import { getMoviePoster } from '../utils/posters';
 import { ComingSoonPoster } from './ComingSoonPoster';
-import { NavigationLink } from './NavigationLink';
+import { HollyDivider } from './HollyDivider';
 
-interface ThisWeekSectionProps {
-  payload: ThisWeekPayload;
+interface OnThisDaySectionProps {
+  payload: OnThisDayPayload;
   onNavigate: (path: string) => void;
 }
 
@@ -46,19 +46,17 @@ const CompactMovie: React.FC<{ movie: ListingMovie; onNavigate: (path: string) =
   );
 };
 
-export const ThisWeekSection: React.FC<ThisWeekSectionProps> = ({ payload, onNavigate }) => (
-  <section className="border-b border-[#E7DFD5] py-5 sm:py-6" aria-labelledby="this-week-heading">
+export const OnThisDaySection: React.FC<OnThisDaySectionProps> = ({ payload, onNavigate }) => (
+  <section className="py-5 sm:py-6" aria-labelledby="on-this-day-heading">
     <div className="mb-3 flex items-end justify-between gap-4">
       <div>
-        <h2 id="this-week-heading" className="font-heading text-xl sm:text-2xl font-semibold text-[#1A3D2F]">THIS WEEK</h2>
-        <p className="mt-1 font-body text-xs text-[#736B63]">{payload.weekLabel} · Christmas movies that premiered this week in years gone by</p>
+        <h2 id="on-this-day-heading" className="font-heading text-xl sm:text-2xl font-semibold text-[#1A3D2F]">ON THIS DAY</h2>
+        <p className="mt-1 font-body text-xs text-[#736B63]">Christmas movies that premiered on {payload.dateLabel} through the years</p>
       </div>
-      {payload.total > payload.movies.length && (
-        <NavigationLink href={payload.path} onNavigate={onNavigate} className="shrink-0 text-xs font-sans-clean font-medium text-[#1A3D2F] hover:text-[#143626]">View all this week <span className="xmas-nav-arrow">→</span></NavigationLink>
-      )}
     </div>
     <div className="flex gap-2 overflow-x-auto pb-1 no-scrollbar sm:overflow-visible sm:gap-3">
       {payload.movies.map((movie) => <CompactMovie key={movie.id} movie={movie} onNavigate={onNavigate} />)}
     </div>
+    <HollyDivider className="mt-4 -mb-4 sm:mt-5 sm:-mb-5" lineClassName="w-6 sm:w-8" ornamentClassName="h-4 w-12 sm:h-5 sm:w-14" />
   </section>
 );

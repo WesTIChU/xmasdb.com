@@ -40,7 +40,6 @@ export function isDateKeyInCalendarWeek(dateKey: string, week: CalendarWeekDateK
     : monthDay >= startMonthDay || monthDay <= endMonthDay;
 }
 
-
 export function getMoviePremiereDateKey(movie: MovieLifecycleFields): string | null {
   if (movie.status?.toLowerCase() === 'coming-soon' && !movie.premiereDate) return null;
   const value = movie.premiereDate || movie.releaseDate;

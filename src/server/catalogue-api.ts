@@ -15,7 +15,7 @@ import {
 } from '../data/actors';
 import { getBrandBySlug, getPopulatedBrands } from '../data/brands';
 import { getCataloguePage, type CatalogueQuery } from '../utils/catalogue-pagination';
-import { getCalendarWeekDateKeys, getMoviePremiereDateKey, isDateKeyInCalendarWeek, isFutureComingSoonMovie, isMoviePremierePast, sortMoviesByLifecycle } from '../utils/catalogue-lifecycle';
+import { getMoviePremiereDateKey, isFutureComingSoonMovie, isMoviePremierePast, sortMoviesByLifecycle } from '../utils/catalogue-lifecycle';
 import { getActorBackdrop } from '../utils/backdrops';
 import { buildRadarrFeed, isMovieEligibleForRadarr } from '../utils/feeds';
 import type {
@@ -27,7 +27,7 @@ import type {
   CatalogueMeta,
   FeedsMetaPayload,
   HomePayload,
-  ThisWeekPayload,
+  OnThisDayPayload,
   ListingMovie,
   MetaBrand,
   MovieDetailPayload,
@@ -42,7 +42,6 @@ import { scoreActorSearchResult, scoreMovieSearchFields } from '../utils/search-
 import { getCreativeCrew, getPersonSlug, isCreativeCrewJob } from '../utils/creative-crew';
 import { getFingerprintById } from '../data/fingerprints';
 import { getMovieFingerprints, getRelatedMovieFingerprints, movieHasFingerprint } from '../data/movie-fingerprints';
-import { getThisWeekPath } from '../utils/urls';
 
 const FAVOURITE_MOVIE_TITLES = [
   'Christmas by Starlight',
@@ -496,37 +495,24 @@ export function selectDiscoverMovies(
   return selected.slice(0, 6);
 }
 
-export function selectThisWeekMovies(movies: Movie[], now: Date = new Date()): ThisWeekPayload | null {
-  const week = getCalendarWeekDateKeys(now);
+export function selectOnThisDayMovies(movies: Movie[], now: Date = new Date()): OnThisDayPayload | null {
+  const monthDay = `${String(now.getUTCMonth() + 1).padStart(2, '0')}-${String(now.getUTCDate()).padStart(2, '0')}`;
   const matching = movies
     .filter((movie) => {
       const dateKey = getMoviePremiereDateKey(movie);
       return movie.status?.toLowerCase() === 'collection'
         && dateKey !== null
-        && isMoviePremierePast(movie, now)
-        && isDateKeyInCalendarWeek(dateKey, week);
+        && dateKey.slice(5) === monthDay;
     })
     .sort((left, right) => {
       const leftDate = getMoviePremiereDateKey(left) || '';
       const rightDate = getMoviePremiereDateKey(right) || '';
-      return rightDate.localeCompare(leftDate) || left.title.localeCompare(right.title);
+      return Number(rightDate.slice(0, 4)) - Number(leftDate.slice(0, 4)) || left.title.localeCompare(right.title);
     });
   if (matching.length === 0) return null;
-  const formatParts = (dateKey: string) => {
-    const date = new Date(`${dateKey}T12:00:00Z`);
-    return {
-      day: new Intl.DateTimeFormat('en-GB', { day: 'numeric', timeZone: 'UTC' }).format(date),
-      month: new Intl.DateTimeFormat('en-GB', { month: 'long', timeZone: 'UTC' }).format(date),
-    };
-  };
-  const startParts = formatParts(week.startDateKey);
-  const endParts = formatParts(week.endDateKey);
-  const weekLabel = startParts.month === endParts.month
-    ? `${startParts.day}–${endParts.day} ${endParts.month}`
-    : `${startParts.day} ${startParts.month}–${endParts.day} ${endParts.month}`;
+  const dateLabel = new Intl.DateTimeFormat('en-US', { month: 'long', day: 'numeric', timeZone: 'UTC' }).format(now);
   return {
-    weekLabel,
-    path: getThisWeekPath(week.startDateKey, week.endDateKey),
+    dateLabel,
     total: matching.length,
     movies: matching.slice(0, 4).map(toListingMovie),
   };
@@ -551,7 +537,7 @@ export function buildHomePayload(now: Date = new Date()): HomePayload {
   const comingSoonIds = new Set(comingSoon.map((movie) => movie.id));
   const discovery = selectDiscoverMovies(MOVIES, now, comingSoonIds)
     .map(toListingMovie);
-  const thisWeek = selectThisWeekMovies(MOVIES, now);
+  const onThisDay = selectOnThisDayMovies(MOVIES, now);
 
   const archiveYears = getAllYearsForBrand()
     .slice(0, 6)
@@ -576,7 +562,7 @@ export function buildHomePayload(now: Date = new Date()): HomePayload {
     totalMovies: MOVIES.length,
     comingSoon,
     discovery,
-    thisWeek,
+    onThisDay,
     popularActors,
     archiveYears,
   };
