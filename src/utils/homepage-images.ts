@@ -28,6 +28,11 @@ const optimizedHomepageActorIds = new Set([
   '33669',
 ]);
 
+export function getHomepageManifestIds(currentIds: Iterable<string>, previouslyPublishedIds: Set<string>, publishR2: boolean): string[] {
+  const ids = [...currentIds];
+  return (publishR2 ? ids : ids.filter((id) => previouslyPublishedIds.has(id))).sort((left, right) => Number(left) - Number(right));
+}
+
 export function getHomepagePosterSrcSet(url: string): string | undefined {
   const match = url.match(/^\/images\/posters\/(\d+)(?:-[^/]+)?\.jpg$/);
   if (!match || !homepagePosterIds.has(match[1])) return undefined;

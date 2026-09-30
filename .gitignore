@@ -11,3 +11,11 @@ data/*.json
 data/.*.tmp
 AGENTS.md
 AGENTS.md
+
+# Managed image cache; authoritative copies are published to R2.
+public/images/posters/
+public/images/backdrops/
+public/images/people/
+public/images/optimized/posters/
+public/images/optimized/people/
+public/images/.cache-manifest.json

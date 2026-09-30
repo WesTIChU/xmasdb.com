@@ -45,7 +45,13 @@ export interface ImageInventory {
 }
 
 async function walk(directory: string): Promise<string[]> {
-  const entries = await fs.readdir(directory, { withFileTypes: true });
+  let entries;
+  try {
+    entries = await fs.readdir(directory, { withFileTypes: true });
+  } catch (error) {
+    if (error instanceof Error && 'code' in error && error.code === 'ENOENT') return [];
+    throw error;
+  }
   const files: string[] = [];
   for (const entry of entries) {
     const fullPath = path.join(directory, entry.name);

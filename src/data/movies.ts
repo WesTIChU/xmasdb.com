@@ -206291,7 +206291,7 @@ export const MOVIES: Movie[] = [
         "character": "Leigh",
         "slug": "jessie-james-decker",
         "tmdbPersonId": 1883215,
-        "profileUrl": "/images/people/1883215.webp",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/3lNdVdjs0IwYPxbIAdNhNvowDJZ.jpg",
         "order": 2,
         "birthday": "1988-04-12"
       },
@@ -206320,7 +206320,7 @@ export const MOVIES: Movie[] = [
         "character": "Isaac",
         "slug": "daniel-considine",
         "tmdbPersonId": 3739138,
-        "profileUrl": "/images/people/3739138.webp",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/e4NXRhKSvs9bDBZt0X62xTK19XH.jpg",
         "order": 5
       },
       {
@@ -206329,7 +206329,7 @@ export const MOVIES: Movie[] = [
         "character": "Hudson Rogers",
         "slug": "austin-robert-russell",
         "tmdbPersonId": 2129919,
-        "profileUrl": "/images/people/2129919.webp",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/jXCtqyjoSG6piyAYDfhJ9vgMNUJ.jpg",
         "order": 6
       },
       {
