@@ -26,9 +26,10 @@ assert.deepEqual(getHomepageManifestIds(['1772765', '1773006'], new Set(['177276
 for (const tmdbPersonId of [1883215, 2129919, 3739138]) {
   const castReferences = MOVIES.flatMap((movie) => movie.cast.filter((cast) => cast.tmdbPersonId === tmdbPersonId));
   assert.ok(castReferences.length > 0);
-  assert.ok(castReferences.every((cast) => !cast.profileUrl?.startsWith('/images/people/')), `stale managed path removed for ${tmdbPersonId}`);
+  assert.ok(castReferences.every((cast) => cast.profileUrl === `/images/people/${tmdbPersonId}.webp`), `managed cast path published for ${tmdbPersonId}`);
   const actor = getAllActors().find((entry) => entry.tmdbPersonId === tmdbPersonId);
   assert.ok(actor);
-  assert.ok(!actor.photoUrl?.startsWith('/images/people/') && !actor.profileUrl?.startsWith('/images/people/'), `stale actor path removed for ${tmdbPersonId}`);
+  assert.equal(actor.photoUrl, `/images/people/${tmdbPersonId}.webp`);
+  assert.equal(actor.profileUrl, `/images/people/${tmdbPersonId}.webp`);
 }
 console.log('Central image URL resolver tests passed.');

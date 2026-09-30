@@ -27,6 +27,7 @@
     "images:r2:dry-run": "tsx scripts/r2-images.ts upload --dry-run",
     "images:r2:upload": "tsx scripts/r2-images.ts upload",
     "images:r2:verify": "tsx scripts/r2-images.ts verify",
+    "images:migrate-legacy-tmdb": "tsx scripts/migrate-legacy-tmdb-images.ts",
     "images:r2:publish-homepage": "tsx scripts/generate-homepage-posters.ts --publish-r2",
     "generate:homepage-posters": "tsx scripts/generate-homepage-posters.ts",
     "reconcile:lifecycle": "tsx scripts/reconcile-lifecycle.ts",
