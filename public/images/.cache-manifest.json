@@ -18700,5 +18700,13 @@
   "/images/backdrops/1772765.jpg": {
     "remoteUrl": "https://image.tmdb.org/t/p/w1280/9IsM1rcuzxf7SlGB4JqVqoweYq6.jpg",
     "fetchedAt": "2026-09-30T12:50:19.429Z"
+  },
+  "/images/posters/1652348.jpg": {
+    "remoteUrl": "https://image.tmdb.org/t/p/w500/mRFlLiRFAJnvIQgFTdSVvnc4Hja.jpg",
+    "fetchedAt": "2026-09-30T22:26:14.296Z"
+  },
+  "/images/posters/1701085.jpg": {
+    "remoteUrl": "https://image.tmdb.org/t/p/w500/9wwDKjX5WKdWItEoVWRtSnGl8kq.jpg",
+    "fetchedAt": "2026-09-30T22:26:14.695Z"
   }
 }
