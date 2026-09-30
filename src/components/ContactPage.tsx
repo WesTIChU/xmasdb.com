@@ -69,7 +69,14 @@ export const ContactPage: React.FC = () => {
           <p className="border-b border-[#E7DFD5] py-8 font-body text-lg text-[#1A3D2F]" role="status">Thanks. Your message has been sent.</p>
         ) : (
           <>
-            <div className="mt-6 flex w-full gap-3 rounded border border-[#E7DFD5] bg-[#F4F0E8] px-4 py-3">
+            <div className="relative mt-6 flex w-full gap-3 rounded border border-[#D8C8A4] bg-[#F4F0E8] px-4 py-3">
+              <svg className="pointer-events-none absolute -top-2 left-3 h-5 w-14 bg-[#F4F0E8] px-1" viewBox="0 0 56 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M2 14C10 12 13 7 19 5M54 14C46 12 43 7 37 5" stroke="#1A3D2F" strokeWidth="1.2" strokeLinecap="round" />
+                <path d="M11 11C14 9 17 9 20 10M45 11C42 9 39 9 36 10M15 8C17 6 19 5 22 5M41 8C39 6 37 5 34 5" stroke="#1A3D2F" strokeWidth="1" strokeLinecap="round" />
+                <circle cx="25" cy="10" r="2" fill="#841818" />
+                <circle cx="31" cy="10" r="2" fill="#841818" />
+                <path d="M27.8 3L28.5 5.1L30.7 5.1L28.9 6.4L29.6 8.5L27.8 7.2L26 8.5L26.7 6.4L24.9 5.1L27.1 5.1L27.8 3Z" fill="#B8860B" />
+              </svg>
               <ShieldCheck aria-hidden="true" className="mt-0.5 h-4 w-4 shrink-0 text-[#1A3D2F]" strokeWidth={1.7} />
               <div>
                 <h2 className="text-sm font-semibold text-[#1A3D2F]">Privacy</h2>
@@ -80,19 +87,21 @@ export const ContactPage: React.FC = () => {
             <form className="space-y-6 pt-6" onSubmit={handleSubmit} action={CONTACT_URL} noValidate>
             {error && <p className="border-l-2 border-[#841818] bg-[#F7F2EB] px-4 py-3 text-sm text-[#841818]" role="alert">{error}</p>}
 
-            <div>
-              <label htmlFor="contact-type" className="mb-2 block text-sm font-semibold text-[#1A3D2F]">Submission type</label>
-              <select id="contact-type" name="type" required value={values.type} onChange={(event) => updateValue('type', event.target.value)} className="w-full rounded border border-[#DCD3C7] bg-[#FFFDF9] px-3 py-2.5 text-[#23211E] outline-none focus:border-[#1A3D2F] focus:ring-2 focus:ring-[#1A3D2F]/20">
-                <option value="">Choose one</option>
-                <option value="missing-movie">Missing movie</option>
-                <option value="correction">Error or correction</option>
-                <option value="other">Other</option>
-              </select>
-            </div>
+            <div className="grid gap-6 sm:grid-cols-2">
+              <div>
+                <label htmlFor="contact-type" className="mb-2 block text-sm font-semibold text-[#1A3D2F]">Submission type</label>
+                <select id="contact-type" name="type" required value={values.type} onChange={(event) => updateValue('type', event.target.value)} className="w-full rounded border border-[#DCD3C7] bg-[#FFFDF9] px-3 py-2.5 text-[#23211E] outline-none focus:border-[#1A3D2F] focus:ring-2 focus:ring-[#1A3D2F]/20">
+                  <option value="">Choose one</option>
+                  <option value="missing-movie">Missing movie</option>
+                  <option value="correction">Error or correction</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
 
-            <div>
-              <label htmlFor="contact-title" className="mb-2 block text-sm font-semibold text-[#1A3D2F]">Movie / title</label>
-              <input id="contact-title" name="title" type="text" maxLength={200} value={values.title} onChange={(event) => updateValue('title', event.target.value)} className="w-full rounded border border-[#DCD3C7] bg-[#FFFDF9] px-3 py-2.5 text-[#23211E] outline-none focus:border-[#1A3D2F] focus:ring-2 focus:ring-[#1A3D2F]/20" />
+              <div>
+                <label htmlFor="contact-title" className="mb-2 block text-sm font-semibold text-[#1A3D2F]">Movie / title</label>
+                <input id="contact-title" name="title" type="text" maxLength={200} value={values.title} onChange={(event) => updateValue('title', event.target.value)} className="w-full rounded border border-[#DCD3C7] bg-[#FFFDF9] px-3 py-2.5 text-[#23211E] outline-none focus:border-[#1A3D2F] focus:ring-2 focus:ring-[#1A3D2F]/20" />
+              </div>
             </div>
 
             <div>
@@ -100,20 +109,22 @@ export const ContactPage: React.FC = () => {
               <textarea id="contact-message" name="message" required maxLength={3000} rows={7} value={values.message} onChange={(event) => updateValue('message', event.target.value)} className="w-full resize-y rounded border border-[#DCD3C7] bg-[#FFFDF9] px-3 py-2.5 text-[#23211E] outline-none focus:border-[#1A3D2F] focus:ring-2 focus:ring-[#1A3D2F]/20" />
             </div>
 
-            <div>
-              <label htmlFor="contact-name" className="mb-2 block text-sm font-semibold text-[#1A3D2F]">Name <span className="font-normal text-[#736B63]">(optional)</span></label>
-              <input id="contact-name" name="name" type="text" maxLength={100} value={values.name} onChange={(event) => updateValue('name', event.target.value)} className="w-full rounded border border-[#DCD3C7] bg-[#FFFDF9] px-3 py-2.5 text-[#23211E] outline-none focus:border-[#1A3D2F] focus:ring-2 focus:ring-[#1A3D2F]/20" />
-            </div>
+            <div className="grid gap-6 sm:grid-cols-2">
+              <div>
+                <label htmlFor="contact-name" className="mb-2 block text-sm font-semibold text-[#1A3D2F]">Name <span className="font-normal text-[#736B63]">(optional)</span></label>
+                <input id="contact-name" name="name" type="text" maxLength={100} value={values.name} onChange={(event) => updateValue('name', event.target.value)} className="w-full rounded border border-[#DCD3C7] bg-[#FFFDF9] px-3 py-2.5 text-[#23211E] outline-none focus:border-[#1A3D2F] focus:ring-2 focus:ring-[#1A3D2F]/20" />
+              </div>
 
-            <div>
-              <label htmlFor="contact-email" className="mb-2 block text-sm font-semibold text-[#1A3D2F]">Email <span className="font-normal text-[#736B63]">(optional)</span></label>
-              <input id="contact-email" name="email" type="email" maxLength={254} value={values.email} onChange={(event) => updateValue('email', event.target.value)} className="w-full rounded border border-[#DCD3C7] bg-[#FFFDF9] px-3 py-2.5 text-[#23211E] outline-none focus:border-[#1A3D2F] focus:ring-2 focus:ring-[#1A3D2F]/20" />
-              <p className="mt-1.5 text-xs text-[#736B63]">Only needed if you would like a reply.</p>
+              <div>
+                <label htmlFor="contact-email" className="mb-2 block text-sm font-semibold text-[#1A3D2F]">Email <span className="font-normal text-[#736B63]">(optional)</span></label>
+                <input id="contact-email" name="email" type="email" maxLength={254} value={values.email} onChange={(event) => updateValue('email', event.target.value)} className="w-full rounded border border-[#DCD3C7] bg-[#FFFDF9] px-3 py-2.5 text-[#23211E] outline-none focus:border-[#1A3D2F] focus:ring-2 focus:ring-[#1A3D2F]/20" />
+                <p className="mt-1.5 text-xs text-[#736B63]">Only needed if you would like a reply.</p>
+              </div>
             </div>
 
             <div>
               <label htmlFor="contact-spam-check" className="mb-2 block text-sm font-semibold text-[#1A3D2F]">Spam check: How many movies are currently in XmasDB?</label>
-              <input id="contact-spam-check" name="spamCheck" type="text" inputMode="numeric" required value={values.spamCheck} onChange={(event) => updateValue('spamCheck', event.target.value)} className="w-full rounded border border-[#DCD3C7] bg-[#FFFDF9] px-3 py-2.5 text-[#23211E] outline-none focus:border-[#1A3D2F] focus:ring-2 focus:ring-[#1A3D2F]/20" />
+              <input id="contact-spam-check" name="spamCheck" type="text" inputMode="numeric" required value={values.spamCheck} onChange={(event) => updateValue('spamCheck', event.target.value)} className="w-full rounded border border-[#DCD3C7] bg-[#FFFDF9] px-3 py-2.5 text-[#23211E] outline-none focus:border-[#1A3D2F] focus:ring-2 focus:ring-[#1A3D2F]/20 sm:max-w-md" />
               <p className="mt-1.5 text-xs text-[#736B63]">Hint: the answer is at the top of this page.</p>
             </div>
 

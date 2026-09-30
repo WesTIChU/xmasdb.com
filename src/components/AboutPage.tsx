@@ -35,18 +35,27 @@ export const AboutPage: React.FC<AboutPageProps> = ({ payload, onNavigate }) => 
         <h1 id="about-heading" className="text-2xl sm:text-3xl font-heading font-semibold text-[#1A3D2F]">Why XmasDB Exists</h1>
       </div>
 
-      <div className="mt-8 space-y-5 font-body text-base leading-relaxed text-[#4A433B] sm:text-lg">
-        <p className="font-heading text-2xl font-semibold text-[#1A3D2F] sm:text-3xl">Hi, I&apos;m Paul.</p>
-        <p>I&apos;m from Scotland, I&apos;m {age}, and I ain&apos;t gonna lie, I love a wee Christmas movie throughout the year. I&apos;ve never really understood why we&apos;re supposed to save them all for December. Sometimes you just want a ridiculously festive film in the middle of March.</p>
-        <p>XmasDB actually started because of Radarr. I wanted a reliable way to keep track of Hallmark and Lifetime Christmas movies and feed them straight into my collection. I used Trakt for a while, but after changes to their site it just stopped being as reliable as I wanted for my setup.</p>
-        <p>Eventually I thought, sod it. I&apos;ll make my own.</p>
-        <p>It started off as something pretty simple for myself, but, as these things tend to do, it grew arms and legs. Now there are hundreds of movies, thousands of actors, upcoming releases, yearly archives and feeds for Hallmark, Lifetime, Great American Family and UPtv.</p>
-        <p>I still mainly build XmasDB for myself. There&apos;s no big company behind it and I&apos;m not trying to turn it into some massive commercial thing. I just wanted a Christmas movie database and Radarr feed that worked the way I wanted it to work.</p>
-        <p>I used to love web design back in the day. FrontPage, Dreamweaver, spending hours messing around with websites just because I enjoyed building them.</p>
-        <p>These days, with a family and everything else that comes with life, I don&apos;t have the same amount of time to sit and code for hours on end. That&apos;s where AI has been genuinely useful. It&apos;s given me a way to bring the creative ideas in my head to life without needing all that spare time I once had.</p>
-        <p>So yes, AI has helped me build parts of XmasDB, and I&apos;m perfectly happy to say that. The ideas, decisions and countless little changes are still mine. AI has simply given me the tools to turn those ideas into something that actually works.</p>
-        <p>If you&apos;ve stumbled across XmasDB and it helps you find a film, keep your own Christmas collection up to date, or just waste half an hour looking through Christmas movies in July, brilliant.</p>
-        <p>Paul</p>
+      <div className="relative mt-8 rounded border border-[#D8C8A4] bg-[#F4F0E8] px-4 py-4 sm:px-5 sm:py-5">
+        <svg className="pointer-events-none absolute -top-2 left-3 h-5 w-14 bg-[#F4F0E8] px-1" viewBox="0 0 56 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M2 14C10 12 13 7 19 5M54 14C46 12 43 7 37 5" stroke="#1A3D2F" strokeWidth="1.2" strokeLinecap="round" />
+          <path d="M11 11C14 9 17 9 20 10M45 11C42 9 39 9 36 10M15 8C17 6 19 5 22 5M41 8C39 6 37 5 34 5" stroke="#1A3D2F" strokeWidth="1" strokeLinecap="round" />
+          <circle cx="25" cy="10" r="2" fill="#841818" />
+          <circle cx="31" cy="10" r="2" fill="#841818" />
+          <path d="M27.8 3L28.5 5.1L30.7 5.1L28.9 6.4L29.6 8.5L27.8 7.2L26 8.5L26.7 6.4L24.9 5.1L27.1 5.1L27.8 3Z" fill="#B8860B" />
+        </svg>
+        <div className="space-y-5 font-body text-base leading-relaxed text-[#4A433B] sm:text-lg">
+          <p className="font-heading text-2xl font-semibold text-[#1A3D2F] sm:text-3xl">Hi, I&apos;m Paul.</p>
+          <p>I&apos;m from Scotland, I&apos;m {age}, and I ain&apos;t gonna lie, I love a wee Christmas movie throughout the year. I&apos;ve never really understood why we&apos;re supposed to save them all for December. Sometimes you just want a ridiculously festive film in the middle of March.</p>
+          <p>XmasDB actually started because of Radarr. I wanted a reliable way to keep track of Hallmark and Lifetime Christmas movies and feed them straight into my collection. I used Trakt for a while, but after changes to their site it just stopped being as reliable as I wanted for my setup.</p>
+          <p>Eventually I thought, sod it. I&apos;ll make my own.</p>
+          <p>It started off as something pretty simple for myself, but, as these things tend to do, it grew arms and legs. Now there are hundreds of movies, thousands of actors, upcoming releases, yearly archives and feeds for Hallmark, Lifetime, Great American Family and UPtv.</p>
+          <p>I still mainly build XmasDB for myself. There&apos;s no big company behind it and I&apos;m not trying to turn it into some massive commercial thing. I just wanted a Christmas movie database and Radarr feed that worked the way I wanted it to work.</p>
+          <p>I used to love web design back in the day. FrontPage, Dreamweaver, spending hours messing around with websites just because I enjoyed building them.</p>
+          <p>These days, with a family and everything else that comes with life, I don&apos;t have the same amount of time to sit and code for hours on end. That&apos;s where AI has been genuinely useful. It&apos;s given me a way to bring the creative ideas in my head to life without needing all that spare time I once had.</p>
+          <p>So yes, AI has helped me build parts of XmasDB, and I&apos;m perfectly happy to say that. The ideas, decisions and countless little changes are still mine. AI has simply given me the tools to turn those ideas into something that actually works.</p>
+          <p>If you&apos;ve stumbled across XmasDB and it helps you find a film, keep your own Christmas collection up to date, or just waste half an hour looking through Christmas movies in July, brilliant.</p>
+          <p>Paul</p>
+        </div>
       </div>
 
       <section className="mt-12 border-t border-[#E7DFD5] pt-8" aria-labelledby="favourites-heading">
@@ -56,7 +65,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ payload, onNavigate }) => 
           I couldn&apos;t have a Christmas movie site without mentioning a few of my own favourites. There are a handful of Christmas movies I can happily go back to again and again.
         </p>
 
-        <div className="mt-7 grid grid-cols-2 gap-x-3 gap-y-6 sm:grid-cols-3 sm:gap-x-4" aria-label="Paul's favourite Christmas movies">
+        <div className="mt-7 grid grid-cols-2 gap-x-3 gap-y-6 sm:grid-cols-3 sm:gap-x-4 lg:grid-cols-4" aria-label="Paul's favourite Christmas movies">
           {payload.favouriteMovies.map((movie) => (
             <MovieCard key={movie.id} movie={movie} onSelectMovie={(slug, tmdbId) => onNavigate(getMoviePath(tmdbId || movie.tmdbId, slug))} />
           ))}

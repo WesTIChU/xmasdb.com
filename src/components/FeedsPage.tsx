@@ -336,11 +336,17 @@ export const FeedsPage: React.FC<{ meta: FeedsMetaPayload }> = ({ meta }) => {
           <p className="mx-auto mt-1 max-w-xl font-body text-sm leading-relaxed text-[#59524A]">
             Hallmark · Lifetime · Great American Family · UPtv
           </p>
-          <HollyDivider className="my-5 sm:my-6" lineClassName="w-6 sm:w-8" ornamentClassName="h-4 w-12 sm:h-5 sm:w-14" />
         </div>
       </header>
 
-      <section id="feeds-setup" className="scroll-mt-6 pt-1 sm:scroll-mt-8" aria-labelledby="radarr-setup-heading">
+      <section id="feeds-setup" className="relative scroll-mt-6 rounded border border-[#D8C8A4] bg-[#F4F0E8] px-4 py-4 sm:scroll-mt-8 sm:px-5 sm:py-5" aria-labelledby="radarr-setup-heading">
+        <svg className="pointer-events-none absolute -top-2 left-3 h-5 w-14 bg-[#F4F0E8] px-1" viewBox="0 0 56 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M2 14C10 12 13 7 19 5M54 14C46 12 43 7 37 5" stroke="#1A3D2F" strokeWidth="1.2" strokeLinecap="round" />
+          <path d="M11 11C14 9 17 9 20 10M45 11C42 9 39 9 36 10M15 8C17 6 19 5 22 5M41 8C39 6 37 5 34 5" stroke="#1A3D2F" strokeWidth="1" strokeLinecap="round" />
+          <circle cx="25" cy="10" r="2" fill="#841818" />
+          <circle cx="31" cy="10" r="2" fill="#841818" />
+          <path d="M27.8 3L28.5 5.1L30.7 5.1L28.9 6.4L29.6 8.5L27.8 7.2L26 8.5L26.7 6.4L24.9 5.1L27.1 5.1L27.8 3Z" fill="#B8860B" />
+        </svg>
         <MajorSectionHeading id="radarr-setup-heading">HOW TO ADD A FEED TO RADARR</MajorSectionHeading>
         <div className="mt-5 grid gap-5 sm:grid-cols-3 sm:gap-0">
           <div className="sm:border-r sm:border-[#E7DFD5] sm:pr-5">
