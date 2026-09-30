@@ -26,7 +26,7 @@ export const MovieGrid: React.FC<MovieGridProps> = ({
   return (
     <div
       id="movie-grid"
-      className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 max-w-4xl mx-auto"
+      className="catalogue-grid"
     >
       {movies.map((movie, index) => (
         <MovieCard

@@ -574,6 +574,10 @@ export default function App() {
       />
     </section>
   ) : null;
+  const isCatalogueRoute = descriptor.type === 'movies'
+    || descriptor.type === 'year-archive'
+    || descriptor.type === 'brand'
+    || descriptor.type === 'fingerprint';
 
   return (
     <div className="page-shell min-h-screen flex flex-col relative">
@@ -588,7 +592,7 @@ export default function App() {
         populatedBrands={populatedBrands}
       />
 
-      <main className={`flex-1 max-w-4xl w-full mx-auto px-4 sm:px-6 ${descriptor.type === 'home' && !hasSearchQuery ? 'min-h-[1300px]' : ''}`}>
+      <main className={`flex-1 ${isCatalogueRoute ? 'site-page-container' : 'max-w-4xl w-full mx-auto px-4 sm:px-6'} ${descriptor.type === 'home' && !hasSearchQuery ? 'min-h-[1300px]' : ''}`}>
         {hasSearchQuery ? (
           <div className="py-6 sm:py-8" id="search-results-section">
             <div className="border-b border-[#E7DFD5] pb-4 mb-6">

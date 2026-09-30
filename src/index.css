@@ -56,6 +56,44 @@ body {
   color: var(--text-dark);
 }
 
+.site-page-container {
+  width: 100%;
+  max-width: var(--site-canvas-width);
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
+
+.catalogue-grid {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  column-gap: var(--catalogue-grid-gap);
+  row-gap: var(--catalogue-grid-gap);
+}
+
+@media (min-width: 640px) {
+  .site-page-container {
+    padding-inline: 1.5rem;
+  }
+
+  .catalogue-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: var(--catalogue-grid-gap-sm);
+    row-gap: var(--catalogue-grid-gap-sm);
+  }
+}
+
+@media (min-width: 1024px) {
+  .catalogue-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1280px) {
+  .catalogue-grid {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+}
+
 .font-heading {
   font-family: 'Cinzel', 'Lora', Georgia, serif;
   letter-spacing: 0.02em;
