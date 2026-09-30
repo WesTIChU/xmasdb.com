@@ -3,7 +3,7 @@ import fs from 'node:fs/promises';
 import os from 'node:os';
 import path from 'node:path';
 import { Movie } from '../src/types';
-import { mergeTmdbMovie, selectPeopleRefreshMovies } from '../src/utils/tmdb-refresh';
+import { mergeTmdbMovie, refreshTmdbMovie, selectPeopleRefreshMovies } from '../src/utils/tmdb-refresh';
 import { cacheLocalImage, createImageRefreshBudget } from '../src/utils/local-images';
 
 console.log('Running TMDB refresh tests...');
@@ -62,6 +62,43 @@ assert.deepStrictEqual(
 );
 const fullPeopleMovies = selectPeopleRefreshMovies([unrelatedMovie, refreshedComingSoonMovie], [refreshedComingSoonMovie], { comingSoonOnly: false });
 assert.deepStrictEqual(fullPeopleMovies.map((entry) => entry.tmdbId), [unrelatedMovie.tmdbId, movie.tmdbId], 'Full refresh still checks the complete movie catalogue');
+
+const originalMetadataFetch = globalThis.fetch;
+const imageMovie = { ...movie, posterUrl: '/images/posters/existing.jpg', backdropUrl: '/images/backdrops/existing.jpg' } satisfies Movie;
+let metadataPoster: string | null = null;
+let metadataBackdrop: string | null = null;
+globalThis.fetch = (async () => new Response(JSON.stringify({
+  id: imageMovie.tmdbId,
+  title: imageMovie.title,
+  release_date: imageMovie.releaseDate,
+  overview: imageMovie.synopsis,
+  poster_path: metadataPoster,
+  backdrop_path: metadataBackdrop,
+  credits: { cast: [], crew: [] },
+}), { status: 200, headers: { 'content-type': 'application/json' } })) as typeof fetch;
+try {
+  let cacheCalls = 0;
+  const cache = async (_url: string | undefined, localPath: string): Promise<string> => {
+    cacheCalls++;
+    return localPath;
+  };
+  const optional = await refreshTmdbMovie(imageMovie, 'test-key', cache);
+  assert.equal(cacheCalls, 0, 'missing optional poster/backdrop URLs do not invoke image ingestion');
+  assert.equal(optional.posterUrl, imageMovie.posterUrl, 'missing poster preserves existing artwork');
+  assert.equal(optional.backdropUrl, imageMovie.backdropUrl, 'missing backdrop preserves existing artwork');
+
+  metadataPoster = '/poster.jpg';
+  metadataBackdrop = '/backdrop.jpg';
+  const failures: string[] = [];
+  const failed = await refreshTmdbMovie(imageMovie, 'test-key', async (_url, localPath) => {
+    throw new Error(`failed ${localPath}`);
+  }, undefined, (failure) => failures.push(failure.localPath));
+  assert.deepEqual(failures, ['/images/posters/1773368.jpg', '/images/backdrops/1773368.jpg']);
+  assert.equal(failed.posterUrl, imageMovie.posterUrl, 'failed poster ingestion preserves existing artwork');
+  assert.equal(failed.backdropUrl, imageMovie.backdropUrl, 'failed backdrop ingestion preserves existing artwork');
+} finally {
+  globalThis.fetch = originalMetadataFetch;
+}
 
 const root = await fs.mkdtemp(path.join(os.tmpdir(), 'xmasdb-refresh-'));
 const manifestPath = path.join(root, 'images/.cache-manifest.json');

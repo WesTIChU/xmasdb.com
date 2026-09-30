@@ -10,6 +10,7 @@ import { getFingerprintById } from '../data/fingerprints';
 import { buildFingerprintListing } from './catalogue-api';
 import { PUBLIC_API_ENABLED } from './public-api-config';
 import { getMoviePoster } from '../utils/posters';
+import { resolveImageUrl } from '../utils/image-url';
 
 export function getRobotsTxt(): string {
   return [
@@ -158,7 +159,7 @@ function renderMovieContent(pathname: string): string {
     movie.voteAverage ? `<dt>Rating</dt><dd>${movie.voteAverage.toFixed(1)}</dd>` : '',
   ].filter(Boolean).join('');
   const posterMarkup = poster
-    ? `<img src="${escapeHtml(poster)}" alt="${escapeHtml(movie.title)}" width="500" height="750" />`
+    ? `<img src="${escapeHtml(resolveImageUrl(poster) || poster)}" alt="${escapeHtml(movie.title)}" width="500" height="750" />`
     : '';
   return `<main id="server-rendered-content"><article><h1>${escapeHtml(movie.title)}</h1>${posterMarkup}<h2>Synopsis</h2><p>${renderText(movie.synopsis)}</p><dl>${facts}</dl><h2>Cast</h2><ul>${cast}</ul></article></main>`;
 }
@@ -279,11 +280,11 @@ export function injectSeoIntoHtml(html: string, seo: SeoDocument): string {
     renderMeta('og:title', seo.title, true),
     renderMeta('og:description', seo.description, true),
     canonical ? renderMeta('og:url', canonical, true) : '',
-    seo.image ? renderMeta('og:image', seo.image.startsWith('http') ? seo.image : toCanonicalUrl(seo.image), true) : '',
+     seo.image ? renderMeta('og:image', resolveImageUrl(seo.image) || (seo.image.startsWith('http') ? seo.image : toCanonicalUrl(seo.image)), true) : '',
     renderMeta('twitter:card', 'summary_large_image'),
     renderMeta('twitter:title', seo.title),
     renderMeta('twitter:description', seo.description),
-    seo.image ? renderMeta('twitter:image', seo.image.startsWith('http') ? seo.image : toCanonicalUrl(seo.image)) : '',
+     seo.image ? renderMeta('twitter:image', resolveImageUrl(seo.image) || (seo.image.startsWith('http') ? seo.image : toCanonicalUrl(seo.image))) : '',
     jsonLd ? `<script id="schema-json-ld" type="application/ld+json">${jsonLd}</script>` : '',
   ].filter(Boolean).join('\n    ');
   return cleaned.replace('</head>', `    ${tags}\n  </head>`);

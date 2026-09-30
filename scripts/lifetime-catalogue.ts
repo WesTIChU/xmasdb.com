@@ -5,7 +5,7 @@ import { MOVIES } from '../src/data/movies';
 import { Movie } from '../src/types';
 import { fetchTmdbMovie, requireTmdbApiKey, searchTmdbMovies } from '../src/utils/tmdb';
 import { reconcileMovieLifecycle } from '../src/utils/catalogue-lifecycle';
-import { cacheLocalImage } from '../src/utils/local-images';
+import { ingestManagedImage } from '../src/server/managed-images';
 import { enrichCataloguePeople } from '../src/utils/person-enrichment';
 import { writeFileAtomically } from '../src/utils/atomic-file';
 import { getRadarrAllFeedJson, getRadarrNetworkFeedJson } from '../src/utils/feeds';
@@ -145,8 +145,8 @@ async function importConfirmed(report: { candidates: Candidate[]; collisions: Ar
     }
     const metadata = await fetchTmdbMovie(candidate.tmdbId!, apiKey);
     if (!metadata?.title || !metadata.cast || !metadata.releaseDate) continue;
-    const posterUrl = await cacheLocalImage(metadata.posterUrl, `/images/posters/${candidate.tmdbId}.jpg`);
-    const backdropUrl = await cacheLocalImage(metadata.backdropUrl, `/images/backdrops/${candidate.tmdbId}.jpg`);
+    const posterUrl = metadata.posterUrl ? await ingestManagedImage(metadata.posterUrl, `/images/posters/${candidate.tmdbId}.jpg`) : undefined;
+    const backdropUrl = metadata.backdropUrl ? await ingestManagedImage(metadata.backdropUrl, `/images/backdrops/${candidate.tmdbId}.jpg`) : undefined;
     additions.push(reconcileMovieLifecycle({
       id: `lifetime-${candidate.year || metadata.releaseDate.slice(0, 4)}-${slugify(metadata.title)}`,
       slug: slugify(metadata.title), title: metadata.title, year: candidate.year || Number(metadata.releaseDate.slice(0, 4)), brandId: 'lifetime',
@@ -157,8 +157,9 @@ async function importConfirmed(report: { candidates: Candidate[]; collisions: Ar
     }));
   }
   if (additions.length > 0) {
+    const people = await enrichCataloguePeople(additions, apiKey);
+    if (people.failures.length > 0) throw new Error(`${people.failures.length} actor enrichment failure(s) prevented Lifetime catalogue publication.`);
     await writeFileAtomically(MOVIES_PATH, generatedMoviesModule([...MOVIES, ...additions]));
-    await enrichCataloguePeople(additions, apiKey);
   }
   const finalMovies = [...MOVIES, ...additions];
   const allCollisions = [...(report.collisions || []), ...collisions].filter((collision, index, all) => all.findIndex((other) => other.tmdbId === collision.tmdbId && other.existingBrand === collision.existingBrand) === index);

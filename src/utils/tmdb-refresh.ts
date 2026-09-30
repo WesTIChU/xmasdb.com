@@ -1,6 +1,7 @@
 import type { Movie } from '../types';
 import { fetchTmdbMovie } from './tmdb';
 import { cacheLocalImage, type ImageRefreshBudget } from './local-images';
+import { ingestManagedImage } from '../server/managed-images';
 
 function localAssetPath(kind: 'posters' | 'backdrops', id: number): string {
   return `/images/${kind}/${id}.jpg`;
@@ -45,15 +46,34 @@ export function mergeTmdbMovie(movie: Movie, refreshed: Partial<Movie>, posterUr
     : { ...movie, tmdbFetchedAt };
 }
 
+export interface TmdbImageRefreshFailure {
+  localPath: string;
+  message: string;
+}
+
 export async function refreshTmdbMovie(
   movie: Movie,
   apiKey: string,
   cacheImage: typeof cacheLocalImage = cacheLocalImage,
   imageBudget?: ImageRefreshBudget,
+  onImageFailure?: (failure: TmdbImageRefreshFailure) => void,
 ): Promise<Movie> {
   const refreshed = await fetchTmdbMovie(movie.tmdbId, apiKey);
   if (!refreshed) throw new Error(`TMDB returned no movie data for ${movie.tmdbId}`);
-  const posterUrl = await cacheImage(refreshed.posterUrl, localAssetPath('posters', movie.tmdbId), { refreshBudget: imageBudget });
-  const backdropUrl = await cacheImage(refreshed.backdropUrl, localAssetPath('backdrops', movie.tmdbId), { refreshBudget: imageBudget });
+  const ingest = async (remoteUrl: string | undefined, localPath: string): Promise<string | undefined> => {
+    if (!remoteUrl) return undefined;
+    try {
+      return cacheImage === cacheLocalImage
+        ? await ingestManagedImage(remoteUrl, localPath, { refreshBudget: imageBudget })
+        : await cacheImage(remoteUrl, localPath, { refreshBudget: imageBudget });
+    } catch (error) {
+      const message = error instanceof Error ? error.message : String(error);
+      console.error(`[TMDB Refresh] Image ingestion failed for ${localPath}: ${message}`);
+      onImageFailure?.({ localPath, message });
+      return undefined;
+    }
+  };
+  const posterUrl = await ingest(refreshed.posterUrl, localAssetPath('posters', movie.tmdbId));
+  const backdropUrl = await ingest(refreshed.backdropUrl, localAssetPath('backdrops', movie.tmdbId));
   return mergeTmdbMovie(movie, refreshed, posterUrl, backdropUrl);
 }

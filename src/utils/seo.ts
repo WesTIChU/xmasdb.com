@@ -2,6 +2,7 @@ import type { Actor, Brand, Movie } from '../types';
 import type { ActorFilmographyItem, MovieDetailMovie } from '../api/types';
 import { getBrandById } from '../data/brands';
 import { SITE_ORIGIN, getActorPath, getFeedsPath, getMoviePath, getMoviesPath, getNetworkPath, getYearPath, toCanonicalUrl } from './urls';
+import { resolveImageUrl } from './image-url';
 
 export interface SeoDocument {
   title: string;
@@ -15,7 +16,8 @@ export interface SeoDocument {
 
 function absoluteUrl(value?: string): string | undefined {
   if (!value) return undefined;
-  return value.startsWith('http') ? value : `${SITE_ORIGIN}${value.startsWith('/') ? value : `/${value}`}`;
+  const resolved = resolveImageUrl(value) || value;
+  return resolved.startsWith('http') ? resolved : `${SITE_ORIGIN}${resolved.startsWith('/') ? resolved : `/${resolved}`}`;
 }
 
 function cleanText(value: string): string {

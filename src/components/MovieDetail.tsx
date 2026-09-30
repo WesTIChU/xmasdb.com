@@ -12,6 +12,7 @@ import { BackNavigation } from './BackNavigation';
 import { getMoviePoster } from '../utils/posters';
 import { getFingerprintById } from '../data/fingerprints';
 import { FingerprintChips } from './FingerprintChips';
+import { resolveImageUrl } from '../utils/image-url';
 
 interface MovieDetailProps {
   movie: MovieDetailMovie;
@@ -65,7 +66,7 @@ export const MovieDetail: React.FC<MovieDetailProps> = ({ movie, related, onNavi
       {movie.backdropUrl && (
         <div className="relative w-full h-36 sm:h-52 rounded-lg overflow-hidden mb-8 border border-[#E7DFD5] shadow-xs bg-[#EBE4DA]">
           <img
-            src={movie.backdropUrl}
+            src={resolveImageUrl(movie.backdropUrl)}
             alt={`${movie.title} scene`}
             width={1280}
             height={360}
@@ -92,7 +93,7 @@ export const MovieDetail: React.FC<MovieDetailProps> = ({ movie, related, onNavi
               />
             ) : (
               <img
-                src={poster}
+                src={resolveImageUrl(poster)}
                 alt={movie.title}
                 width={500}
                 height={750}
@@ -274,7 +275,7 @@ export const MovieDetail: React.FC<MovieDetailProps> = ({ movie, related, onNavi
               {visibleCast.map((member) => {
                 const actorTmdbId = member.resolvedTmdbPersonId ?? member.tmdbPersonId ?? 0;
                 const actorPath = getActorPath(actorTmdbId, member.slug);
-                const photoSrc = member.resolvedProfileUrl || member.profileUrl;
+                const photoSrc = resolveImageUrl(member.resolvedProfileUrl || member.profileUrl);
 
                 return (
                   <div

@@ -5,6 +5,8 @@
  */
 const homepagePosterIds = new Set<string>([
   '1729134',
+  '1772765',
+  '1773006',
   '1773195',
 ]);
 

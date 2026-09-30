@@ -3,7 +3,8 @@ import path from 'node:path';
 import { Actor, Movie } from '../types';
 import { fetchTmdbPerson } from './tmdb';
 import { writeFileAtomically } from './atomic-file';
-import { cacheLocalImage } from './local-images';
+import { ingestManagedImage } from '../server/managed-images';
+import { isManagedCanonicalPath } from '../server/r2-storage';
 import { getCreativeCrew, getPersonSlug } from './creative-crew';
 import { isTmdbFresh, TMDB_MIGRATION_BATCH_SIZE } from './tmdb-freshness';
 import type { ImageRefreshBudget } from './local-images';
@@ -42,8 +43,9 @@ async function readActors(): Promise<Map<number, Actor>> {
   }
 }
 
-async function cacheProfile(url: string | undefined, tmdbPersonId: number, imageBudget?: ImageRefreshBudget): Promise<string | undefined> {
-  return cacheLocalImage(url, `/images/people/${tmdbPersonId}.webp`, { refreshBudget: imageBudget });
+async function cacheProfile(url: string | undefined, tmdbPersonId: number, imageBudget?: ImageRefreshBudget, imageIngestor: typeof ingestManagedImage = ingestManagedImage): Promise<string | undefined> {
+  if (!url) return undefined;
+  return imageIngestor(url, `/images/people/${tmdbPersonId}.webp`, { refreshBudget: imageBudget });
 }
 
 export function cataloguePeople(movies: Movie[]): Map<number, CataloguePersonSeed> {
@@ -89,7 +91,7 @@ export async function enrichCataloguePeople(
   apiKey: string,
   personId?: number,
   onProgress?: (current: number, total: number, person: CataloguePersonSeed) => void,
-  options: { maxPeople?: number; imageBudget?: ImageRefreshBudget } = {},
+  options: { maxPeople?: number; imageBudget?: ImageRefreshBudget; imageIngestor?: typeof ingestManagedImage } = {},
 ): Promise<PersonEnrichmentResult> {
   const people = cataloguePeople(movies);
   const person = personId ? people.get(personId) : undefined;
@@ -126,15 +128,21 @@ export async function enrichCataloguePeople(
         const existing = actorsById.get(tmdbPersonId);
         const fetched = await fetchTmdbPerson(tmdbPersonId, apiKey);
         if (!fetched) throw new Error('TMDB returned no person data');
-        const profileUrl = await cacheProfile(fetched.profileUrl, tmdbPersonId, options.imageBudget);
+        let profileUrl: string | undefined;
+        try {
+          profileUrl = await cacheProfile(fetched.profileUrl, tmdbPersonId, options.imageBudget, options.imageIngestor);
+        } catch (error) {
+          console.error(`[Actor Enrichment] Image ingestion failed for ${tmdbPersonId}: ${error instanceof Error ? error.message : String(error)}`);
+          failures.push({ tmdbPersonId, name: person.name, message: `Image ingestion failed: ${error instanceof Error ? error.message : String(error)}` });
+        }
          const fetchedAt = new Date().toISOString();
          const actor: Actor = {
           id: existing?.id || person.id,
           slug: existing?.slug || person.slug,
           name: fetched.name || existing?.name || person.name,
           tmdbPersonId,
-          photoUrl: profileUrl || existing?.photoUrl || person.profileUrl,
-          profileUrl: profileUrl || existing?.profileUrl || person.profileUrl,
+           photoUrl: profileUrl || existing?.photoUrl || (isManagedCanonicalPath(person.profileUrl) ? undefined : person.profileUrl),
+           profileUrl: profileUrl || existing?.profileUrl || (isManagedCanonicalPath(person.profileUrl) ? undefined : person.profileUrl),
           birthday: fetched.birthday ?? existing?.birthday,
           deathday: fetched.deathday ?? existing?.deathday,
           placeOfBirth: fetched.placeOfBirth ?? existing?.placeOfBirth,

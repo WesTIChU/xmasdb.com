@@ -5,6 +5,7 @@ import { getActorPath } from '../utils/urls';
 import { NavigationTab } from './NavigationLink';
 import { getHomepageActorSrcSet } from '../utils/homepage-images';
 import { HollyDivider } from './HollyDivider';
+import { resolveImageUrl } from '../utils/image-url';
 
 interface PopularActorsSectionProps {
   groups: PopularActorsGroup[];
@@ -19,7 +20,7 @@ const ActorCircularPortrait: React.FC<{
 }> = ({ actor, accentColor }) => {
   const [imgError, setImgError] = useState(false);
   const photo = actor.photoUrl;
-  const portraitPhoto = photo && !imgError ? photo : null;
+  const portraitPhoto = photo && !imgError ? resolveImageUrl(photo) : null;
 
   return (
     <div
@@ -28,7 +29,7 @@ const ActorCircularPortrait: React.FC<{
     >
       <div className="relative z-0 h-full w-full overflow-hidden rounded-full">
         {portraitPhoto ? (
-          <img src={portraitPhoto} srcSet={getHomepageActorSrcSet(portraitPhoto)} sizes="(min-width: 1280px) 96px, 108px" alt={actor.name} loading="lazy" decoding="async" width={216} height={216} referrerPolicy="no-referrer" onError={() => setImgError(true)} className="h-full w-full object-cover object-center group-hover:scale-105 transition-transform duration-300" />
+         <img src={portraitPhoto} srcSet={photo ? getHomepageActorSrcSet(photo) : undefined} sizes="(min-width: 1280px) 96px, 108px" alt={actor.name} loading="lazy" decoding="async" width={216} height={216} referrerPolicy="no-referrer" onError={() => setImgError(true)} className="h-full w-full object-cover object-center group-hover:scale-105 transition-transform duration-300" />
         ) : (
           <div className="flex h-full w-full items-center justify-center text-3xl font-heading text-[#1A3D2F]" aria-hidden="true">{actor.name.charAt(0)}</div>
         )}

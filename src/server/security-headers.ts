@@ -16,7 +16,7 @@ export function getSecurityHeaders(isProduction: boolean): Record<string, string
       "script-src 'self' 'unsafe-inline' https://stats.xmasdb.com",
       "style-src 'self' 'unsafe-inline'",
       "font-src 'self'",
-      "img-src 'self' data: blob: https://image.tmdb.org https://www.themoviedb.org",
+      "img-src 'self' data: blob: https://image.tmdb.org https://www.themoviedb.org https://images.xmasdb.com",
       "connect-src 'self' https://stats.xmasdb.com",
       "frame-src https://www.youtube-nocookie.com",
       "frame-ancestors 'self'",

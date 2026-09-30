@@ -1,4 +1,5 @@
 import homepagePosterIds from '../data/homepage-poster-ids';
+import { resolveImageUrl } from './image-url';
 
 const optimizedHomepageActorIds = new Set([
   '22082',
@@ -30,11 +31,11 @@ const optimizedHomepageActorIds = new Set([
 export function getHomepagePosterSrcSet(url: string): string | undefined {
   const match = url.match(/^\/images\/posters\/(\d+)(?:-[^/]+)?\.jpg$/);
   if (!match || !homepagePosterIds.has(match[1])) return undefined;
-  return `/images/optimized/posters/${match[1]}-320.webp 320w, ${url} 500w`;
+  return `${resolveImageUrl(`/images/optimized/posters/${match[1]}-320.webp`)} 320w, ${resolveImageUrl(url)} 500w`;
 }
 
 export function getHomepageActorSrcSet(url: string): string | undefined {
   const match = url.match(/^\/images\/people\/(\d+)\.webp$/);
   if (!match || !optimizedHomepageActorIds.has(match[1])) return undefined;
-  return `/images/optimized/people/${match[1]}-216.webp 216w, ${url} 500w`;
+  return `${resolveImageUrl(`/images/optimized/people/${match[1]}-216.webp`)} 216w, ${resolveImageUrl(url)} 500w`;
 }

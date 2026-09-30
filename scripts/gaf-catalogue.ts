@@ -4,7 +4,7 @@ import { MOVIES } from '../src/data/movies';
 import { Movie } from '../src/types';
 import { fetchTmdbMovie, requireTmdbApiKey, searchTmdbMovies } from '../src/utils/tmdb';
 import { reconcileMovieLifecycle } from '../src/utils/catalogue-lifecycle';
-import { cacheLocalImage } from '../src/utils/local-images';
+import { ingestManagedImage } from '../src/server/managed-images';
 import { writeFileAtomically } from '../src/utils/atomic-file';
 import { enrichCataloguePeople } from '../src/utils/person-enrichment';
 
@@ -311,8 +311,8 @@ async function importGaf(discovery: GafDiscovery): Promise<void> {
     }
     const releaseDate = candidate.premiereDate || metadata.releaseDate;
     const status = statusFor(candidate, releaseDate);
-    const posterUrl = await cacheLocalImage(metadata.posterUrl, `/images/posters/${match.id}.jpg`);
-    const backdropUrl = await cacheLocalImage(metadata.backdropUrl, `/images/backdrops/${match.id}.jpg`);
+    const posterUrl = metadata.posterUrl ? await ingestManagedImage(metadata.posterUrl, `/images/posters/${match.id}.jpg`) : undefined;
+    const backdropUrl = metadata.backdropUrl ? await ingestManagedImage(metadata.backdropUrl, `/images/backdrops/${match.id}.jpg`) : undefined;
     if (!posterUrl || !backdropUrl) report.imageFailures.push({ title: metadata.title, tmdbId: match.id, poster: Boolean(posterUrl), backdrop: Boolean(backdropUrl) });
     const movie: Movie = reconcileMovieLifecycle({
       id: `gaf-${candidate.year}-${normaliseTitle(metadata.title).replace(/\s+/g, '-')}`,
@@ -366,9 +366,12 @@ async function importGaf(discovery: GafDiscovery): Promise<void> {
     const existingIds = new Set(MOVIES.map((movie) => movie.tmdbId));
     const mergedMovies = MOVIES.map((movie) => additionsByTmdb.get(movie.tmdbId) || movie)
       .concat(additions.filter((movie) => !existingIds.has(movie.tmdbId)));
-    await writeFileAtomically(moviesPath, generatedMoviesModule(mergedMovies));
     const people = await enrichCataloguePeople(additions, apiKey);
-    if (people.failures.length > 0) report.skipped.push(...people.failures.map((failure) => ({ title: failure.name, reason: `Actor enrichment failed: ${failure.message}` })));
+    if (people.failures.length > 0) {
+      report.skipped.push(...people.failures.map((failure) => ({ title: failure.name, reason: `Actor enrichment failed: ${failure.message}` })));
+      throw new Error(`${people.failures.length} actor enrichment failure(s) prevented GAF catalogue publication.`);
+    }
+    await writeFileAtomically(moviesPath, generatedMoviesModule(mergedMovies));
   }
   await writeFileAtomically(reportPath, JSON.stringify(report, null, 2));
   console.log(JSON.stringify(report, null, 2));

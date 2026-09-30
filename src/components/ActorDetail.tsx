@@ -9,6 +9,7 @@ import { getMoviePoster } from '../utils/posters';
 import { getBrandById } from '../data/brands';
 import { calculateAge, calculateAgeAtDeath, formatActorDate, isValidActorDate, sanitizeBiography } from '../utils/actor-dates';
 import { ComingSoonPoster } from './ComingSoonPoster';
+import { resolveImageUrl } from '../utils/image-url';
 
 interface ActorDetailProps {
   actor: Actor;
@@ -107,7 +108,7 @@ export const ActorDetail: React.FC<ActorDetailProps> = ({
               <a href={canonicalPath} onClick={(e) => { e.preventDefault(); onSelectMovie(movie.slug, movie.tmdbId); }} className="group flex flex-col transition-all duration-200 block text-inherit no-underline">
                 <div className="relative aspect-2/3 w-full overflow-hidden rounded-sm bg-[#EBE4DA] border border-[#E0D7CC] group-hover:border-[#B8860B]/50 transition-colors">
                   {!poster ? <ComingSoonPoster year={movie.year} networkName={brand ? brand.shortName : undefined} /> : (
-                    <img src={poster} alt={movie.title} width={500} height={750} loading="lazy" referrerPolicy="no-referrer" className="h-full w-full object-cover object-center group-hover:scale-101 transition-transform duration-300" />
+                    <img src={resolveImageUrl(poster)} alt={movie.title} width={500} height={750} loading="lazy" referrerPolicy="no-referrer" className="h-full w-full object-cover object-center group-hover:scale-101 transition-transform duration-300" />
                   )}
                 </div>
                 <div className="pt-2.5 pb-1 text-center">
@@ -134,7 +135,7 @@ export const ActorDetail: React.FC<ActorDetailProps> = ({
       {actorBackdrop && !backdropError && (
         <div className="relative w-full h-36 sm:h-52 rounded-lg overflow-hidden mb-6 border border-[#E7DFD5] bg-[#EBE4DA]">
            <img
-            src={actorBackdrop.url}
+             src={resolveImageUrl(actorBackdrop.url)}
             alt=""
             width={1280}
             height={360}
@@ -155,7 +156,7 @@ export const ActorDetail: React.FC<ActorDetailProps> = ({
               <div className="w-full h-full rounded-xl overflow-hidden">
               {portraitUrl && !imageError ? (
                 <img
-                  src={portraitUrl}
+             src={resolveImageUrl(portraitUrl)}
                   alt={actor.name}
                   width={500}
                   height={750}

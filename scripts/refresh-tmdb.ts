@@ -67,7 +67,9 @@ async function main() {
   const failures: Array<{ tmdbId: number; title: string; message: string }> = [];
   for (const movie of targets) {
     try {
-      const refreshed = await refreshTmdbMovie(movie, apiKey, undefined, imageBudget);
+      const refreshed = await refreshTmdbMovie(movie, apiKey, undefined, imageBudget, (failure) => {
+        failures.push({ tmdbId: movie.tmdbId, title: movie.title, message: `Image ingestion failed for ${failure.localPath}: ${failure.message}` });
+      });
       refreshedMovies.push(refreshed);
       console.log(`Refreshed movie ${movie.tmdbId}: ${movie.title}`);
     } catch (error) {

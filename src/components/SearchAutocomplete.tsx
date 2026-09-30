@@ -9,6 +9,7 @@ import { SEARCH_INDEX_URL, fetchSearchIndex, peekResolved } from '../api/client'
 import { getBrandById } from '../data/brands';
 import { getMoviePath, getActorPath } from '../utils/urls';
 import { getMoviePoster } from '../utils/posters';
+import { resolveImageUrl } from '../utils/image-url';
 import {
   compareScoredResults,
   scoreActorSearchResult,
@@ -77,7 +78,7 @@ const MoviePosterThumbnail: React.FC<{ movie: SearchMovieEntry; brandName?: stri
   return (
     <div className={movieThumbnailClass}>
       <img
-        src={poster}
+        src={resolveImageUrl(poster)}
         alt={movie.title}
         width={500}
         height={750}
@@ -106,7 +107,7 @@ const ActorProfileThumbnail: React.FC<{ actor: SearchPersonEntry }> = ({ actor }
   return (
     <div className="w-10 h-[50px] shrink-0 rounded overflow-hidden bg-[#EAE2D7] border border-[#DDD3C6] shadow-2xs">
       <img
-        src={photo}
+        src={resolveImageUrl(photo)}
         alt={actor.name}
         width={500}
         height={750}

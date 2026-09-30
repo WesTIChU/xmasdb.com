@@ -6,6 +6,7 @@ import { Actor, CastMember, CrewMember, Movie, ReleaseDateInfo, Trailer } from '
 import { fetchTmdbMovie, fetchTmdbPerson } from '../src/utils/tmdb';
 import { reconcileMovieLifecycle } from '../src/utils/catalogue-lifecycle';
 import { writeFileAtomically } from '../src/utils/atomic-file';
+import { ingestManagedImage } from '../src/server/managed-images';
 
 const SOURCE_URL = 'https://xmasdb.com/movies.json';
 const SOURCE_ORIGIN = 'https://xmasdb.com';
@@ -99,19 +100,9 @@ function localAssetPath(relativePath: string, kind: 'posters' | 'backdrops' | 'p
 
 async function cacheImage(source: string | null | undefined, destination: string): Promise<boolean> {
   if (!source) return false;
-  const destinationPath = path.join(publicPath, destination.replace(/^\//, ''));
   try {
-    await fs.mkdir(path.dirname(destinationPath), { recursive: true });
-    try {
-      await fs.access(destinationPath);
-      return true;
-    } catch {
-      // Download only when the local cache does not already contain the asset.
-    }
     const url = source.startsWith('http') ? source : `${SOURCE_ORIGIN}${source.startsWith('/') ? '' : '/'}${source}`;
-    const response = await fetch(url);
-    if (!response.ok) throw new Error(`HTTP ${response.status}`);
-    await fs.writeFile(destinationPath, Buffer.from(await response.arrayBuffer()));
+    await ingestManagedImage(url, destination);
     report.images++;
     return true;
   } catch (error) {
@@ -169,11 +160,14 @@ async function normalizeMovie(source: SourceMovie, existing?: Movie): Promise<Mo
   const trailers: Trailer[] = (source.videos || []).filter((video): video is Required<Pick<SourceVideo, 'key' | 'site' | 'type' | 'name'>> & SourceVideo => Boolean(video.key && video.site && video.type && video.name)).map((video) => ({ key: video.key, site: video.site, type: video.type, name: video.name, official: video.official }));
   const releaseDates = normalizeReleaseDates(source.release_dates);
   const crew = normalizeCrew(source.crew);
-  const sourceCast = (source.cast || []).map((member) => normalizeCastMember(member, member.profile_path ? localAssetPath(member.profile_path, 'people', member.id as number) : undefined)).filter((member): member is CastMember => Boolean(member));
-
+  const cachedCastProfiles = new Map<number, string>();
   for (const member of source.cast || []) {
-    if (member.id && member.profile_path) await cacheImage(member.profile_path, localAssetPath(member.profile_path, 'people', member.id));
+    if (member.id && member.profile_path) {
+      const profilePath = localAssetPath(member.profile_path, 'people', member.id);
+      if (await cacheImage(member.profile_path, profilePath)) cachedCastProfiles.set(member.id, profilePath);
+    }
   }
+  const sourceCast = (source.cast || []).map((member) => normalizeCastMember(member, member.id ? cachedCastProfiles.get(member.id) : undefined)).filter((member): member is CastMember => Boolean(member));
 
   return {
     ...existing,
@@ -326,6 +320,7 @@ async function importCatalogue() {
   if (failures.length > 0) {
     console.error('\nIndividual failures:');
     failures.forEach((failure) => console.error(`- ${failure}`));
+    process.exitCode = 1;
   }
 }
 

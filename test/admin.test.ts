@@ -80,7 +80,7 @@ assert.equal(isSameOriginMutation(request('https://xmasdb.test', 'https://attack
 const developmentHeaders = getSecurityHeaders(false);
 assert.equal(developmentHeaders['Strict-Transport-Security'], undefined, 'development does not receive HSTS');
 const productionHeaders = getSecurityHeaders(true);
-assert.equal(productionHeaders['Content-Security-Policy'], "default-src 'self'; base-uri 'self'; form-action 'self'; object-src 'none'; script-src 'self' 'unsafe-inline' https://stats.xmasdb.com; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: blob: https://image.tmdb.org https://www.themoviedb.org; connect-src 'self' https://stats.xmasdb.com; frame-src https://www.youtube-nocookie.com; frame-ancestors 'self'");
+  assert.equal(productionHeaders['Content-Security-Policy'], "default-src 'self'; base-uri 'self'; form-action 'self'; object-src 'none'; script-src 'self' 'unsafe-inline' https://stats.xmasdb.com; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: blob: https://image.tmdb.org https://www.themoviedb.org https://images.xmasdb.com; connect-src 'self' https://stats.xmasdb.com; frame-src https://www.youtube-nocookie.com; frame-ancestors 'self'");
 assert.equal(productionHeaders['Strict-Transport-Security'], 'max-age=31536000; includeSubDomains');
 assert.equal(productionHeaders['X-Content-Type-Options'], 'nosniff');
 assert.equal(productionHeaders['Referrer-Policy'], 'strict-origin-when-cross-origin');

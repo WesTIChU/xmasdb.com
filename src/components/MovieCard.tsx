@@ -5,6 +5,7 @@ import { getBrandById } from '../data/brands';
 import { getMoviePath } from '../utils/urls';
 import { getMoviePoster } from '../utils/posters';
 import { getHomepagePosterSrcSet } from '../utils/homepage-images';
+import { resolveImageUrl } from '../utils/image-url';
 
 interface MovieCardProps {
   movie: ListingMovie;
@@ -50,7 +51,7 @@ export const MovieCard: React.FC<MovieCardProps> = ({ movie, onSelectMovie, prio
             />
           ) : (
             <img
-              src={poster}
+              src={resolveImageUrl(poster)}
               srcSet={optimizeHomepageImage ? getHomepagePosterSrcSet(poster) : undefined}
               sizes={optimizeHomepageImage ? '(min-width: 1024px) 143px, (min-width: 640px) 30vw, 140px' : undefined}
               alt={`Poster for ${movie.title}`}

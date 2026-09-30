@@ -5,6 +5,7 @@ import { getBrandById } from '../data/brands';
 import { getMoviePoster } from '../utils/posters';
 import { ComingSoonPoster } from './ComingSoonPoster';
 import { HollyDivider } from './HollyDivider';
+import { resolveImageUrl } from '../utils/image-url';
 
 interface OnThisDaySectionProps {
   payload: OnThisDayPayload;
@@ -27,7 +28,7 @@ const CompactMovie: React.FC<{ movie: ListingMovie; onNavigate: (path: string) =
           <ComingSoonPoster year={movie.year} networkName={brand?.shortName} />
         ) : (
           <img
-            src={poster}
+            src={resolveImageUrl(poster)}
             alt={`Poster for ${movie.title}`}
             loading="lazy"
             width="500"

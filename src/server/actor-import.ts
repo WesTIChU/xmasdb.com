@@ -2,7 +2,8 @@ import type { Actor, Movie } from '../types';
 import { fetchTmdbPerson } from '../utils/tmdb';
 import { getTmdbPersonIdForSlug } from '../data/actors';
 import { getCreativeCrew, getPersonSlug } from '../utils/creative-crew';
-import { cacheLocalImage } from '../utils/local-images';
+import { ingestManagedImage } from './managed-images';
+import { isManagedCanonicalPath } from './r2-storage';
 import { isActorEnriched } from '../utils/person-enrichment';
 
 interface PersonSeed {
@@ -58,15 +59,22 @@ export async function enrichNewCatalogueActors(
         const existing = actorsById.get(person.tmdbPersonId);
         const fetched = await fetchTmdbPerson(person.tmdbPersonId, apiKey);
         if (!fetched) throw new Error('TMDB returned no person data');
-        const profileUrl = await cacheLocalImage(fetched.profileUrl, `/images/people/${person.tmdbPersonId}.webp`);
+        let profileUrl: string | undefined;
+        if (fetched.profileUrl) {
+          try {
+            profileUrl = await ingestManagedImage(fetched.profileUrl, `/images/people/${person.tmdbPersonId}.webp`);
+          } catch (error) {
+            console.error(`[Actor Enrichment] Image ingestion failed for ${person.tmdbPersonId}: ${error instanceof Error ? error.message : String(error)}`);
+          }
+        }
         const actor: Actor = {
           ...existing,
           id: existing?.id || person.id,
           slug: existing?.slug || person.slug,
           name: fetched.name || existing?.name || person.name,
           tmdbPersonId: person.tmdbPersonId,
-          photoUrl: profileUrl || existing?.photoUrl || person.profileUrl,
-          profileUrl: profileUrl || existing?.profileUrl || person.profileUrl,
+          photoUrl: profileUrl || existing?.photoUrl || (isManagedCanonicalPath(person.profileUrl) ? undefined : person.profileUrl),
+          profileUrl: profileUrl || existing?.profileUrl || (isManagedCanonicalPath(person.profileUrl) ? undefined : person.profileUrl),
           birthday: fetched.birthday ?? existing?.birthday,
           deathday: fetched.deathday ?? existing?.deathday,
           placeOfBirth: fetched.placeOfBirth ?? existing?.placeOfBirth,

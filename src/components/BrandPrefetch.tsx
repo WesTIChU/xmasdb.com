@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import type { MetaBrand } from '../api/types';
 import { fetchCatalogue } from '../api/client';
+import { resolveImageUrl } from '../utils/image-url';
 
 interface BrandPrefetchProps {
   /** Populated brands from catalogue metadata. */
@@ -44,7 +45,7 @@ export const BrandPrefetch: React.FC<BrandPrefetchProps> = ({ brands, activeBran
               warmPosters.add(url);
               const image = new Image();
               image.decoding = 'async';
-              image.src = url;
+               image.src = resolveImageUrl(url) || url;
             }
           })
           .catch(() => undefined);

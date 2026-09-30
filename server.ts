@@ -33,6 +33,7 @@ import { ContactRateLimiter, ensureContactStorage, getContactDataDir, readContac
 import { ADMIN_SESSION_COOKIE, AdminAuth, AdminLoginRateLimiter, AdminMutationRateLimiter, clearCookieOptions, cookieOptions, getAdminLoginRedirect, isSameOriginMutation } from './src/server/admin-auth';
 import { commitMoviesToGitHub, dispatchComingSoonRefresh, isGitHubConfigured, readGitHubBranch, WorkflowDispatchCooldown } from './src/server/github-catalogue';
 import { buildMovieFromTmdb, normalizeBrand, normalizeStatus, parseBulkMovieInput } from './src/server/movie-import';
+import { ingestManagedImage } from './src/server/managed-images';
 import { fetchTmdbMovie, requireTmdbApiKey } from './src/utils/tmdb';
 import { getCanonicalRedirect, getRobotsTxt, renderServerHtml } from './src/server/seo';
 import { ensureFeedStatisticsStorage, getActorFeedDefinition, getFeedStatistics, getYearFeedDefinition } from './src/server/feed-statistics';
@@ -538,7 +539,14 @@ async function startServer() {
       const fetched = await mapWithConcurrency(choices, 3, async (choice) => {
         const metadata = await fetchTmdbMovie(choice.tmdbId, apiKey);
         if (!metadata) throw new Error(`TMDB movie ${choice.tmdbId} could not be fetched.`);
-        return buildMovieFromTmdb(choice.tmdbId, metadata, choice.brand, choice.status);
+        const movie = buildMovieFromTmdb(choice.tmdbId, metadata, choice.brand, choice.status);
+        const posterUrl = metadata.posterUrl
+          ? await ingestManagedImage(metadata.posterUrl, `/images/posters/${choice.tmdbId}.jpg`)
+          : undefined;
+        const backdropUrl = metadata.backdropUrl
+          ? await ingestManagedImage(metadata.backdropUrl, `/images/backdrops/${choice.tmdbId}.jpg`)
+          : undefined;
+        return { ...movie, posterUrl: posterUrl || '', backdropUrl };
       });
       const movies = [...github.movies, ...fetched];
       if (new Set(movies.map((movie) => movie.tmdbId)).size !== movies.length) throw new Error('The proposed catalogue contains duplicate TMDB IDs.');
