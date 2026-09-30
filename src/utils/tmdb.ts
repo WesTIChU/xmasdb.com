@@ -67,10 +67,6 @@ interface TmdbMovieSearchResponse {
   results?: Array<{ id: number; title?: string; release_date?: string }>;
 }
 
-interface TmdbFindResponse {
-  movie_results?: Array<{ id: number }>;
-}
-
 function tmdbImageUrl(pathValue?: string | null, size: string = 'w500'): string | undefined {
   if (!pathValue) return undefined;
   const cleanPath = pathValue.startsWith('/') ? pathValue : `/${pathValue}`;
@@ -113,15 +109,6 @@ export async function searchTmdbMovies(title: string, year?: number, apiKey?: st
   return (data?.results || [])
     .filter((result): result is { id: number; title: string; release_date?: string } => Number.isInteger(result.id) && Boolean(result.title))
     .map((result) => ({ id: result.id, title: result.title, releaseDate: result.release_date }));
-}
-
-/** Resolves a movie through TMDB's stable external IMDb identifier. */
-export async function findTmdbMovieByImdbId(imdbId: string, apiKey?: string): Promise<number | undefined> {
-  const key = apiKey || (typeof process !== 'undefined' ? process.env?.TMDB_API_KEY : undefined);
-  if (!key || !/^tt\d+$/.test(imdbId)) return undefined;
-  const url = `https://api.themoviedb.org/3/find/${encodeURIComponent(imdbId)}?api_key=${encodeURIComponent(key)}&external_source=imdb_id`;
-  const data = await fetchTmdbJson<TmdbFindResponse>(url);
-  return data?.movie_results?.[0]?.id;
 }
 
 /** Fetches rich movie metadata server-side for import/refresh tooling. */
@@ -307,23 +294,3 @@ export function getCatalogueUniqueActors(): { tmdbPersonId: number; slug: string
  * Deduplicates actor IDs so no person is fetched repeatedly.
  * Persists results to src/data/actors.json.
  */
-export async function refreshActorsFromTmdbPipeline(apiKey?: string): Promise<{
-  totalCatalogueActors: number;
-  updated: number;
-  skipped: number;
-  errors: number;
-}> {
-  const key = apiKey || (typeof process !== 'undefined' ? process.env?.TMDB_API_KEY : undefined);
-  const catalogueActors = getCatalogueUniqueActors();
-  if (!key) return { totalCatalogueActors: catalogueActors.length, updated: 0, skipped: catalogueActors.length, errors: 0 };
-
-  const { enrichCataloguePeople } = await import('./person-enrichment');
-  const result = await enrichCataloguePeople(MOVIES, key);
-
-  return {
-    totalCatalogueActors: catalogueActors.length,
-    updated: result.updated,
-    skipped: result.skipped,
-    errors: result.failures.length,
-  };
-}

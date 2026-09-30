@@ -10,7 +10,8 @@ import { enrichCataloguePeople } from '../src/utils/person-enrichment';
 import { writeFileAtomically } from '../src/utils/atomic-file';
 import { getRadarrAllFeedJson, getRadarrNetworkFeedJson } from '../src/utils/feeds';
 
-const SEED_PATH = path.join(process.cwd(), 'lifetime-trakt-seed.txt');
+const SEED_RELATIVE_PATH = 'lifetime-trakt-seed.txt';
+const SEED_PATH = path.join(process.cwd(), SEED_RELATIVE_PATH);
 const HUB_URL = 'https://www.mylifetime.com/christmas-movies';
 const DISCOVERY_PATH = path.join(process.cwd(), 'src/data/lifetime-discovery.json');
 const PENDING_PATH = path.join(process.cwd(), 'src/data/lifetime-pending-report.json');
@@ -79,12 +80,12 @@ function generatedMoviesModule(movies: Movie[]): string {
 
 async function discover() {
   const seeds = await readSeed();
-  await writeFileAtomically(DISCOVERY_PATH, JSON.stringify({ seedPath: SEED_PATH, generatedAt: new Date().toISOString(), seedEntries: seeds, status: 'parsed' }, null, 2));
+  await writeFileAtomically(DISCOVERY_PATH, JSON.stringify({ seedPath: SEED_RELATIVE_PATH, generatedAt: new Date().toISOString(), seedEntries: seeds, status: 'parsed' }, null, 2));
   const apiKey = requireTmdbApiKey();
   const candidates = await classify(seeds, apiKey);
   const collisions = candidates.filter((entry) => entry.tmdbId && MOVIES.some((movie) => movie.tmdbId === entry.tmdbId && movie.brandId !== 'lifetime')).map((entry) => ({ title: entry.title, tmdbId: entry.tmdbId, existingBrand: MOVIES.find((movie) => movie.tmdbId === entry.tmdbId)?.brandId }));
   const report = { traktSourceEntriesParsed: seeds.length, uniqueMovieUrls: seeds.length, additionalLifetimeCandidatesDiscovered: 0, totalUniqueCandidates: candidates.length, successfullyResolvedToTmdb: candidates.filter((entry) => entry.tmdbId).length, confirmedLifetime: candidates.filter((entry) => entry.classification === 'CONFIRMED_LIFETIME').length, probableLifetime: candidates.filter((entry) => entry.classification === 'PROBABLE_LIFETIME').length, unverified: candidates.filter((entry) => entry.classification === 'UNVERIFIED').length, rejected: candidates.filter((entry) => entry.classification === 'REJECTED').length, tmdbAmbiguous: candidates.filter((entry) => !entry.tmdbId).length, tmdbUnresolved: candidates.filter((entry) => !entry.tmdbId).length, existingBrandCollisions: collisions.length, collisions, candidates };
-  await writeFileAtomically(DISCOVERY_PATH, JSON.stringify({ seedPath: SEED_PATH, generatedAt: new Date().toISOString(), ...report }, null, 2));
+  await writeFileAtomically(DISCOVERY_PATH, JSON.stringify({ seedPath: SEED_RELATIVE_PATH, generatedAt: new Date().toISOString(), ...report }, null, 2));
   await writeFileAtomically(AUDIT_PATH, JSON.stringify(report, null, 2));
   await writeFileAtomically(COLLISION_PATH, JSON.stringify(collisions, null, 2));
   await writeFileAtomically(PENDING_PATH, JSON.stringify({ probableLifetime: candidates.filter((entry) => entry.classification === 'PROBABLE_LIFETIME'), unverified: candidates.filter((entry) => entry.classification === 'UNVERIFIED'), rejected: candidates.filter((entry) => entry.classification === 'REJECTED') }, null, 2));
@@ -117,7 +118,7 @@ async function importReviewed() {
     tmdbUnresolved: reviewedCandidates.filter((entry) => !entry.tmdbId).length,
     reviewPolicy: 'Manual historical Lifetime slate review supplied by project owner; existing TMDB identities preserved.',
   };
-  await writeFileAtomically(DISCOVERY_PATH, JSON.stringify({ seedPath: SEED_PATH, generatedAt: new Date().toISOString(), ...reviewedReport }, null, 2));
+  await writeFileAtomically(DISCOVERY_PATH, JSON.stringify({ seedPath: SEED_RELATIVE_PATH, generatedAt: new Date().toISOString(), ...reviewedReport }, null, 2));
   await writeFileAtomically(AUDIT_PATH, JSON.stringify(reviewedReport, null, 2));
   await importConfirmed(reviewedReport);
   const finalReport = JSON.parse(await fs.readFile(AUDIT_PATH, 'utf8')) as Record<string, unknown>;

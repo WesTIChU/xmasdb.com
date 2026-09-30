@@ -213,10 +213,6 @@ export function nextComingSoonRefreshAt(now = new Date()): Date {
   return candidate;
 }
 
-export function isTimestampFresh(timestamp: string | undefined, now = new Date()): boolean {
-  return isTmdbFresh(timestamp, now);
-}
-
 function previousFullScheduleAt(now: Date): Date {
   const candidate = new Date(now);
   candidate.setUTCHours(3, 17, 0, 0);

@@ -124,14 +124,6 @@ export function getActorByTmdbId(tmdbPersonId: number): Actor | undefined {
   return getAllActors().find((actor) => actor.tmdbPersonId === tmdbPersonId);
 }
 
-export function getActorByIdentifier(identifier: string | number): Actor | undefined {
-  if (typeof identifier === 'number' || /^\d+$/.test(String(identifier).trim())) {
-    const byId = getActorByTmdbId(parseInt(String(identifier).trim(), 10));
-    if (byId) return byId;
-  }
-  return getActorBySlug(String(identifier).trim());
-}
-
 export function getAllActors(): Actor[] {
   const map = new Map<number, Actor>();
   for (const a of ACTORS) {

@@ -9,7 +9,6 @@ import type {
   HomePayload,
   MovieDetailPayload,
   ListingMovie,
-  FeedStatisticsPayload,
 } from './types';
 
 function isRecord(value: unknown): value is Record<string, unknown> {
@@ -112,24 +111,4 @@ export function isFeedsMetaPayload(value: unknown): value is FeedsMetaPayload {
     && isRecord(value.counts.brands)
     && isRecord(value.counts.years)
     && isRecord(value.counts.actors);
-}
-
-export function isFeedStatisticsPayload(value: unknown): value is FeedStatisticsPayload {
-  return isRecord(value)
-    && isString(value.generatedAt)
-    && isRecord(value.summary)
-    && isNumber(value.summary.totalPulls)
-    && isNumber(value.summary.pullsToday)
-    && isNumber(value.summary.pullsLast7Days)
-    && isNumber(value.summary.pullsLast30Days)
-    && Array.isArray(value.feeds)
-    && value.feeds.every((feed) => isRecord(feed)
-      && isString(feed.id)
-      && isString(feed.name)
-      && isString(feed.type)
-      && isNumber(feed.totalPulls)
-      && isNumber(feed.pullsToday)
-      && isNumber(feed.pullsLast7Days)
-      && isNumber(feed.pullsLast30Days)
-      && (feed.lastPulledAt === undefined || isString(feed.lastPulledAt)));
 }

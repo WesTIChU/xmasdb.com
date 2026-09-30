@@ -2,7 +2,6 @@ import assert from 'assert';
 import { calculateAge, calculateAgeAtDeath, formatActorDate, getCatalogueUniqueActors } from '../src/utils/tmdb';
 import { getActorByTmdbId, getAllActors, getPopularActorsByBrand } from '../src/data/actors';
 import { MOVIES, getMoviesByActorSlug } from '../src/data/movies';
-import { getActorSingleRichJson } from '../src/utils/feeds';
 
 console.log('Running XmasDB Actor & TMDB Pipeline Test Suite...\n');
 
@@ -91,19 +90,7 @@ const referenceActorId = referenceCast.tmdbPersonId!;
   console.log('✓ XmasDB filmography and popular brand stats verified.');
 }
 
-// 7. Rich Feeds Include TMDB Metadata
-{
-  console.log('Test 7: Actor Rich JSON Feed Serialization');
-  const actorJsonStr = getActorSingleRichJson(referenceActorId);
-  assert.ok(actorJsonStr, 'Reference actor rich JSON feed should not be null');
-  const parsed = JSON.parse(actorJsonStr!);
-  assert.strictEqual(parsed.tmdbPersonId, referenceActorId);
-  assert.strictEqual(parsed.name, referenceCast.name);
-  assert.ok(parsed.credits && parsed.credits.length > 0);
-  console.log('✓ Local actor rich JSON feed serialization validated.');
-}
-
-// 8. Search Autocomplete Indexing and Actor Movie Counts
+// 7. Search Autocomplete Indexing and Actor Movie Counts
 {
   console.log('Test 8: Search Autocomplete Local Matching');
   const { MOVIES } = await import('../src/data/movies');

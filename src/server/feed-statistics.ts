@@ -49,10 +49,6 @@ export function getActorFeedDefinition(tmdbPersonId: number): FeedDefinition | u
     : undefined;
 }
 
-export function getMetadataFeedDefinition(id: string, name: string): FeedDefinition {
-  return { id: `metadata:${id}`, name, type: 'metadata' };
-}
-
 function emptyStore(): FeedStatisticsStore {
   return { version: 1, feeds: {} };
 }

@@ -20,16 +20,6 @@ export interface CalendarWeekDateKeys {
   endDateKey: string;
 }
 
-/** Returns the current Monday–Sunday week using UTC calendar dates. */
-export function getCalendarWeekDateKeys(now: Date = new Date()): CalendarWeekDateKeys {
-  const start = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate()));
-  const daysFromMonday = (start.getUTCDay() + 6) % 7;
-  start.setUTCDate(start.getUTCDate() - daysFromMonday);
-  const end = new Date(start);
-  end.setUTCDate(end.getUTCDate() + 6);
-  return { startDateKey: utcDateKey(start), endDateKey: utcDateKey(end) };
-}
-
 /** Matches a movie date's month/day against a Monday–Sunday calendar week. */
 export function isDateKeyInCalendarWeek(dateKey: string, week: CalendarWeekDateKeys): boolean {
   const monthDay = dateKey.slice(5);

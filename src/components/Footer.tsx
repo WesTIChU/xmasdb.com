@@ -43,7 +43,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
 
         <p className="text-xs text-[#6F675E] font-sans-clean max-w-lg mx-auto">
            <strong className="font-semibold text-[#1A3D2F]">XmasDB.com</strong>. A curated collection of Christmas movies.
-           Not affiliated with Hallmark Channel or Lifetime.
+           Not affiliated with Hallmark Channel, Lifetime, UPtv, or Great American Family.
          </p>
          <p className="text-[11px] text-[#756B60] font-sans-clean">&copy; {new Date().getFullYear()} XmasDB.com</p>
       </div>

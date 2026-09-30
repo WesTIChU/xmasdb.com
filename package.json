@@ -1,5 +1,5 @@
 {
-  "name": "react-example",
+  "name": "xmasdb",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -9,7 +9,7 @@
     "build": "vite build && esbuild server.ts --bundle --platform=node --format=cjs --packages=external --sourcemap --outfile=dist/server.cjs",
     "start": "node dist/server.cjs",
     "preview": "vite preview",
-    "clean": "rm -rf dist server.js",
+    "clean": "rm -rf dist",
     "refresh:actors": "tsx scripts/refresh-actors.ts",
     "refresh:tmdb": "tsx scripts/refresh-tmdb.ts",
     "test:browser": "tsx scripts/test-production-browser.ts",

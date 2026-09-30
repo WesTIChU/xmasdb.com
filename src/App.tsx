@@ -740,7 +740,7 @@ export default function App() {
                 <div className="py-6 sm:py-8" id={`brand-view-${brand.slug}`}>
                   <div className="text-center mb-2">
                     <h1 className="text-2xl sm:text-3xl font-heading font-semibold text-[#1A3D2F]">
-                      {brand.name} {descriptor.year ? `(${descriptor.year})` : ''}
+                      {brand.id === 'gaf' ? 'Great American Family Christmas Movies' : brand.name} {descriptor.year ? `(${descriptor.year})` : ''}
                     </h1>
                     <p className="text-sm text-[#736B63] font-body mt-1">
                       {brand.description}

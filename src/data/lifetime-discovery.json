@@ -1,5 +1,5 @@
 {
-  "seedPath": "/home/polza/Desktop/moviedb/lifetime-trakt-seed.txt",
+  "seedPath": "lifetime-trakt-seed.txt",
   "generatedAt": "2026-09-19T19:03:24.502Z",
   "traktSourceEntriesParsed": 216,
   "uniqueMovieUrls": 216,

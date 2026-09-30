@@ -87,11 +87,6 @@ export function fetchUrl<T>(url: string): Promise<T> {
   return request<T>(url);
 }
 
-/** Warms the cache for a URL without surfacing errors. */
-export function prefetch(url: string): void {
-  request(url).catch(() => undefined);
-}
-
 // ---------------------------------------------------------------------------
 // Metadata (bootstrap-injected in production, fetched as a fallback)
 // ---------------------------------------------------------------------------
