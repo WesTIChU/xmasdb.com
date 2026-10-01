@@ -207,6 +207,15 @@ function hasUnchangedClassifierInput(entry: FingerprintCheckpointEntry | undefin
   return Boolean(entry && JSON.stringify(entry.input) === JSON.stringify(input));
 }
 
+function hasNewerCatalogueMetadata(movie: Movie, entry: FingerprintCheckpointEntry): boolean {
+  if (!movie.tmdbUpdatedAt) return false;
+  const catalogueUpdatedAt = Date.parse(movie.tmdbUpdatedAt);
+  const checkpointUpdatedAt = Date.parse(entry.updatedAt);
+  return Number.isFinite(catalogueUpdatedAt)
+    && Number.isFinite(checkpointUpdatedAt)
+    && catalogueUpdatedAt > checkpointUpdatedAt;
+}
+
 export async function classifyFingerprintBatch(
   movies: Movie[],
   classifier: FingerprintClassifier,
@@ -221,6 +230,7 @@ export async function classifyFingerprintBatch(
     const checkpointEntry = checkpoint.entries[movie.id];
     if (!checkpointEntry) return true;
     if (hasUnchangedClassifierInput(checkpointEntry, buildFingerprintClassifierInput(movie))) {
+      if (hasNewerCatalogueMetadata(movie, checkpointEntry)) return true;
       return !isSuccessfulEntry(checkpointEntry) && checkpointEntry.status !== 'insufficient-data';
     }
     return true;

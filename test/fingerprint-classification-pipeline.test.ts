@@ -4,7 +4,7 @@ import os from 'node:os';
 import path from 'node:path';
 import { MOVIES } from '../src/data/movies';
 import { PROTOTYPE_MOVIE_FINGERPRINTS } from '../src/data/movie-fingerprints';
-import { buildFingerprintClassifierInput, classifyFingerprintBatch, emptyFingerprintCheckpoint, getFingerprintInputQuality, mergeFingerprintAssignments, mergeFingerprintAssignmentsWithStats, readFingerprintCheckpoint, validateCheckpoint, validateClassifierResult } from '../src/server/fingerprint-classification';
+import { buildFingerprintClassifierInput, classifyFingerprintBatch, emptyFingerprintCheckpoint, getFingerprintInputQuality, mergeFingerprintAssignments, mergeFingerprintAssignmentsWithStats, readFingerprintCheckpoint, validateCheckpoint, validateClassifierResult, writeFingerprintCheckpoint } from '../src/server/fingerprint-classification';
 
 const movie = MOVIES.find((candidate) => !Object.hasOwn(PROTOTYPE_MOVIE_FINGERPRINTS, candidate.id))!;
 const input = buildFingerprintClassifierInput(movie);
@@ -69,6 +69,32 @@ await classifyFingerprintBatch([movie], noMatchClassifier, { checkpointPath: noM
 assert.equal(noMatchCalls, 1, 'unchanged no-match input is not classified again');
 await classifyFingerprintBatch([{ ...movie, synopsis: `${movie.synopsis} Updated metadata.` }], noMatchClassifier, { checkpointPath: noMatchPath });
 assert.equal(noMatchCalls, 2, 'changed no-match input is eligible for retry');
+
+const newlyAddedMovie = {
+  ...movie,
+  id: 'newly-added-movie',
+  tmdbId: 999999,
+  title: 'Newly Added Christmas Movie',
+  tmdbUpdatedAt: '2026-10-01T12:00:00.000Z',
+};
+const restoredCheckpointPath = path.join(tempDirectory, 'restored-checkpoint.json');
+const restoredCheckpoint = emptyFingerprintCheckpoint();
+restoredCheckpoint.entries[newlyAddedMovie.id] = {
+  movieId: newlyAddedMovie.id,
+  tmdbId: newlyAddedMovie.tmdbId,
+  title: newlyAddedMovie.title,
+  input: buildFingerprintClassifierInput(newlyAddedMovie),
+  status: 'no-match',
+  fingerprints: [],
+  updatedAt: '2026-09-25T00:00:00.000Z',
+};
+await writeFingerprintCheckpoint(restoredCheckpoint, restoredCheckpointPath);
+let newlyAddedCalls = 0;
+await classifyFingerprintBatch([newlyAddedMovie], { classifyMovie: async (value) => {
+  newlyAddedCalls += 1;
+  return { movieId: value.movieId, fingerprints: [] };
+} }, { onlyUnassigned: true, checkpointPath: restoredCheckpointPath });
+assert.equal(newlyAddedCalls, 1, 'newly added unassigned movies are retried when restored checkpoint metadata is older');
 
 const unchangedInsufficientPath = path.join(tempDirectory, 'unchanged-insufficient.json');
 let unchangedInsufficientCalls = 0;
