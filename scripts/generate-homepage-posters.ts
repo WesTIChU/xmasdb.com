@@ -9,6 +9,7 @@ import { publishManagedImageFile, summarizeManagedImagePublication, type Managed
 import { writeFileAtomically } from '../src/utils/atomic-file';
 import { resolveImageUrl } from '../src/utils/image-url';
 import { getHomepageManifestIds } from '../src/utils/homepage-images';
+import { detectImageMagickExecutable } from '../src/server/image-processing';
 
 const projectRoot = process.cwd();
 const sourceRoot = path.join(projectRoot, 'public');
@@ -32,11 +33,9 @@ for (const url of posterUrls) {
 
 mkdirSync(outputDirectory, { recursive: true });
 
-let imageMagickAvailable = true;
-try {
-  execFileSync('magick', ['-version'], { stdio: 'ignore' });
-} catch {
-  imageMagickAvailable = false;
+const imageMagickExecutable = detectImageMagickExecutable();
+const imageMagickAvailable = Boolean(imageMagickExecutable);
+if (!imageMagickAvailable) {
   console.warn('[homepage-posters] ImageMagick unavailable; keeping existing derivatives and using original posters when needed.');
 }
 if (publishR2 && !imageMagickAvailable) throw new Error('[homepage-posters] ImageMagick is required for homepage R2 publication.');
@@ -64,7 +63,7 @@ try {
     if (imageMagickAvailable) {
       const temporaryPath = `${outputPath}.${process.pid}.tmp`;
       try {
-        execFileSync('magick', [sourcePath, '-resize', '320x480', '-strip', '-quality', '82', `webp:${temporaryPath}`], { stdio: 'inherit' });
+        execFileSync(imageMagickExecutable!, [sourcePath, '-resize', '320x480', '-strip', '-quality', '82', `webp:${temporaryPath}`], { stdio: 'inherit' });
         renameSync(temporaryPath, outputPath);
       } finally {
         try { unlinkSync(temporaryPath); } catch { /* already renamed or absent */ }

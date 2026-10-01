@@ -6,9 +6,12 @@ import { execFile } from 'node:child_process';
 import { promisify } from 'node:util';
 import { addMovie, prepareManagedArtwork } from '../scripts/add-movie';
 import { localAssetPath } from '../scripts/import-xmasdb';
-import { convertImageToWebp } from '../src/server/image-processing';
+import { convertImageToWebp, detectImageMagickExecutable } from '../src/server/image-processing';
 
 const execFileAsync = promisify(execFile);
+
+assert.equal(detectImageMagickExecutable((executable) => { if (executable !== 'magick') throw new Error('missing'); }), 'magick');
+assert.equal(detectImageMagickExecutable((executable) => { if (executable !== 'convert') throw new Error('missing'); }), 'convert');
 
 const metadata = { posterUrl: 'https://image.tmdb.org/t/p/w500/poster.jpg', backdropUrl: 'https://image.tmdb.org/t/p/w1280/backdrop.jpg' };
 const successful = await prepareManagedArtwork(123, metadata, async (_source, destination) => destination);

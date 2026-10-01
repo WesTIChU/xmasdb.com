@@ -6,6 +6,7 @@ import path from 'node:path';
 import { MOVIES } from '../src/data/movies';
 import { parseMoviesModule, generateMoviesModule } from '../src/server/movie-import';
 import { createR2Storage, type R2Storage } from '../src/server/r2-storage';
+import { requireImageMagickExecutable } from '../src/server/image-processing';
 import { writeFileAtomically } from '../src/utils/atomic-file';
 import type { Actor, Movie } from '../src/types';
 
@@ -96,7 +97,7 @@ async function writeManifest(manifest: MigrationManifest): Promise<void> {
 }
 
 function imageFormat(filePath: string): string {
-  return execFileSync('magick', ['identify', '-format', '%m', filePath], { encoding: 'utf8' }).trim().toUpperCase();
+  return execFileSync(requireImageMagickExecutable(), ['identify', '-format', '%m', filePath], { encoding: 'utf8' }).trim().toUpperCase();
 }
 
 async function downloadAndConvert(entry: MigrationEntry, directory: string): Promise<{ bytes: Buffer; contentType: string }> {
@@ -110,7 +111,7 @@ async function downloadAndConvert(entry: MigrationEntry, directory: string): Pro
   if (!['JPEG', 'PNG', 'WEBP', 'AVIF'].includes(imageFormat(sourcePath))) throw new Error('TMDB source is not a supported image.');
 
   const outputFormat = entry.kind === 'person' ? 'webp' : 'jpeg';
-  execFileSync('magick', [sourcePath, '-auto-orient', '-strip', '-quality', entry.kind === 'person' ? '82' : '90', `${outputFormat}:${outputPath}`], { stdio: 'ignore' });
+  execFileSync(requireImageMagickExecutable(), [sourcePath, '-auto-orient', '-strip', '-quality', entry.kind === 'person' ? '82' : '90', `${outputFormat}:${outputPath}`], { stdio: 'ignore' });
   const expectedFormat = entry.kind === 'person' ? 'WEBP' : 'JPEG';
   if (imageFormat(outputPath) !== expectedFormat) throw new Error(`Image conversion did not produce ${expectedFormat}.`);
   return { bytes: await fs.readFile(outputPath), contentType: entry.kind === 'person' ? 'image/webp' : 'image/jpeg' };
