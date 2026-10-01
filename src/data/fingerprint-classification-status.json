@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-10-01T14:33:21.570Z",
+  "generatedAt": "2026-10-01T17:51:43.679Z",
   "catalogue": {
-    "totalMovies": 806,
-    "moviesWithIngredients": 751,
+    "totalMovies": 805,
+    "moviesWithIngredients": 750,
     "moviesWithoutIngredients": 55
   },
   "lastRun": {
-    "startedAt": "2026-10-01T14:33:06.804Z",
-    "finishedAt": "2026-10-01T14:33:21.570Z",
+    "startedAt": "2026-10-01T17:51:29.855Z",
+    "finishedAt": "2026-10-01T17:51:43.679Z",
     "status": "SUCCESS",
     "processed": 55,
     "classified": 0,
@@ -22,140 +22,140 @@
         "title": "The Perfect Christmas Date",
         "status": "no-match",
         "fingerprints": [],
-        "processedAt": "2026-10-01T14:33:20.369Z"
+        "processedAt": "2026-10-01T17:51:42.712Z"
       },
       {
         "movieId": "uptv-2021-a-christmas-letter",
         "title": "A Christmas Letter",
         "status": "no-match",
         "fingerprints": [],
-        "processedAt": "2026-10-01T14:33:20.104Z"
+        "processedAt": "2026-10-01T17:51:42.350Z"
       },
       {
         "movieId": "hallmark-2013-hats-off-to-christmas",
         "title": "Hats Off to Christmas!",
         "status": "no-match",
         "fingerprints": [],
-        "processedAt": "2026-10-01T14:33:19.871Z"
+        "processedAt": "2026-10-01T17:51:42.058Z"
       },
       {
         "movieId": "hallmark-2013-santa-switch",
         "title": "Santa Switch",
         "status": "insufficient-data",
         "fingerprints": [],
-        "processedAt": "2026-10-01T14:33:19.595Z"
+        "processedAt": "2026-10-01T17:51:41.661Z"
       },
       {
         "movieId": "hallmark-2012-christmas-song",
         "title": "Christmas Song",
         "status": "insufficient-data",
         "fingerprints": [],
-        "processedAt": "2026-10-01T14:33:19.593Z"
+        "processedAt": "2026-10-01T17:51:41.541Z"
       },
       {
         "movieId": "hallmark-2011-the-case-for-christmas",
         "title": "The Case for Christmas",
         "status": "insufficient-data",
         "fingerprints": [],
-        "processedAt": "2026-10-01T14:33:19.592Z"
+        "processedAt": "2026-10-01T17:51:41.421Z"
       },
       {
         "movieId": "hallmark-2010-gift-of-the-magi",
         "title": "Gift of the Magi",
         "status": "no-match",
         "fingerprints": [],
-        "processedAt": "2026-10-01T14:33:19.589Z"
+        "processedAt": "2026-10-01T17:51:41.326Z"
       },
       {
         "movieId": "hallmark-2009-the-national-tree",
         "title": "The National Tree",
         "status": "insufficient-data",
         "fingerprints": [],
-        "processedAt": "2026-10-01T14:33:19.327Z"
+        "processedAt": "2026-10-01T17:51:40.956Z"
       },
       {
         "movieId": "uptv-2017-12-days-of-giving",
         "title": "12 Days of Giving",
         "status": "insufficient-data",
         "fingerprints": [],
-        "processedAt": "2026-10-01T14:33:19.325Z"
+        "processedAt": "2026-10-01T17:51:40.950Z"
       },
       {
         "movieId": "uptv-2018-chandler-christmas-getaway",
         "title": "Chandler Christmas Getaway",
         "status": "no-match",
         "fingerprints": [],
-        "processedAt": "2026-10-01T14:33:19.324Z"
+        "processedAt": "2026-10-01T17:51:40.910Z"
       },
       {
         "movieId": "uptv-2015-a-dogwalker-s-christmas-tale",
         "title": "A Dogwalker's Christmas Tale",
         "status": "no-match",
         "fingerprints": [],
-        "processedAt": "2026-10-01T14:33:19.024Z"
+        "processedAt": "2026-10-01T17:51:40.663Z"
       },
       {
         "movieId": "uptv-2018-this-is-our-christmas",
         "title": "This Is Our Christmas",
         "status": "insufficient-data",
         "fingerprints": [],
-        "processedAt": "2026-10-01T14:33:18.798Z"
+        "processedAt": "2026-10-01T17:51:40.350Z"
       },
       {
         "movieId": "uptv-2022-christmas-in-wolf-creek",
         "title": "Christmas in Wolf Creek",
         "status": "no-match",
         "fingerprints": [],
-        "processedAt": "2026-10-01T14:33:18.796Z"
+        "processedAt": "2026-10-01T17:51:40.346Z"
       },
       {
         "movieId": "uptv-2022-santa-s-got-style",
         "title": "Santa's Got Style",
         "status": "no-match",
         "fingerprints": [],
-        "processedAt": "2026-10-01T14:33:18.475Z"
+        "processedAt": "2026-10-01T17:51:40.089Z"
       },
       {
         "movieId": "uptv-2022-the-holiday-swap",
         "title": "The Holiday Swap",
         "status": "no-match",
         "fingerprints": [],
-        "processedAt": "2026-10-01T14:33:18.207Z"
+        "processedAt": "2026-10-01T17:51:39.866Z"
       },
       {
         "movieId": "uptv-2022-christmas-lucky-charm",
         "title": "Christmas Lucky Charm",
         "status": "no-match",
         "fingerprints": [],
-        "processedAt": "2026-10-01T14:33:17.971Z"
+        "processedAt": "2026-10-01T17:51:39.604Z"
       },
       {
         "movieId": "uptv-2021-christmas-in-the-wilds",
         "title": "Christmas in the Wilds",
         "status": "no-match",
         "fingerprints": [],
-        "processedAt": "2026-10-01T14:33:17.730Z"
+        "processedAt": "2026-10-01T17:51:39.346Z"
       },
       {
         "movieId": "uptv-2022-the-christmas-retreat",
         "title": "The Christmas Retreat",
         "status": "no-match",
         "fingerprints": [],
-        "processedAt": "2026-10-01T14:33:17.468Z"
+        "processedAt": "2026-10-01T17:51:39.115Z"
       },
       {
         "movieId": "hallmark-2026-christmas-in-canterbury",
         "title": "Christmas in Canterbury",
         "status": "insufficient-data",
         "fingerprints": [],
-        "processedAt": "2026-10-01T14:33:17.227Z"
+        "processedAt": "2026-10-01T17:51:38.907Z"
       },
       {
         "movieId": "lifetime-2006-home-by-christmas",
         "title": "Home by Christmas",
         "status": "no-match",
         "fingerprints": [],
-        "processedAt": "2026-10-01T14:33:17.225Z"
+        "processedAt": "2026-10-01T17:51:38.896Z"
       }
     ]
   }
