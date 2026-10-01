@@ -225320,6 +225320,31 @@ export const MOVIES: Movie[] = [
     "voteCount": 0,
     "tmdbUpdatedAt": "2026-10-01T18:13:09.735Z",
     "tmdbFetchedAt": "2026-10-01T18:13:09.735Z"
+  },
+  {
+    "id": "uptv-2026-the-christmas-treehouse",
+    "slug": "the-christmas-treehouse",
+    "title": "The Christmas Treehouse",
+    "year": 2026,
+    "brandId": "uptv",
+    "releaseDate": "2026-10-01",
+    "synopsis": "When Emma returns to her hometown for Christmas after years away, she reconnects with Ryan, who never left. Drawn together by holiday traditions and a treasured childhood treehouse, old feelings resurface, revealing that love may be closer than she imagined.",
+    "posterUrl": "",
+    "cast": [],
+    "tmdbId": 1786205,
+    "imdbId": "tt43619698",
+    "isComingSoon": true,
+    "status": "coming-soon",
+    "originalTitle": "The Christmas Treehouse",
+    "runtimeMinutes": 87,
+    "genres": [],
+    "releaseDates": [],
+    "crew": [],
+    "trailers": [],
+    "voteAverage": 0,
+    "voteCount": 0,
+    "tmdbUpdatedAt": "2026-10-01T18:22:15.201Z",
+    "tmdbFetchedAt": "2026-10-01T18:22:15.201Z"
   }
 ];
 
