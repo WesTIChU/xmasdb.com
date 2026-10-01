@@ -3651,9 +3651,6 @@ export const PROTOTYPE_MOVIE_FINGERPRINTS: Readonly<Record<string, readonly Fing
     "baking-cooking",
     "unexpected-romance"
   ],
-  "uptv-2010-christmas-mail": [
-    "workplace-romance"
-  ],
   "uptv-2013-guess-who-s-coming-to-christmas": [
     "celebrity",
     "christmas-wish",
