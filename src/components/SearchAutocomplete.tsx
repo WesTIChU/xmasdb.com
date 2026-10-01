@@ -1,21 +1,22 @@
 import React, { useState, useEffect, useRef, useMemo } from 'react';
-import { Search, X, Film, User, Tag } from 'lucide-react';
+import { Search, X, Film, User } from 'lucide-react';
 import type {
   SearchIndexPayload,
+  SearchIngredientEntry,
   SearchMovieEntry,
   SearchPersonEntry,
 } from '../api/types';
 import { SEARCH_INDEX_URL, fetchSearchIndex, peekResolved } from '../api/client';
 import { getBrandById } from '../data/brands';
-import { FINGERPRINTS, type FingerprintDefinition } from '../data/fingerprints';
+import { FingerprintIcon } from './FingerprintIcon';
 import { getMoviePath, getActorPath, getFingerprintPath } from '../utils/urls';
 import { getMoviePoster } from '../utils/posters';
 import { resolveImageUrl } from '../utils/image-url';
 import {
   compareScoredResults,
   scoreActorSearchResult,
+  scoreIngredientSearchResult,
   scoreMovieSearchEntry,
-  scoreTextMatch,
 } from '../utils/search-relevance';
 
 interface SearchAutocompleteProps {
@@ -27,7 +28,7 @@ interface SearchAutocompleteProps {
 type AutocompleteItem =
   | { type: 'movie'; movie: SearchMovieEntry }
   | { type: 'actor'; actor: SearchPersonEntry; movieCount: number }
-  | { type: 'ingredient'; ingredient: FingerprintDefinition }
+  | { type: 'ingredient'; ingredient: SearchIngredientEntry }
   | { type: 'view-all'; total: number };
 
 // Helper to subtly highlight matched query substring
@@ -161,7 +162,7 @@ export const SearchAutocomplete: React.FC<SearchAutocompleteProps> = ({
       return {
         matchingMovies: [] as SearchMovieEntry[],
         matchingActors: [] as SearchPersonEntry[],
-        matchingIngredients: [] as FingerprintDefinition[],
+        matchingIngredients: [] as SearchIngredientEntry[],
       };
     }
 
@@ -177,8 +178,8 @@ export const SearchAutocomplete: React.FC<SearchAutocompleteProps> = ({
       .sort((a, b) => compareScoredResults(a, b) || b.item.movieCount - a.item.movieCount)
       .map(({ item }) => item);
 
-    const ingredients = FINGERPRINTS
-      .map((ingredient) => ({ item: ingredient, score: scoreTextMatch(ingredient.label, query) }))
+    const ingredients = (searchIndex.ingredients ?? [])
+      .map((ingredient) => ({ item: ingredient, score: scoreIngredientSearchResult(ingredient, query) }))
       .filter((result) => result.score > 0)
       .sort(compareScoredResults)
       .map(({ item }) => item);
@@ -412,14 +413,16 @@ export const SearchAutocomplete: React.FC<SearchAutocompleteProps> = ({
                 isSelected ? 'bg-[#F2ECE3]' : 'hover:bg-[#F8F4EE]'
               }`}
             >
-              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded bg-[#EAE2D7] border border-[#DDD3C6] text-[#B08A2E]">
-                <Tag className="h-4 w-4" aria-hidden="true" />
+              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded bg-[#EAE2D7] border border-[#DDD3C6]">
+                <FingerprintIcon />
               </div>
               <div className="min-w-0 flex-1">
                 <div className="font-heading text-sm font-semibold text-[#1A3D2F] line-clamp-1 leading-snug">
                   {highlightMatch(ingredient.label, searchQuery)}
                 </div>
-                <div className="text-xs text-[#736B63] font-body mt-0.5">{ingredient.category}</div>
+                <div className="text-xs text-[#736B63] font-body mt-0.5">
+                  {ingredient.category} · {ingredient.movieCount} {ingredient.movieCount === 1 ? 'Christmas movie' : 'Christmas movies'}
+                </div>
               </div>
             </a>
           );
@@ -495,7 +498,7 @@ export const SearchAutocomplete: React.FC<SearchAutocompleteProps> = ({
               No movies, people, or Christmas Ingredients found matching &ldquo;{searchQuery}&rdquo;.
             </div>
           ) : (
-            <div className="grid divide-y divide-[#EFE8DD] py-1 sm:grid-cols-3 sm:divide-x sm:divide-y-0">
+            <div className="grid divide-y divide-[#EFE8DD] py-1 sm:grid-cols-[36fr_31fr_33fr] sm:divide-x sm:divide-y-0">
               {renderMovieSection(0)}
               {renderActorSection(displayedMovies.length)}
               {renderIngredientSection(displayedMovies.length + displayedActors.length)}

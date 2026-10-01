@@ -257,14 +257,23 @@ export interface SearchPersonEntry {
   movieCount: number;
 }
 
+export interface SearchIngredientEntry {
+  id: string;
+  label: string;
+  category: string;
+  movieCount: number;
+}
+
 export interface SearchIndexPayload {
   movies: SearchMovieEntry[];
   people: SearchPersonEntry[];
+  ingredients: SearchIngredientEntry[];
 }
 
 export interface SearchResultsPayload {
   movies: ListingMovie[];
   actors: SearchPersonEntry[];
+  ingredients?: SearchIngredientEntry[];
 }
 
 export interface FeedsMetaPayload {

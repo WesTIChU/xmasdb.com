@@ -38,9 +38,9 @@ import type {
   SearchPersonEntry,
   SearchResultsPayload,
 } from '../api/types';
-import { scoreActorSearchResult, scoreMovieSearchFields } from '../utils/search-relevance';
+import { scoreActorSearchResult, scoreIngredientSearchResult, scoreMovieSearchFields } from '../utils/search-relevance';
 import { getCreativeCrew, getPersonSlug, isCreativeCrewJob } from '../utils/creative-crew';
-import { getFingerprintById } from '../data/fingerprints';
+import { FINGERPRINTS, getFingerprintById } from '../data/fingerprints';
 import { getMovieFingerprints, getRelatedMovieFingerprints, movieHasFingerprint } from '../data/movie-fingerprints';
 
 const FAVOURITE_MOVIE_TITLES = [
@@ -365,6 +365,12 @@ function toPersonEntry(
 export function buildSearchIndex(): SearchIndexPayload {
   if (!searchIndexCache) {
     const counts = buildActorMovieCounts();
+    const ingredientCounts = new Map<string, number>(FINGERPRINTS.map((ingredient) => [ingredient.id, 0]));
+    for (const movie of MOVIES) {
+      for (const ingredient of getMovieFingerprints(movie)) {
+        ingredientCounts.set(ingredient.id, (ingredientCounts.get(ingredient.id) || 0) + 1);
+      }
+    }
     searchIndexCache = {
       movies: MOVIES.map<SearchMovieEntry>((movie) => ({
         id: movie.id,
@@ -380,6 +386,12 @@ export function buildSearchIndex(): SearchIndexPayload {
         terms: [...movie.cast.map((member) => member.name), ...getCreativeCrew(movie.crew).map((member) => member.name)].join('\u0000').toLowerCase(),
       })),
       people: getAllActors().map((actor) => toPersonEntry(actor, counts)),
+      ingredients: FINGERPRINTS.map((ingredient) => ({
+        id: ingredient.id,
+        label: ingredient.label,
+        category: ingredient.category,
+        movieCount: ingredientCounts.get(ingredient.id) || 0,
+      })),
     };
   }
   return searchIndexCache;
@@ -410,7 +422,13 @@ export function buildSearchResults(rawQuery: string): SearchResultsPayload {
     .sort((a, b) => b.score - a.score || b.actor.movieCount - a.actor.movieCount)
     .map(({ actor }) => actor);
 
-  return { movies, actors };
+  const ingredients = buildSearchIndex().ingredients
+    .map((ingredient) => ({ ingredient, score: scoreIngredientSearchResult(ingredient, query) }))
+    .filter((result) => result.score > 0)
+    .sort((a, b) => b.score - a.score)
+    .map(({ ingredient }) => ingredient);
+
+  return ingredients.length > 0 ? { movies, actors, ingredients } : { movies, actors };
 }
 
 // ---------------------------------------------------------------------------

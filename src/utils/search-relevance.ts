@@ -1,4 +1,4 @@
-import type { ListingMovie, SearchMovieEntry, SearchPersonEntry } from '../api/types';
+import type { ListingMovie, SearchIngredientEntry, SearchMovieEntry, SearchPersonEntry } from '../api/types';
 
 export interface MovieSearchFields {
   title: string;
@@ -48,6 +48,10 @@ export function scoreTextMatch(text: string, rawQuery: string): number {
 
 export function scoreActorSearchResult(actor: SearchPersonEntry, query: string): number {
   return scoreTextMatch(actor.name, query);
+}
+
+export function scoreIngredientSearchResult(ingredient: Pick<SearchIngredientEntry, 'label'>, query: string): number {
+  return scoreTextMatch(ingredient.label, query);
 }
 
 export function scoreMovieSearchFields(fields: MovieSearchFields, query: string): number {

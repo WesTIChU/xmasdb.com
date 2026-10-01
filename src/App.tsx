@@ -45,6 +45,7 @@ import {
 import { getBrandBySlug } from './data/brands';
 import { getFingerprintById } from './data/fingerprints';
 import { FingerprintChips } from './components/FingerprintChips';
+import { FingerprintIcon } from './components/FingerprintIcon';
 import {
   getMoviePath,
   getActorPath,
@@ -522,7 +523,7 @@ export default function App() {
         })
         .catch(() => {
           if (active) {
-            setSearchResults({ movies: [], actors: [] });
+            setSearchResults({ movies: [], actors: [], ingredients: [] });
             setSearching(false);
           }
         });
@@ -547,6 +548,7 @@ export default function App() {
       && (!searchResults.movies.length
         || scoreActorSearchResult(searchResults.actors[0], searchQuery) > scoreListingMovieTitle(searchResults.movies[0], searchQuery))
   );
+  const searchIngredients = searchResults?.ingredients ?? [];
   const actorSearchSection = searchResults && searchResults.actors.length > 0 ? (
     <div className="mb-8 p-4 rounded-lg bg-[#F5EFE6] border border-[#DDD4C6]">
       <h3 className="text-sm font-heading font-semibold text-[#1A3D2F] uppercase tracking-wider mb-2">Actors</h3>
@@ -576,6 +578,34 @@ export default function App() {
         naturalTitleHeight
         emptyMessage={`No movies found matching "${searchQuery}".`}
       />
+    </section>
+  ) : null;
+  const ingredientSearchSection = searchResults && searchIngredients.length > 0 ? (
+    <section aria-labelledby="search-ingredients-heading" className="mb-8 rounded-lg border border-[#DDD4C6] bg-[#F5EFE6] p-4">
+      <h3 id="search-ingredients-heading" className="mb-2 text-sm font-heading font-semibold uppercase tracking-wider text-[#1A3D2F]">Christmas Ingredients</h3>
+      <div className="grid gap-2 sm:grid-cols-2">
+        {searchIngredients.map((ingredient) => (
+          <a
+            key={ingredient.id}
+            href={getFingerprintPath(ingredient.id)}
+            onClick={(e) => {
+              e.preventDefault();
+              navigate(getFingerprintPath(ingredient.id));
+            }}
+            className="flex items-center gap-3 rounded border border-[#DCD3C7] bg-[#FFFDF9] px-3 py-2 transition-colors hover:bg-[#FAF7F2]"
+          >
+            <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded bg-[#EAE2D7]" aria-hidden="true">
+              <FingerprintIcon />
+            </span>
+            <span className="min-w-0">
+              <span className="block truncate font-heading text-sm font-semibold text-[#1A3D2F]">{ingredient.label}</span>
+              <span className="mt-0.5 block text-xs text-[#736B63] font-body">
+                {ingredient.category} · {ingredient.movieCount} {ingredient.movieCount === 1 ? 'Christmas movie' : 'Christmas movies'}
+              </span>
+            </span>
+          </a>
+        ))}
+      </div>
     </section>
   ) : null;
   const isCatalogueRoute = descriptor.type === 'movies'
@@ -617,12 +647,13 @@ export default function App() {
                   <>
                     Found {searchResults.movies.length} {searchResults.movies.length === 1 ? 'movie' : 'movies'}
                     {searchResults.actors.length > 0 && ` and ${searchResults.actors.length} ${searchResults.actors.length === 1 ? 'actor' : 'actors'}`}.
+                    {searchIngredients.length > 0 && ` Plus ${searchIngredients.length} ${searchIngredients.length === 1 ? 'Christmas Ingredient' : 'Christmas Ingredients'}.`}
                   </>
                 )}
               </p>
             </div>
 
-            {searchActorsFirst ? <>{actorSearchSection}{movieSearchSection}</> : <>{movieSearchSection}{actorSearchSection}</>}
+            {searchActorsFirst ? <>{actorSearchSection}{movieSearchSection}{ingredientSearchSection}</> : <>{movieSearchSection}{actorSearchSection}{ingredientSearchSection}</>}
           </div>
           ) : currentViewStatus === 'loading' ? (
           descriptor.type === 'home' ? <HomeLoadingSkeleton /> : (
