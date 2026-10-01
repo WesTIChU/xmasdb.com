@@ -208316,6 +208316,263 @@ export const MOVIES: Movie[] = [
     "voteCount": 24,
     "tmdbUpdatedAt": "2026-10-01T09:17:49.355Z",
     "tmdbFetchedAt": "2026-10-01T09:17:49.355Z"
+  },
+  {
+    "id": "hallmark-2009-mrs-miracle",
+    "slug": "mrs-miracle",
+    "title": "Mrs. Miracle",
+    "year": 2009,
+    "brandId": "hallmark",
+    "releaseDate": "2009-12-05",
+    "synopsis": "Overwhelmed widower Seth Webster is searching for a housekeeper to help him with his unruly six year old twin sons. \"Mrs. Miracle\" mysteriously appears and quickly becomes an irreplaceable nanny, chef, friend... and matchmaker.",
+    "posterUrl": "/images/posters/50506.jpg",
+    "backdropUrl": "/images/backdrops/50506.jpg",
+    "cast": [
+      {
+        "actorId": "59313",
+        "name": "Erin Karpluk",
+        "character": "Reba Maxwell",
+        "slug": "erin-karpluk",
+        "tmdbPersonId": 59313,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/jibU5x89Al5XgqMmQH2sTOtHErk.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "19210",
+        "name": "James Van Der Beek",
+        "character": "Seth Webster",
+        "slug": "james-van-der-beek",
+        "tmdbPersonId": 19210,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/romoF6aNi4v9UcUqRSElfeDvBuJ.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "45863",
+        "name": "Doris Roberts",
+        "character": "Mrs. Merkle",
+        "slug": "doris-roberts",
+        "tmdbPersonId": 45863,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/bfJjsAKKRqUhm1lh2QC8u2atrov.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "1369076",
+        "name": "Michael Strusievici",
+        "character": "Judd Webster",
+        "slug": "michael-strusievici",
+        "tmdbPersonId": 1369076,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/kUKBOXkjUsONCqIs3MS0N5FUkbd.jpg",
+        "order": 3
+      },
+      {
+        "actorId": "1081465",
+        "name": "Valin Shinyei",
+        "character": "Jason Webster",
+        "slug": "valin-shinyei",
+        "tmdbPersonId": 1081465,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/779GCGvCZnAMSTtDX1RNRSI4ICQ.jpg",
+        "order": 4
+      },
+      {
+        "actorId": "70175",
+        "name": "Chelah Horsdal",
+        "character": "Kate Preston",
+        "slug": "chelah-horsdal",
+        "tmdbPersonId": 70175,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/gnylfySYJwlfAhm3QIdQ2Ua4zGd.jpg",
+        "order": 5
+      },
+      {
+        "actorId": "99208",
+        "name": "Johannah Newmarch",
+        "character": "Vicki",
+        "slug": "johannah-newmarch",
+        "tmdbPersonId": 99208,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/exciBoqBPFs0y9TmOg0ZJB6rlWV.jpg",
+        "order": 6
+      },
+      {
+        "actorId": "203227",
+        "name": "Rikki Gagne",
+        "character": "Carrie",
+        "slug": "rikki-gagne",
+        "tmdbPersonId": 203227,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/3K1qcjSQweph5dEwxest7yf3loZ.jpg",
+        "order": 7
+      },
+      {
+        "actorId": "41432",
+        "name": "Candus Churchill",
+        "character": "Mrs. Larson",
+        "slug": "candus-churchill",
+        "tmdbPersonId": 41432,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/r3oaD58Eyfbyz8Yod3LNVbKG942.jpg",
+        "order": 8
+      },
+      {
+        "actorId": "117085",
+        "name": "Wanda Cannon",
+        "character": "Joan Maxwell",
+        "slug": "wanda-cannon",
+        "tmdbPersonId": 117085,
+        "order": 9
+      },
+      {
+        "actorId": "63568",
+        "name": "Patti Allan",
+        "character": "Milly Waters",
+        "slug": "patti-allan",
+        "tmdbPersonId": 63568,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/ntFqFRTtOSYHfnNsSBUCubuop9U.jpg",
+        "order": 10
+      },
+      {
+        "actorId": "46898",
+        "name": "Peter Graham-Gaudreau",
+        "character": "Doug",
+        "slug": "peter-graham-gaudreau",
+        "tmdbPersonId": 46898,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/uxUN4vj7ioO8Oh3m2YW8ZJHh915.jpg",
+        "order": 11
+      },
+      {
+        "actorId": "126223",
+        "name": "Dolores Drake",
+        "character": "Mrs. Hampston",
+        "slug": "dolores-drake",
+        "tmdbPersonId": 126223,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/4jFIcgSZH3jjQa8B9C0KYrKWUko.jpg",
+        "order": 12
+      },
+      {
+        "actorId": "1366699",
+        "name": "Maggie Sullivun",
+        "character": "Mrs. Cooper",
+        "slug": "maggie-sullivun",
+        "tmdbPersonId": 1366699,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/lOi5VqB8AlDiCH38z0FqQFuhG4h.jpg",
+        "order": 13
+      },
+      {
+        "actorId": "1235366",
+        "name": "Gordon Tipple",
+        "character": "Dryer Repair Man",
+        "slug": "gordon-tipple",
+        "tmdbPersonId": 1235366,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/v7tMsAOE6T7g1hG3fsDtL0hAQqr.jpg",
+        "order": 14
+      },
+      {
+        "actorId": "1366717",
+        "name": "Brittany-Ellen Willacy",
+        "character": "Store Clerk",
+        "slug": "brittany-ellen-willacy",
+        "tmdbPersonId": 1366717,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/koyvzeGxHWPCTkZANagnQ1pTPAW.jpg",
+        "order": 15
+      },
+      {
+        "actorId": "1001838",
+        "name": "Almeera Jiwa",
+        "character": "Cindy",
+        "slug": "almeera-jiwa",
+        "tmdbPersonId": 1001838,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/pqGbm61Y09RKERbnFYfq6jGY5E9.jpg",
+        "order": 16
+      },
+      {
+        "actorId": "119812",
+        "name": "Dalila Bela",
+        "character": "Dalila Bela",
+        "slug": "dalila-bela",
+        "tmdbPersonId": 119812,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/eA9WDWF2Tx7lnM8IEo19gqurXgd.jpg",
+        "order": 17
+      },
+      {
+        "actorId": "1888310",
+        "name": "Pat Waldron",
+        "character": "Mrs. Darling",
+        "slug": "pat-waldron",
+        "tmdbPersonId": 1888310,
+        "order": 18
+      }
+    ],
+    "director": "Michael M. Scott",
+    "tmdbId": 50506,
+    "imdbId": "tt1431115",
+    "isComingSoon": false,
+    "status": "collection",
+    "originalTitle": "Mrs. Miracle",
+    "runtimeMinutes": 90,
+    "genres": [
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      },
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 10751,
+        "name": "Family"
+      },
+      {
+        "id": 14,
+        "name": "Fantasy"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "US",
+        "releaseDate": "2009-12-05T00:00:00.000Z",
+        "type": 6,
+        "certification": "PG",
+        "note": "Hallmark Channel "
+      }
+    ],
+    "crew": [
+      {
+        "id": 225586,
+        "name": "Michael M. Scott",
+        "job": "Director",
+        "department": "Directing",
+        "creditId": "52fe47cac3a36847f8148477"
+      },
+      {
+        "id": 239783,
+        "name": "David Golden",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "55ffdc50c3a36813340056be"
+      }
+    ],
+    "trailers": [
+      {
+        "key": "nulPPmIpb9Y",
+        "site": "YouTube",
+        "type": "Trailer",
+        "name": "Debbie Macomber’s Mrs. Miracle",
+        "official": true
+      },
+      {
+        "key": "ptZMlP3Feik",
+        "site": "YouTube",
+        "type": "Trailer",
+        "name": "Mrs. Miracle - Coming Soon on DVD Trailer",
+        "official": false
+      }
+    ],
+    "trailerYoutubeKey": "nulPPmIpb9Y",
+    "voteAverage": 6,
+    "voteCount": 117,
+    "tmdbUpdatedAt": "2026-10-01T09:19:05.385Z",
+    "tmdbFetchedAt": "2026-10-01T09:19:05.385Z"
   }
 ];
 
