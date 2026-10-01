@@ -33,6 +33,7 @@ import { ContactRateLimiter, ensureContactStorage, getContactDataDir, readContac
 import { ADMIN_SESSION_COOKIE, AdminAuth, AdminLoginRateLimiter, AdminMutationRateLimiter, clearCookieOptions, cookieOptions, getAdminLoginRedirect, isSameOriginMutation } from './src/server/admin-auth';
 import { commitMoviesToGitHub, dispatchComingSoonRefresh, isGitHubConfigured, readGitHubBranch, WorkflowDispatchCooldown } from './src/server/github-catalogue';
 import { buildMovieFromTmdb, normalizeBrand, normalizeStatus, parseBulkMovieInput } from './src/server/movie-import';
+import { applyAdminMovieEdit, getMovieWriters, removeMovie, removeMovieFingerprintAssignment, searchAdminMovies, validateAdminMovieEdit, validateMovieUniqueness } from './src/server/admin-movies';
 import { ingestManagedImage } from './src/server/managed-images';
 import { fetchTmdbMovie, requireTmdbApiKey } from './src/utils/tmdb';
 import { getCanonicalRedirect, getRobotsTxt, renderServerHtml } from './src/server/seo';
@@ -51,7 +52,7 @@ import { getFingerprintCatalogueStats, readFingerprintStatus } from './src/serve
 function isKnownPagePath(rawPath: string): boolean {
   const clean = rawPath.replace(/^\/+|\/+$/g, '');
   if (!clean || clean === 'movies' || clean === 'all' || clean === 'feeds' || clean === 'about' || clean === 'privacy' || clean === 'contact' || (clean === 'api' && PUBLIC_API_ENABLED)) return true;
-  if (clean === 'admin/login' || clean === 'admin/submissions' || clean === 'admin/feed-statistics' || clean === 'admin/movies/add') return true;
+  if (clean === 'admin/login' || clean === 'admin/submissions' || clean === 'admin/feed-statistics' || clean === 'admin/movies/add' || clean === 'admin/movies' || clean.startsWith('admin/movies/')) return true;
   const fingerprintMatch = clean.match(/^fingerprint\/([^/]+)$/i);
   if (fingerprintMatch) return Boolean(getFingerprintById(fingerprintMatch[1]));
   const yearMatch = clean.match(/^year\/(\d+)$/i);
@@ -565,7 +566,10 @@ async function startServer() {
         return { ...movie, posterUrl: posterUrl || '', backdropUrl };
       });
       const movies = [...github.movies, ...fetched];
+      if (new Set(movies.map((movie) => movie.id)).size !== movies.length) throw new Error('The proposed catalogue contains duplicate movie IDs.');
       if (new Set(movies.map((movie) => movie.tmdbId)).size !== movies.length) throw new Error('The proposed catalogue contains duplicate TMDB IDs.');
+      const imdbIds = movies.map((movie) => movie.imdbId?.toLowerCase()).filter((value): value is string => Boolean(value));
+      if (new Set(imdbIds).size !== imdbIds.length) throw new Error('The proposed catalogue contains duplicate IMDb IDs.');
       let actors: Awaited<ReturnType<typeof enrichNewCatalogueActors>> | undefined;
       if (github.actors) {
         try {
@@ -586,6 +590,77 @@ async function startServer() {
     } catch (error) {
       console.error(`[Admin Movies Commit] ${error instanceof Error ? error.message : 'request failed'}`);
       return res.status(400).json({ error: error instanceof Error && error.message.startsWith('The XmasDB repository changed') ? error.message : 'Catalogue update failed. No GitHub commit was created.' });
+    }
+  });
+
+  app.get('/api/admin/movies', requireAdmin, async (req, res) => {
+    const query = typeof req.query.q === 'string' ? req.query.q : '';
+    try {
+      const source = isGitHubConfigured() ? (await readGitHubBranch()).movies : MOVIES;
+      const movies = searchAdminMovies(source, query).map((movie) => ({ id: movie.id, title: movie.title, year: movie.year, network: movie.brandId, tmdbId: movie.tmdbId }));
+      return res.setHeader('Cache-Control', 'no-store').json({ movies, query });
+    } catch {
+      return res.status(503).json({ error: 'Canonical catalogue could not be loaded.' });
+    }
+  });
+
+  app.post('/api/admin/movies/edit/preview', requireAdmin, requireSameOrigin, express.json({ limit: '4kb' }), async (req, res) => {
+    try {
+      if (!isGitHubConfigured()) return res.status(503).json({ error: 'GitHub catalogue integration is not configured.' });
+      const identifier = typeof req.body?.identifier === 'string' ? req.body.identifier.trim() : '';
+      if (!identifier) return res.status(400).json({ error: 'Enter a movie ID, TMDb ID, slug or title.' });
+      const github = await readGitHubBranch();
+      const matches = github.movies.filter((movie) => movie.id === identifier || String(movie.tmdbId) === identifier || movie.slug.toLowerCase() === identifier.toLowerCase() || movie.title.toLowerCase() === identifier.toLowerCase());
+      if (matches.length === 0) return res.status(404).json({ error: 'Movie was not found in the canonical catalogue.' });
+      if (matches.length > 1) return res.status(409).json({ error: 'That title matches more than one movie. Use its movie ID or TMDb ID.' });
+      const movie = matches[0];
+      return res.json({ baseSha: github.commitSha, movie: { ...movie, writers: getMovieWriters(movie) } });
+    } catch (error) {
+      console.error(`[Admin Movie Edit Preview] ${error instanceof Error ? error.message : 'request failed'}`);
+      return res.status(400).json({ error: 'Movie could not be loaded for editing.' });
+    }
+  });
+
+  app.post('/api/admin/movies/edit/commit', requireAdmin, requireSameOrigin, express.json({ limit: '16kb' }), async (req, res) => {
+    const ip = req.ip || req.socket.remoteAddress || 'unknown';
+    if (!adminMutationRateLimiter.allow(ip)) return res.status(429).json({ error: 'Too many admin requests. Please try again later.' });
+    try {
+      const id = typeof req.body?.id === 'string' ? req.body.id : '';
+      const baseSha = typeof req.body?.baseSha === 'string' ? req.body.baseSha : '';
+      if (!id || !baseSha) return res.status(400).json({ error: 'Choose a movie and provide all editable values.' });
+      const github = await readGitHubBranch();
+      if (github.commitSha !== baseSha) return res.status(409).json({ error: 'The XmasDB repository changed while you were editing. Load the movie again and try again.' });
+      const existing = github.movies.find((movie) => movie.id === id);
+      if (!existing) return res.status(404).json({ error: 'Movie was not found in the canonical catalogue.' });
+      const edited = applyAdminMovieEdit(existing, validateAdminMovieEdit(req.body));
+      const movies = github.movies.map((movie) => movie.id === id ? edited : movie);
+      validateMovieUniqueness(movies, edited, id);
+      const commit = await commitMoviesToGitHub(movies, baseSha, `Edit Christmas movie: ${edited.title}`);
+      return res.json({ commitSha: commit.commitSha, message: 'Movie updated. Deployment pending.' });
+    } catch (error) {
+      console.error(`[Admin Movie Edit Commit] ${error instanceof Error ? error.message : 'request failed'}`);
+      const message = error instanceof Error ? error.message : '';
+      return res.status(400).json({ error: message.startsWith('The XmasDB repository changed') || message.startsWith('Movie') || message.startsWith('Network') || message.startsWith('Title') || message.startsWith('Release') || message.startsWith('Runtime') || message.startsWith('Rating') || message.startsWith('Director') || message.startsWith('Writers') || message.startsWith('IMDb') || message.startsWith('TMDb') || message.startsWith('Poster') || message.startsWith('Backdrop') || message.startsWith('Duplicate') || message.startsWith('The edited') ? message : 'Catalogue update failed. No GitHub commit was created.' });
+    }
+  });
+
+  app.post('/api/admin/movies/delete', requireAdmin, requireSameOrigin, express.json({ limit: '4kb' }), async (req, res) => {
+    const ip = req.ip || req.socket.remoteAddress || 'unknown';
+    if (!adminMutationRateLimiter.allow(ip)) return res.status(429).json({ error: 'Too many admin requests. Please try again later.' });
+    try {
+      const id = typeof req.body?.id === 'string' ? req.body.id : '';
+      const baseSha = typeof req.body?.baseSha === 'string' ? req.body.baseSha : '';
+      if (!id || !baseSha || req.body?.confirm !== true) return res.status(400).json({ error: 'Explicit deletion confirmation is required.' });
+      const github = await readGitHubBranch();
+      if (github.commitSha !== baseSha) return res.status(409).json({ error: 'The XmasDB repository changed while you were confirming deletion. Load the movie again and try again.' });
+      const { movie, movies } = removeMovie(github.movies, id);
+      const fingerprints = removeMovieFingerprintAssignment(github.fingerprintAssignments, id);
+      const commit = await commitMoviesToGitHub(movies, baseSha, `Delete Christmas movie: ${movie.title}`, undefined, undefined, fingerprints);
+      return res.json({ commitSha: commit.commitSha, message: 'Movie deleted. Christmas Ingredient assignment removed. Existing artwork was retained safely because it may be shared.' });
+    } catch (error) {
+      console.error(`[Admin Movie Delete] ${error instanceof Error ? error.message : 'request failed'}`);
+      const message = error instanceof Error ? error.message : '';
+      return res.status(400).json({ error: message.startsWith('Movie was not found') || message.startsWith('Explicit') ? message : 'Catalogue deletion failed. No GitHub commit was created.' });
     }
   });
 

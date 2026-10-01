@@ -1,8 +1,11 @@
 import type { Actor, Movie } from '../types';
+import type { FingerprintId } from '../data/fingerprints';
 import { generateMoviesModule, parseMoviesModule } from './movie-import';
+import { buildFingerprintOverlaySource, parseFingerprintOverlaySource } from './fingerprint-classification';
 
 const MOVIES_PATH = 'src/data/movies.ts';
 const ACTORS_PATH = 'src/data/actors.json';
+const FINGERPRINTS_PATH = 'src/data/movie-fingerprints.ts';
 export const COMING_SOON_WORKFLOW = 'nightly-coming-soon-refresh.yml';
 
 export interface GitHubConfig {
@@ -12,11 +15,12 @@ export interface GitHubConfig {
   branch?: string;
 }
 
-interface BranchState {
+export interface BranchState {
   commitSha: string;
   treeSha: string;
   movies: Movie[];
   actors?: Actor[];
+  fingerprintAssignments?: Record<string, readonly FingerprintId[]>;
 }
 
 interface GitTreeResponse {
@@ -102,6 +106,7 @@ export async function readGitHubBranch(config = configFromEnv()): Promise<Branch
   const tree = await githubRequest<GitTreeResponse>(config, `/git/trees/${encodeURIComponent(commit.tree.sha)}?recursive=1`);
   const file = tree.tree?.find((entry) => entry.path === MOVIES_PATH && entry.type === 'blob' && entry.sha);
   const actorsFile = tree.tree?.find((entry) => entry.path === ACTORS_PATH && entry.type === 'blob' && entry.sha);
+  const fingerprintsFile = tree.tree?.find((entry) => entry.path === FINGERPRINTS_PATH && entry.type === 'blob' && entry.sha);
   if (!file?.sha) {
     console.error('[GitHub Catalogue] Canonical file was not found in Git tree', JSON.stringify({
       repository: `${config.owner}/${config.repo}`,
@@ -130,6 +135,15 @@ export async function readGitHubBranch(config = configFromEnv()): Promise<Branch
       throw new Error('Canonical actors file contains invalid JSON.');
     }
   }
+  let fingerprintAssignments: Record<string, readonly FingerprintId[]> | undefined;
+  if (fingerprintsFile?.sha) {
+    const fingerprintsBlob = await githubRequest<GitBlobResponse>(config, `/git/blobs/${encodeURIComponent(fingerprintsFile.sha)}`);
+    const encodedFingerprints = fingerprintsBlob.content || '';
+    const fingerprintsSource = fingerprintsBlob.encoding === 'base64'
+      ? Buffer.from(encodedFingerprints.replace(/\s/g, ''), 'base64').toString('utf8')
+      : encodedFingerprints;
+    fingerprintAssignments = parseFingerprintOverlaySource(fingerprintsSource);
+  }
   console.info('[GitHub Catalogue] Loaded canonical source', JSON.stringify({
     repository: `${config.owner}/${config.repo}`,
     branch: config.branch,
@@ -139,7 +153,7 @@ export async function readGitHubBranch(config = configFromEnv()): Promise<Branch
     encodedBytes: Buffer.byteLength(encodedContent, 'utf8'),
     decodedBytes: Buffer.byteLength(source, 'utf8'),
   }));
-  return { commitSha: ref.object.sha, treeSha: commit.tree.sha, movies: parseMoviesModule(source, `GitHub Git Blob ${file.sha}`), actors };
+  return { commitSha: ref.object.sha, treeSha: commit.tree.sha, movies: parseMoviesModule(source, `GitHub Git Blob ${file.sha}`), actors, fingerprintAssignments };
 }
 
 export async function commitMoviesToGitHub(
@@ -148,6 +162,7 @@ export async function commitMoviesToGitHub(
   message: string,
   config = configFromEnv(),
   actors?: Actor[],
+  fingerprintAssignments?: Record<string, readonly FingerprintId[]>,
 ): Promise<{ commitSha: string }> {
   const current = await readGitHubBranch(config);
   if (current.commitSha !== baseSha) throw new Error('The XmasDB repository changed while you were reviewing these movies. Refresh the preview and try again.');
@@ -162,6 +177,13 @@ export async function commitMoviesToGitHub(
       body: JSON.stringify({ content: JSON.stringify(actors, null, 2), encoding: 'utf-8' }),
       headers: { 'Content-Type': 'application/json' },
     })
+      : undefined;
+  const fingerprintBlob = fingerprintAssignments
+    ? await githubRequest<{ sha: string }>(config, '/git/blobs', {
+      method: 'POST',
+      body: JSON.stringify({ content: buildFingerprintOverlaySource(fingerprintAssignments), encoding: 'utf-8' }),
+      headers: { 'Content-Type': 'application/json' },
+    })
     : undefined;
   const tree = await githubRequest<{ sha: string }>(config, '/git/trees', {
     method: 'POST',
@@ -170,6 +192,7 @@ export async function commitMoviesToGitHub(
       tree: [
         { path: MOVIES_PATH, mode: '100644', type: 'blob', sha: blob.sha },
         ...(actorBlob ? [{ path: ACTORS_PATH, mode: '100644', type: 'blob', sha: actorBlob.sha }] : []),
+        ...(fingerprintBlob ? [{ path: FINGERPRINTS_PATH, mode: '100644', type: 'blob', sha: fingerprintBlob.sha }] : []),
       ],
     }),
     headers: { 'Content-Type': 'application/json' },

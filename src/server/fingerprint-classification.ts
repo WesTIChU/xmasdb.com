@@ -427,3 +427,16 @@ export function getRelatedMovieFingerprints(movies: Array<Pick<Movie, 'id' | 'fi
 }
 `;
 }
+
+export function parseFingerprintOverlaySource(source: string): Record<string, readonly FingerprintId[]> {
+  const match = source.match(/PROTOTYPE_MOVIE_FINGERPRINTS[^=]*=\s*(\{[\s\S]*?\});/);
+  if (!match) throw new Error('Fingerprint overlay has an unexpected format.');
+  let parsed: unknown;
+  try {
+    parsed = JSON.parse(match[1]);
+  } catch {
+    throw new Error('Fingerprint overlay contains invalid data.');
+  }
+  if (!parsed || typeof parsed !== 'object' || Array.isArray(parsed)) throw new Error('Fingerprint overlay does not contain an assignment map.');
+  return parsed as Record<string, readonly FingerprintId[]>;
+}

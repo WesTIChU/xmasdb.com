@@ -43,6 +43,7 @@ export function getServerSeo(pathname: string, search = ''): SeoDocument {
   if (clean === 'admin/submissions') return { title: 'Submissions | XmasDB', description: 'Private XmasDB administration.', canonicalPath: '/admin/submissions/', noIndex: true };
   if (clean === 'admin/feed-statistics') return { title: 'Feed Statistics | XmasDB', description: 'Private XmasDB administration.', canonicalPath: '/admin/feed-statistics/', noIndex: true };
   if (clean === 'admin/movies/add') return { title: 'Add Movies | XmasDB', description: 'Private XmasDB administration.', canonicalPath: '/admin/movies/add/', noIndex: true };
+  if (clean === 'admin/movies' || clean.startsWith('admin/movies/')) return { title: 'Movies | XmasDB', description: 'Private XmasDB administration.', canonicalPath: '/admin/movies/', noIndex: true };
   const fingerprintMatch = clean.match(/^fingerprint\/([^/]+)$/i);
   if (fingerprintMatch) {
     const fingerprint = getFingerprintById(fingerprintMatch[1]);
@@ -123,6 +124,7 @@ export function getCanonicalRedirect(pathname: string): string | null {
   if (clean === 'admin/submissions') return pathname === '/admin/submissions/' ? null : '/admin/submissions/';
   if (clean === 'admin/feed-statistics') return pathname === '/admin/feed-statistics/' ? null : '/admin/feed-statistics/';
   if (clean === 'admin/movies/add') return pathname === '/admin/movies/add/' ? null : '/admin/movies/add/';
+  if (clean === 'admin/movies' || clean.startsWith('admin/movies/')) return pathname === '/admin/movies/' ? null : '/admin/movies/';
   if (/^year\/\d+$/i.test(clean)) return pathname === `/${clean}/` ? null : `/${clean}/`;
   const brandMatch = clean.match(/^([^/]+)(?:\/(\d+))?$/i);
   if (brandMatch && getBrandBySlug(brandMatch[1])) return pathname === `/${clean.toLowerCase()}/` ? null : `/${clean.toLowerCase()}/`;

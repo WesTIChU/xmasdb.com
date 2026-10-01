@@ -2,6 +2,8 @@ import assert from 'node:assert/strict';
 import { buildMovieFromTmdb, extractTmdbId, generateMoviesModule, normalizeBrand, normalizeStatus, parseBulkMovieInput, parseMoviesModule } from '../src/server/movie-import';
 import { commitMoviesToGitHub, readGitHubBranch } from '../src/server/github-catalogue';
 import { fetchTmdbMovie } from '../src/utils/tmdb';
+import { applyAdminMovieEdit, getMovieWriters, removeMovie, removeMovieFingerprintAssignment, validateAdminMovieEdit, validateMovieUniqueness } from '../src/server/admin-movies';
+import type { FingerprintId } from '../src/data/fingerprints';
 import fs from 'node:fs/promises';
 import path from 'node:path';
 
@@ -29,6 +31,27 @@ assert.equal(movie.brandId, 'hallmark');
 assert.equal(movie.status, 'coming-soon');
 assert.equal(movie.isComingSoon, true);
 assert.match(generateMoviesModule([movie]), /A Preview Christmas/);
+const editable = {
+  brand: 'lifetime', title: 'Edited Christmas Story', releaseDate: '2024-11-02', synopsis: 'Updated synopsis', runtimeMinutes: '92', rating: '7.4',
+  director: 'New Director', writers: 'First Writer\nSecond Writer', imdbId: 'tt1234567', tmdbId: '1547914', posterUrl: '/images/posters/1547914.jpg', backdropUrl: '/images/backdrops/1547914.jpg',
+};
+const validated = validateAdminMovieEdit(editable);
+const sourceMovie = { ...movie, id: 'hallmark-2025-preview', cast: [{ actorId: '1', name: 'Actor', character: 'Role', slug: 'actor' }], crew: [{ id: 7, name: 'Old Writer', job: 'Writer', department: 'Writing' }], fingerprints: ['small-town'] };
+const edited = applyAdminMovieEdit(sourceMovie, validated);
+assert.equal(edited.id, sourceMovie.id, 'editing preserves the canonical movie ID');
+assert.equal(edited.year, 2024, 'editing release date moves the catalogue year');
+assert.equal(edited.brandId, 'lifetime', 'editing network moves the catalogue network');
+assert.deepEqual(edited.cast, sourceMovie.cast, 'editing preserves cast');
+assert.deepEqual(getMovieWriters(edited), ['First Writer', 'Second Writer']);
+assert.equal(edited.fingerprints, sourceMovie.fingerprints, 'editing preserves Christmas Ingredients');
+assert.throws(() => validateAdminMovieEdit({ ...editable, tmdbId: 'not-an-id' }), /TMDb ID/);
+assert.throws(() => validateAdminMovieEdit({ ...editable, posterUrl: 'https://example.test/poster.jpg' }), /Poster path/);
+assert.throws(() => validateAdminMovieEdit({ ...editable, imdbId: 'bad' }), /IMDb ID/);
+assert.throws(() => validateMovieUniqueness([edited, { ...sourceMovie, id: 'other', tmdbId: edited.tmdbId }], edited), /TMDb ID/);
+const deleted = removeMovie([sourceMovie, movie], sourceMovie.id);
+assert.equal(deleted.movie.id, sourceMovie.id);
+assert.deepEqual(deleted.movies, [movie], 'deletion removes only the selected movie and preserves unrelated movies');
+assert.deepEqual(removeMovieFingerprintAssignment({ [sourceMovie.id]: ['small-town'], [movie.id]: ['friends-to-lovers'] } as Record<string, readonly FingerprintId[]>, sourceMovie.id), { [movie.id]: ['friends-to-lovers'] }, 'deletion removes the selected Christmas Ingredient assignment');
 const canonicalSource = await fs.readFile(path.join(process.cwd(), 'src/data/movies.ts'), 'utf8');
 const canonicalMovies = parseMoviesModule(canonicalSource);
 assert.ok(canonicalMovies.length > 0, 'The canonical movies.ts export should load in the shared parser');
