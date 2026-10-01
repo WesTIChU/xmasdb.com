@@ -18,6 +18,13 @@ const comingSoonMovie = MOVIES.find((movie) => movie.status === 'coming-soon' &&
 assert.ok(comingSoonMovie, 'canonical catalogue should contain a Coming Soon movie');
 const catalogueMovieCount = MOVIES.filter((movie) => movie.status === 'collection' || movie.status === 'coming-soon').length;
 assert.strictEqual(defaultPage.total, catalogueMovieCount);
+const hotChocolateHoliday = MOVIES.find((movie) => movie.tmdbId === 777405);
+assert.ok(hotChocolateHoliday, 'Hot Chocolate Holiday remains in the catalogue');
+assert.equal(hotChocolateHoliday?.id, 'gaf-2021-hot-chocolate-holiday', 'Hot Chocolate Holiday keeps its existing movie ID');
+assert.equal(hotChocolateHoliday?.brandId, 'lifetime', 'Hot Chocolate Holiday is classified under Lifetime');
+assert.equal(MOVIES.filter((movie) => movie.tmdbId === 777405).length, 1, 'Hot Chocolate Holiday has no duplicate movie');
+assert.ok(!buildCatalogueListing(parseCatalogueQuery(''), 'gaf', 2021)?.movies.some((movie) => movie.tmdbId === 777405), 'Hot Chocolate Holiday disappears from GAF 2021');
+assert.ok(buildCatalogueListing(parseCatalogueQuery(''), 'lifetime', 2021)?.movies.some((movie) => movie.tmdbId === 777405), 'Hot Chocolate Holiday appears under Lifetime 2021');
 
 const thisMonthBase = { ...MOVIES[0], status: 'collection' as const, premiereDate: undefined, releaseDate: '2020-11-25' };
 const thisMonthMovie = (id: string, releaseDate: string, status: 'collection' | 'coming-soon' = 'collection', title = id) => ({ ...thisMonthBase, id, title, releaseDate, status });

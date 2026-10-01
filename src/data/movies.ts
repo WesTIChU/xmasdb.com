@@ -119691,7 +119691,7 @@ export const MOVIES: Movie[] = [
     "slug": "hot-chocolate-holiday",
     "title": "Hot Chocolate Holiday",
     "year": 2021,
-    "brandId": "gaf",
+    "brandId": "lifetime",
     "releaseDate": "2021-12-24",
     "runtimeMinutes": 88,
     "synopsis": "Colette runs a coffee shop that is known for her secret and famous hot chocolate. When Marcus, a new dessert shop owner, starts to draw in Colette's customers with his very own specialty hot chocolate that tastes exactly like the recipe from her beloved grandmother, she is determined to expose him. But as she gets to know Marcus, sparks fly between the cocoa connoisseurs.",
