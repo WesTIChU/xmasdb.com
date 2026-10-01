@@ -4223,6 +4223,29 @@
     "tmdbUpdatedAt": "2026-09-21T13:01:28.441Z"
   },
   {
+    "id": "1438000",
+    "slug": "amanda-joy",
+    "name": "Amanda Joy",
+    "tmdbPersonId": 1438000,
+    "photoUrl": "/images/people/1438000.webp",
+    "profileUrl": "/images/people/1438000.webp",
+    "birthday": "1989-02-16",
+    "placeOfBirth": "Canada",
+    "imdbPersonId": "nm1351026",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 10,
+    "alsoKnownAs": [
+      "Amanda Joy Lim",
+      "Emi Joy Lim"
+    ],
+    "instagramId": "notamandajoy",
+    "twitterId": "notamandajoy",
+    "facebookId": "amandajoymedia",
+    "tmdbUpdatedAt": "2026-10-01T09:17:52.414Z",
+    "tmdbFetchedAt": "2026-10-01T09:17:52.414Z"
+  },
+  {
     "id": "amanda-khan",
     "slug": "amanda-khan",
     "name": "Amanda Khan",
@@ -5873,6 +5896,29 @@
     "knownForDepartment": "Acting",
     "knownCredits": 11,
     "tmdbUpdatedAt": "2026-09-22T20:53:51.150Z"
+  },
+  {
+    "id": "37041",
+    "slug": "andrew-mccarthy",
+    "name": "Andrew McCarthy",
+    "tmdbPersonId": 37041,
+    "photoUrl": "/images/people/37041.webp",
+    "profileUrl": "/images/people/37041.webp",
+    "birthday": "1962-11-29",
+    "placeOfBirth": "New York City, New York, USA",
+    "biography": "Andrew Thomas McCarthy (born November 29, 1962) is an American actor. He is best known for his roles in the 1980s films St. Elmo's Fire, Mannequin, Weekend at Bernie's, Pretty in Pink, and Less Than Zero, and more recently for his role in the television shows Lipstick Jungle and Royal Pains.",
+    "imdbPersonId": "nm0000530",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 110,
+    "alsoKnownAs": [
+      "اندرو مک‌کارتی"
+    ],
+    "instagramId": "andrewtmccarthy",
+    "twitterId": "AndrewTMcCarthy",
+    "facebookId": "AndrewTMcCarthy",
+    "tmdbUpdatedAt": "2026-10-01T09:17:51.710Z",
+    "tmdbFetchedAt": "2026-10-01T09:17:51.710Z"
   },
   {
     "id": "andrew-mcilroy",
@@ -22902,7 +22948,8 @@
     "alsoKnownAs": [
       "Craig Eldrige"
     ],
-    "tmdbUpdatedAt": "2026-09-20T16:21:10.382Z"
+    "tmdbUpdatedAt": "2026-10-01T09:17:51.647Z",
+    "tmdbFetchedAt": "2026-10-01T09:17:51.647Z"
   },
   {
     "id": "craig-geoghan",
@@ -32264,6 +32311,21 @@
     "tmdbUpdatedAt": "2026-09-21T13:18:43.019Z"
   },
   {
+    "id": "1617303",
+    "slug": "emily-andrews",
+    "name": "Emily Andrews",
+    "tmdbPersonId": 1617303,
+    "photoUrl": "/images/people/1617303.webp",
+    "profileUrl": "/images/people/1617303.webp",
+    "birthday": "1980-03-11",
+    "placeOfBirth": "Richmond Hill, Ontario, Canada",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 21,
+    "tmdbUpdatedAt": "2026-10-01T09:17:52.737Z",
+    "tmdbFetchedAt": "2026-10-01T09:17:52.737Z"
+  },
+  {
     "id": "emily-arlook",
     "slug": "emily-arlook",
     "name": "Emily Arlook",
@@ -34324,7 +34386,8 @@
     "knownCredits": 35,
     "instagramId": "evanmwilliams",
     "twitterId": "evan_m_williams",
-    "tmdbUpdatedAt": "2026-09-20T16:20:19.550Z"
+    "tmdbUpdatedAt": "2026-10-01T09:17:51.328Z",
+    "tmdbFetchedAt": "2026-10-01T09:17:51.328Z"
   },
   {
     "id": "eve-costarelli",
@@ -38039,7 +38102,8 @@
     "gender": "Male",
     "knownForDepartment": "Directing",
     "knownCredits": 58,
-    "tmdbUpdatedAt": "2026-09-22T20:53:28.294Z"
+    "tmdbUpdatedAt": "2026-10-01T09:17:52.532Z",
+    "tmdbFetchedAt": "2026-10-01T09:17:52.532Z"
   },
   {
     "id": "graeme-duffy",
@@ -45390,7 +45454,8 @@
       "Jane Easton",
       "Jayne Eastwood-Flaherty"
     ],
-    "tmdbUpdatedAt": "2026-09-20T16:17:12.958Z"
+    "tmdbUpdatedAt": "2026-10-01T09:17:52.002Z",
+    "tmdbFetchedAt": "2026-10-01T09:17:52.002Z"
   },
   {
     "id": "jaynee-lynne-kinchen",
@@ -45475,6 +45540,19 @@
     "knownForDepartment": "Acting",
     "knownCredits": 11,
     "tmdbUpdatedAt": "2026-09-20T16:20:51.772Z"
+  },
+  {
+    "id": "174952",
+    "slug": "jean-daigle",
+    "name": "Jean Daigle",
+    "tmdbPersonId": 174952,
+    "photoUrl": "/images/people/174952.webp",
+    "profileUrl": "/images/people/174952.webp",
+    "imdbPersonId": "nm0197269",
+    "knownForDepartment": "Acting",
+    "knownCredits": 30,
+    "tmdbUpdatedAt": "2026-10-01T09:17:52.671Z",
+    "tmdbFetchedAt": "2026-10-01T09:17:52.671Z"
   },
   {
     "id": "4621774",
@@ -54387,6 +54465,29 @@
     "tmdbUpdatedAt": "2026-09-20T16:21:10.748Z"
   },
   {
+    "id": "5937",
+    "slug": "kari-matchett",
+    "name": "Kari Matchett",
+    "tmdbPersonId": 5937,
+    "photoUrl": "/images/people/5937.webp",
+    "profileUrl": "/images/people/5937.webp",
+    "birthday": "1970-03-25",
+    "placeOfBirth": "Spalding, Saskatchewan, Canada",
+    "biography": "Kari Matchett is a prolific Canadian actress known for her versatile roles across major television dramas and science fiction.  She played Mariel Underlay in Invasion, Lisa Miller in 24, and Kate Filmore in the cult favorite science fiction movie Cube 2: Hypercube and stars as Colonel Eve Lazarus in the NBC crime drama The Hunting Party.",
+    "imdbPersonId": "nm0558182",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 74,
+    "alsoKnownAs": [
+      "凱利·梅崔特",
+      "کری مچت"
+    ],
+    "instagramId": "thekarimatchett",
+    "twitterId": "TheKariMatchett",
+    "tmdbUpdatedAt": "2026-10-01T09:17:51.706Z",
+    "tmdbFetchedAt": "2026-10-01T09:17:51.706Z"
+  },
+  {
     "id": "karie-richards",
     "slug": "karie-richards",
     "name": "Karie Richards",
@@ -58915,6 +59016,20 @@
     "knownForDepartment": "Acting",
     "knownCredits": 9,
     "tmdbUpdatedAt": "2026-09-20T16:18:30.608Z"
+  },
+  {
+    "id": "201700",
+    "slug": "kristina-nicoll",
+    "name": "Kristina Nicoll",
+    "tmdbPersonId": 201700,
+    "photoUrl": "/images/people/201700.webp",
+    "profileUrl": "/images/people/201700.webp",
+    "imdbPersonId": "nm0630435",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 36,
+    "tmdbUpdatedAt": "2026-10-01T09:17:52.486Z",
+    "tmdbFetchedAt": "2026-10-01T09:17:52.486Z"
   },
   {
     "id": "kristina-stringini",
@@ -81006,7 +81121,8 @@
     "knownCredits": 53,
     "instagramId": "pbrancs",
     "twitterId": "PaulaBrancati",
-    "tmdbUpdatedAt": "2026-09-20T16:20:25.149Z"
+    "tmdbUpdatedAt": "2026-10-01T09:17:51.289Z",
+    "tmdbFetchedAt": "2026-10-01T09:17:51.289Z"
   },
   {
     "id": "paula-burrows",
@@ -97254,7 +97370,8 @@
     "alsoKnownAs": [
       "Tim Atherton"
     ],
-    "tmdbUpdatedAt": "2026-09-20T16:20:25.092Z"
+    "tmdbUpdatedAt": "2026-10-01T09:17:51.685Z",
+    "tmdbFetchedAt": "2026-10-01T09:17:51.685Z"
   },
   {
     "id": "ted-mcginley",
@@ -100183,6 +100300,22 @@
     "tmdbUpdatedAt": "2026-09-20T16:17:07.376Z"
   },
   {
+    "id": "79399",
+    "slug": "trent-mcmullen",
+    "name": "Trent McMullen",
+    "tmdbPersonId": 79399,
+    "photoUrl": "/images/people/79399.webp",
+    "profileUrl": "/images/people/79399.webp",
+    "placeOfBirth": "Wiarton, Ontario, Canada",
+    "biography": "Trent McMullen is a Canadian actor and elite voice artist based in Toronto. He is most recognized for his roles in independent films and his prolific voice-over work for major networks like Discovery Channel and National Geographic.",
+    "imdbPersonId": "nm0573441",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 26,
+    "tmdbUpdatedAt": "2026-10-01T09:17:52.455Z",
+    "tmdbFetchedAt": "2026-10-01T09:17:52.455Z"
+  },
+  {
     "id": "4579943",
     "slug": "trent-whiddon",
     "name": "Trent Whiddon",
@@ -101533,7 +101666,8 @@
     "instagramId": "vas_saranga",
     "twitterId": "vas_saranga",
     "facebookId": "vas.saranga",
-    "tmdbUpdatedAt": "2026-09-20T16:19:48.787Z"
+    "tmdbUpdatedAt": "2026-10-01T09:17:51.984Z",
+    "tmdbFetchedAt": "2026-10-01T09:17:51.984Z"
   },
   {
     "id": "vasilah-ellison",

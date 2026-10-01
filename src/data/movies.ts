@@ -208126,6 +208126,196 @@ export const MOVIES: Movie[] = [
     "voteCount": 15,
     "tmdbUpdatedAt": "2026-10-01T09:11:29.172Z",
     "tmdbFetchedAt": "2026-10-01T09:11:29.172Z"
+  },
+  {
+    "id": "hallmark-2009-the-national-tree",
+    "slug": "the-national-tree",
+    "title": "The National Tree",
+    "year": 2009,
+    "brandId": "hallmark",
+    "releaseDate": "2009-11-28",
+    "synopsis": "A teenager has his Sitka Spruce tree chosen to be planted outside the White House as the new national Christmas Tree.",
+    "posterUrl": "/images/posters/34426.jpg",
+    "backdropUrl": "/images/backdrops/34426.jpg",
+    "cast": [
+      {
+        "actorId": "37041",
+        "name": "Andrew McCarthy",
+        "character": "Corey Burdock",
+        "slug": "andrew-mccarthy",
+        "tmdbPersonId": 37041,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/swlewiX5zUjF5za9JOFXIVrL3kH.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "59600",
+        "name": "Evan Williams",
+        "character": "Rock Burdock",
+        "slug": "evan-williams",
+        "tmdbPersonId": 59600,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/sC9240bs5x9imhibpMSukeoWsEg.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "5937",
+        "name": "Kari Matchett",
+        "character": "Faith Russell",
+        "slug": "kari-matchett",
+        "tmdbPersonId": 5937,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/zafZ5iFwDDmuJpROAgtF8psx3BU.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "112326",
+        "name": "Paula Brancati",
+        "character": "Katie Coyle",
+        "slug": "paula-brancati",
+        "tmdbPersonId": 112326,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/s6xD3LXfjREBQ7yaDgQzx2tBzVB.jpg",
+        "order": 3
+      },
+      {
+        "actorId": "4568",
+        "name": "Jayne Eastwood",
+        "character": "Lana",
+        "slug": "jayne-eastwood",
+        "tmdbPersonId": 4568,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/cL75FbJRKDdpvkOJDUgUYPZHKks.jpg",
+        "order": 4
+      },
+      {
+        "actorId": "189896",
+        "name": "Ted Atherton",
+        "character": "Aaron",
+        "slug": "ted-atherton",
+        "tmdbPersonId": 189896,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/uZs2r3G005dEeUZeTOakvUSnKxg.jpg",
+        "order": 5
+      },
+      {
+        "actorId": "133254",
+        "name": "Craig Eldridge",
+        "character": "Jim",
+        "slug": "craig-eldridge",
+        "tmdbPersonId": 133254,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/fZM7LwZDfdrwgOcIqA7sqMFOqFC.jpg",
+        "order": 6
+      },
+      {
+        "actorId": "79399",
+        "name": "Trent McMullen",
+        "character": "Hank",
+        "slug": "trent-mcmullen",
+        "tmdbPersonId": 79399,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/AipvpyspGFp1xoitYg9SIcmpOeM.jpg",
+        "order": 7
+      },
+      {
+        "actorId": "1438000",
+        "name": "Amanda Joy",
+        "character": "Ming",
+        "slug": "amanda-joy",
+        "tmdbPersonId": 1438000,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/wrz5lWCcjfI4zALJOTiWUVKSK4h.jpg",
+        "order": 8
+      },
+      {
+        "actorId": "201700",
+        "name": "Kristina Nicoll",
+        "character": "Belinda",
+        "slug": "kristina-nicoll",
+        "tmdbPersonId": 201700,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/vDwirKVszqGp2vLBxFdUJndk2dR.jpg",
+        "order": 9
+      },
+      {
+        "actorId": "1833004",
+        "name": "Vas Saranga",
+        "character": "Ash",
+        "slug": "vas-saranga",
+        "tmdbPersonId": 1833004,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/iK9zPJBEjVM0B99yGef331ks0I9.jpg",
+        "order": 10
+      },
+      {
+        "actorId": "174952",
+        "name": "Jean Daigle",
+        "character": "Eddie",
+        "slug": "jean-daigle",
+        "tmdbPersonId": 174952,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/ft2G6qmhgw2bbBN7MZYqRokyPA.jpg",
+        "order": 11
+      },
+      {
+        "actorId": "1617303",
+        "name": "Emily Andrews",
+        "character": "Stephanie",
+        "slug": "emily-andrews",
+        "tmdbPersonId": 1617303,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/flmncYr6zwgLPh6eha5BgGV8A4Y.jpg",
+        "order": 12
+      }
+    ],
+    "director": "Graeme Campbell",
+    "tmdbId": 34426,
+    "imdbId": "tt1420568",
+    "isComingSoon": false,
+    "status": "collection",
+    "originalTitle": "The National Tree",
+    "runtimeMinutes": 88,
+    "genres": [
+      {
+        "id": 10751,
+        "name": "Family"
+      },
+      {
+        "id": 18,
+        "name": "Drama"
+      },
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "DE",
+        "releaseDate": "2012-10-15T00:00:00.000Z",
+        "type": 5,
+        "certification": "0",
+        "note": ""
+      },
+      {
+        "country": "US",
+        "releaseDate": "2009-11-28T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "Hallmark"
+      }
+    ],
+    "crew": [
+      {
+        "id": 90365,
+        "name": "Graeme Campbell",
+        "job": "Director",
+        "department": "Directing",
+        "creditId": "58509f72c3a3682dfe010d2b"
+      }
+    ],
+    "trailers": [
+      {
+        "key": "MSvGyxPNqCI",
+        "site": "YouTube",
+        "type": "Trailer",
+        "name": "Hallmark Channel - The National Tree - Promo 30 Sec",
+        "official": true
+      }
+    ],
+    "trailerYoutubeKey": "MSvGyxPNqCI",
+    "voteAverage": 5.4,
+    "voteCount": 24,
+    "tmdbUpdatedAt": "2026-10-01T09:17:49.355Z",
+    "tmdbFetchedAt": "2026-10-01T09:17:49.355Z"
   }
 ];
 
