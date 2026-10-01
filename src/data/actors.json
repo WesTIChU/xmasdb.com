@@ -442,6 +442,21 @@
     "tmdbUpdatedAt": "2026-09-21T13:01:51.939Z"
   },
   {
+    "id": "1395897",
+    "slug": "abbey-cleland",
+    "name": "Abbey Cleland",
+    "tmdbPersonId": 1395897,
+    "imdbPersonId": "nm5257938",
+    "gender": "Female",
+    "knownForDepartment": "Writing",
+    "knownCredits": 3,
+    "alsoKnownAs": [
+      "Abbey Cleland Lopez"
+    ],
+    "tmdbUpdatedAt": "2026-10-01T10:14:50.146Z",
+    "tmdbFetchedAt": "2026-10-01T10:14:50.146Z"
+  },
+  {
     "id": "abbey-romeo",
     "slug": "abbey-romeo",
     "name": "Abbey Romeo",
@@ -1917,6 +1932,21 @@
     "tmdbUpdatedAt": "2026-09-20T16:17:42.189Z"
   },
   {
+    "id": "189704",
+    "slug": "alanis-peart",
+    "name": "Alanis Peart",
+    "tmdbPersonId": 189704,
+    "photoUrl": "/images/people/189704.webp",
+    "profileUrl": "/images/people/189704.webp",
+    "placeOfBirth": "Canada",
+    "imdbPersonId": "nm1750530",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 11,
+    "tmdbUpdatedAt": "2026-10-01T10:14:51.418Z",
+    "tmdbFetchedAt": "2026-10-01T10:14:51.419Z"
+  },
+  {
     "id": "alanna-levierge",
     "slug": "alanna-levierge",
     "name": "Alanna LeVierge",
@@ -2381,7 +2411,8 @@
     "knownCredits": 41,
     "instagramId": "baxtonpeesley",
     "twitterId": "baxtonpeesley",
-    "tmdbUpdatedAt": "2026-09-21T12:58:33.165Z"
+    "tmdbUpdatedAt": "2026-10-01T10:14:47.772Z",
+    "tmdbFetchedAt": "2026-10-01T10:14:47.772Z"
   },
   {
     "id": "alex-poch-goldin",
@@ -3758,6 +3789,24 @@
     "tmdbUpdatedAt": "2026-09-20T16:18:31.219Z"
   },
   {
+    "id": "83198",
+    "slug": "allan-arkush",
+    "name": "Allan Arkush",
+    "tmdbPersonId": 83198,
+    "photoUrl": "/images/people/83198.webp",
+    "profileUrl": "/images/people/83198.webp",
+    "birthday": "1948-04-30",
+    "placeOfBirth": "Jersey City, New Jersey, USA",
+    "biography": "Allan Arkush (born April 30, 1948) is an American director and producer of films, television and videos.\n\nDescription above from the Wikipedia article Allan Arkush, licensed under CC-BY-SA, full list of contributors on Wikipedia.​",
+    "imdbPersonId": "nm0035106",
+    "gender": "Male",
+    "knownForDepartment": "Directing",
+    "knownCredits": 78,
+    "facebookId": "aarkush",
+    "tmdbUpdatedAt": "2026-10-01T10:14:48.145Z",
+    "tmdbFetchedAt": "2026-10-01T10:14:48.145Z"
+  },
+  {
     "id": "30601",
     "slug": "allan-f-nicholls",
     "name": "Allan F. Nicholls",
@@ -4895,7 +4944,8 @@
     "gender": "Male",
     "knownForDepartment": "Acting",
     "knownCredits": 40,
-    "tmdbUpdatedAt": "2026-09-20T16:17:33.171Z"
+    "tmdbUpdatedAt": "2026-10-01T10:14:42.053Z",
+    "tmdbFetchedAt": "2026-10-01T10:14:42.053Z"
   },
   {
     "id": "amy-acker",
@@ -6454,7 +6504,8 @@
       "Andrew Rukavina",
       "Angelo Renai"
     ],
-    "tmdbUpdatedAt": "2026-09-20T16:17:49.450Z"
+    "tmdbUpdatedAt": "2026-10-01T10:14:42.797Z",
+    "tmdbFetchedAt": "2026-10-01T10:14:42.797Z"
   },
   {
     "id": "1342361",
@@ -6466,6 +6517,21 @@
     "knownForDepartment": "Acting",
     "knownCredits": 4,
     "tmdbUpdatedAt": "2026-09-22T20:53:21.576Z"
+  },
+  {
+    "id": "1129169",
+    "slug": "andy-smith",
+    "name": "Andy Smith",
+    "tmdbPersonId": 1129169,
+    "photoUrl": "/images/people/1129169.webp",
+    "profileUrl": "/images/people/1129169.webp",
+    "biography": "Born and bred in New York City, Andy is an actor, and a published author, and has also appeared in numerous film, TV, theatre productions and radio productions.\n\nHe has made Canada his home since 1980 for well over 30 years and is also a doting father of three great children.\n\nIn terms of his recently published novel, Zayde's Arcade, Andy spent many a summer in Coney Island in his formative youth. While there, he often visited his grandparents (his bubbie and zayde) at their nearby penny arcade.  Andy has appeared in numerous film, television, radio production, and theatre productions",
+    "imdbPersonId": "nm0807320",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 9,
+    "tmdbUpdatedAt": "2026-10-01T10:14:48.157Z",
+    "tmdbFetchedAt": "2026-10-01T10:14:48.157Z"
   },
   {
     "id": "andy-thompson",
@@ -6876,6 +6942,20 @@
     "knownCredits": 6,
     "tmdbUpdatedAt": "2026-09-25T18:44:21.067Z",
     "tmdbFetchedAt": "2026-09-25T18:44:21.067Z"
+  },
+  {
+    "id": "1219811",
+    "slug": "anita-finlay",
+    "name": "Anita Finlay",
+    "tmdbPersonId": 1219811,
+    "photoUrl": "/images/people/1219811.webp",
+    "profileUrl": "/images/people/1219811.webp",
+    "imdbPersonId": "nm0003006",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 31,
+    "tmdbUpdatedAt": "2026-10-01T10:14:44.631Z",
+    "tmdbFetchedAt": "2026-10-01T10:14:44.631Z"
   },
   {
     "id": "anita-khalatbari",
@@ -8041,7 +8121,8 @@
     "knownForDepartment": "Acting",
     "knownCredits": 52,
     "twitterId": "AnthonyUlc",
-    "tmdbUpdatedAt": "2026-09-20T16:19:07.186Z"
+    "tmdbUpdatedAt": "2026-10-01T10:14:51.361Z",
+    "tmdbFetchedAt": "2026-10-01T10:14:51.361Z"
   },
   {
     "id": "999803",
@@ -8787,7 +8868,8 @@
     "gender": "Male",
     "knownForDepartment": "Acting",
     "knownCredits": 147,
-    "tmdbUpdatedAt": "2026-09-21T12:59:24.799Z"
+    "tmdbUpdatedAt": "2026-10-01T10:14:50.778Z",
+    "tmdbFetchedAt": "2026-10-01T10:14:50.778Z"
   },
   {
     "id": "4621749",
@@ -11043,6 +11125,24 @@
     "tmdbUpdatedAt": "2026-09-20T16:18:39.350Z"
   },
   {
+    "id": "1513981",
+    "slug": "ben-adams",
+    "name": "Ben Adams",
+    "tmdbPersonId": 1513981,
+    "photoUrl": "/images/people/1513981.webp",
+    "profileUrl": "/images/people/1513981.webp",
+    "imdbPersonId": "nm3193407",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 11,
+    "alsoKnownAs": [
+      "Benjamin Charles Adams",
+      "Ben C. Adams"
+    ],
+    "tmdbUpdatedAt": "2026-10-01T10:14:49.591Z",
+    "tmdbFetchedAt": "2026-10-01T10:14:49.591Z"
+  },
+  {
     "id": "ben-afful",
     "slug": "ben-afful",
     "name": "Ben Afful",
@@ -11657,6 +11757,17 @@
     "knownForDepartment": "Acting",
     "knownCredits": 15,
     "tmdbUpdatedAt": "2026-09-20T16:19:31.317Z"
+  },
+  {
+    "id": "1442236",
+    "slug": "beth-harvey",
+    "name": "Beth Harvey",
+    "tmdbPersonId": 1442236,
+    "imdbPersonId": "nm2961764",
+    "knownForDepartment": "Acting",
+    "knownCredits": 2,
+    "tmdbUpdatedAt": "2026-10-01T10:14:44.591Z",
+    "tmdbFetchedAt": "2026-10-01T10:14:44.591Z"
   },
   {
     "id": "beth-leavel",
@@ -12609,7 +12720,8 @@
     "gender": "Male",
     "knownForDepartment": "Writing",
     "knownCredits": 18,
-    "tmdbUpdatedAt": "2026-09-22T20:53:26.555Z"
+    "tmdbUpdatedAt": "2026-10-01T10:14:50.309Z",
+    "tmdbFetchedAt": "2026-10-01T10:14:50.309Z"
   },
   {
     "id": "bobbie-peterson",
@@ -13001,6 +13113,23 @@
     "knownForDepartment": "Acting",
     "knownCredits": 3,
     "tmdbUpdatedAt": "2026-09-20T16:17:05.428Z"
+  },
+  {
+    "id": "83996",
+    "slug": "bradford-may",
+    "name": "Bradford May",
+    "tmdbPersonId": 83996,
+    "photoUrl": "/images/people/83996.webp",
+    "profileUrl": "/images/people/83996.webp",
+    "birthday": "1951-08-03",
+    "placeOfBirth": "Los Angeles, California, USA",
+    "biography": "Bradford May was born on August 3, 1951 in Los Angeles County, California, USA. He is a director and cinematographer, known for The Monster Squad (1987), Lady Against the Odds (1992) and Tremors (2003). He has been married to Lisa Eilbacher since August 27, 1988.",
+    "imdbPersonId": "nm0561879",
+    "gender": "Male",
+    "knownForDepartment": "Directing",
+    "knownCredits": 87,
+    "tmdbUpdatedAt": "2026-10-01T10:14:50.487Z",
+    "tmdbFetchedAt": "2026-10-01T10:14:50.487Z"
   },
   {
     "id": "bradley-dodds",
@@ -16435,6 +16564,20 @@
     "tmdbUpdatedAt": "2026-09-20T16:19:37.150Z"
   },
   {
+    "id": "1134014",
+    "slug": "callum-seagram-airlie",
+    "name": "Callum Seagram Airlie",
+    "tmdbPersonId": 1134014,
+    "photoUrl": "/images/people/1134014.webp",
+    "profileUrl": "/images/people/1134014.webp",
+    "imdbPersonId": "nm5077771",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 18,
+    "tmdbUpdatedAt": "2026-10-01T10:14:42.780Z",
+    "tmdbFetchedAt": "2026-10-01T10:14:42.780Z"
+  },
+  {
     "id": "callum-shoniker",
     "slug": "callum-shoniker",
     "name": "Callum Shoniker",
@@ -16838,6 +16981,31 @@
     "knownForDepartment": "Acting",
     "knownCredits": 14,
     "tmdbUpdatedAt": "2026-09-20T16:19:19.374Z"
+  },
+  {
+    "id": "1083899",
+    "slug": "candace-kita",
+    "name": "Candace Kita",
+    "tmdbPersonId": 1083899,
+    "photoUrl": "/images/people/1083899.webp",
+    "profileUrl": "/images/people/1083899.webp",
+    "birthday": "1967-09-24",
+    "placeOfBirth": "Los Angeles, California, USA",
+    "biography": "Born in Los Angeles but raised in England, Belgium and Texas, Candace Kita graduated from college with degrees in philosophy and contemporary religion. After postgraduate work in sociology, she chose to pursue her dream of acting.\n\nShortly after arriving in Los Angeles, Candace became a series regular lead in all 40 episodes of FOX-TV's \"The Masked Rider\". She went on to take series regular roles in \"Son of the Beach\" on the FX Network, \"Running with Scissors\" on the Oxygen Network and \"Dance Fever\" on ABC-Family.\n\nHer most notable series recurring role was on ABC's \"Complete Savages\", portraying Mel Gibson's ill-fated girlfriend, Misty, doomed to die a new and horrible death at the end of each episode.\n\nAs a guest star, Candace's credits include \"Nip/Tuck\", \"Two and a Half Men\", \"The Wayan;s Brothers\", \"VIP\", \"Method & Red\", \"Smith\", \"Pepper Dennis\", \"Quintuplets\", \"Girlfriends\", \"Ficity\", \"Even Stevens\", \"Pl of the Future\", \"Wall to Wall Records\", \"Beck and Call\" , \"The Probe\", \"Big Happy\", \"Movies at Our House\", \"Miriam Teitelbaum: Homicide\", and \"The Sweet Spot\".\n\nOn the big screen, Candace can be seen in the Adam Sandler and Kevin James comedy \"I Now Pronounce You Chuck and Larry\". She also appeared in \"The Bad News Bears\" with Billy Bob Thornton and Greg Kinnear, \"Stealing Time\" with Jennifer Garner, and \"Barb Wire\" with Pamela Anderson.\n\nCandace has appeared in more than a dozen national commercials for brands such as Sprite, Coke, IBM, AIG and MSN. She also starred in a spot for Harvard Medical HMO that was featured on ABC-TV's \"America's Funniest Commercials\" and has served as an official spokesperson in several spots for the Food network, HGTV and DIY. As a model with prestigious print agency Wilhelmina, Candace walked the catwalk for Diesel, XOXO and Brighton among others.\n\nCandace is the founder of Hotties With a Heart, an organization that brings together young women who donate their time to various charities throughout the United States. Recent events have included Read Across America, The Boys and Girls Club, The Salvation Army, and The Bob Hope USO. She also hosts a weekly radio show in Los Angeles, Hottie Help with Candace Kita. This live call-in show broadcasts each Sunday from 2-3 pm (PST) and is one of the highest-rated shows on LA Talk Radio. Each week Kita discusses women's safety issues with a celebrity guest.\n\nKita is also the author of \"The Hottie Handbook: A Girl's Guide to Safety,\" a safety primer for young women.",
+    "imdbPersonId": "nm0070452",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 44,
+    "alsoKnownAs": [
+      "Candace Bender",
+      "Candace Camille Bender",
+      "Candi Kita",
+      "Blueberry Muffin"
+    ],
+    "instagramId": "candacekita1",
+    "twitterId": "candacekita",
+    "tmdbUpdatedAt": "2026-10-01T10:14:44.999Z",
+    "tmdbFetchedAt": "2026-10-01T10:14:44.999Z"
   },
   {
     "id": "candace-smith",
@@ -17767,6 +17935,23 @@
     "tmdbFetchedAt": "2026-10-01T10:12:09.682Z"
   },
   {
+    "id": "33350",
+    "slug": "carrie-genzel",
+    "name": "Carrie Genzel",
+    "tmdbPersonId": 33350,
+    "photoUrl": "/images/people/33350.webp",
+    "profileUrl": "/images/people/33350.webp",
+    "birthday": "1971-09-18",
+    "placeOfBirth": "Vancouver, British Columbia, Canada",
+    "biography": "Carrie Genzel is an actress.",
+    "imdbPersonId": "nm0313232",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 57,
+    "tmdbUpdatedAt": "2026-10-01T10:14:42.020Z",
+    "tmdbFetchedAt": "2026-10-01T10:14:42.020Z"
+  },
+  {
     "id": "carrie-marston",
     "slug": "carrie-marston",
     "name": "Carrie Marston",
@@ -18110,7 +18295,8 @@
     "instagramId": "caspervandien",
     "twitterId": "caspervandien",
     "facebookId": "CasperVanDienOfficial",
-    "tmdbUpdatedAt": "2026-09-20T16:20:59.408Z"
+    "tmdbUpdatedAt": "2026-10-01T10:14:50.423Z",
+    "tmdbFetchedAt": "2026-10-01T10:14:50.423Z"
   },
   {
     "id": "4162751",
@@ -18342,6 +18528,20 @@
     "twitterId": "reallycb",
     "facebookId": "Catherine-Bell-327789136317",
     "tmdbUpdatedAt": "2026-09-20T16:17:23.804Z"
+  },
+  {
+    "id": "209815",
+    "slug": "catherine-b-rub",
+    "name": "Catherine Bérubé",
+    "tmdbPersonId": 209815,
+    "photoUrl": "/images/people/209815.webp",
+    "profileUrl": "/images/people/209815.webp",
+    "imdbPersonId": "nm0126921",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 40,
+    "tmdbUpdatedAt": "2026-10-01T10:14:47.484Z",
+    "tmdbFetchedAt": "2026-10-01T10:14:47.484Z"
   },
   {
     "id": "catherine-burdon",
@@ -18735,6 +18935,23 @@
     "knownForDepartment": "Acting",
     "knownCredits": 13,
     "tmdbUpdatedAt": "2026-09-20T16:16:40.079Z"
+  },
+  {
+    "id": "110498",
+    "slug": "cedric-smith",
+    "name": "Cedric Smith",
+    "tmdbPersonId": 110498,
+    "photoUrl": "/images/people/110498.webp",
+    "profileUrl": "/images/people/110498.webp",
+    "birthday": "1943-09-21",
+    "placeOfBirth": "Bournemouth, Dorset, England, UK",
+    "biography": "Cedric Smith is an English Canadian actor and musician. He portrayed Alec King in the CBC television series Road to Avonlea, and was the voice of Charles Xavier / Professor X (and other characters) in the X-Men: The Animated Series.",
+    "imdbPersonId": "nm0807649",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 87,
+    "tmdbUpdatedAt": "2026-10-01T10:14:51.115Z",
+    "tmdbFetchedAt": "2026-10-01T10:14:51.115Z"
   },
   {
     "id": "celeste-coco-conn",
@@ -20612,7 +20829,8 @@
     "alsoKnownAs": [
       "Christopher Gauthier"
     ],
-    "tmdbUpdatedAt": "2026-09-21T13:16:56.943Z"
+    "tmdbUpdatedAt": "2026-10-01T10:14:45.880Z",
+    "tmdbFetchedAt": "2026-10-01T10:14:45.880Z"
   },
   {
     "id": "chris-gillett",
@@ -20625,7 +20843,8 @@
     "gender": "Male",
     "knownForDepartment": "Acting",
     "knownCredits": 43,
-    "tmdbUpdatedAt": "2026-09-20T16:18:56.287Z"
+    "tmdbUpdatedAt": "2026-10-01T10:14:46.422Z",
+    "tmdbFetchedAt": "2026-10-01T10:14:46.422Z"
   },
   {
     "id": "chris-girotto",
@@ -21264,7 +21483,8 @@
     "gender": "Female",
     "knownForDepartment": "Acting",
     "knownCredits": 26,
-    "tmdbUpdatedAt": "2026-09-20T16:18:03.829Z"
+    "tmdbUpdatedAt": "2026-10-01T10:14:45.814Z",
+    "tmdbFetchedAt": "2026-10-01T10:14:45.814Z"
   },
   {
     "id": "5141620",
@@ -22433,6 +22653,24 @@
     "tmdbUpdatedAt": "2026-09-20T16:18:58.536Z"
   },
   {
+    "id": "184573",
+    "slug": "claire-riley",
+    "name": "Claire Riley",
+    "tmdbPersonId": 184573,
+    "photoUrl": "/images/people/184573.webp",
+    "profileUrl": "/images/people/184573.webp",
+    "biography": "Claire Riley is a Canadian actress who has appeared in various film and television productions.\n\nShe starred in The 6th Day (2000), Freddy vs. Jason (2003), The Core (2003), and Along Came a Spider (2001).\n\nOn television, she appeared in series such as Psych, The X-Files, The Outer Limits, and Cracked.",
+    "imdbPersonId": "nm0727005",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 48,
+    "alsoKnownAs": [
+      "Clair Riley"
+    ],
+    "tmdbUpdatedAt": "2026-10-01T10:14:51.552Z",
+    "tmdbFetchedAt": "2026-10-01T10:14:51.552Z"
+  },
+  {
     "id": "claire-smithies",
     "slug": "claire-smithies",
     "name": "Claire Smithies",
@@ -23146,6 +23384,17 @@
     "knownCredits": 7,
     "instagramId": "coledgleason",
     "tmdbUpdatedAt": "2026-09-20T16:18:37.628Z"
+  },
+  {
+    "id": "1134013",
+    "slug": "cole-grabinsky",
+    "name": "Cole Grabinsky",
+    "tmdbPersonId": 1134013,
+    "imdbPersonId": "nm5406238",
+    "knownForDepartment": "Acting",
+    "knownCredits": 1,
+    "tmdbUpdatedAt": "2026-10-01T10:14:42.170Z",
+    "tmdbFetchedAt": "2026-10-01T10:14:42.170Z"
   },
   {
     "id": "cole-munden",
@@ -24624,6 +24873,23 @@
     "tmdbUpdatedAt": "2026-09-20T16:17:12.618Z"
   },
   {
+    "id": "1129168",
+    "slug": "cynthia-galant",
+    "name": "Cynthia Galant",
+    "tmdbPersonId": 1129168,
+    "photoUrl": "/images/people/1129168.webp",
+    "profileUrl": "/images/people/1129168.webp",
+    "biography": "Cynthia Galant is a Canadian stage and screen child actress, singer and dancer, best known for playing Young Rachel and Charlotte on the television series \"Orphan Black\".",
+    "imdbPersonId": "nm4341896",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 4,
+    "twitterId": "CynthiaGalant",
+    "facebookId": "cynthiagalant",
+    "tmdbUpdatedAt": "2026-10-01T10:14:47.622Z",
+    "tmdbFetchedAt": "2026-10-01T10:14:47.622Z"
+  },
+  {
     "id": "cynthia-gibb",
     "slug": "cynthia-gibb",
     "name": "Cynthia Gibb",
@@ -25087,6 +25353,23 @@
     "tmdbUpdatedAt": "2026-09-20T16:19:24.733Z"
   },
   {
+    "id": "93321",
+    "slug": "dan-gauthier",
+    "name": "Dan Gauthier",
+    "tmdbPersonId": 93321,
+    "photoUrl": "/images/people/93321.webp",
+    "profileUrl": "/images/people/93321.webp",
+    "birthday": "1963-12-02",
+    "placeOfBirth": "Prineville, Oregon, U.S.",
+    "biography": "Dan Gauthier was born on December 2, 1963 in Prineville, Oregon, USA as Daniel Lester Gauthier. He is an actor and director, known for Tour of Duty (1987), Teen Witch (1989) and One Life to Live (1968). He has been married to Lisa Fuller since April 22, 1990. They have one child.",
+    "imdbPersonId": "nm0310248",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 52,
+    "tmdbUpdatedAt": "2026-10-01T10:14:48.604Z",
+    "tmdbFetchedAt": "2026-10-01T10:14:48.604Z"
+  },
+  {
     "id": "dan-jeannotte",
     "slug": "dan-jeannotte",
     "name": "Dan Jeannotte",
@@ -25282,6 +25565,27 @@
     "tmdbUpdatedAt": "2026-09-20T16:17:46.669Z"
   },
   {
+    "id": "1217003",
+    "slug": "dana-barron",
+    "name": "Dana Barron",
+    "tmdbPersonId": 1217003,
+    "photoUrl": "/images/people/1217003.webp",
+    "profileUrl": "/images/people/1217003.webp",
+    "birthday": "1966-04-22",
+    "placeOfBirth": "New York City, New York, USA",
+    "biography": "From Wikipedia, the free encyclopedia.  \n\nDana Barron (born April 22, 1966) is an American actress who has starred in film and on television. Barron is best known for her role as the original Audrey Griswold in the 1983 film National Lampoon's Vacation which she reprised in 2003's Christmas Vacation 2: Cousin Eddie's Island Adventure for NBC television.\n\nDescription above from the Wikipedia article Dana Barron, licensed under CC-BY-SA, full list of contributors on Wikipedia.",
+    "imdbPersonId": "nm0057654",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 43,
+    "alsoKnownAs": [
+      "دانا بارون"
+    ],
+    "instagramId": "barron.dana",
+    "tmdbUpdatedAt": "2026-10-01T10:14:43.275Z",
+    "tmdbFetchedAt": "2026-10-01T10:14:43.275Z"
+  },
+  {
     "id": "dana-gourrier",
     "slug": "dana-gourrier",
     "name": "Dana Gourrier",
@@ -25316,6 +25620,20 @@
     "knownForDepartment": "Acting",
     "knownCredits": 8,
     "tmdbUpdatedAt": "2026-09-20T16:19:46.780Z"
+  },
+  {
+    "id": "1123992",
+    "slug": "dana-watkins",
+    "name": "Dana Watkins",
+    "tmdbPersonId": 1123992,
+    "photoUrl": "/images/people/1123992.webp",
+    "profileUrl": "/images/people/1123992.webp",
+    "imdbPersonId": "nm0914278",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 5,
+    "tmdbUpdatedAt": "2026-10-01T10:14:47.227Z",
+    "tmdbFetchedAt": "2026-10-01T10:14:47.227Z"
   },
   {
     "id": "4423915",
@@ -25500,6 +25818,23 @@
     ],
     "instagramId": "daniel_ditomasso",
     "tmdbUpdatedAt": "2026-09-20T16:20:11.942Z"
+  },
+  {
+    "id": "182280",
+    "slug": "daniel-eric-gold",
+    "name": "Daniel Eric Gold",
+    "tmdbPersonId": 182280,
+    "photoUrl": "/images/people/182280.webp",
+    "profileUrl": "/images/people/182280.webp",
+    "birthday": "1975-09-19",
+    "placeOfBirth": "Los Angeles, California, USA",
+    "biography": "Daniel Eric Gold is an actor.",
+    "imdbPersonId": "nm1896045",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 22,
+    "tmdbUpdatedAt": "2026-10-01T10:14:47.077Z",
+    "tmdbFetchedAt": "2026-10-01T10:14:47.077Z"
   },
   {
     "id": "daniel-kash",
@@ -25911,7 +26246,8 @@
     ],
     "instagramId": "danneelackles512",
     "twitterId": "DanneelHarris",
-    "tmdbUpdatedAt": "2026-09-20T16:20:38.055Z"
+    "tmdbUpdatedAt": "2026-10-01T10:14:43.366Z",
+    "tmdbFetchedAt": "2026-10-01T10:14:43.366Z"
   },
   {
     "id": "danni-heverin",
@@ -26143,6 +26479,29 @@
     "tmdbUpdatedAt": "2026-09-20T16:17:51.013Z"
   },
   {
+    "id": "109066",
+    "slug": "danny-wells",
+    "name": "Danny Wells",
+    "tmdbPersonId": 109066,
+    "photoUrl": "/images/people/109066.webp",
+    "profileUrl": "/images/people/109066.webp",
+    "birthday": "1941-04-07",
+    "deathday": "2013-11-28",
+    "placeOfBirth": "Montreal, Quebec, Canada",
+    "imdbPersonId": "nm0920164",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 64,
+    "alsoKnownAs": [
+      "Jack Daniel Wells",
+      "Jack Daniels Wells",
+      "Dany Wells",
+      "Danny Welles"
+    ],
+    "tmdbUpdatedAt": "2026-10-01T10:14:46.642Z",
+    "tmdbFetchedAt": "2026-10-01T10:14:46.642Z"
+  },
+  {
     "id": "5051705",
     "slug": "dante-grey",
     "name": "Dante Grey",
@@ -26298,6 +26657,27 @@
     "knownForDepartment": "Acting",
     "knownCredits": 17,
     "tmdbUpdatedAt": "2026-09-21T13:16:48.443Z"
+  },
+  {
+    "id": "55709",
+    "slug": "darcy-donavan",
+    "name": "Darcy Donavan",
+    "tmdbPersonId": 55709,
+    "photoUrl": "/images/people/55709.webp",
+    "profileUrl": "/images/people/55709.webp",
+    "birthday": "1985-11-20",
+    "placeOfBirth": "Miami, Florida, USA",
+    "imdbPersonId": "nm1261965",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 22,
+    "alsoKnownAs": [
+      "Дарси Донован"
+    ],
+    "instagramId": "darcydonavan",
+    "twitterId": "darcydonavan",
+    "tmdbUpdatedAt": "2026-10-01T10:14:49.153Z",
+    "tmdbFetchedAt": "2026-10-01T10:14:49.153Z"
   },
   {
     "id": "darcy-keefe",
@@ -27732,7 +28112,8 @@
     "gender": "Male",
     "knownForDepartment": "Directing",
     "knownCredits": 18,
-    "tmdbUpdatedAt": "2026-09-22T20:53:19.534Z"
+    "tmdbUpdatedAt": "2026-10-01T10:14:44.890Z",
+    "tmdbFetchedAt": "2026-10-01T10:14:44.890Z"
   },
   {
     "id": "1464036",
@@ -31031,6 +31412,17 @@
     "tmdbUpdatedAt": "2026-09-20T16:17:59.322Z"
   },
   {
+    "id": "1130511",
+    "slug": "donna-belleville",
+    "name": "Donna Belleville",
+    "tmdbPersonId": 1130511,
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 2,
+    "tmdbUpdatedAt": "2026-10-01T10:14:50.536Z",
+    "tmdbFetchedAt": "2026-10-01T10:14:50.536Z"
+  },
+  {
     "id": "donna-benedicto",
     "slug": "donna-benedicto",
     "name": "Donna Benedicto",
@@ -33596,6 +33988,31 @@
     "tmdbUpdatedAt": "2026-09-21T13:00:28.625Z"
   },
   {
+    "id": "1130510",
+    "slug": "ella-ballentine",
+    "name": "Ella Ballentine",
+    "tmdbPersonId": 1130510,
+    "photoUrl": "/images/people/1130510.webp",
+    "profileUrl": "/images/people/1130510.webp",
+    "birthday": "2001-07-18",
+    "placeOfBirth": "Toronto, Ontario, Canada",
+    "biography": "Ella Hope Ballentine (born July 18, 2001) is a Canadian actress. She began her acting career as a child actress on the Toronto stage, before appearing on television and in films. Ballentine's portrayal of Anne Shirley in the television film adaptation of the classic Canadian novel, Anne of Green Gables by L.M. Montgomery was a critical success, receiving a Joey Award in 2016 and a Canadian Screen Award in 2018.\n\nDescription above from the Wikipedia article Ella Ballentine, licensed under CC-BY-SA, full list of contributors on Wikipedia.",
+    "imdbPersonId": "nm4940633",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 20,
+    "alsoKnownAs": [
+      "Ella Hope Ballentine",
+      "Έλα Μπάλενταϊν",
+      "Έλα Χόουπ Μπάλενταϊν",
+      "エラ・バレンタイン"
+    ],
+    "instagramId": "ellaballentine",
+    "twitterId": "ellaballentine",
+    "tmdbUpdatedAt": "2026-10-01T10:14:50.896Z",
+    "tmdbFetchedAt": "2026-10-01T10:14:50.896Z"
+  },
+  {
     "id": "ella-boyd",
     "slug": "ella-boyd",
     "name": "Ella Boyd",
@@ -33961,7 +34378,8 @@
     "knownCredits": 25,
     "instagramId": "eloisemumford",
     "twitterId": "eloise_mumford",
-    "tmdbUpdatedAt": "2026-09-20T16:19:06.538Z"
+    "tmdbUpdatedAt": "2026-10-01T10:14:46.922Z",
+    "tmdbFetchedAt": "2026-10-01T10:14:46.922Z"
   },
   {
     "id": "elva-mai-hoover",
@@ -34269,7 +34687,8 @@
     "knownCredits": 19,
     "instagramId": "emilyarlook",
     "twitterId": "emilyarlook",
-    "tmdbUpdatedAt": "2026-09-20T16:17:09.051Z"
+    "tmdbUpdatedAt": "2026-10-01T10:14:44.470Z",
+    "tmdbFetchedAt": "2026-10-01T10:14:44.470Z"
   },
   {
     "id": "emily-ashby",
@@ -34351,6 +34770,29 @@
     "knownForDepartment": "Writing",
     "knownCredits": 8,
     "tmdbUpdatedAt": "2026-09-22T20:53:37.272Z"
+  },
+  {
+    "id": "4570",
+    "slug": "emily-hampshire",
+    "name": "Emily Hampshire",
+    "tmdbPersonId": 4570,
+    "photoUrl": "/images/people/4570.webp",
+    "profileUrl": "/images/people/4570.webp",
+    "birthday": "1981-08-29",
+    "placeOfBirth": "Montréal, Québec, Canada",
+    "biography": "Emily Hampshire is a Canadian-American actress. Her best-known roles include Angelina in the 1998 romantic comedy Boy Meets Girl, Vivienne in the 2006 film Snow Cake, Jennifer Goines in the Syfy drama series 12 Monkeys (2015–2018), and Stevie Budd in the CBCcomedy series Schitt's Creek (2015–2020), as well as the voice role of Misery in the YTVanimated series Ruby Gloom (2006–2008). Hampshire has held leading roles in the series Chapelwaite (2021) and The Rig (2023–present).\n\nDescription above from the Wikipedia article Emily Hampshire, licensed under CC-BY-SA, full list of contributors on Wikipedia.",
+    "imdbPersonId": "nm0358922",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 98,
+    "alsoKnownAs": [
+      "امیلی همپشر"
+    ],
+    "instagramId": "emilyhampshire",
+    "twitterId": "emilyhampshire",
+    "facebookId": "hampshiree",
+    "tmdbUpdatedAt": "2026-10-01T10:14:45.290Z",
+    "tmdbFetchedAt": "2026-10-01T10:14:45.290Z"
   },
   {
     "id": "emily-kerr",
@@ -34870,6 +35312,23 @@
     ],
     "instagramId": "iamemmatremblay",
     "tmdbUpdatedAt": "2026-09-20T16:19:39.969Z"
+  },
+  {
+    "id": "1112832",
+    "slug": "emmalyn-estrada",
+    "name": "Emmalyn Estrada",
+    "tmdbPersonId": 1112832,
+    "birthday": "1992-04-05",
+    "placeOfBirth": "Surrey, British Columbia, Canada",
+    "biography": "Emmalyn Estrada (born April 5, 1992) is a Canadian singer, songwriter, actress and dancer of Filipino descent. Her first single, \"Get Down\" entered Billboard's Canadian Hot 100 chart for the week of August 29, 2009 at number 88 and peaked at number 59 for the week of October 31, 2009.",
+    "imdbPersonId": "nm4985077",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 2,
+    "instagramId": "emmalynestrada",
+    "twitterId": "emmalynestrada",
+    "tmdbUpdatedAt": "2026-10-01T10:14:41.467Z",
+    "tmdbFetchedAt": "2026-10-01T10:14:41.467Z"
   },
   {
     "id": "3725952",
@@ -35466,6 +35925,51 @@
     "knownForDepartment": "Acting",
     "knownCredits": 27,
     "tmdbUpdatedAt": "2026-09-20T16:20:44.738Z"
+  },
+  {
+    "id": "188656",
+    "slug": "erica-carroll",
+    "name": "Erica Carroll",
+    "tmdbPersonId": 188656,
+    "photoUrl": "/images/people/188656.webp",
+    "profileUrl": "/images/people/188656.webp",
+    "birthday": "1973-04-10",
+    "placeOfBirth": "Topley Landing, British Columbia, Canada",
+    "imdbPersonId": "nm1264633",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 38,
+    "alsoKnownAs": [
+      "エリカ・キャロル",
+      "اریکا کارول"
+    ],
+    "instagramId": "divinepigeon",
+    "twitterId": "divinepigeon",
+    "tmdbUpdatedAt": "2026-10-01T10:14:42.427Z",
+    "tmdbFetchedAt": "2026-10-01T10:14:42.428Z"
+  },
+  {
+    "id": "1218928",
+    "slug": "erica-cerra",
+    "name": "Erica Cerra",
+    "tmdbPersonId": 1218928,
+    "photoUrl": "/images/people/1218928.webp",
+    "profileUrl": "/images/people/1218928.webp",
+    "birthday": "1979-10-31",
+    "placeOfBirth": "Vancouver, British Columbia, Canada",
+    "biography": "Erica Cerra (born October 31, 1979) is a Canadian actress, best known for her portrayal of Deputy Jo Lupo on the Syfy series Eureka.\n\nCerra was born in Vancouver, British Columbia, of Italian descent. She was captivated by acting from the age of eight and appeared in numerous commercials as a child. For a time, she took a break from acting and returned in 2001 at the age of 22. She was named one of Vancouver's five hottest up-and-coming actresses by Vancouver Lifestyles Magazine in 2005.\n\nCerra had starred as Deputy Jo Lupo in Eureka, a Syfy series which was broadcast between 2006 and 2012. Also, in 2006, she starred in the music video for the Michael Bublé song \"Save the Last Dance for Me\". Cerra is credited with featured roles in several popular and critically acclaimed TV shows including Battlestar Galactica and The L Word. She has also appeared in major cinematic movie releases including Man About Town with Ben Affleck and Rebecca Romijn, and Blade:Trinity with Wesley Snipes.\n\nCerra's face and body were used as the model for the character of Ashley Williams in the Mass Effect franchise of video games.\n\nHer other guest-starring roles include turns on Smallville, The 4400, The Dead Zone, Reaper, Huff and Dead Like Me. Other shows on her resume include the Canadian police procedural Cold Squad, the monster-hunting action series Special Unit 2, and the supernatural thriller series The Collector. Cerra married Raffaele Fiore in November 2010. Cerra gave birth to the couple's first child, Talia Serafina, on May 14, 2012.",
+    "imdbPersonId": "nm1569714",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 46,
+    "alsoKnownAs": [
+      "エリカ・セラ",
+      "اریکا سرا"
+    ],
+    "instagramId": "ericacerra",
+    "twitterId": "ericacerra",
+    "tmdbUpdatedAt": "2026-10-01T10:14:42.046Z",
+    "tmdbFetchedAt": "2026-10-01T10:14:42.046Z"
   },
   {
     "id": "erica-deutschman",
@@ -36303,6 +36807,27 @@
     "tmdbUpdatedAt": "2026-09-20T16:20:14.506Z"
   },
   {
+    "id": "121769",
+    "slug": "eva-larue",
+    "name": "Eva LaRue",
+    "tmdbPersonId": 121769,
+    "photoUrl": "/images/people/121769.webp",
+    "profileUrl": "/images/people/121769.webp",
+    "birthday": "1966-12-27",
+    "placeOfBirth": "Long Beach, California, U.S.",
+    "biography": "Eva Maria LaRue (born December 27, 1966) is an American model and actress. She is known for her roles as Dr. Maria Santos on All My Children and Det. Natalia Boa Vista on CSI: Miami.",
+    "imdbPersonId": "nm0130191",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 45,
+    "alsoKnownAs": [
+      "Eva La Rue",
+      "اوا لارو"
+    ],
+    "tmdbUpdatedAt": "2026-10-01T10:14:48.738Z",
+    "tmdbFetchedAt": "2026-10-01T10:14:48.738Z"
+  },
+  {
     "id": "eva-tavares",
     "slug": "eva-tavares",
     "name": "Eva Tavares",
@@ -37086,6 +37611,19 @@
     "knownForDepartment": "Acting",
     "knownCredits": 23,
     "tmdbUpdatedAt": "2026-09-20T16:17:18.778Z"
+  },
+  {
+    "id": "1129167",
+    "slug": "fiona-forsythe",
+    "name": "Fiona Forsythe",
+    "tmdbPersonId": 1129167,
+    "photoUrl": "/images/people/1129167.webp",
+    "profileUrl": "/images/people/1129167.webp",
+    "imdbPersonId": "nm4584973",
+    "knownForDepartment": "Acting",
+    "knownCredits": 4,
+    "tmdbUpdatedAt": "2026-10-01T10:14:47.607Z",
+    "tmdbFetchedAt": "2026-10-01T10:14:47.607Z"
   },
   {
     "id": "fiona-gubelmann",
@@ -38180,6 +38718,26 @@
     "tmdbFetchedAt": "2026-10-01T10:07:23.426Z"
   },
   {
+    "id": "145191",
+    "slug": "gabriel-tigerman",
+    "name": "Gabriel Tigerman",
+    "tmdbPersonId": 145191,
+    "photoUrl": "/images/people/145191.webp",
+    "profileUrl": "/images/people/145191.webp",
+    "birthday": "1980-07-03",
+    "placeOfBirth": "Los Angeles, California, USA",
+    "biography": "Gabriel Tigerman is an actor and writer.",
+    "imdbPersonId": "nm1683043",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 30,
+    "alsoKnownAs": [
+      "Gabriel Harper Tigerman"
+    ],
+    "tmdbUpdatedAt": "2026-10-01T10:14:43.223Z",
+    "tmdbFetchedAt": "2026-10-01T10:14:43.223Z"
+  },
+  {
     "id": "1883299",
     "slug": "gabriel-varga-watt",
     "name": "Gabriel Varga-Watt",
@@ -38620,7 +39178,8 @@
     "gender": "Male",
     "knownForDepartment": "Writing",
     "knownCredits": 19,
-    "tmdbUpdatedAt": "2026-09-22T20:53:18.789Z"
+    "tmdbUpdatedAt": "2026-10-01T10:14:45.670Z",
+    "tmdbFetchedAt": "2026-10-01T10:14:45.670Z"
   },
   {
     "id": "gary-grubbs",
@@ -38714,6 +39273,22 @@
       "Gary Jones (I)"
     ],
     "tmdbUpdatedAt": "2026-09-20T16:21:16.696Z"
+  },
+  {
+    "id": "175317",
+    "slug": "gary-levert",
+    "name": "Gary Levert",
+    "tmdbPersonId": 175317,
+    "photoUrl": "/images/people/175317.webp",
+    "profileUrl": "/images/people/175317.webp",
+    "birthday": "1958-08-29",
+    "placeOfBirth": "Sudbury, Ontario, Canada",
+    "imdbPersonId": "nm1022857",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 32,
+    "tmdbUpdatedAt": "2026-10-01T10:14:48.027Z",
+    "tmdbFetchedAt": "2026-10-01T10:14:48.027Z"
   },
   {
     "id": "gary-murphy",
@@ -40311,6 +40886,27 @@
     "knownCredits": 5,
     "instagramId": "therealgoldengoodwin",
     "tmdbUpdatedAt": "2026-09-20T16:19:24.756Z"
+  },
+  {
+    "id": "93846",
+    "slug": "googy-gress",
+    "name": "Googy Gress",
+    "tmdbPersonId": 93846,
+    "photoUrl": "/images/people/93846.webp",
+    "profileUrl": "/images/people/93846.webp",
+    "birthday": "1958-08-11",
+    "placeOfBirth": "Brooklyn, New York,  USA",
+    "biography": "Googy Gress (born 11 August 1958) is an American actor.",
+    "imdbPersonId": "nm0340359",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 57,
+    "alsoKnownAs": [
+      "Francis 'Googy' Gress Jr.",
+      "گوگی گرس"
+    ],
+    "tmdbUpdatedAt": "2026-10-01T10:14:43.915Z",
+    "tmdbFetchedAt": "2026-10-01T10:14:43.915Z"
   },
   {
     "id": "1332533",
@@ -42800,7 +43396,8 @@
     "instagramId": "hilarieburton",
     "twitterId": "HilarieBurton",
     "facebookId": "OfficialHilarieBurton",
-    "tmdbUpdatedAt": "2026-09-20T16:20:15.332Z"
+    "tmdbUpdatedAt": "2026-10-01T10:14:42.820Z",
+    "tmdbFetchedAt": "2026-10-01T10:14:42.820Z"
   },
   {
     "id": "hilary-jardine",
@@ -44378,6 +44975,30 @@
     "knownForDepartment": "Acting",
     "knownCredits": 26,
     "tmdbUpdatedAt": "2026-09-20T16:19:57.958Z"
+  },
+  {
+    "id": "1109976",
+    "slug": "izabela-vidovic",
+    "name": "Izabela Vidovic",
+    "tmdbPersonId": 1109976,
+    "photoUrl": "/images/people/1109976.webp",
+    "profileUrl": "/images/people/1109976.webp",
+    "birthday": "2001-05-27",
+    "placeOfBirth": "Chicago, Illinois, USA",
+    "biography": "Izabela Vidovic (born May 27, 2001) is an American actress and singer of Croatian descent. She is best known for her roles in movies Homefront, Wonder, and in the Freeform television series The Fosters.",
+    "imdbPersonId": "nm4207679",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 25,
+    "alsoKnownAs": [
+      "伊莎貝拉・維多維克",
+      "Bella V"
+    ],
+    "instagramId": "izabelavidovic",
+    "twitterId": "izabelavidovic",
+    "facebookId": "vidovicizabela",
+    "tmdbUpdatedAt": "2026-10-01T10:14:48.739Z",
+    "tmdbFetchedAt": "2026-10-01T10:14:48.739Z"
   },
   {
     "id": "izzy-herbert",
@@ -47061,7 +47682,8 @@
       "Jane Moffatt"
     ],
     "facebookId": "jane.moffat.378",
-    "tmdbUpdatedAt": "2026-09-20T16:18:41.263Z"
+    "tmdbUpdatedAt": "2026-10-01T10:14:46.524Z",
+    "tmdbFetchedAt": "2026-10-01T10:14:46.524Z"
   },
   {
     "id": "jane-seymour",
@@ -50472,6 +51094,23 @@
     "tmdbUpdatedAt": "2026-09-20T16:18:24.835Z"
   },
   {
+    "id": "2156263",
+    "slug": "jerome-v-green",
+    "name": "Jerome V. Green",
+    "tmdbPersonId": 2156263,
+    "photoUrl": "/images/people/2156263.webp",
+    "profileUrl": "/images/people/2156263.webp",
+    "imdbPersonId": "nm5113272",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 2,
+    "alsoKnownAs": [
+      "Jerome Vernon Green"
+    ],
+    "tmdbUpdatedAt": "2026-10-01T10:14:50.035Z",
+    "tmdbFetchedAt": "2026-10-01T10:14:50.035Z"
+  },
+  {
     "id": "jerrika-hinton",
     "slug": "jerrika-hinton",
     "name": "Jerrika Hinton",
@@ -50735,6 +51374,18 @@
     "knownForDepartment": "Acting",
     "knownCredits": 6,
     "tmdbUpdatedAt": "2026-09-21T13:14:29.984Z"
+  },
+  {
+    "id": "1183679",
+    "slug": "jesse-bean",
+    "name": "Jesse Bean",
+    "tmdbPersonId": 1183679,
+    "imdbPersonId": "nm0063789",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 13,
+    "tmdbUpdatedAt": "2026-10-01T10:14:49.331Z",
+    "tmdbFetchedAt": "2026-10-01T10:14:49.331Z"
   },
   {
     "id": "jesse-burke",
@@ -51232,6 +51883,28 @@
     "tmdbUpdatedAt": "2026-09-20T16:18:11.853Z"
   },
   {
+    "id": "156689",
+    "slug": "jessica-tuck",
+    "name": "Jessica Tuck",
+    "tmdbPersonId": 156689,
+    "photoUrl": "/images/people/156689.webp",
+    "profileUrl": "/images/people/156689.webp",
+    "birthday": "1963-02-19",
+    "placeOfBirth": "New York City, New York, USA",
+    "biography": "Jessica Ines Tuck (February 19, 1963) is an American actress, best known for her TV roles as Nan Flanagan on the HBO series True Blood, Gillian Gray on the CBS drama series Judging Amy, and Megan Gordon Harrison on the ABC soap opera One Life to Live.",
+    "imdbPersonId": "nm0875768",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 110,
+    "alsoKnownAs": [
+      "Jessica Ines Tuck"
+    ],
+    "instagramId": "thejessicatuck",
+    "twitterId": "jesstuck",
+    "tmdbUpdatedAt": "2026-10-01T10:14:44.048Z",
+    "tmdbFetchedAt": "2026-10-01T10:14:44.048Z"
+  },
+  {
     "id": "jessica-villeneuve",
     "slug": "jessica-villeneuve",
     "name": "Jessica Villeneuve",
@@ -51295,6 +51968,19 @@
     ],
     "instagramId": "jessiejamesdecker",
     "tmdbUpdatedAt": "2026-09-23T16:42:22.882Z"
+  },
+  {
+    "id": "1128558",
+    "slug": "jessie-lande",
+    "name": "Jessie Lande",
+    "tmdbPersonId": 1128558,
+    "photoUrl": "/images/people/1128558.webp",
+    "profileUrl": "/images/people/1128558.webp",
+    "imdbPersonId": "nm3373325",
+    "knownForDepartment": "Acting",
+    "knownCredits": 7,
+    "tmdbUpdatedAt": "2026-10-01T10:14:50.318Z",
+    "tmdbFetchedAt": "2026-10-01T10:14:50.318Z"
   },
   {
     "id": "jessie-liang",
@@ -52904,7 +53590,8 @@
     "instagramId": "joeylawrence",
     "twitterId": "joeylawrence",
     "facebookId": "JoeyLawrenceMusic",
-    "tmdbUpdatedAt": "2026-09-22T20:53:46.270Z"
+    "tmdbUpdatedAt": "2026-10-01T10:14:45.202Z",
+    "tmdbFetchedAt": "2026-10-01T10:14:45.202Z"
   },
   {
     "id": "joey-mossey",
@@ -53119,7 +53806,8 @@
     "instagramId": "johnbrotherton",
     "twitterId": "johnbrotherton",
     "facebookId": "TheJohnBrotherton",
-    "tmdbUpdatedAt": "2026-09-21T13:14:29.111Z"
+    "tmdbUpdatedAt": "2026-10-01T10:14:49.537Z",
+    "tmdbFetchedAt": "2026-10-01T10:14:49.537Z"
   },
   {
     "id": "1721217",
@@ -53302,6 +53990,24 @@
     "tmdbUpdatedAt": "2026-09-22T20:53:41.518Z"
   },
   {
+    "id": "1130513",
+    "slug": "john-douglas-smith",
+    "name": "John Douglas Smith",
+    "tmdbPersonId": 1130513,
+    "birthday": "1966-08-04",
+    "placeOfBirth": "Hamilton, Ontario, Canada",
+    "imdbPersonId": "nm0808798",
+    "gender": "Male",
+    "knownForDepartment": "Sound",
+    "knownCredits": 24,
+    "alsoKnownAs": [
+      "John Smith",
+      "John D. Smith"
+    ],
+    "tmdbUpdatedAt": "2026-10-01T10:14:51.260Z",
+    "tmdbFetchedAt": "2026-10-01T10:14:51.260Z"
+  },
+  {
     "id": "218899",
     "slug": "john-dunn-hill",
     "name": "John Dunn-Hill",
@@ -53460,7 +54166,8 @@
     "gender": "Male",
     "knownForDepartment": "Acting",
     "knownCredits": 47,
-    "tmdbUpdatedAt": "2026-09-20T16:18:52.921Z"
+    "tmdbUpdatedAt": "2026-10-01T10:14:41.754Z",
+    "tmdbFetchedAt": "2026-10-01T10:14:41.755Z"
   },
   {
     "id": "55554",
@@ -54737,7 +55444,8 @@
     "gender": "Male",
     "knownForDepartment": "Directing",
     "knownCredits": 38,
-    "tmdbUpdatedAt": "2026-09-22T20:53:14.776Z"
+    "tmdbUpdatedAt": "2026-10-01T10:14:51.676Z",
+    "tmdbFetchedAt": "2026-10-01T10:14:51.677Z"
   },
   {
     "id": "4621772",
@@ -57469,6 +58177,16 @@
     "instagramId": "kadeemhardison",
     "twitterId": "kadeemhardison",
     "tmdbUpdatedAt": "2026-09-20T16:20:32.721Z"
+  },
+  {
+    "id": "1509116",
+    "slug": "kaden-gibson",
+    "name": "Kaden Gibson",
+    "tmdbPersonId": 1509116,
+    "knownForDepartment": "Acting",
+    "knownCredits": 3,
+    "tmdbUpdatedAt": "2026-10-01T10:14:44.473Z",
+    "tmdbFetchedAt": "2026-10-01T10:14:44.473Z"
   },
   {
     "id": "kael-cedric-arychuck",
@@ -63341,6 +64059,23 @@
     "tmdbUpdatedAt": "2026-09-20T16:16:47.540Z"
   },
   {
+    "id": "60721",
+    "slug": "kurt-max-runte",
+    "name": "Kurt Max Runte",
+    "tmdbPersonId": 60721,
+    "photoUrl": "/images/people/60721.webp",
+    "profileUrl": "/images/people/60721.webp",
+    "birthday": "1961-11-27",
+    "placeOfBirth": "United States of America",
+    "biography": "Kurt Max Runte is a Canadian actor based in Vancouver, British Columbia. He is most noted for his performance as Dale Milbury in the 2016 film Hello Destroyer, for which he won the Vancouver Film Critics Circle award for Best Supporting Actor in a Canadian Film at the Vancouver Film Critics Circle Awards 2016.",
+    "imdbPersonId": "nm0750343",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 55,
+    "tmdbUpdatedAt": "2026-10-01T10:14:42.611Z",
+    "tmdbFetchedAt": "2026-10-01T10:14:42.611Z"
+  },
+  {
     "id": "1512168",
     "slug": "kurt-ostlund",
     "name": "Kurt Ostlund",
@@ -63547,6 +64282,24 @@
     "tmdbUpdatedAt": "2026-09-20T16:19:18.622Z"
   },
   {
+    "id": "1251994",
+    "slug": "kyle-mac",
+    "name": "Kyle Mac",
+    "tmdbPersonId": 1251994,
+    "photoUrl": "/images/people/1251994.webp",
+    "profileUrl": "/images/people/1251994.webp",
+    "birthday": "1988-07-22",
+    "biography": "Kyle Mac is an actor.",
+    "imdbPersonId": "nm2830921",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 45,
+    "instagramId": "kylemachere",
+    "twitterId": "KyleMacHere",
+    "tmdbUpdatedAt": "2026-10-01T10:14:46.239Z",
+    "tmdbFetchedAt": "2026-10-01T10:14:46.239Z"
+  },
+  {
     "id": "1148696",
     "slug": "kyle-nobess",
     "name": "Kyle Nobess",
@@ -63718,6 +64471,21 @@
     "instagramId": "kyra_leroux",
     "twitterId": "kyra_leroux_",
     "tmdbUpdatedAt": "2026-09-20T16:17:11.608Z"
+  },
+  {
+    "id": "172843",
+    "slug": "l-harvey-gold",
+    "name": "L. Harvey Gold",
+    "tmdbPersonId": 172843,
+    "photoUrl": "/images/people/172843.webp",
+    "profileUrl": "/images/people/172843.webp",
+    "birthday": "1946-01-01",
+    "imdbPersonId": "nm0325023",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 46,
+    "tmdbUpdatedAt": "2026-10-01T10:14:45.577Z",
+    "tmdbFetchedAt": "2026-10-01T10:14:45.577Z"
   },
   {
     "id": "lace-akpojaro",
@@ -66530,6 +67298,17 @@
     "tmdbUpdatedAt": "2026-09-20T16:18:49.895Z"
   },
   {
+    "id": "1130515",
+    "slug": "lilly-wakem",
+    "name": "Lilly Wakem",
+    "tmdbPersonId": 1130515,
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 1,
+    "tmdbUpdatedAt": "2026-10-01T10:14:51.435Z",
+    "tmdbFetchedAt": "2026-10-01T10:14:51.435Z"
+  },
+  {
     "id": "lily-gao",
     "slug": "lily-gao",
     "name": "Lily Gao",
@@ -67334,7 +68113,8 @@
       "Lisa Ann Durupt"
     ],
     "instagramId": "thelisadurupt",
-    "tmdbUpdatedAt": "2026-09-20T16:17:09.948Z"
+    "tmdbUpdatedAt": "2026-10-01T10:14:45.576Z",
+    "tmdbFetchedAt": "2026-10-01T10:14:45.576Z"
   },
   {
     "id": "lisa-france",
@@ -68083,6 +68863,23 @@
     "tmdbUpdatedAt": "2026-09-20T16:19:46.876Z"
   },
   {
+    "id": "34979",
+    "slug": "loren-lester",
+    "name": "Loren Lester",
+    "tmdbPersonId": 34979,
+    "photoUrl": "/images/people/34979.webp",
+    "profileUrl": "/images/people/34979.webp",
+    "birthday": "1960-10-04",
+    "placeOfBirth": "Los Angeles, California, USA",
+    "biography": "Loren Lester, a native of Los Angeles, began his career as a teenager and has accumulated more than 30 years of film, stage and television credits. In his early years, he played the evil hall monitor \"Fritz Hansel\" in the cult classic film Rock 'n' Roll High School (1979) and he recurred for five seasons as \"Roy\" on \"The Facts of Life\" (1979) opposite 'Nancy McKeon'.  Since then. Loren has appeared in more than 200 episodic including \"Curb Your Enthusiasm\" (2000), \"The Closer\" (2005), \"Undercovers\" (2010), \"Greek\" (2007), \"Cold Case\" (2003), \"Criminal Minds\" (2005), \"Castle\" (2009), \"Two and a Half Men\" (2003), \"Notes from the Underbelly\" (2007) (directed by Barry Sonnenfeld), \"Side Order of Life\" (2007) (directed by David Paymer), and \"Las Vegas\" (2003) (directed by Timothy Busfield).  He is now recurring on the HBO hit comedy series \"Hung\" (2009), directed by Academy Award winner Alexander Payne, and the Nickelodeon series \"Victorious\" (2010).  Recent motion pictures include the 2010 releases The Green Hornet (2011) (starring Seth Rogen, directed by Michel Gondry), Hit List (2014) (starring Joseph Lawrence) and \"After the Wizard\", a new sequel to The Wizard of Oz (1939). Other films include 17 Again (2009) (starring Zac Efron and Matthew Perry), the Wes Craven suspense thriller Red Eye (2005) starring Rachel McAdams) and Midnight Clear (2006) (starring Stephen Baldwin).  As a voice-over artist, Loren is best known for creating the roles of \"Robin\" and \"Nightwing\" on \"Batman\" (1992) (aka Batman: The Animated Series and \"The New Batman Adventures\" (1997) (aka The Adventures of Batman and Robin).  His voice has been heard in hundreds of TV and radio commercials. He has also received rave reviews for his audio book narration of \"Midnight Clear\", \"Girl in Hyacinth Blue\", \"In-N-Out Burger\" and \"The Upside of Turbulence\".  Loren is a graduate of Occidental College's theater department and has starred in dozens of plays and musicals. Loren and his wife (and frequent co-star), actress Kelly Richman Lester, are the proud parents of three daughters.  IMDb Mini Biography By: www.lorenlester.com",
+    "imdbPersonId": "nm0504489",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 85,
+    "tmdbUpdatedAt": "2026-10-01T10:14:49.973Z",
+    "tmdbFetchedAt": "2026-10-01T10:14:49.973Z"
+  },
+  {
     "id": "127578",
     "slug": "lorena-david",
     "name": "Lorena David",
@@ -68736,6 +69533,20 @@
     "knownForDepartment": "Acting",
     "knownCredits": 1,
     "tmdbUpdatedAt": "2026-09-20T16:16:39.183Z"
+  },
+  {
+    "id": "1123990",
+    "slug": "lucy-gallina",
+    "name": "Lucy Gallina",
+    "tmdbPersonId": 1123990,
+    "photoUrl": "/images/people/1123990.webp",
+    "profileUrl": "/images/people/1123990.webp",
+    "imdbPersonId": "nm3932432",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 3,
+    "tmdbUpdatedAt": "2026-10-01T10:14:46.926Z",
+    "tmdbFetchedAt": "2026-10-01T10:14:46.926Z"
   },
   {
     "id": "1637672",
@@ -69860,6 +70671,19 @@
     "instagramId": "madisonbrydges",
     "twitterId": "madison_brydges",
     "tmdbUpdatedAt": "2026-09-20T16:18:59.758Z"
+  },
+  {
+    "id": "1128557",
+    "slug": "madison-dae-clarion",
+    "name": "Madison Dae Clarion",
+    "tmdbPersonId": 1128557,
+    "photoUrl": "/images/people/1128557.webp",
+    "profileUrl": "/images/people/1128557.webp",
+    "imdbPersonId": "nm4698185",
+    "knownForDepartment": "Acting",
+    "knownCredits": 6,
+    "tmdbUpdatedAt": "2026-10-01T10:14:50.157Z",
+    "tmdbFetchedAt": "2026-10-01T10:14:50.157Z"
   },
   {
     "id": "madison-hall",
@@ -73537,7 +74361,8 @@
     "gender": "Female",
     "knownForDepartment": "Acting",
     "knownCredits": 36,
-    "tmdbUpdatedAt": "2026-09-21T12:59:24.818Z"
+    "tmdbUpdatedAt": "2026-10-01T10:14:45.947Z",
+    "tmdbFetchedAt": "2026-10-01T10:14:45.947Z"
   },
   {
     "id": "2136931",
@@ -73779,6 +74604,26 @@
     "tmdbFetchedAt": "2026-10-01T09:27:21.403Z"
   },
   {
+    "id": "583040",
+    "slug": "mason-cook",
+    "name": "Mason Cook",
+    "tmdbPersonId": 583040,
+    "photoUrl": "/images/people/583040.webp",
+    "profileUrl": "/images/people/583040.webp",
+    "birthday": "2000-07-25",
+    "placeOfBirth": "Oklahoma City, Oklahoma, USA",
+    "biography": "Mason Cook Elston (born July 25, 2000) is an American actor. He is known for his portrayal of Cecil Wilson in Spy Kids: All the Time in the World, for which he was nominated for the Young Artist Award for Best Performance in a Feature Film - Supporting Young Actor in 2011.\n\nHe has also appeared in The Middle, Treasure Buddies, Wyatt Earp's Revenge, The Incredible Burt Wonderstone, and The Lone Ranger.",
+    "imdbPersonId": "nm3303074",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 30,
+    "instagramId": "masoncook",
+    "twitterId": "masoncook",
+    "facebookId": "OfficialMasonCook",
+    "tmdbUpdatedAt": "2026-10-01T10:14:48.863Z",
+    "tmdbFetchedAt": "2026-10-01T10:14:48.863Z"
+  },
+  {
     "id": "mason-d-davis",
     "slug": "mason-d-davis",
     "name": "Mason D. Davis",
@@ -73994,6 +74839,26 @@
     "instagramId": "mattcohen4real",
     "twitterId": "mattcohen4real",
     "tmdbUpdatedAt": "2026-09-20T16:18:30.461Z"
+  },
+  {
+    "id": "79494",
+    "slug": "matt-dallas",
+    "name": "Matt Dallas",
+    "tmdbPersonId": 79494,
+    "photoUrl": "/images/people/79494.webp",
+    "profileUrl": "/images/people/79494.webp",
+    "birthday": "1982-10-21",
+    "placeOfBirth": "Phoenix, Arizona, USA",
+    "biography": "Matthew Joseph \"Matt\" Dallas (born October 21, 1982) is an American actor, best known for his titular character on the ABC Family series, Kyle XY.\n\nDescription above from the Wikipedia article Matt Dallas, licensed under CC-BY-SA, full list of contributors on Wikipedia.",
+    "imdbPersonId": "nm1678720",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 29,
+    "instagramId": "mattdallas",
+    "twitterId": "themattdallas",
+    "facebookId": "Matt-Dallas-598110536931337",
+    "tmdbUpdatedAt": "2026-10-01T10:14:43.036Z",
+    "tmdbFetchedAt": "2026-10-01T10:14:43.036Z"
   },
   {
     "id": "127917",
@@ -76776,7 +77641,8 @@
       "Meredith Ann Baxter",
       "مردیت باکستر"
     ],
-    "tmdbUpdatedAt": "2026-09-20T16:20:17.375Z"
+    "tmdbUpdatedAt": "2026-10-01T10:14:43.345Z",
+    "tmdbFetchedAt": "2026-10-01T10:14:43.345Z"
   },
   {
     "id": "meredith-buhler",
@@ -77676,7 +78542,8 @@
       "Michael Edward Gross",
       "مایکل گروس"
     ],
-    "tmdbUpdatedAt": "2026-09-20T16:20:30.492Z"
+    "tmdbUpdatedAt": "2026-10-01T10:14:43.912Z",
+    "tmdbFetchedAt": "2026-10-01T10:14:43.912Z"
   },
   {
     "id": "43222",
@@ -77782,7 +78649,8 @@
     "alsoKnownAs": [
       "Michael Murray"
     ],
-    "tmdbUpdatedAt": "2026-09-21T13:17:50.789Z"
+    "tmdbUpdatedAt": "2026-10-01T10:14:42.548Z",
+    "tmdbFetchedAt": "2026-10-01T10:14:42.548Z"
   },
   {
     "id": "michael-jai-white",
@@ -78802,6 +79670,28 @@
     "tmdbUpdatedAt": "2026-09-20T16:18:09.215Z"
   },
   {
+    "id": "91461",
+    "slug": "michelle-hurd",
+    "name": "Michelle Hurd",
+    "tmdbPersonId": 91461,
+    "photoUrl": "/images/people/91461.webp",
+    "profileUrl": "/images/people/91461.webp",
+    "birthday": "1966-12-21",
+    "placeOfBirth": "New York City, New York, USA",
+    "biography": "Michelle Hurd (born December 21, 1966) is an American stage, film, and television actress. She is married to actor Garret Dillahunt.\n\nMichelle Hurd is the daughter of actor Hugh L. Hurd. She graduated from Saint Ann's School in 1984 and Boston University in 1988, and studied with the Alvin Ailey School. After her graduation from college, she studied at Great Britain's National Theatre .\n\nHer Broadway credits include the 1996 Stephen Sondheim-George Furth flop Getting Away with Murder. Other theater credits include Othello, A.M.L., Hamlet, The Hunchback of Notre Dame and Looking for the Pony  at Manhattan Theater Source with her sister Adrienne Hurd. She met her husband, Garret Dillahunt, in 900 Oneonta at Circle Repertory Theater Company. She has won several awards, including the Robbie Award and the California Theatre Award for Best Supporting Actress in a Drama for the premiere of Richard Greenberg's The Violet Hour.\n\nShe has also appeared in several movies, including Random Hearts, Personals and as the comic book superhero B.B. DaCosta/Fire in the unshown TV-pilot Justice League of America (1997). After working in television roles such as The Cosby Mysteries, New York Undercover and The Practice, she appeared in a 1997 episode of Law & Order. Her performance as a corrupt FBI informant caught the attention of L&O producer Dick Wolf, who two years later cast her in the spin-off Law & Order: Special Victims Unit as Det. Monique Jeffries. She co-starred with Christopher Meloni and Mariska Hargitay for the first season before leaving the series in 2000, but she did appear in the first, seventh and sixteenth episodes of season two, her final appearance being in March 2001. In 2001, she appeared in the Showtime original series Leap Years, where her character was the on and off love interest of a bisexual character played by her real-life husband.\n\nTelevision roles include parts in Charmed, The O.C., According to Jim, Shark, Bones and Gossip Girl. In 2006 - 2007, she had a recurring role on ER as television news producer Courtney Brown, who became close to Dr. Kerry Weaver.\n\nShe played Diana, the leading rôle, in the Washington Shakespeare Theatre Company's 10 February–29 March 2009 production of Lope de Vega's Dog in the Manger.\n\nShe won a Robbie Award as \"best actress\" for her work in the world premiere of The Violet Hour at South Coast Repertory. She played in Hamlet at the North Shore Theater.\n\nIn 2010, Hurd began a starring role on the A&E Network drama The Glades, playing Colleen Manus.",
+    "imdbPersonId": "nm0403335",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 80,
+    "alsoKnownAs": [
+      "میشل هارد"
+    ],
+    "instagramId": "realmichellehurd",
+    "twitterId": "ItsMichelleHurd",
+    "tmdbUpdatedAt": "2026-10-01T10:14:43.832Z",
+    "tmdbFetchedAt": "2026-10-01T10:14:43.832Z"
+  },
+  {
     "id": "michelle-jackett-webster",
     "slug": "michelle-jackett-webster",
     "name": "Michelle Jackett-Webster",
@@ -78917,7 +79807,8 @@
       "Michelle Noldon"
     ],
     "twitterId": "noldenmichelle",
-    "tmdbUpdatedAt": "2026-09-21T12:59:49.057Z"
+    "tmdbUpdatedAt": "2026-10-01T10:14:45.828Z",
+    "tmdbFetchedAt": "2026-10-01T10:14:45.828Z"
   },
   {
     "id": "1011745",
@@ -81214,7 +82105,8 @@
     "knownCredits": 42,
     "twitterId": "natalielisinska",
     "facebookId": "Natalie-Lisinska-147280458639271",
-    "tmdbUpdatedAt": "2026-09-20T16:17:25.766Z"
+    "tmdbUpdatedAt": "2026-10-01T10:14:51.898Z",
+    "tmdbFetchedAt": "2026-10-01T10:14:51.898Z"
   },
   {
     "id": "natalie-malaika",
@@ -83518,6 +84410,20 @@
     "tmdbUpdatedAt": "2026-09-20T16:18:41.606Z"
   },
   {
+    "id": "168778",
+    "slug": "noah-cappe",
+    "name": "Noah Cappe",
+    "tmdbPersonId": 168778,
+    "photoUrl": "/images/people/168778.webp",
+    "profileUrl": "/images/people/168778.webp",
+    "imdbPersonId": "nm0135471",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 21,
+    "tmdbUpdatedAt": "2026-10-01T10:14:50.818Z",
+    "tmdbFetchedAt": "2026-10-01T10:14:50.818Z"
+  },
+  {
     "id": "noah-de-mel",
     "slug": "noah-de-mel",
     "name": "Noah de Mel",
@@ -85583,6 +86489,27 @@
     "tmdbUpdatedAt": "2026-09-20T16:18:33.110Z"
   },
   {
+    "id": "17837",
+    "slug": "patrick-gallagher",
+    "name": "Patrick Gallagher",
+    "tmdbPersonId": 17837,
+    "photoUrl": "/images/people/17837.webp",
+    "profileUrl": "/images/people/17837.webp",
+    "birthday": "1968-02-21",
+    "placeOfBirth": "New Westminster, British Columbia, Canada",
+    "biography": "Patrick Gallagher (born February 21st, 1968) is a Canadian actor. He is most known for his role as Attila the Hun in the Night at the Museum film franchise.",
+    "imdbPersonId": "nm0302466",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 90,
+    "alsoKnownAs": [
+      "Patrick James Gallagher"
+    ],
+    "instagramId": "iampatrickgallagher",
+    "tmdbUpdatedAt": "2026-10-01T10:14:51.120Z",
+    "tmdbFetchedAt": "2026-10-01T10:14:51.120Z"
+  },
+  {
     "id": "patrick-haye",
     "slug": "patrick-haye",
     "name": "Patrick Haye",
@@ -86592,7 +87519,8 @@
     "gender": "Female",
     "knownForDepartment": "Acting",
     "knownCredits": 65,
-    "tmdbUpdatedAt": "2026-09-20T16:17:33.058Z"
+    "tmdbUpdatedAt": "2026-10-01T10:14:45.287Z",
+    "tmdbFetchedAt": "2026-10-01T10:14:45.287Z"
   },
   {
     "id": "2481591",
@@ -88594,7 +89522,8 @@
     "alsoKnownAs": [
       "레이첼 윌슨"
     ],
-    "tmdbUpdatedAt": "2026-09-20T16:18:56.200Z"
+    "tmdbUpdatedAt": "2026-10-01T10:14:50.435Z",
+    "tmdbFetchedAt": "2026-10-01T10:14:50.435Z"
   },
   {
     "id": "rachel-mae-brady",
@@ -89922,6 +90851,24 @@
     "tmdbUpdatedAt": "2026-09-20T16:18:37.405Z"
   },
   {
+    "id": "1130512",
+    "slug": "ren-e-percy",
+    "name": "Renée Percy",
+    "tmdbPersonId": 1130512,
+    "photoUrl": "/images/people/1130512.webp",
+    "profileUrl": "/images/people/1130512.webp",
+    "biography": "Renee Percy is a Canadian film and television actress and comedian.",
+    "imdbPersonId": "nm1860500",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 18,
+    "instagramId": "thereneepercy",
+    "twitterId": "reneepercy",
+    "facebookId": "ReneePercyFanPage",
+    "tmdbUpdatedAt": "2026-10-01T10:14:51.300Z",
+    "tmdbFetchedAt": "2026-10-01T10:14:51.300Z"
+  },
+  {
     "id": "renny-grames",
     "slug": "renny-grames",
     "name": "Renny Grames",
@@ -90521,6 +91468,28 @@
     "knownForDepartment": "Writing",
     "knownCredits": 18,
     "tmdbUpdatedAt": "2026-09-20T16:21:09.539Z"
+  },
+  {
+    "id": "144852",
+    "slug": "richard-harmon",
+    "name": "Richard Harmon",
+    "tmdbPersonId": 144852,
+    "photoUrl": "/images/people/144852.webp",
+    "profileUrl": "/images/people/144852.webp",
+    "birthday": "1991-08-18",
+    "placeOfBirth": "Mississauga, Ontario, Canada",
+    "biography": "Richard Scott Harmon (born August 18, 1991) is a Canadian actor best known for his role as John Murphy in CW's The 100. Harmon is also known for his roles as Jasper Ames in the The Killing and Julian Randol on Continuum. Harmon received critical praise for his role in the movie If I Had Wings.",
+    "imdbPersonId": "nm2113653",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 73,
+    "alsoKnownAs": [
+      "Richard Scott Harmon"
+    ],
+    "instagramId": "richardsharmon",
+    "twitterId": "RichardSHarmon",
+    "tmdbUpdatedAt": "2026-10-01T10:14:41.993Z",
+    "tmdbFetchedAt": "2026-10-01T10:14:41.994Z"
   },
   {
     "id": "richard-henzel",
@@ -95905,6 +96874,23 @@
     "tmdbUpdatedAt": "2026-09-22T20:53:16.698Z"
   },
   {
+    "id": "1818360",
+    "slug": "sarena-khan",
+    "name": "Sarena Khan",
+    "tmdbPersonId": 1818360,
+    "photoUrl": "/images/people/1818360.webp",
+    "profileUrl": "/images/people/1818360.webp",
+    "imdbPersonId": "nm4196265",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 10,
+    "alsoKnownAs": [
+      "Serena Khan"
+    ],
+    "tmdbUpdatedAt": "2026-10-01T10:14:44.443Z",
+    "tmdbFetchedAt": "2026-10-01T10:14:44.443Z"
+  },
+  {
     "id": "sari-mercer",
     "slug": "sari-mercer",
     "name": "Sari Mercer",
@@ -96332,7 +97318,8 @@
     "alsoKnownAs": [
       "Scott Miller"
     ],
-    "tmdbUpdatedAt": "2026-09-20T16:21:17.618Z"
+    "tmdbUpdatedAt": "2026-10-01T10:14:42.234Z",
+    "tmdbFetchedAt": "2026-10-01T10:14:42.234Z"
   },
   {
     "id": "scott-evans",
@@ -96907,6 +97894,28 @@
     "tmdbFetchedAt": "2026-10-01T09:27:33.775Z"
   },
   {
+    "id": "55084",
+    "slug": "sean-faris",
+    "name": "Sean Faris",
+    "tmdbPersonId": 55084,
+    "photoUrl": "/images/people/55084.webp",
+    "profileUrl": "/images/people/55084.webp",
+    "birthday": "1982-03-25",
+    "placeOfBirth": "Houston, Texas, USA",
+    "biography": "Sean Hardy Faris was born in Houston, Texas, to Katherine (Miller) and Warren Stephen Faris. He is of English, German, Scottish, and Irish descent. Sean moved to Ohio at age twelve, and has been honing his craft in Los Angeles since moving four years upon his high school graduation. He received an MTV Movie Award for his lead role in Summit Entertainment's hit Never Back Down, and starred as Betty White's grandson and Jennifer Love Hewitt's love interest in the CBS Hallmark Hall of Fame telefilm The Lost Valentine. In addition to his central role in the rugby-inspired feature Forever Strong, he appeared as Dennis Quaid's eldest son in Paramount's hit remake of the classic Yours, Mine & Ours and previously starred as the hunky object of affection in MGM's comedy romp Sleepover. Next on the horizon is the crime thriller Pawn in which he stars opposite Academy Award-winner Forest Whitaker, and the coveted title role in The Story of Bonnie & Clyde. In direct contrast, Faris starred as the lead in FOX's acclaimed drama series Reunion which followed six close friends from their high school graduation to their 20th reunion. He previously led the cast of ABC's dramatic series Life As We Know It. Based upon British author Melvin Burgess' controversial novel Doing It, the acclaimed show chronicled the sexual antics of a group of high school friends in Seattle. For his role as sensitive jock Dino Whitman, he was heralded as a breakout talent by the likes of Daily Variety, The Hollywood Reporter, and USA Today. A more recent foray into television included a multi-episode arc on The CW's top-rated Vampire Diaries. No stranger to television, Faris has also guest-starred on such shows as Smallville, One Tree Hill, and Boston Public. His big screen debut featured him alongside the likes of Ben Affleck and Josh Hartnett in Michael Bay's epic Pearl Harbor.\n\n- IMDb",
+    "imdbPersonId": "nm0267511",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 43,
+    "alsoKnownAs": [
+      "肖恩法瑞斯",
+      "Sean Henry Faris"
+    ],
+    "instagramId": "i_am_seanfaris",
+    "tmdbUpdatedAt": "2026-10-01T10:14:46.857Z",
+    "tmdbFetchedAt": "2026-10-01T10:14:46.857Z"
+  },
+  {
     "id": "3891867",
     "slug": "sean-fine",
     "name": "Sean Fine",
@@ -97471,7 +98480,8 @@
     ],
     "instagramId": "sergehoudeactor",
     "twitterId": "houdeserge",
-    "tmdbUpdatedAt": "2026-09-21T13:18:59.734Z"
+    "tmdbUpdatedAt": "2026-10-01T10:14:45.548Z",
+    "tmdbFetchedAt": "2026-10-01T10:14:45.548Z"
   },
   {
     "id": "54193",
@@ -98235,7 +99245,8 @@
     "gender": "Female",
     "knownForDepartment": "Acting",
     "knownCredits": 19,
-    "tmdbUpdatedAt": "2026-09-20T16:20:49.771Z"
+    "tmdbUpdatedAt": "2026-10-01T10:14:42.300Z",
+    "tmdbFetchedAt": "2026-10-01T10:14:42.300Z"
   },
   {
     "id": "shauna-macdonald",
@@ -100433,6 +101444,25 @@
     "tmdbUpdatedAt": "2026-09-20T16:17:16.825Z"
   },
   {
+    "id": "196707",
+    "slug": "stephanie-mills",
+    "name": "Stephanie Mills",
+    "tmdbPersonId": 196707,
+    "photoUrl": "/images/people/196707.webp",
+    "profileUrl": "/images/people/196707.webp",
+    "birthday": "1979-03-07",
+    "placeOfBirth": "Edmonton, Alberta, Canada",
+    "imdbPersonId": "nm0590195",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 50,
+    "alsoKnownAs": [
+      "Stephanie Anne Mills"
+    ],
+    "tmdbUpdatedAt": "2026-10-01T10:14:46.079Z",
+    "tmdbFetchedAt": "2026-10-01T10:14:46.079Z"
+  },
+  {
     "id": "stephanie-moore",
     "slug": "stephanie-moore",
     "name": "Stephanie Moore",
@@ -101070,7 +102100,8 @@
     "gender": "Male",
     "knownForDepartment": "Acting",
     "knownCredits": 10,
-    "tmdbUpdatedAt": "2026-09-20T16:18:37.758Z"
+    "tmdbUpdatedAt": "2026-10-01T10:14:49.218Z",
+    "tmdbFetchedAt": "2026-10-01T10:14:49.218Z"
   },
   {
     "id": "126683",
@@ -101313,6 +102344,26 @@
     "knownForDepartment": "Acting",
     "knownCredits": 7,
     "tmdbUpdatedAt": "2026-09-22T20:53:48.444Z"
+  },
+  {
+    "id": "230868",
+    "slug": "steven-christopher-parker",
+    "name": "Steven Christopher Parker",
+    "tmdbPersonId": 230868,
+    "photoUrl": "/images/people/230868.webp",
+    "profileUrl": "/images/people/230868.webp",
+    "birthday": "1989-01-08",
+    "placeOfBirth": "Denver, Colorado, USA",
+    "imdbPersonId": "nm1588622",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 26,
+    "alsoKnownAs": [
+      "Steven C. Parker",
+      "Steven Parker"
+    ],
+    "tmdbUpdatedAt": "2026-10-01T10:14:44.358Z",
+    "tmdbFetchedAt": "2026-10-01T10:14:44.358Z"
   },
   {
     "id": "157729",
@@ -101693,6 +102744,29 @@
     "knownForDepartment": "Acting",
     "knownCredits": 2,
     "tmdbUpdatedAt": "2026-09-20T16:16:54.038Z"
+  },
+  {
+    "id": "54881",
+    "slug": "summer-glau",
+    "name": "Summer Glau",
+    "tmdbPersonId": 54881,
+    "photoUrl": "/images/people/54881.webp",
+    "profileUrl": "/images/people/54881.webp",
+    "birthday": "1981-07-24",
+    "placeOfBirth": "San Antonio, Texas, USA",
+    "biography": "Summer Lyn Glau  (born July 24, 1981, height 5' 6\" (1,68 m)) is an American actress, known for playing River Tam in the science fiction series Firefly and follow-up movie Serenity and for playing Cameron in the series Terminator: The Sarah Connor Chronicles.",
+    "imdbPersonId": "nm1132359",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 35,
+    "alsoKnownAs": [
+      "섬머 글루",
+      "Summer Lyn Glau",
+      "سامر گلاو"
+    ],
+    "twitterId": "summerlglau",
+    "tmdbUpdatedAt": "2026-10-01T10:14:48.364Z",
+    "tmdbFetchedAt": "2026-10-01T10:14:48.364Z"
   },
   {
     "id": "4867604",
@@ -104383,7 +105457,8 @@
     "gender": "Male",
     "knownForDepartment": "Directing",
     "knownCredits": 99,
-    "tmdbUpdatedAt": "2026-09-22T20:53:15.199Z"
+    "tmdbUpdatedAt": "2026-10-01T10:14:42.569Z",
+    "tmdbFetchedAt": "2026-10-01T10:14:42.569Z"
   },
   {
     "id": "terry-o-quinn",
@@ -105931,6 +107006,24 @@
     "tmdbFetchedAt": "2026-09-25T18:44:23.035Z"
   },
   {
+    "id": "1350896",
+    "slug": "tom-detrinis",
+    "name": "Tom DeTrinis",
+    "tmdbPersonId": 1350896,
+    "photoUrl": "/images/people/1350896.webp",
+    "profileUrl": "/images/people/1350896.webp",
+    "biography": "Tom DeTrinis is an actor.",
+    "imdbPersonId": "nm2383344",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 20,
+    "alsoKnownAs": [
+      "Thomas DeTrinis"
+    ],
+    "tmdbUpdatedAt": "2026-10-01T10:14:49.437Z",
+    "tmdbFetchedAt": "2026-10-01T10:14:49.437Z"
+  },
+  {
     "id": "tom-doonan",
     "slug": "tom-doonan",
     "name": "Tom Doonan",
@@ -106360,7 +107453,7 @@
     "imdbPersonId": "nm3793647",
     "gender": "Male",
     "knownForDepartment": "Acting",
-    "knownCredits": 60,
+    "knownCredits": 61,
     "alsoKnownAs": [
       "Anthony Cavalero",
       "Anthony John Cavalero"
@@ -106368,7 +107461,8 @@
     "instagramId": "tonycavalero",
     "twitterId": "TonyCavalero",
     "facebookId": "TonyCavalero",
-    "tmdbUpdatedAt": "2026-09-20T16:20:44.169Z"
+    "tmdbUpdatedAt": "2026-10-01T10:14:43.926Z",
+    "tmdbFetchedAt": "2026-10-01T10:14:43.926Z"
   },
   {
     "id": "987720",
@@ -106401,6 +107495,25 @@
     ],
     "tmdbUpdatedAt": "2026-09-25T21:37:13.520Z",
     "tmdbFetchedAt": "2026-09-25T21:37:13.520Z"
+  },
+  {
+    "id": "3908",
+    "slug": "tony-denman",
+    "name": "Tony Denman",
+    "tmdbPersonId": 3908,
+    "photoUrl": "/images/people/3908.webp",
+    "profileUrl": "/images/people/3908.webp",
+    "birthday": "1979-10-22",
+    "placeOfBirth": "Minneapolis, Minnesota, USA",
+    "imdbPersonId": "nm0219301",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 29,
+    "alsoKnownAs": [
+      "Anthony Richard Denman"
+    ],
+    "tmdbUpdatedAt": "2026-10-01T10:14:45.001Z",
+    "tmdbFetchedAt": "2026-10-01T10:14:45.001Z"
   },
   {
     "id": "80167",
@@ -108169,6 +109282,26 @@
     "tmdbFetchedAt": "2026-10-01T09:19:07.771Z"
   },
   {
+    "id": "95044",
+    "slug": "valorie-hubbard",
+    "name": "Valorie Hubbard",
+    "tmdbPersonId": 95044,
+    "photoUrl": "/images/people/95044.webp",
+    "profileUrl": "/images/people/95044.webp",
+    "imdbPersonId": "nm0399237",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 27,
+    "alsoKnownAs": [
+      "Valerie Hubbard"
+    ],
+    "instagramId": "valoriehubbard",
+    "twitterId": "valorie_hubbard",
+    "facebookId": "valoriehubbard1",
+    "tmdbUpdatedAt": "2026-10-01T10:14:50.056Z",
+    "tmdbFetchedAt": "2026-10-01T10:14:50.056Z"
+  },
+  {
     "id": "van-stewart",
     "slug": "van-stewart",
     "name": "Van Stewart",
@@ -108396,7 +109529,8 @@
       "Vanessa Johnson",
       "凡妮莎·馬特蘇"
     ],
-    "tmdbUpdatedAt": "2026-09-20T16:18:36.862Z"
+    "tmdbUpdatedAt": "2026-10-01T10:14:47.485Z",
+    "tmdbFetchedAt": "2026-10-01T10:14:47.485Z"
   },
   {
     "id": "vanessa-moltzen",
@@ -109358,6 +110492,25 @@
     "tmdbUpdatedAt": "2026-09-20T16:19:33.328Z"
   },
   {
+    "id": "1130514",
+    "slug": "viviana-zarrillo",
+    "name": "Viviana Zarrillo",
+    "tmdbPersonId": 1130514,
+    "photoUrl": "/images/people/1130514.webp",
+    "profileUrl": "/images/people/1130514.webp",
+    "imdbPersonId": "nm2377010",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 8,
+    "alsoKnownAs": [
+      "Viviana Zarillo"
+    ],
+    "instagramId": "vivzee123",
+    "twitterId": "vivzee123",
+    "tmdbUpdatedAt": "2026-10-01T10:14:52.377Z",
+    "tmdbFetchedAt": "2026-10-01T10:14:52.377Z"
+  },
+  {
     "id": "vivica-a-fox",
     "slug": "vivica-a-fox",
     "name": "Vivica A. Fox",
@@ -109460,6 +110613,40 @@
     "knownForDepartment": "Writing",
     "knownCredits": 8,
     "tmdbUpdatedAt": "2026-09-22T20:53:33.693Z"
+  },
+  {
+    "id": "1129165",
+    "slug": "wade-carroll",
+    "name": "Wade Carroll",
+    "tmdbPersonId": 1129165,
+    "imdbPersonId": "nm0141032",
+    "knownForDepartment": "Acting",
+    "knownCredits": 2,
+    "tmdbUpdatedAt": "2026-10-01T10:14:47.643Z",
+    "tmdbFetchedAt": "2026-10-01T10:14:47.643Z"
+  },
+  {
+    "id": "51930",
+    "slug": "wade-williams",
+    "name": "Wade Williams",
+    "tmdbPersonId": 51930,
+    "photoUrl": "/images/people/51930.webp",
+    "profileUrl": "/images/people/51930.webp",
+    "birthday": "1961-12-24",
+    "placeOfBirth": "Tulsa - Oklahoma - USA",
+    "biography": "Wade Williams is an American actor, best known for his role as Brad Bellick in Prison Break.",
+    "imdbPersonId": "nm0931898",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 99,
+    "alsoKnownAs": [
+      "Wade Andrews Williams",
+      "Wade Andrew Williams",
+      "ويد وليامز",
+      "وید ویلیامز"
+    ],
+    "tmdbUpdatedAt": "2026-10-01T10:14:44.475Z",
+    "tmdbFetchedAt": "2026-10-01T10:14:44.475Z"
   },
   {
     "id": "walker-risser",
@@ -109835,6 +111022,20 @@
     "knownForDepartment": "Acting",
     "knownCredits": 22,
     "tmdbUpdatedAt": "2026-09-20T16:17:54.241Z"
+  },
+  {
+    "id": "1305844",
+    "slug": "weston-mcclelland",
+    "name": "Weston McClelland",
+    "tmdbPersonId": 1305844,
+    "photoUrl": "/images/people/1305844.webp",
+    "profileUrl": "/images/people/1305844.webp",
+    "imdbPersonId": "nm4041518",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 7,
+    "tmdbUpdatedAt": "2026-10-01T10:14:45.071Z",
+    "tmdbFetchedAt": "2026-10-01T10:14:45.071Z"
   },
   {
     "id": "whitney-hudson",
@@ -111036,6 +112237,29 @@
     "knownForDepartment": "Acting",
     "knownCredits": 1,
     "tmdbUpdatedAt": "2026-09-22T20:53:47.088Z"
+  },
+  {
+    "id": "5918",
+    "slug": "zachary-bennett",
+    "name": "Zachary Bennett",
+    "tmdbPersonId": 5918,
+    "photoUrl": "/images/people/5918.webp",
+    "profileUrl": "/images/people/5918.webp",
+    "birthday": "1980-02-17",
+    "placeOfBirth": "London, Ontario, Canada",
+    "biography": "Zachary Bennett is a Canadian film and television actor and musician, best known for playing the main role of Felix King on the television series \"Road to Avonlea\". He plays in a band called \"Tin Star Orphans\".",
+    "imdbPersonId": "nm0072124",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 77,
+    "alsoKnownAs": [
+      "Zachary Bennet"
+    ],
+    "instagramId": "tinstarzachary",
+    "twitterId": "tinstarzachary",
+    "facebookId": "tinstarzach",
+    "tmdbUpdatedAt": "2026-10-01T10:14:46.352Z",
+    "tmdbFetchedAt": "2026-10-01T10:14:46.352Z"
   },
   {
     "id": "zachary-cox",
