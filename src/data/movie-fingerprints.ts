@@ -4012,6 +4012,10 @@ export const PROTOTYPE_MOVIE_FINGERPRINTS: Readonly<Record<string, readonly Fing
     "old-flame",
     "reunion",
     "second-chance"
+  ],
+  "uptv-2026-the-christmas-gift-guide": [
+    "christmas-magic",
+    "christmas-wish"
   ]
 };
 
