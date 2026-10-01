@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-10-01T13:06:22.294Z",
+  "generatedAt": "2026-10-01T13:18:00.752Z",
   "catalogue": {
     "totalMovies": 785,
     "moviesWithIngredients": 726,
     "moviesWithoutIngredients": 59
   },
   "lastRun": {
-    "startedAt": "2026-10-01T13:06:19.617Z",
-    "finishedAt": "2026-10-01T13:06:22.294Z",
+    "startedAt": "2026-10-01T13:17:58.539Z",
+    "finishedAt": "2026-10-01T13:18:00.752Z",
     "status": "SUCCESS",
     "processed": 0,
     "classified": 0,
