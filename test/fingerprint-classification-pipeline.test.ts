@@ -45,6 +45,11 @@ const dryRunPath = path.join(tempDirectory, 'dry-run.json');
 await classifyFingerprintBatch([movie], { classifyMovie: async (value) => ({ movieId: value.movieId, fingerprints: [] }) }, { dryRun: true, checkpointPath: dryRunPath });
 await assert.rejects(fs.access(dryRunPath));
 
+const assignedMoviePath = path.join(tempDirectory, 'assigned-movie.json');
+let assignedMovieCalls = 0;
+await classifyFingerprintBatch([{ ...movie, fingerprints: ['football'] }], { classifyMovie: async () => { assignedMovieCalls += 1; return { movieId: movie.id, fingerprints: ['football'] }; } }, { onlyUnassigned: true, checkpointPath: assignedMoviePath });
+assert.equal(assignedMovieCalls, 0, 'missing-only classification skips movies with current assignments');
+
 const insufficientPath = path.join(tempDirectory, 'insufficient.json');
 let insufficientCalls = 0;
 const insufficientMovie = { ...movie, synopsis: '' };
@@ -55,6 +60,22 @@ const improvedMovie = { ...movie, synopsis: 'A woman returns to her hometown for
 await classifyFingerprintBatch([improvedMovie], { classifyMovie: async (value) => { insufficientCalls += 1; return { movieId: value.movieId, fingerprints: [] }; } }, { checkpointPath: insufficientPath });
 assert.equal(insufficientCalls, 1, 'improved metadata becomes eligible for classification');
 assert.equal((await readFingerprintCheckpoint(insufficientPath)).entries[movie.id].status, 'no-match', 'usable metadata with zero selections remains no-match');
+
+const noMatchPath = path.join(tempDirectory, 'no-match.json');
+let noMatchCalls = 0;
+const noMatchClassifier = { classifyMovie: async (value: typeof input) => { noMatchCalls += 1; return { movieId: value.movieId, fingerprints: [] }; } };
+await classifyFingerprintBatch([movie], noMatchClassifier, { checkpointPath: noMatchPath });
+await classifyFingerprintBatch([movie], noMatchClassifier, { checkpointPath: noMatchPath });
+assert.equal(noMatchCalls, 1, 'unchanged no-match input is not classified again');
+await classifyFingerprintBatch([{ ...movie, synopsis: `${movie.synopsis} Updated metadata.` }], noMatchClassifier, { checkpointPath: noMatchPath });
+assert.equal(noMatchCalls, 2, 'changed no-match input is eligible for retry');
+
+const unchangedInsufficientPath = path.join(tempDirectory, 'unchanged-insufficient.json');
+let unchangedInsufficientCalls = 0;
+const unchangedInsufficientMovie = { ...movie, synopsis: '' };
+await classifyFingerprintBatch([unchangedInsufficientMovie], { classifyMovie: async () => { unchangedInsufficientCalls += 1; return { movieId: movie.id, fingerprints: [] }; } }, { checkpointPath: unchangedInsufficientPath });
+await classifyFingerprintBatch([unchangedInsufficientMovie], { classifyMovie: async () => { unchangedInsufficientCalls += 1; return { movieId: movie.id, fingerprints: [] }; } }, { checkpointPath: unchangedInsufficientPath });
+assert.equal(unchangedInsufficientCalls, 0, 'unchanged insufficient-data input is not classified again');
 
 const checkpoint = emptyFingerprintCheckpoint();
 checkpoint.entries[movie.id] = { movieId: movie.id, tmdbId: movie.tmdbId, title: movie.title, input, status: 'classified', fingerprints: ['football'], updatedAt: new Date().toISOString() };

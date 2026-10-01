@@ -3,7 +3,7 @@ import path from 'node:path';
 import type { Movie } from '../types';
 import type { FingerprintId } from '../data/fingerprints';
 import { FINGERPRINTS, isFingerprintId } from '../data/fingerprints';
-import { PROTOTYPE_MOVIE_FINGERPRINTS } from '../data/movie-fingerprints';
+import { getMovieFingerprintIds, PROTOTYPE_MOVIE_FINGERPRINTS } from '../data/movie-fingerprints';
 import { getBrandById } from '../data/brands';
 import { writeFileAtomically } from '../utils/atomic-file';
 
@@ -203,17 +203,27 @@ function isSuccessfulEntry(entry: FingerprintCheckpointEntry | undefined): boole
   return entry?.status === 'classified' || entry?.status === 'no-match';
 }
 
+function hasUnchangedClassifierInput(entry: FingerprintCheckpointEntry | undefined, input: FingerprintClassifierInput): boolean {
+  return Boolean(entry && JSON.stringify(entry.input) === JSON.stringify(input));
+}
+
 export async function classifyFingerprintBatch(
   movies: Movie[],
   classifier: FingerprintClassifier,
-  options: { limit?: number; movieId?: string; dryRun?: boolean; checkpointPath?: string; onResult?: (observation: ClassificationObservation) => void } = {},
+  options: { limit?: number; movieId?: string; dryRun?: boolean; onlyUnassigned?: boolean; checkpointPath?: string; onResult?: (observation: ClassificationObservation) => void } = {},
 ): Promise<ClassificationRunSummary> {
   const checkpoint = await readFingerprintCheckpoint(options.checkpointPath);
   const assignedIds = new Set(Object.keys(PROTOTYPE_MOVIE_FINGERPRINTS));
   const eligible = movies.filter((movie) => {
     if (assignedIds.has(movie.id)) return false;
     if (options.movieId && movie.id !== options.movieId) return false;
-    return !isSuccessfulEntry(checkpoint.entries[movie.id]);
+    if (options.onlyUnassigned && getMovieFingerprintIds(movie).length > 0) return false;
+    const checkpointEntry = checkpoint.entries[movie.id];
+    if (!checkpointEntry) return true;
+    if (hasUnchangedClassifierInput(checkpointEntry, buildFingerprintClassifierInput(movie))) {
+      return !isSuccessfulEntry(checkpointEntry) && checkpointEntry.status !== 'insufficient-data';
+    }
+    return true;
   });
   const selected = eligible.slice(0, options.limit === undefined ? eligible.length : Math.max(0, options.limit));
   const working = options.dryRun ? { ...checkpoint, entries: { ...checkpoint.entries } } : checkpoint;

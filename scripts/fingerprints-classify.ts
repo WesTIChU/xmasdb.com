@@ -1,5 +1,6 @@
 import 'dotenv/config';
 import { MOVIES } from '../src/data/movies';
+import { getMovieFingerprintIds } from '../src/data/movie-fingerprints';
 import {
   MockFingerprintClassifier,
   OpenRouterFingerprintClassifier,
@@ -18,20 +19,24 @@ const limit = limitValue === undefined ? undefined : Number(limitValue);
 if (limit !== undefined && (!Number.isInteger(limit) || limit < 0)) throw new Error('--limit must be a non-negative integer.');
 const movieId = option('--movie-id');
 const dryRun = process.argv.includes('--dry-run');
+const onlyUnassigned = process.argv.includes('--missing-only');
 const provider = option('--provider') || 'openrouter';
 const model = option('--model');
 const useMock = process.argv.includes('--mock') || provider === 'mock';
 if (provider !== 'openrouter' && !useMock) throw new Error(`Unsupported classifier provider: ${provider}`);
-if (limit === undefined && !useMock) throw new Error('A real classifier run requires --limit. Full-catalogue classification is intentionally blocked in Phase 2B.');
+if (limit === undefined && !useMock && !onlyUnassigned) throw new Error('A real classifier run requires --limit. Full-catalogue classification is intentionally blocked in Phase 2B.');
 
 const classifier = useMock ? new MockFingerprintClassifier() : new OpenRouterFingerprintClassifier({ model });
 const selectedInputs: string[] = [];
 const classifierResults: Array<{ movieId: string; title: string; input: unknown; raw: unknown; validation: ReturnType<typeof validateClassifierResult>; usage?: unknown }> = [];
+const classificationMovies = onlyUnassigned ? MOVIES.filter((movie) => getMovieFingerprintIds(movie).length === 0) : MOVIES;
+const effectiveLimit = limit === undefined && onlyUnassigned ? classificationMovies.length : limit;
 
-const summary = await classifyFingerprintBatch(MOVIES, classifier, {
-  limit,
+const summary = await classifyFingerprintBatch(classificationMovies, classifier, {
+  limit: effectiveLimit,
   movieId,
   dryRun,
+  onlyUnassigned,
   onResult: ({ input, raw, validation }) => {
     selectedInputs.push(JSON.stringify(input));
     classifierResults.push({ movieId: input.movieId, title: input.title, input, raw, validation, usage: classifier instanceof OpenRouterFingerprintClassifier ? classifier.lastUsage : undefined });

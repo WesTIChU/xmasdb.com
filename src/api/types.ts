@@ -122,6 +122,36 @@ export interface FeedStatisticsPayload {
   feeds: FeedStatisticsRow[];
 }
 
+export type FingerprintClassificationStatus = 'classified' | 'no-match' | 'insufficient-data' | 'failed';
+
+export interface FingerprintStatusPayload {
+  generatedAt: string;
+  catalogue: {
+    totalMovies: number;
+    moviesWithIngredients: number;
+    moviesWithoutIngredients: number;
+  };
+  lastRun: {
+    startedAt: string;
+    finishedAt: string;
+    status: 'SUCCESS' | 'PARTIAL' | 'FAILED';
+    processed: number;
+    classified: number;
+    noMatch: number;
+    insufficientData: number;
+    failed: number;
+    newAssignmentsApplied: number;
+    skippedExistingAssignments: number;
+    recentMovies: Array<{
+      movieId: string;
+      title: string;
+      status: FingerprintClassificationStatus;
+      fingerprints: string[];
+      processedAt: string;
+    }>;
+  } | null;
+}
+
 export interface TmdbRefreshRun {
   id: string;
   type: 'full' | 'coming-soon' | 'manual' | 'import';

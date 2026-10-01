@@ -1,0 +1,102 @@
+name: XmasDB fingerprint classification
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - src/data/movies.ts
+  workflow_dispatch:
+
+concurrency:
+  group: generated-main-writes
+  cancel-in-progress: false
+
+jobs:
+  classify:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Check out XmasDB
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Restore fingerprint checkpoint
+        uses: actions/cache/restore@v4
+        with:
+          path: data/fingerprint-classification-checkpoint.json
+          key: xmasdb-fingerprint-checkpoint-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: |
+            xmasdb-fingerprint-checkpoint-
+
+      - name: Record classifier run start
+        id: fingerprint-run
+        run: echo "started_at=$(date -u +%Y-%m-%dT%H:%M:%S.%3NZ)" >> "$GITHUB_OUTPUT"
+
+      - name: Classify unassigned catalogue movies
+        id: classify
+        continue-on-error: true
+        env:
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          OPENROUTER_MODEL: ${{ secrets.OPENROUTER_MODEL }}
+        run: npm run fingerprints:classify -- --missing-only --provider openrouter
+
+      - name: Apply validated fingerprint assignments
+        id: apply
+        if: steps.classify.outcome == 'success'
+        continue-on-error: true
+        env:
+          STARTED_AT: ${{ steps.fingerprint-run.outputs.started_at }}
+        run: npm run fingerprints:apply -- --write --since "$STARTED_AT"
+
+      - name: Write safe fingerprint status report
+        if: always()
+        env:
+          CLASSIFY_OUTCOME: ${{ steps.classify.outcome }}
+          APPLY_OUTCOME: ${{ steps.apply.outcome }}
+          STARTED_AT: ${{ steps.fingerprint-run.outputs.started_at }}
+        run: |
+          status=SUCCESS
+          if [ "$CLASSIFY_OUTCOME" != "success" ] || [ "$APPLY_OUTCOME" != "success" ]; then
+            status=FAILED
+          fi
+          npm run fingerprints:status -- --started-at "$STARTED_AT" --status "$status"
+
+      - name: Persist fingerprint report and assignments
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/data/movie-fingerprints.ts src/data/fingerprint-classification-status.json
+          if git diff --cached --quiet; then
+            echo "No fingerprint status or assignment changes to commit."
+          else
+            git commit -m "Update Christmas Ingredients pipeline status"
+            .github/scripts/push-generated-commit.sh origin main
+          fi
+
+      - name: Ensure fingerprint checkpoint exists
+        if: always()
+        run: |
+          mkdir -p data
+          if [ ! -f data/fingerprint-classification-checkpoint.json ]; then
+            printf '{"version":1,"updatedAt":"%s","entries":{}}\n' "$(date -u +%Y-%m-%dT%H:%M:%SZ)" > data/fingerprint-classification-checkpoint.json
+          fi
+
+      - name: Save fingerprint checkpoint
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: data/fingerprint-classification-checkpoint.json
+          key: xmasdb-fingerprint-checkpoint-${{ github.run_id }}-${{ github.run_attempt }}

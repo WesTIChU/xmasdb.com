@@ -46,6 +46,7 @@ import { getSecurityHeaders } from './src/server/security-headers';
 import { PUBLIC_API_ENABLED } from './src/server/public-api-config';
 import { registerPublicApiRoutes } from './src/server/public-api-routes';
 import { registerLegacyImageRedirects } from './src/server/legacy-image-redirect';
+import { getFingerprintCatalogueStats, readFingerprintStatus } from './src/server/fingerprint-status';
 
 function isKnownPagePath(rawPath: string): boolean {
   const clean = rawPath.replace(/^\/+|\/+$/g, '');
@@ -447,6 +448,17 @@ async function startServer() {
     } catch (error) {
       console.error(`[Admin TMDB Health] ${error instanceof Error ? error.message : String(error)}`);
       return res.status(500).json({ error: 'TMDB refresh health could not be loaded.' });
+    }
+  });
+
+  app.get('/api/admin/fingerprint-status', requireAdmin, async (_req, res) => {
+    try {
+      const status = await readFingerprintStatus();
+      if (!status) return res.setHeader('Cache-Control', 'no-store').json({ generatedAt: '', catalogue: getFingerprintCatalogueStats(), lastRun: null });
+      return res.setHeader('Cache-Control', 'no-store').json(status);
+    } catch (error) {
+      console.error(`[Admin Fingerprint Status] ${error instanceof Error ? error.message : String(error)}`);
+      return res.status(500).json({ error: 'Christmas Ingredients status could not be loaded.' });
     }
   });
 
