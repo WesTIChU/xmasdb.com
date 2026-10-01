@@ -225296,6 +225296,30 @@ export const MOVIES: Movie[] = [
     "voteCount": 48,
     "tmdbUpdatedAt": "2026-10-01T14:17:12.201Z",
     "tmdbFetchedAt": "2026-10-01T14:17:12.201Z"
+  },
+  {
+    "id": "uptv-2026-the-christmas-gift-guide",
+    "slug": "the-christmas-gift-guide",
+    "title": "The Christmas Gift Guide",
+    "year": 2026,
+    "brandId": "uptv",
+    "releaseDate": "2026-10-01",
+    "synopsis": "When a marketing exec who can suddenly hear Christmas wishes is paired with a momfluencer for a holiday gift guide, he must use his unusual new power to win her over—and the account—only to discover that the greatest gift may be love.",
+    "posterUrl": "",
+    "cast": [],
+    "tmdbId": 1786194,
+    "imdbId": "tt44925884",
+    "isComingSoon": true,
+    "status": "coming-soon",
+    "originalTitle": "The Christmas Gift Guide",
+    "genres": [],
+    "releaseDates": [],
+    "crew": [],
+    "trailers": [],
+    "voteAverage": 0,
+    "voteCount": 0,
+    "tmdbUpdatedAt": "2026-10-01T18:13:09.735Z",
+    "tmdbFetchedAt": "2026-10-01T18:13:09.735Z"
   }
 ];
 
