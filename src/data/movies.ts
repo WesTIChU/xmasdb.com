@@ -225345,6 +225345,30 @@ export const MOVIES: Movie[] = [
     "voteCount": 0,
     "tmdbUpdatedAt": "2026-10-01T18:22:15.201Z",
     "tmdbFetchedAt": "2026-10-01T18:22:15.201Z"
+  },
+  {
+    "id": "uptv-2026-a-christmas-cookie-caper-a-puzzle-time-mystery",
+    "slug": "a-christmas-cookie-caper-a-puzzle-time-mystery",
+    "title": "A Christmas Cookie Caper: A Puzzle Time Mystery",
+    "year": 2026,
+    "brandId": "uptv",
+    "releaseDate": "2026-10-01",
+    "synopsis": "",
+    "posterUrl": "",
+    "cast": [],
+    "tmdbId": 1786213,
+    "imdbId": "tt45679821",
+    "isComingSoon": true,
+    "status": "coming-soon",
+    "originalTitle": "A Christmas Cookie Caper: A Puzzle Time Mystery",
+    "genres": [],
+    "releaseDates": [],
+    "crew": [],
+    "trailers": [],
+    "voteAverage": 0,
+    "voteCount": 0,
+    "tmdbUpdatedAt": "2026-10-01T18:34:28.161Z",
+    "tmdbFetchedAt": "2026-10-01T18:34:28.161Z"
   }
 ];
 
