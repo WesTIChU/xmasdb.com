@@ -207479,6 +207479,248 @@ export const MOVIES: Movie[] = [
     "tmdbFetchedAt": "2026-10-01T08:52:37.356Z",
     "director": "Cathy Lynn Yonek",
     "premiereDate": "2026-11-06"
+  },
+  {
+    "id": "hallmark-2008-moonlight-mistletoe",
+    "slug": "moonlight-mistletoe",
+    "title": "Moonlight & Mistletoe",
+    "year": 2008,
+    "brandId": "hallmark",
+    "releaseDate": "2008-11-29",
+    "synopsis": "After three years, Nick's estranged daughter Holly returns home to find the spirit of Christmas in Santaville has dwindled, taking the family business with it. What starts out as an attempt to bail out her dad, ends up rekindling Holly's belief in Christmas all over again.",
+    "posterUrl": "/images/posters/51443.jpg",
+    "backdropUrl": "/images/backdrops/51443.jpg",
+    "cast": [
+      {
+        "actorId": "74036",
+        "name": "Tom Arnold",
+        "character": "Nick",
+        "slug": "tom-arnold",
+        "tmdbPersonId": 74036,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/z2ajL1ozVCS4Ug04zOGCNH06OPP.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "31363",
+        "name": "Candace Cameron Bure",
+        "character": "Holly",
+        "slug": "candace-cameron-bure",
+        "tmdbPersonId": 31363,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/sDNFyYgyVmE5AGFCeLR0DVDzCji.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "131647",
+        "name": "Christopher Wiehl",
+        "character": "Peter",
+        "slug": "christopher-wiehl",
+        "tmdbPersonId": 131647,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/4qoP1LQSeojcRYUe31HZomXuFyg.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "104646",
+        "name": "Barbara Niven",
+        "character": "Ginny",
+        "slug": "barbara-niven",
+        "tmdbPersonId": 104646,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/qRwCFXzAzna7viOOC4xjOCSu2Hy.jpg",
+        "order": 3
+      },
+      {
+        "actorId": "144211",
+        "name": "Matt Walton",
+        "character": "Ben Richards",
+        "slug": "matt-walton",
+        "tmdbPersonId": 144211,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/dIj4KRvazw7HyJIb1tulJUdYx9k.jpg",
+        "order": 4
+      },
+      {
+        "actorId": "30601",
+        "name": "Allan F. Nicholls",
+        "character": "Earl",
+        "slug": "allan-f-nicholls",
+        "tmdbPersonId": 30601,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/vJzdiEGyWQ35JlVGFLIca5vI4gU.jpg",
+        "order": 5
+      },
+      {
+        "actorId": "2384901",
+        "name": "Kaily Smith Westbrook",
+        "character": "Brenda",
+        "slug": "kaily-smith-westbrook",
+        "tmdbPersonId": 2384901,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/rrksO7kmrVXsSyFX4Mpq0bCKB1b.jpg",
+        "order": 6
+      },
+      {
+        "actorId": "2587035",
+        "name": "Heather Remick",
+        "character": "Della",
+        "slug": "heather-remick",
+        "tmdbPersonId": 2587035,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/cdIJOZ6TvkAzC0HMfgRj8aZdXMb.jpg",
+        "order": 7
+      },
+      {
+        "actorId": "2587036",
+        "name": "Bruce Bouchard",
+        "character": "Mr. Covell",
+        "slug": "bruce-bouchard",
+        "tmdbPersonId": 2587036,
+        "order": 8
+      },
+      {
+        "actorId": "232217",
+        "name": "Richard Waterhouse",
+        "character": "Mr. Jennings",
+        "slug": "richard-waterhouse",
+        "tmdbPersonId": 232217,
+        "order": 9
+      },
+      {
+        "actorId": "2587039",
+        "name": "Taylor Ampatiellos",
+        "character": "Willy",
+        "slug": "taylor-ampatiellos",
+        "tmdbPersonId": 2587039,
+        "order": 10
+      },
+      {
+        "actorId": "2587040",
+        "name": "Lillian Pritchard",
+        "character": "Young Holly",
+        "slug": "lillian-pritchard",
+        "tmdbPersonId": 2587040,
+        "order": 11
+      },
+      {
+        "actorId": "2587041",
+        "name": "Ari Larson",
+        "character": "Young Peter",
+        "slug": "ari-larson",
+        "tmdbPersonId": 2587041,
+        "order": 12
+      },
+      {
+        "actorId": "2587042",
+        "name": "Parma",
+        "character": "Nick's Dog",
+        "slug": "parma",
+        "tmdbPersonId": 2587042,
+        "order": 13
+      },
+      {
+        "actorId": "2587043",
+        "name": "Gary Boyles",
+        "character": "Office worker (uncredited)",
+        "slug": "gary-boyles",
+        "tmdbPersonId": 2587043,
+        "order": 14
+      },
+      {
+        "actorId": "2587045",
+        "name": "Dave Kulvete",
+        "character": "Elf waiter (uncredited)",
+        "slug": "dave-kulvete",
+        "tmdbPersonId": 2587045,
+        "order": 15
+      },
+      {
+        "actorId": "2587047",
+        "name": "Emily George Lyons",
+        "character": "Willy's Mom (uncredited)",
+        "slug": "emily-george-lyons",
+        "tmdbPersonId": 2587047,
+        "order": 16
+      },
+      {
+        "actorId": "1792745",
+        "name": "R.W. Martin",
+        "character": "Townsperson (uncredited)",
+        "slug": "r-w-martin",
+        "tmdbPersonId": 1792745,
+        "order": 17
+      }
+    ],
+    "director": "Karen Arthur",
+    "tmdbId": 51443,
+    "imdbId": "tt1264895",
+    "isComingSoon": false,
+    "status": "collection",
+    "originalTitle": "Moonlight & Mistletoe",
+    "runtimeMinutes": 88,
+    "genres": [
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      },
+      {
+        "id": 18,
+        "name": "Drama"
+      },
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      },
+      {
+        "id": 10751,
+        "name": "Family"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "FR",
+        "releaseDate": "2009-12-07T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "TF1"
+      },
+      {
+        "country": "US",
+        "releaseDate": "2008-11-29T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "Hallmark Channel"
+      }
+    ],
+    "crew": [
+      {
+        "id": 144210,
+        "name": "Karen Arthur",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/sTHFJUvXIEtyzuvwXCmXnP2fY3I.jpg",
+        "creditId": "52fe47f4c3a36847f81511c1"
+      },
+      {
+        "id": 591514,
+        "name": "Joany Kane",
+        "job": "Story",
+        "department": "Writing",
+        "creditId": "5e85f745e38bd80016ade3bd"
+      }
+    ],
+    "trailers": [
+      {
+        "key": "Jp6J9g1xyRo",
+        "site": "YouTube",
+        "type": "Trailer",
+        "name": "Moonlight & Mistletoe - Tonight (8/7c)",
+        "official": true
+      }
+    ],
+    "trailerYoutubeKey": "Jp6J9g1xyRo",
+    "tagline": "A little town. A little romance. A little miracle.",
+    "voteAverage": 5.8,
+    "voteCount": 32,
+    "tmdbUpdatedAt": "2026-10-01T09:05:33.405Z",
+    "tmdbFetchedAt": "2026-10-01T09:05:33.405Z"
   }
 ];
 

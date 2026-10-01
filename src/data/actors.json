@@ -3582,6 +3582,25 @@
     "tmdbUpdatedAt": "2026-09-20T16:18:31.219Z"
   },
   {
+    "id": "30601",
+    "slug": "allan-f-nicholls",
+    "name": "Allan F. Nicholls",
+    "tmdbPersonId": 30601,
+    "photoUrl": "/images/people/30601.webp",
+    "profileUrl": "/images/people/30601.webp",
+    "birthday": "1945-04-08",
+    "placeOfBirth": "Montreal, Quebec, Canada",
+    "imdbPersonId": "nm0629454",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 35,
+    "alsoKnownAs": [
+      "Allan Nicholls"
+    ],
+    "tmdbUpdatedAt": "2026-10-01T09:05:35.952Z",
+    "tmdbFetchedAt": "2026-10-01T09:05:35.952Z"
+  },
+  {
     "id": "184483",
     "slug": "allan-harmon",
     "name": "Allan Harmon",
@@ -7934,6 +7953,16 @@
     "knownForDepartment": "Acting",
     "knownCredits": 10,
     "tmdbUpdatedAt": "2026-09-20T16:17:15.657Z"
+  },
+  {
+    "id": "2587041",
+    "slug": "ari-larson",
+    "name": "Ari Larson",
+    "tmdbPersonId": 2587041,
+    "knownForDepartment": "Acting",
+    "knownCredits": 1,
+    "tmdbUpdatedAt": "2026-10-01T09:05:36.253Z",
+    "tmdbFetchedAt": "2026-10-01T09:05:36.253Z"
   },
   {
     "id": "3663729",
@@ -14568,6 +14597,16 @@
     "tmdbUpdatedAt": "2026-09-20T16:18:28.504Z"
   },
   {
+    "id": "2587036",
+    "slug": "bruce-bouchard",
+    "name": "Bruce Bouchard",
+    "tmdbPersonId": 2587036,
+    "knownForDepartment": "Acting",
+    "knownCredits": 1,
+    "tmdbUpdatedAt": "2026-10-01T09:05:36.082Z",
+    "tmdbFetchedAt": "2026-10-01T09:05:36.082Z"
+  },
+  {
     "id": "bruce-boxleitner",
     "slug": "bruce-boxleitner",
     "name": "Bruce Boxleitner",
@@ -20638,6 +20677,23 @@
     "tmdbUpdatedAt": "2026-09-20T16:20:43.394Z"
   },
   {
+    "id": "131647",
+    "slug": "christopher-wiehl",
+    "name": "Christopher Wiehl",
+    "tmdbPersonId": 131647,
+    "photoUrl": "/images/people/131647.webp",
+    "profileUrl": "/images/people/131647.webp",
+    "birthday": "1970-10-29",
+    "placeOfBirth": "Yakima, Washington, U.S.",
+    "biography": "From Wikipedia, the free encyclopedia.\n\nChristopher Wiehl (born October 29, 1970) is an American actor.\n\nDescription above from the Wikipedia article Christopher Wiehl, licensed under CC-BY-SA, full list of contributors on Wikipedia.",
+    "imdbPersonId": "nm0927382",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 51,
+    "tmdbUpdatedAt": "2026-10-01T09:05:35.954Z",
+    "tmdbFetchedAt": "2026-10-01T09:05:35.954Z"
+  },
+  {
     "id": "1312051",
     "slug": "christos-shaw",
     "name": "Christos Shaw",
@@ -25107,6 +25163,16 @@
     "twitterId": "DaveKozMusic",
     "facebookId": "DaveKozMusic",
     "tmdbUpdatedAt": "2026-09-20T16:18:51.312Z"
+  },
+  {
+    "id": "2587045",
+    "slug": "dave-kulvete",
+    "name": "Dave Kulvete",
+    "tmdbPersonId": 2587045,
+    "knownForDepartment": "Acting",
+    "knownCredits": 1,
+    "tmdbUpdatedAt": "2026-10-01T09:05:36.389Z",
+    "tmdbFetchedAt": "2026-10-01T09:05:36.389Z"
   },
   {
     "id": "dave-martinez",
@@ -32169,6 +32235,16 @@
     "tmdbUpdatedAt": "2026-09-22T20:53:17.013Z"
   },
   {
+    "id": "2587047",
+    "slug": "emily-george-lyons",
+    "name": "Emily George Lyons",
+    "tmdbPersonId": 2587047,
+    "knownForDepartment": "Acting",
+    "knownCredits": 1,
+    "tmdbUpdatedAt": "2026-10-01T09:05:36.380Z",
+    "tmdbFetchedAt": "2026-10-01T09:05:36.380Z"
+  },
+  {
     "id": "1950673",
     "slug": "emily-golden",
     "name": "Emily Golden",
@@ -36093,6 +36169,16 @@
     "tmdbUpdatedAt": "2026-09-20T16:18:25.723Z"
   },
   {
+    "id": "2587043",
+    "slug": "gary-boyles",
+    "name": "Gary Boyles",
+    "tmdbPersonId": 2587043,
+    "knownForDepartment": "Acting",
+    "knownCredits": 1,
+    "tmdbUpdatedAt": "2026-10-01T09:05:36.351Z",
+    "tmdbFetchedAt": "2026-10-01T09:05:36.351Z"
+  },
+  {
     "id": "59824",
     "slug": "gary-entin",
     "name": "Gary Entin",
@@ -39506,6 +39592,18 @@
     "knownForDepartment": "Writing",
     "knownCredits": 4,
     "tmdbUpdatedAt": "2026-09-22T20:53:15.038Z"
+  },
+  {
+    "id": "2587035",
+    "slug": "heather-remick",
+    "name": "Heather Remick",
+    "tmdbPersonId": 2587035,
+    "photoUrl": "/images/people/2587035.webp",
+    "profileUrl": "/images/people/2587035.webp",
+    "knownForDepartment": "Acting",
+    "knownCredits": 1,
+    "tmdbUpdatedAt": "2026-10-01T09:05:36.692Z",
+    "tmdbFetchedAt": "2026-10-01T09:05:36.692Z"
   },
   {
     "id": "heather-robertson",
@@ -48682,7 +48780,8 @@
     "gender": "Female",
     "knownForDepartment": "Writing",
     "knownCredits": 27,
-    "tmdbUpdatedAt": "2026-09-21T14:35:29.434Z"
+    "tmdbUpdatedAt": "2026-10-01T09:05:36.534Z",
+    "tmdbFetchedAt": "2026-10-01T09:05:36.534Z"
   },
   {
     "id": "jocelyn-chugg",
@@ -53551,6 +53650,22 @@
     "tmdbUpdatedAt": "2026-09-20T16:20:38.532Z"
   },
   {
+    "id": "2384901",
+    "slug": "kaily-smith-westbrook",
+    "name": "Kaily Smith Westbrook",
+    "tmdbPersonId": 2384901,
+    "photoUrl": "/images/people/2384901.webp",
+    "profileUrl": "/images/people/2384901.webp",
+    "imdbPersonId": "nm2256455",
+    "gender": "Female",
+    "knownForDepartment": "Production",
+    "knownCredits": 8,
+    "instagramId": "kailysmithwestbrook",
+    "twitterId": "kailysmithwestb",
+    "tmdbUpdatedAt": "2026-10-01T09:05:36.121Z",
+    "tmdbFetchedAt": "2026-10-01T09:05:36.121Z"
+  },
+  {
     "id": "kairo-chelani-ballard",
     "slug": "kairo-chelani-ballard",
     "name": "Kairo Chelani Ballard",
@@ -53871,6 +53986,23 @@
     "knownForDepartment": "Acting",
     "knownCredits": 36,
     "tmdbUpdatedAt": "2026-09-20T16:16:47.029Z"
+  },
+  {
+    "id": "144210",
+    "slug": "karen-arthur",
+    "name": "Karen Arthur",
+    "tmdbPersonId": 144210,
+    "photoUrl": "/images/people/144210.webp",
+    "profileUrl": "/images/people/144210.webp",
+    "birthday": "1941-08-24",
+    "placeOfBirth": "Omaha, Nebraska, USA",
+    "biography": "Karen Arthur (born August 24, 1941) is an American film director, producer, and actress. Arthur has directed three feature films, including Lady Beware (1987) and The Mafu Cage (1978), but the majority of her work has been in television, where she has had a long and prolific career directing television movies and series. In 1985, she won a Primetime Emmy Award for Outstanding Directing in a Drama Series.",
+    "imdbPersonId": "nm0037790",
+    "gender": "Female",
+    "knownForDepartment": "Directing",
+    "knownCredits": 59,
+    "tmdbUpdatedAt": "2026-10-01T09:05:37.099Z",
+    "tmdbFetchedAt": "2026-10-01T09:05:37.099Z"
   },
   {
     "id": "1435021",
@@ -61804,6 +61936,16 @@
     "tmdbUpdatedAt": "2026-09-20T16:17:37.102Z"
   },
   {
+    "id": "2587040",
+    "slug": "lillian-pritchard",
+    "name": "Lillian Pritchard",
+    "tmdbPersonId": 2587040,
+    "knownForDepartment": "Acting",
+    "knownCredits": 1,
+    "tmdbUpdatedAt": "2026-10-01T09:05:36.254Z",
+    "tmdbFetchedAt": "2026-10-01T09:05:36.255Z"
+  },
+  {
     "id": "lillian-searcy",
     "slug": "lillian-searcy",
     "name": "Lillian Searcy",
@@ -69001,7 +69143,8 @@
     "instagramId": "themattwalton",
     "twitterId": "themattwalton",
     "facebookId": "TheMattWalton",
-    "tmdbUpdatedAt": "2026-09-20T16:18:06.227Z"
+    "tmdbUpdatedAt": "2026-10-01T09:05:36.216Z",
+    "tmdbFetchedAt": "2026-10-01T09:05:36.216Z"
   },
   {
     "id": "210348",
@@ -79251,6 +79394,16 @@
     "tmdbUpdatedAt": "2026-09-20T16:19:43.030Z"
   },
   {
+    "id": "2587042",
+    "slug": "parma",
+    "name": "Parma",
+    "tmdbPersonId": 2587042,
+    "knownForDepartment": "Acting",
+    "knownCredits": 1,
+    "tmdbUpdatedAt": "2026-10-01T09:05:36.342Z",
+    "tmdbFetchedAt": "2026-10-01T09:05:36.342Z"
+  },
+  {
     "id": "parmiss-sehat",
     "slug": "parmiss-sehat",
     "name": "Parmiss Sehat",
@@ -82215,6 +82368,16 @@
     "tmdbUpdatedAt": "2026-09-20T16:17:49.563Z"
   },
   {
+    "id": "1792745",
+    "slug": "r-w-martin",
+    "name": "R.W. Martin",
+    "tmdbPersonId": 1792745,
+    "knownForDepartment": "Acting",
+    "knownCredits": 5,
+    "tmdbUpdatedAt": "2026-10-01T09:05:36.472Z",
+    "tmdbFetchedAt": "2026-10-01T09:05:36.472Z"
+  },
+  {
     "id": "rachael-crawford",
     "slug": "rachael-crawford",
     "name": "Rachael Crawford",
@@ -84595,6 +84758,17 @@
     "knownForDepartment": "Acting",
     "knownCredits": 2,
     "tmdbUpdatedAt": "2026-09-20T16:20:34.095Z"
+  },
+  {
+    "id": "232217",
+    "slug": "richard-waterhouse",
+    "name": "Richard Waterhouse",
+    "tmdbPersonId": 232217,
+    "imdbPersonId": "nm1733624",
+    "knownForDepartment": "Directing",
+    "knownCredits": 3,
+    "tmdbUpdatedAt": "2026-10-01T09:05:36.117Z",
+    "tmdbFetchedAt": "2026-10-01T09:05:36.117Z"
   },
   {
     "id": "richard-waugh",
@@ -96374,6 +96548,16 @@
     "tmdbUpdatedAt": "2026-09-20T16:17:07.679Z"
   },
   {
+    "id": "2587039",
+    "slug": "taylor-ampatiellos",
+    "name": "Taylor Ampatiellos",
+    "tmdbPersonId": 2587039,
+    "knownForDepartment": "Acting",
+    "knownCredits": 1,
+    "tmdbUpdatedAt": "2026-10-01T09:05:36.206Z",
+    "tmdbFetchedAt": "2026-10-01T09:05:36.206Z"
+  },
+  {
     "id": "taylor-ann-thompson",
     "slug": "taylor-ann-thompson",
     "name": "Taylor Ann Thompson",
@@ -98567,7 +98751,8 @@
     ],
     "instagramId": "thetomarnold",
     "twitterId": "TomArnold",
-    "tmdbUpdatedAt": "2026-09-21T13:15:02.574Z"
+    "tmdbUpdatedAt": "2026-10-01T09:05:35.984Z",
+    "tmdbFetchedAt": "2026-10-01T09:05:35.984Z"
   },
   {
     "id": "tom-butler",
