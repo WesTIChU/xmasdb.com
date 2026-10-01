@@ -6354,7 +6354,8 @@
     "knownCredits": 42,
     "instagramId": "andrewbushell",
     "twitterId": "thebushell",
-    "tmdbUpdatedAt": "2026-09-21T13:18:43.078Z"
+    "tmdbUpdatedAt": "2026-10-01T14:12:24.438Z",
+    "tmdbFetchedAt": "2026-10-01T14:12:24.438Z"
   },
   {
     "id": "andrew-cooper",
@@ -7569,6 +7570,30 @@
     ],
     "facebookId": "akathryn.holbrook",
     "tmdbUpdatedAt": "2026-09-20T16:18:07.365Z"
+  },
+  {
+    "id": "208539",
+    "slug": "anna-hopkins",
+    "name": "Anna Hopkins",
+    "tmdbPersonId": 208539,
+    "photoUrl": "/images/people/208539.webp",
+    "profileUrl": "/images/people/208539.webp",
+    "birthday": "1987-02-12",
+    "placeOfBirth": "Montreal, Quebec, Canada",
+    "biography": "Anna Hopkins is a Canadian actress, screenwriter and director best known for her prominent television roles as the main antagonist Lilith in Shadowhunters and documentary filmmaker Monica Stuart in The Expanse. She is fluent in both English and French and has built a diverse career across major television franchises, independent cinema, and filmmaking. She is the daughter of visual artist Tom Hopkins and splits her time between Los Angeles and Toronto.",
+    "imdbPersonId": "nm1965525",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 42,
+    "alsoKnownAs": [
+      "安娜·霍普金斯",
+      "애너 홉킨스",
+      "アンナ・ホプキンス"
+    ],
+    "instagramId": "annabanana_hops",
+    "twitterId": "annabananahops",
+    "tmdbUpdatedAt": "2026-10-01T14:12:23.438Z",
+    "tmdbFetchedAt": "2026-10-01T14:12:23.438Z"
   },
   {
     "id": "anna-marie-dobbins",
@@ -9045,7 +9070,8 @@
     "instagramId": "ariellekebbel",
     "twitterId": "ariellekebbel",
     "facebookId": "OfficialArielleKebbel",
-    "tmdbUpdatedAt": "2026-09-20T16:20:41.224Z"
+    "tmdbUpdatedAt": "2026-10-01T14:12:25.418Z",
+    "tmdbFetchedAt": "2026-10-01T14:12:25.418Z"
   },
   {
     "id": "arielle-tuliao",
@@ -9443,7 +9469,8 @@
     "alsoKnownAs": [
       "Ashlee Leible"
     ],
-    "tmdbUpdatedAt": "2026-09-20T16:20:03.854Z"
+    "tmdbUpdatedAt": "2026-10-01T14:12:25.169Z",
+    "tmdbFetchedAt": "2026-10-01T14:12:25.172Z"
   },
   {
     "id": "ashleigh-murray",
@@ -9479,7 +9506,8 @@
     "alsoKnownAs": [
       "Ashley Chomik"
     ],
-    "tmdbUpdatedAt": "2026-09-21T12:52:08.296Z"
+    "tmdbUpdatedAt": "2026-10-01T14:12:25.800Z",
+    "tmdbFetchedAt": "2026-10-01T14:12:25.800Z"
   },
   {
     "id": "2792949",
@@ -12124,6 +12152,22 @@
     "tmdbUpdatedAt": "2026-09-20T16:20:26.232Z"
   },
   {
+    "id": "1465252",
+    "slug": "bernadette-speakes",
+    "name": "Bernadette Speakes",
+    "tmdbPersonId": 1465252,
+    "birthday": "1967-02-25",
+    "placeOfBirth": "Mount Vernon, New York, USA",
+    "imdbPersonId": "nm0164662",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 16,
+    "instagramId": "officialbernadettespeakes",
+    "twitterId": "bernspeakes",
+    "tmdbUpdatedAt": "2026-10-01T14:12:21.355Z",
+    "tmdbFetchedAt": "2026-10-01T14:12:21.355Z"
+  },
+  {
     "id": "bernard-cuffling",
     "slug": "bernard-cuffling",
     "name": "Bernard Cuffling",
@@ -14137,6 +14181,33 @@
     "tmdbUpdatedAt": "2026-09-20T16:18:14.044Z"
   },
   {
+    "id": "33285",
+    "slug": "brandy-norwood",
+    "name": "Brandy Norwood",
+    "tmdbPersonId": 33285,
+    "photoUrl": "/images/people/33285.webp",
+    "profileUrl": "/images/people/33285.webp",
+    "birthday": "1979-02-11",
+    "placeOfBirth": "McComb, Mississippi, USA",
+    "biography": "Brandy Rayana Norwood (born February 11, 1979), better known mononymously as Brandy, is an American singer, songwriter, actress, and model. Her sound, characterized by heavy voice-layering and intricate riffs, has seen her nicknamed \"the Vocal Bible\". As of 2023, she has sold over 40 million records worldwide, with approximately 8.62 million albums sold in the United States. Her work has earned her numerous awards and accolades, including a Grammy Award and an American Music Award.\n\n​From Wikipedia, the free encyclopedia",
+    "imdbPersonId": "nm0005275",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 57,
+    "alsoKnownAs": [
+      "Brandy Rayana Norwood",
+      "Brandy",
+      "برندی نروود",
+      "Брэнди Норвуд",
+      "ブランディー・ラヤナ・ノーウッド"
+    ],
+    "instagramId": "brandy",
+    "twitterId": "4everbrandy",
+    "facebookId": "foreverbrandy",
+    "tmdbUpdatedAt": "2026-10-01T14:12:21.189Z",
+    "tmdbFetchedAt": "2026-10-01T14:12:21.189Z"
+  },
+  {
     "id": "brant-daugherty",
     "slug": "brant-daugherty",
     "name": "Brant Daugherty",
@@ -14758,6 +14829,16 @@
     "knownForDepartment": "Acting",
     "knownCredits": 4,
     "tmdbUpdatedAt": "2026-09-20T16:20:54.594Z"
+  },
+  {
+    "id": "5054179",
+    "slug": "brian-b-mack-mccune",
+    "name": "Brian (B Mack) Mccune",
+    "tmdbPersonId": 5054179,
+    "knownForDepartment": "Acting",
+    "knownCredits": 1,
+    "tmdbUpdatedAt": "2026-10-01T14:12:26.167Z",
+    "tmdbFetchedAt": "2026-10-01T14:12:26.167Z"
   },
   {
     "id": "brian-baumgartner",
@@ -17162,6 +17243,24 @@
     "tmdbUpdatedAt": "2026-09-20T16:19:30.626Z"
   },
   {
+    "id": "2232612",
+    "slug": "caleb-t-thomas",
+    "name": "Caleb T. Thomas",
+    "tmdbPersonId": 2232612,
+    "photoUrl": "/images/people/2232612.webp",
+    "profileUrl": "/images/people/2232612.webp",
+    "placeOfBirth": "Georgia, USA",
+    "imdbPersonId": "nm8481892",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 4,
+    "alsoKnownAs": [
+      "Caleb Thomas"
+    ],
+    "tmdbUpdatedAt": "2026-10-01T14:12:22.060Z",
+    "tmdbFetchedAt": "2026-10-01T14:12:22.060Z"
+  },
+  {
     "id": "3716677",
     "slug": "caleb-williams",
     "name": "Caleb Williams",
@@ -17529,6 +17628,16 @@
     "knownForDepartment": "Acting",
     "knownCredits": 22,
     "tmdbUpdatedAt": "2026-09-20T16:18:23.019Z"
+  },
+  {
+    "id": "4930012",
+    "slug": "cameron-ross",
+    "name": "Cameron Ross",
+    "tmdbPersonId": 4930012,
+    "knownForDepartment": "Acting",
+    "knownCredits": 1,
+    "tmdbUpdatedAt": "2026-10-01T14:12:22.113Z",
+    "tmdbFetchedAt": "2026-10-01T14:12:22.113Z"
   },
   {
     "id": "cami-carver",
@@ -20591,6 +20700,17 @@
     "instagramId": "iamcharliezeltzer",
     "twitterId": "charliezeltzer",
     "tmdbUpdatedAt": "2026-09-20T16:19:34.377Z"
+  },
+  {
+    "id": "4332558",
+    "slug": "charlize-adelyn",
+    "name": "Charlize Adelyn",
+    "tmdbPersonId": 4332558,
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 2,
+    "tmdbUpdatedAt": "2026-10-01T14:12:25.152Z",
+    "tmdbFetchedAt": "2026-10-01T14:12:25.152Z"
   },
   {
     "id": "charlotte-bradley",
@@ -24716,7 +24836,8 @@
     "gender": "Female",
     "knownForDepartment": "Acting",
     "knownCredits": 10,
-    "tmdbUpdatedAt": "2026-09-20T16:19:36.594Z"
+    "tmdbUpdatedAt": "2026-10-01T14:12:22.445Z",
+    "tmdbFetchedAt": "2026-10-01T14:12:22.445Z"
   },
   {
     "id": "connie-sellecca",
@@ -25307,6 +25428,17 @@
     "knownForDepartment": "Acting",
     "knownCredits": 2,
     "tmdbUpdatedAt": "2026-09-20T16:17:35.171Z"
+  },
+  {
+    "id": "2966354",
+    "slug": "courtney-cilman",
+    "name": "Courtney Cilman",
+    "tmdbPersonId": 2966354,
+    "gender": "Female",
+    "knownForDepartment": "Writing",
+    "knownCredits": 18,
+    "tmdbUpdatedAt": "2026-10-01T14:12:22.622Z",
+    "tmdbFetchedAt": "2026-10-01T14:12:22.622Z"
   },
   {
     "id": "courtney-gonzalez",
@@ -25953,6 +26085,23 @@
     "tmdbUpdatedAt": "2026-09-22T20:53:36.490Z"
   },
   {
+    "id": "2276925",
+    "slug": "d-j-demers",
+    "name": "D.J. Demers",
+    "tmdbPersonId": 2276925,
+    "photoUrl": "/images/people/2276925.webp",
+    "profileUrl": "/images/people/2276925.webp",
+    "birthday": "1986-01-07",
+    "placeOfBirth": "Kitchener, Ontario, Canada",
+    "biography": "D.J. Demers is a Canadian stand-up comedian, best known for his television appearances on season 11 of America's Got Talent and on the late night talk show Conan. Originally from Kitchener, Ontario, Demers was diagnosed with hearing loss in childhood, and focuses his comedy largely but not exclusively on his experiences as a person who wears hearing aids.",
+    "imdbPersonId": "nm7006416",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 9,
+    "tmdbUpdatedAt": "2026-10-01T14:12:25.050Z",
+    "tmdbFetchedAt": "2026-10-01T14:12:25.050Z"
+  },
+  {
     "id": "1669817",
     "slug": "d-j-viola",
     "name": "D.J. Viola",
@@ -26092,7 +26241,8 @@
       "Dalius Blake",
       "Dallas Blake"
     ],
-    "tmdbUpdatedAt": "2026-09-20T16:19:09.753Z"
+    "tmdbUpdatedAt": "2026-10-01T14:12:25.905Z",
+    "tmdbFetchedAt": "2026-10-01T14:12:25.905Z"
   },
   {
     "id": "119812",
@@ -27397,6 +27547,21 @@
     "twitterId": "mrdannyglover",
     "facebookId": "DannyLGlover",
     "tmdbUpdatedAt": "2026-09-20T16:18:52.731Z"
+  },
+  {
+    "id": "1631462",
+    "slug": "danny-j-boyle",
+    "name": "Danny J. Boyle",
+    "tmdbPersonId": 1631462,
+    "photoUrl": "/images/people/1631462.webp",
+    "profileUrl": "/images/people/1631462.webp",
+    "birthday": "1956-10-20",
+    "placeOfBirth": "Radcliffe, England, UK",
+    "gender": "Male",
+    "knownForDepartment": "Directing",
+    "knownCredits": 41,
+    "tmdbUpdatedAt": "2026-10-01T14:12:26.497Z",
+    "tmdbFetchedAt": "2026-10-01T14:12:26.497Z"
   },
   {
     "id": "danny-lacy",
@@ -30124,7 +30289,8 @@
     "gender": "Female",
     "knownForDepartment": "Acting",
     "knownCredits": 70,
-    "tmdbUpdatedAt": "2026-09-20T16:19:59.517Z"
+    "tmdbUpdatedAt": "2026-10-01T14:12:21.375Z",
+    "tmdbFetchedAt": "2026-10-01T14:12:21.375Z"
   },
   {
     "id": "debbie-kasper",
@@ -30710,11 +30876,12 @@
     "imdbPersonId": "nm9270123",
     "gender": "Female",
     "knownForDepartment": "Acting",
-    "knownCredits": 22,
+    "knownCredits": 23,
     "alsoKnownAs": [
       "Delia Chambers"
     ],
-    "tmdbUpdatedAt": "2026-09-20T16:17:20.428Z"
+    "tmdbUpdatedAt": "2026-10-01T14:12:23.026Z",
+    "tmdbFetchedAt": "2026-10-01T14:12:23.026Z"
   },
   {
     "id": "della-reese",
@@ -34336,6 +34503,19 @@
     "tmdbFetchedAt": "2026-10-01T10:07:31.847Z"
   },
   {
+    "id": "4227801",
+    "slug": "edward-lafferty",
+    "name": "Edward Lafferty",
+    "tmdbPersonId": 4227801,
+    "photoUrl": "/images/people/4227801.webp",
+    "profileUrl": "/images/people/4227801.webp",
+    "imdbPersonId": "nm1228014",
+    "knownForDepartment": "Acting",
+    "knownCredits": 5,
+    "tmdbUpdatedAt": "2026-10-01T14:12:26.395Z",
+    "tmdbFetchedAt": "2026-10-01T14:12:26.395Z"
+  },
+  {
     "id": "1188244",
     "slug": "edward-lewis-french",
     "name": "Edward Lewis French",
@@ -36060,7 +36240,8 @@
       "Emily Faye Caroline Alatalo",
       "امیلی آلاتالو"
     ],
-    "tmdbUpdatedAt": "2026-09-21T13:18:43.019Z"
+    "tmdbUpdatedAt": "2026-10-01T14:12:24.037Z",
+    "tmdbFetchedAt": "2026-10-01T14:12:24.037Z"
   },
   {
     "id": "112742",
@@ -36652,7 +36833,8 @@
     "gender": "Female",
     "knownForDepartment": "Acting",
     "knownCredits": 13,
-    "tmdbUpdatedAt": "2026-09-20T16:19:31.656Z"
+    "tmdbUpdatedAt": "2026-10-01T14:12:24.919Z",
+    "tmdbFetchedAt": "2026-10-01T14:12:24.919Z"
   },
   {
     "id": "85955",
@@ -37761,7 +37943,8 @@
     "knownCredits": 35,
     "instagramId": "erinblaira",
     "twitterId": "ErinAgostino",
-    "tmdbUpdatedAt": "2026-09-21T12:51:14.938Z"
+    "tmdbUpdatedAt": "2026-10-01T14:12:22.373Z",
+    "tmdbFetchedAt": "2026-10-01T14:12:22.373Z"
   },
   {
     "id": "erin-aubrey",
@@ -38132,6 +38315,27 @@
     "tmdbUpdatedAt": "2026-09-20T16:18:38.120Z"
   },
   {
+    "id": "5086734",
+    "slug": "eshan-lyall",
+    "name": "Eshan Lyall",
+    "tmdbPersonId": 5086734,
+    "knownForDepartment": "Acting",
+    "knownCredits": 4,
+    "tmdbUpdatedAt": "2026-10-01T14:12:25.334Z",
+    "tmdbFetchedAt": "2026-10-01T14:12:25.334Z"
+  },
+  {
+    "id": "4479873",
+    "slug": "essek-moore",
+    "name": "Essek Moore",
+    "tmdbPersonId": 4479873,
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 2,
+    "tmdbUpdatedAt": "2026-10-01T14:12:25.036Z",
+    "tmdbFetchedAt": "2026-10-01T14:12:25.036Z"
+  },
+  {
     "id": "estavion-white",
     "slug": "estavion-white",
     "name": "Estavion White",
@@ -38279,6 +38483,23 @@
       "اوا بورن"
     ],
     "tmdbUpdatedAt": "2026-09-20T16:16:59.725Z"
+  },
+  {
+    "id": "1451346",
+    "slug": "eva-day",
+    "name": "Eva Day",
+    "tmdbPersonId": 1451346,
+    "photoUrl": "/images/people/1451346.webp",
+    "profileUrl": "/images/people/1451346.webp",
+    "birthday": "1994-08-02",
+    "biography": "Eva Day is a versatile Canadian actress known for her roles in film and television. She appeared in the popular Netflix movie Hello, Goodbye, and Everything in Between, the acclaimed sci-fi comedy Spontaneous, and the indie comedy Adventures in Public School. Her television work includes guest roles in series such as Murder in a Small Town, Supernatural, iZombie, and Bates Motel.",
+    "imdbPersonId": "nm6223596",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 15,
+    "instagramId": "thisisevaday",
+    "tmdbUpdatedAt": "2026-10-01T14:12:24.187Z",
+    "tmdbFetchedAt": "2026-10-01T14:12:24.187Z"
   },
   {
     "id": "eva-gustavson",
@@ -42715,6 +42936,17 @@
     "tmdbUpdatedAt": "2026-09-21T13:01:03.257Z"
   },
   {
+    "id": "3730127",
+    "slug": "grace-knight",
+    "name": "Grace Knight",
+    "tmdbPersonId": 3730127,
+    "gender": "Female",
+    "knownForDepartment": "Writing",
+    "knownCredits": 6,
+    "tmdbUpdatedAt": "2026-10-01T14:12:24.661Z",
+    "tmdbFetchedAt": "2026-10-01T14:12:24.661Z"
+  },
+  {
     "id": "2833649",
     "slug": "grace-murphy",
     "name": "Grace Murphy",
@@ -43509,6 +43741,18 @@
     "knownForDepartment": "Art",
     "knownCredits": 10,
     "tmdbUpdatedAt": "2026-09-20T16:19:44.647Z"
+  },
+  {
+    "id": "1489049",
+    "slug": "gregory-ramon-anderson",
+    "name": "Gregory Ramon Anderson",
+    "tmdbPersonId": 1489049,
+    "imdbPersonId": "nm0026782",
+    "gender": "Male",
+    "knownForDepartment": "Writing",
+    "knownCredits": 14,
+    "tmdbUpdatedAt": "2026-10-01T14:12:23.816Z",
+    "tmdbFetchedAt": "2026-10-01T14:12:23.816Z"
   },
   {
     "id": "greta-scacchi",
@@ -44498,6 +44742,23 @@
     "knownForDepartment": "Acting",
     "knownCredits": 3,
     "tmdbUpdatedAt": "2026-09-20T16:17:25.557Z"
+  },
+  {
+    "id": "5387161",
+    "slug": "hasani-vibez-comer",
+    "name": "Hasani Vibez Comer",
+    "tmdbPersonId": 5387161,
+    "photoUrl": "/images/people/5387161.webp",
+    "profileUrl": "/images/people/5387161.webp",
+    "imdbPersonId": "nm15853905",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 13,
+    "alsoKnownAs": [
+      "Hasani Vibez"
+    ],
+    "tmdbUpdatedAt": "2026-10-01T14:12:21.992Z",
+    "tmdbFetchedAt": "2026-10-01T14:12:21.992Z"
   },
   {
     "id": "hattie-kragten",
@@ -48152,7 +48413,8 @@
     "instagramId": "jaimecallica",
     "twitterId": "JaimeCallica",
     "facebookId": "jaimemcallica",
-    "tmdbUpdatedAt": "2026-09-21T13:18:59.214Z"
+    "tmdbUpdatedAt": "2026-10-01T14:12:24.127Z",
+    "tmdbFetchedAt": "2026-10-01T14:12:24.127Z"
   },
   {
     "id": "jaime-ray-newman",
@@ -49952,7 +50214,8 @@
     "tmdbPersonId": 4398390,
     "knownForDepartment": "Acting",
     "knownCredits": 3,
-    "tmdbUpdatedAt": "2026-09-20T16:17:21.347Z"
+    "tmdbUpdatedAt": "2026-10-01T14:12:25.625Z",
+    "tmdbFetchedAt": "2026-10-01T14:12:25.625Z"
   },
   {
     "id": "3628746",
@@ -51865,6 +52128,26 @@
     "tmdbUpdatedAt": "2026-09-22T20:53:29.310Z"
   },
   {
+    "id": "1064313",
+    "slug": "jeffrey-bowyer-chapman",
+    "name": "Jeffrey Bowyer-Chapman",
+    "tmdbPersonId": 1064313,
+    "photoUrl": "/images/people/1064313.webp",
+    "profileUrl": "/images/people/1064313.webp",
+    "birthday": "1984-10-21",
+    "placeOfBirth": "Edmonton, Alberta, Canada",
+    "biography": "Jeffrey Bowyer-Chapman (pronounced \"beau-yer\") is a Canadian actor and fashion model. He is known for appearances in films and television, most notably as Jay in the Lifetime dark comedy-drama series Unreal and as one of the main judges on the first season of Canada's Drag Race.",
+    "imdbPersonId": "nm2242337",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 31,
+    "instagramId": "jeffreybchapman",
+    "twitterId": "JeffreyBChapman",
+    "facebookId": "100057799523088",
+    "tmdbUpdatedAt": "2026-10-01T14:12:22.497Z",
+    "tmdbFetchedAt": "2026-10-01T14:12:22.497Z"
+  },
+  {
     "id": "jeffrey-c-r-wallace",
     "slug": "jeffrey-c-r-wallace",
     "name": "Jeffrey C.R. Wallace",
@@ -53017,6 +53300,16 @@
     "instagramId": "jenniferwigmore",
     "twitterId": "JenniferWigmore",
     "tmdbUpdatedAt": "2026-09-20T16:16:45.979Z"
+  },
+  {
+    "id": "5859134",
+    "slug": "jenny-fischer",
+    "name": "Jenny Fischer",
+    "tmdbPersonId": 5859134,
+    "knownForDepartment": "Acting",
+    "knownCredits": 1,
+    "tmdbUpdatedAt": "2026-10-01T14:12:25.504Z",
+    "tmdbFetchedAt": "2026-10-01T14:12:25.504Z"
   },
   {
     "id": "1811104",
@@ -55934,7 +56227,8 @@
     "gender": "Male",
     "knownForDepartment": "Acting",
     "knownCredits": 17,
-    "tmdbUpdatedAt": "2026-09-20T16:18:47.963Z"
+    "tmdbUpdatedAt": "2026-10-01T14:12:22.720Z",
+    "tmdbFetchedAt": "2026-10-01T14:12:22.720Z"
   },
   {
     "id": "4716697",
@@ -59290,6 +59584,20 @@
     "tmdbUpdatedAt": "2026-09-20T16:18:11.626Z"
   },
   {
+    "id": "2970857",
+    "slug": "journey-carter",
+    "name": "Journey Carter",
+    "tmdbPersonId": 2970857,
+    "photoUrl": "/images/people/2970857.webp",
+    "profileUrl": "/images/people/2970857.webp",
+    "imdbPersonId": "nm7948246",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 5,
+    "tmdbUpdatedAt": "2026-10-01T14:12:21.264Z",
+    "tmdbFetchedAt": "2026-10-01T14:12:21.264Z"
+  },
+  {
     "id": "jovanna-huguet",
     "slug": "jovanna-huguet",
     "name": "Jovanna Huguet",
@@ -59762,6 +60070,20 @@
     "knownForDepartment": "Acting",
     "knownCredits": 15,
     "tmdbUpdatedAt": "2026-09-20T16:18:15.711Z"
+  },
+  {
+    "id": "2229319",
+    "slug": "julia-knope",
+    "name": "Julia Knope",
+    "tmdbPersonId": 2229319,
+    "photoUrl": "/images/people/2229319.webp",
+    "profileUrl": "/images/people/2229319.webp",
+    "imdbPersonId": "nm8122792",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 10,
+    "tmdbUpdatedAt": "2026-10-01T14:12:24.533Z",
+    "tmdbFetchedAt": "2026-10-01T14:12:24.533Z"
   },
   {
     "id": "1386502",
@@ -61040,6 +61362,19 @@
       "Kaj-Erik Erikson"
     ],
     "tmdbUpdatedAt": "2026-09-20T16:19:02.509Z"
+  },
+  {
+    "id": "3207225",
+    "slug": "kajuana-s-marie",
+    "name": "Kajuana S. Marie",
+    "tmdbPersonId": 3207225,
+    "photoUrl": "/images/people/3207225.webp",
+    "profileUrl": "/images/people/3207225.webp",
+    "gender": "Female",
+    "knownForDepartment": "Creator",
+    "knownCredits": 7,
+    "tmdbUpdatedAt": "2026-10-01T14:12:21.751Z",
+    "tmdbFetchedAt": "2026-10-01T14:12:21.751Z"
   },
   {
     "id": "4621726",
@@ -64075,6 +64410,21 @@
     "tmdbUpdatedAt": "2026-09-20T16:19:27.904Z"
   },
   {
+    "id": "1843924",
+    "slug": "kelly-penner",
+    "name": "Kelly Penner",
+    "tmdbPersonId": 1843924,
+    "photoUrl": "/images/people/1843924.webp",
+    "profileUrl": "/images/people/1843924.webp",
+    "imdbPersonId": "nm6257097",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 19,
+    "instagramId": "kellykellkellkell",
+    "tmdbUpdatedAt": "2026-10-01T14:12:23.664Z",
+    "tmdbFetchedAt": "2026-10-01T14:12:23.664Z"
+  },
+  {
     "id": "2593154",
     "slug": "kelly-peters",
     "name": "Kelly Peters",
@@ -64321,6 +64671,18 @@
     "knownForDepartment": "Acting",
     "knownCredits": 6,
     "tmdbUpdatedAt": "2026-09-20T16:19:38.821Z"
+  },
+  {
+    "id": "2986573",
+    "slug": "kelvin-hair",
+    "name": "Kelvin Hair",
+    "tmdbPersonId": 2986573,
+    "imdbPersonId": "nm10180171",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 6,
+    "tmdbUpdatedAt": "2026-10-01T14:12:21.399Z",
+    "tmdbFetchedAt": "2026-10-01T14:12:21.399Z"
   },
   {
     "id": "kelvin-lum",
@@ -67664,6 +68026,22 @@
     "knownForDepartment": "Acting",
     "knownCredits": 6,
     "tmdbUpdatedAt": "2026-09-20T16:20:40.131Z"
+  },
+  {
+    "id": "1218183",
+    "slug": "lamman-rucker",
+    "name": "Lamman Rucker",
+    "tmdbPersonId": 1218183,
+    "photoUrl": "/images/people/1218183.webp",
+    "profileUrl": "/images/people/1218183.webp",
+    "birthday": "1971-10-06",
+    "biography": "Lamman Rucker (born October 6, 1971) is an American actor. He is best known for his roles in Tyler Perry's films Why Did I Get Married?, Why Did I Get Married Too?, and Meet the Browns, and its television adaptation.\n\nRucker began his career on the daytime soap operas As the World Turns and All My Children before his film career.\n\nIn 2016, he began starring as Jacob Greenleaf in the Oprah Winfrey Network drama series, Greenleaf. As of 2022, he stars in BET+ drama The Black Hamptons.",
+    "imdbPersonId": "nm0748541",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 35,
+    "tmdbUpdatedAt": "2026-10-01T14:12:21.145Z",
+    "tmdbFetchedAt": "2026-10-01T14:12:21.145Z"
   },
   {
     "id": "lamorne-morris",
@@ -72051,7 +72429,8 @@
     "instagramId": "lodivadevine",
     "twitterId": "lodivadevine",
     "facebookId": "devine.loretta",
-    "tmdbUpdatedAt": "2026-09-20T16:18:00.503Z"
+    "tmdbUpdatedAt": "2026-10-01T14:12:23.785Z",
+    "tmdbFetchedAt": "2026-10-01T14:12:23.785Z"
   },
   {
     "id": "lorette-clow",
@@ -72195,6 +72574,16 @@
     "twitterId": "LorneCardinal",
     "facebookId": "lornecardinal",
     "tmdbUpdatedAt": "2026-09-20T16:18:45.873Z"
+  },
+  {
+    "id": "5576221",
+    "slug": "lorraine-brown",
+    "name": "Lorraine Brown",
+    "tmdbPersonId": 5576221,
+    "knownForDepartment": "Writing",
+    "knownCredits": 3,
+    "tmdbUpdatedAt": "2026-10-01T14:12:25.215Z",
+    "tmdbFetchedAt": "2026-10-01T14:12:25.215Z"
   },
   {
     "id": "lorrie-papadopoulos",
@@ -73645,6 +74034,22 @@
     "instagramId": "madeleinearthur",
     "twitterId": "MadeleineArthur",
     "tmdbUpdatedAt": "2026-09-20T16:17:15.238Z"
+  },
+  {
+    "id": "1925477",
+    "slug": "madeleine-claude",
+    "name": "Madeleine Claude",
+    "tmdbPersonId": 1925477,
+    "photoUrl": "/images/people/1925477.webp",
+    "profileUrl": "/images/people/1925477.webp",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 9,
+    "alsoKnownAs": [
+      "Madé Joselita"
+    ],
+    "tmdbUpdatedAt": "2026-10-01T14:12:22.907Z",
+    "tmdbFetchedAt": "2026-10-01T14:12:22.907Z"
   },
   {
     "id": "madeleine-coghlan",
@@ -79773,6 +80178,16 @@
     "tmdbUpdatedAt": "2026-09-20T16:19:57.161Z"
   },
   {
+    "id": "3743457",
+    "slug": "meg-deloatch",
+    "name": "Meg DeLoatch",
+    "tmdbPersonId": 3743457,
+    "knownForDepartment": "Writing",
+    "knownCredits": 2,
+    "tmdbUpdatedAt": "2026-10-01T14:12:22.171Z",
+    "tmdbFetchedAt": "2026-10-01T14:12:22.171Z"
+  },
+  {
     "id": "meg-roe",
     "slug": "meg-roe",
     "name": "Meg Roe",
@@ -80826,6 +81241,16 @@
     "tmdbUpdatedAt": "2026-09-20T16:19:40.842Z"
   },
   {
+    "id": "5840924",
+    "slug": "melissa-kurland",
+    "name": "Melissa Kurland",
+    "tmdbPersonId": 5840924,
+    "knownForDepartment": "Acting",
+    "knownCredits": 2,
+    "tmdbUpdatedAt": "2026-10-01T14:12:21.472Z",
+    "tmdbFetchedAt": "2026-10-01T14:12:21.472Z"
+  },
+  {
     "id": "melissa-marie-elias",
     "slug": "melissa-marie-elias",
     "name": "Melissa Marie Elias",
@@ -81253,6 +81678,18 @@
     "tmdbUpdatedAt": "2026-09-20T16:20:50.444Z"
   },
   {
+    "id": "1110710",
+    "slug": "meyer-shwarzstein",
+    "name": "Meyer Shwarzstein",
+    "tmdbPersonId": 1110710,
+    "imdbPersonId": "nm0796097",
+    "gender": "Male",
+    "knownForDepartment": "Production",
+    "knownCredits": 32,
+    "tmdbUpdatedAt": "2026-10-01T14:12:23.793Z",
+    "tmdbFetchedAt": "2026-10-01T14:12:23.793Z"
+  },
+  {
     "id": "mia-bagley",
     "slug": "mia-bagley",
     "name": "Mia Bagley",
@@ -81493,6 +81930,16 @@
       "Michael Simpson"
     ],
     "tmdbUpdatedAt": "2026-09-22T20:53:43.804Z"
+  },
+  {
+    "id": "5840927",
+    "slug": "michael-armstrong",
+    "name": "Michael Armstrong",
+    "tmdbPersonId": 5840927,
+    "knownForDepartment": "Acting",
+    "knownCredits": 3,
+    "tmdbUpdatedAt": "2026-10-01T14:12:21.527Z",
+    "tmdbFetchedAt": "2026-10-01T14:12:21.527Z"
   },
   {
     "id": "michael-barbuto",
@@ -83610,6 +84057,22 @@
     "tmdbUpdatedAt": "2026-09-20T16:20:37.286Z"
   },
   {
+    "id": "2041998",
+    "slug": "miguel-rivas",
+    "name": "Miguel Rivas",
+    "tmdbPersonId": 2041998,
+    "photoUrl": "/images/people/2041998.webp",
+    "profileUrl": "/images/people/2041998.webp",
+    "imdbPersonId": "nm2320295",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 14,
+    "instagramId": "migrivas",
+    "twitterId": "migrivas",
+    "tmdbUpdatedAt": "2026-10-01T14:12:23.674Z",
+    "tmdbFetchedAt": "2026-10-01T14:12:23.674Z"
+  },
+  {
     "id": "111912",
     "slug": "mihai-niculescu",
     "name": "Mihai Niculescu",
@@ -85454,7 +85917,8 @@
     "knownCredits": 27,
     "instagramId": "naikatoussaint",
     "twitterId": "Naika_Toussaint",
-    "tmdbUpdatedAt": "2026-09-21T13:18:15.304Z"
+    "tmdbUpdatedAt": "2026-10-01T14:12:23.573Z",
+    "tmdbFetchedAt": "2026-10-01T14:12:23.573Z"
   },
   {
     "id": "nakai-takawira",
@@ -87380,6 +87844,26 @@
     "tmdbUpdatedAt": "2026-09-20T16:20:15.101Z"
   },
   {
+    "id": "2676899",
+    "slug": "nico-decastris",
+    "name": "Nico DeCastris",
+    "tmdbPersonId": 2676899,
+    "photoUrl": "/images/people/2676899.webp",
+    "profileUrl": "/images/people/2676899.webp",
+    "biography": "Nico DeCastris is known for The Recruit (2022), Ghosts (2021) and Midway (2019).",
+    "imdbPersonId": "nm8503169",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 10,
+    "alsoKnownAs": [
+      "Nico De Castris"
+    ],
+    "instagramId": "nicodecastris",
+    "twitterId": "nicodecastris",
+    "tmdbUpdatedAt": "2026-10-01T14:12:24.679Z",
+    "tmdbFetchedAt": "2026-10-01T14:12:24.679Z"
+  },
+  {
     "id": "nico-gentes",
     "slug": "nico-gentes",
     "name": "Nico Gentes",
@@ -88222,6 +88706,24 @@
     "tmdbFetchedAt": "2026-10-01T10:28:07.107Z"
   },
   {
+    "id": "4603707",
+    "slug": "noah-berc",
+    "name": "Noah Berc",
+    "tmdbPersonId": 4603707,
+    "photoUrl": "/images/people/4603707.webp",
+    "profileUrl": "/images/people/4603707.webp",
+    "birthday": "2003-02-28",
+    "placeOfBirth": "Ontario, Canada",
+    "biography": "Noah Berc is a rising voice in Canadian cinema whose work intersects performance, curation, and creation. He is an ACTRA performer with a growing list of screen credits, from heartwarming holiday films to blood-soaked genre fare. Off-camera, his film series Beyond the Flesh has garnered attention for its exploration of body horror as a site of queer, theological, and corporeal inquiry.  His directorial debut, Pimple Patch, has screened at international festivals, including Vancouver Horror Show, ReelOut, and FogFest, among others.",
+    "imdbPersonId": "nm11083566",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 22,
+    "instagramId": "noah.berc",
+    "tmdbUpdatedAt": "2026-10-01T14:12:24.731Z",
+    "tmdbFetchedAt": "2026-10-01T14:12:24.731Z"
+  },
+  {
     "id": "168778",
     "slug": "noah-cappe",
     "name": "Noah Cappe",
@@ -88815,6 +89317,16 @@
     "knownForDepartment": "Acting",
     "knownCredits": 31,
     "tmdbUpdatedAt": "2026-09-20T16:17:31.080Z"
+  },
+  {
+    "id": "6305729",
+    "slug": "olivia-applewhite",
+    "name": "Olivia Applewhite",
+    "tmdbPersonId": 6305729,
+    "knownForDepartment": "Acting",
+    "knownCredits": 1,
+    "tmdbUpdatedAt": "2026-10-01T14:12:21.869Z",
+    "tmdbFetchedAt": "2026-10-01T14:12:21.869Z"
   },
   {
     "id": "olivia-bell-cross",
@@ -89529,9 +90041,10 @@
     "imdbPersonId": "nm3237772",
     "gender": "Female",
     "knownForDepartment": "Acting",
-    "knownCredits": 32,
+    "knownCredits": 33,
     "twitterId": "palomanunez",
-    "tmdbUpdatedAt": "2026-09-20T16:19:21.996Z"
+    "tmdbUpdatedAt": "2026-10-01T14:12:23.028Z",
+    "tmdbFetchedAt": "2026-10-01T14:12:23.028Z"
   },
   {
     "id": "pam-eichner",
@@ -90108,7 +90621,8 @@
     "knownCredits": 75,
     "instagramId": "goodman.patrice",
     "twitterId": "@patrice_goodman",
-    "tmdbUpdatedAt": "2026-09-20T16:16:58.653Z"
+    "tmdbUpdatedAt": "2026-10-01T14:12:23.475Z",
+    "tmdbFetchedAt": "2026-10-01T14:12:23.475Z"
   },
   {
     "id": "1397320",
@@ -90391,6 +90905,20 @@
     "instagramId": "iampatrickgallagher",
     "tmdbUpdatedAt": "2026-10-01T10:14:51.120Z",
     "tmdbFetchedAt": "2026-10-01T10:14:51.120Z"
+  },
+  {
+    "id": "2242307",
+    "slug": "patrick-gathron",
+    "name": "Patrick Gathron",
+    "tmdbPersonId": 2242307,
+    "photoUrl": "/images/people/2242307.webp",
+    "profileUrl": "/images/people/2242307.webp",
+    "imdbPersonId": "nm4549873",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 8,
+    "tmdbUpdatedAt": "2026-10-01T14:12:22.165Z",
+    "tmdbFetchedAt": "2026-10-01T14:12:22.165Z"
   },
   {
     "id": "patrick-haye",
@@ -90991,6 +91519,19 @@
     "tmdbUpdatedAt": "2026-09-20T16:19:03.508Z"
   },
   {
+    "id": "1202966",
+    "slug": "paul-j-ballin",
+    "name": "Paul J. Ballin",
+    "tmdbPersonId": 1202966,
+    "photoUrl": "/images/people/1202966.webp",
+    "profileUrl": "/images/people/1202966.webp",
+    "imdbPersonId": "nm4779271",
+    "knownForDepartment": "Acting",
+    "knownCredits": 5,
+    "tmdbUpdatedAt": "2026-10-01T14:12:25.247Z",
+    "tmdbFetchedAt": "2026-10-01T14:12:25.247Z"
+  },
+  {
     "id": "98157",
     "slug": "paul-logan",
     "name": "Paul Logan",
@@ -91264,6 +91805,26 @@
     "knownForDepartment": "Acting",
     "knownCredits": 16,
     "tmdbUpdatedAt": "2026-09-20T16:20:08.561Z"
+  },
+  {
+    "id": "204964",
+    "slug": "paula-boudreau",
+    "name": "Paula Boudreau",
+    "tmdbPersonId": 204964,
+    "photoUrl": "/images/people/204964.webp",
+    "profileUrl": "/images/people/204964.webp",
+    "birthday": "1963-04-14",
+    "placeOfBirth": "Toronto, Ontario, Canada",
+    "biography": "Paula Boudreau is a Canadian stage, film and television actress. She graduated from Queen's University in Kingston, Ontario, Canada, with an Honors degree in Theatre and Music.",
+    "imdbPersonId": "nm0099202",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 51,
+    "alsoKnownAs": [
+      "Paul Boudreau"
+    ],
+    "tmdbUpdatedAt": "2026-10-01T14:12:24.767Z",
+    "tmdbFetchedAt": "2026-10-01T14:12:24.767Z"
   },
   {
     "id": "paula-brancati",
@@ -92502,7 +93063,8 @@
     "gender": "Male",
     "knownForDepartment": "Acting",
     "knownCredits": 22,
-    "tmdbUpdatedAt": "2026-09-20T16:19:46.642Z"
+    "tmdbUpdatedAt": "2026-10-01T14:12:25.666Z",
+    "tmdbFetchedAt": "2026-10-01T14:12:25.667Z"
   },
   {
     "id": "33153",
@@ -93413,6 +93975,24 @@
     "knownCredits": 1,
     "tmdbUpdatedAt": "2026-10-01T10:20:45.808Z",
     "tmdbFetchedAt": "2026-10-01T10:20:45.808Z"
+  },
+  {
+    "id": "1797078",
+    "slug": "rachel-sellan",
+    "name": "Rachel Sellan",
+    "tmdbPersonId": 1797078,
+    "photoUrl": "/images/people/1797078.webp",
+    "profileUrl": "/images/people/1797078.webp",
+    "birthday": "1990-10-04",
+    "placeOfBirth": "Welland, Ontario, Canada",
+    "imdbPersonId": "nm4174439",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 17,
+    "instagramId": "rachelsellan",
+    "twitterId": "sellandary",
+    "tmdbUpdatedAt": "2026-10-01T14:12:25.897Z",
+    "tmdbFetchedAt": "2026-10-01T14:12:25.897Z"
   },
   {
     "id": "rachel-skarsten",
@@ -96810,6 +97390,22 @@
     "tmdbFetchedAt": "2026-09-25T18:44:22.159Z"
   },
   {
+    "id": "5582410",
+    "slug": "robert-c-riley",
+    "name": "Robert C. Riley",
+    "tmdbPersonId": 5582410,
+    "photoUrl": "/images/people/5582410.webp",
+    "profileUrl": "/images/people/5582410.webp",
+    "birthday": "1980-10-11",
+    "placeOfBirth": "Brooklyn, New York, USA",
+    "biography": "Robert Christopher Riley (born October 11, 1980) is an American film, television, and stage actor of Trinidadian and Bajan descent. He is known for his role as Terrence Wall in the VH1 television drama series Hit The Floor from 2013 to 2016, and for playing Michael Culhane in The CW's 2017 Dynasty reboot.",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 1,
+    "tmdbUpdatedAt": "2026-10-01T14:12:21.114Z",
+    "tmdbFetchedAt": "2026-10-01T14:12:21.114Z"
+  },
+  {
     "id": "robert-chapman",
     "slug": "robert-chapman",
     "name": "Robert Chapman",
@@ -97855,7 +98451,8 @@
       "Roger Marcellus Bobb",
       "Roger Bobb"
     ],
-    "tmdbUpdatedAt": "2026-09-22T20:53:18.534Z"
+    "tmdbUpdatedAt": "2026-10-01T14:12:22.211Z",
+    "tmdbFetchedAt": "2026-10-01T14:12:22.212Z"
   },
   {
     "id": "589764",
@@ -97981,7 +98578,8 @@
     "gender": "Male",
     "knownForDepartment": "Acting",
     "knownCredits": 36,
-    "tmdbUpdatedAt": "2026-09-20T16:18:56.272Z"
+    "tmdbUpdatedAt": "2026-10-01T14:12:22.707Z",
+    "tmdbFetchedAt": "2026-10-01T14:12:22.707Z"
   },
   {
     "id": "roman-kinsella",
@@ -99132,6 +99730,23 @@
     "knownForDepartment": "Acting",
     "knownCredits": 8,
     "tmdbUpdatedAt": "2026-09-21T13:22:03.828Z"
+  },
+  {
+    "id": "100370",
+    "slug": "ryan-northcott",
+    "name": "Ryan Northcott",
+    "tmdbPersonId": 100370,
+    "photoUrl": "/images/people/100370.webp",
+    "profileUrl": "/images/people/100370.webp",
+    "birthday": "1980-04-09",
+    "placeOfBirth": "Calgary, Alberta, Canada",
+    "biography": "​From Wikipedia, the free encyclopedia.  \n\nRyan Northcott (born April 9, 1980 in Calgary) is a Canadian actor, in the film Mystery, Alaska and several other TV movies. He played Carl Wilson in the 2000 miniseries The Beach Boys: An American Family. He is the founding member of FUDDYTV.com and the character now known on the Internet as Chuck Storm Action 5 News Reporter who hits pole.\n\nIn May 2008 Ryan and FUDDY compatriots David Haysom and Erik Eldman traveled to Belgium on behalf of Toyota to film Car Dance Party Belgium which has become a cult favorite in Belgium.  The ad features two of FUDDYTV.com's recurring characters, Boris and Juri, as they instruct us in the art of the car dance party. Their car dance party work has gone on to garner them a win in a SuperU.ca contest which includes a showing of Car Dance Party Moscow at Just For Laughs in Montreal and a MIXX award for their Car Dance Party Belgium Campaign in partnership with Happiness Brussels.\n\nIn December 2008 Ryan and FUDDYTV worked hand in hand with TrueCredit's ad agency Cramer-Krasselt to create 10 commercials for web and TV, the most widespread of which is the Chuck Storm commercial.\n\nDescription above from the Wikipedia article Ryan Northcott, licensed under CC-BY-SA, full list of contributors on Wikipedia.",
+    "imdbPersonId": "nm0636092",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 21,
+    "tmdbUpdatedAt": "2026-10-01T14:12:25.273Z",
+    "tmdbFetchedAt": "2026-10-01T14:12:25.273Z"
   },
   {
     "id": "ryan-ogrondy",
@@ -103667,8 +104282,9 @@
     "imdbPersonId": "nm5160731",
     "gender": "Male",
     "knownForDepartment": "Acting",
-    "knownCredits": 15,
-    "tmdbUpdatedAt": "2026-09-20T16:20:06.495Z"
+    "knownCredits": 16,
+    "tmdbUpdatedAt": "2026-10-01T14:12:23.283Z",
+    "tmdbFetchedAt": "2026-10-01T14:12:23.283Z"
   },
   {
     "id": "sharmaine-yeoh",
@@ -104513,7 +105129,8 @@
       "Sherry Miller-Hocking",
       "Sheryl Miller"
     ],
-    "tmdbUpdatedAt": "2026-09-21T13:00:37.144Z"
+    "tmdbUpdatedAt": "2026-10-01T14:12:23.176Z",
+    "tmdbFetchedAt": "2026-10-01T14:12:23.176Z"
   },
   {
     "id": "sheryl-cooper",
@@ -105900,7 +106517,8 @@
     ],
     "instagramId": "stefanbrogren",
     "twitterId": "stefanbrogren",
-    "tmdbUpdatedAt": "2026-09-20T16:20:10.576Z"
+    "tmdbUpdatedAt": "2026-10-01T14:12:25.677Z",
+    "tmdbFetchedAt": "2026-10-01T14:12:25.677Z"
   },
   {
     "id": "stefan-gorski",
@@ -106410,7 +107028,8 @@
     "gender": "Female",
     "knownForDepartment": "Acting",
     "knownCredits": 6,
-    "tmdbUpdatedAt": "2026-09-20T16:19:18.046Z"
+    "tmdbUpdatedAt": "2026-10-01T14:12:25.102Z",
+    "tmdbFetchedAt": "2026-10-01T14:12:25.102Z"
   },
   {
     "id": "stephano-vasquez",
@@ -108036,6 +108655,22 @@
     "knownForDepartment": "Acting",
     "knownCredits": 19,
     "tmdbUpdatedAt": "2026-09-20T16:17:13.650Z"
+  },
+  {
+    "id": "5582407",
+    "slug": "sy-rai-smith",
+    "name": "Sy’Rai Smith",
+    "tmdbPersonId": 5582407,
+    "photoUrl": "/images/people/5582407.webp",
+    "profileUrl": "/images/people/5582407.webp",
+    "birthday": "2002-06-16",
+    "placeOfBirth": "Tarzana, California, USA",
+    "biography": "Sy'Rai Iman Smith (born June 16, 2002), also known mononymously as Sy'Rai, is an American singer and songwriter. She made her acting debut in the Lifetime holiday rom-com Christmas Everyday (2025) alongside her mother Brandy Norwood.",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 1,
+    "tmdbUpdatedAt": "2026-10-01T14:12:21.242Z",
+    "tmdbFetchedAt": "2026-10-01T14:12:21.242Z"
   },
   {
     "id": "syd-castle",
@@ -111460,7 +112095,8 @@
     "gender": "Male",
     "knownForDepartment": "Acting",
     "knownCredits": 44,
-    "tmdbUpdatedAt": "2026-09-20T16:19:44.710Z"
+    "tmdbUpdatedAt": "2026-10-01T14:12:25.514Z",
+    "tmdbFetchedAt": "2026-10-01T14:12:25.514Z"
   },
   {
     "id": "tim-reid",
@@ -111852,6 +112488,19 @@
     "knownForDepartment": "Acting",
     "knownCredits": 62,
     "tmdbUpdatedAt": "2026-09-20T16:18:31.667Z"
+  },
+  {
+    "id": "1814185",
+    "slug": "toby-marks",
+    "name": "Toby Marks",
+    "tmdbPersonId": 1814185,
+    "photoUrl": "/images/people/1814185.webp",
+    "profileUrl": "/images/people/1814185.webp",
+    "imdbPersonId": "nm2039603",
+    "knownForDepartment": "Acting",
+    "knownCredits": 12,
+    "tmdbUpdatedAt": "2026-10-01T14:12:26.314Z",
+    "tmdbFetchedAt": "2026-10-01T14:12:26.314Z"
   },
   {
     "id": "1389160",
@@ -113908,7 +114557,8 @@
     "knownCredits": 21,
     "twitterId": "TylerHilton",
     "facebookId": "TylerHilton",
-    "tmdbUpdatedAt": "2026-09-20T16:20:27.455Z"
+    "tmdbUpdatedAt": "2026-10-01T14:12:25.384Z",
+    "tmdbFetchedAt": "2026-10-01T14:12:25.384Z"
   },
   {
     "id": "tyler-hynes",
@@ -117899,7 +118549,8 @@
       "Zoe Mugford",
       "Zoé Doyle"
     ],
-    "tmdbUpdatedAt": "2026-09-20T16:20:04.164Z"
+    "tmdbUpdatedAt": "2026-10-01T14:12:22.879Z",
+    "tmdbFetchedAt": "2026-10-01T14:12:22.879Z"
   },
   {
     "id": "zoe-elizabeth-towne",
@@ -118005,6 +118656,16 @@
     ],
     "twitterId": "ZoeYeoman",
     "tmdbUpdatedAt": "2026-09-20T16:20:02.866Z"
+  },
+  {
+    "id": "6305730",
+    "slug": "zoey-mock",
+    "name": "Zoey Mock",
+    "tmdbPersonId": 6305730,
+    "knownForDepartment": "Acting",
+    "knownCredits": 1,
+    "tmdbUpdatedAt": "2026-10-01T14:12:21.989Z",
+    "tmdbFetchedAt": "2026-10-01T14:12:21.989Z"
   },
   {
     "id": "zoey-wiscombe",

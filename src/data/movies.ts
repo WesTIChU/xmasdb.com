@@ -225434,6 +225434,1218 @@ export const MOVIES: Movie[] = [
     "voteCount": 8,
     "tmdbUpdatedAt": "2026-10-01T14:05:17.935Z",
     "tmdbFetchedAt": "2026-10-01T14:05:17.935Z"
+  },
+  {
+    "id": "lifetime-2025-christmas-everyday",
+    "slug": "christmas-everyday",
+    "title": "Christmas Everyday",
+    "year": 2025,
+    "brandId": "lifetime",
+    "releaseDate": "2025-11-29",
+    "synopsis": "When a water pipe bursts and disrupts her sister's wedding plans, Fancy finds herself drawn to the rugged yet charming contractor. Through all the chaos, she learns valuable lessons about faith, family, and the true meaning of Christmas.",
+    "posterUrl": "/images/posters/1517824.jpg",
+    "backdropUrl": "/images/backdrops/1517824.jpg",
+    "cast": [
+      {
+        "actorId": "33285",
+        "name": "Brandy Norwood",
+        "character": "Francine 'Fancy' Ballantine",
+        "slug": "brandy-norwood",
+        "tmdbPersonId": 33285,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/ie1IH8LQI3aGzke4FoYRbcdHv88.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "5582410",
+        "name": "Robert C. Riley",
+        "character": "Jaylen",
+        "slug": "robert-c-riley",
+        "tmdbPersonId": 5582410,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/4kH4ssN7IPX9cdNtjMLT1fGyTCE.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "1218183",
+        "name": "Lamman Rucker",
+        "character": "Richard",
+        "slug": "lamman-rucker",
+        "tmdbPersonId": 1218183,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/97JGsO3FR13MLa3hrs9A0cIzGBo.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "5582407",
+        "name": "Sy’Rai Smith",
+        "character": "Belle Ballantine",
+        "slug": "sy-rai-smith",
+        "tmdbPersonId": 5582407,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/34QFZjvL9Y6wnEVWD5x5ykKo3ee.jpg",
+        "order": 3
+      },
+      {
+        "actorId": "2970857",
+        "name": "Journey Carter",
+        "character": "Tia",
+        "slug": "journey-carter",
+        "tmdbPersonId": 2970857,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/jWYpok7dXorsXslmGR1GCMp5lJg.jpg",
+        "order": 4
+      },
+      {
+        "actorId": "88161",
+        "name": "Debbi Morgan",
+        "character": "Evelyn Ballantine",
+        "slug": "debbi-morgan",
+        "tmdbPersonId": 88161,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/5uet40J3x2pLCxdqC07RjNHTzvH.jpg",
+        "order": 5
+      },
+      {
+        "actorId": "1064313",
+        "name": "Jeffrey Bowyer-Chapman",
+        "character": "Germaine",
+        "slug": "jeffrey-bowyer-chapman",
+        "tmdbPersonId": 1064313,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/pYCJuxa9pPC7hnELlvpIAjjL3Co.jpg",
+        "order": 6
+      },
+      {
+        "actorId": "3207225",
+        "name": "Kajuana S. Marie",
+        "character": "Deena",
+        "slug": "kajuana-s-marie",
+        "tmdbPersonId": 3207225,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/gsWIUSn0KJySNROLUMrOlWkPteF.jpg",
+        "order": 7
+      },
+      {
+        "actorId": "1465252",
+        "name": "Bernadette Speakes",
+        "character": "Lyla",
+        "slug": "bernadette-speakes",
+        "tmdbPersonId": 1465252,
+        "order": 8
+      },
+      {
+        "actorId": "2986573",
+        "name": "Kelvin Hair",
+        "character": "Anthony",
+        "slug": "kelvin-hair",
+        "tmdbPersonId": 2986573,
+        "order": 9
+      },
+      {
+        "actorId": "5840924",
+        "name": "Melissa Kurland",
+        "character": "Ashley Spencer",
+        "slug": "melissa-kurland",
+        "tmdbPersonId": 5840924,
+        "order": 10
+      },
+      {
+        "actorId": "2242307",
+        "name": "Patrick Gathron",
+        "character": "Malik",
+        "slug": "patrick-gathron",
+        "tmdbPersonId": 2242307,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/s7e8mRt9SnkmHBv6hvF24pXfU5C.jpg",
+        "order": 11
+      },
+      {
+        "actorId": "5840927",
+        "name": "Michael Armstrong",
+        "character": "Walt",
+        "slug": "michael-armstrong",
+        "tmdbPersonId": 5840927,
+        "order": 12
+      },
+      {
+        "actorId": "5387161",
+        "name": "Hasani Vibez Comer",
+        "character": "Teenage Boy",
+        "slug": "hasani-vibez-comer",
+        "tmdbPersonId": 5387161,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/zZSOP3WrKF6Fv3b7Ylr9TsXSnEY.jpg",
+        "order": 13
+      },
+      {
+        "actorId": "2232612",
+        "name": "Caleb T. Thomas",
+        "character": "Teenage Boy",
+        "slug": "caleb-t-thomas",
+        "tmdbPersonId": 2232612,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/qbpn9awnbtHNSD4t39IMG22zGq.jpg",
+        "order": 14
+      },
+      {
+        "actorId": "6305729",
+        "name": "Olivia Applewhite",
+        "character": "Santa Visitor",
+        "slug": "olivia-applewhite",
+        "tmdbPersonId": 6305729,
+        "order": 15
+      },
+      {
+        "actorId": "6305730",
+        "name": "Zoey Mock",
+        "character": "Santa Visitor",
+        "slug": "zoey-mock",
+        "tmdbPersonId": 6305730,
+        "order": 16
+      }
+    ],
+    "director": "Roger M. Bobb",
+    "tmdbId": 1517824,
+    "imdbId": "tt37675234",
+    "isComingSoon": false,
+    "status": "collection",
+    "originalTitle": "Christmas Everyday",
+    "runtimeMinutes": 87,
+    "genres": [
+      {
+        "id": 10749,
+        "name": "Romance"
+      },
+      {
+        "id": 10402,
+        "name": "Music"
+      },
+      {
+        "id": 18,
+        "name": "Drama"
+      },
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "US",
+        "releaseDate": "2025-11-29T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "Lifetime"
+      }
+    ],
+    "crew": [
+      {
+        "id": 80603,
+        "name": "Roger M. Bobb",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/aqwifOQWTfpii164OtiDNhjDFNd.jpg",
+        "creditId": "688129e590c737dad716af6c"
+      },
+      {
+        "id": 4930012,
+        "name": "Cameron Ross",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "68812a066309222fee72d98f"
+      },
+      {
+        "id": 3743457,
+        "name": "Meg DeLoatch",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "68812a0e3855a70164245803"
+      }
+    ],
+    "trailers": [
+      {
+        "key": "dwFOVwNRg8o",
+        "site": "YouTube",
+        "type": "Trailer",
+        "name": "Christmas Everyday: Trailer | Brandy Norwood | It's a Wonderful Lifetime",
+        "official": true
+      }
+    ],
+    "trailerYoutubeKey": "dwFOVwNRg8o",
+    "voteAverage": 6.8,
+    "voteCount": 5,
+    "tmdbUpdatedAt": "2026-10-01T14:12:17.400Z",
+    "tmdbFetchedAt": "2026-10-01T14:12:17.400Z"
+  },
+  {
+    "id": "lifetime-2024-jingle-all-the-way-to-love",
+    "slug": "jingle-all-the-way-to-love",
+    "title": "Jingle All the Way to Love",
+    "year": 2024,
+    "brandId": "lifetime",
+    "releaseDate": "2024-11-01",
+    "synopsis": "Years after a Christmas stranger gifted her a lucky sleigh bell, lawyer Andi shares her story on a holiday radio show. With host Jake and festive callers, she embarks on a joyful search for her lost holiday love.",
+    "posterUrl": "/images/posters/1386531.jpg",
+    "backdropUrl": "/images/backdrops/1386531.jpg",
+    "cast": [
+      {
+        "actorId": "500085",
+        "name": "Erin Agostino",
+        "character": "Andi Kelton",
+        "slug": "erin-agostino",
+        "tmdbPersonId": 500085,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/fIuwUhBQQ2pyIcW8sZqekZVNbkl.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "1335530",
+        "name": "Romaine Waite",
+        "character": "Jake Emmitson",
+        "slug": "romaine-waite",
+        "tmdbPersonId": 1335530,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/AeNfCB8MchOHFGHelnX3kbIGpCy.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "3109240",
+        "name": "Connie Manfredi",
+        "character": "Piper",
+        "slug": "connie-manfredi",
+        "tmdbPersonId": 3109240,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/4YlQ8BvEMWzMN0tVMwhKqV3kXjW.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "173835",
+        "name": "Richard Waugh",
+        "character": "Tom",
+        "slug": "richard-waugh",
+        "tmdbPersonId": 173835,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/5Fo6mlAjTRniszTkJuQcnMFk2aG.jpg",
+        "order": 3
+      },
+      {
+        "actorId": "1903305",
+        "name": "Delia Lisette Chambers",
+        "character": "Livy Emmitson",
+        "slug": "delia-lisette-chambers",
+        "tmdbPersonId": 1903305,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/cxF7L1rOyU6oSE3WGJiXOub3gPN.jpg",
+        "order": 4
+      },
+      {
+        "actorId": "1925477",
+        "name": "Madeleine Claude",
+        "character": "Franny",
+        "slug": "madeleine-claude",
+        "tmdbPersonId": 1925477,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/9BlKmSM8ynhOFnIpWr7ksDeNFxj.jpg",
+        "order": 5
+      },
+      {
+        "actorId": "141217",
+        "name": "David Reale",
+        "character": "Ned",
+        "slug": "david-reale",
+        "tmdbPersonId": 141217,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/6Mo33Tpd9Ou7nRjKjZ1iMBc2jq0.jpg",
+        "order": 6
+      },
+      {
+        "actorId": "1918302",
+        "name": "Joey Belfiore",
+        "character": "Ghost of Christmas Past/Bobby",
+        "slug": "joey-belfiore",
+        "tmdbPersonId": 1918302,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/hxpopMuYExIvvsYaEPLMEDyMmpe.jpg",
+        "order": 7
+      }
+    ],
+    "director": "Graeme Campbell",
+    "tmdbId": 1386531,
+    "imdbId": "tt34006483",
+    "isComingSoon": false,
+    "status": "collection",
+    "originalTitle": "Jingle All the Way to Love",
+    "runtimeMinutes": 88,
+    "genres": [
+      {
+        "id": 10749,
+        "name": "Romance"
+      },
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "BE",
+        "releaseDate": "2025-10-17T00:00:00.000Z",
+        "type": 4,
+        "certification": "",
+        "note": "RTBF Auvio"
+      },
+      {
+        "country": "US",
+        "releaseDate": "2024-11-01T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "Lifetime"
+      }
+    ],
+    "crew": [
+      {
+        "id": 90365,
+        "name": "Graeme Campbell",
+        "job": "Director",
+        "department": "Directing",
+        "creditId": "6733e1b1a67e36bb668d7840"
+      },
+      {
+        "id": 2966354,
+        "name": "Courtney Cilman",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "68f25055ca8c293dc8b2312f"
+      }
+    ],
+    "trailers": [],
+    "voteAverage": 4.2,
+    "voteCount": 4,
+    "tmdbUpdatedAt": "2026-10-01T14:12:17.402Z",
+    "tmdbFetchedAt": "2026-10-01T14:12:17.402Z"
+  },
+  {
+    "id": "lifetime-2025-the-christmas-cookbook",
+    "slug": "the-christmas-cookbook",
+    "title": "The Christmas Cookbook",
+    "year": 2025,
+    "brandId": "lifetime",
+    "releaseDate": "2025-12-03",
+    "synopsis": "Newly single at Christmas, Veronica Cearley finds unexpected comfort in The X-Mas Club — a festive group of food lovers who cook, give back, and celebrate the season solo. But when sparks fly with the club’s warm-hearted founder, Cullen Murdock, she realizes that the best part of Christmas might not be the food or the traditions—but the people who feel like home.",
+    "posterUrl": "/images/posters/1564000.jpg",
+    "backdropUrl": "/images/backdrops/1564000.jpg",
+    "cast": [
+      {
+        "actorId": "1228296",
+        "name": "Ashley Newbrough",
+        "character": "Veronica Cearley",
+        "slug": "ashley-newbrough",
+        "tmdbPersonId": 1228296,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/pGisrI1H9CP69CUnJWlE1VKVK30.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "2180575",
+        "name": "Franco Lo Presti",
+        "character": "Cullen Murdock",
+        "slug": "franco-lo-presti",
+        "tmdbPersonId": 2180575,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/ueLxUo5jvGpHlnR5qd8P9ZcFi0o.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "1519236",
+        "name": "Erica Deutschman",
+        "character": "Josie",
+        "slug": "erica-deutschman",
+        "tmdbPersonId": 1519236,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/dentb8VJpk00AzNqeS51Bs0GMMM.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "1461423",
+        "name": "Zoe Doyle",
+        "character": "Marian",
+        "slug": "zoe-doyle",
+        "tmdbPersonId": 1461423,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/l4VYUzj9UFj4vBIb3hQil2NmaCi.jpg",
+        "order": 3
+      },
+      {
+        "actorId": "61661",
+        "name": "Patrice Goodman",
+        "character": "Elise",
+        "slug": "patrice-goodman",
+        "tmdbPersonId": 61661,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/vUo2byD6R6AVAW7StnE4to63mnU.jpg",
+        "order": 4
+      },
+      {
+        "actorId": "208539",
+        "name": "Anna Hopkins",
+        "character": "Carrie",
+        "slug": "anna-hopkins",
+        "tmdbPersonId": 208539,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/nESCHSNZCFdvrCifzTl9xxAxtMf.jpg",
+        "order": 5
+      },
+      {
+        "actorId": "43301",
+        "name": "Sherry Miller",
+        "character": "Tammy Cleary",
+        "slug": "sherry-miller",
+        "tmdbPersonId": 43301,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/8loCxWNAAF7m3C3kFAREKqO7mBc.jpg",
+        "order": 6
+      },
+      {
+        "actorId": "1480981",
+        "name": "Paloma Nuñez",
+        "character": "Dana",
+        "slug": "paloma-nu-ez",
+        "tmdbPersonId": 1480981,
+        "order": 7
+      },
+      {
+        "actorId": "1843924",
+        "name": "Kelly Penner",
+        "character": "Theo",
+        "slug": "kelly-penner",
+        "tmdbPersonId": 1843924,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/oNcju2NNcSOAv62O4byBUCL7tF4.jpg",
+        "order": 8
+      },
+      {
+        "actorId": "2783555",
+        "name": "Sharjil Rasool",
+        "character": "Raj",
+        "slug": "sharjil-rasool",
+        "tmdbPersonId": 2783555,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/fSRvgyNxOB1BYfshn4phNzKpehj.jpg",
+        "order": 9
+      },
+      {
+        "actorId": "2041998",
+        "name": "Miguel Rivas",
+        "character": "Javier",
+        "slug": "miguel-rivas",
+        "tmdbPersonId": 2041998,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/hoaEFH0lTkTzZbk9uWIayFXOobv.jpg",
+        "order": 10
+      }
+    ],
+    "director": "Mars Horodyski",
+    "tmdbId": 1564000,
+    "imdbId": "tt38700396",
+    "isComingSoon": false,
+    "status": "collection",
+    "originalTitle": "The Christmas Cookbook",
+    "runtimeMinutes": 86,
+    "genres": [
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      },
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "FR",
+        "releaseDate": "2025-12-03T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "TF1"
+      },
+      {
+        "country": "US",
+        "releaseDate": "2025-12-05T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "Lifetime"
+      }
+    ],
+    "crew": [
+      {
+        "id": 1519236,
+        "name": "Erica Deutschman",
+        "job": "Writer",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/dentb8VJpk00AzNqeS51Bs0GMMM.jpg",
+        "creditId": "68f756525c4abc63c16919c0"
+      },
+      {
+        "id": 1447198,
+        "name": "Mars Horodyski",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/2Ni0etKpzo1plDMrWvuUlBUql9P.jpg",
+        "creditId": "68f7565fdd5675ae383217ab"
+      }
+    ],
+    "trailers": [],
+    "voteAverage": 5.8,
+    "voteCount": 4,
+    "tmdbUpdatedAt": "2026-10-01T14:12:17.408Z",
+    "tmdbFetchedAt": "2026-10-01T14:12:17.408Z"
+  },
+  {
+    "id": "lifetime-2025-deck-the-hallways",
+    "slug": "deck-the-hallways",
+    "title": "Deck the Hallways",
+    "year": 2025,
+    "brandId": "lifetime",
+    "releaseDate": "2025-12-06",
+    "synopsis": "Zoe, a Bay Area tech exec, returns to Chicago to visit her grandmother Agnes, who’s traded old traditions for bold new adventures — including canceling the cherished holiday party her late husband started. Missing the festive warmth of her childhood, Zoe teams up with her charming childhood crush Jace and their fifth floor neighbors to revive the celebration. As sparks fly between Zoe and Jace, a last-minute cancelation threatens the fun, but Agnes steps up. Together, the building rallies for a joyful Christmas Eve — showing that holiday spirit, new memories, and maybe even new love are made by those bold enough to keep traditions alive.",
+    "posterUrl": "/images/posters/1564001.jpg",
+    "backdropUrl": "/images/backdrops/1564001.jpg",
+    "cast": [
+      {
+        "actorId": "1676741",
+        "name": "Naika Toussaint",
+        "character": "Zoe",
+        "slug": "naika-toussaint",
+        "tmdbPersonId": 1676741,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/bggKxiJjUAOwbb5kYKfdWzbvvG5.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "1476624",
+        "name": "Jaime M. Callica",
+        "character": "Jace",
+        "slug": "jaime-m-callica",
+        "tmdbPersonId": 1476624,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/bMdYe1mrsvLp638lNqTqQELroNr.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "18284",
+        "name": "Loretta Devine",
+        "character": "Agnes",
+        "slug": "loretta-devine",
+        "tmdbPersonId": 18284,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/cGTQ0X19bkMWqL6O00JK2t6uJBK.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "1451346",
+        "name": "Eva Day",
+        "character": "Leah",
+        "slug": "eva-day",
+        "tmdbPersonId": 1451346,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/yWl1LfJFhp7WhI4xFWzPwAaWpDj.jpg",
+        "order": 3
+      }
+    ],
+    "tmdbId": 1564001,
+    "imdbId": "tt38712674",
+    "isComingSoon": false,
+    "status": "collection",
+    "originalTitle": "Deck the Hallways",
+    "runtimeMinutes": 88,
+    "genres": [
+      {
+        "id": 10749,
+        "name": "Romance"
+      },
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "US",
+        "releaseDate": "2025-12-06T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "Lifetime"
+      }
+    ],
+    "crew": [
+      {
+        "id": 1489049,
+        "name": "Gregory Ramon Anderson",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "692dc8314299c0dab8398d4a"
+      },
+      {
+        "id": 1489049,
+        "name": "Gregory Ramon Anderson",
+        "job": "Story",
+        "department": "Writing",
+        "creditId": "692dc83b1a523f840ae33afc"
+      },
+      {
+        "id": 1110710,
+        "name": "Meyer Shwarzstein",
+        "job": "Story",
+        "department": "Writing",
+        "creditId": "692dc8466e665fdfe73ea35d"
+      }
+    ],
+    "trailers": [
+      {
+        "key": "98FjtAn3m7o",
+        "site": "YouTube",
+        "type": "Trailer",
+        "name": "Deck The Hallways | Trailer | Lifetime | #shorts",
+        "official": true
+      }
+    ],
+    "trailerYoutubeKey": "98FjtAn3m7o",
+    "voteAverage": 2,
+    "voteCount": 2,
+    "tmdbUpdatedAt": "2026-10-01T14:12:18.592Z",
+    "tmdbFetchedAt": "2026-10-01T14:12:18.592Z"
+  },
+  {
+    "id": "lifetime-2024-the-perfect-christmas-date",
+    "slug": "the-perfect-christmas-date",
+    "title": "The Perfect Christmas Date",
+    "year": 2024,
+    "brandId": "lifetime",
+    "releaseDate": "2024-12-03",
+    "synopsis": "Marie accidentally swaps diaries with a stranger at speed dating. As Christmas approaches, the holiday magic helps her find the right diary, and the right man, to make her Christmas season truly unforgettable.",
+    "posterUrl": "/images/posters/1386749.jpg",
+    "backdropUrl": "/images/backdrops/1386749.jpg",
+    "cast": [
+      {
+        "actorId": "999449",
+        "name": "Emily Alatalo",
+        "character": "Marie",
+        "slug": "emily-alatalo",
+        "tmdbPersonId": 999449,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/kF3vPObPKPYKDzsqsjvq8baOrrG.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "2060364",
+        "name": "Andrew Bushell",
+        "character": "",
+        "slug": "andrew-bushell",
+        "tmdbPersonId": 2060364,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/x6gvG1kvBep1z8RBYCUWpDTVyly.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "2229319",
+        "name": "Julia Knope",
+        "character": "",
+        "slug": "julia-knope",
+        "tmdbPersonId": 2229319,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/tSHbD4EGz9bPF0aEVtOrehFz2e3.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "204964",
+        "name": "Paula Boudreau",
+        "character": "",
+        "slug": "paula-boudreau",
+        "tmdbPersonId": 204964,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/dG8J9RfmenQraa5JZC7d7Dizdpa.jpg",
+        "order": 3
+      },
+      {
+        "actorId": "4603707",
+        "name": "Noah Berc",
+        "character": "Noah Jones",
+        "slug": "noah-berc",
+        "tmdbPersonId": 4603707,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/j1QwYMjxTvpWv8kLlb8F3jI8hCf.jpg",
+        "order": 4
+      },
+      {
+        "actorId": "2676899",
+        "name": "Nico DeCastris",
+        "character": "",
+        "slug": "nico-decastris",
+        "tmdbPersonId": 2676899,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/p7D1xR79cl7mXTuqSCK7loL9T48.jpg",
+        "order": 5
+      },
+      {
+        "actorId": "2276925",
+        "name": "D.J. Demers",
+        "character": "",
+        "slug": "d-j-demers",
+        "tmdbPersonId": 2276925,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/vzRAHCtK9kO1HPioV0lecUapQjZ.jpg",
+        "order": 6
+      }
+    ],
+    "director": "Michael Kennedy",
+    "tmdbId": 1386749,
+    "imdbId": "tt34006829",
+    "isComingSoon": false,
+    "status": "collection",
+    "originalTitle": "The Perfect Christmas Date",
+    "genres": [
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "FR",
+        "releaseDate": "2024-12-03T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "TF1"
+      },
+      {
+        "country": "US",
+        "releaseDate": "2025-12-06T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "Lifetime"
+      }
+    ],
+    "crew": [
+      {
+        "id": 175916,
+        "name": "Michael Kennedy",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/hWHvh3jzGjCYb3ISzhuBD7HMeeC.jpg",
+        "creditId": "673373dcbefd49c0bb6582bc"
+      },
+      {
+        "id": 3730127,
+        "name": "Grace Knight",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "6aa4f91c41cde9672c35d98f"
+      }
+    ],
+    "trailers": [],
+    "voteAverage": 6.1,
+    "voteCount": 6,
+    "tmdbUpdatedAt": "2026-10-01T14:12:18.628Z",
+    "tmdbFetchedAt": "2026-10-01T14:12:18.628Z"
+  },
+  {
+    "id": "lifetime-2024-christmas-in-alaska",
+    "slug": "christmas-in-alaska",
+    "title": "Christmas in Alaska",
+    "year": 2024,
+    "brandId": "lifetime",
+    "releaseDate": "2024-12-19",
+    "synopsis": "Rival journalists competing for the same lucrative promotion get stuck together in snowy Alaska after their plane is forced to make an emergency landing. They find themselves caught up in a totally unexpected Christmas romance.",
+    "posterUrl": "/images/posters/1311858.jpg",
+    "backdropUrl": "/images/backdrops/1311858.jpg",
+    "cast": [
+      {
+        "actorId": "1381537",
+        "name": "Marcus Rosner",
+        "character": "Oliver",
+        "slug": "marcus-rosner",
+        "tmdbPersonId": 1381537,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/2DQHSgA6LgR7ZTJpIEApT3TXCQx.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "1683103",
+        "name": "Emma Johnson",
+        "character": "Megan",
+        "slug": "emma-johnson",
+        "tmdbPersonId": 1683103,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/9vAfqkbXGN4CPPyer1IMZ8rCXPw.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "100370",
+        "name": "Ryan Northcott",
+        "character": "Logan",
+        "slug": "ryan-northcott",
+        "tmdbPersonId": 100370,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/ieL66ybAR6VCEgMNYYkqAvYulzP.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "1202966",
+        "name": "Paul J. Ballin",
+        "character": "Rob",
+        "slug": "paul-j-ballin",
+        "tmdbPersonId": 1202966,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/nuQBxfDtEg9ImpuEuCInRBp49Rk.jpg",
+        "order": 3
+      },
+      {
+        "actorId": "2864762",
+        "name": "Stephanie Wolfe",
+        "character": "Kate",
+        "slug": "stephanie-wolfe",
+        "tmdbPersonId": 2864762,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/yaNFuufCnWaPfbZjn6fKVgbyzqU.jpg",
+        "order": 4
+      },
+      {
+        "actorId": "4479873",
+        "name": "Essek Moore",
+        "character": "Daniel",
+        "slug": "essek-moore",
+        "tmdbPersonId": 4479873,
+        "order": 5
+      },
+      {
+        "actorId": "4332558",
+        "name": "Charlize Adelyn",
+        "character": "Talia",
+        "slug": "charlize-adelyn",
+        "tmdbPersonId": 4332558,
+        "order": 6
+      },
+      {
+        "actorId": "2485357",
+        "name": "Ashlee Pearce",
+        "character": "Samantha",
+        "slug": "ashlee-pearce",
+        "tmdbPersonId": 2485357,
+        "order": 7
+      }
+    ],
+    "director": "Dylan Pearce",
+    "tmdbId": 1311858,
+    "imdbId": "tt31624817",
+    "isComingSoon": false,
+    "status": "collection",
+    "originalTitle": "Christmas in Alaska",
+    "genres": [
+      {
+        "id": 10749,
+        "name": "Romance"
+      },
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "FR",
+        "releaseDate": "2024-12-04T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "TF1"
+      },
+      {
+        "country": "UA",
+        "releaseDate": "2024-12-19T00:00:00.000Z",
+        "type": 3,
+        "certification": "12+",
+        "note": ""
+      }
+    ],
+    "crew": [
+      {
+        "id": 1148834,
+        "name": "Dylan Pearce",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/p6EmnV4i4fQ0Atr9nl60kz2Fh84.jpg",
+        "creditId": "6684564c809ae833d89b29f7"
+      },
+      {
+        "id": 5576221,
+        "name": "Lorraine Brown",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "687d32ec20e51d61b724465a"
+      }
+    ],
+    "trailers": [],
+    "voteAverage": 6.6,
+    "voteCount": 17,
+    "tmdbUpdatedAt": "2026-10-01T14:12:18.683Z",
+    "tmdbFetchedAt": "2026-10-01T14:12:18.683Z"
+  },
+  {
+    "id": "lifetime-2025-thank-god-christmas-at-keller-ranch",
+    "slug": "thank-god-christmas-at-keller-ranch",
+    "title": "Thank God: Christmas at Keller Ranch",
+    "year": 2025,
+    "brandId": "lifetime",
+    "releaseDate": "2025-12-13",
+    "synopsis": "After pro-hockey player Wes Campbell suffers an injury during a high-profile game just three weeks before Christmas, he is referred to Keller Ranch in Nashville to recover. There, he meets no-nonsense rancher Maggie Keller, a single mom to son Dawson, an equestrian-assisted therapist. Despite his initial skepticism, Wes is desperate to return to the ice and decides to give equine therapy a shot. As Maggie manages to break down Wes’ walls, he also helps her heal from the grief of her husband’s death. But as an unexpected romance blossoms between the two, will it go the distance or is it just a holiday fling?",
+    "posterUrl": "/images/posters/1567245.jpg",
+    "cast": [
+      {
+        "actorId": "419",
+        "name": "Tyler Hilton",
+        "character": "Wes Campbell",
+        "slug": "tyler-hilton",
+        "tmdbPersonId": 419,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/yfk5SWEmbdhmk1rC4vEujczAoB0.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "20373",
+        "name": "Arielle Kebbel",
+        "character": "Maggie Keller",
+        "slug": "arielle-kebbel",
+        "tmdbPersonId": 20373,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/c98cwlydVsihduXnq6VLW4fQFC.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "5086734",
+        "name": "Eshan Lyall",
+        "character": "Dawson",
+        "slug": "eshan-lyall",
+        "tmdbPersonId": 5086734,
+        "order": 2
+      },
+      {
+        "actorId": "44236",
+        "name": "Tim Progosh",
+        "character": "Greg Wilkes",
+        "slug": "tim-progosh",
+        "tmdbPersonId": 44236,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/1Uba9mAENVwxFqFd5D9aoL3s6ZB.jpg",
+        "order": 3
+      },
+      {
+        "actorId": "1027220",
+        "name": "Natalie Roy",
+        "character": "Laurie Myers",
+        "slug": "natalie-roy",
+        "tmdbPersonId": 1027220,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/iQZkciScwg5O0vJS6CTcZr48BFv.jpg",
+        "order": 4
+      },
+      {
+        "actorId": "1797078",
+        "name": "Rachel Sellan",
+        "character": "Sarah",
+        "slug": "rachel-sellan",
+        "tmdbPersonId": 1797078,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/1T4h8GPtXa2B3NWqzJ90whLZGvK.jpg",
+        "order": 5
+      },
+      {
+        "actorId": "1196525",
+        "name": "Pierre Simpson",
+        "character": "Pastor Joel",
+        "slug": "pierre-simpson",
+        "tmdbPersonId": 1196525,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/AgM6KPuIB4hFHuOGuXAHSEdspce.jpg",
+        "order": 6
+      },
+      {
+        "actorId": "3209971",
+        "name": "Ava Weiss",
+        "character": "Isabel",
+        "slug": "ava-weiss",
+        "tmdbPersonId": 3209971,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/s8SewTOMnqaTruQZ7aeTg7btMoZ.jpg",
+        "order": 7
+      },
+      {
+        "actorId": "5859134",
+        "name": "Jenny Fischer",
+        "character": "Physical Therapist",
+        "slug": "jenny-fischer",
+        "tmdbPersonId": 5859134,
+        "order": 8
+      }
+    ],
+    "director": "Stefan Brogren",
+    "tmdbId": 1567245,
+    "imdbId": "tt38709669",
+    "isComingSoon": false,
+    "status": "collection",
+    "originalTitle": "Thank God: Christmas at Keller Ranch",
+    "runtimeMinutes": 90,
+    "genres": [
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      },
+      {
+        "id": 18,
+        "name": "Drama"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "US",
+        "releaseDate": "2025-12-13T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": ""
+      }
+    ],
+    "crew": [
+      {
+        "id": 1040208,
+        "name": "Stefan Brogren",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/f2fQZarkLMgJ6QLkFu1H0Qv5d1.jpg",
+        "creditId": "68f99153a4df4f460fdd91ae"
+      },
+      {
+        "id": 1923856,
+        "name": "Carley Smale",
+        "job": "Writer",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/qUGhAccrmG5sHeDBu9TdpBbxcW.jpg",
+        "creditId": "68f9916556ba0ac6bff29b1d"
+      }
+    ],
+    "trailers": [],
+    "voteAverage": 3,
+    "voteCount": 3,
+    "tmdbUpdatedAt": "2026-10-01T14:12:19.532Z",
+    "tmdbFetchedAt": "2026-10-01T14:12:19.532Z"
+  },
+  {
+    "id": "lifetime-2024-christmas-love-and-fudge",
+    "slug": "christmas-love-and-fudge",
+    "title": "Christmas, Love and Fudge",
+    "year": 2024,
+    "brandId": "lifetime",
+    "releaseDate": "2024-11-12",
+    "synopsis": "Pastry chef Amanda and entrepreneur Simon team up to recreate a famous fudge recipe for the Big Holiday Pastry Show. As they race against time, holiday love begins to bloom between the unlikely pair.",
+    "posterUrl": "/images/posters/1386503.jpg",
+    "backdropUrl": "/images/backdrops/1386503.jpg",
+    "cast": [
+      {
+        "actorId": "59313",
+        "name": "Erin Karpluk",
+        "character": "Amanda",
+        "slug": "erin-karpluk",
+        "tmdbPersonId": 59313,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/jibU5x89Al5XgqMmQH2sTOtHErk.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "151975",
+        "name": "Christopher Russell",
+        "character": "Simon",
+        "slug": "christopher-russell",
+        "tmdbPersonId": 151975,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/hD2wchFBarE1tFYBGORwidEL7pT.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "1882561",
+        "name": "Ashley Alexander",
+        "character": "Diana",
+        "slug": "ashley-alexander",
+        "tmdbPersonId": 1882561,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/kyhgNa7ngKRx1FBgbsmildKK1aC.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "4398390",
+        "name": "Janet Anderson",
+        "character": "Jackie",
+        "slug": "janet-anderson",
+        "tmdbPersonId": 4398390,
+        "order": 3
+      },
+      {
+        "actorId": "183016",
+        "name": "Dalias Blake",
+        "character": "Kevin",
+        "slug": "dalias-blake",
+        "tmdbPersonId": 183016,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/AmULUpiOrl87fq4PQMYpg2tHhu2.jpg",
+        "order": 4
+      },
+      {
+        "actorId": "5054179",
+        "name": "Brian (B Mack) Mccune",
+        "character": "Jake",
+        "slug": "brian-b-mack-mccune",
+        "tmdbPersonId": 5054179,
+        "order": 5
+      },
+      {
+        "actorId": "1814185",
+        "name": "Toby Marks",
+        "character": "Tanya",
+        "slug": "toby-marks",
+        "tmdbPersonId": 1814185,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/oEYgXZ2uwoyasmkvzSQESXQ44fa.jpg",
+        "order": 6
+      },
+      {
+        "actorId": "4227801",
+        "name": "Edward Lafferty",
+        "character": "Barry",
+        "slug": "edward-lafferty",
+        "tmdbPersonId": 4227801,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/AtLGt1uj3zEx2kMel95F38eq4s6.jpg",
+        "order": 7
+      }
+    ],
+    "director": "Danny J. Boyle",
+    "tmdbId": 1386503,
+    "imdbId": "tt34006910",
+    "isComingSoon": false,
+    "status": "collection",
+    "originalTitle": "Christmas, Love and Fudge",
+    "runtimeMinutes": 89,
+    "genres": [
+      {
+        "id": 10749,
+        "name": "Romance"
+      },
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "AU",
+        "releaseDate": "2024-11-12T00:00:00.000Z",
+        "type": 4,
+        "certification": "G",
+        "note": ""
+      },
+      {
+        "country": "BE",
+        "releaseDate": "2025-10-17T00:00:00.000Z",
+        "type": 4,
+        "certification": "",
+        "note": "RTBF Auvio"
+      },
+      {
+        "country": "BE",
+        "releaseDate": "2025-11-17T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "Tipik"
+      }
+    ],
+    "crew": [
+      {
+        "id": 1631462,
+        "name": "Danny J. Boyle",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/o3A2Up1kt4zmECbJkheYHa33dGB.jpg",
+        "creditId": "6732df32855cbb4e48f67214"
+      },
+      {
+        "id": 2966354,
+        "name": "Courtney Cilman",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "6732df4fc60448d677da322d"
+      }
+    ],
+    "trailers": [],
+    "voteAverage": 6,
+    "voteCount": 8,
+    "tmdbUpdatedAt": "2026-10-01T14:12:19.560Z",
+    "tmdbFetchedAt": "2026-10-01T14:12:19.560Z"
   }
 ];
 
