@@ -222494,6 +222494,1313 @@ export const MOVIES: Movie[] = [
     "voteCount": 4,
     "tmdbUpdatedAt": "2026-10-01T13:02:21.057Z",
     "tmdbFetchedAt": "2026-10-01T13:02:21.057Z"
+  },
+  {
+    "id": "lifetime-2024-christmas-in-the-spotlight",
+    "slug": "christmas-in-the-spotlight",
+    "title": "Christmas in the Spotlight",
+    "year": 2024,
+    "brandId": "lifetime",
+    "releaseDate": "2024-11-23",
+    "synopsis": "A pop star named Bowyn hasn’t found Mr. Right, until she meets Drew, a professional football player, backstage at one of her shows. When Drew publicly declares he has a crush on Bowyn, they decide to give dating a shot. Their feelings grow stronger, but can it last in the limelight?",
+    "posterUrl": "/images/posters/1372028.jpg",
+    "backdropUrl": "/images/backdrops/1372028.jpg",
+    "cast": [
+      {
+        "actorId": "2425756",
+        "name": "Jessica Lord",
+        "character": "Bowyn Sykes",
+        "slug": "jessica-lord",
+        "tmdbPersonId": 2425756,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/yBaPsqjxMxZGnvsCoIASI1MdLFh.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "3183042",
+        "name": "Laith Wallschleger",
+        "character": "Drew 'Gonzo' Gonville",
+        "slug": "laith-wallschleger",
+        "tmdbPersonId": 3183042,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/5Fwo0wLkdKVNuH4Go2W3t18hnEw.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "1874087",
+        "name": "Jeannie Mai",
+        "character": "Mira Vu",
+        "slug": "jeannie-mai",
+        "tmdbPersonId": 1874087,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/8c4ywtzzUhrCUXfDCHXHnfngXt0.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "5003539",
+        "name": "Haley Kalil",
+        "character": "Nicole Gonville",
+        "slug": "haley-kalil",
+        "tmdbPersonId": 5003539,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/ArtQraKSijaHLBdRJk0KYLF3iik.jpg",
+        "order": 3
+      },
+      {
+        "actorId": "1646611",
+        "name": "Dennis Andres",
+        "character": "Rob 'Golden' Gonville",
+        "slug": "dennis-andres",
+        "tmdbPersonId": 1646611,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/482s0WO3Os7ibLok2AMML2nbHfx.jpg",
+        "order": 4
+      },
+      {
+        "actorId": "3882813",
+        "name": "Madeleine Cox",
+        "character": "Aileen Gonville",
+        "slug": "madeleine-cox",
+        "tmdbPersonId": 3882813,
+        "order": 5
+      },
+      {
+        "actorId": "2310124",
+        "name": "Carlisle J. Williams",
+        "character": "George Kim",
+        "slug": "carlisle-j-williams",
+        "tmdbPersonId": 2310124,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/4DrS0Ce9GybYw43zVcTlJVSO4Sa.jpg",
+        "order": 6
+      },
+      {
+        "actorId": "2446074",
+        "name": "David Pinard",
+        "character": "Hudson Peters",
+        "slug": "david-pinard",
+        "tmdbPersonId": 2446074,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/8vn6LZLFvxm1MhsLLMGzKMfvhgR.jpg",
+        "order": 7
+      },
+      {
+        "actorId": "1226195",
+        "name": "Rob Stewart",
+        "character": "Jay Gonville",
+        "slug": "rob-stewart",
+        "tmdbPersonId": 1226195,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/trovYCjXppTKZjvVznYKTaLf0Q.jpg",
+        "order": 8
+      },
+      {
+        "actorId": "2442879",
+        "name": "Stacey Bernstein",
+        "character": "Mil Gonville",
+        "slug": "stacey-bernstein",
+        "tmdbPersonId": 2442879,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/qP9JUxRoIU0wqetq28axWplY4XH.jpg",
+        "order": 9
+      },
+      {
+        "actorId": "85135",
+        "name": "Brian Sills",
+        "character": "Dr. Glenn",
+        "slug": "brian-sills",
+        "tmdbPersonId": 85135,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/DM5z532C5JgFMnE0gHDQzzxtK9.jpg",
+        "order": 10
+      },
+      {
+        "actorId": "4940155",
+        "name": "Deepak Mathews",
+        "character": "PR Person",
+        "slug": "deepak-mathews",
+        "tmdbPersonId": 4940155,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/nZMUD9cbyYetL0BB76WBFFIuK1W.jpg",
+        "order": 11
+      },
+      {
+        "actorId": "5217418",
+        "name": "Shohana Sharmin",
+        "character": "Waiter",
+        "slug": "shohana-sharmin",
+        "tmdbPersonId": 5217418,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/jotwGahUOTu1XmE5SIdZHn5Bnkd.jpg",
+        "order": 12
+      }
+    ],
+    "director": "Michelle Ouellet",
+    "tmdbId": 1372028,
+    "imdbId": "tt33338383",
+    "isComingSoon": false,
+    "status": "collection",
+    "originalTitle": "Christmas in the Spotlight",
+    "runtimeMinutes": 90,
+    "genres": [
+      {
+        "id": 10749,
+        "name": "Romance"
+      },
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "BR",
+        "releaseDate": "2025-10-15T00:00:00.000Z",
+        "type": 4,
+        "certification": "12",
+        "note": ""
+      },
+      {
+        "country": "FR",
+        "releaseDate": "2025-11-17T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "TF1"
+      },
+      {
+        "country": "US",
+        "releaseDate": "2024-11-23T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "Lifetime"
+      }
+    ],
+    "crew": [
+      {
+        "id": 1011745,
+        "name": "Michelle Ouellet",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/100QRhcPlIeiBeUrlOJR5CefsLd.jpg",
+        "creditId": "6751196399091e52713c49d1"
+      },
+      {
+        "id": 1889559,
+        "name": "Eirene Donohue",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "6764cbd30b2fbb9dea5de24e"
+      }
+    ],
+    "trailers": [
+      {
+        "key": "NeIchZj1xPo",
+        "site": "YouTube",
+        "type": "Trailer",
+        "name": "'Christmas in the Spotlight' Official Trailer",
+        "official": false
+      }
+    ],
+    "trailerYoutubeKey": "NeIchZj1xPo",
+    "voteAverage": 7.5,
+    "voteCount": 27,
+    "tmdbUpdatedAt": "2026-10-01T13:43:29.213Z",
+    "tmdbFetchedAt": "2026-10-01T13:43:29.213Z"
+  },
+  {
+    "id": "lifetime-2024-christmas-at-plumhill-manor",
+    "slug": "christmas-at-plumhill-manor",
+    "title": "Christmas at Plumhill Manor",
+    "year": 2024,
+    "brandId": "lifetime",
+    "releaseDate": "2024-11-16",
+    "synopsis": "Follows Margot Stone, a powerhouse modern architect from New York City with a life as organized as a blueprint. This all changes when she is informed in the lead-up to Christmas that a great-aunt has left her a centuries-old manor home in the quaint English town of Plumhill.",
+    "posterUrl": "/images/posters/1310052.jpg",
+    "backdropUrl": "/images/backdrops/1310052.jpg",
+    "cast": [
+      {
+        "actorId": "74353",
+        "name": "Maria Menounos",
+        "character": "Margot Stone",
+        "slug": "maria-menounos",
+        "tmdbPersonId": 74353,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/zAZbhpqK5qClczZRj0V9FwP80F1.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "1399817",
+        "name": "Kyle Pryor",
+        "character": "Alfie Bailey",
+        "slug": "kyle-pryor",
+        "tmdbPersonId": 1399817,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/58JQ8guwlDItA2u48NFPFvljdiw.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "3758663",
+        "name": "Caroline Colomei",
+        "character": "Jackie Bonohnan",
+        "slug": "caroline-colomei",
+        "tmdbPersonId": 3758663,
+        "order": 2
+      },
+      {
+        "actorId": "1190069",
+        "name": "Joseph Millson",
+        "character": "Nick",
+        "slug": "joseph-millson",
+        "tmdbPersonId": 1190069,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/pd5iENRPBpybR935qv8C2TVtGNL.jpg",
+        "order": 3
+      },
+      {
+        "actorId": "4799254",
+        "name": "Carol Royale",
+        "character": "",
+        "slug": "carol-royale",
+        "tmdbPersonId": 4799254,
+        "order": 4
+      },
+      {
+        "actorId": "1758334",
+        "name": "Dominic Andersen",
+        "character": "Daniel",
+        "slug": "dominic-andersen",
+        "tmdbPersonId": 1758334,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/hvENsx1FcWqSH4hSb9iYrkakT84.jpg",
+        "order": 5
+      },
+      {
+        "actorId": "4122856",
+        "name": "Jon Wennington",
+        "character": "Company Executive (uncredited)",
+        "slug": "jon-wennington",
+        "tmdbPersonId": 4122856,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/byRz4RqpS6bcedpTjUyN8kgl33R.jpg",
+        "order": 6
+      }
+    ],
+    "director": "Brian Herzlinger",
+    "tmdbId": 1310052,
+    "imdbId": "tt32501660",
+    "isComingSoon": false,
+    "status": "collection",
+    "originalTitle": "Christmas at Plumhill Manor",
+    "runtimeMinutes": 87,
+    "genres": [
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      },
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "US",
+        "releaseDate": "2024-11-16T00:00:00.000Z",
+        "type": 4,
+        "certification": "",
+        "note": "Lifetime"
+      }
+    ],
+    "crew": [
+      {
+        "id": 85563,
+        "name": "Brian Herzlinger",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/ii0sX3ATj3kDaDgqZ7mI4EdLbvg.jpg",
+        "creditId": "667ec13355e386b2b58d7491"
+      },
+      {
+        "id": 2426867,
+        "name": "Megan Henry Herzlinger",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "667ec1645dd249a52f45f860"
+      },
+      {
+        "id": 4799257,
+        "name": "Avery Henry-Bailey",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "667ec1709d407d35c757a7a4"
+      }
+    ],
+    "trailers": [
+      {
+        "key": "zC8N8qQiUQE",
+        "site": "YouTube",
+        "type": "Trailer",
+        "name": "Official Trailer",
+        "official": true
+      },
+      {
+        "key": "WdwtTDbWtC0",
+        "site": "YouTube",
+        "type": "Trailer",
+        "name": "Trailer",
+        "official": true
+      }
+    ],
+    "trailerYoutubeKey": "zC8N8qQiUQE",
+    "voteAverage": 6.7,
+    "voteCount": 10,
+    "tmdbUpdatedAt": "2026-10-01T13:43:29.218Z",
+    "tmdbFetchedAt": "2026-10-01T13:43:29.218Z"
+  },
+  {
+    "id": "lifetime-2023-sincerely-truly-christmas",
+    "slug": "sincerely-truly-christmas",
+    "title": "Sincerely Truly Christmas",
+    "year": 2023,
+    "brandId": "lifetime",
+    "releaseDate": "2023-12-03",
+    "synopsis": "When a magical Christmas wish goes wrong and inadvertently gives Christina the ability to hear what gifts everyone wants for the holidays, she quickly learns that convincing reclusive one-hit wonder, Dan Copren, to step back into the limelight could make a lot of people happy. But to get to Dan, Christina must first link up with her handsome realtor, Robert, and help him figure out his son Oliver’s ever-changing Christmas wish list.",
+    "posterUrl": "/images/posters/1047703.jpg",
+    "backdropUrl": "/images/backdrops/1047703.jpg",
+    "cast": [
+      {
+        "actorId": "168750",
+        "name": "Jake Epstein",
+        "character": "Robert Riley",
+        "slug": "jake-epstein",
+        "tmdbPersonId": 168750,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/4pDBysfItmkA3exxdaupQjkEkCv.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "112326",
+        "name": "Paula Brancati",
+        "character": "Christina Martino",
+        "slug": "paula-brancati",
+        "tmdbPersonId": 112326,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/s6xD3LXfjREBQ7yaDgQzx2tBzVB.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "173835",
+        "name": "Richard Waugh",
+        "character": "Steve Martino",
+        "slug": "richard-waugh",
+        "tmdbPersonId": 173835,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/5Fo6mlAjTRniszTkJuQcnMFk2aG.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "2224480",
+        "name": "Kathy Maloney",
+        "character": "Ellie",
+        "slug": "kathy-maloney",
+        "tmdbPersonId": 2224480,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/6uWMdcuejzbcUFCF7hrDk4lohcn.jpg",
+        "order": 3
+      },
+      {
+        "actorId": "124362",
+        "name": "Deborah Tennant",
+        "character": "Joni Martino",
+        "slug": "deborah-tennant",
+        "tmdbPersonId": 124362,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/qlJqrr2YQMU3K9XxEJIoAaZulme.jpg",
+        "order": 4
+      },
+      {
+        "actorId": "1239425",
+        "name": "Howard Hoover",
+        "character": "Dan Copren",
+        "slug": "howard-hoover",
+        "tmdbPersonId": 1239425,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/tBP8LE3YU0AK4ZaBRSh5jrWikPQ.jpg",
+        "order": 5
+      },
+      {
+        "actorId": "1220604",
+        "name": "Tom Hern",
+        "character": "Matt",
+        "slug": "tom-hern",
+        "tmdbPersonId": 1220604,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/v5nyfHqKgoGBn4bPcpSZ5oGmIHb.jpg",
+        "order": 6
+      },
+      {
+        "actorId": "1767963",
+        "name": "Sean Simms",
+        "character": "Jacko",
+        "slug": "sean-simms",
+        "tmdbPersonId": 1767963,
+        "order": 7
+      },
+      {
+        "actorId": "3591665",
+        "name": "Vania Giusto",
+        "character": "Jill Bauman",
+        "slug": "vania-giusto",
+        "tmdbPersonId": 3591665,
+        "order": 8
+      },
+      {
+        "actorId": "1332929",
+        "name": "Alex Hatz",
+        "character": "Sandy Beaches",
+        "slug": "alex-hatz",
+        "tmdbPersonId": 1332929,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/45PBsVQRhqPq2ZaQJFpTYZgaHfE.jpg",
+        "order": 9
+      },
+      {
+        "actorId": "2410077",
+        "name": "Bebsabe Duque",
+        "character": "Julia",
+        "slug": "bebsabe-duque",
+        "tmdbPersonId": 2410077,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/elVyaJRRyqkd3L4EhMh0gRybjb3.jpg",
+        "order": 10
+      },
+      {
+        "actorId": "4175194",
+        "name": "Jo Anne Tacorda",
+        "character": "Kayla",
+        "slug": "jo-anne-tacorda",
+        "tmdbPersonId": 4175194,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/ppp8mVenVdwuFeQCkS0kx1Ttm6C.jpg",
+        "order": 11
+      },
+      {
+        "actorId": "2825838",
+        "name": "Phoenix Ellis",
+        "character": "Oliver Riley",
+        "slug": "phoenix-ellis",
+        "tmdbPersonId": 2825838,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/eMRnTpMPYjrW8tWaS4jNcboXlRN.jpg",
+        "order": 12
+      },
+      {
+        "actorId": "2354143",
+        "name": "Oren Williamson",
+        "character": "Pete",
+        "slug": "oren-williamson",
+        "tmdbPersonId": 2354143,
+        "order": 13
+      }
+    ],
+    "director": "Sean Cisterna",
+    "tmdbId": 1047703,
+    "imdbId": "tt23391948",
+    "isComingSoon": false,
+    "status": "collection",
+    "originalTitle": "Sincerely Truly Christmas",
+    "runtimeMinutes": 90,
+    "genres": [
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      },
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "BE",
+        "releaseDate": "2023-12-19T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "AB3"
+      },
+      {
+        "country": "CA",
+        "releaseDate": "2023-12-03T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "Noovo"
+      },
+      {
+        "country": "US",
+        "releaseDate": "2023-12-03T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "Lifetime"
+      }
+    ],
+    "crew": [
+      {
+        "id": 3536421,
+        "name": "Matthew Thaler",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "63700178e894a6007aced964"
+      },
+      {
+        "id": 553375,
+        "name": "Sean Cisterna",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/xuTpWER5Q5COGS0dARVRHOZxIHS.jpg",
+        "creditId": "64bc0c9258efd300e2f167e8"
+      }
+    ],
+    "trailers": [
+      {
+        "key": "eXab_L2fSJc",
+        "site": "YouTube",
+        "type": "Trailer",
+        "name": "Trailer",
+        "official": false
+      }
+    ],
+    "trailerYoutubeKey": "eXab_L2fSJc",
+    "voteAverage": 5.4,
+    "voteCount": 5,
+    "tmdbUpdatedAt": "2026-10-01T13:43:29.256Z",
+    "tmdbFetchedAt": "2026-10-01T13:43:29.256Z"
+  },
+  {
+    "id": "lifetime-2024-make-or-bake-christmas",
+    "slug": "make-or-bake-christmas",
+    "title": "Make or Bake Christmas",
+    "year": 2024,
+    "brandId": "lifetime",
+    "releaseDate": "2024-12-01",
+    "synopsis": "Lifestyle mogul Leslie aims to acquire charming Sugar Bakers bakery before year's end. She dispatches employee Emma undercover as temp worker to persuade owners, but Emma finds herself enamored with its festive charm and baker David.",
+    "posterUrl": "/images/posters/1376005.jpg",
+    "backdropUrl": "/images/backdrops/1376005.jpg",
+    "cast": [
+      {
+        "actorId": "2535",
+        "name": "Vivica A. Fox",
+        "character": "Leslie Lake",
+        "slug": "vivica-a-fox",
+        "tmdbPersonId": 2535,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/oIzevp0dqjIxqRQ2VoSzjiDCBt.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "78740",
+        "name": "Jackée Harry",
+        "character": "Denise Sugarbaker",
+        "slug": "jack-e-harry",
+        "tmdbPersonId": 78740,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/h3DpIDfOrIdRx4EPKbuFc5LJzjC.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "2952253",
+        "name": "Jasmine Aivaliotis",
+        "character": "Emma",
+        "slug": "jasmine-aivaliotis",
+        "tmdbPersonId": 2952253,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/hrNx82TWSoEmSjZiynWR3O1c14u.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "3607372",
+        "name": "Landon Moss",
+        "character": "David Sugarbaker",
+        "slug": "landon-moss",
+        "tmdbPersonId": 3607372,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/xOiNttDoUjAEQTeodsrPxRhI98H.jpg",
+        "order": 3
+      },
+      {
+        "actorId": "1229191",
+        "name": "Caryn Richman",
+        "character": "Maggie",
+        "slug": "caryn-richman",
+        "tmdbPersonId": 1229191,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/hSfLt7nT4Lwr4jjtDiwHv3LstN4.jpg",
+        "order": 4
+      },
+      {
+        "actorId": "4991594",
+        "name": "Cayman Cardiff",
+        "character": "Clark",
+        "slug": "cayman-cardiff",
+        "tmdbPersonId": 4991594,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/oHnJE2KU2jAglHBWbWqhpIfjzBT.jpg",
+        "order": 5
+      },
+      {
+        "actorId": "1074639",
+        "name": "Gina Hirazumi",
+        "character": "Patti",
+        "slug": "gina-hirazumi",
+        "tmdbPersonId": 1074639,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/bTQUTShBYiR9yD3P424VpxYvKSY.jpg",
+        "order": 6
+      },
+      {
+        "actorId": "1085087",
+        "name": "Meredith Thomas",
+        "character": "Sally",
+        "slug": "meredith-thomas",
+        "tmdbPersonId": 1085087,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/8uplyhfZx1vT6Lzw79dDnO5rWQb.jpg",
+        "order": 7
+      },
+      {
+        "actorId": "4081478",
+        "name": "Jacquelin Lorraine Schofield",
+        "character": "Mrs. Donovan",
+        "slug": "jacquelin-lorraine-schofield",
+        "tmdbPersonId": 4081478,
+        "order": 8
+      },
+      {
+        "actorId": "21563",
+        "name": "Corin Nemec",
+        "character": "Butter Fingers",
+        "slug": "corin-nemec",
+        "tmdbPersonId": 21563,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/vndALqWdbdM4IMMU6CTmOCMjzEA.jpg",
+        "order": 9
+      },
+      {
+        "actorId": "210128",
+        "name": "Jon Briddell",
+        "character": "Adam",
+        "slug": "jon-briddell",
+        "tmdbPersonId": 210128,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/dKNwlzYbpu7HbCBwWo5HAMyAzEA.jpg",
+        "order": 10
+      },
+      {
+        "actorId": "5020518",
+        "name": "Scarlett Fronk",
+        "character": "Jackie",
+        "slug": "scarlett-fronk",
+        "tmdbPersonId": 5020518,
+        "order": 11
+      },
+      {
+        "actorId": "5890918",
+        "name": "Ryan Schenck",
+        "character": "Jhon",
+        "slug": "ryan-schenck",
+        "tmdbPersonId": 5890918,
+        "order": 12
+      },
+      {
+        "actorId": "5483950",
+        "name": "Zoe Lewis",
+        "character": "Betty",
+        "slug": "zoe-lewis",
+        "tmdbPersonId": 5483950,
+        "order": 13
+      }
+    ],
+    "director": "David DeCoteau",
+    "tmdbId": 1376005,
+    "imdbId": "tt33998843",
+    "isComingSoon": false,
+    "status": "collection",
+    "originalTitle": "Make or Bake Christmas",
+    "runtimeMinutes": 85,
+    "genres": [
+      {
+        "id": 10751,
+        "name": "Family"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      },
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "US",
+        "releaseDate": "2024-12-01T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": ""
+      }
+    ],
+    "crew": [
+      {
+        "id": 97618,
+        "name": "David DeCoteau",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/qFHX5E3M54ZXhLw4Bd7NcWGsUte.jpg",
+        "creditId": "67196d9db3d5cbb842f3c9ca"
+      },
+      {
+        "id": 1569972,
+        "name": "Dana Verde",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "67196db3b3d5cbb842f3c9d3"
+      },
+      {
+        "id": 92591,
+        "name": "Peter Sullivan",
+        "job": "Story",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/hXFy4ygelHJovKvMx37EJeHwvbm.jpg",
+        "creditId": "6918b03f0eafacc8369c5e55"
+      },
+      {
+        "id": 128979,
+        "name": "Jeffrey Schenck",
+        "job": "Story",
+        "department": "Writing",
+        "creditId": "6918b0580cbb5899053a4ff4"
+      },
+      {
+        "id": 551912,
+        "name": "Adam Rockoff",
+        "job": "Writer",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/s9Ab4pXryzG3CI1GnBM8HTdA3ye.jpg",
+        "creditId": "6918b06db1fff378e33a510a"
+      },
+      {
+        "id": 92591,
+        "name": "Peter Sullivan",
+        "job": "Writer",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/hXFy4ygelHJovKvMx37EJeHwvbm.jpg",
+        "creditId": "6918b07bb1fff378e33a510d"
+      }
+    ],
+    "trailers": [],
+    "voteAverage": 5.8,
+    "voteCount": 9,
+    "tmdbUpdatedAt": "2026-10-01T13:43:30.447Z",
+    "tmdbFetchedAt": "2026-10-01T13:43:30.447Z"
+  },
+  {
+    "id": "lifetime-2024-bebe-winans-we-three-kings",
+    "slug": "bebe-winans-we-three-kings",
+    "title": "BeBe Winans’ We Three Kings",
+    "year": 2024,
+    "brandId": "lifetime",
+    "releaseDate": "2024-10-30",
+    "synopsis": "Retired musician Lincoln, a record store owner and father to estranged sisters Lydia, Gracie, and Abigail, conspires with friend Genelle to reunite them for Christmas after their mother's passing.",
+    "posterUrl": "/images/posters/1376000.jpg",
+    "backdropUrl": "/images/backdrops/1376000.jpg",
+    "cast": [
+      {
+        "actorId": "1214156",
+        "name": "BeBe Winans",
+        "character": "Lincoln",
+        "slug": "bebe-winans",
+        "tmdbPersonId": 1214156,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/mEsOLxuKk1CYta6EfHRYDdA0Epv.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "207713",
+        "name": "Lisa Berry",
+        "character": "Lydia",
+        "slug": "lisa-berry",
+        "tmdbPersonId": 207713,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/tTvV9ZWKieJtWX8JK1kIzIUFWJR.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "3078816",
+        "name": "Faith Wright",
+        "character": "Gracie",
+        "slug": "faith-wright",
+        "tmdbPersonId": 3078816,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/7cqpgfKYesFX6DMZnUulpe7fpWr.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "569210",
+        "name": "Bethany Brown",
+        "character": "Abigail",
+        "slug": "bethany-brown",
+        "tmdbPersonId": 569210,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/cPXNU3xZQP1tYhOkBdHwJqyI0lU.jpg",
+        "order": 3
+      },
+      {
+        "actorId": "2160419",
+        "name": "Deborah Joy Winans",
+        "character": "Genelle",
+        "slug": "deborah-joy-winans",
+        "tmdbPersonId": 2160419,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/5NpwIfr5A8FL4U5oqhLaHLB3Pqy.jpg",
+        "order": 4
+      },
+      {
+        "actorId": "62122",
+        "name": "Romeo",
+        "character": "",
+        "slug": "romeo",
+        "tmdbPersonId": 62122,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/a58BpHR47g1MsZoUR2r15nv3H8C.jpg",
+        "order": 5
+      }
+    ],
+    "director": "Robert Adetuyi",
+    "tmdbId": 1376000,
+    "imdbId": "tt33998834",
+    "isComingSoon": false,
+    "status": "collection",
+    "originalTitle": "BeBe Winans’ We Three Kings",
+    "runtimeMinutes": 87,
+    "genres": [
+      {
+        "id": 10751,
+        "name": "Family"
+      },
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "US",
+        "releaseDate": "2024-10-30T00:00:00.000Z",
+        "type": 6,
+        "certification": "PG",
+        "note": ""
+      }
+    ],
+    "crew": [
+      {
+        "id": 31120,
+        "name": "Robert Adetuyi",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/1nkcLrW2qXTexB9ZYaRjetKqa6o.jpg",
+        "creditId": "67196a786e4210780f78ab73"
+      },
+      {
+        "id": 3267726,
+        "name": "W. Stewart",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "67196a986d6b705dc8712413"
+      }
+    ],
+    "trailers": [
+      {
+        "key": "3oXFbj5O6Hk",
+        "site": "YouTube",
+        "type": "Trailer",
+        "name": "Trailer",
+        "official": true
+      }
+    ],
+    "trailerYoutubeKey": "3oXFbj5O6Hk",
+    "voteAverage": 5,
+    "voteCount": 4,
+    "tmdbUpdatedAt": "2026-10-01T13:43:30.454Z",
+    "tmdbFetchedAt": "2026-10-01T13:43:30.454Z"
+  },
+  {
+    "id": "lifetime-2023-christmas-on-the-alpaca-farm",
+    "slug": "christmas-on-the-alpaca-farm",
+    "title": "Christmas on the Alpaca Farm",
+    "year": 2023,
+    "brandId": "lifetime",
+    "releaseDate": "2023-11-13",
+    "synopsis": "Jess, The Queen of Christmas Sweaters, quits her job at the hottest fashion label in NYC intent on winning a Christmas competition with her own line of sustainable luxury knits. Getting her hands dirty, she teams up with Andrew, a single dad and struggling alpaca farmer, as she helps bring Christmas joy to the farm and love into both of their hearts.",
+    "posterUrl": "/images/posters/1150019.jpg",
+    "backdropUrl": "/images/backdrops/1150019.jpg",
+    "cast": [
+      {
+        "actorId": "1620180",
+        "name": "Matt Wells",
+        "character": "Andrew Flannery",
+        "slug": "matt-wells",
+        "tmdbPersonId": 1620180,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/sInDKzuCot4PbZHEhyDBo0vVMJH.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "1418251",
+        "name": "Kirsten Comerford",
+        "character": "Jessica Hilliard",
+        "slug": "kirsten-comerford",
+        "tmdbPersonId": 1418251,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/eqCe5c1fPJbbX7da5s4BgLhpFDX.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "2897389",
+        "name": "Ai Barrett",
+        "character": "Georgia Flannery",
+        "slug": "ai-barrett",
+        "tmdbPersonId": 2897389,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/mleXqVLQ20CS1nbJh95KMLzcRjK.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "2574619",
+        "name": "Diana Diaz",
+        "character": "Dina",
+        "slug": "diana-diaz",
+        "tmdbPersonId": 2574619,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/cfE0AkSx6jjwioYoJXPPCEqrbJf.jpg",
+        "order": 3
+      },
+      {
+        "actorId": "1014293",
+        "name": "Samantha Espie",
+        "character": "Christine Flannery",
+        "slug": "samantha-espie",
+        "tmdbPersonId": 1014293,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/pY56TYcyaREBSb9TtyeauJ88O3x.jpg",
+        "order": 4
+      },
+      {
+        "actorId": "54819",
+        "name": "Rachael Crawford",
+        "character": "Gwen Curtis",
+        "slug": "rachael-crawford",
+        "tmdbPersonId": 54819,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/7YtWW02HKyxx1sGpVnRxVgZyEoE.jpg",
+        "order": 5
+      },
+      {
+        "actorId": "2146581",
+        "name": "Thom Zimerle",
+        "character": "Beverly Climengton",
+        "slug": "thom-zimerle",
+        "tmdbPersonId": 2146581,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/hmKu7JunTKXfItGHGTB1LPZjIp6.jpg",
+        "order": 6
+      },
+      {
+        "actorId": "3799208",
+        "name": "Golden Madison",
+        "character": "Celeste",
+        "slug": "golden-madison",
+        "tmdbPersonId": 3799208,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/tOhQay99vttlKz2S4cuNY54jgWg.jpg",
+        "order": 7
+      },
+      {
+        "actorId": "4479861",
+        "name": "Mandana Esmaili",
+        "character": "Hôtesse d’accueil",
+        "slug": "mandana-esmaili",
+        "tmdbPersonId": 4479861,
+        "order": 8
+      }
+    ],
+    "director": "Michael Kennedy",
+    "tmdbId": 1150019,
+    "imdbId": "tt28155419",
+    "isComingSoon": false,
+    "status": "collection",
+    "originalTitle": "Christmas on the Alpaca Farm",
+    "runtimeMinutes": 85,
+    "genres": [
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      },
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "BE",
+        "releaseDate": "2023-12-28T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "RTL TVi"
+      },
+      {
+        "country": "FR",
+        "releaseDate": "2025-12-07T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "RMC Life"
+      },
+      {
+        "country": "GB",
+        "releaseDate": "2023-11-13T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": ""
+      },
+      {
+        "country": "US",
+        "releaseDate": "2024-12-15T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "Lifetime"
+      }
+    ],
+    "crew": [
+      {
+        "id": 2271894,
+        "name": "Michael Musi",
+        "job": "Writer",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/sQKM4Zw85NvToPWhnLTMtj4L7BR.jpg",
+        "creditId": "64ab2a656a3448012ce56be2"
+      },
+      {
+        "id": 2428754,
+        "name": "Madison Walsh",
+        "job": "Writer",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/k3gcVNBB6XkvbD8BGbir4TGG2k5.jpg",
+        "creditId": "64ab2a696a344800ad763905"
+      },
+      {
+        "id": 2388289,
+        "name": "Michael Kennedy",
+        "job": "Director",
+        "department": "Directing",
+        "creditId": "64cc01e3e1faed00e411062b"
+      }
+    ],
+    "trailers": [
+      {
+        "key": "yNvTCwn1EKs",
+        "site": "YouTube",
+        "type": "Trailer",
+        "name": "Trailer",
+        "official": true
+      }
+    ],
+    "trailerYoutubeKey": "yNvTCwn1EKs",
+    "voteAverage": 5.5,
+    "voteCount": 19,
+    "tmdbUpdatedAt": "2026-10-01T13:43:30.573Z",
+    "tmdbFetchedAt": "2026-10-01T13:43:30.573Z"
+  },
+  {
+    "id": "lifetime-2024-you-better-watch-out",
+    "slug": "you-better-watch-out",
+    "title": "You Better Watch Out",
+    "year": 2024,
+    "brandId": "lifetime",
+    "releaseDate": "2024-12-05",
+    "synopsis": "Aubrey's plane is grounded due to a snowstorm leaving her stranded for the night at a small town airport. Aubrey stumbles into the middle of a kidnapping and throws herself into danger as she tries to save the young girl stranded with them",
+    "posterUrl": "/images/posters/1397735.jpg",
+    "backdropUrl": "/images/backdrops/1397735.jpg",
+    "cast": [
+      {
+        "actorId": "3934388",
+        "name": "Monaye Moyes",
+        "character": "Aubrey",
+        "slug": "monaye-moyes",
+        "tmdbPersonId": 3934388,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/3quDFEIsVH0RldD7EwIby9eNgo9.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "3348192",
+        "name": "Michael Silberblatt",
+        "character": "Finn",
+        "slug": "michael-silberblatt",
+        "tmdbPersonId": 3348192,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/nhwWjL49q3jIqEm9gq0ZCPslIYz.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "98533",
+        "name": "Lisa Long",
+        "character": "Vivian",
+        "slug": "lisa-long",
+        "tmdbPersonId": 98533,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/2NweJ366CnrtqiHBIH6OA4doElW.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "3845113",
+        "name": "Sophia McLean",
+        "character": "Chloe",
+        "slug": "sophia-mclean",
+        "tmdbPersonId": 3845113,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/7VXJIVeJHPS3RYukW7fFAia3NDy.jpg",
+        "order": 3
+      },
+      {
+        "actorId": "2704010",
+        "name": "Bryan Bachman",
+        "character": "Jon",
+        "slug": "bryan-bachman",
+        "tmdbPersonId": 2704010,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/lFyD72ZhHEarrTOlnyXh10ikP1Y.jpg",
+        "order": 4
+      },
+      {
+        "actorId": "5099827",
+        "name": "Jenna Zhu",
+        "character": "Leigh",
+        "slug": "jenna-zhu",
+        "tmdbPersonId": 5099827,
+        "order": 5
+      },
+      {
+        "actorId": "5099829",
+        "name": "Ian Michael Cox",
+        "character": "Armstrong",
+        "slug": "ian-michael-cox",
+        "tmdbPersonId": 5099829,
+        "order": 6
+      },
+      {
+        "actorId": "2166657",
+        "name": "Byron Herlong",
+        "character": "Jed",
+        "slug": "byron-herlong",
+        "tmdbPersonId": 2166657,
+        "order": 7
+      },
+      {
+        "actorId": "4986941",
+        "name": "Rionna Luck",
+        "character": "Claire",
+        "slug": "rionna-luck",
+        "tmdbPersonId": 4986941,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/rrB6YlHDz26qiHbXOEFowEVj35q.jpg",
+        "order": 8
+      },
+      {
+        "actorId": "5052367",
+        "name": "Cheyenne Puga",
+        "character": "Tracy",
+        "slug": "cheyenne-puga",
+        "tmdbPersonId": 5052367,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/zdkZlyzjI5x9Zqqji3tP2O8BcLb.jpg",
+        "order": 9
+      },
+      {
+        "actorId": "5099833",
+        "name": "Shin Woo Mun",
+        "character": "Graham",
+        "slug": "shin-woo-mun",
+        "tmdbPersonId": 5099833,
+        "order": 10
+      },
+      {
+        "actorId": "3591991",
+        "name": "Alyssa Scott",
+        "character": "Agent Maria",
+        "slug": "alyssa-scott",
+        "tmdbPersonId": 3591991,
+        "order": 11
+      },
+      {
+        "actorId": "3181059",
+        "name": "Noah Jay Wood",
+        "character": "Ben",
+        "slug": "noah-jay-wood",
+        "tmdbPersonId": 3181059,
+        "order": 12
+      },
+      {
+        "actorId": "2414168",
+        "name": "Margarita Reyes",
+        "character": "Detective Donna",
+        "slug": "margarita-reyes",
+        "tmdbPersonId": 2414168,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/ppLR0pEy2w6xUUjvaapIvUZ7QRd.jpg",
+        "order": 13
+      },
+      {
+        "actorId": "1540128",
+        "name": "Julia Farino",
+        "character": "Dawn",
+        "slug": "julia-farino",
+        "tmdbPersonId": 1540128,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/xRuQ3wX30RtGdWSzAtAFlKJIBq1.jpg",
+        "order": 14
+      },
+      {
+        "actorId": "553762",
+        "name": "Jill Adler",
+        "character": "Jilly Jean",
+        "slug": "jill-adler",
+        "tmdbPersonId": 553762,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/jcaiWuIFVFftcnIbl9yL2lVuPEB.jpg",
+        "order": 15
+      }
+    ],
+    "director": "Peter Sullivan",
+    "tmdbId": 1397735,
+    "imdbId": "tt34622080",
+    "isComingSoon": false,
+    "status": "collection",
+    "originalTitle": "You Better Watch Out",
+    "runtimeMinutes": 90,
+    "genres": [
+      {
+        "id": 53,
+        "name": "Thriller"
+      },
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "FR",
+        "releaseDate": "2026-01-09T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "TF1"
+      },
+      {
+        "country": "US",
+        "releaseDate": "2024-12-05T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": ""
+      }
+    ],
+    "crew": [
+      {
+        "id": 92591,
+        "name": "Peter Sullivan",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/hXFy4ygelHJovKvMx37EJeHwvbm.jpg",
+        "creditId": "67512bd470f7bc6d67fcc6ae"
+      },
+      {
+        "id": 551912,
+        "name": "Adam Rockoff",
+        "job": "Writer",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/s9Ab4pXryzG3CI1GnBM8HTdA3ye.jpg",
+        "creditId": "67512be999091e52713c4b92"
+      },
+      {
+        "id": 92591,
+        "name": "Peter Sullivan",
+        "job": "Story",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/hXFy4ygelHJovKvMx37EJeHwvbm.jpg",
+        "creditId": "675283613494cc9bfbc61f0b"
+      },
+      {
+        "id": 128979,
+        "name": "Jeffrey Schenck",
+        "job": "Story",
+        "department": "Writing",
+        "creditId": "675283673494cc9bfbc61f0e"
+      }
+    ],
+    "trailers": [],
+    "voteAverage": 6.8,
+    "voteCount": 3,
+    "tmdbUpdatedAt": "2026-10-01T13:43:31.337Z",
+    "tmdbFetchedAt": "2026-10-01T13:43:31.337Z"
   }
 ];
 
