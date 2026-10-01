@@ -6,9 +6,10 @@ import { execFile } from 'node:child_process';
 import { promisify } from 'node:util';
 import { addMovie, prepareManagedArtwork } from '../scripts/add-movie';
 import { localAssetPath } from '../scripts/import-xmasdb';
-import { convertImageToWebp, detectImageMagickExecutable } from '../src/server/image-processing';
+import { convertImageToWebp, detectImageMagickExecutable, requireImageMagickExecutable } from '../src/server/image-processing';
 
 const execFileAsync = promisify(execFile);
+const imageMagickExecutable = requireImageMagickExecutable();
 
 assert.equal(detectImageMagickExecutable((executable) => { if (executable !== 'magick') throw new Error('missing'); }), 'magick');
 assert.equal(detectImageMagickExecutable((executable) => { if (executable !== 'convert') throw new Error('missing'); }), 'convert');
@@ -54,9 +55,9 @@ assert.equal(localAssetPath('/images/people/456.jpg', 'people', 456), '/images/p
 
 const directory = await fs.mkdtemp(path.join(os.tmpdir(), 'xmasdb-webp-'));
 const source = path.join(directory, 'source.jpg');
-await execFileAsync('magick', ['-size', '2x2', 'xc:red', source]);
+await execFileAsync(imageMagickExecutable, ['-size', '2x2', 'xc:red', source]);
 await convertImageToWebp(source);
-const { stdout } = await execFileAsync('magick', ['identify', '-format', '%m', source]);
+const { stdout } = await execFileAsync(imageMagickExecutable, ['identify', '-format', '%m', source]);
 assert.equal(stdout.trim(), 'WEBP', 'people conversion must produce genuine WebP bytes');
 await fs.rm(directory, { recursive: true, force: true });
 
