@@ -14,6 +14,8 @@ import {
 } from '../src/server/tmdb-refresh-health';
 
 const dataDir = await fs.mkdtemp(path.join(os.tmpdir(), 'xmasdb-tmdb-health-'));
+const originalWorkingDirectory = process.cwd();
+process.chdir(dataDir);
 try {
   const partial = createRefreshRun('full', new Date('2026-09-25T03:17:00.000Z'));
   await startRefreshRun(partial, dataDir);
@@ -50,14 +52,11 @@ try {
     failures: [{ key: 'system:failed', kind: 'system', operation: 'refresh process', message: 'aborted', timestamp: new Date().toISOString() }],
     successKeys: [],
   }, new Date(), dataDir);
-  assert.equal((await readRefreshHistory(dataDir)).runs.length, 3, 'failed runs are persisted');
+  const historyWithFailure = await readRefreshHistory(dataDir);
+  assert.equal(historyWithFailure.runs.length, 3, 'failed runs are persisted');
   assert.ok((await fs.readFile(getTmdbRefreshHistoryPath(dataDir), 'utf8')).includes('FAILED'));
 
-  const committedHistoryPath = getCommittedTmdbRefreshHistoryPath();
-  const committedHistory = await fs.readFile(committedHistoryPath, 'utf8').catch(() => undefined);
-  if (committedHistory === undefined) {
-    assert.deepEqual((await readRefreshHistory(path.join(dataDir, 'missing-runtime-data'))).runs, [], 'missing runtime history does not invent completed runs');
-  }
+  assert.deepEqual((await readRefreshHistory(path.join(dataDir, 'missing-runtime-data'))).runs, [], 'missing runtime history does not invent completed runs');
   const fallbackPath = path.join(dataDir, 'committed-refresh-history.json');
   await fs.writeFile(fallbackPath, JSON.stringify({ runs: [createRefreshRun('full', new Date('2026-10-01T03:17:00.000Z'))] }));
   assert.equal((await readRefreshHistory(path.join(dataDir, 'another-missing-runtime-data'), fallbackPath)).runs.length, 1, 'Admin health can read the committed workflow history artifact');
@@ -70,6 +69,7 @@ try {
   assert.equal(calculateRefreshHealthStatus({ unresolvedFailures: 0, overdueRecords: 10, fullScheduleMissed: false, comingSoonScheduleMissed: false }).status, 'ATTENTION NEEDED', 'overdue data triggers attention');
   assert.equal(calculateRefreshHealthStatus({ unresolvedFailures: 0, overdueRecords: 0, fullScheduleMissed: false, comingSoonScheduleMissed: false }).reasons.length, 0, 'legacy backlog alone does not trigger attention');
 } finally {
+  process.chdir(originalWorkingDirectory);
   await fs.rm(dataDir, { recursive: true, force: true });
 }
 

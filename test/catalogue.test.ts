@@ -6,6 +6,7 @@ import { getRadarrAllFeedJson, getRadarrNetworkFeedJson, getSitemapXml, isMovieE
 import { buildCatalogueUrl, getCataloguePage, parseCatalogueQuery } from '../src/utils/catalogue-pagination';
 import { buildCatalogueListing, selectDiscoverMovies, selectThisMonthMovies, selectRelatedMovies } from '../src/server/catalogue-api';
 import { getMoviePoster } from '../src/utils/posters';
+import { getMoviePremiereDateKey } from '../src/utils/catalogue-lifecycle';
 
 console.log('Running catalogue pagination and local backdrop tests...');
 
@@ -72,7 +73,14 @@ assert.ok(!diverseMatches.movies.some((movie) => movie.title === 'Future'), 'fut
 const tomorrowMatches = selectThisMonthMovies(yearDiversityMovies, new Date('2026-11-26T12:00:00Z'))!;
 assert.notDeepEqual(diverseMatches.movies.map((movie) => movie.id), tomorrowMatches.movies.map((movie) => movie.id), 'daily rotation should naturally change the selection');
 const octoberThisMonth = selectThisMonthMovies(MOVIES, new Date('2026-10-31T12:00:00Z'));
-assert.equal(octoberThisMonth?.total, 58, 'October should use canonical premiere/release dates across prior years');
+const octoberCanonicalMovies = MOVIES.filter((movie) => {
+  const dateKey = getMoviePremiereDateKey(movie);
+  return movie.status === 'collection' && dateKey?.slice(5, 7) === '10' && dateKey <= '2026-10-31';
+});
+assert.equal(octoberThisMonth?.total, octoberCanonicalMovies.length, 'October should use canonical premiere/release dates across prior years');
+const bebeWinansMovie = MOVIES.find((movie) => movie.id === 'lifetime-2024-bebe-winans-we-three-kings');
+assert.equal(bebeWinansMovie?.releaseDate, '2024-10-30', 'BeBe Winans’ We Three Kings keeps its canonical October release date');
+assert.ok(octoberCanonicalMovies.some((movie) => movie.id === bebeWinansMovie?.id), 'canonical October results include BeBe Winans’ We Three Kings');
 assert.equal(octoberThisMonth?.movies.length, 6, 'This Month should show up to six genuine October matches');
 const catalogueOrder = getCataloguePage(MOVIES, parseCatalogueQuery('?perPage=96')).movies;
 const firstCollectionIndex = catalogueOrder.findIndex((movie) => movie.status !== 'coming-soon');
