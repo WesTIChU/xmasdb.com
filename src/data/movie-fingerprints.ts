@@ -3449,6 +3449,10 @@ export const PROTOTYPE_MOVIE_FINGERPRINTS: Readonly<Record<string, readonly Fing
   "lifetime-2022-well-suited-for-christmas": [
     "competition"
   ],
+  "lifetime-2023-christmas-at-carbell-family-farm": [
+    "christmas-tree-farm",
+    "countryside-farm"
+  ],
   "lifetime-2023-christmas-at-the-chalet": [
     "resort",
     "parent-child",
@@ -3459,6 +3463,11 @@ export const PROTOTYPE_MOVIE_FINGERPRINTS: Readonly<Record<string, readonly Fing
     "competition",
     "countryside-farm",
     "single-parent"
+  ],
+  "lifetime-2023-how-to-fall-in-love-by-christmas": [
+    "business-owner",
+    "save-the-business",
+    "writer-journalist"
   ],
   "lifetime-2023-ladies-of-the-80s-a-divas-christmas": [
     "celebrity",
@@ -3485,6 +3494,17 @@ export const PROTOTYPE_MOVIE_FINGERPRINTS: Readonly<Record<string, readonly Fing
     "entertainment-showbiz",
     "music"
   ],
+  "lifetime-2024-a-carpenter-christmas-romance": [
+    "countryside-farm",
+    "old-flame",
+    "reunion",
+    "writer-journalist"
+  ],
+  "lifetime-2024-a-very-merry-beauty-salon": [
+    "business-owner",
+    "christmas-ball",
+    "unexpected-romance"
+  ],
   "lifetime-2024-bebe-winans-we-three-kings": [
     "business-owner",
     "family-reconciliation",
@@ -3507,9 +3527,17 @@ export const PROTOTYPE_MOVIE_FINGERPRINTS: Readonly<Record<string, readonly Fing
     "football",
     "music"
   ],
+  "lifetime-2024-engaged-by-christmas": [
+    "secret-identity",
+    "writer-journalist"
+  ],
   "lifetime-2024-make-or-bake-christmas": [
     "bakery",
     "chef-baker"
+  ],
+  "lifetime-2024-the-holiday-junkie": [
+    "business-owner",
+    "family-business"
   ],
   "lifetime-2024-you-better-watch-out": [
     "rescue",
