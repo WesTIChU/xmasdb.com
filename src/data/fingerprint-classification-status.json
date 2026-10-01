@@ -1,161 +1,198 @@
 {
-  "generatedAt": "2026-10-01T13:34:01.694Z",
+  "generatedAt": "2026-10-01T13:44:23.154Z",
   "catalogue": {
-    "totalMovies": 785,
-    "moviesWithIngredients": 726,
-    "moviesWithoutIngredients": 59
+    "totalMovies": 792,
+    "moviesWithIngredients": 734,
+    "moviesWithoutIngredients": 58
   },
   "lastRun": {
-    "startedAt": "2026-10-01T13:33:47.483Z",
-    "finishedAt": "2026-10-01T13:34:01.694Z",
+    "startedAt": "2026-10-01T13:44:07.577Z",
+    "finishedAt": "2026-10-01T13:44:23.154Z",
     "status": "SUCCESS",
-    "processed": 59,
-    "classified": 0,
-    "noMatch": 44,
+    "processed": 66,
+    "classified": 8,
+    "noMatch": 43,
     "insufficientData": 15,
     "failed": 0,
-    "newAssignmentsApplied": 0,
+    "newAssignmentsApplied": 8,
     "skippedExistingAssignments": 0,
     "recentMovies": [
+      {
+        "movieId": "lifetime-2024-you-better-watch-out",
+        "title": "You Better Watch Out",
+        "status": "classified",
+        "fingerprints": [
+          "small-town",
+          "snowed-in-stranded",
+          "rescue"
+        ],
+        "processedAt": "2026-10-01T13:44:21.706Z"
+      },
+      {
+        "movieId": "lifetime-2023-christmas-on-the-alpaca-farm",
+        "title": "Christmas on the Alpaca Farm",
+        "status": "classified",
+        "fingerprints": [
+          "countryside-farm",
+          "single-parent",
+          "competition",
+          "christmas-competition"
+        ],
+        "processedAt": "2026-10-01T13:44:21.463Z"
+      },
+      {
+        "movieId": "lifetime-2024-bebe-winans-we-three-kings",
+        "title": "BeBe Winans’ We Three Kings",
+        "status": "classified",
+        "fingerprints": [
+          "business-owner",
+          "reunion",
+          "family-reunion",
+          "parent-child",
+          "siblings",
+          "family-reconciliation"
+        ],
+        "processedAt": "2026-10-01T13:44:21.227Z"
+      },
+      {
+        "movieId": "lifetime-2024-make-or-bake-christmas",
+        "title": "Make or Bake Christmas",
+        "status": "classified",
+        "fingerprints": [
+          "chef-baker",
+          "bakery"
+        ],
+        "processedAt": "2026-10-01T13:44:20.996Z"
+      },
+      {
+        "movieId": "lifetime-2023-sincerely-truly-christmas",
+        "title": "Sincerely Truly Christmas",
+        "status": "classified",
+        "fingerprints": [
+          "celebrity",
+          "christmas-wish",
+          "music",
+          "entertainment-showbiz",
+          "christmas-magic"
+        ],
+        "processedAt": "2026-10-01T13:44:20.764Z"
+      },
+      {
+        "movieId": "lifetime-2024-christmas-at-plumhill-manor",
+        "title": "Christmas at Plumhill Manor",
+        "status": "classified",
+        "fingerprints": [
+          "small-town",
+          "big-city",
+          "europe-abroad",
+          "castle-manor",
+          "inheritance"
+        ],
+        "processedAt": "2026-10-01T13:44:20.500Z"
+      },
+      {
+        "movieId": "lifetime-2024-christmas-in-the-spotlight",
+        "title": "Christmas in the Spotlight",
+        "status": "classified",
+        "fingerprints": [
+          "celebrity",
+          "athlete",
+          "football",
+          "music",
+          "entertainment-showbiz"
+        ],
+        "processedAt": "2026-10-01T13:44:20.259Z"
+      },
       {
         "movieId": "uptv-2021-a-christmas-letter",
         "title": "A Christmas Letter",
         "status": "no-match",
         "fingerprints": [],
-        "processedAt": "2026-10-01T13:34:00.054Z"
+        "processedAt": "2026-10-01T13:44:20.039Z"
       },
       {
         "movieId": "hallmark-2013-hats-off-to-christmas",
         "title": "Hats Off to Christmas!",
         "status": "no-match",
         "fingerprints": [],
-        "processedAt": "2026-10-01T13:33:59.843Z"
+        "processedAt": "2026-10-01T13:44:19.792Z"
       },
       {
         "movieId": "hallmark-2013-santa-switch",
         "title": "Santa Switch",
         "status": "insufficient-data",
         "fingerprints": [],
-        "processedAt": "2026-10-01T13:33:59.615Z"
+        "processedAt": "2026-10-01T13:44:19.543Z"
       },
       {
         "movieId": "hallmark-2012-christmas-song",
         "title": "Christmas Song",
         "status": "insufficient-data",
         "fingerprints": [],
-        "processedAt": "2026-10-01T13:33:59.614Z"
+        "processedAt": "2026-10-01T13:44:19.542Z"
       },
       {
         "movieId": "hallmark-2011-the-case-for-christmas",
         "title": "The Case for Christmas",
         "status": "insufficient-data",
         "fingerprints": [],
-        "processedAt": "2026-10-01T13:33:59.613Z"
+        "processedAt": "2026-10-01T13:44:19.541Z"
       },
       {
         "movieId": "hallmark-2010-gift-of-the-magi",
         "title": "Gift of the Magi",
         "status": "no-match",
         "fingerprints": [],
-        "processedAt": "2026-10-01T13:33:59.612Z"
+        "processedAt": "2026-10-01T13:44:19.539Z"
       },
       {
         "movieId": "hallmark-2009-the-national-tree",
         "title": "The National Tree",
         "status": "insufficient-data",
         "fingerprints": [],
-        "processedAt": "2026-10-01T13:33:59.382Z"
+        "processedAt": "2026-10-01T13:44:19.278Z"
       },
       {
         "movieId": "uptv-2017-12-days-of-giving",
         "title": "12 Days of Giving",
         "status": "insufficient-data",
         "fingerprints": [],
-        "processedAt": "2026-10-01T13:33:59.381Z"
+        "processedAt": "2026-10-01T13:44:19.277Z"
       },
       {
         "movieId": "uptv-2018-a-baby-for-christmas",
         "title": "A Baby for Christmas",
         "status": "insufficient-data",
         "fingerprints": [],
-        "processedAt": "2026-10-01T13:33:59.380Z"
+        "processedAt": "2026-10-01T13:44:19.276Z"
       },
       {
         "movieId": "uptv-2018-chandler-christmas-getaway",
         "title": "Chandler Christmas Getaway",
         "status": "no-match",
         "fingerprints": [],
-        "processedAt": "2026-10-01T13:33:59.378Z"
+        "processedAt": "2026-10-01T13:44:19.274Z"
       },
       {
         "movieId": "uptv-2015-a-dogwalker-s-christmas-tale",
         "title": "A Dogwalker's Christmas Tale",
         "status": "no-match",
         "fingerprints": [],
-        "processedAt": "2026-10-01T13:33:59.108Z"
+        "processedAt": "2026-10-01T13:44:19.062Z"
       },
       {
         "movieId": "uptv-2018-this-is-our-christmas",
         "title": "This Is Our Christmas",
         "status": "insufficient-data",
         "fingerprints": [],
-        "processedAt": "2026-10-01T13:33:58.878Z"
+        "processedAt": "2026-10-01T13:44:18.841Z"
       },
       {
         "movieId": "uptv-2022-christmas-in-wolf-creek",
         "title": "Christmas in Wolf Creek",
         "status": "no-match",
         "fingerprints": [],
-        "processedAt": "2026-10-01T13:33:58.876Z"
-      },
-      {
-        "movieId": "uptv-2022-santa-s-got-style",
-        "title": "Santa's Got Style",
-        "status": "no-match",
-        "fingerprints": [],
-        "processedAt": "2026-10-01T13:33:58.621Z"
-      },
-      {
-        "movieId": "uptv-2022-the-holiday-swap",
-        "title": "The Holiday Swap",
-        "status": "no-match",
-        "fingerprints": [],
-        "processedAt": "2026-10-01T13:33:58.380Z"
-      },
-      {
-        "movieId": "uptv-2022-christmas-lucky-charm",
-        "title": "Christmas Lucky Charm",
-        "status": "no-match",
-        "fingerprints": [],
-        "processedAt": "2026-10-01T13:33:58.159Z"
-      },
-      {
-        "movieId": "uptv-2021-christmas-in-the-wilds",
-        "title": "Christmas in the Wilds",
-        "status": "no-match",
-        "fingerprints": [],
-        "processedAt": "2026-10-01T13:33:57.931Z"
-      },
-      {
-        "movieId": "uptv-2022-the-christmas-retreat",
-        "title": "The Christmas Retreat",
-        "status": "no-match",
-        "fingerprints": [],
-        "processedAt": "2026-10-01T13:33:57.713Z"
-      },
-      {
-        "movieId": "hallmark-2026-christmas-in-canterbury",
-        "title": "Christmas in Canterbury",
-        "status": "insufficient-data",
-        "fingerprints": [],
-        "processedAt": "2026-10-01T13:33:57.306Z"
-      },
-      {
-        "movieId": "lifetime-2006-home-by-christmas",
-        "title": "Home by Christmas",
-        "status": "no-match",
-        "fingerprints": [],
-        "processedAt": "2026-10-01T13:33:57.305Z"
+        "processedAt": "2026-10-01T13:44:18.840Z"
       }
     ]
   }

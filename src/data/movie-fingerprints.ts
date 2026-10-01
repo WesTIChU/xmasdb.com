@@ -1966,6 +1966,9 @@ export const PROTOTYPE_MOVIE_FINGERPRINTS: Readonly<Record<string, readonly Fing
     "resort",
     "teacher"
   ],
+  "hallmark-2024-hanukkah-on-the-rocks": [
+    "big-city"
+  ],
   "hallmark-2024-holiday-crashers": [
     "mistaken-identity",
     "mountains",
@@ -3451,6 +3454,12 @@ export const PROTOTYPE_MOVIE_FINGERPRINTS: Readonly<Record<string, readonly Fing
     "parent-child",
     "entertainment-showbiz"
   ],
+  "lifetime-2023-christmas-on-the-alpaca-farm": [
+    "christmas-competition",
+    "competition",
+    "countryside-farm",
+    "single-parent"
+  ],
   "lifetime-2023-ladies-of-the-80s-a-divas-christmas": [
     "celebrity",
     "entertainment-showbiz",
@@ -3468,6 +3477,44 @@ export const PROTOTYPE_MOVIE_FINGERPRINTS: Readonly<Record<string, readonly Fing
     "matchmaking",
     "christmas-wish",
     "unexpected-romance"
+  ],
+  "lifetime-2023-sincerely-truly-christmas": [
+    "celebrity",
+    "christmas-magic",
+    "christmas-wish",
+    "entertainment-showbiz",
+    "music"
+  ],
+  "lifetime-2024-bebe-winans-we-three-kings": [
+    "business-owner",
+    "family-reconciliation",
+    "family-reunion",
+    "parent-child",
+    "reunion",
+    "siblings"
+  ],
+  "lifetime-2024-christmas-at-plumhill-manor": [
+    "big-city",
+    "castle-manor",
+    "europe-abroad",
+    "inheritance",
+    "small-town"
+  ],
+  "lifetime-2024-christmas-in-the-spotlight": [
+    "athlete",
+    "celebrity",
+    "entertainment-showbiz",
+    "football",
+    "music"
+  ],
+  "lifetime-2024-make-or-bake-christmas": [
+    "bakery",
+    "chef-baker"
+  ],
+  "lifetime-2024-you-better-watch-out": [
+    "rescue",
+    "small-town",
+    "snowed-in-stranded"
   ],
   "lifetime-2025-a-pickleball-christmas": [
     "athlete",
