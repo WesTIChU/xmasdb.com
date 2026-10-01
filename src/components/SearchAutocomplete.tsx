@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef, useMemo } from 'react';
-import { Search, X, Film, User } from 'lucide-react';
+import { Search, X, Film, User, Tag } from 'lucide-react';
 import type {
   SearchIndexPayload,
   SearchMovieEntry,
@@ -7,14 +7,15 @@ import type {
 } from '../api/types';
 import { SEARCH_INDEX_URL, fetchSearchIndex, peekResolved } from '../api/client';
 import { getBrandById } from '../data/brands';
-import { getMoviePath, getActorPath } from '../utils/urls';
+import { FINGERPRINTS, type FingerprintDefinition } from '../data/fingerprints';
+import { getMoviePath, getActorPath, getFingerprintPath } from '../utils/urls';
 import { getMoviePoster } from '../utils/posters';
 import { resolveImageUrl } from '../utils/image-url';
 import {
   compareScoredResults,
   scoreActorSearchResult,
   scoreMovieSearchEntry,
-  scoreListingMovieTitle,
+  scoreTextMatch,
 } from '../utils/search-relevance';
 
 interface SearchAutocompleteProps {
@@ -26,6 +27,7 @@ interface SearchAutocompleteProps {
 type AutocompleteItem =
   | { type: 'movie'; movie: SearchMovieEntry }
   | { type: 'actor'; actor: SearchPersonEntry; movieCount: number }
+  | { type: 'ingredient'; ingredient: FingerprintDefinition }
   | { type: 'view-all'; total: number };
 
 // Helper to subtly highlight matched query substring
@@ -126,12 +128,14 @@ export const SearchAutocomplete: React.FC<SearchAutocompleteProps> = ({
   onNavigate,
 }) => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isFocused, setIsFocused] = useState(false);
   const [selectedIndex, setSelectedIndex] = useState(-1);
   const [searchIndex, setSearchIndex] = useState<SearchIndexPayload | null>(
     () => peekResolved<SearchIndexPayload>(SEARCH_INDEX_URL) ?? null
   );
   const containerRef = useRef<HTMLDivElement | null>(null);
   const inputRef = useRef<HTMLInputElement | null>(null);
+  const isExpanded = isFocused || isOpen;
 
   // Filter movies and actors locally with instant response
   const query = searchQuery.trim().toLowerCase();
@@ -152,9 +156,13 @@ export const SearchAutocomplete: React.FC<SearchAutocompleteProps> = ({
     };
   }, [shouldSearch, searchIndex]);
 
-  const { matchingMovies, matchingActors } = useMemo(() => {
+  const { matchingMovies, matchingActors, matchingIngredients } = useMemo(() => {
     if (!shouldSearch || !searchIndex) {
-      return { matchingMovies: [] as SearchMovieEntry[], matchingActors: [] as SearchPersonEntry[] };
+      return {
+        matchingMovies: [] as SearchMovieEntry[],
+        matchingActors: [] as SearchPersonEntry[],
+        matchingIngredients: [] as FingerprintDefinition[],
+      };
     }
 
     const movies = searchIndex.movies
@@ -169,52 +177,43 @@ export const SearchAutocomplete: React.FC<SearchAutocompleteProps> = ({
       .sort((a, b) => compareScoredResults(a, b) || b.item.movieCount - a.item.movieCount)
       .map(({ item }) => item);
 
+    const ingredients = FINGERPRINTS
+      .map((ingredient) => ({ item: ingredient, score: scoreTextMatch(ingredient.label, query) }))
+      .filter((result) => result.score > 0)
+      .sort(compareScoredResults)
+      .map(({ item }) => item);
+
     return {
       matchingMovies: movies,
       matchingActors: actors,
+      matchingIngredients: ingredients,
     };
   }, [query, shouldSearch, searchIndex]);
 
-  const displayedMovies = useMemo(() => matchingMovies.slice(0, 5), [matchingMovies]);
-  const displayedActors = useMemo(() => matchingActors.slice(0, 5), [matchingActors]);
+  const displayedMovies = useMemo(() => matchingMovies.slice(0, 4), [matchingMovies]);
+  const displayedActors = useMemo(() => matchingActors.slice(0, 4), [matchingActors]);
+  const displayedIngredients = useMemo(() => matchingIngredients.slice(0, 4), [matchingIngredients]);
 
-  const hasAdditionalResults =
-    matchingMovies.length > displayedMovies.length ||
-    matchingActors.length > displayedActors.length;
-
-  const totalResultsCount = matchingMovies.length + matchingActors.length;
-
-  const actorsFirst = displayedActors.length > 0
-    && (displayedMovies.length === 0
-      || scoreActorSearchResult(displayedActors[0], query) > scoreListingMovieTitle(displayedMovies[0], query));
+  const totalResultsCount = matchingMovies.length + matchingActors.length + matchingIngredients.length;
 
   // Flatten selectable items for clean keyboard navigation
   const selectableItems = useMemo<AutocompleteItem[]>(() => {
     if (!shouldSearch) return [];
     const items: AutocompleteItem[] = [];
 
-    const addMovies = () => displayedMovies.forEach((movie) => items.push({ type: 'movie', movie }));
-    const addActors = () => displayedActors.forEach((actor) => items.push({ type: 'actor', actor, movieCount: actor.movieCount }));
-    if (actorsFirst) {
-      addActors();
-      addMovies();
-    } else {
-      addMovies();
-      addActors();
-    }
+    displayedMovies.forEach((movie) => items.push({ type: 'movie', movie }));
+    displayedActors.forEach((actor) => items.push({ type: 'actor', actor, movieCount: actor.movieCount }));
+    displayedIngredients.forEach((ingredient) => items.push({ type: 'ingredient', ingredient }));
 
-    if (hasAdditionalResults) {
-      items.push({ type: 'view-all', total: totalResultsCount });
-    }
+    items.push({ type: 'view-all', total: totalResultsCount });
 
     return items;
   }, [
     shouldSearch,
     displayedMovies,
     displayedActors,
-    hasAdditionalResults,
+    displayedIngredients,
     totalResultsCount,
-    actorsFirst,
   ]);
 
   // Reset selectedIndex whenever suggestions change
@@ -254,9 +253,15 @@ export const SearchAutocomplete: React.FC<SearchAutocompleteProps> = ({
       const path = getActorPath(item.actor.tmdbPersonId, item.actor.slug);
       setIsOpen(false);
       onNavigate(path);
+    } else if (item.type === 'ingredient') {
+      setIsOpen(false);
+      onNavigate(getFingerprintPath(item.ingredient.id));
     } else if (item.type === 'view-all') {
       setIsOpen(false);
-      // App.tsx renders the in-page search results when searchQuery is non-empty
+      // App.tsx renders the full in-page search results when searchQuery is non-empty.
+      window.requestAnimationFrame(() => {
+        document.getElementById('search-results-section')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
     }
   };
 
@@ -380,8 +385,54 @@ export const SearchAutocomplete: React.FC<SearchAutocompleteProps> = ({
     </div>
   ) : null;
 
+  const renderIngredientSection = (itemOffset: number) => displayedIngredients.length > 0 ? (
+    <div id="autocomplete-ingredients-section">
+      <div className="px-3.5 pt-2 pb-1 text-[11px] font-sans-clean font-semibold uppercase tracking-wider text-[#736B63] bg-[#FAF7F2]/80 border-b border-[#EFE8DD]">
+        Christmas Ingredients
+      </div>
+      <div>
+        {displayedIngredients.map((ingredient, idx) => {
+          const itemIndex = itemOffset + idx;
+          const isSelected = selectedIndex === itemIndex;
+          const path = getFingerprintPath(ingredient.id);
+
+          return (
+            <a
+              key={`ingredient-${ingredient.id}`}
+              href={path}
+              role="option"
+              aria-selected={isSelected}
+              id={`autocomplete-ingredient-${ingredient.id}`}
+              onClick={(e) => {
+                e.preventDefault();
+                handleSelectItem({ type: 'ingredient', ingredient });
+              }}
+              onMouseEnter={() => setSelectedIndex(itemIndex)}
+              className={`flex items-center gap-3 px-3.5 py-2 transition-colors cursor-pointer text-inherit no-underline ${
+                isSelected ? 'bg-[#F2ECE3]' : 'hover:bg-[#F8F4EE]'
+              }`}
+            >
+              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded bg-[#EAE2D7] border border-[#DDD3C6] text-[#B08A2E]">
+                <Tag className="h-4 w-4" aria-hidden="true" />
+              </div>
+              <div className="min-w-0 flex-1">
+                <div className="font-heading text-sm font-semibold text-[#1A3D2F] line-clamp-1 leading-snug">
+                  {highlightMatch(ingredient.label, searchQuery)}
+                </div>
+                <div className="text-xs text-[#736B63] font-body mt-0.5">{ingredient.category}</div>
+              </div>
+            </a>
+          );
+        })}
+      </div>
+    </div>
+  ) : null;
+
   return (
-    <div ref={containerRef} className="max-w-md mx-auto relative w-full">
+    <div
+      ref={containerRef}
+      className={`relative mx-auto w-full max-w-md sm:transition-[max-width] sm:duration-200 sm:ease-out ${isExpanded ? 'sm:max-w-[800px]' : ''}`}
+    >
       {/* Search Input Field */}
       <div className="relative flex items-center">
         <Search
@@ -395,12 +446,14 @@ export const SearchAutocomplete: React.FC<SearchAutocompleteProps> = ({
           value={searchQuery}
           onChange={(e) => onSearchChange(e.target.value)}
           onFocus={() => {
+            setIsFocused(true);
             if (searchQuery.trim().length >= 2) {
               setIsOpen(true);
             }
           }}
+          onBlur={() => setIsFocused(false)}
           onKeyDown={handleKeyDown}
-          placeholder="Search movies or actors..."
+          placeholder="Search movies, people, or ingredients..."
           autoComplete="off"
           role="combobox"
           aria-expanded={isOpen}
@@ -439,15 +492,17 @@ export const SearchAutocomplete: React.FC<SearchAutocompleteProps> = ({
             </div>
           ) : selectableItems.length === 0 ? (
             <div className="p-4 text-center text-xs sm:text-sm text-[#736B63] font-body">
-              No Christmas movies or actors found matching &ldquo;{searchQuery}&rdquo;.
+              No movies, people, or Christmas Ingredients found matching &ldquo;{searchQuery}&rdquo;.
             </div>
           ) : (
-            <div className="py-1 divide-y divide-[#EFE8DD]">
-              {actorsFirst ? <>{renderActorSection(0)}{renderMovieSection(displayedActors.length)}</> : <>{renderMovieSection(0)}{renderActorSection(displayedMovies.length)}</>}
+            <div className="grid divide-y divide-[#EFE8DD] py-1 sm:grid-cols-3 sm:divide-x sm:divide-y-0">
+              {renderMovieSection(0)}
+              {renderActorSection(displayedMovies.length)}
+              {renderIngredientSection(displayedMovies.length + displayedActors.length)}
 
-              {/* VIEW ALL RESULTS OPTION (if additional results exist) */}
-              {hasAdditionalResults && (
-                <div className="p-1.5 bg-[#FAF7F2]/50 text-center">
+              {/* Keep the full search page one click away without expanding this compact list. */}
+              {selectableItems.length > 0 && (
+                <div className="p-1.5 bg-[#FAF7F2]/50 text-center sm:col-span-3">
                   <button
                     type="button"
                     id="autocomplete-view-all-btn"
@@ -459,7 +514,7 @@ export const SearchAutocomplete: React.FC<SearchAutocompleteProps> = ({
                       selectedIndex === selectableItems.length - 1 ? 'bg-[#F2ECE3]' : ''
                     }`}
                   >
-                    <span>View all {totalResultsCount} results</span>
+                    <span>View all results for “{searchQuery}”</span>
                     <span aria-hidden="true">&rarr;</span>
                   </button>
                 </div>
