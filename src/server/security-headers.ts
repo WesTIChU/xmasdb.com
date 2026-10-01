@@ -13,11 +13,11 @@ export function getSecurityHeaders(isProduction: boolean): Record<string, string
       "base-uri 'self'",
       "form-action 'self'",
       "object-src 'none'",
-      "script-src 'self' 'unsafe-inline' https://stats.xmasdb.com",
+      "script-src 'self' 'unsafe-inline' https://stats.xmasdb.com https://static.cloudflareinsights.com",
       "style-src 'self' 'unsafe-inline'",
       "font-src 'self'",
       "img-src 'self' data: blob: https://image.tmdb.org https://www.themoviedb.org https://images.xmasdb.com",
-      "connect-src 'self' https://stats.xmasdb.com",
+      "connect-src 'self' https://stats.xmasdb.com https://cloudflareinsights.com",
       "frame-src https://www.youtube-nocookie.com",
       "frame-ancestors 'self'",
     ].join('; ');
