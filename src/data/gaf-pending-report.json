@@ -191,21 +191,6 @@
       "confidence": "unresolved",
       "reason": "no confident TMDB match",
       "candidates": []
-    },
-    {
-      "gafTitle": "Christmas Sweethearts",
-      "gafYear": 2022,
-      "sourceUrl": "https://www.greatamericanfamily.com/movie/my-best-friends-christmas/",
-      "confidence": "unresolved",
-      "reason": "TMDB candidates did not establish an exact title/year match",
-      "candidates": [
-        {
-          "id": 649520,
-          "title": "My Best Friend's Christmas",
-          "releaseDate": "2019-12-01",
-          "query": "My Best Friend's Christmas"
-        }
-      ]
     }
   ],
   "results": [
@@ -706,21 +691,6 @@
           "title": "Christmas Lovers Anonymous",
           "releaseDate": "2021-10-30",
           "query": "Christmas Lovers Anonymous"
-        }
-      ]
-    },
-    {
-      "gafTitle": "Christmas Sweethearts",
-      "gafYear": 2022,
-      "sourceUrl": "https://www.greatamericanfamily.com/movie/my-best-friends-christmas/",
-      "confidence": "unresolved",
-      "reason": "TMDB candidates did not establish an exact title/year match",
-      "candidates": [
-        {
-          "id": 649520,
-          "title": "My Best Friend's Christmas",
-          "releaseDate": "2019-12-01",
-          "query": "My Best Friend's Christmas"
         }
       ]
     },

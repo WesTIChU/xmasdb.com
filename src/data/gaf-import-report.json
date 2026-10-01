@@ -85,13 +85,7 @@
     {
       "title": "Christmas Sweethearts",
       "year": 2022,
-      "candidates": [
-        {
-          "id": 649520,
-          "title": "My Best Friend's Christmas",
-          "releaseDate": "2019-12-01"
-        }
-      ]
+      "candidates": []
     }
   ],
   "collisions": [],
@@ -201,13 +195,7 @@
     {
       "title": "Christmas Sweethearts",
       "year": 2022,
-      "candidates": [
-        {
-          "id": 649520,
-          "title": "My Best Friend's Christmas",
-          "releaseDate": "2019-12-01"
-        }
-      ],
+      "candidates": [],
       "reason": "No confident TMDB title/year match"
     }
   ],
