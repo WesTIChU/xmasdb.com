@@ -2487,6 +2487,18 @@
     "tmdbUpdatedAt": "2026-09-22T20:53:27.312Z"
   },
   {
+    "id": "1057955",
+    "slug": "alex-zubarev",
+    "name": "Alex Zubarev",
+    "tmdbPersonId": 1057955,
+    "imdbPersonId": "nm3322353",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 3,
+    "tmdbUpdatedAt": "2026-10-01T09:21:09.348Z",
+    "tmdbFetchedAt": "2026-10-01T09:21:09.348Z"
+  },
+  {
     "id": "3234446",
     "slug": "alexa-garster",
     "name": "Alexa Garster",
@@ -10535,6 +10547,23 @@
     "tmdbUpdatedAt": "2026-09-20T16:18:13.053Z"
   },
   {
+    "id": "72099",
+    "slug": "ben-cotton",
+    "name": "Ben Cotton",
+    "tmdbPersonId": 72099,
+    "photoUrl": "/images/people/72099.webp",
+    "profileUrl": "/images/people/72099.webp",
+    "birthday": "1975-07-26",
+    "placeOfBirth": "Edmonton, Alberta, Canada",
+    "biography": "Ben Cotton (born July 26, 1975) is a Canadian film and television actor. His most notable roles are on the TV series Stargate Atlantis playing scientist Dr. Kavanagh, his portrayal of \"Leon Bell\" in the game Dead Rising 2, Shane Pierce, the local townie, on CBS's Harper's Island and Lt. Coker Fasjovik in Battlestar Galactica: Blood and Chrome.",
+    "imdbPersonId": "nm0970805",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 135,
+    "tmdbUpdatedAt": "2026-10-01T09:21:09.109Z",
+    "tmdbFetchedAt": "2026-10-01T09:21:09.109Z"
+  },
+  {
     "id": "ben-estus",
     "slug": "ben-estus",
     "name": "Ben Estus",
@@ -11687,6 +11716,29 @@
     "knownForDepartment": "Acting",
     "knownCredits": 16,
     "tmdbUpdatedAt": "2026-09-20T16:19:08.805Z"
+  },
+  {
+    "id": "78887",
+    "slug": "billy-ray-cyrus",
+    "name": "Billy Ray Cyrus",
+    "tmdbPersonId": 78887,
+    "photoUrl": "/images/people/78887.webp",
+    "profileUrl": "/images/people/78887.webp",
+    "birthday": "1961-08-25",
+    "placeOfBirth": "Flatwoods, Kentucky, USA",
+    "biography": "William \"Billy\" Ray Cyrus (born August 25, 1961) is a European-American businessman, entrepreneur, country music singer, songwriter and actor, who helped make country music a worldwide phenomenon. He has released eleven studio albums since 1992, released 38 singles, best known for his Number One single \"Achy Breaky Heart\", that became the first single ever to achieve triple Platinum status in Australia and the 1992's best selling single in the same country. Thanks to the video of this hit, there was the explosion of the linedance into the mainstream, becoming a worldwide craze. Cyrus, a multi-platinum selling recording artist, has scored a total of eight top-ten singles on the Billboard Country Songs chart. His most successful album to date is the debut of Some Gave All, which has been certified 9× Multi-Platinum in the United States and is the longest time spent by a debut artist at Number One on the Billboard 200 (17 consecutive weeks) and most consecutive chart-topping weeks in the SoundScan era. It's the only album (from any genre) in the SoundScan era to log 17 consecutive weeks at Number One and is also the top-ranking debut album by a male country artist. It ranked 43 weeks in the top 10, a total topped by only one country album in history, Ropin' The Wind by Garth Brooks. Some Gave All was also the first debut album to enter at the number 1 in the Billboard Country Albums. The album has also sold more than 20 million copies worldwide and is the Best selling debut album of all time for a solo male artist. Some Gave All was also the best selling album of the 1992 in the US with 4,832,000 copies. In his career, he has released 29 charted singles, of which 15 charted in the Top 40. From 2001 to 2004, Cyrus starred in the television show Doc. The show was about a country doctor who moved from Montana to New York City. In late 2005, he began to co-star in the Disney Channel series Hannah Montana with his daughter Miley Cyrus. The series finale aired on January 16, 2011. In 2010, it was announced that he and his son Trace Cyrus would take part in a new Syfy reality series called UFO: Unbelievably Freakin' Obvious.\n\nDescription above from the Wikipedia article Billy Ray Cyrus, licensed under CC-BY-SA, full list of contributors on Wikipedia.",
+    "imdbPersonId": "nm0004854",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 65,
+    "alsoKnownAs": [
+      "William Ray Cyrus"
+    ],
+    "instagramId": "BillyRayCyrus",
+    "twitterId": "BillyRayCyrus",
+    "facebookId": "BillyRayCyrus",
+    "tmdbUpdatedAt": "2026-10-01T09:21:08.383Z",
+    "tmdbFetchedAt": "2026-10-01T09:21:08.383Z"
   },
   {
     "id": "4179327",
@@ -13075,6 +13127,25 @@
     "knownCredits": 6,
     "instagramId": "brendanmcrae",
     "tmdbUpdatedAt": "2026-09-20T16:19:44.867Z"
+  },
+  {
+    "id": "558927",
+    "slug": "brendan-meyer",
+    "name": "Brendan Meyer",
+    "tmdbPersonId": 558927,
+    "photoUrl": "/images/people/558927.webp",
+    "profileUrl": "/images/people/558927.webp",
+    "birthday": "1994-10-02",
+    "placeOfBirth": "Kitchener-Waterloo, Ontario, Canada",
+    "biography": "Brendan Meyer is an accomplished actor in both theatre and film/TV. He has filmed throughout North America: in LA, New Mexico, Toronto and Vancouver, as well as his home town of Edmonton.",
+    "imdbPersonId": "nm2063811",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 52,
+    "instagramId": "brendankjmeyer",
+    "twitterId": "BrendanKJMeyer",
+    "tmdbUpdatedAt": "2026-10-01T09:21:09.212Z",
+    "tmdbFetchedAt": "2026-10-01T09:21:09.212Z"
   },
   {
     "id": "brendan-morgan",
@@ -26493,6 +26564,33 @@
     "tmdbUpdatedAt": "2026-09-20T16:16:57.450Z"
   },
   {
+    "id": "81693",
+    "slug": "david-s-cass-sr",
+    "name": "David S. Cass Sr.",
+    "tmdbPersonId": 81693,
+    "photoUrl": "/images/people/81693.webp",
+    "profileUrl": "/images/people/81693.webp",
+    "birthday": "1942-03-21",
+    "deathday": "2020-08-28",
+    "placeOfBirth": "Fort Wayne, Indiana, USA",
+    "imdbPersonId": "nm0003180",
+    "gender": "Male",
+    "knownForDepartment": "Directing",
+    "knownCredits": 124,
+    "alsoKnownAs": [
+      "David Cass Jr.",
+      "Dave Cass Sr.",
+      "David Cass Sr.",
+      "Dave Cass",
+      "David S. Cass",
+      "David Cass",
+      "Dan Cass",
+      "Dave S. Cass"
+    ],
+    "tmdbUpdatedAt": "2026-10-01T09:21:10.327Z",
+    "tmdbFetchedAt": "2026-10-01T09:21:10.327Z"
+  },
+  {
     "id": "david-santana",
     "slug": "david-santana",
     "name": "David Santana",
@@ -26927,7 +27025,8 @@
     ],
     "instagramId": "deuces1966",
     "twitterId": "RealDeanCain",
-    "tmdbUpdatedAt": "2026-09-20T16:21:09.358Z"
+    "tmdbUpdatedAt": "2026-10-01T09:21:08.917Z",
+    "tmdbFetchedAt": "2026-10-01T09:21:08.917Z"
   },
   {
     "id": "dean-eadie",
@@ -29317,6 +29416,18 @@
     "tmdbUpdatedAt": "2026-09-20T16:17:20.673Z"
   },
   {
+    "id": "462672",
+    "slug": "donald-davenport",
+    "name": "Donald Davenport",
+    "tmdbPersonId": 462672,
+    "imdbPersonId": "nm2873808",
+    "gender": "Male",
+    "knownForDepartment": "Writing",
+    "knownCredits": 8,
+    "tmdbUpdatedAt": "2026-10-01T09:21:08.549Z",
+    "tmdbFetchedAt": "2026-10-01T09:21:08.549Z"
+  },
+  {
     "id": "donald-faison",
     "slug": "donald-faison",
     "name": "Donald Faison",
@@ -29640,7 +29751,8 @@
     "knownForDepartment": "Acting",
     "knownCredits": 50,
     "facebookId": "100009462443491",
-    "tmdbUpdatedAt": "2026-09-21T14:35:13.508Z"
+    "tmdbUpdatedAt": "2026-10-01T09:21:10.101Z",
+    "tmdbFetchedAt": "2026-10-01T09:21:10.101Z"
   },
   {
     "id": "donovan-wade",
@@ -30403,6 +30515,26 @@
       "Dylan Wallach"
     ],
     "tmdbUpdatedAt": "2026-09-20T16:17:39.169Z"
+  },
+  {
+    "id": "236302",
+    "slug": "dylan-sprayberry",
+    "name": "Dylan Sprayberry",
+    "tmdbPersonId": 236302,
+    "photoUrl": "/images/people/236302.webp",
+    "profileUrl": "/images/people/236302.webp",
+    "birthday": "1998-07-07",
+    "placeOfBirth": "Houston, Texas, USA",
+    "biography": "Best known for his role as Liam Dunbar on the hit MTV series Teen Wolf.",
+    "imdbPersonId": "nm2876098",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 31,
+    "instagramId": "dylansprayberry",
+    "twitterId": "DSprayberry",
+    "facebookId": "OfficialDylanSprayberry",
+    "tmdbUpdatedAt": "2026-10-01T09:21:09.954Z",
+    "tmdbFetchedAt": "2026-10-01T09:21:09.954Z"
   },
   {
     "id": "dylan-vox",
@@ -42833,6 +42965,22 @@
     "tmdbUpdatedAt": "2026-09-20T16:21:16.740Z"
   },
   {
+    "id": "74572",
+    "slug": "jaishon-fisher",
+    "name": "Jaishon Fisher",
+    "tmdbPersonId": 74572,
+    "photoUrl": "/images/people/74572.webp",
+    "profileUrl": "/images/people/74572.webp",
+    "birthday": "1996-09-05",
+    "placeOfBirth": "California, USA",
+    "imdbPersonId": "nm1556399",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 7,
+    "tmdbUpdatedAt": "2026-10-01T09:21:08.425Z",
+    "tmdbFetchedAt": "2026-10-01T09:21:08.425Z"
+  },
+  {
     "id": "jake-allyn",
     "slug": "jake-allyn",
     "name": "Jake Allyn",
@@ -45697,6 +45845,25 @@
     "tmdbUpdatedAt": "2026-09-20T16:20:50.237Z"
   },
   {
+    "id": "26495",
+    "slug": "jean-louisa-kelly",
+    "name": "Jean Louisa Kelly",
+    "tmdbPersonId": 26495,
+    "photoUrl": "/images/people/26495.webp",
+    "profileUrl": "/images/people/26495.webp",
+    "birthday": "1972-03-09",
+    "placeOfBirth": "Worcester, Massachusetts, USA",
+    "biography": "Jean Louisa Kelly (born March 9, 1972) is an American actress and singer. She is perhaps best known for her long-running role as Kim Warner on the television sitcom Yes, Dear.\n\nDescription above from the Wikipedia article Jean Louisa Kelly, licensed under CC-BY-SA, full list of contributors on Wikipedia .",
+    "imdbPersonId": "nm0446465",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 58,
+    "instagramId": "jeanlouisakelly",
+    "twitterId": "JeanLouisaKelly",
+    "tmdbUpdatedAt": "2026-10-01T09:21:09.306Z",
+    "tmdbFetchedAt": "2026-10-01T09:21:09.306Z"
+  },
+  {
     "id": "jean-michel-par",
     "slug": "jean-michel-par",
     "name": "Jean Michel Paré",
@@ -47740,7 +47907,8 @@
       "Jessica McLeod"
     ],
     "instagramId": "itsjessmcleod",
-    "tmdbUpdatedAt": "2026-09-20T16:21:08.577Z"
+    "tmdbUpdatedAt": "2026-10-01T09:21:08.344Z",
+    "tmdbFetchedAt": "2026-10-01T09:21:08.344Z"
   },
   {
     "id": "jess-ruiz-delvizo",
@@ -68561,6 +68729,19 @@
     "tmdbFetchedAt": "2026-09-25T21:37:14.932Z"
   },
   {
+    "id": "1212906",
+    "slug": "marsha-clark",
+    "name": "Marsha Clark",
+    "tmdbPersonId": 1212906,
+    "placeOfBirth": "Cleveland, Ohio, USA",
+    "imdbPersonId": "nm0164264",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 29,
+    "tmdbUpdatedAt": "2026-10-01T09:21:09.300Z",
+    "tmdbFetchedAt": "2026-10-01T09:21:09.300Z"
+  },
+  {
     "id": "marsha-mason",
     "slug": "marsha-mason",
     "name": "Marsha Mason",
@@ -74829,6 +75010,25 @@
     "tmdbUpdatedAt": "2026-09-20T16:20:03.043Z"
   },
   {
+    "id": "91495",
+    "slug": "mimi-kennedy",
+    "name": "Mimi Kennedy",
+    "tmdbPersonId": 91495,
+    "photoUrl": "/images/people/91495.webp",
+    "profileUrl": "/images/people/91495.webp",
+    "birthday": "1948-09-25",
+    "placeOfBirth": "Rochester, New York, USA",
+    "biography": "Mary Claire \"Mimi\" Kennedy (born September 25, 1948) is an American actress, author, and activist. Best known for her roles in television sitcoms, Kennedy co-starred in numerous short-lived sitcoms before her role as Ruth Sloan on Homefront (1991–93). She received wider recognition with her roles in the Chuck Lorre created sitcoms; Dharma & Greg (1997–2002), and Mom (2013–2021). For her performance in the latter, Kennedy received a nomination for the Critics' Choice Television Award for Best Guest Performer in a Comedy Series. Kennedy has also appeared in various films, including; Pump Up the Volume (1990), Erin Brockovich (2000), In the Loop (2009), Due Date (2010), Midnight in Paris (2011), and The Five-Year Engagement (2012).\n\nFrom Wikipedia, the free encyclopedia",
+    "imdbPersonId": "nm0448252",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 88,
+    "instagramId": "mimikennedyla",
+    "twitterId": "MimiKennedyLA",
+    "tmdbUpdatedAt": "2026-10-01T09:21:09.616Z",
+    "tmdbFetchedAt": "2026-10-01T09:21:09.616Z"
+  },
+  {
     "id": "mimi-kuzyk",
     "slug": "mimi-kuzyk",
     "name": "Mimi Kuzyk",
@@ -76998,6 +77198,20 @@
     "knownForDepartment": "Acting",
     "knownCredits": 2,
     "tmdbUpdatedAt": "2026-09-20T16:20:08.781Z"
+  },
+  {
+    "id": "51932",
+    "slug": "neill-fearnley",
+    "name": "Neill Fearnley",
+    "tmdbPersonId": 51932,
+    "photoUrl": "/images/people/51932.webp",
+    "profileUrl": "/images/people/51932.webp",
+    "imdbPersonId": "nm0269899",
+    "gender": "Male",
+    "knownForDepartment": "Directing",
+    "knownCredits": 94,
+    "tmdbUpdatedAt": "2026-10-01T09:21:09.180Z",
+    "tmdbFetchedAt": "2026-10-01T09:21:09.180Z"
   },
   {
     "id": "nela-bartsch",
@@ -84368,7 +84582,8 @@
     "instagramId": "thereginaldveljohnson",
     "twitterId": "ReginaldVelJohn",
     "facebookId": "ReginaldVelJohnson",
-    "tmdbUpdatedAt": "2026-09-20T16:17:43.033Z"
+    "tmdbUpdatedAt": "2026-10-01T09:21:10.020Z",
+    "tmdbFetchedAt": "2026-10-01T09:21:10.020Z"
   },
   {
     "id": "reid-ferguson",
@@ -93791,6 +94006,20 @@
     "tmdbUpdatedAt": "2026-09-20T16:19:51.396Z"
   },
   {
+    "id": "963173",
+    "slug": "spencir-bridges",
+    "name": "Spencir Bridges",
+    "tmdbPersonId": 963173,
+    "birthday": "1998-07-15",
+    "placeOfBirth": "Rome, Georgia, USA",
+    "imdbPersonId": "nm0108795",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 8,
+    "tmdbUpdatedAt": "2026-10-01T09:21:09.231Z",
+    "tmdbFetchedAt": "2026-10-01T09:21:09.231Z"
+  },
+  {
     "id": "2732275",
     "slug": "spyder-dobrofsky",
     "name": "Spyder Dobrofsky",
@@ -99550,7 +99779,8 @@
     "alsoKnownAs": [
       "Tom Herton"
     ],
-    "tmdbUpdatedAt": "2026-09-20T16:21:16.472Z"
+    "tmdbUpdatedAt": "2026-10-01T09:21:07.924Z",
+    "tmdbFetchedAt": "2026-10-01T09:21:07.924Z"
   },
   {
     "id": "tom-keenan",
@@ -99583,6 +99813,24 @@
       "Thomas Kemp"
     ],
     "tmdbUpdatedAt": "2026-09-20T16:20:29.227Z"
+  },
+  {
+    "id": "158575",
+    "slug": "tom-mcbeath",
+    "name": "Tom McBeath",
+    "tmdbPersonId": 158575,
+    "photoUrl": "/images/people/158575.webp",
+    "profileUrl": "/images/people/158575.webp",
+    "placeOfBirth": "Vancouver, British Columbia, Canada",
+    "imdbPersonId": "nm0564245",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 111,
+    "alsoKnownAs": [
+      "Tom Mc Beath"
+    ],
+    "tmdbUpdatedAt": "2026-10-01T09:21:08.560Z",
+    "tmdbFetchedAt": "2026-10-01T09:21:08.560Z"
   },
   {
     "id": "3309879",
@@ -104378,6 +104626,22 @@
       "Zahara Anderson"
     ],
     "tmdbUpdatedAt": "2026-09-20T16:18:20.846Z"
+  },
+  {
+    "id": "146557",
+    "slug": "zak-ludwig",
+    "name": "Zak Ludwig",
+    "tmdbPersonId": 146557,
+    "photoUrl": "/images/people/146557.webp",
+    "profileUrl": "/images/people/146557.webp",
+    "birthday": "1997-10-05",
+    "placeOfBirth": "Burnaby, British Columbia, Canada",
+    "imdbPersonId": "nm2200299",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 10,
+    "tmdbUpdatedAt": "2026-10-01T09:21:08.420Z",
+    "tmdbFetchedAt": "2026-10-01T09:21:08.420Z"
   },
   {
     "id": "zak-santiago",

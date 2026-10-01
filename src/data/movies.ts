@@ -208573,6 +208573,296 @@ export const MOVIES: Movie[] = [
     "voteCount": 117,
     "tmdbUpdatedAt": "2026-10-01T09:19:05.385Z",
     "tmdbFetchedAt": "2026-10-01T09:19:05.385Z"
+  },
+  {
+    "id": "hallmark-2009-christmas-in-canaan",
+    "slug": "christmas-in-canaan",
+    "title": "Christmas in Canaan",
+    "year": 2009,
+    "brandId": "hallmark",
+    "releaseDate": "2009-12-12",
+    "synopsis": "Set in the 1960s, Christmas in Canaan is a drama about a black family and a white family that learn to love each other out of their Christian beliefs.",
+    "posterUrl": "/images/posters/144253.jpg",
+    "backdropUrl": "/images/backdrops/144253.jpg",
+    "cast": [
+      {
+        "actorId": "78887",
+        "name": "Billy Ray Cyrus",
+        "character": "Daniel Burton",
+        "slug": "billy-ray-cyrus",
+        "tmdbPersonId": 78887,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/ly0Ejh5micQppq2L6UJvbl8Y674.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "56015",
+        "name": "Tom Heaton",
+        "character": "Wylie",
+        "slug": "tom-heaton",
+        "tmdbPersonId": 56015,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/7dFSgw0iFEKZlfescmpZqkBNIhW.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "84466",
+        "name": "Jess McLeod",
+        "character": "Young Sarah",
+        "slug": "jess-mcleod",
+        "tmdbPersonId": 84466,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/nJXORUI8JJVkYTCO4Lpjxz6VgzF.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "146557",
+        "name": "Zak Ludwig",
+        "character": "Young DJ",
+        "slug": "zak-ludwig",
+        "tmdbPersonId": 146557,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/yMwN5YXPqSXNwqjsjLFuZoaFWGP.jpg",
+        "order": 3
+      },
+      {
+        "actorId": "74572",
+        "name": "Jaishon Fisher",
+        "character": "Young Rodney",
+        "slug": "jaishon-fisher",
+        "tmdbPersonId": 74572,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/gVuYZQJkRMzC506ysl1bzddCUNL.jpg",
+        "order": 4
+      },
+      {
+        "actorId": "158575",
+        "name": "Tom McBeath",
+        "character": "Carl",
+        "slug": "tom-mcbeath",
+        "tmdbPersonId": 158575,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/vKeYC2KlMiq4S48ZafMll7jl9CJ.jpg",
+        "order": 5
+      },
+      {
+        "actorId": "72099",
+        "name": "Ben Cotton",
+        "character": "Jake Hammer",
+        "slug": "ben-cotton",
+        "tmdbPersonId": 72099,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/gn8KZSkxZs0c95ARpjXvxBtwwlX.jpg",
+        "order": 6
+      },
+      {
+        "actorId": "558927",
+        "name": "Brendan Meyer",
+        "character": "Older Bobby",
+        "slug": "brendan-meyer",
+        "tmdbPersonId": 558927,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/cSIsHQjie1xElTL86pCAvHL4ddB.jpg",
+        "order": 7
+      }
+    ],
+    "director": "Neill Fearnley",
+    "tmdbId": 144253,
+    "imdbId": "tt1410013",
+    "isComingSoon": false,
+    "status": "collection",
+    "originalTitle": "Christmas in Canaan",
+    "runtimeMinutes": 86,
+    "genres": [
+      {
+        "id": 10751,
+        "name": "Family"
+      },
+      {
+        "id": 18,
+        "name": "Drama"
+      },
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "US",
+        "releaseDate": "2009-12-12T00:00:00.000Z",
+        "type": 6,
+        "certification": "PG-13",
+        "note": "Hallmark Channel"
+      }
+    ],
+    "crew": [
+      {
+        "id": 51932,
+        "name": "Neill Fearnley",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/9dFT0XWxrtwZLki8YjbaWlXHQUf.jpg",
+        "creditId": "52fe4b2a9251416c750fa6c1"
+      },
+      {
+        "id": 462672,
+        "name": "Donald Davenport",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "56000eb0c3a3681762002998"
+      }
+    ],
+    "trailers": [
+      {
+        "key": "7vr4kTZjMVM",
+        "site": "YouTube",
+        "type": "Trailer",
+        "name": "EXCLUSIVE PROMO of CHRISTMAS IN CANAAN",
+        "official": true
+      }
+    ],
+    "trailerYoutubeKey": "7vr4kTZjMVM",
+    "voteAverage": 6.1,
+    "voteCount": 19,
+    "tmdbUpdatedAt": "2026-10-01T09:21:05.712Z",
+    "tmdbFetchedAt": "2026-10-01T09:21:05.712Z"
+  },
+  {
+    "id": "hallmark-2009-the-three-gifts",
+    "slug": "the-three-gifts",
+    "title": "The Three Gifts",
+    "year": 2009,
+    "brandId": "hallmark",
+    "releaseDate": "2009-12-19",
+    "synopsis": "Jack Green inherited a southern Californian horse ranch and an all-natural toy factory in the barn. With his wife Cherie, he accepts taking in the three 'holy terrors' from his bossy aunt Rita's orphanage during renovations, until the holidays. Resourceful Mike and his buddies, Henry and Ray, prove handfuls, but Jack proves father-potential.  Will the trio find a real home for Christmas?",
+    "posterUrl": "/images/posters/113893.jpg",
+    "cast": [
+      {
+        "actorId": "21721",
+        "name": "Dean Cain",
+        "character": "Jack Green",
+        "slug": "dean-cain",
+        "tmdbPersonId": 21721,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/vVBqgo0BJQVreLZaIW8tHI8hXYZ.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "26495",
+        "name": "Jean Louisa Kelly",
+        "character": "Cherie Green",
+        "slug": "jean-louisa-kelly",
+        "tmdbPersonId": 26495,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/hUaXI2x27HNIKc4WXcnvNkl4wF9.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "91495",
+        "name": "Mimi Kennedy",
+        "character": "Rita Green",
+        "slug": "mimi-kennedy",
+        "tmdbPersonId": 91495,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/7Nsu0AngAeUEawRUm72Qgg8RUL6.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "963173",
+        "name": "Spencir Bridges",
+        "character": "Ray",
+        "slug": "spencir-bridges",
+        "tmdbPersonId": 963173,
+        "order": 3
+      },
+      {
+        "actorId": "1212906",
+        "name": "Marsha Clark",
+        "character": "Margo Battleford",
+        "slug": "marsha-clark",
+        "tmdbPersonId": 1212906,
+        "order": 4
+      },
+      {
+        "actorId": "236302",
+        "name": "Dylan Sprayberry",
+        "character": "Mike",
+        "slug": "dylan-sprayberry",
+        "tmdbPersonId": 236302,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/aQvC4qmW6z4mJj5Fxb5ar1MNsyD.jpg",
+        "order": 5
+      },
+      {
+        "actorId": "1057955",
+        "name": "Alex Zubarev",
+        "character": "Henry",
+        "slug": "alex-zubarev",
+        "tmdbPersonId": 1057955,
+        "order": 6
+      },
+      {
+        "actorId": "7672",
+        "name": "Reginald VelJohnson",
+        "character": "Rodney",
+        "slug": "reginald-veljohnson",
+        "tmdbPersonId": 7672,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/78x1ceFIKI8DHfEEj9dg4JrGwPa.jpg",
+        "order": 7
+      },
+      {
+        "actorId": "57350",
+        "name": "Donovan Scott",
+        "character": "Santa",
+        "slug": "donovan-scott",
+        "tmdbPersonId": 57350,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/zs0rbBBujZATXeEV3E7RMrXQ2W2.jpg",
+        "order": 8
+      }
+    ],
+    "director": "David S. Cass Sr.",
+    "tmdbId": 113893,
+    "imdbId": "tt1542767",
+    "isComingSoon": false,
+    "status": "collection",
+    "originalTitle": "The Three Gifts",
+    "runtimeMinutes": 84,
+    "genres": [
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      },
+      {
+        "id": 10751,
+        "name": "Family"
+      },
+      {
+        "id": 18,
+        "name": "Drama"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "US",
+        "releaseDate": "2009-12-19T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "Hallmark"
+      }
+    ],
+    "crew": [
+      {
+        "id": 81693,
+        "name": "David S. Cass Sr.",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/tSo4s2Hb2UficxzMqU26bJhwg7i.jpg",
+        "creditId": "52fe4b41c3a36847f81fa4d9"
+      }
+    ],
+    "trailers": [
+      {
+        "key": "fMRHzJaqlGg",
+        "site": "YouTube",
+        "type": "Trailer",
+        "name": "EXCLUSIVE promo of THE THREE GIFTS",
+        "official": true
+      }
+    ],
+    "trailerYoutubeKey": "fMRHzJaqlGg",
+    "voteAverage": 5.2,
+    "voteCount": 15,
+    "tmdbUpdatedAt": "2026-10-01T09:21:05.716Z",
+    "tmdbFetchedAt": "2026-10-01T09:21:05.716Z"
   }
 ];
 
