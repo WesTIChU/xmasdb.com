@@ -6,6 +6,19 @@ const execFileAsync = promisify(execFile);
 
 export type ImageMagickExecutable = 'magick' | 'convert';
 export type ImageMagickProbe = (executable: ImageMagickExecutable) => void;
+export type ImageMagickOperation = 'convert' | 'identify';
+
+export interface ImageMagickCommand {
+  executable: string;
+  args: string[];
+}
+
+/** Builds the correct command shape for ImageMagick 6 or 7. */
+export function buildImageMagickCommand(executable: ImageMagickExecutable, operation: ImageMagickOperation, args: string[]): ImageMagickCommand {
+  if (operation === 'identify' && executable === 'convert') return { executable: 'identify', args: [...args] };
+  if (operation === 'identify') return { executable, args: ['identify', ...args] };
+  return { executable, args: [...args] };
+}
 
 function defaultImageMagickProbe(executable: ImageMagickExecutable): void {
   execFileSync(executable, ['-version'], { stdio: 'ignore' });
@@ -34,8 +47,9 @@ export function requireImageMagickExecutable(): ImageMagickExecutable {
 export async function convertImageToWebp(filePath: string): Promise<void> {
   const outputPath = `${filePath}.converted.webp`;
   const executable = requireImageMagickExecutable();
+  const command = buildImageMagickCommand(executable, 'convert', [filePath, '-auto-orient', '-strip', '-quality', '82', `webp:${outputPath}`]);
   try {
-    await execFileAsync(executable, [filePath, '-auto-orient', '-strip', '-quality', '82', `webp:${outputPath}`]);
+    await execFileAsync(command.executable, command.args);
     await fs.rename(outputPath, filePath);
   } catch (error) {
     await fs.rm(outputPath, { force: true });

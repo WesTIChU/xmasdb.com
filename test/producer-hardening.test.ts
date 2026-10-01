@@ -6,13 +6,17 @@ import { execFile } from 'node:child_process';
 import { promisify } from 'node:util';
 import { addMovie, prepareManagedArtwork } from '../scripts/add-movie';
 import { localAssetPath } from '../scripts/import-xmasdb';
-import { convertImageToWebp, detectImageMagickExecutable, requireImageMagickExecutable } from '../src/server/image-processing';
+import { buildImageMagickCommand, convertImageToWebp, detectImageMagickExecutable, requireImageMagickExecutable } from '../src/server/image-processing';
 
 const execFileAsync = promisify(execFile);
 const imageMagickExecutable = requireImageMagickExecutable();
 
 assert.equal(detectImageMagickExecutable((executable) => { if (executable !== 'magick') throw new Error('missing'); }), 'magick');
 assert.equal(detectImageMagickExecutable((executable) => { if (executable !== 'convert') throw new Error('missing'); }), 'convert');
+assert.deepEqual(buildImageMagickCommand('magick', 'convert', ['source.jpg', 'webp:output.webp']), { executable: 'magick', args: ['source.jpg', 'webp:output.webp'] });
+assert.deepEqual(buildImageMagickCommand('magick', 'identify', ['-format', '%m', 'source.jpg']), { executable: 'magick', args: ['identify', '-format', '%m', 'source.jpg'] });
+assert.deepEqual(buildImageMagickCommand('convert', 'convert', ['source.jpg', 'webp:output.webp']), { executable: 'convert', args: ['source.jpg', 'webp:output.webp'] });
+assert.deepEqual(buildImageMagickCommand('convert', 'identify', ['-format', '%m', 'source.jpg']), { executable: 'identify', args: ['-format', '%m', 'source.jpg'] });
 
 const metadata = { posterUrl: 'https://image.tmdb.org/t/p/w500/poster.jpg', backdropUrl: 'https://image.tmdb.org/t/p/w1280/backdrop.jpg' };
 const successful = await prepareManagedArtwork(123, metadata, async (_source, destination) => destination);
@@ -55,9 +59,11 @@ assert.equal(localAssetPath('/images/people/456.jpg', 'people', 456), '/images/p
 
 const directory = await fs.mkdtemp(path.join(os.tmpdir(), 'xmasdb-webp-'));
 const source = path.join(directory, 'source.jpg');
-await execFileAsync(imageMagickExecutable, ['-size', '2x2', 'xc:red', source]);
+const createSourceCommand = buildImageMagickCommand(imageMagickExecutable, 'convert', ['-size', '2x2', 'xc:red', source]);
+await execFileAsync(createSourceCommand.executable, createSourceCommand.args);
 await convertImageToWebp(source);
-const { stdout } = await execFileAsync(imageMagickExecutable, ['identify', '-format', '%m', source]);
+const identifyCommand = buildImageMagickCommand(imageMagickExecutable, 'identify', ['-format', '%m', source]);
+const { stdout } = await execFileAsync(identifyCommand.executable, identifyCommand.args);
 assert.equal(stdout.trim(), 'WEBP', 'people conversion must produce genuine WebP bytes');
 await fs.rm(directory, { recursive: true, force: true });
 

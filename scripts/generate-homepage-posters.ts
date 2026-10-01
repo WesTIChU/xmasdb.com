@@ -9,7 +9,7 @@ import { publishManagedImageFile, summarizeManagedImagePublication, type Managed
 import { writeFileAtomically } from '../src/utils/atomic-file';
 import { resolveImageUrl } from '../src/utils/image-url';
 import { getHomepageManifestIds } from '../src/utils/homepage-images';
-import { detectImageMagickExecutable } from '../src/server/image-processing';
+import { buildImageMagickCommand, detectImageMagickExecutable } from '../src/server/image-processing';
 
 const projectRoot = process.cwd();
 const sourceRoot = path.join(projectRoot, 'public');
@@ -63,7 +63,8 @@ try {
     if (imageMagickAvailable) {
       const temporaryPath = `${outputPath}.${process.pid}.tmp`;
       try {
-        execFileSync(imageMagickExecutable!, [sourcePath, '-resize', '320x480', '-strip', '-quality', '82', `webp:${temporaryPath}`], { stdio: 'inherit' });
+        const command = buildImageMagickCommand(imageMagickExecutable!, 'convert', [sourcePath, '-resize', '320x480', '-strip', '-quality', '82', `webp:${temporaryPath}`]);
+        execFileSync(command.executable, command.args, { stdio: 'inherit' });
         renameSync(temporaryPath, outputPath);
       } finally {
         try { unlinkSync(temporaryPath); } catch { /* already renamed or absent */ }
