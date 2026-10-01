@@ -17910,7 +17910,8 @@
     "remoteUrl": "https://image.tmdb.org/t/p/w500/jpOkJGMk07jkrQWZ6ep4uy4wQLs.jpg"
   },
   "/images/people/165961.webp": {
-    "remoteUrl": "https://image.tmdb.org/t/p/w500/moftIPJCtK7Da1aqr0hWO3GlvPL.jpg"
+    "remoteUrl": "https://image.tmdb.org/t/p/w500/moftIPJCtK7Da1aqr0hWO3GlvPL.jpg",
+    "fetchedAt": "2026-10-01T06:12:49.497Z"
   },
   "/images/people/545229.webp": {
     "remoteUrl": "https://image.tmdb.org/t/p/w500/mgYRS2YM7gtEbvw5CsAEfQO2wLJ.jpg"
