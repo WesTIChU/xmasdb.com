@@ -134,6 +134,9 @@ export const PROTOTYPE_MOVIE_FINGERPRINTS: Readonly<Record<string, readonly Fing
     "mistaken-identity",
     "secret-identity"
   ],
+  "gaf-2022-destined-at-christmas": [
+    "unexpected-romance"
+  ],
   "gaf-2022-i-m-glad-it-s-christmas": [
     "career-vs-love",
     "entertainment-showbiz",
