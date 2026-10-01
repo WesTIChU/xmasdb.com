@@ -618,9 +618,6 @@ export const PROTOTYPE_MOVIE_FINGERPRINTS: Readonly<Record<string, readonly Fing
     "parent-child",
     "time-travel"
   ],
-  "hallmark-2011-a-christmas-wedding-tail": [
-    "new-blended-family"
-  ],
   "hallmark-2011-a-christmas-wish": [
     "restaurant-cafe",
     "single-parent",
