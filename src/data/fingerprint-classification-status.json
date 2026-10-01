@@ -1,21 +1,29 @@
 {
-  "generatedAt": "2026-10-01T12:56:38.784Z",
+  "generatedAt": "2026-10-01T13:02:52.963Z",
   "catalogue": {
-    "totalMovies": 784,
+    "totalMovies": 785,
     "moviesWithIngredients": 726,
-    "moviesWithoutIngredients": 58
+    "moviesWithoutIngredients": 59
   },
   "lastRun": {
-    "startedAt": "2026-10-01T12:56:36.229Z",
-    "finishedAt": "2026-10-01T12:56:38.784Z",
+    "startedAt": "2026-10-01T13:02:50.215Z",
+    "finishedAt": "2026-10-01T13:02:52.963Z",
     "status": "SUCCESS",
-    "processed": 0,
+    "processed": 1,
     "classified": 0,
-    "noMatch": 0,
+    "noMatch": 1,
     "insufficientData": 0,
     "failed": 0,
     "newAssignmentsApplied": 0,
     "skippedExistingAssignments": 0,
-    "recentMovies": []
+    "recentMovies": [
+      {
+        "movieId": "uptv-2021-a-christmas-letter",
+        "title": "A Christmas Letter",
+        "status": "no-match",
+        "fingerprints": [],
+        "processedAt": "2026-10-01T13:02:51.809Z"
+      }
+    ]
   }
 }
