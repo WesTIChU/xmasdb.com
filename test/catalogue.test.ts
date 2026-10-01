@@ -18,6 +18,16 @@ const comingSoonMovie = MOVIES.find((movie) => movie.status === 'coming-soon' &&
 assert.ok(comingSoonMovie, 'canonical catalogue should contain a Coming Soon movie');
 const catalogueMovieCount = MOVIES.filter((movie) => movie.status === 'collection' || movie.status === 'coming-soon').length;
 assert.strictEqual(defaultPage.total, catalogueMovieCount);
+
+const letItSnow = MOVIES.find((movie) => movie.id === 'gaf-2024-let-it-snow');
+assert.ok(letItSnow, 'Let It Snow remains in the catalogue with its existing ID');
+assert.equal(letItSnow?.brandId, 'hallmark', 'Let It Snow is classified under Hallmark');
+assert.equal(letItSnow?.tmdbId, 240906, 'Let It Snow keeps its TMDb identity');
+assert.equal(letItSnow?.releaseDate, '2013-11-30', 'Let It Snow keeps the original TMDb release date');
+assert.equal(letItSnow?.premiereDate, '2013-11-30', 'Let It Snow keeps the original premiere date');
+assert.ok(buildCatalogueListing(parseCatalogueQuery(''), 'hallmark', 2013)?.movies.some((movie) => movie.id === 'gaf-2024-let-it-snow'), 'Let It Snow appears under Hallmark 2013');
+assert.ok(!buildCatalogueListing(parseCatalogueQuery(''), 'gaf', 2013)?.movies.some((movie) => movie.id === 'gaf-2024-let-it-snow'), 'Let It Snow no longer appears under GAF 2013');
+
 const hotChocolateHoliday = MOVIES.find((movie) => movie.tmdbId === 777405);
 assert.ok(hotChocolateHoliday, 'Hot Chocolate Holiday remains in the catalogue');
 assert.equal(hotChocolateHoliday?.id, 'gaf-2021-hot-chocolate-holiday', 'Hot Chocolate Holiday keeps its existing movie ID');
