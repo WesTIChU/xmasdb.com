@@ -219714,6 +219714,2260 @@ export const MOVIES: Movie[] = [
     "voteCount": 50,
     "tmdbUpdatedAt": "2026-10-01T10:20:32.262Z",
     "tmdbFetchedAt": "2026-10-01T10:20:32.262Z"
+  },
+  {
+    "id": "hallmark-2014-one-starry-christmas",
+    "slug": "one-starry-christmas",
+    "title": "One Starry Christmas",
+    "year": 2014,
+    "brandId": "hallmark",
+    "releaseDate": "2014-11-01",
+    "synopsis": "An aspiring astronomy professor finds unexpected Christmas romance when she meets a charming cowboy during her holiday travel. As she decides between this new cowboy and her practical boyfriend, she must decide whether it's better to play it safe in love, or let an adventurous cowboy steal her heart.",
+    "posterUrl": "/images/posters/299574.jpg",
+    "backdropUrl": "/images/backdrops/299574.jpg",
+    "cast": [
+      {
+        "actorId": "56825",
+        "name": "Sarah Carter",
+        "character": "Holly Jensen",
+        "slug": "sarah-carter",
+        "tmdbPersonId": 56825,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/hjH8vNv9LSZPmo56ikNbIX5UAKu.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "1376330",
+        "name": "Damon Runyan",
+        "character": "Luke Shelton",
+        "slug": "damon-runyan",
+        "tmdbPersonId": 1376330,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/74HBlulH9QcYN0CFQrGPv7oS2Gm.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "102703",
+        "name": "Paul Popowich",
+        "character": "Adam",
+        "slug": "paul-popowich",
+        "tmdbPersonId": 102703,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/tsXNsb2hGdJRAuj8LB5QohDikkd.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "214006",
+        "name": "Kathleen Laskey",
+        "character": "Betsy Jensen",
+        "slug": "kathleen-laskey",
+        "tmdbPersonId": 214006,
+        "order": 3
+      },
+      {
+        "actorId": "5941",
+        "name": "Neil Crone",
+        "character": "Ken Jensen",
+        "slug": "neil-crone",
+        "tmdbPersonId": 5941,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/dSKEir3QWqSKJQjPIQftNZoD8Hs.jpg",
+        "order": 4
+      },
+      {
+        "actorId": "1039258",
+        "name": "George Canyon",
+        "character": "Bull",
+        "slug": "george-canyon",
+        "tmdbPersonId": 1039258,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/wUQT48qAAf7fbtgwtrQS0qzxdPA.jpg",
+        "order": 5
+      },
+      {
+        "actorId": "1384037",
+        "name": "Daniel Karasik",
+        "character": "Mark",
+        "slug": "daniel-karasik",
+        "tmdbPersonId": 1384037,
+        "order": 6
+      },
+      {
+        "actorId": "1820438",
+        "name": "Annie Chen",
+        "character": "Line Dancer #1",
+        "slug": "annie-chen",
+        "tmdbPersonId": 1820438,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/zBM3kEtbtMg6NCtWmozTi03IIUG.jpg",
+        "order": 7
+      },
+      {
+        "actorId": "1820439",
+        "name": "Grant Landry",
+        "character": "Line Dancer #2",
+        "slug": "grant-landry",
+        "tmdbPersonId": 1820439,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/1d0Q5gXLKS44ktqnQNBQNn3L7Is.jpg",
+        "order": 8
+      },
+      {
+        "actorId": "1820440",
+        "name": "Sarah Vance",
+        "character": "Line Dancer #3",
+        "slug": "sarah-vance",
+        "tmdbPersonId": 1820440,
+        "order": 9
+      },
+      {
+        "actorId": "1512131",
+        "name": "Kalie Hunter",
+        "character": "Line Dancer #4",
+        "slug": "kalie-hunter",
+        "tmdbPersonId": 1512131,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/n9PRDrSeWYQfUaQiJHPDVFTKlSK.jpg",
+        "order": 10
+      },
+      {
+        "actorId": "1820443",
+        "name": "Lisa Auguste",
+        "character": "Line Dancer #5",
+        "slug": "lisa-auguste",
+        "tmdbPersonId": 1820443,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/uGMXeKxlewHyUGsu4Dz0s1pCKnQ.jpg",
+        "order": 11
+      },
+      {
+        "actorId": "1820442",
+        "name": "Kevin Howe",
+        "character": "Line Dancer #6",
+        "slug": "kevin-howe",
+        "tmdbPersonId": 1820442,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/hh00wBo12RYLx19LOse3tGKoteb.jpg",
+        "order": 12
+      }
+    ],
+    "director": "John Bradshaw",
+    "tmdbId": 299574,
+    "imdbId": "tt4159212",
+    "isComingSoon": false,
+    "status": "collection",
+    "originalTitle": "One Starry Christmas",
+    "runtimeMinutes": 84,
+    "genres": [
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "US",
+        "releaseDate": "2014-11-01T00:00:00.000Z",
+        "type": 6,
+        "certification": "G",
+        "note": "Hallmark"
+      }
+    ],
+    "crew": [
+      {
+        "id": 224214,
+        "name": "John Bradshaw",
+        "job": "Director",
+        "department": "Directing",
+        "creditId": "54608574c3a3686cbb00610c"
+      },
+      {
+        "id": 1057526,
+        "name": "Rickie Castaneda",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "54608586c3a3686cbb006113"
+      }
+    ],
+    "trailers": [
+      {
+        "key": "6ZW8rTf_Pkk",
+        "site": "YouTube",
+        "type": "Trailer",
+        "name": "One Starry Christmas",
+        "official": true
+      }
+    ],
+    "trailerYoutubeKey": "6ZW8rTf_Pkk",
+    "voteAverage": 6.5,
+    "voteCount": 52,
+    "tmdbUpdatedAt": "2026-10-01T10:27:53.109Z",
+    "tmdbFetchedAt": "2026-10-01T10:27:53.109Z"
+  },
+  {
+    "id": "hallmark-2014-a-cookie-cutter-christmas",
+    "slug": "a-cookie-cutter-christmas",
+    "title": "A Cookie Cutter Christmas",
+    "year": 2014,
+    "brandId": "hallmark",
+    "releaseDate": "2014-11-09",
+    "synopsis": "Two longtime rivals and elementary school teachers duke it out during the holidays in a Christmas cookie bake-off, but their real feud ignites over a shared interest in a handsome single dad. With both determined to win the prize and the romance, their competitiveness could jeopardize what matters most this Christmas season.",
+    "posterUrl": "/images/posters/299578.jpg",
+    "backdropUrl": "/images/backdrops/299578.jpg",
+    "cast": [
+      {
+        "actorId": "1143960",
+        "name": "Erin Krakow",
+        "character": "Christie Reynolds",
+        "slug": "erin-krakow",
+        "tmdbPersonId": 1143960,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/8euXiEHmBwzV6NdwQ8dfwzFa7C7.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "85199",
+        "name": "Alan Thicke",
+        "character": "Chef Krueger",
+        "slug": "alan-thicke",
+        "tmdbPersonId": 85199,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/2zHmOX2KYnotwD69ceodaWDfPf8.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "559280",
+        "name": "David Haydn-Jones",
+        "character": "James",
+        "slug": "david-haydn-jones",
+        "tmdbPersonId": 559280,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/6ozF5cpWaFwlt124yz66NOGhu5t.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "137971",
+        "name": "Miranda Frigon",
+        "character": "Penny Miller",
+        "slug": "miranda-frigon",
+        "tmdbPersonId": 137971,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/44VovG3Gm0NGyHAhgyKla4RcHnw.jpg",
+        "order": 3
+      },
+      {
+        "actorId": "59230",
+        "name": "Laura Soltis",
+        "character": "Bev Reynolds",
+        "slug": "laura-soltis",
+        "tmdbPersonId": 59230,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/aFJtz9J0p82j9GZZUBz8KRacHFe.jpg",
+        "order": 4
+      },
+      {
+        "actorId": "1306565",
+        "name": "Genea Charpentier",
+        "character": "Lily",
+        "slug": "genea-charpentier",
+        "tmdbPersonId": 1306565,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/mPlOBUZtEfOGIGOxytzHUsC7Ob3.jpg",
+        "order": 5
+      },
+      {
+        "actorId": "1048268",
+        "name": "Alexandra Staseson",
+        "character": "Choir Teacher",
+        "slug": "alexandra-staseson",
+        "tmdbPersonId": 1048268,
+        "order": 6
+      },
+      {
+        "actorId": "203294",
+        "name": "Jill Morrison",
+        "character": "Allison",
+        "slug": "jill-morrison",
+        "tmdbPersonId": 203294,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/1Uezsm9dqRikCWPWXsYhEUkgAyQ.jpg",
+        "order": 7
+      },
+      {
+        "actorId": "1285537",
+        "name": "Gracyn Shinyei",
+        "character": "Young Christie Reynolds",
+        "slug": "gracyn-shinyei",
+        "tmdbPersonId": 1285537,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/9kuM2ekaMX1VyyTfq1jueYmufl1.jpg",
+        "order": 8
+      },
+      {
+        "actorId": "1498476",
+        "name": "Jaeda Lily Miller",
+        "character": "Young Penny",
+        "slug": "jaeda-lily-miller",
+        "tmdbPersonId": 1498476,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/r97q6uIGyoHZe66xzWNqyWevjS0.jpg",
+        "order": 9
+      },
+      {
+        "actorId": "1397009",
+        "name": "Emily Delahunty",
+        "character": "Sophia",
+        "slug": "emily-delahunty",
+        "tmdbPersonId": 1397009,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/31GdDbM0enaLVzGxFCVtWhc3SZE.jpg",
+        "order": 10
+      }
+    ],
+    "director": "Christie Will Wolf",
+    "tmdbId": 299578,
+    "imdbId": "tt4012254",
+    "isComingSoon": false,
+    "status": "collection",
+    "originalTitle": "A Cookie Cutter Christmas",
+    "runtimeMinutes": 86,
+    "genres": [
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      },
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "DE",
+        "releaseDate": "2015-12-09T00:00:00.000Z",
+        "type": 6,
+        "certification": "0",
+        "note": ""
+      },
+      {
+        "country": "US",
+        "releaseDate": "2014-11-09T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "Hallmark Channel"
+      }
+    ],
+    "crew": [
+      {
+        "id": 63783,
+        "name": "Christie Will Wolf",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/vLAxuVAYsIoboSnaLVG1oupsIm8.jpg",
+        "creditId": "5466b5df22136e7bec000576"
+      },
+      {
+        "id": 928670,
+        "name": "Barbara Kymlicka",
+        "job": "Writer",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/5uAmw6fTni4V9UNiU5CdGqxkbbw.jpg",
+        "creditId": "5e85e09b691cd50014594dcc"
+      }
+    ],
+    "trailers": [
+      {
+        "key": "BudVGyVMXEM",
+        "site": "YouTube",
+        "type": "Teaser",
+        "name": "Preview - A Cookie Cutter Christmas",
+        "official": true
+      },
+      {
+        "key": "BAkSyUPC8cg",
+        "site": "YouTube",
+        "type": "Trailer",
+        "name": "A Cookie Cutter Christmas - Official Trailer",
+        "official": true
+      },
+      {
+        "key": "OloDYTCVFHI",
+        "site": "YouTube",
+        "type": "Teaser",
+        "name": "A Cookie Cutter Christmas",
+        "official": true
+      }
+    ],
+    "trailerYoutubeKey": "BudVGyVMXEM",
+    "voteAverage": 6.1,
+    "voteCount": 82,
+    "tmdbUpdatedAt": "2026-10-01T10:27:53.145Z",
+    "tmdbFetchedAt": "2026-10-01T10:27:53.145Z"
+  },
+  {
+    "id": "hallmark-2014-northpole",
+    "slug": "northpole",
+    "title": "Northpole",
+    "year": 2014,
+    "brandId": "hallmark",
+    "releaseDate": "2014-11-15",
+    "synopsis": "Northpole, the magical city where Santa and his elves live and work is in trouble. Families around the globe have gotten too busy to enjoy the season together, and Northpole depends on their holiday happiness to keep running. In the hopes of turning things around, a determined young elf befriends a little boy with a lot of spirit. His skeptical journalist mom doesn’t have room in her heart for anything but the facts, so it’s going to take a little nudge from his charming teacher to create an unbeatable Christmas team to turn around this town and share the importance of the season with the whole world.",
+    "posterUrl": "/images/posters/299579.jpg",
+    "backdropUrl": "/images/backdrops/299579.jpg",
+    "cast": [
+      {
+        "actorId": "19187",
+        "name": "Tiffani-Amber Thiessen",
+        "character": "Chelsea",
+        "slug": "tiffani-amber-thiessen",
+        "tmdbPersonId": 19187,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/2L2lENLehoG1OPgxtugS9gG1bdy.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "31532",
+        "name": "Josh Hopkins",
+        "character": "Ryan",
+        "slug": "josh-hopkins",
+        "tmdbPersonId": 31532,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/ch8uh6RM55dmrAZdt8ByktQifg6.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "558928",
+        "name": "Max Charles",
+        "character": "Kevin",
+        "slug": "max-charles",
+        "tmdbPersonId": 558928,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/wVnQgfJ1M7gfJhRSFrAfKZwxNip.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "54479",
+        "name": "Bailee Madison",
+        "character": "Clementine",
+        "slug": "bailee-madison",
+        "tmdbPersonId": 54479,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/ltGpL7Yub5XshzWfUb8XJbsIDMT.jpg",
+        "order": 3
+      },
+      {
+        "actorId": "1384038",
+        "name": "Candice Glover",
+        "character": "Josephine",
+        "slug": "candice-glover",
+        "tmdbPersonId": 1384038,
+        "order": 4
+      },
+      {
+        "actorId": "9208",
+        "name": "Robert Wagner",
+        "character": "Santa Claus",
+        "slug": "robert-wagner",
+        "tmdbPersonId": 9208,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/dgIN3MrOfX8Q4pzchO58dhMgrFb.jpg",
+        "order": 5
+      },
+      {
+        "actorId": "10190",
+        "name": "Jill St. John",
+        "character": "Mrs. Claus",
+        "slug": "jill-st-john",
+        "tmdbPersonId": 10190,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/o0LKSONTaFmjuf9ntKa4oVbOLKq.jpg",
+        "order": 6
+      },
+      {
+        "actorId": "198677",
+        "name": "Joanna Noyes",
+        "character": "Mrs. Tucker",
+        "slug": "joanna-noyes",
+        "tmdbPersonId": 198677,
+        "order": 7
+      },
+      {
+        "actorId": "60910",
+        "name": "Frank Fontaine",
+        "character": "Old Guy",
+        "slug": "frank-fontaine",
+        "tmdbPersonId": 60910,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/2cycxGSFPgeNyKoL9v23ed3xA0A.jpg",
+        "order": 8
+      },
+      {
+        "actorId": "1575472",
+        "name": "Michael Dozier",
+        "character": "Shopkeeper",
+        "slug": "michael-dozier",
+        "tmdbPersonId": 1575472,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/oznEN6N3Dk6Y8FuaNGeIECVzeEK.jpg",
+        "order": 9
+      },
+      {
+        "actorId": "2609532",
+        "name": "Kyle Meagher",
+        "character": "Norman",
+        "slug": "kyle-meagher",
+        "tmdbPersonId": 2609532,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/pHsk2eEBq8wwt5Z9WPKlJxwtdCq.jpg",
+        "order": 10
+      }
+    ],
+    "director": "Douglas Barr",
+    "tmdbId": 299579,
+    "imdbId": "tt3595848",
+    "isComingSoon": false,
+    "status": "collection",
+    "originalTitle": "Northpole",
+    "runtimeMinutes": 81,
+    "genres": [
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      },
+      {
+        "id": 14,
+        "name": "Fantasy"
+      },
+      {
+        "id": 10751,
+        "name": "Family"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "DE",
+        "releaseDate": "2015-11-25T00:00:00.000Z",
+        "type": 6,
+        "certification": "0",
+        "note": ""
+      },
+      {
+        "country": "FR",
+        "releaseDate": "2017-12-28T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": ""
+      },
+      {
+        "country": "GB",
+        "releaseDate": "2015-10-07T00:00:00.000Z",
+        "type": 3,
+        "certification": "U",
+        "note": ""
+      },
+      {
+        "country": "US",
+        "releaseDate": "2014-11-15T00:00:00.000Z",
+        "type": 3,
+        "certification": "G",
+        "note": ""
+      }
+    ],
+    "crew": [
+      {
+        "id": 1133778,
+        "name": "Brian Sawyer",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "5460896fc3a368535800afe1"
+      },
+      {
+        "id": 1133777,
+        "name": "Gregg Rossen",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "54608966c3a3686e49003faf"
+      },
+      {
+        "id": 131785,
+        "name": "Douglas Barr",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/diqiqLjIsuSYdULyKbwTP03c9dJ.jpg",
+        "creditId": "546089400e0a262ca2002429"
+      }
+    ],
+    "trailers": [
+      {
+        "key": "UH5AcQQzA94",
+        "site": "YouTube",
+        "type": "Teaser",
+        "name": "Promo",
+        "official": true
+      }
+    ],
+    "trailerYoutubeKey": "UH5AcQQzA94",
+    "voteAverage": 6,
+    "voteCount": 79,
+    "tmdbUpdatedAt": "2026-10-01T10:27:53.164Z",
+    "tmdbFetchedAt": "2026-10-01T10:27:53.164Z"
+  },
+  {
+    "id": "hallmark-2014-angels-and-ornaments",
+    "slug": "angels-and-ornaments",
+    "title": "Angels and Ornaments",
+    "year": 2014,
+    "brandId": "hallmark",
+    "releaseDate": "2014-11-16",
+    "synopsis": "Corrine's holiday season gets an unexpected dose of romance when she meets the mysterious Harold, who is on a deadline from a higher power to help Corrine find her true love by Christmas Eve. As the clock ticks down to Harold's deadline, Corrine must decide if she will open up to Christmas love.",
+    "posterUrl": "/images/posters/299581.jpg",
+    "backdropUrl": "/images/backdrops/299581.jpg",
+    "cast": [
+      {
+        "actorId": "7523",
+        "name": "Jessalyn Gilsig",
+        "character": "Corrine Nelson",
+        "slug": "jessalyn-gilsig",
+        "tmdbPersonId": 7523,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/kfjBMofsdYT3AmGLdNwxmwqgAyI.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "54193",
+        "name": "Sergio Di Zio",
+        "character": "Harold Wagner",
+        "slug": "sergio-di-zio",
+        "tmdbPersonId": 54193,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/e5sQM8rEXQW1UiVgzYM5C4GHScF.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "1375675",
+        "name": "Roger Doche",
+        "character": "Tim",
+        "slug": "roger-doche",
+        "tmdbPersonId": 1375675,
+        "order": 2
+      },
+      {
+        "actorId": "209537",
+        "name": "Graham Abbey",
+        "character": "Dave Sheridan",
+        "slug": "graham-abbey",
+        "tmdbPersonId": 209537,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/6xLpD2Ap69mphaqCKPirRLNPf1l.jpg",
+        "order": 3
+      },
+      {
+        "actorId": "173835",
+        "name": "Richard Waugh",
+        "character": "Jerry",
+        "slug": "richard-waugh",
+        "tmdbPersonId": 173835,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/5Fo6mlAjTRniszTkJuQcnMFk2aG.jpg",
+        "order": 4
+      },
+      {
+        "actorId": "1014293",
+        "name": "Samantha Espie",
+        "character": "Janie",
+        "slug": "samantha-espie",
+        "tmdbPersonId": 1014293,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/pY56TYcyaREBSb9TtyeauJ88O3x.jpg",
+        "order": 5
+      },
+      {
+        "actorId": "1447213",
+        "name": "Lindsay Leese",
+        "character": "Dora Montrose",
+        "slug": "lindsay-leese",
+        "tmdbPersonId": 1447213,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/zxV7CRWcR09HtJxVQMXnTK3xgns.jpg",
+        "order": 6
+      },
+      {
+        "actorId": "64624",
+        "name": "Marium Carvell",
+        "character": "Customer",
+        "slug": "marium-carvell",
+        "tmdbPersonId": 64624,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/oTedDy2i0gbG0D8gqqtsNJuLhjU.jpg",
+        "order": 7
+      },
+      {
+        "actorId": "2868707",
+        "name": "Brian R. Pearcy",
+        "character": "Caroller #1",
+        "slug": "brian-r-pearcy",
+        "tmdbPersonId": 2868707,
+        "order": 8
+      },
+      {
+        "actorId": "1377631",
+        "name": "Chris Chinchilla",
+        "character": "Caroller #2",
+        "slug": "chris-chinchilla",
+        "tmdbPersonId": 1377631,
+        "order": 9
+      },
+      {
+        "actorId": "2868708",
+        "name": "Michael Follert",
+        "character": "Caroller #3",
+        "slug": "michael-follert",
+        "tmdbPersonId": 2868708,
+        "order": 10
+      },
+      {
+        "actorId": "2868709",
+        "name": "Rique Franks",
+        "character": "Kathleen",
+        "slug": "rique-franks",
+        "tmdbPersonId": 2868709,
+        "order": 11
+      },
+      {
+        "actorId": "2317798",
+        "name": "Gavin Hope",
+        "character": "Backup Singer #2",
+        "slug": "gavin-hope",
+        "tmdbPersonId": 2317798,
+        "order": 12
+      },
+      {
+        "actorId": "1617305",
+        "name": "Laura Nordin",
+        "character": "Emily Stockton (uncredited)",
+        "slug": "laura-nordin",
+        "tmdbPersonId": 1617305,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/mLg3iNVMIR508h6rk1s7fXjIyL8.jpg",
+        "order": 13
+      }
+    ],
+    "director": "Alan Goluboff",
+    "tmdbId": 299581,
+    "imdbId": "tt4160132",
+    "isComingSoon": false,
+    "status": "collection",
+    "originalTitle": "Angels and Ornaments",
+    "runtimeMinutes": 84,
+    "genres": [
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      },
+      {
+        "id": 10751,
+        "name": "Family"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "FR",
+        "releaseDate": "2014-12-29T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "TF1"
+      },
+      {
+        "country": "US",
+        "releaseDate": "2014-11-16T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "Hallmark"
+      }
+    ],
+    "crew": [
+      {
+        "id": 1447212,
+        "name": "Alan Goluboff",
+        "job": "Director",
+        "department": "Directing",
+        "creditId": "55185fa89251416efe004ad1"
+      },
+      {
+        "id": 224215,
+        "name": "Kevin Commins",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "55185fb09251412c1e00303f"
+      }
+    ],
+    "trailers": [
+      {
+        "key": "q2brSp1TZk0",
+        "site": "YouTube",
+        "type": "Trailer",
+        "name": "Angels And Ornaments",
+        "official": true
+      }
+    ],
+    "trailerYoutubeKey": "q2brSp1TZk0",
+    "voteAverage": 5.3,
+    "voteCount": 25,
+    "tmdbUpdatedAt": "2026-10-01T10:27:54.305Z",
+    "tmdbFetchedAt": "2026-10-01T10:27:54.305Z"
+  },
+  {
+    "id": "hallmark-2014-a-royal-christmas",
+    "slug": "a-royal-christmas",
+    "title": "A Royal Christmas",
+    "year": 2014,
+    "brandId": "hallmark",
+    "releaseDate": "2014-11-21",
+    "synopsis": "A young working girl with a blue-collar background is surprised when her new fiancé announces he is actually a prince of a small sovereign country in Europe. After the couple quickly takes off to spend the holidays at his family’s sprawling, royal castle, she must work hard to win over her disapproving and unaccepting future mother-in-law—the Queen—and find out if love truly can conquer all.",
+    "posterUrl": "/images/posters/299582.jpg",
+    "backdropUrl": "/images/backdrops/299582.jpg",
+    "cast": [
+      {
+        "actorId": "22082",
+        "name": "Lacey Chabert",
+        "character": "Emily Taylor",
+        "slug": "lacey-chabert",
+        "tmdbPersonId": 22082,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/1q9Xe7QVi5oayhPMEiRPgd6FFKG.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "77823",
+        "name": "Stephen Hagan",
+        "character": "Leo James / Prince Leopold",
+        "slug": "stephen-hagan",
+        "tmdbPersonId": 77823,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/8TTBYKjvwhesANv6jIejeFVpa83.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "10223",
+        "name": "Jane Seymour",
+        "character": "Queen Isadora",
+        "slug": "jane-seymour",
+        "tmdbPersonId": 10223,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/4crZXhSXSeAiwZDZyjfQ9dMgbj0.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "1191354",
+        "name": "Katherine Flynn",
+        "character": "Duchess Natasha",
+        "slug": "katherine-flynn",
+        "tmdbPersonId": 1191354,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/xS7Oap1STI37rnhNZK7wiyyrZrC.jpg",
+        "order": 3
+      },
+      {
+        "actorId": "579061",
+        "name": "Ionut Grama",
+        "character": "Baron Kent",
+        "slug": "ionut-grama",
+        "tmdbPersonId": 579061,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/o6lu5fApGmDpEHSO8wnEJMgCHFU.jpg",
+        "order": 4
+      },
+      {
+        "actorId": "59039",
+        "name": "Mitchell Mullen",
+        "character": "Bud Taylor",
+        "slug": "mitchell-mullen",
+        "tmdbPersonId": 59039,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/jiASJhUrYRrxhtFzxlPxQspZqpg.jpg",
+        "order": 5
+      },
+      {
+        "actorId": "1124225",
+        "name": "Diana Dumitrescu",
+        "character": "Olivia",
+        "slug": "diana-dumitrescu",
+        "tmdbPersonId": 1124225,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/rhz2OBmlhzTv8hFhO200nxHgKLA.jpg",
+        "order": 6
+      },
+      {
+        "actorId": "1223149",
+        "name": "Simon Dutton",
+        "character": "Victor",
+        "slug": "simon-dutton",
+        "tmdbPersonId": 1223149,
+        "order": 7
+      },
+      {
+        "actorId": "1473689",
+        "name": "Katrina Nare",
+        "character": "Toni",
+        "slug": "katrina-nare",
+        "tmdbPersonId": 1473689,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/bVRAQi4Yzl8tCTkYuHex68Fy4DP.jpg",
+        "order": 8
+      },
+      {
+        "actorId": "1908760",
+        "name": "Vlad Ianus",
+        "character": "Will",
+        "slug": "vlad-ianus",
+        "tmdbPersonId": 1908760,
+        "order": 9
+      },
+      {
+        "actorId": "1756706",
+        "name": "Kate Loustau",
+        "character": "Galina, Baroness of Newbury",
+        "slug": "kate-loustau",
+        "tmdbPersonId": 1756706,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/uYfj2tQS8FBj28mY1uknfymcr4G.jpg",
+        "order": 10
+      },
+      {
+        "actorId": "1908761",
+        "name": "Alice O'Mahoney",
+        "character": "Poppy",
+        "slug": "alice-o-mahoney",
+        "tmdbPersonId": 1908761,
+        "order": 11
+      },
+      {
+        "actorId": "1349722",
+        "name": "Annie Gould",
+        "character": "Sister Agatha",
+        "slug": "annie-gould",
+        "tmdbPersonId": 1349722,
+        "order": 12
+      },
+      {
+        "actorId": "111912",
+        "name": "Mihai Niculescu",
+        "character": "Grand Duke of Canterbury",
+        "slug": "mihai-niculescu",
+        "tmdbPersonId": 111912,
+        "order": 13
+      },
+      {
+        "actorId": "1908762",
+        "name": "Olivia Krevoy",
+        "character": "Teenage Girl",
+        "slug": "olivia-krevoy",
+        "tmdbPersonId": 1908762,
+        "order": 14
+      },
+      {
+        "actorId": "1908763",
+        "name": "Cosmin Guzan",
+        "character": "Ivan",
+        "slug": "cosmin-guzan",
+        "tmdbPersonId": 1908763,
+        "order": 15
+      },
+      {
+        "actorId": "1788779",
+        "name": "Adina Rapiteanu",
+        "character": "Princess Julia",
+        "slug": "adina-rapiteanu",
+        "tmdbPersonId": 1788779,
+        "order": 16
+      },
+      {
+        "actorId": "1908764",
+        "name": "Dashell Zamm",
+        "character": "",
+        "slug": "dashell-zamm",
+        "tmdbPersonId": 1908764,
+        "order": 17
+      }
+    ],
+    "director": "Alex Zamm",
+    "tmdbId": 299582,
+    "imdbId": "tt2838678",
+    "isComingSoon": false,
+    "status": "collection",
+    "originalTitle": "A Royal Christmas",
+    "runtimeMinutes": 90,
+    "genres": [
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      },
+      {
+        "id": 10751,
+        "name": "Family"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "DE",
+        "releaseDate": "2018-12-19T00:00:00.000Z",
+        "type": 6,
+        "certification": "12",
+        "note": "EPG-Freigabe"
+      },
+      {
+        "country": "US",
+        "releaseDate": "2014-11-21T00:00:00.000Z",
+        "type": 6,
+        "certification": "G",
+        "note": "Hallmark Channel"
+      }
+    ],
+    "crew": [
+      {
+        "id": 88077,
+        "name": "Alex Zamm",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/2Rtymz6bQ23cEbnL2dLpjM0ZCAP.jpg",
+        "creditId": "54608bb40e0a261fbd00b28f"
+      },
+      {
+        "id": 62079,
+        "name": "Janeen Damian",
+        "job": "Writer",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/ygC5V5zwdkiW2PMIxayVv9ue0zw.jpg",
+        "creditId": "54608bc9c3a36841d300494b"
+      },
+      {
+        "id": 62081,
+        "name": "Michael Damian",
+        "job": "Writer",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/toPk7n6y8T8Vgz3NIdFdZGEb1l1.jpg",
+        "creditId": "54608bdac3a368371c001c57"
+      },
+      {
+        "id": 36129,
+        "name": "Neal H. Dobrofsky",
+        "job": "Writer",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/bTrJcjQuyqbqOaHOwqqQVWtF9UN.jpg",
+        "creditId": "54608be5c3a3686cbb0061f2"
+      },
+      {
+        "id": 36130,
+        "name": "Tippi Dobrofsky",
+        "job": "Writer",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/qVecDr8L3iEefOXspuzNcBcPQtR.jpg",
+        "creditId": "54608bf1c3a3680b5d0027ed"
+      }
+    ],
+    "trailers": [
+      {
+        "key": "Kua76tb2W54",
+        "site": "YouTube",
+        "type": "Trailer",
+        "name": "A Royal Christmas Premieres Saturday, November 22nd 8/7c",
+        "official": true
+      }
+    ],
+    "trailerYoutubeKey": "Kua76tb2W54",
+    "voteAverage": 6.7,
+    "voteCount": 249,
+    "tmdbUpdatedAt": "2026-10-01T10:27:54.325Z",
+    "tmdbFetchedAt": "2026-10-01T10:27:54.325Z"
+  },
+  {
+    "id": "hallmark-2014-the-christmas-shepherd",
+    "slug": "the-christmas-shepherd",
+    "title": "The Christmas Shepherd",
+    "year": 2014,
+    "brandId": "hallmark",
+    "releaseDate": "2014-11-23",
+    "synopsis": "Sally Brown, a successful children's book author and Army widow loses her late husband's German Shepherd, Buddy, only to later find him adopted by a new family - single father Mark Green and his teenage daughter Emma. Each finds a sense of Christmas spirit as they struggle to decide with whom the dog really belongs.",
+    "posterUrl": "/images/posters/299583.jpg",
+    "backdropUrl": "/images/backdrops/299583.jpg",
+    "cast": [
+      {
+        "actorId": "10399",
+        "name": "Teri Polo",
+        "character": "Sally Brown",
+        "slug": "teri-polo",
+        "tmdbPersonId": 10399,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/5xVk9bfMOeJxKmAGJddOhcNp2rX.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "116573",
+        "name": "Martin Cummins",
+        "character": "Mark Green",
+        "slug": "martin-cummins",
+        "tmdbPersonId": 116573,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/gnc1YUrHiYciRWB4ZCJFk9boAHg.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "1725613",
+        "name": "Jordyn Ashley Olson",
+        "character": "Emma Green",
+        "slug": "jordyn-ashley-olson",
+        "tmdbPersonId": 1725613,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/8HTGi5GPlQi0hejaQAK0MSQ7xDK.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "25414",
+        "name": "Jody Thompson",
+        "character": "Beth",
+        "slug": "jody-thompson",
+        "tmdbPersonId": 25414,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/3bhRTl6RQUco8a2cOF3a7uBvIj.jpg",
+        "order": 3
+      },
+      {
+        "actorId": "189718",
+        "name": "Jeffrey Ballard",
+        "character": "Bryan Brown",
+        "slug": "jeffrey-ballard",
+        "tmdbPersonId": 189718,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/dZpCSY8ARFteZd1t5P0n3iGzv49.jpg",
+        "order": 4
+      },
+      {
+        "actorId": "129984",
+        "name": "Glynis Davies",
+        "character": "Clinic Director",
+        "slug": "glynis-davies",
+        "tmdbPersonId": 129984,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/mB0tt7lc3Wg2aR34Ful6ZQGkh1H.jpg",
+        "order": 5
+      },
+      {
+        "actorId": "1725614",
+        "name": "Quinn Dubois",
+        "character": "Jacob",
+        "slug": "quinn-dubois",
+        "tmdbPersonId": 1725614,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/hoT6ZPuqvsaYZn4M8sQv3uQczLJ.jpg",
+        "order": 6
+      },
+      {
+        "actorId": "62713",
+        "name": "Tim Perez",
+        "character": "Truck Driver",
+        "slug": "tim-perez",
+        "tmdbPersonId": 62713,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/urkaUPRd12wuEDXsG9QxjdIpwTE.jpg",
+        "order": 7
+      },
+      {
+        "actorId": "21214",
+        "name": "Jill Teed",
+        "character": "Greta",
+        "slug": "jill-teed",
+        "tmdbPersonId": 21214,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/pRu4qqDcb8ze3RKgoKxPwzW9SRP.jpg",
+        "order": 8
+      },
+      {
+        "actorId": "172797",
+        "name": "June B. Wilde",
+        "character": "Margie",
+        "slug": "june-b-wilde",
+        "tmdbPersonId": 172797,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/6lzy4CHjhcNT1UjbJFnxMF8kLPA.jpg",
+        "order": 9
+      },
+      {
+        "actorId": "1632954",
+        "name": "Trevor Lerner",
+        "character": "Santa",
+        "slug": "trevor-lerner",
+        "tmdbPersonId": 1632954,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/iiZ6YUlsfyIyuIac1AekE9DYinJ.jpg",
+        "order": 10
+      }
+    ],
+    "director": "Terry Ingram",
+    "tmdbId": 299583,
+    "imdbId": "tt4222522",
+    "isComingSoon": false,
+    "status": "collection",
+    "originalTitle": "The Christmas Shepherd",
+    "runtimeMinutes": 84,
+    "genres": [
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      },
+      {
+        "id": 18,
+        "name": "Drama"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "US",
+        "releaseDate": "2014-11-23T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "Hallmark"
+      }
+    ],
+    "crew": [
+      {
+        "id": 110468,
+        "name": "Terry Ingram",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/iJIumt1U6KknXM3rl9TIMLI5S7D.jpg",
+        "creditId": "582681cd9251417b29012965"
+      },
+      {
+        "id": 106476,
+        "name": "Michael J. Murray",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "585a40c392514146c9065299"
+      }
+    ],
+    "trailers": [
+      {
+        "key": "CsgUGiNpba8",
+        "site": "YouTube",
+        "type": "Trailer",
+        "name": "The Christmas Shepherd",
+        "official": true
+      }
+    ],
+    "trailerYoutubeKey": "CsgUGiNpba8",
+    "voteAverage": 6,
+    "voteCount": 34,
+    "tmdbUpdatedAt": "2026-10-01T10:27:55.217Z",
+    "tmdbFetchedAt": "2026-10-01T10:27:55.217Z"
+  },
+  {
+    "id": "hallmark-2014-mr-miracle",
+    "slug": "mr-miracle",
+    "title": "Mr. Miracle",
+    "year": 2014,
+    "brandId": "hallmark",
+    "releaseDate": "2014-12-06",
+    "synopsis": "Heavenly angel Harry Mills is sent to Earth on a trial assignment to intervene in the life of a woman who needs help getting her life on track after the death of her father. With a deadline of Christmas day, he attempts to help her heal in order to embrace a new future, and an unexpected love, just in time to celebrate the miracle of the holiday season.",
+    "posterUrl": "/images/posters/299585.jpg",
+    "backdropUrl": "/images/backdrops/299585.jpg",
+    "cast": [
+      {
+        "actorId": "52602",
+        "name": "Rob Morrow",
+        "character": "Harry Mills",
+        "slug": "rob-morrow",
+        "tmdbPersonId": 52602,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/nxF4xVyEtQLMxDXlhJHnCoKM4MI.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "59240",
+        "name": "Michelle Harrison",
+        "character": "Celeste",
+        "slug": "michelle-harrison",
+        "tmdbPersonId": 59240,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/4NNuBCS6I4USJT45xSN9R7vwXFI.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "62866",
+        "name": "Britt Irvin",
+        "character": "Addie Folsom",
+        "slug": "britt-irvin",
+        "tmdbPersonId": 62866,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/kBur7ANcUpwqm3ZWrRZhJ5kB7MZ.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "1175501",
+        "name": "Kendra Anderson",
+        "character": "Victoria Webb",
+        "slug": "kendra-anderson",
+        "tmdbPersonId": 1175501,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/eUpDAS5owssdULkD6kT2AaF9pUf.jpg",
+        "order": 3
+      },
+      {
+        "actorId": "52718",
+        "name": "Andrew Francis",
+        "character": "Erich",
+        "slug": "andrew-francis",
+        "tmdbPersonId": 52718,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/lvmgsIzCobciX8vDAX8wyBVDryq.jpg",
+        "order": 4
+      },
+      {
+        "actorId": "1475098",
+        "name": "Rami Kahlon",
+        "character": "Receptionist",
+        "slug": "rami-kahlon",
+        "tmdbPersonId": 1475098,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/kdNcjYX303zpSM8bJmPAwrKiyEB.jpg",
+        "order": 5
+      },
+      {
+        "actorId": "147473",
+        "name": "Ingrid Kavelaars",
+        "character": "Michelle Rose",
+        "slug": "ingrid-kavelaars",
+        "tmdbPersonId": 147473,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/jAqs9YXCIv6gcjXRExLhoxGhZtX.jpg",
+        "order": 6
+      },
+      {
+        "actorId": "1176891",
+        "name": "Kehli O'Byrne",
+        "character": "Julie Simmons",
+        "slug": "kehli-o-byrne",
+        "tmdbPersonId": 1176891,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/m70sy9IIBsISoEUy4nzKaA5iygZ.jpg",
+        "order": 7
+      },
+      {
+        "actorId": "134612",
+        "name": "Scott Patey",
+        "character": "Customer",
+        "slug": "scott-patey",
+        "tmdbPersonId": 134612,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/rPO7zMUjCjanGsLyzT8fmbERbZZ.jpg",
+        "order": 8
+      },
+      {
+        "actorId": "59183",
+        "name": "Sarah-Jane Redmond",
+        "character": "Sharon",
+        "slug": "sarah-jane-redmond",
+        "tmdbPersonId": 59183,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/qhJ0QsKnZslUOCGLur4NS91BXgM.jpg",
+        "order": 9
+      },
+      {
+        "actorId": "27110",
+        "name": "Malcolm Stewart",
+        "character": "Mr. Conceito",
+        "slug": "malcolm-stewart",
+        "tmdbPersonId": 27110,
+        "order": 10
+      },
+      {
+        "actorId": "112643",
+        "name": "Vanesa Tomasino",
+        "character": "Elaina",
+        "slug": "vanesa-tomasino",
+        "tmdbPersonId": 112643,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/8BcElYmAMqtxxucxihps6eP5dqS.jpg",
+        "order": 11
+      },
+      {
+        "actorId": "1287152",
+        "name": "William Vaughan",
+        "character": "Andrew Fairfax",
+        "slug": "william-vaughan",
+        "tmdbPersonId": 1287152,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/3Y8j1sV1ysM01HtSTyTAhNWMIRg.jpg",
+        "order": 12
+      },
+      {
+        "actorId": "41432",
+        "name": "Candus Churchill",
+        "character": "Betty",
+        "slug": "candus-churchill",
+        "tmdbPersonId": 41432,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/r3oaD58Eyfbyz8Yod3LNVbKG942.jpg",
+        "order": 13
+      }
+    ],
+    "director": "Carl Bessai",
+    "tmdbId": 299585,
+    "imdbId": "tt3946792",
+    "isComingSoon": false,
+    "status": "collection",
+    "originalTitle": "Mr. Miracle",
+    "runtimeMinutes": 86,
+    "genres": [
+      {
+        "id": 18,
+        "name": "Drama"
+      },
+      {
+        "id": 10751,
+        "name": "Family"
+      },
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "DE",
+        "releaseDate": "2016-10-26T00:00:00.000Z",
+        "type": 5,
+        "certification": "0",
+        "note": ""
+      },
+      {
+        "country": "FR",
+        "releaseDate": "2017-11-07T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": ""
+      },
+      {
+        "country": "US",
+        "releaseDate": "2014-12-06T00:00:00.000Z",
+        "type": 6,
+        "certification": "G",
+        "note": "Hallmark Channel"
+      }
+    ],
+    "crew": [
+      {
+        "id": 62897,
+        "name": "Carl Bessai",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/cWfxXaLCc4pNNBFj3h2B9V6lh97.jpg",
+        "creditId": "54608cfac3a36841d300496e"
+      },
+      {
+        "id": 1397015,
+        "name": "Heather Maidat",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "548775ba9251416b9a00018b"
+      }
+    ],
+    "trailers": [
+      {
+        "key": "Hjesz32evHI",
+        "site": "YouTube",
+        "type": "Trailer",
+        "name": "Mr. Miracle",
+        "official": true
+      }
+    ],
+    "trailerYoutubeKey": "Hjesz32evHI",
+    "voteAverage": 5.2,
+    "voteCount": 23,
+    "tmdbUpdatedAt": "2026-10-01T10:27:55.243Z",
+    "tmdbFetchedAt": "2026-10-01T10:27:55.243Z"
+  },
+  {
+    "id": "hallmark-2014-christmas-at-cartwright-s",
+    "slug": "christmas-at-cartwright-s",
+    "title": "Christmas at Cartwright's",
+    "year": 2014,
+    "brandId": "hallmark",
+    "releaseDate": "2014-12-07",
+    "synopsis": "With Christmas approaching, a struggling single mom finds herself working as a department store Santa Claus, as a real-life angel delivers good fortune and the possibility of holiday romance.",
+    "posterUrl": "/images/posters/299588.jpg",
+    "backdropUrl": "/images/backdrops/299588.jpg",
+    "cast": [
+      {
+        "actorId": "3128",
+        "name": "Alicia Witt",
+        "character": "Nicky",
+        "slug": "alicia-witt",
+        "tmdbPersonId": 3128,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/vQ2McAjHjY3A7oDrPMx6aLSsvkW.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "148125",
+        "name": "Gabriel Hogan",
+        "character": "Bill",
+        "slug": "gabriel-hogan",
+        "tmdbPersonId": 148125,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/phKmguA7pcquBJygZYwLEzPX28Q.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "12900",
+        "name": "Wallace Shawn",
+        "character": "Harry",
+        "slug": "wallace-shawn",
+        "tmdbPersonId": 12900,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/tiiz0t7fFiaeoujUyejzIiLRYpu.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "1393826",
+        "name": "T.J. McGibbon",
+        "character": "Becky",
+        "slug": "t-j-mcgibbon",
+        "tmdbPersonId": 1393826,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/k75hqHbiyun2guO4VGlEbwu4VDJ.jpg",
+        "order": 3
+      },
+      {
+        "actorId": "14893",
+        "name": "Linda Kash",
+        "character": "Peg",
+        "slug": "linda-kash",
+        "tmdbPersonId": 14893,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/cjhnm6KivAf2CLWgTYuTPMqJxIw.jpg",
+        "order": 4
+      },
+      {
+        "actorId": "175698",
+        "name": "Gabrielle Miller",
+        "character": "Fiona Aldrich",
+        "slug": "gabrielle-miller",
+        "tmdbPersonId": 175698,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/vrN08aTTNmMG0VBXQ0Oc7Eb9ifT.jpg",
+        "order": 5
+      },
+      {
+        "actorId": "4568",
+        "name": "Jayne Eastwood",
+        "character": "Mrs. Rositani",
+        "slug": "jayne-eastwood",
+        "tmdbPersonId": 4568,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/cL75FbJRKDdpvkOJDUgUYPZHKks.jpg",
+        "order": 6
+      },
+      {
+        "actorId": "44248",
+        "name": "Ron Lea",
+        "character": "Mr. Cartwright",
+        "slug": "ron-lea",
+        "tmdbPersonId": 44248,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/jxSFEsvAOej3326HZG0KWPFc2NU.jpg",
+        "order": 7
+      },
+      {
+        "actorId": "1234319",
+        "name": "Miku Graham",
+        "character": "Liz",
+        "slug": "miku-graham",
+        "tmdbPersonId": 1234319,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/j1wJTRoVxFJMGOVVruit9L2pOH5.jpg",
+        "order": 8
+      },
+      {
+        "actorId": "168455",
+        "name": "Marsha Regis",
+        "character": "Mrs. Laurence",
+        "slug": "marsha-regis",
+        "tmdbPersonId": 168455,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/eMVtmErqHfJ6v2YlClpeqRis9KI.jpg",
+        "order": 9
+      },
+      {
+        "actorId": "1906240",
+        "name": "Kerry Lai Fatt",
+        "character": "Sarah",
+        "slug": "kerry-lai-fatt",
+        "tmdbPersonId": 1906240,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/sc9AaMSdFnnzi32DrFFWXmQpUt5.jpg",
+        "order": 10
+      },
+      {
+        "actorId": "559862",
+        "name": "Andre Richards",
+        "character": "Santa's Helper #2",
+        "slug": "andre-richards",
+        "tmdbPersonId": 559862,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/f7vpRu8Z1YyP6zFgqSsg81ZqqGY.jpg",
+        "order": 11
+      },
+      {
+        "actorId": "1746410",
+        "name": "Nneka Elliott",
+        "character": "Tina Richards",
+        "slug": "nneka-elliott",
+        "tmdbPersonId": 1746410,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/lvKrkICabtejk9Wp2X4Fvz6CsAV.jpg",
+        "order": 12
+      },
+      {
+        "actorId": "1511257",
+        "name": "Catherine-rain Wilcox",
+        "character": "Sophie",
+        "slug": "catherine-rain-wilcox",
+        "tmdbPersonId": 1511257,
+        "order": 13
+      },
+      {
+        "actorId": "2550718",
+        "name": "Zenna Hilliard",
+        "character": "Grace",
+        "slug": "zenna-hilliard",
+        "tmdbPersonId": 2550718,
+        "order": 14
+      },
+      {
+        "actorId": "2550721",
+        "name": "Greg Tremblay",
+        "character": "Security Guard",
+        "slug": "greg-tremblay",
+        "tmdbPersonId": 2550721,
+        "order": 15
+      },
+      {
+        "actorId": "1562521",
+        "name": "Michael Vincent Dagostino",
+        "character": "Co-Worker #1",
+        "slug": "michael-vincent-dagostino",
+        "tmdbPersonId": 1562521,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/4LNit8r65vEiXwbCn0Iq7UgfP9D.jpg",
+        "order": 16
+      },
+      {
+        "actorId": "2550722",
+        "name": "Mark Bartolucci",
+        "character": "Fiona's Santa",
+        "slug": "mark-bartolucci",
+        "tmdbPersonId": 2550722,
+        "order": 17
+      },
+      {
+        "actorId": "2100341",
+        "name": "Kelsey Ruhl",
+        "character": "Barista",
+        "slug": "kelsey-ruhl",
+        "tmdbPersonId": 2100341,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/jc0dSwb4butC61NOSomGZfjhau6.jpg",
+        "order": 18
+      },
+      {
+        "actorId": "2550723",
+        "name": "Jérémie Lemieux",
+        "character": "Bratty Little Trevor",
+        "slug": "j-r-mie-lemieux",
+        "tmdbPersonId": 2550723,
+        "order": 19
+      },
+      {
+        "actorId": "2550724",
+        "name": "Melanie Rainville",
+        "character": "Bratty Trevor's Mom",
+        "slug": "melanie-rainville",
+        "tmdbPersonId": 2550724,
+        "order": 20
+      },
+      {
+        "actorId": "2550729",
+        "name": "Brooke Dugas",
+        "character": "Little Girl",
+        "slug": "brooke-dugas",
+        "tmdbPersonId": 2550729,
+        "order": 21
+      },
+      {
+        "actorId": "112434",
+        "name": "Brenda Whitehead",
+        "character": "Little Girl's Mom",
+        "slug": "brenda-whitehead",
+        "tmdbPersonId": 112434,
+        "order": 22
+      },
+      {
+        "actorId": "2550733",
+        "name": "Katie Advani",
+        "character": "Girl Visiting Santa",
+        "slug": "katie-advani",
+        "tmdbPersonId": 2550733,
+        "order": 23
+      },
+      {
+        "actorId": "2550734",
+        "name": "Annastasia Boston",
+        "character": "Stand-in",
+        "slug": "annastasia-boston",
+        "tmdbPersonId": 2550734,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/5bE9VjuRfBI77iSdNA8mrBGGm4z.jpg",
+        "order": 24
+      },
+      {
+        "actorId": "2020652",
+        "name": "Michael Cleland",
+        "character": "Holiday Shopper",
+        "slug": "michael-cleland",
+        "tmdbPersonId": 2020652,
+        "order": 25
+      },
+      {
+        "actorId": "2128820",
+        "name": "Joseph Kabbach",
+        "character": "Billy / Janitor",
+        "slug": "joseph-kabbach",
+        "tmdbPersonId": 2128820,
+        "order": 26
+      },
+      {
+        "actorId": "2550735",
+        "name": "Ron Lepage",
+        "character": "Tree Salesman",
+        "slug": "ron-lepage",
+        "tmdbPersonId": 2550735,
+        "order": 27
+      },
+      {
+        "actorId": "2275012",
+        "name": "Evie Moores",
+        "character": "Tree Shopper",
+        "slug": "evie-moores",
+        "tmdbPersonId": 2275012,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/fDaVuCmG0RP23CxaynL1mtEIU4.jpg",
+        "order": 28
+      },
+      {
+        "actorId": "2550736",
+        "name": "Sandro Spaziani",
+        "character": "Cartwright's Store Clerk",
+        "slug": "sandro-spaziani",
+        "tmdbPersonId": 2550736,
+        "order": 29
+      },
+      {
+        "actorId": "2550737",
+        "name": "Jaymee Weir",
+        "character": "Santa's Little Helper / Reindeer Photographer",
+        "slug": "jaymee-weir",
+        "tmdbPersonId": 2550737,
+        "order": 30
+      },
+      {
+        "actorId": "1906688",
+        "name": "Tammy-lynn Wilcox",
+        "character": "Sophie's Mom",
+        "slug": "tammy-lynn-wilcox",
+        "tmdbPersonId": 1906688,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/lntDqlGjcqt9iqaoO0rgyKG6SiH.jpg",
+        "order": 31
+      },
+      {
+        "actorId": "1562523",
+        "name": "Douglas E. Davidson",
+        "character": "Cartwright's Associate (uncredited)",
+        "slug": "douglas-e-davidson",
+        "tmdbPersonId": 1562523,
+        "order": 32
+      },
+      {
+        "actorId": "1562524",
+        "name": "Yvonne E. Davidson",
+        "character": "Cartwright's Assistant (uncredited)",
+        "slug": "yvonne-e-davidson",
+        "tmdbPersonId": 1562524,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/fbmKc7HBsxPEH5ncl5YsEH2y4ge.jpg",
+        "order": 33
+      },
+      {
+        "actorId": "2550738",
+        "name": "Jocelyne Letto",
+        "character": "Holiday Shopper (uncredited)",
+        "slug": "jocelyne-letto",
+        "tmdbPersonId": 2550738,
+        "order": 34
+      },
+      {
+        "actorId": "2508022",
+        "name": "Rodney JR Wilcox",
+        "character": "School Boy (uncredited)",
+        "slug": "rodney-jr-wilcox",
+        "tmdbPersonId": 2508022,
+        "order": 35
+      }
+    ],
+    "director": "Graeme Campbell",
+    "tmdbId": 299588,
+    "imdbId": "tt4177742",
+    "isComingSoon": false,
+    "status": "collection",
+    "originalTitle": "Christmas at Cartwright's",
+    "runtimeMinutes": 84,
+    "genres": [
+      {
+        "id": 10749,
+        "name": "Romance"
+      },
+      {
+        "id": 10751,
+        "name": "Family"
+      },
+      {
+        "id": 18,
+        "name": "Drama"
+      },
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "FR",
+        "releaseDate": "2015-12-13T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": ""
+      },
+      {
+        "country": "US",
+        "releaseDate": "2014-12-07T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "Hallmark Channel"
+      }
+    ],
+    "crew": [
+      {
+        "id": 90365,
+        "name": "Graeme Campbell",
+        "job": "Director",
+        "department": "Directing",
+        "creditId": "547f77a5925141238f00039e"
+      },
+      {
+        "id": 56912,
+        "name": "Margaret Oberman",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "547f77bb925141238f0003a1"
+      }
+    ],
+    "trailers": [
+      {
+        "key": "6pr-tlURPVs",
+        "site": "YouTube",
+        "type": "Trailer",
+        "name": "Christmas At Cartwrights - Stars Alicia Witt and Wally Shawn",
+        "official": true
+      }
+    ],
+    "trailerYoutubeKey": "6pr-tlURPVs",
+    "voteAverage": 5.6,
+    "voteCount": 69,
+    "tmdbUpdatedAt": "2026-10-01T10:27:56.138Z",
+    "tmdbFetchedAt": "2026-10-01T10:27:56.138Z"
+  },
+  {
+    "id": "hallmark-2014-best-christmas-party-ever",
+    "slug": "best-christmas-party-ever",
+    "title": "Best Christmas Party Ever",
+    "year": 2014,
+    "brandId": "hallmark",
+    "releaseDate": "2014-12-13",
+    "synopsis": "With the holidays approaching, a young party planner arranges a special Christmas party for a New York toy store. When a powerful corporation threatens to shut her down, she decides to follow her heart, moving forward with the party plans and finding true love in time for Christmas.",
+    "posterUrl": "/images/posters/299590.jpg",
+    "backdropUrl": "/images/backdrops/299590.jpg",
+    "cast": [
+      {
+        "actorId": "33296",
+        "name": "Torrey DeVitto",
+        "character": "Jennie Stanton",
+        "slug": "torrey-devitto",
+        "tmdbPersonId": 33296,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/mLRBWh6j0Jmgles7PLdEW3N63Ne.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "1290184",
+        "name": "Steve Lund",
+        "character": "Nick",
+        "slug": "steve-lund",
+        "tmdbPersonId": 1290184,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/cG3CblgPuywaL2cKwZgrK5JAJUU.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "1526124",
+        "name": "Emily Coutts",
+        "character": "Natalie",
+        "slug": "emily-coutts",
+        "tmdbPersonId": 1526124,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/hxZf2ZzEFToeUDlfe4rxu9yEc42.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "83052",
+        "name": "Linda Thorson",
+        "character": "Petra",
+        "slug": "linda-thorson",
+        "tmdbPersonId": 83052,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/ikmFouEEq6GKY6UBq2fwmKY0Se0.jpg",
+        "order": 3
+      },
+      {
+        "actorId": "1287272",
+        "name": "Kalinka Pétrie",
+        "character": "Kim",
+        "slug": "kalinka-p-trie",
+        "tmdbPersonId": 1287272,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/we69ElSqZ7ipuf2widDAoCy92Yf.jpg",
+        "order": 4
+      },
+      {
+        "actorId": "205813",
+        "name": "Harmon Walsh",
+        "character": "Todd Perry",
+        "slug": "harmon-walsh",
+        "tmdbPersonId": 205813,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/3gyUy8Gg1AVwY6M6vFlPAkMD12d.jpg",
+        "order": 5
+      },
+      {
+        "actorId": "17646",
+        "name": "Sean McCann",
+        "character": "Arthur Tyrell",
+        "slug": "sean-mccann",
+        "tmdbPersonId": 17646,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/sVT3HB2rIkfgZ87mCiGmYS2OrzF.jpg",
+        "order": 6
+      },
+      {
+        "actorId": "2120213",
+        "name": "Michael Gordin Shore",
+        "character": "John Mitchell",
+        "slug": "michael-gordin-shore",
+        "tmdbPersonId": 2120213,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/nTJBOF5bdKyBI8OdCPFXbyQqjak.jpg",
+        "order": 7
+      },
+      {
+        "actorId": "1980467",
+        "name": "Halle Nunes",
+        "character": "Young Jennie",
+        "slug": "halle-nunes",
+        "tmdbPersonId": 1980467,
+        "order": 8
+      },
+      {
+        "actorId": "6770",
+        "name": "Kathy Imrie",
+        "character": "Bridget",
+        "slug": "kathy-imrie",
+        "tmdbPersonId": 6770,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/1pNwrx4nouT0fIlu4C5ngVgVyX8.jpg",
+        "order": 9
+      },
+      {
+        "actorId": "1357659",
+        "name": "Nick Baillie",
+        "character": "Jennie's Father",
+        "slug": "nick-baillie",
+        "tmdbPersonId": 1357659,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/3Sssaq0sXcxX3ZPO4JcAr0TEPdH.jpg",
+        "order": 10
+      },
+      {
+        "actorId": "2475053",
+        "name": "Danielle Watling",
+        "character": "Server",
+        "slug": "danielle-watling",
+        "tmdbPersonId": 2475053,
+        "order": 11
+      },
+      {
+        "actorId": "2395383",
+        "name": "Jason R. Stroud",
+        "character": "Waiter",
+        "slug": "jason-r-stroud",
+        "tmdbPersonId": 2395383,
+        "order": 12
+      },
+      {
+        "actorId": "2098706",
+        "name": "Richie Lawrence",
+        "character": "George",
+        "slug": "richie-lawrence",
+        "tmdbPersonId": 2098706,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/fC82yfzUbndQVNnOxbVOFVJpxEt.jpg",
+        "order": 13
+      },
+      {
+        "actorId": "1389958",
+        "name": "Shannon Stevens",
+        "character": "Ballerina #1",
+        "slug": "shannon-stevens",
+        "tmdbPersonId": 1389958,
+        "order": 14
+      },
+      {
+        "actorId": "2146203",
+        "name": "Michael Fessaha",
+        "character": "Teenager",
+        "slug": "michael-fessaha",
+        "tmdbPersonId": 2146203,
+        "order": 15
+      },
+      {
+        "actorId": "1015896",
+        "name": "Adrian G. Griffiths",
+        "character": "Father",
+        "slug": "adrian-g-griffiths",
+        "tmdbPersonId": 1015896,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/poAUvX24DOwr0xDIzwIWqCH1MY8.jpg",
+        "order": 16
+      },
+      {
+        "actorId": "2475055",
+        "name": "Victoria Whistance-Smith",
+        "character": "Ballerina #2",
+        "slug": "victoria-whistance-smith",
+        "tmdbPersonId": 2475055,
+        "order": 17
+      },
+      {
+        "actorId": "99067",
+        "name": "Melissa Moore",
+        "character": "Ballerina #3",
+        "slug": "melissa-moore",
+        "tmdbPersonId": 99067,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/sgnkM3u8ulyJ1cka8uvD4yxA7eM.jpg",
+        "order": 18
+      },
+      {
+        "actorId": "96652",
+        "name": "Amy Ballantyne",
+        "character": "Mother",
+        "slug": "amy-ballantyne",
+        "tmdbPersonId": 96652,
+        "order": 19
+      },
+      {
+        "actorId": "1357659",
+        "name": "Nick Baillie",
+        "character": "Père de Jennie",
+        "slug": "nick-baillie",
+        "tmdbPersonId": 1357659,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/3Sssaq0sXcxX3ZPO4JcAr0TEPdH.jpg",
+        "order": 20
+      }
+    ],
+    "director": "John Bradshaw",
+    "tmdbId": 299590,
+    "imdbId": "tt4065316",
+    "isComingSoon": false,
+    "status": "collection",
+    "originalTitle": "Best Christmas Party Ever",
+    "runtimeMinutes": 88,
+    "genres": [
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      },
+      {
+        "id": 18,
+        "name": "Drama"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "US",
+        "releaseDate": "2014-12-13T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "Hallmark Channel "
+      }
+    ],
+    "crew": [
+      {
+        "id": 224214,
+        "name": "John Bradshaw",
+        "job": "Director",
+        "department": "Directing",
+        "creditId": "548b5df592514122f50001ba"
+      },
+      {
+        "id": 201028,
+        "name": "Lewis Chesler",
+        "job": "Story",
+        "department": "Writing",
+        "creditId": "5de7c7d4a313b8001891c0e5"
+      },
+      {
+        "id": 2475049,
+        "name": "Fariba Cain",
+        "job": "Story",
+        "department": "Writing",
+        "creditId": "5de7c7e77646fd00139997bc"
+      },
+      {
+        "id": 1130509,
+        "name": "Robert Vaughn",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "5de7c80c3faba0001514b6fc"
+      },
+      {
+        "id": 224215,
+        "name": "Kevin Commins",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "5de7c81c7646fd00139997f8"
+      }
+    ],
+    "trailers": [
+      {
+        "key": "E8VkF3XVNyc",
+        "site": "YouTube",
+        "type": "Teaser",
+        "name": "Preview - Best Christmas Party Ever - Hallmark Movies Now",
+        "official": true
+      },
+      {
+        "key": "fa-UQH95Qo8",
+        "site": "YouTube",
+        "type": "Trailer",
+        "name": "Best Christmas Party Ever, Premieres Saturday December 13th!",
+        "official": true
+      }
+    ],
+    "trailerYoutubeKey": "E8VkF3XVNyc",
+    "voteAverage": 6,
+    "voteCount": 61,
+    "tmdbUpdatedAt": "2026-10-01T10:27:56.295Z",
+    "tmdbFetchedAt": "2026-10-01T10:27:56.295Z"
+  },
+  {
+    "id": "hallmark-2014-the-christmas-parade",
+    "slug": "the-christmas-parade",
+    "title": "The Christmas Parade",
+    "year": 2014,
+    "brandId": "hallmark",
+    "releaseDate": "2014-12-14",
+    "synopsis": "A popular network morning host finds herself humiliated on the air by her fiancé and disappears to a small town. While there, she helps a budding artist save a community art center for the town's kids, by helping them with their float for the annual Christmas Parade.",
+    "posterUrl": "/images/posters/299591.jpg",
+    "backdropUrl": "/images/backdrops/299591.jpg",
+    "cast": [
+      {
+        "actorId": "82662",
+        "name": "AnnaLynne McCord",
+        "character": "Hayley Temple",
+        "slug": "annalynne-mccord",
+        "tmdbPersonId": 82662,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/1clytn2mrOWvbUQOvVNJb32v7P.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "83530",
+        "name": "Jefferson Brown",
+        "character": "Beck Thomas",
+        "slug": "jefferson-brown",
+        "tmdbPersonId": 83530,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/8iVOZvnjT7JFAG2glNQA9I5sFVw.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "111591",
+        "name": "Drew Scott",
+        "character": "Jason Keppler",
+        "slug": "drew-scott",
+        "tmdbPersonId": 111591,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/1Z2OmJWJSRlb7x5z196xWTYHNAW.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "184815",
+        "name": "Jennifer Gibson",
+        "character": "Monica",
+        "slug": "jennifer-gibson",
+        "tmdbPersonId": 184815,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/bvwIJtjr71k2wric1vnelsVT5PF.jpg",
+        "order": 3
+      },
+      {
+        "actorId": "572724",
+        "name": "Christian Martyn",
+        "character": "Zach",
+        "slug": "christian-martyn",
+        "tmdbPersonId": 572724,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/kTwixMOquzSkPnElRj91X0Kkij4.jpg",
+        "order": 4
+      },
+      {
+        "actorId": "1564605",
+        "name": "Katherine Forrester",
+        "character": "Kelsey",
+        "slug": "katherine-forrester",
+        "tmdbPersonId": 1564605,
+        "order": 5
+      },
+      {
+        "actorId": "1260011",
+        "name": "Jack Fulton",
+        "character": "Charles",
+        "slug": "jack-fulton",
+        "tmdbPersonId": 1260011,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/6o53Mllthcmt5CRkvIwGgmHAYgc.jpg",
+        "order": 6
+      },
+      {
+        "actorId": "1923854",
+        "name": "Devon Soltendieck",
+        "character": "Brody, Greg",
+        "slug": "devon-soltendieck",
+        "tmdbPersonId": 1923854,
+        "order": 7
+      }
+    ],
+    "director": "Jonathan Wright",
+    "tmdbId": 299591,
+    "imdbId": "tt4065324",
+    "isComingSoon": false,
+    "status": "collection",
+    "originalTitle": "The Christmas Parade",
+    "runtimeMinutes": 83,
+    "genres": [
+      {
+        "id": 18,
+        "name": "Drama"
+      },
+      {
+        "id": 10751,
+        "name": "Family"
+      },
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "US",
+        "releaseDate": "2014-12-14T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "Hallmark"
+      }
+    ],
+    "crew": [
+      {
+        "id": 207180,
+        "name": "Jonathan Wright",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/zi1roGouFMONsRKEUJwLXlCW1OX.jpg",
+        "creditId": "5466b477eaeb81727f00060b"
+      },
+      {
+        "id": 1923856,
+        "name": "Carley Smale",
+        "job": "Writer",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/qUGhAccrmG5sHeDBu9TdpBbxcW.jpg",
+        "creditId": "5a0b59d6c3a36820e9022c5f"
+      },
+      {
+        "id": 201028,
+        "name": "Lewis Chesler",
+        "job": "Story",
+        "department": "Writing",
+        "creditId": "64547779c0442901857229f9"
+      },
+      {
+        "id": 1130509,
+        "name": "Robert Vaughn",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "64547783d48cee017026a045"
+      }
+    ],
+    "trailers": [
+      {
+        "key": "ZPL58QbS4mA",
+        "site": "YouTube",
+        "type": "Trailer",
+        "name": "The Christmas Parade - Stars AnnaLynne McCord, Jefferson Brown and Drew Scott",
+        "official": true
+      }
+    ],
+    "trailerYoutubeKey": "ZPL58QbS4mA",
+    "voteAverage": 5.2,
+    "voteCount": 51,
+    "tmdbUpdatedAt": "2026-10-01T10:27:56.981Z",
+    "tmdbFetchedAt": "2026-10-01T10:27:56.981Z"
   }
 ];
 
