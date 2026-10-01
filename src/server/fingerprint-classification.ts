@@ -43,6 +43,8 @@ export interface FingerprintCheckpoint {
   version: 1;
   updatedAt: string;
   entries: Record<string, FingerprintCheckpointEntry>;
+  /** Catalogue IDs seen by the run that last wrote this checkpoint. */
+  catalogueMovieIds?: string[];
 }
 
 export interface FingerprintClassifier {
@@ -207,15 +209,6 @@ function hasUnchangedClassifierInput(entry: FingerprintCheckpointEntry | undefin
   return Boolean(entry && JSON.stringify(entry.input) === JSON.stringify(input));
 }
 
-function hasNewerCatalogueMetadata(movie: Movie, entry: FingerprintCheckpointEntry): boolean {
-  if (!movie.tmdbUpdatedAt) return false;
-  const catalogueUpdatedAt = Date.parse(movie.tmdbUpdatedAt);
-  const checkpointUpdatedAt = Date.parse(entry.updatedAt);
-  return Number.isFinite(catalogueUpdatedAt)
-    && Number.isFinite(checkpointUpdatedAt)
-    && catalogueUpdatedAt > checkpointUpdatedAt;
-}
-
 export async function classifyFingerprintBatch(
   movies: Movie[],
   classifier: FingerprintClassifier,
@@ -223,6 +216,11 @@ export async function classifyFingerprintBatch(
 ): Promise<ClassificationRunSummary> {
   const checkpoint = await readFingerprintCheckpoint(options.checkpointPath);
   const assignedIds = new Set(Object.keys(PROTOTYPE_MOVIE_FINGERPRINTS));
+  const knownCatalogueMovieIds = checkpoint.catalogueMovieIds === undefined
+    ? undefined
+    : new Set(checkpoint.catalogueMovieIds);
+  const currentCatalogueMovieIds = new Set(movies.map((movie) => movie.id));
+  const hasCompleteCatalogueSnapshot = Boolean(knownCatalogueMovieIds && knownCatalogueMovieIds.size === currentCatalogueMovieIds.size && [...currentCatalogueMovieIds].every((movieId) => knownCatalogueMovieIds.has(movieId)));
   const eligible = movies.filter((movie) => {
     if (assignedIds.has(movie.id)) return false;
     if (options.movieId && movie.id !== options.movieId) return false;
@@ -230,13 +228,17 @@ export async function classifyFingerprintBatch(
     const checkpointEntry = checkpoint.entries[movie.id];
     if (!checkpointEntry) return true;
     if (hasUnchangedClassifierInput(checkpointEntry, buildFingerprintClassifierInput(movie))) {
-      if (hasNewerCatalogueMetadata(movie, checkpointEntry)) return true;
+      if (options.onlyUnassigned && (!hasCompleteCatalogueSnapshot || !knownCatalogueMovieIds?.has(movie.id))) return true;
       return !isSuccessfulEntry(checkpointEntry) && checkpointEntry.status !== 'insufficient-data';
     }
     return true;
   });
   const selected = eligible.slice(0, options.limit === undefined ? eligible.length : Math.max(0, options.limit));
-  const working = options.dryRun ? { ...checkpoint, entries: { ...checkpoint.entries } } : checkpoint;
+  const catalogueMovieIds = [...new Set(movies.map((movie) => movie.id))];
+  const working = options.dryRun
+    ? { ...checkpoint, entries: { ...checkpoint.entries }, catalogueMovieIds }
+    : { ...checkpoint, catalogueMovieIds };
+  if (!options.dryRun) await writeFingerprintCheckpoint(working, options.checkpointPath);
   let processed = 0;
   let classified = 0;
   let noMatch = 0;
@@ -333,6 +335,10 @@ export function validateCheckpoint(raw: unknown): { ok: true; checkpoint: Finger
     return { ok: false, error: 'Checkpoint has an invalid shape.' };
   }
   const entries: Record<string, FingerprintCheckpointEntry> = {};
+  const rawCatalogueMovieIds = value.catalogueMovieIds;
+  if (rawCatalogueMovieIds !== undefined && (!Array.isArray(rawCatalogueMovieIds) || rawCatalogueMovieIds.some((movieId) => typeof movieId !== 'string'))) {
+    return { ok: false, error: 'Checkpoint has invalid catalogue movie IDs.' };
+  }
   for (const [key, rawEntry] of Object.entries(value.entries)) {
     if (!rawEntry || typeof rawEntry !== 'object' || Array.isArray(rawEntry)) return { ok: false, error: `Checkpoint entry ${key} is malformed.` };
     const entry = rawEntry as Record<string, unknown>;
@@ -348,7 +354,15 @@ export function validateCheckpoint(raw: unknown): { ok: true; checkpoint: Finger
     if (entry.status === 'failed' && typeof entry.error !== 'string') return { ok: false, error: `Checkpoint entry ${key} is failed without an error.` };
     entries[key] = { movieId: key, tmdbId: entry.tmdbId as number, title: entry.title as string, input: entry.input as FingerprintClassifierInput, status: entry.status, fingerprints: result.result.fingerprints, ...(typeof entry.error === 'string' ? { error: entry.error } : {}), updatedAt: entry.updatedAt as string };
   }
-  return { ok: true, checkpoint: { version: 1, updatedAt: value.updatedAt, entries } };
+  return {
+    ok: true,
+    checkpoint: {
+      version: 1,
+      updatedAt: value.updatedAt,
+      entries,
+      ...(rawCatalogueMovieIds !== undefined ? { catalogueMovieIds: [...new Set(rawCatalogueMovieIds as string[])] } : {}),
+    },
+  };
 }
 
 export async function readFingerprintCheckpoint(filePath = FINGERPRINT_CHECKPOINT_PATH): Promise<FingerprintCheckpoint> {

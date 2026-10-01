@@ -7,6 +7,7 @@ import {
   completeRefreshRun,
   createRefreshRun,
   getTmdbRefreshHistoryPath,
+  getCommittedTmdbRefreshHistoryPath,
   readRefreshHistory,
   startRefreshRun,
   unresolvedFailures,
@@ -51,6 +52,19 @@ try {
   }, new Date(), dataDir);
   assert.equal((await readRefreshHistory(dataDir)).runs.length, 3, 'failed runs are persisted');
   assert.ok((await fs.readFile(getTmdbRefreshHistoryPath(dataDir), 'utf8')).includes('FAILED'));
+
+  const committedHistoryPath = getCommittedTmdbRefreshHistoryPath();
+  const committedHistory = await fs.readFile(committedHistoryPath, 'utf8').catch(() => undefined);
+  if (committedHistory === undefined) {
+    assert.deepEqual((await readRefreshHistory(path.join(dataDir, 'missing-runtime-data'))).runs, [], 'missing runtime history does not invent completed runs');
+  }
+  const fallbackPath = path.join(dataDir, 'committed-refresh-history.json');
+  await fs.writeFile(fallbackPath, JSON.stringify({ runs: [createRefreshRun('full', new Date('2026-10-01T03:17:00.000Z'))] }));
+  assert.equal((await readRefreshHistory(path.join(dataDir, 'another-missing-runtime-data'), fallbackPath)).runs.length, 1, 'Admin health can read the committed workflow history artifact');
+  const emptyRuntimeDir = path.join(dataDir, 'empty-runtime-data');
+  await fs.mkdir(emptyRuntimeDir);
+  await fs.writeFile(getTmdbRefreshHistoryPath(emptyRuntimeDir), '{"runs":[]}');
+  assert.equal((await readRefreshHistory(emptyRuntimeDir, fallbackPath)).runs.length, 1, 'empty runtime history falls back to the committed workflow artifact');
 
   assert.equal(calculateRefreshHealthStatus({ unresolvedFailures: 0, overdueRecords: 0, fullScheduleMissed: false, comingSoonScheduleMissed: false }).status, 'HEALTHY');
   assert.equal(calculateRefreshHealthStatus({ unresolvedFailures: 0, overdueRecords: 10, fullScheduleMissed: false, comingSoonScheduleMissed: false }).status, 'ATTENTION NEEDED', 'overdue data triggers attention');

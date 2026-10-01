@@ -34,6 +34,11 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Restore refresh history for this run
+        run: |
+          mkdir -p data
+          if [ -f src/data/tmdb-refresh-history.json ]; then cp src/data/tmdb-refresh-history.json data/tmdb-refresh-history.json; fi
+
       - name: Refresh local TMDB metadata and images
         env:
           TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
@@ -71,9 +76,10 @@ jobs:
 
       - name: Persist refreshed catalogue and artwork
         run: |
+          if [ -f data/tmdb-refresh-history.json ]; then cp data/tmdb-refresh-history.json src/data/tmdb-refresh-history.json; fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add src/data/movies.ts src/data/actors.json src/data/refresh-report.json src/data/homepage-poster-ids.ts src/data/gaf-discovery.json src/data/gaf-import-report.json public/images
+          git add src/data/movies.ts src/data/actors.json src/data/refresh-report.json src/data/tmdb-refresh-history.json src/data/homepage-poster-ids.ts src/data/gaf-discovery.json src/data/gaf-import-report.json public/images
           if git diff --cached --quiet; then
             echo "No TMDB metadata or artwork changes to commit."
           else

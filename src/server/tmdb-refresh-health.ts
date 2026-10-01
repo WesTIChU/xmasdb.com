@@ -82,6 +82,10 @@ export function getTmdbRefreshHistoryPath(dataDir = getContactDataDir()): string
   return path.join(dataDir, TMDB_REFRESH_HISTORY_FILENAME);
 }
 
+export function getCommittedTmdbRefreshHistoryPath(): string {
+  return path.join(process.cwd(), 'src', 'data', TMDB_REFRESH_HISTORY_FILENAME);
+}
+
 const emptyCounters = (): RefreshRunCounters => ({
   moviesAttempted: 0,
   moviesSuccessful: 0,
@@ -115,12 +119,25 @@ export function createRefreshRun(type: RefreshRunType, startedAt = new Date()): 
   };
 }
 
-async function readHistoryFile(dataDir = getContactDataDir()): Promise<RefreshHistory> {
+async function readHistoryFile(dataDir = getContactDataDir(), fallbackPath = getCommittedTmdbRefreshHistoryPath()): Promise<RefreshHistory> {
   try {
     const parsed = JSON.parse(await fs.readFile(getTmdbRefreshHistoryPath(dataDir), 'utf8')) as Partial<RefreshHistory>;
-    return { runs: Array.isArray(parsed.runs) ? parsed.runs : [] };
+    const runtimeHistory = { runs: Array.isArray(parsed.runs) ? parsed.runs : [] };
+    if (runtimeHistory.runs.length > 0) return runtimeHistory;
+    try {
+      const committed = JSON.parse(await fs.readFile(fallbackPath, 'utf8')) as Partial<RefreshHistory>;
+      if (Array.isArray(committed.runs) && committed.runs.length > 0) return { runs: committed.runs };
+    } catch {
+      // The committed artifact is optional until the first workflow completes.
+    }
+    return runtimeHistory;
   } catch {
-    return { runs: [] };
+    try {
+      const parsed = JSON.parse(await fs.readFile(fallbackPath, 'utf8')) as Partial<RefreshHistory>;
+      return { runs: Array.isArray(parsed.runs) ? parsed.runs : [] };
+    } catch {
+      return { runs: [] };
+    }
   }
 }
 
@@ -166,8 +183,8 @@ export async function completeRefreshRun(
   return run;
 }
 
-export async function readRefreshHistory(dataDir = getContactDataDir()): Promise<RefreshHistory> {
-  return readHistoryFile(dataDir);
+export async function readRefreshHistory(dataDir = getContactDataDir(), fallbackPath = getCommittedTmdbRefreshHistoryPath()): Promise<RefreshHistory> {
+  return readHistoryFile(dataDir, fallbackPath);
 }
 
 export function unresolvedFailures(history: RefreshHistory): RefreshFailure[] {

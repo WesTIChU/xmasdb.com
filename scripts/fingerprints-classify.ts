@@ -1,6 +1,5 @@
 import 'dotenv/config';
 import { MOVIES } from '../src/data/movies';
-import { getMovieFingerprintIds } from '../src/data/movie-fingerprints';
 import {
   MockFingerprintClassifier,
   OpenRouterFingerprintClassifier,
@@ -29,8 +28,8 @@ if (limit === undefined && !useMock && !onlyUnassigned) throw new Error('A real 
 const classifier = useMock ? new MockFingerprintClassifier() : new OpenRouterFingerprintClassifier({ model });
 const selectedInputs: string[] = [];
 const classifierResults: Array<{ movieId: string; title: string; input: unknown; raw: unknown; validation: ReturnType<typeof validateClassifierResult>; usage?: unknown }> = [];
-const classificationMovies = onlyUnassigned ? MOVIES.filter((movie) => getMovieFingerprintIds(movie).length === 0) : MOVIES;
-const effectiveLimit = limit === undefined && onlyUnassigned ? classificationMovies.length : limit;
+const classificationMovies = MOVIES;
+const effectiveLimit = limit;
 
 const summary = await classifyFingerprintBatch(classificationMovies, classifier, {
   limit: effectiveLimit,

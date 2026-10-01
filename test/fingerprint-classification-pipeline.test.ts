@@ -70,13 +70,9 @@ assert.equal(noMatchCalls, 1, 'unchanged no-match input is not classified again'
 await classifyFingerprintBatch([{ ...movie, synopsis: `${movie.synopsis} Updated metadata.` }], noMatchClassifier, { checkpointPath: noMatchPath });
 assert.equal(noMatchCalls, 2, 'changed no-match input is eligible for retry');
 
-const newlyAddedMovie = {
-  ...movie,
-  id: 'newly-added-movie',
-  tmdbId: 999999,
-  title: 'Newly Added Christmas Movie',
-  tmdbUpdatedAt: '2026-10-01T12:00:00.000Z',
-};
+const newlyAddedMovie = MOVIES.find((candidate) => candidate.tmdbId === 919808)!;
+assert.equal(newlyAddedMovie.id, 'uptv-2021-a-christmas-letter');
+assert.equal(newlyAddedMovie.fingerprints, undefined, 'A Christmas Letter has no production fingerprint assignment');
 const restoredCheckpointPath = path.join(tempDirectory, 'restored-checkpoint.json');
 const restoredCheckpoint = emptyFingerprintCheckpoint();
 restoredCheckpoint.entries[newlyAddedMovie.id] = {
@@ -94,7 +90,31 @@ await classifyFingerprintBatch([newlyAddedMovie], { classifyMovie: async (value)
   newlyAddedCalls += 1;
   return { movieId: value.movieId, fingerprints: [] };
 } }, { onlyUnassigned: true, checkpointPath: restoredCheckpointPath });
-assert.equal(newlyAddedCalls, 1, 'newly added unassigned movies are retried when restored checkpoint metadata is older');
+assert.equal(newlyAddedCalls, 1, 'newly added unassigned movies are retried when a legacy checkpoint has an older same-ID result');
+
+const currentCheckpointPath = path.join(tempDirectory, 'current-checkpoint.json');
+const currentCheckpoint = emptyFingerprintCheckpoint();
+currentCheckpoint.catalogueMovieIds = [newlyAddedMovie.id];
+currentCheckpoint.entries[newlyAddedMovie.id] = { ...restoredCheckpoint.entries[newlyAddedMovie.id], updatedAt: '2026-10-01T12:00:00.000Z' };
+await writeFingerprintCheckpoint(currentCheckpoint, currentCheckpointPath);
+let cachedMovieCalls = 0;
+await classifyFingerprintBatch([newlyAddedMovie], { classifyMovie: async (value) => {
+  cachedMovieCalls += 1;
+  return { movieId: value.movieId, fingerprints: [] };
+} }, { onlyUnassigned: true, checkpointPath: currentCheckpointPath });
+assert.equal(cachedMovieCalls, 0, 'current no-match checkpoint entries remain cached');
+
+const incompleteSnapshotPath = path.join(tempDirectory, 'incomplete-snapshot.json');
+const incompleteSnapshot = emptyFingerprintCheckpoint();
+incompleteSnapshot.catalogueMovieIds = [newlyAddedMovie.id];
+incompleteSnapshot.entries[newlyAddedMovie.id] = { ...restoredCheckpoint.entries[newlyAddedMovie.id], updatedAt: '2026-10-01T12:00:00.000Z' };
+await writeFingerprintCheckpoint(incompleteSnapshot, incompleteSnapshotPath);
+let incompleteSnapshotCalls = 0;
+await classifyFingerprintBatch([newlyAddedMovie, secondMovie], { classifyMovie: async (value) => {
+  incompleteSnapshotCalls += 1;
+  return { movieId: value.movieId, fingerprints: [] };
+} }, { onlyUnassigned: true, checkpointPath: incompleteSnapshotPath });
+assert.ok(incompleteSnapshotCalls >= 1, 'legacy incomplete catalogue snapshots do not suppress newly added unassigned movies');
 
 const unchangedInsufficientPath = path.join(tempDirectory, 'unchanged-insufficient.json');
 let unchangedInsufficientCalls = 0;
