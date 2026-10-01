@@ -223801,6 +223801,1036 @@ export const MOVIES: Movie[] = [
     "voteCount": 3,
     "tmdbUpdatedAt": "2026-10-01T13:43:31.337Z",
     "tmdbFetchedAt": "2026-10-01T13:43:31.337Z"
+  },
+  {
+    "id": "lifetime-2023-christmas-at-carbell-family-farm",
+    "slug": "christmas-at-carbell-family-farm",
+    "title": "Christmas at Carbell Family Farm",
+    "year": 2023,
+    "brandId": "lifetime",
+    "releaseDate": "2023-12-17",
+    "synopsis": "A real estate developer's plans hit a snag when she discovers that the small Christmas tree farm that she bought once raffled off deeds to local families. To save her project, she must work with a local historian to track down each family and convince them to sell their little slice of the farm. Festive drama, starring Tamara Almeida and Cody Ray Thompson",
+    "posterUrl": "/images/posters/1220314.jpg",
+    "backdropUrl": "/images/backdrops/1220314.jpg",
+    "cast": [
+      {
+        "actorId": "1357668",
+        "name": "Tamara Almeida",
+        "character": "Gracie Moreau",
+        "slug": "tamara-almeida",
+        "tmdbPersonId": 1357668,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/bf4QN065fw0dvB4EAj5gKOIQ9w9.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "1335528",
+        "name": "Cody Ray Thompson",
+        "character": "Jack Carrington",
+        "slug": "cody-ray-thompson",
+        "tmdbPersonId": 1335528,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/oVHjmdNnajVjUaeOkDOd9deCsww.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "166496",
+        "name": "Fiona Highet",
+        "character": "Coralie Carbel",
+        "slug": "fiona-highet",
+        "tmdbPersonId": 166496,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/amMUf8IQyyFTUxnhxEbWf0BBdJp.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "2298270",
+        "name": "Moni Ogunsuyi",
+        "character": "Amy",
+        "slug": "moni-ogunsuyi",
+        "tmdbPersonId": 2298270,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/fctfvNtGOFfXNk10RwVCBUQ9GDh.jpg",
+        "order": 3
+      }
+    ],
+    "director": "Graeme Campbell",
+    "tmdbId": 1220314,
+    "imdbId": "tt30227353",
+    "isComingSoon": false,
+    "status": "collection",
+    "originalTitle": "Christmas at Carbell Family Farm",
+    "runtimeMinutes": 90,
+    "genres": [
+      {
+        "id": 10749,
+        "name": "Romance"
+      },
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "CH",
+        "releaseDate": "2024-11-20T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "RTS un"
+      },
+      {
+        "country": "FR",
+        "releaseDate": "2024-11-21T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "TF1"
+      },
+      {
+        "country": "GB",
+        "releaseDate": "2023-12-17T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": ""
+      },
+      {
+        "country": "US",
+        "releaseDate": "2024-11-17T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "Lifetime"
+      }
+    ],
+    "crew": [
+      {
+        "id": 90365,
+        "name": "Graeme Campbell",
+        "job": "Director",
+        "department": "Directing",
+        "creditId": "65822dffdf86a80937e7ed9f"
+      },
+      {
+        "id": 1051792,
+        "name": "Sarah-Doe Osborne",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "65822e34cedac408457df6ca"
+      },
+      {
+        "id": 1051792,
+        "name": "Sarah-Doe Osborne",
+        "job": "Story",
+        "department": "Writing",
+        "creditId": "69e409db305ffc67cc9408fa"
+      },
+      {
+        "id": 3064924,
+        "name": "Taylor Warren Goff",
+        "job": "Story",
+        "department": "Writing",
+        "creditId": "69e409e7199db838ff65c407"
+      }
+    ],
+    "trailers": [
+      {
+        "key": "u92qV8If47Y",
+        "site": "YouTube",
+        "type": "Trailer",
+        "name": "Christmas at Carbell Family Farm Trailer",
+        "official": true
+      }
+    ],
+    "trailerYoutubeKey": "u92qV8If47Y",
+    "voteAverage": 6.9,
+    "voteCount": 8,
+    "tmdbUpdatedAt": "2026-10-01T13:48:02.062Z",
+    "tmdbFetchedAt": "2026-10-01T13:48:02.062Z"
+  },
+  {
+    "id": "lifetime-2024-a-very-merry-beauty-salon",
+    "slug": "a-very-merry-beauty-salon",
+    "title": "A Very Merry Beauty Salon",
+    "year": 2024,
+    "brandId": "lifetime",
+    "releaseDate": "2024-11-07",
+    "synopsis": "Sienna, the owner of the bustling Divine Beauty Salon is preparing for Atlanta’s Tinsel Ball, where she will be honored for her charitable work in the community. The annual event takes a glamourous turn with the arrival of Lawrence, a charismatic CEO whose family’s wine brand is now co-sponsoring the Ball. Sparks fly between them, but Sienna’s mother Georgia who is the head of the Ball’s committee, worries his involvement may ruin the event’s traditions. As Sienna and Lawrence are unexpectedly paired as dance partners, romance blooms, setting the stage for a steamy romance that challenges Sienna’s thoughts on love and family and makes this year’s Tinsel Ball the most memorable yet.",
+    "posterUrl": "/images/posters/1362915.jpg",
+    "backdropUrl": "/images/backdrops/1362915.jpg",
+    "cast": [
+      {
+        "actorId": "87569",
+        "name": "Tia Mowry",
+        "character": "Sienna",
+        "slug": "tia-mowry",
+        "tmdbPersonId": 87569,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/2p0l5uyURd1D4Iy3k8A81yc8lXJ.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "84209",
+        "name": "RonReaco Lee",
+        "character": "Lawrence",
+        "slug": "ronreaco-lee",
+        "tmdbPersonId": 84209,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/mFUvPvPpUZvRK3rnAFhKQlUt39d.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "582892",
+        "name": "Donna Biscoe",
+        "character": "Georgia",
+        "slug": "donna-biscoe",
+        "tmdbPersonId": 582892,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/97GlC40sehUgcIkbtDbrcCerlw.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "999320",
+        "name": "Cocoa Brown",
+        "character": "Miss Kimmy",
+        "slug": "cocoa-brown",
+        "tmdbPersonId": 999320,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/s8Lel80TmLqMV0YMEkplpy58H4l.jpg",
+        "order": 3
+      },
+      {
+        "actorId": "2630622",
+        "name": "Arrington Foster",
+        "character": "Kyle",
+        "slug": "arrington-foster",
+        "tmdbPersonId": 2630622,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/1hB3tK7ctHrWNXqwtsp7ekCrBm.jpg",
+        "order": 4
+      },
+      {
+        "actorId": "2841051",
+        "name": "Ashli Auguillard",
+        "character": "Ella",
+        "slug": "ashli-auguillard",
+        "tmdbPersonId": 2841051,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/w3hlmTdlUchDWqXUnS56PBg7vAo.jpg",
+        "order": 5
+      },
+      {
+        "actorId": "3977973",
+        "name": "Sheldon J. Nicholas Jr.",
+        "character": "Noah",
+        "slug": "sheldon-j-nicholas-jr",
+        "tmdbPersonId": 3977973,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/i0txVSxXKolk7pgXofBh2rybgiu.jpg",
+        "order": 6
+      }
+    ],
+    "director": "Bobby Yan",
+    "tmdbId": 1362915,
+    "imdbId": "tt33502392",
+    "isComingSoon": false,
+    "status": "collection",
+    "originalTitle": "A Very Merry Beauty Salon",
+    "runtimeMinutes": 88,
+    "genres": [
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      },
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "US",
+        "releaseDate": "2024-11-07T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "Lifetime"
+      }
+    ],
+    "crew": [
+      {
+        "id": 4128440,
+        "name": "Bobby Yan",
+        "job": "Director",
+        "department": "Directing",
+        "creditId": "66f72ebea7c4376a46921224"
+      },
+      {
+        "id": 1781050,
+        "name": "Tara Knight",
+        "job": "Writer",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/opJMkdk3IllpBPpyOTi5Q1GBUq8.jpg",
+        "creditId": "66f72ec7702065de7cc12540"
+      }
+    ],
+    "trailers": [
+      {
+        "key": "HV11qtXTtmw",
+        "site": "YouTube",
+        "type": "Trailer",
+        "name": "Trailer",
+        "official": false
+      }
+    ],
+    "trailerYoutubeKey": "HV11qtXTtmw",
+    "voteAverage": 6,
+    "voteCount": 10,
+    "tmdbUpdatedAt": "2026-10-01T13:48:01.998Z",
+    "tmdbFetchedAt": "2026-10-01T13:48:01.998Z"
+  },
+  {
+    "id": "lifetime-2023-how-to-fall-in-love-by-christmas",
+    "slug": "how-to-fall-in-love-by-christmas",
+    "title": "How to Fall in Love by Christmas",
+    "year": 2023,
+    "brandId": "lifetime",
+    "releaseDate": "2023-12-21",
+    "synopsis": "A beloved writer-turned-CEO of her own Goop-like lifestyle brand, Prism, must secure a partnership with Singled Out to save her company, but the only way to appease them is for her to write a column on falling in love by Christmas with the help of the charming and handsome photographer who has been assigned to the piece.",
+    "posterUrl": "/images/posters/1178605.jpg",
+    "backdropUrl": "/images/backdrops/1178605.jpg",
+    "cast": [
+      {
+        "actorId": "10742",
+        "name": "Teri Hatcher",
+        "character": "Nora Winters",
+        "slug": "teri-hatcher",
+        "tmdbPersonId": 10742,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/ySmnfZm8ZGabcwp4UwaMDeSzXqx.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "85505",
+        "name": "Dan Payne",
+        "character": "Jack Paxton",
+        "slug": "dan-payne",
+        "tmdbPersonId": 85505,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/oaKJV67XtJNQLtSGlO1YVveGqly.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "1649211",
+        "name": "Shawn Ahmed",
+        "character": "Max",
+        "slug": "shawn-ahmed",
+        "tmdbPersonId": 1649211,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/gjLCf0RRpqznqzPHTEM7g3atPFm.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "168611",
+        "name": "Ricardo Betancourt",
+        "character": "Guy",
+        "slug": "ricardo-betancourt",
+        "tmdbPersonId": 168611,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/nJ6NUu3feuB0Cml3VsRebvl185o.jpg",
+        "order": 3
+      },
+      {
+        "actorId": "937793",
+        "name": "Allison Brennan",
+        "character": "Olivia",
+        "slug": "allison-brennan",
+        "tmdbPersonId": 937793,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/aUykl07eUJhqNYrya2MRIN8nVls.jpg",
+        "order": 4
+      },
+      {
+        "actorId": "2022268",
+        "name": "Christian Corrao",
+        "character": "Kyle",
+        "slug": "christian-corrao",
+        "tmdbPersonId": 2022268,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/2ry9fdm6KVVx0Cao9wNM9AZ1sOY.jpg",
+        "order": 5
+      },
+      {
+        "actorId": "1594898",
+        "name": "Simon Henderson",
+        "character": "Clark",
+        "slug": "simon-henderson",
+        "tmdbPersonId": 1594898,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/3KH9ZQIEmIaaxHCQnCuHcDL7GrH.jpg",
+        "order": 6
+      },
+      {
+        "actorId": "1239425",
+        "name": "Howard Hoover",
+        "character": "Geoffrey",
+        "slug": "howard-hoover",
+        "tmdbPersonId": 1239425,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/tBP8LE3YU0AK4ZaBRSh5jrWikPQ.jpg",
+        "order": 7
+      },
+      {
+        "actorId": "3387234",
+        "name": "Janice Mendes",
+        "character": "Sara",
+        "slug": "janice-mendes",
+        "tmdbPersonId": 3387234,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/9GYeCU1htZR4B8SqBe1vCMeessl.jpg",
+        "order": 8
+      },
+      {
+        "actorId": "2664011",
+        "name": "Jorge Molina",
+        "character": "Leo",
+        "slug": "jorge-molina",
+        "tmdbPersonId": 2664011,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/qxLI6m5If2u78RCsIltmNCxhRit.jpg",
+        "order": 9
+      },
+      {
+        "actorId": "5919",
+        "name": "Stephanie Moore",
+        "character": "Christine",
+        "slug": "stephanie-moore",
+        "tmdbPersonId": 5919,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/yywrsHi8RTyzK7QiCpfILKkZT63.jpg",
+        "order": 10
+      },
+      {
+        "actorId": "1291506",
+        "name": "Jordyn Negri",
+        "character": "Lola",
+        "slug": "jordyn-negri",
+        "tmdbPersonId": 1291506,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/EKHVHRDUkWXiP2LWl95SvIgt6f.jpg",
+        "order": 11
+      },
+      {
+        "actorId": "3232474",
+        "name": "Jason Reilly",
+        "character": "Steve",
+        "slug": "jason-reilly",
+        "tmdbPersonId": 3232474,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/1nWgbvZS8ShRTAv6D4vijRPu157.jpg",
+        "order": 12
+      },
+      {
+        "actorId": "87020",
+        "name": "Rachel Wilson",
+        "character": "Adley",
+        "slug": "rachel-wilson",
+        "tmdbPersonId": 87020,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/oh8ucBgmgAJcHxSWsekfa6ZzSpS.jpg",
+        "order": 13
+      },
+      {
+        "actorId": "4376342",
+        "name": "Shawn Gordon Fraser",
+        "character": "Vendor (uncredited)",
+        "slug": "shawn-gordon-fraser",
+        "tmdbPersonId": 4376342,
+        "order": 14
+      }
+    ],
+    "director": "Michael Kennedy",
+    "tmdbId": 1178605,
+    "imdbId": "tt29144851",
+    "isComingSoon": false,
+    "status": "collection",
+    "originalTitle": "How to Fall in Love by Christmas",
+    "runtimeMinutes": 88,
+    "genres": [
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      },
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "CA",
+        "releaseDate": "2023-11-23T00:00:00.000Z",
+        "type": 6,
+        "certification": "G",
+        "note": "W Network"
+      },
+      {
+        "country": "CH",
+        "releaseDate": "2023-11-29T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "RTS1"
+      },
+      {
+        "country": "DE",
+        "releaseDate": "2023-12-02T00:00:00.000Z",
+        "type": 4,
+        "certification": "0",
+        "note": ""
+      },
+      {
+        "country": "ES",
+        "releaseDate": "2024-12-08T00:00:00.000Z",
+        "type": 3,
+        "certification": "12",
+        "note": ""
+      },
+      {
+        "country": "FR",
+        "releaseDate": "2023-12-04T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "TF1"
+      },
+      {
+        "country": "UA",
+        "releaseDate": "2023-12-21T00:00:00.000Z",
+        "type": 3,
+        "certification": "",
+        "note": ""
+      },
+      {
+        "country": "US",
+        "releaseDate": "2023-11-03T00:00:00.000Z",
+        "type": 4,
+        "certification": "",
+        "note": ""
+      },
+      {
+        "country": "US",
+        "releaseDate": "2024-12-08T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "Lifetime"
+      }
+    ],
+    "crew": [
+      {
+        "id": 1694961,
+        "name": "Ansley Gordon",
+        "job": "Writer",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/ri0s9fvhxZ6jiQad9h2gESH7D5H.jpg",
+        "creditId": "650b5c446c19ea00ca46ea5e"
+      },
+      {
+        "id": 175916,
+        "name": "Michael Kennedy",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/hWHvh3jzGjCYb3ISzhuBD7HMeeC.jpg",
+        "creditId": "650b5c3e501cf201001c6c7e"
+      }
+    ],
+    "trailers": [
+      {
+        "key": "yASQc-Lj1zE",
+        "site": "YouTube",
+        "type": "Trailer",
+        "name": "Official Trailer",
+        "official": true
+      }
+    ],
+    "trailerYoutubeKey": "yASQc-Lj1zE",
+    "voteAverage": 5.9,
+    "voteCount": 15,
+    "tmdbUpdatedAt": "2026-10-01T13:48:02.067Z",
+    "tmdbFetchedAt": "2026-10-01T13:48:02.067Z"
+  },
+  {
+    "id": "lifetime-2024-the-holiday-junkie",
+    "slug": "the-holiday-junkie",
+    "title": "The Holiday Junkie",
+    "year": 2024,
+    "brandId": "lifetime",
+    "releaseDate": "2024-12-14",
+    "synopsis": "Follows Andie, who runs a decorating company with her mother. After her mother's passing, Andie navigates her first Christmas alone while trying to find love.",
+    "posterUrl": "/images/posters/1341136.jpg",
+    "backdropUrl": "/images/backdrops/1341136.jpg",
+    "cast": [
+      {
+        "actorId": "33259",
+        "name": "Jennifer Love Hewitt",
+        "character": "Andie",
+        "slug": "jennifer-love-hewitt",
+        "tmdbPersonId": 33259,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/kRySMLtckE7tl6136y0yzFYpUfE.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "207396",
+        "name": "Brian Hallisay",
+        "character": "Mason",
+        "slug": "brian-hallisay",
+        "tmdbPersonId": 207396,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/tebrqLRzVAjTvm4QWVDIW6HLY8c.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "17305",
+        "name": "Greg Grunberg",
+        "character": "Darren",
+        "slug": "greg-grunberg",
+        "tmdbPersonId": 17305,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/ir2QunLf6aTaowpEygbIcjiZLDB.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "168331",
+        "name": "Debra Christofferson",
+        "character": "Sarah",
+        "slug": "debra-christofferson",
+        "tmdbPersonId": 168331,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/2NGfqAY6CZ0dPygX47eN1wZkfKc.jpg",
+        "order": 3
+      },
+      {
+        "actorId": "1213328",
+        "name": "Joseph C. Phillips",
+        "character": "Jerry",
+        "slug": "joseph-c-phillips",
+        "tmdbPersonId": 1213328,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/1voDIdd7PhWW4hrIJa62sdlF6iL.jpg",
+        "order": 4
+      },
+      {
+        "actorId": "1367019",
+        "name": "Rico Aragon",
+        "character": "Bruce Parker",
+        "slug": "rico-aragon",
+        "tmdbPersonId": 1367019,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/jijK42cgQIiZOBI0tveoqFyeLpi.jpg",
+        "order": 5
+      },
+      {
+        "actorId": "2574430",
+        "name": "Lynn Andrews",
+        "character": "Riley",
+        "slug": "lynn-andrews",
+        "tmdbPersonId": 2574430,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/niCdPx1T9QHY1OwoVTecwLfJRCq.jpg",
+        "order": 6
+      },
+      {
+        "actorId": "1552361",
+        "name": "Sarah Adina",
+        "character": "Wendy",
+        "slug": "sarah-adina",
+        "tmdbPersonId": 1552361,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/8VQQLa1obT3e5nlabtXsX4ziM6E.jpg",
+        "order": 7
+      },
+      {
+        "actorId": "4153116",
+        "name": "Ashley Cole",
+        "character": "Del Parker",
+        "slug": "ashley-cole",
+        "tmdbPersonId": 4153116,
+        "order": 8
+      },
+      {
+        "actorId": "5170005",
+        "name": "Atticus Hallisay",
+        "character": "Avery / Miles",
+        "slug": "atticus-hallisay",
+        "tmdbPersonId": 5170005,
+        "order": 9
+      },
+      {
+        "actorId": "5170007",
+        "name": "Kimberley Kim",
+        "character": "Committee Member (credit only)",
+        "slug": "kimberley-kim",
+        "tmdbPersonId": 5170007,
+        "order": 10
+      },
+      {
+        "actorId": "52775",
+        "name": "Kristin Chenoweth",
+        "character": "Mimi (voice)",
+        "slug": "kristin-chenoweth",
+        "tmdbPersonId": 52775,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/q3ENDu5n23FARhyij4FVRaTkSg4.jpg",
+        "order": 11
+      },
+      {
+        "actorId": "1956704",
+        "name": "Andrea Biklian",
+        "character": "Party Attendee (uncredited)",
+        "slug": "andrea-biklian",
+        "tmdbPersonId": 1956704,
+        "order": 12
+      },
+      {
+        "actorId": "5170010",
+        "name": "Brooke Weirick",
+        "character": "Holiday Hop Background (uncredited)",
+        "slug": "brooke-weirick",
+        "tmdbPersonId": 5170010,
+        "order": 13
+      }
+    ],
+    "director": "Jennifer Love Hewitt",
+    "tmdbId": 1341136,
+    "imdbId": "tt32560068",
+    "isComingSoon": false,
+    "status": "collection",
+    "originalTitle": "The Holiday Junkie",
+    "runtimeMinutes": 88,
+    "genres": [
+      {
+        "id": 18,
+        "name": "Drama"
+      },
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "FR",
+        "releaseDate": "2025-11-11T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "TF1"
+      },
+      {
+        "country": "US",
+        "releaseDate": "2024-12-14T00:00:00.000Z",
+        "type": 4,
+        "certification": "",
+        "note": "Lifetime"
+      }
+    ],
+    "crew": [
+      {
+        "id": 33259,
+        "name": "Jennifer Love Hewitt",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/kRySMLtckE7tl6136y0yzFYpUfE.jpg",
+        "creditId": "66d1ebbe6cbf9623e6811eab"
+      },
+      {
+        "id": 2172465,
+        "name": "Anna White",
+        "job": "Screenplay",
+        "department": "Writing",
+        "creditId": "6880cc8849f9a4e6ef72d991"
+      },
+      {
+        "id": 33259,
+        "name": "Jennifer Love Hewitt",
+        "job": "Story",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/kRySMLtckE7tl6136y0yzFYpUfE.jpg",
+        "creditId": "6880cc8c3f1f6bc2bed99c20"
+      }
+    ],
+    "trailers": [
+      {
+        "key": "mweBoDPqjS0",
+        "site": "YouTube",
+        "type": "Trailer",
+        "name": "Trailer",
+        "official": true
+      }
+    ],
+    "trailerYoutubeKey": "mweBoDPqjS0",
+    "voteAverage": 6.4,
+    "voteCount": 18,
+    "tmdbUpdatedAt": "2026-10-01T13:48:03.208Z",
+    "tmdbFetchedAt": "2026-10-01T13:48:03.208Z"
+  },
+  {
+    "id": "lifetime-2024-a-carpenter-christmas-romance",
+    "slug": "a-carpenter-christmas-romance",
+    "title": "A Carpenter Christmas Romance",
+    "year": 2024,
+    "brandId": "lifetime",
+    "releaseDate": "2024-12-21",
+    "synopsis": "A novelist escapes to her family farmhouse to write, reuniting with her former crush, a carpenter rebuilding the town. Sparks fly as they collaborate to revive the Christmas spirit.",
+    "posterUrl": "/images/posters/1377267.jpg",
+    "backdropUrl": "/images/backdrops/1377267.jpg",
+    "cast": [
+      {
+        "actorId": "62168",
+        "name": "Sasha Pieterse",
+        "character": "Andrea Metcalf",
+        "slug": "sasha-pieterse",
+        "tmdbPersonId": 62168,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/jdHir6iR2m94B0vLZuCsQ2F15JH.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "1753912",
+        "name": "Mitchell Slaggert",
+        "character": "Seth Ferguson",
+        "slug": "mitchell-slaggert",
+        "tmdbPersonId": 1753912,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/z7qV3wUXUJU5XGhExt7tr3WjNTI.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "1521897",
+        "name": "Kaley McCormack",
+        "character": "Ella Metcalf",
+        "slug": "kaley-mccormack",
+        "tmdbPersonId": 1521897,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/esJ4zrRwArOIDBdhgZGQfYSsITy.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "154837",
+        "name": "Chris Gann",
+        "character": "William Ferguson",
+        "slug": "chris-gann",
+        "tmdbPersonId": 154837,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/jX73lEGi5TNjordeEEZRKjqGL9x.jpg",
+        "order": 3
+      },
+      {
+        "actorId": "1805848",
+        "name": "Asia King",
+        "character": "Aiko",
+        "slug": "asia-king",
+        "tmdbPersonId": 1805848,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/z9Y5NkXuNZwOgB199E5Nkzj080D.jpg",
+        "order": 4
+      },
+      {
+        "actorId": "1439798",
+        "name": "Zuri Hall",
+        "character": "Vanessa",
+        "slug": "zuri-hall",
+        "tmdbPersonId": 1439798,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/tex28siKlyQTTz89JbdtRWv29Eq.jpg",
+        "order": 5
+      },
+      {
+        "actorId": "2292584",
+        "name": "Sam Myerson",
+        "character": "Chance",
+        "slug": "sam-myerson",
+        "tmdbPersonId": 2292584,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/d9zPqu5ditbbYuzznPdjaQNcb1S.jpg",
+        "order": 6
+      },
+      {
+        "actorId": "2072146",
+        "name": "Amanda McCants",
+        "character": "Cindy",
+        "slug": "amanda-mccants",
+        "tmdbPersonId": 2072146,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/7Ls7NPrTmiWVbdLcflKoyWsuY8E.jpg",
+        "order": 7
+      },
+      {
+        "actorId": "1046285",
+        "name": "J. Rene Pena",
+        "character": "Martha",
+        "slug": "j-rene-pena",
+        "tmdbPersonId": 1046285,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/6QC4hg1tdK9LhS0YYochWnIIhhE.jpg",
+        "order": 8
+      }
+    ],
+    "director": "Jake Helgren",
+    "tmdbId": 1377267,
+    "imdbId": "tt32481874",
+    "isComingSoon": false,
+    "status": "collection",
+    "originalTitle": "A Carpenter Christmas Romance",
+    "runtimeMinutes": 85,
+    "genres": [
+      {
+        "id": 10749,
+        "name": "Romance"
+      },
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "US",
+        "releaseDate": "2024-12-21T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": ""
+      }
+    ],
+    "crew": [
+      {
+        "id": 589410,
+        "name": "Jake Helgren",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/virgDMoUS8fwCZXcoFchTYdiLgL.jpg",
+        "creditId": "671c342ea4ac8a432c5c55aa"
+      },
+      {
+        "id": 198927,
+        "name": "Sarah Drew",
+        "job": "Screenplay",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/65hUM3Egh5roemP3Cgn0bA38rDj.jpg",
+        "creditId": "671c34422685cb6563c0e8dd"
+      }
+    ],
+    "trailers": [
+      {
+        "key": "XxZcdXUWsOY",
+        "site": "YouTube",
+        "type": "Trailer",
+        "name": "Trailer",
+        "official": true
+      }
+    ],
+    "trailerYoutubeKey": "XxZcdXUWsOY",
+    "voteAverage": 6.1,
+    "voteCount": 18,
+    "tmdbUpdatedAt": "2026-10-01T13:48:03.271Z",
+    "tmdbFetchedAt": "2026-10-01T13:48:03.271Z"
+  },
+  {
+    "id": "lifetime-2024-engaged-by-christmas",
+    "slug": "engaged-by-christmas",
+    "title": "Engaged by Christmas",
+    "year": 2024,
+    "brandId": "lifetime",
+    "releaseDate": "2024-12-16",
+    "synopsis": "When Zoe writes to agony aunt Dear Adora to help save her relationship before the holidays, she puts the advice into practice and it’s disastrous: her boyfriend breaks up with her! When she tracks down Dear Adora to confront her, she discovers it’s actually a man. She tells him she’ll keep his secret if he helps her to repair her life via a series of Christmas themed events publicized by his column. When the interest in their activities gains huge traction, will they also find love?",
+    "posterUrl": "/images/posters/1374256.jpg",
+    "backdropUrl": "/images/backdrops/1374256.jpg",
+    "cast": [
+      {
+        "actorId": "1381537",
+        "name": "Marcus Rosner",
+        "character": "Adam",
+        "slug": "marcus-rosner",
+        "tmdbPersonId": 1381537,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/2DQHSgA6LgR7ZTJpIEApT3TXCQx.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "1050328",
+        "name": "Brittany Bristow",
+        "character": "Zoe",
+        "slug": "brittany-bristow",
+        "tmdbPersonId": 1050328,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/e0eJSoJ2ntcCmf3PaTtCa0D8a4H.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "2013603",
+        "name": "Michael Lazarovitch",
+        "character": "Nate",
+        "slug": "michael-lazarovitch",
+        "tmdbPersonId": 2013603,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/j5LCC2LrWvbL4N9x5DWwqy97o0U.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "1380653",
+        "name": "Megan Tracz",
+        "character": "Emma",
+        "slug": "megan-tracz",
+        "tmdbPersonId": 1380653,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/jYJmYvgz1SNlVgouyE7HJ7frmiQ.jpg",
+        "order": 3
+      },
+      {
+        "actorId": "3949787",
+        "name": "Colette Nwachi",
+        "character": "Lauren",
+        "slug": "colette-nwachi",
+        "tmdbPersonId": 3949787,
+        "order": 4
+      },
+      {
+        "actorId": "1960828",
+        "name": "Stafford Perry",
+        "character": "Cary",
+        "slug": "stafford-perry",
+        "tmdbPersonId": 1960828,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/yiMlZlYPFXQMf74lrdHSGgBPX61.jpg",
+        "order": 5
+      },
+      {
+        "actorId": "1300438",
+        "name": "Adam Keefe",
+        "character": "Joe",
+        "slug": "adam-keefe",
+        "tmdbPersonId": 1300438,
+        "order": 6
+      }
+    ],
+    "director": "Dylan Pearce",
+    "tmdbId": 1374256,
+    "imdbId": "tt32550532",
+    "isComingSoon": false,
+    "status": "collection",
+    "originalTitle": "Engaged by Christmas",
+    "runtimeMinutes": 90,
+    "genres": [
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "CA",
+        "releaseDate": "2024-12-22T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": ""
+      },
+      {
+        "country": "FR",
+        "releaseDate": "2024-12-16T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "TF1"
+      },
+      {
+        "country": "US",
+        "releaseDate": "2024-12-22T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "Lifetime"
+      }
+    ],
+    "crew": [
+      {
+        "id": 1148834,
+        "name": "Dylan Pearce",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/p6EmnV4i4fQ0Atr9nl60kz2Fh84.jpg",
+        "creditId": "67156e70bd91c83829d71b17"
+      },
+      {
+        "id": 5220782,
+        "name": "Emily Duncan",
+        "job": "Writer",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/7SZ3aUN7WQhNc7mtN3x35CHZPFA.jpg",
+        "creditId": "679fd98980082986c8cb80b2"
+      }
+    ],
+    "trailers": [],
+    "voteAverage": 6.6,
+    "voteCount": 12,
+    "tmdbUpdatedAt": "2026-10-01T13:48:03.485Z",
+    "tmdbFetchedAt": "2026-10-01T13:48:03.485Z"
   }
 ];
 

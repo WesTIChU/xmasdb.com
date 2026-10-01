@@ -856,6 +856,21 @@
     "tmdbUpdatedAt": "2026-09-20T16:17:04.605Z"
   },
   {
+    "id": "1300438",
+    "slug": "adam-keefe",
+    "name": "Adam Keefe",
+    "tmdbPersonId": 1300438,
+    "birthday": "1931-01-08",
+    "deathday": "1994-11-10",
+    "placeOfBirth": "The Bronx, New York, USA",
+    "imdbPersonId": "nm0444374",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 6,
+    "tmdbUpdatedAt": "2026-10-01T13:48:10.654Z",
+    "tmdbFetchedAt": "2026-10-01T13:48:10.654Z"
+  },
+  {
     "id": "1590244",
     "slug": "adam-langton",
     "name": "Adam Langton",
@@ -4168,6 +4183,26 @@
     "tmdbUpdatedAt": "2026-09-20T16:18:06.468Z"
   },
   {
+    "id": "937793",
+    "slug": "allison-brennan",
+    "name": "Allison Brennan",
+    "tmdbPersonId": 937793,
+    "photoUrl": "/images/people/937793.webp",
+    "profileUrl": "/images/people/937793.webp",
+    "biography": "Allison Brennan is a Canadian stage and screen actress. She holds a BA in Theatre from the University of Ottawa, Ontario, Canada, and went on to train for her MFA in Classical Acting at the American Conservatory Theatre in San Francisco, California, USA.",
+    "imdbPersonId": "nm2803252",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 22,
+    "alsoKnownAs": [
+      "Allison Rose Brennan"
+    ],
+    "instagramId": "onepartseagull",
+    "twitterId": "allisonworks",
+    "tmdbUpdatedAt": "2026-10-01T13:48:07.122Z",
+    "tmdbFetchedAt": "2026-10-01T13:48:07.122Z"
+  },
+  {
     "id": "allison-busner",
     "slug": "allison-busner",
     "name": "Allison Busner",
@@ -4758,6 +4793,20 @@
     "knownForDepartment": "Acting",
     "knownCredits": 29,
     "tmdbUpdatedAt": "2026-09-20T16:17:52.333Z"
+  },
+  {
+    "id": "2072146",
+    "slug": "amanda-mccants",
+    "name": "Amanda McCants",
+    "tmdbPersonId": 2072146,
+    "photoUrl": "/images/people/2072146.webp",
+    "profileUrl": "/images/people/2072146.webp",
+    "imdbPersonId": "nm7847359",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 8,
+    "tmdbUpdatedAt": "2026-10-01T13:48:10.003Z",
+    "tmdbFetchedAt": "2026-10-01T13:48:10.003Z"
   },
   {
     "id": "2033800",
@@ -5765,6 +5814,16 @@
     "twitterId": "andreabarber",
     "facebookId": "andrea.laura.barber",
     "tmdbUpdatedAt": "2026-09-20T16:19:30.195Z"
+  },
+  {
+    "id": "1956704",
+    "slug": "andrea-biklian",
+    "name": "Andrea Biklian",
+    "tmdbPersonId": 1956704,
+    "knownForDepartment": "Editing",
+    "knownCredits": 16,
+    "tmdbUpdatedAt": "2026-10-01T13:48:08.690Z",
+    "tmdbFetchedAt": "2026-10-01T13:48:08.690Z"
   },
   {
     "id": "2115507",
@@ -7581,7 +7640,8 @@
     "gender": "Female",
     "knownForDepartment": "Writing",
     "knownCredits": 20,
-    "tmdbUpdatedAt": "2026-09-22T20:53:17.985Z"
+    "tmdbUpdatedAt": "2026-10-01T13:48:08.865Z",
+    "tmdbFetchedAt": "2026-10-01T13:48:08.865Z"
   },
   {
     "id": "anna-wilson-jones",
@@ -9124,6 +9184,26 @@
     "tmdbUpdatedAt": "2026-09-20T16:17:51.148Z"
   },
   {
+    "id": "2630622",
+    "slug": "arrington-foster",
+    "name": "Arrington Foster",
+    "tmdbPersonId": 2630622,
+    "photoUrl": "/images/people/2630622.webp",
+    "profileUrl": "/images/people/2630622.webp",
+    "birthday": "1990-11-12",
+    "placeOfBirth": "Clinton, Maryland, USA",
+    "biography": "Arrington Foster was born and raised in Clinton, Maryland. Growing up, Arrington was heavily involved in theater as a child and in college appearing in many plays and musicals such as The Wiz, Annie, Footloose, and A Chorus Line. He has a Bachelor of Arts in Theatre with a minor in Communication Studies from Texas Christian University in Fort Worth, TX. In 2015, Arrington moved to Los Angeles, CA to further pursue his acting career in film/television. In 2018, after appearing in a few commercials, short films, student projects, and web series, he was cast as Rio Duncan on the hit BET series Carl Weber's The Family Business.",
+    "imdbPersonId": "nm5472804",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 2,
+    "instagramId": "arringtonfoster",
+    "twitterId": "arringtonfoster",
+    "facebookId": "arrington.foster",
+    "tmdbUpdatedAt": "2026-10-01T13:48:05.734Z",
+    "tmdbFetchedAt": "2026-10-01T13:48:05.734Z"
+  },
+  {
     "id": "arsema-kayan-ellison",
     "slug": "arsema-kayan-ellison",
     "name": "Arsema Kayan Ellison",
@@ -9406,6 +9486,16 @@
     "knownCredits": 5,
     "instagramId": "ashley_m_bryant",
     "tmdbUpdatedAt": "2026-09-20T16:19:56.006Z"
+  },
+  {
+    "id": "4153116",
+    "slug": "ashley-cole",
+    "name": "Ashley Cole",
+    "tmdbPersonId": 4153116,
+    "knownForDepartment": "Writing",
+    "knownCredits": 2,
+    "tmdbUpdatedAt": "2026-10-01T13:48:08.419Z",
+    "tmdbFetchedAt": "2026-10-01T13:48:08.419Z"
   },
   {
     "id": "ashley-greene",
@@ -9704,7 +9794,8 @@
     "imdbPersonId": "nm8173771",
     "knownForDepartment": "Acting",
     "knownCredits": 12,
-    "tmdbUpdatedAt": "2026-09-20T16:18:18.549Z"
+    "tmdbUpdatedAt": "2026-10-01T13:48:06.082Z",
+    "tmdbFetchedAt": "2026-10-01T13:48:06.082Z"
   },
   {
     "id": "ashlyn-kusch",
@@ -9775,6 +9866,23 @@
     "tmdbFetchedAt": "2026-10-01T10:20:39.314Z"
   },
   {
+    "id": "1805848",
+    "slug": "asia-king",
+    "name": "Asia King",
+    "tmdbPersonId": 1805848,
+    "photoUrl": "/images/people/1805848.webp",
+    "profileUrl": "/images/people/1805848.webp",
+    "imdbPersonId": "nm5927731",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 5,
+    "alsoKnownAs": [
+      "Asia Schneider"
+    ],
+    "tmdbUpdatedAt": "2026-10-01T13:48:09.797Z",
+    "tmdbFetchedAt": "2026-10-01T13:48:09.797Z"
+  },
+  {
     "id": "asia-h-epperson",
     "slug": "asia-h-epperson",
     "name": "Asia'h Epperson",
@@ -9840,6 +9948,16 @@
     "knownForDepartment": "Acting",
     "knownCredits": 4,
     "tmdbUpdatedAt": "2026-09-20T16:18:20.121Z"
+  },
+  {
+    "id": "5170005",
+    "slug": "atticus-hallisay",
+    "name": "Atticus Hallisay",
+    "tmdbPersonId": 5170005,
+    "knownForDepartment": "Acting",
+    "knownCredits": 1,
+    "tmdbUpdatedAt": "2026-10-01T13:48:08.540Z",
+    "tmdbFetchedAt": "2026-10-01T13:48:08.540Z"
   },
   {
     "id": "aubrey-arnason",
@@ -13181,6 +13299,16 @@
     "tmdbUpdatedAt": "2026-09-20T16:16:56.047Z"
   },
   {
+    "id": "4128440",
+    "slug": "bobby-yan",
+    "name": "Bobby Yan",
+    "tmdbPersonId": 4128440,
+    "knownForDepartment": "Directing",
+    "knownCredits": 8,
+    "tmdbUpdatedAt": "2026-10-01T13:48:05.858Z",
+    "tmdbFetchedAt": "2026-10-01T13:48:05.858Z"
+  },
+  {
     "id": "7673",
     "slug": "bonnie-bedelia",
     "name": "Bonnie Bedelia",
@@ -14737,6 +14865,23 @@
     "tmdbUpdatedAt": "2026-09-20T16:17:37.677Z"
   },
   {
+    "id": "207396",
+    "slug": "brian-hallisay",
+    "name": "Brian Hallisay",
+    "tmdbPersonId": 207396,
+    "photoUrl": "/images/people/207396.webp",
+    "profileUrl": "/images/people/207396.webp",
+    "birthday": "1978-10-31",
+    "placeOfBirth": "Washington, District of Columbia, USA",
+    "biography": "Brian Hallisay (born October 31, 1978) is an American actor best known for his role on Privileged.",
+    "imdbPersonId": "nm1878999",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 24,
+    "tmdbUpdatedAt": "2026-10-01T13:48:08.065Z",
+    "tmdbFetchedAt": "2026-10-01T13:48:08.065Z"
+  },
+  {
     "id": "1363055",
     "slug": "brian-hanford",
     "name": "Brian Hanford",
@@ -15432,7 +15577,8 @@
     "gender": "Female",
     "knownForDepartment": "Acting",
     "knownCredits": 44,
-    "tmdbUpdatedAt": "2026-09-20T16:18:30.415Z"
+    "tmdbUpdatedAt": "2026-10-01T13:48:10.715Z",
+    "tmdbFetchedAt": "2026-10-01T13:48:10.715Z"
   },
   {
     "id": "brittany-charlotte-smith",
@@ -15864,6 +16010,16 @@
     "knownForDepartment": "Acting",
     "knownCredits": 1,
     "tmdbUpdatedAt": "2026-09-20T16:21:07.246Z"
+  },
+  {
+    "id": "5170010",
+    "slug": "brooke-weirick",
+    "name": "Brooke Weirick",
+    "tmdbPersonId": 5170010,
+    "knownForDepartment": "Acting",
+    "knownCredits": 1,
+    "tmdbUpdatedAt": "2026-10-01T13:48:08.816Z",
+    "tmdbFetchedAt": "2026-10-01T13:48:08.816Z"
   },
   {
     "id": "brooklyn-brough",
@@ -21403,6 +21559,26 @@
     "tmdbUpdatedAt": "2026-09-20T16:17:21.474Z"
   },
   {
+    "id": "154837",
+    "slug": "chris-gann",
+    "name": "Chris Gann",
+    "tmdbPersonId": 154837,
+    "photoUrl": "/images/people/154837.webp",
+    "profileUrl": "/images/people/154837.webp",
+    "birthday": "1972-04-13",
+    "placeOfBirth": "Reno, Nevada, USA",
+    "biography": "Chris Gann is an actor and a stunt performer.",
+    "imdbPersonId": "nm1035414",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 109,
+    "alsoKnownAs": [
+      "Christian Gann"
+    ],
+    "tmdbUpdatedAt": "2026-10-01T13:48:09.954Z",
+    "tmdbFetchedAt": "2026-10-01T13:48:09.954Z"
+  },
+  {
     "id": "chris-gauthier",
     "slug": "chris-gauthier",
     "name": "Chris Gauthier",
@@ -21796,6 +21972,21 @@
     "twitterId": "christanconvery",
     "facebookId": "sweettoothstar",
     "tmdbUpdatedAt": "2026-09-20T16:18:42.769Z"
+  },
+  {
+    "id": "2022268",
+    "slug": "christian-corrao",
+    "name": "Christian Corrao",
+    "tmdbPersonId": 2022268,
+    "photoUrl": "/images/people/2022268.webp",
+    "profileUrl": "/images/people/2022268.webp",
+    "birthday": "2008-06-09",
+    "placeOfBirth": "Toronto, Ontario, Canada",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 12,
+    "tmdbUpdatedAt": "2026-10-01T13:48:07.221Z",
+    "tmdbFetchedAt": "2026-10-01T13:48:07.221Z"
   },
   {
     "id": "1381786",
@@ -23901,6 +24092,29 @@
     "tmdbUpdatedAt": "2026-09-21T13:13:53.767Z"
   },
   {
+    "id": "999320",
+    "slug": "cocoa-brown",
+    "name": "Cocoa Brown",
+    "tmdbPersonId": 999320,
+    "photoUrl": "/images/people/999320.webp",
+    "profileUrl": "/images/people/999320.webp",
+    "birthday": "1972-01-01",
+    "placeOfBirth": "Newport News, Virginia, USA",
+    "imdbPersonId": "nm2072060",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 59,
+    "alsoKnownAs": [
+      "Farah Brown",
+      "Farah Cocoa Brown"
+    ],
+    "instagramId": "cocoabrownonefunnymomma",
+    "twitterId": "@cocoabrown22",
+    "facebookId": "cocoabrownonefunnymomma",
+    "tmdbUpdatedAt": "2026-10-01T13:48:05.794Z",
+    "tmdbFetchedAt": "2026-10-01T13:48:05.794Z"
+  },
+  {
     "id": "1300666",
     "slug": "cody-chappel",
     "name": "Cody Chappel",
@@ -23913,6 +24127,20 @@
     "knownForDepartment": "Acting",
     "knownCredits": 11,
     "tmdbUpdatedAt": "2026-09-21T13:15:11.251Z"
+  },
+  {
+    "id": "1335528",
+    "slug": "cody-ray-thompson",
+    "name": "Cody Ray Thompson",
+    "tmdbPersonId": 1335528,
+    "photoUrl": "/images/people/1335528.webp",
+    "profileUrl": "/images/people/1335528.webp",
+    "imdbPersonId": "nm1302751",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 26,
+    "tmdbUpdatedAt": "2026-10-01T13:48:05.069Z",
+    "tmdbFetchedAt": "2026-10-01T13:48:05.069Z"
   },
   {
     "id": "coel-mahal",
@@ -24072,7 +24300,8 @@
     "gender": "Female",
     "knownForDepartment": "Acting",
     "knownCredits": 9,
-    "tmdbUpdatedAt": "2026-09-20T16:19:18.213Z"
+    "tmdbUpdatedAt": "2026-10-01T13:48:10.388Z",
+    "tmdbFetchedAt": "2026-10-01T13:48:10.388Z"
   },
   {
     "id": "coley-feifer",
@@ -26191,7 +26420,8 @@
     "alsoKnownAs": [
       "Ден Пейн"
     ],
-    "tmdbUpdatedAt": "2026-09-20T16:18:15.578Z"
+    "tmdbUpdatedAt": "2026-10-01T13:48:06.397Z",
+    "tmdbFetchedAt": "2026-10-01T13:48:06.397Z"
   },
   {
     "id": "dan-quinn",
@@ -30060,6 +30290,23 @@
     "tmdbUpdatedAt": "2026-09-20T16:17:22.601Z"
   },
   {
+    "id": "168331",
+    "slug": "debra-christofferson",
+    "name": "Debra Christofferson",
+    "tmdbPersonId": 168331,
+    "photoUrl": "/images/people/168331.webp",
+    "profileUrl": "/images/people/168331.webp",
+    "birthday": "1953-01-09",
+    "placeOfBirth": "Spearfish, South Dakota, USA",
+    "imdbPersonId": "nm0160503",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 66,
+    "instagramId": "debrachristofferson",
+    "tmdbUpdatedAt": "2026-10-01T13:48:08.455Z",
+    "tmdbFetchedAt": "2026-10-01T13:48:08.455Z"
+  },
+  {
     "id": "debra-demille",
     "slug": "debra-demille",
     "name": "Debra DeMille",
@@ -32397,6 +32644,26 @@
     "tmdbUpdatedAt": "2026-09-20T16:16:53.110Z"
   },
   {
+    "id": "582892",
+    "slug": "donna-biscoe",
+    "name": "Donna Biscoe",
+    "tmdbPersonId": 582892,
+    "photoUrl": "/images/people/582892.webp",
+    "profileUrl": "/images/people/582892.webp",
+    "birthday": "1955-09-30",
+    "placeOfBirth": "Fort Benning, Georgia, USA",
+    "imdbPersonId": "nm0083915",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 51,
+    "alsoKnownAs": [
+      "도나 비스코"
+    ],
+    "twitterId": "donna_biscoe",
+    "tmdbUpdatedAt": "2026-10-01T13:48:05.533Z",
+    "tmdbFetchedAt": "2026-10-01T13:48:05.533Z"
+  },
+  {
     "id": "donna-duplantier",
     "slug": "donna-duplantier",
     "name": "Donna DuPlantier",
@@ -33419,7 +33686,8 @@
     "alsoKnownAs": [
       "Ділан Пірс"
     ],
-    "tmdbUpdatedAt": "2026-09-22T20:53:30.883Z"
+    "tmdbUpdatedAt": "2026-10-01T13:48:10.922Z",
+    "tmdbFetchedAt": "2026-10-01T13:48:10.922Z"
   },
   {
     "id": "dylan-poyser",
@@ -35783,6 +36051,23 @@
     "knownCredits": 22,
     "tmdbUpdatedAt": "2026-10-01T10:28:00.263Z",
     "tmdbFetchedAt": "2026-10-01T10:28:00.263Z"
+  },
+  {
+    "id": "5220782",
+    "slug": "emily-duncan",
+    "name": "Emily Duncan",
+    "tmdbPersonId": 5220782,
+    "photoUrl": "/images/people/5220782.webp",
+    "profileUrl": "/images/people/5220782.webp",
+    "imdbPersonId": "nm4938929",
+    "gender": "Female",
+    "knownForDepartment": "Writing",
+    "knownCredits": 2,
+    "alsoKnownAs": [
+      "Emily M. Duncan"
+    ],
+    "tmdbUpdatedAt": "2026-10-01T13:48:11.799Z",
+    "tmdbFetchedAt": "2026-10-01T13:48:11.799Z"
   },
   {
     "id": "emily-dunn",
@@ -42758,6 +43043,27 @@
     "tmdbFetchedAt": "2026-10-01T09:27:29.910Z"
   },
   {
+    "id": "17305",
+    "slug": "greg-grunberg",
+    "name": "Greg Grunberg",
+    "tmdbPersonId": 17305,
+    "photoUrl": "/images/people/17305.webp",
+    "profileUrl": "/images/people/17305.webp",
+    "birthday": "1966-07-11",
+    "placeOfBirth": "Los Angeles, California, USA",
+    "biography": "Gregory Phillip \"Greg\" Grunberg (born July 11, 1966) is an American television actor. He is best known from starring as Matt Parkman on the NBC television series Heroes. Other notable roles included the characters Sean Blumberg on Felicity (1998–2002) and Eric Weiss on Alias (2001–2006), both created and produced by childhood friend J. J. Abrams.\n\n​From Wikipedia, the free encyclopedia",
+    "imdbPersonId": "nm0342399",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 122,
+    "alsoKnownAs": [
+      "Γκρεγκ Γκράνμπεργκ"
+    ],
+    "twitterId": "greggrunberg",
+    "tmdbUpdatedAt": "2026-10-01T13:48:08.296Z",
+    "tmdbFetchedAt": "2026-10-01T13:48:08.296Z"
+  },
+  {
     "id": "greg-harper",
     "slug": "greg-harper",
     "name": "Greg Harper",
@@ -46567,6 +46873,19 @@
     "tmdbFetchedAt": "2026-10-01T10:07:41.782Z"
   },
   {
+    "id": "1046285",
+    "slug": "j-rene-pena",
+    "name": "J. Rene Pena",
+    "tmdbPersonId": 1046285,
+    "photoUrl": "/images/people/1046285.webp",
+    "profileUrl": "/images/people/1046285.webp",
+    "imdbPersonId": "nm0671554",
+    "knownForDepartment": "Acting",
+    "knownCredits": 20,
+    "tmdbUpdatedAt": "2026-10-01T13:48:10.847Z",
+    "tmdbFetchedAt": "2026-10-01T13:48:10.847Z"
+  },
+  {
     "id": "1860402",
     "slug": "j-b-sugar",
     "name": "J.B. Sugar",
@@ -47822,7 +48141,8 @@
     "instagramId": "jakehelgren",
     "twitterId": "JakeHelgren",
     "facebookId": "jake.helgren",
-    "tmdbUpdatedAt": "2026-09-21T13:14:54.166Z"
+    "tmdbUpdatedAt": "2026-10-01T13:48:10.259Z",
+    "tmdbFetchedAt": "2026-10-01T13:48:10.259Z"
   },
   {
     "id": "jake-manley",
@@ -49540,6 +49860,19 @@
     "tmdbUpdatedAt": "2026-09-20T16:17:50.041Z"
   },
   {
+    "id": "3387234",
+    "slug": "janice-mendes",
+    "name": "Janice Mendes",
+    "tmdbPersonId": 3387234,
+    "photoUrl": "/images/people/3387234.webp",
+    "profileUrl": "/images/people/3387234.webp",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 6,
+    "tmdbUpdatedAt": "2026-10-01T13:48:07.511Z",
+    "tmdbFetchedAt": "2026-10-01T13:48:07.511Z"
+  },
+  {
     "id": "janine-astles",
     "slug": "janine-astles",
     "name": "Janine Astles",
@@ -50195,6 +50528,19 @@
     "knownCredits": 6,
     "tmdbUpdatedAt": "2026-10-01T10:28:09.168Z",
     "tmdbFetchedAt": "2026-10-01T10:28:09.168Z"
+  },
+  {
+    "id": "3232474",
+    "slug": "jason-reilly",
+    "name": "Jason Reilly",
+    "tmdbPersonId": 3232474,
+    "photoUrl": "/images/people/3232474.webp",
+    "profileUrl": "/images/people/3232474.webp",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 4,
+    "tmdbUpdatedAt": "2026-10-01T13:48:07.957Z",
+    "tmdbFetchedAt": "2026-10-01T13:48:07.957Z"
   },
   {
     "id": "2565766",
@@ -52228,6 +52574,31 @@
     "knownForDepartment": "Production",
     "knownCredits": 6,
     "tmdbUpdatedAt": "2026-09-22T20:53:20.613Z"
+  },
+  {
+    "id": "33259",
+    "slug": "jennifer-love-hewitt",
+    "name": "Jennifer Love Hewitt",
+    "tmdbPersonId": 33259,
+    "photoUrl": "/images/people/33259.webp",
+    "profileUrl": "/images/people/33259.webp",
+    "birthday": "1979-02-21",
+    "placeOfBirth": "Waco, Texas, USA",
+    "biography": "Jennifer Love Hewitt (born February 21, 1979) is an American actress, producer and singer. Hewitt began her career as a child actress and singer, appearing in national television commercials before joining the cast of the Disney Channel series Kids Incorporated (1989–1991). She had her breakthrough as Sarah Reeves Merrin on the Fox teen drama Party of Five (1995–1999) and rose to fame as a teen star for her role as Julie James in the horror films I Know What You Did Last Summer (1997) and its 1998 sequel, as well as her role as Amanda Beckett in the teen comedy film Can't Hardly Wait (1998).\n\nHewitt's other notable films include Heartbreakers (2001), The Tuxedo (2002) and the two Garfield live-action films (2004–2006). She has starred as Melinda Gordon on the CBS supernatural drama Ghost Whisperer (2005–2010), Riley Parks on the Lifetime drama series The Client List (2012–2013), Special Agent Kate Callahan on the CBS crime drama Criminal Minds (2014–2015), and since 2018, Maddie Buckley on the Fox first-responder procedural 9-1-1. She was nominated for the Golden Globe Award for Best Actress – Miniseries or Television Film for The Client List pilot film (2010).\n\nIn music, Hewitt has released four studio albums to date. After her debut album, Love Songs (1992), was released at age 12 exclusively in Japan, she went on to record Let's Go Bang (1995), Jennifer Love Hewitt (1996) and BareNaked (2002), the latter of which became her first album to chart in the United States, peaking at number 37 on the Billboard 200 chart. Her most successful single on the Billboard Hot 100 chart was the 1999 release \"How Do I Deal\", which peaked at number 59. In addition to music and acting, Hewitt has served as a producer on some of her film and television projects. She has appeared in several magazines' lists of the world's most beautiful women.\n\nDescription above from the Wikipedia article Jennifer Love Hewitt, licensed under CC-BY-SA, full list of contributors on Wikipedia.",
+    "imdbPersonId": "nm0001349",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 94,
+    "alsoKnownAs": [
+      "Love",
+      "JLove",
+      "Jennifer Hallisay"
+    ],
+    "instagramId": "jenniferlovehewitt",
+    "twitterId": "TheReal_Jlh",
+    "facebookId": "JLHOfficial",
+    "tmdbUpdatedAt": "2026-10-01T13:48:08.116Z",
+    "tmdbFetchedAt": "2026-10-01T13:48:08.116Z"
   },
   {
     "id": "228825",
@@ -57858,6 +58229,28 @@
     "tmdbUpdatedAt": "2026-09-20T16:19:33.185Z"
   },
   {
+    "id": "1291506",
+    "slug": "jordyn-negri",
+    "name": "Jordyn Negri",
+    "tmdbPersonId": 1291506,
+    "photoUrl": "/images/people/1291506.webp",
+    "profileUrl": "/images/people/1291506.webp",
+    "birthday": "2000-09-21",
+    "placeOfBirth": "Toronto, Ontario, Canada",
+    "biography": "Jordyn Negri (born 21 September 2000) is a Canadian actress.",
+    "imdbPersonId": "nm4119074",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 6,
+    "alsoKnownAs": [
+      "Джордін Негрі"
+    ],
+    "instagramId": "jordynnegri_",
+    "twitterId": "jordynnegrii",
+    "tmdbUpdatedAt": "2026-10-01T13:48:07.851Z",
+    "tmdbFetchedAt": "2026-10-01T13:48:07.851Z"
+  },
+  {
     "id": "jorge-molina",
     "slug": "jorge-molina",
     "name": "Jorge Molina",
@@ -57997,7 +58390,8 @@
     "alsoKnownAs": [
       "Joseph Connor Phillips"
     ],
-    "tmdbUpdatedAt": "2026-09-21T13:01:11.040Z"
+    "tmdbUpdatedAt": "2026-10-01T13:48:08.249Z",
+    "tmdbFetchedAt": "2026-10-01T13:48:08.249Z"
   },
   {
     "id": "joseph-cannata",
@@ -60473,6 +60867,20 @@
     "knownForDepartment": "Acting",
     "knownCredits": 1,
     "tmdbUpdatedAt": "2026-09-20T16:20:34.284Z"
+  },
+  {
+    "id": "1521897",
+    "slug": "kaley-mccormack",
+    "name": "Kaley McCormack",
+    "tmdbPersonId": 1521897,
+    "photoUrl": "/images/people/1521897.webp",
+    "profileUrl": "/images/people/1521897.webp",
+    "imdbPersonId": "nm4155545",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 3,
+    "tmdbUpdatedAt": "2026-10-01T13:48:09.445Z",
+    "tmdbFetchedAt": "2026-10-01T13:48:09.445Z"
   },
   {
     "id": "145213",
@@ -65066,6 +65474,16 @@
     "tmdbUpdatedAt": "2026-09-20T16:20:06.099Z"
   },
   {
+    "id": "5170007",
+    "slug": "kimberley-kim",
+    "name": "Kimberley Kim",
+    "tmdbPersonId": 5170007,
+    "knownForDepartment": "Acting",
+    "knownCredits": 2,
+    "tmdbUpdatedAt": "2026-10-01T13:48:08.573Z",
+    "tmdbFetchedAt": "2026-10-01T13:48:08.573Z"
+  },
+  {
     "id": "124828",
     "slug": "kimberley-nixon",
     "name": "Kimberley Nixon",
@@ -65988,7 +66406,7 @@
     "imdbPersonId": "nm0155693",
     "gender": "Female",
     "knownForDepartment": "Acting",
-    "knownCredits": 142,
+    "knownCredits": 143,
     "alsoKnownAs": [
       "Kristi Dawn Chenoweth",
       "Kristin Chenowith",
@@ -65997,7 +66415,8 @@
     "instagramId": "kchenoweth",
     "twitterId": "KChenoweth",
     "facebookId": "kristinchenoweth",
-    "tmdbUpdatedAt": "2026-09-20T16:18:23.930Z"
+    "tmdbUpdatedAt": "2026-10-01T13:48:09.246Z",
+    "tmdbFetchedAt": "2026-10-01T13:48:09.246Z"
   },
   {
     "id": "kristin-wollett",
@@ -72588,6 +73007,19 @@
     "facebookId": "publiclyndsyfonseca",
     "tmdbUpdatedAt": "2026-09-25T18:44:22.233Z",
     "tmdbFetchedAt": "2026-09-25T18:44:22.233Z"
+  },
+  {
+    "id": "2574430",
+    "slug": "lynn-andrews",
+    "name": "Lynn Andrews",
+    "tmdbPersonId": 2574430,
+    "photoUrl": "/images/people/2574430.webp",
+    "profileUrl": "/images/people/2574430.webp",
+    "imdbPersonId": "nm8945105",
+    "knownForDepartment": "Acting",
+    "knownCredits": 15,
+    "tmdbUpdatedAt": "2026-10-01T13:48:08.745Z",
+    "tmdbFetchedAt": "2026-10-01T13:48:08.745Z"
   },
   {
     "id": "lynn-colliar",
@@ -79386,7 +79818,8 @@
     "alsoKnownAs": [
       "Меган Трач"
     ],
-    "tmdbUpdatedAt": "2026-09-20T16:19:18.041Z"
+    "tmdbUpdatedAt": "2026-10-01T13:48:10.534Z",
+    "tmdbFetchedAt": "2026-10-01T13:48:10.534Z"
   },
   {
     "id": "43255",
@@ -81602,7 +82035,8 @@
     "gender": "Male",
     "knownForDepartment": "Directing",
     "knownCredits": 36,
-    "tmdbUpdatedAt": "2026-09-22T20:53:36.049Z"
+    "tmdbUpdatedAt": "2026-10-01T13:48:07.565Z",
+    "tmdbFetchedAt": "2026-10-01T13:48:07.565Z"
   },
   {
     "id": "2388289",
@@ -81646,7 +82080,8 @@
     "gender": "Male",
     "knownForDepartment": "Acting",
     "knownCredits": 14,
-    "tmdbUpdatedAt": "2026-09-20T16:20:03.423Z"
+    "tmdbUpdatedAt": "2026-10-01T13:48:10.211Z",
+    "tmdbFetchedAt": "2026-10-01T13:48:10.211Z"
   },
   {
     "id": "15045",
@@ -83869,6 +84304,25 @@
     "tmdbUpdatedAt": "2026-09-20T16:21:18.530Z"
   },
   {
+    "id": "1753912",
+    "slug": "mitchell-slaggert",
+    "name": "Mitchell Slaggert",
+    "tmdbPersonId": 1753912,
+    "photoUrl": "/images/people/1753912.webp",
+    "profileUrl": "/images/people/1753912.webp",
+    "birthday": "1994-09-15",
+    "placeOfBirth": "Fayetteville, Georgia, USA",
+    "biography": "Mitchell Slaggert is an American actor and model, based in New York.\n\nHe appeared in the Broad Green feature film Wish Upon, opposite Joey King and Ryan Phillippe, and directed by John Leonetti. He also appeared in the limited series El Diablo Guardian for Blim.\n\nAfter being scouted on the street in Wilmington N.C., he was cast as the lead of the independent film MOSS by Daniel Peddle which premiered in the US Fiction Competition at the 2017 LA Film Festival on June 21, 2017.\n\nAs a model, Mitchell has been the face of Calvin Klein Underwear, Dsquared2, David Yurman, Versace and featured in numerous publications around the world",
+    "imdbPersonId": "nm8190400",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 8,
+    "instagramId": "mslaggert",
+    "facebookId": "mitchell.slaggert",
+    "tmdbUpdatedAt": "2026-10-01T13:48:09.409Z",
+    "tmdbFetchedAt": "2026-10-01T13:48:09.409Z"
+  },
+  {
     "id": "mj-embury-hyatt",
     "slug": "mj-embury-hyatt",
     "name": "MJ Embury-Hyatt",
@@ -84062,7 +84516,8 @@
     "alsoKnownAs": [
       "Monisola Ogunsuyi"
     ],
-    "tmdbUpdatedAt": "2026-09-20T16:19:36.529Z"
+    "tmdbUpdatedAt": "2026-10-01T13:48:06.999Z",
+    "tmdbFetchedAt": "2026-10-01T13:48:06.999Z"
   },
   {
     "id": "monica-keena",
@@ -94421,6 +94876,20 @@
     "tmdbUpdatedAt": "2026-09-20T16:17:15.880Z"
   },
   {
+    "id": "168611",
+    "slug": "ricardo-betancourt",
+    "name": "Ricardo Betancourt",
+    "tmdbPersonId": 168611,
+    "photoUrl": "/images/people/168611.webp",
+    "profileUrl": "/images/people/168611.webp",
+    "imdbPersonId": "nm1364912",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 13,
+    "tmdbUpdatedAt": "2026-10-01T13:48:07.003Z",
+    "tmdbFetchedAt": "2026-10-01T13:48:07.003Z"
+  },
+  {
     "id": "2369060",
     "slug": "ricardo-ch-vez",
     "name": "Ricardo Chávez",
@@ -95303,6 +95772,27 @@
     "knownForDepartment": "Acting",
     "knownCredits": 6,
     "tmdbUpdatedAt": "2026-09-20T16:19:31.563Z"
+  },
+  {
+    "id": "1367019",
+    "slug": "rico-aragon",
+    "name": "Rico Aragon",
+    "tmdbPersonId": 1367019,
+    "photoUrl": "/images/people/1367019.webp",
+    "profileUrl": "/images/people/1367019.webp",
+    "birthday": "1981-09-15",
+    "placeOfBirth": "Miami, Florida, USA",
+    "biography": "Rico Aragon is an actor and cinematographer, known for I Live with Models (2015), The Perfect Wedding (2012) and Pumpkin Pie Wars (2016).",
+    "imdbPersonId": "nm2050419",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 12,
+    "alsoKnownAs": [
+      "Eric Aragon"
+    ],
+    "instagramId": "aragon_rico",
+    "tmdbUpdatedAt": "2026-10-01T13:48:08.739Z",
+    "tmdbFetchedAt": "2026-10-01T13:48:08.739Z"
   },
   {
     "id": "riders-in-the-sky",
@@ -97352,6 +97842,26 @@
     "tmdbUpdatedAt": "2026-09-20T16:17:24.978Z"
   },
   {
+    "id": "84209",
+    "slug": "ronreaco-lee",
+    "name": "RonReaco Lee",
+    "tmdbPersonId": 84209,
+    "photoUrl": "/images/people/84209.webp",
+    "profileUrl": "/images/people/84209.webp",
+    "birthday": "1976-08-27",
+    "placeOfBirth": "Decatur, Illinois, United States",
+    "biography": "RonReaco Lee (born August 27, 1976) is an American actor. He is known for his roles in Glory (1989), Guess Who (2005), and Coffee & Kareem (2020).",
+    "imdbPersonId": "nm0498165",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 54,
+    "alsoKnownAs": [
+      "RonReaco M. Lee"
+    ],
+    "tmdbUpdatedAt": "2026-10-01T13:48:05.435Z",
+    "tmdbFetchedAt": "2026-10-01T13:48:05.435Z"
+  },
+  {
     "id": "20389",
     "slug": "rosa-blasi",
     "name": "Rosa Blasi",
@@ -98943,6 +99453,20 @@
     "tmdbUpdatedAt": "2026-09-20T16:17:08.378Z"
   },
   {
+    "id": "2292584",
+    "slug": "sam-myerson",
+    "name": "Sam Myerson",
+    "tmdbPersonId": 2292584,
+    "photoUrl": "/images/people/2292584.webp",
+    "profileUrl": "/images/people/2292584.webp",
+    "imdbPersonId": "nm5335850",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 10,
+    "tmdbUpdatedAt": "2026-10-01T13:48:09.968Z",
+    "tmdbFetchedAt": "2026-10-01T13:48:09.968Z"
+  },
+  {
     "id": "sam-page",
     "slug": "sam-page",
     "name": "Sam Page",
@@ -99796,6 +100320,23 @@
     "tmdbUpdatedAt": "2026-09-20T16:20:00.859Z"
   },
   {
+    "id": "1552361",
+    "slug": "sarah-adina",
+    "name": "Sarah Adina",
+    "tmdbPersonId": 1552361,
+    "photoUrl": "/images/people/1552361.webp",
+    "profileUrl": "/images/people/1552361.webp",
+    "birthday": "1981-09-19",
+    "placeOfBirth": "Ann Arbor, Michigan, USA",
+    "biography": "Sarah Adina is an American actress.",
+    "imdbPersonId": "nm1379098",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 11,
+    "tmdbUpdatedAt": "2026-10-01T13:48:08.958Z",
+    "tmdbFetchedAt": "2026-10-01T13:48:08.958Z"
+  },
+  {
     "id": "sarah-allyn",
     "slug": "sarah-allyn",
     "name": "Sarah Allyn",
@@ -99944,7 +100485,8 @@
     "instagramId": "thesarahdrew",
     "twitterId": "sarahdrew",
     "facebookId": "OfficialSarahD",
-    "tmdbUpdatedAt": "2026-09-20T16:18:14.623Z"
+    "tmdbUpdatedAt": "2026-10-01T13:48:10.701Z",
+    "tmdbFetchedAt": "2026-10-01T13:48:10.701Z"
   },
   {
     "id": "1498646",
@@ -100449,6 +100991,18 @@
     "tmdbUpdatedAt": "2026-09-22T20:53:16.698Z"
   },
   {
+    "id": "1051792",
+    "slug": "sarah-doe-osborne",
+    "name": "Sarah-Doe Osborne",
+    "tmdbPersonId": 1051792,
+    "imdbPersonId": "nm2143389",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 6,
+    "tmdbUpdatedAt": "2026-10-01T13:48:04.623Z",
+    "tmdbFetchedAt": "2026-10-01T13:48:04.623Z"
+  },
+  {
     "id": "59183",
     "slug": "sarah-jane-redmond",
     "name": "Sarah-Jane Redmond",
@@ -100578,6 +101132,30 @@
       "Sasha Hayden"
     ],
     "tmdbUpdatedAt": "2026-09-20T16:16:40.548Z"
+  },
+  {
+    "id": "62168",
+    "slug": "sasha-pieterse",
+    "name": "Sasha Pieterse",
+    "tmdbPersonId": 62168,
+    "photoUrl": "/images/people/62168.webp",
+    "profileUrl": "/images/people/62168.webp",
+    "birthday": "1996-02-17",
+    "placeOfBirth": "Johannesburg, South Africa",
+    "biography": "Sasha Pieterse Sheaffer (born 17 February 1996) is a South African-born American actress and singer.  She is best known for her leading role as Alison DiLaurentis in the mystery-drama hit series \"Pretty Little Liars\" (2010-17) and in its spin-off \"Pretty Little Liars: The Perfectionists\" (2019).",
+    "imdbPersonId": "nm1199888",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 32,
+    "alsoKnownAs": [
+      "Sasha Pieterse Sheaffer",
+      "Sasha Embeth Pieterse-Sheaffer"
+    ],
+    "instagramId": "sashapieterse27",
+    "twitterId": "SashaaPieterse",
+    "facebookId": "TheSashaPietersePage",
+    "tmdbUpdatedAt": "2026-10-01T13:48:09.366Z",
+    "tmdbFetchedAt": "2026-10-01T13:48:09.366Z"
   },
   {
     "id": "1475828",
@@ -103006,7 +103584,8 @@
     "alsoKnownAs": [
       "Шон Ахмед"
     ],
-    "tmdbUpdatedAt": "2026-09-20T16:17:35.621Z"
+    "tmdbUpdatedAt": "2026-10-01T13:48:06.855Z",
+    "tmdbFetchedAt": "2026-10-01T13:48:06.855Z"
   },
   {
     "id": "shawn-alexander",
@@ -103043,6 +103622,21 @@
     "knownForDepartment": "Acting",
     "knownCredits": 2,
     "tmdbUpdatedAt": "2026-09-20T16:20:05.729Z"
+  },
+  {
+    "id": "4376342",
+    "slug": "shawn-gordon-fraser",
+    "name": "Shawn Gordon Fraser",
+    "tmdbPersonId": 4376342,
+    "imdbPersonId": "nm14708743",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 7,
+    "alsoKnownAs": [
+      "Shawn Fraser"
+    ],
+    "tmdbUpdatedAt": "2026-10-01T13:48:07.355Z",
+    "tmdbFetchedAt": "2026-10-01T13:48:07.355Z"
   },
   {
     "id": "shawn-ladd",
@@ -103276,6 +103870,23 @@
     "knownForDepartment": "Acting",
     "knownCredits": 1,
     "tmdbUpdatedAt": "2026-09-20T16:18:25.949Z"
+  },
+  {
+    "id": "3977973",
+    "slug": "sheldon-j-nicholas-jr",
+    "name": "Sheldon J. Nicholas Jr.",
+    "tmdbPersonId": 3977973,
+    "photoUrl": "/images/people/3977973.webp",
+    "profileUrl": "/images/people/3977973.webp",
+    "imdbPersonId": "nm7065300",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 3,
+    "alsoKnownAs": [
+      "Sheldon Nicholas"
+    ],
+    "tmdbUpdatedAt": "2026-10-01T13:48:06.234Z",
+    "tmdbFetchedAt": "2026-10-01T13:48:06.234Z"
   },
   {
     "id": "144596",
@@ -103927,7 +104538,8 @@
     "gender": "Male",
     "knownForDepartment": "Acting",
     "knownCredits": 15,
-    "tmdbUpdatedAt": "2026-09-21T12:58:26.187Z"
+    "tmdbUpdatedAt": "2026-10-01T13:48:07.138Z",
+    "tmdbFetchedAt": "2026-10-01T13:48:07.138Z"
   },
   {
     "id": "simon-morze",
@@ -104725,6 +105337,23 @@
     "tmdbUpdatedAt": "2026-09-20T16:20:21.112Z"
   },
   {
+    "id": "1960828",
+    "slug": "stafford-perry",
+    "name": "Stafford Perry",
+    "tmdbPersonId": 1960828,
+    "photoUrl": "/images/people/1960828.webp",
+    "profileUrl": "/images/people/1960828.webp",
+    "biography": "Stafford Perry is a Canadian stage, film and television actor.",
+    "imdbPersonId": "nm7294132",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 13,
+    "twitterId": "staffperry",
+    "facebookId": "stafford.perry",
+    "tmdbUpdatedAt": "2026-10-01T13:48:11.169Z",
+    "tmdbFetchedAt": "2026-10-01T13:48:11.169Z"
+  },
+  {
     "id": "stan-bly",
     "slug": "stan-bly",
     "name": "Stan Bly",
@@ -105244,7 +105873,8 @@
     "gender": "Female",
     "knownForDepartment": "Acting",
     "knownCredits": 33,
-    "tmdbUpdatedAt": "2026-09-20T16:20:26.112Z"
+    "tmdbUpdatedAt": "2026-10-01T13:48:07.282Z",
+    "tmdbFetchedAt": "2026-10-01T13:48:07.282Z"
   },
   {
     "id": "stephanie-moroz",
@@ -107407,7 +108037,8 @@
     "knownCredits": 24,
     "instagramId": "tamararubyalmeida",
     "twitterId": "almeidta",
-    "tmdbUpdatedAt": "2026-09-21T13:14:03.803Z"
+    "tmdbUpdatedAt": "2026-10-01T13:48:05.001Z",
+    "tmdbFetchedAt": "2026-10-01T13:48:05.001Z"
   },
   {
     "id": "tamara-austin",
@@ -108007,7 +108638,8 @@
     "gender": "Female",
     "knownForDepartment": "Writing",
     "knownCredits": 5,
-    "tmdbUpdatedAt": "2026-09-22T20:53:35.108Z"
+    "tmdbUpdatedAt": "2026-10-01T13:48:06.614Z",
+    "tmdbFetchedAt": "2026-10-01T13:48:06.614Z"
   },
   {
     "id": "tara-pratt",
@@ -108617,6 +109249,16 @@
     "tmdbUpdatedAt": "2026-09-20T16:18:50.895Z"
   },
   {
+    "id": "3064924",
+    "slug": "taylor-warren-goff",
+    "name": "Taylor Warren Goff",
+    "tmdbPersonId": 3064924,
+    "knownForDepartment": "Writing",
+    "knownCredits": 26,
+    "tmdbUpdatedAt": "2026-10-01T13:48:04.644Z",
+    "tmdbFetchedAt": "2026-10-01T13:48:04.644Z"
+  },
+  {
     "id": "tea-cheney",
     "slug": "tea-cheney",
     "name": "Tea Cheney",
@@ -109128,7 +109770,8 @@
     ],
     "instagramId": "officialterihatcher",
     "twitterId": "HatchingChange",
-    "tmdbUpdatedAt": "2026-09-20T16:17:56.562Z"
+    "tmdbUpdatedAt": "2026-10-01T13:48:06.529Z",
+    "tmdbFetchedAt": "2026-10-01T13:48:06.529Z"
   },
   {
     "id": "10399",
@@ -109825,7 +110468,8 @@
     "instagramId": "tiamowry",
     "twitterId": "tiamowry",
     "facebookId": "TiaMowry",
-    "tmdbUpdatedAt": "2026-09-20T16:18:34.077Z"
+    "tmdbUpdatedAt": "2026-10-01T13:48:05.262Z",
+    "tmdbFetchedAt": "2026-10-01T13:48:05.262Z"
   },
   {
     "id": "tia-o-neill",
@@ -116914,6 +117558,22 @@
     "knownForDepartment": "Acting",
     "knownCredits": 1,
     "tmdbUpdatedAt": "2026-09-20T16:18:38.449Z"
+  },
+  {
+    "id": "1439798",
+    "slug": "zuri-hall",
+    "name": "Zuri Hall",
+    "tmdbPersonId": 1439798,
+    "photoUrl": "/images/people/1439798.webp",
+    "profileUrl": "/images/people/1439798.webp",
+    "birthday": "1988-06-02",
+    "placeOfBirth": "Toledo, Ohio, USA",
+    "imdbPersonId": "nm6361406",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 7,
+    "tmdbUpdatedAt": "2026-10-01T13:48:09.880Z",
+    "tmdbFetchedAt": "2026-10-01T13:48:09.880Z"
   },
   {
     "id": "zyra-singleton",
