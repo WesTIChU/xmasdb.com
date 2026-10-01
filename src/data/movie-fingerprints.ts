@@ -548,22 +548,327 @@ export const PROTOTYPE_MOVIE_FINGERPRINTS: Readonly<Record<string, readonly Fing
   "gaf-2026-the-ornament-library": [
     "writer-journalist"
   ],
+  "hallmark-2008-moonlight-mistletoe": [
+    "family-business",
+    "hometown",
+    "parent-child",
+    "returns-home",
+    "reunion",
+    "save-the-business"
+  ],
+  "hallmark-2008-our-first-christmas": [
+    "new-blended-family",
+    "parent-child",
+    "widow-widower"
+  ],
+  "hallmark-2008-the-christmas-choir": [
+    "music",
+    "workaholic"
+  ],
   "hallmark-2008-the-most-wonderful-time-of-the-year": [
     "parent-child",
     "single-parent"
   ],
+  "hallmark-2009-christmas-in-canaan": [
+    "faith"
+  ],
+  "hallmark-2009-mrs-miracle": [
+    "matchmaking",
+    "parent-child",
+    "single-parent",
+    "widow-widower"
+  ],
+  "hallmark-2009-the-three-gifts": [
+    "countryside-farm",
+    "inheritance",
+    "parent-child"
+  ],
+  "hallmark-2010-an-old-fashioned-christmas": [
+    "europe-abroad",
+    "parent-child"
+  ],
+  "hallmark-2010-battle-of-the-bulbs": [
+    "christmas-competition",
+    "competition"
+  ],
+  "hallmark-2010-call-me-mrs-miracle": [
+    "save-the-business"
+  ],
+  "hallmark-2010-farewell-mr-kringle": [
+    "small-town",
+    "writer-journalist"
+  ],
+  "hallmark-2010-the-night-before-the-night-before-christmas": [
+    "amnesia",
+    "christmas-magic",
+    "family-reconciliation",
+    "santa"
+  ],
+  "hallmark-2010-the-santa-incident": [
+    "mistaken-identity",
+    "santa",
+    "small-town"
+  ],
+  "hallmark-2010-the-santa-suit": [
+    "christmas-magic",
+    "family-business",
+    "santa"
+  ],
+  "hallmark-2010-the-town-christmas-forgot": [
+    "family-reconciliation",
+    "small-town",
+    "snowed-in-stranded",
+    "unexpected-trip"
+  ],
+  "hallmark-2010-three-wise-women": [
+    "angel",
+    "family-reconciliation",
+    "parent-child",
+    "time-travel"
+  ],
+  "hallmark-2011-a-christmas-wedding-tail": [
+    "new-blended-family"
+  ],
+  "hallmark-2011-a-christmas-wish": [
+    "restaurant-cafe",
+    "single-parent",
+    "small-town"
+  ],
+  "hallmark-2011-a-princess-for-christmas": [
+    "castle-manor",
+    "europe-abroad",
+    "royal-estate",
+    "royalty",
+    "unexpected-romance"
+  ],
+  "hallmark-2011-annie-claus-is-coming-to-town": [
+    "big-city",
+    "business-owner",
+    "christmas-magic",
+    "inn-bnb",
+    "parent-child",
+    "santa",
+    "save-the-business",
+    "toy-shop",
+    "workplace-romance"
+  ],
+  "hallmark-2011-cancel-christmas": [
+    "christmas-magic",
+    "santa"
+  ],
+  "hallmark-2011-christmas-comes-home-to-canaan": [
+    "countryside-farm",
+    "doctor-nurse"
+  ],
+  "hallmark-2011-christmas-magic": [
+    "business-owner",
+    "ghost-spirit",
+    "parent-child",
+    "restaurant-cafe",
+    "save-the-business"
+  ],
+  "hallmark-2011-holiday-engagement": [
+    "career-vs-love",
+    "fake-relationship",
+    "returns-home",
+    "workaholic"
+  ],
+  "hallmark-2011-love-s-christmas-journey": [
+    "countryside-farm",
+    "parent-child",
+    "siblings",
+    "widow-widower"
+  ],
+  "hallmark-2011-lucky-christmas": [
+    "single-parent",
+    "unexpected-romance"
+  ],
+  "hallmark-2011-mistletoe-over-manhattan": [
+    "big-city",
+    "santa",
+    "workaholic"
+  ],
+  "hallmark-2011-november-christmas": [
+    "countryside-farm",
+    "parent-child",
+    "single-parent"
+  ],
+  "hallmark-2011-the-christmas-pageant": [
+    "entertainment-showbiz",
+    "old-flame",
+    "parent-child",
+    "small-town"
+  ],
+  "hallmark-2011-trading-christmas": [
+    "family-tradition",
+    "parent-child",
+    "single-parent",
+    "unexpected-trip",
+    "widow-widower"
+  ],
   "hallmark-2012-a-bride-for-christmas": [
     "runaway-bride-broken-engagement"
+  ],
+  "hallmark-2012-baby-s-first-christmas": [
+    "rivals-to-lovers",
+    "siblings"
+  ],
+  "hallmark-2012-christmas-with-holly": [
+    "business-owner",
+    "restaurant-cafe",
+    "runaway-bride-broken-engagement",
+    "seaside"
+  ],
+  "hallmark-2012-come-dance-with-me": [
+    "christmas-ball",
+    "love-triangle",
+    "unexpected-romance"
+  ],
+  "hallmark-2012-help-for-the-holidays": [
+    "big-city",
+    "christmas-magic",
+    "christmas-wish",
+    "santa"
+  ],
+  "hallmark-2012-hitched-for-the-holidays": [
+    "fake-relationship"
+  ],
+  "hallmark-2012-it-s-christmas-carol": [
+    "ghost-spirit",
+    "workaholic"
+  ],
+  "hallmark-2012-matchmaker-santa": [
+    "bakery",
+    "business-owner",
+    "chef-baker",
+    "love-triangle"
+  ],
+  "hallmark-2012-naughty-or-nice": [
+    "christmas-magic"
+  ],
+  "hallmark-2012-the-christmas-heart": [
+    "parent-child"
+  ],
+  "hallmark-2012-the-wishing-tree": [
+    "christmas-wish"
+  ],
+  "hallmark-2013-a-very-merry-mix-up": [
+    "business-owner"
+  ],
+  "hallmark-2013-catch-a-christmas-star": [
+    "celebrity",
+    "childhood-sweethearts",
+    "entertainment-showbiz",
+    "matchmaking",
+    "music",
+    "old-flame",
+    "parent-child",
+    "reunion",
+    "second-chance",
+    "siblings",
+    "single-parent",
+    "widow-widower"
+  ],
+  "hallmark-2013-finding-christmas": [
+    "big-city",
+    "parent-child",
+    "siblings",
+    "single-parent",
+    "small-town"
+  ],
+  "hallmark-2013-fir-crazy": [
+    "christmas-tree-farm",
+    "family-business",
+    "save-the-business"
+  ],
+  "hallmark-2013-pete-s-christmas": [
+    "christmas-magic",
+    "time-travel"
+  ],
+  "hallmark-2013-snow-bride": [
+    "career-vs-love",
+    "fake-relationship",
+    "mountains",
+    "resort",
+    "writer-journalist"
+  ],
+  "hallmark-2013-the-christmas-ornament": [
+    "business-owner",
+    "widow-widower"
+  ],
+  "hallmark-2013-the-christmas-spirit": [
+    "ghost-spirit",
+    "small-town",
+    "writer-journalist"
   ],
   "hallmark-2013-window-wonderland": [
     "competition",
     "rivals-to-lovers"
+  ],
+  "hallmark-2014-a-cookie-cutter-christmas": [
+    "baking-cooking",
+    "christmas-competition",
+    "competition",
+    "love-triangle",
+    "rivals-to-lovers",
+    "single-parent",
+    "teacher"
+  ],
+  "hallmark-2014-a-royal-christmas": [
+    "castle-manor",
+    "europe-abroad",
+    "royal-estate",
+    "royalty",
+    "unexpected-trip"
+  ],
+  "hallmark-2014-angels-and-ornaments": [
+    "angel",
+    "christmas-magic",
+    "matchmaking",
+    "unexpected-romance"
+  ],
+  "hallmark-2014-best-christmas-party-ever": [
+    "big-city",
+    "save-the-business",
+    "toy-shop"
+  ],
+  "hallmark-2014-christmas-at-cartwright-s": [
+    "angel",
+    "christmas-magic",
+    "single-parent"
   ],
   "hallmark-2014-christmas-under-wraps": [
     "career-vs-love",
     "doctor-nurse",
     "small-town",
     "unexpected-romance"
+  ],
+  "hallmark-2014-mr-miracle": [
+    "angel",
+    "unexpected-romance"
+  ],
+  "hallmark-2014-northpole": [
+    "christmas-magic",
+    "parent-child",
+    "santa",
+    "teacher",
+    "writer-journalist"
+  ],
+  "hallmark-2014-one-starry-christmas": [
+    "love-triangle",
+    "unexpected-romance"
+  ],
+  "hallmark-2014-the-christmas-parade": [
+    "celebrity",
+    "christmas-parade",
+    "entertainment-showbiz",
+    "small-town"
+  ],
+  "hallmark-2014-the-christmas-shepherd": [
+    "military",
+    "single-parent",
+    "widow-widower",
+    "writer-journalist"
   ],
   "hallmark-2015-a-christmas-detour": [
     "unexpected-romance",
@@ -3565,6 +3870,14 @@ export const PROTOTYPE_MOVIE_FINGERPRINTS: Readonly<Record<string, readonly Fing
   "uptv-2026-a-royal-stables-christmas": [
     "royalty",
     "secret-identity"
+  ],
+  "uptv-2026-chocolate-for-christmas": [
+    "family-business",
+    "family-tradition",
+    "hometown",
+    "returns-home",
+    "save-the-business",
+    "unexpected-romance"
   ],
   "uptv-2026-christmas-en-pointe": [
     "small-town",

@@ -347,15 +347,38 @@ export async function writeFingerprintCheckpoint(checkpoint: FingerprintCheckpoi
   await writeFileAtomically(filePath, JSON.stringify({ ...checkpoint, updatedAt: new Date().toISOString() }, null, 2) + '\n');
 }
 
-export function mergeFingerprintAssignments(checkpoint: FingerprintCheckpoint): Record<string, readonly FingerprintId[]> {
-  const assignments: Record<string, readonly FingerprintId[]> = { ...PROTOTYPE_MOVIE_FINGERPRINTS };
+export interface FingerprintMergeResult {
+  assignments: Record<string, readonly FingerprintId[]>;
+  applied: number;
+  skippedExisting: number;
+}
+
+export function mergeFingerprintAssignmentsWithStats(
+  checkpoint: FingerprintCheckpoint,
+  existingAssignments: Record<string, readonly FingerprintId[]> = PROTOTYPE_MOVIE_FINGERPRINTS,
+): FingerprintMergeResult {
+  const assignments: Record<string, readonly FingerprintId[]> = { ...existingAssignments };
+  let applied = 0;
+  let skippedExisting = 0;
   for (const entry of Object.values(checkpoint.entries)) {
     if (entry.status === 'classified') {
-      if (assignments[entry.movieId]) throw new Error(`Refusing to overwrite existing fingerprint assignment for ${entry.movieId}.`);
+      if (assignments[entry.movieId]) {
+        skippedExisting += 1;
+        continue;
+      }
       assignments[entry.movieId] = [...entry.fingerprints].sort();
+      applied += 1;
     }
   }
-  return Object.fromEntries(Object.entries(assignments).sort(([left], [right]) => left.localeCompare(right)));
+  return {
+    assignments: Object.fromEntries(Object.entries(assignments).sort(([left], [right]) => left.localeCompare(right))),
+    applied,
+    skippedExisting,
+  };
+}
+
+export function mergeFingerprintAssignments(checkpoint: FingerprintCheckpoint): Record<string, readonly FingerprintId[]> {
+  return mergeFingerprintAssignmentsWithStats(checkpoint).assignments;
 }
 
 export function buildFingerprintOverlaySource(assignments: Record<string, readonly FingerprintId[]>): string {

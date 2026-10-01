@@ -4,7 +4,7 @@ import os from 'node:os';
 import path from 'node:path';
 import { MOVIES } from '../src/data/movies';
 import { PROTOTYPE_MOVIE_FINGERPRINTS } from '../src/data/movie-fingerprints';
-import { buildFingerprintClassifierInput, classifyFingerprintBatch, emptyFingerprintCheckpoint, getFingerprintInputQuality, mergeFingerprintAssignments, readFingerprintCheckpoint, validateCheckpoint, validateClassifierResult } from '../src/server/fingerprint-classification';
+import { buildFingerprintClassifierInput, classifyFingerprintBatch, emptyFingerprintCheckpoint, getFingerprintInputQuality, mergeFingerprintAssignments, mergeFingerprintAssignmentsWithStats, readFingerprintCheckpoint, validateCheckpoint, validateClassifierResult } from '../src/server/fingerprint-classification';
 
 const movie = MOVIES.find((candidate) => !Object.hasOwn(PROTOTYPE_MOVIE_FINGERPRINTS, candidate.id))!;
 const input = buildFingerprintClassifierInput(movie);
@@ -61,6 +61,17 @@ checkpoint.entries[movie.id] = { movieId: movie.id, tmdbId: movie.tmdbId, title:
 const preview = mergeFingerprintAssignments(checkpoint);
 assert.deepEqual(preview['hallmark-2026-holiday-touchdown-a-bears-love-story'], PROTOTYPE_MOVIE_FINGERPRINTS['hallmark-2026-holiday-touchdown-a-bears-love-story']);
 assert.deepEqual(preview[movie.id], ['football']);
+const skippedExistingMerge = mergeFingerprintAssignmentsWithStats(checkpoint, {
+  ...PROTOTYPE_MOVIE_FINGERPRINTS,
+  [movie.id]: ['small-town'],
+});
+assert.equal(skippedExistingMerge.applied, 0);
+assert.equal(skippedExistingMerge.skippedExisting, 1);
+assert.deepEqual(skippedExistingMerge.assignments[movie.id], ['small-town'], 'existing production assignments are preserved');
+const newAssignmentMerge = mergeFingerprintAssignmentsWithStats(checkpoint, {});
+assert.equal(newAssignmentMerge.applied, 1);
+assert.equal(newAssignmentMerge.skippedExisting, 0);
+assert.deepEqual(newAssignmentMerge.assignments[movie.id], ['football']);
 assert.equal(validateCheckpoint({ ...checkpoint, entries: { [movie.id]: { ...checkpoint.entries[movie.id], fingerprints: ['not-real'] } } }).ok, false, 'apply rejects unknown checkpoint IDs');
 checkpoint.entries['insufficient-movie'] = { movieId: 'insufficient-movie', tmdbId: 999999, title: 'Insufficient', input: { ...input, movieId: 'insufficient-movie', tmdbId: 999999, title: 'Insufficient', synopsis: '' }, status: 'insufficient-data', fingerprints: [], error: 'Synopsis is empty.', updatedAt: new Date().toISOString() };
 assert.equal(mergeFingerprintAssignments(checkpoint)['insufficient-movie'], undefined, 'apply ignores insufficient-data entries');
