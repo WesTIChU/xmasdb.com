@@ -4,7 +4,7 @@ import { getActorBackdrop } from '../src/utils/backdrops';
 import { getPopulatedBrands } from '../src/data/brands';
 import { getRadarrAllFeedJson, getRadarrNetworkFeedJson, getSitemapXml, isMovieEligibleForRadarr } from '../src/utils/feeds';
 import { buildCatalogueUrl, getCataloguePage, parseCatalogueQuery } from '../src/utils/catalogue-pagination';
-import { buildCatalogueListing, selectDiscoverMovies, selectOnThisDayMovies, selectRelatedMovies } from '../src/server/catalogue-api';
+import { buildCatalogueListing, selectDiscoverMovies, selectThisMonthMovies, selectRelatedMovies } from '../src/server/catalogue-api';
 import { getMoviePoster } from '../src/utils/posters';
 
 console.log('Running catalogue pagination and local backdrop tests...');
@@ -19,24 +19,24 @@ assert.ok(comingSoonMovie, 'canonical catalogue should contain a Coming Soon mov
 const catalogueMovieCount = MOVIES.filter((movie) => movie.status === 'collection' || movie.status === 'coming-soon').length;
 assert.strictEqual(defaultPage.total, catalogueMovieCount);
 
-const onThisDayBase = { ...MOVIES[0], status: 'collection' as const, premiereDate: undefined, releaseDate: '2020-11-25' };
-const onThisDayMovie = (id: string, releaseDate: string, status: 'collection' | 'coming-soon' = 'collection', title = id) => ({ ...onThisDayBase, id, title, releaseDate, status });
-const emptyOnThisDay = selectOnThisDayMovies([onThisDayMovie('day-before', '2020-11-24'), onThisDayMovie('other-month', '2020-12-25')], new Date('2026-11-25T12:00:00Z'));
-assert.equal(emptyOnThisDay, null, 'empty dates render nothing');
-const onThisDayMatches = selectOnThisDayMovies([
-  onThisDayMovie('day-2016', '2016-11-25', 'collection', 'Older'),
-  onThisDayMovie('day-2019', '2019-11-25', 'collection', 'Nineteen'),
-  onThisDayMovie('day-2022-b', '2022-11-25', 'collection', 'Beta'),
-  onThisDayMovie('day-2022-a', '2022-11-25', 'collection', 'Alpha'),
-  onThisDayMovie('day-2023', '2023-11-25', 'collection', 'Newest'),
-  onThisDayMovie('different-day', '2023-11-24'),
-  onThisDayMovie('different-month', '2023-12-25'),
-  onThisDayMovie('invalid', 'not-a-date'),
-  onThisDayMovie('coming-soon', '2023-11-25', 'coming-soon'),
+const thisMonthBase = { ...MOVIES[0], status: 'collection' as const, premiereDate: undefined, releaseDate: '2020-11-25' };
+const thisMonthMovie = (id: string, releaseDate: string, status: 'collection' | 'coming-soon' = 'collection', title = id) => ({ ...thisMonthBase, id, title, releaseDate, status });
+const emptyThisMonth = selectThisMonthMovies([thisMonthMovie('other-month', '2020-12-25')], new Date('2026-11-25T12:00:00Z'));
+assert.equal(emptyThisMonth, null, 'empty months render nothing');
+const thisMonthMatches = selectThisMonthMovies([
+  thisMonthMovie('month-2016', '2016-11-01', 'collection', 'Older'),
+  thisMonthMovie('month-2019', '2019-11-30', 'collection', 'Nineteen'),
+  thisMonthMovie('month-2022-b', '2022-11-25', 'collection', 'Beta'),
+  thisMonthMovie('month-2022-a', '2022-11-25', 'collection', 'Alpha'),
+  thisMonthMovie('month-2023', '2023-11-25', 'collection', 'Newest'),
+  thisMonthMovie('different-month', '2023-12-25'),
+  thisMonthMovie('future', '2026-11-26'),
+  thisMonthMovie('invalid', 'not-a-date'),
+  thisMonthMovie('coming-soon', '2023-11-25', 'coming-soon'),
 ], new Date('2026-11-25T12:00:00Z'));
-assert.equal(onThisDayMatches?.total, 5);
-assert.deepEqual(onThisDayMatches?.movies.map((movie) => movie.title), ['Newest', 'Alpha', 'Beta', 'Nineteen']);
-assert.equal(onThisDayMatches?.movies.length, 4);
+assert.equal(thisMonthMatches?.total, 5);
+assert.deepEqual(thisMonthMatches?.movies.map((movie) => movie.title), ['Newest', 'Alpha', 'Beta', 'Nineteen']);
+assert.equal(thisMonthMatches?.movies.length, 4);
 const catalogueOrder = getCataloguePage(MOVIES, parseCatalogueQuery('?perPage=96')).movies;
 const firstCollectionIndex = catalogueOrder.findIndex((movie) => movie.status !== 'coming-soon');
 assert.ok(firstCollectionIndex > 0);

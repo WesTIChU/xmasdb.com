@@ -14,6 +14,7 @@ export interface CatalogueQuery {
   search?: string;
   releaseWeekStart?: string;
   releaseWeekEnd?: string;
+  releaseMonth?: number;
 }
 
 export interface PaginatedMovies {
@@ -53,6 +54,9 @@ export function parseCatalogueQuery(search: string): CatalogueQuery {
     search: params.get('search')?.trim().toLowerCase() || undefined,
     releaseWeekStart: releaseWeekStartValue,
     releaseWeekEnd: releaseWeekEndValue,
+    releaseMonth: Number.isInteger(Number(params.get('releaseMonth'))) && Number(params.get('releaseMonth')) >= 1 && Number(params.get('releaseMonth')) <= 12
+      ? Number(params.get('releaseMonth'))
+      : undefined,
   };
 }
 
@@ -77,6 +81,10 @@ export function getCataloguePage(movies: Movie[], query: CatalogueQuery, lockedB
         startDateKey: `2000-${query.releaseWeekStart}`,
         endDateKey: `2000-${query.releaseWeekEnd}`,
       })) return false;
+    }
+    if (query.releaseMonth !== undefined) {
+      const dateKey = getMoviePremiereDateKey(movie);
+      if (!dateKey || dateKey > new Date().toISOString().slice(0, 10) || Number(dateKey.slice(5, 7)) !== query.releaseMonth) return false;
     }
     const status = movie.status?.toLowerCase();
     if (status !== 'collection' && status !== 'coming-soon') return false;

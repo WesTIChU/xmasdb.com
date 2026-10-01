@@ -6,7 +6,7 @@ import { NavigationLink } from './NavigationLink';
 import { PopularActorsSection } from './PopularActorsSection';
 import { formatMoviePremiereDate } from '../utils/catalogue-lifecycle';
 import { getYearPath } from '../utils/urls';
-import { OnThisDaySection } from './OnThisDaySection';
+import { ThisMonthSection } from './ThisMonthSection';
 import { HollyDivider } from './HollyDivider';
 
 interface HomePageProps {
@@ -20,7 +20,7 @@ const homepageMovieGridClass = 'flex gap-4 sm:gap-5 overflow-x-auto pb-2 no-scro
 export const HomePage: React.FC<HomePageProps> = ({ payload, onNavigate }) => {
   const comingSoon = Array.isArray(payload?.comingSoon) ? payload.comingSoon : [];
   const discovery = Array.isArray(payload?.discovery) ? payload.discovery : [];
-  const onThisDay = payload?.onThisDay || null;
+  const thisMonth = payload?.thisMonth || null;
   const popularActors = Array.isArray(payload?.popularActors) ? payload.popularActors : [];
   const totalMovies = typeof payload?.totalMovies === 'number' ? payload.totalMovies : 0;
   const archiveYears = Array.isArray(payload?.archiveYears) ? payload.archiveYears : [];
@@ -55,7 +55,7 @@ export const HomePage: React.FC<HomePageProps> = ({ payload, onNavigate }) => {
         <HollyDivider className="mt-4 -mb-4 sm:mt-5 sm:-mb-5" lineClassName="w-6 sm:w-8" ornamentClassName="h-4 w-12 sm:h-5 sm:w-14" />
       </section>
 
-      {onThisDay && <OnThisDaySection payload={onThisDay} onNavigate={onNavigate} />}
+      {thisMonth && <ThisMonthSection payload={thisMonth} onNavigate={onNavigate} />}
 
       <section className="py-7 sm:py-9" aria-labelledby="discovery-heading">
         <div className={homepageMovieGridOuterClass}>

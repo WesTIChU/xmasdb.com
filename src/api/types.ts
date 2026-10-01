@@ -62,8 +62,9 @@ export interface PopularActorsGroup {
   actors: PopularActorEntry[];
 }
 
-export interface OnThisDayPayload {
-  dateLabel: string;
+export interface ThisMonthPayload {
+  month: number;
+  monthLabel: string;
   total: number;
   movies: ListingMovie[];
 }
@@ -78,7 +79,7 @@ export interface HomePayload {
   totalMovies: number;
   comingSoon: ListingMovie[];
   discovery: ListingMovie[];
-  onThisDay: OnThisDayPayload | null;
+  thisMonth: ThisMonthPayload | null;
   popularActors: PopularActorsGroup[];
   archiveYears: ArchiveYearEntry[];
 }

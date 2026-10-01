@@ -27,7 +27,7 @@ import type {
   CatalogueMeta,
   FeedsMetaPayload,
   HomePayload,
-  OnThisDayPayload,
+  ThisMonthPayload,
   ListingMovie,
   MetaBrand,
   MovieDetailPayload,
@@ -495,14 +495,17 @@ export function selectDiscoverMovies(
   return selected.slice(0, 6);
 }
 
-export function selectOnThisDayMovies(movies: Movie[], now: Date = new Date()): OnThisDayPayload | null {
-  const monthDay = `${String(now.getUTCMonth() + 1).padStart(2, '0')}-${String(now.getUTCDate()).padStart(2, '0')}`;
+export function selectThisMonthMovies(movies: Movie[], now: Date = new Date()): ThisMonthPayload | null {
+  const month = now.getUTCMonth() + 1;
+  const monthKey = String(month).padStart(2, '0');
+  const todayKey = getUtcDateKey(now);
   const matching = movies
     .filter((movie) => {
       const dateKey = getMoviePremiereDateKey(movie);
       return movie.status?.toLowerCase() === 'collection'
         && dateKey !== null
-        && dateKey.slice(5) === monthDay;
+        && dateKey.slice(5, 7) === monthKey
+        && dateKey <= todayKey;
     })
     .sort((left, right) => {
       const leftDate = getMoviePremiereDateKey(left) || '';
@@ -510,9 +513,10 @@ export function selectOnThisDayMovies(movies: Movie[], now: Date = new Date()): 
       return Number(rightDate.slice(0, 4)) - Number(leftDate.slice(0, 4)) || left.title.localeCompare(right.title);
     });
   if (matching.length === 0) return null;
-  const dateLabel = new Intl.DateTimeFormat('en-US', { month: 'long', day: 'numeric', timeZone: 'UTC' }).format(now);
+  const monthLabel = new Intl.DateTimeFormat('en-US', { month: 'long', timeZone: 'UTC' }).format(now);
   return {
-    dateLabel,
+    month,
+    monthLabel,
     total: matching.length,
     movies: matching.slice(0, 4).map(toListingMovie),
   };
@@ -537,7 +541,7 @@ export function buildHomePayload(now: Date = new Date()): HomePayload {
   const comingSoonIds = new Set(comingSoon.map((movie) => movie.id));
   const discovery = selectDiscoverMovies(MOVIES, now, comingSoonIds)
     .map(toListingMovie);
-  const onThisDay = selectOnThisDayMovies(MOVIES, now);
+  const thisMonth = selectThisMonthMovies(MOVIES, now);
 
   const archiveYears = getAllYearsForBrand()
     .slice(0, 6)
@@ -562,7 +566,7 @@ export function buildHomePayload(now: Date = new Date()): HomePayload {
     totalMovies: MOVIES.length,
     comingSoon,
     discovery,
-    onThisDay,
+    thisMonth,
     popularActors,
     archiveYears,
   };
