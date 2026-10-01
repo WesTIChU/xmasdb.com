@@ -78,7 +78,12 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add src/data/movie-fingerprints.ts src/data/fingerprint-classification-status.json
+          git add src/data/movie-fingerprints.ts
+          if [ -f src/data/fingerprint-classification-status.json ]; then
+            git add src/data/fingerprint-classification-status.json
+          else
+            echo "No fingerprint status report was generated; skipping optional report staging."
+          fi
           if git diff --cached --quiet; then
             echo "No fingerprint status or assignment changes to commit."
           else
