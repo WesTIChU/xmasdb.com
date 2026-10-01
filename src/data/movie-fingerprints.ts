@@ -4016,6 +4016,13 @@ export const PROTOTYPE_MOVIE_FINGERPRINTS: Readonly<Record<string, readonly Fing
   "uptv-2026-the-christmas-gift-guide": [
     "christmas-magic",
     "christmas-wish"
+  ],
+  "uptv-2026-the-christmas-treehouse": [
+    "childhood-sweethearts",
+    "hometown",
+    "old-flame",
+    "returns-home",
+    "reunion"
   ]
 };
 
