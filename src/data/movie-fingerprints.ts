@@ -1337,6 +1337,9 @@ export const PROTOTYPE_MOVIE_FINGERPRINTS: Readonly<Record<string, readonly Fing
   "hallmark-2019-christmas-wishes-mistletoe-kisses": [
     "single-parent"
   ],
+  "hallmark-2019-double-holiday": [
+    "family-tradition"
+  ],
   "hallmark-2019-holiday-date": [
     "fake-relationship"
   ],
@@ -2597,6 +2600,11 @@ export const PROTOTYPE_MOVIE_FINGERPRINTS: Readonly<Record<string, readonly Fing
     "competition",
     "rivals-to-lovers"
   ],
+  "lifetime-2014-a-perfect-christmas-list": [
+    "christmas-wish",
+    "family-reconciliation",
+    "parent-child"
+  ],
   "lifetime-2014-an-en-vogue-christmas": [
     "celebrity",
     "entertainment-showbiz",
@@ -2648,6 +2656,10 @@ export const PROTOTYPE_MOVIE_FINGERPRINTS: Readonly<Record<string, readonly Fing
     "old-flame",
     "returns-home",
     "save-the-business"
+  ],
+  "lifetime-2016-heaven-sent": [
+    "angel",
+    "second-chance"
   ],
   "lifetime-2017-a-very-merry-toy-store": [
     "business-owner",
