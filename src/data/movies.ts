@@ -207721,6 +207721,192 @@ export const MOVIES: Movie[] = [
     "voteCount": 32,
     "tmdbUpdatedAt": "2026-10-01T09:05:33.405Z",
     "tmdbFetchedAt": "2026-10-01T09:05:33.405Z"
+  },
+  {
+    "id": "hallmark-2008-the-christmas-choir",
+    "slug": "the-christmas-choir",
+    "title": "The Christmas Choir",
+    "year": 2008,
+    "brandId": "hallmark",
+    "releaseDate": "2008-12-06",
+    "synopsis": "A chance encounter with a homeless man named Bob inspires a workaholic accountant to start a choir  at a homeless shelter, allowing him to find a purpose to his life and discover the power of music, while providing the choir members with a chance at a new, better life.",
+    "posterUrl": "/images/posters/57860.jpg",
+    "backdropUrl": "/images/backdrops/57860.jpg",
+    "cast": [
+      {
+        "actorId": "48012",
+        "name": "Jason Gedrick",
+        "character": "Peter Brockman",
+        "slug": "jason-gedrick",
+        "tmdbPersonId": 48012,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/45Dea89CukCmdk88F7RQMgpAeYC.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "181247",
+        "name": "Tyrone Benskin",
+        "character": "Bob",
+        "slug": "tyrone-benskin",
+        "tmdbPersonId": 181247,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/jJ4xLfwYsK2iDL1Ge8u2FvlKCb9.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "30428",
+        "name": "Michael Sarrazin",
+        "character": "Henry Brockman",
+        "slug": "michael-sarrazin",
+        "tmdbPersonId": 30428,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/w7nDo9IYxE5iwNZzzui4JpHU8ea.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "208079",
+        "name": "Marianne Farley",
+        "character": "Marilyn Stone",
+        "slug": "marianne-farley",
+        "tmdbPersonId": 208079,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/b7JAa7GEyWnAyRYRlsRsq5Q5kR4.jpg",
+        "order": 3
+      },
+      {
+        "actorId": "96596",
+        "name": "Roc LaFortune",
+        "character": "Hector",
+        "slug": "roc-lafortune",
+        "tmdbPersonId": 96596,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/nbqZEcLgnWbq2FMQ5TuU4zY7vpI.jpg",
+        "order": 4
+      },
+      {
+        "actorId": "218899",
+        "name": "John Dunn-Hill",
+        "character": "Fred",
+        "slug": "john-dunn-hill",
+        "tmdbPersonId": 218899,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/gyTy14cdl7XIDLA6rpRtnOO5GA.jpg",
+        "order": 5
+      },
+      {
+        "actorId": "90465",
+        "name": "Luis Oliva",
+        "character": "Juan",
+        "slug": "luis-oliva",
+        "tmdbPersonId": 90465,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/cc2xH9Yi87lNhomaTl7vHP0awkU.jpg",
+        "order": 6
+      },
+      {
+        "actorId": "7007",
+        "name": "Claudia Ferri",
+        "character": "Rita",
+        "slug": "claudia-ferri",
+        "tmdbPersonId": 7007,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/mWFY9va5C9w7MRZZzfd0nGk0i1r.jpg",
+        "order": 7
+      },
+      {
+        "actorId": "52785",
+        "name": "Cindy Sampson",
+        "character": "Jill Crosby",
+        "slug": "cindy-sampson",
+        "tmdbPersonId": 52785,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/peY41PlXawaAnhJ1q2TybaVacvV.jpg",
+        "order": 8
+      },
+      {
+        "actorId": "24203",
+        "name": "Rhea Perlman",
+        "character": "Sister Agatha",
+        "slug": "rhea-perlman",
+        "tmdbPersonId": 24203,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/4S4PdeHea2pePiWHy8MlDODZRLP.jpg",
+        "order": 9
+      }
+    ],
+    "director": "Peter Svatek",
+    "tmdbId": 57860,
+    "imdbId": "tt1285239",
+    "isComingSoon": false,
+    "status": "collection",
+    "originalTitle": "The Christmas Choir",
+    "runtimeMinutes": 90,
+    "genres": [
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      },
+      {
+        "id": 18,
+        "name": "Drama"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "BR",
+        "releaseDate": "2008-12-09T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": ""
+      },
+      {
+        "country": "CA",
+        "releaseDate": "2025-12-05T00:00:00.000Z",
+        "type": 4,
+        "certification": "",
+        "note": "Ici tout tv Extra"
+      },
+      {
+        "country": "DE",
+        "releaseDate": "2014-10-20T00:00:00.000Z",
+        "type": 5,
+        "certification": "0",
+        "note": ""
+      },
+      {
+        "country": "US",
+        "releaseDate": "2008-12-06T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "Hallmark Channel"
+      }
+    ],
+    "crew": [
+      {
+        "id": 184494,
+        "name": "Donald Martin",
+        "job": "Writer",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/4n157vwUZWBETl5UG6GwOPfHO9h.jpg",
+        "creditId": "52fe4949c3a36847f81929cb"
+      },
+      {
+        "id": 147792,
+        "name": "Peter Svatek",
+        "job": "Director",
+        "department": "Directing",
+        "creditId": "52fe4949c3a36847f81929c5"
+      }
+    ],
+    "trailers": [
+      {
+        "key": "WvJOzW5w5G8",
+        "site": "YouTube",
+        "type": "Trailer",
+        "name": "DVD Trailer: The Christmas Choir",
+        "official": false
+      }
+    ],
+    "trailerYoutubeKey": "WvJOzW5w5G8",
+    "tagline": "He's starting his life over... on a whole new note.",
+    "voteAverage": 5.1,
+    "voteCount": 8,
+    "tmdbUpdatedAt": "2026-10-01T09:09:30.529Z",
+    "tmdbFetchedAt": "2026-10-01T09:09:30.529Z"
   }
 ];
 

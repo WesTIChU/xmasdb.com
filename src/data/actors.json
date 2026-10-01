@@ -21054,7 +21054,8 @@
     "knownCredits": 40,
     "instagramId": "cinnysam",
     "twitterId": "CindyMSampson",
-    "tmdbUpdatedAt": "2026-09-20T16:20:10.378Z"
+    "tmdbUpdatedAt": "2026-10-01T09:09:33.171Z",
+    "tmdbFetchedAt": "2026-10-01T09:09:33.171Z"
   },
   {
     "id": "cindy-williams",
@@ -21418,6 +21419,24 @@
     "knownForDepartment": "Acting",
     "knownCredits": 3,
     "tmdbUpdatedAt": "2026-09-20T16:19:34.377Z"
+  },
+  {
+    "id": "7007",
+    "slug": "claudia-ferri",
+    "name": "Claudia Ferri",
+    "tmdbPersonId": 7007,
+    "photoUrl": "/images/people/7007.webp",
+    "profileUrl": "/images/people/7007.webp",
+    "placeOfBirth": "Montreal, Quebec, Canada",
+    "biography": "Claudia Ferri was born into a multicultural family in Montreal. Her father of Italian Origins and her mother's ancestry is Irish, Scottish, French and Native American. When all the members of her family got together for festivities, Italian, French, English or Arab was spoken among cousins or aunts and uncles. It's no surprise that she is multilingual (English, Italian, French and Spanish) on screen too.  The eastern coast of U.S.A. is a familiar scene to her, as many of her childhood summers would see the family traveling down to New York State, New Jersey, Pennsylvania and Massachusetts, where they would visit cousins and relatives. Later, her parents built a home and took up residence in Naples, Florida. Claudia was in fact visiting her parents in Naples when a phone call from her agent informed her that she was considered to play opposite Aidan Quinn & Donald Sutherland in \"The assignment\", which proved to be her first big break in film.",
+    "imdbPersonId": "nm0274750",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 53,
+    "instagramId": "claudiaferri_tales",
+    "twitterId": "Claudia_Ferri",
+    "tmdbUpdatedAt": "2026-10-01T09:09:33.475Z",
+    "tmdbFetchedAt": "2026-10-01T09:09:33.475Z"
   },
   {
     "id": "70115",
@@ -29156,7 +29175,8 @@
     "gender": "Male",
     "knownForDepartment": "Writing",
     "knownCredits": 40,
-    "tmdbUpdatedAt": "2026-09-22T20:53:23.166Z"
+    "tmdbUpdatedAt": "2026-10-01T09:09:33.514Z",
+    "tmdbFetchedAt": "2026-10-01T09:09:33.514Z"
   },
   {
     "id": "dondre-whitfield",
@@ -44642,6 +44662,27 @@
     "tmdbUpdatedAt": "2026-09-20T16:21:18.548Z"
   },
   {
+    "id": "48012",
+    "slug": "jason-gedrick",
+    "name": "Jason Gedrick",
+    "tmdbPersonId": 48012,
+    "photoUrl": "/images/people/48012.webp",
+    "profileUrl": "/images/people/48012.webp",
+    "birthday": "1965-02-07",
+    "placeOfBirth": "Chicago, Illinois, USA",
+    "biography": "An American actor best known for his work on the television series Murder One and Boomtown, as well as the motion picture Iron Eagle. Gedrick began his career as an extra in films such as Bad Boys (1983) and Risky Business (1983). After roles in The Heavenly Kid (1985), Iron Eagle (1986), Promised Land (1987) with director Michael Hoffman, Iron Eagle II (1988 in an uncredited role for the first few minutes of the movie), Born on the Fourth of July (1989), Backdraft (1991), and Crossing the Bridge (1992), Gedrick appeared in television series such as Class of '96 (1993) and Sweet Justice (1994). In 1994, Gedrick starred in the film The Force with Yasmine Bleeth and Kim Delaney. Gedrick's big break was in Steven Bochco's innovative 1995 series Murder One. The series followed the trial of Gedrick's character, bad-boy actor Neil Avedon, alleged to have murdered a 15-year-old girl. The series, which also starred talent such as Daniel Benzali, Patricia Clarkson, Mary McCormack, Dylan Baker and Stanley Tucci was a runaway success. Due to this, a second season was commissioned. Due to network concerns, the new season featured several small cases rather than one big one. Anthony LaPaglia stepped in to replace the cast such as Benzali, Tucci and Gedrick, who had left, and the series was canceled midway through its second season. Gedrick's next major project was the three-hour TV movie The Third Twin, a 1997 thriller based on the best-selling 1996 novel by British writer Ken Follett. Gedrick plays a university employee accused of rape, whose friend later discovers he has a twin--and actually several more twins cloned by an evil millionaire university donor and biomedical technology CEO (played to the hilt by Larry Hagman, a.k.a. Dallas's J. R. Ewing). Gedrick next took roles in television series such as EZ Streets (1996), Falcone (2000) and The Beast (2001). None of which were major successes. In 1999, he guest starred on Ally McBeal as the \"hot car wash guy\". Also appearing in Mario Puzo's 1997 mini-series, The Last Don and in its sequel, The Last Don II. Gedrick returned to television screens as Tom Turcotte in 2002's Boomtown. The series, which also starred Donnie Wahlberg and Neal McDonough was a moderate success, but ratings plummeted - particularly after the second season suffered a format change, and Boomtown was cancelled. In 2003, Gedrick played Andrew Luster, the infamous rapist in a Lifetime movie based on his trial, A Date with Darkness. Gedrick is part of the cast of the 2006 NBC television series Windfall also starring Luke Perry and Gedrick's former Boomtown alumni, Lana Parrilla. In 2007 Gedrick again starred alongside Donnie Wahlberg in the A&E original movie Kings of South Beach. He is also the new love interest at Scavo's Pizzeria in Desperate Housewives Season 3 and 4 on ABC.\n\nDescription above from the Wikipedia article Jason Gedrick, licensed under CC-BY-SA, full list of contributors on Wikipedia.",
+    "imdbPersonId": "nm0001263",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 71,
+    "alsoKnownAs": [
+      "Jason Michael Gedroic",
+      "جیسون گدریک"
+    ],
+    "tmdbUpdatedAt": "2026-10-01T09:09:32.804Z",
+    "tmdbFetchedAt": "2026-10-01T09:09:32.804Z"
+  },
+  {
     "id": "jason-hervey",
     "slug": "jason-hervey",
     "name": "Jason Hervey",
@@ -49755,6 +49796,27 @@
     "knownForDepartment": "Writing",
     "knownCredits": 22,
     "tmdbUpdatedAt": "2026-09-22T20:53:41.518Z"
+  },
+  {
+    "id": "218899",
+    "slug": "john-dunn-hill",
+    "name": "John Dunn-Hill",
+    "tmdbPersonId": 218899,
+    "photoUrl": "/images/people/218899.webp",
+    "profileUrl": "/images/people/218899.webp",
+    "birthday": "1936-01-01",
+    "deathday": "2015-09-22",
+    "placeOfBirth": "Glasgow, Scotland, UK",
+    "biography": "John Dunn-Hill was born in 1936 in Glasgow, UK. He was an actor, known for Punisher: War Zone (2008), 300 (2006) and Secret Window (2004).",
+    "imdbPersonId": "nm0242803",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 53,
+    "alsoKnownAs": [
+      "John Dunn Hill"
+    ],
+    "tmdbUpdatedAt": "2026-10-01T09:09:33.491Z",
+    "tmdbFetchedAt": "2026-10-01T09:09:33.491Z"
   },
   {
     "id": "john-earl-jelks",
@@ -64075,6 +64137,25 @@
     "tmdbUpdatedAt": "2026-09-20T16:21:08.357Z"
   },
   {
+    "id": "90465",
+    "slug": "luis-oliva",
+    "name": "Luis Oliva",
+    "tmdbPersonId": 90465,
+    "photoUrl": "/images/people/90465.webp",
+    "profileUrl": "/images/people/90465.webp",
+    "birthday": "1977-11-08",
+    "placeOfBirth": "Guatemala City, Guatemala",
+    "imdbPersonId": "nm3520198",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 35,
+    "alsoKnownAs": [
+      "Luis Olivia"
+    ],
+    "tmdbUpdatedAt": "2026-10-01T09:09:33.461Z",
+    "tmdbFetchedAt": "2026-10-01T09:09:33.461Z"
+  },
+  {
     "id": "luisa-d-oliveira",
     "slug": "luisa-d-oliveira",
     "name": "Luisa d'Oliveira",
@@ -66557,6 +66638,25 @@
     "knownForDepartment": "Acting",
     "knownCredits": 10,
     "tmdbUpdatedAt": "2026-09-20T16:16:43.444Z"
+  },
+  {
+    "id": "208079",
+    "slug": "marianne-farley",
+    "name": "Marianne Farley",
+    "tmdbPersonId": 208079,
+    "photoUrl": "/images/people/208079.webp",
+    "profileUrl": "/images/people/208079.webp",
+    "placeOfBirth": "Montreal, Quebec, Canada",
+    "biography": "Marianne Farley is an actress and director, known for White Skin (2004), The Christmas Choir (2008) and Imaginaerum (2012). She was born in Montreal, Quebec, Canada. Marianne has recorded a couple of music discs, including one for the French market in Quebec. Her television and film work has been lauded with many nominations and wins. One of these wins was for her film White Skin (2004). White Skin won a Genie award for the Best First Feature Film, a Best Canadian First Feature Award at the Toronto International Film Festival (TIFF) and a Best Canadian Feature Award in the Victoria Independant Film and Video Festival for director Daniel Rob. Marianne directed her first short film, when Saccage was released in 2015.",
+    "imdbPersonId": "nm0857584",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 34,
+    "alsoKnownAs": [
+      "Marianne Therien"
+    ],
+    "tmdbUpdatedAt": "2026-10-01T09:09:32.861Z",
+    "tmdbFetchedAt": "2026-10-01T09:09:32.861Z"
   },
   {
     "id": "mariano-victorio",
@@ -72970,6 +73070,24 @@
       "Ryan Michael"
     ],
     "tmdbUpdatedAt": "2026-09-20T16:18:56.385Z"
+  },
+  {
+    "id": "30428",
+    "slug": "michael-sarrazin",
+    "name": "Michael Sarrazin",
+    "tmdbPersonId": 30428,
+    "photoUrl": "/images/people/30428.webp",
+    "profileUrl": "/images/people/30428.webp",
+    "birthday": "1940-05-22",
+    "deathday": "2011-04-17",
+    "placeOfBirth": "Québec City, Québec, Canada",
+    "biography": "From Wikipedia, the free encyclopedia.\n\nMichael Sarrazin (May 22, 1940 – April 17, 2011) was a Canadian film and television actor who found fame opposite Jane Fonda in the drama film They Shoot Horses, Don't They? (1969).\n\nDescription above from the Wikipedia article Michael Sarrazin, licensed under CC-BY-SA, full list of contributors on Wikipedia.​",
+    "imdbPersonId": "nm0765546",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 68,
+    "tmdbUpdatedAt": "2026-10-01T09:09:32.776Z",
+    "tmdbFetchedAt": "2026-10-01T09:09:32.776Z"
   },
   {
     "id": "michael-shanks",
@@ -81587,6 +81705,18 @@
     "tmdbUpdatedAt": "2026-09-21T13:17:16.764Z"
   },
   {
+    "id": "147792",
+    "slug": "peter-svatek",
+    "name": "Peter Svatek",
+    "tmdbPersonId": 147792,
+    "imdbPersonId": "nm0840939",
+    "gender": "Male",
+    "knownForDepartment": "Directing",
+    "knownCredits": 24,
+    "tmdbUpdatedAt": "2026-10-01T09:09:33.585Z",
+    "tmdbFetchedAt": "2026-10-01T09:09:33.585Z"
+  },
+  {
     "id": "peter-vollebregt",
     "slug": "peter-vollebregt",
     "name": "Peter Vollebregt",
@@ -84011,6 +84141,26 @@
     "tmdbUpdatedAt": "2026-09-20T16:19:47.176Z"
   },
   {
+    "id": "24203",
+    "slug": "rhea-perlman",
+    "name": "Rhea Perlman",
+    "tmdbPersonId": 24203,
+    "photoUrl": "/images/people/24203.webp",
+    "profileUrl": "/images/people/24203.webp",
+    "birthday": "1948-03-31",
+    "placeOfBirth": "Coney Island, New York, USA",
+    "biography": "Rhea Jo Perlman (born March 31, 1948) is an American actress and writer. She is best known for her role as head-waitress Carla Tortelli in the sitcom Cheers (1982–1993). Over the course of 11 seasons, Perlman was nominated for ten Emmy Awards for Outstanding Supporting Actress – winning four times – and was nominated for a record seven Golden Globe Awards for Best Supporting Actress in a Television Series. She has also appeared in films, including Canadian Bacon (1995), Matilda (1996), The Sessions (2012), and Poms (2019).",
+    "imdbPersonId": "nm0674231",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 131,
+    "alsoKnownAs": [
+      "رئا پرلمان"
+    ],
+    "tmdbUpdatedAt": "2026-10-01T09:09:33.875Z",
+    "tmdbFetchedAt": "2026-10-01T09:09:33.875Z"
+  },
+  {
     "id": "rhett-akins",
     "slug": "rhett-akins",
     "name": "Rhett Akins",
@@ -86126,6 +86276,26 @@
     "knownForDepartment": "Acting",
     "knownCredits": 23,
     "tmdbUpdatedAt": "2026-09-20T16:17:09.329Z"
+  },
+  {
+    "id": "96596",
+    "slug": "roc-lafortune",
+    "name": "Roc LaFortune",
+    "tmdbPersonId": 96596,
+    "photoUrl": "/images/people/96596.webp",
+    "profileUrl": "/images/people/96596.webp",
+    "birthday": "1956-12-21",
+    "placeOfBirth": "Lachute, Québec, Canada",
+    "imdbPersonId": "nm0481024",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 70,
+    "alsoKnownAs": [
+      "Roch LaFortune",
+      "Rock LaFortune"
+    ],
+    "tmdbUpdatedAt": "2026-10-01T09:09:33.242Z",
+    "tmdbFetchedAt": "2026-10-01T09:09:33.242Z"
   },
   {
     "id": "rochelle-aytes",
@@ -100528,6 +100698,30 @@
     "knownForDepartment": "Acting",
     "knownCredits": 8,
     "tmdbUpdatedAt": "2026-09-20T16:17:32.399Z"
+  },
+  {
+    "id": "181247",
+    "slug": "tyrone-benskin",
+    "name": "Tyrone Benskin",
+    "tmdbPersonId": 181247,
+    "photoUrl": "/images/people/181247.webp",
+    "profileUrl": "/images/people/181247.webp",
+    "birthday": "1958-12-29",
+    "placeOfBirth": "Bristol, England, UK",
+    "biography": "Tyrone Benskin has been a significant presence in theatre, film, television and music for over 30 years. As part of the Canadian and International cultural landscape Tyrone has amassed an impressive resume and acclaim for a significant and varied body of work;, from no-nonsense cop to caring and devoted father, from ancient warrior to the characters showing the darkness of human nature. His numerous theatre credits include appearances on many of the celebrated stages across Canada.\n\nHis over 100 film and television credits include co-starring with Tori Spelling in the TV movie \"Mind over Murder\", the new Christmas classic \"The Christmas Choir\", \"The Wool Cap\" and the civil rights drama \"Deacons for Defense\" opposite Forrest Whitaker and Mr. Ossie Davis. Mr. Benskin also appeared in the NBC mini-series 10.5: Apocalypse and starred as Karl Lubinsky in the cult science fiction series \"Charlie Jade\" which aired in Canada, the US and internationally including South Africa, France, England and Japan. Feature films include the blockbuster hit \"300\", Bob Dylan bio-pic \"I'm not There\" and acclaimed independent films \"Peepers\" and \"Adam's Wall.\"\n\nFor over 5 years, Mr. Benskin served as Artistic Director of Black Theatre Workshop, Canada's oldest Black theatre company. He served President of the Board of Creations Etc., a youth arts and outreach organization as well as serving on the board several community based non-profit organizations. Mr. Benskin was twice elected to the post of National Vice President of ACTRA, Canada's national film and television actors union.\n\nOn May 2nd, 2011 Mr. Benskin was elected to the 41st Parliament of Canada as the Member for the diverse riding of Jeanne-Le Ber. Mr. Benskin was subsequently appointed to the post of \"Official Opposition Critic for Canadian Heritage\" by the Honorable Jack Layton. Mr. Benskin also serves as Deputy Critic for Official Languages and served on the Sub-Committee for International Human Rights. Benskin served as a Member of Canada's House of Commons for four and a half years returning to the big screen in 2016 in Bad Santa 2 and the small screen as recurring character Rev. Wardell Cobb in season 2 of The Art of More opposite Denis Quaid.",
+    "imdbPersonId": "nm0072419",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 108,
+    "alsoKnownAs": [
+      "Tyrone Benski",
+      "Tyrone DeCosta Benskin",
+      "Tyron Benskin",
+      "Tyrone Berskin",
+      "Tyrone Benskine"
+    ],
+    "tmdbUpdatedAt": "2026-10-01T09:09:32.780Z",
+    "tmdbFetchedAt": "2026-10-01T09:09:32.780Z"
   },
   {
     "id": "tzi-ma",
