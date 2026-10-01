@@ -51,6 +51,19 @@ body {
   background-color: var(--bg-cream);
 }
 
+.holiday-filmography-panel::before {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  content: '';
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='260' height='160' viewBox='0 0 260 160'%3E%3Cg fill='none' stroke='%23FFFDF9' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cg transform='rotate(-8 32 32)'%3E%3Cpath d='M32 14v36M14 32h36M19 19l26 26M45 19L19 45'/%3E%3C/g%3E%3Cg transform='rotate(6 222 38)'%3E%3Cpath d='M222 12l-13 20h8l-12 17h9l-14 21h44l-14-21h9l-12-17h8zM222 70v13'/%3E%3C/g%3E%3Cg transform='rotate(5 96 121)'%3E%3Ccircle cx='96' cy='120' r='18'/%3E%3Ccircle cx='96' cy='93' r='12'/%3E%3Cpath d='M87 83l9-14 9 14M90 93h1M101 93h1M96 97v3M87 113h18M96 105v5M77 114h-10M115 114h10'/%3E%3C/g%3E%3Cg transform='rotate(-7 174 113)'%3E%3Ccircle cx='174' cy='113' r='19'/%3E%3Cpath d='M155 102c5-12 16-17 29-13l9 11M158 93l8-16 12 10 13-1-3 12'/%3E%3Cpath d='M167 111h1M180 111h1M168 120q6 5 12 0M174 126v2'/%3E%3C/g%3E%3Cpath d='M133 20l4 9 10 1-8 6 2 10-8-5-8 5 2-10-8-6 10-1z'/%3E%3C/g%3E%3C/svg%3E");
+  background-position: center top;
+  background-repeat: repeat;
+  background-size: 260px 160px;
+  opacity: .55;
+}
+
 .page-shell {
   background-color: var(--bg-cream);
   color: var(--text-dark);

@@ -139,7 +139,7 @@ export const ActorDetail: React.FC<ActorDetailProps> = ({
             alt=""
             width={1280}
             height={360}
-            className="w-full h-full object-cover object-center"
+             className="w-full h-full object-cover object-[center_20%]"
             onError={() => setBackdropError(true)}
           />
         </div>
@@ -321,8 +321,8 @@ export const ActorDetail: React.FC<ActorDetailProps> = ({
 
       {/* Holiday Filmography Section */}
       <section id="actor-filmography-section" className="mt-8 sm:mt-10">
-        <div className="bg-[#EEF4EE] border-y border-[#C9D8CB] px-4 sm:px-5 py-5 sm:py-6 mb-6">
-        <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-4">
+        <div className="holiday-filmography-panel relative isolate overflow-hidden border-y border-[#C9D8CB] px-4 sm:px-5 py-5 sm:py-6 mb-6" style={{ backgroundColor: '#E7EEE8' }}>
+        <div className="relative z-10 flex flex-col lg:flex-row lg:items-end justify-between gap-4">
           <div>
             <h2 className="text-xs sm:text-sm font-sans-clean font-semibold uppercase tracking-[0.18em] text-[#1A3D2F]">
               Holiday Filmography

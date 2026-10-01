@@ -71,7 +71,7 @@ export const MovieDetail: React.FC<MovieDetailProps> = ({ movie, related, onNavi
             width={1280}
             height={360}
             referrerPolicy="no-referrer"
-            className="w-full h-full object-cover object-center"
+            className="w-full h-full object-cover object-[center_20%]"
             onError={(e) => {
               // Hide backdrop quietly if missing
               e.currentTarget.style.display = 'none';
