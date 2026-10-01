@@ -222305,6 +222305,184 @@ export const MOVIES: Movie[] = [
     "voteCount": 51,
     "tmdbUpdatedAt": "2026-10-01T10:27:56.981Z",
     "tmdbFetchedAt": "2026-10-01T10:27:56.981Z"
+  },
+  {
+    "id": "uptv-2021-a-christmas-letter",
+    "slug": "a-christmas-letter",
+    "title": "A Christmas Letter",
+    "year": 2021,
+    "brandId": "uptv",
+    "releaseDate": "2021-12-01",
+    "synopsis": "Leslie has done everything right in her life except for finding Mr. Right, until the spirit of Christmas leads her there in an unusual way.",
+    "posterUrl": "/images/posters/919808.jpg",
+    "backdropUrl": "/images/backdrops/919808.jpg",
+    "cast": [
+      {
+        "actorId": "110018",
+        "name": "David Lipper",
+        "character": "David Marino",
+        "slug": "david-lipper",
+        "tmdbPersonId": 110018,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/apAgZr1qU5Q99RFR1xCrpZ1CUL9.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "303734",
+        "name": "Glenda Braganza",
+        "character": "Leslie Libby",
+        "slug": "glenda-braganza",
+        "tmdbPersonId": 303734,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/i9BAMZU5OgxLVXXxs79721yczZF.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "15029",
+        "name": "Enrico Colantoni",
+        "character": "Robert Marino",
+        "slug": "enrico-colantoni",
+        "tmdbPersonId": 15029,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/yxxy8IrGRwnRPbLmgyfwF26Feve.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "66750",
+        "name": "Colin Mochrie",
+        "character": "Sandy Clause",
+        "slug": "colin-mochrie",
+        "tmdbPersonId": 66750,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/8tMv4pDGMEXZjo7YwfsKjWpcK7o.jpg",
+        "order": 3
+      },
+      {
+        "actorId": "25877",
+        "name": "Roger Cross",
+        "character": "Hank",
+        "slug": "roger-cross",
+        "tmdbPersonId": 25877,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/p3B3Ex5PqNaTXIcdiYe8Ww5vIXi.jpg",
+        "order": 4
+      },
+      {
+        "actorId": "2127376",
+        "name": "Amalia Williamson",
+        "character": "Claudette",
+        "slug": "amalia-williamson",
+        "tmdbPersonId": 2127376,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/vfkGiWy5gxT8T6xCTi4cQeySzUx.jpg",
+        "order": 5
+      },
+      {
+        "actorId": "1593345",
+        "name": "Jorja Cadence",
+        "character": "Milan Chatsworth",
+        "slug": "jorja-cadence",
+        "tmdbPersonId": 1593345,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/wP907dfCtrTWW3TBm657UQqtzZd.jpg",
+        "order": 6
+      },
+      {
+        "actorId": "3209971",
+        "name": "Ava Weiss",
+        "character": "Sam",
+        "slug": "ava-weiss",
+        "tmdbPersonId": 3209971,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/s8SewTOMnqaTruQZ7aeTg7btMoZ.jpg",
+        "order": 7
+      },
+      {
+        "actorId": "2053698",
+        "name": "Callum Shoniker",
+        "character": "Wendell",
+        "slug": "callum-shoniker",
+        "tmdbPersonId": 2053698,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/dOerCxk8MWPzT687EEWKUSbAESd.jpg",
+        "order": 8
+      },
+      {
+        "actorId": "1212946",
+        "name": "Christian Potenza",
+        "character": "Charles Chatsworth",
+        "slug": "christian-potenza",
+        "tmdbPersonId": 1212946,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/5i8BeVv8RKyFVMdo24kcxNjSae9.jpg",
+        "order": 9
+      },
+      {
+        "actorId": "92949",
+        "name": "Timothy V. Murphy",
+        "character": "Bob Heard",
+        "slug": "timothy-v-murphy",
+        "tmdbPersonId": 92949,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/4WMz4UUMeexgP1ddfC2j7pqf8hU.jpg",
+        "order": 10
+      },
+      {
+        "actorId": "1236346",
+        "name": "Boomer Phillips",
+        "character": "Brian Bruger 'The Bruge'",
+        "slug": "boomer-phillips",
+        "tmdbPersonId": 1236346,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/gs4w7AdaGDdaziQKRO5hGFjzfhx.jpg",
+        "order": 11
+      }
+    ],
+    "director": "Brian K. Roberts",
+    "tmdbId": 919808,
+    "imdbId": "tt14729484",
+    "isComingSoon": false,
+    "status": "collection",
+    "originalTitle": "A Christmas Letter",
+    "runtimeMinutes": 89,
+    "genres": [
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      },
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      },
+      {
+        "id": 10751,
+        "name": "Family"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "CA",
+        "releaseDate": "2021-12-01T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "CBC"
+      }
+    ],
+    "crew": [
+      {
+        "id": 153950,
+        "name": "Brian K. Roberts",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/1DS8d5bxSkmAU6DnIr3JX5Bv7LL.jpg",
+        "creditId": "61c70b92e72fe80041790f23"
+      },
+      {
+        "id": 110018,
+        "name": "David Lipper",
+        "job": "Writer",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/apAgZr1qU5Q99RFR1xCrpZ1CUL9.jpg",
+        "creditId": "61c70ba548333a001c31e12a"
+      }
+    ],
+    "trailers": [],
+    "voteAverage": 5.5,
+    "voteCount": 4,
+    "tmdbUpdatedAt": "2026-10-01T13:02:21.057Z",
+    "tmdbFetchedAt": "2026-10-01T13:02:21.057Z"
   }
 ];
 
