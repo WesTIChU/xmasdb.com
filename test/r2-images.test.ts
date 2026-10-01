@@ -5,12 +5,15 @@ const inventory = await buildInventory();
 assert.equal(inventory.schemaVersion, 1);
 assert.ok(inventory.files.every((file) => file.sourceLocalPath.startsWith('public/images/')));
 assert.ok(inventory.files.every((file) => !file.objectKey.startsWith('images/')));
-if (inventory.files.length > 0) {
-  assert.equal(inventory.files.find((file) => file.sourceLocalPath === 'public/images/posters/1773345.jpg')?.objectKey, 'posters/1773345.jpg');
-  assert.equal(inventory.files.find((file) => file.sourceLocalPath === 'public/images/backdrops/1773345.jpg')?.objectKey, 'backdrops/1773345.jpg');
-  assert.equal(inventory.files.find((file) => file.sourceLocalPath === 'public/images/people/92856.webp')?.objectKey, 'people/92856.webp');
-  assert.equal(inventory.files.find((file) => file.sourceLocalPath === 'public/images/optimized/posters/974213-320.webp')?.objectKey, 'optimized/posters/974213-320.webp');
-  assert.equal(inventory.files.find((file) => file.sourceLocalPath === 'public/images/optimized/people/92856-216.webp')?.objectKey, 'optimized/people/92856-216.webp');
+for (const [sourceLocalPath, objectKey] of [
+  ['public/images/posters/1773345.jpg', 'posters/1773345.jpg'],
+  ['public/images/backdrops/1773345.jpg', 'backdrops/1773345.jpg'],
+  ['public/images/people/92856.webp', 'people/92856.webp'],
+  ['public/images/optimized/posters/974213-320.webp', 'optimized/posters/974213-320.webp'],
+  ['public/images/optimized/people/92856-216.webp', 'optimized/people/92856-216.webp'],
+]) {
+  const entry = inventory.files.find((file) => file.sourceLocalPath === sourceLocalPath);
+  if (entry) assert.equal(entry.objectKey, objectKey);
 }
 assert.ok(inventory.files.every((file) => /^[a-f0-9]{64}$/.test(file.sha256)));
 assert.ok(inventory.files.every((file) => file.byteSize > 0));

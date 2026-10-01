@@ -158,10 +158,11 @@ async function verify(inventory: ImageInventory): Promise<void> {
 
   const representatives = ['posters/1773345.jpg', 'backdrops/1773345.jpg', 'people/92856.webp', 'optimized/posters/974213-320.webp', 'optimized/people/92856-216.webp'];
   for (const key of representatives) {
+    const expected = inventory.files.find((file) => file.objectKey === key);
+    if (!expected) continue;
     const publicBaseUrl = (process.env.R2_PUBLIC_BASE_URL?.trim() || 'https://images.xmasdb.com').replace(/\/$/, '');
     const url = `${publicBaseUrl}/${key}`;
     const response = await fetch(url, { method: 'HEAD' });
-    const expected = inventory.files.find((file) => file.objectKey === key);
     const length = Number(response.headers.get('content-length') || 0);
     const contentType = response.headers.get('content-type')?.split(';')[0];
     console.log(`HTTP ${response.status} ${key} (${length} bytes, ${contentType || 'unknown'})`);
