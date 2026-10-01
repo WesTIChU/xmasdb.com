@@ -256,6 +256,26 @@
     "tmdbUpdatedAt": "2026-09-22T20:53:47.634Z"
   },
   {
+    "id": "1216132",
+    "slug": "aaron-hill",
+    "name": "Aaron Hill",
+    "tmdbPersonId": 1216132,
+    "photoUrl": "/images/people/1216132.webp",
+    "profileUrl": "/images/people/1216132.webp",
+    "birthday": "1983-04-23",
+    "placeOfBirth": "Santa Clara, California, USA",
+    "biography": "Aaron J. Hill (born April 23, 1983) is an American actor most famous for his portrayal of \"Beaver\" on the television show GRΣΣK.\n\nBorn in Santa Clara, California, he began his acting career in 2001 with a single episode role on The Brothers Garcia. He has since been seen in Mad Men, Malcolm in the Middle, Gilmore Girls, Hannah Montana, CSI: Miami, How I Met Your Mother, and is now a regular on ABC Family's series GRΣΣK. He made a cameo as a similar character in Transformers 2: Revenge of the Fallen. He started out doing small time promotional videos for his church in Clovis, California.",
+    "imdbPersonId": "nm1341364",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 46,
+    "alsoKnownAs": [
+      "Aaron J. Hill"
+    ],
+    "tmdbUpdatedAt": "2026-10-01T14:17:16.069Z",
+    "tmdbFetchedAt": "2026-10-01T14:17:16.069Z"
+  },
+  {
     "id": "aaron-hughes",
     "slug": "aaron-hughes",
     "name": "Aaron Hughes",
@@ -1714,6 +1734,19 @@
     "knownForDepartment": "Acting",
     "knownCredits": 3,
     "tmdbUpdatedAt": "2026-09-20T16:16:53.365Z"
+  },
+  {
+    "id": "1325966",
+    "slug": "ajgie-kirkland",
+    "name": "Ajgie Kirkland",
+    "tmdbPersonId": 1325966,
+    "biography": "Ajgie Kirkland is an actor.",
+    "imdbPersonId": "nm0456627",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 30,
+    "tmdbUpdatedAt": "2026-10-01T14:17:16.120Z",
+    "tmdbFetchedAt": "2026-10-01T14:17:16.120Z"
   },
   {
     "id": "aketza-l-pez-totorika",
@@ -5709,6 +5742,20 @@
     "tmdbUpdatedAt": "2026-09-20T16:17:23.053Z"
   },
   {
+    "id": "1886484",
+    "slug": "andi-davis",
+    "name": "Andi Davis",
+    "tmdbPersonId": 1886484,
+    "photoUrl": "/images/people/1886484.webp",
+    "profileUrl": "/images/people/1886484.webp",
+    "imdbPersonId": "nm5775830",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 5,
+    "tmdbUpdatedAt": "2026-10-01T14:17:14.731Z",
+    "tmdbFetchedAt": "2026-10-01T14:17:14.731Z"
+  },
+  {
     "id": "andie-macdowell",
     "slug": "andie-macdowell",
     "name": "Andie MacDowell",
@@ -5745,6 +5792,27 @@
       "Andre Bedard"
     ],
     "tmdbUpdatedAt": "2026-09-20T16:17:25.117Z"
+  },
+  {
+    "id": "1361149",
+    "slug": "andr-gordon",
+    "name": "André Gordon",
+    "tmdbPersonId": 1361149,
+    "photoUrl": "/images/people/1361149.webp",
+    "profileUrl": "/images/people/1361149.webp",
+    "birthday": "1979-07-27",
+    "placeOfBirth": "St. Andrews, Jamaica",
+    "imdbPersonId": "nm1242668",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 26,
+    "alsoKnownAs": [
+      "Andre Antony Gordon",
+      "Andre Gordon",
+      "Dre Gordon"
+    ],
+    "tmdbUpdatedAt": "2026-10-01T14:17:17.535Z",
+    "tmdbFetchedAt": "2026-10-01T14:17:17.535Z"
   },
   {
     "id": "andre-reed",
@@ -12240,7 +12308,8 @@
     ],
     "instagramId": "bethabroderick",
     "twitterId": "BethBroderick",
-    "tmdbUpdatedAt": "2026-09-20T16:17:06.611Z"
+    "tmdbUpdatedAt": "2026-10-01T14:17:16.001Z",
+    "tmdbFetchedAt": "2026-10-01T14:17:16.001Z"
   },
   {
     "id": "beth-callahan",
@@ -21824,6 +21893,20 @@
     "tmdbUpdatedAt": "2026-09-20T16:18:47.451Z"
   },
   {
+    "id": "1249608",
+    "slug": "chris-grundy",
+    "name": "Chris Grundy",
+    "tmdbPersonId": 1249608,
+    "photoUrl": "/images/people/1249608.webp",
+    "profileUrl": "/images/people/1249608.webp",
+    "imdbPersonId": "nm1554676",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 7,
+    "tmdbUpdatedAt": "2026-10-01T14:17:15.283Z",
+    "tmdbFetchedAt": "2026-10-01T14:17:15.283Z"
+  },
+  {
     "id": "1021529",
     "slug": "chris-hayes",
     "name": "Chris Hayes",
@@ -22219,6 +22302,29 @@
     "knownForDepartment": "Acting",
     "knownCredits": 26,
     "tmdbUpdatedAt": "2026-09-20T16:20:53.124Z"
+  },
+  {
+    "id": "71198",
+    "slug": "christian-kane",
+    "name": "Christian Kane",
+    "tmdbPersonId": 71198,
+    "photoUrl": "/images/people/71198.webp",
+    "profileUrl": "/images/people/71198.webp",
+    "birthday": "1972-06-27",
+    "placeOfBirth": "Dallas, Texas, USA",
+    "biography": "Christian Kane (born June 27, 1972) is an American actor and singer/songwriter of Native American descent. He is best known for his roles as Eliot Spencer on the TNT series Leverage and Leverage: Redemption, Alex Walker on WGN's Almost Paradise, Jake Stone on TNT's The Librarians, Jack Chase on CBS's Close to Home, Abe Wheeler on TNT's Into the West, Brian in the 2004 movie Friday Night Lights, Agent Mullins in the 2004 movie Taxi, Peter Prentiss in Just Married, Cal Cooper in Life or Something Like It, Dale Robin in Summer Catch, Lindsey McDonald on WB's Angel, and Ryan 'Flyboy' Leggett on Fame L.A..\n\nHe is the lead singer of the country-southern rock band Kane; their album, The House Rules, was released on December 7, 2010. The first single from the album, also titled \"The House Rules\", debuted at number 54 on the Billboard Country Songs chart.",
+    "imdbPersonId": "nm0437283",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 42,
+    "alsoKnownAs": [
+      "کریستین کین"
+    ],
+    "instagramId": "ChristianKane1",
+    "twitterId": "ChristianKane01",
+    "facebookId": "ChristianKaneMusic",
+    "tmdbUpdatedAt": "2026-10-01T14:17:14.623Z",
+    "tmdbFetchedAt": "2026-10-01T14:17:14.623Z"
   },
   {
     "id": "christian-lagasse",
@@ -35783,7 +35889,8 @@
     "instagramId": "ellenhollman",
     "twitterId": "EllenHollman",
     "facebookId": "EllenHollmanOfficial",
-    "tmdbUpdatedAt": "2026-09-20T16:18:51.233Z"
+    "tmdbUpdatedAt": "2026-10-01T14:17:15.537Z",
+    "tmdbFetchedAt": "2026-10-01T14:17:15.537Z"
   },
   {
     "id": "ellen-kennedy",
@@ -36323,6 +36430,18 @@
     "knownForDepartment": "Writing",
     "knownCredits": 3,
     "tmdbUpdatedAt": "2026-09-22T20:53:20.392Z"
+  },
+  {
+    "id": "2996355",
+    "slug": "emily-choi",
+    "name": "Emily Choi",
+    "tmdbPersonId": 2996355,
+    "imdbPersonId": "nm4446944",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 1,
+    "tmdbUpdatedAt": "2026-10-01T14:17:15.228Z",
+    "tmdbFetchedAt": "2026-10-01T14:17:15.228Z"
   },
   {
     "id": "1526124",
@@ -38274,7 +38393,7 @@
     "imdbPersonId": "nm0001368",
     "gender": "Male",
     "knownForDepartment": "Acting",
-    "knownCredits": 245,
+    "knownCredits": 244,
     "alsoKnownAs": [
       "어니 허드슨",
       "Ерні Хадсон",
@@ -38283,7 +38402,8 @@
     ],
     "instagramId": "ernie_hudson",
     "twitterId": "Ernie_Hudson",
-    "tmdbUpdatedAt": "2026-09-20T16:20:58.288Z"
+    "tmdbUpdatedAt": "2026-10-01T14:17:14.489Z",
+    "tmdbFetchedAt": "2026-10-01T14:17:14.489Z"
   },
   {
     "id": "ernie-pitts",
@@ -40210,7 +40330,8 @@
     ],
     "instagramId": "fredolenray",
     "facebookId": "The-Official-Fred-Olen-Ray-Page-100063617430568",
-    "tmdbUpdatedAt": "2026-09-21T13:17:33.639Z"
+    "tmdbUpdatedAt": "2026-10-01T14:17:17.941Z",
+    "tmdbFetchedAt": "2026-10-01T14:17:17.941Z"
   },
   {
     "id": "fred-willard",
@@ -44355,6 +44476,24 @@
     "knownForDepartment": "Acting",
     "knownCredits": 7,
     "tmdbUpdatedAt": "2026-09-20T16:20:59.479Z"
+  },
+  {
+    "id": "1975153",
+    "slug": "hannah-marie-hines",
+    "name": "Hannah Marie Hines",
+    "tmdbPersonId": 1975153,
+    "biography": "Hannah Marie Hines is an actress originally from Denver, Colorado. Her love for acting led her to the University of Northern Colorado where she was among 20 students out of over 800 applicants chosen for their theatre acting program. She received her bachelor's degree from UNC and also studied at the New York Conservatory for Dramatic Arts. She now resides in Los Angeles, California where she is pursuing a film/tv career and enjoying the enviable climate.",
+    "imdbPersonId": "nm3228651",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 5,
+    "alsoKnownAs": [
+      "Hannah Marie Middleton"
+    ],
+    "instagramId": "hannahmhines",
+    "twitterId": "HannahMHines",
+    "tmdbUpdatedAt": "2026-10-01T14:17:14.614Z",
+    "tmdbFetchedAt": "2026-10-01T14:17:14.614Z"
   },
   {
     "id": "hannah-marks",
@@ -56581,6 +56720,22 @@
     "tmdbUpdatedAt": "2026-09-22T20:53:33.324Z"
   },
   {
+    "id": "58510",
+    "slug": "john-burke",
+    "name": "John Burke",
+    "tmdbPersonId": 58510,
+    "photoUrl": "/images/people/58510.webp",
+    "profileUrl": "/images/people/58510.webp",
+    "placeOfBirth": "Atlanta, Georgia, USA",
+    "biography": "John Burke was born in Atlanta, Georgia, USA. He is known for Sicario (2015), The Amazing Spider-Man (2012) and R.I.P.D. (2013).",
+    "imdbPersonId": "nm0992221",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 38,
+    "tmdbUpdatedAt": "2026-10-01T14:17:17.215Z",
+    "tmdbFetchedAt": "2026-10-01T14:17:17.215Z"
+  },
+  {
     "id": "john-c-coffman",
     "slug": "john-c-coffman",
     "name": "John C. Coffman",
@@ -66636,6 +66791,20 @@
     "tmdbUpdatedAt": "2026-09-20T16:19:37.637Z"
   },
   {
+    "id": "2034976",
+    "slug": "kris-ann-russell",
+    "name": "Kris Ann Russell",
+    "tmdbPersonId": 2034976,
+    "photoUrl": "/images/people/2034976.webp",
+    "profileUrl": "/images/people/2034976.webp",
+    "imdbPersonId": "nm8353060",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 13,
+    "tmdbUpdatedAt": "2026-10-01T14:17:15.379Z",
+    "tmdbFetchedAt": "2026-10-01T14:17:15.380Z"
+  },
+  {
     "id": "kris-heller",
     "slug": "kris-heller",
     "name": "Kris Heller",
@@ -69189,6 +69358,20 @@
     "knownCredits": 8,
     "instagramId": "lauren_mcnamara_",
     "tmdbUpdatedAt": "2026-09-20T16:18:45.859Z"
+  },
+  {
+    "id": "1294070",
+    "slug": "lauren-nash",
+    "name": "Lauren Nash",
+    "tmdbPersonId": 1294070,
+    "photoUrl": "/images/people/1294070.webp",
+    "profileUrl": "/images/people/1294070.webp",
+    "imdbPersonId": "nm3428569",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 10,
+    "tmdbUpdatedAt": "2026-10-01T14:17:16.761Z",
+    "tmdbFetchedAt": "2026-10-01T14:17:16.761Z"
   },
   {
     "id": "1231273",
@@ -73514,6 +73697,27 @@
     "tmdbUpdatedAt": "2026-09-21T12:58:41.723Z"
   },
   {
+    "id": "1337441",
+    "slug": "lyn-alicia-henderson",
+    "name": "Lyn Alicia Henderson",
+    "tmdbPersonId": 1337441,
+    "photoUrl": "/images/people/1337441.webp",
+    "profileUrl": "/images/people/1337441.webp",
+    "biography": "Lyn Alicia Henderson is an actress and writer.",
+    "imdbPersonId": "nm0376531",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 76,
+    "alsoKnownAs": [
+      "Lynn A. Henderson",
+      "Lynn Alicia Henderson",
+      "Lynn Henderson",
+      "Lyn Henderson"
+    ],
+    "tmdbUpdatedAt": "2026-10-01T14:17:16.728Z",
+    "tmdbFetchedAt": "2026-10-01T14:17:16.728Z"
+  },
+  {
     "id": "lynda-boyd",
     "slug": "lynda-boyd",
     "name": "Lynda Boyd",
@@ -74667,6 +74871,24 @@
     "knownForDepartment": "Acting",
     "knownCredits": 4,
     "tmdbUpdatedAt": "2026-09-20T16:19:41.171Z"
+  },
+  {
+    "id": "1512177",
+    "slug": "mallory-james-mahoney",
+    "name": "Mallory James Mahoney",
+    "tmdbPersonId": 1512177,
+    "photoUrl": "/images/people/1512177.webp",
+    "profileUrl": "/images/people/1512177.webp",
+    "birthday": "2005-01-31",
+    "placeOfBirth": "Fort Worth, Texas, USA",
+    "biography": "Mallory James Mahoney is an American actress who has appeared in Disney Channel, Netflix, and other television and film projects. She is known for her roles as Katy Cooper in the Disney Channel movie Adventures in Babysitting and Destiny Baker in seasons 3–7 of the Disney Channel series Bunk'd. She also played Ainsley Riches on the Netflix series On My Block.",
+    "imdbPersonId": "nm6251401",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 8,
+    "instagramId": "malloryjamesmahoney",
+    "tmdbUpdatedAt": "2026-10-01T14:17:14.857Z",
+    "tmdbFetchedAt": "2026-10-01T14:17:14.857Z"
   },
   {
     "id": "mallory-jansen",
@@ -76297,6 +76519,26 @@
     "tmdbFetchedAt": "2026-10-01T09:27:31.633Z"
   },
   {
+    "id": "75355",
+    "slug": "marion-ross",
+    "name": "Marion Ross",
+    "tmdbPersonId": 75355,
+    "photoUrl": "/images/people/75355.webp",
+    "profileUrl": "/images/people/75355.webp",
+    "birthday": "1928-10-25",
+    "placeOfBirth": "Watertown, Carver County, Minnesota, USA",
+    "biography": "From Wikipedia, the free encyclopedia\n\nMarion Ross (born October 25, 1928) is an American actress best known for her role as Marion Cunningham on the ABCtelevision series, Happy Days from 1974 to 1984.Born Marian Ross in Watertown in Carver County in southern Minnesota, the daughter of Ellen (née Hamilton) and Gordon Ross,she lived in Waconia and then moved to Willmar and eventually to Albert Lea, Minnesota.At the age of 13, she changed the spelling of her name from \"Marian\" to \"Marion\" because she thought it would look better on a marquee. After completing her sophomore year in high school, she moved to Minneapolis, Minnesota, and worked as an au pair while studying drama at the MacPhail Center for the Arts, and attending Southwest High School. A year later, her family moved to San Diego, California.She graduated from Point Loma High School in San Diego.Ross enrolled in San Diego State University,where she was named the school's most outstanding actress. After graduation in 1950, she performed in summer theater in La Jolla, California. The director was impressed by her talent, and recommended that she try for work in films.",
+    "imdbPersonId": "nm0005385",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 165,
+    "alsoKnownAs": [
+      "Marian Ellen Ross"
+    ],
+    "tmdbUpdatedAt": "2026-10-01T14:17:16.511Z",
+    "tmdbFetchedAt": "2026-10-01T14:17:16.511Z"
+  },
+  {
     "id": "169620",
     "slug": "marisa-brown",
     "name": "Marisa Brown",
@@ -77296,6 +77538,29 @@
     "knownForDepartment": "Writing",
     "knownCredits": 1,
     "tmdbUpdatedAt": "2026-09-22T20:53:27.169Z"
+  },
+  {
+    "id": "6407",
+    "slug": "marley-shelton",
+    "name": "Marley Shelton",
+    "tmdbPersonId": 6407,
+    "photoUrl": "/images/people/6407.webp",
+    "profileUrl": "/images/people/6407.webp",
+    "birthday": "1974-04-12",
+    "placeOfBirth": "Los Angeles, California, USA",
+    "biography": "Marley Eve Shelton (born April 12, 1974) is an American actress. She is best known for her roles as Wendy Peffercorn in David Mickey Evans's coming-of-age comedy The Sandlot (1993), the Customer in Frank Miller and Robert Rodriguez's neo-noir anthology film Sin City (2005), Dr. Dakota Block in Rodriguez and Quentin Tarantino's double-feature film Grindhouse (2007), and Sheriff Deputy Judy Hicks in two installments of Wes Craven's Scream franchise (2011–2022). Her other notable films include Pleasantville (1998), Never Been Kissed (1999), Sugar & Spice (2001), Valentine (2001), Bubble Boy (2001), and Rampage (2018).",
+    "imdbPersonId": "nm0005420",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 69,
+    "alsoKnownAs": [
+      "Marlee Shelton",
+      "Marley Eve Shelton"
+    ],
+    "instagramId": "marleyshelton",
+    "facebookId": "marleyshelton",
+    "tmdbUpdatedAt": "2026-10-01T14:17:14.654Z",
+    "tmdbFetchedAt": "2026-10-01T14:17:14.654Z"
   },
   {
     "id": "marlie-collins",
@@ -82466,7 +82731,8 @@
       "Mike Gaglio",
       "Louie Mymann"
     ],
-    "tmdbUpdatedAt": "2026-09-21T13:17:33.477Z"
+    "tmdbUpdatedAt": "2026-10-01T14:17:16.986Z",
+    "tmdbFetchedAt": "2026-10-01T14:17:16.986Z"
   },
   {
     "id": "michael-gordin-shore",
@@ -82776,6 +83042,26 @@
       "Mike Kopsa"
     ],
     "tmdbUpdatedAt": "2026-09-20T16:18:28.884Z"
+  },
+  {
+    "id": "60438",
+    "slug": "michael-landon-jr",
+    "name": "Michael Landon Jr.",
+    "tmdbPersonId": 60438,
+    "photoUrl": "/images/people/60438.webp",
+    "profileUrl": "/images/people/60438.webp",
+    "birthday": "1964-06-20",
+    "placeOfBirth": "Encino, California, USA",
+    "biography": "Michael Landon, Jr. (born on June 20, 1964 in Encino, California) is an American actor, director, writer and producer.",
+    "imdbPersonId": "nm0484901",
+    "gender": "Male",
+    "knownForDepartment": "Directing",
+    "knownCredits": 66,
+    "alsoKnownAs": [
+      "Michael Graham Landon"
+    ],
+    "tmdbUpdatedAt": "2026-10-01T14:17:15.877Z",
+    "tmdbFetchedAt": "2026-10-01T14:17:15.877Z"
   },
   {
     "id": "michael-lazarovitch",
@@ -84807,6 +85093,17 @@
       "Mindy Stirling"
     ],
     "tmdbUpdatedAt": "2026-09-20T16:20:43.171Z"
+  },
+  {
+    "id": "2096271",
+    "slug": "minn-vo",
+    "name": "Minn Vo",
+    "tmdbPersonId": 2096271,
+    "imdbPersonId": "nm2322135",
+    "knownForDepartment": "Acting",
+    "knownCredits": 9,
+    "tmdbUpdatedAt": "2026-10-01T14:17:17.116Z",
+    "tmdbFetchedAt": "2026-10-01T14:17:17.116Z"
   },
   {
     "id": "mira-sorvino",
@@ -87783,6 +88080,16 @@
     "tmdbUpdatedAt": "2026-09-20T16:17:17.662Z"
   },
   {
+    "id": "2561167",
+    "slug": "nick-williams",
+    "name": "Nick Williams",
+    "tmdbPersonId": 2561167,
+    "knownForDepartment": "Acting",
+    "knownCredits": 1,
+    "tmdbUpdatedAt": "2026-10-01T14:17:17.263Z",
+    "tmdbFetchedAt": "2026-10-01T14:17:17.263Z"
+  },
+  {
     "id": "nicki-whitely",
     "slug": "nicki-whitely",
     "name": "Nicki Whitely",
@@ -88101,6 +88408,19 @@
     "instagramId": "nicolesamanthahuff",
     "twitterId": "nicoleshuff",
     "tmdbUpdatedAt": "2026-09-20T16:19:36.483Z"
+  },
+  {
+    "id": "1405647",
+    "slug": "nicole-i-butler",
+    "name": "Nicole I. Butler",
+    "tmdbPersonId": 1405647,
+    "photoUrl": "/images/people/1405647.webp",
+    "profileUrl": "/images/people/1405647.webp",
+    "imdbPersonId": "nm4872352",
+    "knownForDepartment": "Acting",
+    "knownCredits": 7,
+    "tmdbUpdatedAt": "2026-10-01T14:17:16.040Z",
+    "tmdbFetchedAt": "2026-10-01T14:17:16.040Z"
   },
   {
     "id": "nicole-kawalez",
@@ -95284,6 +95604,20 @@
     "tmdbFetchedAt": "2026-10-01T09:21:10.020Z"
   },
   {
+    "id": "2996354",
+    "slug": "reid-fenlaw",
+    "name": "Reid Fenlaw",
+    "tmdbPersonId": 2996354,
+    "photoUrl": "/images/people/2996354.webp",
+    "profileUrl": "/images/people/2996354.webp",
+    "imdbPersonId": "nm6971878",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 1,
+    "tmdbUpdatedAt": "2026-10-01T14:17:16.786Z",
+    "tmdbFetchedAt": "2026-10-01T14:17:16.786Z"
+  },
+  {
     "id": "reid-ferguson",
     "slug": "reid-ferguson",
     "name": "Reid Ferguson",
@@ -96169,7 +96503,8 @@
     "gender": "Male",
     "knownForDepartment": "Acting",
     "knownCredits": 55,
-    "tmdbUpdatedAt": "2026-09-20T16:18:24.604Z"
+    "tmdbUpdatedAt": "2026-10-01T14:17:16.796Z",
+    "tmdbFetchedAt": "2026-10-01T14:17:16.796Z"
   },
   {
     "id": "richard-keats",
@@ -96624,6 +96959,18 @@
     "knownForDepartment": "Acting",
     "knownCredits": 22,
     "tmdbUpdatedAt": "2026-09-20T16:20:16.002Z"
+  },
+  {
+    "id": "64808",
+    "slug": "rick-ramage",
+    "name": "Rick Ramage",
+    "tmdbPersonId": 64808,
+    "imdbPersonId": "nm0707931",
+    "gender": "Male",
+    "knownForDepartment": "Writing",
+    "knownCredits": 5,
+    "tmdbUpdatedAt": "2026-10-01T14:17:15.401Z",
+    "tmdbFetchedAt": "2026-10-01T14:17:15.401Z"
   },
   {
     "id": "65730",
@@ -99382,6 +99729,19 @@
     "knownForDepartment": "Directing",
     "knownCredits": 30,
     "tmdbUpdatedAt": "2026-09-22T20:53:22.941Z"
+  },
+  {
+    "id": "2561160",
+    "slug": "rusty-frank",
+    "name": "Rusty Frank",
+    "tmdbPersonId": 2561160,
+    "knownForDepartment": "Acting",
+    "knownCredits": 2,
+    "alsoKnownAs": [
+      "Rusty E. Frank"
+    ],
+    "tmdbUpdatedAt": "2026-10-01T14:17:16.917Z",
+    "tmdbFetchedAt": "2026-10-01T14:17:16.917Z"
   },
   {
     "id": "ruth-lawrence",
@@ -104508,6 +104868,20 @@
     "tmdbUpdatedAt": "2026-09-21T13:01:28.526Z"
   },
   {
+    "id": "92753",
+    "slug": "shauna-earp",
+    "name": "Shauna Earp",
+    "tmdbPersonId": 92753,
+    "photoUrl": "/images/people/92753.webp",
+    "profileUrl": "/images/people/92753.webp",
+    "imdbPersonId": "nm1973989",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 7,
+    "tmdbUpdatedAt": "2026-10-01T14:17:15.111Z",
+    "tmdbFetchedAt": "2026-10-01T14:17:15.111Z"
+  },
+  {
     "id": "shauna-johannesen",
     "slug": "shauna-johannesen",
     "name": "Shauna Johannesen",
@@ -107171,6 +107545,24 @@
     ],
     "tmdbUpdatedAt": "2026-10-01T10:07:25.655Z",
     "tmdbFetchedAt": "2026-10-01T10:07:25.655Z"
+  },
+  {
+    "id": "2601295",
+    "slug": "stephen-fuller-austin",
+    "name": "Stephen Fuller Austin",
+    "tmdbPersonId": 2601295,
+    "photoUrl": "/images/people/2601295.webp",
+    "profileUrl": "/images/people/2601295.webp",
+    "imdbPersonId": "nm3362412",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 9,
+    "alsoKnownAs": [
+      "Stephen F. Austin",
+      "Steve Austin"
+    ],
+    "tmdbUpdatedAt": "2026-10-01T14:17:15.269Z",
+    "tmdbFetchedAt": "2026-10-01T14:17:15.269Z"
   },
   {
     "id": "stephen-george",
@@ -111778,6 +112170,20 @@
     "instagramId": "tiffanyhaddish",
     "twitterId": "TiffanyHaddish",
     "tmdbUpdatedAt": "2026-09-20T16:21:00.224Z"
+  },
+  {
+    "id": "239984",
+    "slug": "tiffany-paige",
+    "name": "Tiffany Paige",
+    "tmdbPersonId": 239984,
+    "photoUrl": "/images/people/239984.webp",
+    "profileUrl": "/images/people/239984.webp",
+    "imdbPersonId": "nm0656751",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 5,
+    "tmdbUpdatedAt": "2026-10-01T14:17:17.381Z",
+    "tmdbFetchedAt": "2026-10-01T14:17:17.381Z"
   },
   {
     "id": "tiffany-renee-bear",
@@ -117778,6 +118184,20 @@
     "knownForDepartment": "Acting",
     "knownCredits": 1,
     "tmdbUpdatedAt": "2026-09-20T16:16:39.300Z"
+  },
+  {
+    "id": "2050345",
+    "slug": "yanellie-ireland",
+    "name": "Yanellie Ireland",
+    "tmdbPersonId": 2050345,
+    "photoUrl": "/images/people/2050345.webp",
+    "profileUrl": "/images/people/2050345.webp",
+    "placeOfBirth": "USA",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 6,
+    "tmdbUpdatedAt": "2026-10-01T14:17:17.358Z",
+    "tmdbFetchedAt": "2026-10-01T14:17:17.358Z"
   },
   {
     "id": "yanic-truesdale",

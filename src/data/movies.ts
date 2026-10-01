@@ -226646,6 +226646,461 @@ export const MOVIES: Movie[] = [
     "voteCount": 8,
     "tmdbUpdatedAt": "2026-10-01T14:12:19.560Z",
     "tmdbFetchedAt": "2026-10-01T14:12:19.560Z"
+  },
+  {
+    "id": "lifetime-2016-heaven-sent",
+    "slug": "heaven-sent",
+    "title": "Heaven Sent",
+    "year": 2016,
+    "brandId": "lifetime",
+    "releaseDate": "2016-12-03",
+    "synopsis": "As Christmas approaches, the end is near for Billy and Marie's marriage until an eight-year-old runaway angel from heaven takes it upon herself to rekindle the love they once shared.",
+    "posterUrl": "/images/posters/426484.jpg",
+    "backdropUrl": "/images/backdrops/426484.jpg",
+    "cast": [
+      {
+        "actorId": "6407",
+        "name": "Marley Shelton",
+        "character": "Maire Taylor",
+        "slug": "marley-shelton",
+        "tmdbPersonId": 6407,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/6fqY7QzZI5yoCCJZpvX0MceL6kZ.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "71198",
+        "name": "Christian Kane",
+        "character": "Billy Taylor",
+        "slug": "christian-kane",
+        "tmdbPersonId": 71198,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/jPUk9WXrdv1t30dZgcNxa8OxSu3.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "1512177",
+        "name": "Mallory James Mahoney",
+        "character": "Taylor",
+        "slug": "mallory-james-mahoney",
+        "tmdbPersonId": 1512177,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/wngwIAZjBaxVkVWDkICOZ0bMzQD.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "8874",
+        "name": "Ernie Hudson",
+        "character": "Donatello",
+        "slug": "ernie-hudson",
+        "tmdbPersonId": 8874,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/kgAdQA2ItCDVvKXufeDHc6Omiso.jpg",
+        "order": 3
+      },
+      {
+        "actorId": "93031",
+        "name": "Ryan McPartlin",
+        "character": "Sean Miller",
+        "slug": "ryan-mcpartlin",
+        "tmdbPersonId": 93031,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/v0vKYfoSVLBEGBZ2ldjm3cHJwf3.jpg",
+        "order": 4
+      },
+      {
+        "actorId": "1886484",
+        "name": "Andi Davis",
+        "character": "Maddie",
+        "slug": "andi-davis",
+        "tmdbPersonId": 1886484,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/dRlYe2bRvZjhNRt5yhzuj8qV2bU.jpg",
+        "order": 5
+      },
+      {
+        "actorId": "1975153",
+        "name": "Hannah Marie Hines",
+        "character": "Stacy",
+        "slug": "hannah-marie-hines",
+        "tmdbPersonId": 1975153,
+        "order": 6
+      },
+      {
+        "actorId": "1249608",
+        "name": "Chris Grundy",
+        "character": "Officer Evans",
+        "slug": "chris-grundy",
+        "tmdbPersonId": 1249608,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/782DKn16eKScABCG24yFhtP5AJy.jpg",
+        "order": 7
+      },
+      {
+        "actorId": "92753",
+        "name": "Shauna Earp",
+        "character": "Pamela Burke",
+        "slug": "shauna-earp",
+        "tmdbPersonId": 92753,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/cpAOnH902U7S9uBNzHOB7tOSvRq.jpg",
+        "order": 8
+      },
+      {
+        "actorId": "2601295",
+        "name": "Stephen Fuller Austin",
+        "character": "George",
+        "slug": "stephen-fuller-austin",
+        "tmdbPersonId": 2601295,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/oQ43F0e3IgW1ASCU3ou9wJIj9kO.jpg",
+        "order": 9
+      },
+      {
+        "actorId": "2996354",
+        "name": "Reid Fenlaw",
+        "character": "Young Male Lover",
+        "slug": "reid-fenlaw",
+        "tmdbPersonId": 2996354,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/5DdjJZ4yEqTknR6N82x0i879JXn.jpg",
+        "order": 10
+      },
+      {
+        "actorId": "2034976",
+        "name": "Kris Ann Russell",
+        "character": "Mrs. Reed",
+        "slug": "kris-ann-russell",
+        "tmdbPersonId": 2034976,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/mE0mST3vW9OvN5FVVedTRuaWLqM.jpg",
+        "order": 11
+      },
+      {
+        "actorId": "2996355",
+        "name": "Emily Choi",
+        "character": "Poet's Walk Employee",
+        "slug": "emily-choi",
+        "tmdbPersonId": 2996355,
+        "order": 12
+      }
+    ],
+    "director": "Michael Landon Jr.",
+    "tmdbId": 426484,
+    "imdbId": "tt3920060",
+    "isComingSoon": false,
+    "status": "collection",
+    "originalTitle": "Heaven Sent",
+    "runtimeMinutes": 85,
+    "genres": [
+      {
+        "id": 10749,
+        "name": "Romance"
+      },
+      {
+        "id": 18,
+        "name": "Drama"
+      },
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "FR",
+        "releaseDate": "2017-11-06T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": ""
+      },
+      {
+        "country": "US",
+        "releaseDate": "2016-12-03T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "Lifetime"
+      }
+    ],
+    "crew": [
+      {
+        "id": 60438,
+        "name": "Michael Landon Jr.",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/lVxLh0r9zyFnm4z58PGfmmcPbTn.jpg",
+        "creditId": "5849e862c3a368141101835f"
+      },
+      {
+        "id": 64808,
+        "name": "Rick Ramage",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "5849e86d92514119bf018794"
+      }
+    ],
+    "trailers": [
+      {
+        "key": "S6v9JCIc5Ng",
+        "site": "YouTube",
+        "type": "Trailer",
+        "name": "Heaven Sent Official Movie Trailer",
+        "official": false
+      }
+    ],
+    "trailerYoutubeKey": "S6v9JCIc5Ng",
+    "tagline": "The power of love meets the magic of Christmas.",
+    "voteAverage": 6.5,
+    "voteCount": 40,
+    "tmdbUpdatedAt": "2026-10-01T14:17:12.186Z",
+    "tmdbFetchedAt": "2026-10-01T14:17:12.186Z"
+  },
+  {
+    "id": "lifetime-2014-a-perfect-christmas-list",
+    "slug": "a-perfect-christmas-list",
+    "title": "A Perfect Christmas List",
+    "year": 2014,
+    "brandId": "lifetime",
+    "releaseDate": "2014-12-14",
+    "synopsis": "As a last wish, a recently hospitalized grandmother, Evie, tasks her daughter and granddaughter, Sara, with a list of festive accomplishments to do together before Christmas, hoping that the adventure of the experience will repair their relationship. Along the way, Sara discovers an unlisted Christmas adventure of her own.",
+    "posterUrl": "/images/posters/314283.jpg",
+    "backdropUrl": "/images/backdrops/314283.jpg",
+    "cast": [
+      {
+        "actorId": "83218",
+        "name": "Ellen Hollman",
+        "character": "Sara",
+        "slug": "ellen-hollman",
+        "tmdbPersonId": 83218,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/ebNqpUF7WFr4lhP6FhT9O1doc8q.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "45391",
+        "name": "Beth Broderick",
+        "character": "Michelle",
+        "slug": "beth-broderick",
+        "tmdbPersonId": 45391,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/aXgETSCjZlvlzdhAiOjhepMdxqR.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "1216132",
+        "name": "Aaron Hill",
+        "character": "Brandon",
+        "slug": "aaron-hill",
+        "tmdbPersonId": 1216132,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/rNp31SeoVqSQU6OZWxZUhGwAgyq.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "1405647",
+        "name": "Nicole I. Butler",
+        "character": "Ms. Carrier",
+        "slug": "nicole-i-butler",
+        "tmdbPersonId": 1405647,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/iLGMCiQZ72IIAA7T8WyUFNULVkU.jpg",
+        "order": 3
+      },
+      {
+        "actorId": "75355",
+        "name": "Marion Ross",
+        "character": "Evie",
+        "slug": "marion-ross",
+        "tmdbPersonId": 75355,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/eZpOYvFoJnej8n7aKSi2LVvvlQu.jpg",
+        "order": 4
+      },
+      {
+        "actorId": "1325966",
+        "name": "Ajgie Kirkland",
+        "character": "Sam",
+        "slug": "ajgie-kirkland",
+        "tmdbPersonId": 1325966,
+        "order": 5
+      },
+      {
+        "actorId": "1337441",
+        "name": "Lyn Alicia Henderson",
+        "character": "Fran",
+        "slug": "lyn-alicia-henderson",
+        "tmdbPersonId": 1337441,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/kTzRrupnxlAMwGF3ujxnh2Rr6Wi.jpg",
+        "order": 6
+      },
+      {
+        "actorId": "1371784",
+        "name": "Scott Thomas Reynolds",
+        "character": "Photographer",
+        "slug": "scott-thomas-reynolds",
+        "tmdbPersonId": 1371784,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/8gcpBE7OsSOnce5idjl8Kxbtkue.jpg",
+        "order": 7
+      },
+      {
+        "actorId": "53286",
+        "name": "Richard Karn",
+        "character": "Tim",
+        "slug": "richard-karn",
+        "tmdbPersonId": 53286,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/z5n104kweeSaSfryLvsCY16XI96.jpg",
+        "order": 8
+      },
+      {
+        "actorId": "1294070",
+        "name": "Lauren Nash",
+        "character": "Ashley",
+        "slug": "lauren-nash",
+        "tmdbPersonId": 1294070,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/5TEhtf30ZdDZS0hsEZVuOl7bjR3.jpg",
+        "order": 9
+      },
+      {
+        "actorId": "58510",
+        "name": "John Burke",
+        "character": "Dr. Taylor",
+        "slug": "john-burke",
+        "tmdbPersonId": 58510,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/j6rqTBbwRNqXc8vKYfFzqVXFNXv.jpg",
+        "order": 10
+      },
+      {
+        "actorId": "131738",
+        "name": "Michael Gaglio",
+        "character": "Santa",
+        "slug": "michael-gaglio",
+        "tmdbPersonId": 131738,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/BKoAXx5UEOauDxoMAJkgzTcSfy.jpg",
+        "order": 11
+      },
+      {
+        "actorId": "2050345",
+        "name": "Yanellie Ireland",
+        "character": "Katie",
+        "slug": "yanellie-ireland",
+        "tmdbPersonId": 2050345,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/ezkgko0CzuePHpbtun2rvOWfOzJ.jpg",
+        "order": 12
+      },
+      {
+        "actorId": "239984",
+        "name": "Tiffany Paige",
+        "character": "Shopper",
+        "slug": "tiffany-paige",
+        "tmdbPersonId": 239984,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/x77ARk4dlfjC5Ngxp9yTeA9tlJc.jpg",
+        "order": 13
+      },
+      {
+        "actorId": "2561160",
+        "name": "Rusty Frank",
+        "character": "Dancer Brown Jacket",
+        "slug": "rusty-frank",
+        "tmdbPersonId": 2561160,
+        "order": 14
+      },
+      {
+        "actorId": "1361149",
+        "name": "André Gordon",
+        "character": "Ed",
+        "slug": "andr-gordon",
+        "tmdbPersonId": 1361149,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/9tn8zlf2KMoOo5ZEbQPciW0rvBW.jpg",
+        "order": 15
+      },
+      {
+        "actorId": "2096271",
+        "name": "Minn Vo",
+        "character": "Dancer",
+        "slug": "minn-vo",
+        "tmdbPersonId": 2096271,
+        "order": 16
+      },
+      {
+        "actorId": "2561167",
+        "name": "Nick Williams",
+        "character": "Dancer",
+        "slug": "nick-williams",
+        "tmdbPersonId": 2561167,
+        "order": 17
+      }
+    ],
+    "director": "Fred Olen Ray",
+    "tmdbId": 314283,
+    "imdbId": "tt4276834",
+    "isComingSoon": false,
+    "status": "collection",
+    "originalTitle": "A Perfect Christmas List",
+    "runtimeMinutes": 86,
+    "genres": [
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 18,
+        "name": "Drama"
+      },
+      {
+        "id": 10751,
+        "name": "Family"
+      },
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "BR",
+        "releaseDate": "2014-12-14T00:00:00.000Z",
+        "type": 4,
+        "certification": "L",
+        "note": ""
+      },
+      {
+        "country": "FR",
+        "releaseDate": "2026-01-15T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "Gulli"
+      },
+      {
+        "country": "US",
+        "releaseDate": "2014-12-14T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "ION"
+      }
+    ],
+    "crew": [
+      {
+        "id": 31155,
+        "name": "Fred Olen Ray",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/91Y7oLIYJjpoY0YmDEsswKfeqDg.jpg",
+        "creditId": "54a10714925141198b000e2a"
+      },
+      {
+        "id": 31155,
+        "name": "Fred Olen Ray",
+        "job": "Writer",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/91Y7oLIYJjpoY0YmDEsswKfeqDg.jpg",
+        "creditId": "54a10760c3a3682f1b00c44c"
+      },
+      {
+        "id": 92591,
+        "name": "Peter Sullivan",
+        "job": "Writer",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/hXFy4ygelHJovKvMx37EJeHwvbm.jpg",
+        "creditId": "61a07fb3be4b3600986d2be0"
+      },
+      {
+        "id": 128979,
+        "name": "Jeffrey Schenck",
+        "job": "Story",
+        "department": "Writing",
+        "creditId": "667055df135d3917f15478ce"
+      }
+    ],
+    "trailers": [],
+    "tagline": "She's making a list. and checking it twice...",
+    "voteAverage": 5.4,
+    "voteCount": 48,
+    "tmdbUpdatedAt": "2026-10-01T14:17:12.201Z",
+    "tmdbFetchedAt": "2026-10-01T14:17:12.201Z"
   }
 ];
 
