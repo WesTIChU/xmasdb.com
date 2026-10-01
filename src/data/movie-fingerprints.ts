@@ -1139,6 +1139,9 @@ export const PROTOTYPE_MOVIE_FINGERPRINTS: Readonly<Record<string, readonly Fing
     "restaurant-cafe",
     "reunion"
   ],
+  "hallmark-2017-with-love-christmas": [
+    "entertainment-showbiz"
+  ],
   "hallmark-2018-a-gingerbread-romance": [
     "baking-cooking",
     "chef-baker",
@@ -3449,6 +3452,14 @@ export const PROTOTYPE_MOVIE_FINGERPRINTS: Readonly<Record<string, readonly Fing
   "lifetime-2022-well-suited-for-christmas": [
     "competition"
   ],
+  "lifetime-2023-a-christmas-intern": [
+    "business-owner",
+    "parent-child"
+  ],
+  "lifetime-2023-a-cowboy-christmas-romance": [
+    "hometown",
+    "returns-home"
+  ],
   "lifetime-2023-christmas-at-carbell-family-farm": [
     "christmas-tree-farm",
     "countryside-farm"
@@ -3480,6 +3491,12 @@ export const PROTOTYPE_MOVIE_FINGERPRINTS: Readonly<Record<string, readonly Fing
     "entertainment-showbiz",
     "writer-journalist"
   ],
+  "lifetime-2023-merry-magic-christmas": [
+    "angel",
+    "christmas-magic",
+    "christmas-wish",
+    "wish-comes-true"
+  ],
   "lifetime-2023-mom-s-christmas-boyfriend": [
     "single-parent",
     "parent-child",
@@ -3493,6 +3510,18 @@ export const PROTOTYPE_MOVIE_FINGERPRINTS: Readonly<Record<string, readonly Fing
     "christmas-wish",
     "entertainment-showbiz",
     "music"
+  ],
+  "lifetime-2023-the-holiday-proposal-plan": [
+    "matchmaking",
+    "old-flame",
+    "second-chance",
+    "writer-journalist"
+  ],
+  "lifetime-2023-yes-chef-christmas": [
+    "baking-cooking",
+    "celebrity",
+    "chef-baker",
+    "competition"
   ],
   "lifetime-2024-a-carpenter-christmas-romance": [
     "countryside-farm",
