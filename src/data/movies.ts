@@ -207907,6 +207907,225 @@ export const MOVIES: Movie[] = [
     "voteCount": 8,
     "tmdbUpdatedAt": "2026-10-01T09:09:30.529Z",
     "tmdbFetchedAt": "2026-10-01T09:09:30.529Z"
+  },
+  {
+    "id": "hallmark-2008-our-first-christmas",
+    "slug": "our-first-christmas",
+    "title": "Our First Christmas",
+    "year": 2008,
+    "brandId": "hallmark",
+    "releaseDate": "2008-12-19",
+    "synopsis": "Cindy and Tom Baer-Neil have been married for nearly a year, each having lost their first spouse.  With the holidays just around the corner, Cindy and Tom are determined to make the new family’s first Christmas perfect.  But their respective children have different plans...",
+    "posterUrl": "/images/posters/80897.jpg",
+    "backdropUrl": "/images/backdrops/80897.jpg",
+    "cast": [
+      {
+        "actorId": "63681",
+        "name": "Julie Warner",
+        "character": "Cindy Baer-Noll",
+        "slug": "julie-warner",
+        "tmdbPersonId": 63681,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/zsuQf2FhJB4vER6xcNJVXemn4i4.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "7907",
+        "name": "John Ratzenberger",
+        "character": "Joe Noll",
+        "slug": "john-ratzenberger",
+        "tmdbPersonId": 7907,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/oRtDEOuIO1yDhTz5dORBdxXuLMO.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "92585",
+        "name": "Dixie Carter",
+        "character": "Evie Baer",
+        "slug": "dixie-carter",
+        "tmdbPersonId": 92585,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/vunYThFacsDaNr1AKypq6v03ALO.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "163537",
+        "name": "Steven Eckholdt",
+        "character": "Tom Baer-Noll",
+        "slug": "steven-eckholdt",
+        "tmdbPersonId": 163537,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/c92K97FmnuVIGqIoKD6v6yH0w4Y.jpg",
+        "order": 3
+      },
+      {
+        "actorId": "205176",
+        "name": "Cassi Thomson",
+        "character": "Tory",
+        "slug": "cassi-thomson",
+        "tmdbPersonId": 205176,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/6FmtUKw9wcqR3IXMnSQolaKoANc.jpg",
+        "order": 4
+      },
+      {
+        "actorId": "54633",
+        "name": "Grace Caroline Currey",
+        "character": "Lily",
+        "slug": "grace-caroline-currey",
+        "tmdbPersonId": 54633,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/6chZcnjWEiFfpmB6D5BR9YUeIs9.jpg",
+        "order": 5
+      },
+      {
+        "actorId": "117659",
+        "name": "Maxim Knight",
+        "character": "Jacob",
+        "slug": "maxim-knight",
+        "tmdbPersonId": 117659,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/aVY2r3l9amxdSgXfMCBXuY23ZVL.jpg",
+        "order": 6
+      },
+      {
+        "actorId": "18262",
+        "name": "Richard Riehle",
+        "character": "Santa",
+        "slug": "richard-riehle",
+        "tmdbPersonId": 18262,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/wgjBsgpzRvardVXZhNGixSw63g2.jpg",
+        "order": 7
+      },
+      {
+        "actorId": "159962",
+        "name": "Kat Graham",
+        "character": "Assistant Bernie",
+        "slug": "kat-graham",
+        "tmdbPersonId": 159962,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/vcnTM3m4CYuc3ryMsBPHEUxG80d.jpg",
+        "order": 8
+      },
+      {
+        "actorId": "590649",
+        "name": "Carly Bondar ",
+        "character": "Mean Girl #1",
+        "slug": "carly-bondar",
+        "tmdbPersonId": 590649,
+        "order": 9
+      },
+      {
+        "actorId": "36041",
+        "name": "Lewis Smith",
+        "character": "Pastor Brown",
+        "slug": "lewis-smith",
+        "tmdbPersonId": 36041,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/tDCE3bAj19tAWSIAWNQRzyGUAky.jpg",
+        "order": 10
+      },
+      {
+        "actorId": "2565735",
+        "name": "Chris LoPrete",
+        "character": "Singer",
+        "slug": "chris-loprete",
+        "tmdbPersonId": 2565735,
+        "order": 11
+      },
+      {
+        "actorId": "2565736",
+        "name": "Eric Seppala",
+        "character": "Singer",
+        "slug": "eric-seppala",
+        "tmdbPersonId": 2565736,
+        "order": 12
+      },
+      {
+        "actorId": "2565737",
+        "name": "Lisa Donahey",
+        "character": "Singer",
+        "slug": "lisa-donahey",
+        "tmdbPersonId": 2565737,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/v8Cm6HyKz01NaseHuInhefzE3Nl.jpg",
+        "order": 13
+      },
+      {
+        "actorId": "2565738",
+        "name": "María Antonieta Vázquez",
+        "character": "Barista",
+        "slug": "mar-a-antonieta-v-zquez",
+        "tmdbPersonId": 2565738,
+        "order": 14
+      },
+      {
+        "actorId": "60849",
+        "name": "Brad Carr",
+        "character": "Gardener (uncredited)",
+        "slug": "brad-carr",
+        "tmdbPersonId": 60849,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/Akx7sYkkWRTxM6UUv3apyjhZhuR.jpg",
+        "order": 15
+      }
+    ],
+    "director": "Armand Mastroianni",
+    "tmdbId": 80897,
+    "imdbId": "tt1274299",
+    "isComingSoon": false,
+    "status": "collection",
+    "originalTitle": "Our First Christmas",
+    "runtimeMinutes": 89,
+    "genres": [
+      {
+        "id": 10751,
+        "name": "Family"
+      },
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      },
+      {
+        "id": 18,
+        "name": "Drama"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "US",
+        "releaseDate": "2008-12-19T00:00:00.000Z",
+        "type": 6,
+        "certification": "G",
+        "note": "Hallmark"
+      }
+    ],
+    "crew": [
+      {
+        "id": 128639,
+        "name": "Armand Mastroianni",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/1ubti7YsYsb0Q5TJDmzKZr1UAkA.jpg",
+        "creditId": "52fe47e69251416c9107960b"
+      },
+      {
+        "id": 154480,
+        "name": "Edithe Swensen",
+        "job": "Writer",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/cIKQ5T32E3EznyIlAgrOPG39lCG.jpg",
+        "creditId": "52fe47e69251416c91079611"
+      }
+    ],
+    "trailers": [
+      {
+        "key": "QoMWEGTrX54",
+        "site": "YouTube",
+        "type": "Trailer",
+        "name": "Hallmark Channel Original Movie - Our First Christmas",
+        "official": true
+      }
+    ],
+    "trailerYoutubeKey": "QoMWEGTrX54",
+    "voteAverage": 5.3,
+    "voteCount": 15,
+    "tmdbUpdatedAt": "2026-10-01T09:11:29.172Z",
+    "tmdbFetchedAt": "2026-10-01T09:11:29.172Z"
   }
 ];
 
