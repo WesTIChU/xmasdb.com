@@ -120,7 +120,8 @@
     "knownForDepartment": "Acting",
     "knownCredits": 29,
     "facebookId": "Aadila-Dosani-337680016370709",
-    "tmdbUpdatedAt": "2026-09-20T16:16:52.935Z"
+    "tmdbUpdatedAt": "2026-10-01T14:05:23.206Z",
+    "tmdbFetchedAt": "2026-10-01T14:05:23.206Z"
   },
   {
     "id": "3102382",
@@ -930,7 +931,8 @@
     "gender": "Male",
     "knownForDepartment": "Acting",
     "knownCredits": 16,
-    "tmdbUpdatedAt": "2026-09-21T13:13:54.191Z"
+    "tmdbUpdatedAt": "2026-10-01T14:05:19.365Z",
+    "tmdbFetchedAt": "2026-10-01T14:05:19.365Z"
   },
   {
     "id": "addison-gosselin",
@@ -5653,6 +5655,20 @@
     "tmdbUpdatedAt": "2026-09-20T16:16:34.736Z"
   },
   {
+    "id": "2960687",
+    "slug": "anas-hasan",
+    "name": "Anas Hasan",
+    "tmdbPersonId": 2960687,
+    "photoUrl": "/images/people/2960687.webp",
+    "profileUrl": "/images/people/2960687.webp",
+    "imdbPersonId": "nm9403248",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 7,
+    "tmdbUpdatedAt": "2026-10-01T14:05:20.530Z",
+    "tmdbFetchedAt": "2026-10-01T14:05:20.530Z"
+  },
+  {
     "id": "1796129",
     "slug": "anastasia-marinina",
     "name": "Anastasia Marinina",
@@ -6381,6 +6397,20 @@
     "knownForDepartment": "Directing",
     "knownCredits": 29,
     "tmdbUpdatedAt": "2026-09-21T13:01:43.870Z"
+  },
+  {
+    "id": "998262",
+    "slug": "andrew-dunbar",
+    "name": "Andrew Dunbar",
+    "tmdbPersonId": 998262,
+    "photoUrl": "/images/people/998262.webp",
+    "profileUrl": "/images/people/998262.webp",
+    "imdbPersonId": "nm2687006",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 33,
+    "tmdbUpdatedAt": "2026-10-01T14:05:23.279Z",
+    "tmdbFetchedAt": "2026-10-01T14:05:23.279Z"
   },
   {
     "id": "1230653",
@@ -9970,7 +10000,8 @@
     "gender": "Female",
     "knownForDepartment": "Directing",
     "knownCredits": 19,
-    "tmdbUpdatedAt": "2026-09-20T16:18:35.608Z"
+    "tmdbUpdatedAt": "2026-10-01T14:05:24.006Z",
+    "tmdbFetchedAt": "2026-10-01T14:05:24.006Z"
   },
   {
     "id": "aubrey-plaza",
@@ -15123,7 +15154,8 @@
     "knownForDepartment": "Production",
     "knownCredits": 136,
     "instagramId": "heyimbriannolan",
-    "tmdbUpdatedAt": "2026-09-21T13:01:02.445Z"
+    "tmdbUpdatedAt": "2026-10-01T14:05:23.147Z",
+    "tmdbFetchedAt": "2026-10-01T14:05:23.147Z"
   },
   {
     "id": "brian-patrick-whitted",
@@ -15162,7 +15194,8 @@
     "gender": "Male",
     "knownForDepartment": "Writing",
     "knownCredits": 4,
-    "tmdbUpdatedAt": "2026-09-22T20:53:35.378Z"
+    "tmdbUpdatedAt": "2026-10-01T14:05:23.905Z",
+    "tmdbFetchedAt": "2026-10-01T14:05:23.905Z"
   },
   {
     "id": "1133778",
@@ -16377,6 +16410,24 @@
     "tmdbUpdatedAt": "2026-09-20T16:18:29.563Z"
   },
   {
+    "id": "79497",
+    "slug": "bruce-thomas",
+    "name": "Bruce Thomas",
+    "tmdbPersonId": 79497,
+    "photoUrl": "/images/people/79497.webp",
+    "profileUrl": "/images/people/79497.webp",
+    "birthday": "1961-05-17",
+    "placeOfBirth": "United States",
+    "biography": "Bruce Thomas is an American actor. He is well known for being the motion capture actor of Master Chief in Halo 4, Halo 5: Guardians and Halo Infinite as well as portraying Russell Adler in Call of Duty: Black Ops Cold War. He first came to prominence for portraying the character of Batman in a series of commercials for General Motors' OnStar service that aired from 2000 to 2002.",
+    "imdbPersonId": "nm0858573",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 53,
+    "instagramId": "mr.brucethomas",
+    "tmdbUpdatedAt": "2026-10-01T14:05:19.936Z",
+    "tmdbFetchedAt": "2026-10-01T14:05:19.936Z"
+  },
+  {
     "id": "bruno-amato",
     "slug": "bruno-amato",
     "name": "Bruno Amato",
@@ -16593,6 +16644,24 @@
     "knownForDepartment": "Acting",
     "knownCredits": 1,
     "tmdbUpdatedAt": "2026-09-20T16:21:11.429Z"
+  },
+  {
+    "id": "1877241",
+    "slug": "buddy-valastro",
+    "name": "Buddy Valastro",
+    "tmdbPersonId": 1877241,
+    "photoUrl": "/images/people/1877241.webp",
+    "profileUrl": "/images/people/1877241.webp",
+    "birthday": "1977-03-03",
+    "placeOfBirth": "Hoboken, New Jersey, USA",
+    "biography": "American celebrity chef, entrepreneur, and reality television personality of Italian heritage. He is the owner of Carlo's Bakery, as well as the face of Buddy V's Ristorante. Valastro is best known as the star of the reality television series Cake Boss, which premiered in April 2009. He has also starred in Kitchen Boss (2011), The Next Great Baker (2010), and Buddy's Bakery Rescue (2013).",
+    "imdbPersonId": "nm2941415",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 27,
+    "instagramId": "buddyvalastro",
+    "tmdbUpdatedAt": "2026-10-01T14:05:21.300Z",
+    "tmdbFetchedAt": "2026-10-01T14:05:21.300Z"
   },
   {
     "id": "buddy-watkins",
@@ -22880,6 +22949,19 @@
     "tmdbUpdatedAt": "2026-09-20T16:18:06.497Z"
   },
   {
+    "id": "4425492",
+    "slug": "christopher-omari",
+    "name": "Christopher Omari",
+    "tmdbPersonId": 4425492,
+    "placeOfBirth": "Gary, Indiana, USA",
+    "imdbPersonId": "nm13953979",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 5,
+    "tmdbUpdatedAt": "2026-10-01T14:05:20.513Z",
+    "tmdbFetchedAt": "2026-10-01T14:05:20.513Z"
+  },
+  {
     "id": "christopher-riley",
     "slug": "christopher-riley",
     "name": "Christopher Riley",
@@ -23218,7 +23300,8 @@
     "gender": "Female",
     "knownForDepartment": "Acting",
     "knownCredits": 24,
-    "tmdbUpdatedAt": "2026-09-21T13:16:21.101Z"
+    "tmdbUpdatedAt": "2026-10-01T14:05:22.192Z",
+    "tmdbFetchedAt": "2026-10-01T14:05:22.192Z"
   },
   {
     "id": "ciera-fredborg",
@@ -25051,7 +25134,8 @@
     "gender": "Female",
     "knownForDepartment": "Acting",
     "knownCredits": 17,
-    "tmdbUpdatedAt": "2026-09-20T16:17:53.795Z"
+    "tmdbUpdatedAt": "2026-10-01T14:05:23.933Z",
+    "tmdbFetchedAt": "2026-10-01T14:05:23.933Z"
   },
   {
     "id": "corgand-janeway-svendsen",
@@ -26767,6 +26851,20 @@
     "knownCredits": 22,
     "tmdbUpdatedAt": "2026-10-01T10:14:47.077Z",
     "tmdbFetchedAt": "2026-10-01T10:14:47.077Z"
+  },
+  {
+    "id": "2041403",
+    "slug": "daniel-joo",
+    "name": "Daniel Joo",
+    "tmdbPersonId": 2041403,
+    "photoUrl": "/images/people/2041403.webp",
+    "profileUrl": "/images/people/2041403.webp",
+    "imdbPersonId": "nm3281053",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 22,
+    "tmdbUpdatedAt": "2026-10-01T14:05:22.998Z",
+    "tmdbFetchedAt": "2026-10-01T14:05:22.998Z"
   },
   {
     "id": "1384037",
@@ -32350,6 +32448,20 @@
     "tmdbUpdatedAt": "2026-09-21T13:16:20.719Z"
   },
   {
+    "id": "1590269",
+    "slug": "dominique-toney",
+    "name": "Dominique Toney",
+    "tmdbPersonId": 1590269,
+    "photoUrl": "/images/people/1590269.webp",
+    "profileUrl": "/images/people/1590269.webp",
+    "imdbPersonId": "nm2289561",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 16,
+    "tmdbUpdatedAt": "2026-10-01T14:05:19.806Z",
+    "tmdbFetchedAt": "2026-10-01T14:05:19.806Z"
+  },
+  {
     "id": "don-allison",
     "slug": "don-allison",
     "name": "Don Allison",
@@ -33080,6 +33192,21 @@
     "knownForDepartment": "Acting",
     "knownCredits": 14,
     "tmdbUpdatedAt": "2026-09-20T16:20:41.916Z"
+  },
+  {
+    "id": "3038040",
+    "slug": "doug-rogers",
+    "name": "Doug Rogers",
+    "tmdbPersonId": 3038040,
+    "photoUrl": "/images/people/3038040.webp",
+    "profileUrl": "/images/people/3038040.webp",
+    "biography": "Doug Rogers is an actor and director, known for S.W.A.T. (2017).",
+    "imdbPersonId": "nm6079303",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 6,
+    "tmdbUpdatedAt": "2026-10-01T14:05:22.590Z",
+    "tmdbFetchedAt": "2026-10-01T14:05:22.590Z"
   },
   {
     "id": "131785",
@@ -38068,6 +38195,20 @@
     "tmdbUpdatedAt": "2026-09-22T09:34:07.785Z"
   },
   {
+    "id": "2844477",
+    "slug": "ethel-pitchford",
+    "name": "Ethel Pitchford",
+    "tmdbPersonId": 2844477,
+    "photoUrl": "/images/people/2844477.webp",
+    "profileUrl": "/images/people/2844477.webp",
+    "imdbPersonId": "nm3349776",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 11,
+    "tmdbUpdatedAt": "2026-10-01T14:05:23.987Z",
+    "tmdbFetchedAt": "2026-10-01T14:05:23.987Z"
+  },
+  {
     "id": "eugene-clark",
     "slug": "eugene-clark",
     "name": "Eugene Clark",
@@ -41568,6 +41709,26 @@
     "tmdbFetchedAt": "2026-09-25T20:54:36.613Z"
   },
   {
+    "id": "1155875",
+    "slug": "geovanni-gopradi",
+    "name": "Geovanni Gopradi",
+    "tmdbPersonId": 1155875,
+    "photoUrl": "/images/people/1155875.webp",
+    "profileUrl": "/images/people/1155875.webp",
+    "birthday": "1983-05-27",
+    "placeOfBirth": "Miami, Florida, USA",
+    "biography": "Geovanni Gopradi is a Cuban-American actor best known for his recurring roles as Broderick in \"The Haves and Have Nots\" and Roberto Flores on The CW's \"Dynasty.\"",
+    "imdbPersonId": "nm2687941",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 11,
+    "alsoKnownAs": [
+      "Geovannie Gomez"
+    ],
+    "tmdbUpdatedAt": "2026-10-01T14:05:21.920Z",
+    "tmdbFetchedAt": "2026-10-01T14:05:21.920Z"
+  },
+  {
     "id": "gerald-webb",
     "slug": "gerald-webb",
     "name": "Gerald Webb",
@@ -44128,6 +44289,18 @@
     "tmdbFetchedAt": "2026-10-01T10:28:08.415Z"
   },
   {
+    "id": "4452937",
+    "slug": "harold-bell",
+    "name": "Harold Bell",
+    "tmdbPersonId": 4452937,
+    "imdbPersonId": "nm6028214",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 1,
+    "tmdbUpdatedAt": "2026-10-01T14:05:22.581Z",
+    "tmdbFetchedAt": "2026-10-01T14:05:22.581Z"
+  },
+  {
     "id": "harper-joseph",
     "slug": "harper-joseph",
     "name": "Harper Joseph",
@@ -44351,7 +44524,8 @@
     "gender": "Female",
     "knownForDepartment": "Acting",
     "knownCredits": 6,
-    "tmdbUpdatedAt": "2026-09-20T16:16:48.363Z"
+    "tmdbUpdatedAt": "2026-10-01T14:05:22.961Z",
+    "tmdbFetchedAt": "2026-10-01T14:05:22.961Z"
   },
   {
     "id": "haven-markus",
@@ -45830,6 +46004,19 @@
     "knownForDepartment": "Acting",
     "knownCredits": 35,
     "tmdbUpdatedAt": "2026-09-20T16:17:23.284Z"
+  },
+  {
+    "id": "1916948",
+    "slug": "ian-farthing",
+    "name": "Ian Farthing",
+    "tmdbPersonId": 1916948,
+    "photoUrl": "/images/people/1916948.webp",
+    "profileUrl": "/images/people/1916948.webp",
+    "imdbPersonId": "nm1004307",
+    "knownForDepartment": "Acting",
+    "knownCredits": 5,
+    "tmdbUpdatedAt": "2026-10-01T14:05:23.274Z",
+    "tmdbFetchedAt": "2026-10-01T14:05:23.274Z"
   },
   {
     "id": "ian-harding",
@@ -49256,14 +49443,15 @@
     "imdbPersonId": "nm2584117",
     "gender": "Female",
     "knownForDepartment": "Acting",
-    "knownCredits": 76,
+    "knownCredits": 75,
     "alsoKnownAs": [
       "Jamie Bernadette Watkins"
     ],
     "instagramId": "jamiebernadette",
     "twitterId": "jamiebernadett",
     "facebookId": "jamiebernadette",
-    "tmdbUpdatedAt": "2026-09-22T20:53:50.021Z"
+    "tmdbUpdatedAt": "2026-10-01T14:05:22.414Z",
+    "tmdbFetchedAt": "2026-10-01T14:05:22.414Z"
   },
   {
     "id": "jamie-champagne",
@@ -49532,7 +49720,8 @@
     "instagramId": "kramergirl",
     "twitterId": "kramergirl",
     "facebookId": "janakramermusic",
-    "tmdbUpdatedAt": "2026-09-20T16:19:41.182Z"
+    "tmdbUpdatedAt": "2026-10-01T14:05:19.331Z",
+    "tmdbFetchedAt": "2026-10-01T14:05:19.331Z"
   },
   {
     "id": "janae-armogan",
@@ -51487,7 +51676,8 @@
     "gender": "Male",
     "knownForDepartment": "Acting",
     "knownCredits": 15,
-    "tmdbUpdatedAt": "2026-09-20T16:18:45.410Z"
+    "tmdbUpdatedAt": "2026-10-01T14:05:23.875Z",
+    "tmdbFetchedAt": "2026-10-01T14:05:23.875Z"
   },
   {
     "id": "229246",
@@ -53622,7 +53812,8 @@
     "instagramId": "jessekove",
     "twitterId": "JesseKove",
     "facebookId": "ActorJesseKove",
-    "tmdbUpdatedAt": "2026-09-20T16:20:11.048Z"
+    "tmdbUpdatedAt": "2026-10-01T14:05:21.085Z",
+    "tmdbFetchedAt": "2026-10-01T14:05:21.085Z"
   },
   {
     "id": "jesse-metcalfe",
@@ -56475,7 +56666,8 @@
     "gender": "Male",
     "knownForDepartment": "Acting",
     "knownCredits": 29,
-    "tmdbUpdatedAt": "2026-09-20T16:16:46.057Z"
+    "tmdbUpdatedAt": "2026-10-01T14:05:20.658Z",
+    "tmdbFetchedAt": "2026-10-01T14:05:20.658Z"
   },
   {
     "id": "john-l-colee",
@@ -72706,6 +72898,23 @@
     "tmdbUpdatedAt": "2026-09-20T16:19:18.438Z"
   },
   {
+    "id": "223437",
+    "slug": "luke-humphrey",
+    "name": "Luke Humphrey",
+    "tmdbPersonId": 223437,
+    "photoUrl": "/images/people/223437.webp",
+    "profileUrl": "/images/people/223437.webp",
+    "birthday": "1987-06-12",
+    "placeOfBirth": "California, USA",
+    "biography": "Luke Humphrey is an American-born Canadian actor. He is most noted for his performance as John Wayne Bobbitt in the television film I Was Lorena Bobbitt, for which he won the Canadian Screen Award for Best Actor in a Television Film or Miniseries at the 10th Canadian Screen Awards in 2022.",
+    "imdbPersonId": "nm1724509",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 26,
+    "tmdbUpdatedAt": "2026-10-01T14:05:20.090Z",
+    "tmdbFetchedAt": "2026-10-01T14:05:20.090Z"
+  },
+  {
     "id": "luke-james",
     "slug": "luke-james",
     "name": "Luke James",
@@ -79010,6 +79219,26 @@
     "tmdbFetchedAt": "2026-10-01T09:27:24.584Z"
   },
   {
+    "id": "211896",
+    "slug": "max-ehrich",
+    "name": "Max Ehrich",
+    "tmdbPersonId": 211896,
+    "photoUrl": "/images/people/211896.webp",
+    "profileUrl": "/images/people/211896.webp",
+    "birthday": "1991-06-24",
+    "placeOfBirth": "Marlboro, New Jersey, USA",
+    "biography": "Max Ehrich is an actor.",
+    "imdbPersonId": "nm1997824",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 22,
+    "alsoKnownAs": [
+      "맥스 어릭"
+    ],
+    "tmdbUpdatedAt": "2026-10-01T14:05:19.778Z",
+    "tmdbFetchedAt": "2026-10-01T14:05:19.778Z"
+  },
+  {
     "id": "max-emerson",
     "slug": "max-emerson",
     "name": "Max Emerson",
@@ -80064,6 +80293,23 @@
     "tmdbUpdatedAt": "2026-09-20T16:19:35.860Z"
   },
   {
+    "id": "2707904",
+    "slug": "mekdes-teshome",
+    "name": "Mekdes Teshome",
+    "tmdbPersonId": 2707904,
+    "photoUrl": "/images/people/2707904.webp",
+    "profileUrl": "/images/people/2707904.webp",
+    "biography": "Mekdes Teshome is an Ethiopian-Canadian actress based in Toronto, Ontario.",
+    "imdbPersonId": "nm9576093",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 4,
+    "instagramId": "mektesh",
+    "facebookId": "mektesh",
+    "tmdbUpdatedAt": "2026-10-01T14:05:21.170Z",
+    "tmdbFetchedAt": "2026-10-01T14:05:21.170Z"
+  },
+  {
     "id": "mel-b",
     "slug": "mel-b",
     "name": "Mel B",
@@ -80132,6 +80378,20 @@
     "knownForDepartment": "Acting",
     "knownCredits": 24,
     "tmdbUpdatedAt": "2026-09-20T16:19:25.674Z"
+  },
+  {
+    "id": "4392854",
+    "slug": "mela-pietropaolo",
+    "name": "Mela Pietropaolo",
+    "tmdbPersonId": 4392854,
+    "photoUrl": "/images/people/4392854.webp",
+    "profileUrl": "/images/people/4392854.webp",
+    "imdbPersonId": "nm13196568",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 10,
+    "tmdbUpdatedAt": "2026-10-01T14:05:23.783Z",
+    "tmdbFetchedAt": "2026-10-01T14:05:23.783Z"
   },
   {
     "id": "melanie-avalon",
@@ -81160,7 +81420,8 @@
     "gender": "Male",
     "knownForDepartment": "Acting",
     "knownCredits": 3,
-    "tmdbUpdatedAt": "2026-09-20T16:19:42.066Z"
+    "tmdbUpdatedAt": "2026-10-01T14:05:23.218Z",
+    "tmdbFetchedAt": "2026-10-01T14:05:23.218Z"
   },
   {
     "id": "micah-kalisch",
@@ -82301,6 +82562,28 @@
     "tmdbUpdatedAt": "2026-09-20T16:17:41.294Z"
   },
   {
+    "id": "60650",
+    "slug": "michael-par",
+    "name": "Michael Paré",
+    "tmdbPersonId": 60650,
+    "photoUrl": "/images/people/60650.webp",
+    "profileUrl": "/images/people/60650.webp",
+    "birthday": "1958-10-09",
+    "placeOfBirth": "Brooklyn, New York City, New York, USA",
+    "biography": "Michael Kevin Paré (born October 9, 1958) is an American actor. His first starring role was as Tony Villicana on the television series The Greatest American Hero. His best-known film roles were as Eddie Wilson in Eddie and the Cruisers (1983) and its sequel Eddie and the Cruisers II: Eddie Lives! (1989), as well as Tom Cody in Streets of Fire (1984), David Herdeg in The Philadelphia Experiment (1984), Frank McGowan in Village of the Damned (1995), Bill Pruitt in Hope Floats (1998), (Adult) Trip Fontaine in The Virgin Suicides (2000), Detective Kurlen in The Lincoln Lawyer (2011), Lt. Ray Bozeman in Gone (2012) with Amanda Seyfried, Mr. Wallington in Bone Tomahawk (2015), and Varney in City of Lies (2018).\n\nHis best known TV roles are as Tony Villicana on The Greatest American Hero, Joey La Fiamma on CBS's drama Houston Knights, and Dante Montana on the Canadian sci-fi series Starhunter (2000-2001) and its' continuation series Starhunter ReduX (2018-2019).\n\nHe won the best actor Award at PollyGrind Film Festival for his reprisal role as Tom Cody in Road to Hell.\n\nSome info ​from Wikipedia, the free encyclopedia.",
+    "imdbPersonId": "nm0001595",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 250,
+    "alsoKnownAs": [
+      "Michael Kevin Paré",
+      "Майкл Паре",
+      "مایکل پاری"
+    ],
+    "tmdbUpdatedAt": "2026-10-01T14:05:22.512Z",
+    "tmdbFetchedAt": "2026-10-01T14:05:22.512Z"
+  },
+  {
     "id": "michael-patrick-lane",
     "slug": "michael-patrick-lane",
     "name": "Michael Patrick Lane",
@@ -82482,6 +82765,19 @@
     "knownCredits": 68,
     "tmdbUpdatedAt": "2026-10-01T09:09:32.776Z",
     "tmdbFetchedAt": "2026-10-01T09:09:32.776Z"
+  },
+  {
+    "id": "2511275",
+    "slug": "michael-sasaki",
+    "name": "Michael Sasaki",
+    "tmdbPersonId": 2511275,
+    "photoUrl": "/images/people/2511275.webp",
+    "profileUrl": "/images/people/2511275.webp",
+    "imdbPersonId": "nm7916384",
+    "knownForDepartment": "Acting",
+    "knownCredits": 15,
+    "tmdbUpdatedAt": "2026-10-01T14:05:22.274Z",
+    "tmdbFetchedAt": "2026-10-01T14:05:22.274Z"
   },
   {
     "id": "michael-shanks",
@@ -83556,6 +83852,28 @@
     "knownForDepartment": "Art",
     "knownCredits": 4,
     "tmdbUpdatedAt": "2026-09-20T16:19:05.871Z"
+  },
+  {
+    "id": "2352271",
+    "slug": "mike-heslin",
+    "name": "Mike Heslin",
+    "tmdbPersonId": 2352271,
+    "photoUrl": "/images/people/2352271.webp",
+    "profileUrl": "/images/people/2352271.webp",
+    "birthday": "1988-07-20",
+    "deathday": "2024-07-02",
+    "placeOfBirth": "Redlands, California, USA",
+    "biography": "Mike Heslin was an actor and writer, known for Lioness (2023), The Holiday Proposal Plan (2023) and The Influencers (2020). He was married to Nicolas James Wilson. He died on July 2, 2024 in the USA, from a cardiac issue.",
+    "imdbPersonId": "nm5941269",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 7,
+    "alsoKnownAs": [
+      "Michael Heslin",
+      "Michael Edward Heslin"
+    ],
+    "tmdbUpdatedAt": "2026-10-01T14:05:21.988Z",
+    "tmdbFetchedAt": "2026-10-01T14:05:21.988Z"
   },
   {
     "id": "mike-jerome-putnam",
@@ -89912,7 +90230,8 @@
     "knownForDepartment": "Acting",
     "knownCredits": 24,
     "instagramId": "mspatriciaisaac",
-    "tmdbUpdatedAt": "2026-09-20T16:20:32.504Z"
+    "tmdbUpdatedAt": "2026-10-01T14:05:22.802Z",
+    "tmdbFetchedAt": "2026-10-01T14:05:22.802Z"
   },
   {
     "id": "158441",
@@ -90037,6 +90356,20 @@
     "twitterId": "therealpduffy",
     "facebookId": "patrickduffyactor",
     "tmdbUpdatedAt": "2026-09-20T16:18:33.110Z"
+  },
+  {
+    "id": "177812",
+    "slug": "patrick-faucette",
+    "name": "Patrick Faucette",
+    "tmdbPersonId": 177812,
+    "photoUrl": "/images/people/177812.webp",
+    "profileUrl": "/images/people/177812.webp",
+    "imdbPersonId": "nm2056721",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 29,
+    "tmdbUpdatedAt": "2026-10-01T14:05:21.753Z",
+    "tmdbFetchedAt": "2026-10-01T14:05:21.754Z"
   },
   {
     "id": "17837",
@@ -93716,6 +94049,24 @@
     "tmdbUpdatedAt": "2026-09-20T16:17:31.235Z"
   },
   {
+    "id": "190897",
+    "slug": "raven-dauda",
+    "name": "Raven Dauda",
+    "tmdbPersonId": 190897,
+    "photoUrl": "/images/people/190897.webp",
+    "profileUrl": "/images/people/190897.webp",
+    "biography": "Raven Dauda is a Canadian stage and screen actress driven by a passion for bettering the world through storytelling, using various mediums like acting, writing, directing, music, dance, or design. Each project she engages in brings immense joy, instigates profound personal growth, and evokes deep gratitude within her. These experiences serve as a lens through which she gains insights into the complexities of our world, discovering what it means to embody her highest self in any circumstance. Through these endeavours, she recognizes the common threads in our narratives, emphasizing our intrinsic unity despite differences in beliefs, backgrounds, or experiences—a realization that fills her with genuine gratitude.",
+    "imdbPersonId": "nm0202253",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 61,
+    "instagramId": "ravendlightworker",
+    "twitterId": "therealravend",
+    "facebookId": "raven.dauda",
+    "tmdbUpdatedAt": "2026-10-01T14:05:20.393Z",
+    "tmdbFetchedAt": "2026-10-01T14:05:20.393Z"
+  },
+  {
     "id": "raven-stewart",
     "slug": "raven-stewart",
     "name": "Raven Stewart",
@@ -93890,6 +94241,18 @@
     "tmdbFetchedAt": "2026-10-01T10:07:38.322Z"
   },
   {
+    "id": "4199360",
+    "slug": "reagan-marum",
+    "name": "Reagan Marum",
+    "tmdbPersonId": 4199360,
+    "imdbPersonId": "nm11710793",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 4,
+    "tmdbUpdatedAt": "2026-10-01T14:05:19.458Z",
+    "tmdbFetchedAt": "2026-10-01T14:05:19.458Z"
+  },
+  {
     "id": "reagan-pasternak",
     "slug": "reagan-pasternak",
     "name": "Reagan Pasternak",
@@ -93948,6 +94311,20 @@
     "twitterId": "reba",
     "facebookId": "Reba",
     "tmdbUpdatedAt": "2026-09-20T16:20:07.808Z"
+  },
+  {
+    "id": "1302345",
+    "slug": "rebecca-amzallag",
+    "name": "Rebecca Amzallag",
+    "tmdbPersonId": 1302345,
+    "photoUrl": "/images/people/1302345.webp",
+    "profileUrl": "/images/people/1302345.webp",
+    "imdbPersonId": "nm5380533",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 19,
+    "tmdbUpdatedAt": "2026-10-01T14:05:20.537Z",
+    "tmdbFetchedAt": "2026-10-01T14:05:20.537Z"
   },
   {
     "id": "rebecca-applebaum",
@@ -97086,7 +97463,8 @@
     "gender": "Female",
     "knownForDepartment": "Acting",
     "knownCredits": 69,
-    "tmdbUpdatedAt": "2026-09-20T16:21:02.887Z"
+    "tmdbUpdatedAt": "2026-10-01T14:05:21.645Z",
+    "tmdbFetchedAt": "2026-10-01T14:05:21.645Z"
   },
   {
     "id": "robinne-fanfair",
@@ -98069,7 +98447,8 @@
     "gender": "Male",
     "knownForDepartment": "Acting",
     "knownCredits": 52,
-    "tmdbUpdatedAt": "2026-09-20T16:17:45.550Z"
+    "tmdbUpdatedAt": "2026-10-01T14:05:20.219Z",
+    "tmdbFetchedAt": "2026-10-01T14:05:20.219Z"
   },
   {
     "id": "rowan-finken",
@@ -102337,6 +102716,24 @@
     "tmdbUpdatedAt": "2026-09-20T16:19:06.776Z"
   },
   {
+    "id": "2667749",
+    "slug": "sean-meldrum",
+    "name": "Sean Meldrum",
+    "tmdbPersonId": 2667749,
+    "photoUrl": "/images/people/2667749.webp",
+    "profileUrl": "/images/people/2667749.webp",
+    "birthday": "1992-12-06",
+    "placeOfBirth": "Oakville, Ontario, Canada",
+    "biography": "Sean Meldrum is a Canadian filmmaker, theatre artist, and musician. He is best known for his appearances on Star Trek: Strange New Worlds, Titans, and Tales From The Void.",
+    "imdbPersonId": "nm8136554",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 16,
+    "instagramId": "seanmeldrum",
+    "tmdbUpdatedAt": "2026-10-01T14:05:20.839Z",
+    "tmdbFetchedAt": "2026-10-01T14:05:20.839Z"
+  },
+  {
     "id": "sean-michael-kyer",
     "slug": "sean-michael-kyer",
     "name": "Sean Michael Kyer",
@@ -104557,6 +104954,27 @@
     "tmdbUpdatedAt": "2026-09-20T16:17:18.385Z"
   },
   {
+    "id": "1017259",
+    "slug": "simon-phillips",
+    "name": "Simon Phillips",
+    "tmdbPersonId": 1017259,
+    "photoUrl": "/images/people/1017259.webp",
+    "profileUrl": "/images/people/1017259.webp",
+    "birthday": "1980-05-07",
+    "placeOfBirth": "Tuam, County Galway, Ireland",
+    "imdbPersonId": "nm1792652",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 80,
+    "alsoKnownAs": [
+      "Саймон Филлипс",
+      "賽門菲利浦斯"
+    ],
+    "twitterId": "siphillips1980",
+    "tmdbUpdatedAt": "2026-10-01T14:05:21.272Z",
+    "tmdbFetchedAt": "2026-10-01T14:05:21.272Z"
+  },
+  {
     "id": "simon-webster",
     "slug": "simon-webster",
     "name": "Simon Webster",
@@ -106343,6 +106761,20 @@
     "knownCredits": 15,
     "instagramId": "stephichinsalvo",
     "tmdbUpdatedAt": "2026-09-20T16:18:19.339Z"
+  },
+  {
+    "id": "168834",
+    "slug": "sterling-jones",
+    "name": "Sterling Jones",
+    "tmdbPersonId": 168834,
+    "photoUrl": "/images/people/168834.webp",
+    "profileUrl": "/images/people/168834.webp",
+    "imdbPersonId": "nm1285082",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 23,
+    "tmdbUpdatedAt": "2026-10-01T14:05:19.945Z",
+    "tmdbFetchedAt": "2026-10-01T14:05:19.945Z"
   },
   {
     "id": "sterling-sulieman",
@@ -108952,7 +109384,8 @@
     "instagramId": "tatyanaali",
     "twitterId": "TatyanaAli",
     "facebookId": "OfficialTatyanaAli",
-    "tmdbUpdatedAt": "2026-09-20T16:18:38.530Z"
+    "tmdbUpdatedAt": "2026-10-01T14:05:21.262Z",
+    "tmdbFetchedAt": "2026-10-01T14:05:21.262Z"
   },
   {
     "id": "taunya-gren",
@@ -110719,6 +111152,30 @@
     "knownForDepartment": "Acting",
     "knownCredits": 2,
     "tmdbUpdatedAt": "2026-09-20T16:16:32.943Z"
+  },
+  {
+    "id": "62000",
+    "slug": "tiffany-shepis",
+    "name": "Tiffany Shepis",
+    "tmdbPersonId": 62000,
+    "photoUrl": "/images/people/62000.webp",
+    "profileUrl": "/images/people/62000.webp",
+    "birthday": "1979-09-11",
+    "placeOfBirth": "New York City, New York, U.S.",
+    "biography": "Tiffany Shepis (born September 11, 1979) is an American actress from New York City, who has been involved in film-making since the age of 12. She is popularly known as a \"scream queen\" in several horror films.",
+    "imdbPersonId": "nm0791898",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 145,
+    "alsoKnownAs": [
+      "Tiffany J. Shepis",
+      "Vanessa Lynch",
+      "Tiffany Shepis-Tretta"
+    ],
+    "instagramId": "tiffanyshepis",
+    "twitterId": "TiffanyShepis",
+    "tmdbUpdatedAt": "2026-10-01T14:05:22.347Z",
+    "tmdbFetchedAt": "2026-10-01T14:05:22.347Z"
   },
   {
     "id": "tiffany-smith",
@@ -115762,6 +116219,29 @@
     "knownCredits": 7,
     "tmdbUpdatedAt": "2026-10-01T10:14:45.071Z",
     "tmdbFetchedAt": "2026-10-01T10:14:45.071Z"
+  },
+  {
+    "id": "56677",
+    "slug": "whitney-able",
+    "name": "Whitney Able",
+    "tmdbPersonId": 56677,
+    "photoUrl": "/images/people/56677.webp",
+    "profileUrl": "/images/people/56677.webp",
+    "birthday": "1982-02-06",
+    "placeOfBirth": "Houston, Texas, USA",
+    "biography": "An American actress. She is best known for her roles in All the Boys Love Mandy Lane and Monsters. She has been featured in Maxim magazine as #83 on the Maxin magazine Hot 100 of 2008 list.  Able married her Monsters co-star Scoot McNairy in July 2010.",
+    "imdbPersonId": "nm2016345",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 29,
+    "alsoKnownAs": [
+      "ホイットニー・エイブル",
+      "Whitney Able Melnick",
+      "Whitney Melnick"
+    ],
+    "instagramId": "swanloon",
+    "tmdbUpdatedAt": "2026-10-01T14:05:21.760Z",
+    "tmdbFetchedAt": "2026-10-01T14:05:21.760Z"
   },
   {
     "id": "whitney-hudson",

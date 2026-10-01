@@ -224609,6 +224609,831 @@ export const MOVIES: Movie[] = [
     "voteCount": 12,
     "tmdbUpdatedAt": "2026-10-01T13:48:03.485Z",
     "tmdbFetchedAt": "2026-10-01T13:48:03.485Z"
+  },
+  {
+    "id": "lifetime-2023-a-cowboy-christmas-romance",
+    "slug": "a-cowboy-christmas-romance",
+    "title": "A Cowboy Christmas Romance",
+    "year": 2023,
+    "brandId": "lifetime",
+    "releaseDate": "2023-12-09",
+    "synopsis": "When pro real estate 'closer' Lexie Crenshaw is sent to her hometown of Tubac, AZ to close on a big ranch before Christmas, she is soon forced to confront former family drama as well as the sexy ranch owner who refuses to sell his home.",
+    "posterUrl": "/images/posters/1195473.jpg",
+    "backdropUrl": "/images/backdrops/1195473.jpg",
+    "cast": [
+      {
+        "actorId": "92856",
+        "name": "Jana Kramer",
+        "character": "Lexie Crenshaw",
+        "slug": "jana-kramer",
+        "tmdbPersonId": 92856,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/9fW6Sx5OjCm7vhHR0u1zYgWEAgO.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "1789218",
+        "name": "Adam Senn",
+        "character": "Coby Mason",
+        "slug": "adam-senn",
+        "tmdbPersonId": 1789218,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/38mY42gTL3Vc2VkO9HP6wjXUuNJ.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "71676",
+        "name": "Mary-Margaret Humes",
+        "character": "Millie Mason",
+        "slug": "mary-margaret-humes",
+        "tmdbPersonId": 71676,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/sBmqplwdnfzUhHx7OwlRK12yMFr.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "79497",
+        "name": "Bruce Thomas",
+        "character": "Harrison Crenshaw",
+        "slug": "bruce-thomas",
+        "tmdbPersonId": 79497,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/y0ZGMc0KtUORON59SRXOtABub9S.jpg",
+        "order": 3
+      },
+      {
+        "actorId": "211896",
+        "name": "Max Ehrich",
+        "character": "Jack Crenshaw",
+        "slug": "max-ehrich",
+        "tmdbPersonId": 211896,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/6dntL7QQzaYr6ZYnZJVEwxmQNM7.jpg",
+        "order": 4
+      },
+      {
+        "actorId": "1590269",
+        "name": "Dominique Toney",
+        "character": "Simone Hayes",
+        "slug": "dominique-toney",
+        "tmdbPersonId": 1590269,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/y780LXIDfFQUFo94uHJ945TstLo.jpg",
+        "order": 5
+      },
+      {
+        "actorId": "4199360",
+        "name": "Reagan Marum",
+        "character": "Abby Mason",
+        "slug": "reagan-marum",
+        "tmdbPersonId": 4199360,
+        "order": 6
+      },
+      {
+        "actorId": "168834",
+        "name": "Sterling Jones",
+        "character": "Walton Crenshaw",
+        "slug": "sterling-jones",
+        "tmdbPersonId": 168834,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/c2y2sKx5gXoBvIOK0LCcPmFauat.jpg",
+        "order": 7
+      }
+    ],
+    "director": "Jake Helgren",
+    "tmdbId": 1195473,
+    "imdbId": "tt29521467",
+    "isComingSoon": false,
+    "status": "collection",
+    "originalTitle": "A Cowboy Christmas Romance",
+    "runtimeMinutes": 85,
+    "genres": [
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      },
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "US",
+        "releaseDate": "2023-12-09T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "Lifetime"
+      }
+    ],
+    "crew": [
+      {
+        "id": 198927,
+        "name": "Sarah Drew",
+        "job": "Writer",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/65hUM3Egh5roemP3Cgn0bA38rDj.jpg",
+        "creditId": "6575b85ba1d33200e1b78e0f"
+      },
+      {
+        "id": 589410,
+        "name": "Jake Helgren",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/virgDMoUS8fwCZXcoFchTYdiLgL.jpg",
+        "creditId": "6575b85589d97f01009e0b19"
+      }
+    ],
+    "trailers": [],
+    "voteAverage": 7.3,
+    "voteCount": 16,
+    "tmdbUpdatedAt": "2026-10-01T14:05:16.773Z",
+    "tmdbFetchedAt": "2026-10-01T14:05:16.773Z"
+  },
+  {
+    "id": "lifetime-2023-yes-chef-christmas",
+    "slug": "yes-chef-christmas",
+    "title": "Yes, Chef! Christmas",
+    "year": 2023,
+    "brandId": "lifetime",
+    "releaseDate": "2023-12-10",
+    "synopsis": "An adoptee/chef is invited to enter a cooking contest by a mysterious benefactor where she clashes with a celebrity chef.",
+    "posterUrl": "/images/posters/1132189.jpg",
+    "backdropUrl": "/images/backdrops/1132189.jpg",
+    "cast": [
+      {
+        "actorId": "87569",
+        "name": "Tia Mowry",
+        "character": "Alicia Gellar",
+        "slug": "tia-mowry",
+        "tmdbPersonId": 87569,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/2p0l5uyURd1D4Iy3k8A81yc8lXJ.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "223437",
+        "name": "Luke Humphrey",
+        "character": "Logan Forest",
+        "slug": "luke-humphrey",
+        "tmdbPersonId": 223437,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/kv60nJEqyqqvjZtYDuECLIj8u7W.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "1302345",
+        "name": "Rebecca Amzallag",
+        "character": "Kate McCartney",
+        "slug": "rebecca-amzallag",
+        "tmdbPersonId": 1302345,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/5fpLK5dld3xMuiQ1Q3kWJYSRca2.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "190897",
+        "name": "Raven Dauda",
+        "character": "Viola Kringle",
+        "slug": "raven-dauda",
+        "tmdbPersonId": 190897,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/g7pj8LHrUTpmGMm3wCrUNqAE5fq.jpg",
+        "order": 3
+      },
+      {
+        "actorId": "63859",
+        "name": "Scott Gibson",
+        "character": "Rick Kringle",
+        "slug": "scott-gibson",
+        "tmdbPersonId": 63859,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/yKqoZbEZQnMaCK5ik72C5oPSO6v.jpg",
+        "order": 4
+      },
+      {
+        "actorId": "63813",
+        "name": "Rothaford Gray",
+        "character": "William Faison",
+        "slug": "rothaford-gray",
+        "tmdbPersonId": 63813,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/t0t3wruWICkyeZ8TVdwKoC23Vr3.jpg",
+        "order": 5
+      },
+      {
+        "actorId": "2960687",
+        "name": "Anas Hasan",
+        "character": "Mike Koy",
+        "slug": "anas-hasan",
+        "tmdbPersonId": 2960687,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/gqX096qNdTOgcbCGmYSRfxnPPp6.jpg",
+        "order": 6
+      },
+      {
+        "actorId": "1008656",
+        "name": "John Koensgen",
+        "character": "Ken Gellar",
+        "slug": "john-koensgen",
+        "tmdbPersonId": 1008656,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/s2BQozISU7ZoCfZl7LdYvtWSN8B.jpg",
+        "order": 7
+      },
+      {
+        "actorId": "1107266",
+        "name": "Max McGuire",
+        "character": "Contractor",
+        "slug": "max-mcguire",
+        "tmdbPersonId": 1107266,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/5QOpuZ3ZgoWb7EVvJudtewKqSUJ.jpg",
+        "order": 8
+      },
+      {
+        "actorId": "2667749",
+        "name": "Sean Meldrum",
+        "character": "Waiter",
+        "slug": "sean-meldrum",
+        "tmdbPersonId": 2667749,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/NiXGH6tf0fx8EdOlgv4CJ4BpVI.jpg",
+        "order": 9
+      },
+      {
+        "actorId": "4425492",
+        "name": "Christopher Omari",
+        "character": "Michael Kringle",
+        "slug": "christopher-omari",
+        "tmdbPersonId": 4425492,
+        "order": 10
+      },
+      {
+        "actorId": "1017259",
+        "name": "Simon Phillips",
+        "character": "Joe Pinkney",
+        "slug": "simon-phillips",
+        "tmdbPersonId": 1017259,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/uGD1Wm0AIFCOcOoY9kdONGdpXMC.jpg",
+        "order": 11
+      },
+      {
+        "actorId": "2707904",
+        "name": "Mekdes Teshome",
+        "character": "Kemi Kringle",
+        "slug": "mekdes-teshome",
+        "tmdbPersonId": 2707904,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/eWCe7Ao8yEffFMWyKjqGsYvIVEp.jpg",
+        "order": 12
+      },
+      {
+        "actorId": "1877241",
+        "name": "Buddy Valastro",
+        "character": "Bobby",
+        "slug": "buddy-valastro",
+        "tmdbPersonId": 1877241,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/eCfmsVKvjDQ71jwopj8LZMwqSxa.jpg",
+        "order": 13
+      }
+    ],
+    "director": "Max McGuire",
+    "tmdbId": 1132189,
+    "imdbId": "tt29552165",
+    "isComingSoon": false,
+    "status": "collection",
+    "originalTitle": "Yes, Chef! Christmas",
+    "runtimeMinutes": 88,
+    "genres": [
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      },
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "US",
+        "releaseDate": "2023-12-10T00:00:00.000Z",
+        "type": 4,
+        "certification": "",
+        "note": "Lifetime"
+      }
+    ],
+    "crew": [
+      {
+        "id": 1923856,
+        "name": "Carley Smale",
+        "job": "Writer",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/qUGhAccrmG5sHeDBu9TdpBbxcW.jpg",
+        "creditId": "64720cc28813e40103570bcf"
+      },
+      {
+        "id": 1107266,
+        "name": "Max McGuire",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/5QOpuZ3ZgoWb7EVvJudtewKqSUJ.jpg",
+        "creditId": "64720cbda199a60116c6f6b1"
+      }
+    ],
+    "trailers": [
+      {
+        "key": "CUG0iiDIo44",
+        "site": "YouTube",
+        "type": "Trailer",
+        "name": "Trailer",
+        "official": false
+      }
+    ],
+    "trailerYoutubeKey": "CUG0iiDIo44",
+    "voteAverage": 6.5,
+    "voteCount": 12,
+    "tmdbUpdatedAt": "2026-10-01T14:05:16.747Z",
+    "tmdbFetchedAt": "2026-10-01T14:05:16.747Z"
+  },
+  {
+    "id": "lifetime-2023-the-holiday-proposal-plan",
+    "slug": "the-holiday-proposal-plan",
+    "title": "The Holiday Proposal Plan",
+    "year": 2023,
+    "brandId": "lifetime",
+    "releaseDate": "2023-12-16",
+    "synopsis": "When travel columnist Sonny Kravitz and her ex-boyfriend Kip are forced to team up to help their best friends Bree and Jarod get engaged amongst a whimsical backdrop of twelve holiday traditions from around the world at her parent's snowy chalet, they soon find themselves falling for one another once again.",
+    "posterUrl": "/images/posters/1132348.jpg",
+    "backdropUrl": "/images/backdrops/1132348.jpg",
+    "cast": [
+      {
+        "actorId": "4996",
+        "name": "Tatyana Ali",
+        "character": "Sonny Kravitz",
+        "slug": "tatyana-ali",
+        "tmdbPersonId": 4996,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/wlCYid92sB1dffkxW271NEqrYOB.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "1297165",
+        "name": "Jesse Kove",
+        "character": "Kip Bravo",
+        "slug": "jesse-kove",
+        "tmdbPersonId": 1297165,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/7r1DkZ0XEM88Jqmdp7ArVCTvgr.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "56677",
+        "name": "Whitney Able",
+        "character": "Bree Ferris",
+        "slug": "whitney-able",
+        "tmdbPersonId": 56677,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/5d1DZDXHLi9sGCTxjPKpijqYWlz.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "1155875",
+        "name": "Geovanni Gopradi",
+        "character": "Jarod Rojas",
+        "slug": "geovanni-gopradi",
+        "tmdbPersonId": 1155875,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/iE97j4x9KGhFuvNGU8fOu1vxenu.jpg",
+        "order": 3
+      },
+      {
+        "actorId": "177812",
+        "name": "Patrick Faucette",
+        "character": "Cliff Kravitz",
+        "slug": "patrick-faucette",
+        "tmdbPersonId": 177812,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/4bEKtAwAMHPKpCloUZs6CRZ0RTw.jpg",
+        "order": 4
+      },
+      {
+        "actorId": "38711",
+        "name": "Robin Riker",
+        "character": "Paulette Kravitz",
+        "slug": "robin-riker",
+        "tmdbPersonId": 38711,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/805H8McgVzm2zzd5MSeF7MmUqET.jpg",
+        "order": 5
+      },
+      {
+        "actorId": "2352271",
+        "name": "Mike Heslin",
+        "character": "Jonathan Ferris",
+        "slug": "mike-heslin",
+        "tmdbPersonId": 2352271,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/4waqmibs6MTDqtrMG7DWfsXS5s6.jpg",
+        "order": 6
+      },
+      {
+        "actorId": "2511275",
+        "name": "Michael Sasaki",
+        "character": "Victor",
+        "slug": "michael-sasaki",
+        "tmdbPersonId": 2511275,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/eeUqe8J82L6XvG4PLNioVeXzhW1.jpg",
+        "order": 7
+      },
+      {
+        "actorId": "62000",
+        "name": "Tiffany Shepis",
+        "character": "Genevieve",
+        "slug": "tiffany-shepis",
+        "tmdbPersonId": 62000,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/3tsmpYw309lw23i94x6yuqgDCm5.jpg",
+        "order": 8
+      }
+    ],
+    "director": "Jake Helgren",
+    "tmdbId": 1132348,
+    "imdbId": "tt27730016",
+    "isComingSoon": false,
+    "status": "collection",
+    "originalTitle": "The Holiday Proposal Plan",
+    "runtimeMinutes": 90,
+    "genres": [
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      },
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "CA",
+        "releaseDate": "2023-12-16T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "CTV Life Channel"
+      },
+      {
+        "country": "US",
+        "releaseDate": "2023-12-16T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "Lifetime"
+      }
+    ],
+    "crew": [
+      {
+        "id": 589410,
+        "name": "Jake Helgren",
+        "job": "Writer",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/virgDMoUS8fwCZXcoFchTYdiLgL.jpg",
+        "creditId": "647284325cd16e00dc3d8e4f"
+      },
+      {
+        "id": 589410,
+        "name": "Jake Helgren",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/virgDMoUS8fwCZXcoFchTYdiLgL.jpg",
+        "creditId": "6472842f9408ec011f2b9beb"
+      }
+    ],
+    "trailers": [
+      {
+        "key": "zmYVDJGv564",
+        "site": "YouTube",
+        "type": "Trailer",
+        "name": "Trailer",
+        "official": true
+      }
+    ],
+    "trailerYoutubeKey": "zmYVDJGv564",
+    "voteAverage": 4.9,
+    "voteCount": 10,
+    "tmdbUpdatedAt": "2026-10-01T14:05:16.790Z",
+    "tmdbFetchedAt": "2026-10-01T14:05:16.790Z"
+  },
+  {
+    "id": "lifetime-2023-a-christmas-intern",
+    "slug": "a-christmas-intern",
+    "title": "A Christmas Intern",
+    "year": 2023,
+    "brandId": "lifetime",
+    "releaseDate": "2023-12-16",
+    "synopsis": "With the Holidays approaching, Cecilia discovers that retirement isn't all it's cracked up to be so she decides to make a surprise visit to her daughter Alexis who created and runs CYBER SANTA, an online gift giving business. Seizing an opportunity to spend Christmas with her daughter and get back into the game, Cecilia becomes an intern at the start-up company and the two learn the importance of family during the most wonderful time of year.",
+    "posterUrl": "/images/posters/1193974.jpg",
+    "backdropUrl": "/images/backdrops/1193974.jpg",
+    "cast": [
+      {
+        "actorId": "78740",
+        "name": "Jackée Harry",
+        "character": "Cecilia",
+        "slug": "jack-e-harry",
+        "tmdbPersonId": 78740,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/h3DpIDfOrIdRx4EPKbuFc5LJzjC.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "2535",
+        "name": "Vivica A. Fox",
+        "character": "Charlotte",
+        "slug": "vivica-a-fox",
+        "tmdbPersonId": 2535,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/oIzevp0dqjIxqRQ2VoSzjiDCBt.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "60650",
+        "name": "Michael Paré",
+        "character": "William",
+        "slug": "michael-par",
+        "tmdbPersonId": 60650,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/jxrXW8OL6hwJgtJgePdMO5yHuAM.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "1160254",
+        "name": "Ciarra Carter",
+        "character": "Alexis",
+        "slug": "ciarra-carter",
+        "tmdbPersonId": 1160254,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/7fm7xNRk2UroXyVFkHKyS4OJhYB.jpg",
+        "order": 3
+      },
+      {
+        "actorId": "2952253",
+        "name": "Jasmine Aivaliotis",
+        "character": "Sari",
+        "slug": "jasmine-aivaliotis",
+        "tmdbPersonId": 2952253,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/hrNx82TWSoEmSjZiynWR3O1c14u.jpg",
+        "order": 4
+      },
+      {
+        "actorId": "3038040",
+        "name": "Doug Rogers",
+        "character": "Donte",
+        "slug": "doug-rogers",
+        "tmdbPersonId": 3038040,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/hbaAeVIuISM28UsHtlqtMbJGzpI.jpg",
+        "order": 5
+      },
+      {
+        "actorId": "138860",
+        "name": "Jamie Bernadette",
+        "character": "Gemma",
+        "slug": "jamie-bernadette",
+        "tmdbPersonId": 138860,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/hSKDAGunkF2E4btXXEo0ELF8GqY.jpg",
+        "order": 6
+      },
+      {
+        "actorId": "2041403",
+        "name": "Daniel Joo",
+        "character": "Brock",
+        "slug": "daniel-joo",
+        "tmdbPersonId": 2041403,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/7iZ8f1Hr8pmNKvP2AcyjKzicH7E.jpg",
+        "order": 7
+      },
+      {
+        "actorId": "497796",
+        "name": "Brian Nolan",
+        "character": "Marty",
+        "slug": "brian-nolan",
+        "tmdbPersonId": 497796,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/nAne0D5M9q5QWO4ah6nl2NBKAM7.jpg",
+        "order": 8
+      },
+      {
+        "actorId": "4452937",
+        "name": "Harold Bell",
+        "character": "Matty",
+        "slug": "harold-bell",
+        "tmdbPersonId": 4452937,
+        "order": 9
+      }
+    ],
+    "director": "David DeCoteau",
+    "tmdbId": 1193974,
+    "imdbId": "tt28546882",
+    "isComingSoon": false,
+    "status": "collection",
+    "originalTitle": "A Christmas Intern",
+    "runtimeMinutes": 84,
+    "genres": [
+      {
+        "id": 18,
+        "name": "Drama"
+      },
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "CA",
+        "releaseDate": "2023-12-16T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "CTV Life Channel"
+      },
+      {
+        "country": "US",
+        "releaseDate": "2023-12-16T00:00:00.000Z",
+        "type": 4,
+        "certification": "",
+        "note": ""
+      }
+    ],
+    "crew": [
+      {
+        "id": 97618,
+        "name": "David DeCoteau",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/qFHX5E3M54ZXhLw4Bd7NcWGsUte.jpg",
+        "creditId": "658077a334e152086007e458"
+      }
+    ],
+    "trailers": [
+      {
+        "key": "urcBPpWy2g0",
+        "site": "YouTube",
+        "type": "Trailer",
+        "name": "Official Trailer",
+        "official": true
+      }
+    ],
+    "trailerYoutubeKey": "urcBPpWy2g0",
+    "tagline": "Helping for the holidays never gets old.",
+    "voteAverage": 6.3,
+    "voteCount": 6,
+    "tmdbUpdatedAt": "2026-10-01T14:05:17.922Z",
+    "tmdbFetchedAt": "2026-10-01T14:05:17.922Z"
+  },
+  {
+    "id": "lifetime-2023-merry-magic-christmas",
+    "slug": "merry-magic-christmas",
+    "title": "Merry Magic Christmas",
+    "year": 2023,
+    "brandId": "lifetime",
+    "releaseDate": "2023-12-10",
+    "synopsis": "As Christmas nears, a financial advisor starts seeing a recurring number: 624. It’s the time she wakes, an address, the change at a Christmas shop. She’s told the number is from a Christmas angel to help make her heart’s secret wish come true. A numbers person, she calls it a statistical coincidence. But when she discovers the number’s meaning, she finds love.",
+    "posterUrl": "/images/posters/1162002.jpg",
+    "backdropUrl": "/images/backdrops/1162002.jpg",
+    "cast": [
+      {
+        "actorId": "1459439",
+        "name": "Patricia Isaac",
+        "character": "Beth McKay",
+        "slug": "patricia-isaac",
+        "tmdbPersonId": 1459439,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/coyXEuD66wLJloHpCOqUcQcvD9Y.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "998262",
+        "name": "Andrew Dunbar",
+        "character": "Nate Matthews",
+        "slug": "andrew-dunbar",
+        "tmdbPersonId": 998262,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/7DLjOd6qPgNI5fA37M5O2SkRLYA.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "1916948",
+        "name": "Ian Farthing",
+        "character": "Bookstore Owner",
+        "slug": "ian-farthing",
+        "tmdbPersonId": 1916948,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/lFYdtEwvVlcf08AF7iAkkm1ErOg.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "2963455",
+        "name": "Haven Gin",
+        "character": "Alexis",
+        "slug": "haven-gin",
+        "tmdbPersonId": 2963455,
+        "order": 3
+      },
+      {
+        "actorId": "2863689",
+        "name": "Micah Chen",
+        "character": "Sam",
+        "slug": "micah-chen",
+        "tmdbPersonId": 2863689,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/i6KQp0Eku8kNv2zq0VhN6RA5zQ9.jpg",
+        "order": 4
+      },
+      {
+        "actorId": "1085644",
+        "name": "Aadila Dosani",
+        "character": "Kat",
+        "slug": "aadila-dosani",
+        "tmdbPersonId": 1085644,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/plDJGrCm0tuoJQcDnGvYVIaZrNA.jpg",
+        "order": 5
+      },
+      {
+        "actorId": "2168227",
+        "name": "Jeff Gonek",
+        "character": "Phil",
+        "slug": "jeff-gonek",
+        "tmdbPersonId": 2168227,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/huOGI6i7gC7uEjYvDIBQ9e2djW0.jpg",
+        "order": 6
+      },
+      {
+        "actorId": "4392854",
+        "name": "Mela Pietropaolo",
+        "character": "Riley",
+        "slug": "mela-pietropaolo",
+        "tmdbPersonId": 4392854,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/91rsRcg5xy7NflgtDQqAaffLJ6C.jpg",
+        "order": 7
+      },
+      {
+        "actorId": "2844477",
+        "name": "Ethel Pitchford",
+        "character": "Joyce",
+        "slug": "ethel-pitchford",
+        "tmdbPersonId": 2844477,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/o9GOOw9iOa2zz3hI4pe3qRz9PuY.jpg",
+        "order": 8
+      },
+      {
+        "actorId": "1705589",
+        "name": "Corey Woods",
+        "character": "Coley",
+        "slug": "corey-woods",
+        "tmdbPersonId": 1705589,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/4tzSmwFwei6bmTJjo6eOkZTMuoj.jpg",
+        "order": 9
+      }
+    ],
+    "director": "Aubrey Arnason",
+    "tmdbId": 1162002,
+    "imdbId": "tt28668784",
+    "isComingSoon": false,
+    "status": "collection",
+    "originalTitle": "Merry Magic Christmas",
+    "runtimeMinutes": 90,
+    "genres": [
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      },
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "FR",
+        "releaseDate": "2023-12-10T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "NRJ12"
+      },
+      {
+        "country": "US",
+        "releaseDate": "2023-12-17T00:00:00.000Z",
+        "type": 4,
+        "certification": "",
+        "note": "Lifetime"
+      }
+    ],
+    "crew": [
+      {
+        "id": 203682,
+        "name": "Aubrey Arnason",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/sM6W4eqhXVff8FJ69G4gTCzNka3.jpg",
+        "creditId": "64deb51ee19de9013a27619c"
+      },
+      {
+        "id": 3480963,
+        "name": "Brian Ruberry",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "64deb52ae19de9011d5d6c88"
+      }
+    ],
+    "trailers": [],
+    "voteAverage": 4.2,
+    "voteCount": 8,
+    "tmdbUpdatedAt": "2026-10-01T14:05:17.935Z",
+    "tmdbFetchedAt": "2026-10-01T14:05:17.935Z"
   }
 ];
 
