@@ -3539,6 +3539,11 @@ export const PROTOTYPE_MOVIE_FINGERPRINTS: Readonly<Record<string, readonly Fing
     "business-owner",
     "family-business"
   ],
+  "lifetime-2024-you-better-watch-out": [
+    "rescue",
+    "small-town",
+    "snowed-in-stranded"
+  ],
   "lifetime-2025-a-pickleball-christmas": [
     "athlete",
     "sports",
