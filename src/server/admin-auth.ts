@@ -5,10 +5,6 @@ export const ADMIN_SESSION_TTL_MS = 7 * 24 * 60 * 60 * 1000;
 export const ADMIN_LOGIN_LIMIT = 5;
 export const ADMIN_LOGIN_WINDOW_MS = 15 * 60 * 1000;
 
-interface SessionRecord {
-  expiresAt: number;
-}
-
 export interface AdminAuthConfig {
   password?: string;
   secret?: string;
@@ -26,7 +22,7 @@ export function isAdminConfigured(config: AdminAuthConfig): boolean {
 }
 
 export class AdminAuth {
-  private readonly sessions = new Map<string, SessionRecord>();
+  private readonly revokedTokens = new Set<string>();
 
   constructor(private readonly config: AdminAuthConfig) {}
 
@@ -39,9 +35,11 @@ export class AdminAuth {
   }
 
   createCookie(now = Date.now()): string {
-    const token = randomBytes(32).toString('base64url');
     const expiresAt = now + ADMIN_SESSION_TTL_MS;
-    this.sessions.set(token, { expiresAt });
+    // Keep the session lifetime in the signed cookie rather than in process
+    // memory. This lets a valid session survive restarts and proxy routing to
+    // another instance, while the secret still prevents tampering.
+    const token = `${randomBytes(32).toString('base64url')}.${expiresAt}`;
     const signature = this.sign(token);
     return `${token}.${signature}`;
   }
@@ -53,18 +51,16 @@ export class AdminAuth {
     const token = cookieValue.slice(0, separator);
     const signature = cookieValue.slice(separator + 1);
     if (!safeEqual(signature, this.sign(token))) return false;
-    const session = this.sessions.get(token);
-    if (!session || session.expiresAt <= now) {
-      this.sessions.delete(token);
-      return false;
-    }
-    return true;
+    if (this.revokedTokens.has(token)) return false;
+    const tokenSeparator = token.lastIndexOf('.');
+    const expiresAt = Number(token.slice(tokenSeparator + 1));
+    return tokenSeparator > 0 && Number.isSafeInteger(expiresAt) && expiresAt > now;
   }
 
   revoke(cookieValue: string | undefined): void {
     if (!cookieValue) return;
     const separator = cookieValue.lastIndexOf('.');
-    if (separator > 0) this.sessions.delete(cookieValue.slice(0, separator));
+    if (separator > 0) this.revokedTokens.add(cookieValue.slice(0, separator));
   }
 
   private sign(value: string): string {

@@ -39,6 +39,16 @@ const activeCookie = auth.createCookie();
 assert.equal(auth.authenticate(activeCookie), true);
 auth.revoke(activeCookie);
 assert.equal(auth.authenticate(activeCookie), false, 'logout revokes the session');
+
+// Requests may be handled after a process restart or by another proxy-routed
+// instance. A still-valid signed cookie must not depend on the original
+// AdminAuth object's in-memory state.
+const crossRequestCookie = auth.createCookie(3000);
+const restartedAuth = new AdminAuth({ password: 'correct-password', secret: 'test-session-secret' });
+for (const route of ['/admin/submissions/', '/api/admin/submissions', '/admin/feed-statistics/', '/api/admin/feed-statistics', '/admin/movies/add/', '/api/admin/tmdb-refresh-health', '/api/admin/fingerprint-status']) {
+  assert.equal(restartedAuth.authenticate(crossRequestCookie, 3001), true, `session survives request to ${route}`);
+}
+assert.equal(restartedAuth.authenticate(crossRequestCookie, 3000 + ADMIN_SESSION_TTL_MS), false, 'signed session expires after its cookie lifetime');
 assert.equal(getAdminLoginRedirect(auth, undefined), undefined, 'unauthenticated admin login requests show the login page');
 assert.equal(auth.verifyPassword('correct-password'), true, 'login succeeds before redirect flow');
 const loginFlowCookie = auth.createCookie();
