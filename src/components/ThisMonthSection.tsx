@@ -16,7 +16,7 @@ export const ThisMonthSection: React.FC<ThisMonthSectionProps> = ({ payload, onN
       <div className="w-full flex items-end justify-between gap-4 mb-5">
         <div>
           <h2 id="this-month-heading" className="font-heading text-xl sm:text-2xl font-semibold text-[#1A3D2F]">THIS MONTH</h2>
-          <p className="mt-1 font-body text-xs text-[#736B63]">Christmas movies that premiered in {payload.monthLabel} through the years</p>
+          <p className="mt-1 font-body text-xs text-[#59524A]">Christmas movies that premiered in {payload.monthLabel} through the years</p>
         </div>
         <NavigationLink
           href={`${getMoviesPath()}?releaseMonth=${payload.month}`}

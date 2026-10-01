@@ -35,8 +35,28 @@ const thisMonthMatches = selectThisMonthMovies([
   thisMonthMovie('coming-soon', '2023-11-25', 'coming-soon'),
 ], new Date('2026-11-25T12:00:00Z'));
 assert.equal(thisMonthMatches?.total, 5);
-assert.deepEqual(thisMonthMatches?.movies.map((movie) => movie.title), ['Newest', 'Alpha', 'Beta', 'Nineteen']);
-assert.equal(thisMonthMatches?.movies.length, 4);
+assert.deepEqual(new Set(thisMonthMatches?.movies.map((movie) => movie.title)), new Set(['Newest', 'Alpha', 'Beta', 'Nineteen', 'Older']));
+assert.equal(thisMonthMatches?.movies.length, 5);
+const yearDiversityMovies = [
+  thisMonthMovie('diverse-a', '2018-11-01', 'collection', 'A'),
+  thisMonthMovie('diverse-b', '2019-11-02', 'collection', 'B'),
+  thisMonthMovie('diverse-c', '2020-11-03', 'collection', 'C'),
+  thisMonthMovie('diverse-d', '2021-11-04', 'collection', 'D'),
+  thisMonthMovie('diverse-e', '2022-11-05', 'collection', 'E'),
+  thisMonthMovie('diverse-f', '2023-11-06', 'collection', 'F'),
+  thisMonthMovie('diverse-g', '2024-11-07', 'collection', 'G'),
+  thisMonthMovie('diverse-future', '2026-11-26', 'collection', 'Future'),
+];
+const diverseMatches = selectThisMonthMovies(yearDiversityMovies, new Date('2026-11-25T12:00:00Z'))!;
+const sameDayMatches = selectThisMonthMovies(yearDiversityMovies, new Date('2026-11-25T12:00:00Z'))!;
+assert.deepEqual(diverseMatches.movies.map((movie) => movie.id), sameDayMatches.movies.map((movie) => movie.id), 'same day must produce the same selection');
+assert.equal(new Set(diverseMatches.movies.map((movie) => (movie.premiereDate || movie.releaseDate).slice(0, 4))).size, 6, 'selection should prefer distinct release years');
+assert.ok(!diverseMatches.movies.some((movie) => movie.title === 'Future'), 'future movies must be excluded');
+const tomorrowMatches = selectThisMonthMovies(yearDiversityMovies, new Date('2026-11-26T12:00:00Z'))!;
+assert.notDeepEqual(diverseMatches.movies.map((movie) => movie.id), tomorrowMatches.movies.map((movie) => movie.id), 'daily rotation should naturally change the selection');
+const octoberThisMonth = selectThisMonthMovies(MOVIES, new Date('2026-10-31T12:00:00Z'));
+assert.equal(octoberThisMonth?.total, 58, 'October should use canonical premiere/release dates across prior years');
+assert.equal(octoberThisMonth?.movies.length, 6, 'This Month should show up to six genuine October matches');
 const catalogueOrder = getCataloguePage(MOVIES, parseCatalogueQuery('?perPage=96')).movies;
 const firstCollectionIndex = catalogueOrder.findIndex((movie) => movie.status !== 'coming-soon');
 assert.ok(firstCollectionIndex > 0);

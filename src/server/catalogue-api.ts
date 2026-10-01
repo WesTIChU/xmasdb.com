@@ -506,19 +506,40 @@ export function selectThisMonthMovies(movies: Movie[], now: Date = new Date()): 
         && dateKey !== null
         && dateKey.slice(5, 7) === monthKey
         && dateKey <= todayKey;
-    })
-    .sort((left, right) => {
-      const leftDate = getMoviePremiereDateKey(left) || '';
-      const rightDate = getMoviePremiereDateKey(right) || '';
-      return Number(rightDate.slice(0, 4)) - Number(leftDate.slice(0, 4)) || left.title.localeCompare(right.title);
     });
   if (matching.length === 0) return null;
+  const moviesByYear = new Map<number, Movie[]>();
+  for (const movie of matching) {
+    const dateKey = getMoviePremiereDateKey(movie);
+    if (!dateKey) continue;
+    const year = Number(dateKey.slice(0, 4));
+    const yearMovies = moviesByYear.get(year) || [];
+    yearMovies.push(movie);
+    moviesByYear.set(year, yearMovies);
+  }
+  const dateKey = getUtcDateKey(now);
+  const years = [...moviesByYear.keys()].sort((left, right) => (
+    dailyMovieHash(`${dateKey}:year:${left}`) - dailyMovieHash(`${dateKey}:year:${right}`) || left - right
+  ));
+  for (const yearMovies of moviesByYear.values()) {
+    yearMovies.sort((left, right) => (
+      dailyMovieHash(`${dateKey}:${left.id}`) - dailyMovieHash(`${dateKey}:${right.id}`) || left.id.localeCompare(right.id)
+    ));
+  }
+  const selected: Movie[] = [];
+  for (let round = 0; selected.length < 6 && round < matching.length; round += 1) {
+    for (const year of years) {
+      const movie = moviesByYear.get(year)?.[round];
+      if (movie) selected.push(movie);
+      if (selected.length >= 6) break;
+    }
+  }
   const monthLabel = new Intl.DateTimeFormat('en-US', { month: 'long', timeZone: 'UTC' }).format(now);
   return {
     month,
     monthLabel,
     total: matching.length,
-    movies: matching.slice(0, 4).map(toListingMovie),
+    movies: selected.map(toListingMovie),
   };
 }
 
