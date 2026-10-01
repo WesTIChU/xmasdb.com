@@ -867,6 +867,9 @@ export const PROTOTYPE_MOVIE_FINGERPRINTS: Readonly<Record<string, readonly Fing
     "widow-widower",
     "writer-journalist"
   ],
+  "hallmark-2015-12-gifts-of-christmas": [
+    "workplace-romance"
+  ],
   "hallmark-2015-a-christmas-detour": [
     "unexpected-romance",
     "unexpected-trip"
