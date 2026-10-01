@@ -3549,6 +3549,14 @@ export const PROTOTYPE_MOVIE_FINGERPRINTS: Readonly<Record<string, readonly Fing
     "inheritance",
     "small-town"
   ],
+  "lifetime-2024-christmas-in-alaska": [
+    "competition",
+    "rivals-to-lovers",
+    "snowed-in-stranded",
+    "unexpected-romance",
+    "unexpected-trip",
+    "writer-journalist"
+  ],
   "lifetime-2024-christmas-in-the-spotlight": [
     "athlete",
     "celebrity",
@@ -3556,9 +3564,19 @@ export const PROTOTYPE_MOVIE_FINGERPRINTS: Readonly<Record<string, readonly Fing
     "football",
     "music"
   ],
+  "lifetime-2024-christmas-love-and-fudge": [
+    "baking-cooking",
+    "chef-baker",
+    "christmas-competition",
+    "competition",
+    "unexpected-romance"
+  ],
   "lifetime-2024-engaged-by-christmas": [
     "secret-identity",
     "writer-journalist"
+  ],
+  "lifetime-2024-jingle-all-the-way-to-love": [
+    "old-flame"
   ],
   "lifetime-2024-make-or-bake-christmas": [
     "bakery",
@@ -3588,12 +3606,34 @@ export const PROTOTYPE_MOVIE_FINGERPRINTS: Readonly<Record<string, readonly Fing
     "old-flame",
     "unexpected-romance"
   ],
+  "lifetime-2025-christmas-everyday": [
+    "faith",
+    "siblings"
+  ],
+  "lifetime-2025-deck-the-hallways": [
+    "big-city",
+    "childhood-sweethearts",
+    "family-tradition",
+    "returns-home"
+  ],
   "lifetime-2025-rodeo-christmas-romance": [
     "countryside-farm"
+  ],
+  "lifetime-2025-thank-god-christmas-at-keller-ranch": [
+    "athlete",
+    "countryside-farm",
+    "single-parent",
+    "sports",
+    "unexpected-romance",
+    "widow-widower"
   ],
   "lifetime-2025-the-christmas-campaign": [
     "workplace-romance",
     "career-vs-love",
+    "unexpected-romance"
+  ],
+  "lifetime-2025-the-christmas-cookbook": [
+    "baking-cooking",
     "unexpected-romance"
   ],
   "uptv-2008-the-christmas-clause": [
