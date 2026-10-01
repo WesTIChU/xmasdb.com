@@ -867,7 +867,8 @@
     "alsoKnownAs": [
       "Adam Stuart"
     ],
-    "tmdbUpdatedAt": "2026-09-20T16:20:36.612Z"
+    "tmdbUpdatedAt": "2026-10-01T10:12:06.628Z",
+    "tmdbFetchedAt": "2026-10-01T10:12:06.628Z"
   },
   {
     "id": "551912",
@@ -4598,6 +4599,25 @@
     "twitterId": "AmandaSchull",
     "tmdbUpdatedAt": "2026-09-25T18:44:21.931Z",
     "tmdbFetchedAt": "2026-09-25T18:44:21.931Z"
+  },
+  {
+    "id": "1383004",
+    "slug": "amanda-thomson",
+    "name": "Amanda Thomson",
+    "tmdbPersonId": 1383004,
+    "photoUrl": "/images/people/1383004.webp",
+    "profileUrl": "/images/people/1383004.webp",
+    "placeOfBirth": "Toronto, Canada",
+    "biography": "Amanda Thomson (Singer/Songwriter/Actress) grew up in a musical household learning piano, saxophone, guitar and drums alongside her father. Listening to Christina Aguilera and Mariah Carey on repeat, she quickly learned that it’s all or nothing in this business. She threw herself into the arts and never looked back, applying herself to music, songwriting, theatre, film acting, scriptwriting and production.\n\nAmanda is best known for her work on SYFY and CBC’s “ASCENSION”, YTV’s “Totally Amp’d”, Lifetime/LMN’s “The Hazing Secret” and Hallmark Channel’s “A Christmas Song”. Growing up in musical theatre, Amanda has always had a love of performing, as you can see in much of her film work which include soundtracks and on-screen performances.\n\nThe Toronto native was brought down to Los Angeles by Premium Cali as an exclusive artist to their new restaurant chain. Together they shot a music video for her single “Blessing In Disguise“, currently being aired in Cali Burger restaurants in Asia and the UK.",
+    "imdbPersonId": "nm4783718",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 5,
+    "instagramId": "amandamthomson",
+    "twitterId": "AmandaMThomson",
+    "facebookId": "AmandaThomsonOfficial",
+    "tmdbUpdatedAt": "2026-10-01T10:12:05.852Z",
+    "tmdbFetchedAt": "2026-10-01T10:12:05.852Z"
   },
   {
     "id": "amanda-voll",
@@ -11138,6 +11158,22 @@
     "tmdbUpdatedAt": "2026-09-20T16:20:08.738Z"
   },
   {
+    "id": "1189180",
+    "slug": "ben-mulroney",
+    "name": "Ben Mulroney",
+    "tmdbPersonId": 1189180,
+    "photoUrl": "/images/people/1189180.webp",
+    "profileUrl": "/images/people/1189180.webp",
+    "birthday": "1976-03-09",
+    "placeOfBirth": "Montreal, Quebec, Canada",
+    "imdbPersonId": "nm1161029",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 6,
+    "tmdbUpdatedAt": "2026-10-01T10:12:06.762Z",
+    "tmdbFetchedAt": "2026-10-01T10:12:06.762Z"
+  },
+  {
     "id": "ben-olsen",
     "slug": "ben-olsen",
     "name": "Ben Olsen",
@@ -14742,6 +14778,18 @@
     "tmdbUpdatedAt": "2026-09-21T13:01:43.067Z"
   },
   {
+    "id": "1383012",
+    "slug": "brigitte-robinson",
+    "name": "Brigitte Robinson",
+    "tmdbPersonId": 1383012,
+    "imdbPersonId": "nm1701089",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 9,
+    "tmdbUpdatedAt": "2026-10-01T10:12:05.517Z",
+    "tmdbFetchedAt": "2026-10-01T10:12:05.517Z"
+  },
+  {
     "id": "briton-t-maxwell",
     "slug": "briton-t-maxwell",
     "name": "Briton T. Maxwell",
@@ -14826,7 +14874,8 @@
     "gender": "Female",
     "knownForDepartment": "Acting",
     "knownCredits": 9,
-    "tmdbUpdatedAt": "2026-09-21T13:19:09.794Z"
+    "tmdbUpdatedAt": "2026-10-01T10:12:05.483Z",
+    "tmdbFetchedAt": "2026-10-01T10:12:05.483Z"
   },
   {
     "id": "brittany-bristow",
@@ -17695,6 +17744,29 @@
     "tmdbUpdatedAt": "2026-09-20T16:20:14.878Z"
   },
   {
+    "id": "4",
+    "slug": "carrie-fisher",
+    "name": "Carrie Fisher",
+    "tmdbPersonId": 4,
+    "photoUrl": "/images/people/4.webp",
+    "profileUrl": "/images/people/4.webp",
+    "birthday": "1956-10-21",
+    "deathday": "2016-12-27",
+    "placeOfBirth": "Beverly Hills, Los Angeles, California, USA",
+    "biography": "Carrie Frances Fisher (October 21, 1956 – December 27, 2016) was an American actress, novelist, screenwriter, and lecturer. Daughter of the famous actors Debbie Reynolds and Eddie Fisher, she gained fame for her portrayal of Princess Leia Organa in the original Star Wars trilogy. Her novel Postcards from the Edge was also a bestseller, for which she wrote a screenplay to the film of the same name.",
+    "imdbPersonId": "nm0000402",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 168,
+    "alsoKnownAs": [
+      "Carrie Frances Fisher"
+    ],
+    "twitterId": "carrieffisher",
+    "facebookId": "carrieffisher",
+    "tmdbUpdatedAt": "2026-10-01T10:12:09.682Z",
+    "tmdbFetchedAt": "2026-10-01T10:12:09.682Z"
+  },
+  {
     "id": "carrie-marston",
     "slug": "carrie-marston",
     "name": "Carrie Marston",
@@ -17768,7 +17840,8 @@
     "instagramId": "carsonkressley",
     "twitterId": "carsonkressley",
     "facebookId": "carsonkressley",
-    "tmdbUpdatedAt": "2026-09-22T09:34:07.550Z"
+    "tmdbUpdatedAt": "2026-10-01T10:12:10.730Z",
+    "tmdbFetchedAt": "2026-10-01T10:12:10.730Z"
   },
   {
     "id": "carson-kroeker",
@@ -17837,6 +17910,23 @@
     "knownForDepartment": "Acting",
     "knownCredits": 3,
     "tmdbUpdatedAt": "2026-09-20T16:19:12.215Z"
+  },
+  {
+    "id": "1340684",
+    "slug": "carter-sand",
+    "name": "Carter Sand",
+    "tmdbPersonId": 1340684,
+    "photoUrl": "/images/people/1340684.webp",
+    "profileUrl": "/images/people/1340684.webp",
+    "imdbPersonId": "nm3520171",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 16,
+    "alsoKnownAs": [
+      "Carter London Sand"
+    ],
+    "tmdbUpdatedAt": "2026-10-01T10:12:08.814Z",
+    "tmdbFetchedAt": "2026-10-01T10:12:08.814Z"
   },
   {
     "id": "cary-lawrence",
@@ -21816,7 +21906,8 @@
     "alsoKnownAs": [
       "Chris Sey"
     ],
-    "tmdbUpdatedAt": "2026-09-22T20:53:18.805Z"
+    "tmdbUpdatedAt": "2026-10-01T10:12:10.907Z",
+    "tmdbFetchedAt": "2026-10-01T10:12:10.907Z"
   },
   {
     "id": "christopher-shyer",
@@ -24376,6 +24467,18 @@
     "tmdbUpdatedAt": "2026-09-21T13:17:15.093Z"
   },
   {
+    "id": "1127281",
+    "slug": "cruise-brown",
+    "name": "Cruise Brown",
+    "tmdbPersonId": 1127281,
+    "imdbPersonId": "nm5031153",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 2,
+    "tmdbUpdatedAt": "2026-10-01T10:12:11.248Z",
+    "tmdbFetchedAt": "2026-10-01T10:12:11.248Z"
+  },
+  {
     "id": "cruze-mckinnon",
     "slug": "cruze-mckinnon",
     "name": "Cruze McKinnon",
@@ -26159,6 +26262,17 @@
     "tmdbUpdatedAt": "2026-09-20T16:18:29.408Z"
   },
   {
+    "id": "2572677",
+    "slug": "darby-jo-hart",
+    "name": "Darby Jo Hart",
+    "tmdbPersonId": 2572677,
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 1,
+    "tmdbUpdatedAt": "2026-10-01T10:12:08.296Z",
+    "tmdbFetchedAt": "2026-10-01T10:12:08.296Z"
+  },
+  {
     "id": "darby-steeves",
     "slug": "darby-steeves",
     "name": "Darby Steeves",
@@ -27654,7 +27768,8 @@
     "gender": "Male",
     "knownForDepartment": "Acting",
     "knownCredits": 48,
-    "tmdbUpdatedAt": "2026-09-20T16:20:05.197Z"
+    "tmdbUpdatedAt": "2026-10-01T10:12:10.790Z",
+    "tmdbFetchedAt": "2026-10-01T10:12:10.790Z"
   },
   {
     "id": "david-millbern",
@@ -29814,6 +29929,17 @@
     "knownForDepartment": "Acting",
     "knownCredits": 1,
     "tmdbUpdatedAt": "2026-09-20T16:21:07.690Z"
+  },
+  {
+    "id": "1383015",
+    "slug": "devon-youngs",
+    "name": "Devon Youngs",
+    "tmdbPersonId": 1383015,
+    "imdbPersonId": "nm3397379",
+    "knownForDepartment": "Acting",
+    "knownCredits": 1,
+    "tmdbUpdatedAt": "2026-10-01T10:12:06.391Z",
+    "tmdbFetchedAt": "2026-10-01T10:12:06.391Z"
   },
   {
     "id": "4621823",
@@ -33122,6 +33248,26 @@
     "tmdbUpdatedAt": "2026-09-22T20:53:46.083Z"
   },
   {
+    "id": "139048",
+    "slug": "elizabeth-ann-bennett",
+    "name": "Elizabeth Ann Bennett",
+    "tmdbPersonId": 139048,
+    "photoUrl": "/images/people/139048.webp",
+    "profileUrl": "/images/people/139048.webp",
+    "birthday": "1978-07-25",
+    "placeOfBirth": "Westminster, Maryland, USA",
+    "biography": "Elizabeth Ann Bennett is an actress.",
+    "imdbPersonId": "nm0071742",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 22,
+    "alsoKnownAs": [
+      "Elizabeth Bennett"
+    ],
+    "tmdbUpdatedAt": "2026-10-01T10:12:07.333Z",
+    "tmdbFetchedAt": "2026-10-01T10:12:07.333Z"
+  },
+  {
     "id": "1455812",
     "slug": "elizabeth-becka",
     "name": "Elizabeth Becka",
@@ -34794,7 +34940,7 @@
     "imdbPersonId": "nm0891275",
     "gender": "Female",
     "knownForDepartment": "Acting",
-    "knownCredits": 98,
+    "knownCredits": 99,
     "alsoKnownAs": [
       "Emanuelle Vaugier",
       "Emmanuelle Vaugiér",
@@ -34803,7 +34949,8 @@
     "instagramId": "emmanuellevaugier",
     "twitterId": "evaugier",
     "facebookId": "124002940985125",
-    "tmdbUpdatedAt": "2026-09-20T16:21:09.318Z"
+    "tmdbUpdatedAt": "2026-10-01T10:12:08.587Z",
+    "tmdbFetchedAt": "2026-10-01T10:12:08.587Z"
   },
   {
     "id": "emme-edgley",
@@ -35406,6 +35553,28 @@
     "knownForDepartment": "Acting",
     "knownCredits": 1,
     "tmdbUpdatedAt": "2026-09-20T16:18:16.969Z"
+  },
+  {
+    "id": "122518",
+    "slug": "erica-shaffer",
+    "name": "Erica Shaffer",
+    "tmdbPersonId": 122518,
+    "photoUrl": "/images/people/122518.webp",
+    "profileUrl": "/images/people/122518.webp",
+    "birthday": "1970-03-06",
+    "placeOfBirth": "San Diego, California, USA",
+    "imdbPersonId": "nm0787307",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 44,
+    "alsoKnownAs": [
+      "Erica Schaeffer",
+      "Erica Schaffer"
+    ],
+    "instagramId": "ericashafferyoga",
+    "facebookId": "ericashafferactress",
+    "tmdbUpdatedAt": "2026-10-01T10:12:08.578Z",
+    "tmdbFetchedAt": "2026-10-01T10:12:08.578Z"
   },
   {
     "id": "3258437",
@@ -37107,6 +37276,29 @@
     "tmdbUpdatedAt": "2026-09-20T16:16:47.919Z"
   },
   {
+    "id": "75343",
+    "slug": "florence-henderson",
+    "name": "Florence Henderson",
+    "tmdbPersonId": 75343,
+    "photoUrl": "/images/people/75343.webp",
+    "profileUrl": "/images/people/75343.webp",
+    "birthday": "1934-02-14",
+    "deathday": "2016-11-24",
+    "placeOfBirth": "Dale, Indiana, USA",
+    "biography": "Florence Agnes Henderson was an American actress and singer. While her career spanned six decades, she is best remembered for her starring role as Carol Brady on the ABC sitcom The Brady Bunch.",
+    "imdbPersonId": "nm0001341",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 103,
+    "alsoKnownAs": [
+      "Florence Agnes Henderson"
+    ],
+    "twitterId": "ItsFloHenderson",
+    "facebookId": "FlorenceHenderson",
+    "tmdbUpdatedAt": "2026-10-01T10:12:07.450Z",
+    "tmdbFetchedAt": "2026-10-01T10:12:07.450Z"
+  },
+  {
     "id": "587477",
     "slug": "florin-busuioc",
     "name": "Florin Busuioc",
@@ -37446,6 +37638,16 @@
     "knownForDepartment": "Acting",
     "knownCredits": 27,
     "tmdbUpdatedAt": "2026-09-20T16:19:28.233Z"
+  },
+  {
+    "id": "2565724",
+    "slug": "frank-crnkovik",
+    "name": "Frank Crnkovik",
+    "tmdbPersonId": 2565724,
+    "knownForDepartment": "Acting",
+    "knownCredits": 1,
+    "tmdbUpdatedAt": "2026-10-01T10:12:10.849Z",
+    "tmdbFetchedAt": "2026-10-01T10:12:10.849Z"
   },
   {
     "id": "frank-crudele",
@@ -37924,7 +38126,8 @@
     "gender": "Male",
     "knownForDepartment": "Acting",
     "knownCredits": 81,
-    "tmdbUpdatedAt": "2026-09-20T16:18:57.428Z"
+    "tmdbUpdatedAt": "2026-10-01T10:12:05.474Z",
+    "tmdbFetchedAt": "2026-10-01T10:12:05.474Z"
   },
   {
     "id": "gabriel-hudson",
@@ -38865,7 +39068,8 @@
     "alsoKnownAs": [
       "Geoffrey James Gustafson"
     ],
-    "tmdbUpdatedAt": "2026-09-20T16:17:51.045Z"
+    "tmdbUpdatedAt": "2026-10-01T10:12:10.482Z",
+    "tmdbFetchedAt": "2026-10-01T10:12:10.482Z"
   },
   {
     "id": "geoff-wong",
@@ -44351,6 +44555,19 @@
     "knownCredits": 2,
     "instagramId": "jackcarterbarton",
     "tmdbUpdatedAt": "2026-09-20T16:17:43.307Z"
+  },
+  {
+    "id": "1383011",
+    "slug": "jack-ettlinger",
+    "name": "Jack Ettlinger",
+    "tmdbPersonId": 1383011,
+    "photoUrl": "/images/people/1383011.webp",
+    "profileUrl": "/images/people/1383011.webp",
+    "imdbPersonId": "nm5443751",
+    "knownForDepartment": "Acting",
+    "knownCredits": 6,
+    "tmdbUpdatedAt": "2026-10-01T10:12:06.042Z",
+    "tmdbFetchedAt": "2026-10-01T10:12:06.042Z"
   },
   {
     "id": "4287287",
@@ -51702,7 +51919,8 @@
     ],
     "twitterId": "JimmyThorburn",
     "facebookId": "JimmyThorburnOfficial",
-    "tmdbUpdatedAt": "2026-09-21T13:17:50.402Z"
+    "tmdbUpdatedAt": "2026-10-01T10:12:10.113Z",
+    "tmdbFetchedAt": "2026-10-01T10:12:10.113Z"
   },
   {
     "id": "1460685",
@@ -51932,6 +52150,23 @@
     "knownForDepartment": "Acting",
     "knownCredits": 2,
     "tmdbUpdatedAt": "2026-09-20T16:20:33.620Z"
+  },
+  {
+    "id": "61170",
+    "slug": "joanne-rodriguez",
+    "name": "Joanne Rodriguez",
+    "tmdbPersonId": 61170,
+    "photoUrl": "/images/people/61170.webp",
+    "profileUrl": "/images/people/61170.webp",
+    "imdbPersonId": "nm1377567",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 16,
+    "alsoKnownAs": [
+      "Jo Rodriguez"
+    ],
+    "tmdbUpdatedAt": "2026-10-01T10:12:11.818Z",
+    "tmdbFetchedAt": "2026-10-01T10:12:11.818Z"
   },
   {
     "id": "joanne-wilson",
@@ -52477,6 +52712,25 @@
     "instagramId": "iamjoelrush",
     "facebookId": "IAmJoelRush",
     "tmdbUpdatedAt": "2026-09-20T16:20:52.249Z"
+  },
+  {
+    "id": "262720",
+    "slug": "joel-s-keller",
+    "name": "Joel S. Keller",
+    "tmdbPersonId": 262720,
+    "photoUrl": "/images/people/262720.webp",
+    "profileUrl": "/images/people/262720.webp",
+    "placeOfBirth": "Toronto, Ontario, Canada",
+    "biography": "Joel S. Keller is a veteran Canadian film and television actor best known for his roles as detective Ed Oosterhuis in Blue Murder and Bill in Men with Brooms.",
+    "imdbPersonId": "nm0445681",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 47,
+    "alsoKnownAs": [
+      "Joel Keller"
+    ],
+    "tmdbUpdatedAt": "2026-10-01T10:12:07.288Z",
+    "tmdbFetchedAt": "2026-10-01T10:12:07.288Z"
   },
   {
     "id": "jo-el-s-mundsson",
@@ -55451,6 +55705,16 @@
     "tmdbUpdatedAt": "2026-09-20T16:18:13.893Z"
   },
   {
+    "id": "2565721",
+    "slug": "joshua-balfour",
+    "name": "Joshua Balfour",
+    "tmdbPersonId": 2565721,
+    "knownForDepartment": "Acting",
+    "knownCredits": 2,
+    "tmdbUpdatedAt": "2026-10-01T10:12:09.800Z",
+    "tmdbFetchedAt": "2026-10-01T10:12:09.800Z"
+  },
+  {
     "id": "joshua-black",
     "slug": "joshua-black",
     "name": "Joshua Black",
@@ -57247,6 +57511,23 @@
     "tmdbUpdatedAt": "2026-09-20T16:20:38.532Z"
   },
   {
+    "id": "1383014",
+    "slug": "kailea-banka",
+    "name": "Kailea Banka",
+    "tmdbPersonId": 1383014,
+    "photoUrl": "/images/people/1383014.webp",
+    "profileUrl": "/images/people/1383014.webp",
+    "biography": "Kailea Banka is an actress and producer, known for Into the Other-Side (2018), North American Primates (2017) and Liar (2020).",
+    "imdbPersonId": "nm6145833",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 1,
+    "instagramId": "kaileabeee",
+    "twitterId": "kaileabee",
+    "tmdbUpdatedAt": "2026-10-01T10:12:07.112Z",
+    "tmdbFetchedAt": "2026-10-01T10:12:07.112Z"
+  },
+  {
     "id": "2384901",
     "slug": "kaily-smith-westbrook",
     "name": "Kaily Smith Westbrook",
@@ -57869,6 +58150,31 @@
     "knownForDepartment": "Acting",
     "knownCredits": 3,
     "tmdbUpdatedAt": "2026-09-20T16:16:57.597Z"
+  },
+  {
+    "id": "58395",
+    "slug": "karin-konoval",
+    "name": "Karin Konoval",
+    "tmdbPersonId": 58395,
+    "photoUrl": "/images/people/58395.webp",
+    "profileUrl": "/images/people/58395.webp",
+    "birthday": "1961-06-04",
+    "placeOfBirth": "Baltimore, Maryland, USA",
+    "biography": "Karin Konoval is a Canadian-American actress who has appeared in theatre, numerous TV series and supporting lead roles in many feature films.",
+    "imdbPersonId": "nm0465269",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 94,
+    "alsoKnownAs": [
+      "Karen Konaval",
+      "卡琳·科諾瓦",
+      "كارين كونوفال"
+    ],
+    "instagramId": "karinkonoval",
+    "twitterId": "@KarinKonoval",
+    "facebookId": "karinkonovalofficial",
+    "tmdbUpdatedAt": "2026-10-01T10:12:11.287Z",
+    "tmdbFetchedAt": "2026-10-01T10:12:11.287Z"
   },
   {
     "id": "karina-segura",
@@ -58864,6 +59170,23 @@
     "knownForDepartment": "Acting",
     "knownCredits": 10,
     "tmdbUpdatedAt": "2026-09-20T16:19:12.440Z"
+  },
+  {
+    "id": "1449099",
+    "slug": "kathy-byron",
+    "name": "Kathy Byron",
+    "tmdbPersonId": 1449099,
+    "photoUrl": "/images/people/1449099.webp",
+    "profileUrl": "/images/people/1449099.webp",
+    "birthday": "1963-12-08",
+    "placeOfBirth": "Dorchester, Massachusetts, USA",
+    "biography": "Kathy Byron was born on December 8, 1963 in Dorchester, Massachusetts, USA. She is an actress and writer, known for The Nukes (2009), Desperate Housewives (2004) and Weeds (2005).",
+    "imdbPersonId": "nm1483928",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 17,
+    "tmdbUpdatedAt": "2026-10-01T10:12:08.980Z",
+    "tmdbFetchedAt": "2026-10-01T10:12:08.980Z"
   },
   {
     "id": "kathy-harum",
@@ -60656,6 +60979,26 @@
     "tmdbUpdatedAt": "2026-09-20T16:17:43.530Z"
   },
   {
+    "id": "1358988",
+    "slug": "kennedi-clements",
+    "name": "Kennedi Clements",
+    "tmdbPersonId": 1358988,
+    "photoUrl": "/images/people/1358988.webp",
+    "profileUrl": "/images/people/1358988.webp",
+    "birthday": "2007-01-21",
+    "placeOfBirth": "White Rock, British Columbia, Canada",
+    "biography": "Kennedi Clements (born January 21, 2007) is a Canadian former child actress.  She  was born in White Rock, British Columbia in January of 2007. She is the oldest of three children. She began acting at the age of 3 and booked a lead role in the TV movie, \"A Family Thanksgiving\" shortly after as her first role. It was obvious, even at such a young age, that this was a passion for her. When she is not busy acting she is very involved with her figure skating and dancing as well.  - IMDb Mini Biography",
+    "imdbPersonId": "nm4149623",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 13,
+    "instagramId": "kennediclements",
+    "twitterId": "kennediclements",
+    "facebookId": "KennediClements",
+    "tmdbUpdatedAt": "2026-10-01T10:12:10.461Z",
+    "tmdbFetchedAt": "2026-10-01T10:12:10.461Z"
+  },
+  {
     "id": "kenneth-choi",
     "slug": "kenneth-choi",
     "name": "Kenneth Choi",
@@ -60756,6 +61099,27 @@
     "knownForDepartment": "Acting",
     "knownCredits": 33,
     "tmdbUpdatedAt": "2026-09-20T16:18:37.117Z"
+  },
+  {
+    "id": "67713",
+    "slug": "kent-nolan",
+    "name": "Kent Nolan",
+    "tmdbPersonId": 67713,
+    "birthday": "1989-12-26",
+    "deathday": "2014-09-08",
+    "placeOfBirth": "Regina - Saskatchewan - Canada",
+    "biography": "Born and raised in Regina Saskatchewan, Kent Nolan was an actor and filmmaker. Kent began acting in musical theatre, studying drama, dance and voice when he was just five years old, and eventually moved into film by age twelve. At sixteen Kent wrote and directed his first award winning short film entitled \"Presage\", leading to a new-found love for film-making. After he graduated high school, Kent moved to Toronto to train in classical acting at the prestigious George Brown Theatre School.\n\nHaving appeared in over forty theatre productions, Kent was also featured in over twenty films and television series. He has noted some of his career highlights include working with Academy Award nominated filmmaker, Terry Gilliam, John N. Smith, Jennifer Lynch, as well as starring in the feature Stage Fright by Sundance award winner, Jerome Sable.\n\nAt the time of his death Kent had been hard at work developing his debut feature as a writer/director.\n\n- IMDb Mini Biography",
+    "imdbPersonId": "nm1631493",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 11,
+    "alsoKnownAs": [
+      "Ken Wolkowski",
+      "Kent Wolkowski",
+      "Kent David Wolkowski"
+    ],
+    "tmdbUpdatedAt": "2026-10-01T10:12:05.397Z",
+    "tmdbFetchedAt": "2026-10-01T10:12:05.397Z"
   },
   {
     "id": "kent-sheridan",
@@ -66477,7 +66841,8 @@
       "Lindan Banks",
       "Lynden Banks"
     ],
-    "tmdbUpdatedAt": "2026-09-20T16:18:54.041Z"
+    "tmdbUpdatedAt": "2026-10-01T10:12:10.862Z",
+    "tmdbFetchedAt": "2026-10-01T10:12:10.862Z"
   },
   {
     "id": "linden-mcmillan",
@@ -67869,6 +68234,24 @@
     "knownForDepartment": "Writing",
     "knownCredits": 1,
     "tmdbUpdatedAt": "2026-09-22T20:53:34.040Z"
+  },
+  {
+    "id": "73456",
+    "slug": "lorna-scott",
+    "name": "Lorna Scott",
+    "tmdbPersonId": 73456,
+    "photoUrl": "/images/people/73456.webp",
+    "profileUrl": "/images/people/73456.webp",
+    "birthday": "1955-09-18",
+    "placeOfBirth": "Beckley, West Virginia, USA",
+    "biography": "Lorna Scott was born on 18 September 1955 in Beckley, West Virginia, USA. She is an actress, known for A Very Sordid Wedding (2017), Wanted (2008) and The Guilt Trip (2012).",
+    "imdbPersonId": "nm0779514",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 96,
+    "instagramId": "thelornascott",
+    "tmdbUpdatedAt": "2026-10-01T10:12:08.087Z",
+    "tmdbFetchedAt": "2026-10-01T10:12:08.087Z"
   },
   {
     "id": "lorne-cardinal",
@@ -72667,6 +73050,18 @@
     "tmdbFetchedAt": "2026-10-01T10:07:45.865Z"
   },
   {
+    "id": "2565723",
+    "slug": "marshall-caplan",
+    "name": "Marshall Caplan",
+    "tmdbPersonId": 2565723,
+    "imdbPersonId": "nm1979284",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 4,
+    "tmdbUpdatedAt": "2026-10-01T10:12:10.412Z",
+    "tmdbFetchedAt": "2026-10-01T10:12:10.412Z"
+  },
+  {
     "id": "marshall-williams",
     "slug": "marshall-williams",
     "name": "Marshall Williams",
@@ -73240,10 +73635,11 @@
     "imdbPersonId": "nm0401799",
     "gender": "Female",
     "knownForDepartment": "Acting",
-    "knownCredits": 51,
+    "knownCredits": 52,
     "instagramId": "thereal_marymargarethumes",
     "twitterId": "mm_humes",
-    "tmdbUpdatedAt": "2026-09-20T16:18:39.928Z"
+    "tmdbUpdatedAt": "2026-10-01T10:12:08.175Z",
+    "tmdbFetchedAt": "2026-10-01T10:12:08.175Z"
   },
   {
     "id": "marycarmen-lopez",
@@ -77342,6 +77738,21 @@
     "knownCredits": 6,
     "tmdbUpdatedAt": "2026-10-01T10:07:29.134Z",
     "tmdbFetchedAt": "2026-10-01T10:07:29.134Z"
+  },
+  {
+    "id": "1127282",
+    "slug": "michael-heaton",
+    "name": "Michael Heaton",
+    "tmdbPersonId": 1127282,
+    "birthday": "1995-03-10",
+    "placeOfBirth": "Calgary, Alberta, Canada",
+    "biography": "Michael was born March 10, 1995 in Calgary Alberta. While obsessed with film from an early age, he devoted most of his life to playing sports, particularly baseball, which took him all around North America. Michael played two years in Spokane Washington, before transferring to UBC to finish his college baseball career. After a shoulder injury helped end his career, Michael felt lost. It was in 2017 when he decided to enroll into Film Production at Vancouver Film School, there he would meet future collaborator and film partner Aiden Marsden. After graduating from VFS, he finished his History degree at UBC as he looked for work. Michael works part time (having a year of full time experience under his belt) as a lamp op in the industry. He is currently dedicating his time to developing new projects and improving his writing, with hopes of one day selling a script and making a feature.",
+    "imdbPersonId": "nm5291253",
+    "gender": "Male",
+    "knownForDepartment": "Writing",
+    "knownCredits": 3,
+    "tmdbUpdatedAt": "2026-10-01T10:12:11.367Z",
+    "tmdbFetchedAt": "2026-10-01T10:12:11.367Z"
   },
   {
     "id": "michael-hough",
@@ -82064,6 +82475,22 @@
     "tmdbUpdatedAt": "2026-09-20T16:17:31.787Z"
   },
   {
+    "id": "1213377",
+    "slug": "nick-kiriazis",
+    "name": "Nick Kiriazis",
+    "tmdbPersonId": 1213377,
+    "photoUrl": "/images/people/1213377.webp",
+    "profileUrl": "/images/people/1213377.webp",
+    "birthday": "1969-06-09",
+    "placeOfBirth": "Madison, Wisconsin, USA",
+    "imdbPersonId": "nm0456364",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 20,
+    "tmdbUpdatedAt": "2026-10-01T10:12:08.602Z",
+    "tmdbFetchedAt": "2026-10-01T10:12:08.602Z"
+  },
+  {
     "id": "6384876",
     "slug": "nick-letlow",
     "name": "Nick Letlow",
@@ -82880,6 +83307,27 @@
     "tmdbFetchedAt": "2026-09-25T18:44:23.707Z"
   },
   {
+    "id": "966902",
+    "slug": "nikki-hahn",
+    "name": "Nikki Hahn",
+    "tmdbPersonId": 966902,
+    "photoUrl": "/images/people/966902.webp",
+    "profileUrl": "/images/people/966902.webp",
+    "birthday": "2002-11-13",
+    "placeOfBirth": "San Antonio, Texas, USA",
+    "biography": "Sofia Nicole Hahn (born November 13, 2002, in San Antonio, Texas) is an American actress who became known at an early age for roles in series such as CSI: Miami, American Horror Story, and Disney films.\n\nAt the age of three, she began modeling in advertising campaigns for brands such as American Girl and Little Marc Jacobs. She made her acting debut in 2009 with guest roles in CSI: Miami and NCIS: Los Angeles. Her well-known television appearances include Criminal Minds, iCarly, The Closer, Jessie, American Horror Story (2012 as Jenny Reynolds), American Housewife (2017–2019, as Gina Tuscadero), and Genius (2017, as young Mileva Marić). She had notable film roles in Adventures in Babysitting (2016, Disney Channel Original Movie) as Emily Cooper, The Secret Lives of Dorks (2013), and The Scales: Mermaids Are Real (2017) as Crystal.\n\nHahn's awards include Young Artist Award: nominated in 2011 and 2012 for guest roles in TV productions.",
+    "imdbPersonId": "nm3385478",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 27,
+    "alsoKnownAs": [
+      "Sofia Nicole Hahn"
+    ],
+    "instagramId": "NikkiHahn",
+    "tmdbUpdatedAt": "2026-10-01T10:12:07.263Z",
+    "tmdbFetchedAt": "2026-10-01T10:12:07.263Z"
+  },
+  {
     "id": "nikki-mckenzie",
     "slug": "nikki-mckenzie",
     "name": "Nikki McKenzie",
@@ -83666,7 +84114,8 @@
     "knownCredits": 42,
     "instagramId": "thatoliviacheng",
     "twitterId": "ThatOliviaCheng",
-    "tmdbUpdatedAt": "2026-09-21T13:14:45.799Z"
+    "tmdbUpdatedAt": "2026-10-01T10:12:09.318Z",
+    "tmdbFetchedAt": "2026-10-01T10:12:09.318Z"
   },
   {
     "id": "1908762",
@@ -84356,6 +84805,23 @@
     ],
     "twitterId": "PamGrier",
     "tmdbUpdatedAt": "2026-09-20T16:20:27.559Z"
+  },
+  {
+    "id": "65799",
+    "slug": "pam-hyatt",
+    "name": "Pam Hyatt",
+    "tmdbPersonId": 65799,
+    "photoUrl": "/images/people/65799.webp",
+    "profileUrl": "/images/people/65799.webp",
+    "birthday": "1936-04-09",
+    "placeOfBirth": "Garden City, Long Island, New York, USA",
+    "biography": "Pamela \"Pam\" Hyatt is an American-born Canadian actress.\n\nPam is best known for voicing Noble Heart Horse in 1986's The Care Bears Movie II: A New Generation and the voice of Kaede in the English version of Inuyasha. She also guest-starred in USA Network's The Dead Zone and voiced Campe and Atropos in Class of the Titans.\n\nIn 2012, Hyatt released her debut album Pamalot! with Peter Hill on piano.",
+    "imdbPersonId": "nm0404929",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 46,
+    "tmdbUpdatedAt": "2026-10-01T10:12:06.106Z",
+    "tmdbFetchedAt": "2026-10-01T10:12:06.106Z"
   },
   {
     "id": "pam-tillis",
@@ -85632,7 +86098,8 @@
     "alsoKnownAs": [
       "Paul Essembre"
     ],
-    "tmdbUpdatedAt": "2026-09-20T16:17:00.221Z"
+    "tmdbUpdatedAt": "2026-10-01T10:12:11.104Z",
+    "tmdbFetchedAt": "2026-10-01T10:12:11.104Z"
   },
   {
     "id": "paul-fitzgerald",
@@ -88447,7 +88914,8 @@
     "gender": "Female",
     "knownForDepartment": "Acting",
     "knownCredits": 30,
-    "tmdbUpdatedAt": "2026-09-20T16:17:56.475Z"
+    "tmdbUpdatedAt": "2026-10-01T10:12:06.258Z",
+    "tmdbFetchedAt": "2026-10-01T10:12:06.258Z"
   },
   {
     "id": "randal-edwards",
@@ -88950,7 +89418,8 @@
     "gender": "Female",
     "knownForDepartment": "Acting",
     "knownCredits": 22,
-    "tmdbUpdatedAt": "2026-09-20T16:18:54.939Z"
+    "tmdbUpdatedAt": "2026-10-01T10:12:09.004Z",
+    "tmdbFetchedAt": "2026-10-01T10:12:09.004Z"
   },
   {
     "id": "rebecca-gibson",
@@ -91516,7 +91985,8 @@
       "روبرت باين",
       "Robert Pine"
     ],
-    "tmdbUpdatedAt": "2026-09-20T16:19:09.322Z"
+    "tmdbUpdatedAt": "2026-10-01T10:12:07.949Z",
+    "tmdbFetchedAt": "2026-10-01T10:12:07.949Z"
   },
   {
     "id": "robert-pralgo",
@@ -91691,6 +92161,25 @@
     "knownForDepartment": "Acting",
     "knownCredits": 11,
     "tmdbUpdatedAt": "2026-09-20T16:19:55.040Z"
+  },
+  {
+    "id": "1235417",
+    "slug": "robin-douglas",
+    "name": "Robin Douglas",
+    "tmdbPersonId": 1235417,
+    "photoUrl": "/images/people/1235417.webp",
+    "profileUrl": "/images/people/1235417.webp",
+    "birthday": "1953-06-28",
+    "placeOfBirth": "New York City, New York, USA",
+    "imdbPersonId": "nm0235227",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 10,
+    "alsoKnownAs": [
+      "Robyn Douglas"
+    ],
+    "tmdbUpdatedAt": "2026-10-01T10:12:11.184Z",
+    "tmdbFetchedAt": "2026-10-01T10:12:11.184Z"
   },
   {
     "id": "robin-dunne",
@@ -92976,6 +93465,22 @@
     "knownForDepartment": "Directing",
     "knownCredits": 55,
     "tmdbUpdatedAt": "2026-09-20T16:17:25.317Z"
+  },
+  {
+    "id": "73296",
+    "slug": "ruth-marshall",
+    "name": "Ruth Marshall",
+    "tmdbPersonId": 73296,
+    "photoUrl": "/images/people/73296.webp",
+    "profileUrl": "/images/people/73296.webp",
+    "birthday": "1965-06-07",
+    "placeOfBirth": "Toronto, Ontario, Canada",
+    "imdbPersonId": "nm0551154",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 22,
+    "tmdbUpdatedAt": "2026-10-01T10:12:06.594Z",
+    "tmdbFetchedAt": "2026-10-01T10:12:06.594Z"
   },
   {
     "id": "ryan-alexander-mcdonald",
@@ -101322,7 +101827,8 @@
     "gender": "Female",
     "knownForDepartment": "Acting",
     "knownCredits": 92,
-    "tmdbUpdatedAt": "2026-09-20T16:18:40.374Z"
+    "tmdbUpdatedAt": "2026-10-01T10:12:09.743Z",
+    "tmdbFetchedAt": "2026-10-01T10:12:09.743Z"
   },
   {
     "id": "susan-huckle",
@@ -101336,6 +101842,18 @@
     "knownForDepartment": "Acting",
     "knownCredits": 4,
     "tmdbUpdatedAt": "2026-09-20T16:21:02.017Z"
+  },
+  {
+    "id": "75818",
+    "slug": "susan-kelso",
+    "name": "Susan Kelso",
+    "tmdbPersonId": 75818,
+    "imdbPersonId": "nm0447087",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 14,
+    "tmdbUpdatedAt": "2026-10-01T10:12:11.309Z",
+    "tmdbFetchedAt": "2026-10-01T10:12:11.309Z"
   },
   {
     "id": "susan-loewen",
@@ -102421,6 +102939,21 @@
     "knownForDepartment": "Acting",
     "knownCredits": 7,
     "tmdbUpdatedAt": "2026-09-20T16:18:28.207Z"
+  },
+  {
+    "id": "206669",
+    "slug": "tanya-champoux",
+    "name": "Tanya Champoux",
+    "tmdbPersonId": 206669,
+    "photoUrl": "/images/people/206669.webp",
+    "profileUrl": "/images/people/206669.webp",
+    "placeOfBirth": "Canada",
+    "imdbPersonId": "nm1434853",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 31,
+    "tmdbUpdatedAt": "2026-10-01T10:12:10.292Z",
+    "tmdbFetchedAt": "2026-10-01T10:12:10.292Z"
   },
   {
     "id": "1251213",
@@ -103697,6 +104230,28 @@
     "tmdbUpdatedAt": "2026-09-20T16:17:56.562Z"
   },
   {
+    "id": "10399",
+    "slug": "teri-polo",
+    "name": "Teri Polo",
+    "tmdbPersonId": 10399,
+    "photoUrl": "/images/people/10399.webp",
+    "profileUrl": "/images/people/10399.webp",
+    "birthday": "1969-06-01",
+    "placeOfBirth": "Dover, Delaware, USA",
+    "biography": "​From Wikipedia, the free encyclopedia.  \n\nTheresa Elizabeth \"Teri\" Polo (born June 1, 1969) is an American actress known for her role of Pam Focker in the movie Meet the Parents (2000) and its two sequels, Meet the Fockers (2004) and Little Fockers (2010). She was one of the stars in the sitcom I'm with Her, as well as the political drama series The West Wing.\n\nDescription above from the Wikipedia article Teri Polo , licensed under CC-BY-SA, full list of contributors on Wikipedia.",
+    "imdbPersonId": "nm0001632",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 105,
+    "alsoKnownAs": [
+      "تری پولو"
+    ],
+    "instagramId": "therealteripolo",
+    "twitterId": "TeriPolo1",
+    "tmdbUpdatedAt": "2026-10-01T10:12:11.828Z",
+    "tmdbFetchedAt": "2026-10-01T10:12:11.828Z"
+  },
+  {
     "id": "teri-wyble",
     "slug": "teri-wyble",
     "name": "Teri Wyble",
@@ -103953,6 +104508,27 @@
     "knownForDepartment": "Acting",
     "knownCredits": 3,
     "tmdbUpdatedAt": "2026-09-20T16:16:51.998Z"
+  },
+  {
+    "id": "60076",
+    "slug": "thad-luckinbill",
+    "name": "Thad Luckinbill",
+    "tmdbPersonId": 60076,
+    "photoUrl": "/images/people/60076.webp",
+    "profileUrl": "/images/people/60076.webp",
+    "birthday": "1975-04-24",
+    "placeOfBirth": "Enid, Oklahoma, USA",
+    "biography": "Thaddeus Rowe Luckinbill (born April 24, 1975) is an American actor and producer best known for playing J.T. Hellstrom on the CBS soap opera The Young and the Restless from August 1999 to November 2010. He reprised the role of J.T. from December 2017 to April 2018, again in March 2019, and again in May 2023.\n\nDescription above from the Wikipedia article  Thad Luckinbill, licensed under CC-BY-SA, full list of contributors on Wikipedia.",
+    "imdbPersonId": "nm0524745",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 50,
+    "alsoKnownAs": [
+      "Thaddeus Rowe Luckinbill",
+      "تاد لاکینبیل"
+    ],
+    "tmdbUpdatedAt": "2026-10-01T10:12:07.912Z",
+    "tmdbFetchedAt": "2026-10-01T10:12:07.912Z"
   },
   {
     "id": "thanya-romero",
@@ -107015,7 +107591,25 @@
     ],
     "instagramId": "tywood",
     "twitterId": "tywood12",
-    "tmdbUpdatedAt": "2026-09-21T13:17:41.946Z"
+    "tmdbUpdatedAt": "2026-10-01T10:12:11.121Z",
+    "tmdbFetchedAt": "2026-10-01T10:12:11.121Z"
+  },
+  {
+    "id": "55591",
+    "slug": "tygh-runyan",
+    "name": "Tygh Runyan",
+    "tmdbPersonId": 55591,
+    "photoUrl": "/images/people/55591.webp",
+    "profileUrl": "/images/people/55591.webp",
+    "birthday": "1976-06-13",
+    "placeOfBirth": "Vancouver, British Columbia, Canada",
+    "biography": "​From Wikipedia, the free encyclopedia.  \n\nTygh Runyan (born June 13, 1976) is a Canadian actor and musician.\n\nDescription above from the Wikipedia article Tygh Runyan, licensed under CC-BY-SA, full list of contributors on Wikipedia.",
+    "imdbPersonId": "nm0750353",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 62,
+    "tmdbUpdatedAt": "2026-10-01T10:12:09.582Z",
+    "tmdbFetchedAt": "2026-10-01T10:12:09.582Z"
   },
   {
     "id": "4621822",
@@ -108276,6 +108870,31 @@
     "knownForDepartment": "Acting",
     "knownCredits": 8,
     "tmdbUpdatedAt": "2026-09-20T16:18:09.437Z"
+  },
+  {
+    "id": "579100",
+    "slug": "victoria-gabrielle-platt",
+    "name": "Victoria Gabrielle Platt",
+    "tmdbPersonId": 579100,
+    "photoUrl": "/images/people/579100.webp",
+    "profileUrl": "/images/people/579100.webp",
+    "birthday": "1972-11-21",
+    "placeOfBirth": "Queens, New York City, New York, USA",
+    "biography": "Victoria Gabrielle Platt is an actress, singer and producer.",
+    "imdbPersonId": "nm0686911",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 33,
+    "alsoKnownAs": [
+      "Victoria G. Platt",
+      "Victoria Platt Tilford",
+      "Victoria Platt",
+      "Victoria Tilford"
+    ],
+    "instagramId": "victoriousplatt",
+    "twitterId": "VictoriousPlatt",
+    "tmdbUpdatedAt": "2026-10-01T10:12:08.115Z",
+    "tmdbFetchedAt": "2026-10-01T10:12:08.115Z"
   },
   {
     "id": "victoria-hardway",

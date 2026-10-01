@@ -214986,6 +214986,902 @@ export const MOVIES: Movie[] = [
     "voteCount": 45,
     "tmdbUpdatedAt": "2026-10-01T10:07:17.854Z",
     "tmdbFetchedAt": "2026-10-01T10:07:17.854Z"
+  },
+  {
+    "id": "hallmark-2012-christmas-song",
+    "slug": "christmas-song",
+    "title": "Christmas Song",
+    "year": 2012,
+    "brandId": "hallmark",
+    "releaseDate": "2012-11-03",
+    "synopsis": "Romance blossoms between two music teachers who compete for the same job.",
+    "posterUrl": "/images/posters/145343.jpg",
+    "backdropUrl": "/images/backdrops/145343.jpg",
+    "cast": [
+      {
+        "actorId": "57395",
+        "name": "Natasha Henstridge",
+        "character": "Diana",
+        "slug": "natasha-henstridge",
+        "tmdbPersonId": 57395,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/lfRFm3MLOGPtaDHWTstoQfKAyLM.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "148125",
+        "name": "Gabriel Hogan",
+        "character": "Ken Stoddard",
+        "slug": "gabriel-hogan",
+        "tmdbPersonId": 148125,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/phKmguA7pcquBJygZYwLEzPX28Q.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "1383004",
+        "name": "Amanda Thomson",
+        "character": "Liz",
+        "slug": "amanda-thomson",
+        "tmdbPersonId": 1383004,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/ydQt9yUvsGFqmfWil2qEuDcJtrs.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "491560",
+        "name": "Brittany Adams",
+        "character": "Amy",
+        "slug": "brittany-adams",
+        "tmdbPersonId": 491560,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/xFExOJD78n3uSZruVP4S94NIgKv.jpg",
+        "order": 3
+      },
+      {
+        "actorId": "1383011",
+        "name": "Jack Ettlinger",
+        "character": "Billy",
+        "slug": "jack-ettlinger",
+        "tmdbPersonId": 1383011,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/6u0KoxpPQHCwk0w7i8mFI66ZGRd.jpg",
+        "order": 4
+      },
+      {
+        "actorId": "67713",
+        "name": "Kent Nolan",
+        "character": "Carlo",
+        "slug": "kent-nolan",
+        "tmdbPersonId": 67713,
+        "order": 5
+      },
+      {
+        "actorId": "1383012",
+        "name": "Brigitte Robinson",
+        "character": "Principal Gedler",
+        "slug": "brigitte-robinson",
+        "tmdbPersonId": 1383012,
+        "order": 6
+      },
+      {
+        "actorId": "1225402",
+        "name": "Ramona Milano",
+        "character": "Jill",
+        "slug": "ramona-milano",
+        "tmdbPersonId": 1225402,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/8HRhViXCmlGlUGl45TIyWIpAs7M.jpg",
+        "order": 7
+      },
+      {
+        "actorId": "262720",
+        "name": "Joel S. Keller",
+        "character": "Gary",
+        "slug": "joel-s-keller",
+        "tmdbPersonId": 262720,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/n73QA1Lfg8XqU6CSTIgrvPG9j2v.jpg",
+        "order": 8
+      },
+      {
+        "actorId": "65799",
+        "name": "Pam Hyatt",
+        "character": "Estelle",
+        "slug": "pam-hyatt",
+        "tmdbPersonId": 65799,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/yWZeZ22BnLYU35dX5QgjOhwtY0r.jpg",
+        "order": 9
+      },
+      {
+        "actorId": "73296",
+        "name": "Ruth Marshall",
+        "character": "Mrs. Barnes",
+        "slug": "ruth-marshall",
+        "tmdbPersonId": 73296,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/2CNWoILCfymiVRGOmLZgWSuYYeK.jpg",
+        "order": 10
+      },
+      {
+        "actorId": "1189180",
+        "name": "Ben Mulroney",
+        "character": "Emcee",
+        "slug": "ben-mulroney",
+        "tmdbPersonId": 1189180,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/sIbgx2NhiTIM2fDp55Kq1GWSDqu.jpg",
+        "order": 11
+      },
+      {
+        "actorId": "1383014",
+        "name": "Kailea Banka",
+        "character": "Female Bad Singer",
+        "slug": "kailea-banka",
+        "tmdbPersonId": 1383014,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/pFMVpWpGgH6Laags51vjw3I4MsF.jpg",
+        "order": 12
+      },
+      {
+        "actorId": "1383015",
+        "name": "Devon Youngs",
+        "character": "Male Bad Singer",
+        "slug": "devon-youngs",
+        "tmdbPersonId": 1383015,
+        "order": 13
+      }
+    ],
+    "director": "Timothy Bond",
+    "tmdbId": 145343,
+    "imdbId": "tt2376246",
+    "isComingSoon": false,
+    "status": "collection",
+    "originalTitle": "Christmas Song",
+    "runtimeMinutes": 90,
+    "genres": [
+      {
+        "id": 10751,
+        "name": "Family"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      },
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "DE",
+        "releaseDate": "2014-11-06T00:00:00.000Z",
+        "type": 5,
+        "certification": "0",
+        "note": "DBD/Blu-Ray"
+      },
+      {
+        "country": "FR",
+        "releaseDate": "2012-12-30T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "M6"
+      },
+      {
+        "country": "US",
+        "releaseDate": "2012-11-03T00:00:00.000Z",
+        "type": 6,
+        "certification": "G",
+        "note": "Hallmark Channel"
+      }
+    ],
+    "crew": [
+      {
+        "id": 29287,
+        "name": "Timothy Bond",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/gXUP4anWaRYlOpenWotdTejCDG8.jpg",
+        "creditId": "52fe4b589251416c750ffef5"
+      },
+      {
+        "id": 224215,
+        "name": "Kevin Commins",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "545e2bd60e0a261fb90068aa"
+      }
+    ],
+    "trailers": [
+      {
+        "key": "Hg2sBsA6bQM",
+        "site": "YouTube",
+        "type": "Trailer",
+        "name": "Hallmark Channel - Christmas Song - Premiere Promo",
+        "official": true
+      }
+    ],
+    "trailerYoutubeKey": "Hg2sBsA6bQM",
+    "voteAverage": 5.6,
+    "voteCount": 32,
+    "tmdbUpdatedAt": "2026-10-01T10:12:02.052Z",
+    "tmdbFetchedAt": "2026-10-01T10:12:02.052Z"
+  },
+  {
+    "id": "hallmark-2012-matchmaker-santa",
+    "slug": "matchmaker-santa",
+    "title": "Matchmaker Santa",
+    "year": 2012,
+    "brandId": "hallmark",
+    "releaseDate": "2012-11-21",
+    "synopsis": "As a little girl, Melanie Hogan wished to find her own prince charming just like her parents found true love.  Now an adult, Melanie is running her own bakery and dating a handsome CEO, Justin. Although things seem perfect when Justin asks Melanie to spend the holidays together at his beautiful lake house upstate—and meet his mother. Melanie finds herself spending more time with Justin’s best friend and loyal assistant, Dean, who just might be harboring a secret crush on her. When complications arise that throw Melanie and Dean together over the holiday, will the two realize they're meant to be?",
+    "posterUrl": "/images/posters/144785.jpg",
+    "backdropUrl": "/images/backdrops/144785.jpg",
+    "cast": [
+      {
+        "actorId": "22082",
+        "name": "Lacey Chabert",
+        "character": "Melanie \"Skeeter\" Hogan",
+        "slug": "lacey-chabert",
+        "tmdbPersonId": 22082,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/1q9Xe7QVi5oayhPMEiRPgd6FFKG.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "188284",
+        "name": "Adam Mayfield",
+        "character": "Dean Ford",
+        "slug": "adam-mayfield",
+        "tmdbPersonId": 188284,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/urg5fGn9DtlYBFOXwOf6PFzkal4.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "966902",
+        "name": "Nikki Hahn",
+        "character": "Young Melanie",
+        "slug": "nikki-hahn",
+        "tmdbPersonId": 966902,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/loiqZVESxkm0YDcEVulrdhcTnQc.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "139048",
+        "name": "Elizabeth Ann Bennett",
+        "character": "Blaire",
+        "slug": "elizabeth-ann-bennett",
+        "tmdbPersonId": 139048,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/2PUlnb9ZADG59hnltK6ObzEXwCP.jpg",
+        "order": 3
+      },
+      {
+        "actorId": "75343",
+        "name": "Florence Henderson",
+        "character": "Peggy",
+        "slug": "florence-henderson",
+        "tmdbPersonId": 75343,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/kPocXZlkyTeNdbXf3iMT0yVFGFT.jpg",
+        "order": 4
+      },
+      {
+        "actorId": "74573",
+        "name": "Robert Pine",
+        "character": "Jack Tisdale",
+        "slug": "robert-pine",
+        "tmdbPersonId": 74573,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/xZM1qLqmRprnZYXa8Ugsmo00zL9.jpg",
+        "order": 5
+      },
+      {
+        "actorId": "7907",
+        "name": "John Ratzenberger",
+        "character": "George",
+        "slug": "john-ratzenberger",
+        "tmdbPersonId": 7907,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/oRtDEOuIO1yDhTz5dORBdxXuLMO.jpg",
+        "order": 6
+      },
+      {
+        "actorId": "7401",
+        "name": "Lin Shaye",
+        "character": "Debbie",
+        "slug": "lin-shaye",
+        "tmdbPersonId": 7401,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/aL87Za52elH81zMiXQn5C7AXAeg.jpg",
+        "order": 7
+      },
+      {
+        "actorId": "57350",
+        "name": "Donovan Scott",
+        "character": "Chris",
+        "slug": "donovan-scott",
+        "tmdbPersonId": 57350,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/zs0rbBBujZATXeEV3E7RMrXQ2W2.jpg",
+        "order": 8
+      },
+      {
+        "actorId": "60076",
+        "name": "Thad Luckinbill",
+        "character": "Justin",
+        "slug": "thad-luckinbill",
+        "tmdbPersonId": 60076,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/7zBnpYTwwxKT6OHcycqacGQwQT8.jpg",
+        "order": 9
+      },
+      {
+        "actorId": "71676",
+        "name": "Mary-Margaret Humes",
+        "character": "Katherine",
+        "slug": "mary-margaret-humes",
+        "tmdbPersonId": 71676,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/sBmqplwdnfzUhHx7OwlRK12yMFr.jpg",
+        "order": 10
+      },
+      {
+        "actorId": "579100",
+        "name": "Victoria Gabrielle Platt",
+        "character": "Donna",
+        "slug": "victoria-gabrielle-platt",
+        "tmdbPersonId": 579100,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/3VEc3bqlftoy5GsPrycdnPEHQn7.jpg",
+        "order": 11
+      },
+      {
+        "actorId": "73456",
+        "name": "Lorna Scott",
+        "character": "Sheriff Dispatcher",
+        "slug": "lorna-scott",
+        "tmdbPersonId": 73456,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/cBlU9Pa9LWWPf2JRELGsY0PJ5Il.jpg",
+        "order": 12
+      },
+      {
+        "actorId": "1213377",
+        "name": "Nick Kiriazis",
+        "character": "Bill Hogan",
+        "slug": "nick-kiriazis",
+        "tmdbPersonId": 1213377,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/8MCMFjNhAnFBuRIArw3qER3yUup.jpg",
+        "order": 13
+      },
+      {
+        "actorId": "122518",
+        "name": "Erica Shaffer",
+        "character": "Ruth Hogan",
+        "slug": "erica-shaffer",
+        "tmdbPersonId": 122518,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/7L6yfu2SETLrd08WDS7vqGtGZbQ.jpg",
+        "order": 14
+      },
+      {
+        "actorId": "1340684",
+        "name": "Carter Sand",
+        "character": "Nicky",
+        "slug": "carter-sand",
+        "tmdbPersonId": 1340684,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/qtSboQZOtuii7XU5Kj9DgDiIyek.jpg",
+        "order": 15
+      },
+      {
+        "actorId": "1449099",
+        "name": "Kathy Byron",
+        "character": "Waitress",
+        "slug": "kathy-byron",
+        "tmdbPersonId": 1449099,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/wXxNZCrb6mSTA4ZGf4v2GoygjT0.jpg",
+        "order": 16
+      },
+      {
+        "actorId": "2572677",
+        "name": "Darby Jo Hart",
+        "character": "Little girl",
+        "slug": "darby-jo-hart",
+        "tmdbPersonId": 2572677,
+        "order": 17
+      }
+    ],
+    "director": "David S. Cass Sr.",
+    "tmdbId": 144785,
+    "imdbId": "tt2400685",
+    "isComingSoon": false,
+    "status": "collection",
+    "originalTitle": "Matchmaker Santa",
+    "runtimeMinutes": 83,
+    "genres": [
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      },
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 18,
+        "name": "Drama"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "US",
+        "releaseDate": "2012-11-21T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "Hallmark Channel"
+      }
+    ],
+    "crew": [
+      {
+        "id": 81693,
+        "name": "David S. Cass Sr.",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/tSo4s2Hb2UficxzMqU26bJhwg7i.jpg",
+        "creditId": "55185f3fc3a36862f600457b"
+      },
+      {
+        "id": 591514,
+        "name": "Joany Kane",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "55185f4ac3a36862f600457d"
+      }
+    ],
+    "trailers": [
+      {
+        "key": "PU5jmdh7eMQ",
+        "site": "YouTube",
+        "type": "Trailer",
+        "name": "Matchmaker Santa",
+        "official": false
+      }
+    ],
+    "trailerYoutubeKey": "PU5jmdh7eMQ",
+    "voteAverage": 5.7,
+    "voteCount": 67,
+    "tmdbUpdatedAt": "2026-10-01T10:12:02.044Z",
+    "tmdbFetchedAt": "2026-10-01T10:12:02.044Z"
+  },
+  {
+    "id": "hallmark-2012-it-s-christmas-carol",
+    "slug": "it-s-christmas-carol",
+    "title": "It's Christmas, Carol!",
+    "year": 2012,
+    "brandId": "hallmark",
+    "releaseDate": "2012-11-18",
+    "synopsis": "The story of driven, heartless, publishing executive, Carol Huffman, who on Christmas Eve is visited by the ghost of her former boss, Eve. Eve tells Carol that she has lost sight of the things that are truly important in life and that she is there to show her the error of her ways. Eve explains that normally there would be three ghosts for the job but due to budget cutbacks, she is in charge of Carol's journey through her past, present and future.",
+    "posterUrl": "/images/posters/151071.jpg",
+    "backdropUrl": "/images/backdrops/151071.jpg",
+    "cast": [
+      {
+        "actorId": "2684",
+        "name": "Emmanuelle Vaugier",
+        "character": "Carol",
+        "slug": "emmanuelle-vaugier",
+        "tmdbPersonId": 2684,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/jtQ4p9iQoD2uCgqbYRgccvGEG6X.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "4",
+        "name": "Carrie Fisher",
+        "character": "Eve",
+        "slug": "carrie-fisher",
+        "tmdbPersonId": 4,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/of4yHmryKPy92eeskUQ7MRmjC3l.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "86764",
+        "name": "Olivia Cheng",
+        "character": "Kendra",
+        "slug": "olivia-cheng",
+        "tmdbPersonId": 86764,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/c1rOhwVuZi3v47fuTAnVVB4XuSc.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "55591",
+        "name": "Tygh Runyan",
+        "character": "Ben",
+        "slug": "tygh-runyan",
+        "tmdbPersonId": 55591,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/59Ny2pG5R2aXDUJvTvyDqHI8sCW.jpg",
+        "order": 3
+      },
+      {
+        "actorId": "63568",
+        "name": "Patti Allan",
+        "character": "Gale",
+        "slug": "patti-allan",
+        "tmdbPersonId": 63568,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/ntFqFRTtOSYHfnNsSBUCubuop9U.jpg",
+        "order": 4
+      },
+      {
+        "actorId": "70175",
+        "name": "Chelah Horsdal",
+        "character": "Tanya",
+        "slug": "chelah-horsdal",
+        "tmdbPersonId": 70175,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/gnylfySYJwlfAhm3QIdQ2Ua4zGd.jpg",
+        "order": 5
+      },
+      {
+        "actorId": "1130939",
+        "name": "Rebecca Davis",
+        "character": "Wendy",
+        "slug": "rebecca-davis",
+        "tmdbPersonId": 1130939,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/qzQvKzMloFpykQI407KW9ZMcEhY.jpg",
+        "order": 6
+      },
+      {
+        "actorId": "71763",
+        "name": "Susan Hogan",
+        "character": "Linda",
+        "slug": "susan-hogan",
+        "tmdbPersonId": 71763,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/9gwOXpJOCPd6cGh4vKd2C9H7njl.jpg",
+        "order": 7
+      },
+      {
+        "actorId": "1235417",
+        "name": "Robin Douglas",
+        "character": "Gloria",
+        "slug": "robin-douglas",
+        "tmdbPersonId": 1235417,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/tRC5WvHksmcoP3ZcOHXSuax5uHZ.jpg",
+        "order": 8
+      },
+      {
+        "actorId": "64671",
+        "name": "Jim Thorburn",
+        "character": "Zac",
+        "slug": "jim-thorburn",
+        "tmdbPersonId": 64671,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/c52ByiN2cyUBvsBiveKmS4Jdkz.jpg",
+        "order": 9
+      },
+      {
+        "actorId": "99208",
+        "name": "Johannah Newmarch",
+        "character": "Susan",
+        "slug": "johannah-newmarch",
+        "tmdbPersonId": 99208,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/exciBoqBPFs0y9TmOg0ZJB6rlWV.jpg",
+        "order": 10
+      },
+      {
+        "actorId": "119812",
+        "name": "Dalila Bela",
+        "character": "Young Carol (9)",
+        "slug": "dalila-bela",
+        "tmdbPersonId": 119812,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/eA9WDWF2Tx7lnM8IEo19gqurXgd.jpg",
+        "order": 11
+      },
+      {
+        "actorId": "206669",
+        "name": "Tanya Champoux",
+        "character": "Young Linda",
+        "slug": "tanya-champoux",
+        "tmdbPersonId": 206669,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/j1zg12Qiqmj4DcjLGbUXxETMYns.jpg",
+        "order": 12
+      },
+      {
+        "actorId": "2565721",
+        "name": "Joshua Balfour",
+        "character": "9 Year Old Son",
+        "slug": "joshua-balfour",
+        "tmdbPersonId": 2565721,
+        "order": 13
+      },
+      {
+        "actorId": "1358988",
+        "name": "Kennedi Clements",
+        "character": "Emma",
+        "slug": "kennedi-clements",
+        "tmdbPersonId": 1358988,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/ip0u2lxJILzYQHzvWgYmwqlCBET.jpg",
+        "order": 14
+      },
+      {
+        "actorId": "1374717",
+        "name": "Lucy Jeffrey",
+        "character": "Grace",
+        "slug": "lucy-jeffrey",
+        "tmdbPersonId": 1374717,
+        "order": 15
+      },
+      {
+        "actorId": "119810",
+        "name": "Geoff Gustafson",
+        "character": "Jim",
+        "slug": "geoff-gustafson",
+        "tmdbPersonId": 119810,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/geqRfzNtdVHDJMvVobBHXQUJG5T.jpg",
+        "order": 16
+      },
+      {
+        "actorId": "168436",
+        "name": "Linden Banks",
+        "character": "Manager",
+        "slug": "linden-banks",
+        "tmdbPersonId": 168436,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/6nYRr7v60H9gOeLOYW5ApTIVby.jpg",
+        "order": 17
+      },
+      {
+        "actorId": "2565723",
+        "name": "Marshall Caplan",
+        "character": "Older Ben",
+        "slug": "marshall-caplan",
+        "tmdbPersonId": 2565723,
+        "order": 18
+      },
+      {
+        "actorId": "58395",
+        "name": "Karin Konoval",
+        "character": "Older Carol (70)",
+        "slug": "karin-konoval",
+        "tmdbPersonId": 58395,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/5e8YyNQjWre2UbExYBlJ7zva934.jpg",
+        "order": 19
+      },
+      {
+        "actorId": "51803",
+        "name": "David Milchard",
+        "character": "Oldest Son",
+        "slug": "david-milchard",
+        "tmdbPersonId": 51803,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/5fAkTchSP81VJawTgOqwN96thtC.jpg",
+        "order": 20
+      },
+      {
+        "actorId": "77622",
+        "name": "Catherine Lough Haggquist",
+        "character": "Pam Jacobs",
+        "slug": "catherine-lough-haggquist",
+        "tmdbPersonId": 77622,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/3q6uhNYa7Dapl09YtqVrwndmj1l.jpg",
+        "order": 21
+      },
+      {
+        "actorId": "1215451",
+        "name": "Carson Kressley",
+        "character": "Fred",
+        "slug": "carson-kressley",
+        "tmdbPersonId": 1215451,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/dC1DQR0b9yFUSSs8i6BDAmf0Su1.jpg",
+        "order": 22
+      },
+      {
+        "actorId": "2565724",
+        "name": "Frank Crnkovik",
+        "character": "Salvation Army Santa",
+        "slug": "frank-crnkovik",
+        "tmdbPersonId": 2565724,
+        "order": 23
+      }
+    ],
+    "director": "Michael M. Scott",
+    "tmdbId": 151071,
+    "imdbId": "tt2181853",
+    "isComingSoon": false,
+    "status": "collection",
+    "originalTitle": "It's Christmas, Carol!",
+    "runtimeMinutes": 84,
+    "genres": [
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      },
+      {
+        "id": 10751,
+        "name": "Family"
+      },
+      {
+        "id": 14,
+        "name": "Fantasy"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "US",
+        "releaseDate": "2012-11-18T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "Hallmark"
+      }
+    ],
+    "crew": [
+      {
+        "id": 225586,
+        "name": "Michael M. Scott",
+        "job": "Director",
+        "department": "Directing",
+        "creditId": "52fe4af79251416c910cb72f"
+      },
+      {
+        "id": 2092068,
+        "name": "Christopher Sey",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "5e6c1441357c000019414742"
+      }
+    ],
+    "trailers": [
+      {
+        "key": "7wScyIvPiBU",
+        "site": "YouTube",
+        "type": "Trailer",
+        "name": "Hallmark Channel - It's Christmas, Carol!- Premiere Promo",
+        "official": true
+      }
+    ],
+    "trailerYoutubeKey": "7wScyIvPiBU",
+    "voteAverage": 5.5,
+    "voteCount": 36,
+    "tmdbUpdatedAt": "2026-10-01T10:12:02.074Z",
+    "tmdbFetchedAt": "2026-10-01T10:12:02.074Z"
+  },
+  {
+    "id": "hallmark-2012-the-christmas-heart",
+    "slug": "the-christmas-heart",
+    "title": "The Christmas Heart",
+    "year": 2012,
+    "brandId": "hallmark",
+    "releaseDate": "2012-12-02",
+    "synopsis": "The tight-knit neighbors on Arthur Avenue have proudly lit Christmas luminaries for 40 years, but that long-standing tradition is cancelled this year when Matt Norman, a teenage boy in the neighborhood, is hospitalized in desperate need of a heart transplant. As his parents Ann and Mike anxiously pray by his bedside, a donor is found, while in Detroit, a mother is in anguish at her own son’s bedside. When Matt's neighbors decide to honor him in the best way they know how, they just might help save his life.",
+    "posterUrl": "/images/posters/149229.jpg",
+    "backdropUrl": "/images/backdrops/149229.jpg",
+    "cast": [
+      {
+        "actorId": "10399",
+        "name": "Teri Polo",
+        "character": "Ann",
+        "slug": "teri-polo",
+        "tmdbPersonId": 10399,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/5xVk9bfMOeJxKmAGJddOhcNp2rX.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "1128538",
+        "name": "Paul Essiembre",
+        "character": "Mike",
+        "slug": "paul-essiembre",
+        "tmdbPersonId": 1128538,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/cM9uhNoWtNBfjVpmESoL0HJf9UX.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "41249",
+        "name": "Tess Harper",
+        "character": "Elizabeth",
+        "slug": "tess-harper",
+        "tmdbPersonId": 41249,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/8Z770Kk13MK1NP7skWmTxvRGx3V.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "61166",
+        "name": "Ty Wood",
+        "character": "Matt Norman",
+        "slug": "ty-wood",
+        "tmdbPersonId": 61166,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/7ZQHGgdiDlJFmeVCvlsfa3QAP8z.jpg",
+        "order": 3
+      },
+      {
+        "actorId": "33051",
+        "name": "John B. Lowe",
+        "character": "Don Foy",
+        "slug": "john-b-lowe",
+        "tmdbPersonId": 33051,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/j2Ra0REYuP9Ipdx6nG7tkukyycG.jpg",
+        "order": 4
+      },
+      {
+        "actorId": "1166976",
+        "name": "Samantha Kendrick",
+        "character": "Karen",
+        "slug": "samantha-kendrick",
+        "tmdbPersonId": 1166976,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/wrLYNsys35f54W7n2AbkdMUBC0X.jpg",
+        "order": 5
+      },
+      {
+        "actorId": "61170",
+        "name": "Joanne Rodriguez",
+        "character": "Neighbor #3",
+        "slug": "joanne-rodriguez",
+        "tmdbPersonId": 61170,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/7ZlFzwPcBsKcq2s7vSqeQ6uJgJA.jpg",
+        "order": 6
+      },
+      {
+        "actorId": "1127281",
+        "name": "Cruise Brown",
+        "character": "Tommy Norman",
+        "slug": "cruise-brown",
+        "tmdbPersonId": 1127281,
+        "order": 7
+      },
+      {
+        "actorId": "75818",
+        "name": "Susan Kelso",
+        "character": "Yvonne",
+        "slug": "susan-kelso",
+        "tmdbPersonId": 75818,
+        "order": 8
+      }
+    ],
+    "director": "Gary Yates",
+    "tmdbId": 149229,
+    "imdbId": "tt2415468",
+    "isComingSoon": false,
+    "status": "collection",
+    "originalTitle": "The Christmas Heart",
+    "runtimeMinutes": 86,
+    "genres": [
+      {
+        "id": 18,
+        "name": "Drama"
+      },
+      {
+        "id": 10751,
+        "name": "Family"
+      },
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "DE",
+        "releaseDate": "2014-11-06T00:00:00.000Z",
+        "type": 6,
+        "certification": "6",
+        "note": ""
+      },
+      {
+        "country": "US",
+        "releaseDate": "2012-12-02T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "Hallmark Channel"
+      }
+    ],
+    "crew": [
+      {
+        "id": 1127282,
+        "name": "Michael Heaton",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "52fe4be39251416c75111233"
+      },
+      {
+        "id": 103699,
+        "name": "Gary Yates",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/e5gR7CLu0uu2z5TKV7mGY06pdxR.jpg",
+        "creditId": "581497f3925141543e0319f4"
+      }
+    ],
+    "trailers": [
+      {
+        "key": "hsC4ENgUSnI",
+        "site": "YouTube",
+        "type": "Trailer",
+        "name": "Hallmark Channel - The Christmas Heart - Premiere Promo",
+        "official": true
+      }
+    ],
+    "trailerYoutubeKey": "hsC4ENgUSnI",
+    "tagline": "Can a town's faith save a young man's life?",
+    "voteAverage": 5.8,
+    "voteCount": 23,
+    "tmdbUpdatedAt": "2026-10-01T10:12:03.619Z",
+    "tmdbFetchedAt": "2026-10-01T10:12:03.619Z"
   }
 ];
 
