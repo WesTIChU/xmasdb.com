@@ -3651,13 +3651,6 @@ export const PROTOTYPE_MOVIE_FINGERPRINTS: Readonly<Record<string, readonly Fing
     "baking-cooking",
     "unexpected-romance"
   ],
-  "uptv-2009-a-golden-christmas": [
-    "childhood-sweethearts",
-    "competition",
-    "hometown",
-    "mistaken-identity",
-    "returns-home"
-  ],
   "uptv-2010-christmas-mail": [
     "workplace-romance"
   ],
