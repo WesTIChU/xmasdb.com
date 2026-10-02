@@ -4855,7 +4855,8 @@
     "gender": "Female",
     "knownForDepartment": "Acting",
     "knownCredits": 19,
-    "tmdbUpdatedAt": "2026-09-21T12:52:14.722Z"
+    "tmdbUpdatedAt": "2026-10-02T22:24:13.376Z",
+    "tmdbFetchedAt": "2026-10-02T22:24:13.376Z"
   },
   {
     "id": "amanda-lisman",
@@ -11119,6 +11120,23 @@
     "knownForDepartment": "Acting",
     "knownCredits": 4,
     "tmdbUpdatedAt": "2026-09-20T16:19:16.043Z"
+  },
+  {
+    "id": "2318768",
+    "slug": "baraka-rahmani",
+    "name": "Baraka Rahmani",
+    "tmdbPersonId": 2318768,
+    "photoUrl": "/images/people/2318768.webp",
+    "profileUrl": "/images/people/2318768.webp",
+    "placeOfBirth": "Vancouver/Toronto",
+    "imdbPersonId": "nm4841294",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 10,
+    "instagramId": "barakarahmani",
+    "twitterId": "@kiki_rahmani",
+    "tmdbUpdatedAt": "2026-10-02T22:24:14.617Z",
+    "tmdbFetchedAt": "2026-10-02T22:24:14.617Z"
   },
   {
     "id": "barb-mitchell",
@@ -27282,11 +27300,12 @@
     "imdbPersonId": "nm0004028",
     "gender": "Male",
     "knownForDepartment": "Acting",
-    "knownCredits": 97,
+    "knownCredits": 98,
     "alsoKnownAs": [
       "Dan Bacon"
     ],
-    "tmdbUpdatedAt": "2026-09-20T16:16:46.719Z"
+    "tmdbUpdatedAt": "2026-10-02T22:24:13.393Z",
+    "tmdbFetchedAt": "2026-10-02T22:24:13.393Z"
   },
   {
     "id": "3061459",
@@ -39028,6 +39047,16 @@
     "knownForDepartment": "Acting",
     "knownCredits": 20,
     "tmdbUpdatedAt": "2026-09-20T16:16:37.659Z"
+  },
+  {
+    "id": "6520961",
+    "slug": "eva-zuill-smith",
+    "name": "Eva Zuill Smith",
+    "tmdbPersonId": 6520961,
+    "knownForDepartment": "Acting",
+    "knownCredits": 1,
+    "tmdbUpdatedAt": "2026-10-02T22:24:13.228Z",
+    "tmdbFetchedAt": "2026-10-02T22:24:13.228Z"
   },
   {
     "id": "evan-alexander-smith",
@@ -75175,6 +75204,16 @@
     "tmdbUpdatedAt": "2026-09-20T16:17:32.366Z"
   },
   {
+    "id": "6520958",
+    "slug": "madison-ryne-smith",
+    "name": "Madison Ryne Smith",
+    "tmdbPersonId": 6520958,
+    "knownForDepartment": "Acting",
+    "knownCredits": 1,
+    "tmdbUpdatedAt": "2026-10-02T22:24:13.011Z",
+    "tmdbFetchedAt": "2026-10-02T22:24:13.011Z"
+  },
+  {
     "id": "madison-savoie",
     "slug": "madison-savoie",
     "name": "Madison Savoie",
@@ -89070,7 +89109,8 @@
     "gender": "Female",
     "knownForDepartment": "Acting",
     "knownCredits": 7,
-    "tmdbUpdatedAt": "2026-09-22T20:53:17.601Z"
+    "tmdbUpdatedAt": "2026-10-02T22:24:13.695Z",
+    "tmdbFetchedAt": "2026-10-02T22:24:13.695Z"
   },
   {
     "id": "nicole-eggert",
@@ -116825,6 +116865,26 @@
     "knownForDepartment": "Acting",
     "knownCredits": 116,
     "tmdbUpdatedAt": "2026-09-20T16:18:44.716Z"
+  },
+  {
+    "id": "1252869",
+    "slug": "veena-sud",
+    "name": "Veena Sud",
+    "tmdbPersonId": 1252869,
+    "photoUrl": "/images/people/1252869.webp",
+    "profileUrl": "/images/people/1252869.webp",
+    "birthday": "1967-06-25",
+    "placeOfBirth": "Toronto, Ontario, Canada",
+    "biography": "Veena Cabreros-Sud is a Canadian-born American television writer, director, and producer. Born in Toronto and of Filipino and Indian heritage, she is best known for developing the American television drama The Killing, which is based on the Danish series Forbrydelsen (The Crime). Sud received a Master of Fine Arts degree from the Film and Television program at New York University. Her credits on The Killing also include writer and executive producer. The series earned her an Emmy nomination and a Writers Guild of America award nomination. Her previous television work includes the dramatic series Cold Case, where she was a writer and executive producer. She was also an episode writer for the 2002 television series Push, Nevada. In February 2012, Paramount Pictures announced that Sud is writing a remake of Alfred Hitchcock's Suspicion. She was formerly the marketing and distribution director for Third World Newsreel, which specializes in films by and about people of color.",
+    "imdbPersonId": "nm0127894",
+    "gender": "Female",
+    "knownForDepartment": "Writing",
+    "knownCredits": 7,
+    "alsoKnownAs": [
+      "Veena Cabreros Sud"
+    ],
+    "tmdbUpdatedAt": "2026-10-02T22:24:14.275Z",
+    "tmdbFetchedAt": "2026-10-02T22:24:14.275Z"
   },
   {
     "id": "veenu-sandhu",
