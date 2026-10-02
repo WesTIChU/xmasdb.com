@@ -2,6 +2,9 @@ import React, { useEffect, useState } from 'react';
 
 interface MovieResult { id: string; title: string; year: number; network: string; tmdbId: number; }
 interface MovieRecord extends MovieResult { brandId: string; releaseDate: string; synopsis: string; runtimeMinutes?: number; voteAverage?: number; director?: string; writers: string[]; imdbId?: string; posterUrl: string; backdropUrl?: string; slug: string; }
+interface AdminMovieSearchResponse { movies: MovieResult[]; query: string; }
+interface AdminMoviePreviewResponse { baseSha: string; movie: MovieRecord; }
+interface AdminMovieMutationResponse { message?: string; }
 interface Props { onNavigate: (path: string) => void; }
 
 const fields = [
@@ -10,6 +13,68 @@ const fields = [
   ['posterUrl', 'Poster path'], ['backdropUrl', 'Backdrop path'],
 ] as const;
 
+type FormField = typeof fields[number][0] | 'synopsis' | 'writers';
+
+function isRecord(value: unknown): value is Record<string, unknown> {
+  return typeof value === 'object' && value !== null;
+}
+
+function isString(value: unknown): value is string {
+  return typeof value === 'string';
+}
+
+function isNumber(value: unknown): value is number {
+  return typeof value === 'number' && Number.isFinite(value);
+}
+
+function isMovieResult(value: unknown): value is MovieResult {
+  return isRecord(value)
+    && isString(value.id)
+    && isString(value.title)
+    && isNumber(value.year)
+    && isString(value.network)
+    && isNumber(value.tmdbId);
+}
+
+function isOptionalNumber(value: Record<string, unknown>, key: string): boolean {
+  return value[key] === undefined || isNumber(value[key]);
+}
+
+function isOptionalString(value: Record<string, unknown>, key: string): boolean {
+  return value[key] === undefined || isString(value[key]);
+}
+
+function isMovieRecord(value: unknown): value is MovieRecord {
+  if (!isRecord(value) || !isMovieResult(value)) return false;
+  return isString(value.brandId)
+    && isString(value.releaseDate)
+    && isString(value.synopsis)
+    && Array.isArray(value.writers)
+    && value.writers.every(isString)
+    && isString(value.posterUrl)
+    && isString(value.slug)
+    && isOptionalNumber(value, 'runtimeMinutes')
+    && isOptionalNumber(value, 'voteAverage')
+    && isOptionalString(value, 'director')
+    && isOptionalString(value, 'imdbId')
+    && isOptionalString(value, 'backdropUrl');
+}
+
+function isAdminMovieSearchResponse(value: unknown): value is AdminMovieSearchResponse {
+  return isRecord(value)
+    && Array.isArray(value.movies)
+    && value.movies.every(isMovieResult)
+    && isString(value.query);
+}
+
+function isAdminMoviePreviewResponse(value: unknown): value is AdminMoviePreviewResponse {
+  return isRecord(value) && isString(value.baseSha) && isMovieRecord(value.movie);
+}
+
+function isAdminMovieMutationResponse(value: unknown): value is AdminMovieMutationResponse {
+  return isRecord(value) && (value.message === undefined || isString(value.message));
+}
+
 function displayNetwork(value: string): string { return value === 'gaf' ? 'Great American Family' : value === 'uptv' ? 'UPtv' : value[0].toUpperCase() + value.slice(1); }
 
 export const AdminMoviesPage: React.FC<Props> = ({ onNavigate }) => {
@@ -17,23 +82,27 @@ export const AdminMoviesPage: React.FC<Props> = ({ onNavigate }) => {
   const [results, setResults] = useState<MovieResult[]>([]);
   const [movie, setMovie] = useState<MovieRecord | null>(null);
   const [baseSha, setBaseSha] = useState('');
-  const [form, setForm] = useState<Record<string, string>>({});
+  const [form, setForm] = useState<Partial<Record<FormField, string>>>({});
   const [error, setError] = useState('');
   const [message, setMessage] = useState('');
   const [busy, setBusy] = useState(false);
   const [deleteReady, setDeleteReady] = useState(false);
 
-  const request = async (url: string, init?: RequestInit) => {
+  const request = async <T,>(url: string, guard: (value: unknown) => value is T, init?: RequestInit): Promise<T> => {
     const response = await fetch(url, { ...init, credentials: 'same-origin' });
-    const payload = await response.json().catch(() => ({})) as Record<string, any>;
+    const payload: unknown = await response.json().catch(() => ({}));
     if (response.status === 401) { onNavigate('/admin/login/'); throw new Error('Your admin session has expired.'); }
-    if (!response.ok) throw new Error(payload.error || 'Admin movie request failed.');
+    if (!response.ok) {
+      const error = isRecord(payload) && isString(payload.error) ? payload.error : 'Admin movie request failed.';
+      throw new Error(error);
+    }
+    if (!guard(payload)) throw new Error('Admin movie response was invalid.');
     return payload;
   };
 
   const search = async () => {
     setBusy(true); setError('');
-    try { const payload = await request(`/api/admin/movies?q=${encodeURIComponent(query)}`); setResults(payload.movies || []); }
+    try { const payload = await request(`/api/admin/movies?q=${encodeURIComponent(query)}`, isAdminMovieSearchResponse); setResults(payload.movies); }
     catch (searchError) { setError(searchError instanceof Error ? searchError.message : 'Movies could not be loaded.'); }
     finally { setBusy(false); }
   };
@@ -43,9 +112,9 @@ export const AdminMoviesPage: React.FC<Props> = ({ onNavigate }) => {
   const openMovie = async (id: string) => {
     setBusy(true); setError(''); setMessage(''); setDeleteReady(false);
     try {
-      const payload = await request('/api/admin/movies/edit/preview', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ identifier: id }) });
-      const next = payload.movie as MovieRecord;
-      setMovie(next); setBaseSha(payload.baseSha || '');
+      const payload = await request('/api/admin/movies/edit/preview', isAdminMoviePreviewResponse, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ identifier: id }) });
+      const next = payload.movie;
+      setMovie(next); setBaseSha(payload.baseSha);
       setForm({ title: next.title, brandId: next.brandId, releaseDate: next.releaseDate, synopsis: next.synopsis, runtimeMinutes: next.runtimeMinutes === undefined ? '' : String(next.runtimeMinutes), voteAverage: next.voteAverage === undefined ? '' : String(next.voteAverage), director: next.director || '', writers: next.writers.join('\n'), imdbId: next.imdbId || '', tmdbId: String(next.tmdbId), posterUrl: next.posterUrl, backdropUrl: next.backdropUrl || '' });
     } catch (openError) { setError(openError instanceof Error ? openError.message : 'Movie could not be loaded.'); }
     finally { setBusy(false); }
@@ -54,7 +123,7 @@ export const AdminMoviesPage: React.FC<Props> = ({ onNavigate }) => {
   const save = async () => {
     if (!movie) return;
     setBusy(true); setError(''); setMessage('');
-    try { const payload = await request('/api/admin/movies/edit/commit', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ ...form, brand: form.brandId, id: movie.id, baseSha }) }); setMessage(payload.message || 'Movie updated.'); setMovie(null); await search(); }
+    try { const payload = await request('/api/admin/movies/edit/commit', isAdminMovieMutationResponse, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ ...form, brand: form.brandId, id: movie.id, baseSha }) }); setMessage(payload.message || 'Movie updated.'); setMovie(null); await search(); }
     catch (saveError) { setError(saveError instanceof Error ? saveError.message : 'Movie could not be updated.'); }
     finally { setBusy(false); }
   };
@@ -62,15 +131,16 @@ export const AdminMoviesPage: React.FC<Props> = ({ onNavigate }) => {
   const remove = async () => {
     if (!movie || !deleteReady) return;
     setBusy(true); setError('');
-    try { const payload = await request('/api/admin/movies/delete', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ id: movie.id, baseSha, confirm: true }) }); setMessage(payload.message || 'Movie deleted.'); setMovie(null); setDeleteReady(false); await search(); }
+    try { const payload = await request('/api/admin/movies/delete', isAdminMovieMutationResponse, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ id: movie.id, baseSha, confirm: true }) }); setMessage(payload.message || 'Movie deleted.'); setMovie(null); setDeleteReady(false); await search(); }
     catch (deleteError) { setError(deleteError instanceof Error ? deleteError.message : 'Movie could not be deleted.'); }
     finally { setBusy(false); }
   };
 
-  const changed = movie ? [...fields.map(([key, label]) => [key, label] as const), ['synopsis', 'Synopsis'] as const, ['writers', 'Writers'] as const].filter(([key]) => String(form[key] ?? '') !== String(key === 'writers' ? movie.writers.join('\n') : (movie as any)[key] ?? '')).map(([, label]) => label) : [];
+  const changedFields: readonly (readonly [FormField, string])[] = [...fields, ['synopsis', 'Synopsis'], ['writers', 'Writers']];
+  const changed = movie ? changedFields.filter(([key]) => String(form[key] ?? '') !== (key === 'writers' ? movie.writers.join('\n') : String(movie[key] ?? ''))).map(([, label]) => label) : [];
 
   return <section className="py-10 sm:py-14" aria-labelledby="admin-movies-heading"><div className="mx-auto max-w-4xl">
-    <div className="flex flex-wrap items-end justify-between gap-4 border-b border-[#E7DFD5] pb-6"><div><h1 id="admin-movies-heading" className="font-heading text-2xl font-semibold tracking-wide text-[#1A3D2F] sm:text-3xl">MOVIES</h1><p className="mt-3 text-sm leading-6 text-[#736B63]">Search and manage the canonical XmasDB movie catalogue.</p></div><nav className="flex flex-wrap gap-4 text-xs font-semibold tracking-wide" aria-label="Admin navigation"><button type="button" onClick={() => onNavigate('/admin/submissions/')} className="text-[#1A3D2F] underline underline-offset-4">SUBMISSIONS</button><button type="button" onClick={() => onNavigate('/admin/feed-statistics/')} className="text-[#1A3D2F] underline underline-offset-4">FEED STATISTICS</button><button type="button" onClick={() => onNavigate('/admin/movies/add/')} className="text-[#1A3D2F] underline underline-offset-4">ADD MOVIES</button><button type="button" onClick={() => void request('/api/admin/logout', { method: 'POST' }).then(() => onNavigate('/admin/login/'))} className="text-[#1A3D2F] underline underline-offset-4">LOG OUT</button></nav></div>
+    <div className="flex flex-wrap items-end justify-between gap-4 border-b border-[#E7DFD5] pb-6"><div><h1 id="admin-movies-heading" className="font-heading text-2xl font-semibold tracking-wide text-[#1A3D2F] sm:text-3xl">MOVIES</h1><p className="mt-3 text-sm leading-6 text-[#736B63]">Search and manage the canonical XmasDB movie catalogue.</p></div><nav className="flex flex-wrap gap-4 text-xs font-semibold tracking-wide" aria-label="Admin navigation"><button type="button" onClick={() => onNavigate('/admin/submissions/')} className="text-[#1A3D2F] underline underline-offset-4">SUBMISSIONS</button><button type="button" onClick={() => onNavigate('/admin/feed-statistics/')} className="text-[#1A3D2F] underline underline-offset-4">FEED STATISTICS</button><button type="button" onClick={() => onNavigate('/admin/movies/add/')} className="text-[#1A3D2F] underline underline-offset-4">ADD MOVIES</button><button type="button" onClick={() => void request('/api/admin/logout', isAdminMovieMutationResponse, { method: 'POST' }).then(() => onNavigate('/admin/login/'))} className="text-[#1A3D2F] underline underline-offset-4">LOG OUT</button></nav></div>
     {error && <p className="mt-5 border-l-2 border-[#841818] bg-[#F7F2EB] px-4 py-3 text-sm text-[#841818]" role="alert">{error}</p>}{message && <p className="mt-5 border-l-2 border-[#1A3D2F] bg-[#F7F2EB] px-4 py-3 text-sm text-[#1A3D2F]" role="status">{message}</p>}
     {!movie ? <><form className="mt-7 flex gap-3" onSubmit={(event) => { event.preventDefault(); void search(); }}><label htmlFor="admin-movie-search" className="sr-only">Search movies by title</label><input id="admin-movie-search" value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Search movie titles" className="min-w-0 flex-1 rounded border border-[#DCD3C7] bg-[#FFFDF9] px-3 py-2.5 outline-none focus:border-[#1A3D2F]" /><button type="submit" disabled={busy} className="rounded border border-[#1A3D2F] bg-[#1A3D2F] px-4 py-2 text-sm font-semibold text-[#FAF7F2] disabled:opacity-50">SEARCH</button></form><div className="mt-6 divide-y divide-[#E7DFD5] border-t border-[#E7DFD5]">{results.map((entry) => <button key={entry.id} type="button" onClick={() => void openMovie(entry.id)} className="block w-full py-4 text-left hover:bg-[#F7F2EB]"><span className="font-heading text-lg font-semibold text-[#1A3D2F]">{entry.title}</span><span className="mt-1 block text-sm text-[#736B63]">{entry.year} · {displayNetwork(entry.network)} · TMDb {entry.tmdbId}</span></button>)}{!results.length && <p className="py-8 text-sm text-[#736B63]">No movies found.</p>}</div></> : <div className="mt-7">
       <button type="button" onClick={() => setMovie(null)} className="text-sm font-semibold text-[#1A3D2F] underline">← Back to movies</button><h2 className="mt-5 font-heading text-xl font-semibold text-[#1A3D2F]">EDIT MOVIE</h2><p className="mt-2 text-sm text-[#736B63]">{movie.title} · {movie.year} · {displayNetwork(movie.brandId)} · ID preserved: {movie.id}</p>

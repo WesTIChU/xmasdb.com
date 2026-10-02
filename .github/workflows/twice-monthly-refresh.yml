@@ -72,7 +72,7 @@ jobs:
         run: |
           npm run audit:local
           npm test
-          npm run lint
+          npm run typecheck
 
       - name: Persist refreshed catalogue and artwork
         run: |

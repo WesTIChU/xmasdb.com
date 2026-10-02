@@ -43,7 +43,7 @@ The site is served at `http://localhost:3000`.
 ## Checks and Production Build
 
 ```bash
-npm run lint
+npm run typecheck
 npm test
 npm run build
 npm start
