@@ -14,6 +14,7 @@ import {
   buildPrivacySeo,
   buildActorSeo,
   buildBrandSeo,
+  buildBirthdaysSeo,
   buildFeedsSeo,
   buildHomeSeo,
   buildMoviesSeo,
@@ -58,6 +59,10 @@ assert.match(buildAboutSeo().title, /Why I Built the Christmas Movie Database/);
 assert.equal(buildAboutSeo().canonicalPath, '/about/');
 assert.match(buildContactSeo().title, /Contact XmasDB/);
 assert.equal(buildContactSeo().canonicalPath, '/contact/');
+assert.equal(buildBirthdaysSeo().canonicalUrl, 'https://xmasdb.com/birthdays');
+assert.match(buildBirthdaysSeo().title, /Christmas Star Birthdays/);
+assert.match(buildBirthdaysSeo().description, /Hallmark and Christmas movie stars/);
+assert.ok(Array.isArray(buildBirthdaysSeo().schema));
 assert.match(buildPrivacySeo().title, /Privacy & AI/);
 assert.equal(buildPrivacySeo().canonicalPath, '/privacy/');
 
@@ -78,6 +83,9 @@ assert.equal(getServerSeo('/privacy/').canonicalPath, '/privacy/');
 assert.equal(getCanonicalRedirect('/privacy'), '/privacy/');
 assert.equal(getServerSeo('/contact/').canonicalPath, '/contact/');
 assert.equal(getCanonicalRedirect('/contact'), '/contact/');
+assert.equal(getServerSeo('/birthdays').canonicalUrl, 'https://xmasdb.com/birthdays');
+assert.equal(getServerSeo('/birthdays', '?month=10&q=lacey&sort=name').canonicalUrl, 'https://xmasdb.com/birthdays');
+assert.equal(getCanonicalRedirect('/birthdays/'), '/birthdays');
 assert.equal(getServerSeo('/year/9999/').noIndex, true);
 assert.equal(getServerSeo('/hallmark/9999/').noIndex, true);
 
@@ -120,6 +128,24 @@ assert.match(actorHtml, /__XMASDB_ROUTE__/);
 assert.match(actorHtml, /\/api\/actor\/65220\/danica-mckellar/);
 assert.doesNotMatch(actorHtml, /Actor not found|Loading\.\.\.|No actor found/);
 
+const birthdaysHtml = renderServerHtml(serverShell, '/birthdays', '?month=10&q=lacey');
+assert.equal((birthdaysHtml.match(/<h1\b/g) || []).length, 1);
+assert.match(birthdaysHtml, /<h1>Christmas Star Birthdays<\/h1>/);
+assert.match(birthdaysHtml, /Discover the birthdays of Hallmark and Christmas movie stars/);
+assert.match(birthdaysHtml, /href="\/actor\/\d+\/[^\"]+"/);
+assert.match(birthdaysHtml, /name="description"/);
+assert.match(birthdaysHtml, /property="og:type" content="website"/);
+assert.match(birthdaysHtml, /property="og:url" content="https:\/\/xmasdb\.com\/birthdays"/);
+assert.match(birthdaysHtml, /name="twitter:card" content="summary_large_image"/);
+assert.match(birthdaysHtml, /rel="canonical" href="https:\/\/xmasdb\.com\/birthdays"/);
+const birthdaysSchemaMatch = birthdaysHtml.match(/<script id="schema-json-ld" type="application\/ld\+json">([\s\S]*?)<\/script>/);
+assert.ok(birthdaysSchemaMatch);
+const birthdaysSchema = JSON.parse(birthdaysSchemaMatch![1]);
+assert.equal(birthdaysSchema[0]['@type'], 'CollectionPage');
+assert.equal(birthdaysSchema[0].url, 'https://xmasdb.com/birthdays');
+assert.equal(birthdaysSchema[1]['@type'], 'BreadcrumbList');
+assert.deepEqual(birthdaysSchema[1].itemListElement.map((item: { name: string }) => item.name), ['Home', 'Birthdays']);
+
 const moviePath = getMoviePath(movie.tmdbId, movie.slug);
 const movieHtml = renderServerHtml(serverShell, moviePath);
 const publicMovieImage = resolveImageUrl(movie.posterUrl)!;
@@ -143,7 +169,7 @@ assert.match(movieHtml, /\/api\/movie\/\d+\/[^"<]+/);
 
 const htmlServer = createServer((request, response) => {
   const pathname = new URL(request.url || '/', 'http://localhost').pathname;
-  response.statusCode = pathname === danicaPath || pathname === moviePath ? 200 : 404;
+  response.statusCode = pathname === danicaPath || pathname === moviePath || pathname === '/birthdays' ? 200 : 404;
   response.setHeader('Content-Type', 'text/html; charset=utf-8');
   response.end(response.statusCode === 200 ? renderServerHtml(serverShell, pathname) : 'Not found');
 });
@@ -152,7 +178,7 @@ const address = htmlServer.address();
 assert.ok(address && typeof address === 'object');
 const baseUrl = `http://127.0.0.1:${address.port}`;
 try {
-  for (const [path, expectedText] of [[danicaPath, 'Danica McKellar'], [moviePath, movie.title]] as const) {
+  for (const [path, expectedText] of [[danicaPath, 'Danica McKellar'], [moviePath, movie.title], ['/birthdays', 'Christmas Star Birthdays']] as const) {
     const response = await fetch(`${baseUrl}${path}`);
     const body = await response.text();
     assert.equal(response.status, 200, `${path} should be indexable over HTTP`);
@@ -182,6 +208,7 @@ const representativeSeoPaths = [
   '/year/2025/',
   '/movies/',
   '/feeds/',
+  '/birthdays',
   '/about/',
   '/contact/',
   '/privacy/',
@@ -216,6 +243,7 @@ assert.match(sitemap, new RegExp(`https://xmasdb\\.com${getActorPath(actor.tmdbP
 assert.match(sitemap, /https:\/\/xmasdb\.com\/hallmark\//);
 assert.match(sitemap, /https:\/\/xmasdb\.com\/year\/2025\//);
 assert.match(sitemap, new RegExp(`https://xmasdb\\.com${getFeedsPath()}`));
+assert.match(sitemap, /https:\/\/xmasdb\.com\/birthdays/);
 assert.match(sitemap, /https:\/\/xmasdb\.com\/about\//);
 assert.match(sitemap, /https:\/\/xmasdb\.com\/privacy\//);
 assert.match(sitemap, /https:\/\/xmasdb\.com\/contact\//);

@@ -52,7 +52,7 @@ import { getFingerprintCatalogueStats, readFingerprintStatus } from './src/serve
 
 function isKnownPagePath(rawPath: string): boolean {
   const clean = rawPath.replace(/^\/+|\/+$/g, '');
-  if (!clean || clean === 'movies' || clean === 'all' || clean === 'feeds' || clean === 'about' || clean === 'privacy' || clean === 'contact' || (clean === 'api' && PUBLIC_API_ENABLED)) return true;
+  if (!clean || clean === 'movies' || clean === 'all' || clean === 'feeds' || clean === 'birthdays' || clean === 'about' || clean === 'privacy' || clean === 'contact' || (clean === 'api' && PUBLIC_API_ENABLED)) return true;
   if (clean === 'admin/login' || clean === 'admin/submissions' || clean === 'admin/feed-statistics' || clean === 'admin/movies/add' || clean === 'admin/movies' || clean.startsWith('admin/movies/')) return true;
   const fingerprintMatch = clean.match(/^fingerprint\/([^/]+)$/i);
   if (fingerprintMatch) return Boolean(getFingerprintById(fingerprintMatch[1]));

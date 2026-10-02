@@ -42,3 +42,18 @@ export function sortBirthdays(actors: BirthdayActor[]): BirthdayActor[] {
 export function upcomingBirthdays(actors: BirthdayActor[], referenceDate: Date = new Date(), limit = 6): BirthdayActor[] {
   return [...actors].sort((left, right) => (birthdayDistance(left.birthday, referenceDate) ?? Infinity) - (birthdayDistance(right.birthday, referenceDate) ?? Infinity) || left.name.localeCompare(right.name)).slice(0, limit);
 }
+
+export function getHomepageBirthdayGroups(actors: BirthdayActor[], referenceDate: Date = new Date()): {
+  today: BirthdayActor[];
+  tomorrow: BirthdayActor[];
+  comingUp: BirthdayActor[];
+} {
+  const today = actors.filter((actor) => birthdayDistance(actor.birthday, referenceDate) === 0);
+  const tomorrow = actors.filter((actor) => birthdayDistance(actor.birthday, referenceDate) === 1);
+  const comingUp = upcomingBirthdays(
+    actors.filter((actor) => (birthdayDistance(actor.birthday, referenceDate) ?? Infinity) > 1),
+    referenceDate,
+    5,
+  );
+  return { today, tomorrow, comingUp };
+}

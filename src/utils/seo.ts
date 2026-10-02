@@ -8,6 +8,7 @@ export interface SeoDocument {
   title: string;
   description: string;
   canonicalPath?: string;
+  canonicalUrl?: string;
   image?: string;
   ogType?: 'website' | 'article';
   noIndex?: boolean;
@@ -249,10 +250,30 @@ export function buildFeedsSeo(): SeoDocument {
 }
 
 export function buildBirthdaysSeo(): SeoDocument {
+  const description = 'Discover the birthdays of Hallmark and Christmas movie stars. Browse actors by birthday, month and name, and explore their Christmas movies on XmasDB.';
+  const canonicalUrl = `${SITE_ORIGIN}/birthdays`;
+  const collectionPage: Record<string, unknown> = {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    name: 'Christmas Star Birthdays',
+    description,
+    url: canonicalUrl,
+    isPartOf: {
+      '@type': 'WebSite',
+      name: 'XmasDB',
+      url: `${SITE_ORIGIN}/`,
+    },
+  };
   return {
-    title: 'Christmas Star Birthdays | XmasDB',
-    description: 'Browse the birthdays of actors from the XmasDB Christmas movie catalogue.',
-    canonicalPath: '/birthdays/',
+    title: 'Christmas Star Birthdays - Hallmark & Christmas Movie Actors | XmasDB',
+    description,
+    canonicalPath: '/birthdays',
+    canonicalUrl,
+    image: '/logo-1100.webp',
+    schema: withBreadcrumbs(collectionPage, [
+      { name: 'Home', path: '/' },
+      { name: 'Birthdays', path: '/birthdays' },
+    ]),
   };
 }
 
@@ -338,7 +359,7 @@ function setMeta(document: Document, selector: string, attribute: string, value:
 
 export function updateSeoTags(seo: SeoDocument): void {
   if (typeof document === 'undefined') return;
-  const canonical = seo.canonicalPath ? toCanonicalUrl(seo.canonicalPath) : undefined;
+  const canonical = seo.canonicalUrl || (seo.canonicalPath ? toCanonicalUrl(seo.canonicalPath) : undefined);
   document.title = seo.title;
   setMeta(document, 'meta[name="description"]', 'name', seo.description);
   setMeta(document, 'meta[name="robots"]', 'name', seo.noIndex ? 'noindex,follow' : 'index,follow,max-image-preview:large');

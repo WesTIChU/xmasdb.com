@@ -253,6 +253,7 @@ export function getSitemapXml(): string {
   urls.push({ loc: `${SITE_ORIGIN}/privacy/`, changefreq: 'monthly', priority: '0.5' });
   urls.push({ loc: `${SITE_ORIGIN}/contact/`, changefreq: 'monthly', priority: '0.5' });
   urls.push({ loc: `${SITE_ORIGIN}${getMoviesPath()}`, changefreq: 'daily', priority: '0.9' });
+  urls.push({ loc: `${SITE_ORIGIN}/birthdays`, changefreq: 'weekly', priority: '0.7' });
 
   // 2. Network catalogues
   for (const b of getPopulatedBrands(MOVIES)) {

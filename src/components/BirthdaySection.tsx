@@ -3,7 +3,7 @@ import type { BirthdayActor } from '../api/types';
 import { getActorPath } from '../utils/urls';
 import { getHomepageActorSrcSet } from '../utils/homepage-images';
 import { resolveImageUrl } from '../utils/image-url';
-import { ageOnBirthday, birthdayDistance, parseBirthday } from '../utils/birthdays';
+import { ageOnBirthday, getHomepageBirthdayGroups, parseBirthday } from '../utils/birthdays';
 import { NavigationLink } from './NavigationLink';
 import { HollyDivider } from './HollyDivider';
 
@@ -29,11 +29,8 @@ export const BirthdayCard: React.FC<{ actor: BirthdayActor; onNavigate: (path: s
 };
 
 export const BirthdaySection: React.FC<{ actors: BirthdayActor[]; onNavigate: (path: string) => void }> = ({ actors, onNavigate }) => {
-  const upcoming = actors.slice(0, 10);
-  if (upcoming.length === 0) return null;
-  const today = upcoming.filter((actor) => birthdayDistance(actor.birthday) === 0);
-  const tomorrow = upcoming.filter((actor) => birthdayDistance(actor.birthday) === 1);
-  const later = upcoming.filter((actor) => { const distance = birthdayDistance(actor.birthday); return distance !== null && distance > 1; });
+  const { today, tomorrow, comingUp } = getHomepageBirthdayGroups(actors);
+  if (today.length === 0 && tomorrow.length === 0 && comingUp.length === 0) return null;
   const linkActor = (actor: BirthdayActor) => {
     const path = getActorPath(actor.tmdbPersonId, actor.slug);
     return <a href={path} onClick={(event) => { event.preventDefault(); onNavigate(path); }} className="font-semibold text-[#1A3D2F] underline decoration-[#B8860B]/50 underline-offset-2 hover:text-[#841818]">{actor.name}</a>;
@@ -52,7 +49,7 @@ export const BirthdaySection: React.FC<{ actors: BirthdayActor[]; onNavigate: (p
     <div className="grid gap-5 border-y border-[#E7DFD5] py-4 md:grid-cols-3 md:gap-0">
       {group('Today', today, false, 'md:pr-6')}
       {group('Tomorrow', tomorrow, false, 'border-t border-[#E7DFD5] pt-4 md:border-l md:border-t-0 md:px-6 md:pt-0')}
-      {group('Coming up', later, true, 'border-t border-[#E7DFD5] pt-4 md:border-l md:border-t-0 md:pl-6 md:pt-0')}
+      {group('Coming up', comingUp, true, 'border-t border-[#E7DFD5] pt-4 md:border-l md:border-t-0 md:pl-6 md:pt-0')}
     </div>
     <HollyDivider className="homepage-holly-divider" lineClassName="w-6 sm:w-8" ornamentClassName="h-4 w-12 sm:h-5 sm:w-14" />
   </section>;

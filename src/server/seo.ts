@@ -4,7 +4,7 @@ import { getBrandBySlug } from '../data/brands';
 import { buildAboutPayload, buildActorDetail, buildBirthdaysPayload, buildCatalogueListing, buildCatalogueMeta, buildFeedsMeta, buildHomePayload, buildMovieDetail } from './catalogue-api';
 import { getBrandById } from '../data/brands';
 import { parseCatalogueQuery } from '../utils/catalogue-pagination';
-import { buildAboutSeo, buildActorSeo, buildApiSeo, buildBrandSeo, buildContactSeo, buildFeedsSeo, buildHomeSeo, buildMoviesSeo, buildMovieSeo, buildNotFoundSeo, buildPrivacySeo, buildYearSeo, type SeoDocument } from '../utils/seo';
+import { buildAboutSeo, buildActorSeo, buildApiSeo, buildBirthdaysSeo, buildBrandSeo, buildContactSeo, buildFeedsSeo, buildHomeSeo, buildMoviesSeo, buildMovieSeo, buildNotFoundSeo, buildPrivacySeo, buildYearSeo, type SeoDocument } from '../utils/seo';
 import { getActorPath, getFingerprintPath, getMoviePath, toCanonicalUrl } from '../utils/urls';
 import { getFingerprintById } from '../data/fingerprints';
 import { buildFingerprintListing } from './catalogue-api';
@@ -35,6 +35,7 @@ export function getServerSeo(pathname: string, search = ''): SeoDocument {
     return { ...buildMoviesSeo(buildCatalogueMeta().totalMovies), noIndex: Boolean(search) };
   }
   if (clean === 'feeds') return buildFeedsSeo();
+  if (clean === 'birthdays') return buildBirthdaysSeo();
   if (clean === 'about') return buildAboutSeo();
   if (clean === 'privacy') return buildPrivacySeo();
   if (clean === 'contact') return buildContactSeo();
@@ -111,6 +112,7 @@ export function getCanonicalRedirect(pathname: string): string | null {
   }
   if (clean === 'movies' || clean === 'all') return pathname === '/movies/' ? null : '/movies/';
   if (clean === 'feeds') return pathname === '/feeds/' ? null : '/feeds/';
+  if (clean === 'birthdays') return pathname === '/birthdays' ? null : '/birthdays';
   if (clean === 'about') return pathname === '/about/' ? null : '/about/';
   if (clean === 'privacy') return pathname === '/privacy/' ? null : '/privacy/';
   if (clean === 'contact') return pathname === '/contact/' ? null : '/contact/';
@@ -185,6 +187,13 @@ function renderActorContent(pathname: string): string {
   return `<main id="server-rendered-content"><article><h1>${escapeHtml(actor.name)}</h1>${actor.biography ? `<p>${renderText(actor.biography)}</p>` : ''}<dl>${facts}</dl><h2>Christmas movie filmography</h2>${renderCredits('Acting', payload.actingFilmography)}${renderCredits('Directing', payload.directingFilmography)}${renderCredits('Writing', payload.writingFilmography)}</article></main>`;
 }
 
+function renderBirthdaysContent(pathname: string): string {
+  if (routePath(pathname) !== 'birthdays') return '';
+  const actors = buildBirthdaysPayload().actors.slice(0, 24);
+  const links = actors.map((actor) => `<li><a href="${escapeHtml(getActorPath(actor.tmdbPersonId, actor.slug))}">${escapeHtml(actor.name)}</a> (${escapeHtml(actor.birthday)})</li>`).join('');
+  return `<main id="server-rendered-content"><article><h1>Christmas Star Birthdays</h1><p>Discover the birthdays of Hallmark and Christmas movie stars. Browse actors by birthday, month and name, and explore their Christmas movies on XmasDB.</p><h2>Browse Birthdays</h2><ul>${links}</ul></article></main>`;
+}
+
 function withQueryValues(search: string, values: Record<string, string>): string {
   const params = new URLSearchParams(search);
   Object.entries(values).forEach(([key, value]) => params.set(key, value));
@@ -252,6 +261,7 @@ function renderRouteContent(pathname: string, payload: unknown): string {
     const movies = data.movies.slice(0, 24).map((movie) => `<li><a href="${escapeHtml(getMoviePath(movie.tmdbId, movie.slug))}">${escapeHtml(movie.title)}</a> (${movie.year})</li>`).join('');
     return `<main id="server-rendered-content"><article><h1>Christmas movies with: ${escapeHtml(fingerprint.label)}</h1><p>${data.total || 0} matching Christmas movies.</p><ul>${movies}</ul></article></main>`;
   }
+  if (clean === 'birthdays') return renderBirthdaysContent(pathname);
   if (clean === 'feeds') return '<main id="server-rendered-content"><article><h1>Christmas Movie Feeds for Radarr</h1><p>Curated Christmas movie JSON feeds for Radarr, including Hallmark, Lifetime, Great American Family and UPtv.</p><h2>Christmas Movie JSON Feeds</h2><ul><li>All movies</li><li>Hallmark, Lifetime, GAF and UPtv networks</li><li>Year and actor feeds</li></ul></article></main>';
   if (clean === 'about') return '<main id="server-rendered-content"><article><h1>Why I Built the Christmas Movie Database</h1><p>XmasDB is a curated Christmas movie database covering holiday films, networks and actors.</p></article></main>';
   if (clean === 'privacy') return '<main id="server-rendered-content"><article><h1>Privacy &amp; AI</h1><p>XmasDB explains how this site handles privacy, analytics and AI-assisted catalogue work.</p></article></main>';
@@ -261,7 +271,7 @@ function renderRouteContent(pathname: string, payload: unknown): string {
 }
 
 export function renderServerContent(pathname: string): string {
-  return renderActorContent(pathname) || renderMovieContent(pathname);
+  return renderActorContent(pathname) || renderMovieContent(pathname) || renderBirthdaysContent(pathname);
 }
 
 function renderMeta(name: string, content: string, property = false): string {
@@ -271,7 +281,7 @@ function renderMeta(name: string, content: string, property = false): string {
 export function injectSeoIntoHtml(html: string, seo: SeoDocument): string {
   const managed = /\s*(?:<title>[\s\S]*?<\/title>|<meta\s+(?:name|property)="(?:description|robots|og:[^"]+|twitter:[^"]+)"[^>]*\/>|<link\s+rel="canonical"[^>]*\/>|<script\s+id="schema-json-ld"[^>]*>[\s\S]*?<\/script>)/gi;
   const cleaned = html.replace(managed, '');
-  const canonical = seo.canonicalPath ? toCanonicalUrl(seo.canonicalPath) : undefined;
+  const canonical = seo.canonicalUrl || (seo.canonicalPath ? toCanonicalUrl(seo.canonicalPath) : undefined);
   const jsonLd = seo.schema ? JSON.stringify(seo.schema).replace(/</g, '\\u003c') : '';
   const tags = [
     `<title>${escapeHtml(seo.title)}</title>`,

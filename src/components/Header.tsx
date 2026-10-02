@@ -48,7 +48,6 @@ export const Header: React.FC<HeaderProps> = ({
   const isFeedsActive = () => {
     return normalizedPath.startsWith('/feeds/');
   };
-
   const BrandingTag = normalizedPath === '/' ? 'h1' : 'div';
 
   return (
@@ -142,7 +141,7 @@ export const Header: React.FC<HeaderProps> = ({
 
           <span className="text-[#C8BFB3] select-none text-xs sm:text-sm px-1">|</span>
 
-          {/* Feeds */}
+           {/* Feeds */}
           <a
             href={getFeedsPath()}
             onClick={(e) => {
