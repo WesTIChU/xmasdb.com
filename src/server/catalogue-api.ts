@@ -40,7 +40,7 @@ import type {
   BirthdayActor,
   BirthdaysPayload,
 } from '../api/types';
-import { parseBirthday, sortBirthdays, upcomingBirthdays } from '../utils/birthdays';
+import { birthdayDistance, parseBirthday, sortBirthdays, upcomingBirthdays } from '../utils/birthdays';
 import { scoreActorSearchResult, scoreIngredientSearchResult, scoreMovieSearchFields } from '../utils/search-relevance';
 import { getCreativeCrew, getPersonSlug, isCreativeCrewJob } from '../utils/creative-crew';
 import { FINGERPRINTS, getFingerprintById } from '../data/fingerprints';
@@ -604,7 +604,21 @@ export function buildHomePayload(now: Date = new Date()): HomePayload {
     if (actors.length > 0) popularActors.push({ brandId: brand.id, actors });
   }
 
-  const birthdays = upcomingBirthdays(buildBirthdaysPayload().actors, now, 10);
+  const birthdayActors = buildBirthdaysPayload().actors;
+  const birthdays = [
+    ...birthdayActors.filter((actor) => {
+      const distance = birthdayDistance(actor.birthday, now);
+      return distance === 0 || distance === 1;
+    }),
+    ...upcomingBirthdays(
+      birthdayActors.filter((actor) => {
+        const distance = birthdayDistance(actor.birthday, now);
+        return distance !== null && distance > 1;
+      }),
+      now,
+      5,
+    ),
+  ].sort((left, right) => (birthdayDistance(left.birthday, now) ?? Infinity) - (birthdayDistance(right.birthday, now) ?? Infinity) || left.name.localeCompare(right.name));
 
   const payload = {
     totalMovies: MOVIES.length,
