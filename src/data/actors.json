@@ -852,6 +852,24 @@
     "tmdbUpdatedAt": "2026-09-20T16:16:38.203Z"
   },
   {
+    "id": "131252",
+    "slug": "adam-huss",
+    "name": "Adam Huss",
+    "tmdbPersonId": 131252,
+    "photoUrl": "/images/people/131252.webp",
+    "profileUrl": "/images/people/131252.webp",
+    "birthday": "1977-03-01",
+    "placeOfBirth": "Long Island, New York, USA",
+    "biography": "Adam Huss (born March 1, 1977) is an American television and film actor, producer and writer. Huss is best known for his role as Josh Kantos in the Starz TV series Power and as Lance on The Bold and the Beautiful. He was also an on-air radio personality \"Big City Kid\" or \"BCK\" on Radio Disney affiliate.\n\nDescription above from the Wikipedia article Adam Huss, licensed under CC-BY-SA, full list of contributors on Wikipedia.",
+    "imdbPersonId": "nm0403937",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 67,
+    "twitterId": "adamthuss",
+    "tmdbUpdatedAt": "2026-10-02T05:55:59.770Z",
+    "tmdbFetchedAt": "2026-10-02T05:55:59.770Z"
+  },
+  {
     "id": "adam-johnson",
     "slug": "adam-johnson",
     "name": "Adam Johnson",
@@ -8530,6 +8548,16 @@
     "tmdbUpdatedAt": "2026-09-20T16:19:49.612Z"
   },
   {
+    "id": "4455905",
+    "slug": "anthony-r-griffin-jr",
+    "name": "Anthony R. Griffin Jr.",
+    "tmdbPersonId": 4455905,
+    "knownForDepartment": "Acting",
+    "knownCredits": 2,
+    "tmdbUpdatedAt": "2026-10-02T05:55:58.910Z",
+    "tmdbFetchedAt": "2026-10-02T05:55:58.910Z"
+  },
+  {
     "id": "anthony-sherwood",
     "slug": "anthony-sherwood",
     "name": "Anthony Sherwood",
@@ -13888,6 +13916,16 @@
     "tmdbUpdatedAt": "2026-09-20T16:17:46.876Z"
   },
   {
+    "id": "6279806",
+    "slug": "brady-leonard",
+    "name": "Brady Leonard",
+    "tmdbPersonId": 6279806,
+    "knownForDepartment": "Acting",
+    "knownCredits": 2,
+    "tmdbUpdatedAt": "2026-10-02T05:55:59.218Z",
+    "tmdbFetchedAt": "2026-10-02T05:55:59.218Z"
+  },
+  {
     "id": "braeden-michael-baldwin",
     "slug": "braeden-michael-baldwin",
     "name": "Braeden Michael Baldwin",
@@ -18754,6 +18792,23 @@
     "tmdbUpdatedAt": "2026-09-20T16:19:53.468Z"
   },
   {
+    "id": "230038",
+    "slug": "caroline-raynaud",
+    "name": "Caroline Raynaud",
+    "tmdbPersonId": 230038,
+    "photoUrl": "/images/people/230038.webp",
+    "profileUrl": "/images/people/230038.webp",
+    "biography": "Caroline Raynaud is a French actress",
+    "imdbPersonId": "nm2515017",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 21,
+    "instagramId": "cekicaro",
+    "facebookId": "RaynaudCaroline",
+    "tmdbUpdatedAt": "2026-10-02T05:55:57.127Z",
+    "tmdbFetchedAt": "2026-10-02T05:55:57.127Z"
+  },
+  {
     "id": "caroline-rhea",
     "slug": "caroline-rhea",
     "name": "Caroline Rhea",
@@ -18917,6 +18972,20 @@
     "knownForDepartment": "Acting",
     "knownCredits": 8,
     "tmdbUpdatedAt": "2026-09-20T16:17:27.124Z"
+  },
+  {
+    "id": "1147391",
+    "slug": "carrie-schiffler",
+    "name": "Carrie Schiffler",
+    "tmdbPersonId": 1147391,
+    "photoUrl": "/images/people/1147391.webp",
+    "profileUrl": "/images/people/1147391.webp",
+    "imdbPersonId": "nm0771522",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 22,
+    "tmdbUpdatedAt": "2026-10-02T05:55:57.230Z",
+    "tmdbFetchedAt": "2026-10-02T05:55:57.230Z"
   },
   {
     "id": "967540",
@@ -19422,6 +19491,16 @@
     "knownForDepartment": "Acting",
     "knownCredits": 20,
     "tmdbUpdatedAt": "2026-09-20T16:18:18.887Z"
+  },
+  {
+    "id": "5967059",
+    "slug": "cat-nelson",
+    "name": "Cat Nelson",
+    "tmdbPersonId": 5967059,
+    "knownForDepartment": "Acting",
+    "knownCredits": 2,
+    "tmdbUpdatedAt": "2026-10-02T05:55:55.923Z",
+    "tmdbFetchedAt": "2026-10-02T05:55:55.923Z"
   },
   {
     "id": "catey-oakley",
@@ -21668,6 +21747,16 @@
     "knownForDepartment": "Acting",
     "knownCredits": 8,
     "tmdbUpdatedAt": "2026-09-20T16:19:12.753Z"
+  },
+  {
+    "id": "5974992",
+    "slug": "chole-clements",
+    "name": "Chole Clements",
+    "tmdbPersonId": 5974992,
+    "knownForDepartment": "Acting",
+    "knownCredits": 2,
+    "tmdbUpdatedAt": "2026-10-02T05:55:58.789Z",
+    "tmdbFetchedAt": "2026-10-02T05:55:58.789Z"
   },
   {
     "id": "chonda-pierce",
@@ -25082,6 +25171,21 @@
     "knownForDepartment": "Acting",
     "knownCredits": 8,
     "tmdbUpdatedAt": "2026-09-20T16:17:12.841Z"
+  },
+  {
+    "id": "3699897",
+    "slug": "conor-marsh",
+    "name": "Conor Marsh",
+    "tmdbPersonId": 3699897,
+    "photoUrl": "/images/people/3699897.webp",
+    "profileUrl": "/images/people/3699897.webp",
+    "imdbPersonId": "nm9384996",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 6,
+    "instagramId": "conormarsh",
+    "tmdbUpdatedAt": "2026-10-02T05:56:00.087Z",
+    "tmdbFetchedAt": "2026-10-02T05:56:00.087Z"
   },
   {
     "id": "conor-mullen",
@@ -36070,9 +36174,10 @@
     "imdbPersonId": "nm0665679",
     "gender": "Female",
     "knownForDepartment": "Acting",
-    "knownCredits": 28,
+    "knownCredits": 29,
     "twitterId": "ellorapatnaik",
-    "tmdbUpdatedAt": "2026-09-20T16:18:44.286Z"
+    "tmdbUpdatedAt": "2026-10-02T05:55:57.131Z",
+    "tmdbFetchedAt": "2026-10-02T05:55:57.131Z"
   },
   {
     "id": "eloise-mumford",
@@ -45976,6 +46081,16 @@
     "tmdbUpdatedAt": "2026-09-20T16:18:53.175Z"
   },
   {
+    "id": "5682410",
+    "slug": "holly-griffin",
+    "name": "Holly Griffin",
+    "tmdbPersonId": 5682410,
+    "knownForDepartment": "Art",
+    "knownCredits": 2,
+    "tmdbUpdatedAt": "2026-10-02T05:55:58.956Z",
+    "tmdbFetchedAt": "2026-10-02T05:55:58.956Z"
+  },
+  {
     "id": "holly-hayes",
     "slug": "holly-hayes",
     "name": "Holly Hayes",
@@ -53411,6 +53526,23 @@
     "tmdbFetchedAt": "2026-09-25T18:44:21.765Z"
   },
   {
+    "id": "2687816",
+    "slug": "jennifer-tocheri",
+    "name": "Jennifer Tocheri",
+    "tmdbPersonId": 2687816,
+    "photoUrl": "/images/people/2687816.webp",
+    "profileUrl": "/images/people/2687816.webp",
+    "imdbPersonId": "nm2793037",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 4,
+    "alsoKnownAs": [
+      "Jennifer Tochen"
+    ],
+    "tmdbUpdatedAt": "2026-10-02T05:55:57.690Z",
+    "tmdbFetchedAt": "2026-10-02T05:55:57.690Z"
+  },
+  {
     "id": "jennifer-vallance",
     "slug": "jennifer-vallance",
     "name": "Jennifer Vallance",
@@ -54415,6 +54547,17 @@
     "instagramId": "jessicanoelleharmon",
     "twitterId": "harmon_jess",
     "tmdbUpdatedAt": "2026-09-20T16:19:02.265Z"
+  },
+  {
+    "id": "2095666",
+    "slug": "jessica-hood",
+    "name": "Jessica Hood",
+    "tmdbPersonId": 2095666,
+    "imdbPersonId": "nm8990588",
+    "knownForDepartment": "Acting",
+    "knownCredits": 2,
+    "tmdbUpdatedAt": "2026-10-02T05:55:59.050Z",
+    "tmdbFetchedAt": "2026-10-02T05:55:59.050Z"
   },
   {
     "id": "jessica-horton",
@@ -55583,6 +55726,16 @@
       "Joan Mary Cusack"
     ],
     "tmdbUpdatedAt": "2026-09-20T16:18:52.694Z"
+  },
+  {
+    "id": "3736707",
+    "slug": "joanie-geiger",
+    "name": "Joanie Geiger",
+    "tmdbPersonId": 3736707,
+    "knownForDepartment": "Acting",
+    "knownCredits": 9,
+    "tmdbUpdatedAt": "2026-10-02T05:55:58.876Z",
+    "tmdbFetchedAt": "2026-10-02T05:55:58.876Z"
   },
   {
     "id": "joanna-carpenter",
@@ -59592,6 +59745,17 @@
     "tmdbUpdatedAt": "2026-09-22T20:53:48.246Z"
   },
   {
+    "id": "4193642",
+    "slug": "joshua-obasi",
+    "name": "Joshua Obasi",
+    "tmdbPersonId": 4193642,
+    "imdbPersonId": "nm14633603",
+    "knownForDepartment": "Acting",
+    "knownCredits": 3,
+    "tmdbUpdatedAt": "2026-10-02T05:55:55.974Z",
+    "tmdbFetchedAt": "2026-10-02T05:55:55.974Z"
+  },
+  {
     "id": "joshua-palmer",
     "slug": "joshua-palmer",
     "name": "Joshua Palmer",
@@ -60020,6 +60184,21 @@
       "جاج رینهولد"
     ],
     "tmdbUpdatedAt": "2026-09-20T16:20:41.276Z"
+  },
+  {
+    "id": "1220817",
+    "slug": "judi-evans",
+    "name": "Judi Evans",
+    "tmdbPersonId": 1220817,
+    "photoUrl": "/images/people/1220817.webp",
+    "profileUrl": "/images/people/1220817.webp",
+    "birthday": "1964-07-12",
+    "imdbPersonId": "nm0524591",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 14,
+    "tmdbUpdatedAt": "2026-10-02T05:55:58.379Z",
+    "tmdbFetchedAt": "2026-10-02T05:55:58.379Z"
   },
   {
     "id": "judi-garner",
@@ -62668,11 +62847,12 @@
     "imdbPersonId": "nm6184322",
     "gender": "Female",
     "knownForDepartment": "Writing",
-    "knownCredits": 8,
+    "knownCredits": 10,
     "alsoKnownAs": [
       "کیت پراگنل"
     ],
-    "tmdbUpdatedAt": "2026-09-22T20:53:17.696Z"
+    "tmdbUpdatedAt": "2026-10-02T05:55:57.447Z",
+    "tmdbFetchedAt": "2026-10-02T05:55:57.447Z"
   },
   {
     "id": "kate-robbins",
@@ -63756,6 +63936,19 @@
     ],
     "instagramId": "kayladeorksen",
     "tmdbUpdatedAt": "2026-09-20T16:17:28.807Z"
+  },
+  {
+    "id": "2526574",
+    "slug": "kayla-dumont",
+    "name": "Kayla Dumont",
+    "tmdbPersonId": 2526574,
+    "photoUrl": "/images/people/2526574.webp",
+    "profileUrl": "/images/people/2526574.webp",
+    "imdbPersonId": "nm7659315",
+    "knownForDepartment": "Acting",
+    "knownCredits": 8,
+    "tmdbUpdatedAt": "2026-10-02T05:55:56.217Z",
+    "tmdbFetchedAt": "2026-10-02T05:55:56.217Z"
   },
   {
     "id": "1936485",
@@ -67034,6 +67227,26 @@
     "tmdbUpdatedAt": "2026-09-20T16:16:35.303Z"
   },
   {
+    "id": "3062193",
+    "slug": "kristi-murdock",
+    "name": "Kristi Murdock",
+    "tmdbPersonId": 3062193,
+    "photoUrl": "/images/people/3062193.webp",
+    "profileUrl": "/images/people/3062193.webp",
+    "birthday": "1990-06-15",
+    "biography": "Kristi Murdock, born as Kristi McKamie on June 15th, 1990, in Wilmington, North Carolina, grew up with a deep passion for the arts. Inspired by her high school art teacher, she pursued her love for acting and adopted her mother’s maiden name, Murdock, as her stage name.\n\nKristi Murdock stands at an elegant 5 feet (1.52 meters) tall, weighing 110 lbs (50 kg). Her blonde hair, blue eyes, and radiant smile contribute to her captivating appearance. She takes pride in her diverse background, with mixed ancestry that includes Irish, Scottish, German, and Native American roots.\n\nKristi Murdock pursued her passion for the arts at the University of North Carolina at Wilmington, graduating in 2012 with a Bachelor of Arts in Theatre. After a visit to the set of Dawson’s Creek in Wilmington, her trajectory shifted towards acting, sparking her passion for the craft.",
+    "imdbPersonId": "nm1485767",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 17,
+    "alsoKnownAs": [
+      "Kristi McKamie"
+    ],
+    "instagramId": "kristi_mckamie",
+    "tmdbUpdatedAt": "2026-10-02T05:55:58.050Z",
+    "tmdbFetchedAt": "2026-10-02T05:55:58.050Z"
+  },
+  {
     "id": "4949490",
     "slug": "kristi-slager",
     "name": "Kristi Slager",
@@ -67801,6 +68014,16 @@
     "tmdbFetchedAt": "2026-10-01T10:07:25.263Z"
   },
   {
+    "id": "4311714",
+    "slug": "kyle-porter",
+    "name": "Kyle Porter",
+    "tmdbPersonId": 4311714,
+    "knownForDepartment": "Acting",
+    "knownCredits": 6,
+    "tmdbUpdatedAt": "2026-10-02T05:55:59.441Z",
+    "tmdbFetchedAt": "2026-10-02T05:55:59.441Z"
+  },
+  {
     "id": "1399817",
     "slug": "kyle-pryor",
     "name": "Kyle Pryor",
@@ -68371,14 +68594,15 @@
     "imdbPersonId": "nm0710969",
     "gender": "Female",
     "knownForDepartment": "Acting",
-    "knownCredits": 55,
+    "knownCredits": 56,
     "alsoKnownAs": [
       "Lanette Ware-Bushfield",
       "라네트 웨어"
     ],
     "instagramId": "workitware",
     "twitterId": "workitware",
-    "tmdbUpdatedAt": "2026-09-21T13:18:51.197Z"
+    "tmdbUpdatedAt": "2026-10-02T05:55:57.462Z",
+    "tmdbFetchedAt": "2026-10-02T05:55:57.462Z"
   },
   {
     "id": "langi-tuifua",
@@ -76569,6 +76793,17 @@
     "tmdbUpdatedAt": "2026-09-20T16:19:26.726Z"
   },
   {
+    "id": "1089681",
+    "slug": "marisela-puic-n",
+    "name": "Marisela Puicón",
+    "tmdbPersonId": 1089681,
+    "imdbPersonId": "nm1252888",
+    "knownForDepartment": "Acting",
+    "knownCredits": 6,
+    "tmdbUpdatedAt": "2026-10-02T05:55:59.595Z",
+    "tmdbFetchedAt": "2026-10-02T05:55:59.595Z"
+  },
+  {
     "id": "marisol-nichols",
     "slug": "marisol-nichols",
     "name": "Marisol Nichols",
@@ -77177,6 +77412,18 @@
     "tmdbUpdatedAt": "2026-09-20T16:18:46.084Z"
   },
   {
+    "id": "1178913",
+    "slug": "mark-montague",
+    "name": "Mark Montague",
+    "tmdbPersonId": 1178913,
+    "imdbPersonId": "nm1360321",
+    "gender": "Male",
+    "knownForDepartment": "Production",
+    "knownCredits": 25,
+    "tmdbUpdatedAt": "2026-10-02T05:55:55.811Z",
+    "tmdbFetchedAt": "2026-10-02T05:55:55.811Z"
+  },
+  {
     "id": "mark-pawson",
     "slug": "mark-pawson",
     "name": "Mark Pawson",
@@ -77642,8 +77889,9 @@
     "imdbPersonId": "nm0051518",
     "gender": "Female",
     "knownForDepartment": "Directing",
-    "knownCredits": 9,
-    "tmdbUpdatedAt": "2026-09-22T20:53:15.854Z"
+    "knownCredits": 10,
+    "tmdbUpdatedAt": "2026-10-02T05:55:57.455Z",
+    "tmdbFetchedAt": "2026-10-02T05:55:57.455Z"
   },
   {
     "id": "marnie-delwo",
@@ -84947,6 +85195,17 @@
     "tmdbFetchedAt": "2026-10-01T10:07:37.670Z"
   },
   {
+    "id": "2848323",
+    "slug": "miley-haik",
+    "name": "Miley Haik",
+    "tmdbPersonId": 2848323,
+    "imdbPersonId": "nm10286452",
+    "knownForDepartment": "Acting",
+    "knownCredits": 8,
+    "tmdbUpdatedAt": "2026-10-02T05:55:55.505Z",
+    "tmdbFetchedAt": "2026-10-02T05:55:55.505Z"
+  },
+  {
     "id": "milli-wilkinson",
     "slug": "milli-wilkinson",
     "name": "Milli Wilkinson",
@@ -85769,10 +86028,11 @@
     "imdbPersonId": "nm8140069",
     "gender": "Female",
     "knownForDepartment": "Acting",
-    "knownCredits": 21,
+    "knownCredits": 22,
     "instagramId": "morganbradley___",
     "facebookId": "MorganBradleyActress",
-    "tmdbUpdatedAt": "2026-09-22T20:53:50.011Z"
+    "tmdbUpdatedAt": "2026-10-02T05:55:58.520Z",
+    "tmdbFetchedAt": "2026-10-02T05:55:58.520Z"
   },
   {
     "id": "morgan-brayton",
@@ -85807,10 +86067,11 @@
     "imdbPersonId": "nm2290151",
     "gender": "Male",
     "knownForDepartment": "Acting",
-    "knownCredits": 36,
+    "knownCredits": 37,
     "instagramId": "jonesing4morgan",
     "twitterId": "jonesing4morgan",
-    "tmdbUpdatedAt": "2026-09-21T12:58:33.064Z"
+    "tmdbUpdatedAt": "2026-10-02T05:55:55.646Z",
+    "tmdbFetchedAt": "2026-10-02T05:55:55.646Z"
   },
   {
     "id": "morgan-fairchild",
@@ -87153,10 +87414,11 @@
     "imdbPersonId": "nm1345890",
     "gender": "Female",
     "knownForDepartment": "Acting",
-    "knownCredits": 45,
+    "knownCredits": 46,
     "instagramId": "msnazneencontractor",
     "twitterId": "MsNazContractor",
-    "tmdbUpdatedAt": "2026-09-20T16:19:47.397Z"
+    "tmdbUpdatedAt": "2026-10-02T05:55:55.733Z",
+    "tmdbFetchedAt": "2026-10-02T05:55:55.733Z"
   },
   {
     "id": "nck-name",
@@ -92445,8 +92707,9 @@
     "profileUrl": "/images/people/3729927.webp",
     "gender": "Female",
     "knownForDepartment": "Acting",
-    "knownCredits": 4,
-    "tmdbUpdatedAt": "2026-09-20T16:19:27.404Z"
+    "knownCredits": 5,
+    "tmdbUpdatedAt": "2026-10-02T05:55:56.545Z",
+    "tmdbFetchedAt": "2026-10-02T05:55:56.545Z"
   },
   {
     "id": "pendo-muema",
@@ -95323,8 +95586,9 @@
     "imdbPersonId": "nm5734680",
     "gender": "Female",
     "knownForDepartment": "Production",
-    "knownCredits": 46,
-    "tmdbUpdatedAt": "2026-09-21T13:19:09.271Z"
+    "knownCredits": 47,
+    "tmdbUpdatedAt": "2026-10-02T05:55:56.381Z",
+    "tmdbFetchedAt": "2026-10-02T05:55:56.381Z"
   },
   {
     "id": "rebecca-lines",
@@ -95533,6 +95797,20 @@
     "knownForDepartment": "Acting",
     "knownCredits": 10,
     "tmdbUpdatedAt": "2026-09-20T16:16:37.975Z"
+  },
+  {
+    "id": "2324055",
+    "slug": "reesa-ishiyama",
+    "name": "Reesa Ishiyama",
+    "tmdbPersonId": 2324055,
+    "photoUrl": "/images/people/2324055.webp",
+    "profileUrl": "/images/people/2324055.webp",
+    "placeOfBirth": "Tokyo, Japan",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 9,
+    "tmdbUpdatedAt": "2026-10-02T05:55:59.841Z",
+    "tmdbFetchedAt": "2026-10-02T05:55:59.841Z"
   },
   {
     "id": "reese-alexander",
@@ -97482,14 +97760,15 @@
     "imdbPersonId": "nm2373827",
     "gender": "Male",
     "knownForDepartment": "Acting",
-    "knownCredits": 56,
+    "knownCredits": 57,
     "alsoKnownAs": [
       "Robert Mayes"
     ],
     "instagramId": "hogcity",
     "twitterId": "robcmayes",
     "facebookId": "therobmayes",
-    "tmdbUpdatedAt": "2026-09-20T16:16:32.502Z"
+    "tmdbUpdatedAt": "2026-10-02T05:55:58.622Z",
+    "tmdbFetchedAt": "2026-10-02T05:55:58.622Z"
   },
   {
     "id": "52602",
@@ -98297,6 +98576,18 @@
     "knownForDepartment": "Acting",
     "knownCredits": 12,
     "tmdbUpdatedAt": "2026-09-22T20:53:28.886Z"
+  },
+  {
+    "id": "2810395",
+    "slug": "robin-bjerke",
+    "name": "Robin Bjerke",
+    "tmdbPersonId": 2810395,
+    "imdbPersonId": "nm4089044",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 3,
+    "tmdbUpdatedAt": "2026-10-02T05:55:57.853Z",
+    "tmdbFetchedAt": "2026-10-02T05:55:57.853Z"
   },
   {
     "id": "robin-craig",
@@ -103814,6 +104105,16 @@
     "tmdbFetchedAt": "2026-10-01T13:43:34.957Z"
   },
   {
+    "id": "5310366",
+    "slug": "sean-stencil",
+    "name": "Sean Stencil",
+    "tmdbPersonId": 5310366,
+    "knownForDepartment": "Production",
+    "knownCredits": 2,
+    "tmdbUpdatedAt": "2026-10-02T05:55:58.221Z",
+    "tmdbFetchedAt": "2026-10-02T05:55:58.221Z"
+  },
+  {
     "id": "sean-stone",
     "slug": "sean-stone",
     "name": "Sean Stone",
@@ -104464,6 +104765,19 @@
       "Шеннон Лоусон"
     ],
     "tmdbUpdatedAt": "2026-09-21T13:15:36.976Z"
+  },
+  {
+    "id": "2006857",
+    "slug": "shannon-lujan",
+    "name": "Shannon Lujan",
+    "tmdbPersonId": 2006857,
+    "photoUrl": "/images/people/2006857.webp",
+    "profileUrl": "/images/people/2006857.webp",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 3,
+    "tmdbUpdatedAt": "2026-10-02T05:55:58.736Z",
+    "tmdbFetchedAt": "2026-10-02T05:55:58.736Z"
   },
   {
     "id": "shannon-mcdonough",
@@ -107051,6 +107365,18 @@
     "tmdbUpdatedAt": "2026-09-20T16:21:10.651Z"
   },
   {
+    "id": "3850944",
+    "slug": "stephanie-aubertin",
+    "name": "Stephanie Aubertin",
+    "tmdbPersonId": 3850944,
+    "photoUrl": "/images/people/3850944.webp",
+    "profileUrl": "/images/people/3850944.webp",
+    "knownForDepartment": "Acting",
+    "knownCredits": 8,
+    "tmdbUpdatedAt": "2026-10-02T05:55:56.227Z",
+    "tmdbFetchedAt": "2026-10-02T05:55:56.227Z"
+  },
+  {
     "id": "stephanie-bauder",
     "slug": "stephanie-bauder",
     "name": "Stephanie Bauder",
@@ -108285,6 +108611,20 @@
     "knownForDepartment": "Writing",
     "knownCredits": 9,
     "tmdbUpdatedAt": "2026-09-22T20:53:42.233Z"
+  },
+  {
+    "id": "2712739",
+    "slug": "steven-pigozzo",
+    "name": "Steven Pigozzo",
+    "tmdbPersonId": 2712739,
+    "photoUrl": "/images/people/2712739.webp",
+    "profileUrl": "/images/people/2712739.webp",
+    "imdbPersonId": "nm0683121",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 11,
+    "tmdbUpdatedAt": "2026-10-02T05:55:57.153Z",
+    "tmdbFetchedAt": "2026-10-02T05:55:57.153Z"
   },
   {
     "id": "88039",
@@ -112963,6 +113303,19 @@
     "tmdbUpdatedAt": "2026-09-20T16:19:33.338Z"
   },
   {
+    "id": "2005836",
+    "slug": "todd-risby",
+    "name": "Todd Risby",
+    "tmdbPersonId": 2005836,
+    "photoUrl": "/images/people/2005836.webp",
+    "profileUrl": "/images/people/2005836.webp",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 7,
+    "tmdbUpdatedAt": "2026-10-02T05:55:59.425Z",
+    "tmdbFetchedAt": "2026-10-02T05:55:59.425Z"
+  },
+  {
     "id": "169417",
     "slug": "tom-amundsen",
     "name": "Tom Amundsen",
@@ -113224,6 +113577,24 @@
     "twitterId": "tomlenk",
     "tmdbUpdatedAt": "2026-10-01T10:20:36.745Z",
     "tmdbFetchedAt": "2026-10-01T10:20:36.745Z"
+  },
+  {
+    "id": "964160",
+    "slug": "tom-maden",
+    "name": "Tom Maden",
+    "tmdbPersonId": 964160,
+    "photoUrl": "/images/people/964160.webp",
+    "profileUrl": "/images/people/964160.webp",
+    "birthday": "1989-08-21",
+    "placeOfBirth": "Coppell, Texas, USA",
+    "imdbPersonId": "nm1855008",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 25,
+    "instagramId": "mad_enlove",
+    "twitterId": "tom_made_it",
+    "tmdbUpdatedAt": "2026-10-02T05:55:58.308Z",
+    "tmdbFetchedAt": "2026-10-02T05:55:58.308Z"
   },
   {
     "id": "158575",
@@ -117561,6 +117932,19 @@
     "tmdbUpdatedAt": "2026-09-21T13:15:02.443Z"
   },
   {
+    "id": "3136943",
+    "slug": "william-brock",
+    "name": "William Brock",
+    "tmdbPersonId": 3136943,
+    "imdbPersonId": "nm5936161",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 3,
+    "twitterId": "TrumpetTomm",
+    "tmdbUpdatedAt": "2026-10-02T05:55:58.701Z",
+    "tmdbFetchedAt": "2026-10-02T05:55:58.701Z"
+  },
+  {
     "id": "william-carson",
     "slug": "william-carson",
     "name": "William Carson",
@@ -118577,6 +118961,26 @@
     "facebookId": "tinstarzach",
     "tmdbUpdatedAt": "2026-10-01T10:14:46.352Z",
     "tmdbFetchedAt": "2026-10-01T10:14:46.352Z"
+  },
+  {
+    "id": "1485439",
+    "slug": "zachary-bostrom",
+    "name": "Zachary Bostrom",
+    "tmdbPersonId": 1485439,
+    "photoUrl": "/images/people/1485439.webp",
+    "profileUrl": "/images/people/1485439.webp",
+    "birthday": "1981-01-15",
+    "placeOfBirth": "Los Angeles, California, USA",
+    "biography": "Zachary Bostrom is an American actor. As a child actor, he's known for his roles as Peewee in the film Dennis the Menace and as Ernie Henderson, the youngest child, on the series Harry and the Henderson.",
+    "imdbPersonId": "nm0098290",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 22,
+    "alsoKnownAs": [
+      "Zach Bostrom"
+    ],
+    "tmdbUpdatedAt": "2026-10-02T05:55:59.275Z",
+    "tmdbFetchedAt": "2026-10-02T05:55:59.275Z"
   },
   {
     "id": "zachary-cox",
