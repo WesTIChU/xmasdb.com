@@ -13,6 +13,7 @@ import { getMoviePoster } from '../utils/posters';
 import { getFingerprintById } from '../data/fingerprints';
 import { FingerprintChips } from './FingerprintChips';
 import { resolveImageUrl } from '../utils/image-url';
+import { formatLastUpdatedDate } from '../utils/last-updated';
 
 interface MovieDetailProps {
   movie: MovieDetailMovie;
@@ -49,6 +50,7 @@ export const MovieDetail: React.FC<MovieDetailProps> = ({ movie, related, onNavi
   const poster = getMoviePoster(movie);
   const hasValidImdbId = typeof movie.imdbId === 'string' && /^tt\d+$/.test(movie.imdbId);
   const hasValidTmdbId = typeof movie.tmdbId === 'number' && movie.tmdbId > 0;
+  const lastUpdated = formatLastUpdatedDate(movie.tmdbUpdatedAt);
   // Hero/backdrop temporarily hidden — keep implementation for possible restoration.
   const showMovieBackdrop = false;
 
@@ -461,6 +463,12 @@ export const MovieDetail: React.FC<MovieDetailProps> = ({ movie, related, onNavi
             ))}
           </div>
         </section>
+      )}
+
+      {lastUpdated && (
+        <p className="mt-8 text-xs font-sans-clean text-[#736B63]">
+          Last updated: {lastUpdated}
+        </p>
       )}
     </div>
   );

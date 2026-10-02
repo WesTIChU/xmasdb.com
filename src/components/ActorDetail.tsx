@@ -1,4 +1,4 @@
-import React, { useState, useMemo, useRef } from 'react';
+import React, { useState, useMemo, useRef, useEffect } from 'react';
 import { ExternalLink, Instagram, Facebook } from 'lucide-react';
 import type { ActorFilmographyItem } from '../api/types';
 import { Actor } from '../types';
@@ -10,6 +10,7 @@ import { getBrandById } from '../data/brands';
 import { calculateAge, calculateAgeAtDeath, formatActorDate, isValidActorDate, sanitizeBiography } from '../utils/actor-dates';
 import { ComingSoonPoster } from './ComingSoonPoster';
 import { resolveImageUrl } from '../utils/image-url';
+import { formatLastUpdatedDate } from '../utils/last-updated';
 
 interface ActorDetailProps {
   actor: Actor;
@@ -20,15 +21,6 @@ interface ActorDetailProps {
   backdropUrl: string | null;
   onNavigate: (path: string) => void;
   onSelectMovie: (slug: string, tmdbId?: number) => void;
-}
-
-function getSentencePreview(text: string): string {
-  const targetLength = Math.min(850, text.length);
-  const candidate = text.slice(0, targetLength);
-  const boundary = Math.max(candidate.lastIndexOf('. '), candidate.lastIndexOf('! '), candidate.lastIndexOf('? '));
-  if (boundary >= 240) return candidate.slice(0, boundary + 1).trim();
-  const remainder = text.slice(targetLength).match(/[.!?](?:\s|$)/);
-  return remainder ? text.slice(0, targetLength + (remainder.index || 0) + 1).trim() : candidate.trim();
 }
 
 export const ActorDetail: React.FC<ActorDetailProps> = ({
@@ -49,7 +41,9 @@ export const ActorDetail: React.FC<ActorDetailProps> = ({
   const [imageError, setImageError] = useState<boolean>(false);
   const [backdropError, setBackdropError] = useState<boolean>(false);
   const [biographyExpanded, setBiographyExpanded] = useState(false);
+  const [biographyCanExpand, setBiographyCanExpand] = useState(false);
   const biographyRef = useRef<HTMLDivElement>(null);
+  const biographyContentRef = useRef<HTMLParagraphElement>(null);
   const actorBackdrop = useMemo(
     () => (backdropUrl ? { url: backdropUrl } : null),
     [backdropUrl]
@@ -84,12 +78,19 @@ export const ActorDetail: React.FC<ActorDetailProps> = ({
   const formattedBirthday = formatActorDate(actor.birthday);
   const formattedDeathday = isDeceased ? formatActorDate(actor.deathday) : null;
   const biography = sanitizeBiography(actor.biography);
-  const biographyParagraphs = biography?.split(/\n\s*\n/).map((paragraph) => paragraph.trim()).filter(Boolean) || [];
-  const shouldCollapseBiography = Boolean(biography && (biographyParagraphs.length > 3 || biography.length > 1000));
-  const biographyPreview = biographyParagraphs.length > 3
-    ? biographyParagraphs.slice(0, 3).join('\n\n')
-    : biography ? getSentencePreview(biography) : null;
-  const displayedBiography = biographyExpanded || !shouldCollapseBiography ? biography : biographyPreview;
+  const lastUpdated = formatLastUpdatedDate(actor.tmdbUpdatedAt);
+
+  useEffect(() => {
+    const measureBiography = () => {
+      const element = biographyContentRef.current;
+      if (!element || biographyExpanded) return;
+      setBiographyCanExpand(element.scrollHeight > element.clientHeight + 1);
+    };
+
+    measureBiography();
+    window.addEventListener('resize', measureBiography);
+    return () => window.removeEventListener('resize', measureBiography);
+  }, [biography, biographyExpanded]);
 
   // Photo URL (with fallback to profileUrl or photoUrl)
   const portraitUrl = actor.profileUrl || actor.photoUrl;
@@ -296,10 +297,10 @@ export const ActorDetail: React.FC<ActorDetailProps> = ({
                 <h3 className="text-xs font-sans-clean font-semibold uppercase tracking-widest text-[#736B63] mb-2">
                   About
                 </h3>
-                <p className="font-body text-[#3F3A34] text-sm sm:text-base leading-relaxed max-w-3xl whitespace-pre-line">
-                  {displayedBiography}
+                <p ref={biographyContentRef} className={`font-body text-[#3F3A34] text-sm sm:text-base leading-relaxed max-w-3xl whitespace-pre-line ${!biographyExpanded ? 'line-clamp-5' : ''}`}>
+                  {biography}
                 </p>
-                {shouldCollapseBiography && (
+                {biographyCanExpand && (
                   <button
                     type="button"
                     className="mt-3 text-sm font-sans-clean font-medium text-[#1A3D2F] hover:text-[#841818] hover:underline underline-offset-4 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-[#1A3D2F]/40 rounded-sm"
@@ -380,6 +381,12 @@ export const ActorDetail: React.FC<ActorDetailProps> = ({
         {safeDirectingFilmography.length > 0 && <section className="mt-10" aria-labelledby="directing-heading"><h3 id="directing-heading" className="mb-4 text-base font-heading font-semibold text-[#1A3D2F]">Directing</h3>{renderFilmographyGrid(safeDirectingFilmography)}</section>}
         {safeWritingFilmography.length > 0 && <section className="mt-10" aria-labelledby="writing-heading"><h3 id="writing-heading" className="mb-4 text-base font-heading font-semibold text-[#1A3D2F]">Writing</h3>{renderFilmographyGrid(safeWritingFilmography)}</section>}
       </section>
+
+      {lastUpdated && (
+        <p className="mt-8 text-xs font-sans-clean text-[#736B63]">
+          Last updated: {lastUpdated}
+        </p>
+      )}
     </div>
   );
 };
