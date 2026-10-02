@@ -49,16 +49,6 @@ jobs:
           R2_PUBLIC_BASE_URL: https://images.xmasdb.com
         run: npm run refresh:tmdb
 
-      - name: Discover and import GAF Christmas catalogue
-        env:
-          TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
-          R2_ACCOUNT_ID: ${{ secrets.R2_ACCOUNT_ID }}
-          R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
-          R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
-          R2_BUCKET_NAME: ${{ secrets.R2_BUCKET_NAME }}
-          R2_PUBLIC_BASE_URL: https://images.xmasdb.com
-        run: npm run import:gaf
-
       - name: Publish homepage poster derivatives to R2
         env:
           R2_ACCOUNT_ID: ${{ secrets.R2_ACCOUNT_ID }}
