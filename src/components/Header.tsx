@@ -72,7 +72,7 @@ export const Header: React.FC<HeaderProps> = ({
                 srcSet={logoSrc === HALLOWEEN_LOGO ? undefined : NORMAL_LOGO_SRCSET}
                 sizes={logoSrc === HALLOWEEN_LOGO ? undefined : NORMAL_LOGO_SIZES}
                 alt="XmasDB.com — A curated collection of Christmas movies"
-                className="h-20 sm:h-28 md:h-36 lg:h-48 max-w-full w-auto object-contain mx-auto drop-shadow-xs"
+                className="h-20 sm:h-28 md:h-36 lg:h-48 max-w-full w-auto object-contain mx-auto"
                 width={550}
                 height={184}
                 fetchPriority="high"
