@@ -1,7 +1,7 @@
 import { getActorBySlug, getActorByTmdbId } from '../data/actors';
 import { getMovieBySlug, getMovieByTmdbId } from '../data/movies';
 import { getBrandBySlug } from '../data/brands';
-import { buildAboutPayload, buildActorDetail, buildCatalogueListing, buildCatalogueMeta, buildFeedsMeta, buildHomePayload, buildMovieDetail } from './catalogue-api';
+import { buildAboutPayload, buildActorDetail, buildBirthdaysPayload, buildCatalogueListing, buildCatalogueMeta, buildFeedsMeta, buildHomePayload, buildMovieDetail } from './catalogue-api';
 import { getBrandById } from '../data/brands';
 import { parseCatalogueQuery } from '../utils/catalogue-pagination';
 import { buildAboutSeo, buildActorSeo, buildApiSeo, buildBrandSeo, buildContactSeo, buildFeedsSeo, buildHomeSeo, buildMoviesSeo, buildMovieSeo, buildNotFoundSeo, buildPrivacySeo, buildYearSeo, type SeoDocument } from '../utils/seo';
@@ -227,6 +227,7 @@ function getServerRouteBootstrap(pathname: string, search = ''): { url: string; 
     return { url: `/api/catalogue${query}`, payload: buildCatalogueListing(parseCatalogueQuery(query), brandMatch[1], brandMatch[2] ? Number(brandMatch[2]) : undefined) };
   }
   if (clean === 'feeds') return { url: '/api/feeds/meta', payload: buildFeedsMeta() };
+  if (clean === 'birthdays') return { url: '/api/birthdays', payload: buildBirthdaysPayload() };
   if (clean === 'about') return { url: '/api/about', payload: buildAboutPayload() };
   if (clean === 'privacy') return { url: '/api/privacy', payload: {} };
   return null;

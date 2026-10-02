@@ -37,7 +37,10 @@ import type {
   SearchMovieEntry,
   SearchPersonEntry,
   SearchResultsPayload,
+  BirthdayActor,
+  BirthdaysPayload,
 } from '../api/types';
+import { parseBirthday, sortBirthdays, upcomingBirthdays } from '../utils/birthdays';
 import { scoreActorSearchResult, scoreIngredientSearchResult, scoreMovieSearchFields } from '../utils/search-relevance';
 import { getCreativeCrew, getPersonSlug, isCreativeCrewJob } from '../utils/creative-crew';
 import { FINGERPRINTS, getFingerprintById } from '../data/fingerprints';
@@ -601,6 +604,8 @@ export function buildHomePayload(now: Date = new Date()): HomePayload {
     if (actors.length > 0) popularActors.push({ brandId: brand.id, actors });
   }
 
+  const birthdays = upcomingBirthdays(buildBirthdaysPayload().actors, now, 10);
+
   const payload = {
     totalMovies: MOVIES.length,
     comingSoon,
@@ -608,9 +613,24 @@ export function buildHomePayload(now: Date = new Date()): HomePayload {
     thisMonth,
     popularActors,
     archiveYears,
+    birthdays,
   };
   homeCache = { dateKey, payload };
   return payload;
+}
+
+export function buildBirthdaysPayload(): BirthdaysPayload {
+  const actors: BirthdayActor[] = getAllActors()
+    .filter((actor) => parseBirthday(actor.birthday))
+    .map((actor) => ({
+      slug: actor.slug,
+      name: actor.name,
+      tmdbPersonId: actor.tmdbPersonId,
+      photoUrl: actor.profileUrl || actor.photoUrl,
+      birthday: actor.birthday as string,
+      popularity: getActorActingFilmographyCount(String(actor.tmdbPersonId)),
+    }));
+  return { actors: sortBirthdays(actors) };
 }
 
 // ---------------------------------------------------------------------------

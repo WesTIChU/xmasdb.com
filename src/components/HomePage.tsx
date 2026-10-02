@@ -8,6 +8,7 @@ import { formatMoviePremiereDate } from '../utils/catalogue-lifecycle';
 import { getYearPath } from '../utils/urls';
 import { ThisMonthSection } from './ThisMonthSection';
 import { HollyDivider } from './HollyDivider';
+import { BirthdaySection } from './BirthdaySection';
 
 interface HomePageProps {
   payload: Partial<HomePayload>;
@@ -24,6 +25,7 @@ export const HomePage: React.FC<HomePageProps> = ({ payload, onNavigate }) => {
   const popularActors = Array.isArray(payload?.popularActors) ? payload.popularActors : [];
   const totalMovies = typeof payload?.totalMovies === 'number' ? payload.totalMovies : 0;
   const archiveYears = Array.isArray(payload?.archiveYears) ? payload.archiveYears : [];
+  const birthdays = Array.isArray(payload?.birthdays) ? payload.birthdays : [];
   return (
     <div className="pt-0 pb-6 sm:pb-8" id="home-view">
       <PopularActorsSection groups={popularActors} onNavigate={onNavigate} />
@@ -73,6 +75,8 @@ export const HomePage: React.FC<HomePageProps> = ({ payload, onNavigate }) => {
         </div>
         <HollyDivider className="homepage-holly-divider" lineClassName="w-6 sm:w-8" ornamentClassName="h-4 w-12 sm:h-5 sm:w-14" />
       </section>
+
+      <BirthdaySection actors={birthdays} onNavigate={onNavigate} />
 
       {archiveYears.length > 0 && (
         <section className="py-7 sm:py-9" aria-labelledby="archive-years-heading">

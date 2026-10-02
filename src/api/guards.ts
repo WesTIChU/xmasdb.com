@@ -66,7 +66,12 @@ export function isHomePayload(value: unknown): value is HomePayload {
       && Array.isArray(value.thisMonth.movies)))
     && Array.isArray(value.popularActors)
     && Array.isArray(value.archiveYears)
+    && Array.isArray(value.birthdays)
     && value.popularActors.every((group) => isRecord(group) && Array.isArray(group.actors));
+}
+
+export function isBirthdaysPayload(value: unknown): value is import('./types').BirthdaysPayload {
+  return isRecord(value) && Array.isArray(value.actors);
 }
 
 export function isAboutPayload(value: unknown): value is AboutPayload {

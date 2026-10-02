@@ -20,6 +20,7 @@ import {
   buildCatalogueMeta,
   buildCatalogueListing,
   buildHomePayload,
+  buildBirthdaysPayload,
   buildAboutPayload,
   buildMovieDetail,
   buildActorDetail,
@@ -345,6 +346,7 @@ async function startServer() {
 
   // Homepage sections.
   app.get('/api/home', (_req, res) => sendJson(res, buildHomePayload()));
+  app.get('/api/birthdays', (_req, res) => sendJson(res, buildBirthdaysPayload()));
 
   app.get('/api/about', (_req, res) => sendJson(res, buildAboutPayload()));
   app.get('/api/privacy', (_req, res) => sendJson(res, {}));

@@ -248,6 +248,14 @@ export function buildFeedsSeo(): SeoDocument {
   };
 }
 
+export function buildBirthdaysSeo(): SeoDocument {
+  return {
+    title: 'Christmas Star Birthdays | XmasDB',
+    description: 'Browse the birthdays of actors from the XmasDB Christmas movie catalogue.',
+    canonicalPath: '/birthdays/',
+  };
+}
+
 export function buildAboutSeo(): SeoDocument {
   const description = 'Why XmasDB exists: a personal, curated Christmas movie database with Hallmark, Lifetime, Great American Family, and UPtv movies, actor browsing and Radarr-compatible JSON feeds.';
   return {

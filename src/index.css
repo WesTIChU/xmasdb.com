@@ -204,6 +204,25 @@ body {
   margin-bottom: -1.75rem;
 }
 
+/* Quiet vintage stationery pattern for the birthday browser cards. */
+.birthday-card {
+  background-color: #FFFDF9;
+  background-repeat: repeat;
+  background-size: 118px 118px;
+}
+
+.birthday-card--0 {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='118' height='118' viewBox='0 0 118 118'%3E%3Cg fill='none' stroke='%231A3D2F' stroke-opacity='.12' stroke-width='1.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M19 23l-5 8h3l-6 9h16l-6-9h3zM19 40v5'/%3E%3Cpath d='M10 101l2 5 5 .5-4 3 1 5-4-2.5-4 2.5 1-5-4-3 5-.5z'/%3E%3C/g%3E%3Ccircle cx='72' cy='25' r='1.4' fill='%23B8860B' fill-opacity='.16'/%3E%3C/svg%3E");
+}
+
+.birthday-card--1 {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='118' height='118' viewBox='0 0 118 118'%3E%3Cg fill='none' stroke='%23B8860B' stroke-opacity='.15' stroke-width='1.1' stroke-linecap='round'%3E%3Cpath d='M10 101v16M2 109h16M4 103l12 12M16 103L4 115'/%3E%3Cpath d='M90 19l2 5 5 .5-4 3 1 5-4-2.5-4 2.5 1-5-4-3 5-.5z'/%3E%3C/g%3E%3Cpath d='M106 7l-4 6h2l-5 7h14l-5-7h2z' fill='%231A3D2F' fill-opacity='.11'/%3E%3C/svg%3E");
+}
+
+.birthday-card--2 {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='118' height='118' viewBox='0 0 118 118'%3E%3Cg fill='none' stroke='%231A3D2F' stroke-opacity='.115' stroke-width='1.1' stroke-linecap='round'%3E%3Cpath d='M108 101v14M101 108h14M103 103l10 10M113 103L103 113'/%3E%3Cpath d='M23 26l2 5 5 .5-4 3 1 5-4-2.5-4 2.5 1-5-4-3 5-.5z'/%3E%3C/g%3E%3Ccircle cx='8' cy='108' r='1.5' fill='%23B8860B' fill-opacity='.15'/%3E%3C/svg%3E");
+}
+
 @media (min-width: 640px) {
   .homepage-holly-divider {
     margin-top: 2.75rem;

@@ -62,6 +62,17 @@ export interface PopularActorsGroup {
   actors: PopularActorEntry[];
 }
 
+export interface BirthdayActor {
+  slug: string;
+  name: string;
+  tmdbPersonId: number;
+  photoUrl?: string;
+  birthday: string;
+  popularity: number;
+}
+
+export interface BirthdaysPayload { actors: BirthdayActor[] }
+
 export interface ThisMonthPayload {
   month: number;
   monthLabel: string;
@@ -82,6 +93,7 @@ export interface HomePayload {
   thisMonth: ThisMonthPayload | null;
   popularActors: PopularActorsGroup[];
   archiveYears: ArchiveYearEntry[];
+  birthdays: BirthdayActor[];
 }
 
 export interface AboutActorEntry {

@@ -25,6 +25,7 @@ import {
   isFingerprintListingPayload,
   isFeedsMetaPayload,
   isHomePayload,
+  isBirthdaysPayload,
   isMovieDetailPayload,
   isPrivacyPayload,
 } from './api/guards';
@@ -62,6 +63,7 @@ import {
   buildPrivacySeo,
   buildBrandSeo,
   buildFeedsSeo,
+  buildBirthdaysSeo,
   buildHomeSeo,
   buildMoviesSeo,
   buildMovieSeo,
@@ -79,6 +81,7 @@ import { getGoatCounterPagePath, isGoatCounterRouteAllowed, trackGoatCounterPage
  */
 type RouteDescriptor =
   | { type: 'home' }
+  | { type: 'birthdays' }
   | { type: 'movies' }
   | { type: 'year-archive'; year: number }
   | { type: 'brand'; slug: string; year: number | null }
@@ -104,6 +107,7 @@ const EMPTY_BRANDS: MetaBrand[] = [];
 const MovieDetail = lazy(() => import('./components/MovieDetail').then(({ MovieDetail: component }) => ({ default: component })));
 const ActorDetail = lazy(() => import('./components/ActorDetail').then(({ ActorDetail: component }) => ({ default: component })));
 const FeedsPage = lazy(() => import('./components/FeedsPage').then(({ FeedsPage: component }) => ({ default: component })));
+const BirthdaysPage = lazy(() => import('./components/BirthdaysPage').then(({ BirthdaysPage: component }) => ({ default: component })));
 const AboutPage = lazy(() => import('./components/AboutPage').then(({ AboutPage: component }) => ({ default: component })));
 const PrivacyPage = lazy(() => import('./components/PrivacyPage').then(({ PrivacyPage: component }) => ({ default: component })));
 const AdminLoginPage = lazy(() => import('./components/AdminLoginPage').then(({ AdminLoginPage: component }) => ({ default: component })));
@@ -154,6 +158,8 @@ function isRoutePayloadValid(descriptor: RouteDescriptor, payload: unknown): boo
   switch (descriptor.type) {
     case 'home':
       return isHomePayload(payload);
+    case 'birthdays':
+      return isBirthdaysPayload(payload);
     case 'movies':
     case 'year-archive':
     case 'brand':
@@ -184,6 +190,7 @@ export function parseRoute(currentPath: string): RouteDescriptor {
   if (!clean) return { type: 'home' };
   if (clean === 'movies' || clean === 'all') return { type: 'movies' };
   if (clean === 'feeds') return { type: 'feeds' };
+  if (clean === 'birthdays') return { type: 'birthdays' };
   if (clean === 'about') return { type: 'about' };
   if (clean === 'privacy') return { type: 'privacy' };
   if (clean === 'contact') return { type: 'contact' };
@@ -245,6 +252,8 @@ function requestFor(descriptor: RouteDescriptor, catalogueSearch: string): strin
   switch (descriptor.type) {
     case 'home':
       return '/api/home';
+    case 'birthdays':
+      return '/api/birthdays';
     case 'movies':
       return catalogueUrl(catalogueSearch);
     case 'year-archive':
@@ -438,6 +447,8 @@ export default function App() {
       updateSeoTags(buildActorSeo(view.payload.actor, view.payload.filmography, view.payload.titleDisambiguator));
     } else if (descriptor.type === 'feeds') {
       updateSeoTags(buildFeedsSeo());
+    } else if (descriptor.type === 'birthdays') {
+      updateSeoTags(buildBirthdaysSeo());
     } else if (descriptor.type === 'about') {
       updateSeoTags(buildAboutSeo());
     } else if (descriptor.type === 'privacy') {
@@ -883,6 +894,9 @@ export default function App() {
 
             {descriptor.type === 'feeds' && currentViewStatus === 'ready' && isFeedsMetaPayload(view.payload) && (
               <FeedsPage meta={view.payload} />
+            )}
+            {descriptor.type === 'birthdays' && currentViewStatus === 'ready' && isBirthdaysPayload(view.payload) && (
+              <BirthdaysPage payload={view.payload} onNavigate={navigate} search={catalogueSearch} />
             )}
             {descriptor.type === 'api' && <ApiPage />}
             </>
