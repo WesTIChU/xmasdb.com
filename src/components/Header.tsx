@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import type { MetaBrand } from '../api/types';
 import { getMoviesPath, getNetworkPath, getFeedsPath } from '../utils/urls';
 import { SearchAutocomplete } from './SearchAutocomplete';
 import { NavSquiggle } from './NavigationLink';
+import { getSeasonalLogo, HALLOWEEN_LOGO, NORMAL_LOGO_SIZES, NORMAL_LOGO_SRCSET } from '../utils/seasonalLogo';
 
 interface HeaderProps {
   currentPath: string;
@@ -19,6 +20,15 @@ export const Header: React.FC<HeaderProps> = ({
   onSearchChange,
   populatedBrands,
 }) => {
+  const [logoSrc, setLogoSrc] = useState(() => getSeasonalLogo());
+
+  useEffect(() => {
+    const refreshLogo = () => setLogoSrc(getSeasonalLogo());
+    const interval = window.setInterval(refreshLogo, 60_000);
+
+    return () => window.clearInterval(interval);
+  }, []);
+
   // Normalize current path
   const normalizedPath = currentPath === '/' ? '/' : (currentPath.replace(/\/+$/, '') || '/') + '/';
 
@@ -58,11 +68,11 @@ export const Header: React.FC<HeaderProps> = ({
               title="XmasDB.com — Home"
             >
               <img
-                src="/logo-550.webp"
-                srcSet="/logo-550.webp 550w, /logo-1100.webp 1100w"
-                sizes="(min-width: 1024px) 527px, 240px"
+                src={logoSrc}
+                srcSet={logoSrc === HALLOWEEN_LOGO ? undefined : NORMAL_LOGO_SRCSET}
+                sizes={logoSrc === HALLOWEEN_LOGO ? undefined : NORMAL_LOGO_SIZES}
                 alt="XmasDB.com — A curated collection of Christmas movies"
-                className="h-20 sm:h-28 md:h-36 lg:h-44 max-w-full w-auto object-contain mx-auto drop-shadow-xs"
+                className="h-20 sm:h-28 md:h-36 lg:h-48 max-w-full w-auto object-contain mx-auto drop-shadow-xs"
                 width={550}
                 height={184}
                 fetchPriority="high"
