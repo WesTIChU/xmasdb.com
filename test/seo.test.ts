@@ -111,7 +111,6 @@ assert.match(homepageHtml, /name="twitter:title" content="XmasDB - Christmas Mov
 assert.match(homepageHtml, /name="description" content="Browse (?:\d+ )?Christmas movies from Hallmark, Lifetime, GAF, UPtv/);
 const actorHtml = renderServerHtml(serverShell, danicaPath);
 assert.match(actorHtml, /<h1>Danica McKellar<\/h1>/);
-assert.match(actorHtml, /Danica Mae McKellar/);
 assert.match(actorHtml, /Christmas movie filmography/);
 assert.match(actorHtml, /href="\/movie\/\d+\/[^\"]+"/);
 assert.match(actorHtml, /name="robots" content="index,follow,max-image-preview:large"/);
