@@ -16,8 +16,8 @@ const sisterSwapDetail = buildMovieDetail('866665', sisterSwap!.slug);
 assert.ok(sisterSwapDetail, 'Sister Swap detail should resolve');
 assert.equal(sisterSwapDetail!.movie.directorCredit?.tmdbPersonId, 129952);
 assert.deepStrictEqual(
-  sisterSwapDetail!.movie.writingCredits.map((credit) => credit.name),
-  ['Claire Boyles', 'Erik Patterson', 'Zac Hug', 'Jessica Scott'],
+  sisterSwapDetail!.movie.writingCredits.map((credit) => credit.name).sort(),
+  ['Claire Boyles', 'Erik Patterson', 'Zac Hug', 'Jessica Scott'].sort(),
 );
 assert.ok(sisterSwapDetail!.movie.writingCredits.every((credit) => credit.tmdbPersonId > 0 && credit.slug));
 

@@ -16,6 +16,7 @@ export interface PersonEnrichmentResult {
   incomplete: number;
   skipped: number;
   updated: number;
+  changed: number;
   failures: Array<{ tmdbPersonId: number; name: string; message: string }>;
   attemptedIds: number[];
   actor?: Actor;
@@ -28,6 +29,29 @@ interface CataloguePersonSeed {
   slug: string;
   id: string;
   profileUrl?: string;
+}
+
+const REFRESHED_ACTOR_FIELDS = [
+  'name',
+  'photoUrl',
+  'profileUrl',
+  'birthday',
+  'deathday',
+  'placeOfBirth',
+  'biography',
+  'imdbPersonId',
+  'gender',
+  'knownForDepartment',
+  'knownCredits',
+  'alsoKnownAs',
+  'instagramId',
+  'twitterId',
+  'facebookId',
+] as const satisfies ReadonlyArray<keyof Actor>;
+
+export function actorMetadataChanged(existing: Actor | undefined, refreshed: Actor): boolean {
+  if (!existing) return true;
+  return REFRESHED_ACTOR_FIELDS.some((field) => JSON.stringify(existing[field]) !== JSON.stringify(refreshed[field]));
 }
 
 export function isActorEnriched(actor: Pick<Actor, 'tmdbFetchedAt'> | undefined, now: Date = new Date()): boolean {
@@ -96,7 +120,7 @@ export async function enrichCataloguePeople(
   apiKey: string,
   personId?: number,
   onProgress?: (current: number, total: number, person: CataloguePersonSeed) => void,
-  options: { maxPeople?: number; imageBudget?: ImageRefreshBudget; imageIngestor?: typeof ingestManagedImage } = {},
+  options: { maxPeople?: number; imageBudget?: ImageRefreshBudget; imageIngestor?: typeof ingestManagedImage; forceRefreshExisting?: boolean; preserveUnchangedTimestamps?: boolean } = {},
 ): Promise<PersonEnrichmentResult> {
   const people = cataloguePeople(movies);
   const person = personId ? people.get(personId) : undefined;
@@ -105,16 +129,29 @@ export async function enrichCataloguePeople(
   }
 
   const actorsById = await readActors();
+  const existingPeople = new Map([...actorsById.values()].map((actor) => [actor.tmdbPersonId, {
+    tmdbPersonId: actor.tmdbPersonId,
+    name: actor.name,
+    slug: actor.slug,
+    id: actor.id,
+    profileUrl: actor.profileUrl,
+  }]));
+  const incompletePeople = findIncompleteCataloguePeople(movies, actorsById);
   const candidates = personId
     ? new Map([[personId, person!]])
-    : new Map(findIncompleteCataloguePeople(movies, actorsById).map((entry) => [entry.tmdbPersonId, entry]));
+    : options.forceRefreshExisting
+      ? new Map([...existingPeople, ...incompletePeople.filter((entry) => !existingPeople.has(entry.tmdbPersonId)).slice(0, options.maxPeople ?? TMDB_MIGRATION_BATCH_SIZE).map((entry) => [entry.tmdbPersonId, entry] as const)])
+      : new Map(incompletePeople.map((entry) => [entry.tmdbPersonId, entry]));
   const maxPeople = options.maxPeople ?? TMDB_MIGRATION_BATCH_SIZE;
   const target = personId
     ? candidates
-    : new Map([...candidates.entries()].slice(0, maxPeople));
+    : options.forceRefreshExisting
+      ? candidates
+      : new Map([...candidates.entries()].slice(0, maxPeople));
   const failures: PersonEnrichmentResult['failures'] = [];
   const attemptedIds: number[] = [];
   let updated = 0;
+  let changed = 0;
   let current = 0;
   let lastActor: Actor | undefined;
 
@@ -141,8 +178,8 @@ export async function enrichCataloguePeople(
           failures.push({ tmdbPersonId, name: person.name, message: `Image ingestion failed: ${error instanceof Error ? error.message : String(error)}` });
         }
          const fetchedAt = new Date().toISOString();
-         const actor: Actor = {
-          id: existing?.id || person.id,
+         const refreshedActor: Actor = {
+           id: existing?.id || person.id,
           slug: existing?.slug || person.slug,
           name: fetched.name || existing?.name || person.name,
           tmdbPersonId,
@@ -157,15 +194,22 @@ export async function enrichCataloguePeople(
           knownForDepartment: fetched.knownForDepartment ?? existing?.knownForDepartment,
           knownCredits: fetched.knownCredits ?? existing?.knownCredits,
           alsoKnownAs: fetched.alsoKnownAs?.length ? fetched.alsoKnownAs : existing?.alsoKnownAs,
-          instagramId: fetched.instagramId ?? existing?.instagramId,
-          twitterId: fetched.twitterId ?? existing?.twitterId,
-           facebookId: fetched.facebookId ?? existing?.facebookId,
-           tmdbUpdatedAt: fetchedAt,
+           instagramId: fetched.instagramId ?? existing?.instagramId,
+           twitterId: fetched.twitterId ?? existing?.twitterId,
+            facebookId: fetched.facebookId ?? existing?.facebookId,
+            notableRoles: existing?.notableRoles,
+            tmdbUpdatedAt: fetchedAt,
            tmdbFetchedAt: fetchedAt,
-         };
-        actorsById.set(tmdbPersonId, actor);
-        lastActor = actor;
-        updated++;
+          };
+         const metadataChanged = actorMetadataChanged(existing, refreshedActor);
+         const shouldWriteActor = !existing || metadataChanged || !options.preserveUnchangedTimestamps;
+         const actor: Actor = shouldWriteActor ? refreshedActor : existing!;
+         if (shouldWriteActor) {
+           actorsById.set(tmdbPersonId, actor);
+           changed++;
+         }
+         lastActor = actor;
+         updated++;
       } catch (error) {
         failures.push({ tmdbPersonId, name: person.name, message: error instanceof Error ? error.message : String(error) });
       }
@@ -174,12 +218,16 @@ export async function enrichCataloguePeople(
   };
   await Promise.all(Array.from({ length: Math.min(5, entries.length) }, () => refreshWorker()));
 
-  await writeFileAtomically(actorsPath, JSON.stringify([...actorsById.values()].sort((a, b) => a.name.localeCompare(b.name)), null, 2));
+  if (changed > 0) {
+    await writeFileAtomically(actorsPath, JSON.stringify([...actorsById.values()].sort((a, b) => a.name.localeCompare(b.name)), null, 2));
+  }
+  const considered = personId ? 1 : options.forceRefreshExisting ? target.size : total;
   return {
-    total,
+    total: considered,
     incomplete: entries.length,
-    skipped: total - entries.length,
+    skipped: considered - entries.length,
     updated,
+    changed,
     failures,
     attemptedIds,
     actor: lastActor,

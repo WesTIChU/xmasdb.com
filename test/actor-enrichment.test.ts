@@ -1,7 +1,8 @@
 import assert from 'node:assert/strict';
 import type { Actor, Movie } from '../src/types';
 import { enrichNewCatalogueActors, getNewPeople } from '../src/server/actor-import';
-import { findIncompleteCataloguePeople, isActorEnriched, resolveManagedPersonImage } from '../src/utils/person-enrichment';
+import { isFullCatalogueRefresh } from '../scripts/refresh-tmdb';
+import { actorMetadataChanged, findIncompleteCataloguePeople, isActorEnriched, resolveManagedPersonImage } from '../src/utils/person-enrichment';
 
 function movie(id: string, people: Array<{ id: number; name: string }>): Movie {
   return {
@@ -77,9 +78,26 @@ try {
   assert.equal(isActorEnriched(complete), true);
   assert.equal(isActorEnriched(incomplete), false);
   assert.equal(isActorEnriched(actor(9999999, 'Old Person', 'old')), false, 'old actors require refresh');
+  assert.equal(isFullCatalogueRefresh({ comingSoonOnly: false, checkOnly: false }), true, 'normal full refresh enables existing actor synchronization');
+  assert.equal(isFullCatalogueRefresh({ comingSoonOnly: true, checkOnly: false }), false, 'Coming Soon refresh does not enable existing actor synchronization');
+  assert.equal(isFullCatalogueRefresh({ comingSoonOnly: false, requestedId: '1773368', checkOnly: false }), false, 'targeted movie refresh does not enable existing actor synchronization');
+  assert.equal(isFullCatalogueRefresh({ comingSoonOnly: false, checkOnly: true }), false, 'authentication check does not enable existing actor synchronization');
   assert.equal(resolveManagedPersonImage(undefined, '/images/people/300.webp'), '/images/people/300.webp');
   assert.equal(resolveManagedPersonImage(undefined, 'https://image.tmdb.org/t/p/w500/300.jpg'), undefined);
   assert.equal(resolveManagedPersonImage('/images/people/301.webp', 'https://image.tmdb.org/t/p/w500/301.jpg'), '/images/people/301.webp');
+
+  const metadataFixture = actor(304, 'Existing Person', 'fresh');
+  metadataFixture.notableRoles = 'Locally curated role';
+  metadataFixture.biography = 'Existing biography';
+  metadataFixture.alsoKnownAs = ['Existing Alias'];
+  metadataFixture.instagramId = 'existing-instagram';
+  metadataFixture.twitterId = 'existing-twitter';
+  metadataFixture.facebookId = 'existing-facebook';
+  const unchangedMetadata = { ...metadataFixture, id: 'different-local-id', slug: 'different-local-slug', notableRoles: 'Local-only role', tmdbFetchedAt: 'new-fetch', tmdbUpdatedAt: 'new-update' };
+  assert.equal(actorMetadataChanged(metadataFixture, unchangedMetadata), false, 'timestamps and local-only identity fields do not count as TMDB metadata changes');
+  assert.equal(actorMetadataChanged(metadataFixture, { ...unchangedMetadata, biography: 'New expanded biography' }), true, 'biography changes are detected');
+  assert.equal(actorMetadataChanged(metadataFixture, { ...unchangedMetadata, name: 'Updated Person', alsoKnownAs: ['Updated Alias'], instagramId: 'updated-instagram', twitterId: 'updated-twitter', facebookId: 'updated-facebook' }), true, 'person identity metadata changes are detected');
+  assert.equal(metadataFixture.notableRoles, 'Locally curated role', 'locally owned notableRoles remains available when TMDB metadata changes');
 
   failures.add(103);
   const firstBatch = await enrichNewCatalogueActors(movies, [complete, incomplete], 'tmdb-key');

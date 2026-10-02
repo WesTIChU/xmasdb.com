@@ -1,5 +1,6 @@
 import 'dotenv/config';
 import path from 'node:path';
+import { pathToFileURL } from 'node:url';
 import { execFile } from 'node:child_process';
 import { promisify } from 'node:util';
 import { MOVIES } from '../src/data/movies';
@@ -24,6 +25,10 @@ function parseOption(name: string): string | undefined {
   return index >= 0 ? process.argv[index + 1] : undefined;
 }
 
+export function isFullCatalogueRefresh(options: { comingSoonOnly: boolean; requestedId?: string; checkOnly: boolean }): boolean {
+  return !options.comingSoonOnly && !options.requestedId && !options.checkOnly;
+}
+
 function generatedMoviesModule(movies: Movie[]): string {
   return `import { Movie } from '../types';\n\nexport const MOVIES: Movie[] = ${JSON.stringify(movies, null, 2)};\n\nexport function getMovieBySlug(slug: string): Movie | undefined { return MOVIES.find((m) => m.slug.toLowerCase() === slug.toLowerCase()); }\nexport function getMovieByTmdbId(tmdbId: number): Movie | undefined { return MOVIES.find((m) => m.tmdbId === tmdbId); }\nexport function getMovieByTmdbIdAndSlug(tmdbId: number, slug?: string): Movie | undefined { return getMovieByTmdbId(tmdbId) || (slug ? getMovieBySlug(slug) : undefined); }\nexport function getMovieByIdentifier(identifier: string | number): Movie | undefined { const value = String(identifier).trim(); return /^\\d+$/.test(value) ? getMovieByTmdbId(Number(value)) || getMovieBySlug(value) : getMovieBySlug(value); }\nexport function getMoviesByBrand(brandId: string): Movie[] { return MOVIES.filter((m) => m.brandId.toLowerCase() === brandId.toLowerCase()); }\nexport function getMoviesByActorSlug(actorSlug: string): Movie[] { return MOVIES.filter((m) => m.cast.some((c) => c.slug.toLowerCase() === actorSlug.toLowerCase())); }\nexport function getAllYearsForBrand(brandId?: string): number[] { const filtered = brandId ? getMoviesByBrand(brandId) : MOVIES; return Array.from(new Set(filtered.map((m) => m.year))).sort((a, b) => b - a); }\n`;
 }
@@ -33,6 +38,7 @@ async function main() {
   const checkOnly = process.argv.includes('--check');
   const skipBuild = process.argv.includes('--skip-build');
   const comingSoonOnly = process.argv.includes('--coming-soon-only');
+  const fullCatalogueRefresh = isFullCatalogueRefresh({ comingSoonOnly, requestedId, checkOnly });
   const scheduledRun = process.env.GITHUB_EVENT_NAME === 'schedule';
   const runType = scheduledRun ? (comingSoonOnly ? 'coming-soon' : 'full') : 'manual' as const;
   activeRun = createRefreshRun(runType);
@@ -88,7 +94,7 @@ async function main() {
   });
   const peopleResult = await enrichCataloguePeople(peopleMovies, apiKey, undefined, (current, total, person) => {
     console.log(`[TMDB Person] ${current}/${total} ${person.name} (${person.tmdbPersonId})`);
-  }, { imageBudget });
+  }, { imageBudget, forceRefreshExisting: fullCatalogueRefresh, preserveUnchangedTimestamps: fullCatalogueRefresh });
   const actorsById = new Map(peopleResult.actors.map((actor) => [actor.tmdbPersonId, actor]));
   const localMovies = mergedMovies.map((movie) => ({
     ...movie,
@@ -201,16 +207,18 @@ async function main() {
   if (failures.length > 0 || peopleResult.failures.length > 0) process.exitCode = 1;
 }
 
-main().catch(async (error) => {
-  console.error(`[TMDB Refresh] ${error instanceof Error ? error.message : String(error)}`);
-  if (activeRun) {
-    await completeRefreshRun(activeRun.id, {
-      status: 'FAILED',
-      counters: activeRun.counters,
-      failures: [{ key: `system:${activeRun.id}`, kind: 'system', operation: 'refresh process', message: error instanceof Error ? error.message : String(error), timestamp: new Date().toISOString() }],
-      successKeys: [],
-    }).catch(() => undefined);
-    activeRun = undefined;
-  }
-  process.exitCode = 1;
-});
+if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
+  main().catch(async (error) => {
+    console.error(`[TMDB Refresh] ${error instanceof Error ? error.message : String(error)}`);
+    if (activeRun) {
+      await completeRefreshRun(activeRun.id, {
+        status: 'FAILED',
+        counters: activeRun.counters,
+        failures: [{ key: `system:${activeRun.id}`, kind: 'system', operation: 'refresh process', message: error instanceof Error ? error.message : String(error), timestamp: new Date().toISOString() }],
+        successKeys: [],
+      }).catch(() => undefined);
+      activeRun = undefined;
+    }
+    process.exitCode = 1;
+  });
+}
