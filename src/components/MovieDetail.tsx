@@ -49,6 +49,8 @@ export const MovieDetail: React.FC<MovieDetailProps> = ({ movie, related, onNavi
   const poster = getMoviePoster(movie);
   const hasValidImdbId = typeof movie.imdbId === 'string' && /^tt\d+$/.test(movie.imdbId);
   const hasValidTmdbId = typeof movie.tmdbId === 'number' && movie.tmdbId > 0;
+  // Hero/backdrop temporarily hidden — keep implementation for possible restoration.
+  const showMovieBackdrop = false;
 
   const showComingSoon = hasImageError || !poster;
   const visibleCast = isCastExpanded ? movie.cast : movie.cast.slice(0, 12);
@@ -58,12 +60,12 @@ export const MovieDetail: React.FC<MovieDetailProps> = ({ movie, related, onNavi
   return (
     <div id="movie-detail-view" className="w-full">
       {/* Back navigation - festive XmasDB signature */}
-      <div className="mb-6">
+      <div className="mb-5 sm:mb-6">
         <BackNavigation href={brand ? getNetworkPath(brand.slug) : getMoviesPath()} id="back-to-brand-btn" label={`Back to ${brand ? brand.name : 'All Movies'}`} title={`Back to ${brand ? brand.name : 'All Movies'}`} onNavigate={onNavigate} />
       </div>
 
       {/* Backdrop (if present) as a tasteful header - reduced height by ~25% (h-36 sm:h-52 instead of h-48 sm:h-72) */}
-      {movie.backdropUrl && (
+      {showMovieBackdrop && movie.backdropUrl && (
         <div className="relative w-full h-36 sm:h-52 rounded-lg overflow-hidden mb-8 border border-[#E7DFD5] shadow-xs bg-[#EBE4DA]">
           <img
             src={resolveImageUrl(movie.backdropUrl)}
@@ -267,7 +269,7 @@ export const MovieDetail: React.FC<MovieDetailProps> = ({ movie, related, onNavi
                 Starring Cast
               </h2>
               <span className="text-xs text-[#6F675E] font-sans-clean">
-                {movie.cast.length} {movie.cast.length === 1 ? 'member' : 'members'}
+                {movie.cast.length} cast {movie.cast.length === 1 ? 'member' : 'members'}
               </span>
             </div>
 

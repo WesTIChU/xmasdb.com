@@ -54,6 +54,8 @@ export const ActorDetail: React.FC<ActorDetailProps> = ({
     () => (backdropUrl ? { url: backdropUrl } : null),
     [backdropUrl]
   );
+  // Hero/backdrop temporarily hidden — keep implementation for possible restoration.
+  const showActorBackdrop = false;
 
   // Derive unique brands in this actor's XmasDB filmography
   const brandStats = useMemo(() => {
@@ -132,7 +134,7 @@ export const ActorDetail: React.FC<ActorDetailProps> = ({
         <BackNavigation href={getMoviesPath()} id="back-from-actor-btn" label="Back to All Movies" title="Back to All Movies" onNavigate={onNavigate} />
       </div>
 
-      {actorBackdrop && !backdropError && (
+      {showActorBackdrop && actorBackdrop && !backdropError && (
         <div className="relative w-full h-36 sm:h-52 rounded-lg overflow-hidden mb-6 border border-[#E7DFD5] bg-[#EBE4DA]">
            <img
              src={resolveImageUrl(actorBackdrop.url)}
@@ -140,8 +142,8 @@ export const ActorDetail: React.FC<ActorDetailProps> = ({
             width={1280}
             height={360}
              className="w-full h-full object-cover object-[center_20%]"
-            onError={() => setBackdropError(true)}
-          />
+             onError={() => setBackdropError(true)}
+           />
         </div>
       )}
       {/* Main Profile Header */}
