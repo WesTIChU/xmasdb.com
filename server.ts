@@ -807,6 +807,7 @@ async function startServer() {
       'logo-550.webp',
       'logo-1100.webp',
       'logo-halloween.png',
+      'logo-halloween-q95.webp',
       'logo.svg',
       'logo-all.png',
       'robots.txt',
