@@ -198,6 +198,19 @@ body {
   margin-bottom: -6px;
 }
 
+/* Keep homepage holly dividers visually centered between adjacent sections. */
+.homepage-holly-divider {
+  margin-top: 2rem;
+  margin-bottom: -1.75rem;
+}
+
+@media (min-width: 640px) {
+  .homepage-holly-divider {
+    margin-top: 2.75rem;
+    margin-bottom: -2rem;
+  }
+}
+
 @keyframes stats-countdown-hour-pulse {
   0%, 100% { opacity: 1; transform: scale(1); }
   45% { opacity: 0.55; transform: scale(1.06); }

@@ -24,12 +24,12 @@ const ActorCircularPortrait: React.FC<{
 
   return (
     <div
-      className="popular-actor-portrait relative mx-auto h-[108px] w-[108px] rounded-full border border-[#DDD3C6] bg-[#EFE9DF] xl:h-[96px] xl:w-[96px]"
+      className="popular-actor-portrait relative mx-auto h-[116px] w-[116px] rounded-full border border-[#DDD3C6] bg-[#EFE9DF]"
       style={{ '--popular-actor-accent': accentColor } as React.CSSProperties}
     >
       <div className="relative z-0 h-full w-full overflow-hidden rounded-full">
         {portraitPhoto ? (
-         <img src={portraitPhoto} srcSet={photo ? getHomepageActorSrcSet(photo) : undefined} sizes="(min-width: 1280px) 96px, 108px" alt={actor.name} loading="lazy" decoding="async" width={216} height={216} referrerPolicy="no-referrer" onError={() => setImgError(true)} className="h-full w-full object-cover object-center group-hover:scale-105 transition-transform duration-300" />
+          <img src={portraitPhoto} srcSet={photo ? getHomepageActorSrcSet(photo) : undefined} sizes="116px" alt={actor.name} loading="lazy" decoding="async" width={216} height={216} referrerPolicy="no-referrer" onError={() => setImgError(true)} className="h-full w-full object-cover object-center group-hover:scale-105 transition-transform duration-300" />
         ) : (
           <div className="flex h-full w-full items-center justify-center text-3xl font-heading text-[#1A3D2F]" aria-hidden="true">{actor.name.charAt(0)}</div>
         )}
@@ -54,9 +54,9 @@ export const PopularActorsSection: React.FC<PopularActorsSectionProps> = ({ grou
     <section id="popular-christmas-stars-section" className="py-8 sm:py-10" aria-labelledby="popular-christmas-stars-heading">
       <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-6">
         <div>
-          <h2 id="popular-christmas-stars-heading" className="mt-1 font-heading text-xl sm:text-2xl font-semibold text-[#1A3D2F]">Popular Christmas Stars</h2>
+         <h2 id="popular-christmas-stars-heading" className="mt-1 font-heading text-xl sm:text-2xl font-semibold text-[#1A3D2F]">Christmas Stars</h2>
         </div>
-        <div className="flex flex-wrap gap-x-3 gap-y-1 text-sm font-body" role="tablist" aria-label="Popular stars by brand">
+        <div className="flex flex-wrap gap-x-3 gap-y-1 text-sm font-body" role="tablist" aria-label="Christmas stars by brand">
           {availableBrands.map(({ brand }, index) => (
             <React.Fragment key={brand.id}>
               {index > 0 && <span className="text-[#C8BFB3] select-none">·</span>}
@@ -67,17 +67,17 @@ export const PopularActorsSection: React.FC<PopularActorsSectionProps> = ({ grou
           ))}
         </div>
       </div>
-      <div className="flex gap-4 sm:gap-5 overflow-x-auto pb-2 no-scrollbar -mx-4 px-4 sm:mx-0 sm:px-0 md:grid md:grid-cols-4 md:overflow-visible md:pb-0 xl:grid-cols-8 xl:gap-2 xl:px-2">
-        {selected.actors.map((actor) => {
+      <div className="grid grid-cols-2 gap-x-3 gap-y-6 sm:grid-cols-3 sm:gap-x-4 md:grid-cols-4 lg:grid-cols-6 lg:gap-x-5">
+        {selected.actors.slice(0, 6).map((actor) => {
           const actorPath = getActorPath(actor.tmdbPersonId, actor.slug);
-          return <article key={actor.slug} className="w-[120px] shrink-0 text-center md:w-full"><a href={actorPath} onClick={(event) => { event.preventDefault(); onNavigate(actorPath); }} className="group block text-center">
+          return <article key={actor.slug} className="text-center"><a href={actorPath} onClick={(event) => { event.preventDefault(); onNavigate(actorPath); }} className="group block text-center">
             <ActorCircularPortrait actor={actor} accentColor={selected.brand.accentColor || '#B8860B'} />
             <h3 className="mt-3 font-heading text-sm text-[#1A3D2F] group-hover:text-[#841818] leading-snug">{actor.name}</h3>
             <p className="mt-1 text-xs text-[#736B63] font-body">{actor.movieCount} {actor.movieCount === 1 ? 'movie' : 'movies'}</p>
           </a></article>;
         })}
       </div>
-      <HollyDivider className="mt-4 -mb-4 sm:mt-5 sm:-mb-5" lineClassName="w-6 sm:w-8" ornamentClassName="h-4 w-12 sm:h-5 sm:w-14" />
+      <HollyDivider className="homepage-holly-divider" lineClassName="w-6 sm:w-8" ornamentClassName="h-4 w-12 sm:h-5 sm:w-14" />
     </section>
   );
 };

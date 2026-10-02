@@ -52,7 +52,7 @@ export const HomePage: React.FC<HomePageProps> = ({ payload, onNavigate }) => {
             })}
           </div>
         </div>
-        <HollyDivider className="mt-4 -mb-4 sm:mt-5 sm:-mb-5" lineClassName="w-6 sm:w-8" ornamentClassName="h-4 w-12 sm:h-5 sm:w-14" />
+        <HollyDivider className="homepage-holly-divider" lineClassName="w-6 sm:w-8" ornamentClassName="h-4 w-12 sm:h-5 sm:w-14" />
       </section>
 
       {thisMonth && <ThisMonthSection payload={thisMonth} onNavigate={onNavigate} />}
@@ -71,7 +71,7 @@ export const HomePage: React.FC<HomePageProps> = ({ payload, onNavigate }) => {
             {discovery.map((movie) => <div key={movie.id} className="w-[140px] sm:w-auto shrink-0 snap-start"><MovieCard movie={movie} optimizeHomepageImage titleLines={3} onSelectMovie={(slug, tmdbId) => onNavigate(getMoviePath(tmdbId || movie.tmdbId, slug))} /></div>)}
           </div>
         </div>
-        <HollyDivider className="mt-4 -mb-4 sm:mt-5 sm:-mb-5" lineClassName="w-6 sm:w-8" ornamentClassName="h-4 w-12 sm:h-5 sm:w-14" />
+        <HollyDivider className="homepage-holly-divider" lineClassName="w-6 sm:w-8" ornamentClassName="h-4 w-12 sm:h-5 sm:w-14" />
       </section>
 
       {archiveYears.length > 0 && (
