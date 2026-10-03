@@ -1134,6 +1134,14 @@ export const PROTOTYPE_MOVIE_FINGERPRINTS: Readonly<Record<string, readonly Fing
     "restaurant-cafe",
     "reunion"
   ],
+  "hallmark-2017-when-calls-the-heart-the-christmas-wishing-tree": [
+    "christmas-parade",
+    "christmas-wish",
+    "doctor-nurse",
+    "faith",
+    "parent-child",
+    "small-town"
+  ],
   "hallmark-2017-with-love-christmas": [
     "entertainment-showbiz"
   ],
