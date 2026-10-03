@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import { buildHomePayload } from '../src/server/catalogue-api';
-import { birthdayDistance, getHomepageBirthdayGroups, parseBirthday } from '../src/utils/birthdays';
+import { ageOnBirthday, birthdayDistance, getHomepageBirthdayGroups, parseBirthday } from '../src/utils/birthdays';
 
 const referenceDate = new Date('2026-10-02T12:00:00');
 const groups = getHomepageBirthdayGroups(buildHomePayload(referenceDate).birthdays, referenceDate);
@@ -15,5 +15,11 @@ assert.ok(groups.comingUp.some((actor) => parseBirthday(actor.birthday)?.month =
 const boundaryActors = buildHomePayload(new Date('2026-12-30T12:00:00')).birthdays;
 const boundaryGroups = getHomepageBirthdayGroups(boundaryActors, new Date('2026-12-30T12:00:00'));
 assert.ok(boundaryGroups.comingUp.length > 0, 'Coming Up should cross the December to January boundary');
+
+assert.equal(ageOnBirthday('1980-10-03', new Date('2026-10-03T12:00:00')), 46, 'Birthday today uses the age just reached');
+assert.equal(ageOnBirthday('1980-10-04', new Date('2026-10-03T12:00:00')), 46, 'Birthday tomorrow uses the upcoming birthday age');
+assert.equal(ageOnBirthday('1980-12-31', new Date('2026-10-03T12:00:00')), 46, 'Later birthday this year uses the upcoming birthday age');
+assert.equal(ageOnBirthday('1980-01-01', new Date('2026-12-31T12:00:00')), 47, 'Next-year birthday crosses the year boundary');
+assert.equal(ageOnBirthday('2000-02-29', new Date('2026-02-28T12:00:00')), 26, 'Leap-day birthdays use the upcoming occurrence year');
 
 console.log('Homepage birthday grouping regression tests passed.');

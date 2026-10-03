@@ -1,4 +1,5 @@
 import type { BirthdayActor } from '../api/types';
+import { calculateAge } from './actor-dates';
 
 export interface BirthdayDate { month: number; day: number; year: number }
 
@@ -17,10 +18,11 @@ function dayOfYear(month: number, day: number, year: number): number {
 export function ageOnBirthday(birthday: string, referenceDate: Date = new Date()): number | null {
   const parsed = parseBirthday(birthday);
   if (!parsed) return null;
-  const birthdayThisYear = new Date(referenceDate.getFullYear(), parsed.month - 1, parsed.day);
-  const targetYear = referenceDate <= birthdayThisYear ? referenceDate.getFullYear() : referenceDate.getFullYear() + 1;
-  const age = targetYear - parsed.year;
-  return age >= 0 ? age : null;
+  const referenceYear = referenceDate.getFullYear();
+  const birthdayHasPassed = parsed.month < referenceDate.getMonth() + 1
+    || (parsed.month === referenceDate.getMonth() + 1 && parsed.day < referenceDate.getDate());
+  const targetYear = birthdayHasPassed ? referenceYear + 1 : referenceYear;
+  return calculateAge(birthday, undefined, new Date(targetYear, parsed.month - 1, parsed.day));
 }
 
 export function birthdayDistance(birthday: string, referenceDate: Date = new Date()): number | null {
