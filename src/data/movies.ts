@@ -176883,6 +176883,398 @@ export const MOVIES: Movie[] = [
     "tmdbFetchedAt": "2026-10-03T12:51:23.506Z",
     "director": "Peter Sullivan",
     "premiereDate": "2026-12-10"
+  },
+  {
+    "id": "hallmark-2017-when-calls-the-heart-the-christmas-wishing-tree",
+    "slug": "when-calls-the-heart-the-christmas-wishing-tree",
+    "title": "When Calls The Heart: The Christmas Wishing Tree",
+    "year": 2017,
+    "brandId": "hallmark",
+    "releaseDate": "2017-12-25",
+    "synopsis": "Hope Valley is buzzing from the introduction of the Wishing Tree, with all the townspeople eagerly placing their wishes on its branches in the hopes they will be granted. Elizabeth wishes for Jack's return. Meanwhile, Abigail spearheads the town's first Christmas parade, featuring an energetic band, led by Bill. Abigail's newly adopted son, Cody, tries to make their first Christmas together special, connecting her past with their future. Rosemary and Lee discover the importance of Christmas traditions and treasured memories. Meanwhile, Doctor Carson Shepherd exhibits faith and resilience in trying to heal and inspire a guarded woman who has given up on the spirit of Christmas. Also, disgraced former mayor, Henry Gowen, gets a second chance at redemption.",
+    "posterUrl": "/images/posters/1383656.jpg",
+    "cast": [
+      {
+        "actorId": "1143960",
+        "name": "Erin Krakow",
+        "character": "Elizabeth Thatcher",
+        "slug": "erin-krakow",
+        "tmdbPersonId": 1143960,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/8euXiEHmBwzV6NdwQ8dfwzFa7C7.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "64917",
+        "name": "Pascale Hutton",
+        "character": "Rosemary Coulter",
+        "slug": "pascale-hutton",
+        "tmdbPersonId": 64917,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/8oWcuapDxL7LhmgBK46drdPJvrZ.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "138887",
+        "name": "Jack Wagner",
+        "character": "Bill Avery",
+        "slug": "jack-wagner",
+        "tmdbPersonId": 138887,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/zRoZShStnWymvcm7bQDr35qdck6.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "21213",
+        "name": "Kavan Smith",
+        "character": "Leland Coulter",
+        "slug": "kavan-smith",
+        "tmdbPersonId": 21213,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/zVJTMSlouAL345ApPZO7V2XCXW2.jpg",
+        "order": 3
+      },
+      {
+        "actorId": "116573",
+        "name": "Martin Cummins",
+        "character": "Henry Gowen",
+        "slug": "martin-cummins",
+        "tmdbPersonId": 116573,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/gnc1YUrHiYciRWB4ZCJFk9boAHg.jpg",
+        "order": 4
+      },
+      {
+        "actorId": "1672298",
+        "name": "Carter Evancic",
+        "character": "Cody Stanton",
+        "slug": "carter-evancic",
+        "tmdbPersonId": 1672298,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/8O8246JzAH8qVjBLCxOTO2t8OWC.jpg",
+        "order": 5
+      },
+      {
+        "actorId": "1292115",
+        "name": "Aren Buchholz",
+        "character": "Jesse Flynn",
+        "slug": "aren-buchholz",
+        "tmdbPersonId": 1292115,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/kPf1KswsaAhXfXvtGaAwx9v1Aat.jpg",
+        "order": 6
+      },
+      {
+        "actorId": "1048617",
+        "name": "Eva Bourne",
+        "character": "Clara Stanton",
+        "slug": "eva-bourne",
+        "tmdbPersonId": 1048617,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/6086BJGo1jYGlYfZdQj9UoJXE4Z.jpg",
+        "order": 7
+      },
+      {
+        "actorId": "11831",
+        "name": "Mary Black",
+        "character": "Myra McCormick",
+        "slug": "mary-black",
+        "tmdbPersonId": 11831,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/enDcsji4K79inZU3LBC2dO1peKo.jpg",
+        "order": 8
+      },
+      {
+        "actorId": "939564",
+        "name": "Paul Greene",
+        "character": "Dr. Carson Shepherd",
+        "slug": "paul-greene",
+        "tmdbPersonId": 939564,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/irVtc0p4aL545YbfmXtdgBZ5ebs.jpg",
+        "order": 9
+      },
+      {
+        "actorId": "105865",
+        "name": "Loretta Walsh",
+        "character": "Florence Blakeley",
+        "slug": "loretta-walsh",
+        "tmdbPersonId": 105865,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/ahmsLpipz8w6D7gXP9Dq054gg0F.jpg",
+        "order": 10
+      },
+      {
+        "actorId": "1256300",
+        "name": "Daniel Lissing",
+        "character": "Jack Thornton",
+        "slug": "daniel-lissing",
+        "tmdbPersonId": 1256300,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/8BN5A6PuzkjPdiT9zlDYDuMvlC4.jpg",
+        "order": 11
+      },
+      {
+        "actorId": "92509",
+        "name": "Lori Loughlin",
+        "character": "Abigail Stanton",
+        "slug": "lori-loughlin",
+        "tmdbPersonId": 92509,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/uelwtzItSLYEgaSjfzxfQ1AE1YK.jpg",
+        "order": 12
+      },
+      {
+        "actorId": "62912",
+        "name": "Hrothgar Mathews",
+        "character": "Ned Yost",
+        "slug": "hrothgar-mathews",
+        "tmdbPersonId": 62912,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/sXKbP3XIJjlualQdPwSIHbIcjbW.jpg",
+        "order": 13
+      },
+      {
+        "actorId": "99208",
+        "name": "Johannah Newmarch",
+        "character": "Molly Sullivan",
+        "slug": "johannah-newmarch",
+        "tmdbPersonId": 99208,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/exciBoqBPFs0y9TmOg0ZJB6rlWV.jpg",
+        "order": 14
+      },
+      {
+        "actorId": "188656",
+        "name": "Erica Carroll",
+        "character": "Dottie Ramsey",
+        "slug": "erica-carroll",
+        "tmdbPersonId": 188656,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/aip3Wt8gXMHcfE61WarivSfEqmG.jpg",
+        "order": 15
+      },
+      {
+        "actorId": "1867027",
+        "name": "Jaiven Natt",
+        "character": "Robert Wolf",
+        "slug": "jaiven-natt",
+        "tmdbPersonId": 1867027,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/nGFVWwskQWjS2JBIKl1AN0q29j3.jpg",
+        "order": 16
+      },
+      {
+        "actorId": "1368848",
+        "name": "Nick Hunnings",
+        "character": "Richard Wolf",
+        "slug": "nick-hunnings",
+        "tmdbPersonId": 1368848,
+        "order": 17
+      },
+      {
+        "actorId": "117995",
+        "name": "Alissa Skovbye",
+        "character": "Becky Hastings",
+        "slug": "alissa-skovbye",
+        "tmdbPersonId": 117995,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/gmt8w0sCToGv80eVCw7Y9fqsEZC.jpg",
+        "order": 18
+      },
+      {
+        "actorId": "1306565",
+        "name": "Genea Charpentier",
+        "character": "Laura Campbell",
+        "slug": "genea-charpentier",
+        "tmdbPersonId": 1306565,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/mPlOBUZtEfOGIGOxytzHUsC7Ob3.jpg",
+        "order": 19
+      },
+      {
+        "actorId": "1285537",
+        "name": "Gracyn Shinyei",
+        "character": "Emily Montgomery",
+        "slug": "gracyn-shinyei",
+        "tmdbPersonId": 1285537,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/9kuM2ekaMX1VyyTfq1jueYmufl1.jpg",
+        "order": 20
+      },
+      {
+        "actorId": "1539398",
+        "name": "Larissa Albuquerque",
+        "character": "Katie Yost",
+        "slug": "larissa-albuquerque",
+        "tmdbPersonId": 1539398,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/jgCXQ8uKWrGDQQFBvMOM8Hits17.jpg",
+        "order": 21
+      },
+      {
+        "actorId": "1256296",
+        "name": "Christian Michael Cooper",
+        "character": "Timmy Lawson",
+        "slug": "christian-michael-cooper",
+        "tmdbPersonId": 1256296,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/v0aG9THfELyBmwjhmL3eiWfHIB6.jpg",
+        "order": 22
+      },
+      {
+        "actorId": "1818133",
+        "name": "Amélie Eve",
+        "character": "Maggie Lawson",
+        "slug": "am-lie-eve",
+        "tmdbPersonId": 1818133,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/kFhoKUK7qETr6KJx1S0EaH9Xp4v.jpg",
+        "order": 23
+      },
+      {
+        "actorId": "1545263",
+        "name": "Imogen Tear",
+        "character": "Hattie",
+        "slug": "imogen-tear",
+        "tmdbPersonId": 1545263,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/sRCsoVEJ3Nh9p2YO2Q7T6jcGEhq.jpg",
+        "order": 24
+      },
+      {
+        "actorId": "1134014",
+        "name": "Callum Seagram Airlie",
+        "character": "Harper Tucker",
+        "slug": "callum-seagram-airlie",
+        "tmdbPersonId": 1134014,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/i9kzWXWld03UOJSNM04TZDbr8iO.jpg",
+        "order": 25
+      },
+      {
+        "actorId": "1939158",
+        "name": "Ben Rosenbaum",
+        "character": "Mike Hickam",
+        "slug": "ben-rosenbaum",
+        "tmdbPersonId": 1939158,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/dqgWkeANfwtlnKbXaYy8zWQXQYQ.jpg",
+        "order": 26
+      },
+      {
+        "actorId": "1784642",
+        "name": "Kadence Kendall Roach",
+        "character": "Anna Hayford",
+        "slug": "kadence-kendall-roach",
+        "tmdbPersonId": 1784642,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/29lLTlLsAkvgyIt41RtgVPKLMwg.jpg",
+        "order": 27
+      },
+      {
+        "actorId": "1878037",
+        "name": "Hannah Zirke",
+        "character": "Ruby Benson",
+        "slug": "hannah-zirke",
+        "tmdbPersonId": 1878037,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/uqaEXcqfbrX3XuYuTaOvygS7RPv.jpg",
+        "order": 28
+      },
+      {
+        "actorId": "1560377",
+        "name": "Ava Grace Cooper",
+        "character": "Opal Weise",
+        "slug": "ava-grace-cooper",
+        "tmdbPersonId": 1560377,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/kjPpfobGEpHnNCgw4bQHqHx34Ks.jpg",
+        "order": 29
+      },
+      {
+        "actorId": "1920102",
+        "name": "Liam Hughes",
+        "character": "Philip Cantrell",
+        "slug": "liam-hughes",
+        "tmdbPersonId": 1920102,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/1lZLJ9Xi1cyWOoqKXgD5dBPjgmV.jpg",
+        "order": 30
+      },
+      {
+        "actorId": "87739",
+        "name": "Eliza Norbury",
+        "character": "Wilma Lawson",
+        "slug": "eliza-norbury",
+        "tmdbPersonId": 87739,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/tNM6JGO7iiPhtpclFZwnNR2qtKS.jpg",
+        "order": 31
+      },
+      {
+        "actorId": "387183",
+        "name": "Sarah Smyth",
+        "character": "Mary Wolf",
+        "slug": "sarah-smyth",
+        "tmdbPersonId": 387183,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/gYFMSARgNof8JL6vBa7H02sPWT7.jpg",
+        "order": 32
+      },
+      {
+        "actorId": "204975",
+        "name": "Andrea Brooks",
+        "character": "Faith Carter (uncredited)",
+        "slug": "andrea-brooks",
+        "tmdbPersonId": 204975,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/piGVo6lKrlM3UvTMNOEljmsxzM8.jpg",
+        "order": 33
+      },
+      {
+        "actorId": "5043869",
+        "name": "Melanie Macinnes",
+        "character": "Townsperson (uncredited)",
+        "slug": "melanie-macinnes",
+        "tmdbPersonId": 5043869,
+        "order": 34
+      },
+      {
+        "actorId": "5043871",
+        "name": "Brandon Vick",
+        "character": "School Kid / Worker / Stockboy (uncredited)",
+        "slug": "brandon-vick",
+        "tmdbPersonId": 5043871,
+        "order": 35
+      }
+    ],
+    "director": "Neill Fearnley",
+    "tmdbId": 1383656,
+    "imdbId": "tt7787044",
+    "isComingSoon": false,
+    "status": "collection",
+    "originalTitle": "When Calls The Heart: The Christmas Wishing Tree",
+    "runtimeMinutes": 120,
+    "genres": [
+      {
+        "id": 18,
+        "name": "Drama"
+      },
+      {
+        "id": 36,
+        "name": "History"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "US",
+        "releaseDate": "2017-12-25T00:00:00.000Z",
+        "type": 6,
+        "certification": "G",
+        "note": ""
+      }
+    ],
+    "crew": [
+      {
+        "id": 2098355,
+        "name": "Cynthia J. Cohen",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "672b8b391e8dcec4a62b8d78"
+      },
+      {
+        "id": 1216743,
+        "name": "Paul Jackson",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "672b8b6e42bec49877807226"
+      },
+      {
+        "id": 51932,
+        "name": "Neill Fearnley",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/9dFT0XWxrtwZLki8YjbaWlXHQUf.jpg",
+        "creditId": "672b8b834b30e929cd6ee90c"
+      }
+    ],
+    "trailers": [],
+    "voteAverage": 6,
+    "voteCount": 1,
+    "tmdbUpdatedAt": "2026-10-03T15:01:31.423Z",
+    "tmdbFetchedAt": "2026-10-03T15:01:31.423Z"
   }
 ];
 
