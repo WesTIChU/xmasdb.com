@@ -952,12 +952,12 @@
     "imdbPersonId": "nm2098346",
     "gender": "Male",
     "knownForDepartment": "Writing",
-    "knownCredits": 80,
+    "knownCredits": 81,
     "alsoKnownAs": [
       "Stuart Morse"
     ],
-    "tmdbUpdatedAt": "2026-10-01T13:43:37.455Z",
-    "tmdbFetchedAt": "2026-10-01T13:43:37.455Z"
+    "tmdbUpdatedAt": "2026-10-03T12:09:07.715Z",
+    "tmdbFetchedAt": "2026-10-03T12:09:07.715Z"
   },
   {
     "id": "1789218",
@@ -1184,8 +1184,9 @@
     "imdbPersonId": "nm0341105",
     "gender": "Male",
     "knownForDepartment": "Acting",
-    "knownCredits": 34,
-    "tmdbUpdatedAt": "2026-09-20T16:20:04.474Z"
+    "knownCredits": 35,
+    "tmdbUpdatedAt": "2026-10-03T12:09:08.979Z",
+    "tmdbFetchedAt": "2026-10-03T12:09:08.979Z"
   },
   {
     "id": "adrian-holmes",
@@ -4854,9 +4855,9 @@
     "imdbPersonId": "nm10187596",
     "gender": "Female",
     "knownForDepartment": "Acting",
-    "knownCredits": 19,
-    "tmdbUpdatedAt": "2026-10-02T22:24:13.376Z",
-    "tmdbFetchedAt": "2026-10-02T22:24:13.376Z"
+    "knownCredits": 20,
+    "tmdbUpdatedAt": "2026-10-03T12:09:33.576Z",
+    "tmdbFetchedAt": "2026-10-03T12:09:33.576Z"
   },
   {
     "id": "amanda-lisman",
@@ -6109,9 +6110,9 @@
     "name": "Andrea Greening",
     "tmdbPersonId": 3875039,
     "knownForDepartment": "Acting",
-    "knownCredits": 3,
-    "tmdbUpdatedAt": "2026-09-25T21:37:16.979Z",
-    "tmdbFetchedAt": "2026-09-25T21:37:16.979Z"
+    "knownCredits": 4,
+    "tmdbUpdatedAt": "2026-10-03T12:09:42.283Z",
+    "tmdbFetchedAt": "2026-10-03T12:09:42.283Z"
   },
   {
     "id": "590281",
@@ -7545,7 +7546,7 @@
     "imdbPersonId": "nm5588182",
     "gender": "Female",
     "knownForDepartment": "Acting",
-    "knownCredits": 13,
+    "knownCredits": 12,
     "alsoKnownAs": [
       "Brizzy Voices",
       "Anna 'Brizzy' Brisbin"
@@ -7553,8 +7554,8 @@
     "instagramId": "brizzyvoices",
     "twitterId": "brizzyvoices",
     "facebookId": "brizzyvoices",
-    "tmdbUpdatedAt": "2026-10-02T17:42:39.655Z",
-    "tmdbFetchedAt": "2026-10-02T17:42:39.655Z"
+    "tmdbUpdatedAt": "2026-10-03T12:09:53.769Z",
+    "tmdbFetchedAt": "2026-10-03T12:09:53.769Z"
   },
   {
     "id": "anna-chlumsky",
@@ -8781,14 +8782,14 @@
     "imdbPersonId": "nm1182955",
     "gender": "Male",
     "knownForDepartment": "Acting",
-    "knownCredits": 68,
+    "knownCredits": 69,
     "alsoKnownAs": [
       "آنتونیو کوپو"
     ],
     "instagramId": "antoniocupo",
     "twitterId": "antoniocupo",
-    "tmdbUpdatedAt": "2026-10-01T10:20:46.959Z",
-    "tmdbFetchedAt": "2026-10-01T10:20:46.959Z"
+    "tmdbUpdatedAt": "2026-10-03T12:10:03.080Z",
+    "tmdbFetchedAt": "2026-10-03T12:10:03.080Z"
   },
   {
     "id": "antonio-d-charity",
@@ -10747,9 +10748,10 @@
     "imdbPersonId": "nm10746258",
     "gender": "Female",
     "knownForDepartment": "Acting",
-    "knownCredits": 16,
+    "knownCredits": 17,
     "instagramId": "ava_liz_torres",
-    "tmdbUpdatedAt": "2026-09-20T16:20:09.432Z"
+    "tmdbUpdatedAt": "2026-10-03T12:10:16.586Z",
+    "tmdbFetchedAt": "2026-10-03T12:10:16.586Z"
   },
   {
     "id": "ava-weiss",
@@ -15695,10 +15697,10 @@
     "imdbPersonId": "nm7004768",
     "gender": "Female",
     "knownForDepartment": "Acting",
-    "knownCredits": 19,
+    "knownCredits": 20,
     "instagramId": "briannacohenofficial",
-    "tmdbUpdatedAt": "2026-09-25T21:37:15.659Z",
-    "tmdbFetchedAt": "2026-09-25T21:37:15.659Z"
+    "tmdbUpdatedAt": "2026-10-03T12:10:54.421Z",
+    "tmdbFetchedAt": "2026-10-03T12:10:54.421Z"
   },
   {
     "id": "1281759",
@@ -23281,7 +23283,7 @@
     "imdbPersonId": "nm0410171",
     "gender": "Male",
     "knownForDepartment": "Acting",
-    "knownCredits": 425,
+    "knownCredits": 426,
     "alsoKnownAs": [
       "Jericho",
       "Moongoose McQueen",
@@ -23316,7 +23318,8 @@
     "instagramId": "chrisjerichofozzy",
     "twitterId": "IAmJericho",
     "facebookId": "ChrisJericho",
-    "tmdbUpdatedAt": "2026-09-21T12:59:49.233Z"
+    "tmdbUpdatedAt": "2026-10-03T12:14:13.833Z",
+    "tmdbFetchedAt": "2026-10-03T12:14:13.833Z"
   },
   {
     "id": "christopher-jacot",
@@ -25690,13 +25693,13 @@
     "imdbPersonId": "nm0005269",
     "gender": "Male",
     "knownForDepartment": "Acting",
-    "knownCredits": 109,
+    "knownCredits": 110,
     "alsoKnownAs": [
       "Corin 'Corky' Nemec",
       "Corky Nemec"
     ],
-    "tmdbUpdatedAt": "2026-10-01T13:43:37.189Z",
-    "tmdbFetchedAt": "2026-10-01T13:43:37.189Z"
+    "tmdbUpdatedAt": "2026-10-03T12:14:34.991Z",
+    "tmdbFetchedAt": "2026-10-03T12:14:34.991Z"
   },
   {
     "id": "corina-akeson",
@@ -28257,7 +28260,7 @@
     "imdbPersonId": "nm0001879",
     "gender": "Female",
     "knownForDepartment": "Acting",
-    "knownCredits": 96,
+    "knownCredits": 97,
     "alsoKnownAs": [
       "达芙妮·祖尼加",
       "دافنه زونیگا",
@@ -28265,7 +28268,8 @@
     ],
     "instagramId": "DaphneZuniga",
     "twitterId": "DaphneZuniga",
-    "tmdbUpdatedAt": "2026-09-20T16:20:38.951Z"
+    "tmdbUpdatedAt": "2026-10-03T12:14:49.420Z",
+    "tmdbFetchedAt": "2026-10-03T12:14:49.420Z"
   },
   {
     "id": "dara-nfon",
@@ -31055,10 +31059,10 @@
     "imdbPersonId": "nm0160503",
     "gender": "Female",
     "knownForDepartment": "Acting",
-    "knownCredits": 66,
+    "knownCredits": 67,
     "instagramId": "debrachristofferson",
-    "tmdbUpdatedAt": "2026-10-01T13:48:08.455Z",
-    "tmdbFetchedAt": "2026-10-01T13:48:08.455Z"
+    "tmdbUpdatedAt": "2026-10-03T12:15:10.199Z",
+    "tmdbFetchedAt": "2026-10-03T12:15:10.199Z"
   },
   {
     "id": "debra-demille",
@@ -32190,15 +32194,15 @@
     "imdbPersonId": "nm0973974",
     "gender": "Male",
     "knownForDepartment": "Acting",
-    "knownCredits": 40,
+    "knownCredits": 38,
     "alsoKnownAs": [
       "Devon Joseph Werkheiser"
     ],
     "instagramId": "devonwerkharder",
     "twitterId": "devonwerkharder",
     "facebookId": "devonwerkheiserofficially",
-    "tmdbUpdatedAt": "2026-10-02T17:45:01.151Z",
-    "tmdbFetchedAt": "2026-10-02T17:45:01.151Z"
+    "tmdbUpdatedAt": "2026-10-03T12:15:18.221Z",
+    "tmdbFetchedAt": "2026-10-03T12:15:18.221Z"
   },
   {
     "id": "devon-white",
@@ -33840,7 +33844,9 @@
     "tmdbPersonId": 60091,
     "photoUrl": "/images/people/60091.webp",
     "profileUrl": "/images/people/60091.webp",
-    "biography": "Doug Murray is a Canadian entertainment and media lawyer as well as film and television actor. He holds a Bachelor of Laws (LL.B.) from the University of Toronto, Ontario, Canada.",
+    "birthday": "1973-07-28",
+    "placeOfBirth": "Toronto, Ontario, Canada",
+    "biography": "Doug Murray (born 28 July 1973, Toronto, Ontario, Canada) is a Canadian actor, producer, and entertainment lawyer. He holds a law degree from the University of Toronto and is a partner at a Toronto entertainment law firm. In film, he has appeared in Spotlight (2015), Miss Sloane (2016), and How to Lose a Guy in 10 Days (2003). On television he has had roles in Orphan Black, Rookie Blue, and Suits. In voice work, he is known as Mailbox in Blue's Clues & You! (2019–2022).",
     "imdbPersonId": "nm0614921",
     "gender": "Male",
     "knownForDepartment": "Acting",
@@ -33848,7 +33854,8 @@
     "alsoKnownAs": [
       "Douglas Murray"
     ],
-    "tmdbUpdatedAt": "2026-09-20T16:18:58.539Z"
+    "tmdbUpdatedAt": "2026-10-03T12:15:29.265Z",
+    "tmdbFetchedAt": "2026-10-03T12:15:29.265Z"
   },
   {
     "id": "doug-plaut",
@@ -33891,12 +33898,12 @@
     "imdbPersonId": "nm0056492",
     "gender": "Male",
     "knownForDepartment": "Directing",
-    "knownCredits": 49,
+    "knownCredits": 50,
     "alsoKnownAs": [
       "Doug Barr"
     ],
-    "tmdbUpdatedAt": "2026-10-01T10:28:01.669Z",
-    "tmdbFetchedAt": "2026-10-01T10:28:01.669Z"
+    "tmdbUpdatedAt": "2026-10-03T12:15:30.961Z",
+    "tmdbFetchedAt": "2026-10-03T12:15:30.961Z"
   },
   {
     "id": "1562523",
@@ -34197,11 +34204,12 @@
     "imdbPersonId": "nm3642011",
     "gender": "Male",
     "knownForDepartment": "Acting",
-    "knownCredits": 9,
+    "knownCredits": 10,
     "alsoKnownAs": [
       "Drummond MacDougall"
     ],
-    "tmdbUpdatedAt": "2026-09-20T16:18:55.385Z"
+    "tmdbUpdatedAt": "2026-10-03T12:15:32.195Z",
+    "tmdbFetchedAt": "2026-10-03T12:15:32.195Z"
   },
   {
     "id": "duane-henry",
@@ -35636,7 +35644,7 @@
     "imdbPersonId": "nm0737533",
     "gender": "Female",
     "knownForDepartment": "Acting",
-    "knownCredits": 92,
+    "knownCredits": 93,
     "alsoKnownAs": [
       "Elisabeth Rohm",
       "Elizabeth Rohm"
@@ -35644,7 +35652,8 @@
     "instagramId": "elisabethrohm",
     "twitterId": "ElisabethRohm",
     "facebookId": "ElisabethRohm",
-    "tmdbUpdatedAt": "2026-09-21T14:35:28.793Z"
+    "tmdbUpdatedAt": "2026-10-03T12:15:43.268Z",
+    "tmdbFetchedAt": "2026-10-03T12:15:43.268Z"
   },
   {
     "id": "elise-bauman",
@@ -36413,9 +36422,9 @@
     "imdbPersonId": "nm0367762",
     "gender": "Female",
     "knownForDepartment": "Acting",
-    "knownCredits": 102,
-    "tmdbUpdatedAt": "2026-10-01T09:27:37.815Z",
-    "tmdbFetchedAt": "2026-10-01T09:27:37.815Z"
+    "knownCredits": 103,
+    "tmdbUpdatedAt": "2026-10-03T12:15:47.750Z",
+    "tmdbFetchedAt": "2026-10-03T12:15:47.750Z"
   },
   {
     "id": "ellie-stewart",
@@ -38803,7 +38812,7 @@
     "imdbPersonId": "nm0001368",
     "gender": "Male",
     "knownForDepartment": "Acting",
-    "knownCredits": 244,
+    "knownCredits": 246,
     "alsoKnownAs": [
       "어니 허드슨",
       "Ерні Хадсон",
@@ -38812,8 +38821,8 @@
     ],
     "instagramId": "ernie_hudson",
     "twitterId": "Ernie_Hudson",
-    "tmdbUpdatedAt": "2026-10-01T14:17:14.489Z",
-    "tmdbFetchedAt": "2026-10-01T14:17:14.489Z"
+    "tmdbUpdatedAt": "2026-10-03T12:16:03.636Z",
+    "tmdbFetchedAt": "2026-10-03T12:16:03.636Z"
   },
   {
     "id": "ernie-pitts",
@@ -47914,14 +47923,13 @@
     "knownForDepartment": "Acting",
     "knownCredits": 25,
     "alsoKnownAs": [
-      "伊莎貝拉・維多維克",
       "Bella V"
     ],
     "instagramId": "izabelavidovic",
     "twitterId": "izabelavidovic",
     "facebookId": "vidovicizabela",
-    "tmdbUpdatedAt": "2026-10-01T10:14:48.739Z",
-    "tmdbFetchedAt": "2026-10-01T10:14:48.739Z"
+    "tmdbUpdatedAt": "2026-10-03T12:17:09.224Z",
+    "tmdbFetchedAt": "2026-10-03T12:17:09.224Z"
   },
   {
     "id": "izzy-herbert",
@@ -50312,8 +50320,9 @@
     "imdbPersonId": "nm0792177",
     "gender": "Male",
     "knownForDepartment": "Acting",
-    "knownCredits": 71,
-    "tmdbUpdatedAt": "2026-09-20T16:19:40.954Z"
+    "knownCredits": 72,
+    "tmdbUpdatedAt": "2026-10-03T12:17:28.504Z",
+    "tmdbFetchedAt": "2026-10-03T12:17:28.504Z"
   },
   {
     "id": "jami-gertz",
@@ -51756,8 +51765,9 @@
     "imdbPersonId": "nm4021837",
     "gender": "Male",
     "knownForDepartment": "Acting",
-    "knownCredits": 33,
-    "tmdbUpdatedAt": "2026-09-22T20:53:49.676Z"
+    "knownCredits": 34,
+    "tmdbUpdatedAt": "2026-10-03T12:17:39.323Z",
+    "tmdbFetchedAt": "2026-10-03T12:17:39.323Z"
   },
   {
     "id": "jason-tremblay",
@@ -52873,9 +52883,9 @@
     "imdbPersonId": "nm0770848",
     "gender": "Male",
     "knownForDepartment": "Production",
-    "knownCredits": 249,
-    "tmdbUpdatedAt": "2026-10-01T10:07:29.050Z",
-    "tmdbFetchedAt": "2026-10-01T10:07:29.050Z"
+    "knownCredits": 250,
+    "tmdbUpdatedAt": "2026-10-03T12:17:47.664Z",
+    "tmdbFetchedAt": "2026-10-03T12:17:47.664Z"
   },
   {
     "id": "1175245",
@@ -56736,15 +56746,15 @@
     "imdbPersonId": "nm0001592",
     "gender": "Male",
     "knownForDepartment": "Acting",
-    "knownCredits": 168,
+    "knownCredits": 167,
     "alsoKnownAs": [
       "Joseph Peter \"Joe\" Pantoliano",
       "Joey Pants",
       "喬·潘托利亞諾",
       "جو پانتولیانو"
     ],
-    "tmdbUpdatedAt": "2026-10-02T17:47:25.767Z",
-    "tmdbFetchedAt": "2026-10-02T17:47:25.767Z"
+    "tmdbUpdatedAt": "2026-10-03T12:18:16.026Z",
+    "tmdbFetchedAt": "2026-10-03T12:18:16.026Z"
   },
   {
     "id": "joe-perry",
@@ -56772,13 +56782,13 @@
     "profileUrl": "/images/people/86237.webp",
     "birthday": "1972-05-03",
     "placeOfBirth": "Niagara Falls, Ontario, Canada",
-    "biography": "Joe Pingue is a versatile Canadian character actor, filmmaker, and voice artist with over 100 credits spanning film and television. He is best known for his supporting roles in major productions like The Book of Eli, The Boondock Saints, and the sci-fi series The Expanse.",
+    "biography": "Joe Pingue (born 3 May 1972, Ontario, Canada) is a Canadian character actor, filmmaker, and voice artist with over 100 credits. He is best known as Captain McDowell in The Expanse (2015–2022) and for film roles in Pacific Rim (2013), Room (2015), Miss Sloane (2016), and The Apprentice (2024). He has worked with directors including David Cronenberg, Nicolas Winding Refn, and Guillermo del Toro. In voice work, he is known as Barney in PAW Patrol: The Movie (2021) and Johnny in The Nut Job (2014).",
     "imdbPersonId": "nm0684187",
     "gender": "Male",
     "knownForDepartment": "Acting",
     "knownCredits": 105,
-    "tmdbUpdatedAt": "2026-10-01T09:27:21.152Z",
-    "tmdbFetchedAt": "2026-10-01T09:27:21.152Z"
+    "tmdbUpdatedAt": "2026-10-03T12:18:15.208Z",
+    "tmdbFetchedAt": "2026-10-03T12:18:15.208Z"
   },
   {
     "id": "joe-sciammarella",
@@ -56827,6 +56837,16 @@
     "knownForDepartment": "Acting",
     "knownCredits": 13,
     "tmdbUpdatedAt": "2026-09-20T16:19:28.069Z"
+  },
+  {
+    "id": "2546606",
+    "slug": "joebuz",
+    "name": "JoeBuz",
+    "tmdbPersonId": 2546606,
+    "knownForDepartment": "Acting",
+    "knownCredits": 2,
+    "tmdbUpdatedAt": "2026-10-03T12:26:16.889Z",
+    "tmdbFetchedAt": "2026-10-03T12:26:16.889Z"
   },
   {
     "id": "1711520",
@@ -58402,14 +58422,14 @@
     "imdbPersonId": "nm0108637",
     "gender": "Male",
     "knownForDepartment": "Acting",
-    "knownCredits": 91,
+    "knownCredits": 92,
     "alsoKnownAs": [
       "John Riann"
     ],
     "instagramId": "jonbriddell",
     "twitterId": "actorjonnyb",
-    "tmdbUpdatedAt": "2026-10-01T13:43:38.446Z",
-    "tmdbFetchedAt": "2026-10-01T13:43:38.446Z"
+    "tmdbUpdatedAt": "2026-10-03T12:18:28.583Z",
+    "tmdbFetchedAt": "2026-10-03T12:18:28.583Z"
   },
   {
     "id": "jon-cesar",
@@ -59769,8 +59789,9 @@
     "imdbPersonId": "nm10632860",
     "gender": "Male",
     "knownForDepartment": "Acting",
-    "knownCredits": 33,
-    "tmdbUpdatedAt": "2026-09-20T16:19:12.283Z"
+    "knownCredits": 34,
+    "tmdbUpdatedAt": "2026-10-03T12:18:39.169Z",
+    "tmdbFetchedAt": "2026-10-03T12:18:39.169Z"
   },
   {
     "id": "joseph-motiki",
@@ -60755,11 +60776,12 @@
     "imdbPersonId": "nm2959299",
     "gender": "Male",
     "knownForDepartment": "Acting",
-    "knownCredits": 7,
+    "knownCredits": 8,
     "alsoKnownAs": [
       "Blake"
     ],
-    "tmdbUpdatedAt": "2026-09-20T16:17:47.199Z"
+    "tmdbUpdatedAt": "2026-10-03T12:18:46.433Z",
+    "tmdbFetchedAt": "2026-10-03T12:18:46.433Z"
   },
   {
     "id": "1224799",
@@ -61593,15 +61615,15 @@
     "imdbPersonId": "nm0672413",
     "gender": "Female",
     "knownForDepartment": "Acting",
-    "knownCredits": 47,
+    "knownCredits": 48,
     "alsoKnownAs": [
       "June Pentyliuk",
       "June B. Wilde-Eremico",
       "June Wilde",
       "June B. Wilde Ermenko"
     ],
-    "tmdbUpdatedAt": "2026-10-01T10:28:05.033Z",
-    "tmdbFetchedAt": "2026-10-01T10:28:05.033Z"
+    "tmdbUpdatedAt": "2026-10-03T12:18:52.458Z",
+    "tmdbFetchedAt": "2026-10-03T12:18:52.458Z"
   },
   {
     "id": "june-squibb",
@@ -62235,9 +62257,9 @@
     "imdbPersonId": "nm4155545",
     "gender": "Female",
     "knownForDepartment": "Acting",
-    "knownCredits": 3,
-    "tmdbUpdatedAt": "2026-10-01T13:48:09.445Z",
-    "tmdbFetchedAt": "2026-10-01T13:48:09.445Z"
+    "knownCredits": 4,
+    "tmdbUpdatedAt": "2026-10-03T12:18:56.705Z",
+    "tmdbFetchedAt": "2026-10-03T12:18:56.705Z"
   },
   {
     "id": "145213",
@@ -66838,13 +66860,13 @@
     "photoUrl": "/images/people/2676.webp",
     "profileUrl": "/images/people/2676.webp",
     "placeOfBirth": "Toronto, Ontario, Canada",
-    "biography": "Kim Roberts is a distinguished Canadian actress, voice artist, and theatre pioneer born in Toronto. With a career spanning over 35 years and more than 200 screen credits, she is a trailblazer for artists of color in Canada. She is widely recognized for her voice work as Mayor Goodway in PAW Patrol and her roles in acclaimed series like The Handmaid's Tale, Schitt's Creek, and The Sinner.",
+    "biography": "Kim Roberts (born 16 July, Toronto, Ontario, Canada) is a Canadian actress, voice artist, and theatre pioneer with over 200 credits. She is one of the thirteen founding members of Obsidian Theatre Company and made history as the first woman of African descent to be the speaking lead in a nationally televised Canadian commercial. In film, she has appeared in Dawn of the Dead (2004), Saw III (2006), I'm Not There (2007), and Remember (2015). On television she has had roles in The Handmaid's Tale, Schitt's Creek, and The Sinner. In voice work, she is best known as Mayor Goodway in PAW Patrol (2013–present).",
     "imdbPersonId": "nm0731323",
     "gender": "Female",
     "knownForDepartment": "Acting",
     "knownCredits": 102,
-    "tmdbUpdatedAt": "2026-10-01T09:27:20.670Z",
-    "tmdbFetchedAt": "2026-10-01T09:27:20.670Z"
+    "tmdbUpdatedAt": "2026-10-03T12:19:30.948Z",
+    "tmdbFetchedAt": "2026-10-03T12:19:30.948Z"
   },
   {
     "id": "kim-shaw",
@@ -67953,10 +67975,13 @@
     "slug": "kristine-beckett",
     "name": "Kristine Beckett",
     "tmdbPersonId": 5322200,
+    "photoUrl": "/images/people/5322200.webp",
+    "profileUrl": "/images/people/5322200.webp",
+    "gender": "Female",
     "knownForDepartment": "Acting",
-    "knownCredits": 4,
-    "tmdbUpdatedAt": "2026-09-26T05:12:02.218Z",
-    "tmdbFetchedAt": "2026-09-26T05:12:02.218Z"
+    "knownCredits": 5,
+    "tmdbUpdatedAt": "2026-10-03T12:19:38.984Z",
+    "tmdbFetchedAt": "2026-10-03T12:19:38.984Z"
   },
   {
     "id": "kristine-cofsky",
@@ -72724,8 +72749,9 @@
     "imdbPersonId": "nm5945911",
     "gender": "Female",
     "knownForDepartment": "Acting",
-    "knownCredits": 22,
-    "tmdbUpdatedAt": "2026-09-20T16:18:10.296Z"
+    "knownCredits": 23,
+    "tmdbUpdatedAt": "2026-10-03T12:20:15.438Z",
+    "tmdbFetchedAt": "2026-10-03T12:20:15.438Z"
   },
   {
     "id": "215423",
@@ -74287,14 +74313,14 @@
     "imdbPersonId": "nm1682832",
     "gender": "Male",
     "knownForDepartment": "Acting",
-    "knownCredits": 58,
+    "knownCredits": 59,
     "alsoKnownAs": [
       "Luke MacFarlane",
       "Thomas Luke Macfarlane"
     ],
     "instagramId": "ten_minutes_younger",
-    "tmdbUpdatedAt": "2026-09-25T18:44:24.222Z",
-    "tmdbFetchedAt": "2026-09-25T18:44:24.222Z"
+    "tmdbUpdatedAt": "2026-10-03T12:20:27.669Z",
+    "tmdbFetchedAt": "2026-10-03T12:20:27.669Z"
   },
   {
     "id": "luke-marty",
@@ -78849,7 +78875,7 @@
     "profileUrl": "/images/people/5921.webp",
     "birthday": "1962-07-15",
     "placeOfBirth": "Toronto, Ontario, Canada",
-    "biography": "Martin Roach (born July 15th, 1962) is a Canadian actor.",
+    "biography": "Martin Roach (born 15 July 1962, Winnipeg, Manitoba, Canada) is an African-Canadian actor and voice actor. He is best known as Admiral Michael Souther in The Expanse (2015–2018) and Picard in Reacher (2022). In film, he has appeared in Spotlight (2015), The Shape of Water (2017), and Shazam! (2019). In voice acting, he is known as Dr. Claw in the Inspector Gadget reboot (2015–2018) and Pastor Jerome Jeffries in Far Cry 5 (2018).",
     "imdbPersonId": "nm0730045",
     "gender": "Male",
     "knownForDepartment": "Acting",
@@ -78858,8 +78884,8 @@
       "مارتین روچ"
     ],
     "instagramId": "roachmonmotel",
-    "tmdbUpdatedAt": "2026-10-02T17:49:35.819Z",
-    "tmdbFetchedAt": "2026-10-02T17:49:35.819Z"
+    "tmdbUpdatedAt": "2026-10-03T12:21:02.578Z",
+    "tmdbFetchedAt": "2026-10-03T12:21:02.578Z"
   },
   {
     "id": "martin-roach",
@@ -82747,7 +82773,7 @@
     "imdbPersonId": "nm0541218",
     "gender": "Male",
     "knownForDepartment": "Acting",
-    "knownCredits": 158,
+    "knownCredits": 159,
     "alsoKnownAs": [
       "Clifford Smith",
       "Wu-Tang Clan",
@@ -82755,7 +82781,8 @@
     ],
     "instagramId": "methodmanofficial",
     "twitterId": "methodman",
-    "tmdbUpdatedAt": "2026-09-20T16:20:50.444Z"
+    "tmdbUpdatedAt": "2026-10-03T12:21:30.088Z",
+    "tmdbFetchedAt": "2026-10-03T12:21:30.088Z"
   },
   {
     "id": "1110710",
@@ -82831,9 +82858,13 @@
     "tmdbPersonId": 3851625,
     "photoUrl": "/images/people/3851625.webp",
     "profileUrl": "/images/people/3851625.webp",
+    "placeOfBirth": "Australia",
+    "biography": "Mia Grunwald is an actress known for her work in television and film, including a growing number of romantic and holiday productions. Her credits include Love Is in the Air, Romance at the Vineyard, Designing Christmas with You and A Vintage Christmas. She has also appeared in productions including Killer Whale, Black Snow and The Full-Time Love Rat. For Christmas movie audiences, Grunwald is particularly known for her roles in festive romances including Designing Christmas with You and A Vintage Christmas.",
+    "gender": "Female",
     "knownForDepartment": "Acting",
     "knownCredits": 9,
-    "tmdbUpdatedAt": "2026-09-20T16:19:19.391Z"
+    "tmdbUpdatedAt": "2026-10-03T12:21:30.858Z",
+    "tmdbFetchedAt": "2026-10-03T12:21:30.858Z"
   },
   {
     "id": "mia-harris",
@@ -86386,15 +86417,15 @@
     "imdbPersonId": "nm0000208",
     "gender": "Female",
     "knownForDepartment": "Acting",
-    "knownCredits": 112,
+    "knownCredits": 113,
     "alsoKnownAs": [
       "Molly Kathleen Ringwald"
     ],
     "instagramId": "mollyringwald",
     "twitterId": "mollyringwald",
     "facebookId": "IamMollyRingwald",
-    "tmdbUpdatedAt": "2026-10-02T17:50:20.530Z",
-    "tmdbFetchedAt": "2026-10-02T17:50:20.530Z"
+    "tmdbUpdatedAt": "2026-10-03T12:21:55.620Z",
+    "tmdbFetchedAt": "2026-10-03T12:21:55.620Z"
   },
   {
     "id": "monaye-moyes",
@@ -87410,8 +87441,9 @@
     "imdbPersonId": "nm4770373",
     "gender": "Female",
     "knownForDepartment": "Acting",
-    "knownCredits": 10,
-    "tmdbUpdatedAt": "2026-09-21T13:00:44.908Z"
+    "knownCredits": 11,
+    "tmdbUpdatedAt": "2026-10-03T12:22:03.487Z",
+    "tmdbFetchedAt": "2026-10-03T12:22:03.487Z"
   },
   {
     "id": "155778",
@@ -88057,14 +88089,15 @@
     "profileUrl": "/images/people/210818.webp",
     "birthday": "1981-03-26",
     "placeOfBirth": "Toronto, Ontario, Canada",
-    "biography": "Neal Bledsoe is an American actor born in Toronto, Canada and raised in Seattle.",
+    "biography": "Neal Bledsoe is an American actor known to Christmas movie audiences for his roles in festive romantic films including Coming Home for Christmas, The Christmas Carousel, The Winter Palace, and Must Love Christmas. Born in Toronto, Canada and raised in Seattle, Bledsoe has worked across film and television, with credits spanning drama, comedy and romance. His Christmas films have made him a familiar face to viewers of Hallmark and other holiday networks.",
     "imdbPersonId": "nm2016364",
     "gender": "Male",
     "knownForDepartment": "Acting",
     "knownCredits": 43,
     "instagramId": "becauseibledsoe",
     "twitterId": "becauseibledsoe",
-    "tmdbUpdatedAt": "2026-09-20T16:18:10.139Z"
+    "tmdbUpdatedAt": "2026-10-03T12:22:08.557Z",
+    "tmdbFetchedAt": "2026-10-03T12:22:08.557Z"
   },
   {
     "id": "36129",
@@ -89191,9 +89224,9 @@
     "imdbPersonId": "nm4451504",
     "gender": "Female",
     "knownForDepartment": "Acting",
-    "knownCredits": 7,
-    "tmdbUpdatedAt": "2026-10-02T22:24:13.695Z",
-    "tmdbFetchedAt": "2026-10-02T22:24:13.695Z"
+    "knownCredits": 8,
+    "tmdbUpdatedAt": "2026-10-03T12:22:17.261Z",
+    "tmdbFetchedAt": "2026-10-03T12:22:17.261Z"
   },
   {
     "id": "nicole-eggert",
@@ -92762,9 +92795,9 @@
     "imdbPersonId": "nm0569295",
     "gender": "Male",
     "knownForDepartment": "Acting",
-    "knownCredits": 95,
-    "tmdbUpdatedAt": "2026-10-01T10:07:46.400Z",
-    "tmdbFetchedAt": "2026-10-01T10:07:46.400Z"
+    "knownCredits": 96,
+    "tmdbUpdatedAt": "2026-10-03T12:22:44.030Z",
+    "tmdbFetchedAt": "2026-10-03T12:22:44.030Z"
   },
   {
     "id": "3704265",
@@ -93981,9 +94014,9 @@
     "imdbPersonId": "nm0838289",
     "gender": "Male",
     "knownForDepartment": "Writing",
-    "knownCredits": 201,
-    "tmdbUpdatedAt": "2026-10-02T17:51:04.571Z",
-    "tmdbFetchedAt": "2026-10-02T17:51:04.571Z"
+    "knownCredits": 202,
+    "tmdbUpdatedAt": "2026-10-03T12:22:54.393Z",
+    "tmdbFetchedAt": "2026-10-03T12:22:54.393Z"
   },
   {
     "id": "147792",
@@ -94409,10 +94442,10 @@
     "imdbPersonId": "nm10138913",
     "gender": "Female",
     "knownForDepartment": "Acting",
-    "knownCredits": 11,
+    "knownCredits": 12,
     "instagramId": "piperrubio",
-    "tmdbUpdatedAt": "2026-10-02T17:51:06.945Z",
-    "tmdbFetchedAt": "2026-10-02T17:51:06.945Z"
+    "tmdbUpdatedAt": "2026-10-03T12:22:57.448Z",
+    "tmdbFetchedAt": "2026-10-03T12:22:57.448Z"
   },
   {
     "id": "1366720",
@@ -96936,6 +96969,8 @@
     "slug": "rhonda-baraka",
     "name": "Rhonda Baraka",
     "tmdbPersonId": 235557,
+    "photoUrl": "/images/people/235557.webp",
+    "profileUrl": "/images/people/235557.webp",
     "imdbPersonId": "nm2985554",
     "gender": "Female",
     "knownForDepartment": "Writing",
@@ -96944,7 +96979,9 @@
       "Rhonda F. Baraka",
       "Rhonda Freeman-Baraka"
     ],
-    "tmdbUpdatedAt": "2026-09-21T13:18:35.377Z"
+    "instagramId": "rhondafbaraka",
+    "tmdbUpdatedAt": "2026-10-03T12:23:19.222Z",
+    "tmdbFetchedAt": "2026-10-03T12:23:19.222Z"
   },
   {
     "id": "rhonda-dent",
@@ -97873,8 +97910,9 @@
     "imdbPersonId": "nm0619868",
     "gender": "Male",
     "knownForDepartment": "Acting",
-    "knownCredits": 22,
-    "tmdbUpdatedAt": "2026-09-20T16:20:16.002Z"
+    "knownCredits": 23,
+    "tmdbUpdatedAt": "2026-10-03T12:23:26.324Z",
+    "tmdbFetchedAt": "2026-10-03T12:23:26.324Z"
   },
   {
     "id": "64808",
@@ -99278,9 +99316,9 @@
     "imdbPersonId": "nm0242903",
     "gender": "Male",
     "knownForDepartment": "Acting",
-    "knownCredits": 88,
-    "tmdbUpdatedAt": "2026-09-25T21:37:13.758Z",
-    "tmdbFetchedAt": "2026-09-25T21:37:13.758Z"
+    "knownCredits": 89,
+    "tmdbUpdatedAt": "2026-10-03T12:23:37.467Z",
+    "tmdbFetchedAt": "2026-10-03T12:23:37.467Z"
   },
   {
     "id": "4519493",
@@ -100329,9 +100367,9 @@
     "imdbPersonId": "nm0336923",
     "gender": "Male",
     "knownForDepartment": "Acting",
-    "knownCredits": 52,
-    "tmdbUpdatedAt": "2026-10-01T14:05:20.219Z",
-    "tmdbFetchedAt": "2026-10-01T14:05:20.219Z"
+    "knownCredits": 53,
+    "tmdbUpdatedAt": "2026-10-03T12:23:46.290Z",
+    "tmdbFetchedAt": "2026-10-03T12:23:46.290Z"
   },
   {
     "id": "rowan-finken",
@@ -103684,6 +103722,29 @@
     "tmdbUpdatedAt": "2026-09-20T16:20:37.027Z"
   },
   {
+    "id": "1365662",
+    "slug": "scott-alexander-young",
+    "name": "Scott Alexander Young",
+    "tmdbPersonId": 1365662,
+    "photoUrl": "/images/people/1365662.webp",
+    "profileUrl": "/images/people/1365662.webp",
+    "birthday": "1965-12-22",
+    "biography": "Scott Alexander Young is an American actor, producer, and writer.",
+    "imdbPersonId": "nm1488880",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 34,
+    "alsoKnownAs": [
+      "Scott Young",
+      "Scott Alexander",
+      "Scott A. Young",
+      "Scott A Young",
+      "Alexander Scott Young"
+    ],
+    "tmdbUpdatedAt": "2026-10-03T12:26:17.310Z",
+    "tmdbFetchedAt": "2026-10-03T12:26:17.310Z"
+  },
+  {
     "id": "scott-allen-perry",
     "slug": "scott-allen-perry",
     "name": "Scott Allen Perry",
@@ -104726,11 +104787,12 @@
     "tmdbPersonId": 938025,
     "imdbPersonId": "nm1235963",
     "knownForDepartment": "Directing",
-    "knownCredits": 26,
+    "knownCredits": 27,
     "alsoKnownAs": [
       "Sean Robert Olson"
     ],
-    "tmdbUpdatedAt": "2026-09-22T20:53:41.102Z"
+    "tmdbUpdatedAt": "2026-10-03T12:24:22.645Z",
+    "tmdbFetchedAt": "2026-10-03T12:24:22.645Z"
   },
   {
     "id": "sean-patrick-thomas",
@@ -105144,10 +105206,11 @@
     "imdbPersonId": "nm1443478",
     "gender": "Male",
     "knownForDepartment": "Acting",
-    "knownCredits": 71,
+    "knownCredits": 70,
     "instagramId": "sethismorris",
     "twitterId": "sethismorris",
-    "tmdbUpdatedAt": "2026-09-20T16:17:26.902Z"
+    "tmdbUpdatedAt": "2026-10-03T12:24:25.595Z",
+    "tmdbFetchedAt": "2026-10-03T12:24:25.595Z"
   },
   {
     "id": "shadan-saul-guerrero",
@@ -107049,8 +107112,9 @@
     "profileUrl": "/images/people/1982411.webp",
     "gender": "Female",
     "knownForDepartment": "Directing",
-    "knownCredits": 16,
-    "tmdbUpdatedAt": "2026-09-22T20:53:40.321Z"
+    "knownCredits": 17,
+    "tmdbUpdatedAt": "2026-10-03T12:24:40.979Z",
+    "tmdbFetchedAt": "2026-10-03T12:24:40.979Z"
   },
   {
     "id": "siobhan-murphy",
@@ -107079,15 +107143,15 @@
     "imdbPersonId": "nm3768164",
     "gender": "Female",
     "knownForDepartment": "Acting",
-    "knownCredits": 35,
+    "knownCredits": 36,
     "alsoKnownAs": [
       "シボーン・ウィリアムズ",
       "SIØBHAN"
     ],
     "instagramId": "siobhan",
     "twitterId": "siobhanw_",
-    "tmdbUpdatedAt": "2026-09-25T20:54:37.125Z",
-    "tmdbFetchedAt": "2026-09-25T20:54:37.125Z"
+    "tmdbUpdatedAt": "2026-10-03T12:24:41.136Z",
+    "tmdbFetchedAt": "2026-10-03T12:24:41.136Z"
   },
   {
     "id": "5624103",
@@ -107555,13 +107619,14 @@
     "imdbPersonId": "nm2027536",
     "gender": "Female",
     "knownForDepartment": "Acting",
-    "knownCredits": 11,
+    "knownCredits": 12,
     "alsoKnownAs": [
       "Jennifer Sorika",
       "Jennifer Sorika Horng",
       "Sorika Wolf"
     ],
-    "tmdbUpdatedAt": "2026-09-20T16:18:06.433Z"
+    "tmdbUpdatedAt": "2026-10-03T12:24:45.027Z",
+    "tmdbFetchedAt": "2026-10-03T12:24:45.027Z"
   },
   {
     "id": "sosie-bacon",
@@ -110325,12 +110390,19 @@
     "tmdbPersonId": 1372761,
     "photoUrl": "/images/people/1372761.webp",
     "profileUrl": "/images/people/1372761.webp",
+    "birthday": "1960-01-01",
     "placeOfBirth": "Pittsburgh, Pennsylvania, USA",
     "biography": "Peacocke was born in Pittsburgh, Pennsylvania, and raised in Canada, and holds citizenship of both the United States and Canada. He graduated from Université de Caen, France, then attended Yale University, where he graduated magna cum laude in 1983. He later studied at New York University Tisch School of the Arts between 1983 and 1984. Peacocke married British citizen Amanda Pieris in the 2010s. Peacocke is well-known in the Canadian television industry, and has directed episodes of Madison, Cold Squad, Blue Murder, Traders and Made in Canada.\n\nHe has won two Canadian Comedy Awards for Best Direction of a television series (for Made in Canada in 2002 and Rent-a-Goalie in 2007) and a Gemini Award for Best Direction in a Comedy Program - Rent-a-Goalie in 2008).\n\nHe has directed more than 140 episodes of over twenty-five different television series, including Rookie Blue, Heartland, The Border, M.V.P. (which he also produced), Rent-a-Goalie, Show Me Yours, The Eleventh Hour, Blue Murder (on which he also served as creative consultant), Mutant X, Made in Canada, Cold Squad, Amazon, Traders, North of 60, The Rez, Black Harbour, The Crow: Stairway to Heaven, Jake and the Kid, Madison, Beast Wars: Transformers, The Odyssey, and Schitt's Creek. He also directed the four-hour television mini-series, Canada Russia '72, for which he received a Best Director Gemini Award nomination.\n\nHe has appeared as an actor numerous times, in episodes of Rent-a-Goalie, Traders, Madison, and Canada Russia '72, in which he played the captain of the Soviet hockey team, Victor Kuzkin.",
+    "imdbPersonId": "nm0668814",
     "gender": "Male",
     "knownForDepartment": "Directing",
     "knownCredits": 25,
-    "tmdbUpdatedAt": "2026-09-22T20:53:32.006Z"
+    "alsoKnownAs": [
+      "T. W. Peacocke",
+      "TW Peacocke"
+    ],
+    "tmdbUpdatedAt": "2026-10-03T12:25:04.523Z",
+    "tmdbFetchedAt": "2026-10-03T12:25:04.523Z"
   },
   {
     "id": "taegen-burns",
@@ -111758,9 +111830,9 @@
     "name": "Taylor Warren Goff",
     "tmdbPersonId": 3064924,
     "knownForDepartment": "Writing",
-    "knownCredits": 26,
-    "tmdbUpdatedAt": "2026-10-01T13:48:04.644Z",
-    "tmdbFetchedAt": "2026-10-01T13:48:04.644Z"
+    "knownCredits": 27,
+    "tmdbUpdatedAt": "2026-10-03T12:25:14.153Z",
+    "tmdbFetchedAt": "2026-10-03T12:25:14.153Z"
   },
   {
     "id": "tea-cheney",
@@ -112599,20 +112671,6 @@
     "tmdbUpdatedAt": "2026-09-20T16:20:32.302Z"
   },
   {
-    "id": "thebarneydesk",
-    "slug": "thebarneydesk",
-    "name": "TheBarneyDesk",
-    "tmdbPersonId": 2860564,
-    "photoUrl": "/images/people/2860564.webp",
-    "profileUrl": "/images/people/2860564.webp",
-    "imdbPersonId": "nm11986424",
-    "gender": "Male",
-    "knownForDepartment": "Acting",
-    "knownCredits": 8,
-    "tmdbUpdatedAt": "2026-10-02T17:52:54.878Z",
-    "tmdbFetchedAt": "2026-10-02T17:52:54.878Z"
-  },
-  {
     "id": "theo-turner",
     "slug": "theo-turner",
     "name": "Theo turner",
@@ -113105,6 +113163,29 @@
     "tmdbFetchedAt": "2026-10-02T17:52:57.985Z"
   },
   {
+    "id": "19187",
+    "slug": "tiffani-amber-thiessen",
+    "name": "Tiffani Thiessen",
+    "tmdbPersonId": 19187,
+    "photoUrl": "/images/people/19187.webp",
+    "profileUrl": "/images/people/19187.webp",
+    "birthday": "1974-01-23",
+    "placeOfBirth": "Long Beach, California, USA",
+    "biography": "Tiffani Thiessen (born Tiffani-Amber Thiessen; January 23, 1974) is an American actress best known for her roles as Kelly Kapowski in Saved by the Bell and as Valerie Malone in Beverly Hills, 90210. She is also known for her role on Fastlane as Wilhelmina 'Billie' Chambers. As of 2009, she plays the role of Elizabeth Burke, in White Collar. After many years of going by her full name, Tiffani-Amber Thiessen, she is now credited as simply Tiffani Thiessen.\n\nDescription above from the Wikipedia article Tiffani Thiessen, licensed under CC-BY-SA, full list of contributors on Wikipedia.",
+    "imdbPersonId": "nm0005485",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 63,
+    "alsoKnownAs": [
+      "Tiffany Amber Thiessen"
+    ],
+    "instagramId": "tiffanithiessen",
+    "twitterId": "TiffaniThiessen",
+    "facebookId": "TiffaniThiessen",
+    "tmdbUpdatedAt": "2026-10-03T12:25:26.310Z",
+    "tmdbFetchedAt": "2026-10-03T12:25:26.310Z"
+  },
+  {
     "id": "tiffani-timms",
     "slug": "tiffani-timms",
     "name": "Tiffani Timms",
@@ -113132,29 +113213,6 @@
     "knownForDepartment": "Acting",
     "knownCredits": 1,
     "tmdbUpdatedAt": "2026-09-20T16:18:02.133Z"
-  },
-  {
-    "id": "19187",
-    "slug": "tiffani-amber-thiessen",
-    "name": "Tiffani-Amber Thiessen",
-    "tmdbPersonId": 19187,
-    "photoUrl": "/images/people/19187.webp",
-    "profileUrl": "/images/people/19187.webp",
-    "birthday": "1974-01-23",
-    "placeOfBirth": "Long Beach, California, USA",
-    "biography": "Tiffani Thiessen (born Tiffani-Amber Thiessen; January 23, 1974) is an American actress best known for her roles as Kelly Kapowski in Saved by the Bell and as Valerie Malone in Beverly Hills, 90210. She is also known for her role on Fastlane as Wilhelmina 'Billie' Chambers. As of 2009, she plays the role of Elizabeth Burke, in White Collar. After many years of going by her full name, Tiffani-Amber Thiessen, she is now credited as simply Tiffani Thiessen.\n\nDescription above from the Wikipedia article Tiffani Thiessen, licensed under CC-BY-SA, full list of contributors on Wikipedia.",
-    "imdbPersonId": "nm0005485",
-    "gender": "Female",
-    "knownForDepartment": "Acting",
-    "knownCredits": 63,
-    "alsoKnownAs": [
-      "Tiffany Amber Thiessen"
-    ],
-    "instagramId": "tiffanithiessen",
-    "twitterId": "TiffaniThiessen",
-    "facebookId": "TiffaniThiessen",
-    "tmdbUpdatedAt": "2026-10-01T10:28:01.848Z",
-    "tmdbFetchedAt": "2026-10-01T10:28:01.848Z"
   },
   {
     "id": "1104698",
@@ -116263,6 +116321,23 @@
     "tmdbFetchedAt": "2026-10-01T09:09:32.780Z"
   },
   {
+    "id": "thebarneydesk",
+    "slug": "thebarneydesk",
+    "name": "Tyson Kirk",
+    "tmdbPersonId": 2860564,
+    "photoUrl": "/images/people/2860564.webp",
+    "profileUrl": "/images/people/2860564.webp",
+    "imdbPersonId": "nm11986424",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 8,
+    "alsoKnownAs": [
+      "Tyson David Kirk"
+    ],
+    "tmdbUpdatedAt": "2026-10-03T12:25:21.257Z",
+    "tmdbFetchedAt": "2026-10-03T12:25:21.257Z"
+  },
+  {
     "id": "tzi-ma",
     "slug": "tzi-ma",
     "name": "Tzi Ma",
@@ -116969,16 +117044,17 @@
     "profileUrl": "/images/people/1252869.webp",
     "birthday": "1967-06-25",
     "placeOfBirth": "Toronto, Ontario, Canada",
-    "biography": "Veena Cabreros-Sud is a Canadian-born American television writer, director, and producer. Born in Toronto and of Filipino and Indian heritage, she is best known for developing the American television drama The Killing, which is based on the Danish series Forbrydelsen (The Crime). Sud received a Master of Fine Arts degree from the Film and Television program at New York University. Her credits on The Killing also include writer and executive producer. The series earned her an Emmy nomination and a Writers Guild of America award nomination. Her previous television work includes the dramatic series Cold Case, where she was a writer and executive producer. She was also an episode writer for the 2002 television series Push, Nevada. In February 2012, Paramount Pictures announced that Sud is writing a remake of Alfred Hitchcock's Suspicion. She was formerly the marketing and distribution director for Third World Newsreel, which specializes in films by and about people of color.",
+    "biography": "Veena Cabreros-Sud is a Canadian-American television writer, director, and producer, born in Toronto. She is best known for developing the American television drama The Killing, which is based on the Danish series Forbrydelsen (The Crime). Sud received a Master of Fine Arts degree from the Film and Television program at New York University. Her credits on The Killing also include writer and executive producer. The series earned her an Emmy nomination and a Writers Guild of America award nomination. Her previous television work includes the dramatic series Cold Case, where she was a writer and executive producer. She was also an episode writer for the 2002 television series Push, Nevada. In February 2012, Paramount Pictures announced that Sud is writing a remake of Alfred Hitchcock's Suspicion. She was formerly the marketing and distribution director for Third World Newsreel, which specializes in films by and about people of color.",
     "imdbPersonId": "nm0127894",
     "gender": "Female",
     "knownForDepartment": "Writing",
-    "knownCredits": 7,
+    "knownCredits": 9,
     "alsoKnownAs": [
-      "Veena Cabreros Sud"
+      "Veena Cabreros Sud",
+      "Veena Cabreros-Sud"
     ],
-    "tmdbUpdatedAt": "2026-10-02T22:24:14.275Z",
-    "tmdbFetchedAt": "2026-10-02T22:24:14.275Z"
+    "tmdbUpdatedAt": "2026-10-03T12:25:54.076Z",
+    "tmdbFetchedAt": "2026-10-03T12:25:54.076Z"
   },
   {
     "id": "veenu-sandhu",
@@ -117111,14 +117187,14 @@
     "imdbPersonId": "nm6702367",
     "gender": "Non-binary",
     "knownForDepartment": "Acting",
-    "knownCredits": 50,
+    "knownCredits": 45,
     "alsoKnownAs": [
       "Victoria Michaelis"
     ],
     "instagramId": "vicmmic",
     "twitterId": "vicmmic",
-    "tmdbUpdatedAt": "2026-10-02T17:53:22.161Z",
-    "tmdbFetchedAt": "2026-10-02T17:53:22.161Z"
+    "tmdbUpdatedAt": "2026-10-03T12:25:55.223Z",
+    "tmdbFetchedAt": "2026-10-03T12:25:55.223Z"
   },
   {
     "id": "5341281",
@@ -117217,14 +117293,14 @@
     "imdbPersonId": "nm0005543",
     "gender": "Male",
     "knownForDepartment": "Acting",
-    "knownCredits": 85,
+    "knownCredits": 86,
     "alsoKnownAs": [
       "Βίκτορ Γουέμπστερ"
     ],
     "instagramId": "iamvictorwebster",
     "twitterId": "webstervictor",
-    "tmdbUpdatedAt": "2026-09-25T18:44:21.952Z",
-    "tmdbFetchedAt": "2026-09-25T18:44:21.952Z"
+    "tmdbUpdatedAt": "2026-10-03T12:25:56.046Z",
+    "tmdbFetchedAt": "2026-10-03T12:25:56.046Z"
   },
   {
     "id": "victor-zinck-jr",
@@ -119013,10 +119089,11 @@
     "imdbPersonId": "nm6085243",
     "gender": "Male",
     "knownForDepartment": "Acting",
-    "knownCredits": 28,
+    "knownCredits": 29,
     "instagramId": "williamtokarsky",
     "facebookId": "william.tokarsky",
-    "tmdbUpdatedAt": "2026-09-21T13:16:13.271Z"
+    "tmdbUpdatedAt": "2026-10-03T12:26:08.498Z",
+    "tmdbFetchedAt": "2026-10-03T12:26:08.498Z"
   },
   {
     "id": "5099807",
