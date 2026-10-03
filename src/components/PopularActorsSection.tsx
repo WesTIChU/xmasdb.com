@@ -14,7 +14,7 @@ interface PopularActorsSectionProps {
 
 const ACTOR_SNOW_PARTICLES = ['❄', '·', '·', '❄', '·', '·', '❄', '·'];
 
-const ActorCircularPortrait: React.FC<{
+export const ActorCircularPortrait: React.FC<{
   actor: PopularActorsGroup['actors'][number];
   accentColor: string;
 }> = ({ actor, accentColor }) => {

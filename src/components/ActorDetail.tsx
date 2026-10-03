@@ -2,7 +2,7 @@ import React, { useState, useMemo, useRef, useEffect } from 'react';
 import { ExternalLink, Instagram, Facebook } from 'lucide-react';
 import type { ActorFilmographyItem } from '../api/types';
 import { Actor } from '../types';
-import { getMoviesPath, getMoviePath, getActorFeedPath } from '../utils/urls';
+import { getMoviesPath, getMoviePath, getActorFeedPath, getActorPath } from '../utils/urls';
 import { BackNavigation } from './BackNavigation';
 import { NavigationLink, NavigationTab } from './NavigationLink';
 import { getMoviePoster } from '../utils/posters';
@@ -11,6 +11,10 @@ import { calculateAge, calculateAgeAtDeath, formatActorDate, isValidActorDate, s
 import { ComingSoonPoster } from './ComingSoonPoster';
 import { resolveImageUrl } from '../utils/image-url';
 import { formatLastUpdatedDate } from '../utils/last-updated';
+import { getFrequentCoStars } from '../utils/co-stars';
+import { ActorCircularPortrait } from './PopularActorsSection';
+import { getFilmographyMilestones } from '../utils/filmography-milestones';
+import { isBirthdayToday } from '../utils/birthdays';
 
 interface ActorDetailProps {
   actor: Actor;
@@ -79,6 +83,9 @@ export const ActorDetail: React.FC<ActorDetailProps> = ({
   const formattedDeathday = isDeceased ? formatActorDate(actor.deathday) : null;
   const biography = sanitizeBiography(actor.biography);
   const lastUpdated = formatLastUpdatedDate(actor.tmdbUpdatedAt);
+  const frequentCoStars = useMemo(() => getFrequentCoStars(actor), [actor.tmdbPersonId]);
+  const filmographyMilestones = getFilmographyMilestones(safeActingFilmography);
+  const birthdayToday = isBirthdayToday(actor.birthday || '');
 
   useEffect(() => {
     const measureBiography = () => {
@@ -132,7 +139,7 @@ export const ActorDetail: React.FC<ActorDetailProps> = ({
     <div id={`actor-detail-${actor.slug}`} className="w-full">
       {/* Back to Catalogue Navigation */}
       <div className="mb-5 sm:mb-6">
-        <BackNavigation href={getMoviesPath()} id="back-from-actor-btn" label="Back to All Movies" title="Back to All Movies" onNavigate={onNavigate} />
+        <BackNavigation href={getMoviesPath()} id="back-from-actor-btn" label="Back to Movies" title="Back to Movies" onNavigate={onNavigate} />
       </div>
 
       {showActorBackdrop && actorBackdrop && !backdropError && (
@@ -217,6 +224,9 @@ export const ActorDetail: React.FC<ActorDetailProps> = ({
             >
               {actor.name}
             </h1>
+            {birthdayToday && (
+              <p className="mt-1 text-sm font-sans-clean text-[#8A6800]">🎂 Birthday today</p>
+            )}
 
             {/* XmasDB Catalogue Summary */}
             <div className="mt-2 text-sm font-medium text-[#1A3D2F] tracking-wide">
@@ -333,6 +343,15 @@ export const ActorDetail: React.FC<ActorDetailProps> = ({
             <p className="text-sm sm:text-base text-[#736B63] font-body mt-1">
               {safeActingFilmography.length} {safeActingFilmography.length === 1 ? 'Christmas movie' : 'Christmas movies'} featuring {actor.name} in XmasDB
             </p>
+            {filmographyMilestones && (
+              <p className="mt-2 text-xs font-body text-[#736B63]">
+                {filmographyMilestones.first.movie === filmographyMilestones.latest.movie ? (
+                  <>Only: <a href={getMoviePath(filmographyMilestones.first.movie.tmdbId, filmographyMilestones.first.movie.slug)} onClick={(event) => { event.preventDefault(); onSelectMovie(filmographyMilestones.first.movie.slug, filmographyMilestones.first.movie.tmdbId); }} className="underline decoration-[#B8860B]/50 underline-offset-2 hover:text-[#1A3D2F]">{filmographyMilestones.first.movie.title}</a> ({filmographyMilestones.first.movie.year})</>
+                ) : (
+                  <>First: <a href={getMoviePath(filmographyMilestones.first.movie.tmdbId, filmographyMilestones.first.movie.slug)} onClick={(event) => { event.preventDefault(); onSelectMovie(filmographyMilestones.first.movie.slug, filmographyMilestones.first.movie.tmdbId); }} className="underline decoration-[#B8860B]/50 underline-offset-2 hover:text-[#1A3D2F]">{filmographyMilestones.first.movie.title}</a> ({filmographyMilestones.first.movie.year}) · Latest: <a href={getMoviePath(filmographyMilestones.latest.movie.tmdbId, filmographyMilestones.latest.movie.slug)} onClick={(event) => { event.preventDefault(); onSelectMovie(filmographyMilestones.latest.movie.slug, filmographyMilestones.latest.movie.tmdbId); }} className="underline decoration-[#B8860B]/50 underline-offset-2 hover:text-[#1A3D2F]">{filmographyMilestones.latest.movie.title}</a> ({filmographyMilestones.latest.movie.year})</>
+                )}
+              </p>
+            )}
           </div>
 
           <div className="flex flex-col items-start lg:items-end gap-2 self-start lg:self-auto">
@@ -381,6 +400,30 @@ export const ActorDetail: React.FC<ActorDetailProps> = ({
         {safeDirectingFilmography.length > 0 && <section className="mt-10" aria-labelledby="directing-heading"><h3 id="directing-heading" className="mb-4 text-base font-heading font-semibold text-[#1A3D2F]">Directing</h3>{renderFilmographyGrid(safeDirectingFilmography)}</section>}
         {safeWritingFilmography.length > 0 && <section className="mt-10" aria-labelledby="writing-heading"><h3 id="writing-heading" className="mb-4 text-base font-heading font-semibold text-[#1A3D2F]">Writing</h3>{renderFilmographyGrid(safeWritingFilmography)}</section>}
       </section>
+
+      {frequentCoStars.length > 0 && (
+        <section id="frequent-co-stars-section" className="mt-10" aria-labelledby="frequent-co-stars-heading">
+          <div className="mb-5">
+            <h2 id="frequent-co-stars-heading" className="font-heading text-xl sm:text-2xl font-semibold text-[#1A3D2F]">Frequent Co-stars</h2>
+            <p className="mt-1 font-body text-sm text-[#736B63]">{actor.name} frequently appears alongside these Christmas stars.</p>
+          </div>
+          <div className="grid grid-cols-2 gap-x-3 gap-y-6 sm:grid-cols-3 sm:gap-x-4 md:grid-cols-3 lg:grid-cols-6 lg:gap-x-5">
+            {frequentCoStars.map(({ actor: coStar, sharedMovieCount }) => {
+              const actorPath = getActorPath(coStar.tmdbPersonId, coStar.slug);
+              const movieLabel = sharedMovieCount === 1 ? 'movie' : 'movies';
+              return (
+                <article key={coStar.tmdbPersonId} className="text-center">
+                  <a href={actorPath} onClick={(event) => { event.preventDefault(); onNavigate(actorPath); }} className="group block text-center">
+                    <ActorCircularPortrait actor={{ ...coStar, movieCount: sharedMovieCount }} accentColor="#B8860B" />
+                    <h3 className="mt-3 font-heading text-sm text-[#1A3D2F] group-hover:text-[#841818] leading-snug">{coStar.name}</h3>
+                    <p className="mt-1 text-xs text-[#736B63] font-body">{sharedMovieCount} {movieLabel} together</p>
+                  </a>
+                </article>
+              );
+            })}
+          </div>
+        </section>
+      )}
 
       {lastUpdated && (
         <p className="mt-8 text-xs font-sans-clean text-[#736B63]">
