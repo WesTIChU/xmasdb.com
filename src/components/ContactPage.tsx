@@ -22,8 +22,23 @@ const INITIAL_VALUES: FormValues = {
   website: '',
 };
 
+function getInitialContactState(): { values: FormValues; actorName: string } {
+  if (typeof window === 'undefined') return { values: INITIAL_VALUES, actorName: '' };
+  const params = new URLSearchParams(window.location.search);
+  const actorName = params.get('actor')?.trim() || '';
+  const isMissingMovie = params.get('type') === 'missing-movie' && Boolean(actorName);
+  return {
+    actorName: isMissingMovie ? actorName : '',
+    values: isMissingMovie
+      ? { ...INITIAL_VALUES, type: 'missing-movie' }
+      : INITIAL_VALUES,
+  };
+}
+
 export const ContactPage: React.FC = () => {
-  const [values, setValues] = useState(INITIAL_VALUES);
+  const initialState = getInitialContactState();
+  const [values, setValues] = useState(initialState.values);
+  const [actorName] = useState(initialState.actorName);
   const [error, setError] = useState('');
   const [isSending, setIsSending] = useState(false);
   const [sent, setSent] = useState(false);
@@ -48,7 +63,14 @@ export const ContactPage: React.FC = () => {
     setIsSending(true);
     setError('');
     try {
-      await submitContact(values);
+      const submissionValues = actorName
+        ? {
+            ...values,
+            actorName,
+            message: `Missing Christmas Movie report\nActor: ${actorName}\nMovie: ${values.title.trim()}\n\n${values.message.trim()}`,
+          }
+        : values;
+      await submitContact(submissionValues);
       setSent(true);
     } catch (submissionError) {
       setError(submissionError instanceof Error ? submissionError.message : 'Something went wrong. Please try again.');
@@ -99,10 +121,17 @@ export const ContactPage: React.FC = () => {
               </div>
 
               <div>
-                <label htmlFor="contact-title" className="mb-2 block text-sm font-semibold text-[#1A3D2F]">Movie / title</label>
+                <label htmlFor="contact-title" className="mb-2 block text-sm font-semibold text-[#1A3D2F]">{actorName ? 'What Christmas movie is missing?' : 'Movie / title'}</label>
                 <input id="contact-title" name="title" type="text" maxLength={200} value={values.title} onChange={(event) => updateValue('title', event.target.value)} className="w-full rounded border border-[#DCD3C7] bg-[#FFFDF9] px-3 py-2.5 text-[#23211E] outline-none focus:border-[#1A3D2F] focus:ring-2 focus:ring-[#1A3D2F]/20" />
               </div>
             </div>
+
+            {actorName && (
+              <div>
+                <label htmlFor="contact-actor" className="mb-2 block text-sm font-semibold text-[#1A3D2F]">Actor</label>
+                <input id="contact-actor" name="actorName" type="text" value={actorName} readOnly className="w-full rounded border border-[#DCD3C7] bg-[#EFE9DF] px-3 py-2.5 text-[#59524A] outline-none" />
+              </div>
+            )}
 
             <div>
               <label htmlFor="contact-message" className="mb-2 block text-sm font-semibold text-[#1A3D2F]">Message</label>

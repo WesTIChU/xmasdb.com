@@ -10,6 +10,7 @@ export interface ContactSubmissionInput {
   type: unknown;
   title: unknown;
   message: unknown;
+  actorName: unknown;
   name: unknown;
   email: unknown;
   spamCheck: unknown;
@@ -22,6 +23,7 @@ export interface StoredContactSubmission {
   status: 'new' | 'resolved';
   type: ContactSubmissionType;
   movieTitle: string;
+  actorName?: string;
   message: string;
   name?: string;
   email?: string;
@@ -49,6 +51,7 @@ const MAX_LENGTHS = {
   email: 254,
   title: 200,
   message: 3000,
+  actorName: 100,
 } as const;
 
 function textValue(value: unknown): string | null {
@@ -76,6 +79,7 @@ export function validateContactSubmission(input: unknown): ContactValidationResu
   const type = textValue(values.type);
   const title = textValue(values.title);
   const message = textValue(values.message);
+  const actorName = textValue(values.actorName);
   const name = textValue(values.name);
   const email = textValue(values.email);
   const spamCheck = textValue(values.spamCheck);
@@ -92,6 +96,7 @@ export function validateContactSubmission(input: unknown): ContactValidationResu
   }
   if (title && title.length > MAX_LENGTHS.title) return invalid('Movie or title is too long.');
   if (message.length > MAX_LENGTHS.message) return invalid('Message is too long.');
+  if (actorName && actorName.length > MAX_LENGTHS.actorName) return invalid('Actor name is too long.');
   if (name && name.length > MAX_LENGTHS.name) return invalid('Name is too long.');
   if (email && email.length > MAX_LENGTHS.email) return invalid('Email address is too long.');
   if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) return invalid('Enter a valid email address or leave it blank.');
@@ -104,6 +109,7 @@ export function validateContactSubmission(input: unknown): ContactValidationResu
       status: 'new',
       type: type as ContactSubmissionType,
       movieTitle: title || '',
+      ...(actorName ? { actorName } : {}),
       message,
       ...(name ? { name } : {}),
       ...(email ? { email } : {}),

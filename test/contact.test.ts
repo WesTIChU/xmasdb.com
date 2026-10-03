@@ -19,6 +19,7 @@ const valid = (overrides: Record<string, unknown> = {}) => ({
   type: 'missing-movie',
   title: 'A Christmas Test',
   message: 'Please consider adding this movie.',
+  actorName: '',
   name: '',
   email: '',
   spamCheck: movieCount,
@@ -39,6 +40,11 @@ assert.match(validResult.submission.createdAt, /^\d{4}-\d{2}-\d{2}T/);
 assert.equal(validResult.submission.status, 'new');
 assert.equal(validResult.submission.movieTitle, 'A Christmas Test');
 await storeContactSubmission(validResult.submission, tempDir);
+
+const actorResult = validateContactSubmission(valid({ actorName: 'Paul Campbell', title: 'A Christmas Test' }));
+assert.equal(actorResult.ok, true, 'actor-originated missing movie submission is valid');
+if (!actorResult.ok) throw new Error('actor-originated test submission was rejected');
+assert.equal(actorResult.submission.actorName, 'Paul Campbell');
 
 let stored = JSON.parse(await fs.readFile(submissionsPath, 'utf8')) as Array<Record<string, unknown>>;
 assert.equal(stored.length, 1, 'valid submission is persisted');

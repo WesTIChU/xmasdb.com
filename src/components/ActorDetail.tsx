@@ -396,7 +396,7 @@ export const ActorDetail: React.FC<ActorDetailProps> = ({
         </div>
         </div>
 
-        {safeActingFilmography.length > 0 && <section aria-labelledby="acting-heading"><h3 id="acting-heading" className="mb-4 text-base font-heading font-semibold text-[#1A3D2F]">Acting</h3>{renderFilmographyGrid(safeActingFilmography)}</section>}
+        {safeActingFilmography.length > 0 && <section aria-labelledby="acting-heading"><div className="mb-4 flex flex-wrap items-center justify-between gap-x-4 gap-y-2"><h3 id="acting-heading" className="text-base font-heading font-semibold text-[#1A3D2F]">Acting</h3><NavigationLink href={`/contact/?type=missing-movie&actor=${encodeURIComponent(actor.name)}`} onNavigate={onNavigate} className="inline-flex items-center leading-normal text-xs font-sans-clean font-medium text-[#1A3D2F] hover:text-[#841818] sm:text-sm">🎄 Missing a movie?</NavigationLink></div>{renderFilmographyGrid(safeActingFilmography)}</section>}
         {safeDirectingFilmography.length > 0 && <section className="mt-10" aria-labelledby="directing-heading"><h3 id="directing-heading" className="mb-4 text-base font-heading font-semibold text-[#1A3D2F]">Directing</h3>{renderFilmographyGrid(safeDirectingFilmography)}</section>}
         {safeWritingFilmography.length > 0 && <section className="mt-10" aria-labelledby="writing-heading"><h3 id="writing-heading" className="mb-4 text-base font-heading font-semibold text-[#1A3D2F]">Writing</h3>{renderFilmographyGrid(safeWritingFilmography)}</section>}
       </section>

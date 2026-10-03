@@ -9,6 +9,7 @@ interface AdminSubmission {
   status: SubmissionStatus;
   type: 'missing-movie' | 'correction' | 'other';
   movieTitle: string;
+  actorName?: string;
   message: string;
   name?: string;
   email?: string;
@@ -150,6 +151,7 @@ export const AdminSubmissionsPage: React.FC<AdminSubmissionsPageProps> = ({ onNa
               <article key={submission.id} className="py-7">
                 <p className="font-sans-clean text-xs font-semibold tracking-wide text-[#841818]">{typeLabels[submission.type]} · {submission.status.toUpperCase()}</p>
                 {submission.movieTitle && <h2 className="mt-2 font-heading text-lg font-semibold text-[#1A3D2F]">{submission.movieTitle}</h2>}
+                {submission.actorName && <p className="mt-1 font-sans-clean text-sm text-[#59524A]">Actor: {submission.actorName}</p>}
                 <p className="mt-3 whitespace-pre-wrap font-body leading-7 text-[#4A433B]">{submission.message}</p>
                 {(submission.name || submission.email) && <p className="mt-3 font-sans-clean text-xs leading-6 text-[#736B63]">{submission.name && <span>{submission.name}</span>}{submission.name && submission.email && <span> · </span>}{submission.email && <span>{submission.email}</span>}</p>}
                 <p className="mt-2 font-sans-clean text-xs text-[#8A8178]">Submitted {formatDate(submission.createdAt)}</p>
