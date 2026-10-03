@@ -1,8 +1,9 @@
 import assert from 'node:assert/strict';
+import { createHash } from 'node:crypto';
 import fs from 'node:fs/promises';
 import os from 'node:os';
 import path from 'node:path';
-import { ingestManagedImage, summarizeManagedImagePublication } from '../src/server/managed-images';
+import { ingestManagedImage, publishManagedImageFile, summarizeManagedImagePublication } from '../src/server/managed-images';
 import { managedObjectKey, R2StorageError } from '../src/server/r2-storage';
 import { mergeTmdbMovie } from '../src/utils/tmdb-refresh';
 import type { Movie } from '../src/types';
@@ -31,6 +32,33 @@ const storage = {
 };
 assert.equal(await ingestManagedImage('https://source.test/poster.jpg', '/images/posters/new.jpg', { publicRoot: root, cacheImage, storage }), '/images/posters/new.jpg');
 assert.equal(uploadedKey, 'posters/new.jpg');
+const birthdayRoot = await fs.mkdtemp(path.join(os.tmpdir(), 'xmasdb-birthday-image-'));
+const birthdayRelativePath = 'images/birthdays/134848-216.webp';
+const birthdayBytes = Buffer.from('birthday image fixture');
+await fs.mkdir(path.join(birthdayRoot, 'images/birthdays'), { recursive: true });
+await fs.writeFile(path.join(birthdayRoot, birthdayRelativePath), birthdayBytes);
+let attemptedBirthdayUpload = false;
+const existingBirthdayStorage = {
+  async headObject(key: string) {
+    return { key, size: birthdayBytes.byteLength, sha256: createHash('sha256').update(birthdayBytes).digest('hex'), contentType: 'image/webp' };
+  },
+  async ensureUploadedAndVerified() {
+    attemptedBirthdayUpload = true;
+    throw new Error('existing birthday object must not be uploaded');
+  },
+};
+const reconciledBirthday = await publishManagedImageFile(`/${birthdayRelativePath}`, '/images/birthdays/134848-216.webp', { publicRoot: birthdayRoot, storage: existingBirthdayStorage, overwriteExisting: false });
+assert.deepEqual(reconciledBirthday, { canonicalPath: '/images/birthdays/134848-216.webp', uploaded: false, skipped: true, verified: true }, 'existing R2 birthday object is safely reconciled without upload');
+assert.equal(attemptedBirthdayUpload, false, 'existing birthday object is never overwritten');
+await assert.rejects(
+  publishManagedImageFile(`/${birthdayRelativePath}`, '/images/birthdays/134848-216.webp', {
+    publicRoot: birthdayRoot,
+    storage: { headObject: async (key: string) => ({ key, size: 1, sha256: 'different', contentType: 'image/webp' }), ensureUploadedAndVerified: async () => { throw new Error('must not upload'); } },
+    overwriteExisting: false,
+  }),
+  /Refusing to overwrite existing object/,
+  'mismatched existing birthday object remains protected',
+);
 assert.deepEqual(summarizeManagedImagePublication([
   { canonicalPath: '/images/optimized/posters/new-1.webp', uploaded: true, skipped: false, verified: true },
   { canonicalPath: '/images/optimized/posters/new-2.webp', uploaded: false, skipped: true, verified: true },
