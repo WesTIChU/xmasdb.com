@@ -1373,6 +1373,9 @@ export const PROTOTYPE_MOVIE_FINGERPRINTS: Readonly<Record<string, readonly Fing
     "love-triangle",
     "writer-journalist"
   ],
+  "hallmark-2019-when-calls-the-heart-the-greatest-blessing": [
+    "teacher"
+  ],
   "hallmark-2019-write-before-christmas": [
     "siblings"
   ],
@@ -1442,6 +1445,9 @@ export const PROTOTYPE_MOVIE_FINGERPRINTS: Readonly<Record<string, readonly Fing
     "old-flame",
     "returns-home",
     "small-town"
+  ],
+  "hallmark-2020-holly-ivy": [
+    "parent-child"
   ],
   "hallmark-2020-if-i-only-had-christmas": [
     "business-owner"
