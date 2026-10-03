@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 concurrency:
-  group: generated-main-writes
+  group: xmasdb-tmdb-refreshes
   cancel-in-progress: false
 
 jobs:
