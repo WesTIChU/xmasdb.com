@@ -63,7 +63,7 @@ export const HomePage: React.FC<HomePageProps> = ({ payload, onNavigate }) => {
         <div className={homepageMovieGridOuterClass}>
           <div className="w-full flex items-end justify-between gap-4 mb-5">
             <div>
-              <h2 id="discovery-heading" className="font-heading text-xl sm:text-2xl font-semibold text-[#1A3D2F]">Discover Christmas Movies</h2>
+              <h2 id="discovery-heading" className="font-heading text-xl sm:text-2xl font-semibold text-[#1A3D2F]">Discover</h2>
             </div>
             <NavigationLink href={getMoviesPath()} onNavigate={onNavigate} className="ml-auto shrink-0 text-xs sm:text-sm font-sans-clean font-medium text-[#1A3D2F] hover:text-[#143626]">View all {totalMovies} movies <span className="xmas-nav-arrow">→</span></NavigationLink>
           </div>
@@ -83,7 +83,7 @@ export const HomePage: React.FC<HomePageProps> = ({ payload, onNavigate }) => {
           <div className="w-full flex items-end justify-between gap-4 mb-5">
             <div>
               <p className="font-sans-clean text-xs font-semibold uppercase tracking-[0.18em] text-[#8A6800]">Explore the archive</p>
-              <h2 id="archive-years-heading" className="mt-1 font-heading text-xl sm:text-2xl font-semibold text-[#1A3D2F]">Christmas Through the Years</h2>
+                <h2 id="archive-years-heading" className="mt-1 font-heading text-xl sm:text-2xl font-semibold text-[#1A3D2F]">Through the Years</h2>
             </div>
             <NavigationLink href={getMoviesPath()} onNavigate={onNavigate} className="ml-auto shrink-0 text-xs sm:text-sm font-sans-clean font-medium text-[#1A3D2F] hover:text-[#143626]">View all years <span className="xmas-nav-arrow">→</span></NavigationLink>
           </div>

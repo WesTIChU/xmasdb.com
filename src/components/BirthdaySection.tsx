@@ -43,7 +43,7 @@ export const BirthdaySection: React.FC<{ actors: BirthdayActor[]; onNavigate: (p
   const group = (label: string, entries: BirthdayActor[], withIndividualDates = false, className = '') => <div className={className}><h3 className="font-sans-clean text-[10px] font-semibold uppercase tracking-[0.18em] text-[#8A6800]">{label}</h3>{entries.length > 0 && <div className="mt-2 space-y-1.5">{withIndividualDates ? entries.map((actor) => <div key={actor.slug}><p className="font-body text-xs font-semibold text-[#8A6800]">{dateLabel(actor)}</p>{actorDetail(actor)}</div>) : <><p className="font-body text-xs font-semibold text-[#8A6800]">{dateLabel(entries[0])}</p>{entries.map(actorDetail)}</>}</div>}</div>;
   return <section className="py-7 sm:py-9" aria-labelledby="birthdays-heading">
     <div className="mb-4 flex items-end justify-between gap-4">
-      <div><p className="font-sans-clean text-xs font-semibold uppercase tracking-[0.18em] text-[#8A6800]">A little celebration</p><h2 id="birthdays-heading" className="mt-1 font-heading text-xl font-semibold text-[#1A3D2F] sm:text-2xl">Christmas Star Birthdays</h2></div>
+      <div><p className="font-sans-clean text-xs font-semibold uppercase tracking-[0.18em] text-[#8A6800]">A little celebration</p><h2 id="birthdays-heading" className="mt-1 font-heading text-xl font-semibold text-[#1A3D2F] sm:text-2xl">Birthdays</h2></div>
       <NavigationLink href="/birthdays/" onNavigate={onNavigate} className="shrink-0 text-xs font-sans-clean font-medium text-[#1A3D2F] hover:text-[#841818] sm:text-sm">View all birthdays <span className="xmas-nav-arrow">→</span></NavigationLink>
     </div>
     <div className="grid gap-5 border-y border-[#E7DFD5] py-4 md:grid-cols-3 md:gap-0">

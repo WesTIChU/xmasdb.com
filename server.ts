@@ -49,6 +49,7 @@ import { PUBLIC_API_ENABLED } from './src/server/public-api-config';
 import { registerPublicApiRoutes } from './src/server/public-api-routes';
 import { registerLegacyImageRedirects } from './src/server/legacy-image-redirect';
 import { getFingerprintCatalogueStats, readFingerprintStatus } from './src/server/fingerprint-status';
+import { getSeasonalLogo, HALLOWEEN_LOGO, HALLOWEEN_LOGO_SIZES, HALLOWEEN_LOGO_SRCSET, NORMAL_LOGO_SIZES, NORMAL_LOGO_SRCSET } from './src/utils/seasonalLogo';
 
 function isKnownPagePath(rawPath: string): boolean {
   const clean = rawPath.replace(/^\/+|\/+$/g, '');
@@ -760,8 +761,12 @@ async function startServer() {
     // footer and stats strip render accurate counts on the very first frame
     // without a separate request. This is data, not server-rendered markup.
     const metaBootstrap = `<script>window.__XMASDB_META__=${JSON.stringify(buildCatalogueMeta()).replace(/</g, '\\u003c')};</script>`;
+    const seasonalLogo = getSeasonalLogo();
+    const isHalloweenLogo = seasonalLogo === HALLOWEEN_LOGO;
+    const seasonalLogoPreload = `<link id="seasonal-logo-preload" rel="preload" as="image" href="${seasonalLogo}" imagesrcset="${isHalloweenLogo ? HALLOWEEN_LOGO_SRCSET : NORMAL_LOGO_SRCSET}" imagesizes="${isHalloweenLogo ? HALLOWEEN_LOGO_SIZES : NORMAL_LOGO_SIZES}" />`;
     const indexHtml = fs
       .readFileSync(indexPath, 'utf-8')
+      .replace(/<link id="seasonal-logo-preload"[^>]*\/>/, seasonalLogoPreload)
       .replace('</head>', `    ${metaBootstrap}\n  </head>`);
 
     const sendIndexHtml = (req: express.Request, res: express.Response, status = 200) => {
@@ -810,13 +815,15 @@ async function startServer() {
       'logo-1100.webp',
       'logo-halloween.png',
       'logo-halloween-q95.webp',
+      'logo-halloween-550.webp',
+      'logo-halloween-1100.webp',
       'logo.svg',
       'logo-all.png',
       'robots.txt',
       'site.webmanifest',
       'manifest.webmanifest',
     ]);
-    const immutableRootFiles = new Set(['favicon-64.png', 'logo-550.webp', 'logo-1100.webp']);
+    const immutableRootFiles = new Set(['favicon-64.png', 'logo-550.webp', 'logo-1100.webp', 'logo-halloween-550.webp', 'logo-halloween-1100.webp']);
     for (const fileName of publicRootFiles) {
       const filePath = path.join(distPath, fileName);
       app.get(`/${fileName}`, (_req, res, next) => {

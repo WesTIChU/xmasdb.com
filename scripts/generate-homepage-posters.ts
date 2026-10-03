@@ -21,7 +21,7 @@ const previouslyPublishedIds = new Set<string>((() => {
 })());
 
 const homepage = buildHomePayload();
-const posterUrls = [...homepage.comingSoon, ...homepage.discovery]
+const posterUrls = [...homepage.comingSoon, ...homepage.discovery, ...(homepage.thisMonth?.movies || [])]
   .map((movie) => movie.posterUrl)
   .filter((url): url is string => /^\/images\/posters\/\d+(?:-[^/]+)?\.jpg$/.test(url));
 

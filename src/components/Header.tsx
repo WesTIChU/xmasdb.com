@@ -3,7 +3,7 @@ import type { MetaBrand } from '../api/types';
 import { getMoviesPath, getNetworkPath, getFeedsPath } from '../utils/urls';
 import { SearchAutocomplete } from './SearchAutocomplete';
 import { NavSquiggle } from './NavigationLink';
-import { getSeasonalLogo, HALLOWEEN_LOGO, NORMAL_LOGO_SIZES, NORMAL_LOGO_SRCSET } from '../utils/seasonalLogo';
+import { getSeasonalLogo, HALLOWEEN_LOGO, HALLOWEEN_LOGO_SIZES, HALLOWEEN_LOGO_SRCSET, NORMAL_LOGO_SIZES, NORMAL_LOGO_SRCSET } from '../utils/seasonalLogo';
 
 interface HeaderProps {
   currentPath: string;
@@ -21,6 +21,7 @@ export const Header: React.FC<HeaderProps> = ({
   populatedBrands,
 }) => {
   const [logoSrc, setLogoSrc] = useState(() => getSeasonalLogo());
+  const isHalloweenLogo = logoSrc === HALLOWEEN_LOGO;
 
   useEffect(() => {
     const refreshLogo = () => setLogoSrc(getSeasonalLogo());
@@ -68,8 +69,8 @@ export const Header: React.FC<HeaderProps> = ({
             >
               <img
                 src={logoSrc}
-                srcSet={logoSrc === HALLOWEEN_LOGO ? undefined : NORMAL_LOGO_SRCSET}
-                sizes={logoSrc === HALLOWEEN_LOGO ? undefined : NORMAL_LOGO_SIZES}
+                srcSet={isHalloweenLogo ? HALLOWEEN_LOGO_SRCSET : NORMAL_LOGO_SRCSET}
+                sizes={isHalloweenLogo ? HALLOWEEN_LOGO_SIZES : NORMAL_LOGO_SIZES}
                 alt="XmasDB.com — A curated collection of Christmas movies"
                 className="h-20 sm:h-28 md:h-36 lg:h-48 max-w-full w-auto object-contain mx-auto"
                 width={550}

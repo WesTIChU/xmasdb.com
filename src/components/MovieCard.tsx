@@ -26,9 +26,11 @@ interface MovieCardProps {
 
 export const MovieCard: React.FC<MovieCardProps> = ({ movie, onSelectMovie, priority = false, metadata, showYearBrandMetadata = true, optimizeHomepageImage = false, titleLines = 2, reserveTitleHeight = true }) => {
   const [hasImageError, setHasImageError] = useState(false);
+  const [useOriginalPoster, setUseOriginalPoster] = useState(false);
   const brand = getBrandById(movie.brandId);
   const canonicalPath = getMoviePath(movie.tmdbId, movie.slug);
   const poster = getMoviePoster(movie);
+  const optimizedPosterSrcSet = optimizeHomepageImage && !useOriginalPoster && poster ? getHomepagePosterSrcSet(poster) : undefined;
 
   const showComingSoon = hasImageError || !poster;
 
@@ -52,8 +54,8 @@ export const MovieCard: React.FC<MovieCardProps> = ({ movie, onSelectMovie, prio
           ) : (
             <img
               src={resolveImageUrl(poster)}
-              srcSet={optimizeHomepageImage ? getHomepagePosterSrcSet(poster) : undefined}
-              sizes={optimizeHomepageImage ? '(min-width: 1024px) 143px, (min-width: 640px) 30vw, 140px' : undefined}
+              srcSet={optimizedPosterSrcSet}
+              sizes={optimizedPosterSrcSet ? '(min-width: 1024px) 143px, (min-width: 640px) 30vw, 140px' : undefined}
               alt={`Poster for ${movie.title}`}
               loading={priority ? 'eager' : 'lazy'}
               fetchPriority={priority ? 'high' : undefined}
@@ -63,7 +65,8 @@ export const MovieCard: React.FC<MovieCardProps> = ({ movie, onSelectMovie, prio
               referrerPolicy="no-referrer"
               className="h-full w-full object-cover object-center group-hover:scale-101 transition-transform duration-300"
               onError={() => {
-                setHasImageError(true);
+                if (optimizedPosterSrcSet) setUseOriginalPoster(true);
+                else setHasImageError(true);
               }}
             />
           )}
