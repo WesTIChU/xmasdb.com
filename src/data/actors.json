@@ -11623,8 +11623,9 @@
     "imdbPersonId": "nm0928560",
     "gender": "Male",
     "knownForDepartment": "Acting",
-    "knownCredits": 38,
-    "tmdbUpdatedAt": "2026-09-20T16:17:30.590Z"
+    "knownCredits": 39,
+    "tmdbUpdatedAt": "2026-10-03T15:45:32.609Z",
+    "tmdbFetchedAt": "2026-10-03T15:45:32.609Z"
   },
   {
     "id": "beatrice-king",
@@ -95183,15 +95184,15 @@
     "imdbPersonId": "nm0000337",
     "gender": "Female",
     "knownForDepartment": "Acting",
-    "knownCredits": 100,
+    "knownCredits": 101,
     "alsoKnownAs": [
       "Rachael Gillies",
       "Rachel Leigh Cook"
     ],
     "instagramId": "rachaelleighcook",
     "twitterId": "rachaellcook",
-    "tmdbUpdatedAt": "2026-09-25T18:44:24.714Z",
-    "tmdbFetchedAt": "2026-09-25T18:44:24.714Z"
+    "tmdbUpdatedAt": "2026-10-03T15:52:18.526Z",
+    "tmdbFetchedAt": "2026-10-03T15:52:18.526Z"
   },
   {
     "id": "rachael-mclaren",
@@ -103948,7 +103949,7 @@
     "imdbPersonId": "nm1488880",
     "gender": "Male",
     "knownForDepartment": "Acting",
-    "knownCredits": 34,
+    "knownCredits": 35,
     "alsoKnownAs": [
       "Scott Young",
       "Scott Alexander",
@@ -103956,8 +103957,8 @@
       "Scott A Young",
       "Alexander Scott Young"
     ],
-    "tmdbUpdatedAt": "2026-10-03T12:26:17.310Z",
-    "tmdbFetchedAt": "2026-10-03T12:26:17.310Z"
+    "tmdbUpdatedAt": "2026-10-03T15:53:01.292Z",
+    "tmdbFetchedAt": "2026-10-03T15:53:01.292Z"
   },
   {
     "id": "scott-allen-perry",
