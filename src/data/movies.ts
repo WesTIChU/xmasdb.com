@@ -177275,6 +177275,118 @@ export const MOVIES: Movie[] = [
     "voteCount": 1,
     "tmdbUpdatedAt": "2026-10-03T15:01:31.423Z",
     "tmdbFetchedAt": "2026-10-03T15:01:31.423Z"
+  },
+  {
+    "id": "hallmark-2019-when-calls-the-heart-the-greatest-blessing",
+    "slug": "when-calls-the-heart-the-greatest-blessing",
+    "title": "When Calls the Heart: The Greatest Blessing",
+    "year": 2019,
+    "brandId": "hallmark",
+    "releaseDate": "2019-03-05",
+    "synopsis": "From celebrated author Janette Oke comes a rigorous and romantic adventure as epic as the wide frontier. Erin Krakow, Daniel Lissing, Jack Wagner and Lori Loughlin star in When Calls the Heart: The Greatest Blessing. After a group of orphans are stranded for the holidays, Abigail and the other residents of Hope Valley band together to make this an unforgettable Christmas. Meanwhile, Elizabeth prepares for her new life…while teaching her students the art of selfless giving.",
+    "posterUrl": "/images/posters/1467103.jpg",
+    "cast": [
+      {
+        "actorId": "1143960",
+        "name": "Erin Krakow",
+        "character": "Elizabeth Thornton",
+        "slug": "erin-krakow",
+        "tmdbPersonId": 1143960,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/8euXiEHmBwzV6NdwQ8dfwzFa7C7.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "92509",
+        "name": "Lori Loughlin",
+        "character": "Abigail Stanton",
+        "slug": "lori-loughlin",
+        "tmdbPersonId": 92509,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/uelwtzItSLYEgaSjfzxfQ1AE1YK.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "138887",
+        "name": "Jack Wagner",
+        "character": "Bill Avery",
+        "slug": "jack-wagner",
+        "tmdbPersonId": 138887,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/zRoZShStnWymvcm7bQDr35qdck6.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "116573",
+        "name": "Martin Cummins",
+        "character": "Henry Gowen",
+        "slug": "martin-cummins",
+        "tmdbPersonId": 116573,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/gnc1YUrHiYciRWB4ZCJFk9boAHg.jpg",
+        "order": 3
+      },
+      {
+        "actorId": "64917",
+        "name": "Pascale Hutton",
+        "character": "Rosemary Coulter",
+        "slug": "pascale-hutton",
+        "tmdbPersonId": 64917,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/8oWcuapDxL7LhmgBK46drdPJvrZ.jpg",
+        "order": 4
+      }
+    ],
+    "director": "Neill Fearnley",
+    "tmdbId": 1467103,
+    "isComingSoon": false,
+    "status": "collection",
+    "originalTitle": "When Calls the Heart: The Greatest Blessing",
+    "runtimeMinutes": 84,
+    "genres": [
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      },
+      {
+        "id": 18,
+        "name": "Drama"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      },
+      {
+        "id": 35,
+        "name": "Comedy"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "US",
+        "releaseDate": "2019-03-05T00:00:00.000Z",
+        "type": 4,
+        "certification": "NR",
+        "note": ""
+      }
+    ],
+    "crew": [
+      {
+        "id": 51932,
+        "name": "Neill Fearnley",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/9dFT0XWxrtwZLki8YjbaWlXHQUf.jpg",
+        "creditId": "6803a0d05570cba9e1ad1e49"
+      },
+      {
+        "id": 1367008,
+        "name": "Alfonso H. Moreno",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "6803a139d317be5e5c99667c"
+      }
+    ],
+    "trailers": [],
+    "voteAverage": 0,
+    "voteCount": 0,
+    "tmdbUpdatedAt": "2026-10-03T15:11:01.099Z",
+    "tmdbFetchedAt": "2026-10-03T15:11:01.099Z"
   }
 ];
 
