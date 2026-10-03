@@ -3810,6 +3810,9 @@ export const PROTOTYPE_MOVIE_FINGERPRINTS: Readonly<Record<string, readonly Fing
     "returns-home",
     "small-town"
   ],
+  "uptv-2022-christmas-lucky-charm": [
+    "unexpected-romance"
+  ],
   "uptv-2022-christmas-on-the-rocks": [
     "hotel-resort",
     "old-flame",
@@ -3988,6 +3991,15 @@ export const PROTOTYPE_MOVIE_FINGERPRINTS: Readonly<Record<string, readonly Fing
     "snowed-in-stranded",
     "runaway-bride-broken-engagement",
     "unexpected-romance"
+  ],
+  "uptv-2026-a-christmas-cookie-caper-a-puzzle-time-mystery": [
+    "baking-cooking",
+    "celebrity",
+    "chef-baker",
+    "christmas-competition",
+    "competition",
+    "investigation",
+    "mystery"
   ],
   "uptv-2026-a-royal-stables-christmas": [
     "royalty",
