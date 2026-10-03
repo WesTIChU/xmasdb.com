@@ -11,6 +11,7 @@ const cases = [
   ['/images/people/92856.webp', `${base}/people/92856.webp`],
   ['/images/optimized/posters/974213-320.webp', `${base}/optimized/posters/974213-320.webp`],
   ['/images/optimized/people/92856-216.webp', `${base}/optimized/people/92856-216.webp`],
+  ['/images/birthdays/92856-216.webp', `${base}/birthdays/92856-216.webp`],
 ] as const;
 
 for (const [input, expected] of cases) assert.equal(resolveImageUrl(input), expected);

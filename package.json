@@ -8,7 +8,7 @@
   "type": "module",
   "scripts": {
     "dev": "tsx server.ts",
-    "prebuild": "npm run generate:homepage-posters",
+    "prebuild": "npm run generate:homepage-posters && npm run generate:actor-portraits",
     "build": "vite build && esbuild server.ts --bundle --platform=node --format=cjs --packages=external --sourcemap --outfile=dist/server.cjs",
     "start": "node dist/server.cjs",
     "preview": "vite preview",
@@ -32,6 +32,8 @@
     "images:r2:verify": "tsx scripts/r2-images.ts verify",
     "images:migrate-legacy-tmdb": "tsx scripts/migrate-legacy-tmdb-images.ts",
     "images:r2:publish-homepage": "tsx scripts/generate-homepage-posters.ts --publish-r2",
+    "generate:actor-portraits": "tsx scripts/generate-actor-portraits.ts",
+    "images:r2:publish-actors": "tsx scripts/generate-actor-portraits.ts --publish-r2",
     "generate:homepage-posters": "tsx scripts/generate-homepage-posters.ts",
     "reconcile:lifecycle": "tsx scripts/reconcile-lifecycle.ts",
     "import:xmasdb": "tsx scripts/import-xmasdb.ts",

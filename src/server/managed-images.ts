@@ -1,5 +1,6 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
+import { createHash } from 'node:crypto';
 import { cacheLocalImage, type ImageRefreshBudget, type LocalImageCacheOptions } from '../utils/local-images';
 import { contentTypeForImagePath, createR2Storage, managedObjectKey, R2Storage, R2StorageError, type R2EnsureResult } from './r2-storage';
 
@@ -54,12 +55,23 @@ export async function ingestManagedImage(remoteUrl: string | undefined, canonica
 }
 
 /** Publishes an already-generated local derivative without changing canonical data. */
-export async function publishManagedImageFile(localPath: string, canonicalPath: string, options: { publicRoot?: string; storage?: Pick<R2Storage, 'ensureUploadedAndVerified'> } = {}): Promise<ManagedImagePublicationResult> {
+export async function publishManagedImageFile(localPath: string, canonicalPath: string, options: { publicRoot?: string; storage?: Pick<R2Storage, 'ensureUploadedAndVerified' | 'headObject'>; overwriteExisting?: boolean } = {}): Promise<ManagedImagePublicationResult> {
   const objectKey = managedObjectKey(canonicalPath);
   const publicRoot = options.publicRoot || path.join(process.cwd(), 'public');
   try {
     const bytes = await fs.readFile(path.join(publicRoot, localPath.replace(/^\//, '')));
-    const result: R2EnsureResult = await (options.storage || createR2Storage()).ensureUploadedAndVerified(objectKey, bytes, contentTypeForImagePath(localPath));
+    const storage = options.storage || createR2Storage();
+    if (options.overwriteExisting === false) {
+      const existing = await storage.headObject(objectKey);
+      if (existing) {
+        const sha256 = createHash('sha256').update(bytes).digest('hex');
+        if (existing.size !== bytes.byteLength || existing.sha256 !== sha256 || existing.contentType?.split(';')[0] !== contentTypeForImagePath(localPath)) {
+          throw new R2StorageError(`Refusing to overwrite existing object ${objectKey}.`, 'publish-create-only', objectKey);
+        }
+        return { canonicalPath, uploaded: false, skipped: true, verified: true };
+      }
+    }
+    const result: R2EnsureResult = await storage.ensureUploadedAndVerified(objectKey, bytes, contentTypeForImagePath(localPath));
     return { canonicalPath, uploaded: result.uploaded, skipped: !result.uploaded, verified: result.verified };
   } catch (error) {
     const detail = error instanceof R2StorageError || error instanceof Error ? error.message : String(error);

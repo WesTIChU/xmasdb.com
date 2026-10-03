@@ -633,7 +633,10 @@ export function buildHomePayload(now: Date = new Date()): HomePayload {
   return payload;
 }
 
+let birthdaysPayloadCache: BirthdaysPayload | null = null;
+
 export function buildBirthdaysPayload(): BirthdaysPayload {
+  if (birthdaysPayloadCache) return birthdaysPayloadCache;
   const actors: BirthdayActor[] = getAllActors()
     .filter((actor) => parseBirthday(actor.birthday))
     .map((actor) => ({
@@ -644,7 +647,8 @@ export function buildBirthdaysPayload(): BirthdaysPayload {
       birthday: actor.birthday as string,
       popularity: getActorActingFilmographyCount(String(actor.tmdbPersonId)),
     }));
-  return { actors: sortBirthdays(actors) };
+  birthdaysPayloadCache = { actors: sortBirthdays(actors) };
+  return birthdaysPayloadCache;
 }
 
 // ---------------------------------------------------------------------------

@@ -11,6 +11,7 @@ const migrationRoots = [
   'images/posters',
   'images/backdrops',
   'images/people',
+  'images/birthdays',
   'images/optimized/posters',
   'images/optimized/people',
 ] as const;
@@ -18,6 +19,7 @@ const r2KeyPrefixes: Record<(typeof migrationRoots)[number], string> = {
   'images/posters': 'posters',
   'images/backdrops': 'backdrops',
   'images/people': 'people',
+  'images/birthdays': 'birthdays',
   'images/optimized/posters': 'optimized/posters',
   'images/optimized/people': 'optimized/people',
 };

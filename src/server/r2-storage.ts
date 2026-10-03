@@ -28,7 +28,7 @@ export class R2StorageError extends Error {
   }
 }
 
-const managedPathPattern = /^\/images\/(posters|backdrops|people|optimized\/posters|optimized\/people)\/(.+)$/;
+const managedPathPattern = /^\/images\/(posters|backdrops|people|birthdays|optimized\/posters|optimized\/people)\/(.+)$/;
 const mimeTypes: Record<string, string> = { '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.png': 'image/png', '.webp': 'image/webp' };
 
 export function managedObjectKey(canonicalPath: string): string {

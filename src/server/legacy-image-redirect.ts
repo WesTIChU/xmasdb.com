@@ -1,7 +1,7 @@
 import type express from 'express';
 import { configuredPublicImageBaseUrl } from '../utils/image-url';
 
-const LEGACY_MANAGED_IMAGE_PATH = /^\/images\/(posters|backdrops|people|optimized\/posters|optimized\/people)\/(.+)$/;
+const LEGACY_MANAGED_IMAGE_PATH = /^\/images\/(posters|backdrops|people|birthdays|optimized\/posters|optimized\/people)\/(.+)$/;
 
 /** Redirects removed, historically indexed local artwork URLs to their R2 objects. */
 export function registerLegacyImageRedirects(app: express.Application): void {

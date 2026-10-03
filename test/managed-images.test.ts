@@ -12,6 +12,7 @@ assert.equal(managedObjectKey('/images/backdrops/foo.jpg'), 'backdrops/foo.jpg')
 assert.equal(managedObjectKey('/images/people/foo.webp'), 'people/foo.webp');
 assert.equal(managedObjectKey('/images/optimized/posters/foo.webp'), 'optimized/posters/foo.webp');
 assert.equal(managedObjectKey('/images/optimized/people/foo.webp'), 'optimized/people/foo.webp');
+assert.equal(managedObjectKey('/images/birthdays/foo-216.webp'), 'birthdays/foo-216.webp');
 assert.throws(() => managedObjectKey('/images/404.png'), R2StorageError);
 
 const root = await fs.mkdtemp(path.join(os.tmpdir(), 'xmasdb-managed-image-'));

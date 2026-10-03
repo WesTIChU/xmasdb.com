@@ -7,9 +7,11 @@ const MONTHS = Array.from({ length: 12 }, (_, index) => new Intl.DateTimeFormat(
 const MONTH_SHORT = MONTHS.map((month) => month.slice(0, 3));
 
 export const BirthdaysPage: React.FC<{ payload: BirthdaysPayload; onNavigate: (path: string) => void; search?: string }> = ({ payload, onNavigate, search = '' }) => {
-  const actors = sortBirthdays(payload.actors);
-  const today = actors.filter((actor) => birthdayDistance(actor.birthday) === 0);
-  const week = actors.filter((actor) => { const distance = birthdayDistance(actor.birthday); return distance !== null && distance > 0 && distance <= 7; });
+  const actors = useMemo(() => sortBirthdays(payload.actors), [payload.actors]);
+  const { today, week } = useMemo(() => ({
+    today: actors.filter((actor) => birthdayDistance(actor.birthday) === 0),
+    week: actors.filter((actor) => { const distance = birthdayDistance(actor.birthday); return distance !== null && distance > 0 && distance <= 7; }),
+  }), [actors]);
   const params = new URLSearchParams(search);
   const requestedMonth = params.get('month');
   const initialMonth = requestedMonth === 'all' ? 'all' : Number(requestedMonth);

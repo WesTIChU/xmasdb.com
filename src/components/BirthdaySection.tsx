@@ -1,24 +1,26 @@
 import React, { useState } from 'react';
 import type { BirthdayActor } from '../api/types';
 import { getActorPath } from '../utils/urls';
-import { getHomepageActorSrcSet } from '../utils/homepage-images';
+import { getBirthdayActorSrcSet } from '../utils/homepage-images';
 import { resolveImageUrl } from '../utils/image-url';
 import { ageOnBirthday, getHomepageBirthdayGroups, parseBirthday } from '../utils/birthdays';
 import { NavigationLink } from './NavigationLink';
 import { HollyDivider } from './HollyDivider';
 
+const birthdayDateFormatter = new Intl.DateTimeFormat('en-US', { month: 'long', day: 'numeric' });
+
 export const BirthdayPortrait: React.FC<{ actor: BirthdayActor }> = ({ actor }) => {
   const [failed, setFailed] = useState(false);
   const image = actor.photoUrl && !failed ? resolveImageUrl(actor.photoUrl) : undefined;
   return <div className="mx-auto h-[100px] w-[100px] overflow-hidden rounded-full border border-[#DDD3C6] bg-[#EFE9DF] transition-transform group-hover:-translate-y-0.5 group-hover:border-[#B8860B]">
-    {image ? <img src={image} srcSet={actor.photoUrl ? getHomepageActorSrcSet(actor.photoUrl) : undefined} sizes="100px" alt={actor.name} loading="lazy" decoding="async" className="h-full w-full object-cover" onError={() => setFailed(true)} /> : <div className="flex h-full items-center justify-center font-heading text-2xl text-[#1A3D2F]">{actor.name.charAt(0)}</div>}
+    {image ? <img src={image} srcSet={actor.photoUrl ? getBirthdayActorSrcSet(actor.photoUrl) : undefined} sizes="100px" alt={actor.name} loading="lazy" decoding="async" width={100} height={100} className="h-full w-full object-cover" onError={() => setFailed(true)} /> : <div className="flex h-full items-center justify-center font-heading text-2xl text-[#1A3D2F]">{actor.name.charAt(0)}</div>}
   </div>;
 };
 
 export const BirthdayCard: React.FC<{ actor: BirthdayActor; onNavigate: (path: string) => void; compact?: boolean }> = ({ actor, onNavigate, compact = false }) => {
   const date = parseBirthday(actor.birthday);
   const path = getActorPath(actor.tmdbPersonId, actor.slug);
-  const formatted = date ? new Intl.DateTimeFormat('en-US', { month: 'long', day: 'numeric' }).format(new Date(2000, date.month - 1, date.day)) : actor.birthday;
+  const formatted = date ? birthdayDateFormatter.format(new Date(2000, date.month - 1, date.day)) : actor.birthday;
   const age = ageOnBirthday(actor.birthday);
   const pattern = actor.tmdbPersonId % 3;
   return <a href={path} onClick={(event) => { event.preventDefault(); onNavigate(path); }} className={`group block text-center ${compact ? '' : `birthday-card birthday-card--${pattern} rounded border border-[#E4DACE] px-3 py-4`}`}>
@@ -37,7 +39,7 @@ export const BirthdaySection: React.FC<{ actors: BirthdayActor[]; onNavigate: (p
   };
   const dateLabel = (actor: BirthdayActor) => {
     const date = parseBirthday(actor.birthday);
-    return date ? new Intl.DateTimeFormat('en-US', { month: 'long', day: 'numeric' }).format(new Date(2000, date.month - 1, date.day)) : actor.birthday;
+    return date ? birthdayDateFormatter.format(new Date(2000, date.month - 1, date.day)) : actor.birthday;
   };
   const actorDetail = (actor: BirthdayActor) => <div key={actor.slug} className="font-body text-sm leading-relaxed"><span>{linkActor(actor)}</span>{ageOnBirthday(actor.birthday) !== null && <span className="ml-1 text-[#736B63]">· Turns {ageOnBirthday(actor.birthday)}</span>}</div>;
   const group = (label: string, entries: BirthdayActor[], withIndividualDates = false, className = '') => <div className={className}><h3 className="font-sans-clean text-[10px] font-semibold uppercase tracking-[0.18em] text-[#8A6800]">{label}</h3>{entries.length > 0 && <div className="mt-2 space-y-1.5">{withIndividualDates ? entries.map((actor) => <div key={actor.slug}><p className="font-body text-xs font-semibold text-[#8A6800]">{dateLabel(actor)}</p>{actorDetail(actor)}</div>) : <><p className="font-body text-xs font-semibold text-[#8A6800]">{dateLabel(entries[0])}</p>{entries.map(actorDetail)}</>}</div>}</div>;
