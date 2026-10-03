@@ -48,4 +48,11 @@ const plainPayload = buildMovieDetail(String(plainMovie.tmdbId), plainMovie.slug
 const plainHtml = ReactDOMServer.renderToStaticMarkup(React.createElement(MovieDetail, { movie: plainPayload.movie, related: [], onNavigate: () => undefined }));
 assert.equal(plainHtml.includes('Christmas Ingredients'), false, 'movies without Christmas ingredients do not render an empty section');
 
+const renamedMovie = MOVIES.find((movie) => movie.tmdbId === 1547926)!;
+const renamedPayload = buildMovieDetail(String(renamedMovie.tmdbId), renamedMovie.slug)!;
+const renamedHtml = ReactDOMServer.renderToStaticMarkup(React.createElement(MovieDetail, { movie: renamedPayload.movie, related: [], onNavigate: () => undefined }));
+assert.match(renamedHtml, /Original title: Oy to the World/, 'different original titles should be displayed on movie details');
+const sameTitleHtml = ReactDOMServer.renderToStaticMarkup(React.createElement(MovieDetail, { movie: { ...renamedPayload.movie, originalTitle: renamedPayload.movie.title.toUpperCase() }, related: [], onNavigate: () => undefined }));
+assert.equal(sameTitleHtml.includes('Original title:'), false, 'case-only title differences should not display an original title');
+
 console.log('Movie fingerprint vocabulary, filtering, routes, SEO, and rendering tests passed.');

@@ -20,6 +20,12 @@ assert.ok(comingSoonMovie, 'canonical catalogue should contain a Coming Soon mov
 const catalogueMovieCount = MOVIES.filter((movie) => movie.status === 'collection' || movie.status === 'coming-soon').length;
 assert.strictEqual(defaultPage.total, catalogueMovieCount);
 
+const singItForChristmas = MOVIES.find((movie) => movie.tmdbId === 1547926);
+assert.ok(singItForChristmas, 'TMDB 1547926 should remain in the catalogue');
+assert.equal(singItForChristmas?.title, 'Sing it for Christmas');
+assert.equal(singItForChristmas?.originalTitle, 'Oy to the World');
+assert.ok(getCataloguePage(MOVIES, parseCatalogueQuery('?search=Oy%20to%20the%20World')).movies.some((movie) => movie.tmdbId === 1547926), 'catalogue search should match a movie original title');
+
 const letItSnow = MOVIES.find((movie) => movie.id === 'gaf-2024-let-it-snow');
 assert.ok(letItSnow, 'Let It Snow remains in the catalogue with its existing ID');
 assert.equal(letItSnow?.brandId, 'hallmark', 'Let It Snow is classified under Hallmark');

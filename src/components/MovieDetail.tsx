@@ -252,6 +252,9 @@ export const MovieDetail: React.FC<MovieDetailProps> = ({ movie, related, onNavi
             <p className="text-lg text-[#841818] font-body mt-1">
               {movie.year}
             </p>
+            {movie.originalTitle && movie.originalTitle.toLowerCase() !== movie.title.toLowerCase() && (
+              <p className="mt-1 text-xs text-[#736B63] font-body">Original title: {movie.originalTitle}</p>
+            )}
           </div>
 
           {/* Synopsis */}

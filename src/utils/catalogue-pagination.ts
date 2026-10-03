@@ -72,6 +72,7 @@ export function getCataloguePage(movies: Movie[], query: CatalogueQuery, lockedB
     if (query.status && movie.status?.toLowerCase() !== query.status) return false;
     if (query.search && !(
       movie.title.toLowerCase().includes(query.search) ||
+      movie.originalTitle?.toLowerCase().includes(query.search) ||
       movie.synopsis.toLowerCase().includes(query.search) ||
       movie.cast.some((cast) => cast.name.toLowerCase().includes(query.search!))
     )) return false;

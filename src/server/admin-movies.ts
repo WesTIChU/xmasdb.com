@@ -168,7 +168,7 @@ export function removeMovieFingerprintAssignment(assignments: Record<string, rea
 export function searchAdminMovies(movies: Movie[], query: string, limit = 50): Movie[] {
   const normalized = query.trim().toLowerCase();
   return movies
-    .filter((movie) => !normalized || movie.title.toLowerCase().includes(normalized) || movie.slug.toLowerCase().includes(normalized))
+    .filter((movie) => !normalized || movie.title.toLowerCase().includes(normalized) || movie.originalTitle?.toLowerCase().includes(normalized) || movie.slug.toLowerCase().includes(normalized))
     .sort((left, right) => left.title.localeCompare(right.title) || right.year - left.year)
     .slice(0, limit);
 }

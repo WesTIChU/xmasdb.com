@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import { buildMovieFromTmdb, extractTmdbId, generateMoviesModule, normalizeBrand, normalizeStatus, parseBulkMovieInput, parseMoviesModule } from '../src/server/movie-import';
 import { commitMoviesToGitHub, readGitHubBranch } from '../src/server/github-catalogue';
 import { fetchTmdbMovie } from '../src/utils/tmdb';
-import { applyAdminMovieEdit, getMovieWriters, removeMovie, removeMovieFingerprintAssignment, validateAdminMovieEdit, validateMovieUniqueness } from '../src/server/admin-movies';
+import { applyAdminMovieEdit, getMovieWriters, removeMovie, removeMovieFingerprintAssignment, searchAdminMovies, validateAdminMovieEdit, validateMovieUniqueness } from '../src/server/admin-movies';
 import type { FingerprintId } from '../src/data/fingerprints';
 import fs from 'node:fs/promises';
 import path from 'node:path';
@@ -31,6 +31,7 @@ assert.equal(movie.brandId, 'hallmark');
 assert.equal(movie.status, 'coming-soon');
 assert.equal(movie.isComingSoon, true);
 assert.match(generateMoviesModule([movie]), /A Preview Christmas/);
+assert.equal(searchAdminMovies([{ ...movie, originalTitle: 'Oy to the World' }], 'Oy to the World')[0]?.tmdbId, 1547913, 'admin movie search should match an original title');
 const editable = {
   brand: 'lifetime', title: 'Edited Christmas Story', releaseDate: '2024-11-02', synopsis: 'Updated synopsis', runtimeMinutes: '92', rating: '7.4',
   director: 'New Director', writers: 'First Writer\nSecond Writer', imdbId: 'tt1234567', tmdbId: '1547914', posterUrl: '/images/posters/1547914.jpg', backdropUrl: '/images/backdrops/1547914.jpg',
