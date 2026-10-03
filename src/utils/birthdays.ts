@@ -25,6 +25,11 @@ export function ageOnBirthday(birthday: string, referenceDate: Date = new Date()
   return calculateAge(birthday, undefined, new Date(targetYear, parsed.month - 1, parsed.day));
 }
 
+export function isBirthdayToday(birthday: string, referenceDate: Date = new Date()): boolean {
+  const parsed = parseBirthday(birthday);
+  return Boolean(parsed && parsed.month === referenceDate.getMonth() + 1 && parsed.day === referenceDate.getDate());
+}
+
 export function birthdayDistance(birthday: string, referenceDate: Date = new Date()): number | null {
   const parsed = parseBirthday(birthday);
   if (!parsed) return null;
