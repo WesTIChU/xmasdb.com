@@ -8761,11 +8761,12 @@
     "imdbPersonId": "nm3833531",
     "gender": "Male",
     "knownForDepartment": "Acting",
-    "knownCredits": 32,
+    "knownCredits": 33,
     "instagramId": "cayonne",
     "twitterId": "cayonne",
     "facebookId": "antonio.cayonne",
-    "tmdbUpdatedAt": "2026-09-20T16:16:47.631Z"
+    "tmdbUpdatedAt": "2026-10-03T05:30:51.399Z",
+    "tmdbFetchedAt": "2026-10-03T05:30:51.399Z"
   },
   {
     "id": "antonio-cupo",
@@ -24731,6 +24732,21 @@
     "tmdbFetchedAt": "2026-10-01T10:07:45.355Z"
   },
   {
+    "id": "2202986",
+    "slug": "colby-jensen",
+    "name": "Colby Jensen",
+    "tmdbPersonId": 2202986,
+    "photoUrl": "/images/people/2202986.webp",
+    "profileUrl": "/images/people/2202986.webp",
+    "biography": "Colby Jensen is an actor, known for Enlisted (2014), The Party Dress (2014) and Bound for Greatness (2014).",
+    "imdbPersonId": "nm5804927",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 3,
+    "tmdbUpdatedAt": "2026-10-03T05:30:52.630Z",
+    "tmdbFetchedAt": "2026-10-03T05:30:52.630Z"
+  },
+  {
     "id": "colby-mcclendon",
     "slug": "colby-mcclendon",
     "name": "Colby McClendon",
@@ -25501,6 +25517,16 @@
     "knownForDepartment": "Acting",
     "knownCredits": 6,
     "tmdbUpdatedAt": "2026-09-20T16:17:05.306Z"
+  },
+  {
+    "id": "5361713",
+    "slug": "coralee-wood",
+    "name": "Coralee Wood",
+    "tmdbPersonId": 5361713,
+    "knownForDepartment": "Acting",
+    "knownCredits": 2,
+    "tmdbUpdatedAt": "2026-10-03T05:30:51.594Z",
+    "tmdbFetchedAt": "2026-10-03T05:30:51.594Z"
   },
   {
     "id": "corbin-bleu",
@@ -29678,6 +29704,23 @@
     "tmdbUpdatedAt": "2026-09-20T16:16:48.442Z"
   },
   {
+    "id": "84490",
+    "slug": "david-kaye",
+    "name": "David Kaye",
+    "tmdbPersonId": 84490,
+    "photoUrl": "/images/people/84490.webp",
+    "profileUrl": "/images/people/84490.webp",
+    "birthday": "1964-10-14",
+    "placeOfBirth": "Peterborough, Ontario, Canada",
+    "biography": "David Kaye is a Canadian actor and voice actor. He is best known for animation roles such as Megatron in five of the Transformers series (Beast Wars, Beast Machines, Armada, Energon, and Cybertron), Optimus Prime in Transformers: Animated, Professor X in X-Men: Evolution, Cronus in Class of the Titans, Khyber in Ben 10: Omniverse, several characters in Avengers Assemble, and Duckworth in the reboot of DuckTales. He is also known for anime roles, including Sesshōmaru in Inuyasha and Treize Khushrenada in Mobile Suit Gundam Wing, and video game roles such as Clank in the Ratchet & Clank series and Nathan Hale in the Resistance series. He is also the announcer for Last Week Tonight with John Oliver on HBO and voiced the Celestial Arishem in the Marvel Cinematic Universe film Eternals. He did voice work for various other studios in Vancouver, British Columbia, Canada, for many years while occasionally doing voice work in Los Angeles, California, US, before fully relocating there in 2007.\n\nDescription above from the Wikipedia article David Kaye (voice actor), licensed under CC-BY-SA, full list of contributors on Wikipedia.",
+    "imdbPersonId": "nm0443286",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 169,
+    "tmdbUpdatedAt": "2026-10-03T05:30:52.103Z",
+    "tmdbFetchedAt": "2026-10-03T05:30:52.103Z"
+  },
+  {
     "id": "david-keeley",
     "slug": "david-keeley",
     "name": "David Keeley",
@@ -30367,8 +30410,9 @@
     "imdbPersonId": "nm0067546",
     "gender": "Male",
     "knownForDepartment": "Acting",
-    "knownCredits": 15,
-    "tmdbUpdatedAt": "2026-09-21T13:01:35.543Z"
+    "knownCredits": 16,
+    "tmdbUpdatedAt": "2026-10-03T05:30:51.177Z",
+    "tmdbFetchedAt": "2026-10-03T05:30:51.177Z"
   },
   {
     "id": "daxton-gujral",
@@ -39802,6 +39846,16 @@
     "knownForDepartment": "Acting",
     "knownCredits": 1,
     "tmdbUpdatedAt": "2026-09-20T16:16:47.984Z"
+  },
+  {
+    "id": "4955681",
+    "slug": "felix-montgomery",
+    "name": "Felix Montgomery",
+    "tmdbPersonId": 4955681,
+    "knownForDepartment": "Acting",
+    "knownCredits": 2,
+    "tmdbUpdatedAt": "2026-10-03T05:30:51.878Z",
+    "tmdbFetchedAt": "2026-10-03T05:30:51.878Z"
   },
   {
     "id": "ferelith-young",
@@ -50520,8 +50574,9 @@
     "placeOfBirth": "Winnipeg, Manitoba, Canada",
     "gender": "Female",
     "knownForDepartment": "Acting",
-    "knownCredits": 24,
-    "tmdbUpdatedAt": "2026-09-20T16:17:27.577Z"
+    "knownCredits": 25,
+    "tmdbUpdatedAt": "2026-10-03T05:30:52.155Z",
+    "tmdbFetchedAt": "2026-10-03T05:30:52.155Z"
   },
   {
     "id": "jana-benoit",
@@ -51645,9 +51700,10 @@
     "imdbPersonId": "nm3774892",
     "gender": "Male",
     "knownForDepartment": "Acting",
-    "knownCredits": 14,
+    "knownCredits": 15,
     "instagramId": "jasonsakaki",
-    "tmdbUpdatedAt": "2026-09-20T16:19:36.083Z"
+    "tmdbUpdatedAt": "2026-10-03T05:30:51.481Z",
+    "tmdbFetchedAt": "2026-10-03T05:30:51.481Z"
   },
   {
     "id": "jason-schombing",
@@ -60017,6 +60073,20 @@
     "knownForDepartment": "Acting",
     "knownCredits": 7,
     "tmdbUpdatedAt": "2026-09-20T16:19:27.459Z"
+  },
+  {
+    "id": "67712",
+    "slug": "josh-strait",
+    "name": "Josh Strait",
+    "tmdbPersonId": 67712,
+    "photoUrl": "/images/people/67712.webp",
+    "profileUrl": "/images/people/67712.webp",
+    "imdbPersonId": "nm1382676",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 19,
+    "tmdbUpdatedAt": "2026-10-03T05:30:52.894Z",
+    "tmdbFetchedAt": "2026-10-03T05:30:52.894Z"
   },
   {
     "id": "josh-ventura",
@@ -71347,6 +71417,17 @@
     "tmdbFetchedAt": "2026-09-25T21:37:13.080Z"
   },
   {
+    "id": "3723656",
+    "slug": "lexie-cypurda",
+    "name": "Lexie Cypurda",
+    "tmdbPersonId": 3723656,
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 4,
+    "tmdbUpdatedAt": "2026-10-03T05:30:51.789Z",
+    "tmdbFetchedAt": "2026-10-03T05:30:51.789Z"
+  },
+  {
     "id": "lia-frankland",
     "slug": "lia-frankland",
     "name": "Lia Frankland",
@@ -75756,9 +75837,10 @@
     "imdbPersonId": "nm0814549",
     "gender": "Male",
     "knownForDepartment": "Acting",
-    "knownCredits": 41,
+    "knownCredits": 42,
     "twitterId": "manoj77",
-    "tmdbUpdatedAt": "2026-09-20T16:17:02.517Z"
+    "tmdbUpdatedAt": "2026-10-03T05:30:51.575Z",
+    "tmdbFetchedAt": "2026-10-03T05:30:51.575Z"
   },
   {
     "id": "mansoor-noor",
@@ -84713,8 +84795,9 @@
     "imdbPersonId": "nm2243516",
     "gender": "Female",
     "knownForDepartment": "Acting",
-    "knownCredits": 21,
-    "tmdbUpdatedAt": "2026-09-22T20:53:51.903Z"
+    "knownCredits": 22,
+    "tmdbUpdatedAt": "2026-10-03T05:30:51.521Z",
+    "tmdbFetchedAt": "2026-10-03T05:30:51.521Z"
   },
   {
     "id": "michelle-choi-lee",
@@ -91327,11 +91410,12 @@
     "imdbPersonId": "nm5625610",
     "gender": "Female",
     "knownForDepartment": "Acting",
-    "knownCredits": 38,
+    "knownCredits": 39,
     "instagramId": "pantamosleh",
     "twitterId": "kuween_latysha4",
     "facebookId": "kuweenlatysha4",
-    "tmdbUpdatedAt": "2026-09-21T13:01:35.780Z"
+    "tmdbUpdatedAt": "2026-10-03T05:30:51.930Z",
+    "tmdbFetchedAt": "2026-10-03T05:30:51.930Z"
   },
   {
     "id": "3546863",
@@ -112536,6 +112620,16 @@
     "knownForDepartment": "Acting",
     "knownCredits": 1,
     "tmdbUpdatedAt": "2026-09-20T16:16:42.531Z"
+  },
+  {
+    "id": "6521467",
+    "slug": "theo-zuyderguyn",
+    "name": "Theo Zuyderguyn",
+    "tmdbPersonId": 6521467,
+    "knownForDepartment": "Acting",
+    "knownCredits": 1,
+    "tmdbUpdatedAt": "2026-10-03T05:30:51.673Z",
+    "tmdbFetchedAt": "2026-10-03T05:30:51.673Z"
   },
   {
     "id": "theresa-coombe",
