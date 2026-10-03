@@ -5417,7 +5417,8 @@
     "gender": "Female",
     "knownForDepartment": "Acting",
     "knownCredits": 17,
-    "tmdbUpdatedAt": "2026-09-20T16:17:49.337Z"
+    "tmdbUpdatedAt": "2026-10-03T21:31:38.338Z",
+    "tmdbFetchedAt": "2026-10-03T21:31:38.338Z"
   },
   {
     "id": "amy-groening",
@@ -12691,12 +12692,13 @@
     "imdbPersonId": "nm0254379",
     "gender": "Female",
     "knownForDepartment": "Acting",
-    "knownCredits": 84,
+    "knownCredits": 85,
     "alsoKnownAs": [
       "Beverly Elliott",
       "Beverley Elliot"
     ],
-    "tmdbUpdatedAt": "2026-09-20T16:17:03.857Z"
+    "tmdbUpdatedAt": "2026-10-03T21:31:38.375Z",
+    "tmdbFetchedAt": "2026-10-03T21:31:38.375Z"
   },
   {
     "id": "beverley-mitchell",
@@ -64042,6 +64044,18 @@
     "tmdbFetchedAt": "2026-10-01T10:28:09.054Z"
   },
   {
+    "id": "1404399",
+    "slug": "kathy-kloves",
+    "name": "Kathy Kloves",
+    "tmdbPersonId": 1404399,
+    "imdbPersonId": "nm2712852",
+    "gender": "Female",
+    "knownForDepartment": "Writing",
+    "knownCredits": 5,
+    "tmdbUpdatedAt": "2026-10-03T21:31:38.094Z",
+    "tmdbFetchedAt": "2026-10-03T21:31:38.094Z"
+  },
+  {
     "id": "2224480",
     "slug": "kathy-maloney",
     "name": "Kathy Maloney",
@@ -80236,6 +80250,17 @@
     "knownCredits": 2,
     "instagramId": "matteus_lunot",
     "tmdbUpdatedAt": "2026-09-20T16:18:08.770Z"
+  },
+  {
+    "id": "2422679",
+    "slug": "matthew-clarke",
+    "name": "Matthew Clarke",
+    "tmdbPersonId": 2422679,
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 3,
+    "tmdbUpdatedAt": "2026-10-03T21:31:38.091Z",
+    "tmdbFetchedAt": "2026-10-03T21:31:38.091Z"
   },
   {
     "id": "1465902",
@@ -113671,7 +113696,8 @@
     "gender": "Male",
     "knownForDepartment": "Acting",
     "knownCredits": 11,
-    "tmdbUpdatedAt": "2026-09-20T16:17:29.233Z"
+    "tmdbUpdatedAt": "2026-10-03T21:31:38.377Z",
+    "tmdbFetchedAt": "2026-10-03T21:31:38.377Z"
   },
   {
     "id": "1286420",
