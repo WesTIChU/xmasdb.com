@@ -183223,6 +183223,184 @@ export const MOVIES: Movie[] = [
     "voteCount": 28,
     "tmdbUpdatedAt": "2026-10-04T16:07:45.662Z",
     "tmdbFetchedAt": "2026-10-04T16:07:45.662Z"
+  },
+  {
+    "id": "hallmark-2022-my-grown-up-christmas-list",
+    "slug": "my-grown-up-christmas-list",
+    "title": "My Grown-Up Christmas List",
+    "year": 2022,
+    "brandId": "hallmark",
+    "releaseDate": "2022-07-09",
+    "synopsis": "Taylor, a journalist, and Luke, in the military, share a special bond that grows between them over the course of several Christmases that they spend together and apart.",
+    "posterUrl": "/images/posters/983232.jpg",
+    "backdropUrl": "/images/backdrops/983232.jpg",
+    "cast": [
+      {
+        "actorId": "2019485",
+        "name": "Kayla Wallace",
+        "character": "Taylor Nichols",
+        "slug": "kayla-wallace",
+        "tmdbPersonId": 2019485,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/ePl7sXtyWIQsWsylyQBTxYsouKF.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "1515481",
+        "name": "Kevin McGarry",
+        "character": "Luke Malone",
+        "slug": "kevin-mcgarry",
+        "tmdbPersonId": 1515481,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/JDXtYzUBK17wkQOodRf6SuFDiY.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "603005",
+        "name": "Lindsay Merrithew",
+        "character": "Charlie Malone",
+        "slug": "lindsay-merrithew",
+        "tmdbPersonId": 603005,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/kgxNVv9pQxPy1NTrKly826ncpHJ.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "1193942",
+        "name": "Susan Hamann",
+        "character": "Peggy Malone",
+        "slug": "susan-hamann",
+        "tmdbPersonId": 1193942,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/fkfmlhnBCmqCLa1N097LeBaScBm.jpg",
+        "order": 3
+      },
+      {
+        "actorId": "3016828",
+        "name": "James M. Jenkinson",
+        "character": "Grandpa Frank",
+        "slug": "james-m-jenkinson",
+        "tmdbPersonId": 3016828,
+        "order": 4
+      },
+      {
+        "actorId": "216409",
+        "name": "Cory Lee",
+        "character": "Bonnie Curtis",
+        "slug": "cory-lee",
+        "tmdbPersonId": 216409,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/fghcWFgEJJOn82tNGUr8vvFQBFi.jpg",
+        "order": 5
+      },
+      {
+        "actorId": "2420313",
+        "name": "Colton Royce",
+        "character": "Captain Adam Kerney",
+        "slug": "colton-royce",
+        "tmdbPersonId": 2420313,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/6v5rImNgLRFmerNq13FtwR7GwcV.jpg",
+        "order": 6
+      },
+      {
+        "actorId": "3582404",
+        "name": "Andrew Ball",
+        "character": "Nathan",
+        "slug": "andrew-ball",
+        "tmdbPersonId": 3582404,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/6c0TvizNi1nI6sU43FnMh6tDRe5.jpg",
+        "order": 7
+      },
+      {
+        "actorId": "1803507",
+        "name": "Tonjha Richardson",
+        "character": "Barb Barrett",
+        "slug": "tonjha-richardson",
+        "tmdbPersonId": 1803507,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/1iLoB8CyXd6N7N9DkOT4T7LWyj5.jpg",
+        "order": 8
+      },
+      {
+        "actorId": "1008656",
+        "name": "John Koensgen",
+        "character": "Colonel Clay Murphy",
+        "slug": "john-koensgen",
+        "tmdbPersonId": 1008656,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/s2BQozISU7ZoCfZl7LdYvtWSN8B.jpg",
+        "order": 9
+      },
+      {
+        "actorId": "1116274",
+        "name": "Janet Rice",
+        "character": "Annie Grantham",
+        "slug": "janet-rice",
+        "tmdbPersonId": 1116274,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/sq5F1rhH4PqQHd6eYbAHl6mNCak.jpg",
+        "order": 10
+      }
+    ],
+    "director": "Andrew Cymek",
+    "tmdbId": 983232,
+    "imdbId": "tt21058846",
+    "isComingSoon": false,
+    "status": "collection",
+    "originalTitle": "My Grown-Up Christmas List",
+    "runtimeMinutes": 84,
+    "genres": [
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      },
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "US",
+        "releaseDate": "2022-07-09T00:00:00.000Z",
+        "type": 6,
+        "certification": "G",
+        "note": "Hallmark Channel"
+      }
+    ],
+    "crew": [
+      {
+        "id": 122366,
+        "name": "Andrew Cymek",
+        "job": "Director",
+        "department": "Directing",
+        "creditId": "62a20ff735d1bc372c757714"
+      },
+      {
+        "id": 1357879,
+        "name": "Bryar Freed",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "62a20ffdb87aec005178c3ae"
+      },
+      {
+        "id": 2871797,
+        "name": "Shawn Riopelle",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "62a21004d2147c117dacfe6e"
+      }
+    ],
+    "trailers": [
+      {
+        "key": "d_-NVsRa75g",
+        "site": "YouTube",
+        "type": "Teaser",
+        "name": "Preview",
+        "official": true
+      }
+    ],
+    "trailerYoutubeKey": "d_-NVsRa75g",
+    "voteAverage": 7.4,
+    "voteCount": 28,
+    "tmdbUpdatedAt": "2026-10-04T16:15:02.753Z",
+    "tmdbFetchedAt": "2026-10-04T16:15:02.753Z"
   }
 ];
 

@@ -6407,6 +6407,18 @@
     "tmdbFetchedAt": "2026-10-02T17:42:32.798Z"
   },
   {
+    "id": "3582404",
+    "slug": "andrew-ball",
+    "name": "Andrew Ball",
+    "tmdbPersonId": 3582404,
+    "photoUrl": "/images/people/3582404.webp",
+    "profileUrl": "/images/people/3582404.webp",
+    "knownForDepartment": "Acting",
+    "knownCredits": 1,
+    "tmdbUpdatedAt": "2026-10-04T16:15:04.805Z",
+    "tmdbFetchedAt": "2026-10-04T16:15:04.805Z"
+  },
+  {
     "id": "andrew-biernat",
     "slug": "andrew-biernat",
     "name": "Andrew Biernat",
@@ -6562,7 +6574,8 @@
     "gender": "Male",
     "knownForDepartment": "Directing",
     "knownCredits": 29,
-    "tmdbUpdatedAt": "2026-09-21T13:01:43.870Z"
+    "tmdbUpdatedAt": "2026-10-04T16:15:04.469Z",
+    "tmdbFetchedAt": "2026-10-04T16:15:04.469Z"
   },
   {
     "id": "998262",
@@ -16971,7 +16984,8 @@
     "imdbPersonId": "nm5958133",
     "knownForDepartment": "Writing",
     "knownCredits": 14,
-    "tmdbUpdatedAt": "2026-09-21T13:16:56.975Z"
+    "tmdbUpdatedAt": "2026-10-04T16:15:04.622Z",
+    "tmdbFetchedAt": "2026-10-04T16:15:04.622Z"
   },
   {
     "id": "bryce-durfee",
@@ -25354,7 +25368,8 @@
     "gender": "Male",
     "knownForDepartment": "Acting",
     "knownCredits": 22,
-    "tmdbUpdatedAt": "2026-09-21T12:58:57.879Z"
+    "tmdbUpdatedAt": "2026-10-04T16:15:04.312Z",
+    "tmdbFetchedAt": "2026-10-04T16:15:04.312Z"
   },
   {
     "id": "conan-graham",
@@ -26006,7 +26021,8 @@
     "instagramId": "coryleemusic",
     "twitterId": "coryleemusic",
     "facebookId": "coryleemusicpage",
-    "tmdbUpdatedAt": "2026-09-21T12:51:15.072Z"
+    "tmdbUpdatedAt": "2026-10-04T16:15:04.268Z",
+    "tmdbFetchedAt": "2026-10-04T16:15:04.268Z"
   },
   {
     "id": "cory-wojcik",
@@ -50294,7 +50310,8 @@
     "gender": "Male",
     "knownForDepartment": "Acting",
     "knownCredits": 10,
-    "tmdbUpdatedAt": "2026-09-21T13:01:43.455Z"
+    "tmdbUpdatedAt": "2026-10-04T16:15:04.049Z",
+    "tmdbFetchedAt": "2026-10-04T16:15:04.049Z"
   },
   {
     "id": "james-macdonald",
@@ -51327,6 +51344,20 @@
     "knownForDepartment": "Acting",
     "knownCredits": 63,
     "tmdbUpdatedAt": "2026-09-20T16:20:04.832Z"
+  },
+  {
+    "id": "1116274",
+    "slug": "janet-rice",
+    "name": "Janet Rice",
+    "tmdbPersonId": 1116274,
+    "photoUrl": "/images/people/1116274.webp",
+    "profileUrl": "/images/people/1116274.webp",
+    "imdbPersonId": "nm3340989",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 5,
+    "tmdbUpdatedAt": "2026-10-04T16:15:05.493Z",
+    "tmdbFetchedAt": "2026-10-04T16:15:05.493Z"
   },
   {
     "id": "janet-laine-green",
@@ -65021,7 +65052,8 @@
     "knownCredits": 17,
     "instagramId": "imkaylawallace",
     "twitterId": "imKaylaWallace",
-    "tmdbUpdatedAt": "2026-09-21T13:18:15.304Z"
+    "tmdbUpdatedAt": "2026-10-04T16:15:04.211Z",
+    "tmdbFetchedAt": "2026-10-04T16:15:04.211Z"
   },
   {
     "id": "kaylee-harwood",
@@ -72699,6 +72731,29 @@
       "Luigi"
     ],
     "tmdbUpdatedAt": "2026-09-20T16:18:49.068Z"
+  },
+  {
+    "id": "603005",
+    "slug": "lindsay-merrithew",
+    "name": "Lindsay Merrithew",
+    "tmdbPersonId": 603005,
+    "photoUrl": "/images/people/603005.webp",
+    "profileUrl": "/images/people/603005.webp",
+    "birthday": "1964-02-21",
+    "placeOfBirth": "Woodstock, New Brunswick, Canada",
+    "biography": "Lindsay Merrithew is a Canadian entrepreneur, producer, stage, film and television actor. He studied Commerce at Dalhousie University in Halifax, Nova Scotia, Canada, before he auditioned for drama schools and got accepted at The Juilliard School of Performing Arts in New York City, New York, USA. Together with his wife, Moira Merrithew (née Stott), he founded and commercialized a branded version of the Pilates method of physical exercise, Stott Pilates.",
+    "imdbPersonId": "nm0581386",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 18,
+    "alsoKnownAs": [
+      "Lindsay Gerald Merrithew",
+      "Lindsay G Merrithew",
+      "Lindsay G. Merrithew"
+    ],
+    "facebookId": "lindsay.merrithew",
+    "tmdbUpdatedAt": "2026-10-04T16:15:04.672Z",
+    "tmdbFetchedAt": "2026-10-04T16:15:04.672Z"
   },
   {
     "id": "lindsay-nance",
@@ -106763,6 +106818,16 @@
     "tmdbUpdatedAt": "2026-09-20T16:16:33.166Z"
   },
   {
+    "id": "2871797",
+    "slug": "shawn-riopelle",
+    "name": "Shawn Riopelle",
+    "tmdbPersonId": 2871797,
+    "knownForDepartment": "Writing",
+    "knownCredits": 15,
+    "tmdbUpdatedAt": "2026-10-04T16:15:04.637Z",
+    "tmdbFetchedAt": "2026-10-04T16:15:04.637Z"
+  },
+  {
     "id": "shawn-stevens",
     "slug": "shawn-stevens",
     "name": "Shawn Stevens",
@@ -110497,7 +110562,8 @@
     "gender": "Female",
     "knownForDepartment": "Acting",
     "knownCredits": 22,
-    "tmdbUpdatedAt": "2026-09-21T12:58:57.835Z"
+    "tmdbUpdatedAt": "2026-10-04T16:15:04.193Z",
+    "tmdbFetchedAt": "2026-10-04T16:15:04.193Z"
   },
   {
     "id": "susan-hanson",
@@ -115373,7 +115439,8 @@
     "gender": "Female",
     "knownForDepartment": "Acting",
     "knownCredits": 26,
-    "tmdbUpdatedAt": "2026-09-21T13:01:43.420Z"
+    "tmdbUpdatedAt": "2026-10-04T16:15:04.502Z",
+    "tmdbFetchedAt": "2026-10-04T16:15:04.502Z"
   },
   {
     "id": "tony-alcantar",
