@@ -2381,6 +2381,10 @@ export const PROTOTYPE_MOVIE_FINGERPRINTS: Readonly<Record<string, readonly Fing
     "unexpected-romance",
     "writer-journalist"
   ],
+  "hallmark-2026-snowbound-for-the-holidays": [
+    "career-vs-love",
+    "hotel-resort"
+  ],
   "hallmark-2026-the-christmas-eve-feast": [
     "baking-cooking",
     "chef-baker",
