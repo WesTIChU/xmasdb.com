@@ -180181,7 +180181,6 @@ export const MOVIES: Movie[] = [
       }
     ],
     "trailers": [],
-    "voteAverage": 6,
     "voteCount": 8,
     "tmdbUpdatedAt": "2026-10-04T07:51:28.864Z",
     "tmdbFetchedAt": "2026-10-04T07:51:28.864Z",
@@ -180195,7 +180194,8 @@ export const MOVIES: Movie[] = [
         "title": "Sweet Holiday Romance",
         "country": "US"
       }
-    ]
+    ],
+    "networkPremiereDate": "2025-12-19"
   },
   {
     "id": "lifetime-2016-heaven-sent",
