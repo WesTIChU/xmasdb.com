@@ -257,6 +257,7 @@ export interface SearchMovieEntry {
   brandId: string;
   posterUrl: string;
   originalTitle?: string;
+  alternativeTitles?: string[];
   /** Lowercased searchable text (cast names) used for autocomplete matching. */
   terms: string;
 }

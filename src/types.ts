@@ -50,6 +50,11 @@ export interface ReleaseDateInfo {
   note?: string;
 }
 
+export interface AlternativeTitle {
+  title: string;
+  country: string;
+}
+
 export interface Movie {
   id: string;
   slug: string;
@@ -74,6 +79,7 @@ export interface Movie {
     justWatch?: string;
   };
   originalTitle?: string;
+  alternativeTitles?: AlternativeTitle[];
   tagline?: string | null;
   premiereDate?: string;
   genres?: Genre[];

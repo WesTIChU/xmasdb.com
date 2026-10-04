@@ -1,4 +1,4 @@
-import { Actor, CastMember, CrewMember, Genre, Movie, ReleaseDateInfo, Trailer } from '../types';
+import { Actor, AlternativeTitle, CastMember, CrewMember, Genre, Movie, ReleaseDateInfo, Trailer } from '../types';
 import { MOVIES } from '../data/movies';
 import { getTmdbPersonIdForSlug } from '../data/actors';
 import { getCreativeCrew } from './creative-crew';
@@ -57,10 +57,34 @@ export interface TmdbMovieApiResponse {
   external_ids?: { imdb_id?: string | null };
   videos?: { results?: Array<{ key: string; site: string; type: string; name: string; official?: boolean }> };
   release_dates?: { results?: Array<{ iso_3166_1: string; release_dates?: Array<{ release_date: string; type?: number; certification?: string; note?: string }> }> };
+  alternative_titles?: { titles?: Array<{ iso_3166_1?: string; title?: string }> };
   credits?: {
     cast?: Array<{ id: number; name: string; character?: string; order?: number; profile_path?: string | null }>;
     crew?: Array<{ id: number; name: string; job: string; department?: string; profile_path?: string | null; credit_id?: string }>;
   };
+}
+
+function titleKey(value: string): string {
+  return value.normalize('NFKC').trim().replace(/\s+/g, ' ').toLocaleLowerCase();
+}
+
+export function normalizeTmdbAlternativeTitles(
+  entries: TmdbMovieApiResponse['alternative_titles'],
+  primaryTitle?: string,
+  originalTitle?: string,
+): AlternativeTitle[] | undefined {
+  const excluded = new Set([primaryTitle, originalTitle].filter((title): title is string => Boolean(title)).map(titleKey));
+  const seen = new Set<string>();
+  const titles: AlternativeTitle[] = [];
+  for (const entry of entries?.titles || []) {
+    const title = entry.title?.trim();
+    if (!title) continue;
+    const key = titleKey(title);
+    if (excluded.has(key) || seen.has(key)) continue;
+    seen.add(key);
+    titles.push({ title, country: entry.iso_3166_1?.trim() || '' });
+  }
+  return titles.length > 0 ? titles : undefined;
 }
 
 interface TmdbMovieSearchResponse {
@@ -116,7 +140,7 @@ export async function fetchTmdbMovie(tmdbId: number, apiKey?: string): Promise<P
   const key = apiKey || (typeof process !== 'undefined' ? process.env?.TMDB_API_KEY : undefined);
   if (!key) return null;
 
-  const url = `https://api.themoviedb.org/3/movie/${tmdbId}?api_key=${encodeURIComponent(key)}&append_to_response=credits,videos,release_dates,external_ids`;
+  const url = `https://api.themoviedb.org/3/movie/${tmdbId}?api_key=${encodeURIComponent(key)}&append_to_response=credits,videos,release_dates,external_ids,alternative_titles`;
   try {
     const data = await fetchTmdbJson<TmdbMovieApiResponse>(url);
     if (!data) return null;
@@ -154,12 +178,14 @@ export async function fetchTmdbMovie(tmdbId: number, apiKey?: string): Promise<P
       official: video.official,
     }));
     const director = crew?.find((member) => member.job === 'Director')?.name;
+    const alternativeTitles = normalizeTmdbAlternativeTitles(data.alternative_titles, data.title, data.original_title);
 
     return {
       tmdbId: data.id,
       imdbId: data.external_ids?.imdb_id || undefined,
       title: data.title,
       originalTitle: data.original_title,
+      alternativeTitles,
       synopsis: data.overview,
       releaseDate: data.release_date,
       runtimeMinutes: data.runtime || undefined,

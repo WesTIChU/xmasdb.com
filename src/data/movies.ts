@@ -155380,6 +155380,12 @@ export const MOVIES: Movie[] = [
     "isComingSoon": false,
     "status": "collection",
     "originalTitle": "Much Ado About Christmas",
+    "alternativeTitles": [
+      {
+        "title": "A Hot Cocoa Christmas",
+        "country": "US"
+      }
+    ],
     "runtimeMinutes": 85,
     "genres": [
       {

@@ -108,6 +108,7 @@ export function buildMovieFromTmdb(tmdbId: number, metadata: Partial<Movie>, bra
     isComingSoon: status === 'coming-soon',
     status,
     originalTitle: metadata.originalTitle,
+    alternativeTitles: metadata.alternativeTitles,
     runtimeMinutes: metadata.runtimeMinutes,
     genres: metadata.genres,
     releaseDates: metadata.releaseDates,

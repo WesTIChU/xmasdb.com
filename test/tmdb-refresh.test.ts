@@ -3,10 +3,21 @@ import fs from 'node:fs/promises';
 import os from 'node:os';
 import path from 'node:path';
 import { Movie } from '../src/types';
+import { normalizeTmdbAlternativeTitles } from '../src/utils/tmdb';
 import { mergeTmdbMovie, refreshTmdbMovie, selectPeopleRefreshMovies } from '../src/utils/tmdb-refresh';
 import { cacheLocalImage, createImageRefreshBudget } from '../src/utils/local-images';
 
 console.log('Running TMDB refresh tests...');
+
+assert.deepStrictEqual(
+  normalizeTmdbAlternativeTitles({ titles: [
+    { title: 'A Hot Cocoa Christmas', iso_3166_1: 'US' },
+    { title: 'a hot cocoa christmas', iso_3166_1: 'GB' },
+    { title: 'Much Ado About Christmas', iso_3166_1: 'US' },
+  ] }, 'Much Ado About Christmas', 'Much Ado About Christmas'),
+  [{ title: 'A Hot Cocoa Christmas', country: 'US' }],
+  'TMDB alternative titles are normalized, deduplicated and exclude primary/original titles',
+);
 
 const movie = {
   id: 'movie-1',
@@ -67,7 +78,10 @@ const originalMetadataFetch = globalThis.fetch;
 const imageMovie = { ...movie, posterUrl: '/images/posters/existing.jpg', backdropUrl: '/images/backdrops/existing.jpg' } satisfies Movie;
 let metadataPoster: string | null = null;
 let metadataBackdrop: string | null = null;
-globalThis.fetch = (async () => new Response(JSON.stringify({
+let metadataUrl = '';
+globalThis.fetch = (async (input) => {
+  metadataUrl = String(input);
+  return new Response(JSON.stringify({
   id: imageMovie.tmdbId,
   title: imageMovie.title,
   release_date: imageMovie.releaseDate,
@@ -75,7 +89,9 @@ globalThis.fetch = (async () => new Response(JSON.stringify({
   poster_path: metadataPoster,
   backdrop_path: metadataBackdrop,
   credits: { cast: [], crew: [] },
-}), { status: 200, headers: { 'content-type': 'application/json' } })) as typeof fetch;
+  alternative_titles: { titles: [{ title: 'An Alternate Movie 1', iso_3166_1: 'US' }] },
+  }), { status: 200, headers: { 'content-type': 'application/json' } });
+}) as typeof fetch;
 try {
   let cacheCalls = 0;
   const cache = async (_url: string | undefined, localPath: string): Promise<string> => {
@@ -83,6 +99,8 @@ try {
     return localPath;
   };
   const optional = await refreshTmdbMovie(imageMovie, 'test-key', cache);
+  assert.ok(metadataUrl.includes('append_to_response=credits,videos,release_dates,external_ids,alternative_titles'), 'alternative titles are appended to the existing movie request');
+  assert.deepEqual(optional.alternativeTitles, [{ title: 'An Alternate Movie 1', country: 'US' }]);
   assert.equal(cacheCalls, 0, 'missing optional poster/backdrop URLs do not invoke image ingestion');
   assert.equal(optional.posterUrl, imageMovie.posterUrl, 'missing poster preserves existing artwork');
   assert.equal(optional.backdropUrl, imageMovie.backdropUrl, 'missing backdrop preserves existing artwork');

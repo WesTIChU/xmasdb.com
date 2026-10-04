@@ -255,6 +255,9 @@ export const MovieDetail: React.FC<MovieDetailProps> = ({ movie, related, onNavi
             {movie.originalTitle && movie.originalTitle.toLowerCase() !== movie.title.toLowerCase() && (
               <p className="mt-1 text-xs text-[#736B63] font-body">Original title: {movie.originalTitle}</p>
             )}
+            {movie.alternativeTitles && movie.alternativeTitles.length > 0 && (
+              <p className="mt-1 text-xs text-[#736B63] font-body">Also known as: {movie.alternativeTitles.map((entry) => entry.title).join(', ')}</p>
+            )}
           </div>
 
           {/* Synopsis */}

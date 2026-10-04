@@ -27,6 +27,10 @@ assert.equal(buildSearchResults('paul').actors[0].name, paulActors[0].actor.name
 const exactMovie = MOVIES[0];
 assert.equal(buildSearchResults(exactMovie.title).movies[0].tmdbId, exactMovie.tmdbId);
 
+const alternativeTitleResults = buildSearchResults('A Hot Cocoa Christmas').movies;
+assert.ok(alternativeTitleResults.some((movie) => movie.tmdbId === 878410), 'global search should match TMDB 878410 alternative title');
+assert.equal(alternativeTitleResults.find((movie) => movie.tmdbId === 878410)?.title, 'Much Ado About Christmas', 'alternative-title search keeps the primary title');
+
 const actorWithMultipleWords = getAllActors().find((actor) => actor.name.trim().split(/\s+/).length >= 2)!;
 const actorParts = normalizeSearchText(actorWithMultipleWords.name).split(' ');
 assert.ok(buildSearchResults(actorParts[0]).actors.some((actor) => actor.tmdbPersonId === actorWithMultipleWords.tmdbPersonId));

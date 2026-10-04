@@ -613,7 +613,7 @@ async function startServer() {
       const identifier = typeof req.body?.identifier === 'string' ? req.body.identifier.trim() : '';
       if (!identifier) return res.status(400).json({ error: 'Enter a movie ID, TMDb ID, slug or title.' });
       const github = await readGitHubBranch();
-      const matches = github.movies.filter((movie) => movie.id === identifier || String(movie.tmdbId) === identifier || movie.slug.toLowerCase() === identifier.toLowerCase() || movie.title.toLowerCase() === identifier.toLowerCase());
+      const matches = github.movies.filter((movie) => movie.id === identifier || String(movie.tmdbId) === identifier || movie.slug.toLowerCase() === identifier.toLowerCase() || movie.title.toLowerCase() === identifier.toLowerCase() || movie.alternativeTitles?.some((entry) => entry.title.toLowerCase() === identifier.toLowerCase()));
       if (matches.length === 0) return res.status(404).json({ error: 'Movie was not found in the canonical catalogue.' });
       if (matches.length > 1) return res.status(409).json({ error: 'That title matches more than one movie. Use its movie ID or TMDb ID.' });
       const movie = matches[0];

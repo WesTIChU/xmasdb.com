@@ -26,6 +26,11 @@ assert.equal(singItForChristmas?.title, 'Sing it for Christmas');
 assert.equal(singItForChristmas?.originalTitle, 'Oy to the World');
 assert.ok(getCataloguePage(MOVIES, parseCatalogueQuery('?search=Oy%20to%20the%20World')).movies.some((movie) => movie.tmdbId === 1547926), 'catalogue search should match a movie original title');
 
+const muchAdo = MOVIES.find((movie) => movie.tmdbId === 878410);
+assert.ok(muchAdo, 'TMDB 878410 should remain the canonical movie record');
+assert.deepStrictEqual(muchAdo?.alternativeTitles, [{ title: 'A Hot Cocoa Christmas', country: 'US' }]);
+assert.ok(getCataloguePage(MOVIES, parseCatalogueQuery('?search=A%20Hot%20Cocoa%20Christmas')).movies.some((movie) => movie.tmdbId === 878410), 'catalogue search should match an alternative title');
+
 const letItSnow = MOVIES.find((movie) => movie.id === 'gaf-2024-let-it-snow');
 assert.ok(letItSnow, 'Let It Snow remains in the catalogue with its existing ID');
 assert.equal(letItSnow?.brandId, 'hallmark', 'Let It Snow is classified under Hallmark');

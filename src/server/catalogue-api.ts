@@ -384,6 +384,7 @@ export function buildSearchIndex(): SearchIndexPayload {
         brandId: movie.brandId,
         posterUrl: movie.posterUrl,
         originalTitle: movie.originalTitle,
+        alternativeTitles: movie.alternativeTitles?.map((entry) => entry.title),
         // Join names with a NUL separator so substring matching can never span
         // across two different cast members (preserving per-name matching).
         terms: [...movie.cast.map((member) => member.name), ...getCreativeCrew(movie.crew).map((member) => member.name)].join('\u0000').toLowerCase(),
@@ -410,6 +411,7 @@ export function buildSearchResults(rawQuery: string): SearchResultsPayload {
       score: scoreMovieSearchFields({
         title: movie.title,
         originalTitle: movie.originalTitle,
+        alternativeTitles: movie.alternativeTitles?.map((entry) => entry.title),
         secondaryText: `${movie.synopsis} ${movie.cast.map((member) => member.name).join(' ')}`,
       }, query),
     }))

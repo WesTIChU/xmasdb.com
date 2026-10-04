@@ -3,6 +3,7 @@ import type { ListingMovie, SearchIngredientEntry, SearchMovieEntry, SearchPerso
 export interface MovieSearchFields {
   title: string;
   originalTitle?: string;
+  alternativeTitles?: string[];
   secondaryText?: string;
 }
 
@@ -57,14 +58,16 @@ export function scoreIngredientSearchResult(ingredient: Pick<SearchIngredientEnt
 export function scoreMovieSearchFields(fields: MovieSearchFields, query: string): number {
   const titleScore = scoreTextMatch(fields.title, query);
   const alternateScore = fields.originalTitle ? Math.floor(scoreTextMatch(fields.originalTitle, query) * 0.45) : 0;
+  const alternativeTitleScore = Math.max(0, ...(fields.alternativeTitles || []).map((title) => Math.floor(scoreTextMatch(title, query) * 0.45)));
   const secondaryScore = fields.secondaryText ? Math.floor(scoreTextMatch(fields.secondaryText, query) * 0.2) : 0;
-  return Math.max(titleScore, alternateScore, secondaryScore);
+  return Math.max(titleScore, alternateScore, alternativeTitleScore, secondaryScore);
 }
 
 export function scoreMovieSearchEntry(movie: SearchMovieEntry, query: string): number {
   return scoreMovieSearchFields({
     title: movie.title,
     originalTitle: movie.originalTitle,
+    alternativeTitles: movie.alternativeTitles,
     secondaryText: movie.terms,
   }, query);
 }

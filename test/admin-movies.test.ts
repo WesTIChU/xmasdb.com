@@ -32,6 +32,7 @@ assert.equal(movie.status, 'coming-soon');
 assert.equal(movie.isComingSoon, true);
 assert.match(generateMoviesModule([movie]), /A Preview Christmas/);
 assert.equal(searchAdminMovies([{ ...movie, originalTitle: 'Oy to the World' }], 'Oy to the World')[0]?.tmdbId, 1547913, 'admin movie search should match an original title');
+assert.equal(searchAdminMovies([{ ...movie, alternativeTitles: [{ title: 'A Hot Cocoa Christmas', country: 'US' }] }], 'A Hot Cocoa Christmas')[0]?.tmdbId, 1547913, 'admin movie search should match an alternative title');
 const editable = {
   brand: 'lifetime', title: 'Edited Christmas Story', releaseDate: '2024-11-02', synopsis: 'Updated synopsis', runtimeMinutes: '92', rating: '7.4',
   director: 'New Director', writers: 'First Writer\nSecond Writer', imdbId: 'tt1234567', tmdbId: '1547914', posterUrl: '/images/posters/1547914.jpg', backdropUrl: '/images/backdrops/1547914.jpg',
