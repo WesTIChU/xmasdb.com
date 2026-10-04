@@ -43753,14 +43753,15 @@
     "imdbPersonId": "nm1769799",
     "gender": "Male",
     "knownForDepartment": "Acting",
-    "knownCredits": 16,
+    "knownCredits": 17,
     "alsoKnownAs": [
       "Graeme Alexander McComb"
     ],
     "instagramId": "graeme_mccomb",
     "twitterId": "HoneyMcComb1",
     "facebookId": "graeme.mccomb",
-    "tmdbUpdatedAt": "2026-09-20T16:18:31.058Z"
+    "tmdbUpdatedAt": "2026-10-04T06:05:40.416Z",
+    "tmdbFetchedAt": "2026-10-04T06:05:40.416Z"
   },
   {
     "id": "grafton-ma-fire-dept",
@@ -63272,7 +63273,8 @@
       "Kathryn Richard"
     ],
     "instagramId": "katedionrichard",
-    "tmdbUpdatedAt": "2026-09-20T16:18:23.023Z"
+    "tmdbUpdatedAt": "2026-10-04T06:05:40.108Z",
+    "tmdbFetchedAt": "2026-10-04T06:05:40.108Z"
   },
   {
     "id": "kate-drummond",
