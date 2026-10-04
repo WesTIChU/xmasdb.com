@@ -2023,6 +2023,9 @@ export const PROTOTYPE_MOVIE_FINGERPRINTS: Readonly<Record<string, readonly Fing
   "hallmark-2024-private-princess-christmas": [
     "royalty"
   ],
+  "hallmark-2024-renovation-romance": [
+    "entertainment-showbiz"
+  ],
   "hallmark-2024-santa-tell-me": [
     "santa",
     "unexpected-romance"
