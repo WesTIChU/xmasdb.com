@@ -39855,7 +39855,8 @@
     "gender": "Female",
     "knownForDepartment": "Acting",
     "knownCredits": 30,
-    "tmdbUpdatedAt": "2026-09-20T16:19:06.986Z"
+    "tmdbUpdatedAt": "2026-10-04T15:44:28.184Z",
+    "tmdbFetchedAt": "2026-10-04T15:44:28.184Z"
   },
   {
     "id": "farrah-hahn",
@@ -55335,7 +55336,8 @@
     "instagramId": "jessicalowndes",
     "twitterId": "jessicalowndes",
     "facebookId": "jessicaSlowndes",
-    "tmdbUpdatedAt": "2026-09-20T16:17:05.653Z"
+    "tmdbUpdatedAt": "2026-10-04T15:44:28.059Z",
+    "tmdbFetchedAt": "2026-10-04T15:44:28.059Z"
   },
   {
     "id": "jessica-morris",
@@ -61084,7 +61086,8 @@
     ],
     "instagramId": "juliabenson889",
     "twitterId": "julia_benson",
-    "tmdbUpdatedAt": "2026-09-20T16:16:37.400Z"
+    "tmdbUpdatedAt": "2026-10-04T15:44:28.291Z",
+    "tmdbFetchedAt": "2026-10-04T15:44:28.291Z"
   },
   {
     "id": "julia-bidica",
@@ -66238,6 +66241,16 @@
     "tmdbUpdatedAt": "2026-09-20T16:21:13.596Z"
   },
   {
+    "id": "5070247",
+    "slug": "kenton-dyck",
+    "name": "Kenton Dyck",
+    "tmdbPersonId": 5070247,
+    "knownForDepartment": "Acting",
+    "knownCredits": 1,
+    "tmdbUpdatedAt": "2026-10-04T15:44:28.017Z",
+    "tmdbFetchedAt": "2026-10-04T15:44:28.017Z"
+  },
+  {
     "id": "2671251",
     "slug": "keon-boateng",
     "name": "Keon Boateng",
@@ -69235,7 +69248,8 @@
     "gender": "Male",
     "knownForDepartment": "Acting",
     "knownCredits": 13,
-    "tmdbUpdatedAt": "2026-09-20T16:17:05.535Z"
+    "tmdbUpdatedAt": "2026-10-04T15:44:28.256Z",
+    "tmdbFetchedAt": "2026-10-04T15:44:28.256Z"
   },
   {
     "id": "lamar-lott",
@@ -84837,7 +84851,8 @@
     "gender": "Male",
     "knownForDepartment": "Acting",
     "knownCredits": 17,
-    "tmdbUpdatedAt": "2026-09-20T16:17:27.688Z"
+    "tmdbUpdatedAt": "2026-10-04T15:44:28.071Z",
+    "tmdbFetchedAt": "2026-10-04T15:44:28.071Z"
   },
   {
     "id": "1369076",
@@ -96406,6 +96421,16 @@
       "Ray Forchion"
     ],
     "tmdbUpdatedAt": "2026-09-20T16:20:07.453Z"
+  },
+  {
+    "id": "5070249",
+    "slug": "rayne-galay",
+    "name": "Rayne Galay",
+    "tmdbPersonId": 5070249,
+    "knownForDepartment": "Acting",
+    "knownCredits": 2,
+    "tmdbUpdatedAt": "2026-10-04T15:44:28.000Z",
+    "tmdbFetchedAt": "2026-10-04T15:44:28.000Z"
   },
   {
     "id": "1346954",

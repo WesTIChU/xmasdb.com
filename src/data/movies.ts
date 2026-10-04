@@ -182207,6 +182207,211 @@ export const MOVIES: Movie[] = [
     "tmdbUpdatedAt": "2026-10-04T07:51:37.320Z",
     "tmdbFetchedAt": "2026-10-04T07:51:37.320Z",
     "premiereDate": "2026-07-02"
+  },
+  {
+    "id": "hallmark-2024-renovation-romance",
+    "slug": "renovation-romance",
+    "title": "Renovation Romance",
+    "year": 2024,
+    "brandId": "hallmark",
+    "releaseDate": "2024-11-01",
+    "synopsis": "When Chelsea is forced to go to New Hampshire during Christmas to film her and her boyfriend's television show \"Renovation Romance,\" she finds herself in a precarious situation with her career and relationship.",
+    "posterUrl": "/images/posters/1380983.jpg",
+    "backdropUrl": "/images/backdrops/1380983.jpg",
+    "cast": [
+      {
+        "actorId": "84698",
+        "name": "Jessica Lowndes",
+        "character": "Chelsea",
+        "slug": "jessica-lowndes",
+        "tmdbPersonId": 84698,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/jMydZ6FVK3cxKa8dvsXIvP0HTwr.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "1256300",
+        "name": "Daniel Lissing",
+        "character": "Cooper",
+        "slug": "daniel-lissing",
+        "tmdbPersonId": 1256300,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/8BN5A6PuzkjPdiT9zlDYDuMvlC4.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "1148697",
+        "name": "Adam Hurtig",
+        "character": "Jake",
+        "slug": "adam-hurtig",
+        "tmdbPersonId": 1148697,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/sJ0RxYecZCJ5zybOsQjTedhMwp.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "1549815",
+        "name": "Farrah Aviva",
+        "character": "Bethany",
+        "slug": "farrah-aviva",
+        "tmdbPersonId": 1549815,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/5R8la1L4HPIkSFdy38FcHPVSVaJ.jpg",
+        "order": 3
+      },
+      {
+        "actorId": "1166976",
+        "name": "Samantha Kendrick",
+        "character": "Janice",
+        "slug": "samantha-kendrick",
+        "tmdbPersonId": 1166976,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/wrLYNsys35f54W7n2AbkdMUBC0X.jpg",
+        "order": 4
+      },
+      {
+        "actorId": "1128538",
+        "name": "Paul Essiembre",
+        "character": "Don",
+        "slug": "paul-essiembre",
+        "tmdbPersonId": 1128538,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/cM9uhNoWtNBfjVpmESoL0HJf9UX.jpg",
+        "order": 5
+      },
+      {
+        "actorId": "1733446",
+        "name": "Michael Strickland",
+        "character": "Tom",
+        "slug": "michael-strickland",
+        "tmdbPersonId": 1733446,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/iQiaj9Lhc48nbGrIpWlUNahmg1Q.jpg",
+        "order": 6
+      },
+      {
+        "actorId": "2127703",
+        "name": "Jan Skene",
+        "character": "Edel",
+        "slug": "jan-skene",
+        "tmdbPersonId": 2127703,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/nDqJ5SL5wTRQxbkOxZtB3rpVUtr.jpg",
+        "order": 7
+      },
+      {
+        "actorId": "5070247",
+        "name": "Kenton Dyck",
+        "character": "Man",
+        "slug": "kenton-dyck",
+        "tmdbPersonId": 5070247,
+        "order": 8
+      },
+      {
+        "actorId": "5070249",
+        "name": "Rayne Galay",
+        "character": "Woman",
+        "slug": "rayne-galay",
+        "tmdbPersonId": 5070249,
+        "order": 9
+      },
+      {
+        "actorId": "4137486",
+        "name": "Lam An",
+        "character": "Townsfolk (uncredited)",
+        "slug": "lam-an",
+        "tmdbPersonId": 4137486,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/DPsSeSkCPaKHX7I2IRFga7WuZH.jpg",
+        "order": 10
+      }
+    ],
+    "director": "Robin Dunne",
+    "tmdbId": 1380983,
+    "imdbId": "tt35676488",
+    "isComingSoon": false,
+    "status": "collection",
+    "originalTitle": "Renovation Romance",
+    "alternativeTitles": [
+      {
+        "title": "Christmas Under Construction",
+        "country": "US"
+      }
+    ],
+    "runtimeMinutes": 88,
+    "genres": [
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      },
+      {
+        "id": 35,
+        "name": "Comedy"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "CA",
+        "releaseDate": "2025-11-27T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "Super Ecran 1"
+      },
+      {
+        "country": "CH",
+        "releaseDate": "2025-12-08T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "RTS Un"
+      },
+      {
+        "country": "FR",
+        "releaseDate": "2025-11-15T00:00:00.000Z",
+        "type": 4,
+        "certification": "",
+        "note": "Netflix"
+      },
+      {
+        "country": "US",
+        "releaseDate": "2024-11-01T00:00:00.000Z",
+        "type": 4,
+        "certification": "",
+        "note": "Hulu"
+      },
+      {
+        "country": "US",
+        "releaseDate": "2026-07-04T00:00:00.000Z",
+        "type": 6,
+        "certification": "PG",
+        "note": "Hallmark Channel"
+      }
+    ],
+    "crew": [
+      {
+        "id": 43426,
+        "name": "Robin Dunne",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/4TW7bd7yyRB1hjQdn0Ej3XAKVnu.jpg",
+        "creditId": "6738cc0fad278a8963f8488a"
+      },
+      {
+        "id": 5009,
+        "name": "Peter Benson",
+        "job": "Story",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/btcuZXvGZcO1AyCQXcAeWWLf0jI.jpg",
+        "creditId": "673d3c6d757b2842d9d8a2a0"
+      },
+      {
+        "id": 84464,
+        "name": "Julia Benson",
+        "job": "Story",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/47Zo9kVEZh72FJRDfwZ4qL9hdDC.jpg",
+        "creditId": "673d3c851dc22f88fa6c1755"
+      }
+    ],
+    "trailers": [],
+    "voteAverage": 6.6,
+    "voteCount": 17,
+    "tmdbUpdatedAt": "2026-10-04T15:44:26.454Z",
+    "tmdbFetchedAt": "2026-10-04T15:44:26.454Z"
   }
 ];
 
