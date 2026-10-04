@@ -183035,6 +183035,194 @@ export const MOVIES: Movie[] = [
     "voteCount": 28,
     "tmdbUpdatedAt": "2026-10-04T15:57:11.386Z",
     "tmdbFetchedAt": "2026-10-04T15:57:11.386Z"
+  },
+  {
+    "id": "hallmark-2023-take-me-back-for-christmas",
+    "slug": "take-me-back-for-christmas",
+    "title": "Take Me Back for Christmas",
+    "year": 2023,
+    "brandId": "hallmark",
+    "releaseDate": "2023-07-15",
+    "synopsis": "A Christmas wish gives Renee the successful life she’d always dreamed of. This new reality is perfect, except for one thing… she is no longer married to her husband Aaron. Now, Renee must race against the clock to win him back before Christmas Eve.",
+    "posterUrl": "/images/posters/1135453.jpg",
+    "backdropUrl": "/images/backdrops/1135453.jpg",
+    "cast": [
+      {
+        "actorId": "52938",
+        "name": "Vanessa Lengies",
+        "character": "Renée",
+        "slug": "vanessa-lengies",
+        "tmdbPersonId": 52938,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/yqnNHJsTQGVlkSN5phh9QShoXTm.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "43265",
+        "name": "Corey Sevier",
+        "character": "Aaron",
+        "slug": "corey-sevier",
+        "tmdbPersonId": 43265,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/wKt1pHZ5Q6kgkmZsNz53lNPzLR3.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "2864970",
+        "name": "Brynn Godenir",
+        "character": "Tasha",
+        "slug": "brynn-godenir",
+        "tmdbPersonId": 2864970,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/3UL1MZqj1CNcLpDYi3o9K6ym0B6.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "3608206",
+        "name": "Kimberly-Ann Truong",
+        "character": "Cici",
+        "slug": "kimberly-ann-truong",
+        "tmdbPersonId": 3608206,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/z7Kiyn2sqSnH4i5FF0LvFTVG2ck.jpg",
+        "order": 3
+      },
+      {
+        "actorId": "2041998",
+        "name": "Miguel Rivas",
+        "character": "Jerry",
+        "slug": "miguel-rivas",
+        "tmdbPersonId": 2041998,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/hoaEFH0lTkTzZbk9uWIayFXOobv.jpg",
+        "order": 4
+      },
+      {
+        "actorId": "2298270",
+        "name": "Moni Ogunsuyi",
+        "character": "Ashley",
+        "slug": "moni-ogunsuyi",
+        "tmdbPersonId": 2298270,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/fctfvNtGOFfXNk10RwVCBUQ9GDh.jpg",
+        "order": 5
+      },
+      {
+        "actorId": "54650",
+        "name": "Gerry Mendicino",
+        "character": "Jeff",
+        "slug": "gerry-mendicino",
+        "tmdbPersonId": 54650,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/oyszl8pSOzsnIL2EWCPU2Taub0z.jpg",
+        "order": 6
+      },
+      {
+        "actorId": "204964",
+        "name": "Paula Boudreau",
+        "character": "Maria",
+        "slug": "paula-boudreau",
+        "tmdbPersonId": 204964,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/dG8J9RfmenQraa5JZC7d7Dizdpa.jpg",
+        "order": 7
+      }
+    ],
+    "director": "Corey Sevier",
+    "tmdbId": 1135453,
+    "imdbId": "tt27557250",
+    "isComingSoon": false,
+    "status": "collection",
+    "originalTitle": "Take Me Back for Christmas",
+    "alternativeTitles": [
+      {
+        "title": "The Christmas Reboot",
+        "country": "US"
+      }
+    ],
+    "runtimeMinutes": 84,
+    "genres": [
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      },
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "BE",
+        "releaseDate": "2024-11-10T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "RTL TVi"
+      },
+      {
+        "country": "CA",
+        "releaseDate": "2023-07-15T00:00:00.000Z",
+        "type": 3,
+        "certification": "G",
+        "note": ""
+      },
+      {
+        "country": "FR",
+        "releaseDate": "2023-11-28T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "TF1"
+      },
+      {
+        "country": "US",
+        "releaseDate": "2023-07-08T00:00:00.000Z",
+        "type": 6,
+        "certification": "G",
+        "note": "Hallmark Channel"
+      }
+    ],
+    "crew": [
+      {
+        "id": 2832332,
+        "name": "Kate Pragnell",
+        "job": "Writer",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/7XJe6vTU5w5jIO6kMViNDbsPlhT.jpg",
+        "creditId": "647a907717497300a818eed7"
+      },
+      {
+        "id": 43265,
+        "name": "Corey Sevier",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/wKt1pHZ5Q6kgkmZsNz53lNPzLR3.jpg",
+        "creditId": "6487491dd2b20900ad3d968e"
+      }
+    ],
+    "trailers": [
+      {
+        "key": "99p-JEvSGlo",
+        "site": "YouTube",
+        "type": "Featurette",
+        "name": "Take Me Back for Christmas Live",
+        "official": true
+      },
+      {
+        "key": "-ZPoQswqdPs",
+        "site": "YouTube",
+        "type": "Teaser",
+        "name": "Sneak Peek - Take Me Back for Christmas - Hallmark Channel",
+        "official": true
+      },
+      {
+        "key": "W1ZkpRv7_go",
+        "site": "YouTube",
+        "type": "Trailer",
+        "name": "Preview - Take Me Back for Christmas - Hallmark Channel",
+        "official": true
+      }
+    ],
+    "trailerYoutubeKey": "99p-JEvSGlo",
+    "voteAverage": 6.5,
+    "voteCount": 28,
+    "tmdbUpdatedAt": "2026-10-04T16:07:45.662Z",
+    "tmdbFetchedAt": "2026-10-04T16:07:45.662Z"
   }
 ];
 
