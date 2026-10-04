@@ -183642,6 +183642,205 @@ export const MOVIES: Movie[] = [
     "voteCount": 19,
     "tmdbUpdatedAt": "2026-10-04T16:17:05.841Z",
     "tmdbFetchedAt": "2026-10-04T16:17:05.841Z"
+  },
+  {
+    "id": "hallmark-2022-christmas-in-toyland",
+    "slug": "christmas-in-toyland",
+    "title": "Christmas in Toyland",
+    "year": 2022,
+    "brandId": "hallmark",
+    "releaseDate": "2022-07-23",
+    "synopsis": "When Charlie Sawyer, a data analyst at a toy store chain, discovers the only way to keep their brick and mortar locations open is to replicate whatever the company’s best performing location is doing, she's sent by corporate to meet convivial, yet stubborn, store manager, Grant Levinson, whose secret to success will challenge her to open up her mind… and her heart.",
+    "posterUrl": "/images/posters/874237.jpg",
+    "backdropUrl": "/images/backdrops/874237.jpg",
+    "cast": [
+      {
+        "actorId": "52938",
+        "name": "Vanessa Lengies",
+        "character": "Charlie",
+        "slug": "vanessa-lengies",
+        "tmdbPersonId": 52938,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/yqnNHJsTQGVlkSN5phh9QShoXTm.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "169469",
+        "name": "Jesse Hutch",
+        "character": "Grant",
+        "slug": "jesse-hutch",
+        "tmdbPersonId": 169469,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/3tQsDlnoEVT73mV7OFs0D9EYn5f.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "1216712",
+        "name": "Lara Amersey",
+        "character": "Stephanie",
+        "slug": "lara-amersey",
+        "tmdbPersonId": 1216712,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/mxEERu6yIqLSmsGijxn80Vu8sTM.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "1362948",
+        "name": "Jane Moffat",
+        "character": "Gertrude",
+        "slug": "jane-moffat",
+        "tmdbPersonId": 1362948,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/x8hRTny8olUJYGyH7K3zDUUHIqk.jpg",
+        "order": 3
+      },
+      {
+        "actorId": "1747322",
+        "name": "Benjamin Sutherland",
+        "character": "David",
+        "slug": "benjamin-sutherland",
+        "tmdbPersonId": 1747322,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/jBGE7VyIF85HLbGPeaJsLW2iyR0.jpg",
+        "order": 4
+      },
+      {
+        "actorId": "1761590",
+        "name": "Emily Wyatt",
+        "character": "Emma",
+        "slug": "emily-wyatt",
+        "tmdbPersonId": 1761590,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/v3ZpLcfTdWBVBCcjxAGJWNKLjyU.jpg",
+        "order": 5
+      },
+      {
+        "actorId": "2098740",
+        "name": "Tavaree Daniel-Simms",
+        "character": "Ryan",
+        "slug": "tavaree-daniel-simms",
+        "tmdbPersonId": 2098740,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/2Qn01Vmsg3mYjq18Ldkw8Gproqe.jpg",
+        "order": 6
+      },
+      {
+        "actorId": "1759435",
+        "name": "Imali Perera",
+        "character": "Marta",
+        "slug": "imali-perera",
+        "tmdbPersonId": 1759435,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/pJ9HvnJ0Ik9yrbFawrrjHUaeFDg.jpg",
+        "order": 7
+      },
+      {
+        "actorId": "2135417",
+        "name": "Elena V. Wolfe",
+        "character": "Izzy",
+        "slug": "elena-v-wolfe",
+        "tmdbPersonId": 2135417,
+        "order": 8
+      },
+      {
+        "actorId": "198873",
+        "name": "Elva Mai Hoover",
+        "character": "Mrs. Embalmo",
+        "slug": "elva-mai-hoover",
+        "tmdbPersonId": 198873,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/v5Kv40afGpP0ADOsusHUWwZDNyc.jpg",
+        "order": 9
+      },
+      {
+        "actorId": "3627613",
+        "name": "Mitzi Andrews",
+        "character": "Potential Customer",
+        "slug": "mitzi-andrews",
+        "tmdbPersonId": 3627613,
+        "order": 10
+      }
+    ],
+    "director": "Bill Corcoran",
+    "tmdbId": 874237,
+    "imdbId": "tt15891306",
+    "isComingSoon": false,
+    "status": "collection",
+    "originalTitle": "Christmas in Toyland",
+    "alternativeTitles": [
+      {
+        "title": "Christmas Trinket Town",
+        "country": "US"
+      }
+    ],
+    "runtimeMinutes": 84,
+    "genres": [
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      },
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "BE",
+        "releaseDate": "2023-10-26T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "RTL TVi"
+      },
+      {
+        "country": "FR",
+        "releaseDate": "2022-11-23T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "TF1"
+      },
+      {
+        "country": "US",
+        "releaseDate": "2022-07-23T00:00:00.000Z",
+        "type": 6,
+        "certification": "G",
+        "note": "Hallmark Channel"
+      }
+    ],
+    "crew": [
+      {
+        "id": 94045,
+        "name": "Bill Corcoran",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/wbp8xIJqdKDhQhWUpwAyIxoK0v0.jpg",
+        "creditId": "62993b0709ed8f0cee283c4c"
+      },
+      {
+        "id": 2832332,
+        "name": "Kate Pragnell",
+        "job": "Writer",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/7XJe6vTU5w5jIO6kMViNDbsPlhT.jpg",
+        "creditId": "62993b17ca8354544b3d5880"
+      },
+      {
+        "id": 2117291,
+        "name": "Courtney McAllister",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "62993b0f34e15200519b4878"
+      }
+    ],
+    "trailers": [
+      {
+        "key": "mmFBT2RIBr8",
+        "site": "YouTube",
+        "type": "Teaser",
+        "name": "Preview",
+        "official": true
+      }
+    ],
+    "trailerYoutubeKey": "mmFBT2RIBr8",
+    "voteAverage": 6.2,
+    "voteCount": 21,
+    "tmdbUpdatedAt": "2026-10-04T16:19:08.050Z",
+    "tmdbFetchedAt": "2026-10-04T16:19:08.050Z"
   }
 ];
 
