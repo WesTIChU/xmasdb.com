@@ -7500,6 +7500,21 @@
     "tmdbUpdatedAt": "2026-09-21T12:51:46.069Z"
   },
   {
+    "id": "1882085",
+    "slug": "ann-pornel",
+    "name": "Ann Pornel",
+    "tmdbPersonId": 1882085,
+    "photoUrl": "/images/people/1882085.webp",
+    "profileUrl": "/images/people/1882085.webp",
+    "imdbPersonId": "nm6012478",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 7,
+    "instagramId": "glampornel",
+    "tmdbUpdatedAt": "2026-10-04T15:54:35.059Z",
+    "tmdbFetchedAt": "2026-10-04T15:54:35.059Z"
+  },
+  {
     "id": "4621708",
     "slug": "ann-potenza",
     "name": "Ann Potenza",
@@ -34378,6 +34393,21 @@
     "tmdbUpdatedAt": "2026-09-20T16:17:36.199Z"
   },
   {
+    "id": "113931",
+    "slug": "duane-murray",
+    "name": "Duane Murray",
+    "tmdbPersonId": 113931,
+    "photoUrl": "/images/people/113931.webp",
+    "profileUrl": "/images/people/113931.webp",
+    "biography": "Duane Murray is an actor and producer.",
+    "imdbPersonId": "nm0614926",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 42,
+    "tmdbUpdatedAt": "2026-10-04T15:54:35.277Z",
+    "tmdbFetchedAt": "2026-10-04T15:54:35.277Z"
+  },
+  {
     "id": "duane-patterson",
     "slug": "duane-patterson",
     "name": "Duane Patterson",
@@ -37416,6 +37446,18 @@
     "knownForDepartment": "Acting",
     "knownCredits": 1,
     "tmdbUpdatedAt": "2026-09-20T16:21:07.857Z"
+  },
+  {
+    "id": "6513933",
+    "slug": "emlyn-murray",
+    "name": "Emlyn Murray",
+    "tmdbPersonId": 6513933,
+    "imdbPersonId": "nm16845419",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 1,
+    "tmdbUpdatedAt": "2026-10-04T15:54:35.161Z",
+    "tmdbFetchedAt": "2026-10-04T15:54:35.161Z"
   },
   {
     "id": "emma-barratt",
@@ -59029,6 +59071,23 @@
     "tmdbFetchedAt": "2026-10-01T09:27:30.285Z"
   },
   {
+    "id": "2144603",
+    "slug": "jonathan-langdon",
+    "name": "Jonathan Langdon",
+    "tmdbPersonId": 2144603,
+    "photoUrl": "/images/people/2144603.webp",
+    "profileUrl": "/images/people/2144603.webp",
+    "birthday": "1987-12-17",
+    "placeOfBirth": "Pickering, Ontario, Canada",
+    "biography": "Jonathan Langdon is a Canadian actor from Pickering, Ontario, best known for his supporting role as Hudson in the television series Run the Burbs (2022) and M. Night Shyamalan's Trap (2024).",
+    "imdbPersonId": "nm6216718",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 26,
+    "tmdbUpdatedAt": "2026-10-04T15:54:35.027Z",
+    "tmdbFetchedAt": "2026-10-04T15:54:35.027Z"
+  },
+  {
     "id": "2451274",
     "slug": "jonathan-macpherson",
     "name": "Jonathan MacPherson",
@@ -63892,7 +63951,8 @@
     "instagramId": "katbarrell",
     "twitterId": "KatBarrell",
     "facebookId": "KatBarrellActor",
-    "tmdbUpdatedAt": "2026-09-20T16:16:50.515Z"
+    "tmdbUpdatedAt": "2026-10-04T15:54:34.605Z",
+    "tmdbFetchedAt": "2026-10-04T15:54:34.605Z"
   },
   {
     "id": "katherine-cappellacci",
@@ -86224,6 +86284,22 @@
     "tmdbUpdatedAt": "2026-09-20T16:18:34.226Z"
   },
   {
+    "id": "1226806",
+    "slug": "milton-barnes",
+    "name": "Milton Barnes",
+    "tmdbPersonId": 1226806,
+    "photoUrl": "/images/people/1226806.webp",
+    "profileUrl": "/images/people/1226806.webp",
+    "placeOfBirth": "Toronto, Ontario, Canada",
+    "biography": "Milton Barnes is a classically trained actor who has been applying his craft both on stage and on screen for over 20 years. Starting his career in theatre, Barnes has worked with The Stratford Festival of Canada, Canadian Stage, and The Company Theatre. On screen, some of Barnes’ most recent credits include Saving Hope, The Expanse, Private Eyes, and Suits. Look for him in the upcoming shows In Contempt, The Beaverton, and Cardinal.",
+    "imdbPersonId": "nm0055712",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 77,
+    "tmdbUpdatedAt": "2026-10-04T15:54:35.379Z",
+    "tmdbFetchedAt": "2026-10-04T15:54:35.379Z"
+  },
+  {
     "id": "milton-t-j-taylor",
     "slug": "milton-t-j-taylor",
     "name": "Milton T.J. Taylor",
@@ -87760,7 +87836,8 @@
     "gender": "Female",
     "knownForDepartment": "Writing",
     "knownCredits": 7,
-    "tmdbUpdatedAt": "2026-09-22T20:53:51.286Z"
+    "tmdbUpdatedAt": "2026-10-04T15:54:35.367Z",
+    "tmdbFetchedAt": "2026-10-04T15:54:35.367Z"
   },
   {
     "id": "natalie-britton",
@@ -101538,7 +101615,8 @@
     "knownForDepartment": "Writing",
     "knownCredits": 3,
     "instagramId": "ryanpeckinpaugh",
-    "tmdbUpdatedAt": "2026-09-22T20:53:15.789Z"
+    "tmdbUpdatedAt": "2026-10-04T15:54:35.305Z",
+    "tmdbFetchedAt": "2026-10-04T15:54:35.305Z"
   },
   {
     "id": "ryan-pederson",
@@ -109112,7 +109190,8 @@
     "instagramId": "stephenhuszar",
     "twitterId": "stephenhuszar",
     "facebookId": "stephenhuszarofficial",
-    "tmdbUpdatedAt": "2026-09-21T13:19:09.027Z"
+    "tmdbUpdatedAt": "2026-10-04T15:54:34.602Z",
+    "tmdbFetchedAt": "2026-10-04T15:54:34.602Z"
   },
   {
     "id": "stephen-jared",
@@ -116677,6 +116756,20 @@
     "tmdbFetchedAt": "2026-10-02T17:53:17.225Z"
   },
   {
+    "id": "3747968",
+    "slug": "tyra-sweet",
+    "name": "Tyra Sweet",
+    "tmdbPersonId": 3747968,
+    "photoUrl": "/images/people/3747968.webp",
+    "profileUrl": "/images/people/3747968.webp",
+    "imdbPersonId": "nm11617462",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 2,
+    "tmdbUpdatedAt": "2026-10-04T15:54:35.606Z",
+    "tmdbFetchedAt": "2026-10-04T15:54:35.606Z"
+  },
+  {
     "id": "tyreah-herbert",
     "slug": "tyreah-herbert",
     "name": "Tyreah Herbert",
@@ -117609,6 +117702,20 @@
     "knownForDepartment": "Acting",
     "knownCredits": 3,
     "tmdbUpdatedAt": "2026-09-22T20:53:45.569Z"
+  },
+  {
+    "id": "1844475",
+    "slug": "vicki-kim",
+    "name": "Vicki Kim",
+    "tmdbPersonId": 1844475,
+    "photoUrl": "/images/people/1844475.webp",
+    "profileUrl": "/images/people/1844475.webp",
+    "imdbPersonId": "nm7201244",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 20,
+    "tmdbUpdatedAt": "2026-10-04T15:54:35.167Z",
+    "tmdbFetchedAt": "2026-10-04T15:54:35.167Z"
   },
   {
     "id": "60737",

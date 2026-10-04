@@ -182456,6 +182456,210 @@ export const MOVIES: Movie[] = [
     "voteCount": 0,
     "tmdbUpdatedAt": "2026-10-04T15:53:14.814Z",
     "tmdbFetchedAt": "2026-10-04T15:53:14.815Z"
+  },
+  {
+    "id": "hallmark-2026-o-little-christmas-market",
+    "slug": "o-little-christmas-market",
+    "title": "O Little Christmas Market",
+    "year": 2026,
+    "brandId": "hallmark",
+    "releaseDate": "2026-07-11",
+    "synopsis": "An artist's fights to saves her town's beloved Christmas market from a developer but a budding romance with the architect tied to the deal may help bring about a Christmas miracle.",
+    "posterUrl": "/images/posters/1592343.jpg",
+    "backdropUrl": "/images/backdrops/1592343.jpg",
+    "cast": [
+      {
+        "actorId": "1475939",
+        "name": "Katherine Barrell",
+        "character": "Olivia Stephen",
+        "slug": "katherine-barrell",
+        "tmdbPersonId": 1475939,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/o59OzBD1nBDYM5r3mUpBOIdJmBe.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "558900",
+        "name": "Stephen Huszar",
+        "character": "Huszar Grayson",
+        "slug": "stephen-huszar",
+        "tmdbPersonId": 558900,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/l5gfPIcngMlJ92IuKRjeFv1Dkta.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "204964",
+        "name": "Paula Boudreau",
+        "character": "Lenore",
+        "slug": "paula-boudreau",
+        "tmdbPersonId": 204964,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/dG8J9RfmenQraa5JZC7d7Dizdpa.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "1882085",
+        "name": "Ann Pornel",
+        "character": "Zoey",
+        "slug": "ann-pornel",
+        "tmdbPersonId": 1882085,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/kui56OIvZTtvYmV6EEB8Zz57Q3C.jpg",
+        "order": 3
+      },
+      {
+        "actorId": "1727017",
+        "name": "Kent Sheridan",
+        "character": "Bill",
+        "slug": "kent-sheridan",
+        "tmdbPersonId": 1727017,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/Ajv5bdt5bRtJP5HOdgKfmDcapSF.jpg",
+        "order": 4
+      },
+      {
+        "actorId": "2144603",
+        "name": "Jonathan Langdon",
+        "character": "Shawn",
+        "slug": "jonathan-langdon",
+        "tmdbPersonId": 2144603,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/6bM2rZBxLo3w36HGJSOGvJEpfvq.jpg",
+        "order": 5
+      },
+      {
+        "actorId": "1740993",
+        "name": "James Kall",
+        "character": "Archie",
+        "slug": "james-kall",
+        "tmdbPersonId": 1740993,
+        "order": 6
+      },
+      {
+        "actorId": "1844475",
+        "name": "Vicki Kim",
+        "character": "Janice",
+        "slug": "vicki-kim",
+        "tmdbPersonId": 1844475,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/yoqd3uaWz51BIqT38BndLiA6NBf.jpg",
+        "order": 7
+      },
+      {
+        "actorId": "40385",
+        "name": "Marcia Bennett",
+        "character": "Mrs. Banks",
+        "slug": "marcia-bennett",
+        "tmdbPersonId": 40385,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/va30xYbQLgI9UvNFv5oNuhiORTC.jpg",
+        "order": 8
+      },
+      {
+        "actorId": "1226806",
+        "name": "Milton Barnes",
+        "character": "Eddie",
+        "slug": "milton-barnes",
+        "tmdbPersonId": 1226806,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/qCP3CVoEQmLopSHuHLOUooP1RDY.jpg",
+        "order": 9
+      },
+      {
+        "actorId": "1480981",
+        "name": "Paloma Nuñez",
+        "character": "Tamara",
+        "slug": "paloma-nu-ez",
+        "tmdbPersonId": 1480981,
+        "order": 10
+      },
+      {
+        "actorId": "113931",
+        "name": "Duane Murray",
+        "character": "Katie's Dad",
+        "slug": "duane-murray",
+        "tmdbPersonId": 113931,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/hT3xbEShfQ1KPmfwhlY5k0FfmbW.jpg",
+        "order": 11
+      },
+      {
+        "actorId": "6513933",
+        "name": "Emlyn Murray",
+        "character": "Katie",
+        "slug": "emlyn-murray",
+        "tmdbPersonId": 6513933,
+        "order": 12
+      },
+      {
+        "actorId": "3747968",
+        "name": "Tyra Sweet",
+        "character": "Train Station Attendant",
+        "slug": "tyra-sweet",
+        "tmdbPersonId": 3747968,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/ndzGkJTMsFzpdpJb5aAlmv1iS0b.jpg",
+        "order": 13
+      }
+    ],
+    "director": "Mars Horodyski",
+    "tmdbId": 1592343,
+    "imdbId": "tt35048304",
+    "isComingSoon": false,
+    "status": "collection",
+    "originalTitle": "O Little Christmas Market",
+    "runtimeMinutes": 84,
+    "genres": [
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      },
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "US",
+        "releaseDate": "2026-07-11T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "Hallmark"
+      }
+    ],
+    "crew": [
+      {
+        "id": 1447198,
+        "name": "Mars Horodyski",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/2Ni0etKpzo1plDMrWvuUlBUql9P.jpg",
+        "creditId": "693073cb2653bda946229327"
+      },
+      {
+        "id": 1644649,
+        "name": "Nastasha Baron",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "693073d4c91bd5fe33a3ddd2"
+      },
+      {
+        "id": 5071150,
+        "name": "Ryan Peckinpaugh",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "693073d9670af1d8b96746b2"
+      }
+    ],
+    "trailers": [
+      {
+        "key": "sx5qSoQofyI",
+        "site": "YouTube",
+        "type": "Trailer",
+        "name": "Trailer",
+        "official": true
+      }
+    ],
+    "trailerYoutubeKey": "sx5qSoQofyI",
+    "voteAverage": 3,
+    "voteCount": 1,
+    "tmdbUpdatedAt": "2026-10-04T15:54:33.093Z",
+    "tmdbFetchedAt": "2026-10-04T15:54:33.093Z"
   }
 ];
 
