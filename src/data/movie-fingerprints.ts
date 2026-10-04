@@ -1829,6 +1829,12 @@ export const PROTOTYPE_MOVIE_FINGERPRINTS: Readonly<Record<string, readonly Fing
     "royalty",
     "writer-journalist"
   ],
+  "hallmark-2023-a-royal-christmas-crush": [
+    "hotel-resort",
+    "royalty",
+    "unexpected-romance",
+    "workplace-romance"
+  ],
   "hallmark-2023-catch-me-if-you-claus": [
     "entertainment-showbiz",
     "writer-journalist"
