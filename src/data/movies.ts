@@ -179300,11 +179300,11 @@ export const MOVIES: Movie[] = [
       }
     ],
     "trailers": [],
-    "voteAverage": 4.2,
     "voteCount": 4,
     "tmdbUpdatedAt": "2026-10-04T07:51:24.368Z",
     "tmdbFetchedAt": "2026-10-04T07:51:24.368Z",
-    "premiereDate": "2024-11-01"
+    "premiereDate": "2024-11-01",
+    "networkPremiereDate": "2025-12-05"
   },
   {
     "id": "lifetime-2025-the-christmas-cookbook",
