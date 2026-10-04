@@ -182408,10 +182408,10 @@ export const MOVIES: Movie[] = [
       }
     ],
     "trailers": [],
-    "voteAverage": 6.6,
     "voteCount": 17,
     "tmdbUpdatedAt": "2026-10-04T15:44:26.454Z",
-    "tmdbFetchedAt": "2026-10-04T15:44:26.454Z"
+    "tmdbFetchedAt": "2026-10-04T15:44:26.454Z",
+    "networkPremiereDate": "2026-07-04"
   }
 ];
 
