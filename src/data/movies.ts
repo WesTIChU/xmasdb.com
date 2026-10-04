@@ -159410,7 +159410,6 @@ export const MOVIES: Movie[] = [
     ],
     "trailerYoutubeKey": "CYXlCr54-Ps",
     "tagline": "Where your treasure is, there your heart will be too.",
-    "voteAverage": 6.9,
     "voteCount": 7,
     "tmdbUpdatedAt": "2026-10-04T07:49:27.170Z",
     "premiereDate": "2025-11-06",
@@ -159420,7 +159419,8 @@ export const MOVIES: Movie[] = [
         "title": "The Christmas Ring",
         "country": "US"
       }
-    ]
+    ],
+    "networkPremiereDate": "2026-11-07"
   },
   {
     "id": "gaf-2026-an-ozark-mountain-christmas",
