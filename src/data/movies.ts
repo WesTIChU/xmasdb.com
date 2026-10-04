@@ -183401,6 +183401,247 @@ export const MOVIES: Movie[] = [
     "voteCount": 28,
     "tmdbUpdatedAt": "2026-10-04T16:15:02.753Z",
     "tmdbFetchedAt": "2026-10-04T16:15:02.753Z"
+  },
+  {
+    "id": "hallmark-2022-campfire-christmas",
+    "slug": "campfire-christmas",
+    "title": "Campfire Christmas",
+    "year": 2022,
+    "brandId": "hallmark",
+    "releaseDate": "2022-07-16",
+    "synopsis": "Romance rekindles for Peyton and her closest friends when her parents decide to host a holiday themed reunion before selling their family owned summer camp.",
+    "posterUrl": "/images/posters/983224.jpg",
+    "backdropUrl": "/images/backdrops/983224.jpg",
+    "cast": [
+      {
+        "actorId": "1339147",
+        "name": "Tori Anderson",
+        "character": "Peyton",
+        "slug": "tori-anderson",
+        "tmdbPersonId": 1339147,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/4s3YDyecXglwsBupl9fiK6WOGGS.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "67602",
+        "name": "Corbin Bleu",
+        "character": "Thomas",
+        "slug": "corbin-bleu",
+        "tmdbPersonId": 67602,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/46szA5sJA9iuWFf4JfO4lECFqeH.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "1064313",
+        "name": "Jeffrey Bowyer-Chapman",
+        "character": "Beckett",
+        "slug": "jeffrey-bowyer-chapman",
+        "tmdbPersonId": 1064313,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/pYCJuxa9pPC7hnELlvpIAjjL3Co.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "1046431",
+        "name": "Caitlin Stryker",
+        "character": "Janice",
+        "slug": "caitlin-stryker",
+        "tmdbPersonId": 1046431,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/26DVXGhA4XOzOcjhs0tdWoGiM8N.jpg",
+        "order": 3
+      },
+      {
+        "actorId": "1201386",
+        "name": "Matt Hamilton",
+        "character": "Dave",
+        "slug": "matt-hamilton",
+        "tmdbPersonId": 1201386,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/cHBK0naxrE9GdjG1O8koXEyli3s.jpg",
+        "order": 4
+      },
+      {
+        "actorId": "1947446",
+        "name": "Alec Santos",
+        "character": "Chris",
+        "slug": "alec-santos",
+        "tmdbPersonId": 1947446,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/w2OZS03EEc6GqHTJRiLvKy3K7Bv.jpg",
+        "order": 5
+      },
+      {
+        "actorId": "1219552",
+        "name": "Iris Quinn",
+        "character": "Lily",
+        "slug": "iris-quinn",
+        "tmdbPersonId": 1219552,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/rajESK5oqBRX5F0YA8T78Ticg95.jpg",
+        "order": 6
+      },
+      {
+        "actorId": "158374",
+        "name": "Fred Henderson",
+        "character": "Frank",
+        "slug": "fred-henderson",
+        "tmdbPersonId": 158374,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/2GXHxyciPjOZPgFAq2WJT9Un7uO.jpg",
+        "order": 7
+      },
+      {
+        "actorId": "79152",
+        "name": "Enid-Raye Adams",
+        "character": "Mona",
+        "slug": "enid-raye-adams",
+        "tmdbPersonId": 79152,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/dFKzV1ZSfnT3goiUs49I6dohHmV.jpg",
+        "order": 8
+      },
+      {
+        "actorId": "2685659",
+        "name": "Sandra Shapiro",
+        "character": "Kelly",
+        "slug": "sandra-shapiro",
+        "tmdbPersonId": 2685659,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/4lpTugkwbscdWrXjKIN46RnWl1Q.jpg",
+        "order": 9
+      },
+      {
+        "actorId": "1515477",
+        "name": "Karis Cameron",
+        "character": "Peyton at 16",
+        "slug": "karis-cameron",
+        "tmdbPersonId": 1515477,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/ejZsNmrxfHwBLo02L0olIOU0Ft4.jpg",
+        "order": 10
+      },
+      {
+        "actorId": "2790073",
+        "name": "Jude Wilson",
+        "character": "Thomas at 16",
+        "slug": "jude-wilson",
+        "tmdbPersonId": 2790073,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/hVdVC3kc845qaJMP2JvM09DFPF8.jpg",
+        "order": 11
+      },
+      {
+        "actorId": "3600916",
+        "name": "Zia Newton",
+        "character": "Beckett at 16",
+        "slug": "zia-newton",
+        "tmdbPersonId": 3600916,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/iXQveC8bkGkrRZqMWr1xtEFCbhX.jpg",
+        "order": 12
+      },
+      {
+        "actorId": "2494528",
+        "name": "Aleksandra Crossan",
+        "character": "Janice at 16",
+        "slug": "aleksandra-crossan",
+        "tmdbPersonId": 2494528,
+        "order": 13
+      },
+      {
+        "actorId": "2024744",
+        "name": "Quinten James",
+        "character": "Dave at 16",
+        "slug": "quinten-james",
+        "tmdbPersonId": 2024744,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/kM0LLVQUQgLE4qiL76q3OyGaxiH.jpg",
+        "order": 14
+      },
+      {
+        "actorId": "1585738",
+        "name": "Beau Daniels",
+        "character": "Chef Al",
+        "slug": "beau-daniels",
+        "tmdbPersonId": 1585738,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/pDbJ2Q90AyZ5HwwZ0mYeQG7JTNm.jpg",
+        "order": 15
+      },
+      {
+        "actorId": "83211",
+        "name": "Tasha Simms",
+        "character": "Ellen",
+        "slug": "tasha-simms",
+        "tmdbPersonId": 83211,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/pWc4wNjYtFWCL0RMNpaCa4Z34sd.jpg",
+        "order": 16
+      }
+    ],
+    "director": "David I. Strasser",
+    "tmdbId": 983224,
+    "imdbId": "tt20115364",
+    "isComingSoon": false,
+    "status": "collection",
+    "originalTitle": "Campfire Christmas",
+    "runtimeMinutes": 84,
+    "genres": [
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      },
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "BR",
+        "releaseDate": "2022-11-19T00:00:00.000Z",
+        "type": 6,
+        "certification": "L",
+        "note": "Studio Universal"
+      },
+      {
+        "country": "CA",
+        "releaseDate": "2022-09-24T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "Super Écran"
+      },
+      {
+        "country": "US",
+        "releaseDate": "2022-07-16T00:00:00.000Z",
+        "type": 6,
+        "certification": "G",
+        "note": "Hallmark Channel"
+      }
+    ],
+    "crew": [
+      {
+        "id": 2129973,
+        "name": "David I. Strasser",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/lRP3dNw9RSjxRquYLHhuwkKBqzn.jpg",
+        "creditId": "62ad09731bf26600e5eff872"
+      },
+      {
+        "id": 2172465,
+        "name": "Anna White",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "62ad0980960cde0092f6c0e2"
+      }
+    ],
+    "trailers": [
+      {
+        "key": "HQH10CsB4gI",
+        "site": "YouTube",
+        "type": "Clip",
+        "name": "Preview - Campfire Christmas - Hallmark Channel",
+        "official": true
+      }
+    ],
+    "trailerYoutubeKey": "HQH10CsB4gI",
+    "tagline": "Eight campers. Seven days of Christmas. One unforgettable summer.",
+    "voteAverage": 6,
+    "voteCount": 19,
+    "tmdbUpdatedAt": "2026-10-04T16:17:05.841Z",
+    "tmdbFetchedAt": "2026-10-04T16:17:05.841Z"
   }
 ];
 

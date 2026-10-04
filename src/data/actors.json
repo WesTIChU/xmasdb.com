@@ -2257,7 +2257,8 @@
     "gender": "Male",
     "knownForDepartment": "Acting",
     "knownCredits": 14,
-    "tmdbUpdatedAt": "2026-09-20T16:17:02.825Z"
+    "tmdbUpdatedAt": "2026-10-04T16:17:06.570Z",
+    "tmdbFetchedAt": "2026-10-04T16:17:06.570Z"
   },
   {
     "id": "alejandra-simmons",
@@ -2328,6 +2329,17 @@
     "knownForDepartment": "Acting",
     "knownCredits": 6,
     "tmdbUpdatedAt": "2026-09-20T16:19:45.015Z"
+  },
+  {
+    "id": "2494528",
+    "slug": "aleksandra-crossan",
+    "name": "Aleksandra Crossan",
+    "tmdbPersonId": 2494528,
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 3,
+    "tmdbUpdatedAt": "2026-10-04T16:17:06.705Z",
+    "tmdbFetchedAt": "2026-10-04T16:17:06.705Z"
   },
   {
     "id": "aleksandra-medic",
@@ -11744,6 +11756,20 @@
     "tmdbUpdatedAt": "2026-09-20T16:19:52.743Z"
   },
   {
+    "id": "1585738",
+    "slug": "beau-daniels",
+    "name": "Beau Daniels",
+    "tmdbPersonId": 1585738,
+    "photoUrl": "/images/people/1585738.webp",
+    "profileUrl": "/images/people/1585738.webp",
+    "imdbPersonId": "nm0199840",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 17,
+    "tmdbUpdatedAt": "2026-10-04T16:17:07.315Z",
+    "tmdbFetchedAt": "2026-10-04T16:17:07.315Z"
+  },
+  {
     "id": "beau-mirchoff",
     "slug": "beau-mirchoff",
     "name": "Beau Mirchoff",
@@ -17488,7 +17514,8 @@
       "Caitlin Rhea Cromwell",
       "Caitlin Cromwell"
     ],
-    "tmdbUpdatedAt": "2026-09-20T16:17:46.891Z"
+    "tmdbUpdatedAt": "2026-10-04T16:17:06.576Z",
+    "tmdbFetchedAt": "2026-10-04T16:17:06.576Z"
   },
   {
     "id": "caitlin-thompson",
@@ -25770,7 +25797,8 @@
     "instagramId": "corbinbleu",
     "twitterId": "corbinbleu",
     "facebookId": "CorbinBleu",
-    "tmdbUpdatedAt": "2026-09-20T16:19:41.629Z"
+    "tmdbUpdatedAt": "2026-10-04T16:17:06.462Z",
+    "tmdbFetchedAt": "2026-10-04T16:17:06.462Z"
   },
   {
     "id": "3249824",
@@ -37924,7 +37952,8 @@
     "knownCredits": 49,
     "instagramId": "enidrayeadams",
     "twitterId": "enidrayeadams",
-    "tmdbUpdatedAt": "2026-09-20T16:17:29.008Z"
+    "tmdbUpdatedAt": "2026-10-04T16:17:06.677Z",
+    "tmdbFetchedAt": "2026-10-04T16:17:06.677Z"
   },
   {
     "id": "enoch-jude-danquah",
@@ -40982,7 +41011,8 @@
     "gender": "Male",
     "knownForDepartment": "Acting",
     "knownCredits": 94,
-    "tmdbUpdatedAt": "2026-09-20T16:17:24.752Z"
+    "tmdbUpdatedAt": "2026-10-04T16:17:06.646Z",
+    "tmdbFetchedAt": "2026-10-04T16:17:06.646Z"
   },
   {
     "id": "fred-keating",
@@ -47856,7 +47886,8 @@
     "alsoKnownAs": [
       "Iris Quinn Bernard"
     ],
-    "tmdbUpdatedAt": "2026-09-20T16:16:53.064Z"
+    "tmdbUpdatedAt": "2026-10-04T16:17:06.547Z",
+    "tmdbFetchedAt": "2026-10-04T16:17:06.547Z"
   },
   {
     "id": "isaac-akers",
@@ -61100,7 +61131,8 @@
     "gender": "Male",
     "knownForDepartment": "Acting",
     "knownCredits": 20,
-    "tmdbUpdatedAt": "2026-09-20T16:17:46.753Z"
+    "tmdbUpdatedAt": "2026-10-04T16:17:06.756Z",
+    "tmdbFetchedAt": "2026-10-04T16:17:06.756Z"
   },
   {
     "id": "judge-reinhold",
@@ -63290,6 +63322,24 @@
     "knownForDepartment": "Acting",
     "knownCredits": 8,
     "tmdbUpdatedAt": "2026-09-21T13:18:07.274Z"
+  },
+  {
+    "id": "1515477",
+    "slug": "karis-cameron",
+    "name": "Karis Cameron",
+    "tmdbPersonId": 1515477,
+    "photoUrl": "/images/people/1515477.webp",
+    "profileUrl": "/images/people/1515477.webp",
+    "birthday": "1996-01-15",
+    "placeOfBirth": "Tofino, British Columbia, Canada",
+    "imdbPersonId": "nm4470278",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 21,
+    "instagramId": "kariscameron",
+    "twitterId": "KarisCameron",
+    "tmdbUpdatedAt": "2026-10-04T16:17:06.734Z",
+    "tmdbFetchedAt": "2026-10-04T16:17:06.734Z"
   },
   {
     "id": "3659079",
@@ -80363,7 +80413,8 @@
     "knownForDepartment": "Acting",
     "knownCredits": 58,
     "instagramId": "_matt_hammer",
-    "tmdbUpdatedAt": "2026-09-21T13:00:05.055Z"
+    "tmdbUpdatedAt": "2026-10-04T16:17:06.516Z",
+    "tmdbFetchedAt": "2026-10-04T16:17:06.516Z"
   },
   {
     "id": "matt-koenig",
@@ -95588,6 +95639,21 @@
     "tmdbUpdatedAt": "2026-09-20T16:17:12.292Z"
   },
   {
+    "id": "2024744",
+    "slug": "quinten-james",
+    "name": "Quinten James",
+    "tmdbPersonId": 2024744,
+    "photoUrl": "/images/people/2024744.webp",
+    "profileUrl": "/images/people/2024744.webp",
+    "imdbPersonId": "nm9158473",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 13,
+    "instagramId": "qjissi",
+    "tmdbUpdatedAt": "2026-10-04T16:17:07.280Z",
+    "tmdbFetchedAt": "2026-10-04T16:17:07.280Z"
+  },
+  {
     "id": "r-austin-ball",
     "slug": "r-austin-ball",
     "name": "R Austin Ball",
@@ -103090,7 +103156,8 @@
     "gender": "Female",
     "knownForDepartment": "Acting",
     "knownCredits": 8,
-    "tmdbUpdatedAt": "2026-09-20T16:17:29.045Z"
+    "tmdbUpdatedAt": "2026-10-04T16:17:06.731Z",
+    "tmdbFetchedAt": "2026-10-04T16:17:06.731Z"
   },
   {
     "id": "2550736",
@@ -112155,7 +112222,8 @@
     "gender": "Female",
     "knownForDepartment": "Acting",
     "knownCredits": 33,
-    "tmdbUpdatedAt": "2026-09-20T16:18:16.655Z"
+    "tmdbUpdatedAt": "2026-10-04T16:17:06.933Z",
+    "tmdbFetchedAt": "2026-10-04T16:17:06.933Z"
   },
   {
     "id": "tasha-smith",
@@ -120948,6 +121016,20 @@
     ],
     "tmdbUpdatedAt": "2026-10-01T10:28:06.794Z",
     "tmdbFetchedAt": "2026-10-01T10:28:06.794Z"
+  },
+  {
+    "id": "3600916",
+    "slug": "zia-newton",
+    "name": "Zia Newton",
+    "tmdbPersonId": 3600916,
+    "photoUrl": "/images/people/3600916.webp",
+    "profileUrl": "/images/people/3600916.webp",
+    "imdbPersonId": "nm13853782",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 7,
+    "tmdbUpdatedAt": "2026-10-04T16:17:07.192Z",
+    "tmdbFetchedAt": "2026-10-04T16:17:07.192Z"
   },
   {
     "id": "1599275",
