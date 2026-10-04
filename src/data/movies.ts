@@ -179734,7 +179734,6 @@ export const MOVIES: Movie[] = [
       }
     ],
     "trailers": [],
-    "voteAverage": 6.1,
     "voteCount": 6,
     "tmdbUpdatedAt": "2026-10-04T07:51:26.911Z",
     "tmdbFetchedAt": "2026-10-04T07:51:26.911Z",
@@ -179744,7 +179743,8 @@ export const MOVIES: Movie[] = [
         "title": "Merry Missed Connection",
         "country": "US"
       }
-    ]
+    ],
+    "networkPremiereDate": "2025-12-06"
   },
   {
     "id": "lifetime-2024-christmas-in-alaska",
