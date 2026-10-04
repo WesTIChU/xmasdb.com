@@ -155725,11 +155725,11 @@ export const MOVIES: Movie[] = [
       }
     ],
     "trailerYoutubeKey": "quINYRZftNo",
-    "voteAverage": 7.5,
     "voteCount": 2,
     "tmdbUpdatedAt": "2026-10-04T07:49:00.403Z",
     "premiereDate": "2025-11-01",
-    "tmdbFetchedAt": "2026-10-04T07:49:00.403Z"
+    "tmdbFetchedAt": "2026-10-04T07:49:00.403Z",
+    "networkPremiereDate": "2026-12-04"
   },
   {
     "id": "uptv-2025-the-great-christmas-snow-in",
