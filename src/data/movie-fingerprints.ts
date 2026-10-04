@@ -1849,6 +1849,12 @@ export const PROTOTYPE_MOVIE_FINGERPRINTS: Readonly<Record<string, readonly Fing
     "unexpected-romance",
     "workplace-romance"
   ],
+  "hallmark-2023-an-ice-palace-romance": [
+    "business-owner",
+    "hometown",
+    "returns-home",
+    "writer-journalist"
+  ],
   "hallmark-2023-catch-me-if-you-claus": [
     "entertainment-showbiz",
     "writer-journalist"
@@ -1943,6 +1949,13 @@ export const PROTOTYPE_MOVIE_FINGERPRINTS: Readonly<Record<string, readonly Fing
     "single-parent",
     "teacher"
   ],
+  "hallmark-2023-rescuing-christmas": [
+    "alternate-life",
+    "christmas-magic",
+    "christmas-wish",
+    "santa",
+    "wish-comes-true"
+  ],
   "hallmark-2023-round-and-round": [
     "matchmaking",
     "time-travel"
@@ -1982,6 +1995,11 @@ export const PROTOTYPE_MOVIE_FINGERPRINTS: Readonly<Record<string, readonly Fing
     "love-triangle",
     "music",
     "restaurant-cafe"
+  ],
+  "hallmark-2024-a-very-vermont-christmas": [
+    "athlete",
+    "family-business",
+    "save-the-business"
   ],
   "hallmark-2024-christmas-on-call": [
     "big-city"
