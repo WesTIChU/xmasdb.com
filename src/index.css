@@ -169,6 +169,11 @@ body {
   opacity: 0.95;
 }
 
+.calendar-movie-link:focus-visible .nav-squiggle {
+  clip-path: inset(0 0 0 0);
+  opacity: 0.95;
+}
+
 @keyframes quick-links-sparkle-pulse {
   0%, 100% { opacity: 0.82; transform: scale(1); }
   50% { opacity: 1; transform: scale(1.15); }
