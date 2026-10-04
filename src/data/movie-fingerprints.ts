@@ -1754,6 +1754,10 @@ export const PROTOTYPE_MOVIE_FINGERPRINTS: Readonly<Record<string, readonly Fing
     "celebrity",
     "entertainment-showbiz"
   ],
+  "hallmark-2022-my-grown-up-christmas-list": [
+    "military",
+    "writer-journalist"
+  ],
   "hallmark-2022-my-southern-family-christmas": [
     "family-secret",
     "parent-child",
