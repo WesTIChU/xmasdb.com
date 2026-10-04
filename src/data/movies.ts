@@ -177836,6 +177836,144 @@ export const MOVIES: Movie[] = [
     "voteCount": 19,
     "tmdbUpdatedAt": "2026-10-04T06:42:21.213Z",
     "tmdbFetchedAt": "2026-10-04T06:42:21.213Z"
+  },
+  {
+    "id": "gaf-2026-the-trouble-with-mistletoe",
+    "slug": "the-trouble-with-mistletoe",
+    "title": "The Trouble With Mistletoe",
+    "year": 2026,
+    "brandId": "gaf",
+    "releaseDate": "2026-07-02",
+    "synopsis": "An acquisitions executive who returns home for Christmas and unexpectedly reconnects with the former fiancé she left behind. As the traditions of her hometown rekindle old memories, she begins to wonder if the life she walked away from may still be the one meant for her.",
+    "posterUrl": "/images/posters/1702313.jpg",
+    "backdropUrl": "/images/backdrops/1702313.jpg",
+    "cast": [
+      {
+        "actorId": "118362",
+        "name": "Jillian Murray",
+        "character": "Victoria",
+        "slug": "jillian-murray",
+        "tmdbPersonId": 118362,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/zkt2X0vAGX0qqcRlJJnUkprNQ3k.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "1316441",
+        "name": "Brett Varvel",
+        "character": "Luke",
+        "slug": "brett-varvel",
+        "tmdbPersonId": 1316441,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/yBcGSrKgJCBXS22FQcArKooxCBy.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "6066318",
+        "name": "Sean Greenhouse",
+        "character": "",
+        "slug": "sean-greenhouse",
+        "tmdbPersonId": 6066318,
+        "order": 2
+      },
+      {
+        "actorId": "5022055",
+        "name": "Anthony Carvello",
+        "character": "Jim",
+        "slug": "anthony-carvello",
+        "tmdbPersonId": 5022055,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/i5i0YLfWKQoqgc1QCL3kW6BLDYS.jpg",
+        "order": 3
+      },
+      {
+        "actorId": "2983699",
+        "name": "Callie Beaulieu",
+        "character": "Mrs. Kingston",
+        "slug": "callie-beaulieu",
+        "tmdbPersonId": 2983699,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/450jzmvIxiG4HtAoUeMDZNyPeDE.jpg",
+        "order": 4
+      },
+      {
+        "actorId": "1416444",
+        "name": "Josie DiVincenzo",
+        "character": "Sheila",
+        "slug": "josie-divincenzo",
+        "tmdbPersonId": 1416444,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/uCU4o1fHdiOtMNp5Ya61wh5S7Dh.jpg",
+        "order": 5
+      },
+      {
+        "actorId": "4278657",
+        "name": "Christine Hulton",
+        "character": "Christmas Partygoer",
+        "slug": "christine-hulton",
+        "tmdbPersonId": 4278657,
+        "order": 6
+      }
+    ],
+    "director": "Don S. Arthur",
+    "tmdbId": 1702313,
+    "imdbId": "tt40870393",
+    "isComingSoon": true,
+    "status": "coming-soon",
+    "originalTitle": "The Trouble With Mistletoe",
+    "alternativeTitles": [
+      {
+        "title": "The Trouble With Christmas Mistletoe",
+        "country": "US"
+      }
+    ],
+    "runtimeMinutes": 84,
+    "genres": [
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      },
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "US",
+        "releaseDate": "2026-07-02T00:00:00.000Z",
+        "type": 4,
+        "certification": "G",
+        "note": "Great American Pure Flix "
+      },
+      {
+        "country": "US",
+        "releaseDate": "2026-07-04T00:00:00.000Z",
+        "type": 6,
+        "certification": "G",
+        "note": "Great American Family"
+      }
+    ],
+    "crew": [
+      {
+        "id": 3264705,
+        "name": "Jennifer Snow",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "6a14e7556c45dc3de8052e76"
+      },
+      {
+        "id": 6240353,
+        "name": "Don S. Arthur",
+        "job": "Director",
+        "department": "Directing",
+        "creditId": "6a14e760e9f3cb9f3240e2bf"
+      }
+    ],
+    "trailers": [],
+    "voteAverage": 0,
+    "voteCount": 0,
+    "tmdbUpdatedAt": "2026-10-04T07:07:53.354Z",
+    "tmdbFetchedAt": "2026-10-04T07:07:53.354Z"
   }
 ];
 

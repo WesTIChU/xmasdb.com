@@ -8501,6 +8501,18 @@
     "tmdbUpdatedAt": "2026-09-22T20:53:31.687Z"
   },
   {
+    "id": "5022055",
+    "slug": "anthony-carvello",
+    "name": "Anthony Carvello",
+    "tmdbPersonId": 5022055,
+    "photoUrl": "/images/people/5022055.webp",
+    "profileUrl": "/images/people/5022055.webp",
+    "knownForDepartment": "Acting",
+    "knownCredits": 7,
+    "tmdbUpdatedAt": "2026-10-04T07:07:55.009Z",
+    "tmdbFetchedAt": "2026-10-04T07:07:55.009Z"
+  },
+  {
     "id": "anthony-del-negro",
     "slug": "anthony-del-negro",
     "name": "Anthony Del Negro",
@@ -15076,6 +15088,21 @@
     "tmdbUpdatedAt": "2026-09-20T16:21:17.182Z"
   },
   {
+    "id": "1316441",
+    "slug": "brett-varvel",
+    "name": "Brett Varvel",
+    "tmdbPersonId": 1316441,
+    "photoUrl": "/images/people/1316441.webp",
+    "profileUrl": "/images/people/1316441.webp",
+    "biography": "From the age of 5 Brett knew he wanted to be a filmmaker. The son of an internationally known cartoonist meant that Brett was constantly surrounded by storytelling. The love of the craft propelled him to chase his dreams from a young age. After graduating college at Ball State University Brett had already won a regional Emmy Award for directing and was also a two-time David Letterman Scholarship winner. Brett went on to create his own production company, House of Grace Studios and is now a director, actor, and writer. Brett has the unique ability to excel both behind and in front of the camera.",
+    "imdbPersonId": "nm4870996",
+    "gender": "Male",
+    "knownForDepartment": "Directing",
+    "knownCredits": 19,
+    "tmdbUpdatedAt": "2026-10-04T07:07:54.955Z",
+    "tmdbFetchedAt": "2026-10-04T07:07:54.955Z"
+  },
+  {
     "id": "bri-collins",
     "slug": "bri-collins",
     "name": "Bri Collins",
@@ -17585,6 +17612,20 @@
     "knownCredits": 25,
     "twitterId": "callard",
     "tmdbUpdatedAt": "2026-09-20T16:21:00.746Z"
+  },
+  {
+    "id": "2983699",
+    "slug": "callie-beaulieu",
+    "name": "Callie Beaulieu",
+    "tmdbPersonId": 2983699,
+    "photoUrl": "/images/people/2983699.webp",
+    "profileUrl": "/images/people/2983699.webp",
+    "imdbPersonId": "nm6797054",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 7,
+    "tmdbUpdatedAt": "2026-10-04T07:07:55.475Z",
+    "tmdbFetchedAt": "2026-10-04T07:07:55.475Z"
   },
   {
     "id": "callie-reynolds",
@@ -33297,6 +33338,16 @@
     "knownForDepartment": "Writing",
     "knownCredits": 4,
     "tmdbUpdatedAt": "2026-09-22T20:53:28.351Z"
+  },
+  {
+    "id": "6240353",
+    "slug": "don-s-arthur",
+    "name": "Don S. Arthur",
+    "tmdbPersonId": 6240353,
+    "knownForDepartment": "Directing",
+    "knownCredits": 1,
+    "tmdbUpdatedAt": "2026-10-04T07:07:54.709Z",
+    "tmdbFetchedAt": "2026-10-04T07:07:54.709Z"
   },
   {
     "id": "don-scribner",
@@ -54076,7 +54127,8 @@
     "gender": "Female",
     "knownForDepartment": "Writing",
     "knownCredits": 15,
-    "tmdbUpdatedAt": "2026-09-21T12:59:49.782Z"
+    "tmdbUpdatedAt": "2026-10-04T07:07:54.585Z",
+    "tmdbFetchedAt": "2026-10-04T07:07:54.585Z"
   },
   {
     "id": "5888286",
@@ -60516,6 +60568,25 @@
     "twitterId": "JosieDavis",
     "tmdbUpdatedAt": "2026-10-02T17:47:46.587Z",
     "tmdbFetchedAt": "2026-10-02T17:47:46.587Z"
+  },
+  {
+    "id": "1416444",
+    "slug": "josie-divincenzo",
+    "name": "Josie DiVincenzo",
+    "tmdbPersonId": 1416444,
+    "photoUrl": "/images/people/1416444.webp",
+    "profileUrl": "/images/people/1416444.webp",
+    "placeOfBirth": "Buffalo, New York, USA",
+    "imdbPersonId": "nm0228646",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 24,
+    "alsoKnownAs": [
+      "Josie Di Vincenzo",
+      "Josie DiVencenzo"
+    ],
+    "tmdbUpdatedAt": "2026-10-04T07:07:54.940Z",
+    "tmdbFetchedAt": "2026-10-04T07:07:54.940Z"
   },
   {
     "id": "josie-loren",
