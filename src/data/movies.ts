@@ -182412,6 +182412,50 @@ export const MOVIES: Movie[] = [
     "tmdbUpdatedAt": "2026-10-04T15:44:26.454Z",
     "tmdbFetchedAt": "2026-10-04T15:44:26.454Z",
     "networkPremiereDate": "2026-07-04"
+  },
+  {
+    "id": "hallmark-2026-love-under-the-mistletoe",
+    "slug": "love-under-the-mistletoe",
+    "title": "Love Under the Mistletoe",
+    "year": 2026,
+    "brandId": "hallmark",
+    "releaseDate": "2026-07-25",
+    "synopsis": "Interior designer Grace (Lilley) runs a business with her best friend and her brother in the quaint town of Ivy Glen but is too busy for a real relationship. Ryan (Bateman), a successful New York City financial advisor and Grace's former high school crush, returns home planning to sell his grandmother's historic St. Nicholas House. The mayor convinces him to revive the beloved Ribbons and Bows charity fundraiser and brings Grace on board to help. Working side by side to pull the event together, the former couple reminisces and feelings they once shared slowly resurface. But will this yuletide reunion lead to love under the mistletoe?",
+    "posterUrl": "/images/posters/1740370.jpg",
+    "cast": [],
+    "tmdbId": 1740370,
+    "imdbId": "tt43359658",
+    "isComingSoon": false,
+    "status": "collection",
+    "originalTitle": "Love Under the Mistletoe",
+    "alternativeTitles": [
+      {
+        "title": "Operation Mistletoe",
+        "country": "US"
+      }
+    ],
+    "runtimeMinutes": 83,
+    "genres": [
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "US",
+        "releaseDate": "2026-07-25T00:00:00.000Z",
+        "type": 6,
+        "certification": "G",
+        "note": ""
+      }
+    ],
+    "crew": [],
+    "trailers": [],
+    "voteAverage": 0,
+    "voteCount": 0,
+    "tmdbUpdatedAt": "2026-10-04T15:53:14.814Z",
+    "tmdbFetchedAt": "2026-10-04T15:53:14.815Z"
   }
 ];
 
