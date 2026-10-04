@@ -179883,11 +179883,11 @@ export const MOVIES: Movie[] = [
       }
     ],
     "trailers": [],
-    "voteAverage": 6.6,
     "voteCount": 17,
     "tmdbUpdatedAt": "2026-10-04T07:51:27.659Z",
     "tmdbFetchedAt": "2026-10-04T07:51:27.659Z",
-    "premiereDate": "2024-12-19"
+    "premiereDate": "2024-12-19",
+    "networkPremiereDate": "2025-12-12"
   },
   {
     "id": "lifetime-2025-thank-god-christmas-at-keller-ranch",
