@@ -60633,6 +60633,22 @@
     "tmdbUpdatedAt": "2026-09-20T16:21:13.554Z"
   },
   {
+    "id": "931594",
+    "slug": "joslyn-jensen",
+    "name": "Joslyn Jensen",
+    "tmdbPersonId": 931594,
+    "photoUrl": "/images/people/931594.webp",
+    "profileUrl": "/images/people/931594.webp",
+    "placeOfBirth": "Seattle, Washington, USA",
+    "biography": "Joslyn Jensen is an actor and screenwriter from Seattle, WA.",
+    "imdbPersonId": "nm2599759",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 28,
+    "tmdbUpdatedAt": "2026-10-04T12:36:29.173Z",
+    "tmdbFetchedAt": "2026-10-04T12:36:29.173Z"
+  },
+  {
     "id": "joslyn-y-hall",
     "slug": "joslyn-y-hall",
     "name": "Joslyn Y Hall",
