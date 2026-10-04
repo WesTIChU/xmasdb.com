@@ -358,8 +358,9 @@ async function startServer() {
     const payload = buildCalendarPayload();
     const year = Number.isInteger(yearValue) && payload.years.includes(yearValue) ? yearValue : payload.activeYear;
     const network = typeof req.query.network === 'string' && ['hallmark', 'lifetime', 'gaf', 'uptv'].includes(req.query.network) ? req.query.network : undefined;
-    const pdf = buildCalendarPdf(year, network);
+    const pdf = buildCalendarPdf(year, network, payload);
     res.setHeader('Content-Type', 'application/pdf');
+    res.setHeader('Cache-Control', 'no-store, max-age=0');
     res.setHeader('Content-Disposition', `attachment; filename="xmasdb-christmas-calendar-${year}${network ? `-${network}` : ''}.pdf"`);
     res.send(pdf);
   });

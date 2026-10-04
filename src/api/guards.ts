@@ -48,7 +48,8 @@ export function isCatalogueListingPayload(value: unknown): value is CatalogueLis
 
 export function isCalendarPayload(value: unknown): value is CalendarPayload {
   return isRecord(value) && Array.isArray(value.movies) && Array.isArray(value.years) && isNumber(value.activeYear)
-    && value.movies.every((movie) => isRecord(movie) && isString(movie.title) && isString(movie.slug) && isNumber(movie.tmdbId) && isString(movie.brandId) && isNumber(movie.year) && (movie.dateKey === null || isString(movie.dateKey)));
+    && value.movies.every((movie) => isRecord(movie) && isString(movie.title) && isString(movie.slug) && isNumber(movie.tmdbId) && isString(movie.brandId) && isNumber(movie.year) && (movie.dateKey === null || isString(movie.dateKey))
+      && (movie.alternativeTitles === undefined || (Array.isArray(movie.alternativeTitles) && movie.alternativeTitles.every((entry) => isRecord(entry) && isString(entry.title) && isString(entry.country)))));
 }
 
 export function isFingerprintListingPayload(value: unknown): value is FingerprintListing {

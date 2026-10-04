@@ -27,6 +27,7 @@ export interface CalendarMovie {
   year: number;
   dateKey: string | null;
   status?: string;
+  alternativeTitles?: Array<{ title: string; country: string }>;
 }
 
 export interface CalendarPayload {

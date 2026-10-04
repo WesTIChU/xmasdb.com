@@ -101,6 +101,7 @@ export function buildCalendarPayload(): CalendarPayload {
       year: movie.year,
       dateKey: getMovieNetworkPremiereDateKey(movie),
       status: movie.status,
+      alternativeTitles: movie.alternativeTitles,
     }));
   const years = [...new Set(movies.map((movie) => movie.dateKey ? Number(movie.dateKey.slice(0, 4)) : movie.year))]
     .filter(Number.isInteger)

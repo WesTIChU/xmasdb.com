@@ -1,5 +1,7 @@
 import { getBrandById } from '../data/brands';
 import { buildCalendarPayload } from './catalogue-api';
+import type { CalendarPayload } from '../api/types';
+import { getCalendarAlternativeTitle } from '../utils/calendar';
 
 const PAGE_WIDTH = 595.28;
 const PAGE_HEIGHT = 841.89;
@@ -22,6 +24,7 @@ const COLORS = {
 
 interface PdfMovie {
   title: string;
+  alternativeTitle: string | null;
   network: string;
   dateKey: string | null;
 }
@@ -80,7 +83,13 @@ function circlePath(cx: number, cy: number, radius: number): string {
 function groupRows(group: PdfGroup): Array<{ movie: PdfMovie; lines: string[]; height: number }> {
   return group.movies.map((movie) => {
     const lines = wrapText(movie.title, TITLE_WIDTH, 10.2);
-    return { movie, lines, height: Math.max(27, lines.length * 12 + 11) };
+    const alternativeLines = movie.alternativeTitle
+      ? wrapText(`Also known as: ${movie.alternativeTitle}`, TITLE_WIDTH, 8.2)
+      : [];
+    const height = alternativeLines.length
+      ? lines.length * 12 + alternativeLines.length * 10 + 15
+      : Math.max(27, lines.length * 12 + 11);
+    return { movie, lines, height };
   });
 }
 
@@ -162,6 +171,11 @@ function drawGroup(commands: string[], group: PdfGroup, yStart: number): number 
     const titleY = y - 14;
     commands.push(`${COLORS.forest} rg`);
     lines.forEach((line, index) => commands.push(`BT /F1 10.2 Tf ${TITLE_LEFT} ${(titleY - index * 12).toFixed(2)} Td (${pdfText(line)}) Tj ET`));
+    if (movie.alternativeTitle) {
+      const alternativeLines = wrapText(`Also known as: ${movie.alternativeTitle}`, TITLE_WIDTH, 8.2);
+      commands.push(`${COLORS.muted} rg`);
+      alternativeLines.forEach((line, index) => commands.push(`BT /F1 8.2 Tf ${TITLE_LEFT} ${(titleY - lines.length * 12 - 1 - index * 10).toFixed(2)} Td (${pdfText(line)}) Tj ET`));
+    }
     const network = movie.network;
     const networkX = NETWORK_RIGHT - textWidth(network, 9.2);
     commands.push(`${COLORS.muted} rg`, `BT /F1 9.2 Tf ${networkX.toFixed(2)} ${(center - 3).toFixed(2)} Td (${pdfText(network)}) Tj ET`);
@@ -171,13 +185,13 @@ function drawGroup(commands: string[], group: PdfGroup, yStart: number): number 
   return y - 13;
 }
 
-function buildGroups(year: number, network?: string): PdfGroup[] {
-  const payload = buildCalendarPayload();
+function buildGroups(year: number, network: string | undefined, payload: CalendarPayload): PdfGroup[] {
   const movies: PdfMovie[] = payload.movies
     .filter((movie) => (movie.dateKey ? Number(movie.dateKey.slice(0, 4)) === year : movie.year === year) && (!network || movie.brandId === network))
     .sort((a, b) => (a.dateKey || '9999-99-99').localeCompare(b.dateKey || '9999-99-99') || a.title.localeCompare(b.title))
     .map((movie) => ({
       title: movie.title,
+      alternativeTitle: getCalendarAlternativeTitle(movie),
       network: getBrandById(movie.brandId)?.shortName || movie.brandId,
       dateKey: movie.dateKey,
     }));
@@ -197,8 +211,8 @@ function buildPageContent(page: PdfPage, year: number, pageNumber: number, total
   return commands.join('\n');
 }
 
-export function buildCalendarPdf(year: number, network?: string): Buffer {
-  const pages = paginate(buildGroups(year, network));
+export function buildCalendarPdf(year: number, network?: string, payload: CalendarPayload = buildCalendarPayload()): Buffer {
+  const pages = paginate(buildGroups(year, network, payload));
   const objects: string[] = [];
   const add = (value: string) => { objects.push(value); return objects.length; };
   const catalog = add('<< /Type /Catalog /Pages 2 0 R >>');
