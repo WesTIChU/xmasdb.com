@@ -2346,6 +2346,9 @@ export const PROTOTYPE_MOVIE_FINGERPRINTS: Readonly<Record<string, readonly Fing
     "unexpected-romance",
     "unexpected-trip"
   ],
+  "hallmark-2026-o-little-christmas-market": [
+    "christmas-market"
+  ],
   "hallmark-2026-our-holiday-playbook": [
     "baking-cooking",
     "christmas-competition",
