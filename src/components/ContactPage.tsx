@@ -26,7 +26,7 @@ function getInitialContactState(): { values: FormValues; actorName: string } {
   if (typeof window === 'undefined') return { values: INITIAL_VALUES, actorName: '' };
   const params = new URLSearchParams(window.location.search);
   const actorName = params.get('actor')?.trim() || '';
-  const isMissingMovie = params.get('type') === 'missing-movie' && Boolean(actorName);
+  const isMissingMovie = params.get('type') === 'missing-movie';
   return {
     actorName: isMissingMovie ? actorName : '',
     values: isMissingMovie

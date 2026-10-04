@@ -412,6 +412,12 @@ export const FeedsPage: React.FC<{ meta: FeedsMetaPayload }> = ({ meta }) => {
             onCopy={copyUrl}
           />
         </div>
+        <p className="mt-4 text-center font-body text-xs text-[#736B63]">
+          Spot something wrong? If a movie is missing or something in a feed doesn&apos;t look right,{' '}
+          <a href="/contact/?type=missing-movie" className="font-sans-clean font-medium text-[#1A3D2F] underline decoration-[#B8860B]/50 underline-offset-2 hover:text-[#B8860B]">
+            let me know
+          </a>.
+        </p>
       </section>
 
       <HollyDivider className="my-8 sm:my-10" lineClassName="w-6 sm:w-8" ornamentClassName="h-4 w-12 sm:h-5 sm:w-14" />
