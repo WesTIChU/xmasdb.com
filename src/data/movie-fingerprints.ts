@@ -5,6 +5,12 @@ import { getFingerprintById, isFingerprintId, type FingerprintDefinition, type F
  * Phase-one editorial sample and explicitly applied classifier results.
  */
 export const PROTOTYPE_MOVIE_FINGERPRINTS: Readonly<Record<string, readonly FingerprintId[]>> = {
+  "gaf-2019-my-best-friend-s-christmas": [
+    "fake-relationship",
+    "friends-to-lovers",
+    "old-flame",
+    "returns-home"
+  ],
   "gaf-2021-a-christmas-miracle-for-daisy": [
     "business-owner",
     "christmas-parade",
