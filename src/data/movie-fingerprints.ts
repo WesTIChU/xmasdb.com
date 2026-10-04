@@ -1933,6 +1933,12 @@ export const PROTOTYPE_MOVIE_FINGERPRINTS: Readonly<Record<string, readonly Fing
     "matchmaking",
     "time-travel"
   ],
+  "hallmark-2023-take-me-back-for-christmas": [
+    "alternate-life",
+    "christmas-wish",
+    "second-chance",
+    "wish-comes-true"
+  ],
   "hallmark-2023-the-santa-summit": [
     "christmas-festival"
   ],
