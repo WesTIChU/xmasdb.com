@@ -1025,14 +1025,13 @@
     "knownForDepartment": "Acting",
     "knownCredits": 30,
     "alsoKnownAs": [
-      "アデレード・ケイン",
-      "Adelaide Victoria Kane",
-      "ادلید کین"
+      "Adelaide Victoria Kane"
     ],
     "instagramId": "adelaidekane",
     "twitterId": "AdelaideKane",
     "facebookId": "TheRealAdelaideKane",
-    "tmdbUpdatedAt": "2026-09-20T16:18:35.380Z"
+    "tmdbUpdatedAt": "2026-10-04T07:51:46.894Z",
+    "tmdbFetchedAt": "2026-10-04T07:51:46.894Z"
   },
   {
     "id": "adele-modeva",
@@ -1546,10 +1545,14 @@
     "tmdbPersonId": 1512134,
     "photoUrl": "/images/people/1512134.webp",
     "profileUrl": "/images/people/1512134.webp",
+    "birthday": "2007-05-18",
+    "placeOfBirth": "Vienna, Austria",
     "imdbPersonId": "nm7476826",
+    "gender": "Male",
     "knownForDepartment": "Acting",
-    "knownCredits": 8,
-    "tmdbUpdatedAt": "2026-09-20T16:19:03.621Z"
+    "knownCredits": 9,
+    "tmdbUpdatedAt": "2026-10-04T07:51:51.527Z",
+    "tmdbFetchedAt": "2026-10-04T07:51:51.527Z"
   },
   {
     "id": "aidan-wright",
@@ -3426,14 +3429,14 @@
     "imdbPersonId": "nm1650932",
     "gender": "Female",
     "knownForDepartment": "Acting",
-    "knownCredits": 80,
+    "knownCredits": 81,
     "alsoKnownAs": [
       "Alison Dyan Liebert"
     ],
     "instagramId": "aliliebert",
     "twitterId": "AliLiebert",
-    "tmdbUpdatedAt": "2026-09-25T18:44:24.078Z",
-    "tmdbFetchedAt": "2026-09-25T18:44:24.078Z"
+    "tmdbUpdatedAt": "2026-10-04T07:52:06.715Z",
+    "tmdbFetchedAt": "2026-10-04T07:52:06.715Z"
   },
   {
     "id": "1866478",
@@ -4577,11 +4580,12 @@
     "imdbPersonId": "nm6115970",
     "gender": "Female",
     "knownForDepartment": "Acting",
-    "knownCredits": 5,
+    "knownCredits": 6,
     "instagramId": "alyssapiazza",
     "twitterId": "_lysssss",
     "facebookId": "lyssssssss",
-    "tmdbUpdatedAt": "2026-09-20T16:20:45.183Z"
+    "tmdbUpdatedAt": "2026-10-04T07:52:16.092Z",
+    "tmdbFetchedAt": "2026-10-04T07:52:16.092Z"
   },
   {
     "id": "3591991",
@@ -5416,9 +5420,9 @@
     "imdbPersonId": "nm5497249",
     "gender": "Female",
     "knownForDepartment": "Acting",
-    "knownCredits": 17,
-    "tmdbUpdatedAt": "2026-10-03T21:31:38.338Z",
-    "tmdbFetchedAt": "2026-10-03T21:31:38.338Z"
+    "knownCredits": 18,
+    "tmdbUpdatedAt": "2026-10-04T07:52:24.054Z",
+    "tmdbFetchedAt": "2026-10-04T07:52:24.054Z"
   },
   {
     "id": "amy-groening",
@@ -9630,7 +9634,11 @@
     "gender": "Female",
     "knownForDepartment": "Acting",
     "knownCredits": 63,
-    "tmdbUpdatedAt": "2026-09-20T16:20:22.992Z"
+    "alsoKnownAs": [
+      "Ashanti Shequoiya Douglas"
+    ],
+    "tmdbUpdatedAt": "2026-10-04T07:53:03.215Z",
+    "tmdbFetchedAt": "2026-10-04T07:53:03.215Z"
   },
   {
     "id": "asher-alexander",
@@ -11415,9 +11423,9 @@
     "imdbPersonId": "nm0393953",
     "gender": "Male",
     "knownForDepartment": "Acting",
-    "knownCredits": 98,
-    "tmdbUpdatedAt": "2026-10-02T17:43:00.900Z",
-    "tmdbFetchedAt": "2026-10-02T17:43:00.900Z"
+    "knownCredits": 99,
+    "tmdbUpdatedAt": "2026-10-04T07:53:17.865Z",
+    "tmdbFetchedAt": "2026-10-04T07:53:17.865Z"
   },
   {
     "id": "barry-bostwick",
@@ -11813,11 +11821,13 @@
     "profileUrl": "/images/people/1219172.webp",
     "birthday": "1960-01-04",
     "placeOfBirth": "Edmonton, Alberta, Canada",
+    "biography": "Belinda Metz (born 4 January 1960, Edmonton, Alberta, Canada) is a Canadian actress, singer, and choreographer. In 1977 she was crowned Miss Oktoberfest in Kitchener-Waterloo, and she released an album, Electric Splash, in 1985 before transitioning to acting. She is best known as Det. Jody Powell on Kung Fu: The Legend Continues (1994–1997) and Irene Bell on Disney Channel's So Weird (1999–2001). In film, she has appeared in Eight Below (2006) and Dear Mr. Gacy (2010). In voice work, she is known as Euryale in Class of the Titans (2006) and Celia Strick in LEGO DreamZzz (2023–2024).",
     "imdbPersonId": "nm0582671",
     "gender": "Female",
     "knownForDepartment": "Acting",
     "knownCredits": 26,
-    "tmdbUpdatedAt": "2026-09-20T16:17:26.677Z"
+    "tmdbUpdatedAt": "2026-10-04T07:53:20.548Z",
+    "tmdbFetchedAt": "2026-10-04T07:53:20.548Z"
   },
   {
     "id": "belinda-montgomery",
@@ -13235,13 +13245,14 @@
     "imdbPersonId": "nm0365484",
     "gender": "Female",
     "knownForDepartment": "Acting",
-    "knownCredits": 89,
+    "knownCredits": 90,
     "alsoKnownAs": [
       "Barbara Jeanne Harrison",
       "Barbara Jean Harrison",
       "B.J. Harrison"
     ],
-    "tmdbUpdatedAt": "2026-09-21T12:46:26.310Z"
+    "tmdbUpdatedAt": "2026-10-04T07:53:32.623Z",
+    "tmdbFetchedAt": "2026-10-04T07:53:32.623Z"
   },
   {
     "id": "bj-harrison",
@@ -14300,9 +14311,10 @@
     "imdbPersonId": "nm13350144",
     "gender": "Male",
     "knownForDepartment": "Acting",
-    "knownCredits": 14,
+    "knownCredits": 15,
     "instagramId": "brandonmcewaan",
-    "tmdbUpdatedAt": "2026-09-20T16:17:37.445Z"
+    "tmdbUpdatedAt": "2026-10-04T07:53:41.459Z",
+    "tmdbFetchedAt": "2026-10-04T07:53:41.459Z"
   },
   {
     "id": "brandon-middleton",
@@ -16121,14 +16133,14 @@
     "imdbPersonId": "nm2391229",
     "gender": "Female",
     "knownForDepartment": "Acting",
-    "knownCredits": 11,
+    "knownCredits": 12,
     "alsoKnownAs": [
       "Brittany Willacy"
     ],
     "instagramId": "brittanywillacy",
     "twitterId": "BrittanyWillacy",
-    "tmdbUpdatedAt": "2026-10-01T09:19:09.361Z",
-    "tmdbFetchedAt": "2026-10-01T09:19:09.361Z"
+    "tmdbUpdatedAt": "2026-10-04T07:53:58.292Z",
+    "tmdbFetchedAt": "2026-10-04T07:53:58.292Z"
   },
   {
     "id": "brittney-wilson",
@@ -17500,11 +17512,12 @@
     "imdbPersonId": "nm0058786",
     "gender": "Male",
     "knownForDepartment": "Acting",
-    "knownCredits": 38,
+    "knownCredits": 39,
     "alsoKnownAs": [
       "Calvin Bartlett"
     ],
-    "tmdbUpdatedAt": "2026-09-20T16:20:46.750Z"
+    "tmdbUpdatedAt": "2026-10-04T07:54:09.836Z",
+    "tmdbFetchedAt": "2026-10-04T07:54:09.836Z"
   },
   {
     "id": "4897781",
@@ -19135,14 +19148,14 @@
     "imdbPersonId": "nm0000402",
     "gender": "Female",
     "knownForDepartment": "Acting",
-    "knownCredits": 168,
+    "knownCredits": 169,
     "alsoKnownAs": [
       "Carrie Frances Fisher"
     ],
     "twitterId": "carrieffisher",
     "facebookId": "carrieffisher",
-    "tmdbUpdatedAt": "2026-10-01T10:12:09.682Z",
-    "tmdbFetchedAt": "2026-10-01T10:12:09.682Z"
+    "tmdbUpdatedAt": "2026-10-04T07:54:24.589Z",
+    "tmdbFetchedAt": "2026-10-04T07:54:24.589Z"
   },
   {
     "id": "33350",
@@ -20179,12 +20192,13 @@
     "imdbPersonId": "nm5426186",
     "gender": "Female",
     "knownForDepartment": "Acting",
-    "knownCredits": 14,
+    "knownCredits": 15,
     "alsoKnownAs": [
       "Cecilia Grace Deacon"
     ],
     "instagramId": "ceciliadeacon",
-    "tmdbUpdatedAt": "2026-09-20T16:18:12.395Z"
+    "tmdbUpdatedAt": "2026-10-04T07:54:32.650Z",
+    "tmdbFetchedAt": "2026-10-04T07:54:32.650Z"
   },
   {
     "id": "2319893",
@@ -30677,15 +30691,15 @@
     "imdbPersonId": "nm0001002",
     "gender": "Male",
     "knownForDepartment": "Acting",
-    "knownCredits": 250,
+    "knownCredits": 251,
     "alsoKnownAs": [
       "Dean George Tanaka",
       "Dean George Cain"
     ],
     "instagramId": "deuces1966",
     "twitterId": "RealDeanCain",
-    "tmdbUpdatedAt": "2026-10-01T09:21:08.917Z",
-    "tmdbFetchedAt": "2026-10-01T09:21:08.917Z"
+    "tmdbUpdatedAt": "2026-10-04T07:56:02.879Z",
+    "tmdbFetchedAt": "2026-10-04T07:56:02.879Z"
   },
   {
     "id": "dean-eadie",
@@ -35050,9 +35064,9 @@
     "imdbPersonId": "nm0666198",
     "gender": "Female",
     "knownForDepartment": "Acting",
-    "knownCredits": 59,
-    "tmdbUpdatedAt": "2026-10-01T10:07:35.276Z",
-    "tmdbFetchedAt": "2026-10-01T10:07:35.276Z"
+    "knownCredits": 58,
+    "tmdbUpdatedAt": "2026-10-04T07:56:39.390Z",
+    "tmdbFetchedAt": "2026-10-04T07:56:39.390Z"
   },
   {
     "id": "154480",
@@ -38156,14 +38170,15 @@
     "imdbPersonId": "nm0000616",
     "gender": "Male",
     "knownForDepartment": "Acting",
-    "knownCredits": 758,
+    "knownCredits": 759,
     "alsoKnownAs": [
       "Eric Anthony Roberts"
     ],
     "instagramId": "ericrobertsactor",
     "twitterId": "EricRoberts",
     "facebookId": "EricRobertsActor",
-    "tmdbUpdatedAt": "2026-09-21T13:16:20.827Z"
+    "tmdbUpdatedAt": "2026-10-04T07:57:03.007Z",
+    "tmdbFetchedAt": "2026-10-04T07:57:03.007Z"
   },
   {
     "id": "eric-scott-ways",
@@ -39491,9 +39506,10 @@
     "imdbPersonId": "nm7932936",
     "gender": "Male",
     "knownForDepartment": "Acting",
-    "knownCredits": 9,
+    "knownCredits": 10,
     "instagramId": "@everettandresofficial",
-    "tmdbUpdatedAt": "2026-09-20T16:17:32.131Z"
+    "tmdbUpdatedAt": "2026-10-04T07:57:14.224Z",
+    "tmdbFetchedAt": "2026-10-04T07:57:14.224Z"
   },
   {
     "id": "everett-dool",
@@ -43018,11 +43034,12 @@
     "imdbPersonId": "nm0723432",
     "gender": "Female",
     "knownForDepartment": "Acting",
-    "knownCredits": 51,
+    "knownCredits": 52,
     "alsoKnownAs": [
       "Georgeanne Marie Rice"
     ],
-    "tmdbUpdatedAt": "2026-09-20T16:20:30.512Z"
+    "tmdbUpdatedAt": "2026-10-04T07:57:47.280Z",
+    "tmdbFetchedAt": "2026-10-04T07:57:47.280Z"
   },
   {
     "id": "1470388",
@@ -43075,11 +43092,11 @@
     "imdbPersonId": "nm2297876",
     "gender": "Male",
     "knownForDepartment": "Acting",
-    "knownCredits": 69,
+    "knownCredits": 70,
     "instagramId": "gilespanton",
     "twitterId": "g_panton",
-    "tmdbUpdatedAt": "2026-10-02T17:46:03.334Z",
-    "tmdbFetchedAt": "2026-10-02T17:46:03.334Z"
+    "tmdbUpdatedAt": "2026-10-04T07:57:48.070Z",
+    "tmdbFetchedAt": "2026-10-04T07:57:48.070Z"
   },
   {
     "id": "gilles-marini",
@@ -46034,13 +46051,14 @@
     "imdbPersonId": "nm0001726",
     "gender": "Female",
     "knownForDepartment": "Directing",
-    "knownCredits": 136,
+    "knownCredits": 137,
     "alsoKnownAs": [
       "Helen Jane Shaver",
       "هلن شیور"
     ],
     "twitterId": "helenshaver",
-    "tmdbUpdatedAt": "2026-09-20T16:21:12.390Z"
+    "tmdbUpdatedAt": "2026-10-04T07:58:12.044Z",
+    "tmdbFetchedAt": "2026-10-04T07:58:12.044Z"
   },
   {
     "id": "helen-siff",
@@ -48130,6 +48148,31 @@
     "tmdbUpdatedAt": "2026-09-20T16:20:12.835Z"
   },
   {
+    "id": "jessica-ruth-bell",
+    "slug": "jessica-ruth-bell",
+    "name": "J. Bell",
+    "tmdbPersonId": 3262387,
+    "photoUrl": "/images/people/3262387.webp",
+    "profileUrl": "/images/people/3262387.webp",
+    "birthday": "1998-12-06",
+    "placeOfBirth": "Los Angeles, California, USA",
+    "biography": "J. Bell (previously known as Jessica Ruth Bell) is an LA-based actress and singer known for her adventurous and unique characters/projects. Her whimsical nature most likely comes from her early start in musical theater - of which she clocked 10 years of experience before ever entering the world of cinema. Once she stepped onto the screen, she fell in love with it and never looked back.\n\nMany directors have opted to work with J. again and again, noting that she's a pleasure to work with, a blast on set, and takes notes like no other. One director expressed how she seemed to \"walk right off the page\" in her audition, booking her the role. Another was so moved by her presence at a table read that he rewrote her part to be larger than it originally was.\n\nShe studied improv at UCB, scene study at The Acting Center, and continues to study singing with her vocal coach weekly.",
+    "imdbPersonId": "nm10721627",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 17,
+    "alsoKnownAs": [
+      "Jessica Bell",
+      "Jess Bell",
+      "Jessica Ruth Bell"
+    ],
+    "instagramId": "jessicaruthbell",
+    "twitterId": "jessicaruthbell",
+    "facebookId": "MagicJessBell",
+    "tmdbUpdatedAt": "2026-10-04T07:59:40.051Z",
+    "tmdbFetchedAt": "2026-10-04T07:59:40.051Z"
+  },
+  {
     "id": "101300",
     "slug": "j-downing",
     "name": "J. Downing",
@@ -49313,9 +49356,9 @@
     "imdbPersonId": "nm7048105",
     "gender": "Male",
     "knownForDepartment": "Acting",
-    "knownCredits": 9,
-    "tmdbUpdatedAt": "2026-10-03T15:01:33.169Z",
-    "tmdbFetchedAt": "2026-10-03T15:01:33.169Z"
+    "knownCredits": 10,
+    "tmdbUpdatedAt": "2026-10-04T07:58:43.452Z",
+    "tmdbFetchedAt": "2026-10-04T07:58:43.452Z"
   },
   {
     "id": "jake-allyn",
@@ -52212,15 +52255,15 @@
     "imdbPersonId": "nm0001542",
     "gender": "Male",
     "knownForDepartment": "Acting",
-    "knownCredits": 105,
+    "knownCredits": 104,
     "alsoKnownAs": [
       "Jon Ferguson Mohr",
       "جی مهر"
     ],
     "instagramId": "jaymohr37",
     "facebookId": "jmohr37",
-    "tmdbUpdatedAt": "2026-10-01T10:07:28.405Z",
-    "tmdbFetchedAt": "2026-10-01T10:07:28.405Z"
+    "tmdbUpdatedAt": "2026-10-04T07:59:12.504Z",
+    "tmdbFetchedAt": "2026-10-04T07:59:12.504Z"
   },
   {
     "id": "jay-santiago",
@@ -53953,7 +53996,7 @@
     "imdbPersonId": "nm0001349",
     "gender": "Female",
     "knownForDepartment": "Acting",
-    "knownCredits": 94,
+    "knownCredits": 93,
     "alsoKnownAs": [
       "Love",
       "JLove",
@@ -53962,8 +54005,8 @@
     "instagramId": "jenniferlovehewitt",
     "twitterId": "TheReal_Jlh",
     "facebookId": "JLHOfficial",
-    "tmdbUpdatedAt": "2026-10-01T13:48:08.116Z",
-    "tmdbFetchedAt": "2026-10-01T13:48:08.116Z"
+    "tmdbUpdatedAt": "2026-10-04T07:59:27.056Z",
+    "tmdbFetchedAt": "2026-10-04T07:59:27.056Z"
   },
   {
     "id": "228825",
@@ -55382,28 +55425,6 @@
     "knownForDepartment": "Acting",
     "knownCredits": 3,
     "tmdbUpdatedAt": "2026-09-20T16:20:57.498Z"
-  },
-  {
-    "id": "jessica-ruth-bell",
-    "slug": "jessica-ruth-bell",
-    "name": "Jessica Ruth Bell",
-    "tmdbPersonId": 3262387,
-    "photoUrl": "/images/people/3262387.webp",
-    "profileUrl": "/images/people/3262387.webp",
-    "birthday": "1998-12-06",
-    "placeOfBirth": "Los Angeles, California, USA",
-    "imdbPersonId": "nm10721627",
-    "gender": "Female",
-    "knownForDepartment": "Acting",
-    "knownCredits": 17,
-    "alsoKnownAs": [
-      "Jessica Bell",
-      "Jess Bell"
-    ],
-    "instagramId": "jessicaruthbell",
-    "twitterId": "jessicaruthbell",
-    "facebookId": "MagicJessBell",
-    "tmdbUpdatedAt": "2026-09-20T16:19:29.944Z"
   },
   {
     "id": "112369",
@@ -57232,10 +57253,10 @@
     "imdbPersonId": "nm4829898",
     "gender": "Male",
     "knownForDepartment": "Acting",
-    "knownCredits": 10,
+    "knownCredits": 11,
     "instagramId": "joeyheyworth",
-    "tmdbUpdatedAt": "2026-09-25T21:37:15.949Z",
-    "tmdbFetchedAt": "2026-09-25T21:37:15.949Z"
+    "tmdbUpdatedAt": "2026-10-04T07:59:55.819Z",
+    "tmdbFetchedAt": "2026-10-04T07:59:55.819Z"
   },
   {
     "id": "2663765",
@@ -57901,9 +57922,9 @@
     "imdbPersonId": "nm0409174",
     "gender": "Male",
     "knownForDepartment": "Acting",
-    "knownCredits": 47,
-    "tmdbUpdatedAt": "2026-10-01T10:14:41.754Z",
-    "tmdbFetchedAt": "2026-10-01T10:14:41.755Z"
+    "knownCredits": 48,
+    "tmdbUpdatedAt": "2026-10-04T08:00:03.409Z",
+    "tmdbFetchedAt": "2026-10-04T08:00:03.409Z"
   },
   {
     "id": "55554",
@@ -61587,10 +61608,11 @@
     "imdbPersonId": "nm0113935",
     "gender": "Female",
     "knownForDepartment": "Acting",
-    "knownCredits": 82,
+    "knownCredits": 83,
     "instagramId": "missjuliebrown",
     "twitterId": "missjuliebrown",
-    "tmdbUpdatedAt": "2026-09-21T13:15:19.169Z"
+    "tmdbUpdatedAt": "2026-10-04T08:00:34.624Z",
+    "tmdbFetchedAt": "2026-10-04T08:00:34.624Z"
   },
   {
     "id": "julie-davis",
@@ -61854,8 +61876,9 @@
     "imdbPersonId": "nm0820053",
     "gender": "Female",
     "knownForDepartment": "Acting",
-    "knownCredits": 95,
-    "tmdbUpdatedAt": "2026-09-20T16:20:32.497Z"
+    "knownCredits": 94,
+    "tmdbUpdatedAt": "2026-10-04T08:00:36.668Z",
+    "tmdbFetchedAt": "2026-10-04T08:00:36.668Z"
   },
   {
     "id": "junior-cius",
@@ -62391,6 +62414,7 @@
     "profileUrl": "/images/people/52936.webp",
     "birthday": "1984-07-19",
     "placeOfBirth": "Los Angeles County, California, USA",
+    "biography": "Kaitlin Doubleday (born 19 July 1984, Los Angeles, California) is an American actress, daughter of Frank Doubleday and Christina Hart, and sister of Portia Doubleday. In film, she has appeared in Catch Me If You Can (2002), Waiting... (2005), and Bad Man (2025). Her breakout role was Rhonda Lyon on Fox's Empire (2015–2018), and she joined the main cast of CMT's Nashville (2017–2018). She is married to Devin Lucien; they have one child.",
     "imdbPersonId": "nm1291974",
     "gender": "Female",
     "knownForDepartment": "Acting",
@@ -62401,7 +62425,8 @@
     ],
     "instagramId": "kaitlindday",
     "twitterId": "KaitlinDday",
-    "tmdbUpdatedAt": "2026-09-20T16:18:26.410Z"
+    "tmdbUpdatedAt": "2026-10-04T08:00:42.140Z",
+    "tmdbFetchedAt": "2026-10-04T08:00:42.140Z"
   },
   {
     "id": "kaitlin-morgan",
@@ -62839,15 +62864,15 @@
     "imdbPersonId": "nm0392228",
     "gender": "Female",
     "knownForDepartment": "Acting",
-    "knownCredits": 107,
+    "knownCredits": 108,
     "alsoKnownAs": [
       "Karen Holeness",
       "Karen R. Holness"
     ],
     "instagramId": "karen_holness",
     "twitterId": "KarenHolness",
-    "tmdbUpdatedAt": "2026-10-02T17:47:59.120Z",
-    "tmdbFetchedAt": "2026-10-02T17:47:59.120Z"
+    "tmdbUpdatedAt": "2026-10-04T08:00:45.696Z",
+    "tmdbFetchedAt": "2026-10-04T08:00:45.696Z"
   },
   {
     "id": "karen-khunkhun",
@@ -67758,13 +67783,13 @@
     "imdbPersonId": "nm14078766",
     "gender": "Male",
     "knownForDepartment": "Acting",
-    "knownCredits": 9,
+    "knownCredits": 8,
     "alsoKnownAs": [
       "Kowan Cadorath"
     ],
     "instagramId": "kcadorath",
-    "tmdbUpdatedAt": "2026-10-02T17:48:27.793Z",
-    "tmdbFetchedAt": "2026-10-02T17:48:27.793Z"
+    "tmdbUpdatedAt": "2026-10-04T08:01:26.643Z",
+    "tmdbFetchedAt": "2026-10-04T08:01:26.643Z"
   },
   {
     "id": "2034976",
@@ -76497,10 +76522,11 @@
     "imdbPersonId": "nm0396685",
     "gender": "Female",
     "knownForDepartment": "Acting",
-    "knownCredits": 83,
+    "knownCredits": 84,
     "instagramId": "sleepwalker413",
     "twitterId": "@MarciTHouse",
-    "tmdbUpdatedAt": "2026-09-20T16:17:11.382Z"
+    "tmdbUpdatedAt": "2026-10-04T08:02:44.900Z",
+    "tmdbFetchedAt": "2026-10-04T08:02:44.900Z"
   },
   {
     "id": "marcia-bennett",
@@ -78593,15 +78619,15 @@
     "imdbPersonId": "nm0005448",
     "gender": "Female",
     "knownForDepartment": "Acting",
-    "knownCredits": 62,
+    "knownCredits": 63,
     "alsoKnownAs": [
       "Marla Puro",
       "Marla Lynne Sokoloff"
     ],
     "instagramId": "marlasokoloff",
     "twitterId": "marlasok",
-    "tmdbUpdatedAt": "2026-10-01T09:27:34.043Z",
-    "tmdbFetchedAt": "2026-10-01T09:27:34.043Z"
+    "tmdbUpdatedAt": "2026-10-04T08:02:59.732Z",
+    "tmdbFetchedAt": "2026-10-04T08:02:59.732Z"
   },
   {
     "id": "marlea-cleveland",
@@ -79064,6 +79090,7 @@
     "tmdbPersonId": 52083,
     "photoUrl": "/images/people/52083.webp",
     "profileUrl": "/images/people/52083.webp",
+    "birthday": "1952-07-18",
     "placeOfBirth": "Toronto, Ontario, Canada",
     "imdbPersonId": "nm0236439",
     "gender": "Male",
@@ -79074,7 +79101,8 @@
       "Martin B. Doyle",
       "Martin P. Doyle"
     ],
-    "tmdbUpdatedAt": "2026-09-20T16:21:13.060Z"
+    "tmdbUpdatedAt": "2026-10-04T08:03:03.411Z",
+    "tmdbFetchedAt": "2026-10-04T08:03:03.411Z"
   },
   {
     "id": "martin-fisher",
@@ -83080,7 +83108,7 @@
     "imdbPersonId": "nm0541218",
     "gender": "Male",
     "knownForDepartment": "Acting",
-    "knownCredits": 159,
+    "knownCredits": 158,
     "alsoKnownAs": [
       "Clifford Smith",
       "Wu-Tang Clan",
@@ -83088,8 +83116,8 @@
     ],
     "instagramId": "methodmanofficial",
     "twitterId": "methodman",
-    "tmdbUpdatedAt": "2026-10-03T12:21:30.088Z",
-    "tmdbFetchedAt": "2026-10-03T12:21:30.088Z"
+    "tmdbUpdatedAt": "2026-10-04T08:03:37.497Z",
+    "tmdbFetchedAt": "2026-10-04T08:03:37.497Z"
   },
   {
     "id": "1110710",
@@ -83110,10 +83138,12 @@
     "tmdbPersonId": 2002169,
     "photoUrl": "/images/people/2002169.webp",
     "profileUrl": "/images/people/2002169.webp",
+    "imdbPersonId": "nm5629121",
     "gender": "Female",
     "knownForDepartment": "Acting",
     "knownCredits": 7,
-    "tmdbUpdatedAt": "2026-09-20T16:19:05.206Z"
+    "tmdbUpdatedAt": "2026-10-04T08:03:38.633Z",
+    "tmdbFetchedAt": "2026-10-04T08:03:38.633Z"
   },
   {
     "id": "mia-clark",
@@ -87359,8 +87389,9 @@
     "imdbPersonId": "nm10123413",
     "gender": "Female",
     "knownForDepartment": "Acting",
-    "knownCredits": 7,
-    "tmdbUpdatedAt": "2026-09-20T16:17:32.146Z"
+    "knownCredits": 8,
+    "tmdbUpdatedAt": "2026-10-04T08:04:14.692Z",
+    "tmdbFetchedAt": "2026-10-04T08:04:14.692Z"
   },
   {
     "id": "naheem-garcia",
@@ -93806,15 +93837,15 @@
     "imdbPersonId": "nm1193045",
     "gender": "Male",
     "knownForDepartment": "Acting",
-    "knownCredits": 128,
+    "knownCredits": 129,
     "alsoKnownAs": [
       "ピーター・ベンソン",
       "Питер Бенсон",
       "پیتر بنسون"
     ],
     "twitterId": "p_jbenson",
-    "tmdbUpdatedAt": "2026-09-25T20:54:37.646Z",
-    "tmdbFetchedAt": "2026-09-25T20:54:37.646Z"
+    "tmdbUpdatedAt": "2026-10-04T08:05:15.049Z",
+    "tmdbFetchedAt": "2026-10-04T08:05:15.049Z"
   },
   {
     "id": "peter-bou-ghannam",
@@ -95292,15 +95323,15 @@
     "imdbPersonId": "nm0000337",
     "gender": "Female",
     "knownForDepartment": "Acting",
-    "knownCredits": 101,
+    "knownCredits": 100,
     "alsoKnownAs": [
       "Rachael Gillies",
       "Rachel Leigh Cook"
     ],
     "instagramId": "rachaelleighcook",
     "twitterId": "rachaellcook",
-    "tmdbUpdatedAt": "2026-10-03T15:52:18.526Z",
-    "tmdbFetchedAt": "2026-10-03T15:52:18.526Z"
+    "tmdbUpdatedAt": "2026-10-04T08:05:26.905Z",
+    "tmdbFetchedAt": "2026-10-04T08:05:26.905Z"
   },
   {
     "id": "rachael-mclaren",
@@ -98649,9 +98680,9 @@
     "imdbPersonId": "nm0542492",
     "gender": "Male",
     "knownForDepartment": "Acting",
-    "knownCredits": 100,
-    "tmdbUpdatedAt": "2026-10-02T17:51:29.716Z",
-    "tmdbFetchedAt": "2026-10-02T17:51:29.716Z"
+    "knownCredits": 99,
+    "tmdbUpdatedAt": "2026-10-04T08:05:56.263Z",
+    "tmdbFetchedAt": "2026-10-04T08:05:56.263Z"
   },
   {
     "id": "roark-critchlow",
@@ -100995,15 +101026,15 @@
     "imdbPersonId": "nm0004067",
     "gender": "Male",
     "knownForDepartment": "Acting",
-    "knownCredits": 114,
+    "knownCredits": 115,
     "alsoKnownAs": [
       "Russell Yven",
       "Russell J. Yuen",
       "Russel Yuen",
       "袁罗素"
     ],
-    "tmdbUpdatedAt": "2026-10-01T10:20:39.977Z",
-    "tmdbFetchedAt": "2026-10-01T10:20:39.977Z"
+    "tmdbUpdatedAt": "2026-10-04T08:06:16.468Z",
+    "tmdbFetchedAt": "2026-10-04T08:06:16.468Z"
   },
   {
     "id": "rustin-gresiuk",
@@ -104547,14 +104578,15 @@
     "imdbPersonId": "nm0860690",
     "gender": "Male",
     "knownForDepartment": "Acting",
-    "knownCredits": 117,
+    "knownCredits": 118,
     "alsoKnownAs": [
       "스콧 톰프슨"
     ],
     "instagramId": "scottthompsoncomedy",
     "twitterId": "scottthompson_",
     "facebookId": "ScottThompsonComedy",
-    "tmdbUpdatedAt": "2026-09-21T12:58:50.461Z"
+    "tmdbUpdatedAt": "2026-10-04T08:06:49.198Z",
+    "tmdbFetchedAt": "2026-10-04T08:06:49.198Z"
   },
   {
     "id": "scott-wickware",
@@ -110014,9 +110046,9 @@
     "name": "Sullivan McIntyre",
     "tmdbPersonId": 5802703,
     "knownForDepartment": "Acting",
-    "knownCredits": 3,
-    "tmdbUpdatedAt": "2026-10-02T17:52:38.124Z",
-    "tmdbFetchedAt": "2026-10-02T17:52:38.124Z"
+    "knownCredits": 2,
+    "tmdbUpdatedAt": "2026-10-04T08:07:38.070Z",
+    "tmdbFetchedAt": "2026-10-04T08:07:38.070Z"
   },
   {
     "id": "54881",
@@ -110778,14 +110810,15 @@
     "imdbPersonId": "nm0671886",
     "gender": "Male",
     "knownForDepartment": "Acting",
-    "knownCredits": 78,
+    "knownCredits": 79,
     "alsoKnownAs": [
       "Tahmon Penhikett",
       "Ταχμοχ Πένικετ"
     ],
     "instagramId": "peniketttahmoh",
     "twitterId": "TahmohPenikett",
-    "tmdbUpdatedAt": "2026-09-20T16:19:03.060Z"
+    "tmdbUpdatedAt": "2026-10-04T08:07:45.421Z",
+    "tmdbFetchedAt": "2026-10-04T08:07:45.421Z"
   },
   {
     "id": "167781",
@@ -111601,7 +111634,7 @@
     "imdbPersonId": "nm0152839",
     "gender": "Female",
     "knownForDepartment": "Acting",
-    "knownCredits": 433,
+    "knownCredits": 434,
     "alsoKnownAs": [
       "Tara Lyn Strong",
       "Τάρα Στρονγκ",
@@ -111613,8 +111646,8 @@
     "instagramId": "tarastrong",
     "twitterId": "tarastrong",
     "facebookId": "TaraStrongOfficial",
-    "tmdbUpdatedAt": "2026-10-02T17:52:46.781Z",
-    "tmdbFetchedAt": "2026-10-02T17:52:46.781Z"
+    "tmdbUpdatedAt": "2026-10-04T08:07:52.329Z",
+    "tmdbFetchedAt": "2026-10-04T08:07:52.329Z"
   },
   {
     "id": "3987221",
@@ -113780,9 +113813,9 @@
     "imdbPersonId": "nm6760110",
     "gender": "Male",
     "knownForDepartment": "Acting",
-    "knownCredits": 11,
-    "tmdbUpdatedAt": "2026-10-03T21:31:38.377Z",
-    "tmdbFetchedAt": "2026-10-03T21:31:38.377Z"
+    "knownCredits": 12,
+    "tmdbUpdatedAt": "2026-10-04T08:08:12.264Z",
+    "tmdbFetchedAt": "2026-10-04T08:08:12.264Z"
   },
   {
     "id": "1286420",
@@ -113938,13 +113971,13 @@
     "imdbPersonId": "nm1152002",
     "gender": "Male",
     "knownForDepartment": "Acting",
-    "knownCredits": 63,
+    "knownCredits": 64,
     "alsoKnownAs": [
       "Timothy Perez-Ross",
       "Tim Ross"
     ],
-    "tmdbUpdatedAt": "2026-09-25T21:37:13.434Z",
-    "tmdbFetchedAt": "2026-09-25T21:37:13.434Z"
+    "tmdbUpdatedAt": "2026-10-04T08:08:14.410Z",
+    "tmdbFetchedAt": "2026-10-04T08:08:14.410Z"
   },
   {
     "id": "tim-progosh",
@@ -117967,9 +118000,9 @@
     "profileUrl": "/images/people/1613226.webp",
     "gender": "Male",
     "knownForDepartment": "Acting",
-    "knownCredits": 5,
-    "tmdbUpdatedAt": "2026-10-01T10:20:35.479Z",
-    "tmdbFetchedAt": "2026-10-01T10:20:35.479Z"
+    "knownCredits": 6,
+    "tmdbUpdatedAt": "2026-10-04T08:08:51.023Z",
+    "tmdbFetchedAt": "2026-10-04T08:08:51.023Z"
   },
   {
     "id": "vince-song",
