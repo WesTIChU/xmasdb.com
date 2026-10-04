@@ -23353,6 +23353,19 @@
     "tmdbUpdatedAt": "2026-09-20T16:16:45.142Z"
   },
   {
+    "id": "1415898",
+    "slug": "christopher-giroux",
+    "name": "Christopher Giroux",
+    "tmdbPersonId": 1415898,
+    "photoUrl": "/images/people/1415898.webp",
+    "profileUrl": "/images/people/1415898.webp",
+    "imdbPersonId": "nm2970706",
+    "knownForDepartment": "Production",
+    "knownCredits": 39,
+    "tmdbUpdatedAt": "2026-10-04T15:55:26.391Z",
+    "tmdbFetchedAt": "2026-10-04T15:55:26.391Z"
+  },
+  {
     "id": "62082",
     "slug": "christopher-goodman",
     "name": "Christopher Goodman",
@@ -26044,7 +26057,8 @@
     "gender": "Female",
     "knownForDepartment": "Writing",
     "knownCredits": 3,
-    "tmdbUpdatedAt": "2026-09-22T20:53:31.149Z"
+    "tmdbUpdatedAt": "2026-10-04T15:55:26.093Z",
+    "tmdbFetchedAt": "2026-10-04T15:55:26.093Z"
   },
   {
     "id": "2117291",
@@ -63472,7 +63486,8 @@
     "knownCredits": 38,
     "instagramId": "kate_drummond",
     "facebookId": "ActorKateDrummond",
-    "tmdbUpdatedAt": "2026-09-20T16:16:59.844Z"
+    "tmdbUpdatedAt": "2026-10-04T15:55:25.682Z",
+    "tmdbFetchedAt": "2026-10-04T15:55:25.682Z"
   },
   {
     "id": "304282",
@@ -64135,6 +64150,29 @@
     "instagramId": "the_kathryn_davis",
     "tmdbUpdatedAt": "2026-09-25T20:54:38.257Z",
     "tmdbFetchedAt": "2026-09-25T20:54:38.257Z"
+  },
+  {
+    "id": "162747",
+    "slug": "kathryn-greenwood",
+    "name": "Kathryn Greenwood",
+    "tmdbPersonId": 162747,
+    "photoUrl": "/images/people/162747.webp",
+    "profileUrl": "/images/people/162747.webp",
+    "birthday": "1962-03-21",
+    "placeOfBirth": "Scarborough, Ontario, Canada",
+    "biography": "Kathryn Greenwood is a Canadian actress and comedian. She appeared on the American version of Whose Line Is It Anyway? numerous times, and played Grace Bailey on the Canadian television drama series Wind at My Back.",
+    "imdbPersonId": "nm0339352",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 47,
+    "alsoKnownAs": [
+      "Kathy Greenwood"
+    ],
+    "instagramId": "kathryngreenwood",
+    "twitterId": "kathrynwfc",
+    "facebookId": "kathy.greenwood.714",
+    "tmdbUpdatedAt": "2026-10-04T15:55:26.007Z",
+    "tmdbFetchedAt": "2026-10-04T15:55:26.007Z"
   },
   {
     "id": "kathryn-kirkpatrick",
@@ -72940,6 +72978,19 @@
     "knownCredits": 82,
     "instagramId": "lisa_chandler_",
     "tmdbUpdatedAt": "2026-09-20T16:16:46.731Z"
+  },
+  {
+    "id": "2533447",
+    "slug": "lisa-cromarty",
+    "name": "Lisa Cromarty",
+    "tmdbPersonId": 2533447,
+    "photoUrl": "/images/people/2533447.webp",
+    "profileUrl": "/images/people/2533447.webp",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 13,
+    "tmdbUpdatedAt": "2026-10-04T15:55:26.072Z",
+    "tmdbFetchedAt": "2026-10-04T15:55:26.072Z"
   },
   {
     "id": "2565737",
@@ -88802,6 +88853,24 @@
     "knownCredits": 79,
     "tmdbUpdatedAt": "2026-10-02T17:50:31.566Z",
     "tmdbFetchedAt": "2026-10-02T17:50:31.566Z"
+  },
+  {
+    "id": "2497865",
+    "slug": "nelu-handa",
+    "name": "Nelu Handa",
+    "tmdbPersonId": 2497865,
+    "photoUrl": "/images/people/2497865.webp",
+    "profileUrl": "/images/people/2497865.webp",
+    "biography": "Nelu Handa is a Canadian actor, comedian and writer based in Toronto, Ontario.",
+    "imdbPersonId": "nm5482227",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 10,
+    "instagramId": "neluhanda",
+    "twitterId": "NeluHanda",
+    "facebookId": "neluhanda",
+    "tmdbUpdatedAt": "2026-10-04T15:55:26.075Z",
+    "tmdbFetchedAt": "2026-10-04T15:55:26.075Z"
   },
   {
     "id": "nevaeh-ashanti",
@@ -107697,6 +107766,26 @@
     "tmdbUpdatedAt": "2026-09-20T16:20:45.298Z"
   },
   {
+    "id": "3318616",
+    "slug": "skywalker-hughes",
+    "name": "Skywalker Hughes",
+    "tmdbPersonId": 3318616,
+    "photoUrl": "/images/people/3318616.webp",
+    "profileUrl": "/images/people/3318616.webp",
+    "birthday": "2011-10-27",
+    "placeOfBirth": "Toronto, Ontario, Canada",
+    "biography": "Skywalker Hughes, a dual American and Canadian citizen, found her love of acting at a very young age.\n\nHer professional career took off when she began auditioning and was almost immediately cast as Sheridan Pickett, a series regular, on the new Paramount Plus mystery series, Joe Pickett (2021).",
+    "imdbPersonId": "nm12468359",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 7,
+    "instagramId": "skywalker.hughes",
+    "twitterId": "SkywalkerHughes",
+    "facebookId": "skywalker.hughes",
+    "tmdbUpdatedAt": "2026-10-04T15:55:25.932Z",
+    "tmdbFetchedAt": "2026-10-04T15:55:25.932Z"
+  },
+  {
     "id": "4407688",
     "slug": "skyy-blair",
     "name": "Skyy Blair",
@@ -114178,6 +114267,16 @@
     "tmdbUpdatedAt": "2026-09-20T16:20:07.222Z"
   },
   {
+    "id": "2577365",
+    "slug": "tim-stubinski",
+    "name": "Tim Stubinski",
+    "tmdbPersonId": 2577365,
+    "knownForDepartment": "Writing",
+    "knownCredits": 2,
+    "tmdbUpdatedAt": "2026-10-04T15:55:26.147Z",
+    "tmdbFetchedAt": "2026-10-04T15:55:26.147Z"
+  },
+  {
     "id": "tim-threlfall",
     "slug": "tim-threlfall",
     "name": "Tim Threlfall",
@@ -116330,7 +116429,8 @@
     "tmdbPersonId": 5452697,
     "knownForDepartment": "Acting",
     "knownCredits": 9,
-    "tmdbUpdatedAt": "2026-09-20T16:16:46.271Z"
+    "tmdbUpdatedAt": "2026-10-04T15:55:25.814Z",
+    "tmdbFetchedAt": "2026-10-04T15:55:25.814Z"
   },
   {
     "id": "troy-blundell",
@@ -117322,7 +117422,8 @@
     "gender": "Female",
     "knownForDepartment": "Acting",
     "knownCredits": 54,
-    "tmdbUpdatedAt": "2026-09-20T16:18:18.091Z"
+    "tmdbUpdatedAt": "2026-10-04T15:55:25.536Z",
+    "tmdbFetchedAt": "2026-10-04T15:55:25.536Z"
   },
   {
     "id": "120617",

@@ -182660,6 +182660,191 @@ export const MOVIES: Movie[] = [
     "voteCount": 1,
     "tmdbUpdatedAt": "2026-10-04T15:54:33.093Z",
     "tmdbFetchedAt": "2026-10-04T15:54:33.093Z"
+  },
+  {
+    "id": "hallmark-2026-snowbound-for-the-holidays",
+    "slug": "snowbound-for-the-holidays",
+    "title": "Snowbound for the Holidays",
+    "year": 2026,
+    "brandId": "hallmark",
+    "releaseDate": "2026-07-18",
+    "synopsis": "Hotel manager Cassidy Evergreen evaluates a cozy ski lodge, but Christmas magic—and its charming owner, Trey Sanderson—turn a simple assignment into a heartfelt choice between duty and love.",
+    "posterUrl": "/images/posters/1570217.jpg",
+    "backdropUrl": "/images/backdrops/1570217.jpg",
+    "cast": [
+      {
+        "actorId": "52938",
+        "name": "Vanessa Lengies",
+        "character": "Cassidy Evergreen",
+        "slug": "vanessa-lengies",
+        "tmdbPersonId": 52938,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/yqnNHJsTQGVlkSN5phh9QShoXTm.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "1381537",
+        "name": "Marcus Rosner",
+        "character": "Trey Sanderson",
+        "slug": "marcus-rosner",
+        "tmdbPersonId": 1381537,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/2DQHSgA6LgR7ZTJpIEApT3TXCQx.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "162747",
+        "name": "Kathryn Greenwood",
+        "character": "Joanne Evergreen",
+        "slug": "kathryn-greenwood",
+        "tmdbPersonId": 162747,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/zVKcvl2SSFRBjKNK7ArJ9WEAQa8.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "44248",
+        "name": "Ron Lea",
+        "character": "Sam Linden",
+        "slug": "ron-lea",
+        "tmdbPersonId": 44248,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/jxSFEsvAOej3326HZG0KWPFc2NU.jpg",
+        "order": 3
+      },
+      {
+        "actorId": "3318616",
+        "name": "Skywalker Hughes",
+        "character": "Lilly Sanderson",
+        "slug": "skywalker-hughes",
+        "tmdbPersonId": 3318616,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/odWo2m7Xdcnw3WdxsZfvRBqbmY.jpg",
+        "order": 4
+      },
+      {
+        "actorId": "1216713",
+        "name": "Seán Cullen",
+        "character": "Dave Asherton",
+        "slug": "se-n-cullen",
+        "tmdbPersonId": 1216713,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/jPAYk01KVuMVgIQRDQyhq1S6jo8.jpg",
+        "order": 5
+      },
+      {
+        "actorId": "984711",
+        "name": "Kate Drummond",
+        "character": "Mayor Robinson",
+        "slug": "kate-drummond",
+        "tmdbPersonId": 984711,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/p3yXIxHI2zvgn2MI9yXaAvoTBHN.jpg",
+        "order": 6
+      },
+      {
+        "actorId": "2497865",
+        "name": "Nelu Handa",
+        "character": "Gabby",
+        "slug": "nelu-handa",
+        "tmdbPersonId": 2497865,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/hYWYpgdQCMa28slPxZftBXs6ff.jpg",
+        "order": 7
+      },
+      {
+        "actorId": "1825792",
+        "name": "Chris Farquhar",
+        "character": "Mark",
+        "slug": "chris-farquhar",
+        "tmdbPersonId": 1825792,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/ok3daTfwqe9b8kQNGldC3CEtNlU.jpg",
+        "order": 8
+      },
+      {
+        "actorId": "2533447",
+        "name": "Lisa Cromarty",
+        "character": "Mrs. Johnson",
+        "slug": "lisa-cromarty",
+        "tmdbPersonId": 2533447,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/7AZlJggHOJb1xAZ4UXwXBpA8YYU.jpg",
+        "order": 9
+      },
+      {
+        "actorId": "5452697",
+        "name": "Tristen Sky",
+        "character": "Linden Lodge Staff Member (uncredited)",
+        "slug": "tristen-sky",
+        "tmdbPersonId": 5452697,
+        "order": 10
+      }
+    ],
+    "director": "Christopher Giroux",
+    "tmdbId": 1570217,
+    "imdbId": "tt35287187",
+    "isComingSoon": false,
+    "status": "collection",
+    "originalTitle": "Snowbound for the Holidays",
+    "alternativeTitles": [
+      {
+        "title": "Uphill for Christmas",
+        "country": "CA"
+      }
+    ],
+    "runtimeMinutes": 84,
+    "genres": [
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      },
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "US",
+        "releaseDate": "2026-07-18T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "Hallmark"
+      }
+    ],
+    "crew": [
+      {
+        "id": 1415898,
+        "name": "Christopher Giroux",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/ztVscgZxP7yNmbwHcFcwhTgiMip.jpg",
+        "creditId": "699d8903fe2b4e82fe2aff80"
+      },
+      {
+        "id": 4315301,
+        "name": "Courtney McAllister",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "6a59147d79e675fc88572335"
+      },
+      {
+        "id": 2577365,
+        "name": "Tim Stubinski",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "6a5914898bad4eb294074842"
+      }
+    ],
+    "trailers": [
+      {
+        "key": "Xfz-eTQkF-g",
+        "site": "YouTube",
+        "type": "Trailer",
+        "name": "Preview | Snowbound for the Holidays | Starring Vanessa Lengies and Marcus Rosner",
+        "official": true
+      }
+    ],
+    "trailerYoutubeKey": "Xfz-eTQkF-g",
+    "voteAverage": 7,
+    "voteCount": 3,
+    "tmdbUpdatedAt": "2026-10-04T15:55:23.999Z",
+    "tmdbFetchedAt": "2026-10-04T15:55:23.999Z"
   }
 ];
 
