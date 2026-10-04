@@ -1721,6 +1721,11 @@ export const PROTOTYPE_MOVIE_FINGERPRINTS: Readonly<Record<string, readonly Fing
   "hallmark-2022-christmas-class-reunion": [
     "reunion"
   ],
+  "hallmark-2022-christmas-in-toyland": [
+    "save-the-business",
+    "toy-shop",
+    "workplace-romance"
+  ],
   "hallmark-2022-ghosts-of-christmas-always": [
     "ghost-spirit"
   ],
