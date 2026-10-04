@@ -2293,6 +2293,16 @@ export const PROTOTYPE_MOVIE_FINGERPRINTS: Readonly<Record<string, readonly Fing
     "widow-widower",
     "workplace-romance"
   ],
+  "hallmark-2026-love-under-the-mistletoe": [
+    "business-owner",
+    "family-business",
+    "hometown",
+    "old-flame",
+    "returns-home",
+    "reunion",
+    "second-chance",
+    "small-town"
+  ],
   "hallmark-2026-merry-memories": [
     "military",
     "parent-child",
