@@ -183841,6 +183841,781 @@ export const MOVIES: Movie[] = [
     "voteCount": 21,
     "tmdbUpdatedAt": "2026-10-04T16:19:08.050Z",
     "tmdbFetchedAt": "2026-10-04T16:19:08.050Z"
+  },
+  {
+    "id": "hallmark-2024-falling-like-snowflakes",
+    "slug": "falling-like-snowflakes",
+    "title": "Falling Like Snowflakes",
+    "year": 2024,
+    "brandId": "hallmark",
+    "releaseDate": "2024-06-29",
+    "synopsis": "A photographer determined to complete her exhibit by capturing a rare photo of a 12-sided snowflake, enlists the help of a childhood friend and they go on a mission they’ll never forget.",
+    "posterUrl": "/images/posters/1298472.jpg",
+    "backdropUrl": "/images/backdrops/1298472.jpg",
+    "cast": [
+      {
+        "actorId": "1355149",
+        "name": "Rebecca Dalton",
+        "character": "Teagan Ashley",
+        "slug": "rebecca-dalton",
+        "tmdbPersonId": 1355149,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/dTsw3WJImhlgsajfzQvkIxqyYD7.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "1381537",
+        "name": "Marcus Rosner",
+        "character": "Noah Cooper",
+        "slug": "marcus-rosner",
+        "tmdbPersonId": 1381537,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/2DQHSgA6LgR7ZTJpIEApT3TXCQx.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "3209971",
+        "name": "Ava Weiss",
+        "character": "Julie Cooper",
+        "slug": "ava-weiss",
+        "tmdbPersonId": 3209971,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/s8SewTOMnqaTruQZ7aeTg7btMoZ.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "1927496",
+        "name": "Madeline Leon",
+        "character": "Charlotte",
+        "slug": "madeline-leon",
+        "tmdbPersonId": 1927496,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/cDFtMp53Db8aOA0kom9aPInhOKX.jpg",
+        "order": 3
+      },
+      {
+        "actorId": "2773218",
+        "name": "Julia Dyan-Porter",
+        "character": "Suzanne",
+        "slug": "julia-dyan-porter",
+        "tmdbPersonId": 2773218,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/rfFRHwAFbcIK2zrhKdino8UyGql.jpg",
+        "order": 4
+      },
+      {
+        "actorId": "2120213",
+        "name": "Michael Gordin Shore",
+        "character": "Calvin Garrett",
+        "slug": "michael-gordin-shore",
+        "tmdbPersonId": 2120213,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/nTJBOF5bdKyBI8OdCPFXbyQqjak.jpg",
+        "order": 5
+      },
+      {
+        "actorId": "3824697",
+        "name": "Jayd Deroché",
+        "character": "Jayden",
+        "slug": "jayd-deroch",
+        "tmdbPersonId": 3824697,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/fkpHBXyfJtDDKnF3g1juWSzde6o.jpg",
+        "order": 6
+      }
+    ],
+    "director": "Max McGuire",
+    "tmdbId": 1298472,
+    "imdbId": "tt32622618",
+    "isComingSoon": false,
+    "status": "collection",
+    "originalTitle": "Falling Like Snowflakes",
+    "runtimeMinutes": 84,
+    "genres": [
+      {
+        "id": 10749,
+        "name": "Romance"
+      },
+      {
+        "id": 18,
+        "name": "Drama"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "FR",
+        "releaseDate": "2024-12-01T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "NRJ12"
+      },
+      {
+        "country": "US",
+        "releaseDate": "2024-06-29T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": ""
+      }
+    ],
+    "crew": [
+      {
+        "id": 1357879,
+        "name": "Bryar Freed",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "66726adaf5b4a5b6f390d602"
+      },
+      {
+        "id": 3264705,
+        "name": "Jennifer Snow",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "66726af28255cfcb1190d6ae"
+      },
+      {
+        "id": 1107266,
+        "name": "Max McGuire",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/5QOpuZ3ZgoWb7EVvJudtewKqSUJ.jpg",
+        "creditId": "66726acb8255cfcb1190d6aa"
+      }
+    ],
+    "trailers": [
+      {
+        "key": "PjM6tivLI3w",
+        "site": "YouTube",
+        "type": "Trailer",
+        "name": "Preview",
+        "official": true
+      }
+    ],
+    "trailerYoutubeKey": "PjM6tivLI3w",
+    "voteAverage": 5.9,
+    "voteCount": 16,
+    "tmdbUpdatedAt": "2026-10-04T16:24:11.719Z",
+    "tmdbFetchedAt": "2026-10-04T16:24:11.719Z"
+  },
+  {
+    "id": "hallmark-2023-rescuing-christmas",
+    "slug": "rescuing-christmas",
+    "title": "Rescuing Christmas",
+    "year": 2023,
+    "brandId": "hallmark",
+    "releaseDate": "2023-12-07",
+    "synopsis": "In a world where Santa is real and wants to drum up some holiday spirit, two of Santa’s elves, Chuck and Debbie, devise a plan to grant one human on Earth three wishes to kickstart the holidays. Unfortunately, that human is Erin, who has lost all affection for the season. Even a blind date set up by her sister, with the affable and charming Sam, won’t change her mind about Christmas. But when she makes the mistake of wishing Christmas would “just disappear,” Erin wakes up to a world where the holiday never existed! Horrified, she realizes that she’s taken away everyone’s joy, so she enlists Sam to help her reinvent the festivities from scratch. In the process, Erin learns just how much this holiday and its traditions have meant to everyone around her - and how much Sam has come to mean to her.",
+    "posterUrl": "/images/posters/1180656.jpg",
+    "backdropUrl": "/images/backdrops/1180656.jpg",
+    "cast": [
+      {
+        "actorId": "38581",
+        "name": "Rachael Leigh Cook",
+        "character": "Erin",
+        "slug": "rachael-leigh-cook",
+        "tmdbPersonId": 38581,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/3ylMsV6dqo5ojKjuMz9xvkEreAA.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "21429",
+        "name": "Sam Page",
+        "character": "Sam",
+        "slug": "sam-page",
+        "tmdbPersonId": 21429,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/6yza06QDrRoOXWxGd2AmYZw9e1u.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "3143200",
+        "name": "Bailey Stender",
+        "character": "Debbie",
+        "slug": "bailey-stender",
+        "tmdbPersonId": 3143200,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/70gkCvQ4ewOyfJHQaXi1CdKh9vW.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "75325",
+        "name": "Patrick Thomas O'Brien",
+        "character": "Chuck",
+        "slug": "patrick-thomas-o-brien",
+        "tmdbPersonId": 75325,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/qeICm4FZ8biLtLCHn9D4XU7IgMY.jpg",
+        "order": 3
+      },
+      {
+        "actorId": "3406080",
+        "name": "T. Mychael Rambo",
+        "character": "Santa",
+        "slug": "t-mychael-rambo",
+        "tmdbPersonId": 3406080,
+        "order": 4
+      },
+      {
+        "actorId": "5097375",
+        "name": "Kathryn Fumie",
+        "character": "Maria",
+        "slug": "kathryn-fumie",
+        "tmdbPersonId": 5097375,
+        "order": 5
+      },
+      {
+        "actorId": "2841169",
+        "name": "Rod Kasai",
+        "character": "Taylor",
+        "slug": "rod-kasai",
+        "tmdbPersonId": 2841169,
+        "order": 6
+      },
+      {
+        "actorId": "5097381",
+        "name": "Mika Flanagan",
+        "character": "Olivia",
+        "slug": "mika-flanagan",
+        "tmdbPersonId": 5097381,
+        "order": 7
+      },
+      {
+        "actorId": "2882823",
+        "name": "Melinda Kordich",
+        "character": "Diana",
+        "slug": "melinda-kordich",
+        "tmdbPersonId": 2882823,
+        "order": 8
+      },
+      {
+        "actorId": "5097385",
+        "name": "Chase Marcotte",
+        "character": "Jonah",
+        "slug": "chase-marcotte",
+        "tmdbPersonId": 5097385,
+        "order": 9
+      },
+      {
+        "actorId": "5097386",
+        "name": "Jim Cunningham",
+        "character": "Lou",
+        "slug": "jim-cunningham",
+        "tmdbPersonId": 5097386,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/q5YM6i9lFQReSe0NCEAcsJvv8qc.jpg",
+        "order": 10
+      },
+      {
+        "actorId": "142317",
+        "name": "Sarah Agnew",
+        "character": "Mayor",
+        "slug": "sarah-agnew",
+        "tmdbPersonId": 142317,
+        "order": 11
+      },
+      {
+        "actorId": "94625",
+        "name": "Greta Oglesby",
+        "character": "NP General Counsel",
+        "slug": "greta-oglesby",
+        "tmdbPersonId": 94625,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/Ac5ytI0l5xiYg8JrdXstZwJpuYe.jpg",
+        "order": 12
+      },
+      {
+        "actorId": "2877750",
+        "name": "Ahmed Mawas",
+        "character": "Archie",
+        "slug": "ahmed-mawas",
+        "tmdbPersonId": 2877750,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/7dvKuVcATqRPRtSDr9utrOKFz1Q.jpg",
+        "order": 13
+      },
+      {
+        "actorId": "4988444",
+        "name": "Agatha Rae Pokrzywinski",
+        "character": "Bakery Worker",
+        "slug": "agatha-rae-pokrzywinski",
+        "tmdbPersonId": 4988444,
+        "order": 14
+      },
+      {
+        "actorId": "5097389",
+        "name": "Rae Dastoor",
+        "character": "Bakery Owner",
+        "slug": "rae-dastoor",
+        "tmdbPersonId": 5097389,
+        "order": 15
+      },
+      {
+        "actorId": "5097390",
+        "name": "Jake Leider",
+        "character": "Radio Intern",
+        "slug": "jake-leider",
+        "tmdbPersonId": 5097390,
+        "order": 16
+      },
+      {
+        "actorId": "4279857",
+        "name": "Christina Goltare",
+        "character": "Town Square Shopper (uncredited)",
+        "slug": "christina-goltare",
+        "tmdbPersonId": 4279857,
+        "order": 17
+      },
+      {
+        "actorId": "1930372",
+        "name": "Gwen Ruhoff",
+        "character": "Elf Council member (uncredited)",
+        "slug": "gwen-ruhoff",
+        "tmdbPersonId": 1930372,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/tTCr7M9ZAN8QpaSt7U1566xsmNq.jpg",
+        "order": 18
+      },
+      {
+        "actorId": "1419079",
+        "name": "Dawan Scott",
+        "character": "Tree Ceremony Attendee (uncredited)",
+        "slug": "dawan-scott",
+        "tmdbPersonId": 1419079,
+        "order": 19
+      },
+      {
+        "actorId": "5204326",
+        "name": "Laura Judson",
+        "character": "Santa's Elf (uncredited)",
+        "slug": "laura-judson",
+        "tmdbPersonId": 5204326,
+        "order": 20
+      },
+      {
+        "actorId": "5222933",
+        "name": "Amy Jo Schmidt",
+        "character": "Elf Council Member (uncredited)",
+        "slug": "amy-jo-schmidt",
+        "tmdbPersonId": 5222933,
+        "order": 21
+      },
+      {
+        "actorId": "4865892",
+        "name": "Lucretia Stillwater",
+        "character": "Angry Woman in Jail (uncredited)",
+        "slug": "lucretia-stillwater",
+        "tmdbPersonId": 4865892,
+        "order": 22
+      }
+    ],
+    "director": "Emily Moss Wilson",
+    "tmdbId": 1180656,
+    "imdbId": "tt27491217",
+    "isComingSoon": false,
+    "status": "collection",
+    "originalTitle": "Rescuing Christmas",
+    "runtimeMinutes": 99,
+    "genres": [
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "FR",
+        "releaseDate": "2024-10-21T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "TF1"
+      },
+      {
+        "country": "US",
+        "releaseDate": "2023-12-07T00:00:00.000Z",
+        "type": 4,
+        "certification": "G",
+        "note": "Hallmark Movies Now"
+      }
+    ],
+    "crew": [
+      {
+        "id": 1718392,
+        "name": "Emily Moss Wilson",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/svf9V8OZBo1LdQNkAgapHlaBRqF.jpg",
+        "creditId": "6509aa5b3cd12c00ad8c768c"
+      },
+      {
+        "id": 951196,
+        "name": "Jim Head",
+        "job": "Writer",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/n5onSVPuaSceXFjcfSSm7P9RPiD.jpg",
+        "creditId": "6509aa6342d8a57e98a7abc7"
+      },
+      {
+        "id": 2246789,
+        "name": "Sarah Montana",
+        "job": "Writer",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/coiRsnoJSNxnhliaioILEYUxabH.jpg",
+        "creditId": "6509aa6bfa27f400caa5ab39"
+      }
+    ],
+    "trailers": [
+      {
+        "key": "aTnhRRXhdTs",
+        "site": "YouTube",
+        "type": "Trailer",
+        "name": "Preview",
+        "official": true
+      }
+    ],
+    "trailerYoutubeKey": "aTnhRRXhdTs",
+    "tagline": "A holiday rebel without a claus.",
+    "voteAverage": 7.1,
+    "voteCount": 19,
+    "tmdbUpdatedAt": "2026-10-04T16:24:11.759Z",
+    "tmdbFetchedAt": "2026-10-04T16:24:11.759Z"
+  },
+  {
+    "id": "hallmark-2024-a-very-vermont-christmas",
+    "slug": "a-very-vermont-christmas",
+    "title": "A Very Vermont Christmas",
+    "year": 2024,
+    "brandId": "hallmark",
+    "releaseDate": "2024-07-20",
+    "synopsis": "A local champion skier and Vermont brew master team up as an unlikely match to create a seasonal microbrew, in order to save her family’s business by Christmas.",
+    "posterUrl": "/images/posters/1298474.jpg",
+    "backdropUrl": "/images/backdrops/1298474.jpg",
+    "cast": [
+      {
+        "actorId": "84948",
+        "name": "Katie Leclerc",
+        "character": "Joy Keogh",
+        "slug": "katie-leclerc",
+        "tmdbPersonId": 84948,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/7OGbo7V1gw9i43ALLeva9SHdJqL.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "93031",
+        "name": "Ryan McPartlin",
+        "character": "Zac Chase",
+        "slug": "ryan-mcpartlin",
+        "tmdbPersonId": 93031,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/v0vKYfoSVLBEGBZ2ldjm3cHJwf3.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "1580086",
+        "name": "Joanna Herrington",
+        "character": "Mary Keogh",
+        "slug": "joanna-herrington",
+        "tmdbPersonId": 1580086,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/75A7TQ14CsrmLQLItyAwOhyEDNd.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "1048992",
+        "name": "John Forest",
+        "character": "Greg Harris",
+        "slug": "john-forest",
+        "tmdbPersonId": 1048992,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/4Ngq475FTpYk3CgW1y7CUEA6MCf.jpg",
+        "order": 3
+      },
+      {
+        "actorId": "4830169",
+        "name": "Ivan Cecil Walks",
+        "character": "Kevin",
+        "slug": "ivan-cecil-walks",
+        "tmdbPersonId": 4830169,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/1w5XK2d5ljXkriK1ylJN8QA8nay.jpg",
+        "order": 4
+      },
+      {
+        "actorId": "1452764",
+        "name": "David J. Curtis",
+        "character": "Bob Salimano",
+        "slug": "david-j-curtis",
+        "tmdbPersonId": 1452764,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/ufbJYNtiGs2qxpARsNxxVHD7JeW.jpg",
+        "order": 5
+      },
+      {
+        "actorId": "4830170",
+        "name": "Jenna Lea Scott",
+        "character": "Liftie Lucy",
+        "slug": "jenna-lea-scott",
+        "tmdbPersonId": 4830170,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/74yoqCWESI2mIM6xkqzcTN5S0Cg.jpg",
+        "order": 6
+      },
+      {
+        "actorId": "116295",
+        "name": "Brett Davern",
+        "character": "Ethan",
+        "slug": "brett-davern",
+        "tmdbPersonId": 116295,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/a2WEosnrvpGbdOu45bFa3T5UQg2.jpg",
+        "order": 7
+      },
+      {
+        "actorId": "3202071",
+        "name": "Kimaya Diggs",
+        "character": "Rosie",
+        "slug": "kimaya-diggs",
+        "tmdbPersonId": 3202071,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/j2Fhcm1Fi4cnsImhy4ctBgQ9yT5.jpg",
+        "order": 8
+      },
+      {
+        "actorId": "4989954",
+        "name": "Ethan Lavigne",
+        "character": "Contestant",
+        "slug": "ethan-lavigne",
+        "tmdbPersonId": 4989954,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/sXmltJlxDVIFq6vZsmSpb16Ze3c.jpg",
+        "order": 9
+      },
+      {
+        "actorId": "4830171",
+        "name": "Bob Amero",
+        "character": "Nathaniel Chase",
+        "slug": "bob-amero",
+        "tmdbPersonId": 4830171,
+        "order": 10
+      }
+    ],
+    "director": "John Stimpson",
+    "tmdbId": 1298474,
+    "imdbId": "tt32011613",
+    "isComingSoon": false,
+    "status": "collection",
+    "originalTitle": "A Very Vermont Christmas",
+    "alternativeTitles": [
+      {
+        "title": "Love is Brewing",
+        "country": "US"
+      },
+      {
+        "title": "Настоящее Рождество в Вермонте",
+        "country": "RU"
+      }
+    ],
+    "runtimeMinutes": 84,
+    "genres": [
+      {
+        "id": 10749,
+        "name": "Romance"
+      },
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "US",
+        "releaseDate": "2024-07-20T00:00:00.000Z",
+        "type": 6,
+        "certification": "G",
+        "note": "Hallmark"
+      }
+    ],
+    "crew": [
+      {
+        "id": 236510,
+        "name": "John Stimpson",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/zumegdf7MBJMa6GNqw9nVb99AwE.jpg",
+        "creditId": "66948798f1293f98686b4079"
+      },
+      {
+        "id": 1113492,
+        "name": "Steven Kent",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "6694879f75e62792205f5880"
+      },
+      {
+        "id": 2945758,
+        "name": "Pamela Rice",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "669487a60053f970c8899255"
+      }
+    ],
+    "trailers": [
+      {
+        "key": "-KGov6mBx5w",
+        "site": "YouTube",
+        "type": "Trailer",
+        "name": "Trailer",
+        "official": true
+      }
+    ],
+    "trailerYoutubeKey": "-KGov6mBx5w",
+    "voteAverage": 6.2,
+    "voteCount": 12,
+    "tmdbUpdatedAt": "2026-10-04T16:24:11.760Z",
+    "tmdbFetchedAt": "2026-10-04T16:24:11.760Z"
+  },
+  {
+    "id": "hallmark-2023-an-ice-palace-romance",
+    "slug": "an-ice-palace-romance",
+    "title": "An Ice Palace Romance",
+    "year": 2023,
+    "brandId": "hallmark",
+    "releaseDate": "2023-12-14",
+    "synopsis": "A journalist faces old fears when she returns to her hometown ice rink to cover a story. With the help of the owner and his young daughter, she begins to reevaluate her life's purpose.",
+    "posterUrl": "/images/posters/1180655.jpg",
+    "backdropUrl": "/images/backdrops/1180655.jpg",
+    "cast": [
+      {
+        "actorId": "1817018",
+        "name": "Celeste Desjardins",
+        "character": "Lori Mitchell",
+        "slug": "celeste-desjardins",
+        "tmdbPersonId": 1817018,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/hSu1hRAEwAVPDBEOKofo23IqkbC.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "1381537",
+        "name": "Marcus Rosner",
+        "character": "Mark Johnson",
+        "slug": "marcus-rosner",
+        "tmdbPersonId": 1381537,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/2DQHSgA6LgR7ZTJpIEApT3TXCQx.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "3098901",
+        "name": "Joey Coleman",
+        "character": "Chad Reynolds",
+        "slug": "joey-coleman",
+        "tmdbPersonId": 3098901,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/l8C9fLJ7Pu2wC7L4HsDxbat4lDE.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "2773218",
+        "name": "Julia Dyan-Porter",
+        "character": "Susan",
+        "slug": "julia-dyan-porter",
+        "tmdbPersonId": 2773218,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/rfFRHwAFbcIK2zrhKdino8UyGql.jpg",
+        "order": 3
+      },
+      {
+        "actorId": "2162211",
+        "name": "Jennie Esnard",
+        "character": "Dance Instructor",
+        "slug": "jennie-esnard",
+        "tmdbPersonId": 2162211,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/nTZIjhCJwcWclDaL6XOE1QeC4Dq.jpg",
+        "order": 4
+      },
+      {
+        "actorId": "2431913",
+        "name": "Kiril Mitev",
+        "character": "Ken",
+        "slug": "kiril-mitev",
+        "tmdbPersonId": 2431913,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/dD03CBh3592sqKb7mP8zID15nwO.jpg",
+        "order": 5
+      },
+      {
+        "actorId": "1616730",
+        "name": "Shannon McDonough",
+        "character": "Jen",
+        "slug": "shannon-mcdonough",
+        "tmdbPersonId": 1616730,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/wMvOUGwfy9GaO93FXETfOpFtbBw.jpg",
+        "order": 6
+      },
+      {
+        "actorId": "4224137",
+        "name": "Acacia Hanvelt",
+        "character": "Zoe Johnson",
+        "slug": "acacia-hanvelt",
+        "tmdbPersonId": 4224137,
+        "order": 7
+      },
+      {
+        "actorId": "4519645",
+        "name": "Mary Long",
+        "character": "Mayor June",
+        "slug": "mary-long",
+        "tmdbPersonId": 4519645,
+        "order": 8
+      }
+    ],
+    "director": "Shawna Steele",
+    "tmdbId": 1180655,
+    "imdbId": "tt29741889",
+    "isComingSoon": false,
+    "status": "collection",
+    "originalTitle": "An Ice Palace Romance",
+    "runtimeMinutes": 84,
+    "genres": [
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      },
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "CA",
+        "releaseDate": "2023-12-22T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "CTV Life Channel"
+      },
+      {
+        "country": "CA",
+        "releaseDate": "2024-02-14T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "Super Écran 1"
+      },
+      {
+        "country": "FR",
+        "releaseDate": "2024-11-07T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "TF1"
+      },
+      {
+        "country": "US",
+        "releaseDate": "2023-12-14T00:00:00.000Z",
+        "type": 4,
+        "certification": "G",
+        "note": "Hallmark Movies Now"
+      }
+    ],
+    "crew": [
+      {
+        "id": 2989750,
+        "name": "Shawna Steele",
+        "job": "Director",
+        "department": "Directing",
+        "creditId": "6567db88fb5299011f707b03"
+      },
+      {
+        "id": 4404001,
+        "name": "Andrew Daley",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "6567db9163536a00fe36eacd"
+      }
+    ],
+    "trailers": [],
+    "voteAverage": 6.3,
+    "voteCount": 15,
+    "tmdbUpdatedAt": "2026-10-04T16:24:12.765Z",
+    "tmdbFetchedAt": "2026-10-04T16:24:12.765Z"
   }
 ];
 

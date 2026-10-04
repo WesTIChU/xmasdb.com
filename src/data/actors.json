@@ -686,6 +686,16 @@
     "tmdbUpdatedAt": "2026-09-20T16:16:43.214Z"
   },
   {
+    "id": "4224137",
+    "slug": "acacia-hanvelt",
+    "name": "Acacia Hanvelt",
+    "tmdbPersonId": 4224137,
+    "knownForDepartment": "Acting",
+    "knownCredits": 2,
+    "tmdbUpdatedAt": "2026-10-04T16:24:16.910Z",
+    "tmdbFetchedAt": "2026-10-04T16:24:16.910Z"
+  },
+  {
     "id": "ace-ames",
     "slug": "ace-ames",
     "name": "Ace Ames",
@@ -1451,6 +1461,16 @@
     "tmdbUpdatedAt": "2026-09-20T16:20:24.111Z"
   },
   {
+    "id": "4988444",
+    "slug": "agatha-rae-pokrzywinski",
+    "name": "Agatha Rae Pokrzywinski",
+    "tmdbPersonId": 4988444,
+    "knownForDepartment": "Acting",
+    "knownCredits": 3,
+    "tmdbUpdatedAt": "2026-10-04T16:24:14.746Z",
+    "tmdbFetchedAt": "2026-10-04T16:24:14.746Z"
+  },
+  {
     "id": "ahman-green",
     "slug": "ahman-green",
     "name": "Ahman Green",
@@ -1472,6 +1492,27 @@
     "knownCredits": 5,
     "tmdbUpdatedAt": "2026-10-02T17:53:41.229Z",
     "tmdbFetchedAt": "2026-10-02T17:53:41.229Z"
+  },
+  {
+    "id": "2877750",
+    "slug": "ahmed-mawas",
+    "name": "Ahmed Mawas",
+    "tmdbPersonId": 2877750,
+    "photoUrl": "/images/people/2877750.webp",
+    "profileUrl": "/images/people/2877750.webp",
+    "placeOfBirth": "London, England, UK",
+    "biography": "Born in London, England and raised between Ghana and Lebanon, Ahmed Mawas relocated to the U.S. and attended the University of Minnesota, graduating with a degree in Electrical Engineering. After a successful modeling career with notable appearances in commercial and print campaigns such as Target, EcoLab and Best Buy, Mawas relocated to Los Angeles to pursue a career in film and television where he honed his craft studying at the Howard Fine Acting Studio. He has appeared in roles for streaming television series such as Netflix's \"The Recruit,\" Netflix's \"Human Resources\" and Amazon Prime's \"The Terminal List\" as well as the Renny Harlin directed feature \"The Misfits\" starring Pierce Brosnan. Mawas will next be seen starring opposite Rachael Leigh Cook in the Hallmark Channel holiday movie, \"Rescuing Christmas,\" out on December 7, 2023. Recent commercial appearances include GMC, Anytime Fitness and Verizon's Super bowl commercial.",
+    "imdbPersonId": "nm5425366",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 15,
+    "alsoKnownAs": [
+      "Ahmed El-Mawas"
+    ],
+    "instagramId": "ahmedmawasofficial",
+    "twitterId": "Ahmed_Mawas",
+    "tmdbUpdatedAt": "2026-10-04T16:24:15.046Z",
+    "tmdbFetchedAt": "2026-10-04T16:24:15.046Z"
   },
   {
     "id": "ai-barrett",
@@ -5511,6 +5552,16 @@
     "tmdbUpdatedAt": "2026-09-22T20:53:48.773Z"
   },
   {
+    "id": "5222933",
+    "slug": "amy-jo-schmidt",
+    "name": "Amy Jo Schmidt",
+    "tmdbPersonId": 5222933,
+    "knownForDepartment": "Acting",
+    "knownCredits": 5,
+    "tmdbUpdatedAt": "2026-10-04T16:24:15.196Z",
+    "tmdbFetchedAt": "2026-10-04T16:24:15.196Z"
+  },
+  {
     "id": "1716161",
     "slug": "amy-katherine-taylor",
     "name": "Amy Katherine Taylor",
@@ -6588,6 +6639,16 @@
     "knownCredits": 29,
     "tmdbUpdatedAt": "2026-10-04T16:15:04.469Z",
     "tmdbFetchedAt": "2026-10-04T16:15:04.469Z"
+  },
+  {
+    "id": "4404001",
+    "slug": "andrew-daley",
+    "name": "Andrew Daley",
+    "tmdbPersonId": 4404001,
+    "knownForDepartment": "Writing",
+    "knownCredits": 1,
+    "tmdbUpdatedAt": "2026-10-04T16:24:17.144Z",
+    "tmdbFetchedAt": "2026-10-04T16:24:17.144Z"
   },
   {
     "id": "998262",
@@ -11244,6 +11305,22 @@
     "tmdbUpdatedAt": "2026-09-20T16:19:16.043Z"
   },
   {
+    "id": "3143200",
+    "slug": "bailey-stender",
+    "name": "Bailey Stender",
+    "tmdbPersonId": 3143200,
+    "photoUrl": "/images/people/3143200.webp",
+    "profileUrl": "/images/people/3143200.webp",
+    "imdbPersonId": "nm10542584",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 9,
+    "instagramId": "baileystender",
+    "twitterId": "BaileyStender",
+    "tmdbUpdatedAt": "2026-10-04T16:24:14.509Z",
+    "tmdbFetchedAt": "2026-10-04T16:24:14.509Z"
+  },
+  {
     "id": "2318768",
     "slug": "baraka-rahmani",
     "name": "Baraka Rahmani",
@@ -13584,6 +13661,16 @@
     "tmdbUpdatedAt": "2026-09-21T13:00:20.822Z"
   },
   {
+    "id": "4830171",
+    "slug": "bob-amero",
+    "name": "Bob Amero",
+    "tmdbPersonId": 4830171,
+    "knownForDepartment": "Acting",
+    "knownCredits": 1,
+    "tmdbUpdatedAt": "2026-10-04T16:24:16.268Z",
+    "tmdbFetchedAt": "2026-10-04T16:24:16.268Z"
+  },
+  {
     "id": "bob-greenberg",
     "slug": "bob-greenberg",
     "name": "Bob Greenberg",
@@ -15140,6 +15227,23 @@
       "Breshae Renee Webb"
     ],
     "tmdbUpdatedAt": "2026-09-20T16:19:59.504Z"
+  },
+  {
+    "id": "116295",
+    "slug": "brett-davern",
+    "name": "Brett Davern",
+    "tmdbPersonId": 116295,
+    "photoUrl": "/images/people/116295.webp",
+    "profileUrl": "/images/people/116295.webp",
+    "birthday": "1992-03-16",
+    "imdbPersonId": "nm2044985",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 25,
+    "instagramId": "bdavv",
+    "twitterId": "BDavv",
+    "tmdbUpdatedAt": "2026-10-04T16:24:16.467Z",
+    "tmdbFetchedAt": "2026-10-04T16:24:16.467Z"
   },
   {
     "id": "brett-geddes",
@@ -20394,7 +20498,8 @@
     "alsoKnownAs": [
       "Céleste Penelope Marie Desjardins"
     ],
-    "tmdbUpdatedAt": "2026-09-20T16:20:08.925Z"
+    "tmdbUpdatedAt": "2026-10-04T16:24:16.754Z",
+    "tmdbFetchedAt": "2026-10-04T16:24:16.754Z"
   },
   {
     "id": "celeste-oliva",
@@ -21451,6 +21556,16 @@
     "knownForDepartment": "Acting",
     "knownCredits": 6,
     "tmdbUpdatedAt": "2026-09-20T16:19:24.567Z"
+  },
+  {
+    "id": "5097385",
+    "slug": "chase-marcotte",
+    "name": "Chase Marcotte",
+    "tmdbPersonId": 5097385,
+    "knownForDepartment": "Acting",
+    "knownCredits": 1,
+    "tmdbUpdatedAt": "2026-10-04T16:24:14.506Z",
+    "tmdbFetchedAt": "2026-10-04T16:24:14.506Z"
   },
   {
     "id": "chase-winnicky",
@@ -23007,6 +23122,17 @@
     "instagramId": "christinsypark",
     "twitterId": "christinsypark",
     "tmdbUpdatedAt": "2026-09-20T16:16:40.613Z"
+  },
+  {
+    "id": "4279857",
+    "slug": "christina-goltare",
+    "name": "Christina Goltare",
+    "tmdbPersonId": 4279857,
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 2,
+    "tmdbUpdatedAt": "2026-10-04T16:24:14.977Z",
+    "tmdbFetchedAt": "2026-10-04T16:24:14.977Z"
   },
   {
     "id": "christina-jastrzembska",
@@ -29913,6 +30039,25 @@
     "tmdbFetchedAt": "2026-09-25T18:44:25.099Z"
   },
   {
+    "id": "1452764",
+    "slug": "david-j-curtis",
+    "name": "David J. Curtis",
+    "tmdbPersonId": 1452764,
+    "photoUrl": "/images/people/1452764.webp",
+    "profileUrl": "/images/people/1452764.webp",
+    "birthday": "1979-12-20",
+    "placeOfBirth": "Boston, Massachusetts, United States",
+    "biography": "David J. Curtis film and television credits include principal roles in The Forger, Diamond Ruff, Gloveless, R.I.P.D., 4 Cambridge Center, Stories for Dinner, The Maiden Heist, Under The Hood, Edge of Darkness, How to Make it in America, Clear History, and The Makeover.",
+    "imdbPersonId": "nm0193313",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 14,
+    "instagramId": "davidjcurtisproductions",
+    "facebookId": "Mr.David.J.Curtis",
+    "tmdbUpdatedAt": "2026-10-04T16:24:16.031Z",
+    "tmdbFetchedAt": "2026-10-04T16:24:16.031Z"
+  },
+  {
     "id": "david-j-rivera",
     "slug": "david-j-rivera",
     "name": "David J. Rivera",
@@ -30557,6 +30702,18 @@
     "knownForDepartment": "Acting",
     "knownCredits": 13,
     "tmdbUpdatedAt": "2026-09-20T16:20:40.155Z"
+  },
+  {
+    "id": "1419079",
+    "slug": "dawan-scott",
+    "name": "Dawan Scott",
+    "tmdbPersonId": 1419079,
+    "imdbPersonId": "nm0779042",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 11,
+    "tmdbUpdatedAt": "2026-10-04T16:24:15.109Z",
+    "tmdbFetchedAt": "2026-10-04T16:24:15.109Z"
   },
   {
     "id": "dawn-aneada",
@@ -37420,7 +37577,8 @@
     ],
     "instagramId": "emilymosswilson",
     "twitterId": "emosswilson",
-    "tmdbUpdatedAt": "2026-09-22T20:53:21.930Z"
+    "tmdbUpdatedAt": "2026-10-04T16:24:15.366Z",
+    "tmdbFetchedAt": "2026-10-04T16:24:15.366Z"
   },
   {
     "id": "emily-mossey",
@@ -39300,6 +39458,24 @@
     "knownForDepartment": "Acting",
     "knownCredits": 1,
     "tmdbUpdatedAt": "2026-09-22T09:34:07.785Z"
+  },
+  {
+    "id": "4989954",
+    "slug": "ethan-lavigne",
+    "name": "Ethan Lavigne",
+    "tmdbPersonId": 4989954,
+    "photoUrl": "/images/people/4989954.webp",
+    "profileUrl": "/images/people/4989954.webp",
+    "birthday": "2006-01-10",
+    "placeOfBirth": "Worcester, Massachusetts, USA",
+    "biography": "Ethan Lavigne is an American Film Writer and Director. Attends the Savannah College Of Art And Design with a major in Film and Television and a minor in Dramatic Writing for screenplays. Has also written many screenplays and stage plays. Also has a Film Production Company brand known as \"Lavigne Films\"",
+    "imdbPersonId": "nm13695574",
+    "gender": "Male",
+    "knownForDepartment": "Directing",
+    "knownCredits": 7,
+    "instagramId": "lavignefilms",
+    "tmdbUpdatedAt": "2026-10-04T16:24:16.548Z",
+    "tmdbFetchedAt": "2026-10-04T16:24:16.548Z"
   },
   {
     "id": "2844477",
@@ -44717,6 +44893,19 @@
     "tmdbFetchedAt": "2026-10-01T14:12:23.816Z"
   },
   {
+    "id": "94625",
+    "slug": "greta-oglesby",
+    "name": "Greta Oglesby",
+    "tmdbPersonId": 94625,
+    "photoUrl": "/images/people/94625.webp",
+    "profileUrl": "/images/people/94625.webp",
+    "imdbPersonId": "nm0644747",
+    "knownForDepartment": "Acting",
+    "knownCredits": 6,
+    "tmdbUpdatedAt": "2026-10-04T16:24:15.050Z",
+    "tmdbFetchedAt": "2026-10-04T16:24:15.050Z"
+  },
+  {
     "id": "greta-scacchi",
     "slug": "greta-scacchi",
     "name": "Greta Scacchi",
@@ -44947,6 +45136,21 @@
     "knownForDepartment": "Acting",
     "knownCredits": 2,
     "tmdbUpdatedAt": "2026-09-20T16:17:52.449Z"
+  },
+  {
+    "id": "1930372",
+    "slug": "gwen-ruhoff",
+    "name": "Gwen Ruhoff",
+    "tmdbPersonId": 1930372,
+    "photoUrl": "/images/people/1930372.webp",
+    "profileUrl": "/images/people/1930372.webp",
+    "placeOfBirth": "Sauk Rapids, Minnesota, USA",
+    "imdbPersonId": "nm6315188",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 11,
+    "tmdbUpdatedAt": "2026-10-04T16:24:15.470Z",
+    "tmdbFetchedAt": "2026-10-04T16:24:15.470Z"
   },
   {
     "id": "gwen-van-dam",
@@ -48309,6 +48513,19 @@
     "tmdbFetchedAt": "2026-09-25T20:54:38.191Z"
   },
   {
+    "id": "4830169",
+    "slug": "ivan-cecil-walks",
+    "name": "Ivan Cecil Walks",
+    "tmdbPersonId": 4830169,
+    "photoUrl": "/images/people/4830169.webp",
+    "profileUrl": "/images/people/4830169.webp",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 1,
+    "tmdbUpdatedAt": "2026-10-04T16:24:16.142Z",
+    "tmdbFetchedAt": "2026-10-04T16:24:16.142Z"
+  },
+  {
     "id": "ivan-walters",
     "slug": "ivan-walters",
     "name": "Ivan Walters",
@@ -49743,6 +49960,16 @@
     "facebookId": "jake.helgren",
     "tmdbUpdatedAt": "2026-10-01T13:48:10.259Z",
     "tmdbFetchedAt": "2026-10-01T13:48:10.259Z"
+  },
+  {
+    "id": "5097390",
+    "slug": "jake-leider",
+    "name": "Jake Leider",
+    "tmdbPersonId": 5097390,
+    "knownForDepartment": "Acting",
+    "knownCredits": 1,
+    "tmdbUpdatedAt": "2026-10-04T16:24:14.874Z",
+    "tmdbFetchedAt": "2026-10-04T16:24:14.874Z"
   },
   {
     "id": "jake-manley",
@@ -52589,7 +52816,8 @@
     "alsoKnownAs": [
       "Jayd Deroche"
     ],
-    "tmdbUpdatedAt": "2026-09-20T16:17:25.092Z"
+    "tmdbUpdatedAt": "2026-10-04T16:24:14.201Z",
+    "tmdbFetchedAt": "2026-10-04T16:24:14.201Z"
   },
   {
     "id": "1152073",
@@ -53614,6 +53842,19 @@
     "tmdbUpdatedAt": "2026-09-20T16:17:58.453Z"
   },
   {
+    "id": "4830170",
+    "slug": "jenna-lea-scott",
+    "name": "Jenna Lea Scott",
+    "tmdbPersonId": 4830170,
+    "photoUrl": "/images/people/4830170.webp",
+    "profileUrl": "/images/people/4830170.webp",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 1,
+    "tmdbUpdatedAt": "2026-10-04T16:24:16.420Z",
+    "tmdbFetchedAt": "2026-10-04T16:24:16.420Z"
+  },
+  {
     "id": "jenna-mccarty",
     "slug": "jenna-mccarty",
     "name": "Jenna McCarty",
@@ -53720,7 +53961,8 @@
     "gender": "Female",
     "knownForDepartment": "Acting",
     "knownCredits": 9,
-    "tmdbUpdatedAt": "2026-09-20T16:17:35.797Z"
+    "tmdbUpdatedAt": "2026-10-04T16:24:16.786Z",
+    "tmdbFetchedAt": "2026-10-04T16:24:16.786Z"
   },
   {
     "id": "jennie-garth",
@@ -56323,6 +56565,18 @@
     "tmdbFetchedAt": "2026-10-01T09:27:20.719Z"
   },
   {
+    "id": "5097386",
+    "slug": "jim-cunningham",
+    "name": "Jim Cunningham",
+    "tmdbPersonId": 5097386,
+    "photoUrl": "/images/people/5097386.webp",
+    "profileUrl": "/images/people/5097386.webp",
+    "knownForDepartment": "Acting",
+    "knownCredits": 2,
+    "tmdbUpdatedAt": "2026-10-04T16:24:15.101Z",
+    "tmdbFetchedAt": "2026-10-04T16:24:15.101Z"
+  },
+  {
     "id": "jim-ewens",
     "slug": "jim-ewens",
     "name": "Jim Ewens",
@@ -56362,7 +56616,8 @@
     "gender": "Male",
     "knownForDepartment": "Production",
     "knownCredits": 53,
-    "tmdbUpdatedAt": "2026-09-22T20:53:24.918Z"
+    "tmdbUpdatedAt": "2026-10-04T16:24:15.427Z",
+    "tmdbFetchedAt": "2026-10-04T16:24:15.427Z"
   },
   {
     "id": "jim-kelly",
@@ -56738,7 +56993,8 @@
     "gender": "Female",
     "knownForDepartment": "Acting",
     "knownCredits": 17,
-    "tmdbUpdatedAt": "2026-09-20T16:20:43.286Z"
+    "tmdbUpdatedAt": "2026-10-04T16:24:15.811Z",
+    "tmdbFetchedAt": "2026-10-04T16:24:15.811Z"
   },
   {
     "id": "joanna-howard",
@@ -57472,6 +57728,24 @@
     "tmdbFetchedAt": "2026-10-01T14:12:22.720Z"
   },
   {
+    "id": "3098901",
+    "slug": "joey-coleman",
+    "name": "Joey Coleman",
+    "tmdbPersonId": 3098901,
+    "photoUrl": "/images/people/3098901.webp",
+    "profileUrl": "/images/people/3098901.webp",
+    "imdbPersonId": "nm5842100",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 10,
+    "alsoKnownAs": [
+      "Joseph John Coleman"
+    ],
+    "instagramId": "joeycoleman90",
+    "tmdbUpdatedAt": "2026-10-04T16:24:17.127Z",
+    "tmdbFetchedAt": "2026-10-04T16:24:17.127Z"
+  },
+  {
     "id": "4716697",
     "slug": "joey-depaolo",
     "name": "Joey DePaolo",
@@ -58099,6 +58373,20 @@
     "tmdbFetchedAt": "2026-10-01T10:07:25.987Z"
   },
   {
+    "id": "1048992",
+    "slug": "john-forest",
+    "name": "John Forest",
+    "tmdbPersonId": 1048992,
+    "photoUrl": "/images/people/1048992.webp",
+    "profileUrl": "/images/people/1048992.webp",
+    "imdbPersonId": "nm2256221",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 19,
+    "tmdbUpdatedAt": "2026-10-04T16:24:15.979Z",
+    "tmdbFetchedAt": "2026-10-04T16:24:15.979Z"
+  },
+  {
     "id": "john-forker",
     "slug": "john-forker",
     "name": "John Forker",
@@ -58611,7 +58899,8 @@
     "gender": "Male",
     "knownForDepartment": "Directing",
     "knownCredits": 26,
-    "tmdbUpdatedAt": "2026-09-21T14:35:29.468Z"
+    "tmdbUpdatedAt": "2026-10-04T16:24:16.478Z",
+    "tmdbFetchedAt": "2026-10-04T16:24:16.478Z"
   },
   {
     "id": "john-stimpson-jr",
@@ -61419,6 +61708,25 @@
     "knownForDepartment": "Acting",
     "knownCredits": 75,
     "tmdbUpdatedAt": "2026-09-20T16:18:26.855Z"
+  },
+  {
+    "id": "2773218",
+    "slug": "julia-dyan-porter",
+    "name": "Julia Dyan-Porter",
+    "tmdbPersonId": 2773218,
+    "photoUrl": "/images/people/2773218.webp",
+    "profileUrl": "/images/people/2773218.webp",
+    "biography": "Julia was born in a small neighbourhood called Meadowvale, located in Ontario, Canada. She is now a Toronto-based actor, stunt performer and stage combat instructor specializing in Western Swordplay. She studied acting at The Stella Adler School of Acting in New York City, and attended the Physical Theatre program at Humber College in Toronto. Julia is co-founder of Violence in Motion, a film/stage combat training facility for performers. She has a Golden Retriever named Lt. Ripley, named after Sigourney Weaver's character in \"Alien.\"",
+    "imdbPersonId": "nm6596476",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 17,
+    "alsoKnownAs": [
+      "Julia Dyan",
+      "Julia Porter"
+    ],
+    "tmdbUpdatedAt": "2026-10-04T16:24:14.381Z",
+    "tmdbFetchedAt": "2026-10-04T16:24:14.381Z"
   },
   {
     "id": "1540128",
@@ -64386,6 +64694,16 @@
     "tmdbFetchedAt": "2026-09-25T20:54:38.257Z"
   },
   {
+    "id": "5097375",
+    "slug": "kathryn-fumie",
+    "name": "Kathryn Fumie",
+    "tmdbPersonId": 5097375,
+    "knownForDepartment": "Acting",
+    "knownCredits": 1,
+    "tmdbUpdatedAt": "2026-10-04T16:24:14.324Z",
+    "tmdbFetchedAt": "2026-10-04T16:24:14.324Z"
+  },
+  {
     "id": "162747",
     "slug": "kathryn-greenwood",
     "name": "Kathryn Greenwood",
@@ -64714,7 +65032,8 @@
     ],
     "instagramId": "katieleclerc",
     "twitterId": "katieleclerc",
-    "tmdbUpdatedAt": "2026-09-20T16:17:30.347Z"
+    "tmdbUpdatedAt": "2026-10-04T16:24:15.490Z",
+    "tmdbFetchedAt": "2026-10-04T16:24:15.490Z"
   },
   {
     "id": "katie-mccarty",
@@ -67569,6 +67888,19 @@
     "tmdbUpdatedAt": "2026-09-20T16:20:06.099Z"
   },
   {
+    "id": "3202071",
+    "slug": "kimaya-diggs",
+    "name": "Kimaya Diggs",
+    "tmdbPersonId": 3202071,
+    "photoUrl": "/images/people/3202071.webp",
+    "profileUrl": "/images/people/3202071.webp",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 2,
+    "tmdbUpdatedAt": "2026-10-04T16:24:16.859Z",
+    "tmdbFetchedAt": "2026-10-04T16:24:16.859Z"
+  },
+  {
     "id": "5170007",
     "slug": "kimberley-kim",
     "name": "Kimberley Kim",
@@ -67904,6 +68236,23 @@
     "knownForDepartment": "Acting",
     "knownCredits": 2,
     "tmdbUpdatedAt": "2026-09-22T20:53:48.726Z"
+  },
+  {
+    "id": "2431913",
+    "slug": "kiril-mitev",
+    "name": "Kiril Mitev",
+    "tmdbPersonId": 2431913,
+    "photoUrl": "/images/people/2431913.webp",
+    "profileUrl": "/images/people/2431913.webp",
+    "placeOfBirth": "Sofia, Bulgaria",
+    "imdbPersonId": "nm9937232",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 4,
+    "instagramId": "itskiril",
+    "twitterId": "KirilMitev",
+    "tmdbUpdatedAt": "2026-10-04T16:24:17.324Z",
+    "tmdbFetchedAt": "2026-10-04T16:24:17.324Z"
   },
   {
     "id": "1455179",
@@ -70286,6 +70635,16 @@
     "knownForDepartment": "Acting",
     "knownCredits": 13,
     "tmdbUpdatedAt": "2026-09-20T16:16:56.544Z"
+  },
+  {
+    "id": "5204326",
+    "slug": "laura-judson",
+    "name": "Laura Judson",
+    "tmdbPersonId": 5204326,
+    "knownForDepartment": "Acting",
+    "knownCredits": 2,
+    "tmdbUpdatedAt": "2026-10-04T16:24:15.249Z",
+    "tmdbFetchedAt": "2026-10-04T16:24:15.249Z"
   },
   {
     "id": "laura-lyall",
@@ -74734,6 +75093,17 @@
     "tmdbFetchedAt": "2026-10-01T10:20:44.755Z"
   },
   {
+    "id": "4865892",
+    "slug": "lucretia-stillwater",
+    "name": "Lucretia Stillwater",
+    "tmdbPersonId": 4865892,
+    "imdbPersonId": "nm8037215",
+    "knownForDepartment": "Acting",
+    "knownCredits": 3,
+    "tmdbUpdatedAt": "2026-10-04T16:24:15.245Z",
+    "tmdbFetchedAt": "2026-10-04T16:24:15.245Z"
+  },
+  {
     "id": "9300",
     "slug": "lucy-butler",
     "name": "Lucy Butler",
@@ -75940,7 +76310,8 @@
     "gender": "Female",
     "knownForDepartment": "Acting",
     "knownCredits": 17,
-    "tmdbUpdatedAt": "2026-09-21T12:59:24.839Z"
+    "tmdbUpdatedAt": "2026-10-04T16:24:14.038Z",
+    "tmdbFetchedAt": "2026-10-04T16:24:14.038Z"
   },
   {
     "id": "madeline-mast",
@@ -79942,6 +80313,17 @@
     "tmdbFetchedAt": "2026-10-01T10:14:45.947Z"
   },
   {
+    "id": "4519645",
+    "slug": "mary-long",
+    "name": "Mary Long",
+    "tmdbPersonId": 4519645,
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 1,
+    "tmdbUpdatedAt": "2026-10-04T16:24:16.987Z",
+    "tmdbFetchedAt": "2026-10-04T16:24:16.987Z"
+  },
+  {
     "id": "2136931",
     "slug": "mary-o-neil",
     "name": "Mary O'Neil",
@@ -82919,6 +83301,16 @@
     "knownForDepartment": "Writing",
     "knownCredits": 1,
     "tmdbUpdatedAt": "2026-09-22T20:53:46.215Z"
+  },
+  {
+    "id": "2882823",
+    "slug": "melinda-kordich",
+    "name": "Melinda Kordich",
+    "tmdbPersonId": 2882823,
+    "knownForDepartment": "Acting",
+    "knownCredits": 5,
+    "tmdbUpdatedAt": "2026-10-04T16:24:14.468Z",
+    "tmdbFetchedAt": "2026-10-04T16:24:14.468Z"
   },
   {
     "id": "melinda-michael",
@@ -85986,6 +86378,16 @@
     "knownCredits": 27,
     "tmdbUpdatedAt": "2026-10-01T10:28:03.558Z",
     "tmdbFetchedAt": "2026-10-01T10:28:03.558Z"
+  },
+  {
+    "id": "5097381",
+    "slug": "mika-flanagan",
+    "name": "Mika Flanagan",
+    "tmdbPersonId": 5097381,
+    "knownForDepartment": "Acting",
+    "knownCredits": 1,
+    "tmdbUpdatedAt": "2026-10-04T16:24:14.463Z",
+    "tmdbFetchedAt": "2026-10-04T16:24:14.463Z"
   },
   {
     "id": "mikaela-bisson",
@@ -92153,6 +92555,16 @@
     "tmdbUpdatedAt": "2026-09-20T16:16:34.068Z"
   },
   {
+    "id": "2945758",
+    "slug": "pamela-rice",
+    "name": "Pamela Rice",
+    "tmdbPersonId": 2945758,
+    "knownForDepartment": "Camera",
+    "knownCredits": 5,
+    "tmdbUpdatedAt": "2026-10-04T16:24:16.662Z",
+    "tmdbFetchedAt": "2026-10-04T16:24:16.662Z"
+  },
+  {
     "id": "pamela-rose-mangus",
     "slug": "pamela-rose-mangus",
     "name": "Pamela Rose Mangus",
@@ -93145,6 +93557,27 @@
     "instagramId": "patricksabongui",
     "twitterId": "PatrickSabongui",
     "tmdbUpdatedAt": "2026-09-20T16:18:02.199Z"
+  },
+  {
+    "id": "75325",
+    "slug": "patrick-thomas-o-brien",
+    "name": "Patrick Thomas O'Brien",
+    "tmdbPersonId": 75325,
+    "photoUrl": "/images/people/75325.webp",
+    "profileUrl": "/images/people/75325.webp",
+    "birthday": "1951-01-26",
+    "placeOfBirth": "Wisconsin, USA",
+    "imdbPersonId": "nm0639403",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 70,
+    "alsoKnownAs": [
+      "Patrick T. O'Brien",
+      "Patrick O'Brien",
+      "P. O'Brien"
+    ],
+    "tmdbUpdatedAt": "2026-10-04T16:24:14.689Z",
+    "tmdbFetchedAt": "2026-10-04T16:24:14.689Z"
   },
   {
     "id": "patrika-darbo",
@@ -96225,6 +96658,22 @@
     "tmdbFetchedAt": "2026-10-01T10:20:45.877Z"
   },
   {
+    "id": "5097389",
+    "slug": "rae-dastoor",
+    "name": "Rae Dastoor",
+    "tmdbPersonId": 5097389,
+    "biography": "I grew up in Duluth, MN. A town known for its humbling and character-building winters :)\n\nAs an actress of mixed ethnicity, diverse representation is extremely important to me in my creative process. I aspire to make art that is inclusive and reflects the diversity of the people who will be watching it.\n\nWhen I was 5 years old, I attended a touring production of The Lion King. Upon experiencing the opening number, I hopped up and began walking towards the stage. At which point, my mother had to intervene. When asked the question \"What are you doing?\" I pointed at the stage and said, \"I'm going up there.\"  I began my career in the arts at 5 years old in local children's theatre. Now, I am a graduate of the BFA Acting program at Point Park University, and I have been able to dive deep into my craft. Today, I specialize in film and on-camera work.--Dastoor",
+    "imdbPersonId": "nm15532178",
+    "knownForDepartment": "Acting",
+    "knownCredits": 3,
+    "alsoKnownAs": [
+      "Ciera Dastoor"
+    ],
+    "instagramId": "rae.dastoor",
+    "tmdbUpdatedAt": "2026-10-04T16:24:14.827Z",
+    "tmdbFetchedAt": "2026-10-04T16:24:14.827Z"
+  },
+  {
     "id": "rae-serbeck",
     "slug": "rae-serbeck",
     "name": "Rae Serbeck",
@@ -97051,7 +97500,8 @@
       "Becky Dalton"
     ],
     "instagramId": "beckyjhinch",
-    "tmdbUpdatedAt": "2026-09-21T12:51:45.669Z"
+    "tmdbUpdatedAt": "2026-10-04T16:24:14.066Z",
+    "tmdbFetchedAt": "2026-10-04T16:24:14.067Z"
   },
   {
     "id": "rebecca-davis",
@@ -100429,6 +100879,16 @@
     "tmdbUpdatedAt": "2026-09-20T16:16:42.310Z"
   },
   {
+    "id": "2841169",
+    "slug": "rod-kasai",
+    "name": "Rod Kasai",
+    "tmdbPersonId": 2841169,
+    "knownForDepartment": "Acting",
+    "knownCredits": 6,
+    "tmdbUpdatedAt": "2026-10-04T16:24:14.336Z",
+    "tmdbFetchedAt": "2026-10-04T16:24:14.336Z"
+  },
+  {
     "id": "1128370",
     "slug": "rod-spence",
     "name": "Rod Spence",
@@ -103555,6 +104015,18 @@
     "tmdbFetchedAt": "2026-10-01T13:48:08.958Z"
   },
   {
+    "id": "142317",
+    "slug": "sarah-agnew",
+    "name": "Sarah Agnew",
+    "tmdbPersonId": 142317,
+    "imdbPersonId": "nm1094831",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 2,
+    "tmdbUpdatedAt": "2026-10-04T16:24:14.620Z",
+    "tmdbFetchedAt": "2026-10-04T16:24:14.620Z"
+  },
+  {
     "id": "sarah-allyn",
     "slug": "sarah-allyn",
     "name": "Sarah Allyn",
@@ -103984,6 +104456,19 @@
     ],
     "facebookId": "sarahnazarethminor",
     "tmdbUpdatedAt": "2026-09-20T16:20:22.626Z"
+  },
+  {
+    "id": "2246789",
+    "slug": "sarah-montana",
+    "name": "Sarah Montana",
+    "tmdbPersonId": 2246789,
+    "photoUrl": "/images/people/2246789.webp",
+    "profileUrl": "/images/people/2246789.webp",
+    "gender": "Female",
+    "knownForDepartment": "Writing",
+    "knownCredits": 5,
+    "tmdbUpdatedAt": "2026-10-04T16:24:15.854Z",
+    "tmdbFetchedAt": "2026-10-04T16:24:15.854Z"
   },
   {
     "id": "sarah-murphy-dyson",
@@ -106395,7 +106880,8 @@
     "gender": "Female",
     "knownForDepartment": "Acting",
     "knownCredits": 16,
-    "tmdbUpdatedAt": "2026-09-20T16:17:58.658Z"
+    "tmdbUpdatedAt": "2026-10-04T16:24:16.997Z",
+    "tmdbFetchedAt": "2026-10-04T16:24:16.997Z"
   },
   {
     "id": "2158906",
@@ -107013,6 +107499,17 @@
     "knownForDepartment": "Acting",
     "knownCredits": 13,
     "tmdbUpdatedAt": "2026-09-20T16:17:33.731Z"
+  },
+  {
+    "id": "2989750",
+    "slug": "shawna-steele",
+    "name": "Shawna Steele",
+    "tmdbPersonId": 2989750,
+    "gender": "Female",
+    "knownForDepartment": "Directing",
+    "knownCredits": 9,
+    "tmdbUpdatedAt": "2026-10-04T16:24:17.039Z",
+    "tmdbFetchedAt": "2026-10-04T16:24:17.039Z"
   },
   {
     "id": "shaye-quinn",
@@ -110229,6 +110726,17 @@
     "tmdbUpdatedAt": "2026-09-20T16:18:58.096Z"
   },
   {
+    "id": "1113492",
+    "slug": "steven-kent",
+    "name": "Steven Kent",
+    "tmdbPersonId": 1113492,
+    "imdbPersonId": "nm3463978",
+    "knownForDepartment": "Writing",
+    "knownCredits": 3,
+    "tmdbUpdatedAt": "2026-10-04T16:24:16.549Z",
+    "tmdbFetchedAt": "2026-10-04T16:24:16.549Z"
+  },
+  {
     "id": "6169538",
     "slug": "steven-mccorkell",
     "name": "Steven McCorkell",
@@ -111237,6 +111745,17 @@
     "knownForDepartment": "Acting",
     "knownCredits": 6,
     "tmdbUpdatedAt": "2026-09-20T16:16:33.832Z"
+  },
+  {
+    "id": "3406080",
+    "slug": "t-mychael-rambo",
+    "name": "T. Mychael Rambo",
+    "tmdbPersonId": 3406080,
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 5,
+    "tmdbUpdatedAt": "2026-10-04T16:24:14.199Z",
+    "tmdbFetchedAt": "2026-10-04T16:24:14.199Z"
   },
   {
     "id": "1829065",
