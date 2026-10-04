@@ -3525,6 +3525,22 @@
     "tmdbUpdatedAt": "2026-09-20T16:18:07.137Z"
   },
   {
+    "id": "2728885",
+    "slug": "alice-hamid",
+    "name": "Alice Hamid",
+    "tmdbPersonId": 2728885,
+    "photoUrl": "/images/people/2728885.webp",
+    "profileUrl": "/images/people/2728885.webp",
+    "placeOfBirth": "Ottawa, Canada",
+    "biography": "Alice Hamid is an actress and model who has a passion for film and television, as well as theatre. This Canadian is from Ottawa and is a graduate from Pace University in NYC with a BFA in Acting for Film/TV/Voice Over/Commercial.\n\nWhen she's not showing off pictures of her cats, Alice can be found binge watching TV shows and obsessing over the newest movie. She will never say no to a shopping spree and loves fashion and the latest styles and trends.",
+    "imdbPersonId": "nm10131446",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 5,
+    "tmdbUpdatedAt": "2026-10-04T15:57:13.948Z",
+    "tmdbFetchedAt": "2026-10-04T15:57:13.948Z"
+  },
+  {
     "id": "1908761",
     "slug": "alice-o-mahoney",
     "name": "Alice O'Mahoney",
@@ -7052,6 +7068,24 @@
     "knownCredits": 26,
     "instagramId": "theangelaasher",
     "tmdbUpdatedAt": "2026-09-20T16:18:37.063Z"
+  },
+  {
+    "id": "190905",
+    "slug": "angela-besharah",
+    "name": "Angela Besharah",
+    "tmdbPersonId": 190905,
+    "photoUrl": "/images/people/190905.webp",
+    "profileUrl": "/images/people/190905.webp",
+    "birthday": "1982-08-12",
+    "placeOfBirth": "Ottawa, Ontario, Canada",
+    "biography": "Angela Besharah is a Canadian director, photographer, actor and acting coach working in film, television and theatre.",
+    "imdbPersonId": "nm2278559",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 29,
+    "instagramId": "insidelight",
+    "tmdbUpdatedAt": "2026-10-04T15:57:13.266Z",
+    "tmdbFetchedAt": "2026-10-04T15:57:13.266Z"
   },
   {
     "id": "angela-brown",
@@ -19996,6 +20030,17 @@
     "tmdbUpdatedAt": "2026-09-20T16:20:18.939Z"
   },
   {
+    "id": "3829094",
+    "slug": "catherine-reay",
+    "name": "Catherine Reay",
+    "tmdbPersonId": 3829094,
+    "gender": "Female",
+    "knownForDepartment": "Writing",
+    "knownCredits": 2,
+    "tmdbUpdatedAt": "2026-10-04T15:57:13.569Z",
+    "tmdbFetchedAt": "2026-10-04T15:57:13.569Z"
+  },
+  {
     "id": "443865",
     "slug": "catherine-steadman",
     "name": "Catherine Steadman",
@@ -20980,6 +21025,19 @@
     "knownForDepartment": "Acting",
     "knownCredits": 2,
     "tmdbUpdatedAt": "2026-09-20T16:16:47.683Z"
+  },
+  {
+    "id": "1542593",
+    "slug": "charlie-ebbs",
+    "name": "Charlie Ebbs",
+    "tmdbPersonId": 1542593,
+    "photoUrl": "/images/people/1542593.webp",
+    "profileUrl": "/images/people/1542593.webp",
+    "imdbPersonId": "nm4198328",
+    "knownForDepartment": "Acting",
+    "knownCredits": 25,
+    "tmdbUpdatedAt": "2026-10-04T15:57:13.706Z",
+    "tmdbFetchedAt": "2026-10-04T15:57:13.706Z"
   },
   {
     "id": "charlie-hofheimer",
@@ -43445,6 +43503,18 @@
     "tmdbUpdatedAt": "2026-09-21T13:00:13.059Z"
   },
   {
+    "id": "2936541",
+    "slug": "glenn-edward-gyorffy",
+    "name": "Glenn Edward Gyorffy",
+    "tmdbPersonId": 2936541,
+    "photoUrl": "/images/people/2936541.webp",
+    "profileUrl": "/images/people/2936541.webp",
+    "knownForDepartment": "Acting",
+    "knownCredits": 2,
+    "tmdbUpdatedAt": "2026-10-04T15:57:13.441Z",
+    "tmdbFetchedAt": "2026-10-04T15:57:13.441Z"
+  },
+  {
     "id": "glenn-morshower",
     "slug": "glenn-morshower",
     "name": "Glenn Morshower",
@@ -63747,6 +63817,17 @@
     "tmdbUpdatedAt": "2026-09-20T16:16:55.594Z"
   },
   {
+    "id": "3829095",
+    "slug": "kate-somerville",
+    "name": "Kate Somerville",
+    "tmdbPersonId": 3829095,
+    "gender": "Female",
+    "knownForDepartment": "Writing",
+    "knownCredits": 2,
+    "tmdbUpdatedAt": "2026-10-04T15:57:13.592Z",
+    "tmdbFetchedAt": "2026-10-04T15:57:13.592Z"
+  },
+  {
     "id": "kate-trotter",
     "slug": "kate-trotter",
     "name": "Kate Trotter",
@@ -64203,7 +64284,8 @@
     "instagramId": "kathrynkohut",
     "twitterId": "KohutKathryn",
     "facebookId": "kathryn.kohut",
-    "tmdbUpdatedAt": "2026-09-20T16:18:28.232Z"
+    "tmdbUpdatedAt": "2026-10-04T15:57:13.050Z",
+    "tmdbFetchedAt": "2026-10-04T15:57:13.050Z"
   },
   {
     "id": "kathryn-schneider",
@@ -64381,6 +64463,30 @@
     "knownCredits": 65,
     "instagramId": "katieboland13",
     "tmdbUpdatedAt": "2026-09-20T16:19:04.158Z"
+  },
+  {
+    "id": "55775",
+    "slug": "katie-cassidy",
+    "name": "Katie Cassidy",
+    "tmdbPersonId": 55775,
+    "photoUrl": "/images/people/55775.webp",
+    "profileUrl": "/images/people/55775.webp",
+    "birthday": "1986-11-25",
+    "placeOfBirth": "Los Angeles, California, USA",
+    "biography": "Katherine Evelyn Anita \"Katie\" Cassidy (born November 25, 1986) is an American actress who has performed in The CW TV series Melrose Place, Supernatural, and Gossip Girl, and is considered to be a modern-day Scream queen for her roles in When a Stranger Calls, Black Christmas, A Nightmare on Elm Street and the horror TV series, Harper's Island. Cassidy also starred in Taken, and has roles in the upcoming films Fencewalker and Monte Carlo.\n\n​From Wikipedia, the free encyclopedia",
+    "imdbPersonId": "nm1556320",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 42,
+    "alsoKnownAs": [
+      "Katie Cassidy Rodgers",
+      "Katherine Evelyn Anita Cassidy"
+    ],
+    "instagramId": "katiecassidy",
+    "twitterId": "MzKatieCassidy",
+    "facebookId": "KatieCassidyRodgers",
+    "tmdbUpdatedAt": "2026-10-04T15:57:13.300Z",
+    "tmdbFetchedAt": "2026-10-04T15:57:13.300Z"
   },
   {
     "id": "katie-condidorio",
@@ -65215,7 +65321,8 @@
     "gender": "Male",
     "knownForDepartment": "Writing",
     "knownCredits": 9,
-    "tmdbUpdatedAt": "2026-09-22T20:53:21.981Z"
+    "tmdbUpdatedAt": "2026-10-04T15:57:13.470Z",
+    "tmdbFetchedAt": "2026-10-04T15:57:13.470Z"
   },
   {
     "id": "keith-j-stevens",
@@ -77926,7 +78033,8 @@
       "Marita J. Grabiak",
       "Marita Jane Grabiak"
     ],
-    "tmdbUpdatedAt": "2026-09-22T20:53:25.092Z"
+    "tmdbUpdatedAt": "2026-10-04T15:57:13.439Z",
+    "tmdbFetchedAt": "2026-10-04T15:57:13.439Z"
   },
   {
     "id": "marium-carvell",
@@ -94912,7 +95020,8 @@
     "instagramId": "the_pip_dwyer",
     "twitterId": "The_Pip_Dwyer",
     "facebookId": "pip.dwyer.3",
-    "tmdbUpdatedAt": "2026-09-20T16:18:28.144Z"
+    "tmdbUpdatedAt": "2026-10-04T15:57:13.342Z",
+    "tmdbFetchedAt": "2026-10-04T15:57:13.342Z"
   },
   {
     "id": "piper-dacosta",

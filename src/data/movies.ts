@@ -182845,6 +182845,196 @@ export const MOVIES: Movie[] = [
     "voteCount": 3,
     "tmdbUpdatedAt": "2026-10-04T15:55:23.999Z",
     "tmdbFetchedAt": "2026-10-04T15:55:23.999Z"
+  },
+  {
+    "id": "hallmark-2023-a-royal-christmas-crush",
+    "slug": "a-royal-christmas-crush",
+    "title": "A Royal Christmas Crush",
+    "year": 2023,
+    "brandId": "hallmark",
+    "releaseDate": "2023-07-15",
+    "synopsis": "Ava accepts the opportunity of a lifetime to work at the Royal Ice Hotel which leads her to a surprise whirlwind romance with the most important guest of all, the Royal Prince himself.",
+    "posterUrl": "/images/posters/1132366.jpg",
+    "backdropUrl": "/images/backdrops/1132366.jpg",
+    "cast": [
+      {
+        "actorId": "558900",
+        "name": "Stephen Huszar",
+        "character": "Prince Henry",
+        "slug": "stephen-huszar",
+        "tmdbPersonId": 558900,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/l5gfPIcngMlJ92IuKRjeFv1Dkta.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "55775",
+        "name": "Katie Cassidy",
+        "character": "Ava Jensen",
+        "slug": "katie-cassidy",
+        "tmdbPersonId": 55775,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/v7cs7RFcfoiL8W1YRkZK5lBc57H.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "1542593",
+        "name": "Charlie Ebbs",
+        "character": "Uncle Karl",
+        "slug": "charlie-ebbs",
+        "tmdbPersonId": 1542593,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/weqx8PT0vJODpSPMcrKNzdfH2jc.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "190905",
+        "name": "Angela Besharah",
+        "character": "Brigitta",
+        "slug": "angela-besharah",
+        "tmdbPersonId": 190905,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/5lY6aCGSRAK6SnMarfyL2W3wiU5.jpg",
+        "order": 3
+      },
+      {
+        "actorId": "2936541",
+        "name": "Glenn Edward Gyorffy",
+        "character": "Deputy Von Trier",
+        "slug": "glenn-edward-gyorffy",
+        "tmdbPersonId": 2936541,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/y2GRzoyvgbJsS3HeuymW6ki65T6.jpg",
+        "order": 4
+      },
+      {
+        "actorId": "2563064",
+        "name": "Kathryn Kohut",
+        "character": "Sigrid",
+        "slug": "kathryn-kohut",
+        "tmdbPersonId": 2563064,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/iKlMXYLDJh4yoTMFhD7QhsGfvrr.jpg",
+        "order": 5
+      },
+      {
+        "actorId": "1774681",
+        "name": "Pip Dwyer",
+        "character": "The Queen of Friørland",
+        "slug": "pip-dwyer",
+        "tmdbPersonId": 1774681,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/pquSL8wPZjPTzwKhE9VYWwCpo57.jpg",
+        "order": 6
+      },
+      {
+        "actorId": "2728885",
+        "name": "Alice Hamid",
+        "character": "Maria",
+        "slug": "alice-hamid",
+        "tmdbPersonId": 2728885,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/8qQvtQuaOhLe9LQN7jD3Ml0fqTo.jpg",
+        "order": 7
+      }
+    ],
+    "director": "Marita Grabiak",
+    "tmdbId": 1132366,
+    "imdbId": "tt28077855",
+    "isComingSoon": false,
+    "status": "collection",
+    "originalTitle": "A Royal Christmas Crush",
+    "alternativeTitles": [
+      {
+        "title": "Winter Castle 3",
+        "country": "US"
+      },
+      {
+        "title": "Winter Castle Royal Romance",
+        "country": "US"
+      }
+    ],
+    "runtimeMinutes": 84,
+    "genres": [
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      },
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "FR",
+        "releaseDate": "2024-11-16T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "C8"
+      },
+      {
+        "country": "FR",
+        "releaseDate": "2025-11-14T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "CStar"
+      },
+      {
+        "country": "US",
+        "releaseDate": "2023-07-15T00:00:00.000Z",
+        "type": 6,
+        "certification": "G",
+        "note": "Hallmark Channel"
+      }
+    ],
+    "crew": [
+      {
+        "id": 1215026,
+        "name": "Marita Grabiak",
+        "job": "Director",
+        "department": "Directing",
+        "creditId": "64729c1ebe2d490116c8f08f"
+      },
+      {
+        "id": 3719839,
+        "name": "Keith Hemstreet",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "648e04ec42bf010101be5ddb"
+      },
+      {
+        "id": 3829094,
+        "name": "Catherine Reay",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "648e04f2c3c89100cada326a"
+      },
+      {
+        "id": 3829095,
+        "name": "Kate Somerville",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "648e04f6559d2200c5767651"
+      }
+    ],
+    "trailers": [
+      {
+        "key": "nH51WiChuzw",
+        "site": "YouTube",
+        "type": "Teaser",
+        "name": "Sneak Peek - A Royal Christmas Crush - Hallmark Channel",
+        "official": true
+      },
+      {
+        "key": "P8IdJp8iq_o",
+        "site": "YouTube",
+        "type": "Trailer",
+        "name": "Preview - A Royal Christmas Crush - Hallmark Channel",
+        "official": true
+      }
+    ],
+    "trailerYoutubeKey": "nH51WiChuzw",
+    "voteAverage": 5.9,
+    "voteCount": 28,
+    "tmdbUpdatedAt": "2026-10-04T15:57:11.386Z",
+    "tmdbFetchedAt": "2026-10-04T15:57:11.386Z"
   }
 ];
 
