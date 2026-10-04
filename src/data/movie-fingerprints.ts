@@ -551,6 +551,13 @@ export const PROTOTYPE_MOVIE_FINGERPRINTS: Readonly<Record<string, readonly Fing
   "gaf-2026-the-ornament-library": [
     "writer-journalist"
   ],
+  "gaf-2026-the-trouble-with-mistletoe": [
+    "hometown",
+    "old-flame",
+    "returns-home",
+    "reunion",
+    "second-chance"
+  ],
   "hallmark-2008-moonlight-mistletoe": [
     "family-business",
     "hometown",
