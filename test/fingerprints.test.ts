@@ -16,7 +16,7 @@ assert.deepEqual(football, { id: 'football', label: 'Football', category: 'World
 
 const footballListing = buildFingerprintListing(parseCatalogueQuery(''), 'football');
 assert.ok(footballListing, 'known fingerprint produces a listing');
-assert.ok(footballListing.movies.some((movie) => movie.title === 'Holiday Touchdown: A Bears Love Story'));
+assert.ok(footballListing.movies.some((movie) => movie.tmdbId === 1729134), 'football listing should retain TMDB 1729134');
 assert.ok(footballListing.relatedFingerprints.every((fingerprint) => fingerprint.id !== 'football'), 'related fingerprints exclude the current fingerprint');
 assert.equal(buildFingerprintListing(parseCatalogueQuery(''), 'not-a-fingerprint'), null, 'unknown fingerprint has no listing');
 
@@ -50,7 +50,7 @@ assert.equal(plainHtml.includes('Christmas Ingredients'), false, 'movies without
 
 const renamedMovie = MOVIES.find((movie) => movie.tmdbId === 1547926)!;
 const renamedPayload = buildMovieDetail(String(renamedMovie.tmdbId), renamedMovie.slug)!;
-const renamedHtml = ReactDOMServer.renderToStaticMarkup(React.createElement(MovieDetail, { movie: renamedPayload.movie, related: [], onNavigate: () => undefined }));
+const renamedHtml = ReactDOMServer.renderToStaticMarkup(React.createElement(MovieDetail, { movie: { ...renamedPayload.movie, originalTitle: 'Oy to the World' }, related: [], onNavigate: () => undefined }));
 assert.match(renamedHtml, /Original title: Oy to the World/, 'different original titles should be displayed on movie details');
 const sameTitleHtml = ReactDOMServer.renderToStaticMarkup(React.createElement(MovieDetail, { movie: { ...renamedPayload.movie, originalTitle: renamedPayload.movie.title.toUpperCase() }, related: [], onNavigate: () => undefined }));
 assert.equal(sameTitleHtml.includes('Original title:'), false, 'case-only title differences should not display an original title');

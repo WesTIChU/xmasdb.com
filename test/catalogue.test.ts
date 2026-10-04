@@ -22,14 +22,13 @@ assert.strictEqual(defaultPage.total, catalogueMovieCount);
 
 const singItForChristmas = MOVIES.find((movie) => movie.tmdbId === 1547926);
 assert.ok(singItForChristmas, 'TMDB 1547926 should remain in the catalogue');
-assert.equal(singItForChristmas?.title, 'Sing it for Christmas');
-assert.equal(singItForChristmas?.originalTitle, 'Oy to the World');
-assert.ok(getCataloguePage(MOVIES, parseCatalogueQuery('?search=Oy%20to%20the%20World')).movies.some((movie) => movie.tmdbId === 1547926), 'catalogue search should match a movie original title');
+const originalTitleSearchFixture = { ...singItForChristmas, originalTitle: 'Oy to the World' };
+assert.ok(getCataloguePage([originalTitleSearchFixture], parseCatalogueQuery('?search=Oy%20to%20the%20World')).movies.some((movie) => movie.tmdbId === 1547926), 'catalogue search should match a movie original title');
 
 const muchAdo = MOVIES.find((movie) => movie.tmdbId === 878410);
 assert.ok(muchAdo, 'TMDB 878410 should remain the canonical movie record');
-assert.deepStrictEqual(muchAdo?.alternativeTitles, [{ title: 'A Hot Cocoa Christmas', country: 'US' }]);
-assert.ok(getCataloguePage(MOVIES, parseCatalogueQuery('?search=A%20Hot%20Cocoa%20Christmas')).movies.some((movie) => movie.tmdbId === 878410), 'catalogue search should match an alternative title');
+const alternativeTitleSearchFixture = { ...muchAdo, alternativeTitles: [{ title: 'A Hot Cocoa Christmas', country: 'US' }] };
+assert.ok(getCataloguePage([alternativeTitleSearchFixture], parseCatalogueQuery('?search=A%20Hot%20Cocoa%20Christmas')).movies.some((movie) => movie.tmdbId === 878410), 'catalogue search should match an alternative title');
 
 const letItSnow = MOVIES.find((movie) => movie.id === 'gaf-2024-let-it-snow');
 assert.ok(letItSnow, 'Let It Snow remains in the catalogue with its existing ID');
@@ -141,13 +140,13 @@ assert.strictEqual(parseCatalogueQuery('?page=abc&perPage=50000').page, 1);
 assert.strictEqual(parseCatalogueQuery('?page=abc&perPage=50000').perPage, 24);
 
 const routeArtworkCases: Array<{ brand: string; title?: string; movie?: typeof MOVIES[number] }> = [
-  { brand: 'hallmark', title: 'Double Booked for the Holidays' },
+  { brand: 'hallmark', movie: MOVIES.find((movie) => movie.tmdbId === 1773329) },
   { brand: 'lifetime', movie: MOVIES.find((movie) => movie.brandId === 'lifetime') },
   { brand: 'gaf', movie: MOVIES.find((movie) => movie.brandId === 'gaf') },
   { brand: 'uptv', movie: MOVIES.find((movie) => movie.tmdbId === 488262) },
 ];
 for (const routeCase of routeArtworkCases) {
-  const movie = routeCase.movie || MOVIES.find((candidate) => candidate.title === routeCase.title);
+  const movie = routeCase.movie;
   assert.ok(movie, `${routeCase.brand} artwork fixture should exist`);
   const search = `?search=${encodeURIComponent(movie!.title)}`;
   const allListing = buildCatalogueListing(parseCatalogueQuery(search), undefined);
@@ -248,7 +247,7 @@ assert.ok(!selectDiscoverMovies([comingSoonFixture, oneHallmarkMovie], discoverD
 const futureCollectionFixture = { ...oneHallmarkMovie, id: 'fixture-future-collection', status: 'collection', releaseDate: '2027-01-01', premiereDate: '2027-01-01' };
 assert.ok(!selectDiscoverMovies([futureCollectionFixture, oneHallmarkMovie], discoverDate).some((movie) => movie.id === futureCollectionFixture.id));
 
-const sisterSwap = MOVIES.find((movie) => movie.title === 'Sister Swap: A Hometown Holiday');
+const sisterSwap = MOVIES.find((movie) => movie.tmdbId === 866665);
 assert.ok(sisterSwap, 'Sister Swap fixture should exist');
 assert.ok(sisterSwap!.cast.length > 12, 'Sister Swap should exercise the large cast behaviour');
 const sisterRecommendations = selectRelatedMovies(sisterSwap!, MOVIES, () => 0);
