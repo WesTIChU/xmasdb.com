@@ -4,6 +4,7 @@ import { Movie } from '../types';
 export interface MovieLifecycleFields {
   status?: string;
   premiereDate?: string;
+  networkPremiereDate?: string;
   releaseDate?: string;
 }
 
@@ -39,6 +40,15 @@ export function getMoviePremiereDateKey(movie: MovieLifecycleFields): string | n
   const parsed = Date.parse(value);
   if (Number.isNaN(parsed)) return null;
   return utcDateKey(new Date(parsed));
+}
+
+/** Calendar-only date: a curated network premiere takes precedence without changing lifecycle identity. */
+export function getMovieNetworkPremiereDateKey(movie: MovieLifecycleFields): string | null {
+  if (movie.networkPremiereDate && typeof movie.networkPremiereDate === 'string') {
+    const dateOnly = movie.networkPremiereDate.match(/^\d{4}-\d{2}-\d{2}/)?.[0];
+    if (dateOnly && !Number.isNaN(Date.parse(`${dateOnly}T00:00:00Z`))) return dateOnly;
+  }
+  return getMoviePremiereDateKey(movie);
 }
 
 export function isMoviePremierePast(movie: MovieLifecycleFields, now: Date = new Date()): boolean {

@@ -27,6 +27,7 @@ const movie = {
   brandId: 'hallmark',
   releaseDate: '2026-12-01',
   premiereDate: '2026-12-01',
+  networkPremiereDate: '2027-11-06',
   synopsis: 'Old synopsis',
   posterUrl: '',
   cast: [],
@@ -42,6 +43,7 @@ const merged = mergeTmdbMovie(movie, {
 }, '/images/posters/movie-1-new.jpg');
 assert.strictEqual(merged.releaseDate, '2026-11-01');
 assert.strictEqual(merged.premiereDate, '2026-11-01');
+assert.strictEqual(merged.networkPremiereDate, '2027-11-06', 'TMDB refresh preserves XmasDB network premiere metadata');
 assert.strictEqual(merged.synopsis, 'Old synopsis');
 assert.strictEqual(merged.posterUrl, '/images/posters/movie-1-new.jpg');
 assert.strictEqual(merged.brandId, 'hallmark');

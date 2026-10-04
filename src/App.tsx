@@ -28,6 +28,7 @@ import {
   isBirthdaysPayload,
   isMovieDetailPayload,
   isPrivacyPayload,
+  isCalendarPayload,
 } from './api/guards';
 import {
   ApiError,
@@ -69,6 +70,7 @@ import {
   buildMovieSeo,
   buildNotFoundSeo,
   buildYearSeo,
+  buildCalendarSeo,
   updateSeoTags,
 } from './utils/seo';
 import { buildCatalogueUrl, parseCatalogueQuery } from './utils/catalogue-pagination';
@@ -83,6 +85,7 @@ type RouteDescriptor =
   | { type: 'home' }
   | { type: 'birthdays' }
   | { type: 'movies' }
+  | { type: 'calendar' }
   | { type: 'year-archive'; year: number }
   | { type: 'brand'; slug: string; year: number | null }
   | { type: 'fingerprint'; slug: string }
@@ -116,6 +119,7 @@ const AdminFeedStatisticsPage = lazy(() => import('./components/AdminFeedStatist
 const AdminAddMoviesPage = lazy(() => import('./components/AdminAddMoviesPage').then(({ AdminAddMoviesPage: component }) => ({ default: component })));
 const AdminMoviesPage = lazy(() => import('./components/AdminMoviesPage').then(({ AdminMoviesPage: component }) => ({ default: component })));
 const ApiPage = lazy(() => import('./components/ApiPage').then(({ ApiPage: component }) => ({ default: component })));
+const CalendarPage = lazy(() => import('./components/CalendarPage').then(({ CalendarPage: component }) => ({ default: component })));
 
 function HomeLoadingSkeleton() {
   return (
@@ -164,6 +168,8 @@ function isRoutePayloadValid(descriptor: RouteDescriptor, payload: unknown): boo
     case 'year-archive':
     case 'brand':
       return isCatalogueListingPayload(payload);
+    case 'calendar':
+      return isCalendarPayload(payload);
     case 'fingerprint':
       return isFingerprintListingPayload(payload);
     case 'movie':
@@ -189,6 +195,7 @@ export function parseRoute(currentPath: string): RouteDescriptor {
 
   if (!clean) return { type: 'home' };
   if (clean === 'movies' || clean === 'all') return { type: 'movies' };
+  if (clean === 'calendar') return { type: 'calendar' };
   if (clean === 'feeds') return { type: 'feeds' };
   if (clean === 'birthdays') return { type: 'birthdays' };
   if (clean === 'about') return { type: 'about' };
@@ -256,6 +263,8 @@ function requestFor(descriptor: RouteDescriptor, catalogueSearch: string): strin
       return '/api/birthdays';
     case 'movies':
       return catalogueUrl(catalogueSearch);
+    case 'calendar':
+      return '/api/calendar';
     case 'year-archive':
       return catalogueUrl(buildListingSearch(catalogueSearch, { year: String(descriptor.year) }));
     case 'brand': {
@@ -429,6 +438,8 @@ export default function App() {
       updateSeoTags(buildHomeSeo(meta?.totalMovies));
     } else if (descriptor.type === 'movies') {
       updateSeoTags({ ...buildMoviesSeo(meta?.totalMovies), noIndex: Boolean(catalogueSearch) });
+    } else if (descriptor.type === 'calendar') {
+      updateSeoTags(buildCalendarSeo(isCalendarPayload(view.payload) ? view.payload.activeYear : new Date().getUTCFullYear()));
     } else if (descriptor.type === 'year-archive') {
       if (!isCatalogueListingPayload(view.payload)) return;
       updateSeoTags({ ...buildYearSeo(descriptor.year, view.payload.total), noIndex: Boolean(catalogueSearch) });
@@ -688,9 +699,11 @@ export default function App() {
         ) : (
           <Suspense fallback={<div className="py-24 text-center text-[#736B63] font-body" aria-live="polite">Loading&hellip;</div>}>
             <>
-            {descriptor.type === 'home' && isHomePayload(view.payload) && (
+             {descriptor.type === 'home' && isHomePayload(view.payload) && (
               <HomePage payload={view.payload} onNavigate={navigate} />
-            )}
+             )}
+
+             {descriptor.type === 'calendar' && isCalendarPayload(view.payload) && <CalendarPage payload={view.payload} onNavigate={navigate} />}
 
             {descriptor.type === 'about' && isAboutPayload(view.payload) && <AboutPage payload={view.payload} onNavigate={navigate} />}
 

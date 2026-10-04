@@ -1,10 +1,10 @@
 import { getActorBySlug, getActorByTmdbId } from '../data/actors';
 import { getMovieBySlug, getMovieByTmdbId } from '../data/movies';
 import { getBrandBySlug } from '../data/brands';
-import { buildAboutPayload, buildActorDetail, buildBirthdaysPayload, buildCatalogueListing, buildCatalogueMeta, buildFeedsMeta, buildHomePayload, buildMovieDetail } from './catalogue-api';
+import { buildAboutPayload, buildActorDetail, buildBirthdaysPayload, buildCalendarPayload, buildCatalogueListing, buildCatalogueMeta, buildFeedsMeta, buildHomePayload, buildMovieDetail } from './catalogue-api';
 import { getBrandById } from '../data/brands';
 import { parseCatalogueQuery } from '../utils/catalogue-pagination';
-import { buildAboutSeo, buildActorSeo, buildApiSeo, buildBirthdaysSeo, buildBrandSeo, buildContactSeo, buildFeedsSeo, buildHomeSeo, buildMoviesSeo, buildMovieSeo, buildNotFoundSeo, buildPrivacySeo, buildYearSeo, type SeoDocument } from '../utils/seo';
+import { buildAboutSeo, buildActorSeo, buildApiSeo, buildBirthdaysSeo, buildBrandSeo, buildCalendarSeo, buildContactSeo, buildFeedsSeo, buildHomeSeo, buildMoviesSeo, buildMovieSeo, buildNotFoundSeo, buildPrivacySeo, buildYearSeo, type SeoDocument } from '../utils/seo';
 import { getActorPath, getFingerprintPath, getMoviePath, toCanonicalUrl } from '../utils/urls';
 import { getFingerprintById } from '../data/fingerprints';
 import { buildFingerprintListing } from './catalogue-api';
@@ -34,6 +34,7 @@ export function getServerSeo(pathname: string, search = ''): SeoDocument {
   if (clean === 'movies' || clean === 'all') {
     return { ...buildMoviesSeo(buildCatalogueMeta().totalMovies), noIndex: Boolean(search) };
   }
+  if (clean === 'calendar') return buildCalendarSeo();
   if (clean === 'feeds') return buildFeedsSeo();
   if (clean === 'birthdays') return buildBirthdaysSeo();
   if (clean === 'about') return buildAboutSeo();
@@ -236,6 +237,7 @@ function getServerRouteBootstrap(pathname: string, search = ''): { url: string; 
     return { url: `/api/catalogue${query}`, payload: buildCatalogueListing(parseCatalogueQuery(query), brandMatch[1], brandMatch[2] ? Number(brandMatch[2]) : undefined) };
   }
   if (clean === 'feeds') return { url: '/api/feeds/meta', payload: buildFeedsMeta() };
+  if (clean === 'calendar') return { url: '/api/calendar', payload: buildCalendarPayload() };
   if (clean === 'birthdays') return { url: '/api/birthdays', payload: buildBirthdaysPayload() };
   if (clean === 'about') return { url: '/api/about', payload: buildAboutPayload() };
   if (clean === 'privacy') return { url: '/api/privacy', payload: {} };
@@ -261,6 +263,7 @@ function renderRouteContent(pathname: string, payload: unknown): string {
     const movies = data.movies.slice(0, 24).map((movie) => `<li><a href="${escapeHtml(getMoviePath(movie.tmdbId, movie.slug))}">${escapeHtml(movie.title)}</a> (${movie.year})</li>`).join('');
     return `<main id="server-rendered-content"><article><h1>Christmas movies with: ${escapeHtml(fingerprint.label)}</h1><p>${data.total || 0} matching Christmas movies.</p><ul>${movies}</ul></article></main>`;
   }
+  if (clean === 'calendar') return '<main id="server-rendered-content"><article><h1>Christmas Movie Release Calendar</h1><p>Christmas movie premiere dates from Hallmark, Lifetime, Great American Family and UPtv.</p></article></main>';
   if (clean === 'birthdays') return renderBirthdaysContent(pathname);
   if (clean === 'feeds') return '<main id="server-rendered-content"><article><h1>Christmas Movie Feeds for Radarr</h1><p>Curated Christmas movie JSON feeds for Radarr, including Hallmark, Lifetime, Great American Family and UPtv.</p><h2>Christmas Movie JSON Feeds</h2><ul><li>All movies</li><li>Hallmark, Lifetime, GAF and UPtv networks</li><li>Year and actor feeds</li></ul></article></main>';
   if (clean === 'about') return '<main id="server-rendered-content"><article><h1>Why I Built the Christmas Movie Database</h1><p>XmasDB is a curated Christmas movie database covering holiday films, networks and actors.</p></article></main>';

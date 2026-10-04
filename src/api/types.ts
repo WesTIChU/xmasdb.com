@@ -19,6 +19,22 @@ export interface ListingMovie {
   status?: string;
 }
 
+export interface CalendarMovie {
+  title: string;
+  slug: string;
+  tmdbId: number;
+  brandId: string;
+  year: number;
+  dateKey: string | null;
+  status?: string;
+}
+
+export interface CalendarPayload {
+  movies: CalendarMovie[];
+  years: number[];
+  activeYear: number;
+}
+
 /** A single catalogue/listing response (brand page, all movies, year archive). */
 export interface CatalogueListing {
   movies: ListingMovie[];

@@ -143,7 +143,7 @@ export const MovieDetail: React.FC<MovieDetailProps> = ({ movie, related, onNavi
           {/* Quick metadata sidebar */}
           <div className="mt-6 text-sm text-[#59524A] space-y-2.5 font-sans-clean border-t border-[#E7DFD5] pt-4">
             {brand && (
-              <div className="flex items-center justify-between">
+             <div className="flex items-center justify-between">
                 <span className="text-[#6F675E] flex items-center gap-1.5">
                   <Tv className="w-3.5 h-3.5" /> Network
                 </span>
@@ -158,7 +158,16 @@ export const MovieDetail: React.FC<MovieDetailProps> = ({ movie, related, onNavi
                 <Calendar className="w-3.5 h-3.5" /> Release Date
               </span>
                <span className="font-medium text-[#23211E]">{formatMoviePremiereDate(movie) || 'Premiere date TBA'}</span>
-            </div>
+             </div>
+
+             {brand && movie.networkPremiereDate && movie.networkPremiereDate !== movie.releaseDate && (
+               <div className="flex items-center justify-between">
+                 <span className="text-[#6F675E] flex items-center gap-1.5">
+                   <Calendar className="w-3.5 h-3.5" /> {brand.shortName} Premiere
+                 </span>
+                 <span className="font-medium text-[#23211E]">{formatMoviePremiereDate({ releaseDate: movie.networkPremiereDate })}</span>
+               </div>
+             )}
 
             {movie.runtimeMinutes && (
               <div className="flex items-center justify-between">

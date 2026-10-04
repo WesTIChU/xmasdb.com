@@ -6,6 +6,7 @@ export interface AdminMovieEditInput {
   brand: string;
   title: string;
   releaseDate: string;
+  networkPremiereDate?: string;
   synopsis: string;
   runtimeMinutes: string | number;
   rating: string | number;
@@ -21,6 +22,7 @@ export interface ValidatedAdminMovieEdit {
   brand: string;
   title: string;
   releaseDate: string;
+  networkPremiereDate?: string;
   synopsis: string;
   runtimeMinutes?: number;
   rating?: number;
@@ -46,6 +48,14 @@ function optionalText(value: unknown, label: string, maxLength: number): string 
   const result = value.trim();
   if (result.length > maxLength) throw new Error(`${label} is too long.`);
   return result || undefined;
+}
+
+function optionalDate(value: unknown, label: string): string | undefined {
+  const result = optionalText(value, label, 10);
+  if (result && (!/^\d{4}-\d{2}-\d{2}$/.test(result) || Number.isNaN(Date.parse(`${result}T00:00:00Z`)))) {
+    throw new Error(`${label} must use YYYY-MM-DD.`);
+  }
+  return result;
 }
 
 function integer(value: unknown, label: string, min: number, max: number, required: boolean): number | undefined {
@@ -91,12 +101,14 @@ export function validateAdminMovieEdit(input: Partial<AdminMovieEditInput>): Val
   const releaseDate = requiredText(input.releaseDate, 'Release date', 10);
   if (!/^\d{4}-\d{2}-\d{2}$/.test(releaseDate) || Number.isNaN(Date.parse(`${releaseDate}T00:00:00Z`))) throw new Error('Release date must use YYYY-MM-DD.');
   const tmdbId = integer(input.tmdbId, 'TMDb ID', 1, 9999999999, true)!;
+  const networkPremiereDate = optionalDate(input.networkPremiereDate, 'Network premiere date');
   const imdbId = optionalText(input.imdbId, 'IMDb ID', 30);
   if (imdbId && !/^tt\d{7,10}$/i.test(imdbId)) throw new Error('IMDb ID must look like tt1234567.');
   return {
     brand,
     title,
     releaseDate,
+    networkPremiereDate,
     synopsis: requiredText(input.synopsis, 'Synopsis', 20000),
     runtimeMinutes: integer(input.runtimeMinutes, 'Runtime', 1, 600, false),
     rating: rating(input.rating),
@@ -133,6 +145,7 @@ export function applyAdminMovieEdit(movie: Movie, input: ValidatedAdminMovieEdit
     title: input.title,
     slug: slugForTitle(input.title, movie.slug),
     releaseDate: input.releaseDate,
+    networkPremiereDate: input.networkPremiereDate,
     year: Number(input.releaseDate.slice(0, 4)),
     synopsis: input.synopsis,
     runtimeMinutes: input.runtimeMinutes,

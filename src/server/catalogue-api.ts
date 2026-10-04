@@ -15,7 +15,7 @@ import {
 } from '../data/actors';
 import { getBrandBySlug, getPopulatedBrands } from '../data/brands';
 import { getCataloguePage, type CatalogueQuery } from '../utils/catalogue-pagination';
-import { getMoviePremiereDateKey, isFutureComingSoonMovie, isMoviePremierePast, sortMoviesByLifecycle } from '../utils/catalogue-lifecycle';
+import { getMovieNetworkPremiereDateKey, getMoviePremiereDateKey, isFutureComingSoonMovie, isMoviePremierePast, sortMoviesByLifecycle } from '../utils/catalogue-lifecycle';
 import { getActorBackdrop } from '../utils/backdrops';
 import { buildRadarrFeed, isMovieEligibleForRadarr } from '../utils/feeds';
 import type {
@@ -39,6 +39,7 @@ import type {
   SearchResultsPayload,
   BirthdayActor,
   BirthdaysPayload,
+  CalendarPayload,
 } from '../api/types';
 import { birthdayDistance, parseBirthday, sortBirthdays, upcomingBirthdays } from '../utils/birthdays';
 import { scoreActorSearchResult, scoreIngredientSearchResult, scoreMovieSearchFields } from '../utils/search-relevance';
@@ -85,6 +86,27 @@ export function buildAboutPayload(): AboutPayload {
     return { name: actor.name, slug: actor.slug, tmdbPersonId: actor.tmdbPersonId };
   });
   return { favouriteMovies, favouriteActors };
+}
+
+const CALENDAR_BRANDS = new Set(['hallmark', 'lifetime', 'gaf', 'uptv']);
+
+export function buildCalendarPayload(): CalendarPayload {
+  const movies = MOVIES
+    .filter((movie) => CALENDAR_BRANDS.has(movie.brandId))
+    .map((movie) => ({
+      title: movie.title,
+      slug: movie.slug,
+      tmdbId: movie.tmdbId,
+      brandId: movie.brandId,
+      year: movie.year,
+      dateKey: getMovieNetworkPremiereDateKey(movie),
+      status: movie.status,
+    }));
+  const years = [...new Set(movies.map((movie) => movie.dateKey ? Number(movie.dateKey.slice(0, 4)) : movie.year))]
+    .filter(Number.isInteger)
+    .sort((a, b) => b - a);
+  const currentYear = new Date().getUTCFullYear();
+  return { movies, years, activeYear: years.includes(currentYear) ? currentYear : years[0] || currentYear };
 }
 
 function toMetaBrand(brandId: string): MetaBrand | null {

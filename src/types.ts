@@ -82,6 +82,8 @@ export interface Movie {
   alternativeTitles?: AlternativeTitle[];
   tagline?: string | null;
   premiereDate?: string;
+  /** XmasDB-managed network premiere override; never sourced from TMDB. */
+  networkPremiereDate?: string;
   genres?: Genre[];
   releaseDates?: ReleaseDateInfo[];
   crew?: CrewMember[];

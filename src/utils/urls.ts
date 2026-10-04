@@ -73,6 +73,10 @@ export function getFeedsPath(): string {
   return `/feeds/`;
 }
 
+export function getCalendarPath(): string {
+  return '/calendar/';
+}
+
 export function getFingerprintPath(fingerprintId: string): string {
   return `/fingerprint/${fingerprintId.toLowerCase()}/`;
 }

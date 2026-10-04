@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
 interface MovieResult { id: string; title: string; year: number; network: string; tmdbId: number; }
-interface MovieRecord extends MovieResult { brandId: string; releaseDate: string; synopsis: string; runtimeMinutes?: number; voteAverage?: number; director?: string; writers: string[]; imdbId?: string; posterUrl: string; backdropUrl?: string; slug: string; }
+interface MovieRecord extends MovieResult { brandId: string; releaseDate: string; networkPremiereDate?: string; synopsis: string; runtimeMinutes?: number; voteAverage?: number; director?: string; writers: string[]; imdbId?: string; posterUrl: string; backdropUrl?: string; slug: string; }
 interface AdminMovieSearchResponse { movies: MovieResult[]; query: string; }
 interface AdminMoviePreviewResponse { baseSha: string; movie: MovieRecord; }
 interface AdminMovieMutationResponse { message?: string; }
@@ -13,7 +13,7 @@ const fields = [
   ['posterUrl', 'Poster path'], ['backdropUrl', 'Backdrop path'],
 ] as const;
 
-type FormField = typeof fields[number][0] | 'synopsis' | 'writers';
+type FormField = typeof fields[number][0] | 'synopsis' | 'writers' | 'networkPremiereDate';
 
 function isRecord(value: unknown): value is Record<string, unknown> {
   return typeof value === 'object' && value !== null;
@@ -48,6 +48,7 @@ function isMovieRecord(value: unknown): value is MovieRecord {
   if (!isRecord(value) || !isMovieResult(value)) return false;
   return isString(value.brandId)
     && isString(value.releaseDate)
+    && isOptionalString(value, 'networkPremiereDate')
     && isString(value.synopsis)
     && Array.isArray(value.writers)
     && value.writers.every(isString)
@@ -115,7 +116,7 @@ export const AdminMoviesPage: React.FC<Props> = ({ onNavigate }) => {
       const payload = await request('/api/admin/movies/edit/preview', isAdminMoviePreviewResponse, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ identifier: id }) });
       const next = payload.movie;
       setMovie(next); setBaseSha(payload.baseSha);
-      setForm({ title: next.title, brandId: next.brandId, releaseDate: next.releaseDate, synopsis: next.synopsis, runtimeMinutes: next.runtimeMinutes === undefined ? '' : String(next.runtimeMinutes), voteAverage: next.voteAverage === undefined ? '' : String(next.voteAverage), director: next.director || '', writers: next.writers.join('\n'), imdbId: next.imdbId || '', tmdbId: String(next.tmdbId), posterUrl: next.posterUrl, backdropUrl: next.backdropUrl || '' });
+       setForm({ title: next.title, brandId: next.brandId, releaseDate: next.releaseDate, networkPremiereDate: next.networkPremiereDate || '', synopsis: next.synopsis, runtimeMinutes: next.runtimeMinutes === undefined ? '' : String(next.runtimeMinutes), voteAverage: next.voteAverage === undefined ? '' : String(next.voteAverage), director: next.director || '', writers: next.writers.join('\n'), imdbId: next.imdbId || '', tmdbId: String(next.tmdbId), posterUrl: next.posterUrl, backdropUrl: next.backdropUrl || '' });
     } catch (openError) { setError(openError instanceof Error ? openError.message : 'Movie could not be loaded.'); }
     finally { setBusy(false); }
   };
@@ -136,7 +137,7 @@ export const AdminMoviesPage: React.FC<Props> = ({ onNavigate }) => {
     finally { setBusy(false); }
   };
 
-  const changedFields: readonly (readonly [FormField, string])[] = [...fields, ['synopsis', 'Synopsis'], ['writers', 'Writers']];
+  const changedFields: readonly (readonly [FormField, string])[] = [...fields, ['networkPremiereDate', 'Network premiere date'], ['synopsis', 'Synopsis'], ['writers', 'Writers']];
   const changed = movie ? changedFields.filter(([key]) => String(form[key] ?? '') !== (key === 'writers' ? movie.writers.join('\n') : String(movie[key] ?? ''))).map(([, label]) => label) : [];
 
   return <section className="py-10 sm:py-14" aria-labelledby="admin-movies-heading"><div className="mx-auto max-w-4xl">
@@ -144,7 +145,7 @@ export const AdminMoviesPage: React.FC<Props> = ({ onNavigate }) => {
     {error && <p className="mt-5 border-l-2 border-[#841818] bg-[#F7F2EB] px-4 py-3 text-sm text-[#841818]" role="alert">{error}</p>}{message && <p className="mt-5 border-l-2 border-[#1A3D2F] bg-[#F7F2EB] px-4 py-3 text-sm text-[#1A3D2F]" role="status">{message}</p>}
     {!movie ? <><form className="mt-7 flex gap-3" onSubmit={(event) => { event.preventDefault(); void search(); }}><label htmlFor="admin-movie-search" className="sr-only">Search movies by title</label><input id="admin-movie-search" value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Search movie titles" className="min-w-0 flex-1 rounded border border-[#DCD3C7] bg-[#FFFDF9] px-3 py-2.5 outline-none focus:border-[#1A3D2F]" /><button type="submit" disabled={busy} className="rounded border border-[#1A3D2F] bg-[#1A3D2F] px-4 py-2 text-sm font-semibold text-[#FAF7F2] disabled:opacity-50">SEARCH</button></form><div className="mt-6 divide-y divide-[#E7DFD5] border-t border-[#E7DFD5]">{results.map((entry) => <button key={entry.id} type="button" onClick={() => void openMovie(entry.id)} className="block w-full py-4 text-left hover:bg-[#F7F2EB]"><span className="font-heading text-lg font-semibold text-[#1A3D2F]">{entry.title}</span><span className="mt-1 block text-sm text-[#736B63]">{entry.year} · {displayNetwork(entry.network)} · TMDb {entry.tmdbId}</span></button>)}{!results.length && <p className="py-8 text-sm text-[#736B63]">No movies found.</p>}</div></> : <div className="mt-7">
       <button type="button" onClick={() => setMovie(null)} className="text-sm font-semibold text-[#1A3D2F] underline">← Back to movies</button><h2 className="mt-5 font-heading text-xl font-semibold text-[#1A3D2F]">EDIT MOVIE</h2><p className="mt-2 text-sm text-[#736B63]">{movie.title} · {movie.year} · {displayNetwork(movie.brandId)} · ID preserved: {movie.id}</p>
-      <div className="mt-6 grid gap-5 sm:grid-cols-2">{fields.map(([key, label]) => <label key={key} className="text-sm font-semibold text-[#1A3D2F]">{label}<input value={form[key] || ''} onChange={(event) => setForm({ ...form, [key]: event.target.value })} className="mt-2 w-full rounded border border-[#DCD3C7] bg-[#FFFDF9] px-3 py-2.5 font-normal outline-none focus:border-[#1A3D2F]" /></label>)}<label className="text-sm font-semibold text-[#1A3D2F] sm:col-span-2">Synopsis<textarea value={form.synopsis || ''} onChange={(event) => setForm({ ...form, synopsis: event.target.value })} rows={6} className="mt-2 w-full rounded border border-[#DCD3C7] bg-[#FFFDF9] px-3 py-2.5 font-normal outline-none focus:border-[#1A3D2F]" /></label><label className="text-sm font-semibold text-[#1A3D2F] sm:col-span-2">Writers<textarea value={form.writers || ''} onChange={(event) => setForm({ ...form, writers: event.target.value })} rows={3} placeholder="One writer per line" className="mt-2 w-full rounded border border-[#DCD3C7] bg-[#FFFDF9] px-3 py-2.5 font-normal outline-none focus:border-[#1A3D2F]" /></label></div>
+       <div className="mt-6 grid gap-5 sm:grid-cols-2">{fields.map(([key, label]) => <label key={key} className="text-sm font-semibold text-[#1A3D2F]">{label}<input value={form[key] || ''} onChange={(event) => setForm({ ...form, [key]: event.target.value })} className="mt-2 w-full rounded border border-[#DCD3C7] bg-[#FFFDF9] px-3 py-2.5 font-normal outline-none focus:border-[#1A3D2F]" /></label>)}<label className="text-sm font-semibold text-[#1A3D2F]">Network premiere date<input value={form.networkPremiereDate || ''} onChange={(event) => setForm({ ...form, networkPremiereDate: event.target.value })} placeholder="YYYY-MM-DD" className="mt-2 w-full rounded border border-[#DCD3C7] bg-[#FFFDF9] px-3 py-2.5 font-normal outline-none focus:border-[#1A3D2F]" /><span className="mt-1 block text-xs font-normal leading-5 text-[#736B63]">Use when the network premiere differs from the movie&apos;s original release date.</span></label><label className="text-sm font-semibold text-[#1A3D2F] sm:col-span-2">Synopsis<textarea value={form.synopsis || ''} onChange={(event) => setForm({ ...form, synopsis: event.target.value })} rows={6} className="mt-2 w-full rounded border border-[#DCD3C7] bg-[#FFFDF9] px-3 py-2.5 font-normal outline-none focus:border-[#1A3D2F]" /></label><label className="text-sm font-semibold text-[#1A3D2F] sm:col-span-2">Writers<textarea value={form.writers || ''} onChange={(event) => setForm({ ...form, writers: event.target.value })} rows={3} placeholder="One writer per line" className="mt-2 w-full rounded border border-[#DCD3C7] bg-[#FFFDF9] px-3 py-2.5 font-normal outline-none focus:border-[#1A3D2F]" /></label></div>
       <div className="mt-7 border-t border-[#E7DFD5] pt-6"><h3 className="font-heading text-lg font-semibold text-[#1A3D2F]">CHANGE SUMMARY</h3><p className="mt-2 text-sm text-[#736B63]">{changed.length ? changed.join(' · ') : 'No changes yet.'}</p><button type="button" disabled={busy || !changed.length} onClick={() => void save()} className="mt-5 rounded border border-[#1A3D2F] bg-[#1A3D2F] px-5 py-3 text-sm font-semibold text-[#FAF7F2] disabled:opacity-50">SAVE CHANGES</button></div>
       <div className="mt-10 border-t border-[#E7DFD5] pt-6"><h3 className="font-heading text-lg font-semibold text-[#841818]">DELETE MOVIE</h3><p className="mt-2 text-sm leading-6 text-[#736B63]">This removes <strong>{movie.title}</strong> ({movie.year}, {displayNetwork(movie.brandId)}) from XmasDB. The movie’s Christmas Ingredient assignment will be removed. Existing artwork will be retained safely.</p><label className="mt-4 block text-sm text-[#403A34]"><input type="checkbox" checked={deleteReady} onChange={(event) => setDeleteReady(event.target.checked)} className="mr-2" />I understand this permanently removes the movie from the canonical catalogue.</label><button type="button" disabled={busy || !deleteReady} onClick={() => void remove()} className="mt-4 rounded border border-[#841818] px-5 py-3 text-sm font-semibold text-[#841818] disabled:opacity-50">DELETE MOVIE</button></div>
     </div>}

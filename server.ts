@@ -28,7 +28,9 @@ import {
   buildSearchResults,
   buildFeedsMeta,
   buildFingerprintListing,
+  buildCalendarPayload,
 } from './src/server/catalogue-api';
+import { buildCalendarPdf } from './src/server/calendar-pdf';
 import { getFingerprintById } from './src/data/fingerprints';
 import { ContactRateLimiter, ensureContactStorage, getContactDataDir, readContactSubmissions, storeContactSubmission, updateContactSubmissions, validateContactSubmission } from './src/server/contact';
 import { ADMIN_SESSION_COOKIE, AdminAuth, AdminLoginRateLimiter, AdminMutationRateLimiter, clearCookieOptions, cookieOptions, getAdminLoginRedirect, isSameOriginMutation } from './src/server/admin-auth';
@@ -53,7 +55,7 @@ import { getSeasonalLogo, HALLOWEEN_LOGO, HALLOWEEN_LOGO_SIZES, HALLOWEEN_LOGO_S
 
 function isKnownPagePath(rawPath: string): boolean {
   const clean = rawPath.replace(/^\/+|\/+$/g, '');
-  if (!clean || clean === 'movies' || clean === 'all' || clean === 'feeds' || clean === 'birthdays' || clean === 'about' || clean === 'privacy' || clean === 'contact' || (clean === 'api' && PUBLIC_API_ENABLED)) return true;
+  if (!clean || clean === 'movies' || clean === 'all' || clean === 'calendar' || clean === 'feeds' || clean === 'birthdays' || clean === 'about' || clean === 'privacy' || clean === 'contact' || (clean === 'api' && PUBLIC_API_ENABLED)) return true;
   if (clean === 'admin/login' || clean === 'admin/submissions' || clean === 'admin/feed-statistics' || clean === 'admin/movies/add' || clean === 'admin/movies' || clean.startsWith('admin/movies/')) return true;
   const fingerprintMatch = clean.match(/^fingerprint\/([^/]+)$/i);
   if (fingerprintMatch) return Boolean(getFingerprintById(fingerprintMatch[1]));
@@ -348,6 +350,19 @@ async function startServer() {
   // Homepage sections.
   app.get('/api/home', (_req, res) => sendJson(res, buildHomePayload()));
   app.get('/api/birthdays', (_req, res) => sendJson(res, buildBirthdaysPayload()));
+
+  app.get('/api/calendar', (_req, res) => sendJson(res, buildCalendarPayload()));
+
+  app.get('/calendar.pdf', (req, res) => {
+    const yearValue = Number(req.query.year);
+    const payload = buildCalendarPayload();
+    const year = Number.isInteger(yearValue) && payload.years.includes(yearValue) ? yearValue : payload.activeYear;
+    const network = typeof req.query.network === 'string' && ['hallmark', 'lifetime', 'gaf', 'uptv'].includes(req.query.network) ? req.query.network : undefined;
+    const pdf = buildCalendarPdf(year, network);
+    res.setHeader('Content-Type', 'application/pdf');
+    res.setHeader('Content-Disposition', `attachment; filename="xmasdb-christmas-calendar-${year}${network ? `-${network}` : ''}.pdf"`);
+    res.send(pdf);
+  });
 
   app.get('/api/about', (_req, res) => sendJson(res, buildAboutPayload()));
   app.get('/api/privacy', (_req, res) => sendJson(res, {}));

@@ -1,6 +1,6 @@
 import React from 'react';
 import type { HomePayload } from '../api/types';
-import { getMoviePath, getMoviesPath } from '../utils/urls';
+import { getCalendarPath, getMoviePath, getMoviesPath } from '../utils/urls';
 import { MovieCard } from './MovieCard';
 import { NavigationLink } from './NavigationLink';
 import { PopularActorsSection } from './PopularActorsSection';
@@ -9,6 +9,7 @@ import { getYearPath } from '../utils/urls';
 import { ThisMonthSection } from './ThisMonthSection';
 import { HollyDivider } from './HollyDivider';
 import { BirthdaySection } from './BirthdaySection';
+import { CalendarDays } from 'lucide-react';
 
 interface HomePageProps {
   payload: Partial<HomePayload>;
@@ -32,11 +33,15 @@ export const HomePage: React.FC<HomePageProps> = ({ payload, onNavigate }) => {
 
       <section className="py-7 sm:py-9" aria-labelledby="coming-soon-heading">
         <div className={homepageMovieGridOuterClass}>
-          <div className="w-full flex items-end justify-between gap-4 mb-5">
+          <div className="w-full flex flex-wrap items-end justify-between gap-x-5 gap-y-2 mb-5">
             <div>
               <h2 id="coming-soon-heading" className="font-heading text-xl sm:text-2xl font-semibold text-[#1A3D2F]">Coming Soon</h2>
             </div>
-            <NavigationLink href={getMoviesPath()} onNavigate={onNavigate} className="ml-auto shrink-0 translate-y-1 text-xs sm:text-sm font-sans-clean font-medium text-[#1A3D2F] hover:text-[#143626]">View all coming soon <span className="xmas-nav-arrow">→</span></NavigationLink>
+            <div className="ml-auto flex flex-wrap items-center justify-end gap-x-3 gap-y-1.5 translate-y-1 text-xs sm:flex-nowrap sm:text-sm font-sans-clean font-medium">
+              <a href={getCalendarPath()} onClick={(event) => { event.preventDefault(); onNavigate(getCalendarPath()); }} className="inline-flex items-center gap-[6px] whitespace-nowrap text-[#1A3D2F] hover:text-[#143626]" aria-label="View Christmas movie release calendar"><CalendarDays className="h-3.5 w-3.5 shrink-0 text-[#B8860B]" strokeWidth={1.8} aria-hidden="true" /><span>Release Calendar</span></a>
+              <span className="font-sans-clean text-[#C8BFB3]" aria-hidden="true">·</span>
+              <NavigationLink href={getMoviesPath()} onNavigate={onNavigate} className="whitespace-nowrap text-[#1A3D2F] hover:text-[#143626]">View all coming soon <span className="xmas-nav-arrow">→</span></NavigationLink>
+            </div>
           </div>
         </div>
         <div className={homepageMovieGridOuterClass}>

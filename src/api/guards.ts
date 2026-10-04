@@ -9,6 +9,7 @@ import type {
   HomePayload,
   MovieDetailPayload,
   ListingMovie,
+  CalendarPayload,
 } from './types';
 
 function isRecord(value: unknown): value is Record<string, unknown> {
@@ -43,6 +44,11 @@ export function isCatalogueListingPayload(value: unknown): value is CatalogueLis
     && isNumber(value.totalPages)
     && isNumber(value.page)
     && isNumber(value.perPage);
+}
+
+export function isCalendarPayload(value: unknown): value is CalendarPayload {
+  return isRecord(value) && Array.isArray(value.movies) && Array.isArray(value.years) && isNumber(value.activeYear)
+    && value.movies.every((movie) => isRecord(movie) && isString(movie.title) && isString(movie.slug) && isNumber(movie.tmdbId) && isString(movie.brandId) && isNumber(movie.year) && (movie.dateKey === null || isString(movie.dateKey)));
 }
 
 export function isFingerprintListingPayload(value: unknown): value is FingerprintListing {

@@ -1,7 +1,7 @@
 import type { Actor, Brand, Movie } from '../types';
 import type { ActorFilmographyItem, MovieDetailMovie } from '../api/types';
 import { getBrandById } from '../data/brands';
-import { SITE_ORIGIN, getActorPath, getFeedsPath, getMoviePath, getMoviesPath, getNetworkPath, getYearPath, toCanonicalUrl } from './urls';
+import { SITE_ORIGIN, getActorPath, getCalendarPath, getFeedsPath, getMoviePath, getMoviesPath, getNetworkPath, getYearPath, toCanonicalUrl } from './urls';
 import { resolveImageUrl } from './image-url';
 
 export interface SeoDocument {
@@ -79,6 +79,23 @@ export function buildMoviesSeo(totalMovies?: number): SeoDocument {
       '@type': 'CollectionPage',
       name: 'Christmas Movie Database',
       url: toCanonicalUrl(getMoviesPath()),
+    },
+  };
+}
+
+export function buildCalendarSeo(year = new Date().getUTCFullYear()): SeoDocument {
+  const description = `Christmas movie premiere dates for ${year} from Hallmark, Lifetime, Great American Family and UPtv, with a printable XmasDB calendar.`;
+  return {
+    title: `${year} Christmas Movie Release Calendar | XmasDB`,
+    description,
+    canonicalPath: getCalendarPath(),
+    image: '/logo-1100.webp',
+    schema: {
+      '@context': 'https://schema.org',
+      '@type': 'CollectionPage',
+      name: `${year} Christmas Movie Release Calendar`,
+      url: toCanonicalUrl(getCalendarPath()),
+      description,
     },
   };
 }

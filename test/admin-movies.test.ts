@@ -35,7 +35,7 @@ assert.equal(searchAdminMovies([{ ...movie, originalTitle: 'Oy to the World' }],
 assert.equal(searchAdminMovies([{ ...movie, alternativeTitles: [{ title: 'A Hot Cocoa Christmas', country: 'US' }] }], 'A Hot Cocoa Christmas')[0]?.tmdbId, 1547913, 'admin movie search should match an alternative title');
 const editable = {
   brand: 'lifetime', title: 'Edited Christmas Story', releaseDate: '2024-11-02', synopsis: 'Updated synopsis', runtimeMinutes: '92', rating: '7.4',
-  director: 'New Director', writers: 'First Writer\nSecond Writer', imdbId: 'tt1234567', tmdbId: '1547914', posterUrl: '/images/posters/1547914.jpg', backdropUrl: '/images/backdrops/1547914.jpg',
+  director: 'New Director', writers: 'First Writer\nSecond Writer', networkPremiereDate: '2025-11-08', imdbId: 'tt1234567', tmdbId: '1547914', posterUrl: '/images/posters/1547914.jpg', backdropUrl: '/images/backdrops/1547914.jpg',
 };
 const validated = validateAdminMovieEdit(editable);
 const sourceMovie = { ...movie, id: 'hallmark-2025-preview', cast: [{ actorId: '1', name: 'Actor', character: 'Role', slug: 'actor' }], crew: [{ id: 7, name: 'Old Writer', job: 'Writer', department: 'Writing' }], fingerprints: ['small-town'] };
@@ -43,12 +43,15 @@ const edited = applyAdminMovieEdit(sourceMovie, validated);
 assert.equal(edited.id, sourceMovie.id, 'editing preserves the canonical movie ID');
 assert.equal(edited.year, 2024, 'editing release date moves the catalogue year');
 assert.equal(edited.brandId, 'lifetime', 'editing network moves the catalogue network');
+assert.equal(edited.networkPremiereDate, '2025-11-08', 'admin editing preserves the network premiere date');
+assert.equal(applyAdminMovieEdit({ ...sourceMovie, networkPremiereDate: '2025-12-01' }, validateAdminMovieEdit({ ...editable, networkPremiereDate: '' })).networkPremiereDate, undefined, 'admin editing can remove the network premiere date');
 assert.deepEqual(edited.cast, sourceMovie.cast, 'editing preserves cast');
 assert.deepEqual(getMovieWriters(edited), ['First Writer', 'Second Writer']);
 assert.equal(edited.fingerprints, sourceMovie.fingerprints, 'editing preserves Christmas Ingredients');
 assert.throws(() => validateAdminMovieEdit({ ...editable, tmdbId: 'not-an-id' }), /TMDb ID/);
 assert.throws(() => validateAdminMovieEdit({ ...editable, posterUrl: 'https://example.test/poster.jpg' }), /Poster path/);
 assert.throws(() => validateAdminMovieEdit({ ...editable, imdbId: 'bad' }), /IMDb ID/);
+assert.throws(() => validateAdminMovieEdit({ ...editable, networkPremiereDate: '08-11-2025' }), /Network premiere date/);
 assert.throws(() => validateMovieUniqueness([edited, { ...sourceMovie, id: 'other', tmdbId: edited.tmdbId }], edited), /TMDb ID/);
 const deleted = removeMovie([sourceMovie, movie], sourceMovie.id);
 assert.equal(deleted.movie.id, sourceMovie.id);
