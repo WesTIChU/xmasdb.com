@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
 interface MovieResult { id: string; title: string; year: number; network: string; tmdbId: number; }
-interface MovieRecord extends MovieResult { brandId: string; releaseDate: string; networkPremiereDate?: string; synopsis: string; runtimeMinutes?: number; voteAverage?: number; director?: string; writers: string[]; imdbId?: string; posterUrl: string; backdropUrl?: string; slug: string; }
+interface MovieRecord { id: string; title: string; year: number; tmdbId: number; brandId: string; releaseDate: string; networkPremiereDate?: string; alternativeTitles?: Array<{ title: string; country: string }>; synopsis: string; runtimeMinutes?: number; voteAverage?: number; director?: string; writers: string[]; imdbId?: string; posterUrl: string; backdropUrl?: string; slug: string; }
 interface AdminMovieSearchResponse { movies: MovieResult[]; query: string; }
 interface AdminMoviePreviewResponse { baseSha: string; movie: MovieRecord; }
 interface AdminMovieMutationResponse { message?: string; }
@@ -44,11 +44,17 @@ function isOptionalString(value: Record<string, unknown>, key: string): boolean 
   return value[key] === undefined || isString(value[key]);
 }
 
-function isMovieRecord(value: unknown): value is MovieRecord {
-  if (!isRecord(value) || !isMovieResult(value)) return false;
+function isOptionalAlternativeTitles(value: Record<string, unknown>): boolean {
+  return value.alternativeTitles === undefined
+    || (Array.isArray(value.alternativeTitles) && value.alternativeTitles.every((entry) => isRecord(entry) && isString(entry.title) && isString(entry.country)));
+}
+
+export function isMovieRecord(value: unknown): value is MovieRecord {
+  if (!isRecord(value) || !isString(value.id) || !isString(value.title) || !isNumber(value.year) || !isNumber(value.tmdbId)) return false;
   return isString(value.brandId)
     && isString(value.releaseDate)
     && isOptionalString(value, 'networkPremiereDate')
+    && isOptionalAlternativeTitles(value)
     && isString(value.synopsis)
     && Array.isArray(value.writers)
     && value.writers.every(isString)
@@ -68,7 +74,7 @@ function isAdminMovieSearchResponse(value: unknown): value is AdminMovieSearchRe
     && isString(value.query);
 }
 
-function isAdminMoviePreviewResponse(value: unknown): value is AdminMoviePreviewResponse {
+export function isAdminMoviePreviewResponse(value: unknown): value is AdminMoviePreviewResponse {
   return isRecord(value) && isString(value.baseSha) && isMovieRecord(value.movie);
 }
 

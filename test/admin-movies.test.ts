@@ -6,6 +6,7 @@ import { applyAdminMovieEdit, getMovieWriters, removeMovie, removeMovieFingerpri
 import type { FingerprintId } from '../src/data/fingerprints';
 import fs from 'node:fs/promises';
 import path from 'node:path';
+import { isAdminMoviePreviewResponse } from '../src/components/AdminMoviesPage';
 
 assert.equal(extractTmdbId('1547913'), 1547913);
 assert.equal(extractTmdbId('https://www.themoviedb.org/movie/1547913-some-movie'), 1547913);
@@ -13,6 +14,19 @@ assert.equal(extractTmdbId('not-a-movie'), undefined);
 assert.equal(normalizeBrand('Great American Family'), 'gaf');
 assert.equal(normalizeBrand('UPtv'), 'uptv');
 assert.equal(normalizeStatus('COMING-SOON'), 'coming-soon');
+
+const realisticPreview = {
+  baseSha: 'sha-1518521',
+  movie: {
+    id: 'gaf-2025-karen-kingsbury-s-the-christmas-ring', title: "Karen Kingsbury's The Christmas Ring", year: 2025, tmdbId: 1518521,
+    brandId: 'gaf', releaseDate: '2025-11-06', networkPremiereDate: '2026-11-07', alternativeTitles: [{ title: 'The Christmas Ring', country: 'US' }],
+    synopsis: 'Overview', writers: ['Tyler Russell'], posterUrl: '/images/posters/1518521.jpg', slug: 'karen-kingsbury-s-the-christmas-ring',
+  },
+};
+assert.equal(isAdminMoviePreviewResponse(realisticPreview), true, 'canonical preview with alternative titles and network premiere date is accepted');
+assert.equal(isAdminMoviePreviewResponse({ ...realisticPreview, movie: { ...realisticPreview.movie, networkPremiereDate: undefined } }), true, 'preview without network premiere date is accepted');
+assert.equal(isAdminMoviePreviewResponse({ ...realisticPreview, movie: { ...realisticPreview.movie, alternativeTitles: [{ title: 'The Christmas Ring', country: 'US' }] } }), true, 'preview with canonical alternative title objects is accepted');
+assert.equal(isAdminMoviePreviewResponse({ ...realisticPreview, movie: { ...realisticPreview.movie, network: 'GAF' } }), true, 'preview contract does not require the search-only network field');
 
 const parsed = parseBulkMovieInput('1547913\n\n1064137 | lifetime | collection\n1234567 | GAF | coming-soon', 'hallmark', 'coming-soon');
 assert.equal(parsed.items.length, 3, 'blank lines are ignored');
