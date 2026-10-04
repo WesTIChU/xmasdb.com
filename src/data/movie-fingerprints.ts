@@ -1706,6 +1706,11 @@ export const PROTOTYPE_MOVIE_FINGERPRINTS: Readonly<Record<string, readonly Fing
     "old-flame",
     "returns-home"
   ],
+  "hallmark-2022-campfire-christmas": [
+    "family-business",
+    "family-reunion",
+    "reunion"
+  ],
   "hallmark-2022-christmas-at-the-golden-dragon": [
     "family-business",
     "family-legacy",
