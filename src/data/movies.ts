@@ -70437,9 +70437,9 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1754947",
       "imdb": "https://www.imdb.com/title/tt43674919/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:40:20.807Z",
+    "tmdbUpdatedAt": "2026-10-04T12:36:04.295Z",
     "premiereDate": "2026-12-19",
-    "tmdbFetchedAt": "2026-10-04T07:40:20.807Z"
+    "tmdbFetchedAt": "2026-10-04T12:36:04.295Z"
   },
   {
     "id": "gaf-2026-christmas-at-moose-lake",
@@ -70621,9 +70621,9 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1665375",
       "imdb": "https://www.imdb.com/title/tt41054296/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:40:21.045Z",
+    "tmdbUpdatedAt": "2026-10-04T12:36:04.546Z",
     "premiereDate": "2026-11-15",
-    "tmdbFetchedAt": "2026-10-04T07:40:21.045Z"
+    "tmdbFetchedAt": "2026-10-04T12:36:04.546Z"
   },
   {
     "id": "gaf-2025-another-sweet-christmas",
@@ -136600,8 +136600,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1772765",
       "imdb": "https://www.imdb.com/title/tt46069464/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:47:12.050Z",
-    "tmdbFetchedAt": "2026-10-04T07:47:12.050Z",
+    "tmdbUpdatedAt": "2026-10-04T12:36:05.517Z",
+    "tmdbFetchedAt": "2026-10-04T12:36:05.517Z",
     "backdropUrl": "/images/backdrops/1772765.jpg"
   },
   {
@@ -136779,9 +136779,9 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1729134",
       "imdb": "https://www.imdb.com/title/tt43662087/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:47:12.767Z",
+    "tmdbUpdatedAt": "2026-10-04T12:36:06.192Z",
     "backdropUrl": "/images/backdrops/1729134.jpg",
-    "tmdbFetchedAt": "2026-10-04T07:47:12.767Z"
+    "tmdbFetchedAt": "2026-10-04T12:36:06.192Z"
   },
   {
     "id": "hallmark-2026-mr-mrs-christmas",
@@ -136866,8 +136866,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773006",
       "imdb": "https://www.imdb.com/title/tt46070651/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:47:13.493Z",
-    "tmdbFetchedAt": "2026-10-04T07:47:13.493Z",
+    "tmdbUpdatedAt": "2026-10-04T12:36:06.852Z",
+    "tmdbFetchedAt": "2026-10-04T12:36:06.852Z",
     "backdropUrl": "/images/backdrops/1773006.jpg",
     "alternativeTitles": [
       {
@@ -136952,9 +136952,9 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773195",
       "imdb": "https://www.imdb.com/title/tt46071555/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:47:14.244Z",
+    "tmdbUpdatedAt": "2026-10-04T12:36:07.634Z",
     "backdropUrl": "/images/backdrops/1773195.jpg",
-    "tmdbFetchedAt": "2026-10-04T07:47:14.244Z"
+    "tmdbFetchedAt": "2026-10-04T12:36:07.634Z"
   },
   {
     "id": "hallmark-2026-forgotten-holiday",
@@ -137024,8 +137024,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773382",
       "imdb": "https://www.imdb.com/title/tt46071998/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:47:14.961Z",
-    "tmdbFetchedAt": "2026-10-04T07:47:14.961Z",
+    "tmdbUpdatedAt": "2026-10-04T12:36:08.269Z",
+    "tmdbFetchedAt": "2026-10-04T12:36:08.269Z",
     "backdropUrl": "/images/backdrops/1773382.jpg",
     "alternativeTitles": [
       {
@@ -137103,8 +137103,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773380",
       "imdb": "https://www.imdb.com/title/tt46072491/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:47:15.728Z",
-    "tmdbFetchedAt": "2026-10-04T07:47:15.728Z",
+    "tmdbUpdatedAt": "2026-10-04T12:36:08.933Z",
+    "tmdbFetchedAt": "2026-10-04T12:36:08.933Z",
     "backdropUrl": "/images/backdrops/1773380.jpg",
     "alternativeTitles": [
       {
@@ -137182,8 +137182,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773378",
       "imdb": "https://www.imdb.com/title/tt46075371/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:47:15.972Z",
-    "tmdbFetchedAt": "2026-10-04T07:47:15.972Z"
+    "tmdbUpdatedAt": "2026-10-04T12:36:09.178Z",
+    "tmdbFetchedAt": "2026-10-04T12:36:09.178Z"
   },
   {
     "id": "hallmark-2026-adopting-st-nick",
@@ -137270,8 +137270,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773374",
       "imdb": "https://www.imdb.com/title/tt43749818/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:47:16.206Z",
-    "tmdbFetchedAt": "2026-10-04T07:47:16.206Z"
+    "tmdbUpdatedAt": "2026-10-04T12:36:09.416Z",
+    "tmdbFetchedAt": "2026-10-04T12:36:09.416Z"
   },
   {
     "id": "hallmark-2026-a-danish-christmas",
@@ -137362,10 +137362,10 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773368",
       "imdb": "https://www.imdb.com/title/tt46066911/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:47:16.942Z",
+    "tmdbUpdatedAt": "2026-10-04T12:36:10.100Z",
     "runtimeMinutes": 84,
     "backdropUrl": "/images/backdrops/1773368.jpg",
-    "tmdbFetchedAt": "2026-10-04T07:47:16.942Z"
+    "tmdbFetchedAt": "2026-10-04T12:36:10.100Z"
   },
   {
     "id": "hallmark-2026-merry-memories",
@@ -137433,8 +137433,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773363",
       "imdb": "https://www.imdb.com/title/tt46075438/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:47:17.176Z",
-    "tmdbFetchedAt": "2026-10-04T07:47:17.176Z"
+    "tmdbUpdatedAt": "2026-10-04T12:36:10.343Z",
+    "tmdbFetchedAt": "2026-10-04T12:36:10.343Z"
   },
   {
     "id": "hallmark-2026-holiday-unplugged",
@@ -137539,8 +137539,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773357",
       "imdb": "https://www.imdb.com/title/tt46075500/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:47:17.414Z",
-    "tmdbFetchedAt": "2026-10-04T07:47:17.414Z",
+    "tmdbUpdatedAt": "2026-10-04T12:36:10.580Z",
+    "tmdbFetchedAt": "2026-10-04T12:36:10.580Z",
     "director": "Michael Robison",
     "alternativeTitles": [
       {
@@ -137656,8 +137656,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773353",
       "imdb": "https://www.imdb.com/title/tt46075510/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:47:17.649Z",
-    "tmdbFetchedAt": "2026-10-04T07:47:17.649Z",
+    "tmdbUpdatedAt": "2026-10-04T12:36:10.826Z",
+    "tmdbFetchedAt": "2026-10-04T12:36:10.826Z",
     "alternativeTitles": [
       {
         "title": "A Wingdaughter's Christmas",
@@ -137734,7 +137734,16 @@ export const MOVIES: Movie[] = [
         "note": ""
       }
     ],
-    "crew": [],
+    "crew": [
+      {
+        "id": 5009,
+        "name": "Peter Benson",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/btcuZXvGZcO1AyCQXcAeWWLf0jI.jpg",
+        "creditId": "6ac1b5dd8528f5c94746a604"
+      }
+    ],
     "voteAverage": 0,
     "voteCount": 0,
     "status": "coming-soon",
@@ -137743,15 +137752,16 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773350",
       "imdb": "https://www.imdb.com/title/tt46075976/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:47:18.431Z",
-    "tmdbFetchedAt": "2026-10-04T07:47:18.431Z",
+    "tmdbUpdatedAt": "2026-10-04T12:36:11.481Z",
+    "tmdbFetchedAt": "2026-10-04T12:36:11.481Z",
     "backdropUrl": "/images/backdrops/1773350.jpg",
     "alternativeTitles": [
       {
         "title": "A Cowboy for Christmas",
         "country": "US"
       }
-    ]
+    ],
+    "director": "Peter Benson"
   },
   {
     "id": "hallmark-2026-the-nights-before-christmas",
@@ -137813,9 +137823,9 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773345",
       "imdb": "https://www.imdb.com/title/tt46076002/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:47:19.180Z",
+    "tmdbUpdatedAt": "2026-10-04T12:36:12.186Z",
     "backdropUrl": "/images/backdrops/1773345.jpg",
-    "tmdbFetchedAt": "2026-10-04T07:47:19.180Z",
+    "tmdbFetchedAt": "2026-10-04T12:36:12.186Z",
     "alternativeTitles": [
       {
         "title": "The Christmas Loop",
@@ -137893,8 +137903,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773340",
       "imdb": "https://www.imdb.com/title/tt46076026/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:47:19.426Z",
-    "tmdbFetchedAt": "2026-10-04T07:47:19.426Z"
+    "tmdbUpdatedAt": "2026-10-04T12:36:12.431Z",
+    "tmdbFetchedAt": "2026-10-04T12:36:12.431Z"
   },
   {
     "id": "hallmark-2026-our-holiday-playbook",
@@ -137956,8 +137966,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773334",
       "imdb": "https://www.imdb.com/title/tt46076042/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:47:19.660Z",
-    "tmdbFetchedAt": "2026-10-04T07:47:19.660Z"
+    "tmdbUpdatedAt": "2026-10-04T12:36:12.716Z",
+    "tmdbFetchedAt": "2026-10-04T12:36:12.716Z"
   },
   {
     "id": "hallmark-2026-christmas-in-blue-dog-valley",
@@ -138027,8 +138037,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773330",
       "imdb": "https://www.imdb.com/title/tt46076055/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:47:20.370Z",
-    "tmdbFetchedAt": "2026-10-04T07:47:20.370Z",
+    "tmdbUpdatedAt": "2026-10-04T12:36:13.394Z",
+    "tmdbFetchedAt": "2026-10-04T12:36:13.394Z",
     "backdropUrl": "/images/backdrops/1773330.jpg"
   },
   {
@@ -138112,8 +138122,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt46064711/"
     },
     "backdropUrl": "/images/backdrops/1773329.jpg",
-    "tmdbUpdatedAt": "2026-10-04T07:47:21.104Z",
-    "tmdbFetchedAt": "2026-10-04T07:47:21.104Z"
+    "tmdbUpdatedAt": "2026-10-04T12:36:14.061Z",
+    "tmdbFetchedAt": "2026-10-04T12:36:14.061Z"
   },
   {
     "id": "hallmark-2026-christmas-delivered",
@@ -138212,9 +138222,15 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773322",
       "imdb": "https://www.imdb.com/title/tt41442843/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:47:21.893Z",
+    "tmdbUpdatedAt": "2026-10-04T12:36:14.705Z",
     "backdropUrl": "/images/backdrops/1773322.jpg",
-    "tmdbFetchedAt": "2026-10-04T07:47:21.893Z"
+    "tmdbFetchedAt": "2026-10-04T12:36:14.705Z",
+    "alternativeTitles": [
+      {
+        "title": "Treeber",
+        "country": "US"
+      }
+    ]
   },
   {
     "id": "hallmark-2026-return-to-santa",
@@ -138405,8 +138421,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773042",
       "imdb": "https://www.imdb.com/title/tt46076498/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:47:22.166Z",
-    "tmdbFetchedAt": "2026-10-04T07:47:22.166Z",
+    "tmdbUpdatedAt": "2026-10-04T12:36:14.947Z",
+    "tmdbFetchedAt": "2026-10-04T12:36:14.947Z",
     "director": "Panta Mosleh"
   },
   {
@@ -138547,8 +138563,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773318",
       "imdb": "https://www.imdb.com/title/tt43655245/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:47:22.405Z",
-    "tmdbFetchedAt": "2026-10-04T07:47:22.405Z"
+    "tmdbUpdatedAt": "2026-10-04T12:36:15.253Z",
+    "tmdbFetchedAt": "2026-10-04T12:36:15.253Z"
   },
   {
     "id": "hallmark-2026-holiday-ever-after-a-disney-world-wish-come-true",
@@ -138736,8 +138752,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt39126701/"
     },
     "backdropUrl": "/images/backdrops/1594516.jpg",
-    "tmdbUpdatedAt": "2026-10-04T07:47:23.134Z",
-    "tmdbFetchedAt": "2026-10-04T07:47:23.134Z"
+    "tmdbUpdatedAt": "2026-10-04T12:36:15.959Z",
+    "tmdbFetchedAt": "2026-10-04T12:36:15.959Z"
   },
   {
     "id": "hallmark-2026-the-most-wonderful-secret",
@@ -138799,8 +138815,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773316",
       "imdb": "https://www.imdb.com/title/tt46076602/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:47:23.369Z",
-    "tmdbFetchedAt": "2026-10-04T07:47:23.369Z"
+    "tmdbUpdatedAt": "2026-10-04T12:36:16.200Z",
+    "tmdbFetchedAt": "2026-10-04T12:36:16.200Z"
   },
   {
     "id": "hallmark-2026-eight-nights-for-love",
@@ -138984,8 +139000,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773298",
       "imdb": "https://www.imdb.com/title/tt43746550/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:47:23.644Z",
-    "tmdbFetchedAt": "2026-10-04T07:47:23.644Z"
+    "tmdbUpdatedAt": "2026-10-04T12:36:16.447Z",
+    "tmdbFetchedAt": "2026-10-04T12:36:16.447Z"
   },
   {
     "id": "hallmark-2026-miles-to-christmas",
@@ -139182,8 +139198,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773293",
       "imdb": "https://www.imdb.com/title/tt40629979/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:47:23.880Z",
-    "tmdbFetchedAt": "2026-10-04T07:47:23.880Z"
+    "tmdbUpdatedAt": "2026-10-04T12:36:16.686Z",
+    "tmdbFetchedAt": "2026-10-04T12:36:16.686Z"
   },
   {
     "id": "hallmark-2026-the-snowflake-effect",
@@ -139245,8 +139261,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773286",
       "imdb": "https://www.imdb.com/title/tt46076619/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:47:24.120Z",
-    "tmdbFetchedAt": "2026-10-04T07:47:24.120Z"
+    "tmdbUpdatedAt": "2026-10-04T12:36:16.928Z",
+    "tmdbFetchedAt": "2026-10-04T12:36:16.928Z"
   },
   {
     "id": "hallmark-2026-a-grand-biltmore-christmas",
@@ -139448,9 +139464,9 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1602653",
       "imdb": "https://www.imdb.com/title/tt39380754/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:47:24.876Z",
+    "tmdbUpdatedAt": "2026-10-04T12:36:17.577Z",
     "backdropUrl": "/images/backdrops/1602653.jpg",
-    "tmdbFetchedAt": "2026-10-04T07:47:24.876Z"
+    "tmdbFetchedAt": "2026-10-04T12:36:17.577Z"
   },
   {
     "id": "hallmark-2026-an-angel-in-my-stocking",
@@ -139617,8 +139633,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773280",
       "imdb": "https://www.imdb.com/title/tt46064715/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:47:25.115Z",
-    "tmdbFetchedAt": "2026-10-04T07:47:25.115Z",
+    "tmdbUpdatedAt": "2026-10-04T12:36:17.819Z",
+    "tmdbFetchedAt": "2026-10-04T12:36:17.819Z",
     "director": "Ali Liebert"
   },
   {
@@ -139705,9 +139721,9 @@ export const MOVIES: Movie[] = [
     "links": {
       "tmdb": "https://www.themoviedb.org/movie/1733866"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:47:25.353Z",
+    "tmdbUpdatedAt": "2026-10-04T12:36:18.057Z",
     "imdbId": "tt43750204",
-    "tmdbFetchedAt": "2026-10-04T07:47:25.353Z"
+    "tmdbFetchedAt": "2026-10-04T12:36:18.057Z"
   },
   {
     "id": "hallmark-2026-snow-globe-town",
@@ -139816,7 +139832,7 @@ export const MOVIES: Movie[] = [
     ],
     "releaseDates": [
       {
-        "country": "GB",
+        "country": "US",
         "releaseDate": "2026-12-12T00:00:00.000Z",
         "type": 6,
         "certification": "",
@@ -139849,8 +139865,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773035",
       "imdb": "https://www.imdb.com/title/tt41783274/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:47:25.588Z",
-    "tmdbFetchedAt": "2026-10-04T07:47:25.588Z",
+    "tmdbUpdatedAt": "2026-10-04T12:36:18.292Z",
+    "tmdbFetchedAt": "2026-10-04T12:36:18.292Z",
     "alternativeTitles": [
       {
         "title": "A Christmas Through Your Eyes",
@@ -139949,9 +139965,9 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773275",
       "imdb": "https://www.imdb.com/title/tt46076883/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:47:25.827Z",
+    "tmdbUpdatedAt": "2026-10-04T12:36:18.526Z",
     "director": "Jeff Beesley",
-    "tmdbFetchedAt": "2026-10-04T07:47:25.827Z"
+    "tmdbFetchedAt": "2026-10-04T12:36:18.526Z"
   },
   {
     "id": "hallmark-2026-hearts-all-aglow",
@@ -140023,8 +140039,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773270",
       "imdb": "https://www.imdb.com/title/tt46076903/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:47:26.063Z",
-    "tmdbFetchedAt": "2026-10-04T07:47:26.063Z"
+    "tmdbUpdatedAt": "2026-10-04T12:36:18.769Z",
+    "tmdbFetchedAt": "2026-10-04T12:36:18.769Z"
   },
   {
     "id": "hallmark-2026-barking-all-the-way",
@@ -140094,8 +140110,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773266",
       "imdb": "https://www.imdb.com/title/tt46076921/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:47:26.298Z",
-    "tmdbFetchedAt": "2026-10-04T07:47:26.298Z"
+    "tmdbUpdatedAt": "2026-10-04T12:36:19.028Z",
+    "tmdbFetchedAt": "2026-10-04T12:36:19.028Z"
   },
   {
     "id": "hallmark-2026-save-the-date-for-christmas",
@@ -140157,8 +140173,14 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt46076940/"
     },
     "premiereDate": "2026-12-20",
-    "tmdbUpdatedAt": "2026-10-04T07:47:26.533Z",
-    "tmdbFetchedAt": "2026-10-04T07:47:26.533Z"
+    "tmdbUpdatedAt": "2026-10-04T12:36:19.264Z",
+    "tmdbFetchedAt": "2026-10-04T12:36:19.264Z",
+    "alternativeTitles": [
+      {
+        "title": "Single at the Wedding",
+        "country": "US"
+      }
+    ]
   },
   {
     "id": "lifetime-2025-a-runaway-bride-for-christmas",
@@ -155412,9 +155434,9 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-10-04T07:48:59.168Z",
+    "tmdbUpdatedAt": "2026-10-04T12:36:19.542Z",
     "premiereDate": "2026-11-12",
-    "tmdbFetchedAt": "2026-10-04T07:48:59.168Z",
+    "tmdbFetchedAt": "2026-10-04T12:36:19.542Z",
     "alternativeTitles": [
       {
         "title": "A Royal Christmas Stable",
@@ -155571,9 +155593,9 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "o9dyk5v_ybQ",
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-10-04T07:48:59.666Z",
+    "tmdbUpdatedAt": "2026-10-04T12:36:19.986Z",
     "premiereDate": "2026-11-19",
-    "tmdbFetchedAt": "2026-10-04T07:48:59.666Z",
+    "tmdbFetchedAt": "2026-10-04T12:36:19.986Z",
     "alternativeTitles": [
       {
         "title": "Christmas Persuasion",
@@ -157321,9 +157343,9 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-10-04T07:49:13.202Z",
+    "tmdbUpdatedAt": "2026-10-04T12:36:20.292Z",
     "premiereDate": "2026-11-21",
-    "tmdbFetchedAt": "2026-10-04T07:49:13.202Z",
+    "tmdbFetchedAt": "2026-10-04T12:36:20.292Z",
     "imdbId": "tt46666760",
     "alternativeTitles": [
       {
@@ -157420,9 +157442,9 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-10-04T07:49:13.438Z",
+    "tmdbUpdatedAt": "2026-10-04T12:36:20.582Z",
     "premiereDate": "2026-10-31",
-    "tmdbFetchedAt": "2026-10-04T07:49:13.438Z",
+    "tmdbFetchedAt": "2026-10-04T12:36:20.582Z",
     "imdbId": "tt46668554",
     "alternativeTitles": [
       {
@@ -157434,7 +157456,7 @@ export const MOVIES: Movie[] = [
   {
     "id": "gaf-2026-a-christmas-rescue",
     "slug": "a-christmas-rescue",
-    "title": "A Christmas Rescue",
+    "title": "A Rescue Dog For Christmas",
     "year": 2026,
     "brandId": "gaf",
     "releaseDate": "2026-11-28",
@@ -157467,7 +157489,7 @@ export const MOVIES: Movie[] = [
     "imdbId": "tt43768739",
     "isComingSoon": true,
     "status": "coming-soon",
-    "originalTitle": "A Christmas Rescue",
+    "originalTitle": "A Rescue Dog For Christmas",
     "genres": [],
     "releaseDates": [
       {
@@ -157490,9 +157512,15 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-10-04T07:49:13.673Z",
+    "tmdbUpdatedAt": "2026-10-04T12:36:20.821Z",
     "premiereDate": "2026-11-28",
-    "tmdbFetchedAt": "2026-10-04T07:49:13.673Z"
+    "tmdbFetchedAt": "2026-10-04T12:36:20.821Z",
+    "alternativeTitles": [
+      {
+        "title": "A Christmas Rescue",
+        "country": "US"
+      }
+    ]
   },
   {
     "id": "gaf-2026-a-very-evergreen-christmas",
@@ -157654,9 +157682,9 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-10-04T07:49:13.909Z",
+    "tmdbUpdatedAt": "2026-10-04T12:36:21.062Z",
     "premiereDate": "2026-12-13",
-    "tmdbFetchedAt": "2026-10-04T07:49:13.909Z"
+    "tmdbFetchedAt": "2026-10-04T12:36:21.062Z"
   },
   {
     "id": "gaf-2026-a-second-chance-christmas",
@@ -157721,9 +157749,9 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-10-04T07:49:14.629Z",
+    "tmdbUpdatedAt": "2026-10-04T12:36:21.720Z",
     "premiereDate": "2026-10-10",
-    "tmdbFetchedAt": "2026-10-04T07:49:14.629Z",
+    "tmdbFetchedAt": "2026-10-04T12:36:21.720Z",
     "imdbId": "tt46668520",
     "backdropUrl": "/images/backdrops/1652348.jpg",
     "alternativeTitles": [
@@ -157865,9 +157893,9 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-10-04T07:49:14.864Z",
+    "tmdbUpdatedAt": "2026-10-04T12:36:21.968Z",
     "premiereDate": "2026-12-03",
-    "tmdbFetchedAt": "2026-10-04T07:49:14.864Z",
+    "tmdbFetchedAt": "2026-10-04T12:36:21.968Z",
     "alternativeTitles": [
       {
         "title": "The Ornament Library",
@@ -159211,9 +159239,9 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-10-04T07:49:25.588Z",
+    "tmdbUpdatedAt": "2026-10-04T12:36:22.410Z",
     "premiereDate": "2026-10-17",
-    "tmdbFetchedAt": "2026-10-04T07:49:25.588Z"
+    "tmdbFetchedAt": "2026-10-04T12:36:22.410Z"
   },
   {
     "id": "gaf-2025-karen-kingsbury-s-the-christmas-ring",
@@ -159430,7 +159458,7 @@ export const MOVIES: Movie[] = [
     "brandId": "gaf",
     "releaseDate": "2026-11-08",
     "synopsis": "​In An Ozark Mountain Christmas, when a dedicated young designer (Cohen) at a crossroads reluctantly follows her sister home to the nostalgic heart of the Ozarks for Christmas, she finds herself rediscovering not only her family’s legacy for commitment to craft, but also the quiet faith and purpose she has lost in the rush of modern life. With the help of Paul (Stoddard), Clara will reconnect with work rooted in care and community.",
-    "posterUrl": "",
+    "posterUrl": "/images/posters/1776532.jpg",
     "cast": [
       {
         "actorId": "1751311",
@@ -159517,14 +159545,29 @@ export const MOVIES: Movie[] = [
         "job": "Director",
         "department": "Directing",
         "creditId": "6ab2a966ffe6b8bf69711ed7"
+      },
+      {
+        "id": 931594,
+        "name": "Joslyn Jensen",
+        "job": "Writer",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/wGqbnUN5ny906nheuooCiBACJG2.jpg",
+        "creditId": "6ac2132b22c06265405ad335"
+      },
+      {
+        "id": 4278807,
+        "name": "Vincenzo Conrorio",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "6ac2133ae48295e8933241f2"
       }
     ],
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-10-04T07:49:27.404Z",
+    "tmdbUpdatedAt": "2026-10-04T12:36:23.585Z",
     "premiereDate": "2026-11-08",
-    "tmdbFetchedAt": "2026-10-04T07:49:27.404Z"
+    "tmdbFetchedAt": "2026-10-04T12:36:23.585Z"
   },
   {
     "id": "gaf-2026-the-christmas-yes-list",
@@ -159588,9 +159631,9 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-10-04T07:49:27.638Z",
+    "tmdbUpdatedAt": "2026-10-04T12:36:23.826Z",
     "premiereDate": "2026-11-14",
-    "tmdbFetchedAt": "2026-10-04T07:49:27.638Z",
+    "tmdbFetchedAt": "2026-10-04T12:36:23.826Z",
     "imdbId": "tt46668453"
   },
   {
@@ -159750,9 +159793,9 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-10-04T07:49:27.876Z",
+    "tmdbUpdatedAt": "2026-10-04T12:36:24.063Z",
     "premiereDate": "2026-11-22",
-    "tmdbFetchedAt": "2026-10-04T07:49:27.876Z",
+    "tmdbFetchedAt": "2026-10-04T12:36:24.063Z",
     "alternativeTitles": [
       {
         "title": "In Starlight Point: A Christmas Card Mystery",
@@ -159899,9 +159942,9 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-10-04T07:49:28.111Z",
+    "tmdbUpdatedAt": "2026-10-04T12:36:24.306Z",
     "premiereDate": "2026-11-24",
-    "tmdbFetchedAt": "2026-10-04T07:49:28.111Z"
+    "tmdbFetchedAt": "2026-10-04T12:36:24.306Z"
   },
   {
     "id": "gaf-2026-the-greatest-christmas-gift",
@@ -159952,9 +159995,9 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-10-04T07:49:28.347Z",
+    "tmdbUpdatedAt": "2026-10-04T12:36:24.588Z",
     "premiereDate": "2026-11-29",
-    "tmdbFetchedAt": "2026-10-04T07:49:28.347Z",
+    "tmdbFetchedAt": "2026-10-04T12:36:24.588Z",
     "imdbId": "tt44127266"
   },
   {
@@ -160006,9 +160049,9 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-10-04T07:49:28.584Z",
+    "tmdbUpdatedAt": "2026-10-04T12:36:24.869Z",
     "premiereDate": "2026-12-12",
-    "tmdbFetchedAt": "2026-10-04T07:49:28.584Z",
+    "tmdbFetchedAt": "2026-10-04T12:36:24.869Z",
     "imdbId": "tt46668597"
   },
   {
@@ -160112,9 +160155,9 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-10-04T07:49:28.818Z",
+    "tmdbUpdatedAt": "2026-10-04T12:36:25.118Z",
     "premiereDate": "2026-10-24",
-    "tmdbFetchedAt": "2026-10-04T07:49:28.818Z",
+    "tmdbFetchedAt": "2026-10-04T12:36:25.118Z",
     "alternativeTitles": [
       {
         "title": "A Christmas Prayer 2",
@@ -160297,9 +160340,9 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-10-04T07:49:29.054Z",
+    "tmdbUpdatedAt": "2026-10-04T12:36:25.403Z",
     "premiereDate": "2026-12-06",
-    "tmdbFetchedAt": "2026-10-04T07:49:29.054Z",
+    "tmdbFetchedAt": "2026-10-04T12:36:25.403Z",
     "alternativeTitles": [
       {
         "title": "A Culinary Christmas",
@@ -160399,8 +160442,8 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-10-04T07:49:29.535Z",
-    "tmdbFetchedAt": "2026-10-04T07:49:29.535Z",
+    "tmdbUpdatedAt": "2026-10-04T12:36:25.856Z",
+    "tmdbFetchedAt": "2026-10-04T12:36:25.856Z",
     "premiereDate": "2026-11-05",
     "director": "Nanea Miyata"
   },
@@ -160506,8 +160549,8 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-10-04T07:49:30.005Z",
-    "tmdbFetchedAt": "2026-10-04T07:49:30.005Z",
+    "tmdbUpdatedAt": "2026-10-04T12:36:26.354Z",
+    "tmdbFetchedAt": "2026-10-04T12:36:26.354Z",
     "director": "Cathy Lynn Yonek",
     "premiereDate": "2026-11-06"
   },
@@ -180886,8 +180929,8 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-10-04T07:51:33.698Z",
-    "tmdbFetchedAt": "2026-10-04T07:51:33.698Z",
+    "tmdbUpdatedAt": "2026-10-04T12:36:26.592Z",
+    "tmdbFetchedAt": "2026-10-04T12:36:26.592Z",
     "director": "Marni Banack",
     "premiereDate": "2026-12-03"
   },
@@ -180897,7 +180940,7 @@ export const MOVIES: Movie[] = [
     "title": "The Christmas Treehouse",
     "year": 2026,
     "brandId": "uptv",
-    "releaseDate": "2026-10-01",
+    "releaseDate": "2026-12-17",
     "synopsis": "When Emma returns to her hometown for Christmas after years away, she reconnects with Ryan, who never left. Drawn together by holiday traditions and a treasured childhood treehouse, old feelings resurface, revealing that love may be closer than she imagined.",
     "posterUrl": "/images/posters/1786205.jpg",
     "cast": [
@@ -180994,9 +181037,10 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-10-04T07:51:34.182Z",
-    "tmdbFetchedAt": "2026-10-04T07:51:34.182Z",
-    "director": "Sean Stencil"
+    "tmdbUpdatedAt": "2026-10-04T12:36:27.031Z",
+    "tmdbFetchedAt": "2026-10-04T12:36:27.031Z",
+    "director": "Sean Stencil",
+    "premiereDate": "2026-12-17"
   },
   {
     "id": "uptv-2026-a-christmas-cookie-caper-a-puzzle-time-mystery",
@@ -181193,8 +181237,8 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-10-04T07:51:34.693Z",
-    "tmdbFetchedAt": "2026-10-04T07:51:34.693Z",
+    "tmdbUpdatedAt": "2026-10-04T12:36:27.470Z",
+    "tmdbFetchedAt": "2026-10-04T12:36:27.470Z",
     "director": "Peter Sullivan",
     "premiereDate": "2026-12-10"
   },
@@ -182163,6 +182207,2629 @@ export const MOVIES: Movie[] = [
     "tmdbUpdatedAt": "2026-10-04T07:51:37.320Z",
     "tmdbFetchedAt": "2026-10-04T07:51:37.320Z",
     "premiereDate": "2026-07-02"
+  },
+  {
+    "id": "hallmark-2024-renovation-romance",
+    "slug": "renovation-romance",
+    "title": "Renovation Romance",
+    "year": 2024,
+    "brandId": "hallmark",
+    "releaseDate": "2024-11-01",
+    "synopsis": "When Chelsea is forced to go to New Hampshire during Christmas to film her and her boyfriend's television show \"Renovation Romance,\" she finds herself in a precarious situation with her career and relationship.",
+    "posterUrl": "/images/posters/1380983.jpg",
+    "backdropUrl": "/images/backdrops/1380983.jpg",
+    "cast": [
+      {
+        "actorId": "84698",
+        "name": "Jessica Lowndes",
+        "character": "Chelsea",
+        "slug": "jessica-lowndes",
+        "tmdbPersonId": 84698,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/jMydZ6FVK3cxKa8dvsXIvP0HTwr.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "1256300",
+        "name": "Daniel Lissing",
+        "character": "Cooper",
+        "slug": "daniel-lissing",
+        "tmdbPersonId": 1256300,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/8BN5A6PuzkjPdiT9zlDYDuMvlC4.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "1148697",
+        "name": "Adam Hurtig",
+        "character": "Jake",
+        "slug": "adam-hurtig",
+        "tmdbPersonId": 1148697,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/sJ0RxYecZCJ5zybOsQjTedhMwp.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "1549815",
+        "name": "Farrah Aviva",
+        "character": "Bethany",
+        "slug": "farrah-aviva",
+        "tmdbPersonId": 1549815,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/5R8la1L4HPIkSFdy38FcHPVSVaJ.jpg",
+        "order": 3
+      },
+      {
+        "actorId": "1166976",
+        "name": "Samantha Kendrick",
+        "character": "Janice",
+        "slug": "samantha-kendrick",
+        "tmdbPersonId": 1166976,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/wrLYNsys35f54W7n2AbkdMUBC0X.jpg",
+        "order": 4
+      },
+      {
+        "actorId": "1128538",
+        "name": "Paul Essiembre",
+        "character": "Don",
+        "slug": "paul-essiembre",
+        "tmdbPersonId": 1128538,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/cM9uhNoWtNBfjVpmESoL0HJf9UX.jpg",
+        "order": 5
+      },
+      {
+        "actorId": "1733446",
+        "name": "Michael Strickland",
+        "character": "Tom",
+        "slug": "michael-strickland",
+        "tmdbPersonId": 1733446,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/iQiaj9Lhc48nbGrIpWlUNahmg1Q.jpg",
+        "order": 6
+      },
+      {
+        "actorId": "2127703",
+        "name": "Jan Skene",
+        "character": "Edel",
+        "slug": "jan-skene",
+        "tmdbPersonId": 2127703,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/nDqJ5SL5wTRQxbkOxZtB3rpVUtr.jpg",
+        "order": 7
+      },
+      {
+        "actorId": "5070247",
+        "name": "Kenton Dyck",
+        "character": "Man",
+        "slug": "kenton-dyck",
+        "tmdbPersonId": 5070247,
+        "order": 8
+      },
+      {
+        "actorId": "5070249",
+        "name": "Rayne Galay",
+        "character": "Woman",
+        "slug": "rayne-galay",
+        "tmdbPersonId": 5070249,
+        "order": 9
+      },
+      {
+        "actorId": "4137486",
+        "name": "Lam An",
+        "character": "Townsfolk (uncredited)",
+        "slug": "lam-an",
+        "tmdbPersonId": 4137486,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/DPsSeSkCPaKHX7I2IRFga7WuZH.jpg",
+        "order": 10
+      }
+    ],
+    "director": "Robin Dunne",
+    "tmdbId": 1380983,
+    "imdbId": "tt35676488",
+    "isComingSoon": false,
+    "status": "collection",
+    "originalTitle": "Renovation Romance",
+    "alternativeTitles": [
+      {
+        "title": "Christmas Under Construction",
+        "country": "US"
+      }
+    ],
+    "runtimeMinutes": 88,
+    "genres": [
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      },
+      {
+        "id": 35,
+        "name": "Comedy"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "CA",
+        "releaseDate": "2025-11-27T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "Super Ecran 1"
+      },
+      {
+        "country": "CH",
+        "releaseDate": "2025-12-08T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "RTS Un"
+      },
+      {
+        "country": "FR",
+        "releaseDate": "2025-11-15T00:00:00.000Z",
+        "type": 4,
+        "certification": "",
+        "note": "Netflix"
+      },
+      {
+        "country": "US",
+        "releaseDate": "2024-11-01T00:00:00.000Z",
+        "type": 4,
+        "certification": "",
+        "note": "Hulu"
+      },
+      {
+        "country": "US",
+        "releaseDate": "2026-07-04T00:00:00.000Z",
+        "type": 6,
+        "certification": "PG",
+        "note": "Hallmark Channel"
+      }
+    ],
+    "crew": [
+      {
+        "id": 43426,
+        "name": "Robin Dunne",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/4TW7bd7yyRB1hjQdn0Ej3XAKVnu.jpg",
+        "creditId": "6738cc0fad278a8963f8488a"
+      },
+      {
+        "id": 5009,
+        "name": "Peter Benson",
+        "job": "Story",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/btcuZXvGZcO1AyCQXcAeWWLf0jI.jpg",
+        "creditId": "673d3c6d757b2842d9d8a2a0"
+      },
+      {
+        "id": 84464,
+        "name": "Julia Benson",
+        "job": "Story",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/47Zo9kVEZh72FJRDfwZ4qL9hdDC.jpg",
+        "creditId": "673d3c851dc22f88fa6c1755"
+      }
+    ],
+    "trailers": [],
+    "voteCount": 17,
+    "tmdbUpdatedAt": "2026-10-04T15:44:26.454Z",
+    "tmdbFetchedAt": "2026-10-04T15:44:26.454Z",
+    "networkPremiereDate": "2026-07-04"
+  },
+  {
+    "id": "hallmark-2026-love-under-the-mistletoe",
+    "slug": "love-under-the-mistletoe",
+    "title": "Love Under the Mistletoe",
+    "year": 2026,
+    "brandId": "hallmark",
+    "releaseDate": "2026-07-25",
+    "synopsis": "Interior designer Grace (Lilley) runs a business with her best friend and her brother in the quaint town of Ivy Glen but is too busy for a real relationship. Ryan (Bateman), a successful New York City financial advisor and Grace's former high school crush, returns home planning to sell his grandmother's historic St. Nicholas House. The mayor convinces him to revive the beloved Ribbons and Bows charity fundraiser and brings Grace on board to help. Working side by side to pull the event together, the former couple reminisces and feelings they once shared slowly resurface. But will this yuletide reunion lead to love under the mistletoe?",
+    "posterUrl": "/images/posters/1740370.jpg",
+    "cast": [],
+    "tmdbId": 1740370,
+    "imdbId": "tt43359658",
+    "isComingSoon": false,
+    "status": "collection",
+    "originalTitle": "Love Under the Mistletoe",
+    "alternativeTitles": [
+      {
+        "title": "Operation Mistletoe",
+        "country": "US"
+      }
+    ],
+    "runtimeMinutes": 83,
+    "genres": [
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "US",
+        "releaseDate": "2026-07-25T00:00:00.000Z",
+        "type": 6,
+        "certification": "G",
+        "note": ""
+      }
+    ],
+    "crew": [],
+    "trailers": [],
+    "voteAverage": 0,
+    "voteCount": 0,
+    "tmdbUpdatedAt": "2026-10-04T15:53:14.814Z",
+    "tmdbFetchedAt": "2026-10-04T15:53:14.815Z"
+  },
+  {
+    "id": "hallmark-2026-o-little-christmas-market",
+    "slug": "o-little-christmas-market",
+    "title": "O Little Christmas Market",
+    "year": 2026,
+    "brandId": "hallmark",
+    "releaseDate": "2026-07-11",
+    "synopsis": "An artist's fights to saves her town's beloved Christmas market from a developer but a budding romance with the architect tied to the deal may help bring about a Christmas miracle.",
+    "posterUrl": "/images/posters/1592343.jpg",
+    "backdropUrl": "/images/backdrops/1592343.jpg",
+    "cast": [
+      {
+        "actorId": "1475939",
+        "name": "Katherine Barrell",
+        "character": "Olivia Stephen",
+        "slug": "katherine-barrell",
+        "tmdbPersonId": 1475939,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/o59OzBD1nBDYM5r3mUpBOIdJmBe.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "558900",
+        "name": "Stephen Huszar",
+        "character": "Huszar Grayson",
+        "slug": "stephen-huszar",
+        "tmdbPersonId": 558900,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/l5gfPIcngMlJ92IuKRjeFv1Dkta.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "204964",
+        "name": "Paula Boudreau",
+        "character": "Lenore",
+        "slug": "paula-boudreau",
+        "tmdbPersonId": 204964,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/dG8J9RfmenQraa5JZC7d7Dizdpa.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "1882085",
+        "name": "Ann Pornel",
+        "character": "Zoey",
+        "slug": "ann-pornel",
+        "tmdbPersonId": 1882085,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/kui56OIvZTtvYmV6EEB8Zz57Q3C.jpg",
+        "order": 3
+      },
+      {
+        "actorId": "1727017",
+        "name": "Kent Sheridan",
+        "character": "Bill",
+        "slug": "kent-sheridan",
+        "tmdbPersonId": 1727017,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/Ajv5bdt5bRtJP5HOdgKfmDcapSF.jpg",
+        "order": 4
+      },
+      {
+        "actorId": "2144603",
+        "name": "Jonathan Langdon",
+        "character": "Shawn",
+        "slug": "jonathan-langdon",
+        "tmdbPersonId": 2144603,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/6bM2rZBxLo3w36HGJSOGvJEpfvq.jpg",
+        "order": 5
+      },
+      {
+        "actorId": "1740993",
+        "name": "James Kall",
+        "character": "Archie",
+        "slug": "james-kall",
+        "tmdbPersonId": 1740993,
+        "order": 6
+      },
+      {
+        "actorId": "1844475",
+        "name": "Vicki Kim",
+        "character": "Janice",
+        "slug": "vicki-kim",
+        "tmdbPersonId": 1844475,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/yoqd3uaWz51BIqT38BndLiA6NBf.jpg",
+        "order": 7
+      },
+      {
+        "actorId": "40385",
+        "name": "Marcia Bennett",
+        "character": "Mrs. Banks",
+        "slug": "marcia-bennett",
+        "tmdbPersonId": 40385,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/va30xYbQLgI9UvNFv5oNuhiORTC.jpg",
+        "order": 8
+      },
+      {
+        "actorId": "1226806",
+        "name": "Milton Barnes",
+        "character": "Eddie",
+        "slug": "milton-barnes",
+        "tmdbPersonId": 1226806,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/qCP3CVoEQmLopSHuHLOUooP1RDY.jpg",
+        "order": 9
+      },
+      {
+        "actorId": "1480981",
+        "name": "Paloma Nuñez",
+        "character": "Tamara",
+        "slug": "paloma-nu-ez",
+        "tmdbPersonId": 1480981,
+        "order": 10
+      },
+      {
+        "actorId": "113931",
+        "name": "Duane Murray",
+        "character": "Katie's Dad",
+        "slug": "duane-murray",
+        "tmdbPersonId": 113931,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/hT3xbEShfQ1KPmfwhlY5k0FfmbW.jpg",
+        "order": 11
+      },
+      {
+        "actorId": "6513933",
+        "name": "Emlyn Murray",
+        "character": "Katie",
+        "slug": "emlyn-murray",
+        "tmdbPersonId": 6513933,
+        "order": 12
+      },
+      {
+        "actorId": "3747968",
+        "name": "Tyra Sweet",
+        "character": "Train Station Attendant",
+        "slug": "tyra-sweet",
+        "tmdbPersonId": 3747968,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/ndzGkJTMsFzpdpJb5aAlmv1iS0b.jpg",
+        "order": 13
+      }
+    ],
+    "director": "Mars Horodyski",
+    "tmdbId": 1592343,
+    "imdbId": "tt35048304",
+    "isComingSoon": false,
+    "status": "collection",
+    "originalTitle": "O Little Christmas Market",
+    "runtimeMinutes": 84,
+    "genres": [
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      },
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "US",
+        "releaseDate": "2026-07-11T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "Hallmark"
+      }
+    ],
+    "crew": [
+      {
+        "id": 1447198,
+        "name": "Mars Horodyski",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/2Ni0etKpzo1plDMrWvuUlBUql9P.jpg",
+        "creditId": "693073cb2653bda946229327"
+      },
+      {
+        "id": 1644649,
+        "name": "Nastasha Baron",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "693073d4c91bd5fe33a3ddd2"
+      },
+      {
+        "id": 5071150,
+        "name": "Ryan Peckinpaugh",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "693073d9670af1d8b96746b2"
+      }
+    ],
+    "trailers": [
+      {
+        "key": "sx5qSoQofyI",
+        "site": "YouTube",
+        "type": "Trailer",
+        "name": "Trailer",
+        "official": true
+      }
+    ],
+    "trailerYoutubeKey": "sx5qSoQofyI",
+    "voteAverage": 3,
+    "voteCount": 1,
+    "tmdbUpdatedAt": "2026-10-04T15:54:33.093Z",
+    "tmdbFetchedAt": "2026-10-04T15:54:33.093Z"
+  },
+  {
+    "id": "hallmark-2026-snowbound-for-the-holidays",
+    "slug": "snowbound-for-the-holidays",
+    "title": "Snowbound for the Holidays",
+    "year": 2026,
+    "brandId": "hallmark",
+    "releaseDate": "2026-07-18",
+    "synopsis": "Hotel manager Cassidy Evergreen evaluates a cozy ski lodge, but Christmas magic—and its charming owner, Trey Sanderson—turn a simple assignment into a heartfelt choice between duty and love.",
+    "posterUrl": "/images/posters/1570217.jpg",
+    "backdropUrl": "/images/backdrops/1570217.jpg",
+    "cast": [
+      {
+        "actorId": "52938",
+        "name": "Vanessa Lengies",
+        "character": "Cassidy Evergreen",
+        "slug": "vanessa-lengies",
+        "tmdbPersonId": 52938,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/yqnNHJsTQGVlkSN5phh9QShoXTm.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "1381537",
+        "name": "Marcus Rosner",
+        "character": "Trey Sanderson",
+        "slug": "marcus-rosner",
+        "tmdbPersonId": 1381537,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/2DQHSgA6LgR7ZTJpIEApT3TXCQx.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "162747",
+        "name": "Kathryn Greenwood",
+        "character": "Joanne Evergreen",
+        "slug": "kathryn-greenwood",
+        "tmdbPersonId": 162747,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/zVKcvl2SSFRBjKNK7ArJ9WEAQa8.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "44248",
+        "name": "Ron Lea",
+        "character": "Sam Linden",
+        "slug": "ron-lea",
+        "tmdbPersonId": 44248,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/jxSFEsvAOej3326HZG0KWPFc2NU.jpg",
+        "order": 3
+      },
+      {
+        "actorId": "3318616",
+        "name": "Skywalker Hughes",
+        "character": "Lilly Sanderson",
+        "slug": "skywalker-hughes",
+        "tmdbPersonId": 3318616,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/odWo2m7Xdcnw3WdxsZfvRBqbmY.jpg",
+        "order": 4
+      },
+      {
+        "actorId": "1216713",
+        "name": "Seán Cullen",
+        "character": "Dave Asherton",
+        "slug": "se-n-cullen",
+        "tmdbPersonId": 1216713,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/jPAYk01KVuMVgIQRDQyhq1S6jo8.jpg",
+        "order": 5
+      },
+      {
+        "actorId": "984711",
+        "name": "Kate Drummond",
+        "character": "Mayor Robinson",
+        "slug": "kate-drummond",
+        "tmdbPersonId": 984711,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/p3yXIxHI2zvgn2MI9yXaAvoTBHN.jpg",
+        "order": 6
+      },
+      {
+        "actorId": "2497865",
+        "name": "Nelu Handa",
+        "character": "Gabby",
+        "slug": "nelu-handa",
+        "tmdbPersonId": 2497865,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/hYWYpgdQCMa28slPxZftBXs6ff.jpg",
+        "order": 7
+      },
+      {
+        "actorId": "1825792",
+        "name": "Chris Farquhar",
+        "character": "Mark",
+        "slug": "chris-farquhar",
+        "tmdbPersonId": 1825792,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/ok3daTfwqe9b8kQNGldC3CEtNlU.jpg",
+        "order": 8
+      },
+      {
+        "actorId": "2533447",
+        "name": "Lisa Cromarty",
+        "character": "Mrs. Johnson",
+        "slug": "lisa-cromarty",
+        "tmdbPersonId": 2533447,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/7AZlJggHOJb1xAZ4UXwXBpA8YYU.jpg",
+        "order": 9
+      },
+      {
+        "actorId": "5452697",
+        "name": "Tristen Sky",
+        "character": "Linden Lodge Staff Member (uncredited)",
+        "slug": "tristen-sky",
+        "tmdbPersonId": 5452697,
+        "order": 10
+      }
+    ],
+    "director": "Christopher Giroux",
+    "tmdbId": 1570217,
+    "imdbId": "tt35287187",
+    "isComingSoon": false,
+    "status": "collection",
+    "originalTitle": "Snowbound for the Holidays",
+    "alternativeTitles": [
+      {
+        "title": "Uphill for Christmas",
+        "country": "CA"
+      }
+    ],
+    "runtimeMinutes": 84,
+    "genres": [
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      },
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "US",
+        "releaseDate": "2026-07-18T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "Hallmark"
+      }
+    ],
+    "crew": [
+      {
+        "id": 1415898,
+        "name": "Christopher Giroux",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/ztVscgZxP7yNmbwHcFcwhTgiMip.jpg",
+        "creditId": "699d8903fe2b4e82fe2aff80"
+      },
+      {
+        "id": 4315301,
+        "name": "Courtney McAllister",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "6a59147d79e675fc88572335"
+      },
+      {
+        "id": 2577365,
+        "name": "Tim Stubinski",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "6a5914898bad4eb294074842"
+      }
+    ],
+    "trailers": [
+      {
+        "key": "Xfz-eTQkF-g",
+        "site": "YouTube",
+        "type": "Trailer",
+        "name": "Preview | Snowbound for the Holidays | Starring Vanessa Lengies and Marcus Rosner",
+        "official": true
+      }
+    ],
+    "trailerYoutubeKey": "Xfz-eTQkF-g",
+    "voteAverage": 7,
+    "voteCount": 3,
+    "tmdbUpdatedAt": "2026-10-04T15:55:23.999Z",
+    "tmdbFetchedAt": "2026-10-04T15:55:23.999Z"
+  },
+  {
+    "id": "hallmark-2023-a-royal-christmas-crush",
+    "slug": "a-royal-christmas-crush",
+    "title": "A Royal Christmas Crush",
+    "year": 2023,
+    "brandId": "hallmark",
+    "releaseDate": "2023-07-15",
+    "synopsis": "Ava accepts the opportunity of a lifetime to work at the Royal Ice Hotel which leads her to a surprise whirlwind romance with the most important guest of all, the Royal Prince himself.",
+    "posterUrl": "/images/posters/1132366.jpg",
+    "backdropUrl": "/images/backdrops/1132366.jpg",
+    "cast": [
+      {
+        "actorId": "558900",
+        "name": "Stephen Huszar",
+        "character": "Prince Henry",
+        "slug": "stephen-huszar",
+        "tmdbPersonId": 558900,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/l5gfPIcngMlJ92IuKRjeFv1Dkta.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "55775",
+        "name": "Katie Cassidy",
+        "character": "Ava Jensen",
+        "slug": "katie-cassidy",
+        "tmdbPersonId": 55775,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/v7cs7RFcfoiL8W1YRkZK5lBc57H.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "1542593",
+        "name": "Charlie Ebbs",
+        "character": "Uncle Karl",
+        "slug": "charlie-ebbs",
+        "tmdbPersonId": 1542593,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/weqx8PT0vJODpSPMcrKNzdfH2jc.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "190905",
+        "name": "Angela Besharah",
+        "character": "Brigitta",
+        "slug": "angela-besharah",
+        "tmdbPersonId": 190905,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/5lY6aCGSRAK6SnMarfyL2W3wiU5.jpg",
+        "order": 3
+      },
+      {
+        "actorId": "2936541",
+        "name": "Glenn Edward Gyorffy",
+        "character": "Deputy Von Trier",
+        "slug": "glenn-edward-gyorffy",
+        "tmdbPersonId": 2936541,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/y2GRzoyvgbJsS3HeuymW6ki65T6.jpg",
+        "order": 4
+      },
+      {
+        "actorId": "2563064",
+        "name": "Kathryn Kohut",
+        "character": "Sigrid",
+        "slug": "kathryn-kohut",
+        "tmdbPersonId": 2563064,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/iKlMXYLDJh4yoTMFhD7QhsGfvrr.jpg",
+        "order": 5
+      },
+      {
+        "actorId": "1774681",
+        "name": "Pip Dwyer",
+        "character": "The Queen of Friørland",
+        "slug": "pip-dwyer",
+        "tmdbPersonId": 1774681,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/pquSL8wPZjPTzwKhE9VYWwCpo57.jpg",
+        "order": 6
+      },
+      {
+        "actorId": "2728885",
+        "name": "Alice Hamid",
+        "character": "Maria",
+        "slug": "alice-hamid",
+        "tmdbPersonId": 2728885,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/8qQvtQuaOhLe9LQN7jD3Ml0fqTo.jpg",
+        "order": 7
+      }
+    ],
+    "director": "Marita Grabiak",
+    "tmdbId": 1132366,
+    "imdbId": "tt28077855",
+    "isComingSoon": false,
+    "status": "collection",
+    "originalTitle": "A Royal Christmas Crush",
+    "alternativeTitles": [
+      {
+        "title": "Winter Castle 3",
+        "country": "US"
+      },
+      {
+        "title": "Winter Castle Royal Romance",
+        "country": "US"
+      }
+    ],
+    "runtimeMinutes": 84,
+    "genres": [
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      },
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "FR",
+        "releaseDate": "2024-11-16T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "C8"
+      },
+      {
+        "country": "FR",
+        "releaseDate": "2025-11-14T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "CStar"
+      },
+      {
+        "country": "US",
+        "releaseDate": "2023-07-15T00:00:00.000Z",
+        "type": 6,
+        "certification": "G",
+        "note": "Hallmark Channel"
+      }
+    ],
+    "crew": [
+      {
+        "id": 1215026,
+        "name": "Marita Grabiak",
+        "job": "Director",
+        "department": "Directing",
+        "creditId": "64729c1ebe2d490116c8f08f"
+      },
+      {
+        "id": 3719839,
+        "name": "Keith Hemstreet",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "648e04ec42bf010101be5ddb"
+      },
+      {
+        "id": 3829094,
+        "name": "Catherine Reay",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "648e04f2c3c89100cada326a"
+      },
+      {
+        "id": 3829095,
+        "name": "Kate Somerville",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "648e04f6559d2200c5767651"
+      }
+    ],
+    "trailers": [
+      {
+        "key": "nH51WiChuzw",
+        "site": "YouTube",
+        "type": "Teaser",
+        "name": "Sneak Peek - A Royal Christmas Crush - Hallmark Channel",
+        "official": true
+      },
+      {
+        "key": "P8IdJp8iq_o",
+        "site": "YouTube",
+        "type": "Trailer",
+        "name": "Preview - A Royal Christmas Crush - Hallmark Channel",
+        "official": true
+      }
+    ],
+    "trailerYoutubeKey": "nH51WiChuzw",
+    "voteAverage": 5.9,
+    "voteCount": 28,
+    "tmdbUpdatedAt": "2026-10-04T15:57:11.386Z",
+    "tmdbFetchedAt": "2026-10-04T15:57:11.386Z"
+  },
+  {
+    "id": "hallmark-2023-take-me-back-for-christmas",
+    "slug": "take-me-back-for-christmas",
+    "title": "Take Me Back for Christmas",
+    "year": 2023,
+    "brandId": "hallmark",
+    "releaseDate": "2023-07-15",
+    "synopsis": "A Christmas wish gives Renee the successful life she’d always dreamed of. This new reality is perfect, except for one thing… she is no longer married to her husband Aaron. Now, Renee must race against the clock to win him back before Christmas Eve.",
+    "posterUrl": "/images/posters/1135453.jpg",
+    "backdropUrl": "/images/backdrops/1135453.jpg",
+    "cast": [
+      {
+        "actorId": "52938",
+        "name": "Vanessa Lengies",
+        "character": "Renée",
+        "slug": "vanessa-lengies",
+        "tmdbPersonId": 52938,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/yqnNHJsTQGVlkSN5phh9QShoXTm.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "43265",
+        "name": "Corey Sevier",
+        "character": "Aaron",
+        "slug": "corey-sevier",
+        "tmdbPersonId": 43265,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/wKt1pHZ5Q6kgkmZsNz53lNPzLR3.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "2864970",
+        "name": "Brynn Godenir",
+        "character": "Tasha",
+        "slug": "brynn-godenir",
+        "tmdbPersonId": 2864970,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/3UL1MZqj1CNcLpDYi3o9K6ym0B6.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "3608206",
+        "name": "Kimberly-Ann Truong",
+        "character": "Cici",
+        "slug": "kimberly-ann-truong",
+        "tmdbPersonId": 3608206,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/z7Kiyn2sqSnH4i5FF0LvFTVG2ck.jpg",
+        "order": 3
+      },
+      {
+        "actorId": "2041998",
+        "name": "Miguel Rivas",
+        "character": "Jerry",
+        "slug": "miguel-rivas",
+        "tmdbPersonId": 2041998,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/hoaEFH0lTkTzZbk9uWIayFXOobv.jpg",
+        "order": 4
+      },
+      {
+        "actorId": "2298270",
+        "name": "Moni Ogunsuyi",
+        "character": "Ashley",
+        "slug": "moni-ogunsuyi",
+        "tmdbPersonId": 2298270,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/fctfvNtGOFfXNk10RwVCBUQ9GDh.jpg",
+        "order": 5
+      },
+      {
+        "actorId": "54650",
+        "name": "Gerry Mendicino",
+        "character": "Jeff",
+        "slug": "gerry-mendicino",
+        "tmdbPersonId": 54650,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/oyszl8pSOzsnIL2EWCPU2Taub0z.jpg",
+        "order": 6
+      },
+      {
+        "actorId": "204964",
+        "name": "Paula Boudreau",
+        "character": "Maria",
+        "slug": "paula-boudreau",
+        "tmdbPersonId": 204964,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/dG8J9RfmenQraa5JZC7d7Dizdpa.jpg",
+        "order": 7
+      }
+    ],
+    "director": "Corey Sevier",
+    "tmdbId": 1135453,
+    "imdbId": "tt27557250",
+    "isComingSoon": false,
+    "status": "collection",
+    "originalTitle": "Take Me Back for Christmas",
+    "alternativeTitles": [
+      {
+        "title": "The Christmas Reboot",
+        "country": "US"
+      }
+    ],
+    "runtimeMinutes": 84,
+    "genres": [
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      },
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "BE",
+        "releaseDate": "2024-11-10T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "RTL TVi"
+      },
+      {
+        "country": "CA",
+        "releaseDate": "2023-07-15T00:00:00.000Z",
+        "type": 3,
+        "certification": "G",
+        "note": ""
+      },
+      {
+        "country": "FR",
+        "releaseDate": "2023-11-28T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "TF1"
+      },
+      {
+        "country": "US",
+        "releaseDate": "2023-07-08T00:00:00.000Z",
+        "type": 6,
+        "certification": "G",
+        "note": "Hallmark Channel"
+      }
+    ],
+    "crew": [
+      {
+        "id": 2832332,
+        "name": "Kate Pragnell",
+        "job": "Writer",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/7XJe6vTU5w5jIO6kMViNDbsPlhT.jpg",
+        "creditId": "647a907717497300a818eed7"
+      },
+      {
+        "id": 43265,
+        "name": "Corey Sevier",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/wKt1pHZ5Q6kgkmZsNz53lNPzLR3.jpg",
+        "creditId": "6487491dd2b20900ad3d968e"
+      }
+    ],
+    "trailers": [
+      {
+        "key": "99p-JEvSGlo",
+        "site": "YouTube",
+        "type": "Featurette",
+        "name": "Take Me Back for Christmas Live",
+        "official": true
+      },
+      {
+        "key": "-ZPoQswqdPs",
+        "site": "YouTube",
+        "type": "Teaser",
+        "name": "Sneak Peek - Take Me Back for Christmas - Hallmark Channel",
+        "official": true
+      },
+      {
+        "key": "W1ZkpRv7_go",
+        "site": "YouTube",
+        "type": "Trailer",
+        "name": "Preview - Take Me Back for Christmas - Hallmark Channel",
+        "official": true
+      }
+    ],
+    "trailerYoutubeKey": "99p-JEvSGlo",
+    "voteAverage": 6.5,
+    "voteCount": 28,
+    "tmdbUpdatedAt": "2026-10-04T16:07:45.662Z",
+    "tmdbFetchedAt": "2026-10-04T16:07:45.662Z"
+  },
+  {
+    "id": "hallmark-2022-my-grown-up-christmas-list",
+    "slug": "my-grown-up-christmas-list",
+    "title": "My Grown-Up Christmas List",
+    "year": 2022,
+    "brandId": "hallmark",
+    "releaseDate": "2022-07-09",
+    "synopsis": "Taylor, a journalist, and Luke, in the military, share a special bond that grows between them over the course of several Christmases that they spend together and apart.",
+    "posterUrl": "/images/posters/983232.jpg",
+    "backdropUrl": "/images/backdrops/983232.jpg",
+    "cast": [
+      {
+        "actorId": "2019485",
+        "name": "Kayla Wallace",
+        "character": "Taylor Nichols",
+        "slug": "kayla-wallace",
+        "tmdbPersonId": 2019485,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/ePl7sXtyWIQsWsylyQBTxYsouKF.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "1515481",
+        "name": "Kevin McGarry",
+        "character": "Luke Malone",
+        "slug": "kevin-mcgarry",
+        "tmdbPersonId": 1515481,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/JDXtYzUBK17wkQOodRf6SuFDiY.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "603005",
+        "name": "Lindsay Merrithew",
+        "character": "Charlie Malone",
+        "slug": "lindsay-merrithew",
+        "tmdbPersonId": 603005,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/kgxNVv9pQxPy1NTrKly826ncpHJ.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "1193942",
+        "name": "Susan Hamann",
+        "character": "Peggy Malone",
+        "slug": "susan-hamann",
+        "tmdbPersonId": 1193942,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/fkfmlhnBCmqCLa1N097LeBaScBm.jpg",
+        "order": 3
+      },
+      {
+        "actorId": "3016828",
+        "name": "James M. Jenkinson",
+        "character": "Grandpa Frank",
+        "slug": "james-m-jenkinson",
+        "tmdbPersonId": 3016828,
+        "order": 4
+      },
+      {
+        "actorId": "216409",
+        "name": "Cory Lee",
+        "character": "Bonnie Curtis",
+        "slug": "cory-lee",
+        "tmdbPersonId": 216409,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/fghcWFgEJJOn82tNGUr8vvFQBFi.jpg",
+        "order": 5
+      },
+      {
+        "actorId": "2420313",
+        "name": "Colton Royce",
+        "character": "Captain Adam Kerney",
+        "slug": "colton-royce",
+        "tmdbPersonId": 2420313,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/6v5rImNgLRFmerNq13FtwR7GwcV.jpg",
+        "order": 6
+      },
+      {
+        "actorId": "3582404",
+        "name": "Andrew Ball",
+        "character": "Nathan",
+        "slug": "andrew-ball",
+        "tmdbPersonId": 3582404,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/6c0TvizNi1nI6sU43FnMh6tDRe5.jpg",
+        "order": 7
+      },
+      {
+        "actorId": "1803507",
+        "name": "Tonjha Richardson",
+        "character": "Barb Barrett",
+        "slug": "tonjha-richardson",
+        "tmdbPersonId": 1803507,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/1iLoB8CyXd6N7N9DkOT4T7LWyj5.jpg",
+        "order": 8
+      },
+      {
+        "actorId": "1008656",
+        "name": "John Koensgen",
+        "character": "Colonel Clay Murphy",
+        "slug": "john-koensgen",
+        "tmdbPersonId": 1008656,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/s2BQozISU7ZoCfZl7LdYvtWSN8B.jpg",
+        "order": 9
+      },
+      {
+        "actorId": "1116274",
+        "name": "Janet Rice",
+        "character": "Annie Grantham",
+        "slug": "janet-rice",
+        "tmdbPersonId": 1116274,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/sq5F1rhH4PqQHd6eYbAHl6mNCak.jpg",
+        "order": 10
+      }
+    ],
+    "director": "Andrew Cymek",
+    "tmdbId": 983232,
+    "imdbId": "tt21058846",
+    "isComingSoon": false,
+    "status": "collection",
+    "originalTitle": "My Grown-Up Christmas List",
+    "runtimeMinutes": 84,
+    "genres": [
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      },
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "US",
+        "releaseDate": "2022-07-09T00:00:00.000Z",
+        "type": 6,
+        "certification": "G",
+        "note": "Hallmark Channel"
+      }
+    ],
+    "crew": [
+      {
+        "id": 122366,
+        "name": "Andrew Cymek",
+        "job": "Director",
+        "department": "Directing",
+        "creditId": "62a20ff735d1bc372c757714"
+      },
+      {
+        "id": 1357879,
+        "name": "Bryar Freed",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "62a20ffdb87aec005178c3ae"
+      },
+      {
+        "id": 2871797,
+        "name": "Shawn Riopelle",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "62a21004d2147c117dacfe6e"
+      }
+    ],
+    "trailers": [
+      {
+        "key": "d_-NVsRa75g",
+        "site": "YouTube",
+        "type": "Teaser",
+        "name": "Preview",
+        "official": true
+      }
+    ],
+    "trailerYoutubeKey": "d_-NVsRa75g",
+    "voteAverage": 7.4,
+    "voteCount": 28,
+    "tmdbUpdatedAt": "2026-10-04T16:15:02.753Z",
+    "tmdbFetchedAt": "2026-10-04T16:15:02.753Z"
+  },
+  {
+    "id": "hallmark-2022-campfire-christmas",
+    "slug": "campfire-christmas",
+    "title": "Campfire Christmas",
+    "year": 2022,
+    "brandId": "hallmark",
+    "releaseDate": "2022-07-16",
+    "synopsis": "Romance rekindles for Peyton and her closest friends when her parents decide to host a holiday themed reunion before selling their family owned summer camp.",
+    "posterUrl": "/images/posters/983224.jpg",
+    "backdropUrl": "/images/backdrops/983224.jpg",
+    "cast": [
+      {
+        "actorId": "1339147",
+        "name": "Tori Anderson",
+        "character": "Peyton",
+        "slug": "tori-anderson",
+        "tmdbPersonId": 1339147,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/4s3YDyecXglwsBupl9fiK6WOGGS.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "67602",
+        "name": "Corbin Bleu",
+        "character": "Thomas",
+        "slug": "corbin-bleu",
+        "tmdbPersonId": 67602,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/46szA5sJA9iuWFf4JfO4lECFqeH.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "1064313",
+        "name": "Jeffrey Bowyer-Chapman",
+        "character": "Beckett",
+        "slug": "jeffrey-bowyer-chapman",
+        "tmdbPersonId": 1064313,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/pYCJuxa9pPC7hnELlvpIAjjL3Co.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "1046431",
+        "name": "Caitlin Stryker",
+        "character": "Janice",
+        "slug": "caitlin-stryker",
+        "tmdbPersonId": 1046431,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/26DVXGhA4XOzOcjhs0tdWoGiM8N.jpg",
+        "order": 3
+      },
+      {
+        "actorId": "1201386",
+        "name": "Matt Hamilton",
+        "character": "Dave",
+        "slug": "matt-hamilton",
+        "tmdbPersonId": 1201386,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/cHBK0naxrE9GdjG1O8koXEyli3s.jpg",
+        "order": 4
+      },
+      {
+        "actorId": "1947446",
+        "name": "Alec Santos",
+        "character": "Chris",
+        "slug": "alec-santos",
+        "tmdbPersonId": 1947446,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/w2OZS03EEc6GqHTJRiLvKy3K7Bv.jpg",
+        "order": 5
+      },
+      {
+        "actorId": "1219552",
+        "name": "Iris Quinn",
+        "character": "Lily",
+        "slug": "iris-quinn",
+        "tmdbPersonId": 1219552,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/rajESK5oqBRX5F0YA8T78Ticg95.jpg",
+        "order": 6
+      },
+      {
+        "actorId": "158374",
+        "name": "Fred Henderson",
+        "character": "Frank",
+        "slug": "fred-henderson",
+        "tmdbPersonId": 158374,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/2GXHxyciPjOZPgFAq2WJT9Un7uO.jpg",
+        "order": 7
+      },
+      {
+        "actorId": "79152",
+        "name": "Enid-Raye Adams",
+        "character": "Mona",
+        "slug": "enid-raye-adams",
+        "tmdbPersonId": 79152,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/dFKzV1ZSfnT3goiUs49I6dohHmV.jpg",
+        "order": 8
+      },
+      {
+        "actorId": "2685659",
+        "name": "Sandra Shapiro",
+        "character": "Kelly",
+        "slug": "sandra-shapiro",
+        "tmdbPersonId": 2685659,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/4lpTugkwbscdWrXjKIN46RnWl1Q.jpg",
+        "order": 9
+      },
+      {
+        "actorId": "1515477",
+        "name": "Karis Cameron",
+        "character": "Peyton at 16",
+        "slug": "karis-cameron",
+        "tmdbPersonId": 1515477,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/ejZsNmrxfHwBLo02L0olIOU0Ft4.jpg",
+        "order": 10
+      },
+      {
+        "actorId": "2790073",
+        "name": "Jude Wilson",
+        "character": "Thomas at 16",
+        "slug": "jude-wilson",
+        "tmdbPersonId": 2790073,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/hVdVC3kc845qaJMP2JvM09DFPF8.jpg",
+        "order": 11
+      },
+      {
+        "actorId": "3600916",
+        "name": "Zia Newton",
+        "character": "Beckett at 16",
+        "slug": "zia-newton",
+        "tmdbPersonId": 3600916,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/iXQveC8bkGkrRZqMWr1xtEFCbhX.jpg",
+        "order": 12
+      },
+      {
+        "actorId": "2494528",
+        "name": "Aleksandra Crossan",
+        "character": "Janice at 16",
+        "slug": "aleksandra-crossan",
+        "tmdbPersonId": 2494528,
+        "order": 13
+      },
+      {
+        "actorId": "2024744",
+        "name": "Quinten James",
+        "character": "Dave at 16",
+        "slug": "quinten-james",
+        "tmdbPersonId": 2024744,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/kM0LLVQUQgLE4qiL76q3OyGaxiH.jpg",
+        "order": 14
+      },
+      {
+        "actorId": "1585738",
+        "name": "Beau Daniels",
+        "character": "Chef Al",
+        "slug": "beau-daniels",
+        "tmdbPersonId": 1585738,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/pDbJ2Q90AyZ5HwwZ0mYeQG7JTNm.jpg",
+        "order": 15
+      },
+      {
+        "actorId": "83211",
+        "name": "Tasha Simms",
+        "character": "Ellen",
+        "slug": "tasha-simms",
+        "tmdbPersonId": 83211,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/pWc4wNjYtFWCL0RMNpaCa4Z34sd.jpg",
+        "order": 16
+      }
+    ],
+    "director": "David I. Strasser",
+    "tmdbId": 983224,
+    "imdbId": "tt20115364",
+    "isComingSoon": false,
+    "status": "collection",
+    "originalTitle": "Campfire Christmas",
+    "runtimeMinutes": 84,
+    "genres": [
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      },
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "BR",
+        "releaseDate": "2022-11-19T00:00:00.000Z",
+        "type": 6,
+        "certification": "L",
+        "note": "Studio Universal"
+      },
+      {
+        "country": "CA",
+        "releaseDate": "2022-09-24T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "Super Écran"
+      },
+      {
+        "country": "US",
+        "releaseDate": "2022-07-16T00:00:00.000Z",
+        "type": 6,
+        "certification": "G",
+        "note": "Hallmark Channel"
+      }
+    ],
+    "crew": [
+      {
+        "id": 2129973,
+        "name": "David I. Strasser",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/lRP3dNw9RSjxRquYLHhuwkKBqzn.jpg",
+        "creditId": "62ad09731bf26600e5eff872"
+      },
+      {
+        "id": 2172465,
+        "name": "Anna White",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "62ad0980960cde0092f6c0e2"
+      }
+    ],
+    "trailers": [
+      {
+        "key": "HQH10CsB4gI",
+        "site": "YouTube",
+        "type": "Clip",
+        "name": "Preview - Campfire Christmas - Hallmark Channel",
+        "official": true
+      }
+    ],
+    "trailerYoutubeKey": "HQH10CsB4gI",
+    "tagline": "Eight campers. Seven days of Christmas. One unforgettable summer.",
+    "voteAverage": 6,
+    "voteCount": 19,
+    "tmdbUpdatedAt": "2026-10-04T16:17:05.841Z",
+    "tmdbFetchedAt": "2026-10-04T16:17:05.841Z"
+  },
+  {
+    "id": "hallmark-2022-christmas-in-toyland",
+    "slug": "christmas-in-toyland",
+    "title": "Christmas in Toyland",
+    "year": 2022,
+    "brandId": "hallmark",
+    "releaseDate": "2022-07-23",
+    "synopsis": "When Charlie Sawyer, a data analyst at a toy store chain, discovers the only way to keep their brick and mortar locations open is to replicate whatever the company’s best performing location is doing, she's sent by corporate to meet convivial, yet stubborn, store manager, Grant Levinson, whose secret to success will challenge her to open up her mind… and her heart.",
+    "posterUrl": "/images/posters/874237.jpg",
+    "backdropUrl": "/images/backdrops/874237.jpg",
+    "cast": [
+      {
+        "actorId": "52938",
+        "name": "Vanessa Lengies",
+        "character": "Charlie",
+        "slug": "vanessa-lengies",
+        "tmdbPersonId": 52938,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/yqnNHJsTQGVlkSN5phh9QShoXTm.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "169469",
+        "name": "Jesse Hutch",
+        "character": "Grant",
+        "slug": "jesse-hutch",
+        "tmdbPersonId": 169469,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/3tQsDlnoEVT73mV7OFs0D9EYn5f.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "1216712",
+        "name": "Lara Amersey",
+        "character": "Stephanie",
+        "slug": "lara-amersey",
+        "tmdbPersonId": 1216712,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/mxEERu6yIqLSmsGijxn80Vu8sTM.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "1362948",
+        "name": "Jane Moffat",
+        "character": "Gertrude",
+        "slug": "jane-moffat",
+        "tmdbPersonId": 1362948,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/x8hRTny8olUJYGyH7K3zDUUHIqk.jpg",
+        "order": 3
+      },
+      {
+        "actorId": "1747322",
+        "name": "Benjamin Sutherland",
+        "character": "David",
+        "slug": "benjamin-sutherland",
+        "tmdbPersonId": 1747322,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/jBGE7VyIF85HLbGPeaJsLW2iyR0.jpg",
+        "order": 4
+      },
+      {
+        "actorId": "1761590",
+        "name": "Emily Wyatt",
+        "character": "Emma",
+        "slug": "emily-wyatt",
+        "tmdbPersonId": 1761590,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/v3ZpLcfTdWBVBCcjxAGJWNKLjyU.jpg",
+        "order": 5
+      },
+      {
+        "actorId": "2098740",
+        "name": "Tavaree Daniel-Simms",
+        "character": "Ryan",
+        "slug": "tavaree-daniel-simms",
+        "tmdbPersonId": 2098740,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/2Qn01Vmsg3mYjq18Ldkw8Gproqe.jpg",
+        "order": 6
+      },
+      {
+        "actorId": "1759435",
+        "name": "Imali Perera",
+        "character": "Marta",
+        "slug": "imali-perera",
+        "tmdbPersonId": 1759435,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/pJ9HvnJ0Ik9yrbFawrrjHUaeFDg.jpg",
+        "order": 7
+      },
+      {
+        "actorId": "2135417",
+        "name": "Elena V. Wolfe",
+        "character": "Izzy",
+        "slug": "elena-v-wolfe",
+        "tmdbPersonId": 2135417,
+        "order": 8
+      },
+      {
+        "actorId": "198873",
+        "name": "Elva Mai Hoover",
+        "character": "Mrs. Embalmo",
+        "slug": "elva-mai-hoover",
+        "tmdbPersonId": 198873,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/v5Kv40afGpP0ADOsusHUWwZDNyc.jpg",
+        "order": 9
+      },
+      {
+        "actorId": "3627613",
+        "name": "Mitzi Andrews",
+        "character": "Potential Customer",
+        "slug": "mitzi-andrews",
+        "tmdbPersonId": 3627613,
+        "order": 10
+      }
+    ],
+    "director": "Bill Corcoran",
+    "tmdbId": 874237,
+    "imdbId": "tt15891306",
+    "isComingSoon": false,
+    "status": "collection",
+    "originalTitle": "Christmas in Toyland",
+    "alternativeTitles": [
+      {
+        "title": "Christmas Trinket Town",
+        "country": "US"
+      }
+    ],
+    "runtimeMinutes": 84,
+    "genres": [
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      },
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "BE",
+        "releaseDate": "2023-10-26T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "RTL TVi"
+      },
+      {
+        "country": "FR",
+        "releaseDate": "2022-11-23T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "TF1"
+      },
+      {
+        "country": "US",
+        "releaseDate": "2022-07-23T00:00:00.000Z",
+        "type": 6,
+        "certification": "G",
+        "note": "Hallmark Channel"
+      }
+    ],
+    "crew": [
+      {
+        "id": 94045,
+        "name": "Bill Corcoran",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/wbp8xIJqdKDhQhWUpwAyIxoK0v0.jpg",
+        "creditId": "62993b0709ed8f0cee283c4c"
+      },
+      {
+        "id": 2832332,
+        "name": "Kate Pragnell",
+        "job": "Writer",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/7XJe6vTU5w5jIO6kMViNDbsPlhT.jpg",
+        "creditId": "62993b17ca8354544b3d5880"
+      },
+      {
+        "id": 2117291,
+        "name": "Courtney McAllister",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "62993b0f34e15200519b4878"
+      }
+    ],
+    "trailers": [
+      {
+        "key": "mmFBT2RIBr8",
+        "site": "YouTube",
+        "type": "Teaser",
+        "name": "Preview",
+        "official": true
+      }
+    ],
+    "trailerYoutubeKey": "mmFBT2RIBr8",
+    "voteAverage": 6.2,
+    "voteCount": 21,
+    "tmdbUpdatedAt": "2026-10-04T16:19:08.050Z",
+    "tmdbFetchedAt": "2026-10-04T16:19:08.050Z"
+  },
+  {
+    "id": "hallmark-2024-falling-like-snowflakes",
+    "slug": "falling-like-snowflakes",
+    "title": "Falling Like Snowflakes",
+    "year": 2024,
+    "brandId": "hallmark",
+    "releaseDate": "2024-06-29",
+    "synopsis": "A photographer determined to complete her exhibit by capturing a rare photo of a 12-sided snowflake, enlists the help of a childhood friend and they go on a mission they’ll never forget.",
+    "posterUrl": "/images/posters/1298472.jpg",
+    "backdropUrl": "/images/backdrops/1298472.jpg",
+    "cast": [
+      {
+        "actorId": "1355149",
+        "name": "Rebecca Dalton",
+        "character": "Teagan Ashley",
+        "slug": "rebecca-dalton",
+        "tmdbPersonId": 1355149,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/dTsw3WJImhlgsajfzQvkIxqyYD7.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "1381537",
+        "name": "Marcus Rosner",
+        "character": "Noah Cooper",
+        "slug": "marcus-rosner",
+        "tmdbPersonId": 1381537,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/2DQHSgA6LgR7ZTJpIEApT3TXCQx.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "3209971",
+        "name": "Ava Weiss",
+        "character": "Julie Cooper",
+        "slug": "ava-weiss",
+        "tmdbPersonId": 3209971,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/s8SewTOMnqaTruQZ7aeTg7btMoZ.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "1927496",
+        "name": "Madeline Leon",
+        "character": "Charlotte",
+        "slug": "madeline-leon",
+        "tmdbPersonId": 1927496,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/cDFtMp53Db8aOA0kom9aPInhOKX.jpg",
+        "order": 3
+      },
+      {
+        "actorId": "2773218",
+        "name": "Julia Dyan-Porter",
+        "character": "Suzanne",
+        "slug": "julia-dyan-porter",
+        "tmdbPersonId": 2773218,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/rfFRHwAFbcIK2zrhKdino8UyGql.jpg",
+        "order": 4
+      },
+      {
+        "actorId": "2120213",
+        "name": "Michael Gordin Shore",
+        "character": "Calvin Garrett",
+        "slug": "michael-gordin-shore",
+        "tmdbPersonId": 2120213,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/nTJBOF5bdKyBI8OdCPFXbyQqjak.jpg",
+        "order": 5
+      },
+      {
+        "actorId": "3824697",
+        "name": "Jayd Deroché",
+        "character": "Jayden",
+        "slug": "jayd-deroch",
+        "tmdbPersonId": 3824697,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/fkpHBXyfJtDDKnF3g1juWSzde6o.jpg",
+        "order": 6
+      }
+    ],
+    "director": "Max McGuire",
+    "tmdbId": 1298472,
+    "imdbId": "tt32622618",
+    "isComingSoon": false,
+    "status": "collection",
+    "originalTitle": "Falling Like Snowflakes",
+    "runtimeMinutes": 84,
+    "genres": [
+      {
+        "id": 10749,
+        "name": "Romance"
+      },
+      {
+        "id": 18,
+        "name": "Drama"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "FR",
+        "releaseDate": "2024-12-01T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "NRJ12"
+      },
+      {
+        "country": "US",
+        "releaseDate": "2024-06-29T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": ""
+      }
+    ],
+    "crew": [
+      {
+        "id": 1357879,
+        "name": "Bryar Freed",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "66726adaf5b4a5b6f390d602"
+      },
+      {
+        "id": 3264705,
+        "name": "Jennifer Snow",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "66726af28255cfcb1190d6ae"
+      },
+      {
+        "id": 1107266,
+        "name": "Max McGuire",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/5QOpuZ3ZgoWb7EVvJudtewKqSUJ.jpg",
+        "creditId": "66726acb8255cfcb1190d6aa"
+      }
+    ],
+    "trailers": [
+      {
+        "key": "PjM6tivLI3w",
+        "site": "YouTube",
+        "type": "Trailer",
+        "name": "Preview",
+        "official": true
+      }
+    ],
+    "trailerYoutubeKey": "PjM6tivLI3w",
+    "voteAverage": 5.9,
+    "voteCount": 16,
+    "tmdbUpdatedAt": "2026-10-04T16:24:11.719Z",
+    "tmdbFetchedAt": "2026-10-04T16:24:11.719Z"
+  },
+  {
+    "id": "hallmark-2023-rescuing-christmas",
+    "slug": "rescuing-christmas",
+    "title": "Rescuing Christmas",
+    "year": 2023,
+    "brandId": "hallmark",
+    "releaseDate": "2023-12-07",
+    "synopsis": "In a world where Santa is real and wants to drum up some holiday spirit, two of Santa’s elves, Chuck and Debbie, devise a plan to grant one human on Earth three wishes to kickstart the holidays. Unfortunately, that human is Erin, who has lost all affection for the season. Even a blind date set up by her sister, with the affable and charming Sam, won’t change her mind about Christmas. But when she makes the mistake of wishing Christmas would “just disappear,” Erin wakes up to a world where the holiday never existed! Horrified, she realizes that she’s taken away everyone’s joy, so she enlists Sam to help her reinvent the festivities from scratch. In the process, Erin learns just how much this holiday and its traditions have meant to everyone around her - and how much Sam has come to mean to her.",
+    "posterUrl": "/images/posters/1180656.jpg",
+    "backdropUrl": "/images/backdrops/1180656.jpg",
+    "cast": [
+      {
+        "actorId": "38581",
+        "name": "Rachael Leigh Cook",
+        "character": "Erin",
+        "slug": "rachael-leigh-cook",
+        "tmdbPersonId": 38581,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/3ylMsV6dqo5ojKjuMz9xvkEreAA.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "21429",
+        "name": "Sam Page",
+        "character": "Sam",
+        "slug": "sam-page",
+        "tmdbPersonId": 21429,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/6yza06QDrRoOXWxGd2AmYZw9e1u.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "3143200",
+        "name": "Bailey Stender",
+        "character": "Debbie",
+        "slug": "bailey-stender",
+        "tmdbPersonId": 3143200,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/70gkCvQ4ewOyfJHQaXi1CdKh9vW.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "75325",
+        "name": "Patrick Thomas O'Brien",
+        "character": "Chuck",
+        "slug": "patrick-thomas-o-brien",
+        "tmdbPersonId": 75325,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/qeICm4FZ8biLtLCHn9D4XU7IgMY.jpg",
+        "order": 3
+      },
+      {
+        "actorId": "3406080",
+        "name": "T. Mychael Rambo",
+        "character": "Santa",
+        "slug": "t-mychael-rambo",
+        "tmdbPersonId": 3406080,
+        "order": 4
+      },
+      {
+        "actorId": "5097375",
+        "name": "Kathryn Fumie",
+        "character": "Maria",
+        "slug": "kathryn-fumie",
+        "tmdbPersonId": 5097375,
+        "order": 5
+      },
+      {
+        "actorId": "2841169",
+        "name": "Rod Kasai",
+        "character": "Taylor",
+        "slug": "rod-kasai",
+        "tmdbPersonId": 2841169,
+        "order": 6
+      },
+      {
+        "actorId": "5097381",
+        "name": "Mika Flanagan",
+        "character": "Olivia",
+        "slug": "mika-flanagan",
+        "tmdbPersonId": 5097381,
+        "order": 7
+      },
+      {
+        "actorId": "2882823",
+        "name": "Melinda Kordich",
+        "character": "Diana",
+        "slug": "melinda-kordich",
+        "tmdbPersonId": 2882823,
+        "order": 8
+      },
+      {
+        "actorId": "5097385",
+        "name": "Chase Marcotte",
+        "character": "Jonah",
+        "slug": "chase-marcotte",
+        "tmdbPersonId": 5097385,
+        "order": 9
+      },
+      {
+        "actorId": "5097386",
+        "name": "Jim Cunningham",
+        "character": "Lou",
+        "slug": "jim-cunningham",
+        "tmdbPersonId": 5097386,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/q5YM6i9lFQReSe0NCEAcsJvv8qc.jpg",
+        "order": 10
+      },
+      {
+        "actorId": "142317",
+        "name": "Sarah Agnew",
+        "character": "Mayor",
+        "slug": "sarah-agnew",
+        "tmdbPersonId": 142317,
+        "order": 11
+      },
+      {
+        "actorId": "94625",
+        "name": "Greta Oglesby",
+        "character": "NP General Counsel",
+        "slug": "greta-oglesby",
+        "tmdbPersonId": 94625,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/Ac5ytI0l5xiYg8JrdXstZwJpuYe.jpg",
+        "order": 12
+      },
+      {
+        "actorId": "2877750",
+        "name": "Ahmed Mawas",
+        "character": "Archie",
+        "slug": "ahmed-mawas",
+        "tmdbPersonId": 2877750,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/7dvKuVcATqRPRtSDr9utrOKFz1Q.jpg",
+        "order": 13
+      },
+      {
+        "actorId": "4988444",
+        "name": "Agatha Rae Pokrzywinski",
+        "character": "Bakery Worker",
+        "slug": "agatha-rae-pokrzywinski",
+        "tmdbPersonId": 4988444,
+        "order": 14
+      },
+      {
+        "actorId": "5097389",
+        "name": "Rae Dastoor",
+        "character": "Bakery Owner",
+        "slug": "rae-dastoor",
+        "tmdbPersonId": 5097389,
+        "order": 15
+      },
+      {
+        "actorId": "5097390",
+        "name": "Jake Leider",
+        "character": "Radio Intern",
+        "slug": "jake-leider",
+        "tmdbPersonId": 5097390,
+        "order": 16
+      },
+      {
+        "actorId": "4279857",
+        "name": "Christina Goltare",
+        "character": "Town Square Shopper (uncredited)",
+        "slug": "christina-goltare",
+        "tmdbPersonId": 4279857,
+        "order": 17
+      },
+      {
+        "actorId": "1930372",
+        "name": "Gwen Ruhoff",
+        "character": "Elf Council member (uncredited)",
+        "slug": "gwen-ruhoff",
+        "tmdbPersonId": 1930372,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/tTCr7M9ZAN8QpaSt7U1566xsmNq.jpg",
+        "order": 18
+      },
+      {
+        "actorId": "1419079",
+        "name": "Dawan Scott",
+        "character": "Tree Ceremony Attendee (uncredited)",
+        "slug": "dawan-scott",
+        "tmdbPersonId": 1419079,
+        "order": 19
+      },
+      {
+        "actorId": "5204326",
+        "name": "Laura Judson",
+        "character": "Santa's Elf (uncredited)",
+        "slug": "laura-judson",
+        "tmdbPersonId": 5204326,
+        "order": 20
+      },
+      {
+        "actorId": "5222933",
+        "name": "Amy Jo Schmidt",
+        "character": "Elf Council Member (uncredited)",
+        "slug": "amy-jo-schmidt",
+        "tmdbPersonId": 5222933,
+        "order": 21
+      },
+      {
+        "actorId": "4865892",
+        "name": "Lucretia Stillwater",
+        "character": "Angry Woman in Jail (uncredited)",
+        "slug": "lucretia-stillwater",
+        "tmdbPersonId": 4865892,
+        "order": 22
+      }
+    ],
+    "director": "Emily Moss Wilson",
+    "tmdbId": 1180656,
+    "imdbId": "tt27491217",
+    "isComingSoon": false,
+    "status": "collection",
+    "originalTitle": "Rescuing Christmas",
+    "runtimeMinutes": 99,
+    "genres": [
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "FR",
+        "releaseDate": "2024-10-21T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "TF1"
+      },
+      {
+        "country": "US",
+        "releaseDate": "2023-12-07T00:00:00.000Z",
+        "type": 4,
+        "certification": "G",
+        "note": "Hallmark Movies Now"
+      }
+    ],
+    "crew": [
+      {
+        "id": 1718392,
+        "name": "Emily Moss Wilson",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/svf9V8OZBo1LdQNkAgapHlaBRqF.jpg",
+        "creditId": "6509aa5b3cd12c00ad8c768c"
+      },
+      {
+        "id": 951196,
+        "name": "Jim Head",
+        "job": "Writer",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/n5onSVPuaSceXFjcfSSm7P9RPiD.jpg",
+        "creditId": "6509aa6342d8a57e98a7abc7"
+      },
+      {
+        "id": 2246789,
+        "name": "Sarah Montana",
+        "job": "Writer",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/coiRsnoJSNxnhliaioILEYUxabH.jpg",
+        "creditId": "6509aa6bfa27f400caa5ab39"
+      }
+    ],
+    "trailers": [
+      {
+        "key": "aTnhRRXhdTs",
+        "site": "YouTube",
+        "type": "Trailer",
+        "name": "Preview",
+        "official": true
+      }
+    ],
+    "trailerYoutubeKey": "aTnhRRXhdTs",
+    "tagline": "A holiday rebel without a claus.",
+    "voteAverage": 7.1,
+    "voteCount": 19,
+    "tmdbUpdatedAt": "2026-10-04T16:24:11.759Z",
+    "tmdbFetchedAt": "2026-10-04T16:24:11.759Z"
+  },
+  {
+    "id": "hallmark-2024-a-very-vermont-christmas",
+    "slug": "a-very-vermont-christmas",
+    "title": "A Very Vermont Christmas",
+    "year": 2024,
+    "brandId": "hallmark",
+    "releaseDate": "2024-07-20",
+    "synopsis": "A local champion skier and Vermont brew master team up as an unlikely match to create a seasonal microbrew, in order to save her family’s business by Christmas.",
+    "posterUrl": "/images/posters/1298474.jpg",
+    "backdropUrl": "/images/backdrops/1298474.jpg",
+    "cast": [
+      {
+        "actorId": "84948",
+        "name": "Katie Leclerc",
+        "character": "Joy Keogh",
+        "slug": "katie-leclerc",
+        "tmdbPersonId": 84948,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/7OGbo7V1gw9i43ALLeva9SHdJqL.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "93031",
+        "name": "Ryan McPartlin",
+        "character": "Zac Chase",
+        "slug": "ryan-mcpartlin",
+        "tmdbPersonId": 93031,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/v0vKYfoSVLBEGBZ2ldjm3cHJwf3.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "1580086",
+        "name": "Joanna Herrington",
+        "character": "Mary Keogh",
+        "slug": "joanna-herrington",
+        "tmdbPersonId": 1580086,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/75A7TQ14CsrmLQLItyAwOhyEDNd.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "1048992",
+        "name": "John Forest",
+        "character": "Greg Harris",
+        "slug": "john-forest",
+        "tmdbPersonId": 1048992,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/4Ngq475FTpYk3CgW1y7CUEA6MCf.jpg",
+        "order": 3
+      },
+      {
+        "actorId": "4830169",
+        "name": "Ivan Cecil Walks",
+        "character": "Kevin",
+        "slug": "ivan-cecil-walks",
+        "tmdbPersonId": 4830169,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/1w5XK2d5ljXkriK1ylJN8QA8nay.jpg",
+        "order": 4
+      },
+      {
+        "actorId": "1452764",
+        "name": "David J. Curtis",
+        "character": "Bob Salimano",
+        "slug": "david-j-curtis",
+        "tmdbPersonId": 1452764,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/ufbJYNtiGs2qxpARsNxxVHD7JeW.jpg",
+        "order": 5
+      },
+      {
+        "actorId": "4830170",
+        "name": "Jenna Lea Scott",
+        "character": "Liftie Lucy",
+        "slug": "jenna-lea-scott",
+        "tmdbPersonId": 4830170,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/74yoqCWESI2mIM6xkqzcTN5S0Cg.jpg",
+        "order": 6
+      },
+      {
+        "actorId": "116295",
+        "name": "Brett Davern",
+        "character": "Ethan",
+        "slug": "brett-davern",
+        "tmdbPersonId": 116295,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/a2WEosnrvpGbdOu45bFa3T5UQg2.jpg",
+        "order": 7
+      },
+      {
+        "actorId": "3202071",
+        "name": "Kimaya Diggs",
+        "character": "Rosie",
+        "slug": "kimaya-diggs",
+        "tmdbPersonId": 3202071,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/j2Fhcm1Fi4cnsImhy4ctBgQ9yT5.jpg",
+        "order": 8
+      },
+      {
+        "actorId": "4989954",
+        "name": "Ethan Lavigne",
+        "character": "Contestant",
+        "slug": "ethan-lavigne",
+        "tmdbPersonId": 4989954,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/sXmltJlxDVIFq6vZsmSpb16Ze3c.jpg",
+        "order": 9
+      },
+      {
+        "actorId": "4830171",
+        "name": "Bob Amero",
+        "character": "Nathaniel Chase",
+        "slug": "bob-amero",
+        "tmdbPersonId": 4830171,
+        "order": 10
+      }
+    ],
+    "director": "John Stimpson",
+    "tmdbId": 1298474,
+    "imdbId": "tt32011613",
+    "isComingSoon": false,
+    "status": "collection",
+    "originalTitle": "A Very Vermont Christmas",
+    "alternativeTitles": [
+      {
+        "title": "Love is Brewing",
+        "country": "US"
+      },
+      {
+        "title": "Настоящее Рождество в Вермонте",
+        "country": "RU"
+      }
+    ],
+    "runtimeMinutes": 84,
+    "genres": [
+      {
+        "id": 10749,
+        "name": "Romance"
+      },
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "US",
+        "releaseDate": "2024-07-20T00:00:00.000Z",
+        "type": 6,
+        "certification": "G",
+        "note": "Hallmark"
+      }
+    ],
+    "crew": [
+      {
+        "id": 236510,
+        "name": "John Stimpson",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/zumegdf7MBJMa6GNqw9nVb99AwE.jpg",
+        "creditId": "66948798f1293f98686b4079"
+      },
+      {
+        "id": 1113492,
+        "name": "Steven Kent",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "6694879f75e62792205f5880"
+      },
+      {
+        "id": 2945758,
+        "name": "Pamela Rice",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "669487a60053f970c8899255"
+      }
+    ],
+    "trailers": [
+      {
+        "key": "-KGov6mBx5w",
+        "site": "YouTube",
+        "type": "Trailer",
+        "name": "Trailer",
+        "official": true
+      }
+    ],
+    "trailerYoutubeKey": "-KGov6mBx5w",
+    "voteAverage": 6.2,
+    "voteCount": 12,
+    "tmdbUpdatedAt": "2026-10-04T16:24:11.760Z",
+    "tmdbFetchedAt": "2026-10-04T16:24:11.760Z"
+  },
+  {
+    "id": "hallmark-2023-an-ice-palace-romance",
+    "slug": "an-ice-palace-romance",
+    "title": "An Ice Palace Romance",
+    "year": 2023,
+    "brandId": "hallmark",
+    "releaseDate": "2023-12-14",
+    "synopsis": "A journalist faces old fears when she returns to her hometown ice rink to cover a story. With the help of the owner and his young daughter, she begins to reevaluate her life's purpose.",
+    "posterUrl": "/images/posters/1180655.jpg",
+    "backdropUrl": "/images/backdrops/1180655.jpg",
+    "cast": [
+      {
+        "actorId": "1817018",
+        "name": "Celeste Desjardins",
+        "character": "Lori Mitchell",
+        "slug": "celeste-desjardins",
+        "tmdbPersonId": 1817018,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/hSu1hRAEwAVPDBEOKofo23IqkbC.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "1381537",
+        "name": "Marcus Rosner",
+        "character": "Mark Johnson",
+        "slug": "marcus-rosner",
+        "tmdbPersonId": 1381537,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/2DQHSgA6LgR7ZTJpIEApT3TXCQx.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "3098901",
+        "name": "Joey Coleman",
+        "character": "Chad Reynolds",
+        "slug": "joey-coleman",
+        "tmdbPersonId": 3098901,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/l8C9fLJ7Pu2wC7L4HsDxbat4lDE.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "2773218",
+        "name": "Julia Dyan-Porter",
+        "character": "Susan",
+        "slug": "julia-dyan-porter",
+        "tmdbPersonId": 2773218,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/rfFRHwAFbcIK2zrhKdino8UyGql.jpg",
+        "order": 3
+      },
+      {
+        "actorId": "2162211",
+        "name": "Jennie Esnard",
+        "character": "Dance Instructor",
+        "slug": "jennie-esnard",
+        "tmdbPersonId": 2162211,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/nTZIjhCJwcWclDaL6XOE1QeC4Dq.jpg",
+        "order": 4
+      },
+      {
+        "actorId": "2431913",
+        "name": "Kiril Mitev",
+        "character": "Ken",
+        "slug": "kiril-mitev",
+        "tmdbPersonId": 2431913,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/dD03CBh3592sqKb7mP8zID15nwO.jpg",
+        "order": 5
+      },
+      {
+        "actorId": "1616730",
+        "name": "Shannon McDonough",
+        "character": "Jen",
+        "slug": "shannon-mcdonough",
+        "tmdbPersonId": 1616730,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/wMvOUGwfy9GaO93FXETfOpFtbBw.jpg",
+        "order": 6
+      },
+      {
+        "actorId": "4224137",
+        "name": "Acacia Hanvelt",
+        "character": "Zoe Johnson",
+        "slug": "acacia-hanvelt",
+        "tmdbPersonId": 4224137,
+        "order": 7
+      },
+      {
+        "actorId": "4519645",
+        "name": "Mary Long",
+        "character": "Mayor June",
+        "slug": "mary-long",
+        "tmdbPersonId": 4519645,
+        "order": 8
+      }
+    ],
+    "director": "Shawna Steele",
+    "tmdbId": 1180655,
+    "imdbId": "tt29741889",
+    "isComingSoon": false,
+    "status": "collection",
+    "originalTitle": "An Ice Palace Romance",
+    "runtimeMinutes": 84,
+    "genres": [
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      },
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "CA",
+        "releaseDate": "2023-12-22T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "CTV Life Channel"
+      },
+      {
+        "country": "CA",
+        "releaseDate": "2024-02-14T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "Super Écran 1"
+      },
+      {
+        "country": "FR",
+        "releaseDate": "2024-11-07T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "TF1"
+      },
+      {
+        "country": "US",
+        "releaseDate": "2023-12-14T00:00:00.000Z",
+        "type": 4,
+        "certification": "G",
+        "note": "Hallmark Movies Now"
+      }
+    ],
+    "crew": [
+      {
+        "id": 2989750,
+        "name": "Shawna Steele",
+        "job": "Director",
+        "department": "Directing",
+        "creditId": "6567db88fb5299011f707b03"
+      },
+      {
+        "id": 4404001,
+        "name": "Andrew Daley",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "6567db9163536a00fe36eacd"
+      }
+    ],
+    "trailers": [],
+    "voteAverage": 6.3,
+    "voteCount": 15,
+    "tmdbUpdatedAt": "2026-10-04T16:24:12.765Z",
+    "tmdbFetchedAt": "2026-10-04T16:24:12.765Z"
+  },
+  {
+    "id": "hallmark-2016-finding-father-christmas",
+    "slug": "finding-father-christmas",
+    "title": "Finding Father Christmas",
+    "year": 2016,
+    "brandId": "hallmark",
+    "releaseDate": "2016-11-13",
+    "synopsis": "Orphaned at a young age at Christmas, Miranda finds a clue that could unveil the truth about her father - and maybe a little something else will rekindle her Christmas spirit.",
+    "posterUrl": "/images/posters/421630.jpg",
+    "backdropUrl": "/images/backdrops/421630.jpg",
+    "cast": [
+      {
+        "actorId": "1143960",
+        "name": "Erin Krakow",
+        "character": "Miranda Carson",
+        "slug": "erin-krakow",
+        "tmdbPersonId": 1143960,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/8euXiEHmBwzV6NdwQ8dfwzFa7C7.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "1230713",
+        "name": "Niall Matter",
+        "character": "Ian McAndrick",
+        "slug": "niall-matter",
+        "tmdbPersonId": 1230713,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/9hlmypLILRkaEVOazFdg11nfsJm.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "61980",
+        "name": "Wendie Malick",
+        "character": "Margaret Whitcomb",
+        "slug": "wendie-malick",
+        "tmdbPersonId": 61980,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/4yDh5iu4Qyib35aXfo7SStFpnNC.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "59241",
+        "name": "P. Lynn Johnson",
+        "character": "Katherine McAndrick",
+        "slug": "p-lynn-johnson",
+        "tmdbPersonId": 59241,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/1dPKU858guimUQrSJlfKDOepGBM.jpg",
+        "order": 3
+      },
+      {
+        "actorId": "583061",
+        "name": "Michael Kopsa",
+        "character": "Andrew McAndrick",
+        "slug": "michael-kopsa",
+        "tmdbPersonId": 583061,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/eGoaXyQMd9mfAkhc6PqMhFxef5m.jpg",
+        "order": 4
+      },
+      {
+        "actorId": "64671",
+        "name": "Jim Thorburn",
+        "character": "Peter Whitcomb",
+        "slug": "jim-thorburn",
+        "tmdbPersonId": 64671,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/c52ByiN2cyUBvsBiveKmS4Jdkz.jpg",
+        "order": 5
+      },
+      {
+        "actorId": "210904",
+        "name": "Aliyah O'Brien",
+        "character": "Ellie Whitcomb",
+        "slug": "aliyah-o-brien",
+        "tmdbPersonId": 210904,
+        "order": 6
+      },
+      {
+        "actorId": "1927077",
+        "name": "Macie Juiles",
+        "character": "Julia Whitcomb",
+        "slug": "macie-juiles",
+        "tmdbPersonId": 1927077,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/1XNbEymreBHJqqQ7OluYC2s9R5p.jpg",
+        "order": 7
+      },
+      {
+        "actorId": "1134014",
+        "name": "Callum Seagram Airlie",
+        "character": "Mark Whitcomb",
+        "slug": "callum-seagram-airlie",
+        "tmdbPersonId": 1134014,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/i9kzWXWld03UOJSNM04TZDbr8iO.jpg",
+        "order": 8
+      },
+      {
+        "actorId": "1043662",
+        "name": "Jordana Largy",
+        "character": "Blair",
+        "slug": "jordana-largy",
+        "tmdbPersonId": 1043662,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/a6NAez2SywVsklnNzbkquFEmcST.jpg",
+        "order": 9
+      },
+      {
+        "actorId": "27112",
+        "name": "Terence Kelly",
+        "character": "Rick Torrance",
+        "slug": "terence-kelly",
+        "tmdbPersonId": 27112,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/2DGJYwQSZbbVvN4H65sTUe4zJ9b.jpg",
+        "order": 10
+      },
+      {
+        "actorId": "1572437",
+        "name": "Sasha Neuhaus",
+        "character": "Young Miranda",
+        "slug": "sasha-neuhaus",
+        "tmdbPersonId": 1572437,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/sAmuf1mLjeQDknv8Sdvs3aEMbVp.jpg",
+        "order": 11
+      },
+      {
+        "actorId": "1366830",
+        "name": "Jessie Fraser",
+        "character": "Eve Chester",
+        "slug": "jessie-fraser",
+        "tmdbPersonId": 1366830,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/cHfjr2EEj7soqRAkKiaeNv23jFW.jpg",
+        "order": 12
+      },
+      {
+        "actorId": "997197",
+        "name": "Nelson Wong",
+        "character": "Dr. Colter",
+        "slug": "nelson-wong",
+        "tmdbPersonId": 997197,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/kepIOIAtrCZBvw7TuFufyGqQoo5.jpg",
+        "order": 13
+      },
+      {
+        "actorId": "569210",
+        "name": "Bethany Brown",
+        "character": "Annie Jacobs",
+        "slug": "bethany-brown",
+        "tmdbPersonId": 569210,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/cPXNU3xZQP1tYhOkBdHwJqyI0lU.jpg",
+        "order": 14
+      }
+    ],
+    "director": "Terry Ingram",
+    "tmdbId": 421630,
+    "imdbId": "tt6245488",
+    "isComingSoon": false,
+    "status": "collection",
+    "originalTitle": "Finding Father Christmas",
+    "alternativeTitles": [
+      {
+        "title": "À la recherche de papa Noël",
+        "country": "BE"
+      }
+    ],
+    "runtimeMinutes": 84,
+    "genres": [
+      {
+        "id": 18,
+        "name": "Drama"
+      },
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "US",
+        "releaseDate": "2016-11-13T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "Hallmark Movies  & Mysteries "
+      }
+    ],
+    "crew": [
+      {
+        "id": 110468,
+        "name": "Terry Ingram",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/iJIumt1U6KknXM3rl9TIMLI5S7D.jpg",
+        "creditId": "58131d6fc3a3687a9d022d96"
+      },
+      {
+        "id": 239783,
+        "name": "David Golden",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "581fba83c3a3685550006bef"
+      }
+    ],
+    "trailers": [
+      {
+        "key": "4wS8bbzQDX0",
+        "site": "YouTube",
+        "type": "Trailer",
+        "name": "Preview",
+        "official": true
+      }
+    ],
+    "trailerYoutubeKey": "4wS8bbzQDX0",
+    "voteAverage": 6.2,
+    "voteCount": 73,
+    "tmdbUpdatedAt": "2026-10-05T04:38:23.570Z",
+    "tmdbFetchedAt": "2026-10-05T04:38:23.570Z"
   }
 ];
 

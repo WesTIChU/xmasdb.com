@@ -1706,6 +1706,11 @@ export const PROTOTYPE_MOVIE_FINGERPRINTS: Readonly<Record<string, readonly Fing
     "old-flame",
     "returns-home"
   ],
+  "hallmark-2022-campfire-christmas": [
+    "family-business",
+    "family-reunion",
+    "reunion"
+  ],
   "hallmark-2022-christmas-at-the-golden-dragon": [
     "family-business",
     "family-legacy",
@@ -1715,6 +1720,11 @@ export const PROTOTYPE_MOVIE_FINGERPRINTS: Readonly<Record<string, readonly Fing
   ],
   "hallmark-2022-christmas-class-reunion": [
     "reunion"
+  ],
+  "hallmark-2022-christmas-in-toyland": [
+    "save-the-business",
+    "toy-shop",
+    "workplace-romance"
   ],
   "hallmark-2022-ghosts-of-christmas-always": [
     "ghost-spirit"
@@ -1753,6 +1763,10 @@ export const PROTOTYPE_MOVIE_FINGERPRINTS: Readonly<Record<string, readonly Fing
     "business-owner",
     "celebrity",
     "entertainment-showbiz"
+  ],
+  "hallmark-2022-my-grown-up-christmas-list": [
+    "military",
+    "writer-journalist"
   ],
   "hallmark-2022-my-southern-family-christmas": [
     "family-secret",
@@ -1827,6 +1841,18 @@ export const PROTOTYPE_MOVIE_FINGERPRINTS: Readonly<Record<string, readonly Fing
   "hallmark-2023-a-not-so-royal-christmas": [
     "mistaken-identity",
     "royalty",
+    "writer-journalist"
+  ],
+  "hallmark-2023-a-royal-christmas-crush": [
+    "hotel-resort",
+    "royalty",
+    "unexpected-romance",
+    "workplace-romance"
+  ],
+  "hallmark-2023-an-ice-palace-romance": [
+    "business-owner",
+    "hometown",
+    "returns-home",
     "writer-journalist"
   ],
   "hallmark-2023-catch-me-if-you-claus": [
@@ -1923,9 +1949,22 @@ export const PROTOTYPE_MOVIE_FINGERPRINTS: Readonly<Record<string, readonly Fing
     "single-parent",
     "teacher"
   ],
+  "hallmark-2023-rescuing-christmas": [
+    "alternate-life",
+    "christmas-magic",
+    "christmas-wish",
+    "santa",
+    "wish-comes-true"
+  ],
   "hallmark-2023-round-and-round": [
     "matchmaking",
     "time-travel"
+  ],
+  "hallmark-2023-take-me-back-for-christmas": [
+    "alternate-life",
+    "christmas-wish",
+    "second-chance",
+    "wish-comes-true"
   ],
   "hallmark-2023-the-santa-summit": [
     "christmas-festival"
@@ -1956,6 +1995,11 @@ export const PROTOTYPE_MOVIE_FINGERPRINTS: Readonly<Record<string, readonly Fing
     "love-triangle",
     "music",
     "restaurant-cafe"
+  ],
+  "hallmark-2024-a-very-vermont-christmas": [
+    "athlete",
+    "family-business",
+    "save-the-business"
   ],
   "hallmark-2024-christmas-on-call": [
     "big-city"
@@ -2022,6 +2066,9 @@ export const PROTOTYPE_MOVIE_FINGERPRINTS: Readonly<Record<string, readonly Fing
   ],
   "hallmark-2024-private-princess-christmas": [
     "royalty"
+  ],
+  "hallmark-2024-renovation-romance": [
+    "entertainment-showbiz"
   ],
   "hallmark-2024-santa-tell-me": [
     "santa",
@@ -2290,6 +2337,16 @@ export const PROTOTYPE_MOVIE_FINGERPRINTS: Readonly<Record<string, readonly Fing
     "widow-widower",
     "workplace-romance"
   ],
+  "hallmark-2026-love-under-the-mistletoe": [
+    "business-owner",
+    "family-business",
+    "hometown",
+    "old-flame",
+    "returns-home",
+    "reunion",
+    "second-chance",
+    "small-town"
+  ],
   "hallmark-2026-merry-memories": [
     "military",
     "parent-child",
@@ -2333,6 +2390,9 @@ export const PROTOTYPE_MOVIE_FINGERPRINTS: Readonly<Record<string, readonly Fing
     "unexpected-romance",
     "unexpected-trip"
   ],
+  "hallmark-2026-o-little-christmas-market": [
+    "christmas-market"
+  ],
   "hallmark-2026-our-holiday-playbook": [
     "baking-cooking",
     "christmas-competition",
@@ -2364,6 +2424,10 @@ export const PROTOTYPE_MOVIE_FINGERPRINTS: Readonly<Record<string, readonly Fing
     "small-town",
     "unexpected-romance",
     "writer-journalist"
+  ],
+  "hallmark-2026-snowbound-for-the-holidays": [
+    "career-vs-love",
+    "hotel-resort"
   ],
   "hallmark-2026-the-christmas-eve-feast": [
     "baking-cooking",
