@@ -1,6 +1,6 @@
 import React, { useState, useMemo, useRef, useEffect } from 'react';
 import { ExternalLink, Instagram, Facebook } from 'lucide-react';
-import type { ActorFilmographyItem } from '../api/types';
+import type { ActorFilmographyItem, TriviaFact } from '../api/types';
 import { Actor } from '../types';
 import { getMoviesPath, getMoviePath, getActorFeedPath, getActorPath } from '../utils/urls';
 import { BackNavigation } from './BackNavigation';
@@ -15,6 +15,7 @@ import { getFrequentCoStars } from '../utils/co-stars';
 import { ActorCircularPortrait } from './PopularActorsSection';
 import { getFilmographyMilestones } from '../utils/filmography-milestones';
 import { isBirthdayToday } from '../utils/birthdays';
+import { TriviaAside } from './TriviaAside';
 
 interface ActorDetailProps {
   actor: Actor;
@@ -25,6 +26,7 @@ interface ActorDetailProps {
   backdropUrl: string | null;
   onNavigate: (path: string) => void;
   onSelectMovie: (slug: string, tmdbId?: number) => void;
+  trivia?: TriviaFact;
 }
 
 export const ActorDetail: React.FC<ActorDetailProps> = ({
@@ -36,6 +38,7 @@ export const ActorDetail: React.FC<ActorDetailProps> = ({
   backdropUrl,
   onNavigate,
   onSelectMovie,
+  trivia,
 }) => {
   const safeFilmography = Array.isArray(filmography) ? filmography : [];
   const safeActingFilmography = Array.isArray(actingFilmography) ? actingFilmography : safeFilmography.filter((movie) => !movie.crewJobs?.length);
@@ -212,7 +215,9 @@ export const ActorDetail: React.FC<ActorDetailProps> = ({
                   </div>
                 )}
               </div>
-            )}
+             )}
+
+            <TriviaAside fact={trivia} onNavigate={onNavigate} className="mt-4 w-full" />
 
           </div>
 

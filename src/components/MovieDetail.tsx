@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { ExternalLink, Calendar, Clock, Tv, Film, Play, Star, Clapperboard } from 'lucide-react';
-import type { ListingMovie, MovieDetailMovie } from '../api/types';
+import type { ListingMovie, MovieDetailMovie, TriviaFact } from '../api/types';
 import { Trailer } from '../types';
 import { getBrandById } from '../data/brands';
 import { getNetworkPath, getMoviesPath, getActorPath, getMoviePath } from '../utils/urls';
@@ -14,14 +14,16 @@ import { getFingerprintById } from '../data/fingerprints';
 import { FingerprintChips } from './FingerprintChips';
 import { resolveImageUrl } from '../utils/image-url';
 import { formatLastUpdatedDate } from '../utils/last-updated';
+import { TriviaAside } from './TriviaAside';
 
 interface MovieDetailProps {
   movie: MovieDetailMovie;
   related: ListingMovie[];
   onNavigate: (path: string) => void;
+  trivia?: TriviaFact;
 }
 
-export const MovieDetail: React.FC<MovieDetailProps> = ({ movie, related, onNavigate }) => {
+export const MovieDetail: React.FC<MovieDetailProps> = ({ movie, related, onNavigate, trivia }) => {
   const brand = getBrandById(movie.brandId);
   const [isCastExpanded, setIsCastExpanded] = useState(false);
 
@@ -241,6 +243,7 @@ export const MovieDetail: React.FC<MovieDetailProps> = ({ movie, related, onNavi
               <FingerprintChips fingerprints={fingerprints} onNavigate={onNavigate} />
             </section>
           )}
+          <TriviaAside fact={trivia} onNavigate={onNavigate} className="mt-5" />
         </div>
 
         {/* Right column: Title, Synopsis, Cast, Trailers, External Links */}

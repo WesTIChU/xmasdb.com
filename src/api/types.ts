@@ -245,6 +245,7 @@ export type MovieDetailMovie = Omit<Movie, 'cast'> & {
 export interface MovieDetailPayload {
   movie: MovieDetailMovie;
   related: ListingMovie[];
+  trivia?: TriviaFact;
 }
 
 export interface ActorFilmographyItem extends ListingMovie {
@@ -262,6 +263,26 @@ export interface ActorDetailPayload {
   backdropUrl: string | null;
   /** Present only when multiple catalogue actors share the same display name. */
   titleDisambiguator?: string;
+  trivia?: TriviaFact;
+}
+
+export type TriviaCategory = 'actors' | 'birthdays' | 'characters' | 'co-stars' | 'movies' | 'networks' | 'calendar' | 'crew' | 'titles';
+
+export interface TriviaTextSegment {
+  text: string;
+  href?: string;
+}
+
+export interface TriviaFact {
+  id: string;
+  category: TriviaCategory;
+  text: string;
+  segments?: TriviaTextSegment[];
+  emphasis?: string;
+  href?: string;
+  relatedActorIds?: number[];
+  relatedMovieIds?: number[];
+  priority?: number;
 }
 
 /** Compact autocomplete index. No biographies, synopses or structured cast. */

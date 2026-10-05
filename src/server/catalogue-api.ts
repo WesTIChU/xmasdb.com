@@ -46,6 +46,7 @@ import { scoreActorSearchResult, scoreIngredientSearchResult, scoreMovieSearchFi
 import { getCreativeCrew, getPersonSlug, isCreativeCrewJob } from '../utils/creative-crew';
 import { FINGERPRINTS, getFingerprintById } from '../data/fingerprints';
 import { getMovieFingerprints, getRelatedMovieFingerprints, movieHasFingerprint } from '../data/movie-fingerprints';
+import { selectTriviaFact } from '../utils/trivia';
 
 const FAVOURITE_MOVIE_TITLES = [
   'Christmas by Starlight',
@@ -269,7 +270,7 @@ export function buildMovieDetail(identifier: string, slug?: string): MovieDetail
 
   const related = selectRelatedMovies(movie);
 
-  return { movie: movieWithResolvedCast, related };
+  return { movie: movieWithResolvedCast, related, trivia: selectTriviaFact(new Date(), { movie }) || undefined };
 }
 
 // ---------------------------------------------------------------------------
@@ -328,6 +329,7 @@ export function buildActorDetail(identifier: string, slug?: string, now: Date = 
     writingFilmography,
     backdropUrl: backdrop ? backdrop.url : null,
     titleDisambiguator: getActorTitleDisambiguator(actor),
+    trivia: selectTriviaFact(now, { actor }) || undefined,
   };
 }
 
