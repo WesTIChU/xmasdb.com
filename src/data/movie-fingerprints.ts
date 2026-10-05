@@ -614,6 +614,11 @@ export const PROTOTYPE_MOVIE_FINGERPRINTS: Readonly<Record<string, readonly Fing
     "family-reconciliation",
     "santa"
   ],
+  "hallmark-2010-the-santa-incident": [
+    "mistaken-identity",
+    "santa",
+    "small-town"
+  ],
   "hallmark-2010-the-santa-suit": [
     "christmas-magic",
     "family-business",
