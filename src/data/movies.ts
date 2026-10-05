@@ -200,8 +200,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt36503047/",
       "tmdb": "https://www.themoviedb.org/movie/1538155"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:34:18.300Z",
-    "tmdbFetchedAt": "2026-10-04T07:34:18.300Z"
+    "tmdbUpdatedAt": "2026-10-05T07:55:10.025Z",
+    "tmdbFetchedAt": "2026-10-05T07:55:10.025Z"
   },
   {
     "id": "hallmark-2025-a-grand-ole-opry-christmas",
@@ -654,8 +654,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt37891014/",
       "tmdb": "https://www.themoviedb.org/movie/1535221"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:34:19.049Z",
-    "tmdbFetchedAt": "2026-10-04T07:34:19.049Z"
+    "tmdbUpdatedAt": "2026-10-05T07:55:11.066Z",
+    "tmdbFetchedAt": "2026-10-05T07:55:11.066Z"
   },
   {
     "id": "hallmark-2025-a-keller-christmas-vacation",
@@ -901,8 +901,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt38353730/",
       "tmdb": "https://www.themoviedb.org/movie/1547913"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:34:19.782Z",
-    "tmdbFetchedAt": "2026-10-04T07:34:19.782Z"
+    "tmdbUpdatedAt": "2026-10-05T07:55:11.698Z",
+    "tmdbFetchedAt": "2026-10-05T07:55:11.698Z"
   },
   {
     "id": "hallmark-2025-a-make-or-break-holiday",
@@ -1157,8 +1157,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt38354998/",
       "tmdb": "https://www.themoviedb.org/movie/1547927"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:34:20.555Z",
-    "tmdbFetchedAt": "2026-10-04T07:34:20.555Z"
+    "tmdbUpdatedAt": "2026-10-05T07:55:12.388Z",
+    "tmdbFetchedAt": "2026-10-05T07:55:12.388Z"
   },
   {
     "id": "hallmark-2025-a-newport-christmas",
@@ -1358,8 +1358,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt36491858/",
       "tmdb": "https://www.themoviedb.org/movie/1537560"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:34:21.266Z",
-    "tmdbFetchedAt": "2026-10-04T07:34:21.266Z"
+    "tmdbUpdatedAt": "2026-10-05T07:55:13.014Z",
+    "tmdbFetchedAt": "2026-10-05T07:55:13.014Z"
   },
   {
     "id": "hallmark-2025-a-royal-montana-christmas",
@@ -1619,8 +1619,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt36364046/",
       "tmdb": "https://www.themoviedb.org/movie/1535223"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:34:22.013Z",
-    "tmdbFetchedAt": "2026-10-04T07:34:22.013Z"
+    "tmdbUpdatedAt": "2026-10-05T07:55:13.652Z",
+    "tmdbFetchedAt": "2026-10-05T07:55:13.652Z"
   },
   {
     "id": "hallmark-2025-a-suite-holiday-romance",
@@ -1843,8 +1843,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt38354975/",
       "tmdb": "https://www.themoviedb.org/movie/1547925"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:34:22.760Z",
-    "tmdbFetchedAt": "2026-10-04T07:34:22.760Z",
+    "tmdbUpdatedAt": "2026-10-05T07:55:14.244Z",
+    "tmdbFetchedAt": "2026-10-05T07:55:14.244Z",
     "alternativeTitles": [
       {
         "title": "A Magical New York Christmas",
@@ -2054,8 +2054,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt36836189/",
       "tmdb": "https://www.themoviedb.org/movie/1547921"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:34:23.502Z",
-    "tmdbFetchedAt": "2026-10-04T07:34:23.502Z"
+    "tmdbUpdatedAt": "2026-10-05T07:55:14.846Z",
+    "tmdbFetchedAt": "2026-10-05T07:55:14.846Z"
   },
   {
     "id": "hallmark-2025-christmas-above-the-clouds",
@@ -2455,8 +2455,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt38183872/",
       "tmdb": "https://www.themoviedb.org/movie/1537081"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:34:24.233Z",
-    "tmdbFetchedAt": "2026-10-04T07:34:24.233Z"
+    "tmdbUpdatedAt": "2026-10-05T07:55:15.472Z",
+    "tmdbFetchedAt": "2026-10-05T07:55:15.472Z"
   },
   {
     "id": "hallmark-2025-christmas-at-the-catnip-cafe",
@@ -2735,8 +2735,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt37985000/",
       "tmdb": "https://www.themoviedb.org/movie/1545999"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:34:24.953Z",
-    "tmdbFetchedAt": "2026-10-04T07:34:24.953Z"
+    "tmdbUpdatedAt": "2026-10-05T07:55:16.114Z",
+    "tmdbFetchedAt": "2026-10-05T07:55:16.114Z"
   },
   {
     "id": "hallmark-2025-christmas-on-duty",
@@ -2996,8 +2996,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt37133902/",
       "tmdb": "https://www.themoviedb.org/movie/1547885"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:34:25.752Z",
-    "tmdbFetchedAt": "2026-10-04T07:34:25.752Z"
+    "tmdbUpdatedAt": "2026-10-05T07:55:16.693Z",
+    "tmdbFetchedAt": "2026-10-05T07:55:16.693Z"
   },
   {
     "id": "hallmark-2025-holiday-touchdown-a-bills-love-story",
@@ -3630,8 +3630,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt36604797/",
       "tmdb": "https://www.themoviedb.org/movie/1485002"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:34:26.529Z",
-    "tmdbFetchedAt": "2026-10-04T07:34:26.529Z"
+    "tmdbUpdatedAt": "2026-10-05T07:55:17.301Z",
+    "tmdbFetchedAt": "2026-10-05T07:55:17.301Z"
   },
   {
     "id": "hallmark-2025-melt-my-heart-this-christmas",
@@ -3816,8 +3816,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt37333639/",
       "tmdb": "https://www.themoviedb.org/movie/1547917"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:34:27.277Z",
-    "tmdbFetchedAt": "2026-10-04T07:34:27.277Z"
+    "tmdbUpdatedAt": "2026-10-05T07:55:17.993Z",
+    "tmdbFetchedAt": "2026-10-05T07:55:17.993Z"
   },
   {
     "id": "hallmark-2025-merry-christmas-ted-cooper",
@@ -4087,8 +4087,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt37263154/",
       "tmdb": "https://www.themoviedb.org/movie/1547882"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:34:28.075Z",
-    "tmdbFetchedAt": "2026-10-04T07:34:28.075Z"
+    "tmdbUpdatedAt": "2026-10-05T07:55:18.668Z",
+    "tmdbFetchedAt": "2026-10-05T07:55:18.668Z"
   },
   {
     "id": "hallmark-2025-she-s-making-a-list",
@@ -4403,8 +4403,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt38354965/",
       "tmdb": "https://www.themoviedb.org/movie/1516208"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:34:28.803Z",
-    "tmdbFetchedAt": "2026-10-04T07:34:28.803Z"
+    "tmdbUpdatedAt": "2026-10-05T07:55:19.282Z",
+    "tmdbFetchedAt": "2026-10-05T07:55:19.282Z"
   },
   {
     "id": "hallmark-2025-sing-it-for-christmas",
@@ -4631,8 +4631,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt38354983/",
       "tmdb": "https://www.themoviedb.org/movie/1547926"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:34:29.513Z",
-    "tmdbFetchedAt": "2026-10-04T07:34:29.513Z"
+    "tmdbUpdatedAt": "2026-10-05T07:55:20.601Z",
+    "tmdbFetchedAt": "2026-10-05T07:55:20.601Z"
   },
   {
     "id": "hallmark-2025-single-on-the-25th",
@@ -4926,8 +4926,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt38347292/",
       "tmdb": "https://www.themoviedb.org/movie/1545997"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:34:30.262Z",
-    "tmdbFetchedAt": "2026-10-04T07:34:30.262Z"
+    "tmdbUpdatedAt": "2026-10-05T07:55:21.188Z",
+    "tmdbFetchedAt": "2026-10-05T07:55:21.188Z"
   },
   {
     "id": "hallmark-2025-the-christmas-baby",
@@ -5255,8 +5255,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt36963465/",
       "tmdb": "https://www.themoviedb.org/movie/1547929"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:34:31.007Z",
-    "tmdbFetchedAt": "2026-10-04T07:34:31.007Z"
+    "tmdbUpdatedAt": "2026-10-05T07:55:21.854Z",
+    "tmdbFetchedAt": "2026-10-05T07:55:21.854Z"
   },
   {
     "id": "hallmark-2025-the-christmas-cup",
@@ -5523,8 +5523,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt38354991/",
       "tmdb": "https://www.themoviedb.org/movie/1547922"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:34:31.744Z",
-    "tmdbFetchedAt": "2026-10-04T07:34:31.744Z"
+    "tmdbUpdatedAt": "2026-10-05T07:55:22.490Z",
+    "tmdbFetchedAt": "2026-10-05T07:55:22.490Z"
   },
   {
     "id": "hallmark-2025-the-more-the-merrier",
@@ -5804,8 +5804,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt38354960/",
       "tmdb": "https://www.themoviedb.org/movie/1546001"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:34:32.521Z",
-    "tmdbFetchedAt": "2026-10-04T07:34:32.521Z"
+    "tmdbUpdatedAt": "2026-10-05T07:55:23.254Z",
+    "tmdbFetchedAt": "2026-10-05T07:55:23.254Z"
   },
   {
     "id": "hallmark-2025-the-snow-must-go-on",
@@ -6105,8 +6105,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt38354943/",
       "tmdb": "https://www.themoviedb.org/movie/1547920"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:34:33.244Z",
-    "tmdbFetchedAt": "2026-10-04T07:34:33.244Z"
+    "tmdbUpdatedAt": "2026-10-05T07:55:23.857Z",
+    "tmdbFetchedAt": "2026-10-05T07:55:23.857Z"
   },
   {
     "id": "hallmark-2025-three-wisest-men",
@@ -6439,8 +6439,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt38353919/",
       "tmdb": "https://www.themoviedb.org/movie/1537084"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:34:34.191Z",
-    "tmdbFetchedAt": "2026-10-04T07:34:34.191Z"
+    "tmdbUpdatedAt": "2026-10-05T07:55:24.477Z",
+    "tmdbFetchedAt": "2026-10-05T07:55:24.477Z"
   },
   {
     "id": "hallmark-2025-tidings-for-the-season",
@@ -6728,8 +6728,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt38353925/",
       "tmdb": "https://www.themoviedb.org/movie/1547915"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:34:34.896Z",
-    "tmdbFetchedAt": "2026-10-04T07:34:34.896Z"
+    "tmdbUpdatedAt": "2026-10-05T07:55:25.123Z",
+    "tmdbFetchedAt": "2026-10-05T07:55:25.123Z"
   },
   {
     "id": "hallmark-2025-we-met-in-december",
@@ -7034,8 +7034,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt38354934/",
       "tmdb": "https://www.themoviedb.org/movie/1547918"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:34:36.775Z",
-    "tmdbFetchedAt": "2026-10-04T07:34:36.775Z"
+    "tmdbUpdatedAt": "2026-10-05T07:55:26.568Z",
+    "tmdbFetchedAt": "2026-10-05T07:55:26.568Z"
   },
   {
     "id": "hallmark-2024-tis-the-season-to-be-irish",
@@ -7264,8 +7264,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt33164321/",
       "tmdb": "https://www.themoviedb.org/movie/1360791"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:34:38.572Z",
-    "tmdbFetchedAt": "2026-10-04T07:34:38.572Z"
+    "tmdbUpdatedAt": "2026-10-05T07:55:28.153Z",
+    "tmdbFetchedAt": "2026-10-05T07:55:28.153Z"
   },
   {
     "id": "hallmark-2024-twas-the-date-before-christmas",
@@ -7534,8 +7534,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt33503181/",
       "tmdb": "https://www.themoviedb.org/movie/1359717"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:34:40.921Z",
-    "tmdbFetchedAt": "2026-10-04T07:34:40.921Z"
+    "tmdbUpdatedAt": "2026-10-05T07:55:29.804Z",
+    "tmdbFetchedAt": "2026-10-05T07:55:29.804Z"
   },
   {
     "id": "hallmark-2024-a-90s-christmas",
@@ -7739,8 +7739,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt16270280/",
       "tmdb": "https://www.themoviedb.org/movie/1361210"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:34:41.995Z",
-    "tmdbFetchedAt": "2026-10-04T07:34:41.995Z",
+    "tmdbUpdatedAt": "2026-10-05T07:55:31.418Z",
+    "tmdbFetchedAt": "2026-10-05T07:55:31.418Z",
     "alternativeTitles": [
       {
         "title": "90 年代的圣诞节",
@@ -7995,8 +7995,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt31438256/",
       "tmdb": "https://www.themoviedb.org/movie/1360779"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:34:42.707Z",
-    "tmdbFetchedAt": "2026-10-04T07:34:42.707Z"
+    "tmdbUpdatedAt": "2026-10-05T07:55:32.018Z",
+    "tmdbFetchedAt": "2026-10-05T07:55:32.018Z"
   },
   {
     "id": "hallmark-2024-believe-in-christmas",
@@ -8202,8 +8202,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt31987262/",
       "tmdb": "https://www.themoviedb.org/movie/1361215"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:34:43.434Z",
-    "tmdbFetchedAt": "2026-10-04T07:34:43.434Z"
+    "tmdbUpdatedAt": "2026-10-05T07:55:33.312Z",
+    "tmdbFetchedAt": "2026-10-05T07:55:33.312Z"
   },
   {
     "id": "hallmark-2024-christmas-on-call",
@@ -8508,8 +8508,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt33829451/",
       "tmdb": "https://www.themoviedb.org/movie/1361154"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:34:46.561Z",
-    "tmdbFetchedAt": "2026-10-04T07:34:46.561Z"
+    "tmdbUpdatedAt": "2026-10-05T07:55:34.738Z",
+    "tmdbFetchedAt": "2026-10-05T07:55:34.738Z"
   },
   {
     "id": "hallmark-2024-christmas-with-the-singhs",
@@ -8692,8 +8692,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt32730893/",
       "tmdb": "https://www.themoviedb.org/movie/1361132"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:34:48.480Z",
-    "tmdbFetchedAt": "2026-10-04T07:34:48.480Z"
+    "tmdbUpdatedAt": "2026-10-05T07:55:36.413Z",
+    "tmdbFetchedAt": "2026-10-05T07:55:36.413Z"
   },
   {
     "id": "hallmark-2024-confessions-of-a-christmas-letter",
@@ -8963,8 +8963,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt33401152/",
       "tmdb": "https://www.themoviedb.org/movie/1361141"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:34:49.197Z",
-    "tmdbFetchedAt": "2026-10-04T07:34:49.197Z"
+    "tmdbUpdatedAt": "2026-10-05T07:55:37.122Z",
+    "tmdbFetchedAt": "2026-10-05T07:55:37.122Z"
   },
   {
     "id": "hallmark-2024-debbie-macomber-s-joyful-mrs-miracle",
@@ -9174,8 +9174,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt33669124/",
       "tmdb": "https://www.themoviedb.org/movie/1361199"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:34:49.918Z",
-    "tmdbFetchedAt": "2026-10-04T07:34:49.918Z"
+    "tmdbUpdatedAt": "2026-10-05T07:55:39.052Z",
+    "tmdbFetchedAt": "2026-10-05T07:55:39.052Z"
   },
   {
     "id": "hallmark-2024-deck-the-walls",
@@ -9412,8 +9412,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt33885024/",
       "tmdb": "https://www.themoviedb.org/movie/1361211"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:34:51.960Z",
-    "tmdbFetchedAt": "2026-10-04T07:34:51.960Z"
+    "tmdbUpdatedAt": "2026-10-05T07:55:40.311Z",
+    "tmdbFetchedAt": "2026-10-05T07:55:40.311Z"
   },
   {
     "id": "hallmark-2024-following-yonder-star",
@@ -9655,8 +9655,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt33903431/",
       "tmdb": "https://www.themoviedb.org/movie/1360794"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:34:52.718Z",
-    "tmdbFetchedAt": "2026-10-04T07:34:52.718Z",
+    "tmdbUpdatedAt": "2026-10-05T07:55:40.983Z",
+    "tmdbFetchedAt": "2026-10-05T07:55:40.983Z",
     "alternativeTitles": [
       {
         "title": "Следуя за звездой Йондер",
@@ -9853,8 +9853,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt33478583/",
       "tmdb": "https://www.themoviedb.org/movie/1361222"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:34:54.502Z",
-    "tmdbFetchedAt": "2026-10-04T07:34:54.502Z"
+    "tmdbUpdatedAt": "2026-10-05T07:55:42.395Z",
+    "tmdbFetchedAt": "2026-10-05T07:55:42.395Z"
   },
   {
     "id": "hallmark-2024-happy-howlidays",
@@ -10066,8 +10066,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt33908123/",
       "tmdb": "https://www.themoviedb.org/movie/1361232"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:34:55.250Z",
-    "tmdbFetchedAt": "2026-10-04T07:34:55.250Z"
+    "tmdbUpdatedAt": "2026-10-05T07:55:43.113Z",
+    "tmdbFetchedAt": "2026-10-05T07:55:43.113Z"
   },
   {
     "id": "hallmark-2024-holiday-crashers",
@@ -10348,8 +10348,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt32011999/",
       "tmdb": "https://www.themoviedb.org/movie/1358987"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:34:55.998Z",
-    "tmdbFetchedAt": "2026-10-04T07:34:55.998Z"
+    "tmdbUpdatedAt": "2026-10-05T07:55:44.455Z",
+    "tmdbFetchedAt": "2026-10-05T07:55:44.455Z"
   },
   {
     "id": "hallmark-2024-holiday-mismatch",
@@ -10522,8 +10522,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt33481081/",
       "tmdb": "https://www.themoviedb.org/movie/1360782"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:34:56.720Z",
-    "tmdbFetchedAt": "2026-10-04T07:34:56.720Z"
+    "tmdbUpdatedAt": "2026-10-05T07:55:45.070Z",
+    "tmdbFetchedAt": "2026-10-05T07:55:45.070Z"
   },
   {
     "id": "hallmark-2024-holiday-touchdown-a-chiefs-love-story",
@@ -11005,8 +11005,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt32752472/",
       "tmdb": "https://www.themoviedb.org/movie/1319443"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:34:58.387Z",
-    "tmdbFetchedAt": "2026-10-04T07:34:58.387Z"
+    "tmdbUpdatedAt": "2026-10-05T07:55:46.467Z",
+    "tmdbFetchedAt": "2026-10-05T07:55:46.467Z"
   },
   {
     "id": "hallmark-2024-jingle-bell-run",
@@ -11204,8 +11204,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt32432584/",
       "tmdb": "https://www.themoviedb.org/movie/1361135"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:34:59.947Z",
-    "tmdbFetchedAt": "2026-10-04T07:34:59.947Z",
+    "tmdbUpdatedAt": "2026-10-05T07:55:47.127Z",
+    "tmdbFetchedAt": "2026-10-05T07:55:47.127Z",
     "alternativeTitles": [
       {
         "title": "12 Clues of Christmas",
@@ -11375,8 +11375,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt33901924/",
       "tmdb": "https://www.themoviedb.org/movie/1361221"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:35:00.698Z",
-    "tmdbFetchedAt": "2026-10-04T07:35:00.698Z"
+    "tmdbUpdatedAt": "2026-10-05T07:55:48.897Z",
+    "tmdbFetchedAt": "2026-10-05T07:55:48.897Z"
   },
   {
     "id": "hallmark-2024-operation-nutcracker",
@@ -11613,8 +11613,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt30487216/",
       "tmdb": "https://www.themoviedb.org/movie/1298476"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:35:03.573Z",
-    "tmdbFetchedAt": "2026-10-04T07:35:03.573Z"
+    "tmdbUpdatedAt": "2026-10-05T07:55:50.832Z",
+    "tmdbFetchedAt": "2026-10-05T07:55:50.832Z"
   },
   {
     "id": "hallmark-2024-our-holiday-story",
@@ -11798,8 +11798,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt33437460/",
       "tmdb": "https://www.themoviedb.org/movie/1360780"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:35:04.423Z",
-    "tmdbFetchedAt": "2026-10-04T07:35:04.423Z"
+    "tmdbUpdatedAt": "2026-10-05T07:55:51.475Z",
+    "tmdbFetchedAt": "2026-10-05T07:55:51.475Z"
   },
   {
     "id": "hallmark-2024-private-princess-christmas",
@@ -11981,8 +11981,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt33400340/",
       "tmdb": "https://www.themoviedb.org/movie/1361220"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:35:06.089Z",
-    "tmdbFetchedAt": "2026-10-04T07:35:06.089Z"
+    "tmdbUpdatedAt": "2026-10-05T07:55:52.800Z",
+    "tmdbFetchedAt": "2026-10-05T07:55:52.800Z"
   },
   {
     "id": "hallmark-2024-santa-tell-me",
@@ -12242,8 +12242,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt33829315/",
       "tmdb": "https://www.themoviedb.org/movie/1325888"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:35:07.968Z",
-    "tmdbFetchedAt": "2026-10-04T07:35:07.968Z",
+    "tmdbUpdatedAt": "2026-10-05T07:55:54.187Z",
+    "tmdbFetchedAt": "2026-10-05T07:55:54.187Z",
     "alternativeTitles": [
       {
         "title": "Санта, подскажи",
@@ -12427,8 +12427,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt33428925/",
       "tmdb": "https://www.themoviedb.org/movie/1359800"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:35:09.684Z",
-    "tmdbFetchedAt": "2026-10-04T07:35:09.684Z"
+    "tmdbUpdatedAt": "2026-10-05T07:55:55.999Z",
+    "tmdbFetchedAt": "2026-10-05T07:55:55.999Z"
   },
   {
     "id": "hallmark-2024-sugarplummed",
@@ -12655,8 +12655,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt33900751/",
       "tmdb": "https://www.themoviedb.org/movie/1359060"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:35:11.311Z",
-    "tmdbFetchedAt": "2026-10-04T07:35:11.311Z"
+    "tmdbUpdatedAt": "2026-10-05T07:55:56.576Z",
+    "tmdbFetchedAt": "2026-10-05T07:55:56.576Z"
   },
   {
     "id": "hallmark-2024-the-5-year-christmas-party",
@@ -12891,8 +12891,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt33503201/",
       "tmdb": "https://www.themoviedb.org/movie/1359868"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:35:12.073Z",
-    "tmdbFetchedAt": "2026-10-04T07:35:12.073Z"
+    "tmdbUpdatedAt": "2026-10-05T07:55:58.242Z",
+    "tmdbFetchedAt": "2026-10-05T07:55:58.242Z"
   },
   {
     "id": "hallmark-2024-the-christmas-charade",
@@ -13138,8 +13138,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt33039603/",
       "tmdb": "https://www.themoviedb.org/movie/1359867"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:35:15.299Z",
-    "tmdbFetchedAt": "2026-10-04T07:35:15.299Z"
+    "tmdbUpdatedAt": "2026-10-05T07:55:58.829Z",
+    "tmdbFetchedAt": "2026-10-05T07:55:58.829Z"
   },
   {
     "id": "hallmark-2024-the-christmas-quest",
@@ -13393,8 +13393,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt32140747/",
       "tmdb": "https://www.themoviedb.org/movie/1325912"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:35:16.882Z",
-    "tmdbFetchedAt": "2026-10-04T07:35:16.882Z"
+    "tmdbUpdatedAt": "2026-10-05T07:56:00.155Z",
+    "tmdbFetchedAt": "2026-10-05T07:56:00.155Z"
   },
   {
     "id": "hallmark-2024-the-finnish-line",
@@ -13653,19 +13653,19 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
-        "id": 2345052,
-        "name": "John Bellina",
-        "job": "Writer",
-        "department": "Writing",
-        "creditId": "66b1e39857d378f93adc7f90"
-      },
-      {
         "id": 548599,
         "name": "Dustin Rikert",
         "job": "Director",
         "department": "Directing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/sTHc9pupAI6noW60AsIz02I8tWn.jpg",
         "creditId": "66b1e379b974669fbcc624fb"
+      },
+      {
+        "id": 2345052,
+        "name": "John Bellina",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "66b1e39857d378f93adc7f90"
       },
       {
         "id": 1679282,
@@ -13704,8 +13704,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt31841975/",
       "tmdb": "https://www.themoviedb.org/movie/1325917"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:35:18.770Z",
-    "tmdbFetchedAt": "2026-10-04T07:35:18.770Z"
+    "tmdbUpdatedAt": "2026-10-05T07:56:00.762Z",
+    "tmdbFetchedAt": "2026-10-05T07:56:00.762Z"
   },
   {
     "id": "hallmark-2024-three-wiser-men-and-a-boy",
@@ -14073,8 +14073,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt32306650/",
       "tmdb": "https://www.themoviedb.org/movie/1293279"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:35:19.478Z",
-    "tmdbFetchedAt": "2026-10-04T07:35:19.478Z"
+    "tmdbUpdatedAt": "2026-10-05T07:56:02.087Z",
+    "tmdbFetchedAt": "2026-10-05T07:56:02.087Z"
   },
   {
     "id": "hallmark-2024-to-have-and-to-holiday",
@@ -14195,8 +14195,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt33829457/",
       "tmdb": "https://www.themoviedb.org/movie/1361162"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:35:21.101Z",
-    "tmdbFetchedAt": "2026-10-04T07:35:21.101Z"
+    "tmdbUpdatedAt": "2026-10-05T07:56:03.367Z",
+    "tmdbFetchedAt": "2026-10-05T07:56:03.367Z"
   },
   {
     "id": "hallmark-2024-trivia-at-st-nick-s",
@@ -14550,8 +14550,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt33425050/",
       "tmdb": "https://www.themoviedb.org/movie/1361125"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:35:21.790Z",
-    "tmdbFetchedAt": "2026-10-04T07:35:21.790Z"
+    "tmdbUpdatedAt": "2026-10-05T07:56:03.988Z",
+    "tmdbFetchedAt": "2026-10-05T07:56:03.988Z"
   },
   {
     "id": "hallmark-2023-a-biltmore-christmas",
@@ -14856,8 +14856,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt24822574/",
       "tmdb": "https://www.themoviedb.org/movie/1064137"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:35:22.553Z",
-    "tmdbFetchedAt": "2026-10-04T07:35:22.553Z",
+    "tmdbUpdatedAt": "2026-10-05T07:56:04.610Z",
+    "tmdbFetchedAt": "2026-10-05T07:56:04.610Z",
     "alternativeTitles": [
       {
         "title": "Una Navidad en Biltmore",
@@ -15201,15 +15201,15 @@ export const MOVIES: Movie[] = [
         "creditId": "63c57ad6595a5600945b4cc8"
       }
     ],
-    "voteAverage": 6.2,
-    "voteCount": 37,
+    "voteAverage": 6.269,
+    "voteCount": 39,
     "status": "collection",
     "links": {
       "imdb": "https://www.imdb.com/title/tt29231347/",
       "tmdb": "https://www.themoviedb.org/movie/1074788"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:35:23.292Z",
-    "tmdbFetchedAt": "2026-10-04T07:35:23.292Z",
+    "tmdbUpdatedAt": "2026-10-05T07:56:05.206Z",
+    "tmdbFetchedAt": "2026-10-05T07:56:05.206Z",
     "alternativeTitles": [
       {
         "title": "Love at the Christmas Market",
@@ -15477,6 +15477,14 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
+        "id": 2061626,
+        "name": "Andrea Canning",
+        "job": "Writer",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/mDraVMQW5dBXoTc97KRJQ4Z9zgM.jpg",
+        "creditId": "649c6070fd4f8000cb3180c8"
+      },
+      {
         "id": 4135851,
         "name": "Audrey Schulman",
         "job": "Writer",
@@ -15490,14 +15498,6 @@ export const MOVIES: Movie[] = [
         "department": "Directing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/sTHc9pupAI6noW60AsIz02I8tWn.jpg",
         "creditId": "649c60deaf58cb00c5d00790"
-      },
-      {
-        "id": 2061626,
-        "name": "Andrea Canning",
-        "job": "Writer",
-        "department": "Writing",
-        "profileUrl": "https://image.tmdb.org/t/p/w500/mDraVMQW5dBXoTc97KRJQ4Z9zgM.jpg",
-        "creditId": "649c6070fd4f8000cb3180c8"
       }
     ],
     "voteAverage": 6.2,
@@ -15507,8 +15507,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt28237077/",
       "tmdb": "https://www.themoviedb.org/movie/1145635"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:35:25.289Z",
-    "tmdbFetchedAt": "2026-10-04T07:35:25.289Z",
+    "tmdbUpdatedAt": "2026-10-05T07:56:07.060Z",
+    "tmdbFetchedAt": "2026-10-05T07:56:07.060Z",
     "alternativeTitles": [
       {
         "title": "Шотландское рождество",
@@ -15765,8 +15765,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt29593677/",
       "tmdb": "https://www.themoviedb.org/movie/1180747"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:35:26.013Z",
-    "tmdbFetchedAt": "2026-10-04T07:35:26.013Z"
+    "tmdbUpdatedAt": "2026-10-05T07:56:07.648Z",
+    "tmdbFetchedAt": "2026-10-05T07:56:07.648Z"
   },
   {
     "id": "hallmark-2023-catch-me-if-you-claus",
@@ -15986,8 +15986,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt29513295/",
       "tmdb": "https://www.themoviedb.org/movie/1180796"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:35:28.541Z",
-    "tmdbFetchedAt": "2026-10-04T07:35:28.541Z"
+    "tmdbUpdatedAt": "2026-10-05T07:56:09.936Z",
+    "tmdbFetchedAt": "2026-10-05T07:56:09.936Z"
   },
   {
     "id": "hallmark-2023-checkin-it-twice",
@@ -16375,8 +16375,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt29352965/",
       "tmdb": "https://www.themoviedb.org/movie/1166012"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:35:29.279Z",
-    "tmdbFetchedAt": "2026-10-04T07:35:29.279Z"
+    "tmdbUpdatedAt": "2026-10-05T07:56:11.290Z",
+    "tmdbFetchedAt": "2026-10-05T07:56:11.290Z"
   },
   {
     "id": "hallmark-2023-christmas-by-design",
@@ -16553,8 +16553,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt29392874/",
       "tmdb": "https://www.themoviedb.org/movie/1132358"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:35:31.649Z",
-    "tmdbFetchedAt": "2026-10-04T07:35:31.649Z"
+    "tmdbUpdatedAt": "2026-10-05T07:56:12.548Z",
+    "tmdbFetchedAt": "2026-10-05T07:56:12.548Z"
   },
   {
     "id": "hallmark-2023-christmas-in-notting-hill",
@@ -16865,8 +16865,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt29233347/",
       "tmdb": "https://www.themoviedb.org/movie/1142710"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:35:32.353Z",
-    "tmdbFetchedAt": "2026-10-04T07:35:32.353Z"
+    "tmdbUpdatedAt": "2026-10-05T07:56:13.763Z",
+    "tmdbFetchedAt": "2026-10-05T07:56:13.763Z"
   },
   {
     "id": "hallmark-2023-christmas-island",
@@ -17101,8 +17101,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt29378386/",
       "tmdb": "https://www.themoviedb.org/movie/1180841"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:35:33.073Z",
-    "tmdbFetchedAt": "2026-10-04T07:35:33.073Z"
+    "tmdbUpdatedAt": "2026-10-05T07:56:14.334Z",
+    "tmdbFetchedAt": "2026-10-05T07:56:14.334Z"
   },
   {
     "id": "hallmark-2023-christmas-on-cherry-lane",
@@ -17432,8 +17432,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt28287106/",
       "tmdb": "https://www.themoviedb.org/movie/1180665"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:35:33.876Z",
-    "tmdbFetchedAt": "2026-10-04T07:35:33.876Z",
+    "tmdbUpdatedAt": "2026-10-05T07:56:14.980Z",
+    "tmdbFetchedAt": "2026-10-05T07:56:14.980Z",
     "alternativeTitles": [
       {
         "title": "Navidad en Cherry Lane",
@@ -17603,8 +17603,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt29593706/",
       "tmdb": "https://www.themoviedb.org/movie/1180746"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:35:34.623Z",
-    "tmdbFetchedAt": "2026-10-04T07:35:34.623Z"
+    "tmdbUpdatedAt": "2026-10-05T07:56:16.561Z",
+    "tmdbFetchedAt": "2026-10-05T07:56:16.561Z"
   },
   {
     "id": "hallmark-2023-everything-christmas",
@@ -17830,8 +17830,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt29520836/",
       "tmdb": "https://www.themoviedb.org/movie/1180842"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:35:35.341Z",
-    "tmdbFetchedAt": "2026-10-04T07:35:35.341Z",
+    "tmdbUpdatedAt": "2026-10-05T07:56:17.190Z",
+    "tmdbFetchedAt": "2026-10-05T07:56:17.190Z",
     "alternativeTitles": [
       {
         "title": "La magie de Noël",
@@ -18052,8 +18052,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt27911907/",
       "tmdb": "https://www.themoviedb.org/movie/1180394"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:35:36.088Z",
-    "tmdbFetchedAt": "2026-10-04T07:35:36.088Z"
+    "tmdbUpdatedAt": "2026-10-05T07:56:17.814Z",
+    "tmdbFetchedAt": "2026-10-05T07:56:17.814Z"
   },
   {
     "id": "hallmark-2023-friends-family-christmas",
@@ -18251,8 +18251,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt29684873/",
       "tmdb": "https://www.themoviedb.org/movie/1180706"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:35:37.651Z",
-    "tmdbFetchedAt": "2026-10-04T07:35:37.651Z",
+    "tmdbUpdatedAt": "2026-10-05T07:56:19.294Z",
+    "tmdbFetchedAt": "2026-10-05T07:56:19.294Z",
     "alternativeTitles": [
       {
         "title": "Navidad con amigos y familiares",
@@ -18575,8 +18575,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt28492358/",
       "tmdb": "https://www.themoviedb.org/movie/1154268"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:35:40.683Z",
-    "tmdbFetchedAt": "2026-10-04T07:35:40.683Z"
+    "tmdbUpdatedAt": "2026-10-05T07:56:19.904Z",
+    "tmdbFetchedAt": "2026-10-05T07:56:19.904Z"
   },
   {
     "id": "hallmark-2023-holiday-hotline",
@@ -18909,8 +18909,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt29499210/",
       "tmdb": "https://www.themoviedb.org/movie/1180811"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:35:41.422Z",
-    "tmdbFetchedAt": "2026-10-04T07:35:41.422Z",
+    "tmdbUpdatedAt": "2026-10-05T07:56:20.544Z",
+    "tmdbFetchedAt": "2026-10-05T07:56:20.544Z",
     "alternativeTitles": [
       {
         "title": "SOS, dinde en détresse",
@@ -19210,19 +19210,19 @@ export const MOVIES: Movie[] = [
         "creditId": "651eb1e73d355700e23ddade"
       },
       {
-        "id": 180794,
-        "name": "Grant Scharbo",
-        "job": "Writer",
-        "department": "Writing",
-        "creditId": "651eb1fa74507d00ac47cb7e"
-      },
-      {
         "id": 59963,
         "name": "Gina Matthews",
         "job": "Writer",
         "department": "Writing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/u0MTaTCA2LpOczRvuae0vxRjl86.jpg",
         "creditId": "651eb1f5c50ad200eac0ec34"
+      },
+      {
+        "id": 180794,
+        "name": "Grant Scharbo",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "651eb1fa74507d00ac47cb7e"
       }
     ],
     "voteAverage": 7.2,
@@ -19232,8 +19232,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt29233535/",
       "tmdb": "https://www.themoviedb.org/movie/1180791"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:35:42.995Z",
-    "tmdbFetchedAt": "2026-10-04T07:35:42.995Z",
+    "tmdbUpdatedAt": "2026-10-05T07:56:21.863Z",
+    "tmdbFetchedAt": "2026-10-05T07:56:21.863Z",
     "alternativeTitles": [
       {
         "title": "Le périple de Noël",
@@ -19573,8 +19573,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt29353013/",
       "tmdb": "https://www.themoviedb.org/movie/1180660"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:35:44.676Z",
-    "tmdbFetchedAt": "2026-10-04T07:35:44.676Z"
+    "tmdbUpdatedAt": "2026-10-05T07:56:22.589Z",
+    "tmdbFetchedAt": "2026-10-05T07:56:22.589Z"
   },
   {
     "id": "hallmark-2023-letters-to-santa",
@@ -19792,8 +19792,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt27541327/",
       "tmdb": "https://www.themoviedb.org/movie/1180795"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:35:45.455Z",
-    "tmdbFetchedAt": "2026-10-04T07:35:45.455Z",
+    "tmdbUpdatedAt": "2026-10-05T07:56:23.955Z",
+    "tmdbFetchedAt": "2026-10-05T07:56:23.955Z",
     "alternativeTitles": [
       {
         "title": "Letters to Kris",
@@ -19977,8 +19977,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt29233549/",
       "tmdb": "https://www.themoviedb.org/movie/1180743"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:35:46.197Z",
-    "tmdbFetchedAt": "2026-10-04T07:35:46.197Z"
+    "tmdbUpdatedAt": "2026-10-05T07:56:25.889Z",
+    "tmdbFetchedAt": "2026-10-05T07:56:25.889Z"
   },
   {
     "id": "hallmark-2023-my-norwegian-holiday",
@@ -20179,8 +20179,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt29233518/",
       "tmdb": "https://www.themoviedb.org/movie/1180750"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:35:46.920Z",
-    "tmdbFetchedAt": "2026-10-04T07:35:46.920Z"
+    "tmdbUpdatedAt": "2026-10-05T07:56:26.485Z",
+    "tmdbFetchedAt": "2026-10-05T07:56:26.485Z"
   },
   {
     "id": "hallmark-2023-mystic-christmas",
@@ -20385,20 +20385,20 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
-        "id": 3468259,
-        "name": "Marlo Hunter",
-        "job": "Director",
-        "department": "Directing",
-        "profileUrl": "https://image.tmdb.org/t/p/w500/u0IoawRX5gor6bFgz0YiUflUvb0.jpg",
-        "creditId": "64921740263462010cbd9f0a"
-      },
-      {
         "id": 1679282,
         "name": "Nicole Drespel",
         "job": "Writer",
         "department": "Writing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/3QrDRNJ26Pmhw1fBATBIuVU4SwG.jpg",
         "creditId": "64921749ae384300ae8aa4cf"
+      },
+      {
+        "id": 3468259,
+        "name": "Marlo Hunter",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/u0IoawRX5gor6bFgz0YiUflUvb0.jpg",
+        "creditId": "64921740263462010cbd9f0a"
       }
     ],
     "voteAverage": 5.6,
@@ -20408,8 +20408,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt27813285/",
       "tmdb": "https://www.themoviedb.org/movie/1142715"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:35:47.688Z",
-    "tmdbFetchedAt": "2026-10-04T07:35:47.688Z"
+    "tmdbUpdatedAt": "2026-10-05T07:56:27.743Z",
+    "tmdbFetchedAt": "2026-10-05T07:56:27.743Z"
   },
   {
     "id": "hallmark-2023-navigating-christmas",
@@ -20595,8 +20595,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt29499132/",
       "tmdb": "https://www.themoviedb.org/movie/1180814"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:35:49.424Z",
-    "tmdbFetchedAt": "2026-10-04T07:35:49.424Z",
+    "tmdbUpdatedAt": "2026-10-05T07:56:29.092Z",
+    "tmdbFetchedAt": "2026-10-05T07:56:29.092Z",
     "alternativeTitles": [
       {
         "title": "A Lighthouse Christmas",
@@ -20820,8 +20820,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt29258217/",
       "tmdb": "https://www.themoviedb.org/movie/1180663"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:35:51.419Z",
-    "tmdbFetchedAt": "2026-10-04T07:35:51.419Z"
+    "tmdbUpdatedAt": "2026-10-05T07:56:29.694Z",
+    "tmdbFetchedAt": "2026-10-05T07:56:29.694Z"
   },
   {
     "id": "hallmark-2023-our-christmas-mural",
@@ -20993,8 +20993,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt29513309/",
       "tmdb": "https://www.themoviedb.org/movie/1180767"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:35:52.157Z",
-    "tmdbFetchedAt": "2026-10-04T07:35:52.157Z"
+    "tmdbUpdatedAt": "2026-10-05T07:56:30.324Z",
+    "tmdbFetchedAt": "2026-10-05T07:56:30.324Z"
   },
   {
     "id": "hallmark-2023-round-and-round",
@@ -21265,8 +21265,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt29244163/",
       "tmdb": "https://www.themoviedb.org/movie/1180682"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:35:52.864Z",
-    "tmdbFetchedAt": "2026-10-04T07:35:52.864Z",
+    "tmdbUpdatedAt": "2026-10-05T07:56:31.620Z",
+    "tmdbFetchedAt": "2026-10-05T07:56:31.620Z",
     "alternativeTitles": [
       {
         "title": "Round & Round",
@@ -21501,11 +21501,12 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
-        "id": 3714441,
-        "name": "Melynda Bissmeyer",
-        "job": "Writer",
-        "department": "Writing",
-        "creditId": "650a08a09661fc01e6d9eaa0"
+        "id": 172428,
+        "name": "Lucie Guest",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/wwd9GVDMo8NqDsoVYxeZHKoGrXY.jpg",
+        "creditId": "650a088faede5900e1a9b913"
       },
       {
         "id": 1332325,
@@ -21515,12 +21516,11 @@ export const MOVIES: Movie[] = [
         "creditId": "650a089a6c19ea00eba16f7d"
       },
       {
-        "id": 172428,
-        "name": "Lucie Guest",
-        "job": "Director",
-        "department": "Directing",
-        "profileUrl": "https://image.tmdb.org/t/p/w500/wwd9GVDMo8NqDsoVYxeZHKoGrXY.jpg",
-        "creditId": "650a088faede5900e1a9b913"
+        "id": 3714441,
+        "name": "Melynda Bissmeyer",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "650a08a09661fc01e6d9eaa0"
       },
       {
         "id": 3272187,
@@ -21537,8 +21537,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt29233395/",
       "tmdb": "https://www.themoviedb.org/movie/1180688"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:35:53.591Z",
-    "tmdbFetchedAt": "2026-10-04T07:35:53.591Z"
+    "tmdbUpdatedAt": "2026-10-05T07:56:32.217Z",
+    "tmdbFetchedAt": "2026-10-05T07:56:32.217Z"
   },
   {
     "id": "hallmark-2023-the-santa-summit",
@@ -21813,19 +21813,19 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
-        "id": 2205678,
-        "name": "Russell Hainline",
-        "job": "Writer",
-        "department": "Writing",
-        "creditId": "64920fec559d2200e2082040"
-      },
-      {
         "id": 85204,
         "name": "Jeff Beesley",
         "job": "Director",
         "department": "Directing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/fAlhPhTYEzywPpkdaZOVwpviX9W.jpg",
         "creditId": "64920fe6c3c891012d5f8661"
+      },
+      {
+        "id": 2205678,
+        "name": "Russell Hainline",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "64920fec559d2200e2082040"
       }
     ],
     "voteAverage": 6.4,
@@ -21835,8 +21835,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt29381717/",
       "tmdb": "https://www.themoviedb.org/movie/1142712"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:35:54.340Z",
-    "tmdbFetchedAt": "2026-10-04T07:35:54.340Z",
+    "tmdbUpdatedAt": "2026-10-05T07:56:32.789Z",
+    "tmdbFetchedAt": "2026-10-05T07:56:32.789Z",
     "alternativeTitles": [
       {
         "title": "Саммит Санты",
@@ -21958,18 +21958,18 @@ export const MOVIES: Movie[] = [
       {
         "id": 63783,
         "name": "Christie Will Wolf",
-        "job": "Director",
-        "department": "Directing",
-        "profileUrl": "https://image.tmdb.org/t/p/w500/vLAxuVAYsIoboSnaLVG1oupsIm8.jpg",
-        "creditId": "65552e2f53866e011c0744dd"
-      },
-      {
-        "id": 63783,
-        "name": "Christie Will Wolf",
         "job": "Writer",
         "department": "Writing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/vLAxuVAYsIoboSnaLVG1oupsIm8.jpg",
         "creditId": "65552e339653f613f62a75af"
+      },
+      {
+        "id": 63783,
+        "name": "Christie Will Wolf",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/vLAxuVAYsIoboSnaLVG1oupsIm8.jpg",
+        "creditId": "65552e2f53866e011c0744dd"
       },
       {
         "id": 4117529,
@@ -22003,8 +22003,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt28753331/",
       "tmdb": "https://www.themoviedb.org/movie/1180686"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:35:56.942Z",
-    "tmdbFetchedAt": "2026-10-04T07:35:56.942Z",
+    "tmdbUpdatedAt": "2026-10-05T07:56:33.365Z",
+    "tmdbFetchedAt": "2026-10-05T07:56:33.365Z",
     "alternativeTitles": [
       {
         "title": "Tajni dar Božića",
@@ -22193,8 +22193,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt29258080/",
       "tmdb": "https://www.themoviedb.org/movie/1180651"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:35:57.662Z",
-    "tmdbFetchedAt": "2026-10-04T07:35:57.662Z",
+    "tmdbUpdatedAt": "2026-10-05T07:56:35.071Z",
+    "tmdbFetchedAt": "2026-10-05T07:56:35.071Z",
     "alternativeTitles": [
       {
         "title": "Tra le Stelle del Natale",
@@ -22531,8 +22531,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt27496114/",
       "tmdb": "https://www.themoviedb.org/movie/1132390"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:35:58.391Z",
-    "tmdbFetchedAt": "2026-10-04T07:35:58.391Z"
+    "tmdbUpdatedAt": "2026-10-05T07:56:36.360Z",
+    "tmdbFetchedAt": "2026-10-05T07:56:36.360Z"
   },
   {
     "id": "hallmark-2022-twas-the-night-before-christmas",
@@ -22827,8 +22827,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt22307338/",
       "tmdb": "https://www.themoviedb.org/movie/1028547"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:36:00.649Z",
-    "tmdbFetchedAt": "2026-10-04T07:36:00.649Z"
+    "tmdbUpdatedAt": "2026-10-05T07:56:37.811Z",
+    "tmdbFetchedAt": "2026-10-05T07:56:37.811Z"
   },
   {
     "id": "hallmark-2022-xmas",
@@ -23068,8 +23068,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt9892854/",
       "tmdb": "https://www.themoviedb.org/movie/1028550"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:36:01.358Z",
-    "tmdbFetchedAt": "2026-10-04T07:36:01.358Z",
+    "tmdbUpdatedAt": "2026-10-05T07:56:38.431Z",
+    "tmdbFetchedAt": "2026-10-05T07:56:38.431Z",
     "alternativeTitles": [
       {
         "title": "Hash Tag Christmas",
@@ -23275,6 +23275,14 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
+        "id": 1481961,
+        "name": "Jennifer Liao",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/5v9GIXhyCKEBkeSqjbr7YUzCIvf.jpg",
+        "creditId": "634c0bf4c8a2d40091878618"
+      },
+      {
         "id": 1536497,
         "name": "Blaine Chiappetta",
         "job": "Writer",
@@ -23287,14 +23295,6 @@ export const MOVIES: Movie[] = [
         "job": "Writer",
         "department": "Writing",
         "creditId": "634c0c03e263bb009c4faf67"
-      },
-      {
-        "id": 1481961,
-        "name": "Jennifer Liao",
-        "job": "Director",
-        "department": "Directing",
-        "profileUrl": "https://image.tmdb.org/t/p/w500/5v9GIXhyCKEBkeSqjbr7YUzCIvf.jpg",
-        "creditId": "634c0bf4c8a2d40091878618"
       },
       {
         "id": 1862308,
@@ -23319,8 +23319,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt22262600/",
       "tmdb": "https://www.themoviedb.org/movie/1028559"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:36:02.087Z",
-    "tmdbFetchedAt": "2026-10-04T07:36:02.087Z"
+    "tmdbUpdatedAt": "2026-10-05T07:56:39.790Z",
+    "tmdbFetchedAt": "2026-10-05T07:56:39.790Z"
   },
   {
     "id": "hallmark-2022-a-christmas-cookie-catastrophe",
@@ -23544,8 +23544,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt22207828/",
       "tmdb": "https://www.themoviedb.org/movie/1028552"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:36:04.433Z",
-    "tmdbFetchedAt": "2026-10-04T07:36:04.433Z",
+    "tmdbUpdatedAt": "2026-10-05T07:56:40.405Z",
+    "tmdbFetchedAt": "2026-10-05T07:56:40.405Z",
     "alternativeTitles": [
       {
         "title": "A Catástrofe do Biscoito de Natal",
@@ -23779,8 +23779,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt19394150/",
       "tmdb": "https://www.themoviedb.org/movie/1012072"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:36:05.159Z",
-    "tmdbFetchedAt": "2026-10-04T07:36:05.159Z",
+    "tmdbUpdatedAt": "2026-10-05T07:56:41.036Z",
+    "tmdbFetchedAt": "2026-10-05T07:56:41.036Z",
     "alternativeTitles": [
       {
         "title": "Christmas Under Wraps 2: Holliday Inn Love",
@@ -24061,8 +24061,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt22295836/",
       "tmdb": "https://www.themoviedb.org/movie/1028548"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:36:06.805Z",
-    "tmdbFetchedAt": "2026-10-04T07:36:06.805Z"
+    "tmdbUpdatedAt": "2026-10-05T07:56:42.866Z",
+    "tmdbFetchedAt": "2026-10-05T07:56:42.866Z"
   },
   {
     "id": "hallmark-2022-a-holiday-spectacular",
@@ -24335,8 +24335,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt18361702/",
       "tmdb": "https://www.themoviedb.org/movie/996767"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:36:08.842Z",
-    "tmdbFetchedAt": "2026-10-04T07:36:08.842Z",
+    "tmdbUpdatedAt": "2026-10-05T07:56:43.517Z",
+    "tmdbFetchedAt": "2026-10-05T07:56:43.517Z",
     "alternativeTitles": [
       {
         "title": "A Christmas Spectacular",
@@ -24527,8 +24527,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt22196454/",
       "tmdb": "https://www.themoviedb.org/movie/1027351"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:36:10.496Z",
-    "tmdbFetchedAt": "2026-10-04T07:36:10.496Z"
+    "tmdbUpdatedAt": "2026-10-05T07:56:44.903Z",
+    "tmdbFetchedAt": "2026-10-05T07:56:44.903Z"
   },
   {
     "id": "hallmark-2022-a-magical-christmas-village",
@@ -24756,8 +24756,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt22246514/",
       "tmdb": "https://www.themoviedb.org/movie/1026605"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:36:11.238Z",
-    "tmdbFetchedAt": "2026-10-04T07:36:11.238Z"
+    "tmdbUpdatedAt": "2026-10-05T07:56:46.419Z",
+    "tmdbFetchedAt": "2026-10-05T07:56:46.419Z"
   },
   {
     "id": "hallmark-2022-a-royal-corgi-christmas",
@@ -25017,8 +25017,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt21063466/",
       "tmdb": "https://www.themoviedb.org/movie/1028553"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:36:11.967Z",
-    "tmdbFetchedAt": "2026-10-04T07:36:11.967Z"
+    "tmdbUpdatedAt": "2026-10-05T07:56:47.666Z",
+    "tmdbFetchedAt": "2026-10-05T07:56:47.666Z"
   },
   {
     "id": "hallmark-2022-a-tale-of-two-christmases",
@@ -25299,8 +25299,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt22247650/",
       "tmdb": "https://www.themoviedb.org/movie/1028546"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:36:12.689Z",
-    "tmdbFetchedAt": "2026-10-04T07:36:12.689Z"
+    "tmdbUpdatedAt": "2026-10-05T07:56:48.265Z",
+    "tmdbFetchedAt": "2026-10-05T07:56:48.265Z"
   },
   {
     "id": "hallmark-2022-all-saints-christmas",
@@ -25436,11 +25436,11 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
-        "id": 1397320,
-        "name": "Patricia Cuffie-Jones",
+        "id": 2489814,
+        "name": "Chad Quinn",
         "job": "Writer",
         "department": "Writing",
-        "creditId": "632f7c12c525c4007fed8d13"
+        "creditId": "632f7c179ac53500794a66b3"
       },
       {
         "id": 2568129,
@@ -25457,11 +25457,11 @@ export const MOVIES: Movie[] = [
         "creditId": "632f7c05cede69007b87992f"
       },
       {
-        "id": 2489814,
-        "name": "Chad Quinn",
+        "id": 1397320,
+        "name": "Patricia Cuffie-Jones",
         "job": "Writer",
         "department": "Writing",
-        "creditId": "632f7c179ac53500794a66b3"
+        "creditId": "632f7c12c525c4007fed8d13"
       }
     ],
     "voteAverage": 6.3,
@@ -25471,8 +25471,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt22166882/",
       "tmdb": "https://www.themoviedb.org/movie/1028176"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:36:13.596Z",
-    "tmdbFetchedAt": "2026-10-04T07:36:13.596Z"
+    "tmdbUpdatedAt": "2026-10-05T07:56:49.629Z",
+    "tmdbFetchedAt": "2026-10-05T07:56:49.629Z"
   },
   {
     "id": "hallmark-2022-christmas-at-the-golden-dragon",
@@ -25752,8 +25752,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt13937754/",
       "tmdb": "https://www.themoviedb.org/movie/1028186"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:36:15.628Z",
-    "tmdbFetchedAt": "2026-10-04T07:36:15.628Z",
+    "tmdbUpdatedAt": "2026-10-05T07:56:51.097Z",
+    "tmdbFetchedAt": "2026-10-05T07:56:51.097Z",
     "alternativeTitles": [
       {
         "title": "金龙餐厅圣诞夜",
@@ -25980,8 +25980,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt18884832/",
       "tmdb": "https://www.themoviedb.org/movie/1028537"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:36:17.646Z",
-    "tmdbFetchedAt": "2026-10-04T07:36:17.646Z",
+    "tmdbUpdatedAt": "2026-10-05T07:56:52.505Z",
+    "tmdbFetchedAt": "2026-10-05T07:56:52.505Z",
     "alternativeTitles": [
       {
         "title": "Božićno okupljanje razreda",
@@ -26287,10 +26287,10 @@ export const MOVIES: Movie[] = [
       {
         "id": 1767300,
         "name": "Zac Hug",
-        "job": "Writer",
+        "job": "Story",
         "department": "Writing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/xIJU5Ndr4NkmH7Ra5MdqNoW1Hjo.jpg",
-        "creditId": "634afe67c175b2007a5a0318"
+        "creditId": "634afe77389da10079e538b8"
       },
       {
         "id": 1099170,
@@ -26303,10 +26303,10 @@ export const MOVIES: Movie[] = [
       {
         "id": 1767300,
         "name": "Zac Hug",
-        "job": "Story",
+        "job": "Writer",
         "department": "Writing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/xIJU5Ndr4NkmH7Ra5MdqNoW1Hjo.jpg",
-        "creditId": "634afe77389da10079e538b8"
+        "creditId": "634afe67c175b2007a5a0318"
       }
     ],
     "voteAverage": 6.8,
@@ -26316,8 +26316,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt20193354/",
       "tmdb": "https://www.themoviedb.org/movie/1027392"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:36:18.360Z",
-    "tmdbFetchedAt": "2026-10-04T07:36:18.360Z"
+    "tmdbUpdatedAt": "2026-10-05T07:56:53.177Z",
+    "tmdbFetchedAt": "2026-10-05T07:56:53.177Z"
   },
   {
     "id": "hallmark-2022-hanukkah-on-rye",
@@ -26643,8 +26643,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt22307422/",
       "tmdb": "https://www.themoviedb.org/movie/1028555"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:36:20.820Z",
-    "tmdbFetchedAt": "2026-10-04T07:36:20.820Z",
+    "tmdbUpdatedAt": "2026-10-05T07:56:55.249Z",
+    "tmdbFetchedAt": "2026-10-05T07:56:55.249Z",
     "alternativeTitles": [
       {
         "title": "Das Lichterfest der Liebe",
@@ -26984,8 +26984,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt21359036/",
       "tmdb": "https://www.themoviedb.org/movie/1028556"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:36:22.430Z",
-    "tmdbFetchedAt": "2026-10-04T07:36:22.430Z",
+    "tmdbUpdatedAt": "2026-10-05T07:56:56.608Z",
+    "tmdbFetchedAt": "2026-10-05T07:56:56.608Z",
     "alternativeTitles": [
       {
         "title": "Meine Nachbarn, Weihnachten und ich",
@@ -27194,8 +27194,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt22307204/",
       "tmdb": "https://www.themoviedb.org/movie/1028560"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:36:23.138Z",
-    "tmdbFetchedAt": "2026-10-04T07:36:23.138Z"
+    "tmdbUpdatedAt": "2026-10-05T07:56:57.237Z",
+    "tmdbFetchedAt": "2026-10-05T07:56:57.237Z"
   },
   {
     "id": "hallmark-2022-in-merry-measure",
@@ -27399,19 +27399,19 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
-        "id": 2205678,
-        "name": "Russell Hainline",
-        "job": "Writer",
-        "department": "Writing",
-        "creditId": "63332ff7d7f465008266b078"
-      },
-      {
         "id": 1632115,
         "name": "Paula Elle",
         "job": "Director",
         "department": "Directing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/qmIRvO67FAcgtX5F5y8nCnCdtLS.jpg",
         "creditId": "63332ff03679a1007acc2d05"
+      },
+      {
+        "id": 2205678,
+        "name": "Russell Hainline",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "63332ff7d7f465008266b078"
       }
     ],
     "voteAverage": 6.7,
@@ -27421,8 +27421,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt22246626/",
       "tmdb": "https://www.themoviedb.org/movie/1028180"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:36:24.834Z",
-    "tmdbFetchedAt": "2026-10-04T07:36:24.834Z"
+    "tmdbUpdatedAt": "2026-10-05T07:56:59.006Z",
+    "tmdbFetchedAt": "2026-10-05T07:56:59.006Z"
   },
   {
     "id": "hallmark-2022-inventing-the-christmas-prince",
@@ -27580,19 +27580,19 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
+        "id": 2032086,
+        "name": "Kim Beyer-Johnson",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "632fad74fea0d70091d2ed53"
+      },
+      {
         "id": 82518,
         "name": "Paul Ziller",
         "job": "Director",
         "department": "Directing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/yt8rTpN2EW9BmmxGyOZbC1ZGMgf.jpg",
         "creditId": "632fad698d2f8d007b01594b"
-      },
-      {
-        "id": 2032086,
-        "name": "Kim Beyer-Johnson",
-        "job": "Writer",
-        "department": "Writing",
-        "creditId": "632fad74fea0d70091d2ed53"
       }
     ],
     "voteAverage": 6.8,
@@ -27602,8 +27602,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt20892688/",
       "tmdb": "https://www.themoviedb.org/movie/1028223"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:36:26.367Z",
-    "tmdbFetchedAt": "2026-10-04T07:36:26.367Z"
+    "tmdbUpdatedAt": "2026-10-05T07:57:00.958Z",
+    "tmdbFetchedAt": "2026-10-05T07:57:00.958Z"
   },
   {
     "id": "hallmark-2022-jolly-good-christmas",
@@ -27703,7 +27703,8 @@ export const MOVIES: Movie[] = [
         "slug": "jules-knight",
         "tmdbPersonId": 2726681,
         "profileUrl": "/images/people/2726681.webp",
-        "order": 8
+        "order": 8,
+        "birthday": "1981-09-22"
       },
       {
         "actorId": "3544146",
@@ -27875,8 +27876,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt18077672/",
       "tmdb": "https://www.themoviedb.org/movie/974213"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:36:28.796Z",
-    "tmdbFetchedAt": "2026-10-04T07:36:28.796Z",
+    "tmdbUpdatedAt": "2026-10-05T07:57:01.651Z",
+    "tmdbFetchedAt": "2026-10-05T07:57:01.651Z",
     "alternativeTitles": [
       {
         "title": "Christmas in London",
@@ -28121,8 +28122,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt22246560/",
       "tmdb": "https://www.themoviedb.org/movie/1027439"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:36:29.707Z",
-    "tmdbFetchedAt": "2026-10-04T07:36:29.707Z"
+    "tmdbUpdatedAt": "2026-10-05T07:57:02.249Z",
+    "tmdbFetchedAt": "2026-10-05T07:57:02.249Z"
   },
   {
     "id": "hallmark-2022-my-southern-family-christmas",
@@ -28346,8 +28347,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt22247540/",
       "tmdb": "https://www.themoviedb.org/movie/1028558"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:36:32.319Z",
-    "tmdbFetchedAt": "2026-10-04T07:36:32.319Z",
+    "tmdbUpdatedAt": "2026-10-05T07:57:03.555Z",
+    "tmdbFetchedAt": "2026-10-05T07:57:03.555Z",
     "alternativeTitles": [
       {
         "title": "A True Family Christmas",
@@ -28597,15 +28598,15 @@ export const MOVIES: Movie[] = [
         "creditId": "6334f077fa78cd00a3454cd9"
       }
     ],
-    "voteAverage": 7,
-    "voteCount": 37,
+    "voteAverage": 6.987,
+    "voteCount": 38,
     "status": "collection",
     "links": {
       "imdb": "https://www.imdb.com/title/tt22207602/",
       "tmdb": "https://www.themoviedb.org/movie/1027329"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:36:33.866Z",
-    "tmdbFetchedAt": "2026-10-04T07:36:33.866Z"
+    "tmdbUpdatedAt": "2026-10-05T07:57:05.433Z",
+    "tmdbFetchedAt": "2026-10-05T07:57:05.433Z"
   },
   {
     "id": "hallmark-2022-the-holiday-sitter",
@@ -28821,8 +28822,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt22296044/",
       "tmdb": "https://www.themoviedb.org/movie/1027324"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:36:35.664Z",
-    "tmdbFetchedAt": "2026-10-04T07:36:35.664Z"
+    "tmdbUpdatedAt": "2026-10-05T07:57:06.689Z",
+    "tmdbFetchedAt": "2026-10-05T07:57:06.689Z"
   },
   {
     "id": "hallmark-2022-the-most-colorful-time-of-the-year",
@@ -29046,19 +29047,19 @@ export const MOVIES: Movie[] = [
         "creditId": "6338bacf006b01007a87f4f0"
       },
       {
+        "id": 3719839,
+        "name": "Keith Hemstreet",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "6338bad6e194b0009198ddee"
+      },
+      {
         "id": 1107266,
         "name": "Max McGuire",
         "job": "Director",
         "department": "Directing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/5QOpuZ3ZgoWb7EVvJudtewKqSUJ.jpg",
         "creditId": "6338bac6e194b0009198dde9"
-      },
-      {
-        "id": 3719839,
-        "name": "Keith Hemstreet",
-        "job": "Writer",
-        "department": "Writing",
-        "creditId": "6338bad6e194b0009198ddee"
       }
     ],
     "voteAverage": 5.7,
@@ -29068,8 +29069,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt22207622/",
       "tmdb": "https://www.themoviedb.org/movie/1028561"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:36:36.401Z",
-    "tmdbFetchedAt": "2026-10-04T07:36:36.401Z",
+    "tmdbUpdatedAt": "2026-10-05T07:57:07.305Z",
+    "tmdbFetchedAt": "2026-10-05T07:57:07.305Z",
     "alternativeTitles": [
       {
         "title": "Christmas Lessons in Love",
@@ -29335,8 +29336,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt22247450/",
       "tmdb": "https://www.themoviedb.org/movie/1028182"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:36:37.959Z",
-    "tmdbFetchedAt": "2026-10-04T07:36:37.959Z",
+    "tmdbUpdatedAt": "2026-10-05T07:57:07.927Z",
+    "tmdbFetchedAt": "2026-10-05T07:57:07.927Z",
     "alternativeTitles": [
       {
         "title": "Королевская нянька",
@@ -29721,20 +29722,20 @@ export const MOVIES: Movie[] = [
         "creditId": "63335d817f054000842c9016"
       },
       {
-        "id": 62909,
-        "name": "Paul Campbell",
-        "job": "Writer",
-        "department": "Writing",
-        "profileUrl": "https://image.tmdb.org/t/p/w500/yPxGQwgl1VAMU0Hzck3dJSoYkMB.jpg",
-        "creditId": "636971dc9653f6007d9f0e34"
-      },
-      {
         "id": 1292329,
         "name": "Kimberley Sustad",
         "job": "Writer",
         "department": "Writing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/hLYx9wEcJkN1JnXiZyYxExNHmWn.jpg",
         "creditId": "636971e04ca6760089a841cc"
+      },
+      {
+        "id": 62909,
+        "name": "Paul Campbell",
+        "job": "Writer",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/yPxGQwgl1VAMU0Hzck3dJSoYkMB.jpg",
+        "creditId": "636971dc9653f6007d9f0e34"
       }
     ],
     "voteAverage": 7.5,
@@ -29744,8 +29745,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt22247482/",
       "tmdb": "https://www.themoviedb.org/movie/1028541"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:36:39.614Z",
-    "tmdbFetchedAt": "2026-10-04T07:36:39.614Z",
+    "tmdbUpdatedAt": "2026-10-05T07:57:09.177Z",
+    "tmdbFetchedAt": "2026-10-05T07:57:09.177Z",
     "alternativeTitles": [
       {
         "title": "Três Babás e um Bebê",
@@ -29968,8 +29969,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt22295902/",
       "tmdb": "https://www.themoviedb.org/movie/1028544"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:36:42.297Z",
-    "tmdbFetchedAt": "2026-10-04T07:36:42.297Z"
+    "tmdbUpdatedAt": "2026-10-05T07:57:10.436Z",
+    "tmdbFetchedAt": "2026-10-05T07:57:10.436Z"
   },
   {
     "id": "hallmark-2022-we-wish-you-a-married-christmas",
@@ -30218,8 +30219,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt20876910/",
       "tmdb": "https://www.themoviedb.org/movie/1027338"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:36:43.018Z",
-    "tmdbFetchedAt": "2026-10-04T07:36:43.018Z"
+    "tmdbUpdatedAt": "2026-10-05T07:57:11.119Z",
+    "tmdbFetchedAt": "2026-10-05T07:57:11.119Z"
   },
   {
     "id": "hallmark-2022-when-i-think-of-christmas",
@@ -30448,8 +30449,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt22247502/",
       "tmdb": "https://www.themoviedb.org/movie/1028543"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:36:44.605Z",
-    "tmdbFetchedAt": "2026-10-04T07:36:44.605Z"
+    "tmdbUpdatedAt": "2026-10-05T07:57:13.017Z",
+    "tmdbFetchedAt": "2026-10-05T07:57:13.017Z"
   },
   {
     "id": "hallmark-2021-tis-the-season-to-be-merry",
@@ -30765,8 +30766,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt15739902/",
       "tmdb": "https://www.themoviedb.org/movie/888500"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:36:46.138Z",
-    "tmdbFetchedAt": "2026-10-04T07:36:46.138Z",
+    "tmdbUpdatedAt": "2026-10-05T07:57:13.626Z",
+    "tmdbFetchedAt": "2026-10-05T07:57:13.626Z",
     "alternativeTitles": [
       {
         "title": "Christmas Dates",
@@ -30956,19 +30957,19 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
-        "id": 3240710,
-        "name": "Graham Locke",
-        "job": "Writer",
-        "department": "Writing",
-        "creditId": "6147dc4f9450fe00431cd319"
-      },
-      {
         "id": 1362798,
         "name": "Kevin Fair",
         "job": "Director",
         "department": "Directing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/sJXUzGluaKRWOvNyulF3BitGXS7.jpg",
         "creditId": "6147dc479f0e1900437a3090"
+      },
+      {
+        "id": 3240710,
+        "name": "Graham Locke",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "6147dc4f9450fe00431cd319"
       }
     ],
     "voteAverage": 6.1,
@@ -30978,8 +30979,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt15420960/",
       "tmdb": "https://www.themoviedb.org/movie/876103"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:36:47.779Z",
-    "tmdbFetchedAt": "2026-10-04T07:36:47.779Z",
+    "tmdbUpdatedAt": "2026-10-05T07:57:15.082Z",
+    "tmdbFetchedAt": "2026-10-05T07:57:15.082Z",
     "alternativeTitles": [
       {
         "title": "Christmas Alone Together",
@@ -31198,8 +31199,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt15042590/",
       "tmdb": "https://www.themoviedb.org/movie/866660"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:36:49.477Z",
-    "tmdbFetchedAt": "2026-10-04T07:36:49.477Z"
+    "tmdbUpdatedAt": "2026-10-05T07:57:16.727Z",
+    "tmdbFetchedAt": "2026-10-05T07:57:16.727Z"
   },
   {
     "id": "hallmark-2021-a-dickens-of-a-holiday",
@@ -31491,8 +31492,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt15235708/",
       "tmdb": "https://www.themoviedb.org/movie/877828"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:36:51.045Z",
-    "tmdbFetchedAt": "2026-10-04T07:36:51.045Z",
+    "tmdbUpdatedAt": "2026-10-05T07:57:18.250Z",
+    "tmdbFetchedAt": "2026-10-05T07:57:18.250Z",
     "alternativeTitles": [
       {
         "title": "Christmas Stand-In",
@@ -31739,8 +31740,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt15485160/",
       "tmdb": "https://www.themoviedb.org/movie/874219"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:36:51.771Z",
-    "tmdbFetchedAt": "2026-10-04T07:36:51.771Z",
+    "tmdbUpdatedAt": "2026-10-05T07:57:19.517Z",
+    "tmdbFetchedAt": "2026-10-05T07:57:19.517Z",
     "alternativeTitles": [
       {
         "title": "Christmas in Harlem",
@@ -31924,19 +31925,19 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
+        "id": 1512117,
+        "name": "Mark Amato",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "6161d45f4df2910043880b31"
+      },
+      {
         "id": 85204,
         "name": "Jeff Beesley",
         "job": "Director",
         "department": "Directing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/fAlhPhTYEzywPpkdaZOVwpviX9W.jpg",
         "creditId": "6161d4564df2910093fb6f71"
-      },
-      {
-        "id": 1512117,
-        "name": "Mark Amato",
-        "job": "Writer",
-        "department": "Writing",
-        "creditId": "6161d45f4df2910043880b31"
       },
       {
         "id": 1512119,
@@ -31953,8 +31954,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt15565510/",
       "tmdb": "https://www.themoviedb.org/movie/874260"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:36:53.481Z",
-    "tmdbFetchedAt": "2026-10-04T07:36:53.481Z"
+    "tmdbUpdatedAt": "2026-10-05T07:57:21.038Z",
+    "tmdbFetchedAt": "2026-10-05T07:57:21.038Z"
   },
   {
     "id": "hallmark-2021-a-royal-queens-christmas",
@@ -32237,8 +32238,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt15829734/",
       "tmdb": "https://www.themoviedb.org/movie/888498"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:36:55.045Z",
-    "tmdbFetchedAt": "2026-10-04T07:36:55.045Z",
+    "tmdbUpdatedAt": "2026-10-05T07:57:22.555Z",
+    "tmdbFetchedAt": "2026-10-05T07:57:22.555Z",
     "alternativeTitles": [
       {
         "title": "Royal Queens Christmas",
@@ -32483,13 +32484,6 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
-        "id": 1512119,
-        "name": "Tracy Andreen",
-        "job": "Writer",
-        "department": "Writing",
-        "creditId": "6147dd38511d0900628296ac"
-      },
-      {
         "id": 2129973,
         "name": "David I. Strasser",
         "job": "Director",
@@ -32503,6 +32497,13 @@ export const MOVIES: Movie[] = [
         "job": "Writer",
         "department": "Writing",
         "creditId": "6147dd45efd3c200638db85f"
+      },
+      {
+        "id": 1512119,
+        "name": "Tracy Andreen",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "6147dd38511d0900628296ac"
       }
     ],
     "voteAverage": 6.3,
@@ -32512,8 +32513,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt15403980/",
       "tmdb": "https://www.themoviedb.org/movie/876104"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:36:56.768Z",
-    "tmdbFetchedAt": "2026-10-04T07:36:56.768Z",
+    "tmdbUpdatedAt": "2026-10-05T07:57:24.596Z",
+    "tmdbFetchedAt": "2026-10-05T07:57:24.596Z",
     "alternativeTitles": [
       {
         "title": "Christmas Bridesmaid",
@@ -32815,8 +32816,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt15766640/",
       "tmdb": "https://www.themoviedb.org/movie/874124"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:36:57.495Z",
-    "tmdbFetchedAt": "2026-10-04T07:36:57.495Z"
+    "tmdbUpdatedAt": "2026-10-05T07:57:25.232Z",
+    "tmdbFetchedAt": "2026-10-05T07:57:25.232Z"
   },
   {
     "id": "hallmark-2021-boyfriends-of-christmas-past",
@@ -33076,8 +33077,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt15706104/",
       "tmdb": "https://www.themoviedb.org/movie/874162"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:36:58.229Z",
-    "tmdbFetchedAt": "2026-10-04T07:36:58.229Z"
+    "tmdbUpdatedAt": "2026-10-05T07:57:25.847Z",
+    "tmdbFetchedAt": "2026-10-05T07:57:25.847Z"
   },
   {
     "id": "hallmark-2021-christmas-at-castle-hart",
@@ -33303,19 +33304,19 @@ export const MOVIES: Movie[] = [
         "creditId": "619cccf4528b2e0044df5765"
       },
       {
-        "id": 2526571,
-        "name": "Bonnie Fairweather",
-        "job": "Story",
-        "department": "Writing",
-        "creditId": "619ccd0971458f002aa8e610"
-      },
-      {
         "id": 62909,
         "name": "Paul Campbell",
         "job": "Writer",
         "department": "Writing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/yPxGQwgl1VAMU0Hzck3dJSoYkMB.jpg",
         "creditId": "619cccfeaf58cb0066709d01"
+      },
+      {
+        "id": 2526571,
+        "name": "Bonnie Fairweather",
+        "job": "Story",
+        "department": "Writing",
+        "creditId": "619ccd0971458f002aa8e610"
       }
     ],
     "voteAverage": 6.2,
@@ -33325,8 +33326,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt15943556/",
       "tmdb": "https://www.themoviedb.org/movie/874166"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:36:58.966Z",
-    "tmdbFetchedAt": "2026-10-04T07:36:58.966Z",
+    "tmdbUpdatedAt": "2026-10-05T07:57:27.056Z",
+    "tmdbFetchedAt": "2026-10-05T07:57:27.056Z",
     "alternativeTitles": [
       {
         "title": "Christmas at Castle Leslie",
@@ -33502,8 +33503,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt15691922/",
       "tmdb": "https://www.themoviedb.org/movie/874193"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:37:00.537Z",
-    "tmdbFetchedAt": "2026-10-04T07:37:00.537Z"
+    "tmdbUpdatedAt": "2026-10-05T07:57:28.653Z",
+    "tmdbFetchedAt": "2026-10-05T07:57:28.653Z"
   },
   {
     "id": "hallmark-2021-christmas-in-harmony",
@@ -33758,8 +33759,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt15425920/",
       "tmdb": "https://www.themoviedb.org/movie/874220"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:37:01.298Z",
-    "tmdbFetchedAt": "2026-10-04T07:37:01.298Z"
+    "tmdbUpdatedAt": "2026-10-05T07:57:29.293Z",
+    "tmdbFetchedAt": "2026-10-05T07:57:29.293Z"
   },
   {
     "id": "hallmark-2021-christmas-in-tahoe",
@@ -34111,8 +34112,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt15739494/",
       "tmdb": "https://www.themoviedb.org/movie/874226"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:37:02.005Z",
-    "tmdbFetchedAt": "2026-10-04T07:37:02.005Z"
+    "tmdbUpdatedAt": "2026-10-05T07:57:30.604Z",
+    "tmdbFetchedAt": "2026-10-05T07:57:30.604Z"
   },
   {
     "id": "hallmark-2021-christmas-sail",
@@ -34342,8 +34343,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt15758364/",
       "tmdb": "https://www.themoviedb.org/movie/874228"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:37:02.734Z",
-    "tmdbFetchedAt": "2026-10-04T07:37:02.734Z"
+    "tmdbUpdatedAt": "2026-10-05T07:57:32.523Z",
+    "tmdbFetchedAt": "2026-10-05T07:57:32.523Z"
   },
   {
     "id": "hallmark-2021-coyote-creek-christmas",
@@ -34574,8 +34575,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt15205430/",
       "tmdb": "https://www.themoviedb.org/movie/874127"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:37:04.835Z",
-    "tmdbFetchedAt": "2026-10-04T07:37:04.835Z"
+    "tmdbUpdatedAt": "2026-10-05T07:57:34.134Z",
+    "tmdbFetchedAt": "2026-10-05T07:57:34.134Z"
   },
   {
     "id": "hallmark-2021-eight-gifts-of-hanukkah",
@@ -34801,20 +34802,20 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
-        "id": 109680,
-        "name": "Mark Jean",
-        "job": "Director",
-        "department": "Directing",
-        "profileUrl": "https://image.tmdb.org/t/p/w500/los7KK6zjdTjJBfujTXkNIfhxW2.jpg",
-        "creditId": "61a76741957e6d002eaaa3bb"
-      },
-      {
         "id": 184494,
         "name": "Donald Martin",
         "job": "Story",
         "department": "Writing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/4n157vwUZWBETl5UG6GwOPfHO9h.jpg",
         "creditId": "61a7675d85c0a2002171ba17"
+      },
+      {
+        "id": 109680,
+        "name": "Mark Jean",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/los7KK6zjdTjJBfujTXkNIfhxW2.jpg",
+        "creditId": "61a76741957e6d002eaaa3bb"
       }
     ],
     "voteAverage": 7,
@@ -34824,8 +34825,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt16282114/",
       "tmdb": "https://www.themoviedb.org/movie/888488"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:37:07.451Z",
-    "tmdbFetchedAt": "2026-10-04T07:37:07.451Z",
+    "tmdbUpdatedAt": "2026-10-05T07:57:36.179Z",
+    "tmdbFetchedAt": "2026-10-05T07:57:36.179Z",
     "alternativeTitles": [
       {
         "title": "Eight Gifts of Hannukkah",
@@ -35088,18 +35089,18 @@ export const MOVIES: Movie[] = [
         "creditId": "6140d63e9c97bd004335b243"
       },
       {
-        "id": 132553,
-        "name": "John Benjamin Martin",
-        "job": "Writer",
-        "department": "Writing",
-        "creditId": "6174012b176a9400853af423"
-      },
-      {
         "id": 3281393,
         "name": "Emma Claire Martin",
         "job": "Writer",
         "department": "Writing",
         "creditId": "61740122b3316b0091349f4b"
+      },
+      {
+        "id": 132553,
+        "name": "John Benjamin Martin",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "6174012b176a9400853af423"
       },
       {
         "id": 1512119,
@@ -35116,8 +35117,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt15821582/",
       "tmdb": "https://www.themoviedb.org/movie/874244"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:37:08.172Z",
-    "tmdbFetchedAt": "2026-10-04T07:37:08.172Z",
+    "tmdbUpdatedAt": "2026-10-05T07:57:36.762Z",
+    "tmdbFetchedAt": "2026-10-05T07:57:36.762Z",
     "alternativeTitles": [
       {
         "title": "Um Pedido de Natal",
@@ -35321,18 +35322,18 @@ export const MOVIES: Movie[] = [
         "creditId": "6140a2a05e1200008da1b959"
       },
       {
-        "id": 3309879,
-        "name": "Tom McCurrie",
-        "job": "Writer",
-        "department": "Writing",
-        "creditId": "6191b93ba6d9310066b1eaae"
-      },
-      {
         "id": 1778498,
         "name": "Pierluigi D. Cothran",
         "job": "Writer",
         "department": "Writing",
         "creditId": "6191b934dbf144002bec081e"
+      },
+      {
+        "id": 3309879,
+        "name": "Tom McCurrie",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "6191b93ba6d9310066b1eaae"
       },
       {
         "id": 3309880,
@@ -35349,8 +35350,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt15102772/",
       "tmdb": "https://www.themoviedb.org/movie/874140"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:37:09.782Z",
-    "tmdbFetchedAt": "2026-10-04T07:37:09.782Z",
+    "tmdbUpdatedAt": "2026-10-05T07:57:38.060Z",
+    "tmdbFetchedAt": "2026-10-05T07:57:38.060Z",
     "alternativeTitles": [
       {
         "title": "All Is Bright",
@@ -35695,8 +35696,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt15508150/",
       "tmdb": "https://www.themoviedb.org/movie/874194"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:37:12.367Z",
-    "tmdbFetchedAt": "2026-10-04T07:37:12.367Z",
+    "tmdbUpdatedAt": "2026-10-05T07:57:40.455Z",
+    "tmdbFetchedAt": "2026-10-05T07:57:40.455Z",
     "alternativeTitles": [
       {
         "title": "My Family Christmas Tree",
@@ -35937,18 +35938,18 @@ export const MOVIES: Movie[] = [
         "creditId": "61732a09b5bc21008c09d068"
       },
       {
-        "id": 116930,
-        "name": "Alex Wright",
-        "job": "Writer",
-        "department": "Writing",
-        "creditId": "61cc653941aac4005f4c6fbe"
-      },
-      {
         "id": 2107465,
         "name": "Erin Rodman",
         "job": "Writer",
         "department": "Writing",
         "creditId": "61cc6545db72c0009be14a4b"
+      },
+      {
+        "id": 116930,
+        "name": "Alex Wright",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "61cc653941aac4005f4c6fbe"
       }
     ],
     "voteAverage": 6.3,
@@ -35958,8 +35959,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt15691228/",
       "tmdb": "https://www.themoviedb.org/movie/874122"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:37:13.090Z",
-    "tmdbFetchedAt": "2026-10-04T07:37:13.090Z",
+    "tmdbUpdatedAt": "2026-10-05T07:57:41.071Z",
+    "tmdbFetchedAt": "2026-10-05T07:57:41.071Z",
     "alternativeTitles": [
       {
         "title": "Let It Snow",
@@ -36228,8 +36229,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt15412176/",
       "tmdb": "https://www.themoviedb.org/movie/877004"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:37:13.970Z",
-    "tmdbFetchedAt": "2026-10-04T07:37:13.970Z"
+    "tmdbUpdatedAt": "2026-10-05T07:57:41.733Z",
+    "tmdbFetchedAt": "2026-10-05T07:57:41.733Z"
   },
   {
     "id": "hallmark-2021-open-by-christmas",
@@ -36452,8 +36453,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt15758400/",
       "tmdb": "https://www.themoviedb.org/movie/874161"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:37:15.082Z",
-    "tmdbFetchedAt": "2026-10-04T07:37:15.082Z",
+    "tmdbUpdatedAt": "2026-10-05T07:57:43.678Z",
+    "tmdbFetchedAt": "2026-10-05T07:57:43.678Z",
     "alternativeTitles": [
       {
         "title": "Be Mine",
@@ -36815,8 +36816,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt6540706/",
       "tmdb": "https://www.themoviedb.org/movie/866665"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:37:16.666Z",
-    "tmdbFetchedAt": "2026-10-04T07:37:16.666Z",
+    "tmdbUpdatedAt": "2026-10-05T07:57:45.519Z",
+    "tmdbFetchedAt": "2026-10-05T07:57:45.519Z",
     "alternativeTitles": [
       {
         "title": "Williams Sister Christmas Movie: Part 1",
@@ -37102,22 +37103,6 @@ export const MOVIES: Movie[] = [
         "creditId": "612aa301a4af8f00624d89cb"
       },
       {
-        "id": 129952,
-        "name": "Sean McNamara",
-        "job": "Director",
-        "department": "Directing",
-        "profileUrl": "https://image.tmdb.org/t/p/w500/iJLRIBB2P3LXsPBvzdYhf06Lful.jpg",
-        "creditId": "612aa11c17c4430087a23187"
-      },
-      {
-        "id": 1767300,
-        "name": "Zac Hug",
-        "job": "Writer",
-        "department": "Writing",
-        "profileUrl": "https://image.tmdb.org/t/p/w500/xIJU5Ndr4NkmH7Ra5MdqNoW1Hjo.jpg",
-        "creditId": "612aa13aa4af8f008a294013"
-      },
-      {
         "id": 112368,
         "name": "Erik Patterson",
         "job": "Writer",
@@ -37126,11 +37111,27 @@ export const MOVIES: Movie[] = [
         "creditId": "612aa14412197e00619320fa"
       },
       {
+        "id": 129952,
+        "name": "Sean McNamara",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/iJLRIBB2P3LXsPBvzdYhf06Lful.jpg",
+        "creditId": "612aa11c17c4430087a23187"
+      },
+      {
         "id": 3215366,
         "name": "Claire Boyles",
         "job": "Writer",
         "department": "Writing",
         "creditId": "612aa136bc86570027d2c8c8"
+      },
+      {
+        "id": 1767300,
+        "name": "Zac Hug",
+        "job": "Writer",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/xIJU5Ndr4NkmH7Ra5MdqNoW1Hjo.jpg",
+        "creditId": "612aa13aa4af8f008a294013"
       }
     ],
     "voteAverage": 6.1,
@@ -37140,8 +37141,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt6540724/",
       "tmdb": "https://www.themoviedb.org/movie/866669"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:37:17.403Z",
-    "tmdbFetchedAt": "2026-10-04T07:37:17.403Z",
+    "tmdbUpdatedAt": "2026-10-05T07:57:46.189Z",
+    "tmdbFetchedAt": "2026-10-05T07:57:46.189Z",
     "alternativeTitles": [
       {
         "title": "Christmas at the Madison: Part 2",
@@ -37425,8 +37426,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt15316422/",
       "tmdb": "https://www.themoviedb.org/movie/874144"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:37:19.258Z",
-    "tmdbFetchedAt": "2026-10-04T07:37:19.258Z"
+    "tmdbUpdatedAt": "2026-10-05T07:57:47.775Z",
+    "tmdbFetchedAt": "2026-10-05T07:57:47.775Z"
   },
   {
     "id": "hallmark-2021-the-christmas-house-2-deck-those-halls",
@@ -37649,8 +37650,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt16365840/",
       "tmdb": "https://www.themoviedb.org/movie/874196"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:37:21.628Z",
-    "tmdbFetchedAt": "2026-10-04T07:37:21.628Z",
+    "tmdbUpdatedAt": "2026-10-05T07:57:49.101Z",
+    "tmdbFetchedAt": "2026-10-05T07:57:49.101Z",
     "alternativeTitles": [
       {
         "title": "The Christmas House 2: Handsome Christmas",
@@ -37899,8 +37900,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt15226096/",
       "tmdb": "https://www.themoviedb.org/movie/876119"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:37:23.210Z",
-    "tmdbFetchedAt": "2026-10-04T07:37:23.210Z",
+    "tmdbUpdatedAt": "2026-10-05T07:57:50.329Z",
+    "tmdbFetchedAt": "2026-10-05T07:57:50.329Z",
     "alternativeTitles": [
       {
         "title": "Nine Lives of Christmas",
@@ -38151,18 +38152,18 @@ export const MOVIES: Movie[] = [
         "creditId": "61490c135e12000020bb1528"
       },
       {
-        "id": 1133777,
-        "name": "Gregg Rossen",
-        "job": "Writer",
-        "department": "Writing",
-        "creditId": "615509dbd2147c008dff235b"
-      },
-      {
         "id": 1133778,
         "name": "Brian Sawyer",
         "job": "Writer",
         "department": "Writing",
         "creditId": "615509e243d9b100439b11c6"
+      },
+      {
+        "id": 1133777,
+        "name": "Gregg Rossen",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "615509dbd2147c008dff235b"
       }
     ],
     "voteAverage": 6.1,
@@ -38172,8 +38173,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt15737510/",
       "tmdb": "https://www.themoviedb.org/movie/874238"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:37:23.946Z",
-    "tmdbFetchedAt": "2026-10-04T07:37:23.946Z",
+    "tmdbUpdatedAt": "2026-10-05T07:57:50.973Z",
+    "tmdbFetchedAt": "2026-10-05T07:57:50.973Z",
     "alternativeTitles": [
       {
         "title": "I Spy Christmas",
@@ -38421,8 +38422,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt15484422/",
       "tmdb": "https://www.themoviedb.org/movie/877692"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:37:25.615Z",
-    "tmdbFetchedAt": "2026-10-04T07:37:25.615Z",
+    "tmdbUpdatedAt": "2026-10-05T07:57:52.254Z",
+    "tmdbFetchedAt": "2026-10-05T07:57:52.254Z",
     "alternativeTitles": [
       {
         "title": "Round About Christmas",
@@ -38443,6 +38444,10 @@ export const MOVIES: Movie[] = [
       {
         "title": "Sinä, minä ja joulupuu",
         "country": "FI"
+      },
+      {
+        "title": "Te, én és a karácsonyfák",
+        "country": "HU"
       }
     ]
   },
@@ -38633,8 +38638,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt13273744/",
       "tmdb": "https://www.themoviedb.org/movie/746061"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:37:27.144Z",
-    "tmdbFetchedAt": "2026-10-04T07:37:27.144Z"
+    "tmdbUpdatedAt": "2026-10-05T07:57:52.869Z",
+    "tmdbFetchedAt": "2026-10-05T07:57:52.869Z"
   },
   {
     "id": "hallmark-2020-a-christmas-tree-grows-in-colorado",
@@ -38847,20 +38852,20 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
-        "id": 1182319,
-        "name": "Samantha Herman",
-        "job": "Story",
-        "department": "Writing",
-        "profileUrl": "https://image.tmdb.org/t/p/w500/s5JRPP3U8ouRhthp6Dy22jyygNE.jpg",
-        "creditId": "5f980ccd1fd36f0037507df5"
-      },
-      {
         "id": 88040,
         "name": "Jason Bourque",
         "job": "Director",
         "department": "Directing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/1UzCjDDdeBsyW5UauFr6mZXNr3Y.jpg",
         "creditId": "5f980cbf7464570038e6f65c"
+      },
+      {
+        "id": 1182319,
+        "name": "Samantha Herman",
+        "job": "Story",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/s5JRPP3U8ouRhthp6Dy22jyygNE.jpg",
+        "creditId": "5f980ccd1fd36f0037507df5"
       },
       {
         "id": 1331947,
@@ -38878,8 +38883,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt12557978/",
       "tmdb": "https://www.themoviedb.org/movie/737764"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:37:27.868Z",
-    "tmdbFetchedAt": "2026-10-04T07:37:27.868Z",
+    "tmdbUpdatedAt": "2026-10-05T07:57:54.154Z",
+    "tmdbFetchedAt": "2026-10-05T07:57:54.154Z",
     "alternativeTitles": [
       {
         "title": "A Christmas Tree Grows in Brooklyn",
@@ -39164,19 +39169,19 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
+        "id": 1384319,
+        "name": "Eric Brooks",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "5fa1585c3a9650003bad1124"
+      },
+      {
         "id": 1774723,
         "name": "Dawn Wilkinson",
         "job": "Director",
         "department": "Directing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/uyNWzu6Wzbw8Qm5uJx7he1mmFZD.jpg",
         "creditId": "5fa15850bcf8c900343c0d63"
-      },
-      {
-        "id": 1384319,
-        "name": "Eric Brooks",
-        "job": "Writer",
-        "department": "Writing",
-        "creditId": "5fa1585c3a9650003bad1124"
       }
     ],
     "voteAverage": 6.7,
@@ -39186,8 +39191,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt13341432/",
       "tmdb": "https://www.themoviedb.org/movie/746041"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:37:29.697Z",
-    "tmdbFetchedAt": "2026-10-04T07:37:29.697Z"
+    "tmdbUpdatedAt": "2026-10-05T07:57:54.764Z",
+    "tmdbFetchedAt": "2026-10-05T07:57:54.764Z"
   },
   {
     "id": "hallmark-2020-a-timeless-christmas",
@@ -39452,8 +39457,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt13341414/",
       "tmdb": "https://www.themoviedb.org/movie/746039"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:37:30.433Z",
-    "tmdbFetchedAt": "2026-10-04T07:37:30.433Z"
+    "tmdbUpdatedAt": "2026-10-05T07:57:55.380Z",
+    "tmdbFetchedAt": "2026-10-05T07:57:55.380Z"
   },
   {
     "id": "hallmark-2020-chateau-christmas",
@@ -39692,8 +39697,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt13350688/",
       "tmdb": "https://www.themoviedb.org/movie/737779"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:37:31.168Z",
-    "tmdbFetchedAt": "2026-10-04T07:37:31.168Z",
+    "tmdbUpdatedAt": "2026-10-05T07:57:56.001Z",
+    "tmdbFetchedAt": "2026-10-05T07:57:56.001Z",
     "alternativeTitles": [
       {
         "title": "O Concerto de Natal",
@@ -39958,20 +39963,20 @@ export const MOVIES: Movie[] = [
         "creditId": "5f8a73d4391b9c00364c5be4"
       },
       {
-        "id": 1292329,
-        "name": "Kimberley Sustad",
-        "job": "Story",
-        "department": "Writing",
-        "profileUrl": "https://image.tmdb.org/t/p/w500/hLYx9wEcJkN1JnXiZyYxExNHmWn.jpg",
-        "creditId": "5fe826eecf1afd003c84b5ca"
-      },
-      {
         "id": 62909,
         "name": "Paul Campbell",
         "job": "Story",
         "department": "Writing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/yPxGQwgl1VAMU0Hzck3dJSoYkMB.jpg",
         "creditId": "5fe8270a9cc67b00405d3b66"
+      },
+      {
+        "id": 1292329,
+        "name": "Kimberley Sustad",
+        "job": "Story",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/hLYx9wEcJkN1JnXiZyYxExNHmWn.jpg",
+        "creditId": "5fe826eecf1afd003c84b5ca"
       }
     ],
     "voteAverage": 6.8,
@@ -39981,8 +39986,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt13206476/",
       "tmdb": "https://www.themoviedb.org/movie/746045"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:37:31.896Z",
-    "tmdbFetchedAt": "2026-10-04T07:37:31.896Z"
+    "tmdbUpdatedAt": "2026-10-05T07:57:56.608Z",
+    "tmdbFetchedAt": "2026-10-05T07:57:56.608Z"
   },
   {
     "id": "hallmark-2020-christmas-comes-twice",
@@ -40214,18 +40219,18 @@ export const MOVIES: Movie[] = [
         "creditId": "5fb495d96262080040b7e8f6"
       },
       {
-        "id": 1133777,
-        "name": "Gregg Rossen",
-        "job": "Writer",
-        "department": "Writing",
-        "creditId": "5fe82382c9dbf9003d480896"
-      },
-      {
         "id": 1133778,
         "name": "Brian Sawyer",
         "job": "Writer",
         "department": "Writing",
         "creditId": "5fe8238e5b1240003e69e5e7"
+      },
+      {
+        "id": 1133777,
+        "name": "Gregg Rossen",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "5fe82382c9dbf9003d480896"
       }
     ],
     "voteAverage": 6.3,
@@ -40235,8 +40240,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt13342004/",
       "tmdb": "https://www.themoviedb.org/movie/737782"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:37:33.534Z",
-    "tmdbFetchedAt": "2026-10-04T07:37:33.534Z",
+    "tmdbUpdatedAt": "2026-10-05T07:57:57.206Z",
+    "tmdbFetchedAt": "2026-10-05T07:57:57.206Z",
     "alternativeTitles": [
       {
         "title": "Christmas Carnival",
@@ -40481,18 +40486,18 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
-        "id": 1512993,
-        "name": "Linda-Lisa Hayter",
-        "job": "Director",
-        "department": "Directing",
-        "creditId": "5fb478059b6e47003daaaa2c"
-      },
-      {
         "id": 2860509,
         "name": "Shari Sharpe",
         "job": "Writer",
         "department": "Writing",
         "creditId": "5fb47788c15f89003f892861"
+      },
+      {
+        "id": 1512993,
+        "name": "Linda-Lisa Hayter",
+        "job": "Director",
+        "department": "Directing",
+        "creditId": "5fb478059b6e47003daaaa2c"
       },
       {
         "id": 1767300,
@@ -40510,8 +40515,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt13194940/",
       "tmdb": "https://www.themoviedb.org/movie/746047"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:37:34.257Z",
-    "tmdbFetchedAt": "2026-10-04T07:37:34.257Z"
+    "tmdbUpdatedAt": "2026-10-05T07:57:57.887Z",
+    "tmdbFetchedAt": "2026-10-05T07:57:57.887Z"
   },
   {
     "id": "hallmark-2020-christmas-in-vienna",
@@ -40738,8 +40743,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt13341400/",
       "tmdb": "https://www.themoviedb.org/movie/726523"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:37:35.004Z",
-    "tmdbFetchedAt": "2026-10-04T07:37:35.004Z"
+    "tmdbUpdatedAt": "2026-10-05T07:57:58.495Z",
+    "tmdbFetchedAt": "2026-10-05T07:57:58.495Z"
   },
   {
     "id": "hallmark-2020-christmas-she-wrote",
@@ -40947,20 +40952,20 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
-        "id": 2061626,
-        "name": "Andrea Canning",
-        "job": "Writer",
-        "department": "Writing",
-        "profileUrl": "https://image.tmdb.org/t/p/w500/mDraVMQW5dBXoTc97KRJQ4Z9zgM.jpg",
-        "creditId": "5f8a768de9da690038ea4ef8"
-      },
-      {
         "id": 110468,
         "name": "Terry Ingram",
         "job": "Director",
         "department": "Directing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/iJIumt1U6KknXM3rl9TIMLI5S7D.jpg",
         "creditId": "5f8a7681eb79c200380a4101"
+      },
+      {
+        "id": 2061626,
+        "name": "Andrea Canning",
+        "job": "Writer",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/mDraVMQW5dBXoTc97KRJQ4Z9zgM.jpg",
+        "creditId": "5f8a768de9da690038ea4ef8"
       },
       {
         "id": 2223048,
@@ -40977,8 +40982,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt13097858/",
       "tmdb": "https://www.themoviedb.org/movie/746048"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:37:36.942Z",
-    "tmdbFetchedAt": "2026-10-04T07:37:36.942Z",
+    "tmdbUpdatedAt": "2026-10-05T07:57:59.789Z",
+    "tmdbFetchedAt": "2026-10-05T07:57:59.789Z",
     "alternativeTitles": [
       {
         "title": "La Navidad de la columnista",
@@ -41304,20 +41309,20 @@ export const MOVIES: Movie[] = [
         "creditId": "5f36b3b98f26bc0034bc547e"
       },
       {
-        "id": 62079,
-        "name": "Janeen Damian",
-        "job": "Writer",
-        "department": "Writing",
-        "profileUrl": "https://image.tmdb.org/t/p/w500/ygC5V5zwdkiW2PMIxayVv9ue0zw.jpg",
-        "creditId": "5f8a754f391b9c00384bf8ab"
-      },
-      {
         "id": 62081,
         "name": "Michael Damian",
         "job": "Writer",
         "department": "Writing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/toPk7n6y8T8Vgz3NIdFdZGEb1l1.jpg",
         "creditId": "5f8a7539d4b9d90037337821"
+      },
+      {
+        "id": 62079,
+        "name": "Janeen Damian",
+        "job": "Writer",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/ygC5V5zwdkiW2PMIxayVv9ue0zw.jpg",
+        "creditId": "5f8a754f391b9c00384bf8ab"
       }
     ],
     "voteAverage": 6.9,
@@ -41327,8 +41332,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt11585200/",
       "tmdb": "https://www.themoviedb.org/movie/733032"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:37:38.679Z",
-    "tmdbFetchedAt": "2026-10-04T07:37:38.679Z",
+    "tmdbUpdatedAt": "2026-10-05T07:58:00.423Z",
+    "tmdbFetchedAt": "2026-10-05T07:58:00.423Z",
     "alternativeTitles": [
       {
         "title": "The Christmas Waltz",
@@ -41579,8 +41584,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt13381368/",
       "tmdb": "https://www.themoviedb.org/movie/746032"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:37:40.276Z",
-    "tmdbFetchedAt": "2026-10-04T07:37:40.276Z"
+    "tmdbUpdatedAt": "2026-10-05T07:58:03.449Z",
+    "tmdbFetchedAt": "2026-10-05T07:58:03.449Z"
   },
   {
     "id": "hallmark-2020-cross-country-christmas",
@@ -41883,20 +41888,20 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
-        "id": 1515074,
-        "name": "Kirsten Hansen",
-        "job": "Writer",
-        "department": "Writing",
-        "profileUrl": "https://image.tmdb.org/t/p/w500/q0j4Ni98ASAlmN2S1CvmJ39XmUp.jpg",
-        "creditId": "5f7a850a8741c4003a7129b5"
-      },
-      {
         "id": 98940,
         "name": "Catherine Cyran",
         "job": "Director",
         "department": "Directing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/qtBvphHLdTrDsnvyvNoebVCqy3Q.jpg",
         "creditId": "5f7a84fcd5ffcb0034a24ade"
+      },
+      {
+        "id": 1515074,
+        "name": "Kirsten Hansen",
+        "job": "Writer",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/q0j4Ni98ASAlmN2S1CvmJ39XmUp.jpg",
+        "creditId": "5f7a850a8741c4003a7129b5"
       }
     ],
     "voteAverage": 6.8,
@@ -41906,8 +41911,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt13040330/",
       "tmdb": "https://www.themoviedb.org/movie/737780"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:37:42.456Z",
-    "tmdbFetchedAt": "2026-10-04T07:37:42.456Z",
+    "tmdbUpdatedAt": "2026-10-05T07:58:05.006Z",
+    "tmdbFetchedAt": "2026-10-05T07:58:05.006Z",
     "alternativeTitles": [
       {
         "title": "Рождественские приключения",
@@ -42222,8 +42227,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt13320784/",
       "tmdb": "https://www.themoviedb.org/movie/746060"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:37:43.193Z",
-    "tmdbFetchedAt": "2026-10-04T07:37:43.193Z",
+    "tmdbUpdatedAt": "2026-10-05T07:58:05.670Z",
+    "tmdbFetchedAt": "2026-10-05T07:58:05.670Z",
     "alternativeTitles": [
       {
         "title": "Рождество на пять звёзд",
@@ -42427,8 +42432,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt13109730/",
       "tmdb": "https://www.themoviedb.org/movie/746043"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:37:45.997Z",
-    "tmdbFetchedAt": "2026-10-04T07:37:45.997Z",
+    "tmdbUpdatedAt": "2026-10-05T07:58:07.753Z",
+    "tmdbFetchedAt": "2026-10-05T07:58:07.753Z",
     "alternativeTitles": [
       {
         "title": "A Bright and Merry Christmas",
@@ -42650,8 +42655,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt13286622/",
       "tmdb": "https://www.themoviedb.org/movie/756727"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:37:47.086Z",
-    "tmdbFetchedAt": "2026-10-04T07:37:47.086Z"
+    "tmdbUpdatedAt": "2026-10-05T07:58:08.390Z",
+    "tmdbFetchedAt": "2026-10-05T07:58:08.390Z"
   },
   {
     "id": "hallmark-2020-holly-ivy",
@@ -42906,20 +42911,20 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
-        "id": 1043890,
-        "name": "Jamie Pachino",
-        "job": "Writer",
-        "department": "Writing",
-        "profileUrl": "https://image.tmdb.org/t/p/w500/e4xzhU8rAVaG3KL5vn6ujIzOHcT.jpg",
-        "creditId": "5f8a6e7df6fd180036b49a22"
-      },
-      {
         "id": 212406,
         "name": "Erica Dunton",
         "job": "Director",
         "department": "Directing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/1NFkYeN7qAgck8eQhkwMOIMQtIJ.jpg",
         "creditId": "5f8a6e6ff6fd180036b49a0e"
+      },
+      {
+        "id": 1043890,
+        "name": "Jamie Pachino",
+        "job": "Writer",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/e4xzhU8rAVaG3KL5vn6ujIzOHcT.jpg",
+        "creditId": "5f8a6e7df6fd180036b49a22"
       }
     ],
     "voteAverage": 7.2,
@@ -42929,8 +42934,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt13356246/",
       "tmdb": "https://www.themoviedb.org/movie/737793"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:37:47.843Z",
-    "tmdbFetchedAt": "2026-10-04T07:37:47.843Z"
+    "tmdbUpdatedAt": "2026-10-05T07:58:09.057Z",
+    "tmdbFetchedAt": "2026-10-05T07:58:09.057Z"
   },
   {
     "id": "hallmark-2020-if-i-only-had-christmas",
@@ -43188,20 +43193,20 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
-        "id": 951196,
-        "name": "Jim Head",
-        "job": "Story",
-        "department": "Writing",
-        "profileUrl": "https://image.tmdb.org/t/p/w500/n5onSVPuaSceXFjcfSSm7P9RPiD.jpg",
-        "creditId": "5f8a75c9eb79c200370a5f9b"
-      },
-      {
         "id": 545229,
         "name": "David Weaver",
         "job": "Director",
         "department": "Directing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/mgYRS2YM7gtEbvw5CsAEfQO2wLJ.jpg",
         "creditId": "5f8a75baf6fd180034b64442"
+      },
+      {
+        "id": 951196,
+        "name": "Jim Head",
+        "job": "Story",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/n5onSVPuaSceXFjcfSSm7P9RPiD.jpg",
+        "creditId": "5f8a75c9eb79c200370a5f9b"
       }
     ],
     "voteAverage": 6.6,
@@ -43211,8 +43216,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt12766346/",
       "tmdb": "https://www.themoviedb.org/movie/737766"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:37:49.390Z",
-    "tmdbFetchedAt": "2026-10-04T07:37:49.390Z"
+    "tmdbUpdatedAt": "2026-10-05T07:58:09.660Z",
+    "tmdbFetchedAt": "2026-10-05T07:58:09.660Z"
   },
   {
     "id": "hallmark-2020-jingle-bell-bride",
@@ -43477,8 +43482,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt12877642/",
       "tmdb": "https://www.themoviedb.org/movie/737763"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:37:50.172Z",
-    "tmdbFetchedAt": "2026-10-04T07:37:50.172Z"
+    "tmdbUpdatedAt": "2026-10-05T07:58:10.282Z",
+    "tmdbFetchedAt": "2026-10-05T07:58:10.282Z"
   },
   {
     "id": "hallmark-2020-love-lights-hanukkah",
@@ -43731,19 +43736,19 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
+        "id": 1435021,
+        "name": "Karen Berger",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "5fb499b0c15f8900418ac216"
+      },
+      {
         "id": 109680,
         "name": "Mark Jean",
         "job": "Director",
         "department": "Directing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/los7KK6zjdTjJBfujTXkNIfhxW2.jpg",
         "creditId": "5fb49993afa1b00041b9ecdf"
-      },
-      {
-        "id": 1435021,
-        "name": "Karen Berger",
-        "job": "Writer",
-        "department": "Writing",
-        "creditId": "5fb499b0c15f8900418ac216"
       }
     ],
     "voteAverage": 6.8,
@@ -43753,8 +43758,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt13342190/",
       "tmdb": "https://www.themoviedb.org/movie/746062"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:37:52.432Z",
-    "tmdbFetchedAt": "2026-10-04T07:37:52.432Z"
+    "tmdbUpdatedAt": "2026-10-05T07:58:10.887Z",
+    "tmdbFetchedAt": "2026-10-05T07:58:10.887Z"
   },
   {
     "id": "hallmark-2020-never-kiss-a-man-in-a-christmas-sweater",
@@ -44046,8 +44051,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt13192538/",
       "tmdb": "https://www.themoviedb.org/movie/746034"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:37:54.001Z",
-    "tmdbFetchedAt": "2026-10-04T07:37:54.001Z"
+    "tmdbUpdatedAt": "2026-10-05T07:58:11.472Z",
+    "tmdbFetchedAt": "2026-10-05T07:58:11.472Z"
   },
   {
     "id": "hallmark-2020-on-the-12th-date-of-christmas",
@@ -44320,8 +44325,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt12822926/",
       "tmdb": "https://www.themoviedb.org/movie/737778"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:37:54.747Z",
-    "tmdbFetchedAt": "2026-10-04T07:37:54.747Z",
+    "tmdbUpdatedAt": "2026-10-05T07:58:12.816Z",
+    "tmdbFetchedAt": "2026-10-05T07:58:12.816Z",
     "alternativeTitles": [
       {
         "title": "12 Encontros de Natal",
@@ -44599,8 +44604,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt12773628/",
       "tmdb": "https://www.themoviedb.org/movie/737762"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:37:55.537Z",
-    "tmdbFetchedAt": "2026-10-04T07:37:55.537Z",
+    "tmdbUpdatedAt": "2026-10-05T07:58:13.433Z",
+    "tmdbFetchedAt": "2026-10-05T07:58:13.433Z",
     "alternativeTitles": [
       {
         "title": "A Royal Holiday",
@@ -44925,6 +44930,14 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
+        "id": 96792,
+        "name": "Robert Buckley",
+        "job": "Story",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/o4ju4sTWoEMK6QvDjQrqHYRBCrz.jpg",
+        "creditId": "5fa89fd221621d003ff882b1"
+      },
+      {
         "id": 43222,
         "name": "Michael Grossman",
         "job": "Director",
@@ -44938,14 +44951,6 @@ export const MOVIES: Movie[] = [
         "job": "Story",
         "department": "Writing",
         "creditId": "5fa89f4eabf8e2003f42322f"
-      },
-      {
-        "id": 96792,
-        "name": "Robert Buckley",
-        "job": "Story",
-        "department": "Writing",
-        "profileUrl": "https://image.tmdb.org/t/p/w500/o4ju4sTWoEMK6QvDjQrqHYRBCrz.jpg",
-        "creditId": "5fa89fd221621d003ff882b1"
       }
     ],
     "voteAverage": 5.9,
@@ -44955,8 +44960,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt12950902/",
       "tmdb": "https://www.themoviedb.org/movie/746042"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:37:56.251Z",
-    "tmdbFetchedAt": "2026-10-04T07:37:56.251Z",
+    "tmdbUpdatedAt": "2026-10-05T07:58:14.040Z",
+    "tmdbFetchedAt": "2026-10-05T07:58:14.040Z",
     "alternativeTitles": [
       {
         "title": "La casa navideña",
@@ -45133,8 +45138,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt11241514/",
       "tmdb": "https://www.themoviedb.org/movie/642333"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:37:57.333Z",
-    "tmdbFetchedAt": "2026-10-04T07:37:57.333Z",
+    "tmdbUpdatedAt": "2026-10-05T07:58:15.297Z",
+    "tmdbFetchedAt": "2026-10-05T07:58:15.297Z",
     "alternativeTitles": [
       {
         "title": "Christmas Coach",
@@ -45339,6 +45344,14 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
+        "id": 98940,
+        "name": "Catherine Cyran",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/qtBvphHLdTrDsnvyvNoebVCqy3Q.jpg",
+        "creditId": "5dad3680ae366800149a2899"
+      },
+      {
         "id": 1147968,
         "name": "Blake Silver",
         "job": "Writer",
@@ -45352,14 +45365,6 @@ export const MOVIES: Movie[] = [
         "job": "Writer",
         "department": "Writing",
         "creditId": "5dad368cae366800149a28b7"
-      },
-      {
-        "id": 98940,
-        "name": "Catherine Cyran",
-        "job": "Director",
-        "department": "Directing",
-        "profileUrl": "https://image.tmdb.org/t/p/w500/qtBvphHLdTrDsnvyvNoebVCqy3Q.jpg",
-        "creditId": "5dad3680ae366800149a2899"
       }
     ],
     "voteAverage": 6.2,
@@ -45369,8 +45374,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt10768208/",
       "tmdb": "https://www.themoviedb.org/movie/631417"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:37:58.070Z",
-    "tmdbFetchedAt": "2026-10-04T07:37:58.070Z"
+    "tmdbUpdatedAt": "2026-10-05T07:58:15.901Z",
+    "tmdbFetchedAt": "2026-10-05T07:58:15.901Z"
   },
   {
     "id": "hallmark-2019-a-christmas-love-story",
@@ -45621,8 +45626,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt9747440/",
       "tmdb": "https://www.themoviedb.org/movie/626313"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:37:59.805Z",
-    "tmdbFetchedAt": "2026-10-04T07:37:59.805Z",
+    "tmdbUpdatedAt": "2026-10-05T07:58:16.510Z",
+    "tmdbFetchedAt": "2026-10-05T07:58:16.510Z",
     "alternativeTitles": [
       {
         "title": "The Christmas Song",
@@ -45901,8 +45906,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt10768312/",
       "tmdb": "https://www.themoviedb.org/movie/630915"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:38:01.666Z",
-    "tmdbFetchedAt": "2026-10-04T07:38:01.666Z"
+    "tmdbUpdatedAt": "2026-10-05T07:58:17.777Z",
+    "tmdbFetchedAt": "2026-10-05T07:58:17.777Z"
   },
   {
     "id": "hallmark-2019-cherished-memories-a-gift-to-remember-2",
@@ -46109,8 +46114,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt8416396/",
       "tmdb": "https://www.themoviedb.org/movie/631428"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:38:03.233Z",
-    "tmdbFetchedAt": "2026-10-04T07:38:03.233Z",
+    "tmdbUpdatedAt": "2026-10-05T07:58:19.036Z",
+    "tmdbFetchedAt": "2026-10-05T07:58:19.036Z",
     "alternativeTitles": [
       {
         "title": "A Gift to Cherish",
@@ -46432,8 +46437,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt10627564/",
       "tmdb": "https://www.themoviedb.org/movie/626309"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:38:03.949Z",
-    "tmdbFetchedAt": "2026-10-04T07:38:03.949Z",
+    "tmdbUpdatedAt": "2026-10-05T07:58:20.842Z",
+    "tmdbFetchedAt": "2026-10-05T07:58:20.842Z",
     "alternativeTitles": [
       {
         "title": "Karácsony DollyWoodban",
@@ -46621,8 +46626,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt10768410/",
       "tmdb": "https://www.themoviedb.org/movie/627493"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:38:04.684Z",
-    "tmdbFetchedAt": "2026-10-04T07:38:04.684Z"
+    "tmdbUpdatedAt": "2026-10-05T07:58:21.418Z",
+    "tmdbFetchedAt": "2026-10-05T07:58:21.418Z"
   },
   {
     "id": "hallmark-2019-christmas-at-the-plaza",
@@ -46898,8 +46903,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt10921042/",
       "tmdb": "https://www.themoviedb.org/movie/630916"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:38:06.860Z",
-    "tmdbFetchedAt": "2026-10-04T07:38:06.860Z"
+    "tmdbUpdatedAt": "2026-10-05T07:58:22.021Z",
+    "tmdbFetchedAt": "2026-10-05T07:58:22.021Z"
   },
   {
     "id": "hallmark-2019-christmas-in-evergreen-tidings-of-joy",
@@ -47081,20 +47086,20 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
-        "id": 1767300,
-        "name": "Zac Hug",
-        "job": "Writer",
-        "department": "Writing",
-        "profileUrl": "https://image.tmdb.org/t/p/w500/xIJU5Ndr4NkmH7Ra5MdqNoW1Hjo.jpg",
-        "creditId": "5dad4355b2681f001297e194"
-      },
-      {
         "id": 129952,
         "name": "Sean McNamara",
         "job": "Director",
         "department": "Directing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/iJLRIBB2P3LXsPBvzdYhf06Lful.jpg",
         "creditId": "5dad4349ae366800149a3c9c"
+      },
+      {
+        "id": 1767300,
+        "name": "Zac Hug",
+        "job": "Writer",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/xIJU5Ndr4NkmH7Ra5MdqNoW1Hjo.jpg",
+        "creditId": "5dad4355b2681f001297e194"
       }
     ],
     "voteAverage": 6.8,
@@ -47104,8 +47109,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt10925460/",
       "tmdb": "https://www.themoviedb.org/movie/630921"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:38:10.210Z",
-    "tmdbFetchedAt": "2026-10-04T07:38:10.210Z",
+    "tmdbUpdatedAt": "2026-10-05T07:58:24.022Z",
+    "tmdbFetchedAt": "2026-10-05T07:58:24.022Z",
     "alternativeTitles": [
       {
         "title": "Le calendrier secret de Noël",
@@ -47341,8 +47346,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt10344956/",
       "tmdb": "https://www.themoviedb.org/movie/626315"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:38:11.786Z",
-    "tmdbFetchedAt": "2026-10-04T07:38:11.786Z",
+    "tmdbUpdatedAt": "2026-10-05T07:58:25.353Z",
+    "tmdbFetchedAt": "2026-10-05T07:58:25.353Z",
     "alternativeTitles": [
       {
         "title": "Un Noël romain",
@@ -47516,13 +47521,6 @@ export const MOVIES: Movie[] = [
         "creditId": "5d6e7b6d489d0000106771da"
       },
       {
-        "id": 2437477,
-        "name": "Tammy Klembith",
-        "job": "Writer",
-        "department": "Writing",
-        "creditId": "5dad325743501100194744ae"
-      },
-      {
         "id": 2437478,
         "name": "George Klembith",
         "job": "Writer",
@@ -47536,6 +47534,13 @@ export const MOVIES: Movie[] = [
         "department": "Writing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/5uAmw6fTni4V9UNiU5CdGqxkbbw.jpg",
         "creditId": "5dad326e435011001947450e"
+      },
+      {
+        "id": 2437477,
+        "name": "Tammy Klembith",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "5dad325743501100194744ae"
       }
     ],
     "voteAverage": 6.2,
@@ -47545,8 +47550,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt10768278/",
       "tmdb": "https://www.themoviedb.org/movie/627489"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:38:12.535Z",
-    "tmdbFetchedAt": "2026-10-04T07:38:12.535Z"
+    "tmdbUpdatedAt": "2026-10-05T07:58:25.930Z",
+    "tmdbFetchedAt": "2026-10-05T07:58:25.930Z"
   },
   {
     "id": "hallmark-2019-christmas-town",
@@ -47812,20 +47817,20 @@ export const MOVIES: Movie[] = [
         "creditId": "5d95ae9dea4263002a94957c"
       },
       {
-        "id": 941876,
-        "name": "Wesley Bishop",
-        "job": "Screenplay",
-        "department": "Writing",
-        "profileUrl": "https://image.tmdb.org/t/p/w500/baYNQRjICDkI2yhJNB8WYBtlG6H.jpg",
-        "creditId": "5d95aec429c626001c86bb21"
-      },
-      {
         "id": 184494,
         "name": "Donald Martin",
         "job": "Screenplay",
         "department": "Writing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/4n157vwUZWBETl5UG6GwOPfHO9h.jpg",
         "creditId": "5d95aecf35818f0174d68bb9"
+      },
+      {
+        "id": 941876,
+        "name": "Wesley Bishop",
+        "job": "Screenplay",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/baYNQRjICDkI2yhJNB8WYBtlG6H.jpg",
+        "creditId": "5d95aec429c626001c86bb21"
       }
     ],
     "voteAverage": 7.2,
@@ -47835,8 +47840,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt10344986/",
       "tmdb": "https://www.themoviedb.org/movie/626318"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:38:14.123Z",
-    "tmdbFetchedAt": "2026-10-04T07:38:14.123Z"
+    "tmdbUpdatedAt": "2026-10-05T07:58:27.172Z",
+    "tmdbFetchedAt": "2026-10-05T07:58:27.172Z"
   },
   {
     "id": "hallmark-2019-christmas-under-the-stars",
@@ -48047,8 +48052,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt10922658/",
       "tmdb": "https://www.themoviedb.org/movie/629985"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:38:15.722Z",
-    "tmdbFetchedAt": "2026-10-04T07:38:15.722Z"
+    "tmdbUpdatedAt": "2026-10-05T07:58:28.463Z",
+    "tmdbFetchedAt": "2026-10-05T07:58:28.463Z"
   },
   {
     "id": "hallmark-2019-christmas-wishes-mistletoe-kisses",
@@ -48257,8 +48262,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt10136898/",
       "tmdb": "https://www.themoviedb.org/movie/604553"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:38:18.143Z",
-    "tmdbFetchedAt": "2026-10-04T07:38:18.143Z",
+    "tmdbUpdatedAt": "2026-10-05T07:58:30.449Z",
+    "tmdbFetchedAt": "2026-10-05T07:58:30.449Z",
     "alternativeTitles": [
       {
         "title": "Christmas Wishes and Mistletoe Kisses",
@@ -48527,8 +48532,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt10768328/",
       "tmdb": "https://www.themoviedb.org/movie/630913"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:38:19.704Z",
-    "tmdbFetchedAt": "2026-10-04T07:38:19.704Z",
+    "tmdbUpdatedAt": "2026-10-05T07:58:31.709Z",
+    "tmdbFetchedAt": "2026-10-05T07:58:31.709Z",
     "alternativeTitles": [
       {
         "title": "Double Christmas",
@@ -48805,8 +48810,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt10768456/",
       "tmdb": "https://www.themoviedb.org/movie/630924"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:38:21.289Z",
-    "tmdbFetchedAt": "2026-10-04T07:38:21.289Z"
+    "tmdbUpdatedAt": "2026-10-05T07:58:32.930Z",
+    "tmdbFetchedAt": "2026-10-05T07:58:32.930Z"
   },
   {
     "id": "hallmark-2019-holiday-hearts",
@@ -48968,8 +48973,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt10925434/",
       "tmdb": "https://www.themoviedb.org/movie/638806"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:38:22.204Z",
-    "tmdbFetchedAt": "2026-10-04T07:38:22.204Z",
+    "tmdbUpdatedAt": "2026-10-05T07:58:34.132Z",
+    "tmdbFetchedAt": "2026-10-05T07:58:34.132Z",
     "alternativeTitles": [
       {
         "title": "The Christmas Wish",
@@ -49191,8 +49196,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt10952042/",
       "tmdb": "https://www.themoviedb.org/movie/630923"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:38:22.948Z",
-    "tmdbFetchedAt": "2026-10-04T07:38:22.948Z"
+    "tmdbUpdatedAt": "2026-10-05T07:58:34.781Z",
+    "tmdbFetchedAt": "2026-10-05T07:58:34.781Z"
   },
   {
     "id": "hallmark-2019-merry-bright",
@@ -49397,8 +49402,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt10345022/",
       "tmdb": "https://www.themoviedb.org/movie/626307"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:38:23.709Z",
-    "tmdbFetchedAt": "2026-10-04T07:38:23.709Z",
+    "tmdbUpdatedAt": "2026-10-05T07:58:35.960Z",
+    "tmdbFetchedAt": "2026-10-05T07:58:35.960Z",
     "alternativeTitles": [
       {
         "title": "Une romance de Noël en sucre d'orge",
@@ -49686,8 +49691,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt10553910/",
       "tmdb": "https://www.themoviedb.org/movie/626323"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:38:26.069Z",
-    "tmdbFetchedAt": "2026-10-04T07:38:26.069Z",
+    "tmdbUpdatedAt": "2026-10-05T07:58:38.240Z",
+    "tmdbFetchedAt": "2026-10-05T07:58:38.240Z",
     "alternativeTitles": [
       {
         "title": "Eine Weihnachtsliebe zum Festhalten",
@@ -49995,8 +50000,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt10667026/",
       "tmdb": "https://www.themoviedb.org/movie/628332"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:38:28.301Z",
-    "tmdbFetchedAt": "2026-10-04T07:38:28.301Z"
+    "tmdbUpdatedAt": "2026-10-05T07:58:38.880Z",
+    "tmdbFetchedAt": "2026-10-05T07:58:38.880Z"
   },
   {
     "id": "hallmark-2019-the-mistletoe-secret",
@@ -50191,8 +50196,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt10768348/",
       "tmdb": "https://www.themoviedb.org/movie/631420"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:38:30.778Z",
-    "tmdbFetchedAt": "2026-10-04T07:38:30.778Z"
+    "tmdbUpdatedAt": "2026-10-05T07:58:40.172Z",
+    "tmdbFetchedAt": "2026-10-05T07:58:40.172Z"
   },
   {
     "id": "hallmark-2019-write-before-christmas",
@@ -50541,6 +50546,13 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
+        "id": 106964,
+        "name": "Pat Williams",
+        "job": "Director",
+        "department": "Directing",
+        "creditId": "5d6484ebbcf8c9001575f57b"
+      },
+      {
         "id": 36129,
         "name": "Neal H. Dobrofsky",
         "job": "Writer",
@@ -50555,13 +50567,6 @@ export const MOVIES: Movie[] = [
         "department": "Writing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/qVecDr8L3iEefOXspuzNcBcPQtR.jpg",
         "creditId": "5d648511813cb60012f8e9f1"
-      },
-      {
-        "id": 106964,
-        "name": "Pat Williams",
-        "job": "Director",
-        "department": "Directing",
-        "creditId": "5d6484ebbcf8c9001575f57b"
       }
     ],
     "voteAverage": 6.9,
@@ -50571,8 +50576,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt10345008/",
       "tmdb": "https://www.themoviedb.org/movie/626319"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:38:32.514Z",
-    "tmdbFetchedAt": "2026-10-04T07:38:32.514Z",
+    "tmdbUpdatedAt": "2026-10-05T07:58:41.388Z",
+    "tmdbFetchedAt": "2026-10-05T07:58:41.388Z",
     "alternativeTitles": [
       {
         "title": "PS: Es weihnachtet sehr",
@@ -50774,12 +50779,11 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
-        "id": 97864,
-        "name": "Richard Gabai",
-        "job": "Director",
-        "department": "Directing",
-        "profileUrl": "https://image.tmdb.org/t/p/w500/1FppmSr9gfvgN8adpGYfoFRke7P.jpg",
-        "creditId": "5be120e69251414de9003cb9"
+        "id": 1133777,
+        "name": "Gregg Rossen",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "5be1210ac3a36809fb004774"
       },
       {
         "id": 928670,
@@ -50790,18 +50794,19 @@ export const MOVIES: Movie[] = [
         "creditId": "5be120f30e0a263d81004175"
       },
       {
+        "id": 97864,
+        "name": "Richard Gabai",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/1FppmSr9gfvgN8adpGYfoFRke7P.jpg",
+        "creditId": "5be120e69251414de9003cb9"
+      },
+      {
         "id": 1133778,
         "name": "Brian Sawyer",
         "job": "Writer",
         "department": "Writing",
         "creditId": "5be120fe0e0a263d730042dc"
-      },
-      {
-        "id": 1133777,
-        "name": "Gregg Rossen",
-        "job": "Writer",
-        "department": "Writing",
-        "creditId": "5be1210ac3a36809fb004774"
       }
     ],
     "voteAverage": 5.1,
@@ -50811,8 +50816,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt9028866/",
       "tmdb": "https://www.themoviedb.org/movie/550033"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:38:33.232Z",
-    "tmdbFetchedAt": "2026-10-04T07:38:33.232Z"
+    "tmdbUpdatedAt": "2026-10-05T07:58:43.213Z",
+    "tmdbFetchedAt": "2026-10-05T07:58:43.213Z"
   },
   {
     "id": "hallmark-2018-a-godwink-christmas",
@@ -51039,8 +51044,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt8974850/",
       "tmdb": "https://www.themoviedb.org/movie/549313"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:38:35.045Z",
-    "tmdbFetchedAt": "2026-10-04T07:38:35.045Z",
+    "tmdbUpdatedAt": "2026-10-05T07:58:45.006Z",
+    "tmdbFetchedAt": "2026-10-05T07:58:45.006Z",
     "alternativeTitles": [
       {
         "title": "Бог подмигнул в Рождество",
@@ -51247,11 +51252,12 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
-        "id": 1564951,
-        "name": "Sandra Berg",
-        "job": "Writer",
-        "department": "Writing",
-        "creditId": "5bde4e74c3a3682b3201d10e"
+        "id": 209819,
+        "name": "Pat Kiely",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/2kAUcHI2WZqHUQ7Jqf6FtBTY4tK.jpg",
+        "creditId": "5bde4e5f92514137d8018f48"
       },
       {
         "id": 1564950,
@@ -51261,12 +51267,11 @@ export const MOVIES: Movie[] = [
         "creditId": "5bde4e6bc3a3682b2f01b09b"
       },
       {
-        "id": 209819,
-        "name": "Pat Kiely",
-        "job": "Director",
-        "department": "Directing",
-        "profileUrl": "https://image.tmdb.org/t/p/w500/2kAUcHI2WZqHUQ7Jqf6FtBTY4tK.jpg",
-        "creditId": "5bde4e5f92514137d8018f48"
+        "id": 1564951,
+        "name": "Sandra Berg",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "5bde4e74c3a3682b3201d10e"
       }
     ],
     "voteAverage": 5,
@@ -51276,8 +51281,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt9033636/",
       "tmdb": "https://www.themoviedb.org/movie/550028"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:38:36.912Z",
-    "tmdbFetchedAt": "2026-10-04T07:38:36.912Z",
+    "tmdbUpdatedAt": "2026-10-05T07:58:46.474Z",
+    "tmdbFetchedAt": "2026-10-05T07:58:46.474Z",
     "alternativeTitles": [
       {
         "title": "Juleudstillingen",
@@ -51572,8 +51577,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt9028890/",
       "tmdb": "https://www.themoviedb.org/movie/550036"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:38:38.543Z",
-    "tmdbFetchedAt": "2026-10-04T07:38:38.543Z",
+    "tmdbUpdatedAt": "2026-10-05T07:58:47.382Z",
+    "tmdbFetchedAt": "2026-10-05T07:58:47.382Z",
     "alternativeTitles": [
       {
         "title": "Focus on Love",
@@ -51808,8 +51813,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt8634202/",
       "tmdb": "https://www.themoviedb.org/movie/535809"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:38:40.181Z",
-    "tmdbFetchedAt": "2026-10-04T07:38:40.181Z",
+    "tmdbUpdatedAt": "2026-10-05T07:58:47.981Z",
+    "tmdbFetchedAt": "2026-10-05T07:58:47.981Z",
     "alternativeTitles": [
       {
         "title": "Jul i skobutikken",
@@ -51984,14 +51989,6 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
-        "id": 119520,
-        "name": "Eric Close",
-        "job": "Director",
-        "department": "Directing",
-        "profileUrl": "https://image.tmdb.org/t/p/w500/njJYXuTlmCgI3VVHBFqkqrhiey3.jpg",
-        "creditId": "5ba2eb2a9251415237005524"
-      },
-      {
         "id": 1133777,
         "name": "Gregg Rossen",
         "job": "Writer",
@@ -52004,6 +52001,14 @@ export const MOVIES: Movie[] = [
         "job": "Writer",
         "department": "Writing",
         "creditId": "5ba2eb4c0e0a265e46005aa5"
+      },
+      {
+        "id": 119520,
+        "name": "Eric Close",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/njJYXuTlmCgI3VVHBFqkqrhiey3.jpg",
+        "creditId": "5ba2eb2a9251415237005524"
       }
     ],
     "voteAverage": 5.8,
@@ -52013,8 +52018,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt8694374/",
       "tmdb": "https://www.themoviedb.org/movie/535808"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:38:40.880Z",
-    "tmdbFetchedAt": "2026-10-04T07:38:40.880Z",
+    "tmdbUpdatedAt": "2026-10-05T07:58:49.203Z",
+    "tmdbFetchedAt": "2026-10-05T07:58:49.203Z",
     "alternativeTitles": [
       {
         "title": "Uma Canção Para o Natal",
@@ -52287,11 +52292,12 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
-        "id": 1431599,
-        "name": "Sue Tenney",
-        "job": "Writer",
-        "department": "Writing",
-        "creditId": "5be4b0260e0a2614ba03548b"
+        "id": 1420298,
+        "name": "Don McCutcheon",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/pNxffDtQg8CxQvuF0RW1yHRqMrP.jpg",
+        "creditId": "5be4afe10e0a2614ba035413"
       },
       {
         "id": 1512117,
@@ -52301,12 +52307,11 @@ export const MOVIES: Movie[] = [
         "creditId": "5be4afed0e0a2614ae037037"
       },
       {
-        "id": 1420298,
-        "name": "Don McCutcheon",
-        "job": "Director",
-        "department": "Directing",
-        "profileUrl": "https://image.tmdb.org/t/p/w500/pNxffDtQg8CxQvuF0RW1yHRqMrP.jpg",
-        "creditId": "5be4afe10e0a2614ba035413"
+        "id": 1431599,
+        "name": "Sue Tenney",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "5be4b0260e0a2614ba03548b"
       },
       {
         "id": 1435021,
@@ -52323,8 +52328,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt9028784/",
       "tmdb": "https://www.themoviedb.org/movie/550024"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:38:42.503Z",
-    "tmdbFetchedAt": "2026-10-04T07:38:42.503Z"
+    "tmdbUpdatedAt": "2026-10-05T07:58:49.845Z",
+    "tmdbFetchedAt": "2026-10-05T07:58:49.845Z"
   },
   {
     "id": "hallmark-2018-christmas-at-pemberley-manor",
@@ -52507,8 +52512,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt8498184/",
       "tmdb": "https://www.themoviedb.org/movie/549301"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:38:43.226Z",
-    "tmdbFetchedAt": "2026-10-04T07:38:43.226Z",
+    "tmdbUpdatedAt": "2026-10-05T07:58:51.123Z",
+    "tmdbFetchedAt": "2026-10-05T07:58:51.123Z",
     "alternativeTitles": [
       {
         "title": "Byens julefejring",
@@ -52696,19 +52701,19 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
+        "id": 1465902,
+        "name": "Matthew Coppola",
+        "job": "Story",
+        "department": "Writing",
+        "creditId": "5bf9d9b192514104d201bc9b"
+      },
+      {
         "id": 18357,
         "name": "Peter Hewitt",
         "job": "Director",
         "department": "Directing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/b4KMprf8VqbAToPrEkH69mqCvtn.jpg",
         "creditId": "5bf9d9cd0e0a263ab801e4b0"
-      },
-      {
-        "id": 1465902,
-        "name": "Matthew Coppola",
-        "job": "Story",
-        "department": "Writing",
-        "creditId": "5bf9d9b192514104d201bc9b"
       },
       {
         "id": 1915975,
@@ -52734,8 +52739,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt9033632/",
       "tmdb": "https://www.themoviedb.org/movie/550023"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:38:43.976Z",
-    "tmdbFetchedAt": "2026-10-04T07:38:43.976Z",
+    "tmdbUpdatedAt": "2026-10-05T07:58:51.706Z",
+    "tmdbFetchedAt": "2026-10-05T07:58:51.706Z",
     "alternativeTitles": [
       {
         "title": "Der König und die Eisprinzessin",
@@ -53108,8 +53113,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt9028802/",
       "tmdb": "https://www.themoviedb.org/movie/549319"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:38:44.705Z",
-    "tmdbFetchedAt": "2026-10-04T07:38:44.705Z"
+    "tmdbUpdatedAt": "2026-10-05T07:58:53.567Z",
+    "tmdbFetchedAt": "2026-10-05T07:58:53.567Z"
   },
   {
     "id": "hallmark-2018-christmas-in-evergreen-letters-to-santa",
@@ -53441,8 +53446,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt9033634/",
       "tmdb": "https://www.themoviedb.org/movie/550025"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:38:45.418Z",
-    "tmdbFetchedAt": "2026-10-04T07:38:45.418Z"
+    "tmdbUpdatedAt": "2026-10-05T07:58:54.395Z",
+    "tmdbFetchedAt": "2026-10-05T07:58:54.395Z"
   },
   {
     "id": "hallmark-2018-christmas-in-love",
@@ -53450,7 +53455,7 @@ export const MOVIES: Movie[] = [
     "title": "Christmas in Love",
     "year": 2018,
     "brandId": "hallmark",
-    "releaseDate": "2018-12-23",
+    "releaseDate": "2018-11-11",
     "runtimeMinutes": 90,
     "synopsis": "Ellie Hartman is an aspiring crafter working in her small town’s bakery making famous Christmas Kringles. When the new, big-city CEO Nick Carlingson visits the bakery, he arrives filled with modernization ideas destined to lay off many employees.",
     "posterUrl": "/images/posters/550020.jpg",
@@ -53561,7 +53566,7 @@ export const MOVIES: Movie[] = [
     ],
     "trailerYoutubeKey": "7mfuQl0Ov3o",
     "originalTitle": "Christmas in Love",
-    "premiereDate": "2018-12-23",
+    "premiereDate": "2018-11-11",
     "genres": [
       {
         "id": 10770,
@@ -53619,19 +53624,19 @@ export const MOVIES: Movie[] = [
         "creditId": "5ba7cf43c3a3680e5502efd0"
       },
       {
+        "id": 2172473,
+        "name": "Stephen A. Stewart",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "5be66ce892514143e6009246"
+      },
+      {
         "id": 1358511,
         "name": "Bob Sáenz",
         "job": "Writer",
         "department": "Writing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/eu7ehX1XXTXbz0XQ7Sdz46joUcC.jpg",
         "creditId": "5be66cfc0e0a263bf30090c4"
-      },
-      {
-        "id": 2172473,
-        "name": "Stephen A. Stewart",
-        "job": "Writer",
-        "department": "Writing",
-        "creditId": "5be66ce892514143e6009246"
       }
     ],
     "voteAverage": 6,
@@ -53641,8 +53646,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt9033712/",
       "tmdb": "https://www.themoviedb.org/movie/550020"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:38:46.161Z",
-    "tmdbFetchedAt": "2026-10-04T07:38:46.161Z"
+    "tmdbUpdatedAt": "2026-10-05T07:58:55.617Z",
+    "tmdbFetchedAt": "2026-10-05T07:58:55.617Z"
   },
   {
     "id": "hallmark-2018-christmas-joy",
@@ -53895,8 +53900,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt8587650/",
       "tmdb": "https://www.themoviedb.org/movie/535812"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:38:47.764Z",
-    "tmdbFetchedAt": "2026-10-04T07:38:47.764Z"
+    "tmdbUpdatedAt": "2026-10-05T07:58:56.864Z",
+    "tmdbFetchedAt": "2026-10-05T07:58:56.864Z"
   },
   {
     "id": "hallmark-2018-christmas-made-to-order",
@@ -54169,18 +54174,18 @@ export const MOVIES: Movie[] = [
         "creditId": "5be67241c3a368173a00a0c1"
       },
       {
-        "id": 1658432,
-        "name": "Matt Marx",
-        "job": "Writer",
-        "department": "Writing",
-        "creditId": "5c00ae9a92514169ad0684d0"
-      },
-      {
         "id": 2172465,
         "name": "Anna White",
         "job": "Writer",
         "department": "Writing",
         "creditId": "5c00aea49251410b92069b6d"
+      },
+      {
+        "id": 1658432,
+        "name": "Matt Marx",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "5c00ae9a92514169ad0684d0"
       }
     ],
     "voteAverage": 6.1,
@@ -54190,8 +54195,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt9028880/",
       "tmdb": "https://www.themoviedb.org/movie/550035"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:38:49.307Z",
-    "tmdbFetchedAt": "2026-10-04T07:38:49.307Z"
+    "tmdbUpdatedAt": "2026-10-05T07:58:57.478Z",
+    "tmdbFetchedAt": "2026-10-05T07:58:57.478Z"
   },
   {
     "id": "hallmark-2018-entertaining-christmas",
@@ -54420,8 +54425,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt9028872/",
       "tmdb": "https://www.themoviedb.org/movie/550034"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:38:50.215Z",
-    "tmdbFetchedAt": "2026-10-04T07:38:50.215Z"
+    "tmdbUpdatedAt": "2026-10-05T07:58:58.838Z",
+    "tmdbFetchedAt": "2026-10-05T07:58:58.838Z"
   },
   {
     "id": "hallmark-2018-homegrown-christmas",
@@ -54675,19 +54680,19 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
-        "id": 70008,
-        "name": "Mel Damski",
-        "job": "Director",
-        "department": "Directing",
-        "creditId": "5ba7d469c3a3680e6502dfd9"
-      },
-      {
         "id": 969712,
         "name": "Nina Weinman",
         "job": "Writer",
         "department": "Writing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/5AHjAnJoesZ0Xpxpx1RW8O6uYYA.jpg",
         "creditId": "5ba7d4749251412ef402be55"
+      },
+      {
+        "id": 70008,
+        "name": "Mel Damski",
+        "job": "Director",
+        "department": "Directing",
+        "creditId": "5ba7d469c3a3680e6502dfd9"
       }
     ],
     "voteAverage": 4.8,
@@ -54697,8 +54702,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt9032562/",
       "tmdb": "https://www.themoviedb.org/movie/550030"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:38:51.887Z",
-    "tmdbFetchedAt": "2026-10-04T07:38:51.887Z",
+    "tmdbUpdatedAt": "2026-10-05T07:59:00.119Z",
+    "tmdbFetchedAt": "2026-10-05T07:59:00.119Z",
     "alternativeTitles": [
       {
         "title": "Au Cœur de Noël",
@@ -54904,8 +54909,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt9033640/",
       "tmdb": "https://www.themoviedb.org/movie/550073"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:38:52.655Z",
-    "tmdbFetchedAt": "2026-10-04T07:38:52.655Z"
+    "tmdbUpdatedAt": "2026-10-05T07:59:01.362Z",
+    "tmdbFetchedAt": "2026-10-05T07:59:01.362Z"
   },
   {
     "id": "hallmark-2018-it-s-christmas-eve",
@@ -55104,8 +55109,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt8300786/",
       "tmdb": "https://www.themoviedb.org/movie/535807"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:38:53.365Z",
-    "tmdbFetchedAt": "2026-10-04T07:38:53.365Z",
+    "tmdbUpdatedAt": "2026-10-05T07:59:03.307Z",
+    "tmdbFetchedAt": "2026-10-05T07:59:03.307Z",
     "alternativeTitles": [
       {
         "title": "its Christmas Eve",
@@ -55358,14 +55363,6 @@ export const MOVIES: Movie[] = [
         "creditId": "60914c4454508d002aeafc3a"
       },
       {
-        "id": 1767300,
-        "name": "Zac Hug",
-        "job": "Writer",
-        "department": "Writing",
-        "profileUrl": "https://image.tmdb.org/t/p/w500/xIJU5Ndr4NkmH7Ra5MdqNoW1Hjo.jpg",
-        "creditId": "5be672e092514143e2009d25"
-      },
-      {
         "id": 82518,
         "name": "Paul Ziller",
         "job": "Director",
@@ -55380,6 +55377,14 @@ export const MOVIES: Movie[] = [
         "department": "Writing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/3nUevVZHv89E8uyjLYhI36pmftD.jpg",
         "creditId": "5be672cf0e0a263c0a00a2e8"
+      },
+      {
+        "id": 1767300,
+        "name": "Zac Hug",
+        "job": "Writer",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/xIJU5Ndr4NkmH7Ra5MdqNoW1Hjo.jpg",
+        "creditId": "5be672e092514143e2009d25"
       }
     ],
     "voteAverage": 6.8,
@@ -55389,8 +55394,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt9168384/",
       "tmdb": "https://www.themoviedb.org/movie/551701"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:38:56.544Z",
-    "tmdbFetchedAt": "2026-10-04T07:38:56.544Z"
+    "tmdbUpdatedAt": "2026-10-05T07:59:05.193Z",
+    "tmdbFetchedAt": "2026-10-05T07:59:05.193Z"
   },
   {
     "id": "hallmark-2018-mingle-all-the-way",
@@ -55667,8 +55672,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt9033628/",
       "tmdb": "https://www.themoviedb.org/movie/550022"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:38:57.248Z",
-    "tmdbFetchedAt": "2026-10-04T07:38:57.248Z",
+    "tmdbUpdatedAt": "2026-10-05T07:59:06.450Z",
+    "tmdbFetchedAt": "2026-10-05T07:59:06.450Z",
     "alternativeTitles": [
       {
         "title": "Appuntamento per Natale",
@@ -55682,7 +55687,7 @@ export const MOVIES: Movie[] = [
     "title": "Pride, Prejudice and Mistletoe",
     "year": 2018,
     "brandId": "hallmark",
-    "releaseDate": "2018-12-23",
+    "releaseDate": "2018-11-23",
     "runtimeMinutes": 83,
     "synopsis": "Darcy has always worked hard to prove herself and be successful on her own terms, even choosing to start her own company, rather than work with her father. Returning to her hometown for Christmas, Darcy reconnects with an old rival, restaurant owner Luke, and they are forced to plan a charity event together. As Darcy spends time with her family and Luke, she starts to realize what matters most in life and sets out to mend her relationship with her father, and possibly fall in love.",
     "posterUrl": "/images/posters/535810.jpg",
@@ -55855,7 +55860,7 @@ export const MOVIES: Movie[] = [
     ],
     "trailerYoutubeKey": "_DOGwVI8PkI",
     "originalTitle": "Pride, Prejudice and Mistletoe",
-    "premiereDate": "2018-12-23",
+    "premiereDate": "2018-11-23",
     "genres": [
       {
         "id": 10749,
@@ -55912,8 +55917,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt8634192/",
       "tmdb": "https://www.themoviedb.org/movie/535810"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:38:58.914Z",
-    "tmdbFetchedAt": "2026-10-04T07:38:58.914Z",
+    "tmdbUpdatedAt": "2026-10-05T07:59:07.652Z",
+    "tmdbFetchedAt": "2026-10-05T07:59:07.652Z",
     "alternativeTitles": [
       {
         "title": "Pride, Prejudice & Mistletoe",
@@ -56174,8 +56179,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt9033646/",
       "tmdb": "https://www.themoviedb.org/movie/550084"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:38:59.641Z",
-    "tmdbFetchedAt": "2026-10-04T07:38:59.641Z"
+    "tmdbUpdatedAt": "2026-10-05T07:59:08.845Z",
+    "tmdbFetchedAt": "2026-10-05T07:59:08.845Z"
   },
   {
     "id": "hallmark-2018-road-to-christmas",
@@ -56453,8 +56458,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt8732914/",
       "tmdb": "https://www.themoviedb.org/movie/550017"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:39:00.388Z",
-    "tmdbFetchedAt": "2026-10-04T07:39:00.388Z",
+    "tmdbUpdatedAt": "2026-10-05T07:59:09.461Z",
+    "tmdbFetchedAt": "2026-10-05T07:59:09.461Z",
     "alternativeTitles": [
       {
         "title": "My Three Wise Men",
@@ -56686,8 +56691,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt9033308/",
       "tmdb": "https://www.themoviedb.org/movie/550075"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:39:01.985Z",
-    "tmdbFetchedAt": "2026-10-04T07:39:01.985Z",
+    "tmdbUpdatedAt": "2026-10-05T07:59:11.298Z",
+    "tmdbFetchedAt": "2026-10-05T07:59:11.298Z",
     "alternativeTitles": [
       {
         "title": "Hallmark: Welcome to Christmas",
@@ -56974,8 +56979,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt7006938/",
       "tmdb": "https://www.themoviedb.org/movie/480614"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:39:03.773Z",
-    "tmdbFetchedAt": "2026-10-04T07:39:03.773Z",
+    "tmdbUpdatedAt": "2026-10-05T07:59:11.920Z",
+    "tmdbFetchedAt": "2026-10-05T07:59:11.920Z",
     "alternativeTitles": [
       {
         "title": "A Gift for Christmas",
@@ -57281,8 +57286,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt7557728/",
       "tmdb": "https://www.themoviedb.org/movie/480622"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:39:06.875Z",
-    "tmdbFetchedAt": "2026-10-04T07:39:06.875Z"
+    "tmdbUpdatedAt": "2026-10-05T07:59:13.142Z",
+    "tmdbFetchedAt": "2026-10-05T07:59:13.142Z"
   },
   {
     "id": "hallmark-2017-christmas-connection",
@@ -57580,8 +57585,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt7630836/",
       "tmdb": "https://www.themoviedb.org/movie/474994"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:39:08.559Z",
-    "tmdbFetchedAt": "2026-10-04T07:39:08.559Z",
+    "tmdbUpdatedAt": "2026-10-05T07:59:14.423Z",
+    "tmdbFetchedAt": "2026-10-05T07:59:14.423Z",
     "alternativeTitles": [
       {
         "title": "Christmas Shuttle",
@@ -57793,18 +57798,18 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
-        "id": 239783,
-        "name": "David Golden",
-        "job": "Writer",
-        "department": "Writing",
-        "creditId": "59fa680b92514113bf002c1d"
-      },
-      {
         "id": 221723,
         "name": "Bradley Walsh",
         "job": "Director",
         "department": "Directing",
         "creditId": "59fa67f89251411383002df2"
+      },
+      {
+        "id": 239783,
+        "name": "David Golden",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "59fa680b92514113bf002c1d"
       }
     ],
     "voteAverage": 5.4,
@@ -57814,8 +57819,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt7038632/",
       "tmdb": "https://www.themoviedb.org/movie/474990"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:39:09.282Z",
-    "tmdbFetchedAt": "2026-10-04T07:39:09.282Z"
+    "tmdbUpdatedAt": "2026-10-05T07:59:15.699Z",
+    "tmdbFetchedAt": "2026-10-05T07:59:15.699Z"
   },
   {
     "id": "hallmark-2017-christmas-getaway",
@@ -57999,18 +58004,18 @@ export const MOVIES: Movie[] = [
         "creditId": "5a20ae2d0e0a264cbc09dc98"
       },
       {
-        "id": 1213934,
-        "name": "Elizabeth Snyder",
-        "job": "Story",
-        "department": "Writing",
-        "creditId": "5a20ae5dc3a3680b9d093165"
-      },
-      {
         "id": 1932693,
         "name": "Marlene McPherson",
         "job": "Story",
         "department": "Writing",
         "creditId": "5a20ae450e0a264cc1097dac"
+      },
+      {
+        "id": 1213934,
+        "name": "Elizabeth Snyder",
+        "job": "Story",
+        "department": "Writing",
+        "creditId": "5a20ae5dc3a3680b9d093165"
       }
     ],
     "voteAverage": 7,
@@ -58020,8 +58025,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt7688990/",
       "tmdb": "https://www.themoviedb.org/movie/480623"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:39:10.007Z",
-    "tmdbFetchedAt": "2026-10-04T07:39:10.007Z"
+    "tmdbUpdatedAt": "2026-10-05T07:59:16.985Z",
+    "tmdbFetchedAt": "2026-10-05T07:59:16.985Z"
   },
   {
     "id": "hallmark-2017-christmas-in-evergreen",
@@ -58220,20 +58225,20 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
-        "id": 88077,
-        "name": "Alex Zamm",
-        "job": "Director",
-        "department": "Directing",
-        "profileUrl": "https://image.tmdb.org/t/p/w500/2Rtymz6bQ23cEbnL2dLpjM0ZCAP.jpg",
-        "creditId": "5a08f676c3a368676100b313"
-      },
-      {
         "id": 1705232,
         "name": "Rick Garman",
         "job": "Writer",
         "department": "Writing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/4yRfI8zUVG07z0JayyQ32stzDX1.jpg",
         "creditId": "5a08f688c3a368674f00adf1"
+      },
+      {
+        "id": 88077,
+        "name": "Alex Zamm",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/2Rtymz6bQ23cEbnL2dLpjM0ZCAP.jpg",
+        "creditId": "5a08f676c3a368676100b313"
       }
     ],
     "voteAverage": 6.4,
@@ -58243,8 +58248,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt7440948/",
       "tmdb": "https://www.themoviedb.org/movie/474977"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:39:12.091Z",
-    "tmdbFetchedAt": "2026-10-04T07:39:12.091Z",
+    "tmdbUpdatedAt": "2026-10-05T07:59:17.610Z",
+    "tmdbFetchedAt": "2026-10-05T07:59:17.610Z",
     "alternativeTitles": [
       {
         "title": "Snow Globe Wishes",
@@ -58444,12 +58449,11 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
-        "id": 207180,
-        "name": "Jonathan Wright",
-        "job": "Director",
-        "department": "Directing",
-        "profileUrl": "https://image.tmdb.org/t/p/w500/zi1roGouFMONsRKEUJwLXlCW1OX.jpg",
-        "creditId": "5a20afefc3a3680b8d099fc7"
+        "id": 1564950,
+        "name": "Judith Berg",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "5a20b018925141032909cebe"
       },
       {
         "id": 1564951,
@@ -58459,18 +58463,19 @@ export const MOVIES: Movie[] = [
         "creditId": "5a20b004c3a3680b8f099fc7"
       },
       {
-        "id": 1564950,
-        "name": "Judith Berg",
-        "job": "Writer",
-        "department": "Writing",
-        "creditId": "5a20b018925141032909cebe"
-      },
-      {
         "id": 1900217,
         "name": "Janna King",
         "job": "Story",
         "department": "Writing",
         "creditId": "5a20b029925141033609b51f"
+      },
+      {
+        "id": 207180,
+        "name": "Jonathan Wright",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/zi1roGouFMONsRKEUJwLXlCW1OX.jpg",
+        "creditId": "5a20afefc3a3680b8d099fc7"
       }
     ],
     "voteAverage": 6.1,
@@ -58480,8 +58485,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt7616668/",
       "tmdb": "https://www.themoviedb.org/movie/490146"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:39:13.803Z",
-    "tmdbFetchedAt": "2026-10-04T07:39:13.803Z",
+    "tmdbUpdatedAt": "2026-10-05T07:59:19.464Z",
+    "tmdbFetchedAt": "2026-10-05T07:59:19.464Z",
     "alternativeTitles": [
       {
         "title": "Father Christmas",
@@ -58701,8 +58706,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt7038614/",
       "tmdb": "https://www.themoviedb.org/movie/474983"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:39:15.372Z",
-    "tmdbFetchedAt": "2026-10-04T07:39:15.372Z"
+    "tmdbUpdatedAt": "2026-10-05T07:59:20.756Z",
+    "tmdbFetchedAt": "2026-10-05T07:59:20.756Z"
   },
   {
     "id": "hallmark-2017-enchanted-christmas",
@@ -58929,8 +58934,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/474978"
     },
     "trailerYoutubeKey": "eliO_3UEYhI",
-    "tmdbUpdatedAt": "2026-10-04T07:39:16.148Z",
-    "tmdbFetchedAt": "2026-10-04T07:39:16.148Z"
+    "tmdbUpdatedAt": "2026-10-05T07:59:21.355Z",
+    "tmdbFetchedAt": "2026-10-05T07:59:21.355Z"
   },
   {
     "id": "hallmark-2017-finding-santa",
@@ -59178,8 +59183,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt7385392/",
       "tmdb": "https://www.themoviedb.org/movie/474985"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:39:16.897Z",
-    "tmdbFetchedAt": "2026-10-04T07:39:16.897Z",
+    "tmdbUpdatedAt": "2026-10-05T07:59:21.951Z",
+    "tmdbFetchedAt": "2026-10-05T07:59:21.951Z",
     "alternativeTitles": [
       {
         "title": "Buscando a Santa",
@@ -59476,8 +59481,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt6791000/",
       "tmdb": "https://www.themoviedb.org/movie/474987"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:39:17.678Z",
-    "tmdbFetchedAt": "2026-10-04T07:39:17.678Z",
+    "tmdbUpdatedAt": "2026-10-05T07:59:22.555Z",
+    "tmdbFetchedAt": "2026-10-05T07:59:22.555Z",
     "alternativeTitles": [
       {
         "title": "Marry Me at Christmas - Ein Fest zum Verlieben",
@@ -59677,8 +59682,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt7588798/",
       "tmdb": "https://www.themoviedb.org/movie/474974"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:39:18.421Z",
-    "tmdbFetchedAt": "2026-10-04T07:39:18.421Z",
+    "tmdbUpdatedAt": "2026-10-05T07:59:23.194Z",
+    "tmdbFetchedAt": "2026-10-05T07:59:23.194Z",
     "alternativeTitles": [
       {
         "title": "Мис Коледа",
@@ -59874,8 +59879,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt7654082/",
       "tmdb": "https://www.themoviedb.org/movie/474979"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:39:20.057Z",
-    "tmdbFetchedAt": "2026-10-04T07:39:20.057Z",
+    "tmdbUpdatedAt": "2026-10-05T07:59:24.559Z",
+    "tmdbFetchedAt": "2026-10-05T07:59:24.559Z",
     "alternativeTitles": [
       {
         "title": "Kiss for the New Year",
@@ -60056,13 +60061,6 @@ export const MOVIES: Movie[] = [
         "creditId": "5a2dcc9f0e0a264cc414ec9b"
       },
       {
-        "id": 144757,
-        "name": "Jay Cipriani",
-        "job": "Writer",
-        "department": "Writing",
-        "creditId": "5e0ec18a58361b0015beb302"
-      },
-      {
         "id": 92591,
         "name": "Peter Sullivan",
         "job": "Writer",
@@ -60076,6 +60074,13 @@ export const MOVIES: Movie[] = [
         "job": "Story",
         "department": "Writing",
         "creditId": "5e0ec1c19f37b0001155f319"
+      },
+      {
+        "id": 144757,
+        "name": "Jay Cipriani",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "5e0ec18a58361b0015beb302"
       }
     ],
     "voteAverage": 6.2,
@@ -60085,8 +60090,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt7697712/",
       "tmdb": "https://www.themoviedb.org/movie/483558"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:39:22.986Z",
-    "tmdbFetchedAt": "2026-10-04T07:39:22.986Z",
+    "tmdbUpdatedAt": "2026-10-05T07:59:26.453Z",
+    "tmdbFetchedAt": "2026-10-05T07:59:26.453Z",
     "alternativeTitles": [
       {
         "title": "The Christmas Shop",
@@ -60345,11 +60350,11 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
-        "id": 1512119,
-        "name": "Tracy Andreen",
-        "job": "Writer",
-        "department": "Writing",
-        "creditId": "59fa68c092514113dd002d8d"
+        "id": 994163,
+        "name": "Lee Friedlander",
+        "job": "Director",
+        "department": "Directing",
+        "creditId": "59fa688392514113dd002d2f"
       },
       {
         "id": 994163,
@@ -60359,11 +60364,11 @@ export const MOVIES: Movie[] = [
         "creditId": "59fa6889c3a3681a3f002a21"
       },
       {
-        "id": 994163,
-        "name": "Lee Friedlander",
-        "job": "Director",
-        "department": "Directing",
-        "creditId": "59fa688392514113dd002d2f"
+        "id": 1512119,
+        "name": "Tracy Andreen",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "59fa68c092514113dd002d8d"
       }
     ],
     "voteAverage": 6.5,
@@ -60373,8 +60378,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt7038606/",
       "tmdb": "https://www.themoviedb.org/movie/475830"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:39:23.737Z",
-    "tmdbFetchedAt": "2026-10-04T07:39:23.737Z",
+    "tmdbUpdatedAt": "2026-10-05T07:59:28.382Z",
+    "tmdbFetchedAt": "2026-10-05T07:59:28.382Z",
     "alternativeTitles": [
       {
         "title": "Christmas Sister Swap",
@@ -60571,8 +60576,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt5997848/",
       "tmdb": "https://www.themoviedb.org/movie/480626"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:39:25.365Z",
-    "tmdbFetchedAt": "2026-10-04T07:39:25.365Z"
+    "tmdbUpdatedAt": "2026-10-05T07:59:29.095Z",
+    "tmdbFetchedAt": "2026-10-05T07:59:29.095Z"
   },
   {
     "id": "hallmark-2017-the-christmas-train",
@@ -60969,8 +60974,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt7370936/",
       "tmdb": "https://www.themoviedb.org/movie/474982"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:39:26.098Z",
-    "tmdbFetchedAt": "2026-10-04T07:39:26.098Z"
+    "tmdbUpdatedAt": "2026-10-05T07:59:30.266Z",
+    "tmdbFetchedAt": "2026-10-05T07:59:30.266Z"
   },
   {
     "id": "hallmark-2017-the-mistletoe-inn",
@@ -61185,8 +61190,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt7647010/",
       "tmdb": "https://www.themoviedb.org/movie/475829"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:39:26.810Z",
-    "tmdbFetchedAt": "2026-10-04T07:39:26.810Z",
+    "tmdbUpdatedAt": "2026-10-05T07:59:31.604Z",
+    "tmdbFetchedAt": "2026-10-05T07:59:31.604Z",
     "alternativeTitles": [
       {
         "title": "The Mistletoe Inn - Die Zeichen der Liebe",
@@ -61450,8 +61455,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt7030432/",
       "tmdb": "https://www.themoviedb.org/movie/474972"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:39:27.526Z",
-    "tmdbFetchedAt": "2026-10-04T07:39:27.526Z",
+    "tmdbUpdatedAt": "2026-10-05T07:59:33.487Z",
+    "tmdbFetchedAt": "2026-10-05T07:59:33.487Z",
     "alternativeTitles": [
       {
         "title": "Em Casa para o Natal",
@@ -61697,8 +61702,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt7647000/",
       "tmdb": "https://www.themoviedb.org/movie/474976"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:39:29.154Z",
-    "tmdbFetchedAt": "2026-10-04T07:39:29.154Z",
+    "tmdbUpdatedAt": "2026-10-05T07:59:34.694Z",
+    "tmdbFetchedAt": "2026-10-05T07:59:34.694Z",
     "alternativeTitles": [
       {
         "title": "Secretly Santa",
@@ -61945,15 +61950,15 @@ export const MOVIES: Movie[] = [
         "creditId": "583313ca925141034c000267"
       }
     ],
-    "voteAverage": 7.1,
-    "voteCount": 163,
+    "voteAverage": 7.116,
+    "voteCount": 164,
     "status": "collection",
     "links": {
       "imdb": "https://www.imdb.com/title/tt5739680/",
       "tmdb": "https://www.themoviedb.org/movie/427045"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:39:29.853Z",
-    "tmdbFetchedAt": "2026-10-04T07:39:29.853Z"
+    "tmdbUpdatedAt": "2026-10-05T07:59:35.298Z",
+    "tmdbFetchedAt": "2026-10-05T07:59:35.298Z"
   },
   {
     "id": "hallmark-2016-a-dream-of-christmas",
@@ -62089,8 +62094,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt6279602/",
       "tmdb": "https://www.themoviedb.org/movie/421761"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:39:31.524Z",
-    "tmdbFetchedAt": "2026-10-04T07:39:31.524Z",
+    "tmdbUpdatedAt": "2026-10-05T07:59:35.978Z",
+    "tmdbFetchedAt": "2026-10-05T07:59:35.978Z",
     "alternativeTitles": [
       {
         "title": "Un desiderio per Natale - A dream of Christmas",
@@ -62315,8 +62320,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt6132948/",
       "tmdb": "https://www.themoviedb.org/movie/421623"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:39:33.577Z",
-    "tmdbFetchedAt": "2026-10-04T07:39:33.577Z"
+    "tmdbUpdatedAt": "2026-10-05T07:59:36.631Z",
+    "tmdbFetchedAt": "2026-10-05T07:59:36.631Z"
   },
   {
     "id": "hallmark-2016-a-perfect-christmas",
@@ -62544,8 +62549,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt5863634/",
       "tmdb": "https://www.themoviedb.org/movie/403400"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:39:35.379Z",
-    "tmdbFetchedAt": "2026-10-04T07:39:35.379Z",
+    "tmdbUpdatedAt": "2026-10-05T07:59:37.891Z",
+    "tmdbFetchedAt": "2026-10-05T07:59:37.891Z",
     "alternativeTitles": [
       {
         "title": "Un Noël (presque) parfait",
@@ -62831,6 +62836,14 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
+        "id": 63783,
+        "name": "Christie Will Wolf",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/vLAxuVAYsIoboSnaLVG1oupsIm8.jpg",
+        "creditId": "57a69da7c3a3681026003572"
+      },
+      {
         "id": 1041722,
         "name": "Don MacLeod",
         "job": "Writer",
@@ -62843,14 +62856,6 @@ export const MOVIES: Movie[] = [
         "job": "Writer",
         "department": "Writing",
         "creditId": "57a69db49251417cb80032f1"
-      },
-      {
-        "id": 63783,
-        "name": "Christie Will Wolf",
-        "job": "Director",
-        "department": "Directing",
-        "profileUrl": "https://image.tmdb.org/t/p/w500/vLAxuVAYsIoboSnaLVG1oupsIm8.jpg",
-        "creditId": "57a69da7c3a3681026003572"
       }
     ],
     "voteAverage": 5.9,
@@ -62860,8 +62865,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt5676118/",
       "tmdb": "https://www.themoviedb.org/movie/410314"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:39:36.118Z",
-    "tmdbFetchedAt": "2026-10-04T07:39:36.118Z",
+    "tmdbUpdatedAt": "2026-10-05T07:59:38.577Z",
+    "tmdbFetchedAt": "2026-10-05T07:59:38.577Z",
     "alternativeTitles": [
       {
         "title": "Um desejo para o Natal",
@@ -63085,19 +63090,19 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
-        "id": 976698,
-        "name": "Robert Tate Miller",
-        "job": "Writer",
-        "department": "Writing",
-        "creditId": "57a6a2b2c3a36810db003808"
-      },
-      {
         "id": 1212587,
         "name": "James Head",
         "job": "Director",
         "department": "Directing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/xyScu5BO0Lqok69OjoCVv0tvnG8.jpg",
         "creditId": "57a6a29dc3a36812440038be"
+      },
+      {
+        "id": 976698,
+        "name": "Robert Tate Miller",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "57a6a2b2c3a36810db003808"
       }
     ],
     "voteAverage": 6,
@@ -63107,8 +63112,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt5675936/",
       "tmdb": "https://www.themoviedb.org/movie/410317"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:39:37.988Z",
-    "tmdbFetchedAt": "2026-10-04T07:39:37.988Z",
+    "tmdbUpdatedAt": "2026-10-05T07:59:39.254Z",
+    "tmdbFetchedAt": "2026-10-05T07:59:39.254Z",
     "alternativeTitles": [
       {
         "title": "Biscoitos de Natal",
@@ -63306,8 +63311,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt6273004/",
       "tmdb": "https://www.themoviedb.org/movie/421620"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:39:40.443Z",
-    "tmdbFetchedAt": "2026-10-04T07:39:40.443Z"
+    "tmdbUpdatedAt": "2026-10-05T07:59:40.459Z",
+    "tmdbFetchedAt": "2026-10-05T07:59:40.459Z"
   },
   {
     "id": "hallmark-2016-christmas-list",
@@ -63553,8 +63558,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt5902138/",
       "tmdb": "https://www.themoviedb.org/movie/416251"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:39:41.999Z",
-    "tmdbFetchedAt": "2026-10-04T07:39:41.999Z",
+    "tmdbUpdatedAt": "2026-10-05T07:59:41.719Z",
+    "tmdbFetchedAt": "2026-10-05T07:59:41.719Z",
     "alternativeTitles": [
       {
         "title": "Drømme for julen",
@@ -63875,8 +63880,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt6215212/",
       "tmdb": "https://www.themoviedb.org/movie/415959"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:39:43.578Z",
-    "tmdbFetchedAt": "2026-10-04T07:39:43.578Z",
+    "tmdbUpdatedAt": "2026-10-05T07:59:43.686Z",
+    "tmdbFetchedAt": "2026-10-05T07:59:43.686Z",
     "alternativeTitles": [
       {
         "title": "Die Weihnachtsstory",
@@ -64112,8 +64117,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt6269192/",
       "tmdb": "https://www.themoviedb.org/movie/421758"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:39:46.654Z",
-    "tmdbFetchedAt": "2026-10-04T07:39:46.654Z",
+    "tmdbUpdatedAt": "2026-10-05T07:59:45.519Z",
+    "tmdbFetchedAt": "2026-10-05T07:59:45.519Z",
     "alternativeTitles": [
       {
         "title": "Frem til jul",
@@ -64424,8 +64429,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt6217490/",
       "tmdb": "https://www.themoviedb.org/movie/421622"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:39:47.449Z",
-    "tmdbFetchedAt": "2026-10-04T07:39:47.449Z",
+    "tmdbUpdatedAt": "2026-10-05T07:59:46.728Z",
+    "tmdbFetchedAt": "2026-10-05T07:59:46.728Z",
     "alternativeTitles": [
       {
         "title": "Christmas Carol",
@@ -64722,8 +64727,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt6131148/",
       "tmdb": "https://www.themoviedb.org/movie/421624"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:39:48.190Z",
-    "tmdbFetchedAt": "2026-10-04T07:39:48.190Z",
+    "tmdbUpdatedAt": "2026-10-05T07:59:47.345Z",
+    "tmdbFetchedAt": "2026-10-05T07:59:47.345Z",
     "alternativeTitles": [
       {
         "title": "El valle de la Navidad",
@@ -64737,7 +64742,7 @@ export const MOVIES: Movie[] = [
     "title": "My Christmas Dream",
     "year": 2016,
     "brandId": "hallmark",
-    "releaseDate": "2016-11-26",
+    "releaseDate": "2016-11-19",
     "runtimeMinutes": 84,
     "synopsis": "A department store manager sets out to create an amazing holiday display window to impress the owner. She asks a recently-fired employee to help her make the display, and as they work together, they start to fall in love.",
     "posterUrl": "/images/posters/415962.jpg",
@@ -64905,7 +64910,7 @@ export const MOVIES: Movie[] = [
     ],
     "trailerYoutubeKey": "aNGarRXVm1c",
     "originalTitle": "My Christmas Dream",
-    "premiereDate": "2016-11-26",
+    "premiereDate": "2016-11-19",
     "genres": [
       {
         "id": 10770,
@@ -65003,8 +65008,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt5949946/",
       "tmdb": "https://www.themoviedb.org/movie/415962"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:39:48.931Z",
-    "tmdbFetchedAt": "2026-10-04T07:39:48.931Z",
+    "tmdbUpdatedAt": "2026-10-05T07:59:47.955Z",
+    "tmdbFetchedAt": "2026-10-05T07:59:47.955Z",
     "alternativeTitles": [
       {
         "title": "Suddenly Santa",
@@ -65274,8 +65279,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt6104760/",
       "tmdb": "https://www.themoviedb.org/movie/421625"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:39:49.967Z",
-    "tmdbFetchedAt": "2026-10-04T07:39:49.967Z",
+    "tmdbUpdatedAt": "2026-10-05T07:59:48.556Z",
+    "tmdbFetchedAt": "2026-10-05T07:59:48.556Z",
     "alternativeTitles": [
       {
         "title": "Julens overraskelser",
@@ -65400,18 +65405,18 @@ export const MOVIES: Movie[] = [
         "creditId": "585ec68092514115cd011a2b"
       },
       {
-        "id": 1545262,
-        "name": "Buddy Baron",
-        "job": "Writer",
-        "department": "Writing",
-        "creditId": "585ec6b0c3a3681a6201248f"
-      },
-      {
         "id": 1512119,
         "name": "Tracy Andreen",
         "job": "Writer",
         "department": "Writing",
         "creditId": "585ec69692514115cf011d98"
+      },
+      {
+        "id": 1545262,
+        "name": "Buddy Baron",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "585ec6b0c3a3681a6201248f"
       }
     ],
     "voteAverage": 5.9,
@@ -65421,8 +65426,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt6349282/",
       "tmdb": "https://www.themoviedb.org/movie/421626"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:39:50.758Z",
-    "tmdbFetchedAt": "2026-10-04T07:39:50.758Z"
+    "tmdbUpdatedAt": "2026-10-05T07:59:49.233Z",
+    "tmdbFetchedAt": "2026-10-05T07:59:49.233Z"
   },
   {
     "id": "hallmark-2016-the-mistletoe-promise",
@@ -65711,8 +65716,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt5921218/",
       "tmdb": "https://www.themoviedb.org/movie/410315"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:39:51.470Z",
-    "tmdbFetchedAt": "2026-10-04T07:39:51.470Z",
+    "tmdbUpdatedAt": "2026-10-05T07:59:49.835Z",
+    "tmdbFetchedAt": "2026-10-05T07:59:49.835Z",
     "alternativeTitles": [
       {
         "title": "Promessa de Natal",
@@ -65873,8 +65878,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt5056034/",
       "tmdb": "https://www.themoviedb.org/movie/362886"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:39:53.141Z",
-    "tmdbFetchedAt": "2026-10-04T07:39:53.141Z",
+    "tmdbUpdatedAt": "2026-10-05T07:59:51.100Z",
+    "tmdbFetchedAt": "2026-10-05T07:59:51.100Z",
     "alternativeTitles": [
       {
         "title": "Christmas Confession",
@@ -66070,8 +66075,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt5133810/",
       "tmdb": "https://www.themoviedb.org/movie/363483"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:39:53.886Z",
-    "tmdbFetchedAt": "2026-10-04T07:39:53.886Z",
+    "tmdbUpdatedAt": "2026-10-05T07:59:51.711Z",
+    "tmdbFetchedAt": "2026-10-05T07:59:51.711Z",
     "alternativeTitles": [
       {
         "title": "Les 12 cadeaux de Noël",
@@ -66278,8 +66283,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt4767950/",
       "tmdb": "https://www.themoviedb.org/movie/348634"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:39:56.333Z",
-    "tmdbFetchedAt": "2026-10-04T07:39:56.333Z",
+    "tmdbUpdatedAt": "2026-10-05T07:59:53.083Z",
+    "tmdbFetchedAt": "2026-10-05T07:59:53.083Z",
     "alternativeTitles": [
       {
         "title": "On Time for Christmas",
@@ -66462,8 +66467,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt4587740/",
       "tmdb": "https://www.themoviedb.org/movie/366018"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:39:58.057Z",
-    "tmdbFetchedAt": "2026-10-04T07:39:58.057Z",
+    "tmdbUpdatedAt": "2026-10-05T07:59:53.680Z",
+    "tmdbFetchedAt": "2026-10-05T07:59:53.680Z",
     "alternativeTitles": [
       {
         "title": "En Julemelodi",
@@ -66640,8 +66645,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt5097970/",
       "tmdb": "https://www.themoviedb.org/movie/363484"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:40:00.434Z",
-    "tmdbFetchedAt": "2026-10-04T07:40:00.434Z"
+    "tmdbUpdatedAt": "2026-10-05T07:59:55.619Z",
+    "tmdbFetchedAt": "2026-10-05T07:59:55.619Z"
   },
   {
     "id": "hallmark-2015-charming-christmas",
@@ -66879,8 +66884,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt5156770/",
       "tmdb": "https://www.themoviedb.org/movie/363476"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:40:02.380Z",
-    "tmdbFetchedAt": "2026-10-04T07:40:02.380Z",
+    "tmdbUpdatedAt": "2026-10-05T07:59:56.214Z",
+    "tmdbFetchedAt": "2026-10-05T07:59:56.214Z",
     "alternativeTitles": [
       {
         "title": "Den magiske julekjole",
@@ -67179,8 +67184,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt5204384/",
       "tmdb": "https://www.themoviedb.org/movie/363480"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:40:03.110Z",
-    "tmdbFetchedAt": "2026-10-04T07:40:03.110Z"
+    "tmdbUpdatedAt": "2026-10-05T07:59:56.840Z",
+    "tmdbFetchedAt": "2026-10-05T07:59:56.840Z"
   },
   {
     "id": "hallmark-2015-christmas-land",
@@ -67319,12 +67324,11 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
-        "id": 45037,
-        "name": "Sam Irvin",
-        "job": "Director",
-        "department": "Directing",
-        "profileUrl": "https://image.tmdb.org/t/p/w500/1o6j9oNTce1i8G81t8peSfXpfpL.jpg",
-        "creditId": "5be66dc30e0a263c060098e4"
+        "id": 144757,
+        "name": "Jay Cipriani",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "5be66df10e0a263c00009bfc"
       },
       {
         "id": 1485497,
@@ -67342,11 +67346,12 @@ export const MOVIES: Movie[] = [
         "creditId": "5be66de6c3a368173a009c6d"
       },
       {
-        "id": 144757,
-        "name": "Jay Cipriani",
-        "job": "Writer",
-        "department": "Writing",
-        "creditId": "5be66df10e0a263c00009bfc"
+        "id": 45037,
+        "name": "Sam Irvin",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/1o6j9oNTce1i8G81t8peSfXpfpL.jpg",
+        "creditId": "5be66dc30e0a263c060098e4"
       }
     ],
     "voteAverage": 5.6,
@@ -67356,8 +67361,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt5265662/",
       "tmdb": "https://www.themoviedb.org/movie/369054"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:40:05.048Z",
-    "tmdbFetchedAt": "2026-10-04T07:40:05.048Z",
+    "tmdbUpdatedAt": "2026-10-05T07:59:58.883Z",
+    "tmdbFetchedAt": "2026-10-05T07:59:58.883Z",
     "alternativeTitles": [
       {
         "title": "Hilfe, ich habe Weihnachten geerbt!",
@@ -67557,8 +67562,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt5133572/",
       "tmdb": "https://www.themoviedb.org/movie/360603"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:40:05.901Z",
-    "tmdbFetchedAt": "2026-10-04T07:40:05.901Z",
+    "tmdbUpdatedAt": "2026-10-05T07:59:59.512Z",
+    "tmdbFetchedAt": "2026-10-05T07:59:59.512Z",
     "alternativeTitles": [
       {
         "title": "Корона на Рождество",
@@ -67918,8 +67923,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt5182120/",
       "tmdb": "https://www.themoviedb.org/movie/363478"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:40:07.512Z",
-    "tmdbFetchedAt": "2026-10-04T07:40:07.512Z",
+    "tmdbUpdatedAt": "2026-10-05T08:00:00.119Z",
+    "tmdbFetchedAt": "2026-10-05T08:00:00.119Z",
     "alternativeTitles": [
       {
         "title": "En juleforbandelse",
@@ -68160,8 +68165,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt5031014/",
       "tmdb": "https://www.themoviedb.org/movie/360604"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:40:09.132Z",
-    "tmdbFetchedAt": "2026-10-04T07:40:09.132Z"
+    "tmdbUpdatedAt": "2026-10-05T08:00:00.785Z",
+    "tmdbFetchedAt": "2026-10-05T08:00:00.785Z"
   },
   {
     "id": "hallmark-2015-just-in-time-for-christmas",
@@ -68391,6 +68396,14 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
+        "id": 129952,
+        "name": "Sean McNamara",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/iJLRIBB2P3LXsPBvzdYhf06Lful.jpg",
+        "creditId": "5633db60c3a3681b4b0147cb"
+      },
+      {
         "id": 1041722,
         "name": "Don MacLeod",
         "job": "Writer",
@@ -68403,14 +68416,6 @@ export const MOVIES: Movie[] = [
         "job": "Writer",
         "department": "Writing",
         "creditId": "5633db6f9251413b460080e2"
-      },
-      {
-        "id": 129952,
-        "name": "Sean McNamara",
-        "job": "Director",
-        "department": "Directing",
-        "profileUrl": "https://image.tmdb.org/t/p/w500/iJLRIBB2P3LXsPBvzdYhf06Lful.jpg",
-        "creditId": "5633db60c3a3681b4b0147cb"
       }
     ],
     "voteAverage": 6.2,
@@ -68420,8 +68425,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt5014528/",
       "tmdb": "https://www.themoviedb.org/movie/363486"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:40:10.829Z",
-    "tmdbFetchedAt": "2026-10-04T07:40:10.829Z",
+    "tmdbUpdatedAt": "2026-10-05T08:00:01.422Z",
+    "tmdbFetchedAt": "2026-10-05T08:00:01.422Z",
     "alternativeTitles": [
       {
         "title": "Justo A Tiempo Para Navidad",
@@ -68584,8 +68589,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt5210048/",
       "tmdb": "https://www.themoviedb.org/movie/363479"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:40:12.663Z",
-    "tmdbFetchedAt": "2026-10-04T07:40:12.663Z",
+    "tmdbUpdatedAt": "2026-10-05T08:00:02.139Z",
+    "tmdbFetchedAt": "2026-10-05T08:00:02.139Z",
     "alternativeTitles": [
       {
         "title": "A Perfect Christmas Wedding",
@@ -68901,13 +68906,6 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
-        "id": 1133778,
-        "name": "Brian Sawyer",
-        "job": "Writer",
-        "department": "Writing",
-        "creditId": "554ea74fc3a3687953000161"
-      },
-      {
         "id": 131785,
         "name": "Douglas Barr",
         "job": "Director",
@@ -68921,6 +68919,13 @@ export const MOVIES: Movie[] = [
         "job": "Writer",
         "department": "Writing",
         "creditId": "554ea742c3a3681950002d2f"
+      },
+      {
+        "id": 1133778,
+        "name": "Brian Sawyer",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "554ea74fc3a3687953000161"
       }
     ],
     "voteAverage": 5.8,
@@ -68930,8 +68935,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt4843046/",
       "tmdb": "https://www.themoviedb.org/movie/339543"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:40:13.391Z",
-    "tmdbFetchedAt": "2026-10-04T07:40:13.391Z",
+    "tmdbUpdatedAt": "2026-10-05T08:00:03.656Z",
+    "tmdbFetchedAt": "2026-10-05T08:00:03.656Z",
     "alternativeTitles": [
       {
         "title": "Polo Norte Abierto Por Navidad",
@@ -69127,8 +69132,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt5210078/",
       "tmdb": "https://www.themoviedb.org/movie/366631"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:40:14.105Z",
-    "tmdbFetchedAt": "2026-10-04T07:40:14.105Z",
+    "tmdbUpdatedAt": "2026-10-05T08:00:04.296Z",
+    "tmdbFetchedAt": "2026-10-05T08:00:04.296Z",
     "alternativeTitles": [
       {
         "title": "Genfind julens magi",
@@ -69451,8 +69456,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt5033114/",
       "tmdb": "https://www.themoviedb.org/movie/363482"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:40:15.670Z",
-    "tmdbFetchedAt": "2026-10-04T07:40:15.670Z"
+    "tmdbUpdatedAt": "2026-10-05T08:00:04.894Z",
+    "tmdbFetchedAt": "2026-10-05T08:00:04.894Z"
   },
   {
     "id": "hallmark-2014-christmas-under-wraps",
@@ -69698,8 +69703,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt4180032/",
       "tmdb": "https://www.themoviedb.org/movie/299584"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:40:17.289Z",
-    "tmdbFetchedAt": "2026-10-04T07:40:17.289Z",
+    "tmdbUpdatedAt": "2026-10-05T08:00:05.498Z",
+    "tmdbFetchedAt": "2026-10-05T08:00:05.498Z",
     "alternativeTitles": [
       {
         "title": "Folge deinem Polarlicht - Eine Weihnachtsgeschichte",
@@ -70019,8 +70024,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt3889642/",
       "tmdb": "https://www.themoviedb.org/movie/299576"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:40:18.939Z",
-    "tmdbFetchedAt": "2026-10-04T07:40:18.939Z",
+    "tmdbUpdatedAt": "2026-10-05T08:00:06.859Z",
+    "tmdbFetchedAt": "2026-10-05T08:00:06.859Z",
     "alternativeTitles": [
       {
         "title": "En juleforelskelse",
@@ -70302,8 +70307,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt1327788/",
       "tmdb": "https://www.themoviedb.org/movie/35830"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:40:20.572Z",
-    "tmdbFetchedAt": "2026-10-04T07:40:20.572Z",
+    "tmdbUpdatedAt": "2026-10-05T08:00:07.500Z",
+    "tmdbFetchedAt": "2026-10-05T08:00:07.500Z",
     "alternativeTitles": [
       {
         "title": "La mejor época del año",
@@ -70437,9 +70442,9 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1754947",
       "imdb": "https://www.imdb.com/title/tt43674919/"
     },
-    "tmdbUpdatedAt": "2026-10-05T05:58:08.039Z",
+    "tmdbUpdatedAt": "2026-10-05T08:00:07.672Z",
     "premiereDate": "2026-12-19",
-    "tmdbFetchedAt": "2026-10-05T05:58:08.039Z"
+    "tmdbFetchedAt": "2026-10-05T08:00:07.672Z"
   },
   {
     "id": "gaf-2026-christmas-at-moose-lake",
@@ -70621,9 +70626,9 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1665375",
       "imdb": "https://www.imdb.com/title/tt41054296/"
     },
-    "tmdbUpdatedAt": "2026-10-05T05:58:08.279Z",
+    "tmdbUpdatedAt": "2026-10-05T08:00:07.870Z",
     "premiereDate": "2026-11-15",
-    "tmdbFetchedAt": "2026-10-05T05:58:08.279Z"
+    "tmdbFetchedAt": "2026-10-05T08:00:07.870Z"
   },
   {
     "id": "gaf-2025-another-sweet-christmas",
@@ -70835,8 +70840,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1477541",
       "imdb": "https://www.imdb.com/title/tt37048603/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:40:21.813Z",
-    "tmdbFetchedAt": "2026-10-04T07:40:21.813Z",
+    "tmdbUpdatedAt": "2026-10-05T08:00:08.577Z",
+    "tmdbFetchedAt": "2026-10-05T08:00:08.577Z",
     "alternativeTitles": [
       {
         "title": "A Home Sweet Christmas Wedding",
@@ -70981,9 +70986,9 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1569889",
       "imdb": "https://www.imdb.com/title/tt34735996/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:40:22.581Z",
+    "tmdbUpdatedAt": "2026-10-05T08:00:09.260Z",
     "premiereDate": "2025-11-23",
-    "tmdbFetchedAt": "2026-10-04T07:40:22.581Z",
+    "tmdbFetchedAt": "2026-10-05T08:00:09.260Z",
     "alternativeTitles": [
       {
         "title": "Love at Kringle Lake",
@@ -71218,9 +71223,9 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1549234",
       "imdb": "https://www.imdb.com/title/tt37350687/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:40:23.661Z",
+    "tmdbUpdatedAt": "2026-10-05T08:00:09.903Z",
     "premiereDate": "2025-12-14",
-    "tmdbFetchedAt": "2026-10-04T07:40:23.661Z"
+    "tmdbFetchedAt": "2026-10-05T08:00:09.903Z"
   },
   {
     "id": "gaf-2025-christmas-at-mistletoe-manor",
@@ -71448,9 +71453,9 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1033671",
       "imdb": "https://www.imdb.com/title/tt16533244/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:40:25.314Z",
+    "tmdbUpdatedAt": "2026-10-05T08:00:11.268Z",
     "premiereDate": "2025-12-07",
-    "tmdbFetchedAt": "2026-10-04T07:40:25.314Z",
+    "tmdbFetchedAt": "2026-10-05T08:00:11.268Z",
     "alternativeTitles": [
       {
         "title": "The Christmas Garden",
@@ -71598,9 +71603,9 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1554297",
       "imdb": "https://www.imdb.com/title/tt38492786/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:40:26.035Z",
+    "tmdbUpdatedAt": "2026-10-05T08:00:11.898Z",
     "premiereDate": "2025-12-13",
-    "tmdbFetchedAt": "2026-10-04T07:40:26.035Z",
+    "tmdbFetchedAt": "2026-10-05T08:00:11.898Z",
     "alternativeTitles": [
       {
         "title": "Have We Met This Christmas",
@@ -71801,8 +71806,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1463182",
       "imdb": "https://www.imdb.com/title/tt36454258/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:40:26.769Z",
-    "tmdbFetchedAt": "2026-10-04T07:40:26.769Z",
+    "tmdbUpdatedAt": "2026-10-05T08:00:12.546Z",
+    "tmdbFetchedAt": "2026-10-05T08:00:12.546Z",
     "alternativeTitles": [
       {
         "title": "A Cherry Pie Christmas",
@@ -71977,9 +71982,9 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1554293",
       "imdb": "https://www.imdb.com/title/tt38350955/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:40:27.510Z",
+    "tmdbUpdatedAt": "2026-10-05T08:00:13.193Z",
     "premiereDate": "2025-12-04",
-    "tmdbFetchedAt": "2026-10-04T07:40:27.510Z",
+    "tmdbFetchedAt": "2026-10-05T08:00:13.193Z",
     "alternativeTitles": [
       {
         "title": "Cranberries and Carols",
@@ -72194,9 +72199,9 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1535425",
       "imdb": "https://www.imdb.com/title/tt37836066/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:40:28.238Z",
+    "tmdbUpdatedAt": "2026-10-05T08:00:13.793Z",
     "premiereDate": "2025-11-22",
-    "tmdbFetchedAt": "2026-10-04T07:40:28.238Z"
+    "tmdbFetchedAt": "2026-10-05T08:00:13.793Z"
   },
   {
     "id": "gaf-2025-christmas-in-midnight-clear",
@@ -72366,9 +72371,9 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1535456",
       "imdb": "https://www.imdb.com/title/tt37714907/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:40:28.952Z",
+    "tmdbUpdatedAt": "2026-10-05T08:00:14.414Z",
     "premiereDate": "2025-11-01",
-    "tmdbFetchedAt": "2026-10-04T07:40:28.952Z"
+    "tmdbFetchedAt": "2026-10-05T08:00:14.414Z"
   },
   {
     "id": "gaf-2025-christmas-of-giving",
@@ -72576,8 +72581,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1535421",
       "imdb": "https://www.imdb.com/title/tt37674795/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:40:29.726Z",
-    "tmdbFetchedAt": "2026-10-04T07:40:29.726Z",
+    "tmdbUpdatedAt": "2026-10-05T08:00:15.057Z",
+    "tmdbFetchedAt": "2026-10-05T08:00:15.057Z",
     "alternativeTitles": [
       {
         "title": "A Belle Christmas",
@@ -72746,9 +72751,9 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1535434",
       "imdb": "https://www.imdb.com/title/tt37604000/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:40:30.498Z",
+    "tmdbUpdatedAt": "2026-10-05T08:00:15.720Z",
     "premiereDate": "2025-11-27",
-    "tmdbFetchedAt": "2026-10-04T07:40:30.498Z",
+    "tmdbFetchedAt": "2026-10-05T08:00:15.720Z",
     "alternativeTitles": [
       {
         "title": "There’s No Place Like Christmas",
@@ -72921,9 +72926,9 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1535440",
       "imdb": "https://www.imdb.com/title/tt37593923/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:40:31.236Z",
+    "tmdbUpdatedAt": "2026-10-05T08:00:16.301Z",
     "premiereDate": "2025-10-18",
-    "tmdbFetchedAt": "2026-10-04T07:40:31.236Z"
+    "tmdbFetchedAt": "2026-10-05T08:00:16.301Z"
   },
   {
     "id": "gaf-2025-the-christmas-spark",
@@ -73143,9 +73148,9 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1477535",
       "imdb": "https://www.imdb.com/title/tt36618789/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:40:31.973Z",
+    "tmdbUpdatedAt": "2026-10-05T08:00:16.934Z",
     "premiereDate": "2025-11-29",
-    "tmdbFetchedAt": "2026-10-04T07:40:31.973Z",
+    "tmdbFetchedAt": "2026-10-05T08:00:16.934Z",
     "alternativeTitles": [
       {
         "title": "A Christmas Spark",
@@ -73292,9 +73297,9 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1477538",
       "imdb": "https://www.imdb.com/title/tt37930368/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:40:32.765Z",
+    "tmdbUpdatedAt": "2026-10-05T08:00:17.612Z",
     "premiereDate": "2025-11-13",
-    "tmdbFetchedAt": "2026-10-04T07:40:32.765Z"
+    "tmdbFetchedAt": "2026-10-05T08:00:17.612Z"
   },
   {
     "id": "gaf-2024-i-heard-the-bells",
@@ -73490,8 +73495,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt21084334/"
     },
     "premiereDate": "2022-12-01",
-    "tmdbUpdatedAt": "2026-10-04T07:40:34.558Z",
-    "tmdbFetchedAt": "2026-10-04T07:40:34.558Z",
+    "tmdbUpdatedAt": "2026-10-05T08:00:18.974Z",
+    "tmdbFetchedAt": "2026-10-05T08:00:18.974Z",
     "alternativeTitles": [
       {
         "title": "나는 종소리를 들었다",
@@ -73655,8 +73660,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt33395081/"
     },
     "premiereDate": "2024-11-02",
-    "tmdbUpdatedAt": "2026-10-04T07:40:36.117Z",
-    "tmdbFetchedAt": "2026-10-04T07:40:36.117Z",
+    "tmdbUpdatedAt": "2026-10-05T08:00:20.353Z",
+    "tmdbFetchedAt": "2026-10-05T08:00:20.353Z",
     "alternativeTitles": [
       {
         "title": "A Shelter and Season's Greetings",
@@ -73819,8 +73824,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt32095180/"
     },
     "premiereDate": "2024-12-15",
-    "tmdbUpdatedAt": "2026-10-04T07:40:36.828Z",
-    "tmdbFetchedAt": "2026-10-04T07:40:36.828Z"
+    "tmdbUpdatedAt": "2026-10-05T08:00:20.957Z",
+    "tmdbFetchedAt": "2026-10-05T08:00:20.957Z"
   },
   {
     "id": "gaf-2024-christmas-wreaths-and-ribbons",
@@ -74024,8 +74029,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt33394751/"
     },
     "premiereDate": "2024-10-12",
-    "tmdbUpdatedAt": "2026-10-04T07:40:38.469Z",
-    "tmdbFetchedAt": "2026-10-04T07:40:38.469Z",
+    "tmdbUpdatedAt": "2026-10-05T08:00:22.242Z",
+    "tmdbFetchedAt": "2026-10-05T08:00:22.242Z",
     "alternativeTitles": [
       {
         "title": "Wreathmaker Christmas",
@@ -74045,7 +74050,7 @@ export const MOVIES: Movie[] = [
     "id": "gaf-2024-christmas-by-candlelight",
     "slug": "christmas-by-candlelight",
     "title": "Christmas by Candlelight",
-    "year": 2024,
+    "year": 2023,
     "brandId": "gaf",
     "releaseDate": "2023-12-13",
     "runtimeMinutes": 90,
@@ -74196,19 +74201,19 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
+        "id": 3736526,
+        "name": "Alessandra Brook",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "6490eda726346200ae1d259e"
+      },
+      {
         "id": 153950,
         "name": "Brian K. Roberts",
         "job": "Director",
         "department": "Directing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/1DS8d5bxSkmAU6DnIr3JX5Bv7LL.jpg",
         "creditId": "6490ecab976a230101ec0a7a"
-      },
-      {
-        "id": 3736526,
-        "name": "Alessandra Brook",
-        "job": "Writer",
-        "department": "Writing",
-        "creditId": "6490eda726346200ae1d259e"
       }
     ],
     "voteAverage": 6.7,
@@ -74220,8 +74225,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt26925662/"
     },
     "premiereDate": "2023-12-13",
-    "tmdbUpdatedAt": "2026-10-04T07:40:39.203Z",
-    "tmdbFetchedAt": "2026-10-04T07:40:39.203Z",
+    "tmdbUpdatedAt": "2026-10-05T08:00:22.881Z",
+    "tmdbFetchedAt": "2026-10-05T08:00:22.881Z",
     "alternativeTitles": [
       {
         "title": "Чистые воспоминания о прекрасном",
@@ -74233,7 +74238,7 @@ export const MOVIES: Movie[] = [
     "id": "gaf-2024-coupled-up-for-christmas",
     "slug": "coupled-up-for-christmas",
     "title": "Coupled Up for Christmas",
-    "year": 2024,
+    "year": 2023,
     "brandId": "gaf",
     "releaseDate": "2023-10-18",
     "runtimeMinutes": 90,
@@ -74455,8 +74460,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt26541686/"
     },
     "premiereDate": "2023-10-18",
-    "tmdbUpdatedAt": "2026-10-04T07:40:41.716Z",
-    "tmdbFetchedAt": "2026-10-04T07:40:41.716Z",
+    "tmdbUpdatedAt": "2026-10-05T08:00:23.544Z",
+    "tmdbFetchedAt": "2026-10-05T08:00:23.544Z",
     "alternativeTitles": [
       {
         "title": "Пара на свята",
@@ -74659,9 +74664,9 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1340826",
       "imdb": "https://www.imdb.com/title/tt33244712/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:40:43.442Z",
+    "tmdbUpdatedAt": "2026-10-05T08:00:24.203Z",
     "premiereDate": "2024-12-01",
-    "tmdbFetchedAt": "2026-10-04T07:40:43.442Z"
+    "tmdbFetchedAt": "2026-10-05T08:00:24.203Z"
   },
   {
     "id": "gaf-2024-a-little-women-s-christmas",
@@ -74928,8 +74933,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt32869332/"
     },
     "premiereDate": "2024-11-23",
-    "tmdbUpdatedAt": "2026-10-04T07:40:45.124Z",
-    "tmdbFetchedAt": "2026-10-04T07:40:45.124Z"
+    "tmdbUpdatedAt": "2026-10-05T08:00:25.535Z",
+    "tmdbFetchedAt": "2026-10-05T08:00:25.535Z"
   },
   {
     "id": "gaf-2024-a-vintage-christmas",
@@ -75130,9 +75135,9 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1310631",
       "imdb": "https://www.imdb.com/title/tt32580848/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:40:45.879Z",
+    "tmdbUpdatedAt": "2026-10-05T08:00:26.821Z",
     "premiereDate": "2024-10-19",
-    "tmdbFetchedAt": "2026-10-04T07:40:45.879Z",
+    "tmdbFetchedAt": "2026-10-05T08:00:26.821Z",
     "alternativeTitles": [
       {
         "title": "A Christmas Post",
@@ -75398,9 +75403,9 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1310637",
       "imdb": "https://www.imdb.com/title/tt32915236/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:40:47.202Z",
+    "tmdbUpdatedAt": "2026-10-05T08:00:27.570Z",
     "premiereDate": "2024-12-14",
-    "tmdbFetchedAt": "2026-10-04T07:40:47.202Z",
+    "tmdbFetchedAt": "2026-10-05T08:00:27.570Z",
     "alternativeTitles": [
       {
         "title": "Love at the Kettle",
@@ -75412,7 +75417,7 @@ export const MOVIES: Movie[] = [
     "id": "gaf-2024-christmas-in-scotland",
     "slug": "christmas-in-scotland",
     "title": "Christmas in Scotland",
-    "year": 2024,
+    "year": 2023,
     "brandId": "gaf",
     "releaseDate": "2023-11-12",
     "runtimeMinutes": 90,
@@ -75537,18 +75542,18 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
-        "id": 1223951,
-        "name": "Steve Turner",
-        "job": "Writer",
-        "department": "Writing",
-        "creditId": "64bbfab4af85de011d7bb744"
-      },
-      {
         "id": 137950,
         "name": "David Lumsden",
         "job": "Director",
         "department": "Directing",
         "creditId": "64bbfaabc3aa3f00e3822571"
+      },
+      {
+        "id": 1223951,
+        "name": "Steve Turner",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "64bbfab4af85de011d7bb744"
       }
     ],
     "voteAverage": 5.6,
@@ -75559,9 +75564,9 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1152738",
       "imdb": "https://www.imdb.com/title/tt28421048/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:40:48.044Z",
+    "tmdbUpdatedAt": "2026-10-05T08:00:28.241Z",
     "premiereDate": "2023-11-12",
-    "tmdbFetchedAt": "2026-10-04T07:40:48.044Z",
+    "tmdbFetchedAt": "2026-10-05T08:00:28.241Z",
     "alternativeTitles": [
       {
         "title": "Navidades en Escocia",
@@ -75737,6 +75742,13 @@ export const MOVIES: Movie[] = [
       {
         "id": 934326,
         "name": "Marcy Holland",
+        "job": "Story",
+        "department": "Writing",
+        "creditId": "66808c7d2194b3213fac1929"
+      },
+      {
+        "id": 934326,
+        "name": "Marcy Holland",
         "job": "Writer",
         "department": "Writing",
         "creditId": "66808c6b8a3fc190f7ff0013"
@@ -75748,13 +75760,6 @@ export const MOVIES: Movie[] = [
         "department": "Writing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/qVasJ8uKtvrntIXaPylneLW3ykf.jpg",
         "creditId": "66808c74cf760a75e8ef2ba8"
-      },
-      {
-        "id": 934326,
-        "name": "Marcy Holland",
-        "job": "Story",
-        "department": "Writing",
-        "creditId": "66808c7d2194b3213fac1929"
       },
       {
         "id": 168782,
@@ -75773,8 +75778,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt26741429/"
     },
     "premiereDate": "2024-11-29",
-    "tmdbUpdatedAt": "2026-10-04T07:40:48.784Z",
-    "tmdbFetchedAt": "2026-10-04T07:40:48.784Z",
+    "tmdbUpdatedAt": "2026-10-05T08:00:29.568Z",
+    "tmdbFetchedAt": "2026-10-05T08:00:29.568Z",
     "alternativeTitles": [
       {
         "title": "Royal Christmas Ball",
@@ -75988,8 +75993,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt32915204/"
     },
     "premiereDate": "2024-11-16",
-    "tmdbUpdatedAt": "2026-10-04T07:40:49.596Z",
-    "tmdbFetchedAt": "2026-10-04T07:40:49.596Z"
+    "tmdbUpdatedAt": "2026-10-05T08:00:30.179Z",
+    "tmdbFetchedAt": "2026-10-05T08:00:30.179Z"
   },
   {
     "id": "gaf-2024-once-upon-a-christmas-wish",
@@ -76182,11 +76187,12 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
-        "id": 2426867,
-        "name": "Megan Henry Herzlinger",
-        "job": "Writer",
-        "department": "Writing",
-        "creditId": "66d1e106a1300cff710c25a2"
+        "id": 85563,
+        "name": "Brian Herzlinger",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/ii0sX3ATj3kDaDgqZ7mI4EdLbvg.jpg",
+        "creditId": "66d1e0f0a1300cff710c259f"
       },
       {
         "id": 85563,
@@ -76197,12 +76203,11 @@ export const MOVIES: Movie[] = [
         "creditId": "66d1e0fadc7be8f3850fd867"
       },
       {
-        "id": 85563,
-        "name": "Brian Herzlinger",
-        "job": "Director",
-        "department": "Directing",
-        "profileUrl": "https://image.tmdb.org/t/p/w500/ii0sX3ATj3kDaDgqZ7mI4EdLbvg.jpg",
-        "creditId": "66d1e0f0a1300cff710c259f"
+        "id": 2426867,
+        "name": "Megan Henry Herzlinger",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "66d1e106a1300cff710c25a2"
       }
     ],
     "voteAverage": 7.1,
@@ -76214,8 +76219,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt32018335/"
     },
     "premiereDate": "2024-12-07",
-    "tmdbUpdatedAt": "2026-10-04T07:40:51.684Z",
-    "tmdbFetchedAt": "2026-10-04T07:40:51.684Z"
+    "tmdbUpdatedAt": "2026-10-05T08:00:31.628Z",
+    "tmdbFetchedAt": "2026-10-05T08:00:31.628Z"
   },
   {
     "id": "gaf-2024-christmas-under-the-northern-lights",
@@ -76223,7 +76228,7 @@ export const MOVIES: Movie[] = [
     "title": "Christmas Under the Northern Lights",
     "year": 2024,
     "brandId": "gaf",
-    "releaseDate": "2024-12-19",
+    "releaseDate": "2024-11-09",
     "runtimeMinutes": 89,
     "synopsis": "Erin joins her dad Doug for a Christmas in the family’s former hometown of Aurora on a mission that is part business – selling the family home – and major bucket list item for Erin to see the Aurora Borealis light up the Northern sky. Realtor Lori and family friend and local tour guide Trevor create a Christmas inspired at every turn by faith, love, and hope, so much so that Christmas bells hung over decades in a forest grove ring an unbroken song, a harbinger of miracles to come.",
     "posterUrl": "/images/posters/1341123.jpg",
@@ -76407,9 +76412,9 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1341123",
       "imdb": "https://www.imdb.com/title/tt31187409/"
     },
-    "premiereDate": "2024-12-19",
-    "tmdbUpdatedAt": "2026-10-04T07:40:54.415Z",
-    "tmdbFetchedAt": "2026-10-04T07:40:54.415Z",
+    "premiereDate": "2024-11-09",
+    "tmdbUpdatedAt": "2026-10-05T08:00:33.227Z",
+    "tmdbFetchedAt": "2026-10-05T08:00:33.227Z",
     "alternativeTitles": [
       {
         "title": "Sleigh Bells and Sugar Plums",
@@ -76643,9 +76648,9 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1106722",
       "imdb": "https://www.imdb.com/title/tt21375082/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:40:56.042Z",
+    "tmdbUpdatedAt": "2026-10-05T08:00:34.443Z",
     "premiereDate": "2023-11-07",
-    "tmdbFetchedAt": "2026-10-04T07:40:56.042Z"
+    "tmdbFetchedAt": "2026-10-05T08:00:34.443Z"
   },
   {
     "id": "gaf-2023-christmas-keepsake",
@@ -76793,9 +76798,9 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1180383",
       "imdb": "https://www.imdb.com/title/tt29896146/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:40:57.668Z",
+    "tmdbUpdatedAt": "2026-10-05T08:00:35.073Z",
     "premiereDate": "2023-11-11",
-    "tmdbFetchedAt": "2026-10-04T07:40:57.668Z",
+    "tmdbFetchedAt": "2026-10-05T08:00:35.073Z",
     "alternativeTitles": [
       {
         "title": "A Time Capsule Christmas",
@@ -76976,9 +76981,9 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1180375",
       "imdb": "https://www.imdb.com/title/tt28449295/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:40:58.388Z",
+    "tmdbUpdatedAt": "2026-10-05T08:00:35.711Z",
     "premiereDate": "2023-12-16",
-    "tmdbFetchedAt": "2026-10-04T07:40:58.388Z",
+    "tmdbFetchedAt": "2026-10-05T08:00:35.711Z",
     "alternativeTitles": [
       {
         "title": "Mistletoe Moments",
@@ -77225,9 +77230,9 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1128754",
       "imdb": "https://www.imdb.com/title/tt29426286/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:40:59.092Z",
+    "tmdbUpdatedAt": "2026-10-05T08:00:37.532Z",
     "premiereDate": "2023-11-05",
-    "tmdbFetchedAt": "2026-10-04T07:40:59.092Z",
+    "tmdbFetchedAt": "2026-10-05T08:00:37.532Z",
     "alternativeTitles": [
       {
         "title": "My Boss' Wedding 2",
@@ -77428,9 +77433,9 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1134582",
       "imdb": "https://www.imdb.com/title/tt27706379/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:40:59.798Z",
+    "tmdbUpdatedAt": "2026-10-05T08:00:38.975Z",
     "premiereDate": "2023-12-05",
-    "tmdbFetchedAt": "2026-10-04T07:40:59.798Z",
+    "tmdbFetchedAt": "2026-10-05T08:00:38.975Z",
     "alternativeTitles": [
       {
         "title": "It's a Christmas Thing",
@@ -77691,9 +77696,9 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1180372",
       "imdb": "https://www.imdb.com/title/tt29931745/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:41:00.551Z",
+    "tmdbUpdatedAt": "2026-10-05T08:00:40.385Z",
     "premiereDate": "2023-11-18",
-    "tmdbFetchedAt": "2026-10-04T07:41:00.551Z",
+    "tmdbFetchedAt": "2026-10-05T08:00:40.385Z",
     "alternativeTitles": [
       {
         "title": "Secret Santa Admirer",
@@ -77906,9 +77911,9 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1180358",
       "imdb": "https://www.imdb.com/title/tt28546386/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:41:02.441Z",
+    "tmdbUpdatedAt": "2026-10-05T08:00:41.645Z",
     "premiereDate": "2023-12-23",
-    "tmdbFetchedAt": "2026-10-04T07:41:02.441Z"
+    "tmdbFetchedAt": "2026-10-05T08:00:41.645Z"
   },
   {
     "id": "gaf-2023-journey-to-christmas",
@@ -78062,19 +78067,19 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
-        "id": 143316,
-        "name": "Brittany Wiscombe",
-        "job": "Writer",
-        "department": "Writing",
-        "creditId": "6508786142d8a5011bd7b8ae"
-      },
-      {
         "id": 2398947,
         "name": "Brian Brough",
         "job": "Director",
         "department": "Directing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/8uErAH2LFWnxuUc3oEIXJPsjJLO.jpg",
         "creditId": "650878598261ee00c5fdee43"
+      },
+      {
+        "id": 143316,
+        "name": "Brittany Wiscombe",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "6508786142d8a5011bd7b8ae"
       },
       {
         "id": 3016668,
@@ -78092,9 +78097,9 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1180353",
       "imdb": "https://www.imdb.com/title/tt29270965/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:41:04.257Z",
+    "tmdbUpdatedAt": "2026-10-05T08:00:42.930Z",
     "premiereDate": "2023-10-29",
-    "tmdbFetchedAt": "2026-10-04T07:41:04.257Z",
+    "tmdbFetchedAt": "2026-10-05T08:00:42.930Z",
     "alternativeTitles": [
       {
         "title": "A Model Christmas",
@@ -78265,9 +78270,9 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1142771",
       "imdb": "https://www.imdb.com/title/tt28152545/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:41:05.000Z",
+    "tmdbUpdatedAt": "2026-10-05T08:00:44.328Z",
     "premiereDate": "2023-11-04",
-    "tmdbFetchedAt": "2026-10-04T07:41:05.000Z",
+    "tmdbFetchedAt": "2026-10-05T08:00:44.328Z",
     "alternativeTitles": [
       {
         "title": "The Christmas Bake Off",
@@ -78430,9 +78435,9 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1132182",
       "imdb": "https://www.imdb.com/title/tt28374407/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:41:05.736Z",
+    "tmdbUpdatedAt": "2026-10-05T08:00:45.691Z",
     "premiereDate": "2023-11-26",
-    "tmdbFetchedAt": "2026-10-04T07:41:05.736Z"
+    "tmdbFetchedAt": "2026-10-05T08:00:45.691Z"
   },
   {
     "id": "gaf-2023-12-games-of-christmas",
@@ -78541,19 +78546,19 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
+        "id": 1321928,
+        "name": "Anna Rasmussen",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "657128cba22d3e00feeed250"
+      },
+      {
         "id": 85822,
         "name": "Anthony C. Ferrante",
         "job": "Director",
         "department": "Directing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/z2cCBLOtFFmajxXyoTLgIGoCcMb.jpg",
         "creditId": "657128c385867800eac66a5d"
-      },
-      {
-        "id": 1321928,
-        "name": "Anna Rasmussen",
-        "job": "Writer",
-        "department": "Writing",
-        "creditId": "657128cba22d3e00feeed250"
       }
     ],
     "voteAverage": 5.6,
@@ -78564,9 +78569,9 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1180264",
       "imdb": "https://www.imdb.com/title/tt30223562/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:41:06.620Z",
+    "tmdbUpdatedAt": "2026-10-05T08:00:46.656Z",
     "premiereDate": "2023-12-17",
-    "tmdbFetchedAt": "2026-10-04T07:41:06.620Z"
+    "tmdbFetchedAt": "2026-10-05T08:00:46.656Z"
   },
   {
     "id": "gaf-2023-meet-me-under-the-mistletoe",
@@ -78728,9 +78733,9 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1180266",
       "imdb": "https://www.imdb.com/title/tt29537749/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:41:07.343Z",
+    "tmdbUpdatedAt": "2026-10-05T08:00:48.033Z",
     "premiereDate": "2023-12-09",
-    "tmdbFetchedAt": "2026-10-04T07:41:07.343Z",
+    "tmdbFetchedAt": "2026-10-05T08:00:48.033Z",
     "alternativeTitles": [
       {
         "title": "A Christmas Commission",
@@ -78942,9 +78947,9 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1150521",
       "imdb": "https://www.imdb.com/title/tt28152535/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:41:08.936Z",
+    "tmdbUpdatedAt": "2026-10-05T08:00:48.644Z",
     "premiereDate": "2023-12-02",
-    "tmdbFetchedAt": "2026-10-04T07:41:08.936Z",
+    "tmdbFetchedAt": "2026-10-05T08:00:48.644Z",
     "alternativeTitles": [
       {
         "title": "Christmas on Windmill Lane",
@@ -79134,9 +79139,9 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1114975",
       "imdb": "https://www.imdb.com/title/tt27542956/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:41:09.709Z",
+    "tmdbUpdatedAt": "2026-10-05T08:00:50.347Z",
     "premiereDate": "2023-11-24",
-    "tmdbFetchedAt": "2026-10-04T07:41:09.709Z"
+    "tmdbFetchedAt": "2026-10-05T08:00:50.347Z"
   },
   {
     "id": "gaf-2023-bringing-christmas-home",
@@ -79305,9 +79310,9 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1142767",
       "imdb": "https://www.imdb.com/title/tt29484424/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:41:10.417Z",
+    "tmdbUpdatedAt": "2026-10-05T08:00:51.621Z",
     "premiereDate": "2023-10-28",
-    "tmdbFetchedAt": "2026-10-04T07:41:10.417Z",
+    "tmdbFetchedAt": "2026-10-05T08:00:51.621Z",
     "alternativeTitles": [
       {
         "title": "Soldatens jul",
@@ -79513,9 +79518,9 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1100642",
       "imdb": "https://www.imdb.com/title/tt27915407/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:41:12.004Z",
+    "tmdbUpdatedAt": "2026-10-05T08:00:52.864Z",
     "premiereDate": "2023-10-21",
-    "tmdbFetchedAt": "2026-10-04T07:41:12.004Z",
+    "tmdbFetchedAt": "2026-10-05T08:00:52.864Z",
     "alternativeTitles": [
       {
         "title": "Christmas by Chance",
@@ -79709,9 +79714,9 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1142780",
       "imdb": "https://www.imdb.com/title/tt28188089/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:41:13.617Z",
+    "tmdbUpdatedAt": "2026-10-05T08:00:54.855Z",
     "premiereDate": "2023-11-25",
-    "tmdbFetchedAt": "2026-10-04T07:41:13.617Z",
+    "tmdbFetchedAt": "2026-10-05T08:00:54.855Z",
     "alternativeTitles": [
       {
         "title": "Royally Styled Christmas",
@@ -79731,7 +79736,7 @@ export const MOVIES: Movie[] = [
     "id": "gaf-2023-a-belgian-chocolate-christmas",
     "slug": "a-belgian-chocolate-christmas",
     "title": "A Belgian Chocolate Christmas",
-    "year": 2023,
+    "year": 2022,
     "brandId": "gaf",
     "releaseDate": "2022-12-11",
     "runtimeMinutes": 84,
@@ -79885,8 +79890,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt22500038/"
     },
     "premiereDate": "2022-12-11",
-    "tmdbUpdatedAt": "2026-10-04T07:41:14.342Z",
-    "tmdbFetchedAt": "2026-10-04T07:41:14.342Z"
+    "tmdbUpdatedAt": "2026-10-05T08:00:56.175Z",
+    "tmdbFetchedAt": "2026-10-05T08:00:56.175Z"
   },
   {
     "id": "gaf-2022-a-brush-with-christmas",
@@ -80075,9 +80080,9 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1032591",
       "imdb": "https://www.imdb.com/title/tt22500220/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:41:15.062Z",
+    "tmdbUpdatedAt": "2026-10-05T08:00:56.801Z",
     "premiereDate": "2022-12-18",
-    "tmdbFetchedAt": "2026-10-04T07:41:15.062Z",
+    "tmdbFetchedAt": "2026-10-05T08:00:56.801Z",
     "alternativeTitles": [
       {
         "title": "A Brush with Christmas Romance",
@@ -80307,9 +80312,9 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1022685",
       "imdb": "https://www.imdb.com/title/tt22028080/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:41:16.726Z",
+    "tmdbUpdatedAt": "2026-10-05T08:00:58.977Z",
     "premiereDate": "2022-11-26",
-    "tmdbFetchedAt": "2026-10-04T07:41:16.726Z",
+    "tmdbFetchedAt": "2026-10-05T08:00:58.977Z",
     "alternativeTitles": [
       {
         "title": "Someday at Christmas",
@@ -80513,9 +80518,9 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1032581",
       "imdb": "https://www.imdb.com/title/tt22499914/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:41:17.498Z",
+    "tmdbUpdatedAt": "2026-10-05T08:00:59.645Z",
     "premiereDate": "2022-12-10",
-    "tmdbFetchedAt": "2026-10-04T07:41:17.498Z",
+    "tmdbFetchedAt": "2026-10-05T08:00:59.645Z",
     "alternativeTitles": [
       {
         "title": "A Prince for the Holidays",
@@ -80766,9 +80771,9 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1025180",
       "imdb": "https://www.imdb.com/title/tt21935558/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:41:18.244Z",
+    "tmdbUpdatedAt": "2026-10-05T08:01:00.895Z",
     "premiereDate": "2022-12-09",
-    "tmdbFetchedAt": "2026-10-04T07:41:18.244Z"
+    "tmdbFetchedAt": "2026-10-05T08:01:00.895Z"
   },
   {
     "id": "gaf-2022-christmas-at-the-drive-in",
@@ -80962,9 +80967,9 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1026941",
       "imdb": "https://www.imdb.com/title/tt22499672/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:41:18.979Z",
+    "tmdbUpdatedAt": "2026-10-05T08:01:01.540Z",
     "premiereDate": "2022-11-25",
-    "tmdbFetchedAt": "2026-10-04T07:41:18.979Z",
+    "tmdbFetchedAt": "2026-10-05T08:01:01.540Z",
     "alternativeTitles": [
       {
         "title": "Navidad en el autocine",
@@ -81226,9 +81231,9 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1032517",
       "imdb": "https://www.imdb.com/title/tt19408396/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:41:20.552Z",
+    "tmdbUpdatedAt": "2026-10-05T08:01:02.173Z",
     "premiereDate": "2022-11-05",
-    "tmdbFetchedAt": "2026-10-04T07:41:20.552Z",
+    "tmdbFetchedAt": "2026-10-05T08:01:02.173Z",
     "alternativeTitles": [
       {
         "title": "Romance on Ice",
@@ -81387,9 +81392,9 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1032578",
       "imdb": "https://www.imdb.com/title/tt22499790/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:41:22.392Z",
+    "tmdbUpdatedAt": "2026-10-05T08:01:03.536Z",
     "premiereDate": "2022-12-17",
-    "tmdbFetchedAt": "2026-10-04T07:41:22.392Z",
+    "tmdbFetchedAt": "2026-10-05T08:01:03.536Z",
     "alternativeTitles": [
       {
         "title": "Big Box Christmas",
@@ -81572,9 +81577,9 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1024776",
       "imdb": "https://www.imdb.com/title/tt22072268/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:41:23.325Z",
+    "tmdbUpdatedAt": "2026-10-05T08:01:04.174Z",
     "premiereDate": "2022-12-03",
-    "tmdbFetchedAt": "2026-10-04T07:41:23.325Z",
+    "tmdbFetchedAt": "2026-10-05T08:01:04.174Z",
     "alternativeTitles": [
       {
         "title": "Candace Cameron Bure Presents: Christmas on Candy Cane Lane",
@@ -81784,9 +81789,9 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1029578",
       "imdb": "https://www.imdb.com/title/tt22333954/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:41:24.056Z",
+    "tmdbUpdatedAt": "2026-10-05T08:01:04.812Z",
     "premiereDate": "2022-12-04",
-    "tmdbFetchedAt": "2026-10-04T07:41:24.056Z",
+    "tmdbFetchedAt": "2026-10-05T08:01:04.812Z",
     "alternativeTitles": [
       {
         "title": "Stay for Christmas",
@@ -81975,9 +81980,9 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1024038",
       "imdb": "https://www.imdb.com/title/tt22050856/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:41:24.775Z",
+    "tmdbUpdatedAt": "2026-10-05T08:01:05.431Z",
     "premiereDate": "2022-11-27",
-    "tmdbFetchedAt": "2026-10-04T07:41:24.775Z",
+    "tmdbFetchedAt": "2026-10-05T08:01:05.431Z",
     "alternativeTitles": [
       {
         "title": "Candace Cameron Bure Presents: A Christmas…Present",
@@ -82184,9 +82189,9 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/971464",
       "imdb": "https://www.imdb.com/title/tt19895682/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:41:26.363Z",
+    "tmdbUpdatedAt": "2026-10-05T08:01:06.100Z",
     "premiereDate": "2022-11-20",
-    "tmdbFetchedAt": "2026-10-04T07:41:26.363Z",
+    "tmdbFetchedAt": "2026-10-05T08:01:06.100Z",
     "alternativeTitles": [
       {
         "title": "Der beste Weihnachtsbaum",
@@ -82394,9 +82399,9 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/971475",
       "imdb": "https://www.imdb.com/title/tt14789426/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:41:27.091Z",
+    "tmdbUpdatedAt": "2026-10-05T08:01:06.692Z",
     "premiereDate": "2022-11-19",
-    "tmdbFetchedAt": "2026-10-04T07:41:27.091Z",
+    "tmdbFetchedAt": "2026-10-05T08:01:06.692Z",
     "alternativeTitles": [
       {
         "title": "Christmas At Pine Valley",
@@ -82410,7 +82415,7 @@ export const MOVIES: Movie[] = [
     "title": "Love at the Christmas Contest",
     "year": 2022,
     "brandId": "gaf",
-    "releaseDate": "2022-12-06",
+    "releaseDate": "2022-10-28",
     "runtimeMinutes": 90,
     "synopsis": "A young woman enters a Christmas tree decorating contest to honor the memory of her mother, only to discover that the competition includes her recently-widowed high school sweetheart, and his adorable 10-year-old daughter.",
     "posterUrl": "/images/posters/911826.jpg",
@@ -82613,9 +82618,9 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/911826",
       "imdb": "https://www.imdb.com/title/tt14187584/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:41:28.980Z",
-    "premiereDate": "2022-12-06",
-    "tmdbFetchedAt": "2026-10-04T07:41:28.980Z",
+    "tmdbUpdatedAt": "2026-10-05T08:01:08.040Z",
+    "premiereDate": "2022-10-28",
+    "tmdbFetchedAt": "2026-10-05T08:01:08.040Z",
     "alternativeTitles": [
       {
         "title": "The Christmas Love Tree",
@@ -82782,6 +82787,14 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
+        "id": 551912,
+        "name": "Adam Rockoff",
+        "job": "Screenplay",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/s9Ab4pXryzG3CI1GnBM8HTdA3ye.jpg",
+        "creditId": "6272b27dcaaca20050a59dd3"
+      },
+      {
         "id": 1536497,
         "name": "Blaine Chiappetta",
         "job": "Screenplay",
@@ -82794,14 +82807,6 @@ export const MOVIES: Movie[] = [
         "job": "Director",
         "department": "Directing",
         "creditId": "6272b26b06f9840066b8051e"
-      },
-      {
-        "id": 551912,
-        "name": "Adam Rockoff",
-        "job": "Screenplay",
-        "department": "Writing",
-        "profileUrl": "https://image.tmdb.org/t/p/w500/s9Ab4pXryzG3CI1GnBM8HTdA3ye.jpg",
-        "creditId": "6272b27dcaaca20050a59dd3"
       }
     ],
     "voteAverage": 6,
@@ -82812,9 +82817,9 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/971503",
       "imdb": "https://www.imdb.com/title/tt19898828/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:41:30.590Z",
+    "tmdbUpdatedAt": "2026-10-05T08:01:08.633Z",
     "premiereDate": "2022-11-12",
-    "tmdbFetchedAt": "2026-10-04T07:41:30.590Z",
+    "tmdbFetchedAt": "2026-10-05T08:01:08.633Z",
     "alternativeTitles": [
       {
         "title": "The Christmas Farm",
@@ -83073,9 +83078,9 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/961769",
       "imdb": "https://www.imdb.com/title/tt19264600/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:41:32.280Z",
+    "tmdbUpdatedAt": "2026-10-05T08:01:09.507Z",
     "premiereDate": "2022-10-29",
-    "tmdbFetchedAt": "2026-10-04T07:41:32.280Z",
+    "tmdbFetchedAt": "2026-10-05T08:01:09.507Z",
     "alternativeTitles": [
       {
         "title": "La Navidad está servida",
@@ -83436,9 +83441,9 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1010711",
       "imdb": "https://www.imdb.com/title/tt21329252/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:41:33.855Z",
+    "tmdbUpdatedAt": "2026-10-05T08:01:11.555Z",
     "premiereDate": "2022-10-22",
-    "tmdbFetchedAt": "2026-10-04T07:41:33.855Z",
+    "tmdbFetchedAt": "2026-10-05T08:01:11.555Z",
     "alternativeTitles": [
       {
         "title": "Schicksalhafte Weihnachtstage - Destined at Christmas",
@@ -83687,9 +83692,9 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/886771",
       "imdb": "https://www.imdb.com/title/tt15716528/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:41:35.461Z",
+    "tmdbUpdatedAt": "2026-10-05T08:01:12.859Z",
     "premiereDate": "2021-12-19",
-    "tmdbFetchedAt": "2026-10-04T07:41:35.461Z",
+    "tmdbFetchedAt": "2026-10-05T08:01:12.859Z",
     "alternativeTitles": [
       {
         "title": "Viel Gutes zu Weihnachten",
@@ -83873,9 +83878,9 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/919135",
       "imdb": "https://www.imdb.com/title/tt15511690/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:41:36.228Z",
+    "tmdbUpdatedAt": "2026-10-05T08:01:13.483Z",
     "premiereDate": "2021-12-18",
-    "tmdbFetchedAt": "2026-10-04T07:41:36.228Z"
+    "tmdbFetchedAt": "2026-10-05T08:01:13.483Z"
   },
   {
     "id": "gaf-2021-a-christmas-star",
@@ -84035,9 +84040,9 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/883876",
       "imdb": "https://www.imdb.com/title/tt16150878/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:41:36.975Z",
+    "tmdbUpdatedAt": "2026-10-05T08:01:15.370Z",
     "premiereDate": "2021-12-12",
-    "tmdbFetchedAt": "2026-10-04T07:41:36.975Z"
+    "tmdbFetchedAt": "2026-10-05T08:01:15.370Z"
   },
   {
     "id": "gaf-2021-a-christmas-miracle-for-daisy",
@@ -84232,9 +84237,9 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/881500",
       "imdb": "https://www.imdb.com/title/tt16275882/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:41:39.830Z",
+    "tmdbUpdatedAt": "2026-10-05T08:01:16.007Z",
     "premiereDate": "2021-12-11",
-    "tmdbFetchedAt": "2026-10-04T07:41:39.830Z"
+    "tmdbFetchedAt": "2026-10-05T08:01:16.007Z"
   },
   {
     "id": "gaf-2021-a-lot-like-christmas",
@@ -84456,9 +84461,9 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/877819",
       "imdb": "https://www.imdb.com/title/tt16150870/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:41:40.623Z",
+    "tmdbUpdatedAt": "2026-10-05T08:01:18.077Z",
     "premiereDate": "2021-12-05",
-    "tmdbFetchedAt": "2026-10-04T07:41:40.623Z"
+    "tmdbFetchedAt": "2026-10-05T08:01:18.077Z"
   },
   {
     "id": "gaf-2021-jingle-bell-princess",
@@ -84656,9 +84661,9 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/874257",
       "imdb": "https://www.imdb.com/title/tt16343836/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:41:42.156Z",
+    "tmdbUpdatedAt": "2026-10-05T08:01:19.383Z",
     "premiereDate": "2021-12-04",
-    "tmdbFetchedAt": "2026-10-04T07:41:42.156Z"
+    "tmdbFetchedAt": "2026-10-05T08:01:19.383Z"
   },
   {
     "id": "gaf-2021-angel-falls-christmas",
@@ -84888,9 +84893,9 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/878401",
       "imdb": "https://www.imdb.com/title/tt15978102/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:41:42.866Z",
+    "tmdbUpdatedAt": "2026-10-05T08:01:20.012Z",
     "premiereDate": "2021-11-26",
-    "tmdbFetchedAt": "2026-10-04T07:41:42.866Z",
+    "tmdbFetchedAt": "2026-10-05T08:01:20.012Z",
     "alternativeTitles": [
       {
         "title": "Christmas Bucket List",
@@ -85120,9 +85125,9 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/878424",
       "imdb": "https://www.imdb.com/title/tt15979222/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:41:45.465Z",
+    "tmdbUpdatedAt": "2026-10-05T08:01:21.275Z",
     "premiereDate": "2021-11-20",
-    "tmdbFetchedAt": "2026-10-04T07:41:45.465Z",
+    "tmdbFetchedAt": "2026-10-05T08:01:21.275Z",
     "alternativeTitles": [
       {
         "title": "En godhjertet jul",
@@ -85283,9 +85288,9 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/878419",
       "imdb": "https://www.imdb.com/title/tt15819904/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:41:47.127Z",
+    "tmdbUpdatedAt": "2026-10-05T08:01:22.547Z",
     "premiereDate": "2021-11-27",
-    "tmdbFetchedAt": "2026-10-04T07:41:47.127Z"
+    "tmdbFetchedAt": "2026-10-05T08:01:22.547Z"
   },
   {
     "id": "gaf-2021-christmas-is-you",
@@ -85462,9 +85467,9 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/874227",
       "imdb": "https://www.imdb.com/title/tt16280514/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:41:47.906Z",
+    "tmdbUpdatedAt": "2026-10-05T08:01:24.333Z",
     "premiereDate": "2021-11-28",
-    "tmdbFetchedAt": "2026-10-04T07:41:47.906Z"
+    "tmdbFetchedAt": "2026-10-05T08:01:24.333Z"
   },
   {
     "id": "gaf-2021-christmas-time-is-here",
@@ -85635,18 +85640,18 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
-        "id": 1873028,
-        "name": "Lisa Canfield",
-        "job": "Screenplay",
-        "department": "Writing",
-        "creditId": "6151d12d9974ee0062a00576"
-      },
-      {
         "id": 1873026,
         "name": "Joel Canfield",
         "job": "Screenplay",
         "department": "Writing",
         "creditId": "6151d11ff04d0100444c97cc"
+      },
+      {
+        "id": 1873028,
+        "name": "Lisa Canfield",
+        "job": "Screenplay",
+        "department": "Writing",
+        "creditId": "6151d12d9974ee0062a00576"
       },
       {
         "id": 63783,
@@ -85665,9 +85670,9 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/878417",
       "imdb": "https://www.imdb.com/title/tt15904522/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:41:48.671Z",
+    "tmdbUpdatedAt": "2026-10-05T08:01:24.989Z",
     "premiereDate": "2021-11-13",
-    "tmdbFetchedAt": "2026-10-04T07:41:48.671Z",
+    "tmdbFetchedAt": "2026-10-05T08:01:24.989Z",
     "alternativeTitles": [
       {
         "title": "Julen er her",
@@ -85839,20 +85844,20 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
-        "id": 1445168,
-        "name": "Cara J. Russell",
-        "job": "Writer",
-        "department": "Writing",
-        "profileUrl": "https://image.tmdb.org/t/p/w500/9xDIaVRNZCofvFHKDGg9KGS07uX.jpg",
-        "creditId": "6140d87f9a3c49008c5d4110"
-      },
-      {
         "id": 5917,
         "name": "Ernie Barbarash",
         "job": "Director",
         "department": "Directing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/ezWrRebtvkObXt4yKXPbOukajtm.jpg",
         "creditId": "6140d87785c0a20061b31baa"
+      },
+      {
+        "id": 1445168,
+        "name": "Cara J. Russell",
+        "job": "Writer",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/9xDIaVRNZCofvFHKDGg9KGS07uX.jpg",
+        "creditId": "6140d87f9a3c49008c5d4110"
       }
     ],
     "voteAverage": 5.5,
@@ -85863,15 +85868,15 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/874246",
       "imdb": "https://www.imdb.com/title/tt15359506/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:41:50.620Z",
+    "tmdbUpdatedAt": "2026-10-05T08:01:26.293Z",
     "premiereDate": "2021-11-06",
-    "tmdbFetchedAt": "2026-10-04T07:41:50.620Z"
+    "tmdbFetchedAt": "2026-10-05T08:01:26.293Z"
   },
   {
     "id": "gaf-2025-creating-christmas",
     "slug": "creating-christmas",
     "title": "Creating Christmas",
-    "year": 2025,
+    "year": 2023,
     "brandId": "gaf",
     "releaseDate": "2023-12-14",
     "runtimeMinutes": 90,
@@ -86018,18 +86023,18 @@ export const MOVIES: Movie[] = [
         "creditId": "646a78a2f85958011d73bc0c"
       },
       {
-        "id": 2096319,
-        "name": "Sean Ridgway",
-        "job": "Writer",
-        "department": "Writing",
-        "creditId": "64971324eb79c200ff0073a8"
-      },
-      {
         "id": 3801007,
         "name": "Julie Tortorici",
         "job": "Writer",
         "department": "Writing",
         "creditId": "64971329bbd0b001252a9a47"
+      },
+      {
+        "id": 2096319,
+        "name": "Sean Ridgway",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "64971324eb79c200ff0073a8"
       }
     ],
     "voteAverage": 6.2,
@@ -86040,9 +86045,9 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1129782",
       "imdb": "https://www.imdb.com/title/tt27558065/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:41:51.331Z",
+    "tmdbUpdatedAt": "2026-10-05T08:01:28.661Z",
     "premiereDate": "2023-12-14",
-    "tmdbFetchedAt": "2026-10-04T07:41:51.331Z",
+    "tmdbFetchedAt": "2026-10-05T08:01:28.661Z",
     "alternativeTitles": [
       {
         "title": "Pencil Me In For Christmas",
@@ -86245,7 +86250,7 @@ export const MOVIES: Movie[] = [
     },
     "tmdbUpdatedAt": "2026-10-04T07:41:52.117Z",
     "premiereDate": "2025-10-23",
-    "tmdbFetchedAt": "2026-10-04T07:41:52.117Z",
+    "tmdbFetchedAt": "2026-10-05T08:01:29.322Z",
     "alternativeTitles": [
       {
         "title": "A Royal Icing Christmas",
@@ -86377,11 +86382,11 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
-        "id": 1873026,
-        "name": "Joel Canfield",
+        "id": 4278569,
+        "name": "Lorie Hope",
         "job": "Writer",
         "department": "Writing",
-        "creditId": "6508809242d8a5011bd7bc69"
+        "creditId": "6508809d42d8a500e158cb46"
       },
       {
         "id": 5917,
@@ -86406,11 +86411,11 @@ export const MOVIES: Movie[] = [
         "creditId": "650880d842d8a500fe3bf307"
       },
       {
-        "id": 4278569,
-        "name": "Lorie Hope",
+        "id": 1873026,
+        "name": "Joel Canfield",
         "job": "Writer",
         "department": "Writing",
-        "creditId": "6508809d42d8a500e158cb46"
+        "creditId": "6508809242d8a5011bd7bc69"
       }
     ],
     "voteAverage": 4.9,
@@ -86421,9 +86426,9 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1180367",
       "imdb": "https://www.imdb.com/title/tt28976068/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:41:53.802Z",
+    "tmdbUpdatedAt": "2026-10-05T08:01:31.316Z",
     "premiereDate": "2023-12-03",
-    "tmdbFetchedAt": "2026-10-04T07:41:53.802Z",
+    "tmdbFetchedAt": "2026-10-05T08:01:31.316Z",
     "alternativeTitles": [
       {
         "title": "The Christmas Regift",
@@ -86733,14 +86738,6 @@ export const MOVIES: Movie[] = [
       {
         "id": 62081,
         "name": "Michael Damian",
-        "job": "Director",
-        "department": "Directing",
-        "profileUrl": "https://image.tmdb.org/t/p/w500/toPk7n6y8T8Vgz3NIdFdZGEb1l1.jpg",
-        "creditId": "64641c0276eecf017b792d51"
-      },
-      {
-        "id": 62081,
-        "name": "Michael Damian",
         "job": "Writer",
         "department": "Writing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/toPk7n6y8T8Vgz3NIdFdZGEb1l1.jpg",
@@ -86753,6 +86750,14 @@ export const MOVIES: Movie[] = [
         "department": "Writing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/ygC5V5zwdkiW2PMIxayVv9ue0zw.jpg",
         "creditId": "64641c1d44a42401452d8e19"
+      },
+      {
+        "id": 62081,
+        "name": "Michael Damian",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/toPk7n6y8T8Vgz3NIdFdZGEb1l1.jpg",
+        "creditId": "64641c0276eecf017b792d51"
       }
     ],
     "voteAverage": 6.5,
@@ -86763,9 +86768,9 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1127936",
       "imdb": "https://www.imdb.com/title/tt27975905/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:41:55.406Z",
+    "tmdbUpdatedAt": "2026-10-05T08:01:31.991Z",
     "premiereDate": "2023-11-19",
-    "tmdbFetchedAt": "2026-10-04T07:41:55.406Z",
+    "tmdbFetchedAt": "2026-10-05T08:01:31.991Z",
     "alternativeTitles": [
       {
         "title": "A Paris Christmas Waltz",
@@ -86939,9 +86944,9 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/777405",
       "imdb": "https://www.imdb.com/title/tt13779034/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:41:56.993Z",
+    "tmdbUpdatedAt": "2026-10-05T08:01:32.603Z",
     "premiereDate": "2021-12-24",
-    "tmdbFetchedAt": "2026-10-04T07:41:56.993Z",
+    "tmdbFetchedAt": "2026-10-05T08:01:32.603Z",
     "alternativeTitles": [
       {
         "title": "A Hot Cocoa Christmas",
@@ -87112,14 +87117,6 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
-        "id": 1200466,
-        "name": "Adrian Powers",
-        "job": "Writer",
-        "department": "Writing",
-        "profileUrl": "https://image.tmdb.org/t/p/w500/a6fXzDiDALT9GTum3JEwrvxjAII.jpg",
-        "creditId": "65a581c2d05a0300c8a9e785"
-      },
-      {
         "id": 3663748,
         "name": "Caera Bradshaw",
         "job": "Writer",
@@ -87133,6 +87130,14 @@ export const MOVIES: Movie[] = [
         "department": "Directing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/a6fXzDiDALT9GTum3JEwrvxjAII.jpg",
         "creditId": "65a581b80f2ae101305b6254"
+      },
+      {
+        "id": 1200466,
+        "name": "Adrian Powers",
+        "job": "Writer",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/a6fXzDiDALT9GTum3JEwrvxjAII.jpg",
+        "creditId": "65a581c2d05a0300c8a9e785"
       }
     ],
     "voteAverage": 7.5,
@@ -87143,8 +87148,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1231623",
       "imdb": "https://www.imdb.com/title/tt29922811/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:41:58.631Z",
-    "tmdbFetchedAt": "2026-10-04T07:41:58.631Z",
+    "tmdbUpdatedAt": "2026-10-05T08:01:33.972Z",
+    "tmdbFetchedAt": "2026-10-05T08:01:33.972Z",
     "alternativeTitles": [
       {
         "title": "A Christmas Castle Proposal",
@@ -87164,7 +87169,7 @@ export const MOVIES: Movie[] = [
     "id": "gaf-2024-the-fabric-of-christmas",
     "slug": "the-fabric-of-christmas",
     "title": "The Fabric of Christmas",
-    "year": 2024,
+    "year": 2023,
     "brandId": "gaf",
     "releaseDate": "2023-11-01",
     "premiereDate": "2023-11-01",
@@ -87321,8 +87326,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1131992",
       "imdb": "https://www.imdb.com/title/tt27773299/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:42:00.265Z",
-    "tmdbFetchedAt": "2026-10-04T07:42:00.265Z",
+    "tmdbUpdatedAt": "2026-10-05T08:01:35.550Z",
+    "tmdbFetchedAt": "2026-10-05T08:01:35.550Z",
     "alternativeTitles": [
       {
         "title": "A Cozy Christmas Quilt",
@@ -87338,7 +87343,7 @@ export const MOVIES: Movie[] = [
     "id": "gaf-2022-christmas-lovers-anonymous",
     "slug": "christmas-lovers-anonymous",
     "title": "Christmas Lovers Anonymous",
-    "year": 2022,
+    "year": 2021,
     "brandId": "gaf",
     "releaseDate": "2021-10-30",
     "runtimeMinutes": 90,
@@ -87458,14 +87463,6 @@ export const MOVIES: Movie[] = [
       {
         "id": 1085816,
         "name": "Lexi Giovagnoli",
-        "job": "Director",
-        "department": "Directing",
-        "profileUrl": "https://image.tmdb.org/t/p/w500/uYKpg1QMgk1A2UOor2i1bdJwIYo.jpg",
-        "creditId": "6164bce9cee481002c750c37"
-      },
-      {
-        "id": 1085816,
-        "name": "Lexi Giovagnoli",
         "job": "Writer",
         "department": "Writing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/uYKpg1QMgk1A2UOor2i1bdJwIYo.jpg",
@@ -87477,6 +87474,14 @@ export const MOVIES: Movie[] = [
         "job": "Writer",
         "department": "Writing",
         "creditId": "6164bd0091745b00932dfd6c"
+      },
+      {
+        "id": 1085816,
+        "name": "Lexi Giovagnoli",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/uYKpg1QMgk1A2UOor2i1bdJwIYo.jpg",
+        "creditId": "6164bce9cee481002c750c37"
       }
     ],
     "voteAverage": 5.4,
@@ -87487,9 +87492,9 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/883901",
       "imdb": "https://www.imdb.com/title/tt14207306/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:42:02.177Z",
+    "tmdbUpdatedAt": "2026-10-05T08:01:36.189Z",
     "premiereDate": "2021-10-30",
-    "tmdbFetchedAt": "2026-10-04T07:42:02.177Z",
+    "tmdbFetchedAt": "2026-10-05T08:01:36.189Z",
     "alternativeTitles": [
       {
         "title": "Christmas is Calling",
@@ -87626,8 +87631,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt38492807/"
     },
     "premiereDate": "2025-12-21",
-    "tmdbUpdatedAt": "2026-10-04T07:42:03.101Z",
-    "tmdbFetchedAt": "2026-10-04T07:42:03.101Z",
+    "tmdbUpdatedAt": "2026-10-05T08:01:36.891Z",
+    "tmdbFetchedAt": "2026-10-05T08:01:36.891Z",
     "alternativeTitles": [
       {
         "title": "Mission Merry Christmas",
@@ -87783,19 +87788,19 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
-        "id": 142960,
-        "name": "Harvey Frost",
-        "job": "Director",
-        "department": "Directing",
-        "creditId": "52fe4eaec3a36847f82a10c7"
-      },
-      {
         "id": 951196,
         "name": "Jim Head",
         "job": "Story",
         "department": "Writing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/n5onSVPuaSceXFjcfSSm7P9RPiD.jpg",
         "creditId": "52fe4eaec3a36847f82a10d3"
+      },
+      {
+        "id": 142960,
+        "name": "Harvey Frost",
+        "job": "Director",
+        "department": "Directing",
+        "creditId": "52fe4eaec3a36847f82a10c7"
       }
     ],
     "voteAverage": 6.5,
@@ -87806,8 +87811,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/240906",
       "imdb": "https://www.imdb.com/title/tt3320502/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:42:05.706Z",
-    "tmdbFetchedAt": "2026-10-04T07:42:05.706Z"
+    "tmdbUpdatedAt": "2026-10-05T08:01:38.193Z",
+    "tmdbFetchedAt": "2026-10-05T08:01:38.193Z"
   },
   {
     "id": "gaf-2022-destined-2-christmas-once-more",
@@ -87927,8 +87932,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt29483952/"
     },
     "premiereDate": "2023-10-14",
-    "tmdbUpdatedAt": "2026-10-04T07:42:06.462Z",
-    "tmdbFetchedAt": "2026-10-04T07:42:06.462Z",
+    "tmdbUpdatedAt": "2026-10-05T08:01:40.500Z",
+    "tmdbFetchedAt": "2026-10-05T08:01:40.500Z",
     "alternativeTitles": [
       {
         "title": "Destined at Christmas 2",
@@ -88121,8 +88126,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt28328849/"
     },
     "premiereDate": "2023-11-12",
-    "tmdbUpdatedAt": "2026-10-04T07:42:08.135Z",
-    "tmdbFetchedAt": "2026-10-04T07:42:08.135Z",
+    "tmdbUpdatedAt": "2026-10-05T08:01:42.687Z",
+    "tmdbFetchedAt": "2026-10-05T08:01:42.687Z",
     "alternativeTitles": [
       {
         "title": "An Angel's Fare Christmas",
@@ -88140,8 +88145,8 @@ export const MOVIES: Movie[] = [
     "title": "Santa Bootcamp",
     "year": 2022,
     "brandId": "lifetime",
-    "releaseDate": "2022-12-05",
-    "premiereDate": "2022-12-05",
+    "releaseDate": "2022-11-19",
+    "premiereDate": "2022-11-19",
     "runtimeMinutes": 85,
     "synopsis": "Hired by shopping mall magnate Ed Mancini to host a Christmas gala for his biggest investors, Emily heads to Santa Bootcamp - to find the perfect Santa and the inspiration she'll need to make the evening a success.",
     "posterUrl": "/images/posters/1012286.jpg",
@@ -88304,8 +88309,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1012286",
       "imdb": "https://www.imdb.com/title/tt21650446/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:42:09.851Z",
-    "tmdbFetchedAt": "2026-10-04T07:42:09.851Z"
+    "tmdbUpdatedAt": "2026-10-05T08:01:44.011Z",
+    "tmdbFetchedAt": "2026-10-05T08:01:44.011Z"
   },
   {
     "id": "lifetime-2021-mistletoe-in-montana",
@@ -88481,8 +88486,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/881857",
       "imdb": "https://www.imdb.com/title/tt15196292/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:42:12.659Z",
-    "tmdbFetchedAt": "2026-10-04T07:42:12.659Z"
+    "tmdbUpdatedAt": "2026-10-05T08:01:45.907Z",
+    "tmdbFetchedAt": "2026-10-05T08:01:45.907Z"
   },
   {
     "id": "lifetime-2021-the-holiday-fix-up",
@@ -88657,8 +88662,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/881245",
       "imdb": "https://www.imdb.com/title/tt15245738/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:42:14.513Z",
-    "tmdbFetchedAt": "2026-10-04T07:42:14.513Z",
+    "tmdbUpdatedAt": "2026-10-05T08:01:47.298Z",
+    "tmdbFetchedAt": "2026-10-05T08:01:47.298Z",
     "alternativeTitles": [
       {
         "title": "The Christmas Fix Up",
@@ -88798,6 +88803,14 @@ export const MOVIES: Movie[] = [
       {
         "id": 85563,
         "name": "Brian Herzlinger",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/ii0sX3ATj3kDaDgqZ7mI4EdLbvg.jpg",
+        "creditId": "60a80bf0d55e4d005770a9dc"
+      },
+      {
+        "id": 85563,
+        "name": "Brian Herzlinger",
         "job": "Writer",
         "department": "Writing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/ii0sX3ATj3kDaDgqZ7mI4EdLbvg.jpg",
@@ -88809,14 +88822,6 @@ export const MOVIES: Movie[] = [
         "job": "Writer",
         "department": "Writing",
         "creditId": "60a80c03142ef10078efc6e5"
-      },
-      {
-        "id": 85563,
-        "name": "Brian Herzlinger",
-        "job": "Director",
-        "department": "Directing",
-        "profileUrl": "https://image.tmdb.org/t/p/w500/ii0sX3ATj3kDaDgqZ7mI4EdLbvg.jpg",
-        "creditId": "60a80bf0d55e4d005770a9dc"
       }
     ],
     "voteAverage": 6,
@@ -88827,8 +88832,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/832128",
       "imdb": "https://www.imdb.com/title/tt14681620/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:42:15.248Z",
-    "tmdbFetchedAt": "2026-10-04T07:42:15.248Z"
+    "tmdbUpdatedAt": "2026-10-05T08:01:48.596Z",
+    "tmdbFetchedAt": "2026-10-05T08:01:48.596Z"
   },
   {
     "id": "lifetime-2020-a-sugar-spice-holiday",
@@ -89154,8 +89159,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/743403",
       "imdb": "https://www.imdb.com/title/tt13147954/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:42:16.017Z",
-    "tmdbFetchedAt": "2026-10-04T07:42:16.017Z"
+    "tmdbUpdatedAt": "2026-10-05T08:01:49.251Z",
+    "tmdbFetchedAt": "2026-10-05T08:01:49.251Z"
   },
   {
     "id": "lifetime-2020-the-christmas-setup",
@@ -89355,8 +89360,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/744952",
       "imdb": "https://www.imdb.com/title/tt13147656/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:42:18.272Z",
-    "tmdbFetchedAt": "2026-10-04T07:42:18.272Z",
+    "tmdbUpdatedAt": "2026-10-05T08:01:51.702Z",
+    "tmdbFetchedAt": "2026-10-05T08:01:51.702Z",
     "alternativeTitles": [
       {
         "title": "The Christmas Set Up",
@@ -89637,14 +89642,6 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
-        "id": 52044,
-        "name": "David Winning",
-        "job": "Director",
-        "department": "Directing",
-        "profileUrl": "https://image.tmdb.org/t/p/w500/pQXcLaJ05OVmQuK5uM6Uqeuk1Ce.jpg",
-        "creditId": "5bac0c70c3a3683a9c02ff41"
-      },
-      {
         "id": 1133777,
         "name": "Gregg Rossen",
         "job": "Writer",
@@ -89657,6 +89654,14 @@ export const MOVIES: Movie[] = [
         "job": "Writer",
         "department": "Writing",
         "creditId": "5bac0c820e0a2664d702d871"
+      },
+      {
+        "id": 52044,
+        "name": "David Winning",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/pQXcLaJ05OVmQuK5uM6Uqeuk1Ce.jpg",
+        "creditId": "5bac0c70c3a3683a9c02ff41"
       }
     ],
     "voteAverage": 6,
@@ -89667,8 +89672,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/550650",
       "imdb": "https://www.imdb.com/title/tt8796786/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:42:20.804Z",
-    "tmdbFetchedAt": "2026-10-04T07:42:20.804Z"
+    "tmdbUpdatedAt": "2026-10-05T08:01:53.313Z",
+    "tmdbFetchedAt": "2026-10-05T08:01:53.313Z"
   },
   {
     "id": "lifetime-2023-mom-s-christmas-boyfriend",
@@ -89823,8 +89828,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1183990",
       "imdb": "https://www.imdb.com/title/tt29312035/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:42:22.326Z",
-    "tmdbFetchedAt": "2026-10-04T07:42:22.326Z",
+    "tmdbUpdatedAt": "2026-10-05T08:01:53.968Z",
+    "tmdbFetchedAt": "2026-10-05T08:01:53.968Z",
     "alternativeTitles": [
       {
         "title": "Un amoureux pour Noël",
@@ -90054,12 +90059,12 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
-        "id": 1226385,
-        "name": "Stan Zimmerman",
-        "job": "Writer",
-        "department": "Writing",
-        "profileUrl": "https://image.tmdb.org/t/p/w500/oGKmqcxNCqXaKUZ1GzHXtXP5p0X.jpg",
-        "creditId": "651c4af88c22c000c9080d81"
+        "id": 63783,
+        "name": "Christie Will Wolf",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/vLAxuVAYsIoboSnaLVG1oupsIm8.jpg",
+        "creditId": "651c4ae707216600c5685450"
       },
       {
         "id": 73078,
@@ -90069,12 +90074,12 @@ export const MOVIES: Movie[] = [
         "creditId": "651c4af3072166011c02ccc2"
       },
       {
-        "id": 63783,
-        "name": "Christie Will Wolf",
-        "job": "Director",
-        "department": "Directing",
-        "profileUrl": "https://image.tmdb.org/t/p/w500/vLAxuVAYsIoboSnaLVG1oupsIm8.jpg",
-        "creditId": "651c4ae707216600c5685450"
+        "id": 1226385,
+        "name": "Stan Zimmerman",
+        "job": "Writer",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/oGKmqcxNCqXaKUZ1GzHXtXP5p0X.jpg",
+        "creditId": "651c4af88c22c000c9080d81"
       }
     ],
     "voteAverage": 7.3,
@@ -90085,8 +90090,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1187005",
       "imdb": "https://www.imdb.com/title/tt29379064/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:42:24.475Z",
-    "tmdbFetchedAt": "2026-10-04T07:42:24.475Z",
+    "tmdbUpdatedAt": "2026-10-05T08:01:55.251Z",
+    "tmdbFetchedAt": "2026-10-05T08:01:55.251Z",
     "alternativeTitles": [
       {
         "title": "Les dames des années 80 : Un Noël de Divas",
@@ -90258,21 +90263,6 @@ export const MOVIES: Movie[] = [
         "creditId": "651c55d6967cc73425f1ceb9"
       },
       {
-        "id": 2279909,
-        "name": "Tatiana St. Phard",
-        "job": "Story",
-        "department": "Writing",
-        "profileUrl": "https://image.tmdb.org/t/p/w500/o4fv3c2iYXJJPl1xIGZ1hOALtjw.jpg",
-        "creditId": "6576a0659451e700af02a16c"
-      },
-      {
-        "id": 1057526,
-        "name": "Rickie Castaneda",
-        "job": "Screenplay",
-        "department": "Writing",
-        "creditId": "6576a0baec8a43011a39c73c"
-      },
-      {
         "id": 4423915,
         "name": "Dane K. Braun",
         "job": "Screenplay",
@@ -90282,9 +90272,17 @@ export const MOVIES: Movie[] = [
       {
         "id": 1057526,
         "name": "Rickie Castaneda",
+        "job": "Screenplay",
+        "department": "Writing",
+        "creditId": "6576a0baec8a43011a39c73c"
+      },
+      {
+        "id": 2279909,
+        "name": "Tatiana St. Phard",
         "job": "Story",
         "department": "Writing",
-        "creditId": "6576a08bec8a4300fd7d7a92"
+        "profileUrl": "https://image.tmdb.org/t/p/w500/o4fv3c2iYXJJPl1xIGZ1hOALtjw.jpg",
+        "creditId": "6576a0659451e700af02a16c"
       },
       {
         "id": 2437481,
@@ -90299,6 +90297,13 @@ export const MOVIES: Movie[] = [
         "job": "Screenplay",
         "department": "Writing",
         "creditId": "6576a0a8e93e95218dcb7162"
+      },
+      {
+        "id": 1057526,
+        "name": "Rickie Castaneda",
+        "job": "Story",
+        "department": "Writing",
+        "creditId": "6576a08bec8a4300fd7d7a92"
       }
     ],
     "voteAverage": 6.2,
@@ -90309,8 +90314,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1187021",
       "imdb": "https://www.imdb.com/title/tt30241039/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:42:25.216Z",
-    "tmdbFetchedAt": "2026-10-04T07:42:25.216Z"
+    "tmdbUpdatedAt": "2026-10-05T08:01:57.518Z",
+    "tmdbFetchedAt": "2026-10-05T08:01:57.518Z"
   },
   {
     "id": "lifetime-2023-christmas-at-the-chalet",
@@ -90517,19 +90522,19 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
-        "id": 3634580,
-        "name": "Julia Cranney",
-        "job": "Writer",
-        "department": "Writing",
-        "creditId": "650898c6373ac200e21bce44"
-      },
-      {
         "id": 172428,
         "name": "Lucie Guest",
         "job": "Director",
         "department": "Directing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/wwd9GVDMo8NqDsoVYxeZHKoGrXY.jpg",
         "creditId": "650898bffa27f400eb188607"
+      },
+      {
+        "id": 3634580,
+        "name": "Julia Cranney",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "650898c6373ac200e21bce44"
       }
     ],
     "voteAverage": 6.1,
@@ -90540,8 +90545,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1173912",
       "imdb": "https://www.imdb.com/title/tt29007820/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:42:26.783Z",
-    "tmdbFetchedAt": "2026-10-04T07:42:26.783Z",
+    "tmdbUpdatedAt": "2026-10-05T08:01:59.450Z",
+    "tmdbFetchedAt": "2026-10-05T08:01:59.450Z",
     "alternativeTitles": [
       {
         "title": "Idylle au chalet des neiges",
@@ -90770,20 +90775,20 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
-        "id": 85563,
-        "name": "Brian Herzlinger",
-        "job": "Director",
-        "department": "Directing",
-        "profileUrl": "https://image.tmdb.org/t/p/w500/ii0sX3ATj3kDaDgqZ7mI4EdLbvg.jpg",
-        "creditId": "6339c6fa41a561007a96f22b"
-      },
-      {
         "id": 1328719,
         "name": "Brent Bailey",
         "job": "Writer",
         "department": "Writing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/j2sqzs4qshwjlFSp2LccBPLqnq6.jpg",
         "creditId": "6339c703c2ff3d007ad58826"
+      },
+      {
+        "id": 85563,
+        "name": "Brian Herzlinger",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/ii0sX3ATj3kDaDgqZ7mI4EdLbvg.jpg",
+        "creditId": "6339c6fa41a561007a96f22b"
       }
     ],
     "voteAverage": 6,
@@ -90794,8 +90799,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1031072",
       "imdb": "https://www.imdb.com/title/tt21663620/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:42:27.512Z",
-    "tmdbFetchedAt": "2026-10-04T07:42:27.512Z",
+    "tmdbUpdatedAt": "2026-10-05T08:02:00.754Z",
+    "tmdbFetchedAt": "2026-10-05T08:02:00.754Z",
     "alternativeTitles": [
       {
         "title": "Как влюбиться за 12 дней",
@@ -90982,18 +90987,18 @@ export const MOVIES: Movie[] = [
       {
         "id": 589410,
         "name": "Jake Helgren",
-        "job": "Director",
-        "department": "Directing",
-        "profileUrl": "https://image.tmdb.org/t/p/w500/virgDMoUS8fwCZXcoFchTYdiLgL.jpg",
-        "creditId": "630a0e6e32489b007e85f742"
-      },
-      {
-        "id": 589410,
-        "name": "Jake Helgren",
         "job": "Writer",
         "department": "Writing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/virgDMoUS8fwCZXcoFchTYdiLgL.jpg",
         "creditId": "630a0e7332489b007e85f745"
+      },
+      {
+        "id": 589410,
+        "name": "Jake Helgren",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/virgDMoUS8fwCZXcoFchTYdiLgL.jpg",
+        "creditId": "630a0e6e32489b007e85f742"
       }
     ],
     "voteAverage": 4.9,
@@ -91004,8 +91009,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1017494",
       "imdb": "https://www.imdb.com/title/tt21072238/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:42:29.083Z",
-    "tmdbFetchedAt": "2026-10-04T07:42:29.083Z"
+    "tmdbUpdatedAt": "2026-10-05T08:02:02.099Z",
+    "tmdbFetchedAt": "2026-10-05T08:02:02.099Z"
   },
   {
     "id": "lifetime-2022-record-breaking-christmas",
@@ -91155,19 +91160,19 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
+        "id": 3267726,
+        "name": "W. Stewart",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "6339cfb0cf48a1007a7da3b9"
+      },
+      {
         "id": 1107266,
         "name": "Max McGuire",
         "job": "Director",
         "department": "Directing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/5QOpuZ3ZgoWb7EVvJudtewKqSUJ.jpg",
         "creditId": "6339cfa76728a800825cd63a"
-      },
-      {
-        "id": 3267726,
-        "name": "W. Stewart",
-        "job": "Writer",
-        "department": "Writing",
-        "creditId": "6339cfb0cf48a1007a7da3b9"
       }
     ],
     "voteAverage": 6,
@@ -91178,8 +91183,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1031080",
       "imdb": "https://www.imdb.com/title/tt22751010/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:42:30.666Z",
-    "tmdbFetchedAt": "2026-10-04T07:42:30.666Z",
+    "tmdbUpdatedAt": "2026-10-05T08:02:03.535Z",
+    "tmdbFetchedAt": "2026-10-05T08:02:03.535Z",
     "alternativeTitles": [
       {
         "title": "Una Navidad de récord",
@@ -91295,19 +91300,19 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
-        "id": 3404499,
-        "name": "Tailiah Breon",
-        "job": "Director",
-        "department": "Directing",
-        "creditId": "63149f7a9408ec0083e1d511"
-      },
-      {
         "id": 1781050,
         "name": "Tara Knight",
         "job": "Writer",
         "department": "Writing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/opJMkdk3IllpBPpyOTi5Q1GBUq8.jpg",
         "creditId": "63149f8e0cb335007d3c9b4b"
+      },
+      {
+        "id": 3404499,
+        "name": "Tailiah Breon",
+        "job": "Director",
+        "department": "Directing",
+        "creditId": "63149f7a9408ec0083e1d511"
       }
     ],
     "voteAverage": 7.5,
@@ -91318,8 +91323,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1020473",
       "imdb": "https://www.imdb.com/title/tt21974146/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:42:31.375Z",
-    "tmdbFetchedAt": "2026-10-04T07:42:31.375Z",
+    "tmdbUpdatedAt": "2026-10-05T08:02:04.878Z",
+    "tmdbFetchedAt": "2026-10-05T08:02:04.878Z",
     "alternativeTitles": [
       {
         "title": "The Night Before Christmas",
@@ -91531,8 +91536,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/844869",
       "imdb": "https://www.imdb.com/title/tt14861278/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:42:32.101Z",
-    "tmdbFetchedAt": "2026-10-04T07:42:32.101Z",
+    "tmdbUpdatedAt": "2026-10-05T08:02:05.544Z",
+    "tmdbFetchedAt": "2026-10-05T08:02:05.544Z",
     "alternativeTitles": [
       {
         "title": "A Recipe for Joy",
@@ -91728,18 +91733,18 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
-        "id": 1057526,
-        "name": "Rickie Castaneda",
-        "job": "Writer",
-        "department": "Writing",
-        "creditId": "627e6be7006eee34255c6e22"
-      },
-      {
         "id": 1130509,
         "name": "Robert Vaughn",
         "job": "Director",
         "department": "Directing",
         "creditId": "627e6bdd5aadc41362e78776"
+      },
+      {
+        "id": 1057526,
+        "name": "Rickie Castaneda",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "627e6be7006eee34255c6e22"
       },
       {
         "id": 2437481,
@@ -91757,8 +91762,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/975288",
       "imdb": "https://www.imdb.com/title/tt20220954/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:42:33.739Z",
-    "tmdbFetchedAt": "2026-10-04T07:42:33.739Z",
+    "tmdbUpdatedAt": "2026-10-05T08:02:06.909Z",
+    "tmdbFetchedAt": "2026-10-05T08:02:06.909Z",
     "alternativeTitles": [
       {
         "title": "A Candlelit Christmas",
@@ -91858,8 +91863,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1031165",
       "imdb": "https://www.imdb.com/title/tt21831630/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:42:34.505Z",
-    "tmdbFetchedAt": "2026-10-04T07:42:34.505Z"
+    "tmdbUpdatedAt": "2026-10-05T08:02:08.211Z",
+    "tmdbFetchedAt": "2026-10-05T08:02:08.211Z"
   },
   {
     "id": "lifetime-2022-a-new-orleans-noel",
@@ -92048,8 +92053,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1031039",
       "imdb": "https://www.imdb.com/title/tt18350854/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:42:36.111Z",
-    "tmdbFetchedAt": "2026-10-04T07:42:36.111Z",
+    "tmdbUpdatedAt": "2026-10-05T08:02:08.830Z",
+    "tmdbFetchedAt": "2026-10-05T08:02:08.830Z",
     "alternativeTitles": [
       {
         "title": "Christmas In New Orleans",
@@ -92259,8 +92264,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1003469",
       "imdb": "https://www.imdb.com/title/tt18559372/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:42:38.704Z",
-    "tmdbFetchedAt": "2026-10-04T07:42:38.704Z",
+    "tmdbUpdatedAt": "2026-10-05T08:02:09.455Z",
+    "tmdbFetchedAt": "2026-10-05T08:02:09.455Z",
     "alternativeTitles": [
       {
         "title": "Um Par Perfeito para o Natal",
@@ -92496,8 +92501,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/786556",
       "imdb": "https://www.imdb.com/title/tt13142446/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:42:40.774Z",
-    "tmdbFetchedAt": "2026-10-04T07:42:40.774Z",
+    "tmdbUpdatedAt": "2026-10-05T08:02:11.940Z",
+    "tmdbFetchedAt": "2026-10-05T08:02:11.940Z",
     "alternativeTitles": [
       {
         "title": "Puppy Love for Christmas",
@@ -92682,18 +92687,18 @@ export const MOVIES: Movie[] = [
       {
         "id": 589410,
         "name": "Jake Helgren",
-        "job": "Writer",
-        "department": "Writing",
-        "profileUrl": "https://image.tmdb.org/t/p/w500/virgDMoUS8fwCZXcoFchTYdiLgL.jpg",
-        "creditId": "6339a2eb1750510084c43618"
-      },
-      {
-        "id": 589410,
-        "name": "Jake Helgren",
         "job": "Director",
         "department": "Directing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/virgDMoUS8fwCZXcoFchTYdiLgL.jpg",
         "creditId": "6339a2f1960cde00820b3d07"
+      },
+      {
+        "id": 589410,
+        "name": "Jake Helgren",
+        "job": "Writer",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/virgDMoUS8fwCZXcoFchTYdiLgL.jpg",
+        "creditId": "6339a2eb1750510084c43618"
       }
     ],
     "voteAverage": 4.8,
@@ -92704,8 +92709,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1012608",
       "imdb": "https://www.imdb.com/title/tt18278400/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:42:41.493Z",
-    "tmdbFetchedAt": "2026-10-04T07:42:41.493Z"
+    "tmdbUpdatedAt": "2026-10-05T08:02:13.881Z",
+    "tmdbFetchedAt": "2026-10-05T08:02:13.881Z"
   },
   {
     "id": "lifetime-2022-loving-christmas",
@@ -92892,19 +92897,19 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
-        "id": 2859882,
-        "name": "Timothy Kuryak",
-        "job": "Writer",
-        "department": "Writing",
-        "creditId": "60fdd8113d3557002d553b66"
-      },
-      {
         "id": 1011745,
         "name": "Michelle Ouellet",
         "job": "Director",
         "department": "Directing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/100QRhcPlIeiBeUrlOJR5CefsLd.jpg",
         "creditId": "60fdd80a7ad08c0046e8fe01"
+      },
+      {
+        "id": 2859882,
+        "name": "Timothy Kuryak",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "60fdd8113d3557002d553b66"
       }
     ],
     "voteAverage": 5.4,
@@ -92915,8 +92920,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/826451",
       "imdb": "https://www.imdb.com/title/tt14587370/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:42:43.341Z",
-    "tmdbFetchedAt": "2026-10-04T07:42:43.341Z",
+    "tmdbUpdatedAt": "2026-10-05T08:02:14.509Z",
+    "tmdbFetchedAt": "2026-10-05T08:02:14.509Z",
     "alternativeTitles": [
       {
         "title": "Új szerelem karácsonyra",
@@ -93185,8 +93190,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1030969",
       "imdb": "https://www.imdb.com/title/tt21974122/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:42:44.932Z",
-    "tmdbFetchedAt": "2026-10-04T07:42:44.932Z"
+    "tmdbUpdatedAt": "2026-10-05T08:02:16.498Z",
+    "tmdbFetchedAt": "2026-10-05T08:02:16.498Z"
   },
   {
     "id": "lifetime-2022-single-and-ready-to-jingle",
@@ -93362,18 +93367,18 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
-        "id": 3480963,
-        "name": "Brian Ruberry",
-        "job": "Writer",
-        "department": "Writing",
-        "creditId": "62dc38fa5ca70400679c44f8"
-      },
-      {
         "id": 933689,
         "name": "Wendy Ord",
         "job": "Director",
         "department": "Directing",
         "creditId": "62dc39012866fa00c6bce2eb"
+      },
+      {
+        "id": 3480963,
+        "name": "Brian Ruberry",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "62dc38fa5ca70400679c44f8"
       }
     ],
     "voteAverage": 6.2,
@@ -93384,8 +93389,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1003487",
       "imdb": "https://www.imdb.com/title/tt18298074/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:42:46.595Z",
-    "tmdbFetchedAt": "2026-10-04T07:42:46.595Z",
+    "tmdbUpdatedAt": "2026-10-05T08:02:18.407Z",
+    "tmdbFetchedAt": "2026-10-05T08:02:18.407Z",
     "alternativeTitles": [
       {
         "title": "Destination Christmas",
@@ -93715,19 +93720,19 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
-        "id": 1889559,
-        "name": "Eirene Donohue",
-        "job": "Writer",
-        "department": "Writing",
-        "creditId": "63461f415b4fed0091da0018"
-      },
-      {
         "id": 548599,
         "name": "Dustin Rikert",
         "job": "Director",
         "department": "Directing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/sTHc9pupAI6noW60AsIz02I8tWn.jpg",
         "creditId": "63461f3bb3e627008281d761"
+      },
+      {
+        "id": 1889559,
+        "name": "Eirene Donohue",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "63461f415b4fed0091da0018"
       }
     ],
     "voteAverage": 6,
@@ -93738,8 +93743,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1034168",
       "imdb": "https://www.imdb.com/title/tt22527810/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:42:49.601Z",
-    "tmdbFetchedAt": "2026-10-04T07:42:49.601Z",
+    "tmdbUpdatedAt": "2026-10-05T08:02:19.004Z",
+    "tmdbFetchedAt": "2026-10-05T08:02:19.004Z",
     "alternativeTitles": [
       {
         "title": "12 nap karácsony",
@@ -93945,8 +93950,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1031046",
       "imdb": "https://www.imdb.com/title/tt18350946/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:42:51.150Z",
-    "tmdbFetchedAt": "2026-10-04T07:42:51.150Z"
+    "tmdbUpdatedAt": "2026-10-05T08:02:20.410Z",
+    "tmdbFetchedAt": "2026-10-05T08:02:20.410Z"
   },
   {
     "id": "lifetime-2022-baking-all-the-way",
@@ -94105,19 +94110,19 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
-        "id": 2117291,
-        "name": "Courtney McAllister",
-        "job": "Writer",
-        "department": "Writing",
-        "creditId": "6339d53b481382007d4a1046"
-      },
-      {
         "id": 43311,
         "name": "Yannick Bisson",
         "job": "Director",
         "department": "Directing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/pUxydAXsxH7NwVuB2AFIjMrUxP7.jpg",
         "creditId": "6339d530cfe48f007bf98708"
+      },
+      {
+        "id": 2117291,
+        "name": "Courtney McAllister",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "6339d53b481382007d4a1046"
       }
     ],
     "voteAverage": 5.4,
@@ -94128,8 +94133,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1031091",
       "imdb": "https://www.imdb.com/title/tt14667790/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:42:51.876Z",
-    "tmdbFetchedAt": "2026-10-04T07:42:51.876Z"
+    "tmdbUpdatedAt": "2026-10-05T08:02:22.416Z",
+    "tmdbFetchedAt": "2026-10-05T08:02:22.416Z"
   },
   {
     "id": "lifetime-2022-a-show-stopping-christmas",
@@ -94264,19 +94269,19 @@ export const MOVIES: Movie[] = [
         "creditId": "61a8ee189a64350062a8fb38"
       },
       {
-        "id": 591514,
-        "name": "Joany Kane",
-        "job": "Writer",
-        "department": "Writing",
-        "creditId": "61b0a5871e259a001a6c30c9"
-      },
-      {
         "id": 1456293,
         "name": "Caroline Portu",
         "job": "Writer",
         "department": "Writing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/oNlhhmgVoXldGlTHj1r28pfxUO6.jpg",
         "creditId": "61b0a59ab5bc21001e97b6dc"
+      },
+      {
+        "id": 591514,
+        "name": "Joany Kane",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "61b0a5871e259a001a6c30c9"
       },
       {
         "id": 236510,
@@ -94295,8 +94300,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/910816",
       "imdb": "https://www.imdb.com/title/tt14460090/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:42:52.620Z",
-    "tmdbFetchedAt": "2026-10-04T07:42:52.620Z",
+    "tmdbUpdatedAt": "2026-10-05T08:02:23.071Z",
+    "tmdbFetchedAt": "2026-10-05T08:02:23.071Z",
     "alternativeTitles": [
       {
         "title": "A Playful Romance",
@@ -94493,20 +94498,20 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
+        "id": 59821,
+        "name": "Edmund Entin",
+        "job": "Writer",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/4bqYzqkVVKo4Bd1aOHkjJUhkotC.jpg",
+        "creditId": "62ecc63c2dc44e005d6e49c6"
+      },
+      {
         "id": 59824,
         "name": "Gary Entin",
         "job": "Director",
         "department": "Directing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/8u16LriVqeGgB1KNgedPPSrrpNz.jpg",
         "creditId": "62ecc62e1bf266005da587eb"
-      },
-      {
-        "id": 59821,
-        "name": "Edmund Entin",
-        "job": "Director",
-        "department": "Directing",
-        "profileUrl": "https://image.tmdb.org/t/p/w500/4bqYzqkVVKo4Bd1aOHkjJUhkotC.jpg",
-        "creditId": "62ecc633d036b6005d34f830"
       },
       {
         "id": 59824,
@@ -94519,10 +94524,10 @@ export const MOVIES: Movie[] = [
       {
         "id": 59821,
         "name": "Edmund Entin",
-        "job": "Writer",
-        "department": "Writing",
+        "job": "Director",
+        "department": "Directing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/4bqYzqkVVKo4Bd1aOHkjJUhkotC.jpg",
-        "creditId": "62ecc63c2dc44e005d6e49c6"
+        "creditId": "62ecc633d036b6005d34f830"
       }
     ],
     "voteAverage": 5.5,
@@ -94533,8 +94538,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/996771",
       "imdb": "https://www.imdb.com/title/tt18350906/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:42:54.174Z",
-    "tmdbFetchedAt": "2026-10-04T07:42:54.174Z"
+    "tmdbUpdatedAt": "2026-10-05T08:02:25.499Z",
+    "tmdbFetchedAt": "2026-10-05T08:02:25.499Z"
   },
   {
     "id": "lifetime-2021-sweet-navidad",
@@ -94786,8 +94791,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/910760",
       "imdb": "https://www.imdb.com/title/tt15057086/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:42:56.606Z",
-    "tmdbFetchedAt": "2026-10-04T07:42:56.606Z",
+    "tmdbUpdatedAt": "2026-10-05T08:02:26.737Z",
+    "tmdbFetchedAt": "2026-10-05T08:02:26.737Z",
     "alternativeTitles": [
       {
         "title": "A Pastry Shop Christmas",
@@ -94803,7 +94808,7 @@ export const MOVIES: Movie[] = [
     "id": "lifetime-2022-planes-trains-and-christmas-trees",
     "slug": "planes-trains-and-christmas-trees",
     "title": "Planes, Trains, and Christmas Trees",
-    "year": 2023,
+    "year": 2022,
     "brandId": "lifetime",
     "releaseDate": "2022-11-17",
     "premiereDate": "2022-11-17",
@@ -95047,8 +95052,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/988428",
       "imdb": "https://www.imdb.com/title/tt20876930/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:42:57.341Z",
-    "tmdbFetchedAt": "2026-10-04T07:42:57.341Z",
+    "tmdbUpdatedAt": "2026-10-05T08:02:28.154Z",
+    "tmdbFetchedAt": "2026-10-05T08:02:28.154Z",
     "alternativeTitles": [
       {
         "title": "Planes, Trains and Christmas Trees",
@@ -95084,7 +95089,7 @@ export const MOVIES: Movie[] = [
     "id": "lifetime-2022-christmas-plus-one",
     "slug": "christmas-plus-one",
     "title": "Christmas Plus One",
-    "year": 2023,
+    "year": 2022,
     "brandId": "lifetime",
     "releaseDate": "2022-11-15",
     "premiereDate": "2022-11-15",
@@ -95244,8 +95249,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/993030",
       "imdb": "https://www.imdb.com/title/tt21148452/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:42:58.125Z",
-    "tmdbFetchedAt": "2026-10-04T07:42:58.125Z",
+    "tmdbUpdatedAt": "2026-10-05T08:02:28.755Z",
+    "tmdbFetchedAt": "2026-10-05T08:02:28.755Z",
     "alternativeTitles": [
       {
         "title": "Chasing Christmas",
@@ -95435,8 +95440,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1008366",
       "imdb": "https://www.imdb.com/title/tt21440964/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:42:59.797Z",
-    "tmdbFetchedAt": "2026-10-04T07:42:59.797Z",
+    "tmdbUpdatedAt": "2026-10-05T08:02:30.460Z",
+    "tmdbFetchedAt": "2026-10-05T08:02:30.460Z",
     "alternativeTitles": [
       {
         "title": "Seis Vezes Natal",
@@ -95678,8 +95683,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1012288",
       "imdb": "https://www.imdb.com/title/tt15825220/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:43:01.475Z",
-    "tmdbFetchedAt": "2026-10-04T07:43:01.475Z",
+    "tmdbUpdatedAt": "2026-10-05T08:02:31.813Z",
+    "tmdbFetchedAt": "2026-10-05T08:02:31.813Z",
     "alternativeTitles": [
       {
         "title": "Reindeer Games",
@@ -95888,18 +95893,18 @@ export const MOVIES: Movie[] = [
       {
         "id": 43426,
         "name": "Robin Dunne",
-        "job": "Writer",
-        "department": "Writing",
-        "profileUrl": "https://image.tmdb.org/t/p/w500/4TW7bd7yyRB1hjQdn0Ej3XAKVnu.jpg",
-        "creditId": "62580bbaa58902009ce8f0c6"
-      },
-      {
-        "id": 43426,
-        "name": "Robin Dunne",
         "job": "Director",
         "department": "Directing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/4TW7bd7yyRB1hjQdn0Ej3XAKVnu.jpg",
         "creditId": "62580bb3afe224009d82f581"
+      },
+      {
+        "id": 43426,
+        "name": "Robin Dunne",
+        "job": "Writer",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/4TW7bd7yyRB1hjQdn0Ej3XAKVnu.jpg",
+        "creditId": "62580bbaa58902009ce8f0c6"
       }
     ],
     "voteAverage": 6.6,
@@ -95910,8 +95915,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/962589",
       "imdb": "https://www.imdb.com/title/tt19514490/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:43:03.140Z",
-    "tmdbFetchedAt": "2026-10-04T07:43:03.140Z",
+    "tmdbUpdatedAt": "2026-10-05T08:02:33.083Z",
+    "tmdbFetchedAt": "2026-10-05T08:02:33.083Z",
     "alternativeTitles": [
       {
         "title": "Noël à Mistletoe Lake",
@@ -96072,8 +96077,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1029354",
       "imdb": "https://www.imdb.com/title/tt22740828/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:43:03.868Z",
-    "tmdbFetchedAt": "2026-10-04T07:43:03.868Z"
+    "tmdbUpdatedAt": "2026-10-05T08:02:33.703Z",
+    "tmdbFetchedAt": "2026-10-05T08:02:33.703Z"
   },
   {
     "id": "lifetime-2022-merry-swissmas",
@@ -96290,8 +96295,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1012042",
       "imdb": "https://www.imdb.com/title/tt21662290/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:43:04.675Z",
-    "tmdbFetchedAt": "2026-10-04T07:43:04.675Z",
+    "tmdbUpdatedAt": "2026-10-05T08:02:34.347Z",
+    "tmdbFetchedAt": "2026-10-05T08:02:34.347Z",
     "alternativeTitles": [
       {
         "title": "A Christmas in Switzerland",
@@ -96492,8 +96497,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/883884",
       "imdb": "https://www.imdb.com/title/tt14721936/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:43:05.567Z",
-    "tmdbFetchedAt": "2026-10-04T07:43:05.567Z",
+    "tmdbUpdatedAt": "2026-10-05T08:02:35.687Z",
+    "tmdbFetchedAt": "2026-10-05T08:02:35.687Z",
     "alternativeTitles": [
       {
         "title": "Love at the Christmas Chalet",
@@ -96654,20 +96659,20 @@ export const MOVIES: Movie[] = [
         "creditId": "6140b79cd236e600672549c5"
       },
       {
-        "id": 1704379,
-        "name": "Casie Tabanou",
-        "job": "Writer",
-        "department": "Writing",
-        "profileUrl": "https://image.tmdb.org/t/p/w500/va6Ct9eGsmkQeq7aqQ7H34lTeYz.jpg",
-        "creditId": "6140b7a9006b010063edc916"
-      },
-      {
         "id": 1704378,
         "name": "Alison Spuck McNeeley",
         "job": "Writer",
         "department": "Writing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/c1RgGasjt4lvOgetJCUGLfNdS8N.jpg",
         "creditId": "6140b7a3006b01008de76615"
+      },
+      {
+        "id": 1704379,
+        "name": "Casie Tabanou",
+        "job": "Writer",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/va6Ct9eGsmkQeq7aqQ7H34lTeYz.jpg",
+        "creditId": "6140b7a9006b010063edc916"
       }
     ],
     "voteAverage": 5.9,
@@ -96678,8 +96683,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/874199",
       "imdb": "https://www.imdb.com/title/tt14055444/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:43:07.121Z",
-    "tmdbFetchedAt": "2026-10-04T07:43:07.121Z",
+    "tmdbUpdatedAt": "2026-10-05T08:02:36.994Z",
+    "tmdbFetchedAt": "2026-10-05T08:02:36.994Z",
     "alternativeTitles": [
       {
         "title": "Christmas in Crumbs",
@@ -96881,8 +96886,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/878384",
       "imdb": "https://www.imdb.com/title/tt15187842/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:43:09.364Z",
-    "tmdbFetchedAt": "2026-10-04T07:43:09.364Z",
+    "tmdbUpdatedAt": "2026-10-05T08:02:38.937Z",
+    "tmdbFetchedAt": "2026-10-05T08:02:38.937Z",
     "alternativeTitles": [
       {
         "title": "The Holiday Train",
@@ -97034,8 +97039,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/879170",
       "imdb": "https://www.imdb.com/title/tt15515934/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:43:10.893Z",
-    "tmdbFetchedAt": "2026-10-04T07:43:10.893Z",
+    "tmdbUpdatedAt": "2026-10-05T08:02:39.551Z",
+    "tmdbFetchedAt": "2026-10-05T08:02:39.551Z",
     "alternativeTitles": [
       {
         "title": "A Christmas Rivalry",
@@ -97240,8 +97245,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/879111",
       "imdb": "https://www.imdb.com/title/tt15299238/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:43:12.483Z",
-    "tmdbFetchedAt": "2026-10-04T07:43:12.483Z",
+    "tmdbUpdatedAt": "2026-10-05T08:02:40.206Z",
+    "tmdbFetchedAt": "2026-10-05T08:02:40.206Z",
     "alternativeTitles": [
       {
         "title": "Dancing Through Christmas",
@@ -97402,20 +97407,6 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
-        "id": 2523189,
-        "name": "D.F.W. Buckingham",
-        "job": "Writer",
-        "department": "Writing",
-        "creditId": "5fc6709613a388003f045d9e"
-      },
-      {
-        "id": 987163,
-        "name": "Robert Tiffe",
-        "job": "Writer",
-        "department": "Writing",
-        "creditId": "5fc670adfad8e9003eb944cd"
-      },
-      {
         "id": 1446356,
         "name": "Sandra L. Martin",
         "job": "Director",
@@ -97429,6 +97420,20 @@ export const MOVIES: Movie[] = [
         "job": "Writer",
         "department": "Writing",
         "creditId": "5fc66f44fba6250043a1e3b2"
+      },
+      {
+        "id": 2523189,
+        "name": "D.F.W. Buckingham",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "5fc6709613a388003f045d9e"
+      },
+      {
+        "id": 987163,
+        "name": "Robert Tiffe",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "5fc670adfad8e9003eb944cd"
       }
     ],
     "voteAverage": 5.7,
@@ -97439,8 +97444,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/770593",
       "imdb": "https://www.imdb.com/title/tt12921552/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:43:14.901Z",
-    "tmdbFetchedAt": "2026-10-04T07:43:14.901Z",
+    "tmdbUpdatedAt": "2026-10-05T08:02:41.943Z",
+    "tmdbFetchedAt": "2026-10-05T08:02:41.943Z",
     "alternativeTitles": [
       {
         "title": "Christmas Comes Home",
@@ -97661,8 +97666,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/879227",
       "imdb": "https://www.imdb.com/title/tt15515030/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:43:17.493Z",
-    "tmdbFetchedAt": "2026-10-04T07:43:17.493Z"
+    "tmdbUpdatedAt": "2026-10-05T08:02:43.334Z",
+    "tmdbFetchedAt": "2026-10-05T08:02:43.334Z"
   },
   {
     "id": "lifetime-2020-the-christmas-ball",
@@ -97801,8 +97806,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/734274",
       "imdb": "https://www.imdb.com/title/tt11667022/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:43:18.217Z",
-    "tmdbFetchedAt": "2026-10-04T07:43:18.217Z",
+    "tmdbUpdatedAt": "2026-10-05T08:02:43.945Z",
+    "tmdbFetchedAt": "2026-10-05T08:02:43.945Z",
     "alternativeTitles": [
       {
         "title": "El baile navideno",
@@ -97956,19 +97961,19 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
+        "id": 1228534,
+        "name": "Andrea Stevens",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "61942ed11fd36f0095005693"
+      },
+      {
         "id": 2015552,
         "name": "Kelly Fyffe-Marshall",
         "job": "Director",
         "department": "Directing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/iUmj3V2hVFEZILJp8aZBn67c0Ig.jpg",
         "creditId": "61942eca1dbc880093d2b4aa"
-      },
-      {
-        "id": 1228534,
-        "name": "Andrea Stevens",
-        "job": "Writer",
-        "department": "Writing",
-        "creditId": "61942ed11fd36f0095005693"
       }
     ],
     "voteAverage": 7.5,
@@ -97979,8 +97984,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/880545",
       "imdb": "https://www.imdb.com/title/tt15783694/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:43:18.920Z",
-    "tmdbFetchedAt": "2026-10-04T07:43:18.920Z"
+    "tmdbUpdatedAt": "2026-10-05T08:02:45.191Z",
+    "tmdbFetchedAt": "2026-10-05T08:02:45.191Z"
   },
   {
     "id": "lifetime-2021-under-the-christmas-tree",
@@ -98194,8 +98199,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/883936",
       "imdb": "https://www.imdb.com/title/tt15515882/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:43:19.648Z",
-    "tmdbFetchedAt": "2026-10-04T07:43:19.648Z"
+    "tmdbUpdatedAt": "2026-10-05T08:02:46.472Z",
+    "tmdbFetchedAt": "2026-10-05T08:02:46.472Z"
   },
   {
     "id": "lifetime-2021-my-favorite-christmas-melody",
@@ -98366,8 +98371,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/881087",
       "imdb": "https://www.imdb.com/title/tt15515460/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:43:20.366Z",
-    "tmdbFetchedAt": "2026-10-04T07:43:20.366Z",
+    "tmdbUpdatedAt": "2026-10-05T08:02:47.225Z",
+    "tmdbFetchedAt": "2026-10-05T08:02:47.225Z",
     "alternativeTitles": [
       {
         "title": "Моя любимая мелодия",
@@ -98567,14 +98572,6 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
-        "id": 1085212,
-        "name": "Jenny Miller",
-        "job": "Writer",
-        "department": "Writing",
-        "profileUrl": "https://image.tmdb.org/t/p/w500/dOeSJzNr4glmXuse2u30sjbHqLG.jpg",
-        "creditId": "60fdd0ef2fdec60029f95841"
-      },
-      {
         "id": 937788,
         "name": "Adrian Langley",
         "job": "Director",
@@ -98587,6 +98584,14 @@ export const MOVIES: Movie[] = [
         "job": "Writer",
         "department": "Writing",
         "creditId": "60fdd0d17ad08c005e0bbd90"
+      },
+      {
+        "id": 1085212,
+        "name": "Jenny Miller",
+        "job": "Writer",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/dOeSJzNr4glmXuse2u30sjbHqLG.jpg",
+        "creditId": "60fdd0ef2fdec60029f95841"
       }
     ],
     "voteAverage": 5.7,
@@ -98597,8 +98602,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/854199",
       "imdb": "https://www.imdb.com/title/tt14502376/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:43:22.025Z",
-    "tmdbFetchedAt": "2026-10-04T07:43:22.025Z",
+    "tmdbUpdatedAt": "2026-10-05T08:02:49.431Z",
+    "tmdbFetchedAt": "2026-10-05T08:02:49.431Z",
     "alternativeTitles": [
       {
         "title": "Christmas in Washington",
@@ -98784,11 +98789,11 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
-        "id": 1410439,
-        "name": "Linda Kupecek",
-        "job": "Writer",
-        "department": "Writing",
-        "creditId": "615e481e245dbe008649bea1"
+        "id": 1130509,
+        "name": "Robert Vaughn",
+        "job": "Director",
+        "department": "Directing",
+        "creditId": "615e47f6c8a2d4006237dd68"
       },
       {
         "id": 43426,
@@ -98799,11 +98804,11 @@ export const MOVIES: Movie[] = [
         "creditId": "615e480d67e0f7008a6e4e70"
       },
       {
-        "id": 1130509,
-        "name": "Robert Vaughn",
-        "job": "Director",
-        "department": "Directing",
-        "creditId": "615e47f6c8a2d4006237dd68"
+        "id": 1410439,
+        "name": "Linda Kupecek",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "615e481e245dbe008649bea1"
       },
       {
         "id": 1130509,
@@ -98821,8 +98826,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/881853",
       "imdb": "https://www.imdb.com/title/tt15091462/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:43:24.630Z",
-    "tmdbFetchedAt": "2026-10-04T07:43:24.630Z"
+    "tmdbUpdatedAt": "2026-10-05T08:02:51.094Z",
+    "tmdbFetchedAt": "2026-10-05T08:02:51.094Z"
   },
   {
     "id": "lifetime-2021-ghosts-of-christmas-past",
@@ -99008,19 +99013,19 @@ export const MOVIES: Movie[] = [
         "creditId": "6164e0c991745b002bb9c16d"
       },
       {
+        "id": 3060708,
+        "name": "Shannon Latimer",
+        "job": "Screenplay",
+        "department": "Writing",
+        "creditId": "61db65c10bb076001cd98f05"
+      },
+      {
         "id": 1866130,
         "name": "John Hartman",
         "job": "Story",
         "department": "Writing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/wVs9ncZ28tEIURhPLaXbOq53F4Q.jpg",
         "creditId": "61db65da73520500423cbeff"
-      },
-      {
-        "id": 3060708,
-        "name": "Shannon Latimer",
-        "job": "Screenplay",
-        "department": "Writing",
-        "creditId": "61db65c10bb076001cd98f05"
       }
     ],
     "voteAverage": 6.2,
@@ -99031,8 +99036,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/883951",
       "imdb": "https://www.imdb.com/title/tt15515750/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:43:26.262Z",
-    "tmdbFetchedAt": "2026-10-04T07:43:26.262Z",
+    "tmdbUpdatedAt": "2026-10-05T08:02:51.724Z",
+    "tmdbFetchedAt": "2026-10-05T08:02:51.724Z",
     "alternativeTitles": [
       {
         "title": "Der Geist der vergangenen Weihnacht",
@@ -99224,19 +99229,19 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
+        "id": 3267726,
+        "name": "W. Stewart",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "6164e210e942ee006275c96b"
+      },
+      {
         "id": 1107266,
         "name": "Max McGuire",
         "job": "Director",
         "department": "Directing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/5QOpuZ3ZgoWb7EVvJudtewKqSUJ.jpg",
         "creditId": "6164e1f3158c8500650a5bfb"
-      },
-      {
-        "id": 3267726,
-        "name": "W. Stewart",
-        "job": "Writer",
-        "department": "Writing",
-        "creditId": "6164e210e942ee006275c96b"
       }
     ],
     "voteAverage": 5.7,
@@ -99247,8 +99252,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/883955",
       "imdb": "https://www.imdb.com/title/tt15197106/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:43:28.101Z",
-    "tmdbFetchedAt": "2026-10-04T07:43:28.101Z",
+    "tmdbUpdatedAt": "2026-10-05T08:02:53.069Z",
+    "tmdbFetchedAt": "2026-10-05T08:02:53.069Z",
     "alternativeTitles": [
       {
         "title": "Christmas Explorer",
@@ -99472,8 +99477,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/881246",
       "imdb": "https://www.imdb.com/title/tt14444182/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:43:30.649Z",
-    "tmdbFetchedAt": "2026-10-04T07:43:30.649Z",
+    "tmdbUpdatedAt": "2026-10-05T08:02:54.406Z",
+    "tmdbFetchedAt": "2026-10-05T08:02:54.406Z",
     "alternativeTitles": [
       {
         "title": "People Presents: Blending Christmas",
@@ -99656,8 +99661,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/724425",
       "imdb": "https://www.imdb.com/title/tt11615500/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:43:32.400Z",
-    "tmdbFetchedAt": "2026-10-04T07:43:32.400Z",
+    "tmdbUpdatedAt": "2026-10-05T08:02:55.010Z",
+    "tmdbFetchedAt": "2026-10-05T08:02:55.010Z",
     "alternativeTitles": [
       {
         "title": "A Candy Cane Christmas",
@@ -99876,8 +99881,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/881239",
       "imdb": "https://www.imdb.com/title/tt14482374/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:43:33.975Z",
-    "tmdbFetchedAt": "2026-10-04T07:43:33.975Z",
+    "tmdbUpdatedAt": "2026-10-05T08:02:57.004Z",
+    "tmdbFetchedAt": "2026-10-05T08:02:57.004Z",
     "alternativeTitles": [
       {
         "title": "A Gift Shop Christmas",
@@ -100081,8 +100086,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/881233",
       "imdb": "https://www.imdb.com/title/tt14300966/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:43:34.688Z",
-    "tmdbFetchedAt": "2026-10-04T07:43:34.688Z",
+    "tmdbUpdatedAt": "2026-10-05T08:02:57.646Z",
+    "tmdbFetchedAt": "2026-10-05T08:02:57.646Z",
     "alternativeTitles": [
       {
         "title": "More Than I Wished For",
@@ -100365,8 +100370,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/757771",
       "imdb": "https://www.imdb.com/title/tt12986254/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:43:36.354Z",
-    "tmdbFetchedAt": "2026-10-04T07:43:36.354Z",
+    "tmdbUpdatedAt": "2026-10-05T08:02:58.926Z",
+    "tmdbFetchedAt": "2026-10-05T08:02:58.926Z",
     "alternativeTitles": [
       {
         "title": "Ein Prinz zu Weihnachten",
@@ -100587,8 +100592,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/880934",
       "imdb": "https://www.imdb.com/title/tt15515260/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:43:37.253Z",
-    "tmdbFetchedAt": "2026-10-04T07:43:37.253Z",
+    "tmdbUpdatedAt": "2026-10-05T08:02:59.576Z",
+    "tmdbFetchedAt": "2026-10-05T08:02:59.576Z",
     "alternativeTitles": [
       {
         "title": "Каникулы на работе",
@@ -100749,27 +100754,6 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
-        "id": 2437481,
-        "name": "Megan Hocking",
-        "job": "Writer",
-        "department": "Writing",
-        "creditId": "6158d28dec18790062c6984f"
-      },
-      {
-        "id": 2418627,
-        "name": "Caitlin English",
-        "job": "Story",
-        "department": "Writing",
-        "creditId": "6158d2841c635b00447e1d9e"
-      },
-      {
-        "id": 1057526,
-        "name": "Rickie Castaneda",
-        "job": "Writer",
-        "department": "Writing",
-        "creditId": "6158d27312aabc008e258027"
-      },
-      {
         "id": 1130509,
         "name": "Robert Vaughn",
         "job": "Director",
@@ -100782,6 +100766,27 @@ export const MOVIES: Movie[] = [
         "job": "Story",
         "department": "Writing",
         "creditId": "6158d248dbf1440044b9b239"
+      },
+      {
+        "id": 1057526,
+        "name": "Rickie Castaneda",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "6158d27312aabc008e258027"
+      },
+      {
+        "id": 2418627,
+        "name": "Caitlin English",
+        "job": "Story",
+        "department": "Writing",
+        "creditId": "6158d2841c635b00447e1d9e"
+      },
+      {
+        "id": 2437481,
+        "name": "Megan Hocking",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "6158d28dec18790062c6984f"
       }
     ],
     "voteAverage": 4.9,
@@ -100792,8 +100797,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/880595",
       "imdb": "https://www.imdb.com/title/tt15515522/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:43:38.934Z",
-    "tmdbFetchedAt": "2026-10-04T07:43:38.934Z"
+    "tmdbUpdatedAt": "2026-10-05T08:03:01.030Z",
+    "tmdbFetchedAt": "2026-10-05T08:03:01.030Z"
   },
   {
     "id": "lifetime-2020-spotlight-on-christmas",
@@ -101063,20 +101068,20 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
-        "id": 91402,
-        "name": "Ali Liebert",
-        "job": "Director",
-        "department": "Directing",
-        "profileUrl": "https://image.tmdb.org/t/p/w500/gBqC2pUU7TtW9pdYqernpRivSel.jpg",
-        "creditId": "5f7a7db19a64350038b01dc1"
-      },
-      {
         "id": 1090397,
         "name": "Juliana Wimbles",
         "job": "Writer",
         "department": "Writing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/bO3V0d7H9hwtIbO9iBe1D7UVpAR.jpg",
         "creditId": "5f7a7dbb42bf01003704f800"
+      },
+      {
+        "id": 91402,
+        "name": "Ali Liebert",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/gBqC2pUU7TtW9pdYqernpRivSel.jpg",
+        "creditId": "5f7a7db19a64350038b01dc1"
       }
     ],
     "voteAverage": 6.2,
@@ -101087,8 +101092,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/744945",
       "imdb": "https://www.imdb.com/title/tt13189798/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:43:40.623Z",
-    "tmdbFetchedAt": "2026-10-04T07:43:40.623Z",
+    "tmdbUpdatedAt": "2026-10-05T08:03:01.678Z",
+    "tmdbFetchedAt": "2026-10-05T08:03:01.678Z",
     "alternativeTitles": [
       {
         "title": "Starring Christmas",
@@ -101209,8 +101214,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/881077",
       "imdb": "https://www.imdb.com/title/tt15515414/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:43:42.188Z",
-    "tmdbFetchedAt": "2026-10-04T07:43:42.188Z"
+    "tmdbUpdatedAt": "2026-10-05T08:03:02.943Z",
+    "tmdbFetchedAt": "2026-10-05T08:03:02.943Z"
   },
   {
     "id": "lifetime-2021-it-takes-a-christmas-village",
@@ -101376,8 +101381,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/874252",
       "imdb": "https://www.imdb.com/title/tt14060986/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:43:42.931Z",
-    "tmdbFetchedAt": "2026-10-04T07:43:42.931Z",
+    "tmdbUpdatedAt": "2026-10-05T08:03:03.545Z",
+    "tmdbFetchedAt": "2026-10-05T08:03:03.545Z",
     "alternativeTitles": [
       {
         "title": "The Christmas Market",
@@ -101639,19 +101644,19 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
+        "id": 1243311,
+        "name": "Alfons Adetuyi",
+        "job": "Director",
+        "department": "Directing",
+        "creditId": "6158a94cec1879002c8ea114"
+      },
+      {
         "id": 235557,
         "name": "Rhonda Baraka",
         "job": "Writer",
         "department": "Writing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/merppkW4qfm1OwvgPMf5tV8Otaa.jpg",
         "creditId": "6158a9e943d9b100952e2443"
-      },
-      {
-        "id": 1243311,
-        "name": "Alfons Adetuyi",
-        "job": "Director",
-        "department": "Directing",
-        "creditId": "6158a94cec1879002c8ea114"
       }
     ],
     "voteAverage": 4.6,
@@ -101662,8 +101667,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/880550",
       "imdb": "https://www.imdb.com/title/tt15515218/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:43:43.714Z",
-    "tmdbFetchedAt": "2026-10-04T07:43:43.714Z",
+    "tmdbUpdatedAt": "2026-10-05T08:03:04.132Z",
+    "tmdbFetchedAt": "2026-10-05T08:03:04.132Z",
     "alternativeTitles": [
       {
         "title": "A Miracle in Motor City",
@@ -101870,8 +101875,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/744950",
       "imdb": "https://www.imdb.com/title/tt11666938/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:43:44.453Z",
-    "tmdbFetchedAt": "2026-10-04T07:43:44.453Z",
+    "tmdbUpdatedAt": "2026-10-05T08:03:06.041Z",
+    "tmdbFetchedAt": "2026-10-05T08:03:06.041Z",
     "alternativeTitles": [
       {
         "title": "Inn for Christmas",
@@ -102107,19 +102112,19 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
-        "id": 1845013,
-        "name": "John Dion",
-        "job": "Writer",
-        "department": "Writing",
-        "creditId": "60bf5314960cde002983a9de"
-      },
-      {
         "id": 1725539,
         "name": "Sharon Lewis",
         "job": "Director",
         "department": "Directing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/vR8C9eiOvWfHhY4hHwdT4se2e2X.jpg",
         "creditId": "60bf52fa5b124000591121ae"
+      },
+      {
+        "id": 1845013,
+        "name": "John Dion",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "60bf5314960cde002983a9de"
       }
     ],
     "voteAverage": 5.3,
@@ -102130,8 +102135,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/838189",
       "imdb": "https://www.imdb.com/title/tt14723400/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:43:45.188Z",
-    "tmdbFetchedAt": "2026-10-04T07:43:45.188Z",
+    "tmdbUpdatedAt": "2026-10-05T08:03:07.402Z",
+    "tmdbFetchedAt": "2026-10-05T08:03:07.402Z",
     "alternativeTitles": [
       {
         "title": "Falling in Love at Christmas - Ein perfektes Weihnachtsmatch",
@@ -102386,19 +102391,19 @@ export const MOVIES: Movie[] = [
         "creditId": "6158b3caf1759c00614dd2f8"
       },
       {
+        "id": 3256649,
+        "name": "Michael H. Daniels",
+        "job": "Story",
+        "department": "Writing",
+        "creditId": "6158b3b1dd731b008b936a72"
+      },
+      {
         "id": 589410,
         "name": "Jake Helgren",
         "job": "Director",
         "department": "Directing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/virgDMoUS8fwCZXcoFchTYdiLgL.jpg",
         "creditId": "6158b3a7eb14fa008c101272"
-      },
-      {
-        "id": 3256649,
-        "name": "Michael H. Daniels",
-        "job": "Story",
-        "department": "Writing",
-        "creditId": "6158b3b1dd731b008b936a72"
       },
       {
         "id": 589410,
@@ -102417,8 +102422,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/880554",
       "imdb": "https://www.imdb.com/title/tt14777678/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:43:45.953Z",
-    "tmdbFetchedAt": "2026-10-04T07:43:45.953Z",
+    "tmdbUpdatedAt": "2026-10-05T08:03:08.038Z",
+    "tmdbFetchedAt": "2026-10-05T08:03:08.038Z",
     "alternativeTitles": [
       {
         "title": "A Christmas Family Reunion",
@@ -102567,8 +102572,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/880536",
       "imdb": "https://www.imdb.com/title/tt15254212/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:43:48.426Z",
-    "tmdbFetchedAt": "2026-10-04T07:43:48.426Z",
+    "tmdbUpdatedAt": "2026-10-05T08:03:09.361Z",
+    "tmdbFetchedAt": "2026-10-05T08:03:09.361Z",
     "alternativeTitles": [
       {
         "title": "Reba McEntire's Christmas in Tune",
@@ -102787,8 +102792,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/844819",
       "imdb": "https://www.imdb.com/title/tt14909414/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:43:50.373Z",
-    "tmdbFetchedAt": "2026-10-04T07:43:50.373Z",
+    "tmdbUpdatedAt": "2026-10-05T08:03:10.781Z",
+    "tmdbFetchedAt": "2026-10-05T08:03:10.781Z",
     "alternativeTitles": [
       {
         "title": "Serving Up the Holidays",
@@ -102960,18 +102965,18 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
-        "id": 1845013,
-        "name": "John Dion",
-        "job": "Writer",
-        "department": "Writing",
-        "creditId": "5f7a7abb7b7b4d00376ea8d3"
-      },
-      {
         "id": 937788,
         "name": "Adrian Langley",
         "job": "Director",
         "department": "Directing",
         "creditId": "5f7a7ab0021cee0036390c84"
+      },
+      {
+        "id": 1845013,
+        "name": "John Dion",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "5f7a7abb7b7b4d00376ea8d3"
       }
     ],
     "voteAverage": 5.7,
@@ -102982,8 +102987,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/744940",
       "imdb": "https://www.imdb.com/title/tt13189624/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:43:51.141Z",
-    "tmdbFetchedAt": "2026-10-04T07:43:51.141Z",
+    "tmdbUpdatedAt": "2026-10-05T08:03:12.098Z",
+    "tmdbFetchedAt": "2026-10-05T08:03:12.098Z",
     "alternativeTitles": [
       {
         "title": "Christmas For Hire",
@@ -103175,8 +103180,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/879229",
       "imdb": "https://www.imdb.com/title/tt15127022/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:43:52.103Z",
-    "tmdbFetchedAt": "2026-10-04T07:43:52.103Z",
+    "tmdbUpdatedAt": "2026-10-05T08:03:13.482Z",
+    "tmdbFetchedAt": "2026-10-05T08:03:13.482Z",
     "alternativeTitles": [
       {
         "title": "Natal Mais Que Perfeito",
@@ -103188,10 +103193,10 @@ export const MOVIES: Movie[] = [
     "id": "lifetime-2021-christmas-by-chance",
     "slug": "christmas-by-chance",
     "title": "Christmas by Chance",
-    "year": 2021,
+    "year": 2020,
     "brandId": "lifetime",
-    "releaseDate": "2021-12-16",
-    "premiereDate": "2021-12-16",
+    "releaseDate": "2020-12-31",
+    "premiereDate": "2020-12-31",
     "runtimeMinutes": 84,
     "synopsis": "A wealthy and popular entrepreneur hires Chance Hazelton, owner of a struggling shop called Gifts by Chance, to help him organize a perfect proposal for his girlfriend.",
     "posterUrl": "/images/posters/774260.jpg",
@@ -103344,8 +103349,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/774260",
       "imdb": "https://www.imdb.com/title/tt12228496/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:43:53.997Z",
-    "tmdbFetchedAt": "2026-10-04T07:43:53.997Z"
+    "tmdbUpdatedAt": "2026-10-05T08:03:14.809Z",
+    "tmdbFetchedAt": "2026-10-05T08:03:14.809Z"
   },
   {
     "id": "lifetime-2020-my-sweet-holiday",
@@ -103517,18 +103522,18 @@ export const MOVIES: Movie[] = [
       {
         "id": 1446356,
         "name": "Sandra L. Martin",
-        "job": "Writer",
-        "department": "Writing",
-        "profileUrl": "https://image.tmdb.org/t/p/w500/gw1AARiua4tyotspEs0spqELHzq.jpg",
-        "creditId": "5fba6b0004b5960040f611b6"
-      },
-      {
-        "id": 1446356,
-        "name": "Sandra L. Martin",
         "job": "Director",
         "department": "Directing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/gw1AARiua4tyotspEs0spqELHzq.jpg",
         "creditId": "5fba6aee04b596003ff5aa24"
+      },
+      {
+        "id": 1446356,
+        "name": "Sandra L. Martin",
+        "job": "Writer",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/gw1AARiua4tyotspEs0spqELHzq.jpg",
+        "creditId": "5fba6b0004b5960040f611b6"
       }
     ],
     "voteAverage": 5.8,
@@ -103539,8 +103544,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/767350",
       "imdb": "https://www.imdb.com/title/tt12953542/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:43:55.512Z",
-    "tmdbFetchedAt": "2026-10-04T07:43:55.512Z",
+    "tmdbUpdatedAt": "2026-10-05T08:03:15.445Z",
+    "tmdbFetchedAt": "2026-10-05T08:03:15.445Z",
     "alternativeTitles": [
       {
         "title": "Chocolate Covered Christmas",
@@ -103789,8 +103794,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/657043",
       "imdb": "https://www.imdb.com/title/tt10659766/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:43:57.131Z",
-    "tmdbFetchedAt": "2026-10-04T07:43:57.131Z"
+    "tmdbUpdatedAt": "2026-10-05T08:03:16.049Z",
+    "tmdbFetchedAt": "2026-10-05T08:03:16.049Z"
   },
   {
     "id": "lifetime-2020-a-christmas-break",
@@ -103991,8 +103996,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/744958",
       "imdb": "https://www.imdb.com/title/tt13342180/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:43:58.683Z",
-    "tmdbFetchedAt": "2026-10-04T07:43:58.683Z",
+    "tmdbUpdatedAt": "2026-10-05T08:03:17.322Z",
+    "tmdbFetchedAt": "2026-10-05T08:03:17.322Z",
     "alternativeTitles": [
       {
         "title": "Weihnachten mit dem Superstar",
@@ -104228,8 +104233,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/744957",
       "imdb": "https://www.imdb.com/title/tt12932550/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:44:00.252Z",
-    "tmdbFetchedAt": "2026-10-04T07:44:00.252Z",
+    "tmdbUpdatedAt": "2026-10-05T08:03:17.949Z",
+    "tmdbFetchedAt": "2026-10-05T08:03:17.949Z",
     "alternativeTitles": [
       {
         "title": "Рождественский обмен",
@@ -104422,8 +104427,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/744955",
       "imdb": "https://www.imdb.com/title/tt12968696/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:44:01.972Z",
-    "tmdbFetchedAt": "2026-10-04T07:44:01.972Z",
+    "tmdbUpdatedAt": "2026-10-05T08:03:20.125Z",
+    "tmdbFetchedAt": "2026-10-05T08:03:20.125Z",
     "alternativeTitles": [
       {
         "title": "Christmas Cuisine of Love",
@@ -104594,20 +104599,20 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
-        "id": 1107266,
-        "name": "Max McGuire",
-        "job": "Director",
-        "department": "Directing",
-        "profileUrl": "https://image.tmdb.org/t/p/w500/5QOpuZ3ZgoWb7EVvJudtewKqSUJ.jpg",
-        "creditId": "5f78e2701f748b00352727a9"
-      },
-      {
         "id": 1334256,
         "name": "Scotty Mullen",
         "job": "Writer",
         "department": "Writing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/2SNOFAVov6fN7Ie6dm5FTJ2SRCu.jpg",
         "creditId": "5f78e2793429ff0036b9aa9c"
+      },
+      {
+        "id": 1107266,
+        "name": "Max McGuire",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/5QOpuZ3ZgoWb7EVvJudtewKqSUJ.jpg",
+        "creditId": "5f78e2701f748b00352727a9"
       }
     ],
     "voteAverage": 5.2,
@@ -104618,8 +104623,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/749546",
       "imdb": "https://www.imdb.com/title/tt13190948/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:44:02.882Z",
-    "tmdbFetchedAt": "2026-10-04T07:44:02.882Z",
+    "tmdbUpdatedAt": "2026-10-05T08:03:20.730Z",
+    "tmdbFetchedAt": "2026-10-05T08:03:20.730Z",
     "alternativeTitles": [
       {
         "title": "A Christmas Village Romance",
@@ -104792,20 +104797,20 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
-        "id": 1704378,
-        "name": "Alison Spuck McNeeley",
-        "job": "Writer",
-        "department": "Writing",
-        "profileUrl": "https://image.tmdb.org/t/p/w500/c1RgGasjt4lvOgetJCUGLfNdS8N.jpg",
-        "creditId": "5f7a801a1fd36f00374f9464"
-      },
-      {
         "id": 172428,
         "name": "Lucie Guest",
         "job": "Director",
         "department": "Directing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/wwd9GVDMo8NqDsoVYxeZHKoGrXY.jpg",
         "creditId": "5f7a800d7b7b4d00397879e2"
+      },
+      {
+        "id": 1704378,
+        "name": "Alison Spuck McNeeley",
+        "job": "Writer",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/c1RgGasjt4lvOgetJCUGLfNdS8N.jpg",
+        "creditId": "5f7a801a1fd36f00374f9464"
       },
       {
         "id": 1704379,
@@ -104824,8 +104829,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/744954",
       "imdb": "https://www.imdb.com/title/tt12579258/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:44:03.613Z",
-    "tmdbFetchedAt": "2026-10-04T07:44:03.613Z"
+    "tmdbUpdatedAt": "2026-10-05T08:03:21.449Z",
+    "tmdbFetchedAt": "2026-10-05T08:03:21.449Z"
   },
   {
     "id": "lifetime-2020-the-christmas-aunt",
@@ -104988,8 +104993,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/744929",
       "imdb": "https://www.imdb.com/title/tt13403210/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:44:05.235Z",
-    "tmdbFetchedAt": "2026-10-04T07:44:05.235Z"
+    "tmdbUpdatedAt": "2026-10-05T08:03:23.071Z",
+    "tmdbFetchedAt": "2026-10-05T08:03:23.071Z"
   },
   {
     "id": "lifetime-2020-christmas-ever-after",
@@ -105146,14 +105151,6 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
-        "id": 209819,
-        "name": "Pat Kiely",
-        "job": "Director",
-        "department": "Directing",
-        "profileUrl": "https://image.tmdb.org/t/p/w500/2kAUcHI2WZqHUQ7Jqf6FtBTY4tK.jpg",
-        "creditId": "5fb7664024b333003d821948"
-      },
-      {
         "id": 2862942,
         "name": "Tanner Bean",
         "job": "Writer",
@@ -105166,6 +105163,14 @@ export const MOVIES: Movie[] = [
         "job": "Writer",
         "department": "Writing",
         "creditId": "5fb7665bd3d3870040d6f81e"
+      },
+      {
+        "id": 209819,
+        "name": "Pat Kiely",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/2kAUcHI2WZqHUQ7Jqf6FtBTY4tK.jpg",
+        "creditId": "5fb7664024b333003d821948"
       }
     ],
     "voteAverage": 6.5,
@@ -105176,8 +105181,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/744948",
       "imdb": "https://www.imdb.com/title/tt13341908/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:44:07.699Z",
-    "tmdbFetchedAt": "2026-10-04T07:44:07.699Z",
+    "tmdbUpdatedAt": "2026-10-05T08:03:25.557Z",
+    "tmdbFetchedAt": "2026-10-05T08:03:25.557Z",
     "alternativeTitles": [
       {
         "title": "Deux coeurs à Noël",
@@ -105388,19 +105393,19 @@ export const MOVIES: Movie[] = [
         "creditId": "5fdb34257776f00041300517"
       },
       {
+        "id": 2897614,
+        "name": "Jessica Glassberg",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "5fdb33f47776f000413004ea"
+      },
+      {
         "id": 1466098,
         "name": "Michael Varrati",
         "job": "Writer",
         "department": "Writing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/sojJqXMTw7JWLWGcQYeenDFpY2A.jpg",
         "creditId": "5fdb34140d5d8500402faa64"
-      },
-      {
-        "id": 2897614,
-        "name": "Jessica Glassberg",
-        "job": "Writer",
-        "department": "Writing",
-        "creditId": "5fdb33f47776f000413004ea"
       }
     ],
     "voteAverage": 5.7,
@@ -105411,8 +105416,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/777058",
       "imdb": "https://www.imdb.com/title/tt13918522/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:44:08.546Z",
-    "tmdbFetchedAt": "2026-10-04T07:44:08.546Z",
+    "tmdbUpdatedAt": "2026-10-05T08:03:26.188Z",
+    "tmdbFetchedAt": "2026-10-05T08:03:26.188Z",
     "alternativeTitles": [
       {
         "title": "Mission: Christmas",
@@ -105599,18 +105604,18 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
-        "id": 224214,
-        "name": "John Bradshaw",
-        "job": "Director",
-        "department": "Directing",
-        "creditId": "5f7a7eb11fd36f00384f3d4f"
-      },
-      {
         "id": 1053917,
         "name": "Mark Valenti",
         "job": "Writer",
         "department": "Writing",
         "creditId": "5f7a7ebc3429ff0036bee008"
+      },
+      {
+        "id": 224214,
+        "name": "John Bradshaw",
+        "job": "Director",
+        "department": "Directing",
+        "creditId": "5f7a7eb11fd36f00384f3d4f"
       }
     ],
     "voteAverage": 6.1,
@@ -105621,8 +105626,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/744949",
       "imdb": "https://www.imdb.com/title/tt12787842/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:44:10.253Z",
-    "tmdbFetchedAt": "2026-10-04T07:44:10.253Z"
+    "tmdbUpdatedAt": "2026-10-05T08:03:27.437Z",
+    "tmdbFetchedAt": "2026-10-05T08:03:27.437Z"
   },
   {
     "id": "lifetime-2020-let-s-meet-again-on-christmas-eve",
@@ -105794,20 +105799,20 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
-        "id": 1923856,
-        "name": "Carley Smale",
-        "job": "Writer",
-        "department": "Writing",
-        "profileUrl": "https://image.tmdb.org/t/p/w500/qUGhAccrmG5sHeDBu9TdpBbxcW.jpg",
-        "creditId": "5f7a7e1c223e200038bf7555"
-      },
-      {
         "id": 85204,
         "name": "Jeff Beesley",
         "job": "Director",
         "department": "Directing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/fAlhPhTYEzywPpkdaZOVwpviX9W.jpg",
         "creditId": "5f7a7e119a64350036a72395"
+      },
+      {
+        "id": 1923856,
+        "name": "Carley Smale",
+        "job": "Writer",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/qUGhAccrmG5sHeDBu9TdpBbxcW.jpg",
+        "creditId": "5f7a7e1c223e200038bf7555"
       }
     ],
     "voteAverage": 6,
@@ -105818,8 +105823,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/744947",
       "imdb": "https://www.imdb.com/title/tt12843484/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:44:13.466Z",
-    "tmdbFetchedAt": "2026-10-04T07:44:13.466Z"
+    "tmdbUpdatedAt": "2026-10-05T08:03:29.638Z",
+    "tmdbFetchedAt": "2026-10-05T08:03:29.638Z"
   },
   {
     "id": "lifetime-2020-christmas-unwrapped",
@@ -106039,11 +106044,12 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
-        "id": 1476502,
-        "name": "Bosede Williams",
-        "job": "Director",
-        "department": "Directing",
-        "creditId": "5f3b5dcf1c043500358b8e4a"
+        "id": 95458,
+        "name": "Gary Hardwick",
+        "job": "Writer",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/dqu2zM4Ol5DtVB659SzV0eblPcK.jpg",
+        "creditId": "5f3b5dd946aed400346a4f71"
       },
       {
         "id": 1923856,
@@ -106054,12 +106060,11 @@ export const MOVIES: Movie[] = [
         "creditId": "5f3b5de3a3b5e60034f98257"
       },
       {
-        "id": 95458,
-        "name": "Gary Hardwick",
-        "job": "Writer",
-        "department": "Writing",
-        "profileUrl": "https://image.tmdb.org/t/p/w500/dqu2zM4Ol5DtVB659SzV0eblPcK.jpg",
-        "creditId": "5f3b5dd946aed400346a4f71"
+        "id": 1476502,
+        "name": "Bosede Williams",
+        "job": "Director",
+        "department": "Directing",
+        "creditId": "5f3b5dcf1c043500358b8e4a"
       }
     ],
     "voteAverage": 6.1,
@@ -106070,8 +106075,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/734278",
       "imdb": "https://www.imdb.com/title/tt12792442/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:44:15.010Z",
-    "tmdbFetchedAt": "2026-10-04T07:44:15.010Z"
+    "tmdbUpdatedAt": "2026-10-05T08:03:30.301Z",
+    "tmdbFetchedAt": "2026-10-05T08:03:30.301Z"
   },
   {
     "id": "lifetime-2020-the-christmas-listing",
@@ -106386,8 +106391,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/744944",
       "imdb": "https://www.imdb.com/title/tt11753704/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:44:16.587Z",
-    "tmdbFetchedAt": "2026-10-04T07:44:16.587Z",
+    "tmdbUpdatedAt": "2026-10-05T08:03:31.894Z",
+    "tmdbFetchedAt": "2026-10-05T08:03:31.894Z",
     "alternativeTitles": [
       {
         "title": "Christmas Inn Farmstead",
@@ -106569,19 +106574,19 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
-        "id": 1679118,
-        "name": "Don Perez",
-        "job": "Writer",
-        "department": "Writing",
-        "creditId": "5f7a7c7ed5ffcb0035a2fdbc"
-      },
-      {
         "id": 114470,
         "name": "Polly Draper",
         "job": "Director",
         "department": "Directing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/iMLGOq79b9w3eErmwQSPoSREsUa.jpg",
         "creditId": "5f7a7c7143cd540037504bf2"
+      },
+      {
+        "id": 1679118,
+        "name": "Don Perez",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "5f7a7c7ed5ffcb0035a2fdbc"
       }
     ],
     "voteAverage": 6.4,
@@ -106592,8 +106597,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/744943",
       "imdb": "https://www.imdb.com/title/tt13064420/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:44:19.142Z",
-    "tmdbFetchedAt": "2026-10-04T07:44:19.142Z",
+    "tmdbUpdatedAt": "2026-10-05T08:03:32.622Z",
+    "tmdbFetchedAt": "2026-10-05T08:03:32.622Z",
     "alternativeTitles": [
       {
         "title": "People Presents: Once Upon a Main Street",
@@ -106780,8 +106785,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/744930",
       "imdb": "https://www.imdb.com/title/tt12987036/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:44:20.667Z",
-    "tmdbFetchedAt": "2026-10-04T07:44:20.667Z"
+    "tmdbUpdatedAt": "2026-10-05T08:03:33.225Z",
+    "tmdbFetchedAt": "2026-10-05T08:03:33.225Z"
   },
   {
     "id": "lifetime-2020-merry-liddle-christmas-wedding",
@@ -106962,8 +106967,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/744942",
       "imdb": "https://www.imdb.com/title/tt12821388/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:44:23.257Z",
-    "tmdbFetchedAt": "2026-10-04T07:44:23.257Z"
+    "tmdbUpdatedAt": "2026-10-05T08:03:33.818Z",
+    "tmdbFetchedAt": "2026-10-05T08:03:33.818Z"
   },
   {
     "id": "lifetime-2020-dear-christmas",
@@ -107163,19 +107168,19 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
+        "id": 68772,
+        "name": "Keith Giglio",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "5f7a7b18fdfc9f0036ab1b22"
+      },
+      {
         "id": 1718392,
         "name": "Emily Moss Wilson",
         "job": "Director",
         "department": "Directing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/svf9V8OZBo1LdQNkAgapHlaBRqF.jpg",
         "creditId": "5f7a7b02944a570037ce3869"
-      },
-      {
-        "id": 68772,
-        "name": "Keith Giglio",
-        "job": "Writer",
-        "department": "Writing",
-        "creditId": "5f7a7b18fdfc9f0036ab1b22"
       },
       {
         "id": 1938674,
@@ -107193,8 +107198,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/744941",
       "imdb": "https://www.imdb.com/title/tt12997976/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:44:26.353Z",
-    "tmdbFetchedAt": "2026-10-04T07:44:26.353Z"
+    "tmdbUpdatedAt": "2026-10-05T08:03:35.789Z",
+    "tmdbFetchedAt": "2026-10-05T08:03:35.789Z"
   },
   {
     "id": "lifetime-2019-sweet-mountain-christmas",
@@ -107345,8 +107350,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/627465",
       "imdb": "https://www.imdb.com/title/tt10963938/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:44:27.100Z",
-    "tmdbFetchedAt": "2026-10-04T07:44:27.100Z"
+    "tmdbUpdatedAt": "2026-10-05T08:03:36.373Z",
+    "tmdbFetchedAt": "2026-10-05T08:03:36.373Z"
   },
   {
     "id": "lifetime-2020-feliz-navidad",
@@ -107521,8 +107526,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/744939",
       "imdb": "https://www.imdb.com/title/tt11192852/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:44:29.534Z",
-    "tmdbFetchedAt": "2026-10-04T07:44:29.534Z"
+    "tmdbUpdatedAt": "2026-10-05T08:03:37.609Z",
+    "tmdbFetchedAt": "2026-10-05T08:03:37.609Z"
   },
   {
     "id": "lifetime-2020-a-taste-of-christmas",
@@ -107680,18 +107685,18 @@ export const MOVIES: Movie[] = [
         "creditId": "5f7a79bd021cee0035307a8a"
       },
       {
-        "id": 1716161,
-        "name": "Amy Katherine Taylor",
-        "job": "Writer",
-        "department": "Writing",
-        "creditId": "5fb3fc3812c604003fb8d814"
-      },
-      {
         "id": 2593154,
         "name": "Kelly Peters",
         "job": "Writer",
         "department": "Writing",
         "creditId": "5fb3fc0d9ca759003f4e8751"
+      },
+      {
+        "id": 1716161,
+        "name": "Amy Katherine Taylor",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "5fb3fc3812c604003fb8d814"
       }
     ],
     "voteAverage": 6,
@@ -107702,8 +107707,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/744938",
       "imdb": "https://www.imdb.com/title/tt11637974/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:44:30.246Z",
-    "tmdbFetchedAt": "2026-10-04T07:44:30.246Z",
+    "tmdbUpdatedAt": "2026-10-05T08:03:38.932Z",
+    "tmdbFetchedAt": "2026-10-05T08:03:38.932Z",
     "alternativeTitles": [
       {
         "title": "Christmas Romance Al Dente",
@@ -107933,8 +107938,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/744937",
       "imdb": "https://www.imdb.com/title/tt13121702/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:44:31.833Z",
-    "tmdbFetchedAt": "2026-10-04T07:44:31.833Z"
+    "tmdbUpdatedAt": "2026-10-05T08:03:39.556Z",
+    "tmdbFetchedAt": "2026-10-05T08:03:39.556Z"
   },
   {
     "id": "lifetime-2020-christmas-on-wheels",
@@ -108127,8 +108132,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/744936",
       "imdb": "https://www.imdb.com/title/tt13341368/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:44:33.580Z",
-    "tmdbFetchedAt": "2026-10-04T07:44:33.580Z"
+    "tmdbUpdatedAt": "2026-10-05T08:03:40.175Z",
+    "tmdbFetchedAt": "2026-10-05T08:03:40.175Z"
   },
   {
     "id": "lifetime-2020-christmas-on-the-vine",
@@ -108327,8 +108332,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/744935",
       "imdb": "https://www.imdb.com/title/tt11828420/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:44:35.390Z",
-    "tmdbFetchedAt": "2026-10-04T07:44:35.390Z"
+    "tmdbUpdatedAt": "2026-10-05T08:03:41.854Z",
+    "tmdbFetchedAt": "2026-10-05T08:03:41.854Z"
   },
   {
     "id": "lifetime-2020-too-close-for-christmas",
@@ -108579,8 +108584,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/764104",
       "imdb": "https://www.imdb.com/title/tt13273702/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:44:38.391Z",
-    "tmdbFetchedAt": "2026-10-04T07:44:38.391Z",
+    "tmdbUpdatedAt": "2026-10-05T08:03:43.869Z",
+    "tmdbFetchedAt": "2026-10-05T08:03:43.869Z",
     "alternativeTitles": [
       {
         "title": "L'amour en trouble fête",
@@ -108815,8 +108820,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/744933",
       "imdb": "https://www.imdb.com/title/tt11929008/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:44:39.928Z",
-    "tmdbFetchedAt": "2026-10-04T07:44:39.928Z",
+    "tmdbUpdatedAt": "2026-10-05T08:03:45.156Z",
+    "tmdbFetchedAt": "2026-10-05T08:03:45.156Z",
     "alternativeTitles": [
       {
         "title": "Christmas in Solvang",
@@ -109057,8 +109062,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/744931",
       "imdb": "https://www.imdb.com/title/tt12988016/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:44:41.652Z",
-    "tmdbFetchedAt": "2026-10-04T07:44:41.652Z"
+    "tmdbUpdatedAt": "2026-10-05T08:03:45.790Z",
+    "tmdbFetchedAt": "2026-10-05T08:03:45.790Z"
   },
   {
     "id": "lifetime-2019-the-magical-christmas-shoes",
@@ -109214,8 +109219,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/627469",
       "imdb": "https://www.imdb.com/title/tt10963986/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:44:42.369Z",
-    "tmdbFetchedAt": "2026-10-04T07:44:42.369Z"
+    "tmdbUpdatedAt": "2026-10-05T08:03:46.404Z",
+    "tmdbFetchedAt": "2026-10-05T08:03:46.404Z"
   },
   {
     "id": "lifetime-2020-a-crafty-christmas-romance",
@@ -109450,19 +109455,19 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
+        "id": 143316,
+        "name": "Brittany Wiscombe",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "5f7a754de039f10037efd10c"
+      },
+      {
         "id": 2398947,
         "name": "Brian Brough",
         "job": "Director",
         "department": "Directing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/8uErAH2LFWnxuUc3oEIXJPsjJLO.jpg",
         "creditId": "5f7a7542e039f10037efd0c3"
-      },
-      {
-        "id": 143316,
-        "name": "Brittany Wiscombe",
-        "job": "Writer",
-        "department": "Writing",
-        "creditId": "5f7a754de039f10037efd10c"
       }
     ],
     "voteAverage": 6.3,
@@ -109473,8 +109478,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/744927",
       "imdb": "https://www.imdb.com/title/tt11508080/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:44:43.169Z",
-    "tmdbFetchedAt": "2026-10-04T07:44:43.169Z"
+    "tmdbUpdatedAt": "2026-10-05T08:03:48.063Z",
+    "tmdbFetchedAt": "2026-10-05T08:03:48.063Z"
   },
   {
     "id": "lifetime-2020-christmas-on-ice",
@@ -109655,8 +109660,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/744925",
       "imdb": "https://www.imdb.com/title/tt11738870/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:44:46.094Z",
-    "tmdbFetchedAt": "2026-10-04T07:44:46.094Z",
+    "tmdbUpdatedAt": "2026-10-05T08:03:48.695Z",
+    "tmdbFetchedAt": "2026-10-05T08:03:48.695Z",
     "alternativeTitles": [
       {
         "title": "Amor sobre hielo",
@@ -109847,8 +109852,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/627467",
       "imdb": "https://www.imdb.com/title/tt10887870/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:44:49.237Z",
-    "tmdbFetchedAt": "2026-10-04T07:44:49.237Z",
+    "tmdbUpdatedAt": "2026-10-05T08:03:50.416Z",
+    "tmdbFetchedAt": "2026-10-05T08:03:50.416Z",
     "alternativeTitles": [
       {
         "title": "A Sweet Christmas",
@@ -110077,18 +110082,18 @@ export const MOVIES: Movie[] = [
       {
         "id": 589410,
         "name": "Jake Helgren",
-        "job": "Writer",
-        "department": "Writing",
-        "profileUrl": "https://image.tmdb.org/t/p/w500/virgDMoUS8fwCZXcoFchTYdiLgL.jpg",
-        "creditId": "5d9a88c4d371970018b701d3"
-      },
-      {
-        "id": 589410,
-        "name": "Jake Helgren",
         "job": "Director",
         "department": "Directing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/virgDMoUS8fwCZXcoFchTYdiLgL.jpg",
         "creditId": "5d9a88bd81a7fc0010c5cc37"
+      },
+      {
+        "id": 589410,
+        "name": "Jake Helgren",
+        "job": "Writer",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/virgDMoUS8fwCZXcoFchTYdiLgL.jpg",
+        "creditId": "5d9a88c4d371970018b701d3"
       }
     ],
     "voteAverage": 5.7,
@@ -110099,8 +110104,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/637402",
       "imdb": "https://www.imdb.com/title/tt10799008/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:44:50.928Z",
-    "tmdbFetchedAt": "2026-10-04T07:44:50.928Z",
+    "tmdbUpdatedAt": "2026-10-05T08:03:52.238Z",
+    "tmdbFetchedAt": "2026-10-05T08:03:52.238Z",
     "alternativeTitles": [
       {
         "title": "The Naughty List",
@@ -110275,18 +110280,18 @@ export const MOVIES: Movie[] = [
         "creditId": "5dbcae71d388ae0010d86949"
       },
       {
-        "id": 2833649,
-        "name": "Grace Murphy",
-        "job": "Story",
-        "department": "Writing",
-        "creditId": "5f995873ae36680037bd4fef"
-      },
-      {
         "id": 2172465,
         "name": "Anna White",
         "job": "Writer",
         "department": "Writing",
         "creditId": "5f99585c6c1e040039e01453"
+      },
+      {
+        "id": 2833649,
+        "name": "Grace Murphy",
+        "job": "Story",
+        "department": "Writing",
+        "creditId": "5f995873ae36680037bd4fef"
       }
     ],
     "voteAverage": 6.2,
@@ -110297,8 +110302,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/627487",
       "imdb": "https://www.imdb.com/title/tt10887846/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:44:51.672Z",
-    "tmdbFetchedAt": "2026-10-04T07:44:51.672Z",
+    "tmdbUpdatedAt": "2026-10-05T08:03:53.793Z",
+    "tmdbFetchedAt": "2026-10-05T08:03:53.793Z",
     "alternativeTitles": [
       {
         "title": "The Christmas Hotel",
@@ -110520,8 +110525,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/639424",
       "imdb": "https://www.imdb.com/title/tt10623478/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:44:52.386Z",
-    "tmdbFetchedAt": "2026-10-04T07:44:52.386Z",
+    "tmdbUpdatedAt": "2026-10-05T08:03:54.428Z",
+    "tmdbFetchedAt": "2026-10-05T08:03:54.428Z",
     "alternativeTitles": [
       {
         "title": "The Christmas Cards",
@@ -110738,8 +110743,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/627477",
       "imdb": "https://www.imdb.com/title/tt10964214/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:44:53.096Z",
-    "tmdbFetchedAt": "2026-10-04T07:44:53.096Z",
+    "tmdbUpdatedAt": "2026-10-05T08:03:55.695Z",
+    "tmdbFetchedAt": "2026-10-05T08:03:55.695Z",
     "alternativeTitles": [
       {
         "title": "A Doggone Christmas",
@@ -110890,8 +110895,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/627485",
       "imdb": "https://www.imdb.com/title/tt10964532/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:44:54.658Z",
-    "tmdbFetchedAt": "2026-10-04T07:44:54.658Z"
+    "tmdbUpdatedAt": "2026-10-05T08:03:56.285Z",
+    "tmdbFetchedAt": "2026-10-05T08:03:56.285Z"
   },
   {
     "id": "lifetime-2019-christmas-in-the-highlands",
@@ -111165,8 +111170,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/653752",
       "imdb": "https://www.imdb.com/title/tt8708564/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:44:57.121Z",
-    "tmdbFetchedAt": "2026-10-04T07:44:57.121Z",
+    "tmdbUpdatedAt": "2026-10-05T08:03:56.940Z",
+    "tmdbFetchedAt": "2026-10-05T08:03:56.940Z",
     "alternativeTitles": [
       {
         "title": "Jul i højlandet",
@@ -111500,8 +111505,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/627483",
       "imdb": "https://www.imdb.com/title/tt10887838/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:44:58.762Z",
-    "tmdbFetchedAt": "2026-10-04T07:44:58.762Z"
+    "tmdbUpdatedAt": "2026-10-05T08:03:58.198Z",
+    "tmdbFetchedAt": "2026-10-05T08:03:58.198Z"
   },
   {
     "id": "lifetime-2019-a-christmas-winter-song",
@@ -111703,18 +111708,18 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
-        "id": 72103,
-        "name": "Camille Brown",
-        "job": "Director",
-        "department": "Directing",
-        "creditId": "5dd4348e28723c00144e620e"
-      },
-      {
         "id": 2462137,
         "name": "Melissa Bustamante",
         "job": "Writer",
         "department": "Writing",
         "creditId": "5dd434e9e267de00169baf98"
+      },
+      {
+        "id": 72103,
+        "name": "Camille Brown",
+        "job": "Director",
+        "department": "Directing",
+        "creditId": "5dd4348e28723c00144e620e"
       }
     ],
     "voteAverage": 6,
@@ -111725,8 +111730,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/643936",
       "imdb": "https://www.imdb.com/title/tt10309574/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:44:59.482Z",
-    "tmdbFetchedAt": "2026-10-04T07:44:59.482Z"
+    "tmdbUpdatedAt": "2026-10-05T08:03:59.489Z",
+    "tmdbFetchedAt": "2026-10-05T08:03:59.489Z"
   },
   {
     "id": "lifetime-2019-matchmaker-christmas",
@@ -111965,8 +111970,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/626301",
       "imdb": "https://www.imdb.com/title/tt10149756/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:45:01.288Z",
-    "tmdbFetchedAt": "2026-10-04T07:45:01.288Z",
+    "tmdbUpdatedAt": "2026-10-05T08:04:00.916Z",
+    "tmdbFetchedAt": "2026-10-05T08:04:00.916Z",
     "alternativeTitles": [
       {
         "title": "Un incontro speciale",
@@ -112251,8 +112256,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/626282",
       "imdb": "https://www.imdb.com/title/tt10295168/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:45:02.003Z",
-    "tmdbFetchedAt": "2026-10-04T07:45:02.003Z"
+    "tmdbUpdatedAt": "2026-10-05T08:04:02.224Z",
+    "tmdbFetchedAt": "2026-10-05T08:04:02.224Z"
   },
   {
     "id": "lifetime-2019-christmas-stars",
@@ -112431,11 +112436,12 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
-        "id": 2437481,
-        "name": "Megan Hocking",
-        "job": "Writer",
-        "department": "Writing",
-        "creditId": "5dd4343de267de00139bab5c"
+        "id": 184815,
+        "name": "Jennifer Gibson",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/bvwIJtjr71k2wric1vnelsVT5PF.jpg",
+        "creditId": "5dd4341d57d3780b1fd773b1"
       },
       {
         "id": 1057526,
@@ -112445,12 +112451,11 @@ export const MOVIES: Movie[] = [
         "creditId": "5dd4342e2634620010b60ff6"
       },
       {
-        "id": 184815,
-        "name": "Jennifer Gibson",
-        "job": "Director",
-        "department": "Directing",
-        "profileUrl": "https://image.tmdb.org/t/p/w500/bvwIJtjr71k2wric1vnelsVT5PF.jpg",
-        "creditId": "5dd4341d57d3780b1fd773b1"
+        "id": 2437481,
+        "name": "Megan Hocking",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "5dd4343de267de00139bab5c"
       }
     ],
     "voteAverage": 7.2,
@@ -112461,8 +112466,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/627479",
       "imdb": "https://www.imdb.com/title/tt11290298/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:45:04.433Z",
-    "tmdbFetchedAt": "2026-10-04T07:45:04.433Z",
+    "tmdbUpdatedAt": "2026-10-05T08:04:02.866Z",
+    "tmdbFetchedAt": "2026-10-05T08:04:02.866Z",
     "alternativeTitles": [
       {
         "title": "A Christmas Melody",
@@ -112693,8 +112698,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/626300",
       "imdb": "https://www.imdb.com/title/tt10471748/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:45:05.196Z",
-    "tmdbFetchedAt": "2026-10-04T07:45:05.196Z",
+    "tmdbUpdatedAt": "2026-10-05T08:04:03.568Z",
+    "tmdbFetchedAt": "2026-10-05T08:04:03.568Z",
     "alternativeTitles": [
       {
         "title": "Una acción para Navidad",
@@ -112932,8 +112937,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/627478",
       "imdb": "https://www.imdb.com/title/tt10964346/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:45:08.082Z",
-    "tmdbFetchedAt": "2026-10-04T07:45:08.082Z"
+    "tmdbUpdatedAt": "2026-10-05T08:04:05.349Z",
+    "tmdbFetchedAt": "2026-10-05T08:04:05.349Z"
   },
   {
     "id": "lifetime-2019-mistletoe-menorahs",
@@ -113151,19 +113156,19 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
-        "id": 2462132,
-        "name": "Guy Yosub",
-        "job": "Writer",
-        "department": "Writing",
-        "creditId": "5dd432da2634620012b606b3"
-      },
-      {
         "id": 1107266,
         "name": "Max McGuire",
         "job": "Director",
         "department": "Directing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/5QOpuZ3ZgoWb7EVvJudtewKqSUJ.jpg",
         "creditId": "5dd432d0e267de00139baa0d"
+      },
+      {
+        "id": 2462132,
+        "name": "Guy Yosub",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "5dd432da2634620012b606b3"
       }
     ],
     "voteAverage": 5.7,
@@ -113174,8 +113179,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/643938",
       "imdb": "https://www.imdb.com/title/tt10975992/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:45:09.706Z",
-    "tmdbFetchedAt": "2026-10-04T07:45:09.706Z",
+    "tmdbUpdatedAt": "2026-10-05T08:04:06.615Z",
+    "tmdbFetchedAt": "2026-10-05T08:04:06.615Z",
     "alternativeTitles": [
       {
         "title": "Mary Hanukkah",
@@ -113404,8 +113409,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/615585",
       "imdb": "https://www.imdb.com/title/tt10176734/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:45:10.436Z",
-    "tmdbFetchedAt": "2026-10-04T07:45:10.436Z",
+    "tmdbUpdatedAt": "2026-10-05T08:04:07.261Z",
+    "tmdbFetchedAt": "2026-10-05T08:04:07.261Z",
     "alternativeTitles": [
       {
         "title": "Un babysitter per Natale",
@@ -113601,8 +113606,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/626296",
       "imdb": "https://www.imdb.com/title/tt10804410/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:45:11.150Z",
-    "tmdbFetchedAt": "2026-10-04T07:45:11.150Z"
+    "tmdbUpdatedAt": "2026-10-05T08:04:08.525Z",
+    "tmdbFetchedAt": "2026-10-05T08:04:08.525Z"
   },
   {
     "id": "lifetime-2019-you-light-up-my-christmas",
@@ -113777,8 +113782,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/627482",
       "imdb": "https://www.imdb.com/title/tt10964516/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:45:12.745Z",
-    "tmdbFetchedAt": "2026-10-04T07:45:12.745Z",
+    "tmdbUpdatedAt": "2026-10-05T08:04:10.310Z",
+    "tmdbFetchedAt": "2026-10-05T08:04:10.310Z",
     "alternativeTitles": [
       {
         "title": "O Brilho de Natal",
@@ -113971,8 +113976,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/627475",
       "imdb": "https://www.imdb.com/title/tt10887880/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:45:15.238Z",
-    "tmdbFetchedAt": "2026-10-04T07:45:15.238Z"
+    "tmdbUpdatedAt": "2026-10-05T08:04:11.682Z",
+    "tmdbFetchedAt": "2026-10-05T08:04:11.682Z"
   },
   {
     "id": "lifetime-2019-staging-christmas",
@@ -114214,8 +114219,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/627474",
       "imdb": "https://www.imdb.com/title/tt10873852/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:45:15.968Z",
-    "tmdbFetchedAt": "2026-10-04T07:45:15.968Z"
+    "tmdbUpdatedAt": "2026-10-05T08:04:12.283Z",
+    "tmdbFetchedAt": "2026-10-05T08:04:12.283Z"
   },
   {
     "id": "lifetime-2019-a-christmas-wish",
@@ -114546,18 +114551,18 @@ export const MOVIES: Movie[] = [
       {
         "id": 1718392,
         "name": "Emily Moss Wilson",
-        "job": "Director",
-        "department": "Directing",
-        "profileUrl": "https://image.tmdb.org/t/p/w500/svf9V8OZBo1LdQNkAgapHlaBRqF.jpg",
-        "creditId": "5d64645e813cb60012f8ace2"
-      },
-      {
-        "id": 1718392,
-        "name": "Emily Moss Wilson",
         "job": "Writer",
         "department": "Writing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/svf9V8OZBo1LdQNkAgapHlaBRqF.jpg",
         "creditId": "5d646464ad50f06b024497ee"
+      },
+      {
+        "id": 1718392,
+        "name": "Emily Moss Wilson",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/svf9V8OZBo1LdQNkAgapHlaBRqF.jpg",
+        "creditId": "5d64645e813cb60012f8ace2"
       }
     ],
     "voteAverage": 6.5,
@@ -114568,8 +114573,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/626285",
       "imdb": "https://www.imdb.com/title/tt10482348/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:45:16.693Z",
-    "tmdbFetchedAt": "2026-10-04T07:45:16.693Z",
+    "tmdbUpdatedAt": "2026-10-05T08:04:12.909Z",
+    "tmdbFetchedAt": "2026-10-05T08:04:12.909Z",
     "alternativeTitles": [
       {
         "title": "A Christmas Wish in Ponchatoula",
@@ -114740,8 +114745,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/627471",
       "imdb": "https://www.imdb.com/title/tt10964186/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:45:18.251Z",
-    "tmdbFetchedAt": "2026-10-04T07:45:18.251Z"
+    "tmdbUpdatedAt": "2026-10-05T08:04:13.578Z",
+    "tmdbFetchedAt": "2026-10-05T08:04:13.578Z"
   },
   {
     "id": "lifetime-2019-twinkle-all-the-way",
@@ -115003,8 +115008,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/627470",
       "imdb": "https://www.imdb.com/title/tt10964168/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:45:19.964Z",
-    "tmdbFetchedAt": "2026-10-04T07:45:19.964Z",
+    "tmdbUpdatedAt": "2026-10-05T08:04:14.921Z",
+    "tmdbFetchedAt": "2026-10-05T08:04:14.921Z",
     "alternativeTitles": [
       {
         "title": "Un Noël plein d'étincelles",
@@ -115265,8 +115270,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/627468",
       "imdb": "https://www.imdb.com/title/tt10953626/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:45:21.531Z",
-    "tmdbFetchedAt": "2026-10-04T07:45:21.531Z",
+    "tmdbUpdatedAt": "2026-10-05T08:04:16.295Z",
+    "tmdbFetchedAt": "2026-10-05T08:04:16.295Z",
     "alternativeTitles": [
       {
         "title": "Christmas On The River",
@@ -115485,8 +115490,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/626299",
       "imdb": "https://www.imdb.com/title/tt10210182/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:45:22.238Z",
-    "tmdbFetchedAt": "2026-10-04T07:45:22.238Z",
+    "tmdbUpdatedAt": "2026-10-05T08:04:18.006Z",
+    "tmdbFetchedAt": "2026-10-05T08:04:18.006Z",
     "alternativeTitles": [
       {
         "title": "Christmas à la Mode",
@@ -115680,8 +115685,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/626280",
       "imdb": "https://www.imdb.com/title/tt10583460/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:45:23.783Z",
-    "tmdbFetchedAt": "2026-10-04T07:45:23.783Z"
+    "tmdbUpdatedAt": "2026-10-05T08:04:18.634Z",
+    "tmdbFetchedAt": "2026-10-05T08:04:18.634Z"
   },
   {
     "id": "lifetime-2019-always-and-forever-christmas",
@@ -115972,14 +115977,6 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
-        "id": 1982411,
-        "name": "Siobhan Devine",
-        "job": "Director",
-        "department": "Directing",
-        "profileUrl": "https://image.tmdb.org/t/p/w500/nq31peeUYuaQlnHGBWTjGvERvvT.jpg",
-        "creditId": "5d9a7674bb26020013122b33"
-      },
-      {
         "id": 2426860,
         "name": "Damon Tod Hill",
         "job": "Screenplay",
@@ -115992,6 +115989,14 @@ export const MOVIES: Movie[] = [
         "job": "Screenplay",
         "department": "Writing",
         "creditId": "5d9a7683d371970010b6eb08"
+      },
+      {
+        "id": 1982411,
+        "name": "Siobhan Devine",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/nq31peeUYuaQlnHGBWTjGvERvvT.jpg",
+        "creditId": "5d9a7674bb26020013122b33"
       }
     ],
     "voteAverage": 6.7,
@@ -116002,8 +116007,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/627466",
       "imdb": "https://www.imdb.com/title/tt10921256/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:45:26.306Z",
-    "tmdbFetchedAt": "2026-10-04T07:45:26.306Z",
+    "tmdbUpdatedAt": "2026-10-05T08:04:20.495Z",
+    "tmdbFetchedAt": "2026-10-05T08:04:20.495Z",
     "alternativeTitles": [
       {
         "title": "Forever Christmas",
@@ -116145,14 +116150,6 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
-        "id": 1432080,
-        "name": "Deanne Foley",
-        "job": "Director",
-        "department": "Directing",
-        "profileUrl": "https://image.tmdb.org/t/p/w500/fNLNXChIQGqeBXlwtVixY2lXZJY.jpg",
-        "creditId": "5d6460aa8dbc330016f9e42e"
-      },
-      {
         "id": 1938674,
         "name": "Juliet Giglio",
         "job": "Writer",
@@ -116165,6 +116162,14 @@ export const MOVIES: Movie[] = [
         "job": "Writer",
         "department": "Writing",
         "creditId": "5d6460c08dbc330017f9ef2f"
+      },
+      {
+        "id": 1432080,
+        "name": "Deanne Foley",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/fNLNXChIQGqeBXlwtVixY2lXZJY.jpg",
+        "creditId": "5d6460aa8dbc330016f9e42e"
       }
     ],
     "voteAverage": 6.4,
@@ -116175,8 +116180,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/626276",
       "imdb": "https://www.imdb.com/title/tt10642154/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:45:28.388Z",
-    "tmdbFetchedAt": "2026-10-04T07:45:28.388Z"
+    "tmdbUpdatedAt": "2026-10-05T08:04:21.191Z",
+    "tmdbFetchedAt": "2026-10-05T08:04:21.191Z"
   },
   {
     "id": "lifetime-2019-the-road-home-for-christmas",
@@ -116472,8 +116477,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/626273",
       "imdb": "https://www.imdb.com/title/tt10700392/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:45:29.126Z",
-    "tmdbFetchedAt": "2026-10-04T07:45:29.126Z"
+    "tmdbUpdatedAt": "2026-10-05T08:04:21.844Z",
+    "tmdbFetchedAt": "2026-10-05T08:04:21.844Z"
   },
   {
     "id": "lifetime-2018-hometown-christmas",
@@ -116622,6 +116627,14 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
+        "id": 1718392,
+        "name": "Emily Moss Wilson",
+        "job": "Writer",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/svf9V8OZBo1LdQNkAgapHlaBRqF.jpg",
+        "creditId": "5bc53df60e0a266e5b06ed76"
+      },
+      {
         "id": 934326,
         "name": "Marcy Holland",
         "job": "Writer",
@@ -116635,14 +116648,6 @@ export const MOVIES: Movie[] = [
         "department": "Directing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/svf9V8OZBo1LdQNkAgapHlaBRqF.jpg",
         "creditId": "5bc53de4c3a3682d60071d6d"
-      },
-      {
-        "id": 1718392,
-        "name": "Emily Moss Wilson",
-        "job": "Writer",
-        "department": "Writing",
-        "profileUrl": "https://image.tmdb.org/t/p/w500/svf9V8OZBo1LdQNkAgapHlaBRqF.jpg",
-        "creditId": "5bc53df60e0a266e5b06ed76"
       }
     ],
     "voteAverage": 6.1,
@@ -116653,8 +116658,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/554294",
       "imdb": "https://www.imdb.com/title/tt9058944/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:45:29.879Z",
-    "tmdbFetchedAt": "2026-10-04T07:45:29.879Z",
+    "tmdbUpdatedAt": "2026-10-05T08:04:23.192Z",
+    "tmdbFetchedAt": "2026-10-05T08:04:23.192Z",
     "alternativeTitles": [
       {
         "title": "Stol på dit hjerte til jul",
@@ -116942,8 +116947,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/550648",
       "imdb": "https://www.imdb.com/title/tt8942494/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:45:30.613Z",
-    "tmdbFetchedAt": "2026-10-04T07:45:30.613Z"
+    "tmdbUpdatedAt": "2026-10-05T08:04:23.880Z",
+    "tmdbFetchedAt": "2026-10-05T08:04:23.880Z"
   },
   {
     "id": "lifetime-2018-christmas-around-the-corner",
@@ -117144,8 +117149,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/552017",
       "imdb": "https://www.imdb.com/title/tt9101692/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:45:31.377Z",
-    "tmdbFetchedAt": "2026-10-04T07:45:31.377Z",
+    "tmdbUpdatedAt": "2026-10-05T08:04:25.164Z",
+    "tmdbFetchedAt": "2026-10-05T08:04:25.164Z",
     "alternativeTitles": [
       {
         "title": "The Christmas Getaway",
@@ -117395,8 +117400,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/552016",
       "imdb": "https://www.imdb.com/title/tt9101480/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:45:32.097Z",
-    "tmdbFetchedAt": "2026-10-04T07:45:32.097Z",
+    "tmdbUpdatedAt": "2026-10-05T08:04:25.793Z",
+    "tmdbFetchedAt": "2026-10-05T08:04:25.793Z",
     "alternativeTitles": [
       {
         "title": "Jul i bageriet",
@@ -117600,8 +117605,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/550649",
       "imdb": "https://www.imdb.com/title/tt9028942/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:45:34.645Z",
-    "tmdbFetchedAt": "2026-10-04T07:45:34.645Z"
+    "tmdbUpdatedAt": "2026-10-05T08:04:26.409Z",
+    "tmdbFetchedAt": "2026-10-05T08:04:26.409Z"
   },
   {
     "id": "lifetime-2018-christmas-lost-and-found",
@@ -117779,8 +117784,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/552013",
       "imdb": "https://www.imdb.com/title/tt9067272/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:45:35.398Z",
-    "tmdbFetchedAt": "2026-10-04T07:45:35.398Z"
+    "tmdbUpdatedAt": "2026-10-05T08:04:27.021Z",
+    "tmdbFetchedAt": "2026-10-05T08:04:27.021Z"
   },
   {
     "id": "lifetime-2018-the-christmas-pact",
@@ -117958,18 +117963,18 @@ export const MOVIES: Movie[] = [
         "creditId": "5c086ec50e0a2638af001cfc"
       },
       {
-        "id": 2426860,
-        "name": "Damon Tod Hill",
-        "job": "Writer",
-        "department": "Writing",
-        "creditId": "5ded01a985da12001448e086"
-      },
-      {
         "id": 1536497,
         "name": "Blaine Chiappetta",
         "job": "Writer",
         "department": "Writing",
         "creditId": "5ded019785da12001a48d257"
+      },
+      {
+        "id": 2426860,
+        "name": "Damon Tod Hill",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "5ded01a985da12001448e086"
       }
     ],
     "voteAverage": 5.9,
@@ -117980,8 +117985,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/552012",
       "imdb": "https://www.imdb.com/title/tt9059048/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:45:37.167Z",
-    "tmdbFetchedAt": "2026-10-04T07:45:37.167Z",
+    "tmdbUpdatedAt": "2026-10-05T08:04:29.027Z",
+    "tmdbFetchedAt": "2026-10-05T08:04:29.027Z",
     "alternativeTitles": [
       {
         "title": "Jul mellem venner",
@@ -118226,19 +118231,19 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
+        "id": 1938674,
+        "name": "Juliet Giglio",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "5bac0da6c3a3683a97030812"
+      },
+      {
         "id": 130050,
         "name": "Colin Theys",
         "job": "Director",
         "department": "Directing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/g2fxMX7U2gqc4vr3EVe7apMDdyC.jpg",
         "creditId": "5bac0d9d0e0a2664d702d9a1"
-      },
-      {
-        "id": 1938674,
-        "name": "Juliet Giglio",
-        "job": "Writer",
-        "department": "Writing",
-        "creditId": "5bac0da6c3a3683a97030812"
       },
       {
         "id": 68772,
@@ -118256,8 +118261,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/550651",
       "imdb": "https://www.imdb.com/title/tt8295976/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:45:39.584Z",
-    "tmdbFetchedAt": "2026-10-04T07:45:39.584Z",
+    "tmdbUpdatedAt": "2026-10-05T08:04:29.634Z",
+    "tmdbFetchedAt": "2026-10-05T08:04:29.634Z",
     "alternativeTitles": [
       {
         "title": "Vom Nussknacker geküsst",
@@ -118640,8 +118645,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/552011",
       "imdb": "https://www.imdb.com/title/tt9058902/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:45:41.491Z",
-    "tmdbFetchedAt": "2026-10-04T07:45:41.491Z",
+    "tmdbUpdatedAt": "2026-10-05T08:04:30.273Z",
+    "tmdbFetchedAt": "2026-10-05T08:04:30.273Z",
     "alternativeTitles": [
       {
         "title": "En sang til jul",
@@ -118849,8 +118854,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/550652",
       "imdb": "https://www.imdb.com/title/tt7872704/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:45:42.250Z",
-    "tmdbFetchedAt": "2026-10-04T07:45:42.250Z",
+    "tmdbUpdatedAt": "2026-10-05T08:04:30.884Z",
+    "tmdbFetchedAt": "2026-10-05T08:04:30.884Z",
     "alternativeTitles": [
       {
         "title": "The perfect Christmas village",
@@ -119071,8 +119076,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/542602",
       "imdb": "https://www.imdb.com/title/tt8451018/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:45:44.394Z",
-    "tmdbFetchedAt": "2026-10-04T07:45:44.394Z",
+    "tmdbUpdatedAt": "2026-10-05T08:04:31.505Z",
+    "tmdbFetchedAt": "2026-10-05T08:04:31.505Z",
     "alternativeTitles": [
       {
         "title": "Zurück zu den Weihnachtssternen",
@@ -119286,19 +119291,19 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
+        "id": 1923215,
+        "name": "Karen Schaler",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "5bc538e6c3a3682d59066495"
+      },
+      {
         "id": 545229,
         "name": "David Weaver",
         "job": "Director",
         "department": "Directing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/mgYRS2YM7gtEbvw5CsAEfQO2wLJ.jpg",
         "creditId": "5bc538dbc3a3682d5b06f064"
-      },
-      {
-        "id": 1923215,
-        "name": "Karen Schaler",
-        "job": "Writer",
-        "department": "Writing",
-        "creditId": "5bc538e6c3a3682d59066495"
       }
     ],
     "voteAverage": 4.9,
@@ -119309,8 +119314,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/554288",
       "imdb": "https://www.imdb.com/title/tt9102152/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:45:45.275Z",
-    "tmdbFetchedAt": "2026-10-04T07:45:45.275Z"
+    "tmdbUpdatedAt": "2026-10-05T08:04:33.167Z",
+    "tmdbFetchedAt": "2026-10-05T08:04:33.167Z"
   },
   {
     "id": "lifetime-2018-christmas-harmony",
@@ -119537,8 +119542,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/525020",
       "imdb": "https://www.imdb.com/title/tt8443810/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:45:46.048Z",
-    "tmdbFetchedAt": "2026-10-04T07:45:46.048Z",
+    "tmdbUpdatedAt": "2026-10-05T08:04:33.767Z",
+    "tmdbFetchedAt": "2026-10-05T08:04:33.767Z",
     "alternativeTitles": [
       {
         "title": "L'Harmonie de Noël",
@@ -119873,8 +119878,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/550654",
       "imdb": "https://www.imdb.com/title/tt7999950/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:45:46.827Z",
-    "tmdbFetchedAt": "2026-10-04T07:45:46.827Z",
+    "tmdbUpdatedAt": "2026-10-05T08:04:35.059Z",
+    "tmdbFetchedAt": "2026-10-05T08:04:35.059Z",
     "alternativeTitles": [
       {
         "title": "Hver anden jul",
@@ -120109,19 +120114,19 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
+        "id": 2136003,
+        "name": "Cassie Doyle",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "5bac13ee92514150eb02aec5"
+      },
+      {
         "id": 1224778,
         "name": "Monika Mitchell",
         "job": "Director",
         "department": "Directing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/rVQdInhmvt6VaX8apV9AxSU5JQb.jpg",
         "creditId": "5bac13de0e0a2664d402dbc0"
-      },
-      {
-        "id": 2136003,
-        "name": "Cassie Doyle",
-        "job": "Writer",
-        "department": "Writing",
-        "creditId": "5bac13ee92514150eb02aec5"
       }
     ],
     "voteAverage": 6.5,
@@ -120132,8 +120137,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/550655",
       "imdb": "https://www.imdb.com/title/tt8613908/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:45:48.363Z",
-    "tmdbFetchedAt": "2026-10-04T07:45:48.363Z"
+    "tmdbUpdatedAt": "2026-10-05T08:04:36.440Z",
+    "tmdbFetchedAt": "2026-10-05T08:04:36.440Z"
   },
   {
     "id": "lifetime-2018-my-christmas-inn",
@@ -120386,8 +120391,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/551603",
       "imdb": "https://www.imdb.com/title/tt9058820/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:45:49.161Z",
-    "tmdbFetchedAt": "2026-10-04T07:45:49.161Z"
+    "tmdbUpdatedAt": "2026-10-05T08:04:37.035Z",
+    "tmdbFetchedAt": "2026-10-05T08:04:37.035Z"
   },
   {
     "id": "lifetime-2018-a-christmas-arrangement",
@@ -120600,8 +120605,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/550656",
       "imdb": "https://www.imdb.com/title/tt8672786/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:45:52.275Z",
-    "tmdbFetchedAt": "2026-10-04T07:45:52.275Z"
+    "tmdbUpdatedAt": "2026-10-05T08:04:39.425Z",
+    "tmdbFetchedAt": "2026-10-05T08:04:39.425Z"
   },
   {
     "id": "lifetime-2018-mr-365",
@@ -120798,8 +120803,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/569982",
       "imdb": "https://www.imdb.com/title/tt9212666/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:45:53.989Z",
-    "tmdbFetchedAt": "2026-10-04T07:45:53.989Z",
+    "tmdbUpdatedAt": "2026-10-05T08:04:41.785Z",
+    "tmdbFetchedAt": "2026-10-05T08:04:41.785Z",
     "alternativeTitles": [
       {
         "title": "Forever Christmas",
@@ -121066,8 +121071,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/492141",
       "imdb": "https://www.imdb.com/title/tt7421814/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:45:55.116Z",
-    "tmdbFetchedAt": "2026-10-04T07:45:55.116Z",
+    "tmdbUpdatedAt": "2026-10-05T08:04:42.427Z",
+    "tmdbFetchedAt": "2026-10-05T08:04:42.427Z",
     "alternativeTitles": [
       {
         "title": "Zasnežené Vianoce",
@@ -121308,8 +121313,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/486865",
       "imdb": "https://www.imdb.com/title/tt7621886/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:45:56.734Z",
-    "tmdbFetchedAt": "2026-10-04T07:45:56.734Z",
+    "tmdbUpdatedAt": "2026-10-05T08:04:43.111Z",
+    "tmdbFetchedAt": "2026-10-05T08:04:43.111Z",
     "alternativeTitles": [
       {
         "title": "Noël dans tes bras",
@@ -121541,8 +121546,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/488063",
       "imdb": "https://www.imdb.com/title/tt7692814/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:45:57.477Z",
-    "tmdbFetchedAt": "2026-10-04T07:45:57.477Z"
+    "tmdbUpdatedAt": "2026-10-05T08:04:43.708Z",
+    "tmdbFetchedAt": "2026-10-05T08:04:43.708Z"
   },
   {
     "id": "lifetime-2017-delivering-christmas",
@@ -121679,8 +121684,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/490817",
       "imdb": "https://www.imdb.com/title/tt7663890/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:45:59.205Z",
-    "tmdbFetchedAt": "2026-10-04T07:45:59.205Z"
+    "tmdbUpdatedAt": "2026-10-05T08:04:45.039Z",
+    "tmdbFetchedAt": "2026-10-05T08:04:45.039Z"
   },
   {
     "id": "lifetime-2017-four-christmases-and-a-wedding",
@@ -121925,8 +121930,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/489204",
       "imdb": "https://www.imdb.com/title/tt7642558/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:46:00.757Z",
-    "tmdbFetchedAt": "2026-10-04T07:46:00.757Z",
+    "tmdbUpdatedAt": "2026-10-05T08:04:46.709Z",
+    "tmdbFetchedAt": "2026-10-05T08:04:46.709Z",
     "alternativeTitles": [
       {
         "title": "Jul med forhindringer",
@@ -122371,8 +122376,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/485034",
       "imdb": "https://www.imdb.com/title/tt7069196/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:46:01.643Z",
-    "tmdbFetchedAt": "2026-10-04T07:46:01.643Z",
+    "tmdbUpdatedAt": "2026-10-05T08:04:47.390Z",
+    "tmdbFetchedAt": "2026-10-05T08:04:47.390Z",
     "alternativeTitles": [
       {
         "title": "Christmas Hours",
@@ -122563,11 +122568,11 @@ export const MOVIES: Movie[] = [
         "creditId": "61a07e4b3e2ec800298ea97c"
       },
       {
-        "id": 128979,
-        "name": "Jeffrey Schenck",
-        "job": "Story",
+        "id": 1048614,
+        "name": "Jennifer Notas Shapiro",
+        "job": "Screenplay",
         "department": "Writing",
-        "creditId": "66705e1ebbb11d33c9c355af"
+        "creditId": "66705e2bb57feeb6a2266daa"
       },
       {
         "id": 92591,
@@ -122578,18 +122583,18 @@ export const MOVIES: Movie[] = [
         "creditId": "66705e232b09314d62547a5f"
       },
       {
+        "id": 128979,
+        "name": "Jeffrey Schenck",
+        "job": "Story",
+        "department": "Writing",
+        "creditId": "66705e1ebbb11d33c9c355af"
+      },
+      {
         "id": 1048614,
         "name": "Jennifer Notas Shapiro",
         "job": "Story",
         "department": "Writing",
         "creditId": "66705e28eb7f5c3e6b547ba9"
-      },
-      {
-        "id": 1048614,
-        "name": "Jennifer Notas Shapiro",
-        "job": "Screenplay",
-        "department": "Writing",
-        "creditId": "66705e2bb57feeb6a2266daa"
       }
     ],
     "voteAverage": 6.8,
@@ -122600,8 +122605,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/486820",
       "imdb": "https://www.imdb.com/title/tt7605066/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:46:02.384Z",
-    "tmdbFetchedAt": "2026-10-04T07:46:02.384Z"
+    "tmdbUpdatedAt": "2026-10-05T08:04:49.127Z",
+    "tmdbFetchedAt": "2026-10-05T08:04:49.127Z"
   },
   {
     "id": "lifetime-2015-the-spirit-of-christmas",
@@ -122814,8 +122819,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/367544",
       "imdb": "https://www.imdb.com/title/tt4434688/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:46:03.232Z",
-    "tmdbFetchedAt": "2026-10-04T07:46:03.232Z",
+    "tmdbUpdatedAt": "2026-10-05T08:04:49.748Z",
+    "tmdbFetchedAt": "2026-10-05T08:04:49.748Z",
     "alternativeTitles": [
       {
         "title": "Hollygrove",
@@ -122996,19 +123001,18 @@ export const MOVIES: Movie[] = [
         "creditId": "564b85a89251414dd1004246"
       },
       {
-        "id": 45037,
-        "name": "Sam Irvin",
+        "id": 938025,
+        "name": "Sean Olson",
         "job": "Writer",
         "department": "Writing",
-        "profileUrl": "https://image.tmdb.org/t/p/w500/1o6j9oNTce1i8G81t8peSfXpfpL.jpg",
-        "creditId": "584c851b9251411e2f0036e1"
+        "creditId": "584c85369251411e3b003985"
       },
       {
-        "id": 1721076,
-        "name": "Margaret Base",
+        "id": 1721077,
+        "name": "Mary Glenn",
         "job": "Writer",
         "department": "Writing",
-        "creditId": "584c84f19251411e290036e4"
+        "creditId": "584c85069251411e3b00395d"
       },
       {
         "id": 92591,
@@ -123019,11 +123023,12 @@ export const MOVIES: Movie[] = [
         "creditId": "584c85499251411e29003729"
       },
       {
-        "id": 938025,
-        "name": "Sean Olson",
+        "id": 45037,
+        "name": "Sam Irvin",
         "job": "Writer",
         "department": "Writing",
-        "creditId": "584c85369251411e3b003985"
+        "profileUrl": "https://image.tmdb.org/t/p/w500/1o6j9oNTce1i8G81t8peSfXpfpL.jpg",
+        "creditId": "584c851b9251411e2f0036e1"
       },
       {
         "id": 1466098,
@@ -123034,11 +123039,11 @@ export const MOVIES: Movie[] = [
         "creditId": "584c8560c3a3682ac70034c9"
       },
       {
-        "id": 1721077,
-        "name": "Mary Glenn",
+        "id": 1721076,
+        "name": "Margaret Base",
         "job": "Writer",
         "department": "Writing",
-        "creditId": "584c85069251411e3b00395d"
+        "creditId": "584c84f19251411e290036e4"
       }
     ],
     "voteAverage": 5.1,
@@ -123049,8 +123054,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/369061",
       "imdb": "https://www.imdb.com/title/tt5130174/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:46:04.005Z",
-    "tmdbFetchedAt": "2026-10-04T07:46:04.005Z",
+    "tmdbUpdatedAt": "2026-10-05T08:04:50.392Z",
+    "tmdbFetchedAt": "2026-10-05T08:04:50.392Z",
     "alternativeTitles": [
       {
         "title": "Un duo d'enfer pour Noël",
@@ -123205,8 +123210,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/367543",
       "imdb": "https://www.imdb.com/title/tt5269968/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:46:05.619Z",
-    "tmdbFetchedAt": "2026-10-04T07:46:05.619Z",
+    "tmdbUpdatedAt": "2026-10-05T08:04:51.014Z",
+    "tmdbFetchedAt": "2026-10-05T08:04:51.014Z",
     "alternativeTitles": [
       {
         "title": "Et ønske til jul",
@@ -123437,8 +123442,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/367541",
       "imdb": "https://www.imdb.com/title/tt5171176/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:46:07.860Z",
-    "tmdbFetchedAt": "2026-10-04T07:46:07.860Z"
+    "tmdbUpdatedAt": "2026-10-05T08:04:52.336Z",
+    "tmdbFetchedAt": "2026-10-05T08:04:52.336Z"
   },
   {
     "id": "lifetime-2015-last-chance-for-christmas",
@@ -123684,8 +123689,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/367540",
       "imdb": "https://www.imdb.com/title/tt5266444/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:46:08.569Z",
-    "tmdbFetchedAt": "2026-10-04T07:46:08.569Z",
+    "tmdbUpdatedAt": "2026-10-05T08:04:53.007Z",
+    "tmdbFetchedAt": "2026-10-05T08:04:53.007Z",
     "alternativeTitles": [
       {
         "title": "Julemandens rensdyr",
@@ -124031,8 +124036,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/367538",
       "imdb": "https://www.imdb.com/title/tt5231402/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:46:10.110Z",
-    "tmdbFetchedAt": "2026-10-04T07:46:10.110Z",
+    "tmdbUpdatedAt": "2026-10-05T08:04:53.627Z",
+    "tmdbFetchedAt": "2026-10-05T08:04:53.627Z",
     "alternativeTitles": [
       {
         "title": "JUL I LUFTHAVNEN",
@@ -124361,8 +124366,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/367537",
       "imdb": "https://www.imdb.com/title/tt5239710/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:46:11.767Z",
-    "tmdbFetchedAt": "2026-10-04T07:46:11.767Z",
+    "tmdbUpdatedAt": "2026-10-05T08:04:54.933Z",
+    "tmdbFetchedAt": "2026-10-05T08:04:54.933Z",
     "alternativeTitles": [
       {
         "title": "En julegave for livet",
@@ -124625,8 +124630,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/367536",
       "imdb": "https://www.imdb.com/title/tt5237552/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:46:13.289Z",
-    "tmdbFetchedAt": "2026-10-04T07:46:13.289Z"
+    "tmdbUpdatedAt": "2026-10-05T08:04:56.554Z",
+    "tmdbFetchedAt": "2026-10-05T08:04:56.554Z"
   },
   {
     "id": "lifetime-2014-the-santa-con",
@@ -125034,19 +125039,19 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
+        "id": 1226515,
+        "name": "David Breckman",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "549138b8c3a368466800109d"
+      },
+      {
         "id": 78501,
         "name": "Melissa Joan Hart",
         "job": "Director",
         "department": "Directing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/slpAK9Ak1Bvi4FJCLeCdtwPZc3D.jpg",
         "creditId": "5491389b925141472e00100a"
-      },
-      {
-        "id": 1226515,
-        "name": "David Breckman",
-        "job": "Writer",
-        "department": "Writing",
-        "creditId": "549138b8c3a368466800109d"
       }
     ],
     "voteAverage": 5.8,
@@ -125057,8 +125062,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/311765",
       "imdb": "https://www.imdb.com/title/tt3911058/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:46:14.453Z",
-    "tmdbFetchedAt": "2026-10-04T07:46:14.453Z"
+    "tmdbUpdatedAt": "2026-10-05T08:04:57.832Z",
+    "tmdbFetchedAt": "2026-10-05T08:04:57.832Z"
   },
   {
     "id": "lifetime-2014-grumpy-cat-s-worst-christmas-ever",
@@ -125380,8 +125385,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/300441",
       "imdb": "https://www.imdb.com/title/tt3801438/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:46:15.405Z",
-    "tmdbFetchedAt": "2026-10-04T07:46:15.405Z",
+    "tmdbUpdatedAt": "2026-10-05T08:04:59.135Z",
+    "tmdbFetchedAt": "2026-10-05T08:04:59.135Z",
     "alternativeTitles": [
       {
         "title": "Zsémbes macska legrosszabb karácsonya",
@@ -125558,8 +125563,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/312034",
       "imdb": "https://www.imdb.com/title/tt4034118/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:46:17.939Z",
-    "tmdbFetchedAt": "2026-10-04T07:46:17.939Z"
+    "tmdbUpdatedAt": "2026-10-05T08:05:00.754Z",
+    "tmdbFetchedAt": "2026-10-05T08:05:00.754Z"
   },
   {
     "id": "lifetime-2014-wishin-and-hopin",
@@ -125763,19 +125768,19 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
-        "id": 1023672,
-        "name": "John Doolan",
-        "job": "Screenplay",
-        "department": "Writing",
-        "creditId": "5484e0109251416a63000fba"
-      },
-      {
         "id": 130050,
         "name": "Colin Theys",
         "job": "Director",
         "department": "Directing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/g2fxMX7U2gqc4vr3EVe7apMDdyC.jpg",
         "creditId": "5484dff8c3a3680b36001123"
+      },
+      {
+        "id": 1023672,
+        "name": "John Doolan",
+        "job": "Screenplay",
+        "department": "Writing",
+        "creditId": "5484e0109251416a63000fba"
       }
     ],
     "voteAverage": 4.8,
@@ -125786,8 +125791,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/308919",
       "imdb": "https://www.imdb.com/title/tt3627780/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:46:18.809Z",
-    "tmdbFetchedAt": "2026-10-04T07:46:18.809Z"
+    "tmdbUpdatedAt": "2026-10-05T08:05:01.385Z",
+    "tmdbFetchedAt": "2026-10-05T08:05:01.385Z"
   },
   {
     "id": "lifetime-2014-an-en-vogue-christmas",
@@ -126000,8 +126005,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/308688",
       "imdb": "https://www.imdb.com/title/tt3922320/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:46:19.733Z",
-    "tmdbFetchedAt": "2026-10-04T07:46:19.733Z"
+    "tmdbUpdatedAt": "2026-10-05T08:05:02.008Z",
+    "tmdbFetchedAt": "2026-10-05T08:05:02.008Z"
   },
   {
     "id": "lifetime-2013-christmas-in-the-city",
@@ -126276,19 +126281,19 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
-        "id": 1215026,
-        "name": "Marita Grabiak",
-        "job": "Director",
-        "department": "Directing",
-        "creditId": "52fe4f06c3a36847f82b7f4b"
-      },
-      {
         "id": 928670,
         "name": "Barbara Kymlicka",
         "job": "Writer",
         "department": "Writing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/5uAmw6fTni4V9UNiU5CdGqxkbbw.jpg",
         "creditId": "52fe4f06c3a36847f82b7f51"
+      },
+      {
+        "id": 1215026,
+        "name": "Marita Grabiak",
+        "job": "Director",
+        "department": "Directing",
+        "creditId": "52fe4f06c3a36847f82b7f4b"
       }
     ],
     "voteAverage": 5.5,
@@ -126299,8 +126304,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/245508",
       "imdb": "https://www.imdb.com/title/tt3015110/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:46:20.596Z",
-    "tmdbFetchedAt": "2026-10-04T07:46:20.596Z",
+    "tmdbUpdatedAt": "2026-10-05T08:05:02.642Z",
+    "tmdbFetchedAt": "2026-10-05T08:05:02.642Z",
     "alternativeTitles": [
       {
         "title": "Jul I Storbyen",
@@ -126629,14 +126634,6 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
-        "id": 31155,
-        "name": "Fred Olen Ray",
-        "job": "Director",
-        "department": "Directing",
-        "profileUrl": "https://image.tmdb.org/t/p/w500/91Y7oLIYJjpoY0YmDEsswKfeqDg.jpg",
-        "creditId": "532b37189251410845001a83"
-      },
-      {
         "id": 102991,
         "name": "Michael Ciminera",
         "job": "Story",
@@ -126644,12 +126641,12 @@ export const MOVIES: Movie[] = [
         "creditId": "532b372d925141084d001a53"
       },
       {
-        "id": 102992,
-        "name": "Richard Gnolfo",
-        "job": "Story",
-        "department": "Writing",
-        "profileUrl": "https://image.tmdb.org/t/p/w500/usaWzXWVLpfg9wmpRDXjKPptdVb.jpg",
-        "creditId": "532b37449251410845001a86"
+        "id": 31155,
+        "name": "Fred Olen Ray",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/91Y7oLIYJjpoY0YmDEsswKfeqDg.jpg",
+        "creditId": "532b37189251410845001a83"
       },
       {
         "id": 128979,
@@ -126665,6 +126662,14 @@ export const MOVIES: Movie[] = [
         "department": "Writing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/hXFy4ygelHJovKvMx37EJeHwvbm.jpg",
         "creditId": "532b376e9251410836001b52"
+      },
+      {
+        "id": 102992,
+        "name": "Richard Gnolfo",
+        "job": "Story",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/usaWzXWVLpfg9wmpRDXjKPptdVb.jpg",
+        "creditId": "532b37449251410845001a86"
       },
       {
         "id": 102992,
@@ -126698,8 +126703,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/249042",
       "imdb": "https://www.imdb.com/title/tt3210602/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:46:23.672Z",
-    "tmdbFetchedAt": "2026-10-04T07:46:23.672Z"
+    "tmdbUpdatedAt": "2026-10-05T08:05:03.284Z",
+    "tmdbFetchedAt": "2026-10-05T08:05:03.284Z"
   },
   {
     "id": "lifetime-2013-christmas-on-the-bayou",
@@ -126974,19 +126979,19 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
+        "id": 934326,
+        "name": "Marcy Holland",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "55417005c3a3681dab002784"
+      },
+      {
         "id": 25834,
         "name": "Leslie Hope",
         "job": "Director",
         "department": "Directing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/pLvZqTqyAh0YmC7egk460I5py42.jpg",
         "creditId": "55416fe39251414aee0027ad"
-      },
-      {
-        "id": 934326,
-        "name": "Marcy Holland",
-        "job": "Writer",
-        "department": "Writing",
-        "creditId": "55417005c3a3681dab002784"
       },
       {
         "id": 1088578,
@@ -127004,8 +127009,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/249062",
       "imdb": "https://www.imdb.com/title/tt2993674/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:46:25.224Z",
-    "tmdbFetchedAt": "2026-10-04T07:46:25.224Z"
+    "tmdbUpdatedAt": "2026-10-05T08:05:05.212Z",
+    "tmdbFetchedAt": "2026-10-05T08:05:05.212Z"
   },
   {
     "id": "lifetime-2013-a-snow-globe-christmas",
@@ -127660,18 +127665,18 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
+        "id": 166993,
+        "name": "Jodi Binstock",
+        "job": "Director",
+        "department": "Directing",
+        "creditId": "52fe4f3cc3a36847f82c76cf"
+      },
+      {
         "id": 146005,
         "name": "Naomi L. Selfman",
         "job": "Screenplay",
         "department": "Writing",
         "creditId": "52fe4f3cc3a36847f82c76d5"
-      },
-      {
-        "id": 146005,
-        "name": "Naomi L. Selfman",
-        "job": "Story",
-        "department": "Writing",
-        "creditId": "52fe4f3cc3a36847f82c76e1"
       },
       {
         "id": 1112051,
@@ -127681,11 +127686,11 @@ export const MOVIES: Movie[] = [
         "creditId": "52fe4f3cc3a36847f82c76db"
       },
       {
-        "id": 166993,
-        "name": "Jodi Binstock",
-        "job": "Director",
-        "department": "Directing",
-        "creditId": "52fe4f3cc3a36847f82c76cf"
+        "id": 146005,
+        "name": "Naomi L. Selfman",
+        "job": "Story",
+        "department": "Writing",
+        "creditId": "52fe4f3cc3a36847f82c76e1"
       }
     ],
     "voteAverage": 5.5,
@@ -127696,8 +127701,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/249060",
       "imdb": "https://www.imdb.com/title/tt3118746/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:46:25.985Z",
-    "tmdbFetchedAt": "2026-10-04T07:46:25.985Z",
+    "tmdbUpdatedAt": "2026-10-05T08:05:07.652Z",
+    "tmdbFetchedAt": "2026-10-05T08:05:07.652Z",
     "alternativeTitles": [
       {
         "title": "En Drømmejul",
@@ -127958,8 +127963,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/240357",
       "imdb": "https://www.imdb.com/title/tt3210984/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:46:28.367Z",
-    "tmdbFetchedAt": "2026-10-04T07:46:28.367Z"
+    "tmdbUpdatedAt": "2026-10-05T08:05:08.267Z",
+    "tmdbFetchedAt": "2026-10-05T08:05:08.267Z"
   },
   {
     "id": "lifetime-2013-kristin-s-christmas-past",
@@ -128155,8 +128160,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/239347",
       "imdb": "https://www.imdb.com/title/tt3043594/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:46:29.115Z",
-    "tmdbFetchedAt": "2026-10-04T07:46:29.115Z",
+    "tmdbUpdatedAt": "2026-10-05T08:05:08.886Z",
+    "tmdbFetchedAt": "2026-10-05T08:05:08.886Z",
     "alternativeTitles": [
       {
         "title": "Retour vers une nouvelle vie",
@@ -128308,8 +128313,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/237709",
       "imdb": "https://www.imdb.com/title/tt3341268/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:46:29.923Z",
-    "tmdbFetchedAt": "2026-10-04T07:46:29.923Z",
+    "tmdbUpdatedAt": "2026-10-05T08:05:09.498Z",
+    "tmdbFetchedAt": "2026-10-05T08:05:09.498Z",
     "alternativeTitles": [
       {
         "title": "Twelve Trees of Christmas",
@@ -128472,8 +128477,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/235494",
       "imdb": "https://www.imdb.com/title/tt3076718/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:46:31.077Z",
-    "tmdbFetchedAt": "2026-10-04T07:46:31.077Z"
+    "tmdbUpdatedAt": "2026-10-05T08:05:11.232Z",
+    "tmdbFetchedAt": "2026-10-05T08:05:11.232Z"
   },
   {
     "id": "lifetime-2013-a-christmas-wedding",
@@ -128683,8 +128688,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/273905",
       "imdb": "https://www.imdb.com/title/tt3226430/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:46:33.290Z",
-    "tmdbFetchedAt": "2026-10-04T07:46:33.290Z"
+    "tmdbUpdatedAt": "2026-10-05T08:05:12.850Z",
+    "tmdbFetchedAt": "2026-10-05T08:05:12.850Z"
   },
   {
     "id": "lifetime-2012-the-real-st-nick",
@@ -128897,8 +128902,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/150669",
       "imdb": "https://www.imdb.com/title/tt2479066/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:46:33.993Z",
-    "tmdbFetchedAt": "2026-10-04T07:46:33.993Z"
+    "tmdbUpdatedAt": "2026-10-05T08:05:14.591Z",
+    "tmdbFetchedAt": "2026-10-05T08:05:14.591Z"
   },
   {
     "id": "lifetime-2012-all-about-christmas-eve",
@@ -129291,8 +129296,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/149490",
       "imdb": "https://www.imdb.com/title/tt2444354/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:46:35.071Z",
-    "tmdbFetchedAt": "2026-10-04T07:46:35.071Z",
+    "tmdbUpdatedAt": "2026-10-05T08:05:15.847Z",
+    "tmdbFetchedAt": "2026-10-05T08:05:15.847Z",
     "alternativeTitles": [
       {
         "title": "Alt om Eves jul",
@@ -129474,19 +129479,19 @@ export const MOVIES: Movie[] = [
         "creditId": "52fe4decc3a36847f8274dcf"
       },
       {
+        "id": 1277950,
+        "name": "Justine Cogan",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "52fe4decc3a36847f8274dd5"
+      },
+      {
         "id": 19228,
         "name": "Jim Fall",
         "job": "Director",
         "department": "Directing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/jv2SYNRKoF8yAYIPWUTfsiC7UuV.jpg",
         "creditId": "52fe4decc3a36847f8274dc9"
-      },
-      {
-        "id": 1277950,
-        "name": "Justine Cogan",
-        "job": "Writer",
-        "department": "Writing",
-        "creditId": "52fe4decc3a36847f8274dd5"
       }
     ],
     "voteAverage": 5.3,
@@ -129497,8 +129502,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/231385",
       "imdb": "https://www.imdb.com/title/tt2304098/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:46:35.778Z",
-    "tmdbFetchedAt": "2026-10-04T07:46:35.778Z",
+    "tmdbUpdatedAt": "2026-10-05T08:05:16.471Z",
+    "tmdbFetchedAt": "2026-10-05T08:05:16.471Z",
     "alternativeTitles": [
       {
         "title": "A Perfect Christmas",
@@ -129700,8 +129705,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/150657",
       "imdb": "https://www.imdb.com/title/tt2369105/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:46:36.708Z",
-    "tmdbFetchedAt": "2026-10-04T07:46:36.708Z"
+    "tmdbUpdatedAt": "2026-10-05T08:05:17.076Z",
+    "tmdbFetchedAt": "2026-10-05T08:05:17.076Z"
   },
   {
     "id": "lifetime-2012-finding-mrs-claus",
@@ -129933,13 +129938,6 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
-        "id": 1130533,
-        "name": "Kate Wharton",
-        "job": "Writer",
-        "department": "Writing",
-        "creditId": "52fe4ae89251416c910c9ae1"
-      },
-      {
         "id": 109680,
         "name": "Mark Jean",
         "job": "Director",
@@ -129953,6 +129951,13 @@ export const MOVIES: Movie[] = [
         "job": "Writer",
         "department": "Writing",
         "creditId": "52fe4ae89251416c910c9adb"
+      },
+      {
+        "id": 1130533,
+        "name": "Kate Wharton",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "52fe4ae89251416c910c9ae1"
       }
     ],
     "voteAverage": 5.6,
@@ -129963,8 +129968,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/150654",
       "imdb": "https://www.imdb.com/title/tt2543818/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:46:37.438Z",
-    "tmdbFetchedAt": "2026-10-04T07:46:37.438Z"
+    "tmdbUpdatedAt": "2026-10-05T08:05:17.721Z",
+    "tmdbFetchedAt": "2026-10-05T08:05:17.721Z"
   },
   {
     "id": "lifetime-2012-a-christmas-wedding-date",
@@ -130202,20 +130207,20 @@ export const MOVIES: Movie[] = [
         "creditId": "52fe4ae99251416c910c9d29"
       },
       {
-        "id": 31155,
-        "name": "Fred Olen Ray",
-        "job": "Screenplay",
-        "department": "Writing",
-        "profileUrl": "https://image.tmdb.org/t/p/w500/91Y7oLIYJjpoY0YmDEsswKfeqDg.jpg",
-        "creditId": "565f834e925141790a00033e"
-      },
-      {
         "id": 92591,
         "name": "Peter Sullivan",
         "job": "Screenplay",
         "department": "Writing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/hXFy4ygelHJovKvMx37EJeHwvbm.jpg",
         "creditId": "565f833f925141791300033b"
+      },
+      {
+        "id": 31155,
+        "name": "Fred Olen Ray",
+        "job": "Screenplay",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/91Y7oLIYJjpoY0YmDEsswKfeqDg.jpg",
+        "creditId": "565f834e925141790a00033e"
       },
       {
         "id": 92591,
@@ -130241,8 +130246,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/150670",
       "imdb": "https://www.imdb.com/title/tt2334090/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:46:38.164Z",
-    "tmdbFetchedAt": "2026-10-04T07:46:38.164Z",
+    "tmdbUpdatedAt": "2026-10-05T08:05:19.455Z",
+    "tmdbFetchedAt": "2026-10-05T08:05:19.455Z",
     "alternativeTitles": [
       {
         "title": "Une seconde chance pour Noël",
@@ -130258,10 +130263,10 @@ export const MOVIES: Movie[] = [
     "id": "lifetime-2013-a-star-for-christmas",
     "slug": "a-star-for-christmas",
     "title": "A Star for Christmas",
-    "year": 2013,
+    "year": 2012,
     "brandId": "lifetime",
-    "releaseDate": "2013-12-09",
-    "premiereDate": "2013-12-09",
+    "releaseDate": "2012-12-02",
+    "premiereDate": "2012-12-02",
     "runtimeMinutes": 88,
     "synopsis": "The only thing that is working in Cassie's world is her small town business. Her Christmas Cupcakery is a huge success, but her love life is a mess. Cassie's whole universe is turned upside down when she falls in love with a co-worker who is revealed to be the famous and notoriously troubled actor Alex Gray. There's no denying that Alex and Cassie are in love, but can their relationship survive the pressure of Hollywood and the holidays?",
     "posterUrl": "/images/posters/241999.jpg",
@@ -130484,18 +130489,18 @@ export const MOVIES: Movie[] = [
       {
         "id": 64278,
         "name": "Michael Feifer",
-        "job": "Writer",
-        "department": "Writing",
-        "profileUrl": "https://image.tmdb.org/t/p/w500/jpN5kuRan3QSlTYkKNn71HbKfdi.jpg",
-        "creditId": "52fe4ec2c3a36847f82a645f"
-      },
-      {
-        "id": 64278,
-        "name": "Michael Feifer",
         "job": "Director",
         "department": "Directing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/jpN5kuRan3QSlTYkKNn71HbKfdi.jpg",
         "creditId": "52fe4ec2c3a36847f82a6459"
+      },
+      {
+        "id": 64278,
+        "name": "Michael Feifer",
+        "job": "Writer",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/jpN5kuRan3QSlTYkKNn71HbKfdi.jpg",
+        "creditId": "52fe4ec2c3a36847f82a645f"
       }
     ],
     "voteAverage": 5.489,
@@ -130506,8 +130511,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/241999",
       "imdb": "https://www.imdb.com/title/tt2566858/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:46:41.646Z",
-    "tmdbFetchedAt": "2026-10-04T07:46:41.646Z",
+    "tmdbUpdatedAt": "2026-10-05T08:05:20.053Z",
+    "tmdbFetchedAt": "2026-10-05T08:05:20.053Z",
     "alternativeTitles": [
       {
         "title": "En stjerne til jul",
@@ -130751,8 +130756,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/150015",
       "imdb": "https://www.imdb.com/title/tt2460976/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:46:44.201Z",
-    "tmdbFetchedAt": "2026-10-04T07:46:44.201Z",
+    "tmdbUpdatedAt": "2026-10-05T08:05:20.686Z",
+    "tmdbFetchedAt": "2026-10-05T08:05:20.686Z",
     "alternativeTitles": [
       {
         "title": "Любов на коледната маса",
@@ -131200,8 +131205,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/239351",
       "imdb": "https://www.imdb.com/title/tt2329032/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:46:44.918Z",
-    "tmdbFetchedAt": "2026-10-04T07:46:44.918Z",
+    "tmdbUpdatedAt": "2026-10-05T08:05:21.326Z",
+    "tmdbFetchedAt": "2026-10-05T08:05:21.326Z",
     "alternativeTitles": [
       {
         "title": "Vier Schwestern zu Weihnachten",
@@ -131403,17 +131408,17 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/149206",
       "imdb": "https://www.imdb.com/title/tt2201034/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:46:46.788Z",
-    "tmdbFetchedAt": "2026-10-04T07:46:46.788Z"
+    "tmdbUpdatedAt": "2026-10-05T08:05:21.960Z",
+    "tmdbFetchedAt": "2026-10-05T08:05:21.960Z"
   },
   {
     "id": "lifetime-2013-the-christmas-consultant",
     "slug": "the-christmas-consultant",
     "title": "The Christmas Consultant",
-    "year": 2013,
+    "year": 2012,
     "brandId": "lifetime",
-    "releaseDate": "2013-10-01",
-    "premiereDate": "2013-10-01",
+    "releaseDate": "2012-11-10",
+    "premiereDate": "2012-11-10",
     "runtimeMinutes": 88,
     "synopsis": "Christmas is just around the corner but suburban workaholics Maya Fletcher and her husband Jack are too busy to get into the holiday spirit. As their Christmas to do list grows and deadlines fast approach, holiday spirit is at an all time low. Maya forgets she promised to host a Christmas Eve party for her and Jack’s whole family. In an effort to impress a potential new client, Maya has also invited him to spend the holidays with the family.",
     "posterUrl": "/images/posters/150709.jpg",
@@ -131570,8 +131575,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/150709",
       "imdb": "https://www.imdb.com/title/tt2380249/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:46:47.763Z",
-    "tmdbFetchedAt": "2026-10-04T07:46:47.763Z",
+    "tmdbUpdatedAt": "2026-10-05T08:05:22.697Z",
+    "tmdbFetchedAt": "2026-10-05T08:05:22.697Z",
     "alternativeTitles": [
       {
         "title": "O Consultor de Natal",
@@ -131739,13 +131744,6 @@ export const MOVIES: Movie[] = [
         "creditId": "52fe4b509251416c750ff0ab"
       },
       {
-        "id": 128979,
-        "name": "Jeffrey Schenck",
-        "job": "Story",
-        "department": "Writing",
-        "creditId": "52fe4b509251416c750ff0b7"
-      },
-      {
         "id": 92591,
         "name": "Peter Sullivan",
         "job": "Story",
@@ -131754,20 +131752,27 @@ export const MOVIES: Movie[] = [
         "creditId": "52fe4b509251416c750ff0bd"
       },
       {
-        "id": 102992,
-        "name": "Richard Gnolfo",
-        "job": "Writer",
-        "department": "Writing",
-        "profileUrl": "https://image.tmdb.org/t/p/w500/usaWzXWVLpfg9wmpRDXjKPptdVb.jpg",
-        "creditId": "52fe4b509251416c750ff0b1"
-      },
-      {
         "id": 92591,
         "name": "Peter Sullivan",
         "job": "Director",
         "department": "Directing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/hXFy4ygelHJovKvMx37EJeHwvbm.jpg",
         "creditId": "52fe4b509251416c750ff0a5"
+      },
+      {
+        "id": 128979,
+        "name": "Jeffrey Schenck",
+        "job": "Story",
+        "department": "Writing",
+        "creditId": "52fe4b509251416c750ff0b7"
+      },
+      {
+        "id": 102992,
+        "name": "Richard Gnolfo",
+        "job": "Writer",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/usaWzXWVLpfg9wmpRDXjKPptdVb.jpg",
+        "creditId": "52fe4b509251416c750ff0b1"
       },
       {
         "id": 102991,
@@ -131793,8 +131798,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/145186",
       "imdb": "https://www.imdb.com/title/tt2072025/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:46:48.482Z",
-    "tmdbFetchedAt": "2026-10-04T07:46:48.482Z",
+    "tmdbUpdatedAt": "2026-10-05T08:05:23.928Z",
+    "tmdbFetchedAt": "2026-10-05T08:05:23.928Z",
     "alternativeTitles": [
       {
         "title": "Les 12 voeux de Noël",
@@ -131983,8 +131988,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/145312",
       "imdb": "https://www.imdb.com/title/tt1893218/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:46:50.098Z",
-    "tmdbFetchedAt": "2026-10-04T07:46:50.098Z",
+    "tmdbUpdatedAt": "2026-10-05T08:05:24.554Z",
+    "tmdbFetchedAt": "2026-10-05T08:05:24.554Z",
     "alternativeTitles": [
       {
         "title": "Una esposa para papá",
@@ -132226,8 +132231,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/50652",
       "imdb": "https://www.imdb.com/title/tt1572008/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:46:50.824Z",
-    "tmdbFetchedAt": "2026-10-04T07:46:50.824Z",
+    "tmdbUpdatedAt": "2026-10-05T08:05:25.141Z",
+    "tmdbFetchedAt": "2026-10-05T08:05:25.141Z",
     "alternativeTitles": [
       {
         "title": "Uma Babá para o Natal",
@@ -132476,8 +132481,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/51505",
       "imdb": "https://www.imdb.com/title/tt1384926/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:46:51.570Z",
-    "tmdbFetchedAt": "2026-10-04T07:46:51.570Z",
+    "tmdbUpdatedAt": "2026-10-05T08:05:25.750Z",
+    "tmdbFetchedAt": "2026-10-05T08:05:25.750Z",
     "alternativeTitles": [
       {
         "title": "La Esperanza de Navidad",
@@ -132780,8 +132785,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/42556",
       "imdb": "https://www.imdb.com/title/tt1446201/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:46:53.696Z",
-    "tmdbFetchedAt": "2026-10-04T07:46:53.696Z",
+    "tmdbUpdatedAt": "2026-10-05T08:05:27.677Z",
+    "tmdbFetchedAt": "2026-10-05T08:05:27.677Z",
     "alternativeTitles": [
       {
         "title": "Twelve Men of Christmas",
@@ -133106,8 +133111,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/50454",
       "imdb": "https://www.imdb.com/title/tt1369647/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:46:55.754Z",
-    "tmdbFetchedAt": "2026-10-04T07:46:55.754Z",
+    "tmdbUpdatedAt": "2026-10-05T08:05:29.035Z",
+    "tmdbFetchedAt": "2026-10-05T08:05:29.035Z",
     "alternativeTitles": [
       {
         "title": "Karácsonyi angyal",
@@ -133392,8 +133397,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/42854",
       "imdb": "https://www.imdb.com/title/tt1284976/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:46:56.478Z",
-    "tmdbFetchedAt": "2026-10-04T07:46:56.478Z",
+    "tmdbUpdatedAt": "2026-10-05T08:05:29.700Z",
+    "tmdbFetchedAt": "2026-10-05T08:05:29.700Z",
     "alternativeTitles": [
       {
         "title": "Une belle fête de famille",
@@ -133650,8 +133655,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/75474",
       "imdb": "https://www.imdb.com/title/tt1158935/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:46:57.329Z",
-    "tmdbFetchedAt": "2026-10-04T07:46:57.329Z",
+    "tmdbUpdatedAt": "2026-10-05T08:05:30.394Z",
+    "tmdbFetchedAt": "2026-10-05T08:05:30.394Z",
     "alternativeTitles": [
       {
         "title": "Daughter of the Bride",
@@ -133868,8 +133873,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/72858",
       "imdb": "https://www.imdb.com/title/tt1237962/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:46:58.054Z",
-    "tmdbFetchedAt": "2026-10-04T07:46:58.054Z"
+    "tmdbUpdatedAt": "2026-10-05T08:05:31.065Z",
+    "tmdbFetchedAt": "2026-10-05T08:05:31.065Z"
   },
   {
     "id": "lifetime-2007-christmas-in-paradise",
@@ -134007,8 +134012,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/197857",
       "imdb": "https://www.imdb.com/title/tt1105269/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:46:59.700Z",
-    "tmdbFetchedAt": "2026-10-04T07:46:59.700Z",
+    "tmdbUpdatedAt": "2026-10-05T08:05:32.441Z",
+    "tmdbFetchedAt": "2026-10-05T08:05:32.441Z",
     "alternativeTitles": [
       {
         "title": "Noël au paradis",
@@ -134206,8 +134211,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/67589",
       "imdb": "https://www.imdb.com/title/tt1159198/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:47:00.540Z",
-    "tmdbFetchedAt": "2026-10-04T07:47:00.540Z",
+    "tmdbUpdatedAt": "2026-10-05T08:05:33.056Z",
+    "tmdbFetchedAt": "2026-10-05T08:05:33.056Z",
     "alternativeTitles": [
       {
         "title": "Joyeux Noël papa maman !",
@@ -134432,8 +134437,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/142077",
       "imdb": "https://www.imdb.com/title/tt0992992/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:47:01.017Z",
-    "tmdbFetchedAt": "2026-10-04T07:47:01.017Z"
+    "tmdbUpdatedAt": "2026-10-05T08:05:33.523Z",
+    "tmdbFetchedAt": "2026-10-05T08:05:33.523Z"
   },
   {
     "id": "lifetime-2006-home-by-christmas",
@@ -134610,8 +134615,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/82097",
       "imdb": "https://www.imdb.com/title/tt0893404/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:47:03.251Z",
-    "tmdbFetchedAt": "2026-10-04T07:47:03.251Z",
+    "tmdbUpdatedAt": "2026-10-05T08:05:34.835Z",
+    "tmdbFetchedAt": "2026-10-05T08:05:34.835Z",
     "alternativeTitles": [
       {
         "title": "De retour pour Noël",
@@ -134880,8 +134885,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/30351",
       "imdb": "https://www.imdb.com/title/tt0872243/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:47:04.134Z",
-    "tmdbFetchedAt": "2026-10-04T07:47:04.134Z",
+    "tmdbUpdatedAt": "2026-10-05T08:05:35.565Z",
+    "tmdbFetchedAt": "2026-10-05T08:05:35.565Z",
     "alternativeTitles": [
       {
         "title": "Les Voeux de Noël",
@@ -135075,8 +135080,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/51790",
       "imdb": "https://www.imdb.com/title/tt0800115/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:47:04.926Z",
-    "tmdbFetchedAt": "2026-10-04T07:47:04.926Z",
+    "tmdbUpdatedAt": "2026-10-05T08:05:36.247Z",
+    "tmdbFetchedAt": "2026-10-05T08:05:36.247Z",
     "alternativeTitles": [
       {
         "title": "Sur la route de Noël",
@@ -135236,8 +135241,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/42559",
       "imdb": "https://www.imdb.com/title/tt0486292/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:47:05.656Z",
-    "tmdbFetchedAt": "2026-10-04T07:47:05.656Z",
+    "tmdbUpdatedAt": "2026-10-05T08:05:36.962Z",
+    "tmdbFetchedAt": "2026-10-05T08:05:36.962Z",
     "alternativeTitles": [
       {
         "title": "Un mariage à Noël",
@@ -135436,8 +135441,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/358879",
       "imdb": "https://www.imdb.com/title/tt0900916/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:47:06.889Z",
-    "tmdbFetchedAt": "2026-10-04T07:47:06.889Z"
+    "tmdbUpdatedAt": "2026-10-05T08:05:37.742Z",
+    "tmdbFetchedAt": "2026-10-05T08:05:37.742Z"
   },
   {
     "id": "lifetime-2006-under-the-mistletoe",
@@ -135666,8 +135671,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/77848",
       "imdb": "https://www.imdb.com/title/tt0846114/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:47:07.761Z",
-    "tmdbFetchedAt": "2026-10-04T07:47:07.761Z"
+    "tmdbUpdatedAt": "2026-10-05T08:05:38.350Z",
+    "tmdbFetchedAt": "2026-10-05T08:05:38.350Z"
   },
   {
     "id": "lifetime-2005-his-and-her-christmas",
@@ -135864,19 +135869,19 @@ export const MOVIES: Movie[] = [
         "creditId": "52fe484e9251416c910878c9"
       },
       {
-        "id": 128979,
-        "name": "Jeffrey Schenck",
-        "job": "Story",
-        "department": "Writing",
-        "creditId": "55fe57ba92514152a200266b"
-      },
-      {
         "id": 92591,
         "name": "Peter Sullivan",
         "job": "Writer",
         "department": "Writing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/hXFy4ygelHJovKvMx37EJeHwvbm.jpg",
         "creditId": "55fe57e2c3a3681328002641"
+      },
+      {
+        "id": 128979,
+        "name": "Jeffrey Schenck",
+        "job": "Story",
+        "department": "Writing",
+        "creditId": "55fe57ba92514152a200266b"
       }
     ],
     "voteAverage": 5,
@@ -135887,8 +135892,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/82376",
       "imdb": "https://www.imdb.com/title/tt0497030/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:47:08.513Z",
-    "tmdbFetchedAt": "2026-10-04T07:47:08.513Z",
+    "tmdbUpdatedAt": "2026-10-05T08:05:39.782Z",
+    "tmdbFetchedAt": "2026-10-05T08:05:39.782Z",
     "alternativeTitles": [
       {
         "title": "Coup de foudre à San Francisco",
@@ -136308,8 +136313,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/52925",
       "imdb": "https://www.imdb.com/title/tt0480844/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:47:10.414Z",
-    "tmdbFetchedAt": "2026-10-04T07:47:10.414Z",
+    "tmdbUpdatedAt": "2026-10-05T08:05:41.126Z",
+    "tmdbFetchedAt": "2026-10-05T08:05:41.126Z",
     "alternativeTitles": [
       {
         "title": "Smothered",
@@ -136487,8 +136492,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/59711",
       "imdb": "https://www.imdb.com/title/tt0383278/"
     },
-    "tmdbUpdatedAt": "2026-10-04T07:47:11.339Z",
-    "tmdbFetchedAt": "2026-10-04T07:47:11.339Z",
+    "tmdbUpdatedAt": "2026-10-05T08:05:41.796Z",
+    "tmdbFetchedAt": "2026-10-05T08:05:41.796Z",
     "alternativeTitles": [
       {
         "title": "Une Seconde Chance à Noël",
@@ -136600,8 +136605,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1772765",
       "imdb": "https://www.imdb.com/title/tt46069464/"
     },
-    "tmdbUpdatedAt": "2026-10-05T05:58:09.218Z",
-    "tmdbFetchedAt": "2026-10-05T05:58:09.218Z",
+    "tmdbUpdatedAt": "2026-10-05T08:05:42.425Z",
+    "tmdbFetchedAt": "2026-10-05T08:05:42.425Z",
     "backdropUrl": "/images/backdrops/1772765.jpg"
   },
   {
@@ -136779,9 +136784,9 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1729134",
       "imdb": "https://www.imdb.com/title/tt43662087/"
     },
-    "tmdbUpdatedAt": "2026-10-05T05:58:10.023Z",
+    "tmdbUpdatedAt": "2026-10-05T08:05:43.203Z",
     "backdropUrl": "/images/backdrops/1729134.jpg",
-    "tmdbFetchedAt": "2026-10-05T05:58:10.023Z"
+    "tmdbFetchedAt": "2026-10-05T08:05:43.203Z"
   },
   {
     "id": "hallmark-2026-mr-mrs-christmas",
@@ -136866,8 +136871,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773006",
       "imdb": "https://www.imdb.com/title/tt46070651/"
     },
-    "tmdbUpdatedAt": "2026-10-05T05:58:10.925Z",
-    "tmdbFetchedAt": "2026-10-05T05:58:10.925Z",
+    "tmdbUpdatedAt": "2026-10-05T08:05:43.802Z",
+    "tmdbFetchedAt": "2026-10-05T08:05:43.802Z",
     "backdropUrl": "/images/backdrops/1773006.jpg",
     "alternativeTitles": [
       {
@@ -136952,9 +136957,9 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773195",
       "imdb": "https://www.imdb.com/title/tt46071555/"
     },
-    "tmdbUpdatedAt": "2026-10-05T05:58:11.824Z",
+    "tmdbUpdatedAt": "2026-10-05T08:05:44.410Z",
     "backdropUrl": "/images/backdrops/1773195.jpg",
-    "tmdbFetchedAt": "2026-10-05T05:58:11.824Z"
+    "tmdbFetchedAt": "2026-10-05T08:05:44.410Z"
   },
   {
     "id": "hallmark-2026-forgotten-holiday",
@@ -137024,8 +137029,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773382",
       "imdb": "https://www.imdb.com/title/tt46071998/"
     },
-    "tmdbUpdatedAt": "2026-10-05T05:58:12.547Z",
-    "tmdbFetchedAt": "2026-10-05T05:58:12.547Z",
+    "tmdbUpdatedAt": "2026-10-05T08:05:45.012Z",
+    "tmdbFetchedAt": "2026-10-05T08:05:45.012Z",
     "backdropUrl": "/images/backdrops/1773382.jpg",
     "alternativeTitles": [
       {
@@ -137103,8 +137108,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773380",
       "imdb": "https://www.imdb.com/title/tt46072491/"
     },
-    "tmdbUpdatedAt": "2026-10-05T05:58:13.288Z",
-    "tmdbFetchedAt": "2026-10-05T05:58:13.288Z",
+    "tmdbUpdatedAt": "2026-10-05T08:05:45.625Z",
+    "tmdbFetchedAt": "2026-10-05T08:05:45.625Z",
     "backdropUrl": "/images/backdrops/1773380.jpg",
     "alternativeTitles": [
       {
@@ -137190,8 +137195,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773378",
       "imdb": "https://www.imdb.com/title/tt46075371/"
     },
-    "tmdbUpdatedAt": "2026-10-05T05:58:13.783Z",
-    "tmdbFetchedAt": "2026-10-05T05:58:13.783Z",
+    "tmdbUpdatedAt": "2026-10-05T08:05:46.004Z",
+    "tmdbFetchedAt": "2026-10-05T08:05:46.004Z",
     "backdropUrl": "/images/backdrops/1773378.jpg"
   },
   {
@@ -137279,8 +137284,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773374",
       "imdb": "https://www.imdb.com/title/tt43749818/"
     },
-    "tmdbUpdatedAt": "2026-10-05T05:58:14.022Z",
-    "tmdbFetchedAt": "2026-10-05T05:58:14.022Z"
+    "tmdbUpdatedAt": "2026-10-05T08:05:46.179Z",
+    "tmdbFetchedAt": "2026-10-05T08:05:46.179Z"
   },
   {
     "id": "hallmark-2026-a-danish-christmas",
@@ -137371,10 +137376,10 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773368",
       "imdb": "https://www.imdb.com/title/tt46066911/"
     },
-    "tmdbUpdatedAt": "2026-10-05T05:58:14.762Z",
+    "tmdbUpdatedAt": "2026-10-05T08:05:46.763Z",
     "runtimeMinutes": 84,
     "backdropUrl": "/images/backdrops/1773368.jpg",
-    "tmdbFetchedAt": "2026-10-05T05:58:14.762Z"
+    "tmdbFetchedAt": "2026-10-05T08:05:46.763Z"
   },
   {
     "id": "hallmark-2026-merry-memories",
@@ -137442,8 +137447,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773363",
       "imdb": "https://www.imdb.com/title/tt46075438/"
     },
-    "tmdbUpdatedAt": "2026-10-05T05:58:15.001Z",
-    "tmdbFetchedAt": "2026-10-05T05:58:15.001Z"
+    "tmdbUpdatedAt": "2026-10-05T08:05:46.937Z",
+    "tmdbFetchedAt": "2026-10-05T08:05:46.937Z"
   },
   {
     "id": "hallmark-2026-holiday-unplugged",
@@ -137548,8 +137553,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773357",
       "imdb": "https://www.imdb.com/title/tt46075500/"
     },
-    "tmdbUpdatedAt": "2026-10-05T05:58:15.236Z",
-    "tmdbFetchedAt": "2026-10-05T05:58:15.236Z",
+    "tmdbUpdatedAt": "2026-10-05T08:05:47.113Z",
+    "tmdbFetchedAt": "2026-10-05T08:05:47.113Z",
     "director": "Michael Robison",
     "alternativeTitles": [
       {
@@ -137665,8 +137670,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773353",
       "imdb": "https://www.imdb.com/title/tt46075510/"
     },
-    "tmdbUpdatedAt": "2026-10-05T05:58:15.472Z",
-    "tmdbFetchedAt": "2026-10-05T05:58:15.472Z",
+    "tmdbUpdatedAt": "2026-10-05T08:05:47.287Z",
+    "tmdbFetchedAt": "2026-10-05T08:05:47.287Z",
     "alternativeTitles": [
       {
         "title": "A Wingdaughter's Christmas",
@@ -137761,8 +137766,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773350",
       "imdb": "https://www.imdb.com/title/tt46075976/"
     },
-    "tmdbUpdatedAt": "2026-10-05T05:58:16.256Z",
-    "tmdbFetchedAt": "2026-10-05T05:58:16.256Z",
+    "tmdbUpdatedAt": "2026-10-05T08:05:47.893Z",
+    "tmdbFetchedAt": "2026-10-05T08:05:47.893Z",
     "backdropUrl": "/images/backdrops/1773350.jpg",
     "alternativeTitles": [
       {
@@ -137832,9 +137837,9 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773345",
       "imdb": "https://www.imdb.com/title/tt46076002/"
     },
-    "tmdbUpdatedAt": "2026-10-05T05:58:17.013Z",
+    "tmdbUpdatedAt": "2026-10-05T08:05:48.512Z",
     "backdropUrl": "/images/backdrops/1773345.jpg",
-    "tmdbFetchedAt": "2026-10-05T05:58:17.013Z",
+    "tmdbFetchedAt": "2026-10-05T08:05:48.512Z",
     "alternativeTitles": [
       {
         "title": "The Christmas Loop",
@@ -137920,8 +137925,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773340",
       "imdb": "https://www.imdb.com/title/tt46076026/"
     },
-    "tmdbUpdatedAt": "2026-10-05T05:58:17.508Z",
-    "tmdbFetchedAt": "2026-10-05T05:58:17.508Z",
+    "tmdbUpdatedAt": "2026-10-05T08:05:48.934Z",
+    "tmdbFetchedAt": "2026-10-05T08:05:48.934Z",
     "backdropUrl": "/images/backdrops/1773340.jpg"
   },
   {
@@ -137984,8 +137989,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773334",
       "imdb": "https://www.imdb.com/title/tt46076042/"
     },
-    "tmdbUpdatedAt": "2026-10-05T05:58:17.746Z",
-    "tmdbFetchedAt": "2026-10-05T05:58:17.746Z"
+    "tmdbUpdatedAt": "2026-10-05T08:05:49.108Z",
+    "tmdbFetchedAt": "2026-10-05T08:05:49.108Z"
   },
   {
     "id": "hallmark-2026-christmas-in-blue-dog-valley",
@@ -138055,8 +138060,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773330",
       "imdb": "https://www.imdb.com/title/tt46076055/"
     },
-    "tmdbUpdatedAt": "2026-10-05T05:58:18.517Z",
-    "tmdbFetchedAt": "2026-10-05T05:58:18.517Z",
+    "tmdbUpdatedAt": "2026-10-05T08:05:49.710Z",
+    "tmdbFetchedAt": "2026-10-05T08:05:49.710Z",
     "backdropUrl": "/images/backdrops/1773330.jpg"
   },
   {
@@ -138140,8 +138145,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt46064711/"
     },
     "backdropUrl": "/images/backdrops/1773329.jpg",
-    "tmdbUpdatedAt": "2026-10-05T05:58:19.270Z",
-    "tmdbFetchedAt": "2026-10-05T05:58:19.270Z"
+    "tmdbUpdatedAt": "2026-10-05T08:05:50.375Z",
+    "tmdbFetchedAt": "2026-10-05T08:05:50.375Z"
   },
   {
     "id": "hallmark-2026-christmas-delivered",
@@ -138240,9 +138245,9 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773322",
       "imdb": "https://www.imdb.com/title/tt41442843/"
     },
-    "tmdbUpdatedAt": "2026-10-05T05:58:20.009Z",
+    "tmdbUpdatedAt": "2026-10-05T08:05:50.967Z",
     "backdropUrl": "/images/backdrops/1773322.jpg",
-    "tmdbFetchedAt": "2026-10-05T05:58:20.009Z",
+    "tmdbFetchedAt": "2026-10-05T08:05:50.967Z",
     "alternativeTitles": [
       {
         "title": "Treeber",
@@ -138439,8 +138444,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773042",
       "imdb": "https://www.imdb.com/title/tt46076498/"
     },
-    "tmdbUpdatedAt": "2026-10-05T05:58:20.280Z",
-    "tmdbFetchedAt": "2026-10-05T05:58:20.280Z",
+    "tmdbUpdatedAt": "2026-10-05T08:05:51.160Z",
+    "tmdbFetchedAt": "2026-10-05T08:05:51.160Z",
     "director": "Panta Mosleh"
   },
   {
@@ -138581,8 +138586,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773318",
       "imdb": "https://www.imdb.com/title/tt43655245/"
     },
-    "tmdbUpdatedAt": "2026-10-05T05:58:20.518Z",
-    "tmdbFetchedAt": "2026-10-05T05:58:20.518Z"
+    "tmdbUpdatedAt": "2026-10-05T08:05:51.335Z",
+    "tmdbFetchedAt": "2026-10-05T08:05:51.335Z"
   },
   {
     "id": "hallmark-2026-holiday-ever-after-a-disney-world-wish-come-true",
@@ -138770,8 +138775,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt39126701/"
     },
     "backdropUrl": "/images/backdrops/1594516.jpg",
-    "tmdbUpdatedAt": "2026-10-05T05:58:21.313Z",
-    "tmdbFetchedAt": "2026-10-05T05:58:21.313Z"
+    "tmdbUpdatedAt": "2026-10-05T08:05:51.926Z",
+    "tmdbFetchedAt": "2026-10-05T08:05:51.926Z"
   },
   {
     "id": "hallmark-2026-the-most-wonderful-secret",
@@ -138833,8 +138838,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773316",
       "imdb": "https://www.imdb.com/title/tt46076602/"
     },
-    "tmdbUpdatedAt": "2026-10-05T05:58:21.556Z",
-    "tmdbFetchedAt": "2026-10-05T05:58:21.556Z"
+    "tmdbUpdatedAt": "2026-10-05T08:05:52.125Z",
+    "tmdbFetchedAt": "2026-10-05T08:05:52.125Z"
   },
   {
     "id": "hallmark-2026-eight-nights-for-love",
@@ -139018,8 +139023,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773298",
       "imdb": "https://www.imdb.com/title/tt43746550/"
     },
-    "tmdbUpdatedAt": "2026-10-05T05:58:21.794Z",
-    "tmdbFetchedAt": "2026-10-05T05:58:21.794Z"
+    "tmdbUpdatedAt": "2026-10-05T08:05:52.300Z",
+    "tmdbFetchedAt": "2026-10-05T08:05:52.300Z"
   },
   {
     "id": "hallmark-2026-miles-to-christmas",
@@ -139216,8 +139221,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773293",
       "imdb": "https://www.imdb.com/title/tt40629979/"
     },
-    "tmdbUpdatedAt": "2026-10-05T05:58:22.033Z",
-    "tmdbFetchedAt": "2026-10-05T05:58:22.033Z"
+    "tmdbUpdatedAt": "2026-10-05T08:05:52.477Z",
+    "tmdbFetchedAt": "2026-10-05T08:05:52.477Z"
   },
   {
     "id": "hallmark-2026-the-snowflake-effect",
@@ -139279,8 +139284,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773286",
       "imdb": "https://www.imdb.com/title/tt46076619/"
     },
-    "tmdbUpdatedAt": "2026-10-05T05:58:22.271Z",
-    "tmdbFetchedAt": "2026-10-05T05:58:22.271Z"
+    "tmdbUpdatedAt": "2026-10-05T08:05:52.673Z",
+    "tmdbFetchedAt": "2026-10-05T08:05:52.673Z"
   },
   {
     "id": "hallmark-2026-a-grand-biltmore-christmas",
@@ -139482,9 +139487,9 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1602653",
       "imdb": "https://www.imdb.com/title/tt39380754/"
     },
-    "tmdbUpdatedAt": "2026-10-05T05:58:23.082Z",
+    "tmdbUpdatedAt": "2026-10-05T08:05:53.294Z",
     "backdropUrl": "/images/backdrops/1602653.jpg",
-    "tmdbFetchedAt": "2026-10-05T05:58:23.082Z"
+    "tmdbFetchedAt": "2026-10-05T08:05:53.294Z"
   },
   {
     "id": "hallmark-2026-an-angel-in-my-stocking",
@@ -139651,8 +139656,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773280",
       "imdb": "https://www.imdb.com/title/tt46064715/"
     },
-    "tmdbUpdatedAt": "2026-10-05T05:58:23.322Z",
-    "tmdbFetchedAt": "2026-10-05T05:58:23.322Z",
+    "tmdbUpdatedAt": "2026-10-05T08:05:53.488Z",
+    "tmdbFetchedAt": "2026-10-05T08:05:53.488Z",
     "director": "Ali Liebert"
   },
   {
@@ -139739,9 +139744,9 @@ export const MOVIES: Movie[] = [
     "links": {
       "tmdb": "https://www.themoviedb.org/movie/1733866"
     },
-    "tmdbUpdatedAt": "2026-10-05T05:58:23.565Z",
+    "tmdbUpdatedAt": "2026-10-05T08:05:53.746Z",
     "imdbId": "tt43750204",
-    "tmdbFetchedAt": "2026-10-05T05:58:23.565Z"
+    "tmdbFetchedAt": "2026-10-05T08:05:53.746Z"
   },
   {
     "id": "hallmark-2026-snow-globe-town",
@@ -139883,8 +139888,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773035",
       "imdb": "https://www.imdb.com/title/tt41783274/"
     },
-    "tmdbUpdatedAt": "2026-10-05T05:58:23.802Z",
-    "tmdbFetchedAt": "2026-10-05T05:58:23.802Z",
+    "tmdbUpdatedAt": "2026-10-05T08:05:53.921Z",
+    "tmdbFetchedAt": "2026-10-05T08:05:53.921Z",
     "alternativeTitles": [
       {
         "title": "A Christmas Through Your Eyes",
@@ -139983,9 +139988,9 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773275",
       "imdb": "https://www.imdb.com/title/tt46076883/"
     },
-    "tmdbUpdatedAt": "2026-10-05T05:58:24.043Z",
+    "tmdbUpdatedAt": "2026-10-05T08:05:54.097Z",
     "director": "Jeff Beesley",
-    "tmdbFetchedAt": "2026-10-05T05:58:24.043Z"
+    "tmdbFetchedAt": "2026-10-05T08:05:54.097Z"
   },
   {
     "id": "hallmark-2026-hearts-all-aglow",
@@ -140057,8 +140062,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773270",
       "imdb": "https://www.imdb.com/title/tt46076903/"
     },
-    "tmdbUpdatedAt": "2026-10-05T05:58:24.280Z",
-    "tmdbFetchedAt": "2026-10-05T05:58:24.280Z"
+    "tmdbUpdatedAt": "2026-10-05T08:05:54.272Z",
+    "tmdbFetchedAt": "2026-10-05T08:05:54.272Z"
   },
   {
     "id": "hallmark-2026-barking-all-the-way",
@@ -140128,8 +140133,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773266",
       "imdb": "https://www.imdb.com/title/tt46076921/"
     },
-    "tmdbUpdatedAt": "2026-10-05T05:58:24.518Z",
-    "tmdbFetchedAt": "2026-10-05T05:58:24.518Z"
+    "tmdbUpdatedAt": "2026-10-05T08:05:54.446Z",
+    "tmdbFetchedAt": "2026-10-05T08:05:54.446Z"
   },
   {
     "id": "hallmark-2026-save-the-date-for-christmas",
@@ -140228,8 +140233,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt46076940/"
     },
     "premiereDate": "2026-12-20",
-    "tmdbUpdatedAt": "2026-10-05T05:58:25.005Z",
-    "tmdbFetchedAt": "2026-10-05T05:58:25.005Z",
+    "tmdbUpdatedAt": "2026-10-05T08:05:54.838Z",
+    "tmdbFetchedAt": "2026-10-05T08:05:54.838Z",
     "alternativeTitles": [
       {
         "title": "Single at the Wedding",
@@ -140378,9 +140383,9 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 6,
     "voteCount": 1,
-    "tmdbUpdatedAt": "2026-10-04T07:47:27.286Z",
+    "tmdbUpdatedAt": "2026-10-05T08:05:55.588Z",
     "premiereDate": "2025-12-12",
-    "tmdbFetchedAt": "2026-10-04T07:47:27.286Z"
+    "tmdbFetchedAt": "2026-10-05T08:05:55.588Z"
   },
   {
     "id": "lifetime-2025-rodeo-christmas-romance",
@@ -140544,9 +140549,9 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 6,
     "voteCount": 5,
-    "tmdbUpdatedAt": "2026-10-04T07:47:28.094Z",
+    "tmdbUpdatedAt": "2026-10-05T08:05:56.260Z",
     "premiereDate": "2025-10-31",
-    "tmdbFetchedAt": "2026-10-04T07:47:28.094Z"
+    "tmdbFetchedAt": "2026-10-05T08:05:56.260Z"
   },
   {
     "id": "lifetime-2025-a-pickleball-christmas",
@@ -140741,9 +140746,9 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "XkTX-MY2lYo",
     "voteAverage": 5.2,
     "voteCount": 4,
-    "tmdbUpdatedAt": "2026-10-04T07:47:28.817Z",
+    "tmdbUpdatedAt": "2026-10-05T08:05:56.858Z",
     "premiereDate": "2025-12-14",
-    "tmdbFetchedAt": "2026-10-04T07:47:28.817Z",
+    "tmdbFetchedAt": "2026-10-05T08:05:56.858Z",
     "alternativeTitles": [
       {
         "title": "Merry Pickleball Match",
@@ -140900,9 +140905,9 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 6,
     "voteCount": 1,
-    "tmdbUpdatedAt": "2026-10-04T07:47:29.338Z",
+    "tmdbUpdatedAt": "2026-10-05T08:05:57.291Z",
     "premiereDate": "2025-11-29",
-    "tmdbFetchedAt": "2026-10-04T07:47:29.338Z"
+    "tmdbFetchedAt": "2026-10-05T08:05:57.291Z"
   },
   {
     "id": "gaf-2023-merry-mystery-christmas",
@@ -141073,9 +141078,9 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "DYOXfGyrsZc",
     "voteAverage": 6.2,
     "voteCount": 5,
-    "tmdbUpdatedAt": "2026-10-04T07:47:30.152Z",
+    "tmdbUpdatedAt": "2026-10-05T08:05:57.993Z",
     "premiereDate": "2023-11-08",
-    "tmdbFetchedAt": "2026-10-04T07:47:30.152Z",
+    "tmdbFetchedAt": "2026-10-05T08:05:57.993Z",
     "alternativeTitles": [
       {
         "title": "A Very Curious Christmas",
@@ -141359,18 +141364,18 @@ export const MOVIES: Movie[] = [
         "creditId": "5e678b8555c926001562bf7b"
       },
       {
-        "id": 1514579,
-        "name": "Cookie Boyle",
-        "job": "Writer",
-        "department": "Writing",
-        "creditId": "5e678b93151c5c001902c2e5"
-      },
-      {
         "id": 1514580,
         "name": "Walter Sawadsky",
         "job": "Writer",
         "department": "Writing",
         "creditId": "5e678baa459ad600135d7c79"
+      },
+      {
+        "id": 1514579,
+        "name": "Cookie Boyle",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "5e678b93151c5c001902c2e5"
       }
     ],
     "trailers": [
@@ -141385,9 +141390,9 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "mVYfpqDg9zw",
     "voteAverage": 6.2,
     "voteCount": 51,
-    "tmdbUpdatedAt": "2026-10-04T07:47:30.903Z",
+    "tmdbUpdatedAt": "2026-10-05T08:05:58.586Z",
     "premiereDate": "2017-11-19",
-    "tmdbFetchedAt": "2026-10-04T07:47:30.903Z",
+    "tmdbFetchedAt": "2026-10-05T08:05:58.586Z",
     "alternativeTitles": [
       {
         "title": "Smagen af jul",
@@ -141565,9 +141570,9 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "4jgsn0vjF2Q",
     "voteAverage": 6.2,
     "voteCount": 20,
-    "tmdbUpdatedAt": "2026-10-04T07:47:32.487Z",
+    "tmdbUpdatedAt": "2026-10-05T08:05:59.197Z",
     "premiereDate": "2022-11-06",
-    "tmdbFetchedAt": "2026-10-04T07:47:32.487Z",
+    "tmdbFetchedAt": "2026-10-05T08:05:59.197Z",
     "alternativeTitles": [
       {
         "title": "Рождественский маскарад",
@@ -141581,7 +141586,7 @@ export const MOVIES: Movie[] = [
     "title": "The Christmas Retreat",
     "year": 2022,
     "brandId": "uptv",
-    "releaseDate": "2022-12-29",
+    "releaseDate": "2022-11-11",
     "synopsis": "When Kim's boyfriend breaks up with her instead of proposing, Kim's mom takes her away to a Christmas Retreat to reconnect with the spirit of the holiday. There she meets newly unemployed Mark.",
     "posterUrl": "/images/posters/1003485.jpg",
     "backdropUrl": "/images/backdrops/1003485.jpg",
@@ -141741,9 +141746,9 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "l9EbL_T-VEM",
     "voteAverage": 6.3,
     "voteCount": 22,
-    "tmdbUpdatedAt": "2026-10-04T07:47:34.055Z",
-    "premiereDate": "2022-12-29",
-    "tmdbFetchedAt": "2026-10-04T07:47:34.055Z"
+    "tmdbUpdatedAt": "2026-10-05T08:05:59.832Z",
+    "premiereDate": "2022-11-11",
+    "tmdbFetchedAt": "2026-10-05T08:05:59.832Z"
   },
   {
     "id": "uptv-2021-christmas-in-the-wilds",
@@ -141902,20 +141907,20 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
-        "id": 1620179,
-        "name": "Neale Kimmel",
-        "job": "Writer",
-        "department": "Writing",
-        "profileUrl": "https://image.tmdb.org/t/p/w500/u3dUPofu16jxqxuDtTjOa1mzhAX.jpg",
-        "creditId": "6151c58d67203d00296ca816"
-      },
-      {
         "id": 1182311,
         "name": "Justin G. Dyck",
         "job": "Director",
         "department": "Directing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/duJJXmdxmAk67tVEi5MEE0KcQLt.jpg",
         "creditId": "6151c572e8a3e100621b61e6"
+      },
+      {
+        "id": 1620179,
+        "name": "Neale Kimmel",
+        "job": "Writer",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/u3dUPofu16jxqxuDtTjOa1mzhAX.jpg",
+        "creditId": "6151c58d67203d00296ca816"
       }
     ],
     "trailers": [
@@ -141930,9 +141935,9 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "Yg5JDxEPacY",
     "voteAverage": 5.9,
     "voteCount": 9,
-    "tmdbUpdatedAt": "2026-10-04T07:47:34.792Z",
+    "tmdbUpdatedAt": "2026-10-05T08:06:00.505Z",
     "premiereDate": "2021-11-25",
-    "tmdbFetchedAt": "2026-10-04T07:47:34.792Z",
+    "tmdbFetchedAt": "2026-10-05T08:06:00.505Z",
     "alternativeTitles": [
       {
         "title": "Navidad en la naturaleza",
@@ -142060,27 +142065,27 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
+        "id": 3264705,
+        "name": "Jennifer Snow",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "633a2d4d0fb398007e4c7861"
+      },
+      {
         "id": 2797683,
         "name": "Amy Force",
         "job": "Director",
         "department": "Directing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/rx4OBU31CpZPxySFX3x0DtWK6QQ.jpg",
         "creditId": "633a2d46a410c8007dab856e"
-      },
-      {
-        "id": 3264705,
-        "name": "Jennifer Snow",
-        "job": "Writer",
-        "department": "Writing",
-        "creditId": "633a2d4d0fb398007e4c7861"
       }
     ],
     "trailers": [],
     "voteAverage": 6.3,
     "voteCount": 3,
-    "tmdbUpdatedAt": "2026-10-04T07:47:35.579Z",
+    "tmdbUpdatedAt": "2026-10-05T08:06:01.140Z",
     "premiereDate": "2022-11-20",
-    "tmdbFetchedAt": "2026-10-04T07:47:35.579Z"
+    "tmdbFetchedAt": "2026-10-05T08:06:01.140Z"
   },
   {
     "id": "uptv-2022-a-tiny-home-christmas",
@@ -142268,9 +142273,9 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "rJ4R4scLycE",
     "voteAverage": 6.6,
     "voteCount": 8,
-    "tmdbUpdatedAt": "2026-10-04T07:47:37.295Z",
+    "tmdbUpdatedAt": "2026-10-05T08:06:02.546Z",
     "premiereDate": "2022-11-12",
-    "tmdbFetchedAt": "2026-10-04T07:47:37.295Z",
+    "tmdbFetchedAt": "2026-10-05T08:06:02.546Z",
     "alternativeTitles": [
       {
         "title": "Une maison pour deux coeurs",
@@ -142465,19 +142470,19 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
+        "id": 1912958,
+        "name": "Jessica L. Randall",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "60fd95b51684f7007fd6e656"
+      },
+      {
         "id": 2129973,
         "name": "David I. Strasser",
         "job": "Director",
         "department": "Directing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/lRP3dNw9RSjxRquYLHhuwkKBqzn.jpg",
         "creditId": "60fd95a633ec26002f6be10c"
-      },
-      {
-        "id": 1912958,
-        "name": "Jessica L. Randall",
-        "job": "Writer",
-        "department": "Writing",
-        "creditId": "60fd95b51684f7007fd6e656"
       }
     ],
     "trailers": [
@@ -142499,9 +142504,9 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "P18Tk_tOz8A",
     "voteAverage": 5.9,
     "voteCount": 25,
-    "tmdbUpdatedAt": "2026-10-04T07:47:39.048Z",
+    "tmdbUpdatedAt": "2026-10-05T08:06:03.213Z",
     "premiereDate": "2021-11-08",
-    "tmdbFetchedAt": "2026-10-04T07:47:39.048Z",
+    "tmdbFetchedAt": "2026-10-05T08:06:03.213Z",
     "alternativeTitles": [
       {
         "title": "The Christmas Book",
@@ -142649,9 +142654,9 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 6,
     "voteCount": 9,
-    "tmdbUpdatedAt": "2026-10-04T07:47:40.324Z",
+    "tmdbUpdatedAt": "2026-10-05T08:06:03.923Z",
     "premiereDate": "2022-12-03",
-    "tmdbFetchedAt": "2026-10-04T07:47:40.324Z"
+    "tmdbFetchedAt": "2026-10-05T08:06:03.923Z"
   },
   {
     "id": "uptv-2022-a-royal-christmas-match",
@@ -142816,9 +142821,9 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "W659lJ1KOT0",
     "voteAverage": 6.2,
     "voteCount": 14,
-    "tmdbUpdatedAt": "2026-10-04T07:47:41.943Z",
+    "tmdbUpdatedAt": "2026-10-05T08:06:05.988Z",
     "premiereDate": "2022-12-04",
-    "tmdbFetchedAt": "2026-10-04T07:47:41.943Z",
+    "tmdbFetchedAt": "2026-10-05T08:06:05.988Z",
     "alternativeTitles": [
       {
         "title": "Die Weihnachtsprinzessin - Liebe zum Fest",
@@ -143002,9 +143007,9 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 7.1,
     "voteCount": 9,
-    "tmdbUpdatedAt": "2026-10-04T07:47:43.557Z",
+    "tmdbUpdatedAt": "2026-10-05T08:06:07.786Z",
     "premiereDate": "2023-11-26",
-    "tmdbFetchedAt": "2026-10-04T07:47:43.557Z"
+    "tmdbFetchedAt": "2026-10-05T08:06:07.786Z"
   },
   {
     "id": "uptv-2023-yuletide-the-knot",
@@ -143012,7 +143017,7 @@ export const MOVIES: Movie[] = [
     "title": "Yuletide the Knot",
     "year": 2023,
     "brandId": "uptv",
-    "releaseDate": "2023-11-13",
+    "releaseDate": "2023-10-23",
     "synopsis": "Small town wedding planner Rachel is planning her biggest Christmas wedding for an influencer couple, is thrown a surprise when the bride's manager turns out to be Logan, her first love and high school sweetheart - her one that got away.",
     "posterUrl": "/images/posters/1175697.jpg",
     "backdropUrl": "/images/backdrops/1175697.jpg",
@@ -143183,11 +143188,12 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
-        "id": 2781971,
-        "name": "Daniel Mahler Landman",
+        "id": 1087708,
+        "name": "Nanea Miyata",
         "job": "Writer",
         "department": "Writing",
-        "creditId": "64fb7aafa35c8e013b3e549b"
+        "profileUrl": "https://image.tmdb.org/t/p/w500/aYSnkNwZHKZEBQFCHIA5mcJkPTO.jpg",
+        "creditId": "64fb7ab2efea7a011ab5b4a4"
       },
       {
         "id": 1087708,
@@ -143198,12 +143204,11 @@ export const MOVIES: Movie[] = [
         "creditId": "64fb7aa7a35c8e00e2564731"
       },
       {
-        "id": 1087708,
-        "name": "Nanea Miyata",
+        "id": 2781971,
+        "name": "Daniel Mahler Landman",
         "job": "Writer",
         "department": "Writing",
-        "profileUrl": "https://image.tmdb.org/t/p/w500/aYSnkNwZHKZEBQFCHIA5mcJkPTO.jpg",
-        "creditId": "64fb7ab2efea7a011ab5b4a4"
+        "creditId": "64fb7aafa35c8e013b3e549b"
       }
     ],
     "trailers": [
@@ -143219,9 +143224,9 @@ export const MOVIES: Movie[] = [
     "tagline": "Find that first love feeling.",
     "voteAverage": 5.5,
     "voteCount": 17,
-    "tmdbUpdatedAt": "2026-10-04T07:47:45.209Z",
-    "premiereDate": "2023-11-13",
-    "tmdbFetchedAt": "2026-10-04T07:47:45.209Z",
+    "tmdbUpdatedAt": "2026-10-05T08:06:09.222Z",
+    "premiereDate": "2023-10-23",
+    "tmdbFetchedAt": "2026-10-05T08:06:09.222Z",
     "alternativeTitles": [
       {
         "title": "圣诞结",
@@ -143497,9 +143502,9 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "AwdAsvyVbn8",
     "voteAverage": 4.3,
     "voteCount": 7,
-    "tmdbUpdatedAt": "2026-10-04T07:47:45.949Z",
+    "tmdbUpdatedAt": "2026-10-05T08:06:10.541Z",
     "premiereDate": "2021-12-01",
-    "tmdbFetchedAt": "2026-10-04T07:47:45.949Z"
+    "tmdbFetchedAt": "2026-10-05T08:06:10.541Z"
   },
   {
     "id": "uptv-2022-the-holiday-swap",
@@ -143648,9 +143653,9 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 6,
     "voteCount": 6,
-    "tmdbUpdatedAt": "2026-10-04T07:47:48.168Z",
+    "tmdbUpdatedAt": "2026-10-05T08:06:11.167Z",
     "premiereDate": "2022-11-19",
-    "tmdbFetchedAt": "2026-10-04T07:47:48.168Z",
+    "tmdbFetchedAt": "2026-10-05T08:06:11.167Z",
     "alternativeTitles": [
       {
         "title": "The Holiday Switch",
@@ -143799,9 +143804,9 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "xS8hQN94u9I",
     "voteAverage": 6.3,
     "voteCount": 6,
-    "tmdbUpdatedAt": "2026-10-04T07:47:48.930Z",
+    "tmdbUpdatedAt": "2026-10-05T08:06:11.792Z",
     "premiereDate": "2022-12-04",
-    "tmdbFetchedAt": "2026-10-04T07:47:48.930Z",
+    "tmdbFetchedAt": "2026-10-05T08:06:11.792Z",
     "alternativeTitles": [
       {
         "title": "Рождество под угрозой",
@@ -143993,9 +143998,9 @@ export const MOVIES: Movie[] = [
     "tagline": "Fashion is in Season",
     "voteAverage": 6.6,
     "voteCount": 5,
-    "tmdbUpdatedAt": "2026-10-04T07:47:50.536Z",
+    "tmdbUpdatedAt": "2026-10-05T08:06:12.405Z",
     "premiereDate": "2022-12-11",
-    "tmdbFetchedAt": "2026-10-04T07:47:50.536Z"
+    "tmdbFetchedAt": "2026-10-05T08:06:12.405Z"
   },
   {
     "id": "uptv-2022-sappy-holiday",
@@ -144267,9 +144272,9 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "dIQEOCW3R3c",
     "voteAverage": 6.4,
     "voteCount": 8,
-    "tmdbUpdatedAt": "2026-10-04T07:47:52.093Z",
+    "tmdbUpdatedAt": "2026-10-05T08:06:13.683Z",
     "premiereDate": "2022-12-17",
-    "tmdbFetchedAt": "2026-10-04T07:47:52.093Z",
+    "tmdbFetchedAt": "2026-10-05T08:06:13.683Z",
     "alternativeTitles": [
       {
         "title": "Christmas at Maple Farm",
@@ -144453,9 +144458,9 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "z2FxyRJ5-7E",
     "voteAverage": 4.7,
     "voteCount": 6,
-    "tmdbUpdatedAt": "2026-10-04T07:47:52.827Z",
+    "tmdbUpdatedAt": "2026-10-05T08:06:14.334Z",
     "premiereDate": "2022-12-18",
-    "tmdbFetchedAt": "2026-10-04T07:47:52.827Z",
+    "tmdbFetchedAt": "2026-10-05T08:06:14.334Z",
     "alternativeTitles": [
       {
         "title": "A Vintage Christmas",
@@ -144615,9 +144620,9 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "xITirrP9uIQ",
     "voteAverage": 4.7,
     "voteCount": 6,
-    "tmdbUpdatedAt": "2026-10-04T07:47:53.606Z",
+    "tmdbUpdatedAt": "2026-10-05T08:06:15.590Z",
     "premiereDate": "2022-12-24",
-    "tmdbFetchedAt": "2026-10-04T07:47:53.606Z"
+    "tmdbFetchedAt": "2026-10-05T08:06:15.590Z"
   },
   {
     "id": "uptv-2022-christmas-in-wolf-creek",
@@ -144815,9 +144820,9 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "bT9fcp3SjwQ",
     "voteAverage": 5.7,
     "voteCount": 3,
-    "tmdbUpdatedAt": "2026-10-04T07:47:54.521Z",
+    "tmdbUpdatedAt": "2026-10-05T08:06:16.232Z",
     "premiereDate": "2022-12-04",
-    "tmdbFetchedAt": "2026-10-04T07:47:54.521Z"
+    "tmdbFetchedAt": "2026-10-05T08:06:16.232Z"
   },
   {
     "id": "uptv-2023-we-re-scrooged",
@@ -144993,9 +144998,9 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 6.6,
     "voteCount": 9,
-    "tmdbUpdatedAt": "2026-10-04T07:47:55.314Z",
+    "tmdbUpdatedAt": "2026-10-05T08:06:16.844Z",
     "premiereDate": "2023-11-05",
-    "tmdbFetchedAt": "2026-10-04T07:47:55.314Z"
+    "tmdbFetchedAt": "2026-10-05T08:06:16.844Z"
   },
   {
     "id": "uptv-2023-christmas-time-capsule",
@@ -145101,7 +145106,7 @@ export const MOVIES: Movie[] = [
         "order": 9
       }
     ],
-    "director": "Paula Tiberius",
+    "director": "Marco Deufemia",
     "tmdbId": 1175681,
     "imdbId": "tt27379141",
     "isComingSoon": false,
@@ -145140,11 +145145,11 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
-        "id": 3264705,
-        "name": "Jennifer Snow",
-        "job": "Writer",
-        "department": "Writing",
-        "creditId": "64fb7447dc1cb4011fc3ff63"
+        "id": 1911937,
+        "name": "Marco Deufemia",
+        "job": "Director",
+        "department": "Directing",
+        "creditId": "64fb743ba35c8e011cf531b5"
       },
       {
         "id": 2481591,
@@ -145155,11 +145160,11 @@ export const MOVIES: Movie[] = [
         "creditId": "64fb7440a35c8e00ffd10bec"
       },
       {
-        "id": 1911937,
-        "name": "Marco Deufemia",
-        "job": "Director",
-        "department": "Directing",
-        "creditId": "64fb743ba35c8e011cf531b5"
+        "id": 3264705,
+        "name": "Jennifer Snow",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "64fb7447dc1cb4011fc3ff63"
       }
     ],
     "trailers": [
@@ -145174,9 +145179,9 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "_7NVgjX3UgY",
     "voteAverage": 6.4,
     "voteCount": 9,
-    "tmdbUpdatedAt": "2026-10-04T07:47:56.038Z",
+    "tmdbUpdatedAt": "2026-10-05T08:06:19.352Z",
     "premiereDate": "2023-11-12",
-    "tmdbFetchedAt": "2026-10-04T07:47:56.038Z"
+    "tmdbFetchedAt": "2026-10-05T08:06:19.352Z"
   },
   {
     "id": "uptv-2023-country-hearts-christmas",
@@ -145399,9 +145404,9 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "n7XM338hmPg",
     "voteAverage": 7.2,
     "voteCount": 4,
-    "tmdbUpdatedAt": "2026-10-04T07:47:56.769Z",
+    "tmdbUpdatedAt": "2026-10-05T08:06:19.997Z",
     "premiereDate": "2023-11-19",
-    "tmdbFetchedAt": "2026-10-04T07:47:56.769Z"
+    "tmdbFetchedAt": "2026-10-05T08:06:19.997Z"
   },
   {
     "id": "uptv-2023-christmas-at-the-amish-bakery",
@@ -145541,9 +145546,9 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "41vgakKFqtw",
     "voteAverage": 7.1,
     "voteCount": 15,
-    "tmdbUpdatedAt": "2026-10-04T07:47:57.512Z",
+    "tmdbUpdatedAt": "2026-10-05T08:06:20.627Z",
     "premiereDate": "2023-12-10",
-    "tmdbFetchedAt": "2026-10-04T07:47:57.512Z",
+    "tmdbFetchedAt": "2026-10-05T08:06:20.627Z",
     "alternativeTitles": [
       {
         "title": "Christmas at an Amish Bakery",
@@ -145700,14 +145705,6 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
-        "id": 2129973,
-        "name": "David I. Strasser",
-        "job": "Director",
-        "department": "Directing",
-        "profileUrl": "https://image.tmdb.org/t/p/w500/lRP3dNw9RSjxRquYLHhuwkKBqzn.jpg",
-        "creditId": "64fb7caddc1cb400b0bad149"
-      },
-      {
         "id": 591514,
         "name": "Joany Kane",
         "job": "Writer",
@@ -145720,14 +145717,22 @@ export const MOVIES: Movie[] = [
         "job": "Writer",
         "department": "Writing",
         "creditId": "64fb7cbba35c8e00adc4c925"
+      },
+      {
+        "id": 2129973,
+        "name": "David I. Strasser",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/lRP3dNw9RSjxRquYLHhuwkKBqzn.jpg",
+        "creditId": "64fb7caddc1cb400b0bad149"
       }
     ],
     "trailers": [],
     "voteAverage": 5.8,
     "voteCount": 5,
-    "tmdbUpdatedAt": "2026-10-04T07:47:58.448Z",
+    "tmdbUpdatedAt": "2026-10-05T08:06:21.222Z",
     "premiereDate": "2023-12-17",
-    "tmdbFetchedAt": "2026-10-04T07:47:58.448Z"
+    "tmdbFetchedAt": "2026-10-05T08:06:21.222Z"
   },
   {
     "id": "uptv-2022-country-roads-christmas",
@@ -145920,9 +145925,9 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "Ije7k9t8inc",
     "voteAverage": 6,
     "voteCount": 3,
-    "tmdbUpdatedAt": "2026-10-04T07:47:59.159Z",
+    "tmdbUpdatedAt": "2026-10-05T08:06:21.885Z",
     "premiereDate": "2022-11-27",
-    "tmdbFetchedAt": "2026-10-04T07:47:59.159Z"
+    "tmdbFetchedAt": "2026-10-05T08:06:21.885Z"
   },
   {
     "id": "uptv-2022-the-case-of-the-christmas-diamond",
@@ -146118,9 +146123,9 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 6.5,
     "voteCount": 13,
-    "tmdbUpdatedAt": "2026-10-04T07:48:00.085Z",
+    "tmdbUpdatedAt": "2026-10-05T08:06:22.550Z",
     "premiereDate": "2022-11-20",
-    "tmdbFetchedAt": "2026-10-04T07:48:00.085Z",
+    "tmdbFetchedAt": "2026-10-05T08:06:22.550Z",
     "alternativeTitles": [
       {
         "title": "Missing Gem",
@@ -146352,9 +146357,9 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 5.5,
     "voteCount": 2,
-    "tmdbUpdatedAt": "2026-10-04T07:48:02.305Z",
+    "tmdbUpdatedAt": "2026-10-05T08:06:23.173Z",
     "premiereDate": "2022-12-11",
-    "tmdbFetchedAt": "2026-10-04T07:48:02.305Z"
+    "tmdbFetchedAt": "2026-10-05T08:06:23.173Z"
   },
   {
     "id": "uptv-2022-dognapped-hound-for-the-holidays",
@@ -146566,9 +146571,9 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 5.6,
     "voteCount": 19,
-    "tmdbUpdatedAt": "2026-10-04T07:48:03.081Z",
+    "tmdbUpdatedAt": "2026-10-05T08:06:23.806Z",
     "premiereDate": "2022-11-27",
-    "tmdbFetchedAt": "2026-10-04T07:48:03.081Z",
+    "tmdbFetchedAt": "2026-10-05T08:06:23.806Z",
     "alternativeTitles": [
       {
         "title": "Missing Pup",
@@ -146733,13 +146738,6 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
-        "id": 1872470,
-        "name": "Imogen Cooper",
-        "job": "Writer",
-        "department": "Writing",
-        "creditId": "64d13e68d9f4a603b79826ba"
-      },
-      {
         "id": 1801089,
         "name": "Danny Stack",
         "job": "Director",
@@ -146754,6 +146752,13 @@ export const MOVIES: Movie[] = [
         "department": "Directing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/6mHssIQD2OEeSynOJEM3JNTKmYU.jpg",
         "creditId": "64d13e61d9f4a603b54a9059"
+      },
+      {
+        "id": 1872470,
+        "name": "Imogen Cooper",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "64d13e68d9f4a603b79826ba"
       }
     ],
     "trailers": [
@@ -146768,9 +146773,9 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "L1--cbcThJc",
     "voteAverage": 4.4,
     "voteCount": 15,
-    "tmdbUpdatedAt": "2026-10-04T07:48:04.657Z",
+    "tmdbUpdatedAt": "2026-10-05T08:06:25.660Z",
     "premiereDate": "2023-10-17",
-    "tmdbFetchedAt": "2026-10-04T07:48:04.657Z",
+    "tmdbFetchedAt": "2026-10-05T08:06:25.660Z",
     "alternativeTitles": [
       {
         "title": "Christmas in the Cotswolds",
@@ -146954,6 +146959,14 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
+        "id": 92591,
+        "name": "Peter Sullivan",
+        "job": "Story",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/hXFy4ygelHJovKvMx37EJeHwvbm.jpg",
+        "creditId": "633b5fce2b113d007ae86506"
+      },
+      {
         "id": 591514,
         "name": "Joany Kane",
         "job": "Writer",
@@ -146968,14 +146981,6 @@ export const MOVIES: Movie[] = [
         "creditId": "633b5fc44cbe120079a2ed50"
       },
       {
-        "id": 92591,
-        "name": "Peter Sullivan",
-        "job": "Story",
-        "department": "Writing",
-        "profileUrl": "https://image.tmdb.org/t/p/w500/hXFy4ygelHJovKvMx37EJeHwvbm.jpg",
-        "creditId": "633b5fce2b113d007ae86506"
-      },
-      {
         "id": 1534543,
         "name": "Amy Barrett",
         "job": "Director",
@@ -146987,9 +146992,9 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 6.1,
     "voteCount": 14,
-    "tmdbUpdatedAt": "2026-10-04T07:48:05.387Z",
+    "tmdbUpdatedAt": "2026-10-05T08:06:26.974Z",
     "premiereDate": "2022-12-04",
-    "tmdbFetchedAt": "2026-10-04T07:48:05.387Z"
+    "tmdbFetchedAt": "2026-10-05T08:06:26.974Z"
   },
   {
     "id": "uptv-2024-festival-of-trees",
@@ -147097,9 +147102,9 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 6,
     "voteCount": 3,
-    "tmdbUpdatedAt": "2026-10-04T07:48:05.862Z",
+    "tmdbUpdatedAt": "2026-10-05T08:06:27.380Z",
     "premiereDate": "2024-11-24",
-    "tmdbFetchedAt": "2026-10-04T07:48:05.862Z"
+    "tmdbFetchedAt": "2026-10-05T08:06:27.380Z"
   },
   {
     "id": "uptv-2022-a-prince-and-pauper-christmas",
@@ -147303,9 +147308,9 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "ogTCE0LpaPQ",
     "voteAverage": 6.4,
     "voteCount": 18,
-    "tmdbUpdatedAt": "2026-10-04T07:48:07.449Z",
+    "tmdbUpdatedAt": "2026-10-05T08:06:29.173Z",
     "premiereDate": "2022-12-11",
-    "tmdbFetchedAt": "2026-10-04T07:48:07.449Z",
+    "tmdbFetchedAt": "2026-10-05T08:06:29.173Z",
     "alternativeTitles": [
       {
         "title": "Royal Caper",
@@ -147435,9 +147440,9 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "z4y1DejLxQg",
     "voteAverage": 6.9,
     "voteCount": 7,
-    "tmdbUpdatedAt": "2026-10-04T07:48:08.184Z",
+    "tmdbUpdatedAt": "2026-10-05T08:06:29.775Z",
     "premiereDate": "2024-12-01",
-    "tmdbFetchedAt": "2026-10-04T07:48:08.184Z"
+    "tmdbFetchedAt": "2026-10-05T08:06:29.775Z"
   },
   {
     "id": "uptv-2023-12-dares-of-christmas",
@@ -147570,19 +147575,19 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
+        "id": 2943570,
+        "name": "Paris Herbert-Taylor",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "64c2f901eec4f30125a30d25"
+      },
+      {
         "id": 1828125,
         "name": "Panta Mosleh",
         "job": "Director",
         "department": "Directing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/kgxl9W0oe0aH8PhoSJzCo7yufXG.jpg",
         "creditId": "64c2f8faec370c011c462c97"
-      },
-      {
-        "id": 2943570,
-        "name": "Paris Herbert-Taylor",
-        "job": "Writer",
-        "department": "Writing",
-        "creditId": "64c2f901eec4f30125a30d25"
       }
     ],
     "trailers": [
@@ -147604,9 +147609,9 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "y7jjJ5Y9hFc",
     "voteAverage": 5.5,
     "voteCount": 20,
-    "tmdbUpdatedAt": "2026-10-04T07:48:09.741Z",
+    "tmdbUpdatedAt": "2026-10-05T08:06:32.166Z",
     "premiereDate": "2023-12-21",
-    "tmdbFetchedAt": "2026-10-04T07:48:09.741Z",
+    "tmdbFetchedAt": "2026-10-05T08:06:32.166Z",
     "alternativeTitles": [
       {
         "title": "12 défis pour Noël",
@@ -147807,9 +147812,9 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 5.4,
     "voteCount": 4,
-    "tmdbUpdatedAt": "2026-10-04T07:48:10.481Z",
+    "tmdbUpdatedAt": "2026-10-05T08:06:32.797Z",
     "premiereDate": "2024-12-13",
-    "tmdbFetchedAt": "2026-10-04T07:48:10.481Z"
+    "tmdbFetchedAt": "2026-10-05T08:06:32.797Z"
   },
   {
     "id": "uptv-2024-north-by-north-pole-a-dial-s-mystery",
@@ -147949,9 +147954,9 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 5.7,
     "voteCount": 3,
-    "tmdbUpdatedAt": "2026-10-04T07:48:11.548Z",
+    "tmdbUpdatedAt": "2026-10-05T08:06:33.494Z",
     "premiereDate": "2024-12-22",
-    "tmdbFetchedAt": "2026-10-04T07:48:11.548Z"
+    "tmdbFetchedAt": "2026-10-05T08:06:33.494Z"
   },
   {
     "id": "uptv-2018-this-is-our-christmas",
@@ -148104,9 +148109,9 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 2,
     "voteCount": 3,
-    "tmdbUpdatedAt": "2026-10-04T07:48:12.046Z",
+    "tmdbUpdatedAt": "2026-10-05T08:06:33.915Z",
     "premiereDate": "2018-11-08",
-    "tmdbFetchedAt": "2026-10-04T07:48:12.046Z",
+    "tmdbFetchedAt": "2026-10-05T08:06:33.915Z",
     "alternativeTitles": [
       {
         "title": "Beverly Hills Christmas 2",
@@ -148337,9 +148342,9 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "xyb9SyVXdnY",
     "voteAverage": 6,
     "voteCount": 38,
-    "tmdbUpdatedAt": "2026-10-04T07:48:14.531Z",
+    "tmdbUpdatedAt": "2026-10-05T08:06:35.357Z",
     "premiereDate": "2018-11-04",
-    "tmdbFetchedAt": "2026-10-04T07:48:14.531Z",
+    "tmdbFetchedAt": "2026-10-05T08:06:35.357Z",
     "alternativeTitles": [
       {
         "title": "Christmas Swap",
@@ -148532,19 +148537,19 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
-        "id": 1576220,
-        "name": "Letia Clouston",
-        "job": "Director",
-        "department": "Directing",
-        "creditId": "581d97c4c3a36806ff00679c"
-      },
-      {
         "id": 1704378,
         "name": "Alison Spuck McNeeley",
         "job": "Writer",
         "department": "Writing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/c1RgGasjt4lvOgetJCUGLfNdS8N.jpg",
         "creditId": "581d98ac9251410f06005faa"
+      },
+      {
+        "id": 1576220,
+        "name": "Letia Clouston",
+        "job": "Director",
+        "department": "Directing",
+        "creditId": "581d97c4c3a36806ff00679c"
       },
       {
         "id": 1704379,
@@ -148568,9 +148573,9 @@ export const MOVIES: Movie[] = [
     "tagline": "This holiday it's a race to the altar!",
     "voteAverage": 5.5,
     "voteCount": 51,
-    "tmdbUpdatedAt": "2026-10-04T07:48:16.231Z",
+    "tmdbUpdatedAt": "2026-10-05T08:06:35.947Z",
     "premiereDate": "2016-11-06",
-    "tmdbFetchedAt": "2026-10-04T07:48:16.231Z",
+    "tmdbFetchedAt": "2026-10-05T08:06:35.947Z",
     "alternativeTitles": [
       {
         "title": "Gift før jul",
@@ -148741,9 +148746,9 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 6.6,
     "voteCount": 35,
-    "tmdbUpdatedAt": "2026-10-04T07:48:17.005Z",
+    "tmdbUpdatedAt": "2026-10-05T08:06:37.697Z",
     "premiereDate": "2016-11-25",
-    "tmdbFetchedAt": "2026-10-04T07:48:17.005Z",
+    "tmdbFetchedAt": "2026-10-05T08:06:37.697Z",
     "alternativeTitles": [
       {
         "title": "Une demande en mariage pour Noël",
@@ -149708,9 +149713,9 @@ export const MOVIES: Movie[] = [
     "tagline": "This holiday, they're evening the score.",
     "voteAverage": 4.8,
     "voteCount": 37,
-    "tmdbUpdatedAt": "2026-10-04T07:48:18.152Z",
+    "tmdbUpdatedAt": "2026-10-05T08:06:38.315Z",
     "premiereDate": "2016-10-25",
-    "tmdbFetchedAt": "2026-10-04T07:48:18.152Z"
+    "tmdbFetchedAt": "2026-10-05T08:06:38.315Z"
   },
   {
     "id": "uptv-2013-guess-who-s-coming-to-christmas",
@@ -149848,6 +149853,14 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
+        "id": 36130,
+        "name": "Tippi Dobrofsky",
+        "job": "Writer",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/qVecDr8L3iEefOXspuzNcBcPQtR.jpg",
+        "creditId": "560407bfc3a3685526005466"
+      },
+      {
         "id": 115178,
         "name": "Kristoffer Tabori",
         "job": "Director",
@@ -149862,22 +149875,14 @@ export const MOVIES: Movie[] = [
         "department": "Writing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/bTrJcjQuyqbqOaHOwqqQVWtF9UN.jpg",
         "creditId": "560407ae92514122be004ca3"
-      },
-      {
-        "id": 36130,
-        "name": "Tippi Dobrofsky",
-        "job": "Writer",
-        "department": "Writing",
-        "profileUrl": "https://image.tmdb.org/t/p/w500/qVecDr8L3iEefOXspuzNcBcPQtR.jpg",
-        "creditId": "560407bfc3a3685526005466"
       }
     ],
     "trailers": [],
     "voteAverage": 5.7,
     "voteCount": 15,
-    "tmdbUpdatedAt": "2026-10-04T07:48:18.994Z",
+    "tmdbUpdatedAt": "2026-10-05T08:06:38.968Z",
     "premiereDate": "2013-12-08",
-    "tmdbFetchedAt": "2026-10-04T07:48:18.994Z",
+    "tmdbFetchedAt": "2026-10-05T08:06:38.968Z",
     "alternativeTitles": [
       {
         "title": "Познай кой ще дойде за Коледа",
@@ -150046,9 +150051,9 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "R70bRDAs6CE",
     "voteAverage": 5.8,
     "voteCount": 56,
-    "tmdbUpdatedAt": "2026-10-04T07:48:19.717Z",
+    "tmdbUpdatedAt": "2026-10-05T08:06:39.815Z",
     "premiereDate": "2015-11-15",
-    "tmdbFetchedAt": "2026-10-04T07:48:19.717Z",
+    "tmdbFetchedAt": "2026-10-05T08:06:39.815Z",
     "alternativeTitles": [
       {
         "title": "Racconto di Natale di una dogsitter",
@@ -150236,9 +150241,9 @@ export const MOVIES: Movie[] = [
     "tagline": "Be Careful What You Wish For!",
     "voteAverage": 4.6,
     "voteCount": 33,
-    "tmdbUpdatedAt": "2026-10-04T07:48:21.277Z",
+    "tmdbUpdatedAt": "2026-10-05T08:06:41.143Z",
     "premiereDate": "2015-11-03",
-    "tmdbFetchedAt": "2026-10-04T07:48:21.277Z",
+    "tmdbFetchedAt": "2026-10-05T08:06:41.143Z",
     "alternativeTitles": [
       {
         "title": "Tel Père, Tel Fils",
@@ -150424,9 +150429,9 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 6.1,
     "voteCount": 53,
-    "tmdbUpdatedAt": "2026-10-04T07:48:23.669Z",
+    "tmdbUpdatedAt": "2026-10-05T08:06:43.177Z",
     "premiereDate": "2014-11-09",
-    "tmdbFetchedAt": "2026-10-04T07:48:23.669Z",
+    "tmdbFetchedAt": "2026-10-05T08:06:43.177Z",
     "alternativeTitles": [
       {
         "title": "Christmas Mix",
@@ -150673,9 +150678,9 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "h3C0n7T4imw",
     "voteAverage": 5.2,
     "voteCount": 42,
-    "tmdbUpdatedAt": "2026-10-04T07:48:25.466Z",
+    "tmdbUpdatedAt": "2026-10-05T08:06:44.470Z",
     "premiereDate": "2013-11-29",
-    "tmdbFetchedAt": "2026-10-04T07:48:25.466Z"
+    "tmdbFetchedAt": "2026-10-05T08:06:44.470Z"
   },
   {
     "id": "uptv-2016-the-rooftop-christmas-tree",
@@ -150909,9 +150914,9 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "f-vHjA9xRZE",
     "voteAverage": 6.1,
     "voteCount": 27,
-    "tmdbUpdatedAt": "2026-10-04T07:48:26.157Z",
+    "tmdbUpdatedAt": "2026-10-05T08:06:45.091Z",
     "premiereDate": "2016-11-27",
-    "tmdbFetchedAt": "2026-10-04T07:48:26.157Z",
+    "tmdbFetchedAt": "2026-10-05T08:06:45.091Z",
     "alternativeTitles": [
       {
         "title": "Juletræet på taget",
@@ -151093,9 +151098,9 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "yT7SWbNlPkM",
     "voteAverage": 6.4,
     "voteCount": 53,
-    "tmdbUpdatedAt": "2026-10-04T07:48:26.886Z",
+    "tmdbUpdatedAt": "2026-10-05T08:06:45.697Z",
     "premiereDate": "2015-11-22",
-    "tmdbFetchedAt": "2026-10-04T07:48:26.886Z",
+    "tmdbFetchedAt": "2026-10-05T08:06:45.697Z",
     "alternativeTitles": [
       {
         "title": "Angeli nella neve",
@@ -151196,19 +151201,19 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
-        "id": 589764,
-        "name": "Roger Melvin",
-        "job": "Director",
-        "department": "Directing",
-        "creditId": "5a3f9f56c3a36858c500a6a4"
-      },
-      {
         "id": 235557,
         "name": "Rhonda Baraka",
         "job": "Writer",
         "department": "Writing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/merppkW4qfm1OwvgPMf5tV8Otaa.jpg",
         "creditId": "5a3f9f3b0e0a264f8500a21e"
+      },
+      {
+        "id": 589764,
+        "name": "Roger Melvin",
+        "job": "Director",
+        "department": "Directing",
+        "creditId": "5a3f9f56c3a36858c500a6a4"
       }
     ],
     "trailers": [
@@ -151230,9 +151235,9 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "5nML0Gw8DZA",
     "voteAverage": 5.3,
     "voteCount": 13,
-    "tmdbUpdatedAt": "2026-10-04T07:48:28.424Z",
+    "tmdbUpdatedAt": "2026-10-05T08:06:46.931Z",
     "premiereDate": "2013-12-14",
-    "tmdbFetchedAt": "2026-10-04T07:48:28.424Z"
+    "tmdbFetchedAt": "2026-10-05T08:06:46.931Z"
   },
   {
     "id": "uptv-2014-marry-us-for-christmas",
@@ -151408,9 +151413,9 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "1eSnkM57OII",
     "voteAverage": 5.3,
     "voteCount": 9,
-    "tmdbUpdatedAt": "2026-10-04T07:48:30.543Z",
+    "tmdbUpdatedAt": "2026-10-05T08:06:48.163Z",
     "premiereDate": "2014-12-07",
-    "tmdbFetchedAt": "2026-10-04T07:48:30.543Z",
+    "tmdbFetchedAt": "2026-10-05T08:06:48.163Z",
     "alternativeTitles": [
       {
         "title": "Marions-nous pour Noël",
@@ -151618,9 +151623,9 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "HQ3JGCZT_dY",
     "voteAverage": 5.4,
     "voteCount": 12,
-    "tmdbUpdatedAt": "2026-10-04T07:48:32.852Z",
+    "tmdbUpdatedAt": "2026-10-05T08:06:49.435Z",
     "premiereDate": "2016-11-13",
-    "tmdbFetchedAt": "2026-10-04T07:48:32.852Z"
+    "tmdbFetchedAt": "2026-10-05T08:06:49.435Z"
   },
   {
     "id": "uptv-2016-a-husband-for-christmas",
@@ -151891,6 +151896,13 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
+        "id": 144757,
+        "name": "Jay Cipriani",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "5834b19dc3a36829d900b2e4"
+      },
+      {
         "id": 97618,
         "name": "David DeCoteau",
         "job": "Director",
@@ -151904,13 +151916,6 @@ export const MOVIES: Movie[] = [
         "job": "Story",
         "department": "Writing",
         "creditId": "5834b1b09251416c2e004369"
-      },
-      {
-        "id": 144757,
-        "name": "Jay Cipriani",
-        "job": "Writer",
-        "department": "Writing",
-        "creditId": "5834b19dc3a36829d900b2e4"
       },
       {
         "id": 92591,
@@ -151941,9 +151946,9 @@ export const MOVIES: Movie[] = [
     "tagline": "Can they fool everyone, or are they fooling themselves?",
     "voteAverage": 5.2,
     "voteCount": 24,
-    "tmdbUpdatedAt": "2026-10-04T07:48:34.801Z",
+    "tmdbUpdatedAt": "2026-10-05T08:06:50.797Z",
     "premiereDate": "2016-12-11",
-    "tmdbFetchedAt": "2026-10-04T07:48:34.801Z"
+    "tmdbFetchedAt": "2026-10-05T08:06:50.797Z"
   },
   {
     "id": "uptv-2015-my-one-christmas-wish",
@@ -152193,9 +152198,9 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 5.4,
     "voteCount": 9,
-    "tmdbUpdatedAt": "2026-10-04T07:48:35.731Z",
+    "tmdbUpdatedAt": "2026-10-05T08:06:51.429Z",
     "premiereDate": "2015-11-29",
-    "tmdbFetchedAt": "2026-10-04T07:48:35.731Z"
+    "tmdbFetchedAt": "2026-10-05T08:06:51.429Z"
   },
   {
     "id": "uptv-2014-paper-angels",
@@ -152371,9 +152376,9 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 5.9,
     "voteCount": 10,
-    "tmdbUpdatedAt": "2026-10-04T07:48:36.472Z",
+    "tmdbUpdatedAt": "2026-10-05T08:06:52.103Z",
     "premiereDate": "2014-11-16",
-    "tmdbFetchedAt": "2026-10-04T07:48:36.472Z"
+    "tmdbFetchedAt": "2026-10-05T08:06:52.103Z"
   },
   {
     "id": "uptv-2017-a-christmas-cruise",
@@ -152633,21 +152638,6 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
-        "id": 98117,
-        "name": "Matthew Jason Walsh",
-        "job": "Writer",
-        "department": "Writing",
-        "creditId": "5a1916289251410329026f86"
-      },
-      {
-        "id": 92591,
-        "name": "Peter Sullivan",
-        "job": "Story",
-        "department": "Writing",
-        "profileUrl": "https://image.tmdb.org/t/p/w500/hXFy4ygelHJovKvMx37EJeHwvbm.jpg",
-        "creditId": "5a19167892514103330254a2"
-      },
-      {
         "id": 97618,
         "name": "David DeCoteau",
         "job": "Director",
@@ -152663,19 +152653,34 @@ export const MOVIES: Movie[] = [
         "creditId": "5a19161c0e0a264cc4024dad"
       },
       {
+        "id": 98117,
+        "name": "Matthew Jason Walsh",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "5a1916289251410329026f86"
+      },
+      {
         "id": 128979,
         "name": "Jeffrey Schenck",
         "job": "Story",
         "department": "Writing",
         "creditId": "5a191636c3a3680b9602635f"
+      },
+      {
+        "id": 92591,
+        "name": "Peter Sullivan",
+        "job": "Story",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/hXFy4ygelHJovKvMx37EJeHwvbm.jpg",
+        "creditId": "5a19167892514103330254a2"
       }
     ],
     "trailers": [],
     "voteAverage": 4.7,
     "voteCount": 20,
-    "tmdbUpdatedAt": "2026-10-04T07:48:38.851Z",
+    "tmdbUpdatedAt": "2026-10-05T08:06:52.732Z",
     "premiereDate": "2017-12-16",
-    "tmdbFetchedAt": "2026-10-04T07:48:38.851Z"
+    "tmdbFetchedAt": "2026-10-05T08:06:52.732Z"
   },
   {
     "id": "uptv-2016-a-christmas-in-vermont",
@@ -152840,9 +152845,9 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 5.1,
     "voteCount": 49,
-    "tmdbUpdatedAt": "2026-10-04T07:48:40.368Z",
+    "tmdbUpdatedAt": "2026-10-05T08:06:53.332Z",
     "premiereDate": "2016-11-27",
-    "tmdbFetchedAt": "2026-10-04T07:48:40.368Z",
+    "tmdbFetchedAt": "2026-10-05T08:06:53.332Z",
     "alternativeTitles": [
       {
         "title": "The Christmas Apprentice",
@@ -153059,26 +153064,26 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
-        "id": 184483,
-        "name": "Allan Harmon",
-        "job": "Director",
-        "department": "Directing",
-        "creditId": "5a2fff66c3a3680b8a171763"
-      },
-      {
         "id": 1512119,
         "name": "Tracy Andreen",
         "job": "Writer",
         "department": "Writing",
         "creditId": "5a2fff7b0e0a264cbc17e015"
+      },
+      {
+        "id": 184483,
+        "name": "Allan Harmon",
+        "job": "Director",
+        "department": "Directing",
+        "creditId": "5a2fff66c3a3680b8a171763"
       }
     ],
     "trailers": [],
     "voteAverage": 5.2,
     "voteCount": 17,
-    "tmdbUpdatedAt": "2026-10-04T07:48:41.930Z",
+    "tmdbUpdatedAt": "2026-10-05T08:06:53.962Z",
     "premiereDate": "2017-12-13",
-    "tmdbFetchedAt": "2026-10-04T07:48:41.930Z"
+    "tmdbFetchedAt": "2026-10-05T08:06:53.962Z"
   },
   {
     "id": "uptv-2014-the-tree-that-saved-christmas",
@@ -153243,28 +153248,28 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
+        "id": 106476,
+        "name": "Michael J. Murray",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "547bd21d9251412d70001757"
+      },
+      {
         "id": 52044,
         "name": "David Winning",
         "job": "Director",
         "department": "Directing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/pQXcLaJ05OVmQuK5uM6Uqeuk1Ce.jpg",
         "creditId": "547bd1a19251411f4e000743"
-      },
-      {
-        "id": 106476,
-        "name": "Michael J. Murray",
-        "job": "Writer",
-        "department": "Writing",
-        "creditId": "547bd21d9251412d70001757"
       }
     ],
     "trailers": [],
     "tagline": "Miracles do come true.",
     "voteAverage": 5.9,
     "voteCount": 33,
-    "tmdbUpdatedAt": "2026-10-04T07:48:42.714Z",
+    "tmdbUpdatedAt": "2026-10-05T08:06:54.593Z",
     "premiereDate": "2014-11-30",
-    "tmdbFetchedAt": "2026-10-04T07:48:42.714Z",
+    "tmdbFetchedAt": "2026-10-05T08:06:54.593Z",
     "alternativeTitles": [
       {
         "title": "The Holiday Tree",
@@ -153418,9 +153423,9 @@ export const MOVIES: Movie[] = [
     "tagline": "The Chandler family is back for another family Christmas adventure!",
     "voteAverage": 4.5,
     "voteCount": 4,
-    "tmdbUpdatedAt": "2026-10-04T07:48:43.432Z",
+    "tmdbUpdatedAt": "2026-10-05T08:06:55.867Z",
     "premiereDate": "2018-11-11",
-    "tmdbFetchedAt": "2026-10-04T07:48:43.432Z"
+    "tmdbFetchedAt": "2026-10-05T08:06:55.867Z"
   },
   {
     "id": "uptv-2017-christmas-solo",
@@ -153597,19 +153602,19 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
-        "id": 1222629,
-        "name": "Sheryl J. Anderson",
-        "job": "Writer",
-        "department": "Writing",
-        "creditId": "5c366b820e0a265a6f7cdccb"
-      },
-      {
         "id": 63783,
         "name": "Christie Will Wolf",
         "job": "Director",
         "department": "Directing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/vLAxuVAYsIoboSnaLVG1oupsIm8.jpg",
         "creditId": "5c366ba99251412303eaf4e6"
+      },
+      {
+        "id": 1222629,
+        "name": "Sheryl J. Anderson",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "5c366b820e0a265a6f7cdccb"
       }
     ],
     "trailers": [
@@ -153624,9 +153629,9 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "VTYP36-LF3g",
     "voteAverage": 6.1,
     "voteCount": 38,
-    "tmdbUpdatedAt": "2026-10-04T07:48:45.040Z",
+    "tmdbUpdatedAt": "2026-10-05T08:06:57.267Z",
     "premiereDate": "2017-11-28",
-    "tmdbFetchedAt": "2026-10-04T07:48:45.040Z",
+    "tmdbFetchedAt": "2026-10-05T08:06:57.267Z",
     "alternativeTitles": [
       {
         "title": "A Song for Christmas",
@@ -153904,9 +153909,9 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "u_MBAH01IW8",
     "voteAverage": 6.1,
     "voteCount": 45,
-    "tmdbUpdatedAt": "2026-10-04T07:48:47.273Z",
+    "tmdbUpdatedAt": "2026-10-05T08:06:57.877Z",
     "premiereDate": "2017-11-26",
-    "tmdbFetchedAt": "2026-10-04T07:48:47.273Z",
+    "tmdbFetchedAt": "2026-10-05T08:06:57.877Z",
     "alternativeTitles": [
       {
         "title": "Le Noël du coeur",
@@ -154145,9 +154150,9 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "wu6GecdgIpk",
     "voteAverage": 6,
     "voteCount": 11,
-    "tmdbUpdatedAt": "2026-10-04T07:48:48.896Z",
+    "tmdbUpdatedAt": "2026-10-05T08:06:58.512Z",
     "premiereDate": "2018-11-25",
-    "tmdbFetchedAt": "2026-10-04T07:48:48.896Z"
+    "tmdbFetchedAt": "2026-10-05T08:06:58.512Z"
   },
   {
     "id": "uptv-2018-christmas-catch",
@@ -154326,19 +154331,19 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
-        "id": 123480,
-        "name": "Patrick McBrearty",
-        "job": "Writer",
-        "department": "Writing",
-        "creditId": "5bf6cfa4c3a36838ab067964"
-      },
-      {
         "id": 1182311,
         "name": "Justin G. Dyck",
         "job": "Director",
         "department": "Directing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/duJJXmdxmAk67tVEi5MEE0KcQLt.jpg",
         "creditId": "5bf6cf98c3a368637506afb7"
+      },
+      {
+        "id": 123480,
+        "name": "Patrick McBrearty",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "5bf6cfa4c3a36838ab067964"
       }
     ],
     "trailers": [
@@ -154353,9 +154358,9 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "d98cEp5lsS4",
     "voteAverage": 5.4,
     "voteCount": 45,
-    "tmdbUpdatedAt": "2026-10-04T07:48:49.664Z",
+    "tmdbUpdatedAt": "2026-10-05T08:06:59.089Z",
     "premiereDate": "2018-12-02",
-    "tmdbFetchedAt": "2026-10-04T07:48:49.664Z",
+    "tmdbFetchedAt": "2026-10-05T08:06:59.089Z",
     "alternativeTitles": [
       {
         "title": "Hlas lásky",
@@ -154639,9 +154644,9 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "8Mx8cUNfNCE",
     "voteAverage": 5.6,
     "voteCount": 112,
-    "tmdbUpdatedAt": "2026-10-04T07:48:51.582Z",
+    "tmdbUpdatedAt": "2026-10-05T08:06:59.732Z",
     "premiereDate": "2018-11-09",
-    "tmdbFetchedAt": "2026-10-04T07:48:51.582Z",
+    "tmdbFetchedAt": "2026-10-05T08:06:59.732Z",
     "alternativeTitles": [
       {
         "title": "Navidad con un Príncipe",
@@ -154839,18 +154844,18 @@ export const MOVIES: Movie[] = [
         "creditId": "5bff135b0e0a262cfb04b5c6"
       },
       {
-        "id": 1226700,
-        "name": "Diane Messina Stanley",
-        "job": "Writer",
-        "department": "Writing",
-        "creditId": "5bff136e0e0a264866008fef"
-      },
-      {
         "id": 1226699,
         "name": "James Stanley",
         "job": "Writer",
         "department": "Writing",
         "creditId": "5bff13880e0a264866009007"
+      },
+      {
+        "id": 1226700,
+        "name": "Diane Messina Stanley",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "5bff136e0e0a264866008fef"
       }
     ],
     "trailers": [
@@ -154866,9 +154871,9 @@ export const MOVIES: Movie[] = [
     "tagline": "There's no gift like good friends",
     "voteAverage": 6.4,
     "voteCount": 38,
-    "tmdbUpdatedAt": "2026-10-04T07:48:54.665Z",
+    "tmdbUpdatedAt": "2026-10-05T08:07:00.907Z",
     "premiereDate": "2018-11-11",
-    "tmdbFetchedAt": "2026-10-04T07:48:54.665Z",
+    "tmdbFetchedAt": "2026-10-05T08:07:00.907Z",
     "alternativeTitles": [
       {
         "title": "Natale a Holly Lane",
@@ -155110,9 +155115,9 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 5.4,
     "voteCount": 26,
-    "tmdbUpdatedAt": "2026-10-04T07:48:56.979Z",
+    "tmdbUpdatedAt": "2026-10-05T08:07:02.229Z",
     "premiereDate": "2018-11-09",
-    "tmdbFetchedAt": "2026-10-04T07:48:56.979Z"
+    "tmdbFetchedAt": "2026-10-05T08:07:02.229Z"
   },
   {
     "id": "uptv-2017-second-chance-christmas",
@@ -155290,9 +155295,9 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 5.2,
     "voteCount": 38,
-    "tmdbUpdatedAt": "2026-10-04T07:48:58.934Z",
+    "tmdbUpdatedAt": "2026-10-05T08:07:02.843Z",
     "premiereDate": "2017-11-05",
-    "tmdbFetchedAt": "2026-10-04T07:48:58.934Z",
+    "tmdbFetchedAt": "2026-10-05T08:07:02.843Z",
     "alternativeTitles": [
       {
         "title": "Love Strikes Twice (2017)",
@@ -155491,9 +155496,9 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-10-05T05:58:25.242Z",
+    "tmdbUpdatedAt": "2026-10-05T08:07:03.016Z",
     "premiereDate": "2026-11-12",
-    "tmdbFetchedAt": "2026-10-05T05:58:25.242Z",
+    "tmdbFetchedAt": "2026-10-05T08:07:03.016Z",
     "alternativeTitles": [
       {
         "title": "A Royal Christmas Stable",
@@ -155650,9 +155655,9 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "o9dyk5v_ybQ",
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-10-05T05:58:25.727Z",
+    "tmdbUpdatedAt": "2026-10-05T08:07:03.398Z",
     "premiereDate": "2026-11-19",
-    "tmdbFetchedAt": "2026-10-05T05:58:25.727Z",
+    "tmdbFetchedAt": "2026-10-05T08:07:03.398Z",
     "alternativeTitles": [
       {
         "title": "Christmas Persuasion",
@@ -155805,10 +155810,11 @@ export const MOVIES: Movie[] = [
     ],
     "trailerYoutubeKey": "quINYRZftNo",
     "voteCount": 2,
-    "tmdbUpdatedAt": "2026-10-04T07:49:00.403Z",
+    "tmdbUpdatedAt": "2026-10-05T08:07:04.020Z",
     "premiereDate": "2025-11-01",
-    "tmdbFetchedAt": "2026-10-04T07:49:00.403Z",
-    "networkPremiereDate": "2026-12-04"
+    "tmdbFetchedAt": "2026-10-05T08:07:04.020Z",
+    "networkPremiereDate": "2026-12-04",
+    "voteAverage": 7.5
   },
   {
     "id": "uptv-2025-the-great-christmas-snow-in",
@@ -155913,9 +155919,9 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "e04xQvRDrjk",
     "voteAverage": 6.8,
     "voteCount": 5,
-    "tmdbUpdatedAt": "2026-10-04T07:49:03.302Z",
+    "tmdbUpdatedAt": "2026-10-05T08:07:05.248Z",
     "premiereDate": "2025-11-02",
-    "tmdbFetchedAt": "2026-10-04T07:49:03.302Z",
+    "tmdbFetchedAt": "2026-10-05T08:07:05.248Z",
     "alternativeTitles": [
       {
         "title": "Socked In For Christmas",
@@ -156136,9 +156142,9 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 5,
     "voteCount": 1,
-    "tmdbUpdatedAt": "2026-10-04T07:49:04.239Z",
+    "tmdbUpdatedAt": "2026-10-05T08:07:05.909Z",
     "premiereDate": "2024-11-01",
-    "tmdbFetchedAt": "2026-10-04T07:49:04.239Z"
+    "tmdbFetchedAt": "2026-10-05T08:07:05.909Z"
   },
   {
     "id": "uptv-2025-a-royal-christmas-manor",
@@ -156291,9 +156297,9 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 7,
     "voteCount": 3,
-    "tmdbUpdatedAt": "2026-10-04T07:49:04.958Z",
+    "tmdbUpdatedAt": "2026-10-05T08:07:06.507Z",
     "premiereDate": "2025-11-09",
-    "tmdbFetchedAt": "2026-10-04T07:49:04.958Z"
+    "tmdbFetchedAt": "2026-10-05T08:07:06.507Z"
   },
   {
     "id": "uptv-2025-saving-the-christmas-ranch",
@@ -156425,9 +156431,9 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "WRzP-LDUFJY",
     "voteAverage": 7,
     "voteCount": 4,
-    "tmdbUpdatedAt": "2026-10-04T07:49:07.114Z",
+    "tmdbUpdatedAt": "2026-10-05T08:07:07.844Z",
     "premiereDate": "2025-11-16",
-    "tmdbFetchedAt": "2026-10-04T07:49:07.114Z"
+    "tmdbFetchedAt": "2026-10-05T08:07:07.844Z"
   },
   {
     "id": "uptv-2025-a-royal-christmas-hope",
@@ -156550,9 +156556,9 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 7,
     "voteCount": 2,
-    "tmdbUpdatedAt": "2026-10-04T07:49:08.176Z",
+    "tmdbUpdatedAt": "2026-10-05T08:07:08.828Z",
     "premiereDate": "2025-11-23",
-    "tmdbFetchedAt": "2026-10-04T07:49:08.176Z",
+    "tmdbFetchedAt": "2026-10-05T08:07:08.828Z",
     "alternativeTitles": [
       {
         "title": "A Prince’s Christmas Hope",
@@ -156665,9 +156671,9 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 7,
     "voteCount": 1,
-    "tmdbUpdatedAt": "2026-10-04T07:49:08.652Z",
+    "tmdbUpdatedAt": "2026-10-05T08:07:09.220Z",
     "premiereDate": "2025-11-30",
-    "tmdbFetchedAt": "2026-10-04T07:49:08.652Z"
+    "tmdbFetchedAt": "2026-10-05T08:07:09.220Z"
   },
   {
     "id": "uptv-2025-a-christmas-murder-mystery",
@@ -156806,9 +156812,9 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 7,
     "voteCount": 2,
-    "tmdbUpdatedAt": "2026-10-04T07:49:09.393Z",
+    "tmdbUpdatedAt": "2026-10-05T08:07:09.870Z",
     "premiereDate": "2025-12-07",
-    "tmdbFetchedAt": "2026-10-04T07:49:09.393Z"
+    "tmdbFetchedAt": "2026-10-05T08:07:09.870Z"
   },
   {
     "id": "uptv-2023-christmas-in-big-sky-country",
@@ -156955,9 +156961,9 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 5.9,
     "voteCount": 7,
-    "tmdbUpdatedAt": "2026-10-04T07:49:10.255Z",
+    "tmdbUpdatedAt": "2026-10-05T08:07:10.497Z",
     "premiereDate": "2023-11-07",
-    "tmdbFetchedAt": "2026-10-04T07:49:10.255Z"
+    "tmdbFetchedAt": "2026-10-05T08:07:10.497Z"
   },
   {
     "id": "uptv-2023-the-best-thing-about-christmas",
@@ -157125,9 +157131,9 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 6,
     "voteCount": 1,
-    "tmdbUpdatedAt": "2026-10-04T07:49:10.741Z",
+    "tmdbUpdatedAt": "2026-10-05T08:07:11.506Z",
     "premiereDate": "2023-12-25",
-    "tmdbFetchedAt": "2026-10-04T07:49:10.741Z"
+    "tmdbFetchedAt": "2026-10-05T08:07:11.506Z"
   },
   {
     "id": "uptv-2023-christmas-with-the-knightlys",
@@ -157338,9 +157344,9 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 7.8,
     "voteCount": 10,
-    "tmdbUpdatedAt": "2026-10-04T07:49:12.964Z",
+    "tmdbUpdatedAt": "2026-10-05T08:07:12.804Z",
     "premiereDate": "2023-11-07",
-    "tmdbFetchedAt": "2026-10-04T07:49:12.964Z"
+    "tmdbFetchedAt": "2026-10-05T08:07:12.804Z"
   },
   {
     "id": "gaf-2026-christmas-at-the-starlight",
@@ -157400,9 +157406,9 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-10-05T05:58:25.965Z",
+    "tmdbUpdatedAt": "2026-10-05T08:07:12.998Z",
     "premiereDate": "2026-11-21",
-    "tmdbFetchedAt": "2026-10-05T05:58:25.965Z",
+    "tmdbFetchedAt": "2026-10-05T08:07:12.998Z",
     "imdbId": "tt46666760",
     "alternativeTitles": [
       {
@@ -157499,9 +157505,9 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-10-05T05:58:26.203Z",
+    "tmdbUpdatedAt": "2026-10-05T08:07:13.172Z",
     "premiereDate": "2026-10-31",
-    "tmdbFetchedAt": "2026-10-05T05:58:26.203Z",
+    "tmdbFetchedAt": "2026-10-05T08:07:13.172Z",
     "imdbId": "tt46668554",
     "alternativeTitles": [
       {
@@ -157569,9 +157575,9 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-10-05T05:58:26.441Z",
+    "tmdbUpdatedAt": "2026-10-05T08:07:13.347Z",
     "premiereDate": "2026-11-28",
-    "tmdbFetchedAt": "2026-10-05T05:58:26.441Z",
+    "tmdbFetchedAt": "2026-10-05T08:07:13.347Z",
     "alternativeTitles": [
       {
         "title": "A Christmas Rescue",
@@ -157739,9 +157745,9 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-10-05T05:58:26.677Z",
+    "tmdbUpdatedAt": "2026-10-05T08:07:13.521Z",
     "premiereDate": "2026-12-13",
-    "tmdbFetchedAt": "2026-10-05T05:58:26.677Z"
+    "tmdbFetchedAt": "2026-10-05T08:07:13.521Z"
   },
   {
     "id": "gaf-2026-a-second-chance-christmas",
@@ -157806,9 +157812,9 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-10-05T05:58:27.402Z",
+    "tmdbUpdatedAt": "2026-10-05T08:07:14.127Z",
     "premiereDate": "2026-10-10",
-    "tmdbFetchedAt": "2026-10-05T05:58:27.402Z",
+    "tmdbFetchedAt": "2026-10-05T08:07:14.127Z",
     "imdbId": "tt46668520",
     "backdropUrl": "/images/backdrops/1652348.jpg",
     "alternativeTitles": [
@@ -157950,9 +157956,9 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-10-05T05:58:27.644Z",
+    "tmdbUpdatedAt": "2026-10-05T08:07:14.348Z",
     "premiereDate": "2026-12-03",
-    "tmdbFetchedAt": "2026-10-05T05:58:27.644Z",
+    "tmdbFetchedAt": "2026-10-05T08:07:14.348Z",
     "alternativeTitles": [
       {
         "title": "The Ornament Library",
@@ -158085,14 +158091,6 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
-        "id": 36129,
-        "name": "Neal H. Dobrofsky",
-        "job": "Writer",
-        "department": "Writing",
-        "profileUrl": "https://image.tmdb.org/t/p/w500/bTrJcjQuyqbqOaHOwqqQVWtF9UN.jpg",
-        "creditId": "54537b030e0a2648c20012b1"
-      },
-      {
         "id": 225586,
         "name": "Michael M. Scott",
         "job": "Director",
@@ -158106,6 +158104,14 @@ export const MOVIES: Movie[] = [
         "department": "Writing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/qVecDr8L3iEefOXspuzNcBcPQtR.jpg",
         "creditId": "54537af70e0a2648c800121a"
+      },
+      {
+        "id": 36129,
+        "name": "Neal H. Dobrofsky",
+        "job": "Writer",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/bTrJcjQuyqbqOaHOwqqQVWtF9UN.jpg",
+        "creditId": "54537b030e0a2648c20012b1"
       }
     ],
     "trailers": [
@@ -158120,9 +158126,9 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "jcirB6jSbkU",
     "voteAverage": 5.6,
     "voteCount": 71,
-    "tmdbUpdatedAt": "2026-10-04T07:49:16.753Z",
+    "tmdbUpdatedAt": "2026-10-05T08:07:14.937Z",
     "premiereDate": "2013-11-23",
-    "tmdbFetchedAt": "2026-10-04T07:49:16.753Z"
+    "tmdbFetchedAt": "2026-10-05T08:07:14.937Z"
   },
   {
     "id": "hallmark-2023-to-all-a-good-night",
@@ -158301,9 +158307,9 @@ export const MOVIES: Movie[] = [
     "tagline": "There's nothing stranger than fate",
     "voteAverage": 6.7,
     "voteCount": 31,
-    "tmdbUpdatedAt": "2026-10-04T07:49:17.497Z",
+    "tmdbUpdatedAt": "2026-10-05T08:07:15.576Z",
     "premiereDate": "2023-12-07",
-    "tmdbFetchedAt": "2026-10-04T07:49:17.497Z",
+    "tmdbFetchedAt": "2026-10-05T08:07:15.576Z",
     "alternativeTitles": [
       {
         "title": "A Picture Perfect Christmas",
@@ -158317,7 +158323,7 @@ export const MOVIES: Movie[] = [
     "title": "Sense, Sensibility & Snowmen",
     "year": 2019,
     "brandId": "hallmark",
-    "releaseDate": "2019-12-21",
+    "releaseDate": "2019-11-30",
     "synopsis": "Christmas enthusiast party planners Ella  and her sister, Marianne, clash with their client, Edward, who is a not-so-jolly toy company CEO.",
     "posterUrl": "/images/posters/627491.jpg",
     "backdropUrl": "/images/backdrops/627491.jpg",
@@ -158595,9 +158601,9 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "bdxEE0QZTE0",
     "voteAverage": 6.8,
     "voteCount": 46,
-    "tmdbUpdatedAt": "2026-10-04T07:49:19.263Z",
-    "premiereDate": "2019-12-21",
-    "tmdbFetchedAt": "2026-10-04T07:49:19.263Z",
+    "tmdbUpdatedAt": "2026-10-05T08:07:16.191Z",
+    "premiereDate": "2019-11-30",
+    "tmdbFetchedAt": "2026-10-05T08:07:16.191Z",
     "alternativeTitles": [
       {
         "title": "Rendezvous mit einem Schneemann",
@@ -158780,9 +158786,9 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "BVF-PJiyGo4",
     "voteAverage": 6.3,
     "voteCount": 125,
-    "tmdbUpdatedAt": "2026-10-04T07:49:22.859Z",
+    "tmdbUpdatedAt": "2026-10-05T08:07:18.623Z",
     "premiereDate": "2012-12-01",
-    "tmdbFetchedAt": "2026-10-04T07:49:22.859Z",
+    "tmdbFetchedAt": "2026-10-05T08:07:18.623Z",
     "alternativeTitles": [
       {
         "title": "Kærlighed til jul",
@@ -158929,13 +158935,6 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
-        "id": 1705238,
-        "name": "Topher Payne",
-        "job": "Screenplay",
-        "department": "Writing",
-        "creditId": "581fb824c3a3685563005935"
-      },
-      {
         "id": 1466098,
         "name": "Michael Varrati",
         "job": "Story",
@@ -158950,6 +158949,13 @@ export const MOVIES: Movie[] = [
         "department": "Directing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/hXFy4ygelHJovKvMx37EJeHwvbm.jpg",
         "creditId": "581fb7c192514168b9006e03"
+      },
+      {
+        "id": 1705238,
+        "name": "Topher Payne",
+        "job": "Screenplay",
+        "department": "Writing",
+        "creditId": "581fb824c3a3685563005935"
       }
     ],
     "trailers": [
@@ -158964,9 +158970,9 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "YwIXZLEki_Q",
     "voteAverage": 5.7,
     "voteCount": 80,
-    "tmdbUpdatedAt": "2026-10-04T07:49:23.567Z",
+    "tmdbUpdatedAt": "2026-10-05T08:07:19.224Z",
     "premiereDate": "2016-11-23",
-    "tmdbFetchedAt": "2026-10-04T07:49:23.567Z"
+    "tmdbFetchedAt": "2026-10-05T08:07:19.224Z"
   },
   {
     "id": "gaf-2021-much-ado-about-christmas",
@@ -159104,20 +159110,20 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
-        "id": 62079,
-        "name": "Janeen Damian",
-        "job": "Writer",
-        "department": "Writing",
-        "profileUrl": "https://image.tmdb.org/t/p/w500/ygC5V5zwdkiW2PMIxayVv9ue0zw.jpg",
-        "creditId": "6150e5c572d8550029c9f4f6"
-      },
-      {
         "id": 62081,
         "name": "Michael Damian",
         "job": "Director",
         "department": "Directing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/toPk7n6y8T8Vgz3NIdFdZGEb1l1.jpg",
         "creditId": "6150e5be67dcc90043dcf972"
+      },
+      {
+        "id": 62079,
+        "name": "Janeen Damian",
+        "job": "Writer",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/ygC5V5zwdkiW2PMIxayVv9ue0zw.jpg",
+        "creditId": "6150e5c572d8550029c9f4f6"
       },
       {
         "id": 62081,
@@ -159140,9 +159146,9 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "YG-1x8IIj-Y",
     "voteAverage": 6,
     "voteCount": 27,
-    "tmdbUpdatedAt": "2026-10-04T07:49:25.099Z",
+    "tmdbUpdatedAt": "2026-10-05T08:07:20.492Z",
     "premiereDate": "2021-10-30",
-    "tmdbFetchedAt": "2026-10-04T07:49:25.099Z"
+    "tmdbFetchedAt": "2026-10-05T08:07:20.492Z"
   },
   {
     "id": "gaf-2026-silver-bells-at-christmas",
@@ -159296,9 +159302,9 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-10-05T05:58:28.144Z",
+    "tmdbUpdatedAt": "2026-10-05T08:07:20.861Z",
     "premiereDate": "2026-10-17",
-    "tmdbFetchedAt": "2026-10-05T05:58:28.144Z"
+    "tmdbFetchedAt": "2026-10-05T08:07:20.861Z"
   },
   {
     "id": "gaf-2025-karen-kingsbury-s-the-christmas-ring",
@@ -159496,16 +159502,17 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "CYXlCr54-Ps",
     "tagline": "Where your treasure is, there your heart will be too.",
     "voteCount": 7,
-    "tmdbUpdatedAt": "2026-10-04T07:49:27.170Z",
+    "tmdbUpdatedAt": "2026-10-05T08:07:22.118Z",
     "premiereDate": "2025-11-06",
-    "tmdbFetchedAt": "2026-10-04T07:49:27.170Z",
+    "tmdbFetchedAt": "2026-10-05T08:07:22.118Z",
     "alternativeTitles": [
       {
         "title": "The Christmas Ring",
         "country": "US"
       }
     ],
-    "networkPremiereDate": "2026-11-07"
+    "networkPremiereDate": "2026-11-07",
+    "voteAverage": 6.9
   },
   {
     "id": "gaf-2026-an-ozark-mountain-christmas",
@@ -159622,9 +159629,9 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-10-05T05:58:28.636Z",
+    "tmdbUpdatedAt": "2026-10-05T08:07:22.566Z",
     "premiereDate": "2026-11-08",
-    "tmdbFetchedAt": "2026-10-05T05:58:28.636Z"
+    "tmdbFetchedAt": "2026-10-05T08:07:22.566Z"
   },
   {
     "id": "gaf-2026-the-christmas-yes-list",
@@ -159688,9 +159695,9 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-10-05T05:58:28.872Z",
+    "tmdbUpdatedAt": "2026-10-05T08:07:22.758Z",
     "premiereDate": "2026-11-14",
-    "tmdbFetchedAt": "2026-10-05T05:58:28.872Z",
+    "tmdbFetchedAt": "2026-10-05T08:07:22.758Z",
     "imdbId": "tt46668453"
   },
   {
@@ -159850,9 +159857,9 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-10-05T05:58:29.146Z",
+    "tmdbUpdatedAt": "2026-10-05T08:07:22.950Z",
     "premiereDate": "2026-11-22",
-    "tmdbFetchedAt": "2026-10-05T05:58:29.146Z",
+    "tmdbFetchedAt": "2026-10-05T08:07:22.950Z",
     "alternativeTitles": [
       {
         "title": "In Starlight Point: A Christmas Card Mystery",
@@ -159999,9 +160006,9 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-10-05T05:58:29.385Z",
+    "tmdbUpdatedAt": "2026-10-05T08:07:23.148Z",
     "premiereDate": "2026-11-24",
-    "tmdbFetchedAt": "2026-10-05T05:58:29.385Z"
+    "tmdbFetchedAt": "2026-10-05T08:07:23.148Z"
   },
   {
     "id": "gaf-2026-the-greatest-christmas-gift",
@@ -160052,9 +160059,9 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-10-05T05:58:29.621Z",
+    "tmdbUpdatedAt": "2026-10-05T08:07:23.323Z",
     "premiereDate": "2026-11-29",
-    "tmdbFetchedAt": "2026-10-05T05:58:29.621Z",
+    "tmdbFetchedAt": "2026-10-05T08:07:23.323Z",
     "imdbId": "tt44127266"
   },
   {
@@ -160106,9 +160113,9 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-10-05T05:58:29.856Z",
+    "tmdbUpdatedAt": "2026-10-05T08:07:23.542Z",
     "premiereDate": "2026-12-12",
-    "tmdbFetchedAt": "2026-10-05T05:58:29.856Z",
+    "tmdbFetchedAt": "2026-10-05T08:07:23.542Z",
     "imdbId": "tt46668597"
   },
   {
@@ -160212,9 +160219,9 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-10-05T05:58:30.094Z",
+    "tmdbUpdatedAt": "2026-10-05T08:07:23.715Z",
     "premiereDate": "2026-10-24",
-    "tmdbFetchedAt": "2026-10-05T05:58:30.094Z",
+    "tmdbFetchedAt": "2026-10-05T08:07:23.715Z",
     "alternativeTitles": [
       {
         "title": "A Christmas Prayer 2",
@@ -160397,9 +160404,9 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-10-05T05:58:30.331Z",
+    "tmdbUpdatedAt": "2026-10-05T08:07:23.890Z",
     "premiereDate": "2026-12-06",
-    "tmdbFetchedAt": "2026-10-05T05:58:30.331Z",
+    "tmdbFetchedAt": "2026-10-05T08:07:23.890Z",
     "alternativeTitles": [
       {
         "title": "A Culinary Christmas",
@@ -160499,8 +160506,8 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-10-05T05:58:30.829Z",
-    "tmdbFetchedAt": "2026-10-05T05:58:30.829Z",
+    "tmdbUpdatedAt": "2026-10-05T08:07:24.272Z",
+    "tmdbFetchedAt": "2026-10-05T08:07:24.272Z",
     "premiereDate": "2026-11-05",
     "director": "Nanea Miyata"
   },
@@ -160606,8 +160613,8 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-10-05T05:58:31.319Z",
-    "tmdbFetchedAt": "2026-10-05T05:58:31.319Z",
+    "tmdbUpdatedAt": "2026-10-05T08:07:24.666Z",
+    "tmdbFetchedAt": "2026-10-05T08:07:24.666Z",
     "director": "Cathy Lynn Yonek",
     "premiereDate": "2026-11-06"
   },
@@ -160856,8 +160863,8 @@ export const MOVIES: Movie[] = [
     "tagline": "A little town. A little romance. A little miracle.",
     "voteAverage": 5.8,
     "voteCount": 32,
-    "tmdbUpdatedAt": "2026-10-04T07:49:30.964Z",
-    "tmdbFetchedAt": "2026-10-04T07:49:30.964Z",
+    "tmdbUpdatedAt": "2026-10-05T08:07:25.281Z",
+    "tmdbFetchedAt": "2026-10-05T08:07:25.281Z",
     "premiereDate": "2008-11-29",
     "alternativeTitles": [
       {
@@ -161035,19 +161042,19 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
-        "id": 147792,
-        "name": "Peter Svatek",
-        "job": "Director",
-        "department": "Directing",
-        "creditId": "52fe4949c3a36847f81929c5"
-      },
-      {
         "id": 184494,
         "name": "Donald Martin",
         "job": "Writer",
         "department": "Writing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/4n157vwUZWBETl5UG6GwOPfHO9h.jpg",
         "creditId": "52fe4949c3a36847f81929cb"
+      },
+      {
+        "id": 147792,
+        "name": "Peter Svatek",
+        "job": "Director",
+        "department": "Directing",
+        "creditId": "52fe4949c3a36847f81929c5"
       }
     ],
     "trailers": [
@@ -161063,8 +161070,8 @@ export const MOVIES: Movie[] = [
     "tagline": "He's starting his life over... on a whole new note.",
     "voteAverage": 5.1,
     "voteCount": 8,
-    "tmdbUpdatedAt": "2026-10-04T07:49:34.117Z",
-    "tmdbFetchedAt": "2026-10-04T07:49:34.117Z",
+    "tmdbUpdatedAt": "2026-10-05T08:07:26.823Z",
+    "tmdbFetchedAt": "2026-10-05T08:07:26.823Z",
     "premiereDate": "2008-12-06",
     "alternativeTitles": [
       {
@@ -161272,20 +161279,20 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
-        "id": 128639,
-        "name": "Armand Mastroianni",
-        "job": "Director",
-        "department": "Directing",
-        "profileUrl": "https://image.tmdb.org/t/p/w500/1ubti7YsYsb0Q5TJDmzKZr1UAkA.jpg",
-        "creditId": "52fe47e69251416c9107960b"
-      },
-      {
         "id": 154480,
         "name": "Edithe Swensen",
         "job": "Writer",
         "department": "Writing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/cIKQ5T32E3EznyIlAgrOPG39lCG.jpg",
         "creditId": "52fe47e69251416c91079611"
+      },
+      {
+        "id": 128639,
+        "name": "Armand Mastroianni",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/1ubti7YsYsb0Q5TJDmzKZr1UAkA.jpg",
+        "creditId": "52fe47e69251416c9107960b"
       }
     ],
     "trailers": [
@@ -161300,8 +161307,8 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "QoMWEGTrX54",
     "voteAverage": 5.3,
     "voteCount": 15,
-    "tmdbUpdatedAt": "2026-10-04T07:49:34.833Z",
-    "tmdbFetchedAt": "2026-10-04T07:49:34.833Z",
+    "tmdbUpdatedAt": "2026-10-05T08:07:27.521Z",
+    "tmdbFetchedAt": "2026-10-05T08:07:27.521Z",
     "premiereDate": "2008-12-19"
   },
   {
@@ -161499,8 +161506,8 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "MSvGyxPNqCI",
     "voteAverage": 5.4,
     "voteCount": 24,
-    "tmdbUpdatedAt": "2026-10-04T07:49:37.284Z",
-    "tmdbFetchedAt": "2026-10-04T07:49:37.284Z",
+    "tmdbUpdatedAt": "2026-10-05T08:07:28.813Z",
+    "tmdbFetchedAt": "2026-10-05T08:07:28.813Z",
     "premiereDate": "2009-11-28",
     "alternativeTitles": [
       {
@@ -161775,8 +161782,8 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "nulPPmIpb9Y",
     "voteAverage": 6,
     "voteCount": 117,
-    "tmdbUpdatedAt": "2026-10-04T07:49:38.033Z",
-    "tmdbFetchedAt": "2026-10-04T07:49:38.033Z",
+    "tmdbUpdatedAt": "2026-10-05T08:07:29.567Z",
+    "tmdbFetchedAt": "2026-10-05T08:07:29.567Z",
     "premiereDate": "2009-12-05",
     "alternativeTitles": [
       {
@@ -161952,8 +161959,8 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "7vr4kTZjMVM",
     "voteAverage": 6.1,
     "voteCount": 19,
-    "tmdbUpdatedAt": "2026-10-04T07:49:40.435Z",
-    "tmdbFetchedAt": "2026-10-04T07:49:40.435Z",
+    "tmdbUpdatedAt": "2026-10-05T08:07:30.160Z",
+    "tmdbFetchedAt": "2026-10-05T08:07:30.160Z",
     "premiereDate": "2009-12-12",
     "alternativeTitles": [
       {
@@ -162110,8 +162117,8 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "fMRHzJaqlGg",
     "voteAverage": 5.2,
     "voteCount": 15,
-    "tmdbUpdatedAt": "2026-10-04T07:49:40.918Z",
-    "tmdbFetchedAt": "2026-10-04T07:49:40.918Z",
+    "tmdbUpdatedAt": "2026-10-05T08:07:30.568Z",
+    "tmdbFetchedAt": "2026-10-05T08:07:30.568Z",
     "premiereDate": "2009-12-19",
     "alternativeTitles": [
       {
@@ -162343,8 +162350,8 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "t4AbSYXDXm8",
     "voteAverage": 5.4,
     "voteCount": 21,
-    "tmdbUpdatedAt": "2026-10-04T07:49:41.657Z",
-    "tmdbFetchedAt": "2026-10-04T07:49:41.657Z",
+    "tmdbUpdatedAt": "2026-10-05T08:07:31.215Z",
+    "tmdbFetchedAt": "2026-10-05T08:07:31.215Z",
     "premiereDate": "2010-11-20",
     "alternativeTitles": [
       {
@@ -162565,8 +162572,8 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "c89AYuUj1lE",
     "voteAverage": 6.3,
     "voteCount": 21,
-    "tmdbUpdatedAt": "2026-10-04T07:49:42.391Z",
-    "tmdbFetchedAt": "2026-10-04T07:49:42.391Z",
+    "tmdbUpdatedAt": "2026-10-05T08:07:31.867Z",
+    "tmdbFetchedAt": "2026-10-05T08:07:31.867Z",
     "premiereDate": "2010-11-25",
     "alternativeTitles": [
       {
@@ -162834,8 +162841,8 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "9Pu55fZZahQ",
     "voteAverage": 5.9,
     "voteCount": 68,
-    "tmdbUpdatedAt": "2026-10-04T07:49:44.086Z",
-    "tmdbFetchedAt": "2026-10-04T07:49:44.086Z",
+    "tmdbUpdatedAt": "2026-10-05T08:07:33.135Z",
+    "tmdbFetchedAt": "2026-10-05T08:07:33.135Z",
     "premiereDate": "2010-11-27",
     "alternativeTitles": [
       {
@@ -162860,9 +162867,9 @@ export const MOVIES: Movie[] = [
     "id": "hallmark-2011-november-christmas",
     "slug": "november-christmas",
     "title": "November Christmas",
-    "year": 2011,
+    "year": 2010,
     "brandId": "hallmark",
-    "releaseDate": "2011-06-21",
+    "releaseDate": "2010-11-28",
     "synopsis": "A young father asks for pumpkins at the local farm stand. \"In August? No.\" the farmer replies. The farmer ruminates on the odd request and gets involved with strangers for the first time since his son's death long ago.",
     "posterUrl": "/images/posters/52688.jpg",
     "backdropUrl": "/images/backdrops/52688.jpg",
@@ -163089,9 +163096,9 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "WEf00ziLSBQ",
     "voteAverage": 7.5,
     "voteCount": 41,
-    "tmdbUpdatedAt": "2026-10-04T07:49:45.724Z",
-    "tmdbFetchedAt": "2026-10-04T07:49:45.724Z",
-    "premiereDate": "2011-06-21",
+    "tmdbUpdatedAt": "2026-10-05T08:07:33.750Z",
+    "tmdbFetchedAt": "2026-10-05T08:07:33.750Z",
+    "premiereDate": "2010-11-28",
     "alternativeTitles": [
       {
         "title": "Weihnachten des Herzens",
@@ -163409,8 +163416,8 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "dtmFR3TsIWI",
     "voteAverage": 5.9,
     "voteCount": 31,
-    "tmdbUpdatedAt": "2026-10-04T07:49:46.491Z",
-    "tmdbFetchedAt": "2026-10-04T07:49:46.491Z",
+    "tmdbUpdatedAt": "2026-10-05T08:07:34.386Z",
+    "tmdbFetchedAt": "2026-10-05T08:07:34.386Z",
     "premiereDate": "2010-12-02"
   },
   {
@@ -163633,19 +163640,19 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
+        "id": 976698,
+        "name": "Robert Tate Miller",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "52fe4b2a9251416c750fa71f"
+      },
+      {
         "id": 95329,
         "name": "Kevin Connor",
         "job": "Director",
         "department": "Directing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/mG2WJt0UgxKYqErBx1BgAcYuKuD.jpg",
         "creditId": "52fe4b2a9251416c750fa719"
-      },
-      {
-        "id": 976698,
-        "name": "Robert Tate Miller",
-        "job": "Writer",
-        "department": "Writing",
-        "creditId": "52fe4b2a9251416c750fa71f"
       }
     ],
     "trailers": [
@@ -163660,8 +163667,8 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "dgsusucSofA",
     "voteAverage": 6.2,
     "voteCount": 18,
-    "tmdbUpdatedAt": "2026-10-04T07:49:47.258Z",
-    "tmdbFetchedAt": "2026-10-04T07:49:47.258Z",
+    "tmdbUpdatedAt": "2026-10-05T08:07:36.022Z",
+    "tmdbFetchedAt": "2026-10-05T08:07:36.022Z",
     "premiereDate": "2010-12-04",
     "alternativeTitles": [
       {
@@ -163814,8 +163821,8 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "93tP2XI47fQ",
     "voteAverage": 5.2,
     "voteCount": 10,
-    "tmdbUpdatedAt": "2026-10-04T07:49:48.001Z",
-    "tmdbFetchedAt": "2026-10-04T07:49:48.001Z",
+    "tmdbUpdatedAt": "2026-10-05T08:07:37.304Z",
+    "tmdbFetchedAt": "2026-10-05T08:07:37.304Z",
     "premiereDate": "2010-12-11"
   },
   {
@@ -164115,8 +164122,8 @@ export const MOVIES: Movie[] = [
     "tagline": "Just when she needed a miracle, two appeared.",
     "voteAverage": 4.8,
     "voteCount": 14,
-    "tmdbUpdatedAt": "2026-10-04T07:49:48.788Z",
-    "tmdbFetchedAt": "2026-10-04T07:49:48.788Z",
+    "tmdbUpdatedAt": "2026-10-05T08:07:37.891Z",
+    "tmdbFetchedAt": "2026-10-05T08:07:37.891Z",
     "premiereDate": "2010-12-14"
   },
   {
@@ -164365,8 +164372,8 @@ export const MOVIES: Movie[] = [
     "tagline": "The magic of the Season. The Love of a Lifetime.",
     "voteAverage": 4.8,
     "voteCount": 20,
-    "tmdbUpdatedAt": "2026-10-04T07:49:49.503Z",
-    "tmdbFetchedAt": "2026-10-04T07:49:49.503Z",
+    "tmdbUpdatedAt": "2026-10-05T08:07:38.486Z",
+    "tmdbFetchedAt": "2026-10-05T08:07:38.486Z",
     "premiereDate": "2010-12-16",
     "alternativeTitles": [
       {
@@ -164603,8 +164610,8 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "zrPfaUoUHb0",
     "voteAverage": 4.9,
     "voteCount": 21,
-    "tmdbUpdatedAt": "2026-10-04T07:49:51.423Z",
-    "tmdbFetchedAt": "2026-10-04T07:49:51.423Z",
+    "tmdbUpdatedAt": "2026-10-05T08:07:39.103Z",
+    "tmdbFetchedAt": "2026-10-05T08:07:39.103Z",
     "premiereDate": "2010-12-18"
   },
   {
@@ -165021,8 +165028,8 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "kJJ6ZzRTWfw",
     "voteAverage": 6.691,
     "voteCount": 34,
-    "tmdbUpdatedAt": "2026-10-04T07:49:53.016Z",
-    "tmdbFetchedAt": "2026-10-04T07:49:53.016Z",
+    "tmdbUpdatedAt": "2026-10-05T08:07:40.778Z",
+    "tmdbFetchedAt": "2026-10-05T08:07:40.778Z",
     "premiereDate": "2011-11-05",
     "alternativeTitles": [
       {
@@ -165164,8 +165171,8 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "3ViATLQZKCk",
     "voteAverage": 6,
     "voteCount": 33,
-    "tmdbUpdatedAt": "2026-10-04T07:49:54.805Z",
-    "tmdbFetchedAt": "2026-10-04T07:49:54.805Z",
+    "tmdbUpdatedAt": "2026-10-05T08:07:42.386Z",
+    "tmdbFetchedAt": "2026-10-05T08:07:42.386Z",
     "premiereDate": "2011-11-06",
     "alternativeTitles": [
       {
@@ -165414,12 +165421,11 @@ export const MOVIES: Movie[] = [
         "creditId": "52fe48129251416c9107f31b"
       },
       {
-        "id": 92554,
-        "name": "Harry Winer",
+        "id": 2565817,
+        "name": "Sheri Davenport",
         "job": "Story",
         "department": "Writing",
-        "profileUrl": "https://image.tmdb.org/t/p/w500/pQhG5eCfTJfyZupZQ9fsfnu4Kx1.jpg",
-        "creditId": "5e6c33b42f3b17001741e69e"
+        "creditId": "5e6c3394cabfe40013121e38"
       },
       {
         "id": 2565817,
@@ -165429,11 +165435,12 @@ export const MOVIES: Movie[] = [
         "creditId": "5e6c33a2459ad60018621980"
       },
       {
-        "id": 2565817,
-        "name": "Sheri Davenport",
+        "id": 92554,
+        "name": "Harry Winer",
         "job": "Story",
         "department": "Writing",
-        "creditId": "5e6c3394cabfe40013121e38"
+        "profileUrl": "https://image.tmdb.org/t/p/w500/pQhG5eCfTJfyZupZQ9fsfnu4Kx1.jpg",
+        "creditId": "5e6c33b42f3b17001741e69e"
       }
     ],
     "trailers": [
@@ -165448,8 +165455,8 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "lro50CAwG18",
     "voteAverage": 5.7,
     "voteCount": 41,
-    "tmdbUpdatedAt": "2026-10-04T07:49:55.516Z",
-    "tmdbFetchedAt": "2026-10-04T07:49:55.516Z",
+    "tmdbUpdatedAt": "2026-10-05T08:07:43.033Z",
+    "tmdbFetchedAt": "2026-10-05T08:07:43.033Z",
     "premiereDate": "2011-11-12",
     "alternativeTitles": [
       {
@@ -165683,8 +165690,8 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "PpvT7FhNJFw",
     "voteAverage": 5.2,
     "voteCount": 15,
-    "tmdbUpdatedAt": "2026-10-04T07:49:57.440Z",
-    "tmdbFetchedAt": "2026-10-04T07:49:57.440Z",
+    "tmdbUpdatedAt": "2026-10-05T08:07:43.685Z",
+    "tmdbFetchedAt": "2026-10-05T08:07:43.685Z",
     "premiereDate": "2011-11-13",
     "alternativeTitles": [
       {
@@ -165942,8 +165949,8 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "jg_OpYBhLyQ",
     "voteAverage": 5.3,
     "voteCount": 28,
-    "tmdbUpdatedAt": "2026-10-04T07:49:58.203Z",
-    "tmdbFetchedAt": "2026-10-04T07:49:58.203Z",
+    "tmdbUpdatedAt": "2026-10-05T08:07:44.920Z",
+    "tmdbFetchedAt": "2026-10-05T08:07:44.920Z",
     "premiereDate": "2011-11-19",
     "alternativeTitles": [
       {
@@ -166198,8 +166205,8 @@ export const MOVIES: Movie[] = [
     "tagline": "When all is lost... miracles can happen",
     "voteAverage": 5.9,
     "voteCount": 61,
-    "tmdbUpdatedAt": "2026-10-04T07:49:59.773Z",
-    "tmdbFetchedAt": "2026-10-04T07:49:59.773Z",
+    "tmdbUpdatedAt": "2026-10-05T08:07:46.204Z",
+    "tmdbFetchedAt": "2026-10-05T08:07:46.204Z",
     "premiereDate": "2011-11-20",
     "alternativeTitles": [
       {
@@ -166417,8 +166424,8 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "DDWXdyv8vFI",
     "voteAverage": 6.6,
     "voteCount": 36,
-    "tmdbUpdatedAt": "2026-10-04T07:50:02.752Z",
-    "tmdbFetchedAt": "2026-10-04T07:50:02.752Z",
+    "tmdbUpdatedAt": "2026-10-05T08:07:47.510Z",
+    "tmdbFetchedAt": "2026-10-05T08:07:47.510Z",
     "premiereDate": "2011-11-26",
     "alternativeTitles": [
       {
@@ -166711,8 +166718,8 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "MnLaWf5yIIw",
     "voteAverage": 5.9,
     "voteCount": 108,
-    "tmdbUpdatedAt": "2026-10-04T07:50:04.820Z",
-    "tmdbFetchedAt": "2026-10-04T07:50:04.820Z",
+    "tmdbUpdatedAt": "2026-10-05T08:07:48.144Z",
+    "tmdbFetchedAt": "2026-10-05T08:07:48.144Z",
     "premiereDate": "2011-11-28",
     "alternativeTitles": [
       {
@@ -167112,8 +167119,8 @@ export const MOVIES: Movie[] = [
     "tagline": "Sometimes dreams come true",
     "voteAverage": 7,
     "voteCount": 414,
-    "tmdbUpdatedAt": "2026-10-04T07:50:08.189Z",
-    "tmdbFetchedAt": "2026-10-04T07:50:08.189Z",
+    "tmdbUpdatedAt": "2026-10-05T08:07:49.480Z",
+    "tmdbFetchedAt": "2026-10-05T08:07:49.480Z",
     "premiereDate": "2011-12-03",
     "alternativeTitles": [
       {
@@ -167436,8 +167443,8 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "9Lo9cb9-8kM",
     "voteAverage": 6.3,
     "voteCount": 40,
-    "tmdbUpdatedAt": "2026-10-04T07:50:09.826Z",
-    "tmdbFetchedAt": "2026-10-04T07:50:09.826Z",
+    "tmdbUpdatedAt": "2026-10-05T08:07:51.431Z",
+    "tmdbFetchedAt": "2026-10-05T08:07:51.431Z",
     "premiereDate": "2011-12-10",
     "alternativeTitles": [
       {
@@ -167721,8 +167728,8 @@ export const MOVIES: Movie[] = [
     "tagline": "This season, love takes center stage",
     "voteAverage": 5.9,
     "voteCount": 15,
-    "tmdbUpdatedAt": "2026-10-04T07:50:10.521Z",
-    "tmdbFetchedAt": "2026-10-04T07:50:10.521Z",
+    "tmdbUpdatedAt": "2026-10-05T08:07:52.050Z",
+    "tmdbFetchedAt": "2026-10-05T08:07:52.050Z",
     "premiereDate": "2011-12-11"
   },
   {
@@ -167929,8 +167936,8 @@ export const MOVIES: Movie[] = [
     "tagline": "There's no better place to spend the Holidays.",
     "voteAverage": 5.4,
     "voteCount": 26,
-    "tmdbUpdatedAt": "2026-10-04T07:50:12.124Z",
-    "tmdbFetchedAt": "2026-10-04T07:50:12.124Z",
+    "tmdbUpdatedAt": "2026-10-05T08:07:52.676Z",
+    "tmdbFetchedAt": "2026-10-05T08:07:52.676Z",
     "premiereDate": "2011-12-17"
   },
   {
@@ -168133,18 +168140,18 @@ export const MOVIES: Movie[] = [
         "creditId": "52fe48129251416c9107f301"
       },
       {
-        "id": 591514,
-        "name": "Joany Kane",
-        "job": "Writer",
-        "department": "Writing",
-        "creditId": "52fe48129251416c9107f2fb"
-      },
-      {
         "id": 224214,
         "name": "John Bradshaw",
         "job": "Director",
         "department": "Directing",
         "creditId": "52fe48129251416c9107f2f5"
+      },
+      {
+        "id": 591514,
+        "name": "Joany Kane",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "52fe48129251416c9107f2fb"
       },
       {
         "id": 591514,
@@ -168188,8 +168195,8 @@ export const MOVIES: Movie[] = [
     "tagline": "Heaven can wait as a reluctant angel takes on one more earthly mission to earn her wings.",
     "voteAverage": 6.4,
     "voteCount": 45,
-    "tmdbUpdatedAt": "2026-10-04T07:50:12.943Z",
-    "tmdbFetchedAt": "2026-10-04T07:50:12.943Z",
+    "tmdbUpdatedAt": "2026-10-05T08:07:53.284Z",
+    "tmdbFetchedAt": "2026-10-05T08:07:53.284Z",
     "premiereDate": "2011-12-11",
     "alternativeTitles": [
       {
@@ -168418,8 +168425,8 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "Hg2sBsA6bQM",
     "voteAverage": 5.6,
     "voteCount": 32,
-    "tmdbUpdatedAt": "2026-10-04T07:50:14.542Z",
-    "tmdbFetchedAt": "2026-10-04T07:50:14.542Z",
+    "tmdbUpdatedAt": "2026-10-05T08:07:54.544Z",
+    "tmdbFetchedAt": "2026-10-05T08:07:54.544Z",
     "premiereDate": "2012-11-03",
     "alternativeTitles": [
       {
@@ -168684,8 +168691,8 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "PU5jmdh7eMQ",
     "voteAverage": 5.7,
     "voteCount": 67,
-    "tmdbUpdatedAt": "2026-10-04T07:50:15.282Z",
-    "tmdbFetchedAt": "2026-10-04T07:50:15.282Z",
+    "tmdbUpdatedAt": "2026-10-05T08:07:55.169Z",
+    "tmdbFetchedAt": "2026-10-05T08:07:55.169Z",
     "premiereDate": "2012-11-21"
   },
   {
@@ -168987,8 +168994,8 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "7wScyIvPiBU",
     "voteAverage": 5.5,
     "voteCount": 36,
-    "tmdbUpdatedAt": "2026-10-04T07:50:16.066Z",
-    "tmdbFetchedAt": "2026-10-04T07:50:16.066Z",
+    "tmdbUpdatedAt": "2026-10-05T08:07:55.763Z",
+    "tmdbFetchedAt": "2026-10-05T08:07:55.763Z",
     "premiereDate": "2012-11-18",
     "alternativeTitles": [
       {
@@ -169159,8 +169166,8 @@ export const MOVIES: Movie[] = [
     "tagline": "Can a town's faith save a young man's life?",
     "voteAverage": 5.8,
     "voteCount": 23,
-    "tmdbUpdatedAt": "2026-10-04T07:50:17.684Z",
-    "tmdbFetchedAt": "2026-10-04T07:50:17.684Z",
+    "tmdbUpdatedAt": "2026-10-05T08:07:57.118Z",
+    "tmdbFetchedAt": "2026-10-05T08:07:57.118Z",
     "premiereDate": "2012-12-02",
     "alternativeTitles": [
       {
@@ -169393,8 +169400,8 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "NRqlyniemPQ",
     "voteAverage": 5.8,
     "voteCount": 20,
-    "tmdbUpdatedAt": "2026-10-04T07:50:19.975Z",
-    "tmdbFetchedAt": "2026-10-04T07:50:19.975Z",
+    "tmdbUpdatedAt": "2026-10-05T08:07:57.745Z",
+    "tmdbFetchedAt": "2026-10-05T08:07:57.745Z",
     "premiereDate": "2012-11-11"
   },
   {
@@ -169692,8 +169699,8 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "W9VgnoenO4g",
     "voteAverage": 6,
     "voteCount": 73,
-    "tmdbUpdatedAt": "2026-10-04T07:50:20.701Z",
-    "tmdbFetchedAt": "2026-10-04T07:50:20.701Z",
+    "tmdbUpdatedAt": "2026-10-05T08:07:59.164Z",
+    "tmdbFetchedAt": "2026-10-05T08:07:59.164Z",
     "premiereDate": "2012-12-24",
     "alternativeTitles": [
       {
@@ -169880,8 +169887,8 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "007kW0iURNc",
     "voteAverage": 6.4,
     "voteCount": 50,
-    "tmdbUpdatedAt": "2026-10-04T07:50:22.198Z",
-    "tmdbFetchedAt": "2026-10-04T07:50:22.198Z",
+    "tmdbUpdatedAt": "2026-10-05T08:08:00.429Z",
+    "tmdbFetchedAt": "2026-10-05T08:08:00.429Z",
     "premiereDate": "2012-11-25"
   },
   {
@@ -170049,8 +170056,8 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "mgAxzcjmIJY",
     "voteAverage": 5.5,
     "voteCount": 24,
-    "tmdbUpdatedAt": "2026-10-04T07:50:22.917Z",
-    "tmdbFetchedAt": "2026-10-04T07:50:22.917Z",
+    "tmdbUpdatedAt": "2026-10-05T08:08:02.173Z",
+    "tmdbFetchedAt": "2026-10-05T08:08:02.173Z",
     "premiereDate": "2012-12-08",
     "alternativeTitles": [
       {
@@ -170297,8 +170304,8 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "SWO09XR5R6s",
     "voteAverage": 6.3,
     "voteCount": 100,
-    "tmdbUpdatedAt": "2026-10-04T07:50:23.769Z",
-    "tmdbFetchedAt": "2026-10-04T07:50:23.769Z",
+    "tmdbUpdatedAt": "2026-10-05T08:08:04.136Z",
+    "tmdbFetchedAt": "2026-10-05T08:08:04.136Z",
     "premiereDate": "2012-12-09",
     "alternativeTitles": [
       {
@@ -170553,8 +170560,8 @@ export const MOVIES: Movie[] = [
     "tagline": "because elves, after all, deserve happiness, too",
     "voteAverage": 6.1,
     "voteCount": 67,
-    "tmdbUpdatedAt": "2026-10-04T07:50:26.158Z",
-    "tmdbFetchedAt": "2026-10-04T07:50:26.158Z",
+    "tmdbUpdatedAt": "2026-10-05T08:08:05.381Z",
+    "tmdbFetchedAt": "2026-10-05T08:08:05.381Z",
     "premiereDate": "2012-12-09",
     "alternativeTitles": [
       {
@@ -170789,19 +170796,19 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
-        "id": 1130509,
-        "name": "Robert Vaughn",
-        "job": "Writer",
-        "department": "Writing",
-        "creditId": "52fe4ae89251416c910c99c5"
-      },
-      {
         "id": 207180,
         "name": "Jonathan Wright",
         "job": "Director",
         "department": "Directing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/zi1roGouFMONsRKEUJwLXlCW1OX.jpg",
         "creditId": "52fe4ae89251416c910c99bf"
+      },
+      {
+        "id": 1130509,
+        "name": "Robert Vaughn",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "52fe4ae89251416c910c99c5"
       }
     ],
     "trailers": [
@@ -170816,8 +170823,8 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "-0l_X-ytF_E",
     "voteAverage": 5.8,
     "voteCount": 17,
-    "tmdbUpdatedAt": "2026-10-04T07:50:27.746Z",
-    "tmdbFetchedAt": "2026-10-04T07:50:27.746Z",
+    "tmdbUpdatedAt": "2026-10-05T08:08:07.190Z",
+    "tmdbFetchedAt": "2026-10-05T08:08:07.190Z",
     "premiereDate": "2012-11-29",
     "alternativeTitles": [
       {
@@ -170998,19 +171005,19 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
-        "id": 1277309,
-        "name": "Peter McKay",
-        "job": "Writer",
-        "department": "Writing",
-        "creditId": "52fe4e6ec3a36847f828fa9d"
-      },
-      {
         "id": 1239766,
         "name": "Nisha Ganatra",
         "job": "Director",
         "department": "Directing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/6vfke1SDPxNfQGaRZIZVHxjr6G8.jpg",
         "creditId": "52fe4e6ec3a36847f828fa97"
+      },
+      {
+        "id": 1277309,
+        "name": "Peter McKay",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "52fe4e6ec3a36847f828fa9d"
       },
       {
         "id": 1133777,
@@ -171040,8 +171047,8 @@ export const MOVIES: Movie[] = [
     "tagline": "It’s Christmas... Every... Day...",
     "voteAverage": 5.7,
     "voteCount": 185,
-    "tmdbUpdatedAt": "2026-10-04T07:50:29.299Z",
-    "tmdbFetchedAt": "2026-10-04T07:50:29.299Z",
+    "tmdbUpdatedAt": "2026-10-05T08:08:07.821Z",
+    "tmdbFetchedAt": "2026-10-05T08:08:07.821Z",
     "premiereDate": "2013-11-16",
     "alternativeTitles": [
       {
@@ -171378,8 +171385,8 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "vZS3OaJEV-c",
     "voteAverage": 6.3,
     "voteCount": 102,
-    "tmdbUpdatedAt": "2026-10-04T07:50:30.045Z",
-    "tmdbFetchedAt": "2026-10-04T07:50:30.045Z",
+    "tmdbUpdatedAt": "2026-10-05T08:08:09.625Z",
+    "tmdbFetchedAt": "2026-10-05T08:08:09.625Z",
     "premiereDate": "2013-11-09"
   },
   {
@@ -171569,20 +171576,20 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
-        "id": 928670,
-        "name": "Barbara Kymlicka",
-        "job": "Writer",
-        "department": "Writing",
-        "profileUrl": "https://image.tmdb.org/t/p/w500/5uAmw6fTni4V9UNiU5CdGqxkbbw.jpg",
-        "creditId": "52fe4e84c3a36847f8295a13"
-      },
-      {
         "id": 207180,
         "name": "Jonathan Wright",
         "job": "Director",
         "department": "Directing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/zi1roGouFMONsRKEUJwLXlCW1OX.jpg",
         "creditId": "52fe4e84c3a36847f8295a0d"
+      },
+      {
+        "id": 928670,
+        "name": "Barbara Kymlicka",
+        "job": "Writer",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/5uAmw6fTni4V9UNiU5CdGqxkbbw.jpg",
+        "creditId": "52fe4e84c3a36847f8295a13"
       }
     ],
     "trailers": [
@@ -171597,8 +171604,8 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "llpTYlMZzzo",
     "voteAverage": 6,
     "voteCount": 89,
-    "tmdbUpdatedAt": "2026-10-04T07:50:31.608Z",
-    "tmdbFetchedAt": "2026-10-04T07:50:31.608Z",
+    "tmdbUpdatedAt": "2026-10-05T08:08:10.230Z",
+    "tmdbFetchedAt": "2026-10-05T08:08:10.230Z",
     "premiereDate": "2013-11-10",
     "alternativeTitles": [
       {
@@ -171839,8 +171846,8 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "Vgnnvs3NLUM",
     "voteAverage": 6,
     "voteCount": 40,
-    "tmdbUpdatedAt": "2026-10-04T07:50:32.311Z",
-    "tmdbFetchedAt": "2026-10-04T07:50:32.311Z",
+    "tmdbUpdatedAt": "2026-10-05T08:08:10.836Z",
+    "tmdbFetchedAt": "2026-10-05T08:08:10.836Z",
     "premiereDate": "2013-11-16"
   },
   {
@@ -172042,8 +172049,8 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "ITQ5gnQQvXY",
     "voteAverage": 6.4,
     "voteCount": 56,
-    "tmdbUpdatedAt": "2026-10-04T07:50:33.041Z",
-    "tmdbFetchedAt": "2026-10-04T07:50:33.041Z",
+    "tmdbUpdatedAt": "2026-10-05T08:08:13.230Z",
+    "tmdbFetchedAt": "2026-10-05T08:08:13.230Z",
     "premiereDate": "2013-11-17",
     "alternativeTitles": [
       {
@@ -172058,7 +172065,7 @@ export const MOVIES: Movie[] = [
     "title": "Fir Crazy",
     "year": 2013,
     "brandId": "hallmark",
-    "releaseDate": "2013-12-12",
+    "releaseDate": "2013-11-24",
     "synopsis": "When marketing executive Elise MacKenzie decides to help sell Christmas trees at her family’s Christmas tree lot, she discovers a newfound fondness for the holidays. But all could be lost when the store owner who hosts the tree lot on his block wants to shut it down, and it’s up to Elise to find a way to rekindle his Christmas Cheer.",
     "posterUrl": "/images/posters/213901.jpg",
     "backdropUrl": "/images/backdrops/213901.jpg",
@@ -172410,9 +172417,9 @@ export const MOVIES: Movie[] = [
     "tagline": "This Christmas, love is just around the corner.",
     "voteAverage": 5.9,
     "voteCount": 67,
-    "tmdbUpdatedAt": "2026-10-04T07:50:33.784Z",
-    "tmdbFetchedAt": "2026-10-04T07:50:33.784Z",
-    "premiereDate": "2013-12-12",
+    "tmdbUpdatedAt": "2026-10-05T08:08:13.881Z",
+    "tmdbFetchedAt": "2026-10-05T08:08:13.881Z",
+    "premiereDate": "2013-11-24",
     "alternativeTitles": [
       {
         "title": "Navidad en Manhattan",
@@ -172755,8 +172762,8 @@ export const MOVIES: Movie[] = [
     "tagline": "A renowned journalist who will stop at nothing to get the truth.",
     "voteAverage": 5,
     "voteCount": 43,
-    "tmdbUpdatedAt": "2026-10-04T07:50:34.503Z",
-    "tmdbFetchedAt": "2026-10-04T07:50:34.503Z",
+    "tmdbUpdatedAt": "2026-10-05T08:08:14.472Z",
+    "tmdbFetchedAt": "2026-10-05T08:08:14.472Z",
     "premiereDate": "2013-12-01",
     "alternativeTitles": [
       {
@@ -172903,11 +172910,11 @@ export const MOVIES: Movie[] = [
         "creditId": "567b9081c3a3684be9001ab1"
       },
       {
-        "id": 1133778,
-        "name": "Brian Sawyer",
+        "id": 1133777,
+        "name": "Gregg Rossen",
         "job": "Writer",
         "department": "Writing",
-        "creditId": "567b90dc9251417de5001ccd"
+        "creditId": "567b90bec3a3684bcc001df5"
       },
       {
         "id": 1128370,
@@ -172917,11 +172924,11 @@ export const MOVIES: Movie[] = [
         "creditId": "567b90ab9251417de3001cc9"
       },
       {
-        "id": 1133777,
-        "name": "Gregg Rossen",
+        "id": 1133778,
+        "name": "Brian Sawyer",
         "job": "Writer",
         "department": "Writing",
-        "creditId": "567b90bec3a3684bcc001df5"
+        "creditId": "567b90dc9251417de5001ccd"
       }
     ],
     "trailers": [
@@ -172943,8 +172950,8 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "6z5yLNVCo7Q",
     "voteAverage": 5.2,
     "voteCount": 13,
-    "tmdbUpdatedAt": "2026-10-04T07:50:35.265Z",
-    "tmdbFetchedAt": "2026-10-04T07:50:35.265Z",
+    "tmdbUpdatedAt": "2026-10-05T08:08:15.105Z",
+    "tmdbFetchedAt": "2026-10-05T08:08:15.105Z",
     "premiereDate": "2013-12-07",
     "alternativeTitles": [
       {
@@ -173079,18 +173086,18 @@ export const MOVIES: Movie[] = [
         "creditId": "52fe4ee9c3a36847f82b036d"
       },
       {
+        "id": 2461932,
+        "name": "Deborah Majinska",
+        "job": "Story",
+        "department": "Writing",
+        "creditId": "5dd3e9bd2634620010b5a21e"
+      },
+      {
         "id": 2461933,
         "name": "Deanna Talcott",
         "job": "Story",
         "department": "Writing",
         "creditId": "5dd3e9e257d3780b1fd6fe55"
-      },
-      {
-        "id": 1048614,
-        "name": "Jennifer Notas Shapiro",
-        "job": "Screenplay",
-        "department": "Writing",
-        "creditId": "5dd3ea3228723c00144df0db"
       },
       {
         "id": 2461933,
@@ -173107,11 +173114,11 @@ export const MOVIES: Movie[] = [
         "creditId": "5dd3ea1328723c00144df0c4"
       },
       {
-        "id": 2461932,
-        "name": "Deborah Majinska",
-        "job": "Story",
+        "id": 1048614,
+        "name": "Jennifer Notas Shapiro",
+        "job": "Screenplay",
         "department": "Writing",
-        "creditId": "5dd3e9bd2634620010b5a21e"
+        "creditId": "5dd3ea3228723c00144df0db"
       }
     ],
     "trailers": [
@@ -173133,8 +173140,8 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "B29vRTCCrb8",
     "voteAverage": 5.9,
     "voteCount": 53,
-    "tmdbUpdatedAt": "2026-10-04T07:50:35.978Z",
-    "tmdbFetchedAt": "2026-10-04T07:50:35.978Z",
+    "tmdbUpdatedAt": "2026-10-05T08:08:15.748Z",
+    "tmdbFetchedAt": "2026-10-05T08:08:15.748Z",
     "premiereDate": "2013-12-15",
     "alternativeTitles": [
       {
@@ -173300,8 +173307,8 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "qW0aE-Wd3ZI",
     "voteAverage": 6.4,
     "voteCount": 50,
-    "tmdbUpdatedAt": "2026-10-04T07:50:38.916Z",
-    "tmdbFetchedAt": "2026-10-04T07:50:38.916Z",
+    "tmdbUpdatedAt": "2026-10-05T08:08:18.418Z",
+    "tmdbFetchedAt": "2026-10-05T08:08:18.418Z",
     "premiereDate": "2013-12-15",
     "alternativeTitles": [
       {
@@ -173473,18 +173480,18 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
-        "id": 224214,
-        "name": "John Bradshaw",
-        "job": "Director",
-        "department": "Directing",
-        "creditId": "54608574c3a3686cbb00610c"
-      },
-      {
         "id": 1057526,
         "name": "Rickie Castaneda",
         "job": "Writer",
         "department": "Writing",
         "creditId": "54608586c3a3686cbb006113"
+      },
+      {
+        "id": 224214,
+        "name": "John Bradshaw",
+        "job": "Director",
+        "department": "Directing",
+        "creditId": "54608574c3a3686cbb00610c"
       }
     ],
     "trailers": [
@@ -173499,8 +173506,8 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "6ZW8rTf_Pkk",
     "voteAverage": 6.5,
     "voteCount": 52,
-    "tmdbUpdatedAt": "2026-10-04T07:50:40.589Z",
-    "tmdbFetchedAt": "2026-10-04T07:50:40.589Z",
+    "tmdbUpdatedAt": "2026-10-05T08:08:19.686Z",
+    "tmdbFetchedAt": "2026-10-05T08:08:19.686Z",
     "premiereDate": "2014-11-01"
   },
   {
@@ -173703,8 +173710,8 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "BudVGyVMXEM",
     "voteAverage": 6.1,
     "voteCount": 82,
-    "tmdbUpdatedAt": "2026-10-04T07:50:42.458Z",
-    "tmdbFetchedAt": "2026-10-04T07:50:42.458Z",
+    "tmdbUpdatedAt": "2026-10-05T08:08:21.456Z",
+    "tmdbFetchedAt": "2026-10-05T08:08:21.456Z",
     "premiereDate": "2014-11-09",
     "alternativeTitles": [
       {
@@ -173883,11 +173890,12 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
-        "id": 1133778,
-        "name": "Brian Sawyer",
-        "job": "Writer",
-        "department": "Writing",
-        "creditId": "5460896fc3a368535800afe1"
+        "id": 131785,
+        "name": "Douglas Barr",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/diqiqLjIsuSYdULyKbwTP03c9dJ.jpg",
+        "creditId": "546089400e0a262ca2002429"
       },
       {
         "id": 1133777,
@@ -173897,12 +173905,11 @@ export const MOVIES: Movie[] = [
         "creditId": "54608966c3a3686e49003faf"
       },
       {
-        "id": 131785,
-        "name": "Douglas Barr",
-        "job": "Director",
-        "department": "Directing",
-        "profileUrl": "https://image.tmdb.org/t/p/w500/diqiqLjIsuSYdULyKbwTP03c9dJ.jpg",
-        "creditId": "546089400e0a262ca2002429"
+        "id": 1133778,
+        "name": "Brian Sawyer",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "5460896fc3a368535800afe1"
       }
     ],
     "trailers": [
@@ -173917,8 +173924,8 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "UH5AcQQzA94",
     "voteAverage": 6,
     "voteCount": 79,
-    "tmdbUpdatedAt": "2026-10-04T07:50:43.179Z",
-    "tmdbFetchedAt": "2026-10-04T07:50:43.179Z",
+    "tmdbUpdatedAt": "2026-10-05T08:08:24.043Z",
+    "tmdbFetchedAt": "2026-10-05T08:08:24.043Z",
     "premiereDate": "2014-11-15",
     "alternativeTitles": [
       {
@@ -174114,18 +174121,18 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
-        "id": 224215,
-        "name": "Kevin Commins",
-        "job": "Writer",
-        "department": "Writing",
-        "creditId": "55185fb09251412c1e00303f"
-      },
-      {
         "id": 1447212,
         "name": "Alan Goluboff",
         "job": "Director",
         "department": "Directing",
         "creditId": "55185fa89251416efe004ad1"
+      },
+      {
+        "id": 224215,
+        "name": "Kevin Commins",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "55185fb09251412c1e00303f"
       }
     ],
     "trailers": [
@@ -174140,8 +174147,8 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "q2brSp1TZk0",
     "voteAverage": 5.3,
     "voteCount": 25,
-    "tmdbUpdatedAt": "2026-10-04T07:50:45.492Z",
-    "tmdbFetchedAt": "2026-10-04T07:50:45.492Z",
+    "tmdbUpdatedAt": "2026-10-05T08:08:25.394Z",
+    "tmdbFetchedAt": "2026-10-05T08:08:25.394Z",
     "premiereDate": "2014-11-16"
   },
   {
@@ -174355,12 +174362,12 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
-        "id": 36129,
-        "name": "Neal H. Dobrofsky",
-        "job": "Writer",
-        "department": "Writing",
-        "profileUrl": "https://image.tmdb.org/t/p/w500/bTrJcjQuyqbqOaHOwqqQVWtF9UN.jpg",
-        "creditId": "54608be5c3a3686cbb0061f2"
+        "id": 88077,
+        "name": "Alex Zamm",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/2Rtymz6bQ23cEbnL2dLpjM0ZCAP.jpg",
+        "creditId": "54608bb40e0a261fbd00b28f"
       },
       {
         "id": 62079,
@@ -174371,28 +174378,28 @@ export const MOVIES: Movie[] = [
         "creditId": "54608bc9c3a36841d300494b"
       },
       {
-        "id": 36130,
-        "name": "Tippi Dobrofsky",
-        "job": "Writer",
-        "department": "Writing",
-        "profileUrl": "https://image.tmdb.org/t/p/w500/qVecDr8L3iEefOXspuzNcBcPQtR.jpg",
-        "creditId": "54608bf1c3a3680b5d0027ed"
-      },
-      {
-        "id": 88077,
-        "name": "Alex Zamm",
-        "job": "Director",
-        "department": "Directing",
-        "profileUrl": "https://image.tmdb.org/t/p/w500/2Rtymz6bQ23cEbnL2dLpjM0ZCAP.jpg",
-        "creditId": "54608bb40e0a261fbd00b28f"
-      },
-      {
         "id": 62081,
         "name": "Michael Damian",
         "job": "Writer",
         "department": "Writing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/toPk7n6y8T8Vgz3NIdFdZGEb1l1.jpg",
         "creditId": "54608bdac3a368371c001c57"
+      },
+      {
+        "id": 36129,
+        "name": "Neal H. Dobrofsky",
+        "job": "Writer",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/bTrJcjQuyqbqOaHOwqqQVWtF9UN.jpg",
+        "creditId": "54608be5c3a3686cbb0061f2"
+      },
+      {
+        "id": 36130,
+        "name": "Tippi Dobrofsky",
+        "job": "Writer",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/qVecDr8L3iEefOXspuzNcBcPQtR.jpg",
+        "creditId": "54608bf1c3a3680b5d0027ed"
       }
     ],
     "trailers": [
@@ -174407,8 +174414,8 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "Kua76tb2W54",
     "voteAverage": 6.7,
     "voteCount": 249,
-    "tmdbUpdatedAt": "2026-10-04T07:50:46.458Z",
-    "tmdbFetchedAt": "2026-10-04T07:50:46.458Z",
+    "tmdbUpdatedAt": "2026-10-05T08:08:26.164Z",
+    "tmdbFetchedAt": "2026-10-05T08:08:26.164Z",
     "premiereDate": "2014-11-21"
   },
   {
@@ -174588,8 +174595,8 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "CsgUGiNpba8",
     "voteAverage": 6,
     "voteCount": 34,
-    "tmdbUpdatedAt": "2026-10-04T07:50:48.056Z",
-    "tmdbFetchedAt": "2026-10-04T07:50:48.056Z",
+    "tmdbUpdatedAt": "2026-10-05T08:08:27.468Z",
+    "tmdbFetchedAt": "2026-10-05T08:08:27.468Z",
     "premiereDate": "2014-11-23"
   },
   {
@@ -174813,8 +174820,8 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "Hjesz32evHI",
     "voteAverage": 5.2,
     "voteCount": 23,
-    "tmdbUpdatedAt": "2026-10-04T07:50:48.859Z",
-    "tmdbFetchedAt": "2026-10-04T07:50:48.859Z",
+    "tmdbUpdatedAt": "2026-10-05T08:08:28.086Z",
+    "tmdbFetchedAt": "2026-10-05T08:08:28.086Z",
     "premiereDate": "2014-12-06",
     "alternativeTitles": [
       {
@@ -175223,8 +175230,8 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "6pr-tlURPVs",
     "voteAverage": 5.6,
     "voteCount": 69,
-    "tmdbUpdatedAt": "2026-10-04T07:50:50.405Z",
-    "tmdbFetchedAt": "2026-10-04T07:50:50.405Z",
+    "tmdbUpdatedAt": "2026-10-05T08:08:29.440Z",
+    "tmdbFetchedAt": "2026-10-05T08:08:29.440Z",
     "premiereDate": "2014-12-07",
     "alternativeTitles": [
       {
@@ -175480,18 +175487,18 @@ export const MOVIES: Movie[] = [
         "creditId": "548b5df592514122f50001ba"
       },
       {
-        "id": 2475049,
-        "name": "Fariba Cain",
-        "job": "Story",
-        "department": "Writing",
-        "creditId": "5de7c7e77646fd00139997bc"
-      },
-      {
         "id": 201028,
         "name": "Lewis Chesler",
         "job": "Story",
         "department": "Writing",
         "creditId": "5de7c7d4a313b8001891c0e5"
+      },
+      {
+        "id": 2475049,
+        "name": "Fariba Cain",
+        "job": "Story",
+        "department": "Writing",
+        "creditId": "5de7c7e77646fd00139997bc"
       },
       {
         "id": 1130509,
@@ -175527,8 +175534,8 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "E8VkF3XVNyc",
     "voteAverage": 6,
     "voteCount": 61,
-    "tmdbUpdatedAt": "2026-10-04T07:50:51.170Z",
-    "tmdbFetchedAt": "2026-10-04T07:50:51.170Z",
+    "tmdbUpdatedAt": "2026-10-05T08:08:31.137Z",
+    "tmdbFetchedAt": "2026-10-05T08:08:31.137Z",
     "premiereDate": "2014-12-13"
   },
   {
@@ -175694,8 +175701,8 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "ZPL58QbS4mA",
     "voteAverage": 5.2,
     "voteCount": 51,
-    "tmdbUpdatedAt": "2026-10-04T07:50:53.373Z",
-    "tmdbFetchedAt": "2026-10-04T07:50:53.373Z",
+    "tmdbUpdatedAt": "2026-10-05T08:08:32.435Z",
+    "tmdbFetchedAt": "2026-10-05T08:08:32.435Z",
     "premiereDate": "2014-12-14",
     "alternativeTitles": [
       {
@@ -175894,8 +175901,8 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 5.5,
     "voteCount": 4,
-    "tmdbUpdatedAt": "2026-10-04T07:50:54.388Z",
-    "tmdbFetchedAt": "2026-10-04T07:50:54.388Z",
+    "tmdbUpdatedAt": "2026-10-05T08:08:33.045Z",
+    "tmdbFetchedAt": "2026-10-05T08:08:33.045Z",
     "premiereDate": "2021-12-01"
   },
   {
@@ -176102,8 +176109,8 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "NeIchZj1xPo",
     "voteAverage": 7.5,
     "voteCount": 27,
-    "tmdbUpdatedAt": "2026-10-04T07:50:55.130Z",
-    "tmdbFetchedAt": "2026-10-04T07:50:55.130Z",
+    "tmdbUpdatedAt": "2026-10-05T08:08:33.661Z",
+    "tmdbFetchedAt": "2026-10-05T08:08:33.661Z",
     "premiereDate": "2024-11-23",
     "alternativeTitles": [
       {
@@ -176221,14 +176228,6 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
-        "id": 85563,
-        "name": "Brian Herzlinger",
-        "job": "Director",
-        "department": "Directing",
-        "profileUrl": "https://image.tmdb.org/t/p/w500/ii0sX3ATj3kDaDgqZ7mI4EdLbvg.jpg",
-        "creditId": "667ec13355e386b2b58d7491"
-      },
-      {
         "id": 2426867,
         "name": "Megan Henry Herzlinger",
         "job": "Writer",
@@ -176241,6 +176240,14 @@ export const MOVIES: Movie[] = [
         "job": "Writer",
         "department": "Writing",
         "creditId": "667ec1709d407d35c757a7a4"
+      },
+      {
+        "id": 85563,
+        "name": "Brian Herzlinger",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/ii0sX3ATj3kDaDgqZ7mI4EdLbvg.jpg",
+        "creditId": "667ec13355e386b2b58d7491"
       }
     ],
     "trailers": [
@@ -176262,8 +176269,8 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "zC8N8qQiUQE",
     "voteAverage": 6.7,
     "voteCount": 10,
-    "tmdbUpdatedAt": "2026-10-04T07:50:55.850Z",
-    "tmdbFetchedAt": "2026-10-04T07:50:55.850Z",
+    "tmdbUpdatedAt": "2026-10-05T08:08:34.999Z",
+    "tmdbFetchedAt": "2026-10-05T08:08:34.999Z",
     "premiereDate": "2024-11-16"
   },
   {
@@ -176479,8 +176486,8 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "eXab_L2fSJc",
     "voteAverage": 5.4,
     "voteCount": 5,
-    "tmdbUpdatedAt": "2026-10-04T07:50:57.417Z",
-    "tmdbFetchedAt": "2026-10-04T07:50:57.417Z",
+    "tmdbUpdatedAt": "2026-10-05T08:08:36.274Z",
+    "tmdbFetchedAt": "2026-10-05T08:08:36.274Z",
     "premiereDate": "2023-12-03",
     "alternativeTitles": [
       {
@@ -176717,8 +176724,8 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 5.8,
     "voteCount": 9,
-    "tmdbUpdatedAt": "2026-10-04T07:50:58.136Z",
-    "tmdbFetchedAt": "2026-10-04T07:50:58.136Z",
+    "tmdbUpdatedAt": "2026-10-05T08:08:36.880Z",
+    "tmdbFetchedAt": "2026-10-05T08:08:36.880Z",
     "premiereDate": "2024-12-01"
   },
   {
@@ -176847,8 +176854,8 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "3oXFbj5O6Hk",
     "voteAverage": 5,
     "voteCount": 4,
-    "tmdbUpdatedAt": "2026-10-04T07:50:58.944Z",
-    "tmdbFetchedAt": "2026-10-04T07:50:58.944Z",
+    "tmdbUpdatedAt": "2026-10-05T08:08:37.556Z",
+    "tmdbFetchedAt": "2026-10-05T08:08:37.556Z",
     "premiereDate": "2024-10-30"
   },
   {
@@ -177032,8 +177039,8 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "yNvTCwn1EKs",
     "voteAverage": 5.5,
     "voteCount": 19,
-    "tmdbUpdatedAt": "2026-10-04T07:50:59.939Z",
-    "tmdbFetchedAt": "2026-10-04T07:50:59.939Z",
+    "tmdbUpdatedAt": "2026-10-05T08:08:38.219Z",
+    "tmdbFetchedAt": "2026-10-05T08:08:38.219Z",
     "premiereDate": "2023-11-13",
     "alternativeTitles": [
       {
@@ -177193,8 +177200,8 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "u92qV8If47Y",
     "voteAverage": 6.9,
     "voteCount": 8,
-    "tmdbUpdatedAt": "2026-10-04T07:51:02.322Z",
-    "tmdbFetchedAt": "2026-10-04T07:51:02.322Z",
+    "tmdbUpdatedAt": "2026-10-05T08:08:39.015Z",
+    "tmdbFetchedAt": "2026-10-05T08:08:39.015Z",
     "premiereDate": "2023-12-17",
     "alternativeTitles": [
       {
@@ -177350,8 +177357,8 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "HV11qtXTtmw",
     "voteAverage": 6.091,
     "voteCount": 11,
-    "tmdbUpdatedAt": "2026-10-04T07:51:04.922Z",
-    "tmdbFetchedAt": "2026-10-04T07:51:04.922Z",
+    "tmdbUpdatedAt": "2026-10-05T08:08:39.638Z",
+    "tmdbFetchedAt": "2026-10-05T08:08:39.638Z",
     "premiereDate": "2024-11-07"
   },
   {
@@ -177360,7 +177367,7 @@ export const MOVIES: Movie[] = [
     "title": "How to Fall in Love by Christmas",
     "year": 2023,
     "brandId": "lifetime",
-    "releaseDate": "2023-12-21",
+    "releaseDate": "2023-11-03",
     "synopsis": "A beloved writer-turned-CEO of her own Goop-like lifestyle brand, Prism, must secure a partnership with Singled Out to save her company, but the only way to appease them is for her to write a column on falling in love by Christmas with the help of the charming and handsome photographer who has been assigned to the piece.",
     "posterUrl": "/images/posters/1178605.jpg",
     "backdropUrl": "/images/backdrops/1178605.jpg",
@@ -177615,9 +177622,9 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "yASQc-Lj1zE",
     "voteAverage": 5.9,
     "voteCount": 15,
-    "tmdbUpdatedAt": "2026-10-04T07:51:06.546Z",
-    "tmdbFetchedAt": "2026-10-04T07:51:06.546Z",
-    "premiereDate": "2023-12-21",
+    "tmdbUpdatedAt": "2026-10-05T08:08:40.899Z",
+    "tmdbFetchedAt": "2026-10-05T08:08:40.899Z",
+    "premiereDate": "2023-11-03",
     "alternativeTitles": [
       {
         "title": "How to Fall in Love by the Holidays",
@@ -177836,8 +177843,8 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "mweBoDPqjS0",
     "voteAverage": 6.4,
     "voteCount": 18,
-    "tmdbUpdatedAt": "2026-10-04T07:51:08.924Z",
-    "tmdbFetchedAt": "2026-10-04T07:51:08.924Z",
+    "tmdbUpdatedAt": "2026-10-05T08:08:42.172Z",
+    "tmdbFetchedAt": "2026-10-05T08:08:42.172Z",
     "premiereDate": "2024-12-14"
   },
   {
@@ -177993,8 +178000,8 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "XxZcdXUWsOY",
     "voteAverage": 6.1,
     "voteCount": 18,
-    "tmdbUpdatedAt": "2026-10-04T07:51:11.372Z",
-    "tmdbFetchedAt": "2026-10-04T07:51:11.372Z",
+    "tmdbUpdatedAt": "2026-10-05T08:08:43.441Z",
+    "tmdbFetchedAt": "2026-10-05T08:08:43.441Z",
     "premiereDate": "2024-12-21",
     "alternativeTitles": [
       {
@@ -178141,8 +178148,8 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 6.6,
     "voteCount": 12,
-    "tmdbUpdatedAt": "2026-10-04T07:51:12.093Z",
-    "tmdbFetchedAt": "2026-10-04T07:51:12.093Z",
+    "tmdbUpdatedAt": "2026-10-05T08:08:44.714Z",
+    "tmdbFetchedAt": "2026-10-05T08:08:44.714Z",
     "premiereDate": "2024-12-16",
     "alternativeTitles": [
       {
@@ -178279,27 +178286,27 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
-        "id": 198927,
-        "name": "Sarah Drew",
-        "job": "Writer",
-        "department": "Writing",
-        "profileUrl": "https://image.tmdb.org/t/p/w500/65hUM3Egh5roemP3Cgn0bA38rDj.jpg",
-        "creditId": "6575b85ba1d33200e1b78e0f"
-      },
-      {
         "id": 589410,
         "name": "Jake Helgren",
         "job": "Director",
         "department": "Directing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/virgDMoUS8fwCZXcoFchTYdiLgL.jpg",
         "creditId": "6575b85589d97f01009e0b19"
+      },
+      {
+        "id": 198927,
+        "name": "Sarah Drew",
+        "job": "Writer",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/65hUM3Egh5roemP3Cgn0bA38rDj.jpg",
+        "creditId": "6575b85ba1d33200e1b78e0f"
       }
     ],
     "trailers": [],
     "voteAverage": 7.3,
     "voteCount": 16,
-    "tmdbUpdatedAt": "2026-10-04T07:51:13.639Z",
-    "tmdbFetchedAt": "2026-10-04T07:51:13.639Z",
+    "tmdbUpdatedAt": "2026-10-05T08:08:45.951Z",
+    "tmdbFetchedAt": "2026-10-05T08:08:45.951Z",
     "premiereDate": "2023-12-09"
   },
   {
@@ -178506,8 +178513,8 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "CUG0iiDIo44",
     "voteAverage": 6.5,
     "voteCount": 12,
-    "tmdbUpdatedAt": "2026-10-04T07:51:15.557Z",
-    "tmdbFetchedAt": "2026-10-04T07:51:15.557Z",
+    "tmdbUpdatedAt": "2026-10-05T08:08:46.590Z",
+    "tmdbFetchedAt": "2026-10-05T08:08:46.590Z",
     "premiereDate": "2023-12-10"
   },
   {
@@ -178678,8 +178685,8 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "zmYVDJGv564",
     "voteAverage": 4.9,
     "voteCount": 10,
-    "tmdbUpdatedAt": "2026-10-04T07:51:16.278Z",
-    "tmdbFetchedAt": "2026-10-04T07:51:16.278Z",
+    "tmdbUpdatedAt": "2026-10-05T08:08:47.217Z",
+    "tmdbFetchedAt": "2026-10-05T08:08:47.217Z",
     "premiereDate": "2023-12-16"
   },
   {
@@ -178849,8 +178856,8 @@ export const MOVIES: Movie[] = [
     "tagline": "Helping for the holidays never gets old.",
     "voteAverage": 6.3,
     "voteCount": 6,
-    "tmdbUpdatedAt": "2026-10-04T07:51:17.981Z",
-    "tmdbFetchedAt": "2026-10-04T07:51:17.981Z",
+    "tmdbUpdatedAt": "2026-10-05T08:08:49.082Z",
+    "tmdbFetchedAt": "2026-10-05T08:08:49.082Z",
     "premiereDate": "2023-12-16"
   },
   {
@@ -179012,8 +179019,8 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 4.2,
     "voteCount": 8,
-    "tmdbUpdatedAt": "2026-10-04T07:51:20.084Z",
-    "tmdbFetchedAt": "2026-10-04T07:51:20.084Z",
+    "tmdbUpdatedAt": "2026-10-05T08:08:50.327Z",
+    "tmdbFetchedAt": "2026-10-05T08:08:50.327Z",
     "premiereDate": "2023-12-10",
     "alternativeTitles": [
       {
@@ -179258,8 +179265,8 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "dwFOVwNRg8o",
     "voteAverage": 6.8,
     "voteCount": 5,
-    "tmdbUpdatedAt": "2026-10-04T07:51:20.812Z",
-    "tmdbFetchedAt": "2026-10-04T07:51:20.812Z",
+    "tmdbUpdatedAt": "2026-10-05T08:08:50.921Z",
+    "tmdbFetchedAt": "2026-10-05T08:08:50.921Z",
     "premiereDate": "2025-11-29"
   },
   {
@@ -179401,10 +179408,11 @@ export const MOVIES: Movie[] = [
     ],
     "trailers": [],
     "voteCount": 4,
-    "tmdbUpdatedAt": "2026-10-04T07:51:24.368Z",
-    "tmdbFetchedAt": "2026-10-04T07:51:24.368Z",
+    "tmdbUpdatedAt": "2026-10-05T08:08:52.157Z",
+    "tmdbFetchedAt": "2026-10-05T08:08:52.157Z",
     "premiereDate": "2024-11-01",
-    "networkPremiereDate": "2025-12-05"
+    "networkPremiereDate": "2025-12-05",
+    "voteAverage": 4.2
   },
   {
     "id": "lifetime-2025-the-christmas-cookbook",
@@ -179580,8 +179588,8 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 5.8,
     "voteCount": 4,
-    "tmdbUpdatedAt": "2026-10-04T07:51:25.153Z",
-    "tmdbFetchedAt": "2026-10-04T07:51:25.153Z",
+    "tmdbUpdatedAt": "2026-10-05T08:08:52.758Z",
+    "tmdbFetchedAt": "2026-10-05T08:08:52.758Z",
     "premiereDate": "2025-12-03",
     "alternativeTitles": [
       {
@@ -179701,8 +179709,8 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "98FjtAn3m7o",
     "voteAverage": 2,
     "voteCount": 2,
-    "tmdbUpdatedAt": "2026-10-04T07:51:25.883Z",
-    "tmdbFetchedAt": "2026-10-04T07:51:25.883Z",
+    "tmdbUpdatedAt": "2026-10-05T08:08:53.376Z",
+    "tmdbFetchedAt": "2026-10-05T08:08:53.376Z",
     "premiereDate": "2025-12-06"
   },
   {
@@ -179835,8 +179843,8 @@ export const MOVIES: Movie[] = [
     ],
     "trailers": [],
     "voteCount": 6,
-    "tmdbUpdatedAt": "2026-10-04T07:51:26.911Z",
-    "tmdbFetchedAt": "2026-10-04T07:51:26.911Z",
+    "tmdbUpdatedAt": "2026-10-05T08:08:53.999Z",
+    "tmdbFetchedAt": "2026-10-05T08:08:53.999Z",
     "premiereDate": "2024-12-03",
     "alternativeTitles": [
       {
@@ -179844,7 +179852,8 @@ export const MOVIES: Movie[] = [
         "country": "US"
       }
     ],
-    "networkPremiereDate": "2025-12-06"
+    "networkPremiereDate": "2025-12-06",
+    "voteAverage": 6.1
   },
   {
     "id": "lifetime-2024-christmas-in-alaska",
@@ -179852,7 +179861,7 @@ export const MOVIES: Movie[] = [
     "title": "Christmas in Alaska",
     "year": 2024,
     "brandId": "lifetime",
-    "releaseDate": "2024-12-19",
+    "releaseDate": "2024-12-04",
     "synopsis": "Rival journalists competing for the same lucrative promotion get stuck together in snowy Alaska after their plane is forced to make an emergency landing. They find themselves caught up in a totally unexpected Christmas romance.",
     "posterUrl": "/images/posters/1311858.jpg",
     "backdropUrl": "/images/backdrops/1311858.jpg",
@@ -179984,10 +179993,11 @@ export const MOVIES: Movie[] = [
     ],
     "trailers": [],
     "voteCount": 17,
-    "tmdbUpdatedAt": "2026-10-04T07:51:27.659Z",
-    "tmdbFetchedAt": "2026-10-04T07:51:27.659Z",
-    "premiereDate": "2024-12-19",
-    "networkPremiereDate": "2025-12-12"
+    "tmdbUpdatedAt": "2026-10-05T08:08:54.622Z",
+    "tmdbFetchedAt": "2026-10-05T08:08:54.622Z",
+    "premiereDate": "2024-12-04",
+    "networkPremiereDate": "2025-12-12",
+    "voteAverage": 6.6
   },
   {
     "id": "lifetime-2025-thank-god-christmas-at-keller-ranch",
@@ -180130,8 +180140,8 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 3,
     "voteCount": 3,
-    "tmdbUpdatedAt": "2026-10-04T07:51:28.124Z",
-    "tmdbFetchedAt": "2026-10-04T07:51:28.124Z",
+    "tmdbUpdatedAt": "2026-10-05T08:08:55.053Z",
+    "tmdbFetchedAt": "2026-10-05T08:08:55.053Z",
     "premiereDate": "2025-12-13"
   },
   {
@@ -180282,8 +180292,8 @@ export const MOVIES: Movie[] = [
     ],
     "trailers": [],
     "voteCount": 8,
-    "tmdbUpdatedAt": "2026-10-04T07:51:28.864Z",
-    "tmdbFetchedAt": "2026-10-04T07:51:28.864Z",
+    "tmdbUpdatedAt": "2026-10-05T08:08:56.344Z",
+    "tmdbFetchedAt": "2026-10-05T08:08:56.344Z",
     "premiereDate": "2024-11-12",
     "alternativeTitles": [
       {
@@ -180295,7 +180305,8 @@ export const MOVIES: Movie[] = [
         "country": "US"
       }
     ],
-    "networkPremiereDate": "2025-12-19"
+    "networkPremiereDate": "2025-12-19",
+    "voteAverage": 6
   },
   {
     "id": "lifetime-2016-heaven-sent",
@@ -180496,8 +180507,8 @@ export const MOVIES: Movie[] = [
     "tagline": "The power of love meets the magic of Christmas.",
     "voteAverage": 6.5,
     "voteCount": 40,
-    "tmdbUpdatedAt": "2026-10-04T07:51:31.662Z",
-    "tmdbFetchedAt": "2026-10-04T07:51:31.662Z",
+    "tmdbUpdatedAt": "2026-10-05T08:08:57.557Z",
+    "tmdbFetchedAt": "2026-10-05T08:08:57.557Z",
     "premiereDate": "2016-12-03",
     "alternativeTitles": [
       {
@@ -180734,18 +180745,18 @@ export const MOVIES: Movie[] = [
       {
         "id": 31155,
         "name": "Fred Olen Ray",
-        "job": "Writer",
-        "department": "Writing",
-        "profileUrl": "https://image.tmdb.org/t/p/w500/91Y7oLIYJjpoY0YmDEsswKfeqDg.jpg",
-        "creditId": "54a10760c3a3682f1b00c44c"
-      },
-      {
-        "id": 31155,
-        "name": "Fred Olen Ray",
         "job": "Director",
         "department": "Directing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/91Y7oLIYJjpoY0YmDEsswKfeqDg.jpg",
         "creditId": "54a10714925141198b000e2a"
+      },
+      {
+        "id": 31155,
+        "name": "Fred Olen Ray",
+        "job": "Writer",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/91Y7oLIYJjpoY0YmDEsswKfeqDg.jpg",
+        "creditId": "54a10760c3a3682f1b00c44c"
       },
       {
         "id": 92591,
@@ -180767,8 +180778,8 @@ export const MOVIES: Movie[] = [
     "tagline": "She's making a list. and checking it twice...",
     "voteAverage": 5.4,
     "voteCount": 48,
-    "tmdbUpdatedAt": "2026-10-04T07:51:33.461Z",
-    "tmdbFetchedAt": "2026-10-04T07:51:33.461Z",
+    "tmdbUpdatedAt": "2026-10-05T08:08:58.181Z",
+    "tmdbFetchedAt": "2026-10-05T08:08:58.181Z",
     "premiereDate": "2014-12-14",
     "alternativeTitles": [
       {
@@ -180986,8 +180997,8 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-10-05T05:58:31.556Z",
-    "tmdbFetchedAt": "2026-10-05T05:58:31.556Z",
+    "tmdbUpdatedAt": "2026-10-05T08:08:58.354Z",
+    "tmdbFetchedAt": "2026-10-05T08:08:58.354Z",
     "director": "Marni Banack",
     "premiereDate": "2026-12-03"
   },
@@ -181102,8 +181113,8 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-10-05T05:58:32.037Z",
-    "tmdbFetchedAt": "2026-10-05T05:58:32.037Z",
+    "tmdbUpdatedAt": "2026-10-05T08:08:58.742Z",
+    "tmdbFetchedAt": "2026-10-05T08:08:58.742Z",
     "director": "Sean Stencil",
     "premiereDate": "2026-12-17"
   },
@@ -181302,8 +181313,8 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-10-05T05:58:32.540Z",
-    "tmdbFetchedAt": "2026-10-05T05:58:32.540Z",
+    "tmdbUpdatedAt": "2026-10-05T08:08:59.122Z",
+    "tmdbFetchedAt": "2026-10-05T08:08:59.122Z",
     "director": "Peter Sullivan",
     "premiereDate": "2026-12-10"
   },
@@ -181722,8 +181733,8 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 6,
     "voteCount": 1,
-    "tmdbUpdatedAt": "2026-10-04T07:51:35.197Z",
-    "tmdbFetchedAt": "2026-10-04T07:51:35.197Z",
+    "tmdbUpdatedAt": "2026-10-05T08:08:59.540Z",
+    "tmdbFetchedAt": "2026-10-05T08:08:59.540Z",
     "premiereDate": "2017-12-25"
   },
   {
@@ -181840,8 +181851,8 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-10-04T07:51:35.826Z",
-    "tmdbFetchedAt": "2026-10-04T07:51:35.826Z",
+    "tmdbUpdatedAt": "2026-10-05T08:08:59.938Z",
+    "tmdbFetchedAt": "2026-10-05T08:08:59.938Z",
     "premiereDate": "2019-03-05"
   },
   {
@@ -182076,13 +182087,6 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
-        "id": 1536497,
-        "name": "Blaine Chiappetta",
-        "job": "Screenplay",
-        "department": "Writing",
-        "creditId": "5dd542d73faba00019f47687"
-      },
-      {
         "id": 589410,
         "name": "Jake Helgren",
         "job": "Story",
@@ -182097,6 +182101,13 @@ export const MOVIES: Movie[] = [
         "department": "Writing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/virgDMoUS8fwCZXcoFchTYdiLgL.jpg",
         "creditId": "5dd543112634620016b784a3"
+      },
+      {
+        "id": 1536497,
+        "name": "Blaine Chiappetta",
+        "job": "Screenplay",
+        "department": "Writing",
+        "creditId": "5dd542d73faba00019f47687"
       },
       {
         "id": 589410,
@@ -182119,8 +182130,8 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "r8UWSpguNLk",
     "voteAverage": 5.7,
     "voteCount": 19,
-    "tmdbUpdatedAt": "2026-10-04T07:51:36.576Z",
-    "tmdbFetchedAt": "2026-10-04T07:51:36.576Z",
+    "tmdbUpdatedAt": "2026-10-05T08:09:00.632Z",
+    "tmdbFetchedAt": "2026-10-05T08:09:00.632Z",
     "alternativeTitles": [
       {
         "title": "Crashing Christmas",
@@ -182139,7 +182150,7 @@ export const MOVIES: Movie[] = [
     "title": "The Trouble With Mistletoe",
     "year": 2026,
     "brandId": "gaf",
-    "releaseDate": "2026-07-02",
+    "releaseDate": "2026-07-11",
     "synopsis": "An acquisitions executive who returns home for Christmas and unexpectedly reconnects with the former fiancé she left behind. As the traditions of her hometown rekindle old memories, she begins to wonder if the life she walked away from may still be the one meant for her.",
     "posterUrl": "/images/posters/1702313.jpg",
     "backdropUrl": "/images/backdrops/1702313.jpg",
@@ -182237,14 +182248,7 @@ export const MOVIES: Movie[] = [
     "releaseDates": [
       {
         "country": "US",
-        "releaseDate": "2026-07-02T00:00:00.000Z",
-        "type": 4,
-        "certification": "G",
-        "note": "Great American Pure Flix "
-      },
-      {
-        "country": "US",
-        "releaseDate": "2026-07-04T00:00:00.000Z",
+        "releaseDate": "2026-07-11T00:00:00.000Z",
         "type": 6,
         "certification": "G",
         "note": "Great American Family"
@@ -182269,9 +182273,9 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-10-04T07:51:37.320Z",
-    "tmdbFetchedAt": "2026-10-04T07:51:37.320Z",
-    "premiereDate": "2026-07-02"
+    "tmdbUpdatedAt": "2026-10-05T08:09:01.253Z",
+    "tmdbFetchedAt": "2026-10-05T08:09:01.253Z",
+    "premiereDate": "2026-07-11"
   },
   {
     "id": "hallmark-2024-renovation-romance",
@@ -182482,9 +182486,11 @@ export const MOVIES: Movie[] = [
     ],
     "trailers": [],
     "voteCount": 17,
-    "tmdbUpdatedAt": "2026-10-04T15:44:26.454Z",
-    "tmdbFetchedAt": "2026-10-04T15:44:26.454Z",
-    "networkPremiereDate": "2026-07-04"
+    "tmdbUpdatedAt": "2026-10-05T08:09:01.859Z",
+    "tmdbFetchedAt": "2026-10-05T08:09:01.859Z",
+    "networkPremiereDate": "2026-07-04",
+    "voteAverage": 6.6,
+    "premiereDate": "2024-11-01"
   },
   {
     "id": "hallmark-2026-love-under-the-mistletoe",
@@ -182527,8 +182533,9 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-10-04T15:53:14.814Z",
-    "tmdbFetchedAt": "2026-10-04T15:53:14.815Z"
+    "tmdbUpdatedAt": "2026-10-05T08:09:02.246Z",
+    "tmdbFetchedAt": "2026-10-05T08:09:02.246Z",
+    "premiereDate": "2026-07-25"
   },
   {
     "id": "hallmark-2026-o-little-christmas-market",
@@ -182735,8 +182742,9 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "sx5qSoQofyI",
     "voteAverage": 3,
     "voteCount": 1,
-    "tmdbUpdatedAt": "2026-10-04T15:54:33.093Z",
-    "tmdbFetchedAt": "2026-10-04T15:54:33.093Z"
+    "tmdbUpdatedAt": "2026-10-05T08:09:02.833Z",
+    "tmdbFetchedAt": "2026-10-05T08:09:02.833Z",
+    "premiereDate": "2026-07-11"
   },
   {
     "id": "hallmark-2026-snowbound-for-the-holidays",
@@ -182927,8 +182935,9 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "Xfz-eTQkF-g",
     "voteAverage": 7,
     "voteCount": 3,
-    "tmdbUpdatedAt": "2026-10-04T15:55:23.999Z",
-    "tmdbFetchedAt": "2026-10-04T15:55:23.999Z"
+    "tmdbUpdatedAt": "2026-10-05T08:09:03.422Z",
+    "tmdbFetchedAt": "2026-10-05T08:09:03.422Z",
+    "premiereDate": "2026-07-18"
   },
   {
     "id": "hallmark-2023-a-royal-christmas-crush",
@@ -183080,18 +183089,18 @@ export const MOVIES: Movie[] = [
         "creditId": "64729c1ebe2d490116c8f08f"
       },
       {
-        "id": 3719839,
-        "name": "Keith Hemstreet",
-        "job": "Writer",
-        "department": "Writing",
-        "creditId": "648e04ec42bf010101be5ddb"
-      },
-      {
         "id": 3829094,
         "name": "Catherine Reay",
         "job": "Writer",
         "department": "Writing",
         "creditId": "648e04f2c3c89100cada326a"
+      },
+      {
+        "id": 3719839,
+        "name": "Keith Hemstreet",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "648e04ec42bf010101be5ddb"
       },
       {
         "id": 3829095,
@@ -183120,8 +183129,9 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "nH51WiChuzw",
     "voteAverage": 5.9,
     "voteCount": 28,
-    "tmdbUpdatedAt": "2026-10-04T15:57:11.386Z",
-    "tmdbFetchedAt": "2026-10-04T15:57:11.386Z"
+    "tmdbUpdatedAt": "2026-10-05T08:09:04.092Z",
+    "tmdbFetchedAt": "2026-10-05T08:09:04.092Z",
+    "premiereDate": "2023-07-15"
   },
   {
     "id": "hallmark-2023-take-me-back-for-christmas",
@@ -183129,7 +183139,7 @@ export const MOVIES: Movie[] = [
     "title": "Take Me Back for Christmas",
     "year": 2023,
     "brandId": "hallmark",
-    "releaseDate": "2023-07-15",
+    "releaseDate": "2023-07-08",
     "synopsis": "A Christmas wish gives Renee the successful life she’d always dreamed of. This new reality is perfect, except for one thing… she is no longer married to her husband Aaron. Now, Renee must race against the clock to win him back before Christmas Eve.",
     "posterUrl": "/images/posters/1135453.jpg",
     "backdropUrl": "/images/backdrops/1135453.jpg",
@@ -183313,8 +183323,9 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "99p-JEvSGlo",
     "voteAverage": 6.5,
     "voteCount": 28,
-    "tmdbUpdatedAt": "2026-10-04T16:07:45.662Z",
-    "tmdbFetchedAt": "2026-10-04T16:07:45.662Z"
+    "tmdbUpdatedAt": "2026-10-05T08:09:04.697Z",
+    "tmdbFetchedAt": "2026-10-05T08:09:04.697Z",
+    "premiereDate": "2023-07-08"
   },
   {
     "id": "hallmark-2022-my-grown-up-christmas-list",
@@ -183496,8 +183507,9 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "d_-NVsRa75g",
     "voteAverage": 7.4,
     "voteCount": 28,
-    "tmdbUpdatedAt": "2026-10-04T16:15:02.753Z",
-    "tmdbFetchedAt": "2026-10-04T16:15:02.753Z"
+    "tmdbUpdatedAt": "2026-10-05T08:09:06.012Z",
+    "tmdbFetchedAt": "2026-10-05T08:09:06.012Z",
+    "premiereDate": "2022-07-09"
   },
   {
     "id": "hallmark-2022-campfire-christmas",
@@ -183744,8 +183756,9 @@ export const MOVIES: Movie[] = [
     "tagline": "Eight campers. Seven days of Christmas. One unforgettable summer.",
     "voteAverage": 6,
     "voteCount": 19,
-    "tmdbUpdatedAt": "2026-10-04T16:17:05.841Z",
-    "tmdbFetchedAt": "2026-10-04T16:17:05.841Z"
+    "tmdbUpdatedAt": "2026-10-05T08:09:08.097Z",
+    "tmdbFetchedAt": "2026-10-05T08:09:08.097Z",
+    "premiereDate": "2022-07-16"
   },
   {
     "id": "hallmark-2022-christmas-in-toyland",
@@ -183920,19 +183933,19 @@ export const MOVIES: Movie[] = [
         "creditId": "62993b0709ed8f0cee283c4c"
       },
       {
+        "id": 2117291,
+        "name": "Courtney McAllister",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "62993b0f34e15200519b4878"
+      },
+      {
         "id": 2832332,
         "name": "Kate Pragnell",
         "job": "Writer",
         "department": "Writing",
         "profileUrl": "https://image.tmdb.org/t/p/w500/7XJe6vTU5w5jIO6kMViNDbsPlhT.jpg",
         "creditId": "62993b17ca8354544b3d5880"
-      },
-      {
-        "id": 2117291,
-        "name": "Courtney McAllister",
-        "job": "Writer",
-        "department": "Writing",
-        "creditId": "62993b0f34e15200519b4878"
       }
     ],
     "trailers": [
@@ -183947,8 +183960,9 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "mmFBT2RIBr8",
     "voteAverage": 6.2,
     "voteCount": 21,
-    "tmdbUpdatedAt": "2026-10-04T16:19:08.050Z",
-    "tmdbFetchedAt": "2026-10-04T16:19:08.050Z"
+    "tmdbUpdatedAt": "2026-10-05T08:09:08.709Z",
+    "tmdbFetchedAt": "2026-10-05T08:09:08.709Z",
+    "premiereDate": "2022-07-23"
   },
   {
     "id": "hallmark-2024-falling-like-snowflakes",
@@ -184099,8 +184113,9 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "PjM6tivLI3w",
     "voteAverage": 5.9,
     "voteCount": 16,
-    "tmdbUpdatedAt": "2026-10-04T16:24:11.719Z",
-    "tmdbFetchedAt": "2026-10-04T16:24:11.719Z"
+    "tmdbUpdatedAt": "2026-10-05T08:09:10.390Z",
+    "tmdbFetchedAt": "2026-10-05T08:09:10.390Z",
+    "premiereDate": "2024-06-29"
   },
   {
     "id": "hallmark-2023-rescuing-christmas",
@@ -184344,12 +184359,12 @@ export const MOVIES: Movie[] = [
     ],
     "crew": [
       {
-        "id": 1718392,
-        "name": "Emily Moss Wilson",
-        "job": "Director",
-        "department": "Directing",
-        "profileUrl": "https://image.tmdb.org/t/p/w500/svf9V8OZBo1LdQNkAgapHlaBRqF.jpg",
-        "creditId": "6509aa5b3cd12c00ad8c768c"
+        "id": 2246789,
+        "name": "Sarah Montana",
+        "job": "Writer",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/coiRsnoJSNxnhliaioILEYUxabH.jpg",
+        "creditId": "6509aa6bfa27f400caa5ab39"
       },
       {
         "id": 951196,
@@ -184360,12 +184375,12 @@ export const MOVIES: Movie[] = [
         "creditId": "6509aa6342d8a57e98a7abc7"
       },
       {
-        "id": 2246789,
-        "name": "Sarah Montana",
-        "job": "Writer",
-        "department": "Writing",
-        "profileUrl": "https://image.tmdb.org/t/p/w500/coiRsnoJSNxnhliaioILEYUxabH.jpg",
-        "creditId": "6509aa6bfa27f400caa5ab39"
+        "id": 1718392,
+        "name": "Emily Moss Wilson",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/svf9V8OZBo1LdQNkAgapHlaBRqF.jpg",
+        "creditId": "6509aa5b3cd12c00ad8c768c"
       }
     ],
     "trailers": [
@@ -184381,8 +184396,9 @@ export const MOVIES: Movie[] = [
     "tagline": "A holiday rebel without a claus.",
     "voteAverage": 7.1,
     "voteCount": 19,
-    "tmdbUpdatedAt": "2026-10-04T16:24:11.759Z",
-    "tmdbFetchedAt": "2026-10-04T16:24:11.759Z"
+    "tmdbUpdatedAt": "2026-10-05T08:09:12.335Z",
+    "tmdbFetchedAt": "2026-10-05T08:09:12.335Z",
+    "premiereDate": "2023-12-07"
   },
   {
     "id": "hallmark-2024-a-very-vermont-christmas",
@@ -184571,8 +184587,9 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "-KGov6mBx5w",
     "voteAverage": 6.2,
     "voteCount": 12,
-    "tmdbUpdatedAt": "2026-10-04T16:24:11.760Z",
-    "tmdbFetchedAt": "2026-10-04T16:24:11.760Z"
+    "tmdbUpdatedAt": "2026-10-05T08:09:13.659Z",
+    "tmdbFetchedAt": "2026-10-05T08:09:13.659Z",
+    "premiereDate": "2024-07-20"
   },
   {
     "id": "hallmark-2023-an-ice-palace-romance",
@@ -184737,8 +184754,9 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 6.3,
     "voteCount": 15,
-    "tmdbUpdatedAt": "2026-10-04T16:24:12.765Z",
-    "tmdbFetchedAt": "2026-10-04T16:24:12.765Z"
+    "tmdbUpdatedAt": "2026-10-05T08:09:14.923Z",
+    "tmdbFetchedAt": "2026-10-05T08:09:14.923Z",
+    "premiereDate": "2023-12-14"
   },
   {
     "id": "hallmark-2016-finding-father-christmas",
@@ -184816,8 +184834,8 @@ export const MOVIES: Movie[] = [
         "character": "Ellie Whitcomb",
         "slug": "aliyah-o-brien",
         "tmdbPersonId": 210904,
-        "order": 6,
         "profileUrl": "/images/people/210904.webp",
+        "order": 6,
         "birthday": "1981-05-07"
       },
       {
@@ -184961,8 +184979,9 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "4wS8bbzQDX0",
     "voteAverage": 6.2,
     "voteCount": 73,
-    "tmdbUpdatedAt": "2026-10-05T04:38:23.570Z",
-    "tmdbFetchedAt": "2026-10-05T04:38:23.570Z"
+    "tmdbUpdatedAt": "2026-10-05T08:09:17.290Z",
+    "tmdbFetchedAt": "2026-10-05T08:09:17.290Z",
+    "premiereDate": "2016-11-13"
   },
   {
     "id": "hallmark-2010-the-santa-incident",
@@ -185184,8 +185203,9 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "aVM6hjQy7V4",
     "voteAverage": 4.6,
     "voteCount": 12,
-    "tmdbUpdatedAt": "2026-10-05T05:47:02.284Z",
-    "tmdbFetchedAt": "2026-10-05T05:47:02.284Z"
+    "tmdbUpdatedAt": "2026-10-05T08:09:18.600Z",
+    "tmdbFetchedAt": "2026-10-05T08:09:18.600Z",
+    "premiereDate": "2010-12-09"
   }
 ];
 
