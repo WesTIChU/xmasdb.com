@@ -4097,7 +4097,8 @@
     "instagramId": "aliyahobrien",
     "twitterId": "aliyahobrien",
     "facebookId": "actressaliyahobrien",
-    "tmdbUpdatedAt": "2026-09-20T16:19:06.099Z"
+    "tmdbUpdatedAt": "2026-10-05T04:38:24.679Z",
+    "tmdbFetchedAt": "2026-10-05T04:38:24.679Z"
   },
   {
     "id": "3724463",
@@ -56067,6 +56068,20 @@
     "tmdbUpdatedAt": "2026-09-20T16:21:03.507Z"
   },
   {
+    "id": "1366830",
+    "slug": "jessie-fraser",
+    "name": "Jessie Fraser",
+    "tmdbPersonId": 1366830,
+    "photoUrl": "/images/people/1366830.webp",
+    "profileUrl": "/images/people/1366830.webp",
+    "imdbPersonId": "nm4438085",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 36,
+    "tmdbUpdatedAt": "2026-10-05T04:38:25.393Z",
+    "tmdbFetchedAt": "2026-10-05T04:38:25.393Z"
+  },
+  {
     "id": "1883215",
     "slug": "jessie-james-decker",
     "name": "Jessie James Decker",
@@ -60215,7 +60230,8 @@
     ],
     "instagramId": "jordanalargy",
     "twitterId": "jordanalargy",
-    "tmdbUpdatedAt": "2026-09-21T12:52:08.442Z"
+    "tmdbUpdatedAt": "2026-10-05T04:38:24.938Z",
+    "tmdbFetchedAt": "2026-10-05T04:38:24.938Z"
   },
   {
     "id": "jordin-sparks",
@@ -75891,6 +75907,19 @@
     "tmdbUpdatedAt": "2026-09-20T16:18:47.902Z"
   },
   {
+    "id": "1927077",
+    "slug": "macie-juiles",
+    "name": "Macie Juiles",
+    "tmdbPersonId": 1927077,
+    "photoUrl": "/images/people/1927077.webp",
+    "profileUrl": "/images/people/1927077.webp",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 4,
+    "tmdbUpdatedAt": "2026-10-05T04:38:25.087Z",
+    "tmdbFetchedAt": "2026-10-05T04:38:25.087Z"
+  },
+  {
     "id": "mackenzie-gray",
     "slug": "mackenzie-gray",
     "name": "Mackenzie Gray",
@@ -85045,7 +85074,8 @@
     "alsoKnownAs": [
       "Mike Kopsa"
     ],
-    "tmdbUpdatedAt": "2026-09-20T16:18:28.884Z"
+    "tmdbUpdatedAt": "2026-10-05T04:38:24.873Z",
+    "tmdbFetchedAt": "2026-10-05T04:38:24.873Z"
   },
   {
     "id": "60438",
@@ -92330,7 +92360,8 @@
     "gender": "Female",
     "knownForDepartment": "Acting",
     "knownCredits": 82,
-    "tmdbUpdatedAt": "2026-09-20T16:18:13.766Z"
+    "tmdbUpdatedAt": "2026-10-05T04:38:24.714Z",
+    "tmdbFetchedAt": "2026-10-05T04:38:24.714Z"
   },
   {
     "id": "p-j-marino",
@@ -104839,6 +104870,20 @@
     "tmdbUpdatedAt": "2026-09-20T16:16:40.548Z"
   },
   {
+    "id": "1572437",
+    "slug": "sasha-neuhaus",
+    "name": "Sasha Neuhaus",
+    "tmdbPersonId": 1572437,
+    "photoUrl": "/images/people/1572437.webp",
+    "profileUrl": "/images/people/1572437.webp",
+    "imdbPersonId": "nm5299341",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 4,
+    "tmdbUpdatedAt": "2026-10-05T04:38:25.421Z",
+    "tmdbFetchedAt": "2026-10-05T04:38:25.421Z"
+  },
+  {
     "id": "62168",
     "slug": "sasha-pieterse",
     "name": "Sasha Pieterse",
@@ -113722,7 +113767,8 @@
       "Terrence Kelly",
       "Terry Kelly"
     ],
-    "tmdbUpdatedAt": "2026-09-21T12:51:53.373Z"
+    "tmdbUpdatedAt": "2026-10-05T04:38:24.976Z",
+    "tmdbFetchedAt": "2026-10-05T04:38:24.976Z"
   },
   {
     "id": "teresa-laverty",
@@ -119735,7 +119781,8 @@
     "instagramId": "wendiemalick",
     "twitterId": "WendieMalick",
     "facebookId": "WendieMalickOfficial",
-    "tmdbUpdatedAt": "2026-09-20T16:21:13.430Z"
+    "tmdbUpdatedAt": "2026-10-05T04:38:25.105Z",
+    "tmdbFetchedAt": "2026-10-05T04:38:25.105Z"
   },
   {
     "id": "wendy-abbott",

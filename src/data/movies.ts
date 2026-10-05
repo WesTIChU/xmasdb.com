@@ -184616,6 +184616,220 @@ export const MOVIES: Movie[] = [
     "voteCount": 15,
     "tmdbUpdatedAt": "2026-10-04T16:24:12.765Z",
     "tmdbFetchedAt": "2026-10-04T16:24:12.765Z"
+  },
+  {
+    "id": "hallmark-2016-finding-father-christmas",
+    "slug": "finding-father-christmas",
+    "title": "Finding Father Christmas",
+    "year": 2016,
+    "brandId": "hallmark",
+    "releaseDate": "2016-11-13",
+    "synopsis": "Orphaned at a young age at Christmas, Miranda finds a clue that could unveil the truth about her father - and maybe a little something else will rekindle her Christmas spirit.",
+    "posterUrl": "/images/posters/421630.jpg",
+    "backdropUrl": "/images/backdrops/421630.jpg",
+    "cast": [
+      {
+        "actorId": "1143960",
+        "name": "Erin Krakow",
+        "character": "Miranda Carson",
+        "slug": "erin-krakow",
+        "tmdbPersonId": 1143960,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/8euXiEHmBwzV6NdwQ8dfwzFa7C7.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "1230713",
+        "name": "Niall Matter",
+        "character": "Ian McAndrick",
+        "slug": "niall-matter",
+        "tmdbPersonId": 1230713,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/9hlmypLILRkaEVOazFdg11nfsJm.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "61980",
+        "name": "Wendie Malick",
+        "character": "Margaret Whitcomb",
+        "slug": "wendie-malick",
+        "tmdbPersonId": 61980,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/4yDh5iu4Qyib35aXfo7SStFpnNC.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "59241",
+        "name": "P. Lynn Johnson",
+        "character": "Katherine McAndrick",
+        "slug": "p-lynn-johnson",
+        "tmdbPersonId": 59241,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/1dPKU858guimUQrSJlfKDOepGBM.jpg",
+        "order": 3
+      },
+      {
+        "actorId": "583061",
+        "name": "Michael Kopsa",
+        "character": "Andrew McAndrick",
+        "slug": "michael-kopsa",
+        "tmdbPersonId": 583061,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/eGoaXyQMd9mfAkhc6PqMhFxef5m.jpg",
+        "order": 4
+      },
+      {
+        "actorId": "64671",
+        "name": "Jim Thorburn",
+        "character": "Peter Whitcomb",
+        "slug": "jim-thorburn",
+        "tmdbPersonId": 64671,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/c52ByiN2cyUBvsBiveKmS4Jdkz.jpg",
+        "order": 5
+      },
+      {
+        "actorId": "210904",
+        "name": "Aliyah O'Brien",
+        "character": "Ellie Whitcomb",
+        "slug": "aliyah-o-brien",
+        "tmdbPersonId": 210904,
+        "order": 6
+      },
+      {
+        "actorId": "1927077",
+        "name": "Macie Juiles",
+        "character": "Julia Whitcomb",
+        "slug": "macie-juiles",
+        "tmdbPersonId": 1927077,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/1XNbEymreBHJqqQ7OluYC2s9R5p.jpg",
+        "order": 7
+      },
+      {
+        "actorId": "1134014",
+        "name": "Callum Seagram Airlie",
+        "character": "Mark Whitcomb",
+        "slug": "callum-seagram-airlie",
+        "tmdbPersonId": 1134014,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/i9kzWXWld03UOJSNM04TZDbr8iO.jpg",
+        "order": 8
+      },
+      {
+        "actorId": "1043662",
+        "name": "Jordana Largy",
+        "character": "Blair",
+        "slug": "jordana-largy",
+        "tmdbPersonId": 1043662,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/a6NAez2SywVsklnNzbkquFEmcST.jpg",
+        "order": 9
+      },
+      {
+        "actorId": "27112",
+        "name": "Terence Kelly",
+        "character": "Rick Torrance",
+        "slug": "terence-kelly",
+        "tmdbPersonId": 27112,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/2DGJYwQSZbbVvN4H65sTUe4zJ9b.jpg",
+        "order": 10
+      },
+      {
+        "actorId": "1572437",
+        "name": "Sasha Neuhaus",
+        "character": "Young Miranda",
+        "slug": "sasha-neuhaus",
+        "tmdbPersonId": 1572437,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/sAmuf1mLjeQDknv8Sdvs3aEMbVp.jpg",
+        "order": 11
+      },
+      {
+        "actorId": "1366830",
+        "name": "Jessie Fraser",
+        "character": "Eve Chester",
+        "slug": "jessie-fraser",
+        "tmdbPersonId": 1366830,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/cHfjr2EEj7soqRAkKiaeNv23jFW.jpg",
+        "order": 12
+      },
+      {
+        "actorId": "997197",
+        "name": "Nelson Wong",
+        "character": "Dr. Colter",
+        "slug": "nelson-wong",
+        "tmdbPersonId": 997197,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/kepIOIAtrCZBvw7TuFufyGqQoo5.jpg",
+        "order": 13
+      },
+      {
+        "actorId": "569210",
+        "name": "Bethany Brown",
+        "character": "Annie Jacobs",
+        "slug": "bethany-brown",
+        "tmdbPersonId": 569210,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/cPXNU3xZQP1tYhOkBdHwJqyI0lU.jpg",
+        "order": 14
+      }
+    ],
+    "director": "Terry Ingram",
+    "tmdbId": 421630,
+    "imdbId": "tt6245488",
+    "isComingSoon": false,
+    "status": "collection",
+    "originalTitle": "Finding Father Christmas",
+    "alternativeTitles": [
+      {
+        "title": "À la recherche de papa Noël",
+        "country": "BE"
+      }
+    ],
+    "runtimeMinutes": 84,
+    "genres": [
+      {
+        "id": 18,
+        "name": "Drama"
+      },
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "US",
+        "releaseDate": "2016-11-13T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "Hallmark Movies  & Mysteries "
+      }
+    ],
+    "crew": [
+      {
+        "id": 110468,
+        "name": "Terry Ingram",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/iJIumt1U6KknXM3rl9TIMLI5S7D.jpg",
+        "creditId": "58131d6fc3a3687a9d022d96"
+      },
+      {
+        "id": 239783,
+        "name": "David Golden",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "581fba83c3a3685550006bef"
+      }
+    ],
+    "trailers": [
+      {
+        "key": "4wS8bbzQDX0",
+        "site": "YouTube",
+        "type": "Trailer",
+        "name": "Preview",
+        "official": true
+      }
+    ],
+    "trailerYoutubeKey": "4wS8bbzQDX0",
+    "voteAverage": 6.2,
+    "voteCount": 73,
+    "tmdbUpdatedAt": "2026-10-05T04:38:23.570Z",
+    "tmdbFetchedAt": "2026-10-05T04:38:23.570Z"
   }
 ];
 
