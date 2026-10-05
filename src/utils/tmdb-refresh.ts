@@ -35,6 +35,7 @@ export function mergeTmdbMovie(movie: Movie, refreshed: Partial<Movie>, posterUr
     status: movie.status,
     isComingSoon: movie.isComingSoon,
     networkPremiereDate: movie.networkPremiereDate,
+    year: refreshed.releaseDate ? Number(refreshed.releaseDate.slice(0, 4)) || movie.year : movie.year,
     premiereDate: refreshed.releaseDate || movie.premiereDate,
     releaseDate: refreshed.releaseDate || movie.releaseDate,
     posterUrl: posterUrl || movie.posterUrl,

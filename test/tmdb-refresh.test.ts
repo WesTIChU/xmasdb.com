@@ -3,7 +3,7 @@ import fs from 'node:fs/promises';
 import os from 'node:os';
 import path from 'node:path';
 import { Movie } from '../src/types';
-import { normalizeTmdbAlternativeTitles } from '../src/utils/tmdb';
+import { normalizeTmdbAlternativeTitles, resolveTmdbReleaseDate } from '../src/utils/tmdb';
 import { mergeTmdbMovie, refreshTmdbMovie, selectPeopleRefreshMovies } from '../src/utils/tmdb-refresh';
 import { cacheLocalImage, createImageRefreshBudget } from '../src/utils/local-images';
 
@@ -18,6 +18,33 @@ assert.deepStrictEqual(
   [{ title: 'A Hot Cocoa Christmas', country: 'US' }],
   'TMDB alternative titles are normalized, deduplicated and exclude primary/original titles',
 );
+assert.equal(resolveTmdbReleaseDate('2011-06-21', [
+  { country: 'US', releaseDate: '2010-11-28T00:00:00.000Z', type: 6, note: 'CBS' },
+  { country: 'IT', releaseDate: '2011-06-21T00:00:00.000Z', type: 3 },
+], [{ id: 10770, name: 'TV Movie' }]), '2010-11-28', 'an earlier US TV premiere beats a later foreign theatrical release');
+assert.equal(resolveTmdbReleaseDate('2020-05-01', [{ country: 'US', releaseDate: '2020-05-01T00:00:00.000Z', type: 3 }], [{ id: 18, name: 'Drama' }]), '2020-05-01', 'normal US theatrical releases are preferred');
+assert.equal(resolveTmdbReleaseDate('2022-12-15', [
+  { country: 'US', releaseDate: '2022-12-15T00:00:00.000Z', type: 4 },
+  { country: 'US', releaseDate: '2023-12-01T00:00:00.000Z', type: 6 },
+], [{ id: 10770, name: 'TV Movie' }]), '2022-12-15', 'an earlier digital release beats a later US TV premiere');
+assert.equal(resolveTmdbReleaseDate('2022-12-15', [
+  { country: 'US', releaseDate: '2022-12-15T00:00:00.000Z', type: 4 },
+], [{ id: 10770, name: 'TV Movie' }]), '2022-12-15', 'US digital premieres are used when no US TV premiere exists');
+assert.equal(resolveTmdbReleaseDate('2024-11-01', [
+  { country: 'US', releaseDate: '2026-07-04T00:00:00.000Z', type: 6, note: 'Hallmark Channel' },
+], [{ id: 10770, name: 'TV Movie' }]), '2024-11-01', 'a later US network premiere does not replace the original release');
+assert.equal(resolveTmdbReleaseDate('2022-01-01', [
+  { country: 'US', releaseDate: '2021-01-03T00:00:00.000Z', type: 3 },
+  { country: 'US', releaseDate: '2020-12-20T00:00:00.000Z', type: 3 },
+], [{ id: 18, name: 'Drama' }]), '2020-12-20', 'the earliest legitimate US theatrical entry wins');
+assert.equal(resolveTmdbReleaseDate('2020-06-01', [{ country: 'GB', releaseDate: '2020-05-01T00:00:00.000Z', type: 3 }], [{ id: 18, name: 'Drama' }]), '2020-05-01', 'an earlier legitimate non-US release is not discarded');
+assert.equal(resolveTmdbReleaseDate('2020-06-01', undefined, [{ id: 18, name: 'Drama' }]), '2020-06-01', 'primary release date is the safe fallback without release data');
+assert.equal(resolveTmdbReleaseDate('not-a-date', [{ country: 'US', releaseDate: 'not-a-date', type: 6 }]), undefined, 'malformed release dates are ignored');
+const novemberChristmasReleaseDate = resolveTmdbReleaseDate('2011-06-21', [
+  { country: 'US', releaseDate: '2010-11-28T00:00:00.000Z', type: 6, note: 'CBS' },
+  { country: 'IT', releaseDate: '2011-06-21T00:00:00.000Z', type: 3 },
+], [{ id: 10770, name: 'TV Movie' }]);
+assert.equal(novemberChristmasReleaseDate, '2010-11-28', 'TMDB 52688 resolves to its US television premiere');
 
 const movie = {
   id: 'movie-1',
@@ -43,12 +70,17 @@ const merged = mergeTmdbMovie(movie, {
 }, '/images/posters/movie-1-new.jpg');
 assert.strictEqual(merged.releaseDate, '2026-11-01');
 assert.strictEqual(merged.premiereDate, '2026-11-01');
+assert.strictEqual(merged.year, 2026, 'refresh keeps the release year synchronized');
 assert.strictEqual(merged.networkPremiereDate, '2027-11-06', 'TMDB refresh preserves XmasDB network premiere metadata');
 assert.strictEqual(merged.synopsis, 'Old synopsis');
 assert.strictEqual(merged.posterUrl, '/images/posters/movie-1-new.jpg');
 assert.strictEqual(merged.brandId, 'hallmark');
 assert.strictEqual(merged.status, 'coming-soon');
 assert.strictEqual(merged.isComingSoon, true);
+const yearShifted = mergeTmdbMovie(movie, { releaseDate: novemberChristmasReleaseDate });
+assert.strictEqual(yearShifted.releaseDate, '2010-11-28');
+assert.strictEqual(yearShifted.year, 2010, 'a refreshed release date moves the movie year archive');
+assert.strictEqual(yearShifted.networkPremiereDate, movie.networkPremiereDate, 'release-date correction leaves network premiere untouched');
 const unchanged = mergeTmdbMovie(movie, { releaseDate: movie.releaseDate, synopsis: movie.synopsis }, movie.posterUrl);
 assert.notStrictEqual(unchanged, movie, 'successful unchanged TMDB data records a fetch timestamp');
 assert.ok(unchanged.tmdbFetchedAt, 'unchanged TMDB data records tmdbFetchedAt');

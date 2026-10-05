@@ -87,6 +87,29 @@ export function normalizeTmdbAlternativeTitles(
   return titles.length > 0 ? titles : undefined;
 }
 
+function releaseDateOnly(value: string | undefined): string | null {
+  if (!value) return null;
+  const date = value.match(/^\d{4}-\d{2}-\d{2}/)?.[0];
+  return date && !Number.isNaN(Date.parse(`${date}T00:00:00Z`)) ? date : null;
+}
+
+/** Selects the earliest credible original release without treating a later network airing as the movie's release. */
+export function resolveTmdbReleaseDate(
+  primaryReleaseDate: string | undefined,
+  releaseDates: ReleaseDateInfo[] | undefined,
+  genres?: Genre[],
+): string | undefined {
+  void genres;
+  const credibleTypes = new Set([2, 3, 4, 6]);
+  const dates = [
+    releaseDateOnly(primaryReleaseDate),
+    ...(releaseDates || [])
+      .filter((entry) => entry.type !== undefined && credibleTypes.has(entry.type))
+      .map((entry) => releaseDateOnly(entry.releaseDate)),
+  ].filter((date): date is string => Boolean(date));
+  return dates.sort()[0];
+}
+
 interface TmdbMovieSearchResponse {
   results?: Array<{ id: number; title?: string; release_date?: string }>;
 }
@@ -180,6 +203,7 @@ export async function fetchTmdbMovie(tmdbId: number, apiKey?: string): Promise<P
     const director = crew?.find((member) => member.job === 'Director')?.name;
     const alternativeTitles = normalizeTmdbAlternativeTitles(data.alternative_titles, data.title, data.original_title);
 
+    const resolvedReleaseDate = resolveTmdbReleaseDate(data.release_date, releaseDates, data.genres);
     return {
       tmdbId: data.id,
       imdbId: data.external_ids?.imdb_id || undefined,
@@ -187,7 +211,7 @@ export async function fetchTmdbMovie(tmdbId: number, apiKey?: string): Promise<P
       originalTitle: data.original_title,
       alternativeTitles,
       synopsis: data.overview,
-      releaseDate: data.release_date,
+      releaseDate: resolvedReleaseDate,
       runtimeMinutes: data.runtime || undefined,
       posterUrl: tmdbImageUrl(data.poster_path),
       backdropUrl: tmdbImageUrl(data.backdrop_path, 'w1280'),
