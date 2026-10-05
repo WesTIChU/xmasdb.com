@@ -32,8 +32,9 @@ assert.ok(facts.filter((fact) => fact.relatedActorIds?.length && fact.category !
 assert.ok(facts.filter((fact) => fact.relatedMovieIds?.length && ['movies', 'titles'].includes(fact.category)).every((fact) => fact.segments?.some((segment) => Boolean(segment.href))), 'named movie facts link to movie pages');
 const resolvedReleaseDate = (movie: Movie): string | null => getTriviaReleaseDateKey(movie);
 const decemberCount = MOVIES.filter((movie) => resolvedReleaseDate(movie)?.slice(5, 7) === '12').length;
+const octoberCount = MOVIES.filter((movie) => resolvedReleaseDate(movie)?.slice(5, 7) === '10').length;
 assert.ok(facts.find((fact) => fact.id === 'movies:december')?.text.includes(`${decemberCount} XmasDB movies`), 'historical aggregate counts are reproducible from past release records');
-assert.ok(facts.find((fact) => fact.id === 'calendar:this-month')?.text.includes('73 XmasDB movies'), 'catalogue-wide October distribution includes future October records');
+assert.ok(facts.find((fact) => fact.id === 'calendar:this-month')?.text.includes(`${octoberCount} XmasDB movies`), 'catalogue-wide October distribution includes future October records');
 assert.ok(facts.some((fact) => fact.category === 'co-stars'));
 assert.ok(facts.some((fact) => fact.category === 'characters'));
 
