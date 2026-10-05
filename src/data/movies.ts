@@ -184830,6 +184830,222 @@ export const MOVIES: Movie[] = [
     "voteCount": 73,
     "tmdbUpdatedAt": "2026-10-05T04:38:23.570Z",
     "tmdbFetchedAt": "2026-10-05T04:38:23.570Z"
+  },
+  {
+    "id": "hallmark-2010-the-santa-incident",
+    "slug": "the-santa-incident",
+    "title": "The Santa Incident",
+    "year": 2010,
+    "brandId": "hallmark",
+    "releaseDate": "2010-12-09",
+    "synopsis": "During a ride on his sleigh Santa is mistaken for an alien in a UFO. After an attack, he ends up seriously injured in a small town. Two children must help him, so Christmas is not jeopardized.",
+    "posterUrl": "/images/posters/112340.jpg",
+    "backdropUrl": "/images/backdrops/112340.jpg",
+    "cast": [
+      {
+        "actorId": "3126",
+        "name": "Ione Skye",
+        "character": "Joanna",
+        "slug": "ione-skye",
+        "tmdbPersonId": 3126,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/ye8qsi6fn51HW93c7065Jogbh9p.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "19974",
+        "name": "Greg Germann",
+        "character": "Erickson",
+        "slug": "greg-germann",
+        "tmdbPersonId": 19974,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/cRLbrKwasOiBj68pORvrZTPHRfB.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "2467",
+        "name": "James Cosmo",
+        "character": "Nick",
+        "slug": "james-cosmo",
+        "tmdbPersonId": 2467,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/4QZnZ3wyGALVuwZ70HdXZk4O14W.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "1221760",
+        "name": "Jonathan Kerrigan",
+        "character": "Hank",
+        "slug": "jonathan-kerrigan",
+        "tmdbPersonId": 1221760,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/sPe35vznVDxSZHiJZjlLVM27Pmz.jpg",
+        "order": 3
+      },
+      {
+        "actorId": "73288",
+        "name": "Michael McElhatton",
+        "character": "Ross",
+        "slug": "michael-mcelhatton",
+        "tmdbPersonId": 73288,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/aPjuV6N10zAJMr55lAIvnpdsNgE.jpg",
+        "order": 4
+      },
+      {
+        "actorId": "1118363",
+        "name": "Fionn O'Shea",
+        "character": "Hamley",
+        "slug": "fionn-o-shea",
+        "tmdbPersonId": 1118363,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/9N6urqHr74JaBVfV227Wj4aDHL6.jpg",
+        "order": 5
+      },
+      {
+        "actorId": "1866478",
+        "name": "Ali Lyons",
+        "character": "Sophia",
+        "slug": "ali-lyons",
+        "tmdbPersonId": 1866478,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/kLTFZ8eaEPFH7HU1DjsKVsDfBtp.jpg",
+        "order": 6
+      },
+      {
+        "actorId": "1021523",
+        "name": "Scott Graham",
+        "character": "Daniel",
+        "slug": "scott-graham",
+        "tmdbPersonId": 1021523,
+        "order": 7
+      },
+      {
+        "actorId": "2219030",
+        "name": "Sean McConaghy",
+        "character": "Cunnigham",
+        "slug": "sean-mcconaghy",
+        "tmdbPersonId": 2219030,
+        "order": 8
+      },
+      {
+        "actorId": "188454",
+        "name": "Jonathan White",
+        "character": "Dr. Kelly",
+        "slug": "jonathan-white",
+        "tmdbPersonId": 188454,
+        "order": 9
+      },
+      {
+        "actorId": "2565726",
+        "name": "Dominique Monot",
+        "character": "Mr Renaud",
+        "slug": "dominique-monot",
+        "tmdbPersonId": 2565726,
+        "order": 10
+      },
+      {
+        "actorId": "1899575",
+        "name": "Jordan Brown",
+        "character": "Parker",
+        "slug": "jordan-brown",
+        "tmdbPersonId": 1899575,
+        "order": 11
+      },
+      {
+        "actorId": "1724124",
+        "name": "Kevin Fletcher",
+        "character": "Lionel",
+        "slug": "kevin-fletcher",
+        "tmdbPersonId": 1724124,
+        "order": 12
+      },
+      {
+        "actorId": "2565728",
+        "name": "Clodagh Reid",
+        "character": "Clarisa (uncredited)",
+        "slug": "clodagh-reid",
+        "tmdbPersonId": 2565728,
+        "order": 13
+      }
+    ],
+    "director": "Yelena Lanskaya",
+    "tmdbId": 112340,
+    "imdbId": "tt1761007",
+    "isComingSoon": false,
+    "status": "collection",
+    "originalTitle": "The Santa Incident",
+    "alternativeTitles": [
+      {
+        "title": "Sauvez Le Père Noël !",
+        "country": "FR"
+      },
+      {
+        "title": "Die Akte Weihnachtsmann",
+        "country": "DE"
+      }
+    ],
+    "runtimeMinutes": 88,
+    "genres": [
+      {
+        "id": 10751,
+        "name": "Family"
+      },
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "DE",
+        "releaseDate": "2011-12-21T00:00:00.000Z",
+        "type": 6,
+        "certification": "0",
+        "note": ""
+      },
+      {
+        "country": "FR",
+        "releaseDate": "2011-12-20T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": ""
+      },
+      {
+        "country": "US",
+        "releaseDate": "2010-12-09T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "Hallmark"
+      }
+    ],
+    "crew": [
+      {
+        "id": 139000,
+        "name": "Yelena Lanskaya",
+        "job": "Director",
+        "department": "Directing",
+        "creditId": "52fe4b15c3a36847f81f18ab"
+      },
+      {
+        "id": 1175245,
+        "name": "Jeffrey Scott Simmons",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "586d540992514143150003ae"
+      }
+    ],
+    "trailers": [
+      {
+        "key": "aVM6hjQy7V4",
+        "site": "YouTube",
+        "type": "Teaser",
+        "name": "EXCLUSIVE - The Santa Incident - Hallmark Channel",
+        "official": true
+      }
+    ],
+    "trailerYoutubeKey": "aVM6hjQy7V4",
+    "voteAverage": 4.6,
+    "voteCount": 12,
+    "tmdbUpdatedAt": "2026-10-05T05:47:02.284Z",
+    "tmdbFetchedAt": "2026-10-05T05:47:02.284Z"
   }
 ];
 
