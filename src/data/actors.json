@@ -16501,8 +16501,9 @@
     "imdbPersonId": "nm0244058",
     "gender": "Male",
     "knownForDepartment": "Writing",
-    "knownCredits": 15,
-    "tmdbUpdatedAt": "2026-09-22T20:53:22.127Z"
+    "knownCredits": 16,
+    "tmdbUpdatedAt": "2026-10-06T16:59:18.619Z",
+    "tmdbFetchedAt": "2026-10-06T16:59:18.619Z"
   },
   {
     "id": "brooke-burfitt",
@@ -41147,11 +41148,12 @@
     "imdbPersonId": "nm0314754",
     "gender": "Male",
     "knownForDepartment": "Acting",
-    "knownCredits": 76,
+    "knownCredits": 77,
     "alsoKnownAs": [
       "Frank Garrish"
     ],
-    "tmdbUpdatedAt": "2026-09-20T16:20:41.049Z"
+    "tmdbUpdatedAt": "2026-10-06T17:01:45.206Z",
+    "tmdbFetchedAt": "2026-10-06T17:01:45.206Z"
   },
   {
     "id": "2344720",
@@ -105207,9 +105209,9 @@
     "profileUrl": "/images/people/6431425.webp",
     "imdbPersonId": "nm17778649",
     "knownForDepartment": "Acting",
-    "knownCredits": 4,
-    "tmdbUpdatedAt": "2026-10-06T16:08:31.069Z",
-    "tmdbFetchedAt": "2026-10-06T16:08:31.069Z"
+    "knownCredits": 3,
+    "tmdbUpdatedAt": "2026-10-06T17:08:19.847Z",
+    "tmdbFetchedAt": "2026-10-06T17:08:19.847Z"
   },
   {
     "id": "3755743",
@@ -105824,14 +105826,14 @@
     "imdbPersonId": "nm0000276",
     "gender": "Male",
     "knownForDepartment": "Acting",
-    "knownCredits": 214,
+    "knownCredits": 215,
     "alsoKnownAs": [
       "Sean Patrick Duke"
     ],
     "instagramId": "seanastin",
     "facebookId": "SeanAstinPublic",
-    "tmdbUpdatedAt": "2026-10-06T16:08:35.928Z",
-    "tmdbFetchedAt": "2026-10-06T16:08:35.928Z"
+    "tmdbUpdatedAt": "2026-10-06T17:08:23.594Z",
+    "tmdbFetchedAt": "2026-10-06T17:08:23.594Z"
   },
   {
     "id": "sean-bexton",
@@ -107446,9 +107448,9 @@
     "tmdbPersonId": 1028741,
     "imdbPersonId": "nm0860704",
     "knownForDepartment": "Acting",
-    "knownCredits": 6,
-    "tmdbUpdatedAt": "2026-10-06T16:08:46.326Z",
-    "tmdbFetchedAt": "2026-10-06T16:08:46.326Z"
+    "knownCredits": 5,
+    "tmdbUpdatedAt": "2026-10-06T17:08:33.684Z",
+    "tmdbFetchedAt": "2026-10-06T17:08:33.684Z"
   },
   {
     "id": "shaw-madson",
