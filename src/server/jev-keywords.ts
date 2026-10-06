@@ -46,6 +46,7 @@ const USEFUL_SINGLE_KEYWORDS = new Set([
   'wedding', 'parade', 'fundraiser', 'eviction',
 ]);
 const LOW_USEFULNESS_PHRASES = new Set(['hand painted', 'overworked surgeon', 'beloved grandmother']);
+const LOW_VALUE_PHRASES = new Set(['holiday season', 'loved one', 'loved ones', 'the week', 'costly mistake', 'costly mistakes']);
 const INCIDENTAL_RELATIONSHIP_PHRASES = new Set(['ex boyfriend', 'boyfriend', 'girlfriend', 'husband', 'wife', 'parent', 'son', 'daughter', 'mentor']);
 const MEANINGFUL_QUALIFIER_OVERRIDES: Record<string, RegExp[]> = {
   producer: [/\btelevision producer\b/i],
@@ -135,15 +136,19 @@ export function getJevKeywordClassifierPrompt(): string {
     'Use only the supplied synopsis. Do not browse, use IMDb, use outside knowledge, or infer facts from the title or genre.',
     'Find useful, concrete factual story concepts explicitly stated or unambiguously established by the synopsis.',
     'Before selecting a concept, ask: would a user click this keyword to browse other Christmas movies sharing this concept? If not, reject it.',
+    'Extract all independently useful discovery concepts that satisfy these rules. Do not stop after finding one strong keyword. Multiple concepts from the same sentence are allowed and expected when each is independently useful.',
+    'Useful categories include occupations and professions; businesses and meaningful venues; activities, hobbies and sports; meaningful relationships; important plot situations and events; meaningful objects; specific locations and settings; institutions and industries; and central goals or problems.',
     'Prefer the most specific meaningful searchable concept supported by the synopsis, not a literal fragment: television producer becomes television producer (not producer), public skating rink becomes skating rink (not rink), Christmas market becomes Christmas market (not market), and hot chocolate becomes hot chocolate (not chocolate).',
     'Preserve a qualifier only when it identifies the type or domain of the concept. Discard merely descriptive or emotional qualifiers: overworked surgeon becomes surgeon, beloved grandmother becomes grandmother, and hand-painted ornaments becomes ornaments.',
+    'A single synopsis can support several concepts: a lawyer running a family restaurant threatened with demolition can support lawyer, restaurant, family business, and demolition. Family ownership may support family business in addition to the venue. If restaurant and café describe the same venue, choose one canonical useful concept rather than returning both.',
     'Reject incidental role or relationship nouns and action fragments when they are not useful discovery concepts: heir, girlfriend, pose, closing, market, rink, chocolate, and hand-painted should not stand alone.',
+    'Reject Christmas boilerplate and generic circumstances such as holiday season, loved ones, the week, mistakes, father, and similar words unless a more specific useful concept is clearly established.',
     'Return only concepts that are not already represented by the supplied existing keywords.',
     'Treat capitalization, punctuation, accents, and trivial singular/plural differences as matches.',
     'Words inside phrases are not automatically separate concepts: high school crush is not school, real estate developer is not estate, work their magic is not magic, and travels home is not travel.',
     'Do not simply reproduce genres or generic terms such as movie, romance, comedy, drama, man, woman, family, relationship, love, life, town, or work.',
-    'The application supplies candidate concepts with supporting synopsis phrases. Decide each candidate independently and conservatively.',
-    'Be conservative. Candidates that are names, generic terms, genres, phrase fragments, or merely plausible should be false. No selected candidate means an empty newKeywords result.',
+    'The application supplies candidate concepts with supporting synopsis phrases. Decide every candidate independently and conservatively; do not use one accepted concept as a reason to omit other valid candidates.',
+    'Be conservative about evidence, not artificially sparse about results. Candidates that are names, generic terms, genres, phrase fragments, or merely plausible should be false. No selected candidate means an empty newKeywords result.',
     'There is no deletion, rejection, replacement, or existing-keyword decision.',
   ].join('\n');
 }
@@ -169,6 +174,7 @@ export function validateJevKeywordResult(raw: unknown, input: JevKeywordClassifi
     const normalizedKeyword = normalizeJevKeyword(proposal.keyword);
     if (!normalizedKeyword) { reject('Keyword normalizes to empty.'); continue; }
     if (LOW_VALUE_KEYWORDS.has(normalizedKeyword)) { reject(`Low-value or generic keyword rejected: ${proposal.keyword}.`); continue; }
+    if (LOW_VALUE_PHRASES.has(normalizedKeyword)) { reject(`Generic boilerplate phrase rejected: ${proposal.keyword}.`); continue; }
     if (LOW_USEFULNESS_PHRASES.has(normalizedKeyword)) { reject(`Low-usefulness descriptive phrase rejected: ${proposal.keyword}.`); continue; }
     if (INCIDENTAL_RELATIONSHIP_PHRASES.has(normalizedKeyword)) { reject(`Incidental role or relationship rejected: ${proposal.keyword}.`); continue; }
     if (MEANINGFUL_QUALIFIER_OVERRIDES[normalizedKeyword]?.some((pattern) => pattern.test(input.synopsis))) { reject(`Generic keyword superseded by a meaningful qualifier: ${proposal.keyword}.`); continue; }
@@ -206,9 +212,9 @@ export class OpenRouterJevKeywordClassifier implements JevKeywordClassifier {
     const candidates = buildJevKeywordCandidates(input);
     const questions = Object.fromEntries(candidates.map((candidate, index) => [`candidate_${index}`, {
       type: 'noul',
-      instructions: `Is “${candidate.keyword}” a useful, specific, searchable story concept that a user would click to browse other Christmas movies, explicitly stated or unambiguously established by the synopsis, rather than a generic term, genre, incidental noun, or fragment of a phrase?${candidate.keyword === 'family business' ? ' A family restaurant or family shop is sufficient evidence for the family business concept.' : ''}${candidate.keyword === 'cafe' ? ' A specifically named café is a useful searchable setting.' : ''}`,
+      instructions: `Answer this candidate independently. Do not compare candidates, rank them, or select only the strongest one. A movie may and should have several true answers. Is “${candidate.keyword}” a useful, specific, searchable story concept that a user would click to browse other Christmas movies, explicitly stated or unambiguously established by the synopsis, rather than a generic term, genre, incidental noun, or fragment of a phrase?${candidate.keyword === 'family business' ? ' A family restaurant or family shop is sufficient evidence for the family business concept.' : ''}${candidate.keyword === 'cafe' ? ' A specifically named café is a useful searchable setting; if restaurant and café describe the same venue, do not select both.' : ''}${candidate.keyword === 'lawyer' ? ' An explicitly stated occupation such as lawyer is a valid searchable concept.' : ''}${candidate.keyword === 'restaurant' ? ' A central business or meaningful venue such as a restaurant is a valid searchable concept.' : ''}${candidate.keyword === 'demolition' ? ' An explicitly central plot problem such as a venue being slated for demolition is a valid searchable event/problem concept.' : ''}`,
       criteria: {
-        true: `The synopsis supports ${candidate.keyword} as a useful concept and it is not already covered by the existing keywords.`,
+        true: `The synopsis supports ${candidate.keyword} as a useful concept and it is not already covered by the existing keywords. Mark true independently even when other candidates are also true.`,
         false: `The synopsis does not support ${candidate.keyword}, the concept is generic or a genre, it is only a phrase fragment, or an existing keyword already covers it.`,
       },
     }]));

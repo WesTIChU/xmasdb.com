@@ -10,7 +10,7 @@ import {
 import { normalizeJevKeyword } from '../utils/keyword-identity';
 import { writeFileAtomically } from '../utils/atomic-file';
 
-export const JEV_KEYWORD_CLASSIFIER_VERSION = 'jev-keywords-v1';
+export const JEV_KEYWORD_CLASSIFIER_VERSION = 'jev-keywords-v2';
 export const JEV_KEYWORD_CHECKPOINT_PATH = path.join(
   process.env.XMASDB_DATA_DIR?.trim() || path.join(process.cwd(), 'data'),
   'jev-keyword-classification-checkpoint.json',

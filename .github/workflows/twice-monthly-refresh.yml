@@ -42,8 +42,6 @@ jobs:
       - name: Refresh local TMDB metadata and images
         env:
           TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
-          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
-          OPENROUTER_MODEL: ${{ secrets.OPENROUTER_MODEL }}
           R2_ACCOUNT_ID: ${{ secrets.R2_ACCOUNT_ID }}
           R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
           R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
@@ -85,5 +83,51 @@ jobs:
             echo "No TMDB metadata or artwork changes to commit."
           else
             git commit -m "Refresh TMDB metadata"
+            .github/scripts/push-generated-commit.sh origin main
+          fi
+
+  jev-keywords:
+    needs: refresh
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Check out latest catalogue
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 1
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Restore Jev checkpoint
+        run: |
+          mkdir -p data
+          if [ -f src/data/jev-keyword-classification-checkpoint.json ]; then cp src/data/jev-keyword-classification-checkpoint.json data/jev-keyword-classification-checkpoint.json; fi
+
+      - name: Refresh Jev Keywords
+        env:
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          OPENROUTER_MODEL: ${{ secrets.OPENROUTER_MODEL }}
+        run: npm run refresh:jev-keywords
+
+      - name: Persist Jev catalogue and checkpoint
+        run: |
+          if [ -f data/jev-keyword-classification-checkpoint.json ]; then cp data/jev-keyword-classification-checkpoint.json src/data/jev-keyword-classification-checkpoint.json; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/data/movies.ts src/data/jev-keyword-classification-checkpoint.json
+          if git diff --cached --quiet; then
+            echo "No Jev catalogue or checkpoint changes to commit."
+          else
+            git commit -m "Refresh Jev keywords"
             .github/scripts/push-generated-commit.sh origin main
           fi
