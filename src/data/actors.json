@@ -3031,9 +3031,10 @@
     "imdbPersonId": "nm2333547",
     "gender": "Female",
     "knownForDepartment": "Acting",
-    "knownCredits": 10,
+    "knownCredits": 11,
     "instagramId": "alexxandra_evans",
-    "tmdbUpdatedAt": "2026-09-20T16:19:04.928Z"
+    "tmdbUpdatedAt": "2026-10-06T13:45:51.224Z",
+    "tmdbFetchedAt": "2026-10-06T13:45:51.224Z"
   },
   {
     "id": "2109185",
@@ -7020,8 +7021,9 @@
     "biography": "Best known for being the Head Coach of the Kansas City Chiefs where in 2020 he won a Super Bowl.",
     "gender": "Male",
     "knownForDepartment": "Acting",
-    "knownCredits": 9,
-    "tmdbUpdatedAt": "2026-09-20T16:17:08.486Z"
+    "knownCredits": 10,
+    "tmdbUpdatedAt": "2026-10-06T13:46:13.092Z",
+    "tmdbFetchedAt": "2026-10-06T13:46:13.092Z"
   },
   {
     "id": "andy-rukes",
@@ -9865,15 +9867,15 @@
     "imdbPersonId": "nm11329049",
     "gender": "Female",
     "knownForDepartment": "Acting",
-    "knownCredits": 7,
+    "knownCredits": 8,
     "alsoKnownAs": [
       "Ashley Beloat",
       "A. BeLoat"
     ],
     "instagramId": "ashleybeloat",
     "facebookId": "ashley.beloat",
-    "tmdbUpdatedAt": "2026-09-25T21:37:13.071Z",
-    "tmdbFetchedAt": "2026-09-25T21:37:13.071Z"
+    "tmdbUpdatedAt": "2026-10-06T13:46:29.119Z",
+    "tmdbFetchedAt": "2026-10-06T13:46:29.119Z"
   },
   {
     "id": "ashley-bryant",
@@ -10882,8 +10884,9 @@
     "imdbPersonId": "nm5118453",
     "gender": "Female",
     "knownForDepartment": "Acting",
-    "knownCredits": 13,
-    "tmdbUpdatedAt": "2026-09-20T16:19:45.385Z"
+    "knownCredits": 15,
+    "tmdbUpdatedAt": "2026-10-06T13:46:34.904Z",
+    "tmdbFetchedAt": "2026-10-06T13:46:34.904Z"
   },
   {
     "id": "ava-sophia-boardman",
@@ -11302,8 +11305,9 @@
     "imdbPersonId": "nm7560174",
     "gender": "Female",
     "knownForDepartment": "Acting",
-    "knownCredits": 4,
-    "tmdbUpdatedAt": "2026-09-20T16:19:16.043Z"
+    "knownCredits": 5,
+    "tmdbUpdatedAt": "2026-10-06T13:46:37.253Z",
+    "tmdbFetchedAt": "2026-10-06T13:46:37.253Z"
   },
   {
     "id": "3143200",
@@ -15405,11 +15409,13 @@
     "profileUrl": "/images/people/25730.webp",
     "birthday": "1975-05-11",
     "placeOfBirth": "Santa Cruz, California, USA",
+    "biography": "Brian Caspe – American actor, born 11 May 1975 in Santa Cruz, California. Has lived in Prague for nearly two decades.\n\nHis most notable film roles include Hellboy (2004), The Illusionist (2006), Wanted (2008), Mission: Impossible – Ghost Protocol (2011), The Martian (2015), Anthropoid (2016), and Jojo Rabbit (2019).\n\nOn television he appeared in Carnival Row (2019), Foundation (2021), and Spy/Master (2023) as George Tenet. He also provided voice work for Baldur's Gate 3 (2023) and Kingdom Come: Deliverance II (2025).",
     "imdbPersonId": "nm1340370",
     "gender": "Male",
     "knownForDepartment": "Acting",
     "knownCredits": 59,
-    "tmdbUpdatedAt": "2026-09-22T20:53:48.123Z"
+    "tmdbUpdatedAt": "2026-10-06T13:47:00.284Z",
+    "tmdbFetchedAt": "2026-10-06T13:47:00.284Z"
   },
   {
     "id": "brian-cook",
@@ -19367,14 +19373,14 @@
     "imdbPersonId": "nm0000402",
     "gender": "Female",
     "knownForDepartment": "Acting",
-    "knownCredits": 173,
+    "knownCredits": 174,
     "alsoKnownAs": [
       "Carrie Frances Fisher"
     ],
     "twitterId": "carrieffisher",
     "facebookId": "carrieffisher",
-    "tmdbUpdatedAt": "2026-10-05T08:11:06.748Z",
-    "tmdbFetchedAt": "2026-10-05T08:11:06.748Z"
+    "tmdbUpdatedAt": "2026-10-06T13:47:21.676Z",
+    "tmdbFetchedAt": "2026-10-06T13:47:21.676Z"
   },
   {
     "id": "33350",
@@ -20368,15 +20374,15 @@
     "imdbPersonId": "nm13604121",
     "gender": "Male",
     "knownForDepartment": "Acting",
-    "knownCredits": 8,
+    "knownCredits": 9,
     "alsoKnownAs": [
       "Cayman David Cardiff"
     ],
     "instagramId": "caymancardiff",
     "twitterId": "@CaymanCardiffX",
     "facebookId": "@caymancardifftalent",
-    "tmdbUpdatedAt": "2026-10-01T13:43:36.954Z",
-    "tmdbFetchedAt": "2026-10-01T13:43:36.954Z"
+    "tmdbUpdatedAt": "2026-10-06T13:47:26.157Z",
+    "tmdbFetchedAt": "2026-10-06T13:47:26.157Z"
   },
   {
     "id": "cc-king",
@@ -23724,14 +23730,14 @@
     "imdbPersonId": "nm0415066",
     "gender": "Male",
     "knownForDepartment": "Acting",
-    "knownCredits": 95,
+    "knownCredits": 94,
     "alsoKnownAs": [
       "Chris Jacot"
     ],
     "instagramId": "chris__jacot",
     "twitterId": "chrisjacot",
-    "tmdbUpdatedAt": "2026-10-01T10:20:42.009Z",
-    "tmdbFetchedAt": "2026-10-01T10:20:42.009Z"
+    "tmdbUpdatedAt": "2026-10-06T13:47:44.810Z",
+    "tmdbFetchedAt": "2026-10-06T13:47:44.810Z"
   },
   {
     "id": "christopher-james",
@@ -23787,14 +23793,15 @@
     "imdbPersonId": "nm0000502",
     "gender": "Male",
     "knownForDepartment": "Acting",
-    "knownCredits": 242,
+    "knownCredits": 241,
     "alsoKnownAs": [
       "Chris Lloyd",
       "Christopher Allen Lloyd"
     ],
     "instagramId": "mrchristopherlloyd",
     "facebookId": "thechristopherlloyd",
-    "tmdbUpdatedAt": "2026-09-20T16:18:06.497Z"
+    "tmdbUpdatedAt": "2026-10-06T13:47:45.675Z",
+    "tmdbFetchedAt": "2026-10-06T13:47:45.675Z"
   },
   {
     "id": "4425492",
@@ -24693,11 +24700,11 @@
     "imdbPersonId": "nm0274750",
     "gender": "Female",
     "knownForDepartment": "Acting",
-    "knownCredits": 53,
+    "knownCredits": 54,
     "instagramId": "claudiaferri_tales",
     "twitterId": "Claudia_Ferri",
-    "tmdbUpdatedAt": "2026-10-01T09:09:33.475Z",
-    "tmdbFetchedAt": "2026-10-01T09:09:33.475Z"
+    "tmdbUpdatedAt": "2026-10-06T13:47:50.448Z",
+    "tmdbFetchedAt": "2026-10-06T13:47:50.448Z"
   },
   {
     "id": "70115",
@@ -30868,12 +30875,13 @@
     "imdbPersonId": "nm11967053",
     "gender": "Male",
     "knownForDepartment": "Acting",
-    "knownCredits": 7,
+    "knownCredits": 8,
     "alsoKnownAs": [
       "Daxton Grey Gujral",
       "Daxton Grey"
     ],
-    "tmdbUpdatedAt": "2026-09-20T16:18:08.803Z"
+    "tmdbUpdatedAt": "2026-10-06T13:48:21.733Z",
+    "tmdbFetchedAt": "2026-10-06T13:48:21.733Z"
   },
   {
     "id": "1676320",
@@ -31811,12 +31819,12 @@
     "imdbPersonId": "nm9270123",
     "gender": "Female",
     "knownForDepartment": "Acting",
-    "knownCredits": 23,
+    "knownCredits": 24,
     "alsoKnownAs": [
       "Delia Chambers"
     ],
-    "tmdbUpdatedAt": "2026-10-01T14:12:23.026Z",
-    "tmdbFetchedAt": "2026-10-01T14:12:23.026Z"
+    "tmdbUpdatedAt": "2026-10-06T13:48:26.597Z",
+    "tmdbFetchedAt": "2026-10-06T13:48:26.597Z"
   },
   {
     "id": "della-reese",
@@ -36099,14 +36107,15 @@
     "imdbPersonId": "nm0363699",
     "gender": "Female",
     "knownForDepartment": "Acting",
-    "knownCredits": 51,
+    "knownCredits": 52,
     "alsoKnownAs": [
       "Elizabeth Harnois",
       "الیزابت هارنویس"
     ],
     "instagramId": "lisabones2",
     "twitterId": "ElisabethHarnoi",
-    "tmdbUpdatedAt": "2026-09-20T16:20:38.394Z"
+    "tmdbUpdatedAt": "2026-10-06T13:48:48.421Z",
+    "tmdbFetchedAt": "2026-10-06T13:48:48.421Z"
   },
   {
     "id": "126932",
@@ -37362,7 +37371,7 @@
     "photoUrl": "/images/people/1526124.webp",
     "profileUrl": "/images/people/1526124.webp",
     "birthday": "1989-07-04",
-    "placeOfBirth": "Canada",
+    "placeOfBirth": "Listowel, Ontario, Canada",
     "biography": "Emily Coutts is an Canadian actress. She lived in Toronto while earning her BFA in acting at York University. As an actress, she first appeared in 2011 in The Bright Side of the Moon. Among her movies are Crimson Peak (2015) and the shorts Bullet-Headed, Satisfaction, As I Like Her, Cherry, Can't Close a Painted Eye, 3-Way (Not Calling) and Come Back. She also produced one movie she appeared in, Barn Wedding in 2015. She is best known for playing Helmsman, Keyla Detmer on Star Trek Discovery.",
     "imdbPersonId": "nm2956530",
     "gender": "Female",
@@ -37373,8 +37382,8 @@
     ],
     "instagramId": "couttsemily",
     "twitterId": "couttsemily",
-    "tmdbUpdatedAt": "2026-10-01T10:28:09.058Z",
-    "tmdbFetchedAt": "2026-10-01T10:28:09.058Z"
+    "tmdbUpdatedAt": "2026-10-06T13:48:54.227Z",
+    "tmdbFetchedAt": "2026-10-06T13:48:54.227Z"
   },
   {
     "id": "emily-delahunty",
@@ -39038,13 +39047,14 @@
     "imdbPersonId": "nm2814621",
     "gender": "Female",
     "knownForDepartment": "Acting",
-    "knownCredits": 27,
+    "knownCredits": 28,
     "alsoKnownAs": [
       "Έριν Μπέθια"
     ],
     "instagramId": "erinbethea",
     "facebookId": "ErinBetheaActress",
-    "tmdbUpdatedAt": "2026-09-21T13:01:11.074Z"
+    "tmdbUpdatedAt": "2026-10-06T13:49:02.288Z",
+    "tmdbFetchedAt": "2026-10-06T13:49:02.288Z"
   },
   {
     "id": "erin-boyes",
@@ -41088,12 +41098,12 @@
     "imdbPersonId": "nm0189943",
     "gender": "Male",
     "knownForDepartment": "Acting",
-    "knownCredits": 55,
+    "knownCredits": 56,
     "alsoKnownAs": [
       "Frank Crudelle"
     ],
-    "tmdbUpdatedAt": "2026-10-02T17:45:48.719Z",
-    "tmdbFetchedAt": "2026-10-02T17:45:48.719Z"
+    "tmdbUpdatedAt": "2026-10-06T13:49:13.191Z",
+    "tmdbFetchedAt": "2026-10-06T13:49:13.191Z"
   },
   {
     "id": "1331190",
@@ -43547,12 +43557,12 @@
     "imdbPersonId": "nm0386215",
     "gender": "Female",
     "knownForDepartment": "Acting",
-    "knownCredits": 52,
+    "knownCredits": 53,
     "alsoKnownAs": [
       "Gina Tomoko Hiraizumi"
     ],
-    "tmdbUpdatedAt": "2026-10-01T13:43:36.789Z",
-    "tmdbFetchedAt": "2026-10-01T13:43:36.789Z"
+    "tmdbUpdatedAt": "2026-10-06T13:49:25.757Z",
+    "tmdbFetchedAt": "2026-10-06T13:49:25.757Z"
   },
   {
     "id": "gina-holden",
@@ -47880,12 +47890,13 @@
     "imdbPersonId": "nm8192698",
     "gender": "Female",
     "knownForDepartment": "Acting",
-    "knownCredits": 12,
+    "knownCredits": 13,
     "alsoKnownAs": [
       "ایندیا فاولر"
     ],
     "instagramId": "_indiafowler",
-    "tmdbUpdatedAt": "2026-09-20T16:18:38.024Z"
+    "tmdbUpdatedAt": "2026-10-06T13:49:47.402Z",
+    "tmdbFetchedAt": "2026-10-06T13:49:47.402Z"
   },
   {
     "id": "india-shaw-smith",
@@ -48865,12 +48876,12 @@
     "imdbPersonId": "nm14327421",
     "gender": "Male",
     "knownForDepartment": "Acting",
-    "knownCredits": 8,
+    "knownCredits": 9,
     "alsoKnownAs": [
       "Jack Dylan Greig"
     ],
-    "tmdbUpdatedAt": "2026-09-25T21:37:17.147Z",
-    "tmdbFetchedAt": "2026-09-25T21:37:17.147Z"
+    "tmdbUpdatedAt": "2026-10-06T13:49:52.358Z",
+    "tmdbFetchedAt": "2026-10-06T13:49:52.358Z"
   },
   {
     "id": "jack-griffo",
@@ -50238,13 +50249,13 @@
     "imdbPersonId": "nm0181920",
     "gender": "Male",
     "knownForDepartment": "Acting",
-    "knownCredits": 192,
+    "knownCredits": 191,
     "alsoKnownAs": [
       "Джеймс Космо",
       "ஜேம்ஸ் காஸ்மோ"
     ],
-    "tmdbUpdatedAt": "2026-10-01T09:27:29.995Z",
-    "tmdbFetchedAt": "2026-10-01T09:27:29.995Z"
+    "tmdbUpdatedAt": "2026-10-06T13:49:59.570Z",
+    "tmdbFetchedAt": "2026-10-06T13:49:59.570Z"
   },
   {
     "id": "1099002",
@@ -50503,8 +50514,9 @@
     "imdbPersonId": "nm1535129",
     "gender": "Male",
     "knownForDepartment": "Acting",
-    "knownCredits": 19,
-    "tmdbUpdatedAt": "2026-09-20T16:18:51.756Z"
+    "knownCredits": 20,
+    "tmdbUpdatedAt": "2026-10-06T13:50:00.664Z",
+    "tmdbFetchedAt": "2026-10-06T13:50:00.664Z"
   },
   {
     "id": "james-jamison",
@@ -50663,13 +50675,14 @@
     "imdbPersonId": "nm0531762",
     "gender": "Male",
     "knownForDepartment": "Acting",
-    "knownCredits": 67,
+    "knownCredits": 68,
     "alsoKnownAs": [
       "James G. MacDonald",
       "James McDonald",
       "James Gordon MacDonald"
     ],
-    "tmdbUpdatedAt": "2026-09-20T16:19:50.954Z"
+    "tmdbUpdatedAt": "2026-10-06T13:50:01.799Z",
+    "tmdbFetchedAt": "2026-10-06T13:50:01.799Z"
   },
   {
     "id": "james-millington",
@@ -54509,7 +54522,7 @@
     "imdbPersonId": "nm0001349",
     "gender": "Female",
     "knownForDepartment": "Acting",
-    "knownCredits": 93,
+    "knownCredits": 94,
     "alsoKnownAs": [
       "Love",
       "JLove",
@@ -54518,8 +54531,8 @@
     "instagramId": "jenniferlovehewitt",
     "twitterId": "TheReal_Jlh",
     "facebookId": "JLHOfficial",
-    "tmdbUpdatedAt": "2026-10-04T07:59:27.056Z",
-    "tmdbFetchedAt": "2026-10-04T07:59:27.056Z"
+    "tmdbUpdatedAt": "2026-10-06T13:50:22.347Z",
+    "tmdbFetchedAt": "2026-10-06T13:50:22.347Z"
   },
   {
     "id": "228825",
@@ -57271,8 +57284,9 @@
     "imdbPersonId": "nm0546756",
     "gender": "Female",
     "knownForDepartment": "Directing",
-    "knownCredits": 25,
-    "tmdbUpdatedAt": "2026-09-22T20:53:37.401Z"
+    "knownCredits": 26,
+    "tmdbUpdatedAt": "2026-10-06T13:50:36.670Z",
+    "tmdbFetchedAt": "2026-10-06T13:50:36.670Z"
   },
   {
     "id": "jody-quine",
@@ -58514,9 +58528,9 @@
     "imdbPersonId": "nm0438127",
     "gender": "Male",
     "knownForDepartment": "Acting",
-    "knownCredits": 172,
-    "tmdbUpdatedAt": "2026-10-01T09:27:29.050Z",
-    "tmdbFetchedAt": "2026-10-01T09:27:29.050Z"
+    "knownCredits": 173,
+    "tmdbUpdatedAt": "2026-10-06T13:50:43.113Z",
+    "tmdbFetchedAt": "2026-10-06T13:50:43.113Z"
   },
   {
     "id": "john-koensgen",
@@ -59965,8 +59979,9 @@
     "name": "Jordan Block",
     "tmdbPersonId": 2217295,
     "knownForDepartment": "Acting",
-    "knownCredits": 2,
-    "tmdbUpdatedAt": "2026-09-22T20:53:49.712Z"
+    "knownCredits": 3,
+    "tmdbUpdatedAt": "2026-10-06T13:50:50.058Z",
+    "tmdbFetchedAt": "2026-10-06T13:50:50.058Z"
   },
   {
     "id": "jordan-bridges",
@@ -64681,6 +64696,8 @@
     "slug": "kathleen-laskey",
     "name": "Kathleen Laskey",
     "tmdbPersonId": 214006,
+    "photoUrl": "/images/people/214006.webp",
+    "profileUrl": "/images/people/214006.webp",
     "imdbPersonId": "nm0489632",
     "gender": "Female",
     "knownForDepartment": "Acting",
@@ -64689,8 +64706,8 @@
       "Kathy Laskey",
       "Kate Laskey"
     ],
-    "tmdbUpdatedAt": "2026-10-01T10:27:58.229Z",
-    "tmdbFetchedAt": "2026-10-01T10:27:58.229Z"
+    "tmdbUpdatedAt": "2026-10-06T13:51:16.491Z",
+    "tmdbFetchedAt": "2026-10-06T13:51:16.491Z"
   },
   {
     "id": "kathleen-m-darcy",
@@ -66268,12 +66285,12 @@
     "imdbPersonId": "nm3045630",
     "gender": "Female",
     "knownForDepartment": "Acting",
-    "knownCredits": 36,
+    "knownCredits": 37,
     "alsoKnownAs": [
       "Kelly Metger"
     ],
-    "tmdbUpdatedAt": "2026-10-01T09:27:23.337Z",
-    "tmdbFetchedAt": "2026-10-01T09:27:23.337Z"
+    "tmdbUpdatedAt": "2026-10-06T13:51:24.009Z",
+    "tmdbFetchedAt": "2026-10-06T13:51:24.009Z"
   },
   {
     "id": "kelly-mulvihill",
@@ -68253,11 +68270,12 @@
     "imdbPersonId": "nm0607516",
     "gender": "Male",
     "knownForDepartment": "Acting",
-    "knownCredits": 96,
+    "knownCredits": 97,
     "alsoKnownAs": [
       "Kirby Robert Morrow"
     ],
-    "tmdbUpdatedAt": "2026-09-20T16:18:56.510Z"
+    "tmdbUpdatedAt": "2026-10-06T13:51:33.980Z",
+    "tmdbFetchedAt": "2026-10-06T13:51:33.980Z"
   },
   {
     "id": "5049150",
@@ -70275,8 +70293,9 @@
     "imdbPersonId": "nm1305056",
     "gender": "Female",
     "knownForDepartment": "Acting",
-    "knownCredits": 63,
-    "tmdbUpdatedAt": "2026-09-20T16:20:28.717Z"
+    "knownCredits": 64,
+    "tmdbUpdatedAt": "2026-10-06T13:51:45.238Z",
+    "tmdbFetchedAt": "2026-10-06T13:51:45.238Z"
   },
   {
     "id": "lara-jean-chorostecki",
@@ -81793,8 +81812,9 @@
     "tmdbPersonId": 2742697,
     "gender": "Female",
     "knownForDepartment": "Acting",
-    "knownCredits": 2,
-    "tmdbUpdatedAt": "2026-09-20T16:21:10.966Z"
+    "knownCredits": 3,
+    "tmdbUpdatedAt": "2026-10-06T13:52:48.108Z",
+    "tmdbFetchedAt": "2026-10-06T13:52:48.108Z"
   },
   {
     "id": "maureen-keiller",
@@ -82608,9 +82628,9 @@
     "tmdbPersonId": 2426867,
     "gender": "Female",
     "knownForDepartment": "Writing",
-    "knownCredits": 7,
-    "tmdbUpdatedAt": "2026-10-01T13:43:34.665Z",
-    "tmdbFetchedAt": "2026-10-01T13:43:34.665Z"
+    "knownCredits": 8,
+    "tmdbUpdatedAt": "2026-10-06T13:52:52.383Z",
+    "tmdbFetchedAt": "2026-10-06T13:52:52.383Z"
   },
   {
     "id": "megan-hilty",
@@ -83588,8 +83608,9 @@
     "imdbPersonId": "nm2421884",
     "gender": "Female",
     "knownForDepartment": "Acting",
-    "knownCredits": 7,
-    "tmdbUpdatedAt": "2026-09-20T16:19:54.368Z"
+    "knownCredits": 8,
+    "tmdbUpdatedAt": "2026-10-06T13:52:57.299Z",
+    "tmdbFetchedAt": "2026-10-06T13:52:57.299Z"
   },
   {
     "id": "99067",
@@ -83688,7 +83709,7 @@
     "imdbPersonId": "nm0756089",
     "gender": "Female",
     "knownForDepartment": "Acting",
-    "knownCredits": 19,
+    "knownCredits": 20,
     "alsoKnownAs": [
       "メリッサ・サージミラー",
       "멀리사 세이지밀러",
@@ -83701,7 +83722,8 @@
     ],
     "instagramId": "melissasagemillerofficial",
     "twitterId": "MSagemiller",
-    "tmdbUpdatedAt": "2026-09-20T16:20:47.768Z"
+    "tmdbUpdatedAt": "2026-10-06T13:52:57.755Z",
+    "tmdbFetchedAt": "2026-10-06T13:52:57.755Z"
   },
   {
     "id": "1220799",
@@ -87025,9 +87047,9 @@
     "imdbPersonId": "nm0724701",
     "gender": "Male",
     "knownForDepartment": "Acting",
-    "knownCredits": 51,
-    "tmdbUpdatedAt": "2026-10-01T10:07:37.670Z",
-    "tmdbFetchedAt": "2026-10-01T10:07:37.670Z"
+    "knownCredits": 50,
+    "tmdbUpdatedAt": "2026-10-06T13:53:15.910Z",
+    "tmdbFetchedAt": "2026-10-06T13:53:15.910Z"
   },
   {
     "id": "2848323",
@@ -87475,10 +87497,10 @@
     "imdbPersonId": "nm1659086",
     "gender": "Male",
     "knownForDepartment": "Acting",
-    "knownCredits": 31,
+    "knownCredits": 32,
     "instagramId": "mullen_mitchell",
-    "tmdbUpdatedAt": "2026-10-01T10:28:03.326Z",
-    "tmdbFetchedAt": "2026-10-01T10:28:03.326Z"
+    "tmdbUpdatedAt": "2026-10-06T13:53:17.858Z",
+    "tmdbFetchedAt": "2026-10-06T13:53:17.858Z"
   },
   {
     "id": "mitchell-nye",
@@ -93359,7 +93381,7 @@
     "imdbPersonId": "nm0001155",
     "gender": "Male",
     "knownForDepartment": "Acting",
-    "knownCredits": 105,
+    "knownCredits": 106,
     "alsoKnownAs": [
       "Patrick G. Duffy",
       "پاتریک دافی"
@@ -93367,7 +93389,8 @@
     "instagramId": "therealpduffy",
     "twitterId": "therealpduffy",
     "facebookId": "patrickduffyactor",
-    "tmdbUpdatedAt": "2026-09-20T16:18:33.110Z"
+    "tmdbUpdatedAt": "2026-10-06T13:53:50.584Z",
+    "tmdbFetchedAt": "2026-10-06T13:53:50.584Z"
   },
   {
     "id": "177812",
@@ -93749,13 +93772,14 @@
     "imdbPersonId": "nm0566478",
     "gender": "Female",
     "knownForDepartment": "Acting",
-    "knownCredits": 98,
+    "knownCredits": 99,
     "alsoKnownAs": [
       "پتی مک‌کورمک",
       "Patricia McCormack"
     ],
     "instagramId": "pattymccormack_",
-    "tmdbUpdatedAt": "2026-09-20T16:21:11.715Z"
+    "tmdbUpdatedAt": "2026-10-06T13:53:52.742Z",
+    "tmdbFetchedAt": "2026-10-06T13:53:52.742Z"
   },
   {
     "id": "227397",
@@ -98036,7 +98060,7 @@
     "imdbPersonId": "nm0919258",
     "gender": "Female",
     "knownForDepartment": "Acting",
-    "knownCredits": 70,
+    "knownCredits": 71,
     "alsoKnownAs": [
       "René Weisser",
       "Rene Weisser",
@@ -98046,7 +98070,8 @@
     ],
     "instagramId": "rene.ashton",
     "facebookId": "rene.ashton",
-    "tmdbUpdatedAt": "2026-09-20T16:19:31.758Z"
+    "tmdbUpdatedAt": "2026-10-06T13:54:15.963Z",
+    "tmdbFetchedAt": "2026-10-06T13:54:15.963Z"
   },
   {
     "id": "rene-escobar-jr",
@@ -98842,7 +98867,7 @@
     "imdbPersonId": "nm0454236",
     "gender": "Male",
     "knownForDepartment": "Acting",
-    "knownCredits": 256,
+    "knownCredits": 257,
     "alsoKnownAs": [
       "Richard Bruce Kind",
       "ریچارد کایند"
@@ -98850,8 +98875,8 @@
     "instagramId": "realrichardkind",
     "twitterId": "RealRichardKind",
     "facebookId": "realrichardkind",
-    "tmdbUpdatedAt": "2026-09-25T20:54:33.596Z",
-    "tmdbFetchedAt": "2026-09-25T20:54:33.596Z"
+    "tmdbUpdatedAt": "2026-10-06T13:54:20.264Z",
+    "tmdbFetchedAt": "2026-10-06T13:54:20.264Z"
   },
   {
     "id": "97065",
@@ -107838,9 +107863,9 @@
     "imdbPersonId": "nm3388331",
     "gender": "Female",
     "knownForDepartment": "Acting",
-    "knownCredits": 3,
-    "tmdbUpdatedAt": "2026-09-25T21:37:15.697Z",
-    "tmdbFetchedAt": "2026-09-25T21:37:15.697Z"
+    "knownCredits": 4,
+    "tmdbUpdatedAt": "2026-10-06T13:55:08.401Z",
+    "tmdbFetchedAt": "2026-10-06T13:55:08.401Z"
   },
   {
     "id": "shelly-townsend",
@@ -109781,9 +109806,9 @@
     "tmdbPersonId": 2428300,
     "gender": "Female",
     "knownForDepartment": "Acting",
-    "knownCredits": 3,
-    "tmdbUpdatedAt": "2026-10-05T08:19:38.851Z",
-    "tmdbFetchedAt": "2026-10-05T08:19:38.851Z"
+    "knownCredits": 2,
+    "tmdbUpdatedAt": "2026-10-06T13:55:19.863Z",
+    "tmdbFetchedAt": "2026-10-06T13:55:19.863Z"
   },
   {
     "id": "stephanie-miller",
@@ -113429,8 +113454,9 @@
     "profileUrl": "/images/people/2877386.webp",
     "gender": "Female",
     "knownForDepartment": "Acting",
-    "knownCredits": 6,
-    "tmdbUpdatedAt": "2026-09-20T16:19:58.645Z"
+    "knownCredits": 7,
+    "tmdbUpdatedAt": "2026-10-06T13:55:38.993Z",
+    "tmdbFetchedAt": "2026-10-06T13:55:38.993Z"
   },
   {
     "id": "ted-atherton",
@@ -114155,13 +114181,13 @@
     "imdbPersonId": "nm0524745",
     "gender": "Male",
     "knownForDepartment": "Acting",
-    "knownCredits": 50,
+    "knownCredits": 52,
     "alsoKnownAs": [
       "Thaddeus Rowe Luckinbill",
       "تاد لاکینبیل"
     ],
-    "tmdbUpdatedAt": "2026-10-01T10:12:07.912Z",
-    "tmdbFetchedAt": "2026-10-01T10:12:07.912Z"
+    "tmdbUpdatedAt": "2026-10-06T13:55:43.060Z",
+    "tmdbFetchedAt": "2026-10-06T13:55:43.060Z"
   },
   {
     "id": "thanya-romero",
@@ -114835,7 +114861,7 @@
     "profileUrl": "/images/people/62000.webp",
     "birthday": "1979-09-11",
     "placeOfBirth": "New York City, New York, U.S.",
-    "biography": "Tiffany Shepis (born September 11, 1979) is an American actress from New York City, who has been involved in film-making since the age of 12. She is popularly known as a \"scream queen\" in several horror films.",
+    "biography": "Tiffany Shepis (born September 11, 1979) is an American actress from New York City, who has been involved in filmmaking since the age of 12. She is regarded as a scream queen for starring in over 80 horror films.",
     "imdbPersonId": "nm0791898",
     "gender": "Female",
     "knownForDepartment": "Acting",
@@ -114847,8 +114873,8 @@
     ],
     "instagramId": "tiffanyshepis",
     "twitterId": "TiffanyShepis",
-    "tmdbUpdatedAt": "2026-10-01T14:05:22.347Z",
-    "tmdbFetchedAt": "2026-10-01T14:05:22.347Z"
+    "tmdbUpdatedAt": "2026-10-06T13:55:47.391Z",
+    "tmdbFetchedAt": "2026-10-06T13:55:47.391Z"
   },
   {
     "id": "tiffany-smith",
@@ -115306,7 +115332,7 @@
     "imdbPersonId": "nm1182011",
     "gender": "Male",
     "knownForDepartment": "Acting",
-    "knownCredits": 90,
+    "knownCredits": 92,
     "alsoKnownAs": [
       "Timothy Murphy",
       "Tim Murphy",
@@ -115317,8 +115343,8 @@
     "instagramId": "timvmurphy",
     "twitterId": "TimVMurphy",
     "facebookId": "100050673421060",
-    "tmdbUpdatedAt": "2026-10-01T13:02:24.070Z",
-    "tmdbFetchedAt": "2026-10-01T13:02:24.070Z"
+    "tmdbUpdatedAt": "2026-10-06T13:55:49.187Z",
+    "tmdbFetchedAt": "2026-10-06T13:55:49.187Z"
   },
   {
     "id": "tina-gallo",
@@ -116196,9 +116222,9 @@
     "imdbPersonId": "nm0724797",
     "gender": "Female",
     "knownForDepartment": "Acting",
-    "knownCredits": 26,
-    "tmdbUpdatedAt": "2026-10-04T16:15:04.502Z",
-    "tmdbFetchedAt": "2026-10-04T16:15:04.502Z"
+    "knownCredits": 27,
+    "tmdbUpdatedAt": "2026-10-06T13:55:54.165Z",
+    "tmdbFetchedAt": "2026-10-06T13:55:54.165Z"
   },
   {
     "id": "tony-alcantar",
@@ -116212,8 +116238,9 @@
     "imdbPersonId": "nm0017167",
     "gender": "Male",
     "knownForDepartment": "Acting",
-    "knownCredits": 44,
-    "tmdbUpdatedAt": "2026-09-20T16:19:08.594Z"
+    "knownCredits": 45,
+    "tmdbUpdatedAt": "2026-10-06T13:55:54.186Z",
+    "tmdbFetchedAt": "2026-10-06T13:55:54.186Z"
   },
   {
     "id": "tony-cavalero",
@@ -116534,7 +116561,7 @@
     "imdbPersonId": "nm1722914",
     "gender": "Female",
     "knownForDepartment": "Acting",
-    "knownCredits": 44,
+    "knownCredits": 45,
     "alsoKnownAs": [
       "Torrey Devitto",
       "Torrey Joëlle DeVitto",
@@ -116544,8 +116571,8 @@
     "instagramId": "torreydevitto",
     "twitterId": "TorreyDeVitto",
     "facebookId": "Torrey-DeVitto-288041481320332",
-    "tmdbUpdatedAt": "2026-09-25T20:54:37.779Z",
-    "tmdbFetchedAt": "2026-09-25T20:54:37.779Z"
+    "tmdbUpdatedAt": "2026-10-06T13:55:57.127Z",
+    "tmdbFetchedAt": "2026-10-06T13:55:57.127Z"
   },
   {
     "id": "1255172",
