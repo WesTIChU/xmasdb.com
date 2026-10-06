@@ -3,7 +3,7 @@ import fs from 'node:fs/promises';
 import os from 'node:os';
 import path from 'node:path';
 import { Movie } from '../src/types';
-import { normalizeTmdbAlternativeTitles, normalizeTmdbKeywords, resolveTmdbReleaseDate } from '../src/utils/tmdb';
+import { normalizeTmdbAlternativeTitles, normalizeTmdbGenres, normalizeTmdbKeywords, resolveTmdbReleaseDate } from '../src/utils/tmdb';
 import { mergeTmdbCertification, mergeTmdbMovie, refreshTmdbMovie, selectPeopleRefreshMovies } from '../src/utils/tmdb-refresh';
 import { cacheLocalImage, createImageRefreshBudget } from '../src/utils/local-images';
 
@@ -50,6 +50,11 @@ assert.deepStrictEqual(normalizeTmdbKeywords({ keywords: [
   { id: 10, name: ' christmas ' }, { id: 10, name: 'duplicate' }, { id: 11, name: 'small town' },
 ] }), [{ id: 10, name: 'christmas' }, { id: 11, name: 'small town' }], 'TMDB keywords are normalized and deduplicated by ID');
 assert.deepStrictEqual(normalizeTmdbKeywords(undefined), [], 'movies without TMDB keywords receive an empty collection');
+assert.deepStrictEqual(normalizeTmdbGenres([
+  { id: 10770, name: ' TV Movie ' }, { id: 10749, name: 'Romance' }, { id: 10770, name: 'Duplicate' },
+]), [{ id: 10770, name: 'TV Movie' }, { id: 10749, name: 'Romance' }], 'TMDB genres are normalized, deduplicated by ID, and retain TMDB order');
+assert.deepStrictEqual(normalizeTmdbGenres([]), [], 'an explicit empty TMDB genre response becomes an empty genre list');
+assert.equal(normalizeTmdbGenres(undefined), undefined, 'missing TMDB genre data remains distinguishable from an explicit empty list');
 
 const confirmedAt = '2026-10-06T00:00:00.000Z';
 const certificationG = { value: 'G', country: 'US', source: 'tmdb' as const, lastConfirmedAt: '2026-10-05T00:00:00.000Z' };
@@ -122,11 +127,19 @@ assert.equal(unchanged.tmdbUpdatedAt, undefined, 'unchanged TMDB data preserves 
 
 const keywordMovie = { ...movie, keywords: [{ id: 1, name: 'old name' }, { id: 2, name: 'removed' }] } satisfies Movie;
 const keywordAdded = mergeTmdbMovie(keywordMovie, { keywords: [{ id: 1, name: 'old name' }, { id: 3, name: 'added' }] });
-assert.deepStrictEqual(keywordAdded.keywords, [{ id: 1, name: 'old name' }, { id: 3, name: 'added' }], 'keyword additions and removals replace the stored set');
-assert.deepStrictEqual(mergeTmdbMovie(keywordMovie, { keywords: [{ id: 1, name: 'new name' }] }).keywords, [{ id: 1, name: 'new name' }], 'keyword name changes are stored');
-assert.deepStrictEqual(mergeTmdbMovie(keywordMovie, { keywords: [] }).keywords, [], 'an empty TMDB keyword response clears stale keywords');
+assert.deepStrictEqual(keywordAdded.keywords, [{ id: 1, name: 'old name' }, { id: 2, name: 'removed' }, { id: 3, name: 'added' }], 'keyword refreshes add new IDs without removing stored keywords');
+assert.deepStrictEqual(mergeTmdbMovie({ ...movie, keywords: [] }, { keywords: [{ id: 1, name: 'lawyer' }] }).keywords, [{ id: 1, name: 'lawyer' }], 'new keywords are stored for movies without historical keywords');
+assert.deepStrictEqual(mergeTmdbMovie(keywordMovie, { keywords: [{ id: 1, name: 'new name' }] }).keywords, [{ id: 1, name: 'new name' }, { id: 2, name: 'removed' }], 'keyword names update by stable TMDB ID');
+assert.deepStrictEqual(mergeTmdbMovie(keywordMovie, { keywords: [] }).keywords, keywordMovie.keywords, 'an empty TMDB keyword response preserves stale keywords');
+assert.deepStrictEqual(mergeTmdbMovie(keywordMovie, {}).keywords, keywordMovie.keywords, 'missing TMDB keyword data preserves stale keywords');
+assert.deepStrictEqual(mergeTmdbMovie(keywordMovie, { keywords: [{ id: 3, name: 'added' }, { id: 3, name: 'added again' }] }).keywords, [{ id: 1, name: 'old name' }, { id: 2, name: 'removed' }, { id: 3, name: 'added again' }], 'duplicate TMDB IDs produce one stored keyword');
 const unchangedKeywords = mergeTmdbMovie(keywordMovie, { keywords: keywordMovie.keywords });
 assert.equal(unchangedKeywords.tmdbUpdatedAt, undefined, 'unchanged keywords do not create a metadata update');
+
+const genreMovie = { ...movie, genres: [{ id: 10770, name: 'TV Movie' }, { id: 10749, name: 'Romance' }] } satisfies Movie;
+assert.deepStrictEqual(mergeTmdbMovie(genreMovie, { genres: [{ id: 10770, name: 'TV Movie' }, { id: 35, name: 'Comedy' }] }).genres, [{ id: 10770, name: 'TV Movie' }, { id: 35, name: 'Comedy' }], 'TMDB genre refreshes add and remove assignments in TMDB order');
+assert.deepStrictEqual(mergeTmdbMovie(genreMovie, { genres: [{ id: 10770, name: 'Television Movie' }] }).genres, [{ id: 10770, name: 'Television Movie' }], 'TMDB genre names update by stable ID');
+assert.deepStrictEqual(mergeTmdbMovie(genreMovie, { genres: [] }).genres, [], 'an explicit empty TMDB genre response clears stored genres');
 
 const castMember = (tmdbPersonId: number, name: string) => ({
   actorId: String(tmdbPersonId), name, character: '', slug: name.toLowerCase().replaceAll(' ', '-'), tmdbPersonId,
@@ -163,8 +176,9 @@ globalThis.fetch = (async (input) => {
   release_date: imageMovie.releaseDate,
   overview: imageMovie.synopsis,
   poster_path: metadataPoster,
-  backdrop_path: metadataBackdrop,
-   credits: { cast: [], crew: [] },
+   backdrop_path: metadataBackdrop,
+    genres: [{ id: 10770, name: 'TV Movie' }, { id: 10749, name: 'Romance' }, { id: 10770, name: 'Duplicate' }],
+    credits: { cast: [], crew: [] },
    keywords: { keywords: [{ id: 42, name: 'holiday romance' }] },
    alternative_titles: { titles: [{ title: 'An Alternate Movie 1', iso_3166_1: 'US' }] },
   }), { status: 200, headers: { 'content-type': 'application/json' } });
@@ -178,6 +192,7 @@ try {
   const optional = await refreshTmdbMovie(imageMovie, 'test-key', cache);
   assert.ok(metadataUrl.includes('append_to_response=credits,videos,release_dates,external_ids,alternative_titles,keywords'), 'keywords are appended to the existing movie request');
   assert.deepEqual(optional.alternativeTitles, [{ title: 'An Alternate Movie 1', country: 'US' }]);
+  assert.deepEqual(optional.genres, [{ id: 10770, name: 'TV Movie' }, { id: 10749, name: 'Romance' }], 'TMDB movie import includes normalized genres');
   assert.deepEqual(optional.keywords, [{ id: 42, name: 'holiday romance' }], 'TMDB movie import includes keyword IDs and names');
   assert.equal(cacheCalls, 0, 'missing optional poster/backdrop URLs do not invoke image ingestion');
   assert.equal(optional.posterUrl, imageMovie.posterUrl, 'missing poster preserves existing artwork');

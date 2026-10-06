@@ -2,6 +2,8 @@ import type { Movie, MovieCertification, ReleaseDateInfo } from '../types';
 import { fetchTmdbMovie } from './tmdb';
 import { cacheLocalImage, type ImageRefreshBudget } from './local-images';
 import { ingestManagedImage } from '../server/managed-images';
+import { runJevKeywordRefresh, type JevKeywordRefreshOptions } from '../server/jev-keyword-refresh';
+import { normalizeJevKeyword } from './keyword-identity';
 
 function localAssetPath(kind: 'posters' | 'backdrops', id: number): string {
   return `/images/${kind}/${id}.jpg`;
@@ -33,6 +35,22 @@ function explicitCertification(releases: ReleaseDateInfo[] | undefined, releaseD
   return { value: selected.certification!.trim(), country: 'US' };
 }
 
+export function mergeTmdbKeywords(existing: Movie['keywords'], refreshed: Movie['keywords']): Movie['keywords'] {
+  if (refreshed === undefined) return existing;
+  const byId = new Map<number, Extract<NonNullable<Movie['keywords']>[number], { id: number }>>();
+  const jev = (existing || []).filter((keyword): keyword is Extract<NonNullable<Movie['keywords']>[number], { evidence: string }> => !('id' in keyword));
+  for (const keyword of existing || []) if ('id' in keyword) byId.set(keyword.id, keyword);
+  for (const keyword of refreshed) {
+    if (!('id' in keyword)) continue;
+    byId.set(keyword.id, keyword);
+  }
+  // TMDB is authoritative for an equivalent concept, but distinct TMDB IDs
+  // remain distinct even when their names normalize identically.
+  const tmdb = [...byId.values()];
+  const tmdbNames = new Set(tmdb.map((keyword) => normalizeJevKeyword(keyword.name)));
+  return [...tmdb, ...jev.filter((keyword) => !tmdbNames.has(normalizeJevKeyword(keyword.name)))];
+}
+
 export function mergeTmdbCertification(
   existing: MovieCertification | undefined,
   releases: ReleaseDateInfo[] | undefined,
@@ -48,11 +66,16 @@ export function mergeTmdbCertification(
 }
 
 export function mergeTmdbMovie(movie: Movie, refreshed: Partial<Movie>, posterUrl?: string, backdropUrl?: string): Movie {
-  const safeMetadata = Object.fromEntries(Object.entries(refreshed).filter(([key, value]) => (
-    key === 'keywords' || (
-    value !== undefined && value !== null &&
-    !(typeof value === 'string' && value.trim() === '') &&
-    !(Array.isArray(value) && value.length === 0)
+  const safeMetadata = Object.fromEntries(Object.entries({
+    ...refreshed,
+    ...(Object.prototype.hasOwnProperty.call(refreshed, 'keywords')
+      ? { keywords: mergeTmdbKeywords(movie.keywords, refreshed.keywords) }
+      : {}),
+  }).filter(([key, value]) => (
+    key === 'genres' || (
+      value !== undefined && value !== null &&
+      !(typeof value === 'string' && value.trim() === '') &&
+      !(Array.isArray(value) && value.length === 0)
     )
   )));
   const merged = {
@@ -91,6 +114,7 @@ export async function refreshTmdbMovie(
   cacheImage: typeof cacheLocalImage = cacheLocalImage,
   imageBudget?: ImageRefreshBudget,
   onImageFailure?: (failure: TmdbImageRefreshFailure) => void,
+  jevOptions?: JevKeywordRefreshOptions,
 ): Promise<Movie> {
   const refreshed = await fetchTmdbMovie(movie.tmdbId, apiKey);
   if (!refreshed) throw new Error(`TMDB returned no movie data for ${movie.tmdbId}`);
@@ -109,5 +133,9 @@ export async function refreshTmdbMovie(
   };
   const posterUrl = await ingest(refreshed.posterUrl, localAssetPath('posters', movie.tmdbId));
   const backdropUrl = await ingest(refreshed.backdropUrl, localAssetPath('backdrops', movie.tmdbId));
-  return mergeTmdbMovie(movie, refreshed, posterUrl, backdropUrl);
+  const merged = mergeTmdbMovie(movie, refreshed, posterUrl, backdropUrl);
+  if (!jevOptions) return merged;
+  const jevResult = await runJevKeywordRefresh(merged, jevOptions);
+  if (jevResult.failure) jevOptions.onFailure?.(jevResult.failure);
+  return jevResult.movie;
 }

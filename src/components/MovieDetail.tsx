@@ -15,6 +15,7 @@ import { FingerprintChips } from './FingerprintChips';
 import { resolveImageUrl } from '../utils/image-url';
 import { formatLastUpdatedDate } from '../utils/last-updated';
 import { TriviaAside } from './TriviaAside';
+import { normalizeJevKeyword } from '../utils/keyword-identity';
 
 interface MovieDetailProps {
   movie: MovieDetailMovie;
@@ -266,7 +267,7 @@ export const MovieDetail: React.FC<MovieDetailProps> = ({ movie, related, onNavi
               <h2 id="keywords-heading" className="text-base font-heading font-semibold text-[#1A3D2F] mb-3">Keywords</h2>
               <div className="flex flex-wrap gap-2">
                 {movie.keywords.map((keyword) => (
-                  <span key={keyword.id} className="rounded-full border border-[#DDD4C6] bg-[#FAF7F2] px-2.5 py-1 text-xs font-sans-clean text-[#736B63]">
+                  <span key={'id' in keyword ? `tmdb:${keyword.id}` : `jev:${normalizeJevKeyword(keyword.name)}`} className="rounded-full border border-[#DDD4C6] bg-[#FAF7F2] px-2.5 py-1 text-xs font-sans-clean text-[#736B63]">
                     {keyword.name}
                   </span>
                 ))}

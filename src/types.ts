@@ -33,10 +33,15 @@ export interface Genre {
   name: string;
 }
 
-export interface MovieKeyword {
-  id: number;
-  name: string;
-}
+export type MovieKeyword =
+  | {
+      id: number;
+      name: string;
+    }
+  | {
+      name: string;
+      evidence: string;
+    };
 
 export interface CrewMember {
   id: number;
@@ -97,7 +102,7 @@ export interface Movie {
   /** XmasDB-managed network premiere override; never sourced from TMDB. */
   networkPremiereDate?: string;
   genres?: Genre[];
-  /** Keywords supplied by TMDB; unlike Christmas Ingredients these are not curated by XmasDB. */
+  /** TMDB keywords and additive Jev synopsis concepts; separate from Christmas Ingredients. */
   keywords?: MovieKeyword[];
   releaseDates?: ReleaseDateInfo[];
   /** The last non-empty TMDB certification selected for the catalogue's release context. */

@@ -14,6 +14,7 @@ import { refreshTmdbMovie, selectPeopleRefreshMovies } from '../src/utils/tmdb-r
 import { createImageRefreshBudget, getImageCacheFreshnessStats } from '../src/utils/local-images';
 import { isTmdbFresh, timestampAgeDays } from '../src/utils/tmdb-freshness';
 import { completeRefreshRun, createRefreshRun, startRefreshRun, type RefreshFailure, type RefreshRun } from '../src/server/tmdb-refresh-health';
+import { OpenRouterJevKeywordClassifier } from '../src/server/jev-keywords';
 
 const moviesPath = path.join(process.cwd(), 'src/data/movies.ts');
 const refreshReportPath = path.join(process.cwd(), 'src/data/refresh-report.json');
@@ -71,14 +72,21 @@ async function main() {
 
   const refreshedMovies: Movie[] = [];
   const failures: Array<{ tmdbId: number; title: string; message: string }> = [];
+  const jevFailures: Array<{ tmdbId: number; title: string; message: string }> = [];
   const imageWarnings: Array<{ tmdbId: number; title: string; message: string }> = [];
+  const jevClassifier = process.env.OPENROUTER_API_KEY && process.env.OPENROUTER_MODEL
+    ? new OpenRouterJevKeywordClassifier()
+    : undefined;
   for (const movie of targets) {
     try {
       const refreshed = await refreshTmdbMovie(movie, apiKey, undefined, imageBudget, (failure) => {
         const message = `Image ingestion failed for ${failure.localPath}: ${failure.message}`;
         console.warn(`[TMDB Image Warning] ${movie.tmdbId} ${movie.title}: ${message}`);
         imageWarnings.push({ tmdbId: movie.tmdbId, title: movie.title, message });
-      });
+      }, jevClassifier ? {
+        classifier: jevClassifier,
+        onFailure: (failure) => jevFailures.push({ tmdbId: movie.tmdbId, title: movie.title, message: failure.message }),
+      } : undefined);
       refreshedMovies.push(refreshed);
       console.log(`Refreshed movie ${movie.tmdbId}: ${movie.title}`);
     } catch (error) {
@@ -129,6 +137,7 @@ async function main() {
     ...peopleResult.failures.map((failure) => ({ key: `actor:${failure.tmdbPersonId}`, kind: 'actor' as const, operation: 'fetch person metadata', tmdbId: failure.tmdbPersonId, message: failure.message, timestamp: now.toISOString() })),
     ...peopleResult.imageFailures.map((failure) => ({ key: `image:people/${failure.tmdbPersonId}`, kind: 'image' as const, operation: 'publish actor image', tmdbId: failure.tmdbPersonId, message: failure.message, timestamp: now.toISOString() })),
     ...imageWarnings.map((failure) => ({ key: `image:movie/${failure.tmdbId}`, kind: 'image' as const, operation: 'publish movie image', tmdbId: failure.tmdbId, message: failure.message, timestamp: now.toISOString() })),
+    ...jevFailures.map((failure) => ({ key: `movie:${failure.tmdbId}:jev-keywords`, kind: 'movie' as const, operation: 'classify Jev Keywords', tmdbId: failure.tmdbId, message: failure.message, timestamp: now.toISOString() })),
     ...imageBudget.failureDetails.map((failure) => ({ key: `image:${failure.localPath}`, kind: 'image' as const, operation: 'download/revalidate image', message: failure.message, timestamp: now.toISOString() })),
   ];
   const failedMovieIds = new Set(failures.map((failure) => failure.tmdbId));

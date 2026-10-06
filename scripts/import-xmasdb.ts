@@ -6,6 +6,7 @@ import { MOVIES } from '../src/data/movies';
 import { Actor, CastMember, CrewMember, Movie, ReleaseDateInfo, Trailer } from '../src/types';
 import { fetchTmdbMovie, fetchTmdbPerson } from '../src/utils/tmdb';
 import { reconcileMovieLifecycle } from '../src/utils/catalogue-lifecycle';
+import { mergeTmdbKeywords } from '../src/utils/tmdb-refresh';
 import { writeFileAtomically } from '../src/utils/atomic-file';
 import { ingestManagedImage } from '../src/server/managed-images';
 import { convertImageToWebp } from '../src/server/image-processing';
@@ -213,6 +214,9 @@ function applyTmdbMovieRefresh(movie: Movie, refreshed: Partial<Movie>): Movie {
   return {
     ...movie,
     ...safeRefreshed,
+    ...(Object.prototype.hasOwnProperty.call(refreshed, 'keywords')
+      ? { keywords: mergeTmdbKeywords(movie.keywords, refreshed.keywords) }
+      : {}),
     brandId: 'hallmark',
     status: movie.status,
     isComingSoon: movie.isComingSoon,

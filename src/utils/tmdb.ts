@@ -100,6 +100,19 @@ export function normalizeTmdbKeywords(entries: TmdbMovieApiResponse['keywords'])
   return keywords;
 }
 
+export function normalizeTmdbGenres(entries: TmdbMovieApiResponse['genres']): Genre[] | undefined {
+  if (!Array.isArray(entries)) return undefined;
+  const seen = new Set<number>();
+  const genres: Genre[] = [];
+  for (const entry of entries) {
+    const name = entry.name?.trim();
+    if (!Number.isInteger(entry.id) || !name || seen.has(entry.id)) continue;
+    seen.add(entry.id);
+    genres.push({ id: entry.id, name });
+  }
+  return genres;
+}
+
 function releaseDateOnly(value: string | undefined): string | null {
   if (!value) return null;
   const date = value.match(/^\d{4}-\d{2}-\d{2}/)?.[0];
@@ -230,7 +243,7 @@ export async function fetchTmdbMovie(tmdbId: number, apiKey?: string): Promise<P
       posterUrl: tmdbImageUrl(data.poster_path),
       backdropUrl: tmdbImageUrl(data.backdrop_path, 'w1280'),
       tagline: data.tagline || undefined,
-      genres: data.genres,
+      genres: normalizeTmdbGenres(data.genres),
       keywords,
       voteAverage: data.vote_average,
       voteCount: data.vote_count,
