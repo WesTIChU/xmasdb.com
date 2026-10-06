@@ -164,7 +164,7 @@
     "profileUrl": "/images/people/90130.webp",
     "birthday": "1979-10-07",
     "placeOfBirth": "Richmond, British Columbia, Canada",
-    "biography": "Aaron Ashmore (born October 7th, 1979) is a Canadian film and television actor. He is the identical twin brother of actor Shawn Ashmore.",
+    "biography": "Aaron Richard Ashmore (born October 7, 1979) is a Canadian actor. He is known for his television roles as Jimmy Olsen in Smallville, Steve Jinks in Warehouse 13, John Jaqobis in Killjoys, and Duncan Locke in Locke & Key. He has also appeared in numerous films and television productions throughout his career. Ashmore is the identical twin brother of actor Shawn Ashmore.",
     "imdbPersonId": "nm0039148",
     "gender": "Male",
     "knownForDepartment": "Acting",
@@ -173,7 +173,8 @@
       "Aaron Richard Ashmore"
     ],
     "instagramId": "aaron_ashmore",
-    "tmdbUpdatedAt": "2026-09-20T16:20:12.469Z"
+    "tmdbUpdatedAt": "2026-10-06T15:56:23.190Z",
+    "tmdbFetchedAt": "2026-10-06T15:56:23.190Z"
   },
   {
     "id": "1376616",
@@ -76079,8 +76080,9 @@
     "imdbPersonId": "nm1656974",
     "gender": "Male",
     "knownForDepartment": "Acting",
-    "knownCredits": 47,
-    "tmdbUpdatedAt": "2026-09-20T16:17:18.554Z"
+    "knownCredits": 48,
+    "tmdbUpdatedAt": "2026-10-06T16:05:04.443Z",
+    "tmdbFetchedAt": "2026-10-06T16:05:04.443Z"
   },
   {
     "id": "2259660",
@@ -81810,11 +81812,12 @@
     "slug": "maureen-eastwood",
     "name": "Maureen Eastwood",
     "tmdbPersonId": 2742697,
+    "imdbPersonId": "nm1548969",
     "gender": "Female",
     "knownForDepartment": "Acting",
     "knownCredits": 3,
-    "tmdbUpdatedAt": "2026-10-06T13:52:48.108Z",
-    "tmdbFetchedAt": "2026-10-06T13:52:48.108Z"
+    "tmdbUpdatedAt": "2026-10-06T16:05:43.849Z",
+    "tmdbFetchedAt": "2026-10-06T16:05:43.849Z"
   },
   {
     "id": "maureen-keiller",
@@ -105204,9 +105207,9 @@
     "profileUrl": "/images/people/6431425.webp",
     "imdbPersonId": "nm17778649",
     "knownForDepartment": "Acting",
-    "knownCredits": 3,
-    "tmdbUpdatedAt": "2026-10-05T08:19:12.090Z",
-    "tmdbFetchedAt": "2026-10-05T08:19:12.090Z"
+    "knownCredits": 4,
+    "tmdbUpdatedAt": "2026-10-06T16:08:31.069Z",
+    "tmdbFetchedAt": "2026-10-06T16:08:31.069Z"
   },
   {
     "id": "3755743",
@@ -105821,14 +105824,14 @@
     "imdbPersonId": "nm0000276",
     "gender": "Male",
     "knownForDepartment": "Acting",
-    "knownCredits": 215,
+    "knownCredits": 214,
     "alsoKnownAs": [
       "Sean Patrick Duke"
     ],
     "instagramId": "seanastin",
     "facebookId": "SeanAstinPublic",
-    "tmdbUpdatedAt": "2026-10-01T10:07:20.754Z",
-    "tmdbFetchedAt": "2026-10-01T10:07:20.754Z"
+    "tmdbUpdatedAt": "2026-10-06T16:08:35.928Z",
+    "tmdbFetchedAt": "2026-10-06T16:08:35.928Z"
   },
   {
     "id": "sean-bexton",
@@ -107443,8 +107446,9 @@
     "tmdbPersonId": 1028741,
     "imdbPersonId": "nm0860704",
     "knownForDepartment": "Acting",
-    "knownCredits": 5,
-    "tmdbUpdatedAt": "2026-09-20T16:20:03.332Z"
+    "knownCredits": 6,
+    "tmdbUpdatedAt": "2026-10-06T16:08:46.326Z",
+    "tmdbFetchedAt": "2026-10-06T16:08:46.326Z"
   },
   {
     "id": "shaw-madson",
@@ -113296,9 +113300,9 @@
     "imdbPersonId": "nm3412582",
     "gender": "Female",
     "knownForDepartment": "Acting",
-    "knownCredits": 11,
-    "tmdbUpdatedAt": "2026-09-25T21:37:15.234Z",
-    "tmdbFetchedAt": "2026-09-25T21:37:15.234Z"
+    "knownCredits": 12,
+    "tmdbUpdatedAt": "2026-10-06T16:09:27.520Z",
+    "tmdbFetchedAt": "2026-10-06T16:09:27.520Z"
   },
   {
     "id": "taylor-love",
