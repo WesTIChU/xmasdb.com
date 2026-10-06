@@ -252,8 +252,11 @@ export function buildMovieDetail(identifier: string, slug?: string): MovieDetail
   const movie = resolveMovie(identifier, slug);
   if (!movie) return null;
 
+  // Keep stored keyword data available to server-side refresh/archive work, but
+  // do not send it to public clients while the Keywords feature is on hold.
+  const { keywords: _storedKeywords, ...movieWithoutKeywords } = movie;
   const movieWithResolvedCast = {
-    ...movie,
+    ...movieWithoutKeywords,
     fingerprints: getMovieFingerprints(movie).map((fingerprint) => fingerprint.id),
     cast: movie.cast.map((member) => ({
       ...member,
@@ -266,7 +269,7 @@ export function buildMovieDetail(identifier: string, slug?: string): MovieDetail
     writingCredits: getCreativeCrew(movie.crew)
       .filter((member) => ['Writer', 'Screenplay', 'Story'].includes(member.job))
       .map(toMovieCrewCredit),
-  };
+  } as MovieDetailPayload['movie'];
 
   const related = selectRelatedMovies(movie);
 

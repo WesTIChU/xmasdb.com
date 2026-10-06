@@ -15,7 +15,6 @@ import { FingerprintChips } from './FingerprintChips';
 import { resolveImageUrl } from '../utils/image-url';
 import { formatLastUpdatedDate } from '../utils/last-updated';
 import { TriviaAside } from './TriviaAside';
-import { normalizeJevKeyword } from '../utils/keyword-identity';
 
 interface MovieDetailProps {
   movie: MovieDetailMovie;
@@ -260,18 +259,6 @@ export const MovieDetail: React.FC<MovieDetailProps> = ({ movie, related, onNavi
             <section aria-labelledby="christmas-ingredients-heading" className="mt-5 border-t border-[#E7DFD5] pt-5">
               <h2 id="christmas-ingredients-heading" className="text-base font-heading font-semibold text-[#1A3D2F] mb-3">Christmas Ingredients</h2>
               <FingerprintChips fingerprints={fingerprints} onNavigate={onNavigate} />
-            </section>
-          )}
-          {movie.keywords && movie.keywords.length > 0 && (
-            <section aria-labelledby="keywords-heading" className="mt-5 border-t border-[#E7DFD5] pt-5">
-              <h2 id="keywords-heading" className="text-base font-heading font-semibold text-[#1A3D2F] mb-3">Keywords</h2>
-              <div className="flex flex-wrap gap-2">
-                {movie.keywords.map((keyword) => (
-                  <span key={'id' in keyword ? `tmdb:${keyword.id}` : `jev:${normalizeJevKeyword(keyword.name)}`} className="rounded-full border border-[#DDD4C6] bg-[#FAF7F2] px-2.5 py-1 text-xs font-sans-clean text-[#736B63]">
-                    {keyword.name}
-                  </span>
-                ))}
-              </div>
             </section>
           )}
           <TriviaAside fact={trivia} onNavigate={onNavigate} className="mt-5" />
