@@ -216,16 +216,13 @@ export const MovieDetail: React.FC<MovieDetailProps> = ({ movie, related, onNavi
                   <Clapperboard className="w-3.5 h-3.5" /> Director
                 </span>
                 {movie.directorCredit ? (
-                  <a
+                  <NavigationLink
                     href={getActorPath(movie.directorCredit.tmdbPersonId, movie.directorCredit.slug)}
-                    onClick={(event) => {
-                      event.preventDefault();
-                      onNavigate(getActorPath(movie.directorCredit!.tmdbPersonId, movie.directorCredit!.slug));
-                    }}
-                    className="font-medium text-[#23211E] hover:text-[#841818] hover:underline"
+                    onNavigate={onNavigate}
+                    className="font-medium text-[#23211E] hover:text-[#841818]"
                   >
                     {movie.directorCredit.name}
-                  </a>
+                  </NavigationLink>
                 ) : <span className="font-medium text-[#23211E]">{movie.director}</span>}
               </div>
             )}
@@ -239,16 +236,13 @@ export const MovieDetail: React.FC<MovieDetailProps> = ({ movie, related, onNavi
                   {movie.writingCredits.map((writer, index) => (
                     <React.Fragment key={`${writer.tmdbPersonId}-${writer.job}`}>
                       {index > 0 && <span className="text-[#A3998D]"> · </span>}
-                      <a
+                      <NavigationLink
                         href={getActorPath(writer.tmdbPersonId, writer.slug)}
-                        onClick={(event) => {
-                          event.preventDefault();
-                          onNavigate(getActorPath(writer.tmdbPersonId, writer.slug));
-                        }}
-                        className="hover:text-[#841818] hover:underline"
+                        onNavigate={onNavigate}
+                        className="hover:text-[#841818]"
                       >
                         {writer.name}
-                      </a>
+                      </NavigationLink>
                     </React.Fragment>
                   ))}
                 </span>
