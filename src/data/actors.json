@@ -8720,6 +8720,16 @@
     "tmdbUpdatedAt": "2026-09-20T16:19:06.961Z"
   },
   {
+    "id": "6529829",
+    "slug": "anthony-j-grande",
+    "name": "Anthony J. Grande",
+    "tmdbPersonId": 6529829,
+    "knownForDepartment": "Acting",
+    "knownCredits": 1,
+    "tmdbUpdatedAt": "2026-10-06T20:39:58.630Z",
+    "tmdbFetchedAt": "2026-10-06T20:39:58.630Z"
+  },
+  {
     "id": "anthony-jensen",
     "slug": "anthony-jensen",
     "name": "Anthony Jensen",
@@ -40500,6 +40510,20 @@
     "tmdbUpdatedAt": "2026-09-20T16:17:22.825Z"
   },
   {
+    "id": "4493338",
+    "slug": "finn-maloney",
+    "name": "Finn Maloney",
+    "tmdbPersonId": 4493338,
+    "photoUrl": "/images/people/4493338.webp",
+    "profileUrl": "/images/people/4493338.webp",
+    "imdbPersonId": "nm14206126",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 4,
+    "tmdbUpdatedAt": "2026-10-06T20:39:59.033Z",
+    "tmdbFetchedAt": "2026-10-06T20:39:59.033Z"
+  },
+  {
     "id": "fiona-bell",
     "slug": "fiona-bell",
     "name": "Fiona Bell",
@@ -41170,6 +41194,27 @@
     "knownCredits": 6,
     "tmdbUpdatedAt": "2026-10-01T10:07:26.700Z",
     "tmdbFetchedAt": "2026-10-01T10:07:26.700Z"
+  },
+  {
+    "id": "535450",
+    "slug": "frank-rossi",
+    "name": "Frank Rossi",
+    "tmdbPersonId": 535450,
+    "photoUrl": "/images/people/535450.webp",
+    "profileUrl": "/images/people/535450.webp",
+    "birthday": "1960-08-19",
+    "placeOfBirth": "Buffalo, New York, USA",
+    "biography": "Frank Rossi is an American stage, film and television actor, writer, acting coach and casting director.",
+    "imdbPersonId": "nm0744186",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 12,
+    "alsoKnownAs": [
+      "Frank Anthony Rossi Jr.",
+      "Frank Anthony Rossi"
+    ],
+    "tmdbUpdatedAt": "2026-10-06T20:40:00.028Z",
+    "tmdbFetchedAt": "2026-10-06T20:40:00.028Z"
   },
   {
     "id": "frank-smith",
@@ -53653,6 +53698,23 @@
     "knownCredits": 4,
     "tmdbUpdatedAt": "2026-10-01T09:27:30.675Z",
     "tmdbFetchedAt": "2026-10-01T09:27:30.675Z"
+  },
+  {
+    "id": "2559037",
+    "slug": "jeffrey-vincent-thompson",
+    "name": "Jeffrey Vincent Thompson",
+    "tmdbPersonId": 2559037,
+    "photoUrl": "/images/people/2559037.webp",
+    "profileUrl": "/images/people/2559037.webp",
+    "birthday": "1961-05-27",
+    "placeOfBirth": "Watertown, CT",
+    "biography": "Jeffrey Vincent Thompson was born on May 27, 1961, in Watertown, CT, the third of 6 children, to Ed Thompson, a chemist, and Joline Petruzzi, a school teacher. His mother was of Italian descent and his father had Irish and German ancestry. He grew up in a physically abusive household, helping form a tough demeanor that would shape the rest of his life.\n\nHe graduated from prestigious Amherst College in 1984 with an English degree and immediately embarked on a music career. In his earlier years, Jeff played drums for legendary singers Petula Clark, Marilyn McCoo, Billy Davis Jr., and Jimmy Webb. He also appeared on stage as the drummer for comics Joan Rivers, Don Rickles, Bob Newhart, Rich Little and Joe Piscopo, and was often asked to participate in their skits.\n\nAfter music he made an unusual switch and worked on Wall Street, where he was a four time All-star stock analyst and appeared regularly on CNBC and Bloomberg TV. After Wall Street, he made another big pivot to community service, working as a math teacher at an inner city high school in Hartford CT.\n\nHe came to acting in his late 40's on a dare, but immediately realized it was his calling. Initially working in theater in the Boston area, he studied in NYC at Terry Schreiber studio, Upright Citizens Brigade and with acting coaches Tony Greco and Cay Patten. Best known for his roles in the feature films Spencer Confidential and Patriots Day, he has also booked national commercials for Dannon Yogurt, Crown Royal Whiskey and Titleist Golf. He continues to act full time and is a member of practice groups at the Gene Frankel Theater and Caymichael Patten studios in NYC.",
+    "imdbPersonId": "nm7346270",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 9,
+    "tmdbUpdatedAt": "2026-10-06T20:39:59.208Z",
+    "tmdbFetchedAt": "2026-10-06T20:39:59.208Z"
   },
   {
     "id": "jeffrey-wilkerson",
@@ -70376,6 +70438,17 @@
     "tmdbUpdatedAt": "2026-09-20T16:17:37.227Z"
   },
   {
+    "id": "3760016",
+    "slug": "larissa-maloney",
+    "name": "Larissa Maloney",
+    "tmdbPersonId": 3760016,
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 6,
+    "tmdbUpdatedAt": "2026-10-06T20:39:57.586Z",
+    "tmdbFetchedAt": "2026-10-06T20:39:57.586Z"
+  },
+  {
     "id": "larissa-schmitz",
     "slug": "larissa-schmitz",
     "name": "Larissa Schmitz",
@@ -76562,6 +76635,25 @@
     "knownForDepartment": "Acting",
     "knownCredits": 14,
     "tmdbUpdatedAt": "2026-09-20T16:17:33.510Z"
+  },
+  {
+    "id": "1151667",
+    "slug": "madonna-young-magee",
+    "name": "Madonna Young Magee",
+    "tmdbPersonId": 1151667,
+    "photoUrl": "/images/people/1151667.webp",
+    "profileUrl": "/images/people/1151667.webp",
+    "birthday": "1946-07-16",
+    "imdbPersonId": "nm0949847",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 13,
+    "alsoKnownAs": [
+      "Lena La Fratta",
+      "Madonna Magee"
+    ],
+    "tmdbUpdatedAt": "2026-10-06T20:39:58.568Z",
+    "tmdbFetchedAt": "2026-10-06T20:39:58.568Z"
   },
   {
     "id": "maesa-nicholson",
@@ -88668,6 +88760,29 @@
     "knownCredits": 7,
     "tmdbUpdatedAt": "2026-10-04T15:54:35.367Z",
     "tmdbFetchedAt": "2026-10-04T15:54:35.367Z"
+  },
+  {
+    "id": "1212467",
+    "slug": "natalia-cigliuti",
+    "name": "Natalia Cigliuti",
+    "tmdbPersonId": 1212467,
+    "photoUrl": "/images/people/1212467.webp",
+    "profileUrl": "/images/people/1212467.webp",
+    "birthday": "1978-09-06",
+    "placeOfBirth": "New York City, New York, USA",
+    "biography": "Natalia Cigliuti (born September 6, 1978) is an Uruguayan-American actress, best known for her roles as Lindsay Warner on Saved by the Bell: The New Class and as Anita Santos Warner on All My Children.\n\nCigliuti was born in Montevideo, Uruguay. She spent her childhood years in South America until her family moved to New York. She started her acting career at the age of 14 after a local talent agency discovered her at a fashion show. At the age of 15, Cigliuti landed her first series, playing the role of Lindsay Warner on Saved by the Bell: The New Class. This led to other television work, including a starring role on Pacific Palisades, Beverly Hills, 90210, Odd Man Out, The Random Years and numerous guest star appearances on programs such as CSI.\n\nCigliuti joined the cast of the All My Children in February 2004, playing the role of Anita Santos. In March 2006, she was let go from AMC after only two years due to declining story lines. She was taken off the show officially on April 12.[1] Cigliuti appeared in the TNT series Raising the Bar as Roberta \"Bobbi\" Gilardi. She had a recurring role as Detective Sam Harper on the A&E's The Glades in 2011.\n\n-From Wikipedia, the free encyclopedia",
+    "imdbPersonId": "nm0162233",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 31,
+    "alsoKnownAs": [
+      "Natalie Cigliuti",
+      "Natalia Cigliutti"
+    ],
+    "instagramId": "natalia_cigliuti",
+    "twitterId": "nataliacigliuti",
+    "tmdbUpdatedAt": "2026-10-06T20:39:58.445Z",
+    "tmdbFetchedAt": "2026-10-06T20:39:58.445Z"
   },
   {
     "id": "natalie-britton",
@@ -120515,6 +120630,23 @@
     ],
     "tmdbUpdatedAt": "2026-10-02T17:53:32.656Z",
     "tmdbFetchedAt": "2026-10-02T17:53:32.656Z"
+  },
+  {
+    "id": "1498700",
+    "slug": "william-mark-mccullough",
+    "name": "William Mark McCullough",
+    "tmdbPersonId": 1498700,
+    "photoUrl": "/images/people/1498700.webp",
+    "profileUrl": "/images/people/1498700.webp",
+    "imdbPersonId": "nm1151972",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 39,
+    "alsoKnownAs": [
+      "Mark McCullough"
+    ],
+    "tmdbUpdatedAt": "2026-10-06T20:39:58.471Z",
+    "tmdbFetchedAt": "2026-10-06T20:39:58.471Z"
   },
   {
     "id": "2157888",
