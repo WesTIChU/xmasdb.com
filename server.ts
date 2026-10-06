@@ -104,7 +104,12 @@ function seasonalLogoPreloadMarkup(): string {
 }
 
 function injectSeasonalLogoPreload(html: string): string {
-  return html.replace(/<link id="seasonal-logo-preload"[^>]*\/>/, seasonalLogoPreloadMarkup());
+  const seasonalLogo = getSeasonalLogo();
+  const isHalloweenLogo = seasonalLogo === HALLOWEEN_LOGO;
+  const imageMarkup = `<img id="initial-logo-image" src="${seasonalLogo}" srcset="${isHalloweenLogo ? HALLOWEEN_LOGO_SRCSET : NORMAL_LOGO_SRCSET}" sizes="${isHalloweenLogo ? HALLOWEEN_LOGO_SIZES : NORMAL_LOGO_SIZES}" alt="XmasDB.com — A curated collection of Christmas movies" class="h-20 sm:h-28 md:h-36 lg:h-48 max-w-full w-auto object-contain mx-auto" width="550" height="184" fetchpriority="high" decoding="async" referrerpolicy="no-referrer" />`;
+  return html
+    .replace(/<link id="seasonal-logo-preload"[^>]*\/>/, seasonalLogoPreloadMarkup())
+    .replace(/<img id="initial-logo-image"[^>]*\/>/, imageMarkup);
 }
 
 function getCookieValue(req: express.Request, name: string): string | undefined {
@@ -812,9 +817,7 @@ async function startServer() {
     // footer and stats strip render accurate counts on the very first frame
     // without a separate request. This is data, not server-rendered markup.
     const metaBootstrap = `<script>window.__XMASDB_META__=${JSON.stringify(buildCatalogueMeta()).replace(/</g, '\\u003c')};</script>`;
-    const indexHtml = fs
-      .readFileSync(indexPath, 'utf-8')
-      .replace(/<link id="seasonal-logo-preload"[^>]*\/>/, seasonalLogoPreloadMarkup())
+    const indexHtml = injectSeasonalLogoPreload(fs.readFileSync(indexPath, 'utf-8'))
       .replace('</head>', `    ${metaBootstrap}\n  </head>`);
 
     const sendIndexHtml = (req: express.Request, res: express.Response, status = 200) => {

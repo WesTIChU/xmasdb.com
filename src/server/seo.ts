@@ -314,7 +314,16 @@ export function injectSeoIntoHtml(html: string, seo: SeoDocument): string {
 export function renderServerHtml(indexHtml: string, pathname: string, search = ''): string {
   const routeBootstrap = getServerRouteBootstrap(pathname, search);
   const content = renderServerContent(pathname) || renderRouteContent(pathname, routeBootstrap?.payload);
-  const html = content ? indexHtml.replace('<div id="root"></div>', `<div id="root">${content}</div>`) : indexHtml;
+  const isHomepage = routePath(pathname) === '';
+  const html = content && isHomepage
+    ? (indexHtml.includes('<!-- xmasdb-server-content -->')
+      ? indexHtml.replace('<!-- xmasdb-server-content -->', content)
+      : indexHtml.replace('<div id="root"></div>', `<div id="root">${content}</div>`))
+    : content
+      ? indexHtml
+        .replace(/<div id="root">\s*<header id="initial-logo-header"[^>]*>[\s\S]*?<\/header>\s*<!--[\s\S]*?-->\s*<\/div>/, `<div id="root">${content}</div>`)
+        .replace('<div id="root"></div>', `<div id="root">${content}</div>`)
+      : indexHtml;
   const bootstrap = routeBootstrap
     ? `<script>window.__XMASDB_ROUTE__=${JSON.stringify(routeBootstrap).replace(/</g, '\\u003c')};</script>`
     : '';
