@@ -3,7 +3,7 @@ import fs from 'node:fs/promises';
 import os from 'node:os';
 import path from 'node:path';
 import { Movie } from '../src/types';
-import { normalizeTmdbAlternativeTitles, resolveTmdbReleaseDate } from '../src/utils/tmdb';
+import { normalizeTmdbAlternativeTitles, normalizeTmdbKeywords, resolveTmdbReleaseDate } from '../src/utils/tmdb';
 import { mergeTmdbMovie, refreshTmdbMovie, selectPeopleRefreshMovies } from '../src/utils/tmdb-refresh';
 import { cacheLocalImage, createImageRefreshBudget } from '../src/utils/local-images';
 
@@ -46,6 +46,11 @@ const novemberChristmasReleaseDate = resolveTmdbReleaseDate('2011-06-21', [
 ], [{ id: 10770, name: 'TV Movie' }]);
 assert.equal(novemberChristmasReleaseDate, '2010-11-28', 'TMDB 52688 resolves to its US television premiere');
 
+assert.deepStrictEqual(normalizeTmdbKeywords({ keywords: [
+  { id: 10, name: ' christmas ' }, { id: 10, name: 'duplicate' }, { id: 11, name: 'small town' },
+] }), [{ id: 10, name: 'christmas' }, { id: 11, name: 'small town' }], 'TMDB keywords are normalized and deduplicated by ID');
+assert.deepStrictEqual(normalizeTmdbKeywords(undefined), [], 'movies without TMDB keywords receive an empty collection');
+
 const movie = {
   id: 'movie-1',
   slug: 'movie-1',
@@ -86,6 +91,14 @@ assert.notStrictEqual(unchanged, movie, 'successful unchanged TMDB data records 
 assert.ok(unchanged.tmdbFetchedAt, 'unchanged TMDB data records tmdbFetchedAt');
 assert.equal(unchanged.tmdbUpdatedAt, undefined, 'unchanged TMDB data preserves update semantics');
 
+const keywordMovie = { ...movie, keywords: [{ id: 1, name: 'old name' }, { id: 2, name: 'removed' }] } satisfies Movie;
+const keywordAdded = mergeTmdbMovie(keywordMovie, { keywords: [{ id: 1, name: 'old name' }, { id: 3, name: 'added' }] });
+assert.deepStrictEqual(keywordAdded.keywords, [{ id: 1, name: 'old name' }, { id: 3, name: 'added' }], 'keyword additions and removals replace the stored set');
+assert.deepStrictEqual(mergeTmdbMovie(keywordMovie, { keywords: [{ id: 1, name: 'new name' }] }).keywords, [{ id: 1, name: 'new name' }], 'keyword name changes are stored');
+assert.deepStrictEqual(mergeTmdbMovie(keywordMovie, { keywords: [] }).keywords, [], 'an empty TMDB keyword response clears stale keywords');
+const unchangedKeywords = mergeTmdbMovie(keywordMovie, { keywords: keywordMovie.keywords });
+assert.equal(unchangedKeywords.tmdbUpdatedAt, undefined, 'unchanged keywords do not create a metadata update');
+
 const castMember = (tmdbPersonId: number, name: string) => ({
   actorId: String(tmdbPersonId), name, character: '', slug: name.toLowerCase().replaceAll(' ', '-'), tmdbPersonId,
 });
@@ -122,8 +135,9 @@ globalThis.fetch = (async (input) => {
   overview: imageMovie.synopsis,
   poster_path: metadataPoster,
   backdrop_path: metadataBackdrop,
-  credits: { cast: [], crew: [] },
-  alternative_titles: { titles: [{ title: 'An Alternate Movie 1', iso_3166_1: 'US' }] },
+   credits: { cast: [], crew: [] },
+   keywords: { keywords: [{ id: 42, name: 'holiday romance' }] },
+   alternative_titles: { titles: [{ title: 'An Alternate Movie 1', iso_3166_1: 'US' }] },
   }), { status: 200, headers: { 'content-type': 'application/json' } });
 }) as typeof fetch;
 try {
@@ -133,8 +147,9 @@ try {
     return localPath;
   };
   const optional = await refreshTmdbMovie(imageMovie, 'test-key', cache);
-  assert.ok(metadataUrl.includes('append_to_response=credits,videos,release_dates,external_ids,alternative_titles'), 'alternative titles are appended to the existing movie request');
+  assert.ok(metadataUrl.includes('append_to_response=credits,videos,release_dates,external_ids,alternative_titles,keywords'), 'keywords are appended to the existing movie request');
   assert.deepEqual(optional.alternativeTitles, [{ title: 'An Alternate Movie 1', country: 'US' }]);
+  assert.deepEqual(optional.keywords, [{ id: 42, name: 'holiday romance' }], 'TMDB movie import includes keyword IDs and names');
   assert.equal(cacheCalls, 0, 'missing optional poster/backdrop URLs do not invoke image ingestion');
   assert.equal(optional.posterUrl, imageMovie.posterUrl, 'missing poster preserves existing artwork');
   assert.equal(optional.backdropUrl, imageMovie.backdropUrl, 'missing backdrop preserves existing artwork');

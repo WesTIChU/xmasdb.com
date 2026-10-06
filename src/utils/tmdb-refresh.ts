@@ -21,10 +21,12 @@ export function selectPeopleRefreshMovies(
 }
 
 export function mergeTmdbMovie(movie: Movie, refreshed: Partial<Movie>, posterUrl?: string, backdropUrl?: string): Movie {
-  const safeMetadata = Object.fromEntries(Object.entries(refreshed).filter(([, value]) => (
+  const safeMetadata = Object.fromEntries(Object.entries(refreshed).filter(([key, value]) => (
+    key === 'keywords' || (
     value !== undefined && value !== null &&
     !(typeof value === 'string' && value.trim() === '') &&
     !(Array.isArray(value) && value.length === 0)
+    )
   )));
   const merged = {
     ...movie,

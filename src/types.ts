@@ -33,6 +33,11 @@ export interface Genre {
   name: string;
 }
 
+export interface MovieKeyword {
+  id: number;
+  name: string;
+}
+
 export interface CrewMember {
   id: number;
   name: string;
@@ -85,6 +90,8 @@ export interface Movie {
   /** XmasDB-managed network premiere override; never sourced from TMDB. */
   networkPremiereDate?: string;
   genres?: Genre[];
+  /** Keywords supplied by TMDB; unlike Christmas Ingredients these are not curated by XmasDB. */
+  keywords?: MovieKeyword[];
   releaseDates?: ReleaseDateInfo[];
   crew?: CrewMember[];
   voteAverage?: number;
