@@ -62,6 +62,23 @@ assert.deepStrictEqual(mergeTmdbCertification(undefined, [
   { country: 'GB', releaseDate: '2020-11-27', certification: '12' },
   { country: 'US', releaseDate: '2020-11-27', certification: 'G' },
 ], '2020-11-27', confirmedAt), { ...certificationG, lastConfirmedAt: confirmedAt }, 'the US certification for the selected release date is preferred');
+assert.deepStrictEqual(mergeTmdbCertification(undefined, [
+  { country: 'BR', releaseDate: '2020-11-27', certification: 'L' },
+  { country: 'US', releaseDate: '2020-11-27', certification: 'G' },
+], '2020-11-27', confirmedAt), { ...certificationG, lastConfirmedAt: confirmedAt }, 'US G is preferred over BR L');
+assert.deepStrictEqual(mergeTmdbCertification(undefined, [
+  { country: 'CA', releaseDate: '2020-11-27', certification: 'PG' },
+  { country: 'US', releaseDate: '2020-11-27', certification: 'PG' },
+], '2020-11-27', confirmedAt), { value: 'PG', country: 'US', source: 'tmdb', lastConfirmedAt: confirmedAt }, 'US PG is preferred over foreign classifications');
+assert.equal(mergeTmdbCertification(undefined, [
+  { country: 'BR', releaseDate: '2020-11-27', certification: 'L' },
+  { country: 'GB', releaseDate: '2020-11-27', certification: 'U' },
+], '2020-11-27', confirmedAt), undefined, 'foreign certifications do not populate the field without US data');
+assert.deepStrictEqual(mergeTmdbCertification(certificationG, [], '2020-11-27', confirmedAt), certificationG, 'an existing US certification survives missing US data without reconfirmation');
+assert.deepStrictEqual(mergeTmdbCertification(certificationG, [{ country: 'US', releaseDate: '2020-11-27', certification: 'PG' }], '2020-11-27', confirmedAt), { value: 'PG', country: 'US', source: 'tmdb', lastConfirmedAt: confirmedAt }, 'a changed US certification replaces the old value');
+const brazilianCertification = { value: 'L', country: 'BR', source: 'tmdb' as const, lastConfirmedAt: '2026-10-05T00:00:00.000Z' };
+assert.deepStrictEqual(mergeTmdbCertification(brazilianCertification, [{ country: 'US', releaseDate: '2020-11-27', certification: 'G' }], '2020-11-27', confirmedAt), { ...certificationG, lastConfirmedAt: confirmedAt }, 'a stored foreign certification is replaced when US data becomes available');
+assert.equal(mergeTmdbCertification(brazilianCertification, [{ country: 'GB', releaseDate: '2020-11-27', certification: 'U' }], '2020-11-27', confirmedAt), undefined, 'a stored foreign certification is discarded without US data');
 
 const movie = {
   id: 'movie-1',

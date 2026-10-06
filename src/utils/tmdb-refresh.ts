@@ -24,16 +24,13 @@ function dateOnly(value: string | undefined): string | undefined {
   return value?.match(/^\d{4}-\d{2}-\d{2}/)?.[0];
 }
 
-function explicitCertification(releases: ReleaseDateInfo[] | undefined, country?: string, releaseDate?: string): { value: string; country: string } | undefined {
-  const entries = (releases || []).filter((entry) => entry.certification?.trim());
-  if (entries.length === 0) return undefined;
-  const countryEntries = country ? entries.filter((entry) => entry.country === country) : [];
-  if (country && countryEntries.length === 0) return undefined;
-  const candidates = country ? countryEntries : entries;
+function explicitCertification(releases: ReleaseDateInfo[] | undefined, releaseDate?: string): { value: string; country: 'US' } | undefined {
+  const candidates = (releases || []).filter((entry) => entry.country === 'US' && entry.certification?.trim());
+  if (candidates.length === 0) return undefined;
   const datedCandidates = dateOnly(releaseDate) ? candidates.filter((entry) => dateOnly(entry.releaseDate) === dateOnly(releaseDate)) : [];
   const selectionPool = datedCandidates.length > 0 ? datedCandidates : candidates;
-  const selected = selectionPool.find((entry) => entry.country === 'US') || selectionPool[0];
-  return { value: selected.certification!.trim(), country: selected.country };
+  const selected = selectionPool[0];
+  return { value: selected.certification!.trim(), country: 'US' };
 }
 
 export function mergeTmdbCertification(
@@ -42,8 +39,8 @@ export function mergeTmdbCertification(
   releaseDate: string | undefined,
   confirmedAt: string,
 ): MovieCertification | undefined {
-  const observed = explicitCertification(releases, existing?.country, releaseDate);
-  if (!observed) return existing;
+  const observed = explicitCertification(releases, releaseDate);
+  if (!observed) return existing?.country === 'US' ? existing : undefined;
   if (existing && existing.value === observed.value && existing.country === observed.country) {
     return { ...existing, lastConfirmedAt: confirmedAt };
   }
@@ -76,7 +73,6 @@ export function mergeTmdbMovie(movie: Movie, refreshed: Partial<Movie>, posterUr
   const tmdbFetchedAt = new Date().toISOString();
   const certification = mergeTmdbCertification(movie.certification, refreshed.releaseDates, refreshed.releaseDate, tmdbFetchedAt);
   if (certification) merged.certification = certification;
-  else if (movie.certification) merged.certification = movie.certification;
   else delete merged.certification;
   const changed = Object.keys(merged).some((key) => JSON.stringify(merged[key as keyof Movie]) !== JSON.stringify(movie[key as keyof Movie]));
   return changed

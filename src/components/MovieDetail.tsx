@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ExternalLink, Calendar, Clock, Tv, Film, Play, Star, Clapperboard } from 'lucide-react';
+import { ExternalLink, Calendar, Clock, Tv, Film, Play, Star, Clapperboard, BadgeCheck, Tags } from 'lucide-react';
 import type { ListingMovie, MovieDetailMovie, TriviaFact } from '../api/types';
 import { Trailer } from '../types';
 import { getBrandById } from '../data/brands';
@@ -162,10 +162,21 @@ export const MovieDetail: React.FC<MovieDetailProps> = ({ movie, related, onNavi
                <span className="font-medium text-[#23211E]">{formatMoviePremiereDate(movie) || 'Premiere date TBA'}</span>
               </div>
 
-             {movie.certification && (
+              {movie.certification?.country === 'US' && (
                <div className="flex items-center justify-between">
-                 <span className="text-[#6F675E] flex items-center gap-1.5">Certification</span>
-                 <span className="font-medium text-[#23211E]">{movie.certification.value}{movie.certification.country ? ` (${movie.certification.country})` : ''}</span>
+                  <span className="text-[#6F675E] flex items-center gap-1.5">
+                    <BadgeCheck className="w-3.5 h-3.5" /> Certification
+                  </span>
+                  <span className="font-medium text-[#23211E]">{movie.certification.value}</span>
+               </div>
+             )}
+
+             {movie.genres && movie.genres.length > 0 && (
+               <div className="flex items-start justify-between gap-4">
+                  <span className="text-[#6F675E] flex items-center gap-1.5">
+                    <Tags className="w-3.5 h-3.5" /> Genres
+                  </span>
+                 <span className="font-medium text-[#23211E] text-right">{movie.genres.map((genre) => genre.name).join(' · ')}</span>
                </div>
              )}
 

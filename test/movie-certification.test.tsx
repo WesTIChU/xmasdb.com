@@ -11,9 +11,15 @@ const base = {
   tmdbId: 746045, fingerprints: [], writingCredits: [],
 } satisfies MovieDetailMovie;
 
-const markup = renderToStaticMarkup(<MovieDetail movie={{ ...base, certification: { value: 'G', country: 'US', source: 'tmdb', lastConfirmedAt: '2026-10-06T00:00:00.000Z' } }} related={[]} onNavigate={() => undefined} />);
+const markup = renderToStaticMarkup(<MovieDetail movie={{ ...base, certification: { value: 'G', country: 'US', source: 'tmdb', lastConfirmedAt: '2026-10-06T00:00:00.000Z' }, genres: [{ id: 10770, name: 'TV Movie' }, { id: 10749, name: 'Romance' }] }} related={[]} onNavigate={() => undefined} />);
 assert.match(markup, /Certification/);
-assert.match(markup, />G \(US\)</, 'movie pages render the selected certification and country');
+assert.match(markup, />G</, 'movie pages render the selected US certification');
+assert.doesNotMatch(markup, />G \(US\)</, 'movie pages do not append the US country code');
+assert.match(markup, /lucide-badge-check/, 'certification row renders a badge icon');
+assert.match(markup, /lucide-tags/, 'genres row renders a tags icon');
+
+const foreignCertification = renderToStaticMarkup(<MovieDetail movie={{ ...base, certification: { value: 'L', country: 'BR', source: 'tmdb', lastConfirmedAt: '2026-10-06T00:00:00.000Z' } }} related={[]} onNavigate={() => undefined} />);
+assert.doesNotMatch(foreignCertification, />Certification<\/span>/, 'foreign certifications are not displayed');
 
 const withoutCertification = renderToStaticMarkup(<MovieDetail movie={base} related={[]} onNavigate={() => undefined} />);
 assert.doesNotMatch(withoutCertification, />G \(US\)</, 'movies without certification render without an empty classification');
