@@ -13,6 +13,7 @@ import { getMoviePoster } from '../utils/posters';
 import { getFingerprintById } from '../data/fingerprints';
 import { FingerprintChips } from './FingerprintChips';
 import { resolveImageUrl } from '../utils/image-url';
+import { getHomepageActorSrcSet } from '../utils/homepage-images';
 import { formatLastUpdatedDate } from '../utils/last-updated';
 import { TriviaAside } from './TriviaAside';
 
@@ -306,16 +307,19 @@ export const MovieDetail: React.FC<MovieDetailProps> = ({ movie, related, onNavi
               <h2 id="cast-heading" className="text-base font-heading font-semibold text-[#1A3D2F]">
                 Starring Cast
               </h2>
-              <span className="text-xs text-[#6F675E] font-sans-clean">
+              <span className="text-sm sm:text-base font-semibold text-[#59524A] font-sans-clean">
                 {movie.cast.length} cast {movie.cast.length === 1 ? 'member' : 'members'}
               </span>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4" id="movie-cast-list">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-6 sm:gap-y-7 md:gap-y-8" id="movie-cast-list">
               {visibleCast.map((member) => {
                 const actorTmdbId = member.resolvedTmdbPersonId ?? member.tmdbPersonId ?? 0;
                 const actorPath = getActorPath(actorTmdbId, member.slug);
                 const photoSrc = resolveImageUrl(member.resolvedProfileUrl || member.profileUrl);
+                const photoSrcSet = member.resolvedProfileUrl || member.profileUrl
+                  ? getHomepageActorSrcSet(member.resolvedProfileUrl || member.profileUrl || '')
+                  : undefined;
 
                 return (
                   <div
@@ -329,11 +333,13 @@ export const MovieDetail: React.FC<MovieDetailProps> = ({ movie, related, onNavi
                         e.preventDefault();
                         onNavigate(actorPath);
                       }}
-                      className="w-15 h-15 sm:w-15 sm:h-15 rounded-lg overflow-hidden bg-[#ECE4D8] shrink-0 border border-[#E0D7CC] group-hover:border-[#841818]/60 transition-colors flex items-center justify-center focus:outline-none"
+                      className="w-15 h-15 sm:w-16 sm:h-16 md:w-20 md:h-20 rounded-lg overflow-hidden bg-[#ECE4D8] shrink-0 border border-[#E0D7CC] group-hover:border-[#841818]/60 transition-colors flex items-center justify-center focus:outline-none"
                     >
                       {photoSrc ? (
                         <img
                           src={photoSrc}
+                          srcSet={photoSrcSet}
+                          sizes="(min-width: 768px) 80px, (min-width: 640px) 64px, 60px"
                           alt={member.name}
                           width={500}
                           height={750}
