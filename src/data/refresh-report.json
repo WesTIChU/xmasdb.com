@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-10-06T17:10:01.376Z",
+  "refreshedAt": "2026-10-06T18:06:53.965Z",
   "catalogueMovies": 826,
   "moviesWithTmdbIds": 826,
   "moviesSuccessfullyRefreshed": 826,
@@ -9,18 +9,12 @@
   "uniqueCatalogueActors": 8178,
   "actorsSuccessfullyRefreshed": 8178,
   "actorFailures": [],
-  "imageWarnings": [
-    {
-      "tmdbId": 1720388,
-      "title": "Walter Platz",
-      "message": "Image ingestion failed: R2 publication failed for people/1720388.webp: PUT failed: HTTP 429"
-    }
-  ],
+  "imageWarnings": [],
   "freshMovieRecords": 826,
   "staleMovieRecords": 0,
-  "freshActors": 2366,
+  "freshActors": 2369,
   "staleActors": 0,
-  "legacyActorsAwaitingFreshnessTimestamp": 5812,
+  "legacyActorsAwaitingFreshnessTimestamp": 5809,
   "freshImages": 7126,
   "staleImages": 0,
   "legacyImagesAwaitingFreshnessTimestamp": 0,

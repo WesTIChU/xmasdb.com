@@ -2053,8 +2053,9 @@
     "imdbPersonId": "nm1830016",
     "gender": "Male",
     "knownForDepartment": "Acting",
-    "knownCredits": 32,
-    "tmdbUpdatedAt": "2026-09-20T16:19:14.633Z"
+    "knownCredits": 33,
+    "tmdbUpdatedAt": "2026-10-06T17:53:11.291Z",
+    "tmdbFetchedAt": "2026-10-06T17:53:11.291Z"
   },
   {
     "id": "alan-powell",
@@ -3649,14 +3650,15 @@
     "imdbPersonId": "nm3880577",
     "gender": "Female",
     "knownForDepartment": "Acting",
-    "knownCredits": 20,
+    "knownCredits": 21,
     "alsoKnownAs": [
       "Alicia Vita Jones",
       "Alicia Josipovic"
     ],
     "instagramId": "TheAliciaDea",
     "twitterId": "TheAliciaDea",
-    "tmdbUpdatedAt": "2026-09-20T16:19:14.877Z"
+    "tmdbUpdatedAt": "2026-10-06T17:53:21.277Z",
+    "tmdbFetchedAt": "2026-10-06T17:53:21.277Z"
   },
   {
     "id": "alicia-haymer",
@@ -36009,9 +36011,11 @@
     "name": "Elijah-Justus Lewis",
     "tmdbPersonId": 5503751,
     "imdbPersonId": "nm17354695",
+    "gender": "Male",
     "knownForDepartment": "Acting",
     "knownCredits": 4,
-    "tmdbUpdatedAt": "2026-09-20T16:16:56.373Z"
+    "tmdbUpdatedAt": "2026-10-06T17:56:54.152Z",
+    "tmdbFetchedAt": "2026-10-06T17:56:54.152Z"
   },
   {
     "id": "elimu-nelson",
@@ -105209,9 +105213,9 @@
     "profileUrl": "/images/people/6431425.webp",
     "imdbPersonId": "nm17778649",
     "knownForDepartment": "Acting",
-    "knownCredits": 3,
-    "tmdbUpdatedAt": "2026-10-06T17:08:19.847Z",
-    "tmdbFetchedAt": "2026-10-06T17:08:19.847Z"
+    "knownCredits": 4,
+    "tmdbUpdatedAt": "2026-10-06T18:04:54.968Z",
+    "tmdbFetchedAt": "2026-10-06T18:04:54.968Z"
   },
   {
     "id": "3755743",
@@ -105826,14 +105830,14 @@
     "imdbPersonId": "nm0000276",
     "gender": "Male",
     "knownForDepartment": "Acting",
-    "knownCredits": 215,
+    "knownCredits": 214,
     "alsoKnownAs": [
       "Sean Patrick Duke"
     ],
     "instagramId": "seanastin",
     "facebookId": "SeanAstinPublic",
-    "tmdbUpdatedAt": "2026-10-06T17:08:23.594Z",
-    "tmdbFetchedAt": "2026-10-06T17:08:23.594Z"
+    "tmdbUpdatedAt": "2026-10-06T18:05:00.051Z",
+    "tmdbFetchedAt": "2026-10-06T18:05:00.051Z"
   },
   {
     "id": "sean-bexton",
@@ -107448,9 +107452,9 @@
     "tmdbPersonId": 1028741,
     "imdbPersonId": "nm0860704",
     "knownForDepartment": "Acting",
-    "knownCredits": 5,
-    "tmdbUpdatedAt": "2026-10-06T17:08:33.684Z",
-    "tmdbFetchedAt": "2026-10-06T17:08:33.684Z"
+    "knownCredits": 6,
+    "tmdbUpdatedAt": "2026-10-06T18:05:10.803Z",
+    "tmdbFetchedAt": "2026-10-06T18:05:10.803Z"
   },
   {
     "id": "shaw-madson",
