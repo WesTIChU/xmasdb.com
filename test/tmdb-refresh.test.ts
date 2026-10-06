@@ -4,7 +4,7 @@ import os from 'node:os';
 import path from 'node:path';
 import { Movie } from '../src/types';
 import { normalizeTmdbAlternativeTitles, normalizeTmdbKeywords, resolveTmdbReleaseDate } from '../src/utils/tmdb';
-import { mergeTmdbMovie, refreshTmdbMovie, selectPeopleRefreshMovies } from '../src/utils/tmdb-refresh';
+import { mergeTmdbCertification, mergeTmdbMovie, refreshTmdbMovie, selectPeopleRefreshMovies } from '../src/utils/tmdb-refresh';
 import { cacheLocalImage, createImageRefreshBudget } from '../src/utils/local-images';
 
 console.log('Running TMDB refresh tests...');
@@ -50,6 +50,18 @@ assert.deepStrictEqual(normalizeTmdbKeywords({ keywords: [
   { id: 10, name: ' christmas ' }, { id: 10, name: 'duplicate' }, { id: 11, name: 'small town' },
 ] }), [{ id: 10, name: 'christmas' }, { id: 11, name: 'small town' }], 'TMDB keywords are normalized and deduplicated by ID');
 assert.deepStrictEqual(normalizeTmdbKeywords(undefined), [], 'movies without TMDB keywords receive an empty collection');
+
+const confirmedAt = '2026-10-06T00:00:00.000Z';
+const certificationG = { value: 'G', country: 'US', source: 'tmdb' as const, lastConfirmedAt: '2026-10-05T00:00:00.000Z' };
+assert.deepStrictEqual(mergeTmdbCertification(undefined, [{ country: 'US', releaseDate: '2020-11-27', certification: 'G' }], '2020-11-27', confirmedAt), { ...certificationG, lastConfirmedAt: confirmedAt }, 'TMDB G is stored when no certification exists');
+assert.deepStrictEqual(mergeTmdbCertification(certificationG, [{ country: 'US', releaseDate: '2020-11-27', certification: 'G' }], '2020-11-27', confirmedAt), { ...certificationG, lastConfirmedAt: confirmedAt }, 'same TMDB certification is retained and reconfirmed');
+assert.deepStrictEqual(mergeTmdbCertification(certificationG, [{ country: 'US', releaseDate: '2020-11-27', certification: 'PG' }], '2020-11-27', confirmedAt), { value: 'PG', country: 'US', source: 'tmdb', lastConfirmedAt: confirmedAt }, 'an explicit TMDB certification correction replaces the old value');
+assert.deepStrictEqual(mergeTmdbCertification(certificationG, [{ country: 'US', releaseDate: '2020-11-27', certification: '' }], '2020-11-27', confirmedAt), certificationG, 'an empty certification retains the old value without reconfirming it');
+assert.deepStrictEqual(mergeTmdbCertification(certificationG, [{ country: 'GB', releaseDate: '2020-11-27', certification: '12' }], '2020-11-27', confirmedAt), certificationG, 'another country cannot replace the selected country certification');
+assert.deepStrictEqual(mergeTmdbCertification(undefined, [
+  { country: 'GB', releaseDate: '2020-11-27', certification: '12' },
+  { country: 'US', releaseDate: '2020-11-27', certification: 'G' },
+], '2020-11-27', confirmedAt), { ...certificationG, lastConfirmedAt: confirmedAt }, 'the US certification for the selected release date is preferred');
 
 const movie = {
   id: 'movie-1',

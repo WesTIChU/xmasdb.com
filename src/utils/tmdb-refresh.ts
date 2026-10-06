@@ -1,4 +1,4 @@
-import type { Movie } from '../types';
+import type { Movie, MovieCertification, ReleaseDateInfo } from '../types';
 import { fetchTmdbMovie } from './tmdb';
 import { cacheLocalImage, type ImageRefreshBudget } from './local-images';
 import { ingestManagedImage } from '../server/managed-images';
@@ -18,6 +18,36 @@ export function selectPeopleRefreshMovies(
   }
   if (options.requestedId) return movies.filter((movie) => movie.tmdbId === options.requestedId);
   return movies;
+}
+
+function dateOnly(value: string | undefined): string | undefined {
+  return value?.match(/^\d{4}-\d{2}-\d{2}/)?.[0];
+}
+
+function explicitCertification(releases: ReleaseDateInfo[] | undefined, country?: string, releaseDate?: string): { value: string; country: string } | undefined {
+  const entries = (releases || []).filter((entry) => entry.certification?.trim());
+  if (entries.length === 0) return undefined;
+  const countryEntries = country ? entries.filter((entry) => entry.country === country) : [];
+  if (country && countryEntries.length === 0) return undefined;
+  const candidates = country ? countryEntries : entries;
+  const datedCandidates = dateOnly(releaseDate) ? candidates.filter((entry) => dateOnly(entry.releaseDate) === dateOnly(releaseDate)) : [];
+  const selectionPool = datedCandidates.length > 0 ? datedCandidates : candidates;
+  const selected = selectionPool.find((entry) => entry.country === 'US') || selectionPool[0];
+  return { value: selected.certification!.trim(), country: selected.country };
+}
+
+export function mergeTmdbCertification(
+  existing: MovieCertification | undefined,
+  releases: ReleaseDateInfo[] | undefined,
+  releaseDate: string | undefined,
+  confirmedAt: string,
+): MovieCertification | undefined {
+  const observed = explicitCertification(releases, existing?.country, releaseDate);
+  if (!observed) return existing;
+  if (existing && existing.value === observed.value && existing.country === observed.country) {
+    return { ...existing, lastConfirmedAt: confirmedAt };
+  }
+  return { ...observed, source: 'tmdb', lastConfirmedAt: confirmedAt };
 }
 
 export function mergeTmdbMovie(movie: Movie, refreshed: Partial<Movie>, posterUrl?: string, backdropUrl?: string): Movie {
@@ -43,8 +73,12 @@ export function mergeTmdbMovie(movie: Movie, refreshed: Partial<Movie>, posterUr
     posterUrl: posterUrl || movie.posterUrl,
     backdropUrl: backdropUrl || movie.backdropUrl,
   };
-  const changed = Object.keys(merged).some((key) => JSON.stringify(merged[key as keyof Movie]) !== JSON.stringify(movie[key as keyof Movie]));
   const tmdbFetchedAt = new Date().toISOString();
+  const certification = mergeTmdbCertification(movie.certification, refreshed.releaseDates, refreshed.releaseDate, tmdbFetchedAt);
+  if (certification) merged.certification = certification;
+  else if (movie.certification) merged.certification = movie.certification;
+  else delete merged.certification;
+  const changed = Object.keys(merged).some((key) => JSON.stringify(merged[key as keyof Movie]) !== JSON.stringify(movie[key as keyof Movie]));
   return changed
     ? { ...merged, tmdbUpdatedAt: tmdbFetchedAt, tmdbFetchedAt }
     : { ...movie, tmdbFetchedAt };

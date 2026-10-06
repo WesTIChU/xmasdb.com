@@ -160,7 +160,14 @@ export const MovieDetail: React.FC<MovieDetailProps> = ({ movie, related, onNavi
                 <Calendar className="w-3.5 h-3.5" /> Release Date
               </span>
                <span className="font-medium text-[#23211E]">{formatMoviePremiereDate(movie) || 'Premiere date TBA'}</span>
-             </div>
+              </div>
+
+             {movie.certification && (
+               <div className="flex items-center justify-between">
+                 <span className="text-[#6F675E] flex items-center gap-1.5">Certification</span>
+                 <span className="font-medium text-[#23211E]">{movie.certification.value}{movie.certification.country ? ` (${movie.certification.country})` : ''}</span>
+               </div>
+             )}
 
              {brand && movie.networkPremiereDate && movie.networkPremiereDate !== movie.releaseDate && (
                <div className="flex items-center justify-between">

@@ -55,6 +55,13 @@ export interface ReleaseDateInfo {
   note?: string;
 }
 
+export interface MovieCertification {
+  value: string;
+  country: string;
+  source: 'tmdb';
+  lastConfirmedAt: string;
+}
+
 export interface AlternativeTitle {
   title: string;
   country: string;
@@ -93,6 +100,8 @@ export interface Movie {
   /** Keywords supplied by TMDB; unlike Christmas Ingredients these are not curated by XmasDB. */
   keywords?: MovieKeyword[];
   releaseDates?: ReleaseDateInfo[];
+  /** The last non-empty TMDB certification selected for the catalogue's release context. */
+  certification?: MovieCertification;
   crew?: CrewMember[];
   voteAverage?: number;
   voteCount?: number;
