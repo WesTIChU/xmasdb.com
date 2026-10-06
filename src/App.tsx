@@ -902,6 +902,7 @@ export default function App() {
                     directingFilmography={view.payload.directingFilmography}
                     writingFilmography={view.payload.writingFilmography}
                     backdropUrl={view.payload.backdropUrl}
+                    frequentCoStars={view.payload.frequentCoStars}
                     trivia={view.payload.trivia}
                     onNavigate={navigate}
                     onSelectMovie={selectMovie}

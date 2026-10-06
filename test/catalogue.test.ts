@@ -4,11 +4,25 @@ import { getActorBackdrop } from '../src/utils/backdrops';
 import { getPopulatedBrands } from '../src/data/brands';
 import { getRadarrAllFeedJson, getRadarrNetworkFeedJson, getSitemapChildXml, isMovieEligibleForRadarr } from '../src/utils/feeds';
 import { buildCatalogueUrl, getCataloguePage, parseCatalogueQuery } from '../src/utils/catalogue-pagination';
-import { buildCatalogueListing, selectDiscoverMovies, selectThisMonthMovies, selectRelatedMovies } from '../src/server/catalogue-api';
+import { buildActorDetail, buildCatalogueListing, buildMovieDetail, selectDiscoverMovies, selectThisMonthMovies, selectRelatedMovies } from '../src/server/catalogue-api';
 import { getMoviePoster } from '../src/utils/posters';
 import { getMoviePremiereDateKey } from '../src/utils/catalogue-lifecycle';
 
 console.log('Running catalogue pagination and local backdrop tests...');
+
+const jevMovie = MOVIES.find((movie) => movie.keywords?.some((keyword) => !('id' in keyword)));
+if (jevMovie) {
+  const publicMovie = buildMovieDetail(String(jevMovie.tmdbId), jevMovie.slug);
+  assert.ok(publicMovie, 'movie detail should be available for Jev payload audit');
+  assert.ok(!JSON.stringify(publicMovie).includes('evidence'), 'Jev evidence must not be included in public movie payloads');
+}
+
+const actorWithCoStars = MOVIES.flatMap((movie) => movie.cast).find((member) => member.tmdbPersonId);
+if (actorWithCoStars?.tmdbPersonId) {
+  const publicActor = buildActorDetail(String(actorWithCoStars.tmdbPersonId));
+  assert.ok(publicActor, 'actor detail should be available for co-star payload audit');
+  assert.ok(Array.isArray(publicActor.frequentCoStars), 'co-stars must be computed in the server actor payload');
+}
 
 const defaultPage = getCataloguePage(MOVIES, parseCatalogueQuery(''));
 assert.strictEqual(defaultPage.perPage, 24);

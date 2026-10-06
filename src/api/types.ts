@@ -263,6 +263,8 @@ export interface ActorDetailPayload {
   backdropUrl: string | null;
   /** Present only when multiple catalogue actors share the same display name. */
   titleDisambiguator?: string;
+  /** Server-computed so actor routes do not pull the catalogue into the client bundle. */
+  frequentCoStars?: Array<{ actor: Actor; sharedMovieCount: number }>;
   trivia?: TriviaFact;
 }
 

@@ -11,7 +11,6 @@ import { calculateAge, calculateAgeAtDeath, formatActorDate, isValidActorDate, s
 import { ComingSoonPoster } from './ComingSoonPoster';
 import { resolveImageUrl } from '../utils/image-url';
 import { formatLastUpdatedDate } from '../utils/last-updated';
-import { getFrequentCoStars } from '../utils/co-stars';
 import { ActorCircularPortrait } from './PopularActorsSection';
 import { getFilmographyMilestones } from '../utils/filmography-milestones';
 import { isBirthdayToday } from '../utils/birthdays';
@@ -27,6 +26,7 @@ interface ActorDetailProps {
   onNavigate: (path: string) => void;
   onSelectMovie: (slug: string, tmdbId?: number) => void;
   trivia?: TriviaFact;
+  frequentCoStars?: Array<{ actor: Actor; sharedMovieCount: number }>;
 }
 
 export const ActorDetail: React.FC<ActorDetailProps> = ({
@@ -39,6 +39,7 @@ export const ActorDetail: React.FC<ActorDetailProps> = ({
   onNavigate,
   onSelectMovie,
   trivia,
+  frequentCoStars = [],
 }) => {
   const safeFilmography = Array.isArray(filmography) ? filmography : [];
   const safeActingFilmography = Array.isArray(actingFilmography) ? actingFilmography : safeFilmography.filter((movie) => !movie.crewJobs?.length);
@@ -86,7 +87,6 @@ export const ActorDetail: React.FC<ActorDetailProps> = ({
   const formattedDeathday = isDeceased ? formatActorDate(actor.deathday) : null;
   const biography = sanitizeBiography(actor.biography);
   const lastUpdated = formatLastUpdatedDate(actor.tmdbUpdatedAt);
-  const frequentCoStars = useMemo(() => getFrequentCoStars(actor), [actor.tmdbPersonId]);
   const filmographyMilestones = getFilmographyMilestones(safeActingFilmography);
   const birthdayToday = isBirthdayToday(actor.birthday || '');
 

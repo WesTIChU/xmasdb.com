@@ -97,6 +97,16 @@ function isKnownPagePath(rawPath: string): boolean {
   return false;
 }
 
+function seasonalLogoPreloadMarkup(): string {
+  const seasonalLogo = getSeasonalLogo();
+  const isHalloweenLogo = seasonalLogo === HALLOWEEN_LOGO;
+  return `<link id="seasonal-logo-preload" rel="preload" as="image" fetchpriority="high" href="${seasonalLogo}" imagesrcset="${isHalloweenLogo ? HALLOWEEN_LOGO_SRCSET : NORMAL_LOGO_SRCSET}" imagesizes="${isHalloweenLogo ? HALLOWEEN_LOGO_SIZES : NORMAL_LOGO_SIZES}" />`;
+}
+
+function injectSeasonalLogoPreload(html: string): string {
+  return html.replace(/<link id="seasonal-logo-preload"[^>]*\/>/, seasonalLogoPreloadMarkup());
+}
+
 function getCookieValue(req: express.Request, name: string): string | undefined {
   const cookies = req.headers.cookie?.split(';') || [];
   const prefix = `${name}=`;
@@ -773,6 +783,12 @@ async function startServer() {
     const vite = await createViteServer({
       server: { middlewareMode: true },
       appType: 'spa',
+      plugins: [{
+        name: 'xmasdb-seasonal-logo-preload',
+        transformIndexHtml(html) {
+          return injectSeasonalLogoPreload(html);
+        },
+      }],
     });
     app.use(vite.middlewares);
   } else {
@@ -796,12 +812,9 @@ async function startServer() {
     // footer and stats strip render accurate counts on the very first frame
     // without a separate request. This is data, not server-rendered markup.
     const metaBootstrap = `<script>window.__XMASDB_META__=${JSON.stringify(buildCatalogueMeta()).replace(/</g, '\\u003c')};</script>`;
-    const seasonalLogo = getSeasonalLogo();
-    const isHalloweenLogo = seasonalLogo === HALLOWEEN_LOGO;
-    const seasonalLogoPreload = `<link id="seasonal-logo-preload" rel="preload" as="image" href="${seasonalLogo}" imagesrcset="${isHalloweenLogo ? HALLOWEEN_LOGO_SRCSET : NORMAL_LOGO_SRCSET}" imagesizes="${isHalloweenLogo ? HALLOWEEN_LOGO_SIZES : NORMAL_LOGO_SIZES}" />`;
     const indexHtml = fs
       .readFileSync(indexPath, 'utf-8')
-      .replace(/<link id="seasonal-logo-preload"[^>]*\/>/, seasonalLogoPreload)
+      .replace(/<link id="seasonal-logo-preload"[^>]*\/>/, seasonalLogoPreloadMarkup())
       .replace('</head>', `    ${metaBootstrap}\n  </head>`);
 
     const sendIndexHtml = (req: express.Request, res: express.Response, status = 200) => {

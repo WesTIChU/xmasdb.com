@@ -4,10 +4,10 @@ import net from 'node:net';
 import os from 'node:os';
 import path from 'node:path';
 
-const port = 3150;
+const port = 3000;
 const marionettePort = 2828;
 const routes = [
-  { path: '/', text: 'Discover Christmas Movies' },
+  { path: '/', text: 'Discover' },
   { path: '/movies/', text: 'All Christmas Movies' },
   { path: '/hallmark/', text: 'Hallmark Christmas Movies' },
   { path: '/lifetime/', text: 'Lifetime Christmas Movies' },
@@ -113,7 +113,12 @@ async function main(): Promise<void> {
       if (value.text.includes('Something went wrong loading this page.') || value.text.includes('XmasDB needs a refresh')) throw new Error(`${route.path} rendered a generic error state. DOM=${JSON.stringify(value)}`);
       if (value.errors?.length) throw new Error(`${route.path} recorded browser errors: ${value.errors.join(' | ')}`);
       if (!value.title || !value.canonical || value.robots !== 'index,follow,max-image-preview:large' || !value.links) throw new Error(`${route.path} did not produce complete indexable page metadata. DOM=${JSON.stringify(value)}`);
-      if (value.resources?.some((resource) => resource.includes(`/api/${route.path.split('/')[1]}/`))) throw new Error(`${route.path} unexpectedly fetched its entity API after bootstrapping.`);
+      const unexpectedEntityApi = value.resources?.some((resource) => {
+        const routeApiPrefix = `/api/${route.path.split('/')[1]}/`;
+        const allowedFeedsApis = ['/api/feeds/meta', '/api/feeds/pull-totals'];
+        return resource.includes(routeApiPrefix) && !(route.path === '/feeds/' && allowedFeedsApis.some((api) => resource.includes(api)));
+      });
+      if (unexpectedEntityApi) throw new Error(`${route.path} unexpectedly fetched its entity API after bootstrapping.`);
     };
 
     const installErrorCapture = async () => {

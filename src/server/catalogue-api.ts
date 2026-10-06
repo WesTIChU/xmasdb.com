@@ -47,6 +47,7 @@ import { getCreativeCrew, getPersonSlug, isCreativeCrewJob } from '../utils/crea
 import { FINGERPRINTS, getFingerprintById } from '../data/fingerprints';
 import { getMovieFingerprints, getRelatedMovieFingerprints, movieHasFingerprint } from '../data/movie-fingerprints';
 import { selectTriviaFact } from '../utils/trivia';
+import { getFrequentCoStars } from '../utils/co-stars';
 
 const FAVOURITE_MOVIE_TITLES = [
   'Christmas by Starlight',
@@ -332,6 +333,7 @@ export function buildActorDetail(identifier: string, slug?: string, now: Date = 
     writingFilmography,
     backdropUrl: backdrop ? backdrop.url : null,
     titleDisambiguator: getActorTitleDisambiguator(actor),
+    frequentCoStars: getFrequentCoStars(actor),
     trivia: selectTriviaFact(now, { actor }) || undefined,
   };
 }
@@ -469,6 +471,30 @@ export function buildSearchResults(rawQuery: string): SearchResultsPayload {
 // ---------------------------------------------------------------------------
 
 let homeCache: { dateKey: string; payload: HomePayload } | null = null;
+
+let actingMovieCountsCache: Map<number, number> | null = null;
+
+/** Builds acting counts once for homepage actor cards and birthdays. */
+function getActingMovieCounts(): Map<number, number> {
+  if (actingMovieCountsCache) return actingMovieCountsCache;
+
+  const movieIdsByActor = new Map<number, Set<string>>();
+  for (const movie of MOVIES) {
+    for (const member of movie.cast) {
+      if (member.character === undefined) continue;
+      const personId = member.tmdbPersonId || getTmdbPersonIdForSlug(member.slug);
+      if (!personId) continue;
+      const movieIds = movieIdsByActor.get(personId) || new Set<string>();
+      movieIds.add(movie.id);
+      movieIdsByActor.set(personId, movieIds);
+    }
+  }
+
+  actingMovieCountsCache = new Map(
+    [...movieIdsByActor.entries()].map(([personId, movieIds]) => [personId, movieIds.size]),
+  );
+  return actingMovieCountsCache;
+}
 
 const DISCOVERY_BRAND_IDS = ['hallmark', 'lifetime', 'gaf', 'uptv'] as const;
 
@@ -629,7 +655,7 @@ export function buildHomePayload(now: Date = new Date()): HomePayload {
       name: actor.name,
       tmdbPersonId: actor.tmdbPersonId,
       photoUrl: actor.profileUrl || actor.photoUrl,
-      movieCount: actor.tmdbPersonId ? getActorActingFilmographyCount(String(actor.tmdbPersonId)) : movieCount,
+       movieCount: actor.tmdbPersonId ? getActingMovieCounts().get(actor.tmdbPersonId) || movieCount : movieCount,
     }));
     if (actors.length > 0) popularActors.push({ brandId: brand.id, actors });
   }
@@ -675,7 +701,7 @@ export function buildBirthdaysPayload(): BirthdaysPayload {
       tmdbPersonId: actor.tmdbPersonId,
       photoUrl: actor.profileUrl || actor.photoUrl,
       birthday: actor.birthday as string,
-      popularity: getActorActingFilmographyCount(String(actor.tmdbPersonId)),
+      popularity: getActingMovieCounts().get(actor.tmdbPersonId) || 0,
     }));
   birthdaysPayloadCache = { actors: sortBirthdays(actors) };
   return birthdaysPayloadCache;

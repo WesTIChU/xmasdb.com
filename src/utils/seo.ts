@@ -3,7 +3,6 @@ import type { ActorFilmographyItem, MovieDetailMovie } from '../api/types';
 import { getBrandById } from '../data/brands';
 import { SITE_ORIGIN, getActorPath, getCalendarPath, getFeedsPath, getMoviePath, getMoviesPath, getNetworkPath, getYearPath, toCanonicalUrl } from './urls';
 import { resolveImageUrl } from './image-url';
-import { isActorIndexWorthy } from './actor-indexing';
 
 export interface SeoDocument {
   title: string;
@@ -24,6 +23,14 @@ function absoluteUrl(value?: string): string | undefined {
 
 function cleanText(value: string): string {
   return value.replace(/\s+/g, ' ').trim();
+}
+
+/** Client-safe actor indexing check; catalogue-wide credit counts stay server-only. */
+function isActorIndexWorthy(actor: Actor, filmography: { length: number }): boolean {
+  if (filmography.length >= 2) return true;
+  const biography = actor.biography?.replace(/\s+/g, ' ').trim() || '';
+  const wordCount = biography ? biography.split(' ').filter(Boolean).length : 0;
+  return filmography.length === 1 && biography.length >= 160 && wordCount >= 25;
 }
 
 export function truncateDescription(value: string, maxLength = 160): string {
