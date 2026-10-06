@@ -64,7 +64,7 @@ export async function enrichNewCatalogueActors(
           try {
             profileUrl = await imageIngestor(fetched.profileUrl, `/images/people/${person.tmdbPersonId}.webp`);
           } catch (error) {
-            console.error(`[Actor Enrichment] Image ingestion failed for ${person.tmdbPersonId}: ${error instanceof Error ? error.message : String(error)}`);
+            console.warn(`[Actor Enrichment] Image warning for ${person.tmdbPersonId}: ${error instanceof Error ? error.message : String(error)}`);
           }
         }
         const actor: Actor = {

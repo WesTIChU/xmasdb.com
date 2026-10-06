@@ -18,6 +18,7 @@ export interface PersonEnrichmentResult {
   updated: number;
   changed: number;
   failures: Array<{ tmdbPersonId: number; name: string; message: string }>;
+  imageFailures: Array<{ tmdbPersonId: number; name: string; message: string }>;
   attemptedIds: number[];
   actor?: Actor;
   actors: Actor[];
@@ -63,9 +64,9 @@ export function resolveManagedPersonImage(published: string | undefined, existin
   return published || (isManagedCanonicalPath(existing) ? existing : undefined);
 }
 
-async function readActors(): Promise<Map<number, Actor>> {
+async function readActors(filePath = actorsPath): Promise<Map<number, Actor>> {
   try {
-    const actors = JSON.parse(await fs.readFile(actorsPath, 'utf8')) as Actor[];
+    const actors = JSON.parse(await fs.readFile(filePath, 'utf8')) as Actor[];
     return new Map(actors.filter((actor) => actor.tmdbPersonId).map((actor) => [actor.tmdbPersonId, actor]));
   } catch {
     return new Map();
@@ -120,7 +121,7 @@ export async function enrichCataloguePeople(
   apiKey: string,
   personId?: number,
   onProgress?: (current: number, total: number, person: CataloguePersonSeed) => void,
-  options: { maxPeople?: number; imageBudget?: ImageRefreshBudget; imageIngestor?: typeof ingestManagedImage; forceRefreshExisting?: boolean; preserveUnchangedTimestamps?: boolean } = {},
+  options: { maxPeople?: number; imageBudget?: ImageRefreshBudget; imageIngestor?: typeof ingestManagedImage; forceRefreshExisting?: boolean; preserveUnchangedTimestamps?: boolean; actorsPath?: string } = {},
 ): Promise<PersonEnrichmentResult> {
   const people = cataloguePeople(movies);
   const person = personId ? people.get(personId) : undefined;
@@ -128,7 +129,7 @@ export async function enrichCataloguePeople(
     throw new Error(`TMDB person ${personId} is not represented in the local XmasDB catalogue.`);
   }
 
-  const actorsById = await readActors();
+  const actorsById = await readActors(options.actorsPath);
   const existingPeople = new Map([...actorsById.values()].map((actor) => [actor.tmdbPersonId, {
     tmdbPersonId: actor.tmdbPersonId,
     name: actor.name,
@@ -149,6 +150,7 @@ export async function enrichCataloguePeople(
       ? candidates
       : new Map([...candidates.entries()].slice(0, maxPeople));
   const failures: PersonEnrichmentResult['failures'] = [];
+  const imageFailures: PersonEnrichmentResult['imageFailures'] = [];
   const attemptedIds: number[] = [];
   let updated = 0;
   let changed = 0;
@@ -174,8 +176,9 @@ export async function enrichCataloguePeople(
         try {
           profileUrl = await cacheProfile(fetched.profileUrl, tmdbPersonId, options.imageBudget, options.imageIngestor);
         } catch (error) {
-          console.error(`[Actor Enrichment] Image ingestion failed for ${tmdbPersonId}: ${error instanceof Error ? error.message : String(error)}`);
-          failures.push({ tmdbPersonId, name: person.name, message: `Image ingestion failed: ${error instanceof Error ? error.message : String(error)}` });
+          const message = error instanceof Error ? error.message : String(error);
+          console.warn(`[Actor Enrichment] Image warning for ${tmdbPersonId}: ${message}`);
+          imageFailures.push({ tmdbPersonId, name: person.name, message: `Image ingestion failed: ${message}` });
         }
          const fetchedAt = new Date().toISOString();
          const refreshedActor: Actor = {
@@ -219,7 +222,7 @@ export async function enrichCataloguePeople(
   await Promise.all(Array.from({ length: Math.min(5, entries.length) }, () => refreshWorker()));
 
   if (changed > 0) {
-    await writeFileAtomically(actorsPath, JSON.stringify([...actorsById.values()].sort((a, b) => a.name.localeCompare(b.name)), null, 2));
+    await writeFileAtomically(options.actorsPath || actorsPath, JSON.stringify([...actorsById.values()].sort((a, b) => a.name.localeCompare(b.name)), null, 2));
   }
   const considered = personId ? 1 : options.forceRefreshExisting ? target.size : total;
   return {
@@ -229,6 +232,7 @@ export async function enrichCataloguePeople(
     updated,
     changed,
     failures,
+    imageFailures,
     attemptedIds,
     actor: lastActor,
     actors: [...actorsById.values()],

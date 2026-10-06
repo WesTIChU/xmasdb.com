@@ -1,8 +1,11 @@
 import assert from 'node:assert/strict';
+import fs from 'node:fs/promises';
+import os from 'node:os';
+import path from 'node:path';
 import type { Actor, Movie } from '../src/types';
 import { enrichNewCatalogueActors, getNewPeople } from '../src/server/actor-import';
 import { isFullCatalogueRefresh } from '../scripts/refresh-tmdb';
-import { actorMetadataChanged, findIncompleteCataloguePeople, isActorEnriched, resolveManagedPersonImage } from '../src/utils/person-enrichment';
+import { actorMetadataChanged, enrichCataloguePeople, findIncompleteCataloguePeople, isActorEnriched, resolveManagedPersonImage } from '../src/utils/person-enrichment';
 
 function movie(id: string, people: Array<{ id: number; name: string }>): Movie {
   return {
@@ -136,6 +139,44 @@ try {
 
   const published = await enrichNewCatalogueActors([movie('movie-7', [{ id: 202, name: 'Published Person' }])], [], 'tmdb-key', async (_source, destination) => destination);
   assert.equal(published.find((candidate) => candidate.tmdbPersonId === 202)?.profileUrl, '/images/people/202.webp');
+
+  const enrichmentRoot = await fs.mkdtemp(path.join(os.tmpdir(), 'xmasdb-actor-refresh-'));
+  const enrichmentActorsPath = path.join(enrichmentRoot, 'actors.json');
+  const managedActor = actor(200, 'Managed Existing');
+  managedActor.profileUrl = '/images/people/200.webp';
+  managedActor.photoUrl = '/images/people/200.webp';
+  await fs.writeFile(enrichmentActorsPath, JSON.stringify([managedActor]));
+  const imageWarningResult = await enrichCataloguePeople(
+    [movie('movie-8', [{ id: 200, name: 'Managed Existing' }])],
+    'tmdb-key',
+    undefined,
+    undefined,
+    { actorsPath: enrichmentActorsPath, forceRefreshExisting: true, imageIngestor: failureIngestor },
+  );
+  assert.equal(imageWarningResult.failures.length, 0, 'image publication failure must not become a core actor failure');
+  assert.equal(imageWarningResult.imageFailures.length, 1, 'image publication failure should be recorded as a warning');
+  assert.equal(imageWarningResult.actors.find((candidate) => candidate.tmdbPersonId === 200)?.profileUrl, '/images/people/200.webp', 'existing image must be preserved');
+  await fs.writeFile(enrichmentActorsPath, '[]');
+  const newImageWarningResult = await enrichCataloguePeople(
+    [movie('movie-9', [{ id: 201, name: 'New Person' }])],
+    'tmdb-key',
+    undefined,
+    undefined,
+    { actorsPath: enrichmentActorsPath, imageIngestor: failureIngestor },
+  );
+  assert.equal(newImageWarningResult.failures.length, 0, 'new actor image failure must not fail metadata refresh');
+  assert.ok(newImageWarningResult.actors.find((candidate) => candidate.tmdbPersonId === 201)?.tmdbFetchedAt, 'metadata should be retained without an image');
+  failures.add(103);
+  await fs.writeFile(enrichmentActorsPath, '[]');
+  const tmdbFailureResult = await enrichCataloguePeople(
+    [movie('movie-10', [{ id: 103, name: 'Failed Person' }])],
+    'tmdb-key',
+    undefined,
+    undefined,
+    { actorsPath: enrichmentActorsPath },
+  );
+  assert.equal(tmdbFailureResult.failures.length, 1, 'genuine TMDB metadata failure remains a core failure');
+  await fs.rm(enrichmentRoot, { recursive: true, force: true });
 } finally {
   globalThis.fetch = originalFetch;
 }

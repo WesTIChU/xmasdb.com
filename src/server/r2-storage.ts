@@ -30,6 +30,17 @@ export class R2StorageError extends Error {
 
 const managedPathPattern = /^\/images\/(posters|backdrops|people|birthdays|optimized\/posters|optimized\/people)\/(.+)$/;
 const mimeTypes: Record<string, string> = { '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.png': 'image/png', '.webp': 'image/webp' };
+const transientR2Statuses = new Set([500, 502, 503, 504]);
+
+function isTransientR2Error(error: unknown): boolean {
+  return error instanceof TypeError
+    || (error instanceof Error && /(?:network|fetch|timed out|timeout|ECONNRESET|ECONNREFUSED|EAI_AGAIN)/i.test(error.message))
+    || (error instanceof R2StorageError && /HTTP (500|502|503|504)\b/.test(error.message));
+}
+
+async function retryDelay(attempt: number): Promise<void> {
+  await new Promise((resolve) => setTimeout(resolve, 100 * 2 ** attempt));
+}
 
 export function managedObjectKey(canonicalPath: string): string {
   const match = canonicalPath.match(managedPathPattern);
@@ -95,8 +106,22 @@ export class R2Storage {
     return fetch(requestTarget, { method, headers, body: method === 'PUT' ? Buffer.from(body) as BodyInit : undefined });
   }
 
+  private async signedRequestWithRetry(method: string, key = '', options: { query?: Record<string, string>; body?: Uint8Array; contentType?: string; sha256?: string } = {}): Promise<Response> {
+    for (let attempt = 0; attempt < 3; attempt += 1) {
+      try {
+        const response = await this.signedRequest(method, key, options);
+        if (!transientR2Statuses.has(response.status) || attempt === 2) return response;
+        await response.body?.cancel();
+      } catch (error) {
+        if (!isTransientR2Error(error) || attempt === 2) throw error;
+      }
+      await retryDelay(attempt);
+    }
+    throw new R2StorageError('R2 request retry limit was exhausted.', 'retry', key);
+  }
+
   async headObject(key: string): Promise<R2RemoteObject | undefined> {
-    const response = await this.signedRequest('HEAD', key);
+    const response = await this.signedRequestWithRetry('HEAD', key);
     if (response.status === 404) return undefined;
     if (!response.ok) throw new R2StorageError(`HEAD failed: HTTP ${response.status}`, 'head', key);
     return { key, size: Number(response.headers.get('content-length') || 0), etag: response.headers.get('etag')?.replace(/^"|"$/g, ''), sha256: response.headers.get('x-amz-meta-sha256') || undefined, contentType: response.headers.get('content-type') || undefined };
@@ -108,7 +133,7 @@ export class R2Storage {
     do {
       const query: Record<string, string> = { 'list-type': '2' };
       if (continuationToken) query['continuation-token'] = continuationToken;
-      const response = await this.signedRequest('GET', '', { query });
+      const response = await this.signedRequestWithRetry('GET', '', { query });
       if (!response.ok) throw new R2StorageError(`ListObjectsV2 failed: HTTP ${response.status}`, 'list');
       const xml = await response.text();
       for (const match of xml.matchAll(/<Contents>([\s\S]*?)<\/Contents>/g)) {
@@ -122,7 +147,7 @@ export class R2Storage {
 
   async uploadAndVerify(key: string, body: Uint8Array, contentType: string): Promise<R2RemoteObject> {
     const sha256 = hash(body);
-    const response = await this.signedRequest('PUT', key, { body, contentType, sha256 });
+    const response = await this.signedRequestWithRetry('PUT', key, { body, contentType, sha256 });
     if (!response.ok) throw new R2StorageError(`PUT failed: HTTP ${response.status}`, 'upload', key);
     const remote = await this.headObject(key);
     if (!remote) throw new R2StorageError('Object was not present after upload.', 'verify', key);

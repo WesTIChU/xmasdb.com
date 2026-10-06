@@ -71,10 +71,13 @@ async function main() {
 
   const refreshedMovies: Movie[] = [];
   const failures: Array<{ tmdbId: number; title: string; message: string }> = [];
+  const imageWarnings: Array<{ tmdbId: number; title: string; message: string }> = [];
   for (const movie of targets) {
     try {
       const refreshed = await refreshTmdbMovie(movie, apiKey, undefined, imageBudget, (failure) => {
-        failures.push({ tmdbId: movie.tmdbId, title: movie.title, message: `Image ingestion failed for ${failure.localPath}: ${failure.message}` });
+        const message = `Image ingestion failed for ${failure.localPath}: ${failure.message}`;
+        console.warn(`[TMDB Image Warning] ${movie.tmdbId} ${movie.title}: ${message}`);
+        imageWarnings.push({ tmdbId: movie.tmdbId, title: movie.title, message });
       });
       refreshedMovies.push(refreshed);
       console.log(`Refreshed movie ${movie.tmdbId}: ${movie.title}`);
@@ -124,6 +127,8 @@ async function main() {
   const runFailures: RefreshFailure[] = [
     ...failures.map((failure) => ({ key: `movie:${failure.tmdbId}`, kind: 'movie' as const, operation: 'fetch movie metadata', tmdbId: failure.tmdbId, message: failure.message, timestamp: now.toISOString() })),
     ...peopleResult.failures.map((failure) => ({ key: `actor:${failure.tmdbPersonId}`, kind: 'actor' as const, operation: 'fetch person metadata', tmdbId: failure.tmdbPersonId, message: failure.message, timestamp: now.toISOString() })),
+    ...peopleResult.imageFailures.map((failure) => ({ key: `image:people/${failure.tmdbPersonId}`, kind: 'image' as const, operation: 'publish actor image', tmdbId: failure.tmdbPersonId, message: failure.message, timestamp: now.toISOString() })),
+    ...imageWarnings.map((failure) => ({ key: `image:movie/${failure.tmdbId}`, kind: 'image' as const, operation: 'publish movie image', tmdbId: failure.tmdbId, message: failure.message, timestamp: now.toISOString() })),
     ...imageBudget.failureDetails.map((failure) => ({ key: `image:${failure.localPath}`, kind: 'image' as const, operation: 'download/revalidate image', message: failure.message, timestamp: now.toISOString() })),
   ];
   const failedMovieIds = new Set(failures.map((failure) => failure.tmdbId));
@@ -188,6 +193,7 @@ async function main() {
     uniqueCatalogueActors: peopleResult.total,
     actorsSuccessfullyRefreshed: peopleResult.updated,
     actorFailures: peopleResult.failures,
+    imageWarnings: [...imageWarnings, ...peopleResult.imageFailures.map((failure) => ({ tmdbId: failure.tmdbPersonId, title: failure.name, message: failure.message }))],
     freshMovieRecords: freshMovies,
     staleMovieRecords: staleMovies,
     freshActors,

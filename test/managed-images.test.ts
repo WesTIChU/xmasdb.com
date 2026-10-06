@@ -4,7 +4,7 @@ import fs from 'node:fs/promises';
 import os from 'node:os';
 import path from 'node:path';
 import { ingestManagedImage, publishManagedImageFile, summarizeManagedImagePublication } from '../src/server/managed-images';
-import { managedObjectKey, R2StorageError } from '../src/server/r2-storage';
+import { managedObjectKey, R2Storage, R2StorageError } from '../src/server/r2-storage';
 import { mergeTmdbMovie } from '../src/utils/tmdb-refresh';
 import type { Movie } from '../src/types';
 
@@ -59,6 +59,53 @@ await assert.rejects(
   /Refusing to overwrite existing object/,
   'mismatched existing birthday object remains protected',
 );
+
+const r2 = new R2Storage({ accountId: 'account', accessKeyId: 'key', secretAccessKey: 'secret', bucket: 'bucket' });
+const originalFetch = globalThis.fetch;
+try {
+  let headAttempts = 0;
+  globalThis.fetch = (async () => {
+    headAttempts += 1;
+    return headAttempts === 1
+      ? new Response(null, { status: 500 })
+      : new Response(null, { status: 200, headers: { 'content-length': '18', 'content-type': 'image/jpeg' } });
+  }) as typeof fetch;
+  assert.ok(await r2.headObject('people/retry.webp'));
+  assert.equal(headAttempts, 2, 'transient R2 HEAD failures should retry');
+
+  let networkAttempts = 0;
+  globalThis.fetch = (async () => {
+    networkAttempts += 1;
+    if (networkAttempts === 1) throw new Error('ECONNRESET');
+    return new Response(null, { status: 200, headers: { 'content-length': '18', 'content-type': 'image/jpeg' } });
+  }) as typeof fetch;
+  assert.ok(await r2.headObject('people/network-retry.webp'));
+  assert.equal(networkAttempts, 2, 'transient network failures should retry');
+
+  let exhaustedAttempts = 0;
+  globalThis.fetch = (async () => {
+    exhaustedAttempts += 1;
+    return new Response(null, { status: 500 });
+  }) as typeof fetch;
+  await assert.rejects(r2.headObject('people/exhausted.webp'), /HEAD failed: HTTP 500/);
+  assert.equal(exhaustedAttempts, 3, 'R2 retries should be bounded');
+
+  const body = Buffer.from('r2 retry body');
+  const bodyHash = createHash('sha256').update(body).digest('hex');
+  let requestIndex = 0;
+  globalThis.fetch = (async () => {
+    requestIndex += 1;
+    if (requestIndex === 1) return new Response(null, { status: 404 });
+    if (requestIndex === 2) return new Response(null, { status: 500 });
+    if (requestIndex === 3) return new Response(null, { status: 200 });
+    return new Response(null, { status: 200, headers: { 'content-length': String(body.byteLength), 'content-type': 'image/webp', 'x-amz-meta-sha256': bodyHash } });
+  }) as typeof fetch;
+  const retriedUpload = await r2.ensureUploadedAndVerified('people/upload-retry.webp', body, 'image/webp');
+  assert.equal(retriedUpload.uploaded, true, 'transient R2 PUT failure should retry and succeed');
+  assert.equal(requestIndex, 4, 'R2 PUT retry should be bounded and followed by verification');
+} finally {
+  globalThis.fetch = originalFetch;
+}
 assert.deepEqual(summarizeManagedImagePublication([
   { canonicalPath: '/images/optimized/posters/new-1.webp', uploaded: true, skipped: false, verified: true },
   { canonicalPath: '/images/optimized/posters/new-2.webp', uploaded: false, skipped: true, verified: true },
