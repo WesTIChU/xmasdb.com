@@ -165,3 +165,9 @@ export async function getFeedStatistics(now = new Date(), dataDir = getContactDa
   for (const statistic of Object.values(store.feeds)) pruneDailyPulls(statistic, now);
   return toPayload(store, now);
 }
+
+/** Public-safe aggregate totals; intentionally excludes all timing and request detail. */
+export async function getFeedPullTotals(dataDir = getContactDataDir()): Promise<Record<string, number>> {
+  const statistics = await getFeedStatistics(new Date(), dataDir);
+  return Object.fromEntries(statistics.feeds.map((feed) => [feed.id, feed.totalPulls]));
+}

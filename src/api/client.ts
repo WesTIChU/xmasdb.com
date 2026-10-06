@@ -3,6 +3,7 @@ import type {
   CatalogueListing,
   CatalogueMeta,
   FeedsMetaPayload,
+  FeedPullTotalsPayload,
   HomePayload,
   MovieDetailPayload,
   SearchIndexPayload,
@@ -135,6 +136,9 @@ export const fetchSearchIndex = () => request<SearchIndexPayload>(SEARCH_INDEX_U
 
 export const FEEDS_META_URL = '/api/feeds/meta';
 export const fetchFeedsMeta = () => request<FeedsMetaPayload>(FEEDS_META_URL);
+
+export const FEED_PULL_TOTALS_URL = '/api/feeds/pull-totals';
+export const fetchFeedPullTotals = () => request<FeedPullTotalsPayload>(FEED_PULL_TOTALS_URL);
 
 /** Search responses are query-specific; rely on the HTTP cache instead of RAM. */
 export async function fetchSearchResults(query: string): Promise<SearchResultsPayload> {

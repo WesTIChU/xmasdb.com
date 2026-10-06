@@ -337,3 +337,7 @@ export interface FeedsMetaPayload {
     actors: Record<string, number>;
   };
 }
+
+export interface FeedPullTotalsPayload {
+  totals: Record<string, number>;
+}

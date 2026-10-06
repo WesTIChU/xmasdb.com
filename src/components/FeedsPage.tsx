@@ -1,12 +1,17 @@
 import React, { useEffect, useMemo, useRef, useState } from 'react';
-import type { FeedsMetaPayload, SearchIndexPayload, SearchPersonEntry } from '../api/types';
-import { SEARCH_INDEX_URL, fetchSearchIndex, peekResolved } from '../api/client';
+import type { FeedPullTotalsPayload, FeedsMetaPayload, SearchIndexPayload, SearchPersonEntry } from '../api/types';
+import { FEED_PULL_TOTALS_URL, SEARCH_INDEX_URL, fetchFeedPullTotals, fetchSearchIndex, peekResolved } from '../api/client';
 import { SITE_ORIGIN } from '../utils/urls';
 import { NavSquiggle } from './NavigationLink';
 import { HollyDivider } from './HollyDivider';
 import { compareScoredResults, scoreActorSearchResult } from '../utils/search-relevance';
 
 const feedGridColumns = 'md:grid-cols-[minmax(5rem,1.1fr)_minmax(7rem,1.2fr)_minmax(18rem,3fr)_minmax(4.5rem,0.7fr)_minmax(4rem,0.5fr)]';
+
+export function formatFeedPullCount(count: number): string {
+  if (count === 0) return "This feed hasn't been pulled yet.";
+  return `This feed has been pulled ${count.toLocaleString('en-US')} ${count === 1 ? 'time' : 'times'}.`;
+}
 
 function MajorSectionHeading({ id, children }: { id: string; children: React.ReactNode }) {
   return (
@@ -69,6 +74,7 @@ function FeedRow({
   title,
   endpoint,
   count,
+  pullCount,
   origin,
   copiedId,
   onCopy,
@@ -77,6 +83,7 @@ function FeedRow({
   title: string;
   endpoint: string;
   count: number;
+  pullCount?: number;
   origin: string;
   copiedId: string | null;
   onCopy: (id: string, url: string) => void;
@@ -90,7 +97,7 @@ function FeedRow({
         <p className="mt-1 font-sans-clean text-xs text-[#736B63] md:hidden">{countLabel}</p>
       </div>
       <div className="hidden min-w-0 md:block" aria-hidden="true" />
-      <div className="min-w-0"><FeedUrlLink url={url} /></div>
+      <div className="min-w-0"><FeedUrlLink url={url} />{pullCount !== undefined && <p className="mt-1 font-sans-clean text-xs text-[#736B63]">{formatFeedPullCount(pullCount)}</p>}</div>
       <p className="hidden min-w-0 justify-self-center whitespace-nowrap text-center font-sans-clean text-xs text-[#736B63] md:block">{countLabel}</p>
       <div className="min-w-0 justify-self-center text-center">
         <CopyFeedAction id={id} title={title} url={url} copiedId={copiedId} onCopy={onCopy} />
@@ -103,6 +110,7 @@ function YearFeedRow({
   selectedYear,
   availableYears,
   yearCount,
+  pullCount,
   url,
   copiedId,
   onYearChange,
@@ -111,6 +119,7 @@ function YearFeedRow({
   selectedYear: number;
   availableYears: number[];
   yearCount: number;
+  pullCount?: number;
   url: string;
   copiedId: string | null;
   onYearChange: (year: number) => void;
@@ -135,7 +144,7 @@ function YearFeedRow({
           ))}
         </select>
       </div>
-      <div className="min-w-0"><FeedUrlLink url={url} /></div>
+      <div className="min-w-0"><FeedUrlLink url={url} />{pullCount !== undefined && <p className="mt-1 font-sans-clean text-xs text-[#736B63]">{formatFeedPullCount(pullCount)}</p>}</div>
       <p className="hidden min-w-0 justify-self-center whitespace-nowrap text-center font-sans-clean text-xs text-[#736B63] md:block">{countLabel}</p>
       <div className="min-w-0 justify-self-center text-center">
         <CopyFeedAction id="radarr-year" title={`${selectedYear} year`} url={url} copiedId={copiedId} onCopy={onCopy} />
@@ -146,11 +155,13 @@ function YearFeedRow({
 
 function ActorFeedRow({
   actorCounts,
+  pullTotals,
   origin,
   copiedId,
   onCopy,
 }: {
   actorCounts: Record<string, number>;
+  pullTotals: Record<string, number>;
   origin: string;
   copiedId: string | null;
   onCopy: (id: string, url: string) => void;
@@ -229,6 +240,7 @@ function ActorFeedRow({
 
   const actorUrl = selectedActor ? `${origin}/json/actors/${selectedActor.tmdbPersonId}.json` : null;
   const actorCount = selectedActor ? actorCounts[String(selectedActor.tmdbPersonId)] ?? 0 : null;
+  const actorPullCount = selectedActor ? pullTotals[`actor:${selectedActor.tmdbPersonId}`] : undefined;
   const duplicateNames = new Set(
     matchingActors
       .filter((actor) => actor.name.toLowerCase() === query.trim().toLowerCase())
@@ -284,7 +296,7 @@ function ActorFeedRow({
         </div>
       </div>
       <div className="min-w-0">
-        {actorUrl ? <FeedUrlLink url={actorUrl} /> : <span className="block w-full rounded border border-[#E7DFD5] bg-[#FAF7F2] px-2.5 py-1.5 font-mono text-xs leading-relaxed text-[#A29A91]">/json/actors/&#123;tmdbPersonId&#125;.json</span>}
+        {actorUrl ? <><FeedUrlLink url={actorUrl} />{actorPullCount !== undefined && <p className="mt-1 font-sans-clean text-xs text-[#736B63]">{formatFeedPullCount(actorPullCount)}</p>}</> : <span className="block w-full rounded border border-[#E7DFD5] bg-[#FAF7F2] px-2.5 py-1.5 font-mono text-xs leading-relaxed text-[#A29A91]">/json/actors/&#123;tmdbPersonId&#125;.json</span>}
       </div>
       <p className="hidden min-w-0 justify-self-center whitespace-nowrap text-center font-sans-clean text-xs text-[#736B63] md:block">{actorCount === null ? '—' : actorCount}</p>
       <div className="min-w-0 justify-self-center text-center">
@@ -294,13 +306,26 @@ function ActorFeedRow({
   );
 }
 
-export const FeedsPage: React.FC<{ meta: FeedsMetaPayload }> = ({ meta }) => {
+export const FeedsPage: React.FC<{ meta: FeedsMetaPayload; initialPullTotals?: Record<string, number> }> = ({ meta, initialPullTotals }) => {
   const [copiedId, setCopiedId] = useState<string | null>(null);
   const [selectedYear, setSelectedYear] = useState<number>(() =>
     meta.years.includes(2025) ? 2025 : meta.years[0] ?? 2025
   );
+  const [pullTotals, setPullTotals] = useState<Record<string, number>>(() => initialPullTotals ?? peekResolved<FeedPullTotalsPayload>(FEED_PULL_TOTALS_URL)?.totals ?? {});
   const origin = typeof window !== 'undefined' ? window.location.origin : SITE_ORIGIN;
   const availableYears = meta.years;
+
+  useEffect(() => {
+    let active = true;
+    fetchFeedPullTotals()
+      .then((payload) => {
+        if (active) setPullTotals(payload.totals);
+      })
+      .catch(() => undefined);
+    return () => {
+      active = false;
+    };
+  }, []);
 
   const copyUrl = async (id: string, url: string) => {
     try {
@@ -320,11 +345,13 @@ export const FeedsPage: React.FC<{ meta: FeedsMetaPayload }> = ({ meta }) => {
       title: brand.shortName,
       endpoint,
       count,
+      pullCount: pullTotals[`collection:${brand.id}`],
     };
   });
 
   const yearEndpoint = `/json/year/${selectedYear}.json`;
   const yearCount = meta.counts.years[String(selectedYear)] ?? 0;
+  const yearPullCount = pullTotals[`year:${selectedYear}`];
   const yearUrl = `${origin}${yearEndpoint}`;
 
   return (
@@ -389,6 +416,7 @@ export const FeedsPage: React.FC<{ meta: FeedsMetaPayload }> = ({ meta }) => {
             title="All Movies"
             endpoint="/json/all.json"
             count={meta.counts.all}
+            pullCount={pullTotals['collection:all']}
             origin={origin}
             copiedId={copiedId}
             onCopy={copyUrl}
@@ -400,6 +428,7 @@ export const FeedsPage: React.FC<{ meta: FeedsMetaPayload }> = ({ meta }) => {
             selectedYear={selectedYear}
             availableYears={availableYears}
             yearCount={yearCount}
+            pullCount={yearPullCount}
             url={yearUrl}
             copiedId={copiedId}
             onYearChange={setSelectedYear}
@@ -407,6 +436,7 @@ export const FeedsPage: React.FC<{ meta: FeedsMetaPayload }> = ({ meta }) => {
           />
           <ActorFeedRow
             actorCounts={meta.counts.actors}
+            pullTotals={pullTotals}
             origin={origin}
             copiedId={copiedId}
             onCopy={copyUrl}

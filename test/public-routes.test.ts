@@ -83,6 +83,13 @@ try {
   assert.ok(actor, 'actor fixture should resolve');
   assert.equal((await request(`/json/actors/${actorId}.json`)).status, 200);
   assert.equal((await request(`/api/feeds/actors/${actorId}.json`)).status, 200);
+  const pullTotalsResponse = await request('/api/feeds/pull-totals');
+  assert.equal(pullTotalsResponse.status, 200);
+  const pullTotalsPayload = await pullTotalsResponse.json() as { totals?: Record<string, number>; feeds?: unknown[]; summary?: unknown };
+  assert.ok(pullTotalsPayload.totals);
+  assert.equal(pullTotalsPayload.feeds, undefined, 'public feed totals must not expose detailed rows');
+  assert.equal(pullTotalsPayload.summary, undefined, 'public feed totals must not expose the admin summary');
+  assert.equal(typeof pullTotalsPayload.totals!['collection:all'], 'number');
 
   assert.equal((await request('/api/search-index')).status, 200);
   assert.equal((await request('/api/catalogue')).status, 200);

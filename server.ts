@@ -42,7 +42,7 @@ import { applyAdminMovieEdit, getMovieWriters, removeMovie, removeMovieFingerpri
 import { ingestManagedImage } from './src/server/managed-images';
 import { fetchTmdbMovie, requireTmdbApiKey } from './src/utils/tmdb';
 import { getCanonicalRedirect, getRobotsTxt, renderServerHtml } from './src/server/seo';
-import { ensureFeedStatisticsStorage, getActorFeedDefinition, getFeedStatistics, getYearFeedDefinition } from './src/server/feed-statistics';
+import { ensureFeedStatisticsStorage, getActorFeedDefinition, getFeedPullTotals, getFeedStatistics, getYearFeedDefinition } from './src/server/feed-statistics';
 import { trackSuccessfulFeedResponse } from './src/server/feed-route';
 import { isTrustedProxyAddress, PublicFeedRateLimiter } from './src/server/feed-rate-limit';
 import { enrichNewCatalogueActors } from './src/server/actor-import';
@@ -748,6 +748,16 @@ async function startServer() {
 
   // Feeds page counts.
   app.get('/api/feeds/meta', (_req, res) => sendJson(res, buildFeedsMeta()));
+
+  // Public aggregate totals only; detailed feed analytics remain admin-only.
+  app.get('/api/feeds/pull-totals', async (_req, res) => {
+    try {
+      return res.setHeader('Cache-Control', 'no-store').json({ totals: await getFeedPullTotals(contactDataDir) });
+    } catch (error) {
+      console.error(`[Public Feed Totals] ${error instanceof Error ? error.message : 'statistics could not be read'}`);
+      return res.status(500).json({ error: 'Feed totals could not be read safely.' });
+    }
+  });
 
   // Vite middleware for development vs static build for production
   if (process.env.NODE_ENV !== 'production') {

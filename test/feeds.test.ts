@@ -1,7 +1,10 @@
 import assert from 'assert';
+import React from 'react';
+import { renderToStaticMarkup } from 'react-dom/server';
 import { MOVIES } from '../src/data/movies';
 import { getActorByTmdbId, getAllActors } from '../src/data/actors';
 import { buildFeedsMeta } from '../src/server/catalogue-api';
+import { FeedsPage, formatFeedPullCount } from '../src/components/FeedsPage';
 import {
   buildRadarrFeed,
   getRadarrActorFeedCount,
@@ -89,5 +92,19 @@ const actorMovies = MOVIES.filter((movie) => movie.cast.some((cast) => cast.tmdb
 const actorFeed = JSON.parse(getRadarrActorFeedJson(actorId) || '[]') as { imdb_id: string }[];
 const expectedActorIds = new Set(buildRadarrFeed(actorMovies).map((item) => item.imdb_id));
 assert.ok(actorFeed.every((item) => expectedActorIds.has(item.imdb_id)));
+
+assert.equal(formatFeedPullCount(0), "This feed hasn't been pulled yet.");
+assert.equal(formatFeedPullCount(1), 'This feed has been pulled 1 time.');
+assert.equal(formatFeedPullCount(12481), 'This feed has been pulled 12,481 times.');
+const feedsMarkup = renderToStaticMarkup(React.createElement(FeedsPage, {
+  meta: buildFeedsMeta(feedsMetaReferenceDate),
+  initialPullTotals: {
+    'collection:all': 5832,
+    'collection:hallmark': 1,
+  },
+}));
+assert.match(feedsMarkup, /This feed has been pulled 5,832 times\./);
+assert.match(feedsMarkup, /This feed has been pulled 1 time\./);
+assert.doesNotMatch(feedsMarkup, /5,832 pulls/);
 
 console.log('Radarr feed regression tests passed.');
