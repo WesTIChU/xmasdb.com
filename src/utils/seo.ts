@@ -3,6 +3,7 @@ import type { ActorFilmographyItem, MovieDetailMovie } from '../api/types';
 import { getBrandById } from '../data/brands';
 import { SITE_ORIGIN, getActorPath, getCalendarPath, getFeedsPath, getMoviePath, getMoviesPath, getNetworkPath, getYearPath, toCanonicalUrl } from './urls';
 import { resolveImageUrl } from './image-url';
+import { isActorIndexWorthy } from './actor-indexing';
 
 export interface SeoDocument {
   title: string;
@@ -141,6 +142,23 @@ export function buildYearSeo(year: number, movieCount?: number): SeoDocument {
   };
 }
 
+export function buildFingerprintSeo(label: string, movieCount: number, canonicalPath: string): SeoDocument {
+  const description = `Browse ${movieCount} Christmas ${movieCount === 1 ? 'movie' : 'movies'} with the ${label} Christmas ingredient in the XmasDB catalogue.`;
+  return {
+    title: `Christmas Movies with ${label} | XmasDB`,
+    description,
+    canonicalPath,
+    image: '/logo-1100.webp',
+    schema: {
+      '@context': 'https://schema.org',
+      '@type': 'CollectionPage',
+      name: `Christmas Movies with ${label}`,
+      url: toCanonicalUrl(canonicalPath),
+      description,
+    },
+  };
+}
+
 export function buildMovieSeo(movie: Movie | MovieDetailMovie): SeoDocument {
   const brandName = getBrandById(movie.brandId)?.shortName;
   const castNames = movie.cast.slice(0, 3).map((member) => member.name).join(', ');
@@ -224,6 +242,7 @@ export function buildActorSeo(actor: Actor, filmography: ActorFilmographyItem[] 
     title: `${actor.name} Christmas Movies - Movies & Filmography${titleDisambiguator ? ` (${titleDisambiguator})` : ''} | XmasDB`,
     description: truncateDescription(description),
     canonicalPath,
+    noIndex: !isActorIndexWorthy(actor, creditFilmography),
     image: actor.profileUrl || actor.photoUrl,
     schema: withBreadcrumbs(personSchema, [
       { name: 'Home', path: '/' },

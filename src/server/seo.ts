@@ -1,16 +1,17 @@
-import { getActorBySlug, getActorByTmdbId } from '../data/actors';
-import { getMovieBySlug, getMovieByTmdbId } from '../data/movies';
+import { getActorByTmdbId } from '../data/actors';
+import { getMovieByTmdbId } from '../data/movies';
 import { getBrandBySlug } from '../data/brands';
 import { buildAboutPayload, buildActorDetail, buildBirthdaysPayload, buildCalendarPayload, buildCatalogueListing, buildCatalogueMeta, buildFeedsMeta, buildHomePayload, buildMovieDetail } from './catalogue-api';
 import { getBrandById } from '../data/brands';
 import { parseCatalogueQuery } from '../utils/catalogue-pagination';
-import { buildAboutSeo, buildActorSeo, buildApiSeo, buildBirthdaysSeo, buildBrandSeo, buildCalendarSeo, buildContactSeo, buildFeedsSeo, buildHomeSeo, buildMoviesSeo, buildMovieSeo, buildNotFoundSeo, buildPrivacySeo, buildYearSeo, type SeoDocument } from '../utils/seo';
+import { buildAboutSeo, buildActorSeo, buildApiSeo, buildBirthdaysSeo, buildBrandSeo, buildCalendarSeo, buildContactSeo, buildFeedsSeo, buildFingerprintSeo, buildHomeSeo, buildMoviesSeo, buildMovieSeo, buildNotFoundSeo, buildPrivacySeo, buildYearSeo, type SeoDocument } from '../utils/seo';
 import { getActorPath, getFingerprintPath, getMoviePath, toCanonicalUrl } from '../utils/urls';
 import { getFingerprintById } from '../data/fingerprints';
 import { buildFingerprintListing } from './catalogue-api';
 import { PUBLIC_API_ENABLED } from './public-api-config';
 import { getMoviePoster } from '../utils/posters';
 import { resolveImageUrl } from '../utils/image-url';
+import { getActorsBySlug, getMoviesBySlug } from '../utils/entity-resolution';
 
 export function getRobotsTxt(): string {
   return [
@@ -30,17 +31,17 @@ function routePath(pathname: string): string {
 
 export function getServerSeo(pathname: string, search = ''): SeoDocument {
   const clean = routePath(pathname);
-  if (!clean || clean === 'index.html') return buildHomeSeo(buildCatalogueMeta().totalMovies);
+  if (!clean || clean === 'index.html') return { ...buildHomeSeo(buildCatalogueMeta().totalMovies), noIndex: Boolean(search) };
   if (clean === 'movies' || clean === 'all') {
     return { ...buildMoviesSeo(buildCatalogueMeta().totalMovies), noIndex: Boolean(search) };
   }
-  if (clean === 'calendar') return buildCalendarSeo();
-  if (clean === 'feeds') return buildFeedsSeo();
-  if (clean === 'birthdays') return buildBirthdaysSeo();
-  if (clean === 'about') return buildAboutSeo();
-  if (clean === 'privacy') return buildPrivacySeo();
-  if (clean === 'contact') return buildContactSeo();
-  if (clean === 'api' && PUBLIC_API_ENABLED) return buildApiSeo();
+  if (clean === 'calendar') return { ...buildCalendarSeo(), noIndex: Boolean(search) };
+  if (clean === 'feeds') return { ...buildFeedsSeo(), noIndex: Boolean(search) };
+  if (clean === 'birthdays') return { ...buildBirthdaysSeo(), noIndex: Boolean(search) };
+  if (clean === 'about') return { ...buildAboutSeo(), noIndex: Boolean(search) };
+  if (clean === 'privacy') return { ...buildPrivacySeo(), noIndex: Boolean(search) };
+  if (clean === 'contact') return { ...buildContactSeo(), noIndex: Boolean(search) };
+  if (clean === 'api' && PUBLIC_API_ENABLED) return { ...buildApiSeo(), noIndex: Boolean(search) };
   if (clean === 'admin/login') return { title: 'Admin Login | XmasDB', description: 'Private XmasDB administration.', canonicalPath: '/admin/login/', noIndex: true };
   if (clean === 'admin/submissions') return { title: 'Submissions | XmasDB', description: 'Private XmasDB administration.', canonicalPath: '/admin/submissions/', noIndex: true };
   if (clean === 'admin/feed-statistics') return { title: 'Feed Statistics | XmasDB', description: 'Private XmasDB administration.', canonicalPath: '/admin/feed-statistics/', noIndex: true };
@@ -51,11 +52,7 @@ export function getServerSeo(pathname: string, search = ''): SeoDocument {
     const fingerprint = getFingerprintById(fingerprintMatch[1]);
     const listing = fingerprint ? buildFingerprintListing(parseCatalogueQuery(search), fingerprint.id) : null;
     if (fingerprint && listing) {
-      return {
-        title: `Christmas Movies with ${fingerprint.label} | XmasDB`,
-        description: `Browse ${listing.total} Christmas ${listing.total === 1 ? 'movie' : 'movies'} with the ${fingerprint.label} Christmas ingredient in the XmasDB catalogue.`,
-        canonicalPath: getFingerprintPath(fingerprint.id),
-      };
+      return { ...buildFingerprintSeo(fingerprint.label, listing.total, getFingerprintPath(fingerprint.id)), noIndex: Boolean(search) };
     }
   }
 
@@ -69,13 +66,17 @@ export function getServerSeo(pathname: string, search = ''): SeoDocument {
 
   const movieMatch = clean.match(/^movie\/([^/]+)(?:\/([^/]+))?$/i);
   if (movieMatch) {
-    const movie = Number.isInteger(Number(movieMatch[1])) ? getMovieByTmdbId(Number(movieMatch[1])) : getMovieBySlug(movieMatch[1]);
+    const movie = Number.isInteger(Number(movieMatch[1]))
+      ? getMovieByTmdbId(Number(movieMatch[1]))
+      : getMoviesBySlug(movieMatch[1]).length === 1 ? getMoviesBySlug(movieMatch[1])[0] : undefined;
     return movie ? buildMovieSeo(movie) : buildNotFoundSeo();
   }
 
   const actorMatch = clean.match(/^actor\/([^/]+)(?:\/([^/]+))?$/i);
   if (actorMatch) {
-    const actor = Number.isInteger(Number(actorMatch[1])) ? getActorByTmdbId(Number(actorMatch[1])) : getActorBySlug(actorMatch[1]);
+    const actor = Number.isInteger(Number(actorMatch[1]))
+      ? getActorByTmdbId(Number(actorMatch[1]))
+      : getActorsBySlug(actorMatch[1]).length === 1 ? getActorsBySlug(actorMatch[1])[0] : undefined;
     if (!actor) return buildNotFoundSeo();
     const payload = buildActorDetail(String(actor.tmdbPersonId));
     return buildActorSeo(actor, payload?.filmography || [], payload?.titleDisambiguator);
@@ -99,14 +100,18 @@ export function getCanonicalRedirect(pathname: string): string | null {
   if (clean.toLowerCase() === 'index.html') return '/';
   const movieMatch = clean.match(/^movie\/([^/]+)(?:\/([^/]+))?$/i);
   if (movieMatch) {
-    const movie = Number.isInteger(Number(movieMatch[1])) ? getMovieByTmdbId(Number(movieMatch[1])) : getMovieBySlug(movieMatch[1]);
+    const movie = Number.isInteger(Number(movieMatch[1]))
+      ? getMovieByTmdbId(Number(movieMatch[1]))
+      : getMoviesBySlug(movieMatch[1]).length === 1 ? getMoviesBySlug(movieMatch[1])[0] : undefined;
     if (!movie) return null;
     const canonical = `/movie/${movie.tmdbId}/${movie.slug}/`;
     return pathname !== canonical ? canonical : null;
   }
   const actorMatch = clean.match(/^actor\/([^/]+)(?:\/([^/]+))?$/i);
   if (actorMatch) {
-    const actor = Number.isInteger(Number(actorMatch[1])) ? getActorByTmdbId(Number(actorMatch[1])) : getActorBySlug(actorMatch[1]);
+    const actor = Number.isInteger(Number(actorMatch[1]))
+      ? getActorByTmdbId(Number(actorMatch[1]))
+      : getActorsBySlug(actorMatch[1]).length === 1 ? getActorsBySlug(actorMatch[1])[0] : undefined;
     if (!actor) return null;
     const canonical = `/actor/${actor.tmdbPersonId}/${actor.slug}/`;
     return pathname !== canonical ? canonical : null;

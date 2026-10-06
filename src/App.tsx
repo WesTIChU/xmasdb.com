@@ -64,6 +64,7 @@ import {
   buildPrivacySeo,
   buildBrandSeo,
   buildFeedsSeo,
+  buildFingerprintSeo,
   buildBirthdaysSeo,
   buildHomeSeo,
   buildMoviesSeo,
@@ -435,11 +436,11 @@ export default function App() {
     }
 
     if (descriptor.type === 'home') {
-      updateSeoTags(buildHomeSeo(meta?.totalMovies));
+      updateSeoTags({ ...buildHomeSeo(meta?.totalMovies), noIndex: Boolean(catalogueSearch) });
     } else if (descriptor.type === 'movies') {
       updateSeoTags({ ...buildMoviesSeo(meta?.totalMovies), noIndex: Boolean(catalogueSearch) });
     } else if (descriptor.type === 'calendar') {
-      updateSeoTags(buildCalendarSeo(isCalendarPayload(view.payload) ? view.payload.activeYear : new Date().getUTCFullYear()));
+      updateSeoTags({ ...buildCalendarSeo(isCalendarPayload(view.payload) ? view.payload.activeYear : new Date().getUTCFullYear()), noIndex: Boolean(catalogueSearch) });
     } else if (descriptor.type === 'year-archive') {
       if (!isCatalogueListingPayload(view.payload)) return;
       updateSeoTags({ ...buildYearSeo(descriptor.year, view.payload.total), noIndex: Boolean(catalogueSearch) });
@@ -448,6 +449,9 @@ export default function App() {
       if (!brand) return;
       if (!isCatalogueListingPayload(view.payload)) return;
       updateSeoTags({ ...buildBrandSeo(brand, descriptor.year, view.payload.total), noIndex: Boolean(catalogueSearch) });
+    } else if (descriptor.type === 'fingerprint') {
+      if (!isFingerprintListingPayload(view.payload)) return;
+      updateSeoTags({ ...buildFingerprintSeo(view.payload.fingerprint.label, view.payload.total, getFingerprintPath(descriptor.slug)), noIndex: Boolean(catalogueSearch) });
     } else if (descriptor.type === 'movie') {
       if (view.status !== 'ready') return;
       if (!isMovieDetailPayload(view.payload)) return;
@@ -457,17 +461,17 @@ export default function App() {
       if (!isActorDetailPayload(view.payload)) return;
       updateSeoTags(buildActorSeo(view.payload.actor, view.payload.filmography, view.payload.titleDisambiguator));
     } else if (descriptor.type === 'feeds') {
-      updateSeoTags(buildFeedsSeo());
+      updateSeoTags({ ...buildFeedsSeo(), noIndex: Boolean(catalogueSearch) });
     } else if (descriptor.type === 'birthdays') {
-      updateSeoTags(buildBirthdaysSeo());
+      updateSeoTags({ ...buildBirthdaysSeo(), noIndex: Boolean(catalogueSearch) });
     } else if (descriptor.type === 'about') {
-      updateSeoTags(buildAboutSeo());
+      updateSeoTags({ ...buildAboutSeo(), noIndex: Boolean(catalogueSearch) });
     } else if (descriptor.type === 'privacy') {
-      updateSeoTags(buildPrivacySeo());
+      updateSeoTags({ ...buildPrivacySeo(), noIndex: Boolean(catalogueSearch) });
     } else if (descriptor.type === 'contact') {
-      updateSeoTags(buildContactSeo());
+      updateSeoTags({ ...buildContactSeo(), noIndex: Boolean(catalogueSearch) });
     } else if (descriptor.type === 'api') {
-      updateSeoTags(buildApiSeo());
+      updateSeoTags({ ...buildApiSeo(), noIndex: Boolean(catalogueSearch) });
     } else if (descriptor.type === 'admin-login' || descriptor.type === 'admin-submissions' || descriptor.type === 'admin-feed-statistics' || descriptor.type === 'admin-add-movies' || descriptor.type === 'admin-movies') {
       updateSeoTags({
         title: 'Admin | XmasDB',

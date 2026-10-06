@@ -1,6 +1,8 @@
 import { MOVIES, getAllYearsForBrand } from '../data/movies';
 import { getAllActors, getActorByTmdbId } from '../data/actors';
 import { getPopulatedBrands } from '../data/brands';
+import { FINGERPRINTS } from '../data/fingerprints';
+import { getActorCreditCount, isActorIndexWorthy } from './actor-indexing';
 import { Movie } from '../types';
 import {
   SITE_ORIGIN,
@@ -10,6 +12,8 @@ import {
   getYearPath,
   getMoviesPath,
   getFeedsPath,
+  getCalendarPath,
+  getFingerprintPath,
 } from './urls';
 
 /**
@@ -244,10 +248,40 @@ ${itemsXml}
 
 // ---------------- SITEMAP ----------------
 
-export function getSitemapXml(): string {
-  const urls: { loc: string; changefreq: string; priority: string }[] = [];
+type SitemapName = 'movies' | 'actors' | 'archives' | 'pages';
+type SitemapEntry = { loc: string; changefreq?: string; priority?: string; lastmod?: string };
+let actorSitemapCache: SitemapEntry[] | null = null;
 
-  // 1. Home / All Movies
+function sitemapEntries(name: SitemapName): SitemapEntry[] {
+  const urls: SitemapEntry[] = [];
+
+  if (name === 'movies') {
+    for (const m of MOVIES) urls.push({ loc: `${SITE_ORIGIN}${getMoviePath(m.tmdbId, m.slug)}`, changefreq: 'monthly', priority: '0.9' });
+    return urls;
+  }
+
+  if (name === 'actors') {
+    if (actorSitemapCache) return actorSitemapCache;
+    const entries: SitemapEntry[] = [];
+    for (const actor of getAllActors()) {
+      if (isActorIndexWorthy(actor, { length: getActorCreditCount(actor.tmdbPersonId) })) {
+        entries.push({ loc: `${SITE_ORIGIN}${getActorPath(actor.tmdbPersonId, actor.slug)}`, changefreq: 'monthly', priority: '0.8' });
+      }
+    }
+    actorSitemapCache = entries;
+    return entries;
+  }
+
+  if (name === 'archives') {
+    for (const b of getPopulatedBrands(MOVIES)) {
+      urls.push({ loc: `${SITE_ORIGIN}${getNetworkPath(b.slug)}`, changefreq: 'weekly', priority: '0.8' });
+      for (const yr of getAllYearsForBrand(b.id)) urls.push({ loc: `${SITE_ORIGIN}${getNetworkPath(b.slug, yr)}`, changefreq: 'monthly', priority: '0.7' });
+    }
+    for (const yr of getAllYearsForBrand()) urls.push({ loc: `${SITE_ORIGIN}${getYearPath(yr)}`, changefreq: 'monthly', priority: '0.7' });
+    return urls;
+  }
+
+  // Useful canonical pages. Query-string variants are deliberately excluded.
   urls.push({ loc: `${SITE_ORIGIN}/`, changefreq: 'daily', priority: '1.0' });
   urls.push({ loc: `${SITE_ORIGIN}/about/`, changefreq: 'monthly', priority: '0.5' });
   urls.push({ loc: `${SITE_ORIGIN}/privacy/`, changefreq: 'monthly', priority: '0.5' });
@@ -255,77 +289,34 @@ export function getSitemapXml(): string {
   urls.push({ loc: `${SITE_ORIGIN}${getMoviesPath()}`, changefreq: 'daily', priority: '0.9' });
   urls.push({ loc: `${SITE_ORIGIN}/birthdays`, changefreq: 'weekly', priority: '0.7' });
 
-  // 2. Network catalogues
-  for (const b of getPopulatedBrands(MOVIES)) {
-    urls.push({
-      loc: `${SITE_ORIGIN}${getNetworkPath(b.slug)}`,
-      changefreq: 'weekly',
-      priority: '0.8',
-    });
-  }
-
-  // 3. All-network year archives
-  const allYears = getAllYearsForBrand();
-  for (const yr of allYears) {
-    urls.push({
-      loc: `${SITE_ORIGIN}${getYearPath(yr)}`,
-      changefreq: 'monthly',
-      priority: '0.7',
-    });
-  }
-
-  // 4. Network year archives
-  for (const b of getPopulatedBrands(MOVIES)) {
-    const brandYears = getAllYearsForBrand(b.id);
-    for (const yr of brandYears) {
-      urls.push({
-        loc: `${SITE_ORIGIN}${getNetworkPath(b.slug, yr)}`,
-        changefreq: 'monthly',
-        priority: '0.7',
-      });
-    }
-  }
-
-  // 5. Individual movies (network-independent canonical URLs)
-  for (const m of MOVIES) {
-    urls.push({
-      loc: `${SITE_ORIGIN}${getMoviePath(m.tmdbId, m.slug)}`,
-      changefreq: 'monthly',
-      priority: '0.9',
-    });
-  }
-
-  // 6. Individual actors (network-independent canonical URLs)
-  const actors = getAllActors();
-  for (const a of actors) {
-    urls.push({
-      loc: `${SITE_ORIGIN}${getActorPath(a.tmdbPersonId, a.slug)}`,
-      changefreq: 'monthly',
-      priority: '0.8',
-    });
-  }
-
-  // 7. Feeds
   urls.push({ loc: `${SITE_ORIGIN}${getFeedsPath()}`, changefreq: 'monthly', priority: '0.5' });
+  urls.push({ loc: `${SITE_ORIGIN}${getCalendarPath()}`, changefreq: 'weekly', priority: '0.6' });
+  for (const fingerprint of FINGERPRINTS) urls.push({ loc: `${SITE_ORIGIN}${getFingerprintPath(fingerprint.id)}`, changefreq: 'monthly', priority: '0.5' });
+  return urls;
+}
 
-  const escapeXml = (value: string): string => value
-    .replace(/&/g, '&amp;')
-    .replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;')
-    .replace(/"/g, '&quot;')
-    .replace(/'/g, '&apos;');
-  const urlElements = urls
-    .map(
-      (u) => `  <url>
-    <loc>${escapeXml(u.loc)}</loc>
-    <changefreq>${u.changefreq}</changefreq>
-    <priority>${u.priority}</priority>
-  </url>`
-    )
-    .join('\n');
+function escapeSitemapXml(value: string): string {
+  return value.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&apos;');
+}
 
+export function getSitemapChildXml(name: SitemapName): string {
+  const urlElements = sitemapEntries(name).map((u) => `  <url>
+    <loc>${escapeSitemapXml(u.loc)}</loc>${u.lastmod ? `
+    <lastmod>${escapeSitemapXml(u.lastmod)}</lastmod>` : ''}${u.changefreq ? `
+    <changefreq>${u.changefreq}</changefreq>` : ''}${u.priority ? `
+    <priority>${u.priority}</priority>` : ''}
+  </url>`).join('\n');
   return `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${urlElements}
 </urlset>`;
+}
+
+export function getSitemapXml(): string {
+  const names: SitemapName[] = ['movies', 'actors', 'archives', 'pages'];
+  const sitemapElements = names.map((name) => `  <sitemap><loc>${SITE_ORIGIN}/sitemaps/${name}.xml</loc></sitemap>`).join('\n');
+  return `<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${sitemapElements}
+</sitemapindex>`;
 }

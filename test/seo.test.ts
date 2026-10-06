@@ -7,7 +7,8 @@ import { MOVIES } from '../src/data/movies';
 import { getActorByTmdbId, getAllActors } from '../src/data/actors';
 import { Header } from '../src/components/Header';
 import { getFeedsPath, getMoviePath, getActorPath } from '../src/utils/urls';
-import { getSitemapXml } from '../src/utils/feeds';
+import { getSitemapChildXml, getSitemapXml } from '../src/utils/feeds';
+import { isActorIndexWorthy } from '../src/utils/actor-indexing';
 import {
   buildAboutSeo,
   buildContactSeo,
@@ -29,10 +30,20 @@ import { parseCatalogueQuery } from '../src/utils/catalogue-pagination';
 import { buildCatalogueListing } from '../src/server/catalogue-api';
 import { parseRoute } from '../src/App';
 import { resolveImageUrl } from '../src/utils/image-url';
+import { FINGERPRINTS } from '../src/data/fingerprints';
 
 const movie = MOVIES[0];
 const actor = getAllActors()[0];
 const actorDetail = buildActorDetail(String(actor.tmdbPersonId));
+const worthyActor = getAllActors().find((candidate) => {
+  const detail = buildActorDetail(String(candidate.tmdbPersonId));
+  return detail && isActorIndexWorthy(candidate, detail.filmography);
+})!;
+const thinActor = getAllActors().find((candidate) => {
+  const detail = buildActorDetail(String(candidate.tmdbPersonId));
+  return detail?.filmography.length === 1 && !isActorIndexWorthy(candidate, detail.filmography);
+})!;
+const zeroCreditActor = getAllActors().find((candidate) => buildActorDetail(String(candidate.tmdbPersonId))?.filmography.length === 0)!;
 
 const homeSeo = buildHomeSeo(MOVIES.length);
 assert.equal(homeSeo.title, 'XmasDB - Christmas Movie Database | Hallmark, Lifetime, GAF & UPtv');
@@ -75,7 +86,13 @@ assert.equal(getCanonicalRedirect(`/movie/${movie.tmdbId}/wrong-slug/`), getMovi
 
 const actorSeo = getServerSeo(getActorPath(actor.tmdbPersonId, actor.slug));
 assert.equal(actorSeo.canonicalPath, getActorPath(actor.tmdbPersonId, actor.slug));
+assert.equal(getServerSeo(getActorPath(worthyActor.tmdbPersonId, worthyActor.slug)).noIndex, false);
+assert.equal(getServerSeo(getActorPath(thinActor.tmdbPersonId, thinActor.slug)).noIndex, true);
+assert.equal(getServerSeo(getActorPath(zeroCreditActor.tmdbPersonId, zeroCreditActor.slug)).noIndex, true);
 assert.equal(getServerSeo('/movies/', '?page=2').noIndex, true);
+assert.equal(getServerSeo('/calendar/', '?month=10').noIndex, true);
+assert.equal(getServerSeo(`/fingerprint/${FINGERPRINTS[0].id}/`, `?page=2`).noIndex, true);
+assert.equal(getServerSeo(`/fingerprint/${FINGERPRINTS[0].id}/`).noIndex, false);
 assert.equal(getServerSeo('/definitely-not-real/').noIndex, true);
 assert.equal(getServerSeo('/about/').canonicalPath, '/about/');
 assert.equal(getCanonicalRedirect('/about'), '/about/');
@@ -219,12 +236,23 @@ for (const path of representativeSeoPaths) {
 }
 
 const sitemap = getSitemapXml();
-const sitemapPaths = [...sitemap.matchAll(/<loc>https:\/\/xmasdb\.com([^<]+)<\/loc>/g)].map((match) => match[1]);
-assert.equal(new Set(sitemapPaths).size, sitemapPaths.length, 'sitemap must not contain duplicate URLs');
-assert.ok(sitemapPaths.every((path) => !/[?&]/.test(path)), 'sitemap must contain canonical paths without query strings');
-assert.equal(sitemapPaths.filter((path) => path.startsWith('/movie/')).length, MOVIES.length);
-assert.equal(sitemapPaths.filter((path) => path.startsWith('/actor/')).length, getAllActors().length);
-assert.ok(sitemapPaths.every((path) => {
+assert.match(sitemap, /<sitemapindex xmlns="http:\/\/www\.sitemaps\.org\/schemas\/sitemap\/0\.9">/);
+for (const name of ['movies', 'actors', 'archives', 'pages']) assert.match(sitemap, new RegExp(`/sitemaps/${name}\.xml`));
+const movieSitemap = getSitemapChildXml('movies');
+const actorSitemap = getSitemapChildXml('actors');
+const archiveSitemap = getSitemapChildXml('archives');
+const pagesSitemap = getSitemapChildXml('pages');
+const moviePaths = [...movieSitemap.matchAll(/<loc>https:\/\/xmasdb\.com([^<]+)<\/loc>/g)].map((match) => match[1]);
+const actorPaths = [...actorSitemap.matchAll(/<loc>https:\/\/xmasdb\.com([^<]+)<\/loc>/g)].map((match) => match[1]);
+assert.equal(new Set(moviePaths).size, moviePaths.length, 'movie sitemap must not contain duplicates');
+assert.equal(new Set(actorPaths).size, actorPaths.length, 'actor sitemap must not contain duplicates');
+assert.ok([...moviePaths, ...actorPaths].every((path) => !/[?&]/.test(path)), 'sitemaps must contain canonical paths without query strings');
+assert.equal(moviePaths.length, MOVIES.length);
+assert.ok(actorPaths.length < getAllActors().length);
+assert.ok(actorPaths.includes(getActorPath(worthyActor.tmdbPersonId, worthyActor.slug)));
+assert.ok(!actorPaths.includes(getActorPath(thinActor.tmdbPersonId, thinActor.slug)));
+assert.ok(!actorPaths.includes(getActorPath(zeroCreditActor.tmdbPersonId, zeroCreditActor.slug)));
+assert.ok([...moviePaths, ...actorPaths].every((path) => {
   const seo = getServerSeo(path);
   const html = renderServerHtml(serverShell, path);
   const expectedRobots = seo.noIndex ? 'noindex,follow' : 'index,follow,max-image-preview:large';
@@ -235,22 +263,19 @@ assert.ok(sitemapPaths.every((path) => {
     && /<h1>/.test(html)
     && !html.includes('Something went wrong loading this page.')
     && !html.includes('Loading...');
-}), 'every sitemap URL must have complete server metadata and visible content');
-const sitemapTitles = sitemapPaths.map((path) => getServerSeo(path).title);
+}), 'every movie/actor sitemap URL must have complete indexable metadata and visible content');
+const sitemapTitles = [...moviePaths, ...actorPaths].map((path) => getServerSeo(path).title);
 assert.equal(new Set(sitemapTitles).size, sitemapTitles.length, 'every indexable URL must have a unique title');
-assert.match(sitemap, new RegExp(`https://xmasdb\\.com${getMoviePath(movie.tmdbId, movie.slug)}`));
-assert.match(sitemap, new RegExp(`https://xmasdb\\.com${getActorPath(actor.tmdbPersonId, actor.slug)}`));
-assert.match(sitemap, /https:\/\/xmasdb\.com\/hallmark\//);
-assert.match(sitemap, /https:\/\/xmasdb\.com\/year\/2025\//);
-assert.match(sitemap, new RegExp(`https://xmasdb\\.com${getFeedsPath()}`));
-assert.match(sitemap, /https:\/\/xmasdb\.com\/birthdays/);
-assert.match(sitemap, /https:\/\/xmasdb\.com\/about\//);
-assert.match(sitemap, /https:\/\/xmasdb\.com\/privacy\//);
-assert.match(sitemap, /https:\/\/xmasdb\.com\/contact\//);
+assert.match(movieSitemap, new RegExp(`https://xmasdb\\.com${getMoviePath(movie.tmdbId, movie.slug)}`));
+assert.match(actorSitemap, new RegExp(`https://xmasdb\\.com${getActorPath(worthyActor.tmdbPersonId, worthyActor.slug)}`));
+assert.match(archiveSitemap, /https:\/\/xmasdb\.com\/hallmark\//);
+assert.match(archiveSitemap, /https:\/\/xmasdb\.com\/year\/2025\//);
+assert.match(pagesSitemap, new RegExp(`https://xmasdb\\.com${getFeedsPath()}`));
+assert.match(pagesSitemap, /https:\/\/xmasdb\.com\/birthdays/);
+assert.match(pagesSitemap, /https:\/\/xmasdb\.com\/about\//);
 assert.doesNotMatch(sitemap, /\/admin\//);
 assert.doesNotMatch(sitemap, /\/json\//);
 assert.doesNotMatch(sitemap, /[?&](page|search|sort|perPage)=/);
-assert.match(sitemap, /<loc>https:\/\/xmasdb\.com\//);
 
 assert.match(getRobotsTxt(), /Sitemap: https:\/\/xmasdb\.com\/sitemap\.xml/);
 assert.match(getRobotsTxt(), /Allow: \/\n/);

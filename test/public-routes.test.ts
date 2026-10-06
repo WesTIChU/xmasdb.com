@@ -45,6 +45,8 @@ try {
 
   const removedActorId = getAllActors()[0]?.tmdbPersonId;
   assert.ok(removedActorId, 'actor fixture should exist');
+  const ambiguousActor = getAllActors().find((actor, index, actors) => actors.some((other, otherIndex) => otherIndex > index && other.slug.toLowerCase() === actor.slug.toLowerCase()));
+  assert.ok(ambiguousActor, 'duplicate actor slug fixture should exist');
 
   const removedRoutes = [
     '/api/metadata/all.json',
@@ -89,6 +91,14 @@ try {
   assert.equal((await request(`/api/fingerprint/${FINGERPRINTS[0].id}`)).status, 200);
   assert.equal((await request('/rss.xml')).status, 200);
   assert.equal((await request('/sitemap.xml')).status, 200);
+  const sitemapIndex = await request('/sitemap.xml');
+  assert.match(await sitemapIndex.text(), /<sitemapindex/);
+  for (const name of ['movies', 'actors', 'archives', 'pages']) {
+    const child = await request(`/sitemaps/${name}.xml`);
+    assert.equal(child.status, 200, `${name} sitemap should remain public`);
+    assert.match(await child.text(), /<urlset/);
+  }
+  assert.equal((await request(`/actor/${ambiguousActor.slug}/`)).status, 404, 'ambiguous actor slugs must not resolve to the first person');
 
   for (const route of ['/api/v1/movies', '/api/v1/actors', '/api/v1/ingredients']) {
     assert.equal((await request(route)).status, 404, `${route} should remain disabled in this configuration`);

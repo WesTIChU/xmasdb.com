@@ -2,7 +2,7 @@ import assert from 'assert';
 import { MOVIES } from '../src/data/movies';
 import { getActorBackdrop } from '../src/utils/backdrops';
 import { getPopulatedBrands } from '../src/data/brands';
-import { getRadarrAllFeedJson, getRadarrNetworkFeedJson, getSitemapXml, isMovieEligibleForRadarr } from '../src/utils/feeds';
+import { getRadarrAllFeedJson, getRadarrNetworkFeedJson, getSitemapChildXml, isMovieEligibleForRadarr } from '../src/utils/feeds';
 import { buildCatalogueUrl, getCataloguePage, parseCatalogueQuery } from '../src/utils/catalogue-pagination';
 import { buildCatalogueListing, selectDiscoverMovies, selectThisMonthMovies, selectRelatedMovies } from '../src/server/catalogue-api';
 import { getMoviePoster } from '../src/utils/posters';
@@ -203,10 +203,11 @@ assert.ok(
   ),
 );
 assert.ok(JSON.parse(getRadarrAllFeedJson()).length >= gafFeed.length + hallmarkFeed.length);
-assert.ok(getSitemapXml().includes('/gaf/'));
-assert.ok(getSitemapXml().includes('/lifetime/'));
-assert.ok(getSitemapXml().includes('/uptv/'));
-assert.ok(getSitemapXml().includes('/uptv/2017/'));
+const archiveSitemap = getSitemapChildXml('archives');
+assert.ok(archiveSitemap.includes('/gaf/'));
+assert.ok(archiveSitemap.includes('/lifetime/'));
+assert.ok(archiveSitemap.includes('/uptv/'));
+assert.ok(archiveSitemap.includes('/uptv/2017/'));
 
 const discoverDate = new Date('2026-09-20T12:00:00Z');
 const discover = selectDiscoverMovies(MOVIES, discoverDate);

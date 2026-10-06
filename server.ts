@@ -4,8 +4,9 @@ import compression from 'compression';
 import path from 'path';
 import fs from 'fs';
 import { createServer as createViteServer } from 'vite';
-import { MOVIES, getMovieByTmdbId, getMovieBySlug, getMovieByTmdbIdAndSlug } from './src/data/movies';
-import { getActorByTmdbId, getActorBySlug } from './src/data/actors';
+import { MOVIES, getMovieByTmdbId, getMovieByTmdbIdAndSlug } from './src/data/movies';
+import { getActorByTmdbId } from './src/data/actors';
+import { getActorsBySlug, getMoviesBySlug } from './src/utils/entity-resolution';
 import { getBrandBySlug } from './src/data/brands';
 import {
   getRadarrAllFeedJson,
@@ -14,6 +15,7 @@ import {
   getRadarrActorFeedJson,
   getRssFeedXml,
   getSitemapXml,
+  getSitemapChildXml,
 } from './src/utils/feeds';
 import { parseCatalogueQuery } from './src/utils/catalogue-pagination';
 import {
@@ -69,7 +71,7 @@ function isKnownPagePath(rawPath: string): boolean {
     const parts = movie[1].split('/').filter(Boolean);
     if (parts.length === 1) {
       const id = Number(parts[0]);
-      return Number.isInteger(id) ? Boolean(getMovieByTmdbId(id)) : Boolean(getMovieBySlug(parts[0]));
+      return Number.isInteger(id) ? Boolean(getMovieByTmdbId(id)) : getMoviesBySlug(parts[0]).length === 1;
     }
     const id = Number(parts[0]);
     return Number.isInteger(id) && Boolean(getMovieByTmdbIdAndSlug(id, parts[1]));
@@ -80,7 +82,7 @@ function isKnownPagePath(rawPath: string): boolean {
     const parts = actor[1].split('/').filter(Boolean);
     if (parts.length === 1) {
       const id = Number(parts[0]);
-      return Number.isInteger(id) ? Boolean(getActorByTmdbId(id)) : Boolean(getActorBySlug(parts[0]));
+      return Number.isInteger(id) ? Boolean(getActorByTmdbId(id)) : getActorsBySlug(parts[0]).length === 1;
     }
     const id = Number(parts[0]);
     return Number.isInteger(id) && Boolean(getActorByTmdbId(id));
@@ -248,6 +250,13 @@ async function startServer() {
     res.setHeader('Content-Type', 'application/xml; charset=utf-8');
     res.send(getSitemapXml());
   });
+
+  for (const sitemapName of ['movies', 'actors', 'archives', 'pages'] as const) {
+    app.get(`/sitemaps/${sitemapName}.xml`, (_req, res) => {
+      res.setHeader('Content-Type', 'application/xml; charset=utf-8');
+      res.send(getSitemapChildXml(sitemapName));
+    });
+  }
 
   app.get('/robots.txt', (_req, res) => {
     res.type('text/plain').send(getRobotsTxt());
