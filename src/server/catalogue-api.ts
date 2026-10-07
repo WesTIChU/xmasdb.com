@@ -17,7 +17,7 @@ import { getBrandBySlug, getPopulatedBrands } from '../data/brands';
 import { getCataloguePage, type CatalogueQuery } from '../utils/catalogue-pagination';
 import { getArchiveYearsForNetwork, getMovieArchiveYear, getMovieNetworkPremiereDateKey, getMovieNetworkPremiereYear, getMoviePremiereDateKey, isFutureComingSoonMovie, isMoviePremierePast, sortMoviesByLifecycle } from '../utils/catalogue-lifecycle';
 import { getActorBackdrop } from '../utils/backdrops';
-import { buildRadarrFeed, isMovieEligibleForRadarr } from '../utils/feeds';
+import { buildRadarrFeed, getRadarrArchiveYear, isMovieEligibleForRadarr } from '../utils/feeds';
 import type {
   ActorDetailPayload,
   AboutPayload,
@@ -779,13 +779,13 @@ export function buildFeedsMeta(referenceDate: Date = new Date()): FeedsMetaPaylo
     ).length;
   }
 
-  const years = getAllYearsForBrand();
+  const years = Array.from(new Set(MOVIES.map((movie) => getRadarrArchiveYear(movie)))).sort((a, b) => b - a);
   const yearCounts: Record<string, number> = {};
   for (const year of years) {
-    yearCounts[String(year)] = buildRadarrFeed(
-      MOVIES.filter((movie) => movie.year === year),
-      referenceDate
-    ).length;
+      yearCounts[String(year)] = buildRadarrFeed(
+        MOVIES.filter((movie) => getRadarrArchiveYear(movie) === year),
+        referenceDate
+      ).length;
   }
   return {
     years,

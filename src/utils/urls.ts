@@ -27,6 +27,11 @@ export function getMoviePath(tmdbId: number | string, slug: string): string {
   return `/movie/${tmdbId}/${cleanSlug}/`;
 }
 
+/** Generate the absolute canonical movie URL used for sharing and metadata. */
+export function getMovieCanonicalUrl(tmdbId: number | string, slug: string): string {
+  return toCanonicalUrl(getMoviePath(tmdbId, slug));
+}
+
 /**
  * Generate canonical actor path: /actor/{tmdbPersonId}/{slug}/
  */

@@ -13,6 +13,7 @@ import {
   getRadarrFeedAudit,
   getRadarrNetworkFeedJson,
   getRadarrYearFeedJson,
+  getRadarrArchiveYear,
   isMovieEligibleForRadarr,
 } from '../src/utils/feeds';
 
@@ -96,7 +97,27 @@ assert.deepStrictEqual(actorCountMismatches, []);
 
 const year = lifetimeMovie.year;
 const yearFeed = JSON.parse(getRadarrYearFeedJson(year)) as { title: string; imdb_id: string }[];
-assert.ok(yearFeed.every((item) => item.title.endsWith(`(${year})`)));
+assert.ok(yearFeed.some((item) => item.title.endsWith(`(${year})`)));
+
+const archiveFeedCases = [
+  [1191059, 2025, 2023, 'Merry Mystery Christmas (2023)', 'tt29904237'],
+  [1175674, 2024, 2023, 'Coupled Up for Christmas (2023)'],
+  [1032588, 2023, 2022, 'A Belgian Chocolate Christmas (2022)'],
+  [649520, 2022, 2019, "My Best Friend's Christmas (2019)"],
+  [1386531, 2025, 2024, 'Jingle All the Way to Love (2024)'],
+  [1380983, 2026, 2024, 'Renovation Romance (2024)'],
+  [1549507, 2026, 2025, 'Christmas in the Ballroom (2025)'],
+] as const;
+for (const [tmdbId, archiveYear, releaseYear, expectedTitle, expectedImdbId] of archiveFeedCases) {
+  const movie = MOVIES.find((candidate) => candidate.tmdbId === tmdbId)!;
+  assert.equal(getRadarrArchiveYear(movie), archiveYear, `${movie.title} should use its network archive year`);
+  const archiveFeed = JSON.parse(getRadarrYearFeedJson(archiveYear)) as { title: string; imdb_id: string }[];
+  const oldFeed = JSON.parse(getRadarrYearFeedJson(releaseYear)) as { title: string; imdb_id: string }[];
+  assert.ok(archiveFeed.some((item) => item.imdb_id === (expectedImdbId || movie.imdbId)), `${movie.title} should be in its archive-year feed`);
+  if (archiveYear !== releaseYear) assert.ok(!oldFeed.some((item) => item.imdb_id === movie.imdbId), `${movie.title} should not be in its original-year feed`);
+  const entry = archiveFeed.find((item) => item.imdb_id === movie.imdbId);
+  assert.equal(entry?.title, expectedTitle, `${movie.title} feed title should retain its original release year`);
+}
 
 const actorId = lifetimeMovie.cast.find((cast) => cast.tmdbPersonId)?.tmdbPersonId;
 assert.ok(actorId, 'Actor fixture should exist');

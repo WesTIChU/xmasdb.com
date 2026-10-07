@@ -3,7 +3,7 @@ import { getAllActors, getActorByTmdbId } from '../data/actors';
 import { getPopulatedBrands } from '../data/brands';
 import { FINGERPRINTS } from '../data/fingerprints';
 import { getActorCreditCount, isActorIndexWorthy } from './actor-indexing';
-import { getArchiveYearsForNetwork } from './catalogue-lifecycle';
+import { getArchiveYearsForNetwork, getMovieArchiveYear } from './catalogue-lifecycle';
 import { Movie } from '../types';
 import {
   SITE_ORIGIN,
@@ -38,6 +38,16 @@ export interface RadarrFeedAudit {
   withImdb: number;
   feed: number;
   missingImdbTitles: string[];
+}
+
+const NETWORK_ARCHIVE_FEED_BRANDS = new Set(['hallmark', 'lifetime', 'gaf', 'uptv']);
+
+/** Returns the season year used by combined network year feeds. */
+export function getRadarrArchiveYear(movie: Movie): number {
+  if (NETWORK_ARCHIVE_FEED_BRANDS.has(movie.brandId.toLowerCase())) {
+    return getMovieArchiveYear(movie, movie.brandId) ?? movie.year;
+  }
+  return movie.year;
 }
 
 /**
@@ -154,7 +164,7 @@ export function getRadarrNetworkFeedJson(brandId: string): string {
  * Contains eligible movies for the specified year
  */
 export function getRadarrYearFeedJson(year: number): string {
-  const yearMovies = MOVIES.filter((m) => m.year === year);
+  const yearMovies = MOVIES.filter((m) => getRadarrArchiveYear(m) === year);
   const feed = buildRadarrFeed(yearMovies);
   return JSON.stringify(feed, null, 2);
 }
