@@ -6,7 +6,7 @@ import { getRadarrAllFeedJson, getRadarrNetworkFeedJson, getSitemapChildXml, isM
 import { buildCatalogueUrl, getCataloguePage, parseCatalogueQuery } from '../src/utils/catalogue-pagination';
 import { buildActorDetail, buildCatalogueListing, buildMovieDetail, selectDiscoverMovies, selectThisMonthMovies, selectRelatedMovies } from '../src/server/catalogue-api';
 import { getMoviePoster } from '../src/utils/posters';
-import { getMoviePremiereDateKey } from '../src/utils/catalogue-lifecycle';
+import { getArchiveYearsForNetwork, getMovieArchiveYear, getMoviePremiereDateKey } from '../src/utils/catalogue-lifecycle';
 
 console.log('Running catalogue pagination and local backdrop tests...');
 
@@ -52,6 +52,17 @@ assert.equal(letItSnow?.releaseDate, '2013-11-30', 'Let It Snow keeps the origin
 assert.equal(letItSnow?.premiereDate, '2013-11-30', 'Let It Snow keeps the original premiere date');
 assert.ok(buildCatalogueListing(parseCatalogueQuery(''), 'hallmark', 2013)?.movies.some((movie) => movie.id === 'gaf-2024-let-it-snow'), 'Let It Snow appears under Hallmark 2013');
 assert.ok(!buildCatalogueListing(parseCatalogueQuery(''), 'gaf', 2013)?.movies.some((movie) => movie.id === 'gaf-2024-let-it-snow'), 'Let It Snow no longer appears under GAF 2013');
+
+const merryMysteryChristmas = MOVIES.find((movie) => movie.tmdbId === 1191059);
+assert.ok(merryMysteryChristmas, 'TMDB 1191059 should remain in the catalogue');
+assert.equal(getMovieArchiveYear(merryMysteryChristmas!, 'gaf'), 2025, 'GAF release date should determine the archive year when no override is stored');
+assert.equal(merryMysteryChristmas!.releaseDate, '2023-11-08', 'archive-year selection must not alter the original release date');
+assert.ok(buildCatalogueListing(parseCatalogueQuery(''), 'gaf', 2025)?.movies.some((movie) => movie.tmdbId === 1191059), 'Merry Mystery Christmas should appear under GAF 2025');
+assert.ok(!buildCatalogueListing(parseCatalogueQuery(''), 'gaf', 2023)?.movies.some((movie) => movie.tmdbId === 1191059), 'Merry Mystery Christmas should not appear under GAF 2023');
+assert.ok(buildCatalogueListing(parseCatalogueQuery(''), 'gaf', 2025)?.years.includes(2025), 'GAF archive navigation should include the network premiere year');
+assert.equal(getMovieArchiveYear({ brandId: 'gaf', year: 2024, releaseDate: '2024-11-01' }, 'gaf'), 2024, 'release year should be the archive fallback');
+assert.equal(getMovieArchiveYear({ brandId: 'gaf', year: 2024, releaseDate: '2024-11-01', networkPremiereDate: '2025-11-01' }, 'gaf'), 2025, 'explicit network premiere should take precedence');
+assert.ok(getArchiveYearsForNetwork(MOVIES, 'gaf').includes(2025), 'GAF archive years should use network premiere dates');
 
 const hotChocolateHoliday = MOVIES.find((movie) => movie.tmdbId === 777405);
 assert.ok(hotChocolateHoliday, 'Hot Chocolate Holiday remains in the catalogue');

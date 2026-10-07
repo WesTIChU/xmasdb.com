@@ -1,5 +1,5 @@
 import { Movie } from '../types';
-import { getMoviePremiereDateKey, isDateKeyInCalendarWeek, isMoviePremierePast } from './catalogue-lifecycle';
+import { getMovieArchiveYear, getMoviePremiereDateKey, isDateKeyInCalendarWeek, isMoviePremierePast } from './catalogue-lifecycle';
 
 export const SUPPORTED_PER_PAGE = [24, 48, 96] as const;
 export type CatalogueSort = 'catalogue' | 'newest' | 'oldest' | 'title' | 'title-desc';
@@ -68,7 +68,7 @@ export function getCataloguePage(movies: Movie[], query: CatalogueQuery, lockedB
     const brand = lockedBrand || query.brand;
     const year = lockedYear || query.year;
     if (brand && movie.brandId.toLowerCase() !== brand.toLowerCase()) return false;
-    if (year && movie.year !== year) return false;
+    if (year && (brand ? getMovieArchiveYear(movie, brand) : movie.year) !== year) return false;
     if (query.status && movie.status?.toLowerCase() !== query.status) return false;
     if (query.search && !(
       movie.title.toLowerCase().includes(query.search) ||

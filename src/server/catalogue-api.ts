@@ -15,7 +15,7 @@ import {
 } from '../data/actors';
 import { getBrandBySlug, getPopulatedBrands } from '../data/brands';
 import { getCataloguePage, type CatalogueQuery } from '../utils/catalogue-pagination';
-import { getMovieNetworkPremiereDateKey, getMoviePremiereDateKey, isFutureComingSoonMovie, isMoviePremierePast, sortMoviesByLifecycle } from '../utils/catalogue-lifecycle';
+import { getArchiveYearsForNetwork, getMovieNetworkPremiereDateKey, getMoviePremiereDateKey, isFutureComingSoonMovie, isMoviePremierePast, sortMoviesByLifecycle } from '../utils/catalogue-lifecycle';
 import { getActorBackdrop } from '../utils/backdrops';
 import { buildRadarrFeed, isMovieEligibleForRadarr } from '../utils/feeds';
 import type {
@@ -167,7 +167,7 @@ export function buildCatalogueListing(
     totalPages: page.totalPages,
     page: page.page,
     perPage: page.perPage,
-    years: brandId ? getAllYearsForBrand(brandId) : getAllYearsForBrand(),
+     years: brandId ? getArchiveYearsForNetwork(MOVIES, brandId) : getAllYearsForBrand(),
     brand,
   };
 }

@@ -3,6 +3,7 @@ import { getAllActors, getActorByTmdbId } from '../data/actors';
 import { getPopulatedBrands } from '../data/brands';
 import { FINGERPRINTS } from '../data/fingerprints';
 import { getActorCreditCount, isActorIndexWorthy } from './actor-indexing';
+import { getArchiveYearsForNetwork } from './catalogue-lifecycle';
 import { Movie } from '../types';
 import {
   SITE_ORIGIN,
@@ -270,7 +271,7 @@ function sitemapEntries(name: SitemapName): SitemapEntry[] {
   if (name === 'archives') {
     for (const b of getPopulatedBrands(MOVIES)) {
       urls.push({ loc: `${SITE_ORIGIN}${getNetworkPath(b.slug)}`, changefreq: 'weekly', priority: '0.8' });
-      for (const yr of getAllYearsForBrand(b.id)) urls.push({ loc: `${SITE_ORIGIN}${getNetworkPath(b.slug, yr)}`, changefreq: 'monthly', priority: '0.7' });
+      for (const yr of getArchiveYearsForNetwork(MOVIES, b.id)) urls.push({ loc: `${SITE_ORIGIN}${getNetworkPath(b.slug, yr)}`, changefreq: 'monthly', priority: '0.7' });
     }
     for (const yr of getAllYearsForBrand()) urls.push({ loc: `${SITE_ORIGIN}${getYearPath(yr)}`, changefreq: 'monthly', priority: '0.7' });
     return urls;
