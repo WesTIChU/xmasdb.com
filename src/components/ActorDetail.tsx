@@ -222,7 +222,7 @@ export const ActorDetail: React.FC<ActorDetailProps> = ({
           </div>
 
           {/* Actor Editorial Information */}
-          <div className="flex-1 text-center md:text-left">
+          <div className="flex-1 text-center md:text-left before:content-[''] before:block before:mx-auto md:before:mx-0 before:mb-4 before:h-px before:w-12 before:bg-[#B8860B]">
             <h1
               id="actor-name-title"
               className="text-3xl sm:text-4xl md:text-5xl font-serif font-normal text-[#1A3D2F] tracking-tight leading-tight"
@@ -309,7 +309,7 @@ export const ActorDetail: React.FC<ActorDetailProps> = ({
             {/* TMDB Biography (ABOUT Section) - Omitted if not available */}
              {biography && (
               <div id="actor-biography-section" ref={biographyRef} className="mt-6 pt-5 border-t border-[#E7DFD5]">
-                <h3 className="text-xs font-sans-clean font-semibold uppercase tracking-widest text-[#736B63] mb-2">
+                <h3 className="text-xs sm:text-sm font-sans-clean font-semibold uppercase tracking-[0.18em] text-[#1A3D2F] mb-2">
                   About
                 </h3>
                 <p ref={biographyContentRef} className={`font-body text-[#3F3A34] text-sm sm:text-base leading-relaxed max-w-3xl whitespace-pre-line ${!biographyExpanded ? 'line-clamp-5' : ''}`}>

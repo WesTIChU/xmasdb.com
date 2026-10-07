@@ -261,7 +261,7 @@ export const MovieDetail: React.FC<MovieDetailProps> = ({ movie, related, onNavi
 
         {/* Right column: Title, Synopsis, Cast, Trailers, External Links */}
         <div className="md:col-span-2 text-left space-y-8">
-          <div className="border-b border-[#E7DFD5] pb-4">
+          <div className="border-b border-[#E7DFD5] pb-4 before:content-[''] before:block before:mx-0 before:mb-4 before:h-px before:w-12 before:bg-[#B8860B]">
             {/* Small understated brand label above movie title */}
             {brand && (
               <span
