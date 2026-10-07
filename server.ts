@@ -866,6 +866,7 @@ async function startServer() {
       'logo-1100.webp',
       'logo-halloween.png',
       'logo-halloween-q95.webp',
+      'logo-halloween-440.webp',
       'logo-halloween-550.webp',
       'logo-halloween-1100.webp',
       'logo.svg',
@@ -874,7 +875,7 @@ async function startServer() {
       'site.webmanifest',
       'manifest.webmanifest',
     ]);
-    const immutableRootFiles = new Set(['favicon-64.png', 'logo-550.webp', 'logo-1100.webp', 'logo-halloween-550.webp', 'logo-halloween-1100.webp']);
+    const immutableRootFiles = new Set(['favicon-64.png', 'logo-550.webp', 'logo-1100.webp', 'logo-halloween-440.webp', 'logo-halloween-550.webp', 'logo-halloween-1100.webp']);
     for (const fileName of publicRootFiles) {
       const filePath = path.join(distPath, fileName);
       app.get(`/${fileName}`, (_req, res, next) => {
