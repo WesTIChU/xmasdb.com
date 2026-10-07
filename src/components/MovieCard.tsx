@@ -22,9 +22,13 @@ interface MovieCardProps {
   titleLines?: 2 | 3;
   /** Allows archive grids to let metadata follow the title's natural height. */
   reserveTitleHeight?: boolean;
+  /** Shows AKA titles for search-result cards only. */
+  showAlternativeTitles?: boolean;
+  /** Shows differing network premiere year for search-result cards. */
+  showNetworkPremiereYear?: boolean;
 }
 
-export const MovieCard: React.FC<MovieCardProps> = ({ movie, onSelectMovie, priority = false, metadata, showYearBrandMetadata = true, optimizeHomepageImage = false, titleLines = 2, reserveTitleHeight = true }) => {
+export const MovieCard: React.FC<MovieCardProps> = ({ movie, onSelectMovie, priority = false, metadata, showYearBrandMetadata = true, optimizeHomepageImage = false, titleLines = 2, reserveTitleHeight = true, showAlternativeTitles = false, showNetworkPremiereYear = false }) => {
   const [hasImageError, setHasImageError] = useState(false);
   const [useOriginalPoster, setUseOriginalPoster] = useState(false);
   const brand = getBrandById(movie.brandId);
@@ -89,9 +93,26 @@ export const MovieCard: React.FC<MovieCardProps> = ({ movie, onSelectMovie, prio
           >
             {movie.title}
           </h3>
+          {showAlternativeTitles && movie.alternativeTitles && movie.alternativeTitles.length > 0 && (
+            <p className="mt-0.5 break-words text-xs text-[#736B63] font-body" title={movie.alternativeTitles.join(' · ')}>
+              <span>Also known as: </span>
+              {movie.alternativeTitles.map((title, index) => (
+                <React.Fragment key={title}>
+                  {index > 0 && <span> · </span>}
+                  <span className="font-semibold text-[#403A34]">{title}</span>
+                </React.Fragment>
+              ))}
+            </p>
+          )}
           {(metadata !== undefined || showYearBrandMetadata) && (
             <p className="text-xs sm:text-sm text-[#736B63] mt-0.5 font-body">
               {metadata !== undefined ? metadata : movie.year}
+              {showNetworkPremiereYear && movie.networkPremiereYear !== undefined && (
+                <>
+                  <span> · </span>
+                  <span>{brand?.shortName || movie.brandId.toUpperCase()} Premiere {movie.networkPremiereYear}</span>
+                </>
+              )}
             </p>
           )}
         </div>

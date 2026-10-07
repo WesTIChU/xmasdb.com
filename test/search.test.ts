@@ -3,6 +3,7 @@ import { getAllActors } from '../src/data/actors';
 import { MOVIES } from '../src/data/movies';
 import { buildSearchIndex, buildSearchResults } from '../src/server/catalogue-api';
 import {
+  getDisplayAlternativeTitles,
   normalizeSearchText,
   scoreActorSearchResult,
   scoreMovieSearchEntry,
@@ -34,6 +35,17 @@ if (alternativeTitle) {
   assert.ok(alternativeTitleResults.movies.some((movie) => movie.tmdbId === 878410), 'global search should match TMDB 878410 alternative title');
   assert.equal(alternativeTitleResults.movies.find((movie) => movie.tmdbId === 878410)?.title, alternativeTitleMovie.title, 'alternative-title search keeps the catalogue primary title');
 }
+
+const merryMysteryChristmas = MOVIES.find((movie) => movie.tmdbId === 1191059)!;
+assert.equal(buildSearchResults('Merry Mystery Christmas').movies[0].tmdbId, 1191059, 'canonical title should find Merry Mystery Christmas');
+const akaResults = buildSearchResults('A Very Curious Christmas');
+assert.equal(akaResults.movies[0].tmdbId, 1191059, 'AKA title should find Merry Mystery Christmas');
+assert.deepEqual(akaResults.movies[0].alternativeTitles, ['A Very Curious Christmas'], 'search result should expose the matching AKA title');
+assert.equal(buildSearchResults('1191059').movies[0].tmdbId, 1191059, 'exact TMDB ID should find the movie');
+assert.equal(buildSearchResults('1191059').movies[0].networkPremiereYear, 2025, 'exact TMDB ID result should include the differing network premiere year');
+assert.ok(!buildSearchResults('11910').movies.some((movie) => movie.tmdbId === 1191059), 'partial TMDB ID should not match');
+assert.equal(getDisplayAlternativeTitles('Merry Mystery Christmas', ['Merry Mystery Christmas', 'A Very Curious Christmas', 'A Very Curious Christmas']).join(' · '), 'A Very Curious Christmas');
+assert.equal(merryMysteryChristmas.year, 2023, 'search must retain the movie release year');
 
 const actorWithMultipleWords = getAllActors().find((actor) => actor.name.trim().split(/\s+/).length >= 2)!;
 const actorParts = normalizeSearchText(actorWithMultipleWords.name).split(' ');

@@ -329,10 +329,27 @@ export const SearchAutocomplete: React.FC<SearchAutocompleteProps> = ({
                 <div className="font-heading text-sm font-semibold text-[#1A3D2F] line-clamp-1 leading-snug">
                   {highlightMatch(movie.title, searchQuery)}
                 </div>
+                {movie.alternativeTitles && movie.alternativeTitles.length > 0 && (
+                  <div className="break-words text-[11px] text-[#736B63] font-body mt-0.5">
+                    <span>Also known as: </span>
+                    {movie.alternativeTitles.map((title, index) => (
+                      <React.Fragment key={title}>
+                        {index > 0 && <span> · </span>}
+                        <span className="font-semibold text-[#403A34]">{title}</span>
+                      </React.Fragment>
+                    ))}
+                  </div>
+                )}
                 <div className="text-xs text-[#736B63] font-body mt-0.5 flex items-center gap-1">
                   <span>{movie.year}</span>
                   <span className="text-[#C4BCB1]">·</span>
                   <span className="text-[#59524A] font-medium">{brandName}</span>
+                  {movie.networkPremiereYear !== undefined && (
+                    <>
+                      <span className="text-[#C4BCB1]">·</span>
+                      <span>{brandName} Premiere {movie.networkPremiereYear}</span>
+                    </>
+                  )}
                 </div>
               </div>
             </a>

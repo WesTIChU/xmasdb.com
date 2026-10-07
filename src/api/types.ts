@@ -17,6 +17,8 @@ export interface ListingMovie {
   releaseDate: string;
   premiereDate?: string;
   status?: string;
+  alternativeTitles?: string[];
+  networkPremiereYear?: number;
 }
 
 export interface CalendarMovie {
@@ -298,6 +300,7 @@ export interface SearchMovieEntry {
   posterUrl: string;
   originalTitle?: string;
   alternativeTitles?: string[];
+  networkPremiereYear?: number;
   /** Lowercased searchable text (cast names) used for autocomplete matching. */
   terms: string;
 }

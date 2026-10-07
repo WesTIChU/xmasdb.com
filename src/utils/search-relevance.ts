@@ -2,6 +2,7 @@ import type { ListingMovie, SearchIngredientEntry, SearchMovieEntry, SearchPerso
 
 export interface MovieSearchFields {
   title: string;
+  tmdbId?: number;
   originalTitle?: string;
   alternativeTitles?: string[];
   secondaryText?: string;
@@ -56,16 +57,36 @@ export function scoreIngredientSearchResult(ingredient: Pick<SearchIngredientEnt
 }
 
 export function scoreMovieSearchFields(fields: MovieSearchFields, query: string): number {
+  const normalizedQuery = normalizeSearchText(query);
+  const exactTmdbIdScore = fields.tmdbId !== undefined
+    && /^\d+$/.test(normalizedQuery)
+    && String(fields.tmdbId) === normalizedQuery
+    ? 2000
+    : 0;
   const titleScore = scoreTextMatch(fields.title, query);
   const alternateScore = fields.originalTitle ? Math.floor(scoreTextMatch(fields.originalTitle, query) * 0.45) : 0;
   const alternativeTitleScore = Math.max(0, ...(fields.alternativeTitles || []).map((title) => Math.floor(scoreTextMatch(title, query) * 0.45)));
   const secondaryScore = fields.secondaryText ? Math.floor(scoreTextMatch(fields.secondaryText, query) * 0.2) : 0;
-  return Math.max(titleScore, alternateScore, alternativeTitleScore, secondaryScore);
+  return Math.max(exactTmdbIdScore, titleScore, alternateScore, alternativeTitleScore, secondaryScore);
+}
+
+export function getDisplayAlternativeTitles(title: string, alternativeTitles?: string[]): string[] {
+  const canonical = normalizeSearchText(title);
+  const seen = new Set<string>();
+  return (alternativeTitles || []).reduce<string[]>((result, alternativeTitle) => {
+    const trimmed = alternativeTitle.trim();
+    const normalized = normalizeSearchText(trimmed);
+    if (!normalized || normalized === canonical || seen.has(normalized)) return result;
+    seen.add(normalized);
+    result.push(trimmed);
+    return result;
+  }, []);
 }
 
 export function scoreMovieSearchEntry(movie: SearchMovieEntry, query: string): number {
   return scoreMovieSearchFields({
     title: movie.title,
+    tmdbId: movie.tmdbId,
     originalTitle: movie.originalTitle,
     alternativeTitles: movie.alternativeTitles,
     secondaryText: movie.terms,

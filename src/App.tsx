@@ -602,6 +602,8 @@ export default function App() {
         movies={searchResults.movies}
         onSelectMovie={selectMovie}
         naturalTitleHeight
+        showAlternativeTitles
+        showNetworkPremiereYear
         emptyMessage={`No movies found matching "${searchQuery}".`}
       />
     </section>

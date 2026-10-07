@@ -15,7 +15,7 @@ import {
 } from '../data/actors';
 import { getBrandBySlug, getPopulatedBrands } from '../data/brands';
 import { getCataloguePage, type CatalogueQuery } from '../utils/catalogue-pagination';
-import { getArchiveYearsForNetwork, getMovieArchiveYear, getMovieNetworkPremiereDateKey, getMoviePremiereDateKey, isFutureComingSoonMovie, isMoviePremierePast, sortMoviesByLifecycle } from '../utils/catalogue-lifecycle';
+import { getArchiveYearsForNetwork, getMovieArchiveYear, getMovieNetworkPremiereDateKey, getMovieNetworkPremiereYear, getMoviePremiereDateKey, isFutureComingSoonMovie, isMoviePremierePast, sortMoviesByLifecycle } from '../utils/catalogue-lifecycle';
 import { getActorBackdrop } from '../utils/backdrops';
 import { buildRadarrFeed, isMovieEligibleForRadarr } from '../utils/feeds';
 import type {
@@ -42,7 +42,7 @@ import type {
   CalendarPayload,
 } from '../api/types';
 import { birthdayDistance, parseBirthday, sortBirthdays, upcomingBirthdays } from '../utils/birthdays';
-import { scoreActorSearchResult, scoreIngredientSearchResult, scoreMovieSearchFields } from '../utils/search-relevance';
+import { getDisplayAlternativeTitles, scoreActorSearchResult, scoreIngredientSearchResult, scoreMovieSearchFields } from '../utils/search-relevance';
 import { getCreativeCrew, getPersonSlug, isCreativeCrewJob } from '../utils/creative-crew';
 import { FINGERPRINTS, getFingerprintById } from '../data/fingerprints';
 import { getMovieFingerprints, getRelatedMovieFingerprints, movieHasFingerprint } from '../data/movie-fingerprints';
@@ -61,7 +61,7 @@ const FAVOURITE_MOVIE_TITLES = [
 const FAVOURITE_ACTOR_NAMES = ['Paul Campbell', 'Kimberley Sustad', 'Ryan Paevey'] as const;
 
 /** Converts a canonical movie into the compact listing shape used by cards. */
-export function toListingMovie(movie: Movie, displayYear = movie.year): ListingMovie {
+export function toListingMovie(movie: Movie, displayYear = movie.year, includeAlternativeTitles = false): ListingMovie {
   return {
     id: movie.id,
     slug: movie.slug,
@@ -73,6 +73,8 @@ export function toListingMovie(movie: Movie, displayYear = movie.year): ListingM
     releaseDate: movie.releaseDate,
     premiereDate: movie.premiereDate,
     status: movie.status,
+    ...(includeAlternativeTitles ? { alternativeTitles: getDisplayAlternativeTitles(movie.title, movie.alternativeTitles?.map((entry) => entry.title)) } : {}),
+    ...(includeAlternativeTitles ? { networkPremiereYear: getMovieNetworkPremiereYear(movie) ?? undefined } : {}),
   };
 }
 
@@ -181,7 +183,7 @@ export function buildFingerprintListing(query: CatalogueQuery, fingerprintSlug: 
   const matchingMovies = MOVIES.filter((movie) => movieHasFingerprint(movie, fingerprint.id));
   const page = getCataloguePage(matchingMovies, query);
   return {
-    movies: page.movies.map(toListingMovie),
+    movies: page.movies.map((movie) => toListingMovie(movie)),
     total: page.total,
     totalPages: page.totalPages,
     page: page.page,
@@ -249,7 +251,7 @@ export function selectRelatedMovies(movie: Movie, movies: Movie[] = MOVIES, rand
   }
   return shuffled
     .slice(0, 4)
-    .map(toListingMovie);
+    .map((movie) => toListingMovie(movie));
 }
 
 export function buildMovieDetail(identifier: string, slug?: string): MovieDetailPayload | null {
@@ -417,7 +419,8 @@ export function buildSearchIndex(): SearchIndexPayload {
         brandId: movie.brandId,
         posterUrl: movie.posterUrl,
         originalTitle: movie.originalTitle,
-        alternativeTitles: movie.alternativeTitles?.map((entry) => entry.title),
+        alternativeTitles: getDisplayAlternativeTitles(movie.title, movie.alternativeTitles?.map((entry) => entry.title)),
+        networkPremiereYear: getMovieNetworkPremiereYear(movie) ?? undefined,
         // Join names with a NUL separator so substring matching can never span
         // across two different cast members (preserving per-name matching).
         terms: [...movie.cast.map((member) => member.name), ...getCreativeCrew(movie.crew).map((member) => member.name)].join('\u0000').toLowerCase(),
@@ -443,6 +446,7 @@ export function buildSearchResults(rawQuery: string): SearchResultsPayload {
       movie,
       score: scoreMovieSearchFields({
         title: movie.title,
+        tmdbId: movie.tmdbId,
         originalTitle: movie.originalTitle,
         alternativeTitles: movie.alternativeTitles?.map((entry) => entry.title),
         secondaryText: `${movie.synopsis} ${movie.cast.map((member) => member.name).join(' ')}`,
@@ -450,7 +454,7 @@ export function buildSearchResults(rawQuery: string): SearchResultsPayload {
     }))
     .filter((result) => result.score > 0)
     .sort((a, b) => b.score - a.score)
-    .map(({ movie }) => toListingMovie(movie));
+    .map(({ movie }) => toListingMovie(movie, movie.year, true));
 
   const counts = buildActorMovieCounts();
   const actors = getAllActors()
@@ -619,7 +623,7 @@ export function selectThisMonthMovies(movies: Movie[], now: Date = new Date()): 
     month,
     monthLabel,
     total: matching.length,
-    movies: selected.map(toListingMovie),
+    movies: selected.map((movie) => toListingMovie(movie)),
   };
 }
 
@@ -637,11 +641,11 @@ export function buildHomePayload(now: Date = new Date()): HomePayload {
       return (aDate || '').localeCompare(bDate || '');
     })
     .slice(0, 6)
-    .map(toListingMovie);
+    .map((movie) => toListingMovie(movie));
 
   const comingSoonIds = new Set(comingSoon.map((movie) => movie.id));
   const discovery = selectDiscoverMovies(MOVIES, now, comingSoonIds)
-    .map(toListingMovie);
+    .map((movie) => toListingMovie(movie));
   const thisMonth = selectThisMonthMovies(MOVIES, now);
 
   const archiveYears = getAllYearsForBrand()

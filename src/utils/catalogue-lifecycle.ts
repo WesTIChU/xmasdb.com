@@ -87,6 +87,12 @@ export function getMovieArchiveYear(movie: MovieLifecycleFields, networkId?: str
   return releaseDate ? Number(releaseDate.slice(0, 4)) : movie.year ?? null;
 }
 
+/** Returns a differing network premiere year for compact search metadata. */
+export function getMovieNetworkPremiereYear(movie: MovieLifecycleFields): number | null {
+  const archiveYear = getMovieArchiveYear(movie, movie.brandId);
+  return archiveYear !== null && archiveYear !== movie.year ? archiveYear : null;
+}
+
 export function getArchiveYearsForNetwork(movies: MovieLifecycleFields[], networkId: string): number[] {
   const normalizedNetworkId = networkId.toLowerCase();
   return Array.from(new Set(
