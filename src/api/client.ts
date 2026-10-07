@@ -2,7 +2,6 @@ import type {
   ActorDetailPayload,
   CatalogueListing,
   CatalogueMeta,
-  FeedsMetaPayload,
   FeedPullTotalsPayload,
   HomePayload,
   MovieDetailPayload,
@@ -135,7 +134,6 @@ export const SEARCH_INDEX_URL = '/api/search-index.json';
 export const fetchSearchIndex = () => request<SearchIndexPayload>(SEARCH_INDEX_URL);
 
 export const FEEDS_META_URL = '/api/feeds/meta';
-export const fetchFeedsMeta = () => request<FeedsMetaPayload>(FEEDS_META_URL);
 
 export const FEED_PULL_TOTALS_URL = '/api/feeds/pull-totals';
 export const fetchFeedPullTotals = () => request<FeedPullTotalsPayload>(FEED_PULL_TOTALS_URL);

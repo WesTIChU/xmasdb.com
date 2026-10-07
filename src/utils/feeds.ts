@@ -113,11 +113,6 @@ export function buildRadarrFeed(movies: Movie[], referenceDate: Date = new Date(
   return feed;
 }
 
-/** Compatibility name for callers that consume the eligible item builder. */
-export function getEligibleRadarrFeed(movies: Movie[], referenceDate: Date = new Date()): RadarrFeedItem[] {
-  return buildRadarrFeed(movies, referenceDate);
-}
-
 export function getRadarrFeedAudit(movies: Movie[], referenceDate: Date = new Date()): RadarrFeedAudit {
   const dateEligible = movies.filter((movie) => isMovieDateEligibleForRadarr(movie, referenceDate));
   const withImdb = dateEligible.filter((movie) => /^tt\d+$/.test(movie.imdbId || ''));

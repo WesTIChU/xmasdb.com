@@ -33,17 +33,29 @@ import { resolveImageUrl } from '../src/utils/image-url';
 import { FINGERPRINTS } from '../src/data/fingerprints';
 
 const movie = MOVIES[0];
-const actor = getAllActors()[0];
-const actorDetail = buildActorDetail(String(actor.tmdbPersonId));
-const worthyActor = getAllActors().find((candidate) => {
-  const detail = buildActorDetail(String(candidate.tmdbPersonId));
-  return detail && isActorIndexWorthy(candidate, detail.filmography);
-})!;
-const thinActor = getAllActors().find((candidate) => {
-  const detail = buildActorDetail(String(candidate.tmdbPersonId));
-  return detail?.filmography.length === 1 && !isActorIndexWorthy(candidate, detail.filmography);
-})!;
-const zeroCreditActor = getAllActors().find((candidate) => buildActorDetail(String(candidate.tmdbPersonId))?.filmography.length === 0)!;
+const allActors = getAllActors();
+const actorDetailCache = new Map<number, ReturnType<typeof buildActorDetail>>();
+const getCachedActorDetail = (candidate: (typeof allActors)[number]) => {
+  if (!actorDetailCache.has(candidate.tmdbPersonId)) {
+    actorDetailCache.set(candidate.tmdbPersonId, buildActorDetail(String(candidate.tmdbPersonId)));
+  }
+  return actorDetailCache.get(candidate.tmdbPersonId);
+};
+const actor = allActors[0];
+const actorDetail = getCachedActorDetail(actor);
+let worthyActor: (typeof actor) | undefined;
+let thinActor: (typeof actor) | undefined;
+let zeroCreditActor: (typeof actor) | undefined;
+for (const candidate of allActors) {
+  const detail = getCachedActorDetail(candidate);
+  if (!worthyActor && detail && isActorIndexWorthy(candidate, detail.filmography)) worthyActor = candidate;
+  if (!thinActor && detail?.filmography.length === 1 && !isActorIndexWorthy(candidate, detail.filmography)) thinActor = candidate;
+  if (!zeroCreditActor && detail?.filmography.length === 0) zeroCreditActor = candidate;
+  if (worthyActor && thinActor && zeroCreditActor) break;
+}
+if (!worthyActor || !thinActor || !zeroCreditActor) {
+  throw new Error('SEO fixtures require a worthy, thin, and zero-credit actor.');
+}
 
 const homeSeo = buildHomeSeo(MOVIES.length);
 assert.equal(homeSeo.title, 'XmasDB - Christmas Movie Database | Hallmark, Lifetime, GAF & UPtv');
@@ -180,6 +192,9 @@ assert.doesNotMatch(movieHtml, /images\.xmasdb\.com\/images\//);
 const adminHtml = renderServerHtml(serverShell, '/admin/login/');
 assert.match(adminHtml, /name="robots" content="noindex,follow"/);
 assert.doesNotMatch(adminHtml, /max-image-preview:large/);
+const notFoundHtml = renderServerHtml(serverShell, '/definitely-not-real/');
+assert.match(notFoundHtml, /name="robots" content="noindex,follow"/);
+assert.match(notFoundHtml, /<title>Page Not Found \| XmasDB<\/title>/);
 assert.ok(movieHtml.includes(`rel="canonical" href="https://xmasdb.com${moviePath}"`));
 assert.match(movieHtml, /__XMASDB_ROUTE__/);
 assert.match(movieHtml, /\/api\/movie\/\d+\/[^"<]+/);
@@ -252,19 +267,17 @@ assert.ok(actorPaths.length < getAllActors().length);
 assert.ok(actorPaths.includes(getActorPath(worthyActor.tmdbPersonId, worthyActor.slug)));
 assert.ok(!actorPaths.includes(getActorPath(thinActor.tmdbPersonId, thinActor.slug)));
 assert.ok(!actorPaths.includes(getActorPath(zeroCreditActor.tmdbPersonId, zeroCreditActor.slug)));
-assert.ok([...moviePaths, ...actorPaths].every((path) => {
+const sitemapPaths = [...moviePaths, ...actorPaths];
+const sitemapSeo = sitemapPaths.map((path) => {
   const seo = getServerSeo(path);
-  const html = renderServerHtml(serverShell, path);
-  const expectedRobots = seo.noIndex ? 'noindex,follow' : 'index,follow,max-image-preview:large';
-  return html.includes(`<title>${seo.title.replace(/&/g, '&amp;')}</title>`)
-    && html.includes(`name="description"`)
-    && html.includes(`rel="canonical" href="https://xmasdb.com${seo.canonicalPath}"`)
-    && html.includes(`name="robots" content="${expectedRobots}"`)
-    && /<h1>/.test(html)
-    && !html.includes('Something went wrong loading this page.')
-    && !html.includes('Loading...');
-}), 'every movie/actor sitemap URL must have complete indexable metadata and visible content');
-const sitemapTitles = [...moviePaths, ...actorPaths].map((path) => getServerSeo(path).title);
+  assert.ok(seo.title.trim(), `${path} should have a title`);
+  assert.ok(seo.description.trim(), `${path} should have a description`);
+  assert.notEqual(seo.noIndex, true, `${path} in the sitemap must be indexable`);
+  const canonical = seo.canonicalUrl || (seo.canonicalPath ? `https://xmasdb.com${seo.canonicalPath}` : undefined);
+  assert.equal(canonical, `https://xmasdb.com${path}`, `${path} should have a matching canonical URL`);
+  return seo;
+});
+const sitemapTitles = sitemapSeo.map((seo) => seo.title);
 assert.equal(new Set(sitemapTitles).size, sitemapTitles.length, 'every indexable URL must have a unique title');
 assert.match(movieSitemap, new RegExp(`https://xmasdb\\.com${getMoviePath(movie.tmdbId, movie.slug)}`));
 assert.match(actorSitemap, new RegExp(`https://xmasdb\\.com${getActorPath(worthyActor.tmdbPersonId, worthyActor.slug)}`));

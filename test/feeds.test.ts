@@ -54,6 +54,19 @@ assert.strictEqual(new Set(duplicateFeed.map((item) => item.imdb_id)).size, dupl
 const beforeGafEligibilityWindow = buildFeedsMeta(feedsMetaReferenceDate);
 const afterGafEligibilityWindowDate = new Date('2026-11-15T00:00:00.000Z');
 const afterGafEligibilityWindow = buildFeedsMeta(afterGafEligibilityWindowDate);
+const actors = getAllActors();
+const actorFeedCountsBeforeGafWindow = new Map(actors.map((actor) => [
+  actor.tmdbPersonId,
+  getRadarrActorFeedCount(actor.tmdbPersonId, feedsMetaReferenceDate),
+]));
+const actorFeedCountsAfterGafWindow = new Map<number, number>();
+const getAfterGafWindowCount = (tmdbPersonId: number): number => {
+  const cached = actorFeedCountsAfterGafWindow.get(tmdbPersonId);
+  if (cached !== undefined) return cached;
+  const count = getRadarrActorFeedCount(tmdbPersonId, afterGafEligibilityWindowDate);
+  actorFeedCountsAfterGafWindow.set(tmdbPersonId, count);
+  return count;
+};
 for (const brandId of ['hallmark', 'lifetime', 'gaf', 'uptv']) {
   const expected = buildRadarrFeed(
     MOVIES.filter((movie) => movie.brandId === brandId),
@@ -66,8 +79,8 @@ assert.notStrictEqual(
   afterGafEligibilityWindow.counts.brands.gaf
 );
 const dateSensitiveActor = getAllActors().find((actor) => (
-  getRadarrActorFeedCount(actor.tmdbPersonId, feedsMetaReferenceDate)
-  !== getRadarrActorFeedCount(actor.tmdbPersonId, afterGafEligibilityWindowDate)
+  actorFeedCountsBeforeGafWindow.get(actor.tmdbPersonId)
+  !== getAfterGafWindowCount(actor.tmdbPersonId)
 ));
 assert.ok(dateSensitiveActor, 'Date-sensitive actor fixture should exist');
 const dateSensitiveActorId = dateSensitiveActor.tmdbPersonId;
@@ -75,9 +88,9 @@ assert.notStrictEqual(
   beforeGafEligibilityWindow.counts.actors[String(dateSensitiveActorId)],
   afterGafEligibilityWindow.counts.actors[String(dateSensitiveActorId)]
 );
-const actorCountMismatches = getAllActors().filter((actor) => (
+const actorCountMismatches = actors.filter((actor) => (
   beforeGafEligibilityWindow.counts.actors[String(actor.tmdbPersonId)]
-  !== getRadarrActorFeedCount(actor.tmdbPersonId, feedsMetaReferenceDate)
+  !== actorFeedCountsBeforeGafWindow.get(actor.tmdbPersonId)
 ));
 assert.deepStrictEqual(actorCountMismatches, []);
 
