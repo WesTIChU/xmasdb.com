@@ -196887,7 +196887,7 @@ export const MOVIES: Movie[] = [
     "slug": "christmas-crush",
     "title": "Christmas Crush",
     "year": 2012,
-    "brandId": "gaf",
+    "brandId": "lifetime",
     "releaseDate": "2012-11-17",
     "synopsis": "Twenty-eight-year-old Georgia is convinced the man of her dreams is \"the one that got away\" back in high school. When Georgia learns of her high school reunion a week before Christmas, she's ecstatic to finally have her chance to win Craig back. But as she gets to relive high school for a night, she begins to realize it might not be Craig at all who got away, but Ben, an old friend with whom she'd fallen out of touch.",
     "posterUrl": "/images/posters/273671.jpg",
@@ -197323,7 +197323,6 @@ export const MOVIES: Movie[] = [
       }
     ],
     "trailerYoutubeKey": "pIPeRcMNXrs",
-    "voteAverage": 4.6,
     "voteCount": 41,
     "tmdbUpdatedAt": "2026-10-07T15:00:57.769Z",
     "tmdbFetchedAt": "2026-10-07T15:00:57.769Z"
