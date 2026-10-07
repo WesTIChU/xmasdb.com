@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import { ExternalLink, Calendar, Clock, Tv, Film, Play, Star, Clapperboard, BadgeCheck, Tags } from 'lucide-react';
+import { ExternalLink, Calendar, Clock, Tv, Film, Play, Star, Clapperboard, BadgeCheck, Tags, Share2 } from 'lucide-react';
 import type { ListingMovie, MovieDetailMovie, TriviaFact } from '../api/types';
 import { Trailer } from '../types';
 import { getBrandById } from '../data/brands';
-import { getNetworkPath, getMoviesPath, getActorPath, getMoviePath } from '../utils/urls';
+import { getNetworkPath, getMoviesPath, getActorPath, getMoviePath, getMovieCanonicalUrl } from '../utils/urls';
 import { ComingSoonPoster } from './ComingSoonPoster';
 import { formatMoviePremiereDate } from '../utils/catalogue-lifecycle';
 import { MovieCard } from './MovieCard';
@@ -29,6 +29,30 @@ export const MovieDetail: React.FC<MovieDetailProps> = ({ movie, related, onNavi
   const brand = getBrandById(movie.brandId);
   const publicAlternativeTitles = getPublicAlternativeTitles(movie.title, movie.alternativeTitles);
   const [isCastExpanded, setIsCastExpanded] = useState(false);
+  const [shareLabel, setShareLabel] = useState('Share');
+  const canonicalMovieUrl = getMovieCanonicalUrl(movie.tmdbId, movie.slug);
+
+  const handleShare = async () => {
+    if (typeof navigator !== 'undefined' && typeof navigator.share === 'function') {
+      try {
+        await navigator.share({
+          title: `${movie.title} on XmasDB`,
+          url: canonicalMovieUrl,
+        });
+      } catch (error) {
+        if (error instanceof DOMException && error.name === 'AbortError') return;
+      }
+      return;
+    }
+
+    try {
+      await navigator.clipboard.writeText(canonicalMovieUrl);
+      setShareLabel('Copied!');
+      window.setTimeout(() => setShareLabel('Share'), 1800);
+    } catch {
+      // Clipboard access can be unavailable; fail quietly without interrupting the page.
+    }
+  };
 
   // Collect available trailers
   const trailers: Trailer[] = React.useMemo(() => {
@@ -116,8 +140,7 @@ export const MovieDetail: React.FC<MovieDetailProps> = ({ movie, related, onNavi
             )}
           </div>
 
-          {(hasValidImdbId || hasValidTmdbId) && (
-            <div id="movie-external-links" className="mt-3 w-full max-w-xs mx-auto flex items-center gap-2">
+          <div id="movie-external-links" className="mt-3 w-full max-w-xs mx-auto flex items-center gap-2">
               {hasValidImdbId && (
                 <a
                   href={`https://www.imdb.com/title/${movie.imdbId}/`}
@@ -142,8 +165,16 @@ export const MovieDetail: React.FC<MovieDetailProps> = ({ movie, related, onNavi
                   <span>TMDb</span><ExternalLink className="w-3 h-3 text-[#1A3D2F] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
                 </a>
               )}
-            </div>
-          )}
+              <button
+                type="button"
+                id="movie-share-button"
+                className="flex-1 justify-center py-1.5 px-2.5 rounded bg-[#FAF7F2] hover:bg-[#EFE8DD] border border-[#DDD4C6] hover:border-[#1A3D2F] text-[#1A3D2F] text-xs font-sans-clean font-medium inline-flex items-center gap-1.5 transition-colors shadow-2xs group"
+                aria-label={`Share ${movie.title}`}
+                onClick={() => void handleShare()}
+              >
+                <span>{shareLabel}</span><Share2 className="w-3 h-3 text-[#1A3D2F]" aria-hidden="true" />
+              </button>
+          </div>
 
           {/* Quick metadata sidebar */}
           <div className="mt-6 text-sm text-[#59524A] space-y-2.5 font-sans-clean border-t border-[#E7DFD5] pt-4">
