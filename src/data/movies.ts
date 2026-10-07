@@ -196881,6 +196881,452 @@ export const MOVIES: Movie[] = [
         "name": "christmas"
       }
     ]
+  },
+  {
+    "id": "gaf-2012-christmas-crush",
+    "slug": "christmas-crush",
+    "title": "Christmas Crush",
+    "year": 2012,
+    "brandId": "gaf",
+    "releaseDate": "2012-11-17",
+    "synopsis": "Twenty-eight-year-old Georgia is convinced the man of her dreams is \"the one that got away\" back in high school. When Georgia learns of her high school reunion a week before Christmas, she's ecstatic to finally have her chance to win Craig back. But as she gets to relive high school for a night, she begins to realize it might not be Craig at all who got away, but Ben, an old friend with whom she'd fallen out of touch.",
+    "posterUrl": "/images/posters/273671.jpg",
+    "backdropUrl": "/images/backdrops/273671.jpg",
+    "cast": [
+      {
+        "actorId": "96624",
+        "name": "Rachel Boston",
+        "character": "Georgia Hunt",
+        "slug": "rachel-boston",
+        "tmdbPersonId": 96624,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/lXsexhIX8oMhPnO85M0ocL0GhC2.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "76996",
+        "name": "Jonathan Bennett",
+        "character": "Ben Oliver",
+        "slug": "jonathan-bennett",
+        "tmdbPersonId": 76996,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/yvtVNM9UEse9Qmv8ZGvUGBTsxKd.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "21619",
+        "name": "Marilu Henner",
+        "character": "Beverly Hunt",
+        "slug": "marilu-henner",
+        "tmdbPersonId": 21619,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/fuuVDigwqg5D2pioextPJJ4tLWg.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "64825",
+        "name": "Harry Hamlin",
+        "character": "Mr. Taylor",
+        "slug": "harry-hamlin",
+        "tmdbPersonId": 64825,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/fJZcgqLemEURV5r69XdTgjueghN.jpg",
+        "order": 3
+      },
+      {
+        "actorId": "58707",
+        "name": "Sunny Mabrey",
+        "character": "Tory",
+        "slug": "sunny-mabrey",
+        "tmdbPersonId": 58707,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/kY4QiKUYVBfCV7SJaWstug7hVE7.jpg",
+        "order": 4
+      },
+      {
+        "actorId": "96081",
+        "name": "Julia Voth",
+        "character": "Katie",
+        "slug": "julia-voth",
+        "tmdbPersonId": 96081,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/6nY7xmRROommW5g1tBa5NWK118q.jpg",
+        "order": 5
+      },
+      {
+        "actorId": "1613191",
+        "name": "Elizabeth Braun",
+        "character": "Heather (as Elizabeth Lauren Hoffman)",
+        "slug": "elizabeth-braun",
+        "tmdbPersonId": 1613191,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/sPu68F5qhQTxAO4sZCC1lIDCOB0.jpg",
+        "order": 6
+      },
+      {
+        "actorId": "1590226",
+        "name": "Josh Crotty",
+        "character": "Jay",
+        "slug": "josh-crotty",
+        "tmdbPersonId": 1590226,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/tIAyoBUg3E6pvBfcRVJnWhqe4De.jpg",
+        "order": 7
+      },
+      {
+        "actorId": "60079",
+        "name": "Eileen April Boylan",
+        "character": "Brook (as Eileen Boylan)",
+        "slug": "eileen-april-boylan",
+        "tmdbPersonId": 60079,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/ybPPzHUC0jF8UZOvcm1j6YU3cxi.jpg",
+        "order": 8
+      },
+      {
+        "actorId": "1613192",
+        "name": "Kenny Davis",
+        "character": "Store Owner",
+        "slug": "kenny-davis",
+        "tmdbPersonId": 1613192,
+        "order": 9
+      },
+      {
+        "actorId": "1613193",
+        "name": "Stewart Scott",
+        "character": "Fashion Designer",
+        "slug": "stewart-scott",
+        "tmdbPersonId": 1613193,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/nQopuwUBqSgovyN9w3oEm2ExE03.jpg",
+        "order": 10
+      },
+      {
+        "actorId": "1613195",
+        "name": "Robin Johnson",
+        "character": "Model",
+        "slug": "robin-johnson",
+        "tmdbPersonId": 1613195,
+        "order": 11
+      },
+      {
+        "actorId": "1590302",
+        "name": "Juliet Tondowski",
+        "character": "Model (as Juliet Grace Tondowski)",
+        "slug": "juliet-tondowski",
+        "tmdbPersonId": 1590302,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/3Nvbt90fhdAhD2cJKSYDnLSjILa.jpg",
+        "order": 12
+      },
+      {
+        "actorId": "1613196",
+        "name": "Houda Shretah",
+        "character": "Model",
+        "slug": "houda-shretah",
+        "tmdbPersonId": 1613196,
+        "order": 13
+      },
+      {
+        "actorId": "143427",
+        "name": "Jon Prescott",
+        "character": "Craig",
+        "slug": "jon-prescott",
+        "tmdbPersonId": 143427,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/rL7WQgJjQADITLxKazcEyWD2msD.jpg",
+        "order": 14
+      },
+      {
+        "actorId": "6156692",
+        "name": "Garrett Williams",
+        "character": "Clark Hunt",
+        "slug": "garrett-williams",
+        "tmdbPersonId": 6156692,
+        "order": 15
+      },
+      {
+        "actorId": "1943627",
+        "name": "Len Davies",
+        "character": "Janitor",
+        "slug": "len-davies",
+        "tmdbPersonId": 1943627,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/rWS2vKtirQbqaViWx1hzqNKHKR6.jpg",
+        "order": 16
+      },
+      {
+        "actorId": "1579691",
+        "name": "Karen Leabo",
+        "character": "Sleeping Woman",
+        "slug": "karen-leabo",
+        "tmdbPersonId": 1579691,
+        "order": 17
+      },
+      {
+        "actorId": "6156701",
+        "name": "Leo Montiel",
+        "character": "Mascot",
+        "slug": "leo-montiel",
+        "tmdbPersonId": 6156701,
+        "order": 18
+      },
+      {
+        "actorId": "1429240",
+        "name": "Reid Cox",
+        "character": "Cheerleader",
+        "slug": "reid-cox",
+        "tmdbPersonId": 1429240,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/mVDFYlKR2CzawokF1OlMhWsc6aM.jpg",
+        "order": 19
+      },
+      {
+        "actorId": "6156703",
+        "name": "Blair Dalby",
+        "character": "Cheerleader",
+        "slug": "blair-dalby",
+        "tmdbPersonId": 6156703,
+        "order": 20
+      },
+      {
+        "actorId": "2032847",
+        "name": "Rebecca Lynch",
+        "character": "Becky Henderson",
+        "slug": "rebecca-lynch",
+        "tmdbPersonId": 2032847,
+        "order": 21
+      },
+      {
+        "actorId": "1765348",
+        "name": "Ana Cristina Cash",
+        "character": "Kim Hansen",
+        "slug": "ana-cristina-cash",
+        "tmdbPersonId": 1765348,
+        "order": 22
+      },
+      {
+        "actorId": "2573962",
+        "name": "Cleveland Berto",
+        "character": "Craig's Crew",
+        "slug": "cleveland-berto",
+        "tmdbPersonId": 2573962,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/avhpOvkXDn0VSE6cXHneGKGXNrS.jpg",
+        "order": 23
+      },
+      {
+        "actorId": "1517255",
+        "name": "Brian Tyler Cohen",
+        "character": "Craig's Crew",
+        "slug": "brian-tyler-cohen",
+        "tmdbPersonId": 1517255,
+        "order": 24
+      },
+      {
+        "actorId": "1034651",
+        "name": "Kip Canyon",
+        "character": "Craig's Crew",
+        "slug": "kip-canyon",
+        "tmdbPersonId": 1034651,
+        "order": 25
+      },
+      {
+        "actorId": "6156709",
+        "name": "Cody Penwell",
+        "character": "Craig's Crew",
+        "slug": "cody-penwell",
+        "tmdbPersonId": 6156709,
+        "order": 26
+      },
+      {
+        "actorId": "1660450",
+        "name": "Kyle Brady",
+        "character": "Craig's Crew",
+        "slug": "kyle-brady",
+        "tmdbPersonId": 1660450,
+        "order": 27
+      },
+      {
+        "actorId": "6156711",
+        "name": "Melissa Stenger",
+        "character": "Emotional Eater",
+        "slug": "melissa-stenger",
+        "tmdbPersonId": 6156711,
+        "order": 28
+      },
+      {
+        "actorId": "1555125",
+        "name": "Charles Christopher",
+        "character": "Paparazzo (Uncredited)",
+        "slug": "charles-christopher",
+        "tmdbPersonId": 1555125,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/cfpCTda0Wvw3eXcu0SPRG0H6aNx.jpg",
+        "order": 29
+      },
+      {
+        "actorId": "3170737",
+        "name": "Shayne Eastin",
+        "character": "Super Model (Uncredited)",
+        "slug": "shayne-eastin",
+        "tmdbPersonId": 3170737,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/hBi9yAF8RBmz8nShnIvAXHUDdRW.jpg",
+        "order": 30
+      },
+      {
+        "actorId": "6156714",
+        "name": "Christine Heideman",
+        "character": "Classmate (Uncredited)",
+        "slug": "christine-heideman",
+        "tmdbPersonId": 6156714,
+        "order": 31
+      },
+      {
+        "actorId": "1362492",
+        "name": "Ericson Just",
+        "character": "Bad Boy (Uncredited)",
+        "slug": "ericson-just",
+        "tmdbPersonId": 1362492,
+        "order": 32
+      },
+      {
+        "actorId": "2071724",
+        "name": "Elaine Kratofil",
+        "character": "Teacher (Uncredited)",
+        "slug": "elaine-kratofil",
+        "tmdbPersonId": 2071724,
+        "order": 33
+      },
+      {
+        "actorId": "6156724",
+        "name": "Adam LaCoste",
+        "character": "DJ (Uncredited)",
+        "slug": "adam-lacoste",
+        "tmdbPersonId": 6156724,
+        "order": 34
+      },
+      {
+        "actorId": "2307869",
+        "name": "Jose Lizarde Jr.",
+        "character": "Teacher (Uncredited)",
+        "slug": "jose-lizarde-jr",
+        "tmdbPersonId": 2307869,
+        "order": 35
+      },
+      {
+        "actorId": "1536926",
+        "name": "Dennis Nicomede",
+        "character": "Christmas Shoppers (Uncredited)",
+        "slug": "dennis-nicomede",
+        "tmdbPersonId": 1536926,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/2iErEurJc7HUq5gbxsBgbjj0FlM.jpg",
+        "order": 36
+      },
+      {
+        "actorId": "3120292",
+        "name": "Marguerite Nocera",
+        "character": "Teacher (Uncredited)",
+        "slug": "marguerite-nocera",
+        "tmdbPersonId": 3120292,
+        "order": 37
+      },
+      {
+        "actorId": "1174142",
+        "name": "David Jason Perez",
+        "character": "Classmate (Uncredited)",
+        "slug": "david-jason-perez",
+        "tmdbPersonId": 1174142,
+        "order": 38
+      },
+      {
+        "actorId": "1411265",
+        "name": "Vic Radulich",
+        "character": "Stage Manager (Uncredited)",
+        "slug": "vic-radulich",
+        "tmdbPersonId": 1411265,
+        "order": 39
+      },
+      {
+        "actorId": "1112050",
+        "name": "William Sturtevant",
+        "character": "Student (Uncredited)",
+        "slug": "william-sturtevant",
+        "tmdbPersonId": 1112050,
+        "order": 40
+      },
+      {
+        "actorId": "1246790",
+        "name": "Joseph Carl White II",
+        "character": "Enthusiastic Eater (Uncredited)",
+        "slug": "joseph-carl-white-ii",
+        "tmdbPersonId": 1246790,
+        "order": 41
+      }
+    ],
+    "director": "Marita Grabiak",
+    "tmdbId": 273671,
+    "imdbId": "tt2475914",
+    "isComingSoon": false,
+    "status": "collection",
+    "originalTitle": "Christmas Crush",
+    "alternativeTitles": [
+      {
+        "title": "Holiday High School Reunion",
+        "country": "US"
+      },
+      {
+        "title": "Seconde chance pour une romance",
+        "country": "FR"
+      },
+      {
+        "title": "Retrouvailles en musique",
+        "country": "BE"
+      }
+    ],
+    "runtimeMinutes": 88,
+    "genres": [
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 10402,
+        "name": "Music"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      },
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "US",
+        "releaseDate": "2012-11-17T00:00:00.000Z",
+        "type": 6,
+        "certification": "PG",
+        "note": "Lifetime"
+      }
+    ],
+    "crew": [
+      {
+        "id": 1215026,
+        "name": "Marita Grabiak",
+        "job": "Director",
+        "department": "Directing",
+        "creditId": "5a1a00039251410330031535"
+      },
+      {
+        "id": 928670,
+        "name": "Barbara Kymlicka",
+        "job": "Writer",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/5uAmw6fTni4V9UNiU5CdGqxkbbw.jpg",
+        "creditId": "5a1a000fc3a3680b9d030939"
+      }
+    ],
+    "trailers": [
+      {
+        "key": "pIPeRcMNXrs",
+        "site": "YouTube",
+        "type": "Trailer",
+        "name": "Holiday High School Reunion - Official Trailer",
+        "official": true
+      }
+    ],
+    "trailerYoutubeKey": "pIPeRcMNXrs",
+    "voteAverage": 4.6,
+    "voteCount": 41,
+    "tmdbUpdatedAt": "2026-10-07T15:00:57.769Z",
+    "tmdbFetchedAt": "2026-10-07T15:00:57.769Z"
   }
 ];
 

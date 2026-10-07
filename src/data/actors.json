@@ -924,6 +924,16 @@
     "tmdbFetchedAt": "2026-10-01T13:48:10.654Z"
   },
   {
+    "id": "6156724",
+    "slug": "adam-lacoste",
+    "name": "Adam LaCoste",
+    "tmdbPersonId": 6156724,
+    "knownForDepartment": "Acting",
+    "knownCredits": 1,
+    "tmdbUpdatedAt": "2026-10-07T15:01:01.804Z",
+    "tmdbFetchedAt": "2026-10-07T15:01:01.804Z"
+  },
+  {
     "id": "1590244",
     "slug": "adam-langton",
     "name": "Adam Langton",
@@ -5752,6 +5762,18 @@
     "instagramId": "iamanaayora",
     "twitterId": "AnaAyora",
     "tmdbUpdatedAt": "2026-09-20T16:18:09.115Z"
+  },
+  {
+    "id": "1765348",
+    "slug": "ana-cristina-cash",
+    "name": "Ana Cristina Cash",
+    "tmdbPersonId": 1765348,
+    "imdbPersonId": "nm1374174",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 4,
+    "tmdbUpdatedAt": "2026-10-07T15:01:00.970Z",
+    "tmdbFetchedAt": "2026-10-07T15:01:00.970Z"
   },
   {
     "id": "ana-golja",
@@ -13502,6 +13524,16 @@
     "tmdbUpdatedAt": "2026-09-20T16:17:43.257Z"
   },
   {
+    "id": "6156703",
+    "slug": "blair-dalby",
+    "name": "Blair Dalby",
+    "tmdbPersonId": 6156703,
+    "knownForDepartment": "Acting",
+    "knownCredits": 1,
+    "tmdbUpdatedAt": "2026-10-07T15:01:00.842Z",
+    "tmdbFetchedAt": "2026-10-07T15:01:00.842Z"
+  },
+  {
     "id": "58518",
     "slug": "blair-hayes",
     "name": "Blair Hayes",
@@ -15919,6 +15951,21 @@
     "knownForDepartment": "Writing",
     "knownCredits": 7,
     "tmdbUpdatedAt": "2026-09-22T20:53:28.514Z"
+  },
+  {
+    "id": "1517255",
+    "slug": "brian-tyler-cohen",
+    "name": "Brian Tyler Cohen",
+    "tmdbPersonId": 1517255,
+    "imdbPersonId": "nm5861952",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 12,
+    "alsoKnownAs": [
+      "Brian Cohen"
+    ],
+    "tmdbUpdatedAt": "2026-10-07T15:01:01.097Z",
+    "tmdbFetchedAt": "2026-10-07T15:01:01.097Z"
   },
   {
     "id": "briana-buckmaster",
@@ -21082,6 +21129,20 @@
     "tmdbUpdatedAt": "2026-09-20T16:20:39.934Z"
   },
   {
+    "id": "1555125",
+    "slug": "charles-christopher",
+    "name": "Charles Christopher",
+    "tmdbPersonId": 1555125,
+    "photoUrl": "/images/people/1555125.webp",
+    "profileUrl": "/images/people/1555125.webp",
+    "imdbPersonId": "nm5962957",
+    "gender": "Male",
+    "knownForDepartment": "Camera",
+    "knownCredits": 47,
+    "tmdbUpdatedAt": "2026-10-07T15:01:02.762Z",
+    "tmdbFetchedAt": "2026-10-07T15:01:02.762Z"
+  },
+  {
     "id": "charles-green",
     "slug": "charles-green",
     "name": "Charles Green",
@@ -23392,6 +23453,16 @@
     "tmdbUpdatedAt": "2026-09-22T20:53:14.031Z"
   },
   {
+    "id": "6156714",
+    "slug": "christine-heideman",
+    "name": "Christine Heideman",
+    "tmdbPersonId": 6156714,
+    "knownForDepartment": "Acting",
+    "knownCredits": 1,
+    "tmdbUpdatedAt": "2026-10-07T15:01:01.513Z",
+    "tmdbFetchedAt": "2026-10-07T15:01:01.513Z"
+  },
+  {
     "id": "christine-hulton",
     "slug": "christine-hulton",
     "name": "Christine Hulton",
@@ -24895,6 +24966,23 @@
     "tmdbUpdatedAt": "2026-09-20T16:18:27.916Z"
   },
   {
+    "id": "2573962",
+    "slug": "cleveland-berto",
+    "name": "Cleveland Berto",
+    "tmdbPersonId": 2573962,
+    "photoUrl": "/images/people/2573962.webp",
+    "profileUrl": "/images/people/2573962.webp",
+    "imdbPersonId": "nm3811344",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 16,
+    "alsoKnownAs": [
+      "Squee"
+    ],
+    "tmdbUpdatedAt": "2026-10-07T15:01:01.668Z",
+    "tmdbFetchedAt": "2026-10-07T15:01:01.668Z"
+  },
+  {
     "id": "1946577",
     "slug": "cleveland-o-mcleish",
     "name": "Cleveland O. McLeish",
@@ -25099,6 +25187,16 @@
     "knownForDepartment": "Acting",
     "knownCredits": 11,
     "tmdbUpdatedAt": "2026-09-21T13:15:11.251Z"
+  },
+  {
+    "id": "6156709",
+    "slug": "cody-penwell",
+    "name": "Cody Penwell",
+    "tmdbPersonId": 6156709,
+    "knownForDepartment": "Acting",
+    "knownCredits": 1,
+    "tmdbUpdatedAt": "2026-10-07T15:01:01.250Z",
+    "tmdbFetchedAt": "2026-10-07T15:01:01.250Z"
   },
   {
     "id": "1335528",
@@ -30138,6 +30236,17 @@
     "tmdbUpdatedAt": "2026-09-20T16:17:08.712Z"
   },
   {
+    "id": "1174142",
+    "slug": "david-jason-perez",
+    "name": "David Jason Perez",
+    "tmdbPersonId": 1174142,
+    "imdbPersonId": "nm4864897",
+    "knownForDepartment": "Acting",
+    "knownCredits": 6,
+    "tmdbUpdatedAt": "2026-10-07T15:01:01.939Z",
+    "tmdbFetchedAt": "2026-10-07T15:01:01.939Z"
+  },
+  {
     "id": "david-julian-hirsh",
     "slug": "david-julian-hirsh",
     "name": "David Julian Hirsh",
@@ -32156,7 +32265,8 @@
     "gender": "Male",
     "knownForDepartment": "Acting",
     "knownCredits": 23,
-    "tmdbUpdatedAt": "2026-09-21T13:14:33.022Z"
+    "tmdbUpdatedAt": "2026-10-07T15:01:02.149Z",
+    "tmdbFetchedAt": "2026-10-07T15:01:02.149Z"
   },
   {
     "id": "134069",
@@ -35598,6 +35708,26 @@
     "tmdbUpdatedAt": "2026-09-20T16:19:21.468Z"
   },
   {
+    "id": "60079",
+    "slug": "eileen-april-boylan",
+    "name": "Eileen April Boylan",
+    "tmdbPersonId": 60079,
+    "photoUrl": "/images/people/60079.webp",
+    "profileUrl": "/images/people/60079.webp",
+    "birthday": "1987-05-10",
+    "placeOfBirth": "Acton, California, USA",
+    "biography": "From Wikipedia, the free encyclopedia\n\nEileen April Boylan (born May 10, 1987) is an American film and television actress. She stands 5'1\" and is of Filipino and Irish descent.\n\nDescription above from the Wikipedia article Eileen April Boylan, licensed under CC-BY-SA, full list of contributors on Wikipedia.",
+    "imdbPersonId": "nm0102159",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 17,
+    "alsoKnownAs": [
+      "Eileen Boylan"
+    ],
+    "tmdbUpdatedAt": "2026-10-07T15:01:00.277Z",
+    "tmdbFetchedAt": "2026-10-07T15:01:00.277Z"
+  },
+  {
     "id": "eileen-barrett",
     "slug": "eileen-barrett",
     "name": "Eileen Barrett",
@@ -35748,6 +35878,16 @@
     "facebookId": "elaine4animals",
     "tmdbUpdatedAt": "2026-10-02T17:45:19.031Z",
     "tmdbFetchedAt": "2026-10-02T17:45:19.031Z"
+  },
+  {
+    "id": "2071724",
+    "slug": "elaine-kratofil",
+    "name": "Elaine Kratofil",
+    "tmdbPersonId": 2071724,
+    "knownForDepartment": "Acting",
+    "knownCredits": 4,
+    "tmdbUpdatedAt": "2026-10-07T15:01:01.767Z",
+    "tmdbFetchedAt": "2026-10-07T15:01:01.767Z"
   },
   {
     "id": "elaine-partnow",
@@ -36329,6 +36469,18 @@
     "twitterId": "ElizBerkley",
     "tmdbUpdatedAt": "2026-10-01T10:07:24.860Z",
     "tmdbFetchedAt": "2026-10-01T10:07:24.860Z"
+  },
+  {
+    "id": "1613191",
+    "slug": "elizabeth-braun",
+    "name": "Elizabeth Braun",
+    "tmdbPersonId": 1613191,
+    "photoUrl": "/images/people/1613191.webp",
+    "profileUrl": "/images/people/1613191.webp",
+    "knownForDepartment": "Acting",
+    "knownCredits": 3,
+    "tmdbUpdatedAt": "2026-10-07T15:01:01.032Z",
+    "tmdbFetchedAt": "2026-10-07T15:01:01.032Z"
   },
   {
     "id": "elizabeth-cappuccino",
@@ -38843,6 +38995,16 @@
     "knownCredits": 17,
     "instagramId": "ericatremblay10",
     "tmdbUpdatedAt": "2026-09-20T16:18:42.276Z"
+  },
+  {
+    "id": "1362492",
+    "slug": "ericson-just",
+    "name": "Ericson Just",
+    "tmdbPersonId": 1362492,
+    "knownForDepartment": "Editing",
+    "knownCredits": 3,
+    "tmdbUpdatedAt": "2026-10-07T15:01:01.663Z",
+    "tmdbFetchedAt": "2026-10-07T15:01:01.663Z"
   },
   {
     "id": "erik-athavale",
@@ -42059,6 +42221,16 @@
     "knownForDepartment": "Acting",
     "knownCredits": 2,
     "tmdbUpdatedAt": "2026-09-20T16:19:29.811Z"
+  },
+  {
+    "id": "6156692",
+    "slug": "garrett-williams",
+    "name": "Garrett Williams",
+    "tmdbPersonId": 6156692,
+    "knownForDepartment": "Acting",
+    "knownCredits": 1,
+    "tmdbUpdatedAt": "2026-10-07T15:01:00.546Z",
+    "tmdbFetchedAt": "2026-10-07T15:01:00.546Z"
   },
   {
     "id": "garry-chalk",
@@ -45896,6 +46068,26 @@
     "tmdbUpdatedAt": "2026-09-20T16:16:34.962Z"
   },
   {
+    "id": "64825",
+    "slug": "harry-hamlin",
+    "name": "Harry Hamlin",
+    "tmdbPersonId": 64825,
+    "photoUrl": "/images/people/64825.webp",
+    "profileUrl": "/images/people/64825.webp",
+    "birthday": "1951-10-30",
+    "placeOfBirth": "Pasadena, California, USA",
+    "biography": "Harry Robinson Hamlin (born October 30, 1951) is an American actor. He is known for his roles as Perseus in the 1981 fantasy film Clash of the Titans and as Michael Kuzak in the legal drama series L.A. Law, for which he received three Golden Globe nominations. For his recurring role on the AMC drama series Mad Men, Hamlin received a Primetime Emmy nomination for Outstanding Guest Actor in a Drama Series.\n\nDescription above from the Wikipedia article Harry Hamlin licensed under CC-BY-SA, full list of contributors on Wikipedia.",
+    "imdbPersonId": "nm0002122",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 108,
+    "alsoKnownAs": [
+      "Harry Robinson Hamlin"
+    ],
+    "tmdbUpdatedAt": "2026-10-07T15:01:00.278Z",
+    "tmdbFetchedAt": "2026-10-07T15:01:00.278Z"
+  },
+  {
     "id": "harry-han",
     "slug": "harry-han",
     "name": "Harry Han",
@@ -47243,6 +47435,16 @@
     "knownForDepartment": "Directing",
     "knownCredits": 5,
     "tmdbUpdatedAt": "2026-09-22T20:53:29.996Z"
+  },
+  {
+    "id": "1613196",
+    "slug": "houda-shretah",
+    "name": "Houda Shretah",
+    "tmdbPersonId": 1613196,
+    "knownForDepartment": "Acting",
+    "knownCredits": 3,
+    "tmdbUpdatedAt": "2026-10-07T15:01:00.424Z",
+    "tmdbFetchedAt": "2026-10-07T15:01:00.424Z"
   },
   {
     "id": "houston-merrill",
@@ -59420,7 +59622,8 @@
     "gender": "Male",
     "knownForDepartment": "Acting",
     "knownCredits": 27,
-    "tmdbUpdatedAt": "2026-09-20T16:18:51.455Z"
+    "tmdbUpdatedAt": "2026-10-07T15:01:00.578Z",
+    "tmdbFetchedAt": "2026-10-07T15:01:00.578Z"
   },
   {
     "id": "jon-stafford",
@@ -60525,6 +60728,16 @@
     "tmdbUpdatedAt": "2026-09-20T16:17:19.677Z"
   },
   {
+    "id": "2307869",
+    "slug": "jose-lizarde-jr",
+    "name": "Jose Lizarde Jr.",
+    "tmdbPersonId": 2307869,
+    "knownForDepartment": "Acting",
+    "knownCredits": 4,
+    "tmdbUpdatedAt": "2026-10-07T15:01:01.805Z",
+    "tmdbFetchedAt": "2026-10-07T15:01:01.805Z"
+  },
+  {
     "id": "jose-miguel-vasquez",
     "slug": "jose-miguel-vasquez",
     "name": "Jose Miguel Vasquez",
@@ -60584,6 +60797,17 @@
     "knownCredits": 17,
     "instagramId": "josephcannats",
     "tmdbUpdatedAt": "2026-09-21T13:19:09.073Z"
+  },
+  {
+    "id": "1246790",
+    "slug": "joseph-carl-white-ii",
+    "name": "Joseph Carl White II",
+    "tmdbPersonId": 1246790,
+    "imdbPersonId": "nm3254476",
+    "knownForDepartment": "Acting",
+    "knownCredits": 2,
+    "tmdbUpdatedAt": "2026-10-07T15:01:02.290Z",
+    "tmdbFetchedAt": "2026-10-07T15:01:02.290Z"
   },
   {
     "id": "2541513",
@@ -60902,7 +61126,8 @@
     "gender": "Male",
     "knownForDepartment": "Acting",
     "knownCredits": 19,
-    "tmdbUpdatedAt": "2026-09-20T16:20:52.597Z"
+    "tmdbUpdatedAt": "2026-10-07T15:00:59.769Z",
+    "tmdbFetchedAt": "2026-10-07T15:00:59.769Z"
   },
   {
     "id": "204459",
@@ -61969,6 +62194,26 @@
     "tmdbUpdatedAt": "2026-09-21T12:52:23.125Z"
   },
   {
+    "id": "96081",
+    "slug": "julia-voth",
+    "name": "Julia Voth",
+    "tmdbPersonId": 96081,
+    "photoUrl": "/images/people/96081.webp",
+    "profileUrl": "/images/people/96081.webp",
+    "birthday": "1985-05-16",
+    "placeOfBirth": "Saskatchewan, Canada",
+    "biography": "Julia Anne Voth is a Canadian-born actress and model. She is best known for her roles in the 2009 film Bitch Slap and the TV series Package Deal, as well as for being the character model for Jill Valentine from the Resident Evil video games.",
+    "imdbPersonId": "nm2972478",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 13,
+    "instagramId": "juliavoth",
+    "twitterId": "juliavoth",
+    "facebookId": "officialjuliavothpage",
+    "tmdbUpdatedAt": "2026-10-07T15:01:00.380Z",
+    "tmdbFetchedAt": "2026-10-07T15:01:00.380Z"
+  },
+  {
     "id": "1228590",
     "slug": "julian-bailey",
     "name": "Julian Bailey",
@@ -62511,6 +62756,20 @@
       "Juliet Aires"
     ],
     "tmdbUpdatedAt": "2026-09-22T20:53:38.143Z"
+  },
+  {
+    "id": "1590302",
+    "slug": "juliet-tondowski",
+    "name": "Juliet Tondowski",
+    "tmdbPersonId": 1590302,
+    "photoUrl": "/images/people/1590302.webp",
+    "profileUrl": "/images/people/1590302.webp",
+    "imdbPersonId": "nm5641072",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 13,
+    "tmdbUpdatedAt": "2026-10-07T15:01:00.701Z",
+    "tmdbFetchedAt": "2026-10-07T15:01:00.701Z"
   },
   {
     "id": "juliette-hawk",
@@ -63618,6 +63877,16 @@
     "knownForDepartment": "Acting",
     "knownCredits": 39,
     "tmdbUpdatedAt": "2026-09-21T12:51:53.247Z"
+  },
+  {
+    "id": "1579691",
+    "slug": "karen-leabo",
+    "name": "Karen Leabo",
+    "tmdbPersonId": 1579691,
+    "knownForDepartment": "Acting",
+    "knownCredits": 3,
+    "tmdbUpdatedAt": "2026-10-07T15:01:00.674Z",
+    "tmdbFetchedAt": "2026-10-07T15:01:00.674Z"
   },
   {
     "id": "karen-malina-white",
@@ -66953,6 +67222,16 @@
     "tmdbFetchedAt": "2026-10-02T17:48:19.082Z"
   },
   {
+    "id": "1613192",
+    "slug": "kenny-davis",
+    "name": "Kenny Davis",
+    "tmdbPersonId": 1613192,
+    "knownForDepartment": "Acting",
+    "knownCredits": 1,
+    "tmdbUpdatedAt": "2026-10-07T15:00:59.900Z",
+    "tmdbFetchedAt": "2026-10-07T15:00:59.900Z"
+  },
+  {
     "id": "153880",
     "slug": "kenny-johnston",
     "name": "Kenny Johnston",
@@ -68289,6 +68568,20 @@
     "tmdbUpdatedAt": "2026-09-20T16:18:08.886Z"
   },
   {
+    "id": "1034651",
+    "slug": "kip-canyon",
+    "name": "Kip Canyon",
+    "tmdbPersonId": 1034651,
+    "birthday": "1991-11-20",
+    "placeOfBirth": "Mississauga, Ontario, Canada",
+    "imdbPersonId": "nm4814079",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 5,
+    "tmdbUpdatedAt": "2026-10-07T15:01:01.170Z",
+    "tmdbFetchedAt": "2026-10-07T15:01:01.170Z"
+  },
+  {
     "id": "42249",
     "slug": "kira-reed-lorsch",
     "name": "Kira Reed Lorsch",
@@ -69529,6 +69822,16 @@
     "knownForDepartment": "Acting",
     "knownCredits": 3,
     "tmdbUpdatedAt": "2026-09-21T12:52:08.897Z"
+  },
+  {
+    "id": "1660450",
+    "slug": "kyle-brady",
+    "name": "Kyle Brady",
+    "tmdbPersonId": 1660450,
+    "knownForDepartment": "Acting",
+    "knownCredits": 4,
+    "tmdbUpdatedAt": "2026-10-07T15:01:01.299Z",
+    "tmdbFetchedAt": "2026-10-07T15:01:01.299Z"
   },
   {
     "id": "1144353",
@@ -71989,6 +72292,21 @@
     "tmdbUpdatedAt": "2026-09-20T16:20:13.758Z"
   },
   {
+    "id": "1943627",
+    "slug": "len-davies",
+    "name": "Len Davies",
+    "tmdbPersonId": 1943627,
+    "photoUrl": "/images/people/1943627.webp",
+    "profileUrl": "/images/people/1943627.webp",
+    "biography": "Len Davies is an editor and producer.",
+    "imdbPersonId": "nm3501047",
+    "gender": "Male",
+    "knownForDepartment": "Production",
+    "knownCredits": 6,
+    "tmdbUpdatedAt": "2026-10-07T15:01:01.287Z",
+    "tmdbFetchedAt": "2026-10-07T15:01:01.287Z"
+  },
+  {
     "id": "lena-harmon",
     "slug": "lena-harmon",
     "name": "Lena Harmon",
@@ -72083,6 +72401,16 @@
     "knownForDepartment": "Acting",
     "knownCredits": 5,
     "tmdbUpdatedAt": "2026-09-20T16:17:43.337Z"
+  },
+  {
+    "id": "6156701",
+    "slug": "leo-montiel",
+    "name": "Leo Montiel",
+    "tmdbPersonId": 6156701,
+    "knownForDepartment": "Acting",
+    "knownCredits": 2,
+    "tmdbUpdatedAt": "2026-10-07T15:01:00.707Z",
+    "tmdbFetchedAt": "2026-10-07T15:01:00.707Z"
   },
   {
     "id": "leon-cain",
@@ -77881,6 +78209,16 @@
     "knownForDepartment": "Production",
     "knownCredits": 49,
     "tmdbUpdatedAt": "2026-09-22T20:53:20.621Z"
+  },
+  {
+    "id": "3120292",
+    "slug": "marguerite-nocera",
+    "name": "Marguerite Nocera",
+    "tmdbPersonId": 3120292,
+    "knownForDepartment": "Acting",
+    "knownCredits": 5,
+    "tmdbUpdatedAt": "2026-10-07T15:01:02.262Z",
+    "tmdbFetchedAt": "2026-10-07T15:01:02.262Z"
   },
   {
     "id": "2565738",
@@ -83836,6 +84174,16 @@
     "knownForDepartment": "Writing",
     "knownCredits": 12,
     "tmdbUpdatedAt": "2026-09-22T20:53:20.890Z"
+  },
+  {
+    "id": "6156711",
+    "slug": "melissa-stenger",
+    "name": "Melissa Stenger",
+    "tmdbPersonId": 6156711,
+    "knownForDepartment": "Acting",
+    "knownCredits": 1,
+    "tmdbUpdatedAt": "2026-10-07T15:01:01.382Z",
+    "tmdbFetchedAt": "2026-10-07T15:01:01.382Z"
   },
   {
     "id": "me-lodie-tossa",
@@ -97775,6 +98123,16 @@
     "tmdbUpdatedAt": "2026-09-20T16:20:18.195Z"
   },
   {
+    "id": "2032847",
+    "slug": "rebecca-lynch",
+    "name": "Rebecca Lynch",
+    "tmdbPersonId": 2032847,
+    "knownForDepartment": "Acting",
+    "knownCredits": 2,
+    "tmdbUpdatedAt": "2026-10-07T15:01:00.843Z",
+    "tmdbFetchedAt": "2026-10-07T15:01:00.843Z"
+  },
+  {
     "id": "4621752",
     "slug": "rebecca-malcolm",
     "name": "Rebecca Malcolm",
@@ -98051,6 +98409,22 @@
     "facebookId": "ReginaldVelJohnson",
     "tmdbUpdatedAt": "2026-10-01T09:21:10.020Z",
     "tmdbFetchedAt": "2026-10-01T09:21:10.020Z"
+  },
+  {
+    "id": "1429240",
+    "slug": "reid-cox",
+    "name": "Reid Cox",
+    "tmdbPersonId": 1429240,
+    "photoUrl": "/images/people/1429240.webp",
+    "profileUrl": "/images/people/1429240.webp",
+    "placeOfBirth": "Greenville, South Carolina, USA",
+    "imdbPersonId": "nm3928392",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 14,
+    "instagramId": "reidcox",
+    "tmdbUpdatedAt": "2026-10-07T15:01:01.633Z",
+    "tmdbFetchedAt": "2026-10-07T15:01:01.633Z"
   },
   {
     "id": "2996354",
@@ -100865,6 +101239,16 @@
       "Robin Simone Givens"
     ],
     "tmdbUpdatedAt": "2026-09-20T16:20:15.104Z"
+  },
+  {
+    "id": "1613195",
+    "slug": "robin-johnson",
+    "name": "Robin Johnson",
+    "tmdbPersonId": 1613195,
+    "knownForDepartment": "Acting",
+    "knownCredits": 1,
+    "tmdbUpdatedAt": "2026-10-07T15:01:00.064Z",
+    "tmdbFetchedAt": "2026-10-07T15:01:00.064Z"
   },
   {
     "id": "robin-kafaliev",
@@ -107756,6 +108140,18 @@
     "tmdbUpdatedAt": "2026-09-20T16:18:51.010Z"
   },
   {
+    "id": "3170737",
+    "slug": "shayne-eastin",
+    "name": "Shayne Eastin",
+    "tmdbPersonId": 3170737,
+    "photoUrl": "/images/people/3170737.webp",
+    "profileUrl": "/images/people/3170737.webp",
+    "knownForDepartment": "Acting",
+    "knownCredits": 6,
+    "tmdbUpdatedAt": "2026-10-07T15:01:02.351Z",
+    "tmdbFetchedAt": "2026-10-07T15:01:02.351Z"
+  },
+  {
     "id": "shazia-pascal",
     "slug": "shazia-pascal",
     "name": "Shazia Pascal",
@@ -111382,7 +111778,8 @@
     ],
     "instagramId": "sunnymabrey",
     "twitterId": "SunnyMabrey",
-    "tmdbUpdatedAt": "2026-09-20T16:18:26.512Z"
+    "tmdbUpdatedAt": "2026-10-07T15:00:59.593Z",
+    "tmdbFetchedAt": "2026-10-07T15:00:59.593Z"
   },
   {
     "id": "1461219",
@@ -118883,6 +119280,18 @@
     "tmdbFetchedAt": "2026-10-05T08:20:30.271Z"
   },
   {
+    "id": "1411265",
+    "slug": "vic-radulich",
+    "name": "Vic Radulich",
+    "tmdbPersonId": 1411265,
+    "imdbPersonId": "nm0705886",
+    "gender": "Male",
+    "knownForDepartment": "Sound",
+    "knownCredits": 31,
+    "tmdbUpdatedAt": "2026-10-07T15:01:02.104Z",
+    "tmdbFetchedAt": "2026-10-07T15:01:02.104Z"
+  },
+  {
     "id": "5341281",
     "slug": "vicente-perdomo",
     "name": "Vicente Perdomo",
@@ -120797,6 +121206,17 @@
     "twitterId": "WilliamShatner",
     "facebookId": "williamshatner",
     "tmdbUpdatedAt": "2026-09-20T16:19:06.743Z"
+  },
+  {
+    "id": "1112050",
+    "slug": "william-sturtevant",
+    "name": "William Sturtevant",
+    "tmdbPersonId": 1112050,
+    "imdbPersonId": "nm4685379",
+    "knownForDepartment": "Acting",
+    "knownCredits": 9,
+    "tmdbUpdatedAt": "2026-10-07T15:01:02.232Z",
+    "tmdbFetchedAt": "2026-10-07T15:01:02.232Z"
   },
   {
     "id": "1382836",
