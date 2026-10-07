@@ -107,11 +107,10 @@ export const MovieCard: React.FC<MovieCardProps> = ({ movie, onSelectMovie, prio
           {(metadata !== undefined || showYearBrandMetadata) && (
             <p className="text-xs sm:text-sm text-[#736B63] mt-0.5 font-body">
               {metadata !== undefined ? metadata : movie.year}
-              {showNetworkPremiereYear && movie.networkPremiereYear !== undefined && (
-                <>
-                  <span> · </span>
-                  <span>{brand?.shortName || movie.brandId.toUpperCase()} Premiere {movie.networkPremiereYear}</span>
-                </>
+              {showNetworkPremiereYear && (
+                movie.networkPremiereYear !== undefined
+                  ? <><span> · </span><span>{brand?.shortName || movie.brandId.toUpperCase()} Premiere {movie.networkPremiereYear}</span></>
+                  : brand && <><span> · </span><span>{brand.shortName}</span></>
               )}
             </p>
           )}

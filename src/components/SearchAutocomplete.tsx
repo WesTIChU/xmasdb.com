@@ -343,13 +343,9 @@ export const SearchAutocomplete: React.FC<SearchAutocompleteProps> = ({
                 <div className="text-xs text-[#736B63] font-body mt-0.5 flex items-center gap-1">
                   <span>{movie.year}</span>
                   <span className="text-[#C4BCB1]">·</span>
-                  <span className="text-[#59524A] font-medium">{brandName}</span>
                   {movie.networkPremiereYear !== undefined && (
-                    <>
-                      <span className="text-[#C4BCB1]">·</span>
-                      <span>{brandName} Premiere {movie.networkPremiereYear}</span>
-                    </>
-                  )}
+                    <span>{brandName} Premiere {movie.networkPremiereYear}</span>
+                  ) || <span className="text-[#59524A] font-medium">{brandName}</span>}
                 </div>
               </div>
             </a>
