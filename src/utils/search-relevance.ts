@@ -1,4 +1,5 @@
 import type { ListingMovie, SearchIngredientEntry, SearchMovieEntry, SearchPersonEntry } from '../api/types';
+import type { AlternativeTitle } from '../types';
 
 export interface MovieSearchFields {
   title: string;
@@ -6,6 +7,18 @@ export interface MovieSearchFields {
   originalTitle?: string;
   alternativeTitles?: string[];
   secondaryText?: string;
+}
+
+const ENGLISH_MARKET_COUNTRIES = new Set(['US', 'GB', 'CA', 'AU', 'NZ', 'IE']);
+
+/** Selects alternate titles suitable for public English-language catalogue surfaces. */
+export function getPublicAlternativeTitles(title: string, alternativeTitles?: AlternativeTitle[]): string[] {
+  const eligible = (alternativeTitles || [])
+    .filter((entry) => entry.language
+      ? entry.language.toLowerCase() === 'en'
+      : ENGLISH_MARKET_COUNTRIES.has(entry.country.toUpperCase()))
+    .map((entry) => entry.title);
+  return getDisplayAlternativeTitles(title, eligible);
 }
 
 export interface ScoredSearchResult<T> {

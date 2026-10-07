@@ -1,5 +1,6 @@
 import { Movie } from '../types';
 import { getMovieArchiveYear, getMoviePremiereDateKey, isDateKeyInCalendarWeek, isMoviePremierePast } from './catalogue-lifecycle';
+import { getPublicAlternativeTitles } from './search-relevance';
 
 export const SUPPORTED_PER_PAGE = [24, 48, 96] as const;
 export type CatalogueSort = 'catalogue' | 'newest' | 'oldest' | 'title' | 'title-desc';
@@ -73,7 +74,7 @@ export function getCataloguePage(movies: Movie[], query: CatalogueQuery, lockedB
     if (query.search && !(
       movie.title.toLowerCase().includes(query.search) ||
       movie.originalTitle?.toLowerCase().includes(query.search) ||
-      movie.alternativeTitles?.some((entry) => entry.title.toLowerCase().includes(query.search!)) ||
+      getPublicAlternativeTitles(movie.title, movie.alternativeTitles).some((title) => title.toLowerCase().includes(query.search!)) ||
       movie.synopsis.toLowerCase().includes(query.search) ||
       movie.cast.some((cast) => cast.name.toLowerCase().includes(query.search!))
     )) return false;

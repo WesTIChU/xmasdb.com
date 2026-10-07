@@ -10,6 +10,7 @@ import { MovieCard } from './MovieCard';
 import { NavigationLink } from './NavigationLink';
 import { BackNavigation } from './BackNavigation';
 import { getMoviePoster } from '../utils/posters';
+import { getPublicAlternativeTitles } from '../utils/search-relevance';
 import { getFingerprintById } from '../data/fingerprints';
 import { FingerprintChips } from './FingerprintChips';
 import { resolveImageUrl } from '../utils/image-url';
@@ -26,6 +27,7 @@ interface MovieDetailProps {
 
 export const MovieDetail: React.FC<MovieDetailProps> = ({ movie, related, onNavigate, trivia }) => {
   const brand = getBrandById(movie.brandId);
+  const publicAlternativeTitles = getPublicAlternativeTitles(movie.title, movie.alternativeTitles);
   const [isCastExpanded, setIsCastExpanded] = useState(false);
 
   // Collect available trailers
@@ -280,8 +282,8 @@ export const MovieDetail: React.FC<MovieDetailProps> = ({ movie, related, onNavi
             {movie.originalTitle && movie.originalTitle.toLowerCase() !== movie.title.toLowerCase() && (
               <p className="mt-1 text-xs text-[#736B63] font-body">Original title: {movie.originalTitle}</p>
             )}
-            {movie.alternativeTitles && movie.alternativeTitles.length > 0 && (
-              <p className="mt-1 text-xs text-[#736B63] font-body">Also known as: {movie.alternativeTitles.map((entry) => entry.title).join(', ')}</p>
+            {publicAlternativeTitles.length > 0 && (
+              <p className="mt-1 text-xs text-[#736B63] font-body">Also known as: {publicAlternativeTitles.join(', ')}</p>
             )}
           </div>
 

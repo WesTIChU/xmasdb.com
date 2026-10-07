@@ -42,7 +42,7 @@ import type {
   CalendarPayload,
 } from '../api/types';
 import { birthdayDistance, parseBirthday, sortBirthdays, upcomingBirthdays } from '../utils/birthdays';
-import { getDisplayAlternativeTitles, scoreActorSearchResult, scoreIngredientSearchResult, scoreMovieSearchFields } from '../utils/search-relevance';
+import { getPublicAlternativeTitles, scoreActorSearchResult, scoreIngredientSearchResult, scoreMovieSearchFields } from '../utils/search-relevance';
 import { getCreativeCrew, getPersonSlug, isCreativeCrewJob } from '../utils/creative-crew';
 import { FINGERPRINTS, getFingerprintById } from '../data/fingerprints';
 import { getMovieFingerprints, getRelatedMovieFingerprints, movieHasFingerprint } from '../data/movie-fingerprints';
@@ -73,7 +73,7 @@ export function toListingMovie(movie: Movie, displayYear = movie.year, includeAl
     releaseDate: movie.releaseDate,
     premiereDate: movie.premiereDate,
     status: movie.status,
-    ...(includeAlternativeTitles ? { alternativeTitles: getDisplayAlternativeTitles(movie.title, movie.alternativeTitles?.map((entry) => entry.title)) } : {}),
+    ...(includeAlternativeTitles ? { alternativeTitles: getPublicAlternativeTitles(movie.title, movie.alternativeTitles) } : {}),
     ...(includeAlternativeTitles ? { networkPremiereYear: getMovieNetworkPremiereYear(movie) ?? undefined } : {}),
   };
 }
@@ -419,7 +419,7 @@ export function buildSearchIndex(): SearchIndexPayload {
         brandId: movie.brandId,
         posterUrl: movie.posterUrl,
         originalTitle: movie.originalTitle,
-        alternativeTitles: getDisplayAlternativeTitles(movie.title, movie.alternativeTitles?.map((entry) => entry.title)),
+        alternativeTitles: getPublicAlternativeTitles(movie.title, movie.alternativeTitles),
         networkPremiereYear: getMovieNetworkPremiereYear(movie) ?? undefined,
         // Join names with a NUL separator so substring matching can never span
         // across two different cast members (preserving per-name matching).
@@ -448,7 +448,7 @@ export function buildSearchResults(rawQuery: string): SearchResultsPayload {
         title: movie.title,
         tmdbId: movie.tmdbId,
         originalTitle: movie.originalTitle,
-        alternativeTitles: movie.alternativeTitles?.map((entry) => entry.title),
+        alternativeTitles: getPublicAlternativeTitles(movie.title, movie.alternativeTitles),
         secondaryText: `${movie.synopsis} ${movie.cast.map((member) => member.name).join(' ')}`,
       }, query),
     }))

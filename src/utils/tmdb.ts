@@ -58,7 +58,7 @@ export interface TmdbMovieApiResponse {
   external_ids?: { imdb_id?: string | null };
   videos?: { results?: Array<{ key: string; site: string; type: string; name: string; official?: boolean }> };
   release_dates?: { results?: Array<{ iso_3166_1: string; release_dates?: Array<{ release_date: string; type?: number; certification?: string; note?: string }> }> };
-  alternative_titles?: { titles?: Array<{ iso_3166_1?: string; title?: string }> };
+  alternative_titles?: { titles?: Array<{ iso_3166_1?: string; iso_639_1?: string; title?: string }> };
   credits?: {
     cast?: Array<{ id: number; name: string; character?: string; order?: number; profile_path?: string | null }>;
     crew?: Array<{ id: number; name: string; job: string; department?: string; profile_path?: string | null; credit_id?: string }>;
@@ -83,7 +83,7 @@ export function normalizeTmdbAlternativeTitles(
     const key = titleKey(title);
     if (excluded.has(key) || seen.has(key)) continue;
     seen.add(key);
-    titles.push({ title, country: entry.iso_3166_1?.trim() || '' });
+    titles.push({ title, country: entry.iso_3166_1?.trim() || '', language: entry.iso_639_1?.trim() || undefined });
   }
   return titles.length > 0 ? titles : undefined;
 }

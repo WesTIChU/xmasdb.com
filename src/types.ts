@@ -70,6 +70,7 @@ export interface MovieCertification {
 export interface AlternativeTitle {
   title: string;
   country: string;
+  language?: string;
 }
 
 export interface Movie {

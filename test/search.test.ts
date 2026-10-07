@@ -4,6 +4,7 @@ import { MOVIES } from '../src/data/movies';
 import { buildSearchIndex, buildSearchResults } from '../src/server/catalogue-api';
 import {
   getDisplayAlternativeTitles,
+  getPublicAlternativeTitles,
   normalizeSearchText,
   scoreActorSearchResult,
   scoreMovieSearchEntry,
@@ -45,6 +46,10 @@ assert.equal(buildSearchResults('1191059').movies[0].tmdbId, 1191059, 'exact TMD
 assert.equal(buildSearchResults('1191059').movies[0].networkPremiereYear, 2025, 'exact TMDB ID result should include the differing network premiere year');
 assert.ok(!buildSearchResults('11910').movies.some((movie) => movie.tmdbId === 1191059), 'partial TMDB ID should not match');
 assert.equal(getDisplayAlternativeTitles('Merry Mystery Christmas', ['Merry Mystery Christmas', 'A Very Curious Christmas', 'A Very Curious Christmas']).join(' · '), 'A Very Curious Christmas');
+const charmingChristmasTown = MOVIES.find((movie) => movie.tmdbId === 744933)!;
+assert.deepEqual(getPublicAlternativeTitles(charmingChristmasTown.title, charmingChristmasTown.alternativeTitles), ['Christmas in Solvang'], 'foreign alternate titles must not be publicly selectable');
+assert.ok(!buildSearchResults('Очаровательный рождественский городок').movies.some((movie) => movie.tmdbId === 744933), 'foreign alternate titles must not be searchable');
+assert.ok(buildSearchResults('Christmas in Solvang').movies.some((movie) => movie.tmdbId === 744933), 'English US alternate titles must remain searchable');
 assert.equal(merryMysteryChristmas.year, 2023, 'search must retain the movie release year');
 
 const actorWithMultipleWords = getAllActors().find((actor) => actor.name.trim().split(/\s+/).length >= 2)!;
