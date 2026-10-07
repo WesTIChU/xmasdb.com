@@ -59,10 +59,13 @@ assert.equal(getMovieArchiveYear(merryMysteryChristmas!, 'gaf'), 2025, 'GAF rele
 assert.equal(merryMysteryChristmas!.releaseDate, '2023-11-08', 'archive-year selection must not alter the original release date');
 assert.ok(buildCatalogueListing(parseCatalogueQuery(''), 'gaf', 2025)?.movies.some((movie) => movie.tmdbId === 1191059), 'Merry Mystery Christmas should appear under GAF 2025');
 assert.ok(!buildCatalogueListing(parseCatalogueQuery(''), 'gaf', 2023)?.movies.some((movie) => movie.tmdbId === 1191059), 'Merry Mystery Christmas should not appear under GAF 2023');
+assert.equal(buildCatalogueListing(parseCatalogueQuery(''), 'gaf', 2025)?.movies.find((movie) => movie.tmdbId === 1191059)?.year, 2025, 'GAF archive card should display the effective network archive year');
+assert.equal(buildMovieDetail('1191059')?.movie.year, 2023, 'movie detail should continue displaying the original release year');
 assert.ok(buildCatalogueListing(parseCatalogueQuery(''), 'gaf', 2025)?.years.includes(2025), 'GAF archive navigation should include the network premiere year');
 assert.equal(getMovieArchiveYear({ brandId: 'gaf', year: 2024, releaseDate: '2024-11-01' }, 'gaf'), 2024, 'release year should be the archive fallback');
 assert.equal(getMovieArchiveYear({ brandId: 'gaf', year: 2024, releaseDate: '2024-11-01', networkPremiereDate: '2025-11-01' }, 'gaf'), 2025, 'explicit network premiere should take precedence');
 assert.ok(getArchiveYearsForNetwork(MOVIES, 'gaf').includes(2025), 'GAF archive years should use network premiere dates');
+assert.equal(buildCatalogueListing(parseCatalogueQuery(''), 'gaf', 2024)?.movies.find((movie) => movie.tmdbId === 1175674)?.year, 2024, 'ordinary network movie cards should retain their normal year when archive and release years match');
 
 const hotChocolateHoliday = MOVIES.find((movie) => movie.tmdbId === 777405);
 assert.ok(hotChocolateHoliday, 'Hot Chocolate Holiday remains in the catalogue');

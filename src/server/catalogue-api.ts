@@ -15,7 +15,7 @@ import {
 } from '../data/actors';
 import { getBrandBySlug, getPopulatedBrands } from '../data/brands';
 import { getCataloguePage, type CatalogueQuery } from '../utils/catalogue-pagination';
-import { getArchiveYearsForNetwork, getMovieNetworkPremiereDateKey, getMoviePremiereDateKey, isFutureComingSoonMovie, isMoviePremierePast, sortMoviesByLifecycle } from '../utils/catalogue-lifecycle';
+import { getArchiveYearsForNetwork, getMovieArchiveYear, getMovieNetworkPremiereDateKey, getMoviePremiereDateKey, isFutureComingSoonMovie, isMoviePremierePast, sortMoviesByLifecycle } from '../utils/catalogue-lifecycle';
 import { getActorBackdrop } from '../utils/backdrops';
 import { buildRadarrFeed, isMovieEligibleForRadarr } from '../utils/feeds';
 import type {
@@ -61,12 +61,12 @@ const FAVOURITE_MOVIE_TITLES = [
 const FAVOURITE_ACTOR_NAMES = ['Paul Campbell', 'Kimberley Sustad', 'Ryan Paevey'] as const;
 
 /** Converts a canonical movie into the compact listing shape used by cards. */
-export function toListingMovie(movie: Movie): ListingMovie {
+export function toListingMovie(movie: Movie, displayYear = movie.year): ListingMovie {
   return {
     id: movie.id,
     slug: movie.slug,
     title: movie.title,
-    year: movie.year,
+    year: displayYear,
     brandId: movie.brandId,
     tmdbId: movie.tmdbId,
     posterUrl: movie.posterUrl,
@@ -162,7 +162,10 @@ export function buildCatalogueListing(
   const brand = brandId ? getPopulatedBrands(MOVIES).find((b) => b.id === brandId) : undefined;
 
   return {
-    movies: page.movies.map(toListingMovie),
+    movies: page.movies.map((movie) => toListingMovie(
+      movie,
+      brandId ? getMovieArchiveYear(movie, brandId) ?? movie.year : movie.year,
+    )),
     total: page.total,
     totalPages: page.totalPages,
     page: page.page,
