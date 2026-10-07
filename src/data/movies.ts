@@ -149636,7 +149636,6 @@ export const MOVIES: Movie[] = [
       }
     ],
     "trailerYoutubeKey": "DYOXfGyrsZc",
-    "voteAverage": 6.2,
     "voteCount": 5,
     "tmdbUpdatedAt": "2026-10-06T18:47:24.196Z",
     "premiereDate": "2023-11-08",
@@ -149647,7 +149646,8 @@ export const MOVIES: Movie[] = [
         "country": "US"
       }
     ],
-    "keywords": []
+    "keywords": [],
+    "networkPremiereDate": "2025-11-08"
   },
   {
     "id": "uptv-2017-the-christmas-calendar",
