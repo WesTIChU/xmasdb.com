@@ -15,7 +15,7 @@ assert.deepStrictEqual(
     { title: 'a hot cocoa christmas', iso_3166_1: 'GB' },
     { title: 'Much Ado About Christmas', iso_3166_1: 'US' },
   ] }, 'Much Ado About Christmas', 'Much Ado About Christmas'),
-  [{ title: 'A Hot Cocoa Christmas', country: 'US' }],
+  [{ title: 'A Hot Cocoa Christmas', country: 'US', language: undefined }],
   'TMDB alternative titles are normalized, deduplicated and exclude primary/original titles',
 );
 assert.equal(resolveTmdbReleaseDate('2011-06-21', [
@@ -191,7 +191,7 @@ try {
   };
   const optional = await refreshTmdbMovie(imageMovie, 'test-key', cache);
   assert.ok(metadataUrl.includes('append_to_response=credits,videos,release_dates,external_ids,alternative_titles,keywords'), 'keywords are appended to the existing movie request');
-  assert.deepEqual(optional.alternativeTitles, [{ title: 'An Alternate Movie 1', country: 'US' }]);
+   assert.deepEqual(optional.alternativeTitles, [{ title: 'An Alternate Movie 1', country: 'US', language: undefined }]);
   assert.deepEqual(optional.genres, [{ id: 10770, name: 'TV Movie' }, { id: 10749, name: 'Romance' }], 'TMDB movie import includes normalized genres');
   assert.deepEqual(optional.keywords, [{ id: 42, name: 'holiday romance' }], 'TMDB movie import includes keyword IDs and names');
   assert.equal(cacheCalls, 0, 'missing optional poster/backdrop URLs do not invoke image ingestion');
