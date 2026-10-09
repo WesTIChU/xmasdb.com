@@ -50162,6 +50162,22 @@
     "tmdbUpdatedAt": "2026-09-20T16:20:43.698Z"
   },
   {
+    "id": "4943423",
+    "slug": "jake-connelly",
+    "name": "Jake Connelly",
+    "tmdbPersonId": 4943423,
+    "photoUrl": "/images/people/4943423.webp",
+    "profileUrl": "/images/people/4943423.webp",
+    "biography": "Jake Connelly is an American actor. He is known for his role as Derek Turnbow in the fifth and final season of the Netflix science fiction horror series Stranger Things.",
+    "imdbPersonId": "nm15272139",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 6,
+    "instagramId": "jakeconnellyofficial",
+    "tmdbUpdatedAt": "2026-10-09T06:24:12.130Z",
+    "tmdbFetchedAt": "2026-10-09T06:24:12.130Z"
+  },
+  {
     "id": "jake-epstein",
     "slug": "jake-epstein",
     "name": "Jake Epstein",
