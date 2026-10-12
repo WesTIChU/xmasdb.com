@@ -55519,12 +55519,13 @@
     "imdbPersonId": "nm0162013",
     "gender": "Male",
     "knownForDepartment": "Directing",
-    "knownCredits": 61,
+    "knownCredits": 62,
     "alsoKnownAs": [
       "Gerry Ciccoritti",
       "Gerard Ciccoritti"
     ],
-    "tmdbUpdatedAt": "2026-09-22T20:53:33.655Z"
+    "tmdbUpdatedAt": "2026-10-12T06:14:04.106Z",
+    "tmdbFetchedAt": "2026-10-12T06:14:04.106Z"
   },
   {
     "id": "jerry-kernion",
@@ -109794,8 +109795,9 @@
     "imdbPersonId": "nm0362399",
     "gender": "Female",
     "knownForDepartment": "Directing",
-    "knownCredits": 22,
-    "tmdbUpdatedAt": "2026-09-22T20:53:14.328Z"
+    "knownCredits": 23,
+    "tmdbUpdatedAt": "2026-10-12T06:14:03.734Z",
+    "tmdbFetchedAt": "2026-10-12T06:14:03.734Z"
   },
   {
     "id": "stacia-crawford",
