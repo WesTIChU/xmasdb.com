@@ -74700,9 +74700,9 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1754947",
       "imdb": "https://www.imdb.com/title/tt43674919/"
     },
-    "tmdbUpdatedAt": "2026-10-12T15:48:20.141Z",
+    "tmdbUpdatedAt": "2026-10-13T00:52:44.295Z",
     "premiereDate": "2026-12-19",
-    "tmdbFetchedAt": "2026-10-12T15:48:20.141Z",
+    "tmdbFetchedAt": "2026-10-13T00:52:44.295Z",
     "keywords": [
       {
         "name": "fake relationship",
@@ -74713,7 +74713,7 @@ export const MOVIES: Movie[] = [
       "value": "G",
       "country": "US",
       "source": "tmdb",
-      "lastConfirmedAt": "2026-10-12T15:48:20.141Z"
+      "lastConfirmedAt": "2026-10-13T00:52:44.295Z"
     }
   },
   {
@@ -74896,9 +74896,9 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1665375",
       "imdb": "https://www.imdb.com/title/tt41054296/"
     },
-    "tmdbUpdatedAt": "2026-10-12T15:48:20.351Z",
+    "tmdbUpdatedAt": "2026-10-13T00:52:44.468Z",
     "premiereDate": "2026-11-15",
-    "tmdbFetchedAt": "2026-10-12T15:48:20.351Z",
+    "tmdbFetchedAt": "2026-10-13T00:52:44.468Z",
     "keywords": [
       {
         "id": 3291,
@@ -74917,7 +74917,7 @@ export const MOVIES: Movie[] = [
       "value": "G",
       "country": "US",
       "source": "tmdb",
-      "lastConfirmedAt": "2026-10-12T15:48:20.351Z"
+      "lastConfirmedAt": "2026-10-13T00:52:44.468Z"
     }
   },
   {
@@ -144827,7 +144827,23 @@ export const MOVIES: Movie[] = [
         "note": ""
       }
     ],
-    "crew": [],
+    "crew": [
+      {
+        "id": 85204,
+        "name": "Jeff Beesley",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/fAlhPhTYEzywPpkdaZOVwpviX9W.jpg",
+        "creditId": "6acd2170963866f5c8ce526d"
+      },
+      {
+        "id": 1938012,
+        "name": "Elena Zaretsky",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "6acd21759a4d3033de6f2f8c"
+      }
+    ],
     "voteAverage": 0,
     "voteCount": 0,
     "status": "coming-soon",
@@ -144836,10 +144852,11 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1772765",
       "imdb": "https://www.imdb.com/title/tt46069464/"
     },
-    "tmdbUpdatedAt": "2026-10-12T15:48:22.535Z",
-    "tmdbFetchedAt": "2026-10-12T15:48:22.535Z",
+    "tmdbUpdatedAt": "2026-10-13T00:52:45.236Z",
+    "tmdbFetchedAt": "2026-10-13T00:52:45.236Z",
     "backdropUrl": "/images/backdrops/1772765.jpg",
-    "keywords": []
+    "keywords": [],
+    "director": "Jeff Beesley"
   },
   {
     "id": "hallmark-2026-holiday-touchdown-a-bears-love-story",
@@ -145025,9 +145042,9 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1729134",
       "imdb": "https://www.imdb.com/title/tt43662087/"
     },
-    "tmdbUpdatedAt": "2026-10-12T15:48:23.814Z",
+    "tmdbUpdatedAt": "2026-10-13T00:52:45.813Z",
     "backdropUrl": "/images/backdrops/1729134.jpg",
-    "tmdbFetchedAt": "2026-10-12T15:48:23.814Z",
+    "tmdbFetchedAt": "2026-10-13T00:52:45.813Z",
     "keywords": [
       {
         "id": 520,
@@ -145142,8 +145159,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773006",
       "imdb": "https://www.imdb.com/title/tt46070651/"
     },
-    "tmdbUpdatedAt": "2026-10-12T15:48:24.888Z",
-    "tmdbFetchedAt": "2026-10-12T15:48:24.888Z",
+    "tmdbUpdatedAt": "2026-10-13T00:52:46.316Z",
+    "tmdbFetchedAt": "2026-10-13T00:52:46.316Z",
     "backdropUrl": "/images/backdrops/1773006.jpg",
     "alternativeTitles": [
       {
@@ -145242,9 +145259,9 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773195",
       "imdb": "https://www.imdb.com/title/tt46071555/"
     },
-    "tmdbUpdatedAt": "2026-10-12T15:48:25.942Z",
+    "tmdbUpdatedAt": "2026-10-13T00:52:46.812Z",
     "backdropUrl": "/images/backdrops/1773195.jpg",
-    "tmdbFetchedAt": "2026-10-12T15:48:25.942Z",
+    "tmdbFetchedAt": "2026-10-13T00:52:46.812Z",
     "keywords": []
   },
   {
@@ -145315,8 +145332,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773382",
       "imdb": "https://www.imdb.com/title/tt46071998/"
     },
-    "tmdbUpdatedAt": "2026-10-12T15:48:26.916Z",
-    "tmdbFetchedAt": "2026-10-12T15:48:26.916Z",
+    "tmdbUpdatedAt": "2026-10-13T00:52:47.344Z",
+    "tmdbFetchedAt": "2026-10-13T00:52:47.344Z",
     "backdropUrl": "/images/backdrops/1773382.jpg",
     "alternativeTitles": [
       {
@@ -145408,8 +145425,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773380",
       "imdb": "https://www.imdb.com/title/tt46072491/"
     },
-    "tmdbUpdatedAt": "2026-10-12T15:48:28.000Z",
-    "tmdbFetchedAt": "2026-10-12T15:48:28.000Z",
+    "tmdbUpdatedAt": "2026-10-13T00:52:47.880Z",
+    "tmdbFetchedAt": "2026-10-13T00:52:47.880Z",
     "backdropUrl": "/images/backdrops/1773380.jpg",
     "alternativeTitles": [
       {
@@ -145502,8 +145519,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773378",
       "imdb": "https://www.imdb.com/title/tt46075371/"
     },
-    "tmdbUpdatedAt": "2026-10-12T15:48:28.683Z",
-    "tmdbFetchedAt": "2026-10-12T15:48:28.683Z",
+    "tmdbUpdatedAt": "2026-10-13T00:52:48.218Z",
+    "tmdbFetchedAt": "2026-10-13T00:52:48.218Z",
     "backdropUrl": "/images/backdrops/1773378.jpg",
     "keywords": [],
     "alternativeTitles": [
@@ -145521,7 +145538,7 @@ export const MOVIES: Movie[] = [
     "brandId": "hallmark",
     "releaseDate": "2026-10-31",
     "premiereDate": "2026-10-31",
-    "synopsis": "Maren (Groening) is a busy single mother to her adopted daughter, Leah (Taylor Blake). As the owner of her late father’s beloved hardware store, Maren is often found helping repair just about anything for her fellow locals, leaving very little time for herself. When the opportunity to participate in the Christmas Companions program at Jolly Acres, a new yet thriving retirement community in town, Leah excitedly jumps at the chance as she misses having a grandfather in her life. Much to Leah’s delight, she is paired with Kris (Randy Apostle), a jolly resident who bears an uncanny resemblance to Santa Claus. While there, Maren crosses paths with the nomadic Reid (Rady), the center’s Director of Community Launch and Operations, whose job has him traveling from facility to facility to launch new branches.",
+    "synopsis": "Maren is a busy single mother to her adopted daughter, Leah. As the owner of her late father’s beloved hardware store, Maren is often found helping repair just about anything for her fellow locals, leaving very little time for herself. When the opportunity to participate in the Christmas Companions program at Jolly Acres, a new yet thriving retirement community in town, Leah excitedly jumps at the chance as she misses having a grandfather in her life. Much to Leah’s delight, she is paired with Kris, a jolly resident who bears an uncanny resemblance to Santa Claus. While there, Maren crosses paths with the nomadic Reid, the center’s Director of Community Launch and Operations, whose job has him traveling from facility to facility to launch new branches.",
     "posterUrl": "",
     "cast": [
       {
@@ -145551,6 +145568,14 @@ export const MOVIES: Movie[] = [
         "profileUrl": "/images/people/59177.webp",
         "order": 2,
         "birthday": "1981-08-20"
+      },
+      {
+        "actorId": "1085651",
+        "name": "Randy Apostle",
+        "character": "Kris",
+        "slug": "randy-apostle",
+        "tmdbPersonId": 1085651,
+        "order": 3
       }
     ],
     "director": "Jeff Beesley",
@@ -145562,6 +145587,14 @@ export const MOVIES: Movie[] = [
       {
         "id": 10749,
         "name": "Romance"
+      },
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 10770,
+        "name": "TV Movie"
       }
     ],
     "releaseDates": [
@@ -145598,8 +145631,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773374",
       "imdb": "https://www.imdb.com/title/tt43749818/"
     },
-    "tmdbUpdatedAt": "2026-10-12T15:48:28.895Z",
-    "tmdbFetchedAt": "2026-10-12T15:48:28.895Z",
+    "tmdbUpdatedAt": "2026-10-13T00:52:48.384Z",
+    "tmdbFetchedAt": "2026-10-13T00:52:48.384Z",
     "keywords": []
   },
   {
@@ -145691,16 +145724,16 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773368",
       "imdb": "https://www.imdb.com/title/tt46066911/"
     },
-    "tmdbUpdatedAt": "2026-10-12T15:48:30.102Z",
+    "tmdbUpdatedAt": "2026-10-13T00:52:48.991Z",
     "runtimeMinutes": 84,
     "backdropUrl": "/images/backdrops/1773368.jpg",
-    "tmdbFetchedAt": "2026-10-12T15:48:30.102Z",
+    "tmdbFetchedAt": "2026-10-13T00:52:48.991Z",
     "keywords": [],
     "certification": {
       "value": "G",
       "country": "US",
       "source": "tmdb",
-      "lastConfirmedAt": "2026-10-12T15:48:30.102Z"
+      "lastConfirmedAt": "2026-10-13T00:52:48.991Z"
     }
   },
   {
@@ -145769,8 +145802,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773363",
       "imdb": "https://www.imdb.com/title/tt46075438/"
     },
-    "tmdbUpdatedAt": "2026-10-12T15:48:30.310Z",
-    "tmdbFetchedAt": "2026-10-12T15:48:30.310Z",
+    "tmdbUpdatedAt": "2026-10-13T00:52:49.160Z",
+    "tmdbFetchedAt": "2026-10-13T00:52:49.160Z",
     "keywords": []
   },
   {
@@ -145876,8 +145909,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773357",
       "imdb": "https://www.imdb.com/title/tt46075500/"
     },
-    "tmdbUpdatedAt": "2026-10-12T15:48:30.518Z",
-    "tmdbFetchedAt": "2026-10-12T15:48:30.518Z",
+    "tmdbUpdatedAt": "2026-10-13T00:52:49.327Z",
+    "tmdbFetchedAt": "2026-10-13T00:52:49.327Z",
     "director": "Michael Robison",
     "alternativeTitles": [
       {
@@ -145999,8 +146032,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773353",
       "imdb": "https://www.imdb.com/title/tt46075510/"
     },
-    "tmdbUpdatedAt": "2026-10-12T15:48:30.727Z",
-    "tmdbFetchedAt": "2026-10-12T15:48:30.727Z",
+    "tmdbUpdatedAt": "2026-10-13T00:52:49.510Z",
+    "tmdbFetchedAt": "2026-10-13T00:52:49.510Z",
     "alternativeTitles": [
       {
         "title": "A Wingdaughter's Christmas",
@@ -146096,8 +146129,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773350",
       "imdb": "https://www.imdb.com/title/tt46075976/"
     },
-    "tmdbUpdatedAt": "2026-10-12T15:48:31.746Z",
-    "tmdbFetchedAt": "2026-10-12T15:48:31.746Z",
+    "tmdbUpdatedAt": "2026-10-13T00:52:50.009Z",
+    "tmdbFetchedAt": "2026-10-13T00:52:50.009Z",
     "backdropUrl": "/images/backdrops/1773350.jpg",
     "alternativeTitles": [
       {
@@ -146168,9 +146201,9 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773345",
       "imdb": "https://www.imdb.com/title/tt46076002/"
     },
-    "tmdbUpdatedAt": "2026-10-12T15:48:32.980Z",
+    "tmdbUpdatedAt": "2026-10-13T00:52:50.864Z",
     "backdropUrl": "/images/backdrops/1773345.jpg",
-    "tmdbFetchedAt": "2026-10-12T15:48:32.980Z",
+    "tmdbFetchedAt": "2026-10-13T00:52:50.864Z",
     "alternativeTitles": [
       {
         "title": "The Christmas Loop",
@@ -146257,8 +146290,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773340",
       "imdb": "https://www.imdb.com/title/tt46076026/"
     },
-    "tmdbUpdatedAt": "2026-10-12T15:48:33.732Z",
-    "tmdbFetchedAt": "2026-10-12T15:48:33.732Z",
+    "tmdbUpdatedAt": "2026-10-13T00:52:51.262Z",
+    "tmdbFetchedAt": "2026-10-13T00:52:51.262Z",
     "backdropUrl": "/images/backdrops/1773340.jpg",
     "keywords": []
   },
@@ -146341,8 +146374,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773334",
       "imdb": "https://www.imdb.com/title/tt46076042/"
     },
-    "tmdbUpdatedAt": "2026-10-12T15:48:33.939Z",
-    "tmdbFetchedAt": "2026-10-12T15:48:33.939Z",
+    "tmdbUpdatedAt": "2026-10-13T00:52:51.431Z",
+    "tmdbFetchedAt": "2026-10-13T00:52:51.431Z",
     "keywords": [
       {
         "name": "bake-off",
@@ -146423,8 +146456,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773330",
       "imdb": "https://www.imdb.com/title/tt46076055/"
     },
-    "tmdbUpdatedAt": "2026-10-12T15:48:35.017Z",
-    "tmdbFetchedAt": "2026-10-12T15:48:35.017Z",
+    "tmdbUpdatedAt": "2026-10-13T00:52:51.937Z",
+    "tmdbFetchedAt": "2026-10-13T00:52:51.937Z",
     "backdropUrl": "/images/backdrops/1773330.jpg",
     "keywords": [
       {
@@ -146514,8 +146547,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt46064711/"
     },
     "backdropUrl": "/images/backdrops/1773329.jpg",
-    "tmdbUpdatedAt": "2026-10-12T15:48:36.049Z",
-    "tmdbFetchedAt": "2026-10-12T15:48:36.049Z",
+    "tmdbUpdatedAt": "2026-10-13T00:52:52.476Z",
+    "tmdbFetchedAt": "2026-10-13T00:52:52.476Z",
     "keywords": []
   },
   {
@@ -146615,9 +146648,9 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773322",
       "imdb": "https://www.imdb.com/title/tt41442843/"
     },
-    "tmdbUpdatedAt": "2026-10-12T15:48:37.240Z",
+    "tmdbUpdatedAt": "2026-10-13T00:52:52.985Z",
     "backdropUrl": "/images/backdrops/1773322.jpg",
-    "tmdbFetchedAt": "2026-10-12T15:48:37.240Z",
+    "tmdbFetchedAt": "2026-10-13T00:52:52.985Z",
     "alternativeTitles": [
       {
         "title": "Treeber",
@@ -146815,8 +146848,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773042",
       "imdb": "https://www.imdb.com/title/tt46076498/"
     },
-    "tmdbUpdatedAt": "2026-10-12T15:48:37.454Z",
-    "tmdbFetchedAt": "2026-10-12T15:48:37.454Z",
+    "tmdbUpdatedAt": "2026-10-13T00:52:53.158Z",
+    "tmdbFetchedAt": "2026-10-13T00:52:53.158Z",
     "director": "Panta Mosleh",
     "keywords": [
       {
@@ -146971,8 +147004,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773318",
       "imdb": "https://www.imdb.com/title/tt43655245/"
     },
-    "tmdbUpdatedAt": "2026-10-12T15:48:37.666Z",
-    "tmdbFetchedAt": "2026-10-12T15:48:37.666Z",
+    "tmdbUpdatedAt": "2026-10-13T00:52:53.336Z",
+    "tmdbFetchedAt": "2026-10-13T00:52:53.336Z",
     "keywords": []
   },
   {
@@ -147161,8 +147194,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt39126701/"
     },
     "backdropUrl": "/images/backdrops/1594516.jpg",
-    "tmdbUpdatedAt": "2026-10-12T15:48:38.702Z",
-    "tmdbFetchedAt": "2026-10-12T15:48:38.702Z",
+    "tmdbUpdatedAt": "2026-10-13T00:52:53.889Z",
+    "tmdbFetchedAt": "2026-10-13T00:52:53.889Z",
     "keywords": [
       {
         "id": 9799,
@@ -147242,8 +147275,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773316",
       "imdb": "https://www.imdb.com/title/tt46076602/"
     },
-    "tmdbUpdatedAt": "2026-10-12T15:48:38.939Z",
-    "tmdbFetchedAt": "2026-10-12T15:48:38.939Z",
+    "tmdbUpdatedAt": "2026-10-13T00:52:54.058Z",
+    "tmdbFetchedAt": "2026-10-13T00:52:54.058Z",
     "keywords": []
   },
   {
@@ -147428,8 +147461,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773298",
       "imdb": "https://www.imdb.com/title/tt43746550/"
     },
-    "tmdbUpdatedAt": "2026-10-12T15:48:39.151Z",
-    "tmdbFetchedAt": "2026-10-12T15:48:39.151Z",
+    "tmdbUpdatedAt": "2026-10-13T00:52:54.234Z",
+    "tmdbFetchedAt": "2026-10-13T00:52:54.234Z",
     "keywords": []
   },
   {
@@ -147627,8 +147660,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773293",
       "imdb": "https://www.imdb.com/title/tt40629979/"
     },
-    "tmdbUpdatedAt": "2026-10-12T15:48:39.368Z",
-    "tmdbFetchedAt": "2026-10-12T15:48:39.368Z",
+    "tmdbUpdatedAt": "2026-10-13T00:52:54.406Z",
+    "tmdbFetchedAt": "2026-10-13T00:52:54.406Z",
     "keywords": []
   },
   {
@@ -147691,8 +147724,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773286",
       "imdb": "https://www.imdb.com/title/tt46076619/"
     },
-    "tmdbUpdatedAt": "2026-10-12T15:48:39.635Z",
-    "tmdbFetchedAt": "2026-10-12T15:48:39.635Z",
+    "tmdbUpdatedAt": "2026-10-13T00:52:54.578Z",
+    "tmdbFetchedAt": "2026-10-13T00:52:54.578Z",
     "keywords": []
   },
   {
@@ -147895,9 +147928,9 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1602653",
       "imdb": "https://www.imdb.com/title/tt39380754/"
     },
-    "tmdbUpdatedAt": "2026-10-12T15:48:41.027Z",
+    "tmdbUpdatedAt": "2026-10-13T00:52:55.079Z",
     "backdropUrl": "/images/backdrops/1602653.jpg",
-    "tmdbFetchedAt": "2026-10-12T15:48:41.027Z",
+    "tmdbFetchedAt": "2026-10-13T00:52:55.079Z",
     "keywords": [
       {
         "id": 4379,
@@ -148110,8 +148143,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773280",
       "imdb": "https://www.imdb.com/title/tt46064715/"
     },
-    "tmdbUpdatedAt": "2026-10-12T15:48:41.231Z",
-    "tmdbFetchedAt": "2026-10-12T15:48:41.231Z",
+    "tmdbUpdatedAt": "2026-10-13T00:52:55.251Z",
+    "tmdbFetchedAt": "2026-10-13T00:52:55.251Z",
     "director": "Ali Liebert",
     "keywords": [
       {
@@ -148244,9 +148277,9 @@ export const MOVIES: Movie[] = [
     "links": {
       "tmdb": "https://www.themoviedb.org/movie/1733866"
     },
-    "tmdbUpdatedAt": "2026-10-12T15:48:41.440Z",
+    "tmdbUpdatedAt": "2026-10-13T00:52:55.424Z",
     "imdbId": "tt43750204",
-    "tmdbFetchedAt": "2026-10-12T15:48:41.440Z",
+    "tmdbFetchedAt": "2026-10-13T00:52:55.424Z",
     "keywords": []
   },
   {
@@ -148389,8 +148422,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773035",
       "imdb": "https://www.imdb.com/title/tt41783274/"
     },
-    "tmdbUpdatedAt": "2026-10-12T15:48:41.650Z",
-    "tmdbFetchedAt": "2026-10-12T15:48:41.650Z",
+    "tmdbUpdatedAt": "2026-10-13T00:52:55.597Z",
+    "tmdbFetchedAt": "2026-10-13T00:52:55.597Z",
     "alternativeTitles": [
       {
         "title": "A Christmas Through Your Eyes",
@@ -148511,9 +148544,9 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773275",
       "imdb": "https://www.imdb.com/title/tt46076883/"
     },
-    "tmdbUpdatedAt": "2026-10-12T15:48:41.859Z",
+    "tmdbUpdatedAt": "2026-10-13T00:52:55.769Z",
     "director": "Jeff Beesley",
-    "tmdbFetchedAt": "2026-10-12T15:48:41.859Z",
+    "tmdbFetchedAt": "2026-10-13T00:52:55.769Z",
     "keywords": []
   },
   {
@@ -148586,8 +148619,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773270",
       "imdb": "https://www.imdb.com/title/tt46076903/"
     },
-    "tmdbUpdatedAt": "2026-10-12T15:48:42.076Z",
-    "tmdbFetchedAt": "2026-10-12T15:48:42.076Z",
+    "tmdbUpdatedAt": "2026-10-13T00:52:55.937Z",
+    "tmdbFetchedAt": "2026-10-13T00:52:55.937Z",
     "keywords": [
       {
         "id": 11836,
@@ -148710,8 +148743,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773266",
       "imdb": "https://www.imdb.com/title/tt46076921/"
     },
-    "tmdbUpdatedAt": "2026-10-12T15:48:42.285Z",
-    "tmdbFetchedAt": "2026-10-12T15:48:42.285Z",
+    "tmdbUpdatedAt": "2026-10-13T00:52:56.108Z",
+    "tmdbFetchedAt": "2026-10-13T00:52:56.108Z",
     "keywords": [
       {
         "id": 207317,
@@ -148825,8 +148858,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt46076940/"
     },
     "premiereDate": "2026-12-20",
-    "tmdbUpdatedAt": "2026-10-12T15:48:43.030Z",
-    "tmdbFetchedAt": "2026-10-12T15:48:43.030Z",
+    "tmdbUpdatedAt": "2026-10-13T00:52:56.458Z",
+    "tmdbFetchedAt": "2026-10-13T00:52:56.458Z",
     "alternativeTitles": [
       {
         "title": "Single at the Wedding",
@@ -164938,9 +164971,9 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-10-12T15:48:43.241Z",
+    "tmdbUpdatedAt": "2026-10-13T00:52:56.627Z",
     "premiereDate": "2026-11-12",
-    "tmdbFetchedAt": "2026-10-12T15:48:43.241Z",
+    "tmdbFetchedAt": "2026-10-13T00:52:56.627Z",
     "alternativeTitles": [
       {
         "title": "A Royal Christmas Stable",
@@ -165098,9 +165131,9 @@ export const MOVIES: Movie[] = [
     "trailerYoutubeKey": "o9dyk5v_ybQ",
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-10-12T15:48:43.953Z",
+    "tmdbUpdatedAt": "2026-10-13T00:52:56.960Z",
     "premiereDate": "2026-11-19",
-    "tmdbFetchedAt": "2026-10-12T15:48:43.953Z",
+    "tmdbFetchedAt": "2026-10-13T00:52:56.960Z",
     "alternativeTitles": [
       {
         "title": "Christmas Persuasion",
@@ -167013,9 +167046,9 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-10-12T15:48:44.540Z",
+    "tmdbUpdatedAt": "2026-10-13T00:52:57.303Z",
     "premiereDate": "2026-11-21",
-    "tmdbFetchedAt": "2026-10-12T15:48:44.540Z",
+    "tmdbFetchedAt": "2026-10-13T00:52:57.303Z",
     "imdbId": "tt46666760",
     "alternativeTitles": [
       {
@@ -167114,9 +167147,9 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-10-12T15:48:44.749Z",
+    "tmdbUpdatedAt": "2026-10-13T00:52:57.472Z",
     "premiereDate": "2026-10-31",
-    "tmdbFetchedAt": "2026-10-12T15:48:44.749Z",
+    "tmdbFetchedAt": "2026-10-13T00:52:57.472Z",
     "imdbId": "tt46668554",
     "alternativeTitles": [
       {
@@ -167138,7 +167171,7 @@ export const MOVIES: Movie[] = [
     "year": 2026,
     "brandId": "gaf",
     "releaseDate": "2026-11-28",
-    "synopsis": "Set in the charming town of Cedar Ridge, A Christmas Rescue follows dedicated physician Emma Ross (Bennett) who along with her dog, Shep (Niffy), is determined to make her beloved community’s annual Christmas Cares celebration the most meaningful yet. When traveling veterinarian, Dr. Matthew McGuire (Donovan) arrives to temporarily take over the local animal clinic, he proposes adding a Christmas pet adoption event to the festivities. As they work side by side to bring people – and rescue animals – together for the holidays, Emma and Matthew discover that the greatest Christmas miracle may be finding a place where both hearts and shelter pets finally belong.",
+    "synopsis": "Set in the charming town of Cedar Ridge, A Christmas Rescue follows dedicated physician Emma Ross who along with her dog, Shep, is determined to make her beloved community’s annual Christmas Cares celebration the most meaningful yet. When traveling veterinarian, Dr. Matthew McGuire arrives to temporarily take over the local animal clinic, he proposes adding a Christmas pet adoption event to the festivities. As they work side by side to bring people – and rescue animals – together for the holidays, Emma and Matthew discover that the greatest Christmas miracle may be finding a place where both hearts and shelter pets finally belong.",
     "posterUrl": "/images/posters/1774011.jpg",
     "cast": [
       {
@@ -167216,9 +167249,9 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-10-12T15:48:45.318Z",
+    "tmdbUpdatedAt": "2026-10-13T00:52:57.836Z",
     "premiereDate": "2026-11-28",
-    "tmdbFetchedAt": "2026-10-12T15:48:45.318Z",
+    "tmdbFetchedAt": "2026-10-13T00:52:57.836Z",
     "alternativeTitles": [
       {
         "title": "A Rescue Dog for Christmas",
@@ -167420,9 +167453,9 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-10-12T15:48:45.529Z",
+    "tmdbUpdatedAt": "2026-10-13T00:52:58.002Z",
     "premiereDate": "2026-12-13",
-    "tmdbFetchedAt": "2026-10-12T15:48:45.529Z",
+    "tmdbFetchedAt": "2026-10-13T00:52:58.002Z",
     "keywords": []
   },
   {
@@ -167642,9 +167675,9 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-10-12T15:48:45.788Z",
+    "tmdbUpdatedAt": "2026-10-13T00:52:58.182Z",
     "premiereDate": "2026-12-03",
-    "tmdbFetchedAt": "2026-10-12T15:48:45.788Z",
+    "tmdbFetchedAt": "2026-10-13T00:52:58.182Z",
     "alternativeTitles": [
       {
         "title": "The Ornament Library",
@@ -167661,7 +167694,7 @@ export const MOVIES: Movie[] = [
       "value": "G",
       "country": "US",
       "source": "tmdb",
-      "lastConfirmedAt": "2026-10-12T15:48:45.788Z"
+      "lastConfirmedAt": "2026-10-13T00:52:58.182Z"
     }
   },
   {
@@ -169096,9 +169129,9 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-10-12T15:48:46.805Z",
+    "tmdbUpdatedAt": "2026-10-13T00:52:58.677Z",
     "premiereDate": "2026-10-17",
-    "tmdbFetchedAt": "2026-10-12T15:48:46.805Z",
+    "tmdbFetchedAt": "2026-10-13T00:52:58.677Z",
     "keywords": [
       {
         "name": "ex-flame",
@@ -169350,7 +169383,7 @@ export const MOVIES: Movie[] = [
     "year": 2026,
     "brandId": "gaf",
     "releaseDate": "2026-11-08",
-    "synopsis": "​In An Ozark Mountain Christmas, when a dedicated young designer (Cohen) at a crossroads reluctantly follows her sister home to the nostalgic heart of the Ozarks for Christmas, she finds herself rediscovering not only her family’s legacy for commitment to craft, but also the quiet faith and purpose she has lost in the rush of modern life. With the help of Paul (Stoddard), Clara will reconnect with work rooted in care and community.",
+    "synopsis": "When a dedicated young designer at a crossroads reluctantly follows her sister home to the nostalgic heart of the Ozarks for Christmas, she finds herself rediscovering not only her family’s legacy for commitment to craft, but also the quiet faith and purpose she has lost in the rush of modern life. With the help of Paul, Clara will reconnect with work rooted in care and community.",
     "posterUrl": "/images/posters/1776532.jpg",
     "cast": [
       {
@@ -169458,10 +169491,11 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-10-12T15:48:47.408Z",
+    "tmdbUpdatedAt": "2026-10-13T00:52:59.738Z",
     "premiereDate": "2026-11-08",
-    "tmdbFetchedAt": "2026-10-12T15:48:47.408Z",
-    "keywords": []
+    "tmdbFetchedAt": "2026-10-13T00:52:59.738Z",
+    "keywords": [],
+    "backdropUrl": "/images/backdrops/1776532.jpg"
   },
   {
     "id": "gaf-2026-the-christmas-yes-list",
@@ -169525,9 +169559,9 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-10-12T15:48:47.618Z",
+    "tmdbUpdatedAt": "2026-10-13T00:52:59.911Z",
     "premiereDate": "2026-11-14",
-    "tmdbFetchedAt": "2026-10-12T15:48:47.618Z",
+    "tmdbFetchedAt": "2026-10-13T00:52:59.911Z",
     "imdbId": "tt46668453",
     "keywords": [
       {
@@ -169693,9 +169727,9 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-10-12T15:48:47.848Z",
+    "tmdbUpdatedAt": "2026-10-13T00:53:00.080Z",
     "premiereDate": "2026-11-22",
-    "tmdbFetchedAt": "2026-10-12T15:48:47.848Z",
+    "tmdbFetchedAt": "2026-10-13T00:53:00.080Z",
     "alternativeTitles": [
       {
         "title": "In Starlight Point: A Christmas Card Mystery",
@@ -169843,9 +169877,9 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-10-12T15:48:48.107Z",
+    "tmdbUpdatedAt": "2026-10-13T00:53:00.247Z",
     "premiereDate": "2026-11-24",
-    "tmdbFetchedAt": "2026-10-12T15:48:48.107Z",
+    "tmdbFetchedAt": "2026-10-13T00:53:00.247Z",
     "keywords": []
   },
   {
@@ -169877,13 +169911,34 @@ export const MOVIES: Movie[] = [
         "profileUrl": "/images/people/12793.webp",
         "order": 1,
         "birthday": "1973-03-03"
+      },
+      {
+        "actorId": "6544020",
+        "name": "Jeff Kniola",
+        "character": "Self - Wedding Guest",
+        "slug": "jeff-kniola",
+        "tmdbPersonId": 6544020,
+        "order": 2
       }
     ],
     "tmdbId": 1776670,
     "isComingSoon": true,
     "status": "coming-soon",
     "originalTitle": "The Greatest Christmas Gift",
-    "genres": [],
+    "genres": [
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      },
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
     "releaseDates": [
       {
         "country": "US",
@@ -169893,20 +169948,36 @@ export const MOVIES: Movie[] = [
         "note": ""
       }
     ],
-    "crew": [],
+    "crew": [
+      {
+        "id": 6544019,
+        "name": "Samuel Lewis",
+        "job": "Director",
+        "department": "Directing",
+        "creditId": "6acd24b53f62dde6c8aaafd6"
+      },
+      {
+        "id": 4867604,
+        "name": "Summer Isreal Johnson",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "6acd24cb82f2d96382e14b47"
+      }
+    ],
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-10-12T15:48:48.313Z",
+    "tmdbUpdatedAt": "2026-10-13T00:53:00.420Z",
     "premiereDate": "2026-11-29",
-    "tmdbFetchedAt": "2026-10-12T15:48:48.313Z",
+    "tmdbFetchedAt": "2026-10-13T00:53:00.420Z",
     "imdbId": "tt44127266",
     "keywords": [
       {
         "name": "wedding",
         "evidence": "wedding"
       }
-    ]
+    ],
+    "director": "Samuel Lewis"
   },
   {
     "id": "gaf-2026-making-christmas-bright",
@@ -169915,7 +169986,7 @@ export const MOVIES: Movie[] = [
     "year": 2026,
     "brandId": "gaf",
     "releaseDate": "2026-12-12",
-    "synopsis": "​In Making Christmas Bright, Kay (Jillian Murray), is a devoted middle school teacher in the close-knit Kentucky town of White Grove who believes God has opened the door to an exciting new career and a new life in the city. With Christmas approaching, Kay is preparing to leave behind her father, lifelong friends, students and the community she has always called home. But when she volunteers for her small-town church’s “Christmas Angel Tree” project, and is paired with Joshua, a newly arrived police officer looking for a fresh start of his own, an act of service begins changing both of their lives.",
+    "synopsis": "​In Making Christmas Bright, Kay, is a devoted middle school teacher in the close-knit Kentucky town of White Grove who believes God has opened the door to an exciting new career and a new life in the city. With Christmas approaching, Kay is preparing to leave behind her father, lifelong friends, students and the community she has always called home. But when she volunteers for her small-town church’s “Christmas Angel Tree” project, and is paired with Joshua, a newly arrived police officer looking for a fresh start of his own, an act of service begins changing both of their lives.",
     "posterUrl": "",
     "cast": [
       {
@@ -169937,13 +170008,61 @@ export const MOVIES: Movie[] = [
         "profileUrl": "/images/people/934219.webp",
         "order": 1,
         "birthday": "1982-02-08"
+      },
+      {
+        "actorId": "1789652",
+        "name": "Steven Briggs",
+        "character": "Grayson",
+        "slug": "steven-briggs",
+        "tmdbPersonId": 1789652,
+        "profileUrl": "/images/people/1789652.webp",
+        "order": 2
+      },
+      {
+        "actorId": "6544025",
+        "name": "Sawyer Guinn",
+        "character": "Everett",
+        "slug": "sawyer-guinn",
+        "tmdbPersonId": 6544025,
+        "order": 3
+      },
+      {
+        "actorId": "1398054",
+        "name": "Allie Meixner",
+        "character": "Paige",
+        "slug": "allie-meixner",
+        "tmdbPersonId": 1398054,
+        "order": 4
+      },
+      {
+        "actorId": "134396",
+        "name": "Galadriel Stineman",
+        "character": "Tricia",
+        "slug": "galadriel-stineman",
+        "tmdbPersonId": 134396,
+        "profileUrl": "/images/people/134396.webp",
+        "order": 5,
+        "birthday": "1990-10-20"
       }
     ],
     "tmdbId": 1776687,
     "isComingSoon": true,
     "status": "coming-soon",
     "originalTitle": "Making Christmas Bright",
-    "genres": [],
+    "genres": [
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      },
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
     "releaseDates": [
       {
         "country": "BR",
@@ -169953,13 +170072,21 @@ export const MOVIES: Movie[] = [
         "note": "Great American Family"
       }
     ],
-    "crew": [],
+    "crew": [
+      {
+        "id": 6544024,
+        "name": "Samuel Louis",
+        "job": "Director",
+        "department": "Directing",
+        "creditId": "6acd25700e022c0a6e8e7d2d"
+      }
+    ],
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-10-12T15:48:48.526Z",
+    "tmdbUpdatedAt": "2026-10-13T00:53:00.591Z",
     "premiereDate": "2026-12-12",
-    "tmdbFetchedAt": "2026-10-12T15:48:48.526Z",
+    "tmdbFetchedAt": "2026-10-13T00:53:00.591Z",
     "imdbId": "tt46668597",
     "keywords": [
       {
@@ -169970,7 +170097,8 @@ export const MOVIES: Movie[] = [
         "name": "small-town",
         "evidence": "small-town"
       }
-    ]
+    ],
+    "director": "Samuel Louis"
   },
   {
     "id": "gaf-2026-a-christmas-prayer-tradition",
@@ -170069,13 +170197,29 @@ export const MOVIES: Movie[] = [
         "note": "Great American Family"
       }
     ],
-    "crew": [],
+    "crew": [
+      {
+        "id": 1197196,
+        "name": "Nicholas Humphries",
+        "job": "Director",
+        "department": "Directing",
+        "creditId": "6acd2064bf509eeeaed5ae3d"
+      },
+      {
+        "id": 1694961,
+        "name": "Ansley Gordon",
+        "job": "Writer",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/ri0s9fvhxZ6jiQad9h2gESH7D5H.jpg",
+        "creditId": "6acd206bc19bbe44e2659f80"
+      }
+    ],
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-10-12T15:48:49.624Z",
+    "tmdbUpdatedAt": "2026-10-13T00:53:01.090Z",
     "premiereDate": "2026-10-24",
-    "tmdbFetchedAt": "2026-10-12T15:48:49.624Z",
+    "tmdbFetchedAt": "2026-10-13T00:53:01.090Z",
     "alternativeTitles": [
       {
         "title": "A Christmas Prayer 2",
@@ -170083,7 +170227,8 @@ export const MOVIES: Movie[] = [
       }
     ],
     "keywords": [],
-    "backdropUrl": "/images/backdrops/1754943.jpg"
+    "backdropUrl": "/images/backdrops/1754943.jpg",
+    "director": "Nicholas Humphries"
   },
   {
     "id": "gaf-2026-christmas-by-the-spoonful",
@@ -170260,9 +170405,9 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-10-12T15:48:49.832Z",
+    "tmdbUpdatedAt": "2026-10-13T00:53:01.266Z",
     "premiereDate": "2026-12-06",
-    "tmdbFetchedAt": "2026-10-12T15:48:49.832Z",
+    "tmdbFetchedAt": "2026-10-13T00:53:01.266Z",
     "alternativeTitles": [
       {
         "title": "A Culinary Christmas",
@@ -170363,8 +170508,8 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-10-12T15:48:50.449Z",
-    "tmdbFetchedAt": "2026-10-12T15:48:50.449Z",
+    "tmdbUpdatedAt": "2026-10-13T00:53:01.631Z",
+    "tmdbFetchedAt": "2026-10-13T00:53:01.631Z",
     "premiereDate": "2026-11-05",
     "director": "Nanea Miyata",
     "keywords": [
@@ -170496,8 +170641,8 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-10-12T15:48:51.049Z",
-    "tmdbFetchedAt": "2026-10-12T15:48:51.049Z",
+    "tmdbUpdatedAt": "2026-10-13T00:53:01.958Z",
+    "tmdbFetchedAt": "2026-10-13T00:53:01.958Z",
     "director": "Cathy Lynn Yonek",
     "premiereDate": "2026-11-06",
     "keywords": [
@@ -192383,8 +192528,8 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-10-12T15:48:51.258Z",
-    "tmdbFetchedAt": "2026-10-12T15:48:51.258Z",
+    "tmdbUpdatedAt": "2026-10-13T00:53:02.129Z",
+    "tmdbFetchedAt": "2026-10-13T00:53:02.129Z",
     "director": "Marni Banack",
     "premiereDate": "2026-12-03",
     "keywords": [
@@ -192517,8 +192662,8 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-10-12T15:48:51.919Z",
-    "tmdbFetchedAt": "2026-10-12T15:48:51.919Z",
+    "tmdbUpdatedAt": "2026-10-13T00:53:02.493Z",
+    "tmdbFetchedAt": "2026-10-13T00:53:02.493Z",
     "director": "Sean Stencil",
     "premiereDate": "2026-12-17",
     "keywords": [
@@ -192751,8 +192896,8 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-10-12T15:48:52.602Z",
-    "tmdbFetchedAt": "2026-10-12T15:48:52.602Z",
+    "tmdbUpdatedAt": "2026-10-13T00:53:02.821Z",
+    "tmdbFetchedAt": "2026-10-13T00:53:02.821Z",
     "director": "Peter Sullivan",
     "premiereDate": "2026-12-10",
     "keywords": [

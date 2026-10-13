@@ -4343,6 +4343,19 @@
     "tmdbUpdatedAt": "2026-09-20T16:21:07.907Z"
   },
   {
+    "id": "1398054",
+    "slug": "allie-meixner",
+    "name": "Allie Meixner",
+    "tmdbPersonId": 1398054,
+    "biography": "A Pittsburgh native, Allie became interested in show business at a very young age. She grew up taking master classes from teachers all across the country.  At the age of 17, Allie moved to New York City to pursue her dreams of performing.  Three months later she was cast as the lead in the Tony Award winning musical, Contact, as the “girl in the yellow dress.”  Allie has since accumulated an impressive list of credits in her young career which include touring with Toni Braxton, performing live on numerous episodes of Saturday Night Live, featured as the head cheerleader in the movie, Across the Universe, and has danced with Beyonce on VH1 Fashion Rocks, MTV Video Music Awards, a L’oreal Commercial, and was seen in Macy’s stores all across the country in the Dereon print campaign, Beyonce’s clothing company.  She also had the chance to create the role of “Lady Cross” in Tony award winning director, Jerry Mitchell’s, production of Peep Show, featuring Mel B, Kelly Monaco, and Holly Madison.  Allie also can be seen in Katy Perry’s California Gurls music video and was featured in the new 98 Degrees comeback video, Microphone.  She most recently was featured in a Sony and a national GM commercial and has appeared as a sketch performer on the Tonight Show w/ Jay Leno.  She just finished playing \"young groupie\" in the Las Vegas Production of ROCK of AGES and this summer will be featured in the new Step Up 5 movie.",
+    "imdbPersonId": "nm3057720",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 7,
+    "tmdbUpdatedAt": "2026-10-13T00:53:03.212Z",
+    "tmdbFetchedAt": "2026-10-13T00:53:03.212Z"
+  },
+  {
     "id": "allie-santo-domingo",
     "slug": "allie-santo-domingo",
     "name": "Allie Santo Domingo",
@@ -36039,6 +36052,18 @@
     "tmdbUpdatedAt": "2026-09-22T20:53:14.002Z"
   },
   {
+    "id": "1938012",
+    "slug": "elena-zaretsky",
+    "name": "Elena Zaretsky",
+    "tmdbPersonId": 1938012,
+    "imdbPersonId": "nm0953451",
+    "gender": "Female",
+    "knownForDepartment": "Writing",
+    "knownCredits": 6,
+    "tmdbUpdatedAt": "2026-10-13T00:53:03.042Z",
+    "tmdbFetchedAt": "2026-10-13T00:53:03.042Z"
+  },
+  {
     "id": "elfina-luk",
     "slug": "elfina-luk",
     "name": "Elfina Luk",
@@ -42093,6 +42118,26 @@
     "knownForDepartment": "Acting",
     "knownCredits": 6,
     "tmdbUpdatedAt": "2026-09-20T16:19:32.883Z"
+  },
+  {
+    "id": "134396",
+    "slug": "galadriel-stineman",
+    "name": "Galadriel Stineman",
+    "tmdbPersonId": 134396,
+    "photoUrl": "/images/people/134396.webp",
+    "profileUrl": "/images/people/134396.webp",
+    "birthday": "1990-10-20",
+    "placeOfBirth": "Cincinnati, Ohio, USA",
+    "biography": "Galadriel Stineman is an American actress and model. She is best known for her roles as Gwen Tennyson in Ben 10: Alien Swarm and as Cassidy Finch in The Middle.",
+    "imdbPersonId": "nm3004687",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 41,
+    "instagramId": "galaelf",
+    "twitterId": "galaelf",
+    "facebookId": "OfficialGaladriel",
+    "tmdbUpdatedAt": "2026-10-13T00:53:03.994Z",
+    "tmdbFetchedAt": "2026-10-13T00:53:03.994Z"
   },
   {
     "id": "105988",
@@ -53675,6 +53720,16 @@
     "knownForDepartment": "Acting",
     "knownCredits": 7,
     "tmdbUpdatedAt": "2026-09-21T12:59:49.069Z"
+  },
+  {
+    "id": "6544020",
+    "slug": "jeff-kniola",
+    "name": "Jeff Kniola",
+    "tmdbPersonId": 6544020,
+    "knownForDepartment": "Acting",
+    "knownCredits": 1,
+    "tmdbUpdatedAt": "2026-10-13T00:53:03.049Z",
+    "tmdbFetchedAt": "2026-10-13T00:53:03.049Z"
   },
   {
     "id": "jeff-marchelletta",
@@ -97550,6 +97605,17 @@
     "tmdbUpdatedAt": "2026-09-20T16:19:17.374Z"
   },
   {
+    "id": "1085651",
+    "slug": "randy-apostle",
+    "name": "Randy Apostle",
+    "tmdbPersonId": 1085651,
+    "imdbPersonId": "nm0032140",
+    "knownForDepartment": "Acting",
+    "knownCredits": 8,
+    "tmdbUpdatedAt": "2026-10-13T00:53:03.043Z",
+    "tmdbFetchedAt": "2026-10-13T00:53:03.043Z"
+  },
+  {
     "id": "64736",
     "slug": "randy-cheveldave",
     "name": "Randy Cheveldave",
@@ -104190,6 +104256,27 @@
     "tmdbUpdatedAt": "2026-09-21T13:14:30.444Z"
   },
   {
+    "id": "6544019",
+    "slug": "samuel-lewis",
+    "name": "Samuel Lewis",
+    "tmdbPersonId": 6544019,
+    "imdbPersonId": "nm18816340",
+    "knownForDepartment": "Directing",
+    "knownCredits": 1,
+    "tmdbUpdatedAt": "2026-10-13T00:53:03.042Z",
+    "tmdbFetchedAt": "2026-10-13T00:53:03.042Z"
+  },
+  {
+    "id": "6544024",
+    "slug": "samuel-louis",
+    "name": "Samuel Louis",
+    "tmdbPersonId": 6544024,
+    "knownForDepartment": "Directing",
+    "knownCredits": 1,
+    "tmdbUpdatedAt": "2026-10-13T00:53:03.216Z",
+    "tmdbFetchedAt": "2026-10-13T00:53:03.216Z"
+  },
+  {
     "id": "4621677",
     "slug": "samuel-pineda",
     "name": "Samuel Pineda",
@@ -105602,6 +105689,16 @@
     "knownForDepartment": "Acting",
     "knownCredits": 2,
     "tmdbUpdatedAt": "2026-09-20T16:19:37.410Z"
+  },
+  {
+    "id": "6544025",
+    "slug": "sawyer-guinn",
+    "name": "Sawyer Guinn",
+    "tmdbPersonId": 6544025,
+    "knownForDepartment": "Acting",
+    "knownCredits": 1,
+    "tmdbUpdatedAt": "2026-10-13T00:53:03.213Z",
+    "tmdbFetchedAt": "2026-10-13T00:53:03.213Z"
   },
   {
     "id": "scarlett-blum",
@@ -111302,6 +111399,20 @@
     "tmdbFetchedAt": "2026-10-05T08:19:44.838Z"
   },
   {
+    "id": "1789652",
+    "slug": "steven-briggs",
+    "name": "Steven Briggs",
+    "tmdbPersonId": 1789652,
+    "photoUrl": "/images/people/1789652.webp",
+    "profileUrl": "/images/people/1789652.webp",
+    "imdbPersonId": "nm2753184",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 8,
+    "tmdbUpdatedAt": "2026-10-13T00:53:04.035Z",
+    "tmdbFetchedAt": "2026-10-13T00:53:04.035Z"
+  },
+  {
     "id": "230868",
     "slug": "steven-christopher-parker",
     "name": "Steven Christopher Parker",
@@ -111758,8 +111869,9 @@
     "tmdbPersonId": 4867604,
     "imdbPersonId": "nm1846878",
     "knownForDepartment": "Writing",
-    "knownCredits": 3,
-    "tmdbUpdatedAt": "2026-09-22T20:53:29.712Z"
+    "knownCredits": 4,
+    "tmdbUpdatedAt": "2026-10-13T00:53:03.042Z",
+    "tmdbFetchedAt": "2026-10-13T00:53:03.042Z"
   },
   {
     "id": "sunita-prasad",
