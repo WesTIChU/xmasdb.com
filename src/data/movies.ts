@@ -10281,6 +10281,10 @@ export const MOVIES: Movie[] = [
       {
         "id": 7328,
         "name": "hanukkah"
+      },
+      {
+        "name": "lawyer",
+        "evidence": "lawyer"
       }
     ]
   },
@@ -10804,6 +10808,10 @@ export const MOVIES: Movie[] = [
       {
         "id": 272698,
         "name": "christmas romance"
+      },
+      {
+        "name": "lawyer",
+        "evidence": "lawyer"
       }
     ]
   },
@@ -13944,7 +13952,12 @@ export const MOVIES: Movie[] = [
     },
     "tmdbUpdatedAt": "2026-10-15T08:17:23.674Z",
     "tmdbFetchedAt": "2026-10-15T08:17:23.674Z",
-    "keywords": []
+    "keywords": [
+      {
+        "name": "ex-husband",
+        "evidence": "ex-husband"
+      }
+    ]
   },
   {
     "id": "hallmark-2024-the-finnish-line",
@@ -18588,6 +18601,10 @@ export const MOVIES: Movie[] = [
       {
         "id": 207317,
         "name": "christmas"
+      },
+      {
+        "name": "journalist",
+        "evidence": "journalist"
       }
     ],
     "certification": {
@@ -19061,7 +19078,12 @@ export const MOVIES: Movie[] = [
     },
     "tmdbUpdatedAt": "2026-10-15T08:17:38.319Z",
     "tmdbFetchedAt": "2026-10-15T08:17:38.319Z",
-    "keywords": [],
+    "keywords": [
+      {
+        "name": "realtor",
+        "evidence": "realtor"
+      }
+    ],
     "certification": {
       "value": "G",
       "country": "US",
@@ -19293,6 +19315,14 @@ export const MOVIES: Movie[] = [
       {
         "id": 207317,
         "name": "christmas"
+      },
+      {
+        "name": "artist",
+        "evidence": "artist"
+      },
+      {
+        "name": "lawyer",
+        "evidence": "lawyer"
       }
     ],
     "certification": {
@@ -24969,6 +24999,10 @@ export const MOVIES: Movie[] = [
       {
         "name": "recipe",
         "evidence": "recipe"
+      },
+      {
+        "name": "small-town",
+        "evidence": "small-town"
       }
     ],
     "certification": {
@@ -30825,6 +30859,10 @@ export const MOVIES: Movie[] = [
       {
         "id": 207317,
         "name": "christmas"
+      },
+      {
+        "name": "teacher",
+        "evidence": "teacher"
       }
     ],
     "certification": {
@@ -31534,6 +31572,10 @@ export const MOVIES: Movie[] = [
       {
         "id": 353864,
         "name": "hallmark"
+      },
+      {
+        "name": "self-discovery",
+        "evidence": "self-discovery"
       }
     ],
     "certification": {
@@ -32836,6 +32878,14 @@ export const MOVIES: Movie[] = [
       {
         "id": 207317,
         "name": "christmas"
+      },
+      {
+        "name": "father-figure",
+        "evidence": "father-figure"
+      },
+      {
+        "name": "long-lost",
+        "evidence": "long-lost"
       }
     ],
     "certification": {
@@ -36174,6 +36224,10 @@ export const MOVIES: Movie[] = [
       {
         "id": 207317,
         "name": "christmas"
+      },
+      {
+        "name": "hotel",
+        "evidence": "hotel's"
       }
     ],
     "certification": {
@@ -39028,6 +39082,10 @@ export const MOVIES: Movie[] = [
       {
         "id": 207317,
         "name": "christmas"
+      },
+      {
+        "name": "restaurant",
+        "evidence": "restaurant"
       }
     ],
     "certification": {
@@ -39365,6 +39423,10 @@ export const MOVIES: Movie[] = [
       {
         "id": 207317,
         "name": "christmas"
+      },
+      {
+        "name": "restaurant",
+        "evidence": "restaurant"
       }
     ],
     "certification": {
@@ -46014,6 +46076,10 @@ export const MOVIES: Movie[] = [
       {
         "id": 207317,
         "name": "christmas"
+      },
+      {
+        "name": "wedding",
+        "evidence": "Wedding"
       }
     ]
   },
@@ -46296,6 +46362,10 @@ export const MOVIES: Movie[] = [
       {
         "id": 7328,
         "name": "hanukkah"
+      },
+      {
+        "name": "restaurant",
+        "evidence": "restaurant"
       }
     ]
   },
@@ -46889,6 +46959,10 @@ export const MOVIES: Movie[] = [
       {
         "id": 207317,
         "name": "christmas"
+      },
+      {
+        "name": "city-wide",
+        "evidence": "city-wide"
       }
     ],
     "certification": {
@@ -53688,6 +53762,10 @@ export const MOVIES: Movie[] = [
       {
         "name": "architect",
         "evidence": "architect"
+      },
+      {
+        "name": "chef",
+        "evidence": "chef"
       }
     ]
   },
@@ -54183,6 +54261,10 @@ export const MOVIES: Movie[] = [
       {
         "id": 207317,
         "name": "christmas"
+      },
+      {
+        "name": "architect",
+        "evidence": "architect"
       }
     ]
   },
@@ -57545,6 +57627,10 @@ export const MOVIES: Movie[] = [
       {
         "id": 207317,
         "name": "christmas"
+      },
+      {
+        "name": "reporter",
+        "evidence": "reporter"
       }
     ]
   },
@@ -60583,6 +60669,10 @@ export const MOVIES: Movie[] = [
       {
         "id": 207317,
         "name": "christmas"
+      },
+      {
+        "name": "home-away-from-holiday-home",
+        "evidence": "home-away-from-holiday-home"
       }
     ],
     "certification": {
@@ -61156,6 +61246,10 @@ export const MOVIES: Movie[] = [
       {
         "id": 207317,
         "name": "christmas"
+      },
+      {
+        "name": "lawyer",
+        "evidence": "lawyer"
       }
     ]
   },
@@ -64535,6 +64629,10 @@ export const MOVIES: Movie[] = [
       {
         "id": 353864,
         "name": "hallmark"
+      },
+      {
+        "name": "journalist",
+        "evidence": "journalist"
       }
     ],
     "certification": {
@@ -65044,6 +65142,14 @@ export const MOVIES: Movie[] = [
       {
         "id": 207317,
         "name": "christmas"
+      },
+      {
+        "name": "baker",
+        "evidence": "baker"
+      },
+      {
+        "name": "restaurant",
+        "evidence": "restaurant"
       }
     ],
     "certification": {
@@ -68915,6 +69021,10 @@ export const MOVIES: Movie[] = [
       {
         "id": 207317,
         "name": "christmas"
+      },
+      {
+        "name": "recently-fired",
+        "evidence": "recently-fired"
       }
     ],
     "certification": {
@@ -74878,6 +74988,10 @@ export const MOVIES: Movie[] = [
       {
         "name": "fake relationship",
         "evidence": "pose as Ryan’s girlfriend and spend the holiday season getting to know his family"
+      },
+      {
+        "name": "gifts",
+        "evidence": "gifts"
       }
     ],
     "certification": {
@@ -76314,6 +76428,14 @@ export const MOVIES: Movie[] = [
       {
         "id": 272698,
         "name": "christmas romance"
+      },
+      {
+        "name": "chef",
+        "evidence": "chef"
+      },
+      {
+        "name": "small-town",
+        "evidence": "small-town"
       }
     ]
   },
@@ -76709,6 +76831,10 @@ export const MOVIES: Movie[] = [
       {
         "id": 207317,
         "name": "christmas"
+      },
+      {
+        "name": "artist",
+        "evidence": "artist"
       }
     ]
   },
@@ -77289,6 +77415,10 @@ export const MOVIES: Movie[] = [
       {
         "name": "realtor",
         "evidence": "realtor"
+      },
+      {
+        "name": "photographer",
+        "evidence": "photographer"
       }
     ]
   },
@@ -79273,6 +79403,10 @@ export const MOVIES: Movie[] = [
       {
         "id": 272698,
         "name": "christmas romance"
+      },
+      {
+        "name": "long-lost",
+        "evidence": "long-lost"
       }
     ]
   },
@@ -83094,6 +83228,14 @@ export const MOVIES: Movie[] = [
       {
         "id": 207317,
         "name": "christmas"
+      },
+      {
+        "name": "chef",
+        "evidence": "chef"
+      },
+      {
+        "name": "baker",
+        "evidence": "baker"
       }
     ],
     "certification": {
@@ -84844,6 +84986,10 @@ export const MOVIES: Movie[] = [
       {
         "id": 207317,
         "name": "christmas"
+      },
+      {
+        "name": "photographer",
+        "evidence": "Photographer"
       }
     ],
     "certification": {
@@ -85065,6 +85211,10 @@ export const MOVIES: Movie[] = [
       {
         "name": "family business",
         "evidence": "family restaurant"
+      },
+      {
+        "name": "artist",
+        "evidence": "artist"
       }
     ],
     "certification": {
@@ -85779,6 +85929,10 @@ export const MOVIES: Movie[] = [
       {
         "id": 207317,
         "name": "christmas"
+      },
+      {
+        "name": "artist",
+        "evidence": "artist"
       }
     ],
     "certification": {
@@ -91368,6 +91522,10 @@ export const MOVIES: Movie[] = [
       {
         "id": 207317,
         "name": "christmas"
+      },
+      {
+        "name": "teacher",
+        "evidence": "teacher"
       }
     ]
   },
@@ -94946,6 +95104,10 @@ export const MOVIES: Movie[] = [
       {
         "id": 258533,
         "name": "gay theme"
+      },
+      {
+        "name": "lawyer",
+        "evidence": "lawyer"
       }
     ]
   },
@@ -98617,6 +98779,10 @@ export const MOVIES: Movie[] = [
       {
         "id": 207317,
         "name": "christmas"
+      },
+      {
+        "name": "snow-cast",
+        "evidence": "snow-cast"
       }
     ],
     "certification": {
@@ -100826,6 +100992,10 @@ export const MOVIES: Movie[] = [
       {
         "name": "dessert shop",
         "evidence": "dessert shop"
+      },
+      {
+        "name": "chef",
+        "evidence": "chef"
       }
     ],
     "certification": {
@@ -102434,6 +102604,10 @@ export const MOVIES: Movie[] = [
       {
         "name": "single-father",
         "evidence": "single-father"
+      },
+      {
+        "name": "architect",
+        "evidence": "architect"
       }
     ],
     "certification": {
@@ -103848,6 +104022,10 @@ export const MOVIES: Movie[] = [
       {
         "id": 207317,
         "name": "christmas"
+      },
+      {
+        "name": "family-run",
+        "evidence": "family-run"
       }
     ],
     "certification": {
@@ -109231,6 +109409,10 @@ export const MOVIES: Movie[] = [
       {
         "name": "chef",
         "evidence": "chef"
+      },
+      {
+        "name": "restaurant",
+        "evidence": "restaurant"
       }
     ],
     "certification": {
@@ -109633,6 +109815,10 @@ export const MOVIES: Movie[] = [
       {
         "id": 207317,
         "name": "christmas"
+      },
+      {
+        "name": "photographer",
+        "evidence": "photographer"
       }
     ]
   },
@@ -110945,6 +111131,10 @@ export const MOVIES: Movie[] = [
       {
         "name": "chef",
         "evidence": "chef"
+      },
+      {
+        "name": "restaurant",
+        "evidence": "restaurant"
       }
     ],
     "certification": {
@@ -113268,6 +113458,10 @@ export const MOVIES: Movie[] = [
       {
         "id": 207317,
         "name": "christmas"
+      },
+      {
+        "name": "year-round",
+        "evidence": "year-round"
       }
     ]
   },
@@ -114474,6 +114668,10 @@ export const MOVIES: Movie[] = [
       {
         "name": "restaurant",
         "evidence": "restaurant"
+      },
+      {
+        "name": "chef",
+        "evidence": "Chef"
       }
     ]
   },
@@ -114713,6 +114911,10 @@ export const MOVIES: Movie[] = [
       {
         "name": "small-town",
         "evidence": "small-town"
+      },
+      {
+        "name": "journalist",
+        "evidence": "journalist"
       }
     ]
   },
@@ -121864,6 +122066,10 @@ export const MOVIES: Movie[] = [
       {
         "id": 207317,
         "name": "christmas"
+      },
+      {
+        "name": "reporter",
+        "evidence": "reporter"
       }
     ]
   },
@@ -122159,6 +122365,10 @@ export const MOVIES: Movie[] = [
       {
         "name": "wedding",
         "evidence": "wedding"
+      },
+      {
+        "name": "house-lighting",
+        "evidence": "house-lighting"
       }
     ]
   },
@@ -122415,6 +122625,10 @@ export const MOVIES: Movie[] = [
       {
         "id": 207317,
         "name": "christmas"
+      },
+      {
+        "name": "lawyer",
+        "evidence": "lawyer"
       }
     ]
   },
@@ -123185,6 +123399,10 @@ export const MOVIES: Movie[] = [
       {
         "id": 207317,
         "name": "christmas"
+      },
+      {
+        "name": "year-round",
+        "evidence": "year-round"
       }
     ],
     "certification": {
@@ -123860,6 +124078,10 @@ export const MOVIES: Movie[] = [
       {
         "id": 207317,
         "name": "christmas"
+      },
+      {
+        "name": "break-up",
+        "evidence": "break-up"
       }
     ]
   },
@@ -127543,6 +127765,14 @@ export const MOVIES: Movie[] = [
       {
         "name": "break-up",
         "evidence": "break-up"
+      },
+      {
+        "name": "lawyer",
+        "evidence": "lawyer"
+      },
+      {
+        "name": "Christmas market",
+        "evidence": "annual Christmas Market"
       }
     ]
   },
@@ -130646,6 +130876,10 @@ export const MOVIES: Movie[] = [
       {
         "name": "bake-off",
         "evidence": "bake-off"
+      },
+      {
+        "name": "co-manage",
+        "evidence": "co-manage"
       }
     ],
     "certification": {
@@ -132040,6 +132274,10 @@ export const MOVIES: Movie[] = [
       {
         "name": "journalist",
         "evidence": "journalist"
+      },
+      {
+        "name": "gift",
+        "evidence": "gift"
       }
     ]
   },
@@ -138535,6 +138773,10 @@ export const MOVIES: Movie[] = [
       {
         "id": 207317,
         "name": "christmas"
+      },
+      {
+        "name": "co-worker",
+        "evidence": "co-worker"
       }
     ],
     "certification": {
@@ -141643,6 +141885,10 @@ export const MOVIES: Movie[] = [
       {
         "id": 207317,
         "name": "christmas"
+      },
+      {
+        "name": "lawyers",
+        "evidence": "lawyers"
       }
     ],
     "certification": {
@@ -145007,6 +145253,10 @@ export const MOVIES: Movie[] = [
       {
         "id": 207317,
         "name": "christmas"
+      },
+      {
+        "name": "stay-at-home",
+        "evidence": "stay-at-home"
       }
     ]
   },
@@ -145120,7 +145370,12 @@ export const MOVIES: Movie[] = [
     "tmdbUpdatedAt": "2026-10-15T08:25:08.975Z",
     "tmdbFetchedAt": "2026-10-15T08:25:08.975Z",
     "backdropUrl": "/images/backdrops/1772765.jpg",
-    "keywords": [],
+    "keywords": [
+      {
+        "name": "free-spirited",
+        "evidence": "free-spirited"
+      }
+    ],
     "director": "Jeff Beesley"
   },
   {
@@ -145527,7 +145782,12 @@ export const MOVIES: Movie[] = [
     "tmdbUpdatedAt": "2026-10-15T08:25:10.739Z",
     "backdropUrl": "/images/backdrops/1773195.jpg",
     "tmdbFetchedAt": "2026-10-15T08:25:10.739Z",
-    "keywords": []
+    "keywords": [
+      {
+        "name": "reporter",
+        "evidence": "reporter"
+      }
+    ]
   },
   {
     "id": "hallmark-2026-forgotten-holiday",
@@ -145703,6 +145963,10 @@ export const MOVIES: Movie[] = [
       {
         "name": "alternate-universe",
         "evidence": "alternate-universe"
+      },
+      {
+        "name": "ornament",
+        "evidence": "ornament"
       }
     ],
     "director": "Jerry Ciccoritti"
@@ -146403,7 +146667,12 @@ export const MOVIES: Movie[] = [
       }
     ],
     "director": "Peter Benson",
-    "keywords": []
+    "keywords": [
+      {
+        "name": "ranch",
+        "evidence": "ranch"
+      }
+    ]
   },
   {
     "id": "hallmark-2026-the-nights-before-christmas",
@@ -146727,6 +146996,14 @@ export const MOVIES: Movie[] = [
       {
         "name": "veterinarian",
         "evidence": "veterinarian"
+      },
+      {
+        "name": "family-run",
+        "evidence": "family-run"
+      },
+      {
+        "name": "tight-knit",
+        "evidence": "tight-knit"
       }
     ]
   },
@@ -147270,7 +147547,16 @@ export const MOVIES: Movie[] = [
     },
     "tmdbUpdatedAt": "2026-10-15T08:25:16.943Z",
     "tmdbFetchedAt": "2026-10-15T08:25:16.943Z",
-    "keywords": []
+    "keywords": [
+      {
+        "name": "chef",
+        "evidence": "chef"
+      },
+      {
+        "name": "photographer",
+        "evidence": "photographer"
+      }
+    ]
   },
   {
     "id": "hallmark-2026-holiday-ever-after-a-disney-world-wish-come-true",
@@ -147541,7 +147827,12 @@ export const MOVIES: Movie[] = [
     },
     "tmdbUpdatedAt": "2026-10-15T08:25:17.708Z",
     "tmdbFetchedAt": "2026-10-15T08:25:17.708Z",
-    "keywords": []
+    "keywords": [
+      {
+        "name": "teacher",
+        "evidence": "teacher"
+      }
+    ]
   },
   {
     "id": "hallmark-2026-eight-nights-for-love",
@@ -147990,7 +148281,12 @@ export const MOVIES: Movie[] = [
     },
     "tmdbUpdatedAt": "2026-10-15T08:25:18.224Z",
     "tmdbFetchedAt": "2026-10-15T08:25:18.224Z",
-    "keywords": []
+    "keywords": [
+      {
+        "name": "ornament",
+        "evidence": "ornament"
+      }
+    ]
   },
   {
     "id": "hallmark-2026-a-grand-biltmore-christmas",
@@ -149997,7 +150293,12 @@ export const MOVIES: Movie[] = [
         "country": "US"
       }
     ],
-    "keywords": [],
+    "keywords": [
+      {
+        "name": "reporter",
+        "evidence": "reporter"
+      }
+    ],
     "networkPremiereDate": "2025-11-08",
     "voteAverage": 6.2
   },
@@ -156062,6 +156363,10 @@ export const MOVIES: Movie[] = [
       {
         "name": "Christmas market",
         "evidence": "Christmas market"
+      },
+      {
+        "name": "half-sister",
+        "evidence": "half-sister"
       }
     ]
   },
@@ -156281,6 +156586,14 @@ export const MOVIES: Movie[] = [
       {
         "id": 207317,
         "name": "christmas"
+      },
+      {
+        "name": "reporter",
+        "evidence": "reporter"
+      },
+      {
+        "name": "gift",
+        "evidence": "gift"
       }
     ],
     "certification": {
@@ -162715,6 +163028,10 @@ export const MOVIES: Movie[] = [
       {
         "id": 207317,
         "name": "christmas"
+      },
+      {
+        "name": "parade",
+        "evidence": "Parade"
       }
     ]
   },
@@ -163593,6 +163910,10 @@ export const MOVIES: Movie[] = [
       {
         "id": 230818,
         "name": "secret santa"
+      },
+      {
+        "name": "photographer",
+        "evidence": "photographer"
       }
     ]
   },
@@ -164835,6 +165156,10 @@ export const MOVIES: Movie[] = [
       {
         "id": 207317,
         "name": "christmas"
+      },
+      {
+        "name": "lawyer",
+        "evidence": "lawyer"
       }
     ]
   },
@@ -166189,7 +166514,12 @@ export const MOVIES: Movie[] = [
     "tmdbUpdatedAt": "2026-10-15T08:26:16.037Z",
     "premiereDate": "2025-11-16",
     "tmdbFetchedAt": "2026-10-15T08:26:16.037Z",
-    "keywords": []
+    "keywords": [
+      {
+        "name": "ranch",
+        "evidence": "ranch"
+      }
+    ]
   },
   {
     "id": "uptv-2025-a-royal-christmas-hope",
@@ -166432,7 +166762,12 @@ export const MOVIES: Movie[] = [
     "tmdbUpdatedAt": "2026-10-15T08:26:16.942Z",
     "premiereDate": "2025-11-30",
     "tmdbFetchedAt": "2026-10-15T08:26:16.942Z",
-    "keywords": []
+    "keywords": [
+      {
+        "name": "chef",
+        "evidence": "chef’s"
+      }
+    ]
   },
   {
     "id": "uptv-2025-a-christmas-murder-mystery",
@@ -166906,7 +167241,12 @@ export const MOVIES: Movie[] = [
     "tmdbUpdatedAt": "2026-10-15T08:26:18.947Z",
     "premiereDate": "2023-12-25",
     "tmdbFetchedAt": "2026-10-15T08:26:18.947Z",
-    "keywords": []
+    "keywords": [
+      {
+        "name": "singer-songwriter",
+        "evidence": "singer-songwriter"
+      }
+    ]
   },
   {
     "id": "uptv-2023-christmas-with-the-knightlys",
@@ -167321,7 +167661,12 @@ export const MOVIES: Movie[] = [
         "country": "US"
       }
     ],
-    "keywords": [],
+    "keywords": [
+      {
+        "name": "restaurant",
+        "evidence": "restaurant"
+      }
+    ],
     "director": "Jody Margolin Hahn"
   },
   {
@@ -168348,6 +168693,10 @@ export const MOVIES: Movie[] = [
       {
         "name": "photographer",
         "evidence": "photographer"
+      },
+      {
+        "name": "small-town",
+        "evidence": "small-town"
       }
     ],
     "certification": {
@@ -168655,6 +169004,10 @@ export const MOVIES: Movie[] = [
       {
         "id": 207317,
         "name": "christmas"
+      },
+      {
+        "name": "not-so-jolly",
+        "evidence": "not-so-jolly"
       }
     ]
   },
@@ -171204,6 +171557,10 @@ export const MOVIES: Movie[] = [
       {
         "id": 187056,
         "name": "woman director"
+      },
+      {
+        "name": "family business",
+        "evidence": "family business"
       }
     ]
   },
@@ -174206,6 +174563,10 @@ export const MOVIES: Movie[] = [
       {
         "id": 207317,
         "name": "christmas"
+      },
+      {
+        "name": "journalist",
+        "evidence": "journalist"
       }
     ],
     "certification": {
@@ -177529,6 +177890,10 @@ export const MOVIES: Movie[] = [
       {
         "id": 325782,
         "name": "cheerful"
+      },
+      {
+        "name": "lawyer",
+        "evidence": "lawyer"
       }
     ],
     "certification": {
@@ -178841,6 +179206,10 @@ export const MOVIES: Movie[] = [
       {
         "id": 207317,
         "name": "christmas"
+      },
+      {
+        "name": "doctor",
+        "evidence": "doctor"
       }
     ],
     "certification": {
@@ -183077,6 +183446,10 @@ export const MOVIES: Movie[] = [
       {
         "id": 207317,
         "name": "christmas"
+      },
+      {
+        "name": "ornament",
+        "evidence": "ornament"
       }
     ],
     "certification": {
@@ -185852,6 +186225,10 @@ export const MOVIES: Movie[] = [
       {
         "name": "mother-in-law",
         "evidence": "mother-in-law"
+      },
+      {
+        "name": "blue-collar",
+        "evidence": "blue-collar"
       }
     ],
     "certification": {
@@ -189254,6 +189631,10 @@ export const MOVIES: Movie[] = [
       {
         "name": "writer-turned-CEO",
         "evidence": "writer-turned-CEO"
+      },
+      {
+        "name": "photographer",
+        "evidence": "photographer"
       }
     ]
   },
@@ -191906,6 +192287,10 @@ export const MOVIES: Movie[] = [
       {
         "name": "equestrian-assisted",
         "evidence": "equestrian-assisted"
+      },
+      {
+        "name": "ranch",
+        "evidence": "Ranch"
       }
     ]
   },
@@ -194765,6 +195150,14 @@ export const MOVIES: Movie[] = [
       {
         "name": "Christmas market",
         "evidence": "beloved Christmas market"
+      },
+      {
+        "name": "artist",
+        "evidence": "artist's"
+      },
+      {
+        "name": "architect",
+        "evidence": "architect"
       }
     ]
   },
