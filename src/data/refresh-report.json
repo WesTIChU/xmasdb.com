@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-10-16T04:46:11.379Z",
+  "refreshedAt": "2026-10-16T11:41:59.702Z",
   "catalogueMovies": 827,
   "moviesWithTmdbIds": 827,
   "moviesSuccessfullyRefreshed": 57,
@@ -15,7 +15,7 @@
   "freshActors": 2728,
   "staleActors": 0,
   "legacyActorsAwaitingFreshnessTimestamp": 5525,
-  "freshImages": 44,
+  "freshImages": 46,
   "staleImages": 0,
   "legacyImagesAwaitingFreshnessTimestamp": 0,
   "oldestSuccessfulFetchAt": "2026-09-25T18:44:20.927Z",
