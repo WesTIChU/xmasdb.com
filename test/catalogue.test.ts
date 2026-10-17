@@ -120,7 +120,10 @@ const bebeWinansMovie = MOVIES.find((movie) => movie.id === 'lifetime-2024-bebe-
 assert.equal(bebeWinansMovie?.releaseDate, '2024-10-30', 'BeBe Winans’ We Three Kings keeps its canonical October release date');
 assert.ok(octoberCanonicalMovies.some((movie) => movie.id === bebeWinansMovie?.id), 'canonical October results include BeBe Winans’ We Three Kings');
 assert.equal(octoberThisMonth?.movies.length, 6, 'This Month should show up to six genuine October matches');
-const catalogueOrder = getCataloguePage(MOVIES, parseCatalogueQuery('?perPage=96')).movies;
+const catalogueOrder = getCataloguePage(MOVIES, {
+  ...parseCatalogueQuery('?perPage=96&year=2026'),
+  sort: 'catalogue',
+}).movies;
 const firstCollectionIndex = catalogueOrder.findIndex((movie) => movie.status !== 'coming-soon');
 assert.ok(firstCollectionIndex > 0);
 assert.ok(catalogueOrder.slice(0, firstCollectionIndex).every((movie) => movie.status === 'coming-soon'));

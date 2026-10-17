@@ -144830,8 +144830,8 @@ export const MOVIES: Movie[] = [
     "crew": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "status": "coming-soon",
-    "isComingSoon": true,
+    "status": "collection",
+    "isComingSoon": false,
     "links": {
       "tmdb": "https://www.themoviedb.org/movie/1772765",
       "imdb": "https://www.imdb.com/title/tt46069464/"

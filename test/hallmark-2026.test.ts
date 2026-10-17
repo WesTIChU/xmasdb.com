@@ -1,6 +1,6 @@
 import assert from 'assert';
 import { MOVIES } from '../src/data/movies';
-import { getMoviePremiereDateKey } from '../src/utils/catalogue-lifecycle';
+import { getMoviePremiereDateKey, isMoviePremierePast } from '../src/utils/catalogue-lifecycle';
 import { buildRadarrFeed } from '../src/utils/feeds';
 
 const hallmark2026TmdbIds = [
@@ -13,7 +13,13 @@ const hallmark2026TmdbIdSet = new Set(hallmark2026TmdbIds);
 
 const imported = MOVIES.filter((movie) => hallmark2026TmdbIdSet.has(movie.tmdbId));
 assert.strictEqual(imported.length, 34);
-assert.ok(imported.every((movie) => movie.brandId === 'hallmark' && movie.status === 'coming-soon' && movie.isComingSoon));
+const now = new Date();
+assert.ok(imported.every((movie) => movie.brandId === 'hallmark'));
+for (const movie of imported) {
+  const expectedStatus = isMoviePremierePast(movie, now) ? 'collection' : 'coming-soon';
+  assert.strictEqual(movie.status, expectedStatus, `${movie.title} has stale lifecycle status`);
+  assert.strictEqual(movie.isComingSoon, expectedStatus === 'coming-soon', `${movie.title} has inconsistent coming-soon flag`);
+}
 assert.strictEqual(new Set(imported.map((movie) => movie.tmdbId)).size, imported.length);
 for (const movie of imported) {
   assert.ok(movie.tmdbId > 0);
