@@ -35051,9 +35051,10 @@
     "imdbPersonId": "nm0449050",
     "gender": "Male",
     "knownForDepartment": "Acting",
-    "knownCredits": 20,
+    "knownCredits": 21,
     "instagramId": "duanekeogh",
-    "tmdbUpdatedAt": "2026-09-20T16:17:36.199Z"
+    "tmdbUpdatedAt": "2026-10-17T20:46:38.410Z",
+    "tmdbFetchedAt": "2026-10-17T20:46:38.410Z"
   },
   {
     "id": "113931",
@@ -36160,6 +36161,24 @@
       "Elan Gibson"
     ],
     "tmdbUpdatedAt": "2026-09-20T16:17:57.783Z"
+  },
+  {
+    "id": "1725473",
+    "slug": "elana-dunkelman",
+    "name": "Elana Dunkelman",
+    "tmdbPersonId": 1725473,
+    "photoUrl": "/images/people/1725473.webp",
+    "profileUrl": "/images/people/1725473.webp",
+    "birthday": "1986-07-11",
+    "placeOfBirth": "Montreal, Quebec, Canada",
+    "biography": "Elana Dunkelman is a Canadian actress based in Toronto, Ontario. She graduated from the Dawson College Professional Theatre Program (DOME) in 2006. In 2010, she obtained a BFA in Theatre from Concordia University.",
+    "imdbPersonId": "nm2412872",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 28,
+    "instagramId": "elanad",
+    "tmdbUpdatedAt": "2026-10-17T20:46:39.140Z",
+    "tmdbFetchedAt": "2026-10-17T20:46:39.140Z"
   },
   {
     "id": "eldon-hunter",
@@ -40448,6 +40467,16 @@
     "knownCredits": 5,
     "instagramId": "exzinia",
     "tmdbUpdatedAt": "2026-09-20T16:19:25.775Z"
+  },
+  {
+    "id": "5338200",
+    "slug": "eze-leno",
+    "name": "Eze Leno",
+    "tmdbPersonId": 5338200,
+    "knownForDepartment": "Acting",
+    "knownCredits": 2,
+    "tmdbUpdatedAt": "2026-10-17T20:46:38.131Z",
+    "tmdbFetchedAt": "2026-10-17T20:46:38.131Z"
   },
   {
     "id": "ezekiel-akindele",
@@ -105590,6 +105619,18 @@
     "knownForDepartment": "Acting",
     "knownCredits": 1,
     "tmdbUpdatedAt": "2026-09-22T09:34:07.839Z"
+  },
+  {
+    "id": "2281557",
+    "slug": "sarah-hillier",
+    "name": "Sarah Hillier",
+    "tmdbPersonId": 2281557,
+    "biography": "Sarah Hillier is an actress.",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 5,
+    "tmdbUpdatedAt": "2026-10-17T20:46:38.130Z",
+    "tmdbFetchedAt": "2026-10-17T20:46:38.130Z"
   },
   {
     "id": "sarah-jane-morris",
