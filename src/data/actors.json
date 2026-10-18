@@ -46187,8 +46187,9 @@
     "imdbPersonId": "nm5266198",
     "gender": "Female",
     "knownForDepartment": "Acting",
-    "knownCredits": 14,
-    "tmdbUpdatedAt": "2026-09-20T16:18:58.110Z"
+    "knownCredits": 15,
+    "tmdbUpdatedAt": "2026-10-18T04:50:16.673Z",
+    "tmdbFetchedAt": "2026-10-18T04:50:16.673Z"
   },
   {
     "id": "hannah-spear",
@@ -52821,8 +52822,9 @@
     "imdbPersonId": "nm6887442",
     "gender": "Male",
     "knownForDepartment": "Acting",
-    "knownCredits": 12,
-    "tmdbUpdatedAt": "2026-09-20T16:17:42.230Z"
+    "knownCredits": 13,
+    "tmdbUpdatedAt": "2026-10-18T04:50:17.024Z",
+    "tmdbFetchedAt": "2026-10-18T04:50:17.024Z"
   },
   {
     "id": "1445156",
@@ -97985,6 +97987,20 @@
     "tmdbFetchedAt": "2026-10-15T08:35:53.813Z"
   },
   {
+    "id": "3490666",
+    "slug": "raine-mateo",
+    "name": "Raine Mateo",
+    "tmdbPersonId": 3490666,
+    "photoUrl": "/images/people/3490666.webp",
+    "profileUrl": "/images/people/3490666.webp",
+    "biography": "Raine Mateo is known for Prom Pact (2023), Voicemails for Isabelle (2026) and Just in Time (2024).",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 9,
+    "tmdbUpdatedAt": "2026-10-18T04:50:17.394Z",
+    "tmdbFetchedAt": "2026-10-18T04:50:17.394Z"
+  },
+  {
     "id": "rainer-kahl",
     "slug": "rainer-kahl",
     "name": "Rainer Kahl",
@@ -113614,11 +113630,12 @@
     "imdbPersonId": "nm0319320",
     "gender": "Female",
     "knownForDepartment": "Acting",
-    "knownCredits": 43,
+    "knownCredits": 44,
     "instagramId": "realtammygillis",
     "twitterId": "RealTammyGillis",
     "facebookId": "TammyGillisOfficial",
-    "tmdbUpdatedAt": "2026-09-20T16:19:40.051Z"
+    "tmdbUpdatedAt": "2026-10-18T04:50:16.607Z",
+    "tmdbFetchedAt": "2026-10-18T04:50:16.607Z"
   },
   {
     "id": "tammy-isbell",
@@ -117319,8 +117336,9 @@
     "imdbPersonId": "nm0681918",
     "gender": "Male",
     "knownForDepartment": "Acting",
-    "knownCredits": 57,
-    "tmdbUpdatedAt": "2026-09-20T16:16:56.098Z"
+    "knownCredits": 58,
+    "tmdbUpdatedAt": "2026-10-18T04:50:16.668Z",
+    "tmdbFetchedAt": "2026-10-18T04:50:16.668Z"
   },
   {
     "id": "tom-putnam",
@@ -118488,12 +118506,13 @@
     "imdbPersonId": "nm6805740",
     "gender": "Male",
     "knownForDepartment": "Acting",
-    "knownCredits": 24,
+    "knownCredits": 25,
     "alsoKnownAs": [
       "Oliver Mahoro Smith"
     ],
     "instagramId": "trezzo_",
-    "tmdbUpdatedAt": "2026-09-20T16:17:41.685Z"
+    "tmdbUpdatedAt": "2026-10-18T04:50:16.734Z",
+    "tmdbFetchedAt": "2026-10-18T04:50:16.734Z"
   },
   {
     "id": "triana-browne",
