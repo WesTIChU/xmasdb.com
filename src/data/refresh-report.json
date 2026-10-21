@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-10-21T17:26:18.141Z",
+  "refreshedAt": "2026-10-21T21:52:24.729Z",
   "catalogueMovies": 827,
   "moviesWithTmdbIds": 827,
   "moviesSuccessfullyRefreshed": 53,
@@ -19,5 +19,5 @@
   "staleImages": 0,
   "legacyImagesAwaitingFreshnessTimestamp": 0,
   "oldestSuccessfulFetchAt": "2026-09-25T18:44:20.927Z",
-  "oldestSuccessfulFetchAgeDays": 25
+  "oldestSuccessfulFetchAgeDays": 26
 }
