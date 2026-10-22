@@ -3739,6 +3739,13 @@ export const PROTOTYPE_MOVIE_FINGERPRINTS: Readonly<Record<string, readonly Fing
     "baking-cooking",
     "unexpected-romance"
   ],
+  "lifetime-2026-checking-inn-for-christmas": [
+    "business-owner",
+    "career-vs-love",
+    "hotel-resort",
+    "resort",
+    "writer-journalist"
+  ],
   "lifetime-2026-christmas-everyday-married-and-bright": [
     "business-owner",
     "christmas-wedding",
