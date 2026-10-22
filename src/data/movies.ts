@@ -198599,6 +198599,215 @@ export const MOVIES: Movie[] = [
     "voteCount": 0,
     "tmdbUpdatedAt": "2026-10-22T16:46:11.498Z",
     "tmdbFetchedAt": "2026-10-22T16:46:11.498Z"
+  },
+  {
+    "id": "lifetime-2026-checking-inn-for-christmas",
+    "slug": "checking-inn-for-christmas",
+    "title": "Checking Inn for Christmas",
+    "year": 2026,
+    "brandId": "lifetime",
+    "releaseDate": "2026-11-28",
+    "synopsis": "Ambitious writer Claire visits a new Christmas retreat for a career-making article, but falling for owner Julian forces her to choose between chasing headlines and embracing the season's true magic and her heart.",
+    "posterUrl": "/images/posters/1741641.jpg",
+    "cast": [
+      {
+        "actorId": "2535",
+        "name": "Vivica A. Fox",
+        "character": "Amelia",
+        "slug": "vivica-a-fox",
+        "tmdbPersonId": 2535,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/oIzevp0dqjIxqRQ2VoSzjiDCBt.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "78740",
+        "name": "Jackée Harry",
+        "character": "Nikki",
+        "slug": "jack-e-harry",
+        "tmdbPersonId": 78740,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/h3DpIDfOrIdRx4EPKbuFc5LJzjC.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "5707903",
+        "name": "Juliah Cheree Taylor",
+        "character": "Claire",
+        "slug": "juliah-cheree-taylor",
+        "tmdbPersonId": 5707903,
+        "order": 2
+      },
+      {
+        "actorId": "58963",
+        "name": "Josh Henderson",
+        "character": "Julian",
+        "slug": "josh-henderson",
+        "tmdbPersonId": 58963,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/wF10rTNFfTUrTmflFOe9zYQ2a08.jpg",
+        "order": 3
+      },
+      {
+        "actorId": "25308",
+        "name": "Vanessa Angel",
+        "character": "Aunt Barb",
+        "slug": "vanessa-angel",
+        "tmdbPersonId": 25308,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/dqIe0d5Q8gtIpY9nWix4YFjLhcJ.jpg",
+        "order": 4
+      },
+      {
+        "actorId": "4667773",
+        "name": "Dan Hwang",
+        "character": "Ben",
+        "slug": "dan-hwang",
+        "tmdbPersonId": 4667773,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/vSxNPAJ39dAjZTb6vaBuHVYpiOO.jpg",
+        "order": 5
+      },
+      {
+        "actorId": "2584472",
+        "name": "BJ Williams",
+        "character": "Ethan",
+        "slug": "bj-williams",
+        "tmdbPersonId": 2584472,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/iSqST8UOwE7DlQaBHTb6neF1EPR.jpg",
+        "order": 6
+      },
+      {
+        "actorId": "60650",
+        "name": "Michael Paré",
+        "character": "Uncle Ed",
+        "slug": "michael-par",
+        "tmdbPersonId": 60650,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/jxrXW8OL6hwJgtJgePdMO5yHuAM.jpg",
+        "order": 7
+      },
+      {
+        "actorId": "21315",
+        "name": "Eric Roberts",
+        "character": "Richard",
+        "slug": "eric-roberts",
+        "tmdbPersonId": 21315,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/NiWg1TaUcal7xn1ZQeyA2dLd5F.jpg",
+        "order": 8
+      },
+      {
+        "actorId": "1585143",
+        "name": "Chelsea Gilson",
+        "character": "Robin",
+        "slug": "chelsea-gilson",
+        "tmdbPersonId": 1585143,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/hlq8a03SBGgkkw021T9mAUOO4RI.jpg",
+        "order": 9
+      },
+      {
+        "actorId": "5478573",
+        "name": "Harper Joseph",
+        "character": "Joanie Jean",
+        "slug": "harper-joseph",
+        "tmdbPersonId": 5478573,
+        "order": 10
+      },
+      {
+        "actorId": "1074639",
+        "name": "Gina Hirazumi",
+        "character": "Denise",
+        "slug": "gina-hirazumi",
+        "tmdbPersonId": 1074639,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/bTQUTShBYiR9yD3P424VpxYvKSY.jpg",
+        "order": 11
+      },
+      {
+        "actorId": "3538148",
+        "name": "Christopher Sky",
+        "character": "Lewis",
+        "slug": "christopher-sky",
+        "tmdbPersonId": 3538148,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/wTBFzhIPmblbKtc4kV9yODhu8s5.jpg",
+        "order": 12
+      },
+      {
+        "actorId": "4059037",
+        "name": "Shane Dorriz",
+        "character": "Ryan",
+        "slug": "shane-dorriz",
+        "tmdbPersonId": 4059037,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/8y3Y7srpd9RVk5KjFS5XZpKsnwh.jpg",
+        "order": 13
+      },
+      {
+        "actorId": "2599786",
+        "name": "Ariana Nicole George",
+        "character": "Katie",
+        "slug": "ariana-nicole-george",
+        "tmdbPersonId": 2599786,
+        "order": 14
+      },
+      {
+        "actorId": "6384347",
+        "name": "Ethan harrington",
+        "character": "William",
+        "slug": "ethan-harrington",
+        "tmdbPersonId": 6384347,
+        "order": 15
+      }
+    ],
+    "director": "David DeCoteau",
+    "tmdbId": 1741641,
+    "imdbId": "tt40870410",
+    "isComingSoon": true,
+    "status": "coming-soon",
+    "originalTitle": "Checking Inn for Christmas",
+    "alternativeTitles": [
+      {
+        "title": "A Perfect Christmas Kiss",
+        "country": "US"
+      }
+    ],
+    "genres": [
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      },
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "US",
+        "releaseDate": "2026-11-28T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "Lifetime"
+      }
+    ],
+    "crew": [
+      {
+        "id": 97618,
+        "name": "David DeCoteau",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/qFHX5E3M54ZXhLw4Bd7NcWGsUte.jpg",
+        "creditId": "6a6e728896ef05abf0e5974e"
+      },
+      {
+        "id": 128979,
+        "name": "Jeffrey Schenck",
+        "job": "Story",
+        "department": "Writing",
+        "creditId": "6a6e72e43f06b5007a9b1d59"
+      }
+    ],
+    "trailers": [],
+    "voteAverage": 0,
+    "voteCount": 0,
+    "tmdbUpdatedAt": "2026-10-22T16:49:53.679Z",
+    "tmdbFetchedAt": "2026-10-22T16:49:53.679Z"
   }
 ];
 

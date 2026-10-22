@@ -9429,14 +9429,15 @@
     "imdbPersonId": "nm4480895",
     "gender": "Female",
     "knownForDepartment": "Acting",
-    "knownCredits": 9,
+    "knownCredits": 10,
     "alsoKnownAs": [
       "Ariana George"
     ],
     "instagramId": "ariananicolegeorge",
     "twitterId": "arianangeorge",
     "facebookId": "ariananicolegeorge",
-    "tmdbUpdatedAt": "2026-09-20T16:21:02.159Z"
+    "tmdbUpdatedAt": "2026-10-22T16:49:55.013Z",
+    "tmdbFetchedAt": "2026-10-22T16:49:55.013Z"
   },
   {
     "id": "ariana-ron-pedrique",
@@ -13601,6 +13602,18 @@
     "knownForDepartment": "Art",
     "knownCredits": 2,
     "tmdbUpdatedAt": "2026-09-20T16:18:45.013Z"
+  },
+  {
+    "id": "2584472",
+    "slug": "bj-williams",
+    "name": "BJ Williams",
+    "tmdbPersonId": 2584472,
+    "photoUrl": "/images/people/2584472.webp",
+    "profileUrl": "/images/people/2584472.webp",
+    "knownForDepartment": "Acting",
+    "knownCredits": 5,
+    "tmdbUpdatedAt": "2026-10-22T16:49:55.285Z",
+    "tmdbFetchedAt": "2026-10-22T16:49:55.285Z"
   },
   {
     "tmdbPersonId": 1536497,
@@ -21904,7 +21917,8 @@
     "knownCredits": 35,
     "instagramId": "chelseagilson",
     "twitterId": "ChelseaGilson",
-    "tmdbUpdatedAt": "2026-09-20T16:18:40.812Z"
+    "tmdbUpdatedAt": "2026-10-22T16:49:54.814Z",
+    "tmdbFetchedAt": "2026-10-22T16:49:54.814Z"
   },
   {
     "id": "3998281",
@@ -24145,6 +24159,22 @@
     ],
     "tmdbUpdatedAt": "2026-10-02T17:44:12.995Z",
     "tmdbFetchedAt": "2026-10-02T17:44:12.995Z"
+  },
+  {
+    "id": "3538148",
+    "slug": "christopher-sky",
+    "name": "Christopher Sky",
+    "tmdbPersonId": 3538148,
+    "photoUrl": "/images/people/3538148.webp",
+    "profileUrl": "/images/people/3538148.webp",
+    "birthday": "1997-11-28",
+    "imdbPersonId": "nm9990433",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 21,
+    "instagramId": "christopherskyofficial",
+    "tmdbUpdatedAt": "2026-10-22T16:49:54.991Z",
+    "tmdbFetchedAt": "2026-10-22T16:49:54.991Z"
   },
   {
     "id": "christopher-tarjan",
@@ -27650,6 +27680,22 @@
     "knownCredits": 52,
     "tmdbUpdatedAt": "2026-10-01T10:14:48.604Z",
     "tmdbFetchedAt": "2026-10-01T10:14:48.604Z"
+  },
+  {
+    "id": "4667773",
+    "slug": "dan-hwang",
+    "name": "Dan Hwang",
+    "tmdbPersonId": 4667773,
+    "photoUrl": "/images/people/4667773.webp",
+    "profileUrl": "/images/people/4667773.webp",
+    "biography": "Dan Hwang is known for Trapped in the Rocky Mountains (2024), The Master Chief: Part One (2023) and Boy Band (2024).",
+    "imdbPersonId": "nm14987676",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 7,
+    "instagramId": "danhwang_",
+    "tmdbUpdatedAt": "2026-10-22T16:49:55.201Z",
+    "tmdbFetchedAt": "2026-10-22T16:49:55.201Z"
   },
   {
     "id": "dan-jeannotte",
@@ -39918,6 +39964,16 @@
     "tmdbFetchedAt": "2026-10-01T10:20:46.239Z"
   },
   {
+    "id": "6384347",
+    "slug": "ethan-harrington",
+    "name": "Ethan harrington",
+    "tmdbPersonId": 6384347,
+    "knownForDepartment": "Acting",
+    "knownCredits": 1,
+    "tmdbUpdatedAt": "2026-10-22T16:49:55.039Z",
+    "tmdbFetchedAt": "2026-10-22T16:49:55.039Z"
+  },
+  {
     "id": "5819162",
     "slug": "ethan-keyes",
     "name": "Ethan Keyes",
@@ -46360,7 +46416,8 @@
     "tmdbPersonId": 5478573,
     "knownForDepartment": "Acting",
     "knownCredits": 4,
-    "tmdbUpdatedAt": "2026-09-20T16:19:12.251Z"
+    "tmdbUpdatedAt": "2026-10-22T16:49:54.837Z",
+    "tmdbFetchedAt": "2026-10-22T16:49:54.837Z"
   },
   {
     "id": "harrison-coe",
@@ -61578,6 +61635,26 @@
     "tmdbUpdatedAt": "2026-09-21T13:18:50.916Z"
   },
   {
+    "id": "58963",
+    "slug": "josh-henderson",
+    "name": "Josh Henderson",
+    "tmdbPersonId": 58963,
+    "photoUrl": "/images/people/58963.webp",
+    "profileUrl": "/images/people/58963.webp",
+    "birthday": "1981-10-25",
+    "placeOfBirth": "Dallas, Texas, USA",
+    "biography": "From Wikipedia, the free encyclopedia.  Joshua Baret \"Josh\" Henderson  (born October 25, 1981) is an American actor and singer. He rose to fame as one of the male members of Scene 23, a pop singing group that were selected as the winners of The WB's singing competition Popstars 2. After the group disbanded, he began focusing on an acting career. His most high-profile role to date has been that of Austin McCann on the ABC hit television series Desperate Housewives. On October 10, 2008, TVGuide.com reported that Henderson will be joining the cast of 90210 as Sean, the biological son of Harry Wilson and Tracy Clark who turned out to be a con artist.  Description above from the Wikipedia article Josh Henderson, licensed under CC-BY-SA,full list of contributors on Wikipedia.",
+    "imdbPersonId": "nm1259068",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 35,
+    "instagramId": "joshhenderson",
+    "twitterId": "joshhenderson",
+    "facebookId": "JoshBHenderson",
+    "tmdbUpdatedAt": "2026-10-22T16:49:55.203Z",
+    "tmdbFetchedAt": "2026-10-22T16:49:55.203Z"
+  },
+  {
     "id": "josh-hopkins",
     "slug": "josh-hopkins",
     "name": "Josh Hopkins",
@@ -62646,6 +62723,16 @@
     "facebookId": "officialjuliavothpage",
     "tmdbUpdatedAt": "2026-10-07T15:01:00.380Z",
     "tmdbFetchedAt": "2026-10-07T15:01:00.380Z"
+  },
+  {
+    "id": "5707903",
+    "slug": "juliah-cheree-taylor",
+    "name": "Juliah Cheree Taylor",
+    "tmdbPersonId": 5707903,
+    "knownForDepartment": "Acting",
+    "knownCredits": 4,
+    "tmdbUpdatedAt": "2026-10-22T16:49:54.508Z",
+    "tmdbFetchedAt": "2026-10-22T16:49:54.508Z"
   },
   {
     "id": "1228590",
@@ -108011,6 +108098,24 @@
     "tmdbFetchedAt": "2026-09-25T20:54:37.380Z"
   },
   {
+    "id": "4059037",
+    "slug": "shane-dorriz",
+    "name": "Shane Dorriz",
+    "tmdbPersonId": 4059037,
+    "photoUrl": "/images/people/4059037.webp",
+    "profileUrl": "/images/people/4059037.webp",
+    "biography": "According to his IMDb, Shane Alexander Dorriz is an American actor who was born and raised in Los Angeles, California. In addition to being a working actor, Shane studied The Meisner Technique at Playhouse West in North Hollywood under Holly Gagnier and Robert Carnegie. For his work in Margot Run, Shane won Best Actor in a Short Film Comedy at Playhouse West Film Festival 2022.",
+    "imdbPersonId": "nm11903690",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 8,
+    "alsoKnownAs": [
+      "Shane Alexander Dorriz"
+    ],
+    "tmdbUpdatedAt": "2026-10-22T16:49:55.464Z",
+    "tmdbFetchedAt": "2026-10-22T16:49:55.464Z"
+  },
+  {
     "id": "shane-lennon",
     "slug": "shane-lennon",
     "name": "Shane Lennon",
@@ -119589,6 +119694,24 @@
     "facebookId": "VanesaTomasinoRodriguez",
     "tmdbUpdatedAt": "2026-10-01T10:28:05.904Z",
     "tmdbFetchedAt": "2026-10-01T10:28:05.904Z"
+  },
+  {
+    "id": "25308",
+    "slug": "vanessa-angel",
+    "name": "Vanessa Angel",
+    "tmdbPersonId": 25308,
+    "photoUrl": "/images/people/25308.webp",
+    "profileUrl": "/images/people/25308.webp",
+    "birthday": "1966-11-10",
+    "placeOfBirth": "London, England, UK",
+    "biography": "​From Wikipedia, the free encyclopedia.  \n\nVanessa Madeline Angel (born 10 November 1966) is an English model and actress. She played the role of Lisa on the television series Weird Science. She is also known for her role as Claudia in the film Kingpin.\n\nDescription above from the Wikipedia article Vanessa Angel,  licensed under CC-BY-SA, full list of contributors on Wikipedia.",
+    "imdbPersonId": "nm0029502",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 72,
+    "instagramId": "realvanessaangel",
+    "tmdbUpdatedAt": "2026-10-22T16:49:54.810Z",
+    "tmdbFetchedAt": "2026-10-22T16:49:54.810Z"
   },
   {
     "id": "vanessa-burns",
