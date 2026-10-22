@@ -85846,6 +85846,17 @@
     "tmdbUpdatedAt": "2026-09-20T16:19:40.871Z"
   },
   {
+    "id": "3294343",
+    "slug": "michael-grimm",
+    "name": "Michael Grimm",
+    "tmdbPersonId": 3294343,
+    "gender": "Male",
+    "knownForDepartment": "Writing",
+    "knownCredits": 4,
+    "tmdbUpdatedAt": "2026-10-22T05:06:31.414Z",
+    "tmdbFetchedAt": "2026-10-22T05:06:31.414Z"
+  },
+  {
     "id": "michael-gross",
     "slug": "michael-gross",
     "name": "Michael Gross",
