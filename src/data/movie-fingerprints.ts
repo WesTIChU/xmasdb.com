@@ -3694,6 +3694,11 @@ export const PROTOTYPE_MOVIE_FINGERPRINTS: Readonly<Record<string, readonly Fing
     "business-owner",
     "family-business"
   ],
+  "lifetime-2025-a-firefighter-s-christmas-calendar": [
+    "family-legacy",
+    "rescue",
+    "siblings"
+  ],
   "lifetime-2025-a-pickleball-christmas": [
     "athlete",
     "sports",
