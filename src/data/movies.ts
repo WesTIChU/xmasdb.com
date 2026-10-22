@@ -199388,6 +199388,284 @@ export const MOVIES: Movie[] = [
     "voteCount": 0,
     "tmdbUpdatedAt": "2026-10-22T16:53:15.463Z",
     "tmdbFetchedAt": "2026-10-22T16:53:15.463Z"
+  },
+  {
+    "id": "lifetime-2025-a-firefighter-s-christmas-calendar",
+    "slug": "a-firefighter-s-christmas-calendar",
+    "title": "A Firefighter's Christmas Calendar",
+    "year": 2025,
+    "brandId": "lifetime",
+    "releaseDate": "2025-12-10",
+    "synopsis": "When firefighter Dani Reed rescues a family just before Christmas, she reignites her late mother's \"Holiday Heroes\" fundraiser to help the community. With her ambitious sister Jackie, charming photographer Sasha, and supportive dad by her side, Dani finds love, purpose, and the courage to step into true leadership.",
+    "posterUrl": "/images/posters/1580225.jpg",
+    "backdropUrl": "/images/backdrops/1580225.jpg",
+    "cast": [
+      {
+        "actorId": "1251993",
+        "name": "Holly Deveaux",
+        "character": "Dani Reed",
+        "slug": "holly-deveaux",
+        "tmdbPersonId": 1251993,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/qPjYrORdBpbtveRcXJH0qFZS7QN.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "2098768",
+        "name": "Kyana Teresa",
+        "character": "Sasha DuBois",
+        "slug": "kyana-teresa",
+        "tmdbPersonId": 2098768,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/nNS3Cuqqd9lPiKp9I3XPe3gX1i4.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "1228319",
+        "name": "Natalie Lisinska",
+        "character": "Jackie",
+        "slug": "natalie-lisinska",
+        "tmdbPersonId": 1228319,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/pjF0OpAQNJKuxmxHeTOOepFXBrk.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "1776255",
+        "name": "Tina Jung",
+        "character": "Candice Lee",
+        "slug": "tina-jung",
+        "tmdbPersonId": 1776255,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/eQG7U6ZMys4wJ0RhPGq72t3VcpC.jpg",
+        "order": 3
+      },
+      {
+        "actorId": "5815042",
+        "name": "Evelyn Chen",
+        "character": "Abigail",
+        "slug": "evelyn-chen",
+        "tmdbPersonId": 5815042,
+        "order": 4
+      },
+      {
+        "actorId": "2607394",
+        "name": "Julie Nolke",
+        "character": "Valerie Petrillo",
+        "slug": "julie-nolke",
+        "tmdbPersonId": 2607394,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/6eEqOx8eDqWjnt6hbPLq8kIN5Qu.jpg",
+        "order": 5
+      },
+      {
+        "actorId": "1651597",
+        "name": "Troy Blundell",
+        "character": "Tom O'Neil",
+        "slug": "troy-blundell",
+        "tmdbPersonId": 1651597,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/mqgey5zQi02eTmNVYio5h0lNnAq.jpg",
+        "order": 6
+      },
+      {
+        "actorId": "1226195",
+        "name": "Rob Stewart",
+        "character": "Chris Reed",
+        "slug": "rob-stewart",
+        "tmdbPersonId": 1226195,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/trovYCjXppTKZjvVznYKTaLf0Q.jpg",
+        "order": 7
+      }
+    ],
+    "director": "Mars Horodyski",
+    "tmdbId": 1580225,
+    "imdbId": "tt38856677",
+    "isComingSoon": false,
+    "status": "collection",
+    "originalTitle": "A Firefighter's Christmas Calendar",
+    "alternativeTitles": [
+      {
+        "title": "The Firefighter's Christmas Calendar",
+        "country": "US"
+      },
+      {
+        "title": "The Firefighter's Christmas Wish",
+        "country": "US"
+      }
+    ],
+    "genres": [
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "CA",
+        "releaseDate": "2025-12-21T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": ""
+      },
+      {
+        "country": "FR",
+        "releaseDate": "2025-12-10T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "TF1"
+      }
+    ],
+    "crew": [
+      {
+        "id": 1447198,
+        "name": "Mars Horodyski",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/2Ni0etKpzo1plDMrWvuUlBUql9P.jpg",
+        "creditId": "69161a78293cf5cbf03a450d"
+      },
+      {
+        "id": 1098663,
+        "name": "Meeshelle Neal",
+        "job": "Writer",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/9taLq0G8hAVRA3cT4PeFt1UwqI2.jpg",
+        "creditId": "69161a9061f4c08e56ac2508"
+      },
+      {
+        "id": 2117334,
+        "name": "Nataline Rodrigues",
+        "job": "Writer",
+        "department": "Writing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/snw06YZLiOhKZEUruQMSIWzwwIj.jpg",
+        "creditId": "69161ab861f4c08e56ac2513"
+      }
+    ],
+    "trailers": [
+      {
+        "key": "xHO-iht1lRs",
+        "site": "YouTube",
+        "type": "Trailer",
+        "name": "Trailer",
+        "official": true
+      }
+    ],
+    "trailerYoutubeKey": "xHO-iht1lRs",
+    "voteAverage": 4.9,
+    "voteCount": 5,
+    "tmdbUpdatedAt": "2026-10-22T16:57:48.557Z",
+    "tmdbFetchedAt": "2026-10-22T16:57:48.557Z"
+  },
+  {
+    "id": "lifetime-2025-christmas-at-mistletoe-hall",
+    "slug": "christmas-at-mistletoe-hall",
+    "title": "Christmas at Mistletoe Hall",
+    "year": 2025,
+    "brandId": "lifetime",
+    "releaseDate": "2025-11-03",
+    "synopsis": "When Piper and Dawson are invited home for the holidays, they find themselves unraveling a series of festive clues and heartfelt challenges.",
+    "posterUrl": "/images/posters/1582700.jpg",
+    "backdropUrl": "/images/backdrops/1582700.jpg",
+    "cast": [
+      {
+        "actorId": "106725",
+        "name": "Kathryn Davis",
+        "character": "Piper",
+        "slug": "kathryn-davis",
+        "tmdbPersonId": 106725,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/hs3fjziV9U4cmw4Px92KRbfE1Ea.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "1751311",
+        "name": "Jonathan Stoddard",
+        "character": "Dawson",
+        "slug": "jonathan-stoddard",
+        "tmdbPersonId": 1751311,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/ct64PRjZpTFphgdlezQ7c2lMIrC.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "4165354",
+        "name": "Mylene Carino",
+        "character": "Olive",
+        "slug": "mylene-carino",
+        "tmdbPersonId": 4165354,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/2NYrSux6oieMyJIbl8IAjdYjqeo.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "1228013",
+        "name": "Jill Frappier",
+        "character": "Margaret Smith",
+        "slug": "jill-frappier",
+        "tmdbPersonId": 1228013,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/946TPr7589zniVfNGU8Fe3x3fKc.jpg",
+        "order": 3
+      }
+    ],
+    "director": "Mike Donis",
+    "tmdbId": 1582700,
+    "imdbId": "tt38786801",
+    "isComingSoon": false,
+    "status": "collection",
+    "originalTitle": "Christmas at Mistletoe Hall",
+    "alternativeTitles": [
+      {
+        "title": "The Christmas Clues",
+        "country": "CA"
+      }
+    ],
+    "runtimeMinutes": 87,
+    "genres": [
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "CA",
+        "releaseDate": "2025-11-03T00:00:00.000Z",
+        "type": 4,
+        "certification": "",
+        "note": "Crave"
+      },
+      {
+        "country": "CH",
+        "releaseDate": "2026-11-03T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "RTS Un"
+      },
+      {
+        "country": "FR",
+        "releaseDate": "2025-12-09T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "TF1"
+      }
+    ],
+    "crew": [
+      {
+        "id": 5824831,
+        "name": "Mike Donis",
+        "job": "Director",
+        "department": "Directing",
+        "creditId": "691c935c5bb7de4f90c7d76f"
+      },
+      {
+        "id": 1357654,
+        "name": "Al Kratina",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "691c936c897622578a447207"
+      }
+    ],
+    "trailers": [],
+    "voteAverage": 6.5,
+    "voteCount": 2,
+    "tmdbUpdatedAt": "2026-10-22T16:57:48.452Z",
+    "tmdbFetchedAt": "2026-10-22T16:57:48.452Z"
   }
 ];
 

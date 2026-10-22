@@ -1950,6 +1950,20 @@
     "tmdbUpdatedAt": "2026-09-20T16:21:02.046Z"
   },
   {
+    "id": "1357654",
+    "slug": "al-kratina",
+    "name": "Al Kratina",
+    "tmdbPersonId": 1357654,
+    "birthday": "1981-10-31",
+    "placeOfBirth": "Ottawa, Ontario, Canada",
+    "imdbPersonId": "nm0470011",
+    "gender": "Male",
+    "knownForDepartment": "Writing",
+    "knownCredits": 12,
+    "tmdbUpdatedAt": "2026-10-22T16:57:50.518Z",
+    "tmdbFetchedAt": "2026-10-22T16:57:50.518Z"
+  },
+  {
     "id": "al-mitchell",
     "slug": "al-mitchell",
     "name": "Al Mitchell",
@@ -40408,6 +40422,16 @@
     "tmdbUpdatedAt": "2026-09-20T16:17:38.887Z"
   },
   {
+    "id": "5815042",
+    "slug": "evelyn-chen",
+    "name": "Evelyn Chen",
+    "tmdbPersonId": 5815042,
+    "knownForDepartment": "Acting",
+    "knownCredits": 1,
+    "tmdbUpdatedAt": "2026-10-22T16:57:50.128Z",
+    "tmdbFetchedAt": "2026-10-22T16:57:50.128Z"
+  },
+  {
     "id": "5619857",
     "slug": "evelyn-grace-kite",
     "name": "Evelyn Grace Kite",
@@ -47736,7 +47760,8 @@
     "knownCredits": 31,
     "instagramId": "hollydeveaux",
     "twitterId": "thehollydeveaux",
-    "tmdbUpdatedAt": "2026-09-20T16:19:23.386Z"
+    "tmdbUpdatedAt": "2026-10-22T16:57:50.274Z",
+    "tmdbFetchedAt": "2026-10-22T16:57:50.274Z"
   },
   {
     "id": "holly-dignard",
@@ -63271,6 +63296,25 @@
     "tmdbUpdatedAt": "2026-09-20T16:20:19.561Z"
   },
   {
+    "id": "2607394",
+    "slug": "julie-nolke",
+    "name": "Julie Nolke",
+    "tmdbPersonId": 2607394,
+    "photoUrl": "/images/people/2607394.webp",
+    "profileUrl": "/images/people/2607394.webp",
+    "birthday": "1990-08-24",
+    "placeOfBirth": "Canada",
+    "imdbPersonId": "nm6591551",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 15,
+    "instagramId": "julienolke",
+    "twitterId": "juliemarienolke",
+    "facebookId": "nolkejulie",
+    "tmdbUpdatedAt": "2026-10-22T16:57:50.849Z",
+    "tmdbFetchedAt": "2026-10-22T16:57:50.849Z"
+  },
+  {
     "id": "165961",
     "slug": "julie-sherman-wolfe",
     "name": "Julie Sherman Wolfe",
@@ -70468,7 +70512,8 @@
     "gender": "Female",
     "knownForDepartment": "Acting",
     "knownCredits": 30,
-    "tmdbUpdatedAt": "2026-09-21T13:18:43.567Z"
+    "tmdbUpdatedAt": "2026-10-22T16:57:50.260Z",
+    "tmdbFetchedAt": "2026-10-22T16:57:50.260Z"
   },
   {
     "id": "kyla-pratt",
@@ -83661,7 +83706,8 @@
     "knownCredits": 11,
     "instagramId": "meeshelleneal",
     "twitterId": "MeeshNeal",
-    "tmdbUpdatedAt": "2026-09-22T20:53:36.001Z"
+    "tmdbUpdatedAt": "2026-10-22T16:57:50.481Z",
+    "tmdbFetchedAt": "2026-10-22T16:57:50.481Z"
   },
   {
     "id": "meg-chambers-steedle",
@@ -89446,6 +89492,20 @@
     "tmdbUpdatedAt": "2026-09-20T16:17:27.571Z"
   },
   {
+    "id": "4165354",
+    "slug": "mylene-carino",
+    "name": "Mylene Carino",
+    "tmdbPersonId": 4165354,
+    "photoUrl": "/images/people/4165354.webp",
+    "profileUrl": "/images/people/4165354.webp",
+    "imdbPersonId": "nm13753456",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 12,
+    "tmdbUpdatedAt": "2026-10-22T16:57:51.089Z",
+    "tmdbFetchedAt": "2026-10-22T16:57:51.089Z"
+  },
+  {
     "id": "myle-ne-dinh-robic",
     "slug": "myle-ne-dinh-robic",
     "name": "Mylène Dinh-Robic",
@@ -90252,6 +90312,20 @@
     "knownForDepartment": "Acting",
     "knownCredits": 29,
     "tmdbUpdatedAt": "2026-09-21T13:18:15.386Z"
+  },
+  {
+    "id": "2117334",
+    "slug": "nataline-rodrigues",
+    "name": "Nataline Rodrigues",
+    "tmdbPersonId": 2117334,
+    "photoUrl": "/images/people/2117334.webp",
+    "profileUrl": "/images/people/2117334.webp",
+    "biography": "Nataline Rodrigues is an entertainment executive. She has over twenty years experience in production and programming for broadcast television and digital media platforms. Rodrigues became Director of Original Programming for Roger Media in 2013.",
+    "gender": "Female",
+    "knownForDepartment": "Production",
+    "knownCredits": 14,
+    "tmdbUpdatedAt": "2026-10-22T16:57:51.046Z",
+    "tmdbFetchedAt": "2026-10-22T16:57:51.046Z"
   },
   {
     "id": "natasha-bure",
@@ -119098,7 +119172,8 @@
     "gender": "Male",
     "knownForDepartment": "Acting",
     "knownCredits": 31,
-    "tmdbUpdatedAt": "2026-09-21T12:58:57.858Z"
+    "tmdbUpdatedAt": "2026-10-22T16:57:50.399Z",
+    "tmdbFetchedAt": "2026-10-22T16:57:50.399Z"
   },
   {
     "id": "troy-hatt",
