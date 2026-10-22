@@ -198422,6 +198422,183 @@ export const MOVIES: Movie[] = [
       "source": "tmdb",
       "lastConfirmedAt": "2026-10-15T08:27:57.886Z"
     }
+  },
+  {
+    "id": "lifetime-2026-christmas-everyday-married-and-bright",
+    "slug": "christmas-everyday-married-and-bright",
+    "title": "Christmas Everyday: Married and Bright",
+    "year": 2026,
+    "brandId": "lifetime",
+    "releaseDate": "2026-11-28",
+    "synopsis": "Fancy prepares for the biggest season of her life and to secure the future of her boutique while planning her dream Christmas wedding to fiance Jaylen, with the help of her mother Evelyn and sister Belle.",
+    "posterUrl": "",
+    "cast": [
+      {
+        "actorId": "33285",
+        "name": "Brandy Norwood",
+        "character": "Francine 'Fancy' Ballantine",
+        "slug": "brandy-norwood",
+        "tmdbPersonId": 33285,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/ie1IH8LQI3aGzke4FoYRbcdHv88.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "5582410",
+        "name": "Robert C. Riley",
+        "character": "Jaylen",
+        "slug": "robert-c-riley",
+        "tmdbPersonId": 5582410,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/4kH4ssN7IPX9cdNtjMLT1fGyTCE.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "1218183",
+        "name": "Lamman Rucker",
+        "character": "Richard",
+        "slug": "lamman-rucker",
+        "tmdbPersonId": 1218183,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/97JGsO3FR13MLa3hrs9A0cIzGBo.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "5582407",
+        "name": "Sy’Rai Smith",
+        "character": "Belle Ballantine",
+        "slug": "sy-rai-smith",
+        "tmdbPersonId": 5582407,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/34QFZjvL9Y6wnEVWD5x5ykKo3ee.jpg",
+        "order": 3
+      },
+      {
+        "actorId": "2970857",
+        "name": "Journey Carter",
+        "character": "Tia",
+        "slug": "journey-carter",
+        "tmdbPersonId": 2970857,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/jWYpok7dXorsXslmGR1GCMp5lJg.jpg",
+        "order": 4
+      },
+      {
+        "actorId": "88161",
+        "name": "Debbi Morgan",
+        "character": "Evelyn Ballantine",
+        "slug": "debbi-morgan",
+        "tmdbPersonId": 88161,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/5uet40J3x2pLCxdqC07RjNHTzvH.jpg",
+        "order": 5
+      },
+      {
+        "actorId": "1064313",
+        "name": "Jeffrey Bowyer-Chapman",
+        "character": "Germaine",
+        "slug": "jeffrey-bowyer-chapman",
+        "tmdbPersonId": 1064313,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/pYCJuxa9pPC7hnELlvpIAjjL3Co.jpg",
+        "order": 6
+      },
+      {
+        "actorId": "3207225",
+        "name": "Kajuana S. Marie",
+        "character": "Deena",
+        "slug": "kajuana-s-marie",
+        "tmdbPersonId": 3207225,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/gsWIUSn0KJySNROLUMrOlWkPteF.jpg",
+        "order": 7
+      },
+      {
+        "actorId": "1465252",
+        "name": "Bernadette Speakes",
+        "character": "Lyla",
+        "slug": "bernadette-speakes",
+        "tmdbPersonId": 1465252,
+        "order": 8
+      },
+      {
+        "actorId": "2986573",
+        "name": "Kelvin Hair",
+        "character": "Anthony",
+        "slug": "kelvin-hair",
+        "tmdbPersonId": 2986573,
+        "order": 9
+      },
+      {
+        "actorId": "5840924",
+        "name": "Melissa Kurland",
+        "character": "Ashley Spencer",
+        "slug": "melissa-kurland",
+        "tmdbPersonId": 5840924,
+        "order": 10
+      },
+      {
+        "actorId": "2242307",
+        "name": "Patrick Gathron",
+        "character": "Malik",
+        "slug": "patrick-gathron",
+        "tmdbPersonId": 2242307,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/s7e8mRt9SnkmHBv6hvF24pXfU5C.jpg",
+        "order": 11
+      },
+      {
+        "actorId": "5840927",
+        "name": "Michael Armstrong",
+        "character": "Walt",
+        "slug": "michael-armstrong",
+        "tmdbPersonId": 5840927,
+        "order": 12
+      }
+    ],
+    "director": "Roger M. Bobb",
+    "tmdbId": 1799512,
+    "imdbId": "tt48360114",
+    "isComingSoon": true,
+    "status": "coming-soon",
+    "originalTitle": "Christmas Everyday: Married and Bright",
+    "runtimeMinutes": 88,
+    "genres": [
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      },
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "US",
+        "releaseDate": "2026-11-28T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "Lifetime"
+      }
+    ],
+    "crew": [
+      {
+        "id": 80603,
+        "name": "Roger M. Bobb",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/aqwifOQWTfpii164OtiDNhjDFNd.jpg",
+        "creditId": "6ad2bfe0db5df95fbe1d2464"
+      },
+      {
+        "id": 3743457,
+        "name": "Meg DeLoatch",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "6ad2bfea8fbc9ee719c6367c"
+      }
+    ],
+    "trailers": [],
+    "voteAverage": 0,
+    "voteCount": 0,
+    "tmdbUpdatedAt": "2026-10-22T16:46:11.498Z",
+    "tmdbFetchedAt": "2026-10-22T16:46:11.498Z"
   }
 ];
 
