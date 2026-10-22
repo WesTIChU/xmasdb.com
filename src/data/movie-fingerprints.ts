@@ -3739,6 +3739,21 @@ export const PROTOTYPE_MOVIE_FINGERPRINTS: Readonly<Record<string, readonly Fing
     "baking-cooking",
     "unexpected-romance"
   ],
+  "lifetime-2026-a-second-chance-christmas-letter": [
+    "hometown",
+    "old-flame",
+    "returns-home",
+    "second-chance"
+  ],
+  "lifetime-2026-a-whimsy-christmas-carol": [
+    "ghost-spirit",
+    "old-flame",
+    "save-the-business"
+  ],
+  "lifetime-2026-an-inseparable-christmas": [
+    "hometown",
+    "unexpected-romance"
+  ],
   "lifetime-2026-checking-inn-for-christmas": [
     "business-owner",
     "career-vs-love",
@@ -3750,6 +3765,30 @@ export const PROTOTYPE_MOVIE_FINGERPRINTS: Readonly<Record<string, readonly Fing
     "business-owner",
     "christmas-wedding",
     "siblings"
+  ],
+  "lifetime-2026-christmas-from-the-heart": [
+    "europe-abroad",
+    "unexpected-romance",
+    "widow-widower"
+  ],
+  "lifetime-2026-love-on-the-christmas-list": [
+    "career-vs-love",
+    "unexpected-romance",
+    "widow-widower"
+  ],
+  "lifetime-2026-mending-hearts-for-christmas": [
+    "family-reconciliation",
+    "matchmaking",
+    "military",
+    "parent-child",
+    "reunion",
+    "unexpected-romance"
+  ],
+  "lifetime-2026-mistletoe-in-mexico": [
+    "business-owner",
+    "parent-child",
+    "unexpected-romance",
+    "widow-widower"
   ],
   "uptv-2013-guess-who-s-coming-to-christmas": [
     "celebrity",
