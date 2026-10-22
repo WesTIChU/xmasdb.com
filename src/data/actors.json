@@ -21181,6 +21181,28 @@
     "tmdbUpdatedAt": "2026-09-20T16:18:18.874Z"
   },
   {
+    "id": "1540234",
+    "slug": "chantel-riley",
+    "name": "Chantel Riley",
+    "tmdbPersonId": 1540234,
+    "photoUrl": "/images/people/1540234.webp",
+    "profileUrl": "/images/people/1540234.webp",
+    "birthday": "1986-06-27",
+    "placeOfBirth": "Toronto, Ontario, Canada",
+    "biography": "Chantel Riley is a Jamaican-Canadian singer/songwriter and actress.",
+    "imdbPersonId": "nm6698172",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 21,
+    "alsoKnownAs": [
+      "Σαντέλ Ράιλεϊ"
+    ],
+    "instagramId": "chantel_riley",
+    "twitterId": "chantel_riley",
+    "tmdbUpdatedAt": "2026-10-22T16:53:17.726Z",
+    "tmdbFetchedAt": "2026-10-22T16:53:17.726Z"
+  },
+  {
     "id": "charity-hitchcock",
     "slug": "charity-hitchcock",
     "name": "Charity Hitchcock",
@@ -26911,12 +26933,13 @@
     "imdbPersonId": "nm0209246",
     "gender": "Male",
     "knownForDepartment": "Acting",
-    "knownCredits": 67,
+    "knownCredits": 68,
     "alsoKnownAs": [
       "Cristian De La Fuente"
     ],
     "instagramId": "iamdelafuente",
-    "tmdbUpdatedAt": "2026-09-20T16:20:27.410Z"
+    "tmdbUpdatedAt": "2026-10-22T16:53:18.322Z",
+    "tmdbFetchedAt": "2026-10-22T16:53:18.322Z"
   },
   {
     "id": "3332522",
@@ -47269,10 +47292,11 @@
     "imdbPersonId": "nm3165233",
     "gender": "Male",
     "knownForDepartment": "Acting",
-    "knownCredits": 24,
+    "knownCredits": 25,
     "instagramId": "hendersonwade",
     "twitterId": "hendersonwade",
-    "tmdbUpdatedAt": "2026-09-20T16:20:08.541Z"
+    "tmdbUpdatedAt": "2026-10-22T16:53:17.043Z",
+    "tmdbFetchedAt": "2026-10-22T16:53:17.043Z"
   },
   {
     "id": "henri-brown",
@@ -48423,6 +48447,26 @@
     "knownForDepartment": "Acting",
     "knownCredits": 1,
     "tmdbUpdatedAt": "2026-09-20T16:17:19.298Z"
+  },
+  {
+    "id": "1808309",
+    "slug": "ignacyo-matynia",
+    "name": "Ignacyo Matynia",
+    "tmdbPersonId": 1808309,
+    "photoUrl": "/images/people/1808309.webp",
+    "profileUrl": "/images/people/1808309.webp",
+    "birthday": "1992-05-29",
+    "placeOfBirth": "Busko-Zdrój, Poland",
+    "biography": "Ignacyo Mateusz Matynia (born May 29, 1992) is a Polish-American actor. He is best known for his performance in the Lifetime original film My Nightmare Landlord (2020) as the titular character, as well as his appearances on the TV series Luke Cage and Vida. His notable film credits include the 2021 independent films One and the Same and Break Every Chain.",
+    "imdbPersonId": "nm6276059",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 24,
+    "instagramId": "ignacyonyc",
+    "twitterId": "TheREALIgnacyo",
+    "facebookId": "ignacyom",
+    "tmdbUpdatedAt": "2026-10-22T16:53:19.143Z",
+    "tmdbFetchedAt": "2026-10-22T16:53:19.143Z"
   },
   {
     "id": "1450774",
@@ -51067,6 +51111,16 @@
       "제임스 폴크너"
     ],
     "tmdbUpdatedAt": "2026-09-20T16:17:47.100Z"
+  },
+  {
+    "id": "3551737",
+    "slug": "james-french",
+    "name": "James French",
+    "tmdbPersonId": 3551737,
+    "knownForDepartment": "Acting",
+    "knownCredits": 2,
+    "tmdbUpdatedAt": "2026-10-22T16:53:18.506Z",
+    "tmdbFetchedAt": "2026-10-22T16:53:18.506Z"
   },
   {
     "id": "james-gaisford",
@@ -57604,8 +57658,9 @@
     "imdbPersonId": "nm12111337",
     "gender": "Female",
     "knownForDepartment": "Acting",
-    "knownCredits": 10,
-    "tmdbUpdatedAt": "2026-09-20T16:19:44.723Z"
+    "knownCredits": 11,
+    "tmdbUpdatedAt": "2026-10-22T16:53:18.378Z",
+    "tmdbFetchedAt": "2026-10-22T16:53:18.378Z"
   },
   {
     "id": "jinny-wong",
@@ -58498,6 +58553,25 @@
       "Joëlle Sellner"
     ],
     "tmdbUpdatedAt": "2026-09-21T13:00:05.486Z"
+  },
+  {
+    "id": "4758",
+    "slug": "joely-fisher",
+    "name": "Joely Fisher",
+    "tmdbPersonId": 4758,
+    "photoUrl": "/images/people/4758.webp",
+    "profileUrl": "/images/people/4758.webp",
+    "birthday": "1967-10-29",
+    "placeOfBirth": "Burbank, California, U.S.",
+    "biography": "Joely Fisher (born October 29, 1967) is an American actress best known for her work on television as Paige Clark on Ellen as well as Joy Stark in the Fox sitcom 'Til Death, and also on stage and in films. She is the daughter of actor singer Eddie Fisher and actress Connie Stevens, and half-sister of actress Carrie Fisher.\n\nDescription above from the Wikipedia article Joely Fisher, licensed under CC-BY-SA, full list of contributors on Wikipedia",
+    "imdbPersonId": "nm0004921",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 77,
+    "instagramId": "msjoelyfisher",
+    "twitterId": "msjoelyfisher",
+    "tmdbUpdatedAt": "2026-10-22T16:53:18.645Z",
+    "tmdbFetchedAt": "2026-10-22T16:53:18.645Z"
   },
   {
     "id": "joey-belfiore",
@@ -65630,6 +65704,16 @@
     "tmdbFetchedAt": "2026-09-25T20:54:38.257Z"
   },
   {
+    "id": "2528321",
+    "slug": "kathryn-fasegha",
+    "name": "Kathryn Fasegha",
+    "tmdbPersonId": 2528321,
+    "knownForDepartment": "Directing",
+    "knownCredits": 2,
+    "tmdbUpdatedAt": "2026-10-22T16:53:17.852Z",
+    "tmdbFetchedAt": "2026-10-22T16:53:17.852Z"
+  },
+  {
     "id": "5097375",
     "slug": "kathryn-fumie",
     "name": "Kathryn Fumie",
@@ -67321,6 +67405,20 @@
     "knownForDepartment": "Acting",
     "knownCredits": 7,
     "tmdbUpdatedAt": "2026-09-20T16:16:33.257Z"
+  },
+  {
+    "id": "3733244",
+    "slug": "kelly-tappan",
+    "name": "Kelly Tappan",
+    "tmdbPersonId": 3733244,
+    "photoUrl": "/images/people/3733244.webp",
+    "profileUrl": "/images/people/3733244.webp",
+    "imdbPersonId": "nm7961443",
+    "knownForDepartment": "Acting",
+    "knownCredits": 6,
+    "instagramId": "kellyltappan",
+    "tmdbUpdatedAt": "2026-10-22T16:53:19.137Z",
+    "tmdbFetchedAt": "2026-10-22T16:53:19.137Z"
   },
   {
     "id": "kelly-van-der-burg",
@@ -69590,6 +69688,23 @@
     "knownCredits": 27,
     "instagramId": "kristamorin",
     "tmdbUpdatedAt": "2026-09-21T13:15:36.817Z"
+  },
+  {
+    "id": "3662305",
+    "slug": "krista-nazaire",
+    "name": "Krista Nazaire",
+    "tmdbPersonId": 3662305,
+    "photoUrl": "/images/people/3662305.webp",
+    "profileUrl": "/images/people/3662305.webp",
+    "biography": "Krista Nazaire is an actress, known for The Hardy Boys (2020) and Before We Crash (2019).",
+    "imdbPersonId": "nm10980334",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 6,
+    "instagramId": "kristanazaire",
+    "twitterId": "kristanazaire",
+    "tmdbUpdatedAt": "2026-10-22T16:53:18.113Z",
+    "tmdbFetchedAt": "2026-10-22T16:53:18.113Z"
   },
   {
     "id": "1212654",
@@ -77844,6 +77959,27 @@
     "knownForDepartment": "Acting",
     "knownCredits": 30,
     "tmdbUpdatedAt": "2026-09-20T16:21:00.592Z"
+  },
+  {
+    "id": "6014568",
+    "slug": "malik-njau",
+    "name": "Malik Njau",
+    "tmdbPersonId": 6014568,
+    "photoUrl": "/images/people/6014568.webp",
+    "profileUrl": "/images/people/6014568.webp",
+    "birthday": "2013-08-14",
+    "placeOfBirth": "Ottawa, Ontario, Canada",
+    "biography": "Malik James Njau is a 13 year old African-Canadian actor based in Toronto, Ontario.\n\nActing is his true passion, offering him a sense of confidence, joy, and the chance to explore new perspectives. Recognized for his natural talent from an early age, he is driven to use his gift to entertain audiences worldwide. Malik values inclusion and representation, believing that seeing someone like himself on screen can inspire dreams and transform them into achievable goals.\n\nOutside of acting, Malik enjoys playing basketball, snow boarding, soccer, spending time with family & friends, playing video games, and immersing himself in building Lego.",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 2,
+    "alsoKnownAs": [
+      "Malik James Njau",
+      "King Malik"
+    ],
+    "instagramId": "officialkingmalik_",
+    "tmdbUpdatedAt": "2026-10-22T16:53:18.353Z",
+    "tmdbFetchedAt": "2026-10-22T16:53:18.353Z"
   },
   {
     "id": "malinda-money",
@@ -87112,8 +87248,9 @@
     "imdbPersonId": "nm4679011",
     "gender": "Female",
     "knownForDepartment": "Acting",
-    "knownCredits": 11,
-    "tmdbUpdatedAt": "2026-09-20T16:19:46.501Z"
+    "knownCredits": 12,
+    "tmdbUpdatedAt": "2026-10-22T16:53:18.084Z",
+    "tmdbFetchedAt": "2026-10-22T16:53:18.084Z"
   },
   {
     "id": "michelle-bardach",
@@ -87716,6 +87853,16 @@
     "knownForDepartment": "Acting",
     "knownCredits": 33,
     "tmdbUpdatedAt": "2026-09-22T20:53:44.884Z"
+  },
+  {
+    "id": "5824831",
+    "slug": "mike-donis",
+    "name": "Mike Donis",
+    "tmdbPersonId": 5824831,
+    "knownForDepartment": "Directing",
+    "knownCredits": 2,
+    "tmdbUpdatedAt": "2026-10-22T16:53:17.843Z",
+    "tmdbFetchedAt": "2026-10-22T16:53:17.843Z"
   },
   {
     "id": "mike-dopud",
@@ -89892,6 +90039,23 @@
     "tmdbUpdatedAt": "2026-09-20T16:18:52.582Z"
   },
   {
+    "id": "1215206",
+    "slug": "natalie-gumede",
+    "name": "Natalie Gumede",
+    "tmdbPersonId": 1215206,
+    "photoUrl": "/images/people/1215206.webp",
+    "profileUrl": "/images/people/1215206.webp",
+    "birthday": "1984-03-20",
+    "placeOfBirth": "England, UK",
+    "imdbPersonId": "nm1715378",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 17,
+    "instagramId": "natalie.gumede",
+    "tmdbUpdatedAt": "2026-10-22T16:53:17.478Z",
+    "tmdbFetchedAt": "2026-10-22T16:53:17.478Z"
+  },
+  {
     "id": "natalie-hall",
     "slug": "natalie-hall",
     "name": "Natalie Hall",
@@ -90342,6 +90506,26 @@
     "tmdbUpdatedAt": "2026-09-20T16:17:19.742Z"
   },
   {
+    "id": "43296",
+    "slug": "nathan-stephenson",
+    "name": "Nathan Stephenson",
+    "tmdbPersonId": 43296,
+    "photoUrl": "/images/people/43296.webp",
+    "profileUrl": "/images/people/43296.webp",
+    "birthday": "1987-07-27",
+    "placeOfBirth": "Canada",
+    "biography": "From Wikipedia, the free encyclopedia.   Nathan Stephenson (born July 27, 1986) is a Canadian actor and was in the Arts York Drama program at Unionville High School. He is best known for his starring roles in Radio Free Roscoe as Robbie and in System Crash as James . He has also guest starred on Naturally, Sadie, Dark Oracle and in the TV film Cyber Seduction: His Secret Life. As of 2008 he has a recurring role in Degrassi: The Next Generation. He plays Griffin a HIV positive character who struggles with life &amp; relationships.\n\nDescription above from the Wikipedia article Nathan Stephenson, licensed under CC-BY-SA, full list of contributors on Wikipedia​",
+    "imdbPersonId": "nm1051185",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 17,
+    "alsoKnownAs": [
+      "Nathaniel Stephenson"
+    ],
+    "tmdbUpdatedAt": "2026-10-22T16:53:18.625Z",
+    "tmdbFetchedAt": "2026-10-22T16:53:18.625Z"
+  },
+  {
     "id": "nathan-witte",
     "slug": "nathan-witte",
     "name": "Nathan Witte",
@@ -90690,7 +90874,8 @@
     "alsoKnownAs": [
       "Neil Whiteley"
     ],
-    "tmdbUpdatedAt": "2026-09-21T12:59:49.329Z"
+    "tmdbUpdatedAt": "2026-10-22T16:53:17.713Z",
+    "tmdbFetchedAt": "2026-10-22T16:53:17.713Z"
   },
   {
     "id": "neil-whitley",
@@ -91565,6 +91750,16 @@
     "twitterId": "NicolaPosener",
     "facebookId": "ActressNicolaPosener",
     "tmdbUpdatedAt": "2026-09-20T16:20:18.494Z"
+  },
+  {
+    "id": "6554579",
+    "slug": "nicolas-nondono",
+    "name": "Nicolas Nondono",
+    "tmdbPersonId": 6554579,
+    "knownForDepartment": "Acting",
+    "knownCredits": 1,
+    "tmdbUpdatedAt": "2026-10-22T16:53:18.440Z",
+    "tmdbFetchedAt": "2026-10-22T16:53:18.440Z"
   },
   {
     "id": "nicole-amber-farrugia",
@@ -95839,6 +96034,25 @@
     "knownCredits": 7,
     "tmdbUpdatedAt": "2026-10-02T17:53:41.398Z",
     "tmdbFetchedAt": "2026-10-02T17:53:41.398Z"
+  },
+  {
+    "id": "1339557",
+    "slug": "pedro-carvalho",
+    "name": "Pedro Carvalho",
+    "tmdbPersonId": 1339557,
+    "photoUrl": "/images/people/1339557.webp",
+    "profileUrl": "/images/people/1339557.webp",
+    "birthday": "1985-07-15",
+    "placeOfBirth": "Guarda, Portugal",
+    "imdbPersonId": "nm2694214",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 25,
+    "instagramId": "pedrocarvalho_oficial",
+    "twitterId": "pedroc_oficial",
+    "facebookId": "OficialPedroCarvalho",
+    "tmdbUpdatedAt": "2026-10-22T16:53:17.609Z",
+    "tmdbFetchedAt": "2026-10-22T16:53:17.609Z"
   },
   {
     "id": "pedro-miguel-arce",
@@ -105038,6 +105252,21 @@
     "knownForDepartment": "Acting",
     "knownCredits": 17,
     "tmdbUpdatedAt": "2026-09-20T16:17:13.062Z"
+  },
+  {
+    "id": "5395392",
+    "slug": "samya-de-meo",
+    "name": "Samya De Meo",
+    "tmdbPersonId": 5395392,
+    "photoUrl": "/images/people/5395392.webp",
+    "profileUrl": "/images/people/5395392.webp",
+    "placeOfBirth": "Mombasa, Kenya",
+    "imdbPersonId": "nm8549300",
+    "gender": "Female",
+    "knownForDepartment": "Acting",
+    "knownCredits": 2,
+    "tmdbUpdatedAt": "2026-10-22T16:53:17.334Z",
+    "tmdbFetchedAt": "2026-10-22T16:53:17.334Z"
   },
   {
     "id": "sandi-ross",
@@ -120180,6 +120409,24 @@
     "twitterId": "ronthebod",
     "tmdbUpdatedAt": "2026-10-15T08:37:43.076Z",
     "tmdbFetchedAt": "2026-10-15T08:37:43.076Z"
+  },
+  {
+    "id": "1103513",
+    "slug": "veronica-f-nichols",
+    "name": "Veronica F. Nichols",
+    "tmdbPersonId": 1103513,
+    "photoUrl": "/images/people/1103513.webp",
+    "profileUrl": "/images/people/1103513.webp",
+    "imdbPersonId": "nm0629750",
+    "gender": "Female",
+    "knownForDepartment": "Production",
+    "knownCredits": 8,
+    "alsoKnownAs": [
+      "Veronica Nichols"
+    ],
+    "instagramId": "veronicanichols",
+    "tmdbUpdatedAt": "2026-10-22T16:53:17.318Z",
+    "tmdbFetchedAt": "2026-10-22T16:53:17.318Z"
   },
   {
     "id": "veronica-long",

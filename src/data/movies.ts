@@ -198808,6 +198808,586 @@ export const MOVIES: Movie[] = [
     "voteCount": 0,
     "tmdbUpdatedAt": "2026-10-22T16:49:53.679Z",
     "tmdbFetchedAt": "2026-10-22T16:49:53.679Z"
+  },
+  {
+    "id": "lifetime-2026-christmas-from-the-heart",
+    "slug": "christmas-from-the-heart",
+    "title": "Christmas from the Heart",
+    "year": 2026,
+    "brandId": "lifetime",
+    "releaseDate": "2026-12-05",
+    "synopsis": "A grieving widow travels to Lisbon to meet the recipient of her late husband's heart, only to fall for the woman's brother.",
+    "posterUrl": "",
+    "cast": [
+      {
+        "actorId": "87569",
+        "name": "Tia Mowry",
+        "character": "Jade",
+        "slug": "tia-mowry",
+        "tmdbPersonId": 87569,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/2p0l5uyURd1D4Iy3k8A81yc8lXJ.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "989878",
+        "name": "Henderson Wade",
+        "character": "Alex",
+        "slug": "henderson-wade",
+        "tmdbPersonId": 989878,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/i03mX0Gxz9vHOJ9egFIQxzfVJBl.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "5395392",
+        "name": "Samya De Meo",
+        "character": "Camille",
+        "slug": "samya-de-meo",
+        "tmdbPersonId": 5395392,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/mA7GWdHvaAa9HFOy8rWb1nRSJ2Z.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "1215206",
+        "name": "Natalie Gumede",
+        "character": "Dionne",
+        "slug": "natalie-gumede",
+        "tmdbPersonId": 1215206,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/mip80u6QMdxiy5kmnkuhOVZejqT.jpg",
+        "order": 3
+      },
+      {
+        "actorId": "1339557",
+        "name": "Pedro Carvalho",
+        "character": "Pedro",
+        "slug": "pedro-carvalho",
+        "tmdbPersonId": 1339557,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/m0ZJcAcSXYwLGmGAzJT4BLKLgB8.jpg",
+        "order": 4
+      }
+    ],
+    "director": "Veronica F. Nichols",
+    "tmdbId": 1799520,
+    "isComingSoon": true,
+    "status": "coming-soon",
+    "originalTitle": "Christmas from the Heart",
+    "runtimeMinutes": 88,
+    "genres": [
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      },
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "US",
+        "releaseDate": "2026-12-05T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "Lifetime"
+      }
+    ],
+    "crew": [
+      {
+        "id": 1103513,
+        "name": "Veronica F. Nichols",
+        "job": "Director",
+        "department": "Directing",
+        "profileUrl": "https://image.tmdb.org/t/p/w500/lcsh150z1PPbRWde9Df6bmfLETG.jpg",
+        "creditId": "6ad965063a7783bc40728a1a"
+      }
+    ],
+    "trailers": [],
+    "voteAverage": 0,
+    "voteCount": 0,
+    "tmdbUpdatedAt": "2026-10-22T16:53:15.373Z",
+    "tmdbFetchedAt": "2026-10-22T16:53:15.373Z"
+  },
+  {
+    "id": "lifetime-2026-a-whimsy-christmas-carol",
+    "slug": "a-whimsy-christmas-carol",
+    "title": "A Whimsy Christmas Carol",
+    "year": 2026,
+    "brandId": "lifetime",
+    "releaseDate": "2026-10-22",
+    "synopsis": "When the ambitious of a beloved toy company faces a looming corporate takeover, she must rediscover the true meaning of the holiday with the help of the Christmas Spirits  and a charming former flame who has always believed in her  or risk losing everything she’s worked so hard to build.",
+    "posterUrl": "/images/posters/1761233.jpg",
+    "backdropUrl": "/images/backdrops/1761233.jpg",
+    "cast": [
+      {
+        "actorId": "1540234",
+        "name": "Chantel Riley",
+        "character": "Vanessa Reed",
+        "slug": "chantel-riley",
+        "tmdbPersonId": 1540234,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/drhtrbuYxm4Fi9jGe7QCoqZAA18.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "3535405",
+        "name": "Brendan Morgan",
+        "character": "Jordan",
+        "slug": "brendan-morgan",
+        "tmdbPersonId": 3535405,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/6eqJShDBTzGobdJUBFp0dB9IQuy.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "190897",
+        "name": "Raven Dauda",
+        "character": "Tasha",
+        "slug": "raven-dauda",
+        "tmdbPersonId": 190897,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/g7pj8LHrUTpmGMm3wCrUNqAE5fq.jpg",
+        "order": 2
+      },
+      {
+        "actorId": "1862833",
+        "name": "Kate MacLellan",
+        "character": "Ms. Reed",
+        "slug": "kate-maclellan",
+        "tmdbPersonId": 1862833,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/1hDyQe8ficGg9XYMg7zhi6HxeCD.jpg",
+        "order": 3
+      },
+      {
+        "actorId": "3662305",
+        "name": "Krista Nazaire",
+        "character": "Zoey",
+        "slug": "krista-nazaire",
+        "tmdbPersonId": 3662305,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/7fd3SHcT4qeppIJkmsiRbtGJvC3.jpg",
+        "order": 4
+      },
+      {
+        "actorId": "43296",
+        "name": "Nathan Stephenson",
+        "character": "DJ Ghost of Christmas Past",
+        "slug": "nathan-stephenson",
+        "tmdbPersonId": 43296,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/437ZL6mFkpGyXniicWH3ma5DsA1.jpg",
+        "order": 5
+      },
+      {
+        "actorId": "2676",
+        "name": "Kim Roberts",
+        "character": "Ghost of Christmas Present",
+        "slug": "kim-roberts",
+        "tmdbPersonId": 2676,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/aSmuN4Pd8bXjskdA47pWhYcUkiC.jpg",
+        "order": 6
+      },
+      {
+        "actorId": "1016019",
+        "name": "Neil Whitely",
+        "character": "Preston Sterling Jr.",
+        "slug": "neil-whitely",
+        "tmdbPersonId": 1016019,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/taPe9RjvEkgamMXiWqjC9EWSKRt.jpg",
+        "order": 7
+      },
+      {
+        "actorId": "164433",
+        "name": "Lanette Ware",
+        "character": "Eleanor",
+        "slug": "lanette-ware",
+        "tmdbPersonId": 164433,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/8nJlQZ1z63fHUrLVxwbLpjPbMlx.jpg",
+        "order": 8
+      },
+      {
+        "actorId": "6014568",
+        "name": "Malik Njau",
+        "character": "Avery",
+        "slug": "malik-njau",
+        "tmdbPersonId": 6014568,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/gdY2dhxUFpK8qOHMqzJkG8wF4sr.jpg",
+        "order": 9
+      }
+    ],
+    "director": "Mike Donis",
+    "tmdbId": 1761233,
+    "imdbId": "tt39140891",
+    "isComingSoon": true,
+    "status": "coming-soon",
+    "originalTitle": "A Whimsy Christmas Carol",
+    "alternativeTitles": [
+      {
+        "title": "The Toymaker's Christmas Romance",
+        "country": "US"
+      }
+    ],
+    "runtimeMinutes": 90,
+    "genres": [
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "CH",
+        "releaseDate": "2026-10-22T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "RTS Un"
+      }
+    ],
+    "crew": [
+      {
+        "id": 5824831,
+        "name": "Mike Donis",
+        "job": "Director",
+        "department": "Directing",
+        "creditId": "6a992adf7ef7488622a59210"
+      },
+      {
+        "id": 2528321,
+        "name": "Kathryn Fasegha",
+        "job": "Writer",
+        "department": "Writing",
+        "creditId": "6a992bf9737845e6f77dd79e"
+      }
+    ],
+    "trailers": [],
+    "voteAverage": 0,
+    "voteCount": 0,
+    "tmdbUpdatedAt": "2026-10-22T16:53:15.376Z",
+    "tmdbFetchedAt": "2026-10-22T16:53:15.376Z"
+  },
+  {
+    "id": "lifetime-2026-mending-hearts-for-christmas",
+    "slug": "mending-hearts-for-christmas",
+    "title": "Mending Hearts for Christmas",
+    "year": 2026,
+    "brandId": "lifetime",
+    "releaseDate": "2026-12-06",
+    "synopsis": "An events coordinator reunites a veteran with his estranged son, who unexpectedly falls for the woman responsible for bringing them back together.",
+    "posterUrl": "",
+    "cast": [
+      {
+        "actorId": "1070385",
+        "name": "Michelle Argyris",
+        "character": "",
+        "slug": "michelle-argyris",
+        "tmdbPersonId": 1070385,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/gkPhEe3G5MZdJ2hWww4DjDk5dsv.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "2446074",
+        "name": "David Pinard",
+        "character": "",
+        "slug": "david-pinard",
+        "tmdbPersonId": 2446074,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/8vn6LZLFvxm1MhsLLMGzKMfvhgR.jpg",
+        "order": 1
+      }
+    ],
+    "tmdbId": 1799521,
+    "isComingSoon": true,
+    "status": "coming-soon",
+    "originalTitle": "Mending Hearts for Christmas",
+    "runtimeMinutes": 88,
+    "genres": [],
+    "releaseDates": [
+      {
+        "country": "US",
+        "releaseDate": "2026-12-06T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "Lifetime"
+      }
+    ],
+    "crew": [],
+    "trailers": [],
+    "voteAverage": 0,
+    "voteCount": 0,
+    "tmdbUpdatedAt": "2026-10-22T16:53:15.427Z",
+    "tmdbFetchedAt": "2026-10-22T16:53:15.427Z"
+  },
+  {
+    "id": "lifetime-2026-mistletoe-in-mexico",
+    "slug": "mistletoe-in-mexico",
+    "title": "Mistletoe in Mexico",
+    "year": 2026,
+    "brandId": "lifetime",
+    "releaseDate": "2026-12-12",
+    "synopsis": "A widowed sociology professor travels to Mexico following her son's surprise elopement and falls for the bride's godfather, a tech CEO who moonlights as a Lucha Libre wrestler.",
+    "posterUrl": "",
+    "cast": [
+      {
+        "actorId": "4758",
+        "name": "Joely Fisher",
+        "character": "",
+        "slug": "joely-fisher",
+        "tmdbPersonId": 4758,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/aHJxw4cbpoxvi7LNbnuA1c6jPPO.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "66143",
+        "name": "Cristián de la Fuente",
+        "character": "",
+        "slug": "cristi-n-de-la-fuente",
+        "tmdbPersonId": 66143,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/qKIVXZVlZQ11AzpWvSUIeQVrO3x.jpg",
+        "order": 1
+      }
+    ],
+    "tmdbId": 1799524,
+    "isComingSoon": true,
+    "status": "coming-soon",
+    "originalTitle": "Mistletoe in Mexico",
+    "runtimeMinutes": 88,
+    "genres": [
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      },
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "US",
+        "releaseDate": "2026-12-12T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "Lifetime"
+      }
+    ],
+    "crew": [],
+    "trailers": [],
+    "voteAverage": 0,
+    "voteCount": 0,
+    "tmdbUpdatedAt": "2026-10-22T16:53:15.393Z",
+    "tmdbFetchedAt": "2026-10-22T16:53:15.393Z"
+  },
+  {
+    "id": "lifetime-2026-an-inseparable-christmas",
+    "slug": "an-inseparable-christmas",
+    "title": "An Inseparable Christmas",
+    "year": 2026,
+    "brandId": "lifetime",
+    "releaseDate": "2026-12-12",
+    "synopsis": "Two lifelong friends embark on a hometown holiday walking tour that leads to unexpected romantic possibilities with a former travel crush and a recently divorced neighbor.",
+    "posterUrl": "",
+    "cast": [
+      {
+        "actorId": "1355149",
+        "name": "Rebecca Dalton",
+        "character": "",
+        "slug": "rebecca-dalton",
+        "tmdbPersonId": 1355149,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/dTsw3WJImhlgsajfzQvkIxqyYD7.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "2911070",
+        "name": "Jinesea Bianca Lewis",
+        "character": "",
+        "slug": "jinesea-bianca-lewis",
+        "tmdbPersonId": 2911070,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/pytcM50Kd3c0XRsXdWI6KyBrygy.jpg",
+        "order": 1
+      },
+      {
+        "actorId": "6554579",
+        "name": "Nicolas Nondono",
+        "character": "",
+        "slug": "nicolas-nondono",
+        "tmdbPersonId": 6554579,
+        "order": 2
+      },
+      {
+        "actorId": "1646611",
+        "name": "Dennis Andres",
+        "character": "",
+        "slug": "dennis-andres",
+        "tmdbPersonId": 1646611,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/482s0WO3Os7ibLok2AMML2nbHfx.jpg",
+        "order": 3
+      }
+    ],
+    "tmdbId": 1799525,
+    "isComingSoon": true,
+    "status": "coming-soon",
+    "originalTitle": "An Inseparable Christmas",
+    "runtimeMinutes": 88,
+    "genres": [
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      },
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "US",
+        "releaseDate": "2026-12-12T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "Lifetime"
+      }
+    ],
+    "crew": [],
+    "trailers": [],
+    "voteAverage": 0,
+    "voteCount": 0,
+    "tmdbUpdatedAt": "2026-10-22T16:53:15.508Z",
+    "tmdbFetchedAt": "2026-10-22T16:53:15.508Z"
+  },
+  {
+    "id": "lifetime-2026-a-second-chance-christmas-letter",
+    "slug": "a-second-chance-christmas-letter",
+    "title": "A Second Chance Christmas Letter",
+    "year": 2026,
+    "brandId": "lifetime",
+    "releaseDate": "2026-12-13",
+    "synopsis": "A woman returns home to deliver a 15-year-old love letter, discovering that her first love is still single and that their old romance might deserve another chance.",
+    "posterUrl": "",
+    "cast": [
+      {
+        "actorId": "3733244",
+        "name": "Kelly Tappan",
+        "character": "",
+        "slug": "kelly-tappan",
+        "tmdbPersonId": 3733244,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/935qQnTflIaPc1bT99586gn579B.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "3551737",
+        "name": "James French",
+        "character": "",
+        "slug": "james-french",
+        "tmdbPersonId": 3551737,
+        "order": 1
+      }
+    ],
+    "tmdbId": 1799526,
+    "isComingSoon": true,
+    "status": "coming-soon",
+    "originalTitle": "A Second Chance Christmas Letter",
+    "runtimeMinutes": 88,
+    "genres": [
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      },
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "US",
+        "releaseDate": "2026-12-13T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "Lifetime"
+      }
+    ],
+    "crew": [],
+    "trailers": [],
+    "voteAverage": 0,
+    "voteCount": 0,
+    "tmdbUpdatedAt": "2026-10-22T16:53:15.450Z",
+    "tmdbFetchedAt": "2026-10-22T16:53:15.450Z"
+  },
+  {
+    "id": "lifetime-2026-love-on-the-christmas-list",
+    "slug": "love-on-the-christmas-list",
+    "title": "Love on the Christmas List",
+    "year": 2026,
+    "brandId": "lifetime",
+    "releaseDate": "2026-12-19",
+    "synopsis": "An ambitious assistant teams up with a widowed father to track down the season's hottest toy, only to find herself choosing between a promotion and unexpected romance.",
+    "posterUrl": "",
+    "cast": [
+      {
+        "actorId": "92856",
+        "name": "Jana Kramer",
+        "character": "",
+        "slug": "jana-kramer",
+        "tmdbPersonId": 92856,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/9fW6Sx5OjCm7vhHR0u1zYgWEAgO.jpg",
+        "order": 0
+      },
+      {
+        "actorId": "1808309",
+        "name": "Ignacyo Matynia",
+        "character": "",
+        "slug": "ignacyo-matynia",
+        "tmdbPersonId": 1808309,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/C2spAbWmY8fXm8tL91xh3zS1Mg.jpg",
+        "order": 1
+      }
+    ],
+    "tmdbId": 1799527,
+    "isComingSoon": true,
+    "status": "coming-soon",
+    "originalTitle": "Love on the Christmas List",
+    "runtimeMinutes": 88,
+    "genres": [
+      {
+        "id": 10770,
+        "name": "TV Movie"
+      },
+      {
+        "id": 35,
+        "name": "Comedy"
+      },
+      {
+        "id": 10749,
+        "name": "Romance"
+      }
+    ],
+    "releaseDates": [
+      {
+        "country": "US",
+        "releaseDate": "2026-12-19T00:00:00.000Z",
+        "type": 6,
+        "certification": "",
+        "note": "Lifetime"
+      }
+    ],
+    "crew": [],
+    "trailers": [],
+    "voteAverage": 0,
+    "voteCount": 0,
+    "tmdbUpdatedAt": "2026-10-22T16:53:15.463Z",
+    "tmdbFetchedAt": "2026-10-22T16:53:15.463Z"
   }
 ];
 
