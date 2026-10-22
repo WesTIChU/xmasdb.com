@@ -199546,10 +199546,10 @@ export const MOVIES: Movie[] = [
       }
     ],
     "trailerYoutubeKey": "xHO-iht1lRs",
-    "voteAverage": 4.9,
     "voteCount": 5,
     "tmdbUpdatedAt": "2026-10-22T16:57:48.557Z",
-    "tmdbFetchedAt": "2026-10-22T16:57:48.557Z"
+    "tmdbFetchedAt": "2026-10-22T16:57:48.557Z",
+    "networkPremiereDate": "2026-11-29"
   },
   {
     "id": "lifetime-2025-christmas-at-mistletoe-hall",
