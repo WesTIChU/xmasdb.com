@@ -199662,10 +199662,10 @@ export const MOVIES: Movie[] = [
       }
     ],
     "trailers": [],
-    "voteAverage": 6.5,
     "voteCount": 2,
     "tmdbUpdatedAt": "2026-10-22T16:57:48.452Z",
-    "tmdbFetchedAt": "2026-10-22T16:57:48.452Z"
+    "tmdbFetchedAt": "2026-10-22T16:57:48.452Z",
+    "networkPremiereDate": "2026-12-20"
   }
 ];
 
