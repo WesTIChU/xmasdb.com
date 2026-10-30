@@ -68608,6 +68608,16 @@
     "tmdbFetchedAt": "2026-10-01T09:27:25.785Z"
   },
   {
+    "id": "3512920",
+    "slug": "kevin-taft",
+    "name": "Kevin Taft",
+    "tmdbPersonId": 3512920,
+    "knownForDepartment": "Writing",
+    "knownCredits": 2,
+    "tmdbUpdatedAt": "2026-10-30T22:32:28.084Z",
+    "tmdbFetchedAt": "2026-10-30T22:32:28.084Z"
+  },
+  {
     "id": "kevin-valdez",
     "slug": "kevin-valdez",
     "name": "Kevin Valdez",
@@ -84731,6 +84741,16 @@
     "knownForDepartment": "Acting",
     "knownCredits": 15,
     "tmdbUpdatedAt": "2026-09-20T16:21:05.884Z"
+  },
+  {
+    "id": "6066309",
+    "slug": "melissa-ferguson",
+    "name": "Melissa Ferguson",
+    "tmdbPersonId": 6066309,
+    "knownForDepartment": "Writing",
+    "knownCredits": 2,
+    "tmdbUpdatedAt": "2026-10-30T22:32:28.119Z",
+    "tmdbFetchedAt": "2026-10-30T22:32:28.119Z"
   },
   {
     "id": "melissa-gervasi",
