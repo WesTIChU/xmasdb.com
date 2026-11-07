@@ -2457,6 +2457,16 @@
     "tmdbUpdatedAt": "2026-09-20T16:17:18.604Z"
   },
   {
+    "id": "6607839",
+    "slug": "alesia-dangerfield",
+    "name": "Alesia Dangerfield",
+    "tmdbPersonId": 6607839,
+    "knownForDepartment": "Writing",
+    "knownCredits": 1,
+    "tmdbUpdatedAt": "2026-11-07T22:06:23.827Z",
+    "tmdbFetchedAt": "2026-11-07T22:06:23.827Z"
+  },
+  {
     "id": "3736526",
     "slug": "alessandra-brook",
     "name": "Alessandra Brook",
@@ -14261,6 +14271,22 @@
     ],
     "instagramId": "bradfordbjohnson",
     "tmdbUpdatedAt": "2026-09-20T16:18:52.248Z"
+  },
+  {
+    "id": "123540",
+    "slug": "brad-mcmurray",
+    "name": "Brad McMurray",
+    "tmdbPersonId": 123540,
+    "photoUrl": "/images/people/123540.webp",
+    "profileUrl": "/images/people/123540.webp",
+    "birthday": "1971-02-02",
+    "placeOfBirth": "Sydney, New South Wales, Australia",
+    "imdbPersonId": "nm1070820",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 40,
+    "tmdbUpdatedAt": "2026-11-07T22:06:24.628Z",
+    "tmdbFetchedAt": "2026-11-07T22:06:24.628Z"
   },
   {
     "id": "brad-paisley",
