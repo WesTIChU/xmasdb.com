@@ -12237,6 +12237,19 @@
     "tmdbUpdatedAt": "2026-09-20T16:18:13.053Z"
   },
   {
+    "id": "2466183",
+    "slug": "ben-brown",
+    "name": "Ben Brown",
+    "tmdbPersonId": 2466183,
+    "photoUrl": "/images/people/2466183.webp",
+    "profileUrl": "/images/people/2466183.webp",
+    "imdbPersonId": "nm15640760",
+    "knownForDepartment": "Acting",
+    "knownCredits": 6,
+    "tmdbUpdatedAt": "2026-11-14T06:49:23.477Z",
+    "tmdbFetchedAt": "2026-11-14T06:49:23.477Z"
+  },
+  {
     "id": "72099",
     "slug": "ben-cotton",
     "name": "Ben Cotton",
