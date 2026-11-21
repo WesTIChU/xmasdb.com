@@ -16,11 +16,11 @@ const homepagePosterIds = new Set<string>([
   '1031182',
   '1547915',
   '1773042',
-  '1773318',
   '1773322',
   '1773329',
   '1773330',
   '1776668',
+  '1786213',
 ]);
 
 export default homepagePosterIds;

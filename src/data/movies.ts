@@ -74981,9 +74981,9 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1754947",
       "imdb": "https://www.imdb.com/title/tt43674919/"
     },
-    "tmdbUpdatedAt": "2026-11-21T07:29:23.605Z",
+    "tmdbUpdatedAt": "2026-11-21T19:34:18.619Z",
     "premiereDate": "2026-12-19",
-    "tmdbFetchedAt": "2026-11-21T07:29:23.605Z",
+    "tmdbFetchedAt": "2026-11-21T19:34:18.619Z",
     "keywords": [
       {
         "name": "fake relationship",
@@ -74998,7 +74998,7 @@ export const MOVIES: Movie[] = [
       "value": "G",
       "country": "US",
       "source": "tmdb",
-      "lastConfirmedAt": "2026-11-21T07:29:23.605Z"
+      "lastConfirmedAt": "2026-11-21T19:34:18.619Z"
     }
   },
   {
@@ -147232,8 +147232,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773330",
       "imdb": "https://www.imdb.com/title/tt46076055/"
     },
-    "tmdbUpdatedAt": "2026-11-21T07:29:25.419Z",
-    "tmdbFetchedAt": "2026-11-21T07:29:25.419Z",
+    "tmdbUpdatedAt": "2026-11-21T19:34:19.625Z",
+    "tmdbFetchedAt": "2026-11-21T19:34:19.625Z",
     "backdropUrl": "/images/backdrops/1773330.jpg",
     "keywords": [
       {
@@ -147331,8 +147331,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt46064711/"
     },
     "backdropUrl": "/images/backdrops/1773329.jpg",
-    "tmdbUpdatedAt": "2026-11-21T07:29:26.179Z",
-    "tmdbFetchedAt": "2026-11-21T07:29:26.179Z",
+    "tmdbUpdatedAt": "2026-11-21T19:34:20.426Z",
+    "tmdbFetchedAt": "2026-11-21T19:34:20.426Z",
     "keywords": []
   },
   {
@@ -147432,9 +147432,9 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773322",
       "imdb": "https://www.imdb.com/title/tt41442843/"
     },
-    "tmdbUpdatedAt": "2026-11-21T07:29:26.945Z",
+    "tmdbUpdatedAt": "2026-11-21T19:34:21.233Z",
     "backdropUrl": "/images/backdrops/1773322.jpg",
-    "tmdbFetchedAt": "2026-11-21T07:29:26.945Z",
+    "tmdbFetchedAt": "2026-11-21T19:34:21.233Z",
     "alternativeTitles": [
       {
         "title": "Treeber",
@@ -147632,8 +147632,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773042",
       "imdb": "https://www.imdb.com/title/tt46076498/"
     },
-    "tmdbUpdatedAt": "2026-11-21T07:29:27.740Z",
-    "tmdbFetchedAt": "2026-11-21T07:29:27.740Z",
+    "tmdbUpdatedAt": "2026-11-21T19:34:21.986Z",
+    "tmdbFetchedAt": "2026-11-21T19:34:21.986Z",
     "director": "Panta Mosleh",
     "keywords": [
       {
@@ -147798,8 +147798,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773318",
       "imdb": "https://www.imdb.com/title/tt43655245/"
     },
-    "tmdbUpdatedAt": "2026-11-21T07:29:28.506Z",
-    "tmdbFetchedAt": "2026-11-21T07:29:28.506Z",
+    "tmdbUpdatedAt": "2026-11-21T19:34:22.730Z",
+    "tmdbFetchedAt": "2026-11-21T19:34:22.730Z",
     "keywords": [
       {
         "name": "chef",
@@ -148047,8 +148047,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt39126701/"
     },
     "backdropUrl": "/images/backdrops/1594516.jpg",
-    "tmdbUpdatedAt": "2026-11-21T07:29:29.323Z",
-    "tmdbFetchedAt": "2026-11-21T07:29:29.323Z",
+    "tmdbUpdatedAt": "2026-11-21T19:34:24.523Z",
+    "tmdbFetchedAt": "2026-11-21T19:34:24.523Z",
     "keywords": [
       {
         "id": 9799,
@@ -148154,8 +148154,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773316",
       "imdb": "https://www.imdb.com/title/tt46076602/"
     },
-    "tmdbUpdatedAt": "2026-11-21T07:29:30.095Z",
-    "tmdbFetchedAt": "2026-11-21T07:29:30.095Z",
+    "tmdbUpdatedAt": "2026-11-21T19:34:25.263Z",
+    "tmdbFetchedAt": "2026-11-21T19:34:25.263Z",
     "keywords": [
       {
         "name": "teacher",
@@ -148358,8 +148358,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773298",
       "imdb": "https://www.imdb.com/title/tt43746550/"
     },
-    "tmdbUpdatedAt": "2026-11-21T07:29:30.872Z",
-    "tmdbFetchedAt": "2026-11-21T07:29:30.872Z",
+    "tmdbUpdatedAt": "2026-11-21T19:34:26.034Z",
+    "tmdbFetchedAt": "2026-11-21T19:34:26.034Z",
     "keywords": [],
     "backdropUrl": "/images/backdrops/1773298.jpg"
   },
@@ -148575,8 +148575,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773293",
       "imdb": "https://www.imdb.com/title/tt40629979/"
     },
-    "tmdbUpdatedAt": "2026-11-21T07:29:31.666Z",
-    "tmdbFetchedAt": "2026-11-21T07:29:31.666Z",
+    "tmdbUpdatedAt": "2026-11-21T19:34:26.828Z",
+    "tmdbFetchedAt": "2026-11-21T19:34:26.828Z",
     "keywords": [],
     "backdropUrl": "/images/backdrops/1773293.jpg"
   },
@@ -148693,8 +148693,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773286",
       "imdb": "https://www.imdb.com/title/tt46076619/"
     },
-    "tmdbUpdatedAt": "2026-11-21T07:29:32.442Z",
-    "tmdbFetchedAt": "2026-11-21T07:29:32.442Z",
+    "tmdbUpdatedAt": "2026-11-21T19:34:27.586Z",
+    "tmdbFetchedAt": "2026-11-21T19:34:27.586Z",
     "keywords": [
       {
         "name": "ornament",
@@ -148904,9 +148904,9 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1602653",
       "imdb": "https://www.imdb.com/title/tt39380754/"
     },
-    "tmdbUpdatedAt": "2026-11-21T07:29:33.163Z",
+    "tmdbUpdatedAt": "2026-11-21T19:34:28.353Z",
     "backdropUrl": "/images/backdrops/1602653.jpg",
-    "tmdbFetchedAt": "2026-11-21T07:29:33.163Z",
+    "tmdbFetchedAt": "2026-11-21T19:34:28.353Z",
     "keywords": [
       {
         "id": 4379,
@@ -149119,8 +149119,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773280",
       "imdb": "https://www.imdb.com/title/tt46064715/"
     },
-    "tmdbUpdatedAt": "2026-11-21T07:29:33.658Z",
-    "tmdbFetchedAt": "2026-11-21T07:29:33.658Z",
+    "tmdbUpdatedAt": "2026-11-21T19:34:28.829Z",
+    "tmdbFetchedAt": "2026-11-21T19:34:28.829Z",
     "director": "Ali Liebert",
     "keywords": [
       {
@@ -149276,9 +149276,9 @@ export const MOVIES: Movie[] = [
     "links": {
       "tmdb": "https://www.themoviedb.org/movie/1733866"
     },
-    "tmdbUpdatedAt": "2026-11-21T07:29:34.458Z",
+    "tmdbUpdatedAt": "2026-11-21T19:34:29.641Z",
     "imdbId": "tt43750204",
-    "tmdbFetchedAt": "2026-11-21T07:29:34.458Z",
+    "tmdbFetchedAt": "2026-11-21T19:34:29.641Z",
     "keywords": [],
     "backdropUrl": "/images/backdrops/1733866.jpg"
   },
@@ -149422,8 +149422,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773035",
       "imdb": "https://www.imdb.com/title/tt41783274/"
     },
-    "tmdbUpdatedAt": "2026-11-21T07:29:34.696Z",
-    "tmdbFetchedAt": "2026-11-21T07:29:34.696Z",
+    "tmdbUpdatedAt": "2026-11-21T19:34:29.891Z",
+    "tmdbFetchedAt": "2026-11-21T19:34:29.891Z",
     "alternativeTitles": [
       {
         "title": "A Christmas Through Your Eyes",
@@ -149543,9 +149543,9 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773275",
       "imdb": "https://www.imdb.com/title/tt46076883/"
     },
-    "tmdbUpdatedAt": "2026-11-21T07:29:34.934Z",
+    "tmdbUpdatedAt": "2026-11-21T19:34:30.136Z",
     "director": "Jeff Beesley",
-    "tmdbFetchedAt": "2026-11-21T07:29:34.934Z",
+    "tmdbFetchedAt": "2026-11-21T19:34:30.136Z",
     "keywords": []
   },
   {
@@ -149618,8 +149618,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773270",
       "imdb": "https://www.imdb.com/title/tt46076903/"
     },
-    "tmdbUpdatedAt": "2026-11-21T07:29:35.429Z",
-    "tmdbFetchedAt": "2026-11-21T07:29:35.429Z",
+    "tmdbUpdatedAt": "2026-11-21T19:34:30.656Z",
+    "tmdbFetchedAt": "2026-11-21T19:34:30.656Z",
     "keywords": [
       {
         "id": 11836,
@@ -149742,8 +149742,8 @@ export const MOVIES: Movie[] = [
       "tmdb": "https://www.themoviedb.org/movie/1773266",
       "imdb": "https://www.imdb.com/title/tt46076921/"
     },
-    "tmdbUpdatedAt": "2026-11-21T07:29:35.669Z",
-    "tmdbFetchedAt": "2026-11-21T07:29:35.669Z",
+    "tmdbUpdatedAt": "2026-11-21T19:34:30.904Z",
+    "tmdbFetchedAt": "2026-11-21T19:34:30.904Z",
     "keywords": [
       {
         "id": 207317,
@@ -149870,8 +149870,8 @@ export const MOVIES: Movie[] = [
       "imdb": "https://www.imdb.com/title/tt46076940/"
     },
     "premiereDate": "2026-12-20",
-    "tmdbUpdatedAt": "2026-11-21T07:29:36.414Z",
-    "tmdbFetchedAt": "2026-11-21T07:29:36.414Z",
+    "tmdbUpdatedAt": "2026-11-21T19:34:31.627Z",
+    "tmdbFetchedAt": "2026-11-21T19:34:31.627Z",
     "alternativeTitles": [
       {
         "title": "Single at the Wedding",
@@ -168329,9 +168329,9 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-11-21T07:29:38.786Z",
+    "tmdbUpdatedAt": "2026-11-21T19:34:33.475Z",
     "premiereDate": "2026-11-28",
-    "tmdbFetchedAt": "2026-11-21T07:29:38.786Z",
+    "tmdbFetchedAt": "2026-11-21T19:34:33.475Z",
     "alternativeTitles": [
       {
         "title": "A Christmas Rescue",
@@ -168534,9 +168534,9 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-11-21T07:29:39.024Z",
+    "tmdbUpdatedAt": "2026-11-21T19:34:33.721Z",
     "premiereDate": "2026-12-13",
-    "tmdbFetchedAt": "2026-11-21T07:29:39.024Z",
+    "tmdbFetchedAt": "2026-11-21T19:34:33.721Z",
     "keywords": []
   },
   {
@@ -168756,9 +168756,9 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-11-21T07:29:41.393Z",
+    "tmdbUpdatedAt": "2026-11-21T19:34:34.476Z",
     "premiereDate": "2026-12-03",
-    "tmdbFetchedAt": "2026-11-21T07:29:41.393Z",
+    "tmdbFetchedAt": "2026-11-21T19:34:34.476Z",
     "alternativeTitles": [
       {
         "title": "The Ornament Library",
@@ -168775,7 +168775,7 @@ export const MOVIES: Movie[] = [
       "value": "G",
       "country": "US",
       "source": "tmdb",
-      "lastConfirmedAt": "2026-11-21T07:29:41.393Z"
+      "lastConfirmedAt": "2026-11-21T19:34:34.476Z"
     },
     "backdropUrl": "/images/backdrops/1768108.jpg"
   },
@@ -170985,9 +170985,9 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-11-21T07:29:44.836Z",
+    "tmdbUpdatedAt": "2026-11-21T19:34:35.248Z",
     "premiereDate": "2026-11-24",
-    "tmdbFetchedAt": "2026-11-21T07:29:44.836Z",
+    "tmdbFetchedAt": "2026-11-21T19:34:35.248Z",
     "keywords": [],
     "backdropUrl": "/images/backdrops/1776668.jpg"
   },
@@ -171076,9 +171076,9 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-11-21T07:29:47.293Z",
+    "tmdbUpdatedAt": "2026-11-21T19:34:35.997Z",
     "premiereDate": "2026-11-29",
-    "tmdbFetchedAt": "2026-11-21T07:29:47.293Z",
+    "tmdbFetchedAt": "2026-11-21T19:34:35.997Z",
     "imdbId": "tt44127266",
     "keywords": [
       {
@@ -171194,9 +171194,9 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-11-21T07:29:47.546Z",
+    "tmdbUpdatedAt": "2026-11-21T19:34:36.242Z",
     "premiereDate": "2026-12-12",
-    "tmdbFetchedAt": "2026-11-21T07:29:47.546Z",
+    "tmdbFetchedAt": "2026-11-21T19:34:36.242Z",
     "imdbId": "tt46668597",
     "keywords": [
       {
@@ -171515,9 +171515,9 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-11-21T07:29:47.781Z",
+    "tmdbUpdatedAt": "2026-11-21T19:34:36.498Z",
     "premiereDate": "2026-12-06",
-    "tmdbFetchedAt": "2026-11-21T07:29:47.781Z",
+    "tmdbFetchedAt": "2026-11-21T19:34:36.498Z",
     "alternativeTitles": [
       {
         "title": "A Culinary Christmas",
@@ -193675,8 +193675,8 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-11-21T07:29:48.018Z",
-    "tmdbFetchedAt": "2026-11-21T07:29:48.018Z",
+    "tmdbUpdatedAt": "2026-11-21T19:34:36.785Z",
+    "tmdbFetchedAt": "2026-11-21T19:34:36.785Z",
     "director": "Marni Banack",
     "premiereDate": "2026-12-03",
     "keywords": [
@@ -193809,8 +193809,8 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-11-21T07:29:48.487Z",
-    "tmdbFetchedAt": "2026-11-21T07:29:48.487Z",
+    "tmdbUpdatedAt": "2026-11-21T19:34:37.285Z",
+    "tmdbFetchedAt": "2026-11-21T19:34:37.285Z",
     "director": "Sean Stencil",
     "premiereDate": "2026-12-17",
     "keywords": [
@@ -193854,7 +193854,7 @@ export const MOVIES: Movie[] = [
     "title": "A Christmas Cookie Caper: A Puzzle Time Mystery",
     "year": 2026,
     "brandId": "uptv",
-    "releaseDate": "2026-12-10",
+    "releaseDate": "2026-11-21",
     "synopsis": "When a celebrity baker is found unconscious during Winter Haven's 100th Annual Christmas Cookie Challenge, amateur sleuth Vera Vexley races to clear her friend's name. With stolen recipes, hidden secrets and a cryptic crossword clue leading the way, Vera must solve the mystery before Christmas.",
     "posterUrl": "/images/posters/1786213.jpg",
     "cast": [
@@ -193893,6 +193893,7 @@ export const MOVIES: Movie[] = [
         "character": "Mayor Pike",
         "slug": "william-brock",
         "tmdbPersonId": 3136943,
+        "profileUrl": "https://image.tmdb.org/t/p/w500/zNYht9bhUdCWD0r3NKOt7GRGoLn.jpg",
         "order": 3
       },
       {
@@ -194015,6 +194016,13 @@ export const MOVIES: Movie[] = [
     ],
     "releaseDates": [
       {
+        "country": "FR",
+        "releaseDate": "2026-11-21T00:00:00.000Z",
+        "type": 4,
+        "certification": "",
+        "note": "Prime Vidéo"
+      },
+      {
         "country": "US",
         "releaseDate": "2026-12-10T00:00:00.000Z",
         "type": 6,
@@ -194043,10 +194051,10 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-11-21T07:29:48.981Z",
-    "tmdbFetchedAt": "2026-11-21T07:29:48.981Z",
+    "tmdbUpdatedAt": "2026-11-21T19:34:37.769Z",
+    "tmdbFetchedAt": "2026-11-21T19:34:37.769Z",
     "director": "Peter Sullivan",
-    "premiereDate": "2026-12-10",
+    "premiereDate": "2026-11-21",
     "keywords": [
       {
         "id": 1415,
@@ -198768,7 +198776,7 @@ export const MOVIES: Movie[] = [
     "brandId": "lifetime",
     "releaseDate": "2026-11-28",
     "synopsis": "Fancy prepares for the biggest season of her life and to secure the future of her boutique while planning her dream Christmas wedding to fiance Jaylen, with the help of her mother Evelyn and sister Belle.",
-    "posterUrl": "",
+    "posterUrl": "/images/posters/1799512.jpg",
     "cast": [
       {
         "actorId": "33285",
@@ -198941,9 +198949,10 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-11-21T07:29:49.207Z",
-    "tmdbFetchedAt": "2026-11-21T07:29:49.207Z",
-    "premiereDate": "2026-11-28"
+    "tmdbUpdatedAt": "2026-11-21T19:34:40.348Z",
+    "tmdbFetchedAt": "2026-11-21T19:34:40.348Z",
+    "premiereDate": "2026-11-28",
+    "backdropUrl": "/images/backdrops/1799512.jpg"
   },
   {
     "id": "lifetime-2026-checking-inn-for-christmas",
@@ -199160,8 +199169,8 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-11-21T07:29:49.709Z",
-    "tmdbFetchedAt": "2026-11-21T07:29:49.709Z",
+    "tmdbUpdatedAt": "2026-11-21T19:34:40.843Z",
+    "tmdbFetchedAt": "2026-11-21T19:34:40.843Z",
     "premiereDate": "2026-11-28"
   },
   {
@@ -199266,8 +199275,8 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-11-21T07:29:49.941Z",
-    "tmdbFetchedAt": "2026-11-21T07:29:49.941Z",
+    "tmdbUpdatedAt": "2026-11-21T19:34:41.089Z",
+    "tmdbFetchedAt": "2026-11-21T19:34:41.089Z",
     "premiereDate": "2026-12-05",
     "imdbId": "tt49763202"
   },
@@ -199488,8 +199497,8 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-11-21T07:29:50.194Z",
-    "tmdbFetchedAt": "2026-11-21T07:29:50.194Z",
+    "tmdbUpdatedAt": "2026-11-21T19:34:41.342Z",
+    "tmdbFetchedAt": "2026-11-21T19:34:41.342Z",
     "premiereDate": "2026-12-06",
     "imdbId": "tt50360277"
   },
@@ -199556,8 +199565,8 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-11-21T07:29:50.429Z",
-    "tmdbFetchedAt": "2026-11-21T07:29:50.429Z",
+    "tmdbUpdatedAt": "2026-11-21T19:34:41.588Z",
+    "tmdbFetchedAt": "2026-11-21T19:34:41.588Z",
     "premiereDate": "2026-12-12",
     "imdbId": "tt50414162"
   },
@@ -199641,8 +199650,8 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-11-21T07:29:50.670Z",
-    "tmdbFetchedAt": "2026-11-21T07:29:50.670Z",
+    "tmdbUpdatedAt": "2026-11-21T19:34:41.836Z",
+    "tmdbFetchedAt": "2026-11-21T19:34:41.836Z",
     "premiereDate": "2026-12-12",
     "imdbId": "tt50414173"
   },
@@ -199706,8 +199715,8 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-11-21T07:29:50.925Z",
-    "tmdbFetchedAt": "2026-11-21T07:29:50.925Z",
+    "tmdbUpdatedAt": "2026-11-21T19:34:42.083Z",
+    "tmdbFetchedAt": "2026-11-21T19:34:42.083Z",
     "premiereDate": "2026-12-13",
     "imdbId": "tt50414384"
   },
@@ -199774,8 +199783,8 @@ export const MOVIES: Movie[] = [
     "trailers": [],
     "voteAverage": 0,
     "voteCount": 0,
-    "tmdbUpdatedAt": "2026-11-21T07:29:51.175Z",
-    "tmdbFetchedAt": "2026-11-21T07:29:51.175Z",
+    "tmdbUpdatedAt": "2026-11-21T19:34:42.331Z",
+    "tmdbFetchedAt": "2026-11-21T19:34:42.331Z",
     "premiereDate": "2026-12-19"
   },
   {
