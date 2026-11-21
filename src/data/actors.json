@@ -51040,6 +51040,20 @@
     "tmdbFetchedAt": "2026-10-02T17:46:41.325Z"
   },
   {
+    "id": "3847874",
+    "slug": "james-burke",
+    "name": "James Burke",
+    "tmdbPersonId": 3847874,
+    "photoUrl": "/images/people/3847874.webp",
+    "profileUrl": "/images/people/3847874.webp",
+    "imdbPersonId": "nm12622380",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 13,
+    "tmdbUpdatedAt": "2026-11-21T07:29:52.847Z",
+    "tmdbFetchedAt": "2026-11-21T07:29:52.847Z"
+  },
+  {
     "id": "1502543",
     "slug": "james-choi",
     "name": "James Choi",
@@ -60405,6 +60419,26 @@
     "knownForDepartment": "Acting",
     "knownCredits": 2,
     "tmdbUpdatedAt": "2026-09-20T16:17:01.937Z"
+  },
+  {
+    "id": "71554",
+    "slug": "jonathan-b-wright",
+    "name": "Jonathan B. Wright",
+    "tmdbPersonId": 71554,
+    "photoUrl": "/images/people/71554.webp",
+    "profileUrl": "/images/people/71554.webp",
+    "birthday": "1986-12-13",
+    "placeOfBirth": "Livonia, Michigan, USA",
+    "biography": "Jonathan Bradford Wright (born December 13, 1986) is an American actor who is best known for his performance as Hänschen in the Tony Award-winning Broadway musical Spring Awakening.",
+    "imdbPersonId": "nm2822739",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 6,
+    "alsoKnownAs": [
+      "Jonathan Bradford Wright"
+    ],
+    "tmdbUpdatedAt": "2026-11-21T07:29:52.890Z",
+    "tmdbFetchedAt": "2026-11-21T07:29:52.890Z"
   },
   {
     "id": "jonathan-bennett",
@@ -88936,6 +88970,16 @@
     "tmdbUpdatedAt": "2026-09-20T16:21:08.904Z"
   },
   {
+    "id": "6686249",
+    "slug": "moira-boucher",
+    "name": "Moira Boucher",
+    "tmdbPersonId": 6686249,
+    "knownForDepartment": "Acting",
+    "knownCredits": 1,
+    "tmdbUpdatedAt": "2026-11-21T07:29:51.464Z",
+    "tmdbFetchedAt": "2026-11-21T07:29:51.464Z"
+  },
+  {
     "id": "moira-kelly",
     "slug": "moira-kelly",
     "name": "Moira Kelly",
@@ -112952,6 +112996,23 @@
     "twitterId": "sugithvarughese",
     "facebookId": "SugithVarughese",
     "tmdbUpdatedAt": "2026-09-20T16:17:26.905Z"
+  },
+  {
+    "id": "2284540",
+    "slug": "sukhman-gill",
+    "name": "Sukhman Gill",
+    "tmdbPersonId": 2284540,
+    "photoUrl": "/images/people/2284540.webp",
+    "profileUrl": "/images/people/2284540.webp",
+    "biography": "Sukhman Gill is an actor and model based out of Toronto, Canada.\n\nSukhman traveled across Canada playing basketball and later decided to take his talents to Australia and finish off his Architecture degree. Later on he decided to come back to his native town to purse a career in both modeling and acting. Over the course of 1.5 years Sukhman has managed to take part in some huge commercials and campaigns some of which include Under Armour, Holiday Inn, Hershey's and can also be seen in some short films and small roles in both movies and TV shows.\n\nHe plans on continuing down this path not only cause of his passion for film but to be representative for his South Asian community across the world in the film & entertainment industry.",
+    "imdbPersonId": "nm9462818",
+    "gender": "Male",
+    "knownForDepartment": "Acting",
+    "knownCredits": 5,
+    "instagramId": "iamsukhmangill",
+    "facebookId": "sukhman.gill.35",
+    "tmdbUpdatedAt": "2026-11-21T07:29:52.691Z",
+    "tmdbFetchedAt": "2026-11-21T07:29:52.691Z"
   },
   {
     "id": "suki-kaiser",
