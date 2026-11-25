@@ -1,12 +1,12 @@
 {
-  "refreshedAt": "2026-11-25T08:55:20.071Z",
+  "refreshedAt": "2026-11-25T21:52:29.590Z",
   "catalogueMovies": 838,
   "moviesWithTmdbIds": 838,
-  "moviesSuccessfullyRefreshed": 34,
+  "moviesSuccessfullyRefreshed": 33,
   "movieFailures": [],
   "moviesWithTmdbRating": 765,
   "moviesWithoutTmdbRating": 73,
-  "uniqueCatalogueActors": 292,
+  "uniqueCatalogueActors": 283,
   "actorsSuccessfullyRefreshed": 0,
   "actorFailures": [],
   "imageWarnings": [],
@@ -15,9 +15,9 @@
   "freshActors": 2790,
   "staleActors": 0,
   "legacyActorsAwaitingFreshnessTimestamp": 5506,
-  "freshImages": 38,
+  "freshImages": 36,
   "staleImages": 0,
   "legacyImagesAwaitingFreshnessTimestamp": 0,
   "oldestSuccessfulFetchAt": "2026-09-25T18:44:20.927Z",
-  "oldestSuccessfulFetchAgeDays": 60
+  "oldestSuccessfulFetchAgeDays": 61
 }
