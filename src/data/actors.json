@@ -50677,8 +50677,9 @@
     "name": "Jake Bryan-Amaning",
     "tmdbPersonId": 4642043,
     "knownForDepartment": "Acting",
-    "knownCredits": 3,
-    "tmdbUpdatedAt": "2026-09-22T20:53:48.503Z"
+    "knownCredits": 4,
+    "tmdbUpdatedAt": "2026-11-26T21:46:18.544Z",
+    "tmdbFetchedAt": "2026-11-26T21:46:18.544Z"
   },
   {
     "id": "jake-busey",
@@ -75901,6 +75902,21 @@
     "tmdbUpdatedAt": "2026-09-22T20:53:34.040Z"
   },
   {
+    "id": "2350803",
+    "slug": "lorna-osunsanmi",
+    "name": "Lorna Osunsanmi",
+    "tmdbPersonId": 2350803,
+    "imdbPersonId": "nm1911869",
+    "gender": "Female",
+    "knownForDepartment": "Production",
+    "knownCredits": 3,
+    "alsoKnownAs": [
+      "Lorna Clarke Osunsanmi"
+    ],
+    "tmdbUpdatedAt": "2026-11-26T21:46:18.549Z",
+    "tmdbFetchedAt": "2026-11-26T21:46:18.549Z"
+  },
+  {
     "id": "73456",
     "slug": "lorna-scott",
     "name": "Lorna Scott",
@@ -84746,6 +84762,18 @@
     "twitterId": "melindashankar",
     "facebookId": "OfficialMelindaShankar",
     "tmdbUpdatedAt": "2026-09-21T13:18:50.652Z"
+  },
+  {
+    "id": "1770560",
+    "slug": "melissa-batchelor",
+    "name": "Melissa Batchelor",
+    "tmdbPersonId": 1770560,
+    "placeOfBirth": "Harrow, Greater London, England",
+    "imdbPersonId": "nm0060747",
+    "knownForDepartment": "Acting",
+    "knownCredits": 7,
+    "tmdbUpdatedAt": "2026-11-26T21:46:18.535Z",
+    "tmdbFetchedAt": "2026-11-26T21:46:18.535Z"
   },
   {
     "id": "melissa-bolona",
